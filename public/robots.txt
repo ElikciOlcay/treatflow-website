@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://treatflow.io/sitemap.xml
+
+# Crawl-delay für bessere Server-Performance
+Crawl-delay: 1
+
+# Blockiere unnötige Pfade
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: *.json$
+
+# Erlaube wichtige Dateien
+Allow: /images/
+Allow: /favicon.ico
+Allow: /sitemap.xml
