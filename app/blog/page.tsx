@@ -24,13 +24,33 @@ export const metadata = {
 
 const blogPosts = [
     {
+        slug: 'email-marketing-kosmetikstudios',
+        title: 'Email-Marketing für Kosmetikstudios: Kunden erfolgreich zurückgewinnen',
+        excerpt: 'Mit strategischem Email-Marketing holst du verlorene Kunden zurück und steigerst deinen Umsatz um bis zu 40%. So baust du eine erfolgreiche Email-Strategie auf.',
+        category: 'Marketing',
+        readTime: '10 min',
+        publishDate: '15. Dezember 2024',
+        featured: true,
+        image: '/images/blog/email-marketing-kosmetikstudios.jpg'
+    },
+    {
+        slug: 'anti-aging-trends-2024',
+        title: 'Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt',
+        excerpt: 'Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends, mit denen du dein Kosmetikstudio 2024 erfolgreich positionierst.',
+        category: 'Fachkompetenz',
+        readTime: '12 min',
+        publishDate: '20. Dezember 2024',
+        featured: true,
+        image: '/images/blog/anti-aging-trends-2024.jpg'
+    },
+    {
         slug: 'hautanalyse-beratung-kosmetikstudio',
         title: 'Professionelle Hautanalyse: Der Schlüssel zu erfolgreichen Behandlungen',
         excerpt: 'Eine gründliche Hautanalyse ist die Basis jeder erfolgreichen Kosmetikbehandlung. 7-Schritte Prozess für professionelle Beratung und Kundenbindung.',
         category: 'Fachkompetenz',
         readTime: '8 min',
         publishDate: '12. Dezember 2024',
-        featured: true,
+        featured: false,
         image: '/images/blog/hautanalyse-beratung.jpg'
     },
     {
@@ -40,7 +60,7 @@ const blogPosts = [
         category: 'Business',
         readTime: '15 min',
         publishDate: '8. Dezember 2024',
-        featured: true,
+        featured: false,
         image: '/images/blog/kosmetikstudio-eroeffnen.jpg'
     },
     {
@@ -132,17 +152,37 @@ const blogPosts = [
         publishDate: '15. November 2024',
         featured: false,
         image: '/images/blog/preisgestaltung-guide.jpg'
+    },
+    {
+        slug: 'kosmetikstudio-buchhaltung-steuern',
+        title: 'Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst',
+        excerpt: 'Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben, die du als Kosmetikstudio-Betreiberin absetzen kannst - plus praktische Tipps für den Alltag.',
+        category: 'Business',
+        readTime: '13 min',
+        publishDate: '18. Dezember 2024',
+        featured: false,
+        image: '/images/blog/kosmetikstudio-buchhaltung.jpg'
+    },
+    {
+        slug: 'ki-kosmetikstudio-hautanalyse',
+        title: 'KI im Kosmetikstudio: Hautanalyse der Zukunft',
+        excerpt: 'Künstliche Intelligenz revolutioniert die Hautanalyse. Erfahre, wie KI-gestützte Tools dein Studio professioneller machen und Kunden begeistern - ohne Technik-Stress.',
+        category: 'Digitalisierung',
+        readTime: '11 min',
+        publishDate: '22. Dezember 2024',
+        featured: false,
+        image: '/images/blog/ki-kosmetikstudio-hautanalyse.jpg'
     }
 ];
 
 const categories = [
-    { name: 'Alle', count: 11, active: true },
-    { name: 'Business', count: 4, active: false },
+    { name: 'Alle', count: 15, active: true },
+    { name: 'Business', count: 6, active: false },
+    { name: 'Marketing', count: 3, active: false },
+    { name: 'Fachkompetenz', count: 2, active: false },
     { name: 'Recht & Compliance', count: 2, active: false },
-    { name: 'Marketing', count: 2, active: false },
-    { name: 'Fachkompetenz', count: 1, active: false },
-    { name: 'Kundenbindung', count: 1, active: false },
-    { name: 'Digitalisierung', count: 1, active: false }
+    { name: 'Digitalisierung', count: 2, active: false },
+    { name: 'Kundenbindung', count: 1, active: false }
 ];
 
 

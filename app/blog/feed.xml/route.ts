@@ -5,6 +5,34 @@ export async function GET() {
 
     const blogPosts = [
         {
+            slug: 'ki-kosmetikstudio-hautanalyse',
+            title: 'KI im Kosmetikstudio: Hautanalyse der Zukunft',
+            description: 'Künstliche Intelligenz revolutioniert die Hautanalyse. Erfahre, wie KI-gestützte Tools dein Studio professioneller machen und Kunden begeistern - ohne Technik-Stress.',
+            publishDate: '2024-12-22T09:00:00.000Z',
+            category: 'Digitalisierung'
+        },
+        {
+            slug: 'anti-aging-trends-2024',
+            title: 'Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt',
+            description: 'Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends, mit denen du dein Kosmetikstudio 2024 erfolgreich positionierst.',
+            publishDate: '2024-12-20T10:00:00.000Z',
+            category: 'Fachkompetenz'
+        },
+        {
+            slug: 'kosmetikstudio-buchhaltung-steuern',
+            title: 'Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst',
+            description: 'Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben, die du als Kosmetikstudio-Betreiberin absetzen kannst - plus praktische Tipps für den Alltag.',
+            publishDate: '2024-12-18T11:00:00.000Z',
+            category: 'Business'
+        },
+        {
+            slug: 'email-marketing-kosmetikstudios',
+            title: 'Email-Marketing für Kosmetikstudios: Kunden erfolgreich zurückgewinnen',
+            description: 'Mit strategischem Email-Marketing holst du verlorene Kunden zurück und steigerst deinen Umsatz um bis zu 40%. So baust du eine erfolgreiche Email-Strategie auf.',
+            publishDate: '2024-12-15T12:00:00.000Z',
+            category: 'Marketing'
+        },
+        {
             slug: 'kundenbindung-kosmetikstudio-5-strategien',
             title: '5 bewährte Strategien für mehr Kundenbindung im Kosmetikstudio',
             description: 'Entdecke die wirksamsten Methoden, um Kundinnen langfristig zu binden und die Wiederkehrrate zu erhöhen. Von personalisierten Behandlungen bis zur digitalen Nachbetreuung.',

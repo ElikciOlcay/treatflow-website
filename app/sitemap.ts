@@ -147,6 +147,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
+        {
+            url: `${baseUrl}/blog/email-marketing-kosmetikstudios`,
+            lastModified: new Date('2024-12-15'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/kosmetikstudio-buchhaltung-steuern`,
+            lastModified: new Date('2024-12-18'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/anti-aging-trends-2024`,
+            lastModified: new Date('2024-12-20'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/ki-kosmetikstudio-hautanalyse`,
+            lastModified: new Date('2024-12-22'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
     ]
 
     return [...staticRoutes, ...blogRoutes]
