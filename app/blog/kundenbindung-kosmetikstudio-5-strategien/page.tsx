@@ -244,7 +244,7 @@ export default function BlogPost() {
                                 und setze sie konsequent um. Du wirst überrascht sein, wie schnell sich die Ergebnisse zeigen!
                             </p>
                             <Link
-                                href="https://app.treatflow.io/"
+                                href="https://app.treatflow.io/auth/register"
                                 target="_blank"
                                 className="inline-flex items-center bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
                             >

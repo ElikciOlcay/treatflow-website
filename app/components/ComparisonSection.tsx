@@ -164,7 +164,7 @@ export default function ComparisonSection() {
                             Teste Treatflow 14 Tage kostenlos und erlebe den Unterschied zu anderen Anbietern.
                         </p>
                         <a
-                            href="https://app.treatflow.io/"
+                            href="https://app.treatflow.io/auth/register"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"

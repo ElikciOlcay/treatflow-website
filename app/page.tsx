@@ -154,7 +154,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
                 <a
-                  href="https://app.treatflow.io/"
+                  href="https://app.treatflow.io/auth/register"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transform hover:-translate-y-1"

@@ -222,7 +222,7 @@ export default function FeaturesSection() {
                                 Teste alle Features 14 Tage kostenlos - ohne Risiko, ohne Vertragsbindung.
                             </p>
                             <a
-                                href="https://app.treatflow.io/"
+                                href="https://app.treatflow.io/auth/register"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transform hover:-translate-y-1 inline-flex items-center"

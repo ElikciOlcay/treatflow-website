@@ -11,7 +11,7 @@ export default function CTASection() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a 
-                        href="https://app.treatflow.io/"
+                        href="https://app.treatflow.io/auth/register"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-colors inline-block"

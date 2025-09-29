@@ -105,7 +105,7 @@ export default function PricingSection() {
             </ul>
 
             <a
-              href="https://app.treatflow.io/"
+              href="https://app.treatflow.io/auth/register"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-gray-900 text-white py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 flex items-center justify-center"
@@ -162,7 +162,7 @@ export default function PricingSection() {
             </ul>
 
             <a
-              href="https://app.treatflow.io/"
+              href="https://app.treatflow.io/auth/register"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-white text-indigo-600 py-3 rounded-xl font-bold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center"

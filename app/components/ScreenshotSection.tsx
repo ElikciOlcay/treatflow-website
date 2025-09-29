@@ -90,9 +90,14 @@ export default function ScreenshotSection() {
           <p className="text-lg text-gray-600 mb-6">
             Bereit für den Test? Probiere Treatflow 14 Tage kostenlos aus.
           </p>
-          <button className="bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-colors">
+          <a 
+            href="https://app.treatflow.io/auth/register"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-colors"
+          >
             Jetzt kostenlos testen
-          </button>
+          </a>
         </div>
       </div>
     </section>

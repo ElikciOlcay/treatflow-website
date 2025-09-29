@@ -440,7 +440,7 @@ export default function ShopPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="https://app.treatflow.io/"
+                            href="https://app.treatflow.io/auth/register"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
