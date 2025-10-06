@@ -431,6 +431,80 @@ export default function DokumentationFormulareLandingPage() {
                 </div>
             </section>
 
+            {/* Pricing Section */}
+            <section className="py-16 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                            Transparent und fair
+                        </h2>
+                        <p className="text-xl text-gray-600 mb-12">
+                            Professionelle NISV-Dokumentation zu einem fairen Preis
+                        </p>
+
+                        <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 max-w-md mx-auto border-2 border-blue-200">
+                            <div className="text-center">
+                                <div className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium mb-6">
+                                    ⭐ Beliebtester Plan
+                                </div>
+
+                                <div className="mb-6">
+                                    <span className="text-5xl font-bold text-gray-900">39€</span>
+                                    <span className="text-xl text-gray-600">/Monat</span>
+                                </div>
+
+                                <div className="text-gray-600 mb-8">
+                                    <p className="font-medium">Alles was Sie brauchen:</p>
+                                </div>
+
+                                <ul className="text-left space-y-3 mb-8">
+                                    <li className="flex items-center">
+                                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                                        <span className="text-gray-700">Automatische NISV-Dokumentation</span>
+                                    </li>
+                                    <li className="flex items-center">
+                                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                                        <span className="text-gray-700">Digitale Formulare & Aufklärungsbögen</span>
+                                    </li>
+                                    <li className="flex items-center">
+                                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                                        <span className="text-gray-700">Foto-Dokumentation mit Zeitstempel</span>
+                                    </li>
+                                    <li className="flex items-center">
+                                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                                        <span className="text-gray-700">DSGVO-konforme Datenspeicherung</span>
+                                    </li>
+                                    <li className="flex items-center">
+                                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                                        <span className="text-gray-700">Deutscher Support</span>
+                                    </li>
+                                </ul>
+
+                                <a
+                                    href="https://app.treatflow.io/auth/register"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center mb-4"
+                                >
+                                    14 Tage kostenlos testen
+                                    <ArrowRight className="ml-2 w-5 h-5" />
+                                </a>
+
+                                <p className="text-sm text-gray-500">
+                                    Keine Kreditkarte erforderlich • Jederzeit kündbar
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mt-8 text-center">
+                            <p className="text-gray-600">
+                                💡 <strong>Das entspricht nur 1,30€ pro Tag</strong> für professionelle Dokumentation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Social Proof */}
             <section className="py-20 bg-gray-50">
                 <div className="container mx-auto px-4">
