@@ -7,7 +7,6 @@ export async function POST(request: NextRequest) {
         const body = await request.json();
         const {
             eventName,
-            eventData,
             userData,
             customData,
             eventSourceUrl,
@@ -66,8 +65,8 @@ export async function POST(request: NextRequest) {
 
         // Remove undefined values
         Object.keys(serverEvent.user_data).forEach(key => {
-            if (serverEvent.user_data[key] === undefined) {
-                delete serverEvent.user_data[key];
+            if (serverEvent.user_data[key as keyof typeof serverEvent.user_data] === undefined) {
+                delete serverEvent.user_data[key as keyof typeof serverEvent.user_data];
             }
         });
 
