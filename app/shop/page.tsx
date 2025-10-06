@@ -9,7 +9,7 @@ export const metadata = {
     openGraph: {
         title: 'Produktverkauf & Lagerverwaltung für Kosmetikstudios',
         description: 'Integriertes System für Produktverkauf mit einfacher Lagerverwaltung und Nachverfolgung.',
-        url: 'https://treatflow.io/shop',
+        url: 'https://www.treatflow.io/shop',
         images: [
             {
                 url: '/images/og-shop.jpg',

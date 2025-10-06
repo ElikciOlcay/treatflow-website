@@ -11,7 +11,7 @@ export const metadata = {
     openGraph: {
         title: 'Kontakt - Treatflow Support & Beratung',
         description: 'Kontaktiere das Treatflow Team für persönliche Beratung und Support.',
-        url: 'https://treatflow.io/kontakt',
+        url: 'https://www.treatflow.io/kontakt',
         images: [
             {
                 url: '/images/og-kontakt.jpg',

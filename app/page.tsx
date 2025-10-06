@@ -24,11 +24,11 @@ const structuredData = {
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web Browser",
   "description": "Professionelle Kosmetikstudio Software mit Terminkalender, Online-Buchungen, Kundenverwaltung und Behandlungsdokumentation",
-  "url": "https://treatflow.io",
+  "url": "https://www.treatflow.io",
   "author": {
     "@type": "Organization",
     "name": "Treatflow",
-    "url": "https://treatflow.io"
+    "url": "https://www.treatflow.io"
   },
   "offers": [
     {

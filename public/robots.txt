@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://treatflow.io/sitemap.xml
+Sitemap: https://www.treatflow.io/sitemap.xml
 
 # Crawl-delay für bessere Server-Performance
 Crawl-delay: 1

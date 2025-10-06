@@ -9,7 +9,7 @@ export const metadata = {
     openGraph: {
         title: 'Behandlungsdokumentation für Kosmetikstudios - NiSV konform',
         description: 'Professionelle Behandlungsdokumentation mit intelligenter Dokumentation und NiSV-konformen Aufzeichnungen.',
-        url: 'https://treatflow.io/behandlungsdokumentation',
+        url: 'https://www.treatflow.io/behandlungsdokumentation',
         images: [
             {
                 url: '/images/mockups/ai-doc.png',

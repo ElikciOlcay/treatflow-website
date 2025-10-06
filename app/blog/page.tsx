@@ -10,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: 'Kosmetikstudio Blog - Tipps & Trends für Beauty-Profis',
         description: 'Expertentipps für erfolgreiche Kosmetikstudios. Kundenbindung, Business-Strategien und neue Behandlungstrends.',
-        url: 'https://treatflow.io/blog',
+        url: 'https://www.treatflow.io/blog',
         images: [
             {
                 url: '/images/og-blog.jpg',

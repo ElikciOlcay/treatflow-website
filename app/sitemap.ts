@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://treatflow.io'
+    const baseUrl = 'https://www.treatflow.io'
 
     // Statische Seiten
     const staticRoutes = [

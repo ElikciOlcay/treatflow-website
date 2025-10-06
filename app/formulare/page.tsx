@@ -9,7 +9,7 @@ export const metadata = {
     openGraph: {
         title: 'Formulare für Kosmetikstudios - KI-Generator & Vorlagen',
         description: 'Professionelle Formulare mit KI-Generator für Kosmetikstudios. NiSV-konform und rechtssicher.',
-        url: 'https://treatflow.io/formulare',
+        url: 'https://www.treatflow.io/formulare',
         images: [
             {
                 url: '/images/mockups/formulare-marketplace.png',

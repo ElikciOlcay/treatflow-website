@@ -9,12 +9,12 @@ export const metadata: Metadata = {
     authors: [{ name: 'Treatflow' }],
     robots: 'index, follow',
     alternates: {
-        canonical: 'https://treatflow.de/landing/dokumentation-formulare',
+        canonical: 'https://www.treatflow.de/landing/dokumentation-formulare',
     },
     openGraph: {
         title: 'NISV-konforme Dokumentation & Formulare für Kosmetikstudios | Treatflow',
         description: 'Automatisierte NISV-Dokumentation und digitale Formulare für Ihr Kosmetikstudio. Rechtssicher, zeitsparend und professionell. Jetzt 14 Tage kostenlos testen!',
-        url: 'https://treatflow.de/landing/dokumentation-formulare',
+        url: 'https://www.treatflow.de/landing/dokumentation-formulare',
         siteName: 'Treatflow',
         images: [
             {
@@ -43,7 +43,7 @@ export default function DokumentationFormulareLandingPage() {
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
         "description": "NISV-konforme Dokumentation und digitale Formulare für Kosmetikstudios",
-        "url": "https://treatflow.de/landing/dokumentation-formulare",
+        "url": "https://www.treatflow.de/landing/dokumentation-formulare",
         "author": {
             "@type": "Organization",
             "name": "Treatflow"
@@ -103,19 +103,19 @@ export default function DokumentationFormulareLandingPage() {
                         <div className="space-y-8">
                             <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
                                 <Zap className="w-4 h-4 mr-2" />
-                                Automatisierte NISV-Dokumentation
+                                Endlich weniger Papierkram!
                             </div>
 
                             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                                <span className="text-blue-600">Rechtssichere</span><br />
-                                Dokumentation &<br />
-                                <span className="text-purple-600">Digitale Formulare</span><br />
-                                <span className="text-gray-700 text-3xl lg:text-4xl">für Kosmetikstudios</span>
+                                <span className="text-blue-600">Nie wieder</span><br />
+                                stundenlang<br />
+                                <span className="text-purple-600">Formulare ausfüllen!</span><br />
+                                <span className="text-gray-700 text-3xl lg:text-4xl">Mehr Zeit für Ihre Kunden</span>
                             </h1>
 
                             <p className="text-xl text-gray-600 leading-relaxed">
-                                Sparen Sie <strong>bis zu 3 Stunden täglich</strong> mit automatisierter NISV-konformer Dokumentation
-                                und professionellen digitalen Formularen für Ihr Kosmetikstudio.
+                                Schluss mit dem Papierchaos! Treatflow erledigt die <strong>lästige Dokumentation</strong> für Sie –
+                                rechtssicher und in wenigen Klicks. <strong>Bis zu 3 Stunden mehr Zeit</strong> für das, was Sie lieben: Ihre Kunden verwöhnen.
                             </p>
 
                             <div className="flex justify-center sm:justify-start">
@@ -200,29 +200,29 @@ export default function DokumentationFormulareLandingPage() {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
-                            Kennen Sie diese Probleme?
+                            Kommt Ihnen das bekannt vor?
                         </h2>
                         <div className="grid md:grid-cols-3 gap-8">
                             <div className="bg-white p-6 rounded-xl shadow-lg">
                                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
                                     <Clock className="w-6 h-6 text-red-600" />
                                 </div>
-                                <h3 className="font-semibold text-gray-900 mb-2">Zeitaufwändige Dokumentation</h3>
-                                <p className="text-gray-600">Stundenlange manuelle Dokumentation nach jeder Behandlung</p>
+                                <h3 className="font-semibold text-gray-900 mb-2">"Ich sitze abends noch Stunden am Schreibtisch"</h3>
+                                <p className="text-gray-600">Nach einem langen Tag im Studio müssen Sie noch alle Behandlungen dokumentieren – dabei wollen Sie endlich Feierabend machen!</p>
                             </div>
                             <div className="bg-white p-6 rounded-xl shadow-lg">
                                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
                                     <Shield className="w-6 h-6 text-red-600" />
                                 </div>
-                                <h3 className="font-semibold text-gray-900 mb-2">NISV-Compliance Unsicherheit</h3>
-                                <p className="text-gray-600">Angst vor rechtlichen Konsequenzen bei unvollständiger Dokumentation</p>
+                                <h3 className="font-semibold text-gray-900 mb-2">"Mache ich alles richtig?"</h3>
+                                <p className="text-gray-600">Die Angst vor Kontrollen und Bußgeldern, weil die Dokumentation nicht den neuen Gesetzen entspricht</p>
                             </div>
                             <div className="bg-white p-6 rounded-xl shadow-lg">
                                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
                                     <FileText className="w-6 h-6 text-red-600" />
                                 </div>
-                                <h3 className="font-semibold text-gray-900 mb-2">Papierformulare Chaos</h3>
-                                <p className="text-gray-600">Verlust von Formularen und unleserliche Handschriften</p>
+                                <h3 className="font-semibold text-gray-900 mb-2">"Wo ist denn schon wieder das Formular?"</h3>
+                                <p className="text-gray-600">Papierberge auf dem Schreibtisch, unleserliche Handschriften und ständig verschwinden wichtige Unterlagen</p>
                             </div>
                         </div>
                     </div>
@@ -235,11 +235,11 @@ export default function DokumentationFormulareLandingPage() {
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                                Die Lösung: Automatisierte NISV-Dokumentation
+                                So einfach kann Dokumentation sein!
                             </h2>
                             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                                Treatflow automatisiert Ihre gesamte Behandlungsdokumentation und macht sie NISV-konform –
-                                ohne zusätzlichen Zeitaufwand.
+                                Treatflow macht die lästige Dokumentation für Sie – einfach, schnell und rechtssicher.
+                                Sie können sich endlich wieder auf Ihre Kunden konzentrieren!
                             </p>
                         </div>
 
@@ -259,8 +259,8 @@ export default function DokumentationFormulareLandingPage() {
                                         <Zap className="w-6 h-6 text-blue-600" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">KI-gestützte Dokumentation</h3>
-                                        <p className="text-gray-600">Unsere KI erstellt automatisch NISV-konforme Behandlungsberichte basierend auf Ihren Eingaben.</p>
+                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">Dokumentation in Sekunden</h3>
+                                        <p className="text-gray-600">Einfach Behandlung auswählen, paar Klicks – fertig! Treatflow schreibt den kompletten Bericht für Sie.</p>
                                     </div>
                                 </div>
 
@@ -269,8 +269,8 @@ export default function DokumentationFormulareLandingPage() {
                                         <Shield className="w-6 h-6 text-green-600" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">100% NISV-konform</h3>
-                                        <p className="text-gray-600">Alle Dokumentationen entsprechen automatisch den aktuellen NISV-Richtlinien und Gesetzesvorgaben.</p>
+                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">Immer rechtssicher</h3>
+                                        <p className="text-gray-600">Keine Sorge mehr vor Kontrollen! Alle Berichte entsprechen automatisch den neuen Gesetzen.</p>
                                     </div>
                                 </div>
 
@@ -279,8 +279,8 @@ export default function DokumentationFormulareLandingPage() {
                                         <FileText className="w-6 h-6 text-purple-600" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">Digitale Formulare</h3>
-                                        <p className="text-gray-600">Professionelle, anpassbare Formulare für Anamnese, Aufklärung und Einverständniserklärungen.</p>
+                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">Schluss mit Papierchaos</h3>
+                                        <p className="text-gray-600">Alle Formulare digital am Tablet ausfüllen – nie wieder unleserliche Handschriften oder verlorene Zettel!</p>
                                     </div>
                                 </div>
                             </div>
@@ -295,7 +295,7 @@ export default function DokumentationFormulareLandingPage() {
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                                Ihre Vorteile mit Treatflow
+                                Das ändert sich für Sie
                             </h2>
                         </div>
 
@@ -304,48 +304,48 @@ export default function DokumentationFormulareLandingPage() {
                                 <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
                                     <Clock className="w-8 h-8 text-blue-600" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-4">3+ Stunden täglich sparen</h3>
-                                <p className="text-gray-600">Automatisierte Dokumentation reduziert Ihren Verwaltungsaufwand drastisch.</p>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Endlich pünktlich Feierabend!</h3>
+                                <p className="text-gray-600">Keine stundenlange Dokumentation mehr nach Feierabend. Mehr Zeit für Familie und Freizeit.</p>
                             </div>
 
                             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
                                     <Shield className="w-8 h-8 text-green-600" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Rechtssicherheit</h3>
-                                <p className="text-gray-600">100% NISV-konforme Dokumentation schützt Sie vor rechtlichen Risiken.</p>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Ruhig schlafen können</h3>
+                                <p className="text-gray-600">Keine Angst mehr vor Kontrollen oder Bußgeldern. Alles ist automatisch gesetzeskonform.</p>
                             </div>
 
                             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
                                     <Users className="w-8 h-8 text-purple-600" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Professioneller Eindruck</h3>
-                                <p className="text-gray-600">Digitale Formulare und Dokumentation wirken modern und vertrauensvoll.</p>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Kunden sind begeistert</h3>
+                                <p className="text-gray-600">"Wow, wie professionell!" - Ihre Kunden sind beeindruckt von der modernen, digitalen Abwicklung.</p>
                             </div>
 
                             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <div className="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mb-6">
                                     <FileText className="w-8 h-8 text-yellow-600" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Papierlos arbeiten</h3>
-                                <p className="text-gray-600">Keine verlorenen Formulare mehr – alles digital und sicher gespeichert.</p>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Aufgeräumtes Studio</h3>
+                                <p className="text-gray-600">Schluss mit Papierbergen! Alles ist digital gespeichert und sofort auffindbar.</p>
                             </div>
 
                             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
                                     <Zap className="w-8 h-8 text-red-600" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Sofort einsatzbereit</h3>
-                                <p className="text-gray-600">Vorgefertigte Formulare und Templates – keine Einrichtungszeit nötig.</p>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Sofort loslegen</h3>
+                                <p className="text-gray-600">Alles ist schon vorbereitet! Anmelden und direkt mit der ersten Behandlung starten.</p>
                             </div>
 
                             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <div className="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6">
                                     <Star className="w-8 h-8 text-indigo-600" />
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Kundenzufriedenheit</h3>
-                                <p className="text-gray-600">Kunden schätzen die professionelle, digitale Abwicklung.</p>
+                                <h3 className="text-xl font-semibold text-gray-900 mb-4">Mehr Zeit für Kunden</h3>
+                                <p className="text-gray-600">Weniger Papierkram bedeutet mehr Zeit für Beratung und die perfekte Behandlung.</p>
                             </div>
                         </div>
                     </div>
@@ -358,29 +358,29 @@ export default function DokumentationFormulareLandingPage() {
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                                Alles was Sie brauchen – in einer Software
+                                So einfach funktioniert's
                             </h2>
                         </div>
 
                         <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
                             <div className="space-y-6">
-                                <h3 className="text-2xl font-bold text-gray-900">Intelligente Dokumentation</h3>
+                                <h3 className="text-2xl font-bold text-gray-900">Behandlung dokumentieren</h3>
                                 <ul className="space-y-4">
                                     <li className="flex items-start space-x-3">
                                         <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                                        <span className="text-gray-700">KI-gestützte Behandlungsberichte</span>
+                                        <span className="text-gray-700">Behandlung auswählen → Bericht ist fertig</span>
                                     </li>
                                     <li className="flex items-start space-x-3">
                                         <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                                        <span className="text-gray-700">Automatische NISV-Compliance</span>
+                                        <span className="text-gray-700">Immer gesetzeskonform – automatisch</span>
                                     </li>
                                     <li className="flex items-start space-x-3">
                                         <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                                        <span className="text-gray-700">Foto-Dokumentation mit Zeitstempel</span>
+                                        <span className="text-gray-700">Vorher-Nachher Fotos mit einem Klick</span>
                                     </li>
                                     <li className="flex items-start space-x-3">
                                         <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                                        <span className="text-gray-700">Behandlungsparameter erfassen</span>
+                                        <span className="text-gray-700">Geräte-Einstellungen einfach erfassen</span>
                                     </li>
                                 </ul>
                             </div>
@@ -406,23 +406,23 @@ export default function DokumentationFormulareLandingPage() {
                                 />
                             </div>
                             <div className="space-y-6">
-                                <h3 className="text-2xl font-bold text-gray-900">Professionelle Formulare</h3>
+                                <h3 className="text-2xl font-bold text-gray-900">Formulare am Tablet</h3>
                                 <ul className="space-y-4">
                                     <li className="flex items-start space-x-3">
                                         <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                                        <span className="text-gray-700">Anamnese-Bögen für alle Behandlungen</span>
+                                        <span className="text-gray-700">Kundin füllt Anamnese selbst aus</span>
                                     </li>
                                     <li className="flex items-start space-x-3">
                                         <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                                        <span className="text-gray-700">Aufklärungs- und Einverständniserklärungen</span>
+                                        <span className="text-gray-700">Aufklärung & Einverständnis digital</span>
                                     </li>
                                     <li className="flex items-start space-x-3">
                                         <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                                        <span className="text-gray-700">Digitale Unterschriften</span>
+                                        <span className="text-gray-700">Unterschrift direkt auf dem Bildschirm</span>
                                     </li>
                                     <li className="flex items-start space-x-3">
                                         <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                                        <span className="text-gray-700">Individuelle Anpassungen möglich</span>
+                                        <span className="text-gray-700">Formulare für Ihr Studio anpassen</span>
                                     </li>
                                 </ul>
                             </div>
@@ -454,29 +454,29 @@ export default function DokumentationFormulareLandingPage() {
                                 </div>
 
                                 <div className="text-gray-600 mb-8">
-                                    <p className="font-medium">Alles was Sie brauchen:</p>
+                                    <p className="font-medium">Das ist alles dabei:</p>
                                 </div>
 
                                 <ul className="text-left space-y-3 mb-8">
                                     <li className="flex items-center">
                                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700">Automatische NISV-Dokumentation</span>
+                                        <span className="text-gray-700">Dokumentation in Sekunden</span>
                                     </li>
                                     <li className="flex items-center">
                                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700">Digitale Formulare & Aufklärungsbögen</span>
+                                        <span className="text-gray-700">Formulare am Tablet ausfüllen</span>
                                     </li>
                                     <li className="flex items-center">
                                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700">Foto-Dokumentation mit Zeitstempel</span>
+                                        <span className="text-gray-700">Vorher-Nachher Fotos</span>
                                     </li>
                                     <li className="flex items-center">
                                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700">DSGVO-konforme Datenspeicherung</span>
+                                        <span className="text-gray-700">Sichere Datenspeicherung</span>
                                     </li>
                                     <li className="flex items-center">
                                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700">Deutscher Support</span>
+                                        <span className="text-gray-700">Hilfe auf Deutsch</span>
                                     </li>
                                 </ul>
 
@@ -498,7 +498,7 @@ export default function DokumentationFormulareLandingPage() {
 
                         <div className="mt-8 text-center">
                             <p className="text-gray-600">
-                                💡 <strong>Das entspricht nur 1,30€ pro Tag</strong> für professionelle Dokumentation
+                                💡 <strong>Das sind nur 1,30€ pro Tag</strong> – weniger als ein Kaffee für stressfreie Dokumentation!
                             </p>
                         </div>
                     </div>

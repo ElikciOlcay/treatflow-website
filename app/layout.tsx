@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'de_DE',
-    url: 'https://treatflow.io',
+    url: 'https://www.treatflow.io',
     title: 'Treatflow - Kosmetikstudio Software für Terminverwaltung & Kundenverwaltung',
     description: 'Professionelle Kosmetikstudio Software mit Terminkalender, Online-Buchungen, Kundenverwaltung und Behandlungsdokumentation. 14 Tage kostenlos testen.',
     siteName: 'Treatflow',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     creator: '@treatflow',
   },
   alternates: {
-    canonical: 'https://treatflow.io',
+    canonical: 'https://www.treatflow.io',
   },
   other: {
     'google-site-verification': 'your-google-verification-code',

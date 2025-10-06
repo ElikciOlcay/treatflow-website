@@ -9,7 +9,7 @@ export const metadata = {
     openGraph: {
         title: 'Über uns - Treatflow Team Made in Austria',
         description: 'Erfahre mehr über das Treatflow Team. Software-Entwicklung speziell für die Beauty-Branche aus Österreich.',
-        url: 'https://treatflow.io/ueber-uns',
+        url: 'https://www.treatflow.io/ueber-uns',
         images: [
             {
                 url: '/images/og-team.jpg',

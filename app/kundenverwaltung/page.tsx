@@ -9,7 +9,7 @@ export const metadata = {
     openGraph: {
         title: 'Kundenverwaltung für Kosmetikstudios - Unbegrenzte Kundenprofile',
         description: 'Professionelle Kundenverwaltung mit unbegrenzten Kundenprofilen, Import-Funktion und schneller Suche.',
-        url: 'https://treatflow.io/kundenverwaltung',
+        url: 'https://www.treatflow.io/kundenverwaltung',
         images: [
             {
                 url: '/images/mockups/kundenverwaltung-overview.png',

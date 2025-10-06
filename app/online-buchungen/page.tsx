@@ -9,7 +9,7 @@ export const metadata = {
     openGraph: {
         title: 'Online-Buchungssystem für Kosmetikstudios - 24/7 Verfügbar',
         description: 'Online-Buchungssystem mit persönlichem Buchungslink. 30% mehr Termine durch 24/7 Verfügbarkeit.',
-        url: 'https://treatflow.io/online-buchungen',
+        url: 'https://www.treatflow.io/online-buchungen',
         images: [
             {
                 url: '/images/og-online-buchungen.jpg',

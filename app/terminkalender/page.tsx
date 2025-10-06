@@ -9,7 +9,7 @@ export const metadata = {
     openGraph: {
         title: 'Terminkalender mit Online-Buchungen für Kosmetikstudios',
         description: 'Professioneller Terminkalender mit Online-Buchungssystem für Kosmetikstudios. 30% mehr Buchungen durch 24/7 Verfügbarkeit.',
-        url: 'https://treatflow.io/terminkalender',
+        url: 'https://www.treatflow.io/terminkalender',
         images: [
             {
                 url: '/images/mockups/kalender-overview.png',
