@@ -554,6 +554,7 @@ export default function DokumentationFormulareLandingPage() {
                 </div>
             </section>
 
+
             {/* Video & Tracking Scripts */}
             <script
                 dangerouslySetInnerHTML={{
@@ -568,6 +569,14 @@ export default function DokumentationFormulareLandingPage() {
                 video.addEventListener('play', function() {
                   overlay.style.opacity = '0';
                   overlay.style.pointerEvents = 'none';
+                  
+                  // Facebook Pixel - Track video view
+                  if (typeof fbq !== 'undefined') {
+                    fbq('track', 'ViewContent', {
+                      content_type: 'video',
+                      content_name: 'Treatflow Demo Video'
+                    });
+                  }
                 });
                 
                 // Zeige Overlay beim Pausieren
@@ -582,6 +591,17 @@ export default function DokumentationFormulareLandingPage() {
                   overlay.style.pointerEvents = 'none';
                 });
               }
+              
+              // Track CTA button clicks
+              const ctaButtons = document.querySelectorAll('a[href*="treatflow.io"]');
+              ctaButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                  // Facebook Pixel - Track CTA clicks
+                  if (typeof fbq !== 'undefined') {
+                    fbq('track', 'InitiateCheckout');
+                  }
+                });
+              });
             });
             
             // Lead Tracking
@@ -615,7 +635,6 @@ export default function DokumentationFormulareLandingPage() {
                 form.addEventListener('submit', function(e) {
                   e.preventDefault();
                   
-                  const formData = new FormData(form);
                   const email = form.querySelector('input[type="email"]')?.value;
                   const phone = form.querySelector('input[type="tel"]')?.value;
                   const name = form.querySelector('input[type="text"]')?.value;
