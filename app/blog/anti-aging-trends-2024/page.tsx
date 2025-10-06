@@ -3,7 +3,7 @@
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
-import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Sparkles, Zap, Shield, CheckCircle, Star, TrendingUp } from 'lucide-react';
+import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Sparkles, CheckCircle, Star, TrendingUp } from 'lucide-react';
 
 export default function BlogPost() {
     return (

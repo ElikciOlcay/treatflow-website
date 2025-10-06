@@ -149,10 +149,11 @@ export default function DokumentationFormulareLandingPage() {
                             <div className="relative bg-gray-900 rounded-2xl shadow-2xl overflow-hidden group max-w-sm mx-auto">
                                 <div className="aspect-[9/16]">
                                     <video
+                                        id="demo-video"
                                         className="w-full h-full object-cover"
                                         controls
                                         preload="metadata"
-                                        poster="/images/video/treatflow-demo-poster.jpg"
+                                        poster="/images/video/video-bild.png"
                                     >
                                         <source src="/videos/treatflow-demo.mp4" type="video/mp4" />
                                         <source src="/videos/treatflow-demo.webm" type="video/webm" />
@@ -172,12 +173,20 @@ export default function DokumentationFormulareLandingPage() {
                                     </video>
                                 </div>
 
-                                {/* Custom Play Button Overlay (optional) */}
-                                <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                                    <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                        <svg className="w-6 h-6 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                                {/* Play Button Overlay - versteckt sich beim Abspielen */}
+                                <div id="video-overlay" className="absolute inset-0 bg-black/30 flex items-center justify-center pointer-events-none transition-opacity duration-300">
+                                    <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-2xl">
+                                        <svg className="w-8 h-8 text-blue-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M8 5v14l11-7z" />
                                         </svg>
+                                    </div>
+
+                                    {/* "Demo Video" Label */}
+                                    <div className="absolute bottom-4 left-4 right-4">
+                                        <div className="bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 text-center">
+                                            <p className="text-sm font-semibold text-gray-900">📱 Demo Video</p>
+                                            <p className="text-xs text-gray-600">Treatflow in Aktion</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -545,10 +554,36 @@ export default function DokumentationFormulareLandingPage() {
                 </div>
             </section>
 
-            {/* Tracking Scripts */}
+            {/* Video & Tracking Scripts */}
             <script
                 dangerouslySetInnerHTML={{
                     __html: `
+            // Video Play Button Handler
+            document.addEventListener('DOMContentLoaded', function() {
+              const video = document.getElementById('demo-video');
+              const overlay = document.getElementById('video-overlay');
+              
+              if (video && overlay) {
+                // Verstecke Overlay beim Abspielen
+                video.addEventListener('play', function() {
+                  overlay.style.opacity = '0';
+                  overlay.style.pointerEvents = 'none';
+                });
+                
+                // Zeige Overlay beim Pausieren
+                video.addEventListener('pause', function() {
+                  overlay.style.opacity = '1';
+                  overlay.style.pointerEvents = 'none';
+                });
+                
+                // Zeige Overlay wenn Video zu Ende ist
+                video.addEventListener('ended', function() {
+                  overlay.style.opacity = '1';
+                  overlay.style.pointerEvents = 'none';
+                });
+              }
+            });
+            
             // Lead Tracking
             function trackLead(email, phone, name) {
               // Facebook Pixel Lead Event
