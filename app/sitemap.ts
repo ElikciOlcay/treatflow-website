@@ -73,7 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ]
 
-    // Blog-Seiten (nur die Hauptseite, da Artikel keine canonical URLs haben)
+    // Blog-Seiten
     const blogRoutes = [
         {
             url: `${baseUrl}/blog`,
@@ -81,8 +81,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly' as const,
             priority: 0.9,
         },
-        // TODO: Blog-Artikel hinzufügen, sobald sie canonical URLs haben
-        // Derzeit sind alle Blog-Artikel Client-Komponenten ohne Metadata
+        // SEO-optimierte Blog-Artikel mit canonical URLs
+        {
+            url: `${baseUrl}/blog/ki-kosmetikstudio-hautanalyse`,
+            lastModified: new Date('2024-12-22'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/anti-aging-trends-2024`,
+            lastModified: new Date('2024-12-20'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/email-marketing-kosmetikstudios`,
+            lastModified: new Date('2024-12-15'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        // TODO: Weitere Blog-Artikel hinzufügen, sobald sie SEO-optimiert sind
     ]
 
     return [...staticRoutes, ...blogRoutes]

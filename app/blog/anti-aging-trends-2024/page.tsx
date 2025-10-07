@@ -1,13 +1,84 @@
-'use client';
-
+import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Sparkles, CheckCircle, Star, TrendingUp } from 'lucide-react';
 
+export const metadata: Metadata = {
+    title: 'Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt | Treatflow Blog',
+    description: 'Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends, mit denen du dein Kosmetikstudio 2024 erfolgreich positionierst.',
+    keywords: ['Anti-Aging Trends 2024', 'Micro-Needling', 'Peptid-Therapien', 'Anti-Aging Behandlungen', 'Kosmetikstudio Trends', 'Beauty Trends 2024'],
+    authors: [{ name: 'Treatflow Team' }],
+    alternates: {
+        canonical: 'https://www.treatflow.io/blog/anti-aging-trends-2024',
+    },
+    openGraph: {
+        title: 'Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt',
+        description: 'Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends für dein Kosmetikstudio.',
+        url: 'https://www.treatflow.io/blog/anti-aging-trends-2024',
+        siteName: 'Treatflow Blog',
+        images: [
+            {
+                url: '/images/blog/anti-aging-trends-2024.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'Anti-Aging Trends 2024 für Kosmetikstudios',
+            },
+        ],
+        locale: 'de_DE',
+        type: 'article',
+        publishedTime: '2024-12-20T10:00:00.000Z',
+        authors: ['Treatflow Team'],
+        section: 'Fachkompetenz',
+        tags: ['Anti-Aging', 'Trends', 'Behandlungen', 'Kosmetikstudio'],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt',
+        description: 'Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - die neuesten Anti-Aging Trends für dein Studio.',
+        images: ['/images/blog/anti-aging-trends-2024.jpg'],
+    },
+};
+
 export default function BlogPost() {
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt",
+        "description": "Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends, mit denen du dein Kosmetikstudio 2024 erfolgreich positionierst.",
+        "image": "https://www.treatflow.io/images/blog/anti-aging-trends-2024.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "Treatflow Team",
+            "url": "https://www.treatflow.io/ueber-uns"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Treatflow",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.treatflow.io/images/logos/treatflow-logo.svg"
+            }
+        },
+        "datePublished": "2024-12-20T10:00:00.000Z",
+        "dateModified": "2024-12-20T10:00:00.000Z",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.treatflow.io/blog/anti-aging-trends-2024"
+        },
+        "articleSection": "Fachkompetenz",
+        "keywords": "Anti-Aging Trends 2024, Micro-Needling, Peptid-Therapien, Anti-Aging Behandlungen",
+        "wordCount": 2800,
+        "timeRequired": "PT12M",
+        "inLanguage": "de-DE",
+        "isAccessibleForFree": true
+    };
     return (
         <div className="min-h-screen bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
             <Navigation />
 
             <article className="pt-32 pb-20">
@@ -520,48 +591,33 @@ export default function BlogPost() {
                                 <p className="text-gray-600">Teile sie mit deinen Kollegen!</p>
                             </div>
                             <div className="flex flex-wrap gap-3">
-                                <button
-                                    onClick={() => {
-                                        const url = window.location.href;
-                                        const text = 'Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt - Treatflow Blog';
-                                        window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
-                                    }}
+                                <a
+                                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://www.treatflow.io/blog/anti-aging-trends-2024')}&text=${encodeURIComponent('Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt - Treatflow Blog')}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center bg-blue-500 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-600 transition-colors text-xs sm:text-sm"
                                 >
                                     <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                                     Twitter
-                                </button>
-                                <button
-                                    onClick={() => {
-                                        const url = window.location.href;
-                                        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
-                                    }}
+                                </a>
+                                <a
+                                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.treatflow.io/blog/anti-aging-trends-2024')}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center bg-blue-700 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-800 transition-colors text-xs sm:text-sm"
                                 >
                                     <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                                     LinkedIn
-                                </button>
-                                <button
-                                    onClick={() => {
-                                        const url = window.location.href;
-                                        const text = 'Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt';
-                                        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`, '_blank');
-                                    }}
+                                </a>
+                                <a
+                                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.treatflow.io/blog/anti-aging-trends-2024')}&quote=${encodeURIComponent('Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt')}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-700 transition-colors text-xs sm:text-sm"
                                 >
                                     <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                                     Facebook
-                                </button>
-                                <button
-                                    onClick={() => {
-                                        navigator.clipboard.writeText(window.location.href);
-                                        alert('Link in die Zwischenablage kopiert!');
-                                    }}
-                                    className="inline-flex items-center bg-gray-600 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-gray-700 transition-colors text-xs sm:text-sm"
-                                >
-                                    <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                                    Kopieren
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
