@@ -73,7 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ]
 
-    // Blog-Seiten
+    // Blog-Seiten (nur die Hauptseite, da Artikel keine canonical URLs haben)
     const blogRoutes = [
         {
             url: `${baseUrl}/blog`,
@@ -81,96 +81,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly' as const,
             priority: 0.9,
         },
-        {
-            url: `${baseUrl}/blog/hautanalyse-beratung-kosmetikstudio`,
-            lastModified: new Date('2024-12-12'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/kosmetikstudio-eroeffnen-guide`,
-            lastModified: new Date('2024-12-08'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/mitarbeiterfuehrung-beauty-business`,
-            lastModified: new Date('2024-12-03'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/hygiene-sicherheit-kosmetikstudio`,
-            lastModified: new Date('2024-11-28'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/saisonales-marketing-beauty-studios`,
-            lastModified: new Date('2024-11-25'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/kundenbindung-kosmetikstudio-5-strategien`,
-            lastModified: new Date('2024-12-15'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/online-buchungssystem-vorteile`,
-            lastModified: new Date('2024-12-10'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/behandlungsdokumentation-nisv-konform`,
-            lastModified: new Date('2024-12-05'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/zusatzumsatz-kosmetikstudio-produkte`,
-            lastModified: new Date('2024-11-28'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/social-media-marketing-kosmetikstudio`,
-            lastModified: new Date('2024-11-20'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/preisgestaltung-kosmetikbehandlungen`,
-            lastModified: new Date('2024-11-15'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/email-marketing-kosmetikstudios`,
-            lastModified: new Date('2024-12-15'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/kosmetikstudio-buchhaltung-steuern`,
-            lastModified: new Date('2024-12-18'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/anti-aging-trends-2024`,
-            lastModified: new Date('2024-12-20'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/ki-kosmetikstudio-hautanalyse`,
-            lastModified: new Date('2024-12-22'),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
+        // TODO: Blog-Artikel hinzufügen, sobald sie canonical URLs haben
+        // Derzeit sind alle Blog-Artikel Client-Komponenten ohne Metadata
     ]
 
     return [...staticRoutes, ...blogRoutes]
