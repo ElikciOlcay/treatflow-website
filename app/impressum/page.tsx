@@ -2,10 +2,13 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Impressum - Treatflow Rechtliche Informationen',
+    title: 'Impressum - Treatflow Rechtliche Informationen | Treatflow',
     description: 'Impressum und rechtliche Informationen zu Treatflow. Angaben gemäß § 5 TMG. Kontaktdaten, Handelsregister und Verantwortliche Personen.',
+    alternates: {
+        canonical: 'https://www.treatflow.io/impressum',
+    },
     robots: {
-        index: false,
+        index: true,
         follow: true,
     },
 };

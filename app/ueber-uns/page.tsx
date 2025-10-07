@@ -3,9 +3,12 @@ import Footer from '../components/Footer';
 import { Heart, Users, Shield, Zap } from 'lucide-react';
 
 export const metadata = {
-    title: 'Über uns - Treatflow Team Made in Austria',
+    title: 'Über uns - Treatflow Team Made in Austria | Treatflow',
     description: 'Erfahre mehr über das Treatflow Team. Olcay Elikci (Gründer & Entwickler) und Gökce Elikci (Co-Gründerin & Kosmetikerin) entwickeln Software speziell für die Beauty-Branche. Made in Austria.',
     keywords: ['Treatflow Team', 'Made in Austria Software', 'Kosmetik Software Entwickler', 'Beauty Branche Österreich', 'Treatflow Gründer'],
+    alternates: {
+        canonical: 'https://www.treatflow.io/ueber-uns',
+    },
     openGraph: {
         title: 'Über uns - Treatflow Team Made in Austria',
         description: 'Erfahre mehr über das Treatflow Team. Software-Entwicklung speziell für die Beauty-Branche aus Österreich.',

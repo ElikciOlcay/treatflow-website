@@ -4,9 +4,12 @@ import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, TrendingUp, Users, Sparkles } from 'lucide-react';
 
 export const metadata = {
-    title: 'Kosmetikstudio Blog - Tipps & Trends für Beauty-Profis',
+    title: 'Kosmetikstudio Blog - Tipps & Trends für Beauty-Profis | Treatflow',
     description: 'Expertentipps für Kosmetikstudios: Kundenbindung, Praxisführung, neue Behandlungen und Business-Strategien. Von Profis für Profis.',
     keywords: ['Kosmetikstudio Blog', 'Beauty Business Tipps', 'Kundenbindung Kosmetik', 'Praxisführung Beauty', 'Kosmetik Trends', 'Studio Management'],
+    alternates: {
+        canonical: 'https://www.treatflow.io/blog',
+    },
     openGraph: {
         title: 'Kosmetikstudio Blog - Tipps & Trends für Beauty-Profis',
         description: 'Expertentipps für erfolgreiche Kosmetikstudios. Kundenbindung, Business-Strategien und neue Behandlungstrends.',

@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Navigation from '../components/Navigation';
 
 export const metadata = {
-    title: 'Behandlungsdokumentation für Kosmetikstudios - NiSV konform',
+    title: 'Behandlungsdokumentation für Kosmetikstudios - NiSV konform | Treatflow',
     description: 'Professionelle Behandlungsdokumentation für Kosmetikstudios mit intelligenter Dokumentation. Vorher-Nachher Fotos, automatische Notizen und NiSV-konforme Aufzeichnungen.',
     keywords: ['Behandlungsdokumentation Kosmetik', 'NiSV konform Dokumentation', 'Vorher Nachher Fotos', 'Automatische Behandlungsnotizen', 'Rechtssichere Dokumentation'],
+    alternates: {
+        canonical: 'https://www.treatflow.io/behandlungsdokumentation',
+    },
     openGraph: {
         title: 'Behandlungsdokumentation für Kosmetikstudios - NiSV konform',
         description: 'Professionelle Behandlungsdokumentation mit intelligenter Dokumentation und NiSV-konformen Aufzeichnungen.',

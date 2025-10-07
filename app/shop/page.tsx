@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Navigation from '../components/Navigation';
 
 export const metadata = {
-    title: 'Produktverkauf & Lagerverwaltung für Kosmetikstudios',
+    title: 'Produktverkauf & Lagerverwaltung für Kosmetikstudios | Treatflow',
     description: 'Integriertes Produktverkauf-System für Kosmetikstudios. Verkaufe Pflegeprodukte direkt an deine Kunden mit einfacher Lagerverwaltung und vollständiger Nachverfolgung.',
     keywords: ['Produktverkauf Kosmetikstudio', 'Lagerverwaltung Beauty', 'Kosmetik Produkte verkaufen', 'Studio Verkaufssystem', 'Zusatzumsatz Kosmetik'],
+    alternates: {
+        canonical: 'https://www.treatflow.io/shop',
+    },
     openGraph: {
         title: 'Produktverkauf & Lagerverwaltung für Kosmetikstudios',
         description: 'Integriertes System für Produktverkauf mit einfacher Lagerverwaltung und Nachverfolgung.',

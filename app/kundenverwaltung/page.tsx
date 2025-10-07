@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Navigation from '../components/Navigation';
 
 export const metadata = {
-    title: 'Kundenverwaltung für Kosmetikstudios - Unbegrenzte Kundenprofile',
+    title: 'Kundenverwaltung für Kosmetikstudios - Unbegrenzte Kundenprofile | Treatflow',
     description: 'Professionelle Kundenverwaltung für Kosmetikstudios mit unbegrenzten Kundenprofilen. Import-Funktion, schnelle Suche und komplette Behandlungshistorie. DSGVO-konform.',
     keywords: ['Kundenverwaltung Kosmetik', 'CRM Beauty Salon', 'Kundenprofile Kosmetikstudio', 'Behandlungshistorie', 'DSGVO Kundendaten'],
+    alternates: {
+        canonical: 'https://www.treatflow.io/kundenverwaltung',
+    },
     openGraph: {
         title: 'Kundenverwaltung für Kosmetikstudios - Unbegrenzte Kundenprofile',
         description: 'Professionelle Kundenverwaltung mit unbegrenzten Kundenprofilen, Import-Funktion und schneller Suche.',

@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Navigation from '../components/Navigation';
 
 export const metadata = {
-    title: 'Terminkalender mit Online-Buchungen für Kosmetikstudios',
+    title: 'Terminkalender mit Online-Buchungen für Kosmetikstudios | Treatflow',
     description: 'Professioneller Terminkalender für Kosmetikstudios mit Online-Buchungssystem. Automatische Erinnerungen, 24/7 Buchungen und perfekte Terminübersicht. 30% mehr Buchungen garantiert.',
     keywords: ['Terminkalender Kosmetik', 'Online Buchungssystem', 'Kosmetikstudio Terminverwaltung', 'Automatische Erinnerungen', 'Beauty Salon Software'],
+    alternates: {
+        canonical: 'https://www.treatflow.io/terminkalender',
+    },
     openGraph: {
         title: 'Terminkalender mit Online-Buchungen für Kosmetikstudios',
         description: 'Professioneller Terminkalender mit Online-Buchungssystem für Kosmetikstudios. 30% mehr Buchungen durch 24/7 Verfügbarkeit.',

@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Navigation from '../components/Navigation';
 
 export const metadata = {
-    title: 'Formulare für Kosmetikstudios - KI-Generator & Vorlagen',
+    title: 'Formulare für Kosmetikstudios - KI-Generator & Vorlagen | Treatflow',
     description: 'Professionelle Formulare für Kosmetikstudios mit KI-Generator. Anamnesen, Einverständniserklärungen und Behandlungsformulare. NiSV-konform und rechtssicher.',
     keywords: ['Formulare Kosmetik', 'KI Formular Generator', 'Anamnese Vorlagen', 'NiSV konform Formulare', 'Einverständniserklärung Beauty'],
+    alternates: {
+        canonical: 'https://www.treatflow.io/formulare',
+    },
     openGraph: {
         title: 'Formulare für Kosmetikstudios - KI-Generator & Vorlagen',
         description: 'Professionelle Formulare mit KI-Generator für Kosmetikstudios. NiSV-konform und rechtssicher.',

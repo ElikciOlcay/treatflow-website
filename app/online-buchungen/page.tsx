@@ -3,9 +3,12 @@ import Link from 'next/link';
 import Navigation from '../components/Navigation';
 
 export const metadata = {
-    title: 'Online-Buchungssystem für Kosmetikstudios - 24/7 Verfügbar',
+    title: 'Online-Buchungssystem für Kosmetikstudios - 24/7 Verfügbar | Treatflow',
     description: 'Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink. 30% mehr Termine durch 24/7 Verfügbarkeit. Automatische Bestätigungen und keine Doppelbuchungen.',
     keywords: ['Online Buchungssystem Kosmetik', '24/7 Terminbuchung', 'Kosmetikstudio Online Termin', 'Automatische Terminbestätigung', 'Buchungslink Beauty'],
+    alternates: {
+        canonical: 'https://www.treatflow.io/online-buchungen',
+    },
     openGraph: {
         title: 'Online-Buchungssystem für Kosmetikstudios - 24/7 Verfügbar',
         description: 'Online-Buchungssystem mit persönlichem Buchungslink. 30% mehr Termine durch 24/7 Verfügbarkeit.',
