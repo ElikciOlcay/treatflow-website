@@ -1,13 +1,84 @@
-'use client';
-
+import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Euro, CheckCircle, AlertTriangle } from 'lucide-react';
 
+export const metadata: Metadata = {
+    title: 'Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst | Treatflow Blog',
+    description: 'Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben, die du als Kosmetikstudio-Betreiberin absetzen kannst - plus praktische Tipps für den Alltag.',
+    keywords: ['Kosmetikstudio Buchhaltung', 'Steuerliche Absetzbarkeit', 'Beauty Business Steuern', 'Kosmetik Betriebsausgaben', 'Steuerberatung Kosmetik', 'Buchhaltung Beauty Salon'],
+    authors: [{ name: 'Treatflow Team' }],
+    alternates: {
+        canonical: 'https://www.treatflow.io/blog/kosmetikstudio-buchhaltung-steuern',
+    },
+    openGraph: {
+        title: 'Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst',
+        description: 'Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben, die du als Kosmetikstudio-Betreiberin absetzen kannst.',
+        url: 'https://www.treatflow.io/blog/kosmetikstudio-buchhaltung-steuern',
+        siteName: 'Treatflow Blog',
+        images: [
+            {
+                url: '/images/blog/kosmetikstudio-buchhaltung.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'Kosmetikstudio Buchhaltung und Steuern',
+            },
+        ],
+        locale: 'de_DE',
+        type: 'article',
+        publishedTime: '2024-12-18T11:00:00.000Z',
+        authors: ['Treatflow Team'],
+        section: 'Business',
+        tags: ['Buchhaltung', 'Steuern', 'Business', 'Kosmetikstudio'],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst',
+        description: 'Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben für dein Kosmetikstudio.',
+        images: ['/images/blog/kosmetikstudio-buchhaltung.jpg'],
+    },
+};
+
 export default function BlogPost() {
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst",
+        "description": "Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben, die du als Kosmetikstudio-Betreiberin absetzen kannst - plus praktische Tipps für den Alltag.",
+        "image": "https://www.treatflow.io/images/blog/kosmetikstudio-buchhaltung.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "Treatflow Team",
+            "url": "https://www.treatflow.io/ueber-uns"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Treatflow",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.treatflow.io/images/logos/treatflow-logo.svg"
+            }
+        },
+        "datePublished": "2024-12-18T11:00:00.000Z",
+        "dateModified": "2024-12-18T11:00:00.000Z",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.treatflow.io/blog/kosmetikstudio-buchhaltung-steuern"
+        },
+        "articleSection": "Business",
+        "keywords": "Kosmetikstudio Buchhaltung, Steuerliche Absetzbarkeit, Beauty Business Steuern",
+        "wordCount": 2400,
+        "timeRequired": "PT12M",
+        "inLanguage": "de-DE",
+        "isAccessibleForFree": true
+    };
     return (
         <div className="min-h-screen bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
             <Navigation />
 
             <article className="pt-32 pb-20">
@@ -473,48 +544,33 @@ export default function BlogPost() {
                                 <p className="text-gray-600">Teile ihn mit anderen Unternehmern!</p>
                             </div>
                             <div className="flex flex-wrap gap-3">
-                                <button
-                                    onClick={() => {
-                                        const url = window.location.href;
-                                        const text = 'Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst - Treatflow Blog';
-                                        window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
-                                    }}
+                                <a
+                                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://www.treatflow.io/blog/kosmetikstudio-buchhaltung-steuern')}&text=${encodeURIComponent('Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst - Treatflow Blog')}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center bg-blue-500 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-600 transition-colors text-xs sm:text-sm"
                                 >
                                     <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                                     Twitter
-                                </button>
-                                <button
-                                    onClick={() => {
-                                        const url = window.location.href;
-                                        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
-                                    }}
+                                </a>
+                                <a
+                                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.treatflow.io/blog/kosmetikstudio-buchhaltung-steuern')}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center bg-blue-700 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-800 transition-colors text-xs sm:text-sm"
                                 >
                                     <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                                     LinkedIn
-                                </button>
-                                <button
-                                    onClick={() => {
-                                        const url = window.location.href;
-                                        const text = 'Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst';
-                                        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`, '_blank');
-                                    }}
+                                </a>
+                                <a
+                                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.treatflow.io/blog/kosmetikstudio-buchhaltung-steuern')}&quote=${encodeURIComponent('Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst')}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="inline-flex items-center bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-700 transition-colors text-xs sm:text-sm"
                                 >
                                     <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
                                     Facebook
-                                </button>
-                                <button
-                                    onClick={() => {
-                                        navigator.clipboard.writeText(window.location.href);
-                                        alert('Link in die Zwischenablage kopiert!');
-                                    }}
-                                    className="inline-flex items-center bg-gray-600 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-gray-700 transition-colors text-xs sm:text-sm"
-                                >
-                                    <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                                    Kopieren
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>

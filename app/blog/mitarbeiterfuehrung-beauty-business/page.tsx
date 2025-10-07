@@ -1,13 +1,86 @@
-'use client';
-
+import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Users, Heart, CheckCircle, AlertCircle, Target } from 'lucide-react';
 
+
+export const metadata: Metadata = {
+    title: 'Mitarbeiterführung im Beauty-Business: Team erfolgreich leiten | Treatflow Blog',
+    description: 'Erfolgreiche Mitarbeiterführung in Kosmetikstudios. Von der Einarbeitung bis zur Motivation - so führst du dein Beauty-Team zum Erfolg.',
+    keywords: ["Mitarbeiterführung Beauty","Team Management Kosmetik","Beauty Team leiten","Kosmetikstudio Personal","Beauty Business Management","Salon Teamführung"],
+    authors: [{ name: 'Treatflow Team' }],
+    alternates: {
+        canonical: 'https://www.treatflow.io/blog/mitarbeiterfuehrung-beauty-business',
+    },
+    openGraph: {
+        title: 'Mitarbeiterführung im Beauty-Business: Team erfolgreich leiten',
+        description: 'Erfolgreiche Mitarbeiterführung in Kosmetikstudios. Von der Einarbeitung bis zur Motivation - so führst du dein Beauty-Team zum Erfolg.',
+        url: 'https://www.treatflow.io/blog/mitarbeiterfuehrung-beauty-business',
+        siteName: 'Treatflow Blog',
+        images: [
+            {
+                url: '/images/blog/mitarbeiterfuehrung.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'Mitarbeiterführung im Beauty-Business: Team erfolgreich leiten',
+            },
+        ],
+        locale: 'de_DE',
+        type: 'article',
+        publishedTime: '2024-12-03T12:00:00.000Z',
+        authors: ['Treatflow Team'],
+        section: 'Business',
+        tags: ["Mitarbeiterführung Beauty","Team Management Kosmetik","Beauty Team leiten","Kosmetikstudio Personal"],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Mitarbeiterführung im Beauty-Business: Team erfolgreich leiten',
+        description: 'Erfolgreiche Mitarbeiterführung in Kosmetikstudios. Von der Einarbeitung bis zur Motivation - so führst du dein Beauty-Team zum Erfolg.',
+        images: ['/images/blog/mitarbeiterfuehrung.jpg'],
+    },
+};
+
 export default function BlogPost() {
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Mitarbeiterführung im Beauty-Business: Team erfolgreich leiten",
+        "description": "Erfolgreiche Mitarbeiterführung in Kosmetikstudios. Von der Einarbeitung bis zur Motivation - so führst du dein Beauty-Team zum Erfolg.",
+        "image": "https://www.treatflow.io/images/blog/mitarbeiterfuehrung.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "Treatflow Team",
+            "url": "https://www.treatflow.io/ueber-uns"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Treatflow",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.treatflow.io/images/logos/treatflow-logo.svg"
+            }
+        },
+        "datePublished": "2024-12-03T12:00:00.000Z",
+        "dateModified": "2024-12-03T12:00:00.000Z",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.treatflow.io/blog/mitarbeiterfuehrung-beauty-business"
+        },
+        "articleSection": "Business",
+        "keywords": "Mitarbeiterführung Beauty, Team Management Kosmetik, Beauty Team leiten, Kosmetikstudio Personal, Beauty Business Management, Salon Teamführung",
+        "wordCount": 2000,
+        "timeRequired": "PT9M",
+        "inLanguage": "de-DE",
+        "isAccessibleForFree": true
+    };
+
     return (
         <div className="min-h-screen bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+            />
             <Navigation />
 
             <article className="pt-32 pb-20">
@@ -288,48 +361,34 @@ export default function BlogPost() {
                                 <p className="text-gray-600">Teile ihn mit anderen Studio-Inhabern!</p>
                             </div>
                             <div className="flex flex-wrap gap-3">
-                                <button
-                                    onClick={() => {
-                                        const url = window.location.href;
-                                        const text = 'Mitarbeiterführung im Beauty-Business: So baust du ein Traumteam auf - Treatflow Blog';
-                                        window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
-                                    }}
-                                    className="inline-flex items-center bg-blue-500 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-600 transition-colors text-xs sm:text-sm"
-                                >
-                                    <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                                    Twitter
-                                </button>
-                                <button
-                                    onClick={() => {
-                                        const url = window.location.href;
-                                        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
-                                    }}
-                                    className="inline-flex items-center bg-blue-700 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-800 transition-colors text-xs sm:text-sm"
-                                >
-                                    <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                                    LinkedIn
-                                </button>
-                                <button
-                                    onClick={() => {
-                                        const url = window.location.href;
-                                        const text = 'Mitarbeiterführung im Beauty-Business: So baust du ein Traumteam auf';
-                                        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`, '_blank');
-                                    }}
-                                    className="inline-flex items-center bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-700 transition-colors text-xs sm:text-sm"
-                                >
-                                    <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                                    Facebook
-                                </button>
-                                <button
-                                    onClick={() => {
-                                        navigator.clipboard.writeText(window.location.href);
-                                        alert('Link in die Zwischenablage kopiert!');
-                                    }}
-                                    className="inline-flex items-center bg-gray-600 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-gray-700 transition-colors text-xs sm:text-sm"
-                                >
-                                    <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                                    Kopieren
-                                </button>
+                                <a
+                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://www.treatflow.io/blog/mitarbeiterfuehrung-beauty-business')}&text=${encodeURIComponent('Mitarbeiterführung im Beauty-Business: Team erfolgreich leiten - Treatflow Blog')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-blue-500 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-600 transition-colors text-xs sm:text-sm"
+            >
+                <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
+                Twitter
+            </a>
+                                <a
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.treatflow.io/blog/mitarbeiterfuehrung-beauty-business')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-blue-700 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-800 transition-colors text-xs sm:text-sm"
+            >
+                <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
+                LinkedIn
+            </a>
+                                <a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.treatflow.io/blog/mitarbeiterfuehrung-beauty-business')}&quote=${encodeURIComponent('Mitarbeiterführung im Beauty-Business: Team erfolgreich leiten')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-700 transition-colors text-xs sm:text-sm"
+            >
+                <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
+                Facebook
+            </a>
+                                
                             </div>
                         </div>
                     </div>
