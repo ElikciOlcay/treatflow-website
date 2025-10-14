@@ -1,18 +1,21 @@
 import {
   Star,
   ArrowRight,
-  ChevronDown
+  ChevronDown,
+  CalendarDays,
+  Users,
+  FileText,
+  CheckCircle,
+  Sparkles,
+  Zap,
+  ClipboardList,
+  Camera,
+  Shield
 } from "lucide-react";
 import Link from 'next/link';
 import Script from 'next/script';
-import FeaturesSection from "./components/FeaturesSection";
-import VisualShowcase from "./components/VisualShowcase";
-import ScreenshotSection from "./components/ScreenshotSection";
-import ComparisonSection from "./components/ComparisonSection";
 import PricingSection from "./components/PricingSection";
 import TestimonialsSection from "./components/TestimonialsSection";
-import CTASection from "./components/CTASection";
-import FAQSection from "./components/FAQSection";
 import Footer from "./components/Footer";
 import MobileMenu from "./components/MobileMenu";
 
@@ -212,15 +215,239 @@ export default function Home() {
           </div>
         </section>
 
-        {/* All other sections */}
-        <FeaturesSection />
-        <VisualShowcase />
-        <ScreenshotSection />
-        <ComparisonSection />
+        {/* Kompakte Features Section */}
+        <section id="features" className="py-20 bg-gradient-to-b from-white to-gray-50/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 px-6 py-3 rounded-full text-sm font-semibold mb-6 shadow-sm">
+                <Sparkles className="h-4 w-4" />
+                Alles in einer App
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                Alles was du für deinen
+                <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> Studio-Erfolg</span> brauchst
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Schluss mit Zettelwirtschaft und Doppelarbeit. Treatflow bringt Ordnung
+                in deinen Arbeitsalltag und lässt dich entspannter arbeiten.
+              </p>
+            </div>
+
+            {/* Hauptfeatures - 3 Spalten */}
+            <div className="grid lg:grid-cols-3 gap-8 mb-16">
+              {/* Online Buchungen */}
+              <div className="group relative bg-white p-8 rounded-2xl border border-gray-100 hover:border-indigo-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-500/10">
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-purple-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative">
+                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <CalendarDays className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Online-Buchungskalender
+                  </h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    Professioneller Kalender mit Wochen-, Tages- und Monatsansicht.
+                    Deine Kunden buchen direkt über deinen Buchungslink.
+                  </p>
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center">
+                      <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">Buchungslink für Kunden</span>
+                    </div>
+                    <div className="flex items-center">
+                      <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">Mehrere Kalenderansichten</span>
+                    </div>
+                    <div className="flex items-center">
+                      <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">15-Min Zeitraster</span>
+                    </div>
+                  </div>
+                  <Link
+                    href="/terminkalender"
+                    className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium group"
+                  >
+                    Mehr erfahren
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Formulare */}
+              <div className="group relative bg-white p-8 rounded-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-500/10">
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-50/50 to-amber-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative">
+                  <div className="flex items-center mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <ClipboardList className="h-8 w-8 text-white" />
+                    </div>
+                    <div className="ml-3 bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full">
+                      <Zap className="h-3 w-3 inline mr-1" />
+                      KI
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Smarte Formulare
+                  </h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    Professionelle Formulare für alle Behandlungen. Drag & Drop Editor oder
+                    KI-Generator für individuelle Anpassungen.
+                  </p>
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center">
+                      <CheckCircle className="h-5 w-5 text-orange-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">Fertige Vorlagen</span>
+                    </div>
+                    <div className="flex items-center">
+                      <CheckCircle className="h-5 w-5 text-orange-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">KI-Formular-Generator</span>
+                    </div>
+                    <div className="flex items-center">
+                      <CheckCircle className="h-5 w-5 text-orange-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">Drag & Drop Editor</span>
+                    </div>
+                  </div>
+                  <Link
+                    href="/formulare"
+                    className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium group"
+                  >
+                    Mehr erfahren
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Behandlungsdokumentation */}
+              <div className="group relative bg-white p-8 rounded-2xl border border-gray-100 hover:border-purple-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-500/10">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-pink-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative">
+                  <div className="flex items-center mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <FileText className="h-8 w-8 text-white" />
+                    </div>
+                    <div className="ml-3 bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full">
+                      <Zap className="h-3 w-3 inline mr-1" />
+                      KI
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Dokumentation
+                  </h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    Halte jede Behandlung fest - mit Fotos, Notizen und allen wichtigen Details.
+                    Unsere KI schreibt automatisch mit.
+                  </p>
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center">
+                      <CheckCircle className="h-5 w-5 text-purple-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">Automatische Notizen</span>
+                    </div>
+                    <div className="flex items-center">
+                      <CheckCircle className="h-5 w-5 text-purple-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">Foto-Management</span>
+                    </div>
+                    <div className="flex items-center">
+                      <CheckCircle className="h-5 w-5 text-purple-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-700">Rechtssicher</span>
+                    </div>
+                  </div>
+                  <Link
+                    href="/behandlungsdokumentation"
+                    className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium group"
+                  >
+                    Mehr erfahren
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Kompakte Zusatzfeatures - 4 Spalten */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Kundenverwaltung */}
+              <Link href="/kundenverwaltung" className="bg-white p-6 rounded-xl border border-gray-100 hover:border-green-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg block group">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Users className="h-6 w-6 text-white" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">Kundenverwaltung</h4>
+                <p className="text-sm text-gray-600">Skalierbare Kundendatenbank mit Import-Funktion</p>
+              </Link>
+
+              {/* Foto-Management */}
+              <Link href="/behandlungsdokumentation" className="bg-white p-6 rounded-xl border border-gray-100 hover:border-pink-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg block group">
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Camera className="h-6 w-6 text-white" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">Foto-Management</h4>
+                <p className="text-sm text-gray-600">Vorher-Nachher Fotos sicher speichern</p>
+              </Link>
+
+              {/* Sicherheit */}
+              <div className="bg-white p-6 rounded-xl border border-gray-100 hover:border-emerald-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg group cursor-pointer">
+                <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <Shield className="h-6 w-6 text-white" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">100% Sicher</h4>
+                <p className="text-sm text-gray-600">DSGVO-konform und verschlüsselt</p>
+              </div>
+
+              {/* NiSV Konform */}
+              <div className="bg-white p-6 rounded-xl border border-gray-100 hover:border-blue-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg group cursor-pointer">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <CheckCircle className="h-6 w-6 text-white" />
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">NiSV Konform</h4>
+                <p className="text-sm text-gray-600">Rechtssichere Dokumentation</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Einfache Visual Section */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                So einfach funktioniert Treatflow
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Sieh selbst, wie übersichtlich und benutzerfreundlich dein neuer Studio-Alltag wird.
+              </p>
+            </div>
+
+            {/* Nur das Dashboard Mockup */}
+            <div className="max-w-5xl mx-auto">
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/images/mockups/dashboard-main.png"
+                  alt="Treatflow Dashboard - Hauptansicht mit Kundenverwaltung und Terminübersicht"
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+
+            {/* Einfacher CTA */}
+            <div className="text-center mt-12">
+              <p className="text-lg text-gray-600 mb-6">
+                Bereit für den Test? Probiere Treatflow 14 Tage kostenlos aus.
+              </p>
+              <a 
+                href="https://app.treatflow.io/auth/register"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transform hover:-translate-y-1"
+              >
+                Jetzt kostenlos testen
+                <ArrowRight className="ml-3 h-6 w-6" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Nur die wichtigsten Sektionen beibehalten */}
         <PricingSection />
         <TestimonialsSection />
-        <CTASection />
-        <FAQSection />
         <Footer />
       </div>
     </>

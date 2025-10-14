@@ -101,21 +101,21 @@ export default function DokumentationFormulareLandingPage() {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-8">
-                            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                                <Zap className="w-4 h-4 mr-2" />
-                                Endlich weniger Papierkram!
+                            <div className="inline-flex items-center px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium">
+                                <Shield className="w-4 h-4 mr-2" />
+                                NiSV-Verordnung seit 2024 Pflicht!
                             </div>
 
                             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                                <span className="text-blue-600">Nie wieder</span><br />
-                                stundenlang<br />
-                                <span className="text-purple-600">Formulare ausfüllen!</span><br />
-                                <span className="text-gray-700 text-3xl lg:text-4xl">Mehr Zeit für Ihre Kunden</span>
+                                <span className="text-blue-600">NiSV-konforme</span><br />
+                                <span className="text-purple-600">Dokumentation</span><br />
+                                <span className="text-gray-700 text-3xl lg:text-4xl">in wenigen Klicks!</span>
                             </h1>
 
                             <p className="text-xl text-gray-600 leading-relaxed">
-                                Schluss mit dem Papierchaos! Treatflow erledigt die <strong>lästige Dokumentation</strong> für Sie –
-                                rechtssicher und in wenigen Klicks. <strong>Bis zu 3 Stunden mehr Zeit</strong> für das, was Sie lieben: Ihre Kunden verwöhnen.
+                                <strong>Rechtssichere Behandlungsdokumentation</strong> nach der neuen NiSV-Verordnung.
+                                Automatisch generierte Berichte, die alle gesetzlichen Anforderungen erfüllen.
+                                <strong>Bis zu 3 Stunden mehr Zeit</strong> für das, was Sie lieben: Ihre Kunden verwöhnen.
                             </p>
 
                             <div className="flex justify-center sm:justify-start">
@@ -134,6 +134,10 @@ export default function DokumentationFormulareLandingPage() {
                                 <div className="flex items-center">
                                     <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
                                     Keine Kreditkarte erforderlich
+                                </div>
+                                <div className="flex items-center">
+                                    <Shield className="w-5 h-5 text-green-500 mr-2" />
+                                    100% NiSV-konform
                                 </div>
                                 <div className="flex items-center">
                                     <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
@@ -214,8 +218,8 @@ export default function DokumentationFormulareLandingPage() {
                                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
                                     <Shield className="w-6 h-6 text-red-600" />
                                 </div>
-                                <h3 className="font-semibold text-gray-900 mb-2">"Mache ich alles richtig?"</h3>
-                                <p className="text-gray-600">Die Angst vor Kontrollen und Bußgeldern, weil die Dokumentation nicht den neuen Gesetzen entspricht</p>
+                                <h3 className="font-semibold text-gray-900 mb-2">"Ist meine Dokumentation NiSV-konform?"</h3>
+                                <p className="text-gray-600">Die Angst vor Kontrollen und hohen Bußgeldern, weil die Dokumentation nicht der neuen NiSV-Verordnung entspricht</p>
                             </div>
                             <div className="bg-white p-6 rounded-xl shadow-lg">
                                 <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
@@ -235,11 +239,11 @@ export default function DokumentationFormulareLandingPage() {
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                                So einfach kann Dokumentation sein!
+                                So einfach kann NiSV-konforme Dokumentation sein!
                             </h2>
                             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                                Treatflow macht die lästige Dokumentation für Sie – einfach, schnell und rechtssicher.
-                                Sie können sich endlich wieder auf Ihre Kunden konzentrieren!
+                                Treatflow erstellt automatisch <strong>rechtssichere Behandlungsberichte</strong> nach der neuen NiSV-Verordnung.
+                                Alle gesetzlichen Anforderungen werden automatisch erfüllt – Sie können sich endlich wieder auf Ihre Kunden konzentrieren!
                             </p>
                         </div>
 
@@ -259,8 +263,8 @@ export default function DokumentationFormulareLandingPage() {
                                         <Zap className="w-6 h-6 text-blue-600" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">Dokumentation in Sekunden</h3>
-                                        <p className="text-gray-600">Einfach Behandlung auswählen, paar Klicks – fertig! Treatflow schreibt den kompletten Bericht für Sie.</p>
+                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">NiSV-Dokumentation in Sekunden</h3>
+                                        <p className="text-gray-600">Einfach Behandlung auswählen, paar Klicks – fertig! Treatflow erstellt automatisch den vollständigen, NiSV-konformen Behandlungsbericht.</p>
                                     </div>
                                 </div>
 
@@ -269,8 +273,8 @@ export default function DokumentationFormulareLandingPage() {
                                         <Shield className="w-6 h-6 text-green-600" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">Immer rechtssicher</h3>
-                                        <p className="text-gray-600">Keine Sorge mehr vor Kontrollen! Alle Berichte entsprechen automatisch den neuen Gesetzen.</p>
+                                        <h3 className="text-xl font-semibold text-gray-900 mb-2">100% NiSV-konform</h3>
+                                        <p className="text-gray-600">Keine Sorge mehr vor Kontrollen! Alle Berichte erfüllen automatisch die gesetzlichen Anforderungen der NiSV-Verordnung. Schutz vor hohen Bußgeldern.</p>
                                     </div>
                                 </div>
 
@@ -313,7 +317,7 @@ export default function DokumentationFormulareLandingPage() {
                                     <Shield className="w-8 h-8 text-green-600" />
                                 </div>
                                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Ruhig schlafen können</h3>
-                                <p className="text-gray-600">Keine Angst mehr vor Kontrollen oder Bußgeldern. Alles ist automatisch gesetzeskonform.</p>
+                                <p className="text-gray-600">Keine Angst mehr vor NiSV-Kontrollen oder hohen Bußgeldern. Alle Dokumentationen sind automatisch gesetzeskonform.</p>
                             </div>
 
                             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -352,6 +356,84 @@ export default function DokumentationFormulareLandingPage() {
                 </div>
             </section>
 
+            {/* NiSV Requirements Section */}
+            <section className="py-20 bg-red-50">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="text-center mb-16">
+                            <div className="inline-flex items-center px-4 py-2 bg-red-100 text-red-800 rounded-full text-sm font-medium mb-6">
+                                <Shield className="w-4 h-4 mr-2" />
+                                Wichtige Rechtsinformation
+                            </div>
+                            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                                Was die NiSV-Verordnung von Ihnen verlangt
+                            </h2>
+                            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                                Seit 2024 gelten neue gesetzliche Anforderungen für die Dokumentation kosmetischer Behandlungen.
+                                <strong className="text-red-600">Bei Verstößen drohen hohe Bußgelder.</strong>
+                            </p>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-500">
+                                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                                    <FileText className="w-6 h-6 text-red-600" />
+                                </div>
+                                <h3 className="font-bold text-gray-900 mb-3">Vollständige Behandlungsdokumentation</h3>
+                                <p className="text-gray-600 text-sm">Jede Behandlung muss lückenlos dokumentiert werden - mit Datum, Uhrzeit, verwendeten Geräten und Einstellungen.</p>
+                            </div>
+
+                            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-500">
+                                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                                    <Users className="w-6 h-6 text-red-600" />
+                                </div>
+                                <h3 className="font-bold text-gray-900 mb-3">Aufklärung & Einverständnis</h3>
+                                <p className="text-gray-600 text-sm">Kunden müssen umfassend aufgeklärt werden und ihr schriftliches Einverständnis geben - rechtssicher dokumentiert.</p>
+                            </div>
+
+                            <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-500">
+                                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                                    <Shield className="w-6 h-6 text-red-600" />
+                                </div>
+                                <h3 className="font-bold text-gray-900 mb-3">Sichere Aufbewahrung</h3>
+                                <p className="text-gray-600 text-sm">Alle Unterlagen müssen mindestens 10 Jahre sicher und DSGVO-konform aufbewahrt werden.</p>
+                            </div>
+                        </div>
+
+                        <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 text-center">
+                            <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <CheckCircle className="w-8 h-8 text-green-600" />
+                            </div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                                Treatflow erfüllt alle NiSV-Anforderungen automatisch
+                            </h3>
+                            <p className="text-lg text-gray-600 mb-6">
+                                Sie müssen sich keine Gedanken mehr über die komplexen rechtlichen Anforderungen machen.
+                                Treatflow erstellt automatisch alle erforderlichen Dokumente und bewahrt sie rechtssicher auf.
+                            </p>
+                            <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-700">
+                                <div className="flex items-center">
+                                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                                    Vollständige Behandlungsberichte
+                                </div>
+                                <div className="flex items-center">
+                                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                                    Rechtssichere Aufklärungsbögen
+                                </div>
+                                <div className="flex items-center">
+                                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                                    10 Jahre sichere Aufbewahrung
+                                </div>
+                                <div className="flex items-center">
+                                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                                    DSGVO-konforme Datenspeicherung
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Features Showcase */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
@@ -372,7 +454,7 @@ export default function DokumentationFormulareLandingPage() {
                                     </li>
                                     <li className="flex items-start space-x-3">
                                         <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
-                                        <span className="text-gray-700">Immer gesetzeskonform – automatisch</span>
+                                        <span className="text-gray-700">Immer NiSV-konform – automatisch</span>
                                     </li>
                                     <li className="flex items-start space-x-3">
                                         <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" />
@@ -439,7 +521,7 @@ export default function DokumentationFormulareLandingPage() {
                             Transparent und fair
                         </h2>
                         <p className="text-xl text-gray-600 mb-12">
-                            Professionelle NISV-Dokumentation zu einem fairen Preis
+                            Professionelle NiSV-konforme Dokumentation zu einem fairen Preis
                         </p>
 
                         <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 max-w-md mx-auto border-2 border-blue-200">
@@ -459,24 +541,28 @@ export default function DokumentationFormulareLandingPage() {
 
                                 <ul className="text-left space-y-3 mb-8">
                                     <li className="flex items-center">
-                                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700">Dokumentation in Sekunden</span>
+                                        <Shield className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                                        <span className="text-gray-700"><strong>100% NiSV-konforme</strong> Dokumentation</span>
                                     </li>
                                     <li className="flex items-center">
                                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700">Formulare am Tablet ausfüllen</span>
+                                        <span className="text-gray-700">Automatische Behandlungsberichte</span>
                                     </li>
                                     <li className="flex items-center">
                                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700">Vorher-Nachher Fotos</span>
+                                        <span className="text-gray-700">Digitale Formulare am Tablet</span>
                                     </li>
                                     <li className="flex items-center">
                                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700">Sichere Datenspeicherung</span>
+                                        <span className="text-gray-700">Rechtssichere Aufklärungsbögen</span>
                                     </li>
                                     <li className="flex items-center">
                                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700">Hilfe auf Deutsch</span>
+                                        <span className="text-gray-700">Schutz vor hohen Strafen</span>
+                                    </li>
+                                    <li className="flex items-center">
+                                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                                        <span className="text-gray-700">Deutscher Support</span>
                                     </li>
                                 </ul>
 
@@ -533,7 +619,7 @@ export default function DokumentationFormulareLandingPage() {
                                     ))}
                                 </div>
                                 <p className="text-gray-600 mb-4">
-                                    "Endlich NISV-konforme Dokumentation ohne Stress. Unsere Kunden sind begeistert von den digitalen Formularen."
+                                    "Endlich NiSV-konforme Dokumentation ohne Stress. Unsere Kunden sind begeistert von den digitalen Formularen."
                                 </p>
                                 <p className="font-semibold text-gray-900">Sandra M., Kosmetikstudio Berlin</p>
                             </div>
@@ -577,7 +663,7 @@ export default function DokumentationFormulareLandingPage() {
                             Starten Sie noch heute mit professioneller Dokumentation
                         </h2>
                         <p className="text-xl mb-8 opacity-90">
-                            Testen Sie Treatflow 14 Tage kostenlos und erleben Sie, wie einfach NISV-konforme Dokumentation sein kann.
+                            Testen Sie Treatflow 14 Tage kostenlos und erleben Sie, wie einfach NiSV-konforme Dokumentation sein kann.
                         </p>
 
                         <div className="text-center">
