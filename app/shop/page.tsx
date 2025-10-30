@@ -461,7 +461,7 @@ export default function ShopPage() {
                     </div>
                 </div>
             </section>
-            
+
             <Footer />
         </div>
     );

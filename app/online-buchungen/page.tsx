@@ -377,7 +377,7 @@ export default function OnlineBuchungenPage() {
                     </div>
                 </div>
             </section>
-            
+
             <Footer />
         </div>
     );

@@ -369,7 +369,7 @@ export default function FormularePage() {
                     </div>
                 </div>
             </section>
-            
+
             <Footer />
         </div>
     );

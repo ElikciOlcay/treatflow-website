@@ -30,9 +30,9 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Produkt</h3>
             <ul className="space-y-2">
-              <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
-              <li><a href="#pricing" className="text-gray-400 hover:text-white transition-colors">Preise</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Demo</a></li>
+              <li><a href="/#features" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
+              <li><a href="/#pricing" className="text-gray-400 hover:text-white transition-colors">Preise</a></li>
+              <li><a href="https://app.treatflow.io/auth/register" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Kostenlos testen</a></li>
             </ul>
           </div>
           <div>

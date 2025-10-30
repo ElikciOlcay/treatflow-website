@@ -297,7 +297,7 @@ export default function TerminkalenderPage() {
                     </div>
                 </div>
             </section>
-            
+
             <Footer />
         </div>
     );
