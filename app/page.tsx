@@ -123,12 +123,12 @@ export default function Home() {
                 <a href="#testimonials" className="text-gray-600 hover:text-indigo-600 transition-colors">Referenzen</a>
                 <Link href="/kontakt" className="text-gray-600 hover:text-indigo-600 transition-colors">Kontakt</Link>
                 <a
-                  href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                  href="https://app.treatflow.io/auth/register"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors"
                 >
-                  Demo buchen
+                  Kostenlos testen
                 </a>
               </div>
               <MobileMenu />
@@ -171,7 +171,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="bg-white border-2 border-gray-200 text-gray-700 px-10 py-5 rounded-2xl text-xl font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
-                  Demo buchen
+                  Beratung buchen
                   <ArrowRight className="ml-3 h-6 w-6" />
                 </a>
               </div>

@@ -6,8 +6,8 @@ import Script from 'next/script';
 
 export const metadata = {
     title: 'Kontakt - Treatflow Support & Beratung | Treatflow',
-    description: 'Kontaktiere das Treatflow Team für persönliche Beratung. Demo buchen, Fragen zur Kosmetikstudio Software stellen oder Support erhalten. Made in Austria.',
-    keywords: ['Treatflow Kontakt', 'Kosmetikstudio Software Support', 'Demo buchen', 'Treatflow Beratung', 'Beauty Software Hilfe'],
+    description: 'Kontaktiere das Treatflow Team für persönliche Beratung. Kostenlos testen, Fragen zur Kosmetikstudio Software stellen oder Support erhalten. Made in Austria.',
+    keywords: ['Treatflow Kontakt', 'Kosmetikstudio Software Support', 'Kostenlos testen', 'Treatflow Beratung', 'Beauty Software Hilfe'],
     alternates: {
         canonical: 'https://www.treatflow.io/kontakt',
     },
@@ -97,7 +97,7 @@ export default function KontaktPage() {
                                             rel="noopener noreferrer"
                                             className="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
                                         >
-                                            Demo buchen
+                                            Beratung buchen
                                             <Send className="ml-2 h-4 w-4" />
                                         </a>
                                     </div>

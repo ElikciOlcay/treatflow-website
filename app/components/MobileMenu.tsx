@@ -93,7 +93,9 @@ export default function MobileMenu() {
                             Kontakt
                         </Link>
                         <a
-                            href="/kontakt"
+                            href="https://app.treatflow.io/auth/register"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors mt-4 block text-center"
                             onClick={() => setIsOpen(false)}
                         >

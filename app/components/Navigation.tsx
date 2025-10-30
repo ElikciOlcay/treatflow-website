@@ -50,7 +50,9 @@ export default function Navigation() {
                         <Link href="/#testimonials" className="text-gray-600 hover:text-indigo-600 transition-colors">Referenzen</Link>
                         <Link href="/kontakt" className="text-gray-600 hover:text-indigo-600 transition-colors">Kontakt</Link>
                         <a
-                            href="/kontakt"
+                            href="https://app.treatflow.io/auth/register"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors"
                         >
                             Kostenlos testen
