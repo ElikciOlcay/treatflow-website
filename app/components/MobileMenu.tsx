@@ -93,13 +93,11 @@ export default function MobileMenu() {
                             Kontakt
                         </Link>
                         <a
-                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="/kontakt"
                             className="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors mt-4 block text-center"
                             onClick={() => setIsOpen(false)}
                         >
-                            Demo buchen
+                            Kostenlos testen
                         </a>
                     </div>
                 </div>
