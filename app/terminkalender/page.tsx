@@ -1,6 +1,7 @@
 import { Calendar, Clock, Users, CheckCircle, Zap, ArrowRight, Bell, TrendingUp } from 'lucide-react';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 export const metadata = {
     title: 'Terminkalender mit Online-Buchungen für Kosmetikstudios | Treatflow',
@@ -296,6 +297,8 @@ export default function TerminkalenderPage() {
                     </div>
                 </div>
             </section>
+            
+            <Footer />
         </div>
     );
 }

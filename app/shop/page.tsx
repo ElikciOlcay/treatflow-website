@@ -1,6 +1,7 @@
 import { ShoppingBag, Package, TrendingUp, CheckCircle, ArrowRight, Euro, BarChart3, Camera, CreditCard } from 'lucide-react';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 export const metadata = {
     title: 'Produktverkauf & Lagerverwaltung für Kosmetikstudios | Treatflow',
@@ -460,6 +461,8 @@ export default function ShopPage() {
                     </div>
                 </div>
             </section>
+            
+            <Footer />
         </div>
     );
 }

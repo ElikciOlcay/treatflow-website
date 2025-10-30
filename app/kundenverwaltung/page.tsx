@@ -1,6 +1,7 @@
 import { Users, Search, Upload, Database, CheckCircle, ArrowRight, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 export const metadata = {
     title: 'Kundenverwaltung für Kosmetikstudios - Unbegrenzte Kundenprofile | Treatflow',
@@ -273,6 +274,8 @@ export default function KundenverwaltungPage() {
                     </div>
                 </div>
             </section>
+            
+            <Footer />
         </div>
     );
 }

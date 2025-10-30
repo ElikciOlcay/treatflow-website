@@ -1,6 +1,7 @@
 import { Calendar, Link2, Bell, CheckCircle, ArrowRight, Clock, Users, Smartphone } from 'lucide-react';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 export const metadata = {
     title: 'Online-Buchungssystem für Kosmetikstudios - 24/7 Verfügbar | Treatflow',
@@ -376,6 +377,8 @@ export default function OnlineBuchungenPage() {
                     </div>
                 </div>
             </section>
+            
+            <Footer />
         </div>
     );
 }

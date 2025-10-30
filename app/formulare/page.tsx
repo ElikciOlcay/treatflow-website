@@ -1,6 +1,7 @@
 import { FileText, Zap, Edit3, CheckCircle, ArrowRight, Sparkles, Layout } from 'lucide-react';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 export const metadata = {
     title: 'Formulare für Kosmetikstudios - KI-Generator & Vorlagen | Treatflow',
@@ -368,6 +369,8 @@ export default function FormularePage() {
                     </div>
                 </div>
             </section>
+            
+            <Footer />
         </div>
     );
 }

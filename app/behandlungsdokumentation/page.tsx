@@ -1,6 +1,7 @@
 import { FileText, Camera, Zap, Clock, CheckCircle, ArrowRight, Brain, Shield } from 'lucide-react';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 export const metadata = {
     title: 'Behandlungsdokumentation für Kosmetikstudios - NiSV konform | Treatflow',
@@ -335,6 +336,8 @@ export default function BehandlungsdokumentationPage() {
                     </div>
                 </div>
             </section>
+            
+            <Footer />
         </div>
     );
 }
