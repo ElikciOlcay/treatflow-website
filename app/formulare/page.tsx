@@ -302,7 +302,7 @@ export default function FormularePage() {
                                 <span className="text-white font-bold text-sm">K</span>
                             </div>
                             <h3 className="font-bold text-gray-900 mb-2">Kosmetik</h3>
-                            <p className="text-sm text-gray-600">Gesichtsbehandlungen, Peelings, Anti-Aging</p>
+                            <p className="text-sm text-gray-600">Gesichtsbehandlungen, Peelings, Anti-Aging und viele weitere</p>
                         </div>
 
                         <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-6 rounded-xl text-center">
@@ -310,7 +310,7 @@ export default function FormularePage() {
                                 <span className="text-white font-bold text-sm">M</span>
                             </div>
                             <h3 className="font-bold text-gray-900 mb-2">Medizin</h3>
-                            <p className="text-sm text-gray-600">Microneedling, Filler, medizinische Behandlungen</p>
+                            <p className="text-sm text-gray-600">Microneedling, Filler, medizinische Behandlungen und viele weitere</p>
                         </div>
 
                         <div className="bg-gradient-to-br from-purple-50 to-pink-100 p-6 rounded-xl text-center">
@@ -318,7 +318,7 @@ export default function FormularePage() {
                                 <span className="text-white font-bold text-sm">B</span>
                             </div>
                             <h3 className="font-bold text-gray-900 mb-2">Beauty</h3>
-                            <p className="text-sm text-gray-600">Permanent Makeup, Wimpern, Augenbrauen</p>
+                            <p className="text-sm text-gray-600">Permanent Makeup, Wimpern, Augenbrauen und viele weitere</p>
                         </div>
 
                         <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-6 rounded-xl text-center">
@@ -326,7 +326,7 @@ export default function FormularePage() {
                                 <span className="text-white font-bold text-sm">H</span>
                             </div>
                             <h3 className="font-bold text-gray-900 mb-2">Haar</h3>
-                            <p className="text-sm text-gray-600">Haarverlängerung, Haartransplantation</p>
+                            <p className="text-sm text-gray-600">Haarverlängerung, Haartransplantation und viele weitere</p>
                         </div>
 
                         <div className="bg-gradient-to-br from-orange-50 to-red-100 p-6 rounded-xl text-center">
@@ -334,7 +334,7 @@ export default function FormularePage() {
                                 <span className="text-white font-bold text-sm">N</span>
                             </div>
                             <h3 className="font-bold text-gray-900 mb-2">Nägel</h3>
-                            <p className="text-sm text-gray-600">Nageldesign, Nagelmodellage, Pflege</p>
+                            <p className="text-sm text-gray-600">Nageldesign, Nagelmodellage, Pflege und viele weitere</p>
                         </div>
                     </div>
                 </div>
