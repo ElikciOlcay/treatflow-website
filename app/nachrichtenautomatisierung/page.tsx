@@ -1,4 +1,4 @@
-import { Mail, Clock, Calendar, Heart, CheckCircle, ArrowRight, Bell, Zap, MessageCircle } from 'lucide-react';
+import { Clock, Heart, CheckCircle, ArrowRight, Zap, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
