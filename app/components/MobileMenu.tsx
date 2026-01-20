@@ -72,13 +72,6 @@ export default function MobileMenu() {
                             </Link>
                         </div>
                         <a
-                            href="/#features"
-                            className="block text-gray-600 hover:text-indigo-600 transition-colors py-2"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            Features
-                        </a>
-                        <a
                             href="/#pricing"
                             className="block text-gray-600 hover:text-indigo-600 transition-colors py-2"
                             onClick={() => setIsOpen(false)}

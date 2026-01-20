@@ -48,7 +48,6 @@ export default function Navigation() {
                                 </div>
                             </div>
                         </div>
-                        <Link href="/#features" className="text-gray-600 hover:text-indigo-600 transition-colors">Features</Link>
                         <Link href="/#pricing" className="text-gray-600 hover:text-indigo-600 transition-colors">Preise</Link>
                         <Link href="/blog" className="text-gray-600 hover:text-indigo-600 transition-colors">Blog</Link>
                         <Link href="/#testimonials" className="text-gray-600 hover:text-indigo-600 transition-colors">Referenzen</Link>

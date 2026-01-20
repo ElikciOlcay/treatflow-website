@@ -112,6 +112,9 @@ export default function Home() {
                       <Link href="/online-buchungen" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
                         Online-Buchungen
                       </Link>
+                      <Link href="/nachrichtenautomatisierung" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
+                        Nachrichtenautomatisierung
+                      </Link>
                       <Link href="/shop" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
                         Shop
                       </Link>
