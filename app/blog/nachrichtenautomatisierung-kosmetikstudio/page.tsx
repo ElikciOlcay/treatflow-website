@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         siteName: 'Treatflow Blog',
         images: [
             {
-                url: '/images/blog/No-Shows.png',
+                url: '/images/blog/no-shows.png',
                 width: 1200,
                 height: 630,
                 alt: 'Nachrichtenautomatisierung für Kosmetikstudios - Automatische Erinnerungen und Follow-ups',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Nachrichtenautomatisierung im Kosmetikstudio: 80% weniger No-Shows',
         description: 'Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche für mehr Kundenbindung.',
-        images: ['/images/blog/No-Shows.png'],
+        images: ['/images/blog/no-shows.png'],
     },
 };
 
@@ -137,7 +137,7 @@ export default function BlogPost() {
                     </div>
 
                     <img
-                        src="/images/blog/No-Shows.png"
+                        src="/images/blog/no-shows.png"
                         alt="Nachrichtenautomatisierung für Kosmetikstudios - Automatische Erinnerungen und Follow-ups"
                         className="w-full h-64 lg:h-96 object-cover rounded-2xl shadow-lg mb-12"
                     />

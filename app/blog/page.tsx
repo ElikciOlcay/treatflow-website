@@ -44,7 +44,7 @@ const blogPosts = [
         readTime: '8 min',
         publishDate: '20. Januar 2024',
         featured: true,
-        image: '/images/blog/No-Shows.png'
+        image: '/images/blog/no-shows.png'
     },
     {
         slug: 'email-marketing-kosmetikstudios',
