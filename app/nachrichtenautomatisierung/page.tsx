@@ -259,7 +259,7 @@ export default function NachrichtenautomatisierungPage() {
                                     <div>
                                         <h3 className="text-xl font-bold text-gray-900 mb-2">Intelligente Platzhalter</h3>
                                         <p className="text-gray-600">
-                                            Verwende Platzhalter wie {'{'}{'{'}}kunde_name{'}'}{'}'},  {'{'}{'{'}}studio_name{'}'}{'}'} oder {'{'}{'{'}}termin_datum{'}'}{'}'} 
+                                            Verwende Platzhalter wie kunde_name, studio_name oder termin_datum 
                                             für automatisch personalisierte Nachrichten.
                                         </p>
                                     </div>
@@ -329,12 +329,12 @@ export default function NachrichtenautomatisierungPage() {
                                     <div className="bg-blue-50 p-4 rounded-lg">
                                         <h4 className="font-medium text-blue-900 mb-2">Verfügbare Platzhalter:</h4>
                                         <div className="grid grid-cols-2 gap-2 text-sm text-blue-700">
-                                            <span>{'{'}kunde_name{'}'}}</span>
-                                            <span>{'{'}studio_name{'}'}}</span>
-                                            <span>{'{'}termin_datum{'}'}}</span>
-                                            <span>{'{'}termin_uhrzeit{'}'}}</span>
-                                            <span>{'{'}behandlung_name{'}'}}</span>
-                                            <span>{'{'}studio_telefon{'}'}}</span>
+                                            <span>kunde_name</span>
+                                            <span>studio_name</span>
+                                            <span>termin_datum</span>
+                                            <span>termin_uhrzeit</span>
+                                            <span>behandlung_name</span>
+                                            <span>studio_telefon</span>
                                         </div>
                                     </div>
                                 </div>
