@@ -27,6 +27,26 @@ export const metadata = {
 
 const blogPosts = [
     {
+        slug: 'terminkalender-kosmetikstudio-effizienz',
+        title: 'Effizienter Terminkalender im Kosmetikstudio: So planst du deinen Tag perfekt',
+        excerpt: 'Optimiere deinen Terminkalender und steigere die Effizienz um 40%. Professionelle Tipps für bessere Terminplanung, weniger Stress und mehr Umsatz im Kosmetikstudio.',
+        category: 'Organisation',
+        readTime: '10 min',
+        publishDate: '22. Januar 2024',
+        featured: true,
+        image: '/images/blog/terminkalender.png'
+    },
+    {
+        slug: 'nachrichtenautomatisierung-kosmetikstudio',
+        title: 'Nachrichtenautomatisierung für Kosmetikstudios: 80% weniger No-Shows durch automatische Erinnerungen',
+        excerpt: 'Entdecke, wie automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche dein Kosmetikstudio revolutionieren. Reduziere No-Shows um 80% und steigere die Kundenbindung.',
+        category: 'Automatisierung',
+        readTime: '8 min',
+        publishDate: '20. Januar 2024',
+        featured: true,
+        image: '/images/blog/No-Shows.png'
+    },
+    {
         slug: 'email-marketing-kosmetikstudios',
         title: 'Email-Marketing für Kosmetikstudios: Kunden erfolgreich zurückgewinnen',
         excerpt: 'Mit strategischem Email-Marketing holst du verlorene Kunden zurück und steigerst deinen Umsatz um bis zu 40%. So baust du eine erfolgreiche Email-Strategie auf.',
