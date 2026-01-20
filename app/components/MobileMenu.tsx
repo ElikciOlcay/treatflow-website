@@ -57,6 +57,13 @@ export default function MobileMenu() {
                                 Online-Buchungen
                             </Link>
                             <Link
+                                href="/nachrichtenautomatisierung"
+                                className="block text-gray-600 hover:text-indigo-600 transition-colors py-2"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Nachrichtenautomatisierung
+                            </Link>
+                            <Link
                                 href="/shop"
                                 className="block text-gray-600 hover:text-indigo-600 transition-colors py-2"
                                 onClick={() => setIsOpen(false)}

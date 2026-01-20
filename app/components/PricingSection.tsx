@@ -153,6 +153,10 @@ export default function PricingSection() {
               </li>
               <li className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
+                <span className="text-sm">Nachrichtenautomatisierung</span>
+              </li>
+              <li className="flex items-center">
+                <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
                 <span className="text-sm">Erweiterte Einstellungen</span>
               </li>
               <li className="flex items-center">
