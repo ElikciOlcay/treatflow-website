@@ -1,0 +1,18 @@
+# Treatflow
+
+Treatflow ist eine Software für Kosmetikstudios: Terminkalender, digitale Kundenkartei, Online-Buchungen, Anamnese-Formulare und Behandlungsdokumentation. NiSV-konform. Made in Austria.
+
+## Wichtige Seiten
+
+- https://www.treatflow.io
+- https://www.treatflow.io/terminkalender
+- https://www.treatflow.io/kundenverwaltung
+- https://www.treatflow.io/formulare
+- https://www.treatflow.io/behandlungsdokumentation
+- https://www.treatflow.io/online-buchungen
+- https://www.treatflow.io/blog
+
+## Kontakt
+
+- E-Mail: hello@treatflow.io
+- Website: https://www.treatflow.io

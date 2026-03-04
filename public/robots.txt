@@ -1,20 +1,16 @@
 User-agent: *
 Allow: /
-
-# Sitemap
-Sitemap: https://www.treatflow.io/sitemap.xml
-
-# Crawl-delay für bessere Server-Performance
-Crawl-delay: 1
-
-# Blockiere unnötige Pfade
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
 Disallow: /dashboard/
+Allow: /manifest.json
+Allow: /llms.txt
 Disallow: *.json$
 
-# Erlaube wichtige Dateien
-Allow: /images/
-Allow: /favicon.ico
-Allow: /sitemap.xml
+# ChatGPT Search (OAI-SearchBot) für Sichtbarkeit in KI-Suche erlauben
+User-agent: OAI-SearchBot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.treatflow.io/sitemap.xml

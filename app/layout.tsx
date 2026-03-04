@@ -11,11 +11,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Treatflow - Kosmetikstudio Software für Terminverwaltung & Kundenverwaltung",
+    default: "Kosmetikstudio Software: Termine, Kunden & Dokumentation in einer App | Treatflow",
     template: "%s | Treatflow"
   },
-  description: "Professionelle Kosmetikstudio Software mit Terminkalender, Online-Buchungen, Kundenverwaltung und Behandlungsdokumentation. 14 Tage kostenlos testen. Made in Austria.",
-  keywords: ["Kosmetikstudio Software", "Terminverwaltung Kosmetik", "Online Buchungssystem", "Kundenverwaltung Beauty", "Behandlungsdokumentation", "Kosmetik Praxissoftware", "NiSV konform", "Made in Austria"],
+  description: "Verwalte Terminkalender, Online-Buchungen, Kundenkartei und Behandlungsdoku – DSGVO-konform, 14 Tage kostenlos testen. Ideal für dein Studio. Made in Austria.",
+  keywords: ["Kosmetikstudio Software", "Software für Kosmetikstudio", "Software Kosmetikstudio", "Software Kosmetik", "Kundenkartei Kosmetik", "digitale Kundenkartei Kosmetik", "Terminverwaltung Kosmetik", "Terminplaner App Kosmetikstudio", "Online Buchungssystem", "Online Terminbuchung Kosmetik", "Terminbuchungssoftware Kosmetik", "Kundenverwaltung Beauty", "Behandlungsdokumentation", "Behandlungsdokumentation Software Kosmetik", "NiSV konform", "NiSV Dokumentation Software", "NiSV konform dokumentieren", "NiSV Beratungsprotokoll Vorlage", "Anamnese Software Kosmetik", "Einverständniserklärung Kosmetik", "Kosmetik Praxissoftware", "Beste Kosmetikstudio Software", "Kosmetikstudio Software Vergleich", "Kosmetikstudio Software Test", "Kosmetikstudio Software Preis", "Kosmetikstudio Software DSGVO konform", "All-in-One Software Kosmetikstudio", "DSGVO konform Kosmetikstudio", "Beauty Salon Software", "Made in Austria"],
   authors: [{ name: "Treatflow Team" }],
   creator: "Treatflow",
   publisher: "Treatflow",
@@ -34,12 +34,12 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: 'https://www.treatflow.io',
-    title: 'Treatflow - Kosmetikstudio Software für Terminverwaltung & Kundenverwaltung',
-    description: 'Professionelle Kosmetikstudio Software mit Terminkalender, Online-Buchungen, Kundenverwaltung und Behandlungsdokumentation. 14 Tage kostenlos testen.',
+    title: 'Kosmetikstudio Software: Termine, Kunden & Dokumentation in einer App | Treatflow',
+    description: 'Verwalte Terminkalender, Online-Buchungen, Kundenkartei und Behandlungsdoku – DSGVO-konform, 14 Tage kostenlos testen.',
     siteName: 'Treatflow',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: 'https://www.treatflow.io/images/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Treatflow - Kosmetikstudio Software Dashboard',
@@ -49,16 +49,58 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Treatflow - Kosmetikstudio Software',
-    description: 'Professionelle Software für Kosmetikstudios. Terminverwaltung, Online-Buchungen & mehr.',
-    images: ['/images/og-image.jpg'],
+    description: 'Software für Kosmetikstudio: Terminplaner, Kundenkartei, Online-Buchungen.',
+    images: ['https://www.treatflow.io/images/og-image.jpg'],
     creator: '@treatflow',
   },
   alternates: {
     canonical: 'https://www.treatflow.io',
   },
   other: {
-    'google-site-verification': 'your-google-verification-code',
+    'google-site-verification': 'fB1kQag5y2XvmoHzg6-NG4dFb5qUF47LMa0BDMQHisc',
   },
+};
+
+const baseUrl = 'https://www.treatflow.io';
+const organizationWebSiteSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${baseUrl}/#organization`,
+      name: 'Treatflow',
+      url: baseUrl,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/images/logos/treatflow-logo.svg`,
+      },
+      description: 'Software für Kosmetikstudio: Terminkalender, digitale Kundenkartei, Online-Buchungen und Behandlungsdokumentation. Made in Austria.',
+      sameAs: [
+        'https://www.instagram.com/treatflow.io/',
+      ],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'customer service',
+        email: 'hello@treatflow.io',
+        availableLanguage: 'German',
+        areaServed: ['DE', 'AT'],
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${baseUrl}/#website`,
+      url: baseUrl,
+      name: 'Treatflow - Kosmetikstudio Software',
+      description: 'Software für Kosmetikstudio: Terminkalender, Kundenkartei, Online-Buchungen, Behandlungsdokumentation.',
+      publisher: { '@id': `${baseUrl}/#organization` },
+      inLanguage: 'de-DE',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: { '@type': 'EntryPoint', urlTemplate: `${baseUrl}/blog?q={search_term_string}` },
+        'query-input': 'required name=search_term_string',
+      },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -82,10 +124,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#4f46e5" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="alternate" type="application/rss+xml" title="Treatflow Blog RSS Feed" href="/blog/feed.xml" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationWebSiteSchema) }}
+        />
         {/* Google tag (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SPCW9Q0HY6"

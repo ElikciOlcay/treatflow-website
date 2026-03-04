@@ -4,15 +4,15 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Online-Buchungssystem für Kosmetikstudios - 24/7 Verfügbar | Treatflow',
-    description: 'Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink. 30% mehr Termine durch 24/7 Verfügbarkeit. Automatische Bestätigungen und keine Doppelbuchungen.',
-    keywords: ['Online Buchungssystem Kosmetik', '24/7 Terminbuchung', 'Kosmetikstudio Online Termin', 'Automatische Terminbestätigung', 'Buchungslink Beauty'],
+    title: 'Online-Terminbuchung fürs Kosmetikstudio – 24/7 Buchungslink ohne Telefonstress | Treatflow',
+    description: 'Deine Kunden buchen selbstständig, du erhältst Bestätigungen automatisch – ohne Doppelbuchungen. Starte jetzt mit Online-Buchungen.',
+    keywords: ['Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Terminbuchung Link Kosmetikstudio', 'Online Buchungssystem Kosmetik', 'Terminbuchungssoftware Kosmetik', 'Buchungssystem Kosmetik', '24/7 Terminbuchung', 'Kosmetikstudio Online Termin', 'Automatische Terminbestätigung', 'Buchungslink Beauty'],
     alternates: {
         canonical: 'https://www.treatflow.io/online-buchungen',
     },
     openGraph: {
-        title: 'Online-Buchungssystem für Kosmetikstudios - 24/7 Verfügbar',
-        description: 'Online-Buchungssystem mit persönlichem Buchungslink. 30% mehr Termine durch 24/7 Verfügbarkeit.',
+        title: 'Online-Terminbuchung fürs Kosmetikstudio – 24/7 Buchungslink ohne Telefonstress',
+        description: 'Deine Kunden buchen selbstständig, du erhältst Bestätigungen automatisch – ohne Doppelbuchungen.',
         url: 'https://www.treatflow.io/online-buchungen',
         images: [
             {
@@ -39,7 +39,7 @@ export default function OnlineBuchungenPage() {
                             Online-Buchungen
                         </div>
                         <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                            Deine Kunden buchen <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">selbstständig</span> online
+                            Online-Terminbuchung fürs <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Kosmetikstudio</span>
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                             Persönlicher Buchungslink für dein Studio. Deine Kunden buchen rund um die Uhr,

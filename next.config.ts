@@ -37,6 +37,9 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
+      // Brand-Keywords: treatflow login
+      { source: '/login', destination: 'https://app.treatflow.io/auth/login', permanent: true },
+
       // vorhandene Redirects
       { source: '/home', destination: '/', permanent: true },
       { source: '/index', destination: '/', permanent: true },

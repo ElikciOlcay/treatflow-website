@@ -4,15 +4,15 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Kundenverwaltung für Kosmetikstudios - Unbegrenzte Kundenprofile | Treatflow',
-    description: 'Professionelle Kundenverwaltung für Kosmetikstudios mit unbegrenzten Kundenprofilen. Import-Funktion, schnelle Suche und komplette Behandlungshistorie. DSGVO-konform.',
-    keywords: ['Kundenverwaltung Kosmetik', 'CRM Beauty Salon', 'Kundenprofile Kosmetikstudio', 'Behandlungshistorie', 'DSGVO Kundendaten'],
+    title: 'Digitale Kundenkartei fürs Kosmetikstudio – Historie, Notizen, Fotos | Treatflow',
+    description: 'Kundenverwaltung, Behandlungsverlauf und wichtige Infos an einem Ort. Weniger Zettel, mehr Überblick – sicher und strukturiert.',
+    keywords: ['Kundenkartei Kosmetikstudio', 'Kundenverwaltung Kosmetikstudio', 'Digitale Kundenkartei Kosmetikstudio', 'Kundenkartei Kosmetik', 'digitale Kundenkartei Kosmetik', 'Kundenkartei App', 'CRM Beauty Salon', 'Kundenprofile Kosmetikstudio', 'Behandlungshistorie', 'DSGVO Kundendaten'],
     alternates: {
         canonical: 'https://www.treatflow.io/kundenverwaltung',
     },
     openGraph: {
-        title: 'Kundenverwaltung für Kosmetikstudios - Unbegrenzte Kundenprofile',
-        description: 'Professionelle Kundenverwaltung mit unbegrenzten Kundenprofilen, Import-Funktion und schneller Suche.',
+        title: 'Digitale Kundenkartei fürs Kosmetikstudio – Historie, Notizen, Fotos',
+        description: 'Kundenverwaltung, Behandlungsverlauf und wichtige Infos an einem Ort. Weniger Zettel, mehr Überblick.',
         url: 'https://www.treatflow.io/kundenverwaltung',
         images: [
             {
@@ -36,13 +36,13 @@ export default function KundenverwaltungPage() {
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
                             <Users className="h-4 w-4 mr-2" />
-                            Kundenverwaltung
+                            Digitale Kundenkartei
                         </div>
                         <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                            Alle <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Kundendaten</span> perfekt organisiert
+                            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Kundenkartei Kosmetik</span> – alle Kundendaten in einer App
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            Skalierbare Kundendatenbank mit unbegrenzter Speicherkapazität. Import bestehender Daten,
+                            Digitale Kundenkartei für Kosmetikstudios: unbegrenzte Kundendatenbank, Import bestehender Daten,
                             schnelle Suche und alle wichtigen Informationen auf einen Blick.
                         </p>
                     </div>
@@ -51,7 +51,7 @@ export default function KundenverwaltungPage() {
                     <div className="max-w-5xl mx-auto">
                         <img
                             src="/images/mockups/kundenverwaltung-overview.png"
-                            alt="Treatflow Kundenverwaltung - Übersichtliche Darstellung aller Kunden mit Suchfunktion und Detailansicht"
+                            alt="Treatflow Kundenkartei - Übersichtliche Darstellung aller Kunden mit Suchfunktion und Detailansicht"
                             className="w-full h-auto shadow-2xl rounded-2xl"
                         />
                     </div>

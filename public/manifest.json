@@ -1,7 +1,7 @@
 {
     "name": "Treatflow - Kosmetikstudio Software",
     "short_name": "Treatflow",
-    "description": "Professionelle Software für Kosmetikstudios mit Terminverwaltung, Kundenverwaltung und Behandlungsdokumentation",
+    "description": "Software für Kosmetikstudio: Terminkalender, digitale Kundenkartei, Online-Buchungen und Behandlungsdokumentation. 14 Tage kostenlos testen.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",

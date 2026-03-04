@@ -4,15 +4,15 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Behandlungsdokumentation für Kosmetikstudios - NiSV konform | Treatflow',
-    description: 'Professionelle Behandlungsdokumentation für Kosmetikstudios mit intelligenter Dokumentation. Vorher-Nachher Fotos, automatische Notizen und NiSV-konforme Aufzeichnungen.',
-    keywords: ['Behandlungsdokumentation Kosmetik', 'NiSV konform Dokumentation', 'Vorher Nachher Fotos', 'Automatische Behandlungsnotizen', 'Rechtssichere Dokumentation'],
+    title: 'Behandlungsdokumentation im Kosmetikstudio – mit Vorher-Nachher-Fotos & Notizen | Treatflow',
+    description: 'Halte jede Behandlung strukturiert fest und finde Details sofort wieder. Ideal für Qualität, Nachvollziehbarkeit und Studio-Standards. NiSV-konform.',
+    keywords: ['Behandlungsdokumentation Kosmetikstudio', 'Behandlungsdokumentation Kosmetik', 'Vorher Nachher Fotos Software', 'Dokumentation App Kosmetikstudio', 'NiSV konform dokumentieren', 'Behandlungsdokumentation Software Kosmetik', 'NiSV konform Dokumentation', 'NiSV Dokumentation Software', 'Automatische Behandlungsnotizen', 'Rechtssichere Dokumentation'],
     alternates: {
         canonical: 'https://www.treatflow.io/behandlungsdokumentation',
     },
     openGraph: {
-        title: 'Behandlungsdokumentation für Kosmetikstudios - NiSV konform',
-        description: 'Professionelle Behandlungsdokumentation mit intelligenter Dokumentation und NiSV-konformen Aufzeichnungen.',
+        title: 'Behandlungsdokumentation im Kosmetikstudio – mit Vorher-Nachher-Fotos & Notizen',
+        description: 'Halte jede Behandlung strukturiert fest. Vorher-Nachher-Fotos, Notizen, NiSV-konform.',
         url: 'https://www.treatflow.io/behandlungsdokumentation',
         images: [
             {
@@ -327,6 +327,12 @@ export default function BehandlungsdokumentationPage() {
                             14 Tage gratis testen
                             <ArrowRight className="ml-2 h-5 w-5" />
                         </a>
+                        <Link
+                            href="/nisv-dokumentation"
+                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200"
+                        >
+                            NiSV-Dokumentation
+                        </Link>
                         <Link
                             href="/"
                             className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200"

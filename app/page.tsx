@@ -26,7 +26,7 @@ const structuredData = {
   "name": "Treatflow",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web Browser",
-  "description": "Professionelle Kosmetikstudio Software mit Terminkalender, Online-Buchungen, Kundenverwaltung und Behandlungsdokumentation",
+  "description": "Software für Kosmetikstudio: Terminkalender, digitale Kundenkartei, Online-Buchungen und Behandlungsdokumentation",
   "url": "https://www.treatflow.io",
   "author": {
     "@type": "Organization",
@@ -58,21 +58,81 @@ const structuredData = {
   },
   "featureList": [
     "Terminkalender mit Online-Buchung",
-    "Kundenverwaltung",
+    "Digitale Kundenkartei und Kundenverwaltung",
     "Formulare für Anamnesen",
     "Behandlungsdokumentation",
     "NiSV konform"
   ]
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist Treatflow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treatflow ist eine Software für Kosmetikstudios mit Terminkalender, digitaler Kundenkartei, Online-Buchungen, Anamnese-Formularen und Behandlungsdokumentation. Die App ist NiSV-konform und wird von über 500 Kosmetikerinnen genutzt. Made in Austria."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Software braucht ein Kosmetikstudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ein Kosmetikstudio braucht Software für Terminverwaltung (Terminplaner), digitale Kundenkartei, Online-Buchung, Anamnesebogen und Behandlungsdokumentation. Treatflow vereint alle Funktionen in einer App und ist speziell für Beauty-Studios entwickelt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kostet die Kundenkartei für Kosmetikstudios etwas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treatflow bietet eine digitale Kundenkartei inklusive. Du kannst 14 Tage kostenlos testen. Danach gibt es Tarife ab 39 Euro pro Monat (Basic) bzw. 59 Euro mit Online-Buchung (Booking)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist Treatflow NiSV-konform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Die Behandlungsdokumentation und Formulare sind NiSV-konform und rechtssicher für Kosmetikstudios in Deutschland und Österreich."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie buchen Kunden online beim Kosmetikstudio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mit Treatflow erhältst du einen persönlichen Buchungslink. Kunden wählen dort Termin und Behandlung; der Kalender wird automatisch aktualisiert. Erinnerungen und Nachrichten können automatisiert werden, was No-Shows reduziert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich die Kosmetikstudio-Software kostenlos testen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Treatflow kannst du 14 Tage kostenlos und unverbindlich testen – ohne Kreditkarte. So siehst du, ob Terminplaner, Kundenkartei, Online-Buchung und Behandlungsdokumentation zu deinem Studio passen."
+      }
+    }
+  ]
+};
+
 export default function Home() {
   return (
     <>
-      {/* Strukturierte Daten */}
+      {/* Strukturierte Daten: SoftwareApplication + FAQPage (Google Snippets + KI) */}
       <Script
         id="structured-data"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <div className="min-h-screen bg-white">
@@ -111,6 +171,12 @@ export default function Home() {
                       </Link>
                       <Link href="/online-buchungen" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
                         Online-Buchungen
+                      </Link>
+                      <Link href="/nisv-dokumentation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
+                        NiSV-Dokumentation
+                      </Link>
+                      <Link href="/kosmetikstudio-software-vergleich" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
+                        Software-Vergleich
                       </Link>
                       <Link href="/nachrichtenautomatisierung" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
                         Nachrichtenautomatisierung
@@ -156,7 +222,7 @@ export default function Home() {
                 - weniger Papierkram
               </h1>
               <p className="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-                Terminkalender mit Online-Buchung, Formulare für Anamnesen & Behandlungsdokumentation.
+                Terminkalender, digitale Kundenkartei für Kosmetikstudios, Formulare für Anamnesen und Behandlungsdokumentation – alles in einer Software.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
                 <a
@@ -373,8 +439,8 @@ export default function Home() {
                 <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Users className="h-6 w-6 text-white" />
                 </div>
-                <h4 className="font-bold text-gray-900 mb-2">Kundenverwaltung</h4>
-                <p className="text-sm text-gray-600">Skalierbare Kundendatenbank mit Import-Funktion</p>
+                <h4 className="font-bold text-gray-900 mb-2">Kundenverwaltung & Kundenkartei</h4>
+                <p className="text-sm text-gray-600">Digitale Kundenkartei Kosmetik: Kundendatenbank mit Import-Funktion</p>
               </Link>
 
               {/* Foto-Management */}

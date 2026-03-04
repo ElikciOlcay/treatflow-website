@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 export const metadata = {
     title: 'Nachrichtenautomatisierung für Kosmetikstudios - Automatische Erinnerungen | Treatflow',
     description: 'Automatische Nachrichten für Kosmetikstudios: Terminerinnerungen, Follow-ups und Geburtstagswünsche. Steigere die Kundenbindung mit personalisierten, automatischen E-Mails.',
-    keywords: ['Nachrichtenautomatisierung Kosmetik', 'Automatische Terminerinnerungen', 'Follow-up E-Mails', 'Geburtstagswünsche automatisch', 'Kundenbindung Beauty Studio'],
+    keywords: ['Nachrichtenautomatisierung Kosmetik', 'Terminerinnerung automatisch', 'No-Show reduzieren Kosmetikstudio', 'Automatische Terminerinnerungen', 'Follow-up E-Mails', 'Geburtstagswünsche automatisch', 'Kundenbindung Beauty Studio'],
     alternates: {
         canonical: 'https://www.treatflow.io/nachrichtenautomatisierung',
     },

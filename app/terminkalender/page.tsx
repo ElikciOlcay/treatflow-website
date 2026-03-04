@@ -4,15 +4,15 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Terminkalender mit Online-Buchungen für Kosmetikstudios | Treatflow',
-    description: 'Professioneller Terminkalender für Kosmetikstudios mit Online-Buchungssystem. Automatische Erinnerungen, 24/7 Buchungen und perfekte Terminübersicht. 30% mehr Buchungen garantiert.',
-    keywords: ['Terminkalender Kosmetik', 'Online Buchungssystem', 'Kosmetikstudio Terminverwaltung', 'Automatische Erinnerungen', 'Beauty Salon Software'],
+    title: 'Terminplaner App für Kosmetikstudios - Terminkalender & Online-Buchungen | Treatflow',
+    description: 'Beste Terminplaner-App für Kosmetikstudio: Terminkalender mit Online-Buchung, Erinnerungen und 24/7 Buchungen. Software Kosmetik für Terminverwaltung.',
+    keywords: ['Terminplaner App Kosmetikstudio', 'beste Terminplaner App für Kosmetikstudio', 'Terminkalender Kosmetik', 'Online Buchungssystem', 'Kosmetikstudio Terminverwaltung', 'Automatische Erinnerungen', 'Beauty Salon Software'],
     alternates: {
         canonical: 'https://www.treatflow.io/terminkalender',
     },
     openGraph: {
-        title: 'Terminkalender mit Online-Buchungen für Kosmetikstudios',
-        description: 'Professioneller Terminkalender mit Online-Buchungssystem für Kosmetikstudios. 30% mehr Buchungen durch 24/7 Verfügbarkeit.',
+        title: 'Terminplaner App & Terminkalender für Kosmetikstudios',
+        description: 'Terminplaner-App für Kosmetikstudios mit Online-Buchung. 24/7 Buchungen, Erinnerungen, weniger No-Shows.',
         url: 'https://www.treatflow.io/terminkalender',
         images: [
             {
@@ -39,11 +39,11 @@ export default function TerminkalenderPage() {
                             Terminkalender
                         </div>
                         <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                            Dein <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Terminkalender</span> immer im Blick
+                            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Terminplaner App</span> für dein Kosmetikstudio
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            Professioneller Kalender mit Wochen-, Tages- und Monatsansicht. Deine Kunden buchen direkt
-                            über deinen persönlichen Buchungslink - ohne Doppelbuchungen.
+                            Terminkalender mit Wochen-, Tages- und Monatsansicht. Deine Kunden buchen direkt
+                            über deinen Buchungslink – ohne Doppelbuchungen. Die Terminplaner-App für Beauty-Studios.
                         </p>
                     </div>
 

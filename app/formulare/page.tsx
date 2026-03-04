@@ -4,15 +4,15 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Formulare für Kosmetikstudios - KI-Generator & Vorlagen | Treatflow',
-    description: 'Professionelle Formulare für Kosmetikstudios mit KI-Generator. Anamnesen, Einverständniserklärungen und Behandlungsformulare. NiSV-konform und rechtssicher.',
-    keywords: ['Formulare Kosmetik', 'KI Formular Generator', 'Anamnese Vorlagen', 'NiSV konform Formulare', 'Einverständniserklärung Beauty'],
+    title: 'Anamneseformular Kosmetik: Welche Fragen, welche Pflichtangaben? | Treatflow',
+    description: 'Checkliste & Beispiele (z. B. Microneedling, Laser, PMU). Professionelle Formulare mit KI-Generator – NiSV-konform und rechtssicher. So setzt du Formulare digital im Studio um.',
+    keywords: ['Anamnese Formular Kosmetikstudio', 'Anamnesebogen Kosmetik', 'Formular Generator Anamnese', 'Einverständniserklärung Kosmetik Behandlung', 'Formulare Kosmetik', 'Anamnese Software Kosmetik', 'digitaler Anamnesebogen', 'KI Formular Generator', 'Anamnese Vorlagen', 'NiSV konform Formulare', 'Einverständniserklärung Beauty'],
     alternates: {
         canonical: 'https://www.treatflow.io/formulare',
     },
     openGraph: {
-        title: 'Formulare für Kosmetikstudios - KI-Generator & Vorlagen',
-        description: 'Professionelle Formulare mit KI-Generator für Kosmetikstudios. NiSV-konform und rechtssicher.',
+        title: 'Anamneseformular Kosmetik: Welche Fragen, welche Pflichtangaben?',
+        description: 'Checkliste & Beispiele. Formulare mit KI-Generator für Kosmetikstudios – NiSV-konform und rechtssicher.',
         url: 'https://www.treatflow.io/formulare',
         images: [
             {
@@ -360,6 +360,12 @@ export default function FormularePage() {
                             14 Tage gratis testen
                             <ArrowRight className="ml-2 h-5 w-5" />
                         </a>
+                        <Link
+                            href="/nisv-dokumentation"
+                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-green-600 transition-colors duration-200"
+                        >
+                            NiSV-Dokumentation
+                        </Link>
                         <Link
                             href="/"
                             className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-green-600 transition-colors duration-200"

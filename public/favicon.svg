@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Abgerundeter Hintergrund (Squircle) #282828 -->
+  <rect width="32" height="32" rx="7" ry="7" fill="#282828"/>
+  <!-- Stamm des "t": links und oben gerade, unten geschwungen nach rechts -->
+  <path
+    fill="#ffffff"
+    d="M14.2 9 H16.8 V19.2 Q16.8 20.5 15.5 21 Q14.2 20.2 14.2 19.2 Z"
+  />
+  <!-- Querstrich des "t" (kurz, oberhalb Mitte) -->
+  <rect x="11" y="12.6" width="9.8" height="2.2" rx="1.1" ry="1.1" fill="#ffffff"/>
+  <!-- Punkt rechts unterhalb des Stammes -->
+  <circle cx="21.2" cy="20.6" r="1.4" fill="#ffffff"/>
+</svg>
