@@ -28,8 +28,8 @@ export default function PricingSection() {
             <button
               onClick={() => setIsYearly(false)}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 ${!isYearly
-                  ? 'bg-white text-gray-900 shadow-sm'
-                  : 'text-gray-600 hover:text-gray-900'
+                ? 'bg-white text-gray-900 shadow-sm'
+                : 'text-gray-600 hover:text-gray-900'
                 }`}
             >
               Monatlich
@@ -37,8 +37,8 @@ export default function PricingSection() {
             <button
               onClick={() => setIsYearly(true)}
               className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 relative ${isYearly
-                  ? 'bg-white text-gray-900 shadow-sm'
-                  : 'text-gray-600 hover:text-gray-900'
+                ? 'bg-white text-gray-900 shadow-sm'
+                : 'text-gray-600 hover:text-gray-900'
                 }`}
             >
               Jährlich
@@ -153,7 +153,7 @@ export default function PricingSection() {
               </li>
               <li className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
-                <span className="text-sm">Nachrichtenautomatisierung</span>
+                <span className="text-sm">SMS & E-Mail Automatisierung</span>
               </li>
               <li className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />

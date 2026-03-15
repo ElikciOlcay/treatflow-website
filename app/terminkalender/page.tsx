@@ -5,8 +5,8 @@ import Footer from '../components/Footer';
 
 export const metadata = {
     title: 'Terminplaner App für Kosmetikstudios - Terminkalender & Online-Buchungen | Treatflow',
-    description: 'Beste Terminplaner-App für Kosmetikstudio: Terminkalender mit Online-Buchung, Erinnerungen und 24/7 Buchungen. Software Kosmetik für Terminverwaltung.',
-    keywords: ['Terminplaner App Kosmetikstudio', 'beste Terminplaner App für Kosmetikstudio', 'Terminkalender Kosmetik', 'Online Buchungssystem', 'Kosmetikstudio Terminverwaltung', 'Automatische Erinnerungen', 'Beauty Salon Software'],
+    description: 'Beste Terminplaner-App für Kosmetikstudio: Terminkalender mit Online-Buchung, SMS-Bestätigungen, Erinnerungen per E-Mail und SMS und 24/7 Buchungen. Software Kosmetik für Terminverwaltung.',
+    keywords: ['Terminplaner App Kosmetikstudio', 'beste Terminplaner App für Kosmetikstudio', 'Terminkalender Kosmetik', 'Online Buchungssystem', 'Kosmetikstudio Terminverwaltung', 'Automatische Erinnerungen', 'SMS Terminerinnerung', 'SMS Terminbestätigung Kosmetik', 'Beauty Salon Software'],
     alternates: {
         canonical: 'https://www.treatflow.io/terminkalender',
     },
@@ -127,8 +127,8 @@ export default function TerminkalenderPage() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Bessere Kundenbindung</h3>
                             <p className="text-gray-600 text-center">
-                                Automatische Erinnerungen und einfache Terminbuchung führen zu zufriedeneren
-                                Kunden und weniger No-Shows.
+                                Automatische Erinnerungen per E-Mail und SMS sowie einfache Terminbuchung
+                                führen zu zufriedeneren Kunden und weniger No-Shows.
                             </p>
                         </div>
 
@@ -196,7 +196,7 @@ export default function TerminkalenderPage() {
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Online-Buchungen</h3>
                             <p className="text-gray-600 mb-6">
                                 Deine Kunden buchen selbstständig über deinen persönlichen Buchungslink.
-                                Keine Telefonate mehr nötig.
+                                Keine Telefonate mehr nötig - Bestätigung kommt automatisch per E-Mail und SMS.
                             </p>
                             <ul className="space-y-2">
                                 <li className="flex items-center text-sm text-gray-700">
@@ -205,7 +205,7 @@ export default function TerminkalenderPage() {
                                 </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Automatische Bestätigung
+                                    Bestätigung per E-Mail und SMS
                                 </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
@@ -247,21 +247,21 @@ export default function TerminkalenderPage() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Automatische Erinnerungen</h3>
                             <p className="text-gray-600 mb-6">
-                                Reduziere No-Shows mit automatischen E-Mail-Erinnerungen
+                                Reduziere No-Shows mit automatischen Erinnerungen per E-Mail, SMS
                                 zu verschiedenen Zeitpunkten vor dem Termin.
                             </p>
                             <ul className="space-y-2">
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Per E-Mail und SMS
+                                </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
                                     Flexible Zeitpunkte (3 Tage, 1 Tag vorher)
                                 </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Individuelle Texte
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Weniger No-Shows
+                                    Stornierungsbenachrichtigungen per SMS
                                 </li>
                             </ul>
                         </div>

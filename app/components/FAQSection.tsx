@@ -30,7 +30,7 @@ const faqs = [
     },
     {
         question: "Brauche ich technische Kenntnisse für Treatflow?",
-        answer: "Nein! Treatflow ist so einfach zu bedienen wie WhatsApp. Keine Installation nötig - einfach im Browser anmelden und loslegen. Bei Fragen hilft unser Support-Team gerne."
+        answer: "Nein! Treatflow ist sehr einfach zu bedienen. Keine Installation nötig - einfach im Browser anmelden und loslegen. Bei Fragen hilft unser Support-Team gerne."
     },
     {
         question: "Wie funktioniert der Formular-Marketplace?",

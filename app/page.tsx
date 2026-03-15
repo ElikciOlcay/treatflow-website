@@ -1,7 +1,6 @@
 import {
   Star,
   ArrowRight,
-  ChevronDown,
   CalendarDays,
   Users,
   FileText,
@@ -10,14 +9,26 @@ import {
   Zap,
   ClipboardList,
   Camera,
-  Shield
+  Shield,
+  Play,
+  Palette,
+  Gem,
+  Eye,
+  Pen,
+  Stethoscope,
+  Waves,
+  Link2,
+  ClipboardCheck,
+  Bell,
+  BookOpen
 } from "lucide-react";
 import Link from 'next/link';
 import Script from 'next/script';
+import Navigation from "./components/Navigation";
 import PricingSection from "./components/PricingSection";
+import FAQSection from "./components/FAQSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "./components/Footer";
-import MobileMenu from "./components/MobileMenu";
 
 // Strukturierte Daten für SEO
 const structuredData = {
@@ -26,7 +37,7 @@ const structuredData = {
   "name": "Treatflow",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web Browser",
-  "description": "Software für Kosmetikstudio: Terminkalender, digitale Kundenkartei, Online-Buchungen und Behandlungsdokumentation",
+  "description": "Software für Kosmetikstudio: Terminkalender, digitale Kundenkartei, Online-Buchungen, SMS-Benachrichtigungen und Behandlungsdokumentation",
   "url": "https://www.treatflow.io",
   "author": {
     "@type": "Organization",
@@ -58,6 +69,7 @@ const structuredData = {
   },
   "featureList": [
     "Terminkalender mit Online-Buchung",
+    "SMS-Benachrichtigungen",
     "Digitale Kundenkartei und Kundenverwaltung",
     "Formulare für Anamnesen",
     "Behandlungsdokumentation",
@@ -136,74 +148,7 @@ export default function Home() {
       />
 
       <div className="min-h-screen bg-white">
-        {/* Navigation */}
-        <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <div className="flex items-center">
-                <Link href="/" className="flex items-center">
-                  <img
-                    src="/images/logos/treatflow-logo.svg"
-                    alt="Treatflow Logo"
-                    className="h-8 w-auto"
-                  />
-                </Link>
-              </div>
-              <div className="hidden md:flex items-center space-x-8">
-                <div className="relative group">
-                  <button className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors">
-                    Funktionen
-                    <ChevronDown className="ml-1 h-4 w-4" />
-                  </button>
-                  <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                    <div className="py-2">
-                      <Link href="/terminkalender" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                        Terminkalender
-                      </Link>
-                      <Link href="/kundenverwaltung" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                        Kundenverwaltung
-                      </Link>
-                      <Link href="/formulare" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                        Formulare
-                      </Link>
-                      <Link href="/behandlungsdokumentation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                        Dokumentation
-                      </Link>
-                      <Link href="/online-buchungen" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                        Online-Buchungen
-                      </Link>
-                      <Link href="/nisv-dokumentation" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                        NiSV-Dokumentation
-                      </Link>
-                      <Link href="/kosmetikstudio-software-vergleich" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                        Software-Vergleich
-                      </Link>
-                      <Link href="/nachrichtenautomatisierung" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                        Nachrichtenautomatisierung
-                      </Link>
-                      <Link href="/shop" className="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">
-                        Shop
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <a href="#pricing" className="text-gray-600 hover:text-indigo-600 transition-colors">Preise</a>
-                <Link href="/blog" className="text-gray-600 hover:text-indigo-600 transition-colors">Blog</Link>
-                <a href="#testimonials" className="text-gray-600 hover:text-indigo-600 transition-colors">Referenzen</a>
-                <Link href="/kontakt" className="text-gray-600 hover:text-indigo-600 transition-colors">Kontakt</Link>
-                <a
-                  href="https://app.treatflow.io/auth/register"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors"
-                >
-                  Kostenlos testen
-                </a>
-              </div>
-              <MobileMenu />
-            </div>
-          </div>
-        </nav>
+        <Navigation />
 
         {/* Hero Section */}
         <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8 bg-white">
@@ -221,8 +166,11 @@ export default function Home() {
                 <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Kunden</span>{" "}
                 - weniger Papierkram
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-                Terminkalender, digitale Kundenkartei für Kosmetikstudios, Formulare für Anamnesen und Behandlungsdokumentation – alles in einer Software.
+              <p className="text-xl lg:text-2xl text-gray-600 mb-4 leading-relaxed max-w-2xl mx-auto">
+                Kalender, Kunden, Buchungen, Dokumentation – alles in einer App.
+              </p>
+              <p className="text-base text-gray-500 mb-10">
+                Perfekt für Kosmetikstudios, Laser-Studios, Permanent Makeup und ästhetische Behandlungen.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
                 <a
@@ -274,12 +222,64 @@ export default function Home() {
             </div>
 
             {/* Dashboard Mockup */}
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <img
                 src="/images/mockups/dashboard-main.png"
-                alt="Treatflow Dashboard - Hauptansicht mit Kundenverwaltung und Terminübersicht"
-                className="w-full h-auto shadow-lg"
+                alt="Treatflow Dashboard auf einem Tablet - Kundenverwaltung und Terminübersicht"
+                className="w-full h-auto rounded-2xl shadow-2xl"
               />
+            </div>
+          </div>
+        </section>
+
+        {/* Branchen-Cluster Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-14">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Für welche Studios ist Treatflow gemacht?
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Treatflow ist die All-in-One Software für Beauty-Studios, ästhetische Praxen und viele weitere Branchen – mit Funktionen, die zu deinem Workflow passen.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
+              {[
+                { href: '/kosmetikstudio-software', icon: Sparkles, label: 'Kosmetikstudios', desc: 'Termine, Kunden und Formulare für deinen Studio-Alltag.', color: 'text-indigo-600 bg-indigo-100', border: 'hover:border-indigo-200' },
+                { href: '/laser-haarentfernung-software', icon: Zap, label: 'Laser & IPL', desc: 'NiSV-konforme Dokumentation und Einwilligungen.', color: 'text-blue-600 bg-blue-100', border: 'hover:border-blue-200' },
+                { href: '/permanent-makeup-software', icon: Palette, label: 'Permanent Makeup', desc: 'Fotodokumentation und digitale Einwilligungen.', color: 'text-rose-600 bg-rose-100', border: 'hover:border-rose-200' },
+                { href: '/nagelstudio-software', icon: Gem, label: 'Nagelstudios', desc: 'Kundenvorlieben speichern und online buchbar.', color: 'text-pink-600 bg-pink-100', border: 'hover:border-pink-200' },
+                { href: '/lash-studio-software', icon: Eye, label: 'Lash Studios', desc: 'Refill-Planung und Wimpern-Details pro Kundin.', color: 'text-violet-600 bg-violet-100', border: 'hover:border-violet-200' },
+                { href: '/tattoo-studio-software', icon: Pen, label: 'Tattoo Studios', desc: 'Einwilligungen und Kundenverwaltung digital.', color: 'text-gray-700 bg-gray-200', border: 'hover:border-gray-300' },
+                { href: '/aesthetische-medizin-software', icon: Stethoscope, label: 'Ästhetische Medizin', desc: 'Praxisverwaltung für Filler, Botox und mehr.', color: 'text-teal-600 bg-teal-100', border: 'hover:border-teal-200' },
+                { href: '/spa-wellness-software', icon: Waves, label: 'Spa & Wellness', desc: 'Gästeverwaltung und Therapeuten-Kalender.', color: 'text-cyan-600 bg-cyan-100', border: 'hover:border-cyan-200' },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`bg-white p-6 rounded-xl border border-gray-100 ${item.border} transition-all duration-300 hover:-translate-y-1 hover:shadow-lg block group`}
+                >
+                  <div className={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${item.color} group-hover:scale-110 transition-transform`}>
+                    <item.icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-1">{item.label}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+                </Link>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <div className="inline-flex items-center gap-3 bg-white border border-dashed border-gray-300 rounded-xl px-6 py-4">
+                <div className="flex -space-x-2">
+                  <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-amber-600"><Sparkles className="h-4 w-4" /></div>
+                  <div className="w-8 h-8 bg-sky-100 rounded-full flex items-center justify-center text-sky-600"><Users className="h-4 w-4" /></div>
+                  <div className="w-8 h-8 bg-lime-100 rounded-full flex items-center justify-center text-lime-600"><CheckCircle className="h-4 w-4" /></div>
+                </div>
+                <p className="text-sm text-gray-600">
+                  <span className="font-semibold text-gray-900">Und viele mehr</span> – Treatflow passt sich an jede Branche an, die mit Terminen, Kunden und Dokumentation arbeitet.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -317,7 +317,7 @@ export default function Home() {
                   </h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     Professioneller Kalender mit Wochen-, Tages- und Monatsansicht.
-                    Deine Kunden buchen direkt über deinen Buchungslink.
+                    Deine Kunden buchen direkt über deinen Buchungslink - mit automatischer SMS-Bestätigung.
                   </p>
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center">
@@ -326,11 +326,11 @@ export default function Home() {
                     </div>
                     <div className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">Mehrere Kalenderansichten</span>
+                      <span className="text-gray-700">SMS- und E-Mail-Bestätigungen</span>
                     </div>
                     <div className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">15-Min Zeitraster</span>
+                      <span className="text-gray-700">Erinnerungen per E-Mail und SMS</span>
                     </div>
                   </div>
                   <Link
@@ -473,35 +473,78 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Einfache Visual Section */}
+        {/* Feature-Cluster Section */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-14">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Alles was dein Studio braucht – in einer Plattform
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Entdecke die wichtigsten Funktionen im Detail und erfahre, wie sie deinen Alltag vereinfachen.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+              {[
+                { href: '/online-terminbuchung-kosmetikstudio', icon: Link2, label: 'Online-Terminbuchung', desc: 'Kunden buchen 24/7 über deinen persönlichen Link.', gradient: 'from-orange-500 to-red-600' },
+                { href: '/digitale-anamnese-kosmetikstudio', icon: ClipboardCheck, label: 'Digitale Anamnese', desc: 'Formulare vorab digital ausfüllen und unterschreiben.', gradient: 'from-emerald-500 to-teal-600' },
+                { href: '/sms-erinnerungen-kosmetikstudio', icon: Bell, label: 'SMS-Erinnerungen', desc: 'No-Shows um bis zu 80% reduzieren.', gradient: 'from-purple-500 to-pink-600' },
+                { href: '/behandlungsdokumentation-kosmetikstudio', icon: FileText, label: 'Dokumentation', desc: 'Behandlungen digital und NiSV-konform festhalten.', gradient: 'from-blue-500 to-indigo-600' },
+                { href: '/kundenverwaltung', icon: Users, label: 'Kundenverwaltung', desc: 'Digitale Kundenkartei mit Behandlungshistorie.', gradient: 'from-green-500 to-emerald-600' },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group bg-gray-50 hover:bg-white p-6 rounded-xl border border-gray-100 hover:border-gray-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg block"
+                >
+                  <div className={`w-11 h-11 bg-gradient-to-r ${item.gradient} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+                    <item.icon className="h-5 w-5 text-white" />
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-1 text-sm">{item.label}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Video Demo Section */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 px-6 py-3 rounded-full text-sm font-semibold mb-6 shadow-sm">
+                <Play className="h-4 w-4" />
+                Video Demo
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                 So einfach funktioniert Treatflow
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Sieh selbst, wie übersichtlich und benutzerfreundlich dein neuer Studio-Alltag wird.
+                Sieh in 2 Minuten, wie Treatflow deinen Studio-Alltag vereinfacht – von der Online-Buchung bis zur Dokumentation.
               </p>
             </div>
 
-            {/* Nur das Dashboard Mockup */}
-            <div className="max-w-5xl mx-auto">
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="/images/mockups/dashboard-main.png"
-                  alt="Treatflow Dashboard - Hauptansicht mit Kundenverwaltung und Terminübersicht"
-                  className="w-full h-auto"
-                />
+            {/* Video Platzhalter */}
+            <div className="max-w-4xl mx-auto">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-gray-900 to-indigo-900 aspect-video group cursor-pointer">
+                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 transition-all duration-300 group-hover:scale-110">
+                    <Play className="h-8 w-8 text-white ml-1" />
+                  </div>
+                  <h3 className="text-white text-2xl font-bold mb-2">Produktvideo</h3>
+                  <p className="text-white/70 text-lg">Kommt bald - bleib gespannt!</p>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/10">
+                  <div className="h-full w-0 bg-gradient-to-r from-indigo-500 to-purple-500"></div>
+                </div>
               </div>
             </div>
 
-            {/* Einfacher CTA */}
             <div className="text-center mt-12">
               <p className="text-lg text-gray-600 mb-6">
                 Bereit für den Test? Probiere Treatflow 14 Tage kostenlos aus.
               </p>
-              <a 
+              <a
                 href="https://app.treatflow.io/auth/register"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -514,9 +557,106 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Nur die wichtigsten Sektionen beibehalten */}
+        {/* SEO-Keyword-Textblock */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 text-center">
+              Warum moderne Kosmetikstudios auf digitale Software setzen
+            </h2>
+            <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed space-y-4">
+              <p>
+                Der Alltag im Kosmetikstudio ist anspruchsvoll: Termine koordinieren, Kunden betreuen, Behandlungen dokumentieren und gleichzeitig den Überblick über das gesamte Business behalten. Viele Studios arbeiten noch mit Papierkalender, WhatsApp-Nachrichten und handgeschriebenen Karteikarten – das kostet wertvolle Zeit, die für die eigentliche Arbeit am Kunden fehlt.
+              </p>
+              <p>
+                Eine spezialisierte Studio Software wie Treatflow löst genau diese Probleme. Online-Buchungen ermöglichen Kunden, rund um die Uhr Termine zu buchen. Automatische Erinnerungen per SMS reduzieren No-Shows. Digitale Anamnesebögen ersetzen den Papierstapel. Und die Behandlungsdokumentation erfüllt alle Anforderungen – auch für NiSV-pflichtige Geräte. Das Ergebnis: weniger Verwaltung, mehr Zeit für das, was zählt – deine Kunden.
+              </p>
+            </div>
+            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+              <Link href="/blog/beste-kosmetikstudio-software-2026" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Beste Kosmetikstudio Software 2026</Link>
+              <Link href="/blog/online-buchungssystem-vorteile" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Vorteile eines Online-Buchungssystems</Link>
+              <Link href="/blog/behandlungsdokumentation-nisv-konform" className="hover:text-indigo-600 transition-colors underline underline-offset-4">NiSV-konform dokumentieren</Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Trust / Social Proof Section */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Über 500 Studios vertrauen bereits auf Treatflow
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Von Einzelunternehmerinnen bis zu Studios mit mehreren Mitarbeitern – Treatflow wächst mit deinem Business.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { value: '500+', label: 'Studios', desc: 'nutzen Treatflow täglich', icon: Users },
+                { value: '4.9/5', label: 'Bewertung', desc: 'von zufriedenen Kunden', icon: Star },
+                { value: '100%', label: 'DSGVO-konform', desc: 'EU-Hosting, verschlüsselt', icon: Shield },
+                { value: 'AT', label: 'Made in Austria', desc: 'Entwickelt in Salzburg', icon: CheckCircle },
+              ].map((item, i) => (
+                <div key={i} className="text-center p-6 bg-gray-50 rounded-xl border border-gray-100">
+                  <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <item.icon className="h-6 w-6 text-indigo-600" />
+                  </div>
+                  <div className="text-3xl font-bold text-gray-900 mb-1">{item.value}</div>
+                  <div className="font-semibold text-gray-700 mb-1">{item.label}</div>
+                  <div className="text-sm text-gray-500">{item.desc}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <PricingSection />
         <TestimonialsSection />
+        <FAQSection />
+
+        {/* Finaler CTA */}
+        <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Bereit, deinen Studio-Alltag zu vereinfachen?
+            </h2>
+            <div className="flex flex-col sm:flex-row justify-center gap-x-8 gap-y-3 mb-10 text-white/90">
+              <div className="flex items-center justify-center gap-2">
+                <CheckCircle className="h-5 w-5 text-green-300" />
+                <span>14 Tage kostenlos testen</span>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                <CheckCircle className="h-5 w-5 text-green-300" />
+                <span>Keine Kreditkarte nötig</span>
+              </div>
+              <div className="flex items-center justify-center gap-2">
+                <CheckCircle className="h-5 w-5 text-green-300" />
+                <span>In 2 Minuten startklar</span>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://app.treatflow.io/auth/register"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-indigo-600 px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                Jetzt kostenlos starten
+                <ArrowRight className="ml-3 h-6 w-6" />
+              </a>
+              <a
+                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-white text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 flex items-center justify-center"
+              >
+                Beratung buchen
+              </a>
+            </div>
+            <p className="text-sm text-indigo-200 mt-6">Jederzeit kündbar. DSGVO-konform. Made in Austria.</p>
+          </div>
+        </section>
+
         <Footer />
       </div>
     </>

@@ -4,15 +4,15 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10">
+          <div className="md:col-span-2 lg:col-span-1">
             <img
               src="/images/logos/treatflow-logo.png"
               alt="Treatflow Logo"
               className="h-8 w-auto mb-4"
             />
-            <p className="text-gray-400 mb-4">
-              Dein digitaler Studio-Assistent.
+            <p className="text-gray-400 text-sm leading-relaxed mb-5">
+              Dein digitaler Studio-Assistent. Made in Austria.
             </p>
             <div className="flex space-x-4">
               <a
@@ -27,32 +27,63 @@ export default function Footer() {
               </a>
             </div>
           </div>
+
+          <div>
+            <h3 className="font-semibold mb-4">Funktionen</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/terminkalender" className="text-gray-400 hover:text-white transition-colors">Terminkalender</Link></li>
+              <li><Link href="/online-buchungen" className="text-gray-400 hover:text-white transition-colors">Online-Buchungen</Link></li>
+              <li><Link href="/kundenverwaltung" className="text-gray-400 hover:text-white transition-colors">Kundenverwaltung</Link></li>
+              <li><Link href="/formulare" className="text-gray-400 hover:text-white transition-colors">Formulare</Link></li>
+              <li><Link href="/behandlungsdokumentation" className="text-gray-400 hover:text-white transition-colors">Dokumentation</Link></li>
+              <li><Link href="/nachrichtenautomatisierung" className="text-gray-400 hover:text-white transition-colors">Nachrichten</Link></li>
+              <li><Link href="/nisv-dokumentation" className="text-gray-400 hover:text-white transition-colors">NiSV-Dokumentation</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-4">Branchen</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/kosmetikstudio-software" className="text-gray-400 hover:text-white transition-colors">Kosmetikstudios</Link></li>
+              <li><Link href="/laser-haarentfernung-software" className="text-gray-400 hover:text-white transition-colors">Laser & IPL</Link></li>
+              <li><Link href="/permanent-makeup-software" className="text-gray-400 hover:text-white transition-colors">Permanent Makeup</Link></li>
+              <li><Link href="/aesthetische-medizin-software" className="text-gray-400 hover:text-white transition-colors">Ästhetische Medizin</Link></li>
+              <li><Link href="/nagelstudio-software" className="text-gray-400 hover:text-white transition-colors">Nagelstudios</Link></li>
+              <li><Link href="/lash-studio-software" className="text-gray-400 hover:text-white transition-colors">Lash Studios</Link></li>
+              <li><Link href="/tattoo-studio-software" className="text-gray-400 hover:text-white transition-colors">Tattoo Studios</Link></li>
+              <li><Link href="/spa-wellness-software" className="text-gray-400 hover:text-white transition-colors">Spa & Wellness</Link></li>
+              <li><Link href="/massage-software" className="text-gray-400 hover:text-white transition-colors">Massage</Link></li>
+            </ul>
+          </div>
+
           <div>
             <h3 className="font-semibold mb-4">Produkt</h3>
-            <ul className="space-y-2">
-              <li><a href="/#features" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
+            <ul className="space-y-2 text-sm">
               <li><a href="/#pricing" className="text-gray-400 hover:text-white transition-colors">Preise</a></li>
               <li><Link href="/kosmetikstudio-software-vergleich" className="text-gray-400 hover:text-white transition-colors">Software-Vergleich</Link></li>
+              <li><Link href="/shop" className="text-gray-400 hover:text-white transition-colors">Shop</Link></li>
               <li><a href="https://app.treatflow.io/auth/register" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Kostenlos testen</a></li>
+              <li><a href="https://app.treatflow.io/auth/login" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Login</a></li>
             </ul>
           </div>
+
           <div>
             <h3 className="font-semibold mb-4">Unternehmen</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-sm">
               <li><Link href="/ueber-uns" className="text-gray-400 hover:text-white transition-colors">Über uns</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">Support</h3>
-            <ul className="space-y-2">
+              <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
               <li><Link href="/kontakt" className="text-gray-400 hover:text-white transition-colors">Kontakt</Link></li>
+            </ul>
+            <h3 className="font-semibold mb-4 mt-8">Rechtliches</h3>
+            <ul className="space-y-2 text-sm">
               <li><Link href="/datenschutz" className="text-gray-400 hover:text-white transition-colors">Datenschutz</Link></li>
               <li><Link href="/impressum" className="text-gray-400 hover:text-white transition-colors">Impressum</Link></li>
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Treatflow. Alle Rechte vorbehalten.</p>
+
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+          <p>&copy; {new Date().getFullYear()} Treatflow. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>

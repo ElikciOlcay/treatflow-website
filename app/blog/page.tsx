@@ -27,6 +27,16 @@ export const metadata = {
 
 const blogPosts = [
     {
+        slug: 'beste-kosmetikstudio-software-2026',
+        title: 'Beste Kosmetikstudio Software 2026 - Der ultimative Vergleich',
+        excerpt: 'Welche Software eignet sich am besten für dein Kosmetikstudio? Wir vergleichen die besten Lösungen 2026 nach Funktionen, Preis und Bedienung.',
+        category: 'Software',
+        readTime: '12 min',
+        publishDate: '15. März 2026',
+        featured: true,
+        image: '/images/blog/beste-kosmetikstudio-software-2026.jpg'
+    },
+    {
         slug: 'terminkalender-kosmetikstudio-effizienz',
         title: 'Effizienter Terminkalender im Kosmetikstudio: So planst du deinen Tag perfekt',
         excerpt: 'Optimiere deinen Terminkalender und steigere die Effizienz um 40%. Professionelle Tipps für bessere Terminplanung, weniger Stress und mehr Umsatz im Kosmetikstudio.',

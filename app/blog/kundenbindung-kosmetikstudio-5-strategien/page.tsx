@@ -22,7 +22,7 @@ const relatedPosts = [
 export const metadata: Metadata = {
     title: '5 bewährte Strategien für mehr Kundenbindung im Kosmetikstudio | Treatflow Blog',
     description: 'Entdecke die wirksamsten Methoden, um Kundinnen langfristig zu binden und die Wiederkehrrate zu erhöhen. Von personalisierten Behandlungen bis zur digitalen Nachbetreuung.',
-    keywords: ["Kundenbindung Kosmetik","Beauty Kundentreue","Kosmetikstudio Stammkunden","Beauty Customer Retention","Kosmetik Kundenservice","Beauty Loyalty"],
+    keywords: ["Kundenbindung Kosmetik", "Beauty Kundentreue", "Kosmetikstudio Stammkunden", "Beauty Customer Retention", "Kosmetik Kundenservice", "Beauty Loyalty"],
     authors: [{ name: 'Treatflow Team' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/kundenbindung-kosmetikstudio-5-strategien',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         publishedTime: '2024-12-15T10:00:00.000Z',
         authors: ['Treatflow Team'],
         section: 'Kundenbindung',
-        tags: ["Kundenbindung Kosmetik","Beauty Kundentreue","Kosmetikstudio Stammkunden","Beauty Customer Retention"],
+        tags: ["Kundenbindung Kosmetik", "Beauty Kundentreue", "Kosmetikstudio Stammkunden", "Beauty Customer Retention"],
     },
     twitter: {
         card: 'summary_large_image',
@@ -212,7 +212,7 @@ export default function BlogPost() {
                                     <TrendingUp className="h-5 w-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" />
                                     <div>
                                         <strong className="text-gray-900">24h nach der Behandlung:</strong>
-                                        <span className="text-gray-700 block">Kurze WhatsApp oder SMS: "Wie geht es deiner Haut heute?"</span>
+                                        <span className="text-gray-700 block">Kurze SMS: "Wie geht es deiner Haut heute?"</span>
                                     </div>
                                 </li>
                                 <li className="flex items-start">
@@ -336,33 +336,33 @@ export default function BlogPost() {
                             </div>
                             <div className="flex flex-wrap gap-3">
                                 <a
-                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://www.treatflow.io/blog/kundenbindung-kosmetikstudio-5-strategien')}&text=${encodeURIComponent('5 bewährte Strategien für mehr Kundenbindung im Kosmetikstudio - Treatflow Blog')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-blue-500 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-600 transition-colors text-xs sm:text-sm"
-            >
-                <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                Twitter
-            </a>
+                                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://www.treatflow.io/blog/kundenbindung-kosmetikstudio-5-strategien')}&text=${encodeURIComponent('5 bewährte Strategien für mehr Kundenbindung im Kosmetikstudio - Treatflow Blog')}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center bg-blue-500 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-600 transition-colors text-xs sm:text-sm"
+                                >
+                                    <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
+                                    Twitter
+                                </a>
                                 <a
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.treatflow.io/blog/kundenbindung-kosmetikstudio-5-strategien')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-blue-700 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-800 transition-colors text-xs sm:text-sm"
-            >
-                <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                LinkedIn
-            </a>
+                                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.treatflow.io/blog/kundenbindung-kosmetikstudio-5-strategien')}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center bg-blue-700 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-800 transition-colors text-xs sm:text-sm"
+                                >
+                                    <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
+                                    LinkedIn
+                                </a>
                                 <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.treatflow.io/blog/kundenbindung-kosmetikstudio-5-strategien')}&quote=${encodeURIComponent('5 bewährte Strategien für mehr Kundenbindung im Kosmetikstudio')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-700 transition-colors text-xs sm:text-sm"
-            >
-                <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                Facebook
-            </a>
-                                
+                                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.treatflow.io/blog/kundenbindung-kosmetikstudio-5-strategien')}&quote=${encodeURIComponent('5 bewährte Strategien für mehr Kundenbindung im Kosmetikstudio')}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-700 transition-colors text-xs sm:text-sm"
+                                >
+                                    <Share2 className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
+                                    Facebook
+                                </a>
+
                             </div>
                         </div>
                     </div>

@@ -4,15 +4,15 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Nachrichtenautomatisierung für Kosmetikstudios - Automatische Erinnerungen | Treatflow',
-    description: 'Automatische Nachrichten für Kosmetikstudios: Terminerinnerungen, Follow-ups und Geburtstagswünsche. Steigere die Kundenbindung mit personalisierten, automatischen E-Mails.',
-    keywords: ['Nachrichtenautomatisierung Kosmetik', 'Terminerinnerung automatisch', 'No-Show reduzieren Kosmetikstudio', 'Automatische Terminerinnerungen', 'Follow-up E-Mails', 'Geburtstagswünsche automatisch', 'Kundenbindung Beauty Studio'],
+    title: 'Nachrichtenautomatisierung für Kosmetikstudios - SMS & E-Mail Erinnerungen | Treatflow',
+    description: 'Automatische Nachrichten per E-Mail und SMS für Kosmetikstudios: Terminbestätigungen, Erinnerungen, Stornierungen, Follow-ups und Geburtstagswünsche. Ab 0,09 EUR pro SMS.',
+    keywords: ['Nachrichtenautomatisierung Kosmetik', 'SMS Terminerinnerung Kosmetikstudio', 'No-Show reduzieren Kosmetikstudio', 'Automatische Terminerinnerungen', 'SMS Terminbestätigung', 'Follow-up E-Mails', 'Geburtstagswünsche automatisch', 'Kundenbindung Beauty Studio'],
     alternates: {
         canonical: 'https://www.treatflow.io/nachrichtenautomatisierung',
     },
     openGraph: {
-        title: 'Nachrichtenautomatisierung für Kosmetikstudios - Automatische Erinnerungen',
-        description: 'Automatische Nachrichten für bessere Kundenbindung: Terminerinnerungen, Follow-ups und Geburtstagswünsche.',
+        title: 'Nachrichtenautomatisierung für Kosmetikstudios - SMS & E-Mail Erinnerungen',
+        description: 'Automatische Nachrichten per E-Mail und SMS: Terminbestätigungen, Erinnerungen, Stornierungen und Follow-ups.',
         url: 'https://www.treatflow.io/nachrichtenautomatisierung',
         images: [
             {
@@ -42,8 +42,8 @@ export default function NachrichtenautomatisierungPage() {
                             Automatische <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Nachrichten</span> für mehr Kundenbindung
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            Versende automatisch personalisierte Erinnerungen, Follow-ups und Geburtstagswünsche. 
-                            Reduziere No-Shows um 80% und steigere die Kundenzufriedenheit.
+                            Versende automatisch personalisierte Erinnerungen, Terminbestätigungen und Follow-ups
+                            per E-Mail und SMS. Reduziere No-Shows um 80% und steigere die Kundenzufriedenheit.
                         </p>
                     </div>
 
@@ -59,7 +59,7 @@ export default function NachrichtenautomatisierungPage() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="p-8">
                                 <div className="grid md:grid-cols-3 gap-6">
                                     {/* Vor Termin */}
@@ -75,7 +75,7 @@ export default function NachrichtenautomatisierungPage() {
                                         </div>
                                         <p className="text-sm text-gray-700 mb-3">3 Tage vorher</p>
                                         <div className="bg-white p-3 rounded border text-xs">
-                                            <strong>Betreff:</strong> Erinnerung: Ihr Termin bei Beauty Studio<br/>
+                                            <strong>Betreff:</strong> Erinnerung: Ihr Termin bei Beauty Studio<br />
                                             <strong>Text:</strong> Liebe Frau Müller, wir freuen uns auf Ihren Termin am 15.03.2024...
                                         </div>
                                     </div>
@@ -93,7 +93,7 @@ export default function NachrichtenautomatisierungPage() {
                                         </div>
                                         <p className="text-sm text-gray-700 mb-3">1 Tag später</p>
                                         <div className="bg-white p-3 rounded border text-xs">
-                                            <strong>Betreff:</strong> Wie war Ihre Behandlung?<br/>
+                                            <strong>Betreff:</strong> Wie war Ihre Behandlung?<br />
                                             <strong>Text:</strong> Vielen Dank für Ihren Besuch! Wir würden uns über Ihr Feedback freuen...
                                         </div>
                                     </div>
@@ -111,7 +111,7 @@ export default function NachrichtenautomatisierungPage() {
                                         </div>
                                         <p className="text-sm text-gray-700 mb-3">Am Geburtstag</p>
                                         <div className="bg-white p-3 rounded border text-xs">
-                                            <strong>Betreff:</strong> Herzlichen Glückwunsch!<br/>
+                                            <strong>Betreff:</strong> Herzlichen Glückwunsch!<br />
                                             <strong>Text:</strong> Alles Gute zum Geburtstag! Als kleines Geschenk erhalten Sie 20% Rabatt...
                                         </div>
                                     </div>
@@ -130,7 +130,7 @@ export default function NachrichtenautomatisierungPage() {
                             Drei Arten automatischer Nachrichten
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Erreiche deine Kunden zur richtigen Zeit mit der richtigen Nachricht - vollautomatisch.
+                            Erreiche deine Kunden zur richtigen Zeit mit der richtigen Nachricht - per E-Mail oder SMS, vollautomatisch.
                         </p>
                     </div>
 
@@ -142,10 +142,14 @@ export default function NachrichtenautomatisierungPage() {
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">Terminerinnerungen</h3>
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Reduziere No-Shows um bis zu 80% mit automatischen Erinnerungen 
-                                1-7 Tage vor dem Termin.
+                                Reduziere No-Shows um bis zu 80% mit automatischen Erinnerungen
+                                per E-Mail oder SMS - 1-7 Tage vor dem Termin.
                             </p>
                             <ul className="space-y-3 mb-8">
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
+                                    <span>Per E-Mail und SMS</span>
+                                </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
                                     <span>Flexibler Zeitpunkt (1-7 Tage vorher)</span>
@@ -153,10 +157,6 @@ export default function NachrichtenautomatisierungPage() {
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
                                     <span>Personalisierte Nachrichten</span>
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Behandlungsdetails inklusive</span>
                                 </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
@@ -175,10 +175,14 @@ export default function NachrichtenautomatisierungPage() {
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">Follow-up Nachrichten</h3>
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Hole Feedback ein und biete Nachbehandlungen an. 
+                                Hole Feedback ein und biete Nachbehandlungen an - per E-Mail oder SMS.
                                 Perfekt für Kundenbindung und Zusatzumsätze.
                             </p>
                             <ul className="space-y-3 mb-8">
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
+                                    <span>Per E-Mail oder SMS</span>
+                                </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
                                     <span>Automatisches Feedback einholen</span>
@@ -186,10 +190,6 @@ export default function NachrichtenautomatisierungPage() {
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
                                     <span>Nachbehandlungen anbieten</span>
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Pflegetipps versenden</span>
                                 </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
@@ -208,7 +208,7 @@ export default function NachrichtenautomatisierungPage() {
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">Geburtstagswünsche</h3>
                             <p className="text-gray-600 mb-6 leading-relaxed">
-                                Überrasche deine Kunden mit personalisierten Geburtstagswünschen 
+                                Überrasche deine Kunden mit personalisierten Geburtstagswünschen
                                 und exklusiven Angeboten.
                             </p>
                             <ul className="space-y-3 mb-8">
@@ -245,7 +245,7 @@ export default function NachrichtenautomatisierungPage() {
                             Vollständig personalisierte Nachrichten
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Nutze intelligente Platzhalter für automatisch personalisierte E-Mails.
+                            Nutze intelligente Platzhalter für automatisch personalisierte E-Mails und SMS-Nachrichten.
                         </p>
                     </div>
 
@@ -259,7 +259,7 @@ export default function NachrichtenautomatisierungPage() {
                                     <div>
                                         <h3 className="text-xl font-bold text-gray-900 mb-2">Intelligente Platzhalter</h3>
                                         <p className="text-gray-600">
-                                            Verwende Platzhalter wie kunde_name, studio_name oder termin_datum 
+                                            Verwende Platzhalter wie kunde_name, studio_name oder termin_datum
                                             für automatisch personalisierte Nachrichten.
                                         </p>
                                     </div>
@@ -272,7 +272,7 @@ export default function NachrichtenautomatisierungPage() {
                                     <div>
                                         <h3 className="text-xl font-bold text-gray-900 mb-2">Behandlungsspezifisch</h3>
                                         <p className="text-gray-600">
-                                            Erstelle verschiedene Vorlagen für unterschiedliche Behandlungsarten 
+                                            Erstelle verschiedene Vorlagen für unterschiedliche Behandlungsarten
                                             mit spezifischen Nachsorgetipps.
                                         </p>
                                     </div>
@@ -285,7 +285,7 @@ export default function NachrichtenautomatisierungPage() {
                                     <div>
                                         <h3 className="text-xl font-bold text-gray-900 mb-2">Flexibles Timing</h3>
                                         <p className="text-gray-600">
-                                            Bestimme genau, wann welche Nachricht versendet wird - 
+                                            Bestimme genau, wann welche Nachricht versendet wird -
                                             von Stunden bis zu Wochen im Voraus oder danach.
                                         </p>
                                     </div>
@@ -309,20 +309,20 @@ export default function NachrichtenautomatisierungPage() {
                                 <div className="space-y-4">
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-2">E-Mail-Betreff</label>
-                                        <input 
-                                            type="text" 
-                                            className="w-full p-3 border border-gray-300 rounded-lg" 
-                                            value="Erinnerung: Ihr Termin bei {studio_name} am {termin_datum}" 
-                                            readOnly 
+                                        <input
+                                            type="text"
+                                            className="w-full p-3 border border-gray-300 rounded-lg"
+                                            value="Erinnerung: Ihr Termin bei {studio_name} am {termin_datum}"
+                                            readOnly
                                         />
                                     </div>
 
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-2">E-Mail-Text</label>
-                                        <textarea 
-                                            className="w-full p-3 border border-gray-300 rounded-lg h-32" 
-                                            value="Liebe/r {kunde_name},\n\nwir freuen uns auf Ihren Termin bei {studio_name} am {termin_datum} um {termin_uhrzeit}.\n\nBehandlung: {behandlung_name}\nDauer: {behandlung_dauer}\n\nBei Fragen erreichen Sie uns unter {studio_telefon}.\n\nHerzliche Grüße,\nIhr {studio_name} Team" 
-                                            readOnly 
+                                        <textarea
+                                            className="w-full p-3 border border-gray-300 rounded-lg h-32"
+                                            value="Liebe/r {kunde_name},\n\nwir freuen uns auf Ihren Termin bei {studio_name} am {termin_datum} um {termin_uhrzeit}.\n\nBehandlung: {behandlung_name}\nDauer: {behandlung_dauer}\n\nBei Fragen erreichen Sie uns unter {studio_telefon}.\n\nHerzliche Grüße,\nIhr {studio_name} Team"
+                                            readOnly
                                         />
                                     </div>
 
@@ -373,7 +373,7 @@ export default function NachrichtenautomatisierungPage() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Zeit sparen</h3>
                             <p className="text-gray-600">
-                                Keine manuellen Erinnerungen mehr - alles läuft automatisch.
+                                Keine manuellen Erinnerungen mehr - E-Mails und SMS laufen automatisch.
                             </p>
                         </div>
 
@@ -428,7 +428,7 @@ export default function NachrichtenautomatisierungPage() {
                     </div>
                 </div>
             </section>
-            
+
             <Footer />
         </div>
     );

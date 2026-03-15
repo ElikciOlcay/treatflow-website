@@ -5,8 +5,8 @@ import Footer from '../components/Footer';
 
 export const metadata = {
     title: 'Online-Terminbuchung fürs Kosmetikstudio – 24/7 Buchungslink ohne Telefonstress | Treatflow',
-    description: 'Deine Kunden buchen selbstständig, du erhältst Bestätigungen automatisch – ohne Doppelbuchungen. Starte jetzt mit Online-Buchungen.',
-    keywords: ['Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Terminbuchung Link Kosmetikstudio', 'Online Buchungssystem Kosmetik', 'Terminbuchungssoftware Kosmetik', 'Buchungssystem Kosmetik', '24/7 Terminbuchung', 'Kosmetikstudio Online Termin', 'Automatische Terminbestätigung', 'Buchungslink Beauty'],
+    description: 'Deine Kunden buchen selbstständig, du erhältst Bestätigungen per E-Mail und SMS automatisch – ohne Doppelbuchungen. Starte jetzt mit Online-Buchungen.',
+    keywords: ['Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Terminbuchung Link Kosmetikstudio', 'Online Buchungssystem Kosmetik', 'Terminbuchungssoftware Kosmetik', 'Buchungssystem Kosmetik', '24/7 Terminbuchung', 'Kosmetikstudio Online Termin', 'Automatische Terminbestätigung', 'SMS Terminbestätigung', 'Buchungslink Beauty'],
     alternates: {
         canonical: 'https://www.treatflow.io/online-buchungen',
     },
@@ -83,7 +83,7 @@ export default function OnlineBuchungenPage() {
                                     </div>
                                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Automatische Bestätigungen</h3>
                                     <p className="text-gray-600">
-                                        Kunden erhalten sofort eine Buchungsbestätigung per E-Mail mit allen Details.
+                                        Kunden erhalten sofort eine Buchungsbestätigung per E-Mail und SMS mit allen Details.
                                     </p>
                                 </div>
 
@@ -123,7 +123,7 @@ export default function OnlineBuchungenPage() {
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Persönlicher Buchungslink</h3>
                             <p className="text-gray-600 mb-6">
                                 Erhalte deinen eigenen Buchungslink zum Teilen in sozialen Medien,
-                                auf deiner Website oder per WhatsApp.
+                                auf deiner Website.
                             </p>
                             <ul className="space-y-2">
                                 <li className="flex items-center text-sm text-gray-700">
@@ -174,21 +174,21 @@ export default function OnlineBuchungenPage() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Automatische Erinnerungen</h3>
                             <p className="text-gray-600 mb-6">
-                                Reduziere No-Shows mit automatischen E-Mail-Erinnerungen
-                                zu verschiedenen Zeitpunkten vor dem Termin.
+                                Reduziere No-Shows mit automatischen Erinnerungen per E-Mail,
+                                E-Mail und SMS zu verschiedenen Zeitpunkten vor dem Termin.
                             </p>
                             <ul className="space-y-2">
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Per E-Mail und SMS
+                                </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
                                     Mehrere Erinnerungen (3 Tage, 1 Tag vorher)
                                 </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Individuelle Texte
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Weniger Ausfälle
+                                    Stornierungsbenachrichtigungen per SMS
                                 </li>
                             </ul>
                         </div>
@@ -227,7 +227,7 @@ export default function OnlineBuchungenPage() {
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Link teilen</h3>
                             <p className="text-gray-600">
                                 Teile deinen persönlichen Buchungslink auf Instagram,
-                                deiner Website oder per WhatsApp mit deinen Kunden.
+                                deiner Website mit deinen Kunden.
                             </p>
                         </div>
 
@@ -238,7 +238,7 @@ export default function OnlineBuchungenPage() {
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Termine erhalten</h3>
                             <p className="text-gray-600">
                                 Erhalte automatisch alle Buchungen in deinem Kalender.
-                                Bestätigungen und Erinnerungen laufen automatisch.
+                                Bestätigungen per E-Mail und SMS sowie Erinnerungen laufen automatisch.
                             </p>
                         </div>
                     </div>
