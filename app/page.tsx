@@ -10,7 +10,6 @@ import {
   ClipboardList,
   Camera,
   Shield,
-  Play,
   Palette,
   Gem,
   Eye,
@@ -508,54 +507,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Video Demo Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 px-6 py-3 rounded-full text-sm font-semibold mb-6 shadow-sm">
-                <Play className="h-4 w-4" />
-                Video Demo
-              </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                So einfach funktioniert Treatflow
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Sieh in 2 Minuten, wie Treatflow deinen Studio-Alltag vereinfacht – von der Online-Buchung bis zur Dokumentation.
-              </p>
-            </div>
-
-            {/* Video Platzhalter */}
-            <div className="max-w-4xl mx-auto">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-gray-900 to-indigo-900 aspect-video group cursor-pointer">
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 transition-all duration-300 group-hover:scale-110">
-                    <Play className="h-8 w-8 text-white ml-1" />
-                  </div>
-                  <h3 className="text-white text-2xl font-bold mb-2">Produktvideo</h3>
-                  <p className="text-white/70 text-lg">Kommt bald - bleib gespannt!</p>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/10">
-                  <div className="h-full w-0 bg-gradient-to-r from-indigo-500 to-purple-500"></div>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center mt-12">
-              <p className="text-lg text-gray-600 mb-6">
-                Bereit für den Test? Probiere Treatflow 14 Tage kostenlos aus.
-              </p>
-              <a
-                href="https://app.treatflow.io/auth/register"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transform hover:-translate-y-1"
-              >
-                Jetzt kostenlos testen
-                <ArrowRight className="ml-3 h-6 w-6" />
-              </a>
-            </div>
-          </div>
-        </section>
+        {/* Video Demo Section - deaktiviert, wird später hinzugefügt */}
 
         {/* SEO-Keyword-Textblock */}
         <section className="py-16 bg-gray-50">
