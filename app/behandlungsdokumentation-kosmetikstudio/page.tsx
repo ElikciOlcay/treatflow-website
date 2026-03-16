@@ -154,6 +154,9 @@ export default function BehandlungsdokumentationKosmetikstudioPage() {
                         </div>
                         <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
                     </div>
+                    <div className="mt-12 max-w-5xl mx-auto">
+                        <img src="/images/funktionen/hero-behandlungsdokumentation.jpg" alt="Professionelle Dokumentation und Fuersorge" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                    </div>
                 </div>
             </section>
 

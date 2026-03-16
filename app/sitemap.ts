@@ -169,6 +169,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
+        // SEO-Cluster Kosmetikstudio
+        {
+            url: `${baseUrl}/terminsoftware-kosmetikstudio`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/kundenkartei-kosmetikstudio`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/anamnesebogen-kosmetikstudio`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/nisv-dokumentation-kosmetikstudio`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
         // Geo-Seiten
         {
             url: `${baseUrl}/studio-software-deutschland`,
@@ -312,7 +337,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date('2024-11-15'),
             changeFrequency: 'monthly' as const,
             priority: 0.8,
-        }
+        },
+        { url: `${baseUrl}/blog/terminkalender-kosmetikstudio-effizienz`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
+        { url: `${baseUrl}/blog/nachrichtenautomatisierung-kosmetikstudio`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
+        { url: `${baseUrl}/landing/dokumentation-formulare`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
+        { url: `${baseUrl}/blog/no-shows-reduzieren-kosmetikstudio`, lastModified: new Date('2025-01-08'), changeFrequency: 'monthly' as const, priority: 0.8 },
+        { url: `${baseUrl}/blog/anamnese-formulare-digital-kosmetik`, lastModified: new Date('2025-01-05'), changeFrequency: 'monthly' as const, priority: 0.8 },
+        { url: `${baseUrl}/blog/google-business-profil-kosmetikstudio`, lastModified: new Date('2024-12-28'), changeFrequency: 'monthly' as const, priority: 0.8 },
+        { url: `${baseUrl}/blog/wochenplanung-termine-kosmetikstudio`, lastModified: new Date('2024-12-20'), changeFrequency: 'monthly' as const, priority: 0.8 },
+        { url: `${baseUrl}/blog/dsgvo-datenschutz-kosmetikstudio`, lastModified: new Date('2024-12-14'), changeFrequency: 'monthly' as const, priority: 0.8 },
+        { url: `${baseUrl}/blog/erste-kundinnen-gewinnen-kosmetikstudio`, lastModified: new Date('2024-12-10'), changeFrequency: 'monthly' as const, priority: 0.8 },
+        { url: `${baseUrl}/blog/behandlungsraum-einrichten-kosmetikstudio`, lastModified: new Date('2024-12-05'), changeFrequency: 'monthly' as const, priority: 0.8 },
+        { url: `${baseUrl}/blog/lash-wimpern-kundenbindung`, lastModified: new Date('2024-11-28'), changeFrequency: 'monthly' as const, priority: 0.8 },
+        { url: `${baseUrl}/blog/urlaub-vertretung-kosmetikstudio`, lastModified: new Date('2024-11-22'), changeFrequency: 'monthly' as const, priority: 0.8 },
+        { url: `${baseUrl}/blog/sms-erinnerungen-termine-kosmetikstudio`, lastModified: new Date('2024-11-18'), changeFrequency: 'monthly' as const, priority: 0.8 }
     ]
 
     return [...staticRoutes, ...blogRoutes]

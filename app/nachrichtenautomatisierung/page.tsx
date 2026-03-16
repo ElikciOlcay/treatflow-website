@@ -47,77 +47,8 @@ export default function NachrichtenautomatisierungPage() {
                         </p>
                     </div>
 
-                    {/* Mockup Placeholder */}
-                    <div className="max-w-5xl mx-auto">
-                        <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
-                            <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-4 text-white">
-                                <div className="flex items-center justify-between">
-                                    <h3 className="font-semibold">Nachrichtenautomatisierung</h3>
-                                    <div className="flex items-center space-x-2">
-                                        <button className="bg-white/20 px-3 py-1 rounded text-sm">Neue Vorlage</button>
-                                        <button className="bg-white/20 px-3 py-1 rounded text-sm">Einstellungen</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="p-8">
-                                <div className="grid md:grid-cols-3 gap-6">
-                                    {/* Vor Termin */}
-                                    <div className="border-2 border-orange-200 bg-orange-50 p-6 rounded-xl">
-                                        <div className="flex items-center mb-4">
-                                            <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center mr-3">
-                                                <Clock className="h-5 w-5 text-white" />
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold text-gray-900">Vor Termin</h4>
-                                                <p className="text-sm text-gray-600">Erinnerung</p>
-                                            </div>
-                                        </div>
-                                        <p className="text-sm text-gray-700 mb-3">3 Tage vorher</p>
-                                        <div className="bg-white p-3 rounded border text-xs">
-                                            <strong>Betreff:</strong> Erinnerung: Ihr Termin bei Beauty Studio<br />
-                                            <strong>Text:</strong> Liebe Frau Müller, wir freuen uns auf Ihren Termin am 15.03.2024...
-                                        </div>
-                                    </div>
-
-                                    {/* Nach Termin */}
-                                    <div className="border-2 border-blue-200 bg-blue-50 p-6 rounded-xl">
-                                        <div className="flex items-center mb-4">
-                                            <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
-                                                <CheckCircle className="h-5 w-5 text-white" />
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold text-gray-900">Nach Termin</h4>
-                                                <p className="text-sm text-gray-600">Follow-up</p>
-                                            </div>
-                                        </div>
-                                        <p className="text-sm text-gray-700 mb-3">1 Tag später</p>
-                                        <div className="bg-white p-3 rounded border text-xs">
-                                            <strong>Betreff:</strong> Wie war Ihre Behandlung?<br />
-                                            <strong>Text:</strong> Vielen Dank für Ihren Besuch! Wir würden uns über Ihr Feedback freuen...
-                                        </div>
-                                    </div>
-
-                                    {/* Geburtstag */}
-                                    <div className="border-2 border-pink-200 bg-pink-50 p-6 rounded-xl">
-                                        <div className="flex items-center mb-4">
-                                            <div className="w-10 h-10 bg-pink-500 rounded-lg flex items-center justify-center mr-3">
-                                                <Heart className="h-5 w-5 text-white" />
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold text-gray-900">Geburtstag</h4>
-                                                <p className="text-sm text-gray-600">Geburtstagswünsche</p>
-                                            </div>
-                                        </div>
-                                        <p className="text-sm text-gray-700 mb-3">Am Geburtstag</p>
-                                        <div className="bg-white p-3 rounded border text-xs">
-                                            <strong>Betreff:</strong> Herzlichen Glückwunsch!<br />
-                                            <strong>Text:</strong> Alles Gute zum Geburtstag! Als kleines Geschenk erhalten Sie 20% Rabatt...
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="mt-12 max-w-5xl mx-auto">
+                        <img src="/images/funktionen/hero-frau-smartphone.jpg" alt="Frau mit Smartphone – persoenliche Nachrichten erreichen deine Kunden" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
                     </div>
                 </div>
             </section>
@@ -396,6 +327,42 @@ export default function NachrichtenautomatisierungPage() {
                                 Follow-ups und Geburtstagsangebote generieren Zusatztermine.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Verwandte Seiten / Cluster-Verlinkung */}
+            <section className="py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            Verwandte Funktionen für dein Studio
+                        </h2>
+                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                            Treatflow vereint Nachrichtenautomatisierung, Terminkalender, Kundenverwaltung und Formulare in einer Plattform.
+                        </p>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <Link href="/kosmetikstudio-software" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Kosmetikstudio Software</span>
+                            <span className="text-sm text-gray-600 block mb-2">All-in-One für dein Studio</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/terminsoftware-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Terminsoftware</span>
+                            <span className="text-sm text-gray-600 block mb-2">Online-Buchung & Erinnerungen</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/kundenkartei-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Kundenkartei</span>
+                            <span className="text-sm text-gray-600 block mb-2">Kundendaten & Historie</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/anamnesebogen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Anamnesebögen</span>
+                            <span className="text-sm text-gray-600 block mb-2">Formulare & Einwilligungen</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
                     </div>
                 </div>
             </section>

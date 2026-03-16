@@ -81,6 +81,9 @@ export default function NisvDokumentationPage() {
                             Beratung, Einwilligung und Doku sauber verwalten – weniger Papier, Fristen im Blick. Ideal für NiSV-relevante Behandlungen im Kosmetikstudio.
                         </p>
                     </div>
+                    <div className="mt-12 max-w-5xl mx-auto">
+                        <img src="/images/funktionen/hero-nisv-sicherheit.jpg" alt="Sicher und rechtssicher dokumentieren" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                    </div>
                 </div>
             </section>
 
@@ -174,6 +177,42 @@ export default function NisvDokumentationPage() {
                             className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-indigo-600 transition-colors duration-200 inline-flex items-center justify-center"
                         >
                             Software im Vergleich
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            {/* Verwandte Seiten / Cluster-Verlinkung */}
+            <section className="py-20 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            Verwandte Funktionen für dein Studio
+                        </h2>
+                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                            Treatflow vereint NiSV-Dokumentation, Behandlungsdokumentation, Formulare und Terminkalender in einer Plattform.
+                        </p>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <Link href="/kosmetikstudio-software" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Kosmetikstudio Software</span>
+                            <span className="text-sm text-gray-600 block mb-2">All-in-One für dein Studio</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren</span>
+                        </Link>
+                        <Link href="/nisv-dokumentation-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">NiSV-Dokumentation Kosmetikstudio</span>
+                            <span className="text-sm text-gray-600 block mb-2">Rechtssicher dokumentieren</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren</span>
+                        </Link>
+                        <Link href="/behandlungsdokumentation-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Behandlungsdokumentation Kosmetik</span>
+                            <span className="text-sm text-gray-600 block mb-2">Digital & NiSV-konform</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren</span>
+                        </Link>
+                        <Link href="/anamnesebogen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Anamnesebögen</span>
+                            <span className="text-sm text-gray-600 block mb-2">Formulare & Einwilligungen</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren</span>
                         </Link>
                     </div>
                 </div>

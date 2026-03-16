@@ -3,6 +3,33 @@ import {
     Clock, Smartphone, Star, Zap, Heart, TrendingUp, ClipboardCheck
 } from 'lucide-react';
 import Link from 'next/link';
+
+const clusterPages = [
+    {
+        href: '/terminsoftware-kosmetikstudio',
+        title: 'Terminsoftware',
+        description: 'Online-Buchung und digitaler Terminkalender',
+        icon: Calendar,
+    },
+    {
+        href: '/kundenkartei-kosmetikstudio',
+        title: 'Digitale Kundenkartei',
+        description: 'Kundendaten, Behandlungshistorie und Fotos',
+        icon: Users,
+    },
+    {
+        href: '/anamnesebogen-kosmetikstudio',
+        title: 'Digitale Anamnesebögen',
+        description: 'Formulare, Einwilligungen und Anamnese digital',
+        icon: ClipboardCheck,
+    },
+    {
+        href: '/nisv-dokumentation-kosmetikstudio',
+        title: 'NiSV-Dokumentation',
+        description: 'Behandlungen rechtssicher dokumentieren',
+        icon: Shield,
+    },
+];
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -11,11 +38,13 @@ export const metadata = {
     description: 'Die moderne Software für Kosmetikstudios. Online-Buchungen, Kundenverwaltung, digitale Formulare und Behandlungsdokumentation in einer Plattform. 14 Tage gratis testen.',
     keywords: [
         'Kosmetikstudio Software',
-        'Software für Kosmetikstudios',
+        'Software für Kosmetikstudio',
+        'Software Kosmetikstudio',
         'Kosmetikstudio Verwaltung',
         'Kosmetikstudio Terminbuchung',
         'Kosmetikstudio Management Software',
         'Beauty Studio Software',
+        'Studio Management Software',
         'Kosmetikstudio digital',
         'Kosmetikstudio Kundenverwaltung',
         'Kosmetikstudio Online Buchung',
@@ -183,6 +212,14 @@ export default function KosmetikstudioSoftwarePage() {
                         </div>
                         <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
                     </div>
+                    <div className="mt-12 max-w-5xl mx-auto">
+                        <img
+                            src="/images/branchen/hero-kosmetikstudio.jpg"
+                            alt="Modernes Kosmetikstudio – professionell und einladend"
+                            className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]"
+                            loading="lazy"
+                        />
+                    </div>
                 </div>
             </section>
 
@@ -285,8 +322,43 @@ export default function KosmetikstudioSoftwarePage() {
                 </div>
             </section>
 
-            {/* Feature List Section */}
+            {/* Cluster-Verlinkung */}
             <section className="py-20 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                            Entdecke alle Funktionen im Detail
+                        </h2>
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Treatflow bietet spezialisierte Lösungen für jeden Bereich deines Studios.
+                        </p>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {clusterPages.map((page) => (
+                            <Link
+                                key={page.href}
+                                href={page.href}
+                                className="group bg-white p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all duration-200"
+                            >
+                                <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
+                                    <page.icon className="h-6 w-6 text-indigo-600" />
+                                </div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                    {page.title}
+                                </h3>
+                                <p className="text-gray-600 text-sm mb-3">{page.description}</p>
+                                <span className="inline-flex items-center text-indigo-600 text-sm font-medium">
+                                    Mehr erfahren
+                                    <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                                </span>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Feature List Section */}
+            <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-gray-900 mb-4">

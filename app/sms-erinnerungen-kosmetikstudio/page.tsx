@@ -112,6 +112,9 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                             </a>
                         </div>
                     </div>
+                    <div className="mt-12 max-w-5xl mx-auto">
+                        <img src="/images/funktionen/hero-sms-erinnerungen.jpg" alt="Erinnerung erhalten, Ruhe und Zuverlaessigkeit" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                    </div>
                 </div>
             </section>
 

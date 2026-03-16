@@ -102,7 +102,7 @@ export default function FAQSection() {
                 <div className="text-center mt-12">
                     <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-8 border border-indigo-100">
                         <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                            Weitere Fragen?
+                            Hast du weitere Fragen?
                         </h3>
                         <p className="text-gray-600 mb-6">
                             Unser Support-Team hilft dir gerne weiter. Schreib uns eine E-Mail oder buche direkt ein Beratungsgespräch.

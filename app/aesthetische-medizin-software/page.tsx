@@ -2,6 +2,7 @@ import {
     Calendar, Users, FileText, Shield, Bell, ArrowRight, CheckCircle,
     Clock, Star, Zap, TrendingUp, ClipboardCheck, Stethoscope, Syringe
 } from 'lucide-react';
+import Link from 'next/link';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -158,6 +159,14 @@ export default function AesthetischeMedizinSoftwarePage() {
                         </div>
                         <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
                     </div>
+                    <div className="mt-12 max-w-5xl mx-auto">
+                        <img
+                            src="/images/branchen/hero-aesthetik.jpg"
+                            alt="Ästhetische Medizin – moderne Praxis"
+                            className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]"
+                            loading="lazy"
+                        />
+                    </div>
                 </div>
             </section>
 
@@ -259,6 +268,42 @@ export default function AesthetischeMedizinSoftwarePage() {
                                 <span className="text-gray-700 font-medium">{feature}</span>
                             </div>
                         ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Verwandte Seiten / Cluster-Verlinkung */}
+            <section className="py-20 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            Weitere Funktionen für dein Studio
+                        </h2>
+                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                            Treatflow vereint Terminkalender, Kundenverwaltung, Formulare und Dokumentation in einer Plattform.
+                        </p>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <Link href="/kosmetikstudio-software" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Kosmetikstudio Software</span>
+                            <span className="text-sm text-gray-600 block mb-2">All-in-One für Studios</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/terminsoftware-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Terminsoftware</span>
+                            <span className="text-sm text-gray-600 block mb-2">Online-Buchung & Kalender</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/kundenkartei-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Kundenkartei</span>
+                            <span className="text-sm text-gray-600 block mb-2">Kundendaten & Historie</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/nisv-dokumentation-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">NiSV-Dokumentation</span>
+                            <span className="text-sm text-gray-600 block mb-2">Rechtssicher dokumentieren</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
                     </div>
                 </div>
             </section>

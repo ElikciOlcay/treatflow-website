@@ -7,19 +7,12 @@ import {
   CheckCircle,
   Sparkles,
   Zap,
-  ClipboardList,
   Camera,
   Shield,
-  Palette,
-  Gem,
-  Eye,
-  Pen,
-  Stethoscope,
-  Waves,
+  Bell,
   Link2,
   ClipboardCheck,
-  Bell,
-  BookOpen
+  ChevronsRight
 } from "lucide-react";
 import Link from 'next/link';
 import Script from 'next/script';
@@ -36,7 +29,7 @@ const structuredData = {
   "name": "Treatflow",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web Browser",
-  "description": "Software für Kosmetikstudio: Terminkalender, digitale Kundenkartei, Online-Buchungen, SMS-Benachrichtigungen und Behandlungsdokumentation",
+  "description": "Software für Kosmetikstudio: Terminkalender, digitale Kundenkartei, Online-Buchungen und Behandlungsdokumentation",
   "url": "https://www.treatflow.io",
   "author": {
     "@type": "Organization",
@@ -68,7 +61,6 @@ const structuredData = {
   },
   "featureList": [
     "Terminkalender mit Online-Buchung",
-    "SMS-Benachrichtigungen",
     "Digitale Kundenkartei und Kundenverwaltung",
     "Formulare für Anamnesen",
     "Behandlungsdokumentation",
@@ -149,84 +141,144 @@ export default function Home() {
       <div className="min-h-screen bg-white">
         <Navigation />
 
-        {/* Hero Section */}
-        <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-7xl mx-auto text-center">
-            <div className="max-w-4xl mx-auto">
-              <div className="flex items-center justify-center gap-3 mb-8">
-                <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold">
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+        {/* Hero Section - 2 Spalten: links Text, rechts Bild */}
+        <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            <div className="order-1 text-center lg:text-left">
+              <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
+                <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold">
+                  <div className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></div>
                   NEU
                 </div>
-                <span className="text-gray-600 text-lg font-medium">NiSV konform dokumentieren</span>
+                <span className="text-gray-600 text-sm font-medium">NiSV konform dokumentieren</span>
               </div>
-              <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight mb-8">
-                Kosmetikstudio Software für mehr Zeit mit deinen{" "}
-                <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Kunden</span>{" "}
-                - weniger Papierkram
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-4">
+                Mehr Zeit für deine{" "}
+                <span className="text-indigo-600">Kunden</span>
+                {" "}– mit Treatflow
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-600 mb-4 leading-relaxed max-w-2xl mx-auto">
+              <p className="text-2xl lg:text-3xl font-semibold text-indigo-600 mb-4">
+                Die All-in-One Software für Kosmetikstudios
+              </p>
+              <p className="text-lg lg:text-xl text-gray-600 mb-3 leading-relaxed">
                 Kalender, Kunden, Buchungen, Dokumentation – alles in einer App.
               </p>
-              <p className="text-base text-gray-500 mb-10">
+              <p className="text-sm text-gray-500 mb-8">
                 Perfekt für Kosmetikstudios, Laser-Studios, Permanent Makeup und ästhetische Behandlungen.
               </p>
-              <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
                 <a
                   href="https://app.treatflow.io/auth/register"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transform hover:-translate-y-1"
+                  className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                 >
                   Kostenlos testen
-                  <ArrowRight className="ml-3 h-6 w-6" />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
                 <a
                   href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white border-2 border-gray-200 text-gray-700 px-10 py-5 rounded-2xl text-xl font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-all duration-300 flex items-center justify-center"
                 >
                   Beratung buchen
-                  <ArrowRight className="ml-3 h-6 w-6" />
                 </a>
               </div>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-16">
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
                 <div className="flex items-center">
-                  <div className="flex -space-x-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-full border-3 border-white shadow-lg"></div>
-                    <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full border-3 border-white shadow-lg"></div>
-                    <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-rose-500 rounded-full border-3 border-white shadow-lg"></div>
-                    <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-amber-500 rounded-full border-3 border-white shadow-lg flex items-center justify-center text-white font-bold text-sm">
+                  <div className="flex -space-x-2">
+                    <div className="w-10 h-10 bg-indigo-100 rounded-full border-2 border-white shadow-md flex items-center justify-center text-indigo-600 text-xs font-semibold">1</div>
+                    <div className="w-10 h-10 bg-gray-100 rounded-full border-2 border-white shadow-md flex items-center justify-center text-gray-600 text-xs font-semibold">2</div>
+                    <div className="w-10 h-10 bg-indigo-100 rounded-full border-2 border-white shadow-md flex items-center justify-center text-indigo-600 text-xs font-semibold">3</div>
+                    <div className="w-10 h-10 bg-gray-100 rounded-full border-2 border-white shadow-md flex items-center justify-center text-gray-700 font-bold text-xs">
                       +500
                     </div>
                   </div>
-                  <div className="ml-4">
-                    <div className="text-lg font-semibold text-gray-900">500+ Kosmetikerinnen</div>
-                    <div className="text-sm text-gray-600">vertrauen bereits auf Treatflow</div>
+                  <div className="ml-3">
+                    <div className="text-sm font-semibold text-gray-900">500+ Studios</div>
+                    <div className="text-xs text-gray-500">vertrauen auf Treatflow</div>
                   </div>
                 </div>
-                <div className="flex items-center bg-white px-4 py-3 rounded-2xl shadow-lg border border-gray-100">
-                  <div className="flex text-yellow-400 mr-3">
+                <div className="flex items-center bg-white px-3 py-2 rounded-xl shadow-md border border-gray-100">
+                  <div className="flex text-amber-500 mr-2">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-current" />
+                      <Star key={i} className="h-4 w-4 fill-current" />
                     ))}
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900">4.9/5</div>
-                    <div className="text-sm text-gray-600">Bewertung</div>
+                    <div className="text-sm font-semibold text-gray-900">4.9/5</div>
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* Dashboard Mockup */}
-            <div className="max-w-5xl mx-auto">
+            <div className="order-2">
               <img
-                src="/images/mockups/dashboard-main.png"
-                alt="Treatflow Dashboard auf einem Tablet - Kundenverwaltung und Terminübersicht"
-                className="w-full h-auto rounded-2xl shadow-2xl"
+                src="/images/hero-treatflow-calendar.png"
+                alt="Treatflow Kalender im modernen Kosmetikstudio"
+                className="w-full rounded-2xl shadow-xl object-cover aspect-[4/3] lg:aspect-auto lg:min-h-[400px]"
               />
+            </div>
+          </div>
+        </section>
+
+        {/* Funktionen Section */}
+        <section id="features" className="py-20 bg-gradient-to-b from-white to-gray-50/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-6 py-3 rounded-full text-sm font-semibold mb-6">
+                <Sparkles className="h-4 w-4" />
+                Alles in einer App
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                Alles was du für deinen
+                <span className="text-indigo-600"> Studio-Erfolg</span> brauchst
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Schluss mit Zettelwirtschaft und Doppelarbeit. Treatflow bringt Ordnung
+                in deinen Arbeitsalltag.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { href: '/online-terminbuchung-kosmetikstudio', icon: CalendarDays, label: 'Online-Buchungskalender', desc: 'Kunden buchen 24/7 über deinen persönlichen Link. Automatische SMS-Bestätigungen und Erinnerungen.', color: 'bg-indigo-100 text-indigo-600', bullets: ['Buchungslink für Kunden', 'SMS- und E-Mail-Bestätigungen', 'Erinnerungen automatisch'] },
+                { href: '/digitale-anamnese-kosmetikstudio', icon: ClipboardCheck, label: 'Smarte Formulare', desc: 'Professionelle Anamnese- und Einwilligungsformulare. KI-Generator und Drag & Drop Editor.', color: 'bg-orange-100 text-orange-600', bullets: ['Fertige Vorlagen', 'KI-Formular-Generator', 'Drag & Drop Editor'], badge: 'KI' },
+                { href: '/behandlungsdokumentation-kosmetikstudio', icon: FileText, label: 'Dokumentation', desc: 'Halte jede Behandlung fest - mit Fotos, Notizen und KI-Zusammenfassungen. NiSV-konform.', color: 'bg-blue-100 text-blue-600', bullets: ['KI-Notizen automatisch', 'Foto-Management', 'NiSV-konform'], badge: 'KI' },
+                { href: '/kundenverwaltung', icon: Users, label: 'Kundenverwaltung', desc: 'Digitale Kundenkartei mit kompletter Behandlungshistorie, Vorlieben und Import-Funktion.', color: 'bg-emerald-100 text-emerald-600', bullets: ['Unbegrenzt Kunden', 'Behandlungshistorie', 'Daten-Import'] },
+                { href: '/sms-erinnerungen-kosmetikstudio', icon: Bell, label: 'SMS-Erinnerungen', desc: 'Reduziere No-Shows um bis zu 80% mit automatischen Erinnerungen per SMS und E-Mail.', color: 'bg-rose-100 text-rose-600', bullets: ['Automatisch versenden', 'SMS und E-Mail', 'Bis zu 80% weniger No-Shows'] },
+                { href: '/behandlungsdokumentation', icon: Camera, label: 'Foto-Management', desc: 'Vorher-Nachher Fotos sicher speichern und Behandlungsverläufe visuell dokumentieren.', color: 'bg-rose-100 text-rose-600', bullets: ['Vorher-Nachher Fotos', 'Sichere Speicherung', 'Kundenzuordnung'] },
+                { href: '/nisv-dokumentation', icon: Shield, label: 'NiSV-Dokumentation', desc: 'Rechtssichere Dokumentation für NiSV-pflichtige Geräte. DSGVO-konform und verschlüsselt.', color: 'bg-teal-100 text-teal-600', bullets: ['NiSV-konform', 'DSGVO-konform', 'EU-Hosting'] },
+                { href: '/nachrichtenautomatisierung', icon: Zap, label: 'Automatisierungen', desc: 'Geburtstagsnachrichten, Follow-ups und Terminerinnerungen vollautomatisch versenden.', color: 'bg-blue-100 text-blue-600', bullets: ['Geburtstagsnachrichten', 'Follow-up nach Behandlung', 'Vollautomatisch'] },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group relative bg-white p-6 rounded-2xl border border-gray-100 hover:border-gray-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl block"
+                >
+                  <div className="flex items-center mb-4">
+                    <div className={`w-12 h-12 ${item.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                      <item.icon className="h-6 w-6" />
+                    </div>
+                    {'badge' in item && item.badge && (
+                      <div className="ml-2 bg-indigo-100 text-indigo-700 text-xs font-bold px-2.5 py-1 rounded-full">
+                        <Zap className="h-3 w-3 inline mr-0.5" />
+                        {item.badge}
+                      </div>
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{item.label}</h3>
+                  <p className="text-sm text-gray-600 mb-4 leading-relaxed">{item.desc}</p>
+                  <div className="space-y-2">
+                    {item.bullets.map((b, i) => (
+                      <div key={i} className="flex items-center">
+                        <CheckCircle className="h-4 w-4 text-indigo-500 mr-2 flex-shrink-0" />
+                        <span className="text-sm text-gray-700">{b}</span>
+                      </div>
+                    ))}
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
@@ -243,290 +295,61 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
-              {[
-                { href: '/kosmetikstudio-software', icon: Sparkles, label: 'Kosmetikstudios', desc: 'Termine, Kunden und Formulare für deinen Studio-Alltag.', color: 'text-indigo-600 bg-indigo-100', border: 'hover:border-indigo-200' },
-                { href: '/laser-haarentfernung-software', icon: Zap, label: 'Laser & IPL', desc: 'NiSV-konforme Dokumentation und Einwilligungen.', color: 'text-blue-600 bg-blue-100', border: 'hover:border-blue-200' },
-                { href: '/permanent-makeup-software', icon: Palette, label: 'Permanent Makeup', desc: 'Fotodokumentation und digitale Einwilligungen.', color: 'text-rose-600 bg-rose-100', border: 'hover:border-rose-200' },
-                { href: '/nagelstudio-software', icon: Gem, label: 'Nagelstudios', desc: 'Kundenvorlieben speichern und online buchbar.', color: 'text-pink-600 bg-pink-100', border: 'hover:border-pink-200' },
-                { href: '/lash-studio-software', icon: Eye, label: 'Lash Studios', desc: 'Refill-Planung und Wimpern-Details pro Kundin.', color: 'text-violet-600 bg-violet-100', border: 'hover:border-violet-200' },
-                { href: '/tattoo-studio-software', icon: Pen, label: 'Tattoo Studios', desc: 'Einwilligungen und Kundenverwaltung digital.', color: 'text-gray-700 bg-gray-200', border: 'hover:border-gray-300' },
-                { href: '/aesthetische-medizin-software', icon: Stethoscope, label: 'Ästhetische Medizin', desc: 'Praxisverwaltung für Filler, Botox und mehr.', color: 'text-teal-600 bg-teal-100', border: 'hover:border-teal-200' },
-                { href: '/spa-wellness-software', icon: Waves, label: 'Spa & Wellness', desc: 'Gästeverwaltung und Therapeuten-Kalender.', color: 'text-cyan-600 bg-cyan-100', border: 'hover:border-cyan-200' },
-              ].map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`bg-white p-6 rounded-xl border border-gray-100 ${item.border} transition-all duration-300 hover:-translate-y-1 hover:shadow-lg block group`}
-                >
-                  <div className={`w-11 h-11 rounded-lg flex items-center justify-center mb-4 ${item.color} group-hover:scale-110 transition-transform`}>
-                    <item.icon className="h-5 w-5" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-1">{item.label}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
-                </Link>
-              ))}
+            {/* Slider-Hinweis */}
+            <div className="flex items-center justify-center gap-2 text-gray-500 text-sm mb-4">
+              <ChevronsRight className="h-4 w-4" aria-hidden />
+              <span>Wische zum Durchblättern</span>
+              <ChevronsRight className="h-4 w-4" aria-hidden />
+            </div>
+
+            {/* Branchen-Slider mit Bildern */}
+            <div className="mb-10 -mx-4 sm:mx-0 relative">
+              <div className="overflow-x-auto scroll-smooth snap-x snap-mandatory flex gap-4 pb-4 px-4 sm:px-0 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                {[
+                  { href: '/kosmetikstudio-software', label: 'Kosmetikstudios', image: '/images/branchen/hero-kosmetikstudio.jpg' },
+                  { href: '/laser-haarentfernung-software', label: 'Laser & IPL', image: '/images/branchen/hero-laser.jpg' },
+                  { href: '/permanent-makeup-software', label: 'Permanent Makeup', image: '/images/branchen/hero-pmu.jpg' },
+                  { href: '/nagelstudio-software', label: 'Nagelstudios', image: '/images/branchen/hero-nagelstudio.jpg' },
+                  { href: '/lash-studio-software', label: 'Lash Studios', image: '/images/branchen/hero-lash.jpg' },
+                  { href: '/tattoo-studio-software', label: 'Tattoo Studios', image: '/images/branchen/hero-tattoo.jpg' },
+                  { href: '/aesthetische-medizin-software', label: 'Ästhetische Medizin', image: '/images/branchen/hero-aesthetik.jpg' },
+                  { href: '/spa-wellness-software', label: 'Spa & Wellness', image: '/images/branchen/hero-spa.jpg' },
+                  { href: '/massage-software', label: 'Massage', image: '/images/branchen/hero-massage.jpg' },
+                ].map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="flex-shrink-0 w-[320px] sm:w-[400px] lg:w-[480px] snap-center group block rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 bg-white"
+                  >
+                    <div className="aspect-[4/3] relative overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={item.label}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                      <div className="absolute bottom-0 left-0 right-0 p-4">
+                        <span className="text-white font-semibold text-lg drop-shadow-sm">{item.label}</span>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+              <div className="absolute right-0 top-0 bottom-4 w-16 sm:w-24 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none rounded-r-2xl" aria-hidden />
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center gap-3 bg-white border border-dashed border-gray-300 rounded-xl px-6 py-4">
+              <div className="inline-flex items-center gap-3 bg-white border border-dashed border-gray-300 rounded-2xl px-6 py-4">
                 <div className="flex -space-x-2">
-                  <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-amber-600"><Sparkles className="h-4 w-4" /></div>
-                  <div className="w-8 h-8 bg-sky-100 rounded-full flex items-center justify-center text-sky-600"><Users className="h-4 w-4" /></div>
-                  <div className="w-8 h-8 bg-lime-100 rounded-full flex items-center justify-center text-lime-600"><CheckCircle className="h-4 w-4" /></div>
+                  <div className="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600"><Sparkles className="h-4 w-4" /></div>
+                  <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center text-gray-600"><Users className="h-4 w-4" /></div>
+                  <div className="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center text-teal-600"><CheckCircle className="h-4 w-4" /></div>
                 </div>
                 <p className="text-sm text-gray-600">
                   <span className="font-semibold text-gray-900">Und viele mehr</span> – Treatflow passt sich an jede Branche an, die mit Terminen, Kunden und Dokumentation arbeitet.
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Kompakte Features Section */}
-        <section id="features" className="py-20 bg-gradient-to-b from-white to-gray-50/50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Header */}
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 px-6 py-3 rounded-full text-sm font-semibold mb-6 shadow-sm">
-                <Sparkles className="h-4 w-4" />
-                Alles in einer App
-              </div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Alles was du für deinen
-                <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> Studio-Erfolg</span> brauchst
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Schluss mit Zettelwirtschaft und Doppelarbeit. Treatflow bringt Ordnung
-                in deinen Arbeitsalltag und lässt dich entspannter arbeiten.
-              </p>
-            </div>
-
-            {/* Hauptfeatures - 3 Spalten */}
-            <div className="grid lg:grid-cols-3 gap-8 mb-16">
-              {/* Online Buchungen */}
-              <div className="group relative bg-white p-8 rounded-2xl border border-gray-100 hover:border-indigo-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-500/10">
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-purple-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative">
-                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <CalendarDays className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Online-Buchungskalender
-                  </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    Professioneller Kalender mit Wochen-, Tages- und Monatsansicht.
-                    Deine Kunden buchen direkt über deinen Buchungslink - mit automatischer SMS-Bestätigung.
-                  </p>
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">Buchungslink für Kunden</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">SMS- und E-Mail-Bestätigungen</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">Erinnerungen per E-Mail und SMS</span>
-                    </div>
-                  </div>
-                  <Link
-                    href="/terminkalender"
-                    className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium group"
-                  >
-                    Mehr erfahren
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </div>
-              </div>
-
-              {/* Formulare */}
-              <div className="group relative bg-white p-8 rounded-2xl border border-gray-100 hover:border-orange-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-500/10">
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-50/50 to-amber-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative">
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <ClipboardList className="h-8 w-8 text-white" />
-                    </div>
-                    <div className="ml-3 bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full">
-                      <Zap className="h-3 w-3 inline mr-1" />
-                      KI
-                    </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Smarte Formulare
-                  </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    Professionelle Formulare für alle Behandlungen. Drag & Drop Editor oder
-                    KI-Generator für individuelle Anpassungen.
-                  </p>
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-orange-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">Fertige Vorlagen</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-orange-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">KI-Formular-Generator</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-orange-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">Drag & Drop Editor</span>
-                    </div>
-                  </div>
-                  <Link
-                    href="/formulare"
-                    className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium group"
-                  >
-                    Mehr erfahren
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </div>
-              </div>
-
-              {/* Behandlungsdokumentation */}
-              <div className="group relative bg-white p-8 rounded-2xl border border-gray-100 hover:border-purple-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-500/10">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-pink-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative">
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <FileText className="h-8 w-8 text-white" />
-                    </div>
-                    <div className="ml-3 bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full">
-                      <Zap className="h-3 w-3 inline mr-1" />
-                      KI
-                    </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Dokumentation
-                  </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    Halte jede Behandlung fest - mit Fotos, Notizen und allen wichtigen Details.
-                    Unsere KI schreibt automatisch mit.
-                  </p>
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-purple-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">Automatische Notizen</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-purple-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">Foto-Management</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-purple-500 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">Rechtssicher</span>
-                    </div>
-                  </div>
-                  <Link
-                    href="/behandlungsdokumentation"
-                    className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium group"
-                  >
-                    Mehr erfahren
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Kompakte Zusatzfeatures - 4 Spalten */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Kundenverwaltung */}
-              <Link href="/kundenverwaltung" className="bg-white p-6 rounded-xl border border-gray-100 hover:border-green-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg block group">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Users className="h-6 w-6 text-white" />
-                </div>
-                <h4 className="font-bold text-gray-900 mb-2">Kundenverwaltung & Kundenkartei</h4>
-                <p className="text-sm text-gray-600">Digitale Kundenkartei Kosmetik: Kundendatenbank mit Import-Funktion</p>
-              </Link>
-
-              {/* Foto-Management */}
-              <Link href="/behandlungsdokumentation" className="bg-white p-6 rounded-xl border border-gray-100 hover:border-pink-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg block group">
-                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Camera className="h-6 w-6 text-white" />
-                </div>
-                <h4 className="font-bold text-gray-900 mb-2">Foto-Management</h4>
-                <p className="text-sm text-gray-600">Vorher-Nachher Fotos sicher speichern</p>
-              </Link>
-
-              {/* Sicherheit */}
-              <div className="bg-white p-6 rounded-xl border border-gray-100 hover:border-emerald-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg group cursor-pointer">
-                <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Shield className="h-6 w-6 text-white" />
-                </div>
-                <h4 className="font-bold text-gray-900 mb-2">100% Sicher</h4>
-                <p className="text-sm text-gray-600">DSGVO-konform und verschlüsselt</p>
-              </div>
-
-              {/* NiSV Konform */}
-              <div className="bg-white p-6 rounded-xl border border-gray-100 hover:border-blue-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg group cursor-pointer">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <CheckCircle className="h-6 w-6 text-white" />
-                </div>
-                <h4 className="font-bold text-gray-900 mb-2">NiSV Konform</h4>
-                <p className="text-sm text-gray-600">Rechtssichere Dokumentation</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Feature-Cluster Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-14">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Alles was dein Studio braucht – in einer Plattform
-              </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Entdecke die wichtigsten Funktionen im Detail und erfahre, wie sie deinen Alltag vereinfachen.
-              </p>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
-              {[
-                { href: '/online-terminbuchung-kosmetikstudio', icon: Link2, label: 'Online-Terminbuchung', desc: 'Kunden buchen 24/7 über deinen persönlichen Link.', gradient: 'from-orange-500 to-red-600' },
-                { href: '/digitale-anamnese-kosmetikstudio', icon: ClipboardCheck, label: 'Digitale Anamnese', desc: 'Formulare vorab digital ausfüllen und unterschreiben.', gradient: 'from-emerald-500 to-teal-600' },
-                { href: '/sms-erinnerungen-kosmetikstudio', icon: Bell, label: 'SMS-Erinnerungen', desc: 'No-Shows um bis zu 80% reduzieren.', gradient: 'from-purple-500 to-pink-600' },
-                { href: '/behandlungsdokumentation-kosmetikstudio', icon: FileText, label: 'Dokumentation', desc: 'Behandlungen digital und NiSV-konform festhalten.', gradient: 'from-blue-500 to-indigo-600' },
-                { href: '/kundenverwaltung', icon: Users, label: 'Kundenverwaltung', desc: 'Digitale Kundenkartei mit Behandlungshistorie.', gradient: 'from-green-500 to-emerald-600' },
-              ].map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="group bg-gray-50 hover:bg-white p-6 rounded-xl border border-gray-100 hover:border-gray-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg block"
-                >
-                  <div className={`w-11 h-11 bg-gradient-to-r ${item.gradient} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                    <item.icon className="h-5 w-5 text-white" />
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-1 text-sm">{item.label}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Video Demo Section - deaktiviert, wird später hinzugefügt */}
-
-        {/* SEO-Keyword-Textblock */}
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 text-center">
-              Warum moderne Kosmetikstudios auf digitale Software setzen
-            </h2>
-            <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed space-y-4">
-              <p>
-                Der Alltag im Kosmetikstudio ist anspruchsvoll: Termine koordinieren, Kunden betreuen, Behandlungen dokumentieren und gleichzeitig den Überblick über das gesamte Business behalten. Viele Studios arbeiten noch mit Papierkalender, WhatsApp-Nachrichten und handgeschriebenen Karteikarten – das kostet wertvolle Zeit, die für die eigentliche Arbeit am Kunden fehlt.
-              </p>
-              <p>
-                Eine spezialisierte Studio Software wie Treatflow löst genau diese Probleme. Online-Buchungen ermöglichen Kunden, rund um die Uhr Termine zu buchen. Automatische Erinnerungen per SMS reduzieren No-Shows. Digitale Anamnesebögen ersetzen den Papierstapel. Und die Behandlungsdokumentation erfüllt alle Anforderungen – auch für NiSV-pflichtige Geräte. Das Ergebnis: weniger Verwaltung, mehr Zeit für das, was zählt – deine Kunden.
-              </p>
-            </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
-              <Link href="/blog/beste-kosmetikstudio-software-2026" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Beste Kosmetikstudio Software 2026</Link>
-              <Link href="/blog/online-buchungssystem-vorteile" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Vorteile eines Online-Buchungssystems</Link>
-              <Link href="/blog/behandlungsdokumentation-nisv-konform" className="hover:text-indigo-600 transition-colors underline underline-offset-4">NiSV-konform dokumentieren</Link>
             </div>
           </div>
         </section>
@@ -549,8 +372,8 @@ export default function Home() {
                 { value: '100%', label: 'DSGVO-konform', desc: 'EU-Hosting, verschlüsselt', icon: Shield },
                 { value: 'AT', label: 'Made in Austria', desc: 'Entwickelt in Salzburg', icon: CheckCircle },
               ].map((item, i) => (
-                <div key={i} className="text-center p-6 bg-gray-50 rounded-xl border border-gray-100">
-                  <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div key={i} className="text-center p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                  <div className="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <item.icon className="h-6 w-6 text-indigo-600" />
                   </div>
                   <div className="text-3xl font-bold text-gray-900 mb-1">{item.value}</div>
@@ -566,23 +389,46 @@ export default function Home() {
         <TestimonialsSection />
         <FAQSection />
 
+        {/* SEO-Keyword-Textblock */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 text-center">
+              Warum moderne Kosmetikstudios auf digitale Software setzen
+            </h2>
+            <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed space-y-4">
+              <p>
+                Der Alltag im Kosmetikstudio ist anspruchsvoll: Termine koordinieren, Kunden betreuen, Behandlungen dokumentieren, Produkte über den <Link href="/shop" className="text-indigo-600 hover:underline">Online-Shop</Link> verkaufen und gleichzeitig den Überblick über das gesamte Business behalten. Viele Studios arbeiten noch mit Papierkalender, WhatsApp-Nachrichten und handgeschriebenen Karteikarten – das kostet wertvolle Zeit, die für die eigentliche Arbeit am Kunden fehlt.
+              </p>
+              <p>
+                Eine spezialisierte Studio Software wie Treatflow löst genau diese Probleme. Der <Link href="/terminkalender" className="text-indigo-600 hover:underline">Terminkalender</Link> mit <Link href="/online-buchungen" className="text-indigo-600 hover:underline">Online-Buchungen</Link> ermöglicht Kunden, rund um die Uhr Termine zu buchen. Automatische Erinnerungen per SMS reduzieren No-Shows. Digitale <Link href="/formulare" className="text-indigo-600 hover:underline">Anamnesebögen und Formulare</Link> ersetzen den Papierstapel. Und die Behandlungsdokumentation erfüllt alle Anforderungen – auch für NiSV-pflichtige Geräte. Das Ergebnis: weniger Verwaltung, mehr Zeit für das, was zählt – deine Kunden.
+              </p>
+            </div>
+            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+              <Link href="/kosmetikstudio-software-vergleich" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Software-Vergleich</Link>
+              <Link href="/blog/beste-kosmetikstudio-software-2026" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Beste Kosmetikstudio Software 2026</Link>
+              <Link href="/blog/online-buchungssystem-vorteile" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Vorteile eines Online-Buchungssystems</Link>
+              <Link href="/blog/behandlungsdokumentation-nisv-konform" className="hover:text-indigo-600 transition-colors underline underline-offset-4">NiSV-konform dokumentieren</Link>
+            </div>
+          </div>
+        </section>
+
         {/* Finaler CTA */}
-        <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
+        <section className="py-20 bg-indigo-600" aria-label="Call-to-Action">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Bereit, deinen Studio-Alltag zu vereinfachen?
             </h2>
             <div className="flex flex-col sm:flex-row justify-center gap-x-8 gap-y-3 mb-10 text-white/90">
               <div className="flex items-center justify-center gap-2">
-                <CheckCircle className="h-5 w-5 text-green-300" />
+                <CheckCircle className="h-5 w-5 text-indigo-200" />
                 <span>14 Tage kostenlos testen</span>
               </div>
               <div className="flex items-center justify-center gap-2">
-                <CheckCircle className="h-5 w-5 text-green-300" />
+                <CheckCircle className="h-5 w-5 text-indigo-200" />
                 <span>Keine Kreditkarte nötig</span>
               </div>
               <div className="flex items-center justify-center gap-2">
-                <CheckCircle className="h-5 w-5 text-green-300" />
+                <CheckCircle className="h-5 w-5 text-indigo-200" />
                 <span>In 2 Minuten startklar</span>
               </div>
             </div>

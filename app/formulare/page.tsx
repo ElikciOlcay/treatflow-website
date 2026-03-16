@@ -174,6 +174,15 @@ export default function FormularePage() {
                             </div>
                         </div>
                     </div>
+
+                    {/* Emotionales Bild: Formulare im Studio */}
+                    <div className="max-w-7xl mx-auto mt-16">
+                        <img
+                            src="/images/formulare-dame-tablet.jpg"
+                            alt="Kundin füllt digitales Formular am Tablet aus"
+                            className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]"
+                        />
+                    </div>
                 </div>
             </section>
 
@@ -337,6 +346,42 @@ export default function FormularePage() {
                             <h3 className="font-bold text-gray-900 mb-2">Nägel</h3>
                             <p className="text-sm text-gray-600">Nageldesign, Nagelmodellage, Pflege und viele weitere</p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Verwandte Seiten / Cluster-Verlinkung */}
+            <section className="py-20 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            Verwandte Funktionen für dein Studio
+                        </h2>
+                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                            Treatflow vereint Formulare, Terminkalender, Kundenverwaltung und Dokumentation in einer Plattform.
+                        </p>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <Link href="/kosmetikstudio-software" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Kosmetikstudio Software</span>
+                            <span className="text-sm text-gray-600 block mb-2">All-in-One für dein Studio</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/anamnesebogen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Anamnesebogen Kosmetik</span>
+                            <span className="text-sm text-gray-600 block mb-2">Digitale Vorlagen & Einwilligungen</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/kundenkartei-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Kundenkartei</span>
+                            <span className="text-sm text-gray-600 block mb-2">Kundendaten & Historie</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/nisv-dokumentation-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">NiSV-Dokumentation</span>
+                            <span className="text-sm text-gray-600 block mb-2">Behandlungen rechtssicher dokumentieren</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
                     </div>
                 </div>
             </section>

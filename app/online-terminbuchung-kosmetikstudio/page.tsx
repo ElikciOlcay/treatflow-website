@@ -54,6 +54,9 @@ export default function OnlineTerminbuchungKosmetikstudioPage() {
                             <a href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-orange-600 hover:text-orange-600 transition-colors duration-200">Beratung buchen</a>
                         </div>
                     </div>
+                    <div className="mt-12 max-w-5xl mx-auto">
+                        <img src="/images/funktionen/hero-online-buchung.jpg" alt="Termin gebucht – mehr Zeit für das Wesentliche" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                    </div>
                 </div>
             </section>
 

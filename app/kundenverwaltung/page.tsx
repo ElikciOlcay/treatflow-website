@@ -47,8 +47,12 @@ export default function KundenverwaltungPage() {
                         </p>
                     </div>
 
+                    <div className="mt-12 max-w-5xl mx-auto">
+                        <img src="/images/funktionen/hero-kundenverwaltung.jpg" alt="Gute Beziehung zu Kunden" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                    </div>
+
                     {/* Kundenverwaltung Screenshot */}
-                    <div className="max-w-5xl mx-auto">
+                    <div className="mt-12 max-w-5xl mx-auto">
                         <img
                             src="/images/mockups/kundenverwaltung-overview.png"
                             alt="Treatflow Kundenkartei - Übersichtliche Darstellung aller Kunden mit Suchfunktion und Detailansicht"
@@ -246,6 +250,42 @@ export default function KundenverwaltungPage() {
                 </div>
             </section>
 
+            {/* Verwandte Seiten / Cluster-Verlinkung */}
+            <section className="py-20 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                            Verwandte Funktionen für dein Studio
+                        </h2>
+                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                            Treatflow vereint Kundenverwaltung, Terminkalender, Formulare und Dokumentation in einer Plattform.
+                        </p>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <Link href="/kosmetikstudio-software" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Kosmetikstudio Software</span>
+                            <span className="text-sm text-gray-600 block mb-2">All-in-One für dein Studio</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/kundenkartei-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Kundenkartei Kosmetik</span>
+                            <span className="text-sm text-gray-600 block mb-2">Kundendaten & Behandlungshistorie</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/terminsoftware-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Terminsoftware</span>
+                            <span className="text-sm text-gray-600 block mb-2">Online-Buchung & Kalender</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/anamnesebogen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Anamnesebögen</span>
+                            <span className="text-sm text-gray-600 block mb-2">Formulare & Einwilligungen</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -274,6 +314,22 @@ export default function KundenverwaltungPage() {
                     </div>
                 </div>
             </section>
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'SoftwareApplication',
+                        name: 'Treatflow Kundenverwaltung',
+                        applicationCategory: 'BusinessApplication',
+                        operatingSystem: 'Web',
+                        description: 'Digitale Kundenkartei für Kosmetikstudios mit Behandlungshistorie, Notizen und Fotos.',
+                        url: 'https://www.treatflow.io/kundenverwaltung',
+                        offers: { '@type': 'Offer', price: '39', priceCurrency: 'EUR' },
+                    }),
+                }}
+            />
 
             <Footer />
         </div>

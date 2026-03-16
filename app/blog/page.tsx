@@ -1,5 +1,6 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import BlogCategoryFilter from '../components/BlogCategoryFilter';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, TrendingUp, Users, Sparkles } from 'lucide-react';
 
@@ -205,17 +206,119 @@ const blogPosts = [
         publishDate: '22. Dezember 2024',
         featured: false,
         image: '/images/blog/ki-kosmetikstudio-hautanalyse.jpg'
+    },
+    {
+        slug: 'no-shows-reduzieren-kosmetikstudio',
+        title: 'No-Shows im Kosmetikstudio reduzieren: Was wirklich hilft',
+        excerpt: 'Leere Stühle nerven. Mit Erinnerungen, Buchungsbestätigung und ein paar Kniffen senkst du verpasste Termine spürbar – ohne großen Aufwand.',
+        category: 'Automatisierung',
+        readTime: '6 min',
+        publishDate: '8. Januar 2025',
+        featured: false,
+        image: '/images/blog/no-shows-reduzieren.jpg'
+    },
+    {
+        slug: 'anamnese-formulare-digital-kosmetik',
+        title: 'Anamnese digital: Formulare im Kosmetikstudio rechtssicher nutzen',
+        excerpt: 'Anamnese und Einwilligung digital statt auf Papier. Was du beachten musst, damit es rechtssicher ist und im Alltag funktioniert.',
+        category: 'Recht & Compliance',
+        readTime: '5 min',
+        publishDate: '5. Januar 2025',
+        featured: false,
+        image: '/images/blog/anamnese-digital.jpg'
+    },
+    {
+        slug: 'google-business-profil-kosmetikstudio',
+        title: 'Google Business Profil für Kosmetikstudios: Sichtbar werden',
+        excerpt: 'Mit einem gepflegten Google-Profil findest du leichter neue Kundinnen. So richtest du es ein und nutzt es im Alltag.',
+        category: 'Marketing',
+        readTime: '5 min',
+        publishDate: '28. Dezember 2024',
+        featured: false,
+        image: '/images/blog/google-business-kosmetik.jpg'
+    },
+    {
+        slug: 'wochenplanung-termine-kosmetikstudio',
+        title: 'Wochenplanung im Kosmetikstudio: Termine im Griff',
+        excerpt: 'Wie du deine Woche so planst, dass du genug Termine hast, aber nicht im Dauerstress. Praktische Tipps aus dem Studio-Alltag.',
+        category: 'Organisation',
+        readTime: '4 min',
+        publishDate: '20. Dezember 2024',
+        featured: false,
+        image: '/images/blog/wochenplanung-termine.jpg'
+    },
+    {
+        slug: 'dsgvo-datenschutz-kosmetikstudio',
+        title: 'DSGVO im Kosmetikstudio: Datenschutz ohne Panik',
+        excerpt: 'Kundendaten, Fotos, Anamnese – was du speichern darfst, was du brauchst und wie du DSGVO-konform bleibst.',
+        category: 'Recht & Compliance',
+        readTime: '6 min',
+        publishDate: '14. Dezember 2024',
+        featured: false,
+        image: '/images/blog/dsgvo-kosmetikstudio.jpg'
+    },
+    {
+        slug: 'erste-kundinnen-gewinnen-kosmetikstudio',
+        title: 'Erste Kundinnen gewinnen: Tipps für neue Kosmetikstudios',
+        excerpt: 'Neu eröffnet und noch wenig gebucht? So kommst du zu den ersten Terminen – ohne teures Marketing.',
+        category: 'Marketing',
+        readTime: '5 min',
+        publishDate: '10. Dezember 2024',
+        featured: false,
+        image: '/images/blog/erste-kundinnen-gewinnen.jpg'
+    },
+    {
+        slug: 'behandlungsraum-einrichten-kosmetikstudio',
+        title: 'Behandlungsraum einrichten: Worauf es ankommt',
+        excerpt: 'Licht, Stauraum, Hygiene – wie du deinen Behandlungsraum so gestaltest, dass du gut arbeitest und Kundinnen sich wohlfühlen.',
+        category: 'Fachkompetenz',
+        readTime: '4 min',
+        publishDate: '5. Dezember 2024',
+        featured: false,
+        image: '/images/blog/behandlungsraum-einrichten.jpg'
+    },
+    {
+        slug: 'lash-wimpern-kundenbindung',
+        title: 'Lash-Kundinnen binden: Wimpernverlängerung und Wiederkehr',
+        excerpt: 'Refill-Intervalle, Erinnerungen und persönliche Notizen – so behältst du deine Lash-Kundinnen und füllst den Kalender.',
+        category: 'Kundenbindung',
+        readTime: '5 min',
+        publishDate: '28. November 2024',
+        featured: false,
+        image: '/images/blog/lash-kundenbindung.jpg'
+    },
+    {
+        slug: 'urlaub-vertretung-kosmetikstudio',
+        title: 'Urlaub und Vertretung im Kosmetikstudio: So planst du durch',
+        excerpt: 'Wer vertritt dich, wer übernimmt Termine, und wie bleiben Kundinnen informiert? Tipps für entspannte Auszeiten.',
+        category: 'Business',
+        readTime: '4 min',
+        publishDate: '22. November 2024',
+        featured: false,
+        image: '/images/blog/urlaub-vertretung-studio.jpg'
+    },
+    {
+        slug: 'sms-erinnerungen-termine-kosmetikstudio',
+        title: 'SMS-Erinnerungen für Termine: Warum sie im Studio ankommen',
+        excerpt: 'E-Mail oder SMS? Warum viele Kundinnen Erinnerungen per SMS eher lesen und was du bei der Formulierung beachten solltest.',
+        category: 'Automatisierung',
+        readTime: '4 min',
+        publishDate: '18. November 2024',
+        featured: false,
+        image: '/images/blog/sms-erinnerungen-termine.jpg'
     }
 ];
 
 const categories = [
-    { name: 'Alle', count: 15, active: true },
-    { name: 'Business', count: 6, active: false },
-    { name: 'Marketing', count: 3, active: false },
-    { name: 'Fachkompetenz', count: 2, active: false },
-    { name: 'Recht & Compliance', count: 2, active: false },
+    { name: 'Alle', count: 25, active: true },
+    { name: 'Business', count: 7, active: false },
+    { name: 'Marketing', count: 5, active: false },
+    { name: 'Fachkompetenz', count: 3, active: false },
+    { name: 'Recht & Compliance', count: 4, active: false },
     { name: 'Digitalisierung', count: 2, active: false },
-    { name: 'Kundenbindung', count: 1, active: false }
+    { name: 'Kundenbindung', count: 2, active: false },
+    { name: 'Organisation', count: 2, active: false },
+    { name: 'Automatisierung', count: 3, active: false }
 ];
 
 
@@ -329,65 +432,10 @@ export default function BlogPage() {
             {/* Categories & Regular Posts */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    {/* Categories */}
-                    <div className="flex flex-wrap justify-center gap-4 mb-16">
-                        {categories.map((category) => (
-                            <button
-                                key={category.name}
-                                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${category.active
-                                    ? 'bg-indigo-600 text-white shadow-lg'
-                                    : 'bg-white text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 border border-gray-200'
-                                    }`}
-                            >
-                                {category.name} ({category.count})
-                            </button>
-                        ))}
-                    </div>
-
-                    {/* Regular Posts Grid */}
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {regularPosts.map((post) => (
-                            <article key={post.slug} className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                                <div className="aspect-video overflow-hidden">
-                                    <img
-                                        src={post.image}
-                                        alt={post.title}
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                                    />
-                                </div>
-                                <div className="p-6">
-                                    <div className="flex items-center gap-3 mb-3">
-                                        <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">
-                                            {post.category}
-                                        </span>
-                                        <div className="flex items-center text-gray-500 text-xs">
-                                            <Clock className="h-3 w-3 mr-1" />
-                                            {post.readTime}
-                                        </div>
-                                    </div>
-                                    <h3 className="text-lg font-bold text-gray-900 mb-3 leading-tight">
-                                        {post.title}
-                                    </h3>
-                                    <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                                        {post.excerpt.substring(0, 120)}...
-                                    </p>
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-center text-gray-500 text-xs">
-                                            <Calendar className="h-3 w-3 mr-1" />
-                                            {post.publishDate}
-                                        </div>
-                                        <Link
-                                            href={`/blog/${post.slug}`}
-                                            className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium text-sm"
-                                        >
-                                            Lesen
-                                            <ArrowRight className="ml-1 h-3 w-3" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </article>
-                        ))}
-                    </div>
+                    <BlogCategoryFilter
+                        posts={blogPosts}
+                        categories={categories.map(({ name, count }) => ({ name, count }))}
+                    />
                 </div>
             </section>
 
