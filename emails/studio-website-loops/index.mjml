@@ -1,0 +1,189 @@
+<mjml>
+  <mj-head>
+    <mj-title>Neu bei Treatflow: Individuelle Studio-Websites</mj-title>
+    <mj-preview>
+      Sieh dir unsere Demo und die echte Referenz Skinlux an – und sichere dir als Treatflow-Kunde 200 € Guthaben.
+    </mj-preview>
+    <mj-attributes>
+      <mj-all font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" />
+      <mj-text color="#374151" font-size="16px" line-height="1.65" padding="0 0 16px 0" />
+      <mj-section padding="24px 20px" background-color="#ffffff" />
+      <mj-button
+        background-color="#4F46E5"
+        color="#ffffff"
+        font-weight="600"
+        border-radius="12px"
+        inner-padding="14px 28px"
+        font-size="16px"
+        align="center"
+      />
+      <mj-divider border-color="#E5E7EB" border-width="1px" padding="16px 0" />
+    </mj-attributes>
+    <mj-style>
+      .brand { font-size: 22px; font-weight: 700; color: #4F46E5; letter-spacing: -0.02em; }
+      .headline { font-size: 26px; font-weight: 700; color: #111827; line-height: 1.3; }
+      .subtle { color: #6B7280; font-size: 14px; line-height: 1.5; }
+      .label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #4F46E5; }
+      .card-title { font-size: 17px; font-weight: 700; color: #111827; }
+      a { color: #4F46E5; }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#F3F4F6" width="600px">
+    <!-- Header -->
+    <mj-section padding="32px 20px 16px 20px" background-color="#F3F4F6">
+      <mj-column>
+        <mj-text css-class="brand" padding="0 0 8px 0">Treatflow</mj-text>
+        <mj-text css-class="label" padding="0 0 12px 0">Neuer Service</mj-text>
+        <mj-text css-class="headline" padding="0 0 12px 0">
+          Individuelle Websites für Kosmetikstudios
+        </mj-text>
+        <mj-text padding="0 0 0 0">
+          Professionell, mobil optimiert und auf <strong>Anfragen &amp; Buchungen</strong> ausgelegt – mit
+          Treatflow-Buchungsintegration, wenn du möchtest.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero-Bild Service -->
+    <mj-section padding="0 20px 8px 20px" background-color="#F3F4F6">
+      <mj-column>
+        <mj-image
+          src="https://www.treatflow.io/images/og-website-service.jpg"
+          alt="Treatflow: Websites für Kosmetikstudios"
+          href="https://www.treatflow.io/website-fuer-kosmetikstudios"
+          border-radius="16px"
+          padding="0"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Primärer CTA -->
+    <mj-section padding="8px 20px 24px 20px" background-color="#F3F4F6">
+      <mj-column>
+        <mj-button
+          href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+        >
+          Kostenlos beraten lassen
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Referenzen: 2 Spalten -->
+    <mj-section padding="8px 20px 8px 20px" background-color="#EEF2FF">
+      <mj-column>
+        <mj-text css-class="label" padding="0 0 8px 0">Referenzen &amp; Demo</mj-text>
+        <mj-text css-class="headline" font-size="22px" padding="0 0 8px 0">
+          Demo &amp; echte Kundenreferenz
+        </mj-text>
+        <mj-text padding="0 0 16px 0">
+          So kann eine Studio-Website aussehen: unsere <strong>interaktive Demo</strong> und eine <strong>live geschaltete Website</strong>, die wir für Skinlux umgesetzt haben.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="16px 20px 24px 20px" background-color="#EEF2FF">
+      <mj-group>
+        <mj-column width="50%" padding="8px">
+          <mj-image
+            src="https://www.treatflow.io/images/demo/demo-hero.png"
+            alt="Demo: Skin Atelier München"
+            href="https://www.treatflow.io/demo/skin-atelier"
+            border-radius="12px"
+            padding="0 0 12px 0"
+          />
+          <mj-text css-class="card-title" padding="0 0 8px 0">Demo-Website</mj-text>
+          <mj-text font-size="14px" color="#4B5563" padding="0 0 12px 0">
+            <strong>Skin Atelier</strong> – fiktives Premium-Studio mit Behandlungen, FAQ, Bewertungen und Buchungsfokus.
+          </mj-text>
+          <mj-button
+            href="https://www.treatflow.io/demo/skin-atelier"
+            background-color="#4F46E5"
+            font-size="14px"
+            inner-padding="12px 20px"
+          >
+            Demo live ansehen
+          </mj-button>
+          <mj-text font-size="12px" color="#6B7280" padding="12px 0 0 0">
+            treatflow.io/demo/skin-atelier
+          </mj-text>
+        </mj-column>
+        <mj-column width="50%" padding="8px">
+          <mj-raw>
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0 0 12px 0;">
+              <tr>
+                <td align="center" bgcolor="#111827" style="background-color:#111827;border-radius:12px;padding:36px 24px;">
+                  <a href="https://bischofshofen.skinlux.at/" style="text-decoration:none;display:inline-block;line-height:0;">
+                    <img src="https://bischofshofen.skinlux.at/_next/image?url=%2Fimages%2Flogo%2Fskinlux-logo-white.png&amp;w=256&amp;q=75" width="200" height="48" alt="Skinlux Bischofshofen" style="display:block;width:200px;max-width:100%;height:auto;border:0;" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </mj-raw>
+          <mj-text css-class="card-title" padding="0 0 8px 0">Echte Referenz</mj-text>
+          <mj-text font-size="14px" color="#4B5563" padding="0 0 12px 0">
+            <strong>Skinlux Bischofshofen</strong> – Medical Beauty mit Laser, HydraFacial, Microneedling, Angeboten und Online-Buchung.
+          </mj-text>
+          <mj-button
+            href="https://bischofshofen.skinlux.at/"
+            background-color="#111827"
+            font-size="14px"
+            inner-padding="12px 20px"
+          >
+            Referenz live ansehen
+          </mj-button>
+          <mj-text font-size="12px" color="#6B7280" padding="12px 0 0 0">
+            bischofshofen.skinlux.at
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <!-- Leistungen -->
+    <mj-section padding="24px 20px 8px 20px">
+      <mj-column>
+        <mj-text css-class="headline" font-size="22px" padding="0 0 16px 0">Das steckt drin</mj-text>
+        <mj-text padding="0 0 8px 0">• Individuelles Design (kein Baukasten-Look)</mj-text>
+        <mj-text padding="0 0 8px 0">• Mobil optimiert · SEO-Grundlage · schnelle Ladezeiten</mj-text>
+        <mj-text padding="0 0 8px 0">• Auf Buchungen &amp; Kontakt ausgelegt</mj-text>
+        <mj-text padding="0 0 8px 0">• Treatflow-Buchungslink &amp; Behandlungen integrierbar</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Treatflow-Vorteil -->
+    <mj-section padding="8px 20px 24px 20px">
+      <mj-column background-color="#4F46E5" border-radius="16px" padding="24px 20px">
+        <mj-text color="#E0E7FF" font-size="12px" font-weight="700" text-transform="uppercase" letter-spacing="0.06em" padding="0 0 8px 0">
+          Nur für Treatflow-Kunden
+        </mj-text>
+        <mj-text color="#ffffff" font-size="22px" font-weight="700" padding="0 0 12px 0">
+          200 € Treatflow-Guthaben geschenkt
+        </mj-text>
+        <mj-text color="#C7D2FE" font-size="15px" padding="0 0 20px 0">
+          Wenn du deine Studio-Website bei uns beauftragst, gibt es zusätzlich Guthaben für dein Treatflow-Abo.
+        </mj-text>
+        <mj-button
+          href="https://www.treatflow.io/website-fuer-kosmetikstudios"
+          background-color="#ffffff"
+          color="#4F46E5"
+        >
+          Alle Details zur Website
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Sekundär -->
+    <mj-section padding="8px 20px 32px 20px">
+      <mj-column>
+        <mj-divider />
+        <mj-text align="center" padding="8px 0 16px 0">
+          Lieber schriftlich? Schreib uns an
+          <a href="mailto:hello@treatflow.io?subject=Website-Projekt%20anfragen" style="color: #4F46E5; font-weight: 600;">hello@treatflow.io</a>
+          mit dem Betreff „Website-Projekt anfragen“.
+        </mj-text>
+        <mj-text align="center" css-class="subtle" padding="0">
+          Treatflow · Software &amp; Websites für Kosmetik- und Beauty-Studios
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
