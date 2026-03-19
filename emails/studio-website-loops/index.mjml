@@ -2,7 +2,7 @@
   <mj-head>
     <mj-title>Neu bei Treatflow: Individuelle Studio-Websites</mj-title>
     <mj-preview>
-      Sieh dir unsere Demo und die echte Referenz Skinlux an – und sichere dir als Treatflow-Kunde 200 € Guthaben.
+      Interaktive Studio-Demo ansehen – und als Treatflow-Kunde 200 € Guthaben sichern.
     </mj-preview>
     <mj-attributes>
       <mj-all font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" />
@@ -38,22 +38,10 @@
           Individuelle Websites für Kosmetikstudios
         </mj-text>
         <mj-text padding="0 0 0 0">
-          Professionell, mobil optimiert und auf <strong>Anfragen &amp; Buchungen</strong> ausgelegt – mit
-          Treatflow-Buchungsintegration, wenn du möchtest.
+          Hallo,<br /><br />
+          <strong>Neu bei Treatflow:</strong> Wir bauen <strong>eigene Websites für Kosmetik-, Laser- und Beauty-Studios</strong> – individuell gestaltet, nicht aus dem Baukasten. Ziel: eine professionelle Online-Präsenz, die Vertrauen schafft und <strong>mehr Terminanfragen</strong> über deine eigene Seite bringt.<br /><br />
+          Mobil optimiert, mit SEO-Grundlage und klaren <strong>Call-to-Actions</strong> zu Kontakt oder Buchung. <strong>Voll mit Treatflow kompatibel:</strong> Buchungslink, Behandlungen und Öffnungszeiten kommen direkt aus deinem Treatflow-Setup – ein durchgängiges Erlebnis von der Website bis zum gebuchten Termin in Treatflow.
         </mj-text>
-      </mj-column>
-    </mj-section>
-
-    <!-- Hero-Bild Service -->
-    <mj-section padding="0 20px 8px 20px" background-color="#F3F4F6">
-      <mj-column>
-        <mj-image
-          src="https://www.treatflow.io/images/og-website-service.jpg"
-          alt="Treatflow: Websites für Kosmetikstudios"
-          href="https://www.treatflow.io/website-fuer-kosmetikstudios"
-          border-radius="16px"
-          padding="0"
-        />
       </mj-column>
     </mj-section>
 
@@ -68,74 +56,44 @@
       </mj-column>
     </mj-section>
 
-    <!-- Referenzen: 2 Spalten -->
+    <!-- Live-Demo -->
     <mj-section padding="8px 20px 8px 20px" background-color="#EEF2FF">
       <mj-column>
-        <mj-text css-class="label" padding="0 0 8px 0">Referenzen &amp; Demo</mj-text>
+        <mj-text css-class="label" padding="0 0 8px 0">Live-Demo</mj-text>
         <mj-text css-class="headline" font-size="22px" padding="0 0 8px 0">
-          Demo &amp; echte Kundenreferenz
+          So kann deine Studio-Website aussehen
         </mj-text>
         <mj-text padding="0 0 16px 0">
-          So kann eine Studio-Website aussehen: unsere <strong>interaktive Demo</strong> und eine <strong>live geschaltete Website</strong>, die wir für Skinlux umgesetzt haben.
+          Hier ein <strong>interaktives Beispiel</strong> (fiktives Premium-Studio): Behandlungen, FAQ, Bewertungen und Fokus auf <strong>Online-Buchung</strong> – so in etwa planen wir auch deine Seite.
         </mj-text>
       </mj-column>
     </mj-section>
 
     <mj-section padding="16px 20px 24px 20px" background-color="#EEF2FF">
-      <mj-group>
-        <mj-column width="50%" padding="8px">
-          <mj-image
-            src="https://www.treatflow.io/images/demo/demo-hero.png"
-            alt="Demo: Skin Atelier München"
-            href="https://www.treatflow.io/demo/skin-atelier"
-            border-radius="12px"
-            padding="0 0 12px 0"
-          />
-          <mj-text css-class="card-title" padding="0 0 8px 0">Demo-Website</mj-text>
-          <mj-text font-size="14px" color="#4B5563" padding="0 0 12px 0">
-            <strong>Skin Atelier</strong> – fiktives Premium-Studio mit Behandlungen, FAQ, Bewertungen und Buchungsfokus.
-          </mj-text>
-          <mj-button
-            href="https://www.treatflow.io/demo/skin-atelier"
-            background-color="#4F46E5"
-            font-size="14px"
-            inner-padding="12px 20px"
-          >
-            Demo live ansehen
-          </mj-button>
-          <mj-text font-size="12px" color="#6B7280" padding="12px 0 0 0">
-            treatflow.io/demo/skin-atelier
-          </mj-text>
-        </mj-column>
-        <mj-column width="50%" padding="8px">
-          <mj-raw>
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:0 0 12px 0;">
-              <tr>
-                <td align="center" bgcolor="#111827" style="background-color:#111827;border-radius:12px;padding:36px 24px;">
-                  <a href="https://bischofshofen.skinlux.at/" style="text-decoration:none;display:inline-block;line-height:0;">
-                    <img src="https://bischofshofen.skinlux.at/_next/image?url=%2Fimages%2Flogo%2Fskinlux-logo-white.png&amp;w=256&amp;q=75" width="200" height="48" alt="Skinlux Bischofshofen" style="display:block;width:200px;max-width:100%;height:auto;border:0;" />
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </mj-raw>
-          <mj-text css-class="card-title" padding="0 0 8px 0">Echte Referenz</mj-text>
-          <mj-text font-size="14px" color="#4B5563" padding="0 0 12px 0">
-            <strong>Skinlux Bischofshofen</strong> – Medical Beauty mit Laser, HydraFacial, Microneedling, Angeboten und Online-Buchung.
-          </mj-text>
-          <mj-button
-            href="https://bischofshofen.skinlux.at/"
-            background-color="#111827"
-            font-size="14px"
-            inner-padding="12px 20px"
-          >
-            Referenz live ansehen
-          </mj-button>
-          <mj-text font-size="12px" color="#6B7280" padding="12px 0 0 0">
-            bischofshofen.skinlux.at
-          </mj-text>
-        </mj-column>
-      </mj-group>
+      <mj-column>
+        <mj-image
+          src="https://www.treatflow.io/images/demo/demo-skin-atelier-mockup.png"
+          alt="Demo Skin Atelier – Website-Mockup (iMac)"
+          href="https://www.treatflow.io/demo/skin-atelier"
+          border-radius="12px"
+          padding="0 0 12px 0"
+        />
+        <mj-text css-class="card-title" padding="0 0 8px 0">Demo „Skin Atelier“</mj-text>
+        <mj-text font-size="14px" color="#4B5563" padding="0 0 12px 0">
+          Fiktives Premium-Studio mit Behandlungen, FAQ, Bewertungen und Buchungsfokus – zum Durchklicken.
+        </mj-text>
+        <mj-button
+          href="https://www.treatflow.io/demo/skin-atelier"
+          background-color="#4F46E5"
+          font-size="14px"
+          inner-padding="12px 20px"
+        >
+          Demo live ansehen
+        </mj-button>
+        <mj-text font-size="12px" color="#6B7280" padding="12px 0 0 0">
+          treatflow.io/demo/skin-atelier
+        </mj-text>
+      </mj-column>
     </mj-section>
 
     <!-- Leistungen -->
@@ -145,7 +103,7 @@
         <mj-text padding="0 0 8px 0">• Individuelles Design (kein Baukasten-Look)</mj-text>
         <mj-text padding="0 0 8px 0">• Mobil optimiert · SEO-Grundlage · schnelle Ladezeiten</mj-text>
         <mj-text padding="0 0 8px 0">• Auf Buchungen &amp; Kontakt ausgelegt</mj-text>
-        <mj-text padding="0 0 8px 0">• Treatflow-Buchungslink &amp; Behandlungen integrierbar</mj-text>
+        <mj-text padding="0 0 8px 0">• Voll mit Treatflow kompatibel (Buchungslink, Behandlungen, Öffnungszeiten)</mj-text>
       </mj-column>
     </mj-section>
 
