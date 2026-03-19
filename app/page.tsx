@@ -385,6 +385,57 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Website-Service Teaser */}
+        <section className="py-20 bg-gradient-to-b from-white to-gray-50/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-3xl p-8 lg:p-14 text-white relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
+              <div className="relative grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                  <div className="inline-flex items-center gap-2 bg-white/15 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    <Sparkles className="h-4 w-4" />
+                    Neu: Website-Service
+                  </div>
+                  <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+                    Individuelle Websites für dein Studio
+                  </h2>
+                  <p className="text-lg text-indigo-100 leading-relaxed mb-6">
+                    Dein Studio verdient mehr als eine Baukasten-Website. Wir erstellen professionelle,
+                    individuelle Websites, die auf Buchungen und Neukundengewinnung optimiert sind.
+                  </p>
+                  <div className="space-y-3 mb-8">
+                    {[
+                      'Individuelles Design, mobil optimiert',
+                      'Auf Anfragen und Buchungen ausgelegt',
+                      'Treatflow-Buchungslink direkt integriert',
+                    ].map((item, i) => (
+                      <div key={i} className="flex items-center gap-3">
+                        <CheckCircle className="h-5 w-5 text-indigo-200 flex-shrink-0" />
+                        <span className="text-indigo-50">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <Link
+                    href="/website-fuer-kosmetikstudios"
+                    className="inline-flex items-center bg-white text-indigo-600 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  >
+                    Mehr erfahren
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </div>
+                <div className="hidden lg:flex flex-col items-center lg:items-end gap-6">
+                  <img
+                    src="/images/demo/demo-hero.png"
+                    alt="Beispiel Studio-Website von Treatflow"
+                    className="w-full max-w-sm rounded-2xl border border-white/20 shadow-xl"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <PricingSection />
         <TestimonialsSection />
         <FAQSection />
@@ -408,6 +459,7 @@ export default function Home() {
               <Link href="/blog/beste-kosmetikstudio-software-2026" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Beste Kosmetikstudio Software 2026</Link>
               <Link href="/blog/online-buchungssystem-vorteile" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Vorteile eines Online-Buchungssystems</Link>
               <Link href="/blog/behandlungsdokumentation-nisv-konform" className="hover:text-indigo-600 transition-colors underline underline-offset-4">NiSV-konform dokumentieren</Link>
+              <Link href="/website-fuer-kosmetikstudios" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Website für Kosmetikstudios</Link>
             </div>
           </div>
         </section>

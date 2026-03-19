@@ -62,6 +62,7 @@ export default function Footer() {
               <li><a href="/#pricing" className="text-gray-400 hover:text-white transition-colors">Preise</a></li>
               <li><Link href="/kosmetikstudio-software-vergleich" className="text-gray-400 hover:text-white transition-colors">Software-Vergleich</Link></li>
               <li><Link href="/shop" className="text-gray-400 hover:text-white transition-colors">Shop</Link></li>
+              <li><Link href="/website-fuer-kosmetikstudios" className="text-gray-400 hover:text-white transition-colors">Studio-Website</Link></li>
               <li><a href="https://app.treatflow.io/auth/register" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Kostenlos testen</a></li>
               <li><a href="https://app.treatflow.io/auth/login" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Login</a></li>
             </ul>

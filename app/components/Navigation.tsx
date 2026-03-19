@@ -1,7 +1,7 @@
 import {
     ChevronDown, Calendar, Users, FileText, ClipboardCheck, Link2,
     Bell, Shield, BarChart3, ShoppingBag, Sparkles, Zap, Palette,
-    Stethoscope, Pen, Gem, Eye, Waves, Hand
+    Stethoscope, Pen, Gem, Eye, Waves, Hand, Globe
 } from "lucide-react";
 import Link from 'next/link';
 import MobileMenu from "./MobileMenu";
@@ -68,7 +68,7 @@ export default function Navigation() {
                                         </Link>
                                     ))}
                                 </div>
-                                <div className="border-t border-gray-100 mt-3 pt-3">
+                                <div className="border-t border-gray-100 mt-3 pt-3 grid grid-cols-2 gap-1">
                                     <Link
                                         href="/shop"
                                         className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
@@ -79,6 +79,18 @@ export default function Navigation() {
                                         <div>
                                             <div className="text-sm font-medium text-gray-900">Shop</div>
                                             <div className="text-xs text-gray-500 mt-0.5">Vorlagen und Formularpakete</div>
+                                        </div>
+                                    </Link>
+                                    <Link
+                                        href="/website-fuer-kosmetikstudios"
+                                        className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                                    >
+                                        <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 text-indigo-600 bg-indigo-100">
+                                            <Globe className="h-4 w-4" />
+                                        </div>
+                                        <div>
+                                            <div className="text-sm font-medium text-gray-900">Studio-Website</div>
+                                            <div className="text-xs text-gray-500 mt-0.5">Individuelle Website ab 1.000 Euro</div>
                                         </div>
                                     </Link>
                                 </div>

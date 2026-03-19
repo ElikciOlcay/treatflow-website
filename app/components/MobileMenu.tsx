@@ -4,7 +4,7 @@ import { useState } from 'react';
 import {
     Menu, X, Calendar, Users, FileText, ClipboardCheck, Link2,
     Bell, Shield, BarChart3, ShoppingBag, Sparkles, Zap, Palette,
-    Stethoscope, Pen, ChevronDown, Gem, Eye, Waves, Hand
+    Stethoscope, Pen, ChevronDown, Gem, Eye, Waves, Hand, Globe
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -18,6 +18,7 @@ const funktionen = [
     { href: '/nisv-dokumentation', label: 'NiSV-Dokumentation', icon: Shield, color: 'text-teal-600 bg-teal-100' },
     { href: '/kosmetikstudio-software-vergleich', label: 'Software-Vergleich', icon: BarChart3, color: 'text-gray-600 bg-gray-100' },
     { href: '/shop', label: 'Shop', icon: ShoppingBag, color: 'text-amber-600 bg-amber-100' },
+    { href: '/website-fuer-kosmetikstudios', label: 'Studio-Website', icon: Globe, color: 'text-indigo-600 bg-indigo-100' },
 ];
 
 const branchen = [

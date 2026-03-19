@@ -231,6 +231,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.7,
         },
+        {
+            url: `${baseUrl}/website-fuer-kosmetikstudios`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
     ]
 
     // Blog-Seiten
