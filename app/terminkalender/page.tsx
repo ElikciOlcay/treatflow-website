@@ -4,9 +4,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Terminplaner App für Kosmetikstudios - Terminkalender & Online-Buchungen | Treatflow',
-    description: 'Beste Terminplaner-App für Kosmetikstudio: Terminkalender mit Online-Buchung, SMS-Bestätigungen, Erinnerungen per E-Mail und SMS und 24/7 Buchungen. Software Kosmetik für Terminverwaltung.',
-    keywords: ['Terminplaner App Kosmetikstudio', 'beste Terminplaner App für Kosmetikstudio', 'Terminkalender Kosmetik', 'Online Buchungssystem', 'Kosmetikstudio Terminverwaltung', 'Automatische Erinnerungen', 'SMS Terminerinnerung', 'SMS Terminbestätigung Kosmetik', 'Beauty Salon Software'],
+    title: 'Terminbuchung Kosmetikstudio - Terminkalender & Online-Buchungen | Treatflow',
+    description: 'Terminbuchung für Kosmetikstudio mit digitalem Terminkalender, Online-Buchungen und automatischen Erinnerungen per E-Mail und SMS.',
+    keywords: ['Terminbuchung Kosmetikstudio', 'Terminplaner App Kosmetikstudio', 'Terminkalender Kosmetikstudio', 'Online Buchungssystem', 'Kosmetikstudio Terminverwaltung', 'Automatische Erinnerungen', 'SMS Terminerinnerung', 'SMS Terminbestätigung Kosmetik', 'Beauty Salon Software'],
     alternates: {
         canonical: 'https://www.treatflow.io/terminkalender',
     },

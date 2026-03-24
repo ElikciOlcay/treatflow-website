@@ -4,9 +4,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Behandlungsdokumentation im Kosmetikstudio – mit Vorher-Nachher-Fotos & Notizen | Treatflow',
-    description: 'Halte jede Behandlung strukturiert fest und finde Details sofort wieder. Ideal für Qualität, Nachvollziehbarkeit und Studio-Standards. NiSV-konform.',
-    keywords: ['Behandlungsdokumentation Kosmetikstudio', 'Behandlungsdokumentation Kosmetik', 'Vorher Nachher Fotos Software', 'Dokumentation App Kosmetikstudio', 'NiSV konform dokumentieren', 'Behandlungsdokumentation Software Kosmetik', 'NiSV konform Dokumentation', 'NiSV Dokumentation Software', 'Automatische Behandlungsnotizen', 'Rechtssichere Dokumentation'],
+    title: 'Behandlungsdokumentation Kosmetik - digital & NiSV-konform | Treatflow',
+    description: 'Digitale Behandlungsdokumentation Kosmetik mit Vorher-Nachher-Fotos, Notizen und Historie. Strukturiert, nachvollziehbar und NiSV-konform.',
+    keywords: ['Behandlungsdokumentation Kosmetik', 'Behandlungsdokumentation Kosmetikstudio', 'Vorher Nachher Fotos Software', 'Dokumentation App Kosmetikstudio', 'NiSV konform dokumentieren', 'Behandlungsdokumentation Software Kosmetik', 'NiSV Dokumentation Software', 'Automatische Behandlungsnotizen', 'Rechtssichere Dokumentation'],
     alternates: {
         canonical: 'https://www.treatflow.io/behandlungsdokumentation',
     },

@@ -8,12 +8,15 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Digitale Kundenkartei Kosmetikstudio - Kundenverwaltung | Treatflow',
-    description: 'Digitale Kundenkartei für Kosmetikstudios: Kundendaten, Behandlungshistorie, Fotos und Notizen zentral verwalten. DSGVO-konform. 14 Tage kostenlos testen.',
+    title: 'Digitale Kundenkartei Kosmetikstudio - Kundenkartei Software | Treatflow',
+    description: 'Digitale Kundenkartei und Kundenkartei Software für Kosmetikstudios: Kundendaten, Behandlungshistorie, Fotos und Notizen zentral verwalten. 14 Tage kostenlos testen.',
     keywords: [
         'Kundenkartei Kosmetik',
         'digitale Kundenkartei Kosmetik',
+        'Kundenkartei Software',
+        'Kundenkartei App',
         'Kundenkartei Kosmetik App',
+        'Kundenkartei kostenlos',
         'Kundenverwaltung Kosmetikstudio',
         'Kundenverwaltung Beauty Studio',
         'Kundenmanagement Kosmetik',
@@ -259,6 +262,10 @@ export default function KundenkarteiKosmetikstudioPage() {
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
                             Schluss mit Papierkarteien und Zettelwirtschaft. Treatflow bringt alle Kundendaten,
                             Behandlungshistorien und Fotos in eine zentrale, DSGVO-konforme Plattform.
+                        </p>
+                        <p className="text-sm text-gray-500 max-w-3xl mx-auto mb-8">
+                            Du suchst eine Kundenkartei Software oder Kundenkartei App für dein Kosmetikstudio?
+                            Hier findest du den direkten Vergleich zu papierbasierten und kostenlosen Lösungen.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a

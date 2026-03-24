@@ -4,9 +4,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Online-Terminbuchung fürs Kosmetikstudio – 24/7 Buchungslink ohne Telefonstress | Treatflow',
-    description: 'Deine Kunden buchen selbstständig, du erhältst Bestätigungen per E-Mail und SMS automatisch – ohne Doppelbuchungen. Starte jetzt mit Online-Buchungen.',
-    keywords: ['Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Terminbuchung Link Kosmetikstudio', 'Online Buchungssystem Kosmetik', 'Terminbuchungssoftware Kosmetik', 'Buchungssystem Kosmetik', '24/7 Terminbuchung', 'Kosmetikstudio Online Termin', 'Automatische Terminbestätigung', 'SMS Terminbestätigung', 'Buchungslink Beauty'],
+    title: 'Terminbuchung Kosmetikstudio online – 24/7 Buchungslink | Treatflow',
+    description: 'Terminbuchung Kosmetikstudio mit persönlichem Buchungslink: Kunden buchen selbstständig, Bestätigungen laufen automatisch, Doppelbuchungen werden verhindert.',
+    keywords: ['Terminbuchung Kosmetikstudio', 'Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Terminbuchung Link Kosmetikstudio', 'Terminbuchungssoftware Kosmetik', 'Buchungssystem Kosmetik', '24/7 Terminbuchung', 'Kosmetikstudio Online Termin', 'Automatische Terminbestätigung', 'SMS Terminbestätigung', 'Buchungslink Beauty'],
     alternates: {
         canonical: 'https://www.treatflow.io/online-buchungen',
     },

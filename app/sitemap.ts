@@ -183,6 +183,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/kundenkartei-software`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/anamnesebogen-kosmetikstudio`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
@@ -237,6 +243,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
+        {
+            url: `${baseUrl}/hygieneplan-kosmetikstudio-pdf`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/schoenheitssalon-software`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
     ]
 
     // Blog-Seiten
@@ -252,6 +270,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date('2026-03-15'),
             changeFrequency: 'monthly' as const,
             priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/blog/schoenheitssalon-software`,
+            lastModified: new Date('2026-03-24'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/software-kosmetikinstitut`,
+            lastModified: new Date('2026-03-24'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/terminbuchung-kosmetikstudio`,
+            lastModified: new Date('2026-03-24'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/kundenkartei-kosmetik`,
+            lastModified: new Date('2026-03-24'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/blog/behandlungsdokumentation-kosmetik`,
+            lastModified: new Date('2026-03-24'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
         },
         // SEO-optimierte Blog-Artikel mit canonical URLs
         {

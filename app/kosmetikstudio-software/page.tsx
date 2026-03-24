@@ -6,6 +6,12 @@ import Link from 'next/link';
 
 const clusterPages = [
     {
+        href: '/schoenheitssalon-software',
+        title: 'Schoenheitssalon Software',
+        description: 'Software-Landing fuer Beauty- und Schoenheitssalons',
+        icon: Star,
+    },
+    {
         href: '/terminsoftware-kosmetikstudio',
         title: 'Terminsoftware',
         description: 'Online-Buchung und digitaler Terminkalender',
@@ -333,7 +339,7 @@ export default function KosmetikstudioSoftwarePage() {
                             Treatflow bietet spezialisierte Lösungen für jeden Bereich deines Studios.
                         </p>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
                         {clusterPages.map((page) => (
                             <Link
                                 key={page.href}

@@ -9,7 +9,10 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const baseUrl = 'https://www.treatflow.io';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: {
     default: "Kosmetikstudio Software: Termine, Kunden & Dokumentation in einer App | Treatflow",
     template: "%s | Treatflow"
@@ -61,7 +64,6 @@ export const metadata: Metadata = {
   },
 };
 
-const baseUrl = 'https://www.treatflow.io';
 const organizationWebSiteSchema = {
   '@context': 'https://schema.org',
   '@graph': [

@@ -45,6 +45,7 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Branchen</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/kosmetikstudio-software" className="text-gray-400 hover:text-white transition-colors">Kosmetikstudios</Link></li>
+              <li><Link href="/schoenheitssalon-software" className="text-gray-400 hover:text-white transition-colors">Schönheitssalons</Link></li>
               <li><Link href="/laser-haarentfernung-software" className="text-gray-400 hover:text-white transition-colors">Laser & IPL</Link></li>
               <li><Link href="/permanent-makeup-software" className="text-gray-400 hover:text-white transition-colors">Permanent Makeup</Link></li>
               <li><Link href="/aesthetische-medizin-software" className="text-gray-400 hover:text-white transition-colors">Ästhetische Medizin</Link></li>
@@ -61,6 +62,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="/#pricing" className="text-gray-400 hover:text-white transition-colors">Preise</a></li>
               <li><Link href="/kosmetikstudio-software-vergleich" className="text-gray-400 hover:text-white transition-colors">Software-Vergleich</Link></li>
+              <li><Link href="/kundenkartei-software" className="text-gray-400 hover:text-white transition-colors">Kundenkartei Software</Link></li>
               <li><Link href="/shop" className="text-gray-400 hover:text-white transition-colors">Shop</Link></li>
               <li><Link href="/website-fuer-kosmetikstudios" className="text-gray-400 hover:text-white transition-colors">Studio-Website</Link></li>
               <li><a href="https://app.treatflow.io/auth/register" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Kostenlos testen</a></li>
@@ -73,6 +75,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/ueber-uns" className="text-gray-400 hover:text-white transition-colors">Über uns</Link></li>
               <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
+              <li><Link href="/hygieneplan-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Hygieneplan PDF</Link></li>
               <li><Link href="/kontakt" className="text-gray-400 hover:text-white transition-colors">Kontakt</Link></li>
             </ul>
             <h3 className="font-semibold mb-4 mt-8">Rechtliches</h3>

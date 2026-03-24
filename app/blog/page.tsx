@@ -28,6 +28,56 @@ export const metadata = {
 
 const blogPosts = [
     {
+        slug: 'terminbuchung-kosmetikstudio',
+        title: 'Terminbuchung Kosmetikstudio: So läuft dein Kalender endlich rund',
+        excerpt: 'Terminbuchung im Kosmetikstudio optimieren: weniger Ausfälle, bessere Auslastung und klarere Abläufe mit digitalem Buchungsprozess.',
+        category: 'Organisation',
+        readTime: '12 min',
+        publishDate: '24. März 2026',
+        featured: false,
+        image: '/images/blog/terminkalender.png'
+    },
+    {
+        slug: 'kundenkartei-kosmetik',
+        title: 'Kundenkartei Kosmetik: Digital statt Zettelchaos',
+        excerpt: 'Kundenkartei für Kosmetikstudios digital aufbauen: bessere Übersicht, schnellere Abläufe und saubere Dokumentation pro Kundin.',
+        category: 'Digitalisierung',
+        readTime: '11 min',
+        publishDate: '24. März 2026',
+        featured: false,
+        image: '/images/blog/anamnese-digital.jpg'
+    },
+    {
+        slug: 'behandlungsdokumentation-kosmetik',
+        title: 'Behandlungsdokumentation Kosmetik: So dokumentierst du sicher und schnell',
+        excerpt: 'Behandlungsdokumentation im Kosmetikstudio richtig aufsetzen: rechtssicher, übersichtlich und im Alltag schnell nutzbar.',
+        category: 'Recht & Compliance',
+        readTime: '12 min',
+        publishDate: '24. März 2026',
+        featured: false,
+        image: '/images/blog/nisv-dokumentation.jpg'
+    },
+    {
+        slug: 'schoenheitssalon-software',
+        title: 'Schönheitssalon Software: Was 2026 wirklich wichtig ist',
+        excerpt: 'Welche Schönheitssalon Software passt wirklich? Die wichtigsten Funktionen, typische Fehler und klare Auswahlkriterien für Studios.',
+        category: 'Software',
+        readTime: '8 min',
+        publishDate: '24. März 2026',
+        featured: false,
+        image: '/images/blog/beste-kosmetikstudio-software-2026.jpg'
+    },
+    {
+        slug: 'software-kosmetikinstitut',
+        title: 'Software Kosmetikinstitut: So findest du die passende Lösung',
+        excerpt: 'Software für Kosmetikinstitute im Vergleich: Welche Funktionen wirklich zählen und wie du typische Fehler bei der Umstellung vermeidest.',
+        category: 'Digitalisierung',
+        readTime: '7 min',
+        publishDate: '24. März 2026',
+        featured: false,
+        image: '/images/blog/online-buchung-vorteile.jpg'
+    },
+    {
         slug: 'beste-kosmetikstudio-software-2026',
         title: 'Beste Kosmetikstudio Software 2026 - Der ultimative Vergleich',
         excerpt: 'Welche Software eignet sich am besten für dein Kosmetikstudio? Wir vergleichen die besten Lösungen 2026 nach Funktionen, Preis und Bedienung.',
@@ -310,14 +360,15 @@ const blogPosts = [
 ];
 
 const categories = [
-    { name: 'Alle', count: 25, active: true },
+    { name: 'Alle', count: 30, active: true },
+    { name: 'Software', count: 2, active: false },
     { name: 'Business', count: 7, active: false },
     { name: 'Marketing', count: 5, active: false },
     { name: 'Fachkompetenz', count: 3, active: false },
-    { name: 'Recht & Compliance', count: 4, active: false },
-    { name: 'Digitalisierung', count: 2, active: false },
+    { name: 'Recht & Compliance', count: 5, active: false },
+    { name: 'Digitalisierung', count: 4, active: false },
     { name: 'Kundenbindung', count: 2, active: false },
-    { name: 'Organisation', count: 2, active: false },
+    { name: 'Organisation', count: 3, active: false },
     { name: 'Automatisierung', count: 3, active: false }
 ];
 
