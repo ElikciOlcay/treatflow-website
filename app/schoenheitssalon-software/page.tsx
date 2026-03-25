@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata: Metadata = {
   title: 'Schönheitssalon Software für Kosmetikinstitut',
@@ -193,6 +194,8 @@ export default function SchoenheitssalonSoftwarePage() {
           </div>
         </div>
       </section>
+
+      <SocialProofBar />
 
       <section className="py-20 bg-indigo-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

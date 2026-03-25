@@ -4,6 +4,7 @@ import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import FAQSection from './FAQSection';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
   title: 'Treatflow vs. Treatwell: Der ehrliche Vergleich für Kosmetikstudios',
@@ -699,6 +700,8 @@ export default function TreatflowVsTreatwell() {
             </div>
           </div>
         </section>
+
+        <SocialProofBar />
 
         {/* Final CTA */}
         <section className="py-20 bg-indigo-600">

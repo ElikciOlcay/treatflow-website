@@ -1,5 +1,6 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
@@ -573,6 +574,8 @@ export default function WebsiteFuerKosmetikstudiosPage() {
 
       {/* FAQ */}
       <WebsiteFAQSection faqs={faqs} />
+
+      <SocialProofBar />
 
       {/* Finaler CTA */}
       <section className="py-20 bg-indigo-600">

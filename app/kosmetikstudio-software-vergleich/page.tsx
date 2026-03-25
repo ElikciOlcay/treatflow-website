@@ -2,6 +2,7 @@ import { CheckCircle, ArrowRight, CalendarDays, Users, FileText, Shield, Headpho
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
     title: 'Kosmetikstudio Software Vergleich & Checkliste',
@@ -105,6 +106,8 @@ export default function KosmetikstudioSoftwareVergleichPage() {
                     </p>
                 </div>
             </section>
+
+            <SocialProofBar />
 
             <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

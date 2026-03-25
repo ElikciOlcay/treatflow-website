@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
     title: 'NiSV-Doku Kosmetikstudio: rechtssicher',
@@ -475,6 +476,8 @@ export default function NisvDokumentationKosmetikstudioPage() {
                     </div>
                 </div>
             </section>
+
+            <SocialProofBar />
 
             {/* CTA Section */}
             <section className="py-20 bg-indigo-600">

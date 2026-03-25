@@ -5,6 +5,7 @@ import {
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
     title: 'Digitale Anamnese Kosmetikstudio: papierlos',
@@ -254,6 +255,8 @@ export default function DigitaleAnamneseKosmetikstudioPage() {
                     </div>
                 </div>
             </section>
+
+            <SocialProofBar />
 
             {/* CTA */}
             <section className="py-20 bg-gray-50">

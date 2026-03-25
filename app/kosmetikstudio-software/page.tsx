@@ -39,6 +39,7 @@ const clusterPages = [
 ];
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
     title: 'Kosmetikstudio Software: Termine, Kunden & Doku',
@@ -402,6 +403,8 @@ export default function KosmetikstudioSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <SocialProofBar />
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">

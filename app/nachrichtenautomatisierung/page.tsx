@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
     title: 'SMS & E-Mail Erinnerungen fürs Kosmetikstudio',
@@ -367,6 +368,8 @@ export default function NachrichtenautomatisierungPage() {
                     </div>
                 </div>
             </section>
+
+            <SocialProofBar />
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">

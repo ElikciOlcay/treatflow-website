@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
     title: 'Online-Buchungen Kosmetikstudio: 24/7 Termine',
@@ -388,6 +389,8 @@ export default function OnlineBuchungenPage() {
                     </div>
                 </div>
             </section>
+
+            <SocialProofBar />
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">

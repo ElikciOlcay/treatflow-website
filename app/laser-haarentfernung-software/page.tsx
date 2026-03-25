@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
     title: 'Software für Laser Haarentfernung & NiSV-Doku',
@@ -319,6 +320,8 @@ export default function LaserHaarentfernungSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <SocialProofBar />
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">

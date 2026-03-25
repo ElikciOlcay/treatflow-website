@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
     title: 'Lash Studio Software: Termine & Einwilligungen',
@@ -153,6 +154,8 @@ export default function LashStudioSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <SocialProofBar />
 
             <section className="py-20 bg-gradient-to-r from-violet-600 to-purple-600">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

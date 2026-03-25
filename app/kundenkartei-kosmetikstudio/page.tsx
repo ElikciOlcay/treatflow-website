@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
     title: 'Digitale Kundenkartei für dein Kosmetikstudio',
@@ -437,6 +438,8 @@ export default function KundenkarteiKosmetikstudioPage() {
                     </div>
                 </div>
             </section>
+
+            <SocialProofBar />
 
             {/* CTA Section */}
             <section className="py-20 bg-indigo-600">

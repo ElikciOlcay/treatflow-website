@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
     title: 'Ästhetische Medizin Software: Praxis & Doku',
@@ -311,6 +312,8 @@ export default function AesthetischeMedizinSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <SocialProofBar />
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-teal-600 to-emerald-600">

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
     title: 'Tattoo Studio Software: Termine & Verwaltung',
@@ -350,6 +351,8 @@ export default function TattooStudioSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <SocialProofBar />
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-gray-800 to-gray-900">

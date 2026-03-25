@@ -4,6 +4,7 @@ import Link from "next/link";
 import Script from "next/script";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import SocialProofBar from "../components/SocialProofBar";
 
 export const metadata: Metadata = {
   title: "Kundenkartei App für Kosmetik & Beauty",
@@ -205,6 +206,8 @@ export default function KundenkarteiSoftwarePage() {
           </div>
         </div>
       </section>
+
+      <SocialProofBar />
 
       <Footer />
     </div>
