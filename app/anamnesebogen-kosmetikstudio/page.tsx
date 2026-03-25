@@ -9,12 +9,15 @@ export const metadata = {
     keywords: [
         'Anamnesebogen Kosmetik',
         'Anamnesebogen Kosmetik Vorlage',
+        'Anamnesebogen Kosmetik Download',
+        'Anamnese Fragebogen Kosmetik',
         'Kosmetik Anamnese Formular',
         'digitale Anamnesebögen Kosmetik',
         'Einwilligungserklärung Kosmetik',
+        'Einwilligungserklärung Kosmetik Vorlage',
         'Formulare Kosmetikstudio',
         'Anamnese Kosmetik digital',
-        'Anamnesebogen Beauty',
+        'Anamnesebogen Gesichtsbehandlung',
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/anamnesebogen-kosmetikstudio',

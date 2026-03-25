@@ -44,57 +44,57 @@ const nextConfig: NextConfig = {
       { source: '/home', destination: '/', permanent: true },
       { source: '/index', destination: '/', permanent: true },
 
-      // neue Redirects für alte Blogartikel
+      // Thematische Redirects alter Blogartikel auf passende Zielseiten
       {
         source: '/anamnese-im-kosmetikstudio-wie-sie-mit-der-richtigen-methode-erfolgreich-behandeln',
-        destination: '/blog',
+        destination: '/anamnesebogen-kosmetikstudio',
         permanent: true,
       },
       {
         source: '/warum-eine-digitale-kundenkartei-fuer-kosmetikstudios-unverzichtbar-ist',
-        destination: '/blog',
+        destination: '/kundenkartei-software',
         permanent: true,
       },
       {
         source: '/behandlungen-dokumentieren-wie-digitale-tools-den-prozess-optimieren',
-        destination: '/blog',
+        destination: '/behandlungsdokumentation',
         permanent: true,
       },
       {
         source: '/die-zukunft-der-kosmetikbranche-trends-und-technologien-die-kosmetikstudios-2024-kennen-sollten',
-        destination: '/blog',
+        destination: '/kosmetikstudio-software',
         permanent: true,
       },
       {
         source: '/die-zukunft-der-behandlungsdokumentation-in-kosmetikstudios',
-        destination: '/blog',
+        destination: '/behandlungsdokumentation-kosmetikstudio',
         permanent: true,
       },
 
-      // optional: mit trailing slash
+      // mit trailing slash
       {
         source: '/anamnese-im-kosmetikstudio-wie-sie-mit-der-richtigen-methode-erfolgreich-behandeln/',
-        destination: '/blog',
+        destination: '/anamnesebogen-kosmetikstudio',
         permanent: true,
       },
       {
         source: '/warum-eine-digitale-kundenkartei-fuer-kosmetikstudios-unverzichtbar-ist/',
-        destination: '/blog',
+        destination: '/kundenkartei-software',
         permanent: true,
       },
       {
         source: '/behandlungen-dokumentieren-wie-digitale-tools-den-prozess-optimieren/',
-        destination: '/blog',
+        destination: '/behandlungsdokumentation',
         permanent: true,
       },
       {
         source: '/die-zukunft-der-kosmetikbranche-trends-und-technologien-die-kosmetikstudios-2024-kennen-sollten/',
-        destination: '/blog',
+        destination: '/kosmetikstudio-software',
         permanent: true,
       },
       {
         source: '/die-zukunft-der-behandlungsdokumentation-in-kosmetikstudios/',
-        destination: '/blog',
+        destination: '/behandlungsdokumentation-kosmetikstudio',
         permanent: true,
       },
     ];

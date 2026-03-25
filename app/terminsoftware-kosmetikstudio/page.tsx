@@ -7,18 +7,19 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Terminsoftware Kosmetikstudio: Online-Buchung',
-    description: 'Terminsoftware für Kosmetikstudios. Online-Buchungen, digitaler Terminkalender, automatische Erinnerungen und weniger No-Shows. 14 Tage gratis.',
+    title: 'Terminsoftware & Terminplaner Kosmetikstudio',
+    description: 'Terminsoftware und Terminplaner für Kosmetikstudios: Online-Buchungen 24/7, Terminkalender, automatische Erinnerungen. 14 Tage kostenlos testen.',
     keywords: [
         'Terminsoftware Kosmetikstudio',
         'Terminplaner Kosmetikstudio',
+        'Terminplaner für Kosmetikstudio',
+        'Terminplaner Kosmetik',
+        'Kosmetik Terminplaner',
         'Terminkalender Kosmetikstudio',
         'Online Terminbuchung Kosmetikstudio',
         'Buchungssystem Kosmetik',
-        'Online Termine Kosmetik',
+        'Terminplaner Kosmetik kostenlos',
         'Terminverwaltung Kosmetikstudio',
-        'Termin App Kosmetik',
-        'Terminbuchung Beauty Studio',
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/terminsoftware-kosmetikstudio',

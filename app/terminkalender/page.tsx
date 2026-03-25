@@ -4,9 +4,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Terminkalender Kosmetik mit Online-Buchung',
-    description: 'Der übersichtliche Terminkalender für dein Kosmetikstudio: Online-Buchungen, automatische Erinnerungen per SMS und E-Mail, weniger No-Shows.',
-    keywords: ['Terminbuchung Kosmetikstudio', 'Terminplaner App Kosmetikstudio', 'Terminkalender Kosmetikstudio', 'Online Buchungssystem', 'Kosmetikstudio Terminverwaltung', 'Automatische Erinnerungen', 'SMS Terminerinnerung', 'SMS Terminbestätigung Kosmetik', 'Beauty Salon Software'],
+    title: 'Terminplaner & Kalender fürs Kosmetikstudio',
+    description: 'Terminplaner und Terminkalender für dein Kosmetikstudio: Online-Buchungen 24/7, automatische Erinnerungen per SMS und E-Mail, weniger No-Shows.',
+    keywords: ['Terminplaner Kosmetikstudio', 'Terminplaner Kosmetik', 'Terminplaner für Kosmetikstudio', 'Terminkalender Kosmetikstudio', 'Terminplaner App Kosmetikstudio', 'Terminbuchung Kosmetikstudio', 'Online Buchungssystem', 'Kosmetikstudio Terminverwaltung', 'Kosmetik Terminplaner'],
     alternates: {
         canonical: 'https://www.treatflow.io/terminkalender',
     },
@@ -39,10 +39,10 @@ export default function TerminkalenderPage() {
                             Terminkalender
                         </div>
                         <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                            Der <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Terminkalender</span> für dein Kosmetikstudio
+                            Der <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Terminplaner</span> für dein Kosmetikstudio
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            Wochen-, Tages- und Monatsansicht auf einen Blick. Deine Kunden buchen direkt
+                            Terminkalender mit Wochen-, Tages- und Monatsansicht. Deine Kunden buchen direkt
                             über deinen Buchungslink – ohne Doppelbuchungen und ohne Telefonstress.
                         </p>
                     </div>

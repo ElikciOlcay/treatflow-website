@@ -6,25 +6,27 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Digitale Kundenkartei für Kosmetikstudios",
+  title: "Kundenkartei App für Kosmetik & Beauty",
   description:
-    "Kundendaten, Behandlungshistorie und Fotos an einem Ort. Die digitale Kundenkartei für Kosmetikstudios und Schönheitssalons – DSGVO-konform.",
+    "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Behandlungshistorie und Fotos in einer App. DSGVO-konform, 14 Tage kostenlos testen.",
   keywords: [
-    "kundenkartei software",
-    "kundenkartei",
     "kundenkartei app",
-    "kundenkartei kosmetik",
+    "kundenkartei app kosmetik",
+    "app kundenkartei",
+    "app für kundenkartei",
     "kundenkartei kosmetik app",
     "digitale kundenkartei kosmetik",
+    "kundenkartei software",
     "kundenkartei software kostenlos",
+    "kundenkartei app kostenlos",
   ],
   alternates: {
     canonical: "https://www.treatflow.io/kundenkartei-software",
   },
   openGraph: {
-    title: "Digitale Kundenkartei für Kosmetikstudios | Treatflow",
+    title: "Kundenkartei App für Kosmetik & Beauty | Treatflow",
     description:
-      "Digitale Kundenkartei für Kosmetikstudios mit Historie, Fotos und Formularen. Kein Excel-Chaos mehr.",
+      "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Fotos und Formulare in einer App. Kostenlos testen.",
     url: "https://www.treatflow.io/kundenkartei-software",
   },
 };
