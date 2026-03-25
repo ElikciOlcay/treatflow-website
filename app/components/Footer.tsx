@@ -63,6 +63,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="/#pricing" className="text-gray-400 hover:text-white transition-colors">Preise</a></li>
               <li><Link href="/kosmetikstudio-software-vergleich" className="text-gray-400 hover:text-white transition-colors">Software-Vergleich</Link></li>
+              <li><Link href="/treatflow-vs-treatwell" className="text-gray-400 hover:text-white transition-colors">Treatflow vs. Treatwell</Link></li>
               <li><Link href="/kundenkartei-software" className="text-gray-400 hover:text-white transition-colors">Kundenkartei Software</Link></li>
               <li><Link href="/shop" className="text-gray-400 hover:text-white transition-colors">Shop</Link></li>
               <li><Link href="/website-fuer-kosmetikstudios" className="text-gray-400 hover:text-white transition-colors">Studio-Website</Link></li>

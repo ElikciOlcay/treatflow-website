@@ -4,7 +4,10 @@ import {
   CalendarDays,
   CheckCircle,
   FileText,
+  Lock,
+  Server,
   Shield,
+  ShieldCheck,
   Star,
   Users,
 } from "lucide-react";
@@ -12,6 +15,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
 import Navigation from "./components/Navigation";
+import ChallengeSelector from "./components/ChallengeSelector";
+import ComparisonTable from "./components/ComparisonTable";
+import BenefitStats from "./components/BenefitStats";
+import AlwaysWithYou from "./components/AlwaysWithYou";
 import PricingSection from "./components/PricingSection";
 import FAQSection from "./components/FAQSection";
 import TestimonialsSection from "./components/TestimonialsSection";
@@ -211,6 +218,27 @@ export default function Home() {
           </div>
         </section>
 
+        {/* TrustBar */}
+        <section className="py-6 bg-gray-50 border-y border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+              {[
+                { icon: Lock, text: 'SSL-verschlüsselt' },
+                { icon: Server, text: 'EU-Server (DSGVO)' },
+                { icon: Shield, text: 'Tägliche Datensicherung' },
+                { icon: ShieldCheck, text: 'NiSV-konform' },
+              ].map((item) => (
+                <div key={item.text} className="flex items-center gap-2 text-sm text-gray-600">
+                  <item.icon className="h-4 w-4 text-indigo-500" />
+                  <span>{item.text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <ChallengeSelector />
+
         <section className="pb-16 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 lg:p-8">
@@ -301,6 +329,8 @@ export default function Home() {
           </div>
         </section>
 
+        <ComparisonTable />
+
         <section className="py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -339,39 +369,34 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Über 500 Studios vertrauen bereits auf Treatflow
-              </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Von Einzelunternehmerinnen bis zu Studios mit mehreren Mitarbeitern – Treatflow wächst mit deinem Business.
-              </p>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { value: '500+', label: 'Studios', desc: 'nutzen Treatflow täglich', icon: Users },
-                { value: '4.9/5', label: 'Bewertung', desc: 'von zufriedenen Kunden', icon: Star },
-                { value: '100%', label: 'DSGVO-konform', desc: 'EU-Hosting, verschlüsselt', icon: Shield },
-                { value: '1:1', label: 'Persönliche Betreuung', desc: 'Direkte Hilfe beim Start und im Alltag', icon: CheckCircle },
-              ].map((item, i) => (
-                <div key={i} className="text-center p-6 bg-gray-50 rounded-2xl border border-gray-100">
-                  <div className="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <item.icon className="h-6 w-6 text-indigo-600" />
-                  </div>
-                  <div className="text-3xl font-bold text-gray-900 mb-1">{item.value}</div>
-                  <div className="font-semibold text-gray-700 mb-1">{item.label}</div>
-                  <div className="text-sm text-gray-500">{item.desc}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <BenefitStats />
+        <AlwaysWithYou />
 
         <PricingSection />
         <TestimonialsSection />
         <FAQSection />
+
+        <section className="py-10 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 lg:p-8 flex flex-col md:flex-row items-center gap-6">
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  Du suchst Treatwell? Das sind nicht wir.
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Die Namen klingen ähnlich - aber Treatflow ist keine Buchungsplattform mit Provisionen, sondern eine Studio-Software speziell für Kosmetikstudios. Keine Provision, dafür Kundenkartei, Dokumentation und persönliche Betreuung.
+                </p>
+              </div>
+              <Link
+                href="/treatflow-vs-treatwell"
+                className="inline-flex items-center bg-indigo-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition-colors whitespace-nowrap flex-shrink-0"
+              >
+                Unterschiede ansehen
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
 
         <section className="py-16 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -397,6 +422,7 @@ export default function Home() {
               <Link href="/blog/behandlungsdokumentation-nisv-konform" className="hover:text-indigo-600 transition-colors underline underline-offset-4">NiSV-konform dokumentieren</Link>
               <Link href="/hygieneplan-kosmetikstudio-pdf" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Hygieneplan Kosmetikstudio PDF</Link>
               <Link href="/website-fuer-kosmetikstudios" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Website für Kosmetikstudios</Link>
+              <Link href="/treatflow-vs-treatwell" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Treatflow vs. Treatwell</Link>
             </div>
           </div>
         </section>
