@@ -3,6 +3,7 @@ import {
     Clock, Star, Search, Heart, TrendingUp, Smartphone, Camera, Tag
 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -289,12 +290,15 @@ export default function KundenkarteiKosmetikstudioPage() {
                         <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img
-                            src="/images/branchen/hero-kosmetikstudio.jpg"
-                            alt="Digitale Kundenkartei im Kosmetikstudio - Treatflow"
-                            className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]"
-                            loading="lazy"
-                        />
+                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
+                            <Image
+                                src="/images/branchen/hero-kosmetikstudio.jpg"
+                                alt="Digitale Kundenkartei im Kosmetikstudio - Treatflow"
+                                fill
+                                sizes="100vw"
+                                className="object-cover"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>

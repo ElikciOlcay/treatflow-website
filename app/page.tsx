@@ -9,6 +9,7 @@ import {
   Users,
 } from "lucide-react";
 import Link from 'next/link';
+import Image from 'next/image';
 import Script from 'next/script';
 import Navigation from "./components/Navigation";
 import PricingSection from "./components/PricingSection";
@@ -197,11 +198,14 @@ export default function Home() {
                 <span className="text-gray-600">4.9/5</span>
               </div>
             </div>
-            <div className="order-2">
-              <img
+            <div className="order-2 relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[4/3] lg:min-h-[400px] lg:aspect-auto">
+              <Image
                 src="/images/hero-treatflow-calendar.png"
                 alt="Treatflow Kalender im modernen Kosmetikstudio"
-                className="w-full rounded-2xl shadow-xl object-cover aspect-[4/3] lg:aspect-auto lg:min-h-[400px]"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+                priority
               />
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { FileText, Zap, Edit3, CheckCircle, ArrowRight, Sparkles, Layout } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -49,9 +50,12 @@ export default function FormularePage() {
 
                     {/* Formulare Marketplace Screenshot */}
                     <div className="max-w-5xl mx-auto">
-                        <img
+                        <Image
                             src="/images/mockups/formulare-marketplace.png"
                             alt="Treatflow Formulare Marketplace - Professionelle Formulare für alle Beauty-Behandlungen mit KI-Generator"
+                            width={1200}
+                            height={800}
+                            sizes="(max-width: 1024px) 100vw, 80vw"
                             className="w-full h-auto shadow-2xl rounded-2xl"
                         />
                     </div>
@@ -177,11 +181,15 @@ export default function FormularePage() {
 
                     {/* Emotionales Bild: Formulare im Studio */}
                     <div className="max-w-7xl mx-auto mt-16">
-                        <img
-                            src="/images/formulare-dame-tablet.jpg"
-                            alt="Kundin füllt digitales Formular am Tablet aus"
-                            className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]"
-                        />
+                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
+                            <Image
+                                src="/images/formulare-dame-tablet.jpg"
+                                alt="Kundin füllt digitales Formular am Tablet aus"
+                                fill
+                                sizes="100vw"
+                                className="object-cover"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>

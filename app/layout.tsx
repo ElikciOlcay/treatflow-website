@@ -14,7 +14,7 @@ const baseUrl = 'https://www.treatflow.io';
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Kosmetikstudio Software: Termine, Kunden & Dokumentation in einer App | Treatflow",
+    default: "Kosmetikstudio Software: Termine & Kunden | Treatflow",
     template: "%s | Treatflow"
   },
   description: "Verwalte Terminkalender, Online-Buchungen, Kundenkartei und Behandlungsdoku – DSGVO-konform, 14 Tage kostenlos testen. Ideal für dein Studio.",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: 'https://www.treatflow.io',
-    title: 'Kosmetikstudio Software: Termine, Kunden & Dokumentation in einer App | Treatflow',
+    title: 'Kosmetikstudio Software: Termine & Kunden | Treatflow',
     description: 'Verwalte Terminkalender, Online-Buchungen, Kundenkartei und Behandlungsdoku – DSGVO-konform, 14 Tage kostenlos testen.',
     siteName: 'Treatflow',
     images: [

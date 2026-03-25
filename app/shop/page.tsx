@@ -1,5 +1,6 @@
 import { ShoppingBag, Package, TrendingUp, CheckCircle, ArrowRight, Euro, BarChart3, Camera, CreditCard } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -49,9 +50,12 @@ export default function ShopPage() {
 
                     {/* Shop Screenshot */}
                     <div className="max-w-5xl mx-auto">
-                        <img
+                        <Image
                             src="/images/mockups/shop-hero.png"
                             alt="Treatflow Produktverkauf System - Einfache Lagerverwaltung und Verkaufsübersicht für Kosmetikstudios"
+                            width={1200}
+                            height={800}
+                            sizes="(max-width: 1024px) 100vw, 80vw"
                             className="w-full h-auto shadow-2xl rounded-2xl"
                         />
                     </div>

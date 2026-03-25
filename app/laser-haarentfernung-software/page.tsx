@@ -3,6 +3,7 @@ import {
     Clock, Zap, Star, TrendingUp, ClipboardCheck, Sparkles, AlertTriangle
 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -160,12 +161,15 @@ export default function LaserHaarentfernungSoftwarePage() {
                         <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img
-                            src="/images/branchen/hero-laser.jpg"
-                            alt="Professionelles Laser-Studio – moderne Haarentfernung"
-                            className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]"
-                            loading="lazy"
-                        />
+                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
+                            <Image
+                                src="/images/branchen/hero-laser.jpg"
+                                alt="Professionelles Laser-Studio – moderne Haarentfernung"
+                                fill
+                                sizes="100vw"
+                                className="object-cover"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>

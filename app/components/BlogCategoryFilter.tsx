@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 
 type BlogPost = {
@@ -63,11 +64,13 @@ export default function BlogCategoryFilter({ posts, categories }: Props) {
                             key={post.slug}
                             className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                         >
-                            <div className="aspect-video overflow-hidden">
-                                <img
+                            <div className="aspect-video overflow-hidden relative">
+                                <Image
                                     src={post.image}
                                     alt={post.title}
-                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                    className="object-cover hover:scale-105 transition-transform duration-300"
                                 />
                             </div>
                             <div className="p-6">

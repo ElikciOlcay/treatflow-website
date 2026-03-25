@@ -1,6 +1,7 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import Script from 'next/script';
 import {
   ArrowRight,
@@ -284,10 +285,12 @@ export default function WebsiteFuerKosmetikstudiosPage() {
             className="block group relative bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 max-w-5xl mx-auto"
           >
             <div className="aspect-[16/9] relative overflow-hidden bg-stone-100">
-              <img
+              <Image
                 src="/images/demo/demo-hero.png"
                 alt="Skin Atelier - Demo-Website für Kosmetikstudios von Treatflow"
-                className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                fill
+                sizes="(max-width: 1024px) 100vw, 80vw"
+                className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8">

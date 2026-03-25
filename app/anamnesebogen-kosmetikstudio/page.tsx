@@ -1,5 +1,6 @@
 import { FileText, Shield, ArrowRight, CheckCircle, Clock, Star, Users, Smartphone, ClipboardCheck, PenTool, QrCode, Zap, Bell, Eye } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -288,11 +289,13 @@ export default function AnamnesebogenKosmetikstudioPage() {
                         <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img
+                        <Image
                             src="/images/mockups/formulare-marketplace.png"
                             alt="Digitale Anamnesebögen und Formulare für Kosmetikstudios in Treatflow"
+                            width={1200}
+                            height={800}
+                            sizes="(max-width: 1024px) 100vw, 80vw"
                             className="w-full rounded-2xl shadow-xl object-cover"
-                            loading="lazy"
                         />
                     </div>
                 </div>

@@ -2,6 +2,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import BlogCategoryFilter from '../components/BlogCategoryFilter';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, TrendingUp, Users, Sparkles } from 'lucide-react';
 
 export const metadata = {
@@ -437,11 +438,13 @@ export default function BlogPage() {
                     <div className="grid lg:grid-cols-2 gap-8 mb-16">
                         {featuredPosts.map((post) => (
                             <article key={post.slug} className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                                <div className="aspect-video overflow-hidden">
-                                    <img
+                                <div className="aspect-video overflow-hidden relative">
+                                    <Image
                                         src={post.image}
                                         alt={post.title}
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                                        fill
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
+                                        className="object-cover hover:scale-105 transition-transform duration-300"
                                     />
                                 </div>
                                 <div className="p-8">

@@ -150,7 +150,7 @@ export default function NisvDokumentationPage() {
                         </div>
                     </dl>
                     <p className="mt-8 text-sm text-gray-500">
-                        Rechtliche Hinweise: Diese Seite dient der Information. Für die verbindliche Auslegung der NiSV sind die offiziellen Quellen maßgeblich, z. B. <a href="https://www.bfs.de/DE/bfs/gesetze-regelungen/nisv/nisv.html" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Bundesamt für Strahlenschutz (NiSV)</a> und die Verordnung im Bundesrecht.
+                        Rechtliche Hinweise: Diese Seite dient der Information. Für die verbindliche Auslegung der NiSV sind die offiziellen Quellen maßgeblich, z. B. die <a href="https://www.gesetze-im-internet.de/nisv/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">NiSV-Verordnung im Bundesrecht</a> und das Bundesamt für Strahlenschutz.
                     </p>
                 </div>
             </section>

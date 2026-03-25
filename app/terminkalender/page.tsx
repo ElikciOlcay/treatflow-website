@@ -1,5 +1,6 @@
 import { Calendar, Clock, Users, CheckCircle, Zap, ArrowRight, Bell, TrendingUp } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -49,9 +50,12 @@ export default function TerminkalenderPage() {
 
                     {/* Terminkalender Screenshot */}
                     <div className="max-w-5xl mx-auto">
-                        <img
+                        <Image
                             src="/images/mockups/kalender-overview.png"
                             alt="Treatflow Terminkalender - Professionelle Terminverwaltung mit Online-Buchungen und Übersicht"
+                            width={1200}
+                            height={800}
+                            sizes="(max-width: 1024px) 100vw, 80vw"
                             className="w-full h-auto shadow-2xl rounded-2xl"
                         />
                     </div>
@@ -147,11 +151,15 @@ export default function TerminkalenderPage() {
 
                     {/* Emotionales Bild: Online-Buchung im Studio */}
                     <div className="max-w-7xl mx-auto mb-16">
-                        <img
-                            src="/images/terminkalender-online-buchung-emotional.jpg"
-                            alt="Entspannt und organisiert – dein Studio mit Online-Buchungen"
-                            className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]"
-                        />
+                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
+                            <Image
+                                src="/images/terminkalender-online-buchung-emotional.jpg"
+                                alt="Entspannt und organisiert – dein Studio mit Online-Buchungen"
+                                fill
+                                sizes="100vw"
+                                className="object-cover"
+                            />
+                        </div>
                     </div>
 
                     {/* Statistics */}

@@ -50,14 +50,25 @@ export default function BehandlungsdokumentationPage() {
                     </div>
 
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <Image src="/images/branchen/hero-kosmetikstudio.jpg" alt="Professionelles Kosmetikstudio – Dokumentation im Fokus" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
+                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
+                            <Image
+                                src="/images/branchen/hero-kosmetikstudio.jpg"
+                                alt="Professionelles Kosmetikstudio – Dokumentation im Fokus"
+                                fill
+                                sizes="100vw"
+                                className="object-cover"
+                            />
+                        </div>
                     </div>
 
                     {/* Behandlungsdokumentation Screenshot */}
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img
+                        <Image
                             src="/images/mockups/dokumentation-hero.png"
                             alt="Treatflow Behandlungsdokumentation - Professionelle Dokumentation mit Vorher-Nachher Fotos und automatischen Notizen"
+                            width={1200}
+                            height={800}
+                            sizes="(max-width: 1024px) 100vw, 80vw"
                             className="w-full h-auto shadow-2xl rounded-2xl"
                         />
                     </div>

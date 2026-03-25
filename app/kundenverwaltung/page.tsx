@@ -49,14 +49,25 @@ export default function KundenverwaltungPage() {
                     </div>
 
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <Image src="/images/funktionen/hero-kundenverwaltung.jpg" alt="Gute Beziehung zu Kunden" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
+                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
+                            <Image
+                                src="/images/funktionen/hero-kundenverwaltung.jpg"
+                                alt="Gute Beziehung zu Kunden"
+                                fill
+                                sizes="100vw"
+                                className="object-cover"
+                            />
+                        </div>
                     </div>
 
                     {/* Kundenverwaltung Screenshot */}
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img
+                        <Image
                             src="/images/mockups/kundenverwaltung-overview.png"
                             alt="Treatflow Kundenkartei - Übersichtliche Darstellung aller Kunden mit Suchfunktion und Detailansicht"
+                            width={1200}
+                            height={800}
+                            sizes="(max-width: 1024px) 100vw, 80vw"
                             className="w-full h-auto shadow-2xl rounded-2xl"
                         />
                     </div>
