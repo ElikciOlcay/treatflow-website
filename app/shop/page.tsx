@@ -4,8 +4,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Produktverkauf & Lagerverwaltung für Kosmetikstudios | Treatflow',
-    description: 'Integriertes Produktverkauf-System für Kosmetikstudios. Verkaufe Pflegeprodukte direkt an deine Kunden mit einfacher Lagerverwaltung und vollständiger Nachverfolgung.',
+    title: 'Produktverkauf & Lager für Kosmetikstudios',
+    description: 'Integriertes Produktverkauf-System für Kosmetikstudios. Verkaufe Pflegeprodukte direkt an deine Kunden mit einfacher Lagerverwaltung.',
     keywords: ['Produktverkauf Kosmetikstudio', 'Lagerverwaltung Beauty', 'Kosmetik Produkte verkaufen', 'Studio Verkaufssystem', 'Zusatzumsatz Kosmetik'],
     alternates: {
         canonical: 'https://www.treatflow.io/shop',

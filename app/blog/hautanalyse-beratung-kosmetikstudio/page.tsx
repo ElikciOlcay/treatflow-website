@@ -6,7 +6,7 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Eye, CheckCircle, Alert
 
 
 export const metadata: Metadata = {
-    title: 'Professionelle Hautanalyse: Der Schlüssel zu erfolgreichen Behandlungen | Treatflow Blog',
+    title: 'Professionelle Hautanalyse im Kosmetikstudio',
     description: 'Eine gründliche Hautanalyse ist die Basis jeder erfolgreichen Kosmetikbehandlung. 7-Schritte Prozess für professionelle Beratung und Kundenbindung.',
     keywords: ["Hautanalyse Kosmetik","Professionelle Hautberatung","Kosmetik Beratung","Hauttyp bestimmen","Beauty Consultation","Kosmetikstudio Beratung"],
     authors: [{ name: 'Treatflow Team' }],
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/blog/hautanalyse-beratung-kosmetikstudio',
     },
     openGraph: {
-        title: 'Professionelle Hautanalyse: Der Schlüssel zu erfolgreichen Behandlungen',
+        title: 'Professionelle Hautanalyse für erfolgreiche Behandlungen',
         description: 'Eine gründliche Hautanalyse ist die Basis jeder erfolgreichen Kosmetikbehandlung. 7-Schritte Prozess für professionelle Beratung und Kundenbindung.',
         url: 'https://www.treatflow.io/blog/hautanalyse-beratung-kosmetikstudio',
         siteName: 'Treatflow Blog',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Professionelle Hautanalyse: Der Schlüssel zu erfolgreichen Behandlungen',
+        title: 'Professionelle Hautanalyse für erfolgreiche Behandlungen',
         description: 'Eine gründliche Hautanalyse ist die Basis jeder erfolgreichen Kosmetikbehandlung. 7-Schritte Prozess für professionelle Beratung und Kundenbindung.',
         images: ['/images/blog/hautanalyse-beratung.jpg'],
     },
@@ -291,7 +291,7 @@ export default function BlogPost() {
                                     Dokumentation und Beratung
                                 </h4>
                                 <p className="text-gray-700 mb-4">
-                                    Alle Erkenntnisse systematisch festhalten und der Kundin verständlich erklären.
+                                    Alle Erkenntnisse systematisch festhalten und der Kundin verständlich erklären. Eine professionelle <Link href="/kundenverwaltung" className="text-indigo-600 underline hover:text-indigo-800">Kundenverwaltung</Link> hilft dir dabei, alle Daten übersichtlich zu speichern.
                                 </p>
                                 <div className="bg-green-50 p-4 rounded-lg">
                                     <h5 className="font-medium text-green-900 mb-2">Dokumentiere immer:</h5>
@@ -344,7 +344,7 @@ export default function BlogPost() {
                                     <strong>Problem:</strong> Erkenntnisse nicht festhalten, beim nächsten Termin alles vergessen.
                                 </p>
                                 <p className="text-green-700">
-                                    <strong>Lösung:</strong> Digitale Kundenkarten mit detaillierter Hautanalyse führen.
+                                    <strong>Lösung:</strong> Digitale Kundenkarten mit detaillierter Hautanalyse führen - am besten mit einer professionellen <Link href="/behandlungsdokumentation" className="underline hover:text-indigo-600">Behandlungsdokumentation</Link>.
                                 </p>
                             </div>
                         </div>
@@ -406,7 +406,7 @@ export default function BlogPost() {
                             <ul className="space-y-2">
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-purple-600 mr-3" />
-                                    <span className="text-purple-800">Digitale Anamnese-Bögen mit vordefinierten Fragen</span>
+                                    <span className="text-purple-800">Digitale <Link href="/formulare" className="underline hover:text-indigo-600">Anamnese-Bögen</Link> mit vordefinierten Fragen</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-purple-600 mr-3" />

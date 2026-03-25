@@ -7,8 +7,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Spa & Wellness Software - Termine, Kunden & Verwaltung | Treatflow',
-    description: 'Die moderne Software für Spas und Wellness-Studios. Online-Buchungen, Kundenverwaltung, digitale Formulare und automatische Nachrichten. 14 Tage gratis testen.',
+    title: 'Spa & Wellness Software: Termine & Verwaltung',
+    description: 'Software für Spas und Wellness-Studios. Online-Buchungen, Kundenverwaltung, digitale Formulare und automatische Nachrichten. 14 Tage gratis testen.',
     keywords: [
         'Spa Software',
         'Wellness Software',

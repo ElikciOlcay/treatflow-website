@@ -6,12 +6,12 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Permanent Makeup Software Deutschland - PMU & Microblading | Treatflow',
+    title: 'Permanent Makeup Software Deutschland: PMU',
     description: 'Software für Permanent Makeup Studios in Deutschland. Digitale Einwilligungen, Vorher-Nachher Dokumentation und Online-Buchungen. 14 Tage gratis testen.',
     keywords: ['Permanent Makeup Software Deutschland', 'PMU Software DE', 'Microblading Software Deutschland', 'Permanent Makeup Terminbuchung DE', 'PMU Einwilligung Deutschland'],
     alternates: { canonical: 'https://www.treatflow.io/permanent-makeup-software-deutschland' },
     openGraph: {
-        title: 'Permanent Makeup Software Deutschland - PMU & Microblading | Treatflow',
+        title: 'Permanent Makeup Software Deutschland: PMU & Microblading',
         description: 'Software für Permanent Makeup Studios in Deutschland. Digitale Einwilligungen, Vorher-Nachher Dokumentation und Online-Buchungen.',
         url: 'https://www.treatflow.io/permanent-makeup-software-deutschland',
     },

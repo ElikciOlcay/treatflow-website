@@ -2,16 +2,17 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, FileText } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Anamnese digital: Formulare im Kosmetikstudio rechtssicher nutzen | Treatflow Blog',
+    title: 'Digitale Anamnese im Kosmetikstudio',
     description: 'Anamnese und Einwilligung digital statt auf Papier. Was du beachten musst, damit es rechtssicher ist und im Alltag funktioniert.',
     keywords: ['Anamnese digital Kosmetik', 'Anamnesebogen digital', 'Einwilligung Kosmetik', 'Formular Software Beauty', 'Rechtssicher Anamnese'],
     authors: [{ name: 'Treatflow Team' }],
     alternates: { canonical: 'https://www.treatflow.io/blog/anamnese-formulare-digital-kosmetik' },
     openGraph: {
-        title: 'Anamnese digital: Formulare im Kosmetikstudio rechtssicher nutzen',
+        title: 'Digitale Anamnese-Formulare im Kosmetikstudio',
         description: 'Anamnese und Einwilligung digital – was du beachten musst.',
         url: 'https://www.treatflow.io/blog/anamnese-formulare-digital-kosmetik',
         siteName: 'Treatflow Blog',
@@ -68,13 +69,13 @@ export default function BlogPost() {
                         </p>
                     </div>
                     <div className="mb-12">
-                        <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="/images/blog/anamnese-digital.jpg" alt="Digitale Anamnese am Tablet im Kosmetikstudio" className="w-full h-full object-cover" />
+                        <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                            <Image src="/images/blog/anamnese-digital.jpg" alt="Digitale Anamnese am Tablet im Kosmetikstudio" fill className="object-cover" sizes="(max-width: 768px) 100vw, 100vw" />
                         </div>
                     </div>
                     <div className="prose prose-lg max-w-none">
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Stapel mit ausgefüllten Anamnesebögen, unscharfe Unterschriften, und die Suche nach „der Kundin von letzte Woche“ – wer noch mit Papier arbeitet, kennt das. Digital geht das schneller: Formulare werden am Tablet oder vor dem Termin per Link ausgefüllt, gespeichert und der Kundin zugeordnet. Kein Abheften, kein Verlegen.
+                            Stapel mit ausgefüllten Anamnesebögen, unscharfe Unterschriften, und die Suche nach „der Kundin von letzte Woche“ – wer noch mit Papier arbeitet, kennt das. Digital geht das schneller: <Link href="/formulare" className="text-indigo-600 hover:text-indigo-700 underline">Digitale Formulare</Link> werden am Tablet oder vor dem Termin per Link ausgefüllt, gespeichert und der Kundin zugeordnet. Kein Abheften, kein Verlegen.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
                             Rechtlich gelten für digitale Anamnese und Einwilligung dieselben Anforderungen wie auf Papier: Der Inhalt muss stimmen, die Kundin muss verstehen, worin sie einwilligt, und du musst den Nachweis aufbewahren. Entscheidend ist, dass du eine Lösung nutzt, die Daten sicher speichert (z.B. in der EU), Änderungen protokolliert und dir erlaubt, die Unterlagen bei Bedarf nachzuweisen. DSGVO-konform sollte selbstverständlich sein.
@@ -82,7 +83,7 @@ export default function BlogPost() {
 
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Was du bei digitalen Formularen beachten solltest</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Die Formulare selbst sollten fachlich korrekt sein – also alle relevanten Fragen und Aufklärungsinhalte enthalten. Bei Behandlungen mit Geräten (z.B. Laser, IPL) kommen oft NiSV-relevante Punkte dazu. Hier lohnt sich die Nutzung von Vorlagen oder einem Anbieter, der rechtssichere Vorlagen anbietet. Eigenes „Zusammenschreiben“ ohne juristische Prüfung kann Lücken haben.
+                            Die Formulare selbst sollten fachlich korrekt sein – also alle relevanten Fragen und Aufklärungsinhalte enthalten. Bei Behandlungen mit Geräten (z.B. Laser, IPL) kommen oft <Link href="/nisv-dokumentation" className="text-indigo-600 hover:text-indigo-700 underline">NiSV-relevante Punkte</Link> dazu. Hier lohnt sich die Nutzung von Vorlagen oder einem Anbieter, der rechtssichere Vorlagen anbietet. Eigenes „Zusammenschreiben“ ohne juristische Prüfung kann Lücken haben.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
                             Praktisch wichtig: Die Kundin sollte das Formular vor der Behandlung ausfüllen können – entweder vor Ort am Gerät oder per Link vor dem Termin. So bleibt Zeit zum Lesen, und du hast die Unterlage schon, bevor du startest.
@@ -90,7 +91,7 @@ export default function BlogPost() {
 
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Vorteile im Alltag</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Weniger Papier, weniger Ablage, alles einer Kundin zugeordnet und bei Bedarf schnell auffindbar. Bei Nachfragen oder bei der Dokumentation für NiSV hast du alles an einem Ort. Viele Studios, die umgestellt haben, wollen den Papierstapel nicht mehr zurück.
+                            Weniger Papier, weniger Ablage, alles einer Kundin zugeordnet und bei Bedarf schnell auffindbar. Bei Nachfragen oder bei der Dokumentation für NiSV hast du alles an einem Ort. Viele Studios, die auf eine <Link href="/kosmetikstudio-software" className="text-indigo-600 hover:text-indigo-700 underline">moderne Studiosoftware</Link> umgestellt haben, wollen den Papierstapel nicht mehr zurück.
                         </p>
 
                         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-12">

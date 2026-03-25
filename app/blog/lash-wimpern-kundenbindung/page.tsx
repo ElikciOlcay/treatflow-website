@@ -2,10 +2,11 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Lash-Kundinnen binden: Wimpernverlängerung und Wiederkehr | Treatflow Blog',
+    title: 'Lash-Kundinnen binden: Tipps für Wiederkehr',
     description: 'Refill-Intervalle, Erinnerungen und persönliche Notizen – so behältst du deine Lash-Kundinnen und füllst den Kalender.',
     keywords: ['Lash Kundenbindung', 'Wimpernverlängerung Kunden', 'Refill Erinnerung', 'Lash Studio', 'Wimpern Kunden binden'],
     authors: [{ name: 'Treatflow Team' }],
@@ -68,8 +69,8 @@ export default function BlogPost() {
                         </p>
                     </div>
                     <div className="mb-12">
-                        <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="/images/blog/lash-kundenbindung.jpg" alt="Lash-Kundinnen binden und Refill-Termine" className="w-full h-full object-cover" />
+                        <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                            <Image src="/images/blog/lash-kundenbindung.jpg" alt="Lash-Kundinnen binden und Refill-Termine" fill className="object-cover" sizes="(max-width: 768px) 100vw, 100vw" />
                         </div>
                     </div>
                     <div className="prose prose-lg max-w-none">
@@ -77,14 +78,14 @@ export default function BlogPost() {
                             Wer Lash macht, weiß: Die Kundin kommt alle zwei bis vier Wochen zum Refill. Vergisst sie den Termin oder geht zur Konkurrenz, fehlt dir nicht nur eine Buchung, sondern oft eine langfristige Stammkundin. Deshalb lohnt es sich, genau hier anzusetzen – mit Erinnerungen und kleinen Details.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Eine Erinnerung ein paar Tage vor dem üblichen Refill-Termin (z.B. „Dein nächster Refill wäre um den … – hast du schon Zeit?“) bringt viele zurück. Ohne Druck, aber mit klarem Angebot. Wer in der Kundenkartei notiert hat, wann die letzte Füllung war und welches Intervall die Kundin bevorzugt, kann solche Nachrichten gezielt schicken – oder noch besser: automatisch auslösen lassen.
+                            Eine Erinnerung ein paar Tage vor dem üblichen Refill-Termin (z.B. „Dein nächster Refill wäre um den … – hast du schon Zeit?“) bringt viele zurück. Ohne Druck, aber mit klarem Angebot. Wer in der <Link href="/kundenverwaltung" className="text-indigo-600 hover:text-indigo-700 underline">Kundenkartei</Link> notiert hat, wann die letzte Füllung war und welches Intervall die Kundin bevorzugt, kann solche Nachrichten gezielt schicken – oder noch besser: <Link href="/nachrichtenautomatisierung" className="text-indigo-600 hover:text-indigo-700 underline">automatisch auslösen lassen</Link>.
                         </p>
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Persönliche Notizen nutzen</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
                             „Wünscht Volumen, Dichte 0,15“ oder „Sensibel, bitte Kleber wechseln“ – wenn du das bei der Kundin speicherst, fällt dir der nächste Termin leichter und die Kundin merkt, dass du sie im Blick hast. Das schafft Vertrauen und sorgt dafür, dass sie nicht woanders ausprobiert.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Kurz: Regelmässige, freundliche Erinnerungen plus eine saubere Kundendatei mit Notizen sind bei Lash oft der Unterschied zwischen voll gebucht und Lücken im Kalender.
+                            Kurz: Regelmässige, freundliche Erinnerungen plus eine saubere Kundendatei mit Notizen sind bei Lash oft der Unterschied zwischen voll gebucht und Lücken im Kalender. Biete dazu am besten <Link href="/online-buchungen" className="text-indigo-600 hover:text-indigo-700 underline">Online-Buchung</Link> an, damit Kundinnen ihren Refill-Termin direkt selbst buchen können.
                         </p>
                         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-12">
                             <h3 className="text-2xl font-bold mb-4">Kunden im Blick, Refills nicht vergessen</h3>

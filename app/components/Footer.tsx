@@ -19,6 +19,7 @@ export default function Footer() {
                 href="https://www.instagram.com/treatflow.io/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Treatflow auf Instagram"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -77,6 +78,13 @@ export default function Footer() {
               <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
               <li><Link href="/hygieneplan-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Hygieneplan PDF</Link></li>
               <li><Link href="/kontakt" className="text-gray-400 hover:text-white transition-colors">Kontakt</Link></li>
+            </ul>
+            <h3 className="font-semibold mb-4 mt-8">Regionen</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/studio-software-deutschland" className="text-gray-400 hover:text-white transition-colors">Deutschland</Link></li>
+              <li><Link href="/studio-software-oesterreich" className="text-gray-400 hover:text-white transition-colors">Österreich</Link></li>
+              <li><Link href="/kosmetikstudio-software-berlin" className="text-gray-400 hover:text-white transition-colors">Berlin</Link></li>
+              <li><Link href="/kosmetikstudio-software-wien" className="text-gray-400 hover:text-white transition-colors">Wien</Link></li>
             </ul>
             <h3 className="font-semibold mb-4 mt-8">Rechtliches</h3>
             <ul className="space-y-2 text-sm">

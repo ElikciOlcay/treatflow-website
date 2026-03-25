@@ -3,18 +3,18 @@ import { CheckCircle, FileText, Shield, Clock, Users, Star, ArrowRight, Zap } fr
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-    title: 'NISV-konforme Dokumentation & Formulare für Kosmetikstudios | Treatflow',
+    title: 'NiSV-Dokumentation & Formulare fürs Studio',
     description: 'Automatisierte NISV-Dokumentation und digitale Formulare für Ihr Kosmetikstudio. Rechtssicher, zeitsparend und professionell. Jetzt 14 Tage kostenlos testen!',
     keywords: 'NISV Dokumentation, Kosmetikstudio Formulare, digitale Behandlungsdokumentation, Kosmetik Software, Beauty Studio Software, Anamnese Formulare, Aufklärungsbogen digital',
     authors: [{ name: 'Treatflow' }],
     robots: 'index, follow',
     alternates: {
-        canonical: 'https://www.treatflow.de/landing/dokumentation-formulare',
+        canonical: 'https://www.treatflow.io/landing/dokumentation-formulare',
     },
     openGraph: {
-        title: 'NISV-konforme Dokumentation & Formulare für Kosmetikstudios | Treatflow',
+        title: 'NiSV-Dokumentation & Formulare fürs Studio',
         description: 'Automatisierte NISV-Dokumentation und digitale Formulare für Ihr Kosmetikstudio. Rechtssicher, zeitsparend und professionell. Jetzt 14 Tage kostenlos testen!',
-        url: 'https://www.treatflow.de/landing/dokumentation-formulare',
+        url: 'https://www.treatflow.io/landing/dokumentation-formulare',
         siteName: 'Treatflow',
         images: [
             {
@@ -43,7 +43,7 @@ export default function DokumentationFormulareLandingPage() {
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
         "description": "NISV-konforme Dokumentation und digitale Formulare für Kosmetikstudios",
-        "url": "https://www.treatflow.de/landing/dokumentation-formulare",
+        "url": "https://www.treatflow.io/landing/dokumentation-formulare",
         "author": {
             "@type": "Organization",
             "name": "Treatflow"
@@ -785,7 +785,7 @@ export default function DokumentationFormulareLandingPage() {
                 });
               }
               
-              console.log('Lead tracked:', { email, phone, name });
+
             }
             
             // Form Submission Handler

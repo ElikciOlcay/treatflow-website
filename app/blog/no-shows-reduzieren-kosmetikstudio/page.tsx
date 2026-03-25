@@ -2,10 +2,11 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Bell, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'No-Shows im Kosmetikstudio reduzieren: Was wirklich hilft | Treatflow Blog',
+    title: 'No-Shows im Kosmetikstudio reduzieren',
     description: 'Leere Stühle nerven. Mit Erinnerungen, Buchungsbestätigung und ein paar Kniffen senkst du verpasste Termine spürbar – ohne Aufwand.',
     keywords: ['No-Show Kosmetikstudio', 'Terminerinnerung', 'SMS Erinnerung Beauty', 'Absagequote senken', 'Kosmetik Termin'],
     authors: [{ name: 'Treatflow Team' }],
@@ -68,8 +69,8 @@ export default function BlogPost() {
                         </p>
                     </div>
                     <div className="mb-12">
-                        <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="/images/blog/no-shows-reduzieren.jpg" alt="Terminerinnerung per SMS reduziert No-Shows" className="w-full h-full object-cover" />
+                        <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                            <Image src="/images/blog/no-shows-reduzieren.jpg" alt="Terminerinnerung per SMS reduziert No-Shows" fill className="object-cover" sizes="(max-width: 768px) 100vw, 100vw" />
                         </div>
                     </div>
                     <div className="prose prose-lg max-w-none">
@@ -82,7 +83,7 @@ export default function BlogPost() {
 
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Erinnerungen – der größte Hebel</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Studios, die eine automatische Erinnerung (z.B. 24 Stunden vorher per SMS oder E-Mail) schicken, berichten oft von deutlich weniger unentschuldigten Ausfällen. Die Zahlen variieren, aber Reduktionen um 40 bis 80 Prozent sind keine Seltenheit. Der Grund ist simpel: Die Kundin wird nochmal an den Termin erinnert und kann rechtzeitig absagen oder den Termin verschieben.
+                            Studios, die eine <Link href="/nachrichtenautomatisierung" className="text-indigo-600 hover:text-indigo-700 underline">automatische Erinnerung</Link> (z.B. 24 Stunden vorher per SMS oder E-Mail) schicken, berichten oft von deutlich weniger unentschuldigten Ausfällen. Die Zahlen variieren, aber Reduktionen um 40 bis 80 Prozent sind keine Seltenheit. Der Grund ist simpel: Die Kundin wird nochmal an den Termin erinnert und kann rechtzeitig absagen oder den Termin verschieben.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
                             Wichtig: Nicht nur einmal erinnern. Eine Bestätigung direkt nach der Buchung („Dein Termin am … ist reserviert“) und eine Erinnerung ein bis zwei Tage vorher bringen am meisten. So bleibt der Termin präsent und du wirkst professionell.
@@ -95,12 +96,12 @@ export default function BlogPost() {
 
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Was du sofort umsetzen kannst</h2>
                         <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-                            <li>Buchungsbestätigung direkt nach der Buchung (E-Mail oder SMS)</li>
+                            <li><Link href="/online-buchungen" className="text-indigo-600 hover:text-indigo-700 underline">Buchungsbestätigung</Link> direkt nach der Buchung (E-Mail oder SMS)</li>
                             <li>Eine Erinnerung 24–48 Stunden vor dem Termin</li>
                             <li>In beiden Nachrichten: Datum, Uhrzeit, Ort und kurze Absage-Hinweise</li>
                         </ul>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Wenn du das noch manuell machst, wird es schnell vergessen oder weggelassen. Mit einer Software, die Erinnerungen und Bestätigungen automatisch verschickt, bleibt es dauerhaft dabei – und du gewinnst Zeit.
+                            Wenn du das noch manuell machst, wird es schnell vergessen oder weggelassen. Mit einem <Link href="/terminkalender" className="text-indigo-600 hover:text-indigo-700 underline">digitalen Terminkalender</Link>, der Erinnerungen und Bestätigungen automatisch verschickt, bleibt es dauerhaft dabei – und du gewinnst Zeit.
                         </p>
 
                         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-12">

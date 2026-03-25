@@ -2,10 +2,11 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Plane } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Urlaub und Vertretung im Kosmetikstudio: So planst du durch | Treatflow Blog',
+    title: 'Urlaub und Vertretung im Kosmetikstudio',
     description: 'Wer vertritt dich, wer übernimmt Termine, und wie bleiben Kundinnen informiert? Tipps für entspannte Auszeiten.',
     keywords: ['Urlaub Kosmetikstudio', 'Vertretung Beauty Studio', 'Studio Urlaubsplanung', 'Termine Vertretung', 'Kosmetikstudio Urlaub'],
     authors: [{ name: 'Treatflow Team' }],
@@ -68,20 +69,20 @@ export default function BlogPost() {
                         </p>
                     </div>
                     <div className="mb-12">
-                        <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="/images/blog/urlaub-vertretung-studio.jpg" alt="Urlaub und Vertretung im Kosmetikstudio planen" className="w-full h-full object-cover" />
+                        <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                            <Image src="/images/blog/urlaub-vertretung-studio.jpg" alt="Urlaub und Vertretung im Kosmetikstudio planen" fill className="object-cover" sizes="(max-width: 768px) 100vw, 100vw" />
                         </div>
                     </div>
                     <div className="prose prose-lg max-w-none">
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Viele Solo-Selbstständige schieben Urlaub vor sich her: Wer macht die Termine? Wer informiert die Kundinnen? In der Praxis reicht oft schon, die Schließzeiten früh zu kommunizieren und den Kalender entsprechend zu sperren. Wenn du Online-Buchung nutzt, solltest du die Tage, an denen du weg bist, blockieren – dann bucht niemand in deine Abwesenheit.
+                            Viele Solo-Selbstständige schieben Urlaub vor sich her: Wer macht die Termine? Wer informiert die Kundinnen? In der Praxis reicht oft schon, die Schließzeiten früh zu kommunizieren und den <Link href="/terminkalender" className="text-indigo-600 hover:text-indigo-700 underline">Terminkalender</Link> entsprechend zu sperren. Wenn du <Link href="/online-buchungen" className="text-indigo-600 hover:text-indigo-700 underline">Online-Buchung</Link> nutzt, solltest du die Tage, an denen du weg bist, blockieren – dann bucht niemand in deine Abwesenheit.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
                             Eine kurze Nachricht an bestehende Kundinnen mit Terminen in der Zeit („Vom … bis … habe ich geschlossen, dein Termin ist danach“) oder ein Hinweis auf der Website und bei Google (Öffnungszeiten anpassen) verhindert Missverständnisse. Wer eine Vertretung hat – z.B. eine Kollegin, die in deinem Studio arbeitet – kann in der Software oft einen zweiten Nutzer anlegen. Dann sieht die Vertretung die Termine und kann sie übernehmen, ohne dass du alles per Hand weitergibst.
                         </p>
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Rückkehr gut vorbereiten</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Ein paar Tage vor Ende des Urlaubs den Kalender wieder öffnen, damit schon neue Termine reinkommen können. Und: Erinnerungen aktiv lassen oder rechtzeitig wieder einschalten, damit niemand den ersten Termin nach der Pause vergisst.
+                            Ein paar Tage vor Ende des Urlaubs den Kalender wieder öffnen, damit schon neue Termine reinkommen können. Und: <Link href="/nachrichtenautomatisierung" className="text-indigo-600 hover:text-indigo-700 underline">Erinnerungen</Link> aktiv lassen oder rechtzeitig wieder einschalten, damit niemand den ersten Termin nach der Pause vergisst.
                         </p>
                         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-12">
                             <h3 className="text-2xl font-bold mb-4">Kalender und Buchungslink im Griff</h3>

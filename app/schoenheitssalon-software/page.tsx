@@ -13,22 +13,22 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Schönheitssalon Software - Termine, Kunden & Dokumentation | Treatflow',
+  title: 'Schönheitssalon Software für Kosmetikinstitut',
   description:
-    'Schönheitssalon Software für digitale Terminplanung, Kundenkartei, Formulare und Behandlungsdokumentation. 14 Tage kostenlos testen, mit persönlicher Betreuung.',
+    'Schönheitssalon Software für digitale Terminplanung, Kundenkartei und Dokumentation. Ideal als Software für Kosmetikinstitut und Beauty-Studios mit Team.',
   keywords: [
-    'schoenheitssalon software',
+    'schönheitssalon software',
     'beauty salon software',
     'software kosmetikinstitut',
     'kosmetik software',
-    'software fuer kosmetikstudio',
+    'software für kosmetikstudio',
     'terminkalender kosmetikstudio',
   ],
   alternates: {
     canonical: 'https://www.treatflow.io/schoenheitssalon-software',
   },
   openGraph: {
-    title: 'Schönheitssalon Software für moderne Studios | Treatflow',
+    title: 'Schönheitssalon Software: Termine, Kunden & Dokumentation',
     description:
       'Online-Buchungen, Kundenverwaltung und Dokumentation in einer klaren App für Schönheitssalons.',
     url: 'https://www.treatflow.io/schoenheitssalon-software',
@@ -47,7 +47,7 @@ export default function SchoenheitssalonSoftwarePage() {
               Schönheitssalon Software
             </div>
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Die Software für deinen <span className="text-indigo-600">Schönheitssalon</span>
+              Schönheitssalon Software für deinen <span className="text-indigo-600">Salon</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
               Weniger Verwaltungschaos, mehr Zeit für deine Kunden. Mit Treatflow steuerst du Termine,

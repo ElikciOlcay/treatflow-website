@@ -7,8 +7,8 @@ import Footer from '../components/Footer';
 import GeoFAQ from '../components/GeoFAQ';
 
 export const metadata = {
-    title: 'Studio Software Deutschland - Für Beauty & Kosmetikstudios | Treatflow',
-    description: 'Die moderne Studio-Software für Beauty Studios in Deutschland. Online-Buchungen, Kundenverwaltung, digitale Formulare und NiSV-Dokumentation. DSGVO-konform. 14 Tage gratis.',
+    title: 'Studio Software Deutschland: Beauty & Kosmetik',
+    description: 'Studio-Software für Beauty Studios in Deutschland. Online-Buchungen, Kundenverwaltung, digitale Formulare und NiSV-Doku. DSGVO-konform. 14 Tage gratis.',
     keywords: [
         'Studio Software Deutschland',
         'Kosmetikstudio Software Deutschland',
@@ -20,7 +20,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/studio-software-deutschland',
     },
     openGraph: {
-        title: 'Studio Software Deutschland - Für Beauty & Kosmetikstudios | Treatflow',
+        title: 'Studio Software Deutschland: Beauty & Kosmetikstudios',
         description: 'Die moderne Studio-Software für Beauty Studios in Deutschland. DSGVO-konform, NiSV-ready. 14 Tage gratis testen.',
         url: 'https://www.treatflow.io/studio-software-deutschland',
     },

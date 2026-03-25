@@ -7,8 +7,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Software für ästhetische Medizin - Praxis, Dokumentation & Termine | Treatflow',
-    description: 'Die Software für ästhetische Kliniken und Praxen. Behandlungsdokumentation, digitale Einwilligungen, Patientenverwaltung und Online-Buchungen. 14 Tage gratis testen.',
+    title: 'Ästhetische Medizin Software: Praxis & Doku',
+    description: 'Software für ästhetische Praxen. Behandlungsdokumentation, digitale Einwilligungen, Patientenverwaltung und Online-Buchungen. 14 Tage gratis testen.',
     keywords: [
         'Ästhetische Medizin Software',
         'Software ästhetische Praxis',
@@ -26,7 +26,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/aesthetische-medizin-software',
     },
     openGraph: {
-        title: 'Software für ästhetische Medizin - Dokumentation & Praxisverwaltung | Treatflow',
+        title: 'Software für ästhetische Medizin: Doku & Praxis',
         description: 'Behandlungsdokumentation, digitale Einwilligungen und Patientenverwaltung für ästhetische Praxen.',
         url: 'https://www.treatflow.io/aesthetische-medizin-software',
         images: [

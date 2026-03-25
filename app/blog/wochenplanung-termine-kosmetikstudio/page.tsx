@@ -2,10 +2,11 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Wochenplanung im Kosmetikstudio: Termine im Griff | Treatflow Blog',
+    title: 'Wochenplanung Kosmetikstudio: Termine im Griff',
     description: 'Wie du deine Woche so planst, dass du genug Termine hast, aber nicht im Dauerstress. Praktische Tipps aus dem Studio-Alltag.',
     keywords: ['Wochenplanung Kosmetikstudio', 'Terminplanung Beauty', 'Kalender Kosmetik', 'Studio Organisation', 'Arbeitswoche planen'],
     authors: [{ name: 'Treatflow Team' }],
@@ -68,8 +69,8 @@ export default function BlogPost() {
                         </p>
                     </div>
                     <div className="mb-12">
-                        <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="/images/blog/wochenplanung-termine.jpg" alt="Wochenplanung und Kalender im Kosmetikstudio" className="w-full h-full object-cover" />
+                        <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                            <Image src="/images/blog/wochenplanung-termine.jpg" alt="Wochenplanung und Kalender im Kosmetikstudio" fill className="object-cover" sizes="(max-width: 768px) 100vw, 100vw" />
                         </div>
                     </div>
                     <div className="prose prose-lg max-w-none">
@@ -77,11 +78,11 @@ export default function BlogPost() {
                             Eine Woche voraus zu denken, hilft ungemein. Nicht nur, weil du siehst, wo noch Lücken sind, sondern auch, weil du Puffer einplanen kannst – für Nachfragen, Aufräumen oder einfach Durchschnaufen. Wer nur von Tag zu Tag schaut, reagiert ständig; wer die Woche im Blick hat, kann lenken.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Wann du deine Slots öffnest, ist Geschmackssache. Manche blockieren zuerst Pausen und Verwaltung, andere buchen die festen Stammkundinnen ein und füllen den Rest. Wichtig: Realistische Behandlungszeiten einplanen. Wenn eine Behandlung inklusive Vorbereitung 60 Minuten braucht, sollte der Kalender das auch hergeben. Sonst rutscht alles nach hinten und der Stress ist vorprogrammiert.
+                            Wann du deine Slots öffnest, ist Geschmackssache. Manche blockieren zuerst Pausen und Verwaltung, andere buchen die festen Stammkundinnen ein und füllen den Rest. Wichtig: Realistische Behandlungszeiten einplanen. Wenn eine Behandlung inklusive Vorbereitung 60 Minuten braucht, sollte der <Link href="/terminkalender" className="text-indigo-600 hover:text-indigo-700 underline">digitale Terminkalender</Link> das auch hergeben. Sonst rutscht alles nach hinten und der Stress ist vorprogrammiert.
                         </p>
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Ein Kalender, der mitmacht</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Wenn du Online-Buchung anbietest, sollten Kunden nur die Slots sehen, die du freigibst. Keine doppelten Buchungen, keine Termine mitten in deiner Mittagspause. Ein Kalender mit Tages- und Wochenansicht macht es einfacher, den Überblick zu behalten – und deine Kundinnen buchen direkt in die richtigen Lücken.
+                            Wenn du <Link href="/online-buchungen" className="text-indigo-600 hover:text-indigo-700 underline">Online-Buchung</Link> anbietest, sollten Kunden nur die Slots sehen, die du freigibst. Keine doppelten Buchungen, keine Termine mitten in deiner Mittagspause. Ein Kalender mit Tages- und Wochenansicht macht es einfacher, den Überblick zu behalten – und deine Kundinnen buchen direkt in die richtigen Lücken. Ergänzt du das mit <Link href="/nachrichtenautomatisierung" className="text-indigo-600 hover:text-indigo-700 underline">automatischen Erinnerungen</Link>, werden gebuchte Termine auch nicht vergessen.
                         </p>
                         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-12">
                             <h3 className="text-2xl font-bold mb-4">Terminkalender mit Wochenansicht</h3>

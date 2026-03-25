@@ -2,7 +2,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Impressum - Treatflow Rechtliche Informationen | Treatflow',
+    title: 'Impressum - Treatflow Rechtliche Informationen',
     description: 'Impressum und rechtliche Informationen zu Treatflow. Angaben gemäß § 5 TMG. Kontaktdaten, Handelsregister und Verantwortliche Personen.',
     alternates: {
         canonical: 'https://www.treatflow.io/impressum',
@@ -74,12 +74,12 @@ export default function ImpressumPage() {
                             <p className="text-gray-700 leading-relaxed">
                                 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
                                 <a
-                                    href="https://ec.europa.eu/consumers/odr/"
+                                    href="https://consumer-redress.ec.europa.eu/site-relocation_en?prefLang=de"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-indigo-600 hover:text-indigo-700"
                                 >
-                                    https://ec.europa.eu/consumers/odr/
+                                    Online-Streitbeilegung der EU
                                 </a>
                                 <br />
                                 Unsere E-Mail-Adresse finden Sie oben im Impressum.

@@ -4,14 +4,14 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Kosmetikstudio Software im Vergleich: Worauf es wirklich ankommt | Treatflow',
+    title: 'Kosmetikstudio Software Vergleich & Checkliste',
     description: 'Online-Buchung, Kundenkartei, Doku/Compliance, Support, Datenschutz: So findest du die passende Lösung – inklusive Checkliste.',
     keywords: ['Kosmetikstudio Software Vergleich', 'Beste Kosmetikstudio Software', 'Kosmetikstudio Software Checkliste'],
     alternates: {
         canonical: 'https://www.treatflow.io/kosmetikstudio-software-vergleich',
     },
     openGraph: {
-        title: 'Kosmetikstudio Software im Vergleich: Worauf es wirklich ankommt',
+        title: 'Kosmetikstudio Software im Vergleich: Die Checkliste',
         description: 'Online-Buchung, Kundenkartei, Doku/Compliance, Support, Datenschutz – Checkliste für die passende Software.',
         url: 'https://www.treatflow.io/kosmetikstudio-software-vergleich',
         images: [

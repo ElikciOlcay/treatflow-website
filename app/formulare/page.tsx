@@ -4,14 +4,14 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Anamneseformular Kosmetik: Welche Fragen, welche Pflichtangaben? | Treatflow',
-    description: 'Checkliste & Beispiele (z. B. Microneedling, Laser, PMU). Professionelle Formulare mit KI-Generator – NiSV-konform und rechtssicher. So setzt du Formulare digital im Studio um.',
+    title: 'Anamneseformular Kosmetik: Fragen & Pflichten',
+    description: 'Checkliste & Beispiele (Microneedling, Laser, PMU). Formulare mit KI-Generator – NiSV-konform und rechtssicher. Formulare digital im Studio umsetzen.',
     keywords: ['Anamnese Formular Kosmetikstudio', 'Anamnesebogen Kosmetik', 'Formular Generator Anamnese', 'Einverständniserklärung Kosmetik Behandlung', 'Formulare Kosmetik', 'Anamnese Software Kosmetik', 'digitaler Anamnesebogen', 'KI Formular Generator', 'Anamnese Vorlagen', 'NiSV konform Formulare', 'Einverständniserklärung Beauty'],
     alternates: {
         canonical: 'https://www.treatflow.io/formulare',
     },
     openGraph: {
-        title: 'Anamneseformular Kosmetik: Welche Fragen, welche Pflichtangaben?',
+        title: 'Anamneseformular Kosmetik: Fragen & Pflichtangaben',
         description: 'Checkliste & Beispiele. Formulare mit KI-Generator für Kosmetikstudios – NiSV-konform und rechtssicher.',
         url: 'https://www.treatflow.io/formulare',
         images: [

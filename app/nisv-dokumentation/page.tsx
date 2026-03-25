@@ -1,18 +1,19 @@
 import { FileText, Shield, Archive, ArrowRight, CheckCircle, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import Script from 'next/script';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'NiSV-Dokumentation digital: Beratung, Einwilligung & Doku sauber verwalten | Treatflow',
+    title: 'NiSV-Dokumentation: Beratung & Doku digital',
     description: 'Erstelle, speichere und finde Unterlagen schnell wieder. Reduziere Papieraufwand und behalte Fristen im Blick – ideal für NiSV-relevante Behandlungen.',
     keywords: ['NiSV Dokumentation Software', 'NiSV konform dokumentieren', 'NiSV Kosmetikstudio Pflichten', 'NiSV Beratungsprotokoll Vorlage', 'NiSV Einverständniserklärung Aufbewahrung'],
     alternates: {
         canonical: 'https://www.treatflow.io/nisv-dokumentation',
     },
     openGraph: {
-        title: 'NiSV-Dokumentation digital: Beratung, Einwilligung & Doku sauber verwalten',
+        title: 'NiSV-Dokumentation: Beratung, Einwilligung & Doku',
         description: 'Unterlagen digital verwalten, Fristen im Blick – ideal für NiSV-relevante Behandlungen im Kosmetikstudio.',
         url: 'https://www.treatflow.io/nisv-dokumentation',
         images: [
@@ -82,7 +83,7 @@ export default function NisvDokumentationPage() {
                         </p>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img src="/images/funktionen/hero-nisv-sicherheit.jpg" alt="Sicher und rechtssicher dokumentieren" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                        <Image src="/images/funktionen/hero-nisv-sicherheit.jpg" alt="Sicher und rechtssicher dokumentieren" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
                     </div>
                 </div>
             </section>
@@ -149,7 +150,7 @@ export default function NisvDokumentationPage() {
                         </div>
                     </dl>
                     <p className="mt-8 text-sm text-gray-500">
-                        Rechtliche Hinweise: Diese Seite dient der Information. Für die verbindliche Auslegung der NiSV sind die offiziellen Quellen maßgeblich, z. B. <a href="https://www.bfs.de/DE/themen/opt/uv/nichtionisierende-strahlung/nisv/nisv_node.html" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Bundesamt für Strahlenschutz</a> und die Verordnung im Bundesrecht.
+                        Rechtliche Hinweise: Diese Seite dient der Information. Für die verbindliche Auslegung der NiSV sind die offiziellen Quellen maßgeblich, z. B. <a href="https://www.bfs.de/DE/bfs/gesetze-regelungen/nisv/nisv.html" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">Bundesamt für Strahlenschutz (NiSV)</a> und die Verordnung im Bundesrecht.
                     </p>
                 </div>
             </section>

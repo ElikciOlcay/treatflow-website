@@ -2,12 +2,13 @@ import {
     Calendar, Link2, Bell, CheckCircle, ArrowRight, Clock, Users,
     Smartphone, X, TrendingUp, Zap
 } from 'lucide-react';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Online-Terminbuchung für Kosmetikstudios - 24/7 buchbar | Treatflow',
-    description: 'Online-Terminbuchung speziell für Kosmetikstudios. Kunden buchen 24/7 über deinen persönlichen Buchungslink. Keine Doppelbuchungen, automatische Bestätigungen.',
+    title: 'Online-Terminbuchung Kosmetikstudio: 24/7',
+    description: 'Online-Terminbuchung für Kosmetikstudios. Kunden buchen 24/7 über deinen Buchungslink. Keine Doppelbuchungen, automatische Bestätigungen.',
     keywords: [
         'Online Terminbuchung Kosmetikstudio',
         'Terminbuchung Kosmetik online',
@@ -55,7 +56,7 @@ export default function OnlineTerminbuchungKosmetikstudioPage() {
                         </div>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img src="/images/funktionen/hero-online-buchung.jpg" alt="Termin gebucht – mehr Zeit für das Wesentliche" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                        <Image src="/images/funktionen/hero-online-buchung.jpg" alt="Termin gebucht – mehr Zeit für das Wesentliche" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
                     </div>
                 </div>
             </section>

@@ -5,15 +5,15 @@ import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Mail, CheckCircle, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Email-Marketing für Kosmetikstudios: Kunden erfolgreich zurückgewinnen | Treatflow Blog',
-    description: 'Mit strategischem Email-Marketing holst du verlorene Kunden zurück und steigerst deinen Umsatz um bis zu 40%. So baust du eine erfolgreiche Email-Strategie auf.',
+    title: 'Email-Marketing für Kosmetikstudios',
+    description: 'Mit strategischem Email-Marketing holst du verlorene Kunden zurück und steigerst deinen Umsatz um bis zu 40%. So baust du eine Email-Strategie auf.',
     keywords: ['Email-Marketing Kosmetik', 'Kundenbindung Email', 'Newsletter Kosmetikstudio', 'Kunden zurückgewinnen', 'Email-Kampagnen Beauty', 'Marketing Automation'],
     authors: [{ name: 'Treatflow Team' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/email-marketing-kosmetikstudios',
     },
     openGraph: {
-        title: 'Email-Marketing für Kosmetikstudios: Kunden erfolgreich zurückgewinnen',
+        title: 'Email-Marketing für Kosmetikstudios: Kunden zurückgewinnen',
         description: 'Mit strategischem Email-Marketing holst du verlorene Kunden zurück und steigerst deinen Umsatz um bis zu 40%.',
         url: 'https://www.treatflow.io/blog/email-marketing-kosmetikstudios',
         siteName: 'Treatflow Blog',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Email-Marketing für Kosmetikstudios: Kunden erfolgreich zurückgewinnen',
+        title: 'Email-Marketing für Kosmetikstudios: Kunden zurückgewinnen',
         description: 'Mit strategischem Email-Marketing holst du verlorene Kunden zurück und steigerst deinen Umsatz um bis zu 40%.',
         images: ['/images/blog/email-marketing-kosmetikstudios.jpg'],
     },
@@ -204,8 +204,8 @@ export default function BlogPost() {
                                     Nachbehandlungs-Follow-Up
                                 </h3>
                                 <p className="text-gray-700 mb-4">
-                                    Nach jeder Behandlung sollte eine Follow-Up Email folgen. Das zeigt Professionalität
-                                    und führt zu 60% mehr Folgebuchungen.
+                                    Nach jeder Behandlung sollte eine Follow-Up Email folgen. Mit einer professionellen <Link href="/nachrichtenautomatisierung" className="text-indigo-600 underline hover:text-indigo-800">Nachrichtenautomatisierung</Link> geht das ganz einfach.
+                                    Das zeigt Professionalität und führt zu 60% mehr Folgebuchungen.
                                 </p>
                                 <div className="bg-orange-50 p-4 rounded-lg">
                                     <h5 className="font-medium text-orange-900 mb-2">💅 Follow-Up Sequence:</h5>
@@ -373,7 +373,7 @@ export default function BlogPost() {
                             <ul className="space-y-2">
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
-                                    <span className="text-indigo-800">Kundendaten zentral verwalten für Email-Listen</span>
+                                    <span className="text-indigo-800"><Link href="/kundenverwaltung" className="underline hover:text-indigo-600">Kundendaten zentral verwalten</Link> für Email-Listen</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
@@ -381,7 +381,7 @@ export default function BlogPost() {
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
-                                    <span className="text-indigo-800">Terminkalender mit Online-Buchung verknüpfen</span>
+                                    <span className="text-indigo-800">Terminkalender mit <Link href="/online-buchungen" className="underline hover:text-indigo-600">Online-Buchung</Link> verknüpfen</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />

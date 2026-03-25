@@ -5,7 +5,7 @@ import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Terminbuchung Kosmetikstudio: So läuft dein Kalender endlich rund | Treatflow Blog',
+  title: 'Terminbuchung Kosmetikstudio: Kalender-Tipps',
   description:
     'Terminbuchung im Kosmetikstudio optimieren: weniger Ausfälle, bessere Auslastung und klarere Abläufe mit digitalem Buchungsprozess.',
   keywords: [

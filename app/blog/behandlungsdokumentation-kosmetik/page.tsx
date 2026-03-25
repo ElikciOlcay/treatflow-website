@@ -5,7 +5,7 @@ import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Behandlungsdokumentation Kosmetik: So dokumentierst du sicher und schnell | Treatflow Blog',
+  title: 'Behandlungsdokumentation im Kosmetikstudio',
   description:
     'Behandlungsdokumentation im Kosmetikstudio richtig aufsetzen: rechtssicher, übersichtlich und im Alltag schnell nutzbar.',
   keywords: [

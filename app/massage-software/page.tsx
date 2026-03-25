@@ -7,8 +7,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Massage Software - Termine, Kunden & Verwaltung | Treatflow',
-    description: 'Die moderne Software für Massage-Praxen und Massagestudios. Online-Terminbuchung, Kundenverwaltung, digitale Formulare und automatische Erinnerungen. 14 Tage gratis.',
+    title: 'Massage Software: Termine, Kunden & Verwaltung',
+    description: 'Software für Massage-Praxen und Massagestudios. Online-Terminbuchung, Kundenverwaltung, digitale Formulare und automatische Erinnerungen. 14 Tage gratis.',
     keywords: [
         'Massage Software',
         'Massagepraxis Software',

@@ -7,7 +7,7 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, FileText, Shield, Check
 
 
 export const metadata: Metadata = {
-    title: 'NISV-konforme Behandlungsdokumentation: Rechtssicher dokumentieren | Treatflow Blog',
+    title: 'NISV-konforme Behandlungsdokumentation',
     description: 'Alles zur neuen NISV-Verordnung für Kosmetikstudios. So dokumentierst du Behandlungen rechtssicher und vermeidest Bußgelder.',
     keywords: ["NISV Dokumentation","Behandlungsdokumentation Kosmetik","NISV konform","Rechtssichere Dokumentation","Kosmetik Gesetze","Beauty Compliance"],
     authors: [{ name: 'Treatflow Team' }],
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/blog/behandlungsdokumentation-nisv-konform',
     },
     openGraph: {
-        title: 'NISV-konforme Behandlungsdokumentation: Rechtssicher dokumentieren',
+        title: 'NISV-konforme Behandlungsdokumentation: Leitfaden',
         description: 'Alles zur neuen NISV-Verordnung für Kosmetikstudios. So dokumentierst du Behandlungen rechtssicher und vermeidest Bußgelder.',
         url: 'https://www.treatflow.io/blog/behandlungsdokumentation-nisv-konform',
         siteName: 'Treatflow Blog',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'NISV-konforme Behandlungsdokumentation: Rechtssicher dokumentieren',
+        title: 'NISV-konforme Behandlungsdokumentation: Leitfaden',
         description: 'Alles zur neuen NISV-Verordnung für Kosmetikstudios. So dokumentierst du Behandlungen rechtssicher und vermeidest Bußgelder.',
         images: ['/images/blog/nisv-dokumentation.jpg'],
     },

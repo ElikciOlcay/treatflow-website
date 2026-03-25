@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: "Kosmetikstudio Software: Termine, Kunden & Dokumentation in einer App | Treatflow",
     template: "%s | Treatflow"
   },
-  description: "Verwalte Terminkalender, Online-Buchungen, Kundenkartei und Behandlungsdoku – DSGVO-konform, 14 Tage kostenlos testen. Ideal für dein Studio. Made in Austria.",
+  description: "Verwalte Terminkalender, Online-Buchungen, Kundenkartei und Behandlungsdoku – DSGVO-konform, 14 Tage kostenlos testen. Ideal für dein Studio.",
   keywords: ["Kosmetikstudio Software", "Software für Kosmetikstudio", "Software Kosmetikstudio", "Software Kosmetik", "Kundenkartei Kosmetik", "digitale Kundenkartei Kosmetik", "Terminverwaltung Kosmetik", "Terminplaner App Kosmetikstudio", "Online Buchungssystem", "Online Terminbuchung Kosmetik", "Terminbuchungssoftware Kosmetik", "Kundenverwaltung Beauty", "Behandlungsdokumentation", "Behandlungsdokumentation Software Kosmetik", "NiSV konform", "NiSV Dokumentation Software", "NiSV konform dokumentieren", "NiSV Beratungsprotokoll Vorlage", "Anamnese Software Kosmetik", "Einverständniserklärung Kosmetik", "Kosmetik Praxissoftware", "Beste Kosmetikstudio Software", "Kosmetikstudio Software Vergleich", "Kosmetikstudio Software Test", "Kosmetikstudio Software Preis", "Kosmetikstudio Software DSGVO konform", "All-in-One Software Kosmetikstudio", "DSGVO konform Kosmetikstudio", "Beauty Salon Software", "Made in Austria"],
   authors: [{ name: "Treatflow Team" }],
   creator: "Treatflow",

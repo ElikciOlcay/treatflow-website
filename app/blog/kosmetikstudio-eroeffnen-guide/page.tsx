@@ -6,8 +6,8 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Building, CheckCircle, 
 
 
 export const metadata: Metadata = {
-    title: 'Kosmetikstudio eröffnen: Der komplette Guide für 2024 | Treatflow Blog',
-    description: 'Schritt-für-Schritt Anleitung zur Eröffnung deines Kosmetikstudios. Von der Planung bis zur ersten Kundin - alle wichtigen Schritte, Kosten und rechtlichen Aspekte.',
+    title: 'Kosmetikstudio eröffnen: Kompletter Guide',
+    description: 'Schritt-für-Schritt Anleitung zur Eröffnung deines Kosmetikstudios. Alle wichtigen Schritte, Kosten und rechtlichen Aspekte.',
     keywords: ["Kosmetikstudio eröffnen","Beauty Salon gründen","Kosmetik Selbstständigkeit","Kosmetikstudio Businessplan","Beauty Business starten","Kosmetik Gewerbe anmelden"],
     authors: [{ name: 'Treatflow Team' }],
     alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     },
     openGraph: {
         title: 'Kosmetikstudio eröffnen: Der komplette Guide für 2024',
-        description: 'Schritt-für-Schritt Anleitung zur Eröffnung deines Kosmetikstudios. Von der Planung bis zur ersten Kundin - alle wichtigen Schritte, Kosten und rechtlichen Aspekte.',
+        description: 'Schritt-für-Schritt Anleitung zur Eröffnung deines Kosmetikstudios. Alle wichtigen Schritte, Kosten und rechtlichen Aspekte.',
         url: 'https://www.treatflow.io/blog/kosmetikstudio-eroeffnen-guide',
         siteName: 'Treatflow Blog',
         images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'Kosmetikstudio eröffnen: Der komplette Guide für 2024',
-        description: 'Schritt-für-Schritt Anleitung zur Eröffnung deines Kosmetikstudios. Von der Planung bis zur ersten Kundin - alle wichtigen Schritte, Kosten und rechtlichen Aspekte.',
+        description: 'Schritt-für-Schritt Anleitung zur Eröffnung deines Kosmetikstudios. Alle wichtigen Schritte, Kosten und rechtlichen Aspekte.',
         images: ['/images/blog/kosmetikstudio-eroeffnen.jpg'],
     },
 };
@@ -405,7 +405,7 @@ export default function BlogPost() {
                             <div className="border border-gray-200 rounded-lg p-4">
                                 <h5 className="font-medium text-gray-900 mb-2">🌐 Website & Social Media</h5>
                                 <ul className="text-gray-700 text-sm space-y-1">
-                                    <li>• <strong>Professionelle Website</strong> mit Online-Buchung (€500-2.000)</li>
+                                    <li>• <strong>Professionelle Website</strong> mit <Link href="/online-buchungen" className="text-indigo-600 underline hover:text-indigo-800">Online-Buchung</Link> (€500-2.000)</li>
                                     <li>• <strong>Google My Business</strong> Eintrag erstellen (kostenlos)</li>
                                     <li>• <strong>Instagram & Facebook</strong> Profile anlegen</li>
                                     <li>• <strong>Behandlungsfotos</strong> professionell erstellen lassen</li>
@@ -484,7 +484,7 @@ export default function BlogPost() {
                         <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Digitale Unterstützung für den Start</h2>
 
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Die richtige Software von Anfang an spart Zeit, Nerven und Geld. Moderne Lösungen
+                            Die richtige <Link href="/kosmetikstudio-software" className="text-indigo-600 underline hover:text-indigo-800">Kosmetikstudio-Software</Link> von Anfang an spart Zeit, Nerven und Geld. Moderne Lösungen
                             unterstützen dich bei allen wichtigen Aufgaben.
                         </p>
 
@@ -493,7 +493,7 @@ export default function BlogPost() {
                             <ul className="space-y-2">
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
-                                    <span className="text-indigo-800"><strong>Terminverwaltung:</strong> Online-Buchungen von Tag 1</span>
+                                    <span className="text-indigo-800"><strong><Link href="/terminkalender" className="underline hover:text-indigo-600">Terminverwaltung</Link>:</strong> Online-Buchungen von Tag 1</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />

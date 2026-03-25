@@ -5,7 +5,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Hygieneplan Kosmetikstudio PDF: Vorlage und Anleitung | Treatflow",
+  title: "Hygieneplan Kosmetikstudio PDF: Vorlage",
   description:
     "Hygieneplan für Kosmetikstudio als PDF: Was muss enthalten sein, wie oft aktualisieren und wie du den Plan digital dokumentierst.",
   keywords: [

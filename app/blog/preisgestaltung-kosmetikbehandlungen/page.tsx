@@ -6,7 +6,7 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Euro, CheckCircle, Aler
 
 
 export const metadata: Metadata = {
-    title: 'Preisgestaltung für Kosmetikbehandlungen: Der ultimative Guide | Treatflow Blog',
+    title: 'Preisgestaltung für Kosmetikbehandlungen',
     description: 'Finde die optimalen Preise für deine Kosmetikbehandlungen. Kalkulationsstrategien, Marktanalyse und psychologische Preisgestaltung.',
     keywords: ["Preisgestaltung Kosmetik","Kosmetikbehandlung Preise","Beauty Pricing","Kosmetikstudio Kalkulation","Beauty Salon Preise","Kosmetik Preisstrategien"],
     authors: [{ name: 'Treatflow Team' }],
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/blog/preisgestaltung-kosmetikbehandlungen',
     },
     openGraph: {
-        title: 'Preisgestaltung für Kosmetikbehandlungen: Der ultimative Guide',
+        title: 'Preisgestaltung für Kosmetikbehandlungen: Guide',
         description: 'Finde die optimalen Preise für deine Kosmetikbehandlungen. Kalkulationsstrategien, Marktanalyse und psychologische Preisgestaltung.',
         url: 'https://www.treatflow.io/blog/preisgestaltung-kosmetikbehandlungen',
         siteName: 'Treatflow Blog',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Preisgestaltung für Kosmetikbehandlungen: Der ultimative Guide',
+        title: 'Preisgestaltung für Kosmetikbehandlungen: Guide',
         description: 'Finde die optimalen Preise für deine Kosmetikbehandlungen. Kalkulationsstrategien, Marktanalyse und psychologische Preisgestaltung.',
         images: ['/images/blog/preisgestaltung-guide.jpg'],
     },
@@ -143,6 +143,7 @@ export default function BlogPost() {
                         <p className="text-gray-700 leading-relaxed mb-6">
                             Du investierst Jahre in deine Ausbildung, kaufst teure Geräte und Produkte, arbeitest mit Leidenschaft -
                             aber deine Preise spiegeln diesen Wert nicht wider? Dann ist es Zeit für eine ehrliche Preiskalkulation.
+                            Eine professionelle <Link href="/kosmetikstudio-software" className="text-indigo-600 underline hover:text-indigo-800">Kosmetikstudio-Software</Link> unterstützt dich dabei, den Überblick über Umsätze und Kosten zu behalten.
                         </p>
 
                         <p className="text-gray-700 leading-relaxed mb-8">
@@ -463,7 +464,7 @@ export default function BlogPost() {
 
                         <p className="text-gray-700 leading-relaxed mb-6">
                             Moderne Kundinnen erwarten Transparenz. Versteckte Preise wirken unseriös und schrecken ab.
-                            So präsentierst du deine Preise professionell:
+                            Präsentiere deine Preise professionell und biete deinen Kunden die Möglichkeit, Produkte direkt über deinen <Link href="/shop" className="text-indigo-600 underline hover:text-indigo-800">Online-Shop</Link> zu bestellen.
                         </p>
 
                         <div className="bg-indigo-50 p-6 rounded-lg mb-8">
@@ -475,7 +476,7 @@ export default function BlogPost() {
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
-                                    <span className="text-indigo-800">Online-Buchung mit sofortiger Preisanzeige</span>
+                                    <span className="text-indigo-800"><Link href="/online-buchungen" className="underline hover:text-indigo-600">Online-Buchung</Link> mit sofortiger Preisanzeige</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />

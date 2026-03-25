@@ -7,8 +7,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Permanent Makeup Software - Termine, Kunden & Dokumentation | Treatflow',
-    description: 'Die Software für Permanent Makeup Studios. Digitale Einwilligungsformulare, Vorher-Nachher Dokumentation, Online-Buchungen und Kundenverwaltung. 14 Tage gratis testen.',
+    title: 'Permanent Makeup Software: Termine & Doku',
+    description: 'Software für Permanent Makeup Studios. Digitale Einwilligungen, Vorher-Nachher Doku, Online-Buchungen und Kundenverwaltung. 14 Tage gratis testen.',
     keywords: [
         'Permanent Makeup Software',
         'PMU Software',
@@ -26,7 +26,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/permanent-makeup-software',
     },
     openGraph: {
-        title: 'Permanent Makeup Software - Dokumentation & Verwaltung | Treatflow',
+        title: 'Permanent Makeup Software: Doku & Verwaltung',
         description: 'Digitale Einwilligungen, Vorher-Nachher Fotos und Online-Buchungen für PMU-Studios.',
         url: 'https://www.treatflow.io/permanent-makeup-software',
         images: [
@@ -302,6 +302,11 @@ export default function PermanentMakeupSoftwarePage() {
                         <Link href="/anamnesebogen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
                             <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Anamnesebögen</span>
                             <span className="text-sm text-gray-600 block mb-2">Formulare & Einwilligungen</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/permanent-makeup-software-deutschland" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">PMU Software Deutschland</span>
+                            <span className="text-sm text-gray-600 block mb-2">Permanent Makeup in ganz Deutschland</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
                     </div>

@@ -5,15 +5,15 @@ import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Euro, CheckCircle, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst | Treatflow Blog',
-    description: 'Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben, die du als Kosmetikstudio-Betreiberin absetzen kannst - plus praktische Tipps für den Alltag.',
+    title: 'Kosmetikstudio Buchhaltung: Steuertipps',
+    description: 'Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben, die du als Kosmetikstudio-Betreiberin absetzen kannst.',
     keywords: ['Kosmetikstudio Buchhaltung', 'Steuerliche Absetzbarkeit', 'Beauty Business Steuern', 'Kosmetik Betriebsausgaben', 'Steuerberatung Kosmetik', 'Buchhaltung Beauty Salon'],
     authors: [{ name: 'Treatflow Team' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/kosmetikstudio-buchhaltung-steuern',
     },
     openGraph: {
-        title: 'Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst',
+        title: 'Kosmetikstudio Buchhaltung: Was du absetzen kannst',
         description: 'Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben, die du als Kosmetikstudio-Betreiberin absetzen kannst.',
         url: 'https://www.treatflow.io/blog/kosmetikstudio-buchhaltung-steuern',
         siteName: 'Treatflow Blog',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst',
+        title: 'Kosmetikstudio Buchhaltung: Was du absetzen kannst',
         description: 'Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben für dein Kosmetikstudio.',
         images: ['/images/blog/kosmetikstudio-buchhaltung.jpg'],
     },
@@ -489,7 +489,7 @@ export default function BlogPost() {
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
-                                    <span className="text-indigo-800">Kundenverwaltung mit Behandlungshistorie</span>
+                                    <span className="text-indigo-800"><Link href="/kundenverwaltung" className="underline hover:text-indigo-600">Kundenverwaltung</Link> mit Behandlungshistorie</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
@@ -501,7 +501,7 @@ export default function BlogPost() {
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
-                                    <span className="text-indigo-800">Integrierter Shop für Produktverkäufe</span>
+                                    <span className="text-indigo-800">Integrierter <Link href="/shop" className="underline hover:text-indigo-600">Shop</Link> für Produktverkäufe</span>
                                 </li>
                             </ul>
                         </div>
@@ -510,7 +510,7 @@ export default function BlogPost() {
 
                         <p className="text-gray-700 leading-relaxed mb-6">
                             Eine ordentliche Buchhaltung ist keine lästige Pflicht, sondern dein bester Freund beim Steuern sparen.
-                            Mit den richtigen Abschreibungen kannst du jährlich tausende Euro sparen.
+                            Mit den richtigen Abschreibungen kannst du jährlich tausende Euro sparen. Eine gute <Link href="/kosmetikstudio-software" className="text-indigo-600 underline hover:text-indigo-800">Kosmetikstudio-Software</Link> hilft dir, alle Einnahmen und Ausgaben strukturiert zu erfassen.
                         </p>
 
                         <p className="text-gray-700 leading-relaxed mb-8">

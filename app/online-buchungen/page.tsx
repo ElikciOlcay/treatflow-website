@@ -4,15 +4,15 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Terminbuchung Kosmetikstudio online – 24/7 Buchungslink | Treatflow',
-    description: 'Terminbuchung Kosmetikstudio mit persönlichem Buchungslink: Kunden buchen selbstständig, Bestätigungen laufen automatisch, Doppelbuchungen werden verhindert.',
+    title: 'Online-Buchungen Kosmetikstudio: 24/7 Termine',
+    description: 'Deine Kunden buchen rund um die Uhr über deinen persönlichen Link. Automatische Bestätigungen, weniger No-Shows und kein Telefonstress mehr.',
     keywords: ['Terminbuchung Kosmetikstudio', 'Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Terminbuchung Link Kosmetikstudio', 'Terminbuchungssoftware Kosmetik', 'Buchungssystem Kosmetik', '24/7 Terminbuchung', 'Kosmetikstudio Online Termin', 'Automatische Terminbestätigung', 'SMS Terminbestätigung', 'Buchungslink Beauty'],
     alternates: {
         canonical: 'https://www.treatflow.io/online-buchungen',
     },
     openGraph: {
-        title: 'Online-Terminbuchung fürs Kosmetikstudio – 24/7 Buchungslink ohne Telefonstress',
-        description: 'Deine Kunden buchen selbstständig, du erhältst Bestätigungen automatisch – ohne Doppelbuchungen.',
+        title: 'Online-Buchungen für Kosmetikstudios | Treatflow',
+        description: 'Kein Telefonstress mehr: deine Kunden buchen rund um die Uhr, mit automatischen Bestätigungen und ohne Doppelbuchungen.',
         url: 'https://www.treatflow.io/online-buchungen',
         images: [
             {
@@ -39,7 +39,7 @@ export default function OnlineBuchungenPage() {
                             Online-Buchungen
                         </div>
                         <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                            Online-Terminbuchung fürs <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Kosmetikstudio</span>
+                            Online Buchungssystem für <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Kosmetikstudio</span>
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                             Persönlicher Buchungslink für dein Studio. Deine Kunden buchen rund um die Uhr,
@@ -174,7 +174,7 @@ export default function OnlineBuchungenPage() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Automatische Erinnerungen</h3>
                             <p className="text-gray-600 mb-6">
-                                Reduziere No-Shows mit automatischen Erinnerungen per E-Mail,
+                                Reduziere No-Shows mit automatischen Erinnerungen per
                                 E-Mail und SMS zu verschiedenen Zeitpunkten vor dem Termin.
                             </p>
                             <ul className="space-y-2">

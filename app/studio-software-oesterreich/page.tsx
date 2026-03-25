@@ -7,8 +7,8 @@ import Footer from '../components/Footer';
 import GeoFAQ from '../components/GeoFAQ';
 
 export const metadata = {
-    title: 'Studio Software Österreich - Für Beauty & Kosmetikstudios | Treatflow',
-    description: 'Die Studio-Software aus Österreich für Kosmetikstudios. Online-Buchungen, Kundenverwaltung und digitale Formulare. Made in Austria. DSGVO-konform. 14 Tage gratis.',
+    title: 'Studio Software Österreich: Beauty & Kosmetik',
+    description: 'Studio-Software aus Österreich für Kosmetikstudios. Online-Buchungen, Kundenverwaltung und digitale Formulare. Made in Austria. DSGVO-konform.',
     keywords: [
         'Studio Software Österreich',
         'Kosmetikstudio Software Österreich',
@@ -20,7 +20,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/studio-software-oesterreich',
     },
     openGraph: {
-        title: 'Studio Software Österreich - Für Beauty & Kosmetikstudios | Treatflow',
+        title: 'Studio Software Österreich: Beauty & Kosmetikstudios',
         description: 'Die Studio-Software aus Österreich für Kosmetikstudios. Made in Austria. DSGVO-konform. 14 Tage gratis.',
         url: 'https://www.treatflow.io/studio-software-oesterreich',
     },

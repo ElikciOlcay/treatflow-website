@@ -7,8 +7,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Terminsoftware Kosmetikstudio - Online-Buchung & Terminkalender | Treatflow',
-    description: 'Die beste Terminsoftware für Kosmetikstudios. Online-Buchungen, digitaler Terminkalender, automatische Erinnerungen und weniger No-Shows. 14 Tage kostenlos testen.',
+    title: 'Terminsoftware Kosmetikstudio: Online-Buchung',
+    description: 'Terminsoftware für Kosmetikstudios. Online-Buchungen, digitaler Terminkalender, automatische Erinnerungen und weniger No-Shows. 14 Tage gratis.',
     keywords: [
         'Terminsoftware Kosmetikstudio',
         'Terminplaner Kosmetikstudio',
@@ -24,8 +24,8 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/terminsoftware-kosmetikstudio',
     },
     openGraph: {
-        title: 'Terminsoftware Kosmetikstudio - Online-Buchung & Terminkalender | Treatflow',
-        description: 'Die beste Terminsoftware für Kosmetikstudios. Online-Buchungen, digitaler Terminkalender, automatische Erinnerungen und weniger No-Shows.',
+        title: 'Terminsoftware Kosmetikstudio: Online-Buchung & Kalender',
+        description: 'Terminsoftware für Kosmetikstudios. Online-Buchungen, digitaler Terminkalender, automatische Erinnerungen und weniger No-Shows.',
         url: 'https://www.treatflow.io/terminsoftware-kosmetikstudio',
         images: [
             {

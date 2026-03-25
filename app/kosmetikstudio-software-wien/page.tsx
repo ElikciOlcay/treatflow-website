@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import GeoFAQ from '../components/GeoFAQ';
 
 export const metadata = {
-    title: 'Kosmetikstudio Software Wien - Online-Buchungen & Verwaltung | Treatflow',
+    title: 'Kosmetikstudio Software Wien: Online-Buchungen',
     description: 'Software für Kosmetikstudios in Wien. Online-Terminbuchung, Kundenverwaltung und digitale Formulare. Made in Austria. 14 Tage gratis testen.',
     keywords: [
         'Kosmetikstudio Software Wien',
@@ -20,7 +20,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/kosmetikstudio-software-wien',
     },
     openGraph: {
-        title: 'Kosmetikstudio Software Wien - Online-Buchungen & Verwaltung | Treatflow',
+        title: 'Kosmetikstudio Software Wien: Online-Buchungen',
         description: 'Software für Kosmetikstudios in Wien. Made in Austria. 14 Tage gratis testen.',
         url: 'https://www.treatflow.io/kosmetikstudio-software-wien',
     },

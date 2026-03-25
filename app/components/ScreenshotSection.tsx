@@ -1,4 +1,5 @@
 import { Monitor, Smartphone } from "lucide-react";
+import Image from 'next/image';
 
 export default function ScreenshotSection() {
   return (
@@ -41,11 +42,13 @@ export default function ScreenshotSection() {
                 <span className="text-sm font-medium text-gray-700">Desktop Version</span>
               </div>
             </div>
-            <div className="aspect-video overflow-hidden">
-              <img
+            <div className="aspect-video overflow-hidden relative">
+              <Image
                 src="/images/mockups/desktop-version.png"
                 alt="Treatflow Desktop Version - Vollständige Übersicht aller Funktionen auf dem Desktop"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             </div>
           </div>
@@ -58,11 +61,13 @@ export default function ScreenshotSection() {
                 <span className="text-sm font-medium text-gray-700">Mobile App</span>
               </div>
             </div>
-            <div className="aspect-video overflow-hidden">
-              <img
+            <div className="aspect-video overflow-hidden relative">
+              <Image
                 src="/images/mockups/mobile-version.png"
                 alt="Treatflow Mobile App - Vollständige Funktionalität auch unterwegs auf dem Smartphone"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             </div>
           </div>
@@ -75,11 +80,13 @@ export default function ScreenshotSection() {
                 <span className="text-sm font-medium text-gray-700">Dokumentation</span>
               </div>
             </div>
-            <div className="aspect-video overflow-hidden">
-              <img
+            <div className="aspect-video overflow-hidden relative">
+              <Image
                 src="/images/mockups/ai-doc.png"
                 alt="Treatflow Dokumentation - Intelligente Behandlungsdokumentation für professionelle Aufzeichnungen"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
             </div>
           </div>

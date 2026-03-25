@@ -5,8 +5,8 @@ import { Mail, MapPin, Clock, MessageCircle, Send } from 'lucide-react';
 import Script from 'next/script';
 
 export const metadata = {
-    title: 'Kontakt - Treatflow Support & Beratung | Treatflow',
-    description: 'Kontaktiere das Treatflow Team für persönliche Beratung. Kostenlos testen, Fragen zur Kosmetikstudio Software stellen oder Support erhalten. Made in Austria.',
+    title: 'Kontakt - Treatflow Support & Beratung',
+    description: 'Kontaktiere das Treatflow Team für persönliche Beratung. Fragen zur Kosmetikstudio Software stellen oder Support erhalten. Made in Austria.',
     keywords: ['Treatflow Kontakt', 'Kosmetikstudio Software Support', 'Kostenlos testen', 'Treatflow Beratung', 'Beauty Software Hilfe'],
     alternates: {
         canonical: 'https://www.treatflow.io/kontakt',

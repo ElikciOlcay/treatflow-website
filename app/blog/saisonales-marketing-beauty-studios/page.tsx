@@ -6,7 +6,7 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Snowflake, Sun, Leaf, H
 
 
 export const metadata: Metadata = {
-    title: 'Saisonales Marketing für Beauty-Studios: 12 Monate Erfolg | Treatflow Blog',
+    title: 'Saisonales Marketing für Beauty-Studios',
     description: 'Nutze saisonale Trends für dein Beauty-Marketing. Von Frühlings-Detox bis Winter-Wellness - so planst du dein Marketing-Jahr erfolgreich.',
     keywords: ["Saisonales Marketing Beauty","Beauty Studio Marketing","Kosmetik Marketing Kalender","Beauty Trends Saison","Marketing Kosmetikstudio","Beauty Salon Werbung"],
     authors: [{ name: 'Treatflow Team' }],
@@ -384,8 +384,8 @@ export default function BlogPost() {
                                 </h4>
                                 <ul className="text-gray-700 text-sm space-y-1">
                                     <li>• Teaser in Social Media und Newsletter</li>
-                                    <li>• Stammkunden persönlich informieren</li>
-                                    <li>• Website und Buchungssystem anpassen</li>
+                                    <li>• Stammkunden per <Link href="/nachrichtenautomatisierung" className="text-indigo-600 underline hover:text-indigo-800">automatisierte Nachrichten</Link> informieren</li>
+                                    <li>• Website und <Link href="/online-buchungen" className="text-indigo-600 underline hover:text-indigo-800">Online-Buchungssystem</Link> anpassen</li>
                                     <li>• Team über neue Angebote schulen</li>
                                 </ul>
                             </div>
@@ -457,7 +457,7 @@ export default function BlogPost() {
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-purple-600 mr-3" />
-                                    <span className="text-purple-800">Formular-Marktplatz für Marketing-Templates</span>
+                                    <span className="text-purple-800"><Link href="/shop" className="underline hover:text-indigo-600">Formular-Marktplatz</Link> für Marketing-Templates</span>
                                 </li>
                             </ul>
                         </div>

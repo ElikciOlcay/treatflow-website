@@ -5,7 +5,7 @@ import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Software Kosmetikinstitut: So findest du die passende Lösung | Treatflow Blog',
+  title: 'Software Kosmetikinstitut: Die passende Lösung',
   description:
     'Software für Kosmetikinstitute im Vergleich: Welche Funktionen wirklich zählen, welche Fehler du vermeiden solltest und wie du schneller umstellst.',
   keywords: [

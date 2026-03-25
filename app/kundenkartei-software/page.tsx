@@ -6,9 +6,9 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Kundenkartei Software für Kosmetikstudios | Treatflow",
+  title: "Digitale Kundenkartei für Kosmetikstudios",
   description:
-    "Kundenkartei Software für Kosmetikstudios: Kundendaten, Behandlungsverlauf, Formulare und Fotos an einem Ort. 14 Tage kostenlos testen, ohne Kreditkarte.",
+    "Kundendaten, Behandlungshistorie und Fotos an einem Ort. Die digitale Kundenkartei für Kosmetikstudios und Schönheitssalons – DSGVO-konform.",
   keywords: [
     "kundenkartei software",
     "kundenkartei",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical: "https://www.treatflow.io/kundenkartei-software",
   },
   openGraph: {
-    title: "Kundenkartei Software für Kosmetikstudios | Treatflow",
+    title: "Digitale Kundenkartei für Kosmetikstudios | Treatflow",
     description:
       "Digitale Kundenkartei für Kosmetikstudios mit Historie, Fotos und Formularen. Kein Excel-Chaos mehr.",
     url: "https://www.treatflow.io/kundenkartei-software",
@@ -35,15 +35,15 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Ist Treatflow eine Kundenkartei App für Kosmetikstudios?",
+      name: "Bietet Treatflow eine digitale Kundenkartei für Kosmetikstudios?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ja. Treatflow ist eine Kundenkartei App für Kosmetikstudios mit Kundendaten, Behandlungshistorie, Formularen und Foto-Dokumentation.",
+        text: "Ja. In Treatflow verwaltest du Kundendaten, Behandlungshistorie, Formulare und Fotos zentral an einem Ort.",
       },
     },
     {
       "@type": "Question",
-      name: "Kann ich die Kundenkartei Software kostenlos testen?",
+      name: "Kann ich die Kundenkartei kostenlos testen?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Ja. Du kannst Treatflow 14 Tage kostenlos testen, ohne Kreditkarte.",
@@ -74,14 +74,14 @@ export default function KundenkarteiSoftwarePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              Kundenkartei Software für Kosmetikstudios
+              Digitale Kundenkartei
             </div>
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Schluss mit Excel: Deine <span className="text-indigo-600">Kundenkartei</span> in einer App
+              Deine digitale <span className="text-indigo-600">Kundenkartei</span> für Kosmetik
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-              Verwalte Kundendaten, Behandlungshistorie, Formulare und Fotos zentral in einer Kundenkartei Software.
-              Schnell, sicher und ohne Zettelchaos.
+              Kundendaten, Behandlungshistorie, Formulare und Fotos - alles an einem Ort.
+              Schnell abrufbar, sicher gespeichert und ohne Zettelchaos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -165,7 +165,7 @@ export default function KundenkarteiSoftwarePage() {
               </ul>
             </div>
             <div className="bg-white border border-indigo-200 rounded-2xl p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Treatflow Kundenkartei Software</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Mit Treatflow</h3>
               <ul className="space-y-3">
                 {[
                   "Strukturierte Kundenkartei mit Historie",
@@ -186,7 +186,7 @@ export default function KundenkarteiSoftwarePage() {
 
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Mehr zum Thema Kundenkartei und Studio-Software</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Weitere Funktionen entdecken</h2>
           <div className="flex flex-wrap justify-center gap-5 text-sm">
             <Link href="/kundenkartei-kosmetikstudio" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
               Digitale Kundenkartei Kosmetik

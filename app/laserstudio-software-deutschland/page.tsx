@@ -6,12 +6,12 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'Laser Studio Software Deutschland - NiSV-konform dokumentieren | Treatflow',
+  title: 'Laserstudio Software Deutschland: NiSV-konform',
   description: 'Software für Laser-Studios in Deutschland. NiSV-konforme Dokumentation, digitale Einwilligungen und Online-Buchungen. DSGVO-konform. 14 Tage gratis.',
   keywords: ['Laser Studio Software Deutschland', 'Laserhaarentfernung Software DE', 'NiSV Dokumentation Deutschland', 'Laser Klinik Software DE', 'IPL Software Deutschland'],
   alternates: { canonical: 'https://www.treatflow.io/laserstudio-software-deutschland' },
   openGraph: {
-    title: 'Laser Studio Software Deutschland - NiSV-konform dokumentieren | Treatflow',
+    title: 'Laserstudio Software Deutschland: NiSV-konform',
     description: 'Software für Laser-Studios in Deutschland. NiSV-konforme Dokumentation, digitale Einwilligungen und Online-Buchungen.',
     url: 'https://www.treatflow.io/laserstudio-software-deutschland',
   },

@@ -4,8 +4,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'NiSV-Dokumentation Kosmetikstudio - Rechtssicher dokumentieren | Treatflow',
-    description: 'NiSV-konforme Behandlungsdokumentation für Kosmetikstudios. Digitale Dokumentation für Laser, IPL und nichtionisierende Strahlung. Rechtssicher und DSGVO-konform. Jetzt testen.',
+    title: 'NiSV-Doku Kosmetikstudio: rechtssicher',
+    description: 'NiSV-konforme Dokumentation für Kosmetikstudios. Digital dokumentieren für Laser, IPL und nichtionisierende Strahlung. DSGVO-konform. Jetzt testen.',
     keywords: [
         'NiSV Dokumentation Kosmetik',
         'Behandlungsdokumentation Kosmetik',
@@ -20,7 +20,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/nisv-dokumentation-kosmetikstudio',
     },
     openGraph: {
-        title: 'NiSV-Dokumentation Kosmetikstudio - Rechtssicher dokumentieren | Treatflow',
+        title: 'NiSV-Dokumentation Kosmetikstudio: rechtssicher',
         description: 'NiSV-konforme Behandlungsdokumentation für Kosmetikstudios. Digitale Dokumentation für Laser, IPL und nichtionisierende Strahlung.',
         url: 'https://www.treatflow.io/nisv-dokumentation-kosmetikstudio',
         images: [

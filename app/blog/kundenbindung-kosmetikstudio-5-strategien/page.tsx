@@ -20,16 +20,16 @@ const relatedPosts = [
 
 
 export const metadata: Metadata = {
-    title: '5 bewährte Strategien für mehr Kundenbindung im Kosmetikstudio | Treatflow Blog',
-    description: 'Entdecke die wirksamsten Methoden, um Kundinnen langfristig zu binden und die Wiederkehrrate zu erhöhen. Von personalisierten Behandlungen bis zur digitalen Nachbetreuung.',
+    title: '5 Kundenbindung-Strategien im Kosmetikstudio',
+    description: 'Entdecke die wirksamsten Methoden, um Kundinnen langfristig zu binden und die Wiederkehrrate in deinem Kosmetikstudio zu erhöhen.',
     keywords: ["Kundenbindung Kosmetik", "Beauty Kundentreue", "Kosmetikstudio Stammkunden", "Beauty Customer Retention", "Kosmetik Kundenservice", "Beauty Loyalty"],
     authors: [{ name: 'Treatflow Team' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/kundenbindung-kosmetikstudio-5-strategien',
     },
     openGraph: {
-        title: '5 bewährte Strategien für mehr Kundenbindung im Kosmetikstudio',
-        description: 'Entdecke die wirksamsten Methoden, um Kundinnen langfristig zu binden und die Wiederkehrrate zu erhöhen. Von personalisierten Behandlungen bis zur digitalen Nachbetreuung.',
+        title: '5 Strategien für Kundenbindung im Kosmetikstudio',
+        description: 'Entdecke die wirksamsten Methoden, um Kundinnen langfristig zu binden und die Wiederkehrrate in deinem Kosmetikstudio zu erhöhen.',
         url: 'https://www.treatflow.io/blog/kundenbindung-kosmetikstudio-5-strategien',
         siteName: 'Treatflow Blog',
         images: [
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: '5 bewährte Strategien für mehr Kundenbindung im Kosmetikstudio',
-        description: 'Entdecke die wirksamsten Methoden, um Kundinnen langfristig zu binden und die Wiederkehrrate zu erhöhen. Von personalisierten Behandlungen bis zur digitalen Nachbetreuung.',
+        title: '5 Strategien für Kundenbindung im Kosmetikstudio',
+        description: 'Entdecke die wirksamsten Methoden, um Kundinnen langfristig zu binden und die Wiederkehrrate in deinem Kosmetikstudio zu erhöhen.',
         images: ['/images/blog/kundenbindung-strategien.jpg'],
     },
 };

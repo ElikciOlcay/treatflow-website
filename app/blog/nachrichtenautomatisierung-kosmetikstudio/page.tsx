@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, MessageCircle, CheckCircle, Mail, Bell, Zap, TrendingUp, Users, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Nachrichtenautomatisierung im Kosmetikstudio: 80% weniger No-Shows | Treatflow Blog',
-    description: 'Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche reduzieren No-Shows um 80% und steigern die Kundenbindung. So funktioniert moderne Kundenkommunikation.',
+    title: 'Nachrichtenautomatisierung: Weniger No-Shows',
+    description: 'Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche reduzieren No-Shows um 80% und steigern die Kundenbindung.',
     keywords: [
         'Nachrichtenautomatisierung Kosmetikstudio',
         'Automatische Terminerinnerungen',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/blog/nachrichtenautomatisierung-kosmetikstudio',
     },
     openGraph: {
-        title: 'Nachrichtenautomatisierung im Kosmetikstudio: 80% weniger No-Shows',
+        title: 'Nachrichtenautomatisierung: 80% weniger No-Shows',
         description: 'Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche reduzieren No-Shows um 80% und steigern die Kundenbindung.',
         url: 'https://www.treatflow.io/blog/nachrichtenautomatisierung-kosmetikstudio',
         siteName: 'Treatflow Blog',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Nachrichtenautomatisierung im Kosmetikstudio: 80% weniger No-Shows',
+        title: 'Nachrichtenautomatisierung: 80% weniger No-Shows',
         description: 'Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche für mehr Kundenbindung.',
         images: ['/images/blog/no-shows.png'],
     },

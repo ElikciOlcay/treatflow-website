@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Website für Kosmetikstudio erstellen lassen | Treatflow',
+  title: 'Website für Kosmetikstudio erstellen lassen',
   description: 'Individuelle Website für dein Kosmetikstudio, Laserstudio oder Beauty Business. Professionell, mobil optimiert und auf Buchungen ausgelegt. Ab 1.000 Euro.',
   keywords: [
     'Website für Kosmetikstudio',

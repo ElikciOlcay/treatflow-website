@@ -4,8 +4,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Anamnesebogen Kosmetik - Digitale Formulare & Vorlagen | Treatflow',
-    description: 'Digitale Anamnesebögen für Kosmetikstudios: Anamnese, Einwilligungen und Formulare papierlos ausfüllen. Vorlagen inklusive. DSGVO-konform. 14 Tage gratis testen.',
+    title: 'Anamnesebogen Kosmetik: Formulare & Vorlagen',
+    description: 'Digitale Anamnesebögen für Kosmetikstudios: Anamnese, Einwilligungen und Formulare papierlos ausfüllen. Vorlagen inklusive. DSGVO-konform.',
     keywords: [
         'Anamnesebogen Kosmetik',
         'Anamnesebogen Kosmetik Vorlage',
@@ -20,7 +20,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/anamnesebogen-kosmetikstudio',
     },
     openGraph: {
-        title: 'Anamnesebogen Kosmetik - Digitale Formulare & Vorlagen | Treatflow',
+        title: 'Anamnesebogen Kosmetik: Digitale Formulare & Vorlagen',
         description: 'Digitale Anamnesebögen für Kosmetikstudios: Anamnese, Einwilligungen und Formulare papierlos ausfüllen. Vorlagen inklusive. DSGVO-konform.',
         url: 'https://www.treatflow.io/anamnesebogen-kosmetikstudio',
         images: [

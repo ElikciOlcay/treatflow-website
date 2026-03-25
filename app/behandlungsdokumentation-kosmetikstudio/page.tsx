@@ -1,12 +1,13 @@
 import {
     FileText, Camera, CheckCircle, ArrowRight, X, Shield, Users
 } from 'lucide-react';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Behandlungsdokumentation für Kosmetikstudios - Digital & NiSV-konform | Treatflow',
-    description: 'Digitale Behandlungsdokumentation für Kosmetikstudios. Fotos, Notizen, Produkte und Ergebnisse in einer Plattform. NiSV-konform dokumentieren. 14 Tage gratis.',
+    title: 'Behandlungsdoku Kosmetikstudio: NiSV-konform',
+    description: 'Digitale Behandlungsdokumentation für Kosmetikstudios. Fotos, Notizen und Ergebnisse in einer Plattform. NiSV-konform. 14 Tage gratis testen.',
     keywords: [
         'Behandlungsdokumentation Kosmetikstudio',
         'Dokumentation Kosmetik digital',
@@ -20,7 +21,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/behandlungsdokumentation-kosmetikstudio',
     },
     openGraph: {
-        title: 'Behandlungsdokumentation für Kosmetikstudios - Digital & NiSV-konform | Treatflow',
+        title: 'Behandlungsdokumentation Kosmetikstudio: NiSV-konform',
         description: 'Digitale Behandlungsdokumentation für Kosmetikstudios. Fotos, Notizen, Produkte und Ergebnisse in einer Plattform. NiSV-konform dokumentieren.',
         url: 'https://www.treatflow.io/behandlungsdokumentation-kosmetikstudio',
         images: [
@@ -155,7 +156,7 @@ export default function BehandlungsdokumentationKosmetikstudioPage() {
                         <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img src="/images/funktionen/hero-behandlungsdokumentation.jpg" alt="Professionelle Dokumentation und Fuersorge" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                        <Image src="/images/funktionen/hero-behandlungsdokumentation.jpg" alt="Professionelle Dokumentation und Fuersorge" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
                     </div>
                 </div>
             </section>

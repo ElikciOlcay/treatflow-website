@@ -6,7 +6,7 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Shield, AlertTriangle, 
 
 
 export const metadata: Metadata = {
-    title: 'Hygiene & Sicherheit im Kosmetikstudio: Kompletter Leitfaden | Treatflow Blog',
+    title: 'Hygiene & Sicherheit im Kosmetikstudio',
     description: 'Hygiene-Standards für Kosmetikstudios: Von der Desinfektion bis zur Dokumentation. Alle Vorschriften und praktische Tipps für den Alltag.',
     keywords: ["Hygiene Kosmetikstudio","Desinfektion Beauty","Kosmetik Sicherheit","Beauty Hygiene Standards","Kosmetikstudio Vorschriften","Salon Hygiene"],
     authors: [{ name: 'Treatflow Team' }],
@@ -368,7 +368,7 @@ export default function BlogPost() {
                                     <strong>Problem:</strong> Keine oder unvollständige Aufzeichnungen über Hygienemaßnahmen.
                                 </p>
                                 <p className="text-green-700">
-                                    <strong>Lösung:</strong> Digitale Checklisten und automatische Erinnerungen nutzen.
+                                    <strong>Lösung:</strong> Digitale Checklisten und automatische Erinnerungen nutzen. Besonders bei NiSV-relevanten Behandlungen ist eine lückenlose <Link href="/nisv-dokumentation" className="underline hover:text-indigo-600">NiSV-Dokumentation</Link> unverzichtbar.
                                 </p>
                             </div>
                         </div>
@@ -380,11 +380,11 @@ export default function BlogPost() {
                             <ul className="space-y-2">
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-purple-600 mr-3" />
-                                    <span className="text-purple-800">Formular-Generator für Hygiene-Checklisten</span>
+                                    <span className="text-purple-800"><Link href="/formulare" className="underline hover:text-indigo-600">Formular-Generator</Link> für Hygiene-Checklisten</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-purple-600 mr-3" />
-                                    <span className="text-purple-800">Behandlungsdokumentation mit Hygiene-Protokollen</span>
+                                    <span className="text-purple-800"><Link href="/behandlungsdokumentation" className="underline hover:text-indigo-600">Behandlungsdokumentation</Link> mit Hygiene-Protokollen</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-purple-600 mr-3" />

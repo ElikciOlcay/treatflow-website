@@ -7,8 +7,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Nagelstudio Software - Termine, Kunden & Verwaltung | Treatflow',
-    description: 'Die moderne Software für Nagelstudios. Online-Terminbuchung, Kundenverwaltung, digitale Formulare und automatische Erinnerungen in einer Plattform. 14 Tage gratis.',
+    title: 'Nagelstudio Software: Termine & Verwaltung',
+    description: 'Software für Nagelstudios. Online-Terminbuchung, Kundenverwaltung, digitale Formulare und automatische Erinnerungen. 14 Tage gratis testen.',
     keywords: [
         'Nagelstudio Software',
         'Software für Nagelstudios',
@@ -26,7 +26,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/nagelstudio-software',
     },
     openGraph: {
-        title: 'Nagelstudio Software - Termine & Kundenverwaltung | Treatflow',
+        title: 'Nagelstudio Software: Termine & Kundenverwaltung',
         description: 'Online-Buchungen, Kundenverwaltung und automatische Erinnerungen für Nagelstudios.',
         url: 'https://www.treatflow.io/nagelstudio-software',
         images: [{ url: '/images/og-nagelstudio-software.jpg', width: 1200, height: 630, alt: 'Treatflow - Software für Nagelstudios' }],

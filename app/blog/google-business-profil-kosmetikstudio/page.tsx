@@ -2,10 +2,11 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Google Business Profil für Kosmetikstudios: Sichtbar werden | Treatflow Blog',
+    title: 'Google Business Profil für Kosmetikstudios',
     description: 'Mit einem gepflegten Google-Profil findest du leichter neue Kundinnen. So richtest du es ein und nutzt es im Alltag.',
     keywords: ['Google Business Kosmetikstudio', 'Google Mein Unternehmen', 'Lokale Suche Beauty', 'Kosmetikstudio finden', 'Google Bewertungen'],
     authors: [{ name: 'Treatflow Team' }],
@@ -68,8 +69,8 @@ export default function BlogPost() {
                         </p>
                     </div>
                     <div className="mb-12">
-                        <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="/images/blog/google-business-kosmetik.jpg" alt="Google Business Profil für Kosmetikstudio" className="w-full h-full object-cover" />
+                        <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                            <Image src="/images/blog/google-business-kosmetik.jpg" alt="Google Business Profil für Kosmetikstudio" fill className="object-cover" sizes="(max-width: 768px) 100vw, 100vw" />
                         </div>
                     </div>
                     <div className="prose prose-lg max-w-none">
@@ -82,12 +83,12 @@ export default function BlogPost() {
 
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Bewertungen und Antworten</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Bewertungen beeinflussen, wo du in der Suche landest und ob jemand auf „Anrufen“ oder „Buchungslink“ klickt. Bitte deine zufriedenen Kundinnen ruhig um eine Bewertung – z.B. per Link nach der Behandlung oder in einer kurzen Nachricht. Und: Auf Bewertungen antworten. Auch auf negative. Sachlich und freundlich bleiben, bei echten Fehlern anbieten, das Gespräch zu suchen. So zeigst du, dass du zuhörst.
+                            Bewertungen beeinflussen, wo du in der Suche landest und ob jemand auf „Anrufen“ oder „Buchungslink“ klickt. Bitte deine zufriedenen Kundinnen ruhig um eine Bewertung – z.B. per Link nach der Behandlung oder über deine <Link href="/kundenverwaltung" className="text-indigo-600 hover:text-indigo-700 underline">Kundenverwaltung</Link>. Und: Auf Bewertungen antworten. Auch auf negative. Sachlich und freundlich bleiben, bei echten Fehlern anbieten, das Gespräch zu suchen. So zeigst du, dass du zuhörst.
                         </p>
 
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Buchungslink einbinden</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            In deinem Profil kannst du einen Button „Termin buchen“ oder „Website“ setzen. Wenn du Online-Buchung anbietest, den Buchungslink dort eintragen. Dann können Interessentinnen direkt vom Suchergebnis aus einen Termin buchen – ohne Umweg über die Website.
+                            In deinem Profil kannst du einen Button „Termin buchen“ oder „Website“ setzen. Wenn du <Link href="/online-buchungen" className="text-indigo-600 hover:text-indigo-700 underline">Online-Buchung</Link> anbietest, den Buchungslink dort eintragen. Dann können Interessentinnen direkt vom Suchergebnis aus einen Termin buchen – ohne Umweg über die Website. Eine <Link href="/kosmetikstudio-software" className="text-indigo-600 hover:text-indigo-700 underline">professionelle Studiosoftware</Link> hilft dir, alle Buchungskanäle zentral zu verwalten.
                         </p>
 
                         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-12">

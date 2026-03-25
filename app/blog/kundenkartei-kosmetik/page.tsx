@@ -5,7 +5,7 @@ import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Kundenkartei Kosmetik: Digital statt Zettelchaos | Treatflow Blog',
+  title: 'Kundenkartei Kosmetik: Digital statt Papier',
   description:
     'Kundenkartei für Kosmetikstudios digital aufbauen: bessere Übersicht, schnellere Abläufe und saubere Dokumentation pro Kundin.',
   keywords: [

@@ -1,17 +1,18 @@
 import { Users, Search, Upload, Database, CheckCircle, ArrowRight, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Digitale Kundenkartei fürs Kosmetikstudio – Historie, Notizen, Fotos | Treatflow',
+    title: 'Digitale Kundenkartei fürs Kosmetikstudio',
     description: 'Kundenverwaltung, Behandlungsverlauf und wichtige Infos an einem Ort. Weniger Zettel, mehr Überblick – sicher und strukturiert.',
     keywords: ['Kundenkartei Kosmetikstudio', 'Kundenverwaltung Kosmetikstudio', 'Digitale Kundenkartei Kosmetikstudio', 'Kundenkartei Kosmetik', 'digitale Kundenkartei Kosmetik', 'Kundenkartei App', 'CRM Beauty Salon', 'Kundenprofile Kosmetikstudio', 'Behandlungshistorie', 'DSGVO Kundendaten'],
     alternates: {
         canonical: 'https://www.treatflow.io/kundenverwaltung',
     },
     openGraph: {
-        title: 'Digitale Kundenkartei fürs Kosmetikstudio – Historie, Notizen, Fotos',
+        title: 'Kundenkartei Kosmetik: Historie, Notizen & Fotos',
         description: 'Kundenverwaltung, Behandlungsverlauf und wichtige Infos an einem Ort. Weniger Zettel, mehr Überblick.',
         url: 'https://www.treatflow.io/kundenverwaltung',
         images: [
@@ -48,7 +49,7 @@ export default function KundenverwaltungPage() {
                     </div>
 
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img src="/images/funktionen/hero-kundenverwaltung.jpg" alt="Gute Beziehung zu Kunden" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                        <Image src="/images/funktionen/hero-kundenverwaltung.jpg" alt="Gute Beziehung zu Kunden" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
                     </div>
 
                     {/* Kundenverwaltung Screenshot */}

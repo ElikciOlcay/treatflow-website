@@ -7,7 +7,7 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, ShoppingBag, TrendingUp
 
 
 export const metadata: Metadata = {
-    title: 'Zusatzumsatz im Kosmetikstudio: Produktverkauf richtig gemacht | Treatflow Blog',
+    title: 'Zusatzumsatz Kosmetikstudio: Produktverkauf',
     description: 'Steigere deinen Umsatz um bis zu 40% durch cleveren Produktverkauf. Welche Produkte sich lohnen und wie du sie erfolgreich verkaufst.',
     keywords: ["Produktverkauf Kosmetikstudio","Zusatzumsatz Beauty","Kosmetik Produkte verkaufen","Beauty Retail","Kosmetikstudio Umsatz","Beauty Salon Verkauf"],
     authors: [{ name: 'Treatflow Team' }],
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/blog/zusatzumsatz-kosmetikstudio-produkte',
     },
     openGraph: {
-        title: 'Zusatzumsatz im Kosmetikstudio: Produktverkauf richtig gemacht',
+        title: 'Zusatzumsatz im Kosmetikstudio: Produktverkauf',
         description: 'Steigere deinen Umsatz um bis zu 40% durch cleveren Produktverkauf. Welche Produkte sich lohnen und wie du sie erfolgreich verkaufst.',
         url: 'https://www.treatflow.io/blog/zusatzumsatz-kosmetikstudio-produkte',
         siteName: 'Treatflow Blog',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Zusatzumsatz im Kosmetikstudio: Produktverkauf richtig gemacht',
+        title: 'Zusatzumsatz im Kosmetikstudio: Produktverkauf',
         description: 'Steigere deinen Umsatz um bis zu 40% durch cleveren Produktverkauf. Welche Produkte sich lohnen und wie du sie erfolgreich verkaufst.',
         images: ['/images/blog/produktverkauf-guide.jpg'],
     },

@@ -7,8 +7,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Lash Studio Software - Termine, Kunden & Einwilligungen | Treatflow',
-    description: 'Die Software für Wimpernstudios und Lash Artists. Online-Buchungen, Kundenverwaltung, digitale Einwilligungen und automatische Erinnerungen. 14 Tage gratis testen.',
+    title: 'Lash Studio Software: Termine & Einwilligungen',
+    description: 'Software für Wimpernstudios und Lash Artists. Online-Buchungen, Kundenverwaltung, digitale Einwilligungen und automatische Erinnerungen. 14 Tage gratis.',
     keywords: [
         'Lash Studio Software',
         'Wimpernstudio Software',
@@ -26,7 +26,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/lash-studio-software',
     },
     openGraph: {
-        title: 'Lash Studio Software - Termine & Kundenverwaltung | Treatflow',
+        title: 'Lash Studio Software: Termine & Kundenverwaltung',
         description: 'Online-Buchungen, Einwilligungen und Kundenverwaltung für Wimpernstudios.',
         url: 'https://www.treatflow.io/lash-studio-software',
         images: [{ url: '/images/og-lash-software.jpg', width: 1200, height: 630, alt: 'Treatflow - Software für Lash Studios' }],

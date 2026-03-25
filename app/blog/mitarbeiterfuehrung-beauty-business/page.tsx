@@ -6,7 +6,7 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Users, Heart, CheckCirc
 
 
 export const metadata: Metadata = {
-    title: 'Mitarbeiterführung im Beauty-Business: Team erfolgreich leiten | Treatflow Blog',
+    title: 'Mitarbeiterführung im Beauty-Business',
     description: 'Erfolgreiche Mitarbeiterführung in Kosmetikstudios. Von der Einarbeitung bis zur Motivation - so führst du dein Beauty-Team zum Erfolg.',
     keywords: ["Mitarbeiterführung Beauty","Team Management Kosmetik","Beauty Team leiten","Kosmetikstudio Personal","Beauty Business Management","Salon Teamführung"],
     authors: [{ name: 'Treatflow Team' }],
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/blog/mitarbeiterfuehrung-beauty-business',
     },
     openGraph: {
-        title: 'Mitarbeiterführung im Beauty-Business: Team erfolgreich leiten',
+        title: 'Mitarbeiterführung im Beauty-Business: Team leiten',
         description: 'Erfolgreiche Mitarbeiterführung in Kosmetikstudios. Von der Einarbeitung bis zur Motivation - so führst du dein Beauty-Team zum Erfolg.',
         url: 'https://www.treatflow.io/blog/mitarbeiterfuehrung-beauty-business',
         siteName: 'Treatflow Blog',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Mitarbeiterführung im Beauty-Business: Team erfolgreich leiten',
+        title: 'Mitarbeiterführung im Beauty-Business: Team leiten',
         description: 'Erfolgreiche Mitarbeiterführung in Kosmetikstudios. Von der Einarbeitung bis zur Motivation - so führst du dein Beauty-Team zum Erfolg.',
         images: ['/images/blog/mitarbeiterfuehrung.jpg'],
     },
@@ -176,7 +176,7 @@ export default function BlogPost() {
                                 <ul className="text-gray-700 text-sm space-y-1">
                                     <li>• Studio-Tour und Sicherheitseinweisung</li>
                                     <li>• Vorstellung des Teams und der Abläufe</li>
-                                    <li>• Einarbeitung in die Software (Treatflow)</li>
+                                    <li>• Einarbeitung in die <Link href="/kosmetikstudio-software" className="text-indigo-600 underline hover:text-indigo-800">Studio-Software</Link> (Treatflow)</li>
                                     <li>• Beobachtung erfahrener Kollegen</li>
                                 </ul>
                             </div>
@@ -288,7 +288,7 @@ export default function BlogPost() {
                                 <ul className="text-gray-700 text-sm space-y-1">
                                     <li>• Klare Regeln und Prozesse definieren</li>
                                     <li>• Offene Gesprächskultur etablieren</li>
-                                    <li>• Fairness bei Terminverteilung sicherstellen</li>
+                                    <li>• Fairness bei Terminverteilung sicherstellen - eine gute <Link href="/kundenverwaltung" className="text-indigo-600 underline hover:text-indigo-800">Kundenverwaltung</Link> hilft dabei</li>
                                     <li>• Mediation bei Konflikten anbieten</li>
                                     <li>• Regelmäßige Teambuilding-Aktivitäten</li>
                                 </ul>
@@ -310,7 +310,7 @@ export default function BlogPost() {
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-purple-600 mr-3" />
-                                    <span className="text-purple-800">Terminplanung mit automatischer Verteilung</span>
+                                    <span className="text-purple-800"><Link href="/terminkalender" className="underline hover:text-indigo-600">Terminplanung</Link> mit automatischer Verteilung</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-purple-600 mr-3" />

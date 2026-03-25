@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-    title: "Datenschutzerklärung - Treatflow DSGVO konform | Treatflow",
+    title: "Datenschutzerklärung - Treatflow DSGVO konform",
     description: "Datenschutzerklärung und DSGVO-konforme Informationen zur Datenverarbeitung bei Treatflow. Ihre Rechte, Cookies, Datenerhebung und Kontaktmöglichkeiten.",
     alternates: {
         canonical: 'https://www.treatflow.io/datenschutz',

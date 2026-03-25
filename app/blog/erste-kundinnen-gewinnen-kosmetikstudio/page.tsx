@@ -2,10 +2,11 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Erste Kundinnen gewinnen: Tipps für neue Kosmetikstudios | Treatflow Blog',
+    title: 'Erste Kundinnen gewinnen: Tipps für Studios',
     description: 'Neu eröffnet und noch wenig gebucht? So kommst du zu den ersten Terminen – ohne teures Marketing.',
     keywords: ['Erste Kunden Kosmetikstudio', 'Neues Studio Kunden gewinnen', 'Kosmetikstudio Start', 'Kundenakquise Beauty', 'Studio eröffnen'],
     authors: [{ name: 'Treatflow Team' }],
@@ -68,8 +69,8 @@ export default function BlogPost() {
                         </p>
                     </div>
                     <div className="mb-12">
-                        <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="/images/blog/erste-kundinnen-gewinnen.jpg" alt="Erste Kundinnen für neues Kosmetikstudio gewinnen" className="w-full h-full object-cover" />
+                        <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                            <Image src="/images/blog/erste-kundinnen-gewinnen.jpg" alt="Erste Kundinnen für neues Kosmetikstudio gewinnen" fill className="object-cover" sizes="(max-width: 768px) 100vw, 100vw" />
                         </div>
                     </div>
                     <div className="prose prose-lg max-w-none">
@@ -81,10 +82,10 @@ export default function BlogPost() {
                         </p>
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Online buchbar von Anfang an</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Wenn jemand deinen Buchungslink sieht (auf Google, Instagram oder der Website), kann sie sofort einen Termin wählen. Kein Hin und Her per Telefon oder Nachricht. Gerade für neue Studios ist das ein Plus: Du wirkst von vornherein professionell, und du verlierst keine Interessentin, weil gerade niemand ans Telefon geht.
+                            Wenn jemand deinen <Link href="/online-buchungen" className="text-indigo-600 hover:text-indigo-700 underline">Buchungslink</Link> sieht (auf Google, Instagram oder der Website), kann sie sofort einen Termin wählen. Kein Hin und Her per Telefon oder Nachricht. Gerade für neue Studios ist das ein Plus: Du wirkst mit der richtigen <Link href="/kosmetikstudio-software" className="text-indigo-600 hover:text-indigo-700 underline">Studiosoftware</Link> von vornherein professionell, und du verlierst keine Interessentin, weil gerade niemand ans Telefon geht.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Ein kleiner Tipp: In den ersten Wochen kannst du z.B. eine „Eröffnungsaktion“ anbieten – z.B. 10 Prozent auf die erste Behandlung. Das motiviert zum Ausprobieren. Den Gutschein oder den Hinweis kannst du in deinem Profil und in deinen Posts erwähnen.
+                            Ein kleiner Tipp: In den ersten Wochen kannst du z.B. eine „Eröffnungsaktion“ anbieten – z.B. 10 Prozent auf die erste Behandlung. Das motiviert zum Ausprobieren. Den Gutschein oder den Hinweis kannst du in deinem Profil und in deinen Posts erwähnen. Mit <Link href="/nachrichtenautomatisierung" className="text-indigo-600 hover:text-indigo-700 underline">automatischen Nachrichten</Link> erinnerst du Neukunden außerdem an ihren nächsten Termin.
                         </p>
                         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-12">
                             <h3 className="text-2xl font-bold mb-4">Buchungslink von Tag eins</h3>

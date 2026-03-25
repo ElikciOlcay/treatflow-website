@@ -2,12 +2,13 @@ import {
     ClipboardCheck, FileText, CheckCircle, ArrowRight, X, Shield,
     Smartphone, Users, Clock, Zap
 } from 'lucide-react';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Digitale Anamnese für Kosmetikstudios - Formulare papierlos ausfüllen | Treatflow',
-    description: 'Digitale Anamnesebögen für dein Kosmetikstudio. Kunden füllen Formulare vorab per Link aus - mit elektronischer Unterschrift. DSGVO-konform. 14 Tage gratis.',
+    title: 'Digitale Anamnese Kosmetikstudio: papierlos',
+    description: 'Digitale Anamnesebögen fürs Kosmetikstudio. Formulare vorab per Link ausfüllen – mit elektronischer Unterschrift. DSGVO-konform. 14 Tage gratis.',
     keywords: [
         'Digitale Anamnese Kosmetikstudio',
         'Anamnesebogen digital Kosmetik',
@@ -21,7 +22,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/digitale-anamnese-kosmetikstudio',
     },
     openGraph: {
-        title: 'Digitale Anamnese für Kosmetikstudios - Formulare papierlos ausfüllen | Treatflow',
+        title: 'Digitale Anamnese Kosmetikstudio: Formulare papierlos',
         description: 'Digitale Anamnesebögen für dein Kosmetikstudio. Kunden füllen Formulare vorab per Link aus - mit elektronischer Unterschrift. DSGVO-konform.',
         url: 'https://www.treatflow.io/digitale-anamnese-kosmetikstudio',
         images: [
@@ -152,7 +153,7 @@ export default function DigitaleAnamneseKosmetikstudioPage() {
                         <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img src="/images/funktionen/hero-formulare-anamnese.jpg" alt="Digitale Formulare, Vertrauen und Ordnung" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                        <Image src="/images/funktionen/hero-formulare-anamnese.jpg" alt="Digitale Formulare, Vertrauen und Ordnung" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
                     </div>
                 </div>
             </section>

@@ -5,15 +5,15 @@ import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Sparkles, CheckCircle, Star, TrendingUp } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt | Treatflow Blog',
-    description: 'Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends, mit denen du dein Kosmetikstudio 2024 erfolgreich positionierst.',
+    title: 'Anti-Aging Trends 2024: Gefragte Behandlungen',
+    description: 'Von Micro-Needling bis zu Peptid-Therapien: Entdecke die neuesten Anti-Aging Trends für dein Kosmetikstudio 2024.',
     keywords: ['Anti-Aging Trends 2024', 'Micro-Needling', 'Peptid-Therapien', 'Anti-Aging Behandlungen', 'Kosmetikstudio Trends', 'Beauty Trends 2024'],
     authors: [{ name: 'Treatflow Team' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/anti-aging-trends-2024',
     },
     openGraph: {
-        title: 'Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt',
+        title: 'Anti-Aging Trends 2024: Gefragte Behandlungen',
         description: 'Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends für dein Kosmetikstudio.',
         url: 'https://www.treatflow.io/blog/anti-aging-trends-2024',
         siteName: 'Treatflow Blog',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt',
+        title: 'Anti-Aging Trends 2024: Gefragte Behandlungen',
         description: 'Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - die neuesten Anti-Aging Trends für dein Studio.',
         images: ['/images/blog/anti-aging-trends-2024.jpg'],
     },
@@ -532,7 +532,7 @@ export default function BlogPost() {
                             <ul className="space-y-2">
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
-                                    <span className="text-indigo-800">Behandlungsdokumentation mit Foto-Management</span>
+                                    <span className="text-indigo-800"><Link href="/behandlungsdokumentation" className="underline hover:text-indigo-600">Behandlungsdokumentation</Link> mit Foto-Management</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
@@ -544,7 +544,7 @@ export default function BlogPost() {
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
-                                    <span className="text-indigo-800">Formularsystem für Anamnesen und Aufklärung</span>
+                                    <span className="text-indigo-800"><Link href="/formulare" className="underline hover:text-indigo-600">Formularsystem</Link> für Anamnesen und Aufklärung</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-indigo-600 mr-3" />
@@ -558,6 +558,7 @@ export default function BlogPost() {
                         <p className="text-gray-700 leading-relaxed mb-6">
                             2024 bietet Kosmetikstudios so viele Anti-Aging Möglichkeiten wie nie zuvor. Von personalisierten
                             Peptid-Therapien bis hin zu KI-gestützter Hautanalyse - die Technologie entwickelt sich rasant.
+                            Eine gute <Link href="/kosmetikstudio-software" className="text-indigo-600 underline hover:text-indigo-800">Kosmetikstudio-Software</Link> hilft dir, den Überblick über alle Behandlungen zu behalten.
                         </p>
 
                         <p className="text-gray-700 leading-relaxed mb-8">

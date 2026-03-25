@@ -2,10 +2,11 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'DSGVO im Kosmetikstudio: Datenschutz ohne Panik | Treatflow Blog',
+    title: 'DSGVO Kosmetikstudio: Datenschutz ohne Panik',
     description: 'Kundendaten, Fotos, Anamnese – was du speichern darfst, was du brauchst und wie du DSGVO-konform bleibst.',
     keywords: ['DSGVO Kosmetikstudio', 'Datenschutz Beauty', 'Kundendaten speichern', 'DSGVO konform Beauty', 'Kosmetikstudio Datenschutz'],
     authors: [{ name: 'Treatflow Team' }],
@@ -68,20 +69,20 @@ export default function BlogPost() {
                         </p>
                     </div>
                     <div className="mb-12">
-                        <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                            <img src="/images/blog/dsgvo-kosmetikstudio.jpg" alt="Datenschutz und DSGVO im Kosmetikstudio" className="w-full h-full object-cover" />
+                        <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                            <Image src="/images/blog/dsgvo-kosmetikstudio.jpg" alt="Datenschutz und DSGVO im Kosmetikstudio" fill className="object-cover" sizes="(max-width: 768px) 100vw, 100vw" />
                         </div>
                     </div>
                     <div className="prose prose-lg max-w-none">
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Die DSGVO klingt nach Bürokratie und Strafen. In der Praxis geht es vor allem um zwei Dinge: Du verarbeitest personenbezogene Daten nur mit Rechtsgrundlage (Vertrag, Einwilligung, berechtigtes Interesse), und du behandelst sie sicher. Für ein Kosmetikstudio heißt das: Namen, Adressen, Anamnesen, Behandlungsnotizen und eventuell Fotos – alles das unterliegt dem Datenschutz.
+                            Die DSGVO klingt nach Bürokratie und Strafen. In der Praxis geht es vor allem um zwei Dinge: Du verarbeitest personenbezogene Daten nur mit Rechtsgrundlage (Vertrag, Einwilligung, berechtigtes Interesse), und du behandelst sie sicher. Für ein Kosmetikstudio heißt das: Namen, Adressen, Anamnesen, Behandlungsnotizen und eventuell Fotos – alles das gehört in eine sichere <Link href="/kundenverwaltung" className="text-indigo-600 hover:text-indigo-700 underline">digitale Kundenverwaltung</Link> und unterliegt dem Datenschutz.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Du brauchst eine Datenschutzerklärung (auf der Website und wenn du Daten erhebst), und idealerweise eine kurze Info, was du warum speicherst. Bei Fotos (z.B. Vorher-Nachher) ist eine explizite Einwilligung nötig. Die Aufbewahrungsfristen für Anamnese und Behandlungsdokumentation solltest du kennen – oft sind das mehrere Jahre. Nach Ablauf solltest du löschen oder anonymisieren, wenn du die Daten nicht mehr brauchst.
+                            Du brauchst eine Datenschutzerklärung (auf der Website und wenn du Daten erhebst), und idealerweise eine kurze Info, was du warum speicherst. Bei Fotos (z.B. Vorher-Nachher) ist eine explizite Einwilligung nötig. Die Aufbewahrungsfristen für <Link href="/formulare" className="text-indigo-600 hover:text-indigo-700 underline">Anamnese und Behandlungsdokumentation</Link> solltest du kennen – oft sind das mehrere Jahre. Nach Ablauf solltest du löschen oder anonymisieren, wenn du die Daten nicht mehr brauchst.
                         </p>
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Wo liegen die Daten?</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Wenn du Software nutzt: Serverstandort und Vertrag prüfen. EU-Server und ein Auftragsverarbeitungsvertrag (AV-Vertrag) sind Standard bei seriösen Anbietern. So weißt du, wer deine Kundendaten wo verarbeitet und dass die Anbieter sich vertraglich an die DSGVO halten.
+                            Wenn du <Link href="/kosmetikstudio-software" className="text-indigo-600 hover:text-indigo-700 underline">Studiosoftware</Link> nutzt: Serverstandort und Vertrag prüfen. EU-Server und ein Auftragsverarbeitungsvertrag (AV-Vertrag) sind Standard bei seriösen Anbietern. So weißt du, wer deine Kundendaten wo verarbeitet und dass die Anbieter sich vertraglich an die DSGVO halten.
                         </p>
                         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-12">
                             <h3 className="text-2xl font-bold mb-4">Treatflow: EU-Hosting, DSGVO-konform</h3>

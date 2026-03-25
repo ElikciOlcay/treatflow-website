@@ -6,7 +6,7 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Instagram, Heart, Eye, 
 
 
 export const metadata: Metadata = {
-    title: 'Social Media Marketing für Kosmetikstudios: Instagram & TikTok Erfolg | Treatflow Blog',
+    title: 'Social Media Marketing für Kosmetikstudios',
     description: 'Erfolgreiches Social Media Marketing für Beauty-Studios. Content-Strategien, Hashtag-Tipps und Kundengewinnung über Instagram und TikTok.',
     keywords: ["Social Media Beauty","Instagram Kosmetikstudio","TikTok Beauty Marketing","Beauty Content Marketing","Kosmetik Social Media","Beauty Influencer"],
     authors: [{ name: 'Treatflow Team' }],
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/blog/social-media-marketing-kosmetikstudio',
     },
     openGraph: {
-        title: 'Social Media Marketing für Kosmetikstudios: Instagram & TikTok Erfolg',
+        title: 'Social Media für Kosmetikstudios: Instagram & TikTok',
         description: 'Erfolgreiches Social Media Marketing für Beauty-Studios. Content-Strategien, Hashtag-Tipps und Kundengewinnung über Instagram und TikTok.',
         url: 'https://www.treatflow.io/blog/social-media-marketing-kosmetikstudio',
         siteName: 'Treatflow Blog',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Social Media Marketing für Kosmetikstudios: Instagram & TikTok Erfolg',
+        title: 'Social Media für Kosmetikstudios: Instagram & TikTok',
         description: 'Erfolgreiches Social Media Marketing für Beauty-Studios. Content-Strategien, Hashtag-Tipps und Kundengewinnung über Instagram und TikTok.',
         images: ['/images/blog/social-media-marketing.jpg'],
     },
@@ -143,6 +143,7 @@ export default function BlogPost() {
                         <p className="text-gray-700 leading-relaxed mb-6">
                             Deine Arbeit ist visuell beeindruckend - perfekt für Social Media! Doch viele Kosmetikerinnen wissen nicht,
                             wie sie ihre Expertise online präsentieren sollen. Oder sie haben keine Zeit für aufwendige Content-Erstellung.
+                            Mit der richtigen <Link href="/kosmetikstudio-software" className="text-indigo-600 underline hover:text-indigo-800">Kosmetikstudio-Software</Link> sparst du wertvolle Zeit für deine Social-Media-Aktivitäten.
                         </p>
 
                         <p className="text-gray-700 leading-relaxed mb-8">
@@ -182,7 +183,7 @@ export default function BlogPost() {
                                 <h4 className="font-semibold text-orange-900 mb-3">Kosteneffektives Marketing</h4>
                                 <p className="text-orange-800 text-sm">
                                     Social Media Marketing kostet einen Bruchteil von traditioneller Werbung
-                                    und erreicht deine Zielgruppe präziser.
+                                    und erreicht deine Zielgruppe präziser. Kombiniere es mit <Link href="/nachrichtenautomatisierung" className="underline hover:text-indigo-600">automatisierten Nachrichten</Link> für noch bessere Ergebnisse.
                                 </p>
                             </div>
                         </div>

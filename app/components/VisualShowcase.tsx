@@ -1,4 +1,4 @@
-// import { Camera } from "lucide-react"; // Removed unused import
+import Image from 'next/image';
 
 export default function VisualShowcase() {
     return (
@@ -41,10 +41,13 @@ export default function VisualShowcase() {
 
                     {/* Kundenverwaltung Screenshot */}
                     <div className="rounded-2xl overflow-hidden shadow-xl">
-                        <img
+                        <Image
                             src="/images/mockups/kundenverwaltung-overview.png"
                             alt="Treatflow Kundenverwaltung - Übersichtliche Darstellung aller Kunden mit Suchfunktion"
+                            width={1200}
+                            height={800}
                             className="w-full h-auto"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     </div>
                 </div>
@@ -53,10 +56,13 @@ export default function VisualShowcase() {
                 <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
                     {/* Formulare Marketplace Screenshot */}
                     <div className="rounded-2xl overflow-hidden shadow-xl">
-                        <img
+                        <Image
                             src="/images/mockups/formulare-marketplace.png"
                             alt="Treatflow Formulare Marketplace - Professionelle Formulare für alle Beauty-Behandlungen"
+                            width={1200}
+                            height={800}
                             className="w-full h-auto"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     </div>
 
@@ -117,10 +123,13 @@ export default function VisualShowcase() {
 
                     {/* Kalender Screenshot */}
                     <div className="rounded-2xl overflow-hidden shadow-xl">
-                        <img
+                        <Image
                             src="/images/mockups/kalender-overview.png"
                             alt="Treatflow Terminkalender - Übersichtliche Terminverwaltung mit Online-Buchungen"
+                            width={1200}
+                            height={800}
                             className="w-full h-auto"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     </div>
                 </div>

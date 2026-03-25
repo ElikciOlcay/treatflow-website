@@ -6,12 +6,12 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'Kosmetikstudio Software Berlin - Online-Buchungen & Verwaltung | Treatflow',
+  title: 'Kosmetikstudio Software Berlin: Termine & mehr',
   description: 'Software für Kosmetikstudios in Berlin. Online-Terminbuchung, Kundenverwaltung und digitale Formulare. DSGVO-konform. 14 Tage gratis testen.',
   keywords: ['Kosmetikstudio Software Berlin', 'Beauty Software Berlin', 'Kosmetik Berlin Terminbuchung', 'Studio Software Berlin', 'Kosmetikstudio Berlin digital'],
   alternates: { canonical: 'https://www.treatflow.io/kosmetikstudio-software-berlin' },
   openGraph: {
-    title: 'Kosmetikstudio Software Berlin - Online-Buchungen & Verwaltung | Treatflow',
+    title: 'Kosmetikstudio Software Berlin: Online-Buchungen',
     description: 'Software für Kosmetikstudios in Berlin. Online-Terminbuchung, Kundenverwaltung, digitale Formulare. DSGVO-konform.',
     url: 'https://www.treatflow.io/kosmetikstudio-software-berlin',
   },

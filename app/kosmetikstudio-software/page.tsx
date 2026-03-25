@@ -7,8 +7,8 @@ import Link from 'next/link';
 const clusterPages = [
     {
         href: '/schoenheitssalon-software',
-        title: 'Schoenheitssalon Software',
-        description: 'Software-Landing fuer Beauty- und Schoenheitssalons',
+        title: 'Schönheitssalon Software',
+        description: 'Terminplanung und Kundenverwaltung für Beauty-Salons',
         icon: Star,
     },
     {
@@ -40,8 +40,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Kosmetikstudio Software - Termine, Kunden & Dokumentation | Treatflow',
-    description: 'Die moderne Software für Kosmetikstudios. Online-Buchungen, Kundenverwaltung, digitale Formulare und Behandlungsdokumentation in einer Plattform. 14 Tage gratis testen.',
+    title: 'Kosmetikstudio Software: Termine, Kunden & Doku',
+    description: 'All-in-One Software für dein Kosmetikstudio: Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation. 14 Tage kostenlos testen.',
     keywords: [
         'Kosmetikstudio Software',
         'Software für Kosmetikstudio',
@@ -62,7 +62,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/kosmetikstudio-software',
     },
     openGraph: {
-        title: 'Kosmetikstudio Software - Die All-in-One Lösung für dein Studio | Treatflow',
+        title: 'Kosmetikstudio Software: Termine, Kunden & Doku in einer App',
         description: 'Online-Buchungen, Kundenverwaltung, digitale Formulare und Behandlungsdokumentation - alles in einer modernen Plattform.',
         url: 'https://www.treatflow.io/kosmetikstudio-software',
         images: [
@@ -188,7 +188,7 @@ export default function KosmetikstudioSoftwarePage() {
                             Deine All-in-One Software für Kosmetikstudios
                         </div>
                         <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                            Die moderne Software für dein{' '}
+                            Die Software für dein{' '}
                             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                                 Kosmetikstudio
                             </span>

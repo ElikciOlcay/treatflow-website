@@ -8,8 +8,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Digitale Kundenkartei Kosmetikstudio - Kundenkartei Software | Treatflow',
-    description: 'Digitale Kundenkartei und Kundenkartei Software für Kosmetikstudios: Kundendaten, Behandlungshistorie, Fotos und Notizen zentral verwalten. 14 Tage kostenlos testen.',
+    title: 'Digitale Kundenkartei für dein Kosmetikstudio',
+    description: 'Kundendaten, Behandlungshistorie, Fotos und Notizen zentral verwalten. Die digitale Kundenkartei für Kosmetikstudios - DSGVO-konform und 14 Tage kostenlos.',
     keywords: [
         'Kundenkartei Kosmetik',
         'digitale Kundenkartei Kosmetik',
@@ -27,8 +27,8 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/kundenkartei-kosmetikstudio',
     },
     openGraph: {
-        title: 'Digitale Kundenkartei Kosmetikstudio - Kundenverwaltung | Treatflow',
-        description: 'Digitale Kundenkartei für Kosmetikstudios: Kundendaten, Behandlungshistorie, Fotos und Notizen zentral verwalten. DSGVO-konform. 14 Tage kostenlos testen.',
+        title: 'Digitale Kundenkartei für dein Kosmetikstudio | Treatflow',
+        description: 'Kundendaten, Behandlungshistorie, Fotos und Notizen zentral verwalten. DSGVO-konform und 14 Tage kostenlos testen.',
         url: 'https://www.treatflow.io/kundenkartei-kosmetikstudio',
         images: [
             {
@@ -264,8 +264,8 @@ export default function KundenkarteiKosmetikstudioPage() {
                             Behandlungshistorien und Fotos in eine zentrale, DSGVO-konforme Plattform.
                         </p>
                         <p className="text-sm text-gray-500 max-w-3xl mx-auto mb-8">
-                            Du suchst eine Kundenkartei Software oder Kundenkartei App für dein Kosmetikstudio?
-                            Hier findest du den direkten Vergleich zu papierbasierten und kostenlosen Lösungen.
+                            Erfahre, wie du von Papierkarteien auf eine digitale Lösung umsteigst - 
+                            und warum sich das im Alltag sofort bemerkbar macht.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a

@@ -7,8 +7,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Software für Laser Haarentfernung - Termine, Kunden & Dokumentation | Treatflow',
-    description: 'Die spezialisierte Software für Laser-Studios und IPL-Haarentfernung. NiSV-konforme Dokumentation, digitale Einwilligungen, Online-Buchungen und Kundenverwaltung. Jetzt testen.',
+    title: 'Software für Laser Haarentfernung & NiSV-Doku',
+    description: 'Software für Laser-Studios und IPL. NiSV-konforme Dokumentation, digitale Einwilligungen, Online-Buchungen und Kundenverwaltung. Jetzt 14 Tage testen.',
     keywords: [
         'Laser Haarentfernung Software',
         'Software Laser Studio',
@@ -26,7 +26,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/laser-haarentfernung-software',
     },
     openGraph: {
-        title: 'Software für Laser Haarentfernung - NiSV-konform dokumentieren | Treatflow',
+        title: 'Software für Laser Haarentfernung: NiSV-konform',
         description: 'NiSV-konforme Dokumentation, digitale Einwilligungen und Online-Buchungen für Laser-Studios.',
         url: 'https://www.treatflow.io/laser-haarentfernung-software',
         images: [
@@ -305,6 +305,11 @@ export default function LaserHaarentfernungSoftwarePage() {
                         <Link href="/nisv-dokumentation-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
                             <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">NiSV-Dokumentation Kosmetik</span>
                             <span className="text-sm text-gray-600 block mb-2">Rechtssicher dokumentieren</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
+                        </Link>
+                        <Link href="/laserstudio-software-deutschland" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Laserstudio Software Deutschland</span>
+                            <span className="text-sm text-gray-600 block mb-2">NiSV-konform in ganz Deutschland</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
                     </div>

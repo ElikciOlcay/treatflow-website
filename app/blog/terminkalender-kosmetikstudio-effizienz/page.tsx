@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, CheckCircle, AlertTriangle, Users, Zap, TrendingUp, Target, Timer } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Effizienter Terminkalender im Kosmetikstudio: So planst du deinen Tag perfekt | Treatflow Blog',
-    description: 'Optimiere deinen Terminkalender und steigere die Effizienz um 40%. Professionelle Tipps für bessere Terminplanung, weniger Stress und mehr Umsatz im Kosmetikstudio.',
+    title: 'Terminkalender im Kosmetikstudio optimieren',
+    description: 'Optimiere deinen Terminkalender und steigere die Effizienz um 40%. Tipps für bessere Terminplanung und mehr Umsatz im Kosmetikstudio.',
     keywords: [
         'Terminkalender Kosmetikstudio',
         'Terminplanung Beauty Studio',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/blog/terminkalender-kosmetikstudio-effizienz',
     },
     openGraph: {
-        title: 'Effizienter Terminkalender im Kosmetikstudio: So planst du deinen Tag perfekt',
+        title: 'Terminkalender Kosmetikstudio: So planst du perfekt',
         description: 'Optimiere deinen Terminkalender und steigere die Effizienz um 40%. Professionelle Tipps für bessere Terminplanung und mehr Umsatz.',
         url: 'https://www.treatflow.io/blog/terminkalender-kosmetikstudio-effizienz',
         siteName: 'Treatflow Blog',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Effizienter Terminkalender im Kosmetikstudio: So planst du deinen Tag perfekt',
+        title: 'Terminkalender Kosmetikstudio: So planst du perfekt',
         description: 'Optimiere deinen Terminkalender und steigere die Effizienz um 40%. Professionelle Tipps für bessere Terminplanung.',
         images: ['/images/blog/terminkalender.png'],
     },
@@ -426,7 +426,7 @@ export default function BlogPost() {
                                     "Ich führe meinen Terminkalender noch handschriftlich."
                                 </p>
                                 <p className="text-green-800 font-medium">
-                                    ✅ Lösung: Digitale Terminkalender mit automatischen Erinnerungen und Online-Buchung.
+                                    ✅ Lösung: Digitale Terminkalender mit <Link href="/nachrichtenautomatisierung" className="underline hover:text-indigo-600">automatischen Erinnerungen</Link> und <Link href="/online-buchungen" className="underline hover:text-indigo-600">Online-Buchung</Link>.
                                 </p>
                             </div>
                         </div>
@@ -462,8 +462,8 @@ export default function BlogPost() {
                                 </h3>
                                 <div className="space-y-3">
                                     <div className="text-green-600 text-sm">
-                                        ✅ Automatische Erinnerungen<br/>
-                                        ✅ Online-Buchungen 24/7<br/>
+                                        ✅ <Link href="/nachrichtenautomatisierung" className="underline hover:text-indigo-600">Automatische Erinnerungen</Link><br/>
+                                        ✅ <Link href="/online-buchungen" className="underline hover:text-indigo-600">Online-Buchungen 24/7</Link><br/>
                                         ✅ Keine Doppelbuchungen<br/>
                                         ✅ Automatische Backups<br/>
                                         ✅ Kundendaten integriert<br/>

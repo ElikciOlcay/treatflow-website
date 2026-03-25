@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, ArrowRight, CheckCircle, Star, Zap, Shield, Users, Smartphone } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Beste Kosmetikstudio Software 2026 - Der ultimative Vergleich | Treatflow Blog',
+    title: 'Beste Kosmetikstudio Software 2026: Vergleich',
     description: 'Welche Software eignet sich am besten für dein Kosmetikstudio? Wir vergleichen die besten Lösungen 2026 nach Funktionen, Preis und Bedienung.',
     keywords: [
         'Beste Kosmetikstudio Software',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/blog/beste-kosmetikstudio-software-2026',
     },
     openGraph: {
-        title: 'Beste Kosmetikstudio Software 2026 - Der ultimative Vergleich',
+        title: 'Beste Kosmetikstudio Software 2026 im Vergleich',
         description: 'Welche Software eignet sich am besten für dein Kosmetikstudio? Wir vergleichen die besten Lösungen 2026.',
         url: 'https://www.treatflow.io/blog/beste-kosmetikstudio-software-2026',
         siteName: 'Treatflow Blog',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Beste Kosmetikstudio Software 2026 - Der ultimative Vergleich',
+        title: 'Beste Kosmetikstudio Software 2026 im Vergleich',
         description: 'Welche Software eignet sich am besten für dein Kosmetikstudio? Der große Vergleich 2026.',
         images: ['/images/blog/beste-kosmetikstudio-software-2026.jpg'],
     },

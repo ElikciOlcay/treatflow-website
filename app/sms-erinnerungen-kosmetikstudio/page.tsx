@@ -11,11 +11,12 @@ import {
     Smartphone,
 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'SMS-Erinnerungen für Kosmetikstudios - No-Shows reduzieren | Treatflow',
+    title: 'SMS-Erinnerungen Kosmetik: weniger No-Shows',
     description:
         'Automatische SMS-Erinnerungen für dein Kosmetikstudio. Reduziere No-Shows um bis zu 80% mit Terminerinnerungen per SMS und E-Mail. 14 Tage gratis.',
     keywords: [
@@ -31,7 +32,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/sms-erinnerungen-kosmetikstudio',
     },
     openGraph: {
-        title: 'SMS-Erinnerungen für Kosmetikstudios - No-Shows reduzieren | Treatflow',
+        title: 'SMS-Erinnerungen Kosmetikstudio: No-Shows reduzieren',
         description:
             'Automatische SMS-Erinnerungen für dein Kosmetikstudio. Reduziere No-Shows um bis zu 80% mit Terminerinnerungen per SMS und E-Mail.',
         url: 'https://www.treatflow.io/sms-erinnerungen-kosmetikstudio',
@@ -113,7 +114,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                         </div>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img src="/images/funktionen/hero-sms-erinnerungen.jpg" alt="Erinnerung erhalten, Ruhe und Zuverlaessigkeit" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                        <Image src="/images/funktionen/hero-sms-erinnerungen.jpg" alt="Erinnerung erhalten, Ruhe und Zuverlaessigkeit" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
                     </div>
                 </div>
             </section>

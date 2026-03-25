@@ -5,11 +5,11 @@ import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Schönheitssalon Software: Was 2026 wirklich wichtig ist | Treatflow Blog',
+  title: 'Schönheitssalon Software: Worauf es ankommt',
   description:
     'Welche Schönheitssalon Software passt wirklich? Die wichtigsten Funktionen, typische Fehler und klare Auswahlkriterien für Studios.',
   keywords: [
-    'schoenheitssalon software',
+    'schönheitssalon software',
     'beauty salon software',
     'software für schönheitssalon',
     'beste beauty software',

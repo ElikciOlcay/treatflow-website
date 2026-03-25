@@ -7,7 +7,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Tattoo Studio Software - Termine, Kunden & Einwilligungen | Treatflow',
+    title: 'Tattoo Studio Software: Termine & Verwaltung',
     description: 'Die Software für Tattoo Studios. Digitale Einwilligungsformulare, Kundenverwaltung, Online-Terminbuchung und Dokumentation. 14 Tage gratis testen.',
     keywords: [
         'Tattoo Studio Software',
@@ -26,7 +26,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/tattoo-studio-software',
     },
     openGraph: {
-        title: 'Tattoo Studio Software - Einwilligungen & Kundenverwaltung | Treatflow',
+        title: 'Tattoo Studio Software: Einwilligungen & Verwaltung',
         description: 'Digitale Einwilligungen, Online-Buchungen und Kundenverwaltung für Tattoo Studios.',
         url: 'https://www.treatflow.io/tattoo-studio-software',
         images: [

@@ -1,17 +1,18 @@
 import { Clock, Heart, CheckCircle, ArrowRight, Zap, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Nachrichtenautomatisierung für Kosmetikstudios - SMS & E-Mail Erinnerungen | Treatflow',
-    description: 'Automatische Nachrichten per E-Mail und SMS für Kosmetikstudios: Terminbestätigungen, Erinnerungen, Stornierungen, Follow-ups und Geburtstagswünsche. Ab 0,09 EUR pro SMS.',
+    title: 'SMS & E-Mail Erinnerungen fürs Kosmetikstudio',
+    description: 'Automatische Nachrichten per E-Mail und SMS für Kosmetikstudios: Terminbestätigungen, Erinnerungen, Stornierungen und Follow-ups. Ab 0,09 EUR pro SMS.',
     keywords: ['Nachrichtenautomatisierung Kosmetik', 'SMS Terminerinnerung Kosmetikstudio', 'No-Show reduzieren Kosmetikstudio', 'Automatische Terminerinnerungen', 'SMS Terminbestätigung', 'Follow-up E-Mails', 'Geburtstagswünsche automatisch', 'Kundenbindung Beauty Studio'],
     alternates: {
         canonical: 'https://www.treatflow.io/nachrichtenautomatisierung',
     },
     openGraph: {
-        title: 'Nachrichtenautomatisierung für Kosmetikstudios - SMS & E-Mail Erinnerungen',
+        title: 'SMS & E-Mail Erinnerungen für Kosmetikstudios',
         description: 'Automatische Nachrichten per E-Mail und SMS: Terminbestätigungen, Erinnerungen, Stornierungen und Follow-ups.',
         url: 'https://www.treatflow.io/nachrichtenautomatisierung',
         images: [
@@ -48,7 +49,7 @@ export default function NachrichtenautomatisierungPage() {
                     </div>
 
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img src="/images/funktionen/hero-frau-smartphone.jpg" alt="Frau mit Smartphone – persoenliche Nachrichten erreichen deine Kunden" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                        <Image src="/images/funktionen/hero-frau-smartphone.jpg" alt="Frau mit Smartphone – persönliche Nachrichten erreichen deine Kunden" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
                     </div>
                 </div>
             </section>

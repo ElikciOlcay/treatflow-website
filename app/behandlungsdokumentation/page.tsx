@@ -1,17 +1,18 @@
 import { FileText, Camera, Zap, Clock, CheckCircle, ArrowRight, Brain, Shield } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export const metadata = {
-    title: 'Behandlungsdokumentation Kosmetik - digital & NiSV-konform | Treatflow',
+    title: 'Behandlungsdokumentation Kosmetik digital',
     description: 'Digitale Behandlungsdokumentation Kosmetik mit Vorher-Nachher-Fotos, Notizen und Historie. Strukturiert, nachvollziehbar und NiSV-konform.',
     keywords: ['Behandlungsdokumentation Kosmetik', 'Behandlungsdokumentation Kosmetikstudio', 'Vorher Nachher Fotos Software', 'Dokumentation App Kosmetikstudio', 'NiSV konform dokumentieren', 'Behandlungsdokumentation Software Kosmetik', 'NiSV Dokumentation Software', 'Automatische Behandlungsnotizen', 'Rechtssichere Dokumentation'],
     alternates: {
         canonical: 'https://www.treatflow.io/behandlungsdokumentation',
     },
     openGraph: {
-        title: 'Behandlungsdokumentation im Kosmetikstudio – mit Vorher-Nachher-Fotos & Notizen',
+        title: 'Behandlungsdokumentation Kosmetik: Fotos & Notizen',
         description: 'Halte jede Behandlung strukturiert fest. Vorher-Nachher-Fotos, Notizen, NiSV-konform.',
         url: 'https://www.treatflow.io/behandlungsdokumentation',
         images: [
@@ -49,7 +50,7 @@ export default function BehandlungsdokumentationPage() {
                     </div>
 
                     <div className="mt-12 max-w-5xl mx-auto">
-                        <img src="/images/branchen/hero-kosmetikstudio.jpg" alt="Professionelles Kosmetikstudio – Dokumentation im Fokus" className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" loading="lazy" />
+                        <Image src="/images/branchen/hero-kosmetikstudio.jpg" alt="Professionelles Kosmetikstudio – Dokumentation im Fokus" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
                     </div>
 
                     {/* Behandlungsdokumentation Screenshot */}
