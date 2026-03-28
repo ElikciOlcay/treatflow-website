@@ -6,10 +6,35 @@ Disallow: /admin/
 Disallow: /dashboard/
 Allow: /manifest.json
 Allow: /llms.txt
+Allow: /llms-full.txt
 Disallow: *.json$
 
-# ChatGPT Search (OAI-SearchBot) für Sichtbarkeit in KI-Suche erlauben
+# AI Search Bots - explizit erlaubt für Sichtbarkeit in KI-Suche
+User-agent: GPTBot
+Allow: /
+
 User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
 Allow: /
 
 # Sitemap

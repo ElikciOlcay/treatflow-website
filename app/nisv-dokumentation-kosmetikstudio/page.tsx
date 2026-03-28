@@ -152,14 +152,14 @@ const checklistRight = [
 
 const clusterLinks = [
     {
-        href: '/kosmetikstudio-software',
-        title: 'Kosmetikstudio Software',
-        description: 'Die All-in-One Lösung für dein Studio',
+        href: '/behandlungsdokumentation-kosmetikstudio',
+        title: 'Behandlungsdokumentation',
+        description: 'Fotos, Notizen und Ergebnisse dokumentieren',
     },
     {
-        href: '/terminsoftware-kosmetikstudio',
-        title: 'Terminsoftware',
-        description: 'Online-Buchungen und Terminkalender',
+        href: '/digitale-anamnese-kosmetikstudio',
+        title: 'Digitale Anamnese',
+        description: 'Kunden füllen vorab per Link aus',
     },
     {
         href: '/kundenkartei-kosmetikstudio',

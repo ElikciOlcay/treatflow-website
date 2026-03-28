@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Anti-Aging Trends 2024: Gefragte Behandlungen',
     description: 'Von Micro-Needling bis zu Peptid-Therapien: Entdecke die neuesten Anti-Aging Trends für dein Kosmetikstudio 2024.',
     keywords: ['Anti-Aging Trends 2024', 'Micro-Needling', 'Peptid-Therapien', 'Anti-Aging Behandlungen', 'Kosmetikstudio Trends', 'Beauty Trends 2024'],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/anti-aging-trends-2024',
     },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         type: 'article',
         publishedTime: '2024-12-20T10:00:00.000Z',
-        authors: ['Treatflow Team'],
+        authors: ['Olcay Elikci'],
         section: 'Fachkompetenz',
         tags: ['Anti-Aging', 'Trends', 'Behandlungen', 'Kosmetikstudio'],
     },
@@ -48,9 +48,14 @@ export default function BlogPost() {
         "description": "Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends, mit denen du dein Kosmetikstudio 2024 erfolgreich positionierst.",
         "image": "https://www.treatflow.io/images/blog/anti-aging-trends-2024.jpg",
         "author": {
-            "@type": "Organization",
-            "name": "Treatflow Team",
-            "url": "https://www.treatflow.io/ueber-uns"
+            "@type": "Person",
+            "name": "Olcay Elikci",
+            "url": "https://www.treatflow.io/ueber-uns",
+            "jobTitle": "Gründer von Treatflow",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Treatflow"
+            }
         },
         "publisher": {
             "@type": "Organization",

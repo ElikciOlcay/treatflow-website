@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Kosmetikstudio Buchhaltung: Steuertipps',
     description: 'Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben, die du als Kosmetikstudio-Betreiberin absetzen kannst.',
     keywords: ['Kosmetikstudio Buchhaltung', 'Steuerliche Absetzbarkeit', 'Beauty Business Steuern', 'Kosmetik Betriebsausgaben', 'Steuerberatung Kosmetik', 'Buchhaltung Beauty Salon'],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/kosmetikstudio-buchhaltung-steuern',
     },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         type: 'article',
         publishedTime: '2024-12-18T11:00:00.000Z',
-        authors: ['Treatflow Team'],
+        authors: ['Olcay Elikci'],
         section: 'Business',
         tags: ['Buchhaltung', 'Steuern', 'Business', 'Kosmetikstudio'],
     },
@@ -48,9 +48,14 @@ export default function BlogPost() {
         "description": "Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben, die du als Kosmetikstudio-Betreiberin absetzen kannst - plus praktische Tipps für den Alltag.",
         "image": "https://www.treatflow.io/images/blog/kosmetikstudio-buchhaltung.jpg",
         "author": {
-            "@type": "Organization",
-            "name": "Treatflow Team",
-            "url": "https://www.treatflow.io/ueber-uns"
+            "@type": "Person",
+            "name": "Olcay Elikci",
+            "url": "https://www.treatflow.io/ueber-uns",
+            "jobTitle": "Gründer von Treatflow",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Treatflow"
+            }
         },
         "publisher": {
             "@type": "Organization",

@@ -224,6 +224,32 @@ export default function SchoenheitssalonSoftwarePage() {
         </div>
       </section>
 
+      {/* Passende Funktionen */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Passende Funktionen für dein Studio</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Treatflow vereint alle Tools in einer Plattform.</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { href: '/online-terminbuchung-kosmetikstudio', title: 'Online-Terminbuchung', description: 'Kunden buchen 24/7 online' },
+              { href: '/sms-erinnerungen-kosmetikstudio', title: 'SMS-Erinnerungen', description: 'Weniger No-Shows durch Erinnerungen' },
+              { href: '/behandlungsdokumentation-kosmetikstudio', title: 'Behandlungsdokumentation', description: 'NiSV-konforme Dokumentation' },
+              { href: '/digitale-anamnese-kosmetikstudio', title: 'Digitale Anamnese', description: 'Formulare vorab per Link ausfüllen' },
+            ].map((link, index) => (
+              <Link key={index} href={link.href} className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all duration-200">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors duration-200 flex items-center">
+                  {link.title}
+                  <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                </h3>
+                <p className="text-gray-600 text-sm">{link.description}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

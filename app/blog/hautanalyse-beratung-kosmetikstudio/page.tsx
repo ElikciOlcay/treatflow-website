@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Professionelle Hautanalyse im Kosmetikstudio',
     description: 'Eine gründliche Hautanalyse ist die Basis jeder erfolgreichen Kosmetikbehandlung. 7-Schritte Prozess für professionelle Beratung und Kundenbindung.',
     keywords: ["Hautanalyse Kosmetik","Professionelle Hautberatung","Kosmetik Beratung","Hauttyp bestimmen","Beauty Consultation","Kosmetikstudio Beratung"],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/hautanalyse-beratung-kosmetikstudio',
     },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         type: 'article',
         publishedTime: '2024-12-12T09:00:00.000Z',
-        authors: ['Treatflow Team'],
+        authors: ['Olcay Elikci'],
         section: 'Fachkompetenz',
         tags: ["Hautanalyse Kosmetik","Professionelle Hautberatung","Kosmetik Beratung","Hauttyp bestimmen"],
     },
@@ -49,9 +49,14 @@ export default function BlogPost() {
         "description": "Eine gründliche Hautanalyse ist die Basis jeder erfolgreichen Kosmetikbehandlung. 7-Schritte Prozess für professionelle Beratung und Kundenbindung.",
         "image": "https://www.treatflow.io/images/blog/hautanalyse-beratung.jpg",
         "author": {
-            "@type": "Organization",
-            "name": "Treatflow Team",
-            "url": "https://www.treatflow.io/ueber-uns"
+            "@type": "Person",
+            "name": "Olcay Elikci",
+            "url": "https://www.treatflow.io/ueber-uns",
+            "jobTitle": "Gründer von Treatflow",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Treatflow"
+            }
         },
         "publisher": {
             "@type": "Organization",

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Urlaub und Vertretung im Kosmetikstudio',
     description: 'Wer vertritt dich, wer übernimmt Termine, und wie bleiben Kundinnen informiert? Tipps für entspannte Auszeiten.',
     keywords: ['Urlaub Kosmetikstudio', 'Vertretung Beauty Studio', 'Studio Urlaubsplanung', 'Termine Vertretung', 'Kosmetikstudio Urlaub'],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: { canonical: 'https://www.treatflow.io/blog/urlaub-vertretung-kosmetikstudio' },
     openGraph: {
         title: 'Urlaub und Vertretung im Kosmetikstudio: So planst du durch',
@@ -32,7 +32,7 @@ export default function BlogPost() {
         "headline": "Urlaub und Vertretung im Kosmetikstudio: So planst du durch",
         "description": "Wer vertritt dich, wer übernimmt Termine – Tipps für entspannte Auszeiten.",
         "image": "https://www.treatflow.io/images/blog/urlaub-vertretung-studio.jpg",
-        "author": { "@type": "Organization", "name": "Treatflow Team", "url": "https://www.treatflow.io/ueber-uns" },
+        "author": { "@type": "Person", "name": "Olcay Elikci", "url": "https://www.treatflow.io/ueber-uns", "jobTitle": "Gründer von Treatflow", "worksFor": { "@type": "Organization", "name": "Treatflow" } },
         "publisher": { "@type": "Organization", "name": "Treatflow", "logo": { "@type": "ImageObject", "url": "https://www.treatflow.io/images/logos/treatflow-logo.svg" } },
         "datePublished": "2024-11-22T10:00:00.000Z",
         "dateModified": "2024-11-22T10:00:00.000Z",

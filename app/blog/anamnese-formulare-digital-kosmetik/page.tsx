@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Digitale Anamnese im Kosmetikstudio',
     description: 'Anamnese und Einwilligung digital statt auf Papier. Was du beachten musst, damit es rechtssicher ist und im Alltag funktioniert.',
     keywords: ['Anamnese digital Kosmetik', 'Anamnesebogen digital', 'Einwilligung Kosmetik', 'Formular Software Beauty', 'Rechtssicher Anamnese'],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: { canonical: 'https://www.treatflow.io/blog/anamnese-formulare-digital-kosmetik' },
     openGraph: {
         title: 'Digitale Anamnese-Formulare im Kosmetikstudio',
@@ -32,7 +32,7 @@ export default function BlogPost() {
         "headline": "Anamnese digital: Formulare im Kosmetikstudio rechtssicher nutzen",
         "description": "Anamnese und Einwilligung digital – was du beachten musst, damit es rechtssicher ist.",
         "image": "https://www.treatflow.io/images/blog/anamnese-digital.jpg",
-        "author": { "@type": "Organization", "name": "Treatflow Team", "url": "https://www.treatflow.io/ueber-uns" },
+        "author": { "@type": "Person", "name": "Olcay Elikci", "url": "https://www.treatflow.io/ueber-uns", "jobTitle": "Gründer von Treatflow", "worksFor": { "@type": "Organization", "name": "Treatflow" } },
         "publisher": { "@type": "Organization", "name": "Treatflow", "logo": { "@type": "ImageObject", "url": "https://www.treatflow.io/images/logos/treatflow-logo.svg" } },
         "datePublished": "2025-01-05T09:00:00.000Z",
         "dateModified": "2025-01-05T09:00:00.000Z",
@@ -119,6 +119,28 @@ export default function BlogPost() {
                     </div>
                 </div>
             </article>
+
+            {/* Verwandte Seiten */}
+            <section className="py-12 bg-gray-50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">Passende Funktionen für dein Studio</h2>
+                    <div className="grid sm:grid-cols-2 gap-4">
+                        {[
+                            { href: '/digitale-anamnese-kosmetikstudio', title: 'Digitale Anamnese Kosmetikstudio', desc: 'Kunden füllen vorab per Link aus' },
+                            { href: '/anamnesebogen-kosmetikstudio', title: 'Anamnesebogen Kosmetikstudio', desc: 'Professionelle Vorlagen für alle Behandlungen' },
+                        ].map((link, i) => (
+                            <Link key={i} href={link.href} className="group flex items-center justify-between p-4 bg-white rounded-xl border border-gray-200 hover:border-indigo-200 hover:shadow-md transition-all">
+                                <div>
+                                    <span className="font-semibold text-gray-900 group-hover:text-indigo-600 block">{link.title}</span>
+                                    <span className="text-sm text-gray-500">{link.desc}</span>
+                                </div>
+                                <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-indigo-600 flex-shrink-0" />
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             <Footer />
         </div>
     );

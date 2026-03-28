@@ -1,24 +1,25 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
+import Link from 'next/link';
 
-const faqs = [
+const faqs: { question: string; answer: ReactNode }[] = [
     {
         question: "Wie lange kann ich Treatflow kostenlos testen?",
         answer: "Du kannst Treatflow 14 Tage lang vollkommen kostenlos testen. Keine Kreditkarte erforderlich, keine versteckten Kosten. Nach dem Testzeitraum kannst du entscheiden, ob du weitermachen möchtest."
     },
     {
         question: "Was ist der Unterschied zwischen Basic und Booking?",
-        answer: "Basic (€39/Monat) enthält unbegrenzte Kundenverwaltung, Formular-Marketplace, KI-Generator und Shop-Integration. Booking (€59/Monat) hat zusätzlich den professionellen Buchungskalender mit Buchungslink und automatische Terminerinnerungen."
+        answer: <>Basic (39 Euro/Monat) enthält unbegrenzte <Link href="/kundenkartei-kosmetikstudio" className="text-indigo-600 hover:underline">Kundenverwaltung</Link>, Formular-Marketplace, KI-Generator und Shop-Integration. Booking (59 Euro/Monat) hat zusätzlich den professionellen <Link href="/terminsoftware-kosmetikstudio" className="text-indigo-600 hover:underline">Buchungskalender</Link> mit Buchungslink und automatische <Link href="/sms-erinnerungen-kosmetikstudio" className="text-indigo-600 hover:underline">Terminerinnerungen</Link>.</>
     },
     {
         question: "Ist Treatflow DSGVO-konform?",
-        answer: "Ja, absolut! Treatflow ist vollständig DSGVO-konform und erfüllt alle deutschen Datenschutzbestimmungen. Alle Daten werden verschlüsselt und sicher in Deutschland gespeichert."
+        answer: <>Ja, absolut! Treatflow ist vollständig DSGVO-konform und erfüllt alle deutschen Datenschutzbestimmungen. Alle Daten werden verschlüsselt und sicher in Deutschland gespeichert. Auch die <Link href="/digitale-anamnese-kosmetikstudio" className="text-indigo-600 hover:underline">digitale Anamnese</Link> und <Link href="/behandlungsdokumentation-kosmetikstudio" className="text-indigo-600 hover:underline">Behandlungsdokumentation</Link> sind DSGVO-konform.</>
     },
     {
         question: "Kann ich meine bestehenden Kundendaten importieren?",
-        answer: "Ja, wir helfen dir beim kostenlosen Umzug deiner Daten. Unser Support-Team unterstützt dich dabei, deine bestehenden Kundendaten sicher zu Treatflow zu übertragen."
+        answer: <>Ja, wir helfen dir beim kostenlosen Umzug deiner Daten. Unser Support-Team unterstützt dich dabei, deine bestehenden Kundendaten sicher in die <Link href="/kundenkartei-kosmetikstudio" className="text-indigo-600 hover:underline">digitale Kundenkartei</Link> zu übertragen.</>
     },
     {
         question: "Funktioniert Treatflow auch auf dem Handy?",
@@ -34,7 +35,7 @@ const faqs = [
     },
     {
         question: "Wie funktioniert der Formular-Marketplace?",
-        answer: "Im Marketplace findest du professionelle Formulare für alle Beauty-Behandlungen. Du kannst sie direkt verwenden, mit dem KI-Generator anpassen oder mit dem Drag & Drop Editor individualisieren."
+        answer: <>Im Marketplace findest du professionelle <Link href="/formulare" className="text-indigo-600 hover:underline">Formulare</Link> für alle Beauty-Behandlungen. Du kannst sie direkt verwenden, mit dem KI-Generator anpassen oder mit dem Drag &amp; Drop Editor individualisieren. Auch <Link href="/digitale-anamnese-kosmetikstudio" className="text-indigo-600 hover:underline">digitale Anamnesebögen</Link> sind sofort verfügbar.</>
     },
     {
         question: "Kann ich unbegrenzt Kunden verwalten?",

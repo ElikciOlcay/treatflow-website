@@ -32,7 +32,7 @@ export default function SocialProofBar() {
                         <span className="text-sm font-semibold text-gray-900">4.9/5</span>
                         <span className="text-xs text-gray-400">|</span>
                         <a
-                            href="https://www.google.com/maps/place/Treatflow/@48.2107453,16.3725042,17z/data=!4m8!3m7!1s0x476da81f06e65b73:0x2c72e0f3d985fea7!8m2!3d48.2107453!4d16.3725042!9m1!1b1!16s%2Fg%2F11wfqh4h0b"
+                            href="https://www.google.com/maps?cid=3775494386032646257"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-indigo-600 transition-colors"

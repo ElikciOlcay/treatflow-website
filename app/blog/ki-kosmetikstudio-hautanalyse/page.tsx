@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'KI im Kosmetikstudio: Hautanalyse der Zukunft',
     description: 'Künstliche Intelligenz revolutioniert die Hautanalyse. Erfahre, wie KI-gestützte Tools dein Studio professioneller machen und Kunden begeistern.',
     keywords: ['KI Hautanalyse', 'Künstliche Intelligenz Kosmetik', 'Digitale Hautanalyse', 'KI Tools Beauty', 'Moderne Kosmetikstudio Technologie', 'Hautanalyse Software'],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/ki-kosmetikstudio-hautanalyse',
     },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         type: 'article',
         publishedTime: '2024-12-22T09:00:00.000Z',
-        authors: ['Treatflow Team'],
+        authors: ['Olcay Elikci'],
         section: 'Digitalisierung',
         tags: ['KI', 'Hautanalyse', 'Digitalisierung', 'Kosmetikstudio'],
     },
@@ -48,9 +48,14 @@ export default function BlogPost() {
         "description": "Künstliche Intelligenz revolutioniert die Hautanalyse. Erfahre, wie KI-gestützte Tools dein Studio professioneller machen und Kunden begeistern - ohne Technik-Stress.",
         "image": "https://www.treatflow.io/images/blog/ki-kosmetikstudio-hautanalyse.jpg",
         "author": {
-            "@type": "Organization",
-            "name": "Treatflow Team",
-            "url": "https://www.treatflow.io/ueber-uns"
+            "@type": "Person",
+            "name": "Olcay Elikci",
+            "url": "https://www.treatflow.io/ueber-uns",
+            "jobTitle": "Gründer von Treatflow",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Treatflow"
+            }
         },
         "publisher": {
             "@type": "Organization",

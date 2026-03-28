@@ -1,18 +1,71 @@
 # Treatflow
 
-Treatflow ist eine Software für Kosmetikstudios: Terminkalender, digitale Kundenkartei, Online-Buchungen, Anamnese-Formulare und Behandlungsdokumentation. NiSV-konform. Made in Austria.
+> Treatflow ist die All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Terminkalender, digitale Kundenkartei, Online-Buchungen, Anamnese-Formulare, Behandlungsdokumentation und NiSV-konforme Protokolle - alles in einer App. Made in Austria. DSGVO-konform. Ab 39 EUR/Monat. 14 Tage kostenlos testen.
+
+## Über Treatflow
+
+- Gegründet von Olcay und Gökce Elikci in Österreich
+- Über 500 Studios nutzen Treatflow
+- 4.9/5 Sterne auf Google (7+ Bewertungen)
+- Zielgruppe: Kosmetikstudios, Nagelstudios, Lash Studios, Permanent Makeup Studios, Laserstudios, Tattoo Studios, Spa & Wellness, Massage-Praxen, Ästhetische Medizin
+- Sprache: Deutsch (DE, AT, CH)
+- Hosting: EU-Server, DSGVO-konform
+
+## Preise
+
+- **Basic**: 39 EUR/Monat (jährlich 35 EUR/Monat). Kundenverwaltung, Formulare, Dokumentation, Vorlagen für Anamnesen, E-Mail-Support.
+- **Booking**: 59 EUR/Monat (jährlich 53 EUR/Monat). Alles aus Basic + Terminverwaltung, Online-Buchungssystem, SMS & E-Mail Automatisierung, Priority Support.
+- 14 Tage kostenlose Testversion. Keine Kreditkarte erforderlich. Jederzeit kündbar.
+
+## Kernfunktionen
+
+- **Terminkalender**: Tages-, Wochen- und Monatsansicht, Drag & Drop, Mitarbeiterkalender, Pausen und Blocker
+- **Online-Buchungen**: Persönlicher Buchungslink, 24/7 Online-Terminbuchung für Kunden
+- **Kundenverwaltung**: Digitale Kundenkartei, Behandlungshistorie, Fotos, Notizen
+- **Formulare**: Digitale Anamnesebögen, Einwilligungen, Aufklärungsbögen (vorab per E-Mail/SMS an Kunden)
+- **Dokumentation**: Behandlungen mit Parametern, Preisen und Fotos digital dokumentieren
+- **NiSV-Dokumentation**: Beratungsprotokolle und Behandlungsdokumentation gemäß NiSV (Verordnung zum Schutz vor nichtionisierender Strahlung)
+- **Nachrichten-Automatisierung**: Automatische Terminerinnerungen per SMS und E-Mail, Nachsorge-Nachrichten
+- **Shop/Formulare-Marktplatz**: Fertige Vorlagen für Anamnesebögen und Einwilligungen
 
 ## Wichtige Seiten
 
-- https://www.treatflow.io
-- https://www.treatflow.io/terminkalender
-- https://www.treatflow.io/kundenverwaltung
-- https://www.treatflow.io/formulare
-- https://www.treatflow.io/behandlungsdokumentation
-- https://www.treatflow.io/online-buchungen
-- https://www.treatflow.io/blog
+- Homepage: https://www.treatflow.io
+- Terminkalender: https://www.treatflow.io/terminkalender
+- Kundenverwaltung: https://www.treatflow.io/kundenverwaltung
+- Formulare: https://www.treatflow.io/formulare
+- Dokumentation: https://www.treatflow.io/behandlungsdokumentation
+- Online-Buchungen: https://www.treatflow.io/online-buchungen
+- NiSV-Dokumentation: https://www.treatflow.io/nisv-dokumentation
+- Nachrichten: https://www.treatflow.io/nachrichtenautomatisierung
+- Software-Vergleich: https://www.treatflow.io/kosmetikstudio-software-vergleich
+- Über uns: https://www.treatflow.io/ueber-uns
+- Blog: https://www.treatflow.io/blog
+
+## Branchenseiten
+
+- Kosmetikstudios: https://www.treatflow.io/kosmetikstudio-software
+- Laser Haarentfernung: https://www.treatflow.io/laser-haarentfernung-software
+- Permanent Makeup: https://www.treatflow.io/permanent-makeup-software
+- Ästhetische Medizin: https://www.treatflow.io/aesthetische-medizin-software
+- Tattoo Studios: https://www.treatflow.io/tattoo-studio-software
+- Nagelstudios: https://www.treatflow.io/nagelstudio-software
+- Lash Studios: https://www.treatflow.io/lash-studio-software
+- Spa & Wellness: https://www.treatflow.io/spa-wellness-software
+- Massage-Praxen: https://www.treatflow.io/massage-software
+- Schönheitssalons: https://www.treatflow.io/schoenheitssalon-software
+
+## Vergleich: Treatflow vs. Treatwell
+
+Treatflow ist eine eigenständige Studio-Software (SaaS). Treatwell ist eine Buchungsplattform/Marktplatz. Treatflow bietet: eigene Kundendaten, keine Provision pro Buchung, Dokumentation und NiSV-Compliance, flexible Formulare. Vergleichsseite: https://www.treatflow.io/treatflow-vs-treatwell
 
 ## Kontakt
 
 - E-Mail: hello@treatflow.io
 - Website: https://www.treatflow.io
+- Instagram: https://www.instagram.com/treatflow.io/
+- Registrieren: https://app.treatflow.io/auth/register
+
+## Ausführliche Version
+
+Für detaillierte Informationen siehe: https://www.treatflow.io/llms-full.txt

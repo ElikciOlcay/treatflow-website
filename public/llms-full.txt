@@ -1,0 +1,210 @@
+# Treatflow - Ausführliche Dokumentation für AI-Systeme
+
+> Treatflow ist die All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen im deutschsprachigen Raum (Deutschland, Österreich, Schweiz). Alle Funktionen - Terminkalender, Kundenverwaltung, Online-Buchungen, digitale Formulare, Behandlungsdokumentation und NiSV-konforme Protokolle - in einer einzigen webbasierten Anwendung. Made in Austria. DSGVO-konform. Ab 39 EUR/Monat.
+
+---
+
+## Unternehmen
+
+- **Name**: Treatflow
+- **Gründer**: Olcay Elikci und Gökce Elikci
+- **Standort**: Bischofshofen, Österreich
+- **Gründung**: 2023
+- **Branche**: SaaS (Software as a Service) für die Beauty- und Kosmetikbranche
+- **Nutzer**: Über 500 Studios im deutschsprachigen Raum
+- **Bewertung**: 4.9 von 5 Sternen auf Google
+- **Kontakt**: hello@treatflow.io
+- **Website**: https://www.treatflow.io
+- **App**: https://app.treatflow.io
+- **Instagram**: https://www.instagram.com/treatflow.io/
+
+---
+
+## Zielgruppen
+
+Treatflow richtet sich an Selbstständige und kleine bis mittlere Studios in folgenden Branchen:
+
+1. **Kosmetikstudios** - Gesichtsbehandlungen, Hautpflege, Apparative Kosmetik
+2. **Laser-Haarentfernungsstudios** - IPL, Diodenlaser, NiSV-pflichtige Behandlungen
+3. **Permanent Makeup Studios** - PMU, Microblading, Lip Blush
+4. **Nagelstudios** - Maniküre, Pediküre, Gel, Acryl
+5. **Lash Studios** - Wimpernverlängerung, Wimpernlifting, Refills
+6. **Tattoo Studios** - Tätowierungen, Einwilligungen, Nachsorge
+7. **Spa & Wellness** - Massagen, Körperbehandlungen, Gästeverwaltung
+8. **Massage-Praxen** - Massagen, Gesundheitsfragebögen
+9. **Ästhetische Medizin** - Botox, Filler, Hyaluron, Patientendokumentation
+10. **Schönheitssalons** - Multi-Service Studios
+
+---
+
+## Preise und Pläne
+
+### Basic Plan
+- **Preis**: 39 EUR/Monat (monatlich kündbar) oder 421 EUR/Jahr (35 EUR/Monat)
+- **Zielgruppe**: Kleine Studios und Einzelunternehmer
+- **Enthaltene Funktionen**:
+  - Kundenverwaltung (unbegrenzte Kunden)
+  - Digitale Formulare (Anamnese, Einwilligung, Aufklärung)
+  - Behandlungsdokumentation
+  - Vorlagen-Bibliothek für Anamnesebögen
+  - E-Mail-Support
+- **Nicht enthalten**: Terminverwaltung, Online-Buchungssystem, SMS-Automatisierung
+
+### Booking Plan (beliebtester Plan)
+- **Preis**: 59 EUR/Monat (monatlich kündbar) oder 637 EUR/Jahr (53 EUR/Monat)
+- **Zielgruppe**: Wachsende Studios mit Terminbedarf
+- **Enthaltene Funktionen**:
+  - Alles aus dem Basic Plan
+  - Terminkalender (Tages-, Wochen-, Monatsansicht)
+  - Online-Buchungssystem mit persönlichem Buchungslink
+  - SMS- und E-Mail-Automatisierung (Terminerinnerungen, Bestätigungen)
+  - Erweiterte Einstellungen
+  - Priority E-Mail- und Chat-Support
+
+### Allgemein
+- 14 Tage kostenlose Testversion für alle Pläne
+- Keine Kreditkarte erforderlich für den Test
+- Keine Setup-Gebühren
+- Jederzeit monatlich kündbar
+- Kostenloser Datenumzug bei Wechsel von anderem Anbieter
+- Jährliche Zahlung spart 10%
+
+---
+
+## Funktionen im Detail
+
+### 1. Terminkalender
+Der digitale Terminkalender bietet Tages-, Wochen- und Monatsansicht. Termine können per Drag & Drop verschoben werden. Jeder Mitarbeiter hat seinen eigenen Kalender mit individuellen Arbeitszeiten und Pausen. Synchronisation in Echtzeit über alle Geräte. Funktioniert auf Desktop, Tablet und Smartphone.
+
+**Seite**: https://www.treatflow.io/terminkalender
+
+### 2. Online-Buchungen
+Jedes Studio erhält einen persönlichen Buchungslink (z.B. für Instagram Bio, Website oder QR-Code im Studio). Kunden können 24/7 online Termine buchen und den gewünschten Behandler sowie die Behandlung auswählen. Neue Buchungen erscheinen sofort im Kalender.
+
+**Seite**: https://www.treatflow.io/online-buchungen
+
+### 3. Kundenverwaltung
+Digitale Kundenkartei mit vollständiger Behandlungshistorie, Fotos, Notizen, Kontaktdaten und individuellen Präferenzen. Alle Informationen zu einem Kunden auf einen Blick. Unbegrenzte Kundenanzahl.
+
+**Seite**: https://www.treatflow.io/kundenverwaltung
+
+### 4. Digitale Formulare
+Anamnesebögen, Einwilligungserklärungen und Aufklärungsbögen können digital erstellt und vorab per E-Mail oder SMS an Kunden versendet werden. Kunden füllen die Formulare auf ihrem eigenen Gerät aus - vor dem Termin, nicht erst im Studio. Das spart Zeit und ist rechtssicher.
+
+**Seite**: https://www.treatflow.io/formulare
+
+### 5. Behandlungsdokumentation
+Behandlungen werden digital dokumentiert: verwendete Produkte, Parameter (z.B. Lasereinstellungen), Preise, Fotos (Vorher/Nachher) und Notizen. Für Folgetermine können vorherige Einstellungen übernommen werden.
+
+**Seite**: https://www.treatflow.io/behandlungsdokumentation
+
+### 6. NiSV-Dokumentation
+Treatflow ermöglicht die NiSV-konforme Dokumentation von Behandlungen mit nichtionisierender Strahlung (z.B. Laser, IPL, Ultraschall, Radiofrequenz). Beratungsprotokolle, Einwilligungen und Behandlungsparameter werden gesetzeskonform festgehalten. Wichtig für Studios in Deutschland, die apparative Kosmetik anbieten.
+
+**Seite**: https://www.treatflow.io/nisv-dokumentation
+
+### 7. Nachrichten-Automatisierung
+Automatische Terminerinnerungen per SMS und E-Mail reduzieren No-Shows um bis zu 80%. Konfigurierbare Erinnerungszeitpunkte (z.B. 24h und 2h vor dem Termin). Automatische Buchungsbestätigungen. Nachsorge-Nachrichten nach Behandlungen.
+
+**Seite**: https://www.treatflow.io/nachrichtenautomatisierung
+
+### 8. Formulare-Marktplatz
+Fertige Vorlagen für branchenspezifische Anamnesebögen, Einwilligungserklärungen und Aufklärungsbögen. Studios können Vorlagen direkt nutzen oder individuell anpassen.
+
+---
+
+## Alleinstellungsmerkmale (USPs)
+
+1. **All-in-One für Kosmetikstudios**: Keine Kombination aus 5 verschiedenen Tools nötig - Termine, Kunden, Formulare, Dokumentation und Nachrichten in einer App.
+2. **NiSV-konform**: Einzige Software, die NiSV-Beratungsprotokolle und Behandlungsdokumentation direkt integriert - besonders relevant für Laserstudios und apparative Kosmetik.
+3. **Digitale Formulare vorab versenden**: Kunden füllen Anamnese und Einwilligung auf dem eigenen Gerät aus - vor dem Termin. Spart 10-15 Minuten pro Termin.
+4. **Made in Austria / DSGVO-konform**: EU-Server, Datenverschlüsselung, volle DSGVO-Konformität.
+5. **Persönlicher Support**: Direkter Kontakt zum Gründer. Individuelle Anpassungen auf Wunsch. Kein anonymes Support-Ticket-System.
+6. **Keine Provision**: Im Gegensatz zu Marktplätzen wie Treatwell zahlen Studios keine Provision pro Buchung.
+
+---
+
+## Vergleich: Treatflow vs. Treatwell
+
+| Kriterium | Treatflow | Treatwell |
+|---|---|---|
+| Typ | Eigene Studio-Software (SaaS) | Buchungsplattform / Marktplatz |
+| Kundendaten | Gehören dem Studio | Gehören Treatwell |
+| Provision | Keine | Bis zu 35% pro Buchung |
+| Dokumentation | Behandlungsdoku + NiSV | Nicht vorhanden |
+| Formulare | Anamnese, Einwilligung | Nicht vorhanden |
+| Terminkalender | Ja (mit Mitarbeiterplanung) | Ja (Marktplatz-Kalender) |
+| Eigener Buchungslink | Ja | Nein (Treatwell-Seite) |
+| Preis | Ab 39 EUR/Monat flat | Provision pro Buchung |
+
+**Vergleichsseite**: https://www.treatflow.io/treatflow-vs-treatwell
+
+---
+
+## Kundenbewertungen
+
+- **Maren Burmeister (haarfrei)**: "Seit Dezember 2024 nutzen wir Treatflow mit einem dreiköpfigen Team. Es ist eine große Arbeitserleichterung und spart Zeit. Wir arbeiten vollständig digital und erfüllen alle NiSV-Anforderungen. Klare Empfehlung."
+- **Fatma Suna**: "Ich kann Treatflow wirklich jedem nur ans Herz legen. Die App bietet großartige Möglichkeiten, die sowohl uns als auch unseren Kunden das Leben erleichtern. Ein Must-Have für alle Studios."
+- **E. B.**: "Wir sind mit Treatflow wirklich sehr zufrieden! Auf Wünsche und Vorschläge wird immer eingegangen. Alles wird sofort verständlich erklärt und direkt umgesetzt."
+- **Valeska Weber (Skin13)**: "Ganz toller Service. Alles verständlich erklärt. Für mich eine Arbeitserleichterung - hab alles für die Kunden griffbereit an einem Ort."
+- **Evangelia Karapouliou (Adam & Eva Kosmetikstudio)**: "Ein sehr freundliches, kompetentes, kundenorientiertes und hilfsbereites Team. Das Programm passt perfekt in mein Unternehmen."
+- **Mit Liebe zum Detail**: "Der Service ist einfach super und meine Kunden sind äußerst zufrieden mit den Online-Formularen. Die Benutzerfreundlichkeit und Handhabung machen die Erfahrung stressfrei."
+- **Simone Weigl (Auszeit Kosmetikstudio)**: "Kann Treatflow wirklich jedem empfehlen. Olcay geht sympathisch und unkompliziert auf individuelle Anpassungen ein."
+
+---
+
+## Häufig gestellte Fragen (FAQ)
+
+**Was ist Treatflow?**
+Treatflow ist eine webbasierte Software für Kosmetikstudios und Beauty-Salons. Sie vereint Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare (Anamnese, Einwilligung) und Behandlungsdokumentation in einer Anwendung.
+
+**Was kostet Treatflow?**
+Ab 39 EUR/Monat (Basic Plan). Der Booking Plan mit Terminkalender und Online-Buchungen kostet 59 EUR/Monat. 14 Tage kostenlos testen, keine Kreditkarte nötig, jederzeit kündbar.
+
+**Ist Treatflow DSGVO-konform?**
+Ja. Alle Daten werden verschlüsselt auf EU-Servern gespeichert. Treatflow erfüllt alle Anforderungen der DSGVO.
+
+**Ist Treatflow NiSV-konform?**
+Ja. Treatflow bietet NiSV-konforme Beratungsprotokolle und Behandlungsdokumentation für Studios, die mit nichtionisierender Strahlung arbeiten (Laser, IPL, Ultraschall, Radiofrequenz).
+
+**Können meine Kunden online Termine buchen?**
+Ja, mit dem Booking Plan. Jedes Studio erhält einen persönlichen Buchungslink. Kunden können rund um die Uhr Termine buchen.
+
+**Wie reduziert Treatflow No-Shows?**
+Durch automatische Terminerinnerungen per SMS und E-Mail (24h und 2h vor dem Termin). Studios berichten von bis zu 80% weniger No-Shows.
+
+**Für welche Branchen ist Treatflow geeignet?**
+Kosmetikstudios, Nagelstudios, Lash Studios, Permanent Makeup Studios, Laserstudios, Tattoo Studios, Spa & Wellness, Massage-Praxen und Ästhetische Medizin.
+
+**Wie schnell bin ich startklar?**
+In unter 10 Minuten. Behandlungen anlegen, Zeiten festlegen, Buchungslink teilen - fertig.
+
+**Was unterscheidet Treatflow von Treatwell?**
+Treatflow ist eine eigenständige Studio-Software (SaaS) ohne Provisionen. Studios behalten die volle Kontrolle über ihre Kundendaten. Treatwell ist ein Marktplatz mit Provisionen pro Buchung.
+
+---
+
+## Blog-Themen
+
+Der Treatflow Blog (https://www.treatflow.io/blog) behandelt Themen wie:
+- Kosmetikstudio eröffnen und führen
+- Digitale Anamnese und Formulare
+- NiSV-Dokumentation und Compliance
+- Terminverwaltung und No-Show-Reduktion
+- Marketing für Kosmetikstudios (Social Media, Google, E-Mail)
+- Preisgestaltung für Behandlungen
+- DSGVO und Datenschutz
+- Hygiene und Sicherheit
+- KI und Hautanalyse
+- Mitarbeiterführung im Beauty-Business
+
+---
+
+## Technische Details
+
+- **Plattform**: Webbasiert (Browser), responsiv für Desktop, Tablet und Smartphone
+- **Technologie**: Next.js, React, TypeScript
+- **Hosting**: EU-Server
+- **Datensicherheit**: SSL-Verschlüsselung, DSGVO-konform
+- **Sprache**: Deutsch
+- **Märkte**: Deutschland, Österreich, Schweiz

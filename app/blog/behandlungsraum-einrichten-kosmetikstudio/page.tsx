@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Behandlungsraum einrichten: Worauf es ankommt',
     description: 'Licht, Stauraum, Hygiene – wie du deinen Behandlungsraum so gestaltest, dass du gut arbeitest und Kundinnen sich wohlfühlen.',
     keywords: ['Behandlungsraum einrichten', 'Kosmetikstudio Raum', 'Beauty Studio Gestaltung', 'Behandlungszimmer', 'Kosmetik Praxis einrichten'],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: { canonical: 'https://www.treatflow.io/blog/behandlungsraum-einrichten-kosmetikstudio' },
     openGraph: {
         title: 'Behandlungsraum einrichten: Worauf es ankommt',
@@ -32,7 +32,7 @@ export default function BlogPost() {
         "headline": "Behandlungsraum einrichten: Worauf es ankommt",
         "description": "Licht, Stauraum, Hygiene – so gestaltest du den Raum für dich und deine Kundinnen.",
         "image": "https://www.treatflow.io/images/blog/behandlungsraum-einrichten.jpg",
-        "author": { "@type": "Organization", "name": "Treatflow Team", "url": "https://www.treatflow.io/ueber-uns" },
+        "author": { "@type": "Person", "name": "Olcay Elikci", "url": "https://www.treatflow.io/ueber-uns", "jobTitle": "Gründer von Treatflow", "worksFor": { "@type": "Organization", "name": "Treatflow" } },
         "publisher": { "@type": "Organization", "name": "Treatflow", "logo": { "@type": "ImageObject", "url": "https://www.treatflow.io/images/logos/treatflow-logo.svg" } },
         "datePublished": "2024-12-05T10:00:00.000Z",
         "dateModified": "2024-12-05T10:00:00.000Z",

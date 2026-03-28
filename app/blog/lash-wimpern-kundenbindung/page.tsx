@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Lash-Kundinnen binden: Tipps für Wiederkehr',
     description: 'Refill-Intervalle, Erinnerungen und persönliche Notizen – so behältst du deine Lash-Kundinnen und füllst den Kalender.',
     keywords: ['Lash Kundenbindung', 'Wimpernverlängerung Kunden', 'Refill Erinnerung', 'Lash Studio', 'Wimpern Kunden binden'],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: { canonical: 'https://www.treatflow.io/blog/lash-wimpern-kundenbindung' },
     openGraph: {
         title: 'Lash-Kundinnen binden: Wimpernverlängerung und Wiederkehr',
@@ -32,7 +32,7 @@ export default function BlogPost() {
         "headline": "Lash-Kundinnen binden: Wimpernverlängerung und Wiederkehr",
         "description": "Refill-Intervalle, Erinnerungen und Notizen – so behältst du deine Lash-Kundinnen.",
         "image": "https://www.treatflow.io/images/blog/lash-kundenbindung.jpg",
-        "author": { "@type": "Organization", "name": "Treatflow Team", "url": "https://www.treatflow.io/ueber-uns" },
+        "author": { "@type": "Person", "name": "Olcay Elikci", "url": "https://www.treatflow.io/ueber-uns", "jobTitle": "Gründer von Treatflow", "worksFor": { "@type": "Organization", "name": "Treatflow" } },
         "publisher": { "@type": "Organization", "name": "Treatflow", "logo": { "@type": "ImageObject", "url": "https://www.treatflow.io/images/logos/treatflow-logo.svg" } },
         "datePublished": "2024-11-28T11:00:00.000Z",
         "dateModified": "2024-11-28T11:00:00.000Z",

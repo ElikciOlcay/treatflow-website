@@ -95,8 +95,29 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} Treatflow. Alle Rechte vorbehalten.</p>
+        <div className="border-t border-gray-800 mt-12 pt-8">
+          <div className="mb-8">
+            <h3 className="font-semibold text-gray-300 mb-4 text-sm">Beliebte Themen</h3>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { href: '/online-terminbuchung-kosmetikstudio', label: 'Online-Terminbuchung Kosmetikstudio' },
+                { href: '/behandlungsdokumentation-kosmetikstudio', label: 'Behandlungsdokumentation Kosmetikstudio' },
+                { href: '/digitale-anamnese-kosmetikstudio', label: 'Digitale Anamnese Kosmetikstudio' },
+                { href: '/sms-erinnerungen-kosmetikstudio', label: 'SMS-Erinnerungen Kosmetikstudio' },
+                { href: '/terminsoftware-kosmetikstudio', label: 'Terminsoftware Kosmetikstudio' },
+                { href: '/kundenkartei-kosmetikstudio', label: 'Kundenkartei Kosmetikstudio' },
+                { href: '/anamnesebogen-kosmetikstudio', label: 'Anamnesebogen Kosmetikstudio' },
+                { href: '/nisv-dokumentation-kosmetikstudio', label: 'NiSV-Dokumentation' },
+              ].map((item) => (
+                <Link key={item.href} href={item.href} className="text-xs text-gray-500 hover:text-white transition-colors bg-gray-800 px-3 py-1 rounded-full">
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className="text-center text-gray-400 text-sm">
+            <p>&copy; {new Date().getFullYear()} Treatflow. Alle Rechte vorbehalten.</p>
+          </div>
         </div>
       </div>
     </footer>

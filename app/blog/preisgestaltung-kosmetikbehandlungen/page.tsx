@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Preisgestaltung für Kosmetikbehandlungen',
     description: 'Finde die optimalen Preise für deine Kosmetikbehandlungen. Kalkulationsstrategien, Marktanalyse und psychologische Preisgestaltung.',
     keywords: ["Preisgestaltung Kosmetik","Kosmetikbehandlung Preise","Beauty Pricing","Kosmetikstudio Kalkulation","Beauty Salon Preise","Kosmetik Preisstrategien"],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/preisgestaltung-kosmetikbehandlungen',
     },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         type: 'article',
         publishedTime: '2024-11-15T13:00:00.000Z',
-        authors: ['Treatflow Team'],
+        authors: ['Olcay Elikci'],
         section: 'Business',
         tags: ["Preisgestaltung Kosmetik","Kosmetikbehandlung Preise","Beauty Pricing","Kosmetikstudio Kalkulation"],
     },
@@ -49,9 +49,14 @@ export default function BlogPost() {
         "description": "Finde die optimalen Preise für deine Kosmetikbehandlungen. Kalkulationsstrategien, Marktanalyse und psychologische Preisgestaltung.",
         "image": "https://www.treatflow.io/images/blog/preisgestaltung-guide.jpg",
         "author": {
-            "@type": "Organization",
-            "name": "Treatflow Team",
-            "url": "https://www.treatflow.io/ueber-uns"
+            "@type": "Person",
+            "name": "Olcay Elikci",
+            "url": "https://www.treatflow.io/ueber-uns",
+            "jobTitle": "Gründer von Treatflow",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Treatflow"
+            }
         },
         "publisher": {
             "@type": "Organization",
@@ -571,6 +576,27 @@ export default function BlogPost() {
                     </div>
                 </div>
             </article>
+
+            {/* Verwandte Seiten */}
+            <section className="py-12 bg-gray-50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">Passende Funktionen für dein Studio</h2>
+                    <div className="grid sm:grid-cols-2 gap-4">
+                        {[
+                            { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', desc: 'All-in-One für dein Studio' },
+                            { href: '/online-terminbuchung-kosmetikstudio', title: 'Online-Terminbuchung', desc: 'Kunden buchen 24/7 online' },
+                        ].map((link, i) => (
+                            <Link key={i} href={link.href} className="group flex items-center justify-between p-4 bg-white rounded-xl border border-gray-200 hover:border-indigo-200 hover:shadow-md transition-all">
+                                <div>
+                                    <span className="font-semibold text-gray-900 group-hover:text-indigo-600 block">{link.title}</span>
+                                    <span className="text-sm text-gray-500">{link.desc}</span>
+                                </div>
+                                <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-indigo-600 flex-shrink-0" />
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             <Footer />
         </div>

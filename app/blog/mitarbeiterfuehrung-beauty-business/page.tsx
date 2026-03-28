@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Mitarbeiterführung im Beauty-Business',
     description: 'Erfolgreiche Mitarbeiterführung in Kosmetikstudios. Von der Einarbeitung bis zur Motivation - so führst du dein Beauty-Team zum Erfolg.',
     keywords: ["Mitarbeiterführung Beauty","Team Management Kosmetik","Beauty Team leiten","Kosmetikstudio Personal","Beauty Business Management","Salon Teamführung"],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/mitarbeiterfuehrung-beauty-business',
     },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         type: 'article',
         publishedTime: '2024-12-03T12:00:00.000Z',
-        authors: ['Treatflow Team'],
+        authors: ['Olcay Elikci'],
         section: 'Business',
         tags: ["Mitarbeiterführung Beauty","Team Management Kosmetik","Beauty Team leiten","Kosmetikstudio Personal"],
     },
@@ -49,9 +49,14 @@ export default function BlogPost() {
         "description": "Erfolgreiche Mitarbeiterführung in Kosmetikstudios. Von der Einarbeitung bis zur Motivation - so führst du dein Beauty-Team zum Erfolg.",
         "image": "https://www.treatflow.io/images/blog/mitarbeiterfuehrung.jpg",
         "author": {
-            "@type": "Organization",
-            "name": "Treatflow Team",
-            "url": "https://www.treatflow.io/ueber-uns"
+            "@type": "Person",
+            "name": "Olcay Elikci",
+            "url": "https://www.treatflow.io/ueber-uns",
+            "jobTitle": "Gründer von Treatflow",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Treatflow"
+            }
         },
         "publisher": {
             "@type": "Organization",

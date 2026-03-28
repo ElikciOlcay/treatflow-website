@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         'Kosmetik Software Test',
         'Studio Management Software',
     ],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/beste-kosmetikstudio-software-2026',
     },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         type: 'article',
         publishedTime: '2026-03-15T10:00:00.000Z',
-        authors: ['Treatflow Team'],
+        authors: ['Olcay Elikci'],
         section: 'Software',
         tags: ['Kosmetikstudio Software', 'Software Vergleich', 'Beauty Studio', 'Studio Management'],
     },
@@ -55,9 +55,14 @@ export default function BlogPost() {
         "description": "Welche Software eignet sich am besten für dein Kosmetikstudio? Wir vergleichen die besten Lösungen 2026 nach Funktionen, Preis und Bedienung.",
         "image": "https://www.treatflow.io/images/blog/beste-kosmetikstudio-software-2026.jpg",
         "author": {
-            "@type": "Organization",
-            "name": "Treatflow Team",
-            "url": "https://www.treatflow.io/ueber-uns"
+            "@type": "Person",
+            "name": "Olcay Elikci",
+            "url": "https://www.treatflow.io/ueber-uns",
+            "jobTitle": "Gründer von Treatflow",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Treatflow"
+            }
         },
         "publisher": {
             "@type": "Organization",
@@ -388,6 +393,27 @@ export default function BlogPost() {
                             <h3 className="text-lg font-semibold text-gray-900 mt-2">Behandlungsdokumentation NiSV-konform</h3>
                             <p className="text-gray-600 text-sm mt-2">So dokumentierst du Behandlungen rechtssicher und digital.</p>
                         </Link>
+                    </div>
+                </div>
+            </section>
+
+            {/* Verwandte Seiten */}
+            <section className="py-12 bg-gray-50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">Passende Funktionen für dein Studio</h2>
+                    <div className="grid sm:grid-cols-2 gap-4">
+                        {[
+                            { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', desc: 'All-in-One Lösung für dein Studio' },
+                            { href: '/kosmetikstudio-software-vergleich', title: 'Software-Vergleich', desc: 'Alle Anbieter im Überblick' },
+                        ].map((link, i) => (
+                            <Link key={i} href={link.href} className="group flex items-center justify-between p-4 bg-white rounded-xl border border-gray-200 hover:border-indigo-200 hover:shadow-md transition-all">
+                                <div>
+                                    <span className="font-semibold text-gray-900 group-hover:text-indigo-600 block">{link.title}</span>
+                                    <span className="text-sm text-gray-500">{link.desc}</span>
+                                </div>
+                                <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-indigo-600 flex-shrink-0" />
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </section>

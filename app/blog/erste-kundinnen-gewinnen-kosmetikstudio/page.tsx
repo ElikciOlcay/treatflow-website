@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Erste Kundinnen gewinnen: Tipps für Studios',
     description: 'Neu eröffnet und noch wenig gebucht? So kommst du zu den ersten Terminen – ohne teures Marketing.',
     keywords: ['Erste Kunden Kosmetikstudio', 'Neues Studio Kunden gewinnen', 'Kosmetikstudio Start', 'Kundenakquise Beauty', 'Studio eröffnen'],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: { canonical: 'https://www.treatflow.io/blog/erste-kundinnen-gewinnen-kosmetikstudio' },
     openGraph: {
         title: 'Erste Kundinnen gewinnen: Tipps für neue Kosmetikstudios',
@@ -32,7 +32,7 @@ export default function BlogPost() {
         "headline": "Erste Kundinnen gewinnen: Tipps für neue Kosmetikstudios",
         "description": "Neu eröffnet – so kommst du zu den ersten Terminen, ohne teures Marketing.",
         "image": "https://www.treatflow.io/images/blog/erste-kundinnen-gewinnen.jpg",
-        "author": { "@type": "Organization", "name": "Treatflow Team", "url": "https://www.treatflow.io/ueber-uns" },
+        "author": { "@type": "Person", "name": "Olcay Elikci", "url": "https://www.treatflow.io/ueber-uns", "jobTitle": "Gründer von Treatflow", "worksFor": { "@type": "Organization", "name": "Treatflow" } },
         "publisher": { "@type": "Organization", "name": "Treatflow", "logo": { "@type": "ImageObject", "url": "https://www.treatflow.io/images/logos/treatflow-logo.svg" } },
         "datePublished": "2024-12-10T14:00:00.000Z",
         "dateModified": "2024-12-10T14:00:00.000Z",
@@ -112,6 +112,27 @@ export default function BlogPost() {
                     </div>
                 </div>
             </article>
+            {/* Verwandte Seiten */}
+            <section className="py-12 bg-gray-50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">Passende Funktionen für dein Studio</h2>
+                    <div className="grid sm:grid-cols-2 gap-4">
+                        {[
+                            { href: '/online-terminbuchung-kosmetikstudio', title: 'Online-Terminbuchung', desc: 'Kunden buchen 24/7 online' },
+                            { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', desc: 'All-in-One für dein Studio' },
+                        ].map((link, i) => (
+                            <Link key={i} href={link.href} className="group flex items-center justify-between p-4 bg-white rounded-xl border border-gray-200 hover:border-indigo-200 hover:shadow-md transition-all">
+                                <div>
+                                    <span className="font-semibold text-gray-900 group-hover:text-indigo-600 block">{link.title}</span>
+                                    <span className="text-sm text-gray-500">{link.desc}</span>
+                                </div>
+                                <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-indigo-600 flex-shrink-0" />
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             <Footer />
         </div>
     );

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Saisonales Marketing für Beauty-Studios',
     description: 'Nutze saisonale Trends für dein Beauty-Marketing. Von Frühlings-Detox bis Winter-Wellness - so planst du dein Marketing-Jahr erfolgreich.',
     keywords: ["Saisonales Marketing Beauty","Beauty Studio Marketing","Kosmetik Marketing Kalender","Beauty Trends Saison","Marketing Kosmetikstudio","Beauty Salon Werbung"],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/saisonales-marketing-beauty-studios',
     },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         type: 'article',
         publishedTime: '2024-11-25T11:00:00.000Z',
-        authors: ['Treatflow Team'],
+        authors: ['Olcay Elikci'],
         section: 'Marketing',
         tags: ["Saisonales Marketing Beauty","Beauty Studio Marketing","Kosmetik Marketing Kalender","Beauty Trends Saison"],
     },
@@ -49,9 +49,14 @@ export default function BlogPost() {
         "description": "Nutze saisonale Trends für dein Beauty-Marketing. Von Frühlings-Detox bis Winter-Wellness - so planst du dein Marketing-Jahr erfolgreich.",
         "image": "https://www.treatflow.io/images/blog/saisonales-marketing.jpg",
         "author": {
-            "@type": "Organization",
-            "name": "Treatflow Team",
-            "url": "https://www.treatflow.io/ueber-uns"
+            "@type": "Person",
+            "name": "Olcay Elikci",
+            "url": "https://www.treatflow.io/ueber-uns",
+            "jobTitle": "Gründer von Treatflow",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Treatflow"
+            }
         },
         "publisher": {
             "@type": "Organization",

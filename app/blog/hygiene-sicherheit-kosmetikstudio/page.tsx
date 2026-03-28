@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: 'Hygiene & Sicherheit im Kosmetikstudio',
     description: 'Hygiene-Standards für Kosmetikstudios: Von der Desinfektion bis zur Dokumentation. Alle Vorschriften und praktische Tipps für den Alltag.',
     keywords: ["Hygiene Kosmetikstudio","Desinfektion Beauty","Kosmetik Sicherheit","Beauty Hygiene Standards","Kosmetikstudio Vorschriften","Salon Hygiene"],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/hygiene-sicherheit-kosmetikstudio',
     },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         type: 'article',
         publishedTime: '2024-11-28T15:00:00.000Z',
-        authors: ['Treatflow Team'],
+        authors: ['Olcay Elikci'],
         section: 'Recht & Compliance',
         tags: ["Hygiene Kosmetikstudio","Desinfektion Beauty","Kosmetik Sicherheit","Beauty Hygiene Standards"],
     },
@@ -49,9 +49,14 @@ export default function BlogPost() {
         "description": "Hygiene-Standards für Kosmetikstudios: Von der Desinfektion bis zur Dokumentation. Alle Vorschriften und praktische Tipps für den Alltag.",
         "image": "https://www.treatflow.io/images/blog/hygiene-sicherheit.jpg",
         "author": {
-            "@type": "Organization",
-            "name": "Treatflow Team",
-            "url": "https://www.treatflow.io/ueber-uns"
+            "@type": "Person",
+            "name": "Olcay Elikci",
+            "url": "https://www.treatflow.io/ueber-uns",
+            "jobTitle": "Gründer von Treatflow",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Treatflow"
+            }
         },
         "publisher": {
             "@type": "Organization",

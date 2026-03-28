@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: 'Zusatzumsatz Kosmetikstudio: Produktverkauf',
     description: 'Steigere deinen Umsatz um bis zu 40% durch cleveren Produktverkauf. Welche Produkte sich lohnen und wie du sie erfolgreich verkaufst.',
     keywords: ["Produktverkauf Kosmetikstudio","Zusatzumsatz Beauty","Kosmetik Produkte verkaufen","Beauty Retail","Kosmetikstudio Umsatz","Beauty Salon Verkauf"],
-    authors: [{ name: 'Treatflow Team' }],
+    authors: [{ name: 'Olcay Elikci' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/zusatzumsatz-kosmetikstudio-produkte',
     },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         type: 'article',
         publishedTime: '2024-11-28T10:00:00.000Z',
-        authors: ['Treatflow Team'],
+        authors: ['Olcay Elikci'],
         section: 'Business',
         tags: ["Produktverkauf Kosmetikstudio","Zusatzumsatz Beauty","Kosmetik Produkte verkaufen","Beauty Retail"],
     },
@@ -50,9 +50,14 @@ export default function BlogPost() {
         "description": "Steigere deinen Umsatz um bis zu 40% durch cleveren Produktverkauf. Welche Produkte sich lohnen und wie du sie erfolgreich verkaufst.",
         "image": "https://www.treatflow.io/images/blog/produktverkauf-guide.jpg",
         "author": {
-            "@type": "Organization",
-            "name": "Treatflow Team",
-            "url": "https://www.treatflow.io/ueber-uns"
+            "@type": "Person",
+            "name": "Olcay Elikci",
+            "url": "https://www.treatflow.io/ueber-uns",
+            "jobTitle": "Gründer von Treatflow",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Treatflow"
+            }
         },
         "publisher": {
             "@type": "Organization",

@@ -2,10 +2,18 @@ import {
     ClipboardCheck, FileText, CheckCircle, ArrowRight, X, Shield,
     Smartphone, Users, Clock, Zap
 } from 'lucide-react';
+import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+
+const clusterLinks = [
+    { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', description: 'Die All-in-One Lösung für dein Studio' },
+    { href: '/anamnesebogen-kosmetikstudio', title: 'Anamnesebogen-Vorlagen', description: 'Professionelle Vorlagen für alle Behandlungen' },
+    { href: '/kundenkartei-kosmetikstudio', title: 'Digitale Kundenkartei', description: 'Alle Kundendaten immer griffbereit' },
+    { href: '/nisv-dokumentation-kosmetikstudio', title: 'NiSV-Dokumentation', description: 'Rechtssichere Dokumentation nach NiSV' },
+];
 
 export const metadata = {
     title: 'Digitale Anamnese Kosmetikstudio: papierlos',
@@ -290,8 +298,29 @@ export default function DigitaleAnamneseKosmetikstudioPage() {
                 </div>
             </section>
 
-            {/* FAQ */}
+            {/* Internal Links Section */}
             <section className="py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Mehr als nur digitale Anamnese</h2>
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">Treatflow vereint alle Tools, die dein Kosmetikstudio braucht.</p>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {clusterLinks.map((link, index) => (
+                            <Link key={index} href={link.href} className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-emerald-200 hover:shadow-lg transition-all duration-200">
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors duration-200 flex items-center">
+                                    {link.title}
+                                    <ArrowRight className="ml-2 h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                                </h3>
+                                <p className="text-gray-600 text-sm">{link.description}</p>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* FAQ */}
+            <section className="py-20 bg-gray-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Häufige Fragen</h2>
                     <div className="space-y-6">

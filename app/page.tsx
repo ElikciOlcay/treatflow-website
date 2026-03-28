@@ -125,6 +125,66 @@ const faqSchema = {
   ]
 };
 
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Treatflow",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "url": "https://www.treatflow.io",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "7",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Maren Burmeister" },
+      "reviewBody": "Seit Dezember 2024 nutzen wir Treatflow mit einem dreiköpfigen Team. Es ist eine große Arbeitserleichterung und spart Zeit. Wir arbeiten vollständig digital und erfüllen alle NiSV-Anforderungen. Klare Empfehlung."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Fatma Suna" },
+      "reviewBody": "Ich kann Treatflow wirklich jedem nur ans Herz legen. Die App bietet großartige Möglichkeiten, die sowohl uns als auch unseren Kunden das Leben erleichtern. Ein Must-Have für alle Studios."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "E. B." },
+      "reviewBody": "Wir sind mit Treatflow wirklich sehr zufrieden! Auf Wünsche und Vorschläge wird immer eingegangen. Alles wird sofort verständlich erklärt und direkt umgesetzt."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Valeska Weber" },
+      "reviewBody": "Ganz toller Service. Für mich eine Arbeitserleichterung – hab alles für die Kunden griffbereit an einem Ort."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Evangelia Karapouliou" },
+      "reviewBody": "Ein sehr freundliches, kompetentes, kundenorientiertes und hilfsbereites Team. Das Programm passt perfekt in mein Unternehmen."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Simone Weigl" },
+      "reviewBody": "Kann Treatflow wirklich jedem empfehlen. Olcay geht sympathisch und unkompliziert auf individuelle Anpassungen ein."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Mit Liebe zum Detail" },
+      "reviewBody": "Der Service ist einfach super und meine Kunden sind äußerst zufrieden mit den Online-Formularen. Die Benutzerfreundlichkeit und Handhabung machen die Erfahrung stressfrei."
+    }
+  ]
+};
+
 export default function Home() {
   return (
     <>
@@ -137,6 +197,11 @@ export default function Home() {
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Script
+        id="review-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
 
       <div className="min-h-screen bg-white">
@@ -408,7 +473,7 @@ export default function Home() {
                 Der Alltag im Kosmetikstudio ist anspruchsvoll: Termine koordinieren, Kunden betreuen, Behandlungen dokumentieren, Produkte über den <Link href="/shop" className="text-indigo-600 hover:underline">Online-Shop</Link> verkaufen und gleichzeitig den Überblick über das gesamte Business behalten. Viele Studios arbeiten noch mit Papierkalender, WhatsApp-Nachrichten und handgeschriebenen Karteikarten – das kostet wertvolle Zeit, die für die eigentliche Arbeit am Kunden fehlt.
               </p>
               <p>
-                Eine spezialisierte Studio Software wie Treatflow löst genau diese Probleme. Der <Link href="/terminkalender" className="text-indigo-600 hover:underline">Terminkalender</Link> mit <Link href="/online-buchungen" className="text-indigo-600 hover:underline">Online-Buchungen</Link> ermöglicht Kunden, rund um die Uhr Termine zu buchen. Automatische Erinnerungen per SMS reduzieren No-Shows. Digitale <Link href="/formulare" className="text-indigo-600 hover:underline">Anamnesebögen und Formulare</Link> ersetzen den Papierstapel. Und die Behandlungsdokumentation erfüllt alle Anforderungen – auch für NiSV-pflichtige Geräte. Das Ergebnis: weniger Verwaltung, mehr Zeit für das, was zählt – deine Kunden.
+                Eine spezialisierte Studio Software wie Treatflow löst genau diese Probleme. Der <Link href="/terminkalender" className="text-indigo-600 hover:underline">Terminkalender</Link> mit <Link href="/online-buchungen" className="text-indigo-600 hover:underline">Online-Buchungen</Link> ermöglicht Kunden, rund um die Uhr Termine zu buchen – über die <Link href="/online-terminbuchung-kosmetikstudio" className="text-indigo-600 hover:underline">Online-Terminbuchung speziell für Kosmetikstudios</Link>. Automatische <Link href="/sms-erinnerungen-kosmetikstudio" className="text-indigo-600 hover:underline">SMS-Erinnerungen</Link> reduzieren No-Shows um bis zu 80%. Digitale <Link href="/formulare" className="text-indigo-600 hover:underline">Anamnesebögen und Formulare</Link> ersetzen den Papierstapel – von der <Link href="/digitale-anamnese-kosmetikstudio" className="text-indigo-600 hover:underline">digitalen Anamnese</Link> bis zur Einwilligung. Und die <Link href="/behandlungsdokumentation-kosmetikstudio" className="text-indigo-600 hover:underline">Behandlungsdokumentation</Link> erfüllt alle Anforderungen – auch für NiSV-pflichtige Geräte. Das Ergebnis: weniger Verwaltung, mehr Zeit für das, was zählt – deine Kunden.
               </p>
               <p>
                 Für Studios mit Fokus auf Kundendaten bietet Treatflow eine zentrale <Link href="/kundenkartei-software" className="text-indigo-600 hover:underline">Kundenkartei Software</Link>. Dort findest du alle Informationen zur <Link href="/kundenkartei-kosmetikstudio" className="text-indigo-600 hover:underline">digitalen Kundenkartei im Kosmetikstudio</Link> inklusive Vergleich zu kostenlosen oder papierbasierten Alternativen.
@@ -416,6 +481,10 @@ export default function Home() {
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
               <Link href="/kundenkartei-software" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Kundenkartei Software</Link>
+              <Link href="/online-terminbuchung-kosmetikstudio" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Online-Terminbuchung Kosmetikstudio</Link>
+              <Link href="/behandlungsdokumentation-kosmetikstudio" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Behandlungsdokumentation Kosmetikstudio</Link>
+              <Link href="/digitale-anamnese-kosmetikstudio" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Digitale Anamnese Kosmetikstudio</Link>
+              <Link href="/sms-erinnerungen-kosmetikstudio" className="hover:text-indigo-600 transition-colors underline underline-offset-4">SMS-Erinnerungen Kosmetikstudio</Link>
               <Link href="/kosmetikstudio-software-vergleich" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Software-Vergleich</Link>
               <Link href="/blog/beste-kosmetikstudio-software-2026" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Beste Kosmetikstudio Software 2026</Link>
               <Link href="/blog/online-buchungssystem-vorteile" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Vorteile eines Online-Buchungssystems</Link>
