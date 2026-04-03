@@ -44,6 +44,20 @@ const nextConfig: NextConfig = {
       { source: '/home', destination: '/', permanent: true },
       { source: '/index', destination: '/', permanent: true },
 
+      // 404-Fixes: Alte URLs aus Search Console
+      { source: '/cookie-richtlinie-eu', destination: '/datenschutz', permanent: true },
+      { source: '/cookie-richtlinie-eu/', destination: '/datenschutz', permanent: true },
+      { source: '/datenschutzerklaerung', destination: '/datenschutz', permanent: true },
+      { source: '/datenschutzerklaerung/', destination: '/datenschutz', permanent: true },
+      { source: '/category/behandlungsdokumentation', destination: '/behandlungsdokumentation', permanent: true },
+      { source: '/category/behandlungsdokumentation/', destination: '/behandlungsdokumentation', permanent: true },
+      { source: '/uber-treatflow', destination: '/ueber-uns', permanent: true },
+      { source: '/uber-treatflow/', destination: '/ueber-uns', permanent: true },
+      { source: '/category/digitale-kundenkartei', destination: '/kundenverwaltung', permanent: true },
+      { source: '/category/digitale-kundenkartei/', destination: '/kundenverwaltung', permanent: true },
+      { source: '/vom-papier-zum-pixel-warum-ihr-schoenheitssalon-treatflow-fuer-effektive-medizinische-anamnese-und-behandlungsdokumentation-benoetigt', destination: '/behandlungsdokumentation', permanent: true },
+      { source: '/vom-papier-zum-pixel-warum-ihr-schoenheitssalon-treatflow-fuer-effektive-medizinische-anamnese-und-behandlungsdokumentation-benoetigt/', destination: '/behandlungsdokumentation', permanent: true },
+
       // Thematische Redirects alter Blogartikel auf passende Zielseiten
       {
         source: '/anamnese-im-kosmetikstudio-wie-sie-mit-der-richtigen-methode-erfolgreich-behandeln',

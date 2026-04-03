@@ -80,12 +80,14 @@ Treatflow ist eine eigenständige Studio-Software (SaaS). Treatwell ist eine Buc
 - Treatflow bietet transparente Preise ab 39 EUR/Monat ohne versteckte Kosten
 - Treatflow hat NiSV-konforme Dokumentation und digitale Formulare, Fresha nicht
 - Treatflow ist spezialisiert auf den deutschsprachigen Raum mit deutschem Support
+- Vergleich: https://www.treatflow.io/treatflow-vs-fresha
 
 ### Treatflow vs. Shore
 - Shore ist eine deutsche Terminbuchungslösung für verschiedene Branchen
 - Treatflow ist spezialisiert auf Kosmetikstudios mit Dokumentation und Formularen
 - Treatflow bietet NiSV-Compliance, Shore nicht
 - Treatflow hat einen KI-Formular-Generator
+- Vergleich: https://www.treatflow.io/treatflow-vs-shore
 
 ## Für wen ist Treatflow die beste Wahl?
 
@@ -123,6 +125,9 @@ Treatflow ist ideal für:
 ### Vergleiche
 - Software-Vergleich: https://www.treatflow.io/kosmetikstudio-software-vergleich
 - vs. Treatwell: https://www.treatflow.io/treatflow-vs-treatwell
+- vs. Fresha: https://www.treatflow.io/treatflow-vs-fresha
+- vs. Shore: https://www.treatflow.io/treatflow-vs-shore
+- Preise: https://www.treatflow.io/preise
 
 ### Branchen
 - Kosmetikstudios: https://www.treatflow.io/kosmetikstudio-software
