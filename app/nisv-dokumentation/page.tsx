@@ -1,4 +1,4 @@
-import { FileText, Shield, Archive, ArrowRight, CheckCircle, ExternalLink } from 'lucide-react';
+import { FileText, Shield, Archive, ArrowRight, CheckCircle, ExternalLink, AlertTriangle, Zap, ClipboardList } from 'lucide-react';
 import Link from 'next/link';
 import Script from 'next/script';
 import Image from 'next/image';
@@ -38,7 +38,7 @@ const faqSchema = {
             name: 'Wie lange muss ich Beratungsprotokoll und Einverständniserklärung aufbewahren?',
             acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Nach § 3 NiSV sind Beratungsprotokoll und Einverständniserklärung zehn Jahre aufzubewahren. Eine digitale, rechtssichere Ablage erleichtert die Einhaltung dieser Frist.',
+                text: 'Nach § 3 NiSV sind Beratungsprotokoll und Einverständniserklärung zehn Jahre aufzubewahren. Diese Frist beginnt mit dem Tag der Behandlung. Eine digitale, rechtssichere Ablage erleichtert die Einhaltung dieser Frist.',
             },
         },
         {
@@ -55,6 +55,30 @@ const faqSchema = {
             acceptedAnswer: {
                 '@type': 'Answer',
                 text: 'Ja. Eine softwaregestützte Dokumentation mit Formularen, digitaler Signatur und lückenloser Aufbewahrung ist geeignet, die NiSV-Anforderungen zu erfüllen – und reduziert Papier und Suchaufwand.',
+            },
+        },
+        {
+            '@type': 'Question',
+            name: 'Welche Geräte fallen unter die NiSV?',
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Alle Geräte, die nichtionisierende Strahlung zu kosmetischen oder nichtmedizinischen Zwecken am Menschen einsetzen, fallen unter die NiSV. Dazu gehören unter anderem IPL-Geräte, Laser, Ultraschallgeräte, Radiofrequenz-Geräte, Mikrostrom-Geräte und LED-Therapiegeräte. Entscheidend ist die Zweckbestimmung: Wird das Gerät kosmetisch eingesetzt, greift die NiSV.',
+            },
+        },
+        {
+            '@type': 'Question',
+            name: 'Wie lange müssen NiSV-Dokumente aufbewahrt werden?',
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Beratungsprotokoll und Einwilligungserklärung müssen nach § 3 NiSV mindestens zehn Jahre aufbewahrt werden. Diese Frist beginnt mit dem Tag der Behandlung. Bei einer digitalen Lösung wie Treatflow wird die Aufbewahrungsfrist automatisch eingehalten.',
+            },
+        },
+        {
+            '@type': 'Question',
+            name: 'Brauche ich für jede Behandlung ein neues Beratungsprotokoll?',
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Bei einer Erstbehandlung ist ein vollständiges Beratungsprotokoll Pflicht. Bei Folgebehandlungen mit derselben Methode kann auf das vorhandene Protokoll verwiesen werden, sofern sich keine relevanten Änderungen ergeben haben. Ändern sich die Parameter oder der Gesundheitszustand der Kundin, muss eine erneute Beratung und Dokumentation erfolgen.',
             },
         },
     ],
@@ -103,7 +127,7 @@ export default function NisvDokumentationPage() {
             <section className="py-16 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <p className="text-lg text-gray-600 mb-12">
-                        Die <strong>NiSV</strong> (Verordnung zum Schutz vor nichtionisierender Strahlung bei der Anwendung am Menschen) gilt in Deutschland für Anlagen zur Anwendung nichtionisierender Strahlung zu kosmetischen oder sonstigen nichtmedizinischen Zwecken. Aus <strong>§ 3 NiSV</strong> ergeben sich konkrete Anforderungen an Gerätesicherheit, Beratung und Aufklärung sowie an die Dokumentation und Aufbewahrung. Mit der richtigen Software erfüllst du diese Pflichten ohne Zettelwirtschaft.
+                        Die <strong>NiSV</strong> (Verordnung zum Schutz vor nichtionisierender Strahlung bei der Anwendung am Menschen) gilt in Deutschland für Anlagen zur Anwendung nichtionisierender Strahlung zu kosmetischen oder sonstigen nichtmedizinischen Zwecken. Seit dem 31. Dezember 2020 ist die Verordnung vollständig in Kraft und wird von den zuständigen Landesbehörden überwacht. Aus <strong>§ 3 NiSV</strong> ergeben sich konkrete Anforderungen an Gerätesicherheit, Beratung und Aufklärung sowie an die Dokumentation und Aufbewahrung. Mit der richtigen Software erfüllst du diese Pflichten ohne Zettelwirtschaft – und schützt gleichzeitig dich und deine Kundinnen.
                     </p>
 
                     <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
@@ -111,7 +135,7 @@ export default function NisvDokumentationPage() {
                         Beratung und Aufklärung
                     </h2>
                     <p className="text-gray-600 mb-8">
-                        Vor der Anwendung musst du deine Kundinnen beraten und aufklären. Das Beratungsprotokoll hält fest, was besprochen wurde. Mit digitalen Formularen und Vorlagen erstellst du einheitliche Protokolle und vermeidest Lücken. Treatflow bietet Formulare für Anamnesen und Einverständniserklärungen, die du an deine Behandlungen anpassen kannst.
+                        Vor der Anwendung musst du deine Kundinnen beraten und aufklären. Das Beratungsprotokoll hält fest, was besprochen wurde – von der Art der Behandlung über erwartete Wirkungen bis hin zu möglichen Risiken und Nebenwirkungen. Mit digitalen Formularen und Vorlagen erstellst du einheitliche Protokolle und vermeidest Lücken. Treatflow bietet <Link href="/formulare" className="text-indigo-600 hover:text-indigo-700 font-medium">Formulare für Anamnesen und Einverständniserklärungen</Link>, die du an deine Behandlungen anpassen kannst.
                     </p>
                     <Link href="/formulare" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
                         Zu den Formularen
@@ -123,7 +147,7 @@ export default function NisvDokumentationPage() {
                         Einwilligung (Einverständniserklärung)
                     </h2>
                     <p className="text-gray-600 mb-8">
-                        Die schriftliche Einwilligung der Kundin ist erforderlich. Ob Laser, IPL oder andere NiSV-relevante Behandlungen – die Einverständniserklärung muss klar und nachvollziehbar sein. Digitale Formulare mit optionaler Signatur erleichtern die Ablage und die spätere Auffindbarkeit.
+                        Die schriftliche Einwilligung der Kundin ist erforderlich. Ob Laser, IPL oder andere NiSV-relevante Behandlungen – die Einverständniserklärung muss klar und nachvollziehbar sein. Digitale Formulare mit optionaler Signatur erleichtern die Ablage und die spätere Auffindbarkeit. In Treatflow kannst du die Einwilligung direkt am Tablet oder Smartphone unterschreiben lassen und dem <Link href="/kundenverwaltung" className="text-indigo-600 hover:text-indigo-700 font-medium">Kundenprofil</Link> zuordnen.
                     </p>
                     <Link href="/formulare" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
                         Einverständniserklärungen in Treatflow
@@ -135,7 +159,7 @@ export default function NisvDokumentationPage() {
                         Aufbewahrung (10 Jahre)
                     </h2>
                     <p className="text-gray-600 mb-8">
-                        § 3 NiSV verlangt die <strong>Aufbewahrung von Beratungsprotokoll und Einverständniserklärung für zehn Jahre</strong>. In Papierform bedeutet das Ordner, Platz und das Risiko von Verlust. Mit einer digitalen, rechtssicheren Dokumentation speicherst du alle Unterlagen zentral, findest sie schnell wieder und behältst die Fristen im Blick.
+                        § 3 NiSV verlangt die <strong>Aufbewahrung von Beratungsprotokoll und Einverständniserklärung für zehn Jahre</strong>. In Papierform bedeutet das Ordner, Platz und das Risiko von Verlust. Mit einer digitalen, rechtssicheren Dokumentation speicherst du alle Unterlagen zentral, findest sie schnell wieder und behältst die Fristen im Blick. Treatflow archiviert alle Dokumente automatisch und stellt sicher, dass nichts verloren geht.
                     </p>
                     <Link href="/behandlungsdokumentation" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
                         Zur Behandlungsdokumentation
@@ -146,19 +170,258 @@ export default function NisvDokumentationPage() {
 
             <section className="py-16 bg-gray-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                        <Zap className="h-8 w-8 mr-3 text-indigo-600" />
+                        Welche Behandlungen fallen unter die NiSV?
+                    </h2>
+                    <p className="text-gray-600 mb-8">
+                        Die NiSV betrifft alle Geräte und Anlagen, die nichtionisierende Strahlung zu kosmetischen oder sonstigen nichtmedizinischen Zwecken am Menschen einsetzen. In der Praxis betrifft das vor allem die folgenden Behandlungskategorien, die in vielen Kosmetikstudios zum Standardangebot gehören:
+                    </p>
+
+                    <div className="space-y-6">
+                        <div className="bg-white rounded-xl p-6 border border-gray-200">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-3">Laser- und IPL-Haarentfernung</h3>
+                            <p className="text-gray-600">
+                                Intense Pulsed Light (IPL) und Diodenlaser zählen zu den häufigsten NiSV-relevanten Anwendungen im Kosmetikstudio. Beide Technologien arbeiten mit gebündeltem Licht, das gezielt auf die Haarfollikel wirkt und das Haarwachstum dauerhaft reduziert. Da optische Strahlung eingesetzt wird, fallen diese Behandlungen klar unter die NiSV. Die verwendeten Parameter wie Wellenlänge, Energiedichte (Joule pro Quadratzentimeter) und Impulsdauer müssen für jede einzelne Sitzung dokumentiert werden.
+                            </p>
+                        </div>
+
+                        <div className="bg-white rounded-xl p-6 border border-gray-200">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-3">Ultraschallbehandlungen</h3>
+                            <p className="text-gray-600">
+                                Hochfrequenter Ultraschall wird in der Kosmetik für Hautreinigung, Wirkstoffeinschleusung (Sonophorese) und Hautstraffung eingesetzt. Ultraschallgeräte mit kosmetischer Zweckbestimmung fallen unter die NiSV, sobald sie bestimmte Leistungsschwellen überschreiten. Die verwendeten Frequenzen und Intensitäten gehören zu den Pflichtangaben in der Behandlungsdokumentation.
+                            </p>
+                        </div>
+
+                        <div className="bg-white rounded-xl p-6 border border-gray-200">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-3">Radiofrequenz-Behandlungen (RF)</h3>
+                            <p className="text-gray-600">
+                                Radiofrequenz-Geräte erzeugen elektromagnetische Wellen, die das Gewebe kontrolliert erwärmen und so die Kollagenproduktion anregen. Diese Technologie wird häufig für Hautstraffung und Bodycontouring eingesetzt. Da es sich um hochfrequente elektromagnetische Felder handelt, sind RF-Behandlungen NiSV-pflichtig. Leistung, Behandlungsdauer und die behandelte Körperregion müssen erfasst werden.
+                            </p>
+                        </div>
+
+                        <div className="bg-white rounded-xl p-6 border border-gray-200">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-3">Mikrostrom-Behandlungen</h3>
+                            <p className="text-gray-600">
+                                Mikrostromgeräte arbeiten mit niedrigen elektrischen Strömen, die die Gesichtsmuskulatur stimulieren und den Zellstoffwechsel anregen. Obwohl die eingesetzten Ströme vergleichsweise gering sind, fallen auch diese Geräte unter die NiSV, sofern sie zu kosmetischen Zwecken verwendet werden. Die Stromstärke, Frequenz und Anwendungsdauer sind Teil der Dokumentationspflicht.
+                            </p>
+                        </div>
+
+                        <div className="bg-white rounded-xl p-6 border border-gray-200">
+                            <h3 className="text-xl font-semibold text-gray-900 mb-3">LED-Therapie</h3>
+                            <p className="text-gray-600">
+                                LED-Lichttherapie nutzt verschiedene Wellenlängen – typischerweise Rot, Blau und Infrarot –, um Hautzellen zu stimulieren, Entzündungen zu reduzieren oder die Kollagenbildung zu fördern. Da die Geräte optische Strahlung emittieren, fallen sie ebenfalls unter die NiSV. Die verwendete Wellenlänge, Bestrahlungsdauer und Leistungsdichte müssen pro Behandlung dokumentiert werden.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p className="text-gray-600 mt-8">
+                        Für alle genannten Behandlungen gilt: Die vollständige <Link href="/behandlungsdokumentation" className="text-indigo-600 hover:text-indigo-700 font-medium">Behandlungsdokumentation</Link> inklusive Beratungsprotokoll und Einwilligungserklärung ist gesetzlich vorgeschrieben. Mit Treatflow erstellst du diese Unterlagen digital und ordnest sie automatisch dem jeweiligen <Link href="/kundenverwaltung" className="text-indigo-600 hover:text-indigo-700 font-medium">Kundenprofil</Link> zu.
+                    </p>
+                </div>
+            </section>
+
+            <section className="py-16 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                        <ClipboardList className="h-8 w-8 mr-3 text-indigo-600" />
+                        NiSV-Dokumentation: Was muss dokumentiert werden?
+                    </h2>
+                    <p className="text-gray-600 mb-8">
+                        Gemäß § 3 NiSV sind Betreiber verpflichtet, für jede NiSV-relevante Behandlung eine vollständige Dokumentation zu erstellen und aufzubewahren. Die folgenden Punkte müssen lückenlos erfasst werden:
+                    </p>
+
+                    <ol className="space-y-6">
+                        <li className="flex gap-4">
+                            <span className="flex-shrink-0 w-8 h-8 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-bold text-sm">1</span>
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2">Beratungsprotokoll</h3>
+                                <p className="text-gray-600">
+                                    Vor jeder Erstanwendung muss ein schriftliches Beratungsprotokoll erstellt werden. Dieses muss mindestens enthalten: Informationen über die Art der Anwendung, die erwarteten Wirkungen, mögliche Nebenwirkungen und Risiken, Hinweise zur Nachsorge sowie individuelle Kontraindikationen. Das Protokoll muss von der Kundin und dem Anwender unterschrieben werden.
+                                </p>
+                            </div>
+                        </li>
+                        <li className="flex gap-4">
+                            <span className="flex-shrink-0 w-8 h-8 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-bold text-sm">2</span>
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2">Einwilligungserklärung</h3>
+                                <p className="text-gray-600">
+                                    Die Kundin muss ihre ausdrückliche, schriftliche Einwilligung zur Behandlung geben. Die Einwilligung muss auf Basis der vorangegangenen Beratung erfolgen und darf nicht unter Zeitdruck eingeholt werden. Zwischen Beratung und Einwilligung sollte ausreichend Bedenkzeit liegen.
+                                </p>
+                            </div>
+                        </li>
+                        <li className="flex gap-4">
+                            <span className="flex-shrink-0 w-8 h-8 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-bold text-sm">3</span>
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2">Behandlungsparameter</h3>
+                                <p className="text-gray-600">
+                                    Für jede durchgeführte Behandlung müssen die technischen Parameter dokumentiert werden: Frequenz, Leistung (Watt bzw. Joule/cm²), Impulsdauer, Wellenlänge, Behandlungsdauer und behandelte Körperregion. Diese Angaben ermöglichen die Nachvollziehbarkeit und sind bei einer behördlichen Prüfung entscheidend.
+                                </p>
+                            </div>
+                        </li>
+                        <li className="flex gap-4">
+                            <span className="flex-shrink-0 w-8 h-8 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-bold text-sm">4</span>
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2">Hauttyp-Bewertung</h3>
+                                <p className="text-gray-600">
+                                    Der Hauttyp der Kundin (z. B. nach der Fitzpatrick-Skala) muss erfasst werden, da er die Wahl der Behandlungsparameter maßgeblich beeinflusst. Eine falsche Parametereinstellung kann zu Verbrennungen oder Pigmentstörungen führen – die Hauttyp-Bestimmung ist daher sicherheitsrelevant und dokumentationspflichtig.
+                                </p>
+                            </div>
+                        </li>
+                        <li className="flex gap-4">
+                            <span className="flex-shrink-0 w-8 h-8 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-bold text-sm">5</span>
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2">Kontraindikationen-Prüfung</h3>
+                                <p className="text-gray-600">
+                                    Vor jeder Behandlung muss geprüft werden, ob Kontraindikationen vorliegen – beispielsweise Schwangerschaft, Hauterkrankungen, bestimmte Medikamenteneinnahme oder frische Bräunung. Das Ergebnis dieser Prüfung muss schriftlich festgehalten werden, um im Schadensfall die Sorgfaltspflicht nachweisen zu können.
+                                </p>
+                            </div>
+                        </li>
+                        <li className="flex gap-4">
+                            <span className="flex-shrink-0 w-8 h-8 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-bold text-sm">6</span>
+                            <div>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2">Geräte-Identifikation</h3>
+                                <p className="text-gray-600">
+                                    Das verwendete Gerät muss identifizierbar sein – Hersteller, Modell und Seriennummer müssen in der Dokumentation erscheinen. So kann bei einer Prüfung eindeutig zugeordnet werden, welches Gerät bei welcher Behandlung eingesetzt wurde.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+
+                    <p className="text-gray-600 mt-8">
+                        Mit den <Link href="/formulare" className="text-indigo-600 hover:text-indigo-700 font-medium">digitalen Formularen</Link> von Treatflow deckst du alle Pflichtangaben ab. Pflichtfelder verhindern, dass wichtige Informationen vergessen werden, und alle Daten werden automatisch der jeweiligen Kundin in der <Link href="/kundenverwaltung" className="text-indigo-600 hover:text-indigo-700 font-medium">Kundenverwaltung</Link> zugeordnet.
+                    </p>
+                </div>
+            </section>
+
+            <section className="py-16 bg-gray-50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                        Vergleich: Papier vs. digitale NiSV-Dokumentation
+                    </h2>
+                    <p className="text-gray-600 mb-8">
+                        Viele Kosmetikstudios führen die NiSV-Dokumentation noch auf Papier. Das ist grundsätzlich zulässig, bringt aber erhebliche Nachteile mit sich – besonders wenn die Behörde prüft oder eine Kundin nach Jahren ihre Unterlagen anfordert. Die folgende Übersicht zeigt die Unterschiede:
+                    </p>
+
+                    <div className="overflow-x-auto rounded-xl border border-gray-200">
+                        <table className="w-full">
+                            <thead>
+                                <tr className="bg-gray-100">
+                                    <th className="text-left p-4 font-semibold text-gray-900 border-b border-gray-200">Kriterium</th>
+                                    <th className="text-left p-4 font-semibold text-gray-900 border-b border-gray-200">Papier</th>
+                                    <th className="text-left p-4 font-semibold text-indigo-700 bg-indigo-50 border-b border-gray-200">Digital (Treatflow)</th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-gray-200">
+                                <tr>
+                                    <td className="p-4 text-gray-900 font-medium">Aufbewahrung</td>
+                                    <td className="p-4 text-gray-600">Ordner, Platzbedarf, Verlustrisiko</td>
+                                    <td className="p-4 text-gray-600 bg-indigo-50/30">Cloud-Speicher, automatisches Backup</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-4 text-gray-900 font-medium">Suche</td>
+                                    <td className="p-4 text-gray-600">Manuelles Durchblättern</td>
+                                    <td className="p-4 text-gray-600 bg-indigo-50/30">Sofort per Name oder Datum finden</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-4 text-gray-900 font-medium">Vollständigkeit</td>
+                                    <td className="p-4 text-gray-600">Lücken werden oft spät bemerkt</td>
+                                    <td className="p-4 text-gray-600 bg-indigo-50/30">Pflichtfelder verhindern Lücken</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-4 text-gray-900 font-medium">Unterschrift</td>
+                                    <td className="p-4 text-gray-600">Nur vor Ort auf Papier</td>
+                                    <td className="p-4 text-gray-600 bg-indigo-50/30">Digitale Signatur am Tablet</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-4 text-gray-900 font-medium">Fristenkontrolle</td>
+                                    <td className="p-4 text-gray-600">Manuelle Überwachung nötig</td>
+                                    <td className="p-4 text-gray-600 bg-indigo-50/30">Automatische Erinnerungen</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-4 text-gray-900 font-medium">Platzbedarf</td>
+                                    <td className="p-4 text-gray-600">Ordner und Regale nötig</td>
+                                    <td className="p-4 text-gray-600 bg-indigo-50/30">Kein physischer Platz nötig</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-4 text-gray-900 font-medium">Zugriff bei Prüfung</td>
+                                    <td className="p-4 text-gray-600">Zeitaufwändiges Suchen</td>
+                                    <td className="p-4 text-gray-600 bg-indigo-50/30">Sofort verfügbar und exportierbar</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p className="text-gray-600 mt-8">
+                        Der Umstieg auf eine digitale NiSV-Dokumentation spart nicht nur Zeit und Platz, sondern erhöht auch die Rechtssicherheit deines Studios. Mit Treatflow erstellst du alle erforderlichen Unterlagen direkt in der <Link href="/behandlungsdokumentation" className="text-indigo-600 hover:text-indigo-700 font-medium">Behandlungsdokumentation</Link> und hast sie jederzeit griffbereit.
+                    </p>
+                </div>
+            </section>
+
+            <section className="py-16 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                        <AlertTriangle className="h-8 w-8 mr-3 text-indigo-600" />
+                        Strafen und Konsequenzen bei fehlender NiSV-Dokumentation
+                    </h2>
+                    <p className="text-gray-600 mb-6">
+                        Die NiSV ist seit dem 31. Dezember 2020 vollständig in Kraft getreten. Übergangsfristen sind abgelaufen, und die zuständigen Landesbehörden können jederzeit unangekündigte Prüfungen durchführen. Wer die Dokumentationspflichten nicht einhält, riskiert empfindliche Konsequenzen:
+                    </p>
+
+                    <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-8">
+                        <ul className="space-y-4">
+                            <li className="flex gap-3">
+                                <span className="flex-shrink-0 w-2 h-2 mt-2 bg-red-500 rounded-full" />
+                                <p className="text-gray-700"><strong>Bußgelder:</strong> Je nach Schwere des Verstoßes und Bundesland können Bußgelder von mehreren tausend Euro verhängt werden. Bei wiederholten Verstößen steigt die Höhe deutlich an.</p>
+                            </li>
+                            <li className="flex gap-3">
+                                <span className="flex-shrink-0 w-2 h-2 mt-2 bg-red-500 rounded-full" />
+                                <p className="text-gray-700"><strong>Betriebsuntersagung:</strong> Ist die Sicherheit der Anwendungen nicht gewährleistet, können die Behörden den Betrieb bestimmter Geräte oder sogar des gesamten Studios untersagen, bis die Mängel behoben sind.</p>
+                            </li>
+                            <li className="flex gap-3">
+                                <span className="flex-shrink-0 w-2 h-2 mt-2 bg-red-500 rounded-full" />
+                                <p className="text-gray-700"><strong>Nachbesserungsfristen:</strong> Behörden können Fristen setzen, innerhalb derer die Dokumentation vollständig nachgeholt werden muss. Das verursacht zusätzlichen Aufwand unter erheblichem Zeitdruck.</p>
+                            </li>
+                            <li className="flex gap-3">
+                                <span className="flex-shrink-0 w-2 h-2 mt-2 bg-red-500 rounded-full" />
+                                <p className="text-gray-700"><strong>Haftungsrisiko:</strong> Fehlt das Beratungsprotokoll oder die Einwilligungserklärung, kann dies im Schadensfall zu erheblichen haftungsrechtlichen Folgen führen. Ohne lückenlose Dokumentation ist es schwer nachzuweisen, dass die Kundin ordnungsgemäß aufgeklärt wurde.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p className="text-gray-600">
+                        Eine vollständige, digitale Dokumentation mit Treatflow schützt dich vor diesen Risiken. Alle Pflichtangaben werden durch <Link href="/formulare" className="text-indigo-600 hover:text-indigo-700 font-medium">strukturierte Formulare</Link> abgedeckt, und die zehnjährige Aufbewahrungspflicht wird automatisch eingehalten. So bist du bei einer behördlichen Prüfung jederzeit vorbereitet.
+                    </p>
+                </div>
+            </section>
+
+            <section className="py-16 bg-gray-50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-gray-900 mb-8">Häufige Fragen zur NiSV-Dokumentation</h2>
                     <dl className="space-y-8">
                         <div>
                             <dt className="text-lg font-semibold text-gray-900 mb-2">Wie lange muss ich Beratungsprotokoll und Einverständniserklärung aufbewahren?</dt>
-                            <dd className="text-gray-600">Nach § 3 NiSV sind Beratungsprotokoll und Einverständniserklärung zehn Jahre aufzubewahren. Eine digitale, rechtssichere Ablage erleichtert die Einhaltung dieser Frist.</dd>
+                            <dd className="text-gray-600">Nach § 3 NiSV sind Beratungsprotokoll und Einverständniserklärung zehn Jahre aufzubewahren. Diese Frist beginnt mit dem Tag der Behandlung. Eine digitale, rechtssichere Ablage erleichtert die Einhaltung dieser Frist und eliminiert das Risiko von Dokumentenverlust.</dd>
                         </div>
                         <div>
                             <dt className="text-lg font-semibold text-gray-900 mb-2">Was verlangt die NiSV von Betreibern kosmetischer Anlagen?</dt>
-                            <dd className="text-gray-600">Die NiSV verlangt u. a. Gerätesicherheit, Beratung und Aufklärung der Kundinnen sowie die Dokumentation von Beratung und Einwilligung. Die genauen Anforderungen ergeben sich aus § 3 NiSV. Weitere Informationen findest du beim Bundesamt für Strahlenschutz (BFS) und beim Bundesministerium für Umwelt.</dd>
+                            <dd className="text-gray-600">Die NiSV verlangt u. a. Gerätesicherheit, Beratung und Aufklärung der Kundinnen sowie die Dokumentation von Beratung und Einwilligung. Betreiber müssen sicherstellen, dass nur sachkundige Personen die Geräte bedienen und alle Behandlungen lückenlos dokumentiert werden. Die genauen Anforderungen ergeben sich aus § 3 NiSV.</dd>
                         </div>
                         <div>
                             <dt className="text-lg font-semibold text-gray-900 mb-2">Kann ich NiSV-Dokumentation digital führen?</dt>
-                            <dd className="text-gray-600">Ja. Eine softwaregestützte Dokumentation mit Formularen, digitaler Signatur und lückenloser Aufbewahrung ist geeignet, die NiSV-Anforderungen zu erfüllen – und reduziert Papier und Suchaufwand.</dd>
+                            <dd className="text-gray-600">Ja. Eine softwaregestützte Dokumentation mit Formularen, digitaler Signatur und lückenloser Aufbewahrung ist geeignet, die NiSV-Anforderungen zu erfüllen. Digitale Dokumentation reduziert Papier und Suchaufwand und stellt durch Pflichtfelder sicher, dass keine Angaben fehlen.</dd>
+                        </div>
+                        <div>
+                            <dt className="text-lg font-semibold text-gray-900 mb-2">Welche Geräte fallen unter die NiSV?</dt>
+                            <dd className="text-gray-600">Alle Geräte, die nichtionisierende Strahlung zu kosmetischen oder nichtmedizinischen Zwecken am Menschen einsetzen, fallen unter die NiSV. Dazu gehören unter anderem IPL-Geräte, Laser, Ultraschallgeräte, Radiofrequenz-Geräte, Mikrostrom-Geräte und LED-Therapiegeräte. Entscheidend ist die Zweckbestimmung: Wird das Gerät nicht medizinisch, sondern kosmetisch eingesetzt, greift die NiSV.</dd>
+                        </div>
+                        <div>
+                            <dt className="text-lg font-semibold text-gray-900 mb-2">Wie lange müssen NiSV-Dokumente aufbewahrt werden?</dt>
+                            <dd className="text-gray-600">Beratungsprotokoll und Einwilligungserklärung müssen nach § 3 NiSV mindestens zehn Jahre aufbewahrt werden. Diese Frist beginnt mit dem Tag der Behandlung. Bei einer digitalen Lösung wie Treatflow wird die Aufbewahrungsfrist automatisch eingehalten, da alle Dokumente zentral und dauerhaft gespeichert werden.</dd>
+                        </div>
+                        <div>
+                            <dt className="text-lg font-semibold text-gray-900 mb-2">Brauche ich für jede Behandlung ein neues Beratungsprotokoll?</dt>
+                            <dd className="text-gray-600">Bei einer Erstbehandlung ist ein vollständiges Beratungsprotokoll Pflicht. Bei Folgebehandlungen mit derselben Methode und denselben Parametern kann auf das vorhandene Protokoll verwiesen werden, sofern sich keine relevanten Änderungen ergeben haben. Ändern sich jedoch die Behandlungsparameter, die Körperregion oder der Gesundheitszustand der Kundin, muss eine erneute Beratung und Dokumentation erfolgen. Treatflow macht es einfach, bestehende Protokolle zu duplizieren und bei Bedarf anzupassen.</dd>
                         </div>
                     </dl>
                     <p className="mt-8 text-sm text-gray-500">
@@ -197,7 +460,6 @@ export default function NisvDokumentationPage() {
                 </div>
             </section>
 
-            {/* Verwandte Seiten / Cluster-Verlinkung */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">

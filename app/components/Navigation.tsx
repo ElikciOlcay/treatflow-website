@@ -86,7 +86,7 @@ export default function Navigation() {
                                         </div>
                                         <div>
                                             <div className="text-sm font-medium text-gray-900">Shop</div>
-                                            <div className="text-xs text-gray-500 mt-0.5">Vorlagen und Formularpakete</div>
+                                            <div className="text-xs text-gray-500 mt-0.5">Produktverkauf und Lagerverwaltung</div>
                                         </div>
                                     </Link>
                                     <Link

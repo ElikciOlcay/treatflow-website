@@ -89,6 +89,13 @@ Treatflow ist eine eigenständige Studio-Software (SaaS). Treatwell ist eine Buc
 - Treatflow hat einen KI-Formular-Generator
 - Vergleich: https://www.treatflow.io/treatflow-vs-shore
 
+### Treatflow vs. Timely
+- Timely ist eine Salon-Software aus Neuseeland, primär auf Englisch
+- Treatflow ist komplett auf Deutsch mit deutschem Support
+- Timely hat keine Behandlungsdokumentation und keine NiSV-Konformität
+- Treatflow hostet auf EU-Servern, Timely in Australien/Neuseeland
+- Vergleich: https://www.treatflow.io/treatflow-vs-timely
+
 ## Für wen ist Treatflow die beste Wahl?
 
 Treatflow ist ideal für:
@@ -127,7 +134,9 @@ Treatflow ist ideal für:
 - vs. Treatwell: https://www.treatflow.io/treatflow-vs-treatwell
 - vs. Fresha: https://www.treatflow.io/treatflow-vs-fresha
 - vs. Shore: https://www.treatflow.io/treatflow-vs-shore
+- vs. Timely: https://www.treatflow.io/treatflow-vs-timely
 - Preise: https://www.treatflow.io/preise
+- Kostenlos vs. Bezahlt: https://www.treatflow.io/kosmetikstudio-software-kostenlos
 
 ### Branchen
 - Kosmetikstudios: https://www.treatflow.io/kosmetikstudio-software

@@ -6,15 +6,15 @@ import { Calendar, Clock, ArrowRight, Share2, Sparkles, CheckCircle, Star, Trend
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 
 export const metadata: Metadata = {
-    title: 'Anti-Aging Trends 2024: Gefragte Behandlungen',
-    description: 'Von Micro-Needling bis zu Peptid-Therapien: Entdecke die neuesten Anti-Aging Trends für dein Kosmetikstudio 2024.',
-    keywords: ['Anti-Aging Trends 2024', 'Micro-Needling', 'Peptid-Therapien', 'Anti-Aging Behandlungen', 'Kosmetikstudio Trends', 'Beauty Trends 2024'],
+    title: 'Anti-Aging Trends 2026: Gefragte Behandlungen',
+    description: 'Von Micro-Needling bis zu Peptid-Therapien: Entdecke die neuesten Anti-Aging Trends für dein Kosmetikstudio 2026.',
+    keywords: ['Anti-Aging Trends 2026', 'Micro-Needling', 'Peptid-Therapien', 'Anti-Aging Behandlungen', 'Kosmetikstudio Trends', 'Beauty Trends 2026'],
     authors: [{ name: 'Olcay Elikci' }],
     alternates: {
         canonical: 'https://www.treatflow.io/blog/anti-aging-trends-2024',
     },
     openGraph: {
-        title: 'Anti-Aging Trends 2024: Gefragte Behandlungen',
+        title: 'Anti-Aging Trends 2026: Gefragte Behandlungen',
         description: 'Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends für dein Kosmetikstudio.',
         url: 'https://www.treatflow.io/blog/anti-aging-trends-2024',
         siteName: 'Treatflow Blog',
@@ -23,19 +23,19 @@ export const metadata: Metadata = {
                 url: '/images/blog/anti-aging-trends-2024.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Anti-Aging Trends 2024 für Kosmetikstudios',
+                alt: 'Anti-Aging Trends 2026 für Kosmetikstudios',
             },
         ],
         locale: 'de_DE',
         type: 'article',
-        publishedTime: '2024-12-20T10:00:00.000Z',
+        publishedTime: '2026-04-02T10:00:00.000Z',
         authors: ['Olcay Elikci'],
         section: 'Fachkompetenz',
         tags: ['Anti-Aging', 'Trends', 'Behandlungen', 'Kosmetikstudio'],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Anti-Aging Trends 2024: Gefragte Behandlungen',
+        title: 'Anti-Aging Trends 2026: Gefragte Behandlungen',
         description: 'Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - die neuesten Anti-Aging Trends für dein Studio.',
         images: ['/images/blog/anti-aging-trends-2024.jpg'],
     },
@@ -45,8 +45,8 @@ export default function BlogPost() {
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt",
-        "description": "Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends, mit denen du dein Kosmetikstudio 2024 erfolgreich positionierst.",
+        "headline": "Anti-Aging Trends 2026: Diese Behandlungen sind jetzt gefragt",
+        "description": "Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends, mit denen du dein Kosmetikstudio 2026 erfolgreich positionierst.",
         "image": "https://www.treatflow.io/images/blog/anti-aging-trends-2024.jpg",
         "author": {
             "@type": "Person",
@@ -66,14 +66,14 @@ export default function BlogPost() {
                 "url": "https://www.treatflow.io/images/logos/treatflow-logo.svg"
             }
         },
-        "datePublished": "2024-12-20T10:00:00.000Z",
-        "dateModified": "2024-12-20T10:00:00.000Z",
+        "datePublished": "2026-04-02T10:00:00.000Z",
+        "dateModified": "2026-04-02",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://www.treatflow.io/blog/anti-aging-trends-2024"
         },
         "articleSection": "Fachkompetenz",
-        "keywords": "Anti-Aging Trends 2024, Micro-Needling, Peptid-Therapien, Anti-Aging Behandlungen",
+        "keywords": "Anti-Aging Trends 2026, Micro-Needling, Peptid-Therapien, Anti-Aging Behandlungen",
         "wordCount": 2800,
         "timeRequired": "PT12M",
         "inLanguage": "de-DE",
@@ -91,37 +91,40 @@ export default function BlogPost() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
                     { label: 'Blog', href: '/blog' },
-                    { label: 'Anti-Aging Trends 2024: Gefragte Behandlungen' },
+                    { label: 'Anti-Aging Trends 2026: Gefragte Behandlungen' },
                 ])) }}
             />
             <Breadcrumbs items={[
                 { label: 'Blog', href: '/blog' },
-                { label: 'Anti-Aging Trends 2024: Gefragte Behandlungen' },
+                { label: 'Anti-Aging Trends 2026: Gefragte Behandlungen' },
             ]} />
             <article className="pt-6 pb-20">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-8">
-                        <div className="flex items-center gap-4 mb-6">
-                            <span className="bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">
-                                Fachliches
-                            </span>
-                            <div className="flex items-center text-gray-500">
-                                <Calendar className="h-4 w-4 mr-2" />
-                                20. Dezember 2024
+                        <div className="flex flex-col gap-2 mb-6">
+                            <div className="flex flex-wrap items-center gap-4">
+                                <span className="bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">
+                                    Fachliches
+                                </span>
+                                <div className="flex items-center text-gray-500">
+                                    <Calendar className="h-4 w-4 mr-2" />
+                                    2. April 2026
+                                </div>
+                                <div className="flex items-center text-gray-500">
+                                    <Clock className="h-4 w-4 mr-2" />
+                                    12 min Lesezeit
+                                </div>
                             </div>
-                            <div className="flex items-center text-gray-500">
-                                <Clock className="h-4 w-4 mr-2" />
-                                12 min Lesezeit
-                            </div>
+                            <p className="text-sm text-gray-500">Aktualisiert: April 2026</p>
                         </div>
 
                         <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                            Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt
+                            Anti-Aging Trends 2026: Diese Behandlungen sind jetzt gefragt
                         </h1>
 
                         <p className="text-xl text-gray-600 leading-relaxed">
                             Von Micro-Needling bis hin zu personalisierten Peptid-Therapien - entdecke die neuesten Anti-Aging Trends,
-                            mit denen du dein Kosmetikstudio 2024 erfolgreich positionierst.
+                            mit denen du dein Kosmetikstudio 2026 erfolgreich positionierst.
                         </p>
                     </div>
 
@@ -129,7 +132,7 @@ export default function BlogPost() {
                         <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                             <img
                                 src="/images/blog/anti-aging-trends-2024.jpg"
-                                alt="Anti-Aging Trends 2024 - Moderne Kosmetikbehandlungen und Hautpflege"
+                                alt="Anti-Aging Trends 2026 - Moderne Kosmetikbehandlungen und Hautpflege"
                                 className="w-full h-full object-cover"
                             />
                         </div>
@@ -142,12 +145,12 @@ export default function BlogPost() {
                                 Der Anti-Aging Markt boomt wie nie zuvor
                             </h3>
                             <p className="text-pink-800 mb-0">
-                                <strong>Der globale Anti-Aging Markt wächst um 7,8% jährlich</strong> und erreicht 2024 ein Volumen von
+                                <strong>Der globale Anti-Aging Markt wächst um 7,8% jährlich</strong> und erreicht 2026 ein Volumen von
                                 über 83 Milliarden Dollar. Kunden investieren mehr denn je in Hautgesundheit und Prävention.
                             </p>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Die 8 wichtigsten Anti-Aging Trends 2024</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Die 8 wichtigsten Anti-Aging Trends 2026</h2>
 
                         <div className="space-y-8 mb-12">
                             <div className="border border-purple-200 rounded-lg p-6">
@@ -156,7 +159,7 @@ export default function BlogPost() {
                                     Micro-Needling 2.0: Personalisierte Seren
                                 </h3>
                                 <p className="text-gray-700 mb-4">
-                                    Micro-Needling wird 2024 noch präziser. Statt Standard-Seren werden jetzt individuell
+                                    Micro-Needling wird 2026 noch präziser. Statt Standard-Seren werden jetzt individuell
                                     abgestimmte Wirkstoff-Cocktails verwendet - je nach Hauttyp und Problemzonen.
                                 </p>
                                 <div className="bg-purple-50 p-4 rounded-lg">
@@ -210,12 +213,12 @@ export default function BlogPost() {
                                     Peptid-Therapie: Die neue Generation
                                 </h3>
                                 <p className="text-gray-700 mb-4">
-                                    Peptide sind die Stars der Anti-Aging Szene 2024. Diese kleinen Protein-Bausteine stimulieren
+                                    Peptide sind die Stars der Anti-Aging Szene 2026. Diese kleinen Protein-Bausteine stimulieren
                                     gezielt die Hauterneuerung und bieten sichtbare Ergebnisse ohne Nebenwirkungen.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="bg-green-50 p-4 rounded-lg">
-                                        <h6 className="font-medium text-green-900 mb-2">🧬 Top Peptide 2024:</h6>
+                                        <h6 className="font-medium text-green-900 mb-2">🧬 Top Peptide 2026:</h6>
                                         <div className="grid md:grid-cols-2 gap-3">
                                             <div>
                                                 <ul className="text-green-800 text-sm space-y-1">
@@ -245,7 +248,7 @@ export default function BlogPost() {
                                     Radiofrequenz: Non-invasives Face-Lifting
                                 </h3>
                                 <p className="text-gray-700 mb-4">
-                                    Radiofrequenz-Behandlungen erleben 2024 einen enormen Aufschwung. Die Technologie wird immer
+                                    Radiofrequenz-Behandlungen erleben 2026 einen enormen Aufschwung. Die Technologie wird immer
                                     präziser und ermöglicht sichtbare Straffung ohne operative Eingriffe.
                                 </p>
                                 <div className="grid md:grid-cols-2 gap-4">
@@ -276,7 +279,7 @@ export default function BlogPost() {
                                     Cryotherapy: Kälte als Anti-Aging Wunder
                                 </h3>
                                 <p className="text-gray-700 mb-4">
-                                    Kältetherapie ist der Geheimtipp 2024. Von lokaler Kryotherapie bis hin zu Ganzkörper-Behandlungen -
+                                    Kältetherapie ist der Geheimtipp 2026. Von lokaler Kryotherapie bis hin zu Ganzkörper-Behandlungen -
                                     Kälte aktiviert die natürlichen Reparaturmechanismen der Haut.
                                 </p>
                                 <div className="bg-red-50 p-4 rounded-lg">
@@ -327,7 +330,7 @@ export default function BlogPost() {
                                     Sonic Therapy: Ultraschall der neuen Generation
                                 </h3>
                                 <p className="text-gray-700 mb-4">
-                                    Hochfrequenter Ultraschall wird 2024 noch präziser. Mit fokussierten Schallwellen
+                                    Hochfrequenter Ultraschall wird 2026 noch präziser. Mit fokussierten Schallwellen
                                     können gezielt einzelne Hautschichten behandelt werden.
                                 </p>
                                 <div className="bg-teal-50 p-4 rounded-lg">
@@ -347,7 +350,7 @@ export default function BlogPost() {
                                     Personalized Skincare: KI-gestützte Hautanalyse
                                 </h3>
                                 <p className="text-gray-700 mb-4">
-                                    2024 wird das Jahr der personalisierten Hautpflege. KI-gestützte Hautanalyse erstellt
+                                    2026 wird das Jahr der personalisierten Hautpflege. KI-gestützte Hautanalyse erstellt
                                     individuelle Behandlungspläne basierend auf Hauttyp, Lebensstil und Zielen.
                                 </p>
                                 <div className="bg-yellow-50 p-4 rounded-lg">
@@ -363,7 +366,7 @@ export default function BlogPost() {
                             </div>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Preisgestaltung: Was Kunden 2024 bezahlen</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Preisgestaltung: Was Kunden 2026 bezahlen</h2>
 
                         <div className="grid md:grid-cols-2 gap-6 mb-8">
                             <div className="bg-green-50 p-6 rounded-lg">
@@ -388,7 +391,7 @@ export default function BlogPost() {
                             </div>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Zielgruppen: Wer bucht Anti-Aging 2024?</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Zielgruppen: Wer bucht Anti-Aging 2026?</h2>
 
                         <div className="space-y-6 mb-8">
                             <div className="border border-purple-200 rounded-lg p-6">
@@ -501,13 +504,13 @@ export default function BlogPost() {
                             </div>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Equipment-Investitionen: Was sich 2024 lohnt</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Equipment-Investitionen: Was sich 2026 lohnt</h2>
 
                         <div className="space-y-6 mb-8">
                             <div className="border border-green-200 rounded-lg p-6">
                                 <h4 className="text-green-800 font-semibold mb-4 flex items-center">
                                     <CheckCircle className="h-5 w-5 mr-2" />
-                                    Must-Have Geräte 2024
+                                    Must-Have Geräte 2026
                                 </h4>
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
@@ -563,10 +566,10 @@ export default function BlogPost() {
                             </ul>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Fazit: Anti-Aging 2024 ist vielfältig wie nie</h2>
+                        <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Fazit: Anti-Aging 2026 ist vielfältig wie nie</h2>
 
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            2024 bietet Kosmetikstudios so viele Anti-Aging Möglichkeiten wie nie zuvor. Von personalisierten
+                            2026 bietet Kosmetikstudios so viele Anti-Aging Möglichkeiten wie nie zuvor. Von personalisierten
                             Peptid-Therapien bis hin zu KI-gestützter Hautanalyse - die Technologie entwickelt sich rasant.
                             Eine gute <Link href="/kosmetikstudio-software" className="text-indigo-600 underline hover:text-indigo-800">Kosmetikstudio-Software</Link> hilft dir, den Überblick über alle Behandlungen zu behalten.
                         </p>
@@ -577,7 +580,7 @@ export default function BlogPost() {
                         </p>
 
                         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-12">
-                            <h3 className="text-2xl font-bold mb-4">✨ Bereit für Anti-Aging 2024?</h3>
+                            <h3 className="text-2xl font-bold mb-4">✨ Bereit für Anti-Aging 2026?</h3>
                             <p className="mb-6 text-indigo-100">
                                 Mit Treatflow dokumentierst du alle Anti-Aging Behandlungen professionell.
                                 Online Kalender, Kundenkartei und Formularsystem für dein Premium-Studio.
@@ -603,7 +606,7 @@ export default function BlogPost() {
                             </div>
                             <div className="flex flex-wrap gap-3">
                                 <a
-                                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://www.treatflow.io/blog/anti-aging-trends-2024')}&text=${encodeURIComponent('Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt - Treatflow Blog')}`}
+                                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent('https://www.treatflow.io/blog/anti-aging-trends-2024')}&text=${encodeURIComponent('Anti-Aging Trends 2026: Diese Behandlungen sind jetzt gefragt - Treatflow Blog')}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center bg-blue-500 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-600 transition-colors text-xs sm:text-sm"
@@ -621,7 +624,7 @@ export default function BlogPost() {
                                     LinkedIn
                                 </a>
                                 <a
-                                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.treatflow.io/blog/anti-aging-trends-2024')}&quote=${encodeURIComponent('Anti-Aging Trends 2024: Diese Behandlungen sind jetzt gefragt')}`}
+                                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.treatflow.io/blog/anti-aging-trends-2024')}&quote=${encodeURIComponent('Anti-Aging Trends 2026: Diese Behandlungen sind jetzt gefragt')}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center bg-blue-600 text-white px-3 py-2 sm:px-4 rounded-lg hover:bg-blue-700 transition-colors text-xs sm:text-sm"
