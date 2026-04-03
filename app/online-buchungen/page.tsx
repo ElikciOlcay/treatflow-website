@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Script from 'next/script';
 
 export const metadata = {
     title: 'Online-Buchungen Kosmetikstudio: 24/7 Termine',
@@ -27,10 +28,62 @@ export const metadata = {
     },
 };
 
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Welches Online-Buchungssystem eignet sich für Kosmetikstudios?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Treatflow bietet ein spezialisiertes Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink, automatischen Bestätigungen per E-Mail und SMS, Mitarbeiterkalendern und Integration mit Kundenkartei und Dokumentation. Ab 59 EUR pro Monat."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Wie kann ich Online-Buchungen für mein Studio einrichten?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In drei Schritten: 1) Behandlungen mit Dauer und Preis anlegen, 2) Arbeitszeiten und Verfügbarkeiten definieren, 3) Persönlichen Buchungslink auf Instagram, Website oder per WhatsApp teilen. Die Einrichtung dauert weniger als 10 Minuten."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Was kostet ein Online-Buchungssystem für Kosmetikstudios?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Treatflow bietet Online-Buchungen im Booking-Plan ab 59 EUR pro Monat an. Es gibt keine Provision pro Buchung, keine versteckten Kosten und 14 Tage kostenlose Testphase ohne Kreditkarte."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Können Kunden rund um die Uhr Termine buchen?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Der persönliche Buchungslink ist 24/7 erreichbar. Kunden können jederzeit verfügbare Termine sehen und buchen - auch abends oder am Wochenende. Über 60% der Buchungen finden außerhalb der Geschäftszeiten statt."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Wie reduziert ein Buchungssystem No-Shows?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Durch automatische Terminerinnerungen per SMS und E-Mail zu konfigurierbaren Zeitpunkten vor dem Termin. Kunden werden erinnert und können bei Bedarf stornieren, sodass der Termin für andere frei wird. Studios berichten von bis zu 80% weniger No-Shows."
+            }
+        }
+    ]
+};
+
 export default function OnlineBuchungenPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <Script
+                id="online-buchungen-faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 bg-gradient-to-br from-orange-50 via-white to-red-50">
@@ -401,6 +454,46 @@ export default function OnlineBuchungenPage() {
             </section>
 
             <SocialProofBar />
+
+            {/* FAQ Section */}
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                            Häufige Fragen zu Online-Buchungen
+                        </h2>
+                    </div>
+                    <div className="space-y-6">
+                        {[
+                            {
+                                q: 'Welches Online-Buchungssystem eignet sich für Kosmetikstudios?',
+                                a: 'Treatflow bietet ein spezialisiertes Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink, automatischen Bestätigungen per E-Mail und SMS, Mitarbeiterkalendern und Integration mit Kundenkartei und Dokumentation. Ab 59 EUR pro Monat.',
+                            },
+                            {
+                                q: 'Wie kann ich Online-Buchungen für mein Studio einrichten?',
+                                a: 'In drei Schritten: 1) Behandlungen mit Dauer und Preis anlegen, 2) Arbeitszeiten und Verfügbarkeiten definieren, 3) Persönlichen Buchungslink auf Instagram, Website oder per WhatsApp teilen. Die Einrichtung dauert weniger als 10 Minuten.',
+                            },
+                            {
+                                q: 'Was kostet ein Online-Buchungssystem für Kosmetikstudios?',
+                                a: 'Treatflow bietet Online-Buchungen im Booking-Plan ab 59 EUR pro Monat an. Es gibt keine Provision pro Buchung, keine versteckten Kosten und 14 Tage kostenlose Testphase ohne Kreditkarte.',
+                            },
+                            {
+                                q: 'Können Kunden rund um die Uhr Termine buchen?',
+                                a: 'Ja. Der persönliche Buchungslink ist 24/7 erreichbar. Kunden können jederzeit verfügbare Termine sehen und buchen - auch abends oder am Wochenende. Über 60% der Buchungen finden außerhalb der Geschäftszeiten statt.',
+                            },
+                            {
+                                q: 'Wie reduziert ein Buchungssystem No-Shows?',
+                                a: 'Durch automatische Terminerinnerungen per SMS und E-Mail zu konfigurierbaren Zeitpunkten vor dem Termin. Kunden werden erinnert und können bei Bedarf stornieren, sodass der Termin für andere frei wird. Studios berichten von bis zu 80% weniger No-Shows.',
+                            },
+                        ].map((faq, index) => (
+                            <div key={index} className="border border-gray-200 rounded-xl p-6">
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">

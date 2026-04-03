@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Script from 'next/script';
 
 export const metadata = {
     title: 'Terminplaner & Kalender fürs Kosmetikstudio',
@@ -27,10 +28,62 @@ export const metadata = {
     },
 };
 
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Wie organisiere ich Termine im Kosmetikstudio am besten?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mit einer spezialisierten Terminsoftware wie Treatflow organisierst du Termine am effizientesten. Online-Buchungen ermöglichen Kunden 24/7 zu buchen, automatische Erinnerungen per SMS reduzieren No-Shows um bis zu 80%, und die übersichtliche Kalenderansicht gibt dir jederzeit den vollen Überblick."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Was kostet eine Terminsoftware für Kosmetikstudios?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Treatflow bietet Terminverwaltung mit Online-Buchungen ab 59 EUR pro Monat im Booking-Plan. 14 Tage kostenlos testen, keine Kreditkarte nötig. Es gibt keine versteckten Kosten oder Provisionen pro Buchung."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Können meine Kunden online Termine buchen?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Jedes Studio erhält einen persönlichen Buchungslink. Kunden können darüber rund um die Uhr Behandlungen und Termine auswählen. Neue Buchungen erscheinen sofort im Kalender, Bestätigungen werden automatisch per E-Mail und SMS versendet."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Wie reduziere ich No-Shows im Kosmetikstudio?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten vor dem Termin. Studios berichten von bis zu 80% weniger No-Shows."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Welche Funktionen sollte ein Terminplaner für Kosmetikstudios haben?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ein guter Terminplaner für Kosmetikstudios sollte Online-Buchungen, Tages-/Wochen-/Monatsansichten, Mitarbeiterkalender, automatische Erinnerungen per SMS und E-Mail, Drag & Drop und eine Integration mit Kundenkartei und Dokumentation bieten."
+            }
+        }
+    ]
+};
+
 export default function TerminkalenderPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <Script
+                id="terminkalender-faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
@@ -324,6 +377,45 @@ export default function TerminkalenderPage() {
             </section>
 
             <SocialProofBar />
+
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                            Häufige Fragen zur Terminplanung
+                        </h2>
+                    </div>
+                    <div className="space-y-6">
+                        {[
+                            {
+                                q: 'Wie organisiere ich Termine im Kosmetikstudio am besten?',
+                                a: 'Mit einer spezialisierten Terminsoftware wie Treatflow organisierst du Termine am effizientesten. Online-Buchungen ermöglichen Kunden 24/7 zu buchen, automatische Erinnerungen per SMS reduzieren No-Shows um bis zu 80%, und die übersichtliche Kalenderansicht gibt dir jederzeit den vollen Überblick.',
+                            },
+                            {
+                                q: 'Was kostet eine Terminsoftware für Kosmetikstudios?',
+                                a: 'Treatflow bietet Terminverwaltung mit Online-Buchungen ab 59 EUR pro Monat im Booking-Plan. 14 Tage kostenlos testen, keine Kreditkarte nötig. Es gibt keine versteckten Kosten oder Provisionen pro Buchung.',
+                            },
+                            {
+                                q: 'Können meine Kunden online Termine buchen?',
+                                a: 'Ja. Jedes Studio erhält einen persönlichen Buchungslink. Kunden können darüber rund um die Uhr Behandlungen und Termine auswählen. Neue Buchungen erscheinen sofort im Kalender, Bestätigungen werden automatisch per E-Mail und SMS versendet.',
+                            },
+                            {
+                                q: 'Wie reduziere ich No-Shows im Kosmetikstudio?',
+                                a: 'Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten vor dem Termin. Studios berichten von bis zu 80% weniger No-Shows.',
+                            },
+                            {
+                                q: 'Welche Funktionen sollte ein Terminplaner für Kosmetikstudios haben?',
+                                a: 'Ein guter Terminplaner für Kosmetikstudios sollte Online-Buchungen, Tages-/Wochen-/Monatsansichten, Mitarbeiterkalender, automatische Erinnerungen per SMS und E-Mail, Drag & Drop und eine Integration mit Kundenkartei und Dokumentation bieten.',
+                            },
+                        ].map((faq, index) => (
+                            <div key={index} className="border border-gray-200 rounded-xl p-6">
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">

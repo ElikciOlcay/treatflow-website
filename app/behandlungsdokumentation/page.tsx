@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Script from 'next/script';
 
 export const metadata = {
     title: 'Behandlungsdokumentation Kosmetik digital',
@@ -27,10 +28,62 @@ export const metadata = {
     },
 };
 
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Treatflow bietet eine spezialisierte Behandlungsdokumentation für Kosmetikstudios. Mit KI-Unterstützung, Vorher-Nachher-Fotos, Behandlungsparametern und NiSV-konformer Archivierung dokumentierst du professionell und rechtssicher."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Ist Behandlungsdokumentation im Kosmetikstudio Pflicht?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Für NiSV-pflichtige Behandlungen (Laser, IPL, Ultraschall, Radiofrequenz) ist eine Behandlungsdokumentation gesetzlich vorgeschrieben. Aber auch für alle anderen Behandlungen ist sie empfehlenswert - für Rechtssicherheit, Qualitätskontrolle und Kundenzufriedenheit."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Was gehört in eine professionelle Behandlungsdokumentation?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Eine professionelle Dokumentation enthält: Behandlungsart und -datum, verwendete Produkte und Parameter, Vorher-Nachher-Fotos, Hautbefund, Notizen zum Behandlungsverlauf, Empfehlungen für Nachbehandlungen und die Unterschrift des Kunden."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Wie dokumentiere ich Vorher-Nachher-Fotos korrekt?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vorher-Nachher-Fotos sollten unter gleichen Bedingungen aufgenommen werden (Beleuchtung, Winkel, Abstand). Mit Treatflow kannst du Fotos direkt in der Behandlungsdokumentation speichern und chronologisch dem Kundenprofil zuordnen."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Was muss bei NiSV-Behandlungen dokumentiert werden?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Bei NiSV-Behandlungen müssen Beratungsprotokoll, Einwilligung, Geräteeinstellungen (Parameter wie Energie, Frequenz, Impulsdauer), Behandlungsgebiet, Hautreaktion und Nachsorgehinweise dokumentiert werden."
+            }
+        }
+    ]
+};
+
 export default function BehandlungsdokumentationPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <Script
+                id="behandlungsdokumentation-faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
@@ -362,6 +415,46 @@ export default function BehandlungsdokumentationPage() {
             </section>
 
             <SocialProofBar />
+
+            {/* FAQ Section */}
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                            Häufige Fragen zur Behandlungsdokumentation
+                        </h2>
+                    </div>
+                    <div className="space-y-6">
+                        {[
+                            {
+                                q: 'Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?',
+                                a: 'Treatflow bietet eine spezialisierte Behandlungsdokumentation für Kosmetikstudios. Mit KI-Unterstützung, Vorher-Nachher-Fotos, Behandlungsparametern und NiSV-konformer Archivierung dokumentierst du professionell und rechtssicher.',
+                            },
+                            {
+                                q: 'Ist Behandlungsdokumentation im Kosmetikstudio Pflicht?',
+                                a: 'Für NiSV-pflichtige Behandlungen (Laser, IPL, Ultraschall, Radiofrequenz) ist eine Behandlungsdokumentation gesetzlich vorgeschrieben. Aber auch für alle anderen Behandlungen ist sie empfehlenswert - für Rechtssicherheit, Qualitätskontrolle und Kundenzufriedenheit.',
+                            },
+                            {
+                                q: 'Was gehört in eine professionelle Behandlungsdokumentation?',
+                                a: 'Eine professionelle Dokumentation enthält: Behandlungsart und -datum, verwendete Produkte und Parameter, Vorher-Nachher-Fotos, Hautbefund, Notizen zum Behandlungsverlauf, Empfehlungen für Nachbehandlungen und die Unterschrift des Kunden.',
+                            },
+                            {
+                                q: 'Wie dokumentiere ich Vorher-Nachher-Fotos korrekt?',
+                                a: 'Vorher-Nachher-Fotos sollten unter gleichen Bedingungen aufgenommen werden (Beleuchtung, Winkel, Abstand). Mit Treatflow kannst du Fotos direkt in der Behandlungsdokumentation speichern und chronologisch dem Kundenprofil zuordnen.',
+                            },
+                            {
+                                q: 'Was muss bei NiSV-Behandlungen dokumentiert werden?',
+                                a: 'Bei NiSV-Behandlungen müssen Beratungsprotokoll, Einwilligung, Geräteeinstellungen (Parameter wie Energie, Frequenz, Impulsdauer), Behandlungsgebiet, Hautreaktion und Nachsorgehinweise dokumentiert werden.',
+                            },
+                        ].map((faq, index) => (
+                            <div key={index} className="border border-gray-200 rounded-xl p-6">
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">

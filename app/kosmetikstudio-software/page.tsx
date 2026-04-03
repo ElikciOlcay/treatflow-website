@@ -40,6 +40,7 @@ const clusterPages = [
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Script from 'next/script';
 
 export const metadata = {
     title: 'Kosmetikstudio Software: Termine, Kunden & Doku',
@@ -176,10 +177,62 @@ const whyTreatflow = [
     },
 ];
 
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Ist Treatflow wirklich speziell für Kosmetikstudios?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, Treatflow wurde speziell für die Bedürfnisse von Kosmetikstudios, Beauty Studios und ästhetischen Praxen entwickelt. Von der Anamnesebogen-Verwaltung bis zur Behandlungsdokumentation - jede Funktion ist auf deinen Arbeitsalltag zugeschnitten."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Wie lange dauert die Einrichtung?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Die Grundeinrichtung dauert nur wenige Minuten. Behandlungen anlegen, Arbeitszeiten einstellen und deinen Buchungslink teilen - und du bist startklar. Unser Onboarding-Team hilft dir gerne bei der Einrichtung."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Können meine Kunden selbst Termine buchen?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, über deinen persönlichen Buchungslink können deine Kunden rund um die Uhr Termine buchen. Du erhältst automatische Bestätigungen und Erinnerungen werden automatisch versendet."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Ist Treatflow DSGVO-konform?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolut. Alle Daten werden verschlüsselt in EU-Rechenzentren gespeichert. Treatflow erfüllt alle Anforderungen der DSGVO und ist ideal für die sensiblen Kundendaten in Kosmetikstudios."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Was kostet Treatflow?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen - ohne Kreditkarte und ohne versteckte Kosten."
+            }
+        }
+    ]
+};
+
 export default function KosmetikstudioSoftwarePage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <Script
+                id="kosmetikstudio-software-faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">

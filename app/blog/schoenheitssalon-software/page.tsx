@@ -26,6 +26,29 @@ export default function BlogPost() {
       <Navigation />
 
       <article className="pt-32 pb-20">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'BlogPosting',
+              headline: 'Schönheitssalon Software 2026: Die besten Lösungen',
+              author: { '@type': 'Organization', name: 'Treatflow' },
+              publisher: {
+                '@type': 'Organization',
+                name: 'Treatflow',
+                logo: { '@type': 'ImageObject', url: 'https://www.treatflow.io/images/logos/treatflow-logo.svg' },
+              },
+              url: 'https://www.treatflow.io/blog/schoenheitssalon-software',
+              datePublished: '2026-03-24',
+              dateModified: '2026-03-24',
+              mainEntityOfPage: {
+                '@type': 'WebPage',
+                '@id': 'https://www.treatflow.io/blog/schoenheitssalon-software',
+              },
+            }),
+          }}
+        />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/blog" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium mb-8">
             <ArrowLeft className="h-4 w-4 mr-2" />

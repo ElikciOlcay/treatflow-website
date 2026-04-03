@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Script from 'next/script';
 
 export const metadata = {
     title: 'SMS & E-Mail Erinnerungen fürs Kosmetikstudio',
@@ -27,10 +28,62 @@ export const metadata = {
     },
 };
 
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Wie kann ich No-Shows im Kosmetikstudio reduzieren?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z.B. 3 Tage und 1 Tag vor dem Termin). Studios berichten von bis zu 80% weniger Ausfällen."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Was kosten SMS-Erinnerungen für Termine?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SMS-Erinnerungen bei Treatflow kosten ab 0,09 EUR pro SMS. Die SMS-Automatisierung ist im Booking-Plan (59 EUR/Monat) enthalten. E-Mail-Erinnerungen sind in allen Plänen kostenlos und unbegrenzt."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Welche Nachrichten sollte ich automatisieren?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Die wichtigsten automatisierten Nachrichten sind: Buchungsbestätigungen, Terminerinnerungen (1-7 Tage vorher), Stornierungsbenachrichtigungen, Follow-up-Nachrichten nach Behandlungen und Geburtstagswünsche. Damit sparst du Zeit und stärkst die Kundenbindung."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Funktionieren SMS-Erinnerungen besser als E-Mails?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SMS haben eine Öffnungsrate von über 95%, E-Mails nur 20-30%. Für Terminerinnerungen empfehlen wir SMS, für ausführlichere Nachrichten wie Follow-ups oder Nachsorgehinweise eignen sich E-Mails besser. Treatflow unterstützt beide Kanäle."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Kann ich Nachsorge-Nachrichten automatisch versenden?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Mit Treatflow kannst du automatische Follow-up-Nachrichten nach Behandlungen einrichten. Diese können Nachsorgetipps, Feedback-Anfragen oder Angebote für Folgetermine enthalten - per E-Mail oder SMS."
+            }
+        }
+    ]
+};
+
 export default function NachrichtenautomatisierungPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <Script
+                id="nachrichtenautomatisierung-faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
@@ -380,6 +433,46 @@ export default function NachrichtenautomatisierungPage() {
             </section>
 
             <SocialProofBar />
+
+            {/* FAQ Section */}
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                            Häufige Fragen zur Nachrichtenautomatisierung
+                        </h2>
+                    </div>
+                    <div className="space-y-6">
+                        {[
+                            {
+                                q: 'Wie kann ich No-Shows im Kosmetikstudio reduzieren?',
+                                a: 'Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z.B. 3 Tage und 1 Tag vor dem Termin). Studios berichten von bis zu 80% weniger Ausfällen.',
+                            },
+                            {
+                                q: 'Was kosten SMS-Erinnerungen für Termine?',
+                                a: 'SMS-Erinnerungen bei Treatflow kosten ab 0,09 EUR pro SMS. Die SMS-Automatisierung ist im Booking-Plan (59 EUR/Monat) enthalten. E-Mail-Erinnerungen sind in allen Plänen kostenlos und unbegrenzt.',
+                            },
+                            {
+                                q: 'Welche Nachrichten sollte ich automatisieren?',
+                                a: 'Die wichtigsten automatisierten Nachrichten sind: Buchungsbestätigungen, Terminerinnerungen (1-7 Tage vorher), Stornierungsbenachrichtigungen, Follow-up-Nachrichten nach Behandlungen und Geburtstagswünsche. Damit sparst du Zeit und stärkst die Kundenbindung.',
+                            },
+                            {
+                                q: 'Funktionieren SMS-Erinnerungen besser als E-Mails?',
+                                a: 'SMS haben eine Öffnungsrate von über 95%, E-Mails nur 20-30%. Für Terminerinnerungen empfehlen wir SMS, für ausführlichere Nachrichten wie Follow-ups oder Nachsorgehinweise eignen sich E-Mails besser. Treatflow unterstützt beide Kanäle.',
+                            },
+                            {
+                                q: 'Kann ich Nachsorge-Nachrichten automatisch versenden?',
+                                a: 'Ja. Mit Treatflow kannst du automatische Follow-up-Nachrichten nach Behandlungen einrichten. Diese können Nachsorgetipps, Feedback-Anfragen oder Angebote für Folgetermine enthalten - per E-Mail oder SMS.',
+                            },
+                        ].map((faq, index) => (
+                            <div key={index} className="border border-gray-200 rounded-xl p-6">
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">

@@ -60,6 +60,22 @@ const faqSchema = {
         text: "Ja. Kundendaten werden verschlüsselt in der EU gespeichert und DSGVO-konform verarbeitet.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Welche Daten kann ich in der Kundenkartei speichern?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Kontaktdaten, Behandlungshistorie, Allergien, Vorher-Nachher-Fotos, ausgefüllte Formulare, Notizen und Terminhistorie - alles an einem Ort.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Funktioniert die Kundenkartei auf dem Smartphone?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ja. Treatflow ist eine webbasierte App, die auf Desktop, Tablet und Smartphone funktioniert. Du hast von überall Zugriff auf alle Kundendaten.",
+      },
+    },
   ],
 };
 
@@ -203,6 +219,45 @@ export default function KundenkarteiSoftwarePage() {
             <Link href="/behandlungsdokumentation" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
               Behandlungsdokumentation Kosmetik
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Häufige Fragen zur Kundenkartei
+            </h2>
+          </div>
+          <div className="space-y-6">
+            {[
+              {
+                q: "Bietet Treatflow eine digitale Kundenkartei für Kosmetikstudios?",
+                a: "Ja. In Treatflow verwaltest du Kundendaten, Behandlungshistorie, Formulare und Fotos zentral an einem Ort.",
+              },
+              {
+                q: "Kann ich die Kundenkartei kostenlos testen?",
+                a: "Ja. Du kannst Treatflow 14 Tage kostenlos testen, ohne Kreditkarte.",
+              },
+              {
+                q: "Ist die Kundenkartei DSGVO-konform?",
+                a: "Ja. Kundendaten werden verschlüsselt in der EU gespeichert und DSGVO-konform verarbeitet.",
+              },
+              {
+                q: "Welche Daten kann ich in der Kundenkartei speichern?",
+                a: "Kontaktdaten, Behandlungshistorie, Allergien, Vorher-Nachher-Fotos, ausgefüllte Formulare, Notizen und Terminhistorie - alles an einem Ort.",
+              },
+              {
+                q: "Funktioniert die Kundenkartei auf dem Smartphone?",
+                a: "Ja. Treatflow ist eine webbasierte App, die auf Desktop, Tablet und Smartphone funktioniert. Du hast von überall Zugriff auf alle Kundendaten.",
+              },
+            ].map((faq, index) => (
+              <div key={index} className="border border-gray-200 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
+                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

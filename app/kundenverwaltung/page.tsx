@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Script from 'next/script';
 
 export const metadata = {
     title: 'Digitale Kundenkartei fürs Kosmetikstudio',
@@ -27,10 +28,62 @@ export const metadata = {
     },
 };
 
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Welche App eignet sich für die Kundenverwaltung im Kosmetikstudio?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Treatflow ist eine spezialisierte Kundenverwaltung für Kosmetikstudios. Die App bietet digitale Kundenkartei, Behandlungshistorie, Fotos, Notizen und DSGVO-konforme Datenspeicherung in der EU. 14 Tage kostenlos testen."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Was ist eine digitale Kundenkartei für Kosmetikstudios?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Eine digitale Kundenkartei ist eine Software, die alle Kundendaten, Behandlungshistorien, Vorher-Nachher-Fotos und Notizen an einem Ort speichert. Im Gegensatz zur Papierkartei ist sie DSGVO-konform, durchsuchbar und von jedem Gerät zugänglich."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Ist eine digitale Kundenkartei DSGVO-konform?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Treatflow speichert alle Kundendaten verschlüsselt auf EU-Servern und erfüllt alle Anforderungen der DSGVO. Kunden können ihre Daten jederzeit einsehen und löschen lassen."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Welche Daten sollte eine Kundenkartei im Kosmetikstudio enthalten?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Eine professionelle Kundenkartei sollte Kontaktdaten, Behandlungshistorie, Allergien und Unverträglichkeiten, Vorher-Nachher-Fotos, ausgefüllte Formulare (Anamnese, Einwilligung), Notizen und Terminhistorie enthalten."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Kann ich bestehende Kundendaten importieren?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Treatflow unterstützt den Import von Kundendaten aus Excel- und CSV-Dateien. Das Onboarding-Team hilft dir kostenlos beim Datenumzug von deinem bisherigen System."
+            }
+        }
+    ]
+};
+
 export default function KundenverwaltungPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <Script
+                id="kundenverwaltung-faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
@@ -300,6 +353,45 @@ export default function KundenverwaltungPage() {
             </section>
 
             <SocialProofBar />
+
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                            Häufige Fragen zur Kundenverwaltung
+                        </h2>
+                    </div>
+                    <div className="space-y-6">
+                        {[
+                            {
+                                q: 'Welche App eignet sich für die Kundenverwaltung im Kosmetikstudio?',
+                                a: 'Treatflow ist eine spezialisierte Kundenverwaltung für Kosmetikstudios. Die App bietet digitale Kundenkartei, Behandlungshistorie, Fotos, Notizen und DSGVO-konforme Datenspeicherung in der EU. 14 Tage kostenlos testen.',
+                            },
+                            {
+                                q: 'Was ist eine digitale Kundenkartei für Kosmetikstudios?',
+                                a: 'Eine digitale Kundenkartei ist eine Software, die alle Kundendaten, Behandlungshistorien, Vorher-Nachher-Fotos und Notizen an einem Ort speichert. Im Gegensatz zur Papierkartei ist sie DSGVO-konform, durchsuchbar und von jedem Gerät zugänglich.',
+                            },
+                            {
+                                q: 'Ist eine digitale Kundenkartei DSGVO-konform?',
+                                a: 'Ja. Treatflow speichert alle Kundendaten verschlüsselt auf EU-Servern und erfüllt alle Anforderungen der DSGVO. Kunden können ihre Daten jederzeit einsehen und löschen lassen.',
+                            },
+                            {
+                                q: 'Welche Daten sollte eine Kundenkartei im Kosmetikstudio enthalten?',
+                                a: 'Eine professionelle Kundenkartei sollte Kontaktdaten, Behandlungshistorie, Allergien und Unverträglichkeiten, Vorher-Nachher-Fotos, ausgefüllte Formulare (Anamnese, Einwilligung), Notizen und Terminhistorie enthalten.',
+                            },
+                            {
+                                q: 'Kann ich bestehende Kundendaten importieren?',
+                                a: 'Ja. Treatflow unterstützt den Import von Kundendaten aus Excel- und CSV-Dateien. Das Onboarding-Team hilft dir kostenlos beim Datenumzug von deinem bisherigen System.',
+                            },
+                        ].map((faq, index) => (
+                            <div key={index} className="border border-gray-200 rounded-xl p-6">
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">

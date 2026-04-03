@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Script from 'next/script';
 
 export const metadata = {
     title: 'Anamneseformular Kosmetik: Fragen & Pflichten',
@@ -27,10 +28,62 @@ export const metadata = {
     },
 };
 
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Welche Formulare brauche ich im Kosmetikstudio?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Im Kosmetikstudio benötigst du mindestens Anamnesebögen, Einwilligungserklärungen und bei apparativer Kosmetik NiSV-Aufklärungsbögen. Je nach Behandlung kommen Allergie-Fragebögen, Nachsorgehinweise und Zufriedenheits-Umfragen hinzu."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Was muss in einem Anamnesebogen für Kosmetik stehen?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ein Anamnesebogen für Kosmetikbehandlungen sollte persönliche Daten, aktuelle Medikamenteneinnahme, Allergien und Unverträglichkeiten, Hauterkrankungen, Schwangerschaft und Vorbehandlungen abfragen. Bei NiSV-pflichtigen Behandlungen gelten zusätzliche Anforderungen."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Kann ich Anamnesebögen digital an Kunden senden?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Mit Treatflow können Formulare per E-Mail oder SMS vorab an Kunden gesendet werden. Kunden füllen sie auf ihrem eigenen Gerät aus - vor dem Termin. Das spart 10-15 Minuten pro Termin im Studio."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Sind digitale Einwilligungserklärungen rechtssicher?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Digitale Einwilligungserklärungen mit elektronischer Unterschrift sind rechtlich anerkannt. Treatflow speichert alle Formulare mit Zeitstempel und Unterschrift DSGVO-konform in der EU."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Welche Formulare sind für NiSV-Behandlungen Pflicht?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Für NiSV-pflichtige Behandlungen (Laser, IPL, Ultraschall, Radiofrequenz) sind Beratungsprotokoll, Einwilligungserklärung mit Risikoaufklärung und die Behandlungsdokumentation mit Parametern gesetzlich vorgeschrieben."
+            }
+        }
+    ]
+};
+
 export default function FormularePage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <Script
+                id="formulare-faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 bg-gradient-to-br from-green-50 via-white to-emerald-50">
@@ -406,6 +459,45 @@ export default function FormularePage() {
             </section>
 
             <SocialProofBar />
+
+            <section className="py-20 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                            Häufige Fragen zu Formularen im Kosmetikstudio
+                        </h2>
+                    </div>
+                    <div className="space-y-6">
+                        {[
+                            {
+                                q: 'Welche Formulare brauche ich im Kosmetikstudio?',
+                                a: 'Im Kosmetikstudio benötigst du mindestens Anamnesebögen, Einwilligungserklärungen und bei apparativer Kosmetik NiSV-Aufklärungsbögen. Je nach Behandlung kommen Allergie-Fragebögen, Nachsorgehinweise und Zufriedenheits-Umfragen hinzu.',
+                            },
+                            {
+                                q: 'Was muss in einem Anamnesebogen für Kosmetik stehen?',
+                                a: 'Ein Anamnesebogen für Kosmetikbehandlungen sollte persönliche Daten, aktuelle Medikamenteneinnahme, Allergien und Unverträglichkeiten, Hauterkrankungen, Schwangerschaft und Vorbehandlungen abfragen. Bei NiSV-pflichtigen Behandlungen gelten zusätzliche Anforderungen.',
+                            },
+                            {
+                                q: 'Kann ich Anamnesebögen digital an Kunden senden?',
+                                a: 'Ja. Mit Treatflow können Formulare per E-Mail oder SMS vorab an Kunden gesendet werden. Kunden füllen sie auf ihrem eigenen Gerät aus - vor dem Termin. Das spart 10-15 Minuten pro Termin im Studio.',
+                            },
+                            {
+                                q: 'Sind digitale Einwilligungserklärungen rechtssicher?',
+                                a: 'Ja. Digitale Einwilligungserklärungen mit elektronischer Unterschrift sind rechtlich anerkannt. Treatflow speichert alle Formulare mit Zeitstempel und Unterschrift DSGVO-konform in der EU.',
+                            },
+                            {
+                                q: 'Welche Formulare sind für NiSV-Behandlungen Pflicht?',
+                                a: 'Für NiSV-pflichtige Behandlungen (Laser, IPL, Ultraschall, Radiofrequenz) sind Beratungsprotokoll, Einwilligungserklärung mit Risikoaufklärung und die Behandlungsdokumentation mit Parametern gesetzlich vorgeschrieben.',
+                            },
+                        ].map((faq, index) => (
+                            <div key={index} className="border border-gray-200 rounded-xl p-6">
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-green-600 to-emerald-600">

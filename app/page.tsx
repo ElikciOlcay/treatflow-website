@@ -14,6 +14,7 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
+import type { Metadata } from "next";
 import Navigation from "./components/Navigation";
 import ChallengeSelector from "./components/ChallengeSelector";
 import ComparisonTable from "./components/ComparisonTable";
@@ -23,6 +24,21 @@ import PricingSection from "./components/PricingSection";
 import FAQSection from "./components/FAQSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "./components/Footer";
+
+export const metadata: Metadata = {
+  title: "Kosmetikstudio Software: Termine, Kunden & Doku | Treatflow",
+  description:
+    "Die All-in-One Software für Kosmetikstudios: Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation. DSGVO-konform. 14 Tage kostenlos testen.",
+  alternates: {
+    canonical: "https://www.treatflow.io",
+  },
+  openGraph: {
+    title: "Kosmetikstudio Software: Termine, Kunden & Doku | Treatflow",
+    description:
+      "Die All-in-One Software für Kosmetikstudios: Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation.",
+    url: "https://www.treatflow.io",
+  },
+};
 
 // Strukturierte Daten für SEO
 const structuredData = {
@@ -59,7 +75,10 @@ const structuredData = {
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
-    "ratingCount": "500"
+    "ratingCount": "7",
+    "reviewCount": "7",
+    "bestRating": "5",
+    "worstRating": "1"
   },
   "featureList": [
     "Terminkalender mit Online-Buchung",
