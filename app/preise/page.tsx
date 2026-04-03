@@ -1,4 +1,4 @@
-import { CheckCircle, X, Euro, TrendingDown, ArrowRight, ChevronDown } from 'lucide-react';
+import { CheckCircle, X, ArrowRight, ChevronDown } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import CTASection from '../components/CTASection';
@@ -115,25 +115,7 @@ export default function PreisePage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
             />
 
-            {/* Hero Section */}
-            <section className="pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
-                <Breadcrumbs items={[{ label: 'Preise' }]} />
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                            <Euro className="h-4 w-4 mr-2" />
-                            Faire Preise
-                        </div>
-                        <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                            Transparente Preise -
-                            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> keine versteckten Kosten</span>
-                        </h1>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            Wähle das Paket, das zu deinem Studio passt. Beide Pläne inklusive 14 Tage kostenloser Testphase.
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <Breadcrumbs items={[{ label: 'Preise' }]} />
 
             {/* Pricing Cards */}
             <PricingSection />
@@ -196,74 +178,34 @@ export default function PreisePage() {
                 </div>
             </section>
 
-            {/* Savings Comparison */}
+            {/* Why Treatflow */}
             <section className="py-20 bg-white">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <div className="inline-flex items-center bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                            <TrendingDown className="h-4 w-4 mr-2" />
-                            Spare bares Geld
-                        </div>
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                            Spare mit Treatflow
+                            Warum Treatflow?
                         </h2>
                         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            Studios sparen durchschnittlich 200€+ pro Monat im Vergleich zu provisionsbasierten Modellen wie Treatwell.
+                            Transparente Festpreise statt versteckter Kosten und Provisionen.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        {/* Treatwell */}
-                        <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
-                            <div className="text-center">
-                                <p className="text-sm font-semibold text-red-600 mb-2 uppercase tracking-wide">Provisionsbasiert (z.B. Treatwell)</p>
-                                <div className="text-5xl font-bold text-red-600 mb-4">875€</div>
-                                <p className="text-sm text-gray-600 mb-6">pro Monat bei 50 Neukunden</p>
-                                <div className="bg-white rounded-xl p-4 text-left space-y-2">
-                                    <div className="flex justify-between text-sm">
-                                        <span className="text-gray-600">50 Neukunden/Monat</span>
-                                    </div>
-                                    <div className="flex justify-between text-sm">
-                                        <span className="text-gray-600">x 50€ Durchschnittsumsatz</span>
-                                    </div>
-                                    <div className="flex justify-between text-sm">
-                                        <span className="text-gray-600">x 35% Provision</span>
-                                    </div>
-                                    <div className="border-t border-gray-200 pt-2 flex justify-between text-sm font-bold">
-                                        <span className="text-red-600">= 875€ Kosten</span>
-                                    </div>
-                                </div>
-                            </div>
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                        <div className="bg-gray-50 rounded-xl p-6 text-center">
+                            <div className="text-3xl font-bold text-indigo-600 mb-2">0%</div>
+                            <p className="text-sm text-gray-600">Provision pro Buchung</p>
                         </div>
-
-                        {/* Treatflow */}
-                        <div className="bg-green-50 border-2 border-green-300 rounded-2xl p-8 relative">
-                            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs font-bold px-4 py-1 rounded-full">
-                                Spare 816€/Monat
-                            </div>
-                            <div className="text-center">
-                                <p className="text-sm font-semibold text-green-700 mb-2 uppercase tracking-wide">Treatflow Festpreis</p>
-                                <div className="text-5xl font-bold text-green-600 mb-4">59€</div>
-                                <p className="text-sm text-gray-600 mb-6">pro Monat - unabhängig von Buchungen</p>
-                                <div className="bg-white rounded-xl p-4 text-left space-y-2">
-                                    <div className="flex items-center text-sm">
-                                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                                        <span className="text-gray-600">Keine Provision pro Buchung</span>
-                                    </div>
-                                    <div className="flex items-center text-sm">
-                                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                                        <span className="text-gray-600">Keine Setup-Gebühren</span>
-                                    </div>
-                                    <div className="flex items-center text-sm">
-                                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                                        <span className="text-gray-600">Fixkosten, egal wie viele Kunden</span>
-                                    </div>
-                                    <div className="flex items-center text-sm">
-                                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                                        <span className="text-gray-600">100% deines Umsatzes bleibt bei dir</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className="bg-gray-50 rounded-xl p-6 text-center">
+                            <div className="text-3xl font-bold text-indigo-600 mb-2">0€</div>
+                            <p className="text-sm text-gray-600">Setup-Gebühren</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-xl p-6 text-center">
+                            <div className="text-3xl font-bold text-indigo-600 mb-2">14 Tage</div>
+                            <p className="text-sm text-gray-600">kostenlos testen</p>
+                        </div>
+                        <div className="bg-gray-50 rounded-xl p-6 text-center">
+                            <div className="text-3xl font-bold text-indigo-600 mb-2">Jederzeit</div>
+                            <p className="text-sm text-gray-600">kündbar</p>
                         </div>
                     </div>
                 </div>
