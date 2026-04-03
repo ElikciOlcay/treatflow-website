@@ -41,6 +41,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 export const metadata = {
     title: 'Kosmetikstudio Software: Termine, Kunden & Doku',
@@ -228,14 +229,24 @@ export default function KosmetikstudioSoftwarePage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Branchen', href: '/#branchen' },
+                    { label: 'Kosmetikstudio Software' },
+                ])) }}
+            />
             <Script
                 id="kosmetikstudio-software-faq-schema"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
-
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+            <section className="pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+                <Breadcrumbs items={[
+                    { label: 'Branchen', href: '/#branchen' },
+                    { label: 'Kosmetikstudio Software' },
+                ]} />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center max-w-4xl mx-auto">
                         <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium mb-6">

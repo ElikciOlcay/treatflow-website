@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 export const metadata = {
     title: 'Terminplaner & Kalender fürs Kosmetikstudio',
@@ -79,14 +80,24 @@ export default function TerminkalenderPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Terminkalender' },
+                ])) }}
+            />
             <Script
                 id="terminkalender-faq-schema"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
-
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+            <section className="pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+                <Breadcrumbs items={[
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Terminkalender' },
+                ]} />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -100,6 +111,11 @@ export default function TerminkalenderPage() {
                             Terminkalender mit Wochen-, Tages- und Monatsansicht. Deine Kunden buchen direkt
                             über deinen Buchungslink – ohne Doppelbuchungen und ohne Telefonstress.
                         </p>
+                        <div className="mt-8 max-w-3xl mx-auto bg-indigo-50 border-l-4 border-indigo-600 rounded-r-lg p-6">
+                            <p className="text-gray-700 leading-relaxed">
+                                Eine Terminsoftware für Kosmetikstudios ermöglicht die digitale Verwaltung aller Termine mit Tages-, Wochen- und Monatsansicht. Kunden können online buchen, automatische SMS-Erinnerungen reduzieren No-Shows um bis zu 80%.
+                            </p>
+                        </div>
                     </div>
 
                     {/* Terminkalender Screenshot */}

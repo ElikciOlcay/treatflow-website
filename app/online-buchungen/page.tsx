@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 export const metadata = {
     title: 'Online-Buchungen Kosmetikstudio: 24/7 Termine',
@@ -79,14 +80,24 @@ export default function OnlineBuchungenPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Online-Buchungen' },
+                ])) }}
+            />
             <Script
                 id="online-buchungen-faq-schema"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
-
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-gradient-to-br from-orange-50 via-white to-red-50">
+            <section className="pb-20 bg-gradient-to-br from-orange-50 via-white to-red-50">
+                <Breadcrumbs items={[
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Online-Buchungen' },
+                ]} />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -100,6 +111,11 @@ export default function OnlineBuchungenPage() {
                             Persönlicher Buchungslink für dein Studio. Deine Kunden buchen rund um die Uhr,
                             du erhältst automatisch alle Termine - ohne Telefonate oder Nachrichten.
                         </p>
+                        <div className="mt-8 max-w-3xl mx-auto bg-indigo-50 border-l-4 border-indigo-600 rounded-r-lg p-6">
+                            <p className="text-gray-700 leading-relaxed">
+                                Ein Online-Buchungssystem für Kosmetikstudios ermöglicht Kunden, rund um die Uhr Termine über einen persönlichen Buchungslink zu buchen. Automatische Bestätigungen und Erinnerungen per SMS und E-Mail reduzieren den Verwaltungsaufwand und verhindern No-Shows.
+                            </p>
+                        </div>
                     </div>
 
                     {/* Online-Buchungen Screenshot */}

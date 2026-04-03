@@ -2,7 +2,8 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
-import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Users, Heart, CheckCircle, AlertCircle, Target } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, Share2, Users, Heart, CheckCircle, AlertCircle, Target } from 'lucide-react';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 
 
 export const metadata: Metadata = {
@@ -88,15 +89,19 @@ export default function BlogPost() {
             />
             <Navigation />
 
-            <article className="pt-32 pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Blog', href: '/blog' },
+                    { label: 'Mitarbeiterführung im Beauty-Business' },
+                ])) }}
+            />
+            <Breadcrumbs items={[
+                { label: 'Blog', href: '/blog' },
+                { label: 'Mitarbeiterführung im Beauty-Business' },
+            ]} />
+            <article className="pt-6 pb-20">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <nav className="mb-8">
-                        <Link href="/blog" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
-                            <ArrowLeft className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                            Zurück zum Blog
-                        </Link>
-                    </nav>
-
                     <div className="mb-8">
                         <div className="flex items-center gap-4 mb-6">
                             <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">

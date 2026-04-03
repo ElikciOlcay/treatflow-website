@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 export const metadata = {
     title: 'Anamneseformular Kosmetik: Fragen & Pflichten',
@@ -79,14 +80,24 @@ export default function FormularePage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Formulare' },
+                ])) }}
+            />
             <Script
                 id="formulare-faq-schema"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
-
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-gradient-to-br from-green-50 via-white to-emerald-50">
+            <section className="pb-20 bg-gradient-to-br from-green-50 via-white to-emerald-50">
+                <Breadcrumbs items={[
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Formulare' },
+                ]} />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -100,6 +111,11 @@ export default function FormularePage() {
                             Umfangreicher Formular-Marketplace mit KI-Generator und Drag & Drop Editor.
                             Erstelle individuelle Formulare oder nutze fertige Vorlagen für alle Beauty-Behandlungen.
                         </p>
+                        <div className="mt-8 max-w-3xl mx-auto bg-indigo-50 border-l-4 border-indigo-600 rounded-r-lg p-6">
+                            <p className="text-gray-700 leading-relaxed">
+                                Digitale Formulare für Kosmetikstudios ersetzen Papier-Anamnesebögen und Einwilligungserklärungen. Kunden füllen sie vorab auf dem Smartphone aus, die Daten landen automatisch in der Kundenkartei – DSGVO-konform und rechtssicher.
+                            </p>
+                        </div>
                     </div>
 
                     {/* Formulare Marketplace Screenshot */}

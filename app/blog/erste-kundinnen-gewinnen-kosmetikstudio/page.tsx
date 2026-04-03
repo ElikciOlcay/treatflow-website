@@ -3,7 +3,8 @@ import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Users } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, Share2, Users } from 'lucide-react';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 
 export const metadata: Metadata = {
     title: 'Erste Kundinnen gewinnen: Tipps für Studios',
@@ -48,13 +49,19 @@ export default function BlogPost() {
         <div className="min-h-screen bg-white">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
             <Navigation />
-            <article className="pt-32 pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Blog', href: '/blog' },
+                    { label: 'Erste Kundinnen gewinnen: Tipps für Studios' },
+                ])) }}
+            />
+            <Breadcrumbs items={[
+                { label: 'Blog', href: '/blog' },
+                { label: 'Erste Kundinnen gewinnen: Tipps für Studios' },
+            ]} />
+            <article className="pt-6 pb-20">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <nav className="mb-8">
-                        <Link href="/blog" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
-                            <ArrowLeft className="mr-2 h-4 w-4" /> Zurück zum Blog
-                        </Link>
-                    </nav>
                     <div className="mb-8">
                         <div className="flex items-center gap-4 mb-6">
                             <span className="bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">Marketing</span>

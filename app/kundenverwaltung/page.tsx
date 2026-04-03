@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 export const metadata = {
     title: 'Digitale Kundenkartei fürs Kosmetikstudio',
@@ -79,14 +80,24 @@ export default function KundenverwaltungPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Kundenverwaltung' },
+                ])) }}
+            />
             <Script
                 id="kundenverwaltung-faq-schema"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
-
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+            <section className="pb-20 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+                <Breadcrumbs items={[
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Kundenverwaltung' },
+                ]} />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -100,6 +111,11 @@ export default function KundenverwaltungPage() {
                             Digitale Kundenkartei für Kosmetikstudios: unbegrenzte Kundendatenbank, Import bestehender Daten,
                             schnelle Suche und alle wichtigen Informationen auf einen Blick.
                         </p>
+                        <div className="mt-8 max-w-3xl mx-auto bg-indigo-50 border-l-4 border-indigo-600 rounded-r-lg p-6">
+                            <p className="text-gray-700 leading-relaxed">
+                                Eine digitale Kundenkartei für Kosmetikstudios ist eine Software, die alle Kundendaten, Behandlungshistorien, Vorher-Nachher-Fotos und Notizen an einem Ort speichert. Im Gegensatz zur Papierkartei ist sie DSGVO-konform, durchsuchbar und von jedem Gerät zugänglich.
+                            </p>
+                        </div>
                     </div>
 
                     <div className="mt-12 max-w-5xl mx-auto">

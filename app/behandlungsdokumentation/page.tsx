@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 export const metadata = {
     title: 'Behandlungsdokumentation Kosmetik digital',
@@ -79,14 +80,24 @@ export default function BehandlungsdokumentationPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Dokumentation' },
+                ])) }}
+            />
             <Script
                 id="behandlungsdokumentation-faq-schema"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
-
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
+            <section className="pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
+                <Breadcrumbs items={[
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Dokumentation' },
+                ]} />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -101,6 +112,11 @@ export default function BehandlungsdokumentationPage() {
                             Halte jede Behandlung professionell fest - mit KI-Unterstützung, Fotos, Notizen und allen wichtigen Details.
                             So weißt du beim nächsten Termin genau, was gemacht wurde.
                         </p>
+                        <div className="mt-8 max-w-3xl mx-auto bg-indigo-50 border-l-4 border-indigo-600 rounded-r-lg p-6">
+                            <p className="text-gray-700 leading-relaxed">
+                                Behandlungsdokumentation in der Kosmetik bedeutet die lückenlose, digitale Erfassung aller durchgeführten Behandlungen inklusive Fotos, Produkten und Notizen. Für NiSV-pflichtige Anwendungen ist eine konforme Dokumentation gesetzlich vorgeschrieben.
+                            </p>
+                        </div>
                     </div>
 
                     <div className="mt-12 max-w-5xl mx-auto">

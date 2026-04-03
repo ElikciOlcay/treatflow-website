@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 export const metadata = {
     title: 'SMS & E-Mail Erinnerungen fürs Kosmetikstudio',
@@ -79,14 +80,24 @@ export default function NachrichtenautomatisierungPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Nachrichten' },
+                ])) }}
+            />
             <Script
                 id="nachrichtenautomatisierung-faq-schema"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
-
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
+            <section className="pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
+                <Breadcrumbs items={[
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'Nachrichten' },
+                ]} />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -100,6 +111,11 @@ export default function NachrichtenautomatisierungPage() {
                             Versende automatisch personalisierte Erinnerungen, Terminbestätigungen und Follow-ups
                             per E-Mail und SMS. Reduziere No-Shows um 80% und steigere die Kundenzufriedenheit.
                         </p>
+                        <div className="mt-8 max-w-3xl mx-auto bg-indigo-50 border-l-4 border-indigo-600 rounded-r-lg p-6">
+                            <p className="text-gray-700 leading-relaxed">
+                                Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows im Kosmetikstudio zu reduzieren. Studios berichten von bis zu 80% weniger ausgefallenen Terminen durch rechtzeitige Erinnerungen.
+                            </p>
+                        </div>
                     </div>
 
                     <div className="mt-12 max-w-5xl mx-auto">

@@ -1,8 +1,9 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, Calendar, CheckCircle, Clock } from 'lucide-react';
+import { ArrowRight, Calendar, CheckCircle, Clock } from 'lucide-react';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Behandlungsdokumentation im Kosmetikstudio',
@@ -25,7 +26,18 @@ export default function BlogPost() {
     <div className="min-h-screen bg-white">
       <Navigation />
 
-      <article className="pt-32 pb-20">
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+              { label: 'Blog', href: '/blog' },
+              { label: 'Behandlungsdokumentation im Kosmetikstudio' },
+          ])) }}
+      />
+      <Breadcrumbs items={[
+          { label: 'Blog', href: '/blog' },
+          { label: 'Behandlungsdokumentation im Kosmetikstudio' },
+      ]} />
+      <article className="pt-6 pb-20">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -50,10 +62,6 @@ export default function BlogPost() {
           }}
         />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/blog" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium mb-8">
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Zurück zum Blog
-          </Link>
 
           <div className="flex items-center gap-4 mb-6">
             <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Recht & Compliance</span>
@@ -83,7 +91,7 @@ export default function BlogPost() {
             <p>
               Dokumentation schützt dich in zwei Richtungen: rechtlich und fachlich. Rechtlich, weil du den Verlauf
               nachvollziehbar belegen kannst. Fachlich, weil du bei Folgebehandlungen besser beurteilen kannst, welche
-              Schritte wirksam waren und wo du anpassen solltest.
+              Schritte wirksam waren und wo du anpassen solltest. Besonders bei Gerätebehandlungen, die unter die NiSV fallen, ist eine <Link href="/nisv-dokumentation" className="text-indigo-600 hover:text-indigo-700 font-medium">NiSV-konforme Dokumentation</Link> zusätzlich verpflichtend.
             </p>
 
             <h2>Die 6 Pflichtbestandteile einer starken Dokumentation</h2>
@@ -160,7 +168,7 @@ export default function BlogPost() {
             </p>
             <h3>Warum ist digitale Dokumentation im Vorteil?</h3>
             <p>
-              Digitale Dokumentation macht Verläufe schneller auffindbar, reduziert Medienbrüche und hilft, Standards
+              Eine professionelle <Link href="/behandlungsdokumentation" className="text-indigo-600 hover:text-indigo-700 font-medium">Behandlungsdokumentation Software</Link> macht Verläufe schneller auffindbar, reduziert Medienbrüche und hilft, Standards
               teamweit einheitlich umzusetzen.
             </p>
 

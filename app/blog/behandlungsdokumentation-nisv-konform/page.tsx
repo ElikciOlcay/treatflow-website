@@ -2,7 +2,8 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
-import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, FileText, Shield, CheckCircle, AlertTriangle, Scale, BookOpen } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, Share2, FileText, Shield, CheckCircle, AlertTriangle, Scale, BookOpen } from 'lucide-react';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 
 
 
@@ -89,15 +90,19 @@ export default function BlogPost() {
             />
             <Navigation />
 
-            <article className="pt-32 pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Blog', href: '/blog' },
+                    { label: 'NISV-konforme Behandlungsdokumentation' },
+                ])) }}
+            />
+            <Breadcrumbs items={[
+                { label: 'Blog', href: '/blog' },
+                { label: 'NISV-konforme Behandlungsdokumentation' },
+            ]} />
+            <article className="pt-6 pb-20">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <nav className="mb-8">
-                        <Link href="/blog" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
-                            <ArrowLeft className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                            Zurück zum Blog
-                        </Link>
-                    </nav>
-
                     <div className="mb-8">
                         <div className="flex items-center gap-4 mb-6">
                             <span className="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium">
@@ -199,7 +204,7 @@ export default function BlogPost() {
 
                         <p className="text-gray-700 leading-relaxed mb-6">
                             Die NiSV schreibt eine umfassende Dokumentation vor. Jede Behandlung muss lückenlos nachvollziehbar sein.
-                            Das mag zunächst überwältigend wirken, aber mit der richtigen Struktur ist es machbar.
+                            Das mag zunächst überwältigend wirken, aber mit einer professionellen <Link href="/nisv-dokumentation" className="text-indigo-600 hover:text-indigo-700 font-medium">NiSV-Dokumentation Software</Link> ist es gut machbar.
                         </p>
 
                         <h3 className="text-2xl font-semibold text-gray-900 mb-4">1. Vor der ersten Behandlung</h3>
@@ -485,7 +490,7 @@ export default function BlogPost() {
                         </p>
 
                         <p className="text-gray-700 leading-relaxed mb-8">
-                            Mit der richtigen Software und strukturierten Abläufen wird die Dokumentation zur Routine.
+                            Mit der richtigen <Link href="/behandlungsdokumentation" className="text-indigo-600 hover:text-indigo-700 font-medium">Behandlungsdokumentation Software</Link> und strukturierten Abläufen wird die Dokumentation zur Routine.
                             Investiere jetzt in ein professionelles System - es zahlt sich langfristig aus.
                         </p>
 

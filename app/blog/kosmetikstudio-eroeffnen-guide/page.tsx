@@ -2,7 +2,8 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
-import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Building, CheckCircle, AlertCircle } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, Share2, Building, CheckCircle, AlertCircle } from 'lucide-react';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 
 
 export const metadata: Metadata = {
@@ -88,15 +89,19 @@ export default function BlogPost() {
             />
             <Navigation />
 
-            <article className="pt-32 pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Blog', href: '/blog' },
+                    { label: 'Kosmetikstudio eröffnen: Kompletter Guide' },
+                ])) }}
+            />
+            <Breadcrumbs items={[
+                { label: 'Blog', href: '/blog' },
+                { label: 'Kosmetikstudio eröffnen: Kompletter Guide' },
+            ]} />
+            <article className="pt-6 pb-20">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <nav className="mb-8">
-                        <Link href="/blog" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
-                            <ArrowLeft className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                            Zurück zum Blog
-                        </Link>
-                    </nav>
-
                     <div className="mb-8">
                         <div className="flex items-center gap-4 mb-6">
                             <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
@@ -489,7 +494,7 @@ export default function BlogPost() {
                         <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Digitale Unterstützung für den Start</h2>
 
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Die richtige <Link href="/kosmetikstudio-software" className="text-indigo-600 underline hover:text-indigo-800">Kosmetikstudio-Software</Link> von Anfang an spart Zeit, Nerven und Geld. Moderne Lösungen
+                            Die richtige <Link href="/kosmetikstudio-software" className="text-indigo-600 hover:text-indigo-700 font-medium">Kosmetikstudio Software</Link> von Anfang an spart Zeit, Nerven und Geld. Moderne Lösungen
                             unterstützen dich bei allen wichtigen Aufgaben.
                         </p>
 

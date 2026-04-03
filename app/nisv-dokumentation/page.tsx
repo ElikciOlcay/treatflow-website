@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 export const metadata = {
     title: 'NiSV-Dokumentation: Beratung & Doku digital',
@@ -68,8 +69,18 @@ export default function NisvDokumentationPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
             <Navigation />
-
-            <section className="pt-32 pb-20 bg-gradient-to-br from-slate-50 via-white to-indigo-50">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'NiSV-Dokumentation' },
+                ])) }}
+            />
+            <section className="pb-20 bg-gradient-to-br from-slate-50 via-white to-indigo-50">
+                <Breadcrumbs items={[
+                    { label: 'Funktionen', href: '/funktionen' },
+                    { label: 'NiSV-Dokumentation' },
+                ]} />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium mb-6">

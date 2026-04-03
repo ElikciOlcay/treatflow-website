@@ -2,7 +2,8 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
-import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Heart, Star, CheckCircle, TrendingUp } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, Share2, Heart, Star, CheckCircle, TrendingUp } from 'lucide-react';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 
 
 const relatedPosts = [
@@ -102,16 +103,20 @@ export default function BlogPost() {
             />
             <Navigation />
 
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Blog', href: '/blog' },
+                    { label: '5 Kundenbindung-Strategien im Kosmetikstudio' },
+                ])) }}
+            />
+            <Breadcrumbs items={[
+                { label: 'Blog', href: '/blog' },
+                { label: '5 Kundenbindung-Strategien im Kosmetikstudio' },
+            ]} />
             {/* Article Header */}
-            <article className="pt-32 pb-20">
+            <article className="pt-6 pb-20">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    {/* Breadcrumb */}
-                    <nav className="mb-8">
-                        <Link href="/blog" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
-                            <ArrowLeft className="mr-1 sm:mr-2 h-3 w-3 sm:h-4 sm:w-4" />
-                            Zurück zum Blog
-                        </Link>
-                    </nav>
 
                     {/* Article Meta */}
                     <div className="mb-8">

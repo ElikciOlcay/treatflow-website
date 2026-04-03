@@ -3,7 +3,8 @@ import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Bell, CheckCircle } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, Share2, Bell, CheckCircle } from 'lucide-react';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 
 export const metadata: Metadata = {
     title: 'No-Shows im Kosmetikstudio reduzieren',
@@ -48,13 +49,19 @@ export default function BlogPost() {
         <div className="min-h-screen bg-white">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
             <Navigation />
-            <article className="pt-32 pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Blog', href: '/blog' },
+                    { label: 'No-Shows im Kosmetikstudio reduzieren' },
+                ])) }}
+            />
+            <Breadcrumbs items={[
+                { label: 'Blog', href: '/blog' },
+                { label: 'No-Shows im Kosmetikstudio reduzieren' },
+            ]} />
+            <article className="pt-6 pb-20">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <nav className="mb-8">
-                        <Link href="/blog" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
-                            <ArrowLeft className="mr-2 h-4 w-4" /> Zurück zum Blog
-                        </Link>
-                    </nav>
                     <div className="mb-8">
                         <div className="flex items-center gap-4 mb-6">
                             <span className="bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium">Automatisierung</span>
@@ -83,7 +90,7 @@ export default function BlogPost() {
 
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Erinnerungen – der größte Hebel</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Studios, die eine <Link href="/nachrichtenautomatisierung" className="text-indigo-600 hover:text-indigo-700 underline">automatische Erinnerung</Link> (z.B. 24 Stunden vorher per SMS oder E-Mail) schicken, berichten oft von deutlich weniger unentschuldigten Ausfällen. Die Zahlen variieren, aber Reduktionen um 40 bis 80 Prozent sind keine Seltenheit. Der Grund ist simpel: Die Kundin wird nochmal an den Termin erinnert und kann rechtzeitig absagen oder den Termin verschieben.
+                            Studios, die <Link href="/nachrichtenautomatisierung" className="text-indigo-600 hover:text-indigo-700 font-medium">automatische SMS-Erinnerungen</Link> (z.B. 24 Stunden vorher) schicken, berichten oft von deutlich weniger unentschuldigten Ausfällen. Die Zahlen variieren, aber Reduktionen um 40 bis 80 Prozent sind keine Seltenheit. Der Grund ist simpel: Die Kundin wird nochmal an den Termin erinnert und kann rechtzeitig absagen oder den Termin verschieben.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
                             Wichtig: Nicht nur einmal erinnern. Eine Bestätigung direkt nach der Buchung („Dein Termin am … ist reserviert“) und eine Erinnerung ein bis zwei Tage vorher bringen am meisten. So bleibt der Termin präsent und du wirkst professionell.
@@ -101,7 +108,7 @@ export default function BlogPost() {
                             <li>In beiden Nachrichten: Datum, Uhrzeit, Ort und kurze Absage-Hinweise</li>
                         </ul>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Wenn du das noch manuell machst, wird es schnell vergessen oder weggelassen. Mit einem <Link href="/terminkalender" className="text-indigo-600 hover:text-indigo-700 underline">digitalen Terminkalender</Link>, der Erinnerungen und Bestätigungen automatisch verschickt, bleibt es dauerhaft dabei – und du gewinnst Zeit.
+                            Wenn du das noch manuell machst, wird es schnell vergessen oder weggelassen. Mit einer <Link href="/terminkalender" className="text-indigo-600 hover:text-indigo-700 font-medium">Terminsoftware</Link>, die Erinnerungen und Bestätigungen automatisch verschickt, bleibt es dauerhaft dabei – und du gewinnst Zeit.
                         </p>
 
                         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-12">

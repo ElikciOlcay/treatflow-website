@@ -3,7 +3,8 @@ import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Shield } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, Share2, Shield } from 'lucide-react';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 
 export const metadata: Metadata = {
     title: 'DSGVO Kosmetikstudio: Datenschutz ohne Panik',
@@ -48,13 +49,19 @@ export default function BlogPost() {
         <div className="min-h-screen bg-white">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
             <Navigation />
-            <article className="pt-32 pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Blog', href: '/blog' },
+                    { label: 'DSGVO Kosmetikstudio: Datenschutz ohne Panik' },
+                ])) }}
+            />
+            <Breadcrumbs items={[
+                { label: 'Blog', href: '/blog' },
+                { label: 'DSGVO Kosmetikstudio: Datenschutz ohne Panik' },
+            ]} />
+            <article className="pt-6 pb-20">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <nav className="mb-8">
-                        <Link href="/blog" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium">
-                            <ArrowLeft className="mr-2 h-4 w-4" /> Zurück zum Blog
-                        </Link>
-                    </nav>
                     <div className="mb-8">
                         <div className="flex items-center gap-4 mb-6">
                             <span className="bg-slate-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium">Recht & Compliance</span>
@@ -78,7 +85,7 @@ export default function BlogPost() {
                             Die DSGVO klingt nach Bürokratie und Strafen. In der Praxis geht es vor allem um zwei Dinge: Du verarbeitest personenbezogene Daten nur mit Rechtsgrundlage (Vertrag, Einwilligung, berechtigtes Interesse), und du behandelst sie sicher. Für ein Kosmetikstudio heißt das: Namen, Adressen, Anamnesen, Behandlungsnotizen und eventuell Fotos – alles das gehört in eine sichere <Link href="/kundenverwaltung" className="text-indigo-600 hover:text-indigo-700 underline">digitale Kundenverwaltung</Link> und unterliegt dem Datenschutz.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Du brauchst eine Datenschutzerklärung (auf der Website und wenn du Daten erhebst), und idealerweise eine kurze Info, was du warum speicherst. Bei Fotos (z.B. Vorher-Nachher) ist eine explizite Einwilligung nötig. Die Aufbewahrungsfristen für <Link href="/formulare" className="text-indigo-600 hover:text-indigo-700 underline">Anamnese und Behandlungsdokumentation</Link> solltest du kennen – oft sind das mehrere Jahre. Nach Ablauf solltest du löschen oder anonymisieren, wenn du die Daten nicht mehr brauchst.
+                            Du brauchst eine Datenschutzerklärung (auf der Website und wenn du Daten erhebst), und idealerweise eine kurze Info, was du warum speicherst. Bei Fotos (z.B. Vorher-Nachher) ist eine explizite Einwilligung nötig. Die Aufbewahrungsfristen für <Link href="/formulare" className="text-indigo-600 hover:text-indigo-700 font-medium">DSGVO-konforme Formulare</Link> wie Anamnese und Behandlungsdokumentation solltest du kennen – oft sind das mehrere Jahre. Nach Ablauf solltest du löschen oder anonymisieren, wenn du die Daten nicht mehr brauchst.
                         </p>
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Wo liegen die Daten?</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">

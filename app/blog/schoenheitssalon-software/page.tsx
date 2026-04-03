@@ -1,8 +1,9 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, Calendar, CheckCircle, Clock } from 'lucide-react';
+import { ArrowRight, Calendar, CheckCircle, Clock } from 'lucide-react';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Schönheitssalon Software: Worauf es ankommt',
@@ -25,7 +26,18 @@ export default function BlogPost() {
     <div className="min-h-screen bg-white">
       <Navigation />
 
-      <article className="pt-32 pb-20">
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+              { label: 'Blog', href: '/blog' },
+              { label: 'Schönheitssalon Software: Worauf es ankommt' },
+          ])) }}
+      />
+      <Breadcrumbs items={[
+          { label: 'Blog', href: '/blog' },
+          { label: 'Schönheitssalon Software: Worauf es ankommt' },
+      ]} />
+      <article className="pt-6 pb-20">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -50,10 +62,6 @@ export default function BlogPost() {
           }}
         />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/blog" className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium mb-8">
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Zurück zum Blog
-          </Link>
 
           <div className="flex items-center gap-4 mb-6">
             <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Software</span>
@@ -107,7 +115,7 @@ export default function BlogPost() {
 
             <h2>Fazit</h2>
             <p>
-              Wenn du nach Schönheitssalon Software suchst, entscheide nicht nur nach Preis.
+              Wenn du nach Schönheitssalon Software oder einer spezialisierten <Link href="/kosmetikstudio-software" className="text-indigo-600 hover:text-indigo-700 font-medium">Kosmetikstudio Software</Link> suchst, entscheide nicht nur nach Preis.
               Entscheide nach Alltagstauglichkeit: klare Prozesse, weniger Aufwand, mehr Kontrolle.
             </p>
           </div>

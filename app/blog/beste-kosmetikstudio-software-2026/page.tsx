@@ -2,7 +2,8 @@ import { Metadata } from 'next';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
-import { Calendar, Clock, ArrowLeft, ArrowRight, CheckCircle, Star, Zap, Shield, Users, Smartphone } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, CheckCircle, Star, Zap, Shield, Users, Smartphone } from 'lucide-react';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 
 export const metadata: Metadata = {
     title: 'Beste Kosmetikstudio Software 2026: Vergleich',
@@ -94,16 +95,20 @@ export default function BlogPost() {
             />
             <Navigation />
 
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
+                    { label: 'Blog', href: '/blog' },
+                    { label: 'Beste Kosmetikstudio Software 2026: Vergleich' },
+                ])) }}
+            />
+            <Breadcrumbs items={[
+                { label: 'Blog', href: '/blog' },
+                { label: 'Beste Kosmetikstudio Software 2026: Vergleich' },
+            ]} />
             {/* Hero */}
-            <section className="pt-32 pb-16 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+            <section className="pt-6 pb-16 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <Link
-                        href="/blog"
-                        className="inline-flex items-center text-indigo-600 hover:text-indigo-700 mb-8 transition-colors"
-                    >
-                        <ArrowLeft className="h-4 w-4 mr-2" />
-                        Zurück zum Blog
-                    </Link>
 
                     <div className="mb-6">
                         <span className="inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">

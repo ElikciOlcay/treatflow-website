@@ -68,7 +68,15 @@ export default function Navigation() {
                                         </Link>
                                     ))}
                                 </div>
-                                <div className="border-t border-gray-100 mt-3 pt-3 grid grid-cols-2 gap-1">
+                                <div className="border-t border-gray-100 mt-3 pt-3">
+                                    <Link
+                                        href="/funktionen"
+                                        className="block text-center text-sm font-medium text-indigo-600 hover:text-indigo-700 py-2 rounded-lg hover:bg-indigo-50 transition-colors mb-2"
+                                    >
+                                        Alle Funktionen ansehen
+                                    </Link>
+                                </div>
+                                <div className="border-t border-gray-100 pt-3 grid grid-cols-2 gap-1">
                                     <Link
                                         href="/shop"
                                         className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
