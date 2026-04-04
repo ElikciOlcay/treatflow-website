@@ -11,7 +11,7 @@ import SocialProofBar from '../components/SocialProofBar';
 const clusterLinks = [
     { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', description: 'Die All-in-One Lösung für dein Studio' },
     { href: '/anamnesebogen-kosmetikstudio', title: 'Anamnesebogen-Vorlagen', description: 'Professionelle Vorlagen für alle Behandlungen' },
-    { href: '/kundenkartei-kosmetikstudio', title: 'Digitale Kundenkartei', description: 'Alle Kundendaten immer griffbereit' },
+    { href: '/kundenverwaltung', title: 'Digitale Kundenkartei', description: 'Alle Kundendaten immer griffbereit' },
     { href: '/nisv-dokumentation-kosmetikstudio', title: 'NiSV-Dokumentation', description: 'Rechtssichere Dokumentation nach NiSV' },
 ];
 

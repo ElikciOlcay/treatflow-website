@@ -13,13 +13,13 @@ const clusterPages = [
         icon: Star,
     },
     {
-        href: '/terminsoftware-kosmetikstudio',
+        href: '/terminkalender',
         title: 'Terminsoftware',
         description: 'Online-Buchung und digitaler Terminkalender',
         icon: Calendar,
     },
     {
-        href: '/kundenkartei-kosmetikstudio',
+        href: '/kundenverwaltung',
         title: 'Digitale Kundenkartei',
         description: 'Kundendaten, Behandlungshistorie und Fotos',
         icon: Users,

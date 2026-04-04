@@ -125,7 +125,7 @@ export default function BlogPost() {
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">Passende Funktionen für dein Studio</h2>
                     <div className="grid sm:grid-cols-2 gap-4">
                         {[
-                            { href: '/online-terminbuchung-kosmetikstudio', title: 'Online-Terminbuchung', desc: 'Kunden buchen 24/7 online' },
+                            { href: '/online-buchungen', title: 'Online-Terminbuchung', desc: 'Kunden buchen 24/7 online' },
                             { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', desc: 'All-in-One für dein Studio' },
                         ].map((link, i) => (
                             <Link key={i} href={link.href} className="group flex items-center justify-between p-4 bg-white rounded-xl border border-gray-200 hover:border-indigo-200 hover:shadow-md transition-all">

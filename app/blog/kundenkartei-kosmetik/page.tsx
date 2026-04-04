@@ -182,7 +182,7 @@ export default function BlogPost() {
               <Link href="/kundenkartei-software" className="text-indigo-700 hover:text-indigo-800 underline underline-offset-4">
                 Kundenkartei Software
               </Link>
-              <Link href="/kundenkartei-kosmetikstudio" className="text-indigo-700 hover:text-indigo-800 underline underline-offset-4">
+              <Link href="/kundenverwaltung" className="text-indigo-700 hover:text-indigo-800 underline underline-offset-4">
                 Kundenkartei Kosmetikstudio
               </Link>
               <Link href="/schoenheitssalon-software" className="text-indigo-700 hover:text-indigo-800 underline underline-offset-4">

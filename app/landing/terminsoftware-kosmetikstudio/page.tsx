@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description: 'Online-Terminbuchung, Kalender und automatische Erinnerungen für dein Kosmetikstudio. 80% weniger No-Shows. Jetzt 14 Tage kostenlos testen.',
     robots: 'noindex, nofollow',
     alternates: {
-        canonical: 'https://www.treatflow.io/landing/terminsoftware-kosmetikstudio',
+        canonical: 'https://www.treatflow.io/terminkalender',
     },
 };
 

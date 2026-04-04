@@ -394,6 +394,34 @@ export default function BehandlungsdokumentationPage() {
                 </div>
             </section>
 
+            <section className="py-16 bg-white">
+                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?</h2>
+                    <p className="text-lg text-gray-600 leading-relaxed">
+                        Gute Software für die Behandlungsdokumentation im Kosmetikstudio sollte Vorher- und Nachher-Fotos sicher verwalten, Behandlungsparameter festhalten, verwendete Produkte nachvollziehen und die Anforderungen der NiSV erfüllen. Treatflow bündelt Fotoverwaltung, Parameter, Produkttracking und NiSV-Konformität in einer App. Ausführliche Hinweise zur gesetzlichen Dokumentation findest du unter{' '}
+                        <Link href="/nisv-dokumentation" className="text-indigo-600 hover:underline font-medium">NiSV-Dokumentation</Link>.
+                    </p>
+                </div>
+            </section>
+            <section className="py-16 bg-gray-50">
+                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Ist Behandlungsdokumentation im Kosmetikstudio Pflicht?</h2>
+                    <p className="text-lg text-gray-600 leading-relaxed">
+                        Bei NiSV-pflichtigen Behandlungen wie Laser, IPL oder Ultraschall ist eine lückenlose Dokumentation gesetzlich vorgeschrieben. Für viele andere Anwendungen besteht keine gleiche Pflicht, eine professionelle Dokumentation ist aber dringend zur Qualitätssicherung und zum Haftungsschutz zu empfehlen. Details und Vorgaben zur NiSV findest du unter{' '}
+                        <Link href="/nisv-dokumentation" className="text-indigo-600 hover:underline font-medium">NiSV-Dokumentation</Link>.
+                    </p>
+                </div>
+            </section>
+            <section className="py-16 bg-white">
+                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Was gehört in eine professionelle Behandlungsdokumentation?</h2>
+                    <p className="text-lg text-gray-600 leading-relaxed">
+                        Dazu zählen unter anderem Behandlungsdatum und -art, eingestellte Parameter, verwendete Produkte, Hautzustand und Befund, aussagekräftige Fotos, die Einwilligung der Kundin bzw. des Kunden sowie Name und Zuordnung der ausführenden Person. Digitale Dokumentation macht diese Inhalte effizient erfassbar und durchsuchbar. Passende Formularvorlagen findest du unter{' '}
+                        <Link href="/formulare" className="text-indigo-600 hover:underline font-medium">Formulare</Link>.
+                    </p>
+                </div>
+            </section>
+
             {/* Verwandte Seiten / Cluster-Verlinkung */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

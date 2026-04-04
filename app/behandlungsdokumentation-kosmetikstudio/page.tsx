@@ -11,7 +11,7 @@ const clusterLinks = [
     { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', description: 'Die All-in-One Lösung für dein Studio' },
     { href: '/nisv-dokumentation-kosmetikstudio', title: 'NiSV-Dokumentation', description: 'Rechtssichere Dokumentation nach NiSV' },
     { href: '/anamnesebogen-kosmetikstudio', title: 'Digitale Anamnesebögen', description: 'Formulare und Einwilligungen digital' },
-    { href: '/kundenkartei-kosmetikstudio', title: 'Digitale Kundenkartei', description: 'Alle Kundendaten immer griffbereit' },
+    { href: '/kundenverwaltung', title: 'Digitale Kundenkartei', description: 'Alle Kundendaten immer griffbereit' },
 ];
 
 export const metadata = {

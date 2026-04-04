@@ -8,15 +8,15 @@ import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 export const metadata = {
-    title: 'Digitale Kundenkartei fürs Kosmetikstudio',
-    description: 'Kundenverwaltung, Behandlungsverlauf und wichtige Infos an einem Ort. Weniger Zettel, mehr Überblick – sicher und strukturiert.',
-    keywords: ['Kundenkartei Kosmetikstudio', 'Kundenverwaltung Kosmetikstudio', 'Digitale Kundenkartei Kosmetikstudio', 'Kundenkartei Kosmetik', 'digitale Kundenkartei Kosmetik', 'Kundenkartei App', 'CRM Beauty Salon', 'Kundenprofile Kosmetikstudio', 'Behandlungshistorie', 'DSGVO Kundendaten'],
+    title: 'Kundenverwaltung Kosmetikstudio: Daten & Historie',
+    description: 'Professionelle Kundenverwaltung für dein Kosmetikstudio: Behandlungsverlauf, Kundenhistorie, Notizen und Fotos zentral verwalten. DSGVO-konform.',
+    keywords: ['Kundenverwaltung Kosmetikstudio', 'Kundenverwaltung Kosmetik', 'digitale Kundenverwaltung Kosmetik', 'Kundenmanagement Kosmetikstudio', 'Kundendaten verwalten Kosmetik', 'Kundenhistorie Kosmetik', 'Kundenprofil Kosmetikstudio', 'CRM Kosmetikstudio', 'Behandlungshistorie', 'DSGVO Kundendaten'],
     alternates: {
         canonical: 'https://www.treatflow.io/kundenverwaltung',
     },
     openGraph: {
-        title: 'Kundenkartei Kosmetik: Historie, Notizen & Fotos',
-        description: 'Kundenverwaltung, Behandlungsverlauf und wichtige Infos an einem Ort. Weniger Zettel, mehr Überblick.',
+        title: 'Kundenverwaltung Kosmetikstudio: Daten & Historie | Treatflow',
+        description: 'Professionelle Kundenverwaltung für dein Kosmetikstudio: Behandlungsverlauf, Kundenhistorie, Notizen und Fotos zentral verwalten.',
         url: 'https://www.treatflow.io/kundenverwaltung',
         images: [
             {
@@ -530,12 +530,12 @@ export default function KundenverwaltungPage() {
                             <span className="text-sm text-gray-600 block mb-2">All-in-One für dein Studio</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
-                        <Link href="/kundenkartei-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                        <Link href="/kundenverwaltung" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
                             <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Kundenkartei Kosmetik</span>
                             <span className="text-sm text-gray-600 block mb-2">Kundendaten & Behandlungshistorie</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
-                        <Link href="/terminsoftware-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                        <Link href="/terminkalender" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
                             <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Terminsoftware</span>
                             <span className="text-sm text-gray-600 block mb-2">Online-Buchung & Kalender</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>

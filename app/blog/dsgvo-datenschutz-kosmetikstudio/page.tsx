@@ -124,7 +124,7 @@ export default function BlogPost() {
                     <div className="grid sm:grid-cols-2 gap-4">
                         {[
                             { href: '/digitale-anamnese-kosmetikstudio', title: 'Digitale Anamnese', desc: 'DSGVO-konforme digitale Formulare' },
-                            { href: '/kundenkartei-kosmetikstudio', title: 'Digitale Kundenkartei', desc: 'Alle Kundendaten sicher verwalten' },
+                            { href: '/kundenverwaltung', title: 'Digitale Kundenkartei', desc: 'Alle Kundendaten sicher verwalten' },
                         ].map((link, i) => (
                             <Link key={i} href={link.href} className="group flex items-center justify-between p-4 bg-white rounded-xl border border-gray-200 hover:border-indigo-200 hover:shadow-md transition-all">
                                 <div>

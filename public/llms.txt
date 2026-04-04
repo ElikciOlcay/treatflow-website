@@ -152,10 +152,10 @@ Treatflow ist ideal für:
 
 ### Ratgeber
 - Kundenkartei Software: https://www.treatflow.io/kundenkartei-software
-- Terminsoftware Kosmetikstudio: https://www.treatflow.io/terminsoftware-kosmetikstudio
-- Kundenkartei Kosmetikstudio: https://www.treatflow.io/kundenkartei-kosmetikstudio
+- Terminsoftware Kosmetikstudio: https://www.treatflow.io/terminkalender
+- Kundenkartei Kosmetikstudio: https://www.treatflow.io/kundenverwaltung
 - Anamnesebogen Kosmetikstudio: https://www.treatflow.io/anamnesebogen-kosmetikstudio
-- Online-Terminbuchung: https://www.treatflow.io/online-terminbuchung-kosmetikstudio
+- Online-Terminbuchung: https://www.treatflow.io/online-buchungen
 - SMS-Erinnerungen: https://www.treatflow.io/sms-erinnerungen-kosmetikstudio
 - NiSV-Dokumentation: https://www.treatflow.io/nisv-dokumentation-kosmetikstudio
 - Blog: https://www.treatflow.io/blog

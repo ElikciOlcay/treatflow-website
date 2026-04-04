@@ -196,7 +196,7 @@ export default function BlogPost() {
               <Link href="/terminkalender" className="text-indigo-700 hover:text-indigo-800 underline underline-offset-4">
                 Terminkalender
               </Link>
-              <Link href="/terminsoftware-kosmetikstudio" className="text-indigo-700 hover:text-indigo-800 underline underline-offset-4">
+              <Link href="/terminkalender" className="text-indigo-700 hover:text-indigo-800 underline underline-offset-4">
                 Terminsoftware Kosmetikstudio
               </Link>
             </div>

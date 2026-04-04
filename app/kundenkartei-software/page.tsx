@@ -8,19 +8,20 @@ import SocialProofBar from "../components/SocialProofBar";
 import Breadcrumbs, { generateBreadcrumbSchema } from "../components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Kundenkartei App für Kosmetik & Beauty",
+  title: "Kundenkartei App: Kosmetik & Beauty mobil verwalten",
   description:
-    "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Behandlungshistorie und Fotos in einer App. DSGVO-konform, 14 Tage kostenlos testen.",
+    "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Behandlungshistorie und Fotos mobil auf Smartphone und Tablet. DSGVO-konform, 14 Tage kostenlos.",
   keywords: [
     "kundenkartei app",
-    "kundenkartei app kosmetik",
     "app kundenkartei",
     "app für kundenkartei",
+    "kundenkartei-app",
+    "kundenkartei-app kostenlos",
+    "kundenkartei app kosmetik",
     "kundenkartei kosmetik app",
-    "digitale kundenkartei kosmetik",
+    "kundenkartei app android kostenlos",
+    "kundenkartei-app android kostenlos",
     "kundenkartei software",
-    "kundenkartei software kostenlos",
-    "kundenkartei app kostenlos",
   ],
   alternates: {
     canonical: "https://www.treatflow.io/kundenkartei-software",
@@ -434,7 +435,7 @@ export default function KundenkarteiSoftwarePage() {
             <Link href="/kundenverwaltung" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
               Kundenverwaltung
             </Link>
-            <Link href="/kundenkartei-kosmetikstudio" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
+            <Link href="/kundenverwaltung" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
               Digitale Kundenkartei Kosmetik
             </Link>
             <Link href="/kosmetikstudio-software" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">

@@ -148,12 +148,12 @@ const internalLinks = [
         description: 'Die All-in-One Lösung für dein Studio',
     },
     {
-        href: '/terminsoftware-kosmetikstudio',
+        href: '/terminkalender',
         title: 'Terminsoftware',
         description: 'Online-Buchungen und Terminkalender',
     },
     {
-        href: '/kundenkartei-kosmetikstudio',
+        href: '/kundenverwaltung',
         title: 'Kundenkartei',
         description: 'Digitale Kundenverwaltung und Profile',
     },
@@ -489,8 +489,8 @@ export default function AnamnesebogenKosmetikstudioPage() {
                         {[
                             { href: '/digitale-anamnese-kosmetikstudio', title: 'Digitale Anamnese', description: 'Kunden füllen vorab per Link aus' },
                             { href: '/behandlungsdokumentation-kosmetikstudio', title: 'Behandlungsdokumentation', description: 'NiSV-konforme Dokumentation' },
-                            { href: '/kundenkartei-kosmetikstudio', title: 'Digitale Kundenkartei', description: 'Alle Kundendaten immer griffbereit' },
-                            { href: '/online-terminbuchung-kosmetikstudio', title: 'Online-Terminbuchung', description: 'Kunden buchen 24/7 online' },
+                            { href: '/kundenverwaltung', title: 'Digitale Kundenkartei', description: 'Alle Kundendaten immer griffbereit' },
+                            { href: '/online-buchungen', title: 'Online-Terminbuchung', description: 'Kunden buchen 24/7 online' },
                         ].map((link, index) => (
                             <Link key={index} href={link.href} className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all duration-200">
                                 <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors duration-200 flex items-center">

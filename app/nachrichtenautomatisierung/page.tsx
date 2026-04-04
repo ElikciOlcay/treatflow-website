@@ -402,6 +402,36 @@ export default function NachrichtenautomatisierungPage() {
                 </div>
             </section>
 
+            <section className="py-16 bg-white">
+                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Wie kann ich No-Shows im Kosmetikstudio reduzieren?</h2>
+                    <p className="text-lg text-gray-600 leading-relaxed">
+                        Automatische SMS- und E-Mail-Erinnerungen vor jedem Termin sind einer der wirksamsten Hebel gegen No-Shows: Viele Kosmetikstudios berichten von bis zu 80 % weniger Ausfällen. Ergänzt durch sofortige Buchungsbestätigungen und einfaches Umbuchen über die Online-Buchung wirkt das besonders zuverlässig. Mehr zu Online-Buchung und Bestätigungen findest du unter{' '}
+                        <Link href="/online-buchungen" className="text-indigo-600 hover:underline">Online-Buchungen</Link>.
+                    </p>
+                </div>
+            </section>
+
+            <section className="py-16 bg-gray-50">
+                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Welche Nachrichten sollte ich im Kosmetikstudio automatisieren?</h2>
+                    <p className="text-lg text-gray-600 leading-relaxed">
+                        Drei Typen bilden die Basis: Terminerinnerungen vor dem Termin, Buchungsbestätigungen direkt nach der Buchung sowie Nachsorge-Nachrichten nach der Behandlung. Jede dieser Kategorien spart Zeit und verbessert die Kundenerfahrung. Vorlagen und Abläufe kannst du über{' '}
+                        <Link href="/formulare" className="text-indigo-600 hover:underline">Formulare</Link>{' '}
+                        strukturiert aufsetzen.
+                    </p>
+                </div>
+            </section>
+
+            <section className="py-16 bg-white">
+                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Funktionieren SMS-Erinnerungen besser als E-Mails?</h2>
+                    <p className="text-lg text-gray-600 leading-relaxed">
+                        SMS erreichen oft eine Öffnungsrate von rund 98 %, bei E-Mails liegen die Werte häufig bei etwa 20 %. Für zeitkritische Erinnerungen sind SMS daher in der Regel wirksamer. Treatflow versendet SMS und E-Mails automatisch; die Kombination aus beiden Kanälen ist in der Praxis meist die beste Lösung.
+                    </p>
+                </div>
+            </section>
+
             {/* Verwandte Seiten / Cluster-Verlinkung */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -419,7 +449,7 @@ export default function NachrichtenautomatisierungPage() {
                             <span className="text-sm text-gray-600 block mb-2">Weniger No-Shows durch automatische SMS</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
-                        <Link href="/online-terminbuchung-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
+                        <Link href="/online-buchungen" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
                             <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Online-Terminbuchung</span>
                             <span className="text-sm text-gray-600 block mb-2">Kunden buchen 24/7 über deinen Link</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
@@ -429,12 +459,12 @@ export default function NachrichtenautomatisierungPage() {
                             <span className="text-sm text-gray-600 block mb-2">All-in-One für dein Studio</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
-                        <Link href="/terminsoftware-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
+                        <Link href="/terminkalender" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
                             <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Terminsoftware</span>
                             <span className="text-sm text-gray-600 block mb-2">Online-Buchung & Erinnerungen</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
-                        <Link href="/kundenkartei-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
+                        <Link href="/kundenverwaltung" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
                             <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Kundenkartei</span>
                             <span className="text-sm text-gray-600 block mb-2">Kundendaten & Historie</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>

@@ -111,6 +111,14 @@ const nextConfig: NextConfig = {
         destination: '/behandlungsdokumentation-kosmetikstudio',
         permanent: true,
       },
+
+      // Keyword-Kannibalisierung: Duplicate-Intent-Seiten konsolidieren
+      { source: '/kundenkartei-kosmetikstudio', destination: '/kundenverwaltung', permanent: true },
+      { source: '/kundenkartei-kosmetikstudio/', destination: '/kundenverwaltung', permanent: true },
+      { source: '/terminsoftware-kosmetikstudio', destination: '/terminkalender', permanent: true },
+      { source: '/terminsoftware-kosmetikstudio/', destination: '/terminkalender', permanent: true },
+      { source: '/online-terminbuchung-kosmetikstudio', destination: '/online-buchungen', permanent: true },
+      { source: '/online-terminbuchung-kosmetikstudio/', destination: '/online-buchungen', permanent: true },
     ];
   },
 

@@ -10,7 +10,7 @@ import SocialProofBar from '../components/SocialProofBar';
 
 const clusterLinks = [
     { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', description: 'Die All-in-One Lösung für dein Studio' },
-    { href: '/terminsoftware-kosmetikstudio', title: 'Terminsoftware', description: 'Online-Buchung und Terminkalender' },
+    { href: '/terminkalender', title: 'Terminsoftware', description: 'Online-Buchung und Terminkalender' },
     { href: '/sms-erinnerungen-kosmetikstudio', title: 'SMS-Erinnerungen', description: 'Weniger No-Shows durch automatische Erinnerungen' },
     { href: '/kundenkartei-kosmetikstudio', title: 'Digitale Kundenkartei', description: 'Alle Kundendaten immer griffbereit' },
 ];

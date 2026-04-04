@@ -649,7 +649,7 @@ export default function TreatflowVsFresha() {
                 </strong>{' '}
                 mit transparentem Festpreis. Du bekommst eine digitale{' '}
                 <Link
-                  href="/kundenkartei-kosmetikstudio"
+                  href="/kundenverwaltung"
                   className="text-indigo-600 hover:underline"
                 >
                   Kundenkartei

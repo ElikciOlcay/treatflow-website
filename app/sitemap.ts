@@ -152,12 +152,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         // Feature-Seiten
         {
-            url: `${baseUrl}/online-terminbuchung-kosmetikstudio`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
             url: `${baseUrl}/digitale-anamnese-kosmetikstudio`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
@@ -176,18 +170,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         // SEO-Cluster Kosmetikstudio
-        {
-            url: `${baseUrl}/terminsoftware-kosmetikstudio`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/kundenkartei-kosmetikstudio`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
         {
             url: `${baseUrl}/kundenkartei-software`,
             lastModified: new Date(),

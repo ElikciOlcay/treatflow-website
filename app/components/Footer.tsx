@@ -100,12 +100,12 @@ export default function Footer() {
             <h3 className="font-semibold text-gray-300 mb-4 text-sm">Beliebte Themen</h3>
             <div className="flex flex-wrap gap-2">
               {[
-                { href: '/online-terminbuchung-kosmetikstudio', label: 'Online-Terminbuchung Kosmetikstudio' },
+                { href: '/online-buchungen', label: 'Online-Terminbuchung Kosmetikstudio' },
                 { href: '/behandlungsdokumentation-kosmetikstudio', label: 'Behandlungsdokumentation Kosmetikstudio' },
                 { href: '/digitale-anamnese-kosmetikstudio', label: 'Digitale Anamnese Kosmetikstudio' },
                 { href: '/sms-erinnerungen-kosmetikstudio', label: 'SMS-Erinnerungen Kosmetikstudio' },
-                { href: '/terminsoftware-kosmetikstudio', label: 'Terminsoftware Kosmetikstudio' },
-                { href: '/kundenkartei-kosmetikstudio', label: 'Kundenkartei Kosmetikstudio' },
+                { href: '/terminkalender', label: 'Terminsoftware Kosmetikstudio' },
+                { href: '/kundenverwaltung', label: 'Kundenkartei Kosmetikstudio' },
                 { href: '/anamnesebogen-kosmetikstudio', label: 'Anamnesebogen Kosmetikstudio' },
                 { href: '/nisv-dokumentation-kosmetikstudio', label: 'NiSV-Dokumentation' },
               ].map((item) => (

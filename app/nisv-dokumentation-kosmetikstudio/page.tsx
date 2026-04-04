@@ -162,7 +162,7 @@ const clusterLinks = [
         description: 'Kunden füllen vorab per Link aus',
     },
     {
-        href: '/kundenkartei-kosmetikstudio',
+        href: '/kundenverwaltung',
         title: 'Digitale Kundenkartei',
         description: 'Alle Kundendaten immer griffbereit',
     },

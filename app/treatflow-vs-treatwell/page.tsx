@@ -636,7 +636,7 @@ export default function TreatflowVsTreatwell() {
                 </strong>
                 . Du bekommst deinen eigenen Buchungslink, eine digitale{' '}
                 <Link
-                  href="/kundenkartei-kosmetikstudio"
+                  href="/kundenverwaltung"
                   className="text-indigo-600 hover:underline"
                 >
                   Kundenkartei

@@ -11,7 +11,7 @@ const faqs: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "Was ist der Unterschied zwischen Basic und Booking?",
-        answer: <>Basic (39 Euro/Monat) enthält unbegrenzte <Link href="/kundenkartei-kosmetikstudio" className="text-indigo-600 hover:underline">Kundenverwaltung</Link>, Formular-Marketplace, KI-Generator und Shop-Integration. Booking (59 Euro/Monat) hat zusätzlich den professionellen <Link href="/terminsoftware-kosmetikstudio" className="text-indigo-600 hover:underline">Buchungskalender</Link> mit Buchungslink und automatische <Link href="/sms-erinnerungen-kosmetikstudio" className="text-indigo-600 hover:underline">Terminerinnerungen</Link>.</>
+        answer: <>Basic (39 Euro/Monat) enthält unbegrenzte <Link href="/kundenverwaltung" className="text-indigo-600 hover:underline">Kundenverwaltung</Link>, Formular-Marketplace, KI-Generator und Shop-Integration. Booking (59 Euro/Monat) hat zusätzlich den professionellen <Link href="/terminkalender" className="text-indigo-600 hover:underline">Buchungskalender</Link> mit Buchungslink und automatische <Link href="/sms-erinnerungen-kosmetikstudio" className="text-indigo-600 hover:underline">Terminerinnerungen</Link>.</>
     },
     {
         question: "Ist Treatflow DSGVO-konform?",
@@ -19,7 +19,7 @@ const faqs: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "Kann ich meine bestehenden Kundendaten importieren?",
-        answer: <>Ja, wir helfen dir beim kostenlosen Umzug deiner Daten. Unser Support-Team unterstützt dich dabei, deine bestehenden Kundendaten sicher in die <Link href="/kundenkartei-kosmetikstudio" className="text-indigo-600 hover:underline">digitale Kundenkartei</Link> zu übertragen.</>
+        answer: <>Ja, wir helfen dir beim kostenlosen Umzug deiner Daten. Unser Support-Team unterstützt dich dabei, deine bestehenden Kundendaten sicher in die <Link href="/kundenverwaltung" className="text-indigo-600 hover:underline">digitale Kundenkartei</Link> zu übertragen.</>
     },
     {
         question: "Funktioniert Treatflow auch auf dem Handy?",

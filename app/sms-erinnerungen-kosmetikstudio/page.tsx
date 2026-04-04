@@ -395,9 +395,9 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
                             { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', description: 'Die All-in-One Lösung für dein Studio' },
-                            { href: '/terminsoftware-kosmetikstudio', title: 'Terminsoftware', description: 'Online-Buchung und Terminkalender' },
-                            { href: '/online-terminbuchung-kosmetikstudio', title: 'Online-Terminbuchung', description: 'Kunden buchen 24/7 über deinen Link' },
-                            { href: '/kundenkartei-kosmetikstudio', title: 'Digitale Kundenkartei', description: 'Alle Kundendaten immer griffbereit' },
+                            { href: '/terminkalender', title: 'Terminsoftware', description: 'Online-Buchung und Terminkalender' },
+                            { href: '/online-buchungen', title: 'Online-Terminbuchung', description: 'Kunden buchen 24/7 über deinen Link' },
+                            { href: '/kundenverwaltung', title: 'Digitale Kundenkartei', description: 'Alle Kundendaten immer griffbereit' },
                         ].map((link, index) => (
                             <Link key={index} href={link.href} className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-purple-200 hover:shadow-lg transition-all duration-200">
                                 <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors duration-200 flex items-center">
