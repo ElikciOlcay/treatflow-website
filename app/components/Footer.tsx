@@ -117,6 +117,9 @@ export default function Footer() {
           </div>
           <div className="text-center text-gray-400 text-sm">
             <p>&copy; {new Date().getFullYear()} Treatflow. Alle Rechte vorbehalten.</p>
+            <span className="mt-2 block text-[12px] text-gray-500 opacity-60">
+              eUOZTb
+            </span>
           </div>
         </div>
       </div>
