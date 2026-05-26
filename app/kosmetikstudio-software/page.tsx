@@ -39,6 +39,7 @@ const clusterPages = [
 ];
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import QuickFacts from '../components/QuickFacts';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
@@ -542,6 +543,8 @@ export default function KosmetikstudioSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <QuickFacts variant="compact" />
 
             <Footer />
         </div>

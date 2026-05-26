@@ -12,9 +12,11 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import { generateFaqSchema } from '@/lib/schema';
 
 export const metadata = {
     title: 'SMS-Erinnerungen Kosmetik: weniger No-Shows',
@@ -413,6 +415,11 @@ export default function SmsErinnerungenKosmetikstudioPage() {
 
             {/* FAQ Section */}
             <section className="py-20 bg-gray-50">
+                <Script
+                    id="faq-schema-sms"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(smsFaqs)) }}
+                />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <div className="inline-flex items-center bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-4">

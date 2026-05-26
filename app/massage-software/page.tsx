@@ -4,9 +4,22 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { generateFaqSchema } from '@/lib/schema';
+
+const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Massage Software' }];
+
+const faqs = [
+    { question: 'Eignet sich Treatflow für verschiedene Massagearten?', answer: 'Ja, du kannst beliebige Behandlungen anlegen - Sportmassage, Aromaöl-Massage, Hot Stone, Lymphdrainage und mehr. Jede mit eigener Dauer und Preis.' },
+    { question: 'Können Kunden vorab Fragebögen ausfüllen?', answer: 'Ja, du kannst Kunden einen Link senden. Sie füllen den Gesundheitsfragebogen bequem vorab aus und du hast alle Infos vor der Behandlung.' },
+    { question: 'Kann ich Beschwerdebilder pro Kunde speichern?', answer: 'Ja, du kannst für jeden Kunden Beschwerden, Behandlungsbereiche und Notizen speichern. So bist du bei jedem Besuch bestens vorbereitet.' },
+    { question: 'Funktioniert die Software für mehrere Masseure?', answer: 'Ja, jeder Masseur erhält einen eigenen Kalender und Buchungslink. Du behältst den Überblick über alle Termine.' },
+    { question: 'Was kostet Treatflow?', answer: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen - ohne Kreditkarte.' },
+];
 
 export const metadata = {
     title: 'Massage Software: Termine, Kunden & Verwaltung',
@@ -61,7 +74,13 @@ const stats = [
 export default function MassageSoftwarePage() {
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="breadcrumb-schema-massage"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+            />
             <Navigation />
+            <Breadcrumbs items={breadcrumbItems} />
 
             <section className="pt-32 pb-20 bg-gradient-to-br from-amber-50 via-white to-orange-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,17 +189,16 @@ export default function MassageSoftwarePage() {
             </section>
 
             <section className="py-20 bg-white">
+                <Script
+                    id="faq-schema-massage"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+                />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16"><h2 className="text-4xl font-bold text-gray-900 mb-4">Häufige Fragen</h2></div>
                     <div className="space-y-6">
-                        {[
-                            { q: 'Eignet sich Treatflow für verschiedene Massagearten?', a: 'Ja, du kannst beliebige Behandlungen anlegen - Sportmassage, Aromaöl-Massage, Hot Stone, Lymphdrainage und mehr. Jede mit eigener Dauer und Preis.' },
-                            { q: 'Können Kunden vorab Fragebögen ausfüllen?', a: 'Ja, du kannst Kunden einen Link senden. Sie füllen den Gesundheitsfragebogen bequem vorab aus und du hast alle Infos vor der Behandlung.' },
-                            { q: 'Kann ich Beschwerdebilder pro Kunde speichern?', a: 'Ja, du kannst für jeden Kunden Beschwerden, Behandlungsbereiche und Notizen speichern. So bist du bei jedem Besuch bestens vorbereitet.' },
-                            { q: 'Funktioniert die Software für mehrere Masseure?', a: 'Ja, jeder Masseur erhält einen eigenen Kalender und Buchungslink. Du behältst den Überblick über alle Termine.' },
-                            { q: 'Was kostet Treatflow?', a: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen - ohne Kreditkarte.' },
-                        ].map((faq, i) => (
-                            <div key={i} className="border border-gray-200 rounded-xl p-6"><h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3><p className="text-gray-600 leading-relaxed">{faq.a}</p></div>
+                        {faqs.map((faq, i) => (
+                            <div key={i} className="border border-gray-200 rounded-xl p-6"><h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3><p className="text-gray-600 leading-relaxed">{faq.answer}</p></div>
                         ))}
                     </div>
                 </div>

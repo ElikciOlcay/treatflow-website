@@ -35,6 +35,21 @@ const nextConfig: NextConfig = {
     ];
   },
 
+  async rewrites() {
+    return {
+      // fallback rewrites greifen NUR, wenn weder eine Page-Route noch eine
+      // statische Datei in /public unter dieser URL existiert. Damit liefert
+      // /images/og-*.jpg fuer alle fehlenden OG-Bilder dynamisch ein Bild
+      // aus /og?slug=...; bestehende statische OG-Bilder bleiben unberuehrt.
+      fallback: [
+        {
+          source: '/images/og-:slug.jpg',
+          destination: '/og?slug=:slug',
+        },
+      ],
+    };
+  },
+
   async redirects() {
     return [
       // Brand-Keywords: treatflow login

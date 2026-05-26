@@ -3,9 +3,11 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import { generateFaqSchema } from '@/lib/schema';
 
 const clusterLinks = [
     { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', description: 'Die All-in-One Lösung für dein Studio' },
@@ -100,24 +102,24 @@ const stats = [
 
 const faqs = [
     {
-        q: 'Ist die digitale Behandlungsdokumentation NiSV-konform?',
-        a: 'Ja. Treatflow unterstützt dich dabei, Behandlungen nach NiSV-Vorgaben zu dokumentieren. Du hältst Produkte, Verfahren und Ergebnisse fest – digital, geordnet und jederzeit abrufbar. Bei Kontrollen oder Nachfragen hast du alles sofort parat.',
+        question: 'Ist die digitale Behandlungsdokumentation NiSV-konform?',
+        answer: 'Ja. Treatflow unterstützt dich dabei, Behandlungen nach NiSV-Vorgaben zu dokumentieren. Du hältst Produkte, Verfahren und Ergebnisse fest – digital, geordnet und jederzeit abrufbar. Bei Kontrollen oder Nachfragen hast du alles sofort parat.',
     },
     {
-        q: 'Wie werden Fotos in der Dokumentation gespeichert?',
-        a: 'Fotos werden direkt in der Kundenakte und zur jeweiligen Behandlung gespeichert. Vorher-Nachher-Fotos, Zwischenergebnisse und Hautbilder liegen zentral beim Kundenprofil – nicht mehr verstreut auf Handy oder Kamera. Alle Daten sind verschlüsselt in der EU gespeichert.',
+        question: 'Wie werden Fotos in der Dokumentation gespeichert?',
+        answer: 'Fotos werden direkt in der Kundenakte und zur jeweiligen Behandlung gespeichert. Vorher-Nachher-Fotos, Zwischenergebnisse und Hautbilder liegen zentral beim Kundenprofil – nicht mehr verstreut auf Handy oder Kamera. Alle Daten sind verschlüsselt in der EU gespeichert.',
     },
     {
-        q: 'Kann ich die Dokumentation an meine Behandlungen anpassen?',
-        a: 'Ja. Du kannst eigene Behandlungsvorlagen anlegen, Produkte hinterlegen und Notizfelder nutzen. So dokumentierst du genau das, was für dein Studio und deine Leistungen wichtig ist.',
+        question: 'Kann ich die Dokumentation an meine Behandlungen anpassen?',
+        answer: 'Ja. Du kannst eigene Behandlungsvorlagen anlegen, Produkte hinterlegen und Notizfelder nutzen. So dokumentierst du genau das, was für dein Studio und deine Leistungen wichtig ist.',
     },
     {
-        q: 'Ist die Fotodokumentation DSGVO-konform?',
-        a: 'Ja. Alle Daten – inklusive Fotos – werden verschlüsselt in Rechenzentren in der EU gespeichert. Treatflow erfüllt die Anforderungen der DSGVO für sensible Gesundheitsdaten in Kosmetikstudios.',
+        question: 'Ist die Fotodokumentation DSGVO-konform?',
+        answer: 'Ja. Alle Daten – inklusive Fotos – werden verschlüsselt in Rechenzentren in der EU gespeichert. Treatflow erfüllt die Anforderungen der DSGVO für sensible Gesundheitsdaten in Kosmetikstudios.',
     },
     {
-        q: 'Wird die Produktverwendung mit dokumentiert?',
-        a: 'Ja. Du kannst verwendete Produkte pro Behandlung erfassen. Das unterstützt die NiSV-Konformität und gibt dir zugleich einen Überblick über den Produktverbrauch pro Kunde.',
+        question: 'Wird die Produktverwendung mit dokumentiert?',
+        answer: 'Ja. Du kannst verwendete Produkte pro Behandlung erfassen. Das unterstützt die NiSV-Konformität und gibt dir zugleich einen Überblick über den Produktverbrauch pro Kunde.',
     },
 ];
 
@@ -324,13 +326,18 @@ export default function BehandlungsdokumentationKosmetikstudioPage() {
 
             {/* FAQ */}
             <section className="py-20 bg-gray-50">
+                <Script
+                    id="faq-schema-behandlungsdoku"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+                />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Häufige Fragen</h2>
                     <div className="space-y-6">
                         {faqs.map((faq, i) => (
                             <div key={i} className="border border-gray-200 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>

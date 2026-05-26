@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
+import { generateFaqSchema } from '@/lib/schema';
 
 export type FAQItem = {
     question: string;
@@ -41,6 +42,10 @@ export default function GeoFAQ({ faqs, themeColor = 'indigo' }: GeoFAQProps) {
 
     return (
         <section className="py-16 bg-gray-50">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+            />
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <div className={`inline-flex items-center gap-2 ${theme.badge} px-4 py-2 rounded-full text-sm font-semibold mb-4`}>

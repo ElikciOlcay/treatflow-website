@@ -4,9 +4,22 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { generateFaqSchema } from '@/lib/schema';
+
+const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Nagelstudio Software' }];
+
+const faqs = [
+    { question: 'Eignet sich Treatflow für Nagelstudios?', answer: 'Ja, Treatflow eignet sich hervorragend für Nagelstudios. Online-Buchungen, Kundenverwaltung mit Nagelvorlieben und automatische Erinnerungen sind genau die Funktionen, die den Alltag im Nagelstudio erleichtern.' },
+    { question: 'Kann ich Kundenvorlieben wie Farben und Formen speichern?', answer: 'Ja, du kannst für jede Kundin individuelle Notizen, Lieblingsfarben, Nagelform und weitere Vorlieben speichern. So bist du bei jedem Termin bestens vorbereitet.' },
+    { question: 'Können meine Kundinnen online Termine buchen?', answer: 'Ja, über deinen persönlichen Buchungslink können Kundinnen rund um die Uhr buchen. Perfekt für deine Instagram-Bio oder Website.' },
+    { question: 'Funktioniert die Software für mehrere Mitarbeiter?', answer: 'Ja, du kannst mehrere Nageldesignerinnen mit eigenen Kalendern und Buchungslinks anlegen. Jede hat ihren eigenen Terminplan.' },
+    { question: 'Was kostet Treatflow?', answer: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen - ohne Kreditkarte.' },
+];
 
 export const metadata = {
     title: 'Nagelstudio Software: Termine & Verwaltung',
@@ -61,7 +74,13 @@ const stats = [
 export default function NagelstudioSoftwarePage() {
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="breadcrumb-schema-nagelstudio"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+            />
             <Navigation />
+            <Breadcrumbs items={breadcrumbItems} />
 
             <section className="pt-32 pb-20 bg-gradient-to-br from-pink-50 via-white to-fuchsia-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -192,19 +211,18 @@ export default function NagelstudioSoftwarePage() {
             </section>
 
             <section className="py-20 bg-white">
+                <Script
+                    id="faq-schema-nagelstudio"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+                />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16"><h2 className="text-4xl font-bold text-gray-900 mb-4">Häufige Fragen</h2></div>
                     <div className="space-y-6">
-                        {[
-                            { q: 'Eignet sich Treatflow für Nagelstudios?', a: 'Ja, Treatflow eignet sich hervorragend für Nagelstudios. Online-Buchungen, Kundenverwaltung mit Nagelvorlieben und automatische Erinnerungen sind genau die Funktionen, die den Alltag im Nagelstudio erleichtern.' },
-                            { q: 'Kann ich Kundenvorlieben wie Farben und Formen speichern?', a: 'Ja, du kannst für jede Kundin individuelle Notizen, Lieblingsfarben, Nagelform und weitere Vorlieben speichern. So bist du bei jedem Termin bestens vorbereitet.' },
-                            { q: 'Können meine Kundinnen online Termine buchen?', a: 'Ja, über deinen persönlichen Buchungslink können Kundinnen rund um die Uhr buchen. Perfekt für deine Instagram-Bio oder Website.' },
-                            { q: 'Funktioniert die Software für mehrere Mitarbeiter?', a: 'Ja, du kannst mehrere Nageldesignerinnen mit eigenen Kalendern und Buchungslinks anlegen. Jede hat ihren eigenen Terminplan.' },
-                            { q: 'Was kostet Treatflow?', a: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen - ohne Kreditkarte.' },
-                        ].map((faq, index) => (
+                        {faqs.map((faq, index) => (
                             <div key={index} className="border border-gray-200 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>

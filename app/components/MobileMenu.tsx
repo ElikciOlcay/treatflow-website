@@ -108,13 +108,13 @@ export default function MobileMenu() {
                         <div className="border-t border-gray-100" />
 
                         {/* Direkte Links */}
-                        <a
-                            href="/#pricing"
+                        <Link
+                            href="/preise"
                             className="block py-3 text-gray-700 font-medium hover:text-indigo-600 transition-colors"
                             onClick={() => setIsOpen(false)}
                         >
                             Preise
-                        </a>
+                        </Link>
                         <Link
                             href="/blog"
                             className="block py-3 text-gray-700 font-medium hover:text-indigo-600 transition-colors"

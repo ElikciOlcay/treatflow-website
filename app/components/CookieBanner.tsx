@@ -7,8 +7,18 @@ import Link from 'next/link';
 declare global {
     interface Window {
         gtag: (...args: any[]) => void;
+        fbq: ((...args: any[]) => void) & {
+            callMethod?: (...args: any[]) => void;
+            queue?: any[];
+            push?: any;
+            loaded?: boolean;
+            version?: string;
+        };
+        _fbq?: any;
     }
 }
+
+const META_PIXEL_ID = '796776476409381';
 
 export default function CookieBanner() {
     const [showBanner, setShowBanner] = useState(false);
@@ -21,35 +31,68 @@ export default function CookieBanner() {
     });
 
     useEffect(() => {
-        // Check if user has already made a choice
         const cookieConsent = localStorage.getItem('treatflow-cookie-consent');
         if (!cookieConsent) {
             setShowBanner(true);
         } else {
-            // Load saved preferences
             const savedPreferences = JSON.parse(cookieConsent);
             setPreferences(savedPreferences);
 
-            // Initialize Google Analytics if analytics cookies are accepted
-            if (savedPreferences.analytics) {
-                initializeGoogleAnalytics();
+            applyConsentToGoogle(savedPreferences);
+            if (savedPreferences.marketing) {
+                initializeMetaPixel();
             }
         }
     }, []);
 
-    const initializeGoogleAnalytics = () => {
-        if (typeof window !== 'undefined' && window.gtag) {
-            window.gtag('consent', 'update', {
-                analytics_storage: 'granted'
-            });
-        }
+    const applyConsentToGoogle = (prefs: typeof preferences) => {
+        if (typeof window === 'undefined' || !window.gtag) return;
+        window.gtag('consent', 'update', {
+            ad_storage: prefs.marketing ? 'granted' : 'denied',
+            ad_user_data: prefs.marketing ? 'granted' : 'denied',
+            ad_personalization: prefs.marketing ? 'granted' : 'denied',
+            analytics_storage: prefs.analytics ? 'granted' : 'denied',
+            functionality_storage: prefs.functional ? 'granted' : 'denied',
+            personalization_storage: prefs.functional ? 'granted' : 'denied',
+        });
     };
 
-    const disableGoogleAnalytics = () => {
-        if (typeof window !== 'undefined' && window.gtag) {
-            window.gtag('consent', 'update', {
-                analytics_storage: 'denied'
-            });
+    const initializeMetaPixel = () => {
+        if (typeof window === 'undefined') return;
+        const w = window as any;
+        if (w.fbq) {
+            w.fbq('consent', 'grant');
+            return;
+        }
+
+        (function (f: any, b: any, e: string, v: string) {
+            if (f.fbq) return;
+            const n: any = f.fbq = function () {
+                n.callMethod
+                    ? n.callMethod.apply(n, arguments)
+                    : n.queue.push(arguments);
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = true;
+            n.version = '2.0';
+            n.queue = [];
+            const t = b.createElement(e) as HTMLScriptElement;
+            t.async = true;
+            t.src = v;
+            const s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+        })(w, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+        w.fbq('init', META_PIXEL_ID);
+        w.fbq('track', 'PageView');
+    };
+
+    const disableMetaPixel = () => {
+        if (typeof window === 'undefined') return;
+        const w = window as any;
+        if (w.fbq) {
+            w.fbq('consent', 'revoke');
         }
     };
 
@@ -66,8 +109,8 @@ export default function CookieBanner() {
         setShowBanner(false);
         setShowSettings(false);
 
-        // Initialize analytics
-        initializeGoogleAnalytics();
+        applyConsentToGoogle(newPreferences);
+        initializeMetaPixel();
     };
 
     const handleAcceptNecessary = () => {
@@ -83,8 +126,8 @@ export default function CookieBanner() {
         setShowBanner(false);
         setShowSettings(false);
 
-        // Disable analytics
-        disableGoogleAnalytics();
+        applyConsentToGoogle(newPreferences);
+        disableMetaPixel();
     };
 
     const handleSavePreferences = () => {
@@ -92,11 +135,12 @@ export default function CookieBanner() {
         setShowBanner(false);
         setShowSettings(false);
 
-        // Update Google Analytics based on preferences
-        if (preferences.analytics) {
-            initializeGoogleAnalytics();
+        applyConsentToGoogle(preferences);
+
+        if (preferences.marketing) {
+            initializeMetaPixel();
         } else {
-            disableGoogleAnalytics();
+            disableMetaPixel();
         }
     };
 

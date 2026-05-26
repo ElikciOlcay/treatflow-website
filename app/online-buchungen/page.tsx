@@ -423,36 +423,6 @@ export default function OnlineBuchungenPage() {
                 </div>
             </section>
 
-            <section className="py-16 bg-white">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Welches Online-Buchungssystem eignet sich für Kosmetikstudios?</h2>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                        Für Kosmetikstudios eignet sich ein Online-Buchungssystem, das einen persönlichen Buchungslink, Echtzeit-Abgleich mit dem Kalender, automatische Erinnerungen per E-Mail und SMS sowie Self-Service für Kunden vereint. So buchen Gäste rund um die Uhr, ohne dass du jeden Anruf entgegennehmen musst. Treatflow bündelt genau diese Bausteine. Mehr zur Terminplanung und zum Kalender findest du im{' '}
-                        <Link href="/terminkalender" className="text-indigo-600 font-medium hover:underline">Terminkalender</Link>.
-                    </p>
-                </div>
-            </section>
-
-            <section className="py-16 bg-gray-50">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Was kostet ein Online-Buchungssystem für Kosmetikstudios?</h2>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                        Am Markt gibt es kostenlose Marktplatz-Angebote mit Provision pro Buchung sowie Flatrate-Tarife oft zwischen 39 und 59 Euro monatlich ohne Provision. Treatflow im Booking-Plan kostet 59 Euro pro Monat, komplett ohne Buchungsprovision. Transparente Übersicht, Pakete und Leistungen findest du auf der{' '}
-                        <Link href="/preise" className="text-indigo-600 font-medium hover:underline">Preisseite</Link>.
-                    </p>
-                </div>
-            </section>
-
-            <section className="py-16 bg-white">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Wie richte ich Online-Buchungen für mein Studio ein?</h2>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                        So gehst du vor: 1) Account anlegen und Behandlungen mit Dauer und Preis eintragen. 2) Verfügbarkeiten und Arbeitszeiten im Kalender festlegen. 3) Deinen persönlichen Buchungslink teilen, etwa auf Instagram oder der Website. Die Einrichtung schaffst du in der Regel in unter zehn Minuten. Direkt loslegen kannst du über die{' '}
-                        <a href="https://app.treatflow.io/auth/register" target="_blank" rel="noopener noreferrer" className="text-indigo-600 font-medium hover:underline">Registrierung bei Treatflow</a>.
-                    </p>
-                </div>
-            </section>
-
             {/* Verwandte Seiten / Cluster-Verlinkung */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

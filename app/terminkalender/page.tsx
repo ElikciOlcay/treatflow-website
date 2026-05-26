@@ -356,37 +356,6 @@ export default function TerminkalenderPage() {
                 </div>
             </section>
 
-            <section className="py-16 bg-white">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Wie organisiere ich Termine im Kosmetikstudio am besten?</h2>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                        Am besten organisierst du Termine mit einem digitalen Kalender: Tages-, Wochen- und Monatsansichten geben dir Überblick, Kundinnen und Kunden buchen rund um die Uhr online über einen Buchungslink, und automatische SMS-Erinnerungen sichern Termine ab. So ersetzt du Papier-Terminbücher durch eine zentrale, übersichtliche Lösung. Mehr zu{' '}
-                        <Link href="/online-buchungen" className="text-indigo-600 font-medium hover:underline">Online-Buchungen</Link>
-                        {' '}und wie sie in deinen Alltag passen.
-                    </p>
-                </div>
-            </section>
-            <section className="py-16 bg-gray-50">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Was kostet eine Terminsoftware für Kosmetikstudios?</h2>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                        Die Kosten für Terminsoftware liegen je nach Anbieter und Umfang zwischen kostenlosen Basis-Tools und etwa 30 bis 80 Euro pro Monat für professionelle Lösungen. Der Treatflow-Booking-Plan kostet 59 Euro monatlich und umfasst Kalender, Online-Buchung und SMS-Erinnerungen. Alle Tarife und Leistungen findest du auf der Seite{' '}
-                        <Link href="/preise" className="text-indigo-600 font-medium hover:underline">Preise</Link>
-                        .
-                    </p>
-                </div>
-            </section>
-            <section className="py-16 bg-white">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Wie reduziere ich No-Shows im Kosmetikstudio?</h2>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                        Automatische SMS- und E-Mail-Erinnerungen etwa 24 Stunden und 2 Stunden vor dem Termin reduzieren No-Shows in der Praxis oft um bis zu 80 Prozent. In Kombination mit der Bestätigung bei der Online-Buchung bleiben Termine verbindlicher. Wie du Erinnerungen und Nachrichten automatisiert steuerst, erfährst du unter{' '}
-                        <Link href="/nachrichtenautomatisierung" className="text-indigo-600 font-medium hover:underline">Nachrichtenautomatisierung</Link>
-                        .
-                    </p>
-                </div>
-            </section>
-
             {/* Verwandte Seiten / Cluster-Verlinkung */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

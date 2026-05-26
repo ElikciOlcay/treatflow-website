@@ -132,7 +132,7 @@ export default function Navigation() {
                             </div>
                         </div>
 
-                        <Link href="/#pricing" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Preise</Link>
+                        <Link href="/preise" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Preise</Link>
                         <Link href="/blog" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Blog</Link>
                         <Link href="/#testimonials" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Referenzen</Link>
                         <Link href="/kontakt" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Kontakt</Link>

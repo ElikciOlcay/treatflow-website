@@ -4,9 +4,37 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { generateFaqSchema } from '@/lib/schema';
+
+const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Laser & IPL Software' }];
+
+const faqs = [
+    {
+        question: 'Erfüllt Treatflow die NiSV-Dokumentationspflicht?',
+        answer: 'Ja, Treatflow unterstützt die NiSV-konforme Dokumentation von Laserbehandlungen. Du kannst Behandlungsparameter, Zonen, Ergebnisse und Kundeninformationen lückenlos digital dokumentieren.',
+    },
+    {
+        question: 'Kann ich Behandlungsserien verwalten?',
+        answer: 'Ja, du kannst mehrteilige Behandlungsserien anlegen und den Fortschritt deiner Kunden über alle Sitzungen verfolgen. Folgetermine werden automatisch geplant.',
+    },
+    {
+        question: 'Können Kunden digital einwilligen?',
+        answer: 'Ja, deine Kunden können Aufklärungsbögen und Einwilligungen digital mit elektronischer Unterschrift ausfüllen - wahlweise vorab per Link oder am Tablet im Studio.',
+    },
+    {
+        question: 'Kann ich Vorher-Nachher Fotos speichern?',
+        answer: 'Ja, du kannst bei jeder Sitzung Fotos der Behandlungszonen dokumentieren. So können du und deine Kunden den Fortschritt über die gesamte Behandlungsserie nachvollziehen.',
+    },
+    {
+        question: 'Ist die Software auch für IPL-Behandlungen geeignet?',
+        answer: 'Absolut. Treatflow eignet sich für alle Formen der dauerhaften Haarentfernung - ob Diodenlaser, Alexandritlaser, Nd:YAG oder IPL. Die Dokumentation ist flexibel anpassbar.',
+    },
+];
 
 export const metadata = {
     title: 'Software für Laser Haarentfernung & NiSV-Doku',
@@ -120,7 +148,13 @@ const stats = [
 export default function LaserHaarentfernungSoftwarePage() {
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="breadcrumb-schema-laser"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+            />
             <Navigation />
+            <Breadcrumbs items={breadcrumbItems} />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
@@ -377,6 +411,11 @@ export default function LaserHaarentfernungSoftwarePage() {
 
             {/* FAQ Section */}
             <section className="py-20 bg-white">
+                <Script
+                    id="faq-schema-laser"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+                />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -385,31 +424,10 @@ export default function LaserHaarentfernungSoftwarePage() {
                     </div>
 
                     <div className="space-y-6">
-                        {[
-                            {
-                                q: 'Erfüllt Treatflow die NiSV-Dokumentationspflicht?',
-                                a: 'Ja, Treatflow unterstützt die NiSV-konforme Dokumentation von Laserbehandlungen. Du kannst Behandlungsparameter, Zonen, Ergebnisse und Kundeninformationen lückenlos digital dokumentieren.',
-                            },
-                            {
-                                q: 'Kann ich Behandlungsserien verwalten?',
-                                a: 'Ja, du kannst mehrteilige Behandlungsserien anlegen und den Fortschritt deiner Kunden über alle Sitzungen verfolgen. Folgetermine werden automatisch geplant.',
-                            },
-                            {
-                                q: 'Können Kunden digital einwilligen?',
-                                a: 'Ja, deine Kunden können Aufklärungsbögen und Einwilligungen digital mit elektronischer Unterschrift ausfüllen - wahlweise vorab per Link oder am Tablet im Studio.',
-                            },
-                            {
-                                q: 'Kann ich Vorher-Nachher Fotos speichern?',
-                                a: 'Ja, du kannst bei jeder Sitzung Fotos der Behandlungszonen dokumentieren. So können du und deine Kunden den Fortschritt über die gesamte Behandlungsserie nachvollziehen.',
-                            },
-                            {
-                                q: 'Ist die Software auch für IPL-Behandlungen geeignet?',
-                                a: 'Absolut. Treatflow eignet sich für alle Formen der dauerhaften Haarentfernung - ob Diodenlaser, Alexandritlaser, Nd:YAG oder IPL. Die Dokumentation ist flexibel anpassbar.',
-                            },
-                        ].map((faq, index) => (
+                        {faqs.map((faq, index) => (
                             <div key={index} className="border border-gray-200 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>

@@ -2,8 +2,10 @@ import {
   Calendar, Users, FileText, Shield, Bell, ArrowRight, MapPin,
   ClipboardCheck, CheckCircle
 } from 'lucide-react';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import { generateFaqSchema } from '@/lib/schema';
 
 export const metadata = {
   title: 'Kosmetikstudio Software Berlin: Termine & mehr',
@@ -27,10 +29,10 @@ const features = [
 ];
 
 const faqs = [
-  { q: 'Eignet sich Treatflow für Kosmetikstudios in Berlin?', a: 'Ja. Treatflow wird bereits von Studios in Mitte, Charlottenburg, Prenzlauer Berg und ganz Berlin genutzt. Die Software ist für den Berliner Markt mit seiner hohen Nachfrage nach Online-Buchungen und effizientem Betrieb optimiert.' },
-  { q: 'Unterstützt Treatflow mehrsprachige Kunden?', a: 'Ja. Berlin hat eine internationale Kundschaft. Treatflow ermöglicht flexible Formulare und Kommunikation, sodass du mehrsprachige Kunden unkompliziert betreuen kannst.' },
-  { q: 'Ist Treatflow NiSV-konform für Deutschland?', a: 'Ja. Treatflow erfüllt die NiSV-Dokumentationsanforderungen für Deutschland. Du kannst Behandlungen mit Geräten, Parametern und Zonen NiSV-konform dokumentieren.' },
-  { q: 'Was kostet Treatflow?', a: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen – ohne Kreditkarte und ohne versteckte Kosten.' },
+  { question: 'Eignet sich Treatflow für Kosmetikstudios in Berlin?', answer: 'Ja. Treatflow wird bereits von Studios in Mitte, Charlottenburg, Prenzlauer Berg und ganz Berlin genutzt. Die Software ist für den Berliner Markt mit seiner hohen Nachfrage nach Online-Buchungen und effizientem Betrieb optimiert.' },
+  { question: 'Unterstützt Treatflow mehrsprachige Kunden?', answer: 'Ja. Berlin hat eine internationale Kundschaft. Treatflow ermöglicht flexible Formulare und Kommunikation, sodass du mehrsprachige Kunden unkompliziert betreuen kannst.' },
+  { question: 'Ist Treatflow NiSV-konform für Deutschland?', answer: 'Ja. Treatflow erfüllt die NiSV-Dokumentationsanforderungen für Deutschland. Du kannst Behandlungen mit Geräten, Parametern und Zonen NiSV-konform dokumentieren.' },
+  { question: 'Was kostet Treatflow?', answer: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen – ohne Kreditkarte und ohne versteckte Kosten.' },
 ];
 
 export default function KosmetikstudioSoftwareBerlinPage() {
@@ -123,13 +125,18 @@ export default function KosmetikstudioSoftwareBerlinPage() {
       </section>
 
       <section className="py-16 bg-gray-50">
+        <Script
+          id="faq-schema-berlin"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+        />
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Häufige Fragen – Berlin</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <div key={i} className="bg-white border border-gray-200 rounded-2xl p-6">
-                <h3 className="font-semibold text-gray-900 mb-2">{faq.q}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+                <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>

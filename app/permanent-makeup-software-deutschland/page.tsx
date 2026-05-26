@@ -2,8 +2,10 @@ import {
     Calendar, Users, FileText, Shield, Bell, ArrowRight, Palette,
     ClipboardCheck, Camera, CheckCircle
 } from 'lucide-react';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import { generateFaqSchema } from '@/lib/schema';
 
 export const metadata = {
     title: 'Permanent Makeup Software Deutschland: PMU',
@@ -27,10 +29,10 @@ const features = [
 ];
 
 const faqs = [
-    { q: 'Wie dokumentiere ich PMU-Behandlungen mit Treatflow?', a: 'Bei jeder Behandlung kannst du Fotos hochladen, verwendete Farben und Techniken erfassen sowie Notizen hinzufügen. Die Vorher-Nachher Dokumentation ist ideal für Nachstiche und dein Portfolio.' },
-    { q: 'Sind digitale Einwilligungsformulare für PMU rechtlich gültig?', a: 'Ja. Digitale Aufklärungs- und Einwilligungsbögen mit elektronischer Unterschrift sind in Deutschland rechtlich anerkannt. Deine Kunden können vor oder im Termin digital unterschreiben.' },
-    { q: 'Kann ich ein Fotoportfolio mit Treatflow führen?', a: 'Ja. Du speicherst Fotos bei jeder Behandlung und kannst diese pro Kunde und pro Sitzung abrufen. Ideal für Vorher-Nachher Vergleiche und deine Portfolio-Arbeit.' },
-    { q: 'Was kostet Treatflow für PMU-Studios?', a: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen – ohne Kreditkarte und ohne versteckte Kosten.' },
+    { question: 'Wie dokumentiere ich PMU-Behandlungen mit Treatflow?', answer: 'Bei jeder Behandlung kannst du Fotos hochladen, verwendete Farben und Techniken erfassen sowie Notizen hinzufügen. Die Vorher-Nachher Dokumentation ist ideal für Nachstiche und dein Portfolio.' },
+    { question: 'Sind digitale Einwilligungsformulare für PMU rechtlich gültig?', answer: 'Ja. Digitale Aufklärungs- und Einwilligungsbögen mit elektronischer Unterschrift sind in Deutschland rechtlich anerkannt. Deine Kunden können vor oder im Termin digital unterschreiben.' },
+    { question: 'Kann ich ein Fotoportfolio mit Treatflow führen?', answer: 'Ja. Du speicherst Fotos bei jeder Behandlung und kannst diese pro Kunde und pro Sitzung abrufen. Ideal für Vorher-Nachher Vergleiche und deine Portfolio-Arbeit.' },
+    { question: 'Was kostet Treatflow für PMU-Studios?', answer: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen – ohne Kreditkarte und ohne versteckte Kosten.' },
 ];
 
 export default function PermanentMakeupSoftwareDeutschlandPage() {
@@ -123,13 +125,18 @@ export default function PermanentMakeupSoftwareDeutschlandPage() {
             </section>
 
             <section className="py-16 bg-gray-50">
+                <Script
+                    id="faq-schema-pmu-de"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+                />
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Häufige Fragen – PMU Deutschland</h2>
                     <div className="space-y-4">
                         {faqs.map((faq, i) => (
                             <div key={i} className="bg-white border border-gray-200 rounded-2xl p-6">
-                                <h3 className="font-semibold text-gray-900 mb-2">{faq.q}</h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+                                <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
+                                <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>

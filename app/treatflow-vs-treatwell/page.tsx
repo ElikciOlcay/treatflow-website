@@ -2,6 +2,7 @@ import { CheckCircle, X, ArrowRight, AlertTriangle, Shield, Users, FileText, Sta
 import Link from 'next/link';
 import Script from 'next/script';
 import Navigation from '../components/Navigation';
+import QuickFacts from '../components/QuickFacts';
 import FAQSection from './FAQSection';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
@@ -611,6 +612,8 @@ export default function TreatflowVsTreatwell() {
             </div>
           </div>
         </section>
+
+        <QuickFacts variant="compact" />
 
         <FAQSection />
 

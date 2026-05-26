@@ -4,9 +4,21 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { generateFaqSchema } from '@/lib/schema';
+
+const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Spa & Wellness Software' }];
+
+const faqs = [
+    { question: 'Eignet sich Treatflow für Day Spas und Wellness-Studios?', answer: 'Ja, Treatflow eignet sich für Day Spas, Wellness-Studios und Wellness-Hotels. Von der Online-Buchung bis zur Gästeverwaltung - alle Funktionen sind auf den Spa-Alltag zugeschnitten.' },
+    { question: 'Kann ich mehrere Therapeuten verwalten?', answer: 'Ja, jeder Therapeut erhält einen eigenen Kalender und kann eigene Behandlungen anbieten. Du behältst den Überblick über alle Termine.' },
+    { question: 'Können Gäste Gesundheitsfragebögen vorab ausfüllen?', answer: 'Ja, du kannst deinen Gästen einen Link senden. Sie füllen den Fragebogen bequem vorab aus - das spart Zeit vor Ort.' },
+    { question: 'Wie funktioniert die Online-Buchung?', answer: 'Gäste wählen Behandlung, Therapeut und Wunschtermin über deinen Buchungslink. Das System zeigt nur verfügbare Zeiten an und verhindert Doppelbuchungen.' },
+];
 
 export const metadata = {
     title: 'Spa & Wellness Software: Termine & Verwaltung',
@@ -61,7 +73,13 @@ const stats = [
 export default function SpaWellnessSoftwarePage() {
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="breadcrumb-schema-spa"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+            />
             <Navigation />
+            <Breadcrumbs items={breadcrumbItems} />
 
             <section className="pt-32 pb-20 bg-gradient-to-br from-cyan-50 via-white to-sky-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,16 +188,16 @@ export default function SpaWellnessSoftwarePage() {
             </section>
 
             <section className="py-20 bg-white">
+                <Script
+                    id="faq-schema-spa"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+                />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16"><h2 className="text-4xl font-bold text-gray-900 mb-4">Häufige Fragen</h2></div>
                     <div className="space-y-6">
-                        {[
-                            { q: 'Eignet sich Treatflow für Day Spas und Wellness-Studios?', a: 'Ja, Treatflow eignet sich für Day Spas, Wellness-Studios und Wellness-Hotels. Von der Online-Buchung bis zur Gästeverwaltung - alle Funktionen sind auf den Spa-Alltag zugeschnitten.' },
-                            { q: 'Kann ich mehrere Therapeuten verwalten?', a: 'Ja, jeder Therapeut erhält einen eigenen Kalender und kann eigene Behandlungen anbieten. Du behältst den Überblick über alle Termine.' },
-                            { q: 'Können Gäste Gesundheitsfragebögen vorab ausfüllen?', a: 'Ja, du kannst deinen Gästen einen Link senden. Sie füllen den Fragebogen bequem vorab aus - das spart Zeit vor Ort.' },
-                            { q: 'Wie funktioniert die Online-Buchung?', a: 'Gäste wählen Behandlung, Therapeut und Wunschtermin über deinen Buchungslink. Das System zeigt nur verfügbare Zeiten an und verhindert Doppelbuchungen.' },
-                        ].map((faq, i) => (
-                            <div key={i} className="border border-gray-200 rounded-xl p-6"><h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3><p className="text-gray-600 leading-relaxed">{faq.a}</p></div>
+                        {faqs.map((faq, i) => (
+                            <div key={i} className="border border-gray-200 rounded-xl p-6"><h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3><p className="text-gray-600 leading-relaxed">{faq.answer}</p></div>
                         ))}
                     </div>
                 </div>

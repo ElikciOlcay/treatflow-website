@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Script from 'next/script';
 import {
   ArrowRight,
   Bell,
@@ -12,6 +13,9 @@ import {
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+
+const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Schönheitssalon Software' }];
 
 export const metadata: Metadata = {
   title: 'Schönheitssalon Software für Kosmetikinstitut',
@@ -39,7 +43,13 @@ export const metadata: Metadata = {
 export default function SchoenheitssalonSoftwarePage() {
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="breadcrumb-schema-schoenheit"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+      />
       <Navigation />
+      <Breadcrumbs items={breadcrumbItems} />
 
       <section className="pt-32 pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

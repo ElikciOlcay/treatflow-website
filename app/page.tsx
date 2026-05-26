@@ -23,6 +23,7 @@ import AlwaysWithYou from "./components/AlwaysWithYou";
 import PricingSection from "./components/PricingSection";
 import FAQSection from "./components/FAQSection";
 import TestimonialsSection from "./components/TestimonialsSection";
+import QuickFacts from "./components/QuickFacts";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
@@ -454,6 +455,7 @@ export default function Home() {
         </section>
 
         <BenefitStats />
+        <QuickFacts />
         <AlwaysWithYou />
 
         <PricingSection />

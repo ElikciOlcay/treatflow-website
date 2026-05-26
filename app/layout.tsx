@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import CookieBanner from "./components/CookieBanner";
@@ -19,7 +19,13 @@ export const metadata: Metadata = {
     template: "%s | Treatflow"
   },
   description: "Verwalte Terminkalender, Online-Buchungen, Kundenkartei und Behandlungsdoku – DSGVO-konform, 14 Tage kostenlos testen. Ideal für dein Studio.",
-  keywords: ["Kosmetikstudio Software", "Software für Kosmetikstudio", "Software Kosmetikstudio", "Software Kosmetik", "Kundenkartei Kosmetik", "digitale Kundenkartei Kosmetik", "Terminverwaltung Kosmetik", "Terminplaner App Kosmetikstudio", "Online Buchungssystem", "Online Terminbuchung Kosmetik", "Terminbuchungssoftware Kosmetik", "Kundenverwaltung Beauty", "Behandlungsdokumentation", "Behandlungsdokumentation Software Kosmetik", "NiSV konform", "NiSV Dokumentation Software", "NiSV konform dokumentieren", "NiSV Beratungsprotokoll Vorlage", "Anamnese Software Kosmetik", "Einverständniserklärung Kosmetik", "Kosmetik Praxissoftware", "Beste Kosmetikstudio Software", "Kosmetikstudio Software Vergleich", "Kosmetikstudio Software Test", "Kosmetikstudio Software Preis", "Kosmetikstudio Software DSGVO konform", "All-in-One Software Kosmetikstudio", "DSGVO konform Kosmetikstudio", "Beauty Salon Software", "Made in Austria"],
+  keywords: [
+    "Kosmetikstudio Software",
+    "Beauty Studio Software",
+    "Online Buchungssystem Kosmetik",
+    "Digitale Kundenkartei",
+    "NiSV Dokumentation",
+  ],
   authors: [{ name: "Treatflow Team" }],
   creator: "Treatflow",
   publisher: "Treatflow",
@@ -60,9 +66,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.treatflow.io',
   },
+  icons: {
+    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+    apple: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+  },
+  manifest: '/manifest.json',
   other: {
     'google-site-verification': 'fB1kQag5y2XvmoHzg6-NG4dFb5qUF47LMa0BDMQHisc',
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#4f46e5',
 };
 
 const organizationWebSiteSchema = {
@@ -114,7 +131,29 @@ export default function RootLayout({
   return (
     <html lang="de" dir="ltr">
       <head>
-        {/* Google Tag Manager */}
+        {/* Consent Mode v2 Defaults - muss VOR GTM laden, damit GTM-Tags die
+            Consent-Signale korrekt respektieren. GA4 wird ausschliesslich
+            ueber den GTM-Container (GTM-KK359VS8) konfiguriert, kein zweiter
+            gtag.js-Loader mehr (verhindert Doppel-PageViews). */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('consent', 'default', {
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              analytics_storage: 'denied',
+              functionality_storage: 'denied',
+              personalization_storage: 'denied',
+              security_storage: 'granted',
+              wait_for_update: 500
+            });
+            gtag('js', new Date());
+          `}
+        </Script>
+
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -122,38 +161,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KK359VS8');`}
         </Script>
-        {/* End Google Tag Manager */}
-        
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#4f46e5" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
+
         <link rel="alternate" type="application/rss+xml" title="Treatflow Blog RSS Feed" href="/blog/feed.xml" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationWebSiteSchema) }}
         />
-        {/* Google tag (gtag.js) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-SPCW9Q0HY6"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            
-            // Initialize with denied consent by default (GDPR compliance)
-            gtag('consent', 'default', {
-              analytics_storage: 'denied'
-            });
-            
-            gtag('config', 'G-SPCW9Q0HY6');
-          `}
-        </Script>
       </head>
       <body
         className={`${inter.variable} font-sans antialiased`}
@@ -172,31 +185,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {children}
         <StickyMobileCTA />
         <CookieBanner />
-
-        {/* Meta Pixel Code */}
-        <Script id="meta-pixel" strategy="afterInteractive">
-          {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '796776476409381');
-            fbq('track', 'PageView');
-          `}
-        </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=796776476409381&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
       </body>
     </html>
   );

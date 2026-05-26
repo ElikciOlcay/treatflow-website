@@ -61,7 +61,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Produkt</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/#pricing" className="text-gray-400 hover:text-white transition-colors">Preise</a></li>
+              <li><Link href="/preise" className="text-gray-400 hover:text-white transition-colors">Preise</Link></li>
               <li><Link href="/kosmetikstudio-software-vergleich" className="text-gray-400 hover:text-white transition-colors">Software-Vergleich</Link></li>
               <li><Link href="/treatflow-vs-treatwell" className="text-gray-400 hover:text-white transition-colors">Treatflow vs. Treatwell</Link></li>
               <li><Link href="/kundenkartei-software" className="text-gray-400 hover:text-white transition-colors">Kundenkartei Software</Link></li>
@@ -117,9 +117,6 @@ export default function Footer() {
           </div>
           <div className="text-center text-gray-400 text-sm">
             <p>&copy; {new Date().getFullYear()} Treatflow. Alle Rechte vorbehalten.</p>
-            <span className="mt-2 block text-[12px] text-gray-500 opacity-60">
-              eUOZTb
-            </span>
           </div>
         </div>
       </div>

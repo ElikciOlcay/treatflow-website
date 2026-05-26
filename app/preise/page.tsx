@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import CTASection from '../components/CTASection';
 import PricingSection from '../components/PricingSection';
+import QuickFacts from '../components/QuickFacts';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 export const metadata = {
@@ -210,6 +211,8 @@ export default function PreisePage() {
                     </div>
                 </div>
             </section>
+
+            <QuickFacts variant="compact" />
 
             {/* FAQ Section */}
             <section className="py-20 bg-gray-50">

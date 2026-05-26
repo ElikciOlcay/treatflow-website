@@ -4,9 +4,21 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { generateFaqSchema } from '@/lib/schema';
+
+const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Lash Studio Software' }];
+
+const faqs = [
+    { question: 'Eignet sich Treatflow für Wimpernverlängerung und Lash Lifting?', answer: 'Ja, Treatflow eignet sich für alle Wimpernbehandlungen - Wimpernverlängerung, Volume Lashes, Lash Lifting, Wimpernfärben und mehr. Formulare und Dokumentation sind flexibel anpassbar.' },
+    { question: 'Kann ich Wimpern-Details pro Kundin speichern?', answer: 'Ja, du kannst Wimpernlänge, Biegung, Kleber-Typ und weitere Details pro Kundin speichern. So bist du beim Refill sofort vorbereitet.' },
+    { question: 'Können Kundinnen über Instagram buchen?', answer: 'Ja, du erhältst einen persönlichen Buchungslink, den du in deine Instagram-Bio, auf deine Website oder per WhatsApp teilen kannst.' },
+    { question: 'Erinnert das System an Refill-Termine?', answer: 'Ja, du kannst automatische Nachrichten konfigurieren, die Kundinnen nach der Behandlung an den nächsten Refill erinnern.' },
+];
 
 export const metadata = {
     title: 'Lash Studio Software: Termine & Einwilligungen',
@@ -61,7 +73,13 @@ const stats = [
 export default function LashStudioSoftwarePage() {
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="breadcrumb-schema-lash"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+            />
             <Navigation />
+            <Breadcrumbs items={breadcrumbItems} />
 
             <section className="pt-32 pb-20 bg-gradient-to-br from-violet-50 via-white to-purple-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,16 +188,16 @@ export default function LashStudioSoftwarePage() {
             </section>
 
             <section className="py-20 bg-white">
+                <Script
+                    id="faq-schema-lash"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+                />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16"><h2 className="text-4xl font-bold text-gray-900 mb-4">Häufige Fragen</h2></div>
                     <div className="space-y-6">
-                        {[
-                            { q: 'Eignet sich Treatflow für Wimpernverlängerung und Lash Lifting?', a: 'Ja, Treatflow eignet sich für alle Wimpernbehandlungen - Wimpernverlängerung, Volume Lashes, Lash Lifting, Wimpernfärben und mehr. Formulare und Dokumentation sind flexibel anpassbar.' },
-                            { q: 'Kann ich Wimpern-Details pro Kundin speichern?', a: 'Ja, du kannst Wimpernlänge, Biegung, Kleber-Typ und weitere Details pro Kundin speichern. So bist du beim Refill sofort vorbereitet.' },
-                            { q: 'Können Kundinnen über Instagram buchen?', a: 'Ja, du erhältst einen persönlichen Buchungslink, den du in deine Instagram-Bio, auf deine Website oder per WhatsApp teilen kannst.' },
-                            { q: 'Erinnert das System an Refill-Termine?', a: 'Ja, du kannst automatische Nachrichten konfigurieren, die Kundinnen nach der Behandlung an den nächsten Refill erinnern.' },
-                        ].map((faq, i) => (
-                            <div key={i} className="border border-gray-200 rounded-xl p-6"><h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3><p className="text-gray-600 leading-relaxed">{faq.a}</p></div>
+                        {faqs.map((faq, i) => (
+                            <div key={i} className="border border-gray-200 rounded-xl p-6"><h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3><p className="text-gray-600 leading-relaxed">{faq.answer}</p></div>
                         ))}
                     </div>
                 </div>

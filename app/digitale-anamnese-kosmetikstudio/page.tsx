@@ -4,9 +4,11 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import { generateFaqSchema } from '@/lib/schema';
 
 const clusterLinks = [
     { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', description: 'Die All-in-One Lösung für dein Studio' },
@@ -101,20 +103,20 @@ const stats = [
 
 const faqs = [
     {
-        q: 'Wie funktioniert die digitale Anamnese?',
-        a: 'Du erstellst deine Anamnesebögen und Einwilligungen in Treatflow. Bei der Terminbuchung oder per E-Mail erhalten Kunden einen Link zum Ausfüllen. Sie füllen alles digital aus, unterschreiben elektronisch – und du siehst die Daten direkt im Kundenprofil. Kein Papier, keine Wartezeit im Studio.',
+        question: 'Wie funktioniert die digitale Anamnese?',
+        answer: 'Du erstellst deine Anamnesebögen und Einwilligungen in Treatflow. Bei der Terminbuchung oder per E-Mail erhalten Kunden einen Link zum Ausfüllen. Sie füllen alles digital aus, unterschreiben elektronisch – und du siehst die Daten direkt im Kundenprofil. Kein Papier, keine Wartezeit im Studio.',
     },
     {
-        q: 'Wie erleben Kunden das Ausfüllen?',
-        a: 'Kunden erhalten einen klaren Link, den sie auf Smartphone, Tablet oder Laptop öffnen können. Die Formulare sind übersichtlich und schnell ausgefüllt. Die elektronische Unterschrift erfolgt mit wenigen Klicks. Viele Kunden schätzen es, dies in Ruhe zu Hause zu erledigen, statt im Studio zu warten.',
+        question: 'Wie erleben Kunden das Ausfüllen?',
+        answer: 'Kunden erhalten einen klaren Link, den sie auf Smartphone, Tablet oder Laptop öffnen können. Die Formulare sind übersichtlich und schnell ausgefüllt. Die elektronische Unterschrift erfolgt mit wenigen Klicks. Viele Kunden schätzen es, dies in Ruhe zu Hause zu erledigen, statt im Studio zu warten.',
     },
     {
-        q: 'Kann ich die Formulare anpassen?',
-        a: 'Ja. Du kannst eigene Anamnesebögen und Einwilligungen anlegen oder Vorlagen aus unserem Shop nutzen. Texte, Fragen und Reihenfolge sind frei anpassbar – genau angepasst auf dein Studio und deine Behandlungen.',
+        question: 'Kann ich die Formulare anpassen?',
+        answer: 'Ja. Du kannst eigene Anamnesebögen und Einwilligungen anlegen oder Vorlagen aus unserem Shop nutzen. Texte, Fragen und Reihenfolge sind frei anpassbar – genau angepasst auf dein Studio und deine Behandlungen.',
     },
     {
-        q: 'Ist die digitale Anamnese DSGVO-konform?',
-        a: 'Ja. Alle Daten werden verschlüsselt in Rechenzentren in der EU gespeichert. Die Speicherdauer und der Zugriff sind kontrollierbar. Treatflow erfüllt die Anforderungen der DSGVO für sensible Gesundheitsdaten in Kosmetikstudios.',
+        question: 'Ist die digitale Anamnese DSGVO-konform?',
+        answer: 'Ja. Alle Daten werden verschlüsselt in Rechenzentren in der EU gespeichert. Die Speicherdauer und der Zugriff sind kontrollierbar. Treatflow erfüllt die Anforderungen der DSGVO für sensible Gesundheitsdaten in Kosmetikstudios.',
     },
 ];
 
@@ -321,13 +323,18 @@ export default function DigitaleAnamneseKosmetikstudioPage() {
 
             {/* FAQ */}
             <section className="py-20 bg-gray-50">
+                <Script
+                    id="faq-schema-anamnese"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+                />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Häufige Fragen</h2>
                     <div className="space-y-6">
                         {faqs.map((faq, i) => (
                             <div key={i} className="border border-gray-200 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>

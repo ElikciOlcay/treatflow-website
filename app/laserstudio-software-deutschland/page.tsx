@@ -2,8 +2,10 @@ import {
   Calendar, Users, FileText, Shield, Bell, ArrowRight, Zap,
   ClipboardCheck, Settings, CheckCircle
 } from 'lucide-react';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import { generateFaqSchema } from '@/lib/schema';
 
 export const metadata = {
   title: 'Laserstudio Software Deutschland: NiSV-konform',
@@ -27,10 +29,10 @@ const features = [
 ];
 
 const faqs = [
-  { q: 'Erfüllt Treatflow die NiSV-Anforderungen in Deutschland?', a: 'Ja. Seit 2021 gilt die NiSV mit Dokumentationspflicht für Laserbehandlungen. Treatflow unterstützt die erforderliche Dokumentation von Geräten, Parametern, Behandlungszonen und Ergebnissen – NiSV-konform und digital.' },
-  { q: 'Kann ich Laser-Parameter dokumentieren?', a: 'Ja. Du kannst Wellenlänge, Energie, Spot-Größe, Anzahl der Durchgänge und andere relevante Parameter pro Behandlung erfassen und speichern.' },
-  { q: 'Sind digitale Einwilligungen rechtlich gültig?', a: 'Ja. Digitale Aufklärungs- und Einwilligungsbögen mit elektronischer Unterschrift sind in Deutschland rechtlich anerkannt, sofern sie ordnungsgemäß ausgefüllt und gespeichert werden.' },
-  { q: 'Unterstützt Treatflow IPL-Behandlungen?', a: 'Ja. Treatflow eignet sich für Laser- und IPL-Behandlungen. Du dokumentierst Gerät, Parameter und Zonen für beide Verfahren.' },
+  { question: 'Erfüllt Treatflow die NiSV-Anforderungen in Deutschland?', answer: 'Ja. Seit 2021 gilt die NiSV mit Dokumentationspflicht für Laserbehandlungen. Treatflow unterstützt die erforderliche Dokumentation von Geräten, Parametern, Behandlungszonen und Ergebnissen – NiSV-konform und digital.' },
+  { question: 'Kann ich Laser-Parameter dokumentieren?', answer: 'Ja. Du kannst Wellenlänge, Energie, Spot-Größe, Anzahl der Durchgänge und andere relevante Parameter pro Behandlung erfassen und speichern.' },
+  { question: 'Sind digitale Einwilligungen rechtlich gültig?', answer: 'Ja. Digitale Aufklärungs- und Einwilligungsbögen mit elektronischer Unterschrift sind in Deutschland rechtlich anerkannt, sofern sie ordnungsgemäß ausgefüllt und gespeichert werden.' },
+  { question: 'Unterstützt Treatflow IPL-Behandlungen?', answer: 'Ja. Treatflow eignet sich für Laser- und IPL-Behandlungen. Du dokumentierst Gerät, Parameter und Zonen für beide Verfahren.' },
 ];
 
 export default function LaserstudioSoftwareDeutschlandPage() {
@@ -124,13 +126,18 @@ export default function LaserstudioSoftwareDeutschlandPage() {
       </section>
 
       <section className="py-16 bg-gray-50">
+        <Script
+          id="faq-schema-laser-de"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+        />
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Häufige Fragen – Laser Studio DE</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <div key={i} className="bg-white border border-gray-200 rounded-2xl p-6">
-                <h3 className="font-semibold text-gray-900 mb-2">{faq.q}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+                <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>

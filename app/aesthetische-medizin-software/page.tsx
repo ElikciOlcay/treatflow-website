@@ -4,9 +4,37 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { generateFaqSchema } from '@/lib/schema';
+
+const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Ästhetische Medizin Software' }];
+
+const faqs = [
+    {
+        question: 'Ist Treatflow für medizinisch-ästhetische Behandlungen geeignet?',
+        answer: 'Ja, Treatflow unterstützt die Dokumentation von Botox, Fillern, Mesotherapie, PRP und weiteren ästhetischen Behandlungen. Die Formulare sind flexibel anpassbar.',
+    },
+    {
+        question: 'Kann ich Chargennummern von Produkten dokumentieren?',
+        answer: 'Ja, du kannst bei jeder Behandlung die verwendeten Produkte mit Chargennummern und Dosierungen dokumentieren. So ist die Rückverfolgbarkeit jederzeit gewährleistet.',
+    },
+    {
+        question: 'Erfüllt die Software die Anforderungen der NiSV?',
+        answer: 'Ja, Treatflow unterstützt die NiSV-konforme Dokumentation für nicht-invasive Anwendungen wie Laser, IPL und Ultraschall-Behandlungen.',
+    },
+    {
+        question: 'Können Patienten Formulare vorab digital ausfüllen?',
+        answer: 'Ja, du kannst deinen Patienten einen Link senden. Sie füllen Anamnesebogen und Einwilligungen bequem vorab aus und unterschreiben digital.',
+    },
+    {
+        question: 'Ist Treatflow DSGVO-konform für Patientendaten?',
+        answer: 'Absolut. Alle Daten werden verschlüsselt in EU-Rechenzentren gespeichert. Treatflow erfüllt alle Anforderungen der DSGVO für sensible Gesundheitsdaten.',
+    },
+];
 
 export const metadata = {
     title: 'Ästhetische Medizin Software: Praxis & Doku',
@@ -120,7 +148,13 @@ const stats = [
 export default function AesthetischeMedizinSoftwarePage() {
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="breadcrumb-schema-aesthetik"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+            />
             <Navigation />
+            <Breadcrumbs items={breadcrumbItems} />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
@@ -369,6 +403,11 @@ export default function AesthetischeMedizinSoftwarePage() {
 
             {/* FAQ Section */}
             <section className="py-20 bg-white">
+                <Script
+                    id="faq-schema-aesthetik"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+                />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -377,31 +416,10 @@ export default function AesthetischeMedizinSoftwarePage() {
                     </div>
 
                     <div className="space-y-6">
-                        {[
-                            {
-                                q: 'Ist Treatflow für medizinisch-ästhetische Behandlungen geeignet?',
-                                a: 'Ja, Treatflow unterstützt die Dokumentation von Botox, Fillern, Mesotherapie, PRP und weiteren ästhetischen Behandlungen. Die Formulare sind flexibel anpassbar.',
-                            },
-                            {
-                                q: 'Kann ich Chargennummern von Produkten dokumentieren?',
-                                a: 'Ja, du kannst bei jeder Behandlung die verwendeten Produkte mit Chargennummern und Dosierungen dokumentieren. So ist die Rückverfolgbarkeit jederzeit gewährleistet.',
-                            },
-                            {
-                                q: 'Erfüllt die Software die Anforderungen der NiSV?',
-                                a: 'Ja, Treatflow unterstützt die NiSV-konforme Dokumentation für nicht-invasive Anwendungen wie Laser, IPL und Ultraschall-Behandlungen.',
-                            },
-                            {
-                                q: 'Können Patienten Formulare vorab digital ausfüllen?',
-                                a: 'Ja, du kannst deinen Patienten einen Link senden. Sie füllen Anamnesebogen und Einwilligungen bequem vorab aus und unterschreiben digital.',
-                            },
-                            {
-                                q: 'Ist Treatflow DSGVO-konform für Patientendaten?',
-                                a: 'Absolut. Alle Daten werden verschlüsselt in EU-Rechenzentren gespeichert. Treatflow erfüllt alle Anforderungen der DSGVO für sensible Gesundheitsdaten.',
-                            },
-                        ].map((faq, index) => (
+                        {faqs.map((faq, index) => (
                             <div key={index} className="border border-gray-200 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>

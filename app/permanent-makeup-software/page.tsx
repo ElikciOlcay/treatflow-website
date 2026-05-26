@@ -4,9 +4,33 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { generateFaqSchema } from '@/lib/schema';
+
+const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Permanent Makeup Software' }];
+
+const faqs = [
+    {
+        question: 'Eignet sich Treatflow für Microblading und PMU?',
+        answer: 'Ja, Treatflow eignet sich für alle PMU-Techniken - Microblading, Powder Brows, Lip Blush, Eyeliner und mehr. Dokumentation und Formulare sind flexibel anpassbar.',
+    },
+    {
+        question: 'Kann ich meine Einwilligungsformulare individualisieren?',
+        answer: 'Ja, du kannst eigene Formulare erstellen oder bestehende Vorlagen anpassen. Deine Kunden unterschreiben digital - vor dem Termin oder im Studio.',
+    },
+    {
+        question: 'Können Kunden online Termine buchen?',
+        answer: 'Ja, über deinen persönlichen Buchungslink können Kunden rund um die Uhr Termine buchen - für Erstbehandlungen, Nachstiche und Auffrischungen.',
+    },
+    {
+        question: 'Kann ich Fotos zur Behandlung speichern?',
+        answer: 'Ja, du kannst bei jeder Behandlung Fotos aufnehmen und der Kundendatei zuordnen. Perfekt für die Vorher-Nachher Dokumentation und dein Portfolio.',
+    },
+];
 
 export const metadata = {
     title: 'Permanent Makeup Software: Termine & Doku',
@@ -120,7 +144,13 @@ const stats = [
 export default function PermanentMakeupSoftwarePage() {
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="breadcrumb-schema-pmu"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+            />
             <Navigation />
+            <Breadcrumbs items={breadcrumbItems} />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 bg-gradient-to-br from-rose-50 via-white to-pink-50">
@@ -374,6 +404,11 @@ export default function PermanentMakeupSoftwarePage() {
 
             {/* FAQ Section */}
             <section className="py-20 bg-white">
+                <Script
+                    id="faq-schema-pmu"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+                />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -382,27 +417,10 @@ export default function PermanentMakeupSoftwarePage() {
                     </div>
 
                     <div className="space-y-6">
-                        {[
-                            {
-                                q: 'Eignet sich Treatflow für Microblading und PMU?',
-                                a: 'Ja, Treatflow eignet sich für alle PMU-Techniken - Microblading, Powder Brows, Lip Blush, Eyeliner und mehr. Dokumentation und Formulare sind flexibel anpassbar.',
-                            },
-                            {
-                                q: 'Kann ich meine Einwilligungsformulare individualisieren?',
-                                a: 'Ja, du kannst eigene Formulare erstellen oder bestehende Vorlagen anpassen. Deine Kunden unterschreiben digital - vor dem Termin oder im Studio.',
-                            },
-                            {
-                                q: 'Können Kunden online Termine buchen?',
-                                a: 'Ja, über deinen persönlichen Buchungslink können Kunden rund um die Uhr Termine buchen - für Erstbehandlungen, Nachstiche und Auffrischungen.',
-                            },
-                            {
-                                q: 'Kann ich Fotos zur Behandlung speichern?',
-                                a: 'Ja, du kannst bei jeder Behandlung Fotos aufnehmen und der Kundendatei zuordnen. Perfekt für die Vorher-Nachher Dokumentation und dein Portfolio.',
-                            },
-                        ].map((faq, index) => (
+                        {faqs.map((faq, index) => (
                             <div key={index} className="border border-gray-200 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>

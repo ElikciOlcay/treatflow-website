@@ -1,8 +1,13 @@
 import { CheckCircle, ArrowRight, CalendarDays, Users, FileText, Shield, Headphones } from 'lucide-react';
 import Link from 'next/link';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import QuickFacts from '../components/QuickFacts';
 import SocialProofBar from '../components/SocialProofBar';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+
+const breadcrumbItems = [{ label: 'Vergleich' }, { label: 'Kosmetikstudio Software im Vergleich' }];
 
 export const metadata = {
     title: 'Kosmetikstudio Software Vergleich & Checkliste',
@@ -57,7 +62,13 @@ const criteria = [
 export default function KosmetikstudioSoftwareVergleichPage() {
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="breadcrumb-schema-vergleich"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+            />
             <Navigation />
+            <Breadcrumbs items={breadcrumbItems} />
 
             <section className="pt-32 pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -144,6 +155,8 @@ export default function KosmetikstudioSoftwareVergleichPage() {
                     </div>
                 </div>
             </section>
+
+            <QuickFacts variant="compact" />
 
             <Footer />
         </div>

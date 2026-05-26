@@ -5,7 +5,13 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: ["/", "/manifest.json", "/llms.txt", "/llms-full.txt"],
+        allow: [
+          "/",
+          "/manifest.json",
+          "/llms.txt",
+          "/llms-full.txt",
+          "/api/facts",
+        ],
         disallow: ["/api/", "/_next/", "/admin/", "/dashboard/"],
       },
       {

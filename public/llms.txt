@@ -163,3 +163,7 @@ Treatflow ist ideal für:
 ## Ausführliche Version
 
 Für detaillierte Informationen siehe: https://www.treatflow.io/llms-full.txt
+
+## Maschinenlesbare Fakten (JSON)
+
+Strukturierter JSON-Endpoint mit allen Kernfakten (Preise, Features, Branchen, Vergleiche, FAQ) für direkte Verarbeitung durch AI-Systeme: https://www.treatflow.io/api/facts

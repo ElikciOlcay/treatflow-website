@@ -4,9 +4,37 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { generateFaqSchema } from '@/lib/schema';
+
+const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Tattoo Studio Software' }];
+
+const faqs = [
+    {
+        question: 'Eignet sich Treatflow wirklich für Tattoo Studios?',
+        answer: 'Ja, Treatflow eignet sich hervorragend für Tattoo Studios. Digitale Einwilligungen, Online-Buchungen und Kundenverwaltung sind genau die Funktionen, die den Tattoo-Alltag erleichtern.',
+    },
+    {
+        question: 'Können meine Kunden über Instagram buchen?',
+        answer: 'Ja, du erhältst einen persönlichen Buchungslink, den du in deine Instagram-Bio, auf deine Website oder per WhatsApp teilen kannst. Kunden buchen direkt - ohne DM.',
+    },
+    {
+        question: 'Kann ich Einwilligungsformulare individualisieren?',
+        answer: 'Ja, du kannst eigene Formulare erstellen oder Vorlagen anpassen. Typische Fragen zu Allergien, Medikamenten, Alkohol und Blutgerinnung sind bereits voreingestellt.',
+    },
+    {
+        question: 'Erinnert das System meine Kunden automatisch?',
+        answer: 'Ja, Treatflow sendet automatisch Terminerinnerungen per E-Mail und SMS - z.B. 3 Tage und 1 Tag vor dem Termin. Das reduziert No-Shows um bis zu 80%.',
+    },
+    {
+        question: 'Funktioniert die Software auch für mehrere Tätowierer?',
+        answer: 'Ja, du kannst mehrere Mitarbeiter mit eigenen Kalendern und Buchungslinks anlegen. Jeder Tätowierer hat seinen eigenen Terminplan.',
+    },
+];
 
 export const metadata = {
     title: 'Tattoo Studio Software: Termine & Verwaltung',
@@ -120,7 +148,13 @@ const stats = [
 export default function TattooStudioSoftwarePage() {
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="breadcrumb-schema-tattoo"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+            />
             <Navigation />
+            <Breadcrumbs items={breadcrumbItems} />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 bg-gradient-to-br from-gray-100 via-white to-slate-50">
@@ -408,6 +442,11 @@ export default function TattooStudioSoftwarePage() {
 
             {/* FAQ Section */}
             <section className="py-20 bg-white">
+                <Script
+                    id="faq-schema-tattoo"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+                />
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -416,31 +455,10 @@ export default function TattooStudioSoftwarePage() {
                     </div>
 
                     <div className="space-y-6">
-                        {[
-                            {
-                                q: 'Eignet sich Treatflow wirklich für Tattoo Studios?',
-                                a: 'Ja, Treatflow eignet sich hervorragend für Tattoo Studios. Digitale Einwilligungen, Online-Buchungen und Kundenverwaltung sind genau die Funktionen, die den Tattoo-Alltag erleichtern.',
-                            },
-                            {
-                                q: 'Können meine Kunden über Instagram buchen?',
-                                a: 'Ja, du erhältst einen persönlichen Buchungslink, den du in deine Instagram-Bio, auf deine Website oder per WhatsApp teilen kannst. Kunden buchen direkt - ohne DM.',
-                            },
-                            {
-                                q: 'Kann ich Einwilligungsformulare individualisieren?',
-                                a: 'Ja, du kannst eigene Formulare erstellen oder Vorlagen anpassen. Typische Fragen zu Allergien, Medikamenten, Alkohol und Blutgerinnung sind bereits voreingestellt.',
-                            },
-                            {
-                                q: 'Erinnert das System meine Kunden automatisch?',
-                                a: 'Ja, Treatflow sendet automatisch Terminerinnerungen per E-Mail und SMS - z.B. 3 Tage und 1 Tag vor dem Termin. Das reduziert No-Shows um bis zu 80%.',
-                            },
-                            {
-                                q: 'Funktioniert die Software auch für mehrere Tätowierer?',
-                                a: 'Ja, du kannst mehrere Mitarbeiter mit eigenen Kalendern und Buchungslinks anlegen. Jeder Tätowierer hat seinen eigenen Terminplan.',
-                            },
-                        ].map((faq, index) => (
+                        {faqs.map((faq, index) => (
                             <div key={index} className="border border-gray-200 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
+                                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>
