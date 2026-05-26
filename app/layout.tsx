@@ -131,10 +131,10 @@ export default function RootLayout({
   return (
     <html lang="de" dir="ltr">
       <head>
-        {/* Consent Mode v2 Defaults - muss VOR GTM laden, damit GTM-Tags die
-            Consent-Signale korrekt respektieren. GA4 wird ausschliesslich
-            ueber den GTM-Container (GTM-KK359VS8) konfiguriert, kein zweiter
-            gtag.js-Loader mehr (verhindert Doppel-PageViews). */}
+        {/* Consent Mode v2 Defaults - muss VOR dem gtag.js-Loader laufen,
+            damit GA4 die Consent-Signale von Anfang an respektiert.
+            CookieBanner ruft spaeter gtag('consent', 'update', ...) auf,
+            sobald der Nutzer im Banner zugestimmt hat. */}
         <Script id="consent-default" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -154,12 +154,13 @@ export default function RootLayout({
           `}
         </Script>
 
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KK359VS8');`}
+        <Script
+          id="ga4-loader"
+          src="https://www.googletagmanager.com/gtag/js?id=G-SPCW9Q0HY6"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-config" strategy="afterInteractive">
+          {`gtag('config', 'G-SPCW9Q0HY6', { anonymize_ip: true });`}
         </Script>
 
         <link rel="alternate" type="application/rss+xml" title="Treatflow Blog RSS Feed" href="/blog/feed.xml" />
@@ -171,17 +172,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <body
         className={`${inter.variable} font-sans antialiased`}
       >
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe 
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KK359VS8"
-            height="0" 
-            width="0" 
-            style={{display:'none',visibility:'hidden'}}
-          />
-        </noscript>
-        {/* End Google Tag Manager (noscript) */}
-        
         {children}
         <StickyMobileCTA />
         <CookieBanner />
