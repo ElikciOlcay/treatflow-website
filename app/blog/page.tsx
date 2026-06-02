@@ -29,12 +29,12 @@ export const metadata = {
 };
 
 const categories = [
-    { name: 'Alle', count: 30, active: true },
+    { name: 'Alle', count: 37, active: true },
     { name: 'Software', count: 2, active: false },
-    { name: 'Business', count: 7, active: false },
-    { name: 'Marketing', count: 5, active: false },
+    { name: 'Business', count: 8, active: false },
+    { name: 'Marketing', count: 6, active: false },
     { name: 'Fachkompetenz', count: 3, active: false },
-    { name: 'Recht & Compliance', count: 5, active: false },
+    { name: 'Recht & Compliance', count: 6, active: false },
     { name: 'Digitalisierung', count: 4, active: false },
     { name: 'Kundenbindung', count: 2, active: false },
     { name: 'Organisation', count: 3, active: false },
