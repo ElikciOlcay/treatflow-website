@@ -167,6 +167,29 @@ export default function KundenkarteiSoftwarePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <Script
+        id="kundenkartei-software-app-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "Treatflow – Kundenkartei App für Kosmetik",
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "Web, iOS, Android",
+            url: "https://www.treatflow.io/kundenkartei-software",
+            description:
+              "Digitale Kundenkartei App für Kosmetikstudios: Kundendaten, Behandlungshistorie, Fotos und Formulare mobil verwalten. DSGVO-konform.",
+            offers: { "@type": "Offer", price: "39", priceCurrency: "EUR", description: "14 Tage kostenlose Testversion" },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "37",
+              bestRating: "5",
+            },
+          }),
+        }}
+      />
       <Navigation />
 
       <section className="pb-20 bg-gradient-to-br from-indigo-50 via-white to-blue-50">

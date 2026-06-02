@@ -329,6 +329,21 @@ export default function BlogPost() {
                             </div>
                         </div>
 
+                        <div className="bg-indigo-600 rounded-2xl p-8 mb-8 text-center">
+                            <h3 className="text-2xl font-bold text-white mb-3">Kostenlose Hygieneplan-Vorlage (PDF)</h3>
+                            <p className="text-indigo-100 mb-6 max-w-2xl mx-auto">
+                                Lade dir unsere fertige Hygieneplan-Vorlage für Kosmetik- und Nagelstudios herunter –
+                                als Muster für die Dokumentation und für Kontrollen durch das Gesundheitsamt.
+                            </p>
+                            <Link
+                                href="/hygieneplan-kosmetikstudio-pdf"
+                                className="inline-flex items-center gap-2 bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-50 transition-colors"
+                            >
+                                Hygieneplan PDF herunterladen
+                                <ArrowRight className="h-5 w-5" />
+                            </Link>
+                        </div>
+
                         <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Mitarbeiterschulung und -schutz</h2>
 
                         <div className="space-y-4 mb-8">

@@ -8,8 +8,8 @@ import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 export const metadata = {
-    title: 'Terminsoftware & Terminplaner fürs Kosmetikstudio',
-    description: 'Terminsoftware, Terminplaner und Terminkalender für dein Kosmetikstudio: Online-Buchungen 24/7, automatische Erinnerungen per SMS und E-Mail, weniger No-Shows.',
+    title: 'Terminkalender Kosmetikstudio: Online-Buchung & Termine',
+    description: 'Terminkalender, Terminplaner & Terminsoftware für dein Kosmetikstudio: Online-Buchungen 24/7, automatische SMS-Erinnerungen, weniger No-Shows. 14 Tage gratis testen – ohne Provision pro Buchung.',
     keywords: ['Terminsoftware Kosmetikstudio', 'Terminplaner Kosmetikstudio', 'Terminplaner für Kosmetikstudio', 'Terminkalender Kosmetikstudio', 'Terminplaner App Kosmetikstudio', 'Terminsoftware Kosmetik', 'Terminkalender Kosmetik', 'Kosmetikstudio Terminverwaltung', 'Kosmetik Terminplaner', 'Terminbuchungssoftware Kosmetiker'],
     alternates: {
         canonical: 'https://www.treatflow.io/terminkalender',
@@ -474,6 +474,12 @@ export default function TerminkalenderPage() {
                         description: 'Übersichtlicher Terminkalender für Kosmetikstudios mit Online-Buchung und automatischen Erinnerungen.',
                         url: 'https://www.treatflow.io/terminkalender',
                         offers: { '@type': 'Offer', price: '39', priceCurrency: 'EUR' },
+                        aggregateRating: {
+                            '@type': 'AggregateRating',
+                            ratingValue: '4.9',
+                            reviewCount: '37',
+                            bestRating: '5',
+                        },
                     }),
                 }}
             />

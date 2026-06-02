@@ -18,9 +18,9 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Schönheitssalon Software' }];
 
 export const metadata: Metadata = {
-  title: 'Schönheitssalon Software für Kosmetikinstitut',
+  title: 'Schönheitssalon Software & Software Kosmetikinstitut',
   description:
-    'Schönheitssalon Software für digitale Terminplanung, Kundenkartei und Dokumentation. Ideal als Software für Kosmetikinstitut und Beauty-Studios mit Team.',
+    'Schönheitssalon Software für Termine, Kundenkartei & Dokumentation – die digitale Software für Kosmetikinstitute und Beauty-Salons mit Team. DSGVO-konform, 14 Tage gratis testen.',
   keywords: [
     'schönheitssalon software',
     'beauty salon software',
@@ -47,6 +47,28 @@ export default function SchoenheitssalonSoftwarePage() {
         id="breadcrumb-schema-schoenheit"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+      />
+      <Script
+        id="softwareapplication-schema-schoenheit"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'Treatflow – Schönheitssalon Software',
+            applicationCategory: 'BusinessApplication',
+            operatingSystem: 'Web',
+            url: 'https://www.treatflow.io/schoenheitssalon-software',
+            description: 'Software für Schönheitssalons und Kosmetikinstitute mit Terminkalender, Kundenkartei, Formularen und Behandlungsdokumentation.',
+            offers: { '@type': 'Offer', price: '39', priceCurrency: 'EUR', description: '14 Tage kostenlose Testversion' },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.9',
+              reviewCount: '37',
+              bestRating: '5',
+            },
+          }),
+        }}
       />
       <Navigation />
       <Breadcrumbs items={breadcrumbItems} />

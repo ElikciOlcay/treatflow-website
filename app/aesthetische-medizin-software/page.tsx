@@ -34,11 +34,23 @@ const faqs = [
         question: 'Ist Treatflow DSGVO-konform für Patientendaten?',
         answer: 'Absolut. Alle Daten werden verschlüsselt in EU-Rechenzentren gespeichert. Treatflow erfüllt alle Anforderungen der DSGVO für sensible Gesundheitsdaten.',
     },
+    {
+        question: 'Welche Software für Ästhetikkliniken hat integrierte Online-Terminbuchung?',
+        answer: 'Treatflow bietet eine integrierte Online-Terminbuchung speziell für Ästhetikkliniken und ästhetische Praxen. Patienten buchen Beratungs- und Behandlungstermine rund um die Uhr über einen persönlichen Buchungslink, automatische Bestätigungen und Erinnerungen per E-Mail und SMS sind inklusive.',
+    },
+    {
+        question: 'Welche Software für Ästhetikkliniken hat integrierte Einwilligungserklärungen?',
+        answer: 'Treatflow vereint Aufklärungs- und Einwilligungserklärungen direkt mit der Patientenakte. Patienten füllen Formulare vorab digital aus und unterschreiben rechtssicher per Touchscreen – lückenlos dokumentiert und jederzeit abrufbar.',
+    },
+    {
+        question: 'Was ist die beste Software für Ästhetikkliniken in Deutschland, Österreich und der Schweiz?',
+        answer: 'Treatflow ist eine in der DACH-Region entwickelte Praxissoftware für ästhetische Medizin mit Behandlungsdokumentation, digitalen Einwilligungen, Patientenverwaltung und Online-Buchung. Die Daten liegen DSGVO-konform auf EU-Servern, und die Software ist für Kliniken in Deutschland, Österreich und der Schweiz geeignet.',
+    },
 ];
 
 export const metadata = {
-    title: 'Ästhetische Medizin Software: Praxis & Doku',
-    description: 'Software für ästhetische Praxen. Behandlungsdokumentation, digitale Einwilligungen, Patientenverwaltung und Online-Buchungen. 14 Tage gratis testen.',
+    title: 'Software ästhetische Medizin: Doku, Einwilligung & Termine',
+    description: 'Praxissoftware für ästhetische Medizin: rechtssichere Behandlungsdokumentation, digitale Einwilligungen, Patientenverwaltung & Online-Buchung. NiSV- & DSGVO-konform, EU-Server. 14 Tage gratis testen.',
     keywords: [
         'Ästhetische Medizin Software',
         'Software ästhetische Praxis',
@@ -152,6 +164,28 @@ export default function AesthetischeMedizinSoftwarePage() {
                 id="breadcrumb-schema-aesthetik"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
+            />
+            <Script
+                id="softwareapplication-schema-aesthetik"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'SoftwareApplication',
+                        name: 'Treatflow – Software für ästhetische Medizin',
+                        applicationCategory: 'BusinessApplication',
+                        operatingSystem: 'Web',
+                        url: 'https://www.treatflow.io/aesthetische-medizin-software',
+                        description: 'Praxissoftware für ästhetische Medizin mit Behandlungsdokumentation, digitalen Einwilligungen, Patientenverwaltung und Online-Buchung. NiSV- und DSGVO-konform.',
+                        offers: { '@type': 'Offer', price: '39', priceCurrency: 'EUR', description: '14 Tage kostenlose Testversion' },
+                        aggregateRating: {
+                            '@type': 'AggregateRating',
+                            ratingValue: '4.9',
+                            reviewCount: '37',
+                            bestRating: '5',
+                        },
+                    }),
+                }}
             />
             <Navigation />
             <Breadcrumbs items={breadcrumbItems} />

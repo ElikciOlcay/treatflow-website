@@ -222,6 +222,22 @@ const faqSchema = {
                 "@type": "Answer",
                 "text": "Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen - ohne Kreditkarte und ohne versteckte Kosten."
             }
+        },
+        {
+            "@type": "Question",
+            "name": "Gibt es eine kostenlose Kosmetikstudio Software?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Treatflow kannst du 14 Tage komplett kostenlos und unverbindlich testen - ohne Kreditkarte. Rein kostenlose Lösungen stoßen im Studio-Alltag schnell an Grenzen (keine saubere Behandlungshistorie, oft nicht DSGVO-konform, kein Support). Eine professionelle Kosmetikstudio Software ab 39 EUR im Monat spart dir dagegen täglich Zeit und reduziert No-Shows."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Welche Software ist die beste für ein kleines Kosmetikstudio?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Für kleine Kosmetikstudios und Einzelunternehmerinnen eignet sich eine schlanke All-in-One-Software wie Treatflow, die Online-Buchung, Kundenkartei, Formulare und Dokumentation ohne komplizierte Einrichtung vereint. Du startest in wenigen Minuten und zahlst keine Provision pro Buchung."
+            }
         }
     ]
 };
@@ -242,6 +258,28 @@ export default function KosmetikstudioSoftwarePage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+            <Script
+                id="kosmetikstudio-software-app-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'SoftwareApplication',
+                        name: 'Treatflow – Kosmetikstudio Software',
+                        applicationCategory: 'BusinessApplication',
+                        operatingSystem: 'Web',
+                        url: 'https://www.treatflow.io/kosmetikstudio-software',
+                        description: 'All-in-One Software für Kosmetikstudios mit Online-Buchung, digitaler Kundenkartei, Formularen und Behandlungsdokumentation.',
+                        offers: { '@type': 'Offer', price: '39', priceCurrency: 'EUR', description: '14 Tage kostenlose Testversion' },
+                        aggregateRating: {
+                            '@type': 'AggregateRating',
+                            ratingValue: '4.9',
+                            reviewCount: '37',
+                            bestRating: '5',
+                        },
+                    }),
+                }}
+            />
             {/* Hero Section */}
             <section className="pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
                 <Breadcrumbs items={[
@@ -260,10 +298,19 @@ export default function KosmetikstudioSoftwarePage() {
                                 Kosmetikstudio
                             </span>
                         </h1>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
                             Termine, Kunden, Formulare und Dokumentation - alles in einer Plattform.
                             Weniger Verwaltung, mehr Zeit für deine Kunden.
                         </p>
+                        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 max-w-2xl mx-auto mb-10 text-left">
+                            <p className="text-gray-700 leading-relaxed">
+                                Eine Kosmetikstudio Software ist eine digitale All-in-One-Lösung, mit der du
+                                Online-Buchungen, Terminkalender, digitale Kundenkartei, Formulare und
+                                Behandlungsdokumentation an einem Ort verwaltest. Statt mehrerer Tools und
+                                Papierkram steuerst du deinen gesamten Studio-Alltag DSGVO-konform aus einer App –
+                                am Desktop, Tablet und Smartphone.
+                            </p>
+                        </div>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
                                 href="https://app.treatflow.io/auth/register"
@@ -469,6 +516,33 @@ export default function KosmetikstudioSoftwarePage() {
                 </div>
             </section>
 
+            {/* Weiterführende Themen / Cluster-Verlinkung */}
+            <section className="py-16 bg-gray-50">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Weiterführende Themen</h2>
+                    <div className="flex flex-wrap justify-center gap-5 text-sm">
+                        <Link href="/kosmetikstudio-software-kostenlos" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
+                            Kosmetikstudio Software kostenlos
+                        </Link>
+                        <Link href="/kosmetikstudio-software-vergleich" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
+                            Kosmetikstudio Software Vergleich
+                        </Link>
+                        <Link href="/blog/beste-kosmetikstudio-software-2026" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
+                            Beste Kosmetikstudio Software 2026
+                        </Link>
+                        <Link href="/kundenkartei-software" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
+                            Kundenkartei App
+                        </Link>
+                        <Link href="/studio-software-oesterreich" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
+                            Studio Software Österreich
+                        </Link>
+                        <Link href="/kosmetikstudio-software-wien" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
+                            Kosmetikstudio Software Wien
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
             <SocialProofBar />
 
             {/* CTA Section */}
@@ -533,6 +607,14 @@ export default function KosmetikstudioSoftwarePage() {
                             {
                                 q: 'Was kostet Treatflow?',
                                 a: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen - ohne Kreditkarte und ohne versteckte Kosten.',
+                            },
+                            {
+                                q: 'Gibt es eine kostenlose Kosmetikstudio Software?',
+                                a: 'Treatflow kannst du 14 Tage komplett kostenlos und unverbindlich testen - ohne Kreditkarte. Rein kostenlose Lösungen stoßen im Studio-Alltag schnell an Grenzen (keine saubere Behandlungshistorie, oft nicht DSGVO-konform, kein Support). Eine professionelle Kosmetikstudio Software ab 39 EUR im Monat spart dir dagegen täglich Zeit und reduziert No-Shows.',
+                            },
+                            {
+                                q: 'Welche Software ist die beste für ein kleines Kosmetikstudio?',
+                                a: 'Für kleine Kosmetikstudios und Einzelunternehmerinnen eignet sich eine schlanke All-in-One-Software wie Treatflow, die Online-Buchung, Kundenkartei, Formulare und Dokumentation ohne komplizierte Einrichtung vereint. Du startest in wenigen Minuten und zahlst keine Provision pro Buchung.',
                             },
                         ].map((faq, index) => (
                             <div key={index} className="border border-gray-200 rounded-xl p-6">
