@@ -105,7 +105,7 @@ export default function BehandlungsdokumentationPage() {
                             <Zap className="h-4 w-4 mr-1" />
                             Behandlungsdokumentation
                         </div>
-                        <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 break-words hyphens-auto" lang="de">
                             Professionelle <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Behandlungsdokumentation</span>
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -149,7 +149,7 @@ export default function BehandlungsdokumentationPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
                             Dokumentation war nie einfacher
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -243,7 +243,7 @@ export default function BehandlungsdokumentationPage() {
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
                             Vollständiger Behandlungsverlauf
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -342,7 +342,7 @@ export default function BehandlungsdokumentationPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
                             Warum professionelle Dokumentation wichtig ist
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -436,7 +436,7 @@ export default function BehandlungsdokumentationPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
                             Häufige Fragen zur Behandlungsdokumentation
                         </h2>
                     </div>
@@ -475,7 +475,7 @@ export default function BehandlungsdokumentationPage() {
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 break-words hyphens-auto" lang="de">
                         Bereit für professionelle Dokumentation?
                     </h2>
                     <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">

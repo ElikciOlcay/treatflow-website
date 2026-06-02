@@ -104,7 +104,7 @@ export default function OnlineBuchungenPage() {
                             <Link2 className="h-4 w-4 mr-2" />
                             Online-Buchungen
                         </div>
-                        <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 break-words hyphens-auto" lang="de">
                             Online Buchungssystem für <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Kosmetikstudio</span>
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -180,7 +180,7 @@ export default function OnlineBuchungenPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
                             Alles was du für Online-Buchungen brauchst
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -274,7 +274,7 @@ export default function OnlineBuchungenPage() {
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
                             So einfach funktioniert&rsquo;s
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -323,7 +323,7 @@ export default function OnlineBuchungenPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
                             Warum Online-Buchungen dein Studio voranbringen
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -475,7 +475,7 @@ export default function OnlineBuchungenPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
                             Häufige Fragen zu Online-Buchungen
                         </h2>
                     </div>
@@ -514,7 +514,7 @@ export default function OnlineBuchungenPage() {
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 break-words hyphens-auto" lang="de">
                         Bereit für automatische Buchungen?
                     </h2>
                     <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
