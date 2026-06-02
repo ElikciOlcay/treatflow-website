@@ -162,6 +162,11 @@ const internalLinks = [
         title: 'NiSV-Dokumentation',
         description: 'Rechtssichere Dokumentation nach NiSV',
     },
+    {
+        href: '/hygieneplan-kosmetikstudio-pdf',
+        title: 'Hygieneplan-Vorlage (PDF)',
+        description: 'Kostenlose Muster-Vorlage zum Download',
+    },
 ];
 
 const features = [
@@ -235,8 +240,8 @@ const softwareSchema = {
     },
     aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        ratingCount: '120',
+        ratingValue: '4.6',
+        ratingCount: '19',
     },
 };
 

@@ -56,7 +56,7 @@ export default function TestimonialsSection() {
                                 <Star key={i} className="h-5 w-5 fill-current" />
                             ))}
                         </div>
-                        <span className="text-sm font-semibold text-gray-900 ml-1">4.9/5 auf Google</span>
+                        <span className="text-sm font-semibold text-gray-900 ml-1">4,6/5 auf Google</span>
                     </div>
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">
                         Was unsere Kunden sagen

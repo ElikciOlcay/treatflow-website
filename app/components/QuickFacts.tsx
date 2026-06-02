@@ -53,8 +53,8 @@ const facts = [
     },
     {
         icon: Star,
-        value: "4.9/5 Sterne",
-        label: "Google-Bewertungen aus 7 Reviews",
+        value: "4,6/5 Sterne",
+        label: "Google-Bewertungen aus 19 Reviews",
         color: "bg-yellow-100 text-yellow-600",
     },
     {

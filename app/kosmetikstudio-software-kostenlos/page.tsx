@@ -691,8 +691,8 @@ export default function KosmetikstudioSoftwareKostenlos() {
                 },
                 {
                   icon: Star,
-                  title: '4.9/5 Sterne Bewertung',
-                  desc: 'Über 500 Studios nutzen Treatflow täglich und bewerten uns mit 4.9 von 5 Sternen auf Google.',
+                  title: '4,6/5 Sterne Bewertung',
+                  desc: 'Über 500 Studios nutzen Treatflow täglich und bewerten uns mit 4,6 von 5 Sternen auf Google.',
                   color: 'bg-sky-100 text-sky-600',
                 },
               ].map((item) => (

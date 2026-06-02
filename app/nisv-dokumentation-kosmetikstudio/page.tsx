@@ -243,8 +243,8 @@ const softwareSchema = {
     },
     aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        reviewCount: '120',
+        ratingValue: '4.6',
+        reviewCount: '19',
     },
 };
 

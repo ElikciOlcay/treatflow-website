@@ -491,6 +491,11 @@ export default function NisvDokumentationPage() {
                             <span className="text-sm text-gray-600 block mb-2">Formulare & Einwilligungen</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren</span>
                         </Link>
+                        <Link href="/hygieneplan-kosmetikstudio-pdf" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Hygieneplan-Vorlage (PDF)</span>
+                            <span className="text-sm text-gray-600 block mb-2">Kostenlose Muster-Vorlage zum Download</span>
+                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren</span>
+                        </Link>
                     </div>
                 </div>
             </section>

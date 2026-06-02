@@ -178,7 +178,7 @@ export default function TerminsoftwareLandingPage() {
                                 <Star key={i} className="h-3.5 w-3.5 fill-current" />
                             ))}
                         </div>
-                        <span className="text-sm text-gray-600">4.9/5 auf Google</span>
+                        <span className="text-sm text-gray-600">4,6/5 auf Google</span>
                         <span className="text-gray-300">|</span>
                         <span className="text-sm text-gray-600">500+ Studios</span>
                     </div>
@@ -272,7 +272,7 @@ export default function TerminsoftwareLandingPage() {
                                     <Star key={i} className="h-5 w-5 fill-current" />
                                 ))}
                             </div>
-                            <span className="text-sm text-gray-600">4.9/5 auf Google</span>
+                            <span className="text-sm text-gray-600">4,6/5 auf Google</span>
                         </div>
                         <div className="h-8 w-px bg-gray-200 hidden sm:block" />
                         <div className="flex items-center gap-2">
@@ -386,7 +386,7 @@ export default function TerminsoftwareLandingPage() {
                                     <Star key={i} className="h-5 w-5 fill-current" />
                                 ))}
                             </div>
-                            <span className="text-sm font-semibold text-gray-900">4.9/5 auf Google</span>
+                            <span className="text-sm font-semibold text-gray-900">4,6/5 auf Google</span>
                         </div>
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                             Das sagen echte Studiobetreiber
@@ -535,8 +535,8 @@ export default function TerminsoftwareLandingPage() {
                         },
                         aggregateRating: {
                             '@type': 'AggregateRating',
-                            ratingValue: '4.9',
-                            reviewCount: '7',
+                            ratingValue: '4.6',
+                            reviewCount: '19',
                             bestRating: '5',
                         },
                         description: 'Terminsoftware für Kosmetikstudios mit Online-Buchung, Terminkalender und automatischen Erinnerungen.',

@@ -1,3 +1,12 @@
+/**
+ * Lead-Magnet API Route mit Loops-Integration
+ * 
+ * Kopiere diesen Code nach: app/api/lead-magnet/route.ts
+ * 
+ * Benötigte Environment Variable:
+ * - LOOPS_API_KEY: Dein Loops API Key
+ */
+
 import { NextRequest, NextResponse } from 'next/server';
 
 const LOOPS_API_URL = 'https://app.loops.so/api/v1/transactional';
@@ -75,7 +84,7 @@ export async function POST(request: NextRequest) {
             minute: '2-digit',
         }) + ' Uhr';
 
-        // Loops Benachrichtigung an dich senden
+        // Loops Benachrichtigung senden
         await sendLoopsNotification({
             email,
             studioName: studio,

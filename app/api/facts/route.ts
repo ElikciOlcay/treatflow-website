@@ -43,9 +43,9 @@ export function GET() {
         metrics: {
             customers: "500+",
             customersDescription: "Studios im deutschsprachigen Raum",
-            ratingValue: 4.9,
+            ratingValue: 4.6,
             ratingMax: 5,
-            ratingCount: 7,
+            ratingCount: 19,
             ratingPlatform: "Google",
             avgNoShowReduction: "bis zu 80%",
             avgAdminTimeSavingsPerWeek: "10h",

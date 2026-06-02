@@ -75,9 +75,9 @@ const structuredData = {
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "ratingCount": "7",
-    "reviewCount": "7",
+    "ratingValue": "4.6",
+    "ratingCount": "19",
+    "reviewCount": "19",
     "bestRating": "5",
     "worstRating": "1"
   },
@@ -266,7 +266,7 @@ export default function Home() {
                     <Star key={i} className="h-4 w-4 fill-current" />
                   ))}
                 </div>
-                <span className="text-gray-600">4.9/5</span>
+                <span className="text-gray-600">4,6/5</span>
               </div>
             </div>
             <div className="order-2 relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[4/3] lg:min-h-[400px] lg:aspect-auto">

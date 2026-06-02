@@ -29,7 +29,7 @@ export default function SocialProofBar() {
                                 <Star key={i} className="h-5 w-5 fill-current" />
                             ))}
                         </div>
-                        <span className="text-sm font-semibold text-gray-900">4.9/5</span>
+                        <span className="text-sm font-semibold text-gray-900">4,6/5</span>
                         <span className="text-xs text-gray-400">|</span>
                         <a
                             href="https://www.google.com/maps?cid=3775494386032646257"

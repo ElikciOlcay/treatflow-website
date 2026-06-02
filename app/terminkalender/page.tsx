@@ -476,8 +476,8 @@ export default function TerminkalenderPage() {
                         offers: { '@type': 'Offer', price: '39', priceCurrency: 'EUR' },
                         aggregateRating: {
                             '@type': 'AggregateRating',
-                            ratingValue: '4.9',
-                            reviewCount: '37',
+                            ratingValue: '4.6',
+                            reviewCount: '19',
                             bestRating: '5',
                         },
                     }),

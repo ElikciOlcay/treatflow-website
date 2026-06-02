@@ -56,8 +56,8 @@ export default function DokumentationFormulareLandingPage() {
         },
         "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": "500"
+            "ratingValue": "4.6",
+            "ratingCount": "19"
         }
     };
 
@@ -647,7 +647,7 @@ export default function DokumentationFormulareLandingPage() {
                                 <div className="text-sm">Dokumentationen</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-purple-600">4.9/5</div>
+                                <div className="text-3xl font-bold text-purple-600">4,6/5</div>
                                 <div className="text-sm">Kundenbewertung</div>
                             </div>
                         </div>
@@ -707,7 +707,7 @@ export default function DokumentationFormulareLandingPage() {
                             </div>
                             <div className="flex items-center space-x-2">
                                 <Star className="w-5 h-5 text-yellow-400" />
-                                <span className="text-sm">4.9/5 Sterne Bewertung</span>
+                                <span className="text-sm">4,6/5 Sterne Bewertung</span>
                             </div>
                         </div>
                     </div>

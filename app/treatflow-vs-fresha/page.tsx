@@ -592,7 +592,7 @@ export default function TreatflowVsFresha() {
                   icon: Users,
                 },
                 {
-                  value: '4.9/5',
+                  value: '4,6/5',
                   label: 'Bewertung',
                   desc: 'Von zufriedenen Kunden',
                   icon: Star,

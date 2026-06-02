@@ -26,6 +26,11 @@ export const metadata: Metadata = {
         "hygieneplan kosmetikstudio bayern",
         "rahmenhygieneplan kosmetik",
         "reinigungs und desinfektionsplan kosmetik",
+        "hygieneplan wimpernverlängerung",
+        "hygieneplan wimpernstudio",
+        "hygieneplan nagelstudio gesundheitsamt",
+        "hygieneplan kosmetikstudio gesundheitsamt",
+        "hygieneplan fußpflege muster",
     ],
     alternates: {
         canonical: "https://www.treatflow.io/hygieneplan-kosmetikstudio-pdf",
@@ -470,6 +475,52 @@ export default function HygieneplanKosmetikstudioPdfPage() {
                         <Link href="/formulare" className="text-blue-600 hover:text-blue-700 underline underline-offset-4">
                             digitalen Formularen
                         </Link>.
+                    </p>
+                </div>
+            </section>
+
+            {/* Hygieneplan Wimpern- & Lash-Studio */}
+            <section className="py-20 bg-white">
+                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex items-center gap-3 mb-4">
+                        <Sparkles className="h-6 w-6 text-blue-600" />
+                        <h2 className="text-3xl font-bold text-gray-900">
+                            Hygieneplan für Wimpernstudios und Lash-Studios
+                        </h2>
+                    </div>
+                    <p className="text-gray-600 mb-8 max-w-3xl">
+                        Auch für die Wimpernverlängerung gilt ein eigener Hygieneplan: Bei der Arbeit
+                        direkt am Auge sind Infektionsrisiken besonders hoch. Die Muster-Vorlage lässt
+                        sich problemlos auf Wimpern- und Lash-Studios anpassen.
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-6">
+                        {[
+                            {
+                                title: "Pinzetten-Desinfektion",
+                                description: "Pinzetten und Werkzeuge müssen nach jeder Kundin desinfiziert und keimfrei gelagert werden.",
+                            },
+                            {
+                                title: "Einmalmaterialien",
+                                description: "Augenpads, Wimpernbürstchen und Microbrushes sind Einmalartikel und werden nach jeder Behandlung entsorgt.",
+                            },
+                            {
+                                title: "Kleber-Handling",
+                                description: "Wimpernkleber nur auf Einmalunterlagen tropfen und Jade-Stein bzw. Glasplatte nach Gebrauch reinigen oder entsorgen.",
+                            },
+                            {
+                                title: "Arbeitsplatzhygiene",
+                                description: "Liege, Kopfstütze und Arbeitsfläche werden nach jeder Kundin flächendesinfiziert und dokumentiert.",
+                            },
+                        ].map((item) => (
+                            <div key={item.title} className="bg-gray-50 border border-gray-100 rounded-2xl p-6">
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
+                                <p className="text-gray-700 text-sm leading-relaxed">{item.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <p className="text-gray-600 mt-6">
+                        Tipp: Die Vorlage eignet sich ebenso als Muster-Hygieneplan für Fußpflege-,
+                        Permanent-Makeup- und Tattoo-Studios – passe sie einfach an deine Behandlungen an.
                     </p>
                 </div>
             </section>

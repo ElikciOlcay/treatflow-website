@@ -180,8 +180,8 @@ export default function AesthetischeMedizinSoftwarePage() {
                         offers: { '@type': 'Offer', price: '39', priceCurrency: 'EUR', description: '14 Tage kostenlose Testversion' },
                         aggregateRating: {
                             '@type': 'AggregateRating',
-                            ratingValue: '4.9',
-                            reviewCount: '37',
+                            ratingValue: '4.6',
+                            reviewCount: '19',
                             bestRating: '5',
                         },
                     }),

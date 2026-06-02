@@ -1,0 +1,103 @@
+<mjml>
+  <mj-head>
+    <mj-title>Neuer Lead-Magnet Download</mj-title>
+    <mj-preview>Neuer Lead: {{ leadSource }}</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" />
+      <mj-text font-size="15px" line-height="1.6" color="#374151" />
+      <mj-button background-color="#4F46E5" border-radius="8px" font-weight="600" />
+    </mj-attributes>
+    <mj-style>
+      .highlight { background-color: #F3F4F6; border-radius: 8px; }
+      .label { color: #6B7280; font-size: 13px; margin-bottom: 2px; }
+      .value { color: #111827; font-weight: 600; font-size: 15px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#F9FAFB">
+    <!-- Header -->
+    <mj-section background-color="#4F46E5" padding="32px 24px">
+      <mj-column>
+        <mj-image 
+          src="https://www.treatflow.io/images/logo-white.png" 
+          alt="Treatflow" 
+          width="140px" 
+          align="left"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Content -->
+    <mj-section background-color="#FFFFFF" padding="40px 32px" border-radius="0 0 12px 12px">
+      <mj-column>
+        <!-- Badge -->
+        <mj-text align="center" padding-bottom="8px">
+          <span style="background-color: #DCFCE7; color: #166534; font-size: 12px; font-weight: 600; padding: 6px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">
+            Neuer Lead
+          </span>
+        </mj-text>
+
+        <!-- Headline -->
+        <mj-text font-size="24px" font-weight="700" color="#111827" align="center" padding="16px 0 8px">
+          Lead-Magnet Download
+        </mj-text>
+
+        <mj-text align="center" padding-bottom="24px" color="#6B7280">
+          Jemand hat gerade einen Lead-Magneten heruntergeladen.
+        </mj-text>
+
+        <mj-divider border-color="#E5E7EB" border-width="1px" padding="0 0 24px" />
+
+        <!-- Lead Details Card -->
+        <mj-text padding-bottom="16px">
+          <div style="background-color: #F9FAFB; border-radius: 12px; padding: 24px; border: 1px solid #E5E7EB;">
+            <!-- E-Mail -->
+            <div style="margin-bottom: 20px;">
+              <div style="color: #6B7280; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">E-Mail-Adresse</div>
+              <div style="color: #111827; font-size: 16px; font-weight: 600;">{{ email }}</div>
+            </div>
+            
+            <!-- Studio Name -->
+            <div style="margin-bottom: 20px;">
+              <div style="color: #6B7280; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">Studio-Name</div>
+              <div style="color: #111827; font-size: 16px; font-weight: 600;">{{ studioName }}</div>
+            </div>
+            
+            <!-- Quelle -->
+            <div style="margin-bottom: 20px;">
+              <div style="color: #6B7280; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">Quelle / Lead-Magnet</div>
+              <div style="color: #4F46E5; font-size: 16px; font-weight: 600;">{{ leadSource }}</div>
+            </div>
+            
+            <!-- Zeitpunkt -->
+            <div>
+              <div style="color: #6B7280; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">Zeitpunkt</div>
+              <div style="color: #111827; font-size: 16px; font-weight: 600;">{{ timestamp }}</div>
+            </div>
+          </div>
+        </mj-text>
+
+        <!-- CTA -->
+        <mj-button href="https://app.treatflow.io" padding="24px 0 16px" font-size="15px" inner-padding="14px 28px">
+          Im Dashboard ansehen
+        </mj-button>
+
+        <mj-text align="center" font-size="13px" color="#9CA3AF" padding-top="8px">
+          Du kannst den Lead direkt kontaktieren oder abwarten, bis er sich meldet.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section padding="32px 24px">
+      <mj-column>
+        <mj-text align="center" font-size="13px" color="#9CA3AF">
+          Diese E-Mail wurde automatisch von Treatflow gesendet.
+        </mj-text>
+        <mj-text align="center" font-size="12px" color="#9CA3AF" padding-top="8px">
+          Treatflow GmbH | Wien, Osterreich
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
