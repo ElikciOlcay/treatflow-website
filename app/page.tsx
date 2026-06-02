@@ -27,16 +27,16 @@ import QuickFacts from "./components/QuickFacts";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Kosmetikstudio Software: Termine, Kunden & Doku | Treatflow",
+  title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
   description:
-    "Die All-in-One Software für Kosmetikstudios: Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation. DSGVO-konform. 14 Tage kostenlos testen.",
+    "Treatflow vereint Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation in einer App. DSGVO-konform, Made in Austria, von 500+ Studios genutzt. 14 Tage gratis testen.",
   alternates: {
     canonical: "https://www.treatflow.io",
   },
   openGraph: {
-    title: "Kosmetikstudio Software: Termine, Kunden & Doku | Treatflow",
+    title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
     description:
-      "Die All-in-One Software für Kosmetikstudios: Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation.",
+      "Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation – alles in einer App. Von 500+ Studios genutzt, DSGVO-konform.",
     url: "https://www.treatflow.io",
   },
 };
@@ -87,6 +87,50 @@ const structuredData = {
     "Formulare für Anamnesen",
     "Behandlungsdokumentation",
     "NiSV konform"
+  ],
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Maren Burmeister" },
+      "reviewBody": "Seit Dezember 2024 nutzen wir Treatflow mit einem dreiköpfigen Team. Es ist eine große Arbeitserleichterung und spart Zeit. Wir arbeiten vollständig digital und erfüllen alle NiSV-Anforderungen. Klare Empfehlung."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Fatma Suna" },
+      "reviewBody": "Ich kann Treatflow wirklich jedem nur ans Herz legen. Die App bietet großartige Möglichkeiten, die sowohl uns als auch unseren Kunden das Leben erleichtern. Ein Must-Have für alle Studios."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "E. B." },
+      "reviewBody": "Wir sind mit Treatflow wirklich sehr zufrieden! Auf Wünsche und Vorschläge wird immer eingegangen. Alles wird sofort verständlich erklärt und direkt umgesetzt."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Valeska Weber" },
+      "reviewBody": "Ganz toller Service. Für mich eine Arbeitserleichterung – hab alles für die Kunden griffbereit an einem Ort."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Evangelia Karapouliou" },
+      "reviewBody": "Ein sehr freundliches, kompetentes, kundenorientiertes und hilfsbereites Team. Das Programm passt perfekt in mein Unternehmen."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Simone Weigl" },
+      "reviewBody": "Kann Treatflow wirklich jedem empfehlen. Olcay geht sympathisch und unkompliziert auf individuelle Anpassungen ein."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "author": { "@type": "Person", "name": "Mit Liebe zum Detail" },
+      "reviewBody": "Der Service ist einfach super und meine Kunden sind äußerst zufrieden mit den Online-Formularen. Die Benutzerfreundlichkeit und Handhabung machen die Erfahrung stressfrei."
+    }
   ]
 };
 
@@ -145,66 +189,6 @@ const faqSchema = {
   ]
 };
 
-const reviewSchema = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Treatflow",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Web",
-  "url": "https://www.treatflow.io",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "7",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Maren Burmeister" },
-      "reviewBody": "Seit Dezember 2024 nutzen wir Treatflow mit einem dreiköpfigen Team. Es ist eine große Arbeitserleichterung und spart Zeit. Wir arbeiten vollständig digital und erfüllen alle NiSV-Anforderungen. Klare Empfehlung."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Fatma Suna" },
-      "reviewBody": "Ich kann Treatflow wirklich jedem nur ans Herz legen. Die App bietet großartige Möglichkeiten, die sowohl uns als auch unseren Kunden das Leben erleichtern. Ein Must-Have für alle Studios."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "E. B." },
-      "reviewBody": "Wir sind mit Treatflow wirklich sehr zufrieden! Auf Wünsche und Vorschläge wird immer eingegangen. Alles wird sofort verständlich erklärt und direkt umgesetzt."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Valeska Weber" },
-      "reviewBody": "Ganz toller Service. Für mich eine Arbeitserleichterung – hab alles für die Kunden griffbereit an einem Ort."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Evangelia Karapouliou" },
-      "reviewBody": "Ein sehr freundliches, kompetentes, kundenorientiertes und hilfsbereites Team. Das Programm passt perfekt in mein Unternehmen."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Simone Weigl" },
-      "reviewBody": "Kann Treatflow wirklich jedem empfehlen. Olcay geht sympathisch und unkompliziert auf individuelle Anpassungen ein."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Mit Liebe zum Detail" },
-      "reviewBody": "Der Service ist einfach super und meine Kunden sind äußerst zufrieden mit den Online-Formularen. Die Benutzerfreundlichkeit und Handhabung machen die Erfahrung stressfrei."
-    }
-  ]
-};
-
 export default function Home() {
   return (
     <>
@@ -217,11 +201,6 @@ export default function Home() {
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Script
-        id="review-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
 
       <div className="min-h-screen bg-white">
