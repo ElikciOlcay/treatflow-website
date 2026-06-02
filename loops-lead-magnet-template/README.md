@@ -19,10 +19,10 @@ Das Template verwendet folgende Variablen:
 
 | Variable | Beschreibung | Beispiel |
 |----------|-------------|----------|
-| `{{ email }}` | E-Mail des Leads | `studio@beispiel.de` |
-| `{{ studioName }}` | Name des Studios | `Beauty Studio Maria` |
-| `{{ leadSource }}` | Name des Lead-Magnets | `Hygieneplan Kosmetikstudio PDF` |
-| `{{ timestamp }}` | Zeitpunkt des Downloads | `02.06.2026, 11:15 Uhr` |
+| `{DATA_VARIABLE:email}` | E-Mail des Leads | `studio@beispiel.de` |
+| `{DATA_VARIABLE:studioName}` | Name des Studios | `Beauty Studio Maria` |
+| `{DATA_VARIABLE:leadSource}` | Name des Lead-Magnets | `Hygieneplan Kosmetikstudio PDF` |
+| `{DATA_VARIABLE:timestamp}` | Zeitpunkt des Downloads | `02.06.2026, 11:15 Uhr` |
 
 ### 3. Environment Variables
 

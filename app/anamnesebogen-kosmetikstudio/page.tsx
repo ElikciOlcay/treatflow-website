@@ -483,6 +483,29 @@ export default function AnamnesebogenKosmetikstudioPage() {
                 </div>
             </section>
 
+            {/* PDF Vorlage Hinweis */}
+            <section className="py-12 bg-white border-b border-gray-100">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-4">
+                        <div className="flex-1">
+                            <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                                Du brauchst erstmal eine PDF-Vorlage?
+                            </h3>
+                            <p className="text-gray-600 text-sm">
+                                Lade dir unseren kostenlosen Anamnesebogen mit Einwilligungserklarung als PDF herunter.
+                            </p>
+                        </div>
+                        <Link
+                            href="/anamnesebogen-kosmetik-vorlage-pdf"
+                            className="inline-flex items-center bg-indigo-600 text-white px-5 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors whitespace-nowrap"
+                        >
+                            PDF-Vorlage herunterladen
+                            <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
             {/* Internal Links Section */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anamnesebogen Kosmetik mit Einwilligung</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        @page {
+            size: A4;
+            margin: 15mm;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #1a1a1a;
+            background: white;
+        }
+        
+        .page {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15mm;
+            background: white;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #4F46E5;
+        }
+        
+        .header-content {
+            flex: 1;
+        }
+        
+        .header h1 {
+            font-size: 18pt;
+            color: #1a1a1a;
+            margin-bottom: 2px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 10pt;
+        }
+        
+        .logo {
+            text-align: right;
+            padding-left: 20px;
+        }
+        
+        .logo-text {
+            font-size: 14pt;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .logo-sub {
+            font-size: 7pt;
+            color: #9ca3af;
+        }
+        
+        .studio-info {
+            background: #f8f9fa;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        
+        .studio-info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .studio-info-item strong {
+            font-size: 9pt;
+            color: #666;
+        }
+        
+        .studio-info .placeholder {
+            border-bottom: 1px solid #9ca3af;
+            display: inline-block;
+            min-width: 140px;
+            height: 18px;
+        }
+        
+        h2 {
+            font-size: 11pt;
+            color: #4F46E5;
+            margin: 14px 0 8px;
+            padding-bottom: 3px;
+            border-bottom: 2px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        h2 .section-number {
+            background: #4F46E5;
+            color: white;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10pt;
+        }
+        
+        h3 {
+            font-size: 10pt;
+            color: #374151;
+            margin: 12px 0 6px;
+            font-weight: 600;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+        
+        .form-field {
+            flex: 1;
+        }
+        
+        .form-field label {
+            display: block;
+            font-size: 8pt;
+            color: #666;
+            margin-bottom: 3px;
+            font-weight: 500;
+        }
+        
+        .form-field .input {
+            border: 1.5px solid #d1d5db;
+            border-radius: 4px;
+            padding: 10px 12px;
+            min-height: 36px;
+            background: #fafafa;
+        }
+        
+        .form-field .input.large {
+            min-height: 50px;
+        }
+        
+        .form-field .input.xl {
+            min-height: 70px;
+        }
+        
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px 16px;
+            margin: 8px 0;
+        }
+        
+        .checkbox-grid.single-col {
+            grid-template-columns: 1fr;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #374151;
+            border-radius: 3px;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+        
+        .checkbox-label {
+            font-size: 9pt;
+            line-height: 1.4;
+        }
+        
+        .checkbox-label small {
+            color: #666;
+            font-size: 8pt;
+        }
+        
+        .info-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-left: 4px solid #3b82f6;
+            border-radius: 4px;
+            padding: 8px 12px;
+            margin: 8px 0;
+            font-size: 8pt;
+        }
+        
+        .info-box.warning {
+            background: #fef3c7;
+            border-color: #fcd34d;
+            border-left-color: #f59e0b;
+        }
+        
+        .info-box.success {
+            background: #f0fdf4;
+            border-color: #86efac;
+            border-left-color: #22c55e;
+        }
+        
+        .info-box strong {
+            display: inline;
+            margin-right: 4px;
+            font-size: 8pt;
+        }
+        
+        .no-break {
+            page-break-inside: avoid;
+        }
+        
+        .signature-section {
+            margin-top: 14px;
+            padding-top: 10px;
+            border-top: 2px solid #e5e7eb;
+            page-break-inside: avoid;
+        }
+        
+        .signature-row {
+            display: flex;
+            gap: 20px;
+            margin-top: 8px;
+        }
+        
+        .signature-field {
+            flex: 1;
+        }
+        
+        .signature-line {
+            border-bottom: 1.5px solid #374151;
+            height: 28px;
+            margin-bottom: 2px;
+        }
+        
+        .signature-label {
+            font-size: 7pt;
+            color: #666;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px solid #e5e7eb;
+            font-size: 7pt;
+            color: #9ca3af;
+            text-align: center;
+        }
+        
+        .disclaimer {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 4px;
+            padding: 8px 12px;
+            margin: 10px 0;
+            font-size: 7pt;
+            color: #991b1b;
+        }
+        
+        .treatflow-hint {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+            color: white;
+            border-radius: 6px;
+            padding: 10px 14px;
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .treatflow-hint-icon {
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+        
+        .treatflow-hint-content {
+            flex: 1;
+        }
+        
+        .treatflow-hint h4 {
+            font-size: 9pt;
+            margin-bottom: 2px;
+        }
+        
+        .treatflow-hint p {
+            font-size: 8pt;
+            opacity: 0.9;
+            margin-bottom: 2px;
+        }
+        
+        .treatflow-hint .url {
+            font-weight: 700;
+            font-size: 9pt;
+        }
+        
+        .intro-text {
+            font-size: 9pt;
+            color: #4b5563;
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            background: #f9fafb;
+            border-radius: 4px;
+        }
+        
+        .treatment-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px;
+            margin: 10px 0;
+        }
+        
+        .treatment-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            background: #fafafa;
+        }
+        
+        .treatment-option .checkbox {
+            width: 14px;
+            height: 14px;
+        }
+        
+        .treatment-option span {
+            font-size: 8pt;
+        }
+        
+        .skin-type-grid {
+            display: flex;
+            gap: 12px;
+            margin: 8px 0;
+        }
+        
+        .skin-type-item {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            background: #fafafa;
+        }
+        
+        .skin-type-item .checkbox {
+            width: 14px;
+            height: 14px;
+        }
+        
+        .skin-type-item span {
+            font-size: 8pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content">
+                <h1>Anamnesebogen Kosmetik</h1>
+                <p>mit Einwilligungserklärung und Datenschutzhinweis</p>
+            </div>
+            <div class="logo">
+                <div class="logo-text">treatflow</div>
+                <div class="logo-sub">www.treatflow.io</div>
+            </div>
+        </div>
+        
+        <!-- Studio Info -->
+        <div class="studio-info">
+            <div class="studio-info-item">
+                <strong>Studio:</strong> <span class="placeholder"></span>
+            </div>
+            <div class="studio-info-item">
+                <strong>Behandler/in:</strong> <span class="placeholder"></span>
+            </div>
+            <div class="studio-info-item">
+                <strong>Datum:</strong> <span class="placeholder"></span>
+            </div>
+        </div>
+        
+        <!-- Persönliche Daten -->
+        <h2><span class="section-number">1</span> Persönliche Daten</h2>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Vorname</label>
+                <div class="input"></div>
+            </div>
+            <div class="form-field">
+                <label>Nachname</label>
+                <div class="input"></div>
+            </div>
+            <div class="form-field" style="flex: 0.6;">
+                <label>Geburtsdatum</label>
+                <div class="input"></div>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Telefon / Mobil</label>
+                <div class="input"></div>
+            </div>
+            <div class="form-field">
+                <label>E-Mail-Adresse</label>
+                <div class="input"></div>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field" style="flex: 2;">
+                <label>Straße, Hausnummer</label>
+                <div class="input"></div>
+            </div>
+            <div class="form-field" style="flex: 0.4;">
+                <label>PLZ</label>
+                <div class="input"></div>
+            </div>
+            <div class="form-field" style="flex: 0.8;">
+                <label>Ort</label>
+                <div class="input"></div>
+            </div>
+        </div>
+        
+        <!-- Hauttyp & Pflege -->
+        <h2><span class="section-number">2</span> Hauttyp und Pflegegewohnheiten</h2>
+        
+        <h3>Wie würden Sie Ihren Hauttyp beschreiben?</h3>
+        <div class="skin-type-grid">
+            <div class="skin-type-item">
+                <div class="checkbox"></div>
+                <span>Normal</span>
+            </div>
+            <div class="skin-type-item">
+                <div class="checkbox"></div>
+                <span>Trocken</span>
+            </div>
+            <div class="skin-type-item">
+                <div class="checkbox"></div>
+                <span>Fettig</span>
+            </div>
+            <div class="skin-type-item">
+                <div class="checkbox"></div>
+                <span>Mischhaut</span>
+            </div>
+            <div class="skin-type-item">
+                <div class="checkbox"></div>
+                <span>Empfindlich</span>
+            </div>
+        </div>
+        
+        <div class="form-row" style="margin-top: 10px;">
+            <div class="form-field">
+                <label>Welche Pflegeprodukte verwenden Sie aktuell? (Marken, Wirkstoffe)</label>
+                <div class="input large"></div>
+            </div>
+        </div>
+        
+        <div class="form-field">
+            <label>Welche kosmetischen Behandlungen haben Sie bereits erhalten? (z.B. Peelings, Microneedling, Laser)</label>
+            <div class="input large"></div>
+        </div>
+        
+        <!-- Gesundheitsfragen -->
+        <h2><span class="section-number">3</span> Gesundheitsfragen</h2>
+        
+        <p class="intro-text">
+            Bitte beantworten Sie die folgenden Fragen sorgfältig. Diese Informationen sind wichtig, 
+            um die Behandlung sicher und individuell auf Sie abzustimmen.
+        </p>
+        
+        <h3>Bestehen bei Ihnen folgende Erkrankungen oder Zustände?</h3>
+        <div class="checkbox-grid">
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Herz-Kreislauf-Erkrankungen <small>(Bluthochdruck, Herzrhythmusstörungen)</small></span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Diabetes mellitus</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Schilddrüsenerkrankungen</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Autoimmunerkrankungen</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Hauterkrankungen <small>(Neurodermitis, Psoriasis, Rosazea, Akne)</small></span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Neigung zu Keloid- / Narbenbildung</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Infektionskrankheiten <small>(Hepatitis, HIV)</small></span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Epilepsie</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Blutgerinnungsstörungen</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Herpes simplex (wiederkehrend)</span>
+            </div>
+        </div>
+        
+        <h3>Allergien und Unverträglichkeiten</h3>
+        <div class="checkbox-grid">
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Keine bekannten Allergien</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Latex / Pflaster</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Metalle (Nickel)</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Duftstoffe / Konservierungsmittel</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Lokalanästhetika (z.B. Lidocain)</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Sonstige (bitte angeben)</span>
+            </div>
+        </div>
+        
+        <div class="form-field">
+            <label>Sonstige Allergien/Unverträglichkeiten:</label>
+            <div class="input"></div>
+        </div>
+        
+        <h3>Aktuelle Medikamente</h3>
+        <div class="checkbox-grid single-col">
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Ich nehme derzeit keine Medikamente ein</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Blutverdünner (z.B. Aspirin, Marcumar)</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Isotretinoin / Vitamin-A-Säure-Präparate (Aknenormin, Roaccutan)</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Antibiotika</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Kortison (äußerlich oder innerlich)</span>
+            </div>
+        </div>
+        
+        <div class="form-field">
+            <label>Weitere Medikamente und Nahrungsergänzungsmittel:</label>
+            <div class="input large"></div>
+        </div>
+        
+        <h3>Weitere wichtige Fragen</h3>
+        <div class="checkbox-grid single-col">
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Ich bin schwanger / stille derzeit</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Ich trage einen Herzschrittmacher oder elektronische Implantate</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Ich war in den letzten 2 Wochen intensiver Sonneneinstrahlung / Solarium ausgesetzt</span>
+            </div>
+            <div class="checkbox-item">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">Ich habe aktiven Sonnenbrand / Hautreizungen im Behandlungsbereich</span>
+            </div>
+        </div>
+        
+        <div class="form-field">
+            <label>Sonstige Hinweise oder Anmerkungen:</label>
+            <div class="input large"></div>
+        </div>
+    </div>
+    
+    <!-- Seite 2 -->
+    <div class="page page-break">
+        <div class="header">
+            <div class="header-content">
+                <h1>Einwilligungserklärung</h1>
+                <p>zur kosmetischen Behandlung</p>
+            </div>
+            <div class="logo">
+                <div class="logo-text">treatflow</div>
+                <div class="logo-sub">www.treatflow.io</div>
+            </div>
+        </div>
+        
+        <!-- Behandlung -->
+        <h2><span class="section-number">4</span> Geplante Behandlung</h2>
+        
+        <h3>Welche Behandlung ist geplant? (Mehrfachauswahl möglich)</h3>
+        <div class="treatment-options">
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Gesichtsbehandlung</span>
+            </div>
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Wimpernverlängerung</span>
+            </div>
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Wimpernlifting</span>
+            </div>
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Augenbrauen-Styling</span>
+            </div>
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Permanent Make-up</span>
+            </div>
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Microblading</span>
+            </div>
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Maniküre / Nageldesign</span>
+            </div>
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Pediküre / Fußpflege</span>
+            </div>
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Haarentfernung / Waxing</span>
+            </div>
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Microneedling</span>
+            </div>
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Chemisches Peeling</span>
+            </div>
+            <div class="treatment-option">
+                <div class="checkbox"></div>
+                <span>Apparative Behandlung</span>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-field">
+                <label>Sonstige / genaue Bezeichnung der Behandlung:</label>
+                <div class="input"></div>
+            </div>
+            <div class="form-field">
+                <label>Behandlungsbereich:</label>
+                <div class="input"></div>
+            </div>
+        </div>
+        
+        <!-- Aufklärung -->
+        <div class="no-break">
+            <h2><span class="section-number">5</span> Aufklärung</h2>
+            
+            <p style="font-size: 8pt; color: #666; margin-bottom: 6px;">Ich wurde über folgende Punkte mündlich aufgeklärt:</p>
+            
+            <div class="checkbox-grid">
+                <div class="checkbox-item">
+                    <div class="checkbox"></div>
+                    <span class="checkbox-label">Art, Ablauf und Dauer der Behandlung</span>
+                </div>
+                <div class="checkbox-item">
+                    <div class="checkbox"></div>
+                    <span class="checkbox-label">Erwartete Ergebnisse und Einschränkungen</span>
+                </div>
+                <div class="checkbox-item">
+                    <div class="checkbox"></div>
+                    <span class="checkbox-label">Risiken und Nebenwirkungen</span>
+                </div>
+                <div class="checkbox-item">
+                    <div class="checkbox"></div>
+                    <span class="checkbox-label">Kontraindikationen</span>
+                </div>
+                <div class="checkbox-item">
+                    <div class="checkbox"></div>
+                    <span class="checkbox-label">Verhaltensregeln / Nachpflege</span>
+                </div>
+                <div class="checkbox-item">
+                    <div class="checkbox"></div>
+                    <span class="checkbox-label">Kosten der Behandlung</span>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <strong>Hinweis:</strong> Ich hatte ausreichend Gelegenheit, Fragen zu stellen. Alle meine Fragen wurden zu meiner Zufriedenheit beantwortet.
+            </div>
+        </div>
+        
+        <!-- Einwilligung -->
+        <div class="no-break">
+            <h2><span class="section-number">6</span> Einwilligung zur Behandlung</h2>
+            
+            <div class="checkbox-grid single-col">
+                <div class="checkbox-item">
+                    <div class="checkbox"></div>
+                    <span class="checkbox-label">
+                        <strong>Ich willige in die oben genannte Behandlung ein.</strong> 
+                        Ich bestätige, dass ich die Aufklärung verstanden habe und die Behandlung 
+                        auf eigenen Wunsch durchführen lasse.
+                    </span>
+                </div>
+                <div class="checkbox-item">
+                    <div class="checkbox"></div>
+                    <span class="checkbox-label">
+                        Ich bin damit einverstanden, dass Vorher-/Nachher-Fotos zu Dokumentationszwecken 
+                        erstellt werden. <small>(optional)</small>
+                    </span>
+                </div>
+                <div class="checkbox-item">
+                    <div class="checkbox"></div>
+                    <span class="checkbox-label">
+                        Ich bin damit einverstanden, dass anonymisierte Fotos für Werbezwecke 
+                        (Website, Social Media) verwendet werden dürfen. <small>(optional)</small>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="info-box warning">
+                <strong>Widerrufsrecht:</strong>
+                Diese Einwilligung kann jederzeit ohne Angabe von Gründen widerrufen werden. 
+                Der Widerruf hat keine Auswirkungen auf die Rechtmäßigkeit der bis dahin erfolgten 
+                Datenverarbeitung oder Behandlung.
+            </div>
+        </div>
+        
+        <!-- Datenschutz & Unterschrift -->
+        <div class="no-break">
+            <h2><span class="section-number">7</span> Datenschutz & Unterschrift</h2>
+            
+            <p style="font-size: 7pt; margin-bottom: 6px; color: #374151; line-height: 1.4;">
+                Ihre personenbezogenen Daten und Gesundheitsdaten werden ausschließlich zur Behandlungsplanung, 
+                -durchführung und -dokumentation erhoben. Die Daten werden vertraulich behandelt und nicht an 
+                Dritte weitergegeben (außer gesetzlich vorgeschrieben). Aufbewahrungsfrist: mind. 10 Jahre. 
+                Sie haben Rechte auf Auskunft, Berichtigung, Löschung gemäß DSGVO.
+            </p>
+            
+            <div class="checkbox-item" style="margin-bottom: 10px;">
+                <div class="checkbox"></div>
+                <span class="checkbox-label">
+                    <strong>Ich willige in die Verarbeitung meiner Daten gemäß den oben genannten Zwecken ein.</strong>
+                </span>
+            </div>
+            
+            <p style="font-size: 8pt; margin-bottom: 8px; color: #374151;">
+                Mit meiner Unterschrift bestätige ich, dass alle Angaben wahrheitsgemäß und vollständig sind.
+            </p>
+            
+            <div class="signature-row">
+                <div class="signature-field">
+                    <div class="signature-line"></div>
+                    <span class="signature-label">Ort, Datum</span>
+                </div>
+                <div class="signature-field">
+                    <div class="signature-line"></div>
+                    <span class="signature-label">Unterschrift Kundin/Kunde</span>
+                </div>
+            </div>
+            
+            <p style="font-size: 7pt; color: #666; margin-top: 8px;">
+                Bei Minderjährigen: Unterschrift Erziehungsberechtigte/r erforderlich.
+            </p>
+            
+            <div class="signature-row" style="margin-top: 4px;">
+                <div class="signature-field">
+                    <div class="signature-line"></div>
+                    <span class="signature-label">Unterschrift Erziehungsberechtigte/r (falls zutreffend)</span>
+                </div>
+                <div class="signature-field"></div>
+            </div>
+        </div>
+        
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <strong>Hinweis:</strong> Diese Vorlage wurde NICHT rechtlich geprüft und dient nur als Orientierungshilfe. 
+            Wir empfehlen eine Prüfung durch einen Rechtsanwalt vor der Verwendung.
+        </div>
+        
+        <!-- Treatflow Hinweis -->
+        <div class="treatflow-hint">
+            <div class="treatflow-hint-icon">&#128241;</div>
+            <div class="treatflow-hint-content">
+                <h4>Auch digital verfügbar!</h4>
+                <p>Mit Treatflow: digitale Anamnesebogen, E-Signatur und DSGVO-konforme Speicherung.</p>
+                <span class="url">www.treatflow.io/formulare</span>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Kostenlose Vorlage von Treatflow | www.treatflow.io</p>
+        </div>
+    </div>
+</body>
+</html>
