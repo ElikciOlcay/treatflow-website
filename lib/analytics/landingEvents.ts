@@ -1,7 +1,7 @@
 export type LandingEventName = 'google_ads_lp_cta_click' | 'google_ads_lp_demo_click';
 
 export const LANDING_URLS = {
-    register: 'https://app.treatflow.io/register',
+    register: 'https://app.treatflow.io/auth/register',
     demo: 'https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f',
 } as const;
 
