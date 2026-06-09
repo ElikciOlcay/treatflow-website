@@ -116,7 +116,6 @@ export default function KosmetikstudioSoftwareAdsLandingPage() {
                             <div className="flex flex-col items-start gap-3">
                                 <LandingPrimaryCTA
                                     size="large"
-                                    label="Jetzt 14 Tage kostenlos testen"
                                     landingPage={LANDING_PAGE_ID}
                                     className="w-full sm:w-auto"
                                 />
@@ -241,6 +240,16 @@ export default function KosmetikstudioSoftwareAdsLandingPage() {
                         </p>
                     </div>
                     <LandingVideoSection />
+                    <div className="mt-8 text-center">
+                        <LandingPrimaryCTA
+                            size="large"
+                            landingPage={LANDING_PAGE_ID}
+                            className="w-full sm:w-auto"
+                        />
+                        <p className="text-sm text-gray-500 mt-3">
+                            14 Tage kostenlos · keine Kreditkarte · persönliche Hilfe beim Start
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -331,8 +340,11 @@ export default function KosmetikstudioSoftwareAdsLandingPage() {
                                 key={review.name}
                                 className="bg-gray-50 p-5 rounded-xl border border-gray-100"
                             >
-                                <GoogleStars size="sm" />
-                                <p className="text-gray-600 text-sm leading-relaxed my-3">
+                                <div className="flex items-center justify-between gap-2 mb-3">
+                                    <GoogleStars size="sm" />
+                                    <span className="text-[11px] font-medium text-gray-400">{review.source}</span>
+                                </div>
+                                <p className="text-gray-600 text-sm leading-relaxed mb-3">
                                     &ldquo;{review.shortText}&rdquo;
                                 </p>
                                 <div className="flex items-center gap-3">
@@ -389,13 +401,11 @@ export default function KosmetikstudioSoftwareAdsLandingPage() {
                     </p>
                     <LandingPrimaryInverseCTA
                         size="large"
-                        label="Jetzt 14 Tage kostenlos testen"
                         landingPage={LANDING_PAGE_ID}
                     />
                     <div className="mt-4">
                         <LandingDemoLink
                             landingPage={LANDING_PAGE_ID}
-                            label="Oder erst eine persönliche Demo buchen"
                             className="!text-indigo-200 hover:!text-white"
                         />
                     </div>

@@ -32,6 +32,10 @@ export const painSolutionPairs = [
         pain: 'Behandlungsdokumentation kostet nach jeder Behandlung extra Zeit',
         solution: 'Schnelle digitale Doku mit Vorlagen – direkt in der Kundenakte.',
     },
+    {
+        pain: 'Dein Studio wirkt weniger digital, als es eigentlich ist',
+        solution: 'Mit Online-Buchung, digitalen Formularen und strukturierter Kundenakte trittst du professioneller auf.',
+    },
 ];
 
 export const steps = [
@@ -55,7 +59,8 @@ export const steps = [
 export const featuredTestimonial = {
     text: 'Es ist eine große Arbeitserleichterung und spart Zeit. Wir arbeiten vollständig digital – klare Empfehlung.',
     name: 'Maren Burmeister',
-    studio: 'haarfrei · Kosmetikstudio',
+    studio: 'haarfrei',
+    source: 'Google Bewertung',
     initials: 'MB',
     color: 'bg-teal-600',
 };
@@ -176,6 +181,7 @@ export const testimonials = [
         shortText: 'Große Arbeitserleichterung – wir arbeiten vollständig digital und erfüllen alle NiSV-Anforderungen. Klare Empfehlung.',
         name: 'Maren Burmeister',
         studio: 'haarfrei',
+        source: 'Google Bewertung',
         initials: 'MB',
         color: 'bg-teal-600',
     },
@@ -184,6 +190,7 @@ export const testimonials = [
         shortText: 'Ein Must-Have für alle Studios. Kein Papierkram mehr und nichts geht verloren.',
         name: 'Fatma Suna',
         studio: 'Kosmetikstudio',
+        source: 'Google Bewertung',
         initials: 'FS',
         color: 'bg-amber-600',
     },
@@ -192,6 +199,7 @@ export const testimonials = [
         shortText: 'Auf Wünsche wird immer eingegangen. Man fühlt sich bestens betreut und ernst genommen.',
         name: 'E. B.',
         studio: 'Kosmetikstudio',
+        source: 'Google Bewertung',
         initials: 'EB',
         color: 'bg-rose-500',
     },

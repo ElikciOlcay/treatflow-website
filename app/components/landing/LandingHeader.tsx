@@ -29,7 +29,7 @@ export default function LandingHeader({ landingPage = 'landing/kosmetikstudio-so
                     </div>
                     <span>4,6/5</span>
                     <span className="text-gray-300">|</span>
-                    <span>500+ Studios</span>
+                    <span>500+ getestet</span>
                 </div>
 
                 <LandingPrimaryCTA
