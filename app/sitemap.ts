@@ -303,6 +303,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.7,
         },
+        {
+            url: `${baseUrl}/landing/heilmasseur-software-oesterreich`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
+        },
     ]
 
     return [...staticRoutes, blogIndex, ...blogRoutes, ...landingRoutes]
