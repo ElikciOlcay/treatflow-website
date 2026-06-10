@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hygieneplan Kosmetikstudio – Vorlage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 14mm 16mm 18mm 16mm;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 9.5pt;
+            line-height: 1.45;
+            color: #1f2937;
+            background: white;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .page {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .no-break {
+            page-break-inside: avoid;
+        }
+
+        /* Cover */
+        .cover {
+            min-height: 250mm;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cover-hero {
+            background: linear-gradient(135deg, #4F46E5 0%, #6366F1 45%, #7C3AED 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 28px 32px 32px;
+            margin-bottom: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover-hero::after {
+            content: '';
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 160px;
+            height: 160px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+        }
+
+        .cover-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.18);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 999px;
+            padding: 4px 12px;
+            font-size: 7.5pt;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .cover-hero h1 {
+            font-size: 28pt;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            line-height: 1.1;
+        }
+
+        .cover-hero .subtitle {
+            font-size: 11pt;
+            opacity: 0.92;
+            max-width: 420px;
+            line-height: 1.5;
+        }
+
+        .cover-brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cover-brand .logo-text {
+            font-size: 13pt;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .cover-brand .logo-sub {
+            font-size: 7.5pt;
+            opacity: 0.75;
+            margin-top: 2px;
+        }
+
+        .cover-meta {
+            text-align: right;
+            font-size: 7.5pt;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .cover-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .cover-card-header {
+            background: #f9fafb;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 10px 16px;
+            font-size: 9pt;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .cover-card-body {
+            padding: 16px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 20px;
+        }
+
+        .form-grid .full {
+            grid-column: 1 / -1;
+        }
+
+        .form-field label {
+            display: block;
+            font-size: 7.5pt;
+            color: #6b7280;
+            font-weight: 600;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .form-field .input {
+            border-bottom: 1.5px solid #d1d5db;
+            min-height: 28px;
+            background: transparent;
+        }
+
+        .toc {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 16px 20px;
+            background: #fafafa;
+        }
+
+        .toc h3 {
+            font-size: 9pt;
+            color: #4F46E5;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 24px;
+        }
+
+        .toc-list li {
+            font-size: 8pt;
+            color: #4b5563;
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+
+        .toc-num {
+            color: #4F46E5;
+            font-weight: 700;
+            min-width: 18px;
+        }
+
+        /* Inner pages */
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #4F46E5;
+        }
+
+        .page-header-left h2 {
+            font-size: 13pt;
+            color: #111827;
+            font-weight: 700;
+        }
+
+        .page-header-left p {
+            font-size: 8pt;
+            color: #6b7280;
+            margin-top: 2px;
+        }
+
+        .page-header-right {
+            text-align: right;
+        }
+
+        .page-header-right .logo-text {
+            font-size: 10pt;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-header-right .doc-label {
+            font-size: 7pt;
+            color: #9ca3af;
+        }
+
+        h3.section-title {
+            font-size: 10pt;
+            color: #4F46E5;
+            margin: 16px 0 8px;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+        }
+
+        h3.section-title .num {
+            background: #4F46E5;
+            color: white;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9pt;
+            flex-shrink: 0;
+        }
+
+        p.body {
+            font-size: 9pt;
+            color: #4b5563;
+            margin-bottom: 8px;
+        }
+
+        .intro-box {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-left: 4px solid #4F46E5;
+            border-radius: 4px;
+            padding: 10px 14px;
+            font-size: 8.5pt;
+            color: #374151;
+            margin-bottom: 12px;
+        }
+
+        .bullet-list {
+            list-style: none;
+            margin: 6px 0 12px;
+        }
+
+        .bullet-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 9pt;
+            color: #4b5563;
+            margin-bottom: 5px;
+            padding-left: 2px;
+        }
+
+        .bullet-list li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #4F46E5;
+            border-radius: 50%;
+            margin-top: 6px;
+            flex-shrink: 0;
+        }
+
+        .step-list {
+            counter-reset: step;
+            list-style: none;
+            margin: 8px 0 12px;
+        }
+
+        .step-list li {
+            counter-increment: step;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 6px;
+            font-size: 9pt;
+            color: #4b5563;
+        }
+
+        .step-list li::before {
+            content: counter(step);
+            background: #eef2ff;
+            color: #4F46E5;
+            font-weight: 700;
+            font-size: 8pt;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .step-list li strong {
+            color: #1f2937;
+        }
+
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 16px;
+            font-size: 8pt;
+        }
+
+        .data-table thead tr {
+            background: #4F46E5;
+            color: white;
+        }
+
+        .data-table th {
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 7.5pt;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .data-table td {
+            padding: 7px 10px;
+            border-bottom: 1px solid #e5e7eb;
+            color: #374151;
+            vertical-align: top;
+        }
+
+        .data-table tbody tr:nth-child(even) {
+            background: #f9fafb;
+        }
+
+        .data-table tbody tr.empty td {
+            height: 28px;
+            background: white;
+        }
+
+        .data-table tbody tr.empty:nth-child(even) td {
+            background: #fafafa;
+        }
+
+        .info-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-left: 4px solid #3b82f6;
+            border-radius: 4px;
+            padding: 8px 12px;
+            margin: 10px 0;
+            font-size: 8pt;
+            color: #1e40af;
+        }
+
+        .info-box strong {
+            font-weight: 700;
+        }
+
+        /* Checklists */
+        .checklist {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 16px;
+            margin: 8px 0 12px;
+        }
+
+        .checklist.single {
+            grid-template-columns: 1fr;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 8.5pt;
+            color: #374151;
+        }
+
+        .check-box {
+            width: 14px;
+            height: 14px;
+            border: 1.5px solid #9ca3af;
+            border-radius: 3px;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        /* Signatures */
+        .signature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 32px;
+            margin-top: 12px;
+        }
+
+        .signature-field .line {
+            border-bottom: 1.5px solid #374151;
+            height: 32px;
+            margin-bottom: 3px;
+        }
+
+        .signature-field .label {
+            font-size: 7pt;
+            color: #6b7280;
+        }
+
+        .disclaimer {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            border-radius: 4px;
+            padding: 10px 14px;
+            margin: 16px 0 12px;
+            font-size: 7.5pt;
+            color: #991b1b;
+            line-height: 1.5;
+        }
+
+        .treatflow-hint {
+            background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+            color: white;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 14px 0;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .treatflow-hint-icon {
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8pt;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            flex-shrink: 0;
+        }
+
+        .treatflow-hint h4 {
+            font-size: 9.5pt;
+            margin-bottom: 3px;
+        }
+
+        .treatflow-hint p {
+            font-size: 8pt;
+            opacity: 0.9;
+        }
+
+        .treatflow-hint .url {
+            font-weight: 700;
+            font-size: 8.5pt;
+            margin-top: 4px;
+            display: block;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding-top: 16px;
+            border-top: 1px solid #e5e7eb;
+            font-size: 7pt;
+            color: #9ca3af;
+            text-align: center;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- SEITE 1: Deckblatt -->
+        <div class="cover">
+            <div class="cover-hero">
+                <div class="cover-badge">Kostenlose Vorlage</div>
+                <h1>Hygieneplan</h1>
+                <p class="subtitle">Vorlage für Kosmetikstudios, Nagelstudios und Beauty-Studios – sofort einsetzbar und anpassbar</p>
+                <div class="cover-brand">
+                    <div>
+                        <div class="logo-text">treatflow</div>
+                        <div class="logo-sub">Studio-Software für Beauty-Profis</div>
+                    </div>
+                    <div class="cover-meta">
+                        Version: ___________<br>
+                        Erstellt am: ___________<br>
+                        www.treatflow.io
+                    </div>
+                </div>
+            </div>
+
+            <div class="cover-card">
+                <div class="cover-card-header">Angaben zum Studio</div>
+                <div class="cover-card-body">
+                    <div class="form-grid">
+                        <div class="form-field full">
+                            <label>Name des Studios</label>
+                            <div class="input"></div>
+                        </div>
+                        <div class="form-field">
+                            <label>Inhaber:in / Verantwortliche:r</label>
+                            <div class="input"></div>
+                        </div>
+                        <div class="form-field">
+                            <label>Telefon / E-Mail</label>
+                            <div class="input"></div>
+                        </div>
+                        <div class="form-field full">
+                            <label>Adresse</label>
+                            <div class="input"></div>
+                        </div>
+                        <div class="form-field">
+                            <label>Zuständiges Gesundheitsamt</label>
+                            <div class="input"></div>
+                        </div>
+                        <div class="form-field">
+                            <label>Letzte Aktualisierung</label>
+                            <div class="input"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toc">
+                <h3>Inhaltsverzeichnis</h3>
+                <ul class="toc-list">
+                    <li><span class="toc-num">1</span> Geltungsbereich</li>
+                    <li><span class="toc-num">2</span> Reinigungs- und Desinfektionsplan</li>
+                    <li><span class="toc-num">3</span> Desinfektionsmittel</li>
+                    <li><span class="toc-num">4</span> Instrumentenaufbereitung</li>
+                    <li><span class="toc-num">5</span> Händehygiene & Schutzausrüstung</li>
+                    <li><span class="toc-num">6</span> Abfallentsorgung</li>
+                    <li><span class="toc-num">7</span> Schulung & Dokumentation</li>
+                    <li><span class="toc-num">8</span> Checklisten</li>
+                    <li><span class="toc-num">9</span> Schulungsnachweis</li>
+                    <li><span class="toc-num">10</span> Bestätigung & Unterschrift</li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <p>Kostenlose Vorlage von Treatflow | www.treatflow.io/hygieneplan-kosmetikstudio-pdf</p>
+            </div>
+        </div>
+
+        <!-- SEITE 2: Geltungsbereich -->
+        <div class="page-break">
+            <div class="page-header">
+                <div class="page-header-left">
+                    <h2>Hygieneplan</h2>
+                    <p>Vorlage für Kosmetik- und Nagelstudios</p>
+                </div>
+                <div class="page-header-right">
+                    <div class="logo-text">treatflow</div>
+                    <div class="doc-label">Studio: _________________________</div>
+                </div>
+            </div>
+
+            <h3 class="section-title"><span class="num">1</span> Geltungsbereich</h3>
+            <div class="intro-box">
+                Dieser Hygieneplan gilt für alle Räumlichkeiten, Behandlungen und Mitarbeiter:innen des oben genannten Studios.
+                Er regelt die Durchführung und Dokumentation aller hygienerelevanten Maßnahmen und ist für alle Mitarbeiter:innen verbindlich.
+            </div>
+            <p class="body">Dieser Hygieneplan umfasst insbesondere:</p>
+            <ul class="bullet-list">
+                <li>Alle Behandlungsräume und Arbeitsbereiche</li>
+                <li>Empfangs- und Wartebereich</li>
+                <li>Sanitäranlagen und Personalräume</li>
+                <li>Lager- und Aufbereitungsräume</li>
+                <li>Alle fest angestellten und freien Mitarbeiter:innen</li>
+            </ul>
+
+            <h3 class="section-title"><span class="num">2</span> Reinigungs- und Desinfektionsplan</h3>
+            <p class="body">Der folgende Plan legt fest, welche Bereiche und Gegenstände wann, wie und von wem gereinigt und desinfiziert werden müssen.</p>
+
+            <table class="data-table no-break">
+                <thead>
+                    <tr>
+                        <th style="width: 22%">Was</th>
+                        <th style="width: 18%">Wann</th>
+                        <th style="width: 32%">Wie / Womit</th>
+                        <th style="width: 18%">Wer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Behandlungsliege</td><td>Nach jedem Kunden</td><td>Flächendesinfektion (VAH-gelistet)</td><td>Behandler:in</td></tr>
+                    <tr><td>Arbeitsinstrumente</td><td>Nach jedem Kunden</td><td>Desinfektion + ggf. Sterilisation</td><td>Behandler:in</td></tr>
+                    <tr><td>Arbeitsflächen</td><td>Nach jedem Kunden</td><td>Wischdesinfektion</td><td>Behandler:in</td></tr>
+                    <tr><td>Fußboden Behandlung</td><td>Täglich</td><td>Feuchtreinigung mit Reiniger</td><td>Reinigungskraft</td></tr>
+                    <tr><td>Sanitäranlagen</td><td>Täglich</td><td>Reinigung + Desinfektion</td><td>Reinigungskraft</td></tr>
+                    <tr><td>Türgriffe / Schalter</td><td>Mehrmals täglich</td><td>Wischdesinfektion</td><td>Alle</td></tr>
+                    <tr><td>Empfangsbereich</td><td>Täglich</td><td>Feuchtreinigung</td><td>Reinigungskraft</td></tr>
+                    <tr><td>Waschbecken</td><td>Täglich</td><td>Reinigung + Desinfektion</td><td>Reinigungskraft</td></tr>
+                    <tr><td>Handtücher / Bezüge</td><td>Nach jedem Kunden</td><td>60°C Wäsche</td><td>Zuständige:r</td></tr>
+                    <tr><td>Abfallbehälter</td><td>Täglich / bei Bedarf</td><td>Entleerung + Reinigung</td><td>Reinigungskraft</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SEITE 3: Desinfektionsmittel + Instrumentenaufbereitung -->
+        <div class="page-break">
+            <div class="page-header">
+                <div class="page-header-left">
+                    <h2>Hygieneplan</h2>
+                    <p>Reinigung, Desinfektion & Aufbereitung</p>
+                </div>
+                <div class="page-header-right">
+                    <div class="logo-text">treatflow</div>
+                    <div class="doc-label">Studio: _________________________</div>
+                </div>
+            </div>
+
+            <h3 class="section-title"><span class="num">3</span> Verwendete Desinfektionsmittel</h3>
+            <div class="info-box">
+                <strong>Wichtig:</strong> Bitte nur VAH-gelistete Desinfektionsmittel verwenden. Einwirkzeiten und Konzentrationen sind strikt einzuhalten.
+            </div>
+            <p class="body">Bitte hier die im Studio verwendeten Desinfektionsmittel eintragen:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th style="width: 28%">Produkt</th>
+                        <th style="width: 24%">Einsatzbereich</th>
+                        <th style="width: 22%">Konzentration</th>
+                        <th style="width: 26%">Einwirkzeit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="section-title"><span class="num">4</span> Instrumentenaufbereitung</h3>
+            <p class="body">Alle wiederverwendbaren Instrumente müssen nach jeder Anwendung aufbereitet werden:</p>
+            <ol class="step-list">
+                <li><span><strong>Grobe Reinigung</strong> – Entfernung sichtbarer Verschmutzungen direkt nach Gebrauch</span></li>
+                <li><span><strong>Desinfektion</strong> – Einlegen in Desinfektionslösung (VAH-gelistet, vorgeschriebene Einwirkzeit beachten)</span></li>
+                <li><span><strong>Spülung</strong> – Gründliches Abspülen unter fließendem Wasser</span></li>
+                <li><span><strong>Trocknung</strong> – Vollständige Trocknung vor Lagerung oder Sterilisation</span></li>
+                <li><span><strong>Sterilisation</strong> (falls erforderlich) – Im Autoklaven gemäß Herstellerangaben</span></li>
+                <li><span><strong>Verpackung / Lagerung</strong> – Staubfrei und geschützt aufbewahren</span></li>
+            </ol>
+            <div class="intro-box">
+                Einmalinstrumente und Einmalmaterialien werden nach einmaligem Gebrauch entsorgt und dürfen nicht wiederverwendet werden.
+            </div>
+        </div>
+
+        <!-- SEITE 4: Händehygiene + PSA -->
+        <div class="page-break">
+            <div class="page-header">
+                <div class="page-header-left">
+                    <h2>Hygieneplan</h2>
+                    <p>Händehygiene & persönliche Schutzausrüstung</p>
+                </div>
+                <div class="page-header-right">
+                    <div class="logo-text">treatflow</div>
+                    <div class="doc-label">Studio: _________________________</div>
+                </div>
+            </div>
+
+            <h3 class="section-title"><span class="num">5</span> Händehygiene</h3>
+            <p class="body">Die Händehygiene ist eine der wichtigsten Maßnahmen zur Infektionsprävention:</p>
+            <ul class="bullet-list">
+                <li>Händedesinfektion vor und nach jeder Behandlung</li>
+                <li>Händedesinfektion nach dem Ausziehen von Handschuhen</li>
+                <li>Händewaschen bei sichtbarer Verschmutzung</li>
+                <li>Verwendung von Einmalhandschuhen bei invasiven Tätigkeiten</li>
+                <li>Hautpflegemittel zur Pflege beanspruchter Haut bereitstellen</li>
+                <li>Desinfektionsmittelspender an jedem Arbeitsplatz und im Eingangsbereich</li>
+            </ul>
+
+            <h3 class="section-title"><span class="num">5b</span> Persönliche Schutzausrüstung (PSA)</h3>
+            <p class="body">Folgende Schutzausrüstung ist je nach Behandlung bereitzuhalten und zu verwenden:</p>
+            <div class="two-col">
+                <ul class="bullet-list">
+                    <li>Einmalhandschuhe (bei Hautkontakt, invasiven Behandlungen)</li>
+                    <li>Mundschutz (bei Staub- oder Aerosolbildung, z. B. Nagelfräser)</li>
+                </ul>
+                <ul class="bullet-list">
+                    <li>Schutzbrille (bei Laser- oder IPL-Behandlungen)</li>
+                    <li>Arbeitskleidung (täglich wechseln, 60°C waschbar)</li>
+                </ul>
+            </div>
+
+            <h3 class="section-title"><span class="num">6</span> Abfallentsorgung</h3>
+            <p class="body">Die sachgerechte Entsorgung von Abfällen ist Teil des Hygieneplans:</p>
+            <ul class="bullet-list">
+                <li>Normale Abfälle (Verpackungen, Papier) – Hausmüll</li>
+                <li>Kontaminierte Einmalmaterialien (Tupfer, Handschuhe) – gesonderte Entsorgung</li>
+                <li>Spitze / scharfe Gegenstände (Nadeln, Klingen) – durchstichsichere Behälter</li>
+                <li>Desinfektionsmittelreste – gemäß Herstellerangaben entsorgen</li>
+                <li>Abfallbehälter täglich leeren und bei Bedarf desinfizieren</li>
+            </ul>
+        </div>
+
+        <!-- SEITE 5: Schulung + Dokumentation -->
+        <div class="page-break">
+            <div class="page-header">
+                <div class="page-header-left">
+                    <h2>Hygieneplan</h2>
+                    <p>Schulung, Unterweisung & Dokumentation</p>
+                </div>
+                <div class="page-header-right">
+                    <div class="logo-text">treatflow</div>
+                    <div class="doc-label">Studio: _________________________</div>
+                </div>
+            </div>
+
+            <h3 class="section-title"><span class="num">7</span> Schulung und Unterweisung</h3>
+            <p class="body">Alle Mitarbeiter:innen müssen regelmäßig über die Inhalte dieses Hygieneplans unterwiesen werden. Schulungen sind zu dokumentieren.</p>
+            <ul class="bullet-list">
+                <li>Erstunterweisung vor Arbeitsbeginn (für neue Mitarbeiter:innen)</li>
+                <li>Jährliche Auffrischungsschulung für das gesamte Team</li>
+                <li>Anlassbezogene Schulung bei Änderungen im Hygieneplan</li>
+                <li>Dokumentation: Datum, Inhalte, Teilnehmerliste, Unterschriften</li>
+            </ul>
+
+            <h3 class="section-title"><span class="num">7b</span> Dokumentation</h3>
+            <p class="body">Folgende Nachweise sollten lückenlos geführt und aufbewahrt werden:</p>
+            <div class="two-col">
+                <ul class="bullet-list">
+                    <li>Reinigungs- und Desinfektionsprotokolle</li>
+                    <li>Schulungsnachweise mit Unterschriften</li>
+                    <li>Aufbereitungsprotokolle für Instrumente</li>
+                </ul>
+                <ul class="bullet-list">
+                    <li>Wartungsprotokolle für Geräte (Autoklav, Staubabsaugung etc.)</li>
+                    <li>Chargennachweise für Sterilisation</li>
+                    <li>Aktualisierungsprotokoll für den Hygieneplan</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SEITE 6: Checklisten -->
+        <div class="page-break">
+            <div class="page-header">
+                <div class="page-header-left">
+                    <h2>Hygieneplan</h2>
+                    <p>Checklisten für den Studioalltag</p>
+                </div>
+                <div class="page-header-right">
+                    <div class="logo-text">treatflow</div>
+                    <div class="doc-label">Studio: _________________________</div>
+                </div>
+            </div>
+
+            <h3 class="section-title"><span class="num">8</span> Tägliche Checkliste</h3>
+            <p class="body">Folgende Punkte sollten täglich geprüft und dokumentiert werden:</p>
+            <div class="checklist">
+                <div class="check-item"><div class="check-box"></div><span>Alle Arbeitsflächen desinfiziert</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Instrumente aufbereitet und einsatzbereit</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Desinfektionsmittelspender gefüllt</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Handtücher und Einmalmaterialien aufgefüllt</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Sanitäranlagen gereinigt</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Abfallbehälter geleert</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Fußböden feucht gereinigt</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Behandlungsliegen geprüft und desinfiziert</span></div>
+            </div>
+
+            <h3 class="section-title"><span class="num">8b</span> Wöchentliche Checkliste</h3>
+            <div class="checklist single">
+                <div class="check-item"><div class="check-box"></div><span>Bestandskontrolle Desinfektionsmittel und Verbrauchsmaterial</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Tiefenreinigung aller Behandlungsräume</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Prüfung und Reinigung der Staubabsaugung</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Kühlschrank-Temperaturkontrolle (falls Produkte gekühlt werden)</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Wäsche- und Textilbestand prüfen</span></div>
+            </div>
+
+            <h3 class="section-title"><span class="num">8c</span> Monatliche / Jährliche Prüfung</h3>
+            <div class="checklist single">
+                <div class="check-item"><div class="check-box"></div><span>Hygieneplan auf Aktualität prüfen und ggf. aktualisieren</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Wartung und Prüfung technischer Geräte</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Überblick über Schulungsnachweise</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Nachbestellung von Desinfektionsmitteln und Material</span></div>
+                <div class="check-item"><div class="check-box"></div><span>Vorbereitung auf mögliche Begehungen durch das Gesundheitsamt</span></div>
+            </div>
+        </div>
+
+        <!-- SEITE 7: Schulungsnachweis + Unterschriften -->
+        <div class="page-break">
+            <div class="page-header">
+                <div class="page-header-left">
+                    <h2>Hygieneplan</h2>
+                    <p>Schulungsnachweis & Bestätigung</p>
+                </div>
+                <div class="page-header-right">
+                    <div class="logo-text">treatflow</div>
+                    <div class="doc-label">Studio: _________________________</div>
+                </div>
+            </div>
+
+            <h3 class="section-title"><span class="num">9</span> Schulungsnachweis</h3>
+            <p class="body">Bitte für jede durchgeführte Schulung eine Zeile ausfüllen:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th style="width: 14%">Datum</th>
+                        <th style="width: 36%">Thema</th>
+                        <th style="width: 24%">Teilnehmer:in</th>
+                        <th style="width: 26%">Unterschrift</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                    <tr class="empty"><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="section-title no-break"><span class="num">10</span> Bestätigung und Unterschrift</h3>
+            <p class="body">Hiermit bestätigen die Unterzeichnenden, dass sie den Inhalt dieses Hygieneplans zur Kenntnis genommen haben und sich zur Einhaltung verpflichten.</p>
+
+            <div class="signature-grid no-break">
+                <div class="signature-field"><div class="line"></div><div class="label">Name, Datum</div></div>
+                <div class="signature-field"><div class="line"></div><div class="label">Unterschrift</div></div>
+                <div class="signature-field"><div class="line"></div><div class="label">Name, Datum</div></div>
+                <div class="signature-field"><div class="line"></div><div class="label">Unterschrift</div></div>
+                <div class="signature-field"><div class="line"></div><div class="label">Name, Datum</div></div>
+                <div class="signature-field"><div class="line"></div><div class="label">Unterschrift</div></div>
+                <div class="signature-field"><div class="line"></div><div class="label">Name, Datum</div></div>
+                <div class="signature-field"><div class="line"></div><div class="label">Unterschrift</div></div>
+            </div>
+
+            <div class="disclaimer">
+                <strong>Hinweis zur Verwendung:</strong> Diese Vorlage dient ausschließlich als allgemeine Orientierungshilfe. Sie erhebt keinen Anspruch auf Vollständigkeit, Aktualität oder rechtliche Wirksamkeit und ersetzt keine individuelle rechtliche, medizinische oder fachliche Beratung. Wir empfehlen, den fertigen Hygieneplan durch das zuständige Gesundheitsamt oder eine fachkundige Stelle prüfen zu lassen.
+            </div>
+
+            <div class="treatflow-hint no-break">
+                <div class="treatflow-hint-icon">TF</div>
+                <div>
+                    <h4>Hygieneplan digital verwalten?</h4>
+                    <p>Mit Treatflow organisierst du Formulare, Dokumentation und Studioverwaltung komplett digital.</p>
+                    <span class="url">www.treatflow.io</span>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Kostenlose Vorlage von Treatflow | www.treatflow.io/hygieneplan-kosmetikstudio-pdf</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

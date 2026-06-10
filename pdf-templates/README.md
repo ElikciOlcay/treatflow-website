@@ -32,6 +32,18 @@ npx puppeteer print pdf-templates/anamnesebogen-kosmetik-einwilligung.html \
   public/downloads/anamnesebogen-kosmetik-einwilligung.pdf
 ```
 
+## Hygieneplan Kosmetikstudio
+
+**Datei:** `hygieneplan-kosmetikstudio.html`
+
+### PDF erstellen
+
+```bash
+node scripts/generate-hygieneplan-pdf.mjs
+```
+
+Speichert unter: `public/downloads/hygieneplan-kosmetikstudio.pdf`
+
 ## Inhalt des Anamnesebogens
 
 - Personliche Daten
