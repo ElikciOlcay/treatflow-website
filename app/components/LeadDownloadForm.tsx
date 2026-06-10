@@ -25,11 +25,19 @@ export default function LeadDownloadForm({
 }: LeadDownloadFormProps) {
     const [email, setEmail] = useState('');
     const [studioName, setStudioName] = useState('');
+    const [contactConsent, setContactConsent] = useState(false);
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
     const [errorMsg, setErrorMsg] = useState('');
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
+
+        if (!contactConsent) {
+            setErrorMsg('Bitte stimme der Kontaktaufnahme zu, um den Download zu starten.');
+            setStatus('error');
+            return;
+        }
+
         setStatus('loading');
         setErrorMsg('');
 
@@ -37,7 +45,7 @@ export default function LeadDownloadForm({
             const res = await fetch('/api/lead-magnet', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, studioName, leadSource }),
+                body: JSON.stringify({ email, studioName, leadSource, contactConsent: true }),
             });
 
             const data = await res.json();
@@ -135,13 +143,36 @@ export default function LeadDownloadForm({
                     />
                 </div>
 
+                <label className="flex items-start gap-3 cursor-pointer">
+                    <input
+                        type="checkbox"
+                        checked={contactConsent}
+                        onChange={(e) => {
+                            setContactConsent(e.target.checked);
+                            if (e.target.checked && status === 'error') {
+                                setStatus('idle');
+                                setErrorMsg('');
+                            }
+                        }}
+                        className="mt-1 h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                    />
+                    <span className="text-sm text-gray-600 leading-relaxed">
+                        Ich bin damit einverstanden, dass Treatflow mich bzw. mein Studio per E-Mail
+                        kontaktieren darf (z. B. zu Treatflow und relevanten Studio-Themen). Die
+                        Einwilligung kann jederzeit widerrufen werden.{' '}
+                        <Link href="/datenschutz" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-2">
+                            Datenschutzerklärung
+                        </Link>
+                    </span>
+                </label>
+
                 {status === 'error' && (
                     <p className="text-red-600 text-sm">{errorMsg}</p>
                 )}
 
                 <button
                     type="submit"
-                    disabled={status === 'loading'}
+                    disabled={status === 'loading' || !contactConsent}
                     className="w-full bg-indigo-600 text-white px-6 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center"
                 >
                     {status === 'loading' ? (

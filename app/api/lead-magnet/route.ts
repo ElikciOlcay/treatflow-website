@@ -7,6 +7,7 @@ async function sendLoopsNotification(data: {
     studioName: string;
     leadSource: string;
     timestamp: string;
+    contactConsent: boolean;
 }) {
     const apiKey = process.env.LOOPS_API_KEY;
     const transactionalId = 'cmpwetiyf21im0jybyi331fig';
@@ -31,6 +32,7 @@ async function sendLoopsNotification(data: {
                 studioName: data.studioName,
                 leadSource: data.leadSource,
                 timestamp: data.timestamp,
+                contactConsent: data.contactConsent ? 'Ja' : 'Nein',
             },
         }),
     });
@@ -47,7 +49,14 @@ async function sendLoopsNotification(data: {
 export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
-        const { email, studioName, leadSource } = body;
+        const { email, studioName, leadSource, contactConsent } = body;
+
+        if (contactConsent !== true) {
+            return NextResponse.json(
+                { error: 'Bitte stimme der Kontaktaufnahme zu, um den Download zu starten.' },
+                { status: 400 }
+            );
+        }
 
         if (!email || typeof email !== 'string') {
             return NextResponse.json(
@@ -81,6 +90,7 @@ export async function POST(request: NextRequest) {
             studioName: studio,
             leadSource: source,
             timestamp,
+            contactConsent: true,
         });
 
         return NextResponse.json({ success: true });
