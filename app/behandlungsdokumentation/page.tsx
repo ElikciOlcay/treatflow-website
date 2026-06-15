@@ -122,8 +122,8 @@ export default function BehandlungsdokumentationPage() {
                     <div className="mt-12 max-w-5xl mx-auto">
                         <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
                             <Image
-                                src="/images/branchen/hero-kosmetikstudio.jpg"
-                                alt="Professionelles Kosmetikstudio – Dokumentation im Fokus"
+                                src="/images/lifestyle/dokumentation-waehrend-behandlung.png"
+                                alt="Behandlungsdokumentation am Tablet während der Kosmetikbehandlung"
                                 fill
                                 sizes="100vw"
                                 className="object-cover"

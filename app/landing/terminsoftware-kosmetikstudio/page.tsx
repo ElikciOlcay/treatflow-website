@@ -227,7 +227,7 @@ export default function TerminsoftwareLandingPage() {
                         <div className="relative">
                             <div className="relative w-full rounded-2xl shadow-2xl overflow-hidden aspect-[4/3]">
                                 <Image
-                                    src="/images/branchen/hero-kosmetikstudio.jpg"
+                                    src="/images/lifestyle/landing-terminsoftware-team.png"
                                     alt="Terminsoftware für Kosmetikstudios - Online-Buchung und Kalender"
                                     fill
                                     sizes="(max-width: 1024px) 100vw, 50vw"

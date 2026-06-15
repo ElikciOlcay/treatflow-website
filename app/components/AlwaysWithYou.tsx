@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Sunrise, Sparkles, Sofa, Smartphone, Tablet, Monitor } from 'lucide-react';
 
 const moments = [
@@ -58,25 +59,35 @@ export default function AlwaysWithYou() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center">
-            <div className="bg-white rounded-3xl border border-gray-200 shadow-xl p-8 lg:p-10 w-full max-w-md">
-              <div className="text-center mb-8">
+          <div className="flex flex-col items-center gap-6">
+            <div className="relative w-full max-w-md rounded-2xl shadow-xl overflow-hidden aspect-[4/3]">
+              <Image
+                src="/images/lifestyle/studio-immer-im-blick.png"
+                alt="Studio-Inhaber zeigt Kundin den Treatflow-Dashboard auf dem Tablet im Empfangsbereich"
+                fill
+                sizes="(max-width: 1024px) 100vw, 448px"
+                className="object-cover object-center"
+              />
+            </div>
+
+            <div className="bg-white rounded-3xl border border-gray-200 shadow-xl p-6 lg:p-8 w-full max-w-md">
+              <div className="text-center mb-6">
                 <div className="text-sm font-semibold text-indigo-600 mb-2">
                   Funktioniert auf
                 </div>
-                <div className="text-2xl font-bold text-gray-900">
+                <div className="text-xl font-bold text-gray-900">
                   Jedem Gerät
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-3 gap-3">
                 {devices.map((d) => (
                   <div
                     key={d.label}
-                    className="flex flex-col items-center gap-3 bg-gray-50 rounded-2xl p-5 border border-gray-100"
+                    className="flex flex-col items-center gap-2 bg-gray-50 rounded-2xl p-4 border border-gray-100"
                   >
-                    <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
-                      <d.icon className="h-6 w-6 text-indigo-600" />
+                    <div className="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center">
+                      <d.icon className="h-5 w-5 text-indigo-600" />
                     </div>
                     <span className="text-sm font-medium text-gray-700">
                       {d.label}
@@ -85,7 +96,7 @@ export default function AlwaysWithYou() {
                 ))}
               </div>
 
-              <div className="mt-8 text-center">
+              <div className="mt-6 text-center">
                 <div className="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 px-4 py-2 rounded-full text-sm font-medium">
                   <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
                   Echtzeit-Synchronisation

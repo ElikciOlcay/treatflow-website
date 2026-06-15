@@ -129,8 +129,8 @@ export default function KundenverwaltungPage() {
                     <div className="mt-12 max-w-5xl mx-auto">
                         <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
                             <Image
-                                src="/images/funktionen/hero-kundenverwaltung.jpg"
-                                alt="Gute Beziehung zu Kunden"
+                                src="/images/lifestyle/kundenverwaltung-kartei.png"
+                                alt="Kosmetikerin und Kundin besprechen Kundendaten am Tablet in der Beratung"
                                 fill
                                 sizes="100vw"
                                 className="object-cover"

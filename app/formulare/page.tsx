@@ -118,6 +118,19 @@ export default function FormularePage() {
                         </div>
                     </div>
 
+                    {/* Lifestyle-Bild */}
+                    <div className="max-w-5xl mx-auto mb-12">
+                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
+                            <Image
+                                src="/images/lifestyle/formulare-digital-ausfuellen.png"
+                                alt="Digitale Formulare und Anamnese – Beratung am Tablet im Kosmetikstudio"
+                                fill
+                                sizes="100vw"
+                                className="object-cover object-center"
+                            />
+                        </div>
+                    </div>
+
                     {/* Formulare Marketplace Screenshot */}
                     <div className="max-w-5xl mx-auto">
                         <Image

@@ -198,8 +198,8 @@ export default function LaserHaarentfernungSoftwarePage() {
                     <div className="mt-12 max-w-5xl mx-auto">
                         <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
                             <Image
-                                src="/images/branchen/hero-laser.jpg"
-                                alt="Professionelles Laser-Studio – moderne Haarentfernung"
+                                src="/images/lifestyle/laser-studio-beratung.png"
+                                alt="Laser-Behandlungsberatung mit Tablet-Dokumentation im modernen Studio"
                                 fill
                                 sizes="100vw"
                                 className="object-cover"

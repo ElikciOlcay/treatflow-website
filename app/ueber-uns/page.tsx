@@ -1,5 +1,6 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import Image from 'next/image';
 import { Heart, Users, Shield, Zap } from 'lucide-react';
 
 export const metadata = {
@@ -76,17 +77,14 @@ export default function UeberUnsPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="bg-gradient-to-br from-indigo-100 to-purple-100 rounded-2xl p-8 text-center">
-                            <div className="w-24 h-24 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
-                                <Heart className="h-12 w-12 text-white" />
-                            </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                                Mit Herz entwickelt
-                            </h3>
-                            <p className="text-gray-600 leading-relaxed">
-                                Jede Funktion in Treatflow entsteht aus echten Gesprächen mit Kosmetikerinnen.
-                                Wir hören zu, verstehen die Herausforderungen und entwickeln Lösungen, die wirklich helfen.
-                            </p>
+                        <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
+                            <Image
+                                src="/images/lifestyle/ueber-uns-studio-interior.png"
+                                alt="Treatflow im Einsatz – Studio-Beratung mit digitaler Kundenverwaltung"
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                className="object-cover object-center"
+                            />
                         </div>
                     </div>
                 </div>

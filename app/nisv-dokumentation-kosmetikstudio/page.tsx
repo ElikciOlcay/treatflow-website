@@ -27,7 +27,7 @@ export const metadata = {
         url: 'https://www.treatflow.io/nisv-dokumentation-kosmetikstudio',
         images: [
             {
-                url: '/images/branchen/hero-kosmetikstudio.jpg',
+                url: '/images/lifestyle/nisv-dokumentation-sicherheit.png',
                 width: 1200,
                 height: 630,
                 alt: 'Treatflow NiSV-Dokumentation für Kosmetikstudios',
@@ -300,7 +300,7 @@ export default function NisvDokumentationKosmetikstudioPage() {
                     <div className="mt-12 max-w-5xl mx-auto">
                         <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
                             <Image
-                                src="/images/branchen/hero-kosmetikstudio.jpg"
+                                src="/images/lifestyle/nisv-dokumentation-sicherheit.png"
                                 alt="NiSV-konforme Dokumentation im Kosmetikstudio"
                                 fill
                                 sizes="100vw"

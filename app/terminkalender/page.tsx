@@ -118,6 +118,19 @@ export default function TerminkalenderPage() {
                         </div>
                     </div>
 
+                    {/* Lifestyle-Bild */}
+                    <div className="max-w-5xl mx-auto mb-12">
+                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
+                            <Image
+                                src="/images/lifestyle/terminkalender-wochenplanung.png"
+                                alt="Terminplanung im Kosmetikstudio – Beratung am Laptop mit Kalenderansicht"
+                                fill
+                                sizes="100vw"
+                                className="object-cover object-center"
+                            />
+                        </div>
+                    </div>
+
                     {/* Terminkalender Screenshot */}
                     <div className="max-w-5xl mx-auto">
                         <Image
