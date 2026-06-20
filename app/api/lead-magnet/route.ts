@@ -1,6 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const LOOPS_API_URL = 'https://app.loops.so/api/v1/transactional';
+const LOOPS_API_BASE = 'https://app.loops.so/api/v1';
+const LOOPS_TRANSACTIONAL_URL = `${LOOPS_API_BASE}/transactional`;
+const LOOPS_CONTACTS_UPDATE_URL = `${LOOPS_API_BASE}/contacts/update`;
+
+/** Loops-Mailinglisten pro Lead-Magnet (startet den zugehörigen Workflow) */
+const LEAD_MAGNET_MAILING_LISTS: Record<string, string> = {
+    'Hygieneplan Kosmetikstudio PDF': 'cmq7r8nvt5uiy0jxi1atv03zb',
+};
 
 async function sendLoopsNotification(data: {
     email: string;
@@ -18,7 +25,7 @@ async function sendLoopsNotification(data: {
         return;
     }
 
-    const response = await fetch(LOOPS_API_URL, {
+    const response = await fetch(LOOPS_TRANSACTIONAL_URL, {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${apiKey}`,
@@ -41,6 +48,50 @@ async function sendLoopsNotification(data: {
         const error = await response.text();
         console.error('Loops API Error:', error);
         throw new Error(`Loops API Error: ${response.status}`);
+    }
+
+    return response.json();
+}
+
+async function addLeadToLoops(data: {
+    email: string;
+    studioName: string;
+    leadSource: string;
+    mailingListId?: string;
+}) {
+    const apiKey = process.env.LOOPS_API_KEY;
+
+    if (!apiKey) {
+        console.warn('LOOPS_API_KEY nicht konfiguriert');
+        return;
+    }
+
+    const payload: Record<string, unknown> = {
+        email: data.email,
+        source: data.leadSource,
+        studioName: data.studioName,
+        userType: 'lead_magnet',
+    };
+
+    if (data.mailingListId) {
+        payload.mailingLists = {
+            [data.mailingListId]: true,
+        };
+    }
+
+    const response = await fetch(LOOPS_CONTACTS_UPDATE_URL, {
+        method: 'PUT',
+        headers: {
+            'Authorization': `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+    });
+
+    if (!response.ok) {
+        const error = await response.text();
+        console.error('Loops Contact API Error:', error);
+        throw new Error(`Loops Contact API Error: ${response.status}`);
     }
 
     return response.json();
@@ -84,14 +135,23 @@ export async function POST(request: NextRequest) {
             minute: '2-digit',
         }) + ' Uhr';
 
-        // Loops Benachrichtigung an dich senden
-        await sendLoopsNotification({
-            email,
-            studioName: studio,
-            leadSource: source,
-            timestamp,
-            contactConsent: true,
-        });
+        const mailingListId = LEAD_MAGNET_MAILING_LISTS[source];
+
+        await Promise.all([
+            addLeadToLoops({
+                email,
+                studioName: studio,
+                leadSource: source,
+                mailingListId,
+            }),
+            sendLoopsNotification({
+                email,
+                studioName: studio,
+                leadSource: source,
+                timestamp,
+                contactConsent: true,
+            }),
+        ]);
 
         return NextResponse.json({ success: true });
     } catch (error) {

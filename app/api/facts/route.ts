@@ -17,7 +17,7 @@ export function GET() {
     const data = {
         $schema: "https://www.treatflow.io/schemas/facts-v1.json",
         version: "1.0",
-        updatedAt: "2026-05-26",
+        updatedAt: "2026-06-17",
         company: {
             name: "Treatflow",
             legalName: "Treatflow GmbH",

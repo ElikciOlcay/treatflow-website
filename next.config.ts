@@ -68,8 +68,8 @@ const nextConfig: NextConfig = {
       { source: '/category/behandlungsdokumentation/', destination: '/behandlungsdokumentation', permanent: true },
       { source: '/uber-treatflow', destination: '/ueber-uns', permanent: true },
       { source: '/uber-treatflow/', destination: '/ueber-uns', permanent: true },
-      { source: '/category/digitale-kundenkartei', destination: '/kundenverwaltung', permanent: true },
-      { source: '/category/digitale-kundenkartei/', destination: '/kundenverwaltung', permanent: true },
+      { source: '/category/digitale-kundenkartei', destination: '/kundenkartei-software', permanent: true },
+      { source: '/category/digitale-kundenkartei/', destination: '/kundenkartei-software', permanent: true },
       { source: '/vom-papier-zum-pixel-warum-ihr-schoenheitssalon-treatflow-fuer-effektive-medizinische-anamnese-und-behandlungsdokumentation-benoetigt', destination: '/behandlungsdokumentation', permanent: true },
       { source: '/vom-papier-zum-pixel-warum-ihr-schoenheitssalon-treatflow-fuer-effektive-medizinische-anamnese-und-behandlungsdokumentation-benoetigt/', destination: '/behandlungsdokumentation', permanent: true },
 
@@ -128,8 +128,8 @@ const nextConfig: NextConfig = {
       },
 
       // Keyword-Kannibalisierung: Duplicate-Intent-Seiten konsolidieren
-      { source: '/kundenkartei-kosmetikstudio', destination: '/kundenverwaltung', permanent: true },
-      { source: '/kundenkartei-kosmetikstudio/', destination: '/kundenverwaltung', permanent: true },
+      { source: '/kundenkartei-kosmetikstudio', destination: '/kundenkartei-software', permanent: true },
+      { source: '/kundenkartei-kosmetikstudio/', destination: '/kundenkartei-software', permanent: true },
       { source: '/terminsoftware-kosmetikstudio', destination: '/terminkalender', permanent: true },
       { source: '/terminsoftware-kosmetikstudio/', destination: '/terminkalender', permanent: true },
       { source: '/online-terminbuchung-kosmetikstudio', destination: '/online-buchungen', permanent: true },

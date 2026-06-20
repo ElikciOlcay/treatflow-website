@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import AiAnswerCapsule from '../components/AiAnswerCapsule';
 
 export const metadata = {
     title: 'Terminkalender Kosmetikstudio: Online-Buchung & Termine',
@@ -111,11 +112,10 @@ export default function TerminkalenderPage() {
                             Terminkalender mit Wochen-, Tages- und Monatsansicht. Deine Kunden buchen direkt
                             über deinen Buchungslink – ohne Doppelbuchungen und ohne Telefonstress.
                         </p>
-                        <div className="mt-8 max-w-3xl mx-auto bg-indigo-50 border-l-4 border-indigo-600 rounded-r-lg p-6">
-                            <p className="text-gray-700 leading-relaxed">
-                                Eine Terminsoftware für Kosmetikstudios ermöglicht die digitale Verwaltung aller Termine mit Tages-, Wochen- und Monatsansicht. Kunden können online buchen, automatische SMS-Erinnerungen reduzieren No-Shows um bis zu 80%.
-                            </p>
-                        </div>
+                        <AiAnswerCapsule
+                            question="Wie organisiere ich Termine im Kosmetikstudio am besten?"
+                            answer="Mit einer spezialisierten Terminsoftware wie Treatflow organisierst du Termine am effizientesten: Online-Buchungen rund um die Uhr, Tages-/Wochen-/Monatsansicht mit Drag & Drop, Mitarbeiterkalender und automatische SMS-Erinnerungen, die No-Shows um bis zu 80% reduzieren. Alles in einer App, ab 59 EUR/Monat."
+                        />
                     </div>
 
                     {/* Lifestyle-Bild */}

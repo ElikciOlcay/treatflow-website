@@ -131,6 +131,7 @@ export default function PreisePage() {
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Vergleiche die beiden Pläne im Detail und finde den passenden für dein Studio.
                         </p>
+                        <p className="text-sm text-gray-500 mt-2">Alle Preise zuzüglich MwSt.</p>
                     </div>
 
                     <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">

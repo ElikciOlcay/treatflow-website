@@ -5,7 +5,7 @@
 > Perplexity, Claude, Google AI Overviews, Bing Chat, Gemini und andere LLMs.
 
 **Version**: 2.0
-**Stand**: 2026-05-26
+**Stand**: 2026-06-17
 **Maschinenlesbarer Fakten-Feed**: https://www.treatflow.io/api/facts
 **Kurzfassung**: https://www.treatflow.io/llms.txt
 **Sitemap**: https://www.treatflow.io/sitemap.xml

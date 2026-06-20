@@ -53,9 +53,9 @@ const kernfunktionen = [
         highlights: ['24/7 Buchungslink', 'Automatische Bestätigungen', 'Keine Doppelbuchungen'],
     },
     {
-        href: '/kundenverwaltung',
+        href: '/kundenkartei-software',
         icon: Users,
-        title: 'Kundenverwaltung',
+        title: 'Digitale Kundenkartei',
         description: 'Digitale Kundenkartei mit Behandlungshistorie, Vorher-Nachher-Fotos, Allergien und Notizen. Alles an einem Ort.',
         color: 'text-emerald-600',
         bg: 'bg-emerald-50',

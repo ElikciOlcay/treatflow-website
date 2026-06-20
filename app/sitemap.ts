@@ -311,5 +311,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ]
 
-    return [...staticRoutes, blogIndex, ...blogRoutes, ...landingRoutes]
+    const aiDiscoveryRoutes = [
+        {
+            url: `${baseUrl}/llms.txt`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/llms-full.txt`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/api/facts`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.6,
+        },
+    ]
+
+    return [...staticRoutes, blogIndex, ...blogRoutes, ...landingRoutes, ...aiDiscoveryRoutes]
 }

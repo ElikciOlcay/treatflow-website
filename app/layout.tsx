@@ -164,6 +164,7 @@ export default function RootLayout({
         </Script>
 
         <link rel="alternate" type="application/rss+xml" title="Treatflow Blog RSS Feed" href="/blog/feed.xml" />
+        <link rel="alternate" type="text/plain" title="LLM Context" href="/llms.txt" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationWebSiteSchema) }}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.treatflow.io/schemas/facts-v1.json",
+  "title": "Treatflow Facts Feed",
+  "description": "JSON-Schema für den maschinenlesbaren Treatflow-Fakten-Feed unter /api/facts",
+  "type": "object",
+  "required": ["version", "updatedAt", "company", "pricing", "coreFeatures"],
+  "properties": {
+    "version": { "type": "string" },
+    "updatedAt": { "type": "string", "format": "date" },
+    "company": {
+      "type": "object",
+      "required": ["name", "website", "description"]
+    },
+    "metrics": { "type": "object" },
+    "pricing": { "type": "object" },
+    "targetIndustries": { "type": "array" },
+    "coreFeatures": { "type": "array" },
+    "compliance": { "type": "object" },
+    "comparedAlternatives": { "type": "array" },
+    "bestFitFor": { "type": "array" },
+    "topQuestions": { "type": "array" },
+    "keyResources": { "type": "object" }
+  }
+}

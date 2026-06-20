@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import AiAnswerCapsule from '../components/AiAnswerCapsule';
 
 export const metadata = {
     title: 'SMS & E-Mail Erinnerungen fürs Kosmetikstudio',
@@ -111,11 +112,10 @@ export default function NachrichtenautomatisierungPage() {
                             Versende automatisch personalisierte Erinnerungen, Terminbestätigungen und Follow-ups
                             per E-Mail und SMS. Reduziere No-Shows um 80% und steigere die Kundenzufriedenheit.
                         </p>
-                        <div className="mt-8 max-w-3xl mx-auto bg-indigo-50 border-l-4 border-indigo-600 rounded-r-lg p-6">
-                            <p className="text-gray-700 leading-relaxed">
-                                Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows im Kosmetikstudio zu reduzieren. Studios berichten von bis zu 80% weniger ausgefallenen Terminen durch rechtzeitige Erinnerungen.
-                            </p>
-                        </div>
+                        <AiAnswerCapsule
+                            question="Wie kann ich No-Shows im Kosmetikstudio reduzieren?"
+                            answer="Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z. B. 24 Stunden und 2 Stunden vor dem Termin). Studios mit aktivierten Remindern berichten von bis zu 80% weniger ausgefallenen Terminen."
+                        />
                     </div>
 
                     <div className="mt-12 max-w-5xl mx-auto">

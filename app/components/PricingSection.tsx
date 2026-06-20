@@ -66,7 +66,8 @@ export default function PricingSection() {
                   €35/Monat • Spare €47/Jahr
                 </p>
               )}
-              <p className="text-sm text-gray-500">Perfekt für kleine Studios und Einzelunternehmer.</p>
+              <p className="text-xs text-gray-500 mt-1">zuzüglich MwSt.</p>
+              <p className="text-sm text-gray-500 mt-2">Digitale Anamnesen, Formulare und Behandlungsdokumentation – ohne Terminplanung.</p>
             </div>
 
             <ul className="space-y-3 mb-6">
@@ -135,7 +136,8 @@ export default function PricingSection() {
                   €53/Monat • Spare €71/Jahr
                 </p>
               )}
-              <p className="text-sm text-indigo-200">Ideal für wachsende Studios mit Online-Buchung.</p>
+              <p className="text-xs text-indigo-200 mt-1">zuzüglich MwSt.</p>
+              <p className="text-sm text-indigo-200 mt-2">Terminkalender, Online-Buchungen und automatische Erinnerungen für dein Studio.</p>
             </div>
 
             <ul className="space-y-3 mb-6">

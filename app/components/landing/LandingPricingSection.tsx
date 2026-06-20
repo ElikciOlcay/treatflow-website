@@ -41,13 +41,11 @@ export default function LandingPricingSection({
                         <h3 className="text-2xl font-bold text-gray-900 mb-1">Basic</h3>
                         <div className="mb-1">
                             <span className="text-sm text-gray-400 line-through">ab 39 €/Monat</span>
+                            <span className="text-xs text-gray-500 block mt-0.5">zuzüglich MwSt.</span>
                         </div>
                         <TrialPrice />
-                        <p className="text-gray-600 text-sm mb-2">
-                            Für digitale Kundenkartei, Formulare und Behandlungsdoku.
-                        </p>
-                        <p className="text-xs text-gray-500 mb-6 leading-relaxed">
-                            Für Kundenkartei, Formulare und Dokumentation – ohne Kalender &amp; Onlinebuchung
+                        <p className="text-gray-600 text-sm mb-6">
+                            Digitale Anamnesen, Formulare und Behandlungsdokumentation – ohne Terminplanung.
                         </p>
                         <ul className="space-y-3 mb-8 flex-1">
                             {basicFeatures.map((feature) => (
@@ -71,16 +69,14 @@ export default function LandingPricingSection({
                         <h3 className="text-2xl font-bold mb-1">Booking</h3>
                         <div className="mb-1">
                             <span className="text-sm text-indigo-300 line-through">ab 59 €/Monat</span>
+                            <span className="text-xs text-indigo-200 block mt-0.5">zuzüglich MwSt.</span>
                         </div>
                         <div className="mb-4">
                             <span className="text-3xl font-bold">0&nbsp;€</span>
                             <span className="text-indigo-200 text-sm ml-1">für 14 Tage</span>
                         </div>
-                        <p className="text-indigo-100 text-sm mb-2">
-                            Für Studios, die zusätzlich Termine und Online-Buchungen digitalisieren wollen.
-                        </p>
-                        <p className="text-xs text-indigo-200/90 mb-6 leading-relaxed">
-                            Für Studios mit Kalender, Onlinebuchung und automatischen Erinnerungen
+                        <p className="text-indigo-100 text-sm mb-6">
+                            Terminkalender, Online-Buchungen und automatische Erinnerungen für dein Studio.
                         </p>
                         <ul className="space-y-3 mb-8 flex-1">
                             {bookingFeatures.map((feature) => (
