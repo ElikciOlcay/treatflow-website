@@ -47,6 +47,10 @@ const faqData = [
         answer: 'Ja. In Deutschland signiert Treatflow jeden Verkauf über eine zertifizierte technische Sicherheitseinrichtung (TSE) gemäß KassenSichV und erstellt DSFinV-K-Exporte für das Finanzamt. In Österreich erfüllt die Kasse die RKSV mit Fiskaly als Sicherheitseinrichtung, inklusive Start-, Monats-, Jahres- und Schlussbeleg sowie DEP7-Export. Belege tragen den maschinenlesbaren Signatur-QR-Code.',
     },
     {
+        question: 'In welchen Ländern funktioniert die Treatflow Kasse?',
+        answer: 'Die Treatflow Kasse ist fiskalkonform in Deutschland (KassenSichV/TSE) und Österreich (RKSV) – Treatflow erkennt automatisch das Land deines Studios und wendet die passenden Vorgaben an. In der Schweiz ist die Kasse ebenfalls nutzbar, da dort keine gesetzliche Signatur- oder Registrierkassenpflicht besteht. Die Bedienoberfläche ist auf Deutsch.',
+    },
+    {
         question: 'Was kostet das Kassensystem von Treatflow?',
         answer: 'Die Kasse ist ein Add-on zum Booking-Plan und kostet 39 €/Monat (zzgl. MwSt.), jährlich 35 €/Monat. Einmalig kommen 149 € Einrichtungsgebühr für die TSE-/RKSV-Provisionierung hinzu. Es gibt keine Transaktionsgebühren und keine Provision pro Verkauf.',
     },
