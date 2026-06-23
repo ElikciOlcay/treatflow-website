@@ -99,7 +99,7 @@ export default function QuickFacts({
                             Treatflow auf einen Blick
                         </h2>
                         <p className="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
-                            Die wichtigsten Fakten zu Treatflow – kompakt zusammengefasst.
+                            Die wichtigsten Fakten zu Treatflow.
                         </p>
                     </div>
                 )}

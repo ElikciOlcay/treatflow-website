@@ -22,6 +22,7 @@ import ChallengeSelector from "./components/ChallengeSelector";
 import ComparisonTable from "./components/ComparisonTable";
 import BenefitStats from "./components/BenefitStats";
 import AlwaysWithYou from "./components/AlwaysWithYou";
+import SupportTrustBanner from "./components/SupportTrustBanner";
 import PricingSection from "./components/PricingSection";
 import FAQSection from "./components/FAQSection";
 import TestimonialsSection from "./components/TestimonialsSection";
@@ -440,6 +441,7 @@ export default function Home() {
         <BenefitStats />
         <QuickFacts />
         <AlwaysWithYou />
+        <SupportTrustBanner />
 
         <PricingSection />
         <TestimonialsSection />
