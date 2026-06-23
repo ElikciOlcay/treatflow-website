@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Sunrise, Sparkles, Sofa, Smartphone, Tablet, Monitor } from 'lucide-react';
 
 const moments = [
@@ -60,16 +59,6 @@ export default function AlwaysWithYou() {
           </div>
 
           <div className="flex flex-col items-center gap-6">
-            <div className="relative w-full max-w-md rounded-2xl shadow-xl overflow-hidden aspect-[4/3]">
-              <Image
-                src="/images/lifestyle/studio-immer-im-blick.png"
-                alt="Studio-Inhaber zeigt Kundin den Treatflow-Dashboard auf dem Tablet im Empfangsbereich"
-                fill
-                sizes="(max-width: 1024px) 100vw, 448px"
-                className="object-cover object-center"
-              />
-            </div>
-
             <div className="bg-white rounded-3xl border border-gray-200 shadow-xl p-6 lg:p-8 w-full max-w-md">
               <div className="text-center mb-6">
                 <div className="text-sm font-semibold text-indigo-600 mb-2">

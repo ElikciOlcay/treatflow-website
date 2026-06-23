@@ -274,7 +274,7 @@ export default function Home() {
             <div className="order-2 relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[4/3] lg:min-h-[400px] lg:aspect-auto">
               <Image
                 src="/images/lifestyle/hero-startseite-kalender.png"
-                alt="Kosmetikerin und Kunde planen Termine gemeinsam am Laptop im modernen Studio"
+                alt="Treatflow Terminkalender geöffnet auf einem Laptop in einem modernen Kosmetikstudio"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"
