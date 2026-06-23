@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
     Calendar, Users, ClipboardCheck, FileText, Link2, Bell, Shield,
-    ArrowRight, CheckCircle, BarChart3, ShoppingBag
+    ArrowRight, CheckCircle, BarChart3, ShoppingBag, Receipt, Gift
 } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -41,6 +41,26 @@ const kernfunktionen = [
         bg: 'bg-indigo-50',
         border: 'border-indigo-200 hover:border-indigo-400',
         highlights: ['Tages-/Wochen-/Monatsansicht', 'Drag & Drop', 'Mitarbeiterkalender'],
+    },
+    {
+        href: '/kassensystem-kosmetikstudio',
+        icon: Receipt,
+        title: 'Kassensystem',
+        description: 'TSE- und RKSV-konforme Kasse direkt aus dem Termin. Belege mit Signatur-QR, Gutscheine, Tagesabschluss und Steuerberater-Export.',
+        color: 'text-green-600',
+        bg: 'bg-green-50',
+        border: 'border-green-200 hover:border-green-400',
+        highlights: ['TSE (DE) & RKSV (AT)', 'Kassieren aus dem Termin', 'DSFinV-K & DEP7 Export'],
+    },
+    {
+        href: '/gutscheine-kosmetikstudio',
+        icon: Gift,
+        title: 'Gutscheine',
+        description: 'Geschenkgutscheine direkt an der Kasse verkaufen und einlösen. Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik, Gültigkeit und automatischer Restwertverwaltung.',
+        color: 'text-purple-600',
+        bg: 'bg-purple-50',
+        border: 'border-purple-200 hover:border-purple-400',
+        highlights: ['Verkaufen & einlösen', 'Einzweck & Mehrzweck', 'Restwert automatisch'],
     },
     {
         href: '/online-buchungen',
@@ -154,7 +174,7 @@ export default function FunktionenPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                            8 Kernfunktionen für dein Studio
+                            10 Kernfunktionen für dein Studio
                         </h2>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Jede Funktion ist auf die Bedürfnisse von Kosmetikstudios zugeschnitten.

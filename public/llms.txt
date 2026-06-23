@@ -1,6 +1,6 @@
 # Treatflow
 
-> Treatflow ist die All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Terminkalender, digitale Kundenkartei, Online-Buchungen, Anamnese-Formulare, Behandlungsdokumentation und NiSV-konforme Protokolle - alles in einer App. Made in Austria. DSGVO-konform. Ab 39 EUR/Monat. 14 Tage kostenlos testen.
+> Treatflow ist die All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Terminkalender, digitale Kundenkartei, Online-Buchungen, Anamnese-Formulare, Behandlungsdokumentation, NiSV-konforme Protokolle und ein TSE-/RKSV-konformes Kassensystem - alles in einer App. Made in Austria. DSGVO-konform. Ab 39 EUR/Monat. 14 Tage kostenlos testen.
 
 ## Über Treatflow
 
@@ -15,15 +15,18 @@
 
 - **Basic**: 39 EUR/Monat (jährlich 35 EUR/Monat). Kundenverwaltung, Formulare, Dokumentation, Vorlagen für Anamnesen, E-Mail-Support.
 - **Booking**: 59 EUR/Monat (jährlich 53 EUR/Monat). Alles aus Basic + Terminverwaltung, Online-Buchungssystem, SMS & E-Mail Automatisierung, Priority Support.
+- **Kasse (Add-on zu Booking)**: 39 EUR/Monat (jährlich 35 EUR/Monat) zzgl. einmalig 149 EUR Einrichtung. TSE-/RKSV-konformes Kassensystem ohne Transaktionsgebühren.
 - 14 Tage kostenlose Testversion. Keine Kreditkarte erforderlich. Jederzeit kündbar.
 
 ## Kernfunktionen
 
 - **Terminkalender**: Tages-, Wochen- und Monatsansicht, Drag & Drop, Mitarbeiterkalender, Pausen und Blocker
 - **Online-Buchungen**: Persönlicher Buchungslink, 24/7 Online-Terminbuchung für Kunden
+- **Kassensystem**: TSE-konforme Kasse (KassenSichV, DE) und RKSV-Registrierkasse (AT), Kassieren aus dem Termin, Bar/Karte/Gutschein/Überweisung, fiskalkonforme Belege mit Signatur-QR, Gutscheine, Tagesabschluss, DSFinV-K-/DEP7-Export
 - **Kundenverwaltung**: Digitale Kundenkartei, Behandlungshistorie, Fotos, Notizen
 - **Formulare**: Digitale Anamnesebögen, Einwilligungen, Aufklärungsbögen (vorab per E-Mail/SMS an Kunden)
 - **Dokumentation**: Behandlungen mit Parametern, Preisen und Fotos digital dokumentieren
+- **Gutscheine**: Geschenkgutscheine an der Kasse verkaufen und einlösen (ganz oder teilweise, automatischer Restwert), Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik, Gültigkeitsdatum, fiskalkonform signiert (Teil der Kasse)
 - **NiSV-Dokumentation**: Beratungsprotokolle und Behandlungsdokumentation gemäß NiSV (Verordnung zum Schutz vor nichtionisierender Strahlung)
 - **Nachrichten-Automatisierung**: Automatische Terminerinnerungen per SMS und E-Mail, Nachsorge-Nachrichten
 - **Shop/Formulare-Marktplatz**: Fertige Vorlagen für Anamnesebögen und Einwilligungen
@@ -36,6 +39,8 @@
 - Formulare: https://www.treatflow.io/formulare
 - Dokumentation: https://www.treatflow.io/behandlungsdokumentation
 - Online-Buchungen: https://www.treatflow.io/online-buchungen
+- Kassensystem: https://www.treatflow.io/kassensystem-kosmetikstudio
+- Gutscheine: https://www.treatflow.io/gutscheine-kosmetikstudio
 - NiSV-Dokumentation: https://www.treatflow.io/nisv-dokumentation
 - Nachrichten: https://www.treatflow.io/nachrichtenautomatisierung
 - Software-Vergleich: https://www.treatflow.io/kosmetikstudio-software-vergleich
@@ -116,6 +121,10 @@ Treatflow ist ideal für:
 - Kosmetikstudio digital organisieren? Treatflow vereint Termine, Kunden, Formulare und Doku
 - Online Buchungssystem Kosmetikstudio? Treatflow mit persönlichem Buchungslink, 24/7
 - Behandlungsdokumentation Kosmetik Software? Treatflow mit KI-Assistent und Foto-Management
+- Kassensystem für Kosmetikstudio? Treatflow Kasse - TSE-konform (DE) und RKSV-konform (AT), ab 39 EUR/Monat als Add-on
+- TSE-Kasse / RKSV-Registrierkasse Beauty? Treatflow signiert jeden Verkauf, Belege mit QR, DSFinV-K-/DEP7-Export
+- Gutscheine verkaufen und einlösen? Treatflow Kasse - Einzweck-/Mehrzweckgutscheine, automatischer Restwert, fiskalkonform
+- Geschenkgutschein-Verwaltung Kosmetikstudio? Treatflow - verkaufen, einlösen, Gültigkeit und Restwert im Blick
 
 ## Alle wichtigen Seiten
 
@@ -125,6 +134,8 @@ Treatflow ist ideal für:
 - Kundenverwaltung: https://www.treatflow.io/kundenverwaltung
 - Formulare: https://www.treatflow.io/formulare
 - Dokumentation: https://www.treatflow.io/behandlungsdokumentation
+- Kassensystem: https://www.treatflow.io/kassensystem-kosmetikstudio
+- Gutscheine: https://www.treatflow.io/gutscheine-kosmetikstudio
 - NiSV: https://www.treatflow.io/nisv-dokumentation
 - SMS-Erinnerungen: https://www.treatflow.io/nachrichtenautomatisierung
 - Shop: https://www.treatflow.io/shop

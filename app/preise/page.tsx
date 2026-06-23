@@ -8,8 +8,8 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 
 export const metadata = {
     title: 'Preise: Kosmetikstudio Software ab 39€/Monat',
-    description: 'Transparente Preise für Treatflow: Basic ab 39€/Monat, Booking ab 59€/Monat. 14 Tage kostenlos testen, keine Kreditkarte, keine versteckten Kosten. Jetzt Preise vergleichen.',
-    keywords: ['Kosmetikstudio Software Preise', 'Treatflow Preise', 'Kosmetikstudio Software Kosten', 'Beauty Software Preis', 'Studio Software günstig'],
+    description: 'Transparente Preise für Treatflow: Basic ab 39€/Monat, Booking ab 59€/Monat, Kasse als Add-on ab 39€/Monat (TSE & RKSV). 14 Tage kostenlos testen, keine Kreditkarte, keine versteckten Kosten.',
+    keywords: ['Kosmetikstudio Software Preise', 'Treatflow Preise', 'Kosmetikstudio Software Kosten', 'Beauty Software Preis', 'Studio Software günstig', 'Kassensystem Preis Kosmetik', 'TSE Kasse Kosten'],
     alternates: {
         canonical: 'https://www.treatflow.io/preise',
     },
@@ -40,6 +40,14 @@ const faqData = [
     {
         question: 'Lohnt sich der Booking-Plan?',
         answer: 'Wenn du Online-Buchungen, automatische Terminerinnerungen per SMS und einen digitalen Terminkalender benötigst, ja. Studios mit dem Booking-Plan berichten von bis zu 80% weniger No-Shows und deutlich weniger Telefonaufwand.',
+    },
+    {
+        question: 'Was kostet das Kassensystem?',
+        answer: 'Die Kasse ist ein Add-on zum Booking-Plan und kostet 39€/Monat (zzgl. MwSt.), jährlich 35€/Monat. Einmalig kommen 149€ Einrichtungsgebühr für die TSE-/RKSV-Provisionierung hinzu. Es gibt keine Transaktionsgebühren und keine Provision pro Verkauf.',
+    },
+    {
+        question: 'Ist die Kasse TSE- und RKSV-konform?',
+        answer: 'Ja. In Deutschland signiert Treatflow jeden Verkauf über eine zertifizierte TSE gemäß KassenSichV und erstellt DSFinV-K-Exporte. In Österreich erfüllt die Kasse die RKSV inklusive Start-, Monats-, Jahres- und Schlussbeleg sowie DEP7-Export. Belege tragen den maschinenlesbaren Signatur-QR-Code.',
     },
 ];
 
@@ -78,6 +86,15 @@ const productSchema = {
             priceCurrency: 'EUR',
             priceValidUntil: '2026-12-31',
             availability: 'https://schema.org/InStock',
+        },
+        {
+            '@type': 'Offer',
+            name: 'Kasse (Add-on zu Booking)',
+            price: '39',
+            priceCurrency: 'EUR',
+            priceValidUntil: '2026-12-31',
+            availability: 'https://schema.org/InStock',
+            description: 'TSE-/RKSV-konformes Kassensystem als Add-on zum Booking-Plan, 39 €/Monat zzgl. einmalig 149 € Einrichtung.',
         },
     ],
 };

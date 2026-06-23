@@ -34,6 +34,8 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/terminkalender" className="text-gray-400 hover:text-white transition-colors">Terminkalender</Link></li>
               <li><Link href="/online-buchungen" className="text-gray-400 hover:text-white transition-colors">Online-Buchungen</Link></li>
+              <li><Link href="/kassensystem-kosmetikstudio" className="text-gray-400 hover:text-white transition-colors">Kassensystem</Link></li>
+              <li><Link href="/gutscheine-kosmetikstudio" className="text-gray-400 hover:text-white transition-colors">Gutscheine</Link></li>
               <li><Link href="/kundenverwaltung" className="text-gray-400 hover:text-white transition-colors">Kundenverwaltung</Link></li>
               <li><Link href="/formulare" className="text-gray-400 hover:text-white transition-colors">Formulare</Link></li>
               <li><Link href="/behandlungsdokumentation" className="text-gray-400 hover:text-white transition-colors">Dokumentation</Link></li>

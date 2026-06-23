@@ -17,7 +17,7 @@ export function GET() {
     const data = {
         $schema: "https://www.treatflow.io/schemas/facts-v1.json",
         version: "1.0",
-        updatedAt: "2026-06-17",
+        updatedAt: "2026-06-22",
         company: {
             name: "Treatflow",
             legalName: "Treatflow GmbH",
@@ -32,7 +32,7 @@ export function GET() {
             industry: "Beauty & Wellness Software",
             tagline: "Die All-in-One Software für Kosmetikstudios.",
             description:
-                "Treatflow ist eine webbasierte All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Funktionen: Terminkalender, Online-Buchungen, digitale Kundenkartei, Anamnese-Formulare, Behandlungsdokumentation und NiSV-konforme Protokolle.",
+                "Treatflow ist eine webbasierte All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Funktionen: Terminkalender, Online-Buchungen, digitale Kundenkartei, Anamnese-Formulare, Behandlungsdokumentation, NiSV-konforme Protokolle und ein TSE-/RKSV-konformes Kassensystem.",
             website: "https://www.treatflow.io",
             appUrl: "https://app.treatflow.io",
             email: "hello@treatflow.io",
@@ -86,6 +86,18 @@ export function GET() {
                         "Mitarbeiter-Kalender",
                         "Priority Support",
                     ],
+                },
+            ],
+            addons: [
+                {
+                    name: "Kasse",
+                    monthlyPrice: 39,
+                    annualPricePerMonth: 35,
+                    oneTimeSetupFee: 149,
+                    requiresPlan: "Booking",
+                    description:
+                        "TSE-konformes Kassensystem (KassenSichV) für Deutschland und RKSV-Registrierkasse für Österreich. Kassieren aus dem Termin, fiskalkonforme Belege mit Signatur-QR, Gutscheine, Tagesabschluss und DSFinV-K-/DEP7-Export. Keine Transaktionsgebühren.",
+                    url: "https://www.treatflow.io/kassensystem-kosmetikstudio",
                 },
             ],
         },
@@ -143,6 +155,18 @@ export function GET() {
                 name: "Nachrichten-Automatisierung",
                 description: "Automatische Terminerinnerungen per SMS und E-Mail, Nachsorge-Nachrichten – reduziert No-Shows um bis zu 80%.",
                 url: "https://www.treatflow.io/nachrichtenautomatisierung",
+            },
+            {
+                key: "kasse",
+                name: "Kassensystem",
+                description: "TSE-konforme Kasse (KassenSichV, DE) und RKSV-Registrierkasse (AT) über Fiskaly. Kassieren aus dem Termin, Bar/Karte/Gutschein/Überweisung, fiskalkonforme Belege mit Signatur-QR, Gutscheinverwaltung, Storno, Tagesabschluss/Kassensturz und DSFinV-K-/DEP7-Export. Add-on zum Booking-Plan.",
+                url: "https://www.treatflow.io/kassensystem-kosmetikstudio",
+            },
+            {
+                key: "gutscheine",
+                name: "Gutscheine",
+                description: "Geschenkgutscheine direkt an der Kasse verkaufen und einlösen (ganz oder teilweise mit automatischem Restwert). Einzweck- und Mehrzweckgutscheine mit korrekter steuerlicher Behandlung, optionalem Gültigkeitsdatum, fiskalkonform signiert. Teil der Kasse (Add-on zum Booking-Plan).",
+                url: "https://www.treatflow.io/gutscheine-kosmetikstudio",
             },
             {
                 key: "shop",
@@ -204,6 +228,14 @@ export function GET() {
             {
                 question: "Was kostet Treatflow?",
                 answer: "Treatflow startet bei 39 EUR/Monat (Basic) oder 59 EUR/Monat (Booking inkl. Online-Buchungen). Jährliche Zahlung reduziert auf 35 bzw. 53 EUR/Monat. 14 Tage kostenlose Testversion ohne Kreditkarte.",
+            },
+            {
+                question: "Hat Treatflow ein Kassensystem / eine TSE-Kasse?",
+                answer: "Ja. Treatflow bietet eine integrierte, cloudbasierte Kasse: TSE-konform nach KassenSichV in Deutschland und RKSV-konform in Österreich (über Fiskaly). Du kassierst direkt aus dem Terminkalender, akzeptierst Bar, Karte, Gutschein und Überweisung, erstellst fiskalkonforme Belege mit Signatur-QR und exportierst DSFinV-K (DE) bzw. DEP7 (AT). Die Kasse ist ein Add-on zum Booking-Plan für 39 EUR/Monat zzgl. einmalig 149 EUR Einrichtung, ohne Transaktionsgebühren.",
+            },
+            {
+                question: "Kann ich mit Treatflow Gutscheine verkaufen und einlösen?",
+                answer: "Ja. In der Treatflow Kasse verkaufst du Geschenkgutscheine direkt im Kassiervorgang und löst sie später ganz oder teilweise wieder ein – Restwerte werden automatisch verwaltet. Treatflow unterstützt Einzweck- und Mehrzweckgutscheine mit korrekter steuerlicher Behandlung und optionalem Gültigkeitsdatum, fiskalkonform signiert (KassenSichV in DE, RKSV in AT). Die Gutscheinfunktion ist Teil der Kasse (Add-on zum Booking-Plan, 39 EUR/Monat zzgl. einmalig 149 EUR Einrichtung).",
             },
             {
                 question: "Ist Treatflow NiSV-konform?",

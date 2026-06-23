@@ -1,6 +1,7 @@
 'use client';
 
-import { CheckCircle, X, Star, ArrowRight } from "lucide-react";
+import { CheckCircle, X, Star, ArrowRight, Receipt } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function PricingSection() {
@@ -176,6 +177,54 @@ export default function PricingSection() {
               14 Tage gratis testen
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
+          </div>
+        </div>
+
+        {/* Add-on: Kasse */}
+        <div className="max-w-4xl mx-auto mt-8">
+          <div className="relative rounded-2xl p-[2px] bg-gradient-to-r from-indigo-500 to-purple-600 shadow-lg shadow-indigo-500/20">
+            <span className="absolute -top-3 left-6 z-10 inline-flex items-center gap-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+              <Star className="h-3 w-3 fill-current" />
+              Beliebtes Add-on
+            </span>
+            <div className="bg-white rounded-[14px] p-6 sm:p-8">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                    <Receipt className="h-7 w-7 text-white" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2 mb-1">
+                      <h3 className="text-2xl font-bold text-gray-900">Kasse</h3>
+                      <span className="text-[11px] font-semibold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded-full">
+                        Add-on zu Booking
+                      </span>
+                    </div>
+                    <p className="text-sm text-gray-600 max-w-md">
+                      TSE-konform (DE) und RKSV-konform (AT): direkt aus dem Termin kassieren,
+                      fiskalkonforme Belege, Gutscheine, Tagesabschluss und Steuerberater-Export.
+                    </p>
+                  </div>
+                </div>
+                <div className="md:text-right flex-shrink-0">
+                  <div className="text-4xl font-bold text-gray-900">
+                    {isYearly ? (
+                      <>€35<span className="text-base text-gray-600">/Monat</span></>
+                    ) : (
+                      <>€39<span className="text-base text-gray-600">/Monat</span></>
+                    )}
+                  </div>
+                  <p className="text-xs text-gray-500">zzgl. MwSt. · einmalig 149 € Einrichtung</p>
+                  <Link
+                    href="/kassensystem-kosmetikstudio"
+                    className="inline-flex items-center justify-center mt-3 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-indigo-700 transition-colors"
+                  >
+                    Mehr zur Kasse
+                    <ArrowRight className="ml-1.5 h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

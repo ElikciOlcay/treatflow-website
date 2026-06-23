@@ -10,7 +10,9 @@ import {
     ClipboardList,
     ArrowRight,
     Star,
-    ShoppingCart
+    ShoppingCart,
+    Receipt,
+    ShieldCheck
 } from "lucide-react";
 import Link from 'next/link';
 
@@ -161,6 +163,49 @@ export default function FeaturesSection() {
                             </Link>
                         </div>
                     </div>
+                </div>
+
+                {/* Highlight: Kasse */}
+                <div className="mb-20">
+                    <Link
+                        href="/kassensystem-kosmetikstudio"
+                        className="group block relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 to-purple-700 p-8 lg:p-12 shadow-xl shadow-indigo-500/20 hover:shadow-2xl hover:shadow-indigo-500/30 transition-all duration-300"
+                    >
+                        <div className="absolute -right-10 -top-10 w-48 h-48 bg-white/10 rounded-full blur-2xl"></div>
+                        <div className="relative flex flex-col lg:flex-row lg:items-center gap-8">
+                            <div className="flex-1">
+                                <div className="inline-flex items-center gap-2 bg-white/15 text-white px-4 py-1.5 rounded-full text-xs font-semibold mb-4 backdrop-blur-sm">
+                                    <Star className="h-3.5 w-3.5 fill-current" />
+                                    Neu
+                                </div>
+                                <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+                                    Das Kassensystem für dein Studio
+                                </h3>
+                                <p className="text-lg text-indigo-100 mb-6 leading-relaxed max-w-2xl">
+                                    Kassiere direkt aus dem Termin – TSE-konform in Deutschland,
+                                    RKSV-konform in Österreich. Fiskalkonforme Belege, Gutscheine,
+                                    Tagesabschluss und Steuerberater-Export. Ohne separate Kassen-Hardware.
+                                </p>
+                                <div className="flex flex-wrap gap-x-6 gap-y-3 mb-6">
+                                    {['TSE (DE) & RKSV (AT)', 'Bar, Karte, Gutschein', 'DSFinV-K & DEP7 Export'].map((p) => (
+                                        <div key={p} className="flex items-center text-white">
+                                            <ShieldCheck className="h-5 w-5 text-green-300 mr-2 flex-shrink-0" />
+                                            <span className="font-medium">{p}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                                <span className="inline-flex items-center bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold group-hover:bg-gray-50 transition-colors">
+                                    Mehr zur Kasse
+                                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                                </span>
+                            </div>
+                            <div className="flex-shrink-0 hidden lg:block">
+                                <div className="w-32 h-32 bg-white/10 rounded-3xl flex items-center justify-center backdrop-blur-sm">
+                                    <Receipt className="h-16 w-16 text-white" />
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
                 </div>
 
                 {/* Secondary Features - Clean 4 Column Grid */}

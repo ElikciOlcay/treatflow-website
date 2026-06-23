@@ -3,8 +3,10 @@ import {
   Bell,
   CalendarDays,
   CheckCircle,
+  ClipboardCheck,
   FileText,
   Lock,
+  Receipt,
   Server,
   Shield,
   ShieldCheck,
@@ -218,7 +220,7 @@ export default function Home() {
                 {" "}und No-Shows
               </h1>
               <p className="text-lg lg:text-xl text-gray-600 mb-6 leading-relaxed">
-                Termine, Kunden, Formulare und Behandlungsdokumentation in einer übersichtlichen App.
+                Termine, Kunden, Formulare, Behandlungsdokumentation und Kasse in einer übersichtlichen App.
                 So findet sich dein Team sofort zurecht.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
@@ -358,7 +360,9 @@ export default function Home() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { href: '/terminkalender', icon: CalendarDays, label: 'Terminkalender', desc: 'Alle Termine in einer klaren Tages- und Wochenansicht.', color: 'bg-indigo-100 text-indigo-600' },
+                { href: '/kassensystem-kosmetikstudio', icon: Receipt, label: 'Kasse', desc: 'TSE- & RKSV-konform kassieren, direkt aus dem Termin.', color: 'bg-green-100 text-green-600' },
                 { href: '/online-buchungen', icon: Users, label: 'Online-Buchung', desc: 'Kunden buchen selbst, auch außerhalb deiner Öffnungszeiten.', color: 'bg-emerald-100 text-emerald-600' },
+                { href: '/formulare', icon: ClipboardCheck, label: 'Formulare', desc: 'Digitale Anamnese und Einwilligungen, vorab per Link ausfüllbar.', color: 'bg-orange-100 text-orange-600' },
                 { href: '/kundenkartei-software', icon: FileText, label: 'Kundenkartei', desc: 'Kundendaten, Historie und Notizen zentral und schnell auffindbar.', color: 'bg-blue-100 text-blue-600' },
                 { href: '/behandlungsdokumentation', icon: Shield, label: 'Dokumentation', desc: 'Behandlungen sauber dokumentieren, inklusive NiSV-relevanter Nachweise.', color: 'bg-teal-100 text-teal-600' },
                 { href: '/sms-erinnerungen-kosmetikstudio', icon: Bell, label: 'Erinnerungen', desc: 'Automatische SMS und E-Mails reduzieren No-Shows.', color: 'bg-rose-100 text-rose-600' },

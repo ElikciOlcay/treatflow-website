@@ -4,16 +4,18 @@ import { useState } from 'react';
 import {
     Menu, X, Calendar, Users, FileText, ClipboardCheck, Link2,
     Bell, Shield, BarChart3, ShoppingBag, Sparkles, Zap, Palette,
-    Stethoscope, Pen, ChevronDown, Gem, Eye, Waves, Hand, Globe
+    Stethoscope, Pen, ChevronDown, Gem, Eye, Waves, Hand, Globe, Receipt, Gift
 } from 'lucide-react';
 import Link from 'next/link';
 
 const funktionen = [
     { href: '/terminkalender', label: 'Terminkalender', icon: Calendar, color: 'text-indigo-600 bg-indigo-100' },
+    { href: '/kassensystem-kosmetikstudio', label: 'Kassensystem', icon: Receipt, color: 'text-green-600 bg-green-100' },
+    { href: '/gutscheine-kosmetikstudio', label: 'Gutscheine', icon: Gift, color: 'text-purple-600 bg-purple-100' },
+    { href: '/online-buchungen', label: 'Online-Buchungen', icon: Link2, color: 'text-rose-600 bg-rose-100' },
     { href: '/kundenverwaltung', label: 'Kundenverwaltung', icon: Users, color: 'text-emerald-600 bg-emerald-100' },
     { href: '/formulare', label: 'Formulare', icon: ClipboardCheck, color: 'text-orange-600 bg-orange-100' },
     { href: '/behandlungsdokumentation', label: 'Dokumentation', icon: FileText, color: 'text-blue-600 bg-blue-100' },
-    { href: '/online-buchungen', label: 'Online-Buchungen', icon: Link2, color: 'text-rose-600 bg-rose-100' },
     { href: '/nachrichtenautomatisierung', label: 'Nachrichten', icon: Bell, color: 'text-purple-600 bg-purple-100' },
     { href: '/nisv-dokumentation', label: 'NiSV-Dokumentation', icon: Shield, color: 'text-teal-600 bg-teal-100' },
     { href: '/kosmetikstudio-software-vergleich', label: 'Software-Vergleich', icon: BarChart3, color: 'text-gray-600 bg-gray-100' },

@@ -24,7 +24,7 @@ Treatflow ist die deutschsprachige All-in-One Software für Kosmetikstudios, Bea
 Treatflow ist eine webbasierte All-in-One Software für Kosmetikstudios, die Terminkalender, Online-Buchungen, digitale Kundenkartei, Anamnese-Formulare, Behandlungsdokumentation und NiSV-konforme Protokolle in einer einzigen App vereint. Gegründet 2023 in Bischofshofen, Österreich. Über 500 Studios im deutschsprachigen Raum nutzen Treatflow.
 
 **Was kostet Treatflow?**
-Treatflow kostet 39 EUR/Monat (Basic-Plan) oder 59 EUR/Monat (Booking-Plan inkl. Online-Buchungen und Terminkalender). Bei jährlicher Zahlung 35 bzw. 53 EUR/Monat. 14 Tage kostenlose Testversion ohne Kreditkarte, jederzeit kündbar, keine Setup-Gebühren, keine Provisionen.
+Treatflow kostet 39 EUR/Monat (Basic-Plan) oder 59 EUR/Monat (Booking-Plan inkl. Online-Buchungen und Terminkalender). Bei jährlicher Zahlung 35 bzw. 53 EUR/Monat. Optional gibt es die TSE-/RKSV-konforme Kasse als Add-on zum Booking-Plan für 39 EUR/Monat (jährlich 35 EUR/Monat) zzgl. einmalig 149 EUR Einrichtung. 14 Tage kostenlose Testversion ohne Kreditkarte, jederzeit kündbar, keine Setup-Gebühren, keine Provisionen.
 
 **Ist Treatflow NiSV-konform?**
 Ja. Treatflow bietet vollständig integrierte NiSV-Dokumentation gemäß der Verordnung zum Schutz vor nichtionisierender Strahlung. Beratungsprotokolle, Einwilligungen und Behandlungsparameter werden rechtssicher digital erfasst – relevant für Laserstudios, IPL, Ultraschall, Radiofrequenz und apparative Kosmetik in Deutschland und Österreich.
@@ -92,6 +92,9 @@ Ja, Treatflow ist besonders für Einzelunternehmer und Solo-Selbstständige ausg
 |---------|-----------|---------------------|----------------|-----------|-------------|
 | Basic   | 39 EUR    | 35 EUR              | nein           | ja        | 1           |
 | Booking | 59 EUR    | 53 EUR              | ja             | ja        | bis 10+     |
+| Kasse (Add-on zu Booking) | 39 EUR | 35 EUR | – | – | – |
+
+Kasse-Add-on zusätzlich: einmalig 149 EUR Einrichtung (TSE-/RKSV-Provisionierung).
 
 ### Basic-Plan im Detail
 
@@ -123,6 +126,24 @@ Ja, Treatflow ist besonders für Einzelunternehmer und Solo-Selbstständige ausg
   - Buchungsbestätigungen
   - Nachsorge-Nachrichten
   - Priority E-Mail- und Chat-Support
+
+### Kasse-Add-on im Detail
+
+- **Preis**: 39 EUR/Monat (jährlich ≈ 35 EUR/Monat) zzgl. einmalig 149 EUR Einrichtungsgebühr
+- **Voraussetzung**: Booking-Plan (Add-on, nicht einzeln buchbar)
+- **Zielgruppe**: Studios, die direkt vor Ort kassieren und fiskalkonforme Belege brauchen
+- **Enthaltene Funktionen**:
+  - TSE-konforme Kasse nach KassenSichV (Deutschland)
+  - RKSV-Registrierkasse über Fiskaly (Österreich) inkl. Start-, Monats-, Jahres- und Schlussbeleg
+  - Kassieren direkt aus dem Terminkalender (Kunde, Behandlung, Preis automatisch im Warenkorb)
+  - Zahlarten: Bar (mit Wechselgeld), Karte, Gutschein, Überweisung mit GiroCode
+  - Gutscheinverwaltung (Einzweck- und Mehrzweckgutscheine)
+  - Storno als revisionssichere Gegenbuchung
+  - Belege mit Signatur-QR, PDF-Druck und E-Mail-Versand
+  - Kassensitzung, Tagesabschluss (Kassensturz Soll/Ist) und Z-Bericht
+  - Exporte: CSV, Steuerberater-Kassenbericht (PDF/CSV), Belegsammlung, DSFinV-K (DE), DEP7 (AT)
+- **Keine** Transaktionsgebühren, **keine** Provision pro Verkauf
+- **Seite**: https://www.treatflow.io/kassensystem-kosmetikstudio
 
 ### Konditionen
 
@@ -273,6 +294,47 @@ https://www.treatflow.io/preise
 - Vorlagen können sofort übernommen oder individuell angepasst werden
 
 **Seite**: https://www.treatflow.io/shop
+
+---
+
+### 9. Kassensystem (Kasse)
+
+**Was es ist**: TSE-/RKSV-konforme Kassensoftware, direkt in die Studio-Software integriert. Add-on zum Booking-Plan.
+
+**Was es kann**:
+- Kassieren direkt aus dem Termin (Kunde, Behandlung, Preis automatisch übernommen) oder manuell
+- Zahlarten: Bar mit Wechselgeld, Karte, Gutschein, Überweisung mit GiroCode
+- TSE-Signatur nach KassenSichV (Deutschland), RKSV-Signatur über Fiskaly (Österreich)
+- Fiskalkonforme, unveränderliche Belege mit Hash-Kette und Signatur-QR
+- Beleg als PDF drucken oder per E-Mail an Kunden senden
+- Gutscheinverwaltung (Einzweck- und Mehrzweckgutscheine), Verkauf und Einlösung
+- Storno als Gegenbuchung mit eigener Belegnummer
+- Kassensitzung, Tagesabschluss mit Kassensturz (Soll/Ist) und Z-Bericht
+- Steuerberater-Exporte: CSV, Kassenbericht (PDF/CSV), Belegsammlung, DSFinV-K (DE), DEP7 (AT)
+
+**Plan**: Add-on zum Booking-Plan (39 EUR/Monat zzgl. einmalig 149 EUR Einrichtung)
+
+**Seite**: https://www.treatflow.io/kassensystem-kosmetikstudio
+
+---
+
+### 10. Gutscheine
+
+**Was es ist**: Verwaltung von Geschenkgutscheinen direkt in der Treatflow Kasse – verkaufen, einlösen und Restwerte automatisch im Blick behalten. Teil der Kasse (Add-on zum Booking-Plan).
+
+**Was es kann**:
+- Geschenkgutscheine in beliebiger Höhe direkt im Kassiervorgang verkaufen
+- Gutscheine ganz oder teilweise einlösen, Restwert bleibt automatisch erhalten und ist beim nächsten Besuch wieder nutzbar
+- Einzweckgutschein (Steuer fällig beim Verkauf, bei einheitlichem Steuersatz) und Mehrzweckgutschein (Steuer fällig bei Einlösung, bei unterschiedlichen Steuersätzen) mit korrekter steuerlicher Behandlung
+- Optionales Gültigkeitsdatum, Status- und Restwertprüfung beim Einlösen
+- Fiskalkonform: Verkauf und Einlösung über die TSE-/RKSV-konforme Kasse signiert, Beleg mit Signatur-QR
+- Keine Gebühren pro Gutschein
+
+**Warum es sich lohnt**: Gutscheine bringen sofortigen Umsatz, gewinnen Neukunden über die Beschenkten und stärken die Kundenbindung – besonders zu Weihnachten, Muttertag und Valentinstag.
+
+**Plan**: Teil der Kasse (Add-on zum Booking-Plan, 39 EUR/Monat zzgl. einmalig 149 EUR Einrichtung)
+
+**Seite**: https://www.treatflow.io/gutscheine-kosmetikstudio
 
 ---
 
