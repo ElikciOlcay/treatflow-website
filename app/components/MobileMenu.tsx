@@ -4,7 +4,7 @@ import { useState } from 'react';
 import {
     Menu, X, Calendar, Users, FileText, ClipboardCheck, Link2,
     Bell, Shield, BarChart3, ShoppingBag, Sparkles, Zap, Palette,
-    Stethoscope, Pen, ChevronDown, Gem, Eye, Waves, Hand, Globe, Receipt, Gift
+    Stethoscope, Pen, ChevronDown, Gem, Eye, Waves, Hand, Globe, Receipt, Gift, Plug
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -18,6 +18,7 @@ const funktionen = [
     { href: '/behandlungsdokumentation', label: 'Dokumentation', icon: FileText, color: 'text-blue-600 bg-blue-100' },
     { href: '/nachrichtenautomatisierung', label: 'Nachrichten', icon: Bell, color: 'text-purple-600 bg-purple-100' },
     { href: '/nisv-dokumentation', label: 'NiSV-Dokumentation', icon: Shield, color: 'text-teal-600 bg-teal-100' },
+    { href: '/integrationen', label: 'Integrationen', icon: Plug, color: 'text-indigo-600 bg-indigo-100' },
     { href: '/kosmetikstudio-software-vergleich', label: 'Software-Vergleich', icon: BarChart3, color: 'text-gray-600 bg-gray-100' },
     { href: '/shop', label: 'Shop', icon: ShoppingBag, color: 'text-amber-600 bg-amber-100' },
     { href: '/website-fuer-kosmetikstudios', label: 'Studio-Website', icon: Globe, color: 'text-indigo-600 bg-indigo-100' },
