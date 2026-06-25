@@ -1,60 +1,62 @@
 import {
-    Calendar, Users, ClipboardCheck, FileText, Link2, Bell,
-    Shield, Server, Building2, Users as UsersIcon, ArrowRight, MapPin
+    Calendar, Users, ClipboardCheck, FileText, Link2,
+    Shield, Server, Building2, Users as UsersIcon, ArrowRight, MapPin, Receipt
 } from 'lucide-react';
+import Link from 'next/link';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import GeoFAQ from '../components/GeoFAQ';
 
 export const metadata = {
-    title: 'Studio Software Österreich: Beauty & Kosmetik',
-    description: 'Studio-Software aus Österreich für Kosmetikstudios. Online-Buchungen, Kundenverwaltung und digitale Formulare. Made in Austria. DSGVO-konform.',
+    title: 'Kosmetikstudio Software Österreich – Made in Austria',
+    description: 'Kosmetikstudio Software aus Österreich: Online-Buchungen, Kundenkartei, digitale Formulare und RKSV-Kasse. Made in Austria, DSGVO-konform. 14 Tage gratis testen.',
     keywords: [
-        'Studio Software Österreich',
         'Kosmetikstudio Software Österreich',
+        'Studio Software Österreich',
         'Beauty Software AT',
         'Kosmetik Software Wien',
-        'Studio Software AT',
+        'Registrierkasse Kosmetikstudio Österreich',
+        'Software aus Österreich Kosmetikstudio',
     ],
     alternates: {
-        canonical: 'https://www.treatflow.io/studio-software-oesterreich',
+        canonical: 'https://www.treatflow.io/kosmetikstudio-software-oesterreich',
     },
     openGraph: {
-        title: 'Studio Software Österreich: Beauty & Kosmetikstudios',
-        description: 'Die Studio-Software aus Österreich für Kosmetikstudios. Made in Austria. DSGVO-konform. 14 Tage gratis.',
-        url: 'https://www.treatflow.io/studio-software-oesterreich',
+        title: 'Kosmetikstudio Software Österreich – Made in Austria',
+        description: 'Die Kosmetikstudio Software aus Österreich: Termine, Kundenkartei, Formulare und RKSV-Kasse. Made in Austria. 14 Tage gratis.',
+        url: 'https://www.treatflow.io/kosmetikstudio-software-oesterreich',
     },
 };
 
 const features = [
     { icon: Calendar, title: 'Terminkalender', desc: 'Tages-, Wochen- und Monatsansicht für maximale Übersicht.' },
-    { icon: Users, title: 'Kundenverwaltung', desc: 'Alle Kundendaten und Behandlungen an einem Ort.' },
+    { icon: Users, title: 'Digitale Kundenkartei', desc: 'Alle Kundendaten und Behandlungen an einem Ort.' },
     { icon: ClipboardCheck, title: 'Digitale Formulare', desc: 'Anamnese und Einwilligungen digital, rechtssicher.' },
     { icon: FileText, title: 'Behandlungsdokumentation', desc: 'Behandlungen mit Fotos und Notizen dokumentieren.' },
     { icon: Link2, title: 'Online-Buchungen', desc: 'Persönlicher Buchungslink – Kunden buchen 24/7 selbst.' },
-    { icon: Bell, title: 'Erinnerungen', desc: 'Automatische E-Mail und SMS – bis zu 80% weniger No-Shows.' },
+    { icon: Receipt, title: 'RKSV-Kasse', desc: 'Registrierkasse direkt integriert – RKSV-konform.' },
 ];
 
 const faqs = [
     {
         question: 'Welche Vorteile bringt ein österreichisches Unternehmen?',
-        answer: 'Treatflow ist ein österreichisches Unternehmen mit Sitz in Salzburg. Du arbeitest mit einem lokalen Team, das die österreichischen Besonderheiten kennt – von der Buchhaltung bis zum Datenschutz. Kurze Wege und persönlicher Support.',
+        answer: 'Treatflow ist ein österreichisches Unternehmen mit Sitz in Salzburg. Du arbeitest mit einem lokalen Team, das die österreichischen Besonderheiten kennt – von der Registrierkassenpflicht bis zum Datenschutz. Kurze Wege und persönlicher Support.',
+    },
+    {
+        question: 'Ist die Kasse in Treatflow RKSV-konform?',
+        answer: 'Ja. Die integrierte Registrierkasse erfüllt die RKSV über eine Fiskaly-Sicherheitseinrichtung, erstellt automatisch Start-, Monats-, Jahres- und Schlussbeleg und erzeugt den DEP7-Export. Mehr dazu auf unserer Seite zur Registrierkasse für Österreich.',
     },
     {
         question: 'Ist Treatflow in Österreich DSGVO-konform?',
         answer: 'Ja, Treatflow ist vollständig DSGVO-konform und entspricht den österreichischen Datenschutzbestimmungen (DSG). Alle Kundendaten werden verschlüsselt in der EU gespeichert – sicher und rechtlich abgesichert.',
     },
     {
-        question: 'Gibt es lokalen Support für österreichische Studios?',
-        answer: 'Ja, unser Team unterstützt dich in deutscher Sprache – per E-Mail und in persönlichen Beratungsgesprächen. Bei Bedarf helfen wir auch bei der Einrichtung und dem Datenumzug von anderen Systemen.',
-    },
-    {
         question: 'Was bedeutet „Made in Austria“ bei Treatflow?',
-        answer: 'Treatflow wurde in Salzburg entwickelt und ist ein österreichisches Produkt. Die Software ist auf die Anforderungen österreichischer Beauty- und Kosmetikstudios zugeschnitten – inklusive EUR-Preisen und österreichischem Kundenservice.',
+        answer: 'Treatflow wurde in Salzburg entwickelt und ist ein österreichisches Produkt. Die Software ist auf die Anforderungen österreichischer Kosmetik- und Beauty-Studios zugeschnitten – inklusive EUR-Preisen und österreichischem Kundenservice.',
     },
 ];
 
-export default function StudioSoftwareOesterreichPage() {
+export default function KosmetikstudioSoftwareOesterreichPage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
@@ -67,10 +69,10 @@ export default function StudioSoftwareOesterreichPage() {
                         Österreich
                     </div>
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                        Studio Software aus <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Österreich</span>
+                        Kosmetikstudio Software aus <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Österreich</span>
                     </h1>
                     <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                        Made in Austria, EU-gehostet, deutschsprachig und mit lokalem Support – die perfekte Wahl für Kosmetikstudios in ganz Österreich.
+                        Made in Austria, EU-gehostet, deutschsprachig und mit lokalem Support – inklusive RKSV-konformer Kasse für Kosmetikstudios in ganz Österreich.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
@@ -98,7 +100,7 @@ export default function StudioSoftwareOesterreichPage() {
             <section className="py-12 bg-white">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <p className="text-gray-600 leading-relaxed">
-                        Treatflow wurde in Österreich entwickelt und verbindet moderne Technologie mit österreichischer Zuverlässigkeit. Als einheimisches Unternehmen kennen wir die Bedürfnisse heimischer Beauty- und Kosmetikstudios – von der Buchhaltung bis zum Datenschutz. EU-Hosting, deutsche Sprache und ein Support-Team aus Wien.
+                        Treatflow wurde in Österreich entwickelt und verbindet moderne Technologie mit österreichischer Zuverlässigkeit. Als einheimisches Unternehmen kennen wir die Bedürfnisse heimischer Kosmetik- und Beauty-Studios – von der Registrierkassenpflicht bis zum Datenschutz. EU-Hosting, deutsche Sprache und ein Support-Team aus Salzburg.
                     </p>
                 </div>
             </section>
@@ -106,7 +108,7 @@ export default function StudioSoftwareOesterreichPage() {
             {/* Features Grid */}
             <section className="py-12 bg-gray-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Alles, was dein Studio braucht</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Alles, was dein Kosmetikstudio braucht</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {features.map((f, i) => (
                             <div key={i} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
@@ -117,6 +119,17 @@ export default function StudioSoftwareOesterreichPage() {
                                 <p className="text-sm text-gray-600">{f.desc}</p>
                             </div>
                         ))}
+                    </div>
+                    <div className="flex flex-wrap justify-center gap-3 mt-10">
+                        <Link href="/registrierkasse-kosmetikstudio-oesterreich" className="inline-flex items-center px-4 py-2 rounded-full border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:border-emerald-300 hover:text-emerald-600 transition-colors">
+                            Registrierkasse Österreich (RKSV)
+                        </Link>
+                        <Link href="/kosmetikstudio-software-wien" className="inline-flex items-center px-4 py-2 rounded-full border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:border-emerald-300 hover:text-emerald-600 transition-colors">
+                            Kosmetikstudio Software Wien
+                        </Link>
+                        <Link href="/kosmetikstudio-software" className="inline-flex items-center px-4 py-2 rounded-full border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:border-emerald-300 hover:text-emerald-600 transition-colors">
+                            Alle Funktionen
+                        </Link>
                     </div>
                 </div>
             </section>

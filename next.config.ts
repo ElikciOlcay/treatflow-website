@@ -134,6 +134,18 @@ const nextConfig: NextConfig = {
       { source: '/terminsoftware-kosmetikstudio/', destination: '/terminkalender', permanent: true },
       { source: '/online-terminbuchung-kosmetikstudio', destination: '/online-buchungen', permanent: true },
       { source: '/online-terminbuchung-kosmetikstudio/', destination: '/online-buchungen', permanent: true },
+
+      // Geo-Seiten auf Exact-Match-URLs umgezogen (kosmetikstudio-software-*)
+      { source: '/studio-software-oesterreich', destination: '/kosmetikstudio-software-oesterreich', permanent: true },
+      { source: '/studio-software-oesterreich/', destination: '/kosmetikstudio-software-oesterreich', permanent: true },
+      { source: '/studio-software-deutschland', destination: '/kosmetikstudio-software-deutschland', permanent: true },
+      { source: '/studio-software-deutschland/', destination: '/kosmetikstudio-software-deutschland', permanent: true },
+
+      // Exact-Match-Keywords auf bestehende Money-Pages
+      { source: '/kosmetikstudio-terminplaner', destination: '/terminkalender', permanent: true },
+      { source: '/kosmetikstudio-terminplaner/', destination: '/terminkalender', permanent: true },
+      { source: '/online-buchung-kosmetikstudio', destination: '/online-buchungen', permanent: true },
+      { source: '/online-buchung-kosmetikstudio/', destination: '/online-buchungen', permanent: true },
     ];
   },
 

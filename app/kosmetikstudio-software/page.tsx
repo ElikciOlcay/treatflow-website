@@ -1,6 +1,6 @@
 import {
     Calendar, Users, FileText, Shield, Bell, ArrowRight, CheckCircle,
-    Clock, Smartphone, Star, Zap, Heart, TrendingUp, ClipboardCheck
+    Clock, Smartphone, Star, Zap, Heart, TrendingUp, ClipboardCheck, Receipt
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -35,6 +35,12 @@ const clusterPages = [
         title: 'NiSV-Dokumentation',
         description: 'Behandlungen rechtssicher dokumentieren',
         icon: Shield,
+    },
+    {
+        href: '/kassensystem-kosmetikstudio',
+        title: 'Kassensystem',
+        description: 'TSE- & RKSV-konform aus dem Termin kassieren',
+        icon: Receipt,
     },
 ];
 import Navigation from '../components/Navigation';
@@ -538,8 +544,8 @@ export default function KosmetikstudioSoftwarePage() {
                         <Link href="/kundenkartei-software" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
                             Kundenkartei App
                         </Link>
-                        <Link href="/studio-software-oesterreich" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
-                            Studio Software Österreich
+                        <Link href="/kosmetikstudio-software-oesterreich" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
+                            Kosmetikstudio Software Österreich
                         </Link>
                         <Link href="/kosmetikstudio-software-wien" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
                             Kosmetikstudio Software Wien

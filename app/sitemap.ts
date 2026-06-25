@@ -46,6 +46,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${baseUrl}/kassensystem-kosmetikstudio`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/kosmetikstudio-kasse`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/kassensystem-kosmetikstudio-deutschland`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/registrierkasse-kosmetikstudio-oesterreich`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/kasse-mit-kundenkartei-kosmetikstudio`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
         {
@@ -209,16 +233,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         // Geo-Seiten
         {
-            url: `${baseUrl}/studio-software-deutschland`,
+            url: `${baseUrl}/kosmetikstudio-software-deutschland`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
-            priority: 0.7,
+            priority: 0.8,
         },
         {
-            url: `${baseUrl}/studio-software-oesterreich`,
+            url: `${baseUrl}/kosmetikstudio-software-oesterreich`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
-            priority: 0.7,
+            priority: 0.8,
         },
         {
             url: `${baseUrl}/kosmetikstudio-software-wien`,

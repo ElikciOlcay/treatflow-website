@@ -584,7 +584,7 @@ export default function KassensystemPage() {
                             { href: '/online-buchungen', t: 'Online-Buchungen', d: '24/7 Buchung über deinen Link' },
                             { href: '/kundenverwaltung', t: 'Digitale Kundenkartei', d: 'Kundendaten & Historie' },
                             { href: '/shop', t: 'Produktverkauf & Lager', d: 'Pflegeprodukte verkaufen' },
-                            { href: '/studio-software-oesterreich', t: 'Studio-Software Österreich', d: 'RKSV-konform kassieren' },
+                            { href: '/registrierkasse-kosmetikstudio-oesterreich', t: 'Registrierkasse Österreich', d: 'RKSV-konform kassieren' },
                             { href: '/funktionen', t: 'Alle Funktionen', d: 'Der komplette Überblick' },
                         ].map((item) => (
                             <Link key={item.href} href={item.href} className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">

@@ -85,8 +85,8 @@ export default function Footer() {
             </ul>
             <h3 className="font-semibold mb-4 mt-8">Regionen</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/studio-software-deutschland" className="text-gray-400 hover:text-white transition-colors">Deutschland</Link></li>
-              <li><Link href="/studio-software-oesterreich" className="text-gray-400 hover:text-white transition-colors">Österreich</Link></li>
+              <li><Link href="/kosmetikstudio-software-deutschland" className="text-gray-400 hover:text-white transition-colors">Deutschland</Link></li>
+              <li><Link href="/kosmetikstudio-software-oesterreich" className="text-gray-400 hover:text-white transition-colors">Österreich</Link></li>
               <li><Link href="/kosmetikstudio-software-berlin" className="text-gray-400 hover:text-white transition-colors">Berlin</Link></li>
               <li><Link href="/kosmetikstudio-software-wien" className="text-gray-400 hover:text-white transition-colors">Wien</Link></li>
             </ul>
@@ -111,6 +111,9 @@ export default function Footer() {
                 { href: '/kundenverwaltung', label: 'Kundenkartei Kosmetikstudio' },
                 { href: '/anamnesebogen-kosmetikstudio', label: 'Anamnesebogen Kosmetikstudio' },
                 { href: '/nisv-dokumentation-kosmetikstudio', label: 'NiSV-Dokumentation' },
+                { href: '/kosmetikstudio-kasse', label: 'Kosmetikstudio Kasse' },
+                { href: '/kassensystem-kosmetikstudio-deutschland', label: 'Kassensystem Kosmetikstudio Deutschland' },
+                { href: '/registrierkasse-kosmetikstudio-oesterreich', label: 'Registrierkasse Kosmetikstudio Österreich' },
               ].map((item) => (
                 <Link key={item.href} href={item.href} className="text-xs text-gray-500 hover:text-white transition-colors bg-gray-800 px-3 py-1 rounded-full">
                   {item.label}
