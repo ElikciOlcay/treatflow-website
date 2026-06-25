@@ -109,6 +109,7 @@ const featureComparison = [
     { feature: 'Terminkalender', basic: false, booking: true },
     { feature: 'Online-Buchungssystem', basic: false, booking: true },
     { feature: 'SMS & E-Mail Automatisierung', basic: false, booking: true },
+    { feature: 'Integrationen (Lexware, Google Kalender, Zapier)', basic: false, booking: true },
     { feature: 'Priority Support', basic: false, booking: true },
     { feature: 'Erweiterte Einstellungen', basic: false, booking: true },
 ];
