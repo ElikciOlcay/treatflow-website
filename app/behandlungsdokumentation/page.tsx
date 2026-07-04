@@ -1,4 +1,4 @@
-import { FileText, Camera, Zap, Clock, CheckCircle, ArrowRight, Brain, Shield } from 'lucide-react';
+import { FileText, Camera, Zap, Clock, CheckCircle, ArrowRight, Brain, Shield, Mic, Highlighter, PenTool } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
@@ -10,7 +10,7 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 export const metadata = {
     title: 'Behandlungsdokumentation Kosmetik digital',
     description: 'Digitale Behandlungsdokumentation Kosmetik mit Vorher-Nachher-Fotos, Notizen und Historie. Strukturiert, nachvollziehbar und NiSV-konform.',
-    keywords: ['Behandlungsdokumentation Kosmetik', 'Behandlungsdokumentation Kosmetikstudio', 'Vorher Nachher Fotos Software', 'Dokumentation App Kosmetikstudio', 'NiSV konform dokumentieren', 'Behandlungsdokumentation Software Kosmetik', 'NiSV Dokumentation Software', 'Automatische Behandlungsnotizen', 'Rechtssichere Dokumentation'],
+    keywords: ['Behandlungsdokumentation Kosmetik', 'Behandlungsdokumentation Kosmetikstudio', 'Vorher Nachher Fotos Software', 'Dokumentation App Kosmetikstudio', 'NiSV konform dokumentieren', 'Behandlungsdokumentation Software Kosmetik', 'NiSV Dokumentation Software', 'Automatische Behandlungsnotizen', 'Rechtssichere Dokumentation', 'Behandlung per Sprache diktieren', 'KI Diktat Kosmetik', 'Foto-Markierungen Behandlung', 'digitale Unterschrift Behandlung'],
     alternates: {
         canonical: 'https://www.treatflow.io/behandlungsdokumentation',
     },
@@ -232,6 +232,97 @@ export default function BehandlungsdokumentationPage() {
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
                                     Export-Funktionen
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Diktat, Foto-Markierungen & Unterschriften */}
+            <section className="py-20 bg-gradient-to-br from-fuchsia-50 via-white to-purple-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
+                            Dokumentieren, ohne zu tippen
+                        </h2>
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Sprich deine Behandlung einfach ein, markiere Auffälligkeiten direkt auf dem Foto und lass rechtssicher unterschreiben - alles auf dem Tablet.
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Diktat mit KI */}
+                        <div className="bg-white border border-fuchsia-100 p-8 rounded-2xl shadow-sm">
+                            <div className="w-12 h-12 bg-gradient-to-r from-fuchsia-500 to-purple-600 rounded-lg flex items-center justify-center mb-6">
+                                <Mic className="h-6 w-6 text-white" />
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Diktat mit KI-Unterstützung</h3>
+                            <p className="text-gray-600 mb-6">
+                                Sprich deine Behandlung einfach ein - die KI schreibt automatisch mit und formuliert daraus eine saubere, strukturierte Dokumentation.
+                            </p>
+                            <ul className="space-y-2">
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Sprachaufnahme direkt am Tablet
+                                </li>
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Automatische Textverbesserung
+                                </li>
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Mehr Zeit für den Kunden
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Foto-Markierungen */}
+                        <div className="bg-white border border-blue-100 p-8 rounded-2xl shadow-sm">
+                            <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                                <Highlighter className="h-6 w-6 text-white" />
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Markierungen auf Fotos</h3>
+                            <p className="text-gray-600 mb-6">
+                                Zeichne Behandlungszonen, Auffälligkeiten und Bereiche direkt auf Vorher-Nachher-Fotos ein - präzise und nachvollziehbar dokumentiert.
+                            </p>
+                            <ul className="space-y-2">
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Behandlungszonen einzeichnen
+                                </li>
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Auffälligkeiten festhalten
+                                </li>
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Sicher am Kundenprofil gespeichert
+                                </li>
+                            </ul>
+                        </div>
+
+                        {/* Digitale Unterschriften */}
+                        <div className="bg-white border border-emerald-100 p-8 rounded-2xl shadow-sm">
+                            <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mb-6">
+                                <PenTool className="h-6 w-6 text-white" />
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Digitale Unterschriften</h3>
+                            <p className="text-gray-600 mb-6">
+                                Kunde und Mitarbeiter unterschreiben direkt auf dem Bildschirm. So ist jede Behandlung rechtssicher bestätigt und lückenlos belegt.
+                            </p>
+                            <ul className="space-y-2">
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Unterschrift von Kunde & Mitarbeiter
+                                </li>
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Rechtssicher mit Zeitstempel
+                                </li>
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Als PDF exportierbar
                                 </li>
                             </ul>
                         </div>

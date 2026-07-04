@@ -1,16 +1,21 @@
 import {
   ArrowRight,
+  BarChart3,
   Bell,
   CalendarDays,
   CheckCircle,
   ClipboardCheck,
   FileText,
+  Languages,
+  ListChecks,
   Lock,
+  Mic,
   Receipt,
   Server,
   Shield,
   ShieldCheck,
   Star,
+  Ticket,
   Users,
 } from "lucide-react";
 import Link from 'next/link';
@@ -393,6 +398,64 @@ export default function Home() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               <p className="text-sm text-gray-500 mt-3">Ohne Kreditkarte. Jederzeit kündbar.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Und das kann Treatflow außerdem
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Praktische Extras, die deinen Studioalltag noch einfacher machen - in Treatflow bereits enthalten.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { href: undefined, icon: BarChart3, label: 'Statistiken & Auswertungen', desc: 'Umsatz, Termine, Kunden und Top-Leistungen auf einen Blick - filterbar nach Zeitraum und Team.', color: 'bg-cyan-100 text-cyan-600' },
+                { href: '/behandlungsdokumentation', icon: Mic, label: 'KI-Diktat', desc: 'Behandlung einfach einsprechen - die KI schreibt automatisch mit und verfeinert den Text.', color: 'bg-fuchsia-100 text-fuchsia-600' },
+                { href: '/online-buchungen', icon: Languages, label: 'Mehrsprachige Buchung', desc: 'Deine Buchungsseite in 6 Sprachen - jeder Kunde bucht bequem in seiner Sprache.', color: 'bg-sky-100 text-sky-600' },
+                { href: '/online-buchungen', icon: Ticket, label: 'Rabattcodes', desc: 'Aktionen und Neukundencodes für die Online-Buchung, inklusive Nutzungsstatistik.', color: 'bg-pink-100 text-pink-600' },
+                { href: undefined, icon: ListChecks, label: 'Aufgaben & Team-Notizen', desc: 'Aufgaben mit Fälligkeiten, Notizen und Zuweisungen - mit Lesebestätigung fürs Team.', color: 'bg-violet-100 text-violet-600' },
+              ].map((item) => {
+                const cardBody = (
+                  <>
+                    <div className="flex items-center mb-4">
+                      <div className={`w-12 h-12 ${item.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                        <item.icon className="h-6 w-6" />
+                      </div>
+                    </div>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">{item.label}</h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+                    {item.href && (
+                      <span className="inline-flex items-center text-sm font-medium text-indigo-600 mt-4 group-hover:text-indigo-700">
+                        Mehr erfahren
+                        <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                      </span>
+                    )}
+                  </>
+                );
+
+                return item.href ? (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className="group bg-white p-6 rounded-2xl border border-gray-100 hover:border-gray-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl block"
+                  >
+                    {cardBody}
+                  </Link>
+                ) : (
+                  <div
+                    key={item.label}
+                    className="group bg-white p-6 rounded-2xl border border-gray-100 transition-all duration-300 hover:shadow-xl"
+                  >
+                    {cardBody}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

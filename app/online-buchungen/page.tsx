@@ -1,4 +1,4 @@
-import { Calendar, Link2, Bell, CheckCircle, ArrowRight, Clock, Users, Smartphone } from 'lucide-react';
+import { Calendar, Link2, Bell, CheckCircle, ArrowRight, Clock, Users, Smartphone, Languages, Ticket } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
@@ -11,7 +11,7 @@ import AiAnswerCapsule from '../components/AiAnswerCapsule';
 export const metadata = {
     title: 'Online-Terminbuchung & Buchungssystem Kosmetikstudio',
     description: 'Online-Terminbuchung für dein Kosmetikstudio: Kunden buchen 24/7 über deinen persönlichen Link. Automatische Bestätigungen, weniger No-Shows.',
-    keywords: ['Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Buchungssystem Kosmetik', 'Online Buchungssystem Kosmetik', 'Terminbuchungssoftware Kosmetik', 'Buchungssoftware Kosmetikstudio', 'Buchungslink Beauty', '24/7 Terminbuchung', 'Online-Terminbuchung Kosmetik', 'Kosmetikstudio Buchungssystem'],
+    keywords: ['Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Buchungssystem Kosmetik', 'Online Buchungssystem Kosmetik', 'Terminbuchungssoftware Kosmetik', 'Buchungssoftware Kosmetikstudio', 'Buchungslink Beauty', '24/7 Terminbuchung', 'Online-Terminbuchung Kosmetik', 'Kosmetikstudio Buchungssystem', 'mehrsprachige Buchungsseite', 'Buchungsseite mehrere Sprachen', 'Rabattcodes Online-Buchung', 'Rabattcode Kosmetikstudio'],
     alternates: {
         canonical: 'https://www.treatflow.io/online-buchungen',
     },
@@ -276,6 +276,65 @@ export default function OnlineBuchungenPage() {
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
                                     Stornierungsbenachrichtigungen per SMS
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Mehrsprachig & Rabattcodes */}
+            <section className="py-20 bg-gradient-to-br from-orange-50 to-red-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
+                            Mehr Reichweite, mehr Buchungen
+                        </h2>
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Erreiche Kunden in ihrer Sprache und belohne sie mit gezielten Aktionen - direkt über deine Buchungsseite.
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        {/* Mehrsprachige Buchungsseite */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                            <div className="w-12 h-12 bg-gradient-to-r from-sky-500 to-blue-600 rounded-lg flex items-center justify-center mb-6">
+                                <Languages className="h-6 w-6 text-white" />
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Buchungsseite in 6 Sprachen</h3>
+                            <p className="text-gray-600 mb-6">
+                                Deine Online-Buchungsseite passt sich automatisch an die Sprache deiner Kunden an. So bucht jeder bequem und ohne Sprachbarriere.
+                            </p>
+                            <div className="flex flex-wrap gap-2">
+                                {['Deutsch', 'Englisch', 'Türkisch', 'Polnisch', 'Italienisch', 'Russisch'].map((lang) => (
+                                    <span key={lang} className="inline-flex items-center rounded-full bg-sky-50 border border-sky-100 px-3 py-1 text-sm font-medium text-sky-700">
+                                        {lang}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Rabattcodes */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                            <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-600 rounded-lg flex items-center justify-center mb-6">
+                                <Ticket className="h-6 w-6 text-white" />
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Rabattcodes für Aktionen</h3>
+                            <p className="text-gray-600 mb-6">
+                                Erstelle Rabattcodes für deine Online-Buchung - ideal für Neukunden, Kampagnen und saisonale Aktionen. Deine Kunden lösen sie direkt beim Buchen ein.
+                            </p>
+                            <ul className="space-y-2">
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Codes für Neukunden & Kampagnen
+                                </li>
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Einlösung direkt bei der Buchung
+                                </li>
+                                <li className="flex items-center text-sm text-gray-700">
+                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                                    Nutzungsstatistik pro Code
                                 </li>
                             </ul>
                         </div>
