@@ -11,7 +11,7 @@ import AiAnswerCapsule from "../components/AiAnswerCapsule";
 export const metadata: Metadata = {
   title: "Kundenkartei App: Kosmetik & Beauty mobil verwalten",
   description:
-    "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Behandlungshistorie und Fotos mobil auf Smartphone und Tablet. DSGVO-konform, 14 Tage kostenlos.",
+    "Digitale Kundenkartei-App fürs Kosmetikstudio: Kundendaten, Behandlungshistorie & Vorher-Nachher-Fotos mobil auf Handy und Tablet. DSGVO-konform, keine Provision. 14 Tage kostenlos.",
   keywords: [
     "kundenkartei app",
     "app kundenkartei",

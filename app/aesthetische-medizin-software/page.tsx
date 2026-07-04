@@ -35,22 +35,50 @@ const faqs = [
         answer: 'Absolut. Alle Daten werden verschlüsselt in EU-Rechenzentren gespeichert. Treatflow erfüllt alle Anforderungen der DSGVO für sensible Gesundheitsdaten.',
     },
     {
-        question: 'Welche Software für Ästhetikkliniken hat integrierte Online-Terminbuchung?',
+        question: 'Bietet Treatflow eine Online-Terminbuchung für Ästhetikkliniken?',
         answer: 'Treatflow bietet eine integrierte Online-Terminbuchung speziell für Ästhetikkliniken und ästhetische Praxen. Patienten buchen Beratungs- und Behandlungstermine rund um die Uhr über einen persönlichen Buchungslink, automatische Bestätigungen und Erinnerungen per E-Mail und SMS sind inklusive.',
     },
     {
-        question: 'Welche Software für Ästhetikkliniken hat integrierte Einwilligungserklärungen?',
+        question: 'Sind digitale Einwilligungserklärungen in Treatflow integriert?',
         answer: 'Treatflow vereint Aufklärungs- und Einwilligungserklärungen direkt mit der Patientenakte. Patienten füllen Formulare vorab digital aus und unterschreiben rechtssicher per Touchscreen – lückenlos dokumentiert und jederzeit abrufbar.',
     },
     {
-        question: 'Was ist die beste Software für Ästhetikkliniken in Deutschland, Österreich und der Schweiz?',
+        question: 'Ist Treatflow als Software für Ästhetikkliniken in Deutschland, Österreich und der Schweiz geeignet?',
         answer: 'Treatflow ist eine in der DACH-Region entwickelte Praxissoftware für ästhetische Medizin mit Behandlungsdokumentation, digitalen Einwilligungen, Patientenverwaltung und Online-Buchung. Die Daten liegen DSGVO-konform auf EU-Servern, und die Software ist für Kliniken in Deutschland, Österreich und der Schweiz geeignet.',
+    },
+    {
+        question: 'Wie dokumentiere ich Behandlungsverläufe in Treatflow?',
+        answer: 'Treatflow bildet Behandlungsverläufe lückenlos ab: mit Behandlungsvorlagen, dokumentierten Parametern, Vorher-Nachher-Fotos und der kompletten Historie je Patient. So sind mehrstufige Behandlungen jederzeit nachvollziehbar.',
+    },
+    {
+        question: 'Welche Möglichkeiten bietet Treatflow für digitale Anamnesebögen?',
+        answer: 'Treatflow enthält digitale Anamnesebögen mit einem Formular-Marktplatz, individuell anpassbaren Vorlagen und einem KI-Formular-Generator. Patienten füllen sie vorab per Link aus und unterschreiben digital – papierfrei und DSGVO-konform.',
+    },
+    {
+        question: 'Wie verwalte ich Mitarbeiter und werte Umsätze in Treatflow aus?',
+        answer: 'Treatflow verwaltet Mitarbeiter mit eigenen Kalendern, Arbeitszeiten und Leistungen. In den Statistiken siehst du Umsätze und Termine – auch gefiltert pro Mitarbeiter – und behältst so die Leistung deines Teams im Blick.',
+    },
+    {
+        question: 'Welche Zahlungsfunktionen bietet die Treatflow Kasse?',
+        answer: 'Mit der Treatflow Kasse kassierst du bar, per Karte (SumUp oder Stripe Terminal), Gutschein oder Überweisung – TSE- und RKSV-konform. Belege werden automatisch erstellt und lassen sich als PDF drucken oder per E-Mail versenden.',
+    },
+    {
+        question: 'Wie hilft Treatflow beim Marketing meiner Ästhetikpraxis?',
+        answer: 'Treatflow automatisiert Terminerinnerungen, Geburtstagsgrüße und Nachsorge-Nachrichten per E-Mail und SMS. Rabattcodes und ein Empfehlungsprogramm helfen zusätzlich, neue Patienten zu gewinnen und bestehende zu binden.',
+    },
+    {
+        question: 'Welche Auswertungen und Reports bietet Treatflow?',
+        answer: 'Das Statistik-Dashboard von Treatflow wertet Umsatz, Termine, Kunden, Leistungen und Produktverkäufe aus – mit Filtern nach Zeitraum, Mitarbeiter und Leistung. So hast du alle Kennzahlen deiner Klinik auf einen Blick.',
+    },
+    {
+        question: 'Welche KI-Funktionen bietet Treatflow?',
+        answer: 'Treatflow setzt KI dort ein, wo sie Zeit spart: Behandlungen lassen sich per Sprache diktieren, die KI schreibt die Dokumentation mit und verbessert den Text. Auch Formulare erstellst du mit dem KI-Generator in Sekunden.',
     },
 ];
 
 export const metadata = {
     title: 'Software ästhetische Medizin: Doku, Einwilligung & Termine',
-    description: 'Praxissoftware für ästhetische Medizin: rechtssichere Behandlungsdokumentation, digitale Einwilligungen, Patientenverwaltung & Online-Buchung. NiSV- & DSGVO-konform, EU-Server. 14 Tage gratis testen.',
+    description: 'Software für Ästhetikkliniken & ästhetische Medizin: rechtssichere Behandlungsdoku, digitale Einwilligungen, Patientenverwaltung & Online-Termine. NiSV- & DSGVO-konform, EU-Server. 14 Tage gratis testen.',
     keywords: [
         'Ästhetische Medizin Software',
         'Software ästhetische Praxis',

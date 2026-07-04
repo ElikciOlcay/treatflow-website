@@ -1,4 +1,4 @@
-import { Users, Search, Upload, Database, CheckCircle, ArrowRight, Phone, Mail, Shield, Camera, FileText, Clock, Globe, XCircle } from 'lucide-react';
+import { Users, Search, Upload, Database, CheckCircle, ArrowRight, Phone, Mail, Shield, Camera, FileText, Clock, Globe, XCircle, Smartphone, Tablet, Monitor } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
@@ -11,7 +11,7 @@ import AiAnswerCapsule from '../components/AiAnswerCapsule';
 export const metadata = {
     title: 'Kundenverwaltung Kosmetikstudio: Daten & Historie',
     description: 'Professionelle Kundenverwaltung für dein Kosmetikstudio: Behandlungsverlauf, Kundenhistorie, Notizen und Fotos zentral verwalten. DSGVO-konform.',
-    keywords: ['Kundenverwaltung Kosmetikstudio', 'Kundenverwaltung Kosmetik', 'digitale Kundenverwaltung Kosmetik', 'Kundenmanagement Kosmetikstudio', 'Kundendaten verwalten Kosmetik', 'Kundenhistorie Kosmetik', 'Kundenprofil Kosmetikstudio', 'CRM Kosmetikstudio', 'Behandlungshistorie', 'DSGVO Kundendaten'],
+    keywords: ['Kundenverwaltung Kosmetikstudio', 'Kundenverwaltung Kosmetik', 'digitale Kundenverwaltung Kosmetik', 'Kundenmanagement Kosmetikstudio', 'Kundendaten verwalten Kosmetik', 'Kundenhistorie Kosmetik', 'Kundenprofil Kosmetikstudio', 'CRM Kosmetikstudio', 'Behandlungshistorie', 'DSGVO Kundendaten', 'Kundenkartei Kosmetik App', 'Kundenkartei App Kosmetikstudio'],
     alternates: {
         canonical: 'https://www.treatflow.io/kundenverwaltung',
     },
@@ -244,6 +244,87 @@ export default function KundenverwaltungPage() {
                                     Duplikat-Erkennung
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Kundenkartei App - mobil auf jedem Gerät */}
+            <section className="py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                                <Smartphone className="h-4 w-4 mr-2" />
+                                Kundenkartei App
+                            </div>
+                            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                                Die Kundenkartei-App fürs Kosmetikstudio – immer dabei
+                            </h2>
+                            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                                Treatflow ist eine webbasierte Kundenkartei-App, die ohne Installation auf Smartphone,
+                                Tablet und Desktop läuft. So hast du die komplette Kundenkartei direkt am Behandlungsplatz
+                                zur Hand – Kundendaten, Behandlungshistorie und Vorher-Nachher-Fotos jederzeit griffbereit.
+                            </p>
+                            <ul className="space-y-4">
+                                <li className="flex items-start">
+                                    <div className="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <Smartphone className="h-5 w-5 text-indigo-600" />
+                                    </div>
+                                    <div>
+                                        <span className="font-semibold text-gray-900 block">Am Smartphone</span>
+                                        <span className="text-sm text-gray-600">Kundendaten unterwegs oder zwischen zwei Terminen aufrufen und ergänzen.</span>
+                                    </div>
+                                </li>
+                                <li className="flex items-start">
+                                    <div className="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <Tablet className="h-5 w-5 text-indigo-600" />
+                                    </div>
+                                    <div>
+                                        <span className="font-semibold text-gray-900 block">Am Tablet</span>
+                                        <span className="text-sm text-gray-600">Direkt am Behandlungsplatz dokumentieren und Fotos zur Kundenakte hinzufügen.</span>
+                                    </div>
+                                </li>
+                                <li className="flex items-start">
+                                    <div className="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                        <Monitor className="h-5 w-5 text-indigo-600" />
+                                    </div>
+                                    <div>
+                                        <span className="font-semibold text-gray-900 block">Am Desktop</span>
+                                        <span className="text-sm text-gray-600">Am großen Bildschirm den vollen Überblick über alle Kundinnen behalten.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p className="mt-8 text-gray-600">
+                                Alle Details zur mobilen Lösung findest du auf unserer Seite zur{' '}
+                                <Link href="/kundenkartei-software" className="text-indigo-600 font-medium hover:underline">Kundenkartei App für Kosmetik</Link>.
+                            </p>
+                        </div>
+                        <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8">
+                            <div className="grid grid-cols-3 gap-4 text-center">
+                                {[
+                                    { icon: Shield, label: 'DSGVO-konform', sub: 'EU-Server' },
+                                    { icon: Globe, label: 'Von überall', sub: 'ohne Installation' },
+                                    { icon: Camera, label: 'Fotos', sub: 'vorher/nachher' },
+                                ].map((item, idx) => {
+                                    const Icon = item.icon;
+                                    return (
+                                        <div key={idx} className="bg-white rounded-xl p-4 shadow-sm">
+                                            <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                                                <Icon className="h-5 w-5 text-white" />
+                                            </div>
+                                            <p className="text-sm font-semibold text-gray-900">{item.label}</p>
+                                            <p className="text-xs text-gray-500">{item.sub}</p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                            <div className="mt-6 bg-white rounded-xl p-5 shadow-sm">
+                                <p className="text-sm text-gray-600 leading-relaxed">
+                                    „Die Kundenkartei habe ich als App auf dem Tablet immer griffbereit – bei jeder Kundin
+                                    sehe ich sofort die letzte Behandlung und alle Notizen."
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

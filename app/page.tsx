@@ -36,7 +36,7 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
   title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
   description:
-    "Treatflow vereint Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation in einer App. DSGVO-konform, Made in Austria, von 500+ Studios genutzt. 14 Tage gratis testen.",
+    "Kosmetikstudio-Software für Termine, Online-Buchung, Kundenkartei, Formulare, Doku & Kasse - alles in einer App. Keine Provision, DSGVO-konform, Made in Austria. 500+ Studios, 14 Tage gratis testen.",
   alternates: {
     canonical: "https://www.treatflow.io",
   },

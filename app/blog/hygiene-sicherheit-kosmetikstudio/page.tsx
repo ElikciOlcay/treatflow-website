@@ -426,11 +426,11 @@ export default function BlogPost() {
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-purple-600 mr-3" />
-                                    <span className="text-purple-800">Digitale Kundenkartei für lückenlose Dokumentation</span>
+                                    <span className="text-purple-800"><Link href="/kundenverwaltung" className="underline hover:text-indigo-600">Digitale Kundenkartei</Link> für lückenlose Dokumentation</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-purple-600 mr-3" />
-                                    <span className="text-purple-800">Online-Terminkalender mit Hygiene-Übersicht</span>
+                                    <span className="text-purple-800"><Link href="/terminkalender" className="underline hover:text-indigo-600">Online-Terminkalender</Link> mit Hygiene-Übersicht</span>
                                 </li>
                                 <li className="flex items-center text-sm">
                                     <CheckCircle className="h-4 w-4 text-purple-600 mr-3" />
@@ -448,7 +448,9 @@ export default function BlogPost() {
 
                         <p className="text-gray-700 leading-relaxed mb-8">
                             Investiere in die richtige Ausstattung, schule dein Team regelmäßig und dokumentiere
-                            alles lückenlos. Deine Kundinnen und dein Geschäft werden es dir danken.
+                            alles lückenlos. Eine <Link href="/kosmetikstudio-software" className="text-indigo-600 underline hover:text-indigo-700">All-in-One Kosmetikstudio-Software</Link> bündelt
+                            Hygiene-Checklisten, Behandlungsdokumentation und Kundenkartei an einem Ort – so bleibt alles nachweisbar.
+                            Deine Kundinnen und dein Geschäft werden es dir danken.
                         </p>
 
                         <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl mb-12">
