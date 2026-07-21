@@ -9,7 +9,9 @@ import Breadcrumbs, { generateBreadcrumbSchema } from "../components/Breadcrumbs
 import AiAnswerCapsule from "../components/AiAnswerCapsule";
 
 export const metadata: Metadata = {
-  title: "Kundenkartei App: Kosmetik & Beauty mobil verwalten",
+  title: {
+    absolute: "Kundenkartei App für Kosmetikstudio & Beauty | Treatflow",
+  },
   description:
     "Digitale Kundenkartei-App fürs Kosmetikstudio: Kundendaten, Behandlungshistorie & Vorher-Nachher-Fotos mobil auf Handy und Tablet. DSGVO-konform, keine Provision. 14 Tage kostenlos.",
   keywords: [
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
     canonical: "https://www.treatflow.io/kundenkartei-software",
   },
   openGraph: {
-    title: "Kundenkartei App für Kosmetik & Beauty | Treatflow",
+    title: "Kundenkartei App für Kosmetikstudio & Beauty | Treatflow",
     description:
       "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Fotos und Formulare in einer App. Kostenlos testen.",
     url: "https://www.treatflow.io/kundenkartei-software",

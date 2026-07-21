@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import { generateFaqSchema } from '@/lib/schema';
+import { buildHreflangAlternates } from '@/app/i18n/seo';
 
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Ästhetische Medizin Software' }];
 
@@ -77,8 +78,10 @@ const faqs = [
 ];
 
 export const metadata = {
-    title: 'Software ästhetische Medizin: Doku, Einwilligung & Termine',
-    description: 'Software für Ästhetikkliniken & ästhetische Medizin: rechtssichere Behandlungsdoku, digitale Einwilligungen, Patientenverwaltung & Online-Termine. NiSV- & DSGVO-konform, EU-Server. 14 Tage gratis testen.',
+    title: {
+        absolute: 'Software ästhetische Medizin: Doku, Einwilligung & Termine | Treatflow',
+    },
+    description: 'Software für Ästhetikkliniken: Behandlungsdokumentation, digitale Einwilligungen, Patientenakte & Online-Termine. NiSV- & DSGVO-konform, EU-Server. 14 Tage gratis.',
     keywords: [
         'Ästhetische Medizin Software',
         'Software ästhetische Praxis',
@@ -94,6 +97,7 @@ export const metadata = {
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/aesthetische-medizin-software',
+        ...buildHreflangAlternates('aesthetic-clinic-software'),
     },
     openGraph: {
         title: 'Software für ästhetische Medizin: Doku & Praxis',

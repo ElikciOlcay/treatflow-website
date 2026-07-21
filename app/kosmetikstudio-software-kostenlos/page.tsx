@@ -51,7 +51,7 @@ const faqSchema = {
       name: 'Gibt es kostenlose Software für Kosmetikstudios?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja, es gibt kostenlose Optionen wie Fresha (Basis) oder Google Kalender. Diese haben jedoch Einschränkungen: fehlende Behandlungsdokumentation, keine NiSV-Konformität, versteckte Kosten durch Gebühren oder eingeschränkter Funktionsumfang.',
+        text: 'Kostenlose Basislösungen wie Google Kalender decken nur Termine ab. Globale Tools wie Fresha sind in der Regel Abo-pflichtig und kommen oft mit Payment- oder Marketplace-Gebühren – ohne NiSV-Dokumentation wie bei Treatflow.',
       },
     },
     {
@@ -184,16 +184,16 @@ const freeOptions = [
     verdict: 'Nur für absolute Anfänger ohne professionellen Anspruch.',
   },
   {
-    name: 'Fresha (kostenlose Basis)',
-    pros: ['Kostenlose Basisversion', 'Online-Buchungen', 'Terminkalender'],
+    name: 'Fresha',
+    pros: ['Online-Buchungen', 'Terminkalender', 'Internationale Plattform'],
     cons: [
-      'Payment-Gebühren auf Kartenzahlungen',
+      'Monatsabo (kein Gratis-Plan)',
+      'Payment- und ggf. Marketplace-Gebühren',
       'Keine Behandlungsdokumentation',
       'Keine NiSV-Formulare',
-      'US-Unternehmen, Server unklar',
       'Support primär auf Englisch',
     ],
-    verdict: 'Kostenlos im Einstieg, aber versteckte Kosten bei Kartenzahlungen.',
+    verdict: 'Abo plus Gebühren – ohne spezialisierte Kosmetik-Dokumentation.',
   },
   {
     name: 'Treatwell (Marktplatz)',
@@ -793,14 +793,14 @@ export default function KosmetikstudioSoftwareKostenlos() {
                 >
                   Treatwell
                 </Link>{' '}
-                nehmen bis zu 35% Provision pro Buchung. Tools wie{' '}
+                nehmen bis zu 35% Provision pro Buchung.                 Tools wie{' '}
                 <Link
                   href="/treatflow-vs-fresha"
                   className="text-indigo-600 hover:underline"
                 >
                   Fresha
                 </Link>{' '}
-                verdienen an Payment-Gebühren. Und generische Lösungen wie{' '}
+                arbeiten mit Monatsabo plus Payment- und ggf. Marketplace-Gebühren. Und generische Lösungen wie{' '}
                 <Link
                   href="/treatflow-vs-shore"
                   className="text-indigo-600 hover:underline"

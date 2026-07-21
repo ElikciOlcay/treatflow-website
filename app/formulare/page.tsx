@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { buildHreflangAlternates } from '@/app/i18n/seo';
 
 export const metadata = {
     title: 'Anamneseformular Kosmetik: Fragen & Pflichten',
@@ -13,6 +14,7 @@ export const metadata = {
     keywords: ['Anamnese Formular Kosmetikstudio', 'Anamnesebogen Kosmetik', 'Formular Generator Anamnese', 'Einverständniserklärung Kosmetik Behandlung', 'Formulare Kosmetik', 'Anamnese Software Kosmetik', 'digitaler Anamnesebogen', 'KI Formular Generator', 'Anamnese Vorlagen', 'NiSV konform Formulare', 'Einverständniserklärung Beauty'],
     alternates: {
         canonical: 'https://www.treatflow.io/formulare',
+        ...buildHreflangAlternates('forms'),
     },
     openGraph: {
         title: 'Anamneseformular Kosmetik: Fragen & Pflichtangaben',

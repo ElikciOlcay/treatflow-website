@@ -5,14 +5,14 @@ import { ChevronDown, HelpCircle } from 'lucide-react';
 
 const faqs = [
   {
-    question: 'Ist Fresha wirklich kostenlos?',
+    question: 'Was kostet Fresha wirklich?',
     answer:
-      'Fresha bietet eine kostenlose Basisversion, verdient aber an Payment-Gebühren auf jede Kartenzahlung, Premium-Features und Produktverkäufen. Die tatsächlichen Kosten hängen vom Umsatz ab.',
+      'Fresha ist ein kostenpflichtiges Salon-System: Monatsabo (oft pro buchbarem Teammitglied, Preise je nach Land) plus Gebühren für Kartenzahlungen und ggf. Marketplace-/Neukunden-Provisionen. Die Gesamtkosten steigen mit Teamgröße und Umsatz.',
   },
   {
     question: 'Was ist der Unterschied zwischen Treatflow und Fresha?',
     answer:
-      'Treatflow ist eine spezialisierte Software für Kosmetikstudios mit NiSV-Dokumentation, digitaler Kundenkartei und Behandlungsdokumentation. Fresha ist ein kostenloses Buchungstool ohne spezialisierte Kosmetik-Funktionen.',
+      'Treatflow ist eine spezialisierte Software für Kosmetikstudios mit NiSV-Dokumentation, digitaler Kundenkartei und Behandlungsdokumentation – zum festen Monatspreis ohne Provision pro Termin. Fresha ist ein globales Salon-Buchungssystem mit Abo-Modell und zusätzlichen Transaktions-/Marketplace-Gebühren.',
   },
   {
     question: 'Hat Fresha eine Behandlungsdokumentation?',
@@ -28,7 +28,7 @@ const faqs = [
     question:
       'Welche Software ist besser für Kosmetikstudios in Deutschland?',
     answer:
-      'Für Kosmetikstudios in Deutschland und Österreich ist Treatflow die bessere Wahl: DSGVO-konforme EU-Server, deutscher Support, NiSV-Dokumentation und spezialisierte Funktionen für die Beauty-Branche.',
+      'Für Kosmetikstudios in Deutschland und Österreich ist Treatflow oft die bessere Wahl: DSGVO-konforme EU-Server, deutscher Support, NiSV-Dokumentation und spezialisierte Funktionen für die Beauty-Branche – ohne Marketplace-Provision pro Termin.',
   },
 ];
 

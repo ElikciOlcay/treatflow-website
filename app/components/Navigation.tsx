@@ -12,7 +12,7 @@ const funktionen = [
     { href: '/kassensystem-kosmetikstudio', label: 'Kassensystem', desc: 'TSE- & RKSV-konform kassieren', icon: Receipt, color: 'text-green-600 bg-green-100' },
     { href: '/gutscheine-kosmetikstudio', label: 'Gutscheine', desc: 'Verkaufen, einlösen, Restwert', icon: Gift, color: 'text-purple-600 bg-purple-100' },
     { href: '/online-buchungen', label: 'Online-Buchungen', desc: 'Persönlicher Buchungslink 24/7', icon: Link2, color: 'text-rose-600 bg-rose-100' },
-    { href: '/kundenverwaltung', label: 'Kundenverwaltung', desc: 'Kundenprofile und Behandlungshistorie', icon: Users, color: 'text-emerald-600 bg-emerald-100' },
+    { href: '/kundenverwaltung', label: 'Kundenkartei', desc: 'Kundenprofile und Behandlungshistorie', icon: Users, color: 'text-emerald-600 bg-emerald-100' },
     { href: '/formulare', label: 'Formulare', desc: 'Digitale Anamnese und Einwilligungen', icon: ClipboardCheck, color: 'text-orange-600 bg-orange-100' },
     { href: '/behandlungsdokumentation', label: 'Dokumentation', desc: 'Behandlungen digital festhalten', icon: FileText, color: 'text-blue-600 bg-blue-100' },
     { href: '/nachrichtenautomatisierung', label: 'Nachrichten', desc: 'E-Mail und SMS automatisiert', icon: Bell, color: 'text-purple-600 bg-purple-100' },
@@ -23,6 +23,7 @@ const funktionen = [
 
 const branchen = [
     { href: '/kosmetikstudio-software', label: 'Kosmetikstudios', desc: 'Die All-in-One Lösung', icon: Sparkles, color: 'text-indigo-600 bg-indigo-100' },
+    { href: '/schoenheitssalon-software', label: 'Schönheitssalons', desc: 'Software für Salon & Institut', icon: Sparkles, color: 'text-fuchsia-600 bg-fuchsia-100' },
     { href: '/laser-haarentfernung-software', label: 'Laser Haarentfernung', desc: 'NiSV-konform dokumentieren', icon: Zap, color: 'text-blue-600 bg-blue-100' },
     { href: '/permanent-makeup-software', label: 'Permanent Makeup', desc: 'PMU und Microblading', icon: Palette, color: 'text-rose-600 bg-rose-100' },
     { href: '/aesthetische-medizin-software', label: 'Ästhetische Medizin', desc: 'Praxis- und Patientenverwaltung', icon: Stethoscope, color: 'text-teal-600 bg-teal-100' },

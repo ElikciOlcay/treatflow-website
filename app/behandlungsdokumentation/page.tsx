@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { buildHreflangAlternates } from '@/app/i18n/seo';
 
 export const metadata = {
     title: 'Behandlungsdokumentation Kosmetik digital',
@@ -13,6 +14,7 @@ export const metadata = {
     keywords: ['Behandlungsdokumentation Kosmetik', 'Behandlungsdokumentation Kosmetikstudio', 'Vorher Nachher Fotos Software', 'Dokumentation App Kosmetikstudio', 'NiSV konform dokumentieren', 'Behandlungsdokumentation Software Kosmetik', 'NiSV Dokumentation Software', 'Automatische Behandlungsnotizen', 'Rechtssichere Dokumentation', 'Behandlung per Sprache diktieren', 'KI Diktat Kosmetik', 'Foto-Markierungen Behandlung', 'digitale Unterschrift Behandlung'],
     alternates: {
         canonical: 'https://www.treatflow.io/behandlungsdokumentation',
+        ...buildHreflangAlternates('treatment-documentation'),
     },
     openGraph: {
         title: 'Behandlungsdokumentation Kosmetik: Fotos & Notizen',

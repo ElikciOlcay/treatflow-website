@@ -18,9 +18,11 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Schönheitssalon Software' }];
 
 export const metadata: Metadata = {
-  title: 'Schönheitssalon Software & Software Kosmetikinstitut',
+  title: {
+    absolute: 'Schönheitssalon Software: Termine & Kundenkartei | Treatflow',
+  },
   description:
-    'Schönheitssalon Software für Termine, Kundenkartei & Dokumentation – die digitale Software für Kosmetikinstitute und Beauty-Salons mit Team. DSGVO-konform, 14 Tage gratis testen.',
+    'Schönheitssalon Software für Kosmetikinstitute: Terminkalender, Online-Buchung ohne Provision, Kundenkartei und Dokumentation. DSGVO-konform, 14 Tage gratis testen.',
   keywords: [
     'schönheitssalon software',
     'beauty salon software',
@@ -33,9 +35,9 @@ export const metadata: Metadata = {
     canonical: 'https://www.treatflow.io/schoenheitssalon-software',
   },
   openGraph: {
-    title: 'Schönheitssalon Software: Termine, Kunden & Dokumentation',
+    title: 'Schönheitssalon Software: Termine & Kundenkartei | Treatflow',
     description:
-      'Online-Buchungen, Kundenverwaltung und Dokumentation in einer klaren App für Schönheitssalons.',
+      'Online-Buchungen, Kundenkartei und Dokumentation in einer klaren App für Schönheitssalons – ohne Provision.',
     url: 'https://www.treatflow.io/schoenheitssalon-software',
   },
 };

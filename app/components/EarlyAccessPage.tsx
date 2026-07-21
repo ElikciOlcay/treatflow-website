@@ -8,6 +8,7 @@ type Props = {
   title: string;
   subtitle: string;
   note: string;
+  badge?: string;
   defaultCountry?: string;
   copy: AccessFormCopy;
 };
@@ -18,6 +19,7 @@ export default function EarlyAccessPage({
   title,
   subtitle,
   note,
+  badge = "Early Access",
   defaultCountry,
   copy,
 }: Props) {
@@ -26,7 +28,7 @@ export default function EarlyAccessPage({
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-10">
           <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            Early Access
+            {badge}
           </div>
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">{title}</h1>
           <p className="text-lg text-gray-600 leading-relaxed">{subtitle}</p>

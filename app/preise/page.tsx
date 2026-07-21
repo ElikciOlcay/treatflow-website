@@ -5,6 +5,7 @@ import CTASection from '../components/CTASection';
 import PricingSection from '../components/PricingSection';
 import QuickFacts from '../components/QuickFacts';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { buildHreflangAlternates } from '@/app/i18n/seo';
 
 export const metadata = {
     title: 'Preise: Kosmetikstudio Software ab 39€/Monat',
@@ -12,6 +13,7 @@ export const metadata = {
     keywords: ['Kosmetikstudio Software Preise', 'Treatflow Preise', 'Kosmetikstudio Software Kosten', 'Beauty Software Preis', 'Studio Software günstig', 'Kassensystem Preis Kosmetik', 'TSE Kasse Kosten'],
     alternates: {
         canonical: 'https://www.treatflow.io/preise',
+        ...buildHreflangAlternates('pricing'),
     },
     openGraph: {
         title: 'Preise: Kosmetikstudio Software ab 39€/Monat | Treatflow',
@@ -35,7 +37,7 @@ const faqData = [
     },
     {
         question: 'Gibt es kostenlose Kosmetikstudio Software?',
-        answer: 'Einige Anbieter wie Fresha bieten kostenlose Basisversionen, verdienen aber an Payment-Gebühren und Premium-Features. Treatflow bietet transparente Festpreise ohne versteckte Kosten - ab 39€/Monat mit vollem Funktionsumfang.',
+        answer: 'Andere Anbieter wie Fresha arbeiten oft mit Monatsabo plus Payment- oder Marketplace-Gebühren. Treatflow bietet transparente Festpreise ohne Provision pro Termin – ab 39€/Monat mit vollem Funktionsumfang.',
     },
     {
         question: 'Lohnt sich der Booking-Plan?',
@@ -137,7 +139,7 @@ export default function PreisePage() {
             <Breadcrumbs items={[{ label: 'Preise' }]} />
 
             {/* Pricing Cards */}
-            <PricingSection />
+            <PricingSection headingLevel="h1" />
 
             {/* Feature Comparison Table */}
             <section className="py-20 bg-gray-50">

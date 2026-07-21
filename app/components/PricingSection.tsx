@@ -2,10 +2,16 @@
 
 import { CheckCircle, X, Star, ArrowRight, Receipt } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, type ElementType } from "react";
 
-export default function PricingSection() {
+type PricingSectionProps = {
+  /** Auf /preise = h1, auf der Startseite = h2 (nur ein H1 pro Seite). */
+  headingLevel?: "h1" | "h2";
+};
+
+export default function PricingSection({ headingLevel = "h2" }: PricingSectionProps) {
   const [isYearly, setIsYearly] = useState(false);
+  const Heading = headingLevel as ElementType;
   return (
     <section id="pricing" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,10 +20,10 @@ export default function PricingSection() {
             <Star className="h-4 w-4 fill-current" />
             Transparente Preise
           </div>
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+          <Heading className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
             Einfache Preise -
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> keine versteckten Kosten</span>
-          </h1>
+          </Heading>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Wähle das Paket, das zu deinem Studio passt. 14 Tage kostenlos testen - ohne Risiko.
           </p>

@@ -50,10 +50,14 @@ import AiAnswerCapsule from '../components/AiAnswerCapsule';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { buildHreflangAlternates } from '@/app/i18n/seo';
 
 export const metadata = {
-    title: 'Kosmetikstudio Software: Termine, Kunden & Doku',
-    description: 'All-in-One Software für dein Kosmetikstudio: Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation. 14 Tage kostenlos testen.',
+    title: {
+        absolute: 'Kosmetikstudio Software: Termine, Kundenkartei & Doku | Treatflow',
+    },
+    description:
+        'Kosmetikstudio Software ohne Provision: Online-Buchung, digitale Kundenkartei, Formulare, Behandlungsdokumentation & Kasse in einer App. DSGVO, EU-Server. 14 Tage gratis testen.',
     keywords: [
         'Kosmetikstudio Software',
         'Software für Kosmetikstudio',
@@ -72,10 +76,12 @@ export const metadata = {
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/kosmetikstudio-software',
+        ...buildHreflangAlternates('beauty-salon-software'),
     },
     openGraph: {
-        title: 'Kosmetikstudio Software: Termine, Kunden & Doku in einer App',
-        description: 'Online-Buchungen, Kundenverwaltung, digitale Formulare und Behandlungsdokumentation - alles in einer modernen Plattform.',
+        title: 'Kosmetikstudio Software: Termine, Kundenkartei & Doku | Treatflow',
+        description:
+            'Online-Buchungen, Kundenkartei, Formulare und Behandlungsdokumentation – ohne Marktplatz-Provision. 14 Tage gratis testen.',
         url: 'https://www.treatflow.io/kosmetikstudio-software',
         images: [
             {

@@ -11,7 +11,9 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
 
 export const metadata = {
-    title: 'Kasse mit Kundenkartei fürs Kosmetikstudio | Treatflow',
+    title: {
+        absolute: 'Kasse mit Kundenkartei fürs Kosmetikstudio | Treatflow',
+    },
     description: 'Normale Kassen verkaufen nur. Treatflow verbindet Kasse mit Kundenkartei, Terminen, Anamnese, Fotos und Behandlungshistorie. TSE/RKSV-konform. 14 Tage testen.',
     keywords: [
         'Kasse mit Kundenkartei Kosmetikstudio', 'Kassensystem mit Kundenverwaltung',

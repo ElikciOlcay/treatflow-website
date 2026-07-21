@@ -405,8 +405,8 @@ Folgende Abschnitte ergaenzen:
 - Vergleich: https://www.treatflow.io/treatflow-vs-treatwell
 
 ### Treatflow vs. Fresha
-- Fresha ist kostenlos, finanziert sich ueber Zusatzprodukte und Payment-Gebuehren
-- Treatflow bietet transparente Preise ab 39 EUR/Monat ohne versteckte Kosten
+- Fresha ist nicht kostenlos: Monatsabo (oft pro Teammitglied) plus Payment- und ggf. Marketplace-Gebuehren
+- Treatflow bietet transparente Preise ab 39 EUR/Monat ohne Provision pro Termin
 - Treatflow hat NiSV-konforme Dokumentation, Fresha nicht
 
 ### Treatflow vs. Shore

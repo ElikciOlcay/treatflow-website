@@ -15,44 +15,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }
     }
 
-    // Statische Seiten
+    function deEntry(path: string, pageKey: SeoPageKey, priority: number) {
+        return {
+            url: path ? `${baseUrl}/${path}` : baseUrl,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority,
+            alternates: buildHreflangAlternates(pageKey),
+        }
+    }
+
+    // Statische Seiten (Kern-Money-Pages mit hreflang)
     const staticRoutes = [
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 1,
-        },
-        {
-            url: `${baseUrl}/terminkalender`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/kundenverwaltung`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/formulare`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/behandlungsdokumentation`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/online-buchungen`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
+        deEntry('', 'home', 1),
+        deEntry('terminkalender', 'appointment-calendar', 0.8),
+        deEntry('kundenverwaltung', 'client-records', 0.8),
+        deEntry('formulare', 'forms', 0.8),
+        deEntry('behandlungsdokumentation', 'treatment-documentation', 0.8),
+        deEntry('online-buchungen', 'online-booking', 0.8),
         {
             url: `${baseUrl}/kassensystem-kosmetikstudio`,
             lastModified: new Date(),
@@ -143,12 +123,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.9,
         },
-        {
-            url: `${baseUrl}/kosmetikstudio-software`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
+        deEntry('kosmetikstudio-software', 'beauty-salon-software', 0.9),
         {
             url: `${baseUrl}/laser-haarentfernung-software`,
             lastModified: new Date(),
@@ -161,12 +136,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.9,
         },
-        {
-            url: `${baseUrl}/aesthetische-medizin-software`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
+        deEntry('aesthetische-medizin-software', 'aesthetic-clinic-software', 0.9),
         {
             url: `${baseUrl}/tattoo-studio-software`,
             lastModified: new Date(),
@@ -321,12 +291,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.9,
         },
-        {
-            url: `${baseUrl}/preise`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
+        deEntry('preise', 'pricing', 0.9),
         {
             url: `${baseUrl}/treatflow-vs-timely`,
             lastModified: new Date(),
@@ -422,21 +387,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: post.featured ? 0.9 : 0.8,
     }))
 
-    const landingRoutes = [
-        {
-            url: `${baseUrl}/landing/dokumentation-formulare`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.7,
-        },
-        {
-            url: `${baseUrl}/landing/heilmasseur-software-oesterreich`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.7,
-        },
-    ]
-
     const aiDiscoveryRoutes = [
         {
             url: `${baseUrl}/llms.txt`,
@@ -466,7 +416,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...frRoutes,
         blogIndex,
         ...blogRoutes,
-        ...landingRoutes,
+        // Paid-/Landing-Seiten bewusst nicht in der Sitemap (keinindex / keine Equity-Konkurrenz)
         ...aiDiscoveryRoutes,
     ]
 }

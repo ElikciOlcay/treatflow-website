@@ -13,7 +13,7 @@ const funktionen = [
     { href: '/kassensystem-kosmetikstudio', label: 'Kassensystem', icon: Receipt, color: 'text-green-600 bg-green-100' },
     { href: '/gutscheine-kosmetikstudio', label: 'Gutscheine', icon: Gift, color: 'text-purple-600 bg-purple-100' },
     { href: '/online-buchungen', label: 'Online-Buchungen', icon: Link2, color: 'text-rose-600 bg-rose-100' },
-    { href: '/kundenverwaltung', label: 'Kundenverwaltung', icon: Users, color: 'text-emerald-600 bg-emerald-100' },
+    { href: '/kundenverwaltung', label: 'Kundenkartei', icon: Users, color: 'text-emerald-600 bg-emerald-100' },
     { href: '/formulare', label: 'Formulare', icon: ClipboardCheck, color: 'text-orange-600 bg-orange-100' },
     { href: '/behandlungsdokumentation', label: 'Dokumentation', icon: FileText, color: 'text-blue-600 bg-blue-100' },
     { href: '/nachrichtenautomatisierung', label: 'Nachrichten', icon: Bell, color: 'text-purple-600 bg-purple-100' },
@@ -26,6 +26,7 @@ const funktionen = [
 
 const branchen = [
     { href: '/kosmetikstudio-software', label: 'Kosmetikstudios', icon: Sparkles, color: 'text-indigo-600 bg-indigo-100' },
+    { href: '/schoenheitssalon-software', label: 'Schönheitssalons', icon: Sparkles, color: 'text-fuchsia-600 bg-fuchsia-100' },
     { href: '/laser-haarentfernung-software', label: 'Laser Haarentfernung', icon: Zap, color: 'text-blue-600 bg-blue-100' },
     { href: '/permanent-makeup-software', label: 'Permanent Makeup', icon: Palette, color: 'text-rose-600 bg-rose-100' },
     { href: '/aesthetische-medizin-software', label: 'Ästhetische Medizin', icon: Stethoscope, color: 'text-teal-600 bg-teal-100' },

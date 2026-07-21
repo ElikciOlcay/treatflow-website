@@ -11,7 +11,9 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
 
 export const metadata = {
-    title: 'Kosmetikstudio Kasse: einfach & rechtssicher | Treatflow',
+    title: {
+        absolute: 'Kosmetikstudio Kasse: einfach & rechtssicher | Treatflow',
+    },
     description: 'Die Kasse fürs Kosmetikstudio: direkt aus dem Termin kassieren, Belege per E-Mail, Gutscheine verkaufen – TSE/RKSV-konform, ohne Provision. 14 Tage kostenlos testen.',
     keywords: [
         'Kosmetikstudio Kasse', 'Kasse Kosmetikstudio', 'Kasse für Beauty Studio',

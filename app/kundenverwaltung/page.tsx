@@ -7,17 +7,20 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import { buildHreflangAlternates } from '@/app/i18n/seo';
 
 export const metadata = {
-    title: 'Kundenverwaltung Kosmetikstudio: Daten & Historie',
-    description: 'Professionelle Kundenverwaltung für dein Kosmetikstudio: Behandlungsverlauf, Kundenhistorie, Notizen und Fotos zentral verwalten. DSGVO-konform.',
+    title: 'Kundenkartei Kosmetikstudio: Daten & Behandlungshistorie',
+    description:
+        'Digitale Kundenkartei fürs Kosmetikstudio: Kontakte, Behandlungshistorie, Notizen und Fotos an einem Ort. DSGVO-konform, EU-Server. 14 Tage gratis testen.',
     keywords: ['Kundenverwaltung Kosmetikstudio', 'Kundenverwaltung Kosmetik', 'digitale Kundenverwaltung Kosmetik', 'Kundenmanagement Kosmetikstudio', 'Kundendaten verwalten Kosmetik', 'Kundenhistorie Kosmetik', 'Kundenprofil Kosmetikstudio', 'CRM Kosmetikstudio', 'Behandlungshistorie', 'DSGVO Kundendaten', 'Kundenkartei Kosmetik App', 'Kundenkartei App Kosmetikstudio'],
     alternates: {
         canonical: 'https://www.treatflow.io/kundenverwaltung',
+        ...buildHreflangAlternates('client-records'),
     },
     openGraph: {
-        title: 'Kundenverwaltung Kosmetikstudio: Daten & Historie | Treatflow',
-        description: 'Professionelle Kundenverwaltung für dein Kosmetikstudio: Behandlungsverlauf, Kundenhistorie, Notizen und Fotos zentral verwalten.',
+        title: 'Kundenkartei Kosmetikstudio: Daten & Historie | Treatflow',
+        description: 'Digitale Kundenkartei fürs Kosmetikstudio: Behandlungsverlauf, Notizen und Fotos zentral – DSGVO-konform.',
         url: 'https://www.treatflow.io/kundenverwaltung',
         images: [
             {

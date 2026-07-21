@@ -7,6 +7,7 @@ export type PricingPageIntlContent = {
   monthLabel: string;
   earlyAccessHref: string;
   ctaLabel: string;
+  footerNote?: string;
   plans: {
     name: string;
     price: string;
@@ -61,6 +62,12 @@ export default function PricingPageIntl({ content }: { content: PricingPageIntlC
             </div>
           ))}
         </div>
+
+        {content.footerNote ? (
+          <p className="text-center text-sm text-gray-500 mt-8 max-w-2xl mx-auto">
+            {content.footerNote}
+          </p>
+        ) : null}
       </div>
     </section>
   );

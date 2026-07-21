@@ -10,7 +10,7 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 export const metadata = {
   title: 'Treatflow vs. Fresha: Der ehrliche Vergleich für Kosmetikstudios',
   description:
-    'Treatflow oder Fresha? Spezialisierte Kosmetikstudio-Software mit NiSV-Dokumentation vs. kostenloses Buchungstool mit Payment-Gebühren. Jetzt vergleichen.',
+    'Treatflow oder Fresha? Spezialisierte Kosmetikstudio-Software mit NiSV-Dokumentation vs. globales Salon-Buchungssystem mit Monatsabo und Transaktionsgebühren. Jetzt vergleichen.',
   keywords: [
     'Treatflow vs Fresha',
     'Fresha Alternative',
@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: 'Treatflow vs. Fresha: Der ehrliche Vergleich',
     description:
-      'Spezialisierte Kosmetikstudio-Software vs. kostenloses Buchungstool - warum über 500 Studios Treatflow wählen.',
+      'Spezialisierte Kosmetikstudio-Software vs. Fresha mit Abo und Gebühren – warum über 500 Studios Treatflow wählen.',
     url: 'https://www.treatflow.io/treatflow-vs-fresha',
     images: [
       {
@@ -43,10 +43,10 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Ist Fresha wirklich kostenlos?',
+      name: 'Was kostet Fresha wirklich?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Fresha bietet eine kostenlose Basisversion, verdient aber an Payment-Gebühren auf jede Kartenzahlung, Premium-Features und Produktverkäufen. Die tatsächlichen Kosten hängen vom Umsatz ab.',
+        text: 'Fresha ist ein kostenpflichtiges Salon-System: Monatsabo (oft pro buchbarem Teammitglied) plus Gebühren für Kartenzahlungen und ggf. Marketplace-/Neukunden-Provisionen. Die Gesamtkosten steigen mit Teamgröße und Umsatz.',
       },
     },
     {
@@ -54,7 +54,7 @@ const faqSchema = {
       name: 'Was ist der Unterschied zwischen Treatflow und Fresha?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Treatflow ist eine spezialisierte Software für Kosmetikstudios mit NiSV-Dokumentation, digitaler Kundenkartei und Behandlungsdokumentation. Fresha ist ein kostenloses Buchungstool ohne spezialisierte Kosmetik-Funktionen.',
+        text: 'Treatflow ist eine spezialisierte Software für Kosmetikstudios mit NiSV-Dokumentation, digitaler Kundenkartei und Behandlungsdokumentation – zum festen Monatspreis ohne Provision pro Termin. Fresha ist ein globales Salon-Buchungssystem mit Abo-Modell und zusätzlichen Transaktions-/Marketplace-Gebühren.',
       },
     },
     {
@@ -88,16 +88,16 @@ const comparisonRows = [
   {
     feature: 'Geschäftsmodell',
     treatflow: 'Spezialisierte Studio-Software',
-    competitor: 'Kostenloses Tool + Payment-Gebühren',
+    competitor: 'Globales Salon-Buchungssystem',
     treatflowOk: true,
-    competitorOk: false,
+    competitorOk: true,
   },
   {
     feature: 'Basispreis',
     treatflow: 'Ab 39€/Monat, transparent',
-    competitor: 'Kostenlos (Basisversion)',
+    competitor: 'Monatsabo + Gebühren (kein Gratis-Plan)',
     treatflowOk: true,
-    competitorOk: true,
+    competitorOk: false,
   },
   {
     feature: 'Payment-Gebühren',
@@ -174,8 +174,8 @@ const comparisonRows = [
 const keyDifferences = [
   {
     icon: CreditCard,
-    title: 'Versteckte Kosten durch Payment-Gebühren',
-    desc: 'Fresha ist kostenlos - aber verdient an jeder Kartenzahlung mit. Bei Treatflow zahlst du einen festen Monatspreis ohne Gebühren pro Transaktion.',
+    title: 'Abo plus Transaktionsgebühren',
+    desc: 'Fresha kombiniert Monatsabo (oft pro Teammitglied) mit Payment- und ggf. Marketplace-Gebühren. Bei Treatflow zahlst du einen festen Monatspreis – ohne Provision pro Termin.',
     color: 'bg-rose-100 text-rose-600',
   },
   {
@@ -240,9 +240,10 @@ export default function TreatflowVsFresha() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
-              Fresha ist kostenlos - aber ist es auch die beste Lösung für dein
-              Kosmetikstudio? Hier siehst du, was wirklich hinter den Kosten steckt
-              und welche Funktionen dir fehlen.
+              Beide Tools können Termine und Online-Buchungen – der Unterschied liegt
+              bei Kostenmodell, Dokumentation und Alltag im Kosmetikstudio. Hier siehst
+              du klar, was Fresha und Treatflow jeweils leisten und wo die Grenzen
+              liegen.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -273,13 +274,14 @@ export default function TreatflowVsFresha() {
               </div>
               <div>
                 <h2 className="text-xl font-bold text-gray-900 mb-2">
-                  Wusstest du? &quot;Kostenlos&quot; bedeutet bei Fresha nicht ohne Kosten.
+                  Fresha ist nicht kostenlos – Abo plus Gebühren.
                 </h2>
                 <p className="text-gray-600">
-                  Fresha verdient an Payment-Gebühren auf jede Kartenzahlung, an
-                  Premium-Features und am Produktverkauf. Je mehr Umsatz du machst,
-                  desto mehr verdient Fresha mit. Bei Treatflow zahlst du einen festen
-                  Monatspreis - ohne versteckte Gebühren.
+                  Fresha verlangt ein Monatsabo (oft pro buchbarem Teammitglied) und
+                  zusätzlich typischerweise Gebühren für Kartenzahlungen sowie ggf.
+                  Marketplace-/Neukunden-Provisionen. Je größer Team und Umsatz, desto
+                  höher die Gesamtkosten. Bei Treatflow zahlst du einen festen
+                  Monatspreis – ohne Provision pro Termin.
                 </p>
               </div>
             </div>
@@ -294,7 +296,7 @@ export default function TreatflowVsFresha() {
                 Die wichtigsten Unterschiede
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Kostenloses Buchungstool vs. spezialisierte Studio-Software - zwei verschiedene Ansätze.
+                Globales Salon-Buchungssystem vs. spezialisierte Studio-Software – zwei verschiedene Ansätze.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 gap-6">
@@ -440,10 +442,10 @@ export default function TreatflowVsFresha() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Was &quot;kostenlos&quot; wirklich kostet
+                Was Fresha wirklich kosten kann
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Ein Rechenbeispiel: Payment-Gebühren summieren sich schnell.
+                Abo plus Gebühren – ein typisches Rechenbeispiel (Werte je nach Land und Teamgröße).
               </p>
             </div>
 
@@ -453,29 +455,33 @@ export default function TreatflowVsFresha() {
                   <div className="inline-flex items-center gap-2 bg-gray-200 text-gray-600 px-4 py-1.5 rounded-full text-sm font-bold mb-3">
                     Fresha
                   </div>
-                  <div className="text-sm text-gray-500">Bei 80 Kartenzahlungen/Monat</div>
+                  <div className="text-sm text-gray-500">Beispiel: kleines Team + 80 Kartenzahlungen/Monat</div>
                 </div>
                 <div className="space-y-4">
                   <div className="flex justify-between text-sm">
-                    <span className="text-gray-600">Monatspreis</span>
-                    <span className="font-semibold text-gray-900">0 Euro</span>
+                    <span className="text-gray-600">Monatsabo (Team)</span>
+                    <span className="font-semibold text-rose-600">pflichtig</span>
                   </div>
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-600">
-                      Payment-Gebühren (2,19% + 0,20€)
+                      Payment- / Kartenzahlung-Gebühren
                     </span>
-                    <span className="font-semibold text-rose-600">+ ~156 Euro</span>
+                    <span className="font-semibold text-rose-600">+ variabel</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="text-gray-600">Keine Dokumentation</span>
-                    <span className="font-semibold text-rose-600">Fehlt</span>
+                    <span className="text-gray-600">Marketplace-/Neukunden-Gebühren</span>
+                    <span className="font-semibold text-rose-600">möglich</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-600">NiSV-/Behandlungsdokumentation</span>
+                    <span className="font-semibold text-rose-600">fehlt</span>
                   </div>
                   <div className="border-t border-gray-200 pt-4 flex justify-between">
                     <span className="font-bold text-gray-900">
                       Effektive Kosten/Monat
                     </span>
                     <span className="font-bold text-rose-600 text-xl">
-                      ~156 Euro+
+                      Abo + Gebühren
                     </span>
                   </div>
                 </div>
@@ -515,8 +521,8 @@ export default function TreatflowVsFresha() {
             </div>
 
             <p className="text-center text-sm text-gray-500 mt-6">
-              Rechenbeispiel basierend auf 80 Kartenzahlungen/Monat mit
-              durchschnittlich 85 Euro Behandlungswert über Freshas Payment-System.
+              Fresha-Preise sind landes- und teambhängig (siehe fresha.com/pricing).
+              Zusätzlich fallen typischerweise Payment-Gebühren und ggf. Marketplace-Provisionen an.
             </p>
           </div>
         </section>
@@ -559,9 +565,9 @@ export default function TreatflowVsFresha() {
                 <ul className="space-y-3">
                   {[
                     'Keine Behandlungsdokumentation brauchst',
-                    'Ein kostenloses Basis-Buchungstool suchst',
-                    'Payment-Gebühren pro Transaktion akzeptierst',
-                    'Keinen Wert auf DSGVO-konforme EU-Server legst',
+                    'Ein globales Salon-Buchungssystem mit Marketplace willst',
+                    'Abo plus Payment-/Marketplace-Gebühren akzeptierst',
+                    'Keinen Fokus auf NiSV und DACH-Compliance brauchst',
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-gray-400 flex-shrink-0 mt-0.5" />
@@ -630,17 +636,15 @@ export default function TreatflowVsFresha() {
         <section className="py-16 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              Treatflow vs. Fresha: Spezialisierung vs. Gratis-Modell
+              Treatflow vs. Fresha: Spezialisierung vs. globales Buchungssystem
             </h2>
             <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed space-y-4">
               <p>
-                Fresha hat sich als{' '}
-                <strong>kostenloses Buchungs- und Kassensystem</strong> für die
-                Beauty-Branche positioniert. Das klingt attraktiv - doch das
-                Geschäftsmodell basiert auf Payment-Gebühren bei jeder
-                Kartenzahlung, Premium-Features und einem integrierten
-                Produktmarktplatz. Je mehr Umsatz du machst, desto mehr verdient
-                Fresha mit.
+                Fresha ist ein{' '}
+                <strong>globales Salon-Buchungssystem mit Monatsabo</strong>.
+                Zusätzlich fallen typischerweise Gebühren für Kartenzahlungen und oft
+                Marketplace-/Neukunden-Provisionen an. Je größer Team und Umsatz, desto
+                höher die Gesamtkosten.
               </p>
               <p>
                 Treatflow verfolgt einen anderen Ansatz: eine{' '}

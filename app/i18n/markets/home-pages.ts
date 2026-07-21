@@ -151,88 +151,106 @@ export const esHomePage: HomePageIntlContent = {
   earlyAccessHref: "/es/acceso-anticipado",
   pricingHref: "/es/precios",
   hero: {
-    eyebrow: "Para salones de belleza, clínicas estéticas y centros láser",
-    titleLead: "Acaba con el caos del",
-    titleHighlight: "papeleo",
-    titleTail: "y las ausencias",
+    eyebrow: "España y Latinoamérica · Salones, estética y láser",
+    titleLead: "Menos",
+    titleHighlight: "papel y citas perdidas",
+    titleTail: "en tu salón",
     subtitle:
-      "Citas, fichas de clientes, consentimientos y documentación de tratamientos en una sola app clara – pensada para negocios de belleza y estética.",
+      "Agenda, reservas online sin comisión de marketplace, fichas de clientas, consentimientos y documentación de tratamientos en una sola app. Hecho para centros de belleza y clínicas estéticas.",
     primaryCta: "Solicitar acceso anticipado",
-    trustItems: ["Sin tarjeta", "Listo en 2 minutos", "Migración de datos", "Soporte personal"],
-    studiosLabel: "Más de 500 estudios",
+    trustItems: ["Sin tarjeta", "Soporte en español", "Tus datos son tuyos", "Servidores en la UE"],
+    studiosLabel: "Más de 500 centros en Europa",
     ratingValue: "4.6/5",
     image: {
       ...heroImage,
-      alt: "Calendario de Treatflow abierto en un portátil en un salón de belleza moderno",
+      alt: "Agenda de Treatflow abierta en un portátil en un salón de belleza",
     },
   },
   aiCapsules: [
     {
       question: "¿Qué es Treatflow?",
       answer:
-        "Treatflow es software todo en uno para salones de belleza, clínicas estéticas y centros láser. Combina reservas online, fichas de clientes, consentimientos, notas de tratamiento, fotos, recordatorios y flujos digitales en una plataforma. Cumple el RGPD y está alojado en la UE.",
+        "Treatflow es el software de gestión para salones de belleza, clínicas estéticas y centros de depilación láser. Une agenda, reservas online propias (sin comisión tipo marketplace), fichas de clientas, consentimientos, notas de tratamiento, fotos y recordatorios. Cumple el RGPD y está alojado en servidores de la UE.",
     },
     {
-      question: "¿Para quién es Treatflow?",
+      question: "¿Para quién es Treatflow en España y LATAM?",
       answer:
-        "Para salones de belleza, clínicas estéticas, centros de depilación láser y estudios de estética que quieren menos administración y una documentación clara.",
+        "Para salones de belleza, centros de estética, clínicas estéticas y estudios láser en España y Latinoamérica que quieren dejar Excel, WhatsApp y el papel, sin depender de un marketplace con comisión.",
     },
   ],
   trustBar: [
     { icon: Lock, text: "Cifrado SSL" },
-    { icon: Server, text: "Servidores UE (RGPD)" },
+    { icon: Server, text: "Servidores UE · RGPD" },
     { icon: Shield, text: "Copias diarias" },
-    { icon: ShieldCheck, text: "Listo para protección de datos" },
+    { icon: ShieldCheck, text: "Datos bajo tu control" },
   ],
   features: {
-    title: "Las funciones más importantes de un vistazo",
-    subtitle: "Todo claramente organizado para que tú y tu equipo trabajéis rápido.",
-    ctaNote: "Sin tarjeta. Cancela cuando quieras.",
+    title: "Lo que usas cada día en el salón",
+    subtitle: "Diseñado para el ritmo real de un centro de belleza: citas, clientas y tratamientos.",
+    ctaNote: "Acceso anticipado · Sin compromiso",
     items: [
-      { icon: CalendarDays, label: "Calendario de citas", desc: "Todas las citas en una vista diaria y semanal clara.", color: "bg-indigo-100 text-indigo-600" },
-      { icon: Users, label: "Reservas online", desc: "Las clientas reservan solas, también fuera de horario.", color: "bg-emerald-100 text-emerald-600" },
-      { icon: ClipboardCheck, label: "Consentimientos", desc: "Anamnesis y consentimientos digitales, antes de la cita.", color: "bg-orange-100 text-orange-600" },
-      { icon: FileText, label: "Fichas de clientes", desc: "Datos, historial y notas en un solo lugar.", color: "bg-blue-100 text-blue-600" },
-      { icon: Shield, label: "Documentación", desc: "Documenta tratamientos con notas y fotos.", color: "bg-teal-100 text-teal-600" },
-      { icon: Bell, label: "Recordatorios", desc: "SMS y emails automáticos reducen las ausencias.", color: "bg-rose-100 text-rose-600" },
-      { icon: Workflow, label: "Flujos digitales", desc: "De la reserva a la documentación en un sistema.", color: "bg-purple-100 text-purple-600" },
+      { icon: CalendarDays, label: "Agenda de citas", desc: "Vista diaria y semanal clara para ti y tu equipo.", color: "bg-indigo-100 text-indigo-600" },
+      { icon: Users, label: "Reservas online propias", desc: "Tu enlace 24/7, sin comisión por reserva.", color: "bg-emerald-100 text-emerald-600" },
+      { icon: ClipboardCheck, label: "Anamnesis y consentimientos", desc: "Formularios digitales firmados antes de la cita.", color: "bg-orange-100 text-orange-600" },
+      { icon: FileText, label: "Ficha de clienta", desc: "Historial, preferencias y notas en un solo sitio.", color: "bg-blue-100 text-blue-600" },
+      { icon: Shield, label: "Documentación de tratamientos", desc: "Notas y fotos por sesión, fáciles de consultar.", color: "bg-teal-100 text-teal-600" },
+      { icon: Bell, label: "Recordatorios SMS y email", desc: "Menos ausencias y menos mensajes manuales.", color: "bg-rose-100 text-rose-600" },
+      { icon: Workflow, label: "Flujo completo", desc: "De la reserva a la documentación, sin cambiar de herramienta.", color: "bg-purple-100 text-purple-600" },
     ],
   },
   extras: {
-    title: "Y Treatflow puede aún más",
-    subtitle: "Extras prácticos que facilitan el día a día – ya incluidos.",
+    title: "Extras que facilitan el día a día",
+    subtitle: "Incluidos en los planes – sin módulos raros ni sorpresas.",
     items: [
-      { icon: BarChart3, label: "Estadísticas e informes", desc: "Ingresos, citas, clientas y servicios top de un vistazo." },
-      { icon: Mic, label: "Dictado con IA", desc: "Dicta tus notas de tratamiento – la IA las escribe por ti." },
-      { icon: Languages, label: "Reservas multilingües", desc: "Tu página de reserva en varios idiomas." },
-      { icon: Ticket, label: "Códigos de descuento", desc: "Promociones y códigos para nuevas clientas." },
-      { icon: ListChecks, label: "Tareas y notas de equipo", desc: "Tareas con fechas, notas y asignación al equipo." },
+      { icon: BarChart3, label: "Informes del negocio", desc: "Citas, ingresos y servicios más demandados de un vistazo." },
+      { icon: Mic, label: "Dictado con IA", desc: "Dicta la nota del tratamiento; Treatflow la deja escrita." },
+      { icon: Languages, label: "Reserva en varios idiomas", desc: "Ideal si atiendes clientas locales e internacionales." },
+      { icon: Ticket, label: "Códigos de descuento", desc: "Promos y códigos para nuevas clientas en la reserva online." },
+      { icon: ListChecks, label: "Tareas de equipo", desc: "Pendientes, notas y asignación entre compañeras." },
     ],
   },
   faqs: {
     title: "Preguntas frecuentes",
     pricingLinkLabel: "Ver precios",
     items: [
-      { q: "¿Qué es Treatflow?", a: "Software todo en uno para salones de belleza y clínicas estéticas: calendario, fichas, reservas online, consentimientos, documentación y recordatorios." },
-      { q: "¿Para quién es?", a: "Para salones, clínicas estéticas, centros láser y estudios que quieren flujos digitales claros." },
-      { q: "¿Cómo empiezo?", a: "El registro directo está disponible en Alemania, Austria y Suiza. En otros países solicita acceso anticipado." },
-      { q: "¿Están seguros mis datos?", a: "Sí. Servidores en la UE, RGPD, cifrado SSL y copias diarias." },
+      {
+        q: "¿Puedo registrarme ya desde España o Latinoamérica?",
+        a: "El registro directo está abierto en Alemania, Austria y Suiza. En España y LATAM puedes solicitar acceso anticipado: revisamos cada solicitud y te contactamos personalmente.",
+      },
+      {
+        q: "¿Treatflow es un marketplace como Treatwell?",
+        a: "No. Treatflow es tu software propio: agenda, fichas y reservas con tu enlace. No cobramos comisión por cada cita.",
+      },
+      {
+        q: "¿Los precios incluyen IVA?",
+        a: "Los precios se muestran en euros. El IVA u otros impuestos aplicables se indican al activar tu cuenta según tu país.",
+      },
+      {
+        q: "¿Dónde se guardan los datos?",
+        a: "En servidores de la UE, con cifrado SSL, copias diarias y cumplimiento del RGPD. Los datos de tus clientas son tuyos.",
+      },
     ],
   },
   cta: {
-    title: "¿Listo para gestionar tu salón con menos esfuerzo?",
-    subtitle: "Solicita acceso anticipado para tu país.",
-    note: "Cancela cuando quieras. RGPD. Con soporte personal.",
+    title: "¿Quieres Treatflow en tu salón?",
+    subtitle: "Solicita acceso anticipado para España o tu país en Latinoamérica. Te respondemos en persona.",
+    note: "Sin tarjeta. RGPD. Soporte cercano del equipo fundador.",
   },
   schemas: {
     software: softwareSchema(
       "es",
       "/es",
-      "Software para salones de belleza y clínicas estéticas: agenda, fichas, reservas online, consentimientos y documentación."
+      "Software para salones de belleza y clínicas estéticas en España y Latinoamérica: agenda, reservas online sin comisión, fichas, consentimientos y documentación. RGPD, servidores en la UE."
     ),
     faq: faqSchema("es", [
-      { q: "¿Qué es Treatflow?", a: "Software para salones de belleza y clínicas estéticas con agenda, fichas, reservas, consentimientos y documentación. Cumple el RGPD." },
-      { q: "¿Cómo empiezo?", a: "Solicita acceso anticipado para tu país." },
+      {
+        q: "¿Puedo registrarme ya desde España o Latinoamérica?",
+        a: "El registro directo está abierto en Alemania, Austria y Suiza. En España y LATAM solicita acceso anticipado y te contactamos personalmente.",
+      },
+      {
+        q: "¿Treatflow es un marketplace?",
+        a: "No. Es software propio para tu salón: sin comisión por reserva.",
+      },
     ]),
   },
 };

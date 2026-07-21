@@ -124,7 +124,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" dir="ltr">
+    <html lang="de" dir="ltr" suppressHydrationWarning>
       <head>
         {/* Consent Mode v2 Defaults - muss VOR dem gtag.js-Loader laufen,
             damit GA4 die Consent-Signale von Anfang an respektiert.

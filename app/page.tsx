@@ -35,15 +35,17 @@ import Footer from "./components/Footer";
 import { buildHreflangAlternates } from "./i18n/seo";
 
 export const metadata: Metadata = {
-  title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
+  title: {
+    absolute: "Kosmetikstudio Software: Termine, Kundenkartei & Kasse | Treatflow",
+  },
   description:
-    "Kosmetikstudio-Software für Termine, Online-Buchung, Kundenkartei, Formulare, Doku & Kasse - alles in einer App. Keine Provision, DSGVO-konform, Made in Austria. 500+ Studios, 14 Tage gratis testen.",
+    "Kosmetikstudio-Software für Terminkalender, Online-Buchung, Kundenkartei, Formulare, Dokumentation & Kasse – alles in einer App. Keine Provision, DSGVO-konform. 500+ Studios, 14 Tage gratis testen.",
   alternates: {
     canonical: "https://www.treatflow.io",
     ...buildHreflangAlternates("home", { xDefault: "en" }),
   },
   openGraph: {
-    title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
+    title: "Kosmetikstudio Software: Termine, Kundenkartei & Kasse | Treatflow",
     description:
       "Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation – alles in einer App. Von 500+ Studios genutzt, DSGVO-konform.",
     url: "https://www.treatflow.io",
@@ -219,7 +221,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div className="order-1 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                Für Kosmetikstudios, die wachsen wollen
+                Kosmetikstudio-Software aus Österreich
               </div>
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-4">
                 Schluss mit Terminchaos,{" "}
@@ -227,8 +229,8 @@ export default function Home() {
                 {" "}und No-Shows
               </h1>
               <p className="text-lg lg:text-xl text-gray-600 mb-6 leading-relaxed">
-                Termine, Kunden, Formulare, Behandlungsdokumentation und Kasse in einer übersichtlichen App.
-                So findet sich dein Team sofort zurecht.
+                Die All-in-One Kosmetikstudio-Software für Terminkalender, Kundenkartei, Formulare,
+                Behandlungsdokumentation und Kasse – ohne Marktplatz-Provision.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
                 <a
@@ -389,7 +391,7 @@ export default function Home() {
                 </Link>
               ))}
             </div>
-            <div className="text-center mt-10">
+            <div className="text-center mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
                 href="https://app.treatflow.io/auth/register"
                 target="_blank"
@@ -399,7 +401,51 @@ export default function Home() {
                 14 Tage kostenlos testen
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
-              <p className="text-sm text-gray-500 mt-3">Ohne Kreditkarte. Jederzeit kündbar.</p>
+              <Link
+                href="/kosmetikstudio-software"
+                className="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-700"
+              >
+                Alle Details zur Kosmetikstudio-Software
+                <ArrowRight className="ml-1 h-5 w-5" />
+              </Link>
+            </div>
+            <p className="text-sm text-gray-500 mt-3 text-center">Ohne Kreditkarte. Jederzeit kündbar.</p>
+          </div>
+        </section>
+
+        <section className="py-16 bg-indigo-50/60 border-y border-indigo-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
+                Vertiefe dich in die Themen, die Studios suchen
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Von der All-in-One-Software bis zu Terminen, Kundenkartei und Compliance – die wichtigsten Seiten im Überblick.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { href: '/kosmetikstudio-software', label: 'Kosmetikstudio Software', desc: 'All-in-One: Termine, Kunden, Formulare & Doku' },
+                { href: '/schoenheitssalon-software', label: 'Schönheitssalon Software', desc: 'Für Salons und Kosmetikinstitute' },
+                { href: '/terminkalender', label: 'Terminkalender', desc: 'Team, Räume und Auslastung planen' },
+                { href: '/kundenkartei-software', label: 'Kundenkartei App', desc: 'Historie, Fotos und Notizen mobil' },
+                { href: '/online-buchungen', label: 'Online-Buchungen', desc: 'Eigener Link, ohne Provision' },
+                { href: '/aesthetische-medizin-software', label: 'Ästhetische Medizin', desc: 'Doku, Einwilligung & Patientenakte' },
+                { href: '/anamnesebogen-kosmetikstudio', label: 'Anamnesebogen', desc: 'Digitale Formulare vor dem Termin' },
+                { href: '/nisv-dokumentation', label: 'NiSV-Dokumentation', desc: 'Rechtssicher dokumentieren' },
+                { href: '/kassensystem-kosmetikstudio', label: 'Kassensystem', desc: 'TSE & RKSV direkt aus dem Termin' },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group flex flex-col rounded-xl border border-indigo-100 bg-white px-5 py-4 hover:border-indigo-300 hover:shadow-md transition-all"
+                >
+                  <span className="font-semibold text-gray-900 group-hover:text-indigo-600">
+                    {item.label}
+                  </span>
+                  <span className="text-sm text-gray-600 mt-1">{item.desc}</span>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
