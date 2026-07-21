@@ -63,6 +63,10 @@ const nextConfig: NextConfig = {
       { source: '/en-nl', destination: '/en', permanent: true },
       { source: '/en-nl/:path*', destination: '/en/:path*', permanent: true },
 
+      // Neuigkeiten-Seite vorerst entfernt
+      { source: '/neuigkeiten', destination: '/', permanent: true },
+      { source: '/neuigkeiten/', destination: '/', permanent: true },
+
       // 404-Fixes: Alte URLs aus Search Console
       { source: '/cookie-richtlinie-eu', destination: '/datenschutz', permanent: true },
       { source: '/cookie-richtlinie-eu/', destination: '/datenschutz', permanent: true },

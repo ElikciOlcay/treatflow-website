@@ -119,13 +119,6 @@ export default function MobileMenu() {
                             Preise
                         </Link>
                         <Link
-                            href="/neuigkeiten"
-                            className="block py-3 text-gray-700 font-medium hover:text-indigo-600 transition-colors"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            Neuigkeiten
-                        </Link>
-                        <Link
                             href="/blog"
                             className="block py-3 text-gray-700 font-medium hover:text-indigo-600 transition-colors"
                             onClick={() => setIsOpen(false)}
