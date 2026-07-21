@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 import Link from 'next/link';
 import MobileMenu from "./MobileMenu";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const funktionen = [
     { href: '/terminkalender', label: 'Terminkalender', desc: 'Tages-, Wochen- und Monatsansicht', icon: Calendar, color: 'text-indigo-600 bg-indigo-100' },
@@ -136,6 +137,7 @@ export default function Navigation() {
                         </div>
 
                         <Link href="/preise" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Preise</Link>
+                        <Link href="/neuigkeiten" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Neuigkeiten</Link>
                         <Link href="/blog" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Blog</Link>
                         <Link href="/#testimonials" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Referenzen</Link>
                         <Link href="/kontakt" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Kontakt</Link>
@@ -147,6 +149,7 @@ export default function Navigation() {
                         >
                             Login
                         </a>
+                        <LanguageSwitcher current="de" />
                         <a
                             href="https://app.treatflow.io/auth/register"
                             target="_blank"

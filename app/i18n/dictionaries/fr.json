@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "contact": "Contact",
+    "login": "Connexion",
+    "tryFree": "Essai gratuit",
+    "requestAccess": "Demander un accès anticipé"
+  },
+  "footer": {
+    "tagline": "Votre assistant digital pour l'institut. Made in Austria.",
+    "features": "Fonctionnalités",
+    "product": "Produit",
+    "company": "Entreprise",
+    "legal": "Mentions légales",
+    "aboutUs": "À propos",
+    "contact": "Contact",
+    "pricing": "Tarifs",
+    "tryFree": "Essai gratuit",
+    "requestAccess": "Demander un accès anticipé",
+    "login": "Connexion",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "rights": "Tous droits réservés."
+  },
+  "common": {
+    "tryFree": "Essai gratuit de 14 jours",
+    "requestAccess": "Demander un accès anticipé",
+    "bookDemo": "Demander un accès anticipé",
+    "learnMore": "En savoir plus",
+    "noCreditCard": "Sans carte bancaire",
+    "cancelAnytime": "Résiliable à tout moment",
+    "waitlistNote": "L'inscription directe est disponible en Allemagne, Autriche et Suisse. Demandez un accès anticipé pour votre pays."
+  }
+}

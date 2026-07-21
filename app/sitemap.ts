@@ -1,8 +1,19 @@
 import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blogPosts'
+import { buildHreflangAlternates, type SeoPageKey } from '@/app/i18n/seo'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://www.treatflow.io'
+
+    function internationalEntry(path: string, pageKey: SeoPageKey, priority: number) {
+        return {
+            url: `${baseUrl}${path}`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority,
+            alternates: buildHreflangAlternates(pageKey),
+        }
+    }
 
     // Statische Seiten
     const staticRoutes = [
@@ -226,6 +237,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/anamnesebogen-kosmetik-vorlage-pdf`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
+        },
+        {
             url: `${baseUrl}/nisv-dokumentation-kosmetikstudio`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
@@ -324,11 +341,85 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ]
 
+    // Internationale Seiten (kuratiert). Blog ist bewusst NICHT enthalten.
+    const enRoutes = [
+        internationalEntry('/en', 'home', 0.9),
+        internationalEntry('/en/pricing', 'pricing', 0.8),
+        internationalEntry('/en/early-access', 'early-access', 0.85),
+        internationalEntry('/en/appointment-calendar', 'appointment-calendar', 0.8),
+        internationalEntry('/en/online-booking', 'online-booking', 0.8),
+        internationalEntry('/en/client-records', 'client-records', 0.8),
+        internationalEntry('/en/forms', 'forms', 0.8),
+        internationalEntry('/en/treatment-documentation', 'treatment-documentation', 0.8),
+        internationalEntry('/en/beauty-salon-software', 'beauty-salon-software', 0.85),
+        internationalEntry('/en/aesthetic-clinic-software', 'aesthetic-clinic-software', 0.85),
+        internationalEntry('/en/laser-hair-removal-software', 'laser-hair-removal-software', 0.85),
+        internationalEntry('/en/about', 'about', 0.6),
+        internationalEntry('/en/contact', 'contact', 0.6),
+        internationalEntry('/en/privacy', 'privacy', 0.3),
+        internationalEntry('/en/terms', 'terms', 0.3),
+    ]
+
+    const esRoutes = [
+        internationalEntry('/es', 'home', 0.9),
+        internationalEntry('/es/precios', 'pricing', 0.8),
+        internationalEntry('/es/acceso-anticipado', 'early-access', 0.85),
+        internationalEntry('/es/calendario-citas', 'appointment-calendar', 0.8),
+        internationalEntry('/es/reservas-online', 'online-booking', 0.8),
+        internationalEntry('/es/fichas-clientes', 'client-records', 0.8),
+        internationalEntry('/es/formularios', 'forms', 0.8),
+        internationalEntry('/es/documentacion-tratamientos', 'treatment-documentation', 0.8),
+        internationalEntry('/es/software-salon-belleza', 'beauty-salon-software', 0.85),
+        internationalEntry('/es/sobre-nosotros', 'about', 0.6),
+        internationalEntry('/es/contacto', 'contact', 0.6),
+        internationalEntry('/es/privacidad', 'privacy', 0.3),
+        internationalEntry('/es/terminos', 'terms', 0.3),
+    ]
+
+    const itRoutes = [
+        internationalEntry('/it', 'home', 0.9),
+        internationalEntry('/it/prezzi', 'pricing', 0.8),
+        internationalEntry('/it/accesso-anticipato', 'early-access', 0.85),
+        internationalEntry('/it/calendario-appuntamenti', 'appointment-calendar', 0.8),
+        internationalEntry('/it/prenotazioni-online', 'online-booking', 0.8),
+        internationalEntry('/it/schede-clienti', 'client-records', 0.8),
+        internationalEntry('/it/moduli', 'forms', 0.8),
+        internationalEntry('/it/documentazione-trattamenti', 'treatment-documentation', 0.8),
+        internationalEntry('/it/software-centro-estetico', 'beauty-salon-software', 0.85),
+        internationalEntry('/it/chi-siamo', 'about', 0.6),
+        internationalEntry('/it/contatto', 'contact', 0.6),
+        internationalEntry('/it/privacy', 'privacy', 0.3),
+        internationalEntry('/it/termini', 'terms', 0.3),
+    ]
+
+    const frRoutes = [
+        internationalEntry('/fr', 'home', 0.9),
+        internationalEntry('/fr/tarifs', 'pricing', 0.8),
+        internationalEntry('/fr/acces-anticipe', 'early-access', 0.85),
+        internationalEntry('/fr/calendrier-rendez-vous', 'appointment-calendar', 0.8),
+        internationalEntry('/fr/reservation-en-ligne', 'online-booking', 0.8),
+        internationalEntry('/fr/fiches-clients', 'client-records', 0.8),
+        internationalEntry('/fr/formulaires', 'forms', 0.8),
+        internationalEntry('/fr/documentation-soins', 'treatment-documentation', 0.8),
+        internationalEntry('/fr/logiciel-institut-beaute', 'beauty-salon-software', 0.85),
+        internationalEntry('/fr/a-propos', 'about', 0.6),
+        internationalEntry('/fr/contact', 'contact', 0.6),
+        internationalEntry('/fr/confidentialite', 'privacy', 0.3),
+        internationalEntry('/fr/conditions', 'terms', 0.3),
+    ]
+
     const blogIndex = {
         url: `${baseUrl}/blog`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.9,
+    }
+
+    const neuigkeitenIndex = {
+        url: `${baseUrl}/neuigkeiten`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
     }
 
     const blogRoutes = blogPosts.map((post) => ({
@@ -374,5 +465,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ]
 
-    return [...staticRoutes, blogIndex, ...blogRoutes, ...landingRoutes, ...aiDiscoveryRoutes]
+    return [
+        ...staticRoutes,
+        ...enRoutes,
+        ...esRoutes,
+        ...itRoutes,
+        ...frRoutes,
+        blogIndex,
+        neuigkeitenIndex,
+        ...blogRoutes,
+        ...landingRoutes,
+        ...aiDiscoveryRoutes,
+    ]
 }

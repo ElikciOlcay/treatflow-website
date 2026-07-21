@@ -166,10 +166,16 @@ https://www.treatflow.io/preise
 
 ### 1. Terminkalender
 
-**Was es ist**: Digitaler Terminkalender mit Tages-, Wochen- und Monatsansicht für das gesamte Studio-Team.
+**Was es ist**: Digitaler Terminkalender mit Tages-, Wochen- und Monatsansicht zur gemeinsamen Planung von Mitarbeitern, Räumen und Terminen.
 
 **Was es kann**:
+- Tagesansicht mit einer übersichtlichen Spalte pro Mitarbeiter oder Raum
+- Auslastung, freie Kapazitäten und Engpässe auf einen Blick erkennen
+- Doppelbelegungen von Teammitgliedern und Räumen frühzeitig vermeiden
 - Drag & Drop zum Verschieben von Terminen
+- Spontane Änderungen im Tagesablauf schnell koordinieren
+- Namen und Wochentage bleiben beim Scrollen sichtbar
+- Die Tagesansicht öffnet direkt den heutigen Tag
 - Individuelle Kalender pro Mitarbeiter mit eigenen Arbeitszeiten
 - Pausen und Blockzeiten festlegen
 - Wiederkehrende Termine

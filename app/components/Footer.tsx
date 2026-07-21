@@ -79,6 +79,7 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Unternehmen</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/ueber-uns" className="text-gray-400 hover:text-white transition-colors">Über uns</Link></li>
+              <li><Link href="/neuigkeiten" className="text-gray-400 hover:text-white transition-colors">Neuigkeiten</Link></li>
               <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
               <li><Link href="/hygieneplan-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Hygieneplan PDF</Link></li>
               <li><Link href="/kontakt" className="text-gray-400 hover:text-white transition-colors">Kontakt</Link></li>

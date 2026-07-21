@@ -59,6 +59,10 @@ const nextConfig: NextConfig = {
       { source: '/home', destination: '/', permanent: true },
       { source: '/index', destination: '/', permanent: true },
 
+      // Legacy English-NL Markt → globale EN-Seiten
+      { source: '/en-nl', destination: '/en', permanent: true },
+      { source: '/en-nl/:path*', destination: '/en/:path*', permanent: true },
+
       // 404-Fixes: Alte URLs aus Search Console
       { source: '/cookie-richtlinie-eu', destination: '/datenschutz', permanent: true },
       { source: '/cookie-richtlinie-eu/', destination: '/datenschutz', permanent: true },

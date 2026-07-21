@@ -36,11 +36,11 @@ const kernfunktionen = [
         href: '/terminkalender',
         icon: Calendar,
         title: 'Terminkalender',
-        description: 'Übersichtliche Tages-, Wochen- und Monatsansicht. Drag & Drop, Mitarbeiterkalender und automatische Terminkonflikte erkennen.',
+        description: 'Plane Mitarbeiter und Räume übersichtlich in eigenen Spalten. Erkenne freie Kapazitäten, vermeide Doppelbelegungen und koordiniere Änderungen schneller.',
         color: 'text-indigo-600',
         bg: 'bg-indigo-50',
         border: 'border-indigo-200 hover:border-indigo-400',
-        highlights: ['Tages-/Wochen-/Monatsansicht', 'Drag & Drop', 'Mitarbeiterkalender'],
+        highlights: ['Mitarbeiter- & Raumspalten', 'Auslastung im Blick', 'Drag & Drop'],
     },
     {
         href: '/kassensystem-kosmetikstudio',

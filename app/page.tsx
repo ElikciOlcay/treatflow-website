@@ -32,6 +32,7 @@ import PricingSection from "./components/PricingSection";
 import FAQSection from "./components/FAQSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "./components/Footer";
+import { buildHreflangAlternates } from "./i18n/seo";
 
 export const metadata: Metadata = {
   title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
@@ -39,6 +40,7 @@ export const metadata: Metadata = {
     "Kosmetikstudio-Software für Termine, Online-Buchung, Kundenkartei, Formulare, Doku & Kasse - alles in einer App. Keine Provision, DSGVO-konform, Made in Austria. 500+ Studios, 14 Tage gratis testen.",
   alternates: {
     canonical: "https://www.treatflow.io",
+    ...buildHreflangAlternates("home", { xDefault: "en" }),
   },
   openGraph: {
     title: "Treatflow: All-in-One Software für dein Kosmetikstudio",

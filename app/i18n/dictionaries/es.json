@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "features": "Funciones",
+    "pricing": "Precios",
+    "contact": "Contacto",
+    "login": "Iniciar sesión",
+    "tryFree": "Probar gratis",
+    "requestAccess": "Solicitar acceso anticipado"
+  },
+  "footer": {
+    "tagline": "Tu asistente digital para el salón. Hecho en Austria.",
+    "features": "Funciones",
+    "product": "Producto",
+    "company": "Empresa",
+    "legal": "Legal",
+    "aboutUs": "Sobre nosotros",
+    "contact": "Contacto",
+    "pricing": "Precios",
+    "tryFree": "Probar gratis",
+    "requestAccess": "Solicitar acceso anticipado",
+    "login": "Iniciar sesión",
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "tryFree": "Prueba gratuita de 14 días",
+    "requestAccess": "Solicitar acceso anticipado",
+    "bookDemo": "Solicitar acceso anticipado",
+    "learnMore": "Más información",
+    "noCreditCard": "Sin tarjeta de crédito",
+    "cancelAnytime": "Cancela cuando quieras",
+    "waitlistNote": "El registro directo está disponible en Alemania, Austria y Suiza. Solicita acceso anticipado para tu país."
+  }
+}

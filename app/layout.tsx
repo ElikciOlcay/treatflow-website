@@ -102,8 +102,8 @@ const organizationWebSiteSchema = {
         '@type': 'ContactPoint',
         contactType: 'customer service',
         email: 'hello@treatflow.io',
-        availableLanguage: 'German',
-        areaServed: ['DE', 'AT'],
+        availableLanguage: ['German', 'English', 'Spanish', 'Italian', 'French'],
+        areaServed: ['DE', 'AT', 'CH', 'ES', 'IT', 'FR', 'BE', 'EU'],
       },
     },
     {
@@ -114,11 +114,6 @@ const organizationWebSiteSchema = {
       description: 'Software für Kosmetikstudio: Terminkalender, Kundenkartei, Online-Buchungen, Behandlungsdokumentation.',
       publisher: { '@id': `${baseUrl}/#organization` },
       inLanguage: 'de-DE',
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: { '@type': 'EntryPoint', urlTemplate: `${baseUrl}/blog?q={search_term_string}` },
-        'query-input': 'required name=search_term_string',
-      },
     },
   ],
 };

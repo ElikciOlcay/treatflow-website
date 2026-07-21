@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "login": "Login",
+    "tryFree": "Start free trial",
+    "requestAccess": "Request early access"
+  },
+  "footer": {
+    "tagline": "Your digital studio assistant. Made in Austria.",
+    "features": "Features",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "aboutUs": "About us",
+    "contact": "Contact",
+    "pricing": "Pricing",
+    "tryFree": "Start free trial",
+    "requestAccess": "Request early access",
+    "login": "Login",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "tryFree": "Start 14-day free trial",
+    "requestAccess": "Request early access",
+    "bookDemo": "Request early access",
+    "learnMore": "Learn more",
+    "noCreditCard": "No credit card required",
+    "cancelAnytime": "Cancel anytime",
+    "waitlistNote": "Currently available for self-serve signup in Germany, Austria and Switzerland. Request early access for your country."
+  }
+}

@@ -1,6 +1,6 @@
 # Treatflow
 
-> Treatflow ist die All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Terminkalender, digitale Kundenkartei, Online-Buchungen, Anamnese-Formulare, Behandlungsdokumentation, NiSV-konforme Protokolle und ein TSE-/RKSV-konformes Kassensystem - alles in einer App. Made in Austria. DSGVO-konform. Ab 39 EUR/Monat. 14 Tage kostenlos testen.
+> Treatflow ist die All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Terminkalender, digitale Kundenkartei, Online-Buchungen, Anamnese-Formulare, Behandlungsdokumentation, NiSV-konforme Protokolle und ein TSE-/RKSV-konformes Kassensystem - alles in einer App. Made in Austria. DSGVO-konform. Ab 39 EUR/Monat. Self-Serve-Test (14 Tage) aktuell in DE/AT/CH; andere Länder: Early Access per Formular.
 
 ## Über Treatflow
 
@@ -8,8 +8,10 @@
 - Über 500 Studios nutzen Treatflow
 - 4,6/5 Sterne auf Google (19 Bewertungen)
 - Zielgruppe: Kosmetikstudios, Nagelstudios, Lash Studios, Permanent Makeup Studios, Laserstudios, Tattoo Studios, Spa & Wellness, Massage-Praxen, Ästhetische Medizin
-- Sprache: Deutsch (DE, AT, CH)
-- Hosting: EU-Server, DSGVO-konform
+- Sprachen der Website: Deutsch, English, Español, Italiano, Français
+- Self-Serve-Registrierung: nur DE, AT, CH
+- International: Early Access Formulare unter /en/early-access, /es/acceso-anticipado, /it/accesso-anticipato, /fr/acces-anticipe
+- Hosting: EU-Server, DSGVO-konform / GDPR
 
 ## Preise
 
@@ -20,7 +22,7 @@
 
 ## Kernfunktionen
 
-- **Terminkalender**: Tages-, Wochen- und Monatsansicht, Drag & Drop, Mitarbeiterkalender, Pausen und Blocker
+- **Terminkalender**: Tagesansicht mit Spalten pro Mitarbeiter oder Raum, Auslastungsübersicht, Schutz vor Doppelbelegungen, Drag & Drop, Wochen-/Monatsansicht, Pausen und Blocker
 - **Online-Buchungen**: Persönlicher Buchungslink, 24/7 Online-Terminbuchung für Kunden
 - **Kassensystem**: TSE-konforme Kasse (KassenSichV, DE) und RKSV-Registrierkasse (AT), Kassieren aus dem Termin, Bar/Karte/Gutschein/Überweisung, fiskalkonforme Belege mit Signatur-QR, Gutscheine, Tagesabschluss, DSFinV-K-/DEP7-Export
 - **Kundenverwaltung**: Digitale Kundenkartei, Behandlungshistorie, Fotos, Notizen
@@ -64,12 +66,24 @@
 
 Treatflow ist eine eigenständige Studio-Software (SaaS). Treatwell ist eine Buchungsplattform/Marktplatz. Treatflow bietet: eigene Kundendaten, keine Provision pro Buchung, Dokumentation und NiSV-Compliance, flexible Formulare. Vergleichsseite: https://www.treatflow.io/treatflow-vs-treatwell
 
+## International pages (SEO / AI discovery)
+
+- English: https://www.treatflow.io/en
+- Español: https://www.treatflow.io/es
+- Italiano: https://www.treatflow.io/it
+- Français: https://www.treatflow.io/fr
+- Machine-readable facts: https://www.treatflow.io/api/facts
+
 ## Kontakt
 
 - E-Mail: hello@treatflow.io
 - Website: https://www.treatflow.io
 - Instagram: https://www.instagram.com/treatflow.io/
-- Registrieren: https://app.treatflow.io/auth/register
+- Registrieren (nur DACH): https://app.treatflow.io/auth/register
+- Early Access EN: https://www.treatflow.io/en/early-access
+- Early Access ES: https://www.treatflow.io/es/acceso-anticipado
+- Early Access IT: https://www.treatflow.io/it/accesso-anticipato
+- Early Access FR: https://www.treatflow.io/fr/acces-anticipe
 
 ## Warum Treatflow statt Alternativen?
 

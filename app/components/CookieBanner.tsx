@@ -1,8 +1,64 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { X, Cookie, Settings } from 'lucide-react';
 import Link from 'next/link';
+
+const COOKIE_TEXTS = {
+    de: {
+        title: 'Cookie-Einstellungen',
+        intro:
+            'Wir verwenden Cookies, um Ihnen die beste Erfahrung auf unserer Website zu bieten. Einige Cookies sind notwendig für den Betrieb der Website, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern.',
+        learnMore: 'Mehr erfahren',
+        privacyHref: '/datenschutz',
+        acceptAll: 'Alle akzeptieren',
+        acceptNecessary: 'Nur notwendige',
+        settings: 'Einstellungen',
+        modalIntro:
+            'Wir verwenden verschiedene Arten von Cookies. Sie können Ihre Einstellungen für jede Kategorie anpassen.',
+        necessary: 'Notwendige Cookies',
+        alwaysActive: 'Immer aktiv',
+        necessaryDesc:
+            'Diese Cookies sind für die Grundfunktionen der Website erforderlich und können nicht deaktiviert werden. Sie speichern Ihre Cookie-Präferenzen und Sicherheitseinstellungen.',
+        analytics: 'Analyse-Cookies',
+        analyticsDesc:
+            'Diese Cookies helfen uns zu verstehen, wie Besucher mit der Website interagieren, indem sie Informationen anonym sammeln und melden. Wir verwenden Google Analytics.',
+        marketing: 'Marketing-Cookies',
+        marketingDesc:
+            'Diese Cookies werden verwendet, um Ihnen relevante Werbung zu zeigen. Derzeit verwenden wir keine Marketing-Cookies.',
+        functional: 'Funktionale Cookies',
+        functionalDesc:
+            'Diese Cookies ermöglichen erweiterte Funktionalitäten und Personalisierung, wie Chat-Widgets oder Videos.',
+        save: 'Einstellungen speichern',
+    },
+    en: {
+        title: 'Cookie settings',
+        intro:
+            'We use cookies to give you the best experience on our website. Some cookies are necessary to operate the site, while others help us improve this website and your experience.',
+        learnMore: 'Learn more',
+        privacyHref: '/en/privacy',
+        acceptAll: 'Accept all',
+        acceptNecessary: 'Necessary only',
+        settings: 'Settings',
+        modalIntro:
+            'We use different types of cookies. You can adjust your settings for each category.',
+        necessary: 'Necessary cookies',
+        alwaysActive: 'Always active',
+        necessaryDesc:
+            'These cookies are required for the basic functions of the website and cannot be disabled. They store your cookie preferences and security settings.',
+        analytics: 'Analytics cookies',
+        analyticsDesc:
+            'These cookies help us understand how visitors interact with the website by collecting and reporting information anonymously. We use Google Analytics.',
+        marketing: 'Marketing cookies',
+        marketingDesc:
+            'These cookies are used to show you relevant advertising. We currently do not use any marketing cookies.',
+        functional: 'Functional cookies',
+        functionalDesc:
+            'These cookies enable enhanced functionality and personalisation, such as chat widgets or videos.',
+        save: 'Save settings',
+    },
+} as const;
 
 declare global {
     interface Window {
@@ -21,6 +77,8 @@ declare global {
 const META_PIXEL_ID = '796776476409381';
 
 export default function CookieBanner() {
+    const pathname = usePathname();
+    const t = pathname?.startsWith('/en') ? COOKIE_TEXTS.en : COOKIE_TEXTS.de;
     const [showBanner, setShowBanner] = useState(false);
     const [showSettings, setShowSettings] = useState(false);
     const [preferences, setPreferences] = useState({
@@ -166,14 +224,12 @@ export default function CookieBanner() {
                         </div>
                         <div className="flex-1">
                             <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                                Cookie-Einstellungen
+                                {t.title}
                             </h3>
                             <p className="text-sm text-gray-600 mb-4">
-                                Wir verwenden Cookies, um Ihnen die beste Erfahrung auf unserer Website zu bieten.
-                                Einige Cookies sind notwendig für den Betrieb der Website, während andere uns helfen,
-                                diese Website und Ihre Erfahrung zu verbessern.{' '}
-                                <Link href="/datenschutz" className="text-indigo-600 hover:text-indigo-800 underline">
-                                    Mehr erfahren
+                                {t.intro}{' '}
+                                <Link href={t.privacyHref} className="text-indigo-600 hover:text-indigo-800 underline">
+                                    {t.learnMore}
                                 </Link>
                             </p>
                             <div className="flex flex-col sm:flex-row gap-3">
@@ -181,20 +237,20 @@ export default function CookieBanner() {
                                     onClick={handleAcceptAll}
                                     className="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors font-medium"
                                 >
-                                    Alle akzeptieren
+                                    {t.acceptAll}
                                 </button>
                                 <button
                                     onClick={handleAcceptNecessary}
                                     className="bg-gray-100 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-200 transition-colors font-medium"
                                 >
-                                    Nur notwendige
+                                    {t.acceptNecessary}
                                 </button>
                                 <button
                                     onClick={() => setShowSettings(true)}
                                     className="bg-white border border-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-50 transition-colors font-medium flex items-center gap-2"
                                 >
                                     <Settings className="h-4 w-4" />
-                                    Einstellungen
+                                    {t.settings}
                                 </button>
                             </div>
                         </div>
@@ -208,7 +264,7 @@ export default function CookieBanner() {
                     <div className="bg-white rounded-2xl shadow-xl max-w-2xl w-full max-h-[80vh] overflow-y-auto">
                         <div className="p-6">
                             <div className="flex items-center justify-between mb-6">
-                                <h2 className="text-2xl font-bold text-gray-900">Cookie-Einstellungen</h2>
+                                <h2 className="text-2xl font-bold text-gray-900">{t.title}</h2>
                                 <button
                                     onClick={() => setShowSettings(false)}
                                     className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
@@ -219,27 +275,26 @@ export default function CookieBanner() {
 
                             <div className="space-y-6">
                                 <p className="text-gray-600">
-                                    Wir verwenden verschiedene Arten von Cookies. Sie können Ihre Einstellungen für jede Kategorie anpassen.
+                                    {t.modalIntro}
                                 </p>
 
                                 {/* Necessary Cookies */}
                                 <div className="border border-gray-200 rounded-lg p-4">
                                     <div className="flex items-center justify-between mb-2">
-                                        <h3 className="font-semibold text-gray-900">Notwendige Cookies</h3>
+                                        <h3 className="font-semibold text-gray-900">{t.necessary}</h3>
                                         <div className="bg-gray-100 text-gray-500 px-3 py-1 rounded-full text-sm font-medium">
-                                            Immer aktiv
+                                            {t.alwaysActive}
                                         </div>
                                     </div>
                                     <p className="text-sm text-gray-600">
-                                        Diese Cookies sind für die Grundfunktionen der Website erforderlich und können nicht deaktiviert werden.
-                                        Sie speichern Ihre Cookie-Präferenzen und Sicherheitseinstellungen.
+                                        {t.necessaryDesc}
                                     </p>
                                 </div>
 
                                 {/* Analytics Cookies */}
                                 <div className="border border-gray-200 rounded-lg p-4">
                                     <div className="flex items-center justify-between mb-2">
-                                        <h3 className="font-semibold text-gray-900">Analyse-Cookies</h3>
+                                        <h3 className="font-semibold text-gray-900">{t.analytics}</h3>
                                         <label className="relative inline-flex items-center cursor-pointer">
                                             <input
                                                 type="checkbox"
@@ -251,15 +306,14 @@ export default function CookieBanner() {
                                         </label>
                                     </div>
                                     <p className="text-sm text-gray-600">
-                                        Diese Cookies helfen uns zu verstehen, wie Besucher mit der Website interagieren, indem sie Informationen
-                                        anonym sammeln und melden. Wir verwenden Google Analytics.
+                                        {t.analyticsDesc}
                                     </p>
                                 </div>
 
                                 {/* Marketing Cookies */}
                                 <div className="border border-gray-200 rounded-lg p-4">
                                     <div className="flex items-center justify-between mb-2">
-                                        <h3 className="font-semibold text-gray-900">Marketing-Cookies</h3>
+                                        <h3 className="font-semibold text-gray-900">{t.marketing}</h3>
                                         <label className="relative inline-flex items-center cursor-pointer">
                                             <input
                                                 type="checkbox"
@@ -271,14 +325,14 @@ export default function CookieBanner() {
                                         </label>
                                     </div>
                                     <p className="text-sm text-gray-600">
-                                        Diese Cookies werden verwendet, um Ihnen relevante Werbung zu zeigen. Derzeit verwenden wir keine Marketing-Cookies.
+                                        {t.marketingDesc}
                                     </p>
                                 </div>
 
                                 {/* Functional Cookies */}
                                 <div className="border border-gray-200 rounded-lg p-4">
                                     <div className="flex items-center justify-between mb-2">
-                                        <h3 className="font-semibold text-gray-900">Funktionale Cookies</h3>
+                                        <h3 className="font-semibold text-gray-900">{t.functional}</h3>
                                         <label className="relative inline-flex items-center cursor-pointer">
                                             <input
                                                 type="checkbox"
@@ -290,7 +344,7 @@ export default function CookieBanner() {
                                         </label>
                                     </div>
                                     <p className="text-sm text-gray-600">
-                                        Diese Cookies ermöglichen erweiterte Funktionalitäten und Personalisierung, wie Chat-Widgets oder Videos.
+                                        {t.functionalDesc}
                                     </p>
                                 </div>
                             </div>
@@ -300,13 +354,13 @@ export default function CookieBanner() {
                                     onClick={handleSavePreferences}
                                     className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors font-medium flex-1"
                                 >
-                                    Einstellungen speichern
+                                    {t.save}
                                 </button>
                                 <button
                                     onClick={handleAcceptAll}
                                     className="bg-gray-100 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors font-medium"
                                 >
-                                    Alle akzeptieren
+                                    {t.acceptAll}
                                 </button>
                             </div>
                         </div>

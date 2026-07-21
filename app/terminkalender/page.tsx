@@ -9,15 +9,15 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
 
 export const metadata = {
-    title: 'Terminkalender Kosmetikstudio: Online-Buchung & Termine',
-    description: 'Terminkalender, Terminplaner & Terminsoftware fürs Kosmetikstudio: 24/7 Online-Buchung, automatische SMS-Erinnerungen, bis zu 80% weniger No-Shows. Keine Provision pro Buchung. 14 Tage gratis testen.',
-    keywords: ['Terminsoftware Kosmetikstudio', 'Terminplaner Kosmetikstudio', 'Terminplaner für Kosmetikstudio', 'Terminkalender Kosmetikstudio', 'Terminplaner App Kosmetikstudio', 'Terminsoftware Kosmetik', 'Terminkalender Kosmetik', 'Kosmetikstudio Terminverwaltung', 'Kosmetik Terminplaner', 'Terminbuchungssoftware Kosmetiker'],
+    title: 'Terminkalender Kosmetikstudio: Team & Räume planen',
+    description: 'Terminplaner fürs Kosmetikstudio mit Tagesansicht für Mitarbeiter und Räume, Drag & Drop, Online-Buchung und automatischen Erinnerungen. Auslastung planen und Doppelbelegungen vermeiden.',
+    keywords: ['Terminsoftware Kosmetikstudio', 'Terminplaner Kosmetikstudio', 'Terminplaner für Kosmetikstudio', 'Terminkalender Kosmetikstudio', 'Tagesansicht Mitarbeiter', 'Raumplanung Kosmetikstudio', 'Mitarbeiter Auslastung planen', 'Drag and Drop Terminplaner', 'Kosmetikstudio Terminverwaltung', 'Terminbuchungssoftware Kosmetiker'],
     alternates: {
         canonical: 'https://www.treatflow.io/terminkalender',
     },
     openGraph: {
-        title: 'Terminkalender für Kosmetikstudios | Treatflow',
-        description: 'Der übersichtliche Terminkalender für dein Kosmetikstudio: Online-Buchungen, automatische Erinnerungen und weniger No-Shows.',
+        title: 'Terminkalender für Team & Räume | Treatflow',
+        description: 'Plane Mitarbeiter, Räume und Termine übersichtlich in einer Tagesansicht – mit Drag & Drop, Online-Buchungen und automatischen Erinnerungen.',
         url: 'https://www.treatflow.io/terminkalender',
         images: [
             {
@@ -71,7 +71,23 @@ const faqSchema = {
             "name": "Welche Funktionen sollte ein Terminplaner für Kosmetikstudios haben?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Ein guter Terminplaner für Kosmetikstudios sollte Online-Buchungen, Tages-/Wochen-/Monatsansichten, Mitarbeiterkalender, automatische Erinnerungen per SMS und E-Mail, Drag & Drop und eine Integration mit Kundenkartei und Dokumentation bieten."
+                "text": "Ein guter Terminplaner für Kosmetikstudios sollte Online-Buchungen, Tages-/Wochen-/Monatsansichten, Mitarbeiter- und Raumplanung, automatische Erinnerungen per SMS und E-Mail, Drag & Drop und eine Integration mit Kundenkartei und Dokumentation bieten."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Wie plane ich mehrere Mitarbeiter und Räume im Kosmetikstudio?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mit der Tagesansicht von Treatflow siehst du Mitarbeiter oder Räume in getrennten Spalten. So erkennst du freie Kapazitäten, vermeidest Doppelbelegungen und kannst spontane Änderungen im Studioalltag leichter koordinieren."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Wie vermeide ich Doppelbelegungen bei Mitarbeitern und Räumen?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Treatflow stellt die Auslastung von Mitarbeitern und Räumen übersichtlich nebeneinander dar. Freie und belegte Zeiten sind direkt erkennbar, sodass Engpässe und Doppelbelegungen frühzeitig vermieden werden."
             }
         }
     ]
@@ -109,12 +125,12 @@ export default function TerminkalenderPage() {
                             Der <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Terminplaner</span> für dein Kosmetikstudio
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            Terminkalender mit Wochen-, Tages- und Monatsansicht. Deine Kunden buchen direkt
-                            über deinen Buchungslink – ohne Doppelbuchungen und ohne Telefonstress.
+                            Plane Mitarbeiter, Räume und Termine auf einen Blick. Erkenne freie Kapazitäten,
+                            vermeide Doppelbelegungen und koordiniere spontane Änderungen ohne Planungschaos.
                         </p>
                         <AiAnswerCapsule
                             question="Wie organisiere ich Termine im Kosmetikstudio am besten?"
-                            answer="Mit einer spezialisierten Terminsoftware wie Treatflow organisierst du Termine am effizientesten: Online-Buchungen rund um die Uhr, Tages-/Wochen-/Monatsansicht mit Drag & Drop, Mitarbeiterkalender und automatische SMS-Erinnerungen, die No-Shows um bis zu 80% reduzieren. Alles in einer App, ab 59 EUR/Monat."
+                            answer="Treatflow bündelt Termine, Mitarbeiter und Räume in einem Kalender. Die Tagesansicht zeigt jede Person oder jeden Raum in einer eigenen Spalte. Dadurch erkennst du freie Kapazitäten, vermeidest Doppelbelegungen und koordinierst Änderungen schneller. Online-Buchungen und automatische Erinnerungen reduzieren zusätzlich Telefonaufwand und No-Shows."
                         />
                     </div>
 
@@ -319,23 +335,23 @@ export default function TerminkalenderPage() {
                             <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg flex items-center justify-center mb-6">
                                 <Users className="h-6 w-6 text-white" />
                             </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Flexible Ansichten</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">Team & Räume im Blick</h3>
                             <p className="text-gray-600 mb-6">
-                                Wechsle zwischen Tages-, Wochen- und Monatsansicht.
-                                Perfekte Übersicht für jede Situation.
+                                Die Tagesansicht ordnet Mitarbeiter oder Räume übersichtlich in Spalten.
+                                So erkennst du Auslastung, freie Zeiten und mögliche Engpässe sofort.
                             </p>
                             <ul className="space-y-2">
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Tagesansicht für Details
+                                    Eine Spalte pro Mitarbeiter oder Raum
                                 </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Wochenansicht für Planung
+                                    Freie Kapazitäten schneller erkennen
                                 </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Monatsansicht für Übersicht
+                                    Doppelbelegungen vermeiden
                                 </li>
                             </ul>
                         </div>
@@ -434,7 +450,15 @@ export default function TerminkalenderPage() {
                             },
                             {
                                 q: 'Welche Funktionen sollte ein Terminplaner für Kosmetikstudios haben?',
-                                a: 'Ein guter Terminplaner für Kosmetikstudios sollte Online-Buchungen, Tages-/Wochen-/Monatsansichten, Mitarbeiterkalender, automatische Erinnerungen per SMS und E-Mail, Drag & Drop und eine Integration mit Kundenkartei und Dokumentation bieten.',
+                                a: 'Ein guter Terminplaner für Kosmetikstudios sollte Online-Buchungen, Tages-/Wochen-/Monatsansichten, Mitarbeiter- und Raumplanung, automatische Erinnerungen per SMS und E-Mail, Drag & Drop und eine Integration mit Kundenkartei und Dokumentation bieten.',
+                            },
+                            {
+                                q: 'Wie plane ich mehrere Mitarbeiter und Räume im Kosmetikstudio?',
+                                a: 'Mit der Tagesansicht von Treatflow siehst du Mitarbeiter oder Räume in getrennten Spalten. So erkennst du freie Kapazitäten, vermeidest Doppelbelegungen und kannst spontane Änderungen im Studioalltag leichter koordinieren.',
+                            },
+                            {
+                                q: 'Wie vermeide ich Doppelbelegungen bei Mitarbeitern und Räumen?',
+                                a: 'Treatflow stellt die Auslastung von Mitarbeitern und Räumen übersichtlich nebeneinander dar. Freie und belegte Zeiten sind direkt erkennbar, sodass Engpässe und Doppelbelegungen frühzeitig vermieden werden.',
                             },
                         ].map((faq, index) => (
                             <div key={index} className="border border-gray-200 rounded-xl p-6">
@@ -484,8 +508,16 @@ export default function TerminkalenderPage() {
                         name: 'Treatflow Terminkalender',
                         applicationCategory: 'BusinessApplication',
                         operatingSystem: 'Web',
-                        description: 'Übersichtlicher Terminkalender für Kosmetikstudios mit Online-Buchung und automatischen Erinnerungen.',
+                        description: 'Terminkalender für Kosmetikstudios mit Mitarbeiter- und Raumspalten, Drag & Drop, Online-Buchung und automatischen Erinnerungen.',
                         url: 'https://www.treatflow.io/terminkalender',
+                        featureList: [
+                            'Tagesansicht mit Spalten pro Mitarbeiter oder Raum',
+                            'Auslastung und freie Kapazitäten erkennen',
+                            'Doppelbelegungen von Team und Räumen vermeiden',
+                            'Termine per Drag & Drop umplanen',
+                            'Tages-, Wochen- und Monatsansicht',
+                            'Online-Buchung und automatische Erinnerungen',
+                        ],
                         offers: { '@type': 'Offer', price: '39', priceCurrency: 'EUR' },
                         aggregateRating: {
                             '@type': 'AggregateRating',

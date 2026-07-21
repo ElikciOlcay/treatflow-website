@@ -43,7 +43,16 @@ async function sendLoopsNotification(dataVariables: {
         throw new Error(`Loops API Error: ${response.status}`);
     }
 
-    return response.json();
+    // Loops antwortet oft mit leerem Body oder Non-JSON – die Mail ist dann schon raus.
+    const text = await response.text();
+    if (!text.trim()) {
+        return { success: true };
+    }
+    try {
+        return JSON.parse(text);
+    } catch {
+        return { success: true };
+    }
 }
 
 export async function POST(request: NextRequest) {

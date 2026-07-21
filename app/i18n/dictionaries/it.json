@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "features": "Funzionalità",
+    "pricing": "Prezzi",
+    "contact": "Contatto",
+    "login": "Accedi",
+    "tryFree": "Prova gratis",
+    "requestAccess": "Richiedi accesso anticipato"
+  },
+  "footer": {
+    "tagline": "Il tuo assistente digitale per il centro estetico. Made in Austria.",
+    "features": "Funzionalità",
+    "product": "Prodotto",
+    "company": "Azienda",
+    "legal": "Legale",
+    "aboutUs": "Chi siamo",
+    "contact": "Contatto",
+    "pricing": "Prezzi",
+    "tryFree": "Prova gratis",
+    "requestAccess": "Richiedi accesso anticipato",
+    "login": "Accedi",
+    "privacy": "Privacy Policy",
+    "terms": "Termini di servizio",
+    "rights": "Tutti i diritti riservati."
+  },
+  "common": {
+    "tryFree": "Prova gratuita di 14 giorni",
+    "requestAccess": "Richiedi accesso anticipato",
+    "bookDemo": "Richiedi accesso anticipato",
+    "learnMore": "Scopri di più",
+    "noCreditCard": "Nessuna carta di credito richiesta",
+    "cancelAnytime": "Disdici in qualsiasi momento",
+    "waitlistNote": "La registrazione diretta è disponibile in Germania, Austria e Svizzera. Richiedi l'accesso anticipato per il tuo Paese."
+  }
+}

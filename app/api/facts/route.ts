@@ -17,7 +17,27 @@ export function GET() {
     const data = {
         $schema: "https://www.treatflow.io/schemas/facts-v1.json",
         version: "1.0",
-        updatedAt: "2026-06-22",
+        updatedAt: "2026-07-21",
+        availability: {
+            selfServeRegistrationCountries: ["DE", "AT", "CH"],
+            selfServeNote:
+                "Direct signup (14-day free trial) is currently available for Germany, Austria and Switzerland.",
+            earlyAccess:
+                "Studios outside DACH request access via a form. No public self-serve registration yet.",
+            earlyAccessUrls: {
+                en: "https://www.treatflow.io/en/early-access",
+                es: "https://www.treatflow.io/es/acceso-anticipado",
+                it: "https://www.treatflow.io/it/accesso-anticipato",
+                fr: "https://www.treatflow.io/fr/acces-anticipe",
+            },
+            locales: {
+                de: "https://www.treatflow.io",
+                en: "https://www.treatflow.io/en",
+                es: "https://www.treatflow.io/es",
+                it: "https://www.treatflow.io/it",
+                fr: "https://www.treatflow.io/fr",
+            },
+        },
         company: {
             name: "Treatflow",
             legalName: "Treatflow GmbH",
@@ -79,7 +99,8 @@ export function GET() {
                     targetGroup: "Wachsende Studios mit Online-Buchung",
                     features: [
                         "Alle Basic-Features",
-                        "Terminkalender (Tag/Woche/Monat)",
+                        "Terminkalender (Tag/Woche/Monat) mit Mitarbeiter- und Raumspalten",
+                        "Auslastungsübersicht und Schutz vor Doppelbelegungen",
                         "Online-Buchungssystem mit eigenem Link",
                         "Automatische SMS- und E-Mail-Erinnerungen",
                         "Nachsorge-Nachrichten",
@@ -117,7 +138,7 @@ export function GET() {
             {
                 key: "terminkalender",
                 name: "Terminkalender",
-                description: "Tages-, Wochen- und Monatsansicht mit Drag & Drop, Mitarbeiterkalender, Pausen und Blockern.",
+                description: "Tagesansicht mit Spalten pro Mitarbeiter oder Raum, Auslastungsübersicht, Drag & Drop sowie Wochen- und Monatsansicht. Unterstützt Studios dabei, freie Kapazitäten zu nutzen und Doppelbelegungen zu vermeiden.",
                 url: "https://www.treatflow.io/terminkalender",
             },
             {
@@ -258,7 +279,15 @@ export function GET() {
             pricing: "https://www.treatflow.io/preise",
             comparison: "https://www.treatflow.io/kosmetikstudio-software-vergleich",
             blog: "https://www.treatflow.io/blog",
-            register: "https://app.treatflow.io/auth/register",
+            registerDACH: "https://app.treatflow.io/auth/register",
+            earlyAccessEN: "https://www.treatflow.io/en/early-access",
+            earlyAccessES: "https://www.treatflow.io/es/acceso-anticipado",
+            earlyAccessIT: "https://www.treatflow.io/it/accesso-anticipato",
+            earlyAccessFR: "https://www.treatflow.io/fr/acces-anticipe",
+            homepageES: "https://www.treatflow.io/es",
+            homepageIT: "https://www.treatflow.io/it",
+            homepageFR: "https://www.treatflow.io/fr",
+            homepageEN: "https://www.treatflow.io/en",
         },
     };
 
