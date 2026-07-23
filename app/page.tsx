@@ -426,13 +426,13 @@ export default function Home() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 { href: '/kosmetikstudio-software', label: 'Kosmetikstudio Software', desc: 'All-in-One: Termine, Kunden, Formulare & Doku' },
-                { href: '/schoenheitssalon-software', label: 'Schönheitssalon Software', desc: 'Für Salons und Kosmetikinstitute' },
+                { href: '/guides/kosmetikstudio-digitalisieren', label: 'Studio digitalisieren', desc: 'Kompletter Guide für den digitalen Alltag' },
+                { href: '/vorlagen', label: 'Vorlagen-Bibliothek', desc: 'Hygieneplan, Anamnese, NiSV & Einwilligung' },
                 { href: '/terminkalender', label: 'Terminkalender', desc: 'Team, Räume und Auslastung planen' },
                 { href: '/kundenkartei-software', label: 'Kundenkartei App', desc: 'Historie, Fotos und Notizen mobil' },
                 { href: '/online-buchungen', label: 'Online-Buchungen', desc: 'Eigener Link, ohne Provision' },
-                { href: '/aesthetische-medizin-software', label: 'Ästhetische Medizin', desc: 'Doku, Einwilligung & Patientenakte' },
+                { href: '/guides/nisv', label: 'NiSV-Guide', desc: 'Beratung, Einwilligung & Dokumentation' },
                 { href: '/anamnesebogen-kosmetikstudio', label: 'Anamnesebogen', desc: 'Digitale Formulare vor dem Termin' },
-                { href: '/nisv-dokumentation', label: 'NiSV-Dokumentation', desc: 'Rechtssicher dokumentieren' },
                 { href: '/kassensystem-kosmetikstudio', label: 'Kassensystem', desc: 'TSE & RKSV direkt aus dem Termin' },
               ].map((item) => (
                 <Link

@@ -81,11 +81,20 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Unternehmen</h3>
+            <h3 className="font-semibold mb-4">Wissen</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/guides" className="text-gray-400 hover:text-white transition-colors">Studio-Guides</Link></li>
+              <li><Link href="/guides/kosmetikstudio-digitalisieren" className="text-gray-400 hover:text-white transition-colors">Studio digitalisieren</Link></li>
+              <li><Link href="/guides/nisv" className="text-gray-400 hover:text-white transition-colors">NiSV-Guide</Link></li>
+              <li><Link href="/guides/software-wechsel-kundenimport" className="text-gray-400 hover:text-white transition-colors">Software-Wechsel</Link></li>
+              <li><Link href="/vorlagen" className="text-gray-400 hover:text-white transition-colors">Vorlagen-Bibliothek</Link></li>
+              <li><Link href="/hygieneplan-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Hygieneplan PDF</Link></li>
+              <li><Link href="/vorlagen/nisv-beratungsprotokoll" className="text-gray-400 hover:text-white transition-colors">NiSV-Beratungsprotokoll</Link></li>
+              <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
+            </ul>
+            <h3 className="font-semibold mb-4 mt-8">Unternehmen</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/ueber-uns" className="text-gray-400 hover:text-white transition-colors">Über uns</Link></li>
-              <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
-              <li><Link href="/hygieneplan-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Hygieneplan PDF</Link></li>
               <li><Link href="/kontakt" className="text-gray-400 hover:text-white transition-colors">Kontakt</Link></li>
             </ul>
             <h3 className="font-semibold mb-4 mt-8">Regionen</h3>

@@ -267,6 +267,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
+        // Content-Hub (Guides & Vorlagen)
+        {
+            url: `${baseUrl}/guides`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/guides/kosmetikstudio-digitalisieren`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/guides/nisv`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/guides/software-wechsel-kundenimport`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.85,
+        },
+        {
+            url: `${baseUrl}/vorlagen`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/vorlagen/nisv-beratungsprotokoll`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.85,
+        },
+        {
+            url: `${baseUrl}/vorlagen/einverstaendniserklaerung-laser`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.85,
+        },
         {
             url: `${baseUrl}/schoenheitssalon-software`,
             lastModified: new Date(),

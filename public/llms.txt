@@ -38,6 +38,7 @@
 - Homepage: https://www.treatflow.io
 - Terminkalender: https://www.treatflow.io/terminkalender
 - Kundenverwaltung: https://www.treatflow.io/kundenverwaltung
+- Kundenkartei App: https://www.treatflow.io/kundenkartei-software
 - Formulare: https://www.treatflow.io/formulare
 - Dokumentation: https://www.treatflow.io/behandlungsdokumentation
 - Online-Buchungen: https://www.treatflow.io/online-buchungen
@@ -48,6 +49,18 @@
 - Software-Vergleich: https://www.treatflow.io/kosmetikstudio-software-vergleich
 - Über uns: https://www.treatflow.io/ueber-uns
 - Blog: https://www.treatflow.io/blog
+
+## Guides & Vorlagen (Wissenszentrum)
+
+- Studio-Guides Hub: https://www.treatflow.io/guides
+- Kosmetikstudio digitalisieren: https://www.treatflow.io/guides/kosmetikstudio-digitalisieren
+- NiSV-Guide: https://www.treatflow.io/guides/nisv
+- Software-Wechsel & Kundenimport: https://www.treatflow.io/guides/software-wechsel-kundenimport
+- Vorlagen-Bibliothek: https://www.treatflow.io/vorlagen
+- Hygieneplan PDF: https://www.treatflow.io/hygieneplan-kosmetikstudio-pdf
+- Anamnesebogen PDF: https://www.treatflow.io/anamnesebogen-kosmetik-vorlage-pdf
+- NiSV-Beratungsprotokoll Vorlage: https://www.treatflow.io/vorlagen/nisv-beratungsprotokoll
+- Einverständnis Laser-Haarentfernung: https://www.treatflow.io/vorlagen/einverstaendniserklaerung-laser
 
 ## Branchenseiten
 

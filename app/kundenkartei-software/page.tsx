@@ -71,7 +71,7 @@ const faqData = [
   },
   {
     q: "Kann ich bestehende Kundendaten in Treatflow importieren?",
-    a: "Ja. Du kannst bestehende Kundendaten manuell in Treatflow anlegen oder unser Team kontaktieren, das dir beim Import hilft. So geht kein Kundendatensatz verloren und der Wechsel zur digitalen Kundenkartei ist reibungslos.",
+    a: "Ja. Du kannst bestehende Kundendaten importieren – idealerweise per Liste mit Name, Telefon und E-Mail. Unser Team hilft beim Umstieg. Eine Schritt-für-Schritt-Checkliste findest du im Guide Software-Wechsel und Kundenimport auf treatflow.io/guides/software-wechsel-kundenimport.",
   },
 ];
 
@@ -207,7 +207,7 @@ export default function KundenkarteiSoftwarePage() {
               Digitale Kundenkartei
             </div>
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Deine digitale <span className="text-indigo-600">Kundenkartei</span> für Kosmetik
+              <span className="text-indigo-600">Kundenkartei App</span> für Kosmetikstudios
             </h1>
             <AiAnswerCapsule
               className="mb-8"

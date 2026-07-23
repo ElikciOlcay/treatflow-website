@@ -10,10 +10,24 @@ import AiAnswerCapsule from '../components/AiAnswerCapsule';
 import { buildHreflangAlternates } from '@/app/i18n/seo';
 
 export const metadata = {
-    title: 'Terminkalender Kosmetikstudio: Team & Räume planen',
+    title: 'Terminplaner Software Kosmetikstudio: Kalender & Team',
     description:
-        'Terminkalender fürs Kosmetikstudio: Mitarbeiter & Räume in einer Tagesansicht, Drag & Drop, Online-Buchung und SMS-/E-Mail-Erinnerungen. Weniger No-Shows, 14 Tage testen.',
-    keywords: ['Terminsoftware Kosmetikstudio', 'Terminplaner Kosmetikstudio', 'Terminplaner für Kosmetikstudio', 'Terminkalender Kosmetikstudio', 'Tagesansicht Mitarbeiter', 'Raumplanung Kosmetikstudio', 'Mitarbeiter Auslastung planen', 'Drag and Drop Terminplaner', 'Kosmetikstudio Terminverwaltung', 'Terminbuchungssoftware Kosmetiker'],
+        'Terminplaner-Software fürs Kosmetikstudio: Terminkalender mit Team & Räumen, Drag & Drop, Online-Buchung und SMS-/E-Mail-Erinnerungen. Weniger No-Shows, 14 Tage testen.',
+    keywords: [
+        'Terminsoftware Kosmetikstudio',
+        'Terminplaner Kosmetikstudio',
+        'Terminplaner für Kosmetikstudio',
+        'Terminkalender Kosmetikstudio',
+        'Terminplaner Software Kosmetikstudio',
+        'Terminplaner Kosmetik',
+        'Online-Terminverwaltung für Kosmetiker',
+        'Tagesansicht Mitarbeiter',
+        'Raumplanung Kosmetikstudio',
+        'Mitarbeiter Auslastung planen',
+        'Drag and Drop Terminplaner',
+        'Kosmetikstudio Terminverwaltung',
+        'Terminbuchungssoftware Kosmetiker',
+    ],
     alternates: {
         canonical: 'https://www.treatflow.io/terminkalender',
         ...buildHreflangAlternates('appointment-calendar'),
