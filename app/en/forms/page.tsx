@@ -1,15 +1,19 @@
 import { ClipboardCheck, PenLine, Send, Smartphone, ShieldCheck, FileSignature } from "lucide-react";
-import type { Metadata } from "next";
 import FeaturePageEn from "../../components/FeaturePageEn";
+import { buildPageMetadata } from "@/app/i18n/seo";
 
-const baseUrl = "https://www.treatflow.io";
-
-export const metadata: Metadata = {
-  title: "Digital Forms",
+export const metadata = buildPageMetadata({
+  pageKey: "forms",
+  locale: "en",
+  title: "Digital Intake & Consent Forms",
   description:
-    "Digital intake and consent forms your clients fill in before the appointment. Legally sound signatures, no paperwork. Try Treatflow free for 14 days.",
-  alternates: { canonical: `${baseUrl}/en/forms` },
-};
+    "Digital intake and consent forms your clients fill in before the appointment. Secure signatures, no paperwork. Request early access.",
+  keywords: [
+    "digital consent forms salon",
+    "beauty salon intake forms",
+    "online consent forms",
+  ],
+});
 
 export default function EnForms() {
   return (

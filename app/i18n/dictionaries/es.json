@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Funciones",
+    "industries": "Sectores",
     "pricing": "Precios",
     "contact": "Contacto",
     "login": "Iniciar sesión",
@@ -10,6 +11,7 @@
   "footer": {
     "tagline": "Tu asistente digital para el salón. Hecho en Austria.",
     "features": "Funciones",
+    "industries": "Sectores",
     "product": "Producto",
     "company": "Empresa",
     "legal": "Legal",

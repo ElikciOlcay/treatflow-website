@@ -12,9 +12,9 @@ export default function ItTermsPage() {
     <main className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto prose prose-gray">
       <h1>Termini di servizio</h1>
       <p>
-        I termini completi sono disponibili su <a href="/agb">/agb</a> e{" "}
-        <a href="/en/terms">/en/terms</a>. Per l&apos;accesso anticipato internazionale possono
-        applicarsi condizioni individuali fino al lancio locale.
+        I termini di riferimento sono disponibili su <a href="/en/terms">/en/terms</a>. Per
+        l&apos;accesso anticipato internazionale possono applicarsi condizioni individuali fino
+        al lancio locale.
       </p>
     </main>
   );

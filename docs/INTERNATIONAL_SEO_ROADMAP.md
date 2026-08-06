@@ -12,12 +12,14 @@ Zentrale Referenz für internationale Marketing-Seiten und Early Access.
 | Markt | URL | Sprache | Conversion | Status |
 |-------|-----|---------|------------|--------|
 | DACH | `/` | Deutsch | Self-Serve + Demo buchen | **live** |
-| Global EN | `/en` | Englisch | Early Access | **ready** |
-| Spanisch | `/es` | Español | Early Access | **ready** |
-| Italienisch | `/it` | Italiano | Early Access | **ready** |
-| Französisch | `/fr` | Français | Early Access | **ready** |
+| Global EN | `/en` | Englisch | Early Access | **live** – Features + 9 Branchen |
+| Spanisch | `/es` | Español | Early Access | **live** – Features + 9 Branchen |
+| Italienisch | `/it` | Italiano | Early Access | **live** – Features + 9 Branchen |
+| Französisch | `/fr` | Français | Early Access | **live** – Features + 9 Branchen |
 
 `/en-nl` wurde entfernt (301 → `/en`). Niederländisch `/nl` bleibt optional geplant.
+
+**Parität (Aug 2026):** Internationale Locales haben dieselben Kern-Funktionen und Branchenseiten wie die DE-Navigation (ohne Blog, ohne NiSV/TSE-DACH-Spezifika). Content über `industry-pages-intl.ts`, `extra-feature-pages-intl.ts`, `FeaturePageEn`, `InternationalSeoPage`.
 
 ---
 

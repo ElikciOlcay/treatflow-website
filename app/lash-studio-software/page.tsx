@@ -11,6 +11,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import { generateFaqSchema } from '@/lib/schema';
 
+import { buildHreflangAlternates } from "@/app/i18n/seo";
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Lash Studio Software' }];
 
 const faqs = [
@@ -38,6 +39,7 @@ export const metadata = {
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/lash-studio-software',
+        ...buildHreflangAlternates("lash-studio-software"),
     },
     openGraph: {
         title: 'Lash Studio Software: Termine & Kundenverwaltung',

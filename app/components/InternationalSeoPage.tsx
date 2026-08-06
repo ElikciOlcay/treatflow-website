@@ -69,6 +69,7 @@ export type InternationalPageContent = {
   ctaBottomTitle?: string;
   ctaBottomText?: string;
   trustTrialLabel?: string;
+  trustBadges?: string[];
   images?: {
     lifestyle?: PageImage;
     mockup?: PageImage;
@@ -88,6 +89,30 @@ export default function InternationalSeoPage({
     content.ctaBottomText ??
     "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.";
   const trustTrial = content.trustTrialLabel ?? "Early access available";
+  const trustBadges = content.trustBadges ?? [
+    locale === "es"
+      ? "Conforme RGPD / UE"
+      : locale === "it"
+        ? "Conforme GDPR / UE"
+        : locale === "fr"
+          ? "Conforme RGPD / UE"
+          : "GDPR / EU compliant",
+    locale === "es"
+      ? "Servidores en la UE"
+      : locale === "it"
+        ? "Server in UE"
+        : locale === "fr"
+          ? "Serveurs hébergés en UE"
+          : "EU-hosted servers",
+    locale === "es"
+      ? "Cifrado SSL"
+      : locale === "it"
+        ? "Crittografia SSL"
+        : locale === "fr"
+          ? "Chiffrement SSL"
+          : "SSL-encrypted",
+    trustTrial,
+  ];
 
   const serviceSchema = generateServiceSchema({
     name: content.serviceName,
@@ -292,10 +317,10 @@ export default function InternationalSeoPage({
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Shield, text: "GDPR / AVG compliant" },
-              { icon: Server, text: "EU-hosted servers" },
-              { icon: Lock, text: "SSL-encrypted" },
-              { icon: CheckCircle, text: trustTrial },
+              { icon: Shield, text: trustBadges[0] },
+              { icon: Server, text: trustBadges[1] },
+              { icon: Lock, text: trustBadges[2] },
+              { icon: CheckCircle, text: trustBadges[3] },
             ].map((item) => (
               <div key={item.text} className="flex items-center gap-3">
                 <item.icon className="h-8 w-8 text-indigo-600 flex-shrink-0" />

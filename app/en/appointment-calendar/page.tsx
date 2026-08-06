@@ -1,15 +1,19 @@
 import { CalendarDays, Clock, Users, RefreshCw, Smartphone, Bell } from "lucide-react";
-import type { Metadata } from "next";
 import FeaturePageEn from "../../components/FeaturePageEn";
+import { buildPageMetadata } from "@/app/i18n/seo";
 
-const baseUrl = "https://www.treatflow.io";
-
-export const metadata: Metadata = {
-  title: "Appointment Calendar",
+export const metadata = buildPageMetadata({
+  pageKey: "appointment-calendar",
+  locale: "en",
+  title: "Appointment Calendar for Beauty Salons",
   description:
-    "A clear appointment calendar for your beauty studio - daily, weekly and monthly views, team scheduling and automatic reminders. Try Treatflow free for 14 days.",
-  alternates: { canonical: `${baseUrl}/en/appointment-calendar` },
-};
+    "Clear appointment calendar for beauty studios – daily, weekly and monthly views, team scheduling and automatic reminders. Request early access.",
+  keywords: [
+    "appointment calendar beauty salon",
+    "salon scheduling software",
+    "beauty studio calendar",
+  ],
+});
 
 export default function EnAppointmentCalendar() {
   return (

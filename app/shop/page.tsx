@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata = {
     title: 'Produktverkauf & Lager für Kosmetikstudios',
@@ -11,6 +12,7 @@ export const metadata = {
     keywords: ['Produktverkauf Kosmetikstudio', 'Lagerverwaltung Beauty', 'Kosmetik Produkte verkaufen', 'Studio Verkaufssystem', 'Zusatzumsatz Kosmetik'],
     alternates: {
         canonical: 'https://www.treatflow.io/shop',
+        ...buildHreflangAlternates("shop"),
     },
     openGraph: {
         title: 'Produktverkauf & Lagerverwaltung für Kosmetikstudios',

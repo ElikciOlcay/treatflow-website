@@ -22,6 +22,7 @@ import {
   Send
 } from 'lucide-react';
 
+import { buildHreflangAlternates } from '../i18n/seo';
 export const metadata = {
   title: 'Website für Kosmetikstudio erstellen lassen',
   description: 'Individuelle Website für dein Kosmetikstudio, Laserstudio oder Beauty Business. Professionell, mobil optimiert und auf Buchungen ausgelegt. Ab 1.000 Euro.',
@@ -39,6 +40,7 @@ export const metadata = {
   ],
   alternates: {
     canonical: 'https://www.treatflow.io/website-fuer-kosmetikstudios',
+      ...buildHreflangAlternates("studio-website"),
   },
   openGraph: {
     title: 'Individuelle Websites für Kosmetikstudios | Treatflow',

@@ -1,15 +1,19 @@
 import { FileText, Mic, Camera, History, ShieldCheck, Layers } from "lucide-react";
-import type { Metadata } from "next";
 import FeaturePageEn from "../../components/FeaturePageEn";
+import { buildPageMetadata } from "@/app/i18n/seo";
 
-const baseUrl = "https://www.treatflow.io";
-
-export const metadata: Metadata = {
-  title: "Treatment Documentation",
+export const metadata = buildPageMetadata({
+  pageKey: "treatment-documentation",
+  locale: "en",
+  title: "Treatment Documentation for Beauty Salons",
   description:
-    "Document every treatment cleanly and securely - with photos, notes and AI dictation. Complete, searchable records for your beauty studio. Try Treatflow free for 14 days.",
-  alternates: { canonical: `${baseUrl}/en/treatment-documentation` },
-};
+    "Document every treatment cleanly and securely – with photos, notes and structured records. Request early access.",
+  keywords: [
+    "treatment documentation salon",
+    "beauty treatment notes",
+    "salon documentation software",
+  ],
+});
 
 export default function EnTreatmentDocumentation() {
   return (

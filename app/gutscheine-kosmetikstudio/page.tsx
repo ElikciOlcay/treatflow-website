@@ -10,6 +10,7 @@ import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
 
+import { buildHreflangAlternates } from '../i18n/seo';
 export const metadata = {
     title: 'Gutscheine für Kosmetikstudios – verkaufen & einlösen',
     description: 'Gutscheinverwaltung für dein Kosmetikstudio: Geschenkgutscheine direkt an der Kasse verkaufen und einlösen, Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik, Gültigkeit und Restwert im Blick. Teil der TSE-/RKSV-konformen Treatflow Kasse.',
@@ -21,6 +22,7 @@ export const metadata = {
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/gutscheine-kosmetikstudio',
+        ...buildHreflangAlternates("vouchers"),
     },
     openGraph: {
         title: 'Gutscheine für Kosmetikstudios – verkaufen & einlösen | Treatflow',

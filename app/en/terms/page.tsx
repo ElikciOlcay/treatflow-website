@@ -1,16 +1,14 @@
-import type { Metadata } from "next";
-
-const baseUrl = "https://www.treatflow.io";
+import { buildPageMetadata } from "@/app/i18n/seo";
 
 // Englischer Entwurf der AGB/Terms. TODO(legal): Vor Produktivgang juristisch
 // pruefen lassen (Vertragsrecht, Widerruf, anwendbares Recht, Gerichtsstand).
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
+  pageKey: "terms",
+  locale: "en",
   title: "Terms of Service",
   description:
     "The terms of service for using Treatflow, the all-in-one software for beauty studios.",
-  alternates: { canonical: `${baseUrl}/en/terms` },
-  robots: { index: true, follow: true },
-};
+});
 
 export default function EnTerms() {
   return (

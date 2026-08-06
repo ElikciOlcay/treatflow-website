@@ -11,6 +11,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import { generateFaqSchema } from '@/lib/schema';
 
+import { buildHreflangAlternates } from "@/app/i18n/seo";
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Spa & Wellness Software' }];
 
 const faqs = [
@@ -38,6 +39,7 @@ export const metadata = {
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/spa-wellness-software',
+        ...buildHreflangAlternates("spa-wellness-software"),
     },
     openGraph: {
         title: 'Spa & Wellness Software - Termine & Verwaltung | Treatflow',

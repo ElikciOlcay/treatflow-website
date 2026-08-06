@@ -5,6 +5,7 @@ import CTASection from '../components/CTASection';
 import PricingSection from '../components/PricingSection';
 import QuickFacts from '../components/QuickFacts';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata = {
     title: 'Preise: Kosmetikstudio Software ab 39€/Monat',
@@ -12,6 +13,7 @@ export const metadata = {
     keywords: ['Kosmetikstudio Software Preise', 'Treatflow Preise', 'Kosmetikstudio Software Kosten', 'Beauty Software Preis', 'Studio Software günstig', 'Kassensystem Preis Kosmetik', 'TSE Kasse Kosten'],
     alternates: {
         canonical: 'https://www.treatflow.io/preise',
+        ...buildHreflangAlternates("pricing"),
     },
     openGraph: {
         title: 'Preise: Kosmetikstudio Software ab 39€/Monat | Treatflow',

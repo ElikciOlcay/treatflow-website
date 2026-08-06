@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Features",
+    "industries": "Industries",
     "pricing": "Pricing",
     "contact": "Contact",
     "login": "Login",
@@ -10,6 +11,7 @@
   "footer": {
     "tagline": "Your digital studio assistant. Made in Austria.",
     "features": "Features",
+    "industries": "Industries",
     "product": "Product",
     "company": "Company",
     "legal": "Legal",

@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import Link from 'next/link';
 import { Mail, MapPin, Clock, MessageCircle, Send } from 'lucide-react';
 import Script from 'next/script';
+import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata = {
     title: 'Kontakt - Treatflow Support & Beratung',
@@ -10,6 +11,7 @@ export const metadata = {
     keywords: ['Treatflow Kontakt', 'Kosmetikstudio Software Support', 'Kostenlos testen', 'Treatflow Beratung', 'Beauty Software Hilfe'],
     alternates: {
         canonical: 'https://www.treatflow.io/kontakt',
+        ...buildHreflangAlternates("contact"),
     },
     openGraph: {
         title: 'Kontakt - Treatflow Support & Beratung',

@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blogPosts'
-import { buildHreflangAlternates, type SeoPageKey } from '@/app/i18n/seo'
+import { buildHreflangAlternates, seoPageSlugs, type SeoPageKey } from '@/app/i18n/seo'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://www.treatflow.io'
@@ -342,71 +342,62 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]
 
     // Internationale Seiten (kuratiert). Blog ist bewusst NICHT enthalten.
-    const enRoutes = [
-        internationalEntry('/en', 'home', 0.9),
-        internationalEntry('/en/pricing', 'pricing', 0.8),
-        internationalEntry('/en/early-access', 'early-access', 0.85),
-        internationalEntry('/en/appointment-calendar', 'appointment-calendar', 0.8),
-        internationalEntry('/en/online-booking', 'online-booking', 0.8),
-        internationalEntry('/en/client-records', 'client-records', 0.8),
-        internationalEntry('/en/forms', 'forms', 0.8),
-        internationalEntry('/en/treatment-documentation', 'treatment-documentation', 0.8),
-        internationalEntry('/en/beauty-salon-software', 'beauty-salon-software', 0.85),
-        internationalEntry('/en/aesthetic-clinic-software', 'aesthetic-clinic-software', 0.85),
-        internationalEntry('/en/laser-hair-removal-software', 'laser-hair-removal-software', 0.85),
-        internationalEntry('/en/about', 'about', 0.6),
-        internationalEntry('/en/contact', 'contact', 0.6),
-        internationalEntry('/en/privacy', 'privacy', 0.3),
-        internationalEntry('/en/terms', 'terms', 0.3),
+    const featureAndIndustryKeys: { key: SeoPageKey; priority: number }[] = [
+        { key: 'appointment-calendar', priority: 0.8 },
+        { key: 'online-booking', priority: 0.8 },
+        { key: 'client-records', priority: 0.8 },
+        { key: 'forms', priority: 0.8 },
+        { key: 'treatment-documentation', priority: 0.8 },
+        { key: 'vouchers', priority: 0.8 },
+        { key: 'messaging', priority: 0.8 },
+        { key: 'integrations', priority: 0.8 },
+        { key: 'features', priority: 0.8 },
+        { key: 'shop', priority: 0.75 },
+        { key: 'studio-website', priority: 0.75 },
+        { key: 'beauty-salon-software', priority: 0.85 },
+        { key: 'aesthetic-clinic-software', priority: 0.85 },
+        { key: 'laser-hair-removal-software', priority: 0.85 },
+        { key: 'permanent-makeup-software', priority: 0.85 },
+        { key: 'tattoo-studio-software', priority: 0.85 },
+        { key: 'nail-salon-software', priority: 0.85 },
+        { key: 'lash-studio-software', priority: 0.85 },
+        { key: 'spa-wellness-software', priority: 0.85 },
+        { key: 'massage-software', priority: 0.85 },
     ]
 
-    const esRoutes = [
-        internationalEntry('/es', 'home', 0.9),
-        internationalEntry('/es/precios', 'pricing', 0.8),
-        internationalEntry('/es/acceso-anticipado', 'early-access', 0.85),
-        internationalEntry('/es/calendario-citas', 'appointment-calendar', 0.8),
-        internationalEntry('/es/reservas-online', 'online-booking', 0.8),
-        internationalEntry('/es/fichas-clientes', 'client-records', 0.8),
-        internationalEntry('/es/formularios', 'forms', 0.8),
-        internationalEntry('/es/documentacion-tratamientos', 'treatment-documentation', 0.8),
-        internationalEntry('/es/software-salon-belleza', 'beauty-salon-software', 0.85),
-        internationalEntry('/es/sobre-nosotros', 'about', 0.6),
-        internationalEntry('/es/contacto', 'contact', 0.6),
-        internationalEntry('/es/privacidad', 'privacy', 0.3),
-        internationalEntry('/es/terminos', 'terms', 0.3),
+    const sharedKeys: { key: SeoPageKey; priority: number }[] = [
+        { key: 'pricing', priority: 0.8 },
+        { key: 'early-access', priority: 0.85 },
+        { key: 'about', priority: 0.6 },
+        { key: 'contact', priority: 0.6 },
+        { key: 'privacy', priority: 0.3 },
+        { key: 'terms', priority: 0.3 },
     ]
 
-    const itRoutes = [
-        internationalEntry('/it', 'home', 0.9),
-        internationalEntry('/it/prezzi', 'pricing', 0.8),
-        internationalEntry('/it/accesso-anticipato', 'early-access', 0.85),
-        internationalEntry('/it/calendario-appuntamenti', 'appointment-calendar', 0.8),
-        internationalEntry('/it/prenotazioni-online', 'online-booking', 0.8),
-        internationalEntry('/it/schede-clienti', 'client-records', 0.8),
-        internationalEntry('/it/moduli', 'forms', 0.8),
-        internationalEntry('/it/documentazione-trattamenti', 'treatment-documentation', 0.8),
-        internationalEntry('/it/software-centro-estetico', 'beauty-salon-software', 0.85),
-        internationalEntry('/it/chi-siamo', 'about', 0.6),
-        internationalEntry('/it/contatto', 'contact', 0.6),
-        internationalEntry('/it/privacy', 'privacy', 0.3),
-        internationalEntry('/it/termini', 'terms', 0.3),
-    ]
+    const localePrefixes = {
+        en: '/en',
+        es: '/es',
+        it: '/it',
+        fr: '/fr',
+    } as const
 
-    const frRoutes = [
-        internationalEntry('/fr', 'home', 0.9),
-        internationalEntry('/fr/tarifs', 'pricing', 0.8),
-        internationalEntry('/fr/acces-anticipe', 'early-access', 0.85),
-        internationalEntry('/fr/calendrier-rendez-vous', 'appointment-calendar', 0.8),
-        internationalEntry('/fr/reservation-en-ligne', 'online-booking', 0.8),
-        internationalEntry('/fr/fiches-clients', 'client-records', 0.8),
-        internationalEntry('/fr/formulaires', 'forms', 0.8),
-        internationalEntry('/fr/documentation-soins', 'treatment-documentation', 0.8),
-        internationalEntry('/fr/logiciel-institut-beaute', 'beauty-salon-software', 0.85),
-        internationalEntry('/fr/a-propos', 'about', 0.6),
-        internationalEntry('/fr/contact', 'contact', 0.6),
-        internationalEntry('/fr/confidentialite', 'privacy', 0.3),
-        internationalEntry('/fr/conditions', 'terms', 0.3),
-    ]
+    function localeRoutes(locale: keyof typeof localePrefixes) {
+        const prefix = localePrefixes[locale]
+        const home = internationalEntry(prefix, 'home', 0.9)
+        const rest = [...sharedKeys, ...featureAndIndustryKeys]
+            .map(({ key, priority }) => {
+                const slug = seoPageSlugs[key]?.[locale]
+                if (slug === undefined) return null
+                return internationalEntry(`${prefix}/${slug}`, key, priority)
+            })
+            .filter(Boolean) as ReturnType<typeof internationalEntry>[]
+        return [home, ...rest]
+    }
+
+    const enRoutes = localeRoutes('en')
+    const esRoutes = localeRoutes('es')
+    const itRoutes = localeRoutes('it')
+    const frRoutes = localeRoutes('fr')
 
     const blogIndex = {
         url: `${baseUrl}/blog`,

@@ -7,6 +7,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata = {
     title: 'Online-Terminbuchung & Buchungssystem Kosmetikstudio',
@@ -14,6 +15,7 @@ export const metadata = {
     keywords: ['Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Buchungssystem Kosmetik', 'Online Buchungssystem Kosmetik', 'Terminbuchungssoftware Kosmetik', 'Buchungssoftware Kosmetikstudio', 'Buchungslink Beauty', '24/7 Terminbuchung', 'Online-Terminbuchung Kosmetik', 'Kosmetikstudio Buchungssystem', 'mehrsprachige Buchungsseite', 'Buchungsseite mehrere Sprachen', 'Rabattcodes Online-Buchung', 'Rabattcode Kosmetikstudio'],
     alternates: {
         canonical: 'https://www.treatflow.io/online-buchungen',
+        ...buildHreflangAlternates("online-booking"),
     },
     openGraph: {
         title: 'Online-Buchungen für Kosmetikstudios | Treatflow',

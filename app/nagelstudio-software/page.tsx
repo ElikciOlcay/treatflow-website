@@ -11,6 +11,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import { generateFaqSchema } from '@/lib/schema';
 
+import { buildHreflangAlternates } from "@/app/i18n/seo";
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Nagelstudio Software' }];
 
 const faqs = [
@@ -39,6 +40,7 @@ export const metadata = {
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/nagelstudio-software',
+        ...buildHreflangAlternates("nail-salon-software"),
     },
     openGraph: {
         title: 'Nagelstudio Software: Termine & Kundenverwaltung',

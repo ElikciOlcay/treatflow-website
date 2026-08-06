@@ -7,6 +7,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata = {
     title: 'Terminkalender Kosmetikstudio: Team & Räume planen',
@@ -14,6 +15,7 @@ export const metadata = {
     keywords: ['Terminsoftware Kosmetikstudio', 'Terminplaner Kosmetikstudio', 'Terminplaner für Kosmetikstudio', 'Terminkalender Kosmetikstudio', 'Tagesansicht Mitarbeiter', 'Raumplanung Kosmetikstudio', 'Mitarbeiter Auslastung planen', 'Drag and Drop Terminplaner', 'Kosmetikstudio Terminverwaltung', 'Terminbuchungssoftware Kosmetiker'],
     alternates: {
         canonical: 'https://www.treatflow.io/terminkalender',
+        ...buildHreflangAlternates("appointment-calendar"),
     },
     openGraph: {
         title: 'Terminkalender für Team & Räume | Treatflow',

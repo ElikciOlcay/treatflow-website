@@ -11,6 +11,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import { generateFaqSchema } from '@/lib/schema';
 
+import { buildHreflangAlternates } from "@/app/i18n/seo";
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Laser & IPL Software' }];
 
 const faqs = [
@@ -54,6 +55,7 @@ export const metadata = {
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/laser-haarentfernung-software',
+        ...buildHreflangAlternates("laser-hair-removal-software"),
     },
     openGraph: {
         title: 'Software für Laser Haarentfernung: NiSV-konform',

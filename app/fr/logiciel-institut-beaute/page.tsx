@@ -1,11 +1,11 @@
 import InternationalSeoPage from "@/app/components/InternationalSeoPage";
 import { buildPageMetadata } from "@/app/i18n/seo";
-import { buildIntlFeatureContent } from "@/app/i18n/markets/intl-feature-pages";
+import { getIndustryPage } from "@/app/i18n/markets/industry-pages-intl";
 
-const content = buildIntlFeatureContent("fr", "beauty-salon-software")!;
+const content = getIndustryPage("fr", "beauty-salon-software");
 
 export const metadata = buildPageMetadata({
-  pageKey: "beauty-salon-software",
+  pageKey: content.pageKey,
   locale: "fr",
   title: content.serviceName,
   description: content.serviceDescription,

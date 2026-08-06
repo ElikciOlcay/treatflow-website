@@ -7,6 +7,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata = {
     title: 'Kundenverwaltung Kosmetikstudio: Daten & Historie',
@@ -14,6 +15,7 @@ export const metadata = {
     keywords: ['Kundenverwaltung Kosmetikstudio', 'Kundenverwaltung Kosmetik', 'digitale Kundenverwaltung Kosmetik', 'Kundenmanagement Kosmetikstudio', 'Kundendaten verwalten Kosmetik', 'Kundenhistorie Kosmetik', 'Kundenprofil Kosmetikstudio', 'CRM Kosmetikstudio', 'Behandlungshistorie', 'DSGVO Kundendaten', 'Kundenkartei Kosmetik App', 'Kundenkartei App Kosmetikstudio'],
     alternates: {
         canonical: 'https://www.treatflow.io/kundenverwaltung',
+        ...buildHreflangAlternates("client-records"),
     },
     openGraph: {
         title: 'Kundenverwaltung Kosmetikstudio: Daten & Historie | Treatflow',

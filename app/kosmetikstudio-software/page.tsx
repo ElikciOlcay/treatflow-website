@@ -5,6 +5,7 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { buildHreflangAlternates } from '../i18n/seo';
 const clusterPages = [
     {
         href: '/schoenheitssalon-software',
@@ -72,6 +73,7 @@ export const metadata = {
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/kosmetikstudio-software',
+        ...buildHreflangAlternates("beauty-salon-software"),
     },
     openGraph: {
         title: 'Kosmetikstudio Software: Termine, Kunden & Doku in einer App',

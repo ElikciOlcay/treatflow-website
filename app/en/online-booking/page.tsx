@@ -1,15 +1,19 @@
 import { Link2, Clock, Globe, Ticket, Bell, ShieldCheck } from "lucide-react";
-import type { Metadata } from "next";
 import FeaturePageEn from "../../components/FeaturePageEn";
+import { buildPageMetadata } from "@/app/i18n/seo";
 
-const baseUrl = "https://www.treatflow.io";
-
-export const metadata: Metadata = {
-  title: "Online Booking",
+export const metadata = buildPageMetadata({
+  pageKey: "online-booking",
+  locale: "en",
+  title: "Online Booking for Beauty Salons",
   description:
-    "Let clients book appointments 24/7 with your own booking page. Automatic reminders, discount codes and a multilingual booking flow. Try Treatflow free for 14 days.",
-  alternates: { canonical: `${baseUrl}/en/online-booking` },
-};
+    "Let clients book appointments 24/7 with your own booking page. Automatic reminders, discount codes and multilingual booking. Request early access.",
+  keywords: [
+    "online booking beauty salon",
+    "salon booking software",
+    "beauty studio online booking",
+  ],
+});
 
 export default function EnOnlineBooking() {
   return (

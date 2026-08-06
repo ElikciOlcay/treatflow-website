@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
+import { buildHreflangAlternates } from '../i18n/seo';
 export const metadata: Metadata = {
     title: 'Integrationen & Apps für dein Kosmetikstudio',
     description: 'Verbinde Treatflow mit deinen Lieblings-Tools: Lexware Office für Buchhaltung & Rechnungen, Google Kalender für die Terminsynchronisation und Zapier für über 7.000 weitere Apps.',
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/integrationen',
+        ...buildHreflangAlternates("integrations"),
     },
     openGraph: {
         title: 'Integrationen & Apps | Treatflow',

@@ -7,6 +7,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata = {
     title: 'SMS & E-Mail Erinnerungen fürs Kosmetikstudio',
@@ -14,6 +15,7 @@ export const metadata = {
     keywords: ['Nachrichtenautomatisierung Kosmetik', 'SMS Terminerinnerung Kosmetikstudio', 'No-Show reduzieren Kosmetikstudio', 'Automatische Terminerinnerungen', 'SMS Terminbestätigung', 'Follow-up E-Mails', 'Geburtstagswünsche automatisch', 'Kundenbindung Beauty Studio'],
     alternates: {
         canonical: 'https://www.treatflow.io/nachrichtenautomatisierung',
+        ...buildHreflangAlternates("messaging"),
     },
     openGraph: {
         title: 'SMS & E-Mail Erinnerungen für Kosmetikstudios',

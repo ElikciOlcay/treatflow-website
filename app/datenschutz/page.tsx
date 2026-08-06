@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata: Metadata = {
     title: "Datenschutzerklärung - Treatflow DSGVO konform",
     description: "Datenschutzerklärung und DSGVO-konforme Informationen zur Datenverarbeitung bei Treatflow. Ihre Rechte, Cookies, Datenerhebung und Kontaktmöglichkeiten.",
     alternates: {
         canonical: 'https://www.treatflow.io/datenschutz',
+        ...buildHreflangAlternates("privacy"),
     },
     robots: {
         index: true,

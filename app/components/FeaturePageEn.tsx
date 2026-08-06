@@ -1,6 +1,7 @@
 import { ArrowRight, CheckCircle, type LucideIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import FaqSectionEn, { type FaqEntry } from "./FaqSectionEn";
 
 export type FeatureItem = {
   icon: LucideIcon;
@@ -21,6 +22,10 @@ export type FeaturePageProps = {
   primaryCta?: string;
   bottomTitle?: string;
   bottomText?: string;
+  faqs?: FaqEntry[];
+  relatedLinks?: { href: string; label: string }[];
+  relatedTitle?: string;
+  trustItems?: string[];
 };
 
 export default function FeaturePageEn({
@@ -36,10 +41,18 @@ export default function FeaturePageEn({
   primaryCta = "Request early access",
   bottomTitle = "Ready to get started?",
   bottomText = "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+  faqs,
+  relatedLinks,
+  relatedTitle = "Related pages",
+  trustItems = [
+    "GDPR / EU hosting",
+    "Early access available",
+    "No commission on bookings",
+  ],
 }: FeaturePageProps) {
   return (
     <>
-      <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <div className="order-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -82,6 +95,19 @@ export default function FeaturePageEn({
         </div>
       </section>
 
+      <section className="py-10 bg-white border-y border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid sm:grid-cols-3 gap-4 text-center sm:text-left">
+            {trustItems.map((item) => (
+              <div key={item} className="flex items-center justify-center sm:justify-start gap-2 text-sm text-gray-700">
+                <CheckCircle className="h-4 w-4 text-indigo-600 flex-shrink-0" />
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -107,6 +133,27 @@ export default function FeaturePageEn({
           <p className="text-gray-600 leading-relaxed">{closingText}</p>
         </div>
       </section>
+
+      {relatedLinks && relatedLinks.length > 0 && (
+        <section className="py-12 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4 text-center">{relatedTitle}</h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {relatedLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="inline-flex items-center px-4 py-2 rounded-full border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:border-indigo-300 hover:text-indigo-600 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {faqs && faqs.length > 0 && <FaqSectionEn faqs={faqs} />}
 
       <section className="py-20 bg-indigo-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

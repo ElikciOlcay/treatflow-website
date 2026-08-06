@@ -17,13 +17,26 @@ export type SeoPageKey =
   | "client-records"
   | "consent-forms"
   | "treatment-documentation"
+  | "forms"
+  | "point-of-sale"
+  | "vouchers"
+  | "messaging"
+  | "integrations"
+  | "features"
+  | "shop"
+  | "studio-website"
   | "beauty-salon-software"
   | "aesthetic-clinic-software"
   | "laser-hair-removal-software"
+  | "permanent-makeup-software"
+  | "tattoo-studio-software"
+  | "nail-salon-software"
+  | "lash-studio-software"
+  | "spa-wellness-software"
+  | "massage-software"
   | "about"
   | "privacy"
-  | "terms"
-  | "forms";
+  | "terms";
 
 type PageSlugMap = Partial<Record<Locale, string>>;
 
@@ -61,6 +74,7 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
     fr: "a-propos",
   },
   privacy: {
+    de: "datenschutz",
     en: "privacy",
     es: "privacidad",
     it: "privacy",
@@ -103,9 +117,9 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
   "consent-forms": {
     de: "formulare",
     en: "forms",
-    es: "formularios-consentimiento",
-    it: "moduli-consenso",
-    fr: "formulaires-consentement",
+    es: "formularios",
+    it: "moduli",
+    fr: "formulaires",
   },
   "treatment-documentation": {
     de: "behandlungsdokumentation",
@@ -113,6 +127,51 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
     es: "documentacion-tratamientos",
     it: "documentazione-trattamenti",
     fr: "documentation-soins",
+  },
+  "point-of-sale": {
+    de: "kassensystem-kosmetikstudio",
+  },
+  vouchers: {
+    de: "gutscheine-kosmetikstudio",
+    en: "vouchers",
+    es: "vales",
+    it: "buoni-regalo",
+    fr: "bons-cadeaux",
+  },
+  messaging: {
+    de: "nachrichtenautomatisierung",
+    en: "messaging",
+    es: "mensajeria",
+    it: "messaggistica",
+    fr: "messagerie",
+  },
+  integrations: {
+    de: "integrationen",
+    en: "integrations",
+    es: "integraciones",
+    it: "integrazioni",
+    fr: "integrations",
+  },
+  features: {
+    de: "funktionen",
+    en: "features",
+    es: "funciones",
+    it: "funzioni",
+    fr: "fonctionnalites",
+  },
+  shop: {
+    de: "shop",
+    en: "shop",
+    es: "tienda",
+    it: "negozio",
+    fr: "boutique",
+  },
+  "studio-website": {
+    de: "website-fuer-kosmetikstudios",
+    en: "studio-website",
+    es: "web-para-salones",
+    it: "sito-web-centro",
+    fr: "site-web-institut",
   },
   "beauty-salon-software": {
     de: "kosmetikstudio-software",
@@ -134,6 +193,48 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
     es: "software-depilacion-laser",
     it: "software-epilazione-laser",
     fr: "logiciel-epilation-laser",
+  },
+  "permanent-makeup-software": {
+    de: "permanent-makeup-software",
+    en: "permanent-makeup-software",
+    es: "software-maquillaje-permanente",
+    it: "software-trucco-permanente",
+    fr: "logiciel-maquillage-permanent",
+  },
+  "tattoo-studio-software": {
+    de: "tattoo-studio-software",
+    en: "tattoo-studio-software",
+    es: "software-estudio-tatuajes",
+    it: "software-studio-tatuaggi",
+    fr: "logiciel-salon-tatouage",
+  },
+  "nail-salon-software": {
+    de: "nagelstudio-software",
+    en: "nail-salon-software",
+    es: "software-salon-unas",
+    it: "software-centro-unghie",
+    fr: "logiciel-salon-ongles",
+  },
+  "lash-studio-software": {
+    de: "lash-studio-software",
+    en: "lash-studio-software",
+    es: "software-extension-pestanas",
+    it: "software-extension-ciglia",
+    fr: "logiciel-extension-cils",
+  },
+  "spa-wellness-software": {
+    de: "spa-wellness-software",
+    en: "spa-wellness-software",
+    es: "software-spa-wellness",
+    it: "software-spa-wellness",
+    fr: "logiciel-spa-wellness",
+  },
+  "massage-software": {
+    de: "massage-software",
+    en: "massage-software",
+    es: "software-masajes",
+    it: "software-massaggi",
+    fr: "logiciel-massage",
   },
 };
 

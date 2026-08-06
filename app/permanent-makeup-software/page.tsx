@@ -11,6 +11,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import { generateFaqSchema } from '@/lib/schema';
 
+import { buildHreflangAlternates } from "@/app/i18n/seo";
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Permanent Makeup Software' }];
 
 const faqs = [
@@ -50,6 +51,7 @@ export const metadata = {
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/permanent-makeup-software',
+        ...buildHreflangAlternates("permanent-makeup-software"),
     },
     openGraph: {
         title: 'Permanent Makeup Software: Doku & Verwaltung',

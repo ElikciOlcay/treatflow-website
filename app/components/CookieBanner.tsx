@@ -58,6 +58,84 @@ const COOKIE_TEXTS = {
             'These cookies enable enhanced functionality and personalisation, such as chat widgets or videos.',
         save: 'Save settings',
     },
+    es: {
+        title: 'Configuración de cookies',
+        intro:
+            'Utilizamos cookies para ofrecerte la mejor experiencia en nuestro sitio web. Algunas son necesarias para el funcionamiento del sitio; otras nos ayudan a mejorarlo.',
+        learnMore: 'Más información',
+        privacyHref: '/es/privacidad',
+        acceptAll: 'Aceptar todas',
+        acceptNecessary: 'Solo necesarias',
+        settings: 'Configuración',
+        modalIntro:
+            'Utilizamos distintos tipos de cookies. Puedes ajustar la configuración de cada categoría.',
+        necessary: 'Cookies necesarias',
+        alwaysActive: 'Siempre activas',
+        necessaryDesc:
+            'Estas cookies son necesarias para las funciones básicas del sitio y no se pueden desactivar. Guardan tus preferencias de cookies y ajustes de seguridad.',
+        analytics: 'Cookies de análisis',
+        analyticsDesc:
+            'Estas cookies nos ayudan a entender cómo interactúan los visitantes con el sitio, de forma anónima. Utilizamos Google Analytics.',
+        marketing: 'Cookies de marketing',
+        marketingDesc:
+            'Estas cookies se usan para mostrar publicidad relevante. Actualmente no utilizamos cookies de marketing.',
+        functional: 'Cookies funcionales',
+        functionalDesc:
+            'Estas cookies permiten funciones avanzadas y personalización, como widgets de chat o vídeos.',
+        save: 'Guardar configuración',
+    },
+    it: {
+        title: 'Impostazioni cookie',
+        intro:
+            'Utilizziamo i cookie per offrirti la migliore esperienza sul nostro sito. Alcuni sono necessari per il funzionamento; altri ci aiutano a migliorarlo.',
+        learnMore: 'Scopri di più',
+        privacyHref: '/it/privacy',
+        acceptAll: 'Accetta tutti',
+        acceptNecessary: 'Solo necessari',
+        settings: 'Impostazioni',
+        modalIntro:
+            'Utilizziamo diversi tipi di cookie. Puoi regolare le impostazioni per ogni categoria.',
+        necessary: 'Cookie necessari',
+        alwaysActive: 'Sempre attivi',
+        necessaryDesc:
+            'Questi cookie sono necessari per le funzioni di base del sito e non possono essere disattivati. Memorizzano le preferenze cookie e le impostazioni di sicurezza.',
+        analytics: 'Cookie analitici',
+        analyticsDesc:
+            'Questi cookie ci aiutano a capire come i visitatori interagiscono con il sito in forma anonima. Utilizziamo Google Analytics.',
+        marketing: 'Cookie di marketing',
+        marketingDesc:
+            'Questi cookie vengono usati per mostrare pubblicità pertinente. Al momento non utilizziamo cookie di marketing.',
+        functional: 'Cookie funzionali',
+        functionalDesc:
+            'Questi cookie abilitano funzionalità avanzate e personalizzazione, come widget chat o video.',
+        save: 'Salva impostazioni',
+    },
+    fr: {
+        title: 'Paramètres des cookies',
+        intro:
+            'Nous utilisons des cookies pour vous offrir la meilleure expérience sur notre site. Certains sont nécessaires au fonctionnement ; d\'autres nous aident à l\'améliorer.',
+        learnMore: 'En savoir plus',
+        privacyHref: '/fr/confidentialite',
+        acceptAll: 'Tout accepter',
+        acceptNecessary: 'Nécessaires uniquement',
+        settings: 'Paramètres',
+        modalIntro:
+            'Nous utilisons différents types de cookies. Vous pouvez ajuster les paramètres pour chaque catégorie.',
+        necessary: 'Cookies nécessaires',
+        alwaysActive: 'Toujours actifs',
+        necessaryDesc:
+            'Ces cookies sont requis pour les fonctions de base du site et ne peuvent pas être désactivés. Ils enregistrent vos préférences cookies et paramètres de sécurité.',
+        analytics: 'Cookies analytiques',
+        analyticsDesc:
+            'Ces cookies nous aident à comprendre comment les visiteurs interagissent avec le site de manière anonyme. Nous utilisons Google Analytics.',
+        marketing: 'Cookies marketing',
+        marketingDesc:
+            'Ces cookies sont utilisés pour afficher de la publicité pertinente. Nous n\'utilisons actuellement aucun cookie marketing.',
+        functional: 'Cookies fonctionnels',
+        functionalDesc:
+            'Ces cookies permettent des fonctionnalités avancées et de la personnalisation, comme des widgets de chat ou des vidéos.',
+        save: 'Enregistrer les paramètres',
+    },
 } as const;
 
 declare global {
@@ -78,7 +156,16 @@ const META_PIXEL_ID = '796776476409381';
 
 export default function CookieBanner() {
     const pathname = usePathname();
-    const t = pathname?.startsWith('/en') ? COOKIE_TEXTS.en : COOKIE_TEXTS.de;
+    const cookieLocale = pathname?.startsWith('/es')
+        ? 'es'
+        : pathname?.startsWith('/it')
+          ? 'it'
+          : pathname?.startsWith('/fr')
+            ? 'fr'
+            : pathname?.startsWith('/en')
+              ? 'en'
+              : 'de';
+    const t = COOKIE_TEXTS[cookieLocale];
     const [showBanner, setShowBanner] = useState(false);
     const [showSettings, setShowSettings] = useState(false);
     const [preferences, setPreferences] = useState({

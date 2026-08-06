@@ -1,16 +1,16 @@
 import { Heart, MapPin, ShieldCheck, Users, ArrowRight } from "lucide-react";
 import Image from "next/image";
-import type { Metadata } from "next";
+import { buildPageMetadata } from "@/app/i18n/seo";
 
-const baseUrl = "https://www.treatflow.io";
 const EARLY_ACCESS = "/en/early-access";
 
-export const metadata: Metadata = {
-  title: "About us",
+export const metadata = buildPageMetadata({
+  pageKey: "about",
+  locale: "en",
+  title: "About Treatflow",
   description:
     "Treatflow is the all-in-one software for beauty studios. Made in Austria, built together with studios, GDPR-compliant and hosted in the EU.",
-  alternates: { canonical: `${baseUrl}/en/about` },
-};
+});
 
 const values = [
   { icon: Heart, title: "Built for studios", desc: "We build hand in hand with beauty professionals - every feature solves a real, everyday problem." },

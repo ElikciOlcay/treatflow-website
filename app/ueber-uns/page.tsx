@@ -2,6 +2,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 import { Heart, Users, Shield, Zap } from 'lucide-react';
+import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata = {
     title: 'Über uns - Treatflow Team Made in Austria',
@@ -9,6 +10,7 @@ export const metadata = {
     keywords: ['Treatflow Team', 'Made in Austria Software', 'Kosmetik Software Entwickler', 'Beauty Branche Österreich', 'Treatflow Gründer'],
     alternates: {
         canonical: 'https://www.treatflow.io/ueber-uns',
+        ...buildHreflangAlternates("about"),
     },
     openGraph: {
         title: 'Über uns - Treatflow Team Made in Austria',

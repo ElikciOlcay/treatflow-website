@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import SocialProofBar from "../components/SocialProofBar";
 import Breadcrumbs, { generateBreadcrumbSchema } from "../components/Breadcrumbs";
 import AiAnswerCapsule from "../components/AiAnswerCapsule";
+import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata: Metadata = {
   title: "Kundenkartei App: Kosmetik & Beauty mobil verwalten",
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://www.treatflow.io/kundenkartei-software",
+      ...buildHreflangAlternates("client-records"),
   },
   openGraph: {
     title: "Kundenkartei App für Kosmetik & Beauty | Treatflow",

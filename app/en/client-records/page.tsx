@@ -1,15 +1,19 @@
 import { FileText, Search, History, Camera, Lock, NotebookPen } from "lucide-react";
-import type { Metadata } from "next";
 import FeaturePageEn from "../../components/FeaturePageEn";
+import { buildPageMetadata } from "@/app/i18n/seo";
 
-const baseUrl = "https://www.treatflow.io";
-
-export const metadata: Metadata = {
-  title: "Client Records",
+export const metadata = buildPageMetadata({
+  pageKey: "client-records",
+  locale: "en",
+  title: "Digital Client Records for Beauty Salons",
   description:
-    "Keep client data, treatment history, notes and photos in one secure place. GDPR-compliant digital client records for your beauty studio. Try Treatflow free for 14 days.",
-  alternates: { canonical: `${baseUrl}/en/client-records` },
-};
+    "Keep client data, treatment history, notes and photos in one secure place. GDPR-compliant digital client records. Request early access.",
+  keywords: [
+    "digital client records salon",
+    "beauty salon CRM",
+    "client management beauty studio",
+  ],
+});
 
 export default function EnClientRecords() {
   return (

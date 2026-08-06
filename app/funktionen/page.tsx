@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 import CTASection from '../components/CTASection';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
+import { buildHreflangAlternates } from '../i18n/seo';
 export const metadata: Metadata = {
     title: 'Alle Funktionen der Kosmetikstudio Software',
     description: 'Entdecke alle Funktionen von Treatflow: Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare, Behandlungsdokumentation, NiSV-Dokumentation und automatische Erinnerungen.',
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/funktionen',
+        ...buildHreflangAlternates("features"),
     },
     openGraph: {
         title: 'Alle Funktionen | Treatflow Kosmetikstudio Software',

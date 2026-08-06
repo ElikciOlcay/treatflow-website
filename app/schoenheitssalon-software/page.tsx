@@ -15,6 +15,7 @@ import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
+import { buildHreflangAlternates } from '../i18n/seo';
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Schönheitssalon Software' }];
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://www.treatflow.io/schoenheitssalon-software',
+      ...buildHreflangAlternates("beauty-salon-software"),
   },
   openGraph: {
     title: 'Schönheitssalon Software: Termine, Kunden & Dokumentation',

@@ -1,21 +1,14 @@
 import InternationalSeoPage from "@/app/components/InternationalSeoPage";
-import { getGlobalEnPage } from "@/app/i18n/markets/global-en-pages";
 import { buildPageMetadata } from "@/app/i18n/seo";
+import { getIndustryPage } from "@/app/i18n/markets/industry-pages-intl";
 
-const content = getGlobalEnPage("beauty-salon-software");
+const content = getIndustryPage("en", "beauty-salon-software");
 
 export const metadata = buildPageMetadata({
   pageKey: content.pageKey,
   locale: "en",
-  title: "Beauty Salon Software | Treatflow",
-  description:
-    "Beauty salon software with online booking, client records, consent forms and treatment documentation. GDPR-compliant, 14-day free trial.",
-  keywords: [
-    "beauty salon software",
-    "salon management software",
-    "online booking beauty salon",
-    "client management salon",
-  ],
+  title: content.serviceName,
+  description: content.serviceDescription,
 });
 
 export default function Page() {

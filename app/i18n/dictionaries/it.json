@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Funzionalità",
+    "industries": "Settori",
     "pricing": "Prezzi",
     "contact": "Contatto",
     "login": "Accedi",
@@ -10,6 +11,7 @@
   "footer": {
     "tagline": "Il tuo assistente digitale per il centro estetico. Made in Austria.",
     "features": "Funzionalità",
+    "industries": "Settori",
     "product": "Prodotto",
     "company": "Azienda",
     "legal": "Legale",

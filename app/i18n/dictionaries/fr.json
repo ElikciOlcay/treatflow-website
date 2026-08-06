@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Fonctionnalités",
+    "industries": "Secteurs",
     "pricing": "Tarifs",
     "contact": "Contact",
     "login": "Connexion",
@@ -10,6 +11,7 @@
   "footer": {
     "tagline": "Votre assistant digital pour l'institut. Made in Austria.",
     "features": "Fonctionnalités",
+    "industries": "Secteurs",
     "product": "Produit",
     "company": "Entreprise",
     "legal": "Mentions légales",

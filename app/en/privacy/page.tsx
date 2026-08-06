@@ -1,17 +1,15 @@
-import type { Metadata } from "next";
-
-const baseUrl = "https://www.treatflow.io";
+import { buildPageMetadata } from "@/app/i18n/seo";
 
 // Englischer Entwurf auf Basis des deutschen Datenschutztextes.
 // TODO(legal): Vor Produktivgang juristisch pruefen lassen (v. a. Drittanbieter,
 // Fristen, internationale Datenuebermittlung).
-export const metadata: Metadata = {
+export const metadata = buildPageMetadata({
+  pageKey: "privacy",
+  locale: "en",
   title: "Privacy Policy",
   description:
     "How Treatflow collects, uses and protects your personal data. GDPR-compliant, EU-hosted.",
-  alternates: { canonical: `${baseUrl}/en/privacy` },
-  robots: { index: true, follow: true },
-};
+});
 
 export default function EnPrivacy() {
   return (
