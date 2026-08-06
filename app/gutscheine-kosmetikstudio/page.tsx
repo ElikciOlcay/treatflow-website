@@ -9,8 +9,13 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
-
+import ContentAttribution from '../components/ContentAttribution';
 import { buildHreflangAlternates } from '../i18n/seo';
+import { generateWebPageSchema } from '@/lib/content-attribution';
+
+const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_PUBLISHED = '2025-06-01';
+
 export const metadata = {
     title: 'Gutscheine für Kosmetikstudios – verkaufen & einlösen',
     description: 'Gutscheinverwaltung für dein Kosmetikstudio: Geschenkgutscheine direkt an der Kasse verkaufen und einlösen, Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik, Gültigkeit und Restwert im Blick. Teil der TSE-/RKSV-konformen Treatflow Kasse.',
@@ -156,6 +161,22 @@ export default function GutscheinePage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
             />
+            <Script
+                id="gutscheine-webpage-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(
+                        generateWebPageSchema({
+                            name: 'Gutscheine für Kosmetikstudios – verkaufen & einlösen',
+                            description:
+                                'Gutscheinverwaltung für dein Kosmetikstudio: Geschenkgutscheine direkt an der Kasse verkaufen und einlösen, Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik.',
+                            url: 'https://www.treatflow.io/gutscheine-kosmetikstudio',
+                            dateModified: PAGE_DATE_MODIFIED,
+                            datePublished: PAGE_DATE_PUBLISHED,
+                        })
+                    ),
+                }}
+            />
 
             {/* Hero */}
             <section className="pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
@@ -180,6 +201,10 @@ export default function GutscheinePage() {
                         <AiAnswerCapsule
                             question="Wie kann ich in meinem Kosmetikstudio Gutscheine verwalten?"
                             answer="Mit der Treatflow Kasse verkaufst du Geschenkgutscheine direkt im Kassiervorgang und löst sie später ganz oder teilweise wieder ein – Restwerte werden automatisch verwaltet. Treatflow unterstützt Einzweck- und Mehrzweckgutscheine mit korrekter steuerlicher Behandlung, optionalem Gültigkeitsdatum und fiskalkonformer Signatur (KassenSichV in Deutschland, RKSV in Österreich). Die Gutscheinfunktion ist Teil der Kasse, einem Add-on zum Booking-Plan für 39 €/Monat zzgl. einmalig 149 € Einrichtung."
+                        />
+                        <ContentAttribution
+                            dateModified={PAGE_DATE_MODIFIED}
+                            datePublished={PAGE_DATE_PUBLISHED}
                         />
                     </div>
 

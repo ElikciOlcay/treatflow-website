@@ -7,7 +7,12 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import ContentAttribution from '../components/ContentAttribution';
 import { buildHreflangAlternates } from '../i18n/seo';
+import { generateWebPageSchema } from '@/lib/content-attribution';
+
+const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
     title: 'Online-Terminbuchung & Buchungssystem Kosmetikstudio',
@@ -95,6 +100,22 @@ export default function OnlineBuchungenPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+            <Script
+                id="online-buchungen-webpage-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(
+                        generateWebPageSchema({
+                            name: 'Online-Terminbuchung & Buchungssystem Kosmetikstudio',
+                            description:
+                                'Online-Terminbuchung für dein Kosmetikstudio: Kunden buchen 24/7 über deinen persönlichen Link. Automatische Bestätigungen, weniger No-Shows.',
+                            url: 'https://www.treatflow.io/online-buchungen',
+                            dateModified: PAGE_DATE_MODIFIED,
+                            datePublished: PAGE_DATE_PUBLISHED,
+                        })
+                    ),
+                }}
+            />
             {/* Hero Section */}
             <section className="pb-20 bg-gradient-to-br from-orange-50 via-white to-red-50">
                 <Breadcrumbs items={[
@@ -117,6 +138,10 @@ export default function OnlineBuchungenPage() {
                         <AiAnswerCapsule
                             question="Welches Online-Buchungssystem eignet sich für Kosmetikstudios?"
                             answer="Treatflow bietet ein spezialisiertes Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink, 24/7-Terminbuchung, automatischen Bestätigungen per E-Mail und SMS sowie Integration mit Kundenkartei und Dokumentation. Keine Provision pro Buchung, ab 59 EUR/Monat im Booking-Plan, 14 Tage kostenlos testen."
+                        />
+                        <ContentAttribution
+                            dateModified={PAGE_DATE_MODIFIED}
+                            datePublished={PAGE_DATE_PUBLISHED}
                         />
                     </div>
 

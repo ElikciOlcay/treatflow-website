@@ -7,7 +7,13 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import ContentAttribution from '../components/ContentAttribution';
+import AnswerLead from '../components/AnswerLead';
 import { buildHreflangAlternates } from '../i18n/seo';
+import { generateWebPageSchema } from '@/lib/content-attribution';
+
+const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
     title: 'Terminkalender Kosmetikstudio: Team & Räume planen',
@@ -111,6 +117,22 @@ export default function TerminkalenderPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+            <Script
+                id="terminkalender-webpage-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(
+                        generateWebPageSchema({
+                            name: 'Terminkalender Kosmetikstudio: Team & Räume planen',
+                            description:
+                                'Terminplaner fürs Kosmetikstudio mit Tagesansicht für Mitarbeiter und Räume, Drag & Drop, Online-Buchung und automatischen Erinnerungen.',
+                            url: 'https://www.treatflow.io/terminkalender',
+                            dateModified: PAGE_DATE_MODIFIED,
+                            datePublished: PAGE_DATE_PUBLISHED,
+                        })
+                    ),
+                }}
+            />
             {/* Hero Section */}
             <section className="pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
                 <Breadcrumbs items={[
@@ -133,6 +155,10 @@ export default function TerminkalenderPage() {
                         <AiAnswerCapsule
                             question="Wie organisiere ich Termine im Kosmetikstudio am besten?"
                             answer="Treatflow bündelt Termine, Mitarbeiter und Räume in einem Kalender. Die Tagesansicht zeigt jede Person oder jeden Raum in einer eigenen Spalte. Dadurch erkennst du freie Kapazitäten, vermeidest Doppelbelegungen und koordinierst Änderungen schneller. Online-Buchungen und automatische Erinnerungen reduzieren zusätzlich Telefonaufwand und No-Shows."
+                        />
+                        <ContentAttribution
+                            dateModified={PAGE_DATE_MODIFIED}
+                            datePublished={PAGE_DATE_PUBLISHED}
                         />
                     </div>
 
@@ -170,10 +196,11 @@ export default function TerminkalenderPage() {
                         <h2 className="text-4xl font-bold text-gray-900 mb-6">
                             Warum Online-Buchungen dein Studio revolutionieren
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                            In der heutigen Zeit erwarten deine Kunden moderne, digitale Lösungen. Ein Online-Buchungskalender
-                            ist nicht nur ein Nice-to-have, sondern ein Must-have für jedes erfolgreiche Studio.
-                        </p>
+                        <AnswerLead
+                            answer="Online-Buchungen erhöhen die Terminanzahl und senken den Telefonaufwand, weil Kundinnen rund um die Uhr buchen können – oft über 60 % außerhalb der Öffnungszeiten."
+                            detail="Der Kalender aktualisiert sich live, Bestätigungen und Erinnerungen laufen automatisch. So bleiben freie Slots sichtbar und No-Shows sinken."
+                            className="max-w-4xl"
+                        />
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">

@@ -7,7 +7,12 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import ContentAttribution from '../components/ContentAttribution';
 import { buildHreflangAlternates } from '../i18n/seo';
+import { generateWebPageSchema } from '@/lib/content-attribution';
+
+const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
     title: 'SMS & E-Mail Erinnerungen fürs Kosmetikstudio',
@@ -95,6 +100,22 @@ export default function NachrichtenautomatisierungPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+            <Script
+                id="nachrichtenautomatisierung-webpage-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(
+                        generateWebPageSchema({
+                            name: 'SMS & E-Mail Erinnerungen fürs Kosmetikstudio',
+                            description:
+                                'Automatische Nachrichten per E-Mail und SMS für Kosmetikstudios: Terminbestätigungen, Erinnerungen, Stornierungen und Follow-ups.',
+                            url: 'https://www.treatflow.io/nachrichtenautomatisierung',
+                            dateModified: PAGE_DATE_MODIFIED,
+                            datePublished: PAGE_DATE_PUBLISHED,
+                        })
+                    ),
+                }}
+            />
             {/* Hero Section */}
             <section className="pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
                 <Breadcrumbs items={[
@@ -117,6 +138,10 @@ export default function NachrichtenautomatisierungPage() {
                         <AiAnswerCapsule
                             question="Wie kann ich No-Shows im Kosmetikstudio reduzieren?"
                             answer="Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z. B. 24 Stunden und 2 Stunden vor dem Termin). Studios mit aktivierten Remindern berichten von bis zu 80% weniger ausgefallenen Terminen."
+                        />
+                        <ContentAttribution
+                            dateModified={PAGE_DATE_MODIFIED}
+                            datePublished={PAGE_DATE_PUBLISHED}
                         />
                     </div>
 

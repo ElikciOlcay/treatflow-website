@@ -7,7 +7,12 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import ContentAttribution from '../components/ContentAttribution';
 import { buildHreflangAlternates } from '../i18n/seo';
+import { generateWebPageSchema } from '@/lib/content-attribution';
+
+const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
     title: 'Kundenverwaltung Kosmetikstudio: Daten & Historie',
@@ -103,6 +108,22 @@ export default function KundenverwaltungPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+            <Script
+                id="kundenverwaltung-webpage-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(
+                        generateWebPageSchema({
+                            name: 'Kundenverwaltung Kosmetikstudio: Daten & Historie',
+                            description:
+                                'Professionelle Kundenverwaltung für dein Kosmetikstudio: Behandlungsverlauf, Kundenhistorie, Notizen und Fotos zentral verwalten. DSGVO-konform.',
+                            url: 'https://www.treatflow.io/kundenverwaltung',
+                            dateModified: PAGE_DATE_MODIFIED,
+                            datePublished: PAGE_DATE_PUBLISHED,
+                        })
+                    ),
+                }}
+            />
             {/* Hero Section */}
             <section className="pb-20 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
                 <Breadcrumbs items={[
@@ -125,6 +146,10 @@ export default function KundenverwaltungPage() {
                         <AiAnswerCapsule
                             question="Welche App eignet sich für die Kundenverwaltung im Kosmetikstudio?"
                             answer="Treatflow bietet eine spezialisierte Kundenverwaltung für Kosmetikstudios mit digitaler Kundenkartei, Behandlungshistorie, Fotos und DSGVO-konformem EU-Hosting. Alle Kundendaten sind am Desktop, Tablet und Smartphone abrufbar. Mehr zur Kundenkartei-App: treatflow.io/kundenkartei-software. 14 Tage kostenlos testen."
+                        />
+                        <ContentAttribution
+                            dateModified={PAGE_DATE_MODIFIED}
+                            datePublished={PAGE_DATE_PUBLISHED}
                         />
                         <p className="mt-4 text-sm text-gray-500 max-w-3xl mx-auto">
                             Suchst du eine <Link href="/kundenkartei-software" className="text-indigo-600 font-medium hover:underline">Kundenkartei App für Kosmetik</Link>? Dort findest du alle Details zur mobilen Kundenkartei-Software.

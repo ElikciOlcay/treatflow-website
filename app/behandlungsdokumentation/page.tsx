@@ -6,7 +6,13 @@ import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import ContentAttribution from '../components/ContentAttribution';
 import { buildHreflangAlternates } from '../i18n/seo';
+import { generateWebPageSchema } from '@/lib/content-attribution';
+
+const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
     title: 'Behandlungsdokumentation Kosmetik digital',
@@ -94,6 +100,22 @@ export default function BehandlungsdokumentationPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+            <Script
+                id="behandlungsdokumentation-webpage-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(
+                        generateWebPageSchema({
+                            name: 'Behandlungsdokumentation Kosmetik digital',
+                            description:
+                                'Digitale Behandlungsdokumentation Kosmetik mit Vorher-Nachher-Fotos, Notizen und Historie. Strukturiert, nachvollziehbar und NiSV-konform.',
+                            url: 'https://www.treatflow.io/behandlungsdokumentation',
+                            dateModified: PAGE_DATE_MODIFIED,
+                            datePublished: PAGE_DATE_PUBLISHED,
+                        })
+                    ),
+                }}
+            />
             {/* Hero Section */}
             <section className="pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
                 <Breadcrumbs items={[
@@ -114,11 +136,14 @@ export default function BehandlungsdokumentationPage() {
                             Halte jede Behandlung professionell fest - mit KI-Unterstützung, Fotos, Notizen und allen wichtigen Details.
                             So weißt du beim nächsten Termin genau, was gemacht wurde.
                         </p>
-                        <div className="mt-8 max-w-3xl mx-auto bg-indigo-50 border-l-4 border-indigo-600 rounded-r-lg p-6">
-                            <p className="text-gray-700 leading-relaxed">
-                                Behandlungsdokumentation in der Kosmetik bedeutet die lückenlose, digitale Erfassung aller durchgeführten Behandlungen inklusive Fotos, Produkten und Notizen. Für NiSV-pflichtige Anwendungen ist eine konforme Dokumentation gesetzlich vorgeschrieben.
-                            </p>
-                        </div>
+                        <AiAnswerCapsule
+                            question="Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?"
+                            answer="Treatflow dokumentiert Behandlungen digital mit Vorher-Nachher-Fotos, Parametern, Notizen und Unterschrift. Für NiSV-pflichtige Anwendungen (Laser, IPL, Ultraschall, Radiofrequenz) ist eine konforme Dokumentation gesetzlich vorgeschrieben – Treatflow unterstützt genau diesen Workflow."
+                        />
+                        <ContentAttribution
+                            dateModified={PAGE_DATE_MODIFIED}
+                            datePublished={PAGE_DATE_PUBLISHED}
+                        />
                     </div>
 
                     <div className="mt-12 max-w-5xl mx-auto">

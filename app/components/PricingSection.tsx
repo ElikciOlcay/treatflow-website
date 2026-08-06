@@ -19,7 +19,8 @@ export default function PricingSection() {
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> keine versteckten Kosten</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Wähle das Paket, das zu deinem Studio passt. 14 Tage kostenlos testen - ohne Risiko.
+            Treatflow kostet ab 39 €/Monat (Basic) bzw. 59 €/Monat (Booking). Die Kasse ist optional ab 39 €/Monat.
+            14 Tage kostenlos testen – ohne Provision und ohne Risiko.
           </p>
         </div>
 

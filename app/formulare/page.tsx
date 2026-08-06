@@ -6,7 +6,13 @@ import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import ContentAttribution from '../components/ContentAttribution';
 import { buildHreflangAlternates } from '../i18n/seo';
+import { generateWebPageSchema } from '@/lib/content-attribution';
+
+const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
     title: 'Anamneseformular Kosmetik: Fragen & Pflichten',
@@ -94,6 +100,22 @@ export default function FormularePage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
+            <Script
+                id="formulare-webpage-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(
+                        generateWebPageSchema({
+                            name: 'Anamneseformular Kosmetik: Fragen & Pflichten',
+                            description:
+                                'Checkliste & Beispiele (Microneedling, Laser, PMU). Formulare mit KI-Generator – NiSV-konform und rechtssicher.',
+                            url: 'https://www.treatflow.io/formulare',
+                            dateModified: PAGE_DATE_MODIFIED,
+                            datePublished: PAGE_DATE_PUBLISHED,
+                        })
+                    ),
+                }}
+            />
             {/* Hero Section */}
             <section className="pb-20 bg-gradient-to-br from-green-50 via-white to-emerald-50">
                 <Breadcrumbs items={[
@@ -113,11 +135,14 @@ export default function FormularePage() {
                             Umfangreicher Formular-Marketplace mit KI-Generator und Drag & Drop Editor.
                             Erstelle individuelle Formulare oder nutze fertige Vorlagen für alle Beauty-Behandlungen.
                         </p>
-                        <div className="mt-8 max-w-3xl mx-auto bg-indigo-50 border-l-4 border-indigo-600 rounded-r-lg p-6">
-                            <p className="text-gray-700 leading-relaxed">
-                                Digitale Formulare für Kosmetikstudios ersetzen Papier-Anamnesebögen und Einwilligungserklärungen. Kunden füllen sie vorab auf dem Smartphone aus, die Daten landen automatisch in der Kundenkartei – DSGVO-konform und rechtssicher.
-                            </p>
-                        </div>
+                        <AiAnswerCapsule
+                            question="Welche Formulare brauche ich im Kosmetikstudio?"
+                            answer="Mindestens Anamnesebögen, Einwilligungserklärungen und bei apparativer Kosmetik NiSV-Aufklärungsbögen. Treatflow liefert fertige Vorlagen plus KI-Generator; Kundinnen füllen digital vorab aus – die Daten landen DSGVO-konform in der Kundenkartei."
+                        />
+                        <ContentAttribution
+                            dateModified={PAGE_DATE_MODIFIED}
+                            datePublished={PAGE_DATE_PUBLISHED}
+                        />
                     </div>
 
                     {/* Lifestyle-Bild */}

@@ -5,7 +5,13 @@ import CTASection from '../components/CTASection';
 import PricingSection from '../components/PricingSection';
 import QuickFacts from '../components/QuickFacts';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import ContentAttribution from '../components/ContentAttribution';
+import AiAnswerCapsule from '../components/AiAnswerCapsule';
 import { buildHreflangAlternates } from '../i18n/seo';
+import { generateWebPageSchema } from '@/lib/content-attribution';
+
+const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
     title: 'Preise: Kosmetikstudio Software ab 39€/Monat',
@@ -135,8 +141,35 @@ export default function PreisePage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
             />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(
+                        generateWebPageSchema({
+                            name: 'Preise: Kosmetikstudio Software ab 39€/Monat',
+                            description:
+                                'Transparente Preise für Treatflow: Basic ab 39€/Monat, Booking ab 59€/Monat, Kasse als Add-on ab 39€/Monat (TSE & RKSV).',
+                            url: 'https://www.treatflow.io/preise',
+                            dateModified: PAGE_DATE_MODIFIED,
+                            datePublished: PAGE_DATE_PUBLISHED,
+                        })
+                    ),
+                }}
+            />
 
             <Breadcrumbs items={[{ label: 'Preise' }]} />
+
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 -mb-6 relative z-10">
+                <AiAnswerCapsule
+                    question="Was kostet Treatflow?"
+                    answer="Basic ab 39 €/Monat (Kundenverwaltung, Formulare, Dokumentation), Booking ab 59 €/Monat (inkl. Terminkalender, Online-Buchung, Erinnerungen). Kasse optional als Add-on ab 39 €/Monat. Keine Provision pro Buchung, 14 Tage kostenlos testen."
+                />
+                <ContentAttribution
+                    dateModified={PAGE_DATE_MODIFIED}
+                    datePublished={PAGE_DATE_PUBLISHED}
+                    className="mb-4"
+                />
+            </div>
 
             {/* Pricing Cards */}
             <PricingSection />
