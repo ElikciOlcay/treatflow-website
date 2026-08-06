@@ -28,7 +28,7 @@ export default function EnTerms() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-3">1. Provider</h2>
             <p>
-              Treatflow is operated by Gökce Elikci, Bahnhofstrasse 17, 5500
+              Treatflow is operated by Olcay Elikci, Bahnhofstrasse 17, 5500
               Bischofshofen, Austria (&quot;Treatflow&quot;, &quot;we&quot;, &quot;us&quot;). Contact:{" "}
               <a href="mailto:hello@treatflow.io" className="text-indigo-600 hover:underline">
                 hello@treatflow.io

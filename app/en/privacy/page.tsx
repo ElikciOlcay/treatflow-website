@@ -31,7 +31,7 @@ export default function EnPrivacy() {
             <p className="mb-3">The party responsible for data processing on this website is:</p>
             <div className="bg-gray-50 p-4 rounded-lg">
               <p><strong>Treatflow</strong></p>
-              <p>Gökce Elikci</p>
+              <p>Olcay Elikci</p>
               <p>Bahnhofstrasse 17</p>
               <p>5500 Bischofshofen, Austria</p>
               <p className="mt-2">

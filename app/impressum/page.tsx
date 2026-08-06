@@ -44,7 +44,7 @@ export default function ImpressumPage() {
                             </h2>
                             <div className="space-y-2 text-gray-700">
                                 <p><strong>Treatflow</strong></p>
-                                <p>Gökce Elikci</p>
+                                <p>Olcay Elikci</p>
                                 <p>Bahnhofstrasse 17</p>
                                 <p>5500 Bischofshofen</p>
                                 <p>Österreich</p>

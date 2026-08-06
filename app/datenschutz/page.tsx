@@ -46,7 +46,7 @@ export default function Datenschutz() {
                                     <p className="mb-4">Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
                                     <div className="bg-gray-50 p-4 rounded-lg">
                                         <p><strong>Treatflow</strong></p>
-                                        <p>Gökce Elikci</p>
+                                        <p>Olcay Elikci</p>
                                         <p>Bahnhofstrasse 17</p>
                                         <p>5500 Bischofshofen, Österreich</p>
                                         <p className="mt-2">E-Mail: <a href="mailto:hello@treatflow.io" className="text-indigo-600 hover:text-indigo-800">hello@treatflow.io</a></p>
