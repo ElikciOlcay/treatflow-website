@@ -37,7 +37,7 @@ export default function FeaturePageEn({
   features,
   closingTitle,
   closingText,
-  earlyAccessHref = "/en/early-access",
+  earlyAccessHref = "/us/early-access",
   primaryCta = "Request early access",
   bottomTitle = "Ready to get started?",
   bottomText = "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",

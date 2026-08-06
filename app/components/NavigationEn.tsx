@@ -28,165 +28,151 @@ import {
 } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import type { Dictionary } from "../i18n/dictionaries";
-import type { Locale } from "../i18n/config";
-import { localePathPrefix } from "../i18n/config";
 import {
-  APP_LOGIN_BY_LOCALE,
+  marketPathPrefix,
+  type PrefixedMarket,
+} from "../i18n/config";
+import {
+  APP_LOGIN_BY_MARKET,
   getPrimaryCtaPath,
   isExternalCta,
 } from "../i18n/market-access";
-import {
-  coreFeatureSlugs,
-  extraFeatureSlugs,
-  industryPath,
-  productPath,
-  type IntlLocale,
-} from "../i18n/intl-routes";
+import { EN_SLUGS } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
 
-type NavLocale = Extract<Locale, "en" | "es" | "it" | "fr">;
+type NavLang = "en" | "nl" | "fi";
 
-type L10n = Record<NavLocale, string>;
+function toNavLang(market: PrefixedMarket): NavLang {
+  if (market === "nl") return "nl";
+  if (market === "fi") return "fi";
+  return "en";
+}
+
+type L10n = Record<NavLang, string>;
 
 const featureDefs: {
-  slug: Record<NavLocale, string>;
+  slug: string;
   label: L10n;
   desc: L10n;
   icon: typeof Calendar;
   color: string;
 }[] = [
   {
-    slug: coreFeatureSlugs["appointment-calendar"],
+    slug: EN_SLUGS["appointment-calendar"],
     label: {
       en: "Appointment calendar",
-      es: "Calendario de citas",
-      it: "Calendario appuntamenti",
-      fr: "Calendrier de rendez-vous",
+      nl: "Afsprakenkalender",
+      fi: "Ajanvarauskalenteri",
     },
     desc: {
       en: "Daily, weekly and monthly views",
-      es: "Vistas diaria, semanal y mensual",
-      it: "Viste giornaliera, settimanale e mensile",
-      fr: "Vues journalière, hebdomadaire et mensuelle",
+      nl: "Dag-, week- en maandweergave",
+      fi: "Päivä-, viikko- ja kuukausinäkymät",
     },
     icon: Calendar,
     color: "text-indigo-600 bg-indigo-100",
   },
   {
-    slug: extraFeatureSlugs.vouchers,
+    slug: EN_SLUGS.vouchers,
     label: {
       en: "Vouchers",
-      es: "Vales",
-      it: "Buoni regalo",
-      fr: "Bons cadeaux",
+      nl: "Cadeaubonnen",
+      fi: "Lahjakortit",
     },
     desc: {
       en: "Sell, redeem and track balances",
-      es: "Vende, canjea y controla saldos",
-      it: "Vendi, riscatta e gestisci residui",
-      fr: "Vendez, utilisez et suivez les soldes",
+      nl: "Verkoop, verzilver en volg saldi",
+      fi: "Myy, lunasta ja seuraa saldoja",
     },
     icon: Gift,
     color: "text-purple-600 bg-purple-100",
   },
   {
-    slug: coreFeatureSlugs["online-booking"],
+    slug: EN_SLUGS["online-booking"],
     label: {
       en: "Online booking",
-      es: "Reservas online",
-      it: "Prenotazioni online",
-      fr: "Réservation en ligne",
+      nl: "Online boeken",
+      fi: "Verkkovaraus",
     },
     desc: {
       en: "Personal booking link 24/7",
-      es: "Enlace de reserva personal 24/7",
-      it: "Link di prenotazione personale 24/7",
-      fr: "Lien de réservation personnel 24/7",
+      nl: "Persoonlijke boekingslink 24/7",
+      fi: "Henkilökohtainen varauslinkki 24/7",
     },
     icon: Link2,
     color: "text-rose-600 bg-rose-100",
   },
   {
-    slug: coreFeatureSlugs["client-records"],
+    slug: EN_SLUGS["client-records"],
     label: {
       en: "Client records",
-      es: "Fichas de clientes",
-      it: "Schede clienti",
-      fr: "Fiches clients",
+      nl: "Klantendossiers",
+      fi: "Asiakaskortistot",
     },
     desc: {
       en: "History, notes and photos",
-      es: "Historial, notas y fotos",
-      it: "Storico, note e foto",
-      fr: "Historique, notes et photos",
+      nl: "Geschiedenis, notities en foto's",
+      fi: "Historia, muistiinpanot ja kuvat",
     },
     icon: Users,
     color: "text-emerald-600 bg-emerald-100",
   },
   {
-    slug: coreFeatureSlugs.forms,
+    slug: EN_SLUGS.forms,
     label: {
       en: "Forms",
-      es: "Formularios",
-      it: "Moduli",
-      fr: "Formulaires",
+      nl: "Formulieren",
+      fi: "Lomakkeet",
     },
     desc: {
       en: "Digital intake and consent",
-      es: "Anamnesis y consentimientos digitales",
-      it: "Anamnesi e consensi digitali",
-      fr: "Anamnèse et consentements numériques",
+      nl: "Digitale anamnese en toestemming",
+      fi: "Digitaalinen anamneesi ja suostumus",
     },
     icon: ClipboardCheck,
     color: "text-orange-600 bg-orange-100",
   },
   {
-    slug: coreFeatureSlugs["treatment-documentation"],
+    slug: EN_SLUGS["treatment-documentation"],
     label: {
       en: "Treatment documentation",
-      es: "Documentación de tratamientos",
-      it: "Documentazione trattamenti",
-      fr: "Documentation des soins",
+      nl: "Behandelingsdocumentatie",
+      fi: "Hoitodokumentaatio",
     },
     desc: {
       en: "Document treatments digitally",
-      es: "Documenta tratamientos en digital",
-      it: "Documenta i trattamenti in digitale",
-      fr: "Documentez les soins en numérique",
+      nl: "Documenteer behandelingen digitaal",
+      fi: "Dokumentoi hoidot digitaalisesti",
     },
     icon: FileText,
     color: "text-blue-600 bg-blue-100",
   },
   {
-    slug: extraFeatureSlugs.messaging,
+    slug: EN_SLUGS.messaging,
     label: {
       en: "Messaging",
-      es: "Mensajería",
-      it: "Messaggistica",
-      fr: "Messagerie",
+      nl: "Berichten",
+      fi: "Viestintä",
     },
     desc: {
       en: "Automated email and SMS",
-      es: "Email y SMS automatizados",
-      it: "Email e SMS automatici",
-      fr: "E-mails et SMS automatisés",
+      nl: "Geautomatiseerde e-mail en sms",
+      fi: "Automaattiset sähköpostit ja tekstiviestit",
     },
     icon: Bell,
     color: "text-purple-600 bg-purple-100",
   },
   {
-    slug: extraFeatureSlugs.integrations,
+    slug: EN_SLUGS.integrations,
     label: {
       en: "Integrations",
-      es: "Integraciones",
-      it: "Integrazioni",
-      fr: "Intégrations",
+      nl: "Integraties",
+      fi: "Integraatiot",
     },
     desc: {
       en: "Calendar, accounting and more",
-      es: "Calendario, contabilidad y más",
-      it: "Calendario, contabilità e altro",
-      fr: "Calendrier, comptabilité et plus",
+      nl: "Agenda, boekhouding en meer",
+      fi: "Kalenteri, kirjanpito ja muuta",
     },
     icon: Plug,
     color: "text-indigo-600 bg-indigo-100",
@@ -204,15 +190,13 @@ const industryDefs: {
     key: "beauty-salon-software",
     label: {
       en: "Beauty salons",
-      es: "Salones de belleza",
-      it: "Centri estetici",
-      fr: "Instituts de beauté",
+      nl: "Beauty salons",
+      fi: "Kauneussalongit",
     },
     desc: {
       en: "All-in-one studio software",
-      es: "Software todo en uno",
-      it: "Software tutto-in-uno",
-      fr: "Logiciel tout-en-un",
+      nl: "All-in-one studiosoftware",
+      fi: "All-in-one-studio-ohjelmisto",
     },
     icon: Sparkles,
     color: "text-indigo-600 bg-indigo-100",
@@ -221,15 +205,13 @@ const industryDefs: {
     key: "laser-hair-removal-software",
     label: {
       en: "Laser hair removal",
-      es: "Depilación láser",
-      it: "Epilazione laser",
-      fr: "Épilation laser",
+      nl: "Laserontharing",
+      fi: "Laserkarvanpoisto",
     },
     desc: {
       en: "Session tracking and consent",
-      es: "Sesiones y consentimientos",
-      it: "Sedute e consensi",
-      fr: "Séances et consentements",
+      nl: "Sessies en toestemmingen",
+      fi: "Käyntiseuranta ja suostumukset",
     },
     icon: Zap,
     color: "text-blue-600 bg-blue-100",
@@ -238,15 +220,13 @@ const industryDefs: {
     key: "permanent-makeup-software",
     label: {
       en: "Permanent makeup",
-      es: "Maquillaje permanente",
-      it: "Trucco permanente",
-      fr: "Maquillage permanent",
+      nl: "Permanente make-up",
+      fi: "Pysyvä meikki",
     },
     desc: {
       en: "PMU and microblading",
-      es: "PMU y microblading",
-      it: "PMU e microblading",
-      fr: "PMU et microblading",
+      nl: "PMU en microblading",
+      fi: "PMU ja microblading",
     },
     icon: Palette,
     color: "text-rose-600 bg-rose-100",
@@ -255,15 +235,13 @@ const industryDefs: {
     key: "aesthetic-clinic-software",
     label: {
       en: "Aesthetic clinics",
-      es: "Clínicas estéticas",
-      it: "Cliniche estetiche",
-      fr: "Cliniques esthétiques",
+      nl: "Esthetische klinieken",
+      fi: "Esteettiset klinikat",
     },
     desc: {
       en: "Documentation and patient records",
-      es: "Documentación y fichas",
-      it: "Documentazione e schede",
-      fr: "Documentation et fiches",
+      nl: "Documentatie en patiëntendossiers",
+      fi: "Dokumentointi ja potilaskortistot",
     },
     icon: Stethoscope,
     color: "text-teal-600 bg-teal-100",
@@ -272,15 +250,13 @@ const industryDefs: {
     key: "tattoo-studio-software",
     label: {
       en: "Tattoo studios",
-      es: "Estudios de tatuajes",
-      it: "Studi di tatuaggi",
-      fr: "Salons de tatouage",
+      nl: "Tattoostudio's",
+      fi: "Tatuointistudiot",
     },
     desc: {
       en: "Consent and bookings",
-      es: "Consentimientos y reservas",
-      it: "Consensi e prenotazioni",
-      fr: "Consentements et réservations",
+      nl: "Toestemmingen en boekingen",
+      fi: "Suostumukset ja varaukset",
     },
     icon: Pen,
     color: "text-gray-600 bg-gray-200",
@@ -289,15 +265,13 @@ const industryDefs: {
     key: "nail-salon-software",
     label: {
       en: "Nail salons",
-      es: "Salones de uñas",
-      it: "Centri unghie",
-      fr: "Salons d'ongles",
+      nl: "Nagelsalons",
+      fi: "Kynsisalongit",
     },
     desc: {
       en: "Appointments and preferences",
-      es: "Citas y preferencias",
-      it: "Appuntamenti e preferenze",
-      fr: "Rendez-vous et préférences",
+      nl: "Afspraken en voorkeuren",
+      fi: "Ajanvaraukset ja mieltymykset",
     },
     icon: Gem,
     color: "text-pink-600 bg-pink-100",
@@ -306,15 +280,13 @@ const industryDefs: {
     key: "lash-studio-software",
     label: {
       en: "Lash studios",
-      es: "Estudios de pestañas",
-      it: "Studi ciglia",
-      fr: "Studios de cils",
+      nl: "Wimperstudio's",
+      fi: "Ripsistudiot",
     },
     desc: {
       en: "Extensions and refill planning",
-      es: "Extensiones y rellenos",
-      it: "Extension e refill",
-      fr: "Extensions et refill",
+      nl: "Extensions en refill-planning",
+      fi: "Pidennysten ja täyttöjen suunnittelu",
     },
     icon: Eye,
     color: "text-violet-600 bg-violet-100",
@@ -323,15 +295,13 @@ const industryDefs: {
     key: "spa-wellness-software",
     label: {
       en: "Spa & wellness",
-      es: "Spa y wellness",
-      it: "Spa e wellness",
-      fr: "Spa et wellness",
+      nl: "Spa & wellness",
+      fi: "Spa & wellness",
     },
     desc: {
       en: "Guest management and bookings",
-      es: "Gestión de huéspedes y reservas",
-      it: "Gestione ospiti e prenotazioni",
-      fr: "Gestion des hôtes et réservations",
+      nl: "Gastbeheer en boekingen",
+      fi: "Vierashallinta ja varaukset",
     },
     icon: Waves,
     color: "text-cyan-600 bg-cyan-100",
@@ -340,15 +310,13 @@ const industryDefs: {
     key: "massage-software",
     label: {
       en: "Massage practices",
-      es: "Centros de masajes",
-      it: "Studi di massaggi",
-      fr: "Cabinets de massage",
+      nl: "Massagepraktijken",
+      fi: "Hierontapalvelut",
     },
     desc: {
       en: "Bookings and health questionnaires",
-      es: "Reservas y cuestionarios de salud",
-      it: "Prenotazioni e questionari sanitari",
-      fr: "Réservations et questionnaires santé",
+      nl: "Boekingen en gezondheidsvragenlijsten",
+      fi: "Varaukset ja terveyskyselyt",
     },
     icon: Hand,
     color: "text-amber-600 bg-amber-100",
@@ -357,73 +325,70 @@ const industryDefs: {
 
 const allFeaturesLabel: L10n = {
   en: "View all features",
-  es: "Ver todas las funciones",
-  it: "Vedi tutte le funzionalità",
-  fr: "Voir toutes les fonctionnalités",
+  nl: "Bekijk alle functies",
+  fi: "Näytä kaikki ominaisuudet",
 };
 
 const shopLabel: L10n = {
   en: "Shop",
-  es: "Tienda",
-  it: "Negozio",
-  fr: "Boutique",
+  nl: "Shop",
+  fi: "Kauppa",
 };
 const shopDesc: L10n = {
   en: "Product sales and inventory",
-  es: "Venta de productos y stock",
-  it: "Vendita prodotti e magazzino",
-  fr: "Vente de produits et stock",
+  nl: "Productverkoop en voorraad",
+  fi: "Tuotemyynti ja varasto",
 };
 
 const websiteLabel: L10n = {
   en: "Studio website",
-  es: "Web para salones",
-  it: "Sito web del centro",
-  fr: "Site web institut",
+  nl: "Studio-website",
+  fi: "Studion verkkosivusto",
 };
 const websiteDesc: L10n = {
   en: "Custom website for your studio",
-  es: "Web a medida para tu salón",
-  it: "Sito su misura per il tuo centro",
-  fr: "Site sur mesure pour votre institut",
+  nl: "Website op maat voor jouw studio",
+  fi: "Räätälöity verkkosivusto studiollesi",
 };
 
 export default function NavigationEn({
   dict,
-  locale = "en",
+  locale = "us",
 }: {
   dict: Dictionary;
-  locale?: NavLocale;
+  locale?: PrefixedMarket;
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const base = localePathPrefix[locale] || "/en";
-  const ctaPath = getPrimaryCtaPath(locale);
-  const ctaExternal = isExternalCta(locale);
+  const market = locale;
+  const lang = toNavLang(market);
+  const base = marketPathPrefix[market];
+  const ctaPath = getPrimaryCtaPath(market);
+  const ctaExternal = isExternalCta(market);
   const ctaLabel = ctaExternal ? dict.nav.tryFree : dict.nav.requestAccess;
-  const loginUrl = APP_LOGIN_BY_LOCALE[locale] ?? APP_LOGIN_BY_LOCALE.en!;
+  const loginUrl = APP_LOGIN_BY_MARKET[market] ?? APP_LOGIN_BY_MARKET.us;
 
   const featureLinks = featureDefs.map((item) => ({
-    href: `${base}/${item.slug[locale]}`,
-    label: item.label[locale],
-    desc: item.desc[locale],
+    href: `${base}/${item.slug}`,
+    label: item.label[lang],
+    desc: item.desc[lang],
     icon: item.icon,
     color: item.color,
   }));
 
   const industryLinks = industryDefs.map((item) => ({
-    href: industryPath(locale as IntlLocale, item.key),
-    label: item.label[locale],
-    desc: item.desc[locale],
+    href: `${base}/${EN_SLUGS[item.key]}`,
+    label: item.label[lang],
+    desc: item.desc[lang],
     icon: item.icon,
     color: item.color,
     key: item.key,
   }));
 
-  const featuresOverviewHref = `${base}/${extraFeatureSlugs.features[locale]}`;
-  const shopHref = `${base}/${extraFeatureSlugs.shop[locale]}`;
-  const websiteHref = `${base}/${extraFeatureSlugs["studio-website"][locale]}`;
-  const pricingHref = productPath(locale as IntlLocale, "pricing");
-  const contactHref = productPath(locale as IntlLocale, "contact");
+  const featuresOverviewHref = `${base}/${EN_SLUGS.features}`;
+  const shopHref = `${base}/${EN_SLUGS.shop}`;
+  const websiteHref = `${base}/${EN_SLUGS["studio-website"]}`;
+  const pricingHref = `${base}/${EN_SLUGS.pricing}`;
+  const contactHref = `${base}/${EN_SLUGS.contact}`;
 
   const ctaClass =
     "bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors";
@@ -471,7 +436,7 @@ export default function NavigationEn({
                     href={featuresOverviewHref}
                     className="block text-center text-sm font-medium text-indigo-600 hover:text-indigo-700 py-2 rounded-lg hover:bg-indigo-50 transition-colors mb-2"
                   >
-                    {allFeaturesLabel[locale]}
+                    {allFeaturesLabel[lang]}
                   </Link>
                 </div>
                 <div className="border-t border-gray-100 pt-3 grid grid-cols-2 gap-1">
@@ -483,8 +448,8 @@ export default function NavigationEn({
                       <ShoppingBag className="h-4 w-4" />
                     </div>
                     <div>
-                      <div className="text-sm font-medium text-gray-900">{shopLabel[locale]}</div>
-                      <div className="text-xs text-gray-500 mt-0.5">{shopDesc[locale]}</div>
+                      <div className="text-sm font-medium text-gray-900">{shopLabel[lang]}</div>
+                      <div className="text-xs text-gray-500 mt-0.5">{shopDesc[lang]}</div>
                     </div>
                   </Link>
                   <Link
@@ -495,8 +460,8 @@ export default function NavigationEn({
                       <Globe className="h-4 w-4" />
                     </div>
                     <div>
-                      <div className="text-sm font-medium text-gray-900">{websiteLabel[locale]}</div>
-                      <div className="text-xs text-gray-500 mt-0.5">{websiteDesc[locale]}</div>
+                      <div className="text-sm font-medium text-gray-900">{websiteLabel[lang]}</div>
+                      <div className="text-xs text-gray-500 mt-0.5">{websiteDesc[lang]}</div>
                     </div>
                   </Link>
                 </div>
@@ -551,7 +516,7 @@ export default function NavigationEn({
             >
               {dict.nav.login}
             </a>
-            <LanguageSwitcher current={locale} />
+            <LanguageSwitcher current={market} />
             {ctaExternal ? (
               <a href={ctaPath} target="_blank" rel="noopener noreferrer" className={ctaClass}>
                 {ctaLabel}
@@ -599,21 +564,21 @@ export default function NavigationEn({
             className="block pl-2 text-sm font-medium text-indigo-600"
             onClick={() => setMobileOpen(false)}
           >
-            {allFeaturesLabel[locale]}
+            {allFeaturesLabel[lang]}
           </Link>
           <Link
             href={shopHref}
             className="block pl-2 text-sm font-medium text-gray-700"
             onClick={() => setMobileOpen(false)}
           >
-            {shopLabel[locale]}
+            {shopLabel[lang]}
           </Link>
           <Link
             href={websiteHref}
             className="block pl-2 text-sm font-medium text-gray-700"
             onClick={() => setMobileOpen(false)}
           >
-            {websiteLabel[locale]}
+            {websiteLabel[lang]}
           </Link>
 
           <div className="border-t border-gray-100 pt-3" />
@@ -660,7 +625,7 @@ export default function NavigationEn({
             {dict.nav.login}
           </a>
           <div className="pt-2">
-            <LanguageSwitcher current={locale} />
+            <LanguageSwitcher current={market} />
           </div>
           {ctaExternal ? (
             <a

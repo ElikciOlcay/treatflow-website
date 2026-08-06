@@ -37,7 +37,7 @@ const COOKIE_TEXTS = {
         intro:
             'We use cookies to give you the best experience on our website. Some cookies are necessary to operate the site, while others help us improve this website and your experience.',
         learnMore: 'Learn more',
-        privacyHref: '/en/privacy',
+        privacyHref: '/us/privacy',
         acceptAll: 'Accept all',
         acceptNecessary: 'Necessary only',
         settings: 'Settings',
@@ -58,83 +58,57 @@ const COOKIE_TEXTS = {
             'These cookies enable enhanced functionality and personalisation, such as chat widgets or videos.',
         save: 'Save settings',
     },
-    es: {
-        title: 'Configuración de cookies',
+    nl: {
+        title: 'Cookie-instellingen',
         intro:
-            'Utilizamos cookies para ofrecerte la mejor experiencia en nuestro sitio web. Algunas son necesarias para el funcionamiento del sitio; otras nos ayudan a mejorarlo.',
-        learnMore: 'Más información',
-        privacyHref: '/es/privacidad',
-        acceptAll: 'Aceptar todas',
-        acceptNecessary: 'Solo necesarias',
-        settings: 'Configuración',
+            'We gebruiken cookies om je de beste ervaring op onze website te geven. Sommige cookies zijn nodig voor de werking van de site; andere helpen ons de website te verbeteren.',
+        learnMore: 'Meer informatie',
+        privacyHref: '/nl/privacy',
+        acceptAll: 'Alles accepteren',
+        acceptNecessary: 'Alleen noodzakelijk',
+        settings: 'Instellingen',
         modalIntro:
-            'Utilizamos distintos tipos de cookies. Puedes ajustar la configuración de cada categoría.',
-        necessary: 'Cookies necesarias',
-        alwaysActive: 'Siempre activas',
+            'We gebruiken verschillende soorten cookies. Je kunt de instellingen per categorie aanpassen.',
+        necessary: 'Noodzakelijke cookies',
+        alwaysActive: 'Altijd actief',
         necessaryDesc:
-            'Estas cookies son necesarias para las funciones básicas del sitio y no se pueden desactivar. Guardan tus preferencias de cookies y ajustes de seguridad.',
-        analytics: 'Cookies de análisis',
+            'Deze cookies zijn vereist voor de basisfuncties van de website en kunnen niet worden uitgeschakeld.',
+        analytics: 'Analysecookies',
         analyticsDesc:
-            'Estas cookies nos ayudan a entender cómo interactúan los visitantes con el sitio, de forma anónima. Utilizamos Google Analytics.',
-        marketing: 'Cookies de marketing',
+            'Deze cookies helpen ons te begrijpen hoe bezoekers de website gebruiken. We gebruiken Google Analytics.',
+        marketing: 'Marketingcookies',
         marketingDesc:
-            'Estas cookies se usan para mostrar publicidad relevante. Actualmente no utilizamos cookies de marketing.',
-        functional: 'Cookies funcionales',
+            'Deze cookies worden gebruikt voor relevante advertenties. Momenteel gebruiken we geen marketingcookies.',
+        functional: 'Functionele cookies',
         functionalDesc:
-            'Estas cookies permiten funciones avanzadas y personalización, como widgets de chat o vídeos.',
-        save: 'Guardar configuración',
+            'Deze cookies maken geavanceerde functionaliteit mogelijk, zoals chatwidgets of video\'s.',
+        save: 'Instellingen opslaan',
     },
-    it: {
-        title: 'Impostazioni cookie',
+    fi: {
+        title: 'Evästeasetukset',
         intro:
-            'Utilizziamo i cookie per offrirti la migliore esperienza sul nostro sito. Alcuni sono necessari per il funzionamento; altri ci aiutano a migliorarlo.',
-        learnMore: 'Scopri di più',
-        privacyHref: '/it/privacy',
-        acceptAll: 'Accetta tutti',
-        acceptNecessary: 'Solo necessari',
-        settings: 'Impostazioni',
+            'Käytämme evästeitä tarjotaksemme parhaan kokemuksen sivustollamme. Osa evästeistä on välttämättömiä; toiset auttavat meitä kehittämään sivustoa.',
+        learnMore: 'Lue lisää',
+        privacyHref: '/fi/privacy',
+        acceptAll: 'Hyväksy kaikki',
+        acceptNecessary: 'Vain välttämättömät',
+        settings: 'Asetukset',
         modalIntro:
-            'Utilizziamo diversi tipi di cookie. Puoi regolare le impostazioni per ogni categoria.',
-        necessary: 'Cookie necessari',
-        alwaysActive: 'Sempre attivi',
+            'Käytämme eri tyyppisiä evästeitä. Voit säätää asetuksia kategoriakohtaisesti.',
+        necessary: 'Välttämättömät evästeet',
+        alwaysActive: 'Aina käytössä',
         necessaryDesc:
-            'Questi cookie sono necessari per le funzioni di base del sito e non possono essere disattivati. Memorizzano le preferenze cookie e le impostazioni di sicurezza.',
-        analytics: 'Cookie analitici',
+            'Nämä evästeet tarvitaan sivuston perustoimintoihin, eikä niitä voi poistaa käytöstä.',
+        analytics: 'Analytiikkaevästeet',
         analyticsDesc:
-            'Questi cookie ci aiutano a capire come i visitatori interagiscono con il sito in forma anonima. Utilizziamo Google Analytics.',
-        marketing: 'Cookie di marketing',
+            'Nämä evästeet auttavat meitä ymmärtämään, miten vierailijat käyttävät sivustoa. Käytämme Google Analyticsia.',
+        marketing: 'Markkinointievästeet',
         marketingDesc:
-            'Questi cookie vengono usati per mostrare pubblicità pertinente. Al momento non utilizziamo cookie di marketing.',
-        functional: 'Cookie funzionali',
+            'Näitä evästeitä käytetään relevanttiin mainontaan. Emme tällä hetkellä käytä markkinointievästeitä.',
+        functional: 'Toiminnalliset evästeet',
         functionalDesc:
-            'Questi cookie abilitano funzionalità avanzate e personalizzazione, come widget chat o video.',
-        save: 'Salva impostazioni',
-    },
-    fr: {
-        title: 'Paramètres des cookies',
-        intro:
-            'Nous utilisons des cookies pour vous offrir la meilleure expérience sur notre site. Certains sont nécessaires au fonctionnement ; d\'autres nous aident à l\'améliorer.',
-        learnMore: 'En savoir plus',
-        privacyHref: '/fr/confidentialite',
-        acceptAll: 'Tout accepter',
-        acceptNecessary: 'Nécessaires uniquement',
-        settings: 'Paramètres',
-        modalIntro:
-            'Nous utilisons différents types de cookies. Vous pouvez ajuster les paramètres pour chaque catégorie.',
-        necessary: 'Cookies nécessaires',
-        alwaysActive: 'Toujours actifs',
-        necessaryDesc:
-            'Ces cookies sont requis pour les fonctions de base du site et ne peuvent pas être désactivés. Ils enregistrent vos préférences cookies et paramètres de sécurité.',
-        analytics: 'Cookies analytiques',
-        analyticsDesc:
-            'Ces cookies nous aident à comprendre comment les visiteurs interagissent avec le site de manière anonyme. Nous utilisons Google Analytics.',
-        marketing: 'Cookies marketing',
-        marketingDesc:
-            'Ces cookies sont utilisés pour afficher de la publicité pertinente. Nous n\'utilisons actuellement aucun cookie marketing.',
-        functional: 'Cookies fonctionnels',
-        functionalDesc:
-            'Ces cookies permettent des fonctionnalités avancées et de la personnalisation, comme des widgets de chat ou des vidéos.',
-        save: 'Enregistrer les paramètres',
+            'Nämä evästeet mahdollistavat lisätoimintoja, kuten chat-widgetit tai videot.',
+        save: 'Tallenna asetukset',
     },
 } as const;
 
@@ -156,16 +130,23 @@ const META_PIXEL_ID = '796776476409381';
 
 export default function CookieBanner() {
     const pathname = usePathname();
-    const cookieLocale = pathname?.startsWith('/es')
-        ? 'es'
-        : pathname?.startsWith('/it')
-          ? 'it'
-          : pathname?.startsWith('/fr')
-            ? 'fr'
-            : pathname?.startsWith('/en')
-              ? 'en'
-              : 'de';
-    const t = COOKIE_TEXTS[cookieLocale];
+    const marketMatch = pathname?.match(/^\/(us|nl|uk|fi|ie|ca|au|ae)(?=\/|$)/);
+    const cookieLocale = marketMatch
+        ? marketMatch[1] === 'nl'
+            ? 'nl'
+            : marketMatch[1] === 'fi'
+              ? 'fi'
+              : 'en'
+        : 'de';
+    const t = {
+        ...COOKIE_TEXTS[cookieLocale],
+        privacyHref:
+            cookieLocale === 'de'
+                ? '/datenschutz'
+                : marketMatch
+                  ? `/${marketMatch[1]}/privacy`
+                  : '/us/privacy',
+    };
     const [showBanner, setShowBanner] = useState(false);
     const [showSettings, setShowSettings] = useState(false);
     const [preferences, setPreferences] = useState({

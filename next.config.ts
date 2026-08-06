@@ -59,9 +59,20 @@ const nextConfig: NextConfig = {
       { source: '/home', destination: '/', permanent: true },
       { source: '/index', destination: '/', permanent: true },
 
-      // Legacy English-NL Markt → globale EN-Seiten
-      { source: '/en-nl', destination: '/en', permanent: true },
-      { source: '/en-nl/:path*', destination: '/en/:path*', permanent: true },
+      // Legacy English-NL Markt → Niederlande
+      { source: '/en-nl', destination: '/nl', permanent: true },
+      { source: '/en-nl/:path*', destination: '/nl/:path*', permanent: true },
+
+      // Legacy Sprach-Locales → Laender-Maerkte (Middleware macht Detail-Mapping;
+      // Fallback-Redirects fuer statische Deploy-Pfade)
+      { source: '/en', destination: '/us', permanent: true },
+      { source: '/en/:path*', destination: '/us/:path*', permanent: true },
+      { source: '/es', destination: '/us', permanent: true },
+      { source: '/es/:path*', destination: '/us/:path*', permanent: true },
+      { source: '/it', destination: '/us', permanent: true },
+      { source: '/it/:path*', destination: '/us/:path*', permanent: true },
+      { source: '/fr', destination: '/us', permanent: true },
+      { source: '/fr/:path*', destination: '/us/:path*', permanent: true },
 
       // Neuigkeiten-Seite vorerst entfernt
       { source: '/neuigkeiten', destination: '/', permanent: true },

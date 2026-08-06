@@ -1,13 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
-  FRENCH_SPEAKING_COUNTRIES,
   GERMAN_SPEAKING_COUNTRIES,
-  ITALIAN_SPEAKING_COUNTRIES,
-  LOCALE_COOKIE,
-  SPANISH_SPEAKING_COUNTRIES,
-  isLocale,
-  localeHomePath,
-  type Locale,
+  MARKET_BY_COUNTRY,
+  MARKET_COOKIE,
+  isMarket,
+  isPrefixedMarket,
+  marketHomePath,
+  type Market,
 } from "./app/i18n/config";
 
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
@@ -15,6 +14,15 @@ const COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 /** Bekannte Crawler – keine Geo-Redirects auf /, damit hreflang sauber bleibt. */
 const BOT_UA =
   /bot|crawler|spider|slurp|bingpreview|facebookexternalhit|embedly|quora|pinterest|redditbot|gptbot|chatgpt|claude|anthropic|perplexity|google-extended|bytespider|applebot|duckduckbot/i;
+
+/** Alte Sprach-Locales → neuer Default-Markt (US) bzw. Mapping. */
+const LEGACY_LOCALE_TO_MARKET: Record<string, Market> = {
+  en: "us",
+  es: "us",
+  it: "us",
+  fr: "us",
+  "en-nl": "nl",
+};
 
 function detectCountry(request: NextRequest): string | null {
   const header =
@@ -40,19 +48,24 @@ function prefersGerman(request: NextRequest): boolean {
   return false;
 }
 
-function detectLocaleFromCountry(country: string | null): Locale | null {
+function detectMarketFromCountry(country: string | null): Market | null {
   if (!country) return null;
-  // DACH hat Vorrang (auch vor FR fuer CH)
-  if ((GERMAN_SPEAKING_COUNTRIES as readonly string[]).includes(country)) return "de";
-  if ((SPANISH_SPEAKING_COUNTRIES as readonly string[]).includes(country)) return "es";
-  if ((ITALIAN_SPEAKING_COUNTRIES as readonly string[]).includes(country)) return "it";
-  if ((FRENCH_SPEAKING_COUNTRIES as readonly string[]).includes(country)) return "fr";
-  return null;
+  if ((GERMAN_SPEAKING_COUNTRIES as readonly string[]).includes(country)) {
+    return "de";
+  }
+  return MARKET_BY_COUNTRY[country] ?? null;
 }
 
-function redirectWithLocale(request: NextRequest, locale: Locale) {
-  const response = NextResponse.redirect(new URL(localeHomePath(locale), request.url));
-  response.cookies.set(LOCALE_COOKIE, locale, {
+function redirectWithMarket(request: NextRequest, market: Market, path = "") {
+  const home = marketHomePath(market);
+  const target =
+    path && market !== "de"
+      ? `${home}${path.startsWith("/") ? path : `/${path}`}`
+      : path && market === "de"
+        ? path
+        : home;
+  const response = NextResponse.redirect(new URL(target || "/", request.url));
+  response.cookies.set(MARKET_COOKIE, market, {
     maxAge: COOKIE_MAX_AGE,
     sameSite: "lax",
     path: "/",
@@ -60,12 +73,125 @@ function redirectWithLocale(request: NextRequest, locale: Locale) {
   return response;
 }
 
+function rewriteLegacyLocalePath(pathname: string): { market: Market; rest: string } | null {
+  const match = pathname.match(/^\/(en|es|it|fr)(\/.*)?$/);
+  if (!match) return null;
+  const legacy = match[1];
+  const rest = match[2] || "";
+  const market = LEGACY_LOCALE_TO_MARKET[legacy] ?? "us";
+
+  // Map localized legacy slugs roughly to EN slugs for ES/IT/FR
+  let mappedRest = rest;
+  const slugMaps: Record<string, Record<string, string>> = {
+    es: {
+      "/precios": "/pricing",
+      "/contacto": "/contact",
+      "/acceso-anticipado": "/early-access",
+      "/sobre-nosotros": "/about",
+      "/privacidad": "/privacy",
+      "/terminos": "/terms",
+      "/calendario-citas": "/appointment-calendar",
+      "/reservas-online": "/online-booking",
+      "/fichas-clientes": "/client-records",
+      "/formularios": "/forms",
+      "/documentacion-tratamientos": "/treatment-documentation",
+      "/funciones": "/features",
+      "/mensajeria": "/messaging",
+      "/integraciones": "/integrations",
+      "/tienda": "/shop",
+      "/vales": "/vouchers",
+      "/caja-registradora": "/point-of-sale",
+      "/web-para-salones": "/studio-website",
+      "/software-salon-belleza": "/beauty-salon-software",
+      "/software-clinica-estetica": "/aesthetic-clinic-software",
+      "/software-depilacion-laser": "/laser-hair-removal-software",
+      "/software-maquillaje-permanente": "/permanent-makeup-software",
+      "/software-estudio-tatuajes": "/tattoo-studio-software",
+      "/software-salon-unas": "/nail-salon-software",
+      "/software-extension-pestanas": "/lash-studio-software",
+      "/software-spa-wellness": "/spa-wellness-software",
+      "/software-masajes": "/massage-software",
+    },
+    it: {
+      "/prezzi": "/pricing",
+      "/contatto": "/contact",
+      "/accesso-anticipato": "/early-access",
+      "/chi-siamo": "/about",
+      "/termini": "/terms",
+      "/calendario-appuntamenti": "/appointment-calendar",
+      "/prenotazioni-online": "/online-booking",
+      "/schede-clienti": "/client-records",
+      "/moduli": "/forms",
+      "/documentazione-trattamenti": "/treatment-documentation",
+      "/funzioni": "/features",
+      "/messaggistica": "/messaging",
+      "/integrazioni": "/integrations",
+      "/negozio": "/shop",
+      "/buoni-regalo": "/vouchers",
+      "/cassa": "/point-of-sale",
+      "/sito-web-centro": "/studio-website",
+      "/software-centro-estetico": "/beauty-salon-software",
+      "/software-clinica-estetica": "/aesthetic-clinic-software",
+      "/software-epilazione-laser": "/laser-hair-removal-software",
+      "/software-trucco-permanente": "/permanent-makeup-software",
+      "/software-studio-tatuaggi": "/tattoo-studio-software",
+      "/software-centro-unghie": "/nail-salon-software",
+      "/software-extension-ciglia": "/lash-studio-software",
+      "/software-spa-wellness": "/spa-wellness-software",
+      "/software-massaggi": "/massage-software",
+    },
+    fr: {
+      "/tarifs": "/pricing",
+      "/acces-anticipe": "/early-access",
+      "/a-propos": "/about",
+      "/confidentialite": "/privacy",
+      "/conditions": "/terms",
+      "/calendrier-rendez-vous": "/appointment-calendar",
+      "/reservation-en-ligne": "/online-booking",
+      "/fiches-clients": "/client-records",
+      "/formulaires": "/forms",
+      "/documentation-soins": "/treatment-documentation",
+      "/fonctionnalites": "/features",
+      "/messagerie": "/messaging",
+      "/integrations": "/integrations",
+      "/boutique": "/shop",
+      "/bons-cadeaux": "/vouchers",
+      "/caisse": "/point-of-sale",
+      "/site-web-institut": "/studio-website",
+      "/logiciel-institut-beaute": "/beauty-salon-software",
+      "/logiciel-clinique-esthetique": "/aesthetic-clinic-software",
+      "/logiciel-epilation-laser": "/laser-hair-removal-software",
+      "/logiciel-maquillage-permanent": "/permanent-makeup-software",
+      "/logiciel-salon-tatouage": "/tattoo-studio-software",
+      "/logiciel-salon-ongles": "/nail-salon-software",
+      "/logiciel-extension-cils": "/lash-studio-software",
+      "/logiciel-spa-wellness": "/spa-wellness-software",
+      "/logiciel-massage": "/massage-software",
+    },
+  };
+
+  if (legacy !== "en" && slugMaps[legacy]?.[rest]) {
+    mappedRest = slugMaps[legacy][rest];
+  }
+
+  return { market, rest: mappedRest };
+}
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Legacy: /en-nl → /en
+  // Legacy: /en-nl → /nl
   if (pathname === "/en-nl" || pathname.startsWith("/en-nl/")) {
-    const target = pathname.replace(/^\/en-nl/, "/en") || "/en";
+    const rest = pathname.replace(/^\/en-nl/, "") || "";
+    return NextResponse.redirect(new URL(`/nl${rest}`, request.url), 301);
+  }
+
+  // Legacy Sprach-Pfade → Laender-Maerkte
+  const legacy = rewriteLegacyLocalePath(pathname);
+  if (legacy) {
+    const target = legacy.rest
+      ? `/${legacy.market}${legacy.rest}`
+      : `/${legacy.market}`;
     return NextResponse.redirect(new URL(target, request.url), 301);
   }
 
@@ -77,26 +203,25 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value;
+  const cookieMarket = request.cookies.get(MARKET_COOKIE)?.value;
 
-  // Altes Cookie en-nl → en
-  if (cookieLocale === "en-nl") {
-    return redirectWithLocale(request, "en");
+  if (cookieMarket && LEGACY_LOCALE_TO_MARKET[cookieMarket]) {
+    return redirectWithMarket(request, LEGACY_LOCALE_TO_MARKET[cookieMarket]);
   }
 
-  if (isLocale(cookieLocale)) {
-    if (cookieLocale === "de") {
+  if (isMarket(cookieMarket)) {
+    if (cookieMarket === "de") {
       return NextResponse.next();
     }
-    return redirectWithLocale(request, cookieLocale);
+    return redirectWithMarket(request, cookieMarket);
   }
 
   const country = detectCountry(request);
-  const fromCountry = detectLocaleFromCountry(country);
+  const fromCountry = detectMarketFromCountry(country);
 
   if (fromCountry === "de" || (!fromCountry && prefersGerman(request))) {
     const response = NextResponse.next();
-    response.cookies.set(LOCALE_COOKIE, "de", {
+    response.cookies.set(MARKET_COOKIE, "de", {
       maxAge: COOKIE_MAX_AGE,
       sameSite: "lax",
       path: "/",
@@ -104,11 +229,12 @@ export function middleware(request: NextRequest) {
     return response;
   }
 
-  if (fromCountry) {
-    return redirectWithLocale(request, fromCountry);
+  if (fromCountry && isPrefixedMarket(fromCountry)) {
+    return redirectWithMarket(request, fromCountry);
   }
 
-  return redirectWithLocale(request, "en");
+  // Unbekannte Laender → US (englischer Default-Markt)
+  return redirectWithMarket(request, "us");
 }
 
 export const config = {

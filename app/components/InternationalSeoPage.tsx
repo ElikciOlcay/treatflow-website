@@ -12,7 +12,7 @@ import AiAnswerCapsule from "./AiAnswerCapsule";
 import FaqSectionEn, { type FaqEntry } from "./FaqSectionEn";
 import { generateServiceSchema } from "@/lib/schema";
 import type { SeoPageKey } from "../i18n/seo";
-import { BASE_URL, type Locale } from "../i18n/config";
+import { BASE_URL, type PrefixedMarket } from "../i18n/config";
 import { getPrimaryCtaPath } from "../i18n/market-access";
 
 export type FeatureBlock = {
@@ -64,7 +64,7 @@ export type InternationalPageContent = {
   internalLinksTitle?: string;
   areaServed?: string[];
   theme?: string;
-  locale?: Extract<Locale, "en" | "es" | "it" | "fr">;
+  locale?: string | PrefixedMarket;
   ctaPrimaryLabel?: string;
   ctaBottomTitle?: string;
   ctaBottomText?: string;
@@ -81,7 +81,7 @@ export default function InternationalSeoPage({
 }: {
   content: InternationalPageContent;
 }) {
-  const locale = content.locale ?? "en";
+  const locale = content.locale ?? "us";
   const earlyAccessHref = getPrimaryCtaPath(locale);
   const primaryLabel = content.ctaPrimaryLabel ?? "Request early access";
   const bottomTitle = content.ctaBottomTitle ?? "Ready to modernise your studio?";
@@ -90,27 +90,9 @@ export default function InternationalSeoPage({
     "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.";
   const trustTrial = content.trustTrialLabel ?? "Early access available";
   const trustBadges = content.trustBadges ?? [
-    locale === "es"
-      ? "Conforme RGPD / UE"
-      : locale === "it"
-        ? "Conforme GDPR / UE"
-        : locale === "fr"
-          ? "Conforme RGPD / UE"
-          : "GDPR / EU compliant",
-    locale === "es"
-      ? "Servidores en la UE"
-      : locale === "it"
-        ? "Server in UE"
-        : locale === "fr"
-          ? "Serveurs hébergés en UE"
-          : "EU-hosted servers",
-    locale === "es"
-      ? "Cifrado SSL"
-      : locale === "it"
-        ? "Crittografia SSL"
-        : locale === "fr"
-          ? "Chiffrement SSL"
-          : "SSL-encrypted",
+    "GDPR / EU compliant",
+    "EU-hosted servers",
+    "SSL-encrypted",
     trustTrial,
   ];
 

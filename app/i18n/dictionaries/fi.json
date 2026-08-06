@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "features": "Ominaisuudet",
+    "industries": "Toimialat",
+    "pricing": "Hinnat",
+    "contact": "Yhteystiedot",
+    "login": "Kirjaudu",
+    "tryFree": "Aloita ilmainen kokeilu",
+    "requestAccess": "Pyydä varhaista pääsyä"
+  },
+  "footer": {
+    "tagline": "Digitaalinen studioassistenttisi. Made in Austria.",
+    "features": "Ominaisuudet",
+    "industries": "Toimialat",
+    "product": "Tuote",
+    "company": "Yritys",
+    "legal": "Juridiset",
+    "aboutUs": "Tietoa meistä",
+    "contact": "Yhteystiedot",
+    "pricing": "Hinnat",
+    "tryFree": "Aloita ilmainen kokeilu",
+    "requestAccess": "Pyydä varhaista pääsyä",
+    "login": "Kirjaudu",
+    "privacy": "Tietosuojaseloste",
+    "terms": "Käyttöehdot",
+    "rights": "Kaikki oikeudet pidätetään."
+  },
+  "common": {
+    "tryFree": "14 päivän ilmainen kokeilu",
+    "requestAccess": "Pyydä varhaista pääsyä",
+    "bookDemo": "Pyydä varhaista pääsyä",
+    "learnMore": "Lue lisää",
+    "noCreditCard": "Ei luottokorttia",
+    "cancelAnytime": "Peruuta milloin tahansa",
+    "waitlistNote": "Itsepalvelurekisteröinti on tällä hetkellä saatavilla Saksassa, Itävallassa ja Sveitsissä. Pyydä varhaista pääsyä omaan maahasi."
+  }
+}

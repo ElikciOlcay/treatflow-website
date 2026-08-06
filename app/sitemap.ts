@@ -375,10 +375,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]
 
     const localePrefixes = {
-        en: '/en',
-        es: '/es',
-        it: '/it',
-        fr: '/fr',
+        us: '/us',
+        nl: '/nl',
+        uk: '/uk',
+        fi: '/fi',
+        ie: '/ie',
+        ca: '/ca',
+        au: '/au',
+        ae: '/ae',
     } as const
 
     function localeRoutes(locale: keyof typeof localePrefixes) {
@@ -394,10 +398,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         return [home, ...rest]
     }
 
-    const enRoutes = localeRoutes('en')
-    const esRoutes = localeRoutes('es')
-    const itRoutes = localeRoutes('it')
-    const frRoutes = localeRoutes('fr')
+    const marketRoutes = (Object.keys(localePrefixes) as (keyof typeof localePrefixes)[])
+        .flatMap((market) => localeRoutes(market))
 
     const blogIndex = {
         url: `${baseUrl}/blog`,
@@ -451,10 +453,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return [
         ...staticRoutes,
-        ...enRoutes,
-        ...esRoutes,
-        ...itRoutes,
-        ...frRoutes,
+        ...marketRoutes,
         blogIndex,
         ...blogRoutes,
         ...landingRoutes,

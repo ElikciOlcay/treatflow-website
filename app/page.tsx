@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "Kosmetikstudio-Software für Termine, Online-Buchung, Kundenkartei, Formulare, Doku & Kasse - alles in einer App. Keine Provision, DSGVO-konform, Made in Austria. 500+ Studios, 14 Tage gratis testen.",
   alternates: {
     canonical: "https://www.treatflow.io",
-    ...buildHreflangAlternates("home", { xDefault: "en" }),
+    ...buildHreflangAlternates("home", { xDefault: "us" }),
   },
   openGraph: {
     title: "Treatflow: All-in-One Software für dein Kosmetikstudio",

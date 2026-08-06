@@ -1,4 +1,4 @@
-export type PricingLocale = "en" | "es" | "it" | "fr";
+export type PricingLocale = "en" | "es" | "it" | "fr" | "nl" | "fi";
 
 export type PricingIntlCopy = {
   eyebrow: string;
@@ -527,6 +527,244 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       title: "Tarifs | Treatflow",
       description:
         "Tarifs transparents Treatflow : Basic dès 39€/mois, Booking dès 59€/mois. Demandez un accès anticipé.",
+    },
+  },
+  nl: {
+    eyebrow: "Transparante prijzen",
+    titleBefore: "Eenvoudige prijzen –",
+    titleHighlight: "geen verborgen kosten",
+    subtitle:
+      "Kies het plan dat bij jouw studio past. Vraag early access aan voor jouw land – directe registratie is momenteel beschikbaar in Duitsland, Oostenrijk en Zwitserland.",
+    monthly: "Maandelijks",
+    yearly: "Jaarlijks",
+    saveBadge: "Bespaar 10%",
+    perMonth: "/maand",
+    perYear: "/jaar",
+    basicYearlyHint: "€35/maand • Bespaar €47/jaar",
+    bookingYearlyHint: "€53/maand • Bespaar €71/jaar",
+    exclVat: "excl. btw",
+    popular: "Populair",
+    cta: "Vraag early access aan",
+    earlyAccessHref: "/nl/early-access",
+    basic: {
+      name: "Basic",
+      description:
+        "Digitale anamnese, toestemmingsformulieren en behandeldocumentatie – zonder afspraakplanning.",
+      included: [
+        "Klantendossiers",
+        "Formulieren",
+        "Behandeldocumentatie",
+        "Anamnese-sjablonen",
+        "E-mailsupport",
+      ],
+      excluded: [
+        "Afspraakagenda",
+        "Online boeken",
+        "Prioriteitssupport",
+      ],
+    },
+    booking: {
+      name: "Booking",
+      description:
+        "Afspraakagenda, online boeken en automatische herinneringen voor jouw studio.",
+      included: [
+        "Alles van Basic",
+        "Afspraakagenda",
+        "Online boeken",
+        "Sms- & e-mailautomatisering",
+        "Integraties (Google Calendar, Zapier en meer)",
+        "Geavanceerde instellingen",
+        "Prioriteitssupport via e-mail & chat",
+      ],
+    },
+    trialBox: {
+      title: "14 dagen gratis proberen",
+      text: "Geen creditcard nodig • Altijd opzegbaar • Gratis datamigratie",
+      points: ["Geen opstartkosten", "Maandelijks opzegbaar", "GDPR-conform"],
+    },
+    comparison: {
+      title: "Wat zit erin?",
+      subtitle: "Vergelijk beide plannen in detail en vind de juiste match voor jouw studio.",
+      vatNote: "Alle prijzen exclusief btw.",
+      featureCol: "Functie",
+      rows: [
+        { feature: "Klantendossiers", basic: true, booking: true },
+        { feature: "Formulieren & anamnese", basic: true, booking: true },
+        { feature: "Behandeldocumentatie", basic: true, booking: true },
+        { feature: "Anamnese-sjablonen", basic: true, booking: true },
+        { feature: "E-mailsupport", basic: true, booking: true },
+        { feature: "Afspraakagenda", basic: false, booking: true },
+        { feature: "Online boeken", basic: false, booking: true },
+        { feature: "Sms- & e-mailautomatisering", basic: false, booking: true },
+        { feature: "Integraties", basic: false, booking: true },
+        { feature: "Prioriteitssupport", basic: false, booking: true },
+        { feature: "Geavanceerde instellingen", basic: false, booking: true },
+      ],
+    },
+    why: {
+      title: "Waarom Treatflow?",
+      subtitle: "Transparante vaste prijzen in plaats van verborgen kosten en commissies.",
+      items: [
+        { value: "0%", label: "Commissie per boeking" },
+        { value: "€0", label: "Opstartkosten" },
+        { value: "14 dagen", label: "gratis proberen" },
+        { value: "Altijd", label: "opzegbaar" },
+      ],
+    },
+    faq: {
+      title: "Veelgestelde vragen over prijzen",
+      subtitle: "Alles wat je moet weten over de Treatflow-prijzen.",
+      items: [
+        {
+          question: "Wat kost Treatflow?",
+          answer:
+            "Treatflow heeft twee plannen: Basic vanaf €39/maand voor klantendossiers, formulieren en documentatie. Booking vanaf €59/maand met afspraakagenda, online boeken en automatische herinneringen. Beide kun je 14 dagen uitproberen.",
+        },
+        {
+          question: "Zijn er verborgen kosten?",
+          answer:
+            "Nee. Treatflow werkt met transparante vaste prijzen – zonder boekingscommissies, opstartkosten of verborgen extras.",
+        },
+        {
+          question: "Kan ik altijd opzeggen?",
+          answer:
+            "Ja. Bij maandelijkse facturatie kun je opzeggen aan het einde van de facturatieperiode. Er is geen minimale contractduur.",
+        },
+        {
+          question: "Is het Booking-plan de moeite waard?",
+          answer:
+            "Als je online boeken, automatische afspraakherinneringen en een digitale agenda nodig hebt: ja. Studio's met Booking melden vaak minder no-shows en minder telefoonwerk.",
+        },
+        {
+          question: "Hoe krijg ik toegang buiten DACH?",
+          answer:
+            "Directe registratie is momenteel beschikbaar in Duitsland, Oostenrijk en Zwitserland. Voor andere landen vraag je early access aan – we onboarden studio's land voor land.",
+        },
+      ],
+    },
+    meta: {
+      title: "Prijzen | Treatflow",
+      description:
+        "Transparante Treatflow-prijzen: Basic vanaf €39/maand, Booking vanaf €59/maand. Vraag early access aan voor jouw land.",
+    },
+  },
+  fi: {
+    eyebrow: "Läpinäkyvät hinnat",
+    titleBefore: "Yksinkertaiset hinnat –",
+    titleHighlight: "ei piilokuluja",
+    subtitle:
+      "Valitse studioosi sopiva paketti. Pyydä early access maallesi – suora rekisteröityminen on tällä hetkellä saatavilla Saksassa, Itävallassa ja Sveitsissä.",
+    monthly: "Kuukausittain",
+    yearly: "Vuosittain",
+    saveBadge: "Säästä 10 %",
+    perMonth: "/kk",
+    perYear: "/vuosi",
+    basicYearlyHint: "€35/kk • Säästä €47/vuosi",
+    bookingYearlyHint: "€53/kk • Säästä €71/vuosi",
+    exclVat: "ilman ALV:a",
+    popular: "Suosituin",
+    cta: "Pyydä early access",
+    earlyAccessHref: "/fi/early-access",
+    basic: {
+      name: "Basic",
+      description:
+        "Digitaalinen anamneesi, suostumuslomakkeet ja hoitodokumentointi – ilman ajanvarausta.",
+      included: [
+        "Asiakaskortistot",
+        "Lomakkeet",
+        "Hoitodokumentointi",
+        "Anamneesipohjat",
+        "Sähköpostituki",
+      ],
+      excluded: [
+        "Ajanvarauskalenteri",
+        "Verkkoajanvaraus",
+        "Prioriteettituki",
+      ],
+    },
+    booking: {
+      name: "Booking",
+      description:
+        "Ajanvarauskalenteri, verkkoajanvaraus ja automaattiset muistutukset studiollesi.",
+      included: [
+        "Kaikki Basicista",
+        "Ajanvarauskalenteri",
+        "Verkkoajanvaraus",
+        "SMS- ja sähköpostiautomaatio",
+        "Integraatiot (Google Calendar, Zapier ja muita)",
+        "Edistyneet asetukset",
+        "Prioriteettituki sähköpostilla ja chatilla",
+      ],
+    },
+    trialBox: {
+      title: "14 päivän ilmainen kokeilu",
+      text: "Ei luottokorttia • Peru milloin tahansa • Ilmainen datasiirto",
+      points: ["Ei käyttöönottomaksuja", "Kuukausittainen irtisanominen", "GDPR-mukainen"],
+    },
+    comparison: {
+      title: "Mitä sisältyy?",
+      subtitle: "Vertaa molempia paketteja tarkasti ja löydä studioosi sopiva vaihtoehto.",
+      vatNote: "Kaikki hinnat ilman ALV:a.",
+      featureCol: "Ominaisuus",
+      rows: [
+        { feature: "Asiakaskortistot", basic: true, booking: true },
+        { feature: "Lomakkeet ja anamneesi", basic: true, booking: true },
+        { feature: "Hoitodokumentointi", basic: true, booking: true },
+        { feature: "Anamneesipohjat", basic: true, booking: true },
+        { feature: "Sähköpostituki", basic: true, booking: true },
+        { feature: "Ajanvarauskalenteri", basic: false, booking: true },
+        { feature: "Verkkoajanvaraus", basic: false, booking: true },
+        { feature: "SMS- ja sähköpostiautomaatio", basic: false, booking: true },
+        { feature: "Integraatiot", basic: false, booking: true },
+        { feature: "Prioriteettituki", basic: false, booking: true },
+        { feature: "Edistyneet asetukset", basic: false, booking: true },
+      ],
+    },
+    why: {
+      title: "Miksi Treatflow?",
+      subtitle: "Läpinäkyvät kiinteät hinnat piilokulujen ja provisioiden sijaan.",
+      items: [
+        { value: "0%", label: "Provisio per varaus" },
+        { value: "€0", label: "Käyttöönottomaksut" },
+        { value: "14 päivää", label: "ilmainen kokeilu" },
+        { value: "Milloin tahansa", label: "irtisanottavissa" },
+      ],
+    },
+    faq: {
+      title: "Hinnoittelun UKK",
+      subtitle: "Kaikki mitä sinun tarvitsee tietää Treatflow-hinnoista.",
+      items: [
+        {
+          question: "Paljonko Treatflow maksaa?",
+          answer:
+            "Treatflowilla on kaksi pakettia: Basic alkaen €39/kk asiakaskortistoille, lomakkeille ja dokumentoinnille. Booking alkaen €59/kk ajanvarauskalenterilla, verkkoajanvarauksella ja automaattisilla muistutuksilla. Molempia voi kokeilla 14 päivää.",
+        },
+        {
+          question: "Onko piilokuluja?",
+          answer:
+            "Ei. Treatflow käyttää läpinäkyviä kiinteitä hintoja ilman varausprovisioita, käyttöönottomaksuja tai piilotettuja lisäkuluja.",
+        },
+        {
+          question: "Voinko irtisanoa milloin tahansa?",
+          answer:
+            "Kyllä. Kuukausilaskutuksella voit irtisanoa laskutuskauden lopussa. Ei vähimmäissopimuskautta.",
+        },
+        {
+          question: "Kannattaako Booking-paketti?",
+          answer:
+            "Jos tarvitset verkkoajanvarausta, automaattisia ajanmuistutuksia ja digitaalista kalenteria, kyllä. Booking-studiot raportoivat usein vähemmän no-show'ta ja vähemmän puhelutyötä.",
+        },
+        {
+          question: "Miten saan pääsyn DACH-alueen ulkopuolella?",
+          answer:
+            "Suora rekisteröityminen on tällä hetkellä saatavilla Saksassa, Itävallassa ja Sveitsissä. Muissa maissa pyydä early access – otamme studioita käyttöön maa kerrallaan.",
+        },
+      ],
+    },
+    meta: {
+      title: "Hinnat | Treatflow",
+      description:
+        "Läpinäkyvät Treatflow-hinnat: Basic alkaen €39/kk, Booking alkaen €59/kk. Pyydä early access maallesi.",
     },
   },
 };

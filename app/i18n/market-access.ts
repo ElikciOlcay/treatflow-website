@@ -1,43 +1,58 @@
-import { localePathPrefix, type Locale } from "./config";
+import { marketPathPrefix, type Market, type PrefixedMarket } from "./config";
 
 /**
  * Markt-Zugang: DACH darf sich selbst registrieren.
- * Alle anderen Locales starten über Early-Access-Anfrage (kein Self-Serve-Signup).
+ * Alle anderen Maerkte starten ueber Early-Access-Anfrage (kein Self-Serve-Signup).
  */
 export type AccessMode = "self_serve" | "request_access";
 
-export function getAccessMode(locale: Locale): AccessMode {
-  return locale === "de" ? "self_serve" : "request_access";
+export function getAccessMode(market: Market): AccessMode {
+  return market === "de" ? "self_serve" : "request_access";
 }
 
-export function allowsSelfServeRegistration(locale: Locale): boolean {
-  return getAccessMode(locale) === "self_serve";
+export function allowsSelfServeRegistration(market: Market): boolean {
+  return getAccessMode(market) === "self_serve";
 }
 
-/** Primärer CTA-Pfad für den jeweiligen Markt. */
-export function getPrimaryCtaPath(locale: Locale): string {
-  if (allowsSelfServeRegistration(locale)) {
+/** Primaerer CTA-Pfad fuer den jeweiligen Markt. */
+export function getPrimaryCtaPath(market: Market | string): string {
+  const resolved = resolveMarket(market);
+  if (allowsSelfServeRegistration(resolved)) {
     return "https://app.treatflow.io/auth/register";
   }
-  const prefix = localePathPrefix[locale];
-  const earlyAccessSlug: Partial<Record<Locale, string>> = {
-    en: "early-access",
-    es: "acceso-anticipado",
-    it: "accesso-anticipato",
-    fr: "acces-anticipe",
-  };
-  const slug = earlyAccessSlug[locale] ?? "early-access";
-  return prefix ? `${prefix}/${slug}` : `/${slug}`;
+  const prefix = marketPathPrefix[resolved];
+  return prefix ? `${prefix}/early-access` : "/us/early-access";
 }
 
-export function isExternalCta(locale: Locale): boolean {
-  return allowsSelfServeRegistration(locale);
+export function isExternalCta(market: Market | string): boolean {
+  return allowsSelfServeRegistration(resolveMarket(market));
 }
 
-export const APP_LOGIN_BY_LOCALE: Partial<Record<Locale, string>> = {
+/** Legacy Locale-Strings (en) → Default-Markt us. */
+function resolveMarket(value: string): Market {
+  if (isMarketLike(value)) return value;
+  if (value === "en") return "us";
+  return "us";
+}
+
+export const APP_LOGIN_BY_MARKET: Record<Market, string> = {
   de: "https://app.treatflow.io/auth/login",
-  en: "https://app.treatflow.io/auth/login?lang=en",
-  es: "https://app.treatflow.io/auth/login?lang=en",
-  it: "https://app.treatflow.io/auth/login?lang=en",
-  fr: "https://app.treatflow.io/auth/login?lang=en",
+  us: "https://app.treatflow.io/auth/login?lang=en",
+  nl: "https://app.treatflow.io/auth/login?lang=en",
+  uk: "https://app.treatflow.io/auth/login?lang=en",
+  fi: "https://app.treatflow.io/auth/login?lang=en",
+  ie: "https://app.treatflow.io/auth/login?lang=en",
+  ca: "https://app.treatflow.io/auth/login?lang=en",
+  au: "https://app.treatflow.io/auth/login?lang=en",
+  ae: "https://app.treatflow.io/auth/login?lang=en",
 };
+
+/** @deprecated use APP_LOGIN_BY_MARKET */
+export const APP_LOGIN_BY_LOCALE = APP_LOGIN_BY_MARKET;
+
+function isMarketLike(value: string): value is Market {
+  return value in marketPathPrefix;
+}
+
+/** Hilfs-Typ fuer Call-Sites die PrefixedMarket uebergeben. */
+export type MarketAccessInput = Market | PrefixedMarket;

@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "features": "Functies",
+    "industries": "Branches",
+    "pricing": "Prijzen",
+    "contact": "Contact",
+    "login": "Inloggen",
+    "tryFree": "Gratis proberen",
+    "requestAccess": "Vroege toegang aanvragen"
+  },
+  "footer": {
+    "tagline": "Jouw digitale studio-assistent. Made in Austria.",
+    "features": "Functies",
+    "industries": "Branches",
+    "product": "Product",
+    "company": "Bedrijf",
+    "legal": "Juridisch",
+    "aboutUs": "Over ons",
+    "contact": "Contact",
+    "pricing": "Prijzen",
+    "tryFree": "Gratis proberen",
+    "requestAccess": "Vroege toegang aanvragen",
+    "login": "Inloggen",
+    "privacy": "Privacybeleid",
+    "terms": "Algemene voorwaarden",
+    "rights": "Alle rechten voorbehouden."
+  },
+  "common": {
+    "tryFree": "14 dagen gratis proberen",
+    "requestAccess": "Vroege toegang aanvragen",
+    "bookDemo": "Vroege toegang aanvragen",
+    "learnMore": "Meer informatie",
+    "noCreditCard": "Geen creditcard nodig",
+    "cancelAnytime": "Altijd opzegbaar",
+    "waitlistNote": "Zelfregistratie is momenteel beschikbaar in Duitsland, Oostenrijk en Zwitserland. Vraag vroege toegang aan voor jouw land."
+  }
+}

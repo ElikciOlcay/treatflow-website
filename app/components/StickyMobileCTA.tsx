@@ -4,17 +4,16 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ArrowRight } from 'lucide-react';
-import type { Locale } from '@/app/i18n/config';
+import type { Market } from '@/app/i18n/config';
+import { isPrefixedMarket } from '@/app/i18n/config';
 import { getPrimaryCtaPath, isExternalCta } from '@/app/i18n/market-access';
 
 const LANDING_PAGES_WITH_OWN_STICKY_CTA = ['/landing/kosmetikstudio-software'];
 
-function localeFromPath(pathname: string | null): Locale {
+function marketFromPath(pathname: string | null): Market {
   if (!pathname) return 'de';
-  if (pathname.startsWith('/en')) return 'en';
-  if (pathname.startsWith('/es')) return 'es';
-  if (pathname.startsWith('/it')) return 'it';
-  if (pathname.startsWith('/fr')) return 'fr';
+  const match = pathname.match(/^\/([a-z]{2})(?=\/|$)/);
+  if (match && isPrefixedMarket(match[1])) return match[1];
   return 'de';
 }
 
@@ -22,20 +21,18 @@ export default function StickyMobileCTA() {
   const pathname = usePathname();
   const [visible, setVisible] = useState(false);
   const hideOnLandingPage = LANDING_PAGES_WITH_OWN_STICKY_CTA.includes(pathname);
-  const locale = localeFromPath(pathname);
-  const ctaPath = getPrimaryCtaPath(locale);
-  const external = isExternalCta(locale);
+  const market = marketFromPath(pathname);
+  const ctaPath = getPrimaryCtaPath(market);
+  const external = isExternalCta(market);
 
   const copy =
-    locale === 'es'
-      ? { cta: 'Solicitar acceso anticipado', note: 'Disponible primero en DACH · Solicita tu país' }
-      : locale === 'it'
-        ? { cta: 'Richiedi accesso anticipato', note: 'Prima in DACH · Richiedi per il tuo Paese' }
-        : locale === 'fr'
-          ? { cta: 'Demander un accès anticipé', note: "D'abord en DACH · Demandez pour votre pays" }
-          : locale === 'de'
-            ? { cta: 'Jetzt kostenlos testen', note: '14 Tage gratis · Keine Kreditkarte' }
-            : { cta: 'Request early access', note: 'Self-serve in DACH · Request for your country' };
+    market === 'nl'
+      ? { cta: 'Vroege toegang aanvragen', note: 'Self-serve in DACH · Vraag aan voor jouw land' }
+      : market === 'fi'
+        ? { cta: 'Pyydä varhaista pääsyä', note: 'Self-serve DACH · Pyydä omaan maahasi' }
+        : market === 'de'
+          ? { cta: 'Jetzt kostenlos testen', note: '14 Tage gratis · Keine Kreditkarte' }
+          : { cta: 'Request early access', note: 'Self-serve in DACH · Request for your country' };
 
   useEffect(() => {
     if (hideOnLandingPage) return;

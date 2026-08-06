@@ -1,24 +1,30 @@
 import Link from "next/link";
 import type { Dictionary } from "../i18n/dictionaries";
-import type { Locale } from "../i18n/config";
 import {
-  APP_LOGIN_BY_LOCALE,
+  marketHomePath,
+  marketLabels,
+  markets,
+  marketPathPrefix,
+  type PrefixedMarket,
+} from "../i18n/config";
+import {
+  APP_LOGIN_BY_MARKET,
   getPrimaryCtaPath,
   isExternalCta,
 } from "../i18n/market-access";
-import {
-  coreFeatureSlugs,
-  extraFeatureSlugs,
-  industryPath,
-  productPath,
-  type IntlLocale,
-} from "../i18n/intl-routes";
+import { EN_SLUGS } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
 
-type NavLocale = Extract<Locale, "en" | "es" | "it" | "fr">;
+type NavLang = "en" | "nl" | "fi";
+
+function toNavLang(market: PrefixedMarket): NavLang {
+  if (market === "nl") return "nl";
+  if (market === "fi") return "fi";
+  return "en";
+}
 
 const featureLabels: Record<
-  NavLocale,
+  NavLang,
   {
     calendar: string;
     vouchers: string;
@@ -46,48 +52,35 @@ const featureLabels: Record<
     shop: "Shop",
     website: "Studio website",
   },
-  es: {
-    calendar: "Calendario de citas",
-    vouchers: "Vales",
-    booking: "Reservas online",
-    records: "Fichas de clientes",
-    forms: "Formularios",
-    docs: "Documentación de tratamientos",
-    messaging: "Mensajería",
-    integrations: "Integraciones",
-    features: "Todas las funciones",
-    shop: "Tienda",
-    website: "Web para salones",
+  nl: {
+    calendar: "Afsprakenkalender",
+    vouchers: "Cadeaubonnen",
+    booking: "Online boeken",
+    records: "Klantendossiers",
+    forms: "Formulieren",
+    docs: "Behandelingsdocumentatie",
+    messaging: "Berichten",
+    integrations: "Integraties",
+    features: "Alle functies",
+    shop: "Shop",
+    website: "Studio-website",
   },
-  it: {
-    calendar: "Calendario appuntamenti",
-    vouchers: "Buoni regalo",
-    booking: "Prenotazioni online",
-    records: "Schede clienti",
-    forms: "Moduli",
-    docs: "Documentazione trattamenti",
-    messaging: "Messaggistica",
-    integrations: "Integrazioni",
-    features: "Tutte le funzionalità",
-    shop: "Negozio",
-    website: "Sito web del centro",
-  },
-  fr: {
-    calendar: "Calendrier de rendez-vous",
-    vouchers: "Bons cadeaux",
-    booking: "Réservation en ligne",
-    records: "Fiches clients",
-    forms: "Formulaires",
-    docs: "Documentation des soins",
-    messaging: "Messagerie",
-    integrations: "Intégrations",
-    features: "Toutes les fonctionnalités",
-    shop: "Boutique",
-    website: "Site web institut",
+  fi: {
+    calendar: "Ajanvarauskalenteri",
+    vouchers: "Lahjakortit",
+    booking: "Verkkovaraus",
+    records: "Asiakaskortistot",
+    forms: "Lomakkeet",
+    docs: "Hoitodokumentaatio",
+    messaging: "Viestintä",
+    integrations: "Integraatiot",
+    features: "Kaikki ominaisuudet",
+    shop: "Kauppa",
+    website: "Studion verkkosivusto",
   },
 };
 
-const industryLabels: Record<NavLocale, Record<IndustryPageKey, string>> = {
+const industryLabels: Record<NavLang, Record<IndustryPageKey, string>> = {
   en: {
     "beauty-salon-software": "Beauty salons",
     "laser-hair-removal-software": "Laser hair removal",
@@ -99,38 +92,27 @@ const industryLabels: Record<NavLocale, Record<IndustryPageKey, string>> = {
     "spa-wellness-software": "Spa & wellness",
     "massage-software": "Massage practices",
   },
-  es: {
-    "beauty-salon-software": "Salones de belleza",
-    "laser-hair-removal-software": "Depilación láser",
-    "permanent-makeup-software": "Maquillaje permanente",
-    "aesthetic-clinic-software": "Clínicas estéticas",
-    "tattoo-studio-software": "Estudios de tatuajes",
-    "nail-salon-software": "Salones de uñas",
-    "lash-studio-software": "Estudios de pestañas",
-    "spa-wellness-software": "Spa y wellness",
-    "massage-software": "Centros de masajes",
+  nl: {
+    "beauty-salon-software": "Beauty salons",
+    "laser-hair-removal-software": "Laserontharing",
+    "permanent-makeup-software": "Permanente make-up",
+    "aesthetic-clinic-software": "Esthetische klinieken",
+    "tattoo-studio-software": "Tattoostudio's",
+    "nail-salon-software": "Nagelsalons",
+    "lash-studio-software": "Wimperstudio's",
+    "spa-wellness-software": "Spa & wellness",
+    "massage-software": "Massagepraktijken",
   },
-  it: {
-    "beauty-salon-software": "Centri estetici",
-    "laser-hair-removal-software": "Epilazione laser",
-    "permanent-makeup-software": "Trucco permanente",
-    "aesthetic-clinic-software": "Cliniche estetiche",
-    "tattoo-studio-software": "Studi di tatuaggi",
-    "nail-salon-software": "Centri unghie",
-    "lash-studio-software": "Studi ciglia",
-    "spa-wellness-software": "Spa e wellness",
-    "massage-software": "Studi di massaggi",
-  },
-  fr: {
-    "beauty-salon-software": "Instituts de beauté",
-    "laser-hair-removal-software": "Épilation laser",
-    "permanent-makeup-software": "Maquillage permanent",
-    "aesthetic-clinic-software": "Cliniques esthétiques",
-    "tattoo-studio-software": "Salons de tatouage",
-    "nail-salon-software": "Salons d'ongles",
-    "lash-studio-software": "Studios de cils",
-    "spa-wellness-software": "Spa et wellness",
-    "massage-software": "Cabinets de massage",
+  fi: {
+    "beauty-salon-software": "Kauneussalongit",
+    "laser-hair-removal-software": "Laserkarvanpoisto",
+    "permanent-makeup-software": "Pysyvä meikki",
+    "aesthetic-clinic-software": "Esteettiset klinikat",
+    "tattoo-studio-software": "Tatuointistudiot",
+    "nail-salon-software": "Kynsisalongit",
+    "lash-studio-software": "Ripsistudiot",
+    "spa-wellness-software": "Spa & wellness",
+    "massage-software": "Hierontapalvelut",
   },
 };
 
@@ -148,31 +130,33 @@ const industryOrder: IndustryPageKey[] = [
 
 export default function FooterEn({
   dict,
-  locale = "en",
+  locale = "us",
 }: {
   dict: Dictionary;
-  locale?: NavLocale;
+  locale?: PrefixedMarket;
 }) {
-  const labels = featureLabels[locale];
-  const industries = industryLabels[locale];
-  const ctaPath = getPrimaryCtaPath(locale);
-  const ctaExternal = isExternalCta(locale);
+  const market = locale;
+  const lang = toNavLang(market);
+  const base = marketPathPrefix[market];
+  const labels = featureLabels[lang];
+  const industries = industryLabels[lang];
+  const ctaPath = getPrimaryCtaPath(market);
+  const ctaExternal = isExternalCta(market);
   const ctaLabel = ctaExternal ? dict.footer.tryFree : dict.footer.requestAccess;
-  const loginUrl = APP_LOGIN_BY_LOCALE[locale] ?? APP_LOGIN_BY_LOCALE.en!;
-  const l = locale as IntlLocale;
+  const loginUrl = APP_LOGIN_BY_MARKET[market] ?? APP_LOGIN_BY_MARKET.us;
 
   const featureLinks = [
-    { href: `/${locale}/${coreFeatureSlugs["appointment-calendar"][locale]}`, label: labels.calendar },
-    { href: `/${locale}/${extraFeatureSlugs.vouchers[locale]}`, label: labels.vouchers },
-    { href: `/${locale}/${coreFeatureSlugs["online-booking"][locale]}`, label: labels.booking },
-    { href: `/${locale}/${coreFeatureSlugs["client-records"][locale]}`, label: labels.records },
-    { href: `/${locale}/${coreFeatureSlugs.forms[locale]}`, label: labels.forms },
-    { href: `/${locale}/${coreFeatureSlugs["treatment-documentation"][locale]}`, label: labels.docs },
-    { href: `/${locale}/${extraFeatureSlugs.messaging[locale]}`, label: labels.messaging },
-    { href: `/${locale}/${extraFeatureSlugs.integrations[locale]}`, label: labels.integrations },
-    { href: `/${locale}/${extraFeatureSlugs.features[locale]}`, label: labels.features },
-    { href: `/${locale}/${extraFeatureSlugs.shop[locale]}`, label: labels.shop },
-    { href: `/${locale}/${extraFeatureSlugs["studio-website"][locale]}`, label: labels.website },
+    { href: `${base}/${EN_SLUGS["appointment-calendar"]}`, label: labels.calendar },
+    { href: `${base}/${EN_SLUGS.vouchers}`, label: labels.vouchers },
+    { href: `${base}/${EN_SLUGS["online-booking"]}`, label: labels.booking },
+    { href: `${base}/${EN_SLUGS["client-records"]}`, label: labels.records },
+    { href: `${base}/${EN_SLUGS.forms}`, label: labels.forms },
+    { href: `${base}/${EN_SLUGS["treatment-documentation"]}`, label: labels.docs },
+    { href: `${base}/${EN_SLUGS.messaging}`, label: labels.messaging },
+    { href: `${base}/${EN_SLUGS.integrations}`, label: labels.integrations },
+    { href: `${base}/${EN_SLUGS.features}`, label: labels.features },
+    { href: `${base}/${EN_SLUGS.shop}`, label: labels.shop },
+    { href: `${base}/${EN_SLUGS["studio-website"]}`, label: labels.website },
   ];
 
   return (
@@ -207,7 +191,7 @@ export default function FooterEn({
               {industryOrder.map((key) => (
                 <li key={key}>
                   <Link
-                    href={industryPath(l, key)}
+                    href={`${base}/${EN_SLUGS[key]}`}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {industries[key]}
@@ -222,7 +206,7 @@ export default function FooterEn({
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href={productPath(l, "about")}
+                  href={`${base}/${EN_SLUGS.about}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {dict.footer.aboutUs}
@@ -230,7 +214,7 @@ export default function FooterEn({
               </li>
               <li>
                 <Link
-                  href={productPath(l, "contact")}
+                  href={`${base}/${EN_SLUGS.contact}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {dict.footer.contact}
@@ -238,7 +222,7 @@ export default function FooterEn({
               </li>
               <li>
                 <Link
-                  href={productPath(l, "pricing")}
+                  href={`${base}/${EN_SLUGS.pricing}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {dict.footer.pricing}
@@ -278,7 +262,7 @@ export default function FooterEn({
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href={productPath(l, "privacy")}
+                  href={`${base}/${EN_SLUGS.privacy}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {dict.footer.privacy}
@@ -286,7 +270,7 @@ export default function FooterEn({
               </li>
               <li>
                 <Link
-                  href={productPath(l, "terms")}
+                  href={`${base}/${EN_SLUGS.terms}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {dict.footer.terms}
@@ -308,21 +292,15 @@ export default function FooterEn({
             © {new Date().getFullYear()} Treatflow. {dict.footer.rights}
           </span>
           <div className="flex flex-wrap gap-4">
-            <Link href="/" className="hover:text-white transition-colors">
-              Deutsch
-            </Link>
-            <Link href="/en" className="hover:text-white transition-colors">
-              English
-            </Link>
-            <Link href="/es" className="hover:text-white transition-colors">
-              Español
-            </Link>
-            <Link href="/it" className="hover:text-white transition-colors">
-              Italiano
-            </Link>
-            <Link href="/fr" className="hover:text-white transition-colors">
-              Français
-            </Link>
+            {markets.map((m) => (
+              <Link
+                key={m}
+                href={marketHomePath(m)}
+                className="hover:text-white transition-colors"
+              >
+                {marketLabels[m]}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
