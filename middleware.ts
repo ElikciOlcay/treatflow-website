@@ -36,16 +36,11 @@ function isBot(request: NextRequest): boolean {
   return BOT_UA.test(ua);
 }
 
-function prefersGerman(request: NextRequest): boolean {
-  const country = detectCountry(request);
-  if (country) {
-    return (GERMAN_SPEAKING_COUNTRIES as readonly string[]).includes(country);
-  }
+/** Browser bevorzugt Deutsch (Accept-Language), unabhaengig vom Geo-Land. */
+function prefersGermanLanguage(request: NextRequest): boolean {
   const acceptLanguage = request.headers.get("accept-language")?.toLowerCase();
-  if (acceptLanguage) {
-    return acceptLanguage.split(",").some((part) => part.trim().startsWith("de"));
-  }
-  return false;
+  if (!acceptLanguage) return false;
+  return acceptLanguage.split(",").some((part) => part.trim().startsWith("de"));
 }
 
 function detectMarketFromCountry(country: string | null): Market | null {
@@ -219,7 +214,9 @@ export function middleware(request: NextRequest) {
   const country = detectCountry(request);
   const fromCountry = detectMarketFromCountry(country);
 
-  if (fromCountry === "de" || (!fromCountry && prefersGerman(request))) {
+  // DACH-Geo ODER deutschsprachiger Browser → immer DE-Homepage
+  // (verhindert, dass DE-Kunden via Urlaubs-IP / Ausland auf /us landen)
+  if (fromCountry === "de" || prefersGermanLanguage(request)) {
     const response = NextResponse.next();
     response.cookies.set(MARKET_COOKIE, "de", {
       maxAge: COOKIE_MAX_AGE,
@@ -233,7 +230,7 @@ export function middleware(request: NextRequest) {
     return redirectWithMarket(request, fromCountry);
   }
 
-  // Unbekannte Laender → US (englischer Default-Markt)
+  // Unbekannte Laender ohne DE-Sprache → US (englischer Default-Markt)
   return redirectWithMarket(request, "us");
 }
 
