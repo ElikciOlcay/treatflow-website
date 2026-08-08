@@ -17,7 +17,7 @@ const funktionen = [
     { href: '/behandlungsdokumentation', label: 'Dokumentation', desc: 'Behandlungen digital festhalten', icon: FileText, color: 'text-blue-600 bg-blue-100' },
     { href: '/nachrichtenautomatisierung', label: 'Nachrichten', desc: 'E-Mail und SMS automatisiert', icon: Bell, color: 'text-purple-600 bg-purple-100' },
     { href: '/nisv-dokumentation', label: 'NiSV-Dokumentation', desc: 'Konform dokumentieren', icon: Shield, color: 'text-teal-600 bg-teal-100' },
-    { href: '/integrationen', label: 'Integrationen', desc: 'Lexware, Google Kalender, Zapier', icon: Plug, color: 'text-indigo-600 bg-indigo-100' },
+    { href: '/integrationen', label: 'Integrationen', desc: 'Lexware, Google Kalender, Zapier, SumUp u. m.', icon: Plug, color: 'text-indigo-600 bg-indigo-100' },
     { href: '/kosmetikstudio-software-vergleich', label: 'Software-Vergleich', desc: 'Treatflow vs. andere Lösungen', icon: BarChart3, color: 'text-gray-600 bg-gray-100' },
 ];
 

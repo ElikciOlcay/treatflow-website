@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
     Receipt, Calendar, Zap, CheckCircle, ArrowRight, Plug,
-    RefreshCw, Workflow, ShieldCheck,
+    RefreshCw, Workflow, ShieldCheck, CreditCard, Wallet, Building2,
 } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -12,15 +12,18 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 import { buildHreflangAlternates } from '../i18n/seo';
 export const metadata: Metadata = {
     title: 'Integrationen & Apps für dein Kosmetikstudio',
-    description: 'Verbinde Treatflow mit deinen Lieblings-Tools: Lexware Office für Buchhaltung & Rechnungen, Google Kalender für die Terminsynchronisation und Zapier für über 7.000 weitere Apps.',
+    description: 'Verbinde Treatflow mit Lexware Office, Google Kalender, SumUp, Zapier u. v. m. Buchhaltung, Kartenzahlung, Online-Bezahlung und Automatisierung – alles in einer Plattform.',
     keywords: [
         'Treatflow Integrationen',
         'Kosmetikstudio Software Schnittstellen',
         'Lexware Office Integration',
         'Google Kalender Synchronisation',
         'Zapier Kosmetikstudio',
+        'SumUp Kartenterminal Kosmetikstudio',
+        'Online Zahlung Kosmetikstudio',
         'Buchhaltung Kosmetikstudio',
         'Terminkalender Sync',
+        'AbaNinja Schweiz',
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/integrationen',
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
     },
     openGraph: {
         title: 'Integrationen & Apps | Treatflow',
-        description: 'Verbinde Treatflow mit Lexware Office, Google Kalender und Zapier – für automatische Buchhaltung, synchrone Termine und über 7.000 weitere Apps.',
+        description: 'Verbinde Treatflow mit Lexware, SumUp, Google Kalender, Zapier u. v. m. – Buchhaltung, Kartenzahlung und Automatisierung in einer Plattform.',
         url: 'https://www.treatflow.io/integrationen',
     },
 };
@@ -71,6 +74,42 @@ const integrationen = [
         ],
     },
     {
+        id: 'sumup-terminal',
+        icon: CreditCard,
+        name: 'SumUp Kartenterminal',
+        category: 'Kartenzahlung',
+        description:
+            'Nimm Kartenzahlungen direkt aus der Treatflow Kasse an – mit dem SumUp Solo Terminal per Cloud API, ohne manuelles Eintippen.',
+        color: 'text-sky-600',
+        bg: 'bg-sky-50',
+        gradient: 'from-sky-500 to-cyan-600',
+        border: 'border-sky-200 hover:border-sky-400',
+        highlights: [
+            'Kartenzahlung direkt aus der Kasse',
+            'SumUp Solo per Cloud API angebunden',
+            'Kein manuelles Eintippen der Beträge',
+            'Sichere, kontaktlose Zahlung',
+        ],
+    },
+    {
+        id: 'treatflow-pay',
+        icon: Wallet,
+        name: 'Treatflow Pay',
+        category: 'Online-Bezahlung',
+        description:
+            'Lass Kunden Anzahlungen oder Vollzahlungen direkt bei der Online-Buchung leisten – sicher über Stripe, transparent abgerechnet.',
+        color: 'text-violet-600',
+        bg: 'bg-violet-50',
+        gradient: 'from-violet-500 to-purple-600',
+        border: 'border-violet-200 hover:border-violet-400',
+        highlights: [
+            'Anzahlungen bei Online-Buchungen',
+            'Vollzahlungen vorab möglich',
+            'Sichere Abwicklung über Stripe',
+            '2,69 % pro Transaktion – transparent',
+        ],
+    },
+    {
         id: 'zapier',
         icon: Zap,
         name: 'Zapier',
@@ -86,6 +125,24 @@ const integrationen = [
             'Webhooks bei neuen Terminen & Formularen',
             'Eigene Automatisierungen ohne Code',
             'Google Sheets, CRM, E-Mail u. v. m.',
+        ],
+    },
+    {
+        id: 'abaninja',
+        icon: Building2,
+        name: 'Swiss21 AbaNinja',
+        category: 'Buchhaltung Schweiz',
+        description:
+            'Die Schweizer Buchhaltungslösung: Synchronisiere Kunden und erstelle QR-Rechnungen direkt aus Treatflow – speziell für Studios in der Schweiz.',
+        color: 'text-red-600',
+        bg: 'bg-red-50',
+        gradient: 'from-red-500 to-rose-600',
+        border: 'border-red-200 hover:border-red-400',
+        highlights: [
+            'Kunden automatisch synchronisieren',
+            'Schweizer QR-Rechnungen erstellen',
+            'Speziell für den Schweizer Markt',
+            'Nahtlose Anbindung an Swiss21',
         ],
     },
 ];
@@ -114,7 +171,7 @@ const vorteile = [
 const faqs = [
     {
         q: 'Welche Apps kann ich mit Treatflow verbinden?',
-        a: 'Aktuell kannst du Treatflow direkt mit Lexware Office (Buchhaltung & Rechnungen) und Google Kalender (Terminsynchronisation) verbinden. Über Zapier erreichst du zusätzlich mehr als 7.000 weitere Apps wie Google Sheets, Mailchimp oder dein CRM.',
+        a: 'Treatflow lässt sich direkt mit Lexware Office (Buchhaltung DE), Swiss21 AbaNinja (Buchhaltung CH), Google Kalender (Terminsynchronisation), SumUp (Kartenzahlung) und Treatflow Pay (Online-Bezahlung) verbinden. Über Zapier erreichst du zusätzlich mehr als 7.000 weitere Apps wie Google Sheets, Mailchimp oder dein CRM.',
     },
     {
         q: 'Wie synchronisiere ich meine Termine mit dem Google Kalender?',
@@ -127,6 +184,10 @@ const faqs = [
     {
         q: 'Wofür brauche ich die Zapier-Integration?',
         a: 'Mit Zapier automatisierst du individuelle Workflows ohne Programmierung. Bei einem neuen Termin oder einem ausgefüllten Formular kann Treatflow z. B. automatisch eine Zeile in Google Sheets anlegen, einen Kontakt im CRM erstellen oder eine E-Mail auslösen.',
+    },
+    {
+        q: 'Kann ich Kartenzahlungen über Treatflow annehmen?',
+        a: 'Ja. Mit der SumUp-Integration verbindest du dein SumUp Solo Terminal und nimmst Kartenzahlungen direkt aus der Treatflow Kasse an – per Cloud API, ohne manuelles Eintippen. Für Online-Buchungen bietet Treatflow Pay sichere Anzahlungen und Vollzahlungen über Stripe.',
     },
     {
         q: 'Sind die Integrationen in jedem Tarif enthalten?',
@@ -194,7 +255,7 @@ export default function IntegrationenPage() {
                             Diese Apps sind bereits integriert
                         </h2>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Drei starke Verbindungen, die dir täglich Zeit sparen.
+                            Von Buchhaltung über Kartenzahlung bis Automatisierung – starke Verbindungen, die dir täglich Zeit sparen.
                         </p>
                     </div>
 
@@ -270,7 +331,7 @@ export default function IntegrationenPage() {
                     <div className="space-y-8">
                         {[
                             { step: '1', title: 'App auswählen', text: 'Öffne im Dashboard die Studio-Einstellungen unter „Apps" und wähle die gewünschte Integration aus.', gradient: 'from-indigo-500 to-purple-600' },
-                            { step: '2', title: 'Konto verbinden', text: 'Melde dich einmalig bei Lexware, Google oder Zapier an und autorisiere die Verbindung.', gradient: 'from-emerald-500 to-teal-600' },
+                            { step: '2', title: 'Konto verbinden', text: 'Melde dich einmalig beim jeweiligen Anbieter an – z. B. Lexware, Google, SumUp oder Zapier – und autorisiere die Verbindung.', gradient: 'from-emerald-500 to-teal-600' },
                             { step: '3', title: 'Automatisch synchron', text: 'Ab sofort laufen Termine, Kunden und Workflows automatisch im Hintergrund zusammen.', gradient: 'from-orange-500 to-amber-600' },
                         ].map((item) => (
                             <div key={item.step} className="flex items-start">
@@ -345,7 +406,7 @@ export default function IntegrationenPage() {
                         Vernetze dein Studio mit den richtigen Tools
                     </h2>
                     <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
-                        Teste Treatflow 14 Tage kostenlos und verbinde Lexware, Google Kalender und Zapier in wenigen Minuten.
+                        Teste Treatflow 14 Tage kostenlos und verbinde Lexware, SumUp, Google Kalender, Zapier und mehr in wenigen Minuten.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a

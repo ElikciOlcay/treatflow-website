@@ -161,7 +161,7 @@ export default function PricingSection() {
               </li>
               <li className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
-                <span className="text-sm">Integrationen (Lexware, Google Kalender, Zapier)</span>
+                <span className="text-sm">Integrationen (Lexware, Google Kalender, Zapier, SumUp u. m.)</span>
               </li>
               <li className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
