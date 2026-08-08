@@ -1,4 +1,4 @@
-import { Calendar, Link2, Bell, CheckCircle, ArrowRight, Clock, Users, Smartphone, Languages, Ticket } from 'lucide-react';
+import { Calendar, Link2, Bell, CheckCircle, ArrowRight, Clock, Users, Smartphone, Languages, Ticket, ListOrdered } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navigation from '../components/Navigation';
@@ -11,13 +11,13 @@ import ContentAttribution from '../components/ContentAttribution';
 import { buildHreflangAlternates } from '../i18n/seo';
 import { generateWebPageSchema } from '@/lib/content-attribution';
 
-const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_MODIFIED = '2026-08-08';
 const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
     title: 'Online-Terminbuchung & Buchungssystem Kosmetikstudio',
     description: 'Online-Terminbuchung für dein Kosmetikstudio: Kunden buchen 24/7 über deinen persönlichen Link. Automatische Bestätigungen, weniger No-Shows.',
-    keywords: ['Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Buchungssystem Kosmetik', 'Online Buchungssystem Kosmetik', 'Terminbuchungssoftware Kosmetik', 'Buchungssoftware Kosmetikstudio', 'Buchungslink Beauty', '24/7 Terminbuchung', 'Online-Terminbuchung Kosmetik', 'Kosmetikstudio Buchungssystem', 'mehrsprachige Buchungsseite', 'Buchungsseite mehrere Sprachen', 'Rabattcodes Online-Buchung', 'Rabattcode Kosmetikstudio'],
+    keywords: ['Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Buchungssystem Kosmetik', 'Online Buchungssystem Kosmetik', 'Terminbuchungssoftware Kosmetik', 'Buchungssoftware Kosmetikstudio', 'Buchungslink Beauty', '24/7 Terminbuchung', 'Online-Terminbuchung Kosmetik', 'Kosmetikstudio Buchungssystem', 'mehrsprachige Buchungsseite', 'Buchungsseite mehrere Sprachen', 'Rabattcodes Online-Buchung', 'Rabattcode Kosmetikstudio', 'Warteliste Kosmetikstudio', 'Warteliste Online-Buchung'],
     alternates: {
         canonical: 'https://www.treatflow.io/online-buchungen',
         ...buildHreflangAlternates("online-booking"),
@@ -79,6 +79,14 @@ const faqSchema = {
             "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Durch automatische Terminerinnerungen per SMS und E-Mail zu konfigurierbaren Zeitpunkten vor dem Termin. Kunden werden erinnert und können bei Bedarf stornieren, sodass der Termin für andere frei wird. Studios berichten von bis zu 80% weniger No-Shows."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Was passiert, wenn alle Termine ausgebucht sind?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mit der Warteliste-Funktion können sich Kund:innen auf freie Termine vormerken lassen. Wird ein bestehender Termin storniert, erhalten passende Interessenten automatisch eine E-Mail mit den frei gewordenen Zeiten. So gehen keine Anfragen verloren."
             }
         }
     ]
@@ -305,6 +313,77 @@ export default function OnlineBuchungenPage() {
                                     Stornierungsbenachrichtigungen per SMS
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Warteliste -- NEU */}
+            <section className="py-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="flex flex-col md:flex-row items-start gap-10">
+                            <div className="flex-1">
+                                <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide mb-4">
+                                    Neu
+                                </div>
+                                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
+                                    Warteliste bei ausgebuchten Terminen
+                                </h2>
+                                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                                    Ausgebucht heisst nicht verloren: Wenn online keine freien Termine mehr verfuegbar sind, koennen sich Kund:innen auf die Warteliste setzen.
+                                    Wird ein Termin storniert, erhalten passende Interessenten automatisch eine E-Mail mit den frei gewordenen Zeiten.
+                                </p>
+                                <ul className="space-y-3 mb-8">
+                                    <li className="flex items-start text-gray-700">
+                                        <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 mt-0.5 flex-shrink-0" />
+                                        <span>Automatische Benachrichtigung bei Storno -- per E-Mail an passende Interessenten</span>
+                                    </li>
+                                    <li className="flex items-start text-gray-700">
+                                        <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 mt-0.5 flex-shrink-0" />
+                                        <span>Zwei Modi: nur den Naechsten benachrichtigen oder alle Interessenten des Tages</span>
+                                    </li>
+                                    <li className="flex items-start text-gray-700">
+                                        <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 mt-0.5 flex-shrink-0" />
+                                        <span>Uebersicht aller Eintraege und manuelle Benachrichtigung im Dashboard</span>
+                                    </li>
+                                    <li className="flex items-start text-gray-700">
+                                        <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 mt-0.5 flex-shrink-0" />
+                                        <span>Aktivierung mit einem Klick unter Einstellungen &gt; Online-Buchung</span>
+                                    </li>
+                                </ul>
+                                <a
+                                    href="https://app.treatflow.io/auth/register"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center bg-gray-900 text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-colors duration-200"
+                                >
+                                    Jetzt kostenlos testen
+                                    <ArrowRight className="ml-2 h-5 w-5" />
+                                </a>
+                            </div>
+                            <div className="flex-shrink-0 w-full md:w-80">
+                                <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
+                                    <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                                        <ListOrdered className="h-6 w-6 text-white" />
+                                    </div>
+                                    <h3 className="text-lg font-bold text-gray-900 mb-2">So funktioniert die Warteliste</h3>
+                                    <ol className="space-y-3 text-sm text-gray-600">
+                                        <li className="flex items-start">
+                                            <span className="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5">1</span>
+                                            <span>Tag ist ausgebucht -- Kund:in traegt sich mit Wunschtermin ein</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <span className="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5">2</span>
+                                            <span>Ein bestehender Termin wird storniert</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <span className="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5">3</span>
+                                            <span>Passende Interessenten erhalten automatisch eine E-Mail mit freien Zeiten</span>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -599,6 +678,10 @@ export default function OnlineBuchungenPage() {
                             {
                                 q: 'Wie reduziert ein Buchungssystem No-Shows?',
                                 a: 'Durch automatische Terminerinnerungen per SMS und E-Mail zu konfigurierbaren Zeitpunkten vor dem Termin. Kunden werden erinnert und können bei Bedarf stornieren, sodass der Termin für andere frei wird. Studios berichten von bis zu 80% weniger No-Shows.',
+                            },
+                            {
+                                q: 'Was passiert, wenn alle Termine ausgebucht sind?',
+                                a: 'Mit der Warteliste-Funktion können sich Kund:innen auf freie Termine vormerken lassen. Wird ein bestehender Termin storniert, erhalten passende Interessenten automatisch eine E-Mail mit den frei gewordenen Zeiten. So gehen keine Anfragen verloren.',
                             },
                         ].map((faq, index) => (
                             <div key={index} className="border border-gray-200 rounded-xl p-6">
