@@ -331,21 +331,21 @@ export default function OnlineBuchungenPage() {
                                     Warteliste bei ausgebuchten Terminen
                                 </h2>
                                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                    Ausgebucht heisst nicht verloren: Wenn online keine freien Termine mehr verfuegbar sind, koennen sich Kund:innen auf die Warteliste setzen.
+                                    Ausgebucht heißt nicht verloren: Wenn online keine freien Termine mehr verfügbar sind, können sich Kund:innen auf die Warteliste setzen.
                                     Wird ein Termin storniert, erhalten passende Interessenten automatisch eine E-Mail mit den frei gewordenen Zeiten.
                                 </p>
                                 <ul className="space-y-3 mb-8">
                                     <li className="flex items-start text-gray-700">
                                         <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 mt-0.5 flex-shrink-0" />
-                                        <span>Automatische Benachrichtigung bei Storno -- per E-Mail an passende Interessenten</span>
+                                        <span>Automatische Benachrichtigung bei Storno – per E-Mail an passende Interessenten</span>
                                     </li>
                                     <li className="flex items-start text-gray-700">
                                         <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 mt-0.5 flex-shrink-0" />
-                                        <span>Zwei Modi: nur den Naechsten benachrichtigen oder alle Interessenten des Tages</span>
+                                        <span>Zwei Modi: nur den Nächsten benachrichtigen oder alle Interessenten des Tages</span>
                                     </li>
                                     <li className="flex items-start text-gray-700">
                                         <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 mt-0.5 flex-shrink-0" />
-                                        <span>Uebersicht aller Eintraege und manuelle Benachrichtigung im Dashboard</span>
+                                        <span>Übersicht aller Einträge und manuelle Benachrichtigung im Dashboard</span>
                                     </li>
                                     <li className="flex items-start text-gray-700">
                                         <CheckCircle className="h-5 w-5 text-indigo-500 mr-3 mt-0.5 flex-shrink-0" />
@@ -371,7 +371,7 @@ export default function OnlineBuchungenPage() {
                                     <ol className="space-y-3 text-sm text-gray-600">
                                         <li className="flex items-start">
                                             <span className="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5">1</span>
-                                            <span>Tag ist ausgebucht -- Kund:in traegt sich mit Wunschtermin ein</span>
+                                            <span>Tag ist ausgebucht – Kund:in trägt sich mit Wunschtermin ein</span>
                                         </li>
                                         <li className="flex items-start">
                                             <span className="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5">2</span>
