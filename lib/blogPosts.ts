@@ -25,6 +25,42 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
     {
+        slug: 'preiserhoehung-kosmetikstudio',
+        title: 'Preiserhöhung im Kosmetikstudio: So kommunizierst du sie richtig',
+        excerpt:
+            'Preiserhöhung im Kosmetikstudio kommunizieren: Wann du anheben solltest, wie du Stammkundinnen mitnimmst und welche Formulierungen Vertrauen stärken statt verlieren.',
+        category: 'Business',
+        readTime: '9 min',
+        publishDate: '5. August 2026',
+        publishedAt: '2026-08-05',
+        featured: false,
+        image: '/images/blog/preiserhoehung-kosmetikstudio.jpg',
+    },
+    {
+        slug: 'kunden-reaktivieren-kosmetikstudio',
+        title: 'Kunden reaktivieren im Kosmetikstudio: So holst du inaktive zurück',
+        excerpt:
+            'Inaktive Kundinnen im Kosmetikstudio reaktivieren: Segmentierung, Timing, Vorlagen für E-Mail und SMS sowie Angebote, die ohne Dumping wieder Termine bringen.',
+        category: 'Kundenbindung',
+        readTime: '10 min',
+        publishDate: '5. August 2026',
+        publishedAt: '2026-08-05',
+        featured: true,
+        image: '/images/blog/kunden-reaktivieren-kosmetikstudio.jpg',
+    },
+    {
+        slug: 'whatsapp-kosmetikstudio',
+        title: 'WhatsApp im Kosmetikstudio: Termine, Regeln und klare Grenzen',
+        excerpt:
+            'WhatsApp im Kosmetikstudio sinnvoll nutzen: Business-Account, Terminbestätigungen, Grenzen zur Werbung und DSGVO – ohne Chaos im privaten Chat.',
+        category: 'Organisation',
+        readTime: '9 min',
+        publishDate: '5. August 2026',
+        publishedAt: '2026-08-05',
+        featured: false,
+        image: '/images/blog/whatsapp-kosmetikstudio.jpg',
+    },
+    {
         slug: 'google-bewertungen-kosmetikstudio',
         title: 'Google Bewertungen für Kosmetikstudios: So sammelst du mehr und bessere Rezensionen',
         excerpt: 'So sammelst du als Kosmetikstudio mehr Google-Bewertungen: erlaubte Methoden, der richtige Zeitpunkt, automatische Bewertungsanfragen und der Umgang mit negativer Kritik.',

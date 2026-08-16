@@ -7,6 +7,7 @@ import {
     Stethoscope, Pen, ChevronDown, Gem, Eye, Waves, Hand, Globe, Receipt, Gift, Plug
 } from 'lucide-react';
 import Link from 'next/link';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const funktionen = [
     { href: '/terminkalender', label: 'Terminkalender', icon: Calendar, color: 'text-indigo-600 bg-indigo-100' },
@@ -141,6 +142,9 @@ export default function MobileMenu() {
                         </Link>
 
                         <div className="border-t border-gray-100 pt-4 mt-2 space-y-3">
+                            <div className="pb-2">
+                                <LanguageSwitcher current="de" />
+                            </div>
                             <a
                                 href="https://app.treatflow.io/auth/login"
                                 target="_blank"
