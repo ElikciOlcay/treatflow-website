@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, TrendingUp, Users, Sparkles } from 'lucide-react';
 import { blogPosts } from '@/lib/blogPosts';
+import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata = {
     title: 'Kosmetikstudio Blog: Tipps für Beauty-Profis',
@@ -170,17 +171,7 @@ export default function BlogPage() {
                     <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
                         Erhalte wöchentlich die neuesten Artikel und exklusive Tipps für dein Kosmetikstudio direkt in dein Postfach.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-                        <input
-                            type="email"
-                            placeholder="Deine E-Mail-Adresse"
-                            className="flex-1 px-6 py-4 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
-                        />
-                        <button className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center">
-                            Anmelden
-                            <ArrowRight className="ml-2 h-4 w-4" />
-                        </button>
-                    </div>
+                    <NewsletterForm />
                     <p className="text-indigo-200 text-sm mt-4">
                         Kostenlos • Jederzeit abbestellbar • Kein Spam
                     </p>

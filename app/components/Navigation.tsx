@@ -138,6 +138,7 @@ export default function Navigation() {
 
                         <Link href="/preise" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Preise</Link>
                         <Link href="/blog" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Blog</Link>
+                        <Link href="/neuigkeiten" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Neuigkeiten</Link>
                         <Link href="/#testimonials" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Referenzen</Link>
                         <Link href="/kontakt" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Kontakt</Link>
                         <a

@@ -401,6 +401,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const marketRoutes = (Object.keys(localePrefixes) as (keyof typeof localePrefixes)[])
         .flatMap((market) => localeRoutes(market))
 
+    const neuigkeitenIndex = {
+        url: `${baseUrl}/neuigkeiten`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+    }
+
     const blogIndex = {
         url: `${baseUrl}/blog`,
         lastModified: new Date(),
@@ -454,6 +461,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
         ...staticRoutes,
         ...marketRoutes,
+        neuigkeitenIndex,
         blogIndex,
         ...blogRoutes,
         ...landingRoutes,

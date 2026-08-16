@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
+import LeadDownloadForm from '../components/LeadDownloadForm';
 
 export const metadata = {
     title: 'Anamnesebogen Kosmetik: Formulare & Vorlagen',
@@ -486,22 +487,22 @@ export default function AnamnesebogenKosmetikstudioPage() {
             {/* PDF Vorlage Hinweis */}
             <section className="py-12 bg-white border-b border-gray-100">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-100 rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-4">
-                        <div className="flex-1">
+                    <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 sm:p-8">
+                        <div className="mb-6">
                             <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                                Du brauchst erstmal eine PDF-Vorlage?
+                                Kostenlose Anamnesebogen-Vorlage als PDF
                             </h3>
                             <p className="text-gray-600 text-sm">
-                                Lade dir unseren kostenlosen Anamnesebogen mit Einwilligungserklarung als PDF herunter.
+                                Anamnesebogen inkl. Einwilligungserklärung – direkt hier herunterladen.
                             </p>
                         </div>
-                        <Link
-                            href="/anamnesebogen-kosmetik-vorlage-pdf"
-                            className="inline-flex items-center bg-indigo-600 text-white px-5 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors whitespace-nowrap"
-                        >
-                            PDF-Vorlage herunterladen
-                            <ArrowRight className="ml-2 h-4 w-4" />
-                        </Link>
+                        <LeadDownloadForm
+                            downloadUrl="/downloads/anamnesebogen-kosmetik-einwilligung.pdf"
+                            leadSource="Anamnesebogen Kosmetik PDF"
+                            buttonText="Kostenlosen Anamnesebogen herunterladen"
+                            successTitle="Dein Anamnesebogen ist bereit!"
+                            compact
+                        />
                     </div>
                 </div>
             </section>

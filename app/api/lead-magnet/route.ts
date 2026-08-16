@@ -1,101 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
+import {
+    formatViennaTimestamp,
+    isValidEmail,
+    LEAD_MAGNET_MAILING_LISTS,
+    sendLoopsTransactional,
+    upsertLoopsContact,
+} from '@/lib/loops';
 
-const LOOPS_API_BASE = 'https://app.loops.so/api/v1';
-const LOOPS_TRANSACTIONAL_URL = `${LOOPS_API_BASE}/transactional`;
-const LOOPS_CONTACTS_UPDATE_URL = `${LOOPS_API_BASE}/contacts/update`;
-
-/** Loops-Mailinglisten pro Lead-Magnet (startet den zugehörigen Workflow) */
-const LEAD_MAGNET_MAILING_LISTS: Record<string, string> = {
-    'Hygieneplan Kosmetikstudio PDF': 'cmq7r8nvt5uiy0jxi1atv03zb',
-};
-
-async function sendLoopsNotification(data: {
-    email: string;
-    studioName: string;
-    leadSource: string;
-    timestamp: string;
-    contactConsent: boolean;
-}) {
-    const apiKey = process.env.LOOPS_API_KEY;
-    const transactionalId = 'cmpwetiyf21im0jybyi331fig';
-    const notifyEmail = 'olcay.elikci@treatflow.io';
-
-    if (!apiKey) {
-        console.warn('LOOPS_API_KEY nicht konfiguriert');
-        return;
-    }
-
-    const response = await fetch(LOOPS_TRANSACTIONAL_URL, {
-        method: 'POST',
-        headers: {
-            'Authorization': `Bearer ${apiKey}`,
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            transactionalId,
-            email: notifyEmail,
-            dataVariables: {
-                email: data.email,
-                studioName: data.studioName,
-                leadSource: data.leadSource,
-                timestamp: data.timestamp,
-                contactConsent: data.contactConsent ? 'Ja' : 'Nein',
-            },
-        }),
-    });
-
-    if (!response.ok) {
-        const error = await response.text();
-        console.error('Loops API Error:', error);
-        throw new Error(`Loops API Error: ${response.status}`);
-    }
-
-    return response.json();
-}
-
-async function addLeadToLoops(data: {
-    email: string;
-    studioName: string;
-    leadSource: string;
-    mailingListId?: string;
-}) {
-    const apiKey = process.env.LOOPS_API_KEY;
-
-    if (!apiKey) {
-        console.warn('LOOPS_API_KEY nicht konfiguriert');
-        return;
-    }
-
-    const payload: Record<string, unknown> = {
-        email: data.email,
-        source: data.leadSource,
-        studioName: data.studioName,
-        userType: 'lead_magnet',
-    };
-
-    if (data.mailingListId) {
-        payload.mailingLists = {
-            [data.mailingListId]: true,
-        };
-    }
-
-    const response = await fetch(LOOPS_CONTACTS_UPDATE_URL, {
-        method: 'PUT',
-        headers: {
-            'Authorization': `Bearer ${apiKey}`,
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
-    });
-
-    if (!response.ok) {
-        const error = await response.text();
-        console.error('Loops Contact API Error:', error);
-        throw new Error(`Loops Contact API Error: ${response.status}`);
-    }
-
-    return response.json();
-}
+const NOTIFY_TRANSACTIONAL_ID = 'cmpwetiyf21im0jybyi331fig';
+const NOTIFY_EMAIL = 'olcay.elikci@treatflow.io';
 
 export async function POST(request: NextRequest) {
     try {
@@ -116,8 +29,7 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
+        if (!isValidEmail(email)) {
             return NextResponse.json(
                 { error: 'Bitte gib eine gültige E-Mail-Adresse ein.' },
                 { status: 400 }
@@ -126,36 +38,36 @@ export async function POST(request: NextRequest) {
 
         const source = leadSource || 'Unbekannt';
         const studio = studioName?.trim() || 'Nicht angegeben';
-        const timestamp = new Date().toLocaleString('de-DE', { 
-            timeZone: 'Europe/Vienna',
-            day: '2-digit',
-            month: '2-digit',
-            year: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit',
-        }) + ' Uhr';
-
+        const timestamp = formatViennaTimestamp();
         const mailingListId = LEAD_MAGNET_MAILING_LISTS[source];
 
+        const contactPayload: Record<string, unknown> = {
+            email,
+            source,
+            studioName: studio,
+            userType: 'lead_magnet',
+            subscribed: true,
+        };
+
+        if (mailingListId) {
+            contactPayload.mailingLists = {
+                [mailingListId]: true,
+            };
+        }
+
         await Promise.all([
-            addLeadToLoops({
-                email,
-                studioName: studio,
-                leadSource: source,
-                mailingListId,
-            }),
-            sendLoopsNotification({
+            upsertLoopsContact(contactPayload),
+            sendLoopsTransactional(NOTIFY_TRANSACTIONAL_ID, NOTIFY_EMAIL, {
                 email,
                 studioName: studio,
                 leadSource: source,
                 timestamp,
-                contactConsent: true,
+                contactConsent: 'Ja',
             }),
         ]);
 
         return NextResponse.json({ success: true });
-    } catch (error) {
-        console.error('Lead-Magnet API Error:', error);
+    } catch {
         return NextResponse.json(
             { error: 'Ein Fehler ist aufgetreten. Bitte versuche es erneut.' },
             { status: 500 }
