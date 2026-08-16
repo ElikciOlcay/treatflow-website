@@ -32,6 +32,17 @@ npx puppeteer print pdf-templates/anamnesebogen-kosmetik-einwilligung.html \
   public/downloads/anamnesebogen-kosmetik-einwilligung.pdf
 ```
 
+## Weitere Lead-Magnete (Woche 2)
+
+- `nisv-checkliste-kosmetikstudio.html`
+- `kundenkartei-vorlage-kosmetikstudio.html`
+- `no-show-playbook-kosmetikstudio.html`
+- `preisliste-vorlage-kosmetikstudio.html`
+
+```bash
+node scripts/generate-lead-magnet-pdfs.mjs
+```
+
 ## Hygieneplan Kosmetikstudio
 
 **Datei:** `hygieneplan-kosmetikstudio.html`

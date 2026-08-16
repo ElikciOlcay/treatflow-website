@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, Share2, FileText, Shield, CheckCircle, AlertTriangle, Scale, BookOpen } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import LeadMagnetEmbed from '../../components/LeadMagnetEmbed';
 
 
 
@@ -559,6 +560,14 @@ export default function BlogPost() {
                     </div>
                 </div>
             </article>
+
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <LeadMagnetEmbed
+                    href="/nisv-checkliste-kosmetikstudio-pdf"
+                    title="NiSV-Checkliste zum Download"
+                    description="Prüfe Beratung, Einwilligung, Dokumentation und Gerätebuch in 15 Minuten."
+                />
+            </div>
 
             {/* Verwandte Seiten */}
             <section className="py-12 bg-gray-50">

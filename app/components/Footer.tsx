@@ -82,6 +82,10 @@ export default function Footer() {
               <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
               <li><Link href="/neuigkeiten" className="text-gray-400 hover:text-white transition-colors">Neuigkeiten</Link></li>
               <li><Link href="/hygieneplan-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Hygieneplan PDF</Link></li>
+              <li><Link href="/nisv-checkliste-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">NiSV-Checkliste PDF</Link></li>
+              <li><Link href="/kundenkartei-vorlage-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Kundenkartei-Vorlage</Link></li>
+              <li><Link href="/no-show-playbook-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">No-Show-Playbook</Link></li>
+              <li><Link href="/preisliste-vorlage-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Preislisten-Vorlage</Link></li>
               <li><Link href="/kontakt" className="text-gray-400 hover:text-white transition-colors">Kontakt</Link></li>
             </ul>
             <h3 className="font-semibold mb-4 mt-8">Regionen</h3>

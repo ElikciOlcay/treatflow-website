@@ -298,6 +298,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
+            url: `${baseUrl}/nisv-checkliste-kosmetikstudio-pdf`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/kundenkartei-vorlage-kosmetikstudio-pdf`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/no-show-playbook-kosmetikstudio-pdf`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/preisliste-vorlage-kosmetikstudio-pdf`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
+        },
+        {
             url: `${baseUrl}/schoenheitssalon-software`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,

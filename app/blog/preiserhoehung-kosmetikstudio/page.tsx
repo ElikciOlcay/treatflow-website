@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, CheckCircle, TrendingUp, MessageSquare, Shield, Heart } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import LeadMagnetEmbed from '../../components/LeadMagnetEmbed';
 
 export const metadata: Metadata = {
     title: 'Preiserhöhung Kosmetikstudio: Richtig kommunizieren',
@@ -489,6 +490,14 @@ export default function BlogPost() {
                     </div>
                 </div>
             </section>
+
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <LeadMagnetEmbed
+                    href="/preisliste-vorlage-kosmetikstudio-pdf"
+                    title="Neue Preisliste als Vorlage"
+                    description="Aktualisiere Kategorien und Ab-Preise, bevor du die Erhöhung kommunizierst."
+                />
+            </div>
 
             <Footer />
         </div>

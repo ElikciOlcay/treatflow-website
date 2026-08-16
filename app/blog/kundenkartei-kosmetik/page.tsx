@@ -4,6 +4,7 @@ import { ArrowRight, Calendar, CheckCircle, Clock } from 'lucide-react';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import LeadMagnetEmbed from '../../components/LeadMagnetEmbed';
 
 export const metadata: Metadata = {
   title: 'Kundenkartei Kosmetik: Digital statt Papier',
@@ -201,6 +202,14 @@ export default function BlogPost() {
           </div>
         </div>
       </article>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+        <LeadMagnetEmbed
+          href="/kundenkartei-vorlage-kosmetikstudio-pdf"
+          title="Kundenkartei-Vorlage zum Ausdrucken"
+          description="Stammdaten, Kurz-Anamnese und Behandlungstabelle – als Start, bis alles digital läuft."
+        />
+      </div>
 
       <Footer />
     </div>

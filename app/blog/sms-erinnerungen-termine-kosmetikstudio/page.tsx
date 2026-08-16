@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, Share2, MessageSquare } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import LeadMagnetEmbed from '../../components/LeadMagnetEmbed';
 
 export const metadata: Metadata = {
     title: 'SMS-Erinnerungen für Termine im Studio',
@@ -119,6 +120,14 @@ export default function BlogPost() {
                     </div>
                 </div>
             </article>
+
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <LeadMagnetEmbed
+                    href="/no-show-playbook-kosmetikstudio-pdf"
+                    title="No-Show-Playbook zum Download"
+                    description="SMS- und E-Mail-Texte plus Checkliste gegen leere Stühle."
+                />
+            </div>
 
             {/* Verwandte Seiten */}
             <section className="py-12 bg-gray-50">

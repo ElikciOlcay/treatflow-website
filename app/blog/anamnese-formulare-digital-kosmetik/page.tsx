@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, Share2, FileText } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import LeadMagnetEmbed from '../../components/LeadMagnetEmbed';
 
 export const metadata: Metadata = {
     title: 'Digitale Anamnese im Kosmetikstudio',
@@ -126,6 +127,14 @@ export default function BlogPost() {
                     </div>
                 </div>
             </article>
+
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <LeadMagnetEmbed
+                    href="/anamnesebogen-kosmetik-vorlage-pdf"
+                    title="Anamnesebogen als PDF-Vorlage"
+                    description="Kostenloser Anamnesebogen inkl. Einwilligung – zum Ausdrucken oder als Start für digitale Formulare."
+                />
+            </div>
 
             {/* Verwandte Seiten */}
             <section className="py-12 bg-gray-50">

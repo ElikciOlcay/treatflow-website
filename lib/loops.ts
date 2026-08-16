@@ -6,6 +6,10 @@ export const LEAD_MAGNET_MAILING_LIST_ID = 'cmq7r8nvt5uiy0jxi1atv03zb';
 export const LEAD_MAGNET_MAILING_LISTS: Record<string, string> = {
     'Hygieneplan Kosmetikstudio PDF': LEAD_MAGNET_MAILING_LIST_ID,
     'Anamnesebogen Kosmetik PDF': LEAD_MAGNET_MAILING_LIST_ID,
+    'NiSV-Checkliste Kosmetikstudio PDF': LEAD_MAGNET_MAILING_LIST_ID,
+    'Kundenkartei Vorlage Kosmetikstudio PDF': LEAD_MAGNET_MAILING_LIST_ID,
+    'No-Show-Playbook Kosmetikstudio PDF': LEAD_MAGNET_MAILING_LIST_ID,
+    'Preisliste Vorlage Kosmetikstudio PDF': LEAD_MAGNET_MAILING_LIST_ID,
 };
 
 export const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

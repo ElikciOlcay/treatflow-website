@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, Share2, Shield, AlertTriangle, CheckCircle, Droplets } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import LeadMagnetEmbed from '../../components/LeadMagnetEmbed';
 
 
 export const metadata: Metadata = {
@@ -150,18 +151,11 @@ export default function BlogPost() {
                             </p>
                         </div>
 
-                        <div className="bg-blue-50 border border-blue-200 rounded-r-lg border-l-4 border-l-blue-500 p-6 mb-8">
-                            <p className="text-blue-900 mb-0">
-                                <strong>Du brauchst eine fertige Vorlage?</strong> Lade dir hier unsere{" "}
-                                <Link
-                                    href="/hygieneplan-kosmetikstudio-pdf"
-                                    className="text-blue-700 font-semibold underline underline-offset-4 hover:text-blue-800"
-                                >
-                                    kostenlose Hygieneplan-Vorlage für Kosmetikstudios als PDF
-                                </Link>{" "}
-                                herunter – als Muster zum Download und Anpassen, inklusive Checkliste für Reinigung, Desinfektion und Dokumentation.
-                            </p>
-                        </div>
+                        <LeadMagnetEmbed
+                            href="/hygieneplan-kosmetikstudio-pdf"
+                            title="Kostenlose Hygieneplan-Vorlage"
+                            description="Muster für Reinigung, Desinfektion und Dokumentation – als PDF zum Anpassen."
+                        />
 
                         <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Rechtliche Grundlagen und Vorschriften</h2>
 

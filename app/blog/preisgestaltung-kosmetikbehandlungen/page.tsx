@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, Share2, Euro, CheckCircle, AlertCircle, Target, Scale } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import LeadMagnetEmbed from '../../components/LeadMagnetEmbed';
 
 
 export const metadata: Metadata = {
@@ -581,6 +582,14 @@ export default function BlogPost() {
                     </div>
                 </div>
             </article>
+
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <LeadMagnetEmbed
+                    href="/preisliste-vorlage-kosmetikstudio-pdf"
+                    title="Preislisten-Vorlage für dein Studio"
+                    description="Kategorien, Ab-Preise und Hinweistexte – zum Ausdrucken oder für die Website."
+                />
+            </div>
 
             {/* Verwandte Seiten */}
             <section className="py-12 bg-gray-50">
