@@ -101,44 +101,38 @@ const structuredData = {
     {
       "@type": "Review",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Maren Burmeister" },
-      "reviewBody": "Seit Dezember 2024 nutzen wir Treatflow mit einem dreiköpfigen Team. Es ist eine große Arbeitserleichterung und spart Zeit. Wir arbeiten vollständig digital und erfüllen alle NiSV-Anforderungen. Klare Empfehlung."
+      "author": { "@type": "Person", "name": "Stefanie Ruschmann" },
+      "reviewBody": "Treatflow ist die ultimative Lösung für meine Praxis. Unschlagbar im Preis und intuitiv zu bedienen. Mein Wunsch nach einer Lexware Office Anbindung wurde innerhalb eines Tages umgesetzt!"
     },
     {
       "@type": "Review",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Fatma Suna" },
-      "reviewBody": "Ich kann Treatflow wirklich jedem nur ans Herz legen. Die App bietet großartige Möglichkeiten, die sowohl uns als auch unseren Kunden das Leben erleichtern. Ein Must-Have für alle Studios."
+      "author": { "@type": "Organization", "name": "Laser-Haarentfernung Velura Saarburg" },
+      "reviewBody": "Wir sind mehr als zufrieden mit Treatflow! Der Support ist wirklich herausragend – immer nett, freundlich und lösungsorientiert. Klare Empfehlung für jeden, der ein zuverlässiges System mit top Service sucht!"
     },
     {
       "@type": "Review",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "E. B." },
-      "reviewBody": "Wir sind mit Treatflow wirklich sehr zufrieden! Auf Wünsche und Vorschläge wird immer eingegangen. Alles wird sofort verständlich erklärt und direkt umgesetzt."
+      "author": { "@type": "Person", "name": "Nadja Neumann" },
+      "reviewBody": "Ich nutze Treatflow erst seit kurzem für mein Studio, aber bin jetzt schon voll und ganz begeistert. Es erleichtert die Arbeit enorm und ist NiSV-konform."
     },
     {
       "@type": "Review",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Valeska Weber" },
-      "reviewBody": "Ganz toller Service. Für mich eine Arbeitserleichterung – hab alles für die Kunden griffbereit an einem Ort."
+      "author": { "@type": "Person", "name": "Sharon Ulbrich-Decker" },
+      "reviewBody": "Hab von Phorest zu Treatflow gewechselt. Preisleistung ist super. Bei Phorest war ich bei ca. 300 EUR im Monat, bei Treatflow unter 100 EUR. Kann ich mit bestem Gewissen empfehlen."
     },
     {
       "@type": "Review",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Evangelia Karapouliou" },
-      "reviewBody": "Ein sehr freundliches, kompetentes, kundenorientiertes und hilfsbereites Team. Das Programm passt perfekt in mein Unternehmen."
+      "author": { "@type": "Person", "name": "Selina Klingshirn" },
+      "reviewBody": "Für mich eine klare Empfehlung. Es wird auf individuelle Bedürfnisse eingegangen. Eine Funktion, die ich mir gewünscht habe, wurde tatsächlich extra für mich umgesetzt."
     },
     {
       "@type": "Review",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Simone Weigl" },
-      "reviewBody": "Kann Treatflow wirklich jedem empfehlen. Olcay geht sympathisch und unkompliziert auf individuelle Anpassungen ein."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "author": { "@type": "Person", "name": "Mit Liebe zum Detail" },
-      "reviewBody": "Der Service ist einfach super und meine Kunden sind äußerst zufrieden mit den Online-Formularen. Die Benutzerfreundlichkeit und Handhabung machen die Erfahrung stressfrei."
+      "author": { "@type": "Person", "name": "Pia Patricia" },
+      "reviewBody": "Treatflow überzeugt mit einer benutzerfreundlichen Oberfläche und einem durchdachten Konzept. Nutze es täglich und bin sehr begeistert! Klare Empfehlung."
     }
   ]
 };

@@ -57,11 +57,11 @@ export const steps = [
 ];
 
 export const featuredTestimonial = {
-    text: 'Es ist eine große Arbeitserleichterung und spart Zeit. Wir arbeiten vollständig digital – klare Empfehlung.',
-    name: 'Maren Burmeister',
-    studio: 'haarfrei',
+    text: 'Unschlagbar im Preis und intuitiv zu bedienen. Mein Wunsch nach einer Lexware Office Anbindung wurde innerhalb eines Tages umgesetzt!',
+    name: 'Stefanie Ruschmann',
+    studio: 'Local Guide',
     source: 'Google Bewertung',
-    initials: 'MB',
+    initials: 'SR',
     color: 'bg-teal-600',
 };
 
@@ -177,30 +177,30 @@ export const bookingFeatures = [
 /** Echte Google-Bewertungen – Kurzfassung für schnelle Lesbarkeit */
 export const testimonials = [
     {
-        text: 'Seit Dezember 2024 nutzen wir Treatflow mit einem dreiköpfigen Team. Es ist eine große Arbeitserleichterung und spart Zeit, da wir unseren Kundinnen die gesetzlich vorgeschriebenen Formulare vorab zusenden können. Wir arbeiten vollständig digital und erfüllen alle gesetzlichen NiSV-Anforderungen. Klare Empfehlung.',
-        shortText: 'Große Arbeitserleichterung – wir arbeiten vollständig digital und erfüllen alle NiSV-Anforderungen. Klare Empfehlung.',
-        name: 'Maren Burmeister',
-        studio: 'haarfrei',
+        text: 'Treatflow ist die ultimative Lösung für meine Praxis. Unschlagbar im Preis und intuitiv zu bedienen. Die Online-Terminbuchung mit automatischem Versand von Anamnese- und Aufklärungsbögen erspart so viel Zettelwirtschaft! Mein Wunsch nach einer Lexware Office Anbindung wurde innerhalb eines Tages umgesetzt!',
+        shortText: 'Unschlagbar im Preis und intuitiv zu bedienen. Mein Wunsch wurde innerhalb eines Tages umgesetzt!',
+        name: 'Stefanie Ruschmann',
+        studio: 'Local Guide',
         source: 'Google Bewertung',
-        initials: 'MB',
+        initials: 'SR',
         color: 'bg-teal-600',
     },
     {
-        text: 'Ich kann Treatflow wirklich jedem nur ans Herz legen. Die App bietet großartige Möglichkeiten, die sowohl uns als auch unseren Kunden das Leben erleichtern. Ein Must-Have für alle Studios. Für uns eine sehr große Arbeitserleichterung. Kein Papierkram mehr und nichts geht verloren.',
-        shortText: 'Ein Must-Have für alle Studios. Kein Papierkram mehr und nichts geht verloren.',
-        name: 'Fatma Suna',
-        studio: 'Kosmetikstudio',
+        text: 'Wir sind mehr als zufrieden mit Treatflow! Olcay antwortet immer extrem schnell und setzt Anpassungen am System so schnell wie möglich nach unseren Bedürfnissen um. Der Support ist wirklich herausragend – immer nett, freundlich und lösungsorientiert. Klare Empfehlung für jeden, der ein zuverlässiges System mit top Service sucht!',
+        shortText: 'Support ist herausragend – immer nett, freundlich und lösungsorientiert. Klare Empfehlung!',
+        name: 'Velura Saarburg',
+        studio: 'Laser-Haarentfernung',
         source: 'Google Bewertung',
-        initials: 'FS',
+        initials: 'VS',
         color: 'bg-amber-600',
     },
     {
-        text: 'Wir sind mit Treatflow wirklich sehr zufrieden! Besonders hervorzuheben ist, dass auf Wünsche und Vorschläge immer eingegangen wird. Alles wird sofort verständlich erklärt und auch direkt umgesetzt. Man fühlt sich bestens betreut und ernst genommen.',
-        shortText: 'Auf Wünsche wird immer eingegangen. Man fühlt sich bestens betreut und ernst genommen.',
-        name: 'E. B.',
+        text: 'Hab von Phorest zu Treatflow gewechselt. Ich bin super zufrieden. Preisleistung ist super. Bei Phorest war ich bei ca. 300 EUR im Monat, bei Treatflow unter 100 EUR. Das Team ist super schnell und freundlich. Kann ich mit bestem Gewissen empfehlen.',
+        shortText: 'Von Phorest gewechselt – Preisleistung ist super. Kann ich mit bestem Gewissen empfehlen.',
+        name: 'Sharon Ulbrich-Decker',
         studio: 'Kosmetikstudio',
         source: 'Google Bewertung',
-        initials: 'EB',
+        initials: 'SU',
         color: 'bg-rose-500',
     },
 ];

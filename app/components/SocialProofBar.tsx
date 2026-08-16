@@ -2,18 +2,18 @@ import { Star, ExternalLink } from 'lucide-react';
 
 const reviews = [
     {
-        text: 'Wir arbeiten vollständig digital und erfüllen alle NiSV-Anforderungen. Klare Empfehlung.',
-        name: 'Maren B.',
-        studio: 'haarfrei',
+        text: 'Support ist herausragend – immer nett, freundlich und lösungsorientiert. Klare Empfehlung!',
+        name: 'Velura Saarburg',
+        studio: 'Laser-Haarentfernung',
     },
     {
-        text: 'Ein Must-Have für alle Studios. Kein Papierkram mehr und nichts geht verloren.',
-        name: 'Fatma S.',
-        studio: 'Kosmetikstudio',
+        text: 'Unschlagbar im Preis und intuitiv zu bedienen. Mein Wunsch wurde innerhalb eines Tages umgesetzt!',
+        name: 'Stefanie R.',
+        studio: 'Local Guide',
     },
     {
-        text: 'Auf Wünsche wird immer eingegangen. Man fühlt sich bestens betreut und ernst genommen.',
-        name: 'E. B.',
+        text: 'Von Phorest gewechselt – Preisleistung ist super. Kann ich mit bestem Gewissen empfehlen.',
+        name: 'Sharon U.',
         studio: 'Kosmetikstudio',
     },
 ];
