@@ -18,10 +18,6 @@ export function productUpdateSlug(update: Pick<ProductUpdate, 'id' | 'image_url'
 }
 
 export async function getPublishedProductUpdates(): Promise<ProductUpdate[]> {
-    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
-        return [];
-    }
-
     const supabase = getSupabaseClient();
     const { data, error } = await supabase
         .from('product_updates')

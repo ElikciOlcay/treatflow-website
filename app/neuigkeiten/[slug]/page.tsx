@@ -12,6 +12,7 @@ import {
     productUpdateSlug,
 } from '@/lib/productUpdates';
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 60;
 
 type PageProps = {

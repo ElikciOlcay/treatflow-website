@@ -10,6 +10,7 @@ import {
     productUpdateSlug,
 } from '@/lib/productUpdates';
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 60;
 
 export const metadata: Metadata = {
