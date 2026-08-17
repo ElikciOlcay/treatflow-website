@@ -71,7 +71,7 @@ export default function UeberUnsPage() {
                             <div className="grid grid-cols-2 gap-6">
                                 <div className="text-center">
                                     <div className="text-3xl font-bold text-indigo-600 mb-2">500+</div>
-                                    <div className="text-gray-600">Zufriedene Studios</div>
+                                    <div className="text-gray-600">Studios haben getestet</div>
                                 </div>
                                 <div className="text-center">
                                     <div className="text-3xl font-bold text-indigo-600 mb-2">2024</div>

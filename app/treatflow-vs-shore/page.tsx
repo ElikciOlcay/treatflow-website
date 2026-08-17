@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: 'Treatflow vs. Shore: Der ehrliche Vergleich',
     description:
-      'Spezialisierte Kosmetikstudio-Software vs. generische Terminbuchung - warum über 500 Studios Treatflow statt Shore wählen.',
+      'Spezialisierte Kosmetikstudio-Software vs. generische Terminbuchung – bereits von 500+ Studios getestet statt Shore.',
     url: 'https://www.treatflow.io/treatflow-vs-shore',
     images: [
       {
@@ -551,7 +551,7 @@ export default function TreatflowVsShore() {
                 {
                   value: '500+',
                   label: 'Studios',
-                  desc: 'Nutzen Treatflow täglich',
+                  desc: 'Haben Treatflow bereits getestet',
                   icon: Users,
                 },
                 {

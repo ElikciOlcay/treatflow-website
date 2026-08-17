@@ -25,7 +25,7 @@ export const metadata = {
   openGraph: {
     title: 'Treatflow vs. Timely: Der ehrliche Vergleich',
     description:
-      'Spezialisierte Kosmetikstudio-Software vs. internationale Salon-Software - warum über 500 Studios Treatflow wählen.',
+      'Spezialisierte Kosmetikstudio-Software vs. internationale Salon-Software – bereits von 500+ Studios getestet.',
     url: 'https://www.treatflow.io/treatflow-vs-timely',
     images: [
       {
@@ -554,7 +554,7 @@ export default function TreatflowVsTimely() {
                 {
                   value: '500+',
                   label: 'Studios',
-                  desc: 'Nutzen Treatflow täglich',
+                  desc: 'Haben Treatflow bereits getestet',
                   icon: Users,
                 },
                 {

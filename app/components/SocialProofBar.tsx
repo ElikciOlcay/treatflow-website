@@ -29,7 +29,7 @@ export default function SocialProofBar() {
                                 <Star key={i} className="h-5 w-5 fill-current" />
                             ))}
                         </div>
-                        <span className="text-sm font-semibold text-gray-900">4,6/5</span>
+                        <span className="text-sm font-semibold text-gray-900">4,6/5 auf Google</span>
                         <span className="text-xs text-gray-400">|</span>
                         <a
                             href="https://www.google.com/maps?cid=3775494386032646257"
@@ -37,12 +37,12 @@ export default function SocialProofBar() {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-indigo-600 transition-colors"
                         >
-                            Google Reviews
+                            Alle Reviews ansehen
                             <ExternalLink className="h-3 w-3" />
                         </a>
                     </div>
                     <p className="text-sm text-gray-600">
-                        Über <span className="font-semibold text-gray-900">500 Studios</span> vertrauen auf Treatflow
+                        Bereits von <span className="font-semibold text-gray-900">500+ Studios</span> getestet
                     </p>
                 </div>
                 <div className="grid md:grid-cols-3 gap-4">

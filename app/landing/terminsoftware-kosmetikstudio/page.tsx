@@ -180,7 +180,7 @@ export default function TerminsoftwareLandingPage() {
                         </div>
                         <span className="text-sm text-gray-600">4,6/5 auf Google</span>
                         <span className="text-gray-300">|</span>
-                        <span className="text-sm text-gray-600">500+ Studios</span>
+                        <span className="text-sm text-gray-600">Bereits von 500+ Studios getestet</span>
                     </div>
                     <div className="flex items-center gap-3">
                         <a
@@ -263,7 +263,7 @@ export default function TerminsoftwareLandingPage() {
                     <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
                         <div className="flex items-center gap-2">
                             <span className="text-3xl font-bold text-indigo-600">500+</span>
-                            <span className="text-sm text-gray-600">Studios nutzen<br />Treatflow</span>
+                            <span className="text-sm text-gray-600">Studios haben<br />Treatflow getestet</span>
                         </div>
                         <div className="h-8 w-px bg-gray-200 hidden sm:block" />
                         <div className="flex items-center gap-2">

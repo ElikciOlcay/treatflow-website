@@ -48,13 +48,13 @@ const facts = [
     {
         icon: Users,
         value: "500+ Studios",
-        label: "Im deutschsprachigen Raum (DE, AT, CH)",
+        label: "Haben Treatflow bereits getestet (DE, AT, CH)",
         color: "bg-amber-100 text-amber-600",
     },
     {
         icon: Star,
         value: "4,6/5 Sterne",
-        label: "Google-Bewertungen aus 19 Reviews",
+        label: "Google-Bewertung (19 Reviews)",
         color: "bg-yellow-100 text-yellow-600",
     },
     {

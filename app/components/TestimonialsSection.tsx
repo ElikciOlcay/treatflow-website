@@ -62,7 +62,7 @@ export default function TestimonialsSection() {
                         Was unsere Kunden sagen
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Über 500 Kosmetikstudios vertrauen bereits auf Treatflow für ihr Studio-Management.
+                        Echte Stimmen von Studios, die Treatflow im Alltag nutzen – und bereits von 500+ Studios getestet.
                     </p>
                 </div>
 
