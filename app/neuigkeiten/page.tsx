@@ -48,7 +48,7 @@ export default async function NeuigkeitenPage() {
                             Neuigkeiten für dein Studio
                         </h1>
                         <p className="text-xl text-gray-600">
-                            Neue Funktionen, Verbesserungen und Fixes – dieselbe Übersicht wie in der App.
+                            Was sich bei Treatflow tut: neue Features, Verbesserungen und Updates – kompakt auf einen Blick.
                         </p>
                     </div>
 
