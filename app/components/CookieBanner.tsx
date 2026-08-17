@@ -285,37 +285,37 @@ export default function CookieBanner() {
         <>
             {/* Cookie Banner */}
             <div data-cookie-banner className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-                    <div className="flex items-start gap-4">
-                        <div className="flex-shrink-0">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+                    <div className="flex items-start gap-3 sm:gap-4">
+                        <div className="flex-shrink-0 hidden sm:block">
                             <Cookie className="h-6 w-6 text-indigo-600 mt-1" />
                         </div>
-                        <div className="flex-1">
-                            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                        <div className="flex-1 min-w-0">
+                            <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2">
                                 {t.title}
                             </h3>
-                            <p className="text-sm text-gray-600 mb-4">
+                            <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4 line-clamp-2 sm:line-clamp-none">
                                 {t.intro}{' '}
                                 <Link href={t.privacyHref} className="text-indigo-600 hover:text-indigo-800 underline">
                                     {t.learnMore}
                                 </Link>
                             </p>
-                            <div className="flex flex-col sm:flex-row gap-3">
+                            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                                 <button
                                     onClick={handleAcceptAll}
-                                    className="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors font-medium"
+                                    className="bg-indigo-600 text-white px-6 py-2.5 sm:py-2 rounded-lg hover:bg-indigo-700 transition-colors font-medium"
                                 >
                                     {t.acceptAll}
                                 </button>
                                 <button
                                     onClick={handleAcceptNecessary}
-                                    className="bg-gray-100 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-200 transition-colors font-medium"
+                                    className="bg-gray-100 text-gray-700 px-6 py-2.5 sm:py-2 rounded-lg hover:bg-gray-200 transition-colors font-medium"
                                 >
                                     {t.acceptNecessary}
                                 </button>
                                 <button
                                     onClick={() => setShowSettings(true)}
-                                    className="bg-white border border-gray-300 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-50 transition-colors font-medium flex items-center gap-2"
+                                    className="bg-white border border-gray-300 text-gray-700 px-6 py-2.5 sm:py-2 rounded-lg hover:bg-gray-50 transition-colors font-medium flex items-center justify-center gap-2"
                                 >
                                     <Settings className="h-4 w-4" />
                                     {t.settings}
