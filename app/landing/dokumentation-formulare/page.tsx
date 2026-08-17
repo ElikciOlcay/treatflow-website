@@ -596,7 +596,7 @@ export default function DokumentationFormulareLandingPage() {
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12">
-                            Über 500+ Kosmetikstudios vertrauen bereits auf Treatflow
+                            Bereits von 500+ Kosmetikstudios getestet
                         </h2>
 
                         <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -640,7 +640,7 @@ export default function DokumentationFormulareLandingPage() {
                         <div className="flex items-center justify-center space-x-8 text-gray-600">
                             <div className="text-center">
                                 <div className="text-3xl font-bold text-blue-600">500+</div>
-                                <div className="text-sm">Zufriedene Studios</div>
+                                <div className="text-sm">Studios haben getestet</div>
                             </div>
                             <div className="text-center">
                                 <div className="text-3xl font-bold text-green-600">50k+</div>
@@ -685,7 +685,7 @@ export default function DokumentationFormulareLandingPage() {
 
                         <div className="mt-8 text-center">
                             <p className="text-sm opacity-75">
-                                Über 500 Kosmetikstudios vertrauen bereits auf Treatflow
+                                Bereits von 500+ Kosmetikstudios getestet
                             </p>
                         </div>
                     </div>

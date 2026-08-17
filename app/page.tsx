@@ -32,7 +32,7 @@ import { buildHreflangAlternates } from "./i18n/seo";
 export const metadata: Metadata = {
   title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
   description:
-    "Kosmetikstudio-Software für Termine, Online-Buchung, Kundenkartei, Formulare, Doku & Kasse - alles in einer App. Keine Provision, DSGVO-konform, Made in Austria. 500+ Studios, 14 Tage gratis testen.",
+    "Kosmetikstudio-Software für Termine, Online-Buchung, Kundenkartei, Formulare, Doku & Kasse - alles in einer App. Keine Provision, DSGVO-konform, Made in Austria. Bereits von 500+ Studios getestet. 14 Tage gratis.",
   alternates: {
     canonical: "https://www.treatflow.io",
     ...buildHreflangAlternates("home", { xDefault: "us" }),
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
     description:
-      "Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation – alles in einer App. Von 500+ Studios genutzt, DSGVO-konform.",
+      "Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation – alles in einer App. Bereits von 500+ Studios getestet. DSGVO-konform.",
     url: "https://www.treatflow.io",
   },
 };
@@ -140,7 +140,7 @@ const faqSchema = {
       "name": "Was ist Treatflow?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Treatflow ist eine Software für Kosmetikstudios mit Terminkalender, digitaler Kundenkartei, Online-Buchungen, Anamnese-Formularen und Behandlungsdokumentation. Die App ist NiSV-konform und wird von über 500 Kosmetikerinnen genutzt. Made in Austria."
+        "text": "Treatflow ist eine Software für Kosmetikstudios mit Terminkalender, digitaler Kundenkartei, Online-Buchungen, Anamnese-Formularen und Behandlungsdokumentation. Die App ist NiSV-konform und wurde bereits von über 500 Studios getestet. Made in Austria."
       }
     },
     {
@@ -277,15 +277,19 @@ export default function Home() {
                   <span>Persönliche Betreuung</span>
                 </div>
               </div>
-              <div className="flex items-center justify-center lg:justify-start gap-3 text-sm">
-                <span className="font-semibold text-gray-900">500+ Studios</span>
-                <span className="text-gray-400">|</span>
-                <div className="flex text-amber-500">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-current" />
-                  ))}
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-3 text-sm">
+                <div className="flex items-center gap-2">
+                  <div className="flex text-amber-500">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-current" />
+                    ))}
+                  </div>
+                  <span className="text-gray-600">4,6/5 auf Google</span>
                 </div>
-                <span className="text-gray-600">4,6/5</span>
+                <span className="hidden sm:inline text-gray-400">|</span>
+                <span className="text-gray-600">
+                  Bereits von <span className="font-semibold text-gray-900">500+ Studios</span> getestet
+                </span>
               </div>
             </div>
             <div className="order-2 relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[4/3] lg:min-h-[400px] lg:aspect-auto">

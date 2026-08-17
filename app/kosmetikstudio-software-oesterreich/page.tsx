@@ -154,7 +154,7 @@ export default function KosmetikstudioSoftwareOesterreichPage() {
                             </div>
                             <div className="flex items-center gap-3">
                                 <UsersIcon className="h-8 w-8 text-emerald-600 flex-shrink-0" />
-                                <span className="text-gray-700">500+ Studios nutzen Treatflow</span>
+                                <span className="text-gray-700">Bereits von 500+ Studios getestet</span>
                             </div>
                         </div>
                         <p className="text-center text-gray-600 mt-6 text-sm">

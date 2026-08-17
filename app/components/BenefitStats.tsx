@@ -25,7 +25,7 @@ const stats = [
   {
     icon: Users,
     value: '500+',
-    label: 'Studios vertrauen uns',
+    label: 'Studios haben getestet',
     desc: 'Von Einzelunternehmerinnen bis Teamstudios',
     color: 'bg-amber-100 text-amber-600',
   },

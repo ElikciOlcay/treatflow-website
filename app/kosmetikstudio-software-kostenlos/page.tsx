@@ -654,7 +654,7 @@ export default function KosmetikstudioSoftwareKostenlos() {
                 Warum professionelle Studios Treatflow wählen
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Über 500 Studios vertrauen auf Treatflow statt auf kostenlose Alternativen.
+                Bereits von 500+ Studios getestet – statt kostenloser Alternativen.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -692,7 +692,7 @@ export default function KosmetikstudioSoftwareKostenlos() {
                 {
                   icon: Star,
                   title: '4,6/5 Sterne Bewertung',
-                  desc: 'Über 500 Studios nutzen Treatflow täglich und bewerten uns mit 4,6 von 5 Sternen auf Google.',
+                  desc: 'Bereits von über 500 Studios getestet. Google-Bewertung: 4,6 von 5 Sternen.',
                   color: 'bg-sky-100 text-sky-600',
                 },
               ].map((item) => (

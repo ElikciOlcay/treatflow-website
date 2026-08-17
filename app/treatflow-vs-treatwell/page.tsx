@@ -26,7 +26,7 @@ export const metadata = {
   openGraph: {
     title: 'Treatflow vs. Treatwell: Der ehrliche Vergleich',
     description:
-      'Keine Provisionen, NiSV-konform, persönliche Betreuung - warum über 500 Studios Treatflow statt Treatwell wählen.',
+      'Keine Provisionen, NiSV-konform, persönliche Betreuung – bereits von 500+ Studios getestet statt Treatwell.',
     url: 'https://www.treatflow.io/treatflow-vs-treatwell',
     images: [
       {
@@ -591,7 +591,7 @@ export default function TreatflowVsTreatwell() {
                 {
                   value: '500+',
                   label: 'Studios',
-                  desc: 'Nutzen Treatflow täglich',
+                  desc: 'Haben Treatflow bereits getestet',
                   icon: Users,
                 },
                 {

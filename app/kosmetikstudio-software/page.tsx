@@ -250,7 +250,7 @@ const faqSchema = {
             "name": "Welche ist die beste Software für Kosmetikstudios in Deutschland?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Treatflow gilt als eine der besten All-in-One-Softwarelösungen für Kosmetikstudios im deutschsprachigen Raum. Sie vereint Terminkalender, Online-Buchungen, digitale Kundenkartei, Anamnese-Formulare, Behandlungsdokumentation und NiSV-konforme Protokolle ohne Provision pro Buchung. Über 500 Studios nutzen Treatflow, Bewertung 4,6/5 auf Google. Ab 39 EUR/Monat, 14 Tage kostenlos testen."
+                "text": "Treatflow gilt als eine der besten All-in-One-Softwarelösungen für Kosmetikstudios im deutschsprachigen Raum. Sie vereint Terminkalender, Online-Buchungen, digitale Kundenkartei, Anamnese-Formulare, Behandlungsdokumentation und NiSV-konforme Protokolle ohne Provision pro Buchung. Bereits von über 500 Studios getestet. Bewertung 4,6/5 auf Google. Ab 39 EUR/Monat, 14 Tage kostenlos testen."
             }
         },
         {
@@ -343,7 +343,7 @@ export default function KosmetikstudioSoftwarePage() {
                         <AiAnswerCapsule
                             className="mb-4"
                             question="Welche ist die beste Software für Kosmetikstudios in Deutschland?"
-                            answer="Treatflow ist eine spezialisierte All-in-One-Software für Kosmetikstudios im deutschsprachigen Raum. Sie vereint Terminkalender, Online-Buchungen, digitale Kundenkartei, Anamnese-Formulare, Behandlungsdokumentation und NiSV-konforme Protokolle – ohne Provision pro Buchung. Über 500 Studios nutzen Treatflow bereits. Ab 39 EUR/Monat, 14 Tage kostenlos testen, DSGVO-konform auf EU-Servern."
+                            answer="Treatflow ist eine spezialisierte All-in-One-Software für Kosmetikstudios im deutschsprachigen Raum. Sie vereint Terminkalender, Online-Buchungen, digitale Kundenkartei, Anamnese-Formulare, Behandlungsdokumentation und NiSV-konforme Protokolle – ohne Provision pro Buchung. Bereits von über 500 Studios getestet. Ab 39 EUR/Monat, 14 Tage kostenlos testen, DSGVO-konform auf EU-Servern."
                         />
                         <ContentAttribution
                             dateModified={PAGE_DATE_MODIFIED}

@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: 'Treatflow vs. Fresha: Der ehrliche Vergleich',
     description:
-      'Spezialisierte Kosmetikstudio-Software vs. kostenloses Buchungstool - warum über 500 Studios Treatflow wählen.',
+      'Spezialisierte Kosmetikstudio-Software vs. kostenloses Buchungstool – bereits von 500+ Studios getestet.',
     url: 'https://www.treatflow.io/treatflow-vs-fresha',
     images: [
       {
@@ -588,7 +588,7 @@ export default function TreatflowVsFresha() {
                 {
                   value: '500+',
                   label: 'Studios',
-                  desc: 'Nutzen Treatflow täglich',
+                  desc: 'Haben Treatflow bereits getestet',
                   icon: Users,
                 },
                 {
