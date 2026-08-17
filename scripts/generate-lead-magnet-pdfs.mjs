@@ -40,16 +40,23 @@ async function generate() {
     for (const name of files) {
         const htmlPath = path.join(templatesDir, `${name}.html`);
         const outputPath = path.join(outputDir, `${name}.pdf`);
-        const html = fs.readFileSync(htmlPath, 'utf8').replace('/* BASE_CSS */', css);
+        const raw = fs.readFileSync(htmlPath, 'utf8');
+        const html = raw.replace(
+            /<link rel="stylesheet" href="lead-magnet-base\.css"\s*\/?>/,
+            `<style>${css}</style>`
+        );
         const page = await browser.newPage();
-        await page.setContent(html, { waitUntil: 'networkidle0' });
+        await page.setContent(html, { waitUntil: 'domcontentloaded' });
         await page.pdf({
             path: outputPath,
             format: 'A4',
             printBackground: true,
             margin: { top: '0', right: '0', bottom: '0', left: '0' },
+            preferCSSPageSize: true,
         });
+        const pageCount = await page.evaluate(() => document.querySelectorAll('.page').length);
         await page.close();
+        console.log(`OK ${name}.pdf (${pageCount} Seiten)`);
     }
 
     await browser.close();
