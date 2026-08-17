@@ -29,21 +29,21 @@ export default function SupportTrustBanner() {
 
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                  href="https://app.treatflow.io/auth/register"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-indigo-700 shadow-md transition-all duration-300 hover:bg-indigo-50 hover:shadow-lg hover:-translate-y-0.5"
                 >
-                  Kostenlose Demo buchen
+                  14 Tage kostenlos testen
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
-                  href="https://app.treatflow.io/auth/register"
+                  href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20"
                 >
-                  14 Tage kostenlos testen
+                  Kostenlose Demo buchen
                 </a>
               </div>
             </div>

@@ -1,21 +1,16 @@
 import {
   ArrowRight,
-  BarChart3,
   Bell,
   CalendarDays,
   CheckCircle,
   ClipboardCheck,
   FileText,
-  Languages,
-  ListChecks,
   Lock,
-  Mic,
   Receipt,
   Server,
   Shield,
   ShieldCheck,
   Star,
-  Ticket,
   Users,
 } from "lucide-react";
 import Link from 'next/link';
@@ -26,11 +21,11 @@ import Navigation from "./components/Navigation";
 import ChallengeSelector from "./components/ChallengeSelector";
 import ComparisonTable from "./components/ComparisonTable";
 import BenefitStats from "./components/BenefitStats";
-import AlwaysWithYou from "./components/AlwaysWithYou";
 import SupportTrustBanner from "./components/SupportTrustBanner";
 import PricingSection from "./components/PricingSection";
 import FAQSection from "./components/FAQSection";
 import TestimonialsSection from "./components/TestimonialsSection";
+import SocialProofBar from "./components/SocialProofBar";
 import Footer from "./components/Footer";
 import { buildHreflangAlternates } from "./i18n/seo";
 
@@ -50,7 +45,6 @@ export const metadata: Metadata = {
   },
 };
 
-// Strukturierte Daten für SEO
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -192,6 +186,27 @@ const faqSchema = {
   ]
 };
 
+const coreFeatures = [
+  { href: '/terminkalender', icon: CalendarDays, label: 'Terminkalender', desc: 'Alle Termine in einer klaren Tages- und Wochenansicht.', color: 'bg-indigo-100 text-indigo-600' },
+  { href: '/online-buchungen', icon: Users, label: 'Online-Buchung', desc: 'Kunden buchen selbst – auch außerhalb deiner Öffnungszeiten.', color: 'bg-emerald-100 text-emerald-600' },
+  { href: '/kundenkartei-software', icon: FileText, label: 'Kundenkartei', desc: 'Historie, Notizen und Fotos zentral und schnell auffindbar.', color: 'bg-blue-100 text-blue-600' },
+  { href: '/formulare', icon: ClipboardCheck, label: 'Formulare', desc: 'Digitale Anamnese und Einwilligungen, vorab per Link ausfüllbar.', color: 'bg-orange-100 text-orange-600' },
+  { href: '/behandlungsdokumentation', icon: Shield, label: 'Dokumentation', desc: 'Behandlungen sauber dokumentieren, inklusive NiSV-Nachweisen.', color: 'bg-teal-100 text-teal-600' },
+  { href: '/kassensystem-kosmetikstudio', icon: Receipt, label: 'Kasse', desc: 'TSE- & RKSV-konform kassieren, direkt aus dem Termin.', color: 'bg-green-100 text-green-600' },
+  { href: '/sms-erinnerungen-kosmetikstudio', icon: Bell, label: 'Erinnerungen', desc: 'Automatische SMS und E-Mails reduzieren No-Shows.', color: 'bg-rose-100 text-rose-600' },
+];
+
+const seoLinks = [
+  { href: '/kundenkartei-software', label: 'Kundenkartei Software' },
+  { href: '/online-buchungen', label: 'Online-Terminbuchung' },
+  { href: '/behandlungsdokumentation-kosmetikstudio', label: 'Behandlungsdokumentation' },
+  { href: '/digitale-anamnese-kosmetikstudio', label: 'Digitale Anamnese' },
+  { href: '/sms-erinnerungen-kosmetikstudio', label: 'SMS-Erinnerungen' },
+  { href: '/kosmetikstudio-software-vergleich', label: 'Software-Vergleich' },
+  { href: '/blog/beste-kosmetikstudio-software-2026', label: 'Beste Software 2026' },
+  { href: '/treatflow-vs-treatwell', label: 'Treatflow vs. Treatwell' },
+];
+
 export default function Home() {
   return (
     <>
@@ -209,7 +224,8 @@ export default function Home() {
       <div className="min-h-screen bg-white">
         <Navigation />
 
-        <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+        {/* 1. Hero */}
+        <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div className="order-1 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -224,7 +240,7 @@ export default function Home() {
                 Termine, Kunden, Formulare, Behandlungsdokumentation und Kasse in einer übersichtlichen App.
                 So findet sich dein Team sofort zurecht.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                 <a
                   href="https://app.treatflow.io/auth/register"
                   target="_blank"
@@ -258,7 +274,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-emerald-500" />
-                  <span>Persönliche Betreuung und Hilfe</span>
+                  <span>Persönliche Betreuung</span>
                 </div>
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-3 text-sm">
@@ -285,8 +301,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* TrustBar */}
-        <section className="py-6 bg-gray-50 border-y border-gray-100">
+        {/* 2. Trust + frühe Social Proof */}
+        <section className="py-5 bg-gray-50 border-y border-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
               {[
@@ -304,9 +320,13 @@ export default function Home() {
           </div>
         </section>
 
+        <SocialProofBar />
+
+        {/* 3. Problem → Lösung */}
         <ChallengeSelector />
 
-        <section className="pb-16 px-4 sm:px-6 lg:px-8 bg-white">
+        {/* 4. Klarer Einstieg */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 lg:p-8">
               <div className="text-center mb-8">
@@ -347,27 +367,20 @@ export default function Home() {
           </div>
         </section>
 
+        {/* 5. Ein Feature-Block (Outcomes) */}
         <section id="features" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Die wichtigsten Funktionen auf einen Blick
+            <div className="text-center mb-14">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Weniger Chaos. Mehr Zeit für Kundinnen.
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Alles klar strukturiert, damit du und dein Team schnell arbeiten könnt.
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Alles was dein Studio braucht – in einer App, die dein Team sofort versteht.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { href: '/terminkalender', icon: CalendarDays, label: 'Terminkalender', desc: 'Alle Termine in einer klaren Tages- und Wochenansicht.', color: 'bg-indigo-100 text-indigo-600' },
-                { href: '/kassensystem-kosmetikstudio', icon: Receipt, label: 'Kasse', desc: 'TSE- & RKSV-konform kassieren, direkt aus dem Termin.', color: 'bg-green-100 text-green-600' },
-                { href: '/online-buchungen', icon: Users, label: 'Online-Buchung', desc: 'Kunden buchen selbst, auch außerhalb deiner Öffnungszeiten.', color: 'bg-emerald-100 text-emerald-600' },
-                { href: '/formulare', icon: ClipboardCheck, label: 'Formulare', desc: 'Digitale Anamnese und Einwilligungen, vorab per Link ausfüllbar.', color: 'bg-orange-100 text-orange-600' },
-                { href: '/kundenkartei-software', icon: FileText, label: 'Kundenkartei', desc: 'Kundendaten, Historie und Notizen zentral und schnell auffindbar.', color: 'bg-blue-100 text-blue-600' },
-                { href: '/behandlungsdokumentation', icon: Shield, label: 'Dokumentation', desc: 'Behandlungen sauber dokumentieren, inklusive NiSV-relevanter Nachweise.', color: 'bg-teal-100 text-teal-600' },
-                { href: '/sms-erinnerungen-kosmetikstudio', icon: Bell, label: 'Erinnerungen', desc: 'Automatische SMS und E-Mails reduzieren No-Shows.', color: 'bg-rose-100 text-rose-600' },
-              ].map((item) => (
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+              {coreFeatures.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
@@ -398,112 +411,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Und das kann Treatflow außerdem
-              </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Praktische Extras, die deinen Studioalltag noch einfacher machen - in Treatflow bereits enthalten.
-              </p>
-            </div>
+        {/* 6. Ergebnisse */}
+        <BenefitStats />
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { href: undefined, icon: BarChart3, label: 'Statistiken & Auswertungen', desc: 'Umsatz, Termine, Kunden und Top-Leistungen auf einen Blick - filterbar nach Zeitraum und Team.', color: 'bg-cyan-100 text-cyan-600' },
-                { href: '/behandlungsdokumentation', icon: Mic, label: 'KI-Diktat', desc: 'Behandlung einfach einsprechen - die KI schreibt automatisch mit und verfeinert den Text.', color: 'bg-fuchsia-100 text-fuchsia-600' },
-                { href: '/online-buchungen', icon: Languages, label: 'Mehrsprachige Buchung', desc: 'Deine Buchungsseite in 6 Sprachen - jeder Kunde bucht bequem in seiner Sprache.', color: 'bg-sky-100 text-sky-600' },
-                { href: '/online-buchungen', icon: Ticket, label: 'Rabattcodes', desc: 'Aktionen und Neukundencodes für die Online-Buchung, inklusive Nutzungsstatistik.', color: 'bg-pink-100 text-pink-600' },
-                { href: undefined, icon: ListChecks, label: 'Aufgaben & Team-Notizen', desc: 'Aufgaben mit Fälligkeiten, Notizen und Zuweisungen - mit Lesebestätigung fürs Team.', color: 'bg-violet-100 text-violet-600' },
-              ].map((item) => {
-                const cardBody = (
-                  <>
-                    <div className="flex items-center mb-4">
-                      <div className={`w-12 h-12 ${item.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                        <item.icon className="h-6 w-6" />
-                      </div>
-                    </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">{item.label}</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
-                    {item.href && (
-                      <span className="inline-flex items-center text-sm font-medium text-indigo-600 mt-4 group-hover:text-indigo-700">
-                        Mehr erfahren
-                        <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                      </span>
-                    )}
-                  </>
-                );
-
-                return item.href ? (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    className="group bg-white p-6 rounded-2xl border border-gray-100 hover:border-gray-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl block"
-                  >
-                    {cardBody}
-                  </Link>
-                ) : (
-                  <div
-                    key={item.label}
-                    className="group bg-white p-6 rounded-2xl border border-gray-100 transition-all duration-300 hover:shadow-xl"
-                  >
-                    {cardBody}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
+        {/* 7. Differenzierung */}
         <ComparisonTable />
 
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Für welche Studios ist Treatflow gemacht?
-              </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Wähle deine Branche oder entdecke weitere passende Lösungen.
-              </p>
-            </div>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                { href: '/kosmetikstudio-software', label: 'Kosmetikstudio' },
-                { href: '/schoenheitssalon-software', label: 'Schönheitssalon' },
-                { href: '/laser-haarentfernung-software', label: 'Laser & IPL' },
-                { href: '/permanent-makeup-software', label: 'Permanent Makeup' },
-                { href: '/nagelstudio-software', label: 'Nagelstudio' },
-                { href: '/lash-studio-software', label: 'Lash Studio' },
-                { href: '/aesthetische-medizin-software', label: 'Ästhetische Medizin' },
-                { href: '/tattoo-studio-software', label: 'Tattoo Studio' },
-                { href: '/spa-wellness-software', label: 'Spa & Wellness' },
-                { href: '/massage-software', label: 'Massage' },
-              ].map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="bg-white border border-gray-200 rounded-full px-5 py-2 text-sm font-medium text-gray-700 hover:border-indigo-300 hover:text-indigo-600 transition-colors"
-                >
-                  {item.label}
-                </Link>
-              ))}
-              <span className="bg-indigo-50 border border-indigo-200 rounded-full px-5 py-2 text-sm font-medium text-indigo-700">
-                Und viele weitere
-              </span>
-            </div>
-          </div>
-        </section>
-
-        <BenefitStats />
-        <AlwaysWithYou />
+        {/* 8. Betreuung */}
         <SupportTrustBanner />
 
+        {/* 9. Preis → Proof → FAQ */}
         <PricingSection />
         <TestimonialsSection />
         <FAQSection />
 
+        {/* Treatwell-Klarstellung (kurz) */}
         <section className="py-10 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 lg:p-8 flex flex-col md:flex-row items-center gap-6">
@@ -512,7 +434,7 @@ export default function Home() {
                   Du suchst Treatwell? Das sind nicht wir.
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Die Namen klingen ähnlich - aber Treatflow ist keine Buchungsplattform mit Provisionen, sondern eine Studio-Software speziell für Kosmetikstudios. Keine Provision, dafür Kundenkartei, Dokumentation und persönliche Betreuung.
+                  Treatflow ist keine Buchungsplattform mit Provisionen, sondern Studio-Software für Kosmetikstudios – mit Kundenkartei, Dokumentation und persönlicher Betreuung.
                 </p>
               </div>
               <Link
@@ -526,39 +448,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 text-center">
-              Warum moderne Kosmetikstudios auf digitale Software setzen
-            </h2>
-            <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed space-y-4">
-              <p>
-                Der Alltag im Kosmetikstudio ist anspruchsvoll: Termine koordinieren, Kunden betreuen, Behandlungen dokumentieren, Produkte über den <Link href="/shop" className="text-indigo-600 hover:underline">Online-Shop</Link> verkaufen und gleichzeitig den Überblick über das gesamte Business behalten. Viele Studios arbeiten noch mit Papierkalender, WhatsApp-Nachrichten und handgeschriebenen Karteikarten – das kostet wertvolle Zeit, die für die eigentliche Arbeit am Kunden fehlt.
-              </p>
-              <p>
-                Eine spezialisierte Studio Software wie Treatflow löst genau diese Probleme. Der <Link href="/terminkalender" className="text-indigo-600 hover:underline">Terminkalender</Link> mit <Link href="/online-buchungen" className="text-indigo-600 hover:underline">Online-Buchungen</Link> ermöglicht Kunden, rund um die Uhr Termine zu buchen – über die <Link href="/online-buchungen" className="text-indigo-600 hover:underline">Online-Terminbuchung speziell für Kosmetikstudios</Link>. Automatische <Link href="/sms-erinnerungen-kosmetikstudio" className="text-indigo-600 hover:underline">SMS-Erinnerungen</Link> reduzieren No-Shows um bis zu 80%. Digitale <Link href="/formulare" className="text-indigo-600 hover:underline">Anamnesebögen und Formulare</Link> ersetzen den Papierstapel – von der <Link href="/digitale-anamnese-kosmetikstudio" className="text-indigo-600 hover:underline">digitalen Anamnese</Link> bis zur Einwilligung. Und die <Link href="/behandlungsdokumentation-kosmetikstudio" className="text-indigo-600 hover:underline">Behandlungsdokumentation</Link> erfüllt alle Anforderungen – auch für NiSV-pflichtige Geräte. Das Ergebnis: weniger Verwaltung, mehr Zeit für das, was zählt – deine Kunden.
-              </p>
-              <p>
-                Für Studios mit Fokus auf Kundendaten bietet Treatflow eine zentrale <Link href="/kundenkartei-software" className="text-indigo-600 hover:underline">Kundenkartei Software</Link>. Dort findest du alle Informationen zur <Link href="/kundenverwaltung" className="text-indigo-600 hover:underline">digitalen Kundenkartei im Kosmetikstudio</Link> inklusive Vergleich zu kostenlosen oder papierbasierten Alternativen.
-              </p>
-            </div>
-            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
-              <Link href="/kundenkartei-software" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Kundenkartei Software</Link>
-              <Link href="/online-buchungen" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Online-Terminbuchung Kosmetikstudio</Link>
-              <Link href="/behandlungsdokumentation-kosmetikstudio" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Behandlungsdokumentation Kosmetikstudio</Link>
-              <Link href="/digitale-anamnese-kosmetikstudio" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Digitale Anamnese Kosmetikstudio</Link>
-              <Link href="/sms-erinnerungen-kosmetikstudio" className="hover:text-indigo-600 transition-colors underline underline-offset-4">SMS-Erinnerungen Kosmetikstudio</Link>
-              <Link href="/kosmetikstudio-software-vergleich" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Software-Vergleich</Link>
-              <Link href="/blog/beste-kosmetikstudio-software-2026" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Beste Kosmetikstudio Software 2026</Link>
-              <Link href="/blog/online-buchungssystem-vorteile" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Vorteile eines Online-Buchungssystems</Link>
-              <Link href="/blog/behandlungsdokumentation-nisv-konform" className="hover:text-indigo-600 transition-colors underline underline-offset-4">NiSV-konform dokumentieren</Link>
-              <Link href="/hygieneplan-kosmetikstudio-pdf" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Hygieneplan Kosmetikstudio PDF</Link>
-              <Link href="/website-fuer-kosmetikstudios" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Website für Kosmetikstudios</Link>
-              <Link href="/treatflow-vs-treatwell" className="hover:text-indigo-600 transition-colors underline underline-offset-4">Treatflow vs. Treatwell</Link>
-            </div>
-          </div>
-        </section>
-
+        {/* 10. Final CTA */}
         <section className="py-20 bg-indigo-600" aria-label="Call-to-Action">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">
@@ -603,6 +493,30 @@ export default function Home() {
               </a>
             </div>
             <p className="text-sm text-indigo-200 mt-6">Jederzeit kündbar. DSGVO-konform. Mit persönlicher Betreuung und Hilfe.</p>
+          </div>
+        </section>
+
+        {/* SEO: kompakt, nach dem CTA – kein Conversion-Ballast */}
+        <section className="py-10 bg-white border-t border-gray-100" aria-label="Weiterführende Informationen">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-sm text-gray-500 leading-relaxed mb-5">
+              Treatflow ist die{' '}
+              <Link href="/kosmetikstudio-software" className="text-indigo-600 hover:underline">
+                Software für Kosmetikstudios
+              </Link>
+              {' '}mit Terminkalender, Online-Buchung, digitaler Kundenkartei, Formularen und NiSV-konformer Behandlungsdokumentation – ohne Provision, DSGVO-konform und Made in Austria.
+            </p>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-gray-500">
+              {seoLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="hover:text-indigo-600 transition-colors underline underline-offset-4"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
