@@ -1,17 +1,22 @@
-import { Clock, Heart, CheckCircle, ArrowRight, Zap, MessageCircle } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { Clock, Heart, MessageCircle, Zap, Mail, Bell } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
-import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
-import AiAnswerCapsule from '../components/AiAnswerCapsule';
-import ContentAttribution from '../components/ContentAttribution';
+import { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
+import {
+    FeatureUnderstand,
+    FeatureHowItWorks,
+    FeatureCards,
+    FeatureFaq,
+    FeatureRelated,
+    FeaturePageCta,
+} from '../components/FeatureSections';
 import { buildHreflangAlternates } from '../i18n/seo';
 import { generateWebPageSchema } from '@/lib/content-attribution';
 
-const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_MODIFIED = '2026-08-18';
 const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
@@ -20,7 +25,7 @@ export const metadata = {
     keywords: ['Nachrichtenautomatisierung Kosmetik', 'SMS Terminerinnerung Kosmetikstudio', 'No-Show reduzieren Kosmetikstudio', 'Automatische Terminerinnerungen', 'SMS Terminbestätigung', 'Follow-up E-Mails', 'Geburtstagswünsche automatisch', 'Kundenbindung Beauty Studio'],
     alternates: {
         canonical: 'https://www.treatflow.io/nachrichtenautomatisierung',
-        ...buildHreflangAlternates("messaging"),
+        ...buildHreflangAlternates('messaging'),
     },
     openGraph: {
         title: 'SMS & E-Mail Erinnerungen für Kosmetikstudios',
@@ -37,51 +42,37 @@ export const metadata = {
     },
 };
 
+const faqs = [
+    {
+        question: 'Wie kann ich No-Shows im Kosmetikstudio reduzieren?',
+        answer: 'Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z.B. 3 Tage und 1 Tag vor dem Termin). Studios berichten von bis zu 80% weniger Ausfällen.',
+    },
+    {
+        question: 'Was kosten SMS-Erinnerungen für Termine?',
+        answer: 'SMS-Erinnerungen bei Treatflow kosten ab 0,09 EUR pro SMS. Die SMS-Automatisierung ist im Booking-Plan (59 EUR/Monat) enthalten. E-Mail-Erinnerungen sind in allen Plänen kostenlos und unbegrenzt.',
+    },
+    {
+        question: 'Welche Nachrichten sollte ich automatisieren?',
+        answer: 'Die wichtigsten automatisierten Nachrichten sind: Buchungsbestätigungen, Terminerinnerungen (1-7 Tage vorher), Stornierungsbenachrichtigungen, Follow-up-Nachrichten nach Behandlungen und Geburtstagswünsche. Damit sparst du Zeit und stärkst die Kundenbindung.',
+    },
+    {
+        question: 'Funktionieren SMS-Erinnerungen besser als E-Mails?',
+        answer: 'SMS haben eine Öffnungsrate von über 95%, E-Mails nur 20-30%. Für Terminerinnerungen empfehlen wir SMS, für ausführlichere Nachrichten wie Follow-ups oder Nachsorgehinweise eignen sich E-Mails besser. Treatflow unterstützt beide Kanäle.',
+    },
+    {
+        question: 'Kann ich Nachsorge-Nachrichten automatisch versenden?',
+        answer: 'Ja. Mit Treatflow kannst du automatische Follow-up-Nachrichten nach Behandlungen einrichten. Diese können Nachsorgetipps, Feedback-Anfragen oder Angebote für Folgetermine enthalten - per E-Mail oder SMS.',
+    },
+];
+
 const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-        {
-            "@type": "Question",
-            "name": "Wie kann ich No-Shows im Kosmetikstudio reduzieren?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z.B. 3 Tage und 1 Tag vor dem Termin). Studios berichten von bis zu 80% weniger Ausfällen."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Was kosten SMS-Erinnerungen für Termine?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "SMS-Erinnerungen bei Treatflow kosten ab 0,09 EUR pro SMS. Die SMS-Automatisierung ist im Booking-Plan (59 EUR/Monat) enthalten. E-Mail-Erinnerungen sind in allen Plänen kostenlos und unbegrenzt."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Welche Nachrichten sollte ich automatisieren?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Die wichtigsten automatisierten Nachrichten sind: Buchungsbestätigungen, Terminerinnerungen (1-7 Tage vorher), Stornierungsbenachrichtigungen, Follow-up-Nachrichten nach Behandlungen und Geburtstagswünsche. Damit sparst du Zeit und stärkst die Kundenbindung."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Funktionieren SMS-Erinnerungen besser als E-Mails?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "SMS haben eine Öffnungsrate von über 95%, E-Mails nur 20-30%. Für Terminerinnerungen empfehlen wir SMS, für ausführlichere Nachrichten wie Follow-ups oder Nachsorgehinweise eignen sich E-Mails besser. Treatflow unterstützt beide Kanäle."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Kann ich Nachsorge-Nachrichten automatisch versenden?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ja. Mit Treatflow kannst du automatische Follow-up-Nachrichten nach Behandlungen einrichten. Diese können Nachsorgetipps, Feedback-Anfragen oder Angebote für Folgetermine enthalten - per E-Mail oder SMS."
-            }
-        }
-    ]
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
 };
 
 export default function NachrichtenautomatisierungPage() {
@@ -90,10 +81,14 @@ export default function NachrichtenautomatisierungPage() {
             <Navigation />
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
-                    { label: 'Funktionen', href: '/funktionen' },
-                    { label: 'Nachrichten' },
-                ])) }}
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(
+                        generateBreadcrumbSchema([
+                            { label: 'Funktionen', href: '/funktionen' },
+                            { label: 'Nachrichten' },
+                        ])
+                    ),
+                }}
             />
             <Script
                 id="nachrichtenautomatisierung-faq-schema"
@@ -116,435 +111,97 @@ export default function NachrichtenautomatisierungPage() {
                     ),
                 }}
             />
-            {/* Hero Section */}
-            <section className="pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
-                <Breadcrumbs items={[
+
+            <FeatureHero
+                theme="purple"
+                breadcrumbs={[
                     { label: 'Funktionen', href: '/funktionen' },
                     { label: 'Nachrichten' },
-                ]} />
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <div className="inline-flex items-center bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                            <MessageCircle className="h-4 w-4 mr-2" />
-                            Nachrichtenautomatisierung
-                        </div>
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 break-words hyphens-auto" lang="de">
-                            Automatische <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Nachrichten</span> für mehr Kundenbindung
-                        </h1>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            Versende automatisch personalisierte Erinnerungen, Terminbestätigungen und Follow-ups
-                            per E-Mail und SMS. Reduziere No-Shows um 80% und steigere die Kundenzufriedenheit.
-                        </p>
-                        <AiAnswerCapsule
-                            question="Wie kann ich No-Shows im Kosmetikstudio reduzieren?"
-                            answer="Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z. B. 24 Stunden und 2 Stunden vor dem Termin). Studios mit aktivierten Remindern berichten von bis zu 80% weniger ausgefallenen Terminen."
-                        />
-                        <ContentAttribution
-                            dateModified={PAGE_DATE_MODIFIED}
-                            datePublished={PAGE_DATE_PUBLISHED}
-                        />
-                    </div>
+                ]}
+                eyebrow="Nachrichtenautomatisierung"
+                eyebrowIcon={MessageCircle}
+                title={<>Automatische <FeatureTitleHighlight theme="purple">Erinnerungen</FeatureTitleHighlight></>}
+                description="Terminbestätigungen, Reminder und Follow-ups per E-Mail und SMS – weniger No-Shows, mehr Bindung."
+                chips={['SMS & E-Mail', 'Bis 80% weniger No-Shows', 'Geburtstagsgrüße']}
+                secondaryCta={{ label: 'Zum Terminkalender', href: '/terminkalender' }}
+                aiCapsule={{
+                    question: 'Wie kann ich No-Shows im Kosmetikstudio reduzieren?',
+                    answer: 'Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z. B. 24 Stunden und 2 Stunden vor dem Termin). Studios mit aktivierten Remindern berichten von bis zu 80% weniger ausgefallenen Terminen.',
+                }}
+                dateModified={PAGE_DATE_MODIFIED}
+                datePublished={PAGE_DATE_PUBLISHED}
+                image={{
+                    src: '/images/lifestyle/sms-erinnerung-studio.png',
+                    alt: 'SMS-Erinnerung im Studio – Kundin erhält Terminerinnerung auf dem Smartphone',
+                }}
+            />
 
-                    <div className="mt-12 max-w-5xl mx-auto">
-                        <Image src="/images/funktionen/hero-frau-smartphone.jpg" alt="Frau mit Smartphone – persönliche Nachrichten erreichen deine Kunden" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
-                    </div>
-                </div>
-            </section>
+            <FeatureUnderstand
+                theme="purple"
+                title="Nachrichten, die automatisch rausgehen"
+                description="Terminbestaetigung, Erinnerung und Nachsorge – deine Kunden bekommen die richtige Nachricht zur richtigen Zeit, ohne dass du etwas tun musst."
+                items={[
+                    {
+                        icon: Bell,
+                        title: 'Weniger vergessene Termine',
+                        text: 'Deine Kunden bekommen 1–7 Tage vor dem Termin eine Erinnerung per SMS oder E-Mail. Studios berichten von bis zu 80 % weniger Ausfaellen.',
+                    },
+                    {
+                        icon: MessageCircle,
+                        title: 'Nachsorge und Follow-up',
+                        text: 'Nach der Behandlung bekommt dein Kunde automatisch Tipps, eine Feedback-Anfrage oder ein Folgetermin-Angebot.',
+                    },
+                    {
+                        icon: Heart,
+                        title: 'Persoenliche Gruesse',
+                        text: 'Geburtstagswuensche und personalisierte Nachrichten gehen automatisch raus – das staerkt die Bindung ohne Extra-Aufwand.',
+                    },
+                ]}
+            />
 
-            {/* Features Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
-                            Drei Arten automatischer Nachrichten
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Erreiche deine Kunden zur richtigen Zeit mit der richtigen Nachricht - per E-Mail oder SMS, vollautomatisch.
-                        </p>
-                    </div>
+            <FeatureHowItWorks
+                theme="purple"
+                description="In drei Schritten zu automatischen Nachrichten."
+                steps={[
+                    { title: 'Vorlage waehlen', text: 'Waehle eine fertige Vorlage fuer Bestaetigung, Erinnerung oder Follow-up. Platzhalter wie Name und Termindatum werden automatisch gefuellt.' },
+                    { title: 'Zeitpunkt festlegen', text: 'Bestimme, wann die Nachricht rausgehen soll – z. B. 3 Tage und 1 Tag vor dem Termin oder direkt nach der Behandlung.' },
+                    { title: 'Laeuft von allein', text: 'Treatflow verschickt die Nachrichten per E-Mail oder SMS zur richtigen Zeit. Du kuemmerst dich um deine Kunden.' },
+                ]}
+            />
 
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {/* Terminerinnerungen */}
-                        <div className="bg-gradient-to-br from-orange-50 to-red-100 p-8 rounded-2xl text-center">
-                            <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                <Clock className="h-8 w-8 text-white" />
-                            </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Terminerinnerungen</h3>
-                            <p className="text-gray-600 mb-6 leading-relaxed">
-                                Reduziere No-Shows um bis zu 80% mit automatischen Erinnerungen
-                                per E-Mail oder SMS - 1-7 Tage vor dem Termin.
-                            </p>
-                            <ul className="space-y-3 mb-8">
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Per E-Mail und SMS</span>
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Flexibler Zeitpunkt (1-7 Tage vorher)</span>
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Personalisierte Nachrichten</span>
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>80% weniger No-Shows</span>
-                                </li>
-                            </ul>
-                            <div className="bg-orange-600 text-white px-6 py-3 rounded-lg font-medium">
-                                Weniger Ausfälle
-                            </div>
-                        </div>
-
-                        {/* Follow-up Nachrichten */}
-                        <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl text-center">
-                            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                <MessageCircle className="h-8 w-8 text-white" />
-                            </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Follow-up Nachrichten</h3>
-                            <p className="text-gray-600 mb-6 leading-relaxed">
-                                Hole Feedback ein und biete Nachbehandlungen an - per E-Mail oder SMS.
-                                Perfekt für Kundenbindung und Zusatzumsätze.
-                            </p>
-                            <ul className="space-y-3 mb-8">
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Per E-Mail oder SMS</span>
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Automatisches Feedback einholen</span>
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Nachbehandlungen anbieten</span>
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Höhere Kundenzufriedenheit</span>
-                                </li>
-                            </ul>
-                            <div className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium">
-                                Mehr Kundenbindung
-                            </div>
-                        </div>
-
-                        {/* Geburtstagswünsche */}
-                        <div className="bg-gradient-to-br from-pink-50 to-purple-100 p-8 rounded-2xl text-center">
-                            <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                <Heart className="h-8 w-8 text-white" />
-                            </div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">Geburtstagswünsche</h3>
-                            <p className="text-gray-600 mb-6 leading-relaxed">
-                                Überrasche deine Kunden mit personalisierten Geburtstagswünschen
-                                und exklusiven Angeboten.
-                            </p>
-                            <ul className="space-y-3 mb-8">
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Automatische Geburtstagswünsche</span>
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Exklusive Geburtstagsrabatte</span>
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Persönliche Note</span>
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                                    <span>Stärkere Kundenbindung</span>
-                                </li>
-                            </ul>
-                            <div className="bg-pink-600 text-white px-6 py-3 rounded-lg font-medium">
-                                Persönlicher Service
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Personalization Section */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
-                            Vollständig personalisierte Nachrichten
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Nutze intelligente Platzhalter für automatisch personalisierte E-Mails und SMS-Nachrichten.
-                        </p>
-                    </div>
-
-                    <div className="grid lg:grid-cols-2 gap-16 items-center">
-                        <div>
-                            <div className="space-y-8">
-                                <div className="flex items-start">
-                                    <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                        <span className="text-white font-bold text-sm">1</span>
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2">Intelligente Platzhalter</h3>
-                                        <p className="text-gray-600">
-                                            Verwende Platzhalter wie kunde_name, studio_name oder termin_datum
-                                            für automatisch personalisierte Nachrichten.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start">
-                                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                        <span className="text-white font-bold text-sm">2</span>
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2">Behandlungsspezifisch</h3>
-                                        <p className="text-gray-600">
-                                            Erstelle verschiedene Vorlagen für unterschiedliche Behandlungsarten
-                                            mit spezifischen Nachsorgetipps.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start">
-                                    <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                        <span className="text-white font-bold text-sm">3</span>
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2">Flexibles Timing</h3>
-                                        <p className="text-gray-600">
-                                            Bestimme genau, wann welche Nachricht versendet wird -
-                                            von Stunden bis zu Wochen im Voraus oder danach.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Email Template Mockup */}
-                        <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
-                            <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-4 text-white">
-                                <div className="flex items-center justify-between">
-                                    <h3 className="font-semibold">E-Mail Vorlage bearbeiten</h3>
-                                    <div className="flex items-center space-x-2">
-                                        <button className="bg-white/20 px-3 py-1 rounded text-sm">Vorschau</button>
-                                        <button className="bg-white/20 px-3 py-1 rounded text-sm">Speichern</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="p-6">
-                                <div className="space-y-4">
-                                    <div>
-                                        <label className="block text-sm font-medium text-gray-700 mb-2">E-Mail-Betreff</label>
-                                        <input
-                                            type="text"
-                                            className="w-full p-3 border border-gray-300 rounded-lg"
-                                            value="Erinnerung: Ihr Termin bei {studio_name} am {termin_datum}"
-                                            readOnly
-                                        />
-                                    </div>
-
-                                    <div>
-                                        <label className="block text-sm font-medium text-gray-700 mb-2">E-Mail-Text</label>
-                                        <textarea
-                                            className="w-full p-3 border border-gray-300 rounded-lg h-32"
-                                            value="Liebe/r {kunde_name},\n\nwir freuen uns auf Ihren Termin bei {studio_name} am {termin_datum} um {termin_uhrzeit}.\n\nBehandlung: {behandlung_name}\nDauer: {behandlung_dauer}\n\nBei Fragen erreichen Sie uns unter {studio_telefon}.\n\nHerzliche Grüße,\nIhr {studio_name} Team"
-                                            readOnly
-                                        />
-                                    </div>
-
-                                    <div className="bg-blue-50 p-4 rounded-lg">
-                                        <h4 className="font-medium text-blue-900 mb-2">Verfügbare Platzhalter:</h4>
-                                        <div className="grid grid-cols-2 gap-2 text-sm text-blue-700">
-                                            <span>kunde_name</span>
-                                            <span>studio_name</span>
-                                            <span>termin_datum</span>
-                                            <span>termin_uhrzeit</span>
-                                            <span>behandlung_name</span>
-                                            <span>studio_telefon</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Benefits Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
-                            Warum Nachrichtenautomatisierung?
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Spare Zeit, reduziere Ausfälle und verbessere die Kundenerfahrung.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                                <span className="text-2xl font-bold text-white">80%</span>
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-2">Weniger No-Shows</h3>
-                            <p className="text-gray-600">
-                                Automatische Erinnerungen reduzieren Terminausfälle drastisch.
-                            </p>
-                        </div>
-
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                                <Clock className="h-8 w-8 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-2">Zeit sparen</h3>
-                            <p className="text-gray-600">
-                                Keine manuellen Erinnerungen mehr - E-Mails und SMS laufen automatisch.
-                            </p>
-                        </div>
-
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                                <Heart className="h-8 w-8 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-2">Kundenbindung</h3>
-                            <p className="text-gray-600">
-                                Persönliche Nachrichten stärken die Beziehung zu deinen Kunden.
-                            </p>
-                        </div>
-
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                                <Zap className="h-8 w-8 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-2">Mehr Umsatz</h3>
-                            <p className="text-gray-600">
-                                Follow-ups und Geburtstagsangebote generieren Zusatztermine.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Verwandte Seiten / Cluster-Verlinkung */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                            Verwandte Funktionen für dein Studio
-                        </h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Treatflow vereint Nachrichtenautomatisierung, Terminkalender, Kundenverwaltung und Formulare in einer Plattform.
-                        </p>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <Link href="/sms-erinnerungen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">SMS-Erinnerungen Kosmetikstudio</span>
-                            <span className="text-sm text-gray-600 block mb-2">Weniger No-Shows durch automatische SMS</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/online-buchungen" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Online-Terminbuchung</span>
-                            <span className="text-sm text-gray-600 block mb-2">Kunden buchen 24/7 über deinen Link</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/kosmetikstudio-software" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Kosmetikstudio Software</span>
-                            <span className="text-sm text-gray-600 block mb-2">All-in-One für dein Studio</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/terminkalender" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Terminsoftware</span>
-                            <span className="text-sm text-gray-600 block mb-2">Online-Buchung & Erinnerungen</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/kundenverwaltung" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Kundenkartei</span>
-                            <span className="text-sm text-gray-600 block mb-2">Kundendaten & Historie</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/anamnesebogen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Anamnesebögen</span>
-                            <span className="text-sm text-gray-600 block mb-2">Formulare & Einwilligungen</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <FeatureCards
+                theme="purple"
+                title="Was du bekommst"
+                description="Alles für automatische Kundenkommunikation – klar und steuerbar."
+                items={[
+                    { icon: Clock, title: 'Terminerinnerungen', text: 'Flexibler Zeitpunkt, personalisierte Texte, SMS und E-Mail.', points: ['1–7 Tage vorher', 'Beide Kanäle', 'Weniger Ausfälle'] },
+                    { icon: Mail, title: 'Buchungsbestätigung', text: 'Sofort nach der Buchung – mit Termin, Behandlung und Studio-Infos.', points: ['Automatisch', 'Klarer Inhalt', 'Weniger Rückfragen'] },
+                    { icon: MessageCircle, title: 'Follow-up & Nachsorge', text: 'Nach der Behandlung Tipps, Feedback oder Folgetermin anbieten.', points: ['E-Mail oder SMS', 'Vorlagen', 'Mehr Bindung'] },
+                    { icon: Heart, title: 'Geburtstagswünsche', text: 'Persönliche Grüße und optionale Angebote am Geburtstag.', points: ['Automatisch', 'Rabatt möglich', 'Stärkere Bindung'] },
+                    { icon: Zap, title: 'Platzhalter', text: 'Name, Termin, Behandlung – Texte füllen sich von selbst.', points: ['Personalisierung', 'Behandlungsspezifisch', 'Schnelle Vorlagen'] },
+                    { icon: Bell, title: 'Storno-Infos', text: 'Kunden und Studio bleiben bei Absagen auf dem Laufenden.', points: ['Sofort', 'Transparent', 'Weniger Chaos'] },
+                ]}
+            />
 
             <SocialProofBar />
 
-            {/* FAQ Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
-                            Häufige Fragen zur Nachrichtenautomatisierung
-                        </h2>
-                    </div>
-                    <div className="space-y-6">
-                        {[
-                            {
-                                q: 'Wie kann ich No-Shows im Kosmetikstudio reduzieren?',
-                                a: 'Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z.B. 3 Tage und 1 Tag vor dem Termin). Studios berichten von bis zu 80% weniger Ausfällen.',
-                            },
-                            {
-                                q: 'Was kosten SMS-Erinnerungen für Termine?',
-                                a: 'SMS-Erinnerungen bei Treatflow kosten ab 0,09 EUR pro SMS. Die SMS-Automatisierung ist im Booking-Plan (59 EUR/Monat) enthalten. E-Mail-Erinnerungen sind in allen Plänen kostenlos und unbegrenzt.',
-                            },
-                            {
-                                q: 'Welche Nachrichten sollte ich automatisieren?',
-                                a: 'Die wichtigsten automatisierten Nachrichten sind: Buchungsbestätigungen, Terminerinnerungen (1-7 Tage vorher), Stornierungsbenachrichtigungen, Follow-up-Nachrichten nach Behandlungen und Geburtstagswünsche. Damit sparst du Zeit und stärkst die Kundenbindung.',
-                            },
-                            {
-                                q: 'Funktionieren SMS-Erinnerungen besser als E-Mails?',
-                                a: 'SMS haben eine Öffnungsrate von über 95%, E-Mails nur 20-30%. Für Terminerinnerungen empfehlen wir SMS, für ausführlichere Nachrichten wie Follow-ups oder Nachsorgehinweise eignen sich E-Mails besser. Treatflow unterstützt beide Kanäle.',
-                            },
-                            {
-                                q: 'Kann ich Nachsorge-Nachrichten automatisch versenden?',
-                                a: 'Ja. Mit Treatflow kannst du automatische Follow-up-Nachrichten nach Behandlungen einrichten. Diese können Nachsorgetipps, Feedback-Anfragen oder Angebote für Folgetermine enthalten - per E-Mail oder SMS.',
-                            },
-                        ].map((faq, index) => (
-                            <div key={index} className="border border-gray-200 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <FeatureFaq title="Häufige Fragen zur Nachrichtenautomatisierung" items={faqs} />
 
-            {/* CTA Section */}
-            <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 break-words hyphens-auto" lang="de">
-                        Bereit für automatische Kundenkommunikation?
-                    </h2>
-                    <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-                        Teste die Nachrichtenautomatisierung 14 Tage kostenlos und erlebe, wie sich deine Kundenbindung verbessert.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="https://app.treatflow.io/auth/register"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
-                        >
-                            14 Tage gratis testen
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                        <Link
-                            href="/"
-                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200"
-                        >
-                            Zurück zur Startseite
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <FeatureRelated
+                items={[
+                    { href: '/sms-erinnerungen-kosmetikstudio', title: 'SMS-Erinnerungen', description: 'Weniger No-Shows durch SMS' },
+                    { href: '/terminkalender', title: 'Terminkalender', description: 'Termine & Erinnerungen zusammen' },
+                    { href: '/online-buchungen', title: 'Online-Buchungen', description: '24/7 Buchung über deinen Link' },
+                ]}
+            />
+
+            <FeaturePageCta
+                theme="purple"
+                title="Bereit für automatische Kundenkommunikation?"
+                description="14 Tage kostenlos testen – Erinnerungen, Follow-ups und Geburtstage ohne Extra-Arbeit."
+                secondaryLabel="Zum Terminkalender"
+                secondaryHref="/terminkalender"
+            />
 
             <Footer />
         </div>

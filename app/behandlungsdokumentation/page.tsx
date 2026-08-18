@@ -1,17 +1,22 @@
-import { FileText, Camera, Zap, Clock, CheckCircle, ArrowRight, Brain, Shield, Mic, Highlighter, PenTool } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { FileText, Camera, Brain, Shield, Mic, PenTool } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
-import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
-import AiAnswerCapsule from '../components/AiAnswerCapsule';
-import ContentAttribution from '../components/ContentAttribution';
+import { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
+import {
+    FeatureUnderstand,
+    FeatureHowItWorks,
+    FeatureCards,
+    FeatureFaq,
+    FeatureRelated,
+    FeaturePageCta,
+} from '../components/FeatureSections';
 import { buildHreflangAlternates } from '../i18n/seo';
 import { generateWebPageSchema } from '@/lib/content-attribution';
 
-const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_MODIFIED = '2026-08-18';
 const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
@@ -20,68 +25,47 @@ export const metadata = {
     keywords: ['Behandlungsdokumentation Kosmetik', 'Behandlungsdokumentation Kosmetikstudio', 'Vorher Nachher Fotos Software', 'Dokumentation App Kosmetikstudio', 'NiSV konform dokumentieren', 'Behandlungsdokumentation Software Kosmetik', 'NiSV Dokumentation Software', 'Automatische Behandlungsnotizen', 'Rechtssichere Dokumentation', 'Behandlung per Sprache diktieren', 'KI Diktat Kosmetik', 'Foto-Markierungen Behandlung', 'digitale Unterschrift Behandlung'],
     alternates: {
         canonical: 'https://www.treatflow.io/behandlungsdokumentation',
-        ...buildHreflangAlternates("treatment-documentation"),
+        ...buildHreflangAlternates('treatment-documentation'),
     },
     openGraph: {
         title: 'Behandlungsdokumentation Kosmetik: Fotos & Notizen',
         description: 'Halte jede Behandlung strukturiert fest. Vorher-Nachher-Fotos, Notizen, NiSV-konform.',
         url: 'https://www.treatflow.io/behandlungsdokumentation',
-        images: [
-            {
-                url: '/images/mockups/ai-doc.png',
-                width: 1200,
-                height: 630,
-                alt: 'Treatflow Behandlungsdokumentation Interface',
-            },
-        ],
+        images: [{ url: '/images/mockups/ai-doc.png', width: 1200, height: 630, alt: 'Treatflow Behandlungsdokumentation' }],
     },
 };
 
+const faqs = [
+    {
+        question: 'Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?',
+        answer: 'Treatflow bietet eine spezialisierte Behandlungsdokumentation für Kosmetikstudios. Mit KI-Unterstützung, Vorher-Nachher-Fotos, Behandlungsparametern und NiSV-konformer Archivierung dokumentierst du professionell und rechtssicher.',
+    },
+    {
+        question: 'Ist Behandlungsdokumentation im Kosmetikstudio Pflicht?',
+        answer: 'Für NiSV-pflichtige Behandlungen (Laser, IPL, Ultraschall, Radiofrequenz) ist eine Behandlungsdokumentation gesetzlich vorgeschrieben. Für alle anderen Behandlungen ist sie empfehlenswert – für Rechtssicherheit, Qualität und Kundenzufriedenheit.',
+    },
+    {
+        question: 'Was gehört in eine professionelle Behandlungsdokumentation?',
+        answer: 'Behandlungsart und -datum, Produkte und Parameter, Vorher-Nachher-Fotos, Hautbefund, Verlaufsnotizen, Nachsorge-Empfehlungen und optional die Unterschrift der Kundin.',
+    },
+    {
+        question: 'Wie dokumentiere ich Vorher-Nachher-Fotos korrekt?',
+        answer: 'Unter gleichen Bedingungen (Licht, Winkel, Abstand). In Treatflow speicherst du Fotos direkt in der Dokumentation und ordnest sie dem Kundenprofil zu.',
+    },
+    {
+        question: 'Was muss bei NiSV-Behandlungen dokumentiert werden?',
+        answer: 'Beratungsprotokoll, Einwilligung, Geräteeinstellungen (z. B. Energie, Frequenz, Impulsdauer), Behandlungsgebiet, Hautreaktion und Nachsorgehinweise.',
+    },
+];
+
 const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-        {
-            "@type": "Question",
-            "name": "Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Treatflow bietet eine spezialisierte Behandlungsdokumentation für Kosmetikstudios. Mit KI-Unterstützung, Vorher-Nachher-Fotos, Behandlungsparametern und NiSV-konformer Archivierung dokumentierst du professionell und rechtssicher."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Ist Behandlungsdokumentation im Kosmetikstudio Pflicht?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Für NiSV-pflichtige Behandlungen (Laser, IPL, Ultraschall, Radiofrequenz) ist eine Behandlungsdokumentation gesetzlich vorgeschrieben. Aber auch für alle anderen Behandlungen ist sie empfehlenswert - für Rechtssicherheit, Qualitätskontrolle und Kundenzufriedenheit."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Was gehört in eine professionelle Behandlungsdokumentation?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Eine professionelle Dokumentation enthält: Behandlungsart und -datum, verwendete Produkte und Parameter, Vorher-Nachher-Fotos, Hautbefund, Notizen zum Behandlungsverlauf, Empfehlungen für Nachbehandlungen und die Unterschrift des Kunden."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Wie dokumentiere ich Vorher-Nachher-Fotos korrekt?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Vorher-Nachher-Fotos sollten unter gleichen Bedingungen aufgenommen werden (Beleuchtung, Winkel, Abstand). Mit Treatflow kannst du Fotos direkt in der Behandlungsdokumentation speichern und chronologisch dem Kundenprofil zuordnen."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "Was muss bei NiSV-Behandlungen dokumentiert werden?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Bei NiSV-Behandlungen müssen Beratungsprotokoll, Einwilligung, Geräteeinstellungen (Parameter wie Energie, Frequenz, Impulsdauer), Behandlungsgebiet, Hautreaktion und Nachsorgehinweise dokumentiert werden."
-            }
-        }
-    ]
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+    })),
 };
 
 export default function BehandlungsdokumentationPage() {
@@ -90,16 +74,16 @@ export default function BehandlungsdokumentationPage() {
             <Navigation />
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
-                    { label: 'Funktionen', href: '/funktionen' },
-                    { label: 'Dokumentation' },
-                ])) }}
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(
+                        generateBreadcrumbSchema([
+                            { label: 'Funktionen', href: '/funktionen' },
+                            { label: 'Dokumentation' },
+                        ])
+                    ),
+                }}
             />
-            <Script
-                id="behandlungsdokumentation-faq-schema"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
+            <Script id="behandlungsdokumentation-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <Script
                 id="behandlungsdokumentation-webpage-schema"
                 type="application/ld+json"
@@ -107,8 +91,7 @@ export default function BehandlungsdokumentationPage() {
                     __html: JSON.stringify(
                         generateWebPageSchema({
                             name: 'Behandlungsdokumentation Kosmetik digital',
-                            description:
-                                'Digitale Behandlungsdokumentation Kosmetik mit Vorher-Nachher-Fotos, Notizen und Historie. Strukturiert, nachvollziehbar und NiSV-konform.',
+                            description: 'Digitale Behandlungsdokumentation Kosmetik mit Vorher-Nachher-Fotos, Notizen und Historie.',
                             url: 'https://www.treatflow.io/behandlungsdokumentation',
                             dateModified: PAGE_DATE_MODIFIED,
                             datePublished: PAGE_DATE_PUBLISHED,
@@ -116,514 +99,97 @@ export default function BehandlungsdokumentationPage() {
                     ),
                 }}
             />
-            {/* Hero Section */}
-            <section className="pb-20 bg-gradient-to-br from-purple-50 via-white to-pink-50">
-                <Breadcrumbs items={[
+
+            <FeatureHero
+                theme="purple"
+                breadcrumbs={[
                     { label: 'Funktionen', href: '/funktionen' },
                     { label: 'Dokumentation' },
-                ]} />
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <div className="inline-flex items-center bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                            <FileText className="h-4 w-4 mr-2" />
-                            <Zap className="h-4 w-4 mr-1" />
-                            Behandlungsdokumentation
-                        </div>
-                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 break-words hyphens-auto" lang="de">
-                            Professionelle <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Behandlungsdokumentation</span>
-                        </h1>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                            Halte jede Behandlung professionell fest - mit KI-Unterstützung, Fotos, Notizen und allen wichtigen Details.
-                            So weißt du beim nächsten Termin genau, was gemacht wurde.
-                        </p>
-                        <AiAnswerCapsule
-                            question="Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?"
-                            answer="Treatflow dokumentiert Behandlungen digital mit Vorher-Nachher-Fotos, Parametern, Notizen und Unterschrift. Für NiSV-pflichtige Anwendungen (Laser, IPL, Ultraschall, Radiofrequenz) ist eine konforme Dokumentation gesetzlich vorgeschrieben – Treatflow unterstützt genau diesen Workflow."
-                        />
-                        <ContentAttribution
-                            dateModified={PAGE_DATE_MODIFIED}
-                            datePublished={PAGE_DATE_PUBLISHED}
-                        />
-                    </div>
+                ]}
+                eyebrow="Behandlungsdokumentation"
+                eyebrowIcon={FileText}
+                title={<>Behandlung digital <FeatureTitleHighlight theme="purple">dokumentieren</FeatureTitleHighlight></>}
+                description="Fotos, Notizen und Parameter an einem Ort – mit KI-Unterstützung. Beim nächsten Termin weißt du sofort, was gemacht wurde."
+                chips={['Vorher-Nachher-Fotos', 'KI-Diktat', 'NiSV-konform']}
+                secondaryCta={{ label: 'NiSV-Dokumentation', href: '/nisv-dokumentation' }}
+                aiCapsule={{
+                    question: 'Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?',
+                    answer: 'Treatflow dokumentiert Behandlungen digital mit Vorher-Nachher-Fotos, Parametern, Notizen und Unterschrift. Für NiSV-pflichtige Anwendungen ist eine konforme Dokumentation gesetzlich vorgeschrieben – Treatflow unterstützt genau diesen Workflow.',
+                }}
+                dateModified={PAGE_DATE_MODIFIED}
+                datePublished={PAGE_DATE_PUBLISHED}
+                image={{
+                    src: '/images/mockups/dokumentation-hero.png',
+                    alt: 'Treatflow Behandlungsdokumentation mit Fotos und Notizen',
+                }}
+            />
 
-                    <div className="mt-12 max-w-5xl mx-auto">
-                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
-                            <Image
-                                src="/images/lifestyle/dokumentation-waehrend-behandlung.png"
-                                alt="Behandlungsdokumentation am Tablet während der Kosmetikbehandlung"
-                                fill
-                                sizes="100vw"
-                                className="object-cover"
-                            />
-                        </div>
-                    </div>
+            <FeatureUnderstand
+                theme="purple"
+                title="Jede Behandlung sauber festhalten"
+                description="Nach jeder Sitzung hast du einen digitalen Eintrag mit Fotos, Notizen und Parametern – alles im Kundenprofil gespeichert."
+                items={[
+                    {
+                        icon: Camera,
+                        title: 'Vorher-Nachher-Fotos',
+                        text: 'Halte den Fortschritt mit Fotos fest. So kannst du deiner Kundin den Behandlungsverlauf zeigen.',
+                    },
+                    {
+                        icon: Brain,
+                        title: 'Per Sprache oder KI erfassen',
+                        text: 'Diktiere deine Notizen oder lass dir von der KI Vorschlaege machen. Weniger Tippen, mehr Zeit fuer die Behandlung.',
+                    },
+                    {
+                        icon: Shield,
+                        title: 'Rechtlich auf der sicheren Seite',
+                        text: 'Bei NiSV-Behandlungen (Laser, IPL etc.) brauchst du eine lueckenlose Dokumentation – die ist damit automatisch abgedeckt.',
+                    },
+                ]}
+            />
 
-                    {/* Behandlungsdokumentation Screenshot */}
-                    <div className="mt-12 max-w-5xl mx-auto">
-                        <Image
-                            src="/images/mockups/dokumentation-hero.png"
-                            alt="Treatflow Behandlungsdokumentation - Professionelle Dokumentation mit Vorher-Nachher Fotos und automatischen Notizen"
-                            width={1200}
-                            height={800}
-                            sizes="(max-width: 1024px) 100vw, 80vw"
-                            className="w-full h-auto shadow-2xl rounded-2xl"
-                        />
-                    </div>
-                </div>
-            </section>
+            <FeatureHowItWorks
+                theme="purple"
+                description="In drei Schritten zur fertigen Dokumentation."
+                steps={[
+                    { title: 'Dokumentation oeffnen', text: 'Oeffne die Dokumentation direkt aus dem Termin oder Kundenprofil – Kundin und Behandlung sind schon vorausgefuellt.' },
+                    { title: 'Fotos und Notizen erfassen', text: 'Lade Fotos hoch, trage Behandlungsparameter ein und diktiere oder tippe deine Notizen. Wenn noetig, lass die Kundin unterschreiben.' },
+                    { title: 'Gespeichert und abrufbar', text: 'Alles landet automatisch im Kundenprofil. Beim naechsten Termin siehst du sofort, was zuletzt gemacht wurde.' },
+                ]}
+            />
 
-            {/* Features Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
-                            Dokumentation war nie einfacher
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Professionelle Dokumentation mit intelligenter Unterstützung für rechtssichere Behandlungsverläufe.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* KI-Unterstützung */}
-                        <div className="bg-gradient-to-br from-purple-50 to-pink-100 p-8 rounded-2xl">
-                            <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg flex items-center justify-center mb-6">
-                                <Brain className="h-6 w-6 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">KI-Assistent</h3>
-                            <p className="text-gray-600 mb-6">
-                                Unsere KI hilft dir beim Erstellen professioneller Behandlungsnotizen
-                                und gibt automatisch Empfehlungen für Nachbehandlungen.
-                            </p>
-                            <ul className="space-y-2">
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Automatische Textvorschläge
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Intelligente Empfehlungen
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Behandlungsverlauf-Analyse
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* Foto-Management */}
-                        <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl">
-                            <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mb-6">
-                                <Camera className="h-6 w-6 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Foto-Management</h3>
-                            <p className="text-gray-600 mb-6">
-                                Dokumentiere Behandlungsverläufe mit Vorher/Nachher-Fotos.
-                                Sicher gespeichert und DSGVO-konform organisiert.
-                            </p>
-                            <ul className="space-y-2">
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Vorher/Nachher Vergleiche
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Automatische Sortierung
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Sichere Speicherung
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* Rechtssicherheit */}
-                        <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-8 rounded-2xl">
-                            <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg flex items-center justify-center mb-6">
-                                <Shield className="h-6 w-6 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">NiSV-konform</h3>
-                            <p className="text-gray-600 mb-6">
-                                Alle Dokumentationen entsprechen den gesetzlichen Anforderungen
-                                der NiSV und sind rechtssicher archiviert.
-                            </p>
-                            <ul className="space-y-2">
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    NiSV-konforme Archivierung
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Automatische Backups
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Export-Funktionen
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Diktat, Foto-Markierungen & Unterschriften */}
-            <section className="py-20 bg-gradient-to-br from-fuchsia-50 via-white to-purple-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
-                            Dokumentieren, ohne zu tippen
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Sprich deine Behandlung einfach ein, markiere Auffälligkeiten direkt auf dem Foto und lass rechtssicher unterschreiben - alles auf dem Tablet.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* Diktat mit KI */}
-                        <div className="bg-white border border-fuchsia-100 p-8 rounded-2xl shadow-sm">
-                            <div className="w-12 h-12 bg-gradient-to-r from-fuchsia-500 to-purple-600 rounded-lg flex items-center justify-center mb-6">
-                                <Mic className="h-6 w-6 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Diktat mit KI-Unterstützung</h3>
-                            <p className="text-gray-600 mb-6">
-                                Sprich deine Behandlung einfach ein - die KI schreibt automatisch mit und formuliert daraus eine saubere, strukturierte Dokumentation.
-                            </p>
-                            <ul className="space-y-2">
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Sprachaufnahme direkt am Tablet
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Automatische Textverbesserung
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Mehr Zeit für den Kunden
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* Foto-Markierungen */}
-                        <div className="bg-white border border-blue-100 p-8 rounded-2xl shadow-sm">
-                            <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mb-6">
-                                <Highlighter className="h-6 w-6 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Markierungen auf Fotos</h3>
-                            <p className="text-gray-600 mb-6">
-                                Zeichne Behandlungszonen, Auffälligkeiten und Bereiche direkt auf Vorher-Nachher-Fotos ein - präzise und nachvollziehbar dokumentiert.
-                            </p>
-                            <ul className="space-y-2">
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Behandlungszonen einzeichnen
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Auffälligkeiten festhalten
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Sicher am Kundenprofil gespeichert
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* Digitale Unterschriften */}
-                        <div className="bg-white border border-emerald-100 p-8 rounded-2xl shadow-sm">
-                            <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mb-6">
-                                <PenTool className="h-6 w-6 text-white" />
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">Digitale Unterschriften</h3>
-                            <p className="text-gray-600 mb-6">
-                                Kunde und Mitarbeiter unterschreiben direkt auf dem Bildschirm. So ist jede Behandlung rechtssicher bestätigt und lückenlos belegt.
-                            </p>
-                            <ul className="space-y-2">
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Unterschrift von Kunde & Mitarbeiter
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Rechtssicher mit Zeitstempel
-                                </li>
-                                <li className="flex items-center text-sm text-gray-700">
-                                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                                    Als PDF exportierbar
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Timeline Section */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
-                            Vollständiger Behandlungsverlauf
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Behalte den kompletten Überblick über alle Behandlungen deiner Kunden - chronologisch sortiert und übersichtlich dargestellt.
-                        </p>
-                    </div>
-
-                    <div className="max-w-4xl mx-auto">
-                        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                            <div className="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 text-white">
-                                <h3 className="text-xl font-bold">Behandlungsverlauf - Maria Müller</h3>
-                                <p className="text-indigo-100">Kundin seit Januar 2023</p>
-                            </div>
-
-                            <div className="p-8">
-                                <div className="space-y-8">
-                                    {/* Timeline Item 1 */}
-                                    <div className="flex items-start">
-                                        <div className="flex-shrink-0 w-4 h-4 bg-green-500 rounded-full mt-6"></div>
-                                        <div className="ml-6 flex-1">
-                                            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl border border-green-200">
-                                                <div className="flex items-center justify-between mb-4">
-                                                    <h4 className="text-lg font-semibold text-gray-900">Gesichtsbehandlung</h4>
-                                                    <span className="text-sm text-gray-500">15.09.2024</span>
-                                                </div>
-                                                <p className="text-gray-700 mb-4">
-                                                    Tiefenreinigung mit Ultraschall. Hyaluron-Maske angewendet.
-                                                    Hautbild deutlich verbessert, keine Irritationen.
-                                                </p>
-                                                <div className="flex items-center justify-between">
-                                                    <div className="flex items-center space-x-4">
-                                                        <span className="text-sm text-gray-600">2 Fotos</span>
-                                                        <span className="text-sm text-gray-600">€120</span>
-                                                    </div>
-                                                    <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Abgeschlossen</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Timeline Item 2 */}
-                                    <div className="flex items-start">
-                                        <div className="flex-shrink-0 w-4 h-4 bg-blue-500 rounded-full mt-6"></div>
-                                        <div className="ml-6 flex-1">
-                                            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200">
-                                                <div className="flex items-center justify-between mb-4">
-                                                    <h4 className="text-lg font-semibold text-gray-900">Microneedling</h4>
-                                                    <span className="text-sm text-gray-500">28.08.2024</span>
-                                                </div>
-                                                <p className="text-gray-700 mb-4">
-                                                    Professionelles Microneedling zur Hautstraffung.
-                                                    Behandlung gut vertragen, leichte Rötung wie erwartet.
-                                                </p>
-                                                <div className="flex items-center justify-between">
-                                                    <div className="flex items-center space-x-4">
-                                                        <span className="text-sm text-gray-600">4 Fotos</span>
-                                                        <span className="text-sm text-gray-600">€180</span>
-                                                    </div>
-                                                    <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Abgeschlossen</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {/* Timeline Item 3 */}
-                                    <div className="flex items-start">
-                                        <div className="flex-shrink-0 w-4 h-4 bg-purple-500 rounded-full mt-6"></div>
-                                        <div className="ml-6 flex-1">
-                                            <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl border border-purple-200">
-                                                <div className="flex items-center justify-between mb-4">
-                                                    <h4 className="text-lg font-semibold text-gray-900">Erstberatung</h4>
-                                                    <span className="text-sm text-gray-500">10.08.2024</span>
-                                                </div>
-                                                <p className="text-gray-700 mb-4">
-                                                    Umfassende Hautanalyse und Beratung.
-                                                    Behandlungsplan für die nächsten Monate erstellt.
-                                                </p>
-                                                <div className="flex items-center justify-between">
-                                                    <div className="flex items-center space-x-4">
-                                                        <span className="text-sm text-gray-600">1 Foto</span>
-                                                        <span className="text-sm text-gray-600">€50</span>
-                                                    </div>
-                                                    <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">Abgeschlossen</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Benefits Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
-                            Warum professionelle Dokumentation wichtig ist
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Eine lückenlose Dokumentation schützt dich rechtlich und hilft dir, bessere Behandlungsergebnisse zu erzielen.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                <Shield className="h-8 w-8 text-white" />
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-900 mb-3">Rechtssicherheit</h3>
-                            <p className="text-gray-600 text-sm">
-                                Lückenlose Dokumentation schützt dich bei Haftungsfragen und entspricht allen gesetzlichen Anforderungen.
-                            </p>
-                        </div>
-
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                <Clock className="h-8 w-8 text-white" />
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-900 mb-3">Zeitersparnis</h3>
-                            <p className="text-gray-600 text-sm">
-                                Mit KI-Unterstützung dokumentierst du schneller und effizienter - mehr Zeit für deine Kunden.
-                            </p>
-                        </div>
-
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                <Brain className="h-8 w-8 text-white" />
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-900 mb-3">Bessere Ergebnisse</h3>
-                            <p className="text-gray-600 text-sm">
-                                Vollständige Behandlungsverläufe helfen dir, optimale Behandlungspläne zu entwickeln.
-                            </p>
-                        </div>
-
-                        <div className="text-center">
-                            <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                <FileText className="h-8 w-8 text-white" />
-                            </div>
-                            <h3 className="text-lg font-bold text-gray-900 mb-3">Professionalität</h3>
-                            <p className="text-gray-600 text-sm">
-                                Professionelle Dokumentation stärkt das Vertrauen deiner Kunden und deine Reputation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Verwandte Seiten / Cluster-Verlinkung */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                            Verwandte Funktionen für dein Studio
-                        </h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Treatflow vereint Behandlungsdokumentation, Formulare, Terminkalender und Kundenverwaltung in einer Plattform.
-                        </p>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <Link href="/kosmetikstudio-software" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Kosmetikstudio Software</span>
-                            <span className="text-sm text-gray-600 block mb-2">All-in-One für dein Studio</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/nisv-dokumentation-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">NiSV-Dokumentation Kosmetik</span>
-                            <span className="text-sm text-gray-600 block mb-2">Rechtssicher dokumentieren</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/behandlungsdokumentation-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Behandlungsdokumentation Kosmetikstudio</span>
-                            <span className="text-sm text-gray-600 block mb-2">Digital & NiSV-konform</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/anamnesebogen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Anamnesebögen</span>
-                            <span className="text-sm text-gray-600 block mb-2">Formulare & Einwilligungen</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <FeatureCards
+                theme="purple"
+                title="Was du bekommst"
+                description="Alles, was du für eine saubere Behandlungsdokumentation brauchst – ohne Zettelwirtschaft."
+                items={[
+                    { icon: Camera, title: 'Vorher-Nachher-Fotos', text: 'Fotos direkt zur Behandlung speichern und chronologisch vergleichen.', points: ['Gleicher Kontext', 'Am Kundenprofil', 'DSGVO-konform'] },
+                    { icon: Mic, title: 'Sprach-Diktat', text: 'Notizen sprechen statt tippen – ideal während oder direkt nach der Behandlung.', points: ['Hands-free', 'Schnell', 'Klar formuliert'] },
+                    { icon: Brain, title: 'KI-Assistent', text: 'Vorschläge für Notizen und strukturierte Einträge, damit nichts fehlt.', points: ['Textvorschläge', 'Struktur', 'Weniger Aufwand'] },
+                    { icon: FileText, title: 'Parameter & Produkte', text: 'Gerätewerte, Produkte und Einstellungen sauber festhalten.', points: ['Laser/IPL', 'Produkte', 'Nachsorge'] },
+                    { icon: PenTool, title: 'Digitale Unterschrift', text: 'Einwilligung oder Bestätigung digital am Tablet erfassen.', points: ['Am Gerät', 'Im Profil', 'Nachvollziehbar'] },
+                    { icon: Shield, title: 'NiSV-tauglich', text: 'Für apparative Behandlungen die Pflichtfelder abdecken und archivieren.', points: ['Beratung', 'Einwilligung', 'Archiv'] },
+                ]}
+            />
 
             <SocialProofBar />
 
-            {/* FAQ Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 break-words hyphens-auto" lang="de">
-                            Häufige Fragen zur Behandlungsdokumentation
-                        </h2>
-                    </div>
-                    <div className="space-y-6">
-                        {[
-                            {
-                                q: 'Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?',
-                                a: 'Treatflow bietet eine spezialisierte Behandlungsdokumentation für Kosmetikstudios. Mit KI-Unterstützung, Vorher-Nachher-Fotos, Behandlungsparametern und NiSV-konformer Archivierung dokumentierst du professionell und rechtssicher.',
-                            },
-                            {
-                                q: 'Ist Behandlungsdokumentation im Kosmetikstudio Pflicht?',
-                                a: 'Für NiSV-pflichtige Behandlungen (Laser, IPL, Ultraschall, Radiofrequenz) ist eine Behandlungsdokumentation gesetzlich vorgeschrieben. Aber auch für alle anderen Behandlungen ist sie empfehlenswert - für Rechtssicherheit, Qualitätskontrolle und Kundenzufriedenheit.',
-                            },
-                            {
-                                q: 'Was gehört in eine professionelle Behandlungsdokumentation?',
-                                a: 'Eine professionelle Dokumentation enthält: Behandlungsart und -datum, verwendete Produkte und Parameter, Vorher-Nachher-Fotos, Hautbefund, Notizen zum Behandlungsverlauf, Empfehlungen für Nachbehandlungen und die Unterschrift des Kunden.',
-                            },
-                            {
-                                q: 'Wie dokumentiere ich Vorher-Nachher-Fotos korrekt?',
-                                a: 'Vorher-Nachher-Fotos sollten unter gleichen Bedingungen aufgenommen werden (Beleuchtung, Winkel, Abstand). Mit Treatflow kannst du Fotos direkt in der Behandlungsdokumentation speichern und chronologisch dem Kundenprofil zuordnen.',
-                            },
-                            {
-                                q: 'Was muss bei NiSV-Behandlungen dokumentiert werden?',
-                                a: 'Bei NiSV-Behandlungen müssen Beratungsprotokoll, Einwilligung, Geräteeinstellungen (Parameter wie Energie, Frequenz, Impulsdauer), Behandlungsgebiet, Hautreaktion und Nachsorgehinweise dokumentiert werden.',
-                            },
-                        ].map((faq, index) => (
-                            <div key={index} className="border border-gray-200 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <FeatureFaq title="Häufige Fragen zur Dokumentation" items={faqs} />
 
-            {/* CTA Section */}
-            <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 break-words hyphens-auto" lang="de">
-                        Bereit für professionelle Dokumentation?
-                    </h2>
-                    <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-                        Teste die professionelle Behandlungsdokumentation 14 Tage kostenlos und erlebe, wie einfach rechtssichere Dokumentation sein kann.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="https://app.treatflow.io/auth/register"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
-                        >
-                            14 Tage gratis testen
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                        <Link
-                            href="/nisv-dokumentation"
-                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200"
-                        >
-                            NiSV-Dokumentation
-                        </Link>
-                        <Link
-                            href="/"
-                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200"
-                        >
-                            Zurück zur Startseite
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <FeatureRelated
+                items={[
+                    { href: '/nisv-dokumentation', title: 'NiSV-Dokumentation', description: 'Beratung, Einwilligung & Archiv' },
+                    { href: '/formulare', title: 'Formulare', description: 'Anamnese & Einwilligungen digital' },
+                    { href: '/kundenverwaltung', title: 'Kundenverwaltung', description: 'Historie im Kundenprofil' },
+                ]}
+            />
+
+            <FeaturePageCta
+                theme="purple"
+                title="Bereit für klare Dokumentation?"
+                description="14 Tage kostenlos testen – ohne Kreditkarte. Dokumentation, Fotos und NiSV-Workflow in einer App."
+                secondaryLabel="NiSV-Dokumentation"
+                secondaryHref="/nisv-dokumentation"
+            />
 
             <Footer />
         </div>

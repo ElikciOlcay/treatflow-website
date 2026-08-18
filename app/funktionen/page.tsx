@@ -2,12 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
     Calendar, Users, ClipboardCheck, FileText, Link2, Bell, Shield,
-    ArrowRight, CheckCircle, BarChart3, ShoppingBag, Receipt, Gift
+    ArrowRight, CheckCircle, BarChart3, ShoppingBag, Receipt, Gift, Sparkles
 } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import CTASection from '../components/CTASection';
-import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
 
 import { buildHreflangAlternates } from '../i18n/seo';
 export const metadata: Metadata = {
@@ -156,23 +157,38 @@ export default function FunktionenPage() {
                 ])) }}
             />
 
-            {/* Hero */}
-            <section className="pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
-                <Breadcrumbs items={[{ label: 'Funktionen' }]} />
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-                    <div className="text-center max-w-4xl mx-auto">
-                        <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                            Alle <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Funktionen</span> auf einen Blick
-                        </h1>
-                        <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                            Treatflow vereint Terminkalender, Online-Buchungen, Kundenkartei, Formulare und Dokumentation in einer Plattform - speziell für Kosmetikstudios entwickelt.
-                        </p>
+            <FeatureHero
+                theme="indigo"
+                breadcrumbs={[{ label: 'Funktionen' }]}
+                eyebrow="Funktionsübersicht"
+                eyebrowIcon={Sparkles}
+                title={<>Alle <FeatureTitleHighlight>Funktionen</FeatureTitleHighlight> auf einen Blick</>}
+                description="Kalender, Buchungen, Kundenkartei, Formulare und Dokumentation – eine Plattform für dein Studio."
+                chips={['All-in-One', 'Ohne Provision', 'Made in Austria']}
+                secondaryCta={{ label: 'Preise ansehen', href: '/preise' }}
+                visual={
+                    <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                        {[
+                            { t: 'Kalender', Icon: Calendar, g: 'from-indigo-500 to-purple-600' },
+                            { t: 'Kasse', Icon: Receipt, g: 'from-green-500 to-emerald-600' },
+                            { t: 'Buchungen', Icon: Link2, g: 'from-rose-500 to-orange-600' },
+                            { t: 'Kunden', Icon: Users, g: 'from-blue-500 to-indigo-600' },
+                            { t: 'Formulare', Icon: ClipboardCheck, g: 'from-orange-500 to-amber-600' },
+                            { t: 'Doku', Icon: FileText, g: 'from-violet-500 to-purple-600' },
+                        ].map((item) => (
+                            <div key={item.t} className="rounded-2xl border border-gray-100 bg-white p-4 sm:p-5 shadow-lg shadow-gray-100/80 flex items-center gap-3">
+                                <div className={`w-11 h-11 bg-gradient-to-r ${item.g} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                                    <item.Icon className="h-5 w-5 text-white" />
+                                </div>
+                                <p className="font-semibold text-gray-900 text-sm sm:text-base">{item.t}</p>
+                            </div>
+                        ))}
                     </div>
-                </div>
-            </section>
+                }
+            />
 
             {/* Kernfunktionen Grid */}
-            <section className="py-20">
+            <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -183,15 +199,15 @@ export default function FunktionenPage() {
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {kernfunktionen.map((feature) => (
                             <Link
                                 key={feature.href}
                                 href={feature.href}
-                                className={`group block border rounded-2xl p-8 transition-all duration-200 hover:shadow-lg ${feature.border}`}
+                                className="group block bg-white border border-gray-100 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl"
                             >
-                                <div className={`w-14 h-14 ${feature.bg} rounded-xl flex items-center justify-center mb-5`}>
-                                    <feature.icon className={`h-7 w-7 ${feature.color}`} />
+                                <div className={`w-12 h-12 ${feature.bg} ${feature.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                                    <feature.icon className="h-6 w-6" />
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors">
                                     {feature.title}
