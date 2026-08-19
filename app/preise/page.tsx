@@ -22,7 +22,7 @@ export const metadata = {
         ...buildHreflangAlternates("pricing"),
     },
     openGraph: {
-        title: 'Preise: Kosmetikstudio Software ab 39€/Monat | Treatflow',
+        title: 'Preise: Kosmetikstudio Software ab 39€/Monat',
         description: 'Transparente Preise für Treatflow: Basic ab 39€/Monat, Booking ab 59€/Monat. 14 Tage kostenlos testen, keine Kreditkarte, keine versteckten Kosten.',
         url: 'https://www.treatflow.io/preise',
     },

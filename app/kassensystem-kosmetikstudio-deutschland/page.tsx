@@ -10,7 +10,7 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
 
 export const metadata = {
-    title: 'Kassensystem Kosmetikstudio Deutschland – TSE | Treatflow',
+    title: 'Kassensystem Kosmetikstudio Deutschland – TSE',
     description: 'TSE-konformes Kassensystem (KassenSichV) für Kosmetik- und Laser-Studios in Deutschland: Belegausgabepflicht, DSFinV-K-Export, Fiskaly-TSE. Ab 39 €/Monat, 14 Tage testen.',
     keywords: [
         'Kassensystem Kosmetikstudio Deutschland', 'TSE Kasse Kosmetikstudio',
@@ -25,13 +25,13 @@ export const metadata = {
         type: 'website',
         locale: 'de_DE',
         siteName: 'Treatflow',
-        title: 'Kassensystem Kosmetikstudio Deutschland – TSE | Treatflow',
+        title: 'Kassensystem Kosmetikstudio Deutschland – TSE',
         description: 'TSE-konformes Kassensystem (KassenSichV) für Kosmetikstudios in Deutschland: Belegausgabe, DSFinV-K-Export, Fiskaly. Ab 39 €/Monat.',
         url: 'https://www.treatflow.io/kassensystem-kosmetikstudio-deutschland',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Kassensystem Kosmetikstudio Deutschland – TSE | Treatflow',
+        title: 'Kassensystem Kosmetikstudio Deutschland – TSE',
         description: 'TSE-konformes Kassensystem (KassenSichV) für Kosmetikstudios in Deutschland: Belegausgabe, DSFinV-K-Export, Fiskaly.',
     },
 };

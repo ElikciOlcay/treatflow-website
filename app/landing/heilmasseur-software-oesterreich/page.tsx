@@ -7,7 +7,7 @@ import {
 import DemoAnfrageForm from './DemoAnfrageForm';
 
 export const metadata: Metadata = {
-    title: 'Dokumentationssoftware für Heilmasseure in Österreich | Treatflow',
+    title: 'Dokumentationssoftware für Heilmasseure in Österreich',
     description: 'Treatflow unterstützt Heilmasseure in Österreich bei digitaler Behandlungsdokumentation, ärztlicher Anordnung, Verlaufseinträgen und Praxisorganisation.',
     keywords: [
         'Dokumentationssoftware Heilmasseur',

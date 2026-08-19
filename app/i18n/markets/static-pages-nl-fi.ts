@@ -50,7 +50,7 @@ export type LegalPageCopy = {
 
 const earlyAccess: Record<StaticPageLang, Omit<EarlyAccessCopy, "subtitle" | "metaDescription">> = {
   nl: {
-    metaTitle: "Early access aanvragen | Treatflow",
+    metaTitle: "Early access aanvragen",
     title: "Vraag early access aan voor Treatflow",
     note: "Directe registratie is momenteel alleen open voor Duitsland, Oostenrijk en Zwitserland.",
     copy: {
@@ -69,7 +69,7 @@ const earlyAccess: Record<StaticPageLang, Omit<EarlyAccessCopy, "subtitle" | "me
     },
   },
   fi: {
-    metaTitle: "Pyydä early access | Treatflow",
+    metaTitle: "Pyydä early access",
     title: "Pyydä early access Treatflowiin",
     note: "Suora rekisteröityminen on tällä hetkellä avoinna vain Saksalle, Itävallalle ja Sveitsille.",
     copy: {

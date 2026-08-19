@@ -28,7 +28,7 @@ export const metadata = {
         ...buildHreflangAlternates('client-records'),
     },
     openGraph: {
-        title: 'Kundenverwaltung Kosmetikstudio: Daten & Historie | Treatflow',
+        title: 'Kundenverwaltung Kosmetikstudio: Daten & Historie',
         description: 'Professionelle Kundenverwaltung für dein Kosmetikstudio: Behandlungsverlauf, Kundenhistorie, Notizen und Fotos zentral verwalten.',
         url: 'https://www.treatflow.io/kundenverwaltung',
         images: [{ url: '/images/mockups/kundenverwaltung-overview.png', width: 1200, height: 630, alt: 'Treatflow Kundenverwaltung Interface' }],

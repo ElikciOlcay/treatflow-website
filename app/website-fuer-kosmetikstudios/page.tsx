@@ -43,7 +43,7 @@ export const metadata = {
       ...buildHreflangAlternates("studio-website"),
   },
   openGraph: {
-    title: 'Individuelle Websites für Kosmetikstudios | Treatflow',
+    title: 'Individuelle Websites für Kosmetikstudios',
     description: 'Professionelle, individuelle Websites für Kosmetikstudios und Beauty Businesses. Auf Buchungen und Neukundengewinnung optimiert.',
     url: 'https://www.treatflow.io/website-fuer-kosmetikstudios',
     images: [

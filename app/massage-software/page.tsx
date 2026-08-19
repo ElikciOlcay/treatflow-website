@@ -43,7 +43,7 @@ export const metadata = {
         ...buildHreflangAlternates("massage-software"),
     },
     openGraph: {
-        title: 'Massage Software - Termine & Kundenverwaltung | Treatflow',
+        title: 'Massage Software - Termine & Kundenverwaltung',
         description: 'Online-Buchungen, Kundenverwaltung und automatische Erinnerungen für Massage-Praxen.',
         url: 'https://www.treatflow.io/massage-software',
         images: [{ url: '/images/og-massage-software.jpg', width: 1200, height: 630, alt: 'Treatflow - Software für Massage-Praxen' }],

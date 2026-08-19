@@ -114,6 +114,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.3,
         },
         {
+            url: `${baseUrl}/agb`,
+            lastModified: new Date('2026-08-19'),
+            changeFrequency: 'yearly' as const,
+            priority: 0.3,
+        },
+        {
             url: `${baseUrl}/datenschutz`,
             lastModified: new Date(),
             changeFrequency: 'yearly' as const,

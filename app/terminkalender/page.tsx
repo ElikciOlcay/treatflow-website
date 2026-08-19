@@ -28,7 +28,7 @@ export const metadata = {
         ...buildHreflangAlternates('appointment-calendar'),
     },
     openGraph: {
-        title: 'Terminkalender für Team & Räume | Treatflow',
+        title: 'Terminkalender für Team & Räume',
         description: 'Plane Mitarbeiter, Räume und Termine übersichtlich in einer Tagesansicht – mit Drag & Drop, Online-Buchungen und automatischen Erinnerungen.',
         url: 'https://www.treatflow.io/terminkalender',
         images: [{ url: '/images/mockups/kalender-overview.png', width: 1200, height: 630, alt: 'Treatflow Terminkalender Interface' }],

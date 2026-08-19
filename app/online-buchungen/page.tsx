@@ -28,7 +28,7 @@ export const metadata = {
         ...buildHreflangAlternates('online-booking'),
     },
     openGraph: {
-        title: 'Online-Buchungen für Kosmetikstudios | Treatflow',
+        title: 'Online-Buchungen für Kosmetikstudios',
         description: 'Kein Telefonstress mehr: deine Kunden buchen rund um die Uhr, mit automatischen Bestätigungen und ohne Doppelbuchungen.',
         url: 'https://www.treatflow.io/online-buchungen',
         images: [{ url: '/images/og-online-buchungen.jpg', width: 1200, height: 630, alt: 'Treatflow Online-Buchungssystem' }],

@@ -28,7 +28,7 @@ export const metadata = {
     url: 'https://www.treatflow.io/kosmetikstudio-software-kostenlos',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Kosmetikstudio Software kostenlos Vergleich',

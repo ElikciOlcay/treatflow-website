@@ -38,7 +38,7 @@ export const metadata = {
         type: 'website',
         locale: 'de_DE',
         siteName: 'Treatflow',
-        title: 'Kassensystem für Kosmetikstudios – TSE & RKSV konform | Treatflow',
+        title: 'Kassensystem für Kosmetikstudios – TSE & RKSV konform',
         description: 'TSE-konforme Kasse (DE) und RKSV-Registrierkasse (AT) mit SumUp Kartenterminal. Kassieren aus dem Termin, fiskalkonforme Belege, Gutscheine und Steuerberater-Export.',
         url: 'https://www.treatflow.io/kassensystem-kosmetikstudio',
         images: [
@@ -52,7 +52,7 @@ export const metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Kassensystem für Kosmetikstudios – TSE & RKSV konform | Treatflow',
+        title: 'Kassensystem für Kosmetikstudios – TSE & RKSV konform',
         description: 'TSE- und RKSV-konform kassieren – inkl. SumUp Solo Kartenterminal, direkt aus dem Termin, ab 39 €/Monat.',
     },
 };

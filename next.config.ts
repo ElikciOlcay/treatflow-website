@@ -43,6 +43,10 @@ const nextConfig: NextConfig = {
       // aus /og?slug=...; bestehende statische OG-Bilder bleiben unberuehrt.
       fallback: [
         {
+          source: '/images/og-:slug.png',
+          destination: '/og?slug=:slug',
+        },
+        {
           source: '/images/og-:slug.jpg',
           destination: '/og?slug=:slug',
         },
@@ -155,6 +159,10 @@ const nextConfig: NextConfig = {
       { source: '/studio-software-oesterreich/', destination: '/kosmetikstudio-software-oesterreich', permanent: true },
       { source: '/studio-software-deutschland', destination: '/kosmetikstudio-software-deutschland', permanent: true },
       { source: '/studio-software-deutschland/', destination: '/kosmetikstudio-software-deutschland', permanent: true },
+
+      // Stub-/Legacy-Laenderpfade
+      { source: '/at', destination: '/kosmetikstudio-software-oesterreich', permanent: true },
+      { source: '/at/', destination: '/kosmetikstudio-software-oesterreich', permanent: true },
 
       // Exact-Match-Keywords auf bestehende Money-Pages
       { source: '/kosmetikstudio-terminplaner', destination: '/terminkalender', permanent: true },

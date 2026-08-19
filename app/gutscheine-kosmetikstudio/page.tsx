@@ -35,7 +35,7 @@ export const metadata = {
         ...buildHreflangAlternates('vouchers'),
     },
     openGraph: {
-        title: 'Gutscheine für Kosmetikstudios – verkaufen & einlösen | Treatflow',
+        title: 'Gutscheine für Kosmetikstudios – verkaufen & einlösen',
         description: 'Geschenkgutscheine an der Kasse verkaufen und einlösen – Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik, Gültigkeit und Restwert. Teil der Treatflow Kasse.',
         url: 'https://www.treatflow.io/gutscheine-kosmetikstudio',
     },

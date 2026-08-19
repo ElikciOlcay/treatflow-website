@@ -19,13 +19,6 @@ export const metadata: Metadata = {
     template: "%s | Treatflow"
   },
   description: "Verwalte Terminkalender, Online-Buchungen, Kundenkartei und Behandlungsdoku – DSGVO-konform, 14 Tage kostenlos testen. Ideal für dein Studio.",
-  keywords: [
-    "Kosmetikstudio Software",
-    "Beauty Studio Software",
-    "Online Buchungssystem Kosmetik",
-    "Digitale Kundenkartei",
-    "NiSV Dokumentation",
-  ],
   authors: [{ name: "Treatflow Team" }],
   creator: "Treatflow",
   publisher: "Treatflow",
@@ -49,7 +42,7 @@ export const metadata: Metadata = {
     siteName: 'Treatflow',
     images: [
       {
-        url: 'https://www.treatflow.io/images/og-image.jpg',
+        url: 'https://www.treatflow.io/images/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Treatflow - Kosmetikstudio Software Dashboard',
@@ -60,7 +53,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Treatflow - Kosmetikstudio Software',
     description: 'Software für Kosmetikstudio: Terminplaner, Kundenkartei, Online-Buchungen.',
-    images: ['https://www.treatflow.io/images/og-image.jpg'],
+    images: ['https://www.treatflow.io/images/og-image.png'],
     creator: '@treatflow',
   },
   alternates: {

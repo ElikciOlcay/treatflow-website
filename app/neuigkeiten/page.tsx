@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/neuigkeiten',
     },
     openGraph: {
-        title: 'Neuigkeiten | Treatflow',
+        title: 'Neuigkeiten',
         description: 'Neue Funktionen und Verbesserungen für dein Kosmetikstudio.',
         url: 'https://www.treatflow.io/neuigkeiten',
     },
