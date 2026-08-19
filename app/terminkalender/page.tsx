@@ -45,8 +45,8 @@ const faqs = [
         answer: 'Treatflow bietet Terminverwaltung mit Online-Buchungen ab 59 EUR pro Monat im Booking-Plan. 14 Tage kostenlos testen, keine Kreditkarte nötig. Es gibt keine versteckten Kosten oder Provisionen pro Buchung.',
     },
     {
-        question: 'Koennen meine Kunden online Termine buchen?',
-        answer: 'Ja. Du bekommst einen persoenlichen Buchungslink, den du auf deiner Website, auf Instagram oder per WhatsApp teilen kannst. Deine Kunden koennen darueber rund um die Uhr Behandlungen und Termine auswaehlen. Neue Buchungen erscheinen sofort im Kalender, Bestaetigungen werden automatisch per E-Mail und SMS versendet.',
+        question: 'Können meine Kunden online Termine buchen?',
+        answer: 'Ja. Du bekommst einen persönlichen Buchungslink, den du auf deiner Website, auf Instagram oder per WhatsApp teilen kannst. Deine Kunden können darüber rund um die Uhr Behandlungen und Termine auswählen. Neue Buchungen erscheinen sofort im Kalender, Bestätigungen werden automatisch per E-Mail und SMS versendet.',
     },
     {
         question: 'Wie reduziere ich No-Shows im Kosmetikstudio?',
@@ -160,18 +160,18 @@ export default function TerminkalenderPage() {
 
             <FeatureUnderstand
                 theme="indigo"
-                title="Dein digitaler Terminplan fuer das ganze Studio"
-                description="Alle Termine, Mitarbeiter und Raeume auf einen Blick – du siehst sofort, wer wann frei ist."
+                title="Dein digitaler Terminplan für das ganze Studio"
+                description="Alle Termine, Mitarbeiter und Räume auf einen Blick – du siehst sofort, wer wann frei ist."
                 items={[
                     {
                         icon: Users,
-                        title: 'Team, Raeume und Leistungen',
-                        text: 'Lege deine Mitarbeiter, Behandlungsraeume und Leistungen an. Im Kalender siehst du dann fuer jede Person oder jeden Raum eine eigene Spalte.',
+                        title: 'Team, Räume und Leistungen',
+                        text: 'Lege deine Mitarbeiter, Behandlungsräume und Leistungen an. Im Kalender siehst du dann für jede Person oder jeden Raum eine eigene Spalte.',
                     },
                     {
                         icon: Move,
                         title: 'Termine verschieben per Drag & Drop',
-                        text: 'Wenn sich etwas aendert, ziehst du den Termin einfach an eine andere Stelle – kein Loeschen und Neuanlegen noetig.',
+                        text: 'Wenn sich etwas ändert, ziehst du den Termin einfach an eine andere Stelle – kein Löschen und Neuanlegen nötig.',
                     },
                     {
                         icon: Bell,
@@ -185,9 +185,9 @@ export default function TerminkalenderPage() {
                 theme="indigo"
                 description="In drei Schritten zum laufenden Studioplan."
                 steps={[
-                    { title: 'Team, Leistungen und Raeume einrichten', text: 'Trage deine Mitarbeiter, Behandlungen und Raeume mit Arbeitszeiten ein. Danach zeigt der Kalender fuer jeden eine eigene Spalte.' },
+                    { title: 'Team, Leistungen und Räume einrichten', text: 'Trage deine Mitarbeiter, Behandlungen und Räume mit Arbeitszeiten ein. Danach zeigt der Kalender für jeden eine eigene Spalte.' },
                     { title: 'Termine eintragen', text: 'Trage Termine selbst ein oder aktiviere die Online-Buchung – dann erscheinen Buchungen deiner Kunden automatisch im Kalender.' },
-                    { title: 'Erinnerungen laufen automatisch', text: 'Deine Kunden bekommen Terminbestaetigung und Erinnerung per SMS oder E-Mail – du musst nichts manuell verschicken.' },
+                    { title: 'Erinnerungen laufen automatisch', text: 'Deine Kunden bekommen Terminbestätigung und Erinnerung per SMS oder E-Mail – du musst nichts manuell verschicken.' },
                 ]}
             />
 

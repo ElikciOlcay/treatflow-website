@@ -41,16 +41,16 @@ const faqs = [
         answer: 'Treatflow bietet ein spezialisiertes Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink, automatischen Bestätigungen per E-Mail und SMS, Mitarbeiterkalendern und Integration mit Kundenkartei und Dokumentation. Ab 59 EUR pro Monat.',
     },
     {
-        question: 'Wie kann ich Online-Buchungen fuer mein Studio einrichten?',
-        answer: 'In drei Schritten: 1) Lege deine Behandlungen mit Dauer und Preis an, 2) Hinterlege deine Arbeitszeiten und Verfuegbarkeit, 3) Teile deinen persoenlichen Buchungslink auf Instagram, deiner Website oder per WhatsApp. Die Einrichtung dauert weniger als 10 Minuten.',
+        question: 'Wie kann ich Online-Buchungen für mein Studio einrichten?',
+        answer: 'In drei Schritten: 1) Lege deine Behandlungen mit Dauer und Preis an, 2) Hinterlege deine Arbeitszeiten und Verfügbarkeit, 3) Teile deinen persönlichen Buchungslink auf Instagram, deiner Website oder per WhatsApp. Die Einrichtung dauert weniger als 10 Minuten.',
     },
     {
         question: 'Was kostet ein Online-Buchungssystem für Kosmetikstudios?',
         answer: 'Treatflow bietet Online-Buchungen im Booking-Plan ab 59 EUR pro Monat an. Es gibt keine Provision pro Buchung, keine versteckten Kosten und 14 Tage kostenlose Testphase ohne Kreditkarte.',
     },
     {
-        question: 'Koennen Kunden rund um die Uhr Termine buchen?',
-        answer: 'Ja. Dein persoenlicher Buchungslink ist 24/7 erreichbar. Deine Kunden koennen jederzeit verfuegbare Termine sehen und buchen – auch abends oder am Wochenende. Ueber 60 % der Buchungen finden ausserhalb der Geschaeftszeiten statt.',
+        question: 'Können Kunden rund um die Uhr Termine buchen?',
+        answer: 'Ja. Dein persönlicher Buchungslink ist 24/7 erreichbar. Deine Kunden können jederzeit verfügbare Termine sehen und buchen – auch abends oder am Wochenende. Über 60 % der Buchungen finden außerhalb der Geschäftszeiten statt.',
     },
     {
         question: 'Wie reduziert ein Buchungssystem No-Shows?',
@@ -58,7 +58,7 @@ const faqs = [
     },
     {
         question: 'Was passiert, wenn alle Termine ausgebucht sind?',
-        answer: 'Mit der Warteliste koennen sich deine Kunden auf freie Termine vormerken lassen. Wird ein bestehender Termin storniert, bekommen passende Interessenten automatisch eine E-Mail mit den frei gewordenen Zeiten. So gehen dir keine Anfragen verloren.',
+        answer: 'Mit der Warteliste können sich deine Kunden auf freie Termine vormerken lassen. Wird ein bestehender Termin storniert, bekommen passende Interessenten automatisch eine E-Mail mit den frei gewordenen Zeiten. So gehen dir keine Anfragen verloren.',
     },
 ];
 
@@ -131,17 +131,17 @@ export default function OnlineBuchungenPage() {
             <FeatureUnderstand
                 theme="orange"
                 title="Deine Kunden buchen selbst – du behandelst"
-                description="Mit deinem persoenlichen Buchungslink koennen Kunden rund um die Uhr Termine auswaehlen. Du sparst dir Telefonate und Hin-und-Her-Schreiben."
+                description="Mit deinem persönlichen Buchungslink können Kunden rund um die Uhr Termine auswählen. Du sparst dir Telefonate und Hin-und-Her-Schreiben."
                 items={[
                     {
                         icon: Calendar,
-                        title: 'Rund um die Uhr geoeffnet',
-                        text: 'Dein Buchungslink ist 24/7 erreichbar. Ueber 60 % der Buchungen kommen abends oder am Wochenende rein.',
+                        title: 'Rund um die Uhr geöffnet',
+                        text: 'Dein Buchungslink ist 24/7 erreichbar. Über 60 % der Buchungen kommen abends oder am Wochenende rein.',
                     },
                     {
                         icon: Bell,
-                        title: 'Bestaetigung und Erinnerung automatisch',
-                        text: 'Nach der Buchung bekommt dein Kunde sofort eine Bestaetigung. Vor dem Termin folgt eine Erinnerung per SMS oder E-Mail.',
+                        title: 'Bestätigung und Erinnerung automatisch',
+                        text: 'Nach der Buchung bekommt dein Kunde sofort eine Bestätigung. Vor dem Termin folgt eine Erinnerung per SMS oder E-Mail.',
                     },
                     {
                         icon: ListOrdered,
@@ -156,8 +156,8 @@ export default function OnlineBuchungenPage() {
                 description="In drei Schritten zum eigenen Buchungslink."
                 steps={[
                     { title: 'Behandlungen anlegen', text: 'Lege fest, welche Behandlungen buchbar sind, wie lange sie dauern und was sie kosten. Das System zeigt deinen Kunden nur freie Zeiten.' },
-                    { title: 'Link teilen', text: 'Teile deinen persoenlichen Buchungslink auf Instagram, deiner Website oder per WhatsApp. Einen QR-Code zum Ausdrucken gibt es auch.' },
-                    { title: 'Buchungen kommen rein', text: 'Neue Termine erscheinen automatisch in deinem Kalender. Bestaetigungen und Erinnerungen gehen von allein raus.' },
+                    { title: 'Link teilen', text: 'Teile deinen persönlichen Buchungslink auf Instagram, deiner Website oder per WhatsApp. Einen QR-Code zum Ausdrucken gibt es auch.' },
+                    { title: 'Buchungen kommen rein', text: 'Neue Termine erscheinen automatisch in deinem Kalender. Bestätigungen und Erinnerungen gehen von allein raus.' },
                 ]}
             />
 

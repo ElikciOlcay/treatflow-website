@@ -112,12 +112,12 @@ export default function NisvDokumentationPage() {
             <FeatureUnderstand
                 theme="teal"
                 title="NiSV-Pflichten einfach digital erledigen"
-                description="Bei Behandlungen mit Laser, IPL oder Ultraschall musst du Beratung, Einwilligung und Doku laut Gesetz aufbewahren. Treatflow macht das digital und uebersichtlich."
+                description="Bei Behandlungen mit Laser, IPL oder Ultraschall musst du Beratung, Einwilligung und Doku laut Gesetz aufbewahren. Treatflow macht das digital und übersichtlich."
                 items={[
                     {
                         icon: FileText,
                         title: 'Beratung dokumentieren',
-                        text: 'Vor der Behandlung musst du deine Kundin ueber Wirkung, Risiken und Nachsorge aufklaeren. Mit Vorlagen geht nichts vergessen.',
+                        text: 'Vor der Behandlung musst du deine Kundin über Wirkung, Risiken und Nachsorge aufklären. Mit Vorlagen geht nichts vergessen.',
                     },
                     {
                         icon: CheckCircle,
@@ -136,9 +136,9 @@ export default function NisvDokumentationPage() {
                 theme="teal"
                 description="In drei Schritten von der Beratung zur archivierten Dokumentation."
                 steps={[
-                    { title: 'Kundin beraten und aufklaeren', text: 'Nutze eine Vorlage fuer das Beratungsprotokoll. Darin haltst du fest: Welche Behandlung, welche Risiken, welche Nachsorge.' },
-                    { title: 'Einwilligung unterschreiben lassen', text: 'Deine Kundin unterschreibt digital am Tablet oder Smartphone. Die Erklaerung wird dem Kundenprofil zugeordnet.' },
-                    { title: 'Dokumentieren und archivieren', text: 'Halte Geraeteparameter und Behandlungsverlauf fest. Alles bleibt mindestens 10 Jahre gespeichert und auffindbar.' },
+                    { title: 'Kundin beraten und aufklären', text: 'Nutze eine Vorlage für das Beratungsprotokoll. Darin haltst du fest: Welche Behandlung, welche Risiken, welche Nachsorge.' },
+                    { title: 'Einwilligung unterschreiben lassen', text: 'Deine Kundin unterschreibt digital am Tablet oder Smartphone. Die Erklärung wird dem Kundenprofil zugeordnet.' },
+                    { title: 'Dokumentieren und archivieren', text: 'Halte Geräteparameter und Behandlungsverlauf fest. Alles bleibt mindestens 10 Jahre gespeichert und auffindbar.' },
                 ]}
             />
 

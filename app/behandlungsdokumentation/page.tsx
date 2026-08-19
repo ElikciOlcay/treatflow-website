@@ -137,7 +137,7 @@ export default function BehandlungsdokumentationPage() {
                     {
                         icon: Brain,
                         title: 'Per Sprache oder KI erfassen',
-                        text: 'Diktiere deine Notizen oder lass dir von der KI Vorschlaege machen. Weniger Tippen, mehr Zeit fuer die Behandlung.',
+                        text: 'Diktiere deine Notizen oder lass dir von der KI Vorschlaege machen. Weniger Tippen, mehr Zeit für die Behandlung.',
                     },
                     {
                         icon: Shield,
@@ -151,9 +151,9 @@ export default function BehandlungsdokumentationPage() {
                 theme="purple"
                 description="In drei Schritten zur fertigen Dokumentation."
                 steps={[
-                    { title: 'Dokumentation oeffnen', text: 'Oeffne die Dokumentation direkt aus dem Termin oder Kundenprofil – Kundin und Behandlung sind schon vorausgefuellt.' },
-                    { title: 'Fotos und Notizen erfassen', text: 'Lade Fotos hoch, trage Behandlungsparameter ein und diktiere oder tippe deine Notizen. Wenn noetig, lass die Kundin unterschreiben.' },
-                    { title: 'Gespeichert und abrufbar', text: 'Alles landet automatisch im Kundenprofil. Beim naechsten Termin siehst du sofort, was zuletzt gemacht wurde.' },
+                    { title: 'Dokumentation öffnen', text: 'Öffne die Dokumentation direkt aus dem Termin oder Kundenprofil – Kundin und Behandlung sind schon vorausgefüllt.' },
+                    { title: 'Fotos und Notizen erfassen', text: 'Lade Fotos hoch, trage Behandlungsparameter ein und diktiere oder tippe deine Notizen. Wenn nötig, lass die Kundin unterschreiben.' },
+                    { title: 'Gespeichert und abrufbar', text: 'Alles landet automatisch im Kundenprofil. Beim nächsten Termin siehst du sofort, was zuletzt gemacht wurde.' },
                 ]}
             />
 

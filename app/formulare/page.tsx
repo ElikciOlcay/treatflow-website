@@ -46,7 +46,7 @@ const faqs = [
     },
     {
         question: 'Kann ich Anamneseboegen digital an Kunden senden?',
-        answer: 'Ja. Mit Treatflow kannst du Formulare per E-Mail oder SMS vorab an deine Kunden schicken. Sie fuellen sie auf ihrem eigenen Handy aus – vor dem Termin. Das spart dir 10–15 Minuten pro Termin im Studio.',
+        answer: 'Ja. Mit Treatflow kannst du Formulare per E-Mail oder SMS vorab an deine Kunden schicken. Sie füllen sie auf ihrem eigenen Handy aus – vor dem Termin. Das spart dir 10–15 Minuten pro Termin im Studio.',
     },
     {
         question: 'Sind digitale Einwilligungserklärungen rechtssicher?',
@@ -127,12 +127,12 @@ export default function FormularePage() {
             <FeatureUnderstand
                 theme="green"
                 title="Anamnese und Einwilligung – digital statt auf Papier"
-                description="Deine Kunden fuellen Formulare vor dem Termin auf dem eigenen Handy aus. Die Daten landen automatisch im Kundenprofil."
+                description="Deine Kunden füllen Formulare vor dem Termin auf dem eigenen Handy aus. Die Daten landen automatisch im Kundenprofil."
                 items={[
                     {
                         icon: FileText,
                         title: 'Fertige Vorlagen nutzen',
-                        text: 'Im Marketplace findest du Vorlagen fuer Anamnese, Aufklaerung und Einwilligung – auch fuer NiSV-Behandlungen.',
+                        text: 'Im Marketplace findest du Vorlagen für Anamnese, Aufklärung und Einwilligung – auch für NiSV-Behandlungen.',
                     },
                     {
                         icon: Sparkles,
@@ -141,7 +141,7 @@ export default function FormularePage() {
                     },
                     {
                         icon: Send,
-                        title: 'Vor dem Termin ausfuellen lassen',
+                        title: 'Vor dem Termin ausfüllen lassen',
                         text: 'Schicke den Formular-Link per E-Mail oder SMS. Dein Kunde fuellt zu Hause aus – du sparst 10–15 Minuten pro Termin.',
                     },
                 ]}

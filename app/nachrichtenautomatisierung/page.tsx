@@ -139,12 +139,12 @@ export default function NachrichtenautomatisierungPage() {
             <FeatureUnderstand
                 theme="purple"
                 title="Nachrichten, die automatisch rausgehen"
-                description="Terminbestaetigung, Erinnerung und Nachsorge – deine Kunden bekommen die richtige Nachricht zur richtigen Zeit, ohne dass du etwas tun musst."
+                description="Terminbestätigung, Erinnerung und Nachsorge – deine Kunden bekommen die richtige Nachricht zur richtigen Zeit, ohne dass du etwas tun musst."
                 items={[
                     {
                         icon: Bell,
                         title: 'Weniger vergessene Termine',
-                        text: 'Deine Kunden bekommen 1–7 Tage vor dem Termin eine Erinnerung per SMS oder E-Mail. Studios berichten von bis zu 80 % weniger Ausfaellen.',
+                        text: 'Deine Kunden bekommen 1–7 Tage vor dem Termin eine Erinnerung per SMS oder E-Mail. Studios berichten von bis zu 80 % weniger Ausfällen.',
                     },
                     {
                         icon: MessageCircle,
@@ -153,8 +153,8 @@ export default function NachrichtenautomatisierungPage() {
                     },
                     {
                         icon: Heart,
-                        title: 'Persoenliche Gruesse',
-                        text: 'Geburtstagswuensche und personalisierte Nachrichten gehen automatisch raus – das staerkt die Bindung ohne Extra-Aufwand.',
+                        title: 'Persönliche Grüße',
+                        text: 'Geburtstagswünsche und personalisierte Nachrichten gehen automatisch raus – das stärkt die Bindung ohne Extra-Aufwand.',
                     },
                 ]}
             />
@@ -163,9 +163,9 @@ export default function NachrichtenautomatisierungPage() {
                 theme="purple"
                 description="In drei Schritten zu automatischen Nachrichten."
                 steps={[
-                    { title: 'Vorlage waehlen', text: 'Waehle eine fertige Vorlage fuer Bestaetigung, Erinnerung oder Follow-up. Platzhalter wie Name und Termindatum werden automatisch gefuellt.' },
+                    { title: 'Vorlage wählen', text: 'Wähle eine fertige Vorlage für Bestätigung, Erinnerung oder Follow-up. Platzhalter wie Name und Termindatum werden automatisch gefüllt.' },
                     { title: 'Zeitpunkt festlegen', text: 'Bestimme, wann die Nachricht rausgehen soll – z. B. 3 Tage und 1 Tag vor dem Termin oder direkt nach der Behandlung.' },
-                    { title: 'Laeuft von allein', text: 'Treatflow verschickt die Nachrichten per E-Mail oder SMS zur richtigen Zeit. Du kuemmerst dich um deine Kunden.' },
+                    { title: 'Läuft von allein', text: 'Treatflow verschickt die Nachrichten per E-Mail oder SMS zur richtigen Zeit. Du kümmerst dich um deine Kunden.' },
                 ]}
             />
 

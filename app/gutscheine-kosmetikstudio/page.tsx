@@ -173,34 +173,34 @@ export default function GutscheinePage() {
 
             <FeatureUnderstand
                 theme="purple"
-                title="Gutscheine verkaufen und einloesen – direkt an der Kasse"
-                description="Verkauf und Einloesung laufen ueber deine Kasse. Restwert, Gueltigkeit und Steuer werden automatisch verwaltet."
+                title="Gutscheine verkaufen und einlösen – direkt an der Kasse"
+                description="Verkauf und Einlösung laufen über deine Kasse. Restwert, Gültigkeit und Steuer werden automatisch verwaltet."
                 items={[
                     {
                         icon: Gift,
-                        title: 'Fuer eine bestimmte Leistung',
-                        text: 'Ein Gutschein fuer eine konkrete Behandlung (z. B. eine Gesichtsbehandlung). Die Steuer wird direkt beim Verkauf gebucht.',
+                        title: 'Für eine bestimmte Leistung',
+                        text: 'Ein Gutschein für eine konkrete Behandlung (z. B. eine Gesichtsbehandlung). Die Steuer wird direkt beim Verkauf gebucht.',
                     },
                     {
                         icon: ScanLine,
-                        title: 'Fuer einen beliebigen Betrag',
-                        text: 'Ein Wertgutschein, den dein Kunde frei einloesen kann. Die Steuer faellt erst bei der Einloesung an – je nachdem, wofuer er ihn nutzt.',
+                        title: 'Für einen beliebigen Betrag',
+                        text: 'Ein Wertgutschein, den dein Kunde frei einlösen kann. Die Steuer faellt erst bei der Einlösung an – je nachdem, wofür er ihn nutzt.',
                     },
                     {
                         icon: ShieldCheck,
                         title: 'Fiskalkonform',
-                        text: 'Jeder Gutscheinverkauf und jede Einloesung wird ueber die TSE-/RKSV-Kasse signiert – mit QR-Code auf dem Beleg.',
+                        text: 'Jeder Gutscheinverkauf und jede Einlösung wird über die TSE-/RKSV-Kasse signiert – mit QR-Code auf dem Beleg.',
                     },
                 ]}
             />
 
             <FeatureHowItWorks
                 theme="purple"
-                description="In drei Schritten vom Verkauf zur Einloesung."
+                description="In drei Schritten vom Verkauf zur Einlösung."
                 steps={[
-                    { title: 'Gutschein verkaufen', text: 'Waehle einen Betrag und verkaufe den Gutschein im normalen Kassiervorgang. Der Beleg wird automatisch fiskalkonform signiert.' },
-                    { title: 'Code uebergeben', text: 'Dein Kunde bekommt einen Code mit Gueltigkeit – perfekt als Geschenk zu Weihnachten, Geburtstag oder Muttertag.' },
-                    { title: 'Spaeter einloesen', text: 'Beim naechsten Besuch loest der Beschenkte den Gutschein ganz oder teilweise ein. Der Restwert bleibt automatisch gespeichert.' },
+                    { title: 'Gutschein verkaufen', text: 'Wähle einen Betrag und verkaufe den Gutschein im normalen Kassiervorgang. Der Beleg wird automatisch fiskalkonform signiert.' },
+                    { title: 'Code übergeben', text: 'Dein Kunde bekommt einen Code mit Gültigkeit – perfekt als Geschenk zu Weihnachten, Geburtstag oder Muttertag.' },
+                    { title: 'Spaeter einlösen', text: 'Beim nächsten Besuch loest der Beschenkte den Gutschein ganz oder teilweise ein. Der Restwert bleibt automatisch gespeichert.' },
                 ]}
             />
 

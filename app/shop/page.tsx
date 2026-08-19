@@ -66,7 +66,7 @@ export default function ShopPage() {
                     {
                         icon: Package,
                         title: 'Produkte anlegen und verkaufen',
-                        text: 'Lege Seren, Cremes und Zubehoer als Artikel an. Nach der Behandlung oder an der Theke direkt verkaufen.',
+                        text: 'Lege Seren, Cremes und Zubehör als Artikel an. Nach der Behandlung oder an der Theke direkt verkaufen.',
                     },
                     {
                         icon: TrendingUp,
@@ -76,7 +76,7 @@ export default function ShopPage() {
                     {
                         icon: BarChart3,
                         title: 'Verkaufshistorie pro Kundin',
-                        text: 'Im Kundenprofil siehst du, wer welches Produkt gekauft hat – ideal fuer Empfehlungen und Nachbestellungen.',
+                        text: 'Im Kundenprofil siehst du, wer welches Produkt gekauft hat – ideal für Empfehlungen und Nachbestellungen.',
                     },
                 ]}
             />
@@ -85,8 +85,8 @@ export default function ShopPage() {
                 theme="emerald"
                 description="In drei Schritten vom Produkt zum Verkauf."
                 steps={[
-                    { title: 'Produkte anlegen', text: 'Trage deine Artikel mit Name, Preis, Bild und Anfangsbestand ein. Du kannst so viele Produkte anlegen, wie du moechtest.' },
-                    { title: 'Im Studio verkaufen', text: 'Empfiehl der Kundin nach der Behandlung das passende Produkt und verkaufe es direkt ueber die Kasse. Der Verkauf wird im Kundenprofil gespeichert.' },
+                    { title: 'Produkte anlegen', text: 'Trage deine Artikel mit Name, Preis, Bild und Anfangsbestand ein. Du kannst so viele Produkte anlegen, wie du möchtest.' },
+                    { title: 'Im Studio verkaufen', text: 'Empfiehl der Kundin nach der Behandlung das passende Produkt und verkaufe es direkt über die Kasse. Der Verkauf wird im Kundenprofil gespeichert.' },
                     { title: 'Bestand aktualisiert sich', text: 'Nach jedem Verkauf wird der Lagerbestand automatisch reduziert. Die Verkaufshistorie zeigt dir, welche Produkte am besten laufen.' },
                 ]}
             />

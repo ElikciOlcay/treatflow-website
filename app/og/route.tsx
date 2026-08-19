@@ -27,28 +27,28 @@ const SLUG_MAP: Record<string, OgContent> = {
     },
     'blog': {
         eyebrow: 'Treatflow Blog',
-        title: 'Tipps & Trends fuer Beauty-Profis',
-        subtitle: 'Praxiswissen fuer dein Kosmetikstudio',
+        title: 'Tipps & Trends für Beauty-Profis',
+        subtitle: 'Praxiswissen für dein Kosmetikstudio',
     },
     'shop': {
         eyebrow: 'Marketplace',
-        title: 'Vorlagen fuer Anamnese & Einwilligung',
-        subtitle: 'Sofort einsetzbar fuer dein Studio',
+        title: 'Vorlagen für Anamnese & Einwilligung',
+        subtitle: 'Sofort einsetzbar für dein Studio',
     },
     'team': {
-        eyebrow: 'Ueber uns',
+        eyebrow: 'Über uns',
         title: 'Das Team hinter Treatflow',
         subtitle: 'Made in Austria - mit dir entwickelt',
     },
     'kontakt': {
         eyebrow: 'Kontakt',
         title: 'Sprich mit dem Treatflow-Team',
-        subtitle: 'Persoenliche Beratung & Support',
+        subtitle: 'Persönliche Beratung & Support',
     },
     'online-buchungen': {
         eyebrow: 'Funktion',
         title: 'Online-Buchungen 24/7',
-        subtitle: 'Buchungslink, Bestaetigungen, weniger No-Shows',
+        subtitle: 'Buchungslink, Bestätigungen, weniger No-Shows',
     },
     'sms-erinnerungen': {
         eyebrow: 'Funktion',
@@ -73,11 +73,11 @@ const SLUG_MAP: Record<string, OgContent> = {
     'hygieneplan-kosmetikstudio': {
         eyebrow: 'Download',
         title: 'Hygieneplan Kosmetikstudio',
-        subtitle: 'Kostenlose PDF-Vorlage zum Ausfuellen',
+        subtitle: 'Kostenlose PDF-Vorlage zum Ausfüllen',
     },
     'website-service': {
         eyebrow: 'Service',
-        title: 'Website fuer dein Kosmetikstudio',
+        title: 'Website für dein Kosmetikstudio',
         subtitle: 'Individuell, mobil, buchungsstark - ab 1.000 EUR',
     },
     'pmu-software': {
@@ -92,7 +92,7 @@ const SLUG_MAP: Record<string, OgContent> = {
     },
     'aesthetik-software': {
         eyebrow: 'Branche',
-        title: 'Aesthetische Medizin Software',
+        title: 'Ästhetische Medizin Software',
         subtitle: 'Praxis-, Patienten- und Doku-Management',
     },
     'tattoo-software': {
@@ -113,7 +113,7 @@ const SLUG_MAP: Record<string, OgContent> = {
     'spa-software': {
         eyebrow: 'Branche',
         title: 'Spa & Wellness Software',
-        subtitle: 'Gaesteverwaltung, Buchungen, Pakete',
+        subtitle: 'Gästeverwaltung, Buchungen, Pakete',
     },
     'massage-software': {
         eyebrow: 'Branche',
@@ -124,7 +124,7 @@ const SLUG_MAP: Record<string, OgContent> = {
 
 const FALLBACK: OgContent = {
     eyebrow: 'Treatflow',
-    title: 'Software fuer dein Kosmetikstudio',
+    title: 'Software für dein Kosmetikstudio',
     subtitle: 'Termine, Kundenkartei, Dokumentation - DSGVO-konform',
 };
 

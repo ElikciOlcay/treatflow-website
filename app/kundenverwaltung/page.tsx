@@ -54,11 +54,11 @@ const faqs = [
     },
     {
         question: 'Kann ich bestehende Kundendaten importieren?',
-        answer: 'Ja. Treatflow unterstuetzt den Import von Kundendaten aus Excel- und CSV-Dateien. Unser Onboarding-Team hilft dir kostenlos beim Datenumzug von deinem bisherigen System.',
+        answer: 'Ja. Treatflow unterstützt den Import von Kundendaten aus Excel- und CSV-Dateien. Unser Onboarding-Team hilft dir kostenlos beim Datenumzug von deinem bisherigen System.',
     },
     {
         question: 'Kann Treatflow automatische Nachrichten an meine Kunden senden?',
-        answer: 'Ja. Treatflow bietet eine integrierte Nachrichtenautomatisierung. Du kannst automatische Terminerinnerungen, Geburtstagsnachrichten und Follow-up-Nachrichten nach Behandlungen einrichten, um die Kundenbindung zu staerken – ohne zusaetzlichen Aufwand.',
+        answer: 'Ja. Treatflow bietet eine integrierte Nachrichtenautomatisierung. Du kannst automatische Terminerinnerungen, Geburtstagsnachrichten und Follow-up-Nachrichten nach Behandlungen einrichten, um die Kundenbindung zu stärken – ohne zusätzlichen Aufwand.',
     },
 ];
 
@@ -143,16 +143,16 @@ export default function KundenverwaltungPage() {
             <FeatureUnderstand
                 theme="blue"
                 title="Alle Kundendaten an einem Ort"
-                description="Fuer jede Kundin ein Profil mit Kontaktdaten, Behandlungshistorie und Fotos – jederzeit und von jedem Geraet abrufbar."
+                description="Für jede Kundin ein Profil mit Kontaktdaten, Behandlungshistorie und Fotos – jederzeit und von jedem Gerät abrufbar."
                 items={[
                     {
                         icon: Shield,
                         title: 'Sicher und DSGVO-konform',
-                        text: 'Deine Kundendaten liegen verschluesselt auf EU-Servern. Auskunft und Loeschung sind jederzeit moeglich.',
+                        text: 'Deine Kundendaten liegen verschlüsselt auf EU-Servern. Auskunft und Löschung sind jederzeit möglich.',
                     },
                     {
                         icon: Upload,
-                        title: 'Bestehende Daten uebernehmen',
+                        title: 'Bestehende Daten übernehmen',
                         text: 'Du hast schon eine Kundenliste? Importiere sie einfach aus Excel oder CSV. Unser Team hilft dir beim Umzug.',
                     },
                     {
@@ -168,8 +168,8 @@ export default function KundenverwaltungPage() {
                 description="In drei Schritten zur digitalen Kundenkartei."
                 steps={[
                     { title: 'Kunden anlegen oder importieren', text: 'Lege neue Kunden manuell an oder importiere deine bestehende Liste aus Excel oder CSV. Duplikate werden automatisch erkannt.' },
-                    { title: 'Profil mit Infos fuellen', text: 'Kontaktdaten, Allergien, Notizen und Fotos im Profil speichern. Ausgefuellte Formulare landen automatisch dazu.' },
-                    { title: 'Beim naechsten Termin alles parat', text: 'Oeffne vor der Behandlung das Kundenprofil – du siehst sofort, was zuletzt gemacht wurde und worauf du achten musst.' },
+                    { title: 'Profil mit Infos füllen', text: 'Kontaktdaten, Allergien, Notizen und Fotos im Profil speichern. Ausgefüllte Formulare landen automatisch dazu.' },
+                    { title: 'Beim nächsten Termin alles parat', text: 'Öffne vor der Behandlung das Kundenprofil – du siehst sofort, was zuletzt gemacht wurde und worauf du achten musst.' },
                 ]}
             />
 
