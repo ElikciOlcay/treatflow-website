@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       ...buildHreflangAlternates("client-records"),
   },
   openGraph: {
-    title: "Kundenkartei App für Kosmetik & Beauty | Treatflow",
+    title: "Kundenkartei App für Kosmetik & Beauty",
     description:
       "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Fotos und Formulare in einer App. Kostenlos testen.",
     url: "https://www.treatflow.io/kundenkartei-software",

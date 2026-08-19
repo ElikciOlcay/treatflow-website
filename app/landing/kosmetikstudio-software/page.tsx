@@ -31,7 +31,7 @@ import {
 } from './data';
 
 export const metadata: Metadata = {
-    title: 'Kosmetikstudio Software | Termine, Kunden & Behandlungsdoku | Treatflow',
+    title: 'Kosmetikstudio Software | Termine, Kunden & Behandlungsdoku',
     description:
         'Treatflow ist die einfache Software für Kosmetikstudios: Kundenkartei, Termine, digitale Anamnese, Einwilligungen und Behandlungsdokumentation an einem Ort. 14 Tage kostenlos testen.',
     robots: 'noindex, nofollow',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/kosmetikstudio-software',
     },
     openGraph: {
-        title: 'Kosmetikstudio Software | Termine, Kunden & Behandlungsdoku | Treatflow',
+        title: 'Kosmetikstudio Software | Termine, Kunden & Behandlungsdoku',
         description:
             'Treatflow ist die einfache Software für Kosmetikstudios: Kundenkartei, Termine, digitale Anamnese, Einwilligungen und Behandlungsdokumentation an einem Ort.',
         url: 'https://www.treatflow.io/landing/kosmetikstudio-software',

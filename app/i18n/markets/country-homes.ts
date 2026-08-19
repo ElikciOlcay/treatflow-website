@@ -998,42 +998,42 @@ export const countryHomeMeta: Record<
   { title: string; description: string }
 > = {
   us: {
-    title: "Salon & Med Spa Software for the United States | Treatflow",
+    title: "Salon & Med Spa Software for the United States",
     description:
       "All-in-one software for beauty salons and med spas in the United States. Appointments, deposits to cut no-shows, HIPAA-aware consent forms and treatment documentation. No booking commissions. Request early access.",
   },
   uk: {
-    title: "Salon & Aesthetic Clinic Software for the UK | Treatflow",
+    title: "Salon & Aesthetic Clinic Software for the UK",
     description:
       "Software for salons, spas and aesthetic clinics in the United Kingdom. Appointments, GDPR-ready consent forms, client records and treatment documentation. Organised for UK studios. Request early access.",
   },
   ie: {
-    title: "Salon & Aesthetic Clinic Software for Ireland | Treatflow",
+    title: "Salon & Aesthetic Clinic Software for Ireland",
     description:
       "Software for salons, spas and aesthetic clinics in Ireland. Appointments, GDPR-ready consent forms, client records and treatment documentation. Euro pricing. Request early access.",
   },
   ca: {
-    title: "Salon & Aesthetic Clinic Software for Canada | Treatflow",
+    title: "Salon & Aesthetic Clinic Software for Canada",
     description:
       "Software for beauty salons and aesthetic clinics in Canada. Appointments, deposits, PIPEDA-aware consent forms and treatment documentation. No booking commissions. Request early access.",
   },
   au: {
-    title: "Salon & Aesthetic Clinic Software for Australia | Treatflow",
+    title: "Salon & Aesthetic Clinic Software for Australia",
     description:
       "Software for salons, spas and aesthetic clinics in Australia. Appointments, GST-aware deposits to cut no-shows, Privacy Act–ready consent and treatment documentation. Request early access.",
   },
   ae: {
-    title: "Premium Salon & Spa Software for the UAE | Treatflow",
+    title: "Premium Salon & Spa Software for the UAE",
     description:
       "Premium software for salons and spas in Dubai, Abu Dhabi and the UAE. Appointments, client records, consent forms and treatment documentation. VAT-aware studio management in AED. Request early access.",
   },
   nl: {
-    title: "Salonsoftware voor kappers, schoonheid & spa in Nederland | Treatflow",
+    title: "Salonsoftware voor kappers, schoonheid & spa in Nederland",
     description:
       "Alles-in-één software voor kappers, schoonheidssalons en spa's in Nederland. Afspraken, aanbetalingen tegen no-shows, GDPR-conforme toestemmingsformulieren en behandeldocumentatie. Vraag early access aan.",
   },
   fi: {
-    title: "Kauneushoitolan ohjelmisto Suomeen | Treatflow",
+    title: "Kauneushoitolan ohjelmisto Suomeen",
     description:
       "All-in-one-ohjelmisto Suomen kauneushoitoloille ja estetiikkaklinikoille. Ajanvaraus, asiakaskortistot, GDPR-mukaiset suostumuslomakkeet ja hoitodokumentointi. Pyydä early access.",
   },

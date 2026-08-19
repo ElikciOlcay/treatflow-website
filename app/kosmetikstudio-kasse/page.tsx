@@ -11,7 +11,7 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
 
 export const metadata = {
-    title: 'Kosmetikstudio Kasse: einfach & rechtssicher | Treatflow',
+    title: 'Kosmetikstudio Kasse: einfach & rechtssicher',
     description: 'Die Kasse fürs Kosmetikstudio: direkt aus dem Termin kassieren, Belege per E-Mail, Gutscheine verkaufen – TSE/RKSV-konform, ohne Provision. 14 Tage kostenlos testen.',
     keywords: [
         'Kosmetikstudio Kasse', 'Kasse Kosmetikstudio', 'Kasse für Beauty Studio',
@@ -25,13 +25,13 @@ export const metadata = {
         type: 'website',
         locale: 'de_DE',
         siteName: 'Treatflow',
-        title: 'Kosmetikstudio Kasse: einfach & rechtssicher | Treatflow',
+        title: 'Kosmetikstudio Kasse: einfach & rechtssicher',
         description: 'Direkt aus dem Termin kassieren, Belege per E-Mail, Gutscheine verkaufen – TSE/RKSV-konform und ohne Provision. 14 Tage kostenlos testen.',
         url: 'https://www.treatflow.io/kosmetikstudio-kasse',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Kosmetikstudio Kasse: einfach & rechtssicher | Treatflow',
+        title: 'Kosmetikstudio Kasse: einfach & rechtssicher',
         description: 'Direkt aus dem Termin kassieren, Belege per E-Mail, Gutscheine – TSE/RKSV-konform, ohne Provision.',
     },
 };

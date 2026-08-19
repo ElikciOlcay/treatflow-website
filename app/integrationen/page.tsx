@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         ...buildHreflangAlternates('integrations'),
     },
     openGraph: {
-        title: 'Integrationen & Apps | Treatflow',
+        title: 'Integrationen & Apps',
         description: 'Verbinde Treatflow mit Lexware, SumUp, Google Kalender, Zapier u. v. m. – Buchhaltung, Kartenzahlung und Automatisierung in einer Plattform.',
         url: 'https://www.treatflow.io/integrationen',
     },

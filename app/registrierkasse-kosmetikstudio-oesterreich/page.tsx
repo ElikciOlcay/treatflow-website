@@ -10,7 +10,7 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
 
 export const metadata = {
-    title: 'Registrierkasse Kosmetikstudio Österreich – RKSV | Treatflow',
+    title: 'Registrierkasse Kosmetikstudio Österreich – RKSV',
     description: 'RKSV-konforme Registrierkasse für Kosmetikstudios in Österreich: Belege, DEP7-Export, FinanzOnline-ready. Software aus Salzburg. Ab 39 €/Monat, 14 Tage testen.',
     keywords: [
         'Registrierkasse Kosmetikstudio Österreich', 'RKSV Kasse Österreich',
@@ -25,13 +25,13 @@ export const metadata = {
         type: 'website',
         locale: 'de_AT',
         siteName: 'Treatflow',
-        title: 'Registrierkasse Kosmetikstudio Österreich – RKSV | Treatflow',
+        title: 'Registrierkasse Kosmetikstudio Österreich – RKSV',
         description: 'RKSV-konforme Registrierkasse für Kosmetikstudios in Österreich: Belege, DEP7-Export, FinanzOnline. Software aus Salzburg.',
         url: 'https://www.treatflow.io/registrierkasse-kosmetikstudio-oesterreich',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Registrierkasse Kosmetikstudio Österreich – RKSV | Treatflow',
+        title: 'Registrierkasse Kosmetikstudio Österreich – RKSV',
         description: 'RKSV-konforme Registrierkasse für Kosmetikstudios in Österreich: Belege, DEP7-Export, FinanzOnline. Software aus Salzburg.',
     },
 };

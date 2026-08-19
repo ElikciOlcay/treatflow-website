@@ -14,10 +14,10 @@ export default function PricingSection() {
             <Star className="h-4 w-4 fill-current" />
             Transparente Preise
           </div>
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
             Einfache Preise -
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> keine versteckten Kosten</span>
-          </h1>
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Treatflow kostet ab 39 €/Monat (Basic) bzw. 59 €/Monat (Booking). Die Kasse ist optional ab 39 €/Monat.
             14 Tage kostenlos testen – ohne Provision und ohne Risiko.

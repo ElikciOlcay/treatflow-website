@@ -15,7 +15,6 @@ import {
 } from "lucide-react";
 import Link from 'next/link';
 import Image from 'next/image';
-import Script from 'next/script';
 import type { Metadata } from "next";
 import Navigation from "./components/Navigation";
 import ChallengeSelector from "./components/ChallengeSelector";
@@ -35,13 +34,31 @@ export const metadata: Metadata = {
     "Kosmetikstudio-Software für Termine, Online-Buchung, Kundenkartei, Formulare, Doku & Kasse - alles in einer App. Keine Provision, DSGVO-konform, Made in Austria. Bereits von 500+ Studios getestet. 14 Tage gratis.",
   alternates: {
     canonical: "https://www.treatflow.io",
-    ...buildHreflangAlternates("home", { xDefault: "us" }),
+    ...buildHreflangAlternates("home"),
   },
   openGraph: {
     title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
     description:
       "Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation – alles in einer App. Bereits von 500+ Studios getestet. DSGVO-konform.",
     url: "https://www.treatflow.io",
+    locale: "de_DE",
+    type: "website",
+    siteName: "Treatflow",
+    images: [
+      {
+        url: "https://www.treatflow.io/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Treatflow - Kosmetikstudio Software",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
+    description:
+      "Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation – alles in einer App.",
+    images: ["https://www.treatflow.io/images/og-image.png"],
   },
 };
 
@@ -210,13 +227,12 @@ const seoLinks = [
 export default function Home() {
   return (
     <>
-      <Script
-        id="structured-data"
+      {/* Roh-script (nicht next/script): sonst landet JSON-LD nur im RSC-Flight */}
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <Script
-        id="faq-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />

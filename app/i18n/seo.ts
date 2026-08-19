@@ -144,6 +144,11 @@ function slugToUrl(market: Market, slug: string | undefined | null): string | nu
   return `${BASE_URL}${prefix}/${slug}`;
 }
 
+/** Entfernt doppeltes Brand-Suffix; Layout-Template haengt ` | Treatflow` an. */
+export function stripTitleBrand(title: string): string {
+  return title.replace(/\s*\|\s*Treatflow\s*$/i, "").trim();
+}
+
 /** Baut hreflang-Alternates fuer eine logische Seite. */
 export function buildHreflangAlternates(
   pageKey: SeoPageKey,
@@ -159,7 +164,8 @@ export function buildHreflangAlternates(
     if (url) languages[hreflangTags[market]] = url;
   });
 
-  const xDefaultMarket = options?.xDefault ?? "us";
+  // DACH-first: x-default zeigt auf die deutsche Variante
+  const xDefaultMarket = options?.xDefault ?? "de";
   const xDefaultSlug = slugs[xDefaultMarket] ?? slugs.de;
   if (xDefaultSlug !== undefined) {
     const xMarket = slugs[xDefaultMarket] !== undefined ? xDefaultMarket : "de";
@@ -183,18 +189,20 @@ export function buildPageMetadata(params: {
   const canonical =
     slug === undefined ? undefined : slugToUrl(params.locale, slug) ?? undefined;
 
-  const ogImage = params.ogImage ?? `${BASE_URL}/images/og-image.jpg`;
+  const title = stripTitleBrand(params.title);
+  const ogImage = params.ogImage ?? `${BASE_URL}/images/og-image.png`;
 
   return {
-    title: params.title,
+    title,
     description: params.description,
-    ...(params.keywords?.length ? { keywords: params.keywords } : {}),
+    // Explizit leeren: Root-Layout darf keine DE-Keywords auf Intl vererben
+    keywords: params.keywords?.length ? params.keywords : [],
     alternates: {
       canonical: canonical ?? undefined,
       ...buildHreflangAlternates(params.pageKey),
     },
     openGraph: {
-      title: params.title,
+      title,
       description: params.description,
       url: canonical ?? undefined,
       siteName: "Treatflow",
@@ -211,7 +219,7 @@ export function buildPageMetadata(params: {
     },
     twitter: {
       card: "summary_large_image",
-      title: params.title,
+      title,
       description: params.description,
       images: [ogImage],
     },

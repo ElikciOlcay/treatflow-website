@@ -11,7 +11,7 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
 
 export const metadata = {
-    title: 'Kasse mit Kundenkartei fürs Kosmetikstudio | Treatflow',
+    title: 'Kasse mit Kundenkartei fürs Kosmetikstudio',
     description: 'Normale Kassen verkaufen nur. Treatflow verbindet Kasse mit Kundenkartei, Terminen, Anamnese, Fotos und Behandlungshistorie. TSE/RKSV-konform. 14 Tage testen.',
     keywords: [
         'Kasse mit Kundenkartei Kosmetikstudio', 'Kassensystem mit Kundenverwaltung',
@@ -25,13 +25,13 @@ export const metadata = {
         type: 'website',
         locale: 'de_DE',
         siteName: 'Treatflow',
-        title: 'Kasse mit Kundenkartei fürs Kosmetikstudio | Treatflow',
+        title: 'Kasse mit Kundenkartei fürs Kosmetikstudio',
         description: 'Treatflow verbindet Kasse mit Kundenkartei, Terminen, Anamnese, Fotos und Behandlungshistorie – nicht nur Verkauf.',
         url: 'https://www.treatflow.io/kasse-mit-kundenkartei-kosmetikstudio',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Kasse mit Kundenkartei fürs Kosmetikstudio | Treatflow',
+        title: 'Kasse mit Kundenkartei fürs Kosmetikstudio',
         description: 'Treatflow verbindet Kasse mit Kundenkartei, Terminen, Anamnese, Fotos und Behandlungshistorie.',
     },
 };

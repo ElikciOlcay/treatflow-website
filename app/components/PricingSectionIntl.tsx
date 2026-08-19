@@ -16,12 +16,12 @@ export default function PricingSectionIntl({ copy }: { copy: PricingIntlCopy }) 
             <Star className="h-4 w-4 fill-current" />
             {copy.eyebrow}
           </div>
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
             {copy.titleBefore}{" "}
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
               {copy.titleHighlight}
             </span>
-          </h1>
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">{copy.subtitle}</p>
         </div>
 

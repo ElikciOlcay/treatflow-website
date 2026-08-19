@@ -42,7 +42,7 @@ export const metadata = {
         ...buildHreflangAlternates("spa-wellness-software"),
     },
     openGraph: {
-        title: 'Spa & Wellness Software - Termine & Verwaltung | Treatflow',
+        title: 'Spa & Wellness Software - Termine & Verwaltung',
         description: 'Online-Buchungen, Kundenverwaltung und automatische Nachrichten für Spas und Wellness-Studios.',
         url: 'https://www.treatflow.io/spa-wellness-software',
         images: [{ url: '/images/og-spa-software.jpg', width: 1200, height: 630, alt: 'Treatflow - Software für Spa & Wellness' }],

@@ -167,7 +167,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       ],
     },
     meta: {
-      title: "Pricing | Treatflow",
+      title: "Pricing",
       description:
         "Transparent Treatflow pricing: Basic from €39/month, Booking from €59/month. Request early access for your country.",
     },
@@ -286,7 +286,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       ],
     },
     meta: {
-      title: "Precios | Treatflow",
+      title: "Precios",
       description:
         "Precios transparentes de Treatflow: Basic desde 39€/mes, Booking desde 59€/mes. Solicita acceso anticipado.",
     },
@@ -405,7 +405,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       ],
     },
     meta: {
-      title: "Prezzi | Treatflow",
+      title: "Prezzi",
       description:
         "Prezzi trasparenti Treatflow: Basic da 39€/mese, Booking da 59€/mese. Richiedi l'accesso anticipato.",
     },
@@ -524,7 +524,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       ],
     },
     meta: {
-      title: "Tarifs | Treatflow",
+      title: "Tarifs",
       description:
         "Tarifs transparents Treatflow : Basic dès 39€/mois, Booking dès 59€/mois. Demandez un accès anticipé.",
     },
@@ -643,7 +643,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       ],
     },
     meta: {
-      title: "Prijzen | Treatflow",
+      title: "Prijzen",
       description:
         "Transparante Treatflow-prijzen: Basic vanaf €39/maand, Booking vanaf €59/maand. Vraag early access aan voor jouw land.",
     },
@@ -762,7 +762,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       ],
     },
     meta: {
-      title: "Hinnat | Treatflow",
+      title: "Hinnat",
       description:
         "Läpinäkyvät Treatflow-hinnat: Basic alkaen €39/kk, Booking alkaen €59/kk. Pyydä early access maallesi.",
     },
