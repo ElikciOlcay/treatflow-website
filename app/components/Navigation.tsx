@@ -1,25 +1,28 @@
 import {
-    ChevronDown, Calendar, Users, FileText, ClipboardCheck, Link2,
-    Bell, Shield, BarChart3, ShoppingBag, Sparkles, Zap, Palette,
-    Stethoscope, Pen, Gem, Eye, Waves, Hand, Globe, Receipt, Gift, Plug
+    ChevronDown, Sparkles, Zap, Palette,
+    Stethoscope, Pen, Gem, Eye, Waves, Hand
 } from "lucide-react";
 import Link from 'next/link';
 import MobileMenu from "./MobileMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { funktionenGroups, type FunktionenNavItem } from "./funktionenNav";
 
-const funktionen = [
-    { href: '/terminkalender', label: 'Terminkalender', desc: 'Tages-, Wochen- und Monatsansicht', icon: Calendar, color: 'text-indigo-600 bg-indigo-100' },
-    { href: '/kassensystem-kosmetikstudio', label: 'Kassensystem', desc: 'TSE- & RKSV-konform kassieren', icon: Receipt, color: 'text-green-600 bg-green-100' },
-    { href: '/gutscheine-kosmetikstudio', label: 'Gutscheine', desc: 'Verkaufen, einlösen, Restwert', icon: Gift, color: 'text-purple-600 bg-purple-100' },
-    { href: '/online-buchungen', label: 'Online-Buchungen', desc: 'Persönlicher Buchungslink 24/7', icon: Link2, color: 'text-rose-600 bg-rose-100' },
-    { href: '/kundenverwaltung', label: 'Kundenverwaltung', desc: 'Kundenprofile und Behandlungshistorie', icon: Users, color: 'text-emerald-600 bg-emerald-100' },
-    { href: '/formulare', label: 'Formulare', desc: 'Digitale Anamnese und Einwilligungen', icon: ClipboardCheck, color: 'text-orange-600 bg-orange-100' },
-    { href: '/behandlungsdokumentation', label: 'Dokumentation', desc: 'Behandlungen digital festhalten', icon: FileText, color: 'text-blue-600 bg-blue-100' },
-    { href: '/nachrichtenautomatisierung', label: 'Nachrichten', desc: 'E-Mail und SMS automatisiert', icon: Bell, color: 'text-purple-600 bg-purple-100' },
-    { href: '/nisv-dokumentation', label: 'NiSV-Dokumentation', desc: 'Konform dokumentieren', icon: Shield, color: 'text-teal-600 bg-teal-100' },
-    { href: '/integrationen', label: 'Integrationen', desc: 'Lexware, Google Kalender, Zapier, SumUp u. m.', icon: Plug, color: 'text-indigo-600 bg-indigo-100' },
-    { href: '/kosmetikstudio-software-vergleich', label: 'Software-Vergleich', desc: 'Treatflow vs. andere Lösungen', icon: BarChart3, color: 'text-gray-600 bg-gray-100' },
-];
+function FunktionenLink({ item }: { item: FunktionenNavItem }) {
+    return (
+        <Link
+            href={item.href}
+            className="flex items-start gap-3 p-2.5 rounded-lg hover:bg-gray-50 transition-colors"
+        >
+            <div className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 ${item.color}`}>
+                <item.icon className="h-4 w-4" />
+            </div>
+            <div>
+                <div className="text-sm font-medium text-gray-900">{item.label}</div>
+                <div className="text-xs text-gray-500 mt-0.5">{item.desc}</div>
+            </div>
+        </Link>
+    );
+}
 
 const branchen = [
     { href: '/kosmetikstudio-software', label: 'Kosmetikstudios', desc: 'Die All-in-One Lösung', icon: Sparkles, color: 'text-indigo-600 bg-indigo-100' },
@@ -54,57 +57,30 @@ export default function Navigation() {
                                 Funktionen
                                 <ChevronDown className="ml-1 h-4 w-4" />
                             </button>
-                            <div className="absolute top-full -left-4 mt-2 w-[540px] bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-4">
-                                <div className="grid grid-cols-2 gap-1">
-                                    {funktionen.map((item) => (
+                            <div className="absolute top-full -left-4 pt-2 w-[760px] max-w-[calc(100vw-2rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                                <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-4">
+                                    <div className="grid grid-cols-3 gap-2">
+                                        {funktionenGroups.map((group) => (
+                                            <div key={group.title}>
+                                                <p className="text-[11px] font-semibold uppercase tracking-wider text-gray-400 px-2.5 mb-1">
+                                                    {group.title}
+                                                </p>
+                                                <div className="space-y-0.5">
+                                                    {group.items.map((item) => (
+                                                        <FunktionenLink key={item.href} item={item} />
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <div className="border-t border-gray-100 mt-3 pt-3">
                                         <Link
-                                            key={item.href}
-                                            href={item.href}
-                                            className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                                            href="/funktionen"
+                                            className="block text-center text-sm font-medium text-indigo-600 hover:text-indigo-700 py-2 rounded-lg hover:bg-indigo-50 transition-colors"
                                         >
-                                            <div className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 ${item.color}`}>
-                                                <item.icon className="h-4 w-4" />
-                                            </div>
-                                            <div>
-                                                <div className="text-sm font-medium text-gray-900">{item.label}</div>
-                                                <div className="text-xs text-gray-500 mt-0.5">{item.desc}</div>
-                                            </div>
+                                            Alle Funktionen ansehen
                                         </Link>
-                                    ))}
-                                </div>
-                                <div className="border-t border-gray-100 mt-3 pt-3">
-                                    <Link
-                                        href="/funktionen"
-                                        className="block text-center text-sm font-medium text-indigo-600 hover:text-indigo-700 py-2 rounded-lg hover:bg-indigo-50 transition-colors mb-2"
-                                    >
-                                        Alle Funktionen ansehen
-                                    </Link>
-                                </div>
-                                <div className="border-t border-gray-100 pt-3 grid grid-cols-2 gap-1">
-                                    <Link
-                                        href="/shop"
-                                        className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
-                                    >
-                                        <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 text-amber-600 bg-amber-100">
-                                            <ShoppingBag className="h-4 w-4" />
-                                        </div>
-                                        <div>
-                                            <div className="text-sm font-medium text-gray-900">Shop</div>
-                                            <div className="text-xs text-gray-500 mt-0.5">Produktverkauf und Lagerverwaltung</div>
-                                        </div>
-                                    </Link>
-                                    <Link
-                                        href="/website-fuer-kosmetikstudios"
-                                        className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
-                                    >
-                                        <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 text-indigo-600 bg-indigo-100">
-                                            <Globe className="h-4 w-4" />
-                                        </div>
-                                        <div>
-                                            <div className="text-sm font-medium text-gray-900">Studio-Website</div>
-                                            <div className="text-xs text-gray-500 mt-0.5">Individuelle Website ab 1.000 Euro</div>
-                                        </div>
-                                    </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

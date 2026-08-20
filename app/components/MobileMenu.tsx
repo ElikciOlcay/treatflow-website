@@ -2,28 +2,12 @@
 
 import { useState } from 'react';
 import {
-    Menu, X, Calendar, Users, FileText, ClipboardCheck, Link2,
-    Bell, Shield, BarChart3, ShoppingBag, Sparkles, Zap, Palette,
-    Stethoscope, Pen, ChevronDown, Gem, Eye, Waves, Hand, Globe, Receipt, Gift, Plug
+    Menu, X, Sparkles, Zap, Palette,
+    Stethoscope, Pen, ChevronDown, Gem, Eye, Waves, Hand
 } from 'lucide-react';
 import Link from 'next/link';
 import LanguageSwitcher from './LanguageSwitcher';
-
-const funktionen = [
-    { href: '/terminkalender', label: 'Terminkalender', icon: Calendar, color: 'text-indigo-600 bg-indigo-100' },
-    { href: '/kassensystem-kosmetikstudio', label: 'Kassensystem', icon: Receipt, color: 'text-green-600 bg-green-100' },
-    { href: '/gutscheine-kosmetikstudio', label: 'Gutscheine', icon: Gift, color: 'text-purple-600 bg-purple-100' },
-    { href: '/online-buchungen', label: 'Online-Buchungen', icon: Link2, color: 'text-rose-600 bg-rose-100' },
-    { href: '/kundenverwaltung', label: 'Kundenverwaltung', icon: Users, color: 'text-emerald-600 bg-emerald-100' },
-    { href: '/formulare', label: 'Formulare', icon: ClipboardCheck, color: 'text-orange-600 bg-orange-100' },
-    { href: '/behandlungsdokumentation', label: 'Dokumentation', icon: FileText, color: 'text-blue-600 bg-blue-100' },
-    { href: '/nachrichtenautomatisierung', label: 'Nachrichten', icon: Bell, color: 'text-purple-600 bg-purple-100' },
-    { href: '/nisv-dokumentation', label: 'NiSV-Dokumentation', icon: Shield, color: 'text-teal-600 bg-teal-100' },
-    { href: '/integrationen', label: 'Integrationen', icon: Plug, color: 'text-indigo-600 bg-indigo-100' },
-    { href: '/kosmetikstudio-software-vergleich', label: 'Software-Vergleich', icon: BarChart3, color: 'text-gray-600 bg-gray-100' },
-    { href: '/shop', label: 'Shop', icon: ShoppingBag, color: 'text-amber-600 bg-amber-100' },
-    { href: '/website-fuer-kosmetikstudios', label: 'Studio-Website', icon: Globe, color: 'text-indigo-600 bg-indigo-100' },
-];
+import { funktionenGroups } from './funktionenNav';
 
 const branchen = [
     { href: '/kosmetikstudio-software', label: 'Kosmetikstudios', icon: Sparkles, color: 'text-indigo-600 bg-indigo-100' },
@@ -64,20 +48,36 @@ export default function MobileMenu() {
                             <ChevronDown className={`h-4 w-4 text-gray-400 transition-transform duration-200 ${funktionenOpen ? 'rotate-180' : ''}`} />
                         </button>
                         {funktionenOpen && (
-                            <div className="pb-3 space-y-1">
-                                {funktionen.map((item) => (
+                            <div className="pb-3 space-y-3">
+                                {funktionenGroups.map((group) => (
+                                    <div key={group.title}>
+                                        <p className="text-[11px] font-semibold uppercase tracking-wider text-gray-400 px-2 mb-1">
+                                            {group.title}
+                                        </p>
+                                        {group.items.map((item) => (
+                                            <Link
+                                                key={item.href}
+                                                href={item.href}
+                                                className="flex items-center gap-3 py-2.5 px-2 rounded-lg hover:bg-gray-50 transition-colors"
+                                                onClick={() => setIsOpen(false)}
+                                            >
+                                                <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${item.color}`}>
+                                                    <item.icon className="h-4 w-4" />
+                                                </div>
+                                                <span className="text-sm text-gray-700">{item.label}</span>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                ))}
+                                <div className="border-t border-gray-100 pt-2">
                                     <Link
-                                        key={item.href}
-                                        href={item.href}
-                                        className="flex items-center gap-3 py-2.5 px-2 rounded-lg hover:bg-gray-50 transition-colors"
+                                        href="/funktionen"
+                                        className="block py-2.5 px-2 text-sm font-medium text-indigo-600 hover:text-indigo-700"
                                         onClick={() => setIsOpen(false)}
                                     >
-                                        <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${item.color}`}>
-                                            <item.icon className="h-4 w-4" />
-                                        </div>
-                                        <span className="text-sm text-gray-700">{item.label}</span>
+                                        Alle Funktionen ansehen
                                     </Link>
-                                ))}
+                                </div>
                             </div>
                         )}
 

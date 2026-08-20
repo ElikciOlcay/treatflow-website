@@ -15,7 +15,7 @@ import {
   Bell,
   Plug,
   ShoppingBag,
-  Globe,
+  Receipt,
   Sparkles,
   Zap,
   Palette,
@@ -49,9 +49,19 @@ function toNavLang(market: PrefixedMarket): NavLang {
 }
 
 type L10n = Record<NavLang, string>;
+type FeatureGroupId = "appointments" | "clients" | "sales";
+
+const featureGroupTitles: Record<FeatureGroupId, L10n> = {
+  appointments: { en: "Appointments", nl: "Afspraken", fi: "Ajanvaraukset" },
+  clients: { en: "Clients", nl: "Klanten", fi: "Asiakkaat" },
+  sales: { en: "Checkout & sales", nl: "Kassa & verkoop", fi: "Kassa & myynti" },
+};
+
+const featureGroupOrder: FeatureGroupId[] = ["appointments", "clients", "sales"];
 
 const featureDefs: {
   slug: string;
+  group: FeatureGroupId;
   label: L10n;
   desc: L10n;
   icon: typeof Calendar;
@@ -59,6 +69,7 @@ const featureDefs: {
 }[] = [
   {
     slug: EN_SLUGS["appointment-calendar"],
+    group: "appointments",
     label: {
       en: "Appointment calendar",
       nl: "Afsprakenkalender",
@@ -73,22 +84,8 @@ const featureDefs: {
     color: "text-indigo-600 bg-indigo-100",
   },
   {
-    slug: EN_SLUGS.vouchers,
-    label: {
-      en: "Vouchers",
-      nl: "Cadeaubonnen",
-      fi: "Lahjakortit",
-    },
-    desc: {
-      en: "Sell, redeem and track balances",
-      nl: "Verkoop, verzilver en volg saldi",
-      fi: "Myy, lunasta ja seuraa saldoja",
-    },
-    icon: Gift,
-    color: "text-purple-600 bg-purple-100",
-  },
-  {
     slug: EN_SLUGS["online-booking"],
+    group: "appointments",
     label: {
       en: "Online booking",
       nl: "Online boeken",
@@ -103,7 +100,24 @@ const featureDefs: {
     color: "text-rose-600 bg-rose-100",
   },
   {
+    slug: EN_SLUGS.messaging,
+    group: "appointments",
+    label: {
+      en: "Messaging",
+      nl: "Berichten",
+      fi: "Viestintä",
+    },
+    desc: {
+      en: "Automated email and SMS",
+      nl: "Geautomatiseerde e-mail en sms",
+      fi: "Automaattiset sähköpostit ja tekstiviestit",
+    },
+    icon: Bell,
+    color: "text-purple-600 bg-purple-100",
+  },
+  {
     slug: EN_SLUGS["client-records"],
+    group: "clients",
     label: {
       en: "Client records",
       nl: "Klantendossiers",
@@ -119,6 +133,7 @@ const featureDefs: {
   },
   {
     slug: EN_SLUGS.forms,
+    group: "clients",
     label: {
       en: "Forms",
       nl: "Formulieren",
@@ -134,6 +149,7 @@ const featureDefs: {
   },
   {
     slug: EN_SLUGS["treatment-documentation"],
+    group: "clients",
     label: {
       en: "Treatment documentation",
       nl: "Behandelingsdocumentatie",
@@ -148,22 +164,56 @@ const featureDefs: {
     color: "text-blue-600 bg-blue-100",
   },
   {
-    slug: EN_SLUGS.messaging,
+    slug: EN_SLUGS["point-of-sale"],
+    group: "sales",
     label: {
-      en: "Messaging",
-      nl: "Berichten",
-      fi: "Viestintä",
+      en: "Point of sale",
+      nl: "Kassa",
+      fi: "Kassa",
     },
     desc: {
-      en: "Automated email and SMS",
-      nl: "Geautomatiseerde e-mail en sms",
-      fi: "Automaattiset sähköpostit ja tekstiviestit",
+      en: "Compliant checkout for your studio",
+      nl: "Conform afrekenen in je studio",
+      fi: "Sääntöjenmukainen kassa studiollesi",
     },
-    icon: Bell,
+    icon: Receipt,
+    color: "text-green-600 bg-green-100",
+  },
+  {
+    slug: EN_SLUGS.vouchers,
+    group: "sales",
+    label: {
+      en: "Vouchers",
+      nl: "Cadeaubonnen",
+      fi: "Lahjakortit",
+    },
+    desc: {
+      en: "Sell, redeem and track balances",
+      nl: "Verkoop, verzilver en volg saldi",
+      fi: "Myy, lunasta ja seuraa saldoja",
+    },
+    icon: Gift,
     color: "text-purple-600 bg-purple-100",
   },
   {
+    slug: EN_SLUGS.shop,
+    group: "sales",
+    label: {
+      en: "Shop",
+      nl: "Shop",
+      fi: "Kauppa",
+    },
+    desc: {
+      en: "Product sales and inventory",
+      nl: "Productverkoop en voorraad",
+      fi: "Tuotemyynti ja varasto",
+    },
+    icon: ShoppingBag,
+    color: "text-amber-600 bg-amber-100",
+  },
+  {
     slug: EN_SLUGS.integrations,
+    group: "sales",
     label: {
       en: "Integrations",
       nl: "Integraties",
@@ -329,28 +379,6 @@ const allFeaturesLabel: L10n = {
   fi: "Näytä kaikki ominaisuudet",
 };
 
-const shopLabel: L10n = {
-  en: "Shop",
-  nl: "Shop",
-  fi: "Kauppa",
-};
-const shopDesc: L10n = {
-  en: "Product sales and inventory",
-  nl: "Productverkoop en voorraad",
-  fi: "Tuotemyynti ja varasto",
-};
-
-const websiteLabel: L10n = {
-  en: "Studio website",
-  nl: "Studio-website",
-  fi: "Studion verkkosivusto",
-};
-const websiteDesc: L10n = {
-  en: "Custom website for your studio",
-  nl: "Website op maat voor jouw studio",
-  fi: "Räätälöity verkkosivusto studiollesi",
-};
-
 export default function NavigationEn({
   dict,
   locale = "us",
@@ -369,10 +397,17 @@ export default function NavigationEn({
 
   const featureLinks = featureDefs.map((item) => ({
     href: `${base}/${item.slug}`,
+    group: item.group,
     label: item.label[lang],
     desc: item.desc[lang],
     icon: item.icon,
     color: item.color,
+  }));
+
+  const featureGroups = featureGroupOrder.map((groupId) => ({
+    id: groupId,
+    title: featureGroupTitles[groupId][lang],
+    items: featureLinks.filter((item) => item.group === groupId),
   }));
 
   const industryLinks = industryDefs.map((item) => ({
@@ -385,8 +420,6 @@ export default function NavigationEn({
   }));
 
   const featuresOverviewHref = `${base}/${EN_SLUGS.features}`;
-  const shopHref = `${base}/${EN_SLUGS.shop}`;
-  const websiteHref = `${base}/${EN_SLUGS["studio-website"]}`;
   const pricingHref = `${base}/${EN_SLUGS.pricing}`;
   const contactHref = `${base}/${EN_SLUGS.contact}`;
 
@@ -411,24 +444,34 @@ export default function NavigationEn({
                 {dict.nav.features}
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
-              <div className="absolute top-full -left-4 mt-2 w-[540px] bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-4">
-                <div className="grid grid-cols-2 gap-1">
-                  {featureLinks.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
-                    >
-                      <div
-                        className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 ${item.color}`}
-                      >
-                        <item.icon className="h-4 w-4" />
+              <div className="absolute top-full -left-4 pt-2 w-[760px] max-w-[calc(100vw-2rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-4">
+                <div className="grid grid-cols-3 gap-2">
+                  {featureGroups.map((group) => (
+                    <div key={group.id}>
+                      <p className="text-[11px] font-semibold uppercase tracking-wider text-gray-400 px-2.5 mb-1">
+                        {group.title}
+                      </p>
+                      <div className="space-y-0.5">
+                        {group.items.map((item) => (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            className="flex items-start gap-3 p-2.5 rounded-lg hover:bg-gray-50 transition-colors"
+                          >
+                            <div
+                              className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 ${item.color}`}
+                            >
+                              <item.icon className="h-4 w-4" />
+                            </div>
+                            <div>
+                              <div className="text-sm font-medium text-gray-900">{item.label}</div>
+                              <div className="text-xs text-gray-500 mt-0.5">{item.desc}</div>
+                            </div>
+                          </Link>
+                        ))}
                       </div>
-                      <div>
-                        <div className="text-sm font-medium text-gray-900">{item.label}</div>
-                        <div className="text-xs text-gray-500 mt-0.5">{item.desc}</div>
-                      </div>
-                    </Link>
+                    </div>
                   ))}
                 </div>
                 <div className="border-t border-gray-100 mt-3 pt-3">
@@ -439,31 +482,6 @@ export default function NavigationEn({
                     {allFeaturesLabel[lang]}
                   </Link>
                 </div>
-                <div className="border-t border-gray-100 pt-3 grid grid-cols-2 gap-1">
-                  <Link
-                    href={shopHref}
-                    className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
-                  >
-                    <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 text-amber-600 bg-amber-100">
-                      <ShoppingBag className="h-4 w-4" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-medium text-gray-900">{shopLabel[lang]}</div>
-                      <div className="text-xs text-gray-500 mt-0.5">{shopDesc[lang]}</div>
-                    </div>
-                  </Link>
-                  <Link
-                    href={websiteHref}
-                    className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
-                  >
-                    <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 text-indigo-600 bg-indigo-100">
-                      <Globe className="h-4 w-4" />
-                    </div>
-                    <div>
-                      <div className="text-sm font-medium text-gray-900">{websiteLabel[lang]}</div>
-                      <div className="text-xs text-gray-500 mt-0.5">{websiteDesc[lang]}</div>
-                    </div>
-                  </Link>
                 </div>
               </div>
             </div>
@@ -541,23 +559,27 @@ export default function NavigationEn({
 
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-3 max-h-[80vh] overflow-y-auto">
-          <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">
-            {dict.nav.features}
-          </p>
-          {featureLinks.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="flex items-center gap-3 pl-2 text-sm font-medium text-gray-700 hover:text-indigo-600"
-              onClick={() => setMobileOpen(false)}
-            >
-              <div
-                className={`w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0 ${item.color}`}
-              >
-                <item.icon className="h-4 w-4" />
-              </div>
-              {item.label}
-            </Link>
+          {featureGroups.map((group) => (
+            <div key={group.id} className="space-y-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">
+                {group.title}
+              </p>
+              {group.items.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="flex items-center gap-3 pl-2 text-sm font-medium text-gray-700 hover:text-indigo-600"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  <div
+                    className={`w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0 ${item.color}`}
+                  >
+                    <item.icon className="h-4 w-4" />
+                  </div>
+                  {item.label}
+                </Link>
+              ))}
+            </div>
           ))}
           <Link
             href={featuresOverviewHref}
@@ -565,20 +587,6 @@ export default function NavigationEn({
             onClick={() => setMobileOpen(false)}
           >
             {allFeaturesLabel[lang]}
-          </Link>
-          <Link
-            href={shopHref}
-            className="block pl-2 text-sm font-medium text-gray-700"
-            onClick={() => setMobileOpen(false)}
-          >
-            {shopLabel[lang]}
-          </Link>
-          <Link
-            href={websiteHref}
-            className="block pl-2 text-sm font-medium text-gray-700"
-            onClick={() => setMobileOpen(false)}
-          >
-            {websiteLabel[lang]}
           </Link>
 
           <div className="border-t border-gray-100 pt-3" />
