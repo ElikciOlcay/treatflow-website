@@ -5,6 +5,7 @@ import type { ReactNode } from 'react';
 import Breadcrumbs from './Breadcrumbs';
 import AiAnswerCapsule from './AiAnswerCapsule';
 import ContentAttribution from './ContentAttribution';
+import { APP_REGISTER_URL } from '../i18n/market-access';
 
 export type FeatureHeroTheme = {
     sectionBg: string;
@@ -121,7 +122,7 @@ type FeatureHeroProps = {
 
 const DEFAULT_PRIMARY = {
     label: '14 Tage gratis testen',
-    href: 'https://app.treatflow.io/auth/register',
+    href: APP_REGISTER_URL,
     external: true,
 };
 

@@ -147,7 +147,7 @@ export default function BehandlungsdokumentationKosmetikstudioPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
-                                href="https://app.treatflow.io/auth/register"
+                                href="https://app.treatflow.io/auth/register?lang=de"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center"
@@ -282,7 +282,7 @@ export default function BehandlungsdokumentationKosmetikstudioPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="https://app.treatflow.io/auth/register"
+                            href="https://app.treatflow.io/auth/register?lang=de"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center"

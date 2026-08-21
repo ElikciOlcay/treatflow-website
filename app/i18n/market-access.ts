@@ -1,54 +1,129 @@
-import { marketPathPrefix, type Market, type PrefixedMarket } from "./config";
+import {
+  marketLanguage,
+  marketPathPrefix,
+  markets,
+  type Market,
+  type PrefixedMarket,
+} from "./config";
 
 /**
- * Markt-Zugang: DACH darf sich selbst registrieren.
- * Alle anderen Maerkte starten ueber Early-Access-Anfrage (kein Self-Serve-Signup).
+ * Alle Maerkte: Self-Serve-Registrierung wie auf der deutschen Seite.
+ * Early Access entfaellt.
  */
-export type AccessMode = "self_serve" | "request_access";
+export type AccessMode = "self_serve";
 
-export function getAccessMode(market: Market): AccessMode {
-  return market === "de" ? "self_serve" : "request_access";
+export const APP_BASE_URL =
+  process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "") ||
+  "https://app.treatflow.io";
+
+/** Sprachen, die die App aktuell per ?lang= zuverlaessig uebernimmt. */
+export type AppHandoffLanguage = "de" | "en";
+
+/**
+ * Website-Markt-/Dictionary-Sprache → App-?lang=.
+ * nl/fi fallen vorerst auf en, bis die App-UI dafuer fertig ist.
+ */
+export function toAppLanguage(
+  language: string | null | undefined
+): AppHandoffLanguage {
+  return language === "de" ? "de" : "en";
 }
 
-export function allowsSelfServeRegistration(market: Market): boolean {
-  return getAccessMode(market) === "self_serve";
+export function getAppLanguageForMarket(market: Market): AppHandoffLanguage {
+  return toAppLanguage(marketLanguage[market]);
 }
 
-/** Primaerer CTA-Pfad fuer den jeweiligen Markt. */
-export function getPrimaryCtaPath(market: Market | string): string {
-  const resolved = resolveMarket(market);
-  if (allowsSelfServeRegistration(resolved)) {
-    return "https://app.treatflow.io/auth/register";
+/** Baut App-URLs inkl. Sprach-Handoff (?lang=). */
+export function buildAppUrl(
+  path: string,
+  options?: {
+    lang?: AppHandoffLanguage | string | null;
+    market?: Market;
+    params?: Record<string, string | undefined | null>;
   }
-  const prefix = marketPathPrefix[resolved];
-  return prefix ? `${prefix}/early-access` : "/us/early-access";
+): string {
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  const url = new URL(`${APP_BASE_URL}${normalizedPath}`);
+
+  const lang =
+    options?.lang != null
+      ? toAppLanguage(options.lang)
+      : options?.market
+        ? getAppLanguageForMarket(options.market)
+        : "de";
+
+  url.searchParams.set("lang", lang);
+
+  if (options?.params) {
+    for (const [key, value] of Object.entries(options.params)) {
+      if (value != null && value !== "") {
+        url.searchParams.set(key, value);
+      }
+    }
+  }
+
+  return url.toString();
 }
 
-export function isExternalCta(market: Market | string): boolean {
-  return allowsSelfServeRegistration(resolveMarket(market));
+export function getAccessMode(_market?: Market): AccessMode {
+  return "self_serve";
 }
 
-/** Legacy Locale-Strings (en) → Default-Markt us. */
+export function allowsSelfServeRegistration(_market?: Market): boolean {
+  return true;
+}
+
+/** Primaerer CTA: immer App-Registrierung mit passender Sprache. */
+export function getPrimaryCtaPath(market: Market | string): string {
+  return buildAppUrl("/auth/register", { market: resolveMarket(market) });
+}
+
+/** CTAs zur App oeffnen extern (app.treatflow.io). */
+export function isExternalCta(_market?: Market | string): boolean {
+  return true;
+}
+
+/** Locale-/Markt-Strings → aktive Site-Sprache (de | en). */
 function resolveMarket(value: string): Market {
-  if (isMarketLike(value)) return value;
-  if (value === "en") return "us";
-  return "us";
+  if (value === "de") return "de";
+  if (isMarketLike(value)) {
+    return value === "de" ? "de" : "en";
+  }
+  return "en";
 }
 
-export const APP_LOGIN_BY_MARKET: Record<Market, string> = {
-  de: "https://app.treatflow.io/auth/login",
-  us: "https://app.treatflow.io/auth/login?lang=en",
-  nl: "https://app.treatflow.io/auth/login?lang=en",
-  uk: "https://app.treatflow.io/auth/login?lang=en",
-  fi: "https://app.treatflow.io/auth/login?lang=en",
-  ie: "https://app.treatflow.io/auth/login?lang=en",
-  ca: "https://app.treatflow.io/auth/login?lang=en",
-  au: "https://app.treatflow.io/auth/login?lang=en",
-  ae: "https://app.treatflow.io/auth/login?lang=en",
-};
+function buildLoginMap(): Record<Market, string> {
+  return Object.fromEntries(
+    markets.map((market) => [
+      market,
+      buildAppUrl("/auth/login", { market }),
+    ])
+  ) as Record<Market, string>;
+}
+
+function buildRegisterMap(): Record<Market, string> {
+  return Object.fromEntries(
+    markets.map((market) => [
+      market,
+      buildAppUrl("/auth/register", { market }),
+    ])
+  ) as Record<Market, string>;
+}
+
+export const APP_LOGIN_BY_MARKET: Record<Market, string> = buildLoginMap();
+export const APP_REGISTER_BY_MARKET: Record<Market, string> = buildRegisterMap();
+
+/** DACH-Default fuer deutsche Marketing-Seiten. */
+export const APP_REGISTER_URL = APP_REGISTER_BY_MARKET.de;
+export const APP_LOGIN_URL = APP_LOGIN_BY_MARKET.de;
 
 /** @deprecated use APP_LOGIN_BY_MARKET */
 export const APP_LOGIN_BY_LOCALE = APP_LOGIN_BY_MARKET;
+
+/** @deprecated Alias – Early Access gibt es nicht mehr. */
+export function getEarlyAccessPath(market: Market | string): string {
+  return getPrimaryCtaPath(market);
+}
 
 function isMarketLike(value: string): value is Market {
   return value in marketPathPrefix;

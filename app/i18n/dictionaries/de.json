@@ -6,7 +6,7 @@
     "contact": "Kontakt",
     "login": "Login",
     "tryFree": "Kostenlos testen",
-    "requestAccess": "Early Access anfragen"
+    "requestAccess": "Kostenlos testen"
   },
   "footer": {
     "tagline": "Dein digitaler Studio-Assistent. Made in Austria.",
@@ -19,7 +19,7 @@
     "contact": "Kontakt",
     "pricing": "Preise",
     "tryFree": "Kostenlos testen",
-    "requestAccess": "Early Access anfragen",
+    "requestAccess": "Kostenlos testen",
     "login": "Login",
     "privacy": "Datenschutz",
     "terms": "AGB",
@@ -27,11 +27,11 @@
   },
   "common": {
     "tryFree": "Jetzt 14 Tage kostenlos testen",
-    "requestAccess": "Early Access anfragen",
-    "bookDemo": "Demo buchen",
+    "requestAccess": "Kostenlos testen",
+    "bookDemo": "Kostenlos testen",
     "learnMore": "Mehr erfahren",
     "noCreditCard": "Ohne Kreditkarte",
     "cancelAnytime": "Jederzeit kündbar",
-    "waitlistNote": "Self-Serve-Registrierung aktuell für DE, AT und CH. Für andere Länder Early Access anfragen."
+    "waitlistNote": "Starte deine kostenlose Testphase in wenigen Minuten. Keine Kreditkarte nötig."
   }
 }

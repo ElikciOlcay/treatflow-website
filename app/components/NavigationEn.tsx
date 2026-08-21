@@ -42,9 +42,7 @@ import type { IndustryPageKey } from "../i18n/industry-slugs";
 
 type NavLang = "en" | "nl" | "fi";
 
-function toNavLang(market: PrefixedMarket): NavLang {
-  if (market === "nl") return "nl";
-  if (market === "fi") return "fi";
+function toNavLang(_market: PrefixedMarket): NavLang {
   return "en";
 }
 
@@ -381,7 +379,7 @@ const allFeaturesLabel: L10n = {
 
 export default function NavigationEn({
   dict,
-  locale = "us",
+  locale = "en",
 }: {
   dict: Dictionary;
   locale?: PrefixedMarket;
@@ -393,7 +391,7 @@ export default function NavigationEn({
   const ctaPath = getPrimaryCtaPath(market);
   const ctaExternal = isExternalCta(market);
   const ctaLabel = ctaExternal ? dict.nav.tryFree : dict.nav.requestAccess;
-  const loginUrl = APP_LOGIN_BY_MARKET[market] ?? APP_LOGIN_BY_MARKET.us;
+  const loginUrl = APP_LOGIN_BY_MARKET[market] ?? APP_LOGIN_BY_MARKET.en;
 
   const featureLinks = featureDefs.map((item) => ({
     href: `${base}/${item.slug}`,

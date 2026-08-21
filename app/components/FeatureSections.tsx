@@ -2,6 +2,7 @@ import { type LucideIcon, ArrowRight, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { featureHeroThemes, type FeatureHeroThemeKey } from './FeatureHero';
+import { APP_REGISTER_URL } from '../i18n/market-access';
 
 type SectionHeaderProps = {
     eyebrow?: string;
@@ -214,7 +215,7 @@ export function FeaturePageCta({
     title,
     description,
     primaryLabel = '14 Tage gratis testen',
-    primaryHref = 'https://app.treatflow.io/auth/register',
+    primaryHref = APP_REGISTER_URL,
     secondaryLabel = 'Preise ansehen',
     secondaryHref = '/preise',
 }: {

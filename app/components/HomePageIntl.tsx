@@ -91,13 +91,25 @@ export default function HomePageIntl({ content }: { content: HomePageIntlContent
               {content.hero.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
-              <Link
-                href={content.earlyAccessHref}
-                className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-              >
-                {content.hero.primaryCta}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              {content.earlyAccessHref.startsWith("http") ? (
+                <a
+                  href={content.earlyAccessHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                >
+                  {content.hero.primaryCta}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              ) : (
+                <Link
+                  href={content.earlyAccessHref}
+                  className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                >
+                  {content.hero.primaryCta}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              )}
             </div>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-600 mb-6">
               {content.hero.trustItems.map((item) => (
@@ -187,13 +199,25 @@ export default function HomePageIntl({ content }: { content: HomePageIntlContent
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link
-              href={content.earlyAccessHref}
-              className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors"
-            >
-              {content.hero.primaryCta}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            {content.earlyAccessHref.startsWith("http") ? (
+              <a
+                href={content.earlyAccessHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors"
+              >
+                {content.hero.primaryCta}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+            ) : (
+              <Link
+                href={content.earlyAccessHref}
+                className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors"
+              >
+                {content.hero.primaryCta}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            )}
             <p className="text-sm text-gray-500 mt-3">{content.features.ctaNote}</p>
           </div>
         </div>
@@ -259,13 +283,25 @@ export default function HomePageIntl({ content }: { content: HomePageIntlContent
           <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">{content.cta.title}</h2>
           <p className="text-indigo-100 text-lg mb-8">{content.cta.subtitle}</p>
           <div className="flex justify-center">
-            <Link
-              href={content.earlyAccessHref}
-              className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              {content.hero.primaryCta}
-              <ArrowRight className="ml-3 h-5 w-5" />
-            </Link>
+            {content.earlyAccessHref.startsWith("http") ? (
+              <a
+                href={content.earlyAccessHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                {content.hero.primaryCta}
+                <ArrowRight className="ml-3 h-5 w-5" />
+              </a>
+            ) : (
+              <Link
+                href={content.earlyAccessHref}
+                className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                {content.hero.primaryCta}
+                <ArrowRight className="ml-3 h-5 w-5" />
+              </Link>
+            )}
           </div>
           <p className="text-sm text-indigo-200 mt-6">{content.cta.note}</p>
         </div>

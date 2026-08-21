@@ -193,7 +193,7 @@ export default function BlogPost() {
               </Link>
             </div>
             <a
-              href="https://app.treatflow.io/auth/register"
+              href="https://app.treatflow.io/auth/register?lang=de"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors"

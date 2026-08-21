@@ -222,7 +222,7 @@ export default function PreisePage() {
 
                     <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="https://app.treatflow.io/auth/register"
+                            href="https://app.treatflow.io/auth/register?lang=de"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors text-center flex items-center justify-center"

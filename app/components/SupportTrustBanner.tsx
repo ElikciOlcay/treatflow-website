@@ -29,7 +29,7 @@ export default function SupportTrustBanner() {
 
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <a
-                  href="https://app.treatflow.io/auth/register"
+                  href="https://app.treatflow.io/auth/register?lang=de"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-indigo-700 shadow-md transition-all duration-300 hover:bg-indigo-50 hover:shadow-lg hover:-translate-y-0.5"

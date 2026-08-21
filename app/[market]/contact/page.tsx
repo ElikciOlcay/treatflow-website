@@ -3,10 +3,9 @@ import { buildPageMetadata } from "@/app/i18n/seo";
 import {
   isPrefixedMarket,
   marketLanguage,
-  marketPathPrefix,
   type PrefixedMarket,
 } from "@/app/i18n/config";
-import Link from "next/link";
+import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 import { getContactCopy } from "@/app/i18n/markets/static-pages-nl-fi";
 
 const enContact = {
@@ -14,8 +13,8 @@ const enContact = {
   metaDescription:
     "Get in touch with the Treatflow team. We help beauty salons and aesthetic clinics digitize appointments, forms and treatment documentation.",
   title: "Contact",
-  body: "Email us at hello@treatflow.io or request early access for your market.",
-  cta: "Request early access",
+  body: "Email us at hello@treatflow.io or start your free trial right away.",
+  cta: "Start free trial",
 };
 
 export async function generateMetadata({
@@ -29,8 +28,8 @@ export async function generateMetadata({
   const lang = marketLanguage[market];
   const content = lang === "nl" || lang === "fi" ? getContactCopy(lang) : enContact;
   return buildPageMetadata({
-    pageKey: "contact",
     locale: market,
+    pageKey: "contact",
     title: content.metaTitle,
     description: content.metaDescription,
   });
@@ -46,7 +45,13 @@ export default async function ContactPage({
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
   const content = lang === "nl" || lang === "fi" ? getContactCopy(lang) : enContact;
-  const early = `${marketPathPrefix[market]}/early-access`;
+  const registerUrl = APP_REGISTER_BY_MARKET[market];
+  const ctaLabel =
+    lang === "nl"
+      ? "Gratis proberen"
+      : lang === "fi"
+        ? "Aloita ilmainen kokeilu"
+        : content.cta;
 
   return (
     <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">
@@ -68,12 +73,14 @@ export default async function ContactPage({
             content.body
           )}
         </p>
-        <Link
-          href={early}
+        <a
+          href={registerUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700"
         >
-          {content.cta}
-        </Link>
+          {ctaLabel}
+        </a>
       </div>
     </section>
   );

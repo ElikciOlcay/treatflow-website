@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { APP_LOGIN_URL, APP_REGISTER_URL } from '../i18n/market-access';
 
 export default function Footer() {
   return (
@@ -71,8 +72,8 @@ export default function Footer() {
               <li><Link href="/kundenkartei-software" className="text-gray-400 hover:text-white transition-colors">Kundenkartei Software</Link></li>
               <li><Link href="/shop" className="text-gray-400 hover:text-white transition-colors">Shop</Link></li>
               <li><Link href="/website-fuer-kosmetikstudios" className="text-gray-400 hover:text-white transition-colors">Studio-Website</Link></li>
-              <li><a href="https://app.treatflow.io/auth/register" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Kostenlos testen</a></li>
-              <li><a href="https://app.treatflow.io/auth/login" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Login</a></li>
+              <li><a href={APP_REGISTER_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Kostenlos testen</a></li>
+              <li><a href={APP_LOGIN_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Login</a></li>
             </ul>
           </div>
 

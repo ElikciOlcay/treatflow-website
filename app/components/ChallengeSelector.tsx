@@ -145,7 +145,7 @@ export default function ChallengeSelector() {
                 </div>
                 <div className="flex justify-center lg:justify-end">
                   <a
-                    href="https://app.treatflow.io/auth/register"
+                    href="https://app.treatflow.io/auth/register?lang=de"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"

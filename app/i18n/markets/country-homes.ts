@@ -15,10 +15,20 @@ import {
 import type { HomePageIntlContent } from "@/app/components/HomePageIntl";
 import { homeTrustIcons } from "@/app/components/HomePageIntl";
 import { BASE_URL } from "@/app/i18n/config";
+import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 
 const { Lock, Server, ShieldCheck } = homeTrustIcons;
 
-export type CountryHomeMarket = "us" | "nl" | "uk" | "fi" | "ie" | "ca" | "au" | "ae";
+export type CountryHomeMarket =
+  | "en"
+  | "us"
+  | "nl"
+  | "uk"
+  | "fi"
+  | "ie"
+  | "ca"
+  | "au"
+  | "ae";
 
 const heroImage = {
   src: "/images/lifestyle/hero-startseite-kalender.png",
@@ -85,7 +95,7 @@ const usHomePage: HomePageIntlContent = {
     titleTail: "and ditch paperwork",
     subtitle:
       "Appointments, deposits, client records, HIPAA-aware consent forms and treatment documentation in one clear app – built for US salons and med spas.",
-    primaryCta: "Request early access",
+    primaryCta: "Start your free trial",
     trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
@@ -161,7 +171,7 @@ const usHomePage: HomePageIntlContent = {
   },
   cta: {
     title: "Ready to grow revenue and cut no-shows?",
-    subtitle: "Request early access for salons and med spas in the United States.",
+    subtitle: "Start your free trial for salons and med spas in the United States.",
     note: "Cancel anytime. No booking commissions. With personal support.",
   },
   schemas: {
@@ -177,7 +187,7 @@ const usHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in the United States?",
-        a: "Request early access for the United States. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Start your free trial for the United States. Self-serve signup is currently available in Germany, Austria and Switzerland.",
       },
     ]),
   },
@@ -198,7 +208,7 @@ const ukHomePage: HomePageIntlContent = {
     titleTail: "and no-shows",
     subtitle:
       "Appointments, client records, GDPR-ready consent forms and treatment documentation in one clear app – organised for UK salons, spas and aesthetic clinics. VAT-aware studio operations.",
-    primaryCta: "Request early access",
+    primaryCta: "Start your free trial",
     trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
@@ -274,7 +284,7 @@ const ukHomePage: HomePageIntlContent = {
   },
   cta: {
     title: "Ready to run your studio with less effort?",
-    subtitle: "Request early access for salons and aesthetic clinics in the United Kingdom.",
+    subtitle: "Start your free trial for salons and aesthetic clinics in the United Kingdom.",
     note: "Cancel anytime. GDPR-compliant. With personal support.",
   },
   schemas: {
@@ -290,7 +300,7 @@ const ukHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in the United Kingdom?",
-        a: "Request early access for the United Kingdom. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Start your free trial for the United Kingdom. Self-serve signup is currently available in Germany, Austria and Switzerland.",
       },
     ]),
   },
@@ -311,7 +321,7 @@ const ieHomePage: HomePageIntlContent = {
     titleTail: "and no-shows",
     subtitle:
       "Appointments, client records, GDPR-ready consent forms and treatment documentation in one clear app – organised for Irish salons, spas and aesthetic clinics. Euro pricing, EU data protection.",
-    primaryCta: "Request early access",
+    primaryCta: "Start your free trial",
     trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
@@ -387,7 +397,7 @@ const ieHomePage: HomePageIntlContent = {
   },
   cta: {
     title: "Ready to run your studio with less effort?",
-    subtitle: "Request early access for salons and aesthetic clinics in Ireland.",
+    subtitle: "Start your free trial for salons and aesthetic clinics in Ireland.",
     note: "Cancel anytime. GDPR-compliant. With personal support.",
   },
   schemas: {
@@ -403,7 +413,7 @@ const ieHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in Ireland?",
-        a: "Request early access for Ireland. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Start your free trial for Ireland. Self-serve signup is currently available in Germany, Austria and Switzerland.",
       },
     ]),
   },
@@ -424,7 +434,7 @@ const caHomePage: HomePageIntlContent = {
     titleTail: "and simplify consent",
     subtitle:
       "Appointments, client records, PIPEDA-aware consent forms and treatment documentation in one clear app – built for Canadian salons and aesthetic clinics.",
-    primaryCta: "Request early access",
+    primaryCta: "Start your free trial",
     trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
@@ -500,7 +510,7 @@ const caHomePage: HomePageIntlContent = {
   },
   cta: {
     title: "Ready to run your salon with less effort?",
-    subtitle: "Request early access for salons and aesthetic clinics in Canada.",
+    subtitle: "Start your free trial for salons and aesthetic clinics in Canada.",
     note: "Cancel anytime. PIPEDA-aware privacy. With personal support.",
   },
   schemas: {
@@ -516,7 +526,7 @@ const caHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in Canada?",
-        a: "Request early access for Canada. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Start your free trial for Canada. Self-serve signup is currently available in Germany, Austria and Switzerland.",
       },
     ]),
   },
@@ -537,7 +547,7 @@ const auHomePage: HomePageIntlContent = {
     titleTail: "and organise consent",
     subtitle:
       "Appointments, GST-aware deposits, client records, Privacy Act–ready consent forms and treatment documentation in one clear app – organised for Australian beauty businesses.",
-    primaryCta: "Request early access",
+    primaryCta: "Start your free trial",
     trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
@@ -613,7 +623,7 @@ const auHomePage: HomePageIntlContent = {
   },
   cta: {
     title: "Ready to protect revenue and cut no-shows?",
-    subtitle: "Request early access for salons and aesthetic clinics in Australia.",
+    subtitle: "Start your free trial for salons and aesthetic clinics in Australia.",
     note: "Cancel anytime. Privacy Act–ready. With personal support.",
   },
   schemas: {
@@ -629,7 +639,7 @@ const auHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in Australia?",
-        a: "Request early access for Australia. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Start your free trial for Australia. Self-serve signup is currently available in Germany, Austria and Switzerland.",
       },
     ]),
   },
@@ -650,7 +660,7 @@ const aeHomePage: HomePageIntlContent = {
     titleTail: "across Dubai & Abu Dhabi",
     subtitle:
       "Appointments, client records, consent forms and treatment documentation in one refined app – built for premium salons and spas in Dubai, Abu Dhabi and across the UAE. VAT-aware studio management in AED.",
-    primaryCta: "Request early access",
+    primaryCta: "Start your free trial",
     trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
@@ -726,7 +736,7 @@ const aeHomePage: HomePageIntlContent = {
   },
   cta: {
     title: "Ready to elevate your salon operations?",
-    subtitle: "Request early access for premium salons and spas in Dubai, Abu Dhabi and the UAE.",
+    subtitle: "Start your free trial for premium salons and spas in Dubai, Abu Dhabi and the UAE.",
     note: "Cancel anytime. VAT-aware. With personal support.",
   },
   schemas: {
@@ -742,7 +752,7 @@ const aeHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in the UAE?",
-        a: "Request early access for the UAE. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Start your free trial for the UAE. Self-serve signup is currently available in Germany, Austria and Switzerland.",
       },
     ]),
   },
@@ -978,7 +988,10 @@ const fiHomePage: HomePageIntlContent = {
 /* Exports                                                                    */
 /* -------------------------------------------------------------------------- */
 
-export const countryHomePages: Record<CountryHomeMarket, HomePageIntlContent> = {
+export const countryHomePages: Record<
+  Exclude<CountryHomeMarket, "en">,
+  HomePageIntlContent
+> = {
   us: usHomePage,
   uk: ukHomePage,
   ie: ieHomePage,
@@ -989,43 +1002,183 @@ export const countryHomePages: Record<CountryHomeMarket, HomePageIntlContent> = 
   fi: fiHomePage,
 };
 
+/** Generische englische Homepage (nicht laenderbezogen). */
+function englishHomePage(): HomePageIntlContent {
+  return {
+    ...usHomePage,
+    locale: "en",
+    earlyAccessHref: APP_REGISTER_BY_MARKET.en,
+    pricingHref: "/en/pricing",
+    hero: {
+      ...usHomePage.hero,
+      eyebrow: "For beauty salons and aesthetic clinics",
+      subtitle:
+        "Appointments, online booking, client records, consent forms and treatment documentation – all in one clear app. Built for beauty salons and aesthetic clinics worldwide.",
+      image: {
+        ...usHomePage.hero.image,
+        alt: "Treatflow appointment calendar open on a laptop in a modern beauty studio",
+      },
+    },
+    aiCapsules: [
+      {
+        question: "What is Treatflow?",
+        answer:
+          "Treatflow is all-in-one software for beauty salons and aesthetic clinics. It combines online booking, client records, digital consent forms, treatment notes and photo documentation in one platform. No commission on bookings.",
+      },
+      {
+        question: "Who is Treatflow for?",
+        answer:
+          "Treatflow is for beauty salons, med spas, aesthetic clinics, laser studios and skin care businesses that want fewer no-shows, clearer consent workflows and structured treatment documentation.",
+      },
+    ],
+    trustBar: [
+      { icon: Lock, text: "SSL-encrypted" },
+      { icon: Server, text: "EU servers" },
+      { icon: Shield, text: "Daily backups" },
+      { icon: ShieldCheck, text: "GDPR-ready consent" },
+    ],
+    faqs: {
+      ...usHomePage.faqs,
+      items: [
+        {
+          q: "What is Treatflow?",
+          a: "Treatflow is all-in-one software for beauty salons and aesthetic clinics: appointment calendar, online booking, digital client records, consent forms, treatment notes, photo documentation and reminders. No commission on bookings.",
+        },
+        {
+          q: "Who is Treatflow for?",
+          a: "Treatflow is for beauty salons, med spas, aesthetic clinics, laser studios and skin care studios that want fewer no-shows, better consent workflows and structured treatment documentation.",
+        },
+        {
+          q: "How can I get started?",
+          a: "You can register directly and start a 14-day free trial – no credit card required.",
+        },
+        {
+          q: "Is my data secure?",
+          a: "Yes. Treatflow is hosted on EU servers, SSL-encrypted and backed up daily. Consent and client workflows are designed with strong privacy controls.",
+        },
+      ],
+    },
+  };
+}
+
 export function getCountryHomePage(market: CountryHomeMarket): HomePageIntlContent {
-  return countryHomePages[market];
+  if (market === "en") {
+    const page = englishHomePage();
+    return {
+      ...page,
+      earlyAccessHref: APP_REGISTER_BY_MARKET.en,
+      hero: {
+        ...page.hero,
+        primaryCta: "Start free trial",
+      },
+      cta: {
+        ...page.cta,
+        subtitle: "Start Treatflow today – 14-day free trial, no credit card required.",
+        note: "14-day free trial · No credit card · Cancel anytime",
+      },
+      faqs: {
+        ...page.faqs,
+        items: page.faqs.items.map((item) => ({
+          ...item,
+          a: rewriteEarlyAccessAnswer(item.a, "en"),
+        })),
+      },
+    };
+  }
+
+  const page = countryHomePages[market];
+  const isNl = market === "nl";
+  const isFi = market === "fi";
+
+  const primaryCta = isNl
+    ? "Gratis proberen"
+    : isFi
+      ? "Aloita ilmainen kokeilu"
+      : "Start free trial";
+
+  const ctaSubtitle = isNl
+    ? "Start direct met Treatflow – 14 dagen gratis, geen creditcard."
+    : isFi
+      ? "Aloita Treatflow suoraan – 14 päivää ilmaiseksi, ei luottokorttia."
+      : "Start Treatflow today – 14-day free trial, no credit card required.";
+
+  return {
+    ...page,
+    earlyAccessHref: APP_REGISTER_BY_MARKET[market],
+    hero: {
+      ...page.hero,
+      primaryCta,
+    },
+    cta: {
+      ...page.cta,
+      subtitle: ctaSubtitle,
+      note: isNl
+        ? "14 dagen gratis · Geen creditcard · Opzeggen wanneer je wilt"
+        : isFi
+          ? "14 päivää ilmaiseksi · Ei luottokorttia · Peruuta milloin tahansa"
+          : "14-day free trial · No credit card · Cancel anytime",
+    },
+    faqs: {
+      ...page.faqs,
+      items: page.faqs.items.map((item) => ({
+        ...item,
+        a: rewriteEarlyAccessAnswer(item.a, market),
+      })),
+    },
+  };
+}
+
+function rewriteEarlyAccessAnswer(answer: string, market: CountryHomeMarket): string {
+  if (!/early access|early-access|varhaista|vroege toegang/i.test(answer)) {
+    return answer;
+  }
+  if (market === "nl") {
+    return "Je kunt je direct registreren en 14 dagen gratis starten – geen creditcard nodig.";
+  }
+  if (market === "fi") {
+    return "Voit rekisteröityä suoraan ja aloittaa 14 päivän ilmaisen kokeilun – luottokorttia ei tarvita.";
+  }
+  return "You can register directly and start a 14-day free trial – no credit card required.";
 }
 
 export const countryHomeMeta: Record<
   CountryHomeMarket,
   { title: string; description: string }
 > = {
+  en: {
+    title: "Salon & Aesthetic Clinic Software",
+    description:
+      "All-in-one software for beauty salons and aesthetic clinics. Appointments, online booking, client records, consent forms and treatment documentation. No booking commissions. Start your free trial.",
+  },
   us: {
     title: "Salon & Med Spa Software for the United States",
     description:
-      "All-in-one software for beauty salons and med spas in the United States. Appointments, deposits to cut no-shows, HIPAA-aware consent forms and treatment documentation. No booking commissions. Request early access.",
+      "All-in-one software for beauty salons and med spas in the United States. Appointments, deposits to cut no-shows, HIPAA-aware consent forms and treatment documentation. No booking commissions. Start your free trial.",
   },
   uk: {
     title: "Salon & Aesthetic Clinic Software for the UK",
     description:
-      "Software for salons, spas and aesthetic clinics in the United Kingdom. Appointments, GDPR-ready consent forms, client records and treatment documentation. Organised for UK studios. Request early access.",
+      "Software for salons, spas and aesthetic clinics in the United Kingdom. Appointments, GDPR-ready consent forms, client records and treatment documentation. Organised for UK studios. Start your free trial.",
   },
   ie: {
     title: "Salon & Aesthetic Clinic Software for Ireland",
     description:
-      "Software for salons, spas and aesthetic clinics in Ireland. Appointments, GDPR-ready consent forms, client records and treatment documentation. Euro pricing. Request early access.",
+      "Software for salons, spas and aesthetic clinics in Ireland. Appointments, GDPR-ready consent forms, client records and treatment documentation. Euro pricing. Start your free trial.",
   },
   ca: {
     title: "Salon & Aesthetic Clinic Software for Canada",
     description:
-      "Software for beauty salons and aesthetic clinics in Canada. Appointments, deposits, PIPEDA-aware consent forms and treatment documentation. No booking commissions. Request early access.",
+      "Software for beauty salons and aesthetic clinics in Canada. Appointments, deposits, PIPEDA-aware consent forms and treatment documentation. No booking commissions. Start your free trial.",
   },
   au: {
     title: "Salon & Aesthetic Clinic Software for Australia",
     description:
-      "Software for salons, spas and aesthetic clinics in Australia. Appointments, GST-aware deposits to cut no-shows, Privacy Act–ready consent and treatment documentation. Request early access.",
+      "Software for salons, spas and aesthetic clinics in Australia. Appointments, GST-aware deposits to cut no-shows, Privacy Act–ready consent and treatment documentation. Start your free trial.",
   },
   ae: {
     title: "Premium Salon & Spa Software for the UAE",
     description:
-      "Premium software for salons and spas in Dubai, Abu Dhabi and the UAE. Appointments, client records, consent forms and treatment documentation. VAT-aware studio management in AED. Request early access.",
+      "Premium software for salons and spas in Dubai, Abu Dhabi and the UAE. Appointments, client records, consent forms and treatment documentation. VAT-aware studio management in AED. Start your free trial.",
   },
   nl: {
     title: "Salonsoftware voor kappers, schoonheid & spa in Nederland",

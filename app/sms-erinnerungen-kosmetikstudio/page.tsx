@@ -98,7 +98,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
-                                href="https://app.treatflow.io/auth/register"
+                                href="https://app.treatflow.io/auth/register?lang=de"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-200 flex items-center justify-center shadow-lg shadow-purple-200"
@@ -367,7 +367,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="https://app.treatflow.io/auth/register"
+                            href="https://app.treatflow.io/auth/register?lang=de"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"

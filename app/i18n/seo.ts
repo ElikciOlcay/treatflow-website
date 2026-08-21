@@ -5,6 +5,7 @@ import {
   hreflangTags,
   marketPathPrefix,
   ogLocaleTags,
+  siteLanguages,
 } from "./config";
 import { EN_SLUGS, type MarketPageSlug } from "./market-routes";
 
@@ -85,9 +86,9 @@ function buildSlugMap(pageKey: SeoPageKey): PageSlugMap {
     return map;
   }
 
-  for (const market of Object.keys(marketPathPrefix) as Market[]) {
+  // Nur aktive Site-Sprachen (DE + EN) – keine Laender-Varianten mehr
+  for (const market of siteLanguages) {
     if (market === "de") continue;
-    // early-access / terms only on prefixed markets
     if (pageKey === "early-access" || pageKey === "terms") {
       map[market] = EN_SLUGS[pageKey];
       continue;
@@ -113,11 +114,10 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
   forms: buildSlugMap("forms"),
   "consent-forms": buildSlugMap("consent-forms"),
   "treatment-documentation": buildSlugMap("treatment-documentation"),
-  "point-of-sale": { de: "kassensystem-kosmetikstudio", ...Object.fromEntries(
-    (Object.keys(marketPathPrefix) as Market[])
-      .filter((m) => m !== "de")
-      .map((m) => [m, "point-of-sale"])
-  ) },
+  "point-of-sale": {
+    de: "kassensystem-kosmetikstudio",
+    en: "point-of-sale",
+  },
   vouchers: buildSlugMap("vouchers"),
   messaging: buildSlugMap("messaging"),
   integrations: buildSlugMap("integrations"),
@@ -157,7 +157,7 @@ export function buildHreflangAlternates(
   const slugs = seoPageSlugs[pageKey];
   const languages: Record<string, string> = {};
 
-  (Object.keys(hreflangTags) as Market[]).forEach((market) => {
+  siteLanguages.forEach((market) => {
     const slug = slugs[market];
     if (slug === undefined) return;
     const url = slugToUrl(market, slug);

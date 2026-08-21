@@ -260,7 +260,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
                 <a
-                  href="https://app.treatflow.io/auth/register"
+                  href="https://app.treatflow.io/auth/register?lang=de"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
@@ -376,7 +376,7 @@ export default function Home() {
               </div>
               <div className="text-center mt-8">
                 <a
-                  href="https://app.treatflow.io/auth/register"
+                  href="https://app.treatflow.io/auth/register?lang=de"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-indigo-600 text-white px-7 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors"
@@ -420,7 +420,7 @@ export default function Home() {
             </div>
             <div className="text-center mt-10">
               <a
-                href="https://app.treatflow.io/auth/register"
+                href="https://app.treatflow.io/auth/register?lang=de"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors"
@@ -497,7 +497,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
               <a
-                href="https://app.treatflow.io/auth/register"
+                href="https://app.treatflow.io/auth/register?lang=de"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full sm:w-auto"
