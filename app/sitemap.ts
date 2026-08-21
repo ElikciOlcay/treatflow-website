@@ -185,6 +185,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
+        {
+            url: `${baseUrl}/kunden-workflows`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
         // Neue Branchen-Seiten
         {
             url: `${baseUrl}/nagelstudio-software`,

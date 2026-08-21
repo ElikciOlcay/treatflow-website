@@ -189,9 +189,9 @@ export default function NachrichtenautomatisierungPage() {
 
             <FeatureRelated
                 items={[
+                    { href: '/kunden-workflows', title: 'Kunden-Workflows', description: 'Mehrstufige Nachsorge & Reaktivierung' },
                     { href: '/sms-erinnerungen-kosmetikstudio', title: 'SMS-Erinnerungen', description: 'Weniger No-Shows durch SMS' },
                     { href: '/terminkalender', title: 'Terminkalender', description: 'Termine & Erinnerungen zusammen' },
-                    { href: '/online-buchungen', title: 'Online-Buchungen', description: '24/7 Buchung über deinen Link' },
                 ]}
             />
 

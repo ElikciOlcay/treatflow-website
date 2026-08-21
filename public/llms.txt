@@ -45,6 +45,7 @@
 - Gutscheine: https://www.treatflow.io/gutscheine-kosmetikstudio
 - NiSV-Dokumentation: https://www.treatflow.io/nisv-dokumentation
 - Nachrichten: https://www.treatflow.io/nachrichtenautomatisierung
+- Kunden-Workflows: https://www.treatflow.io/kunden-workflows
 - Software-Vergleich: https://www.treatflow.io/kosmetikstudio-software-vergleich
 - Über uns: https://www.treatflow.io/ueber-uns
 - Blog: https://www.treatflow.io/blog
@@ -152,6 +153,7 @@ Treatflow ist ideal für:
 - Gutscheine: https://www.treatflow.io/gutscheine-kosmetikstudio
 - NiSV: https://www.treatflow.io/nisv-dokumentation
 - SMS-Erinnerungen: https://www.treatflow.io/nachrichtenautomatisierung
+- Kunden-Workflows: https://www.treatflow.io/kunden-workflows
 - Shop: https://www.treatflow.io/shop
 
 ### Vergleiche

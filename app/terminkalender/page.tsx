@@ -212,8 +212,8 @@ export default function TerminkalenderPage() {
             <FeatureRelated
                 items={[
                     { href: '/online-buchungen', title: 'Online-Buchungen', description: '24/7 über deinen Buchungslink' },
-                    { href: '/kundenverwaltung', title: 'Kundenverwaltung', description: 'Historie direkt am Termin' },
                     { href: '/nachrichtenautomatisierung', title: 'Nachrichten', description: 'Erinnerungen per SMS und E-Mail' },
+                    { href: '/kunden-workflows', title: 'Kunden-Workflows', description: 'Nachsorge & Reaktivierung' },
                 ]}
             />
 
