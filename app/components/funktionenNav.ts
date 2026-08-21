@@ -11,6 +11,7 @@ import {
   Receipt,
   Gift,
   Plug,
+  Workflow,
 } from "lucide-react";
 
 export type FunktionenNavItem = {
@@ -50,6 +51,13 @@ export const funktionenGroups: FunktionenNavGroup[] = [
         desc: "E-Mail und SMS automatisiert",
         icon: Bell,
         color: "text-purple-600 bg-purple-100",
+      },
+      {
+        href: "/kunden-workflows",
+        label: "Kunden-Workflows",
+        desc: "Mehrstufige Automationen",
+        icon: Workflow,
+        color: "text-indigo-600 bg-indigo-100",
       },
     ],
   },

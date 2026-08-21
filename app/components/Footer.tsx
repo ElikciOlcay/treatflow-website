@@ -40,6 +40,7 @@ export default function Footer() {
               <li><Link href="/formulare" className="text-gray-400 hover:text-white transition-colors">Formulare</Link></li>
               <li><Link href="/behandlungsdokumentation" className="text-gray-400 hover:text-white transition-colors">Dokumentation</Link></li>
               <li><Link href="/nachrichtenautomatisierung" className="text-gray-400 hover:text-white transition-colors">Nachrichten</Link></li>
+              <li><Link href="/kunden-workflows" className="text-gray-400 hover:text-white transition-colors">Kunden-Workflows</Link></li>
               <li><Link href="/nisv-dokumentation" className="text-gray-400 hover:text-white transition-colors">NiSV-Dokumentation</Link></li>
               <li><Link href="/integrationen" className="text-gray-400 hover:text-white transition-colors">Integrationen</Link></li>
             </ul>

@@ -288,7 +288,20 @@ https://www.treatflow.io/preise
 **Plan**: Booking-Plan (59 EUR/Monat)
 **Seite**: https://www.treatflow.io/nachrichtenautomatisierung
 
-### 8. Vorlagen-Marktplatz (Shop)
+### 8. Kunden-Workflows
+
+**Was es ist**: Mehrstufige Automationen für Nachsorge, Reaktivierung und Follow-ups – mit visuellem Builder.
+
+**Was es kann**:
+- Auslöser, Wartezeiten, Nachrichten und Bedingungen verbinden
+- Versand per E-Mail und optional WhatsApp
+- Workflow stoppt bei neuer Buchung (keine Doppel-Nachrichten)
+- Beispiele: Nachsorge nach Behandlung, Reaktivierung nach 60–90 Tagen
+
+**Plan**: Booking-Plan (59 EUR/Monat)
+**Seite**: https://www.treatflow.io/kunden-workflows
+
+### 9. Vorlagen-Marktplatz (Shop)
 
 **Was es ist**: Marktplatz mit fertigen, anpassbaren Vorlagen für Formulare und Dokumente.
 
@@ -303,7 +316,7 @@ https://www.treatflow.io/preise
 
 ---
 
-### 9. Kassensystem (Kasse)
+### 10. Kassensystem (Kasse)
 
 **Was es ist**: TSE-/RKSV-konforme Kassensoftware, direkt in die Studio-Software integriert. Add-on zum Booking-Plan.
 
@@ -726,6 +739,7 @@ Der Treatflow Blog publiziert regelmäßig Fachartikel zu Studio-Management, Sof
 - Behandlungsdokumentation: https://www.treatflow.io/behandlungsdokumentation
 - NiSV-Dokumentation: https://www.treatflow.io/nisv-dokumentation
 - Nachrichtenautomatisierung: https://www.treatflow.io/nachrichtenautomatisierung
+- Kunden-Workflows: https://www.treatflow.io/kunden-workflows
 
 ### Branchen-Seiten
 - Kosmetikstudios: https://www.treatflow.io/kosmetikstudio-software

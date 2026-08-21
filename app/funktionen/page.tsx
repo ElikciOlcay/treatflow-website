@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
     Calendar, Users, ClipboardCheck, FileText, Link2, Bell, Shield,
-    ArrowRight, CheckCircle, BarChart3, ShoppingBag, Receipt, Gift, Sparkles
+    ArrowRight, CheckCircle, BarChart3, ShoppingBag, Receipt, Gift, Sparkles, Workflow
 } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -13,7 +13,7 @@ import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
 import { buildHreflangAlternates } from '../i18n/seo';
 export const metadata: Metadata = {
     title: 'Alle Funktionen der Kosmetikstudio Software',
-    description: 'Entdecke alle Funktionen von Treatflow: Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare, Behandlungsdokumentation, NiSV-Dokumentation und automatische Erinnerungen.',
+    description: 'Entdecke alle Funktionen von Treatflow: Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare, Behandlungsdokumentation, Kunden-Workflows, NiSV-Dokumentation und automatische Erinnerungen.',
     keywords: [
         'Kosmetikstudio Software Funktionen',
         'Treatflow Funktionen',
@@ -116,6 +116,16 @@ const kernfunktionen = [
         highlights: ['SMS & E-Mail', 'Bis 80% weniger No-Shows', 'Konfigurierbare Zeiten'],
     },
     {
+        href: '/kunden-workflows',
+        icon: Workflow,
+        title: 'Kunden-Workflows',
+        description: 'Mehrstufige Automationen für Nachsorge, Reaktivierung und Follow-ups – mit Wartezeiten, Bedingungen und E-Mail oder WhatsApp.',
+        color: 'text-indigo-600',
+        bg: 'bg-indigo-50',
+        border: 'border-indigo-200 hover:border-indigo-400',
+        highlights: ['Visueller Builder', 'E-Mail & WhatsApp', 'Stoppt bei neuer Buchung'],
+    },
+    {
         href: '/nisv-dokumentation',
         icon: Shield,
         title: 'NiSV-Dokumentation',
@@ -192,7 +202,7 @@ export default function FunktionenPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                            10 Kernfunktionen für dein Studio
+                            11 Kernfunktionen für dein Studio
                         </h2>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Jede Funktion ist auf die Bedürfnisse von Kosmetikstudios zugeschnitten.

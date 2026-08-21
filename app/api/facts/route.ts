@@ -52,7 +52,7 @@ export function GET() {
             industry: "Beauty & Wellness Software",
             tagline: "Die All-in-One Software für Kosmetikstudios.",
             description:
-                "Treatflow ist eine webbasierte All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Funktionen: Terminkalender, Online-Buchungen, digitale Kundenkartei, Anamnese-Formulare, Behandlungsdokumentation, NiSV-konforme Protokolle und ein TSE-/RKSV-konformes Kassensystem.",
+                "Treatflow ist eine webbasierte All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Funktionen: Terminkalender, Online-Buchungen, digitale Kundenkartei, Anamnese-Formulare, Behandlungsdokumentation, NiSV-konforme Protokolle, Kunden-Workflows und ein TSE-/RKSV-konformes Kassensystem.",
             website: "https://www.treatflow.io",
             appUrl: "https://app.treatflow.io",
             email: "hello@treatflow.io",
@@ -176,6 +176,12 @@ export function GET() {
                 name: "Nachrichten-Automatisierung",
                 description: "Automatische Terminerinnerungen per SMS und E-Mail, Nachsorge-Nachrichten – reduziert No-Shows um bis zu 80%.",
                 url: "https://www.treatflow.io/nachrichtenautomatisierung",
+            },
+            {
+                key: "kunden-workflows",
+                name: "Kunden-Workflows",
+                description: "Mehrstufige Automationen für Nachsorge, Reaktivierung und Follow-ups – mit Wartezeiten, Bedingungen und Versand per E-Mail oder WhatsApp.",
+                url: "https://www.treatflow.io/kunden-workflows",
             },
             {
                 key: "kasse",
