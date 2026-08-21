@@ -98,7 +98,7 @@ export default function ScreenshotSection() {
             Bereit für den Test? Probiere Treatflow 14 Tage kostenlos aus.
           </p>
           <a 
-            href="https://app.treatflow.io/auth/register"
+            href="https://app.treatflow.io/auth/register?lang=de"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-colors"

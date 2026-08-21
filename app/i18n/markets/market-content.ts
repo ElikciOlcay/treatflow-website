@@ -9,10 +9,56 @@ import { getExtraFeaturePage } from "./extra-feature-pages-intl";
 import { getExtraFeaturePageNlFi } from "./extra-feature-pages-nl-fi";
 import { getIndustryPageNlFi } from "./industry-pages-nl-fi";
 import type { ExtraFeatureKey } from "../feature-slugs";
+import { APP_REGISTER_BY_MARKET } from "../market-access";
 
-export function isNlFiMarket(
-  market: PrefixedMarket
-): market is "nl" | "fi" {
+function selfServeCtaLabel(lang: string): string {
+  if (lang === "nl") return "Gratis proberen";
+  if (lang === "fi") return "Aloita ilmainen kokeilu";
+  return "Start free trial";
+}
+
+function selfServePricingSubtitle(lang: string): string {
+  if (lang === "nl") {
+    return "Kies het plan dat bij jouw studio past. Start direct met 14 dagen gratis – geen creditcard nodig.";
+  }
+  if (lang === "fi") {
+    return "Valitse studioosi sopiva paketti. Aloita suoraan 14 päivän ilmaisella kokeilulla – ei luottokorttia.";
+  }
+  return "Choose the plan that fits your studio. Start your 14-day free trial – no credit card required.";
+}
+
+function selfServeFeatureCta(lang: string): Pick<
+  FeaturePageProps,
+  "earlyAccessHref" | "primaryCta" | "bottomTitle" | "bottomText"
+> {
+  if (lang === "nl") {
+    return {
+      earlyAccessHref: "",
+      primaryCta: "14 dagen gratis proberen",
+      bottomTitle: "Klaar om te starten?",
+      bottomText:
+        "Start je gratis proefperiode – geen creditcard, opzeggen wanneer je wilt.",
+    };
+  }
+  if (lang === "fi") {
+    return {
+      earlyAccessHref: "",
+      primaryCta: "Kokeile 14 päivää ilmaiseksi",
+      bottomTitle: "Valmis aloittamaan?",
+      bottomText:
+        "Aloita ilmainen kokeilu – ei luottokorttia, peruuta milloin tahansa.",
+    };
+  }
+  return {
+    earlyAccessHref: "",
+    primaryCta: "Start 14-day free trial",
+    bottomTitle: "Ready to get started?",
+    bottomText:
+      "Start your free trial – no credit card required, cancel anytime.",
+  };
+}
+
+export function isNlFiMarket(market: string): market is "nl" | "fi" {
   return market === "nl" || market === "fi";
 }
 
@@ -45,7 +91,9 @@ export function getMarketPricingCopy(market: PrefixedMarket): PricingIntlCopy {
   const copy = getPricingIntlCopy(pricingLocale);
   return {
     ...remapEnPaths(copy, market),
-    earlyAccessHref: `/${market}/early-access`,
+    earlyAccessHref: APP_REGISTER_BY_MARKET[market],
+    cta: selfServeCtaLabel(lang),
+    subtitle: selfServePricingSubtitle(lang),
   };
 }
 
@@ -67,11 +115,18 @@ export function getMarketExtraFeaturePage(
   market: PrefixedMarket,
   key: ExtraFeatureKey
 ): FeaturePageProps {
+  const lang = marketLanguage[market];
+  const cta = selfServeFeatureCta(lang);
   if (isNlFiMarket(market)) {
     return {
       ...getExtraFeaturePageNlFi(market, key),
-      earlyAccessHref: `/${market}/early-access`,
+      ...cta,
+      earlyAccessHref: APP_REGISTER_BY_MARKET[market],
     };
   }
-  return remapEnPaths(getExtraFeaturePage("en", key), market);
+  return {
+    ...remapEnPaths(getExtraFeaturePage("en", key), market),
+    ...cta,
+    earlyAccessHref: APP_REGISTER_BY_MARKET[market],
+  };
 }

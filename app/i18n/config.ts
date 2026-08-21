@@ -1,10 +1,11 @@
-// Laender-Maerkte (Phorest-Modell): Auswahl nach Land, nicht nach Sprache.
-// DE bleibt ohne URL-Prefix auf Root (bestehende SEO-URLs).
-// Weitere Maerkte: /us, /nl, /uk, /fi, /ie, /ca, /au, /ae
+// Website-Sprachen zuerst: Deutsch (Root) und Englisch (/en).
+// Alte Laender-Maerkte (/us, /uk, /nl, …) bleiben im Typ fuer Redirects,
+// sind aber nicht mehr im Sprach-Switcher.
 
-/** Aktive Laender-Maerkte auf der Website. */
+/** Alle bekannten Markt-/Pfad-Codes (inkl. Legacy). */
 export const markets = [
   "de",
+  "en",
   "us",
   "nl",
   "uk",
@@ -17,66 +18,75 @@ export const markets = [
 
 export type Market = (typeof markets)[number];
 
-/** Sprachen fuer Dictionaries / html lang (nicht gleich URL). */
+/** Aktive Site-Sprachen (Switcher + Canonical). */
+export const siteLanguages = ["de", "en"] as const;
+export type SiteLanguage = (typeof siteLanguages)[number];
+
+/** Sprachen fuer Dictionaries / html lang. */
 export const languages = ["de", "en", "nl", "fi"] as const;
 export type Language = (typeof languages)[number];
 
-/** @deprecated Alias – Routing nutzt Market. Bleibt fuer schrittweise Migration. */
+/** @deprecated Alias – Routing nutzt Market. */
 export type Locale = Market;
 
 export const defaultMarket: Market = "de";
 export const defaultLocale: Market = "de";
+export const defaultEnglishMarket: Market = "en";
 
 export const BASE_URL = "https://www.treatflow.io";
 
-/** Anzeigenamen im Laender-Switcher (wie Phorest: Mischform Land/Sprache). */
+/** Anzeigenamen (Switcher: nur DE/EN). */
 export const marketLabels: Record<Market, string> = {
   de: "Deutsch",
-  us: "United States",
-  nl: "Nederlands",
-  uk: "United Kingdom",
-  fi: "Suomi",
-  ie: "Ireland",
-  ca: "Canada",
-  au: "Australia",
-  ae: "UAE",
+  en: "English",
+  us: "English",
+  nl: "English",
+  uk: "English",
+  fi: "English",
+  ie: "English",
+  ca: "English",
+  au: "English",
+  ae: "English",
 };
 
 export const localeLabels = marketLabels;
 
-/** ISO-3166 Flaggen-Emoji je Markt. */
+/** Kurze Badges im Switcher (keine Laenderflaggen). */
 export const marketFlags: Record<Market, string> = {
-  de: "🇩🇪",
-  us: "🇺🇸",
-  nl: "🇳🇱",
-  uk: "🇬🇧",
-  fi: "🇫🇮",
-  ie: "🇮🇪",
-  ca: "🇨🇦",
-  au: "🇦🇺",
-  ae: "🇦🇪",
+  de: "DE",
+  en: "EN",
+  us: "EN",
+  nl: "EN",
+  uk: "EN",
+  fi: "EN",
+  ie: "EN",
+  ca: "EN",
+  au: "EN",
+  ae: "EN",
 };
 
-/** Maerkte im Switcher (alle). */
-export const switchableMarkets: Market[] = [...markets];
+/** Nur Deutsch und Englisch im Switcher. */
+export const switchableMarkets: Market[] = ["de", "en"];
 export const switchableLocales = switchableMarkets;
 
 /** Sprache je Markt. */
 export const marketLanguage: Record<Market, Language> = {
   de: "de",
+  en: "en",
   us: "en",
-  nl: "nl",
+  nl: "en",
   uk: "en",
-  fi: "fi",
+  fi: "en",
   ie: "en",
   ca: "en",
   au: "en",
   ae: "en",
 };
 
-/** URL-Prefix je Markt (de = Root ohne Prefix). */
+/** URL-Prefix (de = Root, en = /en). */
 export const marketPathPrefix: Record<Market, string> = {
   de: "",
+  en: "/en",
   us: "/us",
   nl: "/nl",
   uk: "/uk",
@@ -89,7 +99,27 @@ export const marketPathPrefix: Record<Market, string> = {
 
 export const localePathPrefix = marketPathPrefix;
 
-/** Geo → Markt (ISO country codes). */
+/** Legacy-Laender → kanonisches Englisch. */
+export const LEGACY_COUNTRY_MARKETS = [
+  "us",
+  "nl",
+  "uk",
+  "fi",
+  "ie",
+  "ca",
+  "au",
+  "ae",
+] as const;
+
+export type LegacyCountryMarket = (typeof LEGACY_COUNTRY_MARKETS)[number];
+
+export function isLegacyCountryMarket(
+  value: string | undefined | null
+): value is LegacyCountryMarket {
+  return !!value && (LEGACY_COUNTRY_MARKETS as readonly string[]).includes(value);
+}
+
+/** Geo → bevorzugte Site-Sprache (nur de/en). */
 export const GERMAN_SPEAKING_COUNTRIES = ["DE", "AT", "CH", "LI"] as const;
 
 export const MARKET_BY_COUNTRY: Record<string, Market> = {
@@ -97,64 +127,55 @@ export const MARKET_BY_COUNTRY: Record<string, Market> = {
   AT: "de",
   CH: "de",
   LI: "de",
-  US: "us",
-  NL: "nl",
-  GB: "uk",
-  UK: "uk",
-  FI: "fi",
-  IE: "ie",
-  CA: "ca",
-  AU: "au",
-  AE: "ae",
 };
 
-/** Cookie fuer gespeicherte Markt-Praeferenz. */
+/** Cookie fuer Sprachpraeferenz (de | en). */
 export const MARKET_COOKIE = "tf_market";
-/** Legacy Cookie-Name (wird in Middleware migriert). */
 export const LOCALE_COOKIE = MARKET_COOKIE;
 
-/** Hreflang BCP 47 je Markt (laenderspezifisch fuer SEO). */
+/** Hreflang – kanonisch nur de + en. */
 export const hreflangTags: Record<Market, string> = {
-  de: "de-DE",
-  us: "en-US",
-  nl: "nl-NL",
-  uk: "en-GB",
-  fi: "fi-FI",
-  ie: "en-IE",
-  ca: "en-CA",
-  au: "en-AU",
-  ae: "en-AE",
-};
-
-/** HTML lang Attribut. */
-export const htmlLangTags: Record<Market, string> = {
   de: "de",
+  en: "en",
   us: "en",
-  nl: "nl",
-  uk: "en-GB",
-  fi: "fi",
-  ie: "en-IE",
-  ca: "en-CA",
-  au: "en-AU",
+  nl: "en",
+  uk: "en",
+  fi: "en",
+  ie: "en",
+  ca: "en",
+  au: "en",
   ae: "en",
 };
 
-/** OpenGraph locale. */
-export const ogLocaleTags: Record<Market, string> = {
-  de: "de_DE",
-  us: "en_US",
-  nl: "nl_NL",
-  uk: "en_GB",
-  fi: "fi_FI",
-  ie: "en_IE",
-  ca: "en_CA",
-  au: "en_AU",
-  ae: "en_AE",
+export const htmlLangTags: Record<Market, string> = {
+  de: "de",
+  en: "en",
+  us: "en",
+  nl: "en",
+  uk: "en",
+  fi: "en",
+  ie: "en",
+  ca: "en",
+  au: "en",
+  ae: "en",
 };
 
-/** Waehrungshinweis fuer Copy (Display, nicht Checkout). */
+export const ogLocaleTags: Record<Market, string> = {
+  de: "de_DE",
+  en: "en_US",
+  us: "en_US",
+  nl: "en_US",
+  uk: "en_US",
+  fi: "en_US",
+  ie: "en_US",
+  ca: "en_US",
+  au: "en_US",
+  ae: "en_US",
+};
+
 export const marketCurrency: Record<Market, string> = {
   de: "EUR",
+  en: "EUR",
   us: "USD",
   nl: "EUR",
   uk: "GBP",
@@ -165,9 +186,9 @@ export const marketCurrency: Record<Market, string> = {
   ae: "AED",
 };
 
-/** Britisches vs. amerikanisches Englisch. */
 export const englishVariant: Record<Market, "us" | "gb" | null> = {
   de: null,
+  en: "us",
   us: "us",
   nl: null,
   uk: "gb",
@@ -178,19 +199,23 @@ export const englishVariant: Record<Market, "us" | "gb" | null> = {
   ae: "us",
 };
 
-/** Prefixed Maerkte (alles ausser DE). */
-export const prefixedMarkets = markets.filter((m) => m !== "de") as Exclude<
-  Market,
-  "de"
->[];
+/**
+ * Prefixed Maerkte die noch gerendert werden.
+ * Aktiv: nur /en. Legacy-Laender werden nach /en umgeleitet.
+ */
+export const prefixedMarkets = ["en"] as const satisfies readonly Market[];
 
 export type PrefixedMarket = (typeof prefixedMarkets)[number];
+
+/** Alle prefixed Pfad-Codes inkl. Legacy (fuer Redirect-Erkennung). */
+export const allPrefixedMarketCodes = markets.filter(
+  (m): m is Exclude<Market, "de"> => m !== "de"
+);
 
 export function isMarket(value: string | undefined | null): value is Market {
   return !!value && (markets as readonly string[]).includes(value);
 }
 
-/** @deprecated use isMarket */
 export function isLocale(value: string | undefined | null): value is Market {
   return isMarket(value);
 }
@@ -201,8 +226,34 @@ export function isPrefixedMarket(
   return !!value && (prefixedMarkets as readonly string[]).includes(value);
 }
 
+export function isPrefixedMarketPath(
+  value: string | undefined | null
+): boolean {
+  return !!value && (allPrefixedMarketCodes as readonly string[]).includes(value);
+}
+
+/** Cookie-/Legacy-Wert → aktive Site-Sprache. */
+export function resolveSiteMarket(value: string | null | undefined): Market {
+  if (!value) return defaultMarket;
+  if (value === "de") return "de";
+  if (value === "en" || isLegacyCountryMarket(value)) return "en";
+  if (value === "es" || value === "it" || value === "fr") return "en";
+  return defaultMarket;
+}
+
+/**
+ * Content-Lookup: Englisch nutzt die bestehende US-Content-Basis,
+ * ohne laenderspezifische URL.
+ */
+export function resolveContentMarket(market: Market): Market {
+  if (market === "en") return "us";
+  if (isLegacyCountryMarket(market)) return market;
+  return market;
+}
+
 export function marketHomePath(market: Market): string {
-  return marketPathPrefix[market] || "/";
+  const resolved = resolveSiteMarket(market);
+  return marketPathPrefix[resolved] || "/";
 }
 
 export function localeHomePath(market: Market): string {
@@ -210,7 +261,8 @@ export function localeHomePath(market: Market): string {
 }
 
 export function buildMarketUrl(market: Market, path = ""): string {
-  const prefix = marketPathPrefix[market];
+  const resolved = resolveSiteMarket(market);
+  const prefix = marketPathPrefix[resolved];
   const normalized = path.startsWith("/") ? path : path ? `/${path}` : "";
   if (!prefix) {
     return `${BASE_URL}${normalized || ""}`;
@@ -223,5 +275,5 @@ export function buildLocaleUrl(market: Market, path = ""): string {
 }
 
 export function getMarketLanguage(market: Market): Language {
-  return marketLanguage[market];
+  return marketLanguage[resolveSiteMarket(market)];
 }

@@ -411,14 +411,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]
 
     const localePrefixes = {
-        us: '/us',
-        nl: '/nl',
-        uk: '/uk',
-        fi: '/fi',
-        ie: '/ie',
-        ca: '/ca',
-        au: '/au',
-        ae: '/ae',
+        en: '/en',
     } as const
 
     function localeRoutes(locale: keyof typeof localePrefixes) {

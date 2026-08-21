@@ -250,7 +250,7 @@ export default function TreatflowVsTreatwell() {
             />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://app.treatflow.io/auth/register"
+                href="https://app.treatflow.io/auth/register?lang=de"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md"
@@ -732,7 +732,7 @@ export default function TreatflowVsTreatwell() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://app.treatflow.io/auth/register"
+                href="https://app.treatflow.io/auth/register?lang=de"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg"

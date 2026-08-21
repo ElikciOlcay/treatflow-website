@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     },
 };
 
-const registerUrl = 'https://app.treatflow.io/auth/register';
+const registerUrl = 'https://app.treatflow.io/auth/register?lang=de';
 const consultUrl = 'https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f';
 
 const benefits = [

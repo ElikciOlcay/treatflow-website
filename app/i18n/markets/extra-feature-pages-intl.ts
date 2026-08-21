@@ -48,11 +48,11 @@ const cta: Record<
   }
 > = {
   en: {
-    earlyAccessHref: "/en/early-access",
-    primaryCta: "Request early access",
+    earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
+    primaryCta: "Start 14-day free trial",
     bottomTitle: "Ready to get started?",
     bottomText:
-      "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+      "Start your free trial – no credit card required, cancel anytime.",
   },
   es: {
     earlyAccessHref: "/es/acceso-anticipado",

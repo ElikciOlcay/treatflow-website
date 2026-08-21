@@ -5,6 +5,29 @@ import Link from "next/link";
 import { useState } from "react";
 import type { PricingIntlCopy } from "@/app/i18n/markets/pricing-intl";
 
+function PricingCta({
+  href,
+  className,
+  children,
+}: {
+  href: string;
+  className: string;
+  children: React.ReactNode;
+}) {
+  if (href.startsWith("http")) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} className={className}>
+      {children}
+    </Link>
+  );
+}
+
 export default function PricingSectionIntl({ copy }: { copy: PricingIntlCopy }) {
   const [isYearly, setIsYearly] = useState(false);
 
@@ -90,13 +113,13 @@ export default function PricingSectionIntl({ copy }: { copy: PricingIntlCopy }) 
               ))}
             </ul>
 
-            <Link
+            <PricingCta
               href={copy.earlyAccessHref}
               className="w-full bg-gray-900 text-white py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 flex items-center justify-center"
             >
               {copy.cta}
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
+            </PricingCta>
           </div>
 
           <div className="bg-gradient-to-br from-indigo-600 to-purple-700 text-white rounded-2xl p-6 relative overflow-hidden">
@@ -135,13 +158,13 @@ export default function PricingSectionIntl({ copy }: { copy: PricingIntlCopy }) 
               ))}
             </ul>
 
-            <Link
+            <PricingCta
               href={copy.earlyAccessHref}
               className="w-full bg-white text-indigo-600 py-3 rounded-xl font-bold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center"
             >
               {copy.cta}
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
+            </PricingCta>
           </div>
         </div>
 

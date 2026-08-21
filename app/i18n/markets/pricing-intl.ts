@@ -58,7 +58,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     titleBefore: "Simple pricing –",
     titleHighlight: "no hidden fees",
     subtitle:
-      "Choose the plan that fits your studio. Request early access for your country – self-serve signup is currently available in Germany, Austria and Switzerland.",
+      "Choose the plan that fits your studio. Start your 14-day free trial – no credit card required.",
     monthly: "Monthly",
     yearly: "Yearly",
     saveBadge: "Save 10%",

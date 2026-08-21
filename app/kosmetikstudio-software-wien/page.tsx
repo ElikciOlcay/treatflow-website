@@ -74,7 +74,7 @@ export default function KosmetikstudioSoftwareWienPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="https://app.treatflow.io/auth/register"
+                            href="https://app.treatflow.io/auth/register?lang=de"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-rose-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-rose-700 transition-colors flex items-center justify-center"
@@ -158,7 +158,7 @@ export default function KosmetikstudioSoftwareWienPage() {
                     <p className="text-rose-100 mb-8">Keine Kreditkarte erforderlich. Starte in wenigen Minuten.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="https://app.treatflow.io/auth/register"
+                            href="https://app.treatflow.io/auth/register?lang=de"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-white text-rose-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors"

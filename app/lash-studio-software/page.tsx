@@ -98,7 +98,7 @@ export default function LashStudioSoftwarePage() {
                             Online-Buchungen, Kundenverwaltung mit Lash-Details und digitale Einwilligungen - damit du dich auf perfekte Wimpern konzentrieren kannst.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="https://app.treatflow.io/auth/register" target="_blank" rel="noopener noreferrer" className="bg-violet-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-violet-700 transition-colors duration-200 flex items-center justify-center">
+                            <a href="https://app.treatflow.io/auth/register?lang=de" target="_blank" rel="noopener noreferrer" className="bg-violet-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-violet-700 transition-colors duration-200 flex items-center justify-center">
                                 14 Tage kostenlos testen <ArrowRight className="ml-2 h-5 w-5" />
                             </a>
                             <a href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-violet-600 hover:text-violet-600 transition-colors duration-200">
@@ -182,7 +182,7 @@ export default function LashStudioSoftwarePage() {
                     <h2 className="text-4xl font-bold text-white mb-6">Bereit für ein digitales Lash Studio?</h2>
                     <p className="text-xl text-violet-100 mb-8 max-w-2xl mx-auto">Teste Treatflow 14 Tage kostenlos und erlebe, wie viel einfacher dein Studio-Alltag sein kann.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="https://app.treatflow.io/auth/register" target="_blank" rel="noopener noreferrer" className="bg-white text-violet-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center">14 Tage gratis testen <ArrowRight className="ml-2 h-5 w-5" /></a>
+                        <a href="https://app.treatflow.io/auth/register?lang=de" target="_blank" rel="noopener noreferrer" className="bg-white text-violet-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center">14 Tage gratis testen <ArrowRight className="ml-2 h-5 w-5" /></a>
                         <a href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-violet-600 transition-colors duration-200">Beratung buchen</a>
                     </div>
                     <p className="text-sm text-violet-200 mt-4">Keine Kreditkarte nötig. Jederzeit kündbar.</p>

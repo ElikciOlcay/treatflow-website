@@ -6,7 +6,7 @@
     "contact": "Yhteystiedot",
     "login": "Kirjaudu",
     "tryFree": "Aloita ilmainen kokeilu",
-    "requestAccess": "Pyydä varhaista pääsyä"
+    "requestAccess": "Aloita ilmainen kokeilu"
   },
   "footer": {
     "tagline": "Digitaalinen studioassistenttisi. Made in Austria.",
@@ -19,7 +19,7 @@
     "contact": "Yhteystiedot",
     "pricing": "Hinnat",
     "tryFree": "Aloita ilmainen kokeilu",
-    "requestAccess": "Pyydä varhaista pääsyä",
+    "requestAccess": "Aloita ilmainen kokeilu",
     "login": "Kirjaudu",
     "privacy": "Tietosuojaseloste",
     "terms": "Käyttöehdot",
@@ -27,11 +27,11 @@
   },
   "common": {
     "tryFree": "14 päivän ilmainen kokeilu",
-    "requestAccess": "Pyydä varhaista pääsyä",
-    "bookDemo": "Pyydä varhaista pääsyä",
+    "requestAccess": "Aloita ilmainen kokeilu",
+    "bookDemo": "Aloita ilmainen kokeilu",
     "learnMore": "Lue lisää",
     "noCreditCard": "Ei luottokorttia",
     "cancelAnytime": "Peruuta milloin tahansa",
-    "waitlistNote": "Itsepalvelurekisteröinti on tällä hetkellä saatavilla Saksassa, Itävallassa ja Sveitsissä. Pyydä varhaista pääsyä omaan maahasi."
+    "waitlistNote": "Aloita ilmainen kokeilu muutamassa minuutissa. Luottokorttia ei tarvita."
   }
 }

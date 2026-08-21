@@ -5,14 +5,15 @@ import Script from "next/script";
 import AiAnswerCapsule from "../AiAnswerCapsule";
 import FaqSectionEn from "../FaqSectionEn";
 import { generateServiceSchema } from "@/lib/schema";
-import { BASE_URL } from "../../i18n/config";
+import { BASE_URL, isPrefixedMarket, type PrefixedMarket } from "../../i18n/config";
+import { getPrimaryCtaPath } from "../../i18n/market-access";
 import type { InternationalPageContent } from "../InternationalSeoPage";
 
-function earlyAccessFromPath(canonicalPath: string): string {
-  if (canonicalPath.startsWith("/es")) return "/es/acceso-anticipado";
-  if (canonicalPath.startsWith("/it")) return "/it/accesso-anticipato";
-  if (canonicalPath.startsWith("/fr")) return "/fr/acces-anticipe";
-  return "/en/early-access";
+function registerHrefFromPath(canonicalPath: string): string {
+  const match = canonicalPath.match(/^\/([a-z]{2})(?=\/|$)/);
+  const market =
+    match && isPrefixedMarket(match[1]) ? (match[1] as PrefixedMarket) : "en";
+  return getPrimaryCtaPath(market);
 }
 
 type Theme = {
@@ -110,7 +111,7 @@ export default function MarketFeaturePage({
 }) {
   const theme = themes[content.theme ?? "indigo"] ?? themes.indigo;
   const BadgeIcon = content.features.items[0]?.icon ?? Sparkles;
-  const earlyAccessHref = earlyAccessFromPath(content.canonicalPath);
+  const earlyAccessHref = registerHrefFromPath(content.canonicalPath);
 
   const serviceSchema = generateServiceSchema({
     name: content.serviceName,
@@ -374,16 +375,18 @@ export default function MarketFeaturePage({
             Ready to modernise your studio?
           </h2>
           <p className={`text-xl ${theme.ctaSoftText} mb-8 max-w-2xl mx-auto`}>
-            Request early access for your country.
+            Start your free trial – no credit card required.
           </p>
           <div className="flex justify-center">
-            <Link
+            <a
               href={earlyAccessHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`bg-white ${theme.ctaBtnText} px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center`}
             >
-              Request early access
+              Start free trial
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

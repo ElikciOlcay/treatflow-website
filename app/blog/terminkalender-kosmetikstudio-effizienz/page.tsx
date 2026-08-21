@@ -624,7 +624,7 @@ export default function BlogPost() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link
-                                    href="https://app.treatflow.io/auth/register"
+                                    href="https://app.treatflow.io/auth/register?lang=de"
                                     className="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors inline-flex items-center justify-center"
                                 >
                                     Jetzt kostenlos testen

@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import type { FeaturePageProps } from "@/app/components/FeaturePageEn";
 import { marketLanguage, type PrefixedMarket } from "@/app/i18n/config";
+import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 
 type CoreKey =
   | "appointment-calendar"
@@ -465,9 +466,32 @@ export function getCoreFeaturePage(
   market: PrefixedMarket,
   key: CoreKey
 ): FeaturePageProps {
+  const lang = resolveCoreLang(market);
+  const primaryCta =
+    lang === "nl"
+      ? "14 dagen gratis proberen"
+      : lang === "fi"
+        ? "Kokeile 14 päivää ilmaiseksi"
+        : "Start 14-day free trial";
+  const bottomTitle =
+    lang === "nl"
+      ? "Klaar om te starten?"
+      : lang === "fi"
+        ? "Valmis aloittamaan?"
+        : "Ready to get started?";
+  const bottomText =
+    lang === "nl"
+      ? "Start je gratis proefperiode – geen creditcard, opzeggen wanneer je wilt."
+      : lang === "fi"
+        ? "Aloita ilmainen kokeilu – ei luottokorttia, peruuta milloin tahansa."
+        : "Start your free trial – no credit card required, cancel anytime.";
+
   return {
-    ...pages[key][resolveCoreLang(market)],
-    earlyAccessHref: `/${market}/early-access`,
+    ...pages[key][lang],
+    earlyAccessHref: APP_REGISTER_BY_MARKET[market],
+    primaryCta,
+    bottomTitle,
+    bottomText,
   };
 }
 

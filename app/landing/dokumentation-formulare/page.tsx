@@ -83,7 +83,7 @@ export default function DokumentationFormulareLandingPage() {
                         </div>
                         <div className="flex items-center">
                             <a
-                                href="https://app.treatflow.io/auth/register"
+                                href="https://app.treatflow.io/auth/register?lang=de"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block"
@@ -120,7 +120,7 @@ export default function DokumentationFormulareLandingPage() {
 
                             <div className="flex justify-center sm:justify-start">
                                 <a
-                                    href="https://app.treatflow.io/auth/register"
+                                    href="https://app.treatflow.io/auth/register?lang=de"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center"
@@ -567,7 +567,7 @@ export default function DokumentationFormulareLandingPage() {
                                 </ul>
 
                                 <a
-                                    href="https://app.treatflow.io/auth/register"
+                                    href="https://app.treatflow.io/auth/register?lang=de"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center mb-4"
@@ -668,7 +668,7 @@ export default function DokumentationFormulareLandingPage() {
 
                         <div className="text-center">
                             <a
-                                href="https://app.treatflow.io/auth/register"
+                                href="https://app.treatflow.io/auth/register?lang=de"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center bg-white text-blue-600 px-12 py-4 rounded-lg font-semibold text-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-blue-600 hover:bg-blue-50"

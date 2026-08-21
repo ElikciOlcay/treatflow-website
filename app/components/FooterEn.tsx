@@ -3,8 +3,8 @@ import type { Dictionary } from "../i18n/dictionaries";
 import {
   marketHomePath,
   marketLabels,
-  markets,
   marketPathPrefix,
+  switchableMarkets,
   type PrefixedMarket,
 } from "../i18n/config";
 import {
@@ -17,9 +17,7 @@ import type { IndustryPageKey } from "../i18n/industry-slugs";
 
 type NavLang = "en" | "nl" | "fi";
 
-function toNavLang(market: PrefixedMarket): NavLang {
-  if (market === "nl") return "nl";
-  if (market === "fi") return "fi";
+function toNavLang(_market: PrefixedMarket): NavLang {
   return "en";
 }
 
@@ -130,7 +128,7 @@ const industryOrder: IndustryPageKey[] = [
 
 export default function FooterEn({
   dict,
-  locale = "us",
+  locale = "en",
 }: {
   dict: Dictionary;
   locale?: PrefixedMarket;
@@ -143,7 +141,7 @@ export default function FooterEn({
   const ctaPath = getPrimaryCtaPath(market);
   const ctaExternal = isExternalCta(market);
   const ctaLabel = ctaExternal ? dict.footer.tryFree : dict.footer.requestAccess;
-  const loginUrl = APP_LOGIN_BY_MARKET[market] ?? APP_LOGIN_BY_MARKET.us;
+  const loginUrl = APP_LOGIN_BY_MARKET[market] ?? APP_LOGIN_BY_MARKET.en;
 
   const featureLinks = [
     { href: `${base}/${EN_SLUGS["appointment-calendar"]}`, label: labels.calendar },
@@ -292,7 +290,7 @@ export default function FooterEn({
             © {new Date().getFullYear()} Treatflow. {dict.footer.rights}
           </span>
           <div className="flex flex-wrap gap-4">
-            {markets.map((m) => (
+            {switchableMarkets.map((m) => (
               <Link
                 key={m}
                 href={marketHomePath(m)}

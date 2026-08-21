@@ -19,23 +19,16 @@ export function GET() {
         version: "1.0",
         updatedAt: "2026-07-21",
         availability: {
-            selfServeRegistrationCountries: ["DE", "AT", "CH"],
+            selfServeRegistrationCountries: "all",
             selfServeNote:
-                "Direct signup (14-day free trial) is currently available for Germany, Austria and Switzerland.",
-            earlyAccess:
-                "Studios outside DACH request access via a form. No public self-serve registration yet.",
-            earlyAccessUrls: {
-                en: "https://www.treatflow.io/en/early-access",
-                es: "https://www.treatflow.io/es/acceso-anticipado",
-                it: "https://www.treatflow.io/it/accesso-anticipato",
-                fr: "https://www.treatflow.io/fr/acces-anticipe",
+                "Direct signup with a 14-day free trial is available worldwide. Register at https://app.treatflow.io/auth/register.",
+            registerUrls: {
+                de: "https://app.treatflow.io/auth/register?lang=de",
+                en: "https://app.treatflow.io/auth/register?lang=en",
             },
             locales: {
                 de: "https://www.treatflow.io",
                 en: "https://www.treatflow.io/en",
-                es: "https://www.treatflow.io/es",
-                it: "https://www.treatflow.io/it",
-                fr: "https://www.treatflow.io/fr",
             },
         },
         company: {
@@ -285,15 +278,13 @@ export function GET() {
             pricing: "https://www.treatflow.io/preise",
             comparison: "https://www.treatflow.io/kosmetikstudio-software-vergleich",
             blog: "https://www.treatflow.io/blog",
-            registerDACH: "https://app.treatflow.io/auth/register",
-            earlyAccessEN: "https://www.treatflow.io/en/early-access",
-            earlyAccessES: "https://www.treatflow.io/es/acceso-anticipado",
-            earlyAccessIT: "https://www.treatflow.io/it/accesso-anticipato",
-            earlyAccessFR: "https://www.treatflow.io/fr/acces-anticipe",
-            homepageES: "https://www.treatflow.io/es",
-            homepageIT: "https://www.treatflow.io/it",
-            homepageFR: "https://www.treatflow.io/fr",
+            registerDACH: "https://app.treatflow.io/auth/register?lang=de",
+            registerEN: "https://app.treatflow.io/auth/register?lang=en",
             homepageEN: "https://www.treatflow.io/en",
+            homepageUS: "https://www.treatflow.io/en",
+            homepageUK: "https://www.treatflow.io/en",
+            homepageNL: "https://www.treatflow.io/en",
+            homepageFI: "https://www.treatflow.io/en",
         },
     };
 

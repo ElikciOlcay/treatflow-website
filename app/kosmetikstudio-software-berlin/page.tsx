@@ -55,7 +55,7 @@ export default function KosmetikstudioSoftwareBerlinPage() {
               Online-Buchungen, Kundenverwaltung und digitale Formulare für dein Studio in Berlin.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://app.treatflow.io/auth/register" target="_blank" rel="noopener noreferrer"
+              <a href="https://app.treatflow.io/auth/register?lang=de" target="_blank" rel="noopener noreferrer"
                 className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors flex items-center justify-center">
                 14 Tage kostenlos testen
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -111,7 +111,7 @@ export default function KosmetikstudioSoftwareBerlinPage() {
           <h2 className="text-3xl font-bold text-white mb-4">Bereit, dein Berliner Studio zu digitalisieren?</h2>
           <p className="text-indigo-100 mb-6">Teste Treatflow 14 Tage kostenlos – keine Kreditkarte nötig.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://app.treatflow.io/auth/register" target="_blank" rel="noopener noreferrer"
+            <a href="https://app.treatflow.io/auth/register?lang=de" target="_blank" rel="noopener noreferrer"
               className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center">
               14 Tage gratis testen
               <ArrowRight className="ml-2 h-5 w-5" />

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import MobileMenu from "./MobileMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { funktionenGroups, type FunktionenNavItem } from "./funktionenNav";
+import { APP_LOGIN_URL, APP_REGISTER_URL } from "../i18n/market-access";
 
 function FunktionenLink({ item }: { item: FunktionenNavItem }) {
     return (
@@ -118,7 +119,7 @@ export default function Navigation() {
                         <Link href="/#testimonials" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Referenzen</Link>
                         <Link href="/kontakt" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Kontakt</Link>
                         <a
-                            href="https://app.treatflow.io/auth/login"
+                            href={APP_LOGIN_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
@@ -127,7 +128,7 @@ export default function Navigation() {
                         </a>
                         <LanguageSwitcher current="de" />
                         <a
-                            href="https://app.treatflow.io/auth/register"
+                            href={APP_REGISTER_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"

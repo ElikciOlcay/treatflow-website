@@ -57,26 +57,39 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // Brand-Keywords: treatflow login
-      { source: '/login', destination: 'https://app.treatflow.io/auth/login', permanent: true },
+      { source: '/login', destination: 'https://app.treatflow.io/auth/login?lang=de', permanent: true },
 
       // vorhandene Redirects
       { source: '/home', destination: '/', permanent: true },
       { source: '/index', destination: '/', permanent: true },
 
-      // Legacy English-NL Markt → Niederlande
-      { source: '/en-nl', destination: '/nl', permanent: true },
-      { source: '/en-nl/:path*', destination: '/nl/:path*', permanent: true },
+      // Legacy English-NL / Laender-Maerkte → kanonisches Englisch (/en)
+      { source: '/en-nl', destination: '/en', permanent: true },
+      { source: '/en-nl/:path*', destination: '/en/:path*', permanent: true },
+      { source: '/us', destination: '/en', permanent: true },
+      { source: '/us/:path*', destination: '/en/:path*', permanent: true },
+      { source: '/uk', destination: '/en', permanent: true },
+      { source: '/uk/:path*', destination: '/en/:path*', permanent: true },
+      { source: '/nl', destination: '/en', permanent: true },
+      { source: '/nl/:path*', destination: '/en/:path*', permanent: true },
+      { source: '/fi', destination: '/en', permanent: true },
+      { source: '/fi/:path*', destination: '/en/:path*', permanent: true },
+      { source: '/ie', destination: '/en', permanent: true },
+      { source: '/ie/:path*', destination: '/en/:path*', permanent: true },
+      { source: '/ca', destination: '/en', permanent: true },
+      { source: '/ca/:path*', destination: '/en/:path*', permanent: true },
+      { source: '/au', destination: '/en', permanent: true },
+      { source: '/au/:path*', destination: '/en/:path*', permanent: true },
+      { source: '/ae', destination: '/en', permanent: true },
+      { source: '/ae/:path*', destination: '/en/:path*', permanent: true },
 
-      // Legacy Sprach-Locales → Laender-Maerkte (Middleware macht Detail-Mapping;
-      // Fallback-Redirects fuer statische Deploy-Pfade)
-      { source: '/en', destination: '/us', permanent: true },
-      { source: '/en/:path*', destination: '/us/:path*', permanent: true },
-      { source: '/es', destination: '/us', permanent: true },
-      { source: '/es/:path*', destination: '/us/:path*', permanent: true },
-      { source: '/it', destination: '/us', permanent: true },
-      { source: '/it/:path*', destination: '/us/:path*', permanent: true },
-      { source: '/fr', destination: '/us', permanent: true },
-      { source: '/fr/:path*', destination: '/us/:path*', permanent: true },
+      // Legacy Sprach-Locales → Englisch
+      { source: '/es', destination: '/en', permanent: true },
+      { source: '/es/:path*', destination: '/en/:path*', permanent: true },
+      { source: '/it', destination: '/en', permanent: true },
+      { source: '/it/:path*', destination: '/en/:path*', permanent: true },
+      { source: '/fr', destination: '/en', permanent: true },
+      { source: '/fr/:path*', destination: '/en/:path*', permanent: true },
 
       // 404-Fixes: Alte URLs aus Search Console
       { source: '/cookie-richtlinie-eu', destination: '/datenschutz', permanent: true },

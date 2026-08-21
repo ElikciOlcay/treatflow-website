@@ -37,7 +37,7 @@ const COOKIE_TEXTS = {
         intro:
             'We use cookies to give you the best experience on our website. Some cookies are necessary to operate the site, while others help us improve this website and your experience.',
         learnMore: 'Learn more',
-        privacyHref: '/us/privacy',
+        privacyHref: '/en/privacy',
         acceptAll: 'Accept all',
         acceptNecessary: 'Necessary only',
         settings: 'Settings',
@@ -145,7 +145,7 @@ export default function CookieBanner() {
                 ? '/datenschutz'
                 : marketMatch
                   ? `/${marketMatch[1]}/privacy`
-                  : '/us/privacy',
+                  : '/en/privacy',
     };
     const [showBanner, setShowBanner] = useState(false);
     const [showSettings, setShowSettings] = useState(false);

@@ -81,20 +81,25 @@ export default function InternationalSeoPage({
 }: {
   content: InternationalPageContent;
 }) {
-  const locale = content.locale ?? "us";
+  const locale = content.locale ?? "en";
   const earlyAccessHref = getPrimaryCtaPath(locale);
-  const primaryLabel = content.ctaPrimaryLabel ?? "Request early access";
+  const primaryLabel = content.ctaPrimaryLabel ?? "Start free trial";
   const bottomTitle = content.ctaBottomTitle ?? "Ready to modernise your studio?";
   const bottomText =
     content.ctaBottomText ??
-    "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.";
-  const trustTrial = content.trustTrialLabel ?? "Early access available";
+    "Start your free trial – no credit card required, cancel anytime.";
+  const trustTrial = content.trustTrialLabel ?? "14-day free trial";
   const trustBadges = content.trustBadges ?? [
     "GDPR / EU compliant",
     "EU-hosted servers",
     "SSL-encrypted",
     trustTrial,
   ];
+  const isExternalCta = earlyAccessHref.startsWith("http");
+  const CtaTag = isExternalCta ? "a" : Link;
+  const ctaProps = isExternalCta
+    ? { href: earlyAccessHref, target: "_blank", rel: "noopener noreferrer" }
+    : { href: earlyAccessHref };
 
   const serviceSchema = generateServiceSchema({
     name: content.serviceName,
@@ -123,13 +128,13 @@ export default function InternationalSeoPage({
             {content.hero.subtitle}
           </p>
           <div className="flex justify-center">
-            <Link
-              href={earlyAccessHref}
+            <CtaTag
+              {...ctaProps}
               className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors flex items-center justify-center"
             >
               {primaryLabel}
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            </CtaTag>
           </div>
         </div>
 
@@ -351,13 +356,13 @@ export default function InternationalSeoPage({
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">{bottomTitle}</h2>
           <p className="text-indigo-100 text-lg mb-8">{bottomText}</p>
           <div className="flex justify-center">
-            <Link
-              href={earlyAccessHref}
+            <CtaTag
+              {...ctaProps}
               className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 inline-flex items-center justify-center"
             >
               {primaryLabel}
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            </CtaTag>
           </div>
         </div>
       </section>

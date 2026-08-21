@@ -412,7 +412,7 @@ export default function BlogPost() {
                                 kostenlos, ohne Kreditkarte.
                             </p>
                             <a
-                                href="https://app.treatflow.io/auth/register"
+                                href="https://app.treatflow.io/auth/register?lang=de"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors"

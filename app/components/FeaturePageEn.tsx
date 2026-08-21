@@ -2,6 +2,7 @@ import { ArrowRight, CheckCircle, type LucideIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import FaqSectionEn, { type FaqEntry } from "./FaqSectionEn";
+import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 
 export type FeatureItem = {
   icon: LucideIcon;
@@ -37,19 +38,23 @@ export default function FeaturePageEn({
   features,
   closingTitle,
   closingText,
-  earlyAccessHref = "/us/early-access",
-  primaryCta = "Request early access",
+  earlyAccessHref = APP_REGISTER_BY_MARKET.us,
+  primaryCta = "Start 14-day free trial",
   bottomTitle = "Ready to get started?",
-  bottomText = "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+  bottomText = "Start your free trial – no credit card required, cancel anytime.",
   faqs,
   relatedLinks,
   relatedTitle = "Related pages",
   trustItems = [
     "GDPR / EU hosting",
-    "Early access available",
+    "14-day free trial",
     "No commission on bookings",
   ],
 }: FeaturePageProps) {
+  const CtaTag = earlyAccessHref.startsWith("http") ? "a" : Link;
+  const ctaProps = earlyAccessHref.startsWith("http")
+    ? { href: earlyAccessHref, target: "_blank", rel: "noopener noreferrer" }
+    : { href: earlyAccessHref };
   return (
     <>
       <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
@@ -73,13 +78,13 @@ export default function FeaturePageEn({
               ))}
             </ul>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link
-                href={earlyAccessHref}
+              <CtaTag
+                {...ctaProps}
                 className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg"
               >
                 {primaryCta}
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </CtaTag>
             </div>
           </div>
           <div className="order-2 relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[4/3] lg:min-h-[400px] lg:aspect-auto">
@@ -159,13 +164,13 @@ export default function FeaturePageEn({
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">{bottomTitle}</h2>
           <p className="text-indigo-100 text-lg mb-8">{bottomText}</p>
-          <Link
-            href={earlyAccessHref}
+          <CtaTag
+            {...ctaProps}
             className="inline-flex items-center bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg"
           >
             {primaryCta}
             <ArrowRight className="ml-3 h-5 w-5" />
-          </Link>
+          </CtaTag>
         </div>
       </section>
     </>

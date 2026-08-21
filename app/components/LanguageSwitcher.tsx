@@ -1,4 +1,4 @@
 "use client";
 
-// Backward-compatible re-export – UI ist jetzt Laenderauswahl.
+// Backward-compatible re-export – UI ist Sprachauswahl (DE/EN).
 export { default } from "./CountrySwitcher";

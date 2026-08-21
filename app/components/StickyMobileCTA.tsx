@@ -17,6 +17,19 @@ function marketFromPath(pathname: string | null): Market {
   return 'de';
 }
 
+function stickyCopy(market: Market) {
+  if (market === 'nl') {
+    return { cta: 'Gratis proberen', note: '14 dagen gratis · Geen creditcard' };
+  }
+  if (market === 'fi') {
+    return { cta: 'Aloita ilmainen kokeilu', note: '14 päivää ilmaiseksi · Ei luottokorttia' };
+  }
+  if (market === 'de') {
+    return { cta: 'Jetzt kostenlos testen', note: '14 Tage gratis · Keine Kreditkarte' };
+  }
+  return { cta: 'Start free trial', note: '14-day free trial · No credit card' };
+}
+
 export default function StickyMobileCTA() {
   const pathname = usePathname();
   const [visible, setVisible] = useState(false);
@@ -24,15 +37,7 @@ export default function StickyMobileCTA() {
   const market = marketFromPath(pathname);
   const ctaPath = getPrimaryCtaPath(market);
   const external = isExternalCta(market);
-
-  const copy =
-    market === 'nl'
-      ? { cta: 'Vroege toegang aanvragen', note: 'Self-serve in DACH · Vraag aan voor jouw land' }
-      : market === 'fi'
-        ? { cta: 'Pyydä varhaista pääsyä', note: 'Self-serve DACH · Pyydä omaan maahasi' }
-        : market === 'de'
-          ? { cta: 'Jetzt kostenlos testen', note: '14 Tage gratis · Keine Kreditkarte' }
-          : { cta: 'Request early access', note: 'Self-serve in DACH · Request for your country' };
+  const copy = stickyCopy(market);
 
   useEffect(() => {
     if (hideOnLandingPage) return;

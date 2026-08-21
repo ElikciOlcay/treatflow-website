@@ -117,7 +117,7 @@ const about: Record<StaticPageLang, AboutCopy> = {
         desc: "Ontwikkeld en ondersteund in Europa, voor studio's in heel Europa en daarbuiten.",
       },
     ],
-    ctaLabel: "Vraag early access aan",
+    ctaLabel: "Gratis proberen",
   },
   fi: {
     metaTitle: "Tietoa Treatflowista",
@@ -146,7 +146,7 @@ const about: Record<StaticPageLang, AboutCopy> = {
         desc: "Kehitetty ja tuettu Euroopassa, studioille ympäri Euroopan ja sen ulkopuolella.",
       },
     ],
-    ctaLabel: "Pyydä early access",
+    ctaLabel: "Aloita ilmainen kokeilu",
   },
 };
 
@@ -156,16 +156,16 @@ const contact: Record<StaticPageLang, ContactCopy> = {
     metaDescription:
       "Neem contact op met het Treatflow-team. Wij helpen schoonheidssalons en esthetische klinieken met het digitaliseren van afspraken, formulieren en behandeldocumentatie.",
     title: "Contact",
-    body: "Mail ons op hello@treatflow.io of vraag early access aan voor jouw markt.",
-    cta: "Vraag early access aan",
+    body: "Mail ons op hello@treatflow.io of start direct je gratis proefperiode.",
+    cta: "Gratis proberen",
   },
   fi: {
     metaTitle: "Ota yhteyttä Treatflowiin",
     metaDescription:
       "Ota yhteyttä Treatflow-tiimiin. Autamme kauneushoitoloita ja estetiikkaklinikoita digitalisoimaan ajanvaraukset, lomakkeet ja hoitodokumentoinnin.",
     title: "Yhteystiedot",
-    body: "Lähetä sähköpostia osoitteeseen hello@treatflow.io tai pyydä early access markkinallesi.",
-    cta: "Pyydä early access",
+    body: "Lähetä sähköpostia osoitteeseen hello@treatflow.io tai aloita ilmainen kokeilu heti.",
+    cta: "Aloita ilmainen kokeilu",
   },
 };
 

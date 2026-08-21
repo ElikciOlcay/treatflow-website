@@ -370,7 +370,7 @@ export default function BlogPost() {
                                 Überzeuge dich selbst und teste alle Funktionen 14 Tage lang - ohne Kreditkarte, ohne Risiko.
                             </p>
                             <a
-                                href="https://app.treatflow.io/auth/register"
+                                href="https://app.treatflow.io/auth/register?lang=de"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors"
