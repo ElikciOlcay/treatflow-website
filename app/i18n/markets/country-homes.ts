@@ -31,8 +31,8 @@ export type CountryHomeMarket =
   | "ae";
 
 const heroImage = {
-  src: "/images/lifestyle/hero-startseite-kalender.png",
-  alt: "Treatflow appointment calendar open on a laptop in a modern beauty studio",
+  src: "/images/lifestyle/hero-startseite-en.png",
+  alt: "Treatflow on laptop and tablet in a clinic: calendar, checkout and client records",
 };
 
 function softwareSchema(inLanguage: string, path: string, description: string) {

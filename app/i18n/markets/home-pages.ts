@@ -20,8 +20,8 @@ import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 const { Lock, Server, ShieldCheck } = homeTrustIcons;
 
 const heroImage = {
-  src: "/images/lifestyle/hero-startseite-kalender.png",
-  alt: "Treatflow appointment calendar open on a laptop in a modern beauty studio",
+  src: "/images/lifestyle/hero-startseite-en.png",
+  alt: "Treatflow on laptop and tablet in a clinic: calendar, checkout and client records",
 };
 
 function softwareSchema(locale: string, path: string, description: string) {

@@ -449,8 +449,8 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
       },
       images: {
         lifestyle: {
-          src: "/images/lifestyle/hero-startseite-kalender.png",
-          alt: "Treatflow calendar used in a beauty salon",
+          src: "/images/lifestyle/hero-startseite-en.png",
+          alt: "Treatflow on laptop and tablet in a clinic: calendar, checkout and client records",
         },
         mockup: {
           src: "/images/lifestyle/online-buchung-smartphone.png",
