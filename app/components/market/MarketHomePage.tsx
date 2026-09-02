@@ -18,7 +18,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
-import AiAnswerCapsule from "../AiAnswerCapsule";
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "../AiAnswerCapsule";
 import MarketFaqAccordion from "./MarketFaqAccordion";
 import { generateFaqSchema } from "@/lib/schema";
 import { BASE_URL } from "../../i18n/config";
@@ -266,16 +266,17 @@ export default function MarketHomePage({ content }: { content: MarketHomeContent
       </section>
 
       {/* AI answer capsules (Answer Engine Optimization) */}
-      <section className="py-12 bg-white border-b border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {content.aiCapsules.map((capsule, i) => (
-            <AiAnswerCapsule
-              key={capsule.question}
-              question={capsule.question}
-              answer={capsule.answer}
-              className={i === 0 ? "mt-0" : ""}
-            />
-          ))}
+      <section className="pt-14 pb-12 bg-white border-b border-gray-100">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <AiAnswerCapsuleGroup>
+            {content.aiCapsules.map((capsule) => (
+              <AiAnswerCapsule
+                key={capsule.question}
+                question={capsule.question}
+                answer={capsule.answer}
+              />
+            ))}
+          </AiAnswerCapsuleGroup>
         </div>
       </section>
 

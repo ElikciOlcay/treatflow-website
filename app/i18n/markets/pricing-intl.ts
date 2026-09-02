@@ -177,7 +177,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     titleBefore: "Precios simples –",
     titleHighlight: "sin costes ocultos",
     subtitle:
-      "Elige el plan que encaja con tu salón. Solicita acceso anticipado para tu país – el registro directo está disponible en Alemania, Austria y Suiza.",
+      "Elige el plan que encaja con tu salón. Empieza tu prueba gratuita de 14 días – sin tarjeta.",
     monthly: "Mensual",
     yearly: "Anual",
     saveBadge: "Ahorra 10%",
@@ -187,7 +187,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     bookingYearlyHint: "€53/mes • Ahorra €71/año",
     exclVat: "sin IVA",
     popular: "Popular",
-    cta: "Solicitar acceso anticipado",
+    cta: "Start free trial",
     earlyAccessHref: "/es/acceso-anticipado",
     basic: {
       name: "Basic",
@@ -281,14 +281,14 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
         {
           question: "¿Cómo accedo fuera de DACH?",
           answer:
-            "El registro directo está disponible en Alemania, Austria y Suiza. En otros países solicita acceso anticipado.",
+            "Sí. Puedes registrarte en cualquier país y empezar una prueba de 14 días en app.treatflow.io – sin tarjeta.",
         },
       ],
     },
     meta: {
       title: "Precios",
       description:
-        "Precios transparentes de Treatflow: Basic desde 39€/mes, Booking desde 59€/mes. Solicita acceso anticipado.",
+        "Precios transparentes de Treatflow: Basic desde 39€/mes, Booking desde 59€/mes. 14 días de prueba, sin tarjeta.",
     },
   },
   it: {
@@ -296,7 +296,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     titleBefore: "Prezzi semplici –",
     titleHighlight: "nessun costo nascosto",
     subtitle:
-      "Scegli il piano giusto per il tuo centro. Richiedi l'accesso anticipato per il tuo Paese – la registrazione diretta è disponibile in Germania, Austria e Svizzera.",
+      "Scegli il piano giusto per il tuo centro. Inizia la prova gratuita di 14 giorni – nessuna carta di credito.",
     monthly: "Mensile",
     yearly: "Annuale",
     saveBadge: "Risparmi 10%",
@@ -306,7 +306,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     bookingYearlyHint: "€53/mese • Risparmi €71/anno",
     exclVat: "IVA esclusa",
     popular: "Popolare",
-    cta: "Richiedi accesso anticipato",
+    cta: "Start free trial",
     earlyAccessHref: "/it/accesso-anticipato",
     basic: {
       name: "Basic",
@@ -400,14 +400,14 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
         {
           question: "Come accedo fuori dal DACH?",
           answer:
-            "La registrazione diretta è disponibile in Germania, Austria e Svizzera. Negli altri Paesi richiedi l'accesso anticipato.",
+            "Sì. Puoi registrarti in qualsiasi Paese e iniziare una prova di 14 giorni su app.treatflow.io – nessuna carta richiesta.",
         },
       ],
     },
     meta: {
       title: "Prezzi",
       description:
-        "Prezzi trasparenti Treatflow: Basic da 39€/mese, Booking da 59€/mese. Richiedi l'accesso anticipato.",
+        "Prezzi trasparenti Treatflow: Basic da 39€/mese, Booking da 59€/mese. 14 giorni di prova, nessuna carta.",
     },
   },
   fr: {
@@ -415,7 +415,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     titleBefore: "Des tarifs simples –",
     titleHighlight: "sans frais cachés",
     subtitle:
-      "Choisissez l'offre adaptée à votre institut. Demandez un accès anticipé pour votre pays – l'inscription directe est disponible en Allemagne, Autriche et Suisse.",
+      "Choisissez l'offre adaptée à votre institut. Démarrez l'essai gratuit de 14 jours – sans carte bancaire.",
     monthly: "Mensuel",
     yearly: "Annuel",
     saveBadge: "Économisez 10%",
@@ -425,7 +425,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     bookingYearlyHint: "€53/mois • Économisez €71/an",
     exclVat: "HT",
     popular: "Populaire",
-    cta: "Demander un accès anticipé",
+    cta: "Start free trial",
     earlyAccessHref: "/fr/acces-anticipe",
     basic: {
       name: "Basic",
@@ -519,14 +519,14 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
         {
           question: "Comment accéder hors DACH ?",
           answer:
-            "L'inscription directe est disponible en Allemagne, Autriche et Suisse. Dans les autres pays, demandez un accès anticipé.",
+            "Oui. Vous pouvez vous inscrire depuis n'importe quel pays et démarrer un essai de 14 jours sur app.treatflow.io – sans carte bancaire.",
         },
       ],
     },
     meta: {
       title: "Tarifs",
       description:
-        "Tarifs transparents Treatflow : Basic dès 39€/mois, Booking dès 59€/mois. Demandez un accès anticipé.",
+        "Tarifs transparents Treatflow : Basic dès 39€/mois, Booking dès 59€/mois. Essai de 14 jours, sans carte.",
     },
   },
   nl: {
@@ -534,7 +534,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     titleBefore: "Eenvoudige prijzen –",
     titleHighlight: "geen verborgen kosten",
     subtitle:
-      "Kies het plan dat bij jouw studio past. Vraag early access aan voor jouw land – directe registratie is momenteel beschikbaar in Duitsland, Oostenrijk en Zwitserland.",
+      "Kies het plan dat bij jouw studio past. Start direct met 14 dagen gratis – geen creditcard nodig.",
     monthly: "Maandelijks",
     yearly: "Jaarlijks",
     saveBadge: "Bespaar 10%",
@@ -544,8 +544,8 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     bookingYearlyHint: "€53/maand • Bespaar €71/jaar",
     exclVat: "excl. btw",
     popular: "Populair",
-    cta: "Vraag early access aan",
-    earlyAccessHref: "/nl/early-access",
+    cta: "Gratis proberen",
+    earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
     basic: {
       name: "Basic",
       description:
@@ -638,14 +638,14 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
         {
           question: "Hoe krijg ik toegang buiten DACH?",
           answer:
-            "Directe registratie is momenteel beschikbaar in Duitsland, Oostenrijk en Zwitserland. Voor andere landen vraag je early access aan – we onboarden studio's land voor land.",
+            "Ja. Je kunt je wereldwijd registreren en 14 dagen gratis starten op app.treatflow.io – geen creditcard nodig.",
         },
       ],
     },
     meta: {
       title: "Prijzen",
       description:
-        "Transparante Treatflow-prijzen: Basic vanaf €39/maand, Booking vanaf €59/maand. Vraag early access aan voor jouw land.",
+        "Transparante Treatflow-prijzen: Basic vanaf €39/maand, Booking vanaf €59/maand. 14 dagen gratis, geen creditcard nodig.",
     },
   },
   fi: {
@@ -653,7 +653,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     titleBefore: "Yksinkertaiset hinnat –",
     titleHighlight: "ei piilokuluja",
     subtitle:
-      "Valitse studioosi sopiva paketti. Pyydä early access maallesi – suora rekisteröityminen on tällä hetkellä saatavilla Saksassa, Itävallassa ja Sveitsissä.",
+      "Valitse studioosi sopiva paketti. Aloita suoraan 14 päivän ilmaisella kokeilulla – ei luottokorttia.",
     monthly: "Kuukausittain",
     yearly: "Vuosittain",
     saveBadge: "Säästä 10 %",
@@ -663,8 +663,8 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     bookingYearlyHint: "€53/kk • Säästä €71/vuosi",
     exclVat: "ilman ALV:a",
     popular: "Suosituin",
-    cta: "Pyydä early access",
-    earlyAccessHref: "/fi/early-access",
+    cta: "Aloita ilmainen kokeilu",
+    earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
     basic: {
       name: "Basic",
       description:
@@ -757,14 +757,14 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
         {
           question: "Miten saan pääsyn DACH-alueen ulkopuolella?",
           answer:
-            "Suora rekisteröityminen on tällä hetkellä saatavilla Saksassa, Itävallassa ja Sveitsissä. Muissa maissa pyydä early access – otamme studioita käyttöön maa kerrallaan.",
+            "Kyllä. Voit rekisteröityä maailmanlaajuisesti ja aloittaa 14 päivän ilmaisen kokeilun osoitteessa app.treatflow.io – luottokorttia ei tarvita.",
         },
       ],
     },
     meta: {
       title: "Hinnat",
       description:
-        "Läpinäkyvät Treatflow-hinnat: Basic alkaen €39/kk, Booking alkaen €59/kk. Pyydä early access maallesi.",
+        "Läpinäkyvät Treatflow-hinnat: Basic alkaen €39/kk, Booking alkaen €59/kk. 14 päivää ilmaiseksi, ei luottokorttia.",
     },
   },
 };

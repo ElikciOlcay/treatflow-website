@@ -182,6 +182,25 @@ const nextConfig: NextConfig = {
       { source: '/kosmetikstudio-terminplaner/', destination: '/terminkalender', permanent: true },
       { source: '/online-buchung-kosmetikstudio', destination: '/online-buchungen', permanent: true },
       { source: '/online-buchung-kosmetikstudio/', destination: '/online-buchungen', permanent: true },
+
+      // EN keyword aliases → canonical /en pages (no duplicate 200s)
+      { source: '/en/digital-consent-forms', destination: '/en/forms', permanent: true },
+      { source: '/en/consultation-forms', destination: '/en/forms', permanent: true },
+      { source: '/en/appointment-reminders', destination: '/en/messaging', permanent: true },
+      { source: '/en/automated-messages', destination: '/en/messaging', permanent: true },
+      { source: '/en/workflows', destination: '/en/messaging', permanent: true },
+      { source: '/en/before-after-photos', destination: '/en/treatment-documentation', permanent: true },
+      { source: '/en/ai-treatment-notes', destination: '/en/treatment-documentation', permanent: true },
+      { source: '/en/ai-dictation', destination: '/en/treatment-documentation', permanent: true },
+      { source: '/en/google-calendar-integration', destination: '/en/integrations', permanent: true },
+      { source: '/en/zapier-integration', destination: '/en/integrations', permanent: true },
+      { source: '/en/med-spa-software', destination: '/en/aesthetic-clinic-software', permanent: true },
+      { source: '/en/skin-clinic-software', destination: '/en/aesthetic-clinic-software', permanent: true },
+      { source: '/en/spa-software', destination: '/en/spa-wellness-software', permanent: true },
+      { source: '/en/lash-salon-software', destination: '/en/lash-studio-software', permanent: true },
+      { source: '/en/compare/fresha-alternative', destination: '/en/treatflow-vs-fresha', permanent: true },
+      { source: '/en/compare/treatwell-alternative', destination: '/en/treatflow-vs-treatwell', permanent: true },
+      // Further /en/compare/* aliases (Phorest, Vagaro, Booksy, Pabau) wait for verified comparison data.
     ];
   },
 

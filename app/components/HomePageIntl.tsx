@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import AiAnswerCapsule from "./AiAnswerCapsule";
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./AiAnswerCapsule";
 
 export type HomePageIntlContent = {
   locale: string;
@@ -140,16 +140,17 @@ export default function HomePageIntl({ content }: { content: HomePageIntlContent
         </div>
       </section>
 
-      <section className="py-12 bg-white border-b border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {content.aiCapsules.map((capsule, index) => (
-            <AiAnswerCapsule
-              key={capsule.question}
-              question={capsule.question}
-              answer={capsule.answer}
-              className={index === 0 ? "mt-0" : undefined}
-            />
-          ))}
+      <section className="pt-14 pb-12 bg-white border-b border-gray-100">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <AiAnswerCapsuleGroup>
+            {content.aiCapsules.map((capsule) => (
+              <AiAnswerCapsule
+                key={capsule.question}
+                question={capsule.question}
+                answer={capsule.answer}
+              />
+            ))}
+          </AiAnswerCapsuleGroup>
         </div>
       </section>
 

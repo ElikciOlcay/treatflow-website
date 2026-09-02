@@ -7,8 +7,11 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import Link from "next/link";
-import AiAnswerCapsule from "./AiAnswerCapsule";
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./AiAnswerCapsule";
 import FaqSectionEn, { type FaqEntry } from "./FaqSectionEn";
+import Breadcrumbs, { generateBreadcrumbSchema } from "./Breadcrumbs";
+import TreatmentWorkflow, { type WorkflowStep } from "./TreatmentWorkflow";
+import Image from "next/image";
 import { generateServiceSchema } from "@/lib/schema";
 import type { SeoPageKey } from "../i18n/seo";
 import { BASE_URL, type PrefixedMarket } from "../i18n/config";
@@ -73,6 +76,11 @@ export type InternationalPageContent = {
     lifestyle?: PageImage;
     mockup?: PageImage;
   };
+  workflow?: {
+    title: string;
+    subtitle?: string;
+    steps: WorkflowStep[];
+  };
 };
 
 export default function InternationalSeoPage({
@@ -83,13 +91,13 @@ export default function InternationalSeoPage({
   const locale = content.locale ?? "en";
   const earlyAccessHref = getPrimaryCtaPath(locale);
   const primaryLabel = content.ctaPrimaryLabel ?? "Start free trial";
-  const bottomTitle = content.ctaBottomTitle ?? "Ready to modernise your studio?";
+  const bottomTitle = content.ctaBottomTitle ?? "Ready to run your studio in one place?";
   const bottomText =
     content.ctaBottomText ??
     "Start your free trial – no credit card required, cancel anytime.";
   const trustTrial = content.trustTrialLabel ?? "14-day free trial";
   const trustBadges = content.trustBadges ?? [
-    "GDPR / EU compliant",
+    "Designed for GDPR",
     "EU-hosted servers",
     "SSL-encrypted",
     trustTrial,
@@ -99,6 +107,7 @@ export default function InternationalSeoPage({
   const ctaProps = isExternalCta
     ? { href: earlyAccessHref, target: "_blank", rel: "noopener noreferrer" }
     : { href: earlyAccessHref };
+  const homeHref = locale === "en" || String(locale).startsWith("en") ? "/en" : `/${locale}`;
 
   const serviceSchema = generateServiceSchema({
     name: content.serviceName,
@@ -109,14 +118,29 @@ export default function InternationalSeoPage({
   });
 
   return (
-    <>
+    <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateBreadcrumbSchema(
+              [{ label: content.hero.eyebrow, href: content.canonicalPath }],
+              homeHref
+            )
+          ),
+        }}
+      />
+      <Breadcrumbs
+        homeHref={homeHref}
+        items={[{ label: content.hero.eyebrow }]}
+      />
 
       {/* Hero */}
-      <section className="pt-28 pb-16 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+      <section className="pt-8 pb-16 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
             {content.hero.eyebrow}
@@ -136,13 +160,15 @@ export default function InternationalSeoPage({
           </div>
         </div>
 
-        {content.aiCapsules.map((capsule) => (
-          <AiAnswerCapsule
-            key={capsule.question}
-            question={capsule.question}
-            answer={capsule.answer}
-          />
-        ))}
+        <AiAnswerCapsuleGroup className="mt-12 px-4 sm:px-6 lg:px-8">
+          {content.aiCapsules.map((capsule) => (
+            <AiAnswerCapsule
+              key={capsule.question}
+              question={capsule.question}
+              answer={capsule.answer}
+            />
+          ))}
+        </AiAnswerCapsuleGroup>
       </section>
 
       {/* What is Treatflow */}
@@ -192,6 +218,14 @@ export default function InternationalSeoPage({
         </div>
       </section>
 
+      {content.workflow && content.workflow.steps.length > 0 && (
+        <TreatmentWorkflow
+          title={content.workflow.title}
+          subtitle={content.workflow.subtitle}
+          steps={content.workflow.steps}
+        />
+      )}
+
       {/* Features */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -214,6 +248,35 @@ export default function InternationalSeoPage({
           </div>
         </div>
       </section>
+
+      {(content.images?.lifestyle || content.images?.mockup) && (
+        <section className="py-16 bg-white">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-2">
+            {content.images.lifestyle && (
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src={content.images.lifestyle.src}
+                  alt={content.images.lifestyle.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+            )}
+            {content.images.mockup && (
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src={content.images.mockup.src}
+                  alt={content.images.mockup.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Benefits */}
       <section className="py-16 bg-white">
@@ -346,7 +409,7 @@ export default function InternationalSeoPage({
         </section>
       )}
 
-      <FaqSectionEn faqs={content.faqs} />
+      {content.faqs.length > 0 && <FaqSectionEn faqs={content.faqs} />}
 
       {/* CTA */}
       <section className="py-20 bg-indigo-600">
@@ -364,6 +427,6 @@ export default function InternationalSeoPage({
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }

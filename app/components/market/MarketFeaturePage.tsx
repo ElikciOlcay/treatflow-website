@@ -2,7 +2,7 @@ import { ArrowRight, CheckCircle, Clock, Users, Smartphone, Shield, Sparkles, Se
 import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
-import AiAnswerCapsule from "../AiAnswerCapsule";
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "../AiAnswerCapsule";
 import FaqSectionEn from "../FaqSectionEn";
 import { generateServiceSchema } from "@/lib/schema";
 import { BASE_URL, isPrefixedMarket, type PrefixedMarket } from "../../i18n/config";
@@ -149,13 +149,17 @@ export default function MarketFeaturePage({
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               {content.hero.subtitle}
             </p>
-            {content.aiCapsules.map((capsule) => (
-              <AiAnswerCapsule
-                key={capsule.question}
-                question={capsule.question}
-                answer={capsule.answer}
-              />
-            ))}
+            {content.aiCapsules.length > 0 && (
+              <AiAnswerCapsuleGroup className="mt-10 text-left">
+                {content.aiCapsules.map((capsule) => (
+                  <AiAnswerCapsule
+                    key={capsule.question}
+                    question={capsule.question}
+                    answer={capsule.answer}
+                  />
+                ))}
+              </AiAnswerCapsuleGroup>
+            )}
           </div>
 
           {content.images?.lifestyle && (

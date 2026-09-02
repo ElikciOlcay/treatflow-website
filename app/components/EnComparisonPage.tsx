@@ -34,7 +34,7 @@ export default function EnComparisonPage({ content }: { content: EnComparisonCon
   };
 
   return (
-    <>
+    <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -120,6 +120,6 @@ export default function EnComparisonPage({ content }: { content: EnComparisonCon
           </p>
         </div>
       </section>
-    </>
+    </main>
   );
 }

@@ -15,6 +15,42 @@ import NavigationEn from "@/app/components/NavigationEn";
 import FooterEn from "@/app/components/FooterEn";
 import HtmlLang from "@/app/components/HtmlLang";
 
+const enOrganizationSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${BASE_URL}/en#organization`,
+      name: "Treatflow",
+      url: BASE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/images/logos/treatflow-logo.svg`,
+      },
+      description:
+        "Software for beauty salons, aesthetic clinics and treatment-focused businesses. Online booking, client records, digital forms and treatment documentation. Hosted in the EU.",
+      sameAs: ["https://www.instagram.com/treatflow.io/"],
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        email: "hello@treatflow.io",
+        availableLanguage: ["English", "German"],
+        areaServed: "EU",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${BASE_URL}/en#website`,
+      url: `${BASE_URL}/en`,
+      name: "Treatflow",
+      description:
+        "All-in-one software for beauty salons and aesthetic clinics: booking, records, forms and treatment documentation.",
+      publisher: { "@id": `${BASE_URL}/en#organization` },
+      inLanguage: "en",
+    },
+  ],
+};
+
 export function generateStaticParams() {
   return prefixedMarkets.map((market) => ({ market }));
 }
@@ -35,7 +71,7 @@ export async function generateMetadata({
       template: "%s | Treatflow",
     },
     description:
-      "Manage appointments, online booking without commission, client records, consent forms and treatment documentation – all in one app. GDPR-ready EU hosting. 14-day free trial.",
+      "Treatflow is software for beauty salons and aesthetic clinics: online booking, client records, digital forms, treatment documentation and automated follow-ups. Hosted in the EU. 14-day free trial.",
     alternates: {
       canonical: `${BASE_URL}${prefix}`,
       ...buildHreflangAlternates("home"),
@@ -63,6 +99,10 @@ export default async function MarketLayout({
 
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(enOrganizationSchema) }}
+      />
       <HtmlLang lang={htmlLangTags[market]} />
       <NavigationEn dict={dict} locale={market} />
       {children}

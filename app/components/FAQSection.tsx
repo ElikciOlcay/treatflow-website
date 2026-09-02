@@ -46,6 +46,42 @@ const faqsDe: { question: string; answer: ReactNode }[] = [
 
 const faqsEn: { question: string; answer: ReactNode }[] = [
     {
+        question: "What is Treatflow?",
+        answer: "Treatflow is software for beauty salons and aesthetic clinics that combines online booking, client records, digital consent forms, treatment documentation and automated client communication in one platform.",
+    },
+    {
+        question: "Who is Treatflow for?",
+        answer: "Treatflow is for beauty salons, aesthetic clinics, laser hair removal clinics, med spas, skin clinics, permanent makeup studios, lash and nail studios, massage and wellness businesses, and similar treatment-based studios.",
+    },
+    {
+        question: "Can clients complete consultation forms before their appointment?",
+        answer: <>Yes. Treatflow can send digital <Link href="/en/forms" className="text-indigo-600 hover:underline">consultation or consent forms</Link> before an appointment, so the client can complete them before arriving.</>,
+    },
+    {
+        question: "Can I store before-and-after photos?",
+        answer: <>Yes. Treatment photos can be stored in the <Link href="/en/treatment-documentation" className="text-indigo-600 hover:underline">treatment history</Link> so documentation stays connected to the client and appointment.</>,
+    },
+    {
+        question: "Can I dictate treatment notes?",
+        answer: <>Yes. In <Link href="/en/treatment-documentation" className="text-indigo-600 hover:underline">treatment documentation</Link> you can speak notes instead of typing. Treatflow turns speech into text and can refine it with AI.</>,
+    },
+    {
+        question: "Does Treatflow support online booking?",
+        answer: <>Yes. Clients book on your own Treatflow booking page. There is no marketplace commission. See <Link href="/en/online-booking" className="text-indigo-600 hover:underline">online booking</Link>.</>,
+    },
+    {
+        question: "Can Treatflow send appointment reminders?",
+        answer: <>Yes. Automatic SMS and email reminders are part of the Booking plan. See <Link href="/en/messaging" className="text-indigo-600 hover:underline">messaging and reminders</Link>.</>,
+    },
+    {
+        question: "Does Treatflow work internationally?",
+        answer: "Yes. You can register worldwide and start a 14-day free trial. Treatflow is hosted on EU servers. Some payment and POS features depend on the country.",
+    },
+    {
+        question: "Can multiple employees use Treatflow?",
+        answer: "Yes. The calendar, client records and documentation are shared across the team, so colleagues see the same history when they take over a client.",
+    },
+    {
         question: "How long can I try Treatflow for free?",
         answer: "You can try Treatflow for 14 days, no credit card and no hidden fees. After the trial you decide whether to continue.",
     },
@@ -54,32 +90,12 @@ const faqsEn: { question: string; answer: ReactNode }[] = [
         answer: <>Basic (€39/month) includes unlimited <Link href="/en/client-records" className="text-indigo-600 hover:underline">client records</Link>, form templates and the form shop. Booking (€59/month) adds the <Link href="/en/appointment-calendar" className="text-indigo-600 hover:underline">appointment calendar</Link>, online booking without commission and automatic <Link href="/en/messaging" className="text-indigo-600 hover:underline">reminders</Link>.</>,
     },
     {
-        question: "Is Treatflow GDPR compliant?",
+        question: "Is Treatflow designed for GDPR?",
         answer: <>Treatflow is hosted on EU servers in Frankfurt, uses SSL encryption and daily backups. <Link href="/en/forms" className="text-indigo-600 hover:underline">Consent forms</Link> and <Link href="/en/treatment-documentation" className="text-indigo-600 hover:underline">treatment documentation</Link> sit on the client record.</>,
-    },
-    {
-        question: "Can I import my existing client data?",
-        answer: <>Yes. We help you migrate existing clients into the <Link href="/en/client-records" className="text-indigo-600 hover:underline">digital client record</Link> at no extra cost.</>,
-    },
-    {
-        question: "Does Treatflow work on a phone?",
-        answer: "Yes. Treatflow runs in the browser on computer, tablet and smartphone. No install required.",
-    },
-    {
-        question: "What happens to my data if I cancel?",
-        answer: "You stay in control. You can export your data. We only delete it after a transition period.",
-    },
-    {
-        question: "Do I need technical skills?",
-        answer: "No. Sign in in the browser and start. If you get stuck, our support team helps.",
     },
     {
         question: "Does Treatflow charge a booking commission?",
         answer: "No. Treatflow is studio software, not a marketplace. You pay a monthly plan and keep 100% of booking revenue.",
-    },
-    {
-        question: "Can I manage unlimited clients?",
-        answer: "Yes. There is no client cap. The system scales from solo studios to teams.",
     },
 ];
 

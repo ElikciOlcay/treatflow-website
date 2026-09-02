@@ -15,8 +15,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     pageKey: "forms",
     locale: market,
-    title: "Digital Intake & Consent Forms",
-    description: "Digital intake and consent forms your clients fill in before the appointment. Secure signatures, no paperwork.",
+    title: "Digital Consultation and Consent Forms",
+    description: "Send consultation and consent forms before the appointment. Clients complete them on their phone, including a digital signature, stored on the client record.",
   });
 }
 

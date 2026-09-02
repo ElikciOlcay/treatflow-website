@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
-import FeaturePageEn from "@/app/components/FeaturePageEn";
+import FeaturesPageEn from "@/app/components/FeaturesPageEn";
 import { buildPageMetadata } from "@/app/i18n/seo";
-import { getMarketExtraFeaturePage } from "@/app/i18n/markets/market-content";
 import { isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
 
 export async function generateMetadata({
@@ -12,12 +11,12 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
-  const content = getMarketExtraFeaturePage(market, "features");
   return buildPageMetadata({
     pageKey: "features",
     locale: market,
-    title: content.title,
-    description: content.subtitle,
+    title: "Features for Salons and Clinics",
+    description:
+      "Appointment calendar, online booking without commission, client records, digital consent forms, treatment documentation with voice dictation, reminders and integrations – in one studio system.",
   });
 }
 
@@ -28,6 +27,5 @@ export default async function Page({
 }) {
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) notFound();
-  const market = raw as PrefixedMarket;
-  return <FeaturePageEn {...getMarketExtraFeaturePage(market, "features")} />;
+  return <FeaturesPageEn />;
 }

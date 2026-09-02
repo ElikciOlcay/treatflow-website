@@ -167,7 +167,7 @@ const localeShell: Record<
     marketLabel: "Global",
     areaServed: ["EU", "International"],
     ctaPrimaryLabel: "Start free trial",
-    ctaBottomTitle: "Ready to modernise your studio?",
+    ctaBottomTitle: "Ready to run your studio in one place?",
     ctaBottomText:
       "Start a 14-day free trial worldwide – no credit card required. Cancel anytime.",
     trustTrialLabel: "14-day free trial",
@@ -181,10 +181,10 @@ const localeShell: Record<
   es: {
     marketLabel: "España & LATAM",
     areaServed: ["ES", "MX", "AR", "EU"],
-    ctaPrimaryLabel: "Solicitar acceso anticipado",
+    ctaPrimaryLabel: "Start free trial",
     ctaBottomTitle: "¿Listo para digitalizar tu salón?",
     ctaBottomText:
-      "Solicita acceso anticipado para tu país. El registro directo está disponible actualmente en Alemania, Austria y Suiza.",
+      "Empieza tu prueba gratuita de 14 días – sin tarjeta, cancela cuando quieras.",
     trustTrialLabel: "Acceso anticipado disponible",
     internalLinksTitle: "Páginas relacionadas",
     problemsTitle: "¿Qué problemas resuelve Treatflow?",
@@ -196,10 +196,10 @@ const localeShell: Record<
   it: {
     marketLabel: "Italia",
     areaServed: ["IT", "EU"],
-    ctaPrimaryLabel: "Richiedi accesso anticipato",
+    ctaPrimaryLabel: "Start free trial",
     ctaBottomTitle: "Pronto a digitalizzare il tuo centro?",
     ctaBottomText:
-      "Richiedi l'accesso anticipato per il tuo Paese. La registrazione diretta è attualmente disponibile in Germania, Austria e Svizzera.",
+      "Inizia la prova gratuita di 14 giorni – nessuna carta, disdici quando vuoi.",
     trustTrialLabel: "Accesso anticipato disponibile",
     internalLinksTitle: "Pagine correlate",
     problemsTitle: "Quali problemi risolve Treatflow?",
@@ -211,10 +211,10 @@ const localeShell: Record<
   fr: {
     marketLabel: "France & francophonie",
     areaServed: ["FR", "BE", "LU", "CA", "EU"],
-    ctaPrimaryLabel: "Demander un accès anticipé",
+    ctaPrimaryLabel: "Start free trial",
     ctaBottomTitle: "Prêt à digitaliser votre institut ?",
     ctaBottomText:
-      "Demandez un accès anticipé pour votre pays. L'inscription directe est actuellement disponible en Allemagne, Autriche et Suisse.",
+      "Démarrez l'essai gratuit de 14 jours – sans carte, résiliable à tout moment.",
     trustTrialLabel: "Accès anticipé disponible",
     internalLinksTitle: "Pages associées",
     problemsTitle: "Quels problèmes Treatflow résout-il ?",
@@ -245,6 +245,8 @@ type PageBody = {
   faqs: { question: string; answer: string }[];
   siblingKeys: IndustryPageKey[];
   featureKeys: FeatureSlugKey[];
+  workflow?: InternationalPageContent["workflow"];
+  images?: InternationalPageContent["images"];
 };
 
 function buildPage(
@@ -317,6 +319,8 @@ function buildPage(
     faqs: body.faqs,
     internalLinksTitle: shell.internalLinksTitle,
     internalLinks,
+    workflow: body.workflow,
+    images: body.images,
   };
 }
 
@@ -379,7 +383,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         { icon: Link2, title: "Online booking", desc: "Personal booking page, 24/7, no commission." },
         { icon: Users, title: "Client records", desc: "Profiles, history and notes in one place." },
         { icon: ClipboardCheck, title: "Consent forms", desc: "Digital intake before every treatment." },
-        { icon: FileText, title: "Treatment notes", desc: "Structured documentation per visit." },
+        { icon: FileText, title: "Treatment notes", desc: "Structured documentation per visit, including voice dictation." },
         { icon: Camera, title: "Photo documentation", desc: "Before/after photos linked to clients." },
         { icon: Bell, title: "Reminders", desc: "SMS and email to reduce no-shows." },
       ],
@@ -388,7 +392,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         "Better client experience from first booking",
         "Structured records for team handovers",
         "Modern digital workflows in one app",
-        "GDPR-compliant hosting in the EU",
+        "Hosted in the EU and designed to support GDPR",
       ],
       marketTitle: "Why salons choose Treatflow",
       marketParas: [
@@ -399,10 +403,10 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         "Digital client records with treatment history",
         "Consent forms and intake completed before visits",
         "Treatment notes and photo documentation",
-        "GDPR-compliant EU hosting",
+        "EU hosting, designed to support GDPR",
       ],
       aiSummary:
-        "Treatflow is beauty salon software with online booking, client records, consent forms, treatment notes, photo documentation and reminders. For beauty salons, day spas and skin care studios. GDPR-compliant EU hosting.",
+        "Treatflow is beauty salon software with online booking, client records, consent forms, treatment notes, photo documentation and reminders. For beauty salons, day spas and skin care studios. Hosted in the EU.",
       faqs: [
         {
           question: "What is Treatflow?",
@@ -424,9 +428,35 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
           answer:
             "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
+        {
+          question: "Can a beauty salon send reminders and rebook clients in Treatflow?",
+          answer:
+            "Yes. Automatic SMS and email reminders are part of the Booking plan. Follow-ups help clients book the next visit on your own booking page.",
+        },
       ],
       siblingKeys: ["aesthetic-clinic-software", "nail-salon-software", "spa-wellness-software"],
-      featureKeys: ["online-booking", "client-records", "treatment-documentation", "pricing"],
+      featureKeys: ["online-booking", "client-records", "forms", "pricing"],
+      workflow: {
+        title: "How a beauty salon uses Treatflow",
+        subtitle: "From the first booking to the next visit, the salon stays in one system.",
+        steps: [
+          { href: "/en/online-booking", label: "Client books online", desc: "The client uses your booking link. The slot appears in the studio calendar." },
+          { href: "/en/forms", label: "Forms before arrival", desc: "Intake or consent can be sent before the appointment so the front desk is not collecting paper." },
+          { href: "/en/client-records", label: "Open the client profile", desc: "Notes, history and previous products are on one record." },
+          { href: "/en/treatment-documentation", label: "Document the visit", desc: "Treatment notes, optional voice dictation and photos stay attached to this appointment." },
+          { href: "/en/messaging", label: "Remind and rebook", desc: "Automatic reminders reduce no-shows. Follow-ups help the client book again." },
+        ],
+      },
+      images: {
+        lifestyle: {
+          src: "/images/lifestyle/hero-startseite-kalender.png",
+          alt: "Treatflow calendar used in a beauty salon",
+        },
+        mockup: {
+          src: "/images/lifestyle/online-buchung-smartphone.png",
+          alt: "Client booking a salon appointment on a phone",
+        },
+      },
     }),
     es: buildPage("es", "beauty-salon-software", {
       serviceName: "Software para salones de belleza",
@@ -519,7 +549,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "¿Cómo empiezo?",
           answer:
-            "Solicita acceso anticipado para tu país. El registro directo está disponible en Alemania, Austria y Suiza.",
+            "Regístrate en app.treatflow.io y empieza 14 días de prueba. Sin tarjeta. Disponible en todo el mundo.",
         },
         {
           question: "¿Dónde se alojan mis datos?",
@@ -620,7 +650,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Come inizio?",
           answer:
-            "Richiedi l'accesso anticipato per il tuo Paese. La registrazione diretta è disponibile in Germania, Austria e Svizzera.",
+            "Registrati su app.treatflow.io e inizia 14 giorni di prova. Nessuna carta. Disponibile in tutto il mondo.",
         },
         {
           question: "Dove sono ospitati i miei dati?",
@@ -721,7 +751,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Comment commencer ?",
           answer:
-            "Demandez un accès anticipé pour votre pays. L'inscription directe est disponible en Allemagne, Autriche et Suisse.",
+            "Inscrivez-vous sur app.treatflow.io et démarrez 14 jours d'essai. Sans carte. Disponible partout.",
         },
         {
           question: "Où sont hébergées mes données ?",
@@ -784,7 +814,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
       ],
       features: [
-        { icon: FileText, title: "Treatment documentation", desc: "Notes, protocols and history." },
+        { icon: FileText, title: "Treatment documentation", desc: "Notes, voice dictation, protocols and history." },
         { icon: ClipboardCheck, title: "Consent forms", desc: "Digital consent with secure storage." },
         { icon: Camera, title: "Photo documentation", desc: "Clinical photos per visit." },
         { icon: Users, title: "Client records", desc: "Full aesthetic history in one profile." },
@@ -796,7 +826,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         "Clear consent trail for every procedure",
         "Less admin between front desk and treatment rooms",
         "Professional client experience from first booking",
-        "GDPR-compliant EU hosting",
+        "Hosted in the EU and designed to support GDPR",
       ],
       marketTitle: "Why aesthetic clinics choose Treatflow",
       marketParas: [
@@ -807,10 +837,10 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         "Digital client records with treatment history",
         "Consent forms and intake completed before visits",
         "Treatment notes and photo documentation",
-        "GDPR-compliant EU hosting",
+        "EU hosting, designed to support GDPR",
       ],
       aiSummary:
-        "Treatflow is aesthetic clinic software with treatment documentation, consent forms, client records, photo documentation and online booking. For aesthetic clinics and medical aesthetics studios. GDPR-compliant.",
+        "Treatflow is aesthetic clinic software with treatment documentation, consent forms, client records, photo documentation and online booking. For aesthetic clinics and medical aesthetics studios. Hosted in the EU.",
       faqs: [
         {
           question: "What is Treatflow?",
@@ -832,9 +862,35 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
           answer:
             "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
+        {
+          question: "Can aesthetic clinics store before-and-after photos?",
+          answer:
+            "Yes. Photo sets are attached to the treatment visit and stay on the client record, so the next practitioner can compare progress.",
+        },
       ],
       siblingKeys: ["beauty-salon-software", "laser-hair-removal-software", "permanent-makeup-software"],
       featureKeys: ["client-records", "forms", "treatment-documentation", "pricing"],
+      workflow: {
+        title: "How an aesthetic clinic uses Treatflow",
+        subtitle: "Structured history, consent, documentation and follow-up for the whole team.",
+        steps: [
+          { href: "/en/online-booking", label: "Consultation booking", desc: "The client books a consultation or treatment on your clinic booking page." },
+          { href: "/en/forms", label: "Consultation and consent", desc: "Digital intake and consent are completed before the procedure and stored on the record." },
+          { href: "/en/client-records", label: "Structured client history", desc: "Previous treatments, notes and contraindications are visible to every practitioner." },
+          { href: "/en/treatment-documentation", label: "Document and photograph", desc: "Session notes, optional voice dictation and before-and-after photos stay attached to the visit." },
+          { href: "/en/messaging", label: "Follow-up", desc: "Reminders and aftercare messages keep the next appointment in the calendar." },
+        ],
+      },
+      images: {
+        lifestyle: {
+          src: "/images/lifestyle/formulare-digital-ausfuellen.png",
+          alt: "Digital consent form completed on a tablet in an aesthetic clinic",
+        },
+        mockup: {
+          src: "/images/lifestyle/dokumentation-vorher-nachher.png",
+          alt: "Before and after treatment photos stored in Treatflow",
+        },
+      },
     }),
     es: buildPage("es", "aesthetic-clinic-software", {
       serviceName: "Software para clínicas estéticas",
@@ -927,7 +983,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "¿Cómo empiezo?",
           answer:
-            "Solicita acceso anticipado para tu país. El registro directo está disponible en Alemania, Austria y Suiza.",
+            "Regístrate en app.treatflow.io y empieza 14 días de prueba. Sin tarjeta. Disponible en todo el mundo.",
         },
         {
           question: "¿Cumple el RGPD?",
@@ -1028,7 +1084,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Come inizio?",
           answer:
-            "Richiedi l'accesso anticipato per il tuo Paese. La registrazione diretta è disponibile in Germania, Austria e Svizzera.",
+            "Registrati su app.treatflow.io e inizia 14 giorni di prova. Nessuna carta. Disponibile in tutto il mondo.",
         },
         {
           question: "È conforme al GDPR?",
@@ -1129,7 +1185,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Comment commencer ?",
           answer:
-            "Demandez un accès anticipé pour votre pays. L'inscription directe est disponible en Allemagne, Autriche et Suisse.",
+            "Inscrivez-vous sur app.treatflow.io et démarrez 14 jours d'essai. Sans carte. Disponible partout.",
         },
         {
           question: "Est-ce conforme au RGPD ?",
@@ -1192,7 +1248,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
       ],
       features: [
-        { icon: Zap, title: "Session tracking", desc: "Document each session with notes." },
+        { icon: Zap, title: "Session tracking", desc: "Document each session with notes, including voice dictation." },
         { icon: ClipboardCheck, title: "Consent & intake", desc: "Skin type and contraindications on file." },
         { icon: Camera, title: "Photo documentation", desc: "Progress photos per area." },
         { icon: Calendar, title: "Series scheduling", desc: "Plan follow-up appointments." },
@@ -1204,7 +1260,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         "Structured consent for every new client",
         "Less manual follow-up on missed sessions",
         "Professional documentation for team consistency",
-        "GDPR-compliant EU hosting",
+        "Hosted in the EU and designed to support GDPR",
       ],
       marketTitle: "Why laser studios choose Treatflow",
       marketParas: [
@@ -1215,10 +1271,10 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         "Session history in digital client records",
         "Consent forms before treatment series",
         "Photo documentation and reminders",
-        "GDPR-compliant EU hosting",
+        "EU hosting, designed to support GDPR",
       ],
       aiSummary:
-        "Treatflow is laser hair removal software with session tracking, consent forms, photo documentation, online booking and reminders. For laser and IPL studios. GDPR-compliant.",
+        "Treatflow is laser hair removal software with session tracking, consent forms, photo documentation, online booking and reminders. For laser and IPL studios. Hosted in the EU.",
       faqs: [
         {
           question: "What is Treatflow?",
@@ -1240,9 +1296,35 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
           answer:
             "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
+        {
+          question: "Can Treatflow store treated areas and session notes for laser?",
+          answer:
+            "Yes. Each session can include parameters, treated areas, notes and photos on the client record. You can type notes or dictate them by voice. The next appointment in the series starts with a complete history.",
+        },
       ],
       siblingKeys: ["beauty-salon-software", "aesthetic-clinic-software", "spa-wellness-software"],
       featureKeys: ["online-booking", "treatment-documentation", "forms", "pricing"],
+      workflow: {
+        title: "How a laser clinic uses Treatflow",
+        subtitle: "Each session builds on the last: consent, treated areas, notes, photos and the next booking.",
+        steps: [
+          { href: "/en/online-booking", label: "Client books a session", desc: "New and returning clients book on your own link, including follow-up slots." },
+          { href: "/en/forms", label: "Consultation form and consent", desc: "Intake and consent are completed before the first session and stored on the record." },
+          { href: "/en/client-records", label: "Review client history", desc: "Skin type notes, previous settings and treated areas are on one profile." },
+          { href: "/en/treatment-documentation", label: "Document this session", desc: "Parameters, treated areas, session notes (typed or dictated) and photos stay with the visit." },
+          { href: "/en/messaging", label: "Follow-up the series", desc: "Reminders bring the client back for the next appointment in the series." },
+        ],
+      },
+      images: {
+        lifestyle: {
+          src: "/images/lifestyle/dokumentation-vorher-nachher.png",
+          alt: "Laser treatment documentation with before and after photos",
+        },
+        mockup: {
+          src: "/images/lifestyle/formulare-digital-ausfuellen.png",
+          alt: "Digital consent form for a laser hair removal appointment",
+        },
+      },
     }),
     es: buildPage("es", "laser-hair-removal-software", {
       serviceName: "Software de depilación láser",
@@ -1335,7 +1417,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "¿Cómo empiezo?",
           answer:
-            "Solicita acceso anticipado para tu país. El registro directo está disponible en Alemania, Austria y Suiza.",
+            "Regístrate en app.treatflow.io y empieza 14 días de prueba. Sin tarjeta. Disponible en todo el mundo.",
         },
         {
           question: "¿Dónde se alojan los datos?",
@@ -1437,7 +1519,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Come inizio?",
           answer:
-            "Richiedi l'accesso anticipato per il tuo Paese. La registrazione diretta è disponibile in Germania, Austria e Svizzera.",
+            "Registrati su app.treatflow.io e inizia 14 giorni di prova. Nessuna carta. Disponibile in tutto il mondo.",
         },
         {
           question: "Dove sono i dati?",
@@ -1539,7 +1621,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Comment commencer ?",
           answer:
-            "Demandez un accès anticipé pour votre pays. L'inscription directe est disponible en Allemagne, Autriche et Suisse.",
+            "Inscrivez-vous sur app.treatflow.io et démarrez 14 jours d'essai. Sans carte. Disponible partout.",
         },
         {
           question: "Où sont hébergées les données ?",
@@ -1746,7 +1828,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "¿Cómo empiezo?",
           answer:
-            "Solicita acceso anticipado para tu país. El registro directo está disponible en Alemania, Austria y Suiza.",
+            "Regístrate en app.treatflow.io y empieza 14 días de prueba. Sin tarjeta. Disponible en todo el mundo.",
         },
         {
           question: "¿Dónde se alojan los datos?",
@@ -1848,7 +1930,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Come inizio?",
           answer:
-            "Richiedi l'accesso anticipato per il tuo Paese. La registrazione diretta è disponibile in Germania, Austria e Svizzera.",
+            "Registrati su app.treatflow.io e inizia 14 giorni di prova. Nessuna carta. Disponibile in tutto il mondo.",
         },
         {
           question: "Dove sono i dati?",
@@ -1950,7 +2032,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Comment commencer ?",
           answer:
-            "Demandez un accès anticipé pour votre pays. L'inscription directe est disponible en Allemagne, Autriche et Suisse.",
+            "Inscrivez-vous sur app.treatflow.io et démarrez 14 jours d'essai. Sans carte. Disponible partout.",
         },
         {
           question: "Où sont hébergées les données ?",
@@ -2157,7 +2239,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "¿Cómo empiezo?",
           answer:
-            "Solicita acceso anticipado para tu país. El registro directo está disponible en Alemania, Austria y Suiza.",
+            "Regístrate en app.treatflow.io y empieza 14 días de prueba. Sin tarjeta. Disponible en todo el mundo.",
         },
         {
           question: "¿Dónde se alojan los datos?",
@@ -2259,7 +2341,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Come inizio?",
           answer:
-            "Richiedi l'accesso anticipato per il tuo Paese. La registrazione diretta è disponibile in Germania, Austria e Svizzera.",
+            "Registrati su app.treatflow.io e inizia 14 giorni di prova. Nessuna carta. Disponibile in tutto il mondo.",
         },
         {
           question: "Dove sono i dati?",
@@ -2361,7 +2443,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Comment commencer ?",
           answer:
-            "Demandez un accès anticipé pour votre pays. L'inscription directe est disponible en Allemagne, Autriche et Suisse.",
+            "Inscrivez-vous sur app.treatflow.io et démarrez 14 jours d'essai. Sans carte. Disponible partout.",
         },
         {
           question: "Où sont hébergées les données ?",
@@ -2568,7 +2650,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "¿Cómo empiezo?",
           answer:
-            "Solicita acceso anticipado para tu país. El registro directo está disponible en Alemania, Austria y Suiza.",
+            "Regístrate en app.treatflow.io y empieza 14 días de prueba. Sin tarjeta. Disponible en todo el mundo.",
         },
         {
           question: "¿Dónde se alojan los datos?",
@@ -2670,7 +2752,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Come inizio?",
           answer:
-            "Richiedi l'accesso anticipato per il tuo Paese. La registrazione diretta è disponibile in Germania, Austria e Svizzera.",
+            "Registrati su app.treatflow.io e inizia 14 giorni di prova. Nessuna carta. Disponibile in tutto il mondo.",
         },
         {
           question: "Dove sono i dati?",
@@ -2772,7 +2854,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Comment commencer ?",
           answer:
-            "Demandez un accès anticipé pour votre pays. L'inscription directe est disponible en Allemagne, Autriche et Suisse.",
+            "Inscrivez-vous sur app.treatflow.io et démarrez 14 jours d'essai. Sans carte. Disponible partout.",
         },
         {
           question: "Où sont hébergées les données ?",
@@ -2979,7 +3061,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "¿Cómo empiezo?",
           answer:
-            "Solicita acceso anticipado para tu país. El registro directo está disponible en Alemania, Austria y Suiza.",
+            "Regístrate en app.treatflow.io y empieza 14 días de prueba. Sin tarjeta. Disponible en todo el mundo.",
         },
         {
           question: "¿Dónde se alojan los datos?",
@@ -3081,7 +3163,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Come inizio?",
           answer:
-            "Richiedi l'accesso anticipato per il tuo Paese. La registrazione diretta è disponibile in Germania, Austria e Svizzera.",
+            "Registrati su app.treatflow.io e inizia 14 giorni di prova. Nessuna carta. Disponibile in tutto il mondo.",
         },
         {
           question: "Dove sono i dati?",
@@ -3183,7 +3265,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Comment commencer ?",
           answer:
-            "Demandez un accès anticipé pour votre pays. L'inscription directe est disponible en Allemagne, Autriche et Suisse.",
+            "Inscrivez-vous sur app.treatflow.io et démarrez 14 jours d'essai. Sans carte. Disponible partout.",
         },
         {
           question: "Où sont hébergées les données ?",
@@ -3390,7 +3472,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "¿Cómo empiezo?",
           answer:
-            "Solicita acceso anticipado para tu país. El registro directo está disponible en Alemania, Austria y Suiza.",
+            "Regístrate en app.treatflow.io y empieza 14 días de prueba. Sin tarjeta. Disponible en todo el mundo.",
         },
         {
           question: "¿Dónde se alojan los datos?",
@@ -3492,7 +3574,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Come inizio?",
           answer:
-            "Richiedi l'accesso anticipato per il tuo Paese. La registrazione diretta è disponibile in Germania, Austria e Svizzera.",
+            "Registrati su app.treatflow.io e inizia 14 giorni di prova. Nessuna carta. Disponibile in tutto il mondo.",
         },
         {
           question: "Dove sono i dati?",
@@ -3594,7 +3676,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Comment commencer ?",
           answer:
-            "Demandez un accès anticipé pour votre pays. L'inscription directe est disponible en Allemagne, Autriche et Suisse.",
+            "Inscrivez-vous sur app.treatflow.io et démarrez 14 jours d'essai. Sans carte. Disponible partout.",
         },
         {
           question: "Où sont hébergées les données ?",
@@ -3801,7 +3883,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "¿Cómo empiezo?",
           answer:
-            "Solicita acceso anticipado para tu país. El registro directo está disponible en Alemania, Austria y Suiza.",
+            "Regístrate en app.treatflow.io y empieza 14 días de prueba. Sin tarjeta. Disponible en todo el mundo.",
         },
         {
           question: "¿Dónde se alojan los datos?",
@@ -3903,7 +3985,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Come inizio?",
           answer:
-            "Richiedi l'accesso anticipato per il tuo Paese. La registrazione diretta è disponibile in Germania, Austria e Svizzera.",
+            "Registrati su app.treatflow.io e inizia 14 giorni di prova. Nessuna carta. Disponibile in tutto il mondo.",
         },
         {
           question: "Dove sono i dati?",
@@ -4005,7 +4087,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Comment commencer ?",
           answer:
-            "Demandez un accès anticipé pour votre pays. L'inscription directe est disponible en Allemagne, Autriche et Suisse.",
+            "Inscrivez-vous sur app.treatflow.io et démarrez 14 jours d'essai. Sans carte. Disponible partout.",
         },
         {
           question: "Où sont hébergées les données ?",

@@ -86,7 +86,7 @@ const featureColors = {
 
 const usHomePage: HomePageIntlContent = {
   locale: "us",
-  earlyAccessHref: "/us/early-access",
+  earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
   pricingHref: "/us/pricing",
   hero: {
     eyebrow: "For beauty salons and med spas in the United States",
@@ -94,7 +94,7 @@ const usHomePage: HomePageIntlContent = {
     titleHighlight: "grow revenue",
     titleTail: "and ditch paperwork",
     subtitle:
-      "Appointments, deposits, client records, HIPAA-aware consent forms and treatment documentation in one clear app – built for US salons and med spas.",
+      "Appointments, deposits, client records, digital consent forms and treatment documentation in one clear app – built for US salons and med spas.",
     primaryCta: "Start your free trial",
     trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
     studiosLabel: "500+ studios",
@@ -108,7 +108,7 @@ const usHomePage: HomePageIntlContent = {
     {
       question: "What is Treatflow?",
       answer:
-        "Treatflow is all-in-one software for beauty salons and med spas in the United States. It combines online booking, deposits to reduce no-shows, client records, HIPAA-aware digital consent for aesthetics, treatment notes and photo documentation in one platform. Hosted on EU servers with strong privacy controls. No commission on bookings.",
+        "Treatflow is all-in-one software for beauty salons and med spas in the United States. It combines online booking, deposits to reduce no-shows, client records, digital consent for aesthetics, treatment notes and photo documentation in one platform. Hosted on EU servers with strong privacy controls. No commission on bookings.",
     },
     {
       question: "Who is Treatflow for?",
@@ -120,7 +120,7 @@ const usHomePage: HomePageIntlContent = {
     { icon: Lock, text: "SSL-encrypted" },
     { icon: Server, text: "EU servers" },
     { icon: Shield, text: "Daily backups" },
-    { icon: ShieldCheck, text: "HIPAA-aware consent" },
+    { icon: ShieldCheck, text: "Digital consent" },
   ],
   features: {
     title: "The most important features at a glance",
@@ -129,7 +129,7 @@ const usHomePage: HomePageIntlContent = {
     items: [
       { icon: CalendarDays, label: "Appointment calendar", desc: "All appointments in a clear daily and weekly view.", color: featureColors.calendar },
       { icon: Users, label: "Online booking & deposits", desc: "Clients book online; deposits help cut no-shows and protect revenue.", color: featureColors.booking },
-      { icon: ClipboardCheck, label: "Consent forms", desc: "HIPAA-aware digital intake and consent for aesthetic treatments.", color: featureColors.consent },
+      { icon: ClipboardCheck, label: "Consent forms", desc: "digital intake and consent for aesthetic treatments.", color: featureColors.consent },
       { icon: FileText, label: "Client records", desc: "Client data, history and notes in one place.", color: featureColors.records },
       { icon: Shield, label: "Treatment documentation", desc: "Document treatments with notes and photos.", color: featureColors.docs },
       { icon: Bell, label: "Reminders", desc: "Automatic SMS and emails reduce no-shows.", color: featureColors.reminders },
@@ -153,7 +153,7 @@ const usHomePage: HomePageIntlContent = {
     items: [
       {
         q: "What is Treatflow?",
-        a: "Treatflow is all-in-one software for beauty salons and med spas in the United States: appointment calendar, online booking with deposit support, digital client records, HIPAA-aware consent forms, treatment notes, photo documentation and reminders. No commission on bookings.",
+        a: "Treatflow is all-in-one software for beauty salons and med spas in the United States: appointment calendar, online booking with deposit support, digital client records, digital consent forms, treatment notes, photo documentation and reminders. No commission on bookings.",
       },
       {
         q: "Who is Treatflow for?",
@@ -161,11 +161,11 @@ const usHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in the United States?",
-        a: "Self-serve signup is currently available in Germany, Austria and Switzerland. For the United States, request early access and we will get back to you.",
+        a: "You can register worldwide and start a 14-day free trial at app.treatflow.io – no credit card required.",
       },
       {
         q: "Is my data secure?",
-        a: "Yes. Treatflow is hosted on EU servers, SSL-encrypted and backed up daily. Consent and client workflows are designed with US aesthetic privacy expectations in mind.",
+        a: "Yes. Treatflow is hosted on EU servers, SSL-encrypted and backed up daily. Consent and client workflows are designed with strong privacy controls in mind.",
       },
     ],
   },
@@ -178,16 +178,16 @@ const usHomePage: HomePageIntlContent = {
     software: softwareSchema(
       "en-US",
       "/us",
-      "Salon and med spa software for the United States: appointments, deposits to reduce no-shows, client records, HIPAA-aware consent forms and treatment documentation. No commission on bookings."
+      "Salon and med spa software for the United States: appointments, deposits to reduce no-shows, client records, digital consent forms and treatment documentation. No commission on bookings."
     ),
     faq: faqSchema("en-US", [
       {
         q: "What is Treatflow?",
-        a: "Treatflow is software for beauty salons and med spas in the United States with an appointment calendar, online booking, deposits, client records, HIPAA-aware consent forms, treatment documentation and reminders – all in one app. No commission on bookings.",
+        a: "Treatflow is software for beauty salons and med spas in the United States with an appointment calendar, online booking, deposits, client records, digital consent forms, treatment documentation and reminders – all in one app. No commission on bookings.",
       },
       {
         q: "How can I get started in the United States?",
-        a: "Start your free trial for the United States. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
       },
     ]),
   },
@@ -199,7 +199,7 @@ const usHomePage: HomePageIntlContent = {
 
 const ukHomePage: HomePageIntlContent = {
   locale: "uk",
-  earlyAccessHref: "/uk/early-access",
+  earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
   pricingHref: "/uk/pricing",
   hero: {
     eyebrow: "For salons, spas and aesthetic clinics in the United Kingdom",
@@ -274,7 +274,7 @@ const ukHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in the United Kingdom?",
-        a: "Self-serve signup is currently available in Germany, Austria and Switzerland. For the United Kingdom, request early access and we will get back to you.",
+        a: "You can register worldwide and start a 14-day free trial at app.treatflow.io – no credit card required.",
       },
       {
         q: "Is my data secure?",
@@ -300,7 +300,7 @@ const ukHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in the United Kingdom?",
-        a: "Start your free trial for the United Kingdom. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
       },
     ]),
   },
@@ -312,7 +312,7 @@ const ukHomePage: HomePageIntlContent = {
 
 const ieHomePage: HomePageIntlContent = {
   locale: "ie",
-  earlyAccessHref: "/ie/early-access",
+  earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
   pricingHref: "/ie/pricing",
   hero: {
     eyebrow: "For salons, spas and aesthetic clinics in Ireland",
@@ -387,7 +387,7 @@ const ieHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in Ireland?",
-        a: "Self-serve signup is currently available in Germany, Austria and Switzerland. For Ireland, request early access and we will get back to you.",
+        a: "You can register worldwide and start a 14-day free trial at app.treatflow.io – no credit card required.",
       },
       {
         q: "Is my data secure?",
@@ -413,7 +413,7 @@ const ieHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in Ireland?",
-        a: "Start your free trial for Ireland. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
       },
     ]),
   },
@@ -425,7 +425,7 @@ const ieHomePage: HomePageIntlContent = {
 
 const caHomePage: HomePageIntlContent = {
   locale: "ca",
-  earlyAccessHref: "/ca/early-access",
+  earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
   pricingHref: "/ca/pricing",
   hero: {
     eyebrow: "For salons and aesthetic clinics in Canada",
@@ -433,7 +433,7 @@ const caHomePage: HomePageIntlContent = {
     titleHighlight: "grow revenue",
     titleTail: "and simplify consent",
     subtitle:
-      "Appointments, client records, PIPEDA-aware consent forms and treatment documentation in one clear app – built for Canadian salons and aesthetic clinics.",
+      "Appointments, client records, digital consent forms and treatment documentation in one clear app – built for Canadian salons and aesthetic clinics.",
     primaryCta: "Start your free trial",
     trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
     studiosLabel: "500+ studios",
@@ -447,7 +447,7 @@ const caHomePage: HomePageIntlContent = {
     {
       question: "What is Treatflow?",
       answer:
-        "Treatflow is all-in-one software for beauty salons and aesthetic clinics in Canada. It combines online booking, deposits to reduce no-shows, client records, PIPEDA-aware digital consent, treatment notes and photo documentation. Hosted on EU servers. No commission on bookings. Pricing available in CAD context for Canadian studios.",
+        "Treatflow is all-in-one software for beauty salons and aesthetic clinics in Canada. It combines online booking, deposits to reduce no-shows, client records, digital consent, treatment notes and photo documentation. Hosted on EU servers. No commission on bookings. Pricing available in CAD context for Canadian studios.",
     },
     {
       question: "Who is Treatflow for?",
@@ -459,7 +459,7 @@ const caHomePage: HomePageIntlContent = {
     { icon: Lock, text: "SSL-encrypted" },
     { icon: Server, text: "EU servers" },
     { icon: Shield, text: "Daily backups" },
-    { icon: ShieldCheck, text: "PIPEDA-aware privacy" },
+    { icon: ShieldCheck, text: "EU-hosted privacy controls" },
   ],
   features: {
     title: "The most important features at a glance",
@@ -468,7 +468,7 @@ const caHomePage: HomePageIntlContent = {
     items: [
       { icon: CalendarDays, label: "Appointment calendar", desc: "All appointments in a clear daily and weekly view.", color: featureColors.calendar },
       { icon: Users, label: "Online booking & deposits", desc: "Clients book online; deposits help cut no-shows and protect revenue.", color: featureColors.booking },
-      { icon: ClipboardCheck, label: "Consent forms", desc: "PIPEDA-aware digital intake and consent for aesthetic treatments.", color: featureColors.consent },
+      { icon: ClipboardCheck, label: "Consent forms", desc: "digital intake and consent for aesthetic treatments.", color: featureColors.consent },
       { icon: FileText, label: "Client records", desc: "Client data, history and notes in one place.", color: featureColors.records },
       { icon: Shield, label: "Treatment documentation", desc: "Document treatments with notes and photos.", color: featureColors.docs },
       { icon: Bell, label: "Reminders", desc: "Automatic SMS and emails reduce no-shows.", color: featureColors.reminders },
@@ -492,7 +492,7 @@ const caHomePage: HomePageIntlContent = {
     items: [
       {
         q: "What is Treatflow?",
-        a: "Treatflow is all-in-one software for beauty salons and aesthetic clinics in Canada: appointment calendar, online booking with deposit support, digital client records, PIPEDA-aware consent forms, treatment notes, photo documentation and reminders. No commission on bookings.",
+        a: "Treatflow is all-in-one software for beauty salons and aesthetic clinics in Canada: appointment calendar, online booking with deposit support, digital client records, digital consent forms, treatment notes, photo documentation and reminders. No commission on bookings.",
       },
       {
         q: "Who is Treatflow for?",
@@ -500,33 +500,33 @@ const caHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in Canada?",
-        a: "Self-serve signup is currently available in Germany, Austria and Switzerland. For Canada, request early access and we will get back to you.",
+        a: "You can register worldwide and start a 14-day free trial at app.treatflow.io – no credit card required.",
       },
       {
         q: "Is my data secure?",
-        a: "Yes. Treatflow is hosted on EU servers, SSL-encrypted and backed up daily. Consent and client workflows are designed with PIPEDA-aware privacy expectations in mind.",
+        a: "Yes. Treatflow is hosted on EU servers, SSL-encrypted and backed up daily. Consent and client workflows are designed with EU-hosted privacy controls expectations in mind.",
       },
     ],
   },
   cta: {
     title: "Ready to run your salon with less effort?",
     subtitle: "Start your free trial for salons and aesthetic clinics in Canada.",
-    note: "Cancel anytime. PIPEDA-aware privacy. With personal support.",
+    note: "Cancel anytime. EU-hosted privacy controls. With personal support.",
   },
   schemas: {
     software: softwareSchema(
       "en-CA",
       "/ca",
-      "Salon and aesthetic clinic software for Canada: appointments, deposits to reduce no-shows, client records, PIPEDA-aware consent forms and treatment documentation. No commission on bookings."
+      "Salon and aesthetic clinic software for Canada: appointments, deposits to reduce no-shows, client records, digital consent forms and treatment documentation. No commission on bookings."
     ),
     faq: faqSchema("en-CA", [
       {
         q: "What is Treatflow?",
-        a: "Treatflow is software for beauty salons and aesthetic clinics in Canada with an appointment calendar, online booking, deposits, client records, PIPEDA-aware consent forms, treatment documentation and reminders. No commission on bookings.",
+        a: "Treatflow is software for beauty salons and aesthetic clinics in Canada with an appointment calendar, online booking, deposits, client records, digital consent forms, treatment documentation and reminders. No commission on bookings.",
       },
       {
         q: "How can I get started in Canada?",
-        a: "Start your free trial for Canada. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
       },
     ]),
   },
@@ -538,7 +538,7 @@ const caHomePage: HomePageIntlContent = {
 
 const auHomePage: HomePageIntlContent = {
   locale: "au",
-  earlyAccessHref: "/au/early-access",
+  earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
   pricingHref: "/au/pricing",
   hero: {
     eyebrow: "For salons, spas and aesthetic clinics in Australia",
@@ -546,7 +546,7 @@ const auHomePage: HomePageIntlContent = {
     titleHighlight: "protect revenue",
     titleTail: "and organise consent",
     subtitle:
-      "Appointments, GST-aware deposits, client records, Privacy Act–ready consent forms and treatment documentation in one clear app – organised for Australian beauty businesses.",
+      "Appointments, GST-aware deposits, client records, digital consent forms and treatment documentation in one clear app – organised for Australian beauty businesses.",
     primaryCta: "Start your free trial",
     trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
     studiosLabel: "500+ studios",
@@ -560,7 +560,7 @@ const auHomePage: HomePageIntlContent = {
     {
       question: "What is Treatflow?",
       answer:
-        "Treatflow is all-in-one software for salons, spas and aesthetic clinics in Australia. It combines online booking, GST-aware deposits to reduce no-shows, client records, Privacy Act–ready consent forms, treatment notes and photo documentation. Hosted on EU servers. No commission on bookings.",
+        "Treatflow is all-in-one software for salons, spas and aesthetic clinics in Australia. It combines online booking, GST-aware deposits to reduce no-shows, client records, digital consent forms, treatment notes and photo documentation. Hosted on EU servers. No commission on bookings.",
     },
     {
       question: "Who is Treatflow for?",
@@ -572,7 +572,7 @@ const auHomePage: HomePageIntlContent = {
     { icon: Lock, text: "SSL-encrypted" },
     { icon: Server, text: "EU servers" },
     { icon: Shield, text: "Daily backups" },
-    { icon: ShieldCheck, text: "Privacy Act–ready" },
+    { icon: ShieldCheck, text: "privacy-aware" },
   ],
   features: {
     title: "The most important features at a glance",
@@ -581,7 +581,7 @@ const auHomePage: HomePageIntlContent = {
     items: [
       { icon: CalendarDays, label: "Appointment calendar", desc: "All appointments in a clear daily and weekly view.", color: featureColors.calendar },
       { icon: Users, label: "Online booking & deposits", desc: "Clients book online; GST-aware deposits help cut no-shows.", color: featureColors.booking },
-      { icon: ClipboardCheck, label: "Consent forms", desc: "Digital intake and consent forms – Privacy Act–ready.", color: featureColors.consent },
+      { icon: ClipboardCheck, label: "Consent forms", desc: "Digital intake and consent forms – privacy-aware.", color: featureColors.consent },
       { icon: FileText, label: "Client records", desc: "Client data, history and notes in one place.", color: featureColors.records },
       { icon: Shield, label: "Treatment documentation", desc: "Document treatments with notes and photos.", color: featureColors.docs },
       { icon: Bell, label: "Reminders", desc: "Automatic SMS and emails reduce no-shows.", color: featureColors.reminders },
@@ -605,7 +605,7 @@ const auHomePage: HomePageIntlContent = {
     items: [
       {
         q: "What is Treatflow?",
-        a: "Treatflow is all-in-one software for salons, spas and aesthetic clinics in Australia: appointment calendar, online booking with GST-aware deposits, digital client records, Privacy Act–ready consent forms, treatment notes, photo documentation and reminders. No commission on bookings.",
+        a: "Treatflow is all-in-one software for salons, spas and aesthetic clinics in Australia: appointment calendar, online booking with GST-aware deposits, digital client records, digital consent forms, treatment notes, photo documentation and reminders. No commission on bookings.",
       },
       {
         q: "Who is Treatflow for?",
@@ -613,33 +613,33 @@ const auHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in Australia?",
-        a: "Self-serve signup is currently available in Germany, Austria and Switzerland. For Australia, request early access and we will get back to you.",
+        a: "You can register worldwide and start a 14-day free trial at app.treatflow.io – no credit card required.",
       },
       {
         q: "Is my data secure?",
-        a: "Yes. Treatflow is hosted on EU servers, SSL-encrypted and backed up daily. Consent and client workflows are designed with Australia's Privacy Act expectations in mind.",
+        a: "Yes. Treatflow is hosted on EU servers, SSL-encrypted and backed up daily. Consent and client workflows are designed with strong privacy controls in mind.",
       },
     ],
   },
   cta: {
     title: "Ready to protect revenue and cut no-shows?",
     subtitle: "Start your free trial for salons and aesthetic clinics in Australia.",
-    note: "Cancel anytime. Privacy Act–ready. With personal support.",
+    note: "Cancel anytime. privacy-aware. With personal support.",
   },
   schemas: {
     software: softwareSchema(
       "en-AU",
       "/au",
-      "Salon and aesthetic clinic software for Australia: appointments, GST-aware deposits to reduce no-shows, client records, Privacy Act–ready consent forms and treatment documentation. No commission on bookings."
+      "Salon and aesthetic clinic software for Australia: appointments, GST-aware deposits to reduce no-shows, client records, digital consent forms and treatment documentation. No commission on bookings."
     ),
     faq: faqSchema("en-AU", [
       {
         q: "What is Treatflow?",
-        a: "Treatflow is software for salons, spas and aesthetic clinics in Australia with an appointment calendar, online booking, GST-aware deposits, client records, Privacy Act–ready consent forms, treatment documentation and reminders. No commission on bookings.",
+        a: "Treatflow is software for salons, spas and aesthetic clinics in Australia with an appointment calendar, online booking, GST-aware deposits, client records, digital consent forms, treatment documentation and reminders. No commission on bookings.",
       },
       {
         q: "How can I get started in Australia?",
-        a: "Start your free trial for Australia. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
       },
     ]),
   },
@@ -651,7 +651,7 @@ const auHomePage: HomePageIntlContent = {
 
 const aeHomePage: HomePageIntlContent = {
   locale: "ae",
-  earlyAccessHref: "/ae/early-access",
+  earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
   pricingHref: "/ae/pricing",
   hero: {
     eyebrow: "For premium salons and spas in the UAE",
@@ -726,7 +726,7 @@ const aeHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in the UAE?",
-        a: "Self-serve signup is currently available in Germany, Austria and Switzerland. For the UAE, request early access and we will get back to you.",
+        a: "You can register worldwide and start a 14-day free trial at app.treatflow.io – no credit card required.",
       },
       {
         q: "Is my data secure?",
@@ -752,7 +752,7 @@ const aeHomePage: HomePageIntlContent = {
       },
       {
         q: "How can I get started in the UAE?",
-        a: "Start your free trial for the UAE. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+        a: "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
       },
     ]),
   },
@@ -764,7 +764,7 @@ const aeHomePage: HomePageIntlContent = {
 
 const nlHomePage: HomePageIntlContent = {
   locale: "nl",
-  earlyAccessHref: "/nl/early-access",
+  earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
   pricingHref: "/nl/pricing",
   hero: {
     eyebrow: "Voor kappers, schoonheidssalons & spa's in Nederland",
@@ -773,7 +773,7 @@ const nlHomePage: HomePageIntlContent = {
     titleTail: "en no-shows",
     subtitle:
       "Afspraken, klantendossiers, toestemmingsformulieren en behandeldocumentatie in één overzichtelijke app – gemaakt voor kappers, schoonheid en spa in Nederland. Minder no-shows met aanbetalingen.",
-    primaryCta: "Vraag early access aan",
+    primaryCta: "Gratis proberen",
     trustItems: ["Geen creditcard", "Klaar in 2 minuten", "Gratis datamigratie", "Persoonlijke support"],
     studiosLabel: "500+ studio's",
     ratingValue: "4.6/5",
@@ -839,7 +839,7 @@ const nlHomePage: HomePageIntlContent = {
       },
       {
         q: "Hoe kan ik starten in Nederland?",
-        a: "Directe registratie is momenteel beschikbaar in Duitsland, Oostenrijk en Zwitserland. Voor Nederland vraag je early access aan – wij nemen contact met je op.",
+        a: "Je kunt je direct registreren en 14 dagen gratis starten – geen creditcard nodig.",
       },
       {
         q: "Zijn mijn gegevens veilig?",
@@ -849,7 +849,7 @@ const nlHomePage: HomePageIntlContent = {
   },
   cta: {
     title: "Klaar om je salon met minder moeite te runnen?",
-    subtitle: "Vraag early access aan voor kappers, schoonheid en spa in Nederland.",
+    subtitle: "Start 14 dagen gratis – geen creditcard nodig.",
     note: "Altijd opzegbaar. GDPR-conform. Met persoonlijke support.",
   },
   schemas: {
@@ -865,7 +865,7 @@ const nlHomePage: HomePageIntlContent = {
       },
       {
         q: "Hoe kan ik starten in Nederland?",
-        a: "Vraag early access aan voor Nederland. Directe registratie is momenteel beschikbaar in Duitsland, Oostenrijk en Zwitserland.",
+        a: "Je kunt je direct registreren en 14 dagen gratis starten – geen creditcard nodig.",
       },
     ]),
   },
@@ -877,7 +877,7 @@ const nlHomePage: HomePageIntlContent = {
 
 const fiHomePage: HomePageIntlContent = {
   locale: "fi",
-  earlyAccessHref: "/fi/early-access",
+  earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
   pricingHref: "/fi/pricing",
   hero: {
     eyebrow: "Kauneushoitoloille ja estetiikkaklinikoille Suomessa",
@@ -886,7 +886,7 @@ const fiHomePage: HomePageIntlContent = {
     titleTail: "ja peruuttamatta jääneet ajat",
     subtitle:
       "Ajanvaraus, asiakaskortistot, suostumuslomakkeet ja hoitodokumentointi yhdessä selkeässä sovelluksessa – suunniteltu Suomen kauneushoitoloille ja estetiikkaklinikoille. GDPR-valmis.",
-    primaryCta: "Pyydä early access",
+    primaryCta: "Aloita ilmainen kokeilu",
     trustItems: ["Ei luottokorttia", "Valmis 2 minuutissa", "Ilmainen datasiirto", "Henkilökohtainen tuki"],
     studiosLabel: "500+ studioa",
     ratingValue: "4.6/5",
@@ -952,7 +952,7 @@ const fiHomePage: HomePageIntlContent = {
       },
       {
         q: "Miten aloitan Suomessa?",
-        a: "Suora rekisteröityminen on tällä hetkellä saatavilla Saksassa, Itävallassa ja Sveitsissä. Suomessa pyydä early access – otamme sinuun yhteyttä.",
+        a: "Voit rekisteröityä suoraan ja aloittaa 14 päivän ilmaisen kokeilun – luottokorttia ei tarvita.",
       },
       {
         q: "Onko tietoni turvassa?",
@@ -962,7 +962,7 @@ const fiHomePage: HomePageIntlContent = {
   },
   cta: {
     title: "Valmis pyörittämään hoitolaa vähemmällä vaivalla?",
-    subtitle: "Pyydä early access Suomen kauneushoitoloille ja estetiikkaklinikoille.",
+    subtitle: "Aloita 14 päivän ilmainen kokeilu – ei luottokorttia.",
     note: "Peru milloin tahansa. GDPR-mukainen. Henkilökohtaisella tuella.",
   },
   schemas: {
@@ -978,7 +978,7 @@ const fiHomePage: HomePageIntlContent = {
       },
       {
         q: "Miten aloitan Suomessa?",
-        a: "Pyydä early access Suomelle. Suora rekisteröityminen on tällä hetkellä saatavilla Saksassa, Itävallassa ja Sveitsissä.",
+        a: "Voit rekisteröityä suoraan ja aloittaa 14 päivän ilmaisen kokeilun – luottokorttia ei tarvita.",
       },
     ]),
   },
@@ -1149,9 +1149,27 @@ function englishHomePage(): HomePageIntlContent {
   };
 }
 
+function withRewrittenFaqs(
+  page: HomePageIntlContent,
+  market: CountryHomeMarket
+): HomePageIntlContent {
+  const items = page.faqs.items.map((item) => ({
+    ...item,
+    a: rewriteEarlyAccessAnswer(item.a, market),
+  }));
+  return {
+    ...page,
+    faqs: { ...page.faqs, items },
+    schemas: {
+      ...page.schemas,
+      faq: faqSchema(page.locale || "en", items),
+    },
+  };
+}
+
 export function getCountryHomePage(market: CountryHomeMarket): HomePageIntlContent {
   if (market === "en") {
-    const page = englishHomePage();
+    const page = withRewrittenFaqs(englishHomePage(), "en");
     return {
       ...page,
       earlyAccessHref: APP_REGISTER_BY_MARKET.en,
@@ -1164,17 +1182,10 @@ export function getCountryHomePage(market: CountryHomeMarket): HomePageIntlConte
         subtitle: "Start Treatflow today – 14-day free trial, no credit card required.",
         note: "14-day free trial · No credit card · Cancel anytime",
       },
-      faqs: {
-        ...page.faqs,
-        items: page.faqs.items.map((item) => ({
-          ...item,
-          a: rewriteEarlyAccessAnswer(item.a, "en"),
-        })),
-      },
     };
   }
 
-  const page = countryHomePages[market];
+  const page = withRewrittenFaqs(countryHomePages[market], market);
   const isNl = market === "nl";
   const isFi = market === "fi";
 
@@ -1206,18 +1217,15 @@ export function getCountryHomePage(market: CountryHomeMarket): HomePageIntlConte
           ? "14 päivää ilmaiseksi · Ei luottokorttia · Peruuta milloin tahansa"
           : "14-day free trial · No credit card · Cancel anytime",
     },
-    faqs: {
-      ...page.faqs,
-      items: page.faqs.items.map((item) => ({
-        ...item,
-        a: rewriteEarlyAccessAnswer(item.a, market),
-      })),
-    },
   };
 }
 
 function rewriteEarlyAccessAnswer(answer: string, market: CountryHomeMarket): string {
-  if (!/early access|early-access|varhaista|vroege toegang/i.test(answer)) {
+  if (
+    !/early access|early-access|varhaista|vroege toegang|currently available in Germany|momenteel beschikbaar in Duitsland|tällä hetkellä saatavilla Saksassa/i.test(
+      answer
+    )
+  ) {
     return answer;
   }
   if (market === "nl") {
@@ -1234,14 +1242,14 @@ export const countryHomeMeta: Record<
   { title: string; description: string }
 > = {
   en: {
-    title: "Beauty Salon Software without Commission",
+    title: "Salon & Aesthetic Clinic Software",
     description:
-      "All-in-one beauty salon software for salons and aesthetic clinics. Appointments, online booking without commission, GDPR-ready client records, consent forms and treatment documentation. 14-day free trial.",
+      "Treatflow is all-in-one software for beauty salons, aesthetic clinics and treatment businesses. Online booking, client records, digital forms, treatment documentation and reminders. 14-day free trial.",
   },
   us: {
     title: "Salon & Med Spa Software for the United States",
     description:
-      "All-in-one software for beauty salons and med spas in the United States. Appointments, deposits to cut no-shows, HIPAA-aware consent forms and treatment documentation. No booking commissions. Start your free trial.",
+      "All-in-one software for beauty salons and med spas in the United States. Appointments, deposits to cut no-shows, digital consent forms and treatment documentation. No booking commissions. Start your free trial.",
   },
   uk: {
     title: "Salon & Aesthetic Clinic Software for the UK",
@@ -1256,12 +1264,12 @@ export const countryHomeMeta: Record<
   ca: {
     title: "Salon & Aesthetic Clinic Software for Canada",
     description:
-      "Software for beauty salons and aesthetic clinics in Canada. Appointments, deposits, PIPEDA-aware consent forms and treatment documentation. No booking commissions. Start your free trial.",
+      "Software for beauty salons and aesthetic clinics in Canada. Appointments, deposits, digital consent forms and treatment documentation. No booking commissions. Start your free trial.",
   },
   au: {
     title: "Salon & Aesthetic Clinic Software for Australia",
     description:
-      "Software for salons, spas and aesthetic clinics in Australia. Appointments, GST-aware deposits to cut no-shows, Privacy Act–ready consent and treatment documentation. Start your free trial.",
+      "Software for salons, spas and aesthetic clinics in Australia. Appointments, GST-aware deposits to cut no-shows, digital consent and treatment documentation. Start your free trial.",
   },
   ae: {
     title: "Premium Salon & Spa Software for the UAE",
@@ -1271,11 +1279,11 @@ export const countryHomeMeta: Record<
   nl: {
     title: "Salonsoftware voor kappers, schoonheid & spa in Nederland",
     description:
-      "Alles-in-één software voor kappers, schoonheidssalons en spa's in Nederland. Afspraken, aanbetalingen tegen no-shows, GDPR-conforme toestemmingsformulieren en behandeldocumentatie. Vraag early access aan.",
+      "Alles-in-één software voor kappers, schoonheidssalons en spa's in Nederland. Afspraken, aanbetalingen tegen no-shows, GDPR-conforme toestemmingsformulieren en behandeldocumentatie. Start 14 dagen gratis.",
   },
   fi: {
     title: "Kauneushoitolan ohjelmisto Suomeen",
     description:
-      "All-in-one-ohjelmisto Suomen kauneushoitoloille ja estetiikkaklinikoille. Ajanvaraus, asiakaskortistot, GDPR-mukaiset suostumuslomakkeet ja hoitodokumentointi. Pyydä early access.",
+      "All-in-one-ohjelmisto Suomen kauneushoitoloille ja estetiikkaklinikoille. Ajanvaraus, asiakaskortistot, GDPR-mukaiset suostumuslomakkeet ja hoitodokumentointi. Aloita 14 päivän ilmainen kokeilu.",
   },
 };

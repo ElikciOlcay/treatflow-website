@@ -50,7 +50,7 @@ const englishFacts = {
         industry: "Beauty & Wellness Software",
         tagline: "All-in-one software for beauty salons and aesthetic clinics.",
         description:
-            "Treatflow is web-based studio software: appointment calendar, online booking without commission, digital client records, consent forms, treatment documentation and reminders. Made in Austria. Hosted in the EU.",
+            "Treatflow is software for beauty salons, aesthetic clinics and treatment-focused businesses: online booking, client records, digital consent forms, treatment documentation with voice dictation and automated follow-ups. Made in Austria. Hosted in the EU.",
         website: "https://www.treatflow.io/en",
         appUrl: "https://app.treatflow.io",
         email: "hello@treatflow.io",
@@ -63,7 +63,7 @@ const englishFacts = {
         ratingMax: 5,
         ratingCount: 19,
         ratingPlatform: "Google",
-        avgNoShowReduction: "up to 80%",
+        avgNoShowReduction: "up to 50%",
         avgAdminTimeSavingsPerWeek: "10h",
     },
     pricing: {
@@ -142,6 +142,11 @@ const englishFacts = {
             question: "Can aesthetic clinics collect consent forms?",
             answer:
                 "Yes. Intake and consent forms can be sent before the visit and stored on the client record with signatures.",
+        },
+        {
+            question: "Can I dictate treatment notes?",
+            answer:
+                "Yes. In treatment documentation you can speak notes instead of typing. Treatflow turns speech into text and can refine it with AI. The note is saved with that visit.",
         },
     ],
     keyResources: {

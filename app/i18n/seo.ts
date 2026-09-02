@@ -52,6 +52,7 @@ const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
   contact: "kontakt",
   about: "ueber-uns",
   privacy: "datenschutz",
+  terms: "agb",
   "appointment-calendar": "terminkalender",
   "online-booking": "online-buchungen",
   "client-records": "kundenverwaltung",
@@ -97,7 +98,7 @@ function buildSlugMap(pageKey: SeoPageKey): PageSlugMap {
   // Nur aktive Site-Sprachen (DE + EN) – keine Laender-Varianten mehr
   for (const market of siteLanguages) {
     if (market === "de") continue;
-    if (pageKey === "early-access" || pageKey === "terms") {
+    if (pageKey === "early-access") {
       map[market] = EN_SLUGS[pageKey];
       continue;
     }

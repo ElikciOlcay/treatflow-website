@@ -22,6 +22,8 @@ import BenefitStats from "./BenefitStats";
 import SupportTrustBanner from "./SupportTrustBanner";
 import FAQSection from "./FAQSection";
 import PricingSectionIntl from "./PricingSectionIntl";
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./AiAnswerCapsule";
+import TreatmentWorkflow from "./TreatmentWorkflow";
 import { APP_REGISTER_BY_MARKET, DEMO_BOOKING_URL } from "@/app/i18n/market-access";
 import { getPricingIntlCopy } from "@/app/i18n/markets/pricing-intl";
 import { EN_SLUGS } from "@/app/i18n/market-routes";
@@ -35,7 +37,7 @@ const softwareSchema = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web Browser",
   description:
-    "All-in-one beauty salon software: appointments, online booking without commission, client records, consent forms and treatment documentation. GDPR-ready EU hosting. Made in Austria.",
+    "Treatflow is an all-in-one management platform for beauty salons, aesthetic clinics and treatment-focused businesses. It combines online booking, client records, digital consultation and consent forms, treatment documentation, before-and-after photos and automated follow-ups. Hosted in the EU.",
   url: "https://www.treatflow.io/en",
   author: { "@type": "Organization", name: "Treatflow", url: "https://www.treatflow.io" },
   offers: [
@@ -67,6 +69,7 @@ const softwareSchema = {
     "Digital client records",
     "Consent and intake forms",
     "Treatment documentation with photos",
+    "Voice dictation for treatment notes",
     "SMS and email reminders",
   ],
 };
@@ -81,7 +84,39 @@ const faqSchema = {
       name: "What is Treatflow?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Treatflow is all-in-one beauty salon software for salons and aesthetic clinics. Appointment calendar, online booking without commission, digital client records, consent forms, treatment notes and photo documentation. Made in Austria. Hosted in the EU. From €39/month.",
+        text: "Treatflow is software for beauty salons and aesthetic clinics that combines online booking, client records, digital consent forms, treatment documentation and automated client communication in one platform.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Who is Treatflow for?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Treatflow is for beauty salons, aesthetic clinics, laser hair removal clinics, med spas, skin clinics, permanent makeup studios, lash and nail studios, massage and wellness businesses, and similar treatment-based studios.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can clients complete consultation forms before their appointment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Treatflow can send digital consultation or consent forms before an appointment, so the client can complete them before arriving.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I store before-and-after photos?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Treatment photos can be stored within the client's treatment history so documentation stays connected to the relevant client and appointment.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I dictate treatment notes?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. In treatment documentation you can speak notes instead of typing. Treatflow turns speech into text and can refine it with AI. The note is saved with that visit.",
       },
     },
     {
@@ -94,18 +129,58 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "How much does Treatflow cost?",
+      name: "Does Treatflow support online booking?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Basic starts at €39/month for client records, forms and documentation. Booking starts at €59/month and adds calendar, online booking and reminders. 14-day free trial, no credit card required.",
+        text: "Yes. Clients book on your own Treatflow booking page. There is no marketplace commission.",
       },
     },
     {
       "@type": "Question",
-      name: "Are digital client records GDPR compliant?",
+      name: "Can Treatflow send appointment reminders?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Treatflow is hosted on EU servers in Frankfurt, uses SSL encryption and daily backups. Client records, forms and documentation stay in one system designed for GDPR.",
+        text: "Yes. Automatic SMS and email reminders are part of the Booking plan.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Treatflow work internationally?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. You can register worldwide and start a 14-day free trial. Treatflow is hosted on EU servers. Some payment and POS features depend on the country.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can multiple employees use Treatflow?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. The calendar, client records and documentation are shared across the team, so colleagues see the same history when they take over a client.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long can I try Treatflow for free?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You can try Treatflow for 14 days, no credit card and no hidden fees. After the trial you decide whether to continue.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the difference between Basic and Booking?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Basic (€39/month) includes unlimited client records, form templates and the form shop. Booking (€59/month) adds the appointment calendar, online booking without commission and automatic reminders.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Treatflow designed for GDPR?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Treatflow is hosted on EU servers in Frankfurt, uses SSL encryption and daily backups. Consent forms and treatment documentation sit on the client record.",
       },
     },
   ],
@@ -116,35 +191,35 @@ const coreFeatures = [
     href: `/en/${EN_SLUGS["appointment-calendar"]}`,
     icon: CalendarDays,
     label: "Appointment calendar",
-    desc: "Day and week views your team understands at a glance.",
+    desc: "Day, week and staff views so the whole team sees the same schedule.",
     color: "bg-indigo-100 text-indigo-600",
   },
   {
     href: `/en/${EN_SLUGS["online-booking"]}`,
     icon: Users,
     label: "Online booking",
-    desc: "Clients book themselves – even outside opening hours. No commission.",
+    desc: "A branded booking page with live availability. No marketplace commission.",
     color: "bg-emerald-100 text-emerald-600",
   },
   {
     href: `/en/${EN_SLUGS["client-records"]}`,
     icon: FileText,
     label: "Client records",
-    desc: "History, notes and photos in one place, easy to find.",
+    desc: "Visit history, notes, forms and photos on one client profile.",
                 color: "bg-blue-100 text-blue-600",
   },
   {
     href: `/en/${EN_SLUGS.forms}`,
     icon: ClipboardCheck,
-    label: "Forms",
-    desc: "Digital intake and consent, completed before the visit.",
+    label: "Consultation & consent",
+    desc: "Digital intake and consent forms, completed before the visit.",
     color: "bg-orange-100 text-orange-600",
   },
   {
     href: `/en/${EN_SLUGS["treatment-documentation"]}`,
     icon: Shield,
     label: "Documentation",
-    desc: "Notes, parameters and before/after photos per treatment.",
+    desc: "Session notes, voice dictation, parameters and before-and-after photos per visit.",
     color: "bg-teal-100 text-teal-600",
   },
   {
@@ -172,20 +247,67 @@ const coreFeatures = [
 
 const seoLinks = [
   { href: `/en/${EN_SLUGS["beauty-salon-software"]}`, label: "Beauty salon software" },
+  { href: `/en/${EN_SLUGS["aesthetic-clinic-software"]}`, label: "Aesthetic clinic software" },
+  { href: `/en/${EN_SLUGS["laser-hair-removal-software"]}`, label: "Laser hair removal software" },
   { href: `/en/${EN_SLUGS["online-booking"]}`, label: "Online booking" },
+  { href: `/en/${EN_SLUGS["client-records"]}`, label: "Client records" },
+  { href: `/en/${EN_SLUGS.forms}`, label: "Consultation and consent forms" },
   { href: `/en/${EN_SLUGS["treatment-documentation"]}`, label: "Treatment documentation" },
-  { href: `/en/${EN_SLUGS.forms}`, label: "Consent forms" },
-  { href: `/en/${EN_SLUGS.messaging}`, label: "Reminders" },
+  { href: `/en/${EN_SLUGS.messaging}`, label: "Reminders and follow-ups" },
   { href: `/en/${EN_SLUGS["software-comparison"]}`, label: "Software comparison" },
   { href: `/en/${EN_SLUGS["treatflow-vs-treatwell"]}`, label: "Treatflow vs Treatwell" },
   { href: `/en/${EN_SLUGS["treatflow-vs-fresha"]}`, label: "Treatflow vs Fresha" },
+];
+
+const audiences = [
+  { href: `/en/${EN_SLUGS["beauty-salon-software"]}`, label: "Beauty salons" },
+  { href: `/en/${EN_SLUGS["aesthetic-clinic-software"]}`, label: "Aesthetic clinics" },
+  { href: `/en/${EN_SLUGS["laser-hair-removal-software"]}`, label: "Laser hair removal clinics" },
+  { href: `/en/${EN_SLUGS["aesthetic-clinic-software"]}`, label: "Med spas & skin clinics" },
+  { href: `/en/${EN_SLUGS["permanent-makeup-software"]}`, label: "Permanent makeup studios" },
+  { href: `/en/${EN_SLUGS["lash-studio-software"]}`, label: "Lash studios" },
+  { href: `/en/${EN_SLUGS["nail-salon-software"]}`, label: "Nail salons" },
+  { href: `/en/${EN_SLUGS["massage-software"]}`, label: "Massage & wellness" },
+];
+
+const workflowSteps = [
+  {
+    href: `/en/${EN_SLUGS["online-booking"]}`,
+    label: "Online booking",
+    desc: "Clients book on your own link. Slots stay in sync with the studio calendar.",
+  },
+  {
+    href: `/en/${EN_SLUGS.forms}`,
+    label: "Intake and consent",
+    desc: "Consultation and consent forms can be completed before the client arrives.",
+  },
+  {
+    href: `/en/${EN_SLUGS["client-records"]}`,
+    label: "Client records",
+    desc: "History, notes and forms sit on one profile the whole team can open.",
+  },
+  {
+    href: `/en/${EN_SLUGS["treatment-documentation"]}`,
+    label: "Treatment documentation",
+    desc: "Session notes (typed or dictated), parameters and before-and-after photos stay with the visit.",
+  },
+  {
+    href: `/en/${EN_SLUGS.messaging}`,
+    label: "Follow-ups and rebooking",
+    desc: "Reminders and automated messages reduce no-shows and bring clients back.",
+  },
+  {
+    href: `/en/${EN_SLUGS.features}`,
+    label: "Payments where available",
+    desc: "Checkout and POS features depend on your country. Documentation and booking work worldwide.",
+  },
 ];
 
 export default function HomePageEn() {
   const pricing = getPricingIntlCopy("en");
 
   return (
-    <>
+    <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
@@ -199,16 +321,16 @@ export default function HomePageEn() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <div className="order-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              For beauty salons and aesthetic clinics that want to grow
+              Software for beauty salons, aesthetic clinics and laser studios
             </div>
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-4">
-              Stop the booking chaos,{" "}
-              <span className="text-indigo-600">paperwork</span>
-              {" "}and no-shows
+              From booking to treatment documentation —{" "}
+              <span className="text-indigo-600">everything in one place</span>
             </h1>
             <p className="text-lg lg:text-xl text-gray-600 mb-6 leading-relaxed">
-              Appointments, clients, forms and treatment documentation in one clear app.
-              Your team finds their way immediately.
+              Treatflow is an all-in-one management platform for beauty salons, aesthetic clinics
+              and treatment-focused businesses. Online booking, client records, digital forms,
+              treatment notes and follow-ups work together — not as separate tools.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <a
@@ -274,7 +396,7 @@ export default function HomePageEn() {
               { icon: Lock, text: "SSL-encrypted" },
               { icon: Server, text: "EU servers (GDPR)" },
               { icon: Shield, text: "Daily backups" },
-              { icon: ShieldCheck, text: "GDPR-ready consent" },
+              { icon: ShieldCheck, text: "Designed for GDPR" },
             ].map((item) => (
               <div key={item.text} className="flex items-center gap-2 text-sm text-gray-600">
                 <item.icon className="h-4 w-4 text-indigo-500" />
@@ -284,6 +406,49 @@ export default function HomePageEn() {
           </div>
         </div>
       </section>
+
+      <div className="px-4 sm:px-6 lg:px-8 bg-white pt-12 pb-10">
+        <AiAnswerCapsuleGroup>
+          <AiAnswerCapsule
+            question="What is Treatflow?"
+            answer="Treatflow is software for beauty salons and aesthetic clinics that combines online booking, client records, digital consent forms, treatment documentation and automated client communication in one platform."
+          />
+          <AiAnswerCapsule
+            question="Who is Treatflow for?"
+            answer="Treatflow is for beauty salons, aesthetic clinics, laser hair removal clinics, med spas, skin clinics, permanent makeup studios, lash and nail studios, massage and wellness businesses, and similar treatment-based studios."
+          />
+        </AiAnswerCapsuleGroup>
+      </div>
+
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-3">
+            Who Treatflow is built for
+          </h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8">
+            Treatflow is built for studios that run treatments — not just appointment calendars.
+          </p>
+          <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {audiences.map((item) => (
+              <li key={item.label}>
+                <Link
+                  href={item.href}
+                  className="flex items-center gap-2 bg-white border border-gray-100 rounded-xl px-4 py-3 text-sm text-gray-800 hover:border-indigo-200 hover:text-indigo-700 transition-colors"
+                >
+                  <CheckCircle className="h-4 w-4 text-emerald-500 flex-shrink-0" />
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <TreatmentWorkflow
+        title="The treatment workflow, in one system"
+        subtitle="Treatflow connects booking to intake, documentation and follow-up so the team is not switching between apps."
+        steps={workflowSteps}
+      />
 
       <ChallengeSelector locale="en" />
 
@@ -341,12 +506,13 @@ export default function HomePageEn() {
       <section id="features" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Less chaos. More time for clients.
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Everything your studio needs – in one app your team understands immediately.
-            </p>
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Not just a calendar. The full treatment workflow.
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Online booking, digital forms, client records, treatment notes and automated messages
+                stay connected — so your team works from one place.
+              </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
@@ -466,8 +632,12 @@ export default function HomePageEn() {
             <Link href={`/en/${EN_SLUGS["beauty-salon-software"]}`} className="text-indigo-600 hover:underline">
               beauty salon software
             </Link>{" "}
-            with an appointment calendar, online booking without commission, digital client records, forms and
-            treatment documentation – GDPR-ready, hosted in the EU, made in Austria.
+            and{" "}
+            <Link href={`/en/${EN_SLUGS["aesthetic-clinic-software"]}`} className="text-indigo-600 hover:underline">
+              aesthetic clinic software
+            </Link>{" "}
+            that combines online booking, client records, digital forms and treatment documentation
+            in one platform. Hosted in the EU. Made in Austria.
           </p>
           <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-gray-500">
             {seoLinks.map((link) => (
@@ -482,6 +652,6 @@ export default function HomePageEn() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }
