@@ -1,8 +1,11 @@
 import Link from 'next/link';
 import { APP_LOGIN_URL, APP_REGISTER_URL } from '../i18n/market-access';
+import DeSiteSchema from './DeSiteSchema';
 
 export default function Footer() {
   return (
+    <>
+    <DeSiteSchema />
     <footer id="contact" className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10">
@@ -135,5 +138,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }
