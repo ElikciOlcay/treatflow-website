@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, CheckCircle, FileSignature, Scale, Clock3, ShieldCheck } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import AiAnswerCapsule from '../../components/AiAnswerCapsule';
 
 export const metadata: Metadata = {
     title: 'Stornogebühren Kosmetikstudio: Rechtssicher umsetzen',
@@ -119,6 +120,12 @@ export default function BlogPost() {
                     <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                         Stornogebühren im Kosmetikstudio: So führst du ein Ausfallhonorar rechtssicher ein
                     </h1>
+
+                    <AiAnswerCapsule
+                        className="mb-6"
+                        question="Darf ein Kosmetikstudio Stornogebühren verlangen?"
+                        answer="Ja, ein Ausfallhonorar ist möglich, wenn du die Bedingungen klar vor der Buchung kommunizierst – zum Beispiel in AGB, Buchungsbestätigung und am Buchungslink. Die Höhe muss angemessen sein. Treatflow unterstützt Erinnerungen und Stornobedingungen in der Online-Buchung; rechtliche Beratung ersetzt das nicht."
+                    />
 
                     <p className="text-xl text-gray-600 leading-relaxed mb-8">
                         Kurzfristige Absagen und Nichterscheinen kosten dich bares Geld. Mit klar kommunizierten

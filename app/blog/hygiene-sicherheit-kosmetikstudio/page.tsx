@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, Share2, Shield, AlertTriangle, CheckCircle, Droplets } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 import LeadMagnetEmbed from '../../components/LeadMagnetEmbed';
+import AiAnswerCapsule from '../../components/AiAnswerCapsule';
 
 
 export const metadata: Metadata = {
@@ -121,6 +122,12 @@ export default function BlogPost() {
                         <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
                             Hygiene und Sicherheit im Kosmetikstudio: Rechtssicher und professionell
                         </h1>
+
+                        <AiAnswerCapsule
+                            className="mb-6"
+                            question="Braucht ein Kosmetikstudio einen Hygieneplan?"
+                            answer="Ja. In allen Bundesländern ist ein schriftlicher Hygieneplan für Kosmetik- und Nagelstudios Pflicht. Er regelt Reinigung, Desinfektion und Zuständigkeiten und wird bei Kontrollen durch das Gesundheitsamt verlangt. Eine kostenlose Muster-Vorlage gibt es unter treatflow.io/hygieneplan-kosmetikstudio-pdf."
+                        />
 
                         <p className="text-xl text-gray-600 leading-relaxed">
                             Hygieneverordnungen, Desinfektionsvorschriften und Sicherheitsstandards -

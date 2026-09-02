@@ -7,6 +7,14 @@ import { DEMO_BOOKING_URL } from '@/app/i18n/market-access';
 
 const faqsDe: { question: string; answer: ReactNode }[] = [
     {
+        question: "Was ist Treatflow?",
+        answer: "Treatflow ist eine All-in-One-App für den Studioalltag: Termine, Kundenakte, digitale Formulare und Behandlungsdokumentation hängen in einem System zusammen – ohne Provision pro Buchung. Entwickelt in Österreich, Daten auf EU-Servern."
+    },
+    {
+        question: "Für wen ist Treatflow?",
+        answer: <>Für Studios, die Behandlungen durchführen – von Kosmetik über Ästhetik und Laser bis Nagel, Wimpern, Permanent Makeup, Massage und Spa. Mehr zur <Link href="/aesthetische-medizin-software" className="text-indigo-600 hover:underline">Ästhetik-Software</Link> und zur <Link href="/kundenkartei-software" className="text-indigo-600 hover:underline">Kundenkartei</Link>.</>
+    },
+    {
         question: "Wie lange kann ich Treatflow kostenlos testen?",
         answer: "Du kannst Treatflow 14 Tage lang vollkommen kostenlos testen. Keine Kreditkarte erforderlich, keine versteckten Kosten. Nach dem Testzeitraum kannst du entscheiden, ob du weitermachen möchtest."
     },

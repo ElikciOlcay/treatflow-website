@@ -28,6 +28,7 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import SocialProofBar from "./components/SocialProofBar";
 import Footer from "./components/Footer";
 import { buildHreflangAlternates } from "./i18n/seo";
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./components/AiAnswerCapsule";
 
 export const metadata: Metadata = {
   title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
@@ -158,7 +159,7 @@ const faqSchema = {
       "name": "Was ist Treatflow?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Treatflow ist eine Software für Kosmetikstudios mit Terminkalender, digitaler Kundenkartei, Online-Buchungen, Anamnese-Formularen und Behandlungsdokumentation. Die App ist NiSV-konform und wurde bereits von über 500 Studios getestet. Made in Austria."
+        "text": "Treatflow ist eine All-in-One-App für den Studioalltag: Termine, Kundenakte, digitale Formulare und Behandlungsdokumentation hängen in einem System zusammen – ohne Provision pro Buchung. Entwickelt in Österreich, Daten auf EU-Servern. Optional gibt es eine TSE-/RKSV-Kasse."
       }
     },
     {
@@ -191,6 +192,30 @@ const faqSchema = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Mit Treatflow erhältst du einen persönlichen Buchungslink. Kunden wählen dort Termin und Behandlung; der Kalender wird automatisch aktualisiert. Erinnerungen und Nachrichten können automatisiert werden, was No-Shows reduziert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Für wen ist Treatflow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treatflow ist für Studios, die Behandlungen durchführen, nicht nur Termine verkaufen: Kosmetik, Ästhetik, Laser, Nagel, Wimpern, Permanent Makeup, Massage und Spa. Vom Einzelunternehmen bis zum kleinen Team. Kein Marktplatz für Endkunden, sondern Software fürs Studio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie verwalte ich Kundenkontakte ohne teure Software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eine digitale Kundenkartei ersetzt Papier und Excel: Kontakte, Behandlungshistorie, Allergien und Fotos liegen an einem Ort. Treatflow bietet das ab 39 Euro pro Monat im Basic-Plan, 14 Tage kostenlos testen ohne Kreditkarte. Daten liegen DSGVO-konform auf EU-Servern."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche Software eignet sich für ästhetische Medizin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treatflow ist Praxissoftware für ästhetische Kliniken und Praxen mit Patientenakte, Aufklärungsbögen, Behandlungsdokumentation und Terminen. Details unter https://www.treatflow.io/aesthetische-medizin-software."
       }
     },
     {
@@ -343,6 +368,19 @@ export default function Home() {
         </section>
 
         <SocialProofBar />
+
+        <div className="px-4 sm:px-6 lg:px-8 bg-white pt-12 pb-10">
+          <AiAnswerCapsuleGroup>
+            <AiAnswerCapsule
+              question="Was ist Treatflow?"
+              answer="Treatflow ist eine All-in-One-App für den Studioalltag: Termine, Kundenakte, digitale Formulare und Behandlungsdokumentation hängen in einem System zusammen – ohne Provision pro Buchung. Entwickelt in Österreich, Daten auf EU-Servern. Optional gibt es eine TSE-/RKSV-Kasse."
+            />
+            <AiAnswerCapsule
+              question="Für wen ist Treatflow?"
+              answer="Für Studios, die Behandlungen durchführen, nicht nur Termine verkaufen: Kosmetik, Ästhetik, Laser, Nagel, Wimpern, Permanent Makeup, Massage und Spa. Vom Einzelunternehmen bis zum kleinen Team. Kein Marktplatz für Endkunden, sondern Software fürs Studio."
+            />
+          </AiAnswerCapsuleGroup>
+        </div>
 
         {/* 3. Problem → Lösung */}
         <ChallengeSelector />

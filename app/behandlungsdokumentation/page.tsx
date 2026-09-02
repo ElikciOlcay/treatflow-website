@@ -38,7 +38,11 @@ export const metadata = {
 const faqs = [
     {
         question: 'Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?',
-        answer: 'Treatflow bietet eine spezialisierte Behandlungsdokumentation für Kosmetikstudios. Mit KI-Unterstützung, Vorher-Nachher-Fotos, Behandlungsparametern und NiSV-konformer Archivierung dokumentierst du professionell und rechtssicher.',
+        answer: 'Treatflow dokumentiert Behandlungen digital mit Vorher-Nachher-Fotos, Parametern, Notizen und Unterschrift. Für NiSV-pflichtige Anwendungen ist eine konforme Dokumentation gesetzlich vorgeschrieben – Treatflow unterstützt genau diesen Workflow.',
+    },
+    {
+        question: 'Wie dokumentiere ich den Behandlungsverlauf in der Ästhetik?',
+        answer: 'Jede Sitzung erhält einen Eintrag mit Parametern, Chargen, Fotos und Notizen. Die Historie in der Patientenakte zeigt den Verlauf über mehrere Termine. Notizen kannst du sprechen; Treatflow macht daraus Text und kann ihn optional mit KI glätten.',
     },
     {
         question: 'Ist Behandlungsdokumentation im Kosmetikstudio Pflicht?',
@@ -55,6 +59,14 @@ const faqs = [
     {
         question: 'Was muss bei NiSV-Behandlungen dokumentiert werden?',
         answer: 'Beratungsprotokoll, Einwilligung, Geräteeinstellungen (z. B. Energie, Frequenz, Impulsdauer), Behandlungsgebiet, Hautreaktion und Nachsorgehinweise.',
+    },
+    {
+        question: 'Kann ich Behandlungsnotizen diktieren statt tippen?',
+        answer: 'Ja. In der Dokumentation sprichst du die Notizen. Treatflow wandelt Sprache in Text um und kann den Text optional mit KI glätten. Die Akte wird nicht vollautomatisch geschrieben.',
+    },
+    {
+        question: 'Kann ich Behandlungszonen auf Fotos oder Skizzen markieren?',
+        answer: 'Vorher-Nachher-Fotos speicherst du direkt zur Behandlung. Zonen markierst du auf den Fotos; in Formularen gibt es Skizzenfelder mit Gesicht- oder Körpervorlage. Es gibt kein separates Bodychart-Modul.',
     },
 ];
 
@@ -112,10 +124,16 @@ export default function BehandlungsdokumentationPage() {
                 description="Fotos, Notizen und Parameter an einem Ort – mit KI-Unterstützung. Beim nächsten Termin weißt du sofort, was gemacht wurde."
                 chips={['Vorher-Nachher-Fotos', 'KI-Diktat', 'NiSV-konform']}
                 secondaryCta={{ label: 'NiSV-Dokumentation', href: '/nisv-dokumentation' }}
-                aiCapsule={{
-                    question: 'Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?',
-                    answer: 'Treatflow dokumentiert Behandlungen digital mit Vorher-Nachher-Fotos, Parametern, Notizen und Unterschrift. Für NiSV-pflichtige Anwendungen ist eine konforme Dokumentation gesetzlich vorgeschrieben – Treatflow unterstützt genau diesen Workflow.',
-                }}
+                aiCapsules={[
+                    {
+                        question: 'Welche Software eignet sich für Behandlungsdokumentation in der Kosmetik?',
+                        answer: 'Treatflow dokumentiert Behandlungen digital mit Vorher-Nachher-Fotos, Parametern, Notizen und Unterschrift. Für NiSV-pflichtige Anwendungen ist eine konforme Dokumentation gesetzlich vorgeschrieben – Treatflow unterstützt genau diesen Workflow.',
+                    },
+                    {
+                        question: 'Wie dokumentiere ich den Behandlungsverlauf in der Ästhetik?',
+                        answer: 'Jede Sitzung erhält einen Eintrag mit Parametern, Produkten, Fotos und Notizen. Die Historie bleibt in der Patientenakte. Du kannst Notizen diktieren; Treatflow macht daraus Text und kann ihn optional glätten.',
+                    },
+                ]}
                 dateModified={PAGE_DATE_MODIFIED}
                 datePublished={PAGE_DATE_PUBLISHED}
                 image={{
@@ -137,12 +155,12 @@ export default function BehandlungsdokumentationPage() {
                     {
                         icon: Brain,
                         title: 'Per Sprache oder KI erfassen',
-                        text: 'Diktiere deine Notizen oder lass dir von der KI Vorschlaege machen. Weniger Tippen, mehr Zeit für die Behandlung.',
+                        text: 'Diktiere deine Notizen. Treatflow macht daraus Text und kann ihn optional mit KI glätten. Weniger Tippen, mehr Zeit für die Behandlung.',
                     },
                     {
                         icon: Shield,
                         title: 'Rechtlich auf der sicheren Seite',
-                        text: 'Bei NiSV-Behandlungen (Laser, IPL etc.) brauchst du eine lueckenlose Dokumentation – die ist damit automatisch abgedeckt.',
+                        text: 'Bei NiSV-Behandlungen (Laser, IPL etc.) brauchst du eine lückenlose Dokumentation – die ist damit automatisch abgedeckt.',
                     },
                 ]}
             />
@@ -164,7 +182,7 @@ export default function BehandlungsdokumentationPage() {
                 items={[
                     { icon: Camera, title: 'Vorher-Nachher-Fotos', text: 'Fotos direkt zur Behandlung speichern und chronologisch vergleichen.', points: ['Gleicher Kontext', 'Am Kundenprofil', 'DSGVO-konform'] },
                     { icon: Mic, title: 'Sprach-Diktat', text: 'Notizen sprechen statt tippen – ideal während oder direkt nach der Behandlung.', points: ['Hands-free', 'Schnell', 'Klar formuliert'] },
-                    { icon: Brain, title: 'KI-Assistent', text: 'Vorschläge für Notizen und strukturierte Einträge, damit nichts fehlt.', points: ['Textvorschläge', 'Struktur', 'Weniger Aufwand'] },
+                    { icon: Brain, title: 'KI-Assistent', text: 'Optional den diktierten Text glätten und strukturieren – du prüfst den Eintrag vor dem Speichern.', points: ['Text glätten', 'Struktur', 'Weniger Tippaufwand'] },
                     { icon: FileText, title: 'Parameter & Produkte', text: 'Gerätewerte, Produkte und Einstellungen sauber festhalten.', points: ['Laser/IPL', 'Produkte', 'Nachsorge'] },
                     { icon: PenTool, title: 'Digitale Unterschrift', text: 'Einwilligung oder Bestätigung digital am Tablet erfassen.', points: ['Am Gerät', 'Im Profil', 'Nachvollziehbar'] },
                     { icon: Shield, title: 'NiSV-tauglich', text: 'Für apparative Behandlungen die Pflichtfelder abdecken und archivieren.', points: ['Beratung', 'Einwilligung', 'Archiv'] },

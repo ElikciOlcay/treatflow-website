@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import Breadcrumbs from './Breadcrumbs';
-import AiAnswerCapsule from './AiAnswerCapsule';
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from './AiAnswerCapsule';
 import ContentAttribution from './ContentAttribution';
 import { APP_REGISTER_URL } from '../i18n/market-access';
 
@@ -107,6 +107,7 @@ type FeatureHeroProps = {
     primaryCta?: { label: string; href: string; external?: boolean };
     secondaryCta?: { label: string; href: string };
     aiCapsule?: { question: string; answer: string };
+    aiCapsules?: { question: string; answer: string }[];
     dateModified?: string;
     datePublished?: string;
     image?: {
@@ -143,6 +144,7 @@ export default function FeatureHero({
     primaryCta = DEFAULT_PRIMARY,
     secondaryCta,
     aiCapsule,
+    aiCapsules,
     dateModified,
     datePublished,
     image,
@@ -150,6 +152,7 @@ export default function FeatureHero({
     children,
 }: FeatureHeroProps) {
     const t = featureHeroThemes[theme];
+    const capsules = aiCapsules && aiCapsules.length > 0 ? aiCapsules : aiCapsule ? [aiCapsule] : [];
 
     return (
         <>
@@ -257,18 +260,26 @@ export default function FeatureHero({
                 </div>
             </section>
 
-            {(aiCapsule || (dateModified && datePublished)) && (
+            {(capsules.length > 0 || (dateModified && datePublished)) && (
                 <section className="pt-12 pb-10 bg-white border-b border-gray-100">
-                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                        {aiCapsule && (
-                            <AiAnswerCapsule
-                                question={aiCapsule.question}
-                                answer={aiCapsule.answer}
-                                className="!mt-0 !mx-0"
-                            />
+                    <div className={`${capsules.length > 1 ? 'max-w-6xl' : 'max-w-4xl'} mx-auto px-4 sm:px-6 lg:px-8`}>
+                        {capsules.length > 0 && (
+                            <AiAnswerCapsuleGroup>
+                                {capsules.map((capsule) => (
+                                    <AiAnswerCapsule
+                                        key={capsule.question}
+                                        question={capsule.question}
+                                        answer={capsule.answer}
+                                    />
+                                ))}
+                            </AiAnswerCapsuleGroup>
                         )}
                         {dateModified && datePublished && (
-                            <ContentAttribution dateModified={dateModified} datePublished={datePublished} />
+                            <ContentAttribution
+                                dateModified={dateModified}
+                                datePublished={datePublished}
+                                className={capsules.length > 0 ? 'mt-6' : ''}
+                            />
                         )}
                     </div>
                 </section>

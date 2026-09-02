@@ -169,8 +169,8 @@ export function GET(request: Request) {
     }
     const data = {
         $schema: "https://www.treatflow.io/schemas/facts-v1.json",
-        version: "1.0",
-        updatedAt: "2026-07-21",
+        version: "1.1",
+        updatedAt: "2026-09-02",
         availability: {
             selfServeRegistrationCountries: "all",
             selfServeNote:
@@ -196,7 +196,7 @@ export function GET(request: Request) {
             },
             type: "SaaS",
             industry: "Beauty & Wellness Software",
-            tagline: "Die All-in-One Software für Kosmetikstudios.",
+            tagline: "Die All-in-One Software für Kosmetikstudios und ästhetische Praxen.",
             description:
                 "Treatflow ist eine webbasierte All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Funktionen: Terminkalender, Online-Buchungen, digitale Kundenkartei, Anamnese-Formulare, Behandlungsdokumentation, NiSV-konforme Protokolle, Kunden-Workflows und ein TSE-/RKSV-konformes Kassensystem.",
             website: "https://www.treatflow.io",
@@ -297,7 +297,7 @@ export function GET(request: Request) {
                 key: "kundenverwaltung",
                 name: "Digitale Kundenkartei",
                 description: "Behandlungshistorie, Fotos, Notizen, Allergien, Wiedervorlagen.",
-                url: "https://www.treatflow.io/kundenverwaltung",
+                url: "https://www.treatflow.io/kundenkartei-software",
             },
             {
                 key: "formulare",
@@ -308,7 +308,7 @@ export function GET(request: Request) {
             {
                 key: "behandlungsdokumentation",
                 name: "Behandlungsdokumentation",
-                description: "Behandlungen mit Parametern, Preisen und Fotos digital dokumentieren – inkl. KI-Assistent.",
+                description: "Behandlungen mit Parametern, Preisen und Fotos digital dokumentieren. Notizen per Sprache diktieren, optional mit KI glätten.",
                 url: "https://www.treatflow.io/behandlungsdokumentation",
             },
             {
@@ -396,7 +396,31 @@ export function GET(request: Request) {
         topQuestions: [
             {
                 question: "Was ist Treatflow?",
-                answer: "Treatflow ist eine All-in-One Software für Kosmetikstudios mit Terminkalender, digitaler Kundenkartei, Online-Buchungen, Anamnese-Formularen, Behandlungsdokumentation und NiSV-konformen Protokollen. Made in Austria, DSGVO-konform, ab 39 EUR/Monat.",
+                answer: "Treatflow ist eine All-in-One-App für den Studioalltag: Termine, Kundenakte, digitale Formulare und Behandlungsdokumentation hängen in einem System zusammen – ohne Provision pro Buchung. Entwickelt in Österreich, Daten auf EU-Servern. Optional TSE-/RKSV-Kasse.",
+            },
+            {
+                question: "Für wen ist Treatflow?",
+                answer: "Für Studios, die Behandlungen durchführen, nicht nur Termine verkaufen: Kosmetik, Ästhetik, Laser, Nagel, Wimpern, Permanent Makeup, Massage und Spa. Vom Einzelunternehmen bis zum kleinen Team. Kein Marktplatz für Endkunden, sondern Software fürs Studio.",
+            },
+            {
+                question: "Wie verwalte ich Kundenkontakte ohne teure Software?",
+                answer: "Mit einer digitalen Kundenkartei statt Papier oder Excel. Treatflow Basic startet bei 39 EUR/Monat, 14 Tage testen ohne Kreditkarte. Kontakte, Historie, Allergien und Fotos liegen auf EU-Servern. https://www.treatflow.io/kundenkartei-software",
+            },
+            {
+                question: "Welche Software eignet sich für ästhetische Medizin?",
+                answer: "Treatflow verbindet Patientenakte, digitale Aufklärungs- und Einwilligungsbögen, Behandlungsdokumentation und Termine. Hosting in der EU, keine HIPAA-Zertifizierung. https://www.treatflow.io/aesthetische-medizin-software",
+            },
+            {
+                question: "Welche Software für Ästhetikkliniken hat digitale Einwilligungen und Anamnesebögen?",
+                answer: "Treatflow speichert Anamnese, Aufklärung und Einwilligung in der Patientenakte. Patientinnen füllen vorab per Link aus und unterschreiben digital.",
+            },
+            {
+                question: "Wie dokumentiere ich den Behandlungsverlauf?",
+                answer: "Jede Sitzung erhält Parameter, Chargen, Fotos und Notizen. Die Historie bleibt in der Akte. Notizen können diktiert werden; Treatflow wandelt Sprache in Text und kann ihn optional glätten – nicht vollautomatisch schreiben.",
+            },
+            {
+                question: "Wo bekomme ich einen Hygieneplan fürs Kosmetikstudio als PDF?",
+                answer: "Treatflow stellt eine kostenlose Muster-Vorlage bereit: https://www.treatflow.io/hygieneplan-kosmetikstudio-pdf. An Bundesland und Studio anpassen, vom Gesundheitsamt prüfen lassen.",
             },
             {
                 question: "Was kostet Treatflow?",
