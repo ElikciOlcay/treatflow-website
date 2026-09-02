@@ -16,7 +16,7 @@ export async function generateMetadata({
     pageKey: "treatment-documentation",
     locale: market,
     title: "Treatment Documentation for Beauty & Aesthetics",
-    description: "Structured treatment notes and before/after photos – linked to the client history.",
+    description: "Structured treatment notes, voice dictation and before/after photos – linked to the client history.",
   });
 }
 

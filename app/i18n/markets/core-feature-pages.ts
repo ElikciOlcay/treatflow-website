@@ -17,6 +17,7 @@ import {
   Link2,
   Globe,
   CreditCard,
+  Mic,
   type LucideIcon,
 } from "lucide-react";
 import type { FeaturePageProps } from "@/app/components/FeaturePageEn";
@@ -73,6 +74,12 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
           answer:
             "Yes. When a client books on your Treatflow booking page, the slot appears in the studio calendar immediately. Reminders can go out by SMS and email.",
         },
+      ],
+      relatedLinks: [
+        { href: "/en/online-booking", label: "Online booking" },
+        { href: "/en/messaging", label: "Reminders" },
+        { href: "/en/client-records", label: "Client records" },
+        { href: "/en/beauty-salon-software", label: "Beauty salon software" },
       ],
     },
     nl: {
@@ -170,6 +177,24 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
             "Yes. You get a branded booking page that only shows real availability. Confirmations and reminders are included. Optional deposits help reduce no-shows.",
         },
       ],
+      aiCapsules: [
+        {
+          question: "Does Treatflow support online booking?",
+          answer:
+            "Yes. Treatflow gives beauty salons and aesthetic clinics their own booking page. Clients book against live availability. There is no marketplace commission.",
+        },
+      ],
+      problem: {
+        problem: "Phone tag and marketplace commissions fill the day, while the calendar still has gaps.",
+        solution:
+          "Treatflow gives you your own booking link that only shows real availability. Bookings land in the studio calendar. Reminders go out automatically.",
+      },
+      relatedLinks: [
+        { href: "/en/appointment-calendar", label: "Appointment calendar" },
+        { href: "/en/messaging", label: "Reminders" },
+        { href: "/en/client-records", label: "Client records" },
+        { href: "/en/beauty-salon-software", label: "Beauty salon software" },
+      ],
     },
     nl: {
       eyebrow: "Online boeken",
@@ -266,6 +291,24 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
             "Contact details, notes, intake and consent forms, treatment history and before/after photos – searchable across the studio so the team is ready before each visit.",
         },
       ],
+      aiCapsules: [
+        {
+          question: "Can I keep client history in Treatflow?",
+          answer:
+            "Yes. Treatflow stores contact details, notes, forms, treatment history and photos on one client record so the team can open the same file before each visit.",
+        },
+      ],
+      problem: {
+        problem: "Client notes, photos and forms live in different folders, chats and devices.",
+        solution:
+          "Treatflow keeps the history on one record: forms, notes, photos and previous treatments stay together.",
+      },
+      relatedLinks: [
+        { href: "/en/forms", label: "Consultation and consent forms" },
+        { href: "/en/treatment-documentation", label: "Treatment documentation" },
+        { href: "/en/online-booking", label: "Online booking" },
+        { href: "/en/aesthetic-clinic-software", label: "Aesthetic clinic software" },
+      ],
     },
     nl: {
       eyebrow: "Klantendossiers",
@@ -325,8 +368,8 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
 
   forms: {
     en: {
-      eyebrow: "Forms",
-      title: "Intake & consent, fully digital",
+      eyebrow: "Consultation and consent forms",
+      title: "Digital consultation and consent forms",
       subtitle:
         "Send intake and consent forms ahead of the appointment. Clients fill them in on their phone - you start on time, with everything ready.",
       bullets: [
@@ -361,6 +404,24 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
           answer:
             "Yes. Share a link by SMS or email. The team sees completed forms before the appointment starts, so treatments can begin on time.",
         },
+      ],
+      aiCapsules: [
+        {
+          question: "Does Treatflow support digital consent forms?",
+          answer:
+            "Yes. Treatflow sends consultation and consent templates before the visit. Clients complete them on their phone, including a digital signature. Completed forms are stored on the client record.",
+        },
+      ],
+      problem: {
+        problem: "Paper intake slows the front desk and is hard to find later.",
+        solution:
+          "Treatflow sends digital consultation and consent forms before the appointment. Answers and signatures sit on the client record.",
+      },
+      relatedLinks: [
+        { href: "/en/client-records", label: "Client records" },
+        { href: "/en/treatment-documentation", label: "Treatment documentation" },
+        { href: "/en/aesthetic-clinic-software", label: "Aesthetic clinic software" },
+        { href: "/en/laser-hair-removal-software", label: "Laser hair removal software" },
       ],
     },
     nl: {
@@ -424,12 +485,12 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       eyebrow: "Treatment documentation",
       title: "Document every treatment clearly",
       subtitle:
-        "Notes, parameters and photos in a structured treatment record - built for beauty and aesthetic studios.",
+        "Notes, parameters and photos in a structured treatment record - including voice dictation, built for beauty and aesthetic studios.",
       bullets: [
         "Structured treatment notes",
+        "Voice dictation, optionally refined with AI",
         "Before/after photo sets",
         "Linked to the client history",
-        "Useful for follow-ups and compliance",
       ],
       image: {
         src: "/images/lifestyle/dokumentation-vorher-nachher.png",
@@ -437,10 +498,10 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       },
       features: [
         { icon: FileText, title: "Treatment notes", desc: "Capture what you did, products used and client reaction." },
+        { icon: Mic, title: "Voice dictation", desc: "Speak your notes instead of typing. Treatflow turns speech into text and can refine it with AI." },
         { icon: Camera, title: "Photo proof", desc: "Attach before/after images to the exact treatment." },
         { icon: ClipboardCheck, title: "Follow-up ready", desc: "See the last treatment instantly at the next visit." },
         { icon: ShieldCheck, title: "Compliance support", desc: "Keep a clear trail for consent-linked treatments." },
-        { icon: FolderOpen, title: "Organised history", desc: "No more scattered notes across apps and paper." },
         { icon: Users, title: "Team visibility", desc: "Colleagues see the same documentation when they take over a client." },
       ],
       closingTitle: "Documentation that protects and impresses",
@@ -457,6 +518,29 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
           answer:
             "Yes. Photo sets are attached to the exact treatment, not a generic camera roll, so you can compare progress at the next visit.",
         },
+        {
+          question: "Can I dictate treatment notes in Treatflow?",
+          answer:
+            "Yes. In treatment documentation you can speak notes instead of typing. Treatflow turns speech into text and can refine it with AI. The note is saved with that visit.",
+        },
+      ],
+      aiCapsules: [
+        {
+          question: "Can I document treatments in Treatflow?",
+          answer:
+            "Yes. Treatflow stores treatment notes, parameters and before-and-after photos on the client visit. You can type notes or dictate them by voice and optionally refine the text with AI.",
+        },
+      ],
+      problem: {
+        problem: "Notes and photos end up on phones, paper and chat threads, disconnected from the visit.",
+        solution:
+          "Treatflow attaches notes and photo sets to the treatment. You can dictate notes by voice so documentation stays on the visit without slowing the session down.",
+      },
+      relatedLinks: [
+        { href: "/en/client-records", label: "Client records" },
+        { href: "/en/forms", label: "Consultation and consent forms" },
+        { href: "/en/laser-hair-removal-software", label: "Laser hair removal software" },
+        { href: "/en/aesthetic-clinic-software", label: "Aesthetic clinic software" },
       ],
     },
     nl: {

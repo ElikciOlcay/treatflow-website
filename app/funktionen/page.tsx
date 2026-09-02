@@ -214,26 +214,26 @@ export default function FunktionenPage() {
                             <Link
                                 key={feature.href}
                                 href={feature.href}
-                                className="group block bg-white border border-gray-100 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl"
+                                className="group flex h-full flex-col bg-white border border-gray-100 rounded-3xl p-7 hover:border-indigo-200 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
                             >
-                                <div className={`w-12 h-12 ${feature.bg} ${feature.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                                    <feature.icon className="h-6 w-6" />
+                                <div className={`w-11 h-11 ${feature.bg} ${feature.color} rounded-xl flex items-center justify-center mb-4`}>
+                                    <feature.icon className="h-5 w-5" />
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors">
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
                                     {feature.title}
                                 </h3>
-                                <p className="text-gray-600 mb-5 leading-relaxed">
+                                <p className="text-sm text-gray-600 mb-5 leading-relaxed flex-1">
                                     {feature.description}
                                 </p>
-                                <ul className="space-y-2 mb-6">
+                                <ul className="space-y-2 mb-5">
                                     {feature.highlights.map((h) => (
-                                        <li key={h} className="flex items-center text-sm text-gray-700">
-                                            <CheckCircle className={`h-4 w-4 ${feature.color} mr-2 flex-shrink-0`} />
+                                        <li key={h} className="flex items-center text-sm text-gray-600">
+                                            <CheckCircle className="h-4 w-4 text-indigo-500 mr-2 flex-shrink-0" />
                                             {h}
                                         </li>
                                     ))}
                                 </ul>
-                                <span className="inline-flex items-center text-sm font-medium text-indigo-600 group-hover:text-indigo-700">
+                                <span className="inline-flex items-center text-sm font-medium text-indigo-600 mt-auto">
                                     Mehr erfahren
                                     <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                                 </span>

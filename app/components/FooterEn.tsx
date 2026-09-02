@@ -42,7 +42,7 @@ const featureLabels: Record<
     vouchers: "Vouchers",
     booking: "Online booking",
     records: "Client records",
-    forms: "Forms",
+    forms: "Consultation & consent",
     docs: "Treatment documentation",
     messaging: "Messaging",
     integrations: "Integrations",

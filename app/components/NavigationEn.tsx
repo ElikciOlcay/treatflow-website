@@ -132,7 +132,7 @@ const featureDefs: {
     slug: EN_SLUGS.forms,
     group: "clients",
     label: {
-      en: "Forms",
+      en: "Consultation & consent",
       nl: "Formulieren",
       fi: "Lomakkeet",
     },

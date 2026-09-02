@@ -16,7 +16,7 @@ export async function generateMetadata({
   return buildPageMetadata({
     pageKey: "messaging",
     locale: market,
-    title: content.title,
+    title: "Appointment Reminders & Follow-up Messages",
     description: content.subtitle,
   });
 }

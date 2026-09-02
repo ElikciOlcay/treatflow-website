@@ -55,25 +55,25 @@ const cta: Record<
       "Start your free trial – no credit card required, cancel anytime.",
   },
   es: {
-    earlyAccessHref: "/es/acceso-anticipado",
-    primaryCta: "Solicitar acceso anticipado",
+    earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
+    primaryCta: "Start 14-day free trial",
     bottomTitle: "¿Listo para empezar?",
     bottomText:
-      "Solicita acceso anticipado para tu país. El registro directo está disponible en Alemania, Austria y Suiza.",
+      "Empieza tu prueba gratuita de 14 días – sin tarjeta, cancela cuando quieras.",
   },
   it: {
-    earlyAccessHref: "/it/accesso-anticipato",
-    primaryCta: "Richiedi accesso anticipato",
+    earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
+    primaryCta: "Start 14-day free trial",
     bottomTitle: "Pronto a iniziare?",
     bottomText:
-      "Richiedi l'accesso anticipato per il tuo Paese. La registrazione diretta è disponibile in Germania, Austria e Svizzera.",
+      "Inizia la prova gratuita di 14 giorni – nessuna carta, disdici quando vuoi.",
   },
   fr: {
-    earlyAccessHref: "/fr/acces-anticipe",
-    primaryCta: "Demander un accès anticipé",
+    earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
+    primaryCta: "Start 14-day free trial",
     bottomTitle: "Prêt à commencer ?",
     bottomText:
-      "Demandez un accès anticipé pour votre pays. L'inscription directe est disponible en Allemagne, Autriche et Suisse.",
+      "Démarrez l'essai gratuit de 14 jours – sans carte, résiliable à tout moment.",
   },
 };
 
@@ -548,6 +548,36 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
       closingTitle: "Stay in touch without the busywork",
       closingText:
         "Messaging automation keeps clients informed and loyal while your team focuses on treatments – not typing the same messages again.",
+      faqs: [
+        {
+          question: "Can Treatflow send appointment reminders?",
+          answer:
+            "Yes. Treatflow can send automatic SMS and email reminders before an appointment. Confirmations go out when the client books.",
+        },
+        {
+          question: "Can Treatflow automate client messages?",
+          answer:
+            "Yes. Besides reminders, you can send follow-ups after treatments and reactivation messages. Timing is configurable.",
+        },
+      ],
+      aiCapsules: [
+        {
+          question: "Does Treatflow send appointment reminders?",
+          answer:
+            "Yes. Treatflow sends booking confirmations and automatic SMS or email reminders so clients are less likely to miss their appointment.",
+        },
+      ],
+      problem: {
+        problem: "No-shows and forgotten follow-ups leave gaps that the team has to fill by phone.",
+        solution:
+          "Treatflow sends confirmations, reminders and follow-ups automatically, tied to the appointment in the calendar.",
+      },
+      relatedLinks: [
+        { href: "/en/online-booking", label: "Online booking" },
+        { href: "/en/appointment-calendar", label: "Appointment calendar" },
+        { href: "/en/beauty-salon-software", label: "Beauty salon software" },
+        { href: "/en/laser-hair-removal-software", label: "Laser hair removal software" },
+      ],
     },
     es: {
       eyebrow: "Mensajería y recordatorios",
@@ -755,6 +785,30 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
       closingTitle: "One source of truth for your studio",
       closingText:
         "Integrations keep Treatflow at the centre of your operations while your favourite tools stay in the loop – automatically.",
+      faqs: [
+        {
+          question: "Does Treatflow integrate with Google Calendar?",
+          answer:
+            "Yes. Treatflow can sync with Google Calendar so personal and studio appointments stay aligned.",
+        },
+        {
+          question: "Does Treatflow work with Zapier?",
+          answer:
+            "Yes. On the Booking plan you can connect Treatflow to other tools through Zapier, for example spreadsheets or email workflows.",
+        },
+      ],
+      aiCapsules: [
+        {
+          question: "Does Treatflow integrate with Google Calendar?",
+          answer:
+            "Yes. Treatflow can sync with Google Calendar so personal and studio appointments stay aligned.",
+        },
+      ],
+      relatedLinks: [
+        { href: "/en/online-booking", label: "Online booking" },
+        { href: "/en/appointment-calendar", label: "Appointment calendar" },
+        { href: "/en/features", label: "All features" },
+      ],
     },
     es: {
       eyebrow: "Integraciones",
@@ -962,6 +1016,19 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
       closingTitle: "Built for beauty studios – not generic booking tools",
       closingText:
         "Treatflow combines the features salons actually use every day, so you spend less time switching apps and more time growing the business.",
+      faqs: [
+        {
+          question: "What features does Treatflow include?",
+          answer:
+            "Treatflow includes an appointment calendar, online booking without commission, client records, digital consultation and consent forms, treatment documentation with photos and voice dictation, reminders, integrations, shop and vouchers. Checkout and POS features depend on the country.",
+        },
+      ],
+      relatedLinks: [
+        { href: "/en/online-booking", label: "Online booking" },
+        { href: "/en/forms", label: "Consultation and consent" },
+        { href: "/en/treatment-documentation", label: "Treatment documentation" },
+        { href: "/en/pricing", label: "Pricing" },
+      ],
     },
     es: {
       eyebrow: "Todas las funciones",

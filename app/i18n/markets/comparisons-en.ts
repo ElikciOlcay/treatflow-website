@@ -1,5 +1,9 @@
 import type { EnComparisonContent } from "@/app/components/EnComparisonPage";
 
+/**
+ * Live EN comparisons. Additional `/en/compare/*` aliases (Phorest, Vagaro, Booksy, Pabau)
+ * wait for verified feature data. Do not publish thin competitor tables.
+ */
 export const vsFreshaEn: EnComparisonContent = {
   competitor: "Fresha",
   title: "Treatflow vs Fresha",

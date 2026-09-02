@@ -100,7 +100,7 @@ const rowsEn = [
   },
   {
     feature: 'Form templates',
-    treatflow: 'Ready templates and AI generator',
+    treatflow: 'Ready templates and a form shop',
     other: 'No templates',
   },
 ];

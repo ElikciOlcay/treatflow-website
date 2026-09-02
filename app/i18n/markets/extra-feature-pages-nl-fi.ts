@@ -47,18 +47,18 @@ const cta: Record<
   }
 > = {
   nl: {
-    earlyAccessHref: "/nl/early-access",
-    primaryCta: "Vraag early access aan",
+    earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
+    primaryCta: "14 dagen gratis proberen",
     bottomTitle: "Klaar om te starten?",
     bottomText:
-      "Vraag early access aan voor jouw land. Directe registratie is momenteel beschikbaar in Duitsland, Oostenrijk en Zwitserland.",
+      "Start je gratis proefperiode – geen creditcard, opzeggen wanneer je wilt.",
   },
   fi: {
-    earlyAccessHref: "/fi/early-access",
-    primaryCta: "Pyydä early access",
+    earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
+    primaryCta: "Kokeile 14 päivää ilmaiseksi",
     bottomTitle: "Valmis aloittamaan?",
     bottomText:
-      "Pyydä early access omalle maallesi. Suora rekisteröinti on tällä hetkellä saatavilla Saksassa, Itävallassa ja Sveitsissä.",
+      "Aloita ilmainen kokeilu – ei luottokorttia, peruuta milloin tahansa.",
   },
 };
 

@@ -15,6 +15,7 @@ import {
 import type { HomePageIntlContent } from "@/app/components/HomePageIntl";
 import { homeTrustIcons } from "@/app/components/HomePageIntl";
 import { BASE_URL } from "@/app/i18n/config";
+import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 
 const { Lock, Server, ShieldCheck } = homeTrustIcons;
 
@@ -60,7 +61,7 @@ function faqSchema(locale: string, items: { q: string; a: string }[]) {
 
 export const enHomePage: HomePageIntlContent = {
   locale: "en",
-  earlyAccessHref: "/en/early-access",
+  earlyAccessHref: APP_REGISTER_BY_MARKET.en,
   pricingHref: "/en/pricing",
   hero: {
     eyebrow: "For beauty salons, aesthetic clinics & laser studios",
@@ -69,7 +70,7 @@ export const enHomePage: HomePageIntlContent = {
     titleTail: "and no-shows",
     subtitle:
       "Appointments, client records, consent forms and treatment documentation in one clear app – built for beauty and aesthetic businesses worldwide.",
-    primaryCta: "Request early access",
+    primaryCta: "Start 14-day free trial",
     trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
@@ -124,13 +125,13 @@ export const enHomePage: HomePageIntlContent = {
     items: [
       { q: "What is Treatflow?", a: "Treatflow is all-in-one software for beauty salons, aesthetic clinics and laser studios: appointment calendar, digital client records, online booking, consent forms, treatment notes, photo documentation and reminders." },
       { q: "Who is Treatflow for?", a: "Treatflow is for beauty salons, aesthetic clinics, laser hair removal studios, cosmetic studios and skin care studios that want structured digital workflows – from booking to treatment documentation." },
-      { q: "How can I get started?", a: "Self-serve signup is currently available in Germany, Austria and Switzerland. For other countries, request early access and we will get back to you." },
+      { q: "How can I get started?", a: "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide." },
       { q: "Is my data secure?", a: "Yes. Treatflow is hosted on EU servers, GDPR-compliant, SSL-encrypted and backed up daily." },
     ],
   },
   cta: {
     title: "Ready to run your studio with less effort?",
-    subtitle: "Request early access and see how simple studio management can be.",
+    subtitle: "Start your free trial and see how simple studio management can be.",
     note: "Cancel anytime. GDPR-compliant. With personal support.",
   },
   schemas: {
@@ -141,14 +142,14 @@ export const enHomePage: HomePageIntlContent = {
     ),
     faq: faqSchema("en", [
       { q: "What is Treatflow?", a: "Treatflow is software for beauty salons, aesthetic clinics and laser studios with an appointment calendar, digital client records, online booking, consent forms, treatment notes, photo documentation and reminders – all in one app. Made in Austria, GDPR-compliant." },
-      { q: "How can I get started?", a: "Request early access for your country, or sign up directly if you are in Germany, Austria or Switzerland." },
+      { q: "How can I get started?", a: "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide." },
     ]),
   },
 };
 
 export const esHomePage: HomePageIntlContent = {
   locale: "es",
-  earlyAccessHref: "/es/acceso-anticipado",
+  earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
   pricingHref: "/es/precios",
   hero: {
     eyebrow: "Para salones de belleza, clínicas estéticas y centros láser",
@@ -157,7 +158,7 @@ export const esHomePage: HomePageIntlContent = {
     titleTail: "y las ausencias",
     subtitle:
       "Citas, fichas de clientes, consentimientos y documentación de tratamientos en una sola app clara – pensada para negocios de belleza y estética.",
-    primaryCta: "Solicitar acceso anticipado",
+    primaryCta: "Start free trial",
     trustItems: ["Sin tarjeta", "Listo en 2 minutos", "Migración de datos", "Soporte personal"],
     studiosLabel: "Más de 500 estudios",
     ratingValue: "4.6/5",
@@ -215,13 +216,13 @@ export const esHomePage: HomePageIntlContent = {
     items: [
       { q: "¿Qué es Treatflow?", a: "Software todo en uno para salones de belleza y clínicas estéticas: calendario, fichas, reservas online, consentimientos, documentación y recordatorios." },
       { q: "¿Para quién es?", a: "Para salones, clínicas estéticas, centros láser y estudios que quieren flujos digitales claros." },
-      { q: "¿Cómo empiezo?", a: "El registro directo está disponible en Alemania, Austria y Suiza. En otros países solicita acceso anticipado." },
+      { q: "¿Cómo empiezo?", a: "Regístrate en app.treatflow.io y empieza 14 días de prueba. Sin tarjeta." },
       { q: "¿Están seguros mis datos?", a: "Sí. Servidores en la UE, RGPD, cifrado SSL y copias diarias." },
     ],
   },
   cta: {
     title: "¿Listo para gestionar tu salón con menos esfuerzo?",
-    subtitle: "Solicita acceso anticipado para tu país.",
+    subtitle: "Empieza tu prueba gratuita – sin tarjeta.",
     note: "Cancela cuando quieras. RGPD. Con soporte personal.",
   },
   schemas: {
@@ -232,14 +233,14 @@ export const esHomePage: HomePageIntlContent = {
     ),
     faq: faqSchema("es", [
       { q: "¿Qué es Treatflow?", a: "Software para salones de belleza y clínicas estéticas con agenda, fichas, reservas, consentimientos y documentación. Cumple el RGPD." },
-      { q: "¿Cómo empiezo?", a: "Solicita acceso anticipado para tu país." },
+      { q: "¿Cómo empiezo?", a: "Regístrate en app.treatflow.io y empieza 14 días de prueba." },
     ]),
   },
 };
 
 export const itHomePage: HomePageIntlContent = {
   locale: "it",
-  earlyAccessHref: "/it/accesso-anticipato",
+  earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
   pricingHref: "/it/prezzi",
   hero: {
     eyebrow: "Per centri estetici, cliniche estetiche e studi laser",
@@ -248,7 +249,7 @@ export const itHomePage: HomePageIntlContent = {
     titleTail: "e delle mancate presenze",
     subtitle:
       "Appuntamenti, schede clienti, consensi e documentazione trattamenti in un'unica app chiara – pensata per bellezza ed estetica.",
-    primaryCta: "Richiedi accesso anticipato",
+    primaryCta: "Start free trial",
     trustItems: ["Nessuna carta", "Pronto in 2 minuti", "Migrazione dati", "Supporto personale"],
     studiosLabel: "Oltre 500 studi",
     ratingValue: "4.6/5",
@@ -306,13 +307,13 @@ export const itHomePage: HomePageIntlContent = {
     items: [
       { q: "Cos'è Treatflow?", a: "Software all-in-one per centri estetici: calendario, schede, prenotazioni online, consensi, documentazione e promemoria." },
       { q: "Per chi è?", a: "Per centri estetici, cliniche estetiche, studi laser e beauty salon." },
-      { q: "Come inizio?", a: "La registrazione diretta è disponibile in Germania, Austria e Svizzera. Negli altri Paesi richiedi l'accesso anticipato." },
+      { q: "Come inizio?", a: "Registrati su app.treatflow.io e inizia 14 giorni di prova. Nessuna carta." },
       { q: "I miei dati sono al sicuro?", a: "Sì. Server in UE, GDPR, SSL e backup giornalieri." },
     ],
   },
   cta: {
     title: "Pronto a gestire il centro con meno fatica?",
-    subtitle: "Richiedi l'accesso anticipato per il tuo Paese.",
+    subtitle: "Inizia la prova gratuita – nessuna carta.",
     note: "Disdici quando vuoi. GDPR. Con supporto personale.",
   },
   schemas: {
@@ -323,14 +324,14 @@ export const itHomePage: HomePageIntlContent = {
     ),
     faq: faqSchema("it", [
       { q: "Cos'è Treatflow?", a: "Software per centri estetici e cliniche estetiche con calendario, schede, prenotazioni, consensi e documentazione. Conforme al GDPR." },
-      { q: "Come inizio?", a: "Richiedi l'accesso anticipato per il tuo Paese." },
+      { q: "Come inizio?", a: "Registrati su app.treatflow.io e inizia 14 giorni di prova." },
     ]),
   },
 };
 
 export const frHomePage: HomePageIntlContent = {
   locale: "fr",
-  earlyAccessHref: "/fr/acces-anticipe",
+  earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
   pricingHref: "/fr/tarifs",
   hero: {
     eyebrow: "Pour instituts de beauté, cliniques esthétiques et centres laser",
@@ -339,7 +340,7 @@ export const frHomePage: HomePageIntlContent = {
     titleTail: "et des absences",
     subtitle:
       "Rendez-vous, fiches clients, consentements et documentation des soins dans une app claire – conçue pour la beauté et l'esthétique.",
-    primaryCta: "Demander un accès anticipé",
+    primaryCta: "Start free trial",
     trustItems: ["Sans carte", "Prêt en 2 minutes", "Migration des données", "Support personnel"],
     studiosLabel: "Plus de 500 instituts",
     ratingValue: "4.6/5",
@@ -397,13 +398,13 @@ export const frHomePage: HomePageIntlContent = {
     items: [
       { q: "Qu'est-ce que Treatflow ?", a: "Logiciel tout-en-un pour instituts de beauté : calendrier, fiches, réservation en ligne, consentements, documentation et rappels." },
       { q: "Pour qui ?", a: "Pour instituts, cliniques esthétiques, centres laser et studios beauté." },
-      { q: "Comment commencer ?", a: "L'inscription directe est disponible en Allemagne, Autriche et Suisse. Dans les autres pays, demandez un accès anticipé." },
+      { q: "Comment commencer ?", a: "Inscrivez-vous sur app.treatflow.io et démarrez 14 jours d'essai. Sans carte." },
       { q: "Mes données sont-elles protégées ?", a: "Oui. Serveurs UE, RGPD, SSL et sauvegardes quotidiennes." },
     ],
   },
   cta: {
     title: "Prêt à gérer votre institut plus simplement ?",
-    subtitle: "Demandez un accès anticipé pour votre pays.",
+    subtitle: "Démarrez l'essai gratuit – sans carte.",
     note: "Résiliable à tout moment. RGPD. Avec support personnel.",
   },
   schemas: {
@@ -414,7 +415,7 @@ export const frHomePage: HomePageIntlContent = {
     ),
     faq: faqSchema("fr", [
       { q: "Qu'est-ce que Treatflow ?", a: "Logiciel pour instituts de beauté et cliniques esthétiques avec agenda, fiches, réservation, consentements et documentation. Conforme au RGPD." },
-      { q: "Comment commencer ?", a: "Demandez un accès anticipé pour votre pays." },
+      { q: "Comment commencer ?", a: "Inscrivez-vous sur app.treatflow.io et démarrez 14 jours d'essai." },
     ]),
   },
 };

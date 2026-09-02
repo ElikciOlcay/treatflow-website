@@ -2,6 +2,8 @@ import { ArrowRight, CheckCircle, type LucideIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import FaqSectionEn, { type FaqEntry } from "./FaqSectionEn";
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./AiAnswerCapsule";
+import Breadcrumbs, { generateBreadcrumbSchema } from "./Breadcrumbs";
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 
 export type FeatureItem = {
@@ -27,6 +29,9 @@ export type FeaturePageProps = {
   relatedLinks?: { href: string; label: string }[];
   relatedTitle?: string;
   trustItems?: string[];
+  aiCapsules?: { question: string; answer: string }[];
+  problem?: { title?: string; problem: string; solution: string };
+  breadcrumbHomeHref?: string;
 };
 
 export default function FeaturePageEn({
@@ -46,18 +51,33 @@ export default function FeaturePageEn({
   relatedLinks,
   relatedTitle = "Related pages",
   trustItems = [
-    "GDPR / EU hosting",
+    "EU hosting",
     "14-day free trial",
     "No commission on bookings",
   ],
+  aiCapsules,
+  problem,
+  breadcrumbHomeHref = "/en",
 }: FeaturePageProps) {
   const CtaTag = earlyAccessHref.startsWith("http") ? "a" : Link;
   const ctaProps = earlyAccessHref.startsWith("http")
     ? { href: earlyAccessHref, target: "_blank", rel: "noopener noreferrer" }
     : { href: earlyAccessHref };
   return (
-    <>
-      <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+    <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateBreadcrumbSchema([{ label: eyebrow }], breadcrumbHomeHref)
+          ),
+        }}
+      />
+      <Breadcrumbs
+        homeHref={breadcrumbHomeHref}
+        items={[{ label: eyebrow }]}
+      />
+      <section className="pt-8 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <div className="order-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -99,6 +119,32 @@ export default function FeaturePageEn({
           </div>
         </div>
       </section>
+
+      {aiCapsules && aiCapsules.length > 0 && (
+        <div className="px-4 sm:px-6 lg:px-8 bg-white pt-12 pb-10">
+          <AiAnswerCapsuleGroup>
+            {aiCapsules.map((capsule) => (
+              <AiAnswerCapsule
+                key={capsule.question}
+                question={capsule.question}
+                answer={capsule.answer}
+              />
+            ))}
+          </AiAnswerCapsuleGroup>
+        </div>
+      )}
+
+      {problem && (
+        <section className="py-12 bg-white">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              {problem.title ?? "The problem Treatflow solves"}
+            </h2>
+            <p className="font-semibold text-gray-900 mb-2">{problem.problem}</p>
+            <p className="text-gray-600 leading-relaxed">{problem.solution}</p>
+          </div>
+        </section>
+      )}
 
       <section className="py-10 bg-white border-y border-gray-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -173,6 +219,6 @@ export default function FeaturePageEn({
           </CtaTag>
         </div>
       </section>
-    </>
+    </main>
   );
 }
