@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, Share2, Euro, CheckCircle, AlertTriangle } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import AiAnswerCapsule from '../../components/AiAnswerCapsule';
 
 export const metadata: Metadata = {
     title: 'Kosmetikstudio Buchhaltung: Steuertipps',
@@ -118,6 +119,12 @@ export default function BlogPost() {
                         <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
                             Kosmetikstudio Buchhaltung: Was du steuerlich absetzen kannst
                         </h1>
+
+                        <AiAnswerCapsule
+                            className="mb-6"
+                            question="Was kann ich als Kosmetikstudio steuerlich absetzen?"
+                            answer="Typische Betriebsausgaben sind Miete, Produkte, Geräte, Fortbildung, Marketing, Software und Fahrtkosten – sofern sie betrieblich veranlasst sind. Treatflow ist keine Steuerberatung; die genaue Absetzbarkeit hängt von deiner Rechtsform und dem Steuerberater ab. Studio-Software wie Treatflow hilft bei Belegen, Kasse und Umsatzübersicht."
+                        />
 
                         <p className="text-xl text-gray-600 leading-relaxed">
                             Spare bis zu 40% Steuern mit der richtigen Buchhaltung. Alle Ausgaben, die du als Kosmetikstudio-Betreiberin

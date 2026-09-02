@@ -6,13 +6,13 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import SocialProofBar from "../components/SocialProofBar";
 import Breadcrumbs, { generateBreadcrumbSchema } from "../components/Breadcrumbs";
-import AiAnswerCapsule from "../components/AiAnswerCapsule";
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "../components/AiAnswerCapsule";
 import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata: Metadata = {
-  title: "Kundenkartei App: Kosmetik & Beauty mobil verwalten",
+  title: "Kundenkartei Kosmetik: App statt Papier und Excel",
   description:
-    "Digitale Kundenkartei-App fürs Kosmetikstudio: Kundendaten, Behandlungshistorie & Vorher-Nachher-Fotos mobil auf Handy und Tablet. DSGVO-konform, keine Provision. 14 Tage kostenlos.",
+    "Digitale Kundenkartei fürs Kosmetikstudio ab 39 Euro/Monat: Kontakte, Behandlungshistorie, Fotos und Formulare. DSGVO auf EU-Servern, 14 Tage kostenlos – ohne Kreditkarte.",
   keywords: [
     "kundenkartei app",
     "app kundenkartei",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       ...buildHreflangAlternates("client-records"),
   },
   openGraph: {
-    title: "Kundenkartei App für Kosmetik & Beauty",
+    title: "Kundenkartei Kosmetik: App statt Papier und Excel",
     description:
       "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Fotos und Formulare in einer App. Kostenlos testen.",
     url: "https://www.treatflow.io/kundenkartei-software",
@@ -45,6 +45,10 @@ const breadcrumbItems = [
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems);
 
 const faqData = [
+  {
+    q: "Wie verwalte ich Kundenkontakte ohne teure Software?",
+    a: "Statt Papierkartei oder Excel reicht eine digitale Kundenakte: Kontakte, Historie, Allergien und Fotos an einem Ort. Treatflow Basic startet bei 39 Euro pro Monat, 14 Tage kostenlos testen ohne Kreditkarte. Die Daten liegen verschlüsselt auf EU-Servern.",
+  },
   {
     q: "Welche App eignet sich für die Kundenkartei im Kosmetikstudio?",
     a: "Treatflow ist eine spezialisierte Kundenkartei-App für Kosmetikstudios. Sie speichert Kundendaten, Behandlungshistorie, Allergien, Vorher-Nachher-Fotos und Formulare zentral – DSGVO-konform auf EU-Servern, abrufbar am Desktop, Tablet und Smartphone. 14 Tage kostenlos testen.",
@@ -209,11 +213,6 @@ export default function KundenkarteiSoftwarePage() {
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Deine digitale <span className="text-indigo-600">Kundenkartei</span> für Kosmetik
             </h1>
-            <AiAnswerCapsule
-              className="mb-8"
-              question="Welche App eignet sich für die Kundenkartei im Kosmetikstudio?"
-              answer="Treatflow ist eine spezialisierte Kundenkartei-App für Kosmetikstudios. Sie speichert Kundendaten, Behandlungshistorie, Allergien, Vorher-Nachher-Fotos und Formulare zentral an einem Ort – DSGVO-konform auf EU-Servern, abrufbar am Desktop, Tablet und Smartphone. 14 Tage kostenlos testen, ab 39 EUR/Monat."
-            />
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
               Kundendaten, Behandlungshistorie, Formulare und Fotos - alles an einem Ort.
               Schnell abrufbar, sicher gespeichert und ohne Zettelchaos.
@@ -238,6 +237,18 @@ export default function KundenkarteiSoftwarePage() {
               </a>
             </div>
             <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Jederzeit kündbar.</p>
+          </div>
+          <div className="mt-12">
+            <AiAnswerCapsuleGroup>
+              <AiAnswerCapsule
+                question="Wie verwalte ich Kundenkontakte ohne teure Software?"
+                answer="Mit einer digitalen Kundenkartei statt Papier oder Excel: Kontakte, Behandlungshistorie, Allergien und Fotos an einem Ort. Treatflow Basic liegt bei 39 Euro pro Monat, 14 Tage testen ohne Kreditkarte. Daten werden verschlüsselt in der EU gespeichert."
+              />
+              <AiAnswerCapsule
+                question="Welche App eignet sich für die Kundenkartei im Kosmetikstudio?"
+                answer="Treatflow ist eine Kundenkartei-App für Kosmetikstudios. Kundendaten, Historie, Formulare und Vorher-Nachher-Fotos liegen zentral – am Desktop, Tablet und Smartphone. DSGVO-konform auf EU-Servern."
+              />
+            </AiAnswerCapsuleGroup>
           </div>
         </div>
       </section>

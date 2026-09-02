@@ -9,6 +9,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from '../components/AiAnswerCapsule';
 import { generateFaqSchema } from '@/lib/schema';
 
 import { buildHreflangAlternates } from "@/app/i18n/seo";
@@ -16,70 +17,70 @@ const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Ästhetische Medizin S
 
 const faqs = [
     {
-        question: 'Ist Treatflow für medizinisch-ästhetische Behandlungen geeignet?',
-        answer: 'Ja, Treatflow unterstützt die Dokumentation von Botox, Fillern, Mesotherapie, PRP und weiteren ästhetischen Behandlungen. Die Formulare sind flexibel anpassbar.',
+        question: 'Welche Software eignet sich für ästhetische Medizin?',
+        answer: 'Treatflow ist Praxissoftware für ästhetische Kliniken und Praxen in Deutschland, Österreich und der Schweiz. Sie verbindet Patientenakte, Behandlungsdokumentation, digitale Aufklärungs- und Einwilligungsbögen, Terminverwaltung und Online-Buchung. Daten liegen verschlüsselt auf EU-Servern.',
+    },
+    {
+        question: 'Welche Software für Ästhetikkliniken hat digitale Aufklärungsbögen und Einwilligungen?',
+        answer: 'Treatflow speichert Aufklärungs- und Einwilligungsbögen direkt in der Patientenakte. Patientinnen füllen sie vorab per Link aus und unterschreiben am Tablet oder Smartphone. Zeitstempel und Dokument bleiben in der Akte nachvollziehbar.',
+    },
+    {
+        question: 'Welche Software für Ästhetikkliniken hat digitale Anamnesebögen?',
+        answer: 'In Treatflow liegen Anamnesebögen im Formular-Marktplatz bereit und lassen sich anpassen. Du verschickst sie vor dem Termin per Link; ausgefüllte Bögen landen automatisch in der Patientenakte – DSGVO-konform in der EU.',
+    },
+    {
+        question: 'Welche Software für Ästhetikkliniken hat einen integrierten Behandlungsplan?',
+        answer: 'Treatflow bildet den Behandlungsplan in der Patientenakte ab: geplante und durchgeführte Sitzungen, dokumentierte Parameter, verwendete Produkte und Vorher-Nachher-Fotos. Der Verlauf bleibt über mehrere Termine hinweg sichtbar.',
+    },
+    {
+        question: 'Ist die Patientenakte in Treatflow DSGVO-konform?',
+        answer: 'Ja. Patientendaten werden verschlüsselt auf EU-Servern gespeichert. Einwilligungen holst du digital ein, Zugriffe bleiben auf berechtigte Mitarbeiter begrenzt. Treatflow ist für sensible Gesundheitsdaten in der DACH-Region ausgelegt; es ist keine HIPAA-Zertifizierung.',
+    },
+    {
+        question: 'Wie dokumentiere ich den Behandlungsverlauf in der Ästhetik?',
+        answer: 'Jede Sitzung erhält einen Eintrag mit Parametern, Chargen, Fotos und Notizen. Die Historie zeigt den Verlauf je Patientin. Notizen kannst du sprechen; Treatflow wandelt Sprache in Text um und kann den Text optional mit KI glätten.',
+    },
+    {
+        question: 'Gibt es Bodycharts oder Skizzen für Behandlungszonen?',
+        answer: 'In Formularen kannst du Skizzenfelder mit Gesicht- oder Körpervorlage nutzen. In der Dokumentation markierst du Zonen auf Vorher-Nachher-Fotos. Es gibt kein separates Bodychart-Produkt – Skizze und Foto gehören zur Patientenakte.',
+    },
+    {
+        question: 'Eignet sich Treatflow als Praxismanagement-Software für ästhetische Medizin?',
+        answer: 'Ja. Treatflow deckt Patientenverwaltung, Termine, Dokumentation, Formulare, Erinnerungen und optional die Kasse ab. Es ist auf Behandlungen in Kosmetik und Ästhetik spezialisiert, nicht auf ein vollständiges Krankenhaus-KIS.',
+    },
+    {
+        question: 'Welche Terminsoftware eignet sich für ästhetische Medizin?',
+        answer: 'Treatflow kombiniert Kalender mit Mitarbeiter- und Raumspalten, Online-Buchung für Beratung und Behandlung sowie Erinnerungen per SMS und E-Mail. Neue Buchungen landen direkt im Kalender, ohne Provision pro Termin.',
     },
     {
         question: 'Kann ich Chargennummern von Produkten dokumentieren?',
-        answer: 'Ja, du kannst bei jeder Behandlung die verwendeten Produkte mit Chargennummern und Dosierungen dokumentieren. So ist die Rückverfolgbarkeit jederzeit gewährleistet.',
+        answer: 'Ja. Bei jeder Behandlung dokumentierst du verwendete Produkte mit Chargennummern und Dosierungen. Die Angaben bleiben in der Akte und sind für Rückverfolgbarkeit abrufbar.',
     },
     {
         question: 'Erfüllt die Software die Anforderungen der NiSV?',
-        answer: 'Ja, Treatflow unterstützt die NiSV-konforme Dokumentation für nicht-invasive Anwendungen wie Laser, IPL und Ultraschall-Behandlungen.',
-    },
-    {
-        question: 'Können Patienten Formulare vorab digital ausfüllen?',
-        answer: 'Ja, du kannst deinen Patienten einen Link senden. Sie füllen Anamnesebogen und Einwilligungen bequem vorab aus und unterschreiben digital.',
-    },
-    {
-        question: 'Ist Treatflow DSGVO-konform für Patientendaten?',
-        answer: 'Absolut. Alle Daten werden verschlüsselt in EU-Rechenzentren gespeichert. Treatflow erfüllt alle Anforderungen der DSGVO für sensible Gesundheitsdaten.',
-    },
-    {
-        question: 'Bietet Treatflow eine Online-Terminbuchung für Ästhetikkliniken?',
-        answer: 'Treatflow bietet eine integrierte Online-Terminbuchung speziell für Ästhetikkliniken und ästhetische Praxen. Patienten buchen Beratungs- und Behandlungstermine rund um die Uhr über einen persönlichen Buchungslink, automatische Bestätigungen und Erinnerungen per E-Mail und SMS sind inklusive.',
-    },
-    {
-        question: 'Sind digitale Einwilligungserklärungen in Treatflow integriert?',
-        answer: 'Treatflow vereint Aufklärungs- und Einwilligungserklärungen direkt mit der Patientenakte. Patienten füllen Formulare vorab digital aus und unterschreiben rechtssicher per Touchscreen – lückenlos dokumentiert und jederzeit abrufbar.',
+        answer: 'Ja. Treatflow unterstützt die NiSV-konforme Dokumentation für nicht-invasive Anwendungen wie Laser, IPL und Ultraschall – inklusive Beratung, Einwilligung und Geräteparametern.',
     },
     {
         question: 'Ist Treatflow als Software für Ästhetikkliniken in Deutschland, Österreich und der Schweiz geeignet?',
-        answer: 'Treatflow ist eine in der DACH-Region entwickelte Praxissoftware für ästhetische Medizin mit Behandlungsdokumentation, digitalen Einwilligungen, Patientenverwaltung und Online-Buchung. Die Daten liegen DSGVO-konform auf EU-Servern, und die Software ist für Kliniken in Deutschland, Österreich und der Schweiz geeignet.',
+        answer: 'Ja. Treatflow ist in Österreich entwickelt und für Praxen in der DACH-Region gedacht. Hosting erfolgt auf EU-Servern, die Kasse erfüllt TSE (Deutschland) und RKSV (Österreich) als Add-on zum Booking-Plan.',
     },
     {
-        question: 'Wie dokumentiere ich Behandlungsverläufe in Treatflow?',
-        answer: 'Treatflow bildet Behandlungsverläufe lückenlos ab: mit Behandlungsvorlagen, dokumentierten Parametern, Vorher-Nachher-Fotos und der kompletten Historie je Patient. So sind mehrstufige Behandlungen jederzeit nachvollziehbar.',
-    },
-    {
-        question: 'Welche Möglichkeiten bietet Treatflow für digitale Anamnesebögen?',
-        answer: 'Treatflow enthält digitale Anamnesebögen mit einem Formular-Marktplatz, individuell anpassbaren Vorlagen und einem KI-Formular-Generator. Patienten füllen sie vorab per Link aus und unterschreiben digital – papierfrei und DSGVO-konform.',
+        question: 'Welche KI-Funktionen bietet Treatflow?',
+        answer: 'In der Dokumentation diktiert ihr Notizen; Treatflow macht daraus Text und kann ihn optional mit KI glätten. Formulare erstellt ihr aus Vorlagen, im Editor oder mit dem KI-Formular-Generator. Treatflow schreibt die Akte nicht vollautomatisch.',
     },
     {
         question: 'Wie verwalte ich Mitarbeiter und werte Umsätze in Treatflow aus?',
-        answer: 'Treatflow verwaltet Mitarbeiter mit eigenen Kalendern, Arbeitszeiten und Leistungen. In den Statistiken siehst du Umsätze und Termine – auch gefiltert pro Mitarbeiter – und behältst so die Leistung deines Teams im Blick.',
+        answer: 'Mitarbeiter haben eigene Kalender, Arbeitszeiten und Leistungen. Statistiken zeigen Umsatz und Termine – auch gefiltert pro Mitarbeiter.',
     },
     {
         question: 'Welche Zahlungsfunktionen bietet die Treatflow Kasse?',
         answer: 'Mit der Treatflow Kasse kassierst du bar, per Karte (SumUp oder Stripe Terminal), Gutschein oder Überweisung – TSE- und RKSV-konform. Belege werden automatisch erstellt und lassen sich als PDF drucken oder per E-Mail versenden.',
     },
-    {
-        question: 'Wie hilft Treatflow beim Marketing meiner Ästhetikpraxis?',
-        answer: 'Treatflow automatisiert Terminerinnerungen, Geburtstagsgrüße und Nachsorge-Nachrichten per E-Mail und SMS. Rabattcodes und ein Empfehlungsprogramm helfen zusätzlich, neue Patienten zu gewinnen und bestehende zu binden.',
-    },
-    {
-        question: 'Welche Auswertungen und Reports bietet Treatflow?',
-        answer: 'Das Statistik-Dashboard von Treatflow wertet Umsatz, Termine, Kunden, Leistungen und Produktverkäufe aus – mit Filtern nach Zeitraum, Mitarbeiter und Leistung. So hast du alle Kennzahlen deiner Klinik auf einen Blick.',
-    },
-    {
-        question: 'Welche KI-Funktionen bietet Treatflow?',
-        answer: 'Treatflow setzt KI dort ein, wo sie Zeit spart: Behandlungen lassen sich per Sprache diktieren, die KI schreibt die Dokumentation mit und verbessert den Text. Auch Formulare erstellst du mit dem KI-Generator in Sekunden.',
-    },
 ];
 
 export const metadata = {
-    title: 'Software ästhetische Medizin: Doku, Einwilligung & Termine',
-    description: 'Software für Ästhetikkliniken & ästhetische Medizin: rechtssichere Behandlungsdoku, digitale Einwilligungen, Patientenverwaltung & Online-Termine. NiSV- & DSGVO-konform, EU-Server. 14 Tage gratis testen.',
+    title: 'Software für Ästhetikkliniken: Akte, Doku & Einwilligung',
+    description: 'Praxissoftware für ästhetische Medizin: digitale Patientenakte, Aufklärungsbögen, Behandlungsverlauf und Termine. DSGVO auf EU-Servern, NiSV-tauglich. 14 Tage gratis testen.',
     keywords: [
         'Ästhetische Medizin Software',
         'Software ästhetische Praxis',
@@ -98,8 +99,8 @@ export const metadata = {
         ...buildHreflangAlternates("aesthetic-clinic-software"),
     },
     openGraph: {
-        title: 'Software für ästhetische Medizin: Doku & Praxis',
-        description: 'Behandlungsdokumentation, digitale Einwilligungen und Patientenverwaltung für ästhetische Praxen.',
+        title: 'Software für Ästhetikkliniken: Akte, Doku & Einwilligung',
+        description: 'Patientenakte, Aufklärungsbögen, Behandlungsverlauf und Termine für ästhetische Praxen. DSGVO, EU-Server.',
         url: 'https://www.treatflow.io/aesthetische-medizin-software',
         images: [
             {
@@ -182,7 +183,7 @@ const solutions = [
 
 const stats = [
     { value: '100%', label: 'digital dokumentiert', description: 'lückenlose Behandlungsdokumentation' },
-    { value: '80%', label: 'weniger Verwaltung', description: 'durch digitale Formulare' },
+    { value: '1', label: 'Patientenakte', description: 'Historie, Fotos und Formulare' },
     { value: '24/7', label: 'online buchbar', description: 'für Beratung und Behandlung' },
     { value: 'EU', label: 'Datenspeicherung', description: 'DSGVO-konform verschlüsselt' },
 ];
@@ -258,6 +259,18 @@ export default function AesthetischeMedizinSoftwarePage() {
                             </a>
                         </div>
                         <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
+                    </div>
+                    <div className="mt-12">
+                        <AiAnswerCapsuleGroup>
+                            <AiAnswerCapsule
+                                question="Welche Software eignet sich für ästhetische Medizin?"
+                                answer="Treatflow ist Praxissoftware für ästhetische Kliniken und Praxen. Sie verbindet Patientenakte, Behandlungsdokumentation, digitale Aufklärungs- und Einwilligungsbögen sowie Termine in einer App. Daten liegen verschlüsselt auf EU-Servern. 14 Tage kostenlos testen."
+                            />
+                            <AiAnswerCapsule
+                                question="Welche Software für Ästhetikkliniken hat digitale Aufklärungsbögen?"
+                                answer="In Treatflow gehören Aufklärung, Einwilligung und Anamnese zur Patientenakte. Patientinnen füllen Bögen vorab per Link aus und unterschreiben digital. Der Behandlungsverlauf inklusive Fotos und Chargen bleibt in der Akte nachvollziehbar."
+                            />
+                        </AiAnswerCapsuleGroup>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
                         <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
@@ -357,6 +370,7 @@ export default function AesthetischeMedizinSoftwarePage() {
                             'Digitale Aufklärung mit Unterschrift',
                             'Produkt- und Chargendokumentation',
                             'Vorher-Nachher Fotodokumentation',
+                            'Skizzenfelder für Gesicht und Körper',
                             'Umfassende Patientenakte',
                             'Online-Terminbuchung',
                             'Automatische Terminerinnerungen per SMS',
@@ -397,7 +411,7 @@ export default function AesthetischeMedizinSoftwarePage() {
                             <span className="text-sm text-gray-600 block mb-2">Online-Buchung & Kalender</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
-                        <Link href="/kundenverwaltung" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                        <Link href="/kundenkartei-software" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
                             <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Kundenkartei</span>
                             <span className="text-sm text-gray-600 block mb-2">Kundendaten & Historie</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>

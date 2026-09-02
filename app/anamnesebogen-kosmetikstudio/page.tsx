@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import LeadDownloadForm from '../components/LeadDownloadForm';
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from '../components/AiAnswerCapsule';
 
 export const metadata = {
     title: 'Anamnesebogen Kosmetik: Formulare & Vorlagen',
@@ -187,6 +188,10 @@ const features = [
 
 const faqs = [
     {
+        q: 'Welche Anamnesebögen braucht ein Kosmetikstudio?',
+        a: 'Mindestens einen Anamnesebogen und eine Einwilligung, plus DSGVO-Hinweis. Bei Laser, IPL oder ähnlichen Anwendungen kommen NiSV-Aufklärung und Beratungsprotokoll hinzu. Treatflow liefert Vorlagen und digitale Unterschrift.',
+    },
+    {
         q: 'Gibt es fertige Anamnesebogen-Vorlagen?',
         a: 'Ja, Treatflow enthält professionelle Vorlagen für Kosmetik, Laser, Permanent Make-up, Microneedling und mehr. Du kannst sie sofort verwenden oder individuell anpassen.',
     },
@@ -209,6 +214,10 @@ const faqs = [
     {
         q: 'Was kostet die digitale Anamnese?',
         a: 'Digitale Anamnesebögen und Formulare sind in jedem Treatflow-Plan enthalten. 14 Tage kostenlos testen - ab 39 EUR/Monat.',
+    },
+    {
+        q: 'Gibt es einen digitalen Aufklärungsbogen für ästhetische Behandlungen?',
+        a: 'Ja. Treatflow enthält Aufklärungs- und Einwilligungsbögen, die du an ästhetische Behandlungen anpassen kannst. Patientinnen füllen vorab aus und unterschreiben digital; das Dokument landet in der Akte.',
     },
 ];
 
@@ -294,6 +303,18 @@ export default function AnamnesebogenKosmetikstudioPage() {
                             </a>
                         </div>
                         <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
+                    </div>
+                    <div className="mt-12">
+                        <AiAnswerCapsuleGroup>
+                            <AiAnswerCapsule
+                                question="Welche Anamnesebögen braucht ein Kosmetikstudio?"
+                                answer="Mindestens Anamnese, Einwilligung und DSGVO-Hinweis. Bei Laser oder IPL kommen NiSV-Aufklärung und Beratungsprotokoll hinzu. Treatflow liefert Vorlagen, Vorab-Link und digitale Unterschrift – ab 39 Euro im Monat, 14 Tage testen."
+                            />
+                            <AiAnswerCapsule
+                                question="Können Kundinnen den Anamnesebogen vorab ausfüllen?"
+                                answer="Ja. Du sendest einen Link per E-Mail oder SMS. Die Kundin füllt zu Hause aus und unterschreibt digital. Das Formular landet automatisch in der Kundenakte, DSGVO-konform auf EU-Servern."
+                            />
+                        </AiAnswerCapsuleGroup>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
                         <Image

@@ -64,6 +64,10 @@ const faqs = [
         question: 'Wie vermeide ich Doppelbelegungen bei Mitarbeitern und Räumen?',
         answer: 'Treatflow stellt die Auslastung von Mitarbeitern und Räumen übersichtlich nebeneinander dar. Freie und belegte Zeiten sind direkt erkennbar, sodass Engpässe und Doppelbelegungen frühzeitig vermieden werden.',
     },
+    {
+        question: 'Welche Terminsoftware eignet sich für ästhetische Medizin?',
+        answer: 'Treatflow kombiniert Kalender mit Mitarbeiter- und Raumspalten, Online-Buchung für Beratung und Behandlung sowie Erinnerungen per SMS und E-Mail. Neue Buchungen landen direkt im Kalender, ohne Provision pro Termin.',
+    },
 ];
 
 const faqSchema = {
@@ -146,10 +150,16 @@ export default function TerminkalenderPage() {
                 description="Mitarbeiter, Räume und Termine in einer Ansicht. Per Drag & Drop umplanen und Doppelbelegungen vermeiden."
                 chips={['Drag & Drop', 'Team & Räume', 'Weniger No-Shows']}
                 secondaryCta={{ label: 'Online-Buchungen', href: '/online-buchungen' }}
-                aiCapsule={{
-                    question: 'Wie organisiere ich Termine im Kosmetikstudio am besten?',
-                    answer: 'Treatflow bündelt Termine, Mitarbeiter und Räume in einem Kalender. Die Tagesansicht zeigt jede Person oder jeden Raum in einer eigenen Spalte. Dadurch erkennst du freie Kapazitäten, vermeidest Doppelbelegungen und koordinierst Änderungen schneller. Online-Buchungen und automatische Erinnerungen reduzieren zusätzlich Telefonaufwand und No-Shows.',
-                }}
+                aiCapsules={[
+                    {
+                        question: 'Wie organisiere ich Termine im Kosmetikstudio am besten?',
+                        answer: 'Treatflow bündelt Termine, Mitarbeiter und Räume in einem Kalender. Die Tagesansicht zeigt jede Person oder jeden Raum in einer eigenen Spalte. Dadurch erkennst du freie Kapazitäten, vermeidest Doppelbelegungen und koordinierst Änderungen schneller. Online-Buchungen und automatische Erinnerungen reduzieren zusätzlich Telefonaufwand und No-Shows.',
+                    },
+                    {
+                        question: 'Welche Terminsoftware eignet sich für ästhetische Medizin?',
+                        answer: 'Treatflow kombiniert Kalender mit Mitarbeiter- und Raumspalten, Online-Buchung für Beratung und Behandlung sowie Erinnerungen per SMS und E-Mail. Buchungen landen ohne Provision im Kalender.',
+                    },
+                ]}
                 dateModified={PAGE_DATE_MODIFIED}
                 datePublished={PAGE_DATE_PUBLISHED}
                 image={{

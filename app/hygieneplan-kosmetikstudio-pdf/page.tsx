@@ -8,6 +8,7 @@ import Script from "next/script";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import LeadDownloadForm from "../components/LeadDownloadForm";
+import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "../components/AiAnswerCapsule";
 
 export const metadata: Metadata = {
     title: "Hygieneplan Kosmetikstudio PDF: Kostenlose Vorlage",
@@ -98,6 +99,16 @@ const faqData = [
         answer:
             "Ja. Mit einer Studio-Software wie Treatflow kannst du Formulare, Checklisten und Dokumentationen digital verwalten. Das hat den Vorteil, dass alles zentral gespeichert, versioniert und bei Kontrollen sofort abrufbar ist – ohne Papierchaos.",
     },
+    {
+        question: "Gibt es einen Hygieneplan Kosmetikstudio als PDF kostenlos?",
+        answer:
+            "Ja. Treatflow stellt eine kostenlose Muster-Vorlage als PDF bereit. Du trägst deine E-Mail ein und erhältst den Download. Die Vorlage ist für Kosmetik-, Nagel- und Wimpernstudios gedacht und sollte an dein Studio und dein Bundesland angepasst werden.",
+    },
+    {
+        question: "Gibt es eine Hygieneplan-Vorlage für NRW, Bayern oder das Gesundheitsamt?",
+        answer:
+            "Die Treatflow-Vorlage ist ein allgemeines Muster. Anforderungen unterscheiden sich je nach Bundesland. Passe den Plan an die Hygieneverordnung deines Landes an und lass ihn bei Bedarf vom zuständigen Gesundheitsamt prüfen.",
+    },
 ];
 
 const faqSchema = {
@@ -163,6 +174,14 @@ export default function HygieneplanKosmetikstudioPdfPage() {
                                 Orientierung für dein Kosmetikstudio, Nagelstudio oder Beauty-Studio.
                                 Sofort einsetzbar und individuell anpassbar.
                             </p>
+                            <div className="mb-6">
+                                <AiAnswerCapsuleGroup>
+                                    <AiAnswerCapsule
+                                        question="Wo bekomme ich einen Hygieneplan fürs Kosmetikstudio als PDF?"
+                                        answer="Treatflow stellt eine kostenlose Muster-Vorlage bereit. Nach Angabe der E-Mail startet der Download. Die Vorlage deckt Reinigung, Desinfektion und Dokumentation ab und ist an Kosmetik-, Nagel- und Wimpernstudios anpassbar. Sie ersetzt keine individuelle Prüfung durch das Gesundheitsamt."
+                                    />
+                                </AiAnswerCapsuleGroup>
+                            </div>
                             <div className="space-y-3 mb-8">
                                 {[
                                     "Muster-Hygieneplan als PDF-Download",
