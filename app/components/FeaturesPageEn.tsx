@@ -252,11 +252,12 @@ export default function FeaturesPageEn() {
           </div>
           <div className="order-2 relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[4/3] lg:min-h-[400px] lg:aspect-auto">
             <Image
-              src="/images/lifestyle/hero-startseite-kalender.png"
-              alt="Treatflow calendar and studio workspace on a laptop"
+              src="/images/lifestyle/hero-startseite-en.png"
+              alt="Treatflow on laptop and tablet in a clinic: calendar, checkout and client records"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover object-center"
+              quality={85}
               priority
             />
           </div>
