@@ -1004,18 +1004,58 @@ export const countryHomePages: Record<
 
 /** Generische englische Homepage (nicht laenderbezogen). */
 function englishHomePage(): HomePageIntlContent {
+  const faqs = [
+    {
+      q: "What is Treatflow?",
+      a: "Treatflow is all-in-one beauty salon software for salons and aesthetic clinics. It combines an appointment calendar, online booking without commission, digital client records, consent forms, treatment notes, photo documentation and reminders in one app. Made in Austria, hosted on EU servers.",
+    },
+    {
+      q: "Is Treatflow beauty salon software without booking commission?",
+      a: "Yes. Treatflow is studio software, not a marketplace. You keep your client data and pay a transparent monthly fee. There is no commission per booking.",
+    },
+    {
+      q: "Who is Treatflow for?",
+      a: "Treatflow is for beauty salons, aesthetic clinics, laser studios, permanent makeup studios, nail and lash studios, spas and massage practices that want fewer no-shows, GDPR-ready consent workflows and structured treatment documentation.",
+    },
+    {
+      q: "Does Treatflow include digital consent forms for aesthetic clinics?",
+      a: "Yes. Clients can complete intake and consent forms on their phone before the visit. Answers are stored on the client record, with signatures where required.",
+    },
+    {
+      q: "Can laser hair removal studios document treatments in Treatflow?",
+      a: "Yes. Treatment documentation includes parameters, notes and before/after photos. Studios in Germany and Austria can also use NiSV-style consultation protocols.",
+    },
+    {
+      q: "Are digital client records GDPR compliant?",
+      a: "Treatflow is hosted on EU servers in Frankfurt, uses SSL encryption and daily backups. Client records, forms and documentation stay in one system designed for GDPR.",
+    },
+    {
+      q: "How much does Treatflow cost?",
+      a: "Basic starts at €39/month for client records, forms and documentation. Booking starts at €59/month and adds calendar, online booking and reminders. 14-day free trial, no credit card required.",
+    },
+    {
+      q: "How can I get started?",
+      a: "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Cancel anytime.",
+    },
+  ];
+
   return {
-    ...usHomePage,
     locale: "en",
     earlyAccessHref: APP_REGISTER_BY_MARKET.en,
     pricingHref: "/en/pricing",
     hero: {
-      ...usHomePage.hero,
       eyebrow: "For beauty salons and aesthetic clinics",
+      titleLead: "Cut no-shows,",
+      titleHighlight: "keep your clients",
+      titleTail: "and skip the paperwork",
       subtitle:
-        "Appointments, online booking, client records, consent forms and treatment documentation – all in one clear app. Built for beauty salons and aesthetic clinics worldwide.",
+        "Appointments, online booking without commission, client records, consent forms and treatment documentation – all in one clear app. Built in Austria for studios worldwide.",
+      primaryCta: "Start free trial",
+      trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
+      studiosLabel: "500+ studios",
+      ratingValue: "4.6/5",
       image: {
-        ...usHomePage.hero.image,
+        ...heroImage,
         alt: "Treatflow appointment calendar open on a laptop in a modern beauty studio",
       },
     },
@@ -1023,12 +1063,12 @@ function englishHomePage(): HomePageIntlContent {
       {
         question: "What is Treatflow?",
         answer:
-          "Treatflow is all-in-one software for beauty salons and aesthetic clinics. It combines online booking, client records, digital consent forms, treatment notes and photo documentation in one platform. No commission on bookings.",
+          "Treatflow is all-in-one software for beauty salons and aesthetic clinics. Appointment calendar, online booking with no commission, client records, digital consent forms, treatment notes and photo documentation. Hosted in the EU. 14-day free trial.",
       },
       {
-        question: "Who is Treatflow for?",
+        question: "Does Treatflow charge a booking commission?",
         answer:
-          "Treatflow is for beauty salons, med spas, aesthetic clinics, laser studios and skin care businesses that want fewer no-shows, clearer consent workflows and structured treatment documentation.",
+          "No. Treatflow is not a marketplace. Studios pay a fixed monthly plan (Basic from €39, Booking from €59) and keep 100% of their booking revenue.",
       },
     ],
     trustBar: [
@@ -1037,26 +1077,74 @@ function englishHomePage(): HomePageIntlContent {
       { icon: Shield, text: "Daily backups" },
       { icon: ShieldCheck, text: "GDPR-ready consent" },
     ],
-    faqs: {
-      ...usHomePage.faqs,
+    features: {
+      title: "The most important features at a glance",
+      subtitle: "Everything clearly structured so you and your team can work fast.",
+      ctaNote: "No credit card. Cancel anytime.",
       items: [
-        {
-          q: "What is Treatflow?",
-          a: "Treatflow is all-in-one software for beauty salons and aesthetic clinics: appointment calendar, online booking, digital client records, consent forms, treatment notes, photo documentation and reminders. No commission on bookings.",
-        },
-        {
-          q: "Who is Treatflow for?",
-          a: "Treatflow is for beauty salons, med spas, aesthetic clinics, laser studios and skin care studios that want fewer no-shows, better consent workflows and structured treatment documentation.",
-        },
-        {
-          q: "How can I get started?",
-          a: "You can register directly and start a 14-day free trial – no credit card required.",
-        },
-        {
-          q: "Is my data secure?",
-          a: "Yes. Treatflow is hosted on EU servers, SSL-encrypted and backed up daily. Consent and client workflows are designed with strong privacy controls.",
-        },
+        { icon: CalendarDays, label: "Appointment calendar", desc: "Day, week and month views with staff and room columns.", color: featureColors.calendar },
+        { icon: Users, label: "Online booking", desc: "Your own booking link, 24/7. No marketplace, no commission.", color: featureColors.booking },
+        { icon: ClipboardCheck, label: "Consent forms", desc: "Digital intake and consent, signed on phone or in studio.", color: featureColors.consent },
+        { icon: FileText, label: "Client records", desc: "History, notes, photos and forms in one GDPR-ready record.", color: featureColors.records },
+        { icon: Shield, label: "Treatment documentation", desc: "Parameters, notes and before/after photos per visit.", color: featureColors.docs },
+        { icon: Bell, label: "Reminders", desc: "Automatic SMS and email reminders that cut no-shows.", color: featureColors.reminders },
+        { icon: Workflow, label: "Digital workflows", desc: "From booking to documentation in one system.", color: featureColors.workflows },
       ],
+    },
+    extras: {
+      title: "And Treatflow can do even more",
+      subtitle: "Handy extras that make your studio day even easier – already included.",
+      items: [
+        { icon: BarChart3, label: "Statistics & reports", desc: "Revenue, appointments, clients and top services at a glance." },
+        { icon: Mic, label: "AI dictation", desc: "Speak your treatment notes – Treatflow writes them for you." },
+        { icon: Languages, label: "Multilingual booking", desc: "Clients book in their own language on your booking page." },
+        { icon: Ticket, label: "Discount codes", desc: "Promotions and new-client codes for online booking." },
+        { icon: ListChecks, label: "Tasks & team notes", desc: "Tasks with due dates and read receipts for your team." },
+      ],
+    },
+    faqs: {
+      title: "Frequently asked questions",
+      pricingLinkLabel: "See pricing",
+      items: faqs,
+    },
+    cta: {
+      title: "Ready for calmer days and fewer no-shows?",
+      subtitle: "Start Treatflow today – 14-day free trial, no credit card required.",
+      note: "14-day free trial · No credit card · Cancel anytime",
+    },
+    schemas: {
+      software: {
+        ...softwareSchema(
+          "en",
+          "/en",
+          "All-in-one beauty salon software for salons and aesthetic clinics: appointments, online booking without commission, client records, consent forms and treatment documentation. GDPR-ready EU hosting. Made in Austria."
+        ),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Basic",
+            price: "39",
+            priceCurrency: "EUR",
+            description: "Client records, forms and treatment documentation",
+          },
+          {
+            "@type": "Offer",
+            name: "Booking",
+            price: "59",
+            priceCurrency: "EUR",
+            description: "Calendar, online booking and automatic reminders",
+          },
+        ],
+        featureList: [
+          "Appointment calendar with staff and room columns",
+          "Online booking without commission",
+          "Digital client records",
+          "Consent and intake forms",
+          "Treatment documentation with photos",
+          "SMS and email reminders",
+        ],
+      },
+      faq: faqSchema("en", faqs),
     },
   };
 }
@@ -1146,9 +1234,9 @@ export const countryHomeMeta: Record<
   { title: string; description: string }
 > = {
   en: {
-    title: "Salon & Aesthetic Clinic Software",
+    title: "Beauty Salon Software without Commission",
     description:
-      "All-in-one software for beauty salons and aesthetic clinics. Appointments, online booking, client records, consent forms and treatment documentation. No booking commissions. Start your free trial.",
+      "All-in-one beauty salon software for salons and aesthetic clinics. Appointments, online booking without commission, GDPR-ready client records, consent forms and treatment documentation. 14-day free trial.",
   },
   us: {
     title: "Salon & Med Spa Software for the United States",

@@ -35,7 +35,7 @@ export async function generateMetadata({
       template: "%s | Treatflow",
     },
     description:
-      "Manage appointments, online booking, client records, consent forms and treatment documentation - all in one app. GDPR-compliant.",
+      "Manage appointments, online booking without commission, client records, consent forms and treatment documentation – all in one app. GDPR-ready EU hosting. 14-day free trial.",
     alternates: {
       canonical: `${BASE_URL}${prefix}`,
       ...buildHreflangAlternates("home"),

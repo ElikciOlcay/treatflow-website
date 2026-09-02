@@ -15,7 +15,6 @@ import {
   Bell,
   Plug,
   ShoppingBag,
-  Receipt,
   Sparkles,
   Zap,
   Palette,
@@ -52,7 +51,7 @@ type FeatureGroupId = "appointments" | "clients" | "sales";
 const featureGroupTitles: Record<FeatureGroupId, L10n> = {
   appointments: { en: "Appointments", nl: "Afspraken", fi: "Ajanvaraukset" },
   clients: { en: "Clients", nl: "Klanten", fi: "Asiakkaat" },
-  sales: { en: "Checkout & sales", nl: "Kassa & verkoop", fi: "Kassa & myynti" },
+  sales: { en: "Sales", nl: "Verkoop", fi: "Myynti" },
 };
 
 const featureGroupOrder: FeatureGroupId[] = ["appointments", "clients", "sales"];
@@ -160,22 +159,6 @@ const featureDefs: {
     },
     icon: FileText,
     color: "text-blue-600 bg-blue-100",
-  },
-  {
-    slug: EN_SLUGS["point-of-sale"],
-    group: "sales",
-    label: {
-      en: "Point of sale",
-      nl: "Kassa",
-      fi: "Kassa",
-    },
-    desc: {
-      en: "Compliant checkout for your studio",
-      nl: "Conform afrekenen in je studio",
-      fi: "Sääntöjenmukainen kassa studiollesi",
-    },
-    icon: Receipt,
-    color: "text-green-600 bg-green-100",
   },
   {
     slug: EN_SLUGS.vouchers,
@@ -419,6 +402,7 @@ export default function NavigationEn({
 
   const featuresOverviewHref = `${base}/${EN_SLUGS.features}`;
   const pricingHref = `${base}/${EN_SLUGS.pricing}`;
+  const newsHref = `${base}/${EN_SLUGS.news}`;
   const contactHref = `${base}/${EN_SLUGS.contact}`;
 
   const ctaClass =
@@ -519,6 +503,12 @@ export default function NavigationEn({
               {dict.nav.pricing}
             </Link>
             <Link
+              href={newsHref}
+              className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
+            >
+              {dict.nav.news}
+            </Link>
+            <Link
               href={contactHref}
               className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
             >
@@ -614,6 +604,13 @@ export default function NavigationEn({
             onClick={() => setMobileOpen(false)}
           >
             {dict.nav.pricing}
+          </Link>
+          <Link
+            href={newsHref}
+            className="block text-sm font-medium text-gray-700 hover:text-indigo-600"
+            onClick={() => setMobileOpen(false)}
+          >
+            {dict.nav.news}
           </Link>
           <Link
             href={contactHref}

@@ -3,8 +3,9 @@
 import { useState, type ReactNode } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 import Link from 'next/link';
+import { DEMO_BOOKING_URL } from '@/app/i18n/market-access';
 
-const faqs: { question: string; answer: ReactNode }[] = [
+const faqsDe: { question: string; answer: ReactNode }[] = [
     {
         question: "Wie lange kann ich Treatflow kostenlos testen?",
         answer: "Du kannst Treatflow 14 Tage lang vollkommen kostenlos testen. Keine Kreditkarte erforderlich, keine versteckten Kosten. Nach dem Testzeitraum kannst du entscheiden, ob du weitermachen möchtest."
@@ -43,8 +44,49 @@ const faqs: { question: string; answer: ReactNode }[] = [
     }
 ];
 
-export default function FAQSection() {
+const faqsEn: { question: string; answer: ReactNode }[] = [
+    {
+        question: "How long can I try Treatflow for free?",
+        answer: "You can try Treatflow for 14 days, no credit card and no hidden fees. After the trial you decide whether to continue.",
+    },
+    {
+        question: "What is the difference between Basic and Booking?",
+        answer: <>Basic (€39/month) includes unlimited <Link href="/en/client-records" className="text-indigo-600 hover:underline">client records</Link>, form templates and the form shop. Booking (€59/month) adds the <Link href="/en/appointment-calendar" className="text-indigo-600 hover:underline">appointment calendar</Link>, online booking without commission and automatic <Link href="/en/messaging" className="text-indigo-600 hover:underline">reminders</Link>.</>,
+    },
+    {
+        question: "Is Treatflow GDPR compliant?",
+        answer: <>Treatflow is hosted on EU servers in Frankfurt, uses SSL encryption and daily backups. <Link href="/en/forms" className="text-indigo-600 hover:underline">Consent forms</Link> and <Link href="/en/treatment-documentation" className="text-indigo-600 hover:underline">treatment documentation</Link> sit on the client record.</>,
+    },
+    {
+        question: "Can I import my existing client data?",
+        answer: <>Yes. We help you migrate existing clients into the <Link href="/en/client-records" className="text-indigo-600 hover:underline">digital client record</Link> at no extra cost.</>,
+    },
+    {
+        question: "Does Treatflow work on a phone?",
+        answer: "Yes. Treatflow runs in the browser on computer, tablet and smartphone. No install required.",
+    },
+    {
+        question: "What happens to my data if I cancel?",
+        answer: "You stay in control. You can export your data. We only delete it after a transition period.",
+    },
+    {
+        question: "Do I need technical skills?",
+        answer: "No. Sign in in the browser and start. If you get stuck, our support team helps.",
+    },
+    {
+        question: "Does Treatflow charge a booking commission?",
+        answer: "No. Treatflow is studio software, not a marketplace. You pay a monthly plan and keep 100% of booking revenue.",
+    },
+    {
+        question: "Can I manage unlimited clients?",
+        answer: "Yes. There is no client cap. The system scales from solo studios to teams.",
+    },
+];
+
+export default function FAQSection({ locale = 'de' }: { locale?: 'de' | 'en' }) {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const faqs = locale === 'en' ? faqsEn : faqsDe;
+    const isEn = locale === 'en';
 
     const toggleFAQ = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -56,14 +98,18 @@ export default function FAQSection() {
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                         <HelpCircle className="h-4 w-4" />
-                        Häufige Fragen
+                        {isEn ? 'FAQ' : 'Häufige Fragen'}
                     </div>
                     <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                        Noch Fragen?
-                        <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> Wir haben Antworten!</span>
+                        {isEn ? 'Still have questions?' : 'Noch Fragen?'}
+                        <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                            {isEn ? ' We have answers.' : ' Wir haben Antworten!'}
+                        </span>
                     </h2>
                     <p className="text-xl text-gray-600">
-                        Hier findest du Antworten auf die häufigsten Fragen zu Treatflow.
+                        {isEn
+                            ? 'The questions studios ask most often before they start.'
+                            : 'Hier findest du Antworten auf die häufigsten Fragen zu Treatflow.'}
                     </p>
                 </div>
 
@@ -103,10 +149,12 @@ export default function FAQSection() {
                 <div className="text-center mt-12">
                     <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-8 border border-indigo-100">
                         <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                            Hast du weitere Fragen?
+                            {isEn ? 'Need anything else?' : 'Hast du weitere Fragen?'}
                         </h3>
                         <p className="text-gray-600 mb-6">
-                            Unser Support-Team hilft dir gerne weiter. Schreib uns eine E-Mail oder buche direkt ein Beratungsgespräch.
+                            {isEn
+                                ? 'Write to us or book a call. We help you get set up.'
+                                : 'Unser Support-Team hilft dir gerne weiter. Schreib uns eine E-Mail oder buche direkt ein Beratungsgespräch.'}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
@@ -116,12 +164,12 @@ export default function FAQSection() {
                                 hello@treatflow.io
                             </a>
                             <a
-                                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                                href={DEMO_BOOKING_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-all duration-300"
                             >
-                                Beratung buchen
+                                {isEn ? 'Book a demo' : 'Beratung buchen'}
                             </a>
                         </div>
                     </div>

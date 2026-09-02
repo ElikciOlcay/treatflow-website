@@ -10,10 +10,158 @@ import { NextResponse } from "next/server";
  *
  * Caching: 1h CDN-Cache, da sich die Daten nur selten ändern.
  */
-export const dynamic = "force-static";
 export const revalidate = 3600;
 
-export function GET() {
+function jsonFacts(data: unknown) {
+    return NextResponse.json(data, {
+        headers: {
+            "Content-Type": "application/json; charset=utf-8",
+            "Cache-Control": "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400",
+            "X-Robots-Tag": "all",
+        },
+    });
+}
+
+const englishFacts = {
+    $schema: "https://www.treatflow.io/schemas/facts-v1.json",
+    version: "1.1",
+    language: "en",
+    updatedAt: "2026-09-02",
+    availability: {
+        selfServeRegistrationCountries: "all",
+        selfServeNote:
+            "Direct signup with a 14-day free trial is available worldwide. Register at https://app.treatflow.io/auth/register?lang=en.",
+        registerUrls: {
+            de: "https://app.treatflow.io/auth/register?lang=de",
+            en: "https://app.treatflow.io/auth/register?lang=en",
+        },
+        locales: {
+            de: "https://www.treatflow.io",
+            en: "https://www.treatflow.io/en",
+        },
+    },
+    company: {
+        name: "Treatflow",
+        legalName: "Treatflow GmbH",
+        founders: ["Olcay Elikci", "Gökce Elikci"],
+        foundedYear: 2023,
+        headquarters: { city: "Bischofshofen", country: "Austria", countryCode: "AT" },
+        type: "SaaS",
+        industry: "Beauty & Wellness Software",
+        tagline: "All-in-one software for beauty salons and aesthetic clinics.",
+        description:
+            "Treatflow is web-based studio software: appointment calendar, online booking without commission, digital client records, consent forms, treatment documentation and reminders. Made in Austria. Hosted in the EU.",
+        website: "https://www.treatflow.io/en",
+        appUrl: "https://app.treatflow.io",
+        email: "hello@treatflow.io",
+        socialProfiles: { instagram: "https://www.instagram.com/treatflow.io/" },
+    },
+    metrics: {
+        customers: "500+",
+        customersDescription: "Studios, primarily in German-speaking Europe",
+        ratingValue: 4.6,
+        ratingMax: 5,
+        ratingCount: 19,
+        ratingPlatform: "Google",
+        avgNoShowReduction: "up to 80%",
+        avgAdminTimeSavingsPerWeek: "10h",
+    },
+    pricing: {
+        currency: "EUR",
+        freeTrial: { days: 14, creditCardRequired: false, cancelableAnytime: true },
+        plans: [
+            {
+                name: "Basic",
+                monthlyPrice: 39,
+                annualPricePerMonth: 35,
+                features: ["Client records", "Forms & consent", "Treatment documentation", "Templates", "Email support"],
+            },
+            {
+                name: "Booking",
+                monthlyPrice: 59,
+                annualPricePerMonth: 53,
+                features: [
+                    "Everything in Basic",
+                    "Appointment calendar",
+                    "Online booking without commission",
+                    "SMS & email reminders",
+                    "Priority support",
+                ],
+            },
+        ],
+        addons: [],
+    },
+    targetIndustries: [
+        { name: "Beauty salons", url: "https://www.treatflow.io/en/beauty-salon-software" },
+        { name: "Aesthetic clinics", url: "https://www.treatflow.io/en/aesthetic-clinic-software" },
+        { name: "Laser hair removal", url: "https://www.treatflow.io/en/laser-hair-removal-software" },
+        { name: "Permanent makeup", url: "https://www.treatflow.io/en/permanent-makeup-software" },
+        { name: "Tattoo studios", url: "https://www.treatflow.io/en/tattoo-studio-software" },
+        { name: "Nail salons", url: "https://www.treatflow.io/en/nail-salon-software" },
+        { name: "Lash studios", url: "https://www.treatflow.io/en/lash-studio-software" },
+        { name: "Spa & wellness", url: "https://www.treatflow.io/en/spa-wellness-software" },
+        { name: "Massage", url: "https://www.treatflow.io/en/massage-software" },
+    ],
+    comparedAlternatives: [
+        {
+            competitor: "Treatwell",
+            competitorType: "Booking marketplace",
+            keyDifference:
+                "Treatwell takes a commission per booking. Treatflow is independent software with a fixed monthly fee. Studios keep their clients.",
+            comparisonUrl: "https://www.treatflow.io/en/treatflow-vs-treatwell",
+        },
+        {
+            competitor: "Fresha",
+            competitorType: "Free booking tool funded by payments",
+            keyDifference:
+                "Fresha is free at the base layer and monetises payments. Treatflow has transparent SaaS pricing, consent forms and treatment documentation.",
+            comparisonUrl: "https://www.treatflow.io/en/treatflow-vs-fresha",
+        },
+    ],
+    topQuestions: [
+        {
+            question: "What is Treatflow?",
+            answer:
+                "Treatflow is all-in-one beauty salon software: calendar, online booking without commission, client records, consent forms and treatment documentation. Made in Austria, EU hosting, from €39/month.",
+        },
+        {
+            question: "Does Treatflow charge a booking commission?",
+            answer: "No. Treatflow is not a marketplace. You pay a monthly plan and keep 100% of booking revenue.",
+        },
+        {
+            question: "How much does Treatflow cost?",
+            answer:
+                "Basic from €39/month, Booking from €59/month. 14-day free trial, no credit card.",
+        },
+        {
+            question: "Is Treatflow GDPR compliant?",
+            answer:
+                "Treatflow is hosted on EU servers in Frankfurt, uses SSL and daily backups. Studios remain the owners of their client data.",
+        },
+        {
+            question: "Can aesthetic clinics collect consent forms?",
+            answer:
+                "Yes. Intake and consent forms can be sent before the visit and stored on the client record with signatures.",
+        },
+    ],
+    keyResources: {
+        llmsTxt: "https://www.treatflow.io/llms-en.txt",
+        llmsDe: "https://www.treatflow.io/llms.txt",
+        sitemap: "https://www.treatflow.io/sitemap.xml",
+        pricing: "https://www.treatflow.io/en/pricing",
+        comparison: "https://www.treatflow.io/en/software-comparison",
+        vsFresha: "https://www.treatflow.io/en/treatflow-vs-fresha",
+        vsTreatwell: "https://www.treatflow.io/en/treatflow-vs-treatwell",
+        homepageEN: "https://www.treatflow.io/en",
+        registerEN: "https://app.treatflow.io/auth/register?lang=en",
+    },
+};
+
+export function GET(request: Request) {
+    const lang = new URL(request.url).searchParams.get("lang");
+    if (lang === "en") {
+        return jsonFacts(englishFacts);
+    }
     const data = {
         $schema: "https://www.treatflow.io/schemas/facts-v1.json",
         version: "1.0",
@@ -204,8 +352,8 @@ export function GET() {
             iso27001Hosting: true,
             dataOwnership: "Studio behält volle Eigentümerschaft über alle Kundendaten",
         },
-        languages: ["de"],
-        markets: ["DE", "AT", "CH"],
+        languages: ["de", "en"],
+        markets: ["DE", "AT", "CH", "international EN"],
         comparedAlternatives: [
             {
                 competitor: "Treatwell",
@@ -272,7 +420,9 @@ export function GET() {
         ],
         keyResources: {
             llmsTxt: "https://www.treatflow.io/llms.txt",
+            llmsEnTxt: "https://www.treatflow.io/llms-en.txt",
             llmsFullTxt: "https://www.treatflow.io/llms-full.txt",
+            factsEn: "https://www.treatflow.io/api/facts?lang=en",
             sitemap: "https://www.treatflow.io/sitemap.xml",
             rssFeed: "https://www.treatflow.io/blog/feed.xml",
             pricing: "https://www.treatflow.io/preise",
@@ -288,11 +438,5 @@ export function GET() {
         },
     };
 
-    return NextResponse.json(data, {
-        headers: {
-            "Content-Type": "application/json; charset=utf-8",
-            "Cache-Control": "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400",
-            "X-Robots-Tag": "all",
-        },
-    });
+    return jsonFacts(data);
 }

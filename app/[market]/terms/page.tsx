@@ -6,15 +6,7 @@ import {
   type PrefixedMarket,
 } from "@/app/i18n/config";
 import { getTermsCopy } from "@/app/i18n/markets/static-pages-nl-fi";
-
-const enTerms = {
-  metaTitle: "Terms of Service",
-  metaDescription: "Treatflow terms of service.",
-  title: "Terms of Service",
-  paragraphs: [
-    "By using Treatflow you agree to our terms. For contractual details during early access, we will provide market-specific terms when onboarding your studio. Contact: hello@treatflow.io.",
-  ],
-};
+import { enTerms } from "@/app/i18n/markets/legal-en";
 
 export async function generateMetadata({
   params,
@@ -43,15 +35,37 @@ export default async function TermsPage({
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "nl" || lang === "fi" ? getTermsCopy(lang) : enTerms;
+  const content = lang === "nl" || lang === "fi" ? getTermsCopy(lang) : null;
+
+  if (content) {
+    return (
+      <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto prose prose-indigo">
+          <h1>{content.title}</h1>
+          {content.paragraphs.map((p) => (
+            <p key={p.slice(0, 40)}>{p}</p>
+          ))}
+        </div>
+      </section>
+    );
+  }
 
   return (
-    <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto prose prose-indigo">
-        <h1>{content.title}</h1>
-        {content.paragraphs.map((p) => (
-          <p key={p.slice(0, 40)}>{p}</p>
-        ))}
+    <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">{enTerms.title}</h1>
+        <p className="text-lg text-gray-600 mb-10">{enTerms.intro}</p>
+        <div className="space-y-8 text-gray-700 leading-relaxed">
+          {enTerms.sections.map((section) => (
+            <div key={section.heading}>
+              <h2 className="text-2xl font-bold text-gray-900 mb-3">{section.heading}</h2>
+              <div
+                className="space-y-3 [&_a]:text-indigo-600 [&_a]:underline [&_ul]:list-disc [&_ul]:pl-5"
+                dangerouslySetInnerHTML={{ __html: section.html }}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

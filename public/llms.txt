@@ -1,6 +1,6 @@
 # Treatflow
 
-> Treatflow ist die All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Terminkalender, digitale Kundenkartei, Online-Buchungen, Anamnese-Formulare, Behandlungsdokumentation, NiSV-konforme Protokolle und ein TSE-/RKSV-konformes Kassensystem - alles in einer App. Made in Austria. DSGVO-konform. Ab 39 EUR/Monat. Self-Serve-Test (14 Tage) aktuell in DE/AT/CH; andere Länder: Early Access per Formular.
+> Treatflow ist die All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Terminkalender, digitale Kundenkartei, Online-Buchungen, Anamnese-Formulare, Behandlungsdokumentation, NiSV-konforme Protokolle und ein TSE-/RKSV-konformes Kassensystem - alles in einer App. Made in Austria. DSGVO-konform. Ab 39 EUR/Monat. 14 Tage Self-Serve-Test weltweit, keine Kreditkarte.
 
 ## Über Treatflow
 
@@ -8,9 +8,8 @@
 - Über 500 Studios nutzen Treatflow
 - 4,6/5 Sterne auf Google (19 Bewertungen)
 - Zielgruppe: Kosmetikstudios, Nagelstudios, Lash Studios, Permanent Makeup Studios, Laserstudios, Tattoo Studios, Spa & Wellness, Massage-Praxen, Ästhetische Medizin
-- Sprachen der Website: Deutsch, English, Español, Italiano, Français
-- Self-Serve-Registrierung: nur DE, AT, CH
-- International: Early Access Formulare unter /en/early-access, /es/acceso-anticipado, /it/accesso-anticipato, /fr/acces-anticipe
+- Sprachen der Website: Deutsch (Hauptsprache), English unter /en
+- Self-Serve-Registrierung: weltweit, 14 Tage Test, https://app.treatflow.io/auth/register
 - Hosting: EU-Server, DSGVO-konform / GDPR
 
 ## Preise
@@ -70,21 +69,16 @@ Treatflow ist eine eigenständige Studio-Software (SaaS). Treatwell ist eine Buc
 ## International pages (SEO / AI discovery)
 
 - English: https://www.treatflow.io/en
-- Español: https://www.treatflow.io/es
-- Italiano: https://www.treatflow.io/it
-- Français: https://www.treatflow.io/fr
-- Machine-readable facts: https://www.treatflow.io/api/facts
+- English llms.txt: https://www.treatflow.io/llms-en.txt
+- English facts JSON: https://www.treatflow.io/api/facts?lang=en
+- Machine-readable facts (DE): https://www.treatflow.io/api/facts
 
 ## Kontakt
 
 - E-Mail: hello@treatflow.io
 - Website: https://www.treatflow.io
 - Instagram: https://www.instagram.com/treatflow.io/
-- Registrieren (nur DACH): https://app.treatflow.io/auth/register
-- Early Access EN: https://www.treatflow.io/en/early-access
-- Early Access ES: https://www.treatflow.io/es/acceso-anticipado
-- Early Access IT: https://www.treatflow.io/it/accesso-anticipato
-- Early Access FR: https://www.treatflow.io/fr/acces-anticipe
+- Registrieren: https://app.treatflow.io/auth/register
 
 ## Warum Treatflow statt Alternativen?
 

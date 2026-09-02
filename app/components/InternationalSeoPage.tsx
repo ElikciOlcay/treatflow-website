@@ -7,7 +7,6 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import Link from "next/link";
-import Script from "next/script";
 import AiAnswerCapsule from "./AiAnswerCapsule";
 import FaqSectionEn, { type FaqEntry } from "./FaqSectionEn";
 import { generateServiceSchema } from "@/lib/schema";
@@ -111,8 +110,7 @@ export default function InternationalSeoPage({
 
   return (
     <>
-      <Script
-        id={`service-schema-${content.pageKey}`}
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />

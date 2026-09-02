@@ -62,6 +62,18 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       closingTitle: "Less admin, more time for your clients",
       closingText:
         "A well-organised calendar is the heart of every studio. Treatflow keeps your schedule tidy so you and your team can focus on what matters - great treatments and happy clients.",
+      faqs: [
+        {
+          question: "How does the Treatflow appointment calendar work?",
+          answer:
+            "You see day, week and month views with columns for staff or rooms. Online bookings land in the same calendar, so you avoid double bookings. Drag and drop to reschedule.",
+        },
+        {
+          question: "Does the calendar sync with online booking?",
+          answer:
+            "Yes. When a client books on your Treatflow booking page, the slot appears in the studio calendar immediately. Reminders can go out by SMS and email.",
+        },
+      ],
     },
     nl: {
       eyebrow: "Afspraakagenda",
@@ -146,6 +158,18 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       closingTitle: "Fill more chairs with less phone time",
       closingText:
         "Online booking turns idle hours into revenue. Treatflow keeps bookings, reminders and your calendar in one flow.",
+      faqs: [
+        {
+          question: "Does Treatflow charge a commission on online bookings?",
+          answer:
+            "No. Treatflow is studio software, not a marketplace. You share your own booking link and pay a monthly plan. There is no commission per booking.",
+        },
+        {
+          question: "Can clients book 24/7 without a marketplace?",
+          answer:
+            "Yes. You get a branded booking page that only shows real availability. Confirmations and reminders are included. Optional deposits help reduce no-shows.",
+        },
+      ],
     },
     nl: {
       eyebrow: "Online boeken",
@@ -230,6 +254,18 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       closingTitle: "Know your client before they sit down",
       closingText:
         "Better records mean safer treatments and a more personal experience - without digging through paper.",
+      faqs: [
+        {
+          question: "Are digital client records in Treatflow GDPR-ready?",
+          answer:
+            "Yes. Records live on EU servers in Frankfurt with SSL encryption and daily backups. Forms, photos and treatment history sit on the same client file. The studio remains the owner of its client data.",
+        },
+        {
+          question: "What is stored on a Treatflow client record?",
+          answer:
+            "Contact details, notes, intake and consent forms, treatment history and before/after photos – searchable across the studio so the team is ready before each visit.",
+        },
+      ],
     },
     nl: {
       eyebrow: "Klantendossiers",
@@ -314,6 +350,18 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       closingTitle: "Start treatments with paperwork already done",
       closingText:
         "Digital intake protects your studio and saves time at the front desk - every single day.",
+      faqs: [
+        {
+          question: "Does Treatflow include digital consent forms for aesthetic clinics?",
+          answer:
+            "Yes. You send intake and consent templates before the visit. Clients fill them in on their phone, including a digital signature. Completed forms are stored on the client record.",
+        },
+        {
+          question: "Can clients complete forms before they arrive?",
+          answer:
+            "Yes. Share a link by SMS or email. The team sees completed forms before the appointment starts, so treatments can begin on time.",
+        },
+      ],
     },
     nl: {
       eyebrow: "Formulieren",
@@ -398,6 +446,18 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       closingTitle: "Documentation that protects and impresses",
       closingText:
         "Clear treatment records improve safety, continuity and client trust - without slowing your day down.",
+      faqs: [
+        {
+          question: "Can laser hair removal studios document treatments in Treatflow?",
+          answer:
+            "Yes. You record parameters, notes and before/after photos per session. The history is linked to the client, which helps follow-ups and team handovers. German and Austrian studios can also use NiSV-style protocols.",
+        },
+        {
+          question: "Are before and after photos stored on the client record?",
+          answer:
+            "Yes. Photo sets are attached to the exact treatment, not a generic camera roll, so you can compare progress at the next visit.",
+        },
+      ],
     },
     nl: {
       eyebrow: "Behandeldocumentatie",

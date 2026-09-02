@@ -130,7 +130,7 @@ const META_PIXEL_ID = '796776476409381';
 
 export default function CookieBanner() {
     const pathname = usePathname();
-    const marketMatch = pathname?.match(/^\/(us|nl|uk|fi|ie|ca|au|ae)(?=\/|$)/);
+    const marketMatch = pathname?.match(/^\/(en|us|nl|uk|fi|ie|ca|au|ae)(?=\/|$)/);
     const cookieLocale = marketMatch
         ? marketMatch[1] === 'nl'
             ? 'nl'

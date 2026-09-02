@@ -916,11 +916,11 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
       eyebrow: "All features",
       title: "Everything your beauty business needs in one place",
       subtitle:
-        "From calendar and online booking to client records, forms, checkout and reminders – Treatflow covers the daily work of a modern salon.",
+        "From calendar and online booking to client records, forms and reminders – Treatflow covers the daily work of a modern salon.",
       bullets: [
         "Calendar, booking and client records",
         "Digital forms and treatment notes",
-        "Checkout, vouchers and product sales",
+        "Shop, vouchers and product sales",
         "Messaging, integrations and more",
       ],
       image: {

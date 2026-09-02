@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import Script from "next/script";
 import AiAnswerCapsule from "./AiAnswerCapsule";
 
 export type HomePageIntlContent = {
@@ -62,15 +61,13 @@ export default function HomePageIntl({ content }: { content: HomePageIntlContent
   return (
     <>
       {content.schemas?.software && (
-        <Script
-          id={`structured-data-${content.locale}`}
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(content.schemas.software) }}
         />
       )}
       {content.schemas?.faq && (
-        <Script
-          id={`faq-schema-${content.locale}`}
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(content.schemas.faq) }}
         />
