@@ -68,8 +68,8 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     bookingYearlyHint: "€53/month • Save €71/year",
     exclVat: "excl. VAT",
     popular: "Popular",
-    cta: "Request early access",
-    earlyAccessHref: "/en/early-access",
+    cta: "Start free trial",
+    earlyAccessHref: "https://app.treatflow.io/auth/register?lang=en",
     basic: {
       name: "Basic",
       description:
@@ -160,16 +160,16 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
             "If you need online booking, automatic appointment reminders and a digital calendar, yes. Studios on Booking often report fewer no-shows and less phone work.",
         },
         {
-          question: "How do I get access outside DACH?",
+          question: "Can I start Treatflow from outside Germany, Austria or Switzerland?",
           answer:
-            "Self-serve signup is currently available in Germany, Austria and Switzerland. For other countries, request early access – we onboard studios country by country.",
+            "Yes. You can register worldwide and start a 14-day free trial at app.treatflow.io – no credit card required.",
         },
       ],
     },
     meta: {
       title: "Pricing",
       description:
-        "Transparent Treatflow pricing: Basic from €39/month, Booking from €59/month. Request early access for your country.",
+        "Treatflow pricing: Basic from €39/month, Booking from €59/month. No booking commission, 14-day free trial, no credit card required.",
     },
   },
   es: {

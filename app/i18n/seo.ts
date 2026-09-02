@@ -39,7 +39,11 @@ export type SeoPageKey =
   | "massage-software"
   | "about"
   | "privacy"
-  | "terms";
+  | "terms"
+  | "news"
+  | "treatflow-vs-fresha"
+  | "treatflow-vs-treatwell"
+  | "software-comparison";
 
 /** DE-Root-Slugs (bestehende SEO-URLs). */
 const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
@@ -70,6 +74,10 @@ const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
   "lash-studio-software": "lash-studio-software",
   "spa-wellness-software": "spa-wellness-software",
   "massage-software": "massage-software",
+  news: "neuigkeiten",
+  "treatflow-vs-fresha": "treatflow-vs-fresha",
+  "treatflow-vs-treatwell": "treatflow-vs-treatwell",
+  "software-comparison": "kosmetikstudio-software-vergleich",
 };
 
 type PageSlugMap = Partial<Record<Market, string>>;
@@ -116,7 +124,6 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
   "treatment-documentation": buildSlugMap("treatment-documentation"),
   "point-of-sale": {
     de: "kassensystem-kosmetikstudio",
-    en: "point-of-sale",
   },
   vouchers: buildSlugMap("vouchers"),
   messaging: buildSlugMap("messaging"),
@@ -133,6 +140,10 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
   "lash-studio-software": buildSlugMap("lash-studio-software"),
   "spa-wellness-software": buildSlugMap("spa-wellness-software"),
   "massage-software": buildSlugMap("massage-software"),
+  news: buildSlugMap("news"),
+  "treatflow-vs-fresha": buildSlugMap("treatflow-vs-fresha"),
+  "treatflow-vs-treatwell": buildSlugMap("treatflow-vs-treatwell"),
+  "software-comparison": buildSlugMap("software-comparison"),
 };
 
 function slugToUrl(market: Market, slug: string | undefined | null): string | null {

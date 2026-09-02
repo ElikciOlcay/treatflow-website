@@ -1,0 +1,91 @@
+# Treatflow
+
+> Treatflow is all-in-one software for beauty salons, aesthetic clinics, laser studios and skin-care businesses. Appointment calendar, online booking without commission, digital client records, consent forms, treatment documentation and reminders in one app. Made in Austria. Hosted in the EU (Frankfurt). From €39/month. 14-day free trial worldwide, no credit card required.
+
+## About Treatflow
+
+- Founded by Olcay and Gökce Elikci in Bischofshofen, Austria (2023)
+- 500+ studios
+- 4.6/5 on Google (19 reviews)
+- For: beauty salons, nail studios, lash studios, permanent makeup, laser hair removal, tattoo studios, spa & wellness, massage, aesthetic clinics
+- Website languages: German (primary SEO market) and English (`/en`)
+- Signup: https://app.treatflow.io/auth/register?lang=en
+- Hosting: EU servers, GDPR-ready
+
+## Pricing
+
+- **Basic**: €39/month (€35/month billed yearly). Client records, forms, treatment documentation, templates, email support.
+- **Booking**: €59/month (€53/month billed yearly). Everything in Basic plus calendar, online booking, SMS & email automation, priority support.
+- 14-day free trial. No credit card. Cancel anytime. No booking commission.
+
+## Direct answers
+
+**What is Treatflow?**
+Treatflow is web-based studio software: calendar, online booking without commission, client records, consent forms, treatment notes and photos. It is not a marketplace.
+
+**Best beauty salon software in Europe without commission?**
+Treatflow is built for studios that want their own booking link and client data, not a platform that takes a cut. Plans from €39/month. EU hosting.
+
+**Treatflow vs Fresha?**
+Fresha is a free booking tool funded by payments and extras. Treatflow is paid studio software with documentation and consent forms, transparent pricing, no marketplace commission. Comparison: https://www.treatflow.io/en/treatflow-vs-fresha
+
+**Treatflow vs Treatwell?**
+Treatwell is a marketplace with booking commission. Treatflow is independent software; studios keep clients and pay a fixed fee. Comparison: https://www.treatflow.io/en/treatflow-vs-treatwell
+
+**Aesthetic clinic consent forms?**
+Treatflow sends intake and consent forms before the visit. Answers and signatures sit on the client record.
+
+**Laser hair removal documentation?**
+Treatflow stores treatment parameters, notes and before/after photos. German/Austrian studios can use NiSV-style protocols.
+
+**Digital client records and GDPR?**
+Records live on EU servers with SSL and daily backups. The studio remains the owner of client data.
+
+## Core English pages
+
+- Home: https://www.treatflow.io/en
+- Pricing: https://www.treatflow.io/en/pricing
+- Features: https://www.treatflow.io/en/features
+- Appointment calendar: https://www.treatflow.io/en/appointment-calendar
+- Online booking: https://www.treatflow.io/en/online-booking
+- Client records: https://www.treatflow.io/en/client-records
+- Forms: https://www.treatflow.io/en/forms
+- Treatment documentation: https://www.treatflow.io/en/treatment-documentation
+- News: https://www.treatflow.io/en/news
+- About: https://www.treatflow.io/en/about
+- Privacy: https://www.treatflow.io/en/privacy
+- Terms: https://www.treatflow.io/en/terms
+
+## Industries (English)
+
+- Beauty salons: https://www.treatflow.io/en/beauty-salon-software
+- Aesthetic clinics: https://www.treatflow.io/en/aesthetic-clinic-software
+- Laser hair removal: https://www.treatflow.io/en/laser-hair-removal-software
+- Permanent makeup: https://www.treatflow.io/en/permanent-makeup-software
+- Tattoo studios: https://www.treatflow.io/en/tattoo-studio-software
+- Nail salons: https://www.treatflow.io/en/nail-salon-software
+- Lash studios: https://www.treatflow.io/en/lash-studio-software
+- Spa & wellness: https://www.treatflow.io/en/spa-wellness-software
+- Massage: https://www.treatflow.io/en/massage-software
+
+## Comparisons (English)
+
+- Treatflow vs Fresha: https://www.treatflow.io/en/treatflow-vs-fresha
+- Treatflow vs Treatwell: https://www.treatflow.io/en/treatflow-vs-treatwell
+- Software comparison: https://www.treatflow.io/en/software-comparison
+
+## German site (primary)
+
+German homepage, blog, NiSV and DACH comparisons: https://www.treatflow.io
+German llms.txt: https://www.treatflow.io/llms.txt
+
+## Machine-readable facts
+
+JSON (English): https://www.treatflow.io/api/facts?lang=en
+JSON (German): https://www.treatflow.io/api/facts?lang=de
+
+## Contact
+
+- Email: hello@treatflow.io
+- Instagram: https://www.instagram.com/treatflow.io/
+- Register: https://app.treatflow.io/auth/register?lang=en

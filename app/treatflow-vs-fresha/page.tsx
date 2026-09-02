@@ -1,6 +1,7 @@
 import { CheckCircle, X, ArrowRight, AlertTriangle, Shield, Users, FileText, Star, CreditCard } from 'lucide-react';
 import Link from 'next/link';
 import Script from 'next/script';
+import { buildHreflangAlternates } from '../i18n/seo';
 import Navigation from '../components/Navigation';
 import FAQSection from './FAQSection';
 import Footer from '../components/Footer';
@@ -20,6 +21,7 @@ export const metadata = {
   ],
   alternates: {
     canonical: 'https://www.treatflow.io/treatflow-vs-fresha',
+    ...buildHreflangAlternates('treatflow-vs-fresha'),
   },
   openGraph: {
     title: 'Treatflow vs. Fresha: Der ehrliche Vergleich',

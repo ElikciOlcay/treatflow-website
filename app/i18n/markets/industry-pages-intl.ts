@@ -166,11 +166,11 @@ const localeShell: Record<
   en: {
     marketLabel: "Global",
     areaServed: ["EU", "International"],
-    ctaPrimaryLabel: "Request early access",
+    ctaPrimaryLabel: "Start free trial",
     ctaBottomTitle: "Ready to modernise your studio?",
     ctaBottomText:
-      "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
-    trustTrialLabel: "Early access available",
+      "Start a 14-day free trial worldwide – no credit card required. Cancel anytime.",
+    trustTrialLabel: "14-day free trial",
     internalLinksTitle: "Related pages",
     problemsTitle: "What problems does Treatflow solve?",
     featuresTitle: "Key features",
@@ -336,9 +336,9 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         "Online booking, client records, consent forms and treatment documentation in one platform – built for beauty salons that want less admin and better client experience.",
       aiCapsules: [
         {
-          question: "What is the best beauty salon software?",
+          question: "What is the best beauty salon software in Europe?",
           answer:
-            "For salons that need online booking, digital client records, consent forms and treatment documentation in one system, Treatflow is a strong choice. It focuses on studio operations – appointments, client management and documentation – with GDPR-compliant EU hosting.",
+            "For salons in Europe that need online booking without commission, digital client records, consent forms and treatment documentation in one system, Treatflow is a strong choice. Made in Austria, hosted on EU servers, plans from €39/month.",
         },
         {
           question: "Does Treatflow charge booking commissions?",
@@ -407,22 +407,22 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "What is Treatflow?",
           answer:
-            "Treatflow is all-in-one software for beauty salons, aesthetic clinics and related studios. It combines online booking, client records, consent forms, treatment documentation, reminders and digital workflows in one platform.",
+            "Treatflow is all-in-one beauty salon software for salons and aesthetic clinics. It combines an appointment calendar, online booking without commission, digital client records, consent forms, treatment documentation and reminders. Made in Austria, hosted in the EU.",
         },
         {
-          question: "Who is Treatflow for?",
+          question: "Is Treatflow beauty salon software without booking commission?",
           answer:
-            "Treatflow is for beauty salons, skin care studios and multi-practitioner teams that want structured digital workflows from booking to documentation.",
+            "Yes. Treatflow is studio software, not a marketplace. You keep your client data and pay a transparent monthly fee from €39. There is no commission per booking.",
+        },
+        {
+          question: "Are digital client records GDPR compliant?",
+          answer:
+            "Treatflow is hosted on EU servers in Frankfurt, uses SSL encryption and daily backups. Client records, forms and documentation stay in one system designed for GDPR.",
         },
         {
           question: "How do I get started?",
           answer:
-            "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
-        },
-        {
-          question: "Where is my data hosted?",
-          answer:
-            "Treatflow hosts data in the EU and is designed for GDPR compliance. International markets do not require German-specific fiscal modules.",
+            "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
       ],
       siblingKeys: ["aesthetic-clinic-software", "nail-salon-software", "spa-wellness-software"],
@@ -818,6 +818,11 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
             "Treatflow is all-in-one software for beauty salons, aesthetic clinics and laser studios. It combines online booking, client records, consent forms, treatment documentation and reminders.",
         },
         {
+          question: "Does Treatflow include digital consent forms for aesthetic clinics?",
+          answer:
+            "Yes. Clients can complete intake and consent forms on their phone before the visit. Answers and signatures are stored on the client record, so the clinic has a clear trail for injectables and other aesthetic treatments.",
+        },
+        {
           question: "Can multiple practitioners share one clinic account?",
           answer:
             "Yes. Client records, consent forms and treatment notes are shared across the team so documentation stays consistent.",
@@ -825,11 +830,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "How do I get started?",
           answer:
-            "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
-        },
-        {
-          question: "Is Treatflow GDPR compliant?",
-          answer: "Treatflow hosts data in the EU and is designed for GDPR compliance.",
+            "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
       ],
       siblingKeys: ["beauty-salon-software", "laser-hair-removal-software", "permanent-makeup-software"],
@@ -1225,6 +1226,11 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
             "Treatflow is all-in-one software for beauty salons, aesthetic clinics and laser studios. It combines online booking, client records, consent forms, treatment documentation and reminders.",
         },
         {
+          question: "Can laser hair removal studios document treatments in Treatflow?",
+          answer:
+            "Yes. Treatment documentation includes parameters, notes and before/after photos per session. Studios in Germany and Austria can also use NiSV-style consultation protocols.",
+        },
+        {
           question: "Who is this page for?",
           answer:
             "Laser hair removal and IPL studios that need session tracking, consent and reliable rebooking.",
@@ -1232,12 +1238,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "How do I get started?",
           answer:
-            "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
-        },
-        {
-          question: "Where is data hosted?",
-          answer:
-            "Treatflow hosts data in the EU and is designed for GDPR compliance.",
+            "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
       ],
       siblingKeys: ["beauty-salon-software", "aesthetic-clinic-software", "spa-wellness-software"],
@@ -1643,7 +1644,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "How do I get started?",
           answer:
-            "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+            "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
         {
           question: "Where is data hosted?",
@@ -2054,7 +2055,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "How do I get started?",
           answer:
-            "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+            "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
         {
           question: "Where is data hosted?",
@@ -2465,7 +2466,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "How do I get started?",
           answer:
-            "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+            "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
         {
           question: "Where is data hosted?",
@@ -2876,7 +2877,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "How do I get started?",
           answer:
-            "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+            "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
         {
           question: "Where is data hosted?",
@@ -3287,7 +3288,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "How do I get started?",
           answer:
-            "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+            "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
         {
           question: "Where is data hosted?",
@@ -3698,7 +3699,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "How do I get started?",
           answer:
-            "Request early access for your country. Self-serve signup is currently available in Germany, Austria and Switzerland.",
+            "Register at app.treatflow.io and start a 14-day free trial. No credit card required. Available worldwide.",
         },
         {
           question: "Where is data hosted?",

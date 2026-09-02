@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { buildPageMetadata } from "@/app/i18n/seo";
+import HomePageEn from "@/app/components/HomePageEn";
 import HomePageIntl from "@/app/components/HomePageIntl";
 import {
   countryHomeMeta,
@@ -33,5 +34,8 @@ export default async function MarketHome({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
+  if (market === "en") {
+    return <HomePageEn />;
+  }
   return <HomePageIntl content={getCountryHomePage(market as CountryHomeMarket)} />;
 }

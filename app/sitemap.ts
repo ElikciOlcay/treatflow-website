@@ -403,11 +403,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const sharedKeys: { key: SeoPageKey; priority: number }[] = [
         { key: 'pricing', priority: 0.8 },
-        { key: 'early-access', priority: 0.85 },
         { key: 'about', priority: 0.6 },
         { key: 'contact', priority: 0.6 },
         { key: 'privacy', priority: 0.3 },
         { key: 'terms', priority: 0.3 },
+        { key: 'news', priority: 0.8 },
+        { key: 'treatflow-vs-fresha', priority: 0.85 },
+        { key: 'treatflow-vs-treatwell', priority: 0.85 },
+        { key: 'software-comparison', priority: 0.85 },
     ]
 
     const localePrefixes = {
@@ -474,6 +477,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.6,
         },
         {
+            url: `${baseUrl}/llms-en.txt`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.6,
+        },
+        {
             url: `${baseUrl}/llms-full.txt`,
             lastModified: new Date(),
             changeFrequency: 'weekly' as const,
@@ -481,6 +490,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         {
             url: `${baseUrl}/api/facts`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/api/facts?lang=en`,
             lastModified: new Date(),
             changeFrequency: 'weekly' as const,
             priority: 0.6,

@@ -2,8 +2,11 @@
 
 import { useState, useRef, useCallback } from 'react';
 import { Clock, UserX, Globe, FolderOpen, ArrowRight, CheckCircle } from 'lucide-react';
+import { APP_REGISTER_BY_MARKET } from '@/app/i18n/market-access';
 
-const challenges = [
+type HomeLocale = 'de' | 'en';
+
+const challengesDe = [
   {
     id: 'time',
     icon: Clock,
@@ -58,9 +61,81 @@ const challenges = [
   },
 ];
 
-export default function ChallengeSelector() {
+const challengesEn = [
+  {
+    id: 'time',
+    icon: Clock,
+    label: 'I spend too much time on paperwork',
+    headline: 'Stop the manual work',
+    description:
+      'Treatflow digitises intake forms, consent and treatment notes. No more paper, no double entry. Everything in one app.',
+    benefits: [
+      'Digital forms instead of paper',
+      'Documentation as you treat',
+      'Client data ready before they sit down',
+    ],
+  },
+  {
+    id: 'noshow',
+    icon: UserX,
+    label: 'Clients miss their appointments',
+    headline: 'Up to 50% fewer no-shows',
+    description:
+      'Automatic SMS and email reminders mean clients remember their appointments. Fewer gaps, more revenue.',
+    benefits: [
+      'Automatic appointment reminders',
+      'SMS and email before the visit',
+      'Easy rebooking',
+    ],
+  },
+  {
+    id: 'online',
+    icon: Globe,
+    label: 'I want more clients booking online',
+    headline: 'Bookable around the clock',
+    description:
+      'With your own booking link, clients book anytime – nights and weekends included. You gain new clients without answering the phone. No marketplace commission.',
+    benefits: [
+      'Your own booking page',
+      'Bookings 24/7',
+      'Share on Instagram, Google and your website',
+    ],
+  },
+  {
+    id: 'data',
+    icon: FolderOpen,
+    label: 'My client data is scattered everywhere',
+    headline: 'Everything in one place',
+    description:
+      'Client records, treatment history, forms and appointments – central in one clear app. GDPR-ready EU hosting. Stop searching.',
+    benefits: [
+      'One digital client record',
+      'Full treatment history',
+      'GDPR-ready data protection',
+    ],
+  },
+];
+
+const copy = {
+  de: {
+    title: 'Kennst du das? Wähle deine grösste Herausforderung',
+    subtitle: 'Wir zeigen dir, wie Treatflow genau dein Problem löst.',
+    cta: 'Jetzt kostenlos testen',
+    register: APP_REGISTER_BY_MARKET.de,
+  },
+  en: {
+    title: 'Sound familiar? Pick your biggest challenge',
+    subtitle: 'We show you how Treatflow solves that exact problem.',
+    cta: 'Start free trial',
+    register: APP_REGISTER_BY_MARKET.en,
+  },
+};
+
+export default function ChallengeSelector({ locale = 'de' }: { locale?: HomeLocale }) {
   const [selected, setSelected] = useState<string | null>(null);
   const resultRef = useRef<HTMLDivElement>(null);
+  const challenges = locale === 'en' ? challengesEn : challengesDe;
+  const t = copy[locale];
 
   const handleSelect = useCallback((id: string) => {
     const isOpening = id !== selected;
@@ -80,10 +155,10 @@ export default function ChallengeSelector() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Kennst du das? Wähle deine grösste Herausforderung
+            {t.title}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Wir zeigen dir, wie Treatflow genau dein Problem löst.
+            {t.subtitle}
           </p>
         </div>
 
@@ -145,12 +220,12 @@ export default function ChallengeSelector() {
                 </div>
                 <div className="flex justify-center lg:justify-end">
                   <a
-                    href="https://app.treatflow.io/auth/register?lang=de"
+                    href={t.register}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                   >
-                    Jetzt kostenlos testen
+                    {t.cta}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </div>

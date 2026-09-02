@@ -117,6 +117,9 @@ export const APP_REGISTER_BY_MARKET: Record<Market, string> = buildRegisterMap()
 export const APP_REGISTER_URL = APP_REGISTER_BY_MARKET.de;
 export const APP_LOGIN_URL = APP_LOGIN_BY_MARKET.de;
 
+export const DEMO_BOOKING_URL =
+  "https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f";
+
 /** @deprecated use APP_LOGIN_BY_MARKET */
 export const APP_LOGIN_BY_LOCALE = APP_LOGIN_BY_MARKET;
 

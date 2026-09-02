@@ -1,6 +1,7 @@
 import { CheckCircle, ArrowRight, CalendarDays, Users, FileText, Shield, Headphones } from 'lucide-react';
 import Link from 'next/link';
 import Script from 'next/script';
+import { buildHreflangAlternates } from '../i18n/seo';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import QuickFacts from '../components/QuickFacts';
@@ -15,6 +16,7 @@ export const metadata = {
     keywords: ['Kosmetikstudio Software Vergleich', 'Beste Kosmetikstudio Software', 'Kosmetikstudio Software Checkliste'],
     alternates: {
         canonical: 'https://www.treatflow.io/kosmetikstudio-software-vergleich',
+        ...buildHreflangAlternates('software-comparison'),
     },
     openGraph: {
         title: 'Kosmetikstudio Software im Vergleich: Die Checkliste',

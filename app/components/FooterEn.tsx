@@ -220,6 +220,38 @@ export default function FooterEn({
               </li>
               <li>
                 <Link
+                  href={`${base}/${EN_SLUGS.news}`}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  {dict.nav.news}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`${base}/${EN_SLUGS["software-comparison"]}`}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Software comparison
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`${base}/${EN_SLUGS["treatflow-vs-fresha"]}`}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Treatflow vs Fresha
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`${base}/${EN_SLUGS["treatflow-vs-treatwell"]}`}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Treatflow vs Treatwell
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={`${base}/${EN_SLUGS.pricing}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >

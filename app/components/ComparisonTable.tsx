@@ -1,6 +1,9 @@
 import { CheckCircle, X } from 'lucide-react';
+import { APP_REGISTER_BY_MARKET } from '@/app/i18n/market-access';
 
-const rows = [
+type HomeLocale = 'de' | 'en';
+
+const rowsDe = [
   {
     feature: 'Speziell für Beauty & Kosmetik',
     treatflow: 'Entwickelt für Kosmetikstudios',
@@ -59,16 +62,80 @@ const rows = [
   },
 ];
 
-export default function ComparisonTable() {
+const rowsEn = [
+  {
+    feature: 'Built for beauty and aesthetics',
+    treatflow: 'Made for salons and clinics',
+    other: 'Generic booking software',
+  },
+  {
+    feature: 'GDPR and EU hosting',
+    treatflow: 'EU servers, GDPR-ready',
+    other: 'Often unclear compliance',
+  },
+  {
+    feature: 'Complete setup',
+    treatflow: 'We set everything up for you',
+    other: 'Usually self-serve only',
+  },
+  {
+    feature: 'Made in Austria',
+    treatflow: 'Yes, EU servers',
+    other: 'Often overseas vendors',
+  },
+  {
+    feature: 'Hidden fees',
+    treatflow: 'None',
+    other: 'Extra fees are common',
+  },
+  {
+    feature: 'Free data migration',
+    treatflow: 'Yes, we migrate your data',
+    other: 'Rare or paid',
+  },
+  {
+    feature: 'Treatment documentation',
+    treatflow: 'Built in, with photos',
+    other: 'Usually missing',
+  },
+  {
+    feature: 'Form templates',
+    treatflow: 'Ready templates and AI generator',
+    other: 'No templates',
+  },
+];
+
+const copy = {
+  de: {
+    title: 'Warum Treatflow die beste Wahl für dein Studio ist',
+    subtitle: 'Vergleiche selbst - und entscheide, was zu deinem Studio passt.',
+    others: 'Andere Anbieter',
+    othersShort: 'Andere:',
+    cta: 'Überzeuge dich selbst - 14 Tage kostenlos',
+    register: APP_REGISTER_BY_MARKET.de,
+  },
+  en: {
+    title: 'Why Treatflow is the better fit for your studio',
+    subtitle: 'Compare for yourself – then pick what your studio actually needs.',
+    others: 'Other tools',
+    othersShort: 'Others:',
+    cta: 'See for yourself – 14-day free trial',
+    register: APP_REGISTER_BY_MARKET.en,
+  },
+};
+
+export default function ComparisonTable({ locale = 'de' }: { locale?: HomeLocale }) {
+  const rows = locale === 'en' ? rowsEn : rowsDe;
+  const t = copy[locale];
   return (
     <section className="py-20 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Warum Treatflow die beste Wahl für dein Studio ist
+            {t.title}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Vergleiche selbst - und entscheide, was zu deinem Studio passt.
+            {t.subtitle}
           </p>
         </div>
 
@@ -86,7 +153,7 @@ export default function ComparisonTable() {
                   </span>
                 </th>
                 <th className="text-center px-6 py-4 text-sm font-semibold text-gray-500 w-1/3">
-                  Andere Anbieter
+                  {t.others}
                 </th>
               </tr>
             </thead>
@@ -142,7 +209,7 @@ export default function ComparisonTable() {
                 <div className="flex items-center gap-2">
                   <X className="h-4 w-4 text-red-400 flex-shrink-0" />
                   <span className="text-sm text-gray-500">
-                    <span className="font-medium">Andere:</span> {row.other}
+                    <span className="font-medium">{t.othersShort}</span> {row.other}
                   </span>
                 </div>
               </div>
@@ -152,12 +219,12 @@ export default function ComparisonTable() {
 
         <div className="text-center mt-10">
           <a
-            href="https://app.treatflow.io/auth/register?lang=de"
+            href={t.register}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
           >
-            Überzeuge dich selbst - 14 Tage kostenlos
+            {t.cta}
           </a>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { CheckCircle, X, ArrowRight, AlertTriangle, Shield, Users, FileText, Star, Heart } from 'lucide-react';
 import Link from 'next/link';
 import Script from 'next/script';
+import { buildHreflangAlternates } from '../i18n/seo';
 import Navigation from '../components/Navigation';
 import QuickFacts from '../components/QuickFacts';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
@@ -22,6 +23,7 @@ export const metadata = {
   ],
   alternates: {
     canonical: 'https://www.treatflow.io/treatflow-vs-treatwell',
+    ...buildHreflangAlternates('treatflow-vs-treatwell'),
   },
   openGraph: {
     title: 'Treatflow vs. Treatwell: Der ehrliche Vergleich',

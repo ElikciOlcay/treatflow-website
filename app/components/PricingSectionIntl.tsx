@@ -28,11 +28,17 @@ function PricingCta({
   );
 }
 
-export default function PricingSectionIntl({ copy }: { copy: PricingIntlCopy }) {
+export default function PricingSectionIntl({
+  copy,
+  embedded = false,
+}: {
+  copy: PricingIntlCopy;
+  embedded?: boolean;
+}) {
   const [isYearly, setIsYearly] = useState(false);
 
   return (
-    <section id="pricing" className="pt-28 pb-20 bg-white">
+    <section id="pricing" className={embedded ? "py-20 bg-white" : "pt-28 pb-20 bg-white"}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">

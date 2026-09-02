@@ -33,6 +33,10 @@ export const EN_SLUGS = {
   "lash-studio-software": "lash-studio-software",
   "spa-wellness-software": "spa-wellness-software",
   "massage-software": "massage-software",
+  news: "news",
+  "treatflow-vs-fresha": "treatflow-vs-fresha",
+  "treatflow-vs-treatwell": "treatflow-vs-treatwell",
+  "software-comparison": "software-comparison",
 } as const;
 
 export type MarketPageSlug = keyof typeof EN_SLUGS;

@@ -50,6 +50,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         description: update.summary || update.title,
         alternates: {
             canonical: `https://www.treatflow.io/neuigkeiten/${slug}`,
+            languages: {
+                de: `https://www.treatflow.io/neuigkeiten/${slug}`,
+                en: `https://www.treatflow.io/en/news/${slug}`,
+                'x-default': `https://www.treatflow.io/neuigkeiten/${slug}`,
+            },
         },
         openGraph: {
             title: update.title,

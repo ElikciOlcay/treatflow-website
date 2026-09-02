@@ -38,7 +38,7 @@ export default function FeaturePageEn({
   features,
   closingTitle,
   closingText,
-  earlyAccessHref = APP_REGISTER_BY_MARKET.us,
+  earlyAccessHref = APP_REGISTER_BY_MARKET.en,
   primaryCta = "Start 14-day free trial",
   bottomTitle = "Ready to get started?",
   bottomText = "Start your free trial – no credit card required, cancel anytime.",

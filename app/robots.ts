@@ -9,10 +9,11 @@ export default function robots(): MetadataRoute.Robots {
           "/",
           "/manifest.json",
           "/llms.txt",
+          "/llms-en.txt",
           "/llms-full.txt",
           "/api/facts",
         ],
-        disallow: ["/api/", "/_next/", "/admin/", "/dashboard/"],
+        disallow: ["/api/", "/_next/", "/admin/", "/dashboard/", "/en/point-of-sale"],
       },
       {
         userAgent: "GPTBot",

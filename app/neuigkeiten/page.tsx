@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { buildHreflangAlternates } from '../i18n/seo';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
         'Was ist neu in Treatflow? Alle neuen Funktionen, Verbesserungen und Fixes für Kosmetikstudios – übersichtlich und aktuell.',
     alternates: {
         canonical: 'https://www.treatflow.io/neuigkeiten',
+        ...buildHreflangAlternates('news'),
     },
     openGraph: {
         title: 'Neuigkeiten',
