@@ -75,50 +75,17 @@ export const viewport: Viewport = {
   themeColor: '#4f46e5',
 };
 
-const organizationWebSiteSchema = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Organization',
-      '@id': `${baseUrl}/#organization`,
-      name: 'Treatflow',
-      url: baseUrl,
-      logo: {
-        '@type': 'ImageObject',
-        url: `${baseUrl}/images/logos/treatflow-logo.svg`,
-      },
-      description: 'Software für Kosmetikstudio: Terminkalender, digitale Kundenkartei, Online-Buchungen und Behandlungsdokumentation. Made in Austria.',
-      sameAs: [
-        'https://www.instagram.com/treatflow.io/',
-      ],
-      contactPoint: {
-        '@type': 'ContactPoint',
-        contactType: 'customer service',
-        email: 'hello@treatflow.io',
-        availableLanguage: ['German', 'English', 'Spanish', 'Italian', 'French'],
-        areaServed: ['DE', 'AT', 'CH', 'ES', 'IT', 'FR', 'BE', 'EU'],
-      },
-    },
-    {
-      '@type': 'WebSite',
-      '@id': `${baseUrl}/#website`,
-      url: baseUrl,
-      name: 'Treatflow - Kosmetikstudio Software',
-      description: 'Software für Kosmetikstudio: Terminkalender, Kundenkartei, Online-Buchungen, Behandlungsdokumentation.',
-      publisher: { '@id': `${baseUrl}/#organization` },
-      inLanguage: 'de-DE',
-    },
-  ],
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" dir="ltr">
+    <html lang="de" dir="ltr" suppressHydrationWarning>
       <head>
+        <Script id="html-lang-from-path" strategy="beforeInteractive">
+          {`(function(){try{var p=location.pathname;if(p==="/en"||p.indexOf("/en/")===0){document.documentElement.lang="en";}}catch(e){}})();`}
+        </Script>
         {/* Consent Mode v2 Defaults - muss VOR dem gtag.js-Loader laufen,
             damit GA4 die Consent-Signale von Anfang an respektiert.
             CookieBanner ruft spaeter gtag('consent', 'update', ...) auf,
@@ -154,10 +121,6 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" title="Treatflow Blog RSS Feed" href="/blog/feed.xml" />
         <link rel="alternate" type="text/plain" title="LLM Context" href="/llms.txt" />
         <link rel="alternate" type="text/plain" title="LLM Context (English)" href="/llms-en.txt" hrefLang="en" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationWebSiteSchema) }}
-        />
       </head>
       <body
         className={`${inter.variable} font-sans antialiased overflow-x-hidden`}

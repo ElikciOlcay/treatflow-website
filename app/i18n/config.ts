@@ -35,6 +35,11 @@ export const defaultEnglishMarket: Market = "en";
 
 export const BASE_URL = "https://www.treatflow.io";
 
+/** True for canonical English URLs under /en. */
+export function isEnglishPathname(pathname: string): boolean {
+  return pathname === "/en" || pathname.startsWith("/en/");
+}
+
 /** Anzeigenamen (Switcher: nur DE/EN). */
 export const marketLabels: Record<Market, string> = {
   de: "Deutsch",

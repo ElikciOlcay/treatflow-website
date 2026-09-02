@@ -82,6 +82,9 @@ export async function generateMetadata({
       url: `${BASE_URL}${prefix}`,
       siteName: "Treatflow",
     },
+    other: {
+      language: "English",
+    },
   };
 }
 
