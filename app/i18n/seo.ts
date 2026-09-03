@@ -6,6 +6,7 @@ import {
   marketPathPrefix,
   ogLocaleTags,
   siteLanguages,
+  prefixedMarkets,
 } from "./config";
 import { EN_SLUGS, type MarketPageSlug } from "./market-routes";
 
@@ -85,6 +86,9 @@ const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
 
 type PageSlugMap = Partial<Record<Market, string>>;
 
+/** Alle Maerkte die in hreflang/Sitemap erscheinen sollen (inkl. TR). */
+const seoMarkets: readonly Market[] = ["de", ...prefixedMarkets];
+
 function buildSlugMap(pageKey: SeoPageKey): PageSlugMap {
   const map: PageSlugMap = {};
   const deSlug = DE_SLUGS[pageKey];
@@ -93,17 +97,17 @@ function buildSlugMap(pageKey: SeoPageKey): PageSlugMap {
   const enKey = pageKey === "consent-forms" ? "forms" : pageKey;
   const enSlug = EN_SLUGS[enKey as MarketPageSlug];
   if (enSlug === undefined && pageKey !== "home") {
-    // page without EN slug (e.g. missing) – skip non-DE
     return map;
   }
 
-  // Nur aktive Site-Sprachen (DE + EN) – keine Laender-Varianten mehr
-  for (const market of siteLanguages) {
+  // Alle SEO-Maerkte (DE + EN + TR) bekommen Slugs
+  for (const market of seoMarkets) {
     if (market === "de") continue;
     if (pageKey === "early-access") {
       map[market] = EN_SLUGS[pageKey];
       continue;
     }
+    // TR nutzt die gleichen EN-Slugs (Pfade unter /tr/...)
     if (enSlug !== undefined) {
       map[market] = enSlug;
     }
@@ -172,7 +176,7 @@ export function buildHreflangAlternates(
   const slugs = seoPageSlugs[pageKey];
   const languages: Record<string, string> = {};
 
-  siteLanguages.forEach((market) => {
+  seoMarkets.forEach((market) => {
     const slug = slugs[market];
     if (slug === undefined) return;
     const url = slugToUrl(market, slug);

@@ -444,6 +444,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const localePrefixes = {
         en: '/en',
+        tr: '/tr',
     } as const
 
     function localeRoutes(locale: keyof typeof localePrefixes) {
