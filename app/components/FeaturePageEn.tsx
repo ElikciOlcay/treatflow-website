@@ -32,6 +32,8 @@ export type FeaturePageProps = {
   aiCapsules?: { question: string; answer: string }[];
   problem?: { title?: string; problem: string; solution: string };
   breadcrumbHomeHref?: string;
+  secondaryCta?: { label: string; href: string };
+  promo?: { title: string; text: string; href: string; cta: string };
 };
 
 export default function FeaturePageEn({
@@ -58,6 +60,8 @@ export default function FeaturePageEn({
   aiCapsules,
   problem,
   breadcrumbHomeHref = "/en",
+  secondaryCta,
+  promo,
 }: FeaturePageProps) {
   const CtaTag = earlyAccessHref.startsWith("http") ? "a" : Link;
   const ctaProps = earlyAccessHref.startsWith("http")
@@ -97,14 +101,26 @@ export default function FeaturePageEn({
                 </li>
               ))}
             </ul>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className={`flex flex-col sm:flex-row ${secondaryCta ? "flex-wrap gap-3" : "gap-4"} justify-center lg:justify-start`}>
               <CtaTag
                 {...ctaProps}
-                className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg"
+                className={
+                  secondaryCta
+                    ? "bg-indigo-600 text-white w-fit px-6 py-3 rounded-xl text-base font-semibold hover:bg-indigo-700 transition-all duration-300 inline-flex items-center justify-center shadow-md hover:shadow-lg"
+                    : "bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg"
+                }
               >
                 {primaryCta}
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className={secondaryCta ? "ml-2 h-4 w-4" : "ml-2 h-5 w-5"} />
               </CtaTag>
+              {secondaryCta && (
+                <Link
+                  href={secondaryCta.href}
+                  className="inline-flex w-fit items-center justify-center border border-gray-200 bg-white text-gray-800 px-5 py-3 rounded-xl text-base font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-colors"
+                >
+                  {secondaryCta.label}
+                </Link>
+              )}
             </div>
           </div>
           <div className="order-2 relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[4/3] lg:min-h-[400px] lg:aspect-auto">
@@ -119,6 +135,26 @@ export default function FeaturePageEn({
           </div>
         </div>
       </section>
+
+      {promo && (
+        <section className="py-12 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 lg:p-8 flex flex-col md:flex-row items-center gap-6">
+              <div className="flex-1 text-center md:text-left">
+                <h2 className="text-lg font-bold text-gray-900 mb-2">{promo.title}</h2>
+                <p className="text-gray-600 text-sm leading-relaxed">{promo.text}</p>
+              </div>
+              <Link
+                href={promo.href}
+                className="inline-flex items-center bg-indigo-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition-colors whitespace-nowrap flex-shrink-0"
+              >
+                {promo.cta}
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {aiCapsules && aiCapsules.length > 0 && (
         <div className="px-4 sm:px-6 lg:px-8 bg-white pt-12 pb-10">

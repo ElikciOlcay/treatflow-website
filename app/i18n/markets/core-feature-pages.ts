@@ -371,13 +371,20 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       eyebrow: "Consultation and consent forms",
       title: "Digital consultation and consent forms",
       subtitle:
-        "Send intake and consent forms ahead of the appointment. Clients fill them in on their phone - you start on time, with everything ready.",
+        "Send intake and consent forms ahead of the appointment. Try sample templates without signing up, then create your own with the form generator – or we help you set them up.",
       bullets: [
         "Clients complete forms before they arrive",
         "Digital signatures on any device",
-        "Reusable templates for every treatment",
+        "Sample templates, AI form generator, or we set forms up with you",
         "Stored securely with the client record",
       ],
+      secondaryCta: { label: "Try sample forms", href: "/en/try-forms" },
+      promo: {
+        title: "Try sample forms without signing up",
+        text: "The templates below show how digital check-in works. You create forms for your studio with the AI generator, or we set them up together with you.",
+        href: "/en/try-forms",
+        cta: "Open samples",
+      },
       image: {
         src: "/images/lifestyle/formulare-digital-ausfuellen.png",
         alt: "Digital consent form signed on a tablet",
@@ -386,7 +393,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         { icon: Send, title: "Send in advance", desc: "Share forms by link before the visit - less waiting at reception." },
         { icon: Smartphone, title: "Mobile friendly", desc: "Clients complete forms on their phone in minutes." },
         { icon: FileSignature, title: "Digital signatures", desc: "Capture consent securely without printing." },
-        { icon: PenLine, title: "Templates", desc: "Reuse intake templates for laser, injectables, beauty and more." },
+        { icon: PenLine, title: "Templates & generator", desc: "Start from sample templates, build your own with the AI generator, or we set forms up with you." },
         { icon: ShieldCheck, title: "Secure storage", desc: "Forms stay with the client record on EU-hosted infrastructure." },
         { icon: ClipboardCheck, title: "Ready to treat", desc: "Your team sees completed forms before the appointment starts." },
       ],
@@ -418,6 +425,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
           "Treatflow sends digital consultation and consent forms before the appointment. Answers and signatures sit on the client record.",
       },
       relatedLinks: [
+        { href: "/en/try-forms", label: "Try sample forms" },
         { href: "/en/client-records", label: "Client records" },
         { href: "/en/treatment-documentation", label: "Treatment documentation" },
         { href: "/en/aesthetic-clinic-software", label: "Aesthetic clinic software" },
