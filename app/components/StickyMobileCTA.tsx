@@ -7,6 +7,7 @@ import { ArrowRight } from 'lucide-react';
 import type { Market } from '@/app/i18n/config';
 import { isPrefixedMarket } from '@/app/i18n/config';
 import { getPrimaryCtaPath, isExternalCta } from '@/app/i18n/market-access';
+import { isCookiebotDialogVisible, onCookiebotVisibilityChange } from '@/lib/cookiebot';
 
 const LANDING_PAGES_WITH_OWN_STICKY_CTA = ['/landing/kosmetikstudio-software'];
 
@@ -55,15 +56,16 @@ export default function StickyMobileCTA() {
       const docHeight = document.documentElement.scrollHeight;
       const winHeight = window.innerHeight;
       const nearBottom = scrollY + winHeight > docHeight - 400;
-      const cookieBanner = document.querySelector('[data-cookie-banner]');
-      const cookieVisible = cookieBanner !== null;
-
-      setVisible(scrollY > 500 && !nearBottom && !cookieVisible);
+      setVisible(scrollY > 500 && !nearBottom && !isCookiebotDialogVisible());
     };
 
     window.addEventListener('scroll', onScroll, { passive: true });
+    const stopCookiebotWatch = onCookiebotVisibilityChange(onScroll);
     onScroll();
-    return () => window.removeEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      stopCookiebotWatch();
+    };
   }, [hideOnLandingPage]);
 
   if (hideOnLandingPage || !visible) return null;

@@ -7,6 +7,7 @@ import {
 } from "@/app/i18n/config";
 import { getPrivacyCopy } from "@/app/i18n/markets/static-pages-nl-fi";
 import { enPrivacy } from "@/app/i18n/markets/legal-en";
+import CookiebotDeclaration from "@/app/components/CookiebotDeclaration";
 
 export async function generateMetadata({
   params,
@@ -45,6 +46,7 @@ export default async function PrivacyPage({
           {content.paragraphs.map((p) => (
             <p key={p.slice(0, 40)}>{p}</p>
           ))}
+          <CookiebotDeclaration />
         </div>
       </section>
     );
@@ -66,6 +68,7 @@ export default async function PrivacyPage({
             </div>
           ))}
         </div>
+        <CookiebotDeclaration />
       </div>
     </section>
   );

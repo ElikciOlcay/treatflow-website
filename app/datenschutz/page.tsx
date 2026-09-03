@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import CookiebotDeclaration from "../components/CookiebotDeclaration";
+import CookieSettingsLink from "../components/CookieSettingsLink";
 import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata: Metadata = {
@@ -184,8 +186,17 @@ export default function Datenschutz() {
                                     <p className="mb-4">
                                         Unsere Website verwendet Cookies, um die Funktionalität zu gewährleisten und die Nutzererfahrung zu verbessern.
                                         Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden.
+                                        Die Einwilligung erfolgt über Cookiebot. Statistik- und Marketing-Cookies werden erst nach Ihrer Zustimmung gesetzt.
                                     </p>
-                                    <p className="mb-4">Sie können Cookies in Ihren Browsereinstellungen deaktivieren, dies kann jedoch die Funktionalität der Website beeinträchtigen.</p>
+                                    <p className="mb-4">
+                                        Sie können Ihre Auswahl jederzeit über{' '}
+                                        <CookieSettingsLink
+                                            label="Cookie-Einstellungen"
+                                            className="text-indigo-600 hover:text-indigo-800 underline bg-transparent border-0 p-0 cursor-pointer"
+                                        />{' '}
+                                        ändern oder Cookies in Ihrem Browser deaktivieren. Letzteres kann die Funktionalität der Website beeinträchtigen.
+                                    </p>
+                                    <CookiebotDeclaration />
                                 </div>
                             </div>
 
@@ -195,6 +206,8 @@ export default function Datenschutz() {
                                 <div className="text-gray-700 leading-relaxed">
                                     <p className="mb-4">Wir nutzen folgende Drittanbieter-Services:</p>
                                     <ul className="list-disc list-inside space-y-2">
+                                        <li><strong>Cookiebot (Usercentrics):</strong> Einwilligungsmanagement für Cookies</li>
+                                        <li><strong>Google Tag Manager / Google Analytics:</strong> Tag-Steuerung und Reichweitenmessung (nur nach Einwilligung)</li>
                                         <li><strong>HubSpot:</strong> Für Kontaktformulare und CRM (USA, angemessenes Datenschutzniveau)</li>
                                         <li><strong>Hosting-Provider:</strong> Für die Bereitstellung der Website</li>
                                     </ul>
