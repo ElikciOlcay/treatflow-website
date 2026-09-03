@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "features": "Ozellikler",
+    "industries": "Sektorler",
+    "pricing": "Fiyatlar",
+    "news": "Yenilikler",
+    "contact": "Iletisim",
+    "login": "Giris",
+    "tryFree": "Ucretsiz deneyin",
+    "requestAccess": "Ucretsiz deneyin"
+  },
+  "footer": {
+    "tagline": "Dijital studio asistani. Avusturya'da gelistirildi.",
+    "features": "Ozellikler",
+    "industries": "Sektorler",
+    "product": "Urun",
+    "company": "Sirket",
+    "legal": "Yasal",
+    "aboutUs": "Hakkimizda",
+    "contact": "Iletisim",
+    "pricing": "Fiyatlar",
+    "tryFree": "Ucretsiz deneyin",
+    "requestAccess": "Ucretsiz deneyin",
+    "login": "Giris",
+    "privacy": "Gizlilik Politikasi",
+    "terms": "Kullanim Kosullari",
+    "rights": "Tum haklari saklidir."
+  },
+  "common": {
+    "tryFree": "30 gun ucretsiz deneyin",
+    "requestAccess": "Ucretsiz deneyin",
+    "bookDemo": "Ucretsiz deneyin",
+    "learnMore": "Daha fazla bilgi",
+    "noCreditCard": "Kredi karti gerekmez",
+    "cancelAnytime": "Istediginiz zaman iptal edin",
+    "waitlistNote": "Ucretsiz denemenizi dakikalar icinde baslatabilirsiniz. Kredi karti gerekmez."
+  }
+}

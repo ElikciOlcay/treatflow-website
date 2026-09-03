@@ -17,7 +17,7 @@ export const APP_BASE_URL =
   "https://app.treatflow.io";
 
 /** Sprachen, die die App aktuell per ?lang= zuverlaessig uebernimmt. */
-export type AppHandoffLanguage = "de" | "en";
+export type AppHandoffLanguage = "de" | "en" | "tr";
 
 /**
  * Website-Markt-/Dictionary-Sprache → App-?lang=.
@@ -26,7 +26,9 @@ export type AppHandoffLanguage = "de" | "en";
 export function toAppLanguage(
   language: string | null | undefined
 ): AppHandoffLanguage {
-  return language === "de" ? "de" : "en";
+  if (language === "de") return "de";
+  if (language === "tr") return "tr";
+  return "en";
 }
 
 export function getAppLanguageForMarket(market: Market): AppHandoffLanguage {

@@ -2,10 +2,11 @@
 // Alte Laender-Maerkte (/us, /uk, /nl, …) bleiben im Typ fuer Redirects,
 // sind aber nicht mehr im Sprach-Switcher.
 
-/** Alle bekannten Markt-/Pfad-Codes (inkl. Legacy). */
+/** Alle bekannten Markt-/Pfad-Codes (inkl. Legacy + neue Maerkte). */
 export const markets = [
   "de",
   "en",
+  "tr",
   "us",
   "nl",
   "uk",
@@ -23,7 +24,7 @@ export const siteLanguages = ["de", "en"] as const;
 export type SiteLanguage = (typeof siteLanguages)[number];
 
 /** Sprachen fuer Dictionaries / html lang. */
-export const languages = ["de", "en", "nl", "fi"] as const;
+export const languages = ["de", "en", "tr", "nl", "fi"] as const;
 export type Language = (typeof languages)[number];
 
 /** @deprecated Alias – Routing nutzt Market. */
@@ -40,10 +41,11 @@ export function isEnglishPathname(pathname: string): boolean {
   return pathname === "/en" || pathname.startsWith("/en/");
 }
 
-/** Anzeigenamen (Switcher: nur DE/EN). */
+/** Anzeigenamen (Switcher: nur DE/EN, TR fuer SEO). */
 export const marketLabels: Record<Market, string> = {
   de: "Deutsch",
   en: "English",
+  tr: "Turkce",
   us: "English",
   nl: "English",
   uk: "English",
@@ -60,6 +62,7 @@ export const localeLabels = marketLabels;
 export const marketFlags: Record<Market, string> = {
   de: "DE",
   en: "EN",
+  tr: "TR",
   us: "EN",
   nl: "EN",
   uk: "EN",
@@ -78,6 +81,7 @@ export const switchableLocales = switchableMarkets;
 export const marketLanguage: Record<Market, Language> = {
   de: "de",
   en: "en",
+  tr: "tr",
   us: "en",
   nl: "en",
   uk: "en",
@@ -88,10 +92,11 @@ export const marketLanguage: Record<Market, Language> = {
   ae: "en",
 };
 
-/** URL-Prefix (de = Root, en = /en). */
+/** URL-Prefix (de = Root, en = /en, tr = /tr). */
 export const marketPathPrefix: Record<Market, string> = {
   de: "",
   en: "/en",
+  tr: "/tr",
   us: "/us",
   nl: "/nl",
   uk: "/uk",
@@ -132,16 +137,18 @@ export const MARKET_BY_COUNTRY: Record<string, Market> = {
   AT: "de",
   CH: "de",
   LI: "de",
+  TR: "tr",
 };
 
 /** Cookie fuer Sprachpraeferenz (de | en). */
 export const MARKET_COOKIE = "tf_market";
 export const LOCALE_COOKIE = MARKET_COOKIE;
 
-/** Hreflang – kanonisch nur de + en. */
+/** Hreflang – kanonisch de + en + tr. */
 export const hreflangTags: Record<Market, string> = {
   de: "de",
   en: "en",
+  tr: "tr",
   us: "en",
   nl: "en",
   uk: "en",
@@ -155,6 +162,7 @@ export const hreflangTags: Record<Market, string> = {
 export const htmlLangTags: Record<Market, string> = {
   de: "de",
   en: "en",
+  tr: "tr",
   us: "en",
   nl: "en",
   uk: "en",
@@ -168,6 +176,7 @@ export const htmlLangTags: Record<Market, string> = {
 export const ogLocaleTags: Record<Market, string> = {
   de: "de_DE",
   en: "en_US",
+  tr: "tr_TR",
   us: "en_US",
   nl: "en_US",
   uk: "en_US",
@@ -181,6 +190,7 @@ export const ogLocaleTags: Record<Market, string> = {
 export const marketCurrency: Record<Market, string> = {
   de: "EUR",
   en: "EUR",
+  tr: "TRY",
   us: "USD",
   nl: "EUR",
   uk: "GBP",
@@ -194,6 +204,7 @@ export const marketCurrency: Record<Market, string> = {
 export const englishVariant: Record<Market, "us" | "gb" | null> = {
   de: null,
   en: "us",
+  tr: null,
   us: "us",
   nl: null,
   uk: "gb",
@@ -205,10 +216,10 @@ export const englishVariant: Record<Market, "us" | "gb" | null> = {
 };
 
 /**
- * Prefixed Maerkte die noch gerendert werden.
- * Aktiv: nur /en. Legacy-Laender werden nach /en umgeleitet.
+ * Prefixed Maerkte die gerendert werden.
+ * /en = Englisch, /tr = Tuerkisch (SEO). Legacy-Laender nach /en.
  */
-export const prefixedMarkets = ["en"] as const satisfies readonly Market[];
+export const prefixedMarkets = ["en", "tr"] as const satisfies readonly Market[];
 
 export type PrefixedMarket = (typeof prefixedMarkets)[number];
 
@@ -241,6 +252,7 @@ export function isPrefixedMarketPath(
 export function resolveSiteMarket(value: string | null | undefined): Market {
   if (!value) return defaultMarket;
   if (value === "de") return "de";
+  if (value === "tr") return "tr";
   if (value === "en" || isLegacyCountryMarket(value)) return "en";
   if (value === "es" || value === "it" || value === "fr") return "en";
   return defaultMarket;

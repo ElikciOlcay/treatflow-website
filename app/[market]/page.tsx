@@ -38,4 +38,5 @@ export default async function MarketHome({
     return <HomePageEn />;
   }
   return <HomePageIntl content={getCountryHomePage(market as CountryHomeMarket)} />;
+  // TR wird als CountryHomeMarket via HomePageIntl gerendert
 }

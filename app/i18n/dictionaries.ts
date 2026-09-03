@@ -5,6 +5,7 @@ import { getMarketLanguage } from "./config";
 const dictionaries = {
   de: () => import("./dictionaries/de.json").then((m) => m.default),
   en: () => import("./dictionaries/en.json").then((m) => m.default),
+  tr: () => import("./dictionaries/tr.json").then((m) => m.default),
   nl: () => import("./dictionaries/nl.json").then((m) => m.default),
   fi: () => import("./dictionaries/fi.json").then((m) => m.default),
 } as const;
@@ -16,6 +17,7 @@ export async function getDictionaryByLanguage(
 ): Promise<Dictionary> {
   if (language === "nl") return dictionaries.nl();
   if (language === "fi") return dictionaries.fi();
+  if (language === "tr") return dictionaries.tr();
   if (language === "en") return dictionaries.en();
   return dictionaries.de() as Promise<Dictionary>;
 }
