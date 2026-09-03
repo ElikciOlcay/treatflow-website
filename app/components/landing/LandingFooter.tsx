@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import CookieSettingsLink from '../CookieSettingsLink';
 
 export default function LandingFooter() {
     return (
@@ -21,6 +22,10 @@ export default function LandingFooter() {
                         <a href="/datenschutz" className="hover:text-white transition-colors">
                             Datenschutz
                         </a>
+                        <CookieSettingsLink
+                            label="Cookie-Einstellungen"
+                            className="hover:text-white transition-colors bg-transparent border-0 p-0 cursor-pointer text-sm"
+                        />
                     </div>
                     <p className="text-xs">&copy; {new Date().getFullYear()} Treatflow</p>
                 </div>

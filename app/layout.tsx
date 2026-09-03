@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
-import CookieBanner from "./components/CookieBanner";
 import StickyMobileCTA from "./components/StickyMobileCTA";
+import { GTM_CONTAINER_ID } from "@/lib/cookiebot";
 import "./globals.css";
 
 const inter = Inter({
@@ -86,10 +86,8 @@ export default function RootLayout({
         <Script id="html-lang-from-path" strategy="beforeInteractive">
           {`(function(){try{var p=location.pathname;if(p==="/en"||p.indexOf("/en/")===0){document.documentElement.lang="en";}}catch(e){}})();`}
         </Script>
-        {/* Consent Mode v2 Defaults - muss VOR dem gtag.js-Loader laufen,
-            damit GA4 die Consent-Signale von Anfang an respektiert.
-            CookieBanner ruft spaeter gtag('consent', 'update', ...) auf,
-            sobald der Nutzer im Banner zugestimmt hat. */}
+        {/* Consent Mode v2: Defaults denied, bevor GTM und Cookiebot laden.
+            Cookiebot CMP im GTM aktualisiert die Signale nach der Nutzerwahl. */}
         <Script id="consent-default" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -105,17 +103,14 @@ export default function RootLayout({
               security_storage: 'granted',
               wait_for_update: 500
             });
-            gtag('js', new Date());
           `}
         </Script>
-
-        <Script
-          id="ga4-loader"
-          src="https://www.googletagmanager.com/gtag/js?id=G-SPCW9Q0HY6"
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-config" strategy="afterInteractive">
-          {`gtag('config', 'G-SPCW9Q0HY6', { anonymize_ip: true });`}
+        <Script id="gtm" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');`}
         </Script>
 
         <link rel="alternate" type="application/rss+xml" title="Treatflow Blog RSS Feed" href="/blog/feed.xml" />
@@ -125,9 +120,17 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased overflow-x-hidden`}
       >
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
+          />
+        </noscript>
         {children}
         <StickyMobileCTA />
-        <CookieBanner />
       </body>
     </html>
   );

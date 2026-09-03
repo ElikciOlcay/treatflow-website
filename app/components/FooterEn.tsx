@@ -14,6 +14,7 @@ import {
 } from "../i18n/market-access";
 import { EN_SLUGS } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
+import CookieSettingsLink from "./CookieSettingsLink";
 
 type NavLang = "en" | "nl" | "fi";
 
@@ -305,6 +306,12 @@ export default function FooterEn({
                 >
                   {dict.footer.privacy}
                 </Link>
+              </li>
+              <li>
+                <CookieSettingsLink
+                  label="Cookie settings"
+                  className="text-gray-400 hover:text-white transition-colors bg-transparent border-0 p-0 cursor-pointer text-sm"
+                />
               </li>
               <li>
                 <Link

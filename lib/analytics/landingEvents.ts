@@ -1,3 +1,10 @@
+declare global {
+    interface Window {
+        gtag?: (...args: unknown[]) => void;
+        fbq?: (...args: unknown[]) => void;
+    }
+}
+
 export type LandingSignupEvent = 'kosmetik_lp_signup_click';
 export type LandingDemoEvent = 'kosmetik_lp_demo_click';
 export type LandingEventName = LandingSignupEvent | LandingDemoEvent;

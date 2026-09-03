@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { LANDING_URLS, trackLandingSignup } from '@/lib/analytics/landingEvents';
+import { isCookiebotDialogVisible, onCookiebotVisibilityChange } from '@/lib/cookiebot';
 
 type LandingStickyMobileCTAProps = {
     landingPage?: string;
@@ -19,15 +20,16 @@ export default function LandingStickyMobileCTA({
             const docHeight = document.documentElement.scrollHeight;
             const winHeight = window.innerHeight;
             const nearBottom = scrollY + winHeight > docHeight - 400;
-            const cookieBanner = document.querySelector('[data-cookie-banner]');
-            const cookieVisible = cookieBanner !== null;
-
-            setVisible(scrollY > 280 && !nearBottom && !cookieVisible);
+            setVisible(scrollY > 280 && !nearBottom && !isCookiebotDialogVisible());
         };
 
         window.addEventListener('scroll', onScroll, { passive: true });
+        const stopCookiebotWatch = onCookiebotVisibilityChange(onScroll);
         onScroll();
-        return () => window.removeEventListener('scroll', onScroll);
+        return () => {
+            window.removeEventListener('scroll', onScroll);
+            stopCookiebotWatch();
+        };
     }, []);
 
     if (!visible) return null;
