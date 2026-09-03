@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blogPosts'
+import { DEMO_FORMS } from '@/lib/demoForms'
 import { buildHreflangAlternates, seoPageSlugs, type SeoPageKey } from '@/app/i18n/seo'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -41,6 +42,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
+        internationalEntry('/formulare-testen', 'try-forms', 0.8),
+        ...DEMO_FORMS.map((form) => ({
+            url: `${baseUrl}/formulare-testen/${form.slug}`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.6,
+            alternates: {
+                languages: {
+                    de: `${baseUrl}/formulare-testen/${form.slug}`,
+                    en: `${baseUrl}/en/try-forms/${form.slug}`,
+                    'x-default': `${baseUrl}/formulare-testen/${form.slug}`,
+                },
+            },
+        })),
+        ...DEMO_FORMS.map((form) => ({
+            url: `${baseUrl}/en/try-forms/${form.slug}`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.6,
+            alternates: {
+                languages: {
+                    de: `${baseUrl}/formulare-testen/${form.slug}`,
+                    en: `${baseUrl}/en/try-forms/${form.slug}`,
+                    'x-default': `${baseUrl}/formulare-testen/${form.slug}`,
+                },
+            },
+        })),
         {
             url: `${baseUrl}/behandlungsdokumentation`,
             lastModified: new Date(),
@@ -383,6 +411,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { key: 'online-booking', priority: 0.8 },
         { key: 'client-records', priority: 0.8 },
         { key: 'forms', priority: 0.8 },
+        { key: 'try-forms', priority: 0.8 },
         { key: 'treatment-documentation', priority: 0.8 },
         { key: 'vouchers', priority: 0.8 },
         { key: 'messaging', priority: 0.8 },

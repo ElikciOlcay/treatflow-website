@@ -10,6 +10,14 @@ import { getPrimaryCtaPath, isExternalCta } from '@/app/i18n/market-access';
 
 const LANDING_PAGES_WITH_OWN_STICKY_CTA = ['/landing/kosmetikstudio-software'];
 
+function hideStickyCta(pathname: string | null): boolean {
+  if (!pathname) return false;
+  if (LANDING_PAGES_WITH_OWN_STICKY_CTA.includes(pathname)) return true;
+  if (pathname.startsWith('/formulare-testen/')) return true;
+  if (pathname.startsWith('/en/try-forms/')) return true;
+  return false;
+}
+
 function marketFromPath(pathname: string | null): Market {
   if (!pathname) return 'de';
   const match = pathname.match(/^\/([a-z]{2})(?=\/|$)/);
@@ -33,7 +41,7 @@ function stickyCopy(market: Market) {
 export default function StickyMobileCTA() {
   const pathname = usePathname();
   const [visible, setVisible] = useState(false);
-  const hideOnLandingPage = LANDING_PAGES_WITH_OWN_STICKY_CTA.includes(pathname);
+  const hideOnLandingPage = hideStickyCta(pathname);
   const market = marketFromPath(pathname);
   const ctaPath = getPrimaryCtaPath(market);
   const external = isExternalCta(market);

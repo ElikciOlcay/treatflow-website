@@ -188,30 +188,30 @@ export default function FeatureHero({
                                 </ul>
                             )}
 
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                                 {primaryCta.external ? (
                                     <a
                                         href={primaryCta.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className={`${t.ctaBg} text-white px-8 py-4 rounded-xl text-lg font-semibold ${t.ctaHover} transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg`}
+                                        className={`${t.ctaBg} text-white w-fit px-6 py-3 rounded-xl text-base font-semibold ${t.ctaHover} transition-all duration-300 inline-flex items-center justify-center shadow-md hover:shadow-lg`}
                                     >
                                         {primaryCta.label}
-                                        <ArrowRight className="ml-2 h-5 w-5" />
+                                        <ArrowRight className="ml-2 h-4 w-4" />
                                     </a>
                                 ) : (
                                     <Link
                                         href={primaryCta.href}
-                                        className={`${t.ctaBg} text-white px-8 py-4 rounded-xl text-lg font-semibold ${t.ctaHover} transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg`}
+                                        className={`${t.ctaBg} text-white w-fit px-6 py-3 rounded-xl text-base font-semibold ${t.ctaHover} transition-all duration-300 inline-flex items-center justify-center shadow-md hover:shadow-lg`}
                                     >
                                         {primaryCta.label}
-                                        <ArrowRight className="ml-2 h-5 w-5" />
+                                        <ArrowRight className="ml-2 h-4 w-4" />
                                     </Link>
                                 )}
                                 {secondaryCta && (
                                     <Link
                                         href={secondaryCta.href}
-                                        className={`inline-flex items-center justify-center border border-gray-200 bg-white text-gray-800 px-8 py-4 rounded-xl text-lg font-semibold ${t.secondaryHover} transition-colors`}
+                                        className={`inline-flex w-fit items-center justify-center border border-gray-200 bg-white text-gray-800 px-5 py-3 rounded-xl text-base font-semibold ${t.secondaryHover} transition-colors`}
                                     >
                                         {secondaryCta.label}
                                     </Link>

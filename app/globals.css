@@ -48,3 +48,44 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+.demo-form-document {
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.demo-form-document h2 {
+  color: #111827;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+
+.demo-form-document h3 {
+  color: #111827;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.demo-form-document p {
+  margin: 0 0 0.85rem;
+}
+
+.demo-form-document ul {
+  margin: 0 0 0.85rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.demo-form-document li {
+  margin-bottom: 0.35rem;
+}
+
+.demo-form-document strong {
+  color: #111827;
+  font-weight: 600;
+}

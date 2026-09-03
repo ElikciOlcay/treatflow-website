@@ -1,4 +1,5 @@
-import { FileText, Sparkles, Layout, Send, PenTool, Shield } from 'lucide-react';
+import { FileText, Sparkles, Layout, Send, PenTool, Shield, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
@@ -111,7 +112,7 @@ export default function FormularePage() {
                 title={<>Formulare für jede <FeatureTitleHighlight theme="green">Behandlung</FeatureTitleHighlight></>}
                 description="Marketplace, KI-Generator und Drag & Drop. Vorlagen nutzen oder eigene Formulare in Minuten erstellen."
                 chips={['KI-Generator', 'Marketplace', 'Drag & Drop']}
-                secondaryCta={{ label: 'Zur Anamnese-Checkliste', href: '/anamnesebogen-kosmetikstudio' }}
+                secondaryCta={{ label: 'Beispiele testen', href: '/formulare-testen' }}
                 aiCapsule={{
                     question: 'Welche Formulare brauche ich im Kosmetikstudio?',
                     answer: 'Mindestens Anamnesebögen, Einwilligungserklärungen und bei apparativer Kosmetik NiSV-Aufklärungsbögen. Treatflow liefert fertige Vorlagen plus KI-Generator; Kundinnen füllen digital vorab aus – die Daten landen DSGVO-konform in der Kundenkartei.',
@@ -147,6 +148,28 @@ export default function FormularePage() {
                 ]}
             />
 
+            <section className="py-12 bg-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 lg:p-8 flex flex-col md:flex-row items-center gap-6">
+                        <div className="flex-1 text-center md:text-left">
+                            <h2 className="text-lg font-bold text-gray-900 mb-2">
+                                Beispiel-Formulare ohne Anmeldung testen
+                            </h2>
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                                Die folgenden Vorlagen zeigen den digitalen Check-in. Formulare für dein Studio erstellst du mit dem KI-Generator, oder wir richten sie gemeinsam mit dir ein.
+                            </p>
+                        </div>
+                        <Link
+                            href="/formulare-testen"
+                            className="inline-flex items-center bg-indigo-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition-colors whitespace-nowrap flex-shrink-0"
+                        >
+                            Beispiele öffnen
+                            <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
             <FeatureHowItWorks
                 theme="green"
                 description="In drei Schritten vom leeren Blatt zum fertigen Formular."
@@ -177,6 +200,7 @@ export default function FormularePage() {
 
             <FeatureRelated
                 items={[
+                    { href: '/formulare-testen', title: 'Formulare testen', description: 'Beispiel-Formulare ohne Anmeldung ausfüllen' },
                     { href: '/behandlungsdokumentation', title: 'Dokumentation', description: 'Formulare plus Behandlungsverlauf' },
                     { href: '/kundenverwaltung', title: 'Kundenverwaltung', description: 'Ausgefüllte Bögen im Profil' },
                     { href: '/nisv-dokumentation', title: 'NiSV-Dokumentation', description: 'Beratung, Einwilligung & Archiv' },
@@ -187,8 +211,8 @@ export default function FormularePage() {
                 theme="green"
                 title="Bereit für digitale Formulare?"
                 description="14 Tage kostenlos testen – Marketplace, KI-Generator und Drag & Drop ohne Kreditkarte."
-                secondaryLabel="NiSV-Dokumentation"
-                secondaryHref="/nisv-dokumentation"
+                secondaryLabel="Beispiele testen"
+                secondaryHref="/formulare-testen"
             />
 
             <Footer />

@@ -16,6 +16,7 @@ export const EN_SLUGS = {
   "online-booking": "online-booking",
   "client-records": "client-records",
   forms: "forms",
+  "try-forms": "try-forms",
   "treatment-documentation": "treatment-documentation",
   "point-of-sale": "point-of-sale",
   vouchers: "vouchers",

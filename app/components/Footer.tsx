@@ -42,6 +42,7 @@ export default function Footer() {
               <li><Link href="/gutscheine-kosmetikstudio" className="text-gray-400 hover:text-white transition-colors">Gutscheine</Link></li>
               <li><Link href="/kundenverwaltung" className="text-gray-400 hover:text-white transition-colors">Kundenverwaltung</Link></li>
               <li><Link href="/formulare" className="text-gray-400 hover:text-white transition-colors">Formulare</Link></li>
+              <li><Link href="/formulare-testen" className="text-gray-400 hover:text-white transition-colors">Formulare testen</Link></li>
               <li><Link href="/behandlungsdokumentation" className="text-gray-400 hover:text-white transition-colors">Dokumentation</Link></li>
               <li><Link href="/nachrichtenautomatisierung" className="text-gray-400 hover:text-white transition-colors">Nachrichten</Link></li>
               <li><Link href="/kunden-workflows" className="text-gray-400 hover:text-white transition-colors">Kunden-Workflows</Link></li>
@@ -91,6 +92,7 @@ export default function Footer() {
               <li><Link href="/kundenkartei-vorlage-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Kundenkartei-Vorlage</Link></li>
               <li><Link href="/no-show-playbook-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">No-Show-Playbook</Link></li>
               <li><Link href="/preisliste-vorlage-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Preislisten-Vorlage</Link></li>
+              <li><Link href="/formulare-testen" className="text-gray-400 hover:text-white transition-colors">Formulare live testen</Link></li>
               <li><Link href="/kontakt" className="text-gray-400 hover:text-white transition-colors">Kontakt</Link></li>
             </ul>
             <h3 className="font-semibold mb-4 mt-8">Regionen</h3>

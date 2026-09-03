@@ -228,6 +228,14 @@ export default function FooterEn({
               </li>
               <li>
                 <Link
+                  href={`${base}/${EN_SLUGS["try-forms"]}`}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Try sample forms
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={`${base}/${EN_SLUGS["software-comparison"]}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >

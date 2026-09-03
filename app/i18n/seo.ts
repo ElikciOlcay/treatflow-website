@@ -43,7 +43,8 @@ export type SeoPageKey =
   | "news"
   | "treatflow-vs-fresha"
   | "treatflow-vs-treatwell"
-  | "software-comparison";
+  | "software-comparison"
+  | "try-forms";
 
 /** DE-Root-Slugs (bestehende SEO-URLs). */
 const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
@@ -58,6 +59,7 @@ const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
   "client-records": "kundenverwaltung",
   forms: "formulare",
   "consent-forms": "formulare",
+  "try-forms": "formulare-testen",
   "treatment-documentation": "behandlungsdokumentation",
   "point-of-sale": "kassensystem-kosmetikstudio",
   vouchers: "gutscheine-kosmetikstudio",
@@ -122,6 +124,7 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
   "client-records": buildSlugMap("client-records"),
   forms: buildSlugMap("forms"),
   "consent-forms": buildSlugMap("consent-forms"),
+  "try-forms": buildSlugMap("try-forms"),
   "treatment-documentation": buildSlugMap("treatment-documentation"),
   "point-of-sale": {
     de: "kassensystem-kosmetikstudio",
