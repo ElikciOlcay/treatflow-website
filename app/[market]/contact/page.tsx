@@ -8,6 +8,15 @@ import {
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 import { getContactCopy } from "@/app/i18n/markets/static-pages-nl-fi";
 
+const trContact = {
+  metaTitle: "Treatflow ile İletişim",
+  metaDescription:
+    "Treatflow ekibiyle iletişime geçin. Güzellik salonları ve estetik kliniklerin randevuları, formları ve işlem dokümantasyonunu dijitalleştirmesine yardımcı oluyoruz.",
+  title: "İletişim",
+  body: "Bize hello@treatflow.io adresinden e-posta gönderin veya hemen ücretsiz denemenizi başlatın.",
+  cta: "Ücretsiz deneyin",
+};
+
 const enContact = {
   metaTitle: "Contact Treatflow",
   metaDescription:
@@ -26,7 +35,7 @@ export async function generateMetadata({
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "nl" || lang === "fi" ? getContactCopy(lang) : enContact;
+  const content = lang === "tr" ? trContact : lang === "nl" || lang === "fi" ? getContactCopy(lang) : enContact;
   return buildPageMetadata({
     locale: market,
     pageKey: "contact",
@@ -44,14 +53,16 @@ export default async function ContactPage({
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "nl" || lang === "fi" ? getContactCopy(lang) : enContact;
+  const content = lang === "tr" ? trContact : lang === "nl" || lang === "fi" ? getContactCopy(lang) : enContact;
   const registerUrl = APP_REGISTER_BY_MARKET[market];
   const ctaLabel =
-    lang === "nl"
-      ? "Gratis proberen"
-      : lang === "fi"
-        ? "Aloita ilmainen kokeilu"
-        : content.cta;
+    lang === "tr"
+      ? "Ücretsiz deneyin"
+      : lang === "nl"
+        ? "Gratis proberen"
+        : lang === "fi"
+          ? "Aloita ilmainen kokeilu"
+          : content.cta;
 
   return (
     <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">

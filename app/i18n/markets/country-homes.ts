@@ -990,7 +990,7 @@ const fiHomePage: HomePageIntlContent = {
 /* -------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- */
-/* TR – Turkiye                                                               */
+/* TR – Türkiye                                                               */
 /* -------------------------------------------------------------------------- */
 
 const trHomePage: HomePageIntlContent = {
@@ -998,96 +998,96 @@ const trHomePage: HomePageIntlContent = {
   earlyAccessHref: "https://app.treatflow.io/auth/register?lang=tr",
   pricingHref: "/tr/pricing",
   hero: {
-    eyebrow: "Turkiye'deki guzellik salonlari ve estetik klinikleri icin",
-    titleLead: "Randevular, kayitlar,",
+    eyebrow: "Türkiye'deki güzellik salonları ve estetik klinikleri için",
+    titleLead: "Randevular, kayıtlar,",
     titleHighlight: "dijital formlar",
     titleTail: "tek bir uygulamada",
     subtitle:
-      "Guzellik salonlari, medikal estetik merkezleri ve cilt bakim klinikleri icin hepsi bir arada yazilim. Online randevu, musteri kartotegi, onam formlari, islem dokumantasyonu ve otomatik hatirlatmalar.",
-    primaryCta: "Ucretsiz deneyin",
-    trustItems: ["Kredi karti gerekmez", "2 dakikada baslat", "Ucretsiz veri aktarimi", "Kisisel destek"],
-    studiosLabel: "500+ isletme",
+      "Güzellik salonları, medikal estetik merkezleri ve cilt bakım klinikleri için hepsi bir arada yazılım. Online randevu, müşteri kartotek, onam formları, işlem dokümantasyonu ve otomatik hatırlatmalar.",
+    primaryCta: "Ücretsiz deneyin",
+    trustItems: ["Kredi kartı gerekmez", "2 dakikada başlat", "Ücretsiz veri aktarımı", "Kişisel destek"],
+    studiosLabel: "500+ işletme",
     ratingValue: "4.6/5",
     image: {
       ...heroImage,
-      alt: "Treatflow yazilimi bir guzellik salonunda laptop ve tablet uzerinde: takvim, kasa ve musteri kayitlari",
+      alt: "Treatflow yazılımı bir güzellik salonunda laptop ve tablet üzerinde: takvim, kasa ve müşteri kayıtları",
     },
   },
   aiCapsules: [
     {
       question: "Treatflow nedir?",
       answer:
-        "Treatflow, Turkiye'deki guzellik salonlari, estetik klinikleri ve medikal estetik merkezleri icin hepsi bir arada yazilimdir. Online randevu, musteri kartotegi, dijital onam formlari, islem dokumantasyonu ve foto arsivi tek bir platformda. AB sunucularinda barindirma, guclu gizlilik kontrolleri.",
+        "Treatflow, Türkiye'deki güzellik salonları, estetik klinikleri ve medikal estetik merkezleri için hepsi bir arada yazılımdır. Online randevu, müşteri kartotek, dijital onam formları, işlem dokümantasyonu ve fotoğraf arşivi tek bir platformda. AB sunucularında barındırma, güçlü gizlilik kontrolleri.",
     },
     {
-      question: "Treatflow kimler icin?",
+      question: "Treatflow kimler için?",
       answer:
-        "Treatflow, randevu yonetimi, dijital onam islemleri ve yapilandirilmis islem dokumantasyonu isteyen guzellik salonlari, estetik klinikleri, lazer studyolari, kalici makyaj studyolari ve cilt bakim merkezleri icindir.",
+        "Treatflow, randevu yönetimi, dijital onam işlemleri ve yapılandırılmış işlem dokümantasyonu isteyen güzellik salonları, estetik klinikleri, lazer stüdyoları, kalıcı makyaj stüdyoları ve cilt bakım merkezleri içindir.",
     },
   ],
   trustBar: [
-    { icon: Lock, text: "SSL sifreleme" },
-    { icon: Server, text: "AB sunuculari" },
-    { icon: Shield, text: "Gunluk yedekleme" },
+    { icon: Lock, text: "SSL şifreleme" },
+    { icon: Server, text: "AB sunucuları" },
+    { icon: Shield, text: "Günlük yedekleme" },
     { icon: ShieldCheck, text: "Dijital onam" },
   ],
   features: {
-    title: "En onemli ozellikler bir bakista",
-    subtitle: "Her sey duzenli, siz ve ekibiniz hizli calisabilsiniz.",
-    ctaNote: "Kredi karti gerekmez. Istediginiz zaman iptal edin.",
+    title: "En önemli özellikler bir bakışta",
+    subtitle: "Her şey düzenli, siz ve ekibiniz hızlı çalışabilsiniz.",
+    ctaNote: "Kredi kartı gerekmez. İstediğiniz zaman iptal edin.",
     items: [
-      { icon: CalendarDays, label: "Randevu takvimi", desc: "Tum randevular gunluk ve haftalik gorunumde.", color: featureColors.calendar },
-      { icon: Users, label: "Online rezervasyon", desc: "Musteriler online rezervasyon yapar, kapora ile no-show azaltir.", color: featureColors.booking },
-      { icon: ClipboardCheck, label: "Onam formlari", desc: "Estetik islemler icin dijital anamnez ve onam formlari.", color: featureColors.consent },
-      { icon: FileText, label: "Musteri kartotegi", desc: "Musteri verileri, gecmis ve notlar tek bir yerde.", color: featureColors.records },
-      { icon: Shield, label: "Islem dokumantasyonu", desc: "Islemleri notlar ve fotograflarla belgeleyin.", color: featureColors.docs },
-      { icon: Bell, label: "Hatirlatmalar", desc: "Otomatik SMS ve e-posta ile no-show'lari azaltin.", color: featureColors.reminders },
-      { icon: Workflow, label: "Dijital is akislari", desc: "Rezervasyondan dokumantasyona tek bir sistemde.", color: featureColors.workflows },
+      { icon: CalendarDays, label: "Randevu takvimi", desc: "Tüm randevular günlük ve haftalık görünümde.", color: featureColors.calendar },
+      { icon: Users, label: "Online rezervasyon", desc: "Müşteriler online rezervasyon yapar, kapora ile no-show azaltır.", color: featureColors.booking },
+      { icon: ClipboardCheck, label: "Onam formları", desc: "Estetik işlemler için dijital anamnez ve onam formları.", color: featureColors.consent },
+      { icon: FileText, label: "Müşteri kartotek", desc: "Müşteri verileri, geçmiş ve notlar tek bir yerde.", color: featureColors.records },
+      { icon: Shield, label: "İşlem dokümantasyonu", desc: "İşlemleri notlar ve fotoğraflarla belgeleyin.", color: featureColors.docs },
+      { icon: Bell, label: "Hatırlatmalar", desc: "Otomatik SMS ve e-posta ile no-show'ları azaltın.", color: featureColors.reminders },
+      { icon: Workflow, label: "Dijital iş akışları", desc: "Rezervasyondan dokümantasyona tek bir sistemde.", color: featureColors.workflows },
     ],
   },
   extras: {
-    title: "Treatflow daha fazlasini yapabilir",
-    subtitle: "Studio gununuzu kolaylastiran ekstra ozellikler – hepsi dahil.",
+    title: "Treatflow daha fazlasını yapabilir",
+    subtitle: "Stüdyo gününüzü kolaylaştıran ekstra özellikler – hepsi dahil.",
     items: [
-      { icon: BarChart3, label: "Istatistikler ve raporlar", desc: "Gelir, randevular, musteriler ve en cok tercih edilen hizmetler bir bakista." },
-      { icon: Mic, label: "Yapay zeka ile dikte", desc: "Islem notlarinizi konusarak yazin – yapay zeka sizin icin yazar." },
-      { icon: Languages, label: "Coklu dil destegi", desc: "Rezervasyon sayfaniz musterilerinizin dilinde gorunur." },
-      { icon: Ticket, label: "Hediye kuponlari", desc: "Kisisellestirilmis hediye kuponlari olusturun ve yonetin." },
-      { icon: ListChecks, label: "Tedavi planlari", desc: "Cok adimli islemler icin yapilandirilmis tedavi planlari." },
+      { icon: BarChart3, label: "İstatistikler ve raporlar", desc: "Gelir, randevular, müşteriler ve en çok tercih edilen hizmetler bir bakışta." },
+      { icon: Mic, label: "Yapay zeka ile dikte", desc: "İşlem notlarınızı konuşarak yazın – yapay zeka sizin için yazar." },
+      { icon: Languages, label: "Çoklu dil desteği", desc: "Rezervasyon sayfanız müşterilerinizin dilinde görünür." },
+      { icon: Ticket, label: "Hediye kuponları", desc: "Kişiselleştirilmiş hediye kuponları oluşturun ve yönetin." },
+      { icon: ListChecks, label: "Tedavi planları", desc: "Çok adımlı işlemler için yapılandırılmış tedavi planları." },
     ],
   },
   cta: {
-    title: "Bugunku cozum",
-    subtitle: "Treatflow'u hemen deneyin – 30 gun ucretsiz, kredi karti gerekmez.",
-    note: "30 gun ucretsiz deneme -- Kredi karti gerekmez -- Istediginiz zaman iptal edin",
+    title: "Bugünkü çözüm",
+    subtitle: "Treatflow'u hemen deneyin – 30 gün ücretsiz, kredi kartı gerekmez.",
+    note: "30 gün ücretsiz deneme -- Kredi kartı gerekmez -- İstediğiniz zaman iptal edin",
   },
   faqs: {
-    title: "Sik sorulan sorular",
-    pricingLinkLabel: "Fiyatlari gor",
+    title: "Sık sorulan sorular",
+    pricingLinkLabel: "Fiyatları gör",
     items: [
       {
         q: "Treatflow nedir?",
-        a: "Treatflow, guzellik salonlari ve estetik klinikleri icin hepsi bir arada yazilimdir. Randevu takvimi, komisyonsuz online rezervasyon, dijital musteri kartotegi, onam formlari, islem notlari, foto dokumantasyon ve hatirlatmalari tek bir uygulamada birlestirir. Avusturya'da uretilmis, AB sunucularinda barindiriliyor.",
+        a: "Treatflow, güzellik salonları ve estetik klinikleri için hepsi bir arada yazılımdır. Randevu takvimi, komisyonsuz online rezervasyon, dijital müşteri kartotek, onam formları, işlem notları, fotoğraf dokümantasyon ve hatırlatmaları tek bir uygulamada birleştirir. Avusturya'da üretilmiş, AB sunucularında barındırılıyor.",
       },
       {
-        q: "Turkiye'de kullanabilir miyim?",
-        a: "Evet! Treatflow Turkiye'deki guzellik salonlari ve estetik klinikleri icin tamamen uyumludur. Turk Lirasi fiyatlandirma, Turkce arayuz ve yerel destek sunuyoruz.",
+        q: "Türkiye'de kullanabilir miyim?",
+        a: "Evet! Treatflow Türkiye'deki güzellik salonları ve estetik klinikleri için tamamen uyumludur. Türk Lirası fiyatlandırma, Türkçe arayüz ve yerel destek sunuyoruz.",
       },
       {
-        q: "Komisyon aliyor musunuz?",
-        a: "Hayir. Treatflow bir pazar yeri degil, studio yazilimidir. Musteri verileriniz sizde kalir ve seffaf aylik ucret odersiniz. Rezervasyon basina komisyon yoktur.",
+        q: "Komisyon alıyor musunuz?",
+        a: "Hayır. Treatflow bir pazar yeri değil, stüdyo yazılımıdır. Müşteri verileriniz sizde kalır ve şeffaf aylık ücret ödersiniz. Rezervasyon başına komisyon yoktur.",
       },
       {
-        q: "Hangi isletme turleri icin uygun?",
-        a: "Guzellik salonlari, estetik klinikleri, lazer studyolari, kalici makyaj studyolari, tirnak ve kirpik studyolari, spa ve masaj merkezleri.",
+        q: "Hangi işletme türleri için uygun?",
+        a: "Güzellik salonları, estetik klinikleri, lazer stüdyoları, kalıcı makyaj stüdyoları, tırnak ve kirpik stüdyoları, spa ve masaj merkezleri.",
       },
       {
-        q: "Ucretsiz deneme suresi ne kadar?",
-        a: "30 gun ucretsiz deneme sunuyoruz. Kredi karti gerekmez, istediginiz zaman iptal edebilirsiniz.",
+        q: "Ücretsiz deneme süresi ne kadar?",
+        a: "30 gün ücretsiz deneme sunuyoruz. Kredi kartı gerekmez, istediğiniz zaman iptal edebilirsiniz.",
       },
       {
-        q: "Fiyatlandirma nasil?",
-        a: "Lansman fiyati ayda 1.490 TL (ilk 100 isletme icin). Normal fiyat ayda 1.990 TL. Komisyon yoktur.",
+        q: "Fiyatlandırma nasıl?",
+        a: "Lansman fiyatı ayda 1.490 TL (ilk 100 işletme için). Normal fiyat ayda 1.990 TL. Komisyon yoktur.",
       },
     ],
   },
@@ -1095,7 +1095,7 @@ const trHomePage: HomePageIntlContent = {
     software: softwareSchema(
       "tr",
       "/tr",
-      "Turkiye'deki guzellik salonlari ve estetik klinikleri icin hepsi bir arada yazilim: online randevu, musteri kartotegi, dijital onam formlari ve islem dokumantasyonu."
+      "Türkiye'deki güzellik salonları ve estetik klinikleri için hepsi bir arada yazılım: online randevu, müşteri kartotek, dijital onam formları ve işlem dokümantasyonu."
     ),
     faq: faqSchema("tr", []),
   },
@@ -1305,7 +1305,7 @@ export function getCountryHomePage(market: CountryHomeMarket): HomePageIntlConte
   const isTr = market === "tr";
 
   const primaryCta = isTr
-    ? "Ucretsiz deneyin"
+    ? "Ücretsiz deneyin"
     : isNl
       ? "Gratis proberen"
       : isFi
@@ -1313,7 +1313,7 @@ export function getCountryHomePage(market: CountryHomeMarket): HomePageIntlConte
         : "Start free trial";
 
   const ctaSubtitle = isTr
-    ? "Treatflow'u hemen deneyin – 30 gun ucretsiz, kredi karti gerekmez."
+    ? "Treatflow'u hemen deneyin – 30 gün ücretsiz, kredi kartı gerekmez."
     : isNl
       ? "Start direct met Treatflow – 14 dagen gratis, geen creditcard."
       : isFi
@@ -1321,7 +1321,7 @@ export function getCountryHomePage(market: CountryHomeMarket): HomePageIntlConte
         : "Start Treatflow today – 14-day free trial, no credit card required.";
 
   const ctaNote = isTr
-    ? "30 gun ucretsiz deneme -- Kredi karti gerekmez -- Istediginiz zaman iptal edin"
+    ? "30 gün ücretsiz deneme -- Kredi kartı gerekmez -- İstediğiniz zaman iptal edin"
     : isNl
       ? "14 dagen gratis · Geen creditcard · Opzeggen wanneer je wilt"
       : isFi
@@ -1370,9 +1370,9 @@ export const countryHomeMeta: Record<
       "Treatflow is all-in-one software for beauty salons, aesthetic clinics and treatment businesses. Online booking, client records, digital forms, treatment documentation and reminders. 14-day free trial.",
   },
   tr: {
-    title: "Guzellik Salonu ve Estetik Klinik Yazilimi",
+    title: "Güzellik Salonu ve Estetik Klinik Yazılımı",
     description:
-      "Turkiye'deki guzellik salonlari, estetik klinikleri ve medikal estetik merkezleri icin hepsi bir arada yazilim. Online randevu, musteri kartotegi, dijital formlar, islem dokumantasyonu ve otomatik hatirlatmalar. 30 gun ucretsiz deneyin.",
+      "Türkiye'deki güzellik salonları, estetik klinikleri ve medikal estetik merkezleri için hepsi bir arada yazılım. Online randevu, müşteri kartotek, dijital formlar, işlem dokümantasyonu ve otomatik hatırlatmalar. 30 gün ücretsiz deneyin.",
   },
   us: {
     title: "Salon & Med Spa Software for the United States",

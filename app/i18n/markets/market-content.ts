@@ -8,16 +8,22 @@ import { getIndustryPage, type IndustryPageKey } from "./industry-pages-intl";
 import { getExtraFeaturePage } from "./extra-feature-pages-intl";
 import { getExtraFeaturePageNlFi } from "./extra-feature-pages-nl-fi";
 import { getIndustryPageNlFi } from "./industry-pages-nl-fi";
+import { getIndustryPageTr } from "./industry-pages-tr";
+import { getExtraFeaturePageTr } from "./extra-feature-pages-tr";
 import type { ExtraFeatureKey } from "../feature-slugs";
 import { APP_REGISTER_BY_MARKET } from "../market-access";
 
 function selfServeCtaLabel(lang: string): string {
+  if (lang === "tr") return "30 gün ücretsiz deneyin";
   if (lang === "nl") return "Gratis proberen";
   if (lang === "fi") return "Aloita ilmainen kokeilu";
   return "Start free trial";
 }
 
 function selfServePricingSubtitle(lang: string): string {
+  if (lang === "tr") {
+    return "Stüdyonuza uygun planı seçin. 30 günlük ücretsiz denemeyi hemen başlatın – kredi kartı gerekmez.";
+  }
   if (lang === "nl") {
     return "Kies het plan dat bij jouw studio past. Start direct met 14 dagen gratis – geen creditcard nodig.";
   }
@@ -40,6 +46,15 @@ function selfServeFeatureCta(lang: string): Pick<
         "Start je gratis proefperiode – geen creditcard, opzeggen wanneer je wilt.",
     };
   }
+  if (lang === "tr") {
+    return {
+      earlyAccessHref: "",
+      primaryCta: "30 gün ücretsiz deneyin",
+      bottomTitle: "Başlamaya hazır mısınız?",
+      bottomText:
+        "Ücretsiz denemenizi başlatın – kredi kartı gerekmez, istediğiniz zaman iptal edin.",
+    };
+  }
   if (lang === "fi") {
     return {
       earlyAccessHref: "",
@@ -60,6 +75,10 @@ function selfServeFeatureCta(lang: string): Pick<
 
 export function isNlFiMarket(market: string): market is "nl" | "fi" {
   return market === "nl" || market === "fi";
+}
+
+export function isTrMarket(market: string): market is "tr" {
+  return market === "tr";
 }
 
 /** Ersetzt /en/... Pfade durch /{market}/... (Icons & Funktionen bleiben erhalten). */
@@ -87,7 +106,7 @@ export function remapEnPaths<T>(value: T, market: PrefixedMarket): T {
 export function getMarketPricingCopy(market: PrefixedMarket): PricingIntlCopy {
   const lang = marketLanguage[market];
   const pricingLocale: PricingLocale =
-    lang === "nl" || lang === "fi" ? lang : "en";
+    lang === "nl" || lang === "fi" || lang === "tr" ? lang : "en";
   const copy = getPricingIntlCopy(pricingLocale);
   return {
     ...remapEnPaths(copy, market),
@@ -101,6 +120,9 @@ export function getMarketIndustryPage(
   market: PrefixedMarket,
   key: IndustryPageKey
 ): InternationalPageContent {
+  if (isTrMarket(market)) {
+    return getIndustryPageTr(key, market);
+  }
   if (isNlFiMarket(market)) {
     return getIndustryPageNlFi(market, key, market);
   }
@@ -117,6 +139,13 @@ export function getMarketExtraFeaturePage(
 ): FeaturePageProps {
   const lang = marketLanguage[market];
   const cta = selfServeFeatureCta(lang);
+  if (isTrMarket(market)) {
+    return {
+      ...getExtraFeaturePageTr(key),
+      ...cta,
+      earlyAccessHref: APP_REGISTER_BY_MARKET[market],
+    };
+  }
   if (isNlFiMarket(market)) {
     return {
       ...getExtraFeaturePageNlFi(market, key),

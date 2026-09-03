@@ -12,6 +12,36 @@ import { getAboutCopy } from "@/app/i18n/markets/static-pages-nl-fi";
 
 const icons = [Heart, ShieldCheck, Users, MapPin] as const;
 
+const trAbout = {
+  metaTitle: "Treatflow Hakkında",
+  metaDescription:
+    "Treatflow, güzellik stüdyoları için hepsi bir arada yazılımdır. Avusturya'da geliştirildi, AB sunucularında barındırılıyor.",
+  eyebrow: "Hakkımızda",
+  title: "Stüdyolara zamanlarını geri veren yazılım",
+  subtitle:
+    "Treatflow basit bir gözlemle başladı: güzellik profesyonelleri müşterileri yerine yönetim işlerine çok fazla zaman harcıyor. Bunu değiştirmeye karar verdik – randevuları, müşterileri, formları, dokümantasyonu ve ödemeleri bir araya getiren tek bir uygulama ile.",
+  valuesTitle: "Neyi savunuyoruz",
+  values: [
+    {
+      title: "Stüdyolar için tasarlandı",
+      desc: "Güzellik profesyonelleriyle el ele inşa ediyoruz – her özellik gerçek, günlük bir sorunu çözüyor.",
+    },
+    {
+      title: "Gizlilik öncelikli",
+      desc: "AB sunucularında barındırma. Verileriniz ve müşterilerinizin verileri korunuyor.",
+    },
+    {
+      title: "Kişisel destek",
+      desc: "Güzellik sektörünü tanıyan gerçek insanlar – kurulum ve Treatflow'dan en iyi şekilde yararlanmanız için yardım ederler.",
+    },
+    {
+      title: "Avusturya'da üretildi",
+      desc: "Avrupa'da geliştirildi ve destekleniyor, Avrupa ve ötesindeki stüdyolar için.",
+    },
+  ],
+  ctaLabel: "Ücretsiz deneyin",
+};
+
 const enAbout = {
   metaTitle: "About Treatflow",
   metaDescription:
@@ -51,7 +81,7 @@ export async function generateMetadata({
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "nl" || lang === "fi" ? getAboutCopy(lang) : enAbout;
+  const content = lang === "tr" ? trAbout : lang === "nl" || lang === "fi" ? getAboutCopy(lang) : enAbout;
   return buildPageMetadata({
     pageKey: "about",
     locale: market,
@@ -69,14 +99,16 @@ export default async function AboutPage({
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "nl" || lang === "fi" ? getAboutCopy(lang) : enAbout;
+  const content = lang === "tr" ? trAbout : lang === "nl" || lang === "fi" ? getAboutCopy(lang) : enAbout;
   const registerUrl = APP_REGISTER_BY_MARKET[market];
   const ctaLabel =
-    lang === "nl"
-      ? "Gratis proberen"
-      : lang === "fi"
-        ? "Aloita ilmainen kokeilu"
-        : content.ctaLabel;
+    lang === "tr"
+      ? "Ücretsiz deneyin"
+      : lang === "nl"
+        ? "Gratis proberen"
+        : lang === "fi"
+          ? "Aloita ilmainen kokeilu"
+          : content.ctaLabel;
 
   return (
     <>

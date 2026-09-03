@@ -31,7 +31,7 @@ type CoreKey =
   | "forms"
   | "treatment-documentation";
 
-type CoreLang = "en" | "nl" | "fi";
+type CoreLang = "en" | "nl" | "fi" | "tr";
 
 type PageContent = Omit<FeaturePageProps, "earlyAccessHref">;
 
@@ -108,6 +108,51 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       closingTitle: "Minder administratie, meer tijd voor je klanten",
       closingText:
         "Een goed georganiseerde agenda is het hart van elk studio. Treatflow houdt je planning overzichtelijk zodat jij en je team kunnen focussen op wat telt – topbehandelingen en tevreden klanten.",
+    },
+    tr: {
+      eyebrow: "Randevu takvimi",
+      title: "Tüm randevularınız, düzenli ve net",
+      subtitle:
+        "Stüdyonuzun tüm programını tek bir yerden yönetin – günlük, haftalık ve aylık görünümlerle ekibiniz her şeyi bir bakışta görür.",
+      bullets: [
+        "Günlük, haftalık ve aylık görünümler",
+        "Birden fazla ekip üyesi ve oda planlayın",
+        "Sürükle bırak ile saniyelerde yeniden planlayın",
+        "Online rezervasyonlarla otomatik senkronize",
+      ],
+      image: {
+        src: "/images/lifestyle/terminkalender-wochenplanung.png",
+        alt: "Treatflow randevu takvimi haftalık planlama görünümü",
+      },
+      features: [
+        { icon: CalendarDays, title: "Net görünümler", desc: "Gün, hafta ve ay arasında geçiş yapın – her an doğru genel bakış." },
+        { icon: Users, title: "Ekip planlaması", desc: "Birden fazla ekip üyesi, oda ve kaynak için randevuları aynı anda yönetin." },
+        { icon: RefreshCw, title: "Her zaman senkron", desc: "Online rezervasyonlar doğrudan takvime düşer – çift rezervasyon olmaz." },
+        { icon: Clock, title: "Hızlı yeniden planlama", desc: "Randevuları basit sürükle bırak ile taşıyın veya uzatın." },
+        { icon: Smartphone, title: "Her cihazda çalışır", desc: "Takviminizi masaüstü, tablet veya telefondan yönetin." },
+        { icon: Bell, title: "Otomatik hatırlatmalar", desc: "Otomatik SMS ve e-posta hatırlatmalarıyla no-show'ları azaltın." },
+      ],
+      closingTitle: "Daha az yönetim, müşterileriniz için daha fazla zaman",
+      closingText:
+        "İyi organize edilmiş bir takvim her stüdyonun kalbidir. Treatflow programınızı düzenli tutar, böylece siz ve ekibiniz önemli olana odaklanabilirsiniz – harika işlemler ve mutlu müşteriler.",
+      faqs: [
+        {
+          question: "Treatflow randevu takvimi nasıl çalışır?",
+          answer:
+            "Personel veya oda sütunlarıyla gün, hafta ve ay görünümlerini görürsünüz. Online rezervasyonlar aynı takvime düşer, böylece çift rezervasyondan kaçınırsınız. Yeniden planlamak için sürükle bırak kullanın.",
+        },
+        {
+          question: "Takvim online rezervasyonla senkronize oluyor mu?",
+          answer:
+            "Evet. Bir müşteri Treatflow rezervasyon sayfanızda randevu aldığında, slot stüdyo takviminde anında görünür. Hatırlatmalar SMS ve e-posta ile gönderilebilir.",
+        },
+      ],
+      relatedLinks: [
+        { href: "/tr/online-booking", label: "Online rezervasyon" },
+        { href: "/tr/messaging", label: "Hatırlatmalar" },
+        { href: "/tr/client-records", label: "Müşteri kartotek" },
+        { href: "/tr/beauty-salon-software", label: "Güzellik salonu yazılımı" },
+      ],
     },
     fi: {
       eyebrow: "Ajanvarauskalenteri",
@@ -194,6 +239,51 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         { href: "/en/messaging", label: "Reminders" },
         { href: "/en/client-records", label: "Client records" },
         { href: "/en/beauty-salon-software", label: "Beauty salon software" },
+      ],
+    },
+    tr: {
+      eyebrow: "Online rezervasyon",
+      title: "Müşteriler kendileri rezervasyon yapar – 7/24",
+      subtitle:
+        "Kendi markanızla bir rezervasyon sayfası – çalışma saatleri dışında bile takviminizi doldurur, telefon trafiği veya çift rezervasyon olmadan.",
+      bullets: [
+        "7/24 rezervasyon yapılabilir",
+        "Sadece gerçek müsaitliği gösterir",
+        "No-show'ları azaltmak için opsiyonel kapora",
+        "Onay ve hatırlatmalar dahil",
+      ],
+      image: {
+        src: "/images/lifestyle/online-buchung-smartphone.png",
+        alt: "Müşteri akıllı telefondan güzellik randevusu alıyor",
+      },
+      features: [
+        { icon: Globe, title: "Kendi rezervasyon sayfanız", desc: "Web sitenizde, Instagram'da ve Google profilinizde temiz bir rezervasyon linki paylaşın." },
+        { icon: Clock, title: "Gerçek zamanlı müsaitlik", desc: "Müşteriler sadece gerçekten boş olan slotları görür – çift rezervasyon olmaz." },
+        { icon: CreditCard, title: "Kapora seçenekleri", desc: "Yoğun talep gören hizmetlerde kapora isteyerek koltuk sürenizi koruyun." },
+        { icon: Bell, title: "Otomatik onaylar", desc: "Anında onay ve no-show'ları azaltan hatırlatmalar." },
+        { icon: Smartphone, title: "Mobil öncelikli", desc: "Telefonlar için tasarlandı – güzellik müşterilerinin çoğunun rezervasyon yaptığı yer." },
+        { icon: Link2, title: "Senkronize takvim", desc: "Her rezervasyon doğrudan stüdyo takviminize düşer." },
+      ],
+      closingTitle: "Daha az telefon süresi ile daha fazla koltuk doldurun",
+      closingText:
+        "Online rezervasyon boş saatleri gelire dönüştürür. Treatflow rezervasyonları, hatırlatmaları ve takviminizi tek akışta tutar.",
+      faqs: [
+        {
+          question: "Treatflow online rezervasyonlardan komisyon alıyor mu?",
+          answer:
+            "Hayır. Treatflow bir pazar yeri değil, stüdyo yazılımıdır. Kendi rezervasyon linkinizi paylaşırsınız ve aylık plan ödersiniz. Rezervasyon başına komisyon yoktur.",
+        },
+        {
+          question: "Müşteriler pazar yeri olmadan 7/24 rezervasyon yapabilir mi?",
+          answer:
+            "Evet. Sadece gerçek müsaitliği gösteren kendi markalı bir rezervasyon sayfanız olur. Onaylar ve hatırlatmalar dahildir. Opsiyonel kapora no-show'ları azaltmaya yardımcı olur.",
+        },
+      ],
+      relatedLinks: [
+        { href: "/tr/appointment-calendar", label: "Randevu takvimi" },
+        { href: "/tr/messaging", label: "Hatırlatmalar" },
+        { href: "/tr/client-records", label: "Müşteri kartotek" },
+        { href: "/tr/beauty-salon-software", label: "Güzellik salonu yazılımı" },
       ],
     },
     nl: {
@@ -308,6 +398,51 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         { href: "/en/treatment-documentation", label: "Treatment documentation" },
         { href: "/en/online-booking", label: "Online booking" },
         { href: "/en/aesthetic-clinic-software", label: "Aesthetic clinic software" },
+      ],
+    },
+    tr: {
+      eyebrow: "Müşteri kartotek",
+      title: "Her müşteri geçmişi tek bir yerde",
+      subtitle:
+        "Notlar, formlar, fotoğraflar ve işlem geçmişi – her randevudan önce hazır, kağıt dosyalar olmadan.",
+      bullets: [
+        "Eksiksiz müşteri profilleri",
+        "İşlem ve fotoğraf geçmişi",
+        "Kartoteğe bağlı formlar",
+        "Stüdyo genelinde hızlı arama",
+      ],
+      image: {
+        src: "/images/lifestyle/kundenverwaltung-kartei.png",
+        alt: "Treatflow'da dijital müşteri kartotek genel bakış",
+      },
+      features: [
+        { icon: Users, title: "Müşteri profilleri", desc: "İletişim bilgileri, tercihler ve notlar tek bir yapılandırılmış kayıtta." },
+        { icon: FileText, title: "İşlem geçmişi", desc: "Ne yapıldığını, ne zaman ve hangi ürünler veya ayarlarla yapıldığını görün." },
+        { icon: Camera, title: "Fotoğraf dokümantasyonu", desc: "Öncesi/sonrası fotoğraflar doğru işleme eklenmiş." },
+        { icon: ClipboardCheck, title: "Bağlı formlar", desc: "Anamnez ve onam formları müşteri dosyasıyla birlikte." },
+        { icon: Search, title: "Hızlı arama", desc: "Müşterileri ve geçmiş işlemleri saniyeler içinde bulun." },
+        { icon: FolderOpen, title: "Kağıtsız arşiv", desc: "Klasörleri aranabilir dijital bir arşivle değiştirin." },
+      ],
+      closingTitle: "Müşterinizi oturmadan önce tanıyın",
+      closingText:
+        "Daha iyi kayıtlar, daha güvenli işlemler ve daha kişisel bir deneyim demektir – kağıtlar arasında aramaya gerek kalmadan.",
+      faqs: [
+        {
+          question: "Treatflow'daki dijital müşteri kayıtları KVKK uyumlu mu?",
+          answer:
+            "Evet. Kayıtlar Frankfurt'taki AB sunucularında SSL şifreleme ve günlük yedekleme ile barındırılır. Formlar, fotoğraflar ve işlem geçmişi aynı müşteri dosyasında bulunur. Stüdyo, müşteri verilerinin sahibi olmaya devam eder.",
+        },
+        {
+          question: "Treatflow müşteri kaydında neler saklanır?",
+          answer:
+            "İletişim bilgileri, notlar, anamnez ve onam formları, işlem geçmişi ve öncesi/sonrası fotoğraflar – stüdyo genelinde aranabilir, böylece ekip her ziyaretten önce hazır olur.",
+        },
+      ],
+      relatedLinks: [
+        { href: "/tr/forms", label: "Onam formları" },
+        { href: "/tr/treatment-documentation", label: "İşlem dokümantasyonu" },
+        { href: "/tr/online-booking", label: "Online rezervasyon" },
+        { href: "/tr/aesthetic-clinic-software", label: "Estetik klinik yazılımı" },
       ],
     },
     nl: {
@@ -432,6 +567,58 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         { href: "/en/laser-hair-removal-software", label: "Laser hair removal software" },
       ],
     },
+    tr: {
+      eyebrow: "Onam formları",
+      title: "Dijital anamnez ve onam formları",
+      subtitle:
+        "Randevudan önce anamnez ve onam formlarını gönderin. Müşteriler telefonlarından doldurur – siz zamanında başlarsınız, her şey hazır.",
+      bullets: [
+        "Müşteriler gelmeden önce formları doldurur",
+        "Her cihazda dijital imza",
+        "Örnek şablonlar, yapay zeka form oluşturucu veya birlikte kurulum",
+        "Müşteri kaydıyla güvenle saklanır",
+      ],
+      secondaryCta: { label: "Örnek formları deneyin", href: "/tr/try-forms" },
+      promo: {
+        title: "Kayıt olmadan örnek formları deneyin",
+        text: "Aşağıdaki şablonlar dijital check-in'in nasıl çalıştığını gösterir. Stüdyonuz için yapay zeka oluşturucuyla form oluşturabilir veya birlikte kurulum yapabiliriz.",
+        href: "/tr/try-forms",
+        cta: "Örnekleri aç",
+      },
+      image: {
+        src: "/images/lifestyle/formulare-digital-ausfuellen.png",
+        alt: "Tablette imzalanan dijital onam formu",
+      },
+      features: [
+        { icon: Send, title: "Önceden gönderin", desc: "Ziyaretten önce link ile formları paylaşın – resepsiyonda daha az bekleme." },
+        { icon: Smartphone, title: "Mobil uyumlu", desc: "Müşteriler formları dakikalar içinde telefonlarından doldurur." },
+        { icon: FileSignature, title: "Dijital imzalar", desc: "Yazdırmadan güvenli şekilde onam alın." },
+        { icon: PenLine, title: "Şablonlar ve oluşturucu", desc: "Örnek şablonlardan başlayın, yapay zeka oluşturucuyla kendinizinkini oluşturun veya birlikte kurulum yapın." },
+        { icon: ShieldCheck, title: "Güvenli saklama", desc: "Formlar AB barındırma altyapısında müşteri kaydıyla birlikte kalır." },
+        { icon: ClipboardCheck, title: "İşleme hazır", desc: "Ekibiniz randevu başlamadan önce doldurulmuş formları görür." },
+      ],
+      closingTitle: "İşlemlere evrak işleri tamamlanmış olarak başlayın",
+      closingText:
+        "Dijital anamnez stüdyonuzu korur ve resepsiyonda her gün zaman kazandırır.",
+      faqs: [
+        {
+          question: "Treatflow estetik klinikleri için dijital onam formları içeriyor mu?",
+          answer:
+            "Evet. Ziyaretten önce anamnez ve onam şablonlarını gönderirsiniz. Müşteriler dijital imza dahil telefonlarından doldurur. Tamamlanan formlar müşteri kaydında saklanır.",
+        },
+        {
+          question: "Müşteriler gelmeden önce formları doldurabilir mi?",
+          answer:
+            "Evet. SMS veya e-posta ile bir link paylaşın. Ekip, randevu başlamadan önce doldurulmuş formları görür, böylece işlemler zamanında başlayabilir.",
+        },
+      ],
+      relatedLinks: [
+        { href: "/tr/try-forms", label: "Örnek formları deneyin" },
+        { href: "/tr/client-records", label: "Müşteri kartotek" },
+        { href: "/tr/treatment-documentation", label: "İşlem dokümantasyonu" },
+        { href: "/tr/aesthetic-clinic-software", label: "Estetik klinik yazılımı" },
+      ],
+    },
     nl: {
       eyebrow: "Formulieren",
       title: "Anamnese & toestemming, volledig digitaal",
@@ -551,6 +738,56 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         { href: "/en/aesthetic-clinic-software", label: "Aesthetic clinic software" },
       ],
     },
+    tr: {
+      eyebrow: "İşlem dokümantasyonu",
+      title: "Her işlemi net şekilde belgeleyin",
+      subtitle:
+        "Notlar, parametreler ve fotoğraflar yapılandırılmış bir işlem kaydında – sesli dikte dahil, güzellik ve estetik stüdyoları için tasarlandı.",
+      bullets: [
+        "Yapılandırılmış işlem notları",
+        "Sesli dikte, opsiyonel yapay zeka ile iyileştirme",
+        "Öncesi/sonrası fotoğraf setleri",
+        "Müşteri geçmişine bağlı",
+      ],
+      image: {
+        src: "/images/lifestyle/dokumentation-vorher-nachher.png",
+        alt: "Fotoğraf karşılaştırmalı işlem dokümantasyonu",
+      },
+      features: [
+        { icon: FileText, title: "İşlem notları", desc: "Ne yaptığınızı, kullanılan ürünleri ve müşteri tepkisini kaydedin." },
+        { icon: Mic, title: "Sesli dikte", desc: "Yazmak yerine notlarınızı konuşun. Treatflow konuşmayı metne çevirir ve yapay zeka ile iyileştirebilir." },
+        { icon: Camera, title: "Fotoğraf kanıtı", desc: "Öncesi/sonrası görselleri tam o işleme ekleyin." },
+        { icon: ClipboardCheck, title: "Takibe hazır", desc: "Bir sonraki ziyarette son işlemi anında görün." },
+        { icon: ShieldCheck, title: "Uyumluluk desteği", desc: "Onamla bağlantılı işlemler için net bir iz tutun." },
+        { icon: Users, title: "Ekip görünürlüğü", desc: "Meslektaşlar bir müşteriyi devraldıklarında aynı dokümantasyonu görür." },
+      ],
+      closingTitle: "Koruyan ve etkileyen dokümantasyon",
+      closingText:
+        "Net işlem kayıtları güvenliği, sürekliliği ve müşteri güvenini artırır – gününüzü yavaşlatmadan.",
+      faqs: [
+        {
+          question: "Lazer epilasyon stüdyoları Treatflow'da işlemleri belgeleyebilir mi?",
+          answer:
+            "Evet. Seans başına parametreleri, notları ve öncesi/sonrası fotoğrafları kaydedersiniz. Geçmiş müşteriye bağlıdır, bu da takipleri ve ekip devirlerini kolaylaştırır.",
+        },
+        {
+          question: "Öncesi ve sonrası fotoğraflar müşteri kaydında mı saklanır?",
+          answer:
+            "Evet. Fotoğraf setleri genel bir galeri değil, tam o işleme eklenir, böylece bir sonraki ziyarette ilerlemeyi karşılaştırabilirsiniz.",
+        },
+        {
+          question: "Treatflow'da işlem notlarını dikte edebilir miyim?",
+          answer:
+            "Evet. İşlem dokümantasyonunda yazmak yerine notlarınızı konuşabilirsiniz. Treatflow konuşmayı metne çevirir ve yapay zeka ile iyileştirebilir. Not o ziyaretle birlikte kaydedilir.",
+        },
+      ],
+      relatedLinks: [
+        { href: "/tr/client-records", label: "Müşteri kartotek" },
+        { href: "/tr/forms", label: "Onam formları" },
+        { href: "/tr/beauty-salon-software", label: "Güzellik salonu yazılımı" },
+        { href: "/tr/aesthetic-clinic-software", label: "Estetik klinik yazılımı" },
+      ],
+    },
     nl: {
       eyebrow: "Behandeldocumentatie",
       title: "Documenteer elke behandeling duidelijk",
@@ -610,7 +847,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
 
 function resolveCoreLang(market: PrefixedMarket): CoreLang {
   const lang = marketLanguage[market];
-  if (lang === "nl" || lang === "fi") return lang;
+  if (lang === "nl" || lang === "fi" || lang === "tr") return lang;
   return "en";
 }
 
@@ -620,23 +857,29 @@ export function getCoreFeaturePage(
 ): FeaturePageProps {
   const lang = resolveCoreLang(market);
   const primaryCta =
-    lang === "nl"
-      ? "14 dagen gratis proberen"
-      : lang === "fi"
-        ? "Kokeile 14 päivää ilmaiseksi"
-        : "Start 14-day free trial";
+    lang === "tr"
+      ? "30 gün ücretsiz deneyin"
+      : lang === "nl"
+        ? "14 dagen gratis proberen"
+        : lang === "fi"
+          ? "Kokeile 14 päivää ilmaiseksi"
+          : "Start 14-day free trial";
   const bottomTitle =
-    lang === "nl"
-      ? "Klaar om te starten?"
-      : lang === "fi"
-        ? "Valmis aloittamaan?"
-        : "Ready to get started?";
+    lang === "tr"
+      ? "Başlamaya hazır mısınız?"
+      : lang === "nl"
+        ? "Klaar om te starten?"
+        : lang === "fi"
+          ? "Valmis aloittamaan?"
+          : "Ready to get started?";
   const bottomText =
-    lang === "nl"
-      ? "Start je gratis proefperiode – geen creditcard, opzeggen wanneer je wilt."
-      : lang === "fi"
-        ? "Aloita ilmainen kokeilu – ei luottokorttia, peruuta milloin tahansa."
-        : "Start your free trial – no credit card required, cancel anytime.";
+    lang === "tr"
+      ? "Ücretsiz denemenizi başlatın – kredi kartı gerekmez, istediğiniz zaman iptal edin."
+      : lang === "nl"
+        ? "Start je gratis proefperiode – geen creditcard, opzeggen wanneer je wilt."
+        : lang === "fi"
+          ? "Aloita ilmainen kokeilu – ei luottokorttia, peruuta milloin tahansa."
+          : "Start your free trial – no credit card required, cancel anytime.";
 
   return {
     ...pages[key][lang],

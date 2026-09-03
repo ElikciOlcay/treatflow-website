@@ -1,4 +1,4 @@
-export type PricingLocale = "en" | "es" | "it" | "fr" | "nl" | "fi";
+export type PricingLocale = "en" | "es" | "it" | "fr" | "nl" | "fi" | "tr";
 
 export type PricingIntlCopy = {
   eyebrow: string;
@@ -765,6 +765,133 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       title: "Hinnat",
       description:
         "Läpinäkyvät Treatflow-hinnat: Basic alkaen €39/kk, Booking alkaen €59/kk. 14 päivää ilmaiseksi, ei luottokorttia.",
+    },
+  },
+  tr: {
+    eyebrow: "Şeffaf fiyatlandırma",
+    titleBefore: "Basit fiyatlandırma –",
+    titleHighlight: "gizli masraf yok",
+    subtitle:
+      "Stüdyonuza uygun planı seçin. 30 günlük ücretsiz denemeyi hemen başlatın – kredi kartı gerekmez.",
+    monthly: "Aylık",
+    yearly: "Yıllık",
+    saveBadge: "2 ay tasarruf",
+    perMonth: "/ay",
+    perYear: "/yıl",
+    basicYearlyHint: "Yıllık faturalandırmada aylık",
+    bookingYearlyHint: "Yıllık faturalandırmada aylık",
+    exclVat: "KDV hariç fiyatlar",
+    popular: "En popüler",
+    cta: "30 gün ücretsiz deneyin",
+    earlyAccessHref: "https://app.treatflow.io/auth/register?lang=tr",
+    basic: {
+      name: "Basic",
+      description: "Takvim, müşteri kartotek ve dokümantasyon için temel plan.",
+      included: [
+        "Randevu takvimi",
+        "Müşteri kartotek",
+        "İşlem dokümantasyonu",
+        "Dijital anamnez ve onam formları",
+        "Sesli dikte (yapay zeka ile)",
+        "Hatırlatmalar (SMS ve e-posta)",
+        "Fotoğraf dokümantasyonu",
+        "Hediye kuponları",
+        "İstatistikler ve raporlar",
+        "Sınırsız ekip üyesi",
+      ],
+      excluded: [
+        "Online rezervasyon sayfası",
+        "Kapora ile no-show koruması",
+        "Google Takvim senkronizasyonu",
+      ],
+    },
+    booking: {
+      name: "Booking",
+      description: "Basic'in tüm özellikleri + online rezervasyon, kapora ve takvim senkronizasyonu.",
+      included: [
+        "Basic'teki her şey",
+        "Online rezervasyon sayfası",
+        "Kapora ile no-show koruması",
+        "Google Takvim senkronizasyonu",
+        "Kişiselleştirilebilir rezervasyon sayfası",
+        "Otomatik randevu onayları",
+      ],
+    },
+    trialBox: {
+      title: "30 gün ücretsiz deneyin",
+      text: "Hemen başlayın – kredi kartı gerekmez, istediğiniz zaman iptal edin.",
+      points: [
+        "30 gün tüm özellikler",
+        "Kredi kartı gerekmez",
+        "İstediğiniz zaman iptal edin",
+        "Ücretsiz veri aktarımı desteği",
+      ],
+    },
+    comparison: {
+      title: "Plan karşılaştırması",
+      subtitle: "Hangi özelliklerin hangi planda dahil olduğunu görün.",
+      vatNote: "Tüm fiyatlar KDV hariçtir.",
+      featureCol: "Özellik",
+      rows: [
+        { feature: "Randevu takvimi", basic: true, booking: true },
+        { feature: "Müşteri kartotek", basic: true, booking: true },
+        { feature: "İşlem dokümantasyonu", basic: true, booking: true },
+        { feature: "Dijital formlar", basic: true, booking: true },
+        { feature: "Sesli dikte (yapay zeka)", basic: true, booking: true },
+        { feature: "SMS ve e-posta hatırlatmaları", basic: true, booking: true },
+        { feature: "Fotoğraf dokümantasyonu", basic: true, booking: true },
+        { feature: "Hediye kuponları", basic: true, booking: true },
+        { feature: "İstatistikler", basic: true, booking: true },
+        { feature: "Online rezervasyon sayfası", basic: false, booking: true },
+        { feature: "Kapora ile no-show koruması", basic: false, booking: true },
+        { feature: "Google Takvim senkronizasyonu", basic: false, booking: true },
+      ],
+    },
+    why: {
+      title: "Neden Treatflow?",
+      subtitle: "Komisyon yok, gizli masraf yok – stüdyo verileriniz sizin.",
+      items: [
+        { value: "0 %", label: "Komisyon" },
+        { value: "500+", label: "Stüdyo" },
+        { value: "AB", label: "Sunucular" },
+        { value: "30 gün", label: "Ücretsiz deneme" },
+      ],
+    },
+    faq: {
+      title: "Sıkça sorulan sorular",
+      subtitle: "Fiyatlandırma ve planlar hakkında önemli sorular.",
+      items: [
+        {
+          question: "Ücretsiz deneme nasıl çalışır?",
+          answer:
+            "Kayıt olun ve 30 gün boyunca tüm özellikleri ücretsiz kullanın. Kredi kartı gerekmez. Deneme süresi sonunda plan seçebilir veya hesabınızı kapatabilirsiniz.",
+        },
+        {
+          question: "Komisyon alıyor musunuz?",
+          answer:
+            "Hayır. Treatflow bir pazar yeri değil, stüdyo yazılımıdır. Şeffaf aylık ücret ödersiniz, rezervasyon başına komisyon yoktur.",
+        },
+        {
+          question: "İstediğim zaman iptal edebilir miyim?",
+          answer:
+            "Evet. Aylık planlarda herhangi bir zamanda iptal edebilirsiniz. Yıllık planlarda dönem sonuna kadar geçerlidir.",
+        },
+        {
+          question: "Verilerim nerede saklanır?",
+          answer:
+            "Tüm veriler Frankfurt'taki AB sunucularında SSL şifreleme ve günlük yedekleme ile saklanır. Stüdyo, müşteri verilerinin sahibi olmaya devam eder.",
+        },
+        {
+          question: "Türkiye'den kayıt olabilir miyim?",
+          answer:
+            "Evet. Dünya genelinden kayıt olabilir ve app.treatflow.io adresinde 30 günlük ücretsiz denemenizi başlatabilirsiniz – kredi kartı gerekmez.",
+        },
+      ],
+    },
+    meta: {
+      title: "Fiyatlar",
+      description:
+        "Şeffaf Treatflow fiyatlandırması. 30 gün ücretsiz deneyin, kredi kartı gerekmez. Komisyon yoktur.",
     },
   },
 };
