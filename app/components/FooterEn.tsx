@@ -176,7 +176,9 @@ export default function FooterEn({
 
   const featureLinks = [
     { href: `${base}/${EN_SLUGS["appointment-calendar"]}`, label: labels.calendar },
-    { href: `${base}/${EN_SLUGS.vouchers}`, label: labels.vouchers },
+    ...(market === "tr"
+      ? []
+      : [{ href: `${base}/${EN_SLUGS.vouchers}`, label: labels.vouchers }]),
     { href: `${base}/${EN_SLUGS["online-booking"]}`, label: labels.booking },
     { href: `${base}/${EN_SLUGS["client-records"]}`, label: labels.records },
     { href: `${base}/${EN_SLUGS.forms}`, label: labels.forms },

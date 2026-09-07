@@ -1016,7 +1016,7 @@ const trHomeFaqs = [
   },
   {
     q: "Treatflow ne kadar?",
-    a: "Lansman fiyatı ayda 1.490 TL (ilk 100 işletme için). Sonrasında ayda 1.990 TL. Randevu başına komisyon yoktur. Kasa Türkiye'de çekirdek ürün değildir.",
+    a: "Lansman fiyatı ayda 1.490 TL (ilk 100 işletme için). Sonrasında ayda 1.990 TL. Randevu başına komisyon yoktur.",
   },
 ];
 
@@ -1079,7 +1079,7 @@ const trHomePage: HomePageIntlContent = {
       { icon: BarChart3, label: "Raporlar ve ciro", desc: "Gelir, randevu doluluk, müşteriler ve en çok satan hizmetler tek bakışta." },
       { icon: Mic, label: "Sesli not", desc: "İşlem notlarını konuşarak yazın – Treatflow metne çevirir." },
       { icon: Languages, label: "Çok dilli randevu sayfası", desc: "Müşterileriniz randevu sayfasını kendi dillerinde görür." },
-      { icon: Ticket, label: "Hediye çeki", desc: "Hediye çeki oluşturun, satın ve kalan bakiyeyi otomatik takip edin." },
+      { icon: Ticket, label: "İndirim kodları", desc: "Online randevuda kampanya ve yeni müşteri kodları." },
       { icon: ListChecks, label: "Ekip notları ve görevler", desc: "Son tarih, atama ve okundu bilgisi – ekip aynı notu görür." },
     ],
   },

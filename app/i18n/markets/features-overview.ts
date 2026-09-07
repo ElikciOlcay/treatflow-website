@@ -307,7 +307,7 @@ function trContent(): FeaturesOverviewContent {
       {
         question: "Treatflow hangi özellikleri içerir?",
         answer:
-          "Treatflow randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital anamnez ve onam formları, fotoğraflı işlem kaydı, sesli not, WhatsApp ve e-posta hatırlatmaları, entegrasyonlar, mağaza ve hediye çeki sunar. Mali kasa Almanya ve Avusturya içindir.",
+          "Treatflow randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital anamnez ve onam formları, fotoğraflı işlem kaydı, sesli not, WhatsApp ve e-posta hatırlatmaları, entegrasyonlar ve mağaza sunar.",
       },
       {
         question: "Treatflow A'dan Z'ye salon yazılımı mı?",
@@ -347,7 +347,7 @@ function trContent(): FeaturesOverviewContent {
     ],
     cardsTitle: "Özelliklere bakış",
     cardsSubtitle:
-      "Her kart ilgili sayfayı açar. Mali kasa (TSE/RKSV) Almanya ve Avusturya içindir, Türkiye'de çekirdek ürün değildir.",
+      "Her kart ilgili sayfayı açar.",
     cards: [
       {
         href: base("appointment-calendar"),
@@ -406,13 +406,6 @@ function trContent(): FeaturesOverviewContent {
         highlights: ["Ürün satışı", "Stok", "Müşteri kaydına bağlı"],
       },
       {
-        href: base("vouchers"),
-        ...cardMeta.vouchers,
-        title: "Hediye çeki",
-        desc: "Hediye çeki oluşturun, satın ve kalan bakiyeyi ayrı tablo olmadan takip edin.",
-        highlights: ["Satış ve kullanım", "Kalan bakiye", "Geçerlilik süresi"],
-      },
-      {
         href: base("studio-website"),
         ...cardMeta.website,
         title: "Salon web sitesi",
@@ -422,10 +415,9 @@ function trContent(): FeaturesOverviewContent {
     ],
     learnMore: chrome.learnMore,
     stepLabel: chrome.stepLabel,
-    showCheckoutSection: true,
-    checkoutTitle: "Kasa Almanya ve Avusturya için",
-    checkoutText:
-      "Mali kasa (Almanya'da TSE, Avusturya'da RKSV) Treatflow'da DACH stüdyoları içindir. Türkiye'de randevu, müşteri takibi, onam formları ve işlem kayıtları tek uygulamada çalışır. Ödeme altyapısı küresel çekirdek özellik olarak satılmaz.",
+    showCheckoutSection: false,
+    checkoutTitle: "",
+    checkoutText: "",
     industriesTitle: "Bu özellikler kimler için",
     industriesSubtitle: "Aynı ürün haritası, her işletmenin çalışma şekline göre.",
     industries: [
@@ -449,17 +441,12 @@ function trContent(): FeaturesOverviewContent {
       {
         question: "Treatflow hangi özellikleri içerir?",
         answer:
-          "Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital anamnez ve onam, fotoğraflı işlem kaydı, sesli not, hatırlatmalar, entegrasyonlar, mağaza, hediye çeki ve isteğe bağlı salon web sitesi. Mali kasa ülke şartına bağlıdır; şu an Almanya ve Avusturya.",
+          "Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital anamnez ve onam, fotoğraflı işlem kaydı, sesli not, hatırlatmalar, entegrasyonlar, mağaza ve isteğe bağlı salon web sitesi.",
       },
       {
         question: "Treatflow sadece randevu aracı mı, yoksa salon yazılımı mı?",
         answer:
           "Treatflow salon yazılımıdır, pazaryeri değildir. Randevu, müşteri kaydı, onam, işlem kaydı ve hatırlatma aynı sistemdedir; ekip uygulamalar arasında geçiş yapmaz.",
-      },
-      {
-        question: "Treatflow'da kasa var mı?",
-        answer:
-          "Mali kasa Almanya ve Avusturya'da desteklenir. Türkiye'de randevu, müşteri takibi, onam ve işlem kaydı kullanılır; küresel POS vaat edilmez.",
       },
       {
         question: "Ödemeden önce tüm özellikleri deneyebilir miyim?",

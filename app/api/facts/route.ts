@@ -270,8 +270,6 @@ const turkishFacts = {
             },
         ],
         addons: [],
-        posNote:
-            "Mali kasa (TSE/RKSV) Almanya ve Avusturya içindir. Türkiye'de çekirdek ürün değildir.",
     },
     targetIndustries: [
         { name: "Güzellik salonları", url: "https://www.treatflow.io/tr/beauty-salon-software" },
@@ -329,11 +327,6 @@ const turkishFacts = {
             question: "Hatırlatmalar nasıl gider?",
             answer:
                 "Randevu onayları ve hatırlatmalar WhatsApp ve e-posta ile gider. E-posta ücretsizdir. SMS ürün kanalı değildir.",
-        },
-        {
-            question: "Kasa var mı?",
-            answer:
-                "Mali kasa Almanya (TSE) ve Avusturya (RKSV) içindir. Türkiye'de çekirdek ürün değildir. Randevu, müşteri takibi, onam ve işlem kaydı Türkiye'de çekirdek üründür.",
         },
     ],
     keyResources: {

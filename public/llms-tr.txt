@@ -16,7 +16,6 @@
 
 - **Basic**: ayda 1.490 TL (lansman, ilk 100 işletme; sonrası 1.990 TL yıllık pakette daha düşük aylık karşılık). Müşteri takibi, dijital imzalı onam ve anamnez, işlem kayıtları, sesli not, öncesi-sonrası fotoğraf, ekip notları, mağaza, raporlar, e-posta desteği.
 - **Booking**: ayda 1.990 TL (lansman, ilk 100 işletme). Basic'teki her şey artı randevu takvimi, komisyonsuz online randevu, bekleme listesi, WhatsApp ve e-posta hatırlatmaları, müşteri otomasyonları, indirim kodları, çok dilli randevu sayfası, Zapier, öncelikli destek.
-- **Kasa / POS**: Almanya (TSE) ve Avusturya (RKSV) içindir. Türkiye'de çekirdek ürün değildir.
 - 30 gün ücretsiz deneme. Kredi kartı gerekmez. İstediğiniz zaman iptal. Randevu komisyonu yok.
 
 ## Kısa yanıtlar
@@ -79,7 +78,7 @@ Hayır. Randevu onayları ve hatırlatmalar WhatsApp ve e-posta ile gider. E-pos
 
 ## Diğer diller
 
-- Almanca (ana site, blog, NiSV, kasa): https://www.treatflow.io
+- Almanca (ana site ve blog): https://www.treatflow.io
 - Almanca llms.txt: https://www.treatflow.io/llms.txt
 - İngilizce: https://www.treatflow.io/en
 - İngilizce llms.txt: https://www.treatflow.io/llms-en.txt

@@ -418,20 +418,24 @@ export default function NavigationEn({
   const ctaLabel = ctaExternal ? dict.nav.tryFree : dict.nav.requestAccess;
   const loginUrl = APP_LOGIN_BY_MARKET[market] ?? APP_LOGIN_BY_MARKET.en;
 
-  const featureLinks = featureDefs.map((item) => ({
-    href: `${base}/${item.slug}`,
-    group: item.group,
-    label: item.label[lang],
-    desc: item.desc[lang],
-    icon: item.icon,
-    color: item.color,
-  }));
+  const featureLinks = featureDefs
+    .filter((item) => !(market === "tr" && item.slug === EN_SLUGS.vouchers))
+    .map((item) => ({
+      href: `${base}/${item.slug}`,
+      group: item.group,
+      label: item.label[lang],
+      desc: item.desc[lang],
+      icon: item.icon,
+      color: item.color,
+    }));
 
-  const featureGroups = featureGroupOrder.map((groupId) => ({
-    id: groupId,
-    title: featureGroupTitles[groupId][lang],
-    items: featureLinks.filter((item) => item.group === groupId),
-  }));
+  const featureGroups = featureGroupOrder
+    .map((groupId) => ({
+      id: groupId,
+      title: featureGroupTitles[groupId][lang],
+      items: featureLinks.filter((item) => item.group === groupId),
+    }))
+    .filter((group) => group.items.length > 0);
 
   const industryLinks = industryDefs.map((item) => ({
     href: `${base}/${EN_SLUGS[item.key]}`,

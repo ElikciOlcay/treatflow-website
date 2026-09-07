@@ -1,16 +1,20 @@
 import { notFound } from "next/navigation";
 import FeaturePageEn from "@/app/components/FeaturePageEn";
 import { buildPageMetadata } from "@/app/i18n/seo";
-import { getMarketExtraFeaturePage } from "@/app/i18n/markets/market-content";
+import {
+  getMarketExtraFeaturePage,
+  isTrMarket,
+} from "@/app/i18n/markets/market-content";
 import { isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
 
+/** Gift vouchers are part of the DACH POS add-on and are not offered in Turkey. */
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ market: string }>;
 }) {
   const { market: raw } = await params;
-  if (!isPrefixedMarket(raw)) return {};
+  if (!isPrefixedMarket(raw) || isTrMarket(raw)) return {};
   const market = raw as PrefixedMarket;
   const content = getMarketExtraFeaturePage(market, "vouchers");
   return buildPageMetadata({
@@ -27,7 +31,7 @@ export default async function Page({
   params: Promise<{ market: string }>;
 }) {
   const { market: raw } = await params;
-  if (!isPrefixedMarket(raw)) notFound();
+  if (!isPrefixedMarket(raw) || isTrMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
   return <FeaturePageEn {...getMarketExtraFeaturePage(market, "vouchers")} />;
 }

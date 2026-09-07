@@ -359,11 +359,11 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
     eyebrow: "Tüm Özellikler",
     title: "Güzellik salonunuzun ihtiyacı olan her şey, tek yerde",
     subtitle:
-      "Takvim ve online randevudan müşteri dosyalarına, formlara, kasaya ve hatırlatmalara kadar \u2013 Treatflow modern bir salonun günlük işlerini karşılar.",
+      "Takvim ve online randevudan müşteri dosyalarına, formlara ve hatırlatmalara kadar \u2013 Treatflow modern bir salonun günlük işlerini karşılar.",
     bullets: [
       "Takvim, randevu ve müşteri dosyaları",
       "Dijital formlar ve tedavi notları",
-      "Kasa, hediye çekleri ve ürün satışı",
+      "Ürün satışı ve stok",
       "Mesajlaşma, entegrasyonlar ve dahası",
     ],
     image: {
@@ -410,7 +410,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         question: "Treatflow hangi özellikleri içeriyor?",
         answer:
-          "Treatflow; randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam formları, fotoğraf ve sesli not ile işlem kaydı, hatırlatmalar, entegrasyonlar, ürün satışı ve hediye çekini içerir.",
+          "Treatflow; randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam formları, fotoğraf ve sesli not ile işlem kaydı, hatırlatmalar, entegrasyonlar ve ürün satışını içerir.",
       },
       {
         question: "Treatflow hangi iş kollarına uygundur?",

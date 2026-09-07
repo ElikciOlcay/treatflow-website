@@ -133,7 +133,11 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
   "point-of-sale": {
     de: "kassensystem-kosmetikstudio",
   },
-  vouchers: buildSlugMap("vouchers"),
+  vouchers: (() => {
+    const map = buildSlugMap("vouchers");
+    delete map.tr;
+    return map;
+  })(),
   messaging: buildSlugMap("messaging"),
   integrations: buildSlugMap("integrations"),
   features: buildSlugMap("features"),

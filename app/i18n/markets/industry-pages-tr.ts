@@ -1058,7 +1058,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
     ],
     marketTitle: "Masaj profesyonelleri neden Treatflow'u tercih ediyor",
     marketParas: [
-      "Masaj uygulamaları karmaşık kasa sistemlerinden çok güvenilir randevu ve net dosyalara ihtiyaç duyar. Treatflow randevu, formlar ve dokümantasyona odaklanır.",
+      "Masaj uygulamaları güvenilir randevu ve net müşteri kayıtlarına ihtiyaç duyar. Treatflow randevu, formlar ve dokümantasyona odaklanır.",
     ],
     highlights: [
       "Komisyonsuz online randevu",
