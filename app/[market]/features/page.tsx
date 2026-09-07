@@ -7,7 +7,7 @@ const featuresMeta: Record<string, { title: string; description: string }> = {
   tr: {
     title: "Güzellik Salonları ve Estetik Klinikleri için Özellikler",
     description:
-      "Randevu takvimi, komisyonsuz online rezervasyon, müşteri kartotek, dijital onam formları, sesli dikteyle işlem dokümantasyonu, hatırlatmalar ve entegrasyonlar – tek bir stüdyo sisteminde.",
+      "Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam formları, sesli notla işlem kaydı, hatırlatmalar ve entegrasyonlar – tek salon yazılımında.",
   },
 };
 
@@ -40,5 +40,6 @@ export default async function Page({
 }) {
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) notFound();
-  return <FeaturesPageEn />;
+  const market = raw as PrefixedMarket;
+  return <FeaturesPageEn market={market} />;
 }

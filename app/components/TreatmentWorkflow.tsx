@@ -11,10 +11,14 @@ export default function TreatmentWorkflow({
   title,
   subtitle,
   steps,
+  stepLabel = (n) => `Step ${n}`,
+  learnMore = "Learn more",
 }: {
   title: string;
   subtitle?: string;
   steps: WorkflowStep[];
+  stepLabel?: (n: number) => string;
+  learnMore?: string;
 }) {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
@@ -33,12 +37,12 @@ export default function TreatmentWorkflow({
                 className="h-full flex flex-col bg-gray-50 border border-gray-100 rounded-2xl p-5 hover:border-indigo-200 hover:bg-white hover:shadow-md transition-all"
               >
                 <span className="text-xs font-semibold text-indigo-600 mb-2">
-                  Step {index + 1}
+                  {stepLabel(index + 1)}
                 </span>
                 <span className="font-semibold text-gray-900 mb-1">{step.label}</span>
                 <span className="text-sm text-gray-600 leading-relaxed flex-1">{step.desc}</span>
                 <span className="inline-flex items-center text-sm font-medium text-indigo-600 mt-3">
-                  Learn more
+                  {learnMore}
                   <ArrowRight className="ml-1 h-4 w-4" />
                 </span>
               </Link>

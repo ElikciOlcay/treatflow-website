@@ -40,7 +40,12 @@ function isFieldVisible(field: DemoFormField, answers: Answers): boolean {
 export default function DemoFormPlayer({ form, locale = 'de' }: DemoFormPlayerProps) {
   const copy = getDemoCopy(locale);
   const galleryHref = DEMO_FORMS_PATH[locale];
-  const registerHref = locale === 'en' ? APP_REGISTER_BY_MARKET.en : APP_REGISTER_BY_MARKET.de;
+  const registerHref =
+    locale === 'tr'
+      ? APP_REGISTER_BY_MARKET.tr
+      : locale === 'en'
+        ? APP_REGISTER_BY_MARKET.en
+        : APP_REGISTER_BY_MARKET.de;
   const fillPages = useMemo(() => getFillPages(form), [form]);
   const confirmation = useMemo(() => getConfirmationPage(form), [form]);
   const [pageIndex, setPageIndex] = useState(0);
@@ -151,7 +156,7 @@ export default function DemoFormPlayer({ form, locale = 'de' }: DemoFormPlayerPr
             <Link href={galleryHref} className="text-sm text-indigo-600 hover:text-indigo-700 font-medium shrink-0">
               {copy.player.allTemplates}
             </Link>
-            <Link href={locale === 'en' ? '/en' : '/'} className="hidden sm:block shrink-0">
+            <Link href={locale === 'tr' ? '/tr' : locale === 'en' ? '/en' : '/'} className="hidden sm:block shrink-0">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/logos/treatflow-logo.svg" alt="Treatflow" className="h-7 w-auto" />
             </Link>

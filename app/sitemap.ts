@@ -252,12 +252,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/sms-erinnerungen-kosmetikstudio`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
             url: `${baseUrl}/behandlungsdokumentation-kosmetikstudio`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,

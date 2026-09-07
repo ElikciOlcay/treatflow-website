@@ -23,7 +23,7 @@ const features = [
   { icon: Calendar, title: 'Online-Terminbuchung', desc: '24/7 Buchungen – auch aus Mitte, Charlottenburg oder Prenzlauer Berg.' },
   { icon: Users, title: 'Kundenverwaltung', desc: 'Alle Kunden und Behandlungshistorien zentral abrufbar.' },
   { icon: ClipboardCheck, title: 'Digitale Formulare', desc: 'Anamnese und Einwilligungen digital – papierlos und rechtssicher.' },
-  { icon: Bell, title: 'Automatische Erinnerungen', desc: 'Weniger No-Shows durch E-Mail und SMS-Erinnerungen.' },
+  { icon: Bell, title: 'Automatische Erinnerungen', desc: 'Weniger No-Shows durch WhatsApp- und E-Mail-Erinnerungen.' },
   { icon: FileText, title: 'Behandlungsdokumentation', desc: 'Behandlungen mit Fotos und Notizen dokumentieren.' },
   { icon: Shield, title: 'DSGVO-konform', desc: 'EU-Hosting, Datenschutz nach deutscher Gesetzgebung.' },
 ];

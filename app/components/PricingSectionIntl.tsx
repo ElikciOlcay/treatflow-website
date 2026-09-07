@@ -113,14 +113,14 @@ export default function PricingSectionIntl({
 
             <ul className="space-y-3 mb-6">
               {copy.basic.included.map((item) => (
-                <li key={item} className="flex items-center">
-                  <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
+                <li key={item} className="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700 text-sm">{item}</span>
                 </li>
               ))}
               {copy.basic.excluded.map((item) => (
-                <li key={item} className="flex items-center">
-                  <X className="h-4 w-4 text-gray-400 mr-3 flex-shrink-0" />
+                <li key={item} className="flex items-start">
+                  <X className="h-4 w-4 text-gray-400 mr-3 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-400 text-sm">{item}</span>
                 </li>
               ))}
@@ -164,8 +164,8 @@ export default function PricingSectionIntl({
 
             <ul className="space-y-3 mb-6">
               {copy.booking.included.map((item) => (
-                <li key={item} className="flex items-center">
-                  <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
+                <li key={item} className="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-green-300 mr-3 mt-0.5 flex-shrink-0" />
                   <span className="text-sm">{item}</span>
                 </li>
               ))}

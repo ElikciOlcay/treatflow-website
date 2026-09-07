@@ -20,7 +20,7 @@ const faqsDe: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "Was ist der Unterschied zwischen Basic und Booking?",
-        answer: <>Basic (39 Euro/Monat) enthält unbegrenzte <Link href="/kundenverwaltung" className="text-indigo-600 hover:underline">Kundenverwaltung</Link>, Formular-Marketplace, KI-Generator und Shop-Integration. Booking (59 Euro/Monat) hat zusätzlich den professionellen <Link href="/terminkalender" className="text-indigo-600 hover:underline">Buchungskalender</Link> mit Buchungslink und automatische <Link href="/sms-erinnerungen-kosmetikstudio" className="text-indigo-600 hover:underline">Terminerinnerungen</Link>.</>
+        answer: <>Basic (39 Euro/Monat) enthält unbegrenzte <Link href="/kundenverwaltung" className="text-indigo-600 hover:underline">Kundenverwaltung</Link>, Formular-Marketplace, KI-Generator und Shop-Integration. Booking (59 Euro/Monat) hat zusätzlich den professionellen <Link href="/terminkalender" className="text-indigo-600 hover:underline">Buchungskalender</Link> mit Buchungslink und automatische <Link href="/nachrichtenautomatisierung" className="text-indigo-600 hover:underline">Terminerinnerungen</Link>.</>
     },
     {
         question: "Ist Treatflow DSGVO-konform?",
@@ -79,7 +79,7 @@ const faqsEn: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "Can Treatflow send appointment reminders?",
-        answer: <>Yes. Automatic SMS and email reminders are part of the Booking plan. See <Link href="/en/messaging" className="text-indigo-600 hover:underline">messaging and reminders</Link>.</>,
+        answer: <>Yes. Automatic WhatsApp and email reminders are part of the Booking plan. See <Link href="/en/messaging" className="text-indigo-600 hover:underline">messaging and reminders</Link>.</>,
     },
     {
         question: "Does Treatflow work internationally?",

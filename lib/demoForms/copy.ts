@@ -1,16 +1,100 @@
-export type DemoLocale = 'de' | 'en';
+export type DemoLocale = 'de' | 'en' | 'tr';
 
 export const DEMO_FORMS_PATH = {
   de: '/formulare-testen',
   en: '/en/try-forms',
+  tr: '/tr/try-forms',
 } as const;
 
 export const DEMO_FORMS_FEATURE_PATH = {
   de: '/formulare',
   en: '/en/forms',
+  tr: '/tr/forms',
 } as const;
 
 export function getDemoCopy(locale: DemoLocale) {
+  if (locale === 'tr') {
+    return {
+      gallery: {
+        eyebrow: 'Örnek formlar',
+        titleBefore: 'Formları deneyin – ',
+        titleHighlight: 'kayıt gerekmez',
+        intro:
+          'Bunlar örnek şablonlardır; dijital anamnez, onam ve imzanın Treatflow\'da nasıl durduğunu gösterir. Kendi formlarınızı üreticiyle oluşturursunuz – veya birlikte kurarız.',
+        points: [
+          'Yalnızca örnek şablonlar',
+          'Kendi formunuzu üreticiyle oluşturun',
+          'Kurulumda birlikte hazırlarız',
+          'Hiçbir şey kaydedilmez',
+        ],
+        noticeTitle: 'Yönlendirme için örnek şablonlar',
+        noticeText:
+          'Aşağıdaki formlar dijital ön kaydın nasıl işlediğini gösterir – anamnez, onam ve imza. Salonunuzdaki formları Türkçe üreticiyle veya birlikte oluşturursunuz. Örnek soru metinleri İngilizce kalabilir.',
+        generatorTitle: 'Kendi formunuzu üreticiyle oluşturun',
+        generatorText:
+          'Bir işlemi kendi cümlelerinizle yazın. Yapay zeka alanları kurar; sonrasında her şeyi düzenlersiniz.',
+        generatorCta: 'Üretici nasıl çalışır',
+        supportTitle: 'Yeni formları birlikte kurarız',
+        supportText:
+          'İşlemleriniz için anamnez, onam veya bakım formu mu lazım? Kurulumda birlikte hazırlarız.',
+        supportCta: 'Kurulum randevusu alın',
+        cardsHeading: 'Bir örnek form açın',
+        fillCta: 'Şimdi doldur',
+        pagesLabel: (count: number) => (count === 1 ? '1 sayfa' : `${count} sayfa`),
+        difficulty: {
+          einfach: 'Hızlı doldurulur',
+          mittel: 'Onam içerir',
+          komplex: 'Tam anamnez',
+        } as Record<string, string>,
+        bottomLock: 'Demo hiçbir şey kaydetmez',
+        bottomTitle: 'Formları salonunuzda kullanmaya hazır mısınız?',
+        bottomText:
+          'Bu örnekler bir başlangıçtır. Şablonları uyarlayın, linkle gönderin veya yeni formları birlikte kuralım – 30 gün ücretsiz.',
+        trialCta: '30 gün ücretsiz deneyin',
+        moreCta: 'Formlar hakkında',
+      },
+      player: {
+        allTemplates: 'Tüm örnekler',
+        demoBadge: 'Demo – hiçbir şey kaydedilmez',
+        banner:
+          'Bu bir örnek formdur. Müşterinin ön kayıtta gördüğünü gösterir. Cevaplar bu tarayıcıda kalır, Treatflow\'a gönderilmez.',
+        requiredCheckbox: 'Lütfen en az bir seçenek işaretleyin.',
+        requiredField: 'Lütfen bu alanı doldurun.',
+        requiredSignature: 'Lütfen burayı imzalayın.',
+        completedNote: 'Demo bitti – hiçbir şey kaydedilmedi.',
+        completedFallback:
+          'Tamamlanan form daha sonra müşteri kaydında böyle durur – imza ve zaman damgasıyla.',
+        doneTitle: 'Müşteri ön kaydı böyle biter',
+        doneText:
+          'Treatflow\'da şablonları uyarlar, link veya QR ile gönderir ya da üreticiyle yeni form oluşturursunuz. Kurulumda da yardımcı oluruz.',
+        trialCta: '30 gün ücretsiz deneyin',
+        moreSamples: 'Daha fazla örnek aç',
+        signatureSection: 'İmza',
+        signHint: 'Parmak veya fareyle imzalayın',
+        clear: 'Temizle',
+        signHere: 'Burayı imzalayın',
+        back: 'Geri',
+        next: 'Devam',
+        submit: 'Gönder',
+        restart: 'Yeniden doldur',
+        drawingSkip:
+          'Demoda yok. Treatflow\'da müşteri burada şablon üzerine çizebilir.',
+        fileSkip: 'Demoda yok. Treatflow\'da müşteri burada dosya yükleyebilir.',
+        defaultSignature: 'Müşteri imzası',
+        done: 'Tamam',
+      },
+      meta: {
+        galleryTitle: 'Kayıt olmadan örnek formları deneyin',
+        galleryDescription:
+          'Treatflow örnek şablonlarını açın ve doldurun – hesap gerekmez. Kendi formlarınızı üreticiyle oluşturun veya birlikte kuralım.',
+        playerTitle: (name: string) => `${name} deneyin`,
+        playerDescription: (description: string) =>
+          `${description} Örnek form – kayıt yok, hiçbir şey kaydedilmez.`,
+        notFound: 'Form bulunamadı',
+      },
+    };
+  }
+
   if (locale === 'en') {
     return {
       gallery: {
@@ -200,6 +284,21 @@ export function demoFormHreflangEn(slug?: string) {
     languages: {
       de,
       en,
+      'x-default': de,
+    },
+  };
+}
+
+export function demoFormHreflangTr(slug?: string) {
+  const de = slug ? `${BASE_URL}/formulare-testen/${slug}` : `${BASE_URL}/formulare-testen`;
+  const en = slug ? `${BASE_URL}/en/try-forms/${slug}` : `${BASE_URL}/en/try-forms`;
+  const tr = slug ? `${BASE_URL}/tr/try-forms/${slug}` : `${BASE_URL}/tr/try-forms`;
+  return {
+    canonical: tr,
+    languages: {
+      de,
+      en,
+      tr,
       'x-default': de,
     },
   };

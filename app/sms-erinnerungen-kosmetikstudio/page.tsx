@@ -19,9 +19,9 @@ import SocialProofBar from '../components/SocialProofBar';
 import { generateFaqSchema } from '@/lib/schema';
 
 export const metadata = {
-    title: 'SMS-Erinnerungen Kosmetik: weniger No-Shows',
+    title: 'WhatsApp-Erinnerungen Kosmetik: weniger No-Shows',
     description:
-        'Automatische SMS-Erinnerungen für dein Kosmetikstudio. Reduziere No-Shows um bis zu 80% mit Terminerinnerungen per SMS und E-Mail. 14 Tage gratis.',
+        'Automatische WhatsApp-Erinnerungen für dein Kosmetikstudio. Reduziere No-Shows um bis zu 80% mit Terminerinnerungen per WhatsApp und E-Mail. 14 Tage gratis.',
     keywords: [
         'SMS Erinnerung Kosmetikstudio',
         'Terminerinnerung Kosmetik SMS',
@@ -35,16 +35,16 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/sms-erinnerungen-kosmetikstudio',
     },
     openGraph: {
-        title: 'SMS-Erinnerungen Kosmetikstudio: No-Shows reduzieren',
+        title: 'WhatsApp-Erinnerungen Kosmetikstudio: No-Shows reduzieren',
         description:
-            'Automatische SMS-Erinnerungen für dein Kosmetikstudio. Reduziere No-Shows um bis zu 80% mit Terminerinnerungen per SMS und E-Mail.',
+            'Automatische WhatsApp-Erinnerungen für dein Kosmetikstudio. Reduziere No-Shows um bis zu 80% mit Terminerinnerungen per WhatsApp und E-Mail.',
         url: 'https://www.treatflow.io/sms-erinnerungen-kosmetikstudio',
         images: [
             {
                 url: '/images/og-sms-erinnerungen.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Treatflow SMS-Erinnerungen für Kosmetikstudios',
+                alt: 'Treatflow WhatsApp-Erinnerungen für Kosmetikstudios',
             },
         ],
     },
@@ -52,14 +52,14 @@ export const metadata = {
 
 const smsFaqs = [
     {
-        question: 'Wie funktionieren SMS-Erinnerungen bei Treatflow?',
+        question: 'Wie funktionieren WhatsApp-Erinnerungen bei Treatflow?',
         answer:
-            'SMS-Erinnerungen werden automatisch versendet – 3 Tage und 1 Tag vor dem Termin. Du legst einmal die Vorlagen fest, danach läuft alles von selbst. Die Nachrichten werden personalisiert mit Namen, Datum und Behandlungsdetails.',
+            'WhatsApp-Erinnerungen werden automatisch versendet – 3 Tage und 1 Tag vor dem Termin. Du legst einmal die Vorlagen fest, danach läuft alles von selbst. Die Nachrichten werden personalisiert mit Namen, Datum und Behandlungsdetails.',
     },
     {
-        question: 'Was kostet der SMS-Versand?',
+        question: 'Was kosten WhatsApp-Erinnerungen?',
         answer:
-            'SMS werden kostengünstig pro Nachricht abgerechnet. Der genaue Preis hängt vom Zielland ab. E-Mail-Erinnerungen sind in allen Tarifen inkludiert. Du kannst jederzeit zwischen SMS und E-Mail wählen oder beide kombinieren.',
+            'WhatsApp-Erinnerungen bei Treatflow kosten ab 0,09 EUR pro Nachricht. Die WhatsApp-Automatisierung ist im Booking-Plan enthalten. E-Mail-Erinnerungen sind in allen Tarifen kostenlos. Du kannst jederzeit zwischen WhatsApp und E-Mail wählen oder beide kombinieren.',
     },
     {
         question: 'Kann ich die Erinnerungen anpassen?',
@@ -67,9 +67,9 @@ const smsFaqs = [
             'Ja! Du kannst die Texte vollständig individualisieren. Nutze Platzhalter wie kunde_name, termin_datum oder studio_name für personalisierte Nachrichten. Auch der Zeitpunkt der Erinnerung (1–7 Tage vorher) ist flexibel einstellbar.',
     },
     {
-        question: 'Soll ich E-Mail oder SMS – oder beides nutzen?',
+        question: 'Soll ich WhatsApp oder E-Mail – oder beides nutzen?',
         answer:
-            'Wir empfehlen beide: E-Mail 3 Tage vorher, SMS 24 Stunden vorher. E-Mails haben einen höheren Öffnungszeitpunkt, SMS erreichen Kunden sofort auf dem Smartphone. Die Kombination reduziert No-Shows am effektivsten.',
+            'Wir empfehlen beide: E-Mail 3 Tage vorher, WhatsApp 24 Stunden vorher. E-Mails werden oft später gelesen, WhatsApp-Nachrichten meist sofort auf dem Smartphone. Die Kombination reduziert No-Shows am effektivsten.',
     },
 ];
 
@@ -84,16 +84,16 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                     <div className="text-center mb-12">
                         <div className="inline-flex items-center bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
                             <MessageSquare className="h-4 w-4 mr-2" />
-                            SMS-Erinnerungen
+                            WhatsApp-Erinnerungen
                         </div>
                         <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                            SMS-Erinnerungen für dein{' '}
+                            WhatsApp-Erinnerungen für dein{' '}
                             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                                 Kosmetikstudio
                             </span>
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-                            Reduziere No-Shows um bis zu 80% mit automatischen Terminerinnerungen per SMS und E-Mail.
+                            Reduziere No-Shows um bis zu 80% mit automatischen Terminerinnerungen per WhatsApp und E-Mail.
                             Deine Kunden werden pünktlich erinnert – du sparst Zeit und Ärger.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -170,9 +170,9 @@ export default function SmsErinnerungenKosmetikstudioPage() {
             <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Die Lösung: Automatische SMS-Erinnerungen</h2>
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Die Lösung: Automatische WhatsApp-Erinnerungen</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Mit Treatflow erinnern sich deine Kunden automatisch an ihren Termin – per SMS und E-Mail, zum richtigen Zeitpunkt.
+                            Mit Treatflow erinnern sich deine Kunden automatisch an ihren Termin – per WhatsApp und E-Mail, zum richtigen Zeitpunkt.
                         </p>
                     </div>
 
@@ -181,9 +181,9 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                             <div className="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6">
                                 <Bell className="h-7 w-7 text-white" />
                             </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">SMS 3 Tage + 1 Tag vorher</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4">WhatsApp 3 Tage + 1 Tag vorher</h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Automatische Erinnerungen per SMS – 3 Tage und 24 Stunden vor dem Termin. Deine Kunden
+                                Automatische Erinnerungen per WhatsApp – 3 Tage und 24 Stunden vor dem Termin. Deine Kunden
                                 haben Zeit zu planen oder rechtzeitig abzusagen.
                             </p>
                             <ul className="mt-4 space-y-2">
@@ -193,7 +193,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                                 </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                                    Hohe Öffnungsrate bei SMS
+                                    Hohe Öffnungsrate bei WhatsApp
                                 </li>
                             </ul>
                         </div>
@@ -205,7 +205,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                             <h3 className="text-xl font-bold text-gray-900 mb-4">E-Mail-Bestätigungen</h3>
                             <p className="text-gray-600 leading-relaxed">
                                 Direkt nach der Buchung erhält der Kunde eine Bestätigung per E-Mail. Bei der
-                                Terminerinnerung kannst du E-Mail zusätzlich zur SMS nutzen – für maximale Reichweite.
+                                Terminerinnerung kannst du E-Mail zusätzlich zu WhatsApp nutzen – für maximale Reichweite.
                             </p>
                             <ul className="mt-4 space-y-2">
                                 <li className="flex items-center text-sm text-gray-700">
@@ -214,7 +214,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                                 </li>
                                 <li className="flex items-center text-sm text-gray-700">
                                     <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                                    Kombinierbar mit SMS
+                                    Kombinierbar mit WhatsApp
                                 </li>
                             </ul>
                         </div>
@@ -225,7 +225,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Follow-up Nachrichten</h3>
                             <p className="text-gray-600 leading-relaxed">
-                                Nach dem Termin: Automatische Follow-up-Nachrichten per E-Mail oder SMS für Feedback
+                                Nach dem Termin: Automatische Follow-up-Nachrichten per WhatsApp oder E-Mail für Feedback
                                 und Nachbehandlungstermine. Stärkt die Kundenbindung und bringt Buchungen.
                             </p>
                             <ul className="mt-4 space-y-2">
@@ -247,7 +247,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Ohne vs. Mit SMS-Erinnerungen</h2>
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Ohne vs. Mit WhatsApp-Erinnerungen</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             Der Unterschied ist messbar – und spürbar.
                         </p>
@@ -286,7 +286,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                                 <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mr-4">
                                     <CheckCircle className="h-6 w-6 text-white" />
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900">Mit automatischen SMS-Erinnerungen</h3>
+                                <h3 className="text-2xl font-bold text-gray-900">Mit automatischen WhatsApp-Erinnerungen</h3>
                             </div>
                             <ul className="space-y-4">
                                 <li className="flex items-center text-gray-700">
@@ -363,7 +363,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                         Bereit für weniger No-Shows?
                     </h2>
                     <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-                        Teste SMS-Erinnerungen 14 Tage kostenlos und erlebe, wie deutlich weniger Termine verpasst werden.
+                        Teste WhatsApp-Erinnerungen 14 Tage kostenlos und erlebe, wie deutlich weniger Termine verpasst werden.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
@@ -391,7 +391,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Mehr als nur SMS-Erinnerungen</h2>
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Mehr als nur WhatsApp-Erinnerungen</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">Treatflow vereint alle Tools, die dein Kosmetikstudio braucht.</p>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -426,7 +426,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                             FAQ
                         </div>
                         <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            Häufige Fragen zu SMS-Erinnerungen
+                            Häufige Fragen zu WhatsApp-Erinnerungen
                         </h2>
                         <p className="text-xl text-gray-600">
                             Hier findest du Antworten auf die wichtigsten Fragen.

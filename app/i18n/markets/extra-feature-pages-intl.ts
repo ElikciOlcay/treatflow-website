@@ -500,24 +500,24 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
   messaging: {
     en: {
       eyebrow: "Messaging & reminders",
-      title: "Fewer no-shows with SMS and email automation",
+      title: "Fewer no-shows with WhatsApp and email automation",
       subtitle:
-        "Send booking confirmations, appointment reminders and follow-ups automatically – so your calendar stays full without manual WhatsApp chasing.",
+        "Send booking confirmations, appointment reminders and follow-ups automatically – on WhatsApp and email, without chasing clients by hand.",
       bullets: [
         "Automatic booking confirmations",
-        "SMS and email reminders before appointments",
+        "WhatsApp and email reminders before appointments",
         "Follow-ups after treatments",
         "Birthday and reactivation messages",
       ],
       image: {
         src: "/images/lifestyle/sms-erinnerung-studio.png",
-        alt: "Client receiving an appointment reminder SMS from a beauty salon",
+        alt: "Client receiving an appointment reminder on WhatsApp from a beauty salon",
       },
       features: [
         {
           icon: Bell,
           title: "Appointment reminders",
-          desc: "Reduce no-shows with timed SMS and email reminders.",
+          desc: "Reduce no-shows with timed WhatsApp and email reminders.",
         },
         {
           icon: Mail,
@@ -541,7 +541,7 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
         },
         {
           icon: Smartphone,
-          title: "SMS & email",
+          title: "WhatsApp & email",
           desc: "Use the right channel for urgency and detail.",
         },
       ],
@@ -552,7 +552,7 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
         {
           question: "Can Treatflow send appointment reminders?",
           answer:
-            "Yes. Treatflow can send automatic SMS and email reminders before an appointment. Confirmations go out when the client books.",
+            "Yes. Treatflow can send automatic WhatsApp and email reminders before an appointment. Confirmations go out when the client books.",
         },
         {
           question: "Can Treatflow automate client messages?",
@@ -564,7 +564,7 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
         {
           question: "Does Treatflow send appointment reminders?",
           answer:
-            "Yes. Treatflow sends booking confirmations and automatic SMS or email reminders so clients are less likely to miss their appointment.",
+            "Yes. Treatflow sends booking confirmations and automatic WhatsApp or email reminders so clients are less likely to miss their appointment.",
         },
       ],
       problem: {
@@ -581,24 +581,24 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
     },
     es: {
       eyebrow: "Mensajería y recordatorios",
-      title: "Menos ausencias con SMS y email automáticos",
+      title: "Menos ausencias con WhatsApp y email automáticos",
       subtitle:
-        "Envía confirmaciones, recordatorios de cita y seguimientos automáticamente – para que la agenda se llene sin perseguir por WhatsApp.",
+        "Envía confirmaciones, recordatorios de cita y seguimientos automáticamente – por WhatsApp y email, sin perseguir a las clientas a mano.",
       bullets: [
         "Confirmaciones de reserva automáticas",
-        "Recordatorios SMS y email antes de la cita",
+        "Recordatorios WhatsApp y email antes de la cita",
         "Seguimientos tras el tratamiento",
         "Mensajes de cumpleaños y reactivación",
       ],
       image: {
         src: "/images/lifestyle/sms-erinnerung-studio.png",
-        alt: "Clienta recibiendo un SMS de recordatorio de cita de un salón de belleza",
+        alt: "Clienta recibiendo un recordatorio de cita por WhatsApp de un salón de belleza",
       },
       features: [
         {
           icon: Bell,
           title: "Recordatorios de cita",
-          desc: "Reduce ausencias con SMS y emails programados.",
+          desc: "Reduce ausencias con WhatsApp y emails programados.",
         },
         {
           icon: Mail,
@@ -622,7 +622,7 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
         },
         {
           icon: Smartphone,
-          title: "SMS y email",
+          title: "WhatsApp y email",
           desc: "Usa el canal adecuado según urgencia y detalle.",
         },
       ],
@@ -632,24 +632,24 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
     },
     it: {
       eyebrow: "Messaggistica e promemoria",
-      title: "Meno assenze con SMS ed email automatici",
+      title: "Meno assenze con WhatsApp ed email automatici",
       subtitle:
-        "Invia conferme di prenotazione, promemoria e follow-up in automatico – così l'agenda resta piena senza inseguire su WhatsApp.",
+        "Invia conferme di prenotazione, promemoria e follow-up in automatico – su WhatsApp ed email, senza inseguire le clienti a mano.",
       bullets: [
         "Conferme di prenotazione automatiche",
-        "Promemoria SMS ed email prima dell'appuntamento",
+        "Promemoria WhatsApp ed email prima dell'appuntamento",
         "Follow-up dopo i trattamenti",
         "Messaggi di compleanno e riattivazione",
       ],
       image: {
         src: "/images/lifestyle/sms-erinnerung-studio.png",
-        alt: "Cliente che riceve un SMS di promemoria appuntamento dal centro estetico",
+        alt: "Cliente che riceve un promemoria appuntamento su WhatsApp dal centro estetico",
       },
       features: [
         {
           icon: Bell,
           title: "Promemoria appuntamenti",
-          desc: "Riduci le assenze con SMS ed email programmati.",
+          desc: "Riduci le assenze con WhatsApp ed email programmati.",
         },
         {
           icon: Mail,
@@ -673,7 +673,7 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
         },
         {
           icon: Smartphone,
-          title: "SMS ed email",
+          title: "WhatsApp ed email",
           desc: "Usa il canale giusto per urgenza e dettaglio.",
         },
       ],
@@ -683,24 +683,24 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
     },
     fr: {
       eyebrow: "Messagerie & rappels",
-      title: "Moins d'absences grâce aux SMS et e-mails automatiques",
+      title: "Moins d'absences grâce à WhatsApp et aux e-mails automatiques",
       subtitle:
-        "Envoyez confirmations, rappels de rendez-vous et suivis automatiquement – pour un agenda rempli sans relances WhatsApp manuelles.",
+        "Envoyez confirmations, rappels de rendez-vous et suivis automatiquement – par WhatsApp et e-mail, sans relances manuelles.",
       bullets: [
         "Confirmations de réservation automatiques",
-        "Rappels SMS et e-mail avant le rendez-vous",
+        "Rappels WhatsApp et e-mail avant le rendez-vous",
         "Suivis après les soins",
         "Messages d'anniversaire et de réactivation",
       ],
       image: {
         src: "/images/lifestyle/sms-erinnerung-studio.png",
-        alt: "Cliente recevant un SMS de rappel de rendez-vous de l'institut",
+        alt: "Cliente recevant un rappel de rendez-vous WhatsApp de l'institut",
       },
       features: [
         {
           icon: Bell,
           title: "Rappels de rendez-vous",
-          desc: "Réduisez les absences avec des SMS et e-mails programmés.",
+          desc: "Réduisez les absences avec des rappels WhatsApp et e-mail programmés.",
         },
         {
           icon: Mail,
@@ -724,7 +724,7 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
         },
         {
           icon: Smartphone,
-          title: "SMS & e-mail",
+          title: "WhatsApp & e-mail",
           desc: "Utilisez le bon canal selon l'urgence et le détail.",
         },
       ],

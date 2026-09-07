@@ -19,7 +19,7 @@ const consultUrl = 'https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-bera
 
 const benefits = [
     { icon: Calendar, text: '24/7 Online-Terminbuchung' },
-    { icon: Bell, text: 'Automatische Erinnerungen (SMS & E-Mail)' },
+    { icon: Bell, text: 'Automatische Erinnerungen (WhatsApp & E-Mail)' },
     { icon: Users, text: 'Mitarbeiterkalender & Schichtplanung' },
     { icon: Clock, text: '80% weniger No-Shows' },
     { icon: Shield, text: 'DSGVO-konform, EU-Server' },
@@ -33,7 +33,7 @@ const painSolutions = [
     },
     {
         pain: 'No-Shows kosten dich jede Woche Umsatz.',
-        solution: 'Automatische SMS-Erinnerungen reduzieren Ausfälle um 80%.',
+        solution: 'Automatische WhatsApp-Erinnerungen reduzieren Ausfälle um 80%.',
     },
     {
         pain: 'Doppelbuchungen und Kalender-Chaos.',
@@ -105,7 +105,7 @@ const faqs = [
     },
     {
         q: 'Wie funktionieren die automatischen Erinnerungen?',
-        a: 'Nach der Buchung erhalten Kunden eine Bestätigung. 24h und 2h vor dem Termin geht automatisch eine Erinnerung per SMS oder E-Mail raus. Das reduziert No-Shows um bis zu 80%.',
+        a: 'Nach der Buchung erhalten Kunden eine Bestätigung. 24h und 2h vor dem Termin geht automatisch eine Erinnerung per WhatsApp oder E-Mail raus. Das reduziert No-Shows um bis zu 80%.',
     },
     {
         q: 'Kann ich mehrere Mitarbeiter verwalten?',

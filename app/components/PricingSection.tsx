@@ -73,38 +73,34 @@ export default function PricingSection() {
             </div>
 
             <ul className="space-y-3 mb-6">
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-700 text-sm">Kundenverwaltung</span>
-              </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-700 text-sm">Formulare</span>
-              </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-700 text-sm">Dokumentation</span>
-              </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-700 text-sm">Vorlagen für Anamnesen</span>
-              </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-700 text-sm">E-Mail Support</span>
-              </li>
-              <li className="flex items-center">
-                <X className="h-4 w-4 text-gray-400 mr-3 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">Terminverwaltung</span>
-              </li>
-              <li className="flex items-center">
-                <X className="h-4 w-4 text-gray-400 mr-3 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">Online-Buchungssystem</span>
-              </li>
-              <li className="flex items-center">
-                <X className="h-4 w-4 text-gray-400 mr-3 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">Priority Support</span>
-              </li>
+              {[
+                "Kundenverwaltung",
+                "Formulare mit digitaler Unterschrift",
+                "Dokumentation inkl. Sprachnotiz",
+                "Vorher-Nachher-Fotos",
+                "Team-Notizen und Aufgaben",
+                "Shop und Produkte",
+                "Statistiken",
+                "Mitarbeiter und Rollen",
+                "NiSV-Dokumentation",
+                "E-Mail-Support",
+              ].map((item) => (
+                <li key={item} className="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700 text-sm">{item}</span>
+                </li>
+              ))}
+              {[
+                "Terminkalender",
+                "Online-Buchung",
+                "Automatisierungen und Warteliste",
+                "Priority Support",
+              ].map((item) => (
+                <li key={item} className="flex items-start">
+                  <X className="h-4 w-4 text-gray-400 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-400 text-sm">{item}</span>
+                </li>
+              ))}
             </ul>
 
             <a
@@ -143,34 +139,23 @@ export default function PricingSection() {
             </div>
 
             <ul className="space-y-3 mb-6">
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
-                <span className="text-sm">Alles aus Basic</span>
-              </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
-                <span className="text-sm">Terminverwaltung</span>
-              </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
-                <span className="text-sm">Online-Buchungssystem</span>
-              </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
-                <span className="text-sm">SMS & E-Mail Automatisierung</span>
-              </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
-                <span className="text-sm">Integrationen (Lexware, Google Kalender, Zapier, SumUp u. m.)</span>
-              </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
-                <span className="text-sm">Erweiterte Einstellungen</span>
-              </li>
-              <li className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-green-300 mr-3 flex-shrink-0" />
-                <span className="text-sm">Priority E-Mail &amp; Chat Support</span>
-              </li>
+              {[
+                "Alles aus Basic",
+                "Terminkalender mit Mitarbeiter- und Raumspalten",
+                "Online-Buchung ohne Provision",
+                "Warteliste",
+                "WhatsApp- und E-Mail-Erinnerungen",
+                "Kunden-Workflows",
+                "Rabattcodes",
+                "Mehrsprachige Buchungsseite",
+                "Integrationen (Lexware, Google Kalender, Zapier, SumUp)",
+                "Priority E-Mail- und Chat-Support",
+              ].map((item) => (
+                <li key={item} className="flex items-start">
+                  <CheckCircle className="h-4 w-4 text-green-300 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">{item}</span>
+                </li>
+              ))}
             </ul>
 
             <a

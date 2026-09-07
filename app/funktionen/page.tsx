@@ -109,11 +109,11 @@ const kernfunktionen = [
         href: '/nachrichtenautomatisierung',
         icon: Bell,
         title: 'Automatische Erinnerungen',
-        description: 'SMS- und E-Mail-Erinnerungen vor jedem Termin. Reduziere No-Shows um bis zu 80% - ganz automatisch.',
+        description: 'WhatsApp- und E-Mail-Erinnerungen vor jedem Termin. Reduziere No-Shows um bis zu 80% - ganz automatisch.',
         color: 'text-purple-600',
         bg: 'bg-purple-50',
         border: 'border-purple-200 hover:border-purple-400',
-        highlights: ['SMS & E-Mail', 'Bis 80% weniger No-Shows', 'Konfigurierbare Zeiten'],
+        highlights: ['WhatsApp & E-Mail', 'Bis 80% weniger No-Shows', 'Konfigurierbare Zeiten'],
     },
     {
         href: '/kunden-workflows',

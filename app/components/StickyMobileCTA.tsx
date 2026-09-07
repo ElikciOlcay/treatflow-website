@@ -16,6 +16,7 @@ function hideStickyCta(pathname: string | null): boolean {
   if (LANDING_PAGES_WITH_OWN_STICKY_CTA.includes(pathname)) return true;
   if (pathname.startsWith('/formulare-testen/')) return true;
   if (pathname.startsWith('/en/try-forms/')) return true;
+  if (pathname.startsWith('/tr/try-forms/')) return true;
   return false;
 }
 
@@ -32,6 +33,9 @@ function stickyCopy(market: Market) {
   }
   if (market === 'fi') {
     return { cta: 'Aloita ilmainen kokeilu', note: '14 päivää ilmaiseksi · Ei luottokorttia' };
+  }
+  if (market === 'tr') {
+    return { cta: 'Ücretsiz deneyin', note: '30 gün ücretsiz · Kredi kartı gerekmez' };
   }
   if (market === 'de') {
     return { cta: 'Jetzt kostenlos testen', note: '14 Tage gratis · Keine Kreditkarte' };

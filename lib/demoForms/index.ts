@@ -11,6 +11,7 @@ export {
   DEMO_FORMS_FEATURE_PATH,
   demoFormHreflang,
   demoFormHreflangEn,
+  demoFormHreflangTr,
 } from './copy';
 
 const FEATURED_ORDER = [
@@ -58,6 +59,7 @@ const ACCENTS: Record<string, { accent: string; iconBg: string; iconColor: strin
 const rawByLocale: Record<DemoLocale, DemoFormTemplate[]> = {
   de: templatesDe as DemoFormTemplate[],
   en: templatesEn as DemoFormTemplate[],
+  tr: templatesEn as DemoFormTemplate[],
 };
 
 function countFields(pages: DemoFormPage[]): number {

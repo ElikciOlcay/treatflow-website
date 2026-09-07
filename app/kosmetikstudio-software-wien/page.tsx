@@ -32,7 +32,7 @@ const features = [
     { icon: ClipboardCheck, title: 'Digitale Formulare', desc: 'Anamnese und Einwilligungen digital, rechtssicher.' },
     { icon: FileText, title: 'Behandlungsdokumentation', desc: 'Behandlungen mit Fotos und Notizen dokumentieren.' },
     { icon: Link2, title: 'Online-Buchungen', desc: 'Persönlicher Buchungslink – Kunden buchen 24/7 selbst.' },
-    { icon: Bell, title: 'Erinnerungen', desc: 'Automatische E-Mail und SMS – bis zu 80% weniger No-Shows.' },
+    { icon: Bell, title: 'Erinnerungen', desc: 'Automatische WhatsApp und E-Mail – bis zu 80% weniger No-Shows.' },
 ];
 
 const faqs = [

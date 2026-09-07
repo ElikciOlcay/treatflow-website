@@ -29,6 +29,8 @@ export type FeaturePageProps = {
   relatedLinks?: { href: string; label: string }[];
   relatedTitle?: string;
   trustItems?: string[];
+  faqTitle?: string;
+  faqBadge?: string;
   aiCapsules?: { question: string; answer: string }[];
   problem?: { title?: string; problem: string; solution: string };
   breadcrumbHomeHref?: string;
@@ -57,6 +59,8 @@ export default function FeaturePageEn({
     "14-day free trial",
     "No commission on bookings",
   ],
+  faqTitle,
+  faqBadge,
   aiCapsules,
   problem,
   breadcrumbHomeHref = "/en",
@@ -67,18 +71,20 @@ export default function FeaturePageEn({
   const ctaProps = earlyAccessHref.startsWith("http")
     ? { href: earlyAccessHref, target: "_blank", rel: "noopener noreferrer" }
     : { href: earlyAccessHref };
+  const homeLabel = breadcrumbHomeHref.startsWith("/tr") ? "Ana sayfa" : "Home";
   return (
     <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
-            generateBreadcrumbSchema([{ label: eyebrow }], breadcrumbHomeHref)
+            generateBreadcrumbSchema([{ label: eyebrow }], breadcrumbHomeHref, homeLabel)
           ),
         }}
       />
       <Breadcrumbs
         homeHref={breadcrumbHomeHref}
+        homeLabel={homeLabel}
         items={[{ label: eyebrow }]}
       />
       <section className="pt-8 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
@@ -174,7 +180,7 @@ export default function FeaturePageEn({
         <section className="py-12 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              {problem.title ?? "The problem Treatflow solves"}
+              {problem.title ?? (breadcrumbHomeHref.startsWith("/tr") ? "Treatflow hangi sorunu çözer?" : "The problem Treatflow solves")}
             </h2>
             <p className="font-semibold text-gray-900 mb-2">{problem.problem}</p>
             <p className="text-gray-600 leading-relaxed">{problem.solution}</p>
@@ -240,7 +246,9 @@ export default function FeaturePageEn({
         </section>
       )}
 
-      {faqs && faqs.length > 0 && <FaqSectionEn faqs={faqs} />}
+      {faqs && faqs.length > 0 && (
+        <FaqSectionEn faqs={faqs} title={faqTitle} badge={faqBadge} />
+      )}
 
       <section className="py-20 bg-indigo-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -8,7 +8,7 @@ const statsDe = [
     icon: TrendingDown,
     value: '50%',
     label: 'weniger No-Shows',
-    desc: 'Durch automatische SMS- und E-Mail-Erinnerungen',
+    desc: 'Durch automatische WhatsApp- und E-Mail-Erinnerungen',
     color: 'bg-rose-100 text-rose-600',
   },
   {
@@ -39,7 +39,7 @@ const statsEn = [
     icon: TrendingDown,
     value: '50%',
     label: 'fewer no-shows',
-    desc: 'With automatic SMS and email reminders',
+    desc: 'With automatic WhatsApp and email reminders',
     color: 'bg-rose-100 text-rose-600',
   },
   {

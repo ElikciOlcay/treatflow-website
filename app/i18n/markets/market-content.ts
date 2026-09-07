@@ -22,7 +22,7 @@ function selfServeCtaLabel(lang: string): string {
 
 function selfServePricingSubtitle(lang: string): string {
   if (lang === "tr") {
-    return "Stüdyonuza uygun planı seçin. 30 günlük ücretsiz denemeyi hemen başlatın – kredi kartı gerekmez.";
+    return "İşletmenize uygun paketi seçin. 30 gün ücretsiz deneyin – kredi kartı gerekmez, taahhüt yok.";
   }
   if (lang === "nl") {
     return "Kies het plan dat bij jouw studio past. Start direct met 14 dagen gratis – geen creditcard nodig.";
@@ -52,7 +52,7 @@ function selfServeFeatureCta(lang: string): Pick<
       primaryCta: "30 gün ücretsiz deneyin",
       bottomTitle: "Başlamaya hazır mısınız?",
       bottomText:
-        "Ücretsiz denemenizi başlatın – kredi kartı gerekmez, istediğiniz zaman iptal edin.",
+        "Ücretsiz denemenizi başlatın – kredi kartı gerekmez, taahhüt yok.",
     };
   }
   if (lang === "fi") {

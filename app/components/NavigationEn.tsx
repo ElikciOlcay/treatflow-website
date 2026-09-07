@@ -38,6 +38,7 @@ import {
 } from "../i18n/market-access";
 import { EN_SLUGS } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
+import { getUiChrome } from "../i18n/markets/ui-chrome";
 
 type NavLang = "en" | "nl" | "fi" | "tr";
 
@@ -93,13 +94,13 @@ const featureDefs: {
       en: "Online booking",
       nl: "Online boeken",
       fi: "Verkkovaraus",
-      tr: "Online rezervasyon",
+      tr: "Online randevu",
     },
     desc: {
       en: "Personal booking link 24/7",
       nl: "Persoonlijke boekingslink 24/7",
       fi: "Henkilökohtainen varauslinkki 24/7",
-      tr: "Kişisel rezervasyon linki 7/24",
+      tr: "Instagram, Google ve web'den 7/24 randevu",
     },
     icon: Link2,
     color: "text-rose-600 bg-rose-100",
@@ -111,13 +112,13 @@ const featureDefs: {
       en: "Messaging",
       nl: "Berichten",
       fi: "Viestintä",
-      tr: "Mesajlar",
+      tr: "Hatırlatmalar",
     },
     desc: {
-      en: "Automated email and SMS",
-      nl: "Geautomatiseerde e-mail en sms",
-      fi: "Automaattiset sähköpostit ja tekstiviestit",
-      tr: "Otomatik e-posta ve SMS",
+      en: "Automated WhatsApp and email",
+      nl: "Geautomatiseerde WhatsApp en e-mail",
+      fi: "Automaattiset WhatsApp- ja sähköpostimuistutukset",
+      tr: "Otomatik WhatsApp ve e-posta hatırlatması",
     },
     icon: Bell,
     color: "text-purple-600 bg-purple-100",
@@ -129,7 +130,7 @@ const featureDefs: {
       en: "Client records",
       nl: "Klantendossiers",
       fi: "Asiakaskortistot",
-      tr: "Müşteri kartotek",
+      tr: "Müşteri takibi",
     },
     desc: {
       en: "History, notes and photos",
@@ -165,13 +166,13 @@ const featureDefs: {
       en: "Treatment documentation",
       nl: "Behandelingsdocumentatie",
       fi: "Hoitodokumentaatio",
-      tr: "İşlem dokümantasyonu",
+      tr: "İşlem kayıtları",
     },
     desc: {
       en: "Document treatments digitally",
       nl: "Documenteer behandelingen digitaal",
       fi: "Dokumentoi hoidot digitaalisesti",
-      tr: "İşlemleri dijital olarak belgeleyin",
+      tr: "Seans notları ve öncesi-sonrası fotoğraf",
     },
     icon: FileText,
     color: "text-blue-600 bg-blue-100",
@@ -183,7 +184,7 @@ const featureDefs: {
       en: "Vouchers",
       nl: "Cadeaubonnen",
       fi: "Lahjakortit",
-      tr: "Hediye kuponları",
+      tr: "Hediye çeki",
     },
     desc: {
       en: "Sell, redeem and track balances",
@@ -251,7 +252,7 @@ const industryDefs: {
       en: "All-in-one studio software",
       nl: "All-in-one studiosoftware",
       fi: "All-in-one-studio-ohjelmisto",
-      tr: "Hepsi bir arada stüdyo yazılımı",
+      tr: "A'dan Z'ye salon yönetimi",
     },
     icon: Sparkles,
     color: "text-indigo-600 bg-indigo-100",
@@ -302,7 +303,7 @@ const industryDefs: {
       en: "Documentation and patient records",
       nl: "Documentatie en patiëntendossiers",
       fi: "Dokumentointi ja potilaskortistot",
-      tr: "Dokümantasyon ve hasta kayıtları",
+      tr: "Onam ve hasta kaydı",
     },
     icon: Stethoscope,
     color: "text-teal-600 bg-teal-100",
@@ -319,7 +320,7 @@ const industryDefs: {
       en: "Consent and bookings",
       nl: "Toestemmingen en boekingen",
       fi: "Suostumukset ja varaukset",
-      tr: "Onam ve rezervasyonlar",
+      tr: "Onam ve randevu",
     },
     icon: Pen,
     color: "text-gray-600 bg-gray-200",
@@ -353,7 +354,7 @@ const industryDefs: {
       en: "Extensions and refill planning",
       nl: "Extensions en refill-planning",
       fi: "Pidennysten ja täyttöjen suunnittelu",
-      tr: "Uzatma ve dolgu planlaması",
+      tr: "İpek kirpik ve dolgu planı",
     },
     icon: Eye,
     color: "text-violet-600 bg-violet-100",
@@ -370,7 +371,7 @@ const industryDefs: {
       en: "Guest management and bookings",
       nl: "Gastbeheer en boekingen",
       fi: "Vierashallinta ja varaukset",
-      tr: "Misafir yönetimi ve rezervasyonlar",
+      tr: "Misafir takibi ve randevu",
     },
     icon: Waves,
     color: "text-cyan-600 bg-cyan-100",
@@ -387,7 +388,7 @@ const industryDefs: {
       en: "Bookings and health questionnaires",
       nl: "Boekingen en gezondheidsvragenlijsten",
       fi: "Varaukset ja terveyskyselyt",
-      tr: "Rezervasyonlar ve sağlık anketleri",
+      tr: "Randevu ve sağlık formu",
     },
     icon: Hand,
     color: "text-amber-600 bg-amber-100",
@@ -445,6 +446,8 @@ export default function NavigationEn({
   const pricingHref = `${base}/${EN_SLUGS.pricing}`;
   const newsHref = `${base}/${EN_SLUGS.news}`;
   const contactHref = `${base}/${EN_SLUGS.contact}`;
+  const showNews = market !== "tr";
+  const chrome = getUiChrome(market);
 
   const ctaClass =
     "bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors";
@@ -543,12 +546,14 @@ export default function NavigationEn({
             >
               {dict.nav.pricing}
             </Link>
-            <Link
-              href={newsHref}
-              className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              {dict.nav.news}
-            </Link>
+            {showNews && (
+              <Link
+                href={newsHref}
+                className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                {dict.nav.news}
+              </Link>
+            )}
             <Link
               href={contactHref}
               className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
@@ -579,7 +584,7 @@ export default function NavigationEn({
             type="button"
             className="lg:hidden text-gray-700"
             onClick={() => setMobileOpen((v) => !v)}
-            aria-label="Menu"
+            aria-label={chrome.menuAria}
           >
             {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -646,13 +651,15 @@ export default function NavigationEn({
           >
             {dict.nav.pricing}
           </Link>
-          <Link
-            href={newsHref}
-            className="block text-sm font-medium text-gray-700 hover:text-indigo-600"
-            onClick={() => setMobileOpen(false)}
-          >
-            {dict.nav.news}
-          </Link>
+          {showNews && (
+            <Link
+              href={newsHref}
+              className="block text-sm font-medium text-gray-700 hover:text-indigo-600"
+              onClick={() => setMobileOpen(false)}
+            >
+              {dict.nav.news}
+            </Link>
+          )}
           <Link
             href={contactHref}
             className="block text-sm font-medium text-gray-700 hover:text-indigo-600"

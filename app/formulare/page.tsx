@@ -47,7 +47,7 @@ const faqs = [
     },
     {
         question: 'Kann ich Anamneseboegen digital an Kunden senden?',
-        answer: 'Ja. Mit Treatflow kannst du Formulare per E-Mail oder SMS vorab an deine Kunden schicken. Sie füllen sie auf ihrem eigenen Handy aus – vor dem Termin. Das spart dir 10–15 Minuten pro Termin im Studio.',
+        answer: 'Ja. Mit Treatflow kannst du Formulare per WhatsApp oder E-Mail vorab an deine Kunden schicken. Sie füllen sie auf ihrem eigenen Handy aus – vor dem Termin. Das spart dir 10–15 Minuten pro Termin im Studio.',
     },
     {
         question: 'Sind digitale Einwilligungserklärungen rechtssicher?',
@@ -143,7 +143,7 @@ export default function FormularePage() {
                     {
                         icon: Send,
                         title: 'Vor dem Termin ausfüllen lassen',
-                        text: 'Schicke den Formular-Link per E-Mail oder SMS. Dein Kunde fuellt zu Hause aus – du sparst 10–15 Minuten pro Termin.',
+                        text: 'Schicke den Formular-Link per WhatsApp oder E-Mail. Dein Kunde fuellt zu Hause aus – du sparst 10–15 Minuten pro Termin.',
                     },
                 ]}
             />
@@ -188,7 +188,7 @@ export default function FormularePage() {
                     { icon: FileText, title: 'Formular-Marketplace', text: 'Fertige Vorlagen für Beauty-Behandlungen – rechtssicher und sofort nutzbar.', points: ['Anamnese & Aufklärung', 'Einwilligungen', 'NiSV-Vorlagen'] },
                     { icon: Sparkles, title: 'KI-Generator', text: 'Behandlung in eigenen Worten beschreiben – die KI baut das Formular mit den nötigen Feldern.', points: ['Felder automatisch', 'In Sekunden', 'Danach editierbar'] },
                     { icon: Layout, title: 'Drag & Drop Editor', text: 'Eigene Formulare bauen oder Vorlagen anpassen – mit allen Feldtypen und Live-Vorschau.', points: ['Alle Feldtypen', 'Live-Vorschau', 'Volle Kontrolle'] },
-                    { icon: Send, title: 'Vorab per Link', text: 'Formular vor dem Termin per E-Mail oder SMS. Spart 10–15 Minuten am Empfang.', points: ['E-Mail & SMS', 'Eigenes Gerät', 'Im Kundenprofil'] },
+                    { icon: Send, title: 'Vorab per Link', text: 'Formular vor dem Termin per WhatsApp oder E-Mail. Spart 10–15 Minuten am Empfang.', points: ['WhatsApp & E-Mail', 'Eigenes Gerät', 'Im Kundenprofil'] },
                     { icon: PenTool, title: 'Digitale Unterschrift', text: 'Einwilligung am Tablet unterschreiben. Zeitstempel und Archiv in der EU.', points: ['Am Gerät', 'Zeitstempel', 'Nachvollziehbar'] },
                     { icon: Shield, title: 'NiSV-tauglich', text: 'Beratung, Risikoaufklärung und Einwilligung für Laser, IPL und weitere apparative Leistungen.', points: ['Beratungsprotokoll', 'Einwilligung', 'DSGVO-Archiv'] },
                 ]}

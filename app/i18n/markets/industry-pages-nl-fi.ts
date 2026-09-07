@@ -391,7 +391,7 @@ const pages: Record<IndustryPageKey, Record<NlFiLang, PageBody>> = {
         },
         {
           problem: "No-show't ja viime hetken aukot",
-          solution: "SMS- ja sähköpostimuistutukset, jotka vähentävät peruuttamatta jääneitä aikoja.",
+          solution: "WhatsApp- ja sähköpostimuistutukset, jotka vähentävät peruuttamatta jääneitä aikoja.",
         },
       ],
       features: [
@@ -400,7 +400,7 @@ const pages: Record<IndustryPageKey, Record<NlFiLang, PageBody>> = {
         { icon: ClipboardCheck, title: "Suostumuslomakkeet", desc: "Digitaalinen anamneesi ennen jokaista hoitoa." },
         { icon: FileText, title: "Hoitomerkinnät", desc: "Jäsennelty dokumentointi joka käynnillä." },
         { icon: Camera, title: "Valokuvadokumentointi", desc: "Ennen/jälkeen-kuvat asiakkaaseen linkitettyinä." },
-        { icon: Bell, title: "Muistutukset", desc: "SMS ja sähköposti vähentävät no-show'ta." },
+        { icon: Bell, title: "Muistutukset", desc: "WhatsApp ja sähköposti vähentävät no-show'ta." },
       ],
       benefits: [
         "Vähemmän hallintoa varauksessa ja dokumentoinnissa",
@@ -1115,7 +1115,7 @@ const pages: Record<IndustryPageKey, Record<NlFiLang, PageBody>> = {
         },
         {
           problem: "Klanten vergeten aanbetaling of afspraaktijd",
-          solution: "Herinneringen via sms en e-mail.",
+          solution: "Herinneringen via WhatsApp en e-mail.",
         },
       ],
       features: [
@@ -1217,7 +1217,7 @@ const pages: Record<IndustryPageKey, Record<NlFiLang, PageBody>> = {
         },
         {
           problem: "Asiakkaat unohtavat ennakkomaksun tai ajan",
-          solution: "Muistutukset SMS:llä ja sähköpostilla.",
+          solution: "Muistutukset WhatsAppilla ja sähköpostilla.",
         },
       ],
       features: [
@@ -1318,7 +1318,7 @@ const pages: Record<IndustryPageKey, Record<NlFiLang, PageBody>> = {
         },
         {
           problem: "Hoge no-show-rates bij refills",
-          solution: "Automatische sms- en e-mailherinneringen.",
+          solution: "Automatische WhatsApp- en e-mailherinneringen.",
         },
         {
           problem: "Moeilijke overdracht tussen stylisten",
@@ -1420,7 +1420,7 @@ const pages: Record<IndustryPageKey, Record<NlFiLang, PageBody>> = {
         },
         {
           problem: "Korkeat no-show-luvut täytöissä",
-          solution: "Automaattiset SMS- ja sähköpostimuistutukset.",
+          solution: "Automaattiset WhatsApp- ja sähköpostimuistutukset.",
         },
         {
           problem: "Vaikeat vuoronvaihdot teknikoiden välillä",
@@ -1942,7 +1942,7 @@ const pages: Record<IndustryPageKey, Record<NlFiLang, PageBody>> = {
         },
         {
           problem: "Cliënten vergeten afspraken",
-          solution: "Automatische sms- en e-mailherinneringen.",
+          solution: "Automatische WhatsApp- en e-mailherinneringen.",
         },
       ],
       features: [
@@ -2044,7 +2044,7 @@ const pages: Record<IndustryPageKey, Record<NlFiLang, PageBody>> = {
         },
         {
           problem: "Asiakkaat unohtavat ajat",
-          solution: "Automaattiset SMS- ja sähköpostimuistutukset.",
+          solution: "Automaattiset WhatsApp- ja sähköpostimuistutukset.",
         },
       ],
       features: [

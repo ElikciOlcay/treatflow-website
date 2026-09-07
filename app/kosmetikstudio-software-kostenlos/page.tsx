@@ -75,7 +75,7 @@ const faqSchema = {
       name: 'Welche Funktionen fehlen bei kostenloser Kosmetikstudio Software?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Kostenlose Software bietet meist keine Behandlungsdokumentation, keine NiSV-konformen Formulare, keine digitale Kundenkartei mit Fotos, keine automatischen SMS-Erinnerungen und keinen deutschen Support.',
+        text: 'Kostenlose Software bietet meist keine Behandlungsdokumentation, keine NiSV-konformen Formulare, keine digitale Kundenkartei mit Fotos, keine automatischen WhatsApp-Erinnerungen und keinen deutschen Support.',
       },
     },
     {
@@ -141,9 +141,9 @@ const comparisonRows = [
     paidOk: true,
   },
   {
-    feature: 'SMS-Erinnerungen',
+    feature: 'WhatsApp-Erinnerungen',
     free: 'Meist nicht inklusive',
-    paid: 'Automatisch per SMS und E-Mail',
+    paid: 'Automatisch per WhatsApp und E-Mail',
     freeOk: false,
     paidOk: true,
   },
@@ -395,7 +395,7 @@ export default function KosmetikstudioSoftwareKostenlos() {
                     'Behandlungen professionell dokumentieren willst',
                     'NiSV-konforme Formulare benötigst',
                     'Eine vollständige digitale Kundenkartei führen möchtest',
-                    'No-Shows durch SMS-Erinnerungen reduzieren willst',
+                    'No-Shows durch WhatsApp-Erinnerungen reduzieren willst',
                     'DSGVO-konform mit Kundendaten arbeiten musst',
                     'Anamnese und Einwilligung digital vorab versenden möchtest',
                   ].map((item) => (

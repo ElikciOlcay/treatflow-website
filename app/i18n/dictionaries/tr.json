@@ -10,7 +10,7 @@
     "requestAccess": "Ücretsiz deneyin"
   },
   "footer": {
-    "tagline": "Dijital stüdyo asistanı. Avusturya'da geliştirildi.",
+    "tagline": "Güzellik ve estetik için salon yönetim yazılımı. Avusturya'da geliştirildi.",
     "features": "Özellikler",
     "industries": "Sektörler",
     "product": "Ürün",
@@ -33,6 +33,6 @@
     "learnMore": "Daha fazla bilgi",
     "noCreditCard": "Kredi kartı gerekmez",
     "cancelAnytime": "İstediğiniz zaman iptal edin",
-    "waitlistNote": "Ücretsiz denemenizi dakikalar içinde başlatabilirsiniz. Kredi kartı gerekmez."
+    "waitlistNote": "Ücretsiz denemenizi dakikalar içinde başlatabilirsiniz. Kredi kartı gerekmez, taahhüt yoktur."
   }
 }

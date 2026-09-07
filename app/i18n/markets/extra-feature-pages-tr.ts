@@ -35,25 +35,41 @@ type PageContent = Omit<
   "earlyAccessHref" | "primaryCta" | "bottomTitle" | "bottomText"
 >;
 
-const cta = {
+const cta: Pick<
+  FeaturePageProps,
+  | "earlyAccessHref"
+  | "primaryCta"
+  | "bottomTitle"
+  | "bottomText"
+  | "relatedTitle"
+  | "trustItems"
+  | "faqTitle"
+  | "faqBadge"
+  | "breadcrumbHomeHref"
+> = {
   earlyAccessHref: "https://app.treatflow.io/auth/register?lang=tr",
   primaryCta: "30 gün ücretsiz deneyin",
   bottomTitle: "Başlamaya hazır mısınız?",
   bottomText:
     "Ücretsiz denemenizi başlatın \u2013 kredi kartı gerekmez, istediğiniz zaman iptal edin.",
-} as const;
+  relatedTitle: "İlgili sayfalar",
+  trustItems: ["AB sunucuları", "30 gün ücretsiz deneme", "Randevu komisyonu yok"],
+  faqTitle: "Sıkça sorulan sorular",
+  faqBadge: "SSS",
+  breadcrumbHomeHref: "/tr",
+};
 
 const pages: Record<ExtraFeatureKey, PageContent> = {
   "point-of-sale": {
-    eyebrow: "Satış Noktası",
-    title: "Takviminizden ayrılmadan ödeme alın",
+    eyebrow: "Kasa",
+    title: "Takvimden ayrılmadan tahsilat alın",
     subtitle:
-      "Hizmet ve ürün ödemelerini tek bir akışta alın \u2013 doğrudan randevudan, net fişlerle ve ekibinizin güvenebileceği gün sonu özetiyle.",
+      "Hizmet ve ürün ödemesini tek adisyonda alın – doğrudan randevudan, net fişle ve gün sonu kasa özetiyle.",
     bullets: [
-      "Randevudan saniyeler içinde ödeme alın",
-      "Hizmetler, ürünler ve bahşişler tek kasada",
+      "Randevudan saniyeler içinde tahsilat",
+      "Hizmet, ürün ve bahşiş tek kasada",
       "Her satış için dijital fiş",
-      "Stüdyo için günlük kapanış özeti",
+      "Günlük kasa kapanışı",
     ],
     image: {
       src: "/images/lifestyle/reference/stüdyo-empfang-tablet.png",
@@ -62,13 +78,13 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
     features: [
       {
         icon: Receipt,
-        title: "Takvimden ödeme alma",
-        desc: "Randevuyu açın ve araç değiştirmeden ödeme alın.",
+        title: "Takvimden tahsilat",
+        desc: "Randevuyu açın, program değiştirmeden ödemeyi alın.",
       },
       {
         icon: ShoppingBag,
         title: "Hizmetler ve perakende",
-        desc: "Tedavileri, ürünleri ve ekstraları aynı fişe ekleyin.",
+        desc: "İşlemleri, ürünleri ve ekstraları aynı adisyona ekleyin.",
       },
       {
         icon: CreditCard,
@@ -91,19 +107,19 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
         desc: "Her satış, takip için müşteri geçmişinde kalır.",
       },
     ],
-    closingTitle: "Daha akıcı bir resepsiyon için tek kasa",
+    closingTitle: "Resepsiyon için tek kasa",
     closingText:
-      "Treatflow randevuları, müşterileri ve kasayı birleştirerek ekibinizin araçlar arasında daha az, müşterilerle daha fazla zaman geçirmesini sağlar.",
+      "Treatflow randevuyu, müşteriyi ve kasayı birleştirir. Ekip programlar arasında değil, müşteriyle zaman geçirir.",
     faqs: [
       {
-        question: "Treatflow ile randevudan doğrudan ödeme alabilir miyim?",
+        question: "Treatflow ile randevudan doğrudan tahsilat alabilir miyim?",
         answer:
-          "Evet. Randevuyu açıp hizmetleri, ürünleri ve bahşişleri tek bir fişte toplayarak doğrudan ödeme alabilirsiniz.",
+          "Evet. Randevuyu açıp hizmet, ürün ve bahşişi tek adisyonda toplayarak ödemeyi alabilirsiniz.",
       },
       {
         question: "Hangi ödeme yöntemlerini destekliyor?",
         answer:
-          "Nakit, kredi kartı ve karışık ödemeleri kayıt altına alabilirsiniz. SumUp gibi kart terminalleri de entegre edilebilir.",
+          "Nakit, kredi kartı ve karışık ödemeleri kaydedebilirsiniz. SumUp gibi kart terminalleri de bağlanabilir.",
       },
       {
         question: "Gün sonu kapanışı nasıl çalışıyor?",
@@ -112,10 +128,10 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
     ],
     relatedLinks: [
-      { href: "/tr/online-randevu", label: "Online randevu" },
-      { href: "/tr/randevu-takvimi", label: "Randevu takvimi" },
+      { href: "/tr/online-booking", label: "Online randevu" },
+      { href: "/tr/appointment-calendar", label: "Randevu takvimi" },
       {
-        href: "/tr/güzellik-salonu-yazılımı",
+        href: "/tr/beauty-salon-software",
         label: "Güzellik salonu yazılımı",
       },
     ],
@@ -184,10 +200,10 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
     ],
     relatedLinks: [
-      { href: "/tr/kasa", label: "Satış noktası" },
-      { href: "/tr/online-randevu", label: "Online randevu" },
+      { href: "/tr/features", label: "Tüm özellikler" },
+      { href: "/tr/online-booking", label: "Online randevu" },
       {
-        href: "/tr/güzellik-salonu-yazılımı",
+        href: "/tr/beauty-salon-software",
         label: "Güzellik salonu yazılımı",
       },
     ],
@@ -195,29 +211,29 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
 
   messaging: {
     eyebrow: "Mesajlar ve Hatırlatmalar",
-    title: "SMS ve e-posta otomasyonuyla daha az gelmeme",
+    title: "WhatsApp ve e-posta otomasyonuyla daha az gelmeme",
     subtitle:
-      "Randevu onaylarını, hatırlatmaları ve takip mesajlarını otomatik gönderin \u2013 takviminiz, WhatsApp kovalamacası olmadan dolu kalsın.",
+      "Randevu onaylarını, hatırlatmaları ve takip mesajlarını otomatik gönderin \u2013 müşterileriniz WhatsApp ve e-posta ile zamanında bilgi alsın.",
     bullets: [
       "Otomatik randevu onayları",
-      "Randevu öncesi SMS ve e-posta hatırlatmaları",
-      "Tedavi sonrası takip mesajları",
+      "Randevu öncesi WhatsApp ve e-posta hatırlatmaları",
+      "İşlem sonrası takip mesajları",
       "Doğum günü ve yeniden aktivasyon mesajları",
     ],
     image: {
-      src: "/images/lifestyle/sms-erinnerung-stüdyo.png",
-      alt: "Müşteri güzellik salonundan SMS randevu hatırlatması alıyor",
+      src: "/images/lifestyle/sms-erinnerung-studio.png",
+      alt: "Müşteri güzellik salonundan WhatsApp randevu hatırlatması alıyor",
     },
     features: [
       {
         icon: Bell,
         title: "Randevu hatırlatmaları",
-        desc: "Zamanlanmış SMS ve e-posta hatırlatmalarıyla gelmemeleri azaltın.",
+        desc: "Zamanlanmış WhatsApp ve e-posta hatırlatmalarıyla gelmemeleri azaltın.",
       },
       {
         icon: Mail,
         title: "Onaylar",
-        desc: "Müşteriler rezervasyon yaptıkları anda net randevu bilgilerini alır.",
+        desc: "Müşteriler randevu aldıkları anda net bilgileri alır.",
       },
       {
         icon: MessageCircle,
@@ -236,7 +252,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
       {
         icon: Smartphone,
-        title: "SMS ve e-posta",
+        title: "WhatsApp ve e-posta",
         desc: "Aciliyet ve ayrıntıya göre doğru kanalı kullanın.",
       },
     ],
@@ -247,7 +263,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         question: "Treatflow randevu hatırlatması gönderebilir mi?",
         answer:
-          "Evet. Treatflow randevu öncesinde otomatik SMS ve e-posta hatırlatmaları gönderebilir. Onaylar müşteri rezervasyon yaptığında gider.",
+          "Evet. Treatflow randevu öncesinde otomatik WhatsApp ve e-posta hatırlatması gönderebilir. Onay, müşteri randevu aldığında gider.",
       },
       {
         question: "Mesaj zamanlaması ayarlanabilir mi?",
@@ -261,10 +277,10 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
     ],
     relatedLinks: [
-      { href: "/tr/online-randevu", label: "Online randevu" },
-      { href: "/tr/randevu-takvimi", label: "Randevu takvimi" },
+      { href: "/tr/online-booking", label: "Online randevu" },
+      { href: "/tr/appointment-calendar", label: "Randevu takvimi" },
       {
-        href: "/tr/güzellik-salonu-yazılımı",
+        href: "/tr/beauty-salon-software",
         label: "Güzellik salonu yazılımı",
       },
     ],
@@ -289,7 +305,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         icon: CalendarDays,
         title: "Google Takvim",
-        desc: "Kişisel ve stüdyo takvimlerini gerçek zamanlı senkronize tutun.",
+        desc: "Kişisel ve salon takvimlerini anlık senkron tutun.",
       },
       {
         icon: Receipt,
@@ -299,7 +315,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         icon: Zap,
         title: "Zapier",
-        desc: "Sheets, CRM, e-posta ve daha fazlasında iş akışlarını tetikleyin.",
+        desc: "Tablolar, CRM ve e-posta iş akışlarını tetikleyin.",
       },
       {
         icon: RefreshCw,
@@ -314,10 +330,10 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         icon: Plug,
         title: "Büyüyen ekosistem",
-        desc: "Salonunuzun zaten güvendiği teknoloji yığınını bağlayın.",
+        desc: "Salonunuzun zaten kullandığı araçları bağlayın.",
       },
     ],
-    closingTitle: "Stüdyonuz için tek gerçek kaynağı",
+    closingTitle: "Salonunuz için tek kaynak",
     closingText:
       "Entegrasyonlar, favori araçlarınız otomatik olarak güncel kalırken Treatflow\u2019u operasyonunuzun merkezinde tutar.",
     faqs: [
@@ -329,19 +345,19 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         question: "Treatflow Zapier ile çalışıyor mu?",
         answer:
-          "Evet. Rezervasyon planında Treatflow\u2019u Zapier üzerinden tablolar veya e-posta iş akışları gibi diğer araçlara bağlayabilirsiniz.",
+          "Evet. Booking paketinde Treatflow'u Zapier üzerinden tablolar veya e-posta iş akışları gibi diğer araçlara bağlayabilirsiniz.",
       },
     ],
     relatedLinks: [
-      { href: "/tr/online-randevu", label: "Online randevu" },
-      { href: "/tr/randevu-takvimi", label: "Randevu takvimi" },
-      { href: "/tr/özellikler", label: "Tüm özellikler" },
+      { href: "/tr/online-booking", label: "Online randevu" },
+      { href: "/tr/appointment-calendar", label: "Randevu takvimi" },
+      { href: "/tr/features", label: "Tüm özellikler" },
     ],
   },
 
   features: {
     eyebrow: "Tüm Özellikler",
-    title: "Güzellik stüdyonuzun ihtiyaç duyduğu her şey, tek yerde",
+    title: "Güzellik salonunuzun ihtiyacı olan her şey, tek yerde",
     subtitle:
       "Takvim ve online randevudan müşteri dosyalarına, formlara, kasaya ve hatırlatmalara kadar \u2013 Treatflow modern bir salonun günlük işlerini karşılar.",
     bullets: [
@@ -363,7 +379,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         icon: Link2,
         title: "Online randevu",
-        desc: "Müşterilerinizin kişisel randevu linkinizle 7/24 rezervasyon yapmasını sağlayın.",
+        desc: "Müşterileriniz kişisel randevu linkinizle 7/24 randevu alsın.",
       },
       {
         icon: Users,
@@ -372,29 +388,29 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
       {
         icon: ClipboardCheck,
-        title: "Formlar ve onay",
-        desc: "Randevu öncesi dijital anamnez ve imzalar.",
+        title: "Onam formları",
+        desc: "Randevu öncesi dijital anamnez ve imza.",
       },
       {
         icon: FileText,
-        title: "Dokümantasyon",
-        desc: "Tedavileri, ürünleri ve öncesi/sonrası fotoğrafları kaydedin.",
+        title: "İşlem kayıtları",
+        desc: "Seans notları, ürünler ve öncesi-sonrası fotoğraflar.",
       },
       {
         icon: LayoutDashboard,
         title: "Tek çalışma alanı",
-        desc: "Stüdyoyu tek bir tutarlı platformdan yönetin.",
+        desc: "Salonu tek panelden yönetin.",
       },
     ],
     closingTitle:
-      "Güzellik stüdyoları için üretildi \u2013 genel randevu araçları değil",
+      "Güzellik salonları için üretildi – genel randevu araçları değil",
     closingText:
       "Treatflow, salonların her gün gerçekten kullandığı özellikleri birleştirerek uygulamalar arası geçişe daha az, işletme büyütmeye daha fazla zaman ayırmanızı sağlar.",
     faqs: [
       {
         question: "Treatflow hangi özellikleri içeriyor?",
         answer:
-          "Treatflow; randevu takvimi, komisyonsuz online randevu, müşteri dosyaları, dijital danışma ve onay formları, fotoğraf ve sesli not ile tedavi dokümantasyonu, hatırlatmalar, entegrasyonlar, mağaza ve hediye çeklerini içerir.",
+          "Treatflow; randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam formları, fotoğraf ve sesli not ile işlem kaydı, hatırlatmalar, entegrasyonlar, ürün satışı ve hediye çekini içerir.",
       },
       {
         question: "Treatflow hangi iş kollarına uygundur?",
@@ -403,13 +419,13 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
     ],
     relatedLinks: [
-      { href: "/tr/online-randevu", label: "Online randevu" },
-      { href: "/tr/formlar", label: "Danışma ve onay formları" },
+      { href: "/tr/online-booking", label: "Online randevu" },
+      { href: "/tr/forms", label: "Onam formları" },
       {
-        href: "/tr/tedavi-dokümantasyonu",
-        label: "Tedavi dokümantasyonu",
+        href: "/tr/treatment-documentation",
+        label: "İşlem kayıtları",
       },
-      { href: "/tr/fiyatlandırma", label: "Fiyatlandırma" },
+      { href: "/tr/pricing", label: "Fiyatlar" },
     ],
   },
 
@@ -417,7 +433,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
     eyebrow: "Ürün Satışı ve Stok",
     title: "Perakende ürünleri satın ve stoğu kontrol altında tutun",
     subtitle:
-      "Sınırsız ürün ekleyin, stüdyoda satın ve kimin ne aldığını takip edin \u2013 çok satanların fark edilmeden tükenmemesi için basit stok yönetimi.",
+      "Sınırsız ürün ekleyin, salonda satın ve kimin ne aldığını takip edin – çok satanlar fark edilmeden tükenmesin.",
     bullets: [
       "Sınırsız ürün ve kategori",
       "Stüdyoda doğrudan satış",
@@ -437,7 +453,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         icon: ShoppingBag,
         title: "Stüdyoda satış",
-        desc: "Tedavi sonrasında ayrı bir mağaza sistemi olmadan satın.",
+        desc: "İşlem sonrasında ayrı bir mağaza programı olmadan satın.",
       },
       {
         icon: BarChart3,
@@ -476,17 +492,17 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
     ],
     relatedLinks: [
-      { href: "/tr/kasa", label: "Satış noktası" },
-      { href: "/tr/online-randevu", label: "Online randevu" },
+      { href: "/tr/features", label: "Tüm özellikler" },
+      { href: "/tr/online-booking", label: "Online randevu" },
       {
-        href: "/tr/güzellik-salonu-yazılımı",
+        href: "/tr/beauty-salon-software",
         label: "Güzellik salonu yazılımı",
       },
     ],
   },
 
   "studio-website": {
-    eyebrow: "Stüdyo Web Sitesi",
+    eyebrow: "Salon Web Sitesi",
     title:
       "Ziyaretçileri randevuya dönüştüren özel tasarım web sitesi",
     subtitle:
@@ -554,12 +570,12 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
     ],
     relatedLinks: [
-      { href: "/tr/online-randevu", label: "Online randevu" },
+      { href: "/tr/online-booking", label: "Online randevu" },
       {
-        href: "/tr/güzellik-salonu-yazılımı",
+        href: "/tr/beauty-salon-software",
         label: "Güzellik salonu yazılımı",
       },
-      { href: "/tr/özellikler", label: "Tüm özellikler" },
+      { href: "/tr/features", label: "Tüm özellikler" },
     ],
   },
 };

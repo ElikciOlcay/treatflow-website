@@ -60,7 +60,7 @@ const painPoints = [
 const solutions = [
     { icon: Calendar, title: 'Online-Terminbuchung', description: 'Dein persönlicher Buchungslink für Instagram und Website. Kundinnen buchen selbst, du erhältst alle Infos automatisch.', gradient: 'from-pink-500 to-fuchsia-600', bg: 'from-pink-50 to-fuchsia-50' },
     { icon: Users, title: 'Kundenprofile mit Vorlieben', description: 'Speichere Lieblingsfarben, Nagelform, Allergien und Notizen pro Kundin. Alles auf einen Blick bei jedem Termin.', gradient: 'from-violet-500 to-purple-600', bg: 'from-violet-50 to-purple-50' },
-    { icon: Bell, title: 'Automatische Erinnerungen', description: 'Reduziere No-Shows mit automatischen Erinnerungen per E-Mail und SMS. Deine Kundinnen vergessen keinen Termin mehr.', gradient: 'from-emerald-500 to-teal-600', bg: 'from-emerald-50 to-teal-50' },
+    { icon: Bell, title: 'Automatische Erinnerungen', description: 'Reduziere No-Shows mit automatischen Erinnerungen per WhatsApp und E-Mail. Deine Kundinnen vergessen keinen Termin mehr.', gradient: 'from-emerald-500 to-teal-600', bg: 'from-emerald-50 to-teal-50' },
     { icon: ClipboardCheck, title: 'Digitale Formulare', description: 'Anamnesebögen für Allergien und Unverträglichkeiten digital ausfüllen lassen - vor dem Termin oder im Studio.', gradient: 'from-orange-500 to-amber-600', bg: 'from-orange-50 to-amber-50' },
     { icon: Sparkles, title: 'Geburtstagsnachrichten', description: 'Überrasche deine Kundinnen automatisch zum Geburtstag mit persönlichen Wünschen und stärke die Kundenbindung.', gradient: 'from-blue-500 to-indigo-600', bg: 'from-blue-50 to-indigo-50' },
     { icon: Shield, title: 'DSGVO-konform & sicher', description: 'Alle Kundendaten verschlüsselt in der EU gespeichert. Datenschutzkonform und sicher.', gradient: 'from-rose-500 to-pink-600', bg: 'from-rose-50 to-pink-50' },
@@ -184,7 +184,7 @@ export default function NagelstudioSoftwarePage() {
                         <h2 className="text-4xl font-bold text-gray-900 mb-4">Alle Funktionen für Nagelstudios</h2>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {['Online-Terminbuchung mit persönlichem Link', 'Übersichtlicher Terminkalender', 'Kundenverwaltung mit Nagelvorlieben', 'Allergien und Unverträglichkeiten erfassen', 'Automatische Terminerinnerungen per SMS', 'Geburtstagsnachrichten automatisch', 'Follow-up Nachrichten nach Behandlungen', 'Buchungslink für Instagram-Bio', 'Tages- und Wochenansicht', 'Mehrere Mitarbeiter verwalten', 'DSGVO-konforme Datenspeicherung', 'Mobil optimiert für Tablet und Smartphone'].map((feature, index) => (
+                        {['Online-Terminbuchung mit persönlichem Link', 'Übersichtlicher Terminkalender', 'Kundenverwaltung mit Nagelvorlieben', 'Allergien und Unverträglichkeiten erfassen', 'Automatische Terminerinnerungen per WhatsApp', 'Geburtstagsnachrichten automatisch', 'Follow-up Nachrichten nach Behandlungen', 'Buchungslink für Instagram-Bio', 'Tages- und Wochenansicht', 'Mehrere Mitarbeiter verwalten', 'DSGVO-konforme Datenspeicherung', 'Mobil optimiert für Tablet und Smartphone'].map((feature, index) => (
                             <div key={index} className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100">
                                 <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
                                 <span className="text-gray-700 font-medium">{feature}</span>
@@ -268,8 +268,8 @@ export default function NagelstudioSoftwarePage() {
                             <span className="text-sm text-gray-600 block mb-2">Kunden buchen 24/7 online</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
-                        <Link href="/sms-erinnerungen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">SMS-Erinnerungen</span>
+                        <Link href="/nachrichtenautomatisierung" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">WhatsApp-Erinnerungen</span>
                             <span className="text-sm text-gray-600 block mb-2">Weniger No-Shows durch Erinnerungen</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>

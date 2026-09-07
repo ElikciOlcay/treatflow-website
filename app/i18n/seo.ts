@@ -148,7 +148,11 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
   "lash-studio-software": buildSlugMap("lash-studio-software"),
   "spa-wellness-software": buildSlugMap("spa-wellness-software"),
   "massage-software": buildSlugMap("massage-software"),
-  news: buildSlugMap("news"),
+  news: (() => {
+    const map = buildSlugMap("news");
+    delete map.tr;
+    return map;
+  })(),
   "treatflow-vs-fresha": buildSlugMap("treatflow-vs-fresha"),
   "treatflow-vs-treatwell": buildSlugMap("treatflow-vs-treatwell"),
   "software-comparison": buildSlugMap("software-comparison"),

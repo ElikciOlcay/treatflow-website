@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { CheckCircle, X, ArrowRight } from "lucide-react";
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
+import type { PrefixedMarket } from "@/app/i18n/config";
+import { getUiChrome } from "@/app/i18n/markets/ui-chrome";
+import { EN_SLUGS } from "@/app/i18n/market-routes";
 
 export type EnComparisonRow = {
   feature: string;
@@ -20,12 +23,20 @@ export type EnComparisonContent = {
   ctaTitle: string;
 };
 
-export default function EnComparisonPage({ content }: { content: EnComparisonContent }) {
-  const register = APP_REGISTER_BY_MARKET.en;
+export default function EnComparisonPage({
+  content,
+  market = "en",
+}: {
+  content: EnComparisonContent;
+  market?: PrefixedMarket;
+}) {
+  const chrome = getUiChrome(market);
+  const register = APP_REGISTER_BY_MARKET[market] ?? APP_REGISTER_BY_MARKET.en;
+  const pricingHref = `/${market}/${EN_SLUGS.pricing}`;
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    inLanguage: "en",
+    inLanguage: market === "tr" ? "tr" : "en",
     mainEntity: content.faqs.map((item) => ({
       "@type": "Question",
       name: item.q,
@@ -41,7 +52,7 @@ export default function EnComparisonPage({ content }: { content: EnComparisonCon
       />
       <section className="pt-28 pb-12 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <p className="text-sm font-semibold text-indigo-600 mb-3">Comparison</p>
+          <p className="text-sm font-semibold text-indigo-600 mb-3">{chrome.comparisonEyebrow}</p>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">{content.title}</h1>
           <p className="text-xl text-gray-600">{content.intro}</p>
         </div>
@@ -52,7 +63,7 @@ export default function EnComparisonPage({ content }: { content: EnComparisonCon
           <table className="w-full text-sm">
             <thead>
               <tr className="bg-gray-50">
-                <th className="text-left px-4 py-3 font-semibold text-gray-500">Feature</th>
+                <th className="text-left px-4 py-3 font-semibold text-gray-500">{chrome.comparisonFeature}</th>
                 <th className="text-left px-4 py-3 font-semibold text-indigo-700">Treatflow</th>
                 <th className="text-left px-4 py-3 font-semibold text-gray-500">{content.competitor}</th>
               </tr>
@@ -90,7 +101,7 @@ export default function EnComparisonPage({ content }: { content: EnComparisonCon
 
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">FAQ</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">{chrome.faqBadge}</h2>
           <div className="space-y-6">
             {content.faqs.map((item) => (
               <div key={item.q} className="border-b border-gray-100 pb-6">
@@ -105,17 +116,19 @@ export default function EnComparisonPage({ content }: { content: EnComparisonCon
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-indigo-600">
         <div className="max-w-3xl mx-auto text-center text-white">
           <h2 className="text-3xl font-bold mb-4">{content.ctaTitle}</h2>
-          <p className="text-indigo-100 mb-8">14-day free trial. No credit card. No booking commission.</p>
+          <p className="text-indigo-100 mb-8">{chrome.comparisonCtaNote}</p>
           <a
             href={register}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg hover:bg-indigo-50"
           >
-            Start free trial
+            {chrome.startTrial}
             <ArrowRight className="h-4 w-4" />
           </a>
           <p className="mt-6 text-sm text-indigo-200">
-            <Link href="/en/pricing" className="underline">
-              See pricing
+            <Link href={pricingHref} className="underline">
+              {chrome.seePricing}
             </Link>
           </p>
         </div>

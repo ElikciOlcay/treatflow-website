@@ -7,6 +7,7 @@ import {
 } from "@/app/i18n/config";
 import { getTermsCopy } from "@/app/i18n/markets/static-pages-nl-fi";
 import { enTerms } from "@/app/i18n/markets/legal-en";
+import { trTerms } from "@/app/i18n/markets/legal-tr";
 
 export async function generateMetadata({
   params,
@@ -17,7 +18,8 @@ export async function generateMetadata({
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "nl" || lang === "fi" ? getTermsCopy(lang) : enTerms;
+  const content =
+    lang === "tr" ? trTerms : lang === "nl" || lang === "fi" ? getTermsCopy(lang) : enTerms;
   return buildPageMetadata({
     pageKey: "terms",
     locale: market,
@@ -35,9 +37,10 @@ export default async function TermsPage({
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "nl" || lang === "fi" ? getTermsCopy(lang) : null;
+  const structured = lang === "tr" ? trTerms : lang === "nl" || lang === "fi" ? null : enTerms;
 
-  if (content) {
+  if (!structured) {
+    const content = getTermsCopy(lang as "nl" | "fi");
     return (
       <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto prose prose-indigo">
@@ -53,10 +56,10 @@ export default async function TermsPage({
   return (
     <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">{enTerms.title}</h1>
-        <p className="text-lg text-gray-600 mb-10">{enTerms.intro}</p>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">{structured.title}</h1>
+        <p className="text-lg text-gray-600 mb-10">{structured.intro}</p>
         <div className="space-y-8 text-gray-700 leading-relaxed">
-          {enTerms.sections.map((section) => (
+          {structured.sections.map((section) => (
             <div key={section.heading}>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">{section.heading}</h2>
               <div

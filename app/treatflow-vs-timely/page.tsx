@@ -162,7 +162,7 @@ const comparisonRows = [
     timelyOk: false,
   },
   {
-    feature: 'SMS-Erinnerungen',
+    feature: 'WhatsApp-Erinnerungen',
     treatflow: 'Integriert',
     timely: 'Integriert',
     treatflowOk: true,
@@ -639,7 +639,7 @@ export default function TreatflowVsTimely() {
                   href="/nachrichtenautomatisierung"
                   className="text-indigo-600 hover:underline"
                 >
-                  SMS-Erinnerungen
+                  WhatsApp-Erinnerungen
                 </Link>{' '}
                 - komplett auf Deutsch und mit DSGVO-konformen EU-Servern.
               </p>

@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import { buildPageMetadata } from "@/app/i18n/seo";
 import { isPrefixedMarket, marketLanguage, type PrefixedMarket } from "@/app/i18n/config";
+import { isTrMarket } from "@/app/i18n/markets/market-content";
 import {
   categoryLabel,
   formatPublishedDate,
@@ -25,15 +26,6 @@ const newsCopy: Record<string, { eyebrow: string; title: string; subtitle: strin
     metaTitle: "Product news",
     metaDesc: "What is new in Treatflow: features, improvements and fixes for beauty salons and aesthetic clinics.",
   },
-  tr: {
-    eyebrow: "Ürün güncellemeleri",
-    title: "Stüdyonuz için haberler",
-    subtitle: "Yeni özellikler, iyileştirmeler ve düzeltmeler – uygulamadaki ürün güncellemelerinin aynısı.",
-    readMore: "Devamını oku",
-    empty: "Henüz yayınlanmış haber yok.",
-    metaTitle: "Ürün haberleri",
-    metaDesc: "Treatflow'daki yenilikler: güzellik salonları ve estetik klinikleri için özellikler, iyileştirmeler ve düzeltmeler.",
-  },
 };
 
 function categoryClass(category: string | null) {
@@ -49,7 +41,7 @@ export async function generateMetadata({
   params: Promise<{ market: string }>;
 }) {
   const { market: raw } = await params;
-  if (!isPrefixedMarket(raw)) return {};
+  if (!isPrefixedMarket(raw) || isTrMarket(raw)) return {};
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
   const copy = newsCopy[lang] ?? newsCopy.en;
@@ -67,7 +59,7 @@ export default async function NewsPage({
   params: Promise<{ market: string }>;
 }) {
   const { market: raw } = await params;
-  if (!isPrefixedMarket(raw)) notFound();
+  if (!isPrefixedMarket(raw) || isTrMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
   const copy = newsCopy[lang] ?? newsCopy.en;

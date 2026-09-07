@@ -77,7 +77,7 @@ const pages: Record<FeatureKey, Record<Lang, Omit<FeaturePageProps, keyof typeof
         { icon: RefreshCw, title: "Siempre sincronizado", desc: "Las reservas online entran directo al calendario." },
         { icon: Clock, title: "Reprogramación rápida", desc: "Mueve o alarga citas con drag & drop." },
         { icon: Smartphone, title: "En cualquier dispositivo", desc: "Escritorio, tablet o móvil." },
-        { icon: Bell, title: "Recordatorios automáticos", desc: "Menos ausencias con SMS y email." },
+        { icon: Bell, title: "Recordatorios automáticos", desc: "Menos ausencias con WhatsApp y email." },
       ],
       closingTitle: "Menos administración, más tiempo para tus clientas",
       closingText:
@@ -104,7 +104,7 @@ const pages: Record<FeatureKey, Record<Lang, Omit<FeaturePageProps, keyof typeof
         { icon: RefreshCw, title: "Sempre sincronizzato", desc: "Le prenotazioni online finiscono subito in agenda." },
         { icon: Clock, title: "Riprogrammazione veloce", desc: "Sposta o allunga con drag & drop." },
         { icon: Smartphone, title: "Su ogni dispositivo", desc: "Desktop, tablet o telefono." },
-        { icon: Bell, title: "Promemoria automatici", desc: "Meno assenze con SMS ed email." },
+        { icon: Bell, title: "Promemoria automatici", desc: "Meno assenze con WhatsApp ed email." },
       ],
       closingTitle: "Meno amministrazione, più tempo per le clienti",
       closingText:
@@ -131,7 +131,7 @@ const pages: Record<FeatureKey, Record<Lang, Omit<FeaturePageProps, keyof typeof
         { icon: RefreshCw, title: "Toujours synchronisé", desc: "Les réservations en ligne arrivent directement." },
         { icon: Clock, title: "Reprogrammation rapide", desc: "Déplacez ou prolongez par glisser-déposer." },
         { icon: Smartphone, title: "Sur tout appareil", desc: "Ordinateur, tablette ou téléphone." },
-        { icon: Bell, title: "Rappels automatiques", desc: "Moins d'absences grâce aux SMS et e-mails." },
+        { icon: Bell, title: "Rappels automatiques", desc: "Moins d'absences grâce à WhatsApp et aux e-mails." },
       ],
       closingTitle: "Moins d'admin, plus de temps pour vos clientes",
       closingText:
@@ -305,7 +305,7 @@ const pages: Record<FeatureKey, Record<Lang, Omit<FeaturePageProps, keyof typeof
       subtitle: "Envía formularios antes de la cita – con firma, sin papel.",
       bullets: [
         "Formularios digitales con firma",
-        "Envío por email o SMS",
+        "Envío por email o WhatsApp",
         "Plantillas listas",
         "Guardados en la ficha",
       ],
@@ -330,7 +330,7 @@ const pages: Record<FeatureKey, Record<Lang, Omit<FeaturePageProps, keyof typeof
       subtitle: "Invia i moduli prima dell'appuntamento – con firma, senza carta.",
       bullets: [
         "Moduli digitali con firma",
-        "Invio via email o SMS",
+        "Invio via email o WhatsApp",
         "Modelli pronti",
         "Salvati nella scheda",
       ],
@@ -355,7 +355,7 @@ const pages: Record<FeatureKey, Record<Lang, Omit<FeaturePageProps, keyof typeof
       subtitle: "Envoyez les formulaires avant le rendez-vous – avec signature, sans papier.",
       bullets: [
         "Formulaires numériques avec signature",
-        "Envoi par e-mail ou SMS",
+        "Envoi par e-mail ou WhatsApp",
         "Modèles prêts",
         "Enregistrés dans la fiche",
       ],

@@ -211,11 +211,11 @@ export const leadMagnets: LeadMagnet[] = [
             {
                 question: 'Soll ich per WhatsApp erinnern?',
                 answer:
-                    'Nur mit klarer Einwilligung und Trennung von privatem Chat. Professioneller sind SMS oder E-Mail aus der Studio-Software.',
+                    'Nur mit klarer Einwilligung und Trennung von privatem Chat. Professioneller sind WhatsApp oder E-Mail aus der Studio-Software.',
             },
         ],
-        relatedHref: '/sms-erinnerungen-kosmetikstudio',
-        relatedLabel: 'SMS-Erinnerungen',
+        relatedHref: '/nachrichtenautomatisierung',
+        relatedLabel: 'WhatsApp-Erinnerungen',
         keywords: [
             'no show kosmetikstudio',
             'termnierinnerung vorlage',

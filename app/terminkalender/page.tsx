@@ -38,7 +38,7 @@ export const metadata = {
 const faqs = [
     {
         question: 'Wie organisiere ich Termine im Kosmetikstudio am besten?',
-        answer: 'Mit einer spezialisierten Terminsoftware wie Treatflow organisierst du Termine am effizientesten. Online-Buchungen ermöglichen Kunden 24/7 zu buchen, automatische Erinnerungen per SMS reduzieren No-Shows um bis zu 80%, und die übersichtliche Kalenderansicht gibt dir jederzeit den vollen Überblick.',
+        answer: 'Mit einer spezialisierten Terminsoftware wie Treatflow organisierst du Termine am effizientesten. Online-Buchungen ermöglichen Kunden 24/7 zu buchen, automatische Erinnerungen per WhatsApp reduzieren No-Shows um bis zu 80%, und die übersichtliche Kalenderansicht gibt dir jederzeit den vollen Überblick.',
     },
     {
         question: 'Was kostet eine Terminsoftware für Kosmetikstudios?',
@@ -46,15 +46,15 @@ const faqs = [
     },
     {
         question: 'Können meine Kunden online Termine buchen?',
-        answer: 'Ja. Du bekommst einen persönlichen Buchungslink, den du auf deiner Website, auf Instagram oder per WhatsApp teilen kannst. Deine Kunden können darüber rund um die Uhr Behandlungen und Termine auswählen. Neue Buchungen erscheinen sofort im Kalender, Bestätigungen werden automatisch per E-Mail und SMS versendet.',
+        answer: 'Ja. Du bekommst einen persönlichen Buchungslink, den du auf deiner Website, auf Instagram oder per WhatsApp teilen kannst. Deine Kunden können darüber rund um die Uhr Behandlungen und Termine auswählen. Neue Buchungen erscheinen sofort im Kalender, Bestätigungen werden automatisch per WhatsApp und E-Mail versendet.',
     },
     {
         question: 'Wie reduziere ich No-Shows im Kosmetikstudio?',
-        answer: 'Automatische Terminerinnerungen per SMS und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten vor dem Termin. Studios berichten von bis zu 80% weniger No-Shows.',
+        answer: 'Automatische Terminerinnerungen per WhatsApp und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten vor dem Termin. Studios berichten von bis zu 80% weniger No-Shows.',
     },
     {
         question: 'Welche Funktionen sollte ein Terminplaner für Kosmetikstudios haben?',
-        answer: 'Ein guter Terminplaner für Kosmetikstudios sollte Online-Buchungen, Tages-/Wochen-/Monatsansichten, Mitarbeiter- und Raumplanung, automatische Erinnerungen per SMS und E-Mail, Drag & Drop und eine Integration mit Kundenkartei und Dokumentation bieten.',
+        answer: 'Ein guter Terminplaner für Kosmetikstudios sollte Online-Buchungen, Tages-/Wochen-/Monatsansichten, Mitarbeiter- und Raumplanung, automatische Erinnerungen per WhatsApp und E-Mail, Drag & Drop und eine Integration mit Kundenkartei und Dokumentation bieten.',
     },
     {
         question: 'Wie plane ich mehrere Mitarbeiter und Räume im Kosmetikstudio?',
@@ -66,7 +66,7 @@ const faqs = [
     },
     {
         question: 'Welche Terminsoftware eignet sich für ästhetische Medizin?',
-        answer: 'Treatflow kombiniert Kalender mit Mitarbeiter- und Raumspalten, Online-Buchung für Beratung und Behandlung sowie Erinnerungen per SMS und E-Mail. Neue Buchungen landen direkt im Kalender, ohne Provision pro Termin.',
+        answer: 'Treatflow kombiniert Kalender mit Mitarbeiter- und Raumspalten, Online-Buchung für Beratung und Behandlung sowie Erinnerungen per WhatsApp und E-Mail. Neue Buchungen landen direkt im Kalender, ohne Provision pro Termin.',
     },
 ];
 
@@ -157,7 +157,7 @@ export default function TerminkalenderPage() {
                     },
                     {
                         question: 'Welche Terminsoftware eignet sich für ästhetische Medizin?',
-                        answer: 'Treatflow kombiniert Kalender mit Mitarbeiter- und Raumspalten, Online-Buchung für Beratung und Behandlung sowie Erinnerungen per SMS und E-Mail. Buchungen landen ohne Provision im Kalender.',
+                        answer: 'Treatflow kombiniert Kalender mit Mitarbeiter- und Raumspalten, Online-Buchung für Beratung und Behandlung sowie Erinnerungen per WhatsApp und E-Mail. Buchungen landen ohne Provision im Kalender.',
                     },
                 ]}
                 dateModified={PAGE_DATE_MODIFIED}
@@ -186,7 +186,7 @@ export default function TerminkalenderPage() {
                     {
                         icon: Bell,
                         title: 'Automatische Erinnerungen',
-                        text: 'Deine Kunden bekommen vor dem Termin eine SMS oder E-Mail. Das reduziert vergessene Termine um bis zu 80 %.',
+                        text: 'Deine Kunden bekommen vor dem Termin eine Erinnerung per WhatsApp oder E-Mail. Das reduziert vergessene Termine um bis zu 80 %.',
                     },
                 ]}
             />
@@ -197,7 +197,7 @@ export default function TerminkalenderPage() {
                 steps={[
                     { title: 'Team, Leistungen und Räume einrichten', text: 'Trage deine Mitarbeiter, Behandlungen und Räume mit Arbeitszeiten ein. Danach zeigt der Kalender für jeden eine eigene Spalte.' },
                     { title: 'Termine eintragen', text: 'Trage Termine selbst ein oder aktiviere die Online-Buchung – dann erscheinen Buchungen deiner Kunden automatisch im Kalender.' },
-                    { title: 'Erinnerungen laufen automatisch', text: 'Deine Kunden bekommen Terminbestätigung und Erinnerung per SMS oder E-Mail – du musst nichts manuell verschicken.' },
+                    { title: 'Erinnerungen laufen automatisch', text: 'Deine Kunden bekommen Terminbestätigung und Erinnerung per WhatsApp oder E-Mail – du musst nichts manuell verschicken.' },
                 ]}
             />
 
@@ -209,7 +209,7 @@ export default function TerminkalenderPage() {
                     { icon: Users, title: 'Team & Räume', text: 'Eine Spalte pro Mitarbeiter oder Raum. Auslastung und freie Zeiten auf einen Blick.', points: ['Spaltenansicht', 'Kapazitäten erkennen', 'Keine Doppelbelegung'] },
                     { icon: Move, title: 'Drag & Drop', text: 'Termine verschieben, verlängern oder tauschen – ohne Formulare und ohne Chaos.', points: ['Umplanen in Sekunden', 'Live im Kalender', 'Fürs ganze Team'] },
                     { icon: LayoutGrid, title: 'Tages- bis Monatsansicht', text: 'Wechsle zwischen Tag, Woche und Monat – je nachdem, was du gerade brauchst.', points: ['Tagesansicht', 'Woche', 'Monat'] },
-                    { icon: Bell, title: 'Automatische Erinnerungen', text: 'E-Mail und SMS vor dem Termin. Weniger No-Shows, weniger Nachtelefonieren.', points: ['SMS & E-Mail', 'Flexible Zeitpunkte', 'Storno-Hinweis'] },
+                    { icon: Bell, title: 'Automatische Erinnerungen', text: 'WhatsApp und E-Mail vor dem Termin. Weniger No-Shows, weniger Nachtelefonieren.', points: ['WhatsApp & E-Mail', 'Flexible Zeitpunkte', 'Storno-Hinweis'] },
                     { icon: Calendar, title: 'Online-Buchung', text: 'Buchungen landen direkt im Kalender. Keine Doppelbuchung, automatische Bestätigung.', points: ['Persönlicher Link', 'Sofort im Kalender', 'Ohne Provision'] },
                     { icon: Clock, title: 'Weniger Verwaltungszeit', text: 'Weniger Anrufe, klarere Abläufe – mehr Zeit für Behandlungen statt für den Plan.', points: ['Weniger Telefonate', 'Klare Slots', 'Schneller Überblick'] },
                 ]}
@@ -222,7 +222,7 @@ export default function TerminkalenderPage() {
             <FeatureRelated
                 items={[
                     { href: '/online-buchungen', title: 'Online-Buchungen', description: '24/7 über deinen Buchungslink' },
-                    { href: '/nachrichtenautomatisierung', title: 'Nachrichten', description: 'Erinnerungen per SMS und E-Mail' },
+                    { href: '/nachrichtenautomatisierung', title: 'Nachrichten', description: 'Erinnerungen per WhatsApp und E-Mail' },
                     { href: '/kunden-workflows', title: 'Kunden-Workflows', description: 'Nachsorge & Reaktivierung' },
                 ]}
             />

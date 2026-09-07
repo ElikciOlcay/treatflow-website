@@ -29,7 +29,7 @@ const faqs = [
     },
     {
         question: 'Erinnert das System meine Kunden automatisch?',
-        answer: 'Ja, Treatflow sendet automatisch Terminerinnerungen per E-Mail und SMS - z.B. 3 Tage und 1 Tag vor dem Termin. Das reduziert No-Shows um bis zu 80%.',
+        answer: 'Ja, Treatflow sendet automatisch Terminerinnerungen per WhatsApp und E-Mail - z.B. 3 Tage und 1 Tag vor dem Termin. Das reduziert No-Shows um bis zu 80%.',
     },
     {
         question: 'Funktioniert die Software auch für mehrere Tätowierer?',
@@ -127,7 +127,7 @@ const solutions = [
     {
         icon: Bell,
         title: 'Automatische Erinnerungen',
-        description: 'Reduziere No-Shows mit automatischen Terminerinnerungen per E-Mail und SMS. Sende auch Pflegehinweise nach dem Termin.',
+        description: 'Reduziere No-Shows mit automatischen Terminerinnerungen per WhatsApp und E-Mail. Sende auch Pflegehinweise nach dem Termin.',
         gradient: 'from-pink-500 to-rose-600',
         bg: 'from-pink-50 to-rose-50',
     },
@@ -296,7 +296,7 @@ export default function TattooStudioSoftwarePage() {
                             'Online-Terminbuchung per Buchungslink',
                             'Kundenverwaltung mit Tattoo-Historie',
                             'Foto-Dokumentation fertiger Arbeiten',
-                            'Automatische Terminerinnerungen per SMS',
+                            'Automatische Terminerinnerungen per WhatsApp',
                             'Pflegehinweise automatisch senden',
                             'Persönlicher Buchungslink für Instagram',
                             'Kalender mit Tages- und Wochenansicht',
@@ -389,8 +389,8 @@ export default function TattooStudioSoftwarePage() {
                             <span className="text-sm text-gray-600 block mb-2">Kunden buchen 24/7 online</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
-                        <Link href="/sms-erinnerungen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">SMS-Erinnerungen</span>
+                        <Link href="/nachrichtenautomatisierung" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">WhatsApp-Erinnerungen</span>
                             <span className="text-sm text-gray-600 block mb-2">Weniger No-Shows durch Erinnerungen</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>

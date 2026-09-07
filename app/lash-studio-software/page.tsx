@@ -60,7 +60,7 @@ const solutions = [
     { icon: Calendar, title: 'Online-Buchungen per Link', description: 'Dein persönlicher Buchungslink für Instagram-Bio, Website und WhatsApp. Kundinnen buchen selbst - kein DM-Chaos mehr.', gradient: 'from-violet-500 to-purple-600', bg: 'from-violet-50 to-purple-50' },
     { icon: Users, title: 'Kundenprofile mit Lash-Details', description: 'Speichere Wimpernlänge, Biegung, Kleber-Typ, Allergien und individuelle Notizen pro Kundin.', gradient: 'from-pink-500 to-rose-600', bg: 'from-pink-50 to-rose-50' },
     { icon: ClipboardCheck, title: 'Digitale Einwilligungen', description: 'Allergieabfrage und Einwilligungsformulare digital ausfüllen und unterschreiben lassen - vorab per Link oder am Tablet.', gradient: 'from-emerald-500 to-teal-600', bg: 'from-emerald-50 to-teal-50' },
-    { icon: Bell, title: 'Automatische Erinnerungen', description: 'Reduziere No-Shows mit automatischen Erinnerungen per SMS und E-Mail. Sende auch Pflegehinweise nach der Behandlung.', gradient: 'from-orange-500 to-amber-600', bg: 'from-orange-50 to-amber-50' },
+    { icon: Bell, title: 'Automatische Erinnerungen', description: 'Reduziere No-Shows mit automatischen Erinnerungen per WhatsApp und E-Mail. Sende auch Pflegehinweise nach der Behandlung.', gradient: 'from-orange-500 to-amber-600', bg: 'from-orange-50 to-amber-50' },
     { icon: Sparkles, title: 'Refill-Erinnerungen', description: 'Erinnere Kundinnen automatisch an den nächsten Refill-Termin im idealen Zeitfenster von 2-3 Wochen.', gradient: 'from-blue-500 to-indigo-600', bg: 'from-blue-50 to-indigo-50' },
     { icon: Shield, title: 'DSGVO-konform & sicher', description: 'Alle Kundendaten verschlüsselt in EU-Rechenzentren gespeichert. Datenschutzkonform und sicher.', gradient: 'from-gray-600 to-gray-800', bg: 'from-gray-50 to-slate-100' },
 ];
@@ -168,7 +168,7 @@ export default function LashStudioSoftwarePage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16"><h2 className="text-4xl font-bold text-gray-900 mb-4">Alle Funktionen für Lash Studios</h2></div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {['Online-Terminbuchung per Buchungslink', 'Digitale Einwilligungsformulare', 'Allergieabfrage vor der Behandlung', 'Kundenprofile mit Wimpern-Details', 'Automatische Terminerinnerungen per SMS', 'Refill-Erinnerungen automatisch senden', 'Pflegehinweise nach Behandlung', 'Foto-Dokumentation', 'Kalender mit Tages- und Wochenansicht', 'Mehrere Lash Artists verwalten', 'DSGVO-konforme Datenspeicherung', 'Mobil optimiert für Tablet und Smartphone'].map((f, i) => (
+                        {['Online-Terminbuchung per Buchungslink', 'Digitale Einwilligungsformulare', 'Allergieabfrage vor der Behandlung', 'Kundenprofile mit Wimpern-Details', 'Automatische Terminerinnerungen per WhatsApp', 'Refill-Erinnerungen automatisch senden', 'Pflegehinweise nach Behandlung', 'Foto-Dokumentation', 'Kalender mit Tages- und Wochenansicht', 'Mehrere Lash Artists verwalten', 'DSGVO-konforme Datenspeicherung', 'Mobil optimiert für Tablet und Smartphone'].map((f, i) => (
                             <div key={i} className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100"><CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" /><span className="text-gray-700 font-medium">{f}</span></div>
                         ))}
                     </div>
@@ -242,8 +242,8 @@ export default function LashStudioSoftwarePage() {
                             <span className="text-sm text-gray-600 block mb-2">Kunden buchen 24/7 online</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
-                        <Link href="/sms-erinnerungen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">SMS-Erinnerungen</span>
+                        <Link href="/nachrichtenautomatisierung" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">WhatsApp-Erinnerungen</span>
                             <span className="text-sm text-gray-600 block mb-2">Weniger No-Shows durch Erinnerungen</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>

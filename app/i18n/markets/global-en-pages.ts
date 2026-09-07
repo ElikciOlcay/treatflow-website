@@ -102,7 +102,7 @@ const pages = {
         { icon: ClipboardCheck, title: "Consent forms", desc: "Digital intake before every treatment." },
         { icon: FileText, title: "Treatment notes", desc: "Structured documentation per visit." },
         { icon: Camera, title: "Photo documentation", desc: "Before/after photos linked to clients." },
-        { icon: Bell, title: "Reminders", desc: "SMS and email to reduce no-shows." },
+        { icon: Bell, title: "Reminders", desc: "WhatsApp and email to reduce no-shows." },
       ],
     },
     benefits: {

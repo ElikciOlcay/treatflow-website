@@ -10,7 +10,7 @@ import AiAnswerCapsule from '../components/AiAnswerCapsule';
 import { buildHreflangAlternates } from '../i18n/seo';
 import { generateWebPageSchema } from '@/lib/content-attribution';
 
-const PAGE_DATE_MODIFIED = '2026-08-06';
+const PAGE_DATE_MODIFIED = '2026-09-07';
 const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
@@ -47,7 +47,7 @@ const faqData = [
     },
     {
         question: 'Lohnt sich der Booking-Plan?',
-        answer: 'Wenn du Online-Buchungen, automatische Terminerinnerungen per SMS und einen digitalen Terminkalender benötigst, ja. Studios mit dem Booking-Plan berichten von bis zu 80% weniger No-Shows und deutlich weniger Telefonaufwand.',
+        answer: 'Wenn du Online-Buchungen, automatische Terminerinnerungen per WhatsApp und einen digitalen Terminkalender benötigst, ja. Studios mit dem Booking-Plan berichten von bis zu 80% weniger No-Shows und deutlich weniger Telefonaufwand.',
     },
     {
         question: 'Was kostet das Kassensystem?',
@@ -109,18 +109,24 @@ const productSchema = {
 
 const featureComparison = [
     { feature: 'Kundenverwaltung', basic: true, booking: true },
-    { feature: 'Formulare & Anamnese', basic: true, booking: true },
-    { feature: 'Behandlungsdokumentation', basic: true, booking: true },
+    { feature: 'Formulare mit digitaler Unterschrift', basic: true, booking: true },
+    { feature: 'Behandlungsdokumentation inkl. Sprachnotiz', basic: true, booking: true },
+    { feature: 'Vorher-Nachher-Fotos', basic: true, booking: true },
+    { feature: 'Team-Notizen und Aufgaben', basic: true, booking: true },
+    { feature: 'Shop und Produkte', basic: true, booking: true },
+    { feature: 'Statistiken', basic: true, booking: true },
+    { feature: 'Mitarbeiter und Rollen', basic: true, booking: true },
     { feature: 'NiSV-Dokumentation', basic: true, booking: true },
-    { feature: 'Vorlagen für Anamnesen', basic: true, booking: true },
-    { feature: 'E-Mail Support', basic: true, booking: true },
-    { feature: 'Terminkalender', basic: false, booking: true },
-    { feature: 'Online-Buchungssystem', basic: false, booking: true },
-    { feature: 'SMS & E-Mail Automatisierung', basic: false, booking: true },
-    { feature: 'Kunden-Workflows (mehrstufig)', basic: false, booking: true },
+    { feature: 'E-Mail-Support', basic: true, booking: true },
+    { feature: 'Terminkalender (Mitarbeiter und Räume)', basic: false, booking: true },
+    { feature: 'Online-Buchung ohne Provision', basic: false, booking: true },
+    { feature: 'Warteliste', basic: false, booking: true },
+    { feature: 'WhatsApp und E-Mail', basic: false, booking: true },
+    { feature: 'Kunden-Workflows', basic: false, booking: true },
+    { feature: 'Rabattcodes', basic: false, booking: true },
+    { feature: 'Mehrsprachige Buchungsseite', basic: false, booking: true },
     { feature: 'Integrationen (Lexware, Google Kalender, Zapier)', basic: false, booking: true },
     { feature: 'Priority Support', basic: false, booking: true },
-    { feature: 'Erweiterte Einstellungen', basic: false, booking: true },
 ];
 
 export default function PreisePage() {

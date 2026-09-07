@@ -236,7 +236,7 @@ const coreFeatures = [
   { href: '/formulare', icon: ClipboardCheck, label: 'Formulare', desc: 'Digitale Anamnese und Einwilligungen, vorab per Link ausfüllbar.', color: 'bg-orange-100 text-orange-600' },
   { href: '/behandlungsdokumentation', icon: Shield, label: 'Dokumentation', desc: 'Behandlungen sauber dokumentieren, inklusive NiSV-Nachweisen.', color: 'bg-teal-100 text-teal-600' },
   { href: '/kassensystem-kosmetikstudio', icon: Receipt, label: 'Kasse', desc: 'TSE- & RKSV-konform kassieren, direkt aus dem Termin.', color: 'bg-green-100 text-green-600' },
-  { href: '/sms-erinnerungen-kosmetikstudio', icon: Bell, label: 'Erinnerungen', desc: 'Automatische SMS und E-Mails reduzieren No-Shows.', color: 'bg-rose-100 text-rose-600' },
+  { href: '/nachrichtenautomatisierung', icon: Bell, label: 'Erinnerungen', desc: 'Automatische WhatsApp- und E-Mail-Erinnerungen reduzieren No-Shows.', color: 'bg-rose-100 text-rose-600' },
   { href: '/kunden-workflows', icon: Workflow, label: 'Kunden-Workflows', desc: 'Nachsorge und Reaktivierung mehrstufig automatisieren.', color: 'bg-violet-100 text-violet-600' },
 ];
 
@@ -245,7 +245,7 @@ const seoLinks = [
   { href: '/online-buchungen', label: 'Online-Terminbuchung' },
   { href: '/behandlungsdokumentation-kosmetikstudio', label: 'Behandlungsdokumentation' },
   { href: '/digitale-anamnese-kosmetikstudio', label: 'Digitale Anamnese' },
-  { href: '/sms-erinnerungen-kosmetikstudio', label: 'SMS-Erinnerungen' },
+  { href: '/nachrichtenautomatisierung', label: 'WhatsApp-Erinnerungen' },
   { href: '/kosmetikstudio-software-vergleich', label: 'Software-Vergleich' },
   { href: '/blog/beste-kosmetikstudio-software-2026', label: 'Beste Software 2026' },
   { href: '/treatflow-vs-treatwell', label: 'Treatflow vs. Treatwell' },

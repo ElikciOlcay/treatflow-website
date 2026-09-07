@@ -11,9 +11,9 @@ import { getContactCopy } from "@/app/i18n/markets/static-pages-nl-fi";
 const trContact = {
   metaTitle: "Treatflow ile İletişim",
   metaDescription:
-    "Treatflow ekibiyle iletişime geçin. Güzellik salonları ve estetik kliniklerin randevuları, formları ve işlem dokümantasyonunu dijitalleştirmesine yardımcı oluyoruz.",
+    "Treatflow ekibiyle iletişime geçin. Güzellik salonları ve medikal estetik kliniklerinin randevu, onam ve müşteri takibini dijitalleştirmesine yardımcı oluyoruz.",
   title: "İletişim",
-  body: "Bize hello@treatflow.io adresinden e-posta gönderin veya hemen ücretsiz denemenizi başlatın.",
+  body: "Bize hello@treatflow.io adresinden yazın veya hemen ücretsiz denemenizi başlatın. Türkçe destek.",
   cta: "Ücretsiz deneyin",
 };
 

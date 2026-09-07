@@ -26,7 +26,7 @@ export const painSolutionPairs = [
     },
     {
         pain: 'Termine werden manuell bestätigt und No-Shows kosten Umsatz',
-        solution: 'Online-Buchung plus automatische SMS- & E-Mail-Erinnerungen.',
+        solution: 'Online-Buchung plus automatische WhatsApp- & E-Mail-Erinnerungen.',
     },
     {
         pain: 'Behandlungsdokumentation kostet nach jeder Behandlung extra Zeit',
@@ -104,7 +104,7 @@ export const featureCards = [
     },
     {
         icon: Bell,
-        title: 'SMS- & E-Mail-Erinnerungen',
+        title: 'WhatsApp- & E-Mail-Erinnerungen',
         description: 'Automatische Erinnerungen reduzieren No-Shows und sparen dir Nachfass-Arbeit.',
         gradient: 'from-pink-500 to-rose-600',
         bg: 'from-pink-50 to-rose-50',
@@ -158,19 +158,26 @@ export const benefits = [
 
 export const basicFeatures = [
     'Kundenverwaltung',
-    'Digitale Formulare',
-    'Anamnese & Einwilligungen',
-    'Behandlungsdokumentation',
-    'Vorlagen',
-    'E-Mail Support',
+    'Formulare mit digitaler Unterschrift',
+    'Dokumentation inkl. Sprachnotiz',
+    'Vorher-Nachher-Fotos',
+    'Team-Notizen und Aufgaben',
+    'Shop und Produkte',
+    'Statistiken',
+    'NiSV-Dokumentation',
+    'E-Mail-Support',
 ];
 
 export const bookingFeatures = [
     'Alles aus Basic',
-    'Kalender',
-    'Online-Buchungslink',
-    'SMS- & E-Mail-Erinnerungen',
-    'Automatisierungen',
+    'Terminkalender mit Mitarbeiter- und Raumspalten',
+    'Online-Buchung ohne Provision',
+    'Warteliste',
+    'WhatsApp- und E-Mail-Erinnerungen',
+    'Kunden-Workflows',
+    'Rabattcodes',
+    'Mehrsprachige Buchungsseite',
+    'Integrationen (Lexware, Google Kalender, Zapier)',
     'Priority Support',
 ];
 

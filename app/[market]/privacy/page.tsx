@@ -7,6 +7,7 @@ import {
 } from "@/app/i18n/config";
 import { getPrivacyCopy } from "@/app/i18n/markets/static-pages-nl-fi";
 import { enPrivacy } from "@/app/i18n/markets/legal-en";
+import { trPrivacy } from "@/app/i18n/markets/legal-tr";
 import CookiebotDeclaration from "@/app/components/CookiebotDeclaration";
 
 export async function generateMetadata({
@@ -18,7 +19,8 @@ export async function generateMetadata({
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "nl" || lang === "fi" ? getPrivacyCopy(lang) : enPrivacy;
+  const content =
+    lang === "tr" ? trPrivacy : lang === "nl" || lang === "fi" ? getPrivacyCopy(lang) : enPrivacy;
   return buildPageMetadata({
     pageKey: "privacy",
     locale: market,
@@ -36,9 +38,10 @@ export default async function PrivacyPage({
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "nl" || lang === "fi" ? getPrivacyCopy(lang) : null;
+  const structured = lang === "tr" ? trPrivacy : lang === "nl" || lang === "fi" ? null : enPrivacy;
 
-  if (content) {
+  if (!structured) {
+    const content = getPrivacyCopy(lang as "nl" | "fi");
     return (
       <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto prose prose-indigo">
@@ -55,10 +58,10 @@ export default async function PrivacyPage({
   return (
     <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">{enPrivacy.title}</h1>
-        <p className="text-lg text-gray-600 mb-10">{enPrivacy.intro}</p>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">{structured.title}</h1>
+        <p className="text-lg text-gray-600 mb-10">{structured.intro}</p>
         <div className="space-y-8 text-gray-700 leading-relaxed">
-          {enPrivacy.sections.map((section) => (
+          {structured.sections.map((section) => (
             <div key={section.heading}>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">{section.heading}</h2>
               <div

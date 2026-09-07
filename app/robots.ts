@@ -13,7 +13,14 @@ export default function robots(): MetadataRoute.Robots {
           "/llms-full.txt",
           "/api/facts",
         ],
-        disallow: ["/api/", "/_next/", "/admin/", "/dashboard/", "/en/point-of-sale"],
+        disallow: [
+          "/api/",
+          "/_next/",
+          "/admin/",
+          "/dashboard/",
+          "/en/point-of-sale",
+          "/tr/news",
+        ],
       },
       {
         userAgent: "GPTBot",

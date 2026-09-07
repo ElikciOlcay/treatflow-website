@@ -38,7 +38,7 @@ export const metadata = {
 const faqs = [
     {
         question: 'Welches Online-Buchungssystem eignet sich für Kosmetikstudios?',
-        answer: 'Treatflow bietet ein spezialisiertes Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink, automatischen Bestätigungen per E-Mail und SMS, Mitarbeiterkalendern und Integration mit Kundenkartei und Dokumentation. Ab 59 EUR pro Monat.',
+        answer: 'Treatflow bietet ein spezialisiertes Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink, automatischen Bestätigungen per WhatsApp und E-Mail, Mitarbeiterkalendern und Integration mit Kundenkartei und Dokumentation. Ab 59 EUR pro Monat.',
     },
     {
         question: 'Wie kann ich Online-Buchungen für mein Studio einrichten?',
@@ -54,7 +54,7 @@ const faqs = [
     },
     {
         question: 'Wie reduziert ein Buchungssystem No-Shows?',
-        answer: 'Durch automatische Terminerinnerungen per SMS und E-Mail zu konfigurierbaren Zeitpunkten vor dem Termin. Kunden werden erinnert und können bei Bedarf stornieren, sodass der Termin für andere frei wird. Studios berichten von bis zu 80% weniger No-Shows.',
+        answer: 'Durch automatische Terminerinnerungen per WhatsApp und E-Mail zu konfigurierbaren Zeitpunkten vor dem Termin. Kunden werden erinnert und können bei Bedarf stornieren, sodass der Termin für andere frei wird. Studios berichten von bis zu 80% weniger No-Shows.',
     },
     {
         question: 'Was passiert, wenn alle Termine ausgebucht sind?',
@@ -118,7 +118,7 @@ export default function OnlineBuchungenPage() {
                 secondaryCta={{ label: 'Zum Terminkalender', href: '/terminkalender' }}
                 aiCapsule={{
                     question: 'Welches Online-Buchungssystem eignet sich für Kosmetikstudios?',
-                    answer: 'Treatflow bietet ein spezialisiertes Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink, 24/7-Terminbuchung, automatischen Bestätigungen per E-Mail und SMS sowie Integration mit Kundenkartei und Dokumentation. Keine Provision pro Buchung, ab 59 EUR/Monat im Booking-Plan, 14 Tage kostenlos testen.',
+                    answer: 'Treatflow bietet ein spezialisiertes Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink, 24/7-Terminbuchung, automatischen Bestätigungen per WhatsApp und E-Mail sowie Integration mit Kundenkartei und Dokumentation. Keine Provision pro Buchung, ab 59 EUR/Monat im Booking-Plan, 14 Tage kostenlos testen.',
                 }}
                 dateModified={PAGE_DATE_MODIFIED}
                 datePublished={PAGE_DATE_PUBLISHED}
@@ -141,7 +141,7 @@ export default function OnlineBuchungenPage() {
                     {
                         icon: Bell,
                         title: 'Bestätigung und Erinnerung automatisch',
-                        text: 'Nach der Buchung bekommt dein Kunde sofort eine Bestätigung. Vor dem Termin folgt eine Erinnerung per SMS oder E-Mail.',
+                        text: 'Nach der Buchung bekommt dein Kunde sofort eine Bestätigung. Vor dem Termin folgt eine Erinnerung per WhatsApp oder E-Mail.',
                     },
                     {
                         icon: ListOrdered,
@@ -170,7 +170,7 @@ export default function OnlineBuchungenPage() {
                     { icon: Languages, title: 'Sechs Sprachen', text: 'Die Buchungsseite passt sich der Sprache der Kundin an – ohne extra Setup.', points: ['DE, EN, TR, PL, IT, RU', 'Automatische Sprache', 'Ohne Barriere'] },
                     { icon: ListOrdered, title: 'Warteliste', text: 'Bei Ausbuchung vormerken. Wird ein Termin frei, geht eine E-Mail an passende Interessenten.', points: ['Auto-Mail bei Storno', 'Zwei Benachrichtigungsmodi', 'Übersicht im Dashboard'] },
                     { icon: Ticket, title: 'Rabattcodes', text: 'Codes für Neukunden und Kampagnen – direkt bei der Online-Buchung einlösen.', points: ['Neukunden & Aktionen', 'Einlösung beim Buchen', 'Nutzungsstatistik'] },
-                    { icon: Bell, title: 'Erinnerungen', text: 'SMS und E-Mail vor dem Termin. Kundinnen können rechtzeitig stornieren, der Slot wird frei.', points: ['SMS & E-Mail', 'Flexible Zeitpunkte', 'Weniger No-Shows'] },
+                    { icon: Bell, title: 'Erinnerungen', text: 'WhatsApp und E-Mail vor dem Termin. Kundinnen können rechtzeitig stornieren, der Slot wird frei.', points: ['WhatsApp & E-Mail', 'Flexible Zeitpunkte', 'Weniger No-Shows'] },
                     { icon: Calendar, title: 'Flexible Termine', text: 'Arbeitszeiten, Behandlungsdauern, Pausen und Urlaub – nur echte Verfügbarkeit wird angeboten.', points: ['Arbeitszeiten', 'Pausen & Urlaub', 'Keine Doppelbuchung'] },
                 ]}
             />

@@ -376,7 +376,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "No-shows and last-minute gaps",
-          solution: "SMS and email reminders that reduce missed appointments.",
+          solution: "WhatsApp and email reminders that reduce missed appointments.",
         },
       ],
       features: [
@@ -385,7 +385,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         { icon: ClipboardCheck, title: "Consent forms", desc: "Digital intake before every treatment." },
         { icon: FileText, title: "Treatment notes", desc: "Structured documentation per visit, including voice dictation." },
         { icon: Camera, title: "Photo documentation", desc: "Before/after photos linked to clients." },
-        { icon: Bell, title: "Reminders", desc: "SMS and email to reduce no-shows." },
+        { icon: Bell, title: "Reminders", desc: "WhatsApp and email to reduce no-shows." },
       ],
       benefits: [
         "Less admin work across booking and documentation",
@@ -431,7 +431,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         {
           question: "Can a beauty salon send reminders and rebook clients in Treatflow?",
           answer:
-            "Yes. Automatic SMS and email reminders are part of the Booking plan. Follow-ups help clients book the next visit on your own booking page.",
+            "Yes. Automatic WhatsApp and email reminders are part of the Booking plan. Follow-ups help clients book the next visit on your own booking page.",
         },
       ],
       siblingKeys: ["aesthetic-clinic-software", "nail-salon-software", "spa-wellness-software"],
@@ -504,7 +504,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Ausencias y huecos de última hora",
-          solution: "Recordatorios por SMS y email que reducen no-shows.",
+          solution: "Recordatorios por WhatsApp y email que reducen no-shows.",
         },
       ],
       features: [
@@ -513,7 +513,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         { icon: ClipboardCheck, title: "Consentimientos", desc: "Formularios digitales antes de cada tratamiento." },
         { icon: FileText, title: "Notas de tratamiento", desc: "Documentación estructurada por visita." },
         { icon: Camera, title: "Fotos", desc: "Fotos antes/después vinculadas a la ficha." },
-        { icon: Bell, title: "Recordatorios", desc: "SMS y email para reducir ausencias." },
+        { icon: Bell, title: "Recordatorios", desc: "WhatsApp y email para reducir ausencias." },
       ],
       benefits: [
         "Menos administración entre reservas y documentación",
@@ -605,7 +605,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Assenze e buchi dell'ultimo minuto",
-          solution: "Promemoria SMS ed email che riducono i no-show.",
+          solution: "Promemoria WhatsApp ed email che riducono i no-show.",
         },
       ],
       features: [
@@ -614,7 +614,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         { icon: ClipboardCheck, title: "Moduli di consenso", desc: "Intake digitale prima di ogni trattamento." },
         { icon: FileText, title: "Note di trattamento", desc: "Documentazione strutturata per visita." },
         { icon: Camera, title: "Documentazione fotografica", desc: "Foto prima/dopo collegate alla scheda." },
-        { icon: Bell, title: "Promemoria", desc: "SMS ed email per ridurre le assenze." },
+        { icon: Bell, title: "Promemoria", desc: "WhatsApp ed email per ridurre le assenze." },
       ],
       benefits: [
         "Meno amministrazione tra prenotazioni e documentazione",
@@ -706,7 +706,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Absences et créneaux de dernière minute",
-          solution: "Rappels SMS et e-mail qui réduisent les no-shows.",
+          solution: "Rappels WhatsApp et e-mail qui réduisent les no-shows.",
         },
       ],
       features: [
@@ -715,7 +715,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         { icon: ClipboardCheck, title: "Formulaires de consentement", desc: "Intake numérique avant chaque soin." },
         { icon: FileText, title: "Notes de soin", desc: "Documentation structurée par visite." },
         { icon: Camera, title: "Documentation photo", desc: "Photos avant/après liées à la fiche." },
-        { icon: Bell, title: "Rappels", desc: "SMS et e-mail pour réduire les absences." },
+        { icon: Bell, title: "Rappels", desc: "WhatsApp et e-mail pour réduire les absences." },
       ],
       benefits: [
         "Moins d'administration entre réservation et documentation",
@@ -2092,7 +2092,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Clients forget deposit or appointment times",
-          solution: "Reminders by SMS and email.",
+          solution: "Reminders by WhatsApp and email.",
         },
       ],
       features: [
@@ -2194,7 +2194,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Se olvidan depósitos o horarios",
-          solution: "Recordatorios por SMS y email.",
+          solution: "Recordatorios por WhatsApp y email.",
         },
       ],
       features: [
@@ -2296,7 +2296,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Si dimenticano depositi o orari",
-          solution: "Promemoria SMS ed email.",
+          solution: "Promemoria WhatsApp ed email.",
         },
       ],
       features: [
@@ -2398,7 +2398,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Oublis d'acompte ou d'horaire",
-          solution: "Rappels SMS et e-mail.",
+          solution: "Rappels WhatsApp et e-mail.",
         },
       ],
       features: [
@@ -2499,7 +2499,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "High no-show rates on fills",
-          solution: "Automatic SMS and email reminders.",
+          solution: "Automatic WhatsApp and email reminders.",
         },
         {
           problem: "Hard handovers between technicians",
@@ -2601,7 +2601,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Muchas ausencias en rellenos",
-          solution: "Recordatorios automáticos por SMS y email.",
+          solution: "Recordatorios automáticos por WhatsApp y email.",
         },
         {
           problem: "Traspasos difíciles entre técnicas",
@@ -2703,7 +2703,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Tanti no-show sui refill",
-          solution: "Promemoria automatici SMS ed email.",
+          solution: "Promemoria automatici WhatsApp ed email.",
         },
         {
           problem: "Passaggi difficili tra tecniche",
@@ -2805,7 +2805,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Beaucoup d'absences sur les remplissages",
-          solution: "Rappels automatiques SMS et e-mail.",
+          solution: "Rappels automatiques WhatsApp et e-mail.",
         },
         {
           problem: "Passages difficiles entre techniciennes",
@@ -3736,7 +3736,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Clients forget appointments",
-          solution: "Automatic SMS and email reminders.",
+          solution: "Automatic WhatsApp and email reminders.",
         },
       ],
       features: [
@@ -3838,7 +3838,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Las clientas olvidan la cita",
-          solution: "Recordatorios automáticos por SMS y email.",
+          solution: "Recordatorios automáticos por WhatsApp y email.",
         },
       ],
       features: [
@@ -3940,7 +3940,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Le clienti dimenticano l'appuntamento",
-          solution: "Promemoria automatici SMS ed email.",
+          solution: "Promemoria automatici WhatsApp ed email.",
         },
       ],
       features: [
@@ -4042,7 +4042,7 @@ const pages: Record<IndustryPageKey, Record<IndustryLocale, InternationalPageCon
         },
         {
           problem: "Les clientes oublient le rendez-vous",
-          solution: "Rappels automatiques SMS et e-mail.",
+          solution: "Rappels automatiques WhatsApp et e-mail.",
         },
       ],
       features: [

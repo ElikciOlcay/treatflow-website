@@ -63,7 +63,7 @@ const faqs = [
     {
         question: 'Über welche Kanäle werden Workflow-Nachrichten versendet?',
         answer:
-            'Workflow-Schritte können per E-Mail und optional per WhatsApp versendet werden. Terminerinnerungen und klassische SMS-Automation bleiben unter den einfachen Nachrichten verfügbar.',
+            'Workflow-Schritte können per E-Mail und optional per WhatsApp versendet werden. Terminerinnerungen bleiben unter den einfachen Nachrichten verfügbar.',
     },
     {
         question: 'Kann ein Workflow stoppen, wenn der Kunde neu bucht?',
@@ -249,7 +249,7 @@ export default function KundenWorkflowsPage() {
                     {
                         href: '/nachrichtenautomatisierung',
                         title: 'Erinnerungen',
-                        description: 'SMS & E-Mail vor dem Termin',
+                        description: 'WhatsApp & E-Mail vor dem Termin',
                     },
                     {
                         href: '/terminkalender',

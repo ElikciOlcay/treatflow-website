@@ -70,7 +70,7 @@ const softwareSchema = {
     "Consent and intake forms",
     "Treatment documentation with photos",
     "Voice dictation for treatment notes",
-    "SMS and email reminders",
+    "WhatsApp and email reminders",
   ],
 };
 
@@ -140,7 +140,7 @@ const faqSchema = {
       name: "Can Treatflow send appointment reminders?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Automatic SMS and email reminders are part of the Booking plan.",
+        text: "Yes. Automatic WhatsApp and email reminders are part of the Booking plan.",
       },
     },
     {
@@ -233,7 +233,7 @@ const coreFeatures = [
     href: `/en/${EN_SLUGS.messaging}`,
     icon: Bell,
     label: "Reminders",
-    desc: "Automatic SMS and email reminders that cut no-shows.",
+    desc: "Automatic WhatsApp and email reminders that cut no-shows.",
     color: "bg-rose-100 text-rose-600",
   },
   {

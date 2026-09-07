@@ -50,7 +50,7 @@ const faqs = [
     },
     {
         question: 'Welche Terminsoftware eignet sich für ästhetische Medizin?',
-        answer: 'Treatflow kombiniert Kalender mit Mitarbeiter- und Raumspalten, Online-Buchung für Beratung und Behandlung sowie Erinnerungen per SMS und E-Mail. Neue Buchungen landen direkt im Kalender, ohne Provision pro Termin.',
+        answer: 'Treatflow kombiniert Kalender mit Mitarbeiter- und Raumspalten, Online-Buchung für Beratung und Behandlung sowie Erinnerungen per WhatsApp und E-Mail. Neue Buchungen landen direkt im Kalender, ohne Provision pro Termin.',
     },
     {
         question: 'Kann ich Chargennummern von Produkten dokumentieren?',
@@ -373,7 +373,7 @@ export default function AesthetischeMedizinSoftwarePage() {
                             'Skizzenfelder für Gesicht und Körper',
                             'Umfassende Patientenakte',
                             'Online-Terminbuchung',
-                            'Automatische Terminerinnerungen per SMS',
+                            'Automatische Terminerinnerungen per WhatsApp',
                             'Follow-up Nachrichten nach Behandlungen',
                             'Kontrolltermin-Erinnerungen',
                             'NiSV-konforme Dokumentation',
@@ -426,8 +426,8 @@ export default function AesthetischeMedizinSoftwarePage() {
                             <span className="text-sm text-gray-600 block mb-2">Kunden buchen 24/7 online</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
-                        <Link href="/sms-erinnerungen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">SMS-Erinnerungen</span>
+                        <Link href="/nachrichtenautomatisierung" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">WhatsApp-Erinnerungen</span>
                             <span className="text-sm text-gray-600 block mb-2">Weniger No-Shows durch Erinnerungen</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>

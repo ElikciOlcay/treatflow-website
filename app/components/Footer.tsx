@@ -126,7 +126,7 @@ export default function Footer() {
                 { href: '/online-buchungen', label: 'Online-Terminbuchung Kosmetikstudio' },
                 { href: '/behandlungsdokumentation-kosmetikstudio', label: 'Behandlungsdokumentation Kosmetikstudio' },
                 { href: '/digitale-anamnese-kosmetikstudio', label: 'Digitale Anamnese Kosmetikstudio' },
-                { href: '/sms-erinnerungen-kosmetikstudio', label: 'SMS-Erinnerungen Kosmetikstudio' },
+                { href: '/nachrichtenautomatisierung', label: 'WhatsApp-Erinnerungen Kosmetikstudio' },
                 { href: '/terminkalender', label: 'Terminsoftware Kosmetikstudio' },
                 { href: '/kundenverwaltung', label: 'Kundenkartei Kosmetikstudio' },
                 { href: '/anamnesebogen-kosmetikstudio', label: 'Anamnesebogen Kosmetikstudio' },

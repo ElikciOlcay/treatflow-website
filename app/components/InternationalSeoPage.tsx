@@ -16,6 +16,7 @@ import { generateServiceSchema } from "@/lib/schema";
 import type { SeoPageKey } from "../i18n/seo";
 import { BASE_URL, type PrefixedMarket } from "../i18n/config";
 import { getPrimaryCtaPath } from "../i18n/market-access";
+import { getUiChrome } from "../i18n/markets/ui-chrome";
 
 export type FeatureBlock = {
   icon: LucideIcon;
@@ -89,17 +90,18 @@ export default function InternationalSeoPage({
   content: InternationalPageContent;
 }) {
   const locale = content.locale ?? "en";
+  const chrome = getUiChrome(String(locale));
   const earlyAccessHref = getPrimaryCtaPath(locale);
-  const primaryLabel = content.ctaPrimaryLabel ?? "Start free trial";
+  const primaryLabel = content.ctaPrimaryLabel ?? chrome.startTrial;
   const bottomTitle = content.ctaBottomTitle ?? "Ready to run your studio in one place?";
   const bottomText =
     content.ctaBottomText ??
     "Start your free trial – no credit card required, cancel anytime.";
-  const trustTrial = content.trustTrialLabel ?? "14-day free trial";
+  const trustTrial = content.trustTrialLabel ?? chrome.trustBadges[3];
   const trustBadges = content.trustBadges ?? [
-    "Designed for GDPR",
-    "EU-hosted servers",
-    "SSL-encrypted",
+    chrome.trustBadges[0],
+    chrome.trustBadges[1],
+    chrome.trustBadges[2],
     trustTrial,
   ];
   const isExternalCta = earlyAccessHref.startsWith("http");
@@ -108,6 +110,7 @@ export default function InternationalSeoPage({
     ? { href: earlyAccessHref, target: "_blank", rel: "noopener noreferrer" }
     : { href: earlyAccessHref };
   const homeHref = locale === "en" || String(locale).startsWith("en") ? "/en" : `/${locale}`;
+  const homeLabel = String(locale) === "tr" ? chrome.homeSrOnly : "Home";
 
   const serviceSchema = generateServiceSchema({
     name: content.serviceName,
@@ -129,13 +132,15 @@ export default function InternationalSeoPage({
           __html: JSON.stringify(
             generateBreadcrumbSchema(
               [{ label: content.hero.eyebrow, href: content.canonicalPath }],
-              homeHref
+              homeHref,
+              homeLabel
             )
           ),
         }}
       />
       <Breadcrumbs
         homeHref={homeHref}
+        homeLabel={homeLabel}
         items={[{ label: content.hero.eyebrow }]}
       />
 
@@ -223,6 +228,8 @@ export default function InternationalSeoPage({
           title={content.workflow.title}
           subtitle={content.workflow.subtitle}
           steps={content.workflow.steps}
+          stepLabel={chrome.stepLabel}
+          learnMore={chrome.learnMore}
         />
       )}
 
@@ -392,7 +399,7 @@ export default function InternationalSeoPage({
         <section className="py-12 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-lg font-semibold text-gray-900 mb-4 text-center">
-              {content.internalLinksTitle ?? "Related pages"}
+              {content.internalLinksTitle ?? chrome.relatedTitle}
             </h2>
             <div className="flex flex-wrap justify-center gap-3">
               {content.internalLinks.map((link) => (
@@ -409,7 +416,9 @@ export default function InternationalSeoPage({
         </section>
       )}
 
-      {content.faqs.length > 0 && <FaqSectionEn faqs={content.faqs} />}
+      {content.faqs.length > 0 && (
+        <FaqSectionEn faqs={content.faqs} title={chrome.faqTitle} badge={chrome.faqBadge} />
+      )}
 
       {/* CTA */}
       <section className="py-20 bg-indigo-600">

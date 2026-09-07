@@ -195,6 +195,10 @@ const nextConfig: NextConfig = {
       { source: '/online-buchung-kosmetikstudio', destination: '/online-buchungen', permanent: true },
       { source: '/online-buchung-kosmetikstudio/', destination: '/online-buchungen', permanent: true },
 
+      // Alte SMS-Landing auf WhatsApp/Nachrichten
+      { source: '/sms-erinnerungen-kosmetikstudio', destination: '/nachrichtenautomatisierung', permanent: true },
+      { source: '/sms-erinnerungen-kosmetikstudio/', destination: '/nachrichtenautomatisierung', permanent: true },
+
       // EN keyword aliases → canonical /en pages (no duplicate 200s)
       { source: '/en/digital-consent-forms', destination: '/en/forms', permanent: true },
       { source: '/en/consultation-forms', destination: '/en/forms', permanent: true },

@@ -26,10 +26,10 @@ const challengesDe = [
     label: 'Kunden erscheinen nicht zu Terminen',
     headline: 'Bis zu 50% weniger No-Shows',
     description:
-      'Automatische SMS- und E-Mail-Erinnerungen sorgen dafür, dass deine Kunden ihre Termine nicht vergessen. Weniger Ausfälle, mehr Umsatz.',
+      'Automatische WhatsApp- und E-Mail-Erinnerungen sorgen dafür, dass deine Kunden ihre Termine nicht vergessen. Weniger Ausfälle, mehr Umsatz.',
     benefits: [
       'Automatische Terminerinnerungen',
-      'SMS & E-Mail vor dem Termin',
+      'WhatsApp & E-Mail vor dem Termin',
       'Nachbuchung leicht gemacht',
     ],
   },
@@ -81,10 +81,10 @@ const challengesEn = [
     label: 'Clients miss their appointments',
     headline: 'Up to 50% fewer no-shows',
     description:
-      'Automatic SMS and email reminders mean clients remember their appointments. Fewer gaps, more revenue.',
+      'Automatic WhatsApp and email reminders mean clients remember their appointments. Fewer gaps, more revenue.',
     benefits: [
       'Automatic appointment reminders',
-      'SMS and email before the visit',
+      'WhatsApp and email before the visit',
       'Easy rebooking',
     ],
   },

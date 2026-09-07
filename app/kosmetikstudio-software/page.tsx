@@ -150,7 +150,7 @@ const solutions = [
     {
         icon: Bell,
         title: 'Automatische Erinnerungen',
-        description: 'Reduziere No-Shows um bis zu 80% mit automatischen Terminerinnerungen per E-Mail und SMS.',
+        description: 'Reduziere No-Shows um bis zu 80% mit automatischen Terminerinnerungen per WhatsApp und E-Mail.',
         gradient: 'from-pink-500 to-rose-600',
         bg: 'from-pink-50 to-rose-50',
     },
@@ -556,7 +556,7 @@ export default function KosmetikstudioSoftwarePage() {
                             'Einwilligungsformulare mit Unterschrift',
                             'Behandlungsdokumentation mit Fotos',
                             'Kundenverwaltung mit Behandlungshistorie',
-                            'Automatische Terminerinnerungen per SMS',
+                            'Automatische Terminerinnerungen per WhatsApp',
                             'Follow-up Nachrichten nach Behandlungen',
                             'Geburtstagsnachrichten automatisch',
                             'NiSV-konforme Dokumentation',

@@ -82,7 +82,7 @@ const solutions = [
     {
         icon: QrCode,
         title: 'Vorab-Ausfüllung per Link',
-        description: 'Sende einen Link per E-Mail oder SMS. Kundinnen füllen den Anamnesebogen vor dem Termin bequem zu Hause aus.',
+        description: 'Sende einen Link per WhatsApp oder E-Mail. Kundinnen füllen den Anamnesebogen vor dem Termin bequem zu Hause aus.',
         gradient: 'from-orange-500 to-amber-600',
         bg: 'from-orange-50 to-amber-50',
     },
@@ -197,7 +197,7 @@ const faqs = [
     },
     {
         q: 'Können Kundinnen den Anamnesebogen vorab ausfüllen?',
-        a: 'Ja, du kannst einen Link per SMS oder E-Mail senden. Die Kundin füllt den Bogen bequem vor dem Termin aus und du hast alle Infos schon bereit.',
+        a: 'Ja, du kannst einen Link per WhatsApp oder E-Mail senden. Die Kundin füllt den Bogen bequem vor dem Termin aus und du hast alle Infos schon bereit.',
     },
     {
         q: 'Ist die elektronische Unterschrift rechtssicher?',
@@ -312,7 +312,7 @@ export default function AnamnesebogenKosmetikstudioPage() {
                             />
                             <AiAnswerCapsule
                                 question="Können Kundinnen den Anamnesebogen vorab ausfüllen?"
-                                answer="Ja. Du sendest einen Link per E-Mail oder SMS. Die Kundin füllt zu Hause aus und unterschreibt digital. Das Formular landet automatisch in der Kundenakte, DSGVO-konform auf EU-Servern."
+                                answer="Ja. Du sendest einen Link per WhatsApp oder E-Mail. Die Kundin füllt zu Hause aus und unterschreibt digital. Das Formular landet automatisch in der Kundenakte, DSGVO-konform auf EU-Servern."
                             />
                         </AiAnswerCapsuleGroup>
                     </div>

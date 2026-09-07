@@ -30,7 +30,7 @@ const faqs = [
   { q: 'Wie läuft der erste Termin ab?', a: 'Beim Ersttermin führen wir eine umfassende Hautanalyse durch und besprechen deine Wünsche und Ziele. Gemeinsam erstellen wir ein individuelles Behandlungskonzept. Die Erstberatung ist kostenlos.' },
   { q: 'Ist die Laser Haarentfernung schmerzhaft?', a: 'Dank modernster Kühltechnologie ist die Behandlung sehr gut verträglich. Die meisten Kundinnen beschreiben ein leichtes Wärmegefühl. Wir passen die Intensität individuell an.' },
   { q: 'Wie oft muss ich zur Behandlung kommen?', a: 'Das hängt von der Behandlung ab. Für Laser Haarentfernung empfehlen wir 6-8 Sitzungen im Abstand von 4-6 Wochen. Bei Facials besprechen wir den idealen Rhythmus in der Erstberatung.' },
-  { q: 'Kann ich online einen Termin buchen?', a: 'Ja, über unseren Online-Buchungskalender kannst du rund um die Uhr deinen Wunschtermin auswählen. Du erhältst eine sofortige Bestätigung per E-Mail und SMS.' },
+  { q: 'Kann ich online einen Termin buchen?', a: 'Ja, über unseren Online-Buchungskalender kannst du rund um die Uhr deinen Wunschtermin auswählen. Du erhältst eine sofortige Bestätigung per WhatsApp und E-Mail.' },
   { q: 'Welche Zahlungsmethoden akzeptiert ihr?', a: 'Wir akzeptieren Barzahlung, EC-Karte und alle gängigen Kreditkarten. Die Zahlung erfolgt nach der Behandlung.' },
 ];
 

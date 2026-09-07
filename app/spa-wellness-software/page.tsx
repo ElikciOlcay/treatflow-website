@@ -59,7 +59,7 @@ const painPoints = [
 const solutions = [
     { icon: Calendar, title: 'Intelligente Terminplanung', description: 'Online-Buchungen mit Behandlungskategorien, Therapeuten-Auswahl und automatischer Verfügbarkeitsprüfung.', gradient: 'from-cyan-500 to-sky-600', bg: 'from-cyan-50 to-sky-50' },
     { icon: Users, title: 'Gästeprofile mit Vorlieben', description: 'Speichere Vorlieben, Allergien, bevorzugte Therapeuten und Behandlungshistorie. Für ein personalisiertes Spa-Erlebnis.', gradient: 'from-emerald-500 to-teal-600', bg: 'from-emerald-50 to-teal-50' },
-    { icon: Bell, title: 'Automatische Erinnerungen', description: 'Reduziere No-Shows mit automatischen Erinnerungen per E-Mail und SMS vor dem Termin.', gradient: 'from-violet-500 to-purple-600', bg: 'from-violet-50 to-purple-50' },
+    { icon: Bell, title: 'Automatische Erinnerungen', description: 'Reduziere No-Shows mit automatischen Erinnerungen per WhatsApp und E-Mail vor dem Termin.', gradient: 'from-violet-500 to-purple-600', bg: 'from-violet-50 to-purple-50' },
     { icon: ClipboardCheck, title: 'Digitale Gesundheitsfragebögen', description: 'Gäste füllen Fragebögen zu Kontraindikationen vorab digital aus. Du hast alle Infos vor der Behandlung.', gradient: 'from-orange-500 to-amber-600', bg: 'from-orange-50 to-amber-50' },
     { icon: Sparkles, title: 'Follow-up & Kundenbindung', description: 'Sende automatisch Danke-Nachrichten, Geburtstagswünsche und Angebote für Folgebehandlungen.', gradient: 'from-pink-500 to-rose-600', bg: 'from-pink-50 to-rose-50' },
     { icon: Shield, title: 'DSGVO-konform & sicher', description: 'Alle Gästedaten verschlüsselt in EU-Rechenzentren gespeichert. Datenschutzkonform und sicher.', gradient: 'from-blue-500 to-indigo-600', bg: 'from-blue-50 to-indigo-50' },
@@ -168,7 +168,7 @@ export default function SpaWellnessSoftwarePage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16"><h2 className="text-4xl font-bold text-gray-900 mb-4">Alle Funktionen für Spas und Wellness</h2></div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {['Online-Terminbuchung mit Behandlungsauswahl', 'Therapeuten-Kalender mit Verfügbarkeiten', 'Digitale Gesundheitsfragebögen', 'Gästeverwaltung mit Vorlieben', 'Automatische Terminerinnerungen per SMS', 'Follow-up Nachrichten nach Behandlungen', 'Geburtstagsnachrichten automatisch', 'Behandlungsdokumentation mit Notizen', 'Buchungslink für Website und Social Media', 'Mehrere Therapeuten verwalten', 'DSGVO-konforme Datenspeicherung', 'Mobil optimiert für Tablet und Desktop'].map((f, i) => (
+                        {['Online-Terminbuchung mit Behandlungsauswahl', 'Therapeuten-Kalender mit Verfügbarkeiten', 'Digitale Gesundheitsfragebögen', 'Gästeverwaltung mit Vorlieben', 'Automatische Terminerinnerungen per WhatsApp', 'Follow-up Nachrichten nach Behandlungen', 'Geburtstagsnachrichten automatisch', 'Behandlungsdokumentation mit Notizen', 'Buchungslink für Website und Social Media', 'Mehrere Therapeuten verwalten', 'DSGVO-konforme Datenspeicherung', 'Mobil optimiert für Tablet und Desktop'].map((f, i) => (
                             <div key={i} className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100"><CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" /><span className="text-gray-700 font-medium">{f}</span></div>
                         ))}
                     </div>
@@ -242,8 +242,8 @@ export default function SpaWellnessSoftwarePage() {
                             <span className="text-sm text-gray-600 block mb-2">Kunden buchen 24/7 online</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>
-                        <Link href="/sms-erinnerungen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">SMS-Erinnerungen</span>
+                        <Link href="/nachrichtenautomatisierung" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
+                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">WhatsApp-Erinnerungen</span>
                             <span className="text-sm text-gray-600 block mb-2">Weniger No-Shows durch Erinnerungen</span>
                             <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
                         </Link>

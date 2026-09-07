@@ -48,7 +48,7 @@ export const funktionenGroups: FunktionenNavGroup[] = [
       {
         href: "/nachrichtenautomatisierung",
         label: "Nachrichten",
-        desc: "E-Mail und SMS automatisiert",
+        desc: "WhatsApp und E-Mail automatisiert",
         icon: Bell,
         color: "text-purple-600 bg-purple-100",
       },

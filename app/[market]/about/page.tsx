@@ -15,28 +15,28 @@ const icons = [Heart, ShieldCheck, Users, MapPin] as const;
 const trAbout = {
   metaTitle: "Treatflow Hakkında",
   metaDescription:
-    "Treatflow, güzellik stüdyoları için hepsi bir arada yazılımdır. Avusturya'da geliştirildi, AB sunucularında barındırılıyor.",
+    "Treatflow, güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımıdır. Avusturya'da geliştirilir, veriler AB sunucularında KVKK kapsamında saklanır.",
   eyebrow: "Hakkımızda",
-  title: "Stüdyolara zamanlarını geri veren yazılım",
+  title: "Salonlara zaman kazandıran yazılım",
   subtitle:
-    "Treatflow basit bir gözlemle başladı: güzellik profesyonelleri müşterileri yerine yönetim işlerine çok fazla zaman harcıyor. Bunu değiştirmeye karar verdik – randevuları, müşterileri, formları, dokümantasyonu ve ödemeleri bir araya getiren tek bir uygulama ile.",
-  valuesTitle: "Neyi savunuyoruz",
+    "Treatflow basit bir gözlemle başladı: güzellik ve estetik ekipleri müşteriden çok evrak, WhatsApp ve takvim karmaşasına zaman harcıyor. Bunu değiştirmek için randevuyu, müşteri takibini, onam formlarını, işlem kayıtlarını ve ödemeyi tek uygulamada birleştirdik.",
+  valuesTitle: "Ne için duruyoruz",
   values: [
     {
-      title: "Stüdyolar için tasarlandı",
-      desc: "Güzellik profesyonelleriyle el ele inşa ediyoruz – her özellik gerçek, günlük bir sorunu çözüyor.",
+      title: "Salonlar için tasarlandı",
+      desc: "Özellikleri güzellik ve medikal estetik ekipleriyle birlikte geliştiriyoruz – her biri günlük bir sorunu çözer.",
     },
     {
-      title: "Gizlilik öncelikli",
-      desc: "AB sunucularında barındırma. Verileriniz ve müşterilerinizin verileri korunuyor.",
+      title: "KVKK ve gizlilik",
+      desc: "Veriler AB sunucularında saklanır. Sizin ve müşterilerinizin datası korunur.",
     },
     {
-      title: "Kişisel destek",
-      desc: "Güzellik sektörünü tanıyan gerçek insanlar – kurulum ve Treatflow'dan en iyi şekilde yararlanmanız için yardım ederler.",
+      title: "Gerçek insan desteği",
+      desc: "Güzellik sektörünü bilen ekip – kurulumdan günlük kullanıma kadar yanınızdayız. Türkçe destek.",
     },
     {
-      title: "Avusturya'da üretildi",
-      desc: "Avrupa'da geliştirildi ve destekleniyor, Avrupa ve ötesindeki stüdyolar için.",
+      title: "Avusturya'da geliştirildi",
+      desc: "Avrupa'da üretilir ve desteklenir; Türkiye'deki salonlar ve klinikler için yerelleştirilir.",
     },
   ],
   ctaLabel: "Ücretsiz deneyin",
@@ -128,7 +128,7 @@ export default async function AboutPage({
         <div className="max-w-5xl mx-auto relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[16/9]">
           <Image
             src="/images/lifestyle/ueber-uns-studio-interior.png"
-            alt="Modern beauty studio interior"
+            alt={lang === "tr" ? "Modern bir güzellik salonu iç mekanı" : "Modern beauty studio interior"}
             fill
             sizes="(max-width: 1024px) 100vw, 1024px"
             className="object-cover object-center"

@@ -147,7 +147,7 @@ const comparisonRows = [
     shoreOk: true,
   },
   {
-    feature: 'SMS-Erinnerungen',
+    feature: 'WhatsApp-Erinnerungen',
     treatflow: 'Integriert',
     shore: 'Integriert',
     treatflowOk: true,
@@ -631,10 +631,10 @@ export default function TreatflowVsShore() {
                 </Link>{' '}
                 und automatische{' '}
                 <Link
-                  href="/sms-erinnerungen-kosmetikstudio"
+                  href="/nachrichtenautomatisierung"
                   className="text-indigo-600 hover:underline"
                 >
-                  SMS-Erinnerungen
+                  WhatsApp-Erinnerungen
                 </Link>{' '}
                 - alles zu einem festen Monatspreis ohne versteckte Kosten.
               </p>

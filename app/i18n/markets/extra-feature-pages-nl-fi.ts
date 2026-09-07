@@ -276,24 +276,24 @@ const pages: Record<ExtraFeatureKey, Record<NlFiLang, PageContent>> = {
   messaging: {
     nl: {
       eyebrow: "Berichten & herinneringen",
-      title: "Minder no-shows met sms- en e-mailautomatisering",
+      title: "Minder no-shows met WhatsApp- en e-mailautomatisering",
       subtitle:
-        "Stuur boekingsbevestigingen, afspraakherinneringen en follow-ups automatisch – zodat je agenda vol blijft zonder handmatig WhatsApp-gedoe.",
+        "Stuur boekingsbevestigingen, afspraakherinneringen en follow-ups automatisch – via WhatsApp en e-mail, zonder klanten handmatig te achtervolgen.",
       bullets: [
         "Automatische boekingsbevestigingen",
-        "Sms- en e-mailherinneringen vóór afspraken",
+        "WhatsApp- en e-mailherinneringen vóór afspraken",
         "Follow-ups na behandelingen",
         "Verjaardags- en reactivatieberichten",
       ],
       image: {
         src: "/images/lifestyle/sms-erinnerung-studio.png",
-        alt: "Klant ontvangt een sms-afspraakherinnering van een schoonheidssalon",
+        alt: "Klant ontvangt een WhatsApp-afspraakherinnering van een schoonheidssalon",
       },
       features: [
         {
           icon: Bell,
           title: "Afspraakherinneringen",
-          desc: "Verminder no-shows met timed sms- en e-mailherinneringen.",
+          desc: "Verminder no-shows met timed WhatsApp- en e-mailherinneringen.",
         },
         {
           icon: Mail,
@@ -317,7 +317,7 @@ const pages: Record<ExtraFeatureKey, Record<NlFiLang, PageContent>> = {
         },
         {
           icon: Smartphone,
-          title: "Sms & e-mail",
+          title: "WhatsApp & e-mail",
           desc: "Gebruik het juiste kanaal voor urgentie en detail.",
         },
       ],
@@ -327,24 +327,24 @@ const pages: Record<ExtraFeatureKey, Record<NlFiLang, PageContent>> = {
     },
     fi: {
       eyebrow: "Viestintä & muistutukset",
-      title: "Vähemmän no-show’ta SMS- ja sähköpostiautomaatiolla",
+      title: "Vähemmän no-show’ta WhatsApp- ja sähköpostiautomaatiolla",
       subtitle:
-        "Lähetä varausvahvistukset, ajanmuistutukset ja seurannat automaattisesti – jotta kalenterisi pysyy täynnä ilman manuaalista WhatsApp-jahtia.",
+        "Lähetä varausvahvistukset, ajanmuistutukset ja seurannat automaattisesti – WhatsAppilla ja sähköpostilla, ilman manuaalista jahtia.",
       bullets: [
         "Automaattiset varausvahvistukset",
-        "SMS- ja sähköpostimuistutukset ennen aikoja",
+        "WhatsApp- ja sähköpostimuistutukset ennen aikoja",
         "Seurannat hoitojen jälkeen",
         "Syntymäpäivä- ja uudelleenaktivointiviestit",
       ],
       image: {
         src: "/images/lifestyle/sms-erinnerung-studio.png",
-        alt: "Asiakas vastaanottaa ajanmuistutus-SMS:n kauneushoitolasta",
+        alt: "Asiakas vastaanottaa ajanmuistutuksen WhatsAppilla kauneushoitolasta",
       },
       features: [
         {
           icon: Bell,
           title: "Ajanmuistutukset",
-          desc: "Vähennä no-show’ta ajoitetuilla SMS- ja sähköpostimuistutuksilla.",
+          desc: "Vähennä no-show’ta ajoitetuilla WhatsApp- ja sähköpostimuistutuksilla.",
         },
         {
           icon: Mail,
@@ -368,7 +368,7 @@ const pages: Record<ExtraFeatureKey, Record<NlFiLang, PageContent>> = {
         },
         {
           icon: Smartphone,
-          title: "SMS & sähköposti",
+          title: "WhatsApp & sähköposti",
           desc: "Käytä oikeaa kanavaa kiireellisyyden ja yksityiskohtien mukaan.",
         },
       ],

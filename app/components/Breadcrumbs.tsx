@@ -9,12 +9,17 @@ interface BreadcrumbItem {
 interface BreadcrumbsProps {
     items: BreadcrumbItem[];
     homeHref?: string;
+    homeLabel?: string;
 }
 
 const BASE_URL = 'https://www.treatflow.io';
 
-export function generateBreadcrumbSchema(items: BreadcrumbItem[], homeHref = '/') {
-    const allItems = [{ label: 'Home', href: homeHref }, ...items];
+export function generateBreadcrumbSchema(
+    items: BreadcrumbItem[],
+    homeHref = '/',
+    homeLabel = 'Home'
+) {
+    const allItems = [{ label: homeLabel, href: homeHref }, ...items];
     return {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
@@ -27,14 +32,18 @@ export function generateBreadcrumbSchema(items: BreadcrumbItem[], homeHref = '/'
     };
 }
 
-export default function Breadcrumbs({ items, homeHref = '/' }: BreadcrumbsProps) {
+export default function Breadcrumbs({
+    items,
+    homeHref = '/',
+    homeLabel = 'Home',
+}: BreadcrumbsProps) {
     return (
         <nav aria-label="Breadcrumb" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-4 sm:pb-6">
             <ol className="flex items-center gap-1.5 text-sm text-gray-500 flex-wrap">
                 <li>
                     <Link href={homeHref} className="flex items-center hover:text-indigo-600 transition-colors">
                         <Home className="h-3.5 w-3.5" />
-                        <span className="sr-only">Home</span>
+                        <span className="sr-only">{homeLabel}</span>
                     </Link>
                 </li>
                 {items.map((item, index) => (

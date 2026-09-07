@@ -672,10 +672,10 @@ export default function TreatflowVsFresha() {
                 </Link>{' '}
                 und automatische{' '}
                 <Link
-                  href="/sms-erinnerungen-kosmetikstudio"
+                  href="/nachrichtenautomatisierung"
                   className="text-indigo-600 hover:underline"
                 >
-                  SMS-Erinnerungen
+                  WhatsApp-Erinnerungen
                 </Link>{' '}
                 - alles zu einem festen Monatspreis ohne versteckte Kosten.
               </p>

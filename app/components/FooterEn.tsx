@@ -15,6 +15,7 @@ import {
 import { EN_SLUGS } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
 import CookieSettingsLink from "./CookieSettingsLink";
+import { getUiChrome } from "../i18n/markets/ui-chrome";
 
 type NavLang = "en" | "nl" | "fi" | "tr";
 
@@ -83,16 +84,16 @@ const featureLabels: Record<
   },
   tr: {
     calendar: "Randevu takvimi",
-    vouchers: "Hediye kuponları",
-    booking: "Online rezervasyon",
-    records: "Müşteri kartotek",
+    vouchers: "Hediye çeki",
+    booking: "Online randevu",
+    records: "Müşteri takibi",
     forms: "Onam formları",
-    docs: "İşlem dokümantasyonu",
-    messaging: "Mesajlar",
+    docs: "İşlem kayıtları",
+    messaging: "Hatırlatmalar",
     integrations: "Entegrasyonlar",
     features: "Tüm özellikler",
     shop: "Mağaza",
-    website: "Stüdyo web sitesi",
+    website: "Salon web sitesi",
   },
 };
 
@@ -171,6 +172,7 @@ export default function FooterEn({
   const ctaExternal = isExternalCta(market);
   const ctaLabel = ctaExternal ? dict.footer.tryFree : dict.footer.requestAccess;
   const loginUrl = APP_LOGIN_BY_MARKET[market] ?? APP_LOGIN_BY_MARKET.en;
+  const chrome = getUiChrome(market);
 
   const featureLinks = [
     { href: `${base}/${EN_SLUGS["appointment-calendar"]}`, label: labels.calendar },
@@ -247,20 +249,22 @@ export default function FooterEn({
                   {dict.footer.contact}
                 </Link>
               </li>
-              <li>
-                <Link
-                  href={`${base}/${EN_SLUGS.news}`}
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  {dict.nav.news}
-                </Link>
-              </li>
+              {market !== "tr" && (
+                <li>
+                  <Link
+                    href={`${base}/${EN_SLUGS.news}`}
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    {dict.nav.news}
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link
                   href={`${base}/${EN_SLUGS["try-forms"]}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Try sample forms
+                  {chrome.trySampleForms}
                 </Link>
               </li>
               <li>
@@ -268,7 +272,7 @@ export default function FooterEn({
                   href={`${base}/${EN_SLUGS["software-comparison"]}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Software comparison
+                  {chrome.softwareComparison}
                 </Link>
               </li>
               <li>
@@ -276,7 +280,7 @@ export default function FooterEn({
                   href={`${base}/${EN_SLUGS["treatflow-vs-fresha"]}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Treatflow vs Fresha
+                  {chrome.vsFresha}
                 </Link>
               </li>
               <li>
@@ -284,7 +288,7 @@ export default function FooterEn({
                   href={`${base}/${EN_SLUGS["treatflow-vs-treatwell"]}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Treatflow vs Treatwell
+                  {chrome.vsTreatwell}
                 </Link>
               </li>
               <li>
@@ -337,7 +341,7 @@ export default function FooterEn({
               </li>
               <li>
                 <CookieSettingsLink
-                  label="Cookie settings"
+                  label={chrome.cookieSettings}
                   className="text-gray-400 hover:text-white transition-colors bg-transparent border-0 p-0 cursor-pointer text-sm"
                 />
               </li>
