@@ -45,7 +45,7 @@ export function isEnglishPathname(pathname: string): boolean {
 export const marketLabels: Record<Market, string> = {
   de: "Deutsch",
   en: "English",
-  tr: "Turkce",
+  tr: "Türkçe",
   us: "English",
   nl: "English",
   uk: "English",

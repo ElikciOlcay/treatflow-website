@@ -65,7 +65,7 @@ export function localizeProductUpdate(update: ProductUpdate, lang: 'de' | 'en'):
     };
 }
 
-export function formatPublishedDate(isoDate: string, locale: 'de-DE' | 'en-GB' = 'de-DE') {
+export function formatPublishedDate(isoDate: string, locale: 'de-DE' | 'en-GB' | 'tr-TR' = 'de-DE') {
     return new Date(isoDate).toLocaleDateString(locale, {
         day: 'numeric',
         month: 'long',

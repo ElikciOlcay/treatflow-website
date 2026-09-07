@@ -16,9 +16,13 @@ import { EN_SLUGS } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
 import CookieSettingsLink from "./CookieSettingsLink";
 
-type NavLang = "en" | "nl" | "fi";
+type NavLang = "en" | "nl" | "fi" | "tr";
 
-function toNavLang(_market: PrefixedMarket): NavLang {
+function toNavLang(market: PrefixedMarket): NavLang {
+  const m = market as string;
+  if (m === "nl") return "nl";
+  if (m === "fi") return "fi";
+  if (m === "tr") return "tr";
   return "en";
 }
 
@@ -77,6 +81,19 @@ const featureLabels: Record<
     shop: "Kauppa",
     website: "Studion verkkosivusto",
   },
+  tr: {
+    calendar: "Randevu takvimi",
+    vouchers: "Hediye kuponları",
+    booking: "Online rezervasyon",
+    records: "Müşteri kartotek",
+    forms: "Onam formları",
+    docs: "İşlem dokümantasyonu",
+    messaging: "Mesajlar",
+    integrations: "Entegrasyonlar",
+    features: "Tüm özellikler",
+    shop: "Mağaza",
+    website: "Stüdyo web sitesi",
+  },
 };
 
 const industryLabels: Record<NavLang, Record<IndustryPageKey, string>> = {
@@ -112,6 +129,17 @@ const industryLabels: Record<NavLang, Record<IndustryPageKey, string>> = {
     "lash-studio-software": "Ripsistudiot",
     "spa-wellness-software": "Spa & wellness",
     "massage-software": "Hierontapalvelut",
+  },
+  tr: {
+    "beauty-salon-software": "Güzellik salonları",
+    "laser-hair-removal-software": "Lazer epilasyon",
+    "permanent-makeup-software": "Kalıcı makyaj",
+    "aesthetic-clinic-software": "Estetik klinikleri",
+    "tattoo-studio-software": "Dövme stüdyoları",
+    "nail-salon-software": "Tırnak salonları",
+    "lash-studio-software": "Kirpik stüdyoları",
+    "spa-wellness-software": "Spa ve wellness",
+    "massage-software": "Masaj merkezleri",
   },
 };
 

@@ -39,9 +39,13 @@ import {
 import { EN_SLUGS } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
 
-type NavLang = "en" | "nl" | "fi";
+type NavLang = "en" | "nl" | "fi" | "tr";
 
-function toNavLang(_market: PrefixedMarket): NavLang {
+function toNavLang(market: PrefixedMarket): NavLang {
+  const m = market as string;
+  if (m === "nl") return "nl";
+  if (m === "fi") return "fi";
+  if (m === "tr") return "tr";
   return "en";
 }
 
@@ -49,9 +53,9 @@ type L10n = Record<NavLang, string>;
 type FeatureGroupId = "appointments" | "clients" | "sales";
 
 const featureGroupTitles: Record<FeatureGroupId, L10n> = {
-  appointments: { en: "Appointments", nl: "Afspraken", fi: "Ajanvaraukset" },
-  clients: { en: "Clients", nl: "Klanten", fi: "Asiakkaat" },
-  sales: { en: "Sales", nl: "Verkoop", fi: "Myynti" },
+  appointments: { en: "Appointments", nl: "Afspraken", fi: "Ajanvaraukset", tr: "Randevular" },
+  clients: { en: "Clients", nl: "Klanten", fi: "Asiakkaat", tr: "Müşteriler" },
+  sales: { en: "Sales", nl: "Verkoop", fi: "Myynti", tr: "Satış" },
 };
 
 const featureGroupOrder: FeatureGroupId[] = ["appointments", "clients", "sales"];
@@ -71,11 +75,13 @@ const featureDefs: {
       en: "Appointment calendar",
       nl: "Afsprakenkalender",
       fi: "Ajanvarauskalenteri",
+      tr: "Randevu takvimi",
     },
     desc: {
       en: "Daily, weekly and monthly views",
       nl: "Dag-, week- en maandweergave",
       fi: "Päivä-, viikko- ja kuukausinäkymät",
+      tr: "Günlük, haftalık ve aylık görünüm",
     },
     icon: Calendar,
     color: "text-indigo-600 bg-indigo-100",
@@ -87,11 +93,13 @@ const featureDefs: {
       en: "Online booking",
       nl: "Online boeken",
       fi: "Verkkovaraus",
+      tr: "Online rezervasyon",
     },
     desc: {
       en: "Personal booking link 24/7",
       nl: "Persoonlijke boekingslink 24/7",
       fi: "Henkilökohtainen varauslinkki 24/7",
+      tr: "Kişisel rezervasyon linki 7/24",
     },
     icon: Link2,
     color: "text-rose-600 bg-rose-100",
@@ -103,11 +111,13 @@ const featureDefs: {
       en: "Messaging",
       nl: "Berichten",
       fi: "Viestintä",
+      tr: "Mesajlar",
     },
     desc: {
       en: "Automated email and SMS",
       nl: "Geautomatiseerde e-mail en sms",
       fi: "Automaattiset sähköpostit ja tekstiviestit",
+      tr: "Otomatik e-posta ve SMS",
     },
     icon: Bell,
     color: "text-purple-600 bg-purple-100",
@@ -119,11 +129,13 @@ const featureDefs: {
       en: "Client records",
       nl: "Klantendossiers",
       fi: "Asiakaskortistot",
+      tr: "Müşteri kartotek",
     },
     desc: {
       en: "History, notes and photos",
       nl: "Geschiedenis, notities en foto's",
       fi: "Historia, muistiinpanot ja kuvat",
+      tr: "Geçmiş, notlar ve fotoğraflar",
     },
     icon: Users,
     color: "text-emerald-600 bg-emerald-100",
@@ -135,11 +147,13 @@ const featureDefs: {
       en: "Consultation & consent",
       nl: "Formulieren",
       fi: "Lomakkeet",
+      tr: "Onam formları",
     },
     desc: {
       en: "Digital intake and consent",
       nl: "Digitale anamnese en toestemming",
       fi: "Digitaalinen anamneesi ja suostumus",
+      tr: "Dijital anamnez ve onam",
     },
     icon: ClipboardCheck,
     color: "text-orange-600 bg-orange-100",
@@ -151,11 +165,13 @@ const featureDefs: {
       en: "Treatment documentation",
       nl: "Behandelingsdocumentatie",
       fi: "Hoitodokumentaatio",
+      tr: "İşlem dokümantasyonu",
     },
     desc: {
       en: "Document treatments digitally",
       nl: "Documenteer behandelingen digitaal",
       fi: "Dokumentoi hoidot digitaalisesti",
+      tr: "İşlemleri dijital olarak belgeleyin",
     },
     icon: FileText,
     color: "text-blue-600 bg-blue-100",
@@ -167,11 +183,13 @@ const featureDefs: {
       en: "Vouchers",
       nl: "Cadeaubonnen",
       fi: "Lahjakortit",
+      tr: "Hediye kuponları",
     },
     desc: {
       en: "Sell, redeem and track balances",
       nl: "Verkoop, verzilver en volg saldi",
       fi: "Myy, lunasta ja seuraa saldoja",
+      tr: "Satış, kullanım ve bakiye takibi",
     },
     icon: Gift,
     color: "text-purple-600 bg-purple-100",
@@ -183,11 +201,13 @@ const featureDefs: {
       en: "Shop",
       nl: "Shop",
       fi: "Kauppa",
+      tr: "Mağaza",
     },
     desc: {
       en: "Product sales and inventory",
       nl: "Productverkoop en voorraad",
       fi: "Tuotemyynti ja varasto",
+      tr: "Ürün satışı ve stok",
     },
     icon: ShoppingBag,
     color: "text-amber-600 bg-amber-100",
@@ -199,11 +219,13 @@ const featureDefs: {
       en: "Integrations",
       nl: "Integraties",
       fi: "Integraatiot",
+      tr: "Entegrasyonlar",
     },
     desc: {
       en: "Calendar, accounting and more",
       nl: "Agenda, boekhouding en meer",
       fi: "Kalenteri, kirjanpito ja muuta",
+      tr: "Takvim, muhasebe ve daha fazlası",
     },
     icon: Plug,
     color: "text-indigo-600 bg-indigo-100",
@@ -223,11 +245,13 @@ const industryDefs: {
       en: "Beauty salons",
       nl: "Beauty salons",
       fi: "Kauneussalongit",
+      tr: "Güzellik salonları",
     },
     desc: {
       en: "All-in-one studio software",
       nl: "All-in-one studiosoftware",
       fi: "All-in-one-studio-ohjelmisto",
+      tr: "Hepsi bir arada stüdyo yazılımı",
     },
     icon: Sparkles,
     color: "text-indigo-600 bg-indigo-100",
@@ -238,11 +262,13 @@ const industryDefs: {
       en: "Laser hair removal",
       nl: "Laserontharing",
       fi: "Laserkarvanpoisto",
+      tr: "Lazer epilasyon",
     },
     desc: {
       en: "Session tracking and consent",
       nl: "Sessies en toestemmingen",
       fi: "Käyntiseuranta ja suostumukset",
+      tr: "Seans takibi ve onam",
     },
     icon: Zap,
     color: "text-blue-600 bg-blue-100",
@@ -253,11 +279,13 @@ const industryDefs: {
       en: "Permanent makeup",
       nl: "Permanente make-up",
       fi: "Pysyvä meikki",
+      tr: "Kalıcı makyaj",
     },
     desc: {
       en: "PMU and microblading",
       nl: "PMU en microblading",
       fi: "PMU ja microblading",
+      tr: "PMU ve microblading",
     },
     icon: Palette,
     color: "text-rose-600 bg-rose-100",
@@ -268,11 +296,13 @@ const industryDefs: {
       en: "Aesthetic clinics",
       nl: "Esthetische klinieken",
       fi: "Esteettiset klinikat",
+      tr: "Estetik klinikleri",
     },
     desc: {
       en: "Documentation and patient records",
       nl: "Documentatie en patiëntendossiers",
       fi: "Dokumentointi ja potilaskortistot",
+      tr: "Dokümantasyon ve hasta kayıtları",
     },
     icon: Stethoscope,
     color: "text-teal-600 bg-teal-100",
@@ -283,11 +313,13 @@ const industryDefs: {
       en: "Tattoo studios",
       nl: "Tattoostudio's",
       fi: "Tatuointistudiot",
+      tr: "Dövme stüdyoları",
     },
     desc: {
       en: "Consent and bookings",
       nl: "Toestemmingen en boekingen",
       fi: "Suostumukset ja varaukset",
+      tr: "Onam ve rezervasyonlar",
     },
     icon: Pen,
     color: "text-gray-600 bg-gray-200",
@@ -298,11 +330,13 @@ const industryDefs: {
       en: "Nail salons",
       nl: "Nagelsalons",
       fi: "Kynsisalongit",
+      tr: "Tırnak salonları",
     },
     desc: {
       en: "Appointments and preferences",
       nl: "Afspraken en voorkeuren",
       fi: "Ajanvaraukset ja mieltymykset",
+      tr: "Randevular ve tercihler",
     },
     icon: Gem,
     color: "text-pink-600 bg-pink-100",
@@ -313,11 +347,13 @@ const industryDefs: {
       en: "Lash studios",
       nl: "Wimperstudio's",
       fi: "Ripsistudiot",
+      tr: "Kirpik stüdyoları",
     },
     desc: {
       en: "Extensions and refill planning",
       nl: "Extensions en refill-planning",
       fi: "Pidennysten ja täyttöjen suunnittelu",
+      tr: "Uzatma ve dolgu planlaması",
     },
     icon: Eye,
     color: "text-violet-600 bg-violet-100",
@@ -328,11 +364,13 @@ const industryDefs: {
       en: "Spa & wellness",
       nl: "Spa & wellness",
       fi: "Spa & wellness",
+      tr: "Spa ve wellness",
     },
     desc: {
       en: "Guest management and bookings",
       nl: "Gastbeheer en boekingen",
       fi: "Vierashallinta ja varaukset",
+      tr: "Misafir yönetimi ve rezervasyonlar",
     },
     icon: Waves,
     color: "text-cyan-600 bg-cyan-100",
@@ -343,11 +381,13 @@ const industryDefs: {
       en: "Massage practices",
       nl: "Massagepraktijken",
       fi: "Hierontapalvelut",
+      tr: "Masaj merkezleri",
     },
     desc: {
       en: "Bookings and health questionnaires",
       nl: "Boekingen en gezondheidsvragenlijsten",
       fi: "Varaukset ja terveyskyselyt",
+      tr: "Rezervasyonlar ve sağlık anketleri",
     },
     icon: Hand,
     color: "text-amber-600 bg-amber-100",
@@ -358,6 +398,7 @@ const allFeaturesLabel: L10n = {
   en: "View all features",
   nl: "Bekijk alle functies",
   fi: "Näytä kaikki ominaisuudet",
+  tr: "Tüm özellikleri gör",
 };
 
 export default function NavigationEn({
