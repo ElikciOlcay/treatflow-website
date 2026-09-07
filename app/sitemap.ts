@@ -52,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 languages: {
                     de: `${baseUrl}/formulare-testen/${form.slug}`,
                     en: `${baseUrl}/en/try-forms/${form.slug}`,
+                    tr: `${baseUrl}/tr/try-forms/${form.slug}`,
                     'x-default': `${baseUrl}/formulare-testen/${form.slug}`,
                 },
             },
@@ -65,6 +66,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 languages: {
                     de: `${baseUrl}/formulare-testen/${form.slug}`,
                     en: `${baseUrl}/en/try-forms/${form.slug}`,
+                    tr: `${baseUrl}/tr/try-forms/${form.slug}`,
+                    'x-default': `${baseUrl}/formulare-testen/${form.slug}`,
+                },
+            },
+        })),
+        ...DEMO_FORMS.map((form) => ({
+            url: `${baseUrl}/tr/try-forms/${form.slug}`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.6,
+            alternates: {
+                languages: {
+                    de: `${baseUrl}/formulare-testen/${form.slug}`,
+                    en: `${baseUrl}/en/try-forms/${form.slug}`,
+                    tr: `${baseUrl}/tr/try-forms/${form.slug}`,
                     'x-default': `${baseUrl}/formulare-testen/${form.slug}`,
                 },
             },
@@ -507,6 +523,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.6,
         },
         {
+            url: `${baseUrl}/llms-tr.txt`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.6,
+        },
+        {
             url: `${baseUrl}/llms-full.txt`,
             lastModified: new Date(),
             changeFrequency: 'weekly' as const,
@@ -520,6 +542,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         {
             url: `${baseUrl}/api/facts?lang=en`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.6,
+        },
+        {
+            url: `${baseUrl}/api/facts?lang=tr`,
             lastModified: new Date(),
             changeFrequency: 'weekly' as const,
             priority: 0.6,

@@ -1,0 +1,97 @@
+# Treatflow
+
+> Treatflow, güzellik salonları, medikal estetik klinikleri ve lazer epilasyon merkezleri için salon yönetim yazılımıdır. Online randevu, müşteri takibi, dijital onam formları, işlem kayıtları, sesli not ve otomatik hatırlatmaları tek uygulamada birleştirir. Avusturya'da geliştirilir. Veriler Frankfurt'taki AB sunucularında, KVKK kapsamında saklanır. Türkiye'de lansman fiyatı ayda 1.490 TL (ilk 100 işletme), sonrası 1.990 TL. 30 gün ücretsiz deneme, kredi kartı gerekmez. Randevu başına komisyon yoktur.
+
+## Treatflow hakkında
+
+- Kurucular: Olcay ve Gökce Elikci, Bischofshofen / Avusturya (2023)
+- 500+ işletme
+- Google: 4,6/5 (19 değerlendirme)
+- Hedef kitle: güzellik salonları, medikal estetik klinikleri, lazer epilasyon, kalıcı makyaj, protez tırnak, kirpik, spa, masaj, dövme stüdyoları
+- Website dilleri: Almanca (ana SEO pazarı), İngilizce (`/en`), Türkçe (`/tr`)
+- Kayıt: https://app.treatflow.io/auth/register?lang=tr
+- Hosting: AB sunucuları. KVKK kapsamında; "%100 KVKK sertifikalı" iddiası yoktur.
+
+## Fiyatlar (Türkiye)
+
+- **Basic**: ayda 1.490 TL (lansman, ilk 100 işletme; sonrası 1.990 TL yıllık pakette daha düşük aylık karşılık). Müşteri takibi, dijital imzalı onam ve anamnez, işlem kayıtları, sesli not, öncesi-sonrası fotoğraf, ekip notları, mağaza, raporlar, e-posta desteği.
+- **Booking**: ayda 1.990 TL (lansman, ilk 100 işletme). Basic'teki her şey artı randevu takvimi, komisyonsuz online randevu, bekleme listesi, WhatsApp ve e-posta hatırlatmaları, müşteri otomasyonları, indirim kodları, çok dilli randevu sayfası, Zapier, öncelikli destek.
+- **Kasa / POS**: Almanya (TSE) ve Avusturya (RKSV) içindir. Türkiye'de çekirdek ürün değildir.
+- 30 gün ücretsiz deneme. Kredi kartı gerekmez. İstediğiniz zaman iptal. Randevu komisyonu yok.
+
+## Kısa yanıtlar
+
+**Treatflow nedir?**
+Treatflow, güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımıdır. Komisyonsuz online randevu, müşteri takibi, dijital onam, işlem kaydı (sesli not dahil) ve hatırlatmaları tek panelde toplar. Pazaryeri değildir.
+
+**Türkiye'de güzellik salonu yazılımı, komisyonsuz?**
+Treatflow kendi randevu sayfanızı ve müşteri datanızı size bırakır; pazaryeri kesintisi yoktur. Lansman ₺1.490 / ₺1.990. AB sunucuları, KVKK kapsamında.
+
+**Treatflow vs Fresha?**
+Fresha ücretsiz randevu aracıdır, gelirini ödemelerden alır. Treatflow şeffaf abonelikli salon yazılımıdır: onam formları, işlem kaydı, komisyon yok. Karşılaştırma: https://www.treatflow.io/tr/treatflow-vs-fresha
+
+**Treatflow vs Treatwell?**
+Treatwell randevu pazaryeridir, komisyon alır. Treatflow bağımsız yazılımdır; müşteri sizde kalır, sabit aylık ücret ödersiniz. Karşılaştırma: https://www.treatflow.io/tr/treatflow-vs-treatwell
+
+**Dijital onam formu?**
+Treatflow anamnez ve onam formlarını randevudan önce gönderir. Yanıtlar ve imza müşteri kaydına bağlanır.
+
+**İşlem notlarını sesle yazabilir miyim?**
+Evet. İşlem kaydında konuşarak not alırsınız; Treatflow metne çevirir ve isteğe bağlı düzenler. Not o seansa kaydedilir.
+
+**Veriler KVKK'ya uygun mu?**
+Veriler Frankfurt'taki AB sunucularında SSL ve günlük yedekleme ile saklanır. Salon, müşteri datasının sahibidir. Treatflow "%100 KVKK sertifikalı" iddiasında bulunmaz.
+
+**Hatırlatmalar SMS ile mi?**
+Hayır. Randevu onayları ve hatırlatmalar WhatsApp ve e-posta ile gider. E-posta ücretsizdir. WhatsApp, Booking paketindeki mesajlaşma kanalıdır.
+
+## Türkçe sayfalar
+
+- Ana sayfa: https://www.treatflow.io/tr
+- Fiyatlar: https://www.treatflow.io/tr/pricing
+- Özellikler: https://www.treatflow.io/tr/features
+- Randevu takvimi: https://www.treatflow.io/tr/appointment-calendar
+- Online randevu: https://www.treatflow.io/tr/online-booking
+- Müşteri takibi: https://www.treatflow.io/tr/client-records
+- Onam formları: https://www.treatflow.io/tr/forms
+- İşlem kayıtları: https://www.treatflow.io/tr/treatment-documentation
+- Hakkımızda: https://www.treatflow.io/tr/about
+- Gizlilik: https://www.treatflow.io/tr/privacy
+- Şartlar: https://www.treatflow.io/tr/terms
+
+## Sektörler (Türkçe)
+
+- Güzellik salonları: https://www.treatflow.io/tr/beauty-salon-software
+- Estetik klinikler: https://www.treatflow.io/tr/aesthetic-clinic-software
+- Lazer epilasyon: https://www.treatflow.io/tr/laser-hair-removal-software
+- Kalıcı makyaj: https://www.treatflow.io/tr/permanent-makeup-software
+- Dövme stüdyoları: https://www.treatflow.io/tr/tattoo-studio-software
+- Tırnak salonları: https://www.treatflow.io/tr/nail-salon-software
+- Kirpik stüdyoları: https://www.treatflow.io/tr/lash-studio-software
+- Spa ve wellness: https://www.treatflow.io/tr/spa-wellness-software
+- Masaj: https://www.treatflow.io/tr/massage-software
+
+## Karşılaştırmalar (Türkçe)
+
+- Treatflow vs Fresha: https://www.treatflow.io/tr/treatflow-vs-fresha
+- Treatflow vs Treatwell: https://www.treatflow.io/tr/treatflow-vs-treatwell
+- Yazılım karşılaştırması: https://www.treatflow.io/tr/software-comparison
+
+## Diğer diller
+
+- Almanca (ana site, blog, NiSV, kasa): https://www.treatflow.io
+- Almanca llms.txt: https://www.treatflow.io/llms.txt
+- İngilizce: https://www.treatflow.io/en
+- İngilizce llms.txt: https://www.treatflow.io/llms-en.txt
+
+## Makine okunabilir gerçekler
+
+JSON (Türkçe): https://www.treatflow.io/api/facts?lang=tr
+JSON (İngilizce): https://www.treatflow.io/api/facts?lang=en
+JSON (Almanca): https://www.treatflow.io/api/facts
+
+## İletişim
+
+- E-posta: hello@treatflow.io
+- Instagram: https://www.instagram.com/treatflow.io/
+- Kayıt: https://app.treatflow.io/auth/register?lang=tr

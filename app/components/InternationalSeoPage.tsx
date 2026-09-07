@@ -116,8 +116,11 @@ export default function InternationalSeoPage({
     name: content.serviceName,
     description: content.serviceDescription,
     url: `${BASE_URL}${content.canonicalPath}`,
-    serviceType: "Beauty and aesthetic studio management software",
-    areaServed: content.areaServed ?? ["EU"],
+    serviceType:
+      String(locale) === "tr"
+        ? "Güzellik salonu yönetim yazılımı"
+        : "Beauty and aesthetic studio management software",
+    areaServed: content.areaServed ?? (String(locale) === "tr" ? ["TR"] : ["EU"]),
   });
 
   return (

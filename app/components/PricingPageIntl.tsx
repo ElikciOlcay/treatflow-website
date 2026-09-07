@@ -2,10 +2,17 @@ import { CheckCircle, X, ArrowRight, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import PricingSectionIntl from "./PricingSectionIntl";
 import type { PricingIntlCopy } from "@/app/i18n/markets/pricing-intl";
+import { generateFaqSchema } from "@/lib/schema";
 
 export default function PricingPageIntl({ copy }: { copy: PricingIntlCopy }) {
+  const faqSchema = generateFaqSchema(copy.faq.items);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <PricingSectionIntl copy={copy} />
 
       <section className="py-20 bg-gray-50">

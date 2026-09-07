@@ -84,7 +84,7 @@ export default function RootLayout({
     <html lang="de" dir="ltr" suppressHydrationWarning>
       <head>
         <Script id="html-lang-from-path" strategy="beforeInteractive">
-          {`(function(){try{var p=location.pathname;if(p==="/en"||p.indexOf("/en/")===0){document.documentElement.lang="en";}}catch(e){}})();`}
+          {`(function(){try{var p=location.pathname;if(p==="/en"||p.indexOf("/en/")===0){document.documentElement.lang="en";}else if(p==="/tr"||p.indexOf("/tr/")===0){document.documentElement.lang="tr";}}catch(e){}})();`}
         </Script>
         {/* Consent Mode v2: Defaults denied, bevor GTM und Cookiebot laden.
             Cookiebot CMP im GTM aktualisiert die Signale nach der Nutzerwahl. */}
@@ -116,6 +116,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <link rel="alternate" type="application/rss+xml" title="Treatflow Blog RSS Feed" href="/blog/feed.xml" />
         <link rel="alternate" type="text/plain" title="LLM Context" href="/llms.txt" />
         <link rel="alternate" type="text/plain" title="LLM Context (English)" href="/llms-en.txt" hrefLang="en" />
+        <link rel="alternate" type="text/plain" title="LLM Context (Türkçe)" href="/llms-tr.txt" hrefLang="tr" />
       </head>
       <body
         className={`${inter.variable} font-sans antialiased overflow-x-hidden`}

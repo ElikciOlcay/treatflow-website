@@ -19,7 +19,7 @@ const trAbout = {
   eyebrow: "Hakkımızda",
   title: "Salonlara zaman kazandıran yazılım",
   subtitle:
-    "Treatflow basit bir gözlemle başladı: güzellik ve estetik ekipleri müşteriden çok evrak, WhatsApp ve takvim karmaşasına zaman harcıyor. Bunu değiştirmek için randevuyu, müşteri takibini, onam formlarını, işlem kayıtlarını ve ödemeyi tek uygulamada birleştirdik.",
+    "Treatflow basit bir gözlemle başladı: güzellik ve estetik ekipleri müşteriden çok evrak, WhatsApp ve takvim karmaşasına zaman harcıyor. Bunu değiştirmek için randevuyu, müşteri takibini, onam formlarını ve işlem kayıtlarını tek uygulamada birleştirdik.",
   valuesTitle: "Ne için duruyoruz",
   values: [
     {

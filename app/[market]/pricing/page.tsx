@@ -18,6 +18,14 @@ export async function generateMetadata({
     locale: market,
     title: copy.meta.title,
     description: copy.meta.description,
+    keywords:
+      market === "tr"
+        ? [
+            "güzellik salonu yazılımı fiyat",
+            "salon yazılımı fiyatları",
+            "online randevu sistemi fiyat",
+          ]
+        : undefined,
   });
 }
 

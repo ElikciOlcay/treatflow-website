@@ -13,7 +13,7 @@ export default function FeaturesPageEn({ market = "en" }: { market?: PrefixedMar
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Treatflow features",
+    name: market === "tr" ? "Treatflow özellikleri" : "Treatflow features",
     itemListElement: content.cards.map((card, index) => ({
       "@type": "ListItem",
       position: index + 1,

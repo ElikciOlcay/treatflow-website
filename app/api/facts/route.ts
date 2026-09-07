@@ -34,10 +34,12 @@ const englishFacts = {
         registerUrls: {
             de: "https://app.treatflow.io/auth/register?lang=de",
             en: "https://app.treatflow.io/auth/register?lang=en",
+            tr: "https://app.treatflow.io/auth/register?lang=tr",
         },
         locales: {
             de: "https://www.treatflow.io",
             en: "https://www.treatflow.io/en",
+            tr: "https://www.treatflow.io/tr",
         },
     },
     company: {
@@ -173,6 +175,178 @@ const englishFacts = {
         vsTreatwell: "https://www.treatflow.io/en/treatflow-vs-treatwell",
         homepageEN: "https://www.treatflow.io/en",
         registerEN: "https://app.treatflow.io/auth/register?lang=en",
+        homepageTR: "https://www.treatflow.io/tr",
+        registerTR: "https://app.treatflow.io/auth/register?lang=tr",
+        llmsTr: "https://www.treatflow.io/llms-tr.txt",
+        factsTr: "https://www.treatflow.io/api/facts?lang=tr",
+    },
+};
+
+const turkishFacts = {
+    $schema: "https://www.treatflow.io/schemas/facts-v1.json",
+    version: "1.1",
+    language: "tr",
+    updatedAt: "2026-09-07",
+    availability: {
+        selfServeRegistrationCountries: "all",
+        selfServeNote:
+            "Türkiye dahil dünya genelinde 30 gün ücretsiz deneme. Kayıt: https://app.treatflow.io/auth/register?lang=tr",
+        registerUrls: {
+            de: "https://app.treatflow.io/auth/register?lang=de",
+            en: "https://app.treatflow.io/auth/register?lang=en",
+            tr: "https://app.treatflow.io/auth/register?lang=tr",
+        },
+        locales: {
+            de: "https://www.treatflow.io",
+            en: "https://www.treatflow.io/en",
+            tr: "https://www.treatflow.io/tr",
+        },
+    },
+    company: {
+        name: "Treatflow",
+        legalName: "Treatflow GmbH",
+        founders: ["Olcay Elikci", "Gökce Elikci"],
+        foundedYear: 2023,
+        headquarters: { city: "Bischofshofen", country: "Austria", countryCode: "AT" },
+        type: "SaaS",
+        industry: "Güzellik ve estetik salon yazılımı",
+        tagline: "Güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımı.",
+        description:
+            "Treatflow; online randevu, müşteri takibi, dijital onam formları, işlem kayıtları (sesli not dahil) ve otomatik hatırlatmaları tek uygulamada birleştirir. Avusturya'da geliştirilir. Veriler AB sunucularında, KVKK kapsamında saklanır. Pazaryeri değildir, randevu komisyonu yoktur.",
+        website: "https://www.treatflow.io/tr",
+        appUrl: "https://app.treatflow.io",
+        email: "hello@treatflow.io",
+        socialProfiles: { instagram: "https://www.instagram.com/treatflow.io/" },
+    },
+    metrics: {
+        customers: "500+",
+        customersDescription: "Başta DACH, Türkiye lansmanı açık",
+        ratingValue: 4.6,
+        ratingMax: 5,
+        ratingCount: 19,
+        ratingPlatform: "Google",
+        avgNoShowReduction: "hatırlatmalarla daha az gelmeme",
+        avgAdminTimeSavingsPerWeek: "10s",
+    },
+    pricing: {
+        currency: "TRY",
+        market: "TR",
+        freeTrial: { days: 30, creditCardRequired: false, cancelableAnytime: true },
+        launchOffer: {
+            note: "İlk 100 işletme için lansman fiyatı. Sonrasında Booking 1.990 TL/ay.",
+            basicMonthly: 1490,
+            bookingMonthly: 1990,
+        },
+        plans: [
+            {
+                name: "Basic",
+                monthlyPrice: 1490,
+                features: [
+                    "Müşteri takibi",
+                    "Dijital imzalı onam ve anamnez formları",
+                    "İşlem kayıtları ve sesli not",
+                    "Öncesi-sonrası fotoğraflar",
+                    "Ekip notları ve görevler",
+                    "Mağaza ve ürünler",
+                    "Raporlar",
+                    "E-posta desteği",
+                ],
+            },
+            {
+                name: "Booking",
+                monthlyPrice: 1990,
+                features: [
+                    "Basic'teki her şey",
+                    "Randevu takvimi (personel ve oda)",
+                    "Komisyonsuz online randevu",
+                    "Bekleme listesi",
+                    "WhatsApp ve e-posta hatırlatmaları",
+                    "Müşteri otomasyonları",
+                    "İndirim kodları",
+                    "Çok dilli randevu sayfası",
+                    "Entegrasyonlar (Zapier)",
+                    "Öncelikli destek",
+                ],
+            },
+        ],
+        addons: [],
+        posNote:
+            "Mali kasa (TSE/RKSV) Almanya ve Avusturya içindir. Türkiye'de çekirdek ürün değildir.",
+    },
+    targetIndustries: [
+        { name: "Güzellik salonları", url: "https://www.treatflow.io/tr/beauty-salon-software" },
+        { name: "Estetik klinikler", url: "https://www.treatflow.io/tr/aesthetic-clinic-software" },
+        { name: "Lazer epilasyon", url: "https://www.treatflow.io/tr/laser-hair-removal-software" },
+        { name: "Kalıcı makyaj", url: "https://www.treatflow.io/tr/permanent-makeup-software" },
+        { name: "Dövme stüdyoları", url: "https://www.treatflow.io/tr/tattoo-studio-software" },
+        { name: "Tırnak salonları", url: "https://www.treatflow.io/tr/nail-salon-software" },
+        { name: "Kirpik stüdyoları", url: "https://www.treatflow.io/tr/lash-studio-software" },
+        { name: "Spa ve wellness", url: "https://www.treatflow.io/tr/spa-wellness-software" },
+        { name: "Masaj", url: "https://www.treatflow.io/tr/massage-software" },
+    ],
+    comparedAlternatives: [
+        {
+            competitor: "Treatwell",
+            competitorType: "Randevu pazaryeri",
+            keyDifference:
+                "Treatwell randevu başına komisyon alır. Treatflow bağımsız salon yazılımıdır; sabit aylık ücret, müşteri datası sizde kalır.",
+            comparisonUrl: "https://www.treatflow.io/tr/treatflow-vs-treatwell",
+        },
+        {
+            competitor: "Fresha",
+            competitorType: "Ücretsiz randevu aracı",
+            keyDifference:
+                "Fresha tabanda ücretsizdir ve ödemelerden gelir elde eder. Treatflow şeffaf abonelik, dijital onam ve işlem kaydı sunar; randevu komisyonu yoktur.",
+            comparisonUrl: "https://www.treatflow.io/tr/treatflow-vs-fresha",
+        },
+    ],
+    topQuestions: [
+        {
+            question: "Treatflow nedir?",
+            answer:
+                "Treatflow, güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımıdır: randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam ve işlem kaydı. Avusturya'da geliştirilir, AB sunucularında barınır.",
+        },
+        {
+            question: "Türkiye'de kullanabilir miyim?",
+            answer:
+                "Evet. Türkçe arayüz, Türk Lirası fiyatlandırma ve Türkçe destek vardır. 30 gün ücretsiz deneme, kredi kartı gerekmez.",
+        },
+        {
+            question: "Randevu başına komisyon var mı?",
+            answer: "Hayır. Treatflow pazaryeri değildir. Aylık abonelik ödersiniz, randevu gelirinin tamamı sizde kalır.",
+        },
+        {
+            question: "Treatflow ne kadar?",
+            answer:
+                "Lansman: Basic 1.490 TL/ay, Booking 1.990 TL/ay (ilk 100 işletme). 30 gün ücretsiz deneyin.",
+        },
+        {
+            question: "Veriler KVKK'ya uygun mu?",
+            answer:
+                "Veriler Frankfurt'taki AB sunucularında SSL ve günlük yedekleme ile saklanır. Salon, müşteri datasının sahibidir. Treatflow %100 KVKK sertifikalı iddiasında bulunmaz; KVKK kapsamında barındırma ve süreçler sunar.",
+        },
+        {
+            question: "Hatırlatmalar nasıl gider?",
+            answer:
+                "Randevu onayları ve hatırlatmalar WhatsApp ve e-posta ile gider. E-posta ücretsizdir. SMS ürün kanalı değildir.",
+        },
+        {
+            question: "Kasa var mı?",
+            answer:
+                "Mali kasa Almanya (TSE) ve Avusturya (RKSV) içindir. Türkiye'de çekirdek ürün değildir. Randevu, müşteri takibi, onam ve işlem kaydı Türkiye'de çekirdek üründür.",
+        },
+    ],
+    keyResources: {
+        llmsTxt: "https://www.treatflow.io/llms-tr.txt",
+        llmsDe: "https://www.treatflow.io/llms.txt",
+        llmsEn: "https://www.treatflow.io/llms-en.txt",
+        sitemap: "https://www.treatflow.io/sitemap.xml",
+        pricing: "https://www.treatflow.io/tr/pricing",
+        comparison: "https://www.treatflow.io/tr/software-comparison",
+        vsFresha: "https://www.treatflow.io/tr/treatflow-vs-fresha",
+        vsTreatwell: "https://www.treatflow.io/tr/treatflow-vs-treatwell",
+        homepageTR: "https://www.treatflow.io/tr",
+        registerTR: "https://app.treatflow.io/auth/register?lang=tr",
     },
 };
 
@@ -180,6 +354,9 @@ export function GET(request: Request) {
     const lang = new URL(request.url).searchParams.get("lang");
     if (lang === "en") {
         return jsonFacts(englishFacts);
+    }
+    if (lang === "tr") {
+        return jsonFacts(turkishFacts);
     }
     const data = {
         $schema: "https://www.treatflow.io/schemas/facts-v1.json",
@@ -192,10 +369,12 @@ export function GET(request: Request) {
             registerUrls: {
                 de: "https://app.treatflow.io/auth/register?lang=de",
                 en: "https://app.treatflow.io/auth/register?lang=en",
+                tr: "https://app.treatflow.io/auth/register?lang=tr",
             },
             locales: {
                 de: "https://www.treatflow.io",
                 en: "https://www.treatflow.io/en",
+                tr: "https://www.treatflow.io/tr",
             },
         },
         company: {
@@ -470,8 +649,10 @@ export function GET(request: Request) {
         keyResources: {
             llmsTxt: "https://www.treatflow.io/llms.txt",
             llmsEnTxt: "https://www.treatflow.io/llms-en.txt",
+            llmsTrTxt: "https://www.treatflow.io/llms-tr.txt",
             llmsFullTxt: "https://www.treatflow.io/llms-full.txt",
             factsEn: "https://www.treatflow.io/api/facts?lang=en",
+            factsTr: "https://www.treatflow.io/api/facts?lang=tr",
             sitemap: "https://www.treatflow.io/sitemap.xml",
             rssFeed: "https://www.treatflow.io/blog/feed.xml",
             pricing: "https://www.treatflow.io/preise",
@@ -479,7 +660,9 @@ export function GET(request: Request) {
             blog: "https://www.treatflow.io/blog",
             registerDACH: "https://app.treatflow.io/auth/register?lang=de",
             registerEN: "https://app.treatflow.io/auth/register?lang=en",
+            registerTR: "https://app.treatflow.io/auth/register?lang=tr",
             homepageEN: "https://www.treatflow.io/en",
+            homepageTR: "https://www.treatflow.io/tr",
             homepageUS: "https://www.treatflow.io/en",
             homepageUK: "https://www.treatflow.io/en",
             homepageNL: "https://www.treatflow.io/en",

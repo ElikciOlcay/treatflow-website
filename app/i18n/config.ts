@@ -140,7 +140,7 @@ export const MARKET_BY_COUNTRY: Record<string, Market> = {
   TR: "tr",
 };
 
-/** Cookie fuer Sprachpraeferenz (de | en). */
+/** Cookie fuer Sprachpraeferenz (de | en | tr). */
 export const MARKET_COOKIE = "tf_market";
 export const LOCALE_COOKIE = MARKET_COOKIE;
 

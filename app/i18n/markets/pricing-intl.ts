@@ -1007,9 +1007,9 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       ],
     },
     meta: {
-      title: "Fiyatlar",
+      title: "Güzellik Salonu Yazılımı Fiyatları",
       description:
-        "Treatflow fiyatları: Basic ₺1.490, Booking ₺1.990. 30 gün ücretsiz deneyin, kredi kartı gerekmez. Randevu komisyonu yok.",
+        "Treatflow fiyatları Türkiye'de: Basic ₺1.490, Booking ₺1.990 (lansman, ilk 100 işletme). 30 gün ücretsiz deneyin, kredi kartı gerekmez. Randevu komisyonu yok.",
     },
   },
 };

@@ -10,6 +10,7 @@ export default function robots(): MetadataRoute.Robots {
           "/manifest.json",
           "/llms.txt",
           "/llms-en.txt",
+          "/llms-tr.txt",
           "/llms-full.txt",
           "/api/facts",
         ],

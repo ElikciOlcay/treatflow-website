@@ -266,11 +266,13 @@ const BASE_URL = 'https://www.treatflow.io';
 export function demoFormHreflang(slug?: string) {
   const de = slug ? `${BASE_URL}/formulare-testen/${slug}` : `${BASE_URL}/formulare-testen`;
   const en = slug ? `${BASE_URL}/en/try-forms/${slug}` : `${BASE_URL}/en/try-forms`;
+  const tr = slug ? `${BASE_URL}/tr/try-forms/${slug}` : `${BASE_URL}/tr/try-forms`;
   return {
     canonical: de,
     languages: {
       de,
       en,
+      tr,
       'x-default': de,
     },
   };
@@ -279,11 +281,13 @@ export function demoFormHreflang(slug?: string) {
 export function demoFormHreflangEn(slug?: string) {
   const de = slug ? `${BASE_URL}/formulare-testen/${slug}` : `${BASE_URL}/formulare-testen`;
   const en = slug ? `${BASE_URL}/en/try-forms/${slug}` : `${BASE_URL}/en/try-forms`;
+  const tr = slug ? `${BASE_URL}/tr/try-forms/${slug}` : `${BASE_URL}/tr/try-forms`;
   return {
     canonical: en,
     languages: {
       de,
       en,
+      tr,
       'x-default': de,
     },
   };

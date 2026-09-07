@@ -23,6 +23,18 @@ export async function generateMetadata({
     locale: market,
     title: meta.title,
     description: meta.description,
+    keywords:
+      market === "tr"
+        ? [
+            "güzellik salonu yazılımı",
+            "salon yönetim yazılımı",
+            "online randevu sistemi",
+            "dijital onam formu",
+            "müşteri takip programı",
+            "estetik klinik yazılımı",
+            "lazer epilasyon randevu",
+          ]
+        : undefined,
   });
 }
 

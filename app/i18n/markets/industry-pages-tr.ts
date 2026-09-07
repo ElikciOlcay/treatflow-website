@@ -53,7 +53,7 @@ const featureLabels: Record<FeatureSlugKey, string> = {
 
 const localeShell = {
   marketLabel: "Türkiye",
-  areaServed: ["Türkiye", "Europe"],
+  areaServed: ["TR"],
   ctaPrimaryLabel: "30 gün ücretsiz deneyin",
   ctaBottomTitle: "Salonunuzu dijitalleştirmeye hazır mısınız?",
   ctaBottomText:
@@ -172,7 +172,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "beauty-salon-software": {
     serviceName: "Güzellik Salonu Yazılımı",
     serviceDescription:
-      "Güzellik salonları için yazılım: online randevu, müşteri kayıtları, onam formları ve işlem kaydı.",
+      "Güzellik salonu yazılımı: komisyonsuz online randevu, müşteri takibi, dijital onam formları ve işlem kaydı. 30 gün ücretsiz deneyin.",
     eyebrow: "Güzellik Salonu Yazılımı",
     h1: "Güzellik salonları için A'dan Z'ye yönetim yazılımı",
     subtitle:
@@ -275,7 +275,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "aesthetic-clinic-software": {
     serviceName: "Estetik Klinik Yazılımı",
     serviceDescription:
-      "Estetik klinikler için yazılım: işlem kaydı, onam formları, müşteri kayıtları ve online randevu.",
+      "Estetik klinik yazılımı: dijital onam, işlem kaydı, hasta takibi ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
     eyebrow: "Estetik Klinik Yazılımı",
     h1: "Onam, işlem kaydı ve hasta takibi ile estetik klinik yazılımı",
     subtitle:
@@ -377,7 +377,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "laser-hair-removal-software": {
     serviceName: "Lazer Epilasyon Yazılımı",
     serviceDescription:
-      "Lazer epilasyon stüdyoları için yazılım: seans takibi, onam formları, öncesi-sonrası fotoğraf ve online randevu.",
+      "Lazer epilasyon yazılımı: seans takibi, dijital onam, öncesi-sonrası fotoğraf ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
     eyebrow: "Lazer Stüdyosu Yazılımı",
     h1: "Uygulama serileri ile lazer epilasyon yazılımı",
     subtitle:
@@ -480,7 +480,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "permanent-makeup-software": {
     serviceName: "Kalıcı Makyaj Stüdyosu Yazılımı",
     serviceDescription:
-      "Kalıcı makyaj stüdyoları için yazılım: onam formları, pigment ve teknik dokümantasyonu, fotoğraf geçmişi ve online randevu.",
+      "Kalıcı makyaj yazılımı: dijital onam, pigment notları, fotoğraf arşivi ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
     eyebrow: "Kalıcı Makyaj Yazılımı",
     h1: "Kalıcı makyaj stüdyoları için PMU yazılımı",
     subtitle:
@@ -583,7 +583,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "tattoo-studio-software": {
     serviceName: "Dövme Stüdyosu Yazılımı",
     serviceDescription:
-      "Dövme stüdyoları için yazılım: onam formları, müşteri kayıtları, randevu planlama, seans notları ve hatırlatmalar.",
+      "Dövme stüdyosu yazılımı: dijital onam, müşteri kaydı, seans notları ve komisyonsuz randevu. 30 gün ücretsiz deneyin.",
     eyebrow: "Dövme Stüdyosu Yazılımı",
     h1: "Modern stüdyolar için dövme yazılımı",
     subtitle:
@@ -686,7 +686,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "nail-salon-software": {
     serviceName: "Tırnak Salonu Yazılımı",
     serviceDescription:
-      "Tırnak salonları için yazılım: online randevu, müşteri kayıtları, randevu hatırlatmaları ve uygulama notları.",
+      "Tırnak salonu yazılımı: komisyonsuz online randevu, müşteri takibi, hatırlatmalar ve işlem notları. 30 gün ücretsiz deneyin.",
     eyebrow: "Tırnak Salonu Yazılımı",
     h1: "Yoğun protez tırnak salonları için randevu yazılımı",
     subtitle:
@@ -789,7 +789,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "lash-studio-software": {
     serviceName: "Kirpik Stüdyosu Yazılımı",
     serviceDescription:
-      "Kirpik stüdyoları için yazılım: dolgu planlaması, müşteri notları, onam formları, öncesi-sonrası fotoğraf ve online randevu.",
+      "Kirpik stüdyosu yazılımı: dolgu planlama, müşteri notları, dijital onam ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
     eyebrow: "Kirpik Stüdyosu Yazılımı",
     h1: "Kirpik uzmanları için kirpik stüdyosu yazılımı",
     subtitle:
@@ -892,7 +892,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "spa-wellness-software": {
     serviceName: "Spa ve Wellness Yazılımı",
     serviceDescription:
-      "Spa ve wellness stüdyoları için yazılım: online randevu, müşteri kayıtları, uygulama notları, onam formları ve hatırlatmalar.",
+      "Spa yazılımı: komisyonsuz online randevu, müşteri kaydı, uygulama notları ve dijital onam. 30 gün ücretsiz deneyin.",
     eyebrow: "Spa ve Wellness Yazılımı",
     h1: "Huzurlu operasyonlar için spa ve wellness yazılımı",
     subtitle:
@@ -995,7 +995,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "massage-software": {
     serviceName: "Masaj Stüdyosu Yazılımı",
     serviceDescription:
-      "Masajcılar ve stüdyolar için yazılım: online randevu, müşteri kayıtları, anamnez formları, seans notları ve hatırlatmalar.",
+      "Masaj yazılımı: komisyonsuz online randevu, anamnez, seans notları ve hatırlatmalar. 30 gün ücretsiz deneyin.",
     eyebrow: "Masaj Stüdyosu Yazılımı",
     h1: "Terapistler ve stüdyolar için masaj yazılımı",
     subtitle:

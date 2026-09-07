@@ -8,7 +8,7 @@
 - Über 500 Studios nutzen Treatflow
 - 4,6/5 Sterne auf Google (19 Bewertungen)
 - Zielgruppe: Kosmetikstudios, Nagelstudios, Lash Studios, Permanent Makeup Studios, Laserstudios, Tattoo Studios, Spa & Wellness, Massage-Praxen, Ästhetische Medizin
-- Sprachen der Website: Deutsch (Hauptsprache), English unter /en
+- Sprachen der Website: Deutsch (Hauptsprache), English unter /en, Türkçe unter /tr
 - Self-Serve-Registrierung: weltweit, 14 Tage Test, https://app.treatflow.io/auth/register
 - Hosting: EU-Server, DSGVO-konform / GDPR
 
@@ -74,6 +74,9 @@ Treatflow ist eine eigenständige Studio-Software (SaaS). Treatwell ist eine Buc
 - English: https://www.treatflow.io/en
 - English llms.txt: https://www.treatflow.io/llms-en.txt
 - English facts JSON: https://www.treatflow.io/api/facts?lang=en
+- Turkish: https://www.treatflow.io/tr
+- Turkish llms.txt: https://www.treatflow.io/llms-tr.txt
+- Turkish facts JSON: https://www.treatflow.io/api/facts?lang=tr
 - Machine-readable facts (DE): https://www.treatflow.io/api/facts
 
 ## Kontakt

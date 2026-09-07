@@ -993,6 +993,33 @@ const fiHomePage: HomePageIntlContent = {
 /* TR – Türkiye                                                               */
 /* -------------------------------------------------------------------------- */
 
+const trHomeFaqs = [
+  {
+    q: "Treatflow nedir?",
+    a: "Treatflow, güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımıdır. Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam formları, işlem notları, öncesi-sonrası fotoğraf ve otomatik hatırlatmaları tek uygulamada birleştirir. Avusturya'da geliştirilir, veriler AB sunucularında KVKK uyumlu saklanır.",
+  },
+  {
+    q: "Türkiye'de kullanabilir miyim?",
+    a: "Evet. Treatflow Türkiye'deki güzellik salonları ve estetik klinikleri için hazırdır. Türk Lirası fiyatlandırma, Türkçe arayüz ve Türkçe destek sunuyoruz. Müşteri verileri KVKK kapsamında AB sunucularında tutulur.",
+  },
+  {
+    q: "Randevu başına komisyon alıyor musunuz?",
+    a: "Hayır. Treatflow bir pazaryeri değil, sizin salon yazılımınızdır. Müşteri datanız sizde kalır; şeffaf aylık abonelik ödersiniz. Online randevu başına komisyon yoktur.",
+  },
+  {
+    q: "Hangi işletmeler için uygun?",
+    a: "Güzellik salonları, medikal estetik klinikleri, lazer epilasyon merkezleri, kalıcı makyaj stüdyoları, protez tırnak ve kirpik stüdyoları, spa ve masaj merkezleri.",
+  },
+  {
+    q: "Ücretsiz deneme ne kadar?",
+    a: "30 gün ücretsiz deneme. Kredi kartı gerekmez, taahhüt yoktur. İstediğiniz zaman iptal edebilirsiniz.",
+  },
+  {
+    q: "Treatflow ne kadar?",
+    a: "Lansman fiyatı ayda 1.490 TL (ilk 100 işletme için). Sonrasında ayda 1.990 TL. Randevu başına komisyon yoktur. Kasa Türkiye'de çekirdek ürün değildir.",
+  },
+];
+
 const trHomePage: HomePageIntlContent = {
   locale: "tr",
   earlyAccessHref: "https://app.treatflow.io/auth/register?lang=tr",
@@ -1064,40 +1091,24 @@ const trHomePage: HomePageIntlContent = {
   faqs: {
     title: "Sıkça sorulan sorular",
     pricingLinkLabel: "Fiyatları gör",
-    items: [
-      {
-        q: "Treatflow nedir?",
-        a: "Treatflow, güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımıdır. Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam formları, işlem notları, öncesi-sonrası fotoğraf ve otomatik hatırlatmaları tek uygulamada birleştirir. Avusturya'da geliştirilir, veriler AB sunucularında KVKK uyumlu saklanır.",
-      },
-      {
-        q: "Türkiye'de kullanabilir miyim?",
-        a: "Evet. Treatflow Türkiye'deki güzellik salonları ve estetik klinikleri için hazırdır. Türk Lirası fiyatlandırma, Türkçe arayüz ve Türkçe destek sunuyoruz. Müşteri verileri KVKK kapsamında AB sunucularında tutulur.",
-      },
-      {
-        q: "Randevu başına komisyon alıyor musunuz?",
-        a: "Hayır. Treatflow bir pazaryeri değil, sizin salon yazılımınızdır. Müşteri datanız sizde kalır; şeffaf aylık abonelik ödersiniz. Online randevu başına komisyon yoktur.",
-      },
-      {
-        q: "Hangi işletmeler için uygun?",
-        a: "Güzellik salonları, medikal estetik klinikleri, lazer epilasyon merkezleri, kalıcı makyaj stüdyoları, protez tırnak ve kirpik stüdyoları, spa ve masaj merkezleri.",
-      },
-      {
-        q: "Ücretsiz deneme ne kadar?",
-        a: "30 gün ücretsiz deneme. Kredi kartı gerekmez, taahhüt yoktur. İstediğiniz zaman iptal edebilirsiniz.",
-      },
-      {
-        q: "Fiyatlar nasıl?",
-        a: "Lansman fiyatı ayda 1.490 TL (ilk 100 işletme için). Sonrasında ayda 1.990 TL. Randevu başına komisyon yoktur.",
-      },
-    ],
+    items: trHomeFaqs,
   },
   schemas: {
-    software: softwareSchema(
-      "tr",
-      "/tr",
-      "Türkiye'deki güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımı: online randevu, müşteri takibi, dijital onam formları ve işlem kayıtları."
-    ),
-    faq: faqSchema("tr", []),
+    software: {
+      ...softwareSchema(
+        "tr",
+        "/tr",
+        "Türkiye'deki güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımı: online randevu, müşteri takibi, dijital onam formları ve işlem kayıtları."
+      ),
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "TRY",
+        lowPrice: "1490",
+        highPrice: "1990",
+        offerCount: "2",
+      },
+    },
+    faq: faqSchema("tr", trHomeFaqs),
   },
 };
 
@@ -1370,9 +1381,9 @@ export const countryHomeMeta: Record<
       "Treatflow is all-in-one software for beauty salons, aesthetic clinics and treatment businesses. Online booking, client records, digital forms, treatment documentation and reminders. 14-day free trial.",
   },
   tr: {
-    title: "Güzellik Salonu ve Estetik Klinik Yazılımı",
+    title: "Güzellik Salonu Yazılımı: Randevu ve Müşteri Takibi",
     description:
-      "Türkiye'deki güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımı. 7/24 online randevu, müşteri takibi, dijital onam formları, işlem kayıtları ve otomatik hatırlatmalar. 30 gün ücretsiz deneyin.",
+      "Türkiye için salon yönetim yazılımı: komisyonsuz online randevu, müşteri takibi, dijital onam ve işlem kaydı. 30 gün ücretsiz deneyin. Lansman ₺1.490, sonrası ₺1.990. Veriler AB sunucularında, KVKK kapsamında.",
   },
   us: {
     title: "Salon & Med Spa Software for the United States",

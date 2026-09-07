@@ -5,9 +5,9 @@ import { isPrefixedMarket, marketLanguage, type PrefixedMarket } from "@/app/i18
 
 const featuresMeta: Record<string, { title: string; description: string }> = {
   tr: {
-    title: "Güzellik Salonları ve Estetik Klinikleri için Özellikler",
+    title: "Güzellik Salonu Yazılımı Özellikleri",
     description:
-      "Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam formları, sesli notla işlem kaydı, hatırlatmalar ve entegrasyonlar – tek salon yazılımında.",
+      "Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam, sesli işlem kaydı ve WhatsApp hatırlatmaları – tek salon yazılımında. 30 gün ücretsiz deneyin.",
   },
 };
 

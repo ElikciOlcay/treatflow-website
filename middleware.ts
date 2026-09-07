@@ -30,18 +30,22 @@ function prefersGermanLanguage(request: NextRequest): boolean {
   return acceptLanguage.split(",").some((part) => part.trim().startsWith("de"));
 }
 
+function prefersTurkishLanguage(request: NextRequest): boolean {
+  const acceptLanguage = request.headers.get("accept-language")?.toLowerCase();
+  if (!acceptLanguage) return false;
+  return acceptLanguage.split(",").some((part) => part.trim().startsWith("tr"));
+}
+
 function isGermanSpeakingCountry(country: string | null): boolean {
   if (!country) return false;
   return (GERMAN_SPEAKING_COUNTRIES as readonly string[]).includes(country);
 }
 
-function redirectToLanguage(request: NextRequest, market: "de" | "en", path = "") {
-  const target =
-    market === "de"
-      ? path || "/"
-      : path
-        ? `/en${path.startsWith("/") ? path : `/${path}`}`
-        : "/en";
+function redirectToLanguage(request: NextRequest, market: "de" | "en" | "tr", path = "") {
+  const prefix = market === "de" ? "" : `/${market}`;
+  const target = path
+    ? `${prefix}${path.startsWith("/") ? path : `/${path}`}` || "/"
+    : prefix || "/";
   const response = NextResponse.redirect(new URL(target, request.url));
   response.cookies.set(MARKET_COOKIE, market, {
     maxAge: COOKIE_MAX_AGE,
@@ -123,6 +127,16 @@ export function middleware(request: NextRequest) {
     return response;
   }
 
+  if (pathname === "/tr" || pathname.startsWith("/tr/")) {
+    const response = NextResponse.next();
+    response.cookies.set(MARKET_COOKIE, "tr", {
+      maxAge: COOKIE_MAX_AGE,
+      sameSite: "lax",
+      path: "/",
+    });
+    return response;
+  }
+
   if (pathname !== "/") {
     return NextResponse.next();
   }
@@ -145,6 +159,9 @@ export function middleware(request: NextRequest) {
       }
       return response;
     }
+    if (resolved === "tr") {
+      return redirectToLanguage(request, "tr");
+    }
     return redirectToLanguage(request, "en");
   }
 
@@ -159,12 +176,16 @@ export function middleware(request: NextRequest) {
     return response;
   }
 
+  if (country === "TR" || prefersTurkishLanguage(request)) {
+    return redirectToLanguage(request, "tr");
+  }
+
   // Alle anderen → Englisch (nicht laenderbezogen)
   return redirectToLanguage(request, "en");
 }
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|images|favicon|manifest|robots.txt|sitemap.xml|llms.txt|llms-en.txt|llms-full.txt|.*\\..*).*)",
+    "/((?!api|_next/static|_next/image|images|favicon|manifest|robots.txt|sitemap.xml|llms.txt|llms-en.txt|llms-tr.txt|llms-full.txt|.*\\..*).*)",
   ],
 };
