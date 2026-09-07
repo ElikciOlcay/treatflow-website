@@ -36,6 +36,13 @@ export default function PricingSectionIntl({
   embedded?: boolean;
 }) {
   const [isYearly, setIsYearly] = useState(false);
+  const cur = copy.prices?.currencySymbol ?? "€";
+  const bm = copy.prices?.basicMonthly ?? 39;
+  const by = copy.prices?.basicYearly ?? 421;
+  const km = copy.prices?.bookingMonthly ?? 59;
+  const ky = copy.prices?.bookingYearly ?? 637;
+  const fmtPrice = (amount: number) =>
+    amount >= 1000 ? amount.toLocaleString("tr-TR") : String(amount);
 
   return (
     <section id="pricing" className={embedded ? "py-20 bg-white" : "pt-28 pb-20 bg-white"}>
@@ -87,11 +94,11 @@ export default function PricingSectionIntl({
               <div className="text-4xl font-bold text-gray-900 mb-1">
                 {isYearly ? (
                   <>
-                    €421<span className="text-lg text-gray-600">{copy.perYear}</span>
+                    {cur}{fmtPrice(by)}<span className="text-lg text-gray-600">{copy.perYear}</span>
                   </>
                 ) : (
                   <>
-                    €39<span className="text-lg text-gray-600">{copy.perMonth}</span>
+                    {cur}{fmtPrice(bm)}<span className="text-lg text-gray-600">{copy.perMonth}</span>
                   </>
                 )}
               </div>
@@ -138,11 +145,11 @@ export default function PricingSectionIntl({
               <div className="text-4xl font-bold mb-1">
                 {isYearly ? (
                   <>
-                    €637<span className="text-lg text-indigo-200">{copy.perYear}</span>
+                    {cur}{fmtPrice(ky)}<span className="text-lg text-indigo-200">{copy.perYear}</span>
                   </>
                 ) : (
                   <>
-                    €59<span className="text-lg text-indigo-200">{copy.perMonth}</span>
+                    {cur}{fmtPrice(km)}<span className="text-lg text-indigo-200">{copy.perMonth}</span>
                   </>
                 )}
               </div>

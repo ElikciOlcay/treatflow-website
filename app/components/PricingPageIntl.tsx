@@ -24,10 +24,10 @@ export default function PricingPageIntl({ copy }: { copy: PricingIntlCopy }) {
                 {copy.comparison.featureCol}
               </div>
               <div className="p-4 sm:p-6 text-center font-semibold text-sm sm:text-base">
-                Basic (39€)
+                {copy.prices?.comparisonBasicLabel ?? "Basic (€39)"}
               </div>
               <div className="p-4 sm:p-6 text-center font-semibold text-sm sm:text-base bg-indigo-600">
-                Booking (59€)
+                {copy.prices?.comparisonBookingLabel ?? "Booking (€59)"}
               </div>
             </div>
             {copy.comparison.rows.map((row, index) => (

@@ -16,6 +16,15 @@ export type PricingIntlCopy = {
   popular: string;
   cta: string;
   earlyAccessHref: string;
+  prices?: {
+    currencySymbol: string;
+    basicMonthly: number;
+    basicYearly: number;
+    bookingMonthly: number;
+    bookingYearly: number;
+    comparisonBasicLabel: string;
+    comparisonBookingLabel: string;
+  };
   basic: {
     name: string;
     description: string;
@@ -784,37 +793,42 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     popular: "En popüler",
     cta: "30 gün ücretsiz deneyin",
     earlyAccessHref: "https://app.treatflow.io/auth/register?lang=tr",
+    prices: {
+      currencySymbol: "₺",
+      basicMonthly: 1490,
+      basicYearly: 16100,
+      bookingMonthly: 1990,
+      bookingYearly: 21500,
+      comparisonBasicLabel: "Basic (₺1.490)",
+      comparisonBookingLabel: "Booking (₺1.990)",
+    },
     basic: {
       name: "Basic",
-      description: "Takvim, müşteri kartotek ve dokümantasyon için temel plan.",
+      description: "Müşteri yönetimi, formlar ve işlem dokümantasyonu -- randevu planlaması olmadan.",
       included: [
-        "Randevu takvimi",
-        "Müşteri kartotek",
-        "İşlem dokümantasyonu",
-        "Dijital anamnez ve onam formları",
-        "Sesli dikte (yapay zeka ile)",
-        "Hatırlatmalar (SMS ve e-posta)",
-        "Fotoğraf dokümantasyonu",
-        "Hediye kuponları",
-        "İstatistikler ve raporlar",
-        "Sınırsız ekip üyesi",
+        "Müşteri yönetimi",
+        "Formlar",
+        "Dokümantasyon",
+        "Anamnez şablonları",
+        "E-posta desteği",
       ],
       excluded: [
-        "Online rezervasyon sayfası",
-        "Kapora ile no-show koruması",
-        "Google Takvim senkronizasyonu",
+        "Randevu yönetimi",
+        "Online rezervasyon sistemi",
+        "Öncelikli destek",
       ],
     },
     booking: {
       name: "Booking",
-      description: "Basic'in tüm özellikleri + online rezervasyon, kapora ve takvim senkronizasyonu.",
+      description: "Randevu takvimi, online rezervasyon ve stüdyonuz için otomatik hatırlatmalar.",
       included: [
         "Basic'teki her şey",
-        "Online rezervasyon sayfası",
-        "Kapora ile no-show koruması",
-        "Google Takvim senkronizasyonu",
-        "Kişiselleştirilebilir rezervasyon sayfası",
-        "Otomatik randevu onayları",
+        "Randevu yönetimi",
+        "Online rezervasyon sistemi",
+        "SMS ve e-posta otomasyonu",
+        "Entegrasyonlar (Google Takvim, Zapier, SumUp vb.)",
+        "Gelişmiş ayarlar",
+        "Öncelikli e-posta ve sohbet desteği",
       ],
     },
     trialBox: {
@@ -833,18 +847,18 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       vatNote: "Tüm fiyatlar KDV hariçtir.",
       featureCol: "Özellik",
       rows: [
-        { feature: "Randevu takvimi", basic: true, booking: true },
-        { feature: "Müşteri kartotek", basic: true, booking: true },
+        { feature: "Müşteri yönetimi", basic: true, booking: true },
+        { feature: "Formlar ve anamnez", basic: true, booking: true },
         { feature: "İşlem dokümantasyonu", basic: true, booking: true },
-        { feature: "Dijital formlar", basic: true, booking: true },
-        { feature: "Sesli dikte (yapay zeka)", basic: true, booking: true },
-        { feature: "SMS ve e-posta hatırlatmaları", basic: true, booking: true },
-        { feature: "Fotoğraf dokümantasyonu", basic: true, booking: true },
-        { feature: "Hediye kuponları", basic: true, booking: true },
-        { feature: "İstatistikler", basic: true, booking: true },
-        { feature: "Online rezervasyon sayfası", basic: false, booking: true },
-        { feature: "Kapora ile no-show koruması", basic: false, booking: true },
-        { feature: "Google Takvim senkronizasyonu", basic: false, booking: true },
+        { feature: "Anamnez şablonları", basic: true, booking: true },
+        { feature: "E-posta desteği", basic: true, booking: true },
+        { feature: "Randevu takvimi", basic: false, booking: true },
+        { feature: "Online rezervasyon sistemi", basic: false, booking: true },
+        { feature: "SMS ve e-posta otomasyonu", basic: false, booking: true },
+        { feature: "Müşteri iş akışları (çok adımlı)", basic: false, booking: true },
+        { feature: "Entegrasyonlar (Google Takvim, Zapier)", basic: false, booking: true },
+        { feature: "Öncelikli destek", basic: false, booking: true },
+        { feature: "Gelişmiş ayarlar", basic: false, booking: true },
       ],
     },
     why: {
