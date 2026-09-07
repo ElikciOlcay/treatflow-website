@@ -80,7 +80,7 @@ export default function PricingSectionIntl({
               }`}
             >
               {copy.yearly}
-              <span className="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
+              <span className="absolute -top-3 -right-3 bg-green-500 text-white text-[10px] leading-tight px-2 py-0.5 rounded-full whitespace-nowrap pointer-events-none">
                 {copy.saveBadge}
               </span>
             </button>
