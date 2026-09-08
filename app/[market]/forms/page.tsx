@@ -12,11 +12,12 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
+  const content = getCoreFeaturePage(market, "forms");
   return buildPageMetadata({
     pageKey: "forms",
     locale: market,
-    title: "Digital Consultation and Consent Forms",
-    description: "Send consultation and consent forms before the appointment. Clients complete them on their phone, including a digital signature, stored on the client record.",
+    title: content.title,
+    description: content.subtitle,
   });
 }
 

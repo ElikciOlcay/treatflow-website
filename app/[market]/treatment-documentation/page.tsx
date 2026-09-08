@@ -12,11 +12,12 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
+  const content = getCoreFeaturePage(market, "treatment-documentation");
   return buildPageMetadata({
     pageKey: "treatment-documentation",
     locale: market,
-    title: "Treatment Documentation for Beauty & Aesthetics",
-    description: "Structured treatment notes, voice dictation and before/after photos – linked to the client history.",
+    title: content.title,
+    description: content.subtitle,
   });
 }
 

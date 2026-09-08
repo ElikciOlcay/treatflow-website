@@ -12,11 +12,12 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
+  const content = getCoreFeaturePage(market, "online-booking");
   return buildPageMetadata({
     pageKey: "online-booking",
     locale: market,
-    title: "Online Booking for Beauty Salons",
-    description: "24/7 online booking for beauty and aesthetic studios – real availability, deposits and automatic reminders.",
+    title: content.title,
+    description: content.subtitle,
   });
 }
 

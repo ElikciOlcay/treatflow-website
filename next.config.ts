@@ -44,6 +44,18 @@ const nextConfig: NextConfig = {
           { key: 'Content-Language', value: 'en' },
         ],
       },
+      {
+        source: '/tr',
+        headers: [
+          { key: 'Content-Language', value: 'tr-TR' },
+        ],
+      },
+      {
+        source: '/tr/:path*',
+        headers: [
+          { key: 'Content-Language', value: 'tr-TR' },
+        ],
+      },
     ];
   },
 
@@ -217,6 +229,13 @@ const nextConfig: NextConfig = {
       { source: '/en/compare/fresha-alternative', destination: '/en/treatflow-vs-fresha', permanent: true },
       { source: '/en/compare/treatwell-alternative', destination: '/en/treatflow-vs-treatwell', permanent: true },
       // Further /en/compare/* aliases (Phorest, Vagaro, Booksy, Pabau) wait for verified comparison data.
+
+      // TR Money Pages: alte EN-Slugs → lokalisierte Canonicals (keine Doppel-Indexierung)
+      { source: '/tr/pricing', destination: '/tr/fiyatlar', statusCode: 301 },
+      { source: '/tr/beauty-salon-software', destination: '/tr/guzellik-salonu-programi', statusCode: 301 },
+      { source: '/tr/laser-hair-removal-software', destination: '/tr/lazer-epilasyon-programi', statusCode: 301 },
+      { source: '/tr/client-records', destination: '/tr/musteri-takip-programi', statusCode: 301 },
+      { source: '/tr/online-booking', destination: '/tr/online-randevu-sistemi', statusCode: 301 },
     ];
   },
 

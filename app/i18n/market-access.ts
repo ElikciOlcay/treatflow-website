@@ -85,11 +85,11 @@ export function isExternalCta(_market?: Market | string): boolean {
   return true;
 }
 
-/** Locale-/Markt-Strings → aktive Site-Sprache (de | en). */
+/** Locale-/Markt-Strings → aktive Site-Sprache (de | en | tr). */
 function resolveMarket(value: string): Market {
-  if (value === "de") return "de";
+  if (value === "de" || value === "en" || value === "tr") return value;
   if (isMarketLike(value)) {
-    return value === "de" ? "de" : "en";
+    return value === "de" ? "de" : value === "tr" ? "tr" : "en";
   }
   return "en";
 }

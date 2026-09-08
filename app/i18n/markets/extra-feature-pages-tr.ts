@@ -104,7 +104,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         icon: Users,
         title: "Müşteriye bağlı",
-        desc: "Her satış, takip için müşteri geçmişinde kalır.",
+        desc: "Her satış, daha sonra görüntülenmek üzere müşteri geçmişinde kalır.",
       },
     ],
     closingTitle: "Resepsiyon için tek kasa",
@@ -128,10 +128,10 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
     ],
     relatedLinks: [
-      { href: "/tr/online-booking", label: "Online randevu" },
+      { href: "/tr/online-randevu-sistemi", label: "Online randevu" },
       { href: "/tr/appointment-calendar", label: "Randevu takvimi" },
       {
-        href: "/tr/beauty-salon-software",
+        href: "/tr/guzellik-salonu-programi",
         label: "Güzellik salonu yazılımı",
       },
     ],
@@ -141,7 +141,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
     eyebrow: "Hediye Çekleri",
     title: "Kaos olmadan hediye çeki satın ve kullanın",
     subtitle:
-      "Hediye çekleri oluştürün, kasada satın ve kalan bakiyeyi otomatik takip edin \u2013 salonunuz için basit bir gelir artırıcı.",
+      "Hediye çekleri oluşturun, kasada satın ve kalan bakiyeyi otomatik takip edin \u2013 salonunuz için ek gelir imkânı.",
     bullets: [
       "Kasada veya online hediye çeki satın",
       "Tam veya kısmi kullanım",
@@ -201,9 +201,9 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
     ],
     relatedLinks: [
       { href: "/tr/features", label: "Tüm özellikler" },
-      { href: "/tr/online-booking", label: "Online randevu" },
+      { href: "/tr/online-randevu-sistemi", label: "Online randevu" },
       {
-        href: "/tr/beauty-salon-software",
+        href: "/tr/guzellik-salonu-programi",
         label: "Güzellik salonu yazılımı",
       },
     ],
@@ -228,7 +228,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         icon: Bell,
         title: "Randevu hatırlatmaları",
-        desc: "Zamanlanmış WhatsApp ve e-posta hatırlatmalarıyla gelmemeleri azaltın.",
+        desc: "Zamanlanmış WhatsApp ve e-posta hatırlatmalarıyla randevuya gelmeme oranını azaltın.",
       },
       {
         icon: Mail,
@@ -277,10 +277,10 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
     ],
     relatedLinks: [
-      { href: "/tr/online-booking", label: "Online randevu" },
+      { href: "/tr/online-randevu-sistemi", label: "Online randevu" },
       { href: "/tr/appointment-calendar", label: "Randevu takvimi" },
       {
-        href: "/tr/beauty-salon-software",
+        href: "/tr/guzellik-salonu-programi",
         label: "Güzellik salonu yazılımı",
       },
     ],
@@ -290,16 +290,16 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
     eyebrow: "Entegrasyonlar",
     title: "Treatflow\u2019u zaten kullandığınız araçlarla bağlayın",
     subtitle:
-      "Takvimleri, muhasebeyi ve otomasyonları senkronize edin; veriler üç sisteme ayrı ayrı girilmek yerine bir kez aksın.",
+      "Takviminizi ve otomasyonlarınızı senkronize edin; aynı veriyi farklı sistemlere tekrar tekrar girmeyin.",
     bullets: [
       "Çift yönlü Google Takvim senkronizasyonu",
-      "Muhasebe ve fatura bağlantıları",
       "7.000\u2019den fazla uygulama için Zapier",
+      "Randevu ve form tetikleyicileri",
       "Daha az çift giriş, daha az hata",
     ],
     image: {
-      src: "/images/product-updates/swiss21-abaninja-integration.png",
-      alt: "Treatflow entegrasyonları salon yazılımını dış araçlarla bağlıyor",
+      src: "/images/lifestyle/hero-startseite-tr.png",
+      alt: "Treatflow güzellik merkezi yazılımı ve entegrasyonları",
     },
     features: [
       {
@@ -309,13 +309,13 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
       {
         icon: Receipt,
-        title: "Muhasebe",
-        desc: "Fatura oluştürün ve müşterileri yeniden yazmadan senkronize edin.",
+        title: "Randevu verileri",
+        desc: "Yeni randevularla kullandığınız araçlarda otomatik süreçler başlatın.",
       },
       {
         icon: Zap,
         title: "Zapier",
-        desc: "Tablolar, CRM ve e-posta iş akışlarını tetikleyin.",
+        desc: "Tablolar, müşteri yönetimi ve e-posta iş akışlarını tetikleyin.",
       },
       {
         icon: RefreshCw,
@@ -340,7 +340,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         question: "Treatflow Google Takvim ile entegre oluyor mu?",
         answer:
-          "Evet. Treatflow, kişisel ve stüdyo randevularının uyumlu kalmasını sağlayan çift yönlü Google Takvim senkronizasyonu sunar.",
+          "Evet. Treatflow, kişisel takviminizle işletme randevularınızı eş zamanlı tutan çift yönlü Google Takvim senkronizasyonu sunar.",
       },
       {
         question: "Treatflow Zapier ile çalışıyor mu?",
@@ -349,7 +349,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
     ],
     relatedLinks: [
-      { href: "/tr/online-booking", label: "Online randevu" },
+      { href: "/tr/online-randevu-sistemi", label: "Online randevu" },
       { href: "/tr/appointment-calendar", label: "Randevu takvimi" },
       { href: "/tr/features", label: "Tüm özellikler" },
     ],
@@ -415,17 +415,17 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       {
         question: "Treatflow hangi iş kollarına uygundur?",
         answer:
-          "Güzellik salonları, lazer epilasyon merkezleri, medikal estetik klinikleri, tırnak stüdyoları, kirpik stüdyoları ve SPA merkezleri gibi güzellik ve bakım işletmeleri için tasarlanmıştır.",
+          "Güzellik salonları, lazer epilasyon merkezleri, medikal estetik işletmeleri, tırnak ve kirpik salonları ile spa merkezleri gibi güzellik ve bakım işletmeleri için tasarlanmıştır.",
       },
     ],
     relatedLinks: [
-      { href: "/tr/online-booking", label: "Online randevu" },
+      { href: "/tr/online-randevu-sistemi", label: "Online randevu" },
       { href: "/tr/forms", label: "Onam formları" },
       {
         href: "/tr/treatment-documentation",
         label: "İşlem kayıtları",
       },
-      { href: "/tr/pricing", label: "Fiyatlar" },
+      { href: "/tr/fiyatlar", label: "Fiyatlar" },
     ],
   },
 
@@ -433,7 +433,7 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
     eyebrow: "Ürün Satışı ve Stok",
     title: "Perakende ürünleri satın ve stoğu kontrol altında tutun",
     subtitle:
-      "Sınırsız ürün ekleyin, salonda satın ve kimin ne aldığını takip edin – çok satanlar fark edilmeden tükenmesin.",
+      "Sınırsız ürün ekleyin, salonda satın ve hangi müşterinin ne aldığını takip edin. Çok satılan ürünler fark edilmeden tükenmesin.",
     bullets: [
       "Sınırsız ürün ve kategori",
       "Stüdyoda doğrudan satış",
@@ -493,9 +493,9 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
     ],
     relatedLinks: [
       { href: "/tr/features", label: "Tüm özellikler" },
-      { href: "/tr/online-booking", label: "Online randevu" },
+      { href: "/tr/online-randevu-sistemi", label: "Online randevu" },
       {
-        href: "/tr/beauty-salon-software",
+        href: "/tr/guzellik-salonu-programi",
         label: "Güzellik salonu yazılımı",
       },
     ],
@@ -570,9 +570,9 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
       },
     ],
     relatedLinks: [
-      { href: "/tr/online-booking", label: "Online randevu" },
+      { href: "/tr/online-randevu-sistemi", label: "Online randevu" },
       {
-        href: "/tr/beauty-salon-software",
+        href: "/tr/guzellik-salonu-programi",
         label: "Güzellik salonu yazılımı",
       },
       { href: "/tr/features", label: "Tüm özellikler" },

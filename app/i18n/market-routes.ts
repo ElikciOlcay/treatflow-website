@@ -50,6 +50,28 @@ export const EN_SLUGS = {
  */
 export type MarketPageSlug = keyof typeof EN_SLUGS;
 
+/**
+ * Lokalisierte TR-Slugs fuer Money Pages.
+ * EN bleibt unter den EN-Slugs. Alte /tr/{en-slug} URLs 301en in next.config.ts.
+ */
+export const TR_SLUG_OVERRIDES: Partial<Record<MarketPageSlug, string>> = {
+  pricing: "fiyatlar",
+  "beauty-salon-software": "guzellik-salonu-programi",
+  "laser-hair-removal-software": "lazer-epilasyon-programi",
+  "client-records": "musteri-takip-programi",
+  "online-booking": "online-randevu-sistemi",
+};
+
+export function marketSlug(
+  market: PrefixedMarket | Market,
+  key: MarketPageSlug
+): string {
+  if (market === "tr") {
+    return TR_SLUG_OVERRIDES[key] ?? EN_SLUGS[key];
+  }
+  return EN_SLUGS[key];
+}
+
 export function marketBase(market: PrefixedMarket | Market): string {
   if (market === "de") return "";
   return marketPathPrefix[market] || `/${market}`;
@@ -68,5 +90,18 @@ export function marketPagePath(
   market: PrefixedMarket | Market,
   key: MarketPageSlug
 ): string {
-  return marketPath(market, EN_SLUGS[key]);
+  return marketPath(market, marketSlug(market, key));
+}
+
+/** EN-Slug → markt-lokalisierter Slug (TR Money Pages). */
+export function localizeEnSlug(
+  market: PrefixedMarket | Market,
+  enSlug: string
+): string {
+  if (market !== "tr") return enSlug;
+  const found = (Object.keys(EN_SLUGS) as MarketPageSlug[]).find(
+    (key) => EN_SLUGS[key] === enSlug
+  );
+  if (!found) return enSlug;
+  return TR_SLUG_OVERRIDES[found] ?? enSlug;
 }

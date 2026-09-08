@@ -36,7 +36,7 @@ import {
   getPrimaryCtaPath,
   isExternalCta,
 } from "../i18n/market-access";
-import { EN_SLUGS } from "../i18n/market-routes";
+import { EN_SLUGS, localizeEnSlug } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
 import { getUiChrome } from "../i18n/markets/ui-chrome";
 
@@ -226,7 +226,7 @@ const featureDefs: {
       en: "Calendar, accounting and more",
       nl: "Agenda, boekhouding en meer",
       fi: "Kalenteri, kirjanpito ja muuta",
-      tr: "Takvim, muhasebe ve daha fazlası",
+      tr: "Google Takvim, Zapier ve otomasyonlar",
     },
     icon: Plug,
     color: "text-indigo-600 bg-indigo-100",
@@ -252,7 +252,7 @@ const industryDefs: {
       en: "All-in-one studio software",
       nl: "All-in-one studiosoftware",
       fi: "All-in-one-studio-ohjelmisto",
-      tr: "A'dan Z'ye salon yönetimi",
+      tr: "Randevu, müşteri ve işlem yönetimi",
     },
     icon: Sparkles,
     color: "text-indigo-600 bg-indigo-100",
@@ -297,13 +297,13 @@ const industryDefs: {
       en: "Aesthetic clinics",
       nl: "Esthetische klinieken",
       fi: "Esteettiset klinikat",
-      tr: "Estetik klinikleri",
+      tr: "Medikal estetik merkezleri",
     },
     desc: {
       en: "Documentation and patient records",
       nl: "Documentatie en patiëntendossiers",
       fi: "Dokumentointi ja potilaskortistot",
-      tr: "Onam ve hasta kaydı",
+      tr: "Onam ve işlem kaydı",
     },
     icon: Stethoscope,
     color: "text-teal-600 bg-teal-100",
@@ -421,7 +421,7 @@ export default function NavigationEn({
   const featureLinks = featureDefs
     .filter((item) => !(market === "tr" && item.slug === EN_SLUGS.vouchers))
     .map((item) => ({
-      href: `${base}/${item.slug}`,
+      href: `${base}/${localizeEnSlug(market, item.slug)}`,
       group: item.group,
       label: item.label[lang],
       desc: item.desc[lang],
@@ -437,19 +437,33 @@ export default function NavigationEn({
     }))
     .filter((group) => group.items.length > 0);
 
-  const industryLinks = industryDefs.map((item) => ({
-    href: `${base}/${EN_SLUGS[item.key]}`,
-    label: item.label[lang],
-    desc: item.desc[lang],
-    icon: item.icon,
-    color: item.color,
-    key: item.key,
-  }));
+  const industryLinks = [
+    ...(market === "tr"
+      ? [
+          {
+            href: "/tr/guzellik-merkezi-programi",
+            label: "Güzellik merkezleri",
+            desc: "Randevu, onam ve işlem kaydı",
+            icon: Sparkles,
+            color: "text-indigo-600 bg-indigo-100",
+            key: "beauty-center-software",
+          },
+        ]
+      : []),
+    ...industryDefs.map((item) => ({
+      href: `${base}/${localizeEnSlug(market, EN_SLUGS[item.key])}`,
+      label: item.label[lang],
+      desc: item.desc[lang],
+      icon: item.icon,
+      color: item.color,
+      key: item.key,
+    })),
+  ];
 
-  const featuresOverviewHref = `${base}/${EN_SLUGS.features}`;
-  const pricingHref = `${base}/${EN_SLUGS.pricing}`;
-  const newsHref = `${base}/${EN_SLUGS.news}`;
-  const contactHref = `${base}/${EN_SLUGS.contact}`;
+  const featuresOverviewHref = `${base}/${localizeEnSlug(market, EN_SLUGS.features)}`;
+  const pricingHref = `${base}/${localizeEnSlug(market, EN_SLUGS.pricing)}`;
+  const newsHref = `${base}/${localizeEnSlug(market, EN_SLUGS.news)}`;
+  const contactHref = `${base}/${localizeEnSlug(market, EN_SLUGS.contact)}`;
   const showNews = market !== "tr";
   const chrome = getUiChrome(market);
 

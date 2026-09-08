@@ -996,7 +996,7 @@ const fiHomePage: HomePageIntlContent = {
 const trHomeFaqs = [
   {
     q: "Treatflow nedir?",
-    a: "Treatflow, güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımıdır. Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam formları, işlem notları, öncesi-sonrası fotoğraf ve otomatik hatırlatmaları tek uygulamada birleştirir. Avusturya'da geliştirilir, veriler AB sunucularında KVKK uyumlu saklanır.",
+    a: "Treatflow, güzellik salonları ve medikal estetik merkezleri için işletme yönetim yazılımıdır. Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam formları, işlem notları, öncesi-sonrası fotoğraflar ve otomatik hatırlatmalar tek uygulamada birleşir. Avusturya'da geliştirilir; veriler KVKK kapsamındaki süreçlerle AB sunucularında saklanır.",
   },
   {
     q: "Türkiye'de kullanabilir miyim?",
@@ -1004,11 +1004,11 @@ const trHomeFaqs = [
   },
   {
     q: "Randevu başına komisyon alıyor musunuz?",
-    a: "Hayır. Treatflow bir pazaryeri değil, sizin salon yazılımınızdır. Müşteri datanız sizde kalır; şeffaf aylık abonelik ödersiniz. Online randevu başına komisyon yoktur.",
+    a: "Hayır. Treatflow bir pazaryeri değil, işletmenizin kendi yazılımıdır. Müşteri verileriniz sizin kontrolünüzde kalır; sabit aylık abonelik ödersiniz. Online randevu başına komisyon yoktur.",
   },
   {
     q: "Hangi işletmeler için uygun?",
-    a: "Güzellik salonları, medikal estetik klinikleri, lazer epilasyon merkezleri, kalıcı makyaj stüdyoları, protez tırnak ve kirpik stüdyoları, spa ve masaj merkezleri.",
+    a: "Güzellik salonları, medikal estetik merkezleri, lazer epilasyon merkezleri, kalıcı makyaj, protez tırnak ve kirpik işletmeleri ile spa ve masaj merkezleri.",
   },
   {
     q: "Ücretsiz deneme ne kadar?",
@@ -1016,59 +1016,59 @@ const trHomeFaqs = [
   },
   {
     q: "Treatflow ne kadar?",
-    a: "Lansman fiyatı ayda 1.490 TL (ilk 100 işletme için). Sonrasında ayda 1.990 TL. Randevu başına komisyon yoktur.",
+    a: "İlk 100 işletme için lansman fiyatları Basic pakette aylık 1.490 TL, Booking pakette aylık 1.990 TL'dir. Randevu başına komisyon yoktur.",
   },
 ];
 
 const trHomePage: HomePageIntlContent = {
   locale: "tr",
   earlyAccessHref: "https://app.treatflow.io/auth/register?lang=tr",
-  pricingHref: "/tr/pricing",
+  pricingHref: "/tr/fiyatlar",
   hero: {
     eyebrow: "Güzellik salonları ve medikal estetik klinikleri için",
     titleLead: "Randevu, müşteri takibi ve",
     titleHighlight: "dijital onam",
     titleTail: "tek uygulamada",
     subtitle:
-      "Güzellik salonu, medikal estetik ve lazer epilasyon merkezleri için A'dan Z'ye salon yönetim yazılımı. 7/24 online randevu, müşteri kaydı, onam formları, işlem kayıtları ve otomatik hatırlatmalar. Pazaryeri komisyonu yok.",
+      "Güzellik salonları, medikal estetik ve lazer epilasyon merkezleri için uçtan uca işletme yönetim yazılımı. 7/24 online randevu, müşteri kaydı, onam formları, işlem dokümantasyonu ve otomatik hatırlatmalar. Pazaryeri komisyonu yok.",
     primaryCta: "Ücretsiz deneyin",
-    trustItems: ["Kredi kartı gerekmez", "2 dakikada başlayın", "Ücretsiz veri aktarımı", "Türkçe destek"],
-    studiosLabel: "500+ işletme",
+    trustItems: ["Kredi kartı gerekmez", "Hızlı kurulum", "Veri aktarımı desteği", "Türkçe destek"],
+    studiosLabel: "Dünya genelinde 500+ işletme",
     ratingValue: "4.6/5",
     image: {
       src: "/images/lifestyle/hero-startseite-tr.png",
-      alt: "Treatflow salon yönetim yazılımı: randevu takvimi, müşteri kayıtları, online randevu ve dijital onam laptop, tablet ve telefonda",
+      alt: "Treatflow güzellik merkezi yazılımında randevu, müşteri kaydı ve dijital onam ekranları",
     },
   },
   aiCapsules: [
     {
       question: "Treatflow nedir?",
       answer:
-        "Treatflow, Türkiye'deki güzellik salonları, medikal estetik klinikleri ve lazer epilasyon merkezleri için salon yönetim yazılımıdır. Online randevu, müşteri takibi, dijital onam formları, işlem kayıtları ve öncesi-sonrası fotoğraf arşivi tek panelde. Veriler AB sunucularında, KVKK uyumlu saklanır.",
+        "Treatflow, Türkiye'deki güzellik salonları, medikal estetik ve lazer epilasyon merkezleri için işletme yönetim yazılımıdır. Online randevu, müşteri takibi, dijital onam formları, işlem dokümantasyonu ve öncesi-sonrası fotoğraflar tek panelde birleşir. Veriler KVKK kapsamındaki süreçlerle AB sunucularında saklanır.",
     },
     {
       question: "Treatflow kimler için?",
       answer:
-        "Treatflow; randevu, müşteri takibi, dijital onam ve işlem kaydı isteyen güzellik salonları, medikal estetik klinikleri, lazer epilasyon merkezleri, kalıcı makyaj stüdyoları ve cilt bakım merkezleri içindir.",
+        "Treatflow; randevu, müşteri takibi, dijital onam ve işlem dokümantasyonunu birlikte yönetmek isteyen güzellik salonları, medikal estetik merkezleri, lazer epilasyon işletmeleri, kalıcı makyaj uzmanları ve cilt bakım merkezleri içindir.",
     },
   ],
   trustBar: [
     { icon: Lock, text: "SSL şifreleme" },
     { icon: Server, text: "AB sunucuları" },
     { icon: Shield, text: "Günlük yedekleme" },
-    { icon: ShieldCheck, text: "KVKK uyumlu onam" },
+    { icon: ShieldCheck, text: "KVKK kapsamında süreçler" },
   ],
   features: {
-    title: "Salonunuzun ihtiyacı olan her şey, tek ekranda",
+    title: "İşletmenizin ihtiyaç duyduğu temel süreçler tek ekranda",
     subtitle: "Takvimden müşteri kaydına, onamdan hatırlatmaya kadar – ekibiniz her şeyi hızlı bulur.",
     ctaNote: "Kredi kartı gerekmez. Taahhüt yok, istediğiniz zaman iptal edin.",
     items: [
       { icon: CalendarDays, label: "Randevu takvimi", desc: "Tüm randevular gün, hafta ve ay görünümünde. Personel bazlı planlama.", color: featureColors.calendar },
-      { icon: Users, label: "Online randevu", desc: "Instagram, Google ve web sitenizden 7/24 randevu. Komisyon yok.", color: featureColors.booking },
+      { icon: Users, label: "Online randevu", desc: "Instagram, Google ve web siteniz üzerinden 7/24 randevu alın. Komisyon yok.", color: featureColors.booking },
       { icon: ClipboardCheck, label: "Onam formları", desc: "Dijital anamnez ve onam – müşteri gelmeden imzalı.", color: featureColors.consent },
       { icon: FileText, label: "Müşteri takibi", desc: "Kart, geçmiş, notlar ve fotoğraflar tek yerde.", color: featureColors.records },
       { icon: Shield, label: "İşlem kayıtları", desc: "Seans notları, parametreler ve öncesi-sonrası fotoğraflar.", color: featureColors.docs },
-      { icon: Bell, label: "Hatırlatmalar", desc: "WhatsApp ve e-posta ile gelmeme ve unutulan randevuları azaltın.", color: featureColors.reminders },
+      { icon: Bell, label: "Hatırlatmalar", desc: "WhatsApp ve e-posta hatırlatmalarıyla unutulan randevuları ve gelmeme oranını azaltın.", color: featureColors.reminders },
       { icon: Workflow, label: "Tek iş akışı", desc: "Randevudan onama, işlem kaydına kadar her şey aynı sistemde.", color: featureColors.workflows },
     ],
   },
@@ -1076,11 +1076,11 @@ const trHomePage: HomePageIntlContent = {
     title: "Treatflow ile daha fazlası",
     subtitle: "Gününüzü kolaylaştıran ekstra özellikler – pakete dahil.",
     items: [
-      { icon: BarChart3, label: "Raporlar ve ciro", desc: "Gelir, randevu doluluk, müşteriler ve en çok satan hizmetler tek bakışta." },
+      { icon: BarChart3, label: "Raporlar ve ciro", desc: "Gelir, randevu doluluğu, müşteri hareketleri ve en çok satılan hizmetler tek bakışta." },
       { icon: Mic, label: "Sesli not", desc: "İşlem notlarını konuşarak yazın – Treatflow metne çevirir." },
       { icon: Languages, label: "Çok dilli randevu sayfası", desc: "Müşterileriniz randevu sayfasını kendi dillerinde görür." },
       { icon: Ticket, label: "İndirim kodları", desc: "Online randevuda kampanya ve yeni müşteri kodları." },
-      { icon: ListChecks, label: "Ekip notları ve görevler", desc: "Son tarih, atama ve okundu bilgisi – ekip aynı notu görür." },
+      { icon: ListChecks, label: "Ekip notları ve görevler", desc: "Son tarih, sorumlu kişi ve okundu bilgisiyle ekip aynı kaydı görür." },
     ],
   },
   cta: {
@@ -1383,7 +1383,7 @@ export const countryHomeMeta: Record<
   tr: {
     title: "Güzellik Salonu Yazılımı: Randevu ve Müşteri Takibi",
     description:
-      "Türkiye için salon yönetim yazılımı: komisyonsuz online randevu, müşteri takibi, dijital onam ve işlem kaydı. 30 gün ücretsiz deneyin. Lansman ₺1.490, sonrası ₺1.990. Veriler AB sunucularında, KVKK kapsamında.",
+      "Türkiye için salon yönetim yazılımı: komisyonsuz online randevu, müşteri takibi, dijital onam ve işlem kaydı. İlk 100 işletmeye lansman fiyatları: Basic ₺1.490/ay, Booking ₺1.990/ay. 30 gün ücretsiz deneyin.",
   },
   us: {
     title: "Salon & Med Spa Software for the United States",

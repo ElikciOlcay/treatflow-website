@@ -13,14 +13,14 @@ export const trPrivacy = {
     },
     {
       heading: "2. Veriler nerede barındırılır",
-      html: `<p>Treatflow AB sunucularında (Frankfurt) barındırılır. Bağlantılar SSL ile şifrelenir. Günlük yedek alırız. Müşteri datasını satmayız; pazaryeri değiliz.</p>
+      html: `<p>Treatflow, Frankfurt'taki AB sunucularında barındırılır. Bağlantılar SSL ile şifrelenir ve günlük yedekleme yapılır. Müşteri verilerini satmayız; Treatflow bir pazaryeri değildir.</p>
 <p>Türkiye'deki kullanıcılar için işleme KVKK kapsamındadır. Treatflow'un \"yüzde yüz KVKK sertifikalı\" olduğunu iddia etmiyoruz; barındırma, sözleşmeler ve süreçler AB veri korumasına göre tasarlanmıştır. Bağlayıcı metin Almanca gizlilik politikasıdır.</p>`,
     },
     {
       heading: "3. İşlediğimiz veriler",
       html: `<p><strong>Web sitesi ziyaretçileri:</strong> IP adresi, erişim zamanı, tarayıcı, referrer – siteyi sunmak ve güvenliğini sağlamak için.</p>
 <p><strong>İletişim ve deneme kaydı:</strong> gönderdiğiniz ad, e-posta, salon bilgileri.</p>
-<p><strong>Uygulama içi (salon datası):</strong> stüdyonun sakladığı müşteri kayıtları, randevular, formlar, imzalar, işlem notları, fotoğraflar ve fatura verileri. Salon kendi müşteri datası için kural olarak veri sorumlusudur; Treatflow veri işleyen olarak veri işleme sözleşmesi altında hareket eder.</p>`,
+<p><strong>Uygulama içi (işletme verileri):</strong> işletmenin sakladığı müşteri kayıtları, randevular, formlar, imzalar, işlem notları, fotoğraflar ve fatura verileri. İşletme, kendi müşteri verileri bakımından kural olarak veri sorumlusudur; Treatflow veri işleyen olarak veri işleme sözleşmesi kapsamında hareket eder.</p>`,
     },
     {
       heading: "4. Amaçlar ve hukuki dayanaklar",
@@ -48,7 +48,7 @@ export const trTerms = {
     "Treatflow koşulları: güzellik salonları için SaaS, şeffaf fiyat, 30 günlük deneme, randevu komisyonu yok. Bağlayıcı sözleşme Almanca AGB'dir.",
   title: "Kullanım Koşulları",
   intro:
-    "Treatflow, salon operasyonu için ücretli bir SaaS ürünüdür. Hesap oluşturarak bu koşulları kabul edersiniz. Bağlayıcı sözleşme /agb adresindeki Almanca AGB'dir. Bu sayfa Türkiye'deki stüdyolar için ticari noktaları açıklar.",
+    "Treatflow, güzellik ve estetik işletmelerinin operasyonlarını yönetmek için sunulan ücretli bir SaaS ürünüdür. Hesap oluşturarak bu koşulları kabul edersiniz. Bağlayıcı sözleşme /agb adresindeki Almanca AGB'dir. Bu sayfa Türkiye'deki işletmeler için temel ticari koşulları açıklar.",
   sections: [
     {
       heading: "1. Hizmet",
@@ -56,15 +56,15 @@ export const trTerms = {
     },
     {
       heading: "2. Paketler, deneme ve iptal",
-      html: `<p>Türkiye lansman fiyatı ayda 1.490 TL (ilk 100 işletme), sonrasında ayda 1.990 TL. 30 günlük deneme kredi kartı gerektirmez. Aylık paketler fatura dönemi sonunda iptal edilebilir. Taahhüt yoktur.</p>`,
+      html: `<p>İlk 100 işletme için Türkiye lansman fiyatları Basic pakette aylık 1.490 TL, Booking pakette aylık 1.990 TL'dir. Güncel fiyatlar her zaman <a href="/tr/fiyatlar">fiyatlar sayfasında</a> yayımlanır. 30 günlük deneme kredi kartı gerektirmez. Aylık paketler fatura dönemi sonunda iptal edilebilir. Taahhüt yoktur.</p>`,
     },
     {
       heading: "3. Salonun sorumluluğu",
-      html: `<p>Girdiğiniz datadan, form ve kayıtların doğru kullanımından ve ülkenizdeki güzellik, sağlık ve vergi kurallarına uymaktan siz sorumlusunuz. Treatflow hukuki veya tıbbi tavsiyenin yerine geçmez. Güzellik salonları medikal işlem reklamı yapamaz; yazılım bu ayrımı sizin yerinize denetlemez.</p>`,
+      html: `<p>Girdiğiniz verilerden, form ve kayıtların doğru kullanımından ve ülkenizdeki güzellik, sağlık ve vergi kurallarına uymaktan siz sorumlusunuz. Treatflow hukuki veya tıbbi tavsiyenin yerine geçmez. Güzellik salonları medikal işlem reklamı yapamaz; yazılım bu ayrımı sizin yerinize denetlemez.</p>`,
     },
     {
       heading: "4. Erişilebilirlik ve destek",
-      html: `<p>Yüksek erişilebilirlik hedefleriz ve e-posta desteği sunarız (Booking paketinde öncelikli destek). Ürünü güncelleyebiliriz. Kritik güvenlik güncellemeleri bildirimsiz uygulanabilir. Türkçe destek sağlanır.</p>`,
+      html: `<p>Yüksek erişilebilirlik hedefleriz ve e-posta ile WhatsApp desteği sunarız (Booking paketinde öncelikli destek). Ürünü güncelleyebiliriz. Kritik güvenlik güncellemeleri bildirimsiz uygulanabilir. Türkçe destek sağlanır.</p>`,
     },
     {
       heading: "5. Bağlayıcı Almanca koşullar",
