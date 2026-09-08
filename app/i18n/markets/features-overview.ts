@@ -12,7 +12,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
-import { EN_SLUGS } from "@/app/i18n/market-routes";
+import { EN_SLUGS, marketPagePath, type MarketPageSlug } from "@/app/i18n/market-routes";
 import type { PrefixedMarket } from "@/app/i18n/config";
 import { getUiChrome } from "./ui-chrome";
 
@@ -282,7 +282,7 @@ function enContent(market: PrefixedMarket): FeaturesOverviewContent {
 function trContent(): FeaturesOverviewContent {
   const market = "tr" as const;
   const chrome = getUiChrome("tr");
-  const base = (key: keyof typeof EN_SLUGS) => p(market, EN_SLUGS[key]);
+  const base = (key: MarketPageSlug) => marketPagePath("tr", key);
   return {
     breadcrumbLabel: "Özellikler",
     homeHref: "/tr",
@@ -421,6 +421,7 @@ function trContent(): FeaturesOverviewContent {
     industriesTitle: "Bu özellikler kimler için",
     industriesSubtitle: "Aynı ürün haritası, her işletmenin çalışma şekline göre.",
     industries: [
+      { href: "/tr/guzellik-merkezi-programi", label: "Güzellik merkezleri" },
       { href: base("beauty-salon-software"), label: "Güzellik salonları" },
       { href: base("aesthetic-clinic-software"), label: "Estetik klinikleri" },
       { href: base("laser-hair-removal-software"), label: "Lazer epilasyon" },

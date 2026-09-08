@@ -16,6 +16,8 @@ import {
   type IndustryPageKey,
 } from "@/app/i18n/industry-slugs";
 
+import { TR_SLUG_OVERRIDES, type MarketPageSlug } from "@/app/i18n/market-routes";
+
 type FeatureSlugKey =
   | "online-booking"
   | "client-records"
@@ -24,11 +26,11 @@ type FeatureSlugKey =
   | "pricing";
 
 const featureSlugsEn: Record<FeatureSlugKey, string> = {
-  "online-booking": "online-booking",
-  "client-records": "client-records",
+  "online-booking": TR_SLUG_OVERRIDES["online-booking"] ?? "online-booking",
+  "client-records": TR_SLUG_OVERRIDES["client-records"] ?? "client-records",
   forms: "forms",
   "treatment-documentation": "treatment-documentation",
-  pricing: "pricing",
+  pricing: TR_SLUG_OVERRIDES.pricing ?? "pricing",
 };
 
 const industryLabels: Record<IndustryPageKey, string> = {
@@ -100,12 +102,13 @@ function buildPage(
   key: IndustryPageKey,
   body: PageBody
 ): InternationalPageContent {
-  const slug = industrySlugs[key].en;
+  const slug =
+    TR_SLUG_OVERRIDES[key as MarketPageSlug] ?? industrySlugs[key].en;
   const canonicalPath = `/${market}/${slug}`;
 
   const internalLinks = [
     ...body.siblingKeys.map((k) => ({
-      href: `/${market}/${industrySlugs[k].en}`,
+      href: `/${market}/${TR_SLUG_OVERRIDES[k as MarketPageSlug] ?? industrySlugs[k].en}`,
       label: industryLabels[k],
     })),
     ...body.featureKeys.map((fk) => ({
@@ -181,17 +184,17 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Güzellik salonları için en iyi yazılım hangisi?",
         answer:
-          "Randevu, müşteri takibi, dijital onam ve işlem kaydını tek sistemde isteyen salonlar için Treatflow güçlü bir seçenektir. Komisyonsuz online randevu, WhatsApp hatırlatma ve KVKK uyumlu AB sunucuları ile çalışır.",
+          "Randevu, müşteri takibi, dijital onam ve işlem kaydını tek sistemde yönetmek isteyen salonlar için Treatflow güçlü bir seçenektir. Komisyonsuz online randevu ve WhatsApp hatırlatmaları sunar; veriler KVKK kapsamındaki süreçlerle AB sunucularında saklanır.",
       },
       {
         question: "Treatflow randevulardan komisyon alıyor mu?",
         answer:
-          "Hayır. Treatflow bir pazaryeri değil, sizin salon yazılımınızdır. Randevu başına komisyon yoktur. Randevu sayfanız ve müşteri datanız sizin kontrolünüzdedir.",
+          "Hayır. Treatflow bir pazaryeri değil, işletmenizin kendi yazılımıdır. Randevu başına komisyon yoktur. Randevu sayfanız ve müşteri verileriniz sizin kontrolünüzdedir.",
       },
     ],
     whatTitle: "Treatflow güzellik salonları için ne sunar?",
     whatParas: [
-      "Treatflow dağınık araçları tek bir sistemle değiştirir: takvim, müşteri profilleri, dijital formlar ve uygulama notları randevudan takibe kadar birlikte çalışır.",
+      "Treatflow dağınık araçların yerini tek bir sistemle alır: takvim, müşteri profilleri, dijital formlar ve işlem notları randevudan takibe kadar birlikte çalışır.",
       "Salonlar Treatflow'u online randevu sunmak, müşteri geçmişini erişilebilir tutmak ve uygulamaları tüm ekip için tutarlı şekilde belgelemek için kullanır.",
     ],
     audiences: [
@@ -224,28 +227,28 @@ const pages: Record<IndustryPageKey, PageBody> = {
       { icon: ClipboardCheck, title: "Onam Formları", desc: "Her uygulamadan önce dijital anamnez." },
       { icon: FileText, title: "İşlem Notları", desc: "Her ziyaret için net seans kaydı." },
       { icon: Camera, title: "Öncesi-sonrası fotoğraf", desc: "Müşterilere bağlı önce/sonra fotoğrafları." },
-      { icon: Bell, title: "Hatırlatmalar", desc: "gelmemeyi azaltmak için WhatsApp ve e-posta." },
+      { icon: Bell, title: "Hatırlatmalar", desc: "Randevuya gelmeme oranını azaltmak için WhatsApp ve e-posta." },
     ],
     benefits: [
       "Randevu ve dokümantasyonda daha az evrak işi",
       "İlk randevudan itibaren daha iyi müşteri deneyimi",
       "Ekip devri için yapılandırılmış dosyalar",
       "Tek uygulamada modern dijital iş akışları",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     marketTitle: "Salonlar neden Treatflow'u tercih ediyor",
     marketParas: [
-      "Genel araçlar genellikle randevuda durur. Treatflow randevuyu müşteri kayıtları ve işlem kaydı ile birleştirir – tam olarak profesyonel salonların yapıya ihtiyaç duyduğu yerde.",
+      "Genel araçlar çoğunlukla randevuda durur. Treatflow randevuyu müşteri geçmişi ve işlem kaydıyla birleştirir; profesyonel salonların asıl ihtiyaç duyduğu düzen burada başlar.",
     ],
     highlights: [
       "Randevu başına komisyon olmadan online randevu",
-      "Uygulama geçmişi ile dijital müşteri kayıtları",
+      "İşlem geçmişini içeren dijital müşteri kartları",
       "Ziyaretlerden önce onam formları ve anamnez",
       "Uygulama notları ve öncesi-sonrası fotoğraf",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     aiSummary:
-      "Treatflow, online randevu, müşteri kayıtları, onam formları, uygulama notları, öncesi-sonrası fotoğraf ve hatırlatmalar içeren güzellik salonu yazılımıdır. Güzellik salonları, spa merkezleri ve cilt bakım stüdyoları için. AB sunucularında KVKK uyumlu saklama.",
+      "Treatflow; online randevu, müşteri kartları, onam formları, işlem notları, öncesi-sonrası fotoğraflar ve hatırlatmalar sunan güzellik salonu yazılımıdır. Güzellik salonları, spa ve cilt bakım merkezleri için tasarlanmıştır. Veriler KVKK kapsamındaki süreçlerle AB sunucularında saklanır.",
     faqs: [
       {
         question: "Treatflow nedir?",
@@ -265,7 +268,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Verilerim nerede saklanır?",
         answer:
-          "Treatflow verileri Frankfurt'taki AB sunucularında saklar; KVKK uyumu için tasarlanmıştır.",
+          "Treatflow verileri Frankfurt'taki AB sunucularında saklar ve KVKK kapsamındaki süreçleri destekler.",
       },
     ],
     siblingKeys: ["aesthetic-clinic-software", "nail-salon-software", "spa-wellness-software"],
@@ -273,18 +276,18 @@ const pages: Record<IndustryPageKey, PageBody> = {
   },
 
   "aesthetic-clinic-software": {
-    serviceName: "Estetik Klinik Yazılımı",
+    serviceName: "Medikal Estetik Merkezi Yazılımı",
     serviceDescription:
-      "Estetik klinik yazılımı: dijital onam, işlem kaydı, hasta takibi ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
-    eyebrow: "Estetik Klinik Yazılımı",
-    h1: "Onam, işlem kaydı ve hasta takibi ile estetik klinik yazılımı",
+      "Medikal estetik merkezi yazılımı: dijital onam, işlem kaydı, müşteri takibi ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
+    eyebrow: "Medikal Estetik Merkezi Yazılımı",
+    h1: "Onam, işlem kaydı ve müşteri takibi ile medikal estetik yazılımı",
     subtitle:
       "Medikal estetik klinikleri için dijital onam, seans notları, öncesi-sonrası fotoğraf ve müşteri kaydı – randevudan takibe kadar tek panel.",
     aiCapsules: [
       {
         question: "Estetik kliniklerin hangi yazılıma ihtiyacı var?",
         answer:
-          "Estetik klinikler onam formları, işlem kaydı, fotoğraf arşivi ve hasta geçmişini tek sistemde tutmak ister. Treatflow; botoks, dolgu, lazer ve cilt bakımı için online randevu, dijital müşteri kaydı ve seans notları sunar.",
+          "Medikal estetik merkezleri onam formları, işlem kaydı, fotoğraf arşivi ve müşteri geçmişini tek sistemde tutmak ister. Treatflow; botoks, dolgu, lazer ve cilt bakımı için online randevu, dijital müşteri kaydı ve seans notları sunar.",
       },
       {
         question: "Treatflow medikal estetik için uygun mu?",
@@ -334,21 +337,21 @@ const pages: Record<IndustryPageKey, PageBody> = {
       "Her işlem için net onam kaydı",
       "Resepsiyon ve uygulama odası arasında daha az evrak işi",
       "İlk randevudan itibaren profesyonel müşteri deneyimi",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     marketTitle: "Estetik klinikler neden Treatflow'u tercih ediyor",
     marketParas: [
-      "Klinikler profesyonel müşteri deneyiminin arkasında güvenilir dokümantasyona ihtiyaç duyar. Treatflow randevuyu müşteri kayıtları ve uygulama notları ile gereksiz karmaşıklık olmadan birleştirir.",
+      "Merkezler, profesyonel müşteri deneyiminin yanında güvenilir dokümantasyona da ihtiyaç duyar. Treatflow randevuyu müşteri kayıtları ve işlem notlarıyla gereksiz karmaşıklık olmadan birleştirir.",
     ],
     highlights: [
       "Randevu başına komisyon olmadan online randevu",
-      "Uygulama geçmişi ile dijital müşteri kayıtları",
+      "İşlem geçmişini içeren dijital müşteri kartları",
       "Ziyaretlerden önce onam formları ve anamnez",
       "Uygulama notları ve öncesi-sonrası fotoğraf",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     aiSummary:
-      "Treatflow, işlem kaydı, onam formları, müşteri kayıtları, öncesi-sonrası fotoğraf ve online randevu içeren estetik klinik yazılımıdır. Estetik klinikler ve medikal estetik için. KVKK uyumlu.",
+      "Treatflow; işlem kaydı, onam formları, müşteri kartları, öncesi-sonrası fotoğraflar ve online randevu sunan medikal estetik yazılımıdır. Estetik merkezleri ve medikal estetik işletmeleri için tasarlanmıştır. Veriler KVKK kapsamındaki süreçlerle saklanır.",
     faqs: [
       {
         question: "Treatflow nedir?",
@@ -358,7 +361,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Birden fazla uygulayıcı tek bir klinik hesabını paylaşabilir mi?",
         answer:
-          "Evet. Müşteri kayıtları, onam formları ve uygulama notları ekip içerisinde paylaşılır, böylece dokümantasyon tutarlı kalır.",
+          "Evet. Müşteri kayıtları, onam formları ve işlem notları yetkili ekip üyeleri tarafından görüntülenebilir; böylece dokümantasyon tutarlı kalır.",
       },
       {
         question: "Nasıl başlayabilirim?",
@@ -366,8 +369,8 @@ const pages: Record<IndustryPageKey, PageBody> = {
           "Hemen kaydolun ve 30 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
       },
       {
-        question: "Treatflow KVKK uyumlu mu?",
-        answer: "Treatflow verileri Frankfurt'taki AB sunucularında saklar; KVKK uyumu için tasarlanmıştır.",
+        question: "Treatflow, KVKK kapsamındaki süreçleri nasıl destekler?",
+        answer: "Treatflow verileri Frankfurt'taki AB sunucularında saklar ve KVKK kapsamındaki süreçleri destekler.",
       },
     ],
     siblingKeys: ["beauty-salon-software", "laser-hair-removal-software", "permanent-makeup-software"],
@@ -386,12 +389,12 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Lazer stüdyolarının hangi yazılıma ihtiyacı var?",
         answer:
-          "Lazer stüdyoları seri geçmişi ile müşteri kayıtları, onam formları, seans notları, öncesi-sonrası fotoğraf ve randevu hatırlatmalarına ihtiyaç duyar. Treatflow, lazer epilasyon stüdyoları için online randevu ve yapılandırılmış dokümantasyon sunar.",
+          "Lazer epilasyon merkezleri; seans geçmişi, müşteri kayıtları, onam formları, seans notları, öncesi-sonrası fotoğraflar ve randevu hatırlatmalarına ihtiyaç duyar. Treatflow, online randevuyu düzenli işlem dokümantasyonuyla birleştirir.",
       },
       {
-        question: "Treatflow çoklu seans paketlerini takip edebilir mi?",
+        question: "Her lazer seansı müşteri kaydında belgelenir mi?",
         answer:
-          "Evet. Her seans müşteri kaydında belgelenir, böylece ilerlemeyi, ayar notlarını ve bir sonraki randevuyu her zaman görebilirsiniz.",
+          "Evet. Her seans ayrı bir işlem kaydı olarak tutulur; ilerleme, ayar notları ve sonraki randevu görülebilir. Kalan paket hakkını otomatik düşüren bir kasa sayacı sunulmaz.",
       },
     ],
     whatTitle: "Treatflow lazer stüdyoları için ne sunar?",
@@ -408,7 +411,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
     problems: [
       {
         problem: "Seans ilerlemesi kayboluyor",
-        solution: "Müşteri kartoteğinde seans başına uygulama geçmişi ve notlar.",
+        solution: "Müşteri kartında her seansa ait işlem geçmişi ve notlar.",
       },
       {
         problem: "Eksik onam bilgileri",
@@ -436,7 +439,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       "Her yeni müşteri için yapılandırılmış onam",
       "Kaçırılan seanslarda daha az manuel takip",
       "Ekip tutarlılığı için profesyonel dokümantasyon",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     marketTitle: "Lazer stüdyoları neden Treatflow'u tercih ediyor",
     marketParas: [
@@ -444,13 +447,13 @@ const pages: Record<IndustryPageKey, PageBody> = {
     ],
     highlights: [
       "Randevu başına komisyon olmadan online randevu",
-      "Dijital müşteri kayıtlarınde seans geçmişi",
+      "Dijital müşteri kartında seans geçmişi",
       "Uygulama serilerinden önce onam formları",
       "Öncesi-sonrası fotoğraf ve hatırlatmalar",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     aiSummary:
-      "Treatflow, seans takibi, onam formları, öncesi-sonrası fotoğraf, online randevu ve hatırlatmalar içeren lazer epilasyon yazılımıdır. Lazer ve IPL stüdyoları için. KVKK uyumlu.",
+      "Treatflow; seans takibi, onam formları, öncesi-sonrası fotoğraflar, online randevu ve hatırlatmalar sunan lazer epilasyon yazılımıdır. Lazer ve IPL merkezleri için tasarlanmıştır. Veriler KVKK kapsamındaki süreçlerle saklanır.",
     faqs: [
       {
         question: "Treatflow nedir?",
@@ -470,7 +473,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Verilerim nerede saklanır?",
         answer:
-          "Treatflow verileri Frankfurt'taki AB sunucularında saklar; KVKK uyumu için tasarlanmıştır.",
+          "Treatflow verileri Frankfurt'taki AB sunucularında saklar ve KVKK kapsamındaki süreçleri destekler.",
       },
     ],
     siblingKeys: ["beauty-salon-software", "aesthetic-clinic-software", "spa-wellness-software"],
@@ -489,7 +492,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Kalıcı makyaj stüdyolarının hangi yazılıma ihtiyacı var?",
         answer:
-          "PMU stüdyoları onam formları, pigment ve teknik dokümantasyonu, önce/sonra fotoğrafları ve iyileşme takip randevularına ihtiyaç duyar. Treatflow bunları AB sunucularında KVKK uyumlu saklama ile tek platformda birleştirir.",
+          "Kalıcı makyaj uzmanları; onam formları, pigment ve teknik işlem notları, öncesi-sonrası fotoğraflar ve iyileşme kontrol randevularına ihtiyaç duyar. Treatflow bunları tek platformda birleştirir ve verileri KVKK kapsamındaki süreçlerle AB sunucularında saklar.",
       },
       {
         question: "Treatflow microblading için uygun mu?",
@@ -523,7 +526,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       },
       {
         problem: "Önce/sonra fotoğrafları bulmak zor",
-        solution: "Müşteri kartoteğine ve ziyarete bağlı fotoğraflar.",
+        solution: "Müşteri kartına ve ilgili ziyarete bağlı fotoğraflar.",
       },
     ],
     features: [
@@ -539,7 +542,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       "Her müşteri için profesyonel onam kaydı",
       "Konsültasyon ve işlem arasında daha az evrak işi",
       "Portfolyo ve takip için net fotoğraf dosyaları",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     marketTitle: "PMU stüdyoları neden Treatflow'u tercih ediyor",
     marketParas: [
@@ -550,10 +553,10 @@ const pages: Record<IndustryPageKey, PageBody> = {
       "İşlemlerden önce onam formları",
       "Pigment ve teknik dokümantasyonu",
       "Müşterilere bağlı fotoğraf geçmişi",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     aiSummary:
-      "Treatflow, onam formları, pigment notları, öncesi-sonrası fotoğraf, müşteri kayıtları, online randevu ve hatırlatmalar içeren kalıcı makyaj yazılımıdır. PMU ve microblading stüdyoları için. KVKK uyumlu.",
+      "Treatflow; onam formları, pigment notları, öncesi-sonrası fotoğraflar, müşteri kayıtları, online randevu ve hatırlatmalar sunan kalıcı makyaj yazılımıdır. Kalıcı makyaj ve microblading işletmeleri için tasarlanmıştır. Veriler KVKK kapsamındaki süreçlerle saklanır.",
     faqs: [
       {
         question: "Treatflow nedir?",
@@ -573,7 +576,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Verilerim nerede saklanır?",
         answer:
-          "Treatflow verileri Frankfurt'taki AB sunucularında saklar; KVKK uyumu için tasarlanmıştır.",
+          "Treatflow verileri Frankfurt'taki AB sunucularında saklar ve KVKK kapsamındaki süreçleri destekler.",
       },
     ],
     siblingKeys: ["beauty-salon-software", "aesthetic-clinic-software", "lash-studio-software"],
@@ -592,7 +595,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Dövme stüdyolarının hangi yazılıma ihtiyacı var?",
         answer:
-          "Dövme stüdyoları dijital onam ve feragat formları, müşteri kayıtları, seans notları, referans fotoğrafları ve hatırlatmalı güvenilir randevu planlamaya ihtiyaç duyar. Treatflow bunları AB sunucularında KVKK uyumlu saklama ile tek platformda birleştirir.",
+          "Dövme stüdyoları; dijital onam formları, müşteri kayıtları, seans notları, referans görselleri ve güvenilir randevu planlamasına ihtiyaç duyar. Treatflow bunları tek platformda birleştirir ve verileri KVKK kapsamındaki süreçlerle AB sunucularında saklar.",
       },
       {
         question: "Treatflow kağıt feragat formlarının yerini alır mı?",
@@ -603,18 +606,18 @@ const pages: Record<IndustryPageKey, PageBody> = {
     whatTitle: "Treatflow dövme stüdyoları için ne sunar?",
     whatParas: [
       "Treatflow dövme stüdyolarının onamı, randevuları ve müşteri geçmişini tek sistemde birleştirmesine yardımcı olur. Sanatçılar müşteri profilinde notları ve fotoğrafları görür; resepsiyon takvimi yönetir.",
-      "Online randevu ve hatırlatmalar gelmemeleri azaltırken, dijital formlar her seans öncesi kağıt kaosunu ortadan kaldırır.",
+      "Online randevu ve hatırlatmalar randevuya gelmeme oranını azaltmaya yardımcı olur; dijital formlar ise her seans öncesindeki kâğıt işini ortadan kaldırır.",
     ],
     audiences: [
       "Dövme stüdyoları ve özel stüdyolar",
-      "Tek takvimi paylaşan çok sanatçılı dükkanlar",
+      "Aynı takvimi paylaşan çok sanatçılı dövme stüdyoları",
       "Dövme ve iyileşme takibi sunan stüdyolar",
       "Kağıt feragat ve takvimleri değiştiren ekipler",
     ],
     problems: [
       {
         problem: "Kağıt feragat formları ve arşiv dolapları",
-        solution: "Müşteri kartoteğinde güvenle saklanan dijital onam.",
+        solution: "Müşteri kartında saklanan dijital onam.",
       },
       {
         problem: "Sanatçılar arasında çift randevu",
@@ -625,7 +628,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
         solution: "Her müşteriye bağlı uygulama notları ve fotoğraflar.",
       },
       {
-        problem: "Müşteriler kapora veya randevuyu unutuyor",
+        problem: "Müşteriler randevularını unutuyor",
         solution: "WhatsApp ve e-posta ile hatırlatmalar.",
       },
     ],
@@ -642,7 +645,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       "Sanatçılar arasında daha net takvimler",
       "Rötuş ve kaplamalar için hazır müşteri geçmişi",
       "Hatırlatmalarla daha az gelmeme",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     marketTitle: "Dövme stüdyoları neden Treatflow'u tercih ediyor",
     marketParas: [
@@ -650,13 +653,13 @@ const pages: Record<IndustryPageKey, PageBody> = {
     ],
     highlights: [
       "Seanslardan önce dijital onam",
-      "Çok sanatçılı dükkanlar için paylaşımlı takvim",
+      "Çok sanatçılı dövme stüdyoları için ortak takvim",
       "Notlar ve fotoğraflarla müşteri kayıtları",
-      "gelmemeyi azaltmak için hatırlatmalar",
-      "AB sunucularında KVKK uyumlu saklama",
+      "Randevuya gelmeme oranını azaltan hatırlatmalar",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     aiSummary:
-      "Treatflow, onam formları, müşteri kayıtları, seans notları, referans fotoğrafları, online randevu ve hatırlatmalar içeren dövme stüdyosu yazılımıdır. Dövme stüdyoları ve çok sanatçılı dükkanlar için. KVKK uyumlu.",
+      "Treatflow; onam formları, müşteri kayıtları, seans notları, referans görselleri, online randevu ve hatırlatmalar sunan dövme stüdyosu yazılımıdır. Tek veya çok sanatçılı stüdyolar için tasarlanmıştır. Veriler KVKK kapsamındaki süreçlerle saklanır.",
     faqs: [
       {
         question: "Treatflow nedir?",
@@ -676,7 +679,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Verilerim nerede saklanır?",
         answer:
-          "Treatflow verileri Frankfurt'taki AB sunucularında saklar; KVKK uyumu için tasarlanmıştır.",
+          "Treatflow verileri Frankfurt'taki AB sunucularında saklar ve KVKK kapsamındaki süreçleri destekler.",
       },
     ],
     siblingKeys: ["permanent-makeup-software", "beauty-salon-software", "aesthetic-clinic-software"],
@@ -695,24 +698,24 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Tırnak salonları için en iyi yazılım hangisi?",
         answer:
-          "Tırnak salonları komisyonsuz online randevu, net ekip takvimi, müşteri tercih notları ve otomatik hatırlatmalardan faydalanır. Treatflow bunları AB sunucularında KVKK uyumlu saklama ile sunar.",
+          "Tırnak salonları komisyonsuz online randevu, düzenli ekip takvimi, müşteri tercih notları ve otomatik hatırlatmalardan yararlanır. Treatflow verileri KVKK kapsamındaki süreçlerle AB sunucularında saklar.",
       },
       {
-        question: "Müşteriler dolgu randevularını online alabilir mi?",
+        question: "Müşteriler bakım randevularını online alabilir mi?",
         answer:
           "Evet. Müşteriler kendi randevu sayfanız üzerinden 7/24 hizmet randevusu alabilir – pazaryeri ücretleri olmadan.",
       },
     ],
     whatTitle: "Treatflow tırnak salonları için ne sunar?",
     whatParas: [
-      "Tırnak salonları hızlı dönüşüm ve dolu takvimlerle çalışır. Treatflow randevuları düzenli tutar, müşteri tercihlerini kaydeder ve hatırlatmalar ile gelmemeleri azaltır.",
-      "Stilistler müşteri profillerinde renk geçmişini, alerjileri ve notları görür – her müşteri için tekrar sormadan.",
+      "Tırnak salonları kısa işlem aralıkları ve yoğun takvimlerle çalışır. Treatflow randevuları düzenli tutar, müşteri tercihlerini kaydeder ve hatırlatmalarla randevuya gelmeme oranını azaltmaya yardımcı olur.",
+      "Uzmanlar müşteri profillerinde renk geçmişini, alerjileri ve notları görür; her ziyarette aynı soruları yeniden sormak gerekmez.",
     ],
     audiences: [
       "Tırnak salonları ve protez tırnak salonları",
-      "Çok stilistli tırnak stüdyoları",
+      "Birden fazla uzmanın çalıştığı tırnak salonları",
       "Jel, akrilik ve tırnak sanatı hizmetleri sunan salonlar",
-      "Yüksek randevu hacmi ve tekrar müşterileri olan stüdyolar",
+      "Yoğun randevu trafiği ve düzenli müşterileri olan salonlar",
     ],
     problems: [
       {
@@ -745,7 +748,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       "Müşteriler her zaman kendi tercih geçmişlerini görür",
       "Stilistler arası daha net planlama",
       "Online randevu ile daha az telefon kesintisi",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     marketTitle: "Tırnak salonları neden Treatflow'u tercih ediyor",
     marketParas: [
@@ -756,10 +759,10 @@ const pages: Record<IndustryPageKey, PageBody> = {
       "Tercihlerle müşteri kayıtları",
       "Paylaşımlı ekip takvimi",
       "Müşteri tercih geçmişi",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     aiSummary:
-      "Treatflow, online randevu, müşteri kayıtları, tercih notları, hatırlatmalar ve dijital formlar içeren tırnak salonu yazılımıdır. Tırnak salonları ve çok stilistli protez tırnak salonları için. KVKK uyumlu.",
+      "Treatflow; online randevu, müşteri kayıtları, tercih notları, hatırlatmalar ve dijital formlar sunan tırnak salonu yazılımıdır. Tırnak ve protez tırnak işletmeleri için tasarlanmıştır. Veriler KVKK kapsamındaki süreçlerle saklanır.",
     faqs: [
       {
         question: "Treatflow nedir?",
@@ -779,7 +782,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Verilerim nerede saklanır?",
         answer:
-          "Treatflow verileri Frankfurt'taki AB sunucularında saklar; KVKK uyumu için tasarlanmıştır.",
+          "Treatflow verileri Frankfurt'taki AB sunucularında saklar ve KVKK kapsamındaki süreçleri destekler.",
       },
     ],
     siblingKeys: ["beauty-salon-software", "lash-studio-software", "spa-wellness-software"],
@@ -787,39 +790,39 @@ const pages: Record<IndustryPageKey, PageBody> = {
   },
 
   "lash-studio-software": {
-    serviceName: "Kirpik Stüdyosu Yazılımı",
+    serviceName: "Kirpik Salonu Yazılımı",
     serviceDescription:
-      "Kirpik stüdyosu yazılımı: dolgu planlama, müşteri notları, dijital onam ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
-    eyebrow: "Kirpik Stüdyosu Yazılımı",
-    h1: "Kirpik uzmanları için kirpik stüdyosu yazılımı",
+      "Kirpik salonu yazılımı: bakım randevuları, müşteri notları, dijital onam ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
+    eyebrow: "Kirpik Salonu Yazılımı",
+    h1: "Kirpik uzmanları için salon yazılımı",
     subtitle:
-      "Dolgu planlama, müşteri tercihleri, onam formları ve hatırlatmalar – kirpik uzatma stüdyoları için tasarlandı.",
+      "Bakım randevuları, müşteri tercihleri, onam formları ve hatırlatmalar – kirpik uygulaması yapan salonlar için tasarlandı.",
     aiCapsules: [
       {
-        question: "Kirpik stüdyoları için en iyi yazılım hangisi?",
+        question: "Kirpik salonları için hangi yazılım kullanılmalı?",
         answer:
-          "Kirpik stüdyoları komisyonsuz online randevuya, kendi kirpik notlarınıza (kıvrım, uzunluk, haritalama), onam formlarına ve dolgu hatırlatmalarına ihtiyaç duyar. Treatflow bunları AB sunucularında KVKK uyumlu saklama ile sunar.",
+          "Kirpik işletmeleri; komisyonsuz online randevuya, kıvrım, uzunluk ve haritalama notlarına, onam formlarına ve bakım randevusu hatırlatmalarına ihtiyaç duyar. Treatflow verileri KVKK kapsamındaki süreçlerle AB sunucularında saklar.",
       },
       {
-        question: "Müşteri başına dolgu aralıklarını takip edebilir miyim?",
+        question: "Müşteri başına bakım aralıklarını takip edebilir miyim?",
         answer:
-          "Evet. Ziyaret geçmişi ve notlar müşteri profilinde kalır, böylece bir sonraki dolgunun ne zaman gerektiğini ve önceki seferde ne yapıldığını bilirsiniz.",
+          "Evet. Ziyaret geçmişi ve notlar müşteri profilinde kalır; böylece bir sonraki bakımın ne zaman gerektiğini ve önceki uygulamada ne yapıldığını görebilirsiniz.",
       },
     ],
-    whatTitle: "Treatflow kirpik stüdyoları için ne sunar?",
+    whatTitle: "Treatflow kirpik salonları için ne sunar?",
     whatParas: [
-      "Kirpik işletmeleri dolgularla büyür. Treatflow takvimi dolu tutar, kıvrım, uzunluk ve haritalama tercihlerini belgeler ve müşterilere bir sonraki randevularından önce hatırlatır.",
+      "Kirpik işletmeleri düzenli bakım randevularıyla büyür. Treatflow kıvrım, uzunluk ve haritalama tercihlerini belgeler; müşterilere bir sonraki randevularını hatırlatır.",
       "Dijital onam ve öncesi-sonrası fotoğraf profesyonel standartları destekler, koltuk zamanınızı yavaşlatmadan.",
     ],
     audiences: [
-      "Kirpik uzatma stüdyoları",
+      "Kirpik uygulaması yapan salonlar",
       "Özel kirpik uygulayıcıları olan güzellik salonları",
       "Kendi randevularını yöneten solo kirpik teknisyenleri",
-      "Birden fazla koltukta dolgu koordine eden ekipler",
+      "Birden fazla koltukta bakım randevusu yöneten ekipler",
     ],
     problems: [
       {
-        problem: "Dolgu verileri tablolarda",
+        problem: "Bakım aralıkları tablolarda tutuluyor",
         solution: "Tek sistemde müşteri geçmişi ve hatırlatmalar.",
       },
       {
@@ -836,33 +839,33 @@ const pages: Record<IndustryPageKey, PageBody> = {
       },
     ],
     features: [
-      { icon: Calendar, title: "Dolgu Planlama", desc: "Set ve dolgu randevularını net müsaitlik ile planlayın." },
+      { icon: Calendar, title: "Bakım Planlama", desc: "Yeni set ve bakım randevularını uygun saatlere planlayın." },
       { icon: Users, title: "Müşteri ve Kirpik Notları", desc: "Kıvrım, uzunluk, haritalama ve yapıştırıcılar dosyada." },
       { icon: ClipboardCheck, title: "Onam Formları", desc: "Her yeni setten önce dijital anamnez." },
       { icon: Camera, title: "İlerleme Fotoğrafları", desc: "Her ziyaret için sonuçları belgeleyin." },
-      { icon: Link2, title: "Online Randevu", desc: "Müşteriler 7/24 dolgu randevusu alır." },
-      { icon: Bell, title: "Dolgu Hatırlatmaları", desc: "Otomatik hatırlatmalarla yüksek elde tutma oranını koruyun." },
+      { icon: Link2, title: "Online Randevu", desc: "Müşteriler 7/24 bakım randevusu alabilir." },
+      { icon: Bell, title: "Bakım Hatırlatmaları", desc: "Otomatik hatırlatmalarla düzenli müşteri dönüşünü destekleyin." },
     ],
     benefits: [
-      "Zamanında hatırlatmalarla daha yüksek dolgu elde tutma oranı",
+      "Zamanında hatırlatmalarla daha düzenli bakım randevuları",
       "Belgelenmiş tercihler ile tutarlı sonuçlar",
       "Koltuk başında daha az evrak işi",
       "Profesyonel onam ve fotoğraf dosyaları",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
-    marketTitle: "Kirpik stüdyoları neden Treatflow'u tercih ediyor",
+    marketTitle: "Kirpik salonları neden Treatflow'u tercih ediyor",
     marketParas: [
-      "Kirpik stüdyoları randevu araçları kadar elde tutma araçlarına da ihtiyaç duyar. Treatflow randevuları müşteri notları ve hatırlatmalar ile birleştirir, böylece dolgular öngörülebilir kalır.",
+      "Kirpik salonları randevu yönetiminin yanında müşteri devamlılığına da ihtiyaç duyar. Treatflow randevuları müşteri notları ve hatırlatmalarla birleştirerek bakım sürecini düzenli tutar.",
     ],
     highlights: [
       "Komisyonsuz online randevu",
       "Kirpik tercihi ve haritalama notları",
       "Yeni setlerden önce onam formları",
-      "Dolgu hatırlatmaları ve fotoğraf geçmişi",
-      "AB sunucularında KVKK uyumlu saklama",
+      "Bakım hatırlatmaları ve fotoğraf geçmişi",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     aiSummary:
-      "Treatflow, dolgu planlaması, müşteri notları, onam formları, öncesi-sonrası fotoğraf, online randevu ve hatırlatmalar içeren kirpik stüdyosu yazılımıdır. Kirpik uzatma stüdyoları için. KVKK uyumlu.",
+      "Treatflow; kirpik bakım randevuları, müşteri notları, onam formları, öncesi-sonrası fotoğraflar, online randevu ve hatırlatmalar sunan kirpik işletmesi yazılımıdır. Kirpik uygulaması yapan salonlar için tasarlanmıştır. Veriler KVKK kapsamındaki süreçlerle saklanır.",
     faqs: [
       {
         question: "Treatflow nedir?",
@@ -882,7 +885,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Verilerim nerede saklanır?",
         answer:
-          "Treatflow verileri Frankfurt'taki AB sunucularında saklar; KVKK uyumu için tasarlanmıştır.",
+          "Treatflow verileri Frankfurt'taki AB sunucularında saklar ve KVKK kapsamındaki süreçleri destekler.",
       },
     ],
     siblingKeys: ["beauty-salon-software", "nail-salon-software", "permanent-makeup-software"],
@@ -901,12 +904,12 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Spa'ların hangi yazılıma ihtiyacı var?",
         answer:
-          "Spa'lar çoklu kaynak planlaması, online randevu, müşteri tercihleri, uygulama notları ve hatırlatmalara ihtiyaç duyar. Treatflow, AB sunucularında KVKK uyumlu saklama ile spa ve wellness stüdyolarını destekler.",
+          "Spa merkezleri; terapist ve oda planlaması, online randevu, müşteri tercihleri, işlem notları ve hatırlatmalara ihtiyaç duyar. Treatflow verileri KVKK kapsamındaki süreçlerle AB sunucularında saklar.",
       },
       {
-        question: "Treatflow paketleri ve tekrar ziyaretleri yönetebilir mi?",
+        question: "Treatflow tekrar ziyaretlerin takibini destekler mi?",
         answer:
-          "Evet. Müşteri geçmişi ve hatırlatmalar seri uygulamaları ve düzenli müşterileri yönetmeye yardımcı olur.",
+          "Evet. Müşteri geçmişi ve hatırlatmalar, seri uygulamaları ve düzenli ziyaretleri takip etmeye yardımcı olur. Paket veya adisyon sayacı sunulmaz.",
       },
     ],
     whatTitle: "Treatflow spa ve wellness stüdyoları için ne sunar?",
@@ -944,14 +947,14 @@ const pages: Record<IndustryPageKey, PageBody> = {
       { icon: Users, title: "Konuk Profilleri", desc: "Tercihler, geçmiş ve notlar tek yerde." },
       { icon: ClipboardCheck, title: "Anamnez Formları", desc: "Ziyaretlerden önce sağlık ve onam formları." },
       { icon: FileText, title: "İşlem Notları", desc: "Tutarlı bakım için hizmetleri belgeleyin." },
-      { icon: Bell, title: "Hatırlatmalar", desc: "gelmemeyi WhatsApp ve e-posta ile azaltın." },
+      { icon: Bell, title: "Hatırlatmalar", desc: "Randevuya gelmeme oranını WhatsApp ve e-posta ile azaltın." },
     ],
     benefits: [
       "Kaynaklar arasında daha az planlama çatışması",
       "Ziyaretler boyu konuk tercihlerini hatırlama",
       "Resepsiyonda daha az evrak işi",
       "Terapistler arası tutarlı uygulama kalitesi",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     marketTitle: "Spa'lar neden Treatflow'u tercih ediyor",
     marketParas: [
@@ -962,10 +965,10 @@ const pages: Record<IndustryPageKey, PageBody> = {
       "Alan ve terapist koordinasyonu",
       "Tercihlerle misafir kayıtları",
       "Varıştan önce anamnez formları",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     aiSummary:
-      "Treatflow; spa takvimi, online randevu, misafir kayıtları, anamnez formları, işlem notları ve hatırlatmalar içeren spa yazılımıdır. Spa merkezleri, otel spa'ları ve wellness merkezleri için. KVKK uyumlu.",
+      "Treatflow; spa takvimi, online randevu, müşteri kayıtları, anamnez formları, işlem notları ve hatırlatmalar sunan spa yazılımıdır. Spa merkezleri, otel spa'ları ve wellness işletmeleri için tasarlanmıştır. Veriler KVKK kapsamındaki süreçlerle saklanır.",
     faqs: [
       {
         question: "Treatflow nedir?",
@@ -985,7 +988,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Verilerim nerede saklanır?",
         answer:
-          "Treatflow verileri Frankfurt'taki AB sunucularında saklar; KVKK uyumu için tasarlanmıştır.",
+          "Treatflow verileri Frankfurt'taki AB sunucularında saklar ve KVKK kapsamındaki süreçleri destekler.",
       },
     ],
     siblingKeys: ["massage-software", "beauty-salon-software", "aesthetic-clinic-software"],
@@ -1004,7 +1007,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Masaj terapistleri için en iyi yazılım hangisi?",
         answer:
-          "Masaj terapistleri komisyonsuz online randevu, dijital sağlık anamnezi, seans notları, müşteri kayıtları ve hatırlatmalara ihtiyaç duyar. Treatflow bunları AB sunucularında KVKK uyumlu saklama ile sunar.",
+          "Masaj terapistleri; komisyonsuz online randevu, dijital anamnez, seans notları, müşteri kayıtları ve hatırlatmalara ihtiyaç duyar. Treatflow verileri KVKK kapsamındaki süreçlerle AB sunucularında saklar.",
       },
       {
         question: "Solo terapistler Treatflow'u kullanabilir mi?",
@@ -1030,7 +1033,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       },
       {
         problem: "Önceki seansın odak alanlarını hatırlamak zor",
-        solution: "Müşteri kartoteğinde seans notları ve geçmiş.",
+        solution: "Müşteri kartında seans notları ve ziyaret geçmişi.",
       },
       {
         problem: "Telefon veya mesajla randevu planlama",
@@ -1047,14 +1050,14 @@ const pages: Record<IndustryPageKey, PageBody> = {
       { icon: FileText, title: "Seans Notları", desc: "Odak alanları ve ilerlemeyi belgeleyin." },
       { icon: Users, title: "Müşteri Takibi", desc: "Dönen müşteriler için tam geçmiş." },
       { icon: Calendar, title: "Stüdyo Takvimi", desc: "Terapistleri ve odaları koordine edin." },
-      { icon: Bell, title: "Hatırlatmalar", desc: "gelmemeyi azaltın." },
+      { icon: Bell, title: "Hatırlatmalar", desc: "Randevuya gelmeme oranını azaltın." },
     ],
     benefits: [
       "Seanslar arasında daha az evrak işi",
       "Dijital formlarla daha güvenli anamnez",
       "Notlarla daha iyi bakım sürekliliği",
       "Daha az kaçırılan randevu",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     marketTitle: "Masaj profesyonelleri neden Treatflow'u tercih ediyor",
     marketParas: [
@@ -1063,12 +1066,12 @@ const pages: Record<IndustryPageKey, PageBody> = {
     highlights: [
       "Komisyonsuz online randevu",
       "Dijital anamnez ve onam",
-      "Müşteri kayıtlarınde seans notları",
+      "Müşteri kartında seans notları",
       "Dönen müşteriler için hatırlatmalar",
-      "AB sunucularında KVKK uyumlu saklama",
+      "KVKK kapsamındaki süreçlerle AB sunucularında saklama",
     ],
     aiSummary:
-      "Treatflow, online randevu, anamnez formları, seans notları, müşteri kayıtları ve hatırlatmalar içeren masaj stüdyosu yazılımıdır. Terapistler ve çok odalı stüdyolar için. KVKK uyumlu.",
+      "Treatflow; online randevu, anamnez formları, seans notları, müşteri kayıtları ve hatırlatmalar sunan masaj merkezi yazılımıdır. Terapistler ve çok odalı işletmeler için tasarlanmıştır. Veriler KVKK kapsamındaki süreçlerle saklanır.",
     faqs: [
       {
         question: "Treatflow nedir?",
@@ -1088,7 +1091,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Verilerim nerede saklanır?",
         answer:
-          "Treatflow verileri Frankfurt'taki AB sunucularında saklar; KVKK uyumu için tasarlanmıştır.",
+          "Treatflow verileri Frankfurt'taki AB sunucularında saklar ve KVKK kapsamındaki süreçleri destekler.",
       },
     ],
     siblingKeys: ["spa-wellness-software", "beauty-salon-software", "aesthetic-clinic-software"],

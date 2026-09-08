@@ -2,6 +2,8 @@ import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blogPosts'
 import { DEMO_FORMS } from '@/lib/demoForms'
 import { buildHreflangAlternates, seoPageSlugs, type SeoPageKey } from '@/app/i18n/seo'
+import { TR_PATHS } from '@/app/i18n/tr-seo/paths'
+import { trGuides } from '@/app/i18n/tr-seo/guides'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://www.treatflow.io'
@@ -418,8 +420,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Internationale Seiten (kuratiert). Blog ist bewusst NICHT enthalten.
     const featureAndIndustryKeys: { key: SeoPageKey; priority: number }[] = [
         { key: 'appointment-calendar', priority: 0.8 },
-        { key: 'online-booking', priority: 0.8 },
-        { key: 'client-records', priority: 0.8 },
+        { key: 'online-booking', priority: 0.9 },
+        { key: 'client-records', priority: 0.9 },
         { key: 'forms', priority: 0.8 },
         { key: 'try-forms', priority: 0.8 },
         { key: 'treatment-documentation', priority: 0.8 },
@@ -429,9 +431,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { key: 'features', priority: 0.8 },
         { key: 'shop', priority: 0.75 },
         { key: 'studio-website', priority: 0.75 },
-        { key: 'beauty-salon-software', priority: 0.85 },
+        { key: 'beauty-center-software', priority: 0.95 },
+        { key: 'beauty-salon-software', priority: 0.9 },
         { key: 'aesthetic-clinic-software', priority: 0.85 },
-        { key: 'laser-hair-removal-software', priority: 0.85 },
+        { key: 'laser-hair-removal-software', priority: 0.9 },
         { key: 'permanent-makeup-software', priority: 0.85 },
         { key: 'tattoo-studio-software', priority: 0.85 },
         { key: 'nail-salon-software', priority: 0.85 },
@@ -441,7 +444,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]
 
     const sharedKeys: { key: SeoPageKey; priority: number }[] = [
-        { key: 'pricing', priority: 0.8 },
+        { key: 'pricing', priority: 0.9 },
         { key: 'about', priority: 0.6 },
         { key: 'contact', priority: 0.6 },
         { key: 'privacy', priority: 0.3 },
@@ -554,9 +557,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ]
 
+    const trGuideRoutes = [
+        {
+            url: `${baseUrl}${TR_PATHS.guidesHub}`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
+        },
+        ...trGuides.map((guide) => ({
+            url: `${baseUrl}${guide.path}`,
+            lastModified: new Date(guide.dateModified),
+            changeFrequency: 'monthly' as const,
+            priority: 0.75,
+        })),
+    ]
+
     return [
         ...staticRoutes,
         ...marketRoutes,
+        ...trGuideRoutes,
         neuigkeitenIndex,
         blogIndex,
         ...blogRoutes,

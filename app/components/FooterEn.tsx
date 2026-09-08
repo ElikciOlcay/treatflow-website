@@ -12,7 +12,7 @@ import {
   getPrimaryCtaPath,
   isExternalCta,
 } from "../i18n/market-access";
-import { EN_SLUGS } from "../i18n/market-routes";
+import { EN_SLUGS, localizeEnSlug } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
 import CookieSettingsLink from "./CookieSettingsLink";
 import { getUiChrome } from "../i18n/markets/ui-chrome";
@@ -135,7 +135,7 @@ const industryLabels: Record<NavLang, Record<IndustryPageKey, string>> = {
     "beauty-salon-software": "Güzellik salonları",
     "laser-hair-removal-software": "Lazer epilasyon",
     "permanent-makeup-software": "Kalıcı makyaj",
-    "aesthetic-clinic-software": "Estetik klinikleri",
+    "aesthetic-clinic-software": "Medikal estetik merkezleri",
     "tattoo-studio-software": "Dövme stüdyoları",
     "nail-salon-software": "Tırnak salonları",
     "lash-studio-software": "Kirpik stüdyoları",
@@ -175,12 +175,12 @@ export default function FooterEn({
   const chrome = getUiChrome(market);
 
   const featureLinks = [
-    { href: `${base}/${EN_SLUGS["appointment-calendar"]}`, label: labels.calendar },
+    { href: `${base}/${localizeEnSlug(market, EN_SLUGS["appointment-calendar"])}`, label: labels.calendar },
     ...(market === "tr"
       ? []
       : [{ href: `${base}/${EN_SLUGS.vouchers}`, label: labels.vouchers }]),
-    { href: `${base}/${EN_SLUGS["online-booking"]}`, label: labels.booking },
-    { href: `${base}/${EN_SLUGS["client-records"]}`, label: labels.records },
+    { href: `${base}/${localizeEnSlug(market, EN_SLUGS["online-booking"])}`, label: labels.booking },
+    { href: `${base}/${localizeEnSlug(market, EN_SLUGS["client-records"])}`, label: labels.records },
     { href: `${base}/${EN_SLUGS.forms}`, label: labels.forms },
     { href: `${base}/${EN_SLUGS["treatment-documentation"]}`, label: labels.docs },
     { href: `${base}/${EN_SLUGS.messaging}`, label: labels.messaging },
@@ -219,10 +219,20 @@ export default function FooterEn({
           <div>
             <h3 className="font-semibold mb-4">{dict.footer.industries}</h3>
             <ul className="space-y-2 text-sm">
+              {market === "tr" && (
+                <li>
+                  <Link
+                    href="/tr/guzellik-merkezi-programi"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Güzellik merkezleri
+                  </Link>
+                </li>
+              )}
               {industryOrder.map((key) => (
                 <li key={key}>
                   <Link
-                    href={`${base}/${EN_SLUGS[key]}`}
+                    href={`${base}/${localizeEnSlug(market, EN_SLUGS[key])}`}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {industries[key]}
@@ -261,6 +271,16 @@ export default function FooterEn({
                   </Link>
                 </li>
               )}
+              {market === "tr" && (
+                <li>
+                  <Link
+                    href="/tr/rehber"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    Rehber
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link
                   href={`${base}/${EN_SLUGS["try-forms"]}`}
@@ -295,7 +315,7 @@ export default function FooterEn({
               </li>
               <li>
                 <Link
-                  href={`${base}/${EN_SLUGS.pricing}`}
+                  href={`${base}/${localizeEnSlug(market, EN_SLUGS.pricing)}`}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {dict.footer.pricing}

@@ -926,7 +926,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
         "İndirim kodları",
         "Çok dilli randevu sayfası",
         "Entegrasyonlar (Zapier)",
-        "Öncelikli e-posta ve sohbet desteği",
+        "Öncelikli e-posta ve WhatsApp desteği",
       ],
     },
     trialBox: {
@@ -967,7 +967,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     },
     why: {
       title: "Neden Treatflow?",
-      subtitle: "Komisyon yok, gizli ücret yok – müşteri datanız sizin.",
+      subtitle: "Komisyon yok, gizli ücret yok – müşteri verileriniz sizin kontrolünüzde.",
       items: [
         { value: "%0", label: "Komisyon" },
         { value: "500+", label: "İşletme" },
@@ -997,7 +997,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
         {
           question: "Verilerim nerede saklanır?",
           answer:
-            "Tüm veriler Frankfurt'taki AB sunucularında SSL şifreleme ve günlük yedekleme ile saklanır. KVKK kapsamında salon, müşteri datasının sahibidir.",
+            "Tüm veriler Frankfurt'taki AB sunucularında SSL şifreleme ve günlük yedeklemeyle saklanır. Müşteri verilerinin kontrolü işletmenizde kalır.",
         },
         {
           question: "Türkiye'den kayıt olabilir miyim?",

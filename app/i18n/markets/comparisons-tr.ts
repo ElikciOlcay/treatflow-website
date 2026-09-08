@@ -6,7 +6,7 @@ export const vsFreshaTr: EnComparisonContent = {
   description:
     "Güzellik salonları için Treatflow ve Fresha karşılaştırması: komisyonsuz salon yazılımı, dijital onam ve işlem kaydı – ücretsiz randevu aracına karşı.",
   intro:
-    "Fresha ücretsiz randevu aracı olarak yaygın. Treatflow ücretli salon yazılımıdır: müşteri sizde kalır, sabit abonelik ödersiniz, onam ve işlem kaydı aynı yerdedir. Pazaryeri komisyonu yoktur.",
+    "Fresha, ücretsiz randevu aracı olarak yaygın biçimde kullanılır. Treatflow ise ücretli salon yazılımıdır: müşteri verileriniz sizin kontrolünüzde kalır, sabit abonelik ödersiniz; onam ve işlem kayıtlarını aynı yerde yönetirsiniz. Pazaryeri komisyonu yoktur.",
   rows: [
     {
       feature: "İş modeli",
@@ -23,8 +23,8 @@ export const vsFreshaTr: EnComparisonContent = {
       competitorOk: true,
     },
     {
-      feature: "Müşteri datası",
-      treatflow: "Kayıt salonunuzda",
+      feature: "Müşteri verileri",
+      treatflow: "İşletmenizin kontrolünde",
       competitor: "Kullanıma göre değişir",
       treatflowOk: true,
       competitorOk: false,
@@ -45,7 +45,7 @@ export const vsFreshaTr: EnComparisonContent = {
     },
     {
       feature: "Fiyat",
-      treatflow: "Lansman 1.490 TL/ay, sonrası 1.990 TL",
+      treatflow: "Lansman: Basic 1.490 TL/ay, Booking 1.990 TL/ay",
       competitor: "Giriş ücretsiz, maliyet ödemeyle artar",
       treatflowOk: true,
       competitorOk: true,
@@ -61,11 +61,11 @@ export const vsFreshaTr: EnComparisonContent = {
   faqs: [
     {
       q: "Fresha gerçekten ücretsiz mi?",
-      a: "Randevu katmanı ücretsiz olabilir. Fresha genellikle kart ödemeleri ve ek ürünlerden kazanır. Gerçek maliyet ciroya bağlıdır, şeffaf bir salon aboneliği değildir.",
+      a: "Randevu katmanı ücretsiz olabilir. Fresha kart ödemeleri ve ek ürünlerden gelir elde eder. Toplam maliyet kullanılan özelliklere göre değişebilir.",
     },
     {
       q: "Treatflow ile Fresha arasındaki fark nedir?",
-      a: "Treatflow bağımsız salon yazılımıdır: takvim, müşteri takibi, onam formları ve işlem kaydı. Fresha ücretsiz-öncelikli randevu ürünüdür. Treatflow randevu komisyonu almaz.",
+      a: "Treatflow bağımsız salon yazılımıdır: takvim, müşteri takibi, onam formları ve işlem kaydı sunar. Fresha ise randevu ve pazaryeri tarafına odaklanır. Treatflow randevu komisyonu almaz.",
     },
     {
       q: "Fresha medikal estetik için işlem kaydı sunar mı?",
@@ -73,7 +73,7 @@ export const vsFreshaTr: EnComparisonContent = {
     },
     {
       q: "Fresha'dan Treatflow'a geçebilir miyim?",
-      a: "Evet. Müşteri datasının aktarımında yardımcı oluruz. Treatflow'u 30 gün, kredi kartı olmadan deneyebilirsiniz.",
+      a: "Evet. Müşteri verilerinin aktarımında yardımcı oluruz. Treatflow'u kredi kartı gerekmeden 30 gün deneyebilirsiniz.",
     },
   ],
   ctaTitle: "Her ziyaretten pay değil, ödediğiniz yazılım mı istiyorsunuz?",
@@ -102,7 +102,7 @@ export const vsTreatwellTr: EnComparisonContent = {
       competitorOk: false,
     },
     {
-      feature: "Müşteri datası",
+      feature: "Müşteri verileri",
       treatflow: "Salon hesabınızda kalır",
       competitor: "Platformla paylaşılır",
       treatflowOk: true,
@@ -153,7 +153,7 @@ export const softwareComparisonTr: EnComparisonContent = {
   description:
     "Güzellik salonu yazılımı karşılaştırması: pazaryeri, ücretsiz randevu aracı ve Treatflow. Komisyon yok, KVKK kapsamında kayıt, onam ve işlem kaydı.",
   intro:
-    "Çoğu salon takvim, randevu widget'ı, kağıt form ve fotoğraf klasörünü karıştırır. Treatflow bunu tek uygulamayla değiştirir: randevu, komisyonsuz online randevu, müşteri takibi, onam ve işlem kaydı.",
+    "Çoğu salon takvim, online randevu ekranı, kâğıt form ve fotoğraf klasörünü ayrı ayrı kullanır. Treatflow bunları tek uygulamada birleştirir: randevu, komisyonsuz online randevu, müşteri takibi, onam ve işlem kaydı.",
   rows: [
     {
       feature: "Tek uygulama",

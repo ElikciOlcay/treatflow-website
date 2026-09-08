@@ -3,7 +3,7 @@ import { CheckCircle, X, ArrowRight } from "lucide-react";
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 import type { PrefixedMarket } from "@/app/i18n/config";
 import { getUiChrome } from "@/app/i18n/markets/ui-chrome";
-import { EN_SLUGS } from "@/app/i18n/market-routes";
+import { marketPagePath } from "@/app/i18n/market-routes";
 
 export type EnComparisonRow = {
   feature: string;
@@ -32,7 +32,7 @@ export default function EnComparisonPage({
 }) {
   const chrome = getUiChrome(market);
   const register = APP_REGISTER_BY_MARKET[market] ?? APP_REGISTER_BY_MARKET.en;
-  const pricingHref = `/${market}/${EN_SLUGS.pricing}`;
+  const pricingHref = marketPagePath(market, "pricing");
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

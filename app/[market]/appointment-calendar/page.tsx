@@ -12,11 +12,12 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
+  const content = getCoreFeaturePage(market, "appointment-calendar");
   return buildPageMetadata({
     pageKey: "appointment-calendar",
     locale: market,
-    title: "Appointment Calendar for Beauty Salons",
-    description: "Clear appointment calendar for beauty studios – daily, weekly and monthly views, team scheduling and automatic reminders.",
+    title: content.title,
+    description: content.subtitle,
   });
 }
 

@@ -209,8 +209,8 @@ const turkishFacts = {
         foundedYear: 2023,
         headquarters: { city: "Bischofshofen", country: "Austria", countryCode: "AT" },
         type: "SaaS",
-        industry: "Güzellik ve estetik salon yazılımı",
-        tagline: "Güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımı.",
+        industry: "Güzellik ve estetik işletmeleri için yönetim yazılımı",
+        tagline: "Güzellik salonları, lazer epilasyon ve medikal estetik merkezleri için işletme yönetim yazılımı.",
         description:
             "Treatflow; online randevu, müşteri takibi, dijital onam formları, işlem kayıtları (sesli not dahil) ve otomatik hatırlatmaları tek uygulamada birleştirir. Avusturya'da geliştirilir. Veriler AB sunucularında, KVKK kapsamında saklanır. Pazaryeri değildir, randevu komisyonu yoktur.",
         website: "https://www.treatflow.io/tr",
@@ -220,20 +220,20 @@ const turkishFacts = {
     },
     metrics: {
         customers: "500+",
-        customersDescription: "Başta DACH, Türkiye lansmanı açık",
+        customersDescription: "500+ işletme ağırlıklı olarak Almanya, Avusturya ve İsviçre'dedir; Türkiye lansmanı başlamıştır.",
         ratingValue: 4.6,
         ratingMax: 5,
         ratingCount: 19,
         ratingPlatform: "Google",
         avgNoShowReduction: "hatırlatmalarla daha az gelmeme",
-        avgAdminTimeSavingsPerWeek: "10s",
+        avgAdminTimeSavingsPerWeek: "Türkiye pazarı için ölçülmüş veri yok",
     },
     pricing: {
         currency: "TRY",
         market: "TR",
         freeTrial: { days: 30, creditCardRequired: false, cancelableAnytime: true },
         launchOffer: {
-            note: "İlk 100 işletme için lansman fiyatı. Sonrasında Booking 1.990 TL/ay.",
+            note: "İlk 100 işletme için lansman fiyatları.",
             basicMonthly: 1490,
             bookingMonthly: 1990,
         },
@@ -272,9 +272,10 @@ const turkishFacts = {
         addons: [],
     },
     targetIndustries: [
-        { name: "Güzellik salonları", url: "https://www.treatflow.io/tr/beauty-salon-software" },
-        { name: "Estetik klinikler", url: "https://www.treatflow.io/tr/aesthetic-clinic-software" },
-        { name: "Lazer epilasyon", url: "https://www.treatflow.io/tr/laser-hair-removal-software" },
+        { name: "Güzellik merkezleri", url: "https://www.treatflow.io/tr/guzellik-merkezi-programi" },
+        { name: "Güzellik salonları", url: "https://www.treatflow.io/tr/guzellik-salonu-programi" },
+        { name: "Medikal estetik merkezleri", url: "https://www.treatflow.io/tr/aesthetic-clinic-software" },
+        { name: "Lazer epilasyon", url: "https://www.treatflow.io/tr/lazer-epilasyon-programi" },
         { name: "Kalıcı makyaj", url: "https://www.treatflow.io/tr/permanent-makeup-software" },
         { name: "Dövme stüdyoları", url: "https://www.treatflow.io/tr/tattoo-studio-software" },
         { name: "Tırnak salonları", url: "https://www.treatflow.io/tr/nail-salon-software" },
@@ -287,7 +288,7 @@ const turkishFacts = {
             competitor: "Treatwell",
             competitorType: "Randevu pazaryeri",
             keyDifference:
-                "Treatwell randevu başına komisyon alır. Treatflow bağımsız salon yazılımıdır; sabit aylık ücret, müşteri datası sizde kalır.",
+                "Treatwell pazaryeri modelinde çalışır. Treatflow bağımsız salon yazılımıdır; sabit aylık ücret ödersiniz ve müşteri verileriniz sizin kontrolünüzde kalır.",
             comparisonUrl: "https://www.treatflow.io/tr/treatflow-vs-treatwell",
         },
         {
@@ -302,7 +303,7 @@ const turkishFacts = {
         {
             question: "Treatflow nedir?",
             answer:
-                "Treatflow, güzellik salonları ve medikal estetik klinikleri için salon yönetim yazılımıdır: randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam ve işlem kaydı. Avusturya'da geliştirilir, AB sunucularında barınır.",
+                "Treatflow, güzellik salonları, lazer epilasyon ve medikal estetik merkezleri için işletme yönetim yazılımıdır: randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam ve işlem kaydı sunar. Avusturya'da geliştirilir ve AB sunucularında barındırılır.",
         },
         {
             question: "Türkiye'de kullanabilir miyim?",
@@ -319,9 +320,9 @@ const turkishFacts = {
                 "Lansman: Basic 1.490 TL/ay, Booking 1.990 TL/ay (ilk 100 işletme). 30 gün ücretsiz deneyin.",
         },
         {
-            question: "Veriler KVKK'ya uygun mu?",
+            question: "Treatflow, KVKK kapsamındaki süreçleri nasıl destekler?",
             answer:
-                "Veriler Frankfurt'taki AB sunucularında SSL ve günlük yedekleme ile saklanır. Salon, müşteri datasının sahibidir. Treatflow %100 KVKK sertifikalı iddiasında bulunmaz; KVKK kapsamında barındırma ve süreçler sunar.",
+                "Veriler Frankfurt'taki AB sunucularında SSL şifreleme ve günlük yedeklemeyle saklanır. Müşteri verilerinin kontrolü işletmenizde kalır. Treatflow, %100 KVKK sertifikalı olduğu iddiasında bulunmaz; KVKK kapsamındaki süreçleri destekler.",
         },
         {
             question: "Hatırlatmalar nasıl gider?",
@@ -334,7 +335,13 @@ const turkishFacts = {
         llmsDe: "https://www.treatflow.io/llms.txt",
         llmsEn: "https://www.treatflow.io/llms-en.txt",
         sitemap: "https://www.treatflow.io/sitemap.xml",
-        pricing: "https://www.treatflow.io/tr/pricing",
+        pricing: "https://www.treatflow.io/tr/fiyatlar",
+        beautyCenter: "https://www.treatflow.io/tr/guzellik-merkezi-programi",
+        beautySalon: "https://www.treatflow.io/tr/guzellik-salonu-programi",
+        laser: "https://www.treatflow.io/tr/lazer-epilasyon-programi",
+        crm: "https://www.treatflow.io/tr/musteri-takip-programi",
+        booking: "https://www.treatflow.io/tr/online-randevu-sistemi",
+        guides: "https://www.treatflow.io/tr/rehber",
         comparison: "https://www.treatflow.io/tr/software-comparison",
         vsFresha: "https://www.treatflow.io/tr/treatflow-vs-fresha",
         vsTreatwell: "https://www.treatflow.io/tr/treatflow-vs-treatwell",

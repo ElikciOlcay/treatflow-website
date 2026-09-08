@@ -28,7 +28,7 @@ const trAbout = {
     },
     {
       title: "KVKK ve gizlilik",
-      desc: "Veriler AB sunucularında saklanır. Sizin ve müşterilerinizin datası korunur.",
+      desc: "Veriler AB sunucularında saklanır. Müşteri verilerinin kontrolü işletmenizde kalır ve KVKK kapsamındaki süreçler desteklenir.",
     },
     {
       title: "Gerçek insan desteği",

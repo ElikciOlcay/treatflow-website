@@ -12,11 +12,12 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
+  const content = getCoreFeaturePage(market, "client-records");
   return buildPageMetadata({
     pageKey: "client-records",
     locale: market,
-    title: "Digital Client Records for Beauty Studios",
-    description: "Client profiles, treatment history and photos in one digital record – built for beauty and aesthetic studios.",
+    title: content.title,
+    description: content.subtitle,
   });
 }
 

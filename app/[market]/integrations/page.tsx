@@ -16,7 +16,7 @@ export async function generateMetadata({
   return buildPageMetadata({
     pageKey: "integrations",
     locale: market,
-    title: "Google Calendar and Zapier Integrations",
+    title: content.title,
     description: content.subtitle,
   });
 }

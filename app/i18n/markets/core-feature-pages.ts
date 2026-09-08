@@ -131,7 +131,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         { icon: RefreshCw, title: "Anlık senkron", desc: "Online randevular doğrudan takvime düşer – çakışma olmaz." },
         { icon: Clock, title: "Hızlı erteleme", desc: "Randevuyu sürükle-bırak ile taşıyın veya süreyi uzatın." },
         { icon: Smartphone, title: "Her cihazdan", desc: "Takvimi bilgisayar, tablet veya telefondan yönetin." },
-        { icon: Bell, title: "Otomatik hatırlatma", desc: "WhatsApp ve e-posta hatırlatmasıyla gelmeme ve unutulan randevuları azaltın." },
+        { icon: Bell, title: "Otomatik hatırlatma", desc: "WhatsApp ve e-posta hatırlatmalarıyla randevuya gelmeme oranını azaltın." },
       ],
       closingTitle: "Daha az telefon, müşteriye daha çok zaman",
       closingText:
@@ -149,10 +149,10 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         },
       ],
       relatedLinks: [
-        { href: "/tr/online-booking", label: "Online randevu" },
+        { href: "/tr/online-randevu-sistemi", label: "Online randevu" },
         { href: "/tr/messaging", label: "Hatırlatmalar" },
-        { href: "/tr/client-records", label: "Müşteri takibi" },
-        { href: "/tr/beauty-salon-software", label: "Güzellik salonu yazılımı" },
+        { href: "/tr/musteri-takip-programi", label: "Müşteri takibi" },
+        { href: "/tr/guzellik-salonu-programi", label: "Güzellik salonu yazılımı" },
       ],
     },
     fi: {
@@ -250,7 +250,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       bullets: [
         "7/24 online randevu",
         "Sadece gerçek müsait saatler görünür",
-        "Gelmemeyi azaltmak için kapora",
+        "WhatsApp ve e-posta hatırlatmaları",
         "Onay ve hatırlatma dahil",
       ],
       image: {
@@ -260,8 +260,8 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       features: [
         { icon: Globe, title: "Size özel randevu sayfası", desc: "Linki web sitenize, Instagram bio'ya ve Google işletme profiline ekleyin." },
         { icon: Clock, title: "Canlı müsaitlik", desc: "Müşteri yalnızca gerçekten boş saatleri görür – çakışma olmaz." },
-        { icon: CreditCard, title: "Kapora", desc: "Yoğun hizmetlerde kapora alın, koltuk saatinizi koruyun." },
-        { icon: Bell, title: "Otomatik onay", desc: "Randevu anında onay gider; hatırlatma gelmemeyi azaltır." },
+        { icon: Link2, title: "Komisyonsuz randevu", desc: "Randevularınızı pazaryeri kesintisi olmadan kendi bağlantınızdan alın." },
+        { icon: Bell, title: "Otomatik onay", desc: "Randevu alındığında onay gönderilir; hatırlatmalar randevuya gelmeme oranını azaltmaya yardımcı olur." },
         { icon: Smartphone, title: "Mobil uyumlu", desc: "Müşterilerin çoğu telefondan randevu alır – sayfa buna göre tasarlandı." },
         { icon: Link2, title: "Takvimle entegre", desc: "Her randevu doğrudan salon takviminize düşer." },
       ],
@@ -277,14 +277,14 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         {
           question: "Müşteriler pazaryeri olmadan 7/24 randevu alabilir mi?",
           answer:
-            "Evet. Size özel randevu sayfası yalnızca gerçek müsaitliği gösterir. Onay ve hatırlatma dahildir. İsterseniz kapora ile gelmeme riskini düşürürsünüz.",
+            "Evet. Size özel randevu sayfası yalnızca gerçek müsaitliği gösterir. Otomatik onay ve hatırlatmalar dahildir; randevu başına pazaryeri komisyonu yoktur.",
         },
       ],
       relatedLinks: [
         { href: "/tr/appointment-calendar", label: "Randevu takvimi" },
         { href: "/tr/messaging", label: "Hatırlatmalar" },
-        { href: "/tr/client-records", label: "Müşteri takibi" },
-        { href: "/tr/beauty-salon-software", label: "Güzellik salonu yazılımı" },
+        { href: "/tr/musteri-takip-programi", label: "Müşteri takibi" },
+        { href: "/tr/guzellik-salonu-programi", label: "Güzellik salonu yazılımı" },
       ],
     },
     nl: {
@@ -410,7 +410,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         "Eksiksiz müşteri kartı",
         "İşlem ve fotoğraf geçmişi",
         "Onam formları kayda bağlı",
-        "Salonda saniyede arama",
+        "Saniyeler içinde arama",
       ],
       image: {
         src: "/images/lifestyle/kundenverwaltung-kartei.png",
@@ -429,9 +429,9 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         "Düzenli kayıt daha güvenli işlem ve daha kişisel karşılama demektir – kağıt ve sohbet geçmişinde aramadan.",
       faqs: [
         {
-          question: "Treatflow müşteri kayıtları KVKK uyumlu mu?",
+          question: "Treatflow, KVKK kapsamındaki müşteri süreçlerini nasıl destekler?",
           answer:
-            "Evet. Kayıtlar Frankfurt'taki AB sunucularında SSL şifreleme ve günlük yedekleme ile tutulur. Formlar, fotoğraflar ve işlem geçmişi aynı karttadır. Salon, müşteri datasının sahibidir.",
+            "Kayıtlar Frankfurt'taki AB sunucularında SSL şifreleme ve günlük yedeklemeyle tutulur. Formlar, fotoğraflar ve işlem geçmişi aynı müşteri kartındadır. Müşteri verilerinin kontrolü işletmenizde kalır.",
         },
         {
           question: "Müşteri kaydında neler tutulur?",
@@ -442,7 +442,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       relatedLinks: [
         { href: "/tr/forms", label: "Onam formları" },
         { href: "/tr/treatment-documentation", label: "İşlem kayıtları" },
-        { href: "/tr/online-booking", label: "Online randevu" },
+        { href: "/tr/online-randevu-sistemi", label: "Online randevu" },
         { href: "/tr/aesthetic-clinic-software", label: "Estetik klinik yazılımı" },
       ],
     },
@@ -588,7 +588,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       },
       image: {
         src: "/images/lifestyle/formulare-digital-ausfuellen.png",
-        alt: "Tablette imzalanan dijital onam formu",
+        alt: "Tablette imzalanmış dijital onam formu",
       },
       features: [
         { icon: Send, title: "Önceden gönderin", desc: "Randevudan önce link paylaşın – resepsiyonda bekleme azalır." },
@@ -600,7 +600,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       ],
       closingTitle: "İşleme evrak bitmiş halde başlayın",
       closingText:
-        "Dijital onam salonu ve kliniği korur, resepsiyonda her gün zaman kazandırır. KVKK için kayıt elinizin altında kalır.",
+        "Dijital onam, kayıtların düzenli tutulmasını sağlar ve resepsiyonda zaman kazandırır. KVKK kapsamındaki süreçler için gerekli kayıtlar müşteri kartında erişilebilir kalır.",
       faqs: [
         {
           question: "Treatflow medikal estetik için dijital onam içerir mi?",
@@ -615,7 +615,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       ],
       relatedLinks: [
         { href: "/tr/try-forms", label: "Örnek formları deneyin" },
-        { href: "/tr/client-records", label: "Müşteri takibi" },
+        { href: "/tr/musteri-takip-programi", label: "Müşteri takibi" },
         { href: "/tr/treatment-documentation", label: "İşlem kayıtları" },
         { href: "/tr/aesthetic-clinic-software", label: "Estetik klinik yazılımı" },
       ],
@@ -774,7 +774,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         {
           question: "Öncesi-sonrası fotoğraflar müşteri kaydında mı?",
           answer:
-            "Evet. Fotoğraflar telefon galerisinde değil, tam o işleme eklenir. Sonraki seansda ilerlemeyi karşılaştırırsınız.",
+            "Evet. Fotoğraflar telefon galerisinde değil, doğrudan ilgili işleme eklenir. Sonraki seansta ilerlemeyi karşılaştırabilirsiniz.",
         },
         {
           question: "İşlem notunu sesle yazabilir miyim?",
@@ -783,9 +783,9 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         },
       ],
       relatedLinks: [
-        { href: "/tr/client-records", label: "Müşteri takibi" },
+        { href: "/tr/musteri-takip-programi", label: "Müşteri takibi" },
         { href: "/tr/forms", label: "Onam formları" },
-        { href: "/tr/beauty-salon-software", label: "Güzellik salonu yazılımı" },
+        { href: "/tr/guzellik-salonu-programi", label: "Güzellik salonu yazılımı" },
         { href: "/tr/aesthetic-clinic-software", label: "Estetik klinik yazılımı" },
       ],
     },

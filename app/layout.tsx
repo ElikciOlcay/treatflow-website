@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import StickyMobileCTA from "./components/StickyMobileCTA";
+import AiSearchTrafficCapture from "./components/AiSearchTrafficCapture";
 import { GTM_CONTAINER_ID } from "@/lib/cookiebot";
 import "./globals.css";
 
@@ -131,6 +132,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         {children}
+        <AiSearchTrafficCapture />
         <StickyMobileCTA />
       </body>
     </html>

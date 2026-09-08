@@ -8,7 +8,7 @@ import {
   siteLanguages,
   prefixedMarkets,
 } from "./config";
-import { EN_SLUGS, type MarketPageSlug } from "./market-routes";
+import { EN_SLUGS, TR_SLUG_OVERRIDES, type MarketPageSlug } from "./market-routes";
 
 /** Logische Seiten-IDs fuer hreflang-Zuordnung ueber Maerkte hinweg. */
 export type SeoPageKey =
@@ -30,6 +30,7 @@ export type SeoPageKey =
   | "shop"
   | "studio-website"
   | "beauty-salon-software"
+  | "beauty-center-software"
   | "aesthetic-clinic-software"
   | "laser-hair-removal-software"
   | "permanent-makeup-software"
@@ -107,9 +108,9 @@ function buildSlugMap(pageKey: SeoPageKey): PageSlugMap {
       map[market] = EN_SLUGS[pageKey];
       continue;
     }
-    // TR nutzt die gleichen EN-Slugs (Pfade unter /tr/...)
     if (enSlug !== undefined) {
-      map[market] = enSlug;
+      map[market] =
+        market === "tr" ? TR_SLUG_OVERRIDES[enKey as MarketPageSlug] ?? enSlug : enSlug;
     }
   }
   return map;
@@ -144,6 +145,9 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
   shop: buildSlugMap("shop"),
   "studio-website": buildSlugMap("studio-website"),
   "beauty-salon-software": buildSlugMap("beauty-salon-software"),
+  "beauty-center-software": {
+    tr: "guzellik-merkezi-programi",
+  },
   "aesthetic-clinic-software": buildSlugMap("aesthetic-clinic-software"),
   "laser-hair-removal-software": buildSlugMap("laser-hair-removal-software"),
   "permanent-makeup-software": buildSlugMap("permanent-makeup-software"),
@@ -191,13 +195,21 @@ export function buildHreflangAlternates(
     if (url) languages[hreflangTags[market]] = url;
   });
 
-  // DACH-first: x-default zeigt auf die deutsche Variante
+  // DACH-first, falls die Seite DE hat. TR-only Seiten zeigen auf sich selbst.
   const xDefaultMarket = options?.xDefault ?? "de";
   const xDefaultSlug = slugs[xDefaultMarket] ?? slugs.de;
   if (xDefaultSlug !== undefined) {
     const xMarket = slugs[xDefaultMarket] !== undefined ? xDefaultMarket : "de";
     const xUrl = slugToUrl(xMarket, slugs[xMarket]!);
     if (xUrl) languages["x-default"] = xUrl;
+  } else {
+    const firstMarket = (Object.keys(slugs) as Market[]).find(
+      (market) => slugs[market] !== undefined
+    );
+    if (firstMarket) {
+      const xUrl = slugToUrl(firstMarket, slugs[firstMarket]);
+      if (xUrl) languages["x-default"] = xUrl;
+    }
   }
 
   return { languages };
