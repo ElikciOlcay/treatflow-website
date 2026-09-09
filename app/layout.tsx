@@ -116,8 +116,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <link rel="alternate" type="application/rss+xml" title="Treatflow Blog RSS Feed" href="/blog/feed.xml" />
         <link rel="alternate" type="text/plain" title="LLM Context" href="/llms.txt" />
-        <link rel="alternate" type="text/plain" title="LLM Context (English)" href="/llms-en.txt" hrefLang="en" />
-        <link rel="alternate" type="text/plain" title="LLM Context (Türkçe)" href="/llms-tr.txt" hrefLang="tr" />
+        <link rel="alternate" type="text/plain" title="LLM Context (English)" href="/llms-en.txt" />
+        <link rel="alternate" type="text/plain" title="LLM Context (Türkçe)" href="/llms-tr.txt" />
       </head>
       <body
         className={`${inter.variable} font-sans antialiased overflow-x-hidden`}

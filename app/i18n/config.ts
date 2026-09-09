@@ -144,11 +144,11 @@ export const MARKET_BY_COUNTRY: Record<string, Market> = {
 export const MARKET_COOKIE = "tf_market";
 export const LOCALE_COOKIE = MARKET_COOKIE;
 
-/** Hreflang – kanonisch de + en + tr-TR. */
+/** Hreflang – kanonisch de + en + tr (gleich wie html lang). */
 export const hreflangTags: Record<Market, string> = {
   de: "de",
   en: "en",
-  tr: "tr-TR",
+  tr: "tr",
   us: "en",
   nl: "en",
   uk: "en",

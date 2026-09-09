@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import { buildHreflangAlternates } from "../i18n/seo";
 
 export const metadata: Metadata = {
   title: "AGB",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     "Allgemeine Geschäftsbedingungen von Treatflow für die Nutzung der Studio-Software. Vertrag, Preise, Laufzeit, Haftung und Kündigung.",
   alternates: {
     canonical: "https://www.treatflow.io/agb",
+    ...buildHreflangAlternates("terms"),
   },
   robots: {
     index: true,
