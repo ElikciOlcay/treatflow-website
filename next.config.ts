@@ -47,13 +47,13 @@ const nextConfig: NextConfig = {
       {
         source: '/tr',
         headers: [
-          { key: 'Content-Language', value: 'tr-TR' },
+          { key: 'Content-Language', value: 'tr' },
         ],
       },
       {
         source: '/tr/:path*',
         headers: [
-          { key: 'Content-Language', value: 'tr-TR' },
+          { key: 'Content-Language', value: 'tr' },
         ],
       },
     ];

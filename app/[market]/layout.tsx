@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionaryForMarket } from "@/app/i18n/dictionaries";
-import { buildHreflangAlternates } from "@/app/i18n/seo";
 import {
   BASE_URL,
   htmlLangTags,
@@ -122,7 +121,6 @@ export async function generateMetadata({
     description: defaultDescription,
     alternates: {
       canonical: `${BASE_URL}${prefix}`,
-      ...buildHreflangAlternates("home"),
     },
     openGraph: {
       type: "website",

@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 import SocialProofBar from "../components/SocialProofBar";
 import Breadcrumbs, { generateBreadcrumbSchema } from "../components/Breadcrumbs";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "../components/AiAnswerCapsule";
-import { buildHreflangAlternates } from '../i18n/seo';
 
 export const metadata: Metadata = {
   title: "Kundenkartei Kosmetik: App statt Papier und Excel",
@@ -27,7 +26,6 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://www.treatflow.io/kundenkartei-software",
-      ...buildHreflangAlternates("client-records"),
   },
   openGraph: {
     title: "Kundenkartei Kosmetik: App statt Papier und Excel",
