@@ -78,6 +78,13 @@ export default function InternationalAccessForm({
       if (!response.ok) throw new Error("request failed");
       formEl.reset();
       setStatus("success");
+      const { trackGenerateLead } = await import("@/lib/analytics/googleAds");
+      trackGenerateLead({
+        source: leadSource,
+        email: payload.email,
+        phone: payload.telefon || undefined,
+        transactionId: `lead-${Date.now()}`,
+      });
     } catch {
       setStatus("error");
     }

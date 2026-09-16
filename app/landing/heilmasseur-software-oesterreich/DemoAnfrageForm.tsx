@@ -39,6 +39,13 @@ export default function DemoAnfrageForm() {
 
             setStatus('success');
             form.reset();
+            const { trackGenerateLead } = await import('@/lib/analytics/googleAds');
+            trackGenerateLead({
+                source: 'Landing: Heilmasseur Software Österreich',
+                email: String(payload.email || ''),
+                phone: typeof payload.telefon === 'string' ? payload.telefon : undefined,
+                transactionId: `demo-${Date.now()}`,
+            });
         } catch (error) {
             setStatus('error');
             setErrorMessage(error instanceof Error ? error.message : 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');

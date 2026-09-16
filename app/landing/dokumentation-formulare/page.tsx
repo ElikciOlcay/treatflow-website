@@ -784,8 +784,13 @@ export default function DokumentationFormulareLandingPage() {
                   value: 1
                 });
               }
-              
-
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                event: 'generate_lead',
+                lead_source: 'dokumentation-formulare-landing',
+                value: 0,
+                currency: 'EUR'
+              });
             }
             
             // Form Submission Handler

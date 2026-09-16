@@ -1,3 +1,5 @@
+import { getStoredAttribution } from './adsAttribution';
+
 declare global {
     interface Window {
         gtag?: (...args: unknown[]) => void;
@@ -10,7 +12,7 @@ export type LandingDemoEvent = 'kosmetik_lp_demo_click';
 export type LandingEventName = LandingSignupEvent | LandingDemoEvent;
 
 export const LANDING_URLS = {
-    register: 'https://app.treatflow.io/auth/register',
+    register: 'https://app.treatflow.io/auth/register?lang=de',
     demo: 'https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f',
 } as const;
 
@@ -35,10 +37,13 @@ export function trackLandingEvent(
 ) {
     if (typeof window === 'undefined') return;
 
+    const attribution = getStoredAttribution();
+
     if (typeof window.gtag !== 'undefined') {
         window.gtag('event', eventName, {
             event_category: 'landing_page',
             event_label: landingPage,
+            ...attribution,
             ...params,
         });
     }
@@ -61,6 +66,7 @@ export function trackLandingEvent(
     w.dataLayer.push({
         event: eventName,
         landing_page: landingPage,
+        ...attribution,
         ...params,
     });
 }

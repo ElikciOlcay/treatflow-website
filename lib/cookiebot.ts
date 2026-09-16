@@ -23,3 +23,11 @@ export function onCookiebotVisibilityChange(callback: () => void): () => void {
     COOKIEBOT_EVENTS.forEach((event) => window.removeEventListener(event, callback));
   };
 }
+
+export function hasCookiebotMarketingConsent(): boolean {
+  if (typeof window === "undefined") return false;
+  const consent = (window as Window & {
+    Cookiebot?: { consent?: { marketing?: boolean } };
+  }).Cookiebot?.consent;
+  return Boolean(consent?.marketing);
+}
