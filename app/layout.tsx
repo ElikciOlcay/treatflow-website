@@ -3,8 +3,12 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import StickyMobileCTA from "./components/StickyMobileCTA";
 import AiSearchTrafficCapture from "./components/AiSearchTrafficCapture";
+import AdsAttributionCapture from "./components/AdsAttributionCapture";
 import { GTM_CONTAINER_ID } from "@/lib/cookiebot";
 import "./globals.css";
+
+const GOOGLE_ADS_ID = (process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "").trim();
+const GOOGLE_ADS_ID_VALID = /^AW-\d+$/.test(GOOGLE_ADS_ID);
 
 const inter = Inter({
   subsets: ["latin"],
@@ -104,6 +108,8 @@ export default function RootLayout({
               security_storage: 'granted',
               wait_for_update: 500
             });
+            gtag('set', 'url_passthrough', true);
+            gtag('set', 'ads_data_redaction', true);
           `}
         </Script>
         <Script id="gtm" strategy="afterInteractive">
@@ -113,6 +119,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');`}
         </Script>
+        {GOOGLE_ADS_ID_VALID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-ads-config" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                window.gtag = window.gtag || gtag;
+                gtag('set', 'linker', {
+                  domains: ['treatflow.io', 'www.treatflow.io', 'app.treatflow.io']
+                });
+                gtag('config', '${GOOGLE_ADS_ID}', { allow_enhanced_conversions: true });
+              `}
+            </Script>
+          </>
+        ) : null}
 
         <link rel="alternate" type="application/rss+xml" title="Treatflow Blog RSS Feed" href="/blog/feed.xml" />
         <link rel="alternate" type="text/plain" title="LLM Context" href="/llms.txt" />
@@ -132,6 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         {children}
+        <AdsAttributionCapture />
         <AiSearchTrafficCapture />
         <StickyMobileCTA />
       </body>

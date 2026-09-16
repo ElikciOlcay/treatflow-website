@@ -40,7 +40,7 @@ export default function TrSeoCta({
     w.dataLayer = w.dataLayer || [];
     w.dataLayer.push({ event: "tr_seo_signup_click", ...payload });
     if (typeof w.gtag === "function") {
-      w.gtag("event", "generate_lead", payload);
+      w.gtag("event", "tr_seo_signup_click", payload);
     }
   }
 
