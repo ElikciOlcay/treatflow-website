@@ -25,6 +25,30 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
     {
+        slug: 'anamnesebogen-kosmetikstudio',
+        title: 'Anamnesebogen Kosmetikstudio: Warum digitale Bögen 2026 dazugehören',
+        excerpt:
+            'Welche Fragen in den Anamnesebogen gehören, wann du ihn aktualisierst und wie Kundinnen ihn vor dem Termin digital ausfüllen.',
+        category: 'Digitalisierung',
+        readTime: '11 min',
+        publishDate: '24. September 2026',
+        publishedAt: '2026-09-24',
+        featured: false,
+        image: '/images/blog/anamnesebogen-kosmetikstudio.jpg',
+    },
+    {
+        slug: 'registrierkasse-kosmetikstudio-oesterreich',
+        title: 'Registrierkasse Kosmetikstudio Österreich: RKSV und Belegpflicht erklärt',
+        excerpt:
+            'Wann ein Kosmetikstudio in Österreich eine Registrierkasse braucht, was die Belegpflicht davon trennt und wie Termin und Kasse zusammenpassen.',
+        category: 'Recht & Compliance',
+        readTime: '12 min',
+        publishDate: '24. September 2026',
+        publishedAt: '2026-09-24',
+        featured: false,
+        image: '/images/blog/registrierkasse-kosmetikstudio-oesterreich.jpg',
+    },
+    {
         slug: 'preiserhoehung-kosmetikstudio',
         title: 'Preiserhöhung im Kosmetikstudio: So kommunizierst du sie richtig',
         excerpt:
