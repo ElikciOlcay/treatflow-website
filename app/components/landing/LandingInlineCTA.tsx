@@ -1,4 +1,4 @@
-import { LandingPrimaryCTA, LandingDemoLink } from './LandingCTA';
+import { LandingDemoPrimaryCTA } from './LandingCTA';
 
 type LandingInlineCTAProps = {
     headline?: string;
@@ -8,8 +8,8 @@ type LandingInlineCTAProps = {
 };
 
 export default function LandingInlineCTA({
-    headline = 'Bereit, dein Studio zu vereinfachen?',
-    subline = '14 Tage kostenlos testen – ohne Kreditkarte, in wenigen Minuten startklar.',
+    headline = 'Passt Treatflow zu deinem Studio?',
+    subline = 'Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.',
     landingPage = 'landing/kosmetikstudio-software',
     variant = 'light',
 }: LandingInlineCTAProps) {
@@ -30,12 +30,13 @@ export default function LandingInlineCTA({
                 {subline}
             </p>
             <div className="flex flex-col items-center gap-3">
-                <LandingPrimaryCTA
+                <LandingDemoPrimaryCTA
                     size="large"
                     landingPage={landingPage}
+                    inverse={isDark}
                     className={isDark ? '!shadow-none' : ''}
                 />
-                <LandingDemoLink landingPage={landingPage} className={isDark ? '!text-indigo-200 hover:!text-white' : ''} />
+                <p className={`text-sm ${isDark ? 'text-indigo-100' : 'text-gray-600'}`}>Kostenlos und unverbindlich</p>
             </div>
         </div>
     );

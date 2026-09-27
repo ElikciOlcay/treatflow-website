@@ -267,7 +267,7 @@ export default function KundenWorkflowsPage() {
             <FeaturePageCta
                 theme="indigo"
                 title="Bereit für mehrstufige Kunden-Workflows?"
-                description="14 Tage kostenlos testen – Nachsorge und Reaktivierung ohne manuelles Nachfassen."
+                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
                 secondaryLabel="Zu den Erinnerungen"
                 secondaryHref="/nachrichtenautomatisierung"
             />

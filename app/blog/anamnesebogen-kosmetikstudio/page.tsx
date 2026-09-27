@@ -9,7 +9,7 @@ import { generateFaqSchema } from '@/lib/schema';
 
 const canonical = 'https://www.treatflow.io/blog/anamnesebogen-kosmetikstudio';
 const imagePath = '/images/blog/anamnesebogen-kosmetikstudio.jpg';
-const trialUrl = 'https://app.treatflow.io/auth/register?lang=de';
+const trialUrl = 'https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f';
 
 const faqs = [
     {
@@ -402,7 +402,7 @@ export default function BlogPost() {
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold"
                             >
-                                Treatflow kostenlos testen
+                                Persönliche Demo buchen
                                 <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
                         </p>
@@ -571,7 +571,7 @@ export default function BlogPost() {
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors"
                             >
-                                Treatflow kostenlos testen
+                                Persönliche Demo buchen
                                 <ArrowRight className="ml-2 h-5 w-5" />
                             </a>
                         </div>

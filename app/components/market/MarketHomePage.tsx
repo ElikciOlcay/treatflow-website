@@ -22,6 +22,8 @@ import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "../AiAnswerCapsule";
 import MarketFaqAccordion from "./MarketFaqAccordion";
 import { generateFaqSchema } from "@/lib/schema";
 import { BASE_URL } from "../../i18n/config";
+import DemoFirstActions from "../DemoFirstActions";
+import { demoFirstLangFromLocale } from "@/lib/cta/demoFirst";
 
 export type IconItem = {
   icon: LucideIcon;
@@ -214,24 +216,12 @@ export default function MarketHomePage({ content }: { content: MarketHomeContent
             <p className="text-lg lg:text-xl text-gray-600 mb-6 leading-relaxed">
               {content.hero.subtitle}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
-              <a
-                href={content.appRegister}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-              >
-                {content.hero.primaryCta}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-              <a
-                href={content.demoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-all duration-300 flex items-center justify-center"
-              >
-                {content.hero.secondaryCta}
-              </a>
+            <div className="mb-10">
+              <DemoFirstActions
+                location="hero"
+                lang={demoFirstLangFromLocale(content.locale)}
+                showDemoNote
+              />
             </div>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-600 mb-6">
               {content.hero.bullets.map((bullet) => (
@@ -318,16 +308,13 @@ export default function MarketHomePage({ content }: { content: MarketHomeContent
                 </div>
               ))}
             </div>
-            <div className="text-center mt-8">
-              <a
-                href={content.appRegister}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-indigo-600 text-white px-7 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors"
-              >
-                {content.steps.ctaText}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+            <div className="mt-8 flex justify-center">
+              <DemoFirstActions
+                location="onboarding"
+                lang={demoFirstLangFromLocale(content.locale)}
+                align="center"
+                showDemoNote={false}
+              />
             </div>
           </div>
         </div>
@@ -377,17 +364,13 @@ export default function MarketHomePage({ content }: { content: MarketHomeContent
               );
             })}
           </div>
-          <div className="text-center mt-10">
-            <a
-              href={content.appRegister}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors"
-            >
-              {content.features.ctaText}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
-            <p className="text-sm text-gray-500 mt-3">{content.features.ctaNote}</p>
+          <div className="mt-10 flex justify-center">
+            <DemoFirstActions
+              location="hero"
+              lang={demoFirstLangFromLocale(content.locale)}
+              align="center"
+              showDemoNote={false}
+            />
           </div>
         </div>
       </section>
@@ -540,17 +523,13 @@ export default function MarketHomePage({ content }: { content: MarketHomeContent
               </div>
             ))}
           </div>
-          <div className="text-center mt-12">
-            <a
-              href={content.appRegister}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
-            >
-              {content.stats.ctaText}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
-            <p className="text-sm text-gray-500 mt-3">{content.stats.ctaNote}</p>
+          <div className="mt-12 flex justify-center">
+            <DemoFirstActions
+              location="footer"
+              lang={demoFirstLangFromLocale(content.locale)}
+              align="center"
+              showDemoNote
+            />
           </div>
         </div>
       </section>
@@ -632,24 +611,13 @@ export default function MarketHomePage({ content }: { content: MarketHomeContent
                 <p className="mt-3 text-base text-white/85 leading-relaxed">
                   {content.support.text}
                 </p>
-                <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                  <a
-                    href={content.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-indigo-700 shadow-md transition-all duration-300 hover:bg-indigo-50 hover:shadow-lg hover:-translate-y-0.5"
-                  >
-                    {content.support.primaryCta}
-                    <ArrowRight className="h-4 w-4" />
-                  </a>
-                  <a
-                    href={content.appRegister}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20"
-                  >
-                    {content.support.secondaryCta}
-                  </a>
+                <div className="mt-6">
+                  <DemoFirstActions
+                    location="footer"
+                    lang={demoFirstLangFromLocale(content.locale)}
+                    tone="onDark"
+                    showDemoNote={false}
+                  />
                 </div>
               </div>
               <div className="flex justify-center lg:justify-end">
@@ -725,19 +693,14 @@ export default function MarketHomePage({ content }: { content: MarketHomeContent
                     </li>
                   ))}
                 </ul>
-                <a
-                  href={content.appRegister}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={
-                    plan.featured
-                      ? "w-full bg-white text-indigo-600 py-3 rounded-xl font-bold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center"
-                      : "w-full bg-gray-900 text-white py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 flex items-center justify-center"
-                  }
-                >
-                  {content.pricing.ctaText}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
+                <DemoFirstActions
+                  location="pricing"
+                  lang={demoFirstLangFromLocale(content.locale)}
+                  tone={plan.featured ? "pricingFeatured" : "pricingMuted"}
+                  fullWidth
+                  align="center"
+                  showDemoNote={false}
+                />
               </div>
             ))}
           </div>
@@ -807,24 +770,14 @@ export default function MarketHomePage({ content }: { content: MarketHomeContent
               </div>
             ))}
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
-            <a
-              href={content.appRegister}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full sm:w-auto"
-            >
-              {content.finalCta.primaryCta}
-              <ArrowRight className="ml-3 h-5 w-5" />
-            </a>
-            <a
-              href={content.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-white text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 flex items-center justify-center w-full sm:w-auto"
-            >
-              {content.finalCta.secondaryCta}
-            </a>
+          <div className="flex justify-center">
+            <DemoFirstActions
+              location="footer"
+              lang={demoFirstLangFromLocale(content.locale)}
+              tone="onDark"
+              align="center"
+              showDemoNote
+            />
           </div>
           <p className="text-sm text-indigo-200 mt-6">{content.finalCta.note}</p>
         </div>

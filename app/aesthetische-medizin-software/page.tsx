@@ -11,6 +11,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from '../components/AiAnswerCapsule';
 import { generateFaqSchema } from '@/lib/schema';
+import DemoFirstActions from '../components/DemoFirstActions';
 
 import { buildHreflangAlternates } from "@/app/i18n/seo";
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Ästhetische Medizin Software' }];
@@ -239,26 +240,7 @@ export default function AesthetischeMedizinSoftwarePage() {
                             Behandlungsdokumentation, digitale Einwilligungen und Patientenverwaltung -
                             die moderne Praxislösung für ästhetische Kliniken und Praxen.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a
-                                href="https://app.treatflow.io/auth/register?lang=de"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-teal-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-teal-700 transition-colors duration-200 flex items-center justify-center"
-                            >
-                                14 Tage kostenlos testen
-                                <ArrowRight className="ml-2 h-5 w-5" />
-                            </a>
-                            <a
-                                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-teal-600 hover:text-teal-600 transition-colors duration-200"
-                            >
-                                Beratung buchen
-                            </a>
-                        </div>
-                        <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
+                        <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
                     </div>
                     <div className="mt-12">
                         <AiAnswerCapsuleGroup>
@@ -454,28 +436,9 @@ export default function AesthetischeMedizinSoftwarePage() {
                         Bereit für eine moderne Praxisverwaltung?
                     </h2>
                     <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
-                        Teste Treatflow 14 Tage kostenlos und erlebe, wie digital und effizient deine Praxis arbeiten kann.
+                        Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="https://app.treatflow.io/auth/register?lang=de"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-white text-teal-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
-                        >
-                            14 Tage gratis testen
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                        <a
-                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-teal-600 transition-colors duration-200"
-                        >
-                            Beratung buchen
-                        </a>
-                    </div>
-                    <p className="text-sm text-teal-200 mt-4">Keine Kreditkarte nötig. Jederzeit kündbar.</p>
+                    <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
                 </div>
             </section>
 

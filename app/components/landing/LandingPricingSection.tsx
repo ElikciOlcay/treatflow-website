@@ -1,9 +1,9 @@
 'use client';
 
 import { CheckCircle, ArrowRight, Shield } from 'lucide-react';
-import { LandingPrimaryCTA } from '@/app/components/landing/LandingCTA';
+import { LandingDemoPrimaryCTA } from '@/app/components/landing/LandingCTA';
 import { basicFeatures, bookingFeatures } from '@/app/landing/kosmetikstudio-software/data';
-import { LANDING_URLS, trackLandingSignup } from '@/lib/analytics/landingEvents';
+import { LANDING_URLS, trackLandingDemo } from '@/lib/analytics/landingEvents';
 
 type LandingPricingSectionProps = {
     landingPage?: string;
@@ -26,7 +26,7 @@ export default function LandingPricingSection({
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-10">
                     <span className="inline-flex items-center gap-1.5 bg-green-100 text-green-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-                        14 Tage kostenlos testen
+                        Persönliche Demo
                     </span>
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">
                         Einfach starten – ohne Risiko
@@ -55,8 +55,7 @@ export default function LandingPricingSection({
                                 </li>
                             ))}
                         </ul>
-                        <LandingPrimaryCTA
-                            label="Kostenlosen Testzugang erstellen"
+                        <LandingDemoPrimaryCTA
                             className="w-full"
                             landingPage={landingPage}
                         />
@@ -87,13 +86,13 @@ export default function LandingPricingSection({
                             ))}
                         </ul>
                         <a
-                            href={LANDING_URLS.register}
+                            href={LANDING_URLS.demo}
                             target="_blank"
                             rel="noopener noreferrer"
-                            onClick={() => trackLandingSignup(landingPage, { placement: 'pricing_booking' })}
-                            className="inline-flex items-center justify-center gap-2 w-full bg-white text-indigo-600 py-3.5 rounded-xl font-bold hover:bg-gray-50 transition-colors"
+                            onClick={() => trackLandingDemo(landingPage, { placement: 'pricing_booking' })}
+                            className="inline-flex items-center justify-center gap-2 w-full bg-white text-indigo-600 py-3.5 rounded-xl font-bold hover:bg-gray-50 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                         >
-                            Kostenlosen Testzugang erstellen
+                            Persönliche Demo buchen
                             <ArrowRight className="h-4 w-4" />
                         </a>
                     </div>

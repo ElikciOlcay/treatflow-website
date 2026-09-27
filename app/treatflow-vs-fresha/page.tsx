@@ -7,6 +7,7 @@ import FAQSection from './FAQSection';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
+import DemoFirstActions from '../components/DemoFirstActions';
 
 export const metadata = {
   title: 'Treatflow vs. Fresha: Der ehrliche Vergleich für Kosmetikstudios',
@@ -72,7 +73,7 @@ const faqSchema = {
       name: 'Kann ich von Fresha zu Treatflow wechseln?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja. Unser Team unterstützt dich kostenlos beim Umzug deiner Kundendaten. Du kannst Treatflow 14 Tage kostenlos testen.',
+        text: 'Ja. Unser Team unterstützt dich beim Umzug deiner Kundendaten. In einer persönlichen Demo zeigen wir dir, wie der Wechsel läuft.',
       },
     },
     {
@@ -165,8 +166,8 @@ const comparisonRows = [
     competitorOk: false,
   },
   {
-    feature: 'Kostenloser Datenumzug',
-    treatflow: 'Ja, mit persönlicher Hilfe',
+    feature: 'Datenumzug',
+    treatflow: 'Persönliche Hilfe beim Import',
     competitor: 'Eingeschränkt',
     treatflowOk: true,
     competitorOk: false,
@@ -248,12 +249,12 @@ export default function TreatflowVsFresha() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://app.treatflow.io/auth/register?lang=de"
+                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md"
               >
-                14 Tage kostenlos testen
+                Persönliche Demo buchen
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               <a
@@ -725,29 +726,8 @@ export default function TreatflowVsFresha() {
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">
               Bereit für die bessere Lösung?
             </h2>
-            <p className="text-indigo-100 text-lg mb-8">
-              Teste Treatflow 14 Tage kostenlos. Keine Kreditkarte, keine
-              Payment-Gebühren, keine versteckten Kosten.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://app.treatflow.io/auth/register?lang=de"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg"
-              >
-                Jetzt kostenlos testen
-                <ArrowRight className="ml-3 h-5 w-5" />
-              </a>
-              <a
-                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-white text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 flex items-center justify-center"
-              >
-                Beratung buchen
-              </a>
-            </div>
+            <p className="text-indigo-100 text-lg mb-8">Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.</p>
+            <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
           </div>
         </section>
 

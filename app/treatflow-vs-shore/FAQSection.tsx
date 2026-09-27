@@ -22,7 +22,7 @@ const faqs = [
   {
     question: 'Kann ich von Shore zu Treatflow wechseln?',
     answer:
-      'Ja. Unser Team unterstützt dich kostenlos beim Umzug deiner Kundendaten. Du kannst Treatflow 14 Tage kostenlos testen, bevor du dich entscheidest.',
+      'Ja. Unser Team unterstützt dich beim Umzug deiner Kundendaten. Du kannst Treatflow 14 Tage kostenlos testen, bevor du dich entscheidest.',
   },
   {
     question: 'Welche Software ist besser für Kosmetikstudios?',

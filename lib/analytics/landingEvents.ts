@@ -1,3 +1,4 @@
+import { APP_REGISTER_URL, DEMO_BOOKING_URL } from '@/app/i18n/market-access';
 import { getStoredAttribution } from './adsAttribution';
 
 declare global {
@@ -12,8 +13,8 @@ export type LandingDemoEvent = 'kosmetik_lp_demo_click';
 export type LandingEventName = LandingSignupEvent | LandingDemoEvent;
 
 export const LANDING_URLS = {
-    register: 'https://app.treatflow.io/auth/register?lang=de',
-    demo: 'https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f',
+    register: APP_REGISTER_URL,
+    demo: DEMO_BOOKING_URL,
 } as const;
 
 export function trackLandingSignup(

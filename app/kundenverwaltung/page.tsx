@@ -54,7 +54,7 @@ const faqs = [
     },
     {
         question: 'Kann ich bestehende Kundendaten importieren?',
-        answer: 'Ja. Treatflow unterstützt den Import von Kundendaten aus Excel- und CSV-Dateien. Unser Onboarding-Team hilft dir kostenlos beim Datenumzug von deinem bisherigen System.',
+        answer: 'Ja. Treatflow unterstützt den Import von Kundendaten aus Excel- und CSV-Dateien. Unser Onboarding-Team hilft dir beim Datenumzug von deinem bisherigen System.',
     },
     {
         question: 'Kann Treatflow automatische Nachrichten an meine Kunden senden?',
@@ -202,7 +202,7 @@ export default function KundenverwaltungPage() {
             <FeaturePageCta
                 theme="blue"
                 title="Bereit für eine klare Kundenkartei?"
-                description="14 Tage kostenlos testen – ohne Kreditkarte. Import, Historie und DSGVO in einer App."
+                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
                 secondaryLabel="Zur Kundenkartei-App"
                 secondaryHref="/kundenkartei-software"
             />

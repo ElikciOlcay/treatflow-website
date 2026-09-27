@@ -27,7 +27,7 @@ const faqs = [
   {
     question: 'Kann ich von Treatwell zu Treatflow wechseln?',
     answer:
-      'Ja, der Wechsel ist unkompliziert. Wir helfen dir kostenlos beim Umzug deiner Kundendaten. Du kannst Treatflow 14 Tage kostenlos testen und beide Systeme parallel nutzen, bis du bereit bist, komplett zu wechseln.',
+      'Ja, der Wechsel ist unkompliziert. Wir helfen dir beim Umzug deiner Kundendaten. Du kannst Treatflow 14 Tage kostenlos testen und beide Systeme parallel nutzen, bis du bereit bist, komplett zu wechseln.',
   },
   {
     question: 'Bekomme ich bei Treatflow auch Neukunden?',

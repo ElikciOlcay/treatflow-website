@@ -97,7 +97,7 @@ const usHomePage: HomePageIntlContent = {
     subtitle:
       "Appointments, deposits, client records, digital consent forms and treatment documentation in one clear app – built for US salons and med spas.",
     primaryCta: "Start your free trial",
-    trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
+    trustItems: ["No credit card", "Ready in 2 minutes", "Help with data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
     image: {
@@ -210,7 +210,7 @@ const ukHomePage: HomePageIntlContent = {
     subtitle:
       "Appointments, client records, GDPR-ready consent forms and treatment documentation in one clear app – organised for UK salons, spas and aesthetic clinics. VAT-aware studio operations.",
     primaryCta: "Start your free trial",
-    trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
+    trustItems: ["No credit card", "Ready in 2 minutes", "Help with data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
     image: {
@@ -323,7 +323,7 @@ const ieHomePage: HomePageIntlContent = {
     subtitle:
       "Appointments, client records, GDPR-ready consent forms and treatment documentation in one clear app – organised for Irish salons, spas and aesthetic clinics. Euro pricing, EU data protection.",
     primaryCta: "Start your free trial",
-    trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
+    trustItems: ["No credit card", "Ready in 2 minutes", "Help with data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
     image: {
@@ -436,7 +436,7 @@ const caHomePage: HomePageIntlContent = {
     subtitle:
       "Appointments, client records, digital consent forms and treatment documentation in one clear app – built for Canadian salons and aesthetic clinics.",
     primaryCta: "Start your free trial",
-    trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
+    trustItems: ["No credit card", "Ready in 2 minutes", "Help with data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
     image: {
@@ -549,7 +549,7 @@ const auHomePage: HomePageIntlContent = {
     subtitle:
       "Appointments, GST-aware deposits, client records, digital consent forms and treatment documentation in one clear app – organised for Australian beauty businesses.",
     primaryCta: "Start your free trial",
-    trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
+    trustItems: ["No credit card", "Ready in 2 minutes", "Help with data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
     image: {
@@ -662,7 +662,7 @@ const aeHomePage: HomePageIntlContent = {
     subtitle:
       "Appointments, client records, consent forms and treatment documentation in one refined app – built for premium salons and spas in Dubai, Abu Dhabi and across the UAE. VAT-aware studio management in AED.",
     primaryCta: "Start your free trial",
-    trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
+    trustItems: ["No credit card", "Ready in 2 minutes", "Help with data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
     image: {
@@ -1176,7 +1176,7 @@ function englishHomePage(): HomePageIntlContent {
       subtitle:
         "Appointments, online booking without commission, client records, consent forms and treatment documentation – all in one clear app. Built in Austria for studios worldwide.",
       primaryCta: "Start free trial",
-      trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
+      trustItems: ["No credit card", "Ready in 2 minutes", "Help with data migration", "Personal support"],
       studiosLabel: "500+ studios",
       ratingValue: "4.6/5",
       image: {

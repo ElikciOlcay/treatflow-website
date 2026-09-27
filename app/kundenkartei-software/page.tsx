@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import SocialProofBar from "../components/SocialProofBar";
 import Breadcrumbs, { generateBreadcrumbSchema } from "../components/Breadcrumbs";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "../components/AiAnswerCapsule";
+import DemoFirstActions from '../components/DemoFirstActions';
 
 export const metadata: Metadata = {
   title: "Kundenkartei Kosmetik: App statt Papier und Excel",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kundenkartei Kosmetik: App statt Papier und Excel",
     description:
-      "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Fotos und Formulare in einer App. Kostenlos testen.",
+      "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Fotos und Formulare in einer App.",
     url: "https://www.treatflow.io/kundenkartei-software",
   },
 };
@@ -215,26 +216,7 @@ export default function KundenkarteiSoftwarePage() {
               Kundendaten, Behandlungshistorie, Formulare und Fotos - alles an einem Ort.
               Schnell abrufbar, sicher gespeichert und ohne Zettelchaos.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://app.treatflow.io/auth/register?lang=de"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors duration-200 flex items-center justify-center"
-              >
-                14 Tage kostenlos testen
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-              <a
-                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-indigo-600 hover:text-indigo-600 transition-colors duration-200"
-              >
-                Beratung buchen
-              </a>
-            </div>
-            <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Jederzeit kündbar.</p>
+            <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
           </div>
           <div className="mt-12">
             <AiAnswerCapsuleGroup>
@@ -455,7 +437,7 @@ export default function KundenkarteiSoftwarePage() {
           </div>
           <div className="text-center mt-10">
             <a
-              href="https://app.treatflow.io/auth/register?lang=de"
+              href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors duration-200 inline-flex items-center"

@@ -9,13 +9,14 @@ import {
 } from "../i18n/config";
 import {
   APP_LOGIN_BY_MARKET,
-  getPrimaryCtaPath,
-  isExternalCta,
 } from "../i18n/market-access";
 import { EN_SLUGS, localizeEnSlug } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
-import CookieSettingsLink from "./CookieSettingsLink";
 import { getUiChrome } from "../i18n/markets/ui-chrome";
+import CookieSettingsLink from "./CookieSettingsLink";
+import { CtaTextLink } from "./DemoFirstActions";
+import { DEMO_BOOKING_URL } from "../i18n/market-access";
+import { demoFirstLangFromMarket, getDemoFirstCopy } from "@/lib/cta/demoFirst";
 
 type NavLang = "en" | "nl" | "fi" | "tr";
 
@@ -168,9 +169,6 @@ export default function FooterEn({
   const base = marketPathPrefix[market];
   const labels = featureLabels[lang];
   const industries = industryLabels[lang];
-  const ctaPath = getPrimaryCtaPath(market);
-  const ctaExternal = isExternalCta(market);
-  const ctaLabel = ctaExternal ? dict.footer.tryFree : dict.footer.requestAccess;
   const loginUrl = APP_LOGIN_BY_MARKET[market] ?? APP_LOGIN_BY_MARKET.en;
   const chrome = getUiChrome(market);
 
@@ -322,20 +320,14 @@ export default function FooterEn({
                 </Link>
               </li>
               <li>
-                {ctaExternal ? (
-                  <a
-                    href={ctaPath}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    {ctaLabel}
-                  </a>
-                ) : (
-                  <Link href={ctaPath} className="text-gray-400 hover:text-white transition-colors">
-                    {ctaLabel}
-                  </Link>
-                )}
+                <CtaTextLink
+                  href={DEMO_BOOKING_URL}
+                  kind="demo"
+                  location="footer"
+                  className="text-gray-400 hover:text-white transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded-sm"
+                >
+                  {getDemoFirstCopy(demoFirstLangFromMarket(market)).demo}
+                </CtaTextLink>
               </li>
               <li>
                 <a
