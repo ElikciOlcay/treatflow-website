@@ -5,6 +5,7 @@ import {
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import GeoFAQ from '../components/GeoFAQ';
+import DemoFirstActions from '../components/DemoFirstActions';
 
 export const metadata = {
     title: 'Kosmetikstudio Software Wien: Online-Buchungen',
@@ -72,25 +73,7 @@ export default function KosmetikstudioSoftwareWienPage() {
                     <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
                         Made in Austria – die perfekte Software für Beauty Studios in Wien und allen Wiener Bezirken. Deutschsprachig, modern und nah am Kunden.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="https://app.treatflow.io/auth/register?lang=de"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-rose-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-rose-700 transition-colors flex items-center justify-center"
-                        >
-                            14 Tage gratis testen
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                        <a
-                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="border-2 border-rose-600 text-rose-600 px-8 py-4 rounded-xl font-semibold hover:bg-rose-50 transition-colors"
-                        >
-                            Beratung buchen
-                        </a>
-                    </div>
+                    <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
                 </div>
             </section>
 
@@ -154,26 +137,9 @@ export default function KosmetikstudioSoftwareWienPage() {
             {/* CTA */}
             <section className="py-16 bg-gradient-to-r from-rose-600 to-pink-600">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-3xl font-bold text-white mb-4">Jetzt 14 Tage kostenlos testen</h2>
-                    <p className="text-rose-100 mb-8">Keine Kreditkarte erforderlich. Starte in wenigen Minuten.</p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="https://app.treatflow.io/auth/register?lang=de"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-white text-rose-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors"
-                        >
-                            14 Tage gratis testen
-                        </a>
-                        <a
-                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors"
-                        >
-                            Beratung buchen
-                        </a>
-                    </div>
+                    <h2 className="text-3xl font-bold text-white mb-4">Passt Treatflow zu deinem Studio? Finden wir es gemeinsam heraus.</h2>
+                    <p className="text-rose-100 mb-8">Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.</p>
+                    <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
                 </div>
             </section>
 

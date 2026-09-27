@@ -62,7 +62,61 @@ export function LandingDemoCTA({
     );
 }
 
-/** Dezenter Text-Link – im Hero bevorzugt, damit der Primary-CTA dominiert */
+/** Hauptaktion auf Landingpages: persönliche Demo. Nutzt das bestehende Event kosmetik_lp_demo_click. */
+export function LandingDemoPrimaryCTA({
+    size = 'default',
+    label = 'Persönliche Demo buchen',
+    className = '',
+    landingPage = 'landing/kosmetikstudio-software',
+    inverse = false,
+}: Omit<LandingCTAProps, 'variant'> & { inverse?: boolean }) {
+    const sizeClasses = size === 'large' ? 'px-8 py-4 text-lg' : 'px-6 py-3.5 text-base';
+    const tone = inverse
+        ? 'bg-white text-indigo-600 hover:bg-gray-50 shadow-lg'
+        : 'bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg shadow-indigo-200/60 hover:shadow-xl';
+
+    return (
+        <a
+            href={LANDING_URLS.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackLandingDemo(landingPage)}
+            className={`inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 ${tone} ${sizeClasses} ${className}`}
+        >
+            {label}
+            <ArrowRight className="h-5 w-5" />
+        </a>
+    );
+}
+
+/** Untergeordneter Testzugang. Nutzt das bestehende Event kosmetik_lp_signup_click. */
+export function LandingTrialLink({
+    label = 'Lieber selbst testen?',
+    detail = '14 Tage kostenlos ausprobieren · Ohne Kreditkarte',
+    className = '',
+    landingPage = 'landing/kosmetikstudio-software',
+    tone = 'light',
+}: Pick<LandingCTAProps, 'label' | 'className' | 'landingPage'> & { detail?: string; tone?: 'light' | 'dark' }) {
+    const linkClass = tone === 'dark'
+        ? 'text-base font-semibold text-white underline underline-offset-4 decoration-white/60 hover:text-indigo-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded-sm'
+        : 'text-base font-semibold text-indigo-700 underline underline-offset-4 decoration-indigo-300 hover:text-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-sm';
+    const detailClass = tone === 'dark' ? 'text-sm text-indigo-100' : 'text-sm text-gray-600';
+    return (
+        <span className={`inline-flex flex-col items-center gap-1 ${className}`}>
+            <a
+                href={LANDING_URLS.register}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackLandingSignup(landingPage, { placement: 'text_link' })}
+                className={linkClass}
+            >
+                {label}
+            </a>
+            {detail ? <span className={detailClass}>{detail}</span> : null}
+        </span>
+    );
+}
+/** Bestehender Demo-Textlink. Landingseiten nutzen stattdessen LandingDemoPrimaryCTA. */
 export function LandingDemoLink({
     label = 'Persönliche Demo buchen',
     className = '',

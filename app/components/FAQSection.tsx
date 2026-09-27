@@ -3,7 +3,7 @@
 import { useState, type ReactNode } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 import Link from 'next/link';
-import { DEMO_BOOKING_URL } from '@/app/i18n/market-access';
+import DemoFirstActions from './DemoFirstActions';
 
 const faqsDe: { question: string; answer: ReactNode }[] = [
     {
@@ -19,6 +19,14 @@ const faqsDe: { question: string; answer: ReactNode }[] = [
         answer: "Du kannst Treatflow 14 Tage lang vollkommen kostenlos testen. Keine Kreditkarte erforderlich, keine versteckten Kosten. Nach dem Testzeitraum kannst du entscheiden, ob du weitermachen möchtest."
     },
     {
+        question: "Muss ich vor dem Test eine Demo buchen?",
+        answer: "Nein. Du kannst Treatflow auch direkt 14 Tage kostenlos testen. In einer persönlichen Demo zeigen wir dir vorab die Funktionen, die für dein Studio interessant sind."
+    },
+    {
+        question: "Was erwartet mich in der Demo?",
+        answer: "Wir sprechen über deinen Studioalltag, zeigen dir passende Funktionen und beantworten deine Fragen zum Einstieg."
+    },
+    {
         question: "Was ist der Unterschied zwischen Basic und Booking?",
         answer: <>Basic (39 Euro/Monat) enthält unbegrenzte <Link href="/kundenverwaltung" className="text-indigo-600 hover:underline">Kundenverwaltung</Link>, Formular-Marketplace, KI-Generator und Shop-Integration. Booking (59 Euro/Monat) hat zusätzlich den professionellen <Link href="/terminkalender" className="text-indigo-600 hover:underline">Buchungskalender</Link> mit Buchungslink und automatische <Link href="/nachrichtenautomatisierung" className="text-indigo-600 hover:underline">Terminerinnerungen</Link>.</>
     },
@@ -28,7 +36,7 @@ const faqsDe: { question: string; answer: ReactNode }[] = [
     },
     {
         question: "Kann ich meine bestehenden Kundendaten importieren?",
-        answer: <>Ja, wir helfen dir beim kostenlosen Umzug deiner Daten. Unser Support-Team unterstützt dich dabei, deine bestehenden Kundendaten sicher in die <Link href="/kundenverwaltung" className="text-indigo-600 hover:underline">digitale Kundenkartei</Link> zu übertragen.</>
+        answer: <>Ja, wir helfen dir beim Umzug deiner Daten. Unser Support-Team unterstützt dich dabei, deine bestehenden Kundendaten sicher in die <Link href="/kundenverwaltung" className="text-indigo-600 hover:underline">digitale Kundenkartei</Link> zu übertragen.</>
     },
     {
         question: "Funktioniert Treatflow auch auf dem Handy?",
@@ -92,6 +100,14 @@ const faqsEn: { question: string; answer: ReactNode }[] = [
     {
         question: "How long can I try Treatflow for free?",
         answer: "You can try Treatflow for 14 days, no credit card and no hidden fees. After the trial you decide whether to continue.",
+    },
+    {
+        question: "Do I have to book a demo before the trial?",
+        answer: "No. You can try Treatflow free for 14 days right away. In a personal demo we show you the features that matter for your studio first.",
+    },
+    {
+        question: "What happens in the demo?",
+        answer: "We talk about your studio day-to-day, show you the relevant features and answer your questions about getting started.",
     },
     {
         question: "What is the difference between Basic and Booking?",
@@ -180,21 +196,21 @@ export default function FAQSection({ locale = 'de' }: { locale?: 'de' | 'en' }) 
                                 ? 'Write to us or book a call. We help you get set up.'
                                 : 'Unser Support-Team hilft dir gerne weiter. Schreib uns eine E-Mail oder buche direkt ein Beratungsgespräch.'}
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a
-                                href="mailto:hello@treatflow.io"
-                                className="bg-white border-2 border-indigo-200 text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:border-indigo-300 hover:bg-indigo-50 transition-all duration-300"
-                            >
-                                hello@treatflow.io
-                            </a>
-                            <a
-                                href={DEMO_BOOKING_URL}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-all duration-300"
-                            >
-                                {isEn ? 'Book a demo' : 'Beratung buchen'}
-                            </a>
+                        <div className="flex flex-col items-center gap-3">
+                            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                                <a
+                                    href="mailto:hello@treatflow.io"
+                                    className="inline-flex items-center justify-center bg-white border-2 border-indigo-200 text-indigo-600 px-8 py-[14px] rounded-xl text-lg font-semibold hover:border-indigo-300 hover:bg-indigo-50 transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                >
+                                    hello@treatflow.io
+                                </a>
+                                <DemoFirstActions
+                                    location="footer"
+                                    lang={isEn ? "en" : "de"}
+                                    tone="brand"
+                                    showDemoNote={false}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { CheckCircle, X, ArrowRight } from "lucide-react";
-import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
+import { CheckCircle, X } from "lucide-react";
+import DemoFirstActions from "@/app/components/DemoFirstActions";
+import { demoFirstLangFromMarket } from "@/lib/cta/demoFirst";
 import type { PrefixedMarket } from "@/app/i18n/config";
 import { getUiChrome } from "@/app/i18n/markets/ui-chrome";
 import { marketPagePath } from "@/app/i18n/market-routes";
@@ -31,7 +32,6 @@ export default function EnComparisonPage({
   market?: PrefixedMarket;
 }) {
   const chrome = getUiChrome(market);
-  const register = APP_REGISTER_BY_MARKET[market] ?? APP_REGISTER_BY_MARKET.en;
   const pricingHref = marketPagePath(market, "pricing");
   const faqSchema = {
     "@context": "https://schema.org",
@@ -117,15 +117,15 @@ export default function EnComparisonPage({
         <div className="max-w-3xl mx-auto text-center text-white">
           <h2 className="text-3xl font-bold mb-4">{content.ctaTitle}</h2>
           <p className="text-indigo-100 mb-8">{chrome.comparisonCtaNote}</p>
-          <a
-            href={register}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg hover:bg-indigo-50"
-          >
-            {chrome.startTrial}
-            <ArrowRight className="h-4 w-4" />
-          </a>
+          <div className="flex justify-center">
+            <DemoFirstActions
+              location="footer"
+              lang={demoFirstLangFromMarket(market)}
+              tone="onDark"
+              align="center"
+              showDemoNote={false}
+            />
+          </div>
           <p className="mt-6 text-sm text-indigo-200">
             <Link href={pricingHref} className="underline">
               {chrome.seePricing}

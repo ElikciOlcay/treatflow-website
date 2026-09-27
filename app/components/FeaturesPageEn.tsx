@@ -7,9 +7,13 @@ import FaqSectionEn from "./FaqSectionEn";
 import TreatmentWorkflow from "./TreatmentWorkflow";
 import { getFeaturesOverview } from "@/app/i18n/markets/features-overview";
 import type { PrefixedMarket } from "@/app/i18n/config";
+import DemoFirstActions from "./DemoFirstActions";
+import { demoFirstLangFromMarket, getDemoFirstCopy } from "@/lib/cta/demoFirst";
 
 export default function FeaturesPageEn({ market = "en" }: { market?: PrefixedMarket }) {
   const content = getFeaturesOverview(market);
+  const ctaLang = demoFirstLangFromMarket(market);
+  const closing = getDemoFirstCopy(ctaLang);
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -66,19 +70,17 @@ export default function FeaturesPageEn({ market = "en" }: { market?: PrefixedMar
                 </li>
               ))}
             </ul>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a
-                href={content.registerHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg"
-              >
-                {content.primaryCta}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+            <div className="flex flex-col gap-4 items-center lg:items-start">
+              <DemoFirstActions
+                lang={ctaLang}
+                location="hero"
+                registerHref={content.registerHref}
+                showDemoNote
+                showTrialDetail
+              />
               <Link
                 href={content.pricingHref}
-                className="bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-all duration-300 flex items-center justify-center"
+                className="inline-flex text-base font-semibold text-indigo-700 underline underline-offset-4 decoration-indigo-300 hover:text-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 rounded-sm"
               >
                 {content.pricingCta}
               </Link>
@@ -226,17 +228,17 @@ export default function FeaturesPageEn({ market = "en" }: { market?: PrefixedMar
 
       <section className="py-20 bg-indigo-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">{content.bottomTitle}</h2>
-          <p className="text-indigo-100 text-lg mb-8">{content.bottomText}</p>
-          <a
-            href={content.registerHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg"
-          >
-            {content.primaryCta}
-            <ArrowRight className="ml-3 h-5 w-5" />
-          </a>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">{closing.closingTitle}</h2>
+          <p className="text-indigo-100 text-lg mb-8">{closing.closingText}</p>
+          <DemoFirstActions
+            lang={ctaLang}
+            location="footer"
+            tone="onDark"
+            align="center"
+            registerHref={content.registerHref}
+            showDemoNote
+            showTrialDetail
+          />
         </div>
       </section>
     </main>

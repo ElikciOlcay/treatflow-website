@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
-import { CheckCircle, FileText, Shield, Clock, Users, Star, ArrowRight, Zap } from 'lucide-react';
+import { CheckCircle, FileText, Shield, Clock, Users, Star, Zap } from 'lucide-react';
 import Image from 'next/image';
+import DemoFirstActions from '../../components/DemoFirstActions';
 
 export const metadata: Metadata = {
     title: 'NiSV-Dokumentation & Formulare fürs Studio',
@@ -82,14 +83,7 @@ export default function DokumentationFormulareLandingPage() {
                             />
                         </div>
                         <div className="flex items-center">
-                            <a
-                                href="https://app.treatflow.io/auth/register?lang=de"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors inline-block"
-                            >
-                                Kostenlos testen
-                            </a>
+                            <DemoFirstActions location="header" tone="nav" density="compact" showDemoNote={false} showTrialDetail={false} />
                         </div>
                     </div>
                 </div>
@@ -118,23 +112,9 @@ export default function DokumentationFormulareLandingPage() {
                                 <strong>Bis zu 3 Stunden mehr Zeit</strong> für das, was Sie lieben: Ihre Kunden verwöhnen.
                             </p>
 
-                            <div className="flex justify-center sm:justify-start">
-                                <a
-                                    href="https://app.treatflow.io/auth/register?lang=de"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center"
-                                >
-                                    14 Tage kostenlos testen
-                                    <ArrowRight className="ml-2 w-5 h-5" />
-                                </a>
-                            </div>
+                            <DemoFirstActions location="hero" showDemoNote showTrialDetail />
 
                             <div className="flex items-center space-x-6 text-sm text-gray-600">
-                                <div className="flex items-center">
-                                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                                    Keine Kreditkarte erforderlich
-                                </div>
                                 <div className="flex items-center">
                                     <Shield className="w-5 h-5 text-green-500 mr-2" />
                                     100% NiSV-konform
@@ -566,19 +546,7 @@ export default function DokumentationFormulareLandingPage() {
                                     </li>
                                 </ul>
 
-                                <a
-                                    href="https://app.treatflow.io/auth/register?lang=de"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center mb-4"
-                                >
-                                    14 Tage kostenlos testen
-                                    <ArrowRight className="ml-2 w-5 h-5" />
-                                </a>
-
-                                <p className="text-sm text-gray-500">
-                                    Keine Kreditkarte erforderlich • Jederzeit kündbar
-                                </p>
+                                <DemoFirstActions location="pricing" align="center" fullWidth showDemoNote={false} showTrialDetail />
                             </div>
                         </div>
 
@@ -663,25 +631,9 @@ export default function DokumentationFormulareLandingPage() {
                             Starten Sie noch heute mit professioneller Dokumentation
                         </h2>
                         <p className="text-xl mb-8 opacity-90">
-                            Testen Sie Treatflow 14 Tage kostenlos und erleben Sie, wie einfach NiSV-konforme Dokumentation sein kann.
+                            Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.
                         </p>
-
-                        <div className="text-center">
-                            <a
-                                href="https://app.treatflow.io/auth/register?lang=de"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center bg-white text-blue-600 px-12 py-4 rounded-lg font-semibold text-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-blue-600 hover:bg-blue-50"
-                            >
-                                <span>Jetzt 14 Tage kostenlos testen</span>
-                                <ArrowRight className="ml-2 w-6 h-6" />
-                            </a>
-
-                            <div className="mt-4 text-sm text-white/80">
-                                <CheckCircle className="w-4 h-4 inline mr-1 text-green-400" />
-                                Keine Kreditkarte erforderlich
-                            </div>
-                        </div>
+                        <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
 
                         <div className="mt-8 text-center">
                             <p className="text-sm opacity-75">

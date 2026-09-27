@@ -1,10 +1,11 @@
-import { CheckCircle, FileText, ArrowRight } from 'lucide-react';
+import { CheckCircle, FileText } from 'lucide-react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import LeadDownloadForm from './LeadDownloadForm';
+import DemoFirstActions from './DemoFirstActions';
 import { SHORT_DISCLAIMER, type LeadMagnet } from '@/lib/leadMagnets';
 
 export function leadMagnetMetadata(magnet: LeadMagnet): Metadata {
@@ -140,19 +141,11 @@ export default function LeadMagnetLanding({ magnet }: { magnet: LeadMagnet }) {
                         <p className="text-indigo-100 mb-6">
                             Formulare, Kundenkartei und Erinnerungen laufen in Treatflow an einem Ort.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                            <a
-                                href="https://app.treatflow.io/auth/register?lang=de"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-50"
-                            >
-                                14 Tage kostenlos testen
-                                <ArrowRight className="ml-2 h-4 w-4" />
-                            </a>
+                        <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
+                        <div className="mt-4">
                             <Link
                                 href={magnet.relatedHref}
-                                className="inline-flex items-center justify-center border border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-indigo-600"
+                                className="text-base font-medium text-white underline underline-offset-4 decoration-white/50 hover:text-white"
                             >
                                 {magnet.relatedLabel}
                             </Link>

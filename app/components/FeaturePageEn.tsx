@@ -5,6 +5,8 @@ import FaqSectionEn, { type FaqEntry } from "./FaqSectionEn";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./AiAnswerCapsule";
 import Breadcrumbs, { generateBreadcrumbSchema } from "./Breadcrumbs";
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
+import DemoFirstActions from "./DemoFirstActions";
+import { demoFirstLangFromMarket, type DemoFirstLang } from "@/lib/cta/demoFirst";
 
 export type FeatureItem = {
   icon: LucideIcon;
@@ -48,7 +50,6 @@ export default function FeaturePageEn({
   closingTitle,
   closingText,
   earlyAccessHref = APP_REGISTER_BY_MARKET.en,
-  primaryCta = "Start 14-day free trial",
   bottomTitle = "Ready to get started?",
   bottomText = "Start your free trial – no credit card required, cancel anytime.",
   faqs,
@@ -67,10 +68,14 @@ export default function FeaturePageEn({
   secondaryCta,
   promo,
 }: FeaturePageProps) {
-  const CtaTag = earlyAccessHref.startsWith("http") ? "a" : Link;
-  const ctaProps = earlyAccessHref.startsWith("http")
-    ? { href: earlyAccessHref, target: "_blank", rel: "noopener noreferrer" }
-    : { href: earlyAccessHref };
+  const lang: DemoFirstLang = (() => {
+    try {
+      const value = new URL(earlyAccessHref, "https://www.treatflow.io").searchParams.get("lang");
+      return demoFirstLangFromMarket(value);
+    } catch {
+      return "en";
+    }
+  })();
   const homeLabel = breadcrumbHomeHref.startsWith("/tr") ? "Ana sayfa" : "Home";
   return (
     <main>
@@ -107,22 +112,18 @@ export default function FeaturePageEn({
                 </li>
               ))}
             </ul>
-            <div className={`flex flex-col sm:flex-row ${secondaryCta ? "flex-wrap gap-3" : "gap-4"} justify-center lg:justify-start`}>
-              <CtaTag
-                {...ctaProps}
-                className={
-                  secondaryCta
-                    ? "bg-indigo-600 text-white w-fit px-6 py-3 rounded-xl text-base font-semibold hover:bg-indigo-700 transition-all duration-300 inline-flex items-center justify-center shadow-md hover:shadow-lg"
-                    : "bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg"
-                }
-              >
-                {primaryCta}
-                <ArrowRight className={secondaryCta ? "ml-2 h-4 w-4" : "ml-2 h-5 w-5"} />
-              </CtaTag>
+            <div className="flex flex-col gap-4 items-center lg:items-start">
+              <DemoFirstActions
+                lang={lang}
+                location="hero"
+                registerHref={earlyAccessHref}
+                showDemoNote
+                showTrialDetail
+              />
               {secondaryCta && (
                 <Link
                   href={secondaryCta.href}
-                  className="inline-flex w-fit items-center justify-center border border-gray-200 bg-white text-gray-800 px-5 py-3 rounded-xl text-base font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-colors"
+                  className="inline-flex w-fit items-center justify-center border border-gray-200 bg-white text-gray-800 px-5 py-3 rounded-xl text-base font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   {secondaryCta.label}
                 </Link>
@@ -191,7 +192,9 @@ export default function FeaturePageEn({
       <section className="py-10 bg-white border-y border-gray-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-3 gap-4 text-center sm:text-left">
-            {trustItems.map((item) => (
+            {trustItems
+              .filter((item) => !/free trial|ücretsiz|credit card|kredi kart|14 day|14-day|30 gün/i.test(item))
+              .map((item) => (
               <div key={item} className="flex items-center justify-center sm:justify-start gap-2 text-sm text-gray-700">
                 <CheckCircle className="h-4 w-4 text-indigo-600 flex-shrink-0" />
                 <span>{item}</span>
@@ -254,13 +257,15 @@ export default function FeaturePageEn({
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">{bottomTitle}</h2>
           <p className="text-indigo-100 text-lg mb-8">{bottomText}</p>
-          <CtaTag
-            {...ctaProps}
-            className="inline-flex items-center bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg"
-          >
-            {primaryCta}
-            <ArrowRight className="ml-3 h-5 w-5" />
-          </CtaTag>
+          <DemoFirstActions
+            lang={lang}
+            location="footer"
+            tone="onDark"
+            align="center"
+            registerHref={earlyAccessHref}
+            showDemoNote
+            showTrialDetail
+          />
         </div>
       </section>
     </main>

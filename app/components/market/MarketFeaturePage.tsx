@@ -7,6 +7,8 @@ import FaqSectionEn from "../FaqSectionEn";
 import { generateServiceSchema } from "@/lib/schema";
 import { BASE_URL, isPrefixedMarket, type PrefixedMarket } from "../../i18n/config";
 import { getPrimaryCtaPath } from "../../i18n/market-access";
+import DemoFirstActions from "../DemoFirstActions";
+import { demoFirstLangFromMarket, getDemoFirstCopy } from "@/lib/cta/demoFirst";
 import type { InternationalPageContent } from "../InternationalSeoPage";
 
 function registerHrefFromPath(canonicalPath: string): string {
@@ -112,6 +114,9 @@ export default function MarketFeaturePage({
   const theme = themes[content.theme ?? "indigo"] ?? themes.indigo;
   const BadgeIcon = content.features.items[0]?.icon ?? Sparkles;
   const earlyAccessHref = registerHrefFromPath(content.canonicalPath);
+  const pathMarket = content.canonicalPath.match(/^\/([a-z]{2})(?=\/|$)/)?.[1];
+  const ctaLang = demoFirstLangFromMarket(pathMarket);
+  const closing = getDemoFirstCopy(ctaLang);
 
   const serviceSchema = generateServiceSchema({
     name: content.serviceName,
@@ -374,24 +379,22 @@ export default function MarketFeaturePage({
 
       {/* CTA */}
       <section className={`py-20 bg-gradient-to-r ${theme.ctaBg}`}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-            Ready to modernise your studio?
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            {closing.closingTitle}
           </h2>
-          <p className={`text-xl ${theme.ctaSoftText} mb-8 max-w-2xl mx-auto`}>
-            Start your free trial – no credit card required.
+          <p className={`text-lg ${theme.ctaSoftText} mb-8`}>
+            {closing.closingText}
           </p>
-          <div className="flex justify-center">
-            <a
-              href={earlyAccessHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`bg-white ${theme.ctaBtnText} px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center`}
-            >
-              Start free trial
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
-          </div>
+          <DemoFirstActions
+            lang={ctaLang}
+            location="footer"
+            tone="onDark"
+            align="center"
+            registerHref={earlyAccessHref}
+            showDemoNote
+            showTrialDetail
+          />
         </div>
       </section>
     </>

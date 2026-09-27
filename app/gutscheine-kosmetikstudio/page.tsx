@@ -233,7 +233,7 @@ export default function GutscheinePage() {
             <FeaturePageCta
                 theme="purple"
                 title="Mehr Umsatz mit Gutscheinen"
-                description="14 Tage kostenlos testen – Gutscheine fiskalkonform verkaufen und einlösen, ohne Gebühren pro Gutschein."
+                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
                 secondaryLabel="Zur Kasse"
                 secondaryHref="/kassensystem-kosmetikstudio"
             />

@@ -6,17 +6,13 @@ import {
   getDemoCopy,
   type DemoLocale,
 } from '@/lib/demoForms';
-import { APP_REGISTER_BY_MARKET, DEMO_BOOKING_URL } from '@/app/i18n/market-access';
+import { DEMO_BOOKING_URL } from '@/app/i18n/market-access';
+import DemoFirstActions from '@/app/components/DemoFirstActions';
+import { demoFirstLangFromLocale } from '@/lib/cta/demoFirst';
 
 export default function DemoFormsGallery({ locale }: { locale: DemoLocale }) {
   const copy = getDemoCopy(locale);
   const featureHref = DEMO_FORMS_FEATURE_PATH[locale];
-  const registerHref =
-    locale === 'tr'
-      ? APP_REGISTER_BY_MARKET.tr
-      : locale === 'en'
-        ? APP_REGISTER_BY_MARKET.en
-        : APP_REGISTER_BY_MARKET.de;
 
   return (
     <>
@@ -105,15 +101,13 @@ export default function DemoFormsGallery({ locale }: { locale: DemoLocale }) {
             <h2 className="text-2xl font-bold text-white mb-3">{copy.gallery.bottomTitle}</h2>
             <p className="text-indigo-100 mb-6">{copy.gallery.bottomText}</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a
-                href={registerHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-50"
-              >
-                {copy.gallery.trialCta}
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
+              <DemoFirstActions
+                location="footer"
+                lang={demoFirstLangFromLocale(locale)}
+                tone="onDark"
+                align="center"
+                showDemoNote={false}
+              />
               <Link
                 href={featureHref}
                 className="inline-flex items-center justify-center border border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-indigo-600"

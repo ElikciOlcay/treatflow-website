@@ -6,7 +6,8 @@ import Link from 'next/link';
 import MobileMenu from "./MobileMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { funktionenGroups, type FunktionenNavItem } from "./funktionenNav";
-import { APP_LOGIN_URL, APP_REGISTER_URL } from "../i18n/market-access";
+import { APP_LOGIN_URL } from "../i18n/market-access";
+import DemoFirstActions from "./DemoFirstActions";
 
 function FunktionenLink({ item }: { item: FunktionenNavItem }) {
     return (
@@ -42,7 +43,7 @@ export default function Navigation() {
         <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
-                    <div className="flex items-center">
+                    <div className="flex items-center gap-8">
                         <Link href="/" className="flex items-center">
                             <img
                                 src="/images/logos/treatflow-logo.svg"
@@ -50,8 +51,7 @@ export default function Navigation() {
                                 className="h-8 w-auto"
                             />
                         </Link>
-                    </div>
-                    <div className="hidden lg:flex items-center space-x-6">
+                        <div className="hidden lg:flex items-center gap-7">
                         {/* Funktionen Mega Menu */}
                         <div className="relative group">
                             <button className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors text-sm font-medium">
@@ -114,29 +114,42 @@ export default function Navigation() {
                         </div>
 
                         <Link href="/preise" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Preise</Link>
-                        <Link href="/blog" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Blog</Link>
-                        <Link href="/neuigkeiten" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Neuigkeiten</Link>
-                        <Link href="/#testimonials" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Referenzen</Link>
-                        <Link href="/kontakt" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Kontakt</Link>
-                        <a
-                            href={APP_LOGIN_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
-                        >
-                            Login
-                        </a>
-                        <LanguageSwitcher current="de" />
-                        <a
-                            href={APP_REGISTER_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
-                        >
-                            Kostenlos testen
-                        </a>
+                        <div className="relative group">
+                            <button type="button" className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors text-sm font-medium">
+                                Mehr
+                                <ChevronDown className="ml-1 h-4 w-4" />
+                            </button>
+                            <div className="absolute top-full right-0 pt-2 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200">
+                                <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-2">
+                                    <Link href="/blog" className="block px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-indigo-600">Blog</Link>
+                                    <Link href="/neuigkeiten" className="block px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-indigo-600">Neuigkeiten</Link>
+                                    <a href="/#testimonials" className="block px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-indigo-600">Referenzen</a>
+                                    <Link href="/kontakt" className="block px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-indigo-600">Kontakt</Link>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <MobileMenu />
+                    </div>
+                    <div className="flex items-center gap-4">
+                        <div className="hidden lg:flex items-center gap-4">
+                            <a
+                                href={APP_LOGIN_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
+                            >
+                                Login
+                            </a>
+                            <LanguageSwitcher current="de" />
+                            <DemoFirstActions
+                                location="header"
+                                tone="nav"
+                                showDemoNote={false}
+                                showTrialDetail={false}
+                            />
+                        </div>
+                        <MobileMenu />
+                    </div>
                 </div>
             </div>
         </nav>

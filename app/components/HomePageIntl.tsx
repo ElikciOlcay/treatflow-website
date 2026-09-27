@@ -11,6 +11,8 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./AiAnswerCapsule";
+import DemoFirstActions from "./DemoFirstActions";
+import { demoFirstLangFromLocale, getDemoFirstCopy } from "@/lib/cta/demoFirst";
 
 export type HomePageIntlContent = {
   locale: string;
@@ -58,6 +60,29 @@ export type HomePageIntlContent = {
 };
 
 export default function HomePageIntl({ content }: { content: HomePageIntlContent }) {
+  const lang = demoFirstLangFromLocale(content.locale);
+  const copy = getDemoFirstCopy(lang);
+  const trustItems = content.hero.trustItems.filter(
+    (item) => !/credit card|kredi kart|luottokort|creditcard|geen creditcard|free trial|ücretsiz|14[- ]day|30 gün|2 minute/i.test(item)
+  );
+  const faqs = [
+    ...content.faqs.items,
+    ...copy.faqs.map((item) => ({ q: item.question, a: item.answer })),
+  ];
+  const faqSchema = content.schemas?.faq
+    ? {
+        ...content.schemas.faq,
+        mainEntity: [
+          ...((content.schemas.faq as { mainEntity?: unknown[] }).mainEntity ?? []),
+          ...copy.faqs.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: { "@type": "Answer", text: item.answer },
+          })),
+        ],
+      }
+    : undefined;
+
   return (
     <>
       {content.schemas?.software && (
@@ -66,10 +91,10 @@ export default function HomePageIntl({ content }: { content: HomePageIntlContent
           dangerouslySetInnerHTML={{ __html: JSON.stringify(content.schemas.software) }}
         />
       )}
-      {content.schemas?.faq && (
+      {faqSchema && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(content.schemas.faq) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
 
@@ -84,32 +109,21 @@ export default function HomePageIntl({ content }: { content: HomePageIntlContent
               <span className="text-indigo-600">{content.hero.titleHighlight}</span>
               {content.hero.titleTail ? ` ${content.hero.titleTail}` : ""}
             </h1>
-            <p className="text-lg lg:text-xl text-gray-600 mb-6 leading-relaxed">
+            <p className="text-lg lg:text-xl text-gray-600 mb-3 leading-relaxed">
               {content.hero.subtitle}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
-              {content.earlyAccessHref.startsWith("http") ? (
-                <a
-                  href={content.earlyAccessHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-                >
-                  {content.hero.primaryCta}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              ) : (
-                <Link
-                  href={content.earlyAccessHref}
-                  className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-                >
-                  {content.hero.primaryCta}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              )}
+            <p className="text-base lg:text-lg text-gray-700 mb-6 leading-relaxed">{copy.heroAddon}</p>
+            <div className="mb-8">
+              <DemoFirstActions
+                lang={lang}
+                location="hero"
+                registerHref={content.earlyAccessHref}
+                showDemoNote
+                showTrialDetail
+              />
             </div>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-600 mb-6">
-              {content.hero.trustItems.map((item) => (
+              {trustItems.map((item) => (
                 <div key={item} className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-emerald-500" />
                   <span>{item}</span>
@@ -196,27 +210,15 @@ export default function HomePageIntl({ content }: { content: HomePageIntlContent
               </div>
             ))}
           </div>
-          <div className="text-center mt-10">
-            {content.earlyAccessHref.startsWith("http") ? (
-              <a
-                href={content.earlyAccessHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors"
-              >
-                {content.hero.primaryCta}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            ) : (
-              <Link
-                href={content.earlyAccessHref}
-                className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors"
-              >
-                {content.hero.primaryCta}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            )}
-            <p className="text-sm text-gray-500 mt-3">{content.features.ctaNote}</p>
+          <div className="mt-10 flex justify-center">
+            <DemoFirstActions
+              lang={lang}
+              location="hero"
+              align="center"
+              registerHref={content.earlyAccessHref}
+              showDemoNote
+              showTrialDetail
+            />
           </div>
         </div>
       </section>
@@ -257,7 +259,7 @@ export default function HomePageIntl({ content }: { content: HomePageIntlContent
             {content.faqs.title}
           </h2>
           <div className="space-y-4">
-            {content.faqs.items.map((item) => (
+            {faqs.map((item) => (
               <div key={item.q} className="border border-gray-100 rounded-xl p-6 bg-gray-50">
                 <h3 className="font-semibold text-gray-900 mb-2">{item.q}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{item.a}</p>
@@ -278,30 +280,17 @@ export default function HomePageIntl({ content }: { content: HomePageIntlContent
 
       <section className="py-20 bg-indigo-600" aria-label="Call to action">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">{content.cta.title}</h2>
-          <p className="text-indigo-100 text-lg mb-8">{content.cta.subtitle}</p>
-          <div className="flex justify-center">
-            {content.earlyAccessHref.startsWith("http") ? (
-              <a
-                href={content.earlyAccessHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                {content.hero.primaryCta}
-                <ArrowRight className="ml-3 h-5 w-5" />
-              </a>
-            ) : (
-              <Link
-                href={content.earlyAccessHref}
-                className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                {content.hero.primaryCta}
-                <ArrowRight className="ml-3 h-5 w-5" />
-              </Link>
-            )}
-          </div>
-          <p className="text-sm text-indigo-200 mt-6">{content.cta.note}</p>
+          <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">{copy.closingTitle}</h2>
+          <p className="text-indigo-100 text-lg mb-8">{copy.closingText}</p>
+          <DemoFirstActions
+            lang={lang}
+            location="footer"
+            tone="onDark"
+            align="center"
+            registerHref={content.earlyAccessHref}
+            showDemoNote
+            showTrialDetail
+          />
         </div>
       </section>
     </>

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { Heart, MapPin, ShieldCheck, Users, ArrowRight } from "lucide-react";
+import { Heart, MapPin, ShieldCheck, Users } from "lucide-react";
 import Image from "next/image";
 import { buildPageMetadata } from "@/app/i18n/seo";
 import {
@@ -7,8 +7,9 @@ import {
   marketLanguage,
   type PrefixedMarket,
 } from "@/app/i18n/config";
-import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 import { getAboutCopy } from "@/app/i18n/markets/static-pages-nl-fi";
+import DemoFirstActions from "@/app/components/DemoFirstActions";
+import { demoFirstLangFromMarket } from "@/lib/cta/demoFirst";
 
 const icons = [Heart, ShieldCheck, Users, MapPin] as const;
 
@@ -100,15 +101,6 @@ export default async function AboutPage({
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
   const content = lang === "tr" ? trAbout : lang === "nl" || lang === "fi" ? getAboutCopy(lang) : enAbout;
-  const registerUrl = APP_REGISTER_BY_MARKET[market];
-  const ctaLabel =
-    lang === "tr"
-      ? "Ücretsiz deneyin"
-      : lang === "nl"
-        ? "Gratis proberen"
-        : lang === "fi"
-          ? "Aloita ilmainen kokeilu"
-          : content.ctaLabel;
 
   return (
     <>
@@ -161,14 +153,12 @@ export default async function AboutPage({
             })}
           </div>
           <div className="text-center mt-12">
-            <a
-              href={registerUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700"
-            >
-              {ctaLabel} <ArrowRight className="w-4 h-4" />
-            </a>
+            <DemoFirstActions
+              location="footer"
+              lang={demoFirstLangFromMarket(market)}
+              align="center"
+              showDemoNote={false}
+            />
           </div>
         </div>
       </section>

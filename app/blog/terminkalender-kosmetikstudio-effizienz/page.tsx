@@ -624,10 +624,10 @@ export default function BlogPost() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link
-                                    href="https://app.treatflow.io/auth/register?lang=de"
+                                    href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
                                     className="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors inline-flex items-center justify-center"
                                 >
-                                    Jetzt kostenlos testen
+                                    Persönliche Demo buchen
                                     <ArrowRight className="ml-2 h-5 w-5" />
                                 </Link>
                                 <Link

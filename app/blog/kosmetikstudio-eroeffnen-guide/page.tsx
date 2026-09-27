@@ -548,11 +548,11 @@ export default function BlogPost() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link
-                                    href="https://app.treatflow.io/auth/register?lang=de"
+                                    href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
                                     target="_blank"
                                     className="inline-flex items-center bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
                                 >
-                                    14 Tage kostenlos testen
+                                    Persönliche Demo buchen
                                     <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                                 <Link

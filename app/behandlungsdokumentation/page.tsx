@@ -204,7 +204,7 @@ export default function BehandlungsdokumentationPage() {
             <FeaturePageCta
                 theme="purple"
                 title="Bereit für klare Dokumentation?"
-                description="14 Tage kostenlos testen – ohne Kreditkarte. Dokumentation, Fotos und NiSV-Workflow in einer App."
+                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
                 secondaryLabel="NiSV-Dokumentation"
                 secondaryHref="/nisv-dokumentation"
             />

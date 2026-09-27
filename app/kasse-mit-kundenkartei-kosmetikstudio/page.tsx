@@ -9,6 +9,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
+import DemoFirstActions from '../components/DemoFirstActions';
 
 export const metadata = {
     title: 'Kasse mit Kundenkartei fürs Kosmetikstudio',
@@ -135,19 +136,11 @@ export default function KasseMitKundenkarteiPage() {
                             question="Was bringt eine Kasse mit Kundenkartei im Kosmetikstudio?"
                             answer="Eine Kasse mit Kundenkartei ordnet jeden Verkauf automatisch der Kundin zu und speichert ihn in der Behandlungshistorie. Bei Treatflow ist die Kasse mit Kundenkartei, Terminkalender, Anamnese, Fotos und Dokumentation verbunden. So entsteht aus jedem Kassiervorgang ein vollständiges Kundenbild – ohne doppelte Datenpflege und rechtssicher (TSE in Deutschland, RKSV in Österreich)."
                         />
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a
-                                href="https://app.treatflow.io/auth/register?lang=de"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors duration-200 flex items-center justify-center"
-                            >
-                                14 Tage kostenlos testen
-                                <ArrowRight className="ml-2 h-5 w-5" />
-                            </a>
+                        <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
+                        <div className="mt-4">
                             <Link
                                 href="/kundenkartei-software"
-                                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-indigo-600 hover:text-indigo-600 transition-colors duration-200"
+                                className="text-base font-semibold text-indigo-700 underline underline-offset-4 decoration-indigo-300 hover:text-indigo-900"
                             >
                                 Kundenkartei ansehen
                             </Link>
@@ -277,20 +270,11 @@ export default function KasseMitKundenkarteiPage() {
                         Mehr als nur kassieren
                     </h2>
                     <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
-                        Teste Treatflow 14 Tage kostenlos und erlebe, wie Kasse und Kundenkartei
-                        zusammenarbeiten.
+                        Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="https://app.treatflow.io/auth/register?lang=de"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
-                        >
-                            14 Tage gratis testen
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                        <Link href="/preise" className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-indigo-600 transition-colors duration-200">
+                    <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
+                    <div className="mt-5">
+                        <Link href="/preise" className="text-base font-medium text-white underline underline-offset-4 decoration-white/50 hover:text-white">
                             Preise ansehen
                         </Link>
                     </div>
