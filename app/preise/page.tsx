@@ -1,9 +1,8 @@
-import { CheckCircle, X, ChevronDown } from 'lucide-react';
+import { CheckCircle, X, ArrowRight, ChevronDown } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import CTASection from '../components/CTASection';
 import PricingSection from '../components/PricingSection';
-import DemoFirstActions from '../components/DemoFirstActions';
 import QuickFacts from '../components/QuickFacts';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import ContentAttribution from '../components/ContentAttribution';
@@ -227,8 +226,16 @@ export default function PreisePage() {
                         ))}
                     </div>
 
-                    <div className="mt-8 flex justify-center">
-                        <DemoFirstActions location="pricing" align="center" showDemoNote showTrialDetail />
+                    <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://app.treatflow.io/auth/register?lang=de"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors text-center flex items-center justify-center"
+                        >
+                            14 Tage kostenlos testen
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </a>
                     </div>
                 </div>
             </section>

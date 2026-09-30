@@ -5,9 +5,8 @@ import {
   marketLanguage,
   type PrefixedMarket,
 } from "@/app/i18n/config";
+import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 import { getContactCopy } from "@/app/i18n/markets/static-pages-nl-fi";
-import DemoFirstActions from "@/app/components/DemoFirstActions";
-import { demoFirstLangFromMarket } from "@/lib/cta/demoFirst";
 
 const trContact = {
   metaTitle: "Treatflow ile İletişim",
@@ -55,6 +54,15 @@ export default async function ContactPage({
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
   const content = lang === "tr" ? trContact : lang === "nl" || lang === "fi" ? getContactCopy(lang) : enContact;
+  const registerUrl = APP_REGISTER_BY_MARKET[market];
+  const ctaLabel =
+    lang === "tr"
+      ? "Ücretsiz deneyin"
+      : lang === "nl"
+        ? "Gratis proberen"
+        : lang === "fi"
+          ? "Aloita ilmainen kokeilu"
+          : content.cta;
 
   return (
     <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">
@@ -76,13 +84,14 @@ export default async function ContactPage({
             content.body
           )}
         </p>
-        <div className="mt-8">
-          <DemoFirstActions
-            location="footer"
-            lang={demoFirstLangFromMarket(market)}
-            showDemoNote={false}
-          />
-        </div>
+        <a
+          href={registerUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-700"
+        >
+          {ctaLabel}
+        </a>
       </div>
     </section>
   );

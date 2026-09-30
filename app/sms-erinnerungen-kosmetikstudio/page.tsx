@@ -17,7 +17,6 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import { generateFaqSchema } from '@/lib/schema';
-import DemoFirstActions from '../components/DemoFirstActions';
 
 export const metadata = {
     title: 'WhatsApp-Erinnerungen Kosmetik: weniger No-Shows',
@@ -97,7 +96,25 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                             Reduziere No-Shows um bis zu 80% mit automatischen Terminerinnerungen per WhatsApp und E-Mail.
                             Deine Kunden werden pünktlich erinnert – du sparst Zeit und Ärger.
                         </p>
-                        <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a
+                                href="https://app.treatflow.io/auth/register?lang=de"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-200 flex items-center justify-center shadow-lg shadow-purple-200"
+                            >
+                                14 Tage gratis testen
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </a>
+                            <a
+                                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-purple-50 transition-colors duration-200 flex items-center justify-center"
+                            >
+                                Kostenlose Beratung
+                            </a>
+                        </div>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
                         <Image src="/images/lifestyle/sms-erinnerung-studio.png" alt="Kundin erhält Terminerinnerung per Smartphone im Beauty-Studio" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
@@ -345,8 +362,28 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                     <h2 className="text-4xl font-bold text-white mb-6">
                         Bereit für weniger No-Shows?
                     </h2>
-                    <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.</p>
-                    <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
+                    <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
+                        Teste WhatsApp-Erinnerungen 14 Tage kostenlos und erlebe, wie deutlich weniger Termine verpasst werden.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://app.treatflow.io/auth/register?lang=de"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
+                        >
+                            14 Tage gratis testen
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </a>
+                        <a
+                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200"
+                        >
+                            Kostenlose Beratung
+                        </a>
+                    </div>
                 </div>
             </section>
 

@@ -3,7 +3,6 @@
 import { CheckCircle, X, Star, ArrowRight, Receipt } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import DemoFirstActions from "./DemoFirstActions";
 
 export default function PricingSection() {
   const [isYearly, setIsYearly] = useState(false);
@@ -21,7 +20,7 @@ export default function PricingSection() {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Treatflow kostet ab 39 €/Monat (Basic) bzw. 59 €/Monat (Booking). Die Kasse ist optional ab 39 €/Monat.
-            Ohne Provision.
+            14 Tage kostenlos testen – ohne Provision und ohne Risiko.
           </p>
         </div>
 
@@ -104,15 +103,15 @@ export default function PricingSection() {
               ))}
             </ul>
 
-            <DemoFirstActions
-              location="pricing"
-              plan="basic"
-              tone="pricingMuted"
-              fullWidth
-              align="center"
-              showDemoNote={false}
-              showTrialDetail
-            />
+            <a
+              href="https://app.treatflow.io/auth/register?lang=de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-gray-900 text-white py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 flex items-center justify-center"
+            >
+              14 Tage gratis testen
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
           </div>
 
           {/* Booking Plan - Featured */}
@@ -159,15 +158,15 @@ export default function PricingSection() {
               ))}
             </ul>
 
-            <DemoFirstActions
-              location="pricing"
-              plan="booking"
-              tone="pricingFeatured"
-              fullWidth
-              align="center"
-              showDemoNote={false}
-              showTrialDetail
-            />
+            <a
+              href="https://app.treatflow.io/auth/register?lang=de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-white text-indigo-600 py-3 rounded-xl font-bold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center"
+            >
+              14 Tage gratis testen
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
           </div>
         </div>
 
@@ -223,10 +222,10 @@ export default function PricingSection() {
         <div className="text-center mt-12">
           <div className="bg-gray-50 rounded-xl p-6 max-w-2xl mx-auto">
             <h3 className="text-lg font-bold text-gray-900 mb-2">
-              Persönliche Demo
+              14 Tage kostenlos testen
             </h3>
             <p className="text-gray-600 mb-4 text-sm">
-              Kostenlos und unverbindlich • Hilfe beim Datenumzug
+              Keine Kreditkarte erforderlich • Jederzeit kündbar • Kostenloser Datenumzug
             </p>
             <div className="flex justify-center space-x-6 text-xs text-gray-500">
               <span>✓ Keine Setup-Gebühren</span>

@@ -1,11 +1,13 @@
 import { notFound, redirect } from "next/navigation";
 import {
   isPrefixedMarket,
+  type PrefixedMarket,
 } from "@/app/i18n/config";
-import { DEMO_BOOKING_URL } from "@/app/i18n/market-access";
+import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 
 /**
- * Alte Early-Access-URLs gehen auf die persönliche Demo.
+ * Early Access entfaellt: alle Maerkte registrieren sich direkt in der App.
+ * Alte URLs werden auf die Register-URL mit passendem ?lang= umgeleitet.
  */
 export default async function EarlyAccessRedirectPage({
   params,
@@ -14,5 +16,6 @@ export default async function EarlyAccessRedirectPage({
 }) {
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) notFound();
-  redirect(DEMO_BOOKING_URL);
+  const market = raw as PrefixedMarket;
+  redirect(APP_REGISTER_BY_MARKET[market]);
 }

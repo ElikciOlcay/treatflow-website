@@ -367,7 +367,7 @@ export default function BlogPost() {
                                 kostenlos, ohne Kreditkarte.
                             </p>
                             <a
-                                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                                href="https://app.treatflow.io/auth/register?lang=de"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors"

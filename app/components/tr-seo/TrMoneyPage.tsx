@@ -8,7 +8,7 @@ import {
 import Breadcrumbs, { generateBreadcrumbSchema } from "@/app/components/Breadcrumbs";
 import FaqSectionEn from "@/app/components/FaqSectionEn";
 import TreatmentWorkflow from "@/app/components/TreatmentWorkflow";
-import DemoFirstActions from "@/app/components/DemoFirstActions";
+import TrSeoCta from "@/app/components/tr-seo/TrSeoCta";
 import TrSeoPageView from "@/app/components/tr-seo/TrSeoPageView";
 import {
   generateServiceSchema,
@@ -16,6 +16,7 @@ import {
   generateWebPageSchemaIntl,
 } from "@/lib/schema";
 import { BASE_URL } from "@/app/i18n/config";
+import { getPrimaryCtaPath } from "@/app/i18n/market-access";
 import { TR_PATHS } from "@/app/i18n/tr-seo/paths";
 import type { SeoPageKey } from "@/app/i18n/seo";
 import type { WorkflowStep } from "@/app/components/TreatmentWorkflow";
@@ -54,7 +55,11 @@ export type TrMoneyPageContent = {
   dateModified: string;
 };
 
+const CTA_CLASS =
+  "inline-flex items-center justify-center bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors";
+
 export default function TrMoneyPage({ content }: { content: TrMoneyPageContent }) {
+  const registerHref = getPrimaryCtaPath("tr");
   const pageUrl = `${BASE_URL}${content.path}`;
   const crumbs = [{ label: content.h1, href: content.path }];
 
@@ -127,7 +132,13 @@ export default function TrMoneyPage({ content }: { content: TrMoneyPageContent }
                 ))}
               </ul>
               <div className="flex flex-col sm:flex-row items-start gap-3">
-                <DemoFirstActions lang="tr" location="hero" showDemoNote={false} />
+                <TrSeoCta
+                  href={registerHref}
+                  label="Ücretsiz Deneyin"
+                  className={CTA_CLASS}
+                  landingPage={content.path}
+                  keywordCluster={content.keywordCluster}
+                />
                 <Link
                   href={TR_PATHS.pricing}
                   className="inline-flex items-center text-indigo-600 font-semibold hover:text-indigo-700 px-2 py-4"
@@ -289,7 +300,13 @@ export default function TrMoneyPage({ content }: { content: TrMoneyPageContent }
           <h2 className="text-3xl font-bold text-gray-900 mb-4">{content.pricingTitle}</h2>
           <p className="text-gray-600 leading-relaxed mb-8">{content.pricingText}</p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <DemoFirstActions lang="tr" location="pricing" align="center" showDemoNote={false} />
+            <TrSeoCta
+              href={registerHref}
+              label="Ücretsiz Deneyin"
+              className={CTA_CLASS}
+              landingPage={content.path}
+              keywordCluster={content.keywordCluster}
+            />
             <Link
               href={TR_PATHS.pricing}
               className="inline-flex items-center justify-center border border-gray-200 text-gray-800 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors"
@@ -326,13 +343,17 @@ export default function TrMoneyPage({ content }: { content: TrMoneyPageContent }
 
       <section className="py-16 bg-indigo-600">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Treatflow stüdyona uyar mı? Birlikte bakalım.</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">30 gün ücretsiz deneyin</h2>
           <p className="text-indigo-100 mb-8">
-            Treatflow&apos;u kişisel bir demoda tanı ve stüdyo gününle ilgili sorularını sor.
+            Kredi kartı gerekmez. Veri aktarımında yardımcı oluruz. Taahhüt yok.
           </p>
-          <div className="flex justify-center">
-            <DemoFirstActions lang="tr" location="footer" tone="onDark" align="center" showDemoNote={false} />
-          </div>
+          <TrSeoCta
+            href={registerHref}
+            label="Ücretsiz Deneyin"
+            className="inline-flex items-center justify-center bg-white text-indigo-700 px-8 py-4 rounded-xl font-semibold hover:bg-indigo-50 transition-colors"
+            landingPage={content.path}
+            keywordCluster={content.keywordCluster}
+          />
         </div>
       </section>
     </>

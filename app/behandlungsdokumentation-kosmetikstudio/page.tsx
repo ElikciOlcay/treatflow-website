@@ -8,7 +8,6 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import { generateFaqSchema } from '@/lib/schema';
-import DemoFirstActions from '../components/DemoFirstActions';
 
 const clusterLinks = [
     { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', description: 'Die All-in-One Lösung für dein Studio' },
@@ -146,7 +145,26 @@ export default function BehandlungsdokumentationKosmetikstudioPage() {
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
                             Fotos, Notizen, Produkte und Ergebnisse – alles in einer Plattform. NiSV-konform dokumentieren und jederzeit abrufbar.
                         </p>
-                        <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a
+                                href="https://app.treatflow.io/auth/register?lang=de"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center"
+                            >
+                                14 Tage kostenlos testen
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </a>
+                            <a
+                                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors duration-200"
+                            >
+                                Beratung buchen
+                            </a>
+                        </div>
+                        <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
                         <Image src="/images/lifestyle/dokumentation-vorher-nachher.png" alt="Behandlungsdokumentation mit Vorher-Nachher-Fotos am Tablet" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
@@ -259,8 +277,29 @@ export default function BehandlungsdokumentationKosmetikstudioPage() {
                     <h2 className="text-4xl font-bold text-gray-900 mb-6">
                         Bereit für digitale Behandlungsdokumentation?
                     </h2>
-                    <p className="text-xl text-gray-600 mb-8">Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.</p>
-                    <DemoFirstActions location="footer" align="center" showDemoNote showTrialDetail />
+                    <p className="text-xl text-gray-600 mb-8">
+                        Teste Fotos, Notizen, Produkte und NiSV-konforme Dokumentation 14 Tage kostenlos. Alles in einer Plattform.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://app.treatflow.io/auth/register?lang=de"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center"
+                        >
+                            14 Tage gratis testen
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </a>
+                        <a
+                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors duration-200"
+                        >
+                            Beratung buchen
+                        </a>
+                    </div>
+                    <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Jederzeit kündbar.</p>
                 </div>
             </section>
 

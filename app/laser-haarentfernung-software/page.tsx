@@ -10,7 +10,6 @@ import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import { generateFaqSchema } from '@/lib/schema';
-import DemoFirstActions from '../components/DemoFirstActions';
 
 import { buildHreflangAlternates } from "@/app/i18n/seo";
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Laser & IPL Software' }];
@@ -177,7 +176,26 @@ export default function LaserHaarentfernungSoftwarePage() {
                             NiSV-konforme Dokumentation, digitale Einwilligungen und Serienverwaltung -
                             alles was dein Laser-Studio für den Alltag braucht.
                         </p>
-                        <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a
+                                href="https://app.treatflow.io/auth/register?lang=de"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center"
+                            >
+                                14 Tage kostenlos testen
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </a>
+                            <a
+                                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors duration-200"
+                            >
+                                Beratung buchen
+                            </a>
+                        </div>
+                        <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
                         <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
@@ -368,9 +386,28 @@ export default function LaserHaarentfernungSoftwarePage() {
                         Bereit für NiSV-konforme Dokumentation?
                     </h2>
                     <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                        Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.
+                        Teste Treatflow 14 Tage kostenlos und erlebe, wie einfach Dokumentation und Verwaltung in deinem Laser-Studio sein können.
                     </p>
-                    <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://app.treatflow.io/auth/register?lang=de"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
+                        >
+                            14 Tage gratis testen
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </a>
+                        <a
+                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200"
+                        >
+                            Beratung buchen
+                        </a>
+                    </div>
+                    <p className="text-sm text-blue-200 mt-4">Keine Kreditkarte nötig. Jederzeit kündbar.</p>
                 </div>
             </section>
 

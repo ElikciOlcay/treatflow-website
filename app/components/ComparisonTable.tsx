@@ -1,5 +1,5 @@
 import { CheckCircle, X } from 'lucide-react';
-import DemoFirstActions from './DemoFirstActions';
+import { APP_REGISTER_BY_MARKET } from '@/app/i18n/market-access';
 
 type HomeLocale = 'de' | 'en';
 
@@ -40,9 +40,9 @@ const rowsDe = [
     otherOk: false,
   },
   {
-    feature: 'Hilfe beim Datenumzug',
-    treatflow: 'Persönliche Hilfe beim Import',
-    other: 'Oft selbst organisiert',
+    feature: 'Kostenloser Datenumzug',
+    treatflow: 'Ja, mit persönlicher Hilfe',
+    other: 'Selten oder kostenpflichtig',
     treatflowOk: true,
     otherOk: false,
   },
@@ -89,9 +89,9 @@ const rowsEn = [
     other: 'Extra fees are common',
   },
   {
-    feature: 'Help with data migration',
-    treatflow: 'We help you import your data',
-    other: 'Often on your own',
+    feature: 'Free data migration',
+    treatflow: 'Yes, we migrate your data',
+    other: 'Rare or paid',
   },
   {
     feature: 'Treatment documentation',
@@ -111,12 +111,16 @@ const copy = {
     subtitle: 'Vergleiche selbst - und entscheide, was zu deinem Studio passt.',
     others: 'Andere Anbieter',
     othersShort: 'Andere:',
+    cta: 'Überzeuge dich selbst - 14 Tage kostenlos',
+    register: APP_REGISTER_BY_MARKET.de,
   },
   en: {
     title: 'Why Treatflow is the better fit for your studio',
     subtitle: 'Compare for yourself – then pick what your studio actually needs.',
     others: 'Other tools',
     othersShort: 'Others:',
+    cta: 'See for yourself – 14-day free trial',
+    register: APP_REGISTER_BY_MARKET.en,
   },
 };
 
@@ -213,13 +217,15 @@ export default function ComparisonTable({ locale = 'de' }: { locale?: HomeLocale
           ))}
         </div>
 
-        <div className="mt-10 flex justify-center">
-          <DemoFirstActions
-            location="footer"
-            lang={locale}
-            align="center"
-            showDemoNote={false}
-          />
+        <div className="text-center mt-10">
+          <a
+            href={t.register}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            {t.cta}
+          </a>
         </div>
       </div>
     </section>

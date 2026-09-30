@@ -11,8 +11,8 @@ import {
 
 export const heroBullets = [
     'Termine, Kundenkartei & Formulare in einer App',
-    'Persönliche Demo, kostenlos und unverbindlich',
-    'Wir helfen dir beim Start',
+    'In 5 Minuten eingerichtet – wir helfen dir persönlich',
+    '14 Tage kostenlos – keine Kreditkarte nötig',
 ];
 
 export const painSolutionPairs = [
@@ -260,6 +260,8 @@ export function GoogleStars({ size = 'md' }: { size?: 'sm' | 'md' }) {
 
 export function TrustLine() {
     const items = [
+        'Ohne Kreditkarte',
+        'In wenigen Minuten startklar',
         'Persönliche Hilfe beim Einrichten',
         'DSGVO-konform',
     ];

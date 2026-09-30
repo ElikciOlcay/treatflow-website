@@ -1,5 +1,5 @@
-import { TrendingDown, CalendarCheck, Clock, Users } from 'lucide-react';
-import DemoFirstActions from './DemoFirstActions';
+import { TrendingDown, CalendarCheck, Clock, Users, ArrowRight } from 'lucide-react';
+import { APP_REGISTER_BY_MARKET } from '@/app/i18n/market-access';
 
 type HomeLocale = 'de' | 'en';
 
@@ -69,10 +69,16 @@ const copy = {
   de: {
     title: 'Zahlen lügen nicht - schau selbst, was Treatflow bringt',
     subtitle: 'Echte Ergebnisse von echten Studios, die mit Treatflow arbeiten.',
+    cta: 'Jetzt selbst erleben',
+    note: '14 Tage kostenlos. Ohne Kreditkarte.',
+    register: APP_REGISTER_BY_MARKET.de,
   },
   en: {
     title: 'The numbers are straightforward',
     subtitle: 'Results from studios that run their day in Treatflow.',
+    cta: 'Try it yourself',
+    note: '14-day free trial. No credit card.',
+    register: APP_REGISTER_BY_MARKET.en,
   },
 };
 
@@ -113,13 +119,19 @@ export default function BenefitStats({ locale = 'de' }: { locale?: HomeLocale })
           ))}
         </div>
 
-        <div className="mt-12 flex justify-center">
-          <DemoFirstActions
-            location="footer"
-            lang={locale}
-            align="center"
-            showDemoNote
-          />
+        <div className="text-center mt-12">
+          <a
+            href={t.register}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg"
+          >
+            {t.cta}
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </a>
+          <p className="text-sm text-gray-500 mt-3">
+            {t.note}
+          </p>
         </div>
       </div>
     </section>

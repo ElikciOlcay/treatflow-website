@@ -198,7 +198,7 @@ export default function NachrichtenautomatisierungPage() {
             <FeaturePageCta
                 theme="purple"
                 title="Bereit für automatische Kundenkommunikation?"
-                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
+                description="14 Tage kostenlos testen – Erinnerungen, Follow-ups und Geburtstage ohne Extra-Arbeit."
                 secondaryLabel="Zum Terminkalender"
                 secondaryHref="/terminkalender"
             />

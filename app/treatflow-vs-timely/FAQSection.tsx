@@ -22,7 +22,7 @@ const faqs = [
   {
     question: 'Kann ich von Timely zu Treatflow wechseln?',
     answer:
-      'Ja. Unser Team unterstützt dich beim Umzug deiner Kundendaten. Du kannst Treatflow 14 Tage kostenlos testen und in Ruhe vergleichen.',
+      'Ja. Unser Team unterstützt dich kostenlos beim Umzug deiner Kundendaten. Du kannst Treatflow 14 Tage kostenlos testen und in Ruhe vergleichen.',
   },
   {
     question: 'Ist Timely auf Deutsch verfügbar?',

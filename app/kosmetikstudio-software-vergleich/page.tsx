@@ -7,7 +7,6 @@ import Footer from '../components/Footer';
 import QuickFacts from '../components/QuickFacts';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
-import DemoFirstActions from '../components/DemoFirstActions';
 
 const breadcrumbItems = [{ label: 'Vergleich' }, { label: 'Kosmetikstudio Software im Vergleich' }];
 
@@ -128,8 +127,34 @@ export default function KosmetikstudioSoftwareVergleichPage() {
                     <h2 className="text-4xl font-bold text-white mb-6">
                         Passende Software finden
                     </h2>
-                    <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.</p>
-                    <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
+                    <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
+                        Teste Treatflow 14 Tage kostenlos und unverbindlich. Keine Kreditkarte nötig – so siehst du, ob die Funktionen zu deinem Studio passen.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://app.treatflow.io/auth/register?lang=de"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
+                        >
+                            14 Tage gratis testen
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </a>
+                        <a
+                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-indigo-600 transition-colors duration-200 inline-flex items-center justify-center"
+                        >
+                            Beratung buchen
+                        </a>
+                        <Link
+                            href="/nisv-dokumentation"
+                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-indigo-600 transition-colors duration-200 inline-flex items-center justify-center"
+                        >
+                            NiSV-Dokumentation
+                        </Link>
+                    </div>
                 </div>
             </section>
 

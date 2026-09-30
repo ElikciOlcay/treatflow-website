@@ -227,7 +227,7 @@ export default function IntegrationenPage() {
             <FeaturePageCta
                 theme="indigo"
                 title="Vernetzte Tools für dein Studio"
-                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
+                description="14 Tage kostenlos testen – Lexware, SumUp, Google Kalender und Zapier in Minuten verbinden."
                 secondaryLabel="Alle Funktionen"
                 secondaryHref="/funktionen"
             />

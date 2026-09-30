@@ -6,7 +6,6 @@ import Script from 'next/script';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { generateFaqSchema } from '@/lib/schema';
-import DemoFirstActions from '../components/DemoFirstActions';
 
 export const metadata = {
   title: 'Laserstudio Software Deutschland: NiSV-konform',
@@ -55,7 +54,17 @@ export default function LaserstudioSoftwareDeutschlandPage() {
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
               NiSV-konforme Dokumentation, digitale Einwilligungen und Online-Buchungen für dein Laser-Studio.
             </p>
-            <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://app.treatflow.io/auth/register?lang=de" target="_blank" rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center">
+                14 Tage kostenlos testen
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              <a href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f" target="_blank" rel="noopener noreferrer"
+                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors">
+                Beratung buchen
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -101,8 +110,18 @@ export default function LaserstudioSoftwareDeutschlandPage() {
       <section className="py-16 bg-gradient-to-r from-blue-600 to-indigo-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Bereit für NiSV-konforme Dokumentation?</h2>
-          <p className="text-blue-100 mb-6">Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.</p>
-          <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
+          <p className="text-blue-100 mb-6">Teste Treatflow 14 Tage kostenlos – keine Kreditkarte nötig.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://app.treatflow.io/auth/register?lang=de" target="_blank" rel="noopener noreferrer"
+              className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center">
+              14 Tage gratis testen
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+            <a href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f" target="_blank" rel="noopener noreferrer"
+              className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+              Beratung buchen
+            </a>
+          </div>
         </div>
       </section>
 

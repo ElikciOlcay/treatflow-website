@@ -210,7 +210,7 @@ export default function FormularePage() {
             <FeaturePageCta
                 theme="green"
                 title="Bereit für digitale Formulare?"
-                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
+                description="14 Tage kostenlos testen – Marketplace, KI-Generator und Drag & Drop ohne Kreditkarte."
                 secondaryLabel="Beispiele testen"
                 secondaryHref="/formulare-testen"
             />

@@ -8,8 +8,7 @@ import {
 import Link from 'next/link';
 import LanguageSwitcher from './LanguageSwitcher';
 import { funktionenGroups } from './funktionenNav';
-import { APP_LOGIN_URL } from '../i18n/market-access';
-import DemoFirstActions from './DemoFirstActions';
+import { APP_LOGIN_URL, APP_REGISTER_URL } from '../i18n/market-access';
 
 const branchen = [
     { href: '/kosmetikstudio-software', label: 'Kosmetikstudios', icon: Sparkles, color: 'text-indigo-600 bg-indigo-100' },
@@ -158,21 +157,20 @@ export default function MobileMenu() {
                                 href={APP_LOGIN_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block text-center py-2.5 text-gray-700 font-medium border border-gray-200 rounded-lg hover:border-indigo-300 hover:text-indigo-600 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                className="block text-center py-2.5 text-gray-700 font-medium border border-gray-200 rounded-lg hover:border-indigo-300 hover:text-indigo-600 transition-colors"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Login
                             </a>
-                            <DemoFirstActions
-                                location="header"
-                                tone="brand"
-                                density="compact"
-                                fullWidth
-                                align="center"
-                                showDemoNote={false}
-                                showTrialDetail
-                                onActivate={() => setIsOpen(false)}
-                            />
+                            <a
+                                href={APP_REGISTER_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block text-center py-2.5 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Kostenlos testen
+                            </a>
                         </div>
                     </div>
                 </div>

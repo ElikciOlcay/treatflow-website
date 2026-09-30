@@ -8,7 +8,6 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
-import DemoFirstActions from '../components/DemoFirstActions';
 
 export const metadata = {
     title: 'Kassensystem Kosmetikstudio Deutschland – TSE',
@@ -152,7 +151,25 @@ export default function KassensystemDeutschlandPage() {
                             question="Welches Kassensystem ist für Kosmetikstudios in Deutschland geeignet?"
                             answer="In Deutschland muss eine elektronische Kasse seit der KassenSichV eine zertifizierte TSE besitzen. Treatflow signiert jeden Verkauf über eine Fiskaly-TSE, erfüllt die Belegausgabepflicht und erzeugt DSFinV-K-Exporte für das Finanzamt. Du kassierst direkt aus dem Terminkalender, akzeptierst Bar, Karte, Gutschein und Überweisung. Die Kasse ist ein Add-on für 39 €/Monat zzgl. einmalig 149 € Einrichtung, ohne Transaktionsgebühren."
                         />
-                        <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a
+                                href="https://app.treatflow.io/auth/register?lang=de"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors duration-200 flex items-center justify-center"
+                            >
+                                14 Tage kostenlos testen
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </a>
+                            <a
+                                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-indigo-600 hover:text-indigo-600 transition-colors duration-200"
+                            >
+                                Demo buchen
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -292,7 +309,7 @@ export default function KassensystemDeutschlandPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                            href="https://app.treatflow.io/auth/register?lang=de"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"

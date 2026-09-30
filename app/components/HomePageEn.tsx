@@ -24,14 +24,11 @@ import FAQSection from "./FAQSection";
 import PricingSectionIntl from "./PricingSectionIntl";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./AiAnswerCapsule";
 import TreatmentWorkflow from "./TreatmentWorkflow";
-import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
-import { getDemoFirstCopy } from "@/lib/cta/demoFirst";
-import DemoFirstActions from "./DemoFirstActions";
+import { APP_REGISTER_BY_MARKET, DEMO_BOOKING_URL } from "@/app/i18n/market-access";
 import { getPricingIntlCopy } from "@/app/i18n/markets/pricing-intl";
 import { EN_SLUGS } from "@/app/i18n/market-routes";
 
 const REGISTER = APP_REGISTER_BY_MARKET.en;
-const startCopy = getDemoFirstCopy("en");
 
 const softwareSchema = {
   "@context": "https://schema.org",
@@ -168,22 +165,6 @@ const faqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "You can try Treatflow for 14 days, no credit card and no hidden fees. After the trial you decide whether to continue.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do I have to book a demo before the trial?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. You can try Treatflow free for 14 days right away. In a personal demo we show you the features that matter for your studio first.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What happens in the demo?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We talk about your studio day-to-day, show you the relevant features and answer your questions about getting started.",
       },
     },
     {
@@ -346,24 +327,39 @@ export default function HomePageEn() {
               From booking to treatment documentation —{" "}
               <span className="text-indigo-600">everything in one place</span>
             </h1>
-            <p className="text-lg lg:text-xl text-gray-600 mb-3 leading-relaxed">
+            <p className="text-lg lg:text-xl text-gray-600 mb-6 leading-relaxed">
               Treatflow is an all-in-one management platform for beauty salons, aesthetic clinics
               and treatment-focused businesses. Online booking, client records, digital forms,
               treatment notes and follow-ups work together — not as separate tools.
             </p>
-            <p className="text-base lg:text-lg text-gray-700 mb-6 leading-relaxed">
-              {startCopy.heroAddon}
-            </p>
-            <div className="mb-8">
-              <DemoFirstActions lang="en" location="hero" registerHref={REGISTER} showDemoNote showTrialDetail />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+              <a
+                href={REGISTER}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+              >
+                Start 14-day free trial
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              <a
+                href={DEMO_BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-all duration-300 flex items-center justify-center"
+              >
+                Book a demo
+              </a>
             </div>
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-600 mb-6">
-              {["Help with data migration", "Personal support"].map((item) => (
-                <div key={item} className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-emerald-500" />
-                  <span>{item}</span>
-                </div>
-              ))}
+              {["No credit card", "Ready in 2 minutes", "Free data migration", "Complete setup"].map(
+                (item) => (
+                  <div key={item} className="flex items-center gap-2">
+                    <CheckCircle className="h-4 w-4 text-emerald-500" />
+                    <span>{item}</span>
+                  </div>
+                )
+              )}
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-3 text-sm">
               <div className="flex items-center gap-2">
@@ -462,31 +458,47 @@ export default function HomePageEn() {
           <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 lg:p-8">
             <div className="text-center mb-8">
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
-                {startCopy.stepsTitle}
+                How to start with Treatflow
               </h2>
-              <p className="text-gray-600">{startCopy.stepsIntro}</p>
+              <p className="text-gray-600">A clear path. No long setup.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
-              {startCopy.steps.map((item, index) => (
-                <div key={item.title} className="bg-white rounded-xl border border-gray-100 p-5 text-center">
+              {[
+                {
+                  step: "1",
+                  title: "Register for free",
+                  desc: "Create your account in a few minutes and start straight away.",
+                },
+                {
+                  step: "2",
+                  title: "Move your data",
+                  desc: "We help you import existing client records.",
+                },
+                {
+                  step: "3",
+                  title: "Turn on online booking",
+                  desc: "Share your booking link and take the first appointments automatically.",
+                },
+              ].map((item) => (
+                <div key={item.step} className="bg-white rounded-xl border border-gray-100 p-5 text-center">
                   <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center">
-                    {index + 1}
+                    {item.step}
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-sm text-gray-600">{item.desc}</p>
                 </div>
               ))}
             </div>
-            <div className="mt-8 flex justify-center">
-              <DemoFirstActions
-                lang="en"
-                location="onboarding"
-                align="center"
-                registerHref={REGISTER}
-                showDemoNote
-                trialVariant="sentence"
-                showTrialDetail={false}
-              />
+            <div className="text-center mt-8">
+              <a
+                href={REGISTER}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-indigo-600 text-white px-7 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors"
+              >
+                Start for free
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>
@@ -523,8 +535,17 @@ export default function HomePageEn() {
               </Link>
             ))}
           </div>
-          <div className="mt-10 flex justify-center">
-            <DemoFirstActions lang="en" location="hero" align="center" registerHref={REGISTER} showDemoNote showTrialDetail />
+          <div className="text-center mt-10">
+            <a
+              href={REGISTER}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors"
+            >
+              Start 14-day free trial
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+            <p className="text-sm text-gray-500 mt-3">No credit card. Cancel anytime.</p>
           </div>
         </div>
       </section>
@@ -559,20 +580,49 @@ export default function HomePageEn() {
       <section className="py-20 bg-indigo-600" aria-label="Call to action">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">
-            {startCopy.closingTitle}
+            Ready to run your studio more clearly?
           </h2>
           <p className="text-indigo-100 text-lg mb-8">
-            {startCopy.closingText}
+            Start today and see how simple studio organisation can be.
           </p>
-          <DemoFirstActions
-            lang="en"
-            location="footer"
-            tone="onDark"
-            align="center"
-            registerHref={REGISTER}
-            showDemoNote
-            showTrialDetail
-          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10 text-white/90">
+            {[
+              "14-day free trial",
+              "No credit card needed",
+              "Ready in 2 minutes",
+              "Full setup included",
+            ].map((item) => (
+              <div
+                key={item}
+                className="flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/5 px-3 py-3 text-sm"
+              >
+                <CheckCircle className="h-4 w-4 text-indigo-200 flex-shrink-0" />
+                <span>{item}</span>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+            <a
+              href={REGISTER}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full sm:w-auto"
+            >
+              Start free trial
+              <ArrowRight className="ml-3 h-5 w-5" />
+            </a>
+            <a
+              href={DEMO_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-white text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 flex items-center justify-center w-full sm:w-auto"
+            >
+              Book a demo
+            </a>
+          </div>
+          <p className="text-sm text-indigo-200 mt-6">
+            Cancel anytime. GDPR-ready. With personal support.
+          </p>
         </div>
       </section>
 

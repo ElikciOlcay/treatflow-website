@@ -29,8 +29,6 @@ import SocialProofBar from "./components/SocialProofBar";
 import Footer from "./components/Footer";
 import { buildHreflangAlternates } from "./i18n/seo";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./components/AiAnswerCapsule";
-import DemoFirstActions from "./components/DemoFirstActions";
-import { getDemoFirstCopy } from "@/lib/cta/demoFirst";
 
 export const metadata: Metadata = {
   title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
@@ -227,22 +225,6 @@ const faqSchema = {
         "@type": "Answer",
         "text": "Ja. Treatflow kannst du 14 Tage kostenlos und unverbindlich testen – ohne Kreditkarte. So siehst du, ob Terminplaner, Kundenkartei, Online-Buchung und Behandlungsdokumentation zu deinem Studio passen."
       }
-    },
-    {
-      "@type": "Question",
-      "name": "Muss ich vor dem Test eine Demo buchen?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nein. Du kannst Treatflow auch direkt 14 Tage kostenlos testen. In einer persönlichen Demo zeigen wir dir vorab die Funktionen, die für dein Studio interessant sind."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Was erwartet mich in der Demo?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wir sprechen über deinen Studioalltag, zeigen dir passende Funktionen und beantworten deine Fragen zum Einstieg."
-      }
     }
   ]
 };
@@ -270,7 +252,6 @@ const seoLinks = [
 ];
 
 export default function Home() {
-  const startCopy = getDemoFirstCopy("de");
   return (
     <>
       {/* Roh-script (nicht next/script): sonst landet JSON-LD nur im RSC-Flight */}
@@ -298,20 +279,41 @@ export default function Home() {
                 <span className="text-indigo-600">Zettelwirtschaft</span>
                 {" "}und No-Shows
               </h1>
-              <p className="text-lg lg:text-xl text-gray-600 mb-3 leading-relaxed">
+              <p className="text-lg lg:text-xl text-gray-600 mb-6 leading-relaxed">
                 Termine, Kunden, Formulare, Behandlungsdokumentation und Kasse in einer übersichtlichen App.
                 So findet sich dein Team sofort zurecht.
               </p>
-              <p className="text-base lg:text-lg text-gray-700 mb-6 leading-relaxed">
-                {startCopy.heroAddon}
-              </p>
-              <div className="mb-8">
-                <DemoFirstActions location="hero" showDemoNote showTrialDetail />
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                <a
+                  href="https://app.treatflow.io/auth/register?lang=de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                >
+                  Jetzt 14 Tage kostenlos testen
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+                <a
+                  href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-all duration-300 flex items-center justify-center"
+                >
+                  Demo buchen
+                </a>
               </div>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-600 mb-6">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-emerald-500" />
-                  <span>Hilfe beim Datenumzug</span>
+                  <span>Ohne Kreditkarte</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-emerald-500" />
+                  <span>In 2 Minuten startklar</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-emerald-500" />
+                  <span>Kostenloser Datenumzug</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-emerald-500" />
@@ -390,31 +392,37 @@ export default function Home() {
             <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 lg:p-8">
               <div className="text-center mb-8">
                 <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
-                  {startCopy.stepsTitle}
+                  So startest du mit Treatflow
                 </h2>
                 <p className="text-gray-600">
-                  {startCopy.stepsIntro}
+                  Klarer Ablauf ohne langes Setup.
                 </p>
               </div>
               <div className="grid md:grid-cols-3 gap-6">
-                {startCopy.steps.map((item, index) => (
-                  <div key={item.title} className="bg-white rounded-xl border border-gray-100 p-5 text-center">
+                {[
+                  { step: "1", title: "Kostenlos registrieren", desc: "Account in wenigen Minuten anlegen und direkt starten." },
+                  { step: "2", title: "Daten übernehmen", desc: "Wir unterstützen dich beim Import deiner bestehenden Kundendaten." },
+                  { step: "3", title: "Online Buchungen aktivieren", desc: "Buchungslink teilen und erste Termine automatisch erhalten." },
+                ].map((item) => (
+                  <div key={item.step} className="bg-white rounded-xl border border-gray-100 p-5 text-center">
                     <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center">
-                      {index + 1}
+                      {item.step}
                     </div>
                     <h3 className="font-semibold text-gray-900 mb-2">{item.title}</h3>
                     <p className="text-sm text-gray-600">{item.desc}</p>
                   </div>
                 ))}
               </div>
-              <div className="mt-8 flex justify-center">
-                <DemoFirstActions
-                  location="onboarding"
-                  align="center"
-                  showDemoNote
-                  trialVariant="sentence"
-                  showTrialDetail={false}
-                />
+              <div className="text-center mt-8">
+                <a
+                  href="https://app.treatflow.io/auth/register?lang=de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-indigo-600 text-white px-7 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors"
+                >
+                  Jetzt kostenlos starten
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </div>
             </div>
           </div>
@@ -449,8 +457,17 @@ export default function Home() {
                 </Link>
               ))}
             </div>
-            <div className="mt-10 flex justify-center">
-              <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
+            <div className="text-center mt-10">
+              <a
+                href="https://app.treatflow.io/auth/register?lang=de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors"
+              >
+                14 Tage kostenlos testen
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              <p className="text-sm text-gray-500 mt-3">Ohne Kreditkarte. Jederzeit kündbar.</p>
             </div>
           </div>
         </section>
@@ -496,12 +513,47 @@ export default function Home() {
         <section className="py-20 bg-indigo-600" aria-label="Call-to-Action">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">
-              {startCopy.closingTitle}
+              Bereit, dein Studio übersichtlicher zu steuern?
             </h2>
             <p className="text-indigo-100 text-lg mb-8">
-              {startCopy.closingText}
+              Starte heute und erlebe, wie einfach Studio-Organisation sein kann.
             </p>
-            <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-10 text-white/90">
+              {[
+                "14 Tage kostenlos testen",
+                "Keine Kreditkarte nötig",
+                "In 2 Minuten startklar",
+                "Persönliche Betreuung und Hilfe",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/5 px-3 py-3 text-sm"
+                >
+                  <CheckCircle className="h-4 w-4 text-indigo-200 flex-shrink-0" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+              <a
+                href="https://app.treatflow.io/auth/register?lang=de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full sm:w-auto"
+              >
+                Jetzt kostenlos testen
+                <ArrowRight className="ml-3 h-5 w-5" />
+              </a>
+              <a
+                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-white text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 flex items-center justify-center w-full sm:w-auto"
+              >
+                Demo buchen
+              </a>
+            </div>
+            <p className="text-sm text-indigo-200 mt-6">Jederzeit kündbar. DSGVO-konform. Mit persönlicher Betreuung und Hilfe.</p>
           </div>
         </section>
 

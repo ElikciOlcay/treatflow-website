@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { APP_LOGIN_URL, DEMO_BOOKING_URL } from '../i18n/market-access';
-import { CtaTextLink } from './DemoFirstActions';
+import { APP_LOGIN_URL, APP_REGISTER_URL } from '../i18n/market-access';
 import DeSiteSchema from './DeSiteSchema';
 import CookieSettingsLink from './CookieSettingsLink';
 
@@ -78,11 +77,7 @@ export default function Footer() {
               <li><Link href="/kundenkartei-software" className="text-gray-400 hover:text-white transition-colors">Kundenkartei Software</Link></li>
               <li><Link href="/shop" className="text-gray-400 hover:text-white transition-colors">Shop</Link></li>
               <li><Link href="/website-fuer-kosmetikstudios" className="text-gray-400 hover:text-white transition-colors">Studio-Website</Link></li>
-              <li>
-                <CtaTextLink href={DEMO_BOOKING_URL} kind="demo" location="footer" className="text-gray-400 hover:text-white transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded-sm">
-                  Persönliche Demo buchen
-                </CtaTextLink>
-              </li>
+              <li><a href={APP_REGISTER_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Kostenlos testen</a></li>
               <li><a href={APP_LOGIN_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Login</a></li>
             </ul>
           </div>

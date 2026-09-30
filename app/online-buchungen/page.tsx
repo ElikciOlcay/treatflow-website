@@ -190,7 +190,7 @@ export default function OnlineBuchungenPage() {
             <FeaturePageCta
                 theme="orange"
                 title="Bereit für automatische Buchungen?"
-                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
+                description="14 Tage kostenlos testen – ohne Kreditkarte und ohne Provision pro Buchung."
                 secondaryLabel="Zum Terminkalender"
                 secondaryHref="/terminkalender"
             />

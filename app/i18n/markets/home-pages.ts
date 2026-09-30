@@ -71,7 +71,7 @@ export const enHomePage: HomePageIntlContent = {
     subtitle:
       "Appointments, client records, consent forms and treatment documentation in one clear app – built for beauty and aesthetic businesses worldwide.",
     primaryCta: "Start 14-day free trial",
-    trustItems: ["No credit card", "Ready in 2 minutes", "Help with data migration", "Personal support"],
+    trustItems: ["No credit card", "Ready in 2 minutes", "Free data migration", "Personal support"],
     studiosLabel: "500+ studios",
     ratingValue: "4.6/5",
     image: heroImage,

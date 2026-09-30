@@ -9,7 +9,6 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import LeadDownloadForm from "../components/LeadDownloadForm";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "../components/AiAnswerCapsule";
-import DemoFirstActions from '../components/DemoFirstActions';
 
 export const metadata: Metadata = {
     title: "Hygieneplan Kosmetikstudio PDF: Kostenlose Vorlage",
@@ -679,7 +678,25 @@ export default function HygieneplanKosmetikstudioPdfPage() {
                         Mit Treatflow verwaltest du Anamnesebögen, Behandlungsdokumentation, Kundenkartei und
                         Terminbuchung in einer Plattform – DSGVO-konform und speziell für Beauty-Studios entwickelt.
                     </p>
-                    <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://app.treatflow.io/auth/register?lang=de"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center"
+                        >
+                            Treatflow 14 Tage kostenlos testen
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </a>
+                        <a
+                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-indigo-600 transition-colors"
+                        >
+                            Demo buchen
+                        </a>
+                    </div>
                 </div>
             </section>
 

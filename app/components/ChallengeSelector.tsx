@@ -1,9 +1,8 @@
 'use client';
 
 import { useState, useRef, useCallback } from 'react';
-import { Clock, UserX, Globe, FolderOpen, CheckCircle } from 'lucide-react';
+import { Clock, UserX, Globe, FolderOpen, ArrowRight, CheckCircle } from 'lucide-react';
 import { APP_REGISTER_BY_MARKET } from '@/app/i18n/market-access';
-import DemoFirstActions from './DemoFirstActions';
 
 type HomeLocale = 'de' | 'en';
 
@@ -197,7 +196,7 @@ export default function ChallengeSelector({ locale = 'de' }: { locale?: HomeLoca
         <div
           ref={resultRef}
           className={`overflow-hidden transition-all duration-500 ease-in-out ${
-            active ? 'max-h-[900px] opacity-100' : 'max-h-0 opacity-0'
+            active ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
           {active && (
@@ -220,13 +219,15 @@ export default function ChallengeSelector({ locale = 'de' }: { locale?: HomeLoca
                   </ul>
                 </div>
                 <div className="flex justify-center lg:justify-end">
-                  <DemoFirstActions
-                    location="hero"
-                    lang={locale}
-                    showDemoNote
-                    showTrialDetail
-                    registerHref={t.register}
-                  />
+                  <a
+                    href={t.register}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                  >
+                    {t.cta}
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
                 </div>
               </div>
             </div>

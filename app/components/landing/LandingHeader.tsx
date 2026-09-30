@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Star } from 'lucide-react';
-import { LandingDemoPrimaryCTA } from './LandingCTA';
+import { LandingPrimaryCTA } from './LandingCTA';
 
 type LandingHeaderProps = {
     landingPage?: string;
@@ -32,10 +32,10 @@ export default function LandingHeader({ landingPage = 'landing/kosmetikstudio-so
                     <span>500+ getestet</span>
                 </div>
 
-                <LandingDemoPrimaryCTA
-                    label="Persönliche Demo buchen"
+                <LandingPrimaryCTA
+                    label="Kostenlos testen"
                     landingPage={landingPage}
-                    className="!px-4 !py-2.5 !text-sm !shadow-none"
+                    className="!px-5 !py-2.5 !text-sm !shadow-none"
                 />
             </div>
         </header>
