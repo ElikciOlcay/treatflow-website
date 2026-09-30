@@ -119,8 +119,8 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       ],
     },
     trialBox: {
-      title: "Personal demo",
-      text: "Free and without obligation • Help with data migration",
+      title: "14-day free trial",
+      text: "No credit card required • Cancel anytime • Free data migration",
       points: ["No setup fees", "Cancel monthly", "GDPR compliant"],
     },
     comparison: {

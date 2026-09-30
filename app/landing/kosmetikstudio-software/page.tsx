@@ -11,7 +11,11 @@ import LandingInlineCTA from '@/app/components/landing/LandingInlineCTA';
 import HeroAppPreview from '@/app/components/landing/HeroAppPreview';
 import LandingVideoSection from '@/app/components/landing/LandingVideoSection';
 import LandingPricingSection from '@/app/components/landing/LandingPricingSection';
-import { LandingDemoPrimaryCTA } from '@/app/components/landing/LandingCTA';
+import {
+    LandingPrimaryCTA,
+    LandingDemoLink,
+    LandingPrimaryInverseCTA,
+} from '@/app/components/landing/LandingCTA';
 import {
     heroBullets,
     painSolutionPairs,
@@ -110,12 +114,12 @@ export default function KosmetikstudioSoftwareAdsLandingPage() {
                             </ul>
 
                             <div className="flex flex-col items-start gap-3">
-                                <LandingDemoPrimaryCTA
+                                <LandingPrimaryCTA
                                     size="large"
                                     landingPage={LANDING_PAGE_ID}
                                     className="w-full sm:w-auto"
                                 />
-                                <p className="text-sm text-gray-600">Kostenlos und unverbindlich</p>
+                                <LandingDemoLink landingPage={LANDING_PAGE_ID} />
                             </div>
                             <div className="mt-5">
                                 <TrustLine />
@@ -237,12 +241,14 @@ export default function KosmetikstudioSoftwareAdsLandingPage() {
                     </div>
                     <LandingVideoSection />
                     <div className="mt-8 text-center">
-                        <LandingDemoPrimaryCTA
+                        <LandingPrimaryCTA
                             size="large"
                             landingPage={LANDING_PAGE_ID}
                             className="w-full sm:w-auto"
                         />
-                        <p className="text-sm text-gray-500 mt-3">Kostenlos und unverbindlich</p>
+                        <p className="text-sm text-gray-500 mt-3">
+                            14 Tage kostenlos · keine Kreditkarte · persönliche Hilfe beim Start
+                        </p>
                     </div>
                 </div>
             </section>
@@ -388,17 +394,21 @@ export default function KosmetikstudioSoftwareAdsLandingPage() {
             <section className="py-16 sm:py-20 bg-indigo-600">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                        Passt Treatflow zu deinem Studio? Finden wir es gemeinsam heraus.
+                        Bereit, dein Kosmetikstudio digitaler zu führen?
                     </h2>
                     <p className="text-lg text-indigo-100 mb-8 max-w-2xl mx-auto">
-                        Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.
+                        Starte jetzt deinen kostenlosen 14-Tage-Test. Keine Kreditkarte, keine Bindung.
                     </p>
-                    <LandingDemoPrimaryCTA
+                    <LandingPrimaryInverseCTA
                         size="large"
-                        inverse
                         landingPage={LANDING_PAGE_ID}
                     />
-                    <p className="text-sm text-indigo-100 mt-3">Kostenlos und unverbindlich</p>
+                    <div className="mt-4">
+                        <LandingDemoLink
+                            landingPage={LANDING_PAGE_ID}
+                            className="!text-indigo-200 hover:!text-white"
+                        />
+                    </div>
                 </div>
             </section>
 

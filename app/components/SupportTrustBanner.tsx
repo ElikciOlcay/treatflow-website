@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import { Sparkles, CheckCircle } from 'lucide-react';
-import { APP_REGISTER_BY_MARKET } from '@/app/i18n/market-access';
-import DemoFirstActions from './DemoFirstActions';
+import { ArrowRight, Sparkles, CheckCircle } from 'lucide-react';
+import { APP_REGISTER_BY_MARKET, DEMO_BOOKING_URL } from '@/app/i18n/market-access';
 
 type HomeLocale = 'de' | 'en';
 
@@ -11,6 +10,8 @@ const copy = {
     badge: 'Persönliche Betreuung',
     title: 'Wir lassen dich nicht allein',
     text: 'Von der Einrichtung bis zur Schulung: Unser Team begleitet dich persönlich beim Start mit Treatflow – damit du und dein Team vom ersten Tag an sicher arbeiten.',
+    trial: '14 Tage kostenlos testen',
+    demo: 'Kostenlose Demo buchen',
     alt: 'Persönliche Betreuung und Schulung durch das Treatflow-Team',
     chip: 'Persönlich. Auf Deutsch. Inklusive.',
     register: APP_REGISTER_BY_MARKET.de,
@@ -20,6 +21,8 @@ const copy = {
     badge: 'Complete setup',
     title: 'We set everything up for you',
     text: 'We can take over the full setup: calendar, services, forms and data migration – so you start with a studio that is ready to work.',
+    trial: 'Start 14-day free trial',
+    demo: 'Book a free demo',
     alt: 'Treatflow team setting up the studio software together',
     chip: 'Full setup. Included.',
     register: APP_REGISTER_BY_MARKET.en,
@@ -47,14 +50,25 @@ export default function SupportTrustBanner({ locale = 'de' }: { locale?: HomeLoc
               </h2>
               <p className="mt-3 text-base text-white/85 leading-relaxed">{t.text}</p>
 
-              <DemoFirstActions
-                location="footer"
-                lang={locale}
-                tone="onDark"
-                showDemoNote
-                showTrialDetail
-                registerHref={t.register}
-              />
+              <div className="mt-6 flex flex-col sm:flex-row gap-3">
+                <a
+                  href={t.register}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-indigo-700 shadow-md transition-all duration-300 hover:bg-indigo-50 hover:shadow-lg hover:-translate-y-0.5"
+                >
+                  {t.trial}
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+                <a
+                  href={DEMO_BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+                >
+                  {t.demo}
+                </a>
+              </div>
             </div>
 
             <div className="flex justify-center lg:justify-end">

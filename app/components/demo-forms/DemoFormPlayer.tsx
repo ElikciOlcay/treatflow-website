@@ -3,8 +3,7 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, ArrowRight, CheckCircle, Lock, RotateCcw, Trash2 } from 'lucide-react';
-import DemoFirstActions from '@/app/components/DemoFirstActions';
-import { demoFirstLangFromLocale } from '@/lib/cta/demoFirst';
+import { APP_REGISTER_BY_MARKET } from '@/app/i18n/market-access';
 import {
   DEMO_FORMS_PATH,
   getConfirmationPage,
@@ -41,6 +40,12 @@ function isFieldVisible(field: DemoFormField, answers: Answers): boolean {
 export default function DemoFormPlayer({ form, locale = 'de' }: DemoFormPlayerProps) {
   const copy = getDemoCopy(locale);
   const galleryHref = DEMO_FORMS_PATH[locale];
+  const registerHref =
+    locale === 'tr'
+      ? APP_REGISTER_BY_MARKET.tr
+      : locale === 'en'
+        ? APP_REGISTER_BY_MARKET.en
+        : APP_REGISTER_BY_MARKET.de;
   const fillPages = useMemo(() => getFillPages(form), [form]);
   const confirmation = useMemo(() => getConfirmationPage(form), [form]);
   const [pageIndex, setPageIndex] = useState(0);
@@ -234,11 +239,15 @@ export default function DemoFormPlayer({ form, locale = 'de' }: DemoFormPlayerPr
                   <h3 className="text-lg font-bold text-gray-900 mb-2">{copy.player.doneTitle}</h3>
                   <p className="text-sm text-gray-600 mb-4">{copy.player.doneText}</p>
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <DemoFirstActions
-                      location="footer"
-                      lang={demoFirstLangFromLocale(locale)}
-                      showDemoNote={false}
-                    />
+                    <a
+                      href={registerHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center bg-indigo-600 text-white px-5 py-3 rounded-xl font-semibold hover:bg-indigo-700"
+                    >
+                      {copy.player.trialCta}
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
                     <Link
                       href={galleryHref}
                       className="inline-flex items-center justify-center border border-gray-200 text-gray-700 px-5 py-3 rounded-xl font-semibold hover:border-indigo-300 hover:text-indigo-600"

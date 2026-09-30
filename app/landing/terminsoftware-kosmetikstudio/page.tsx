@@ -1,9 +1,8 @@
 import { Metadata } from 'next';
-import DemoFirstActions from '../../components/DemoFirstActions';
 import Image from 'next/image';
 import {
-    CheckCircle, Star, Calendar, Bell, Users,
-    Clock, Shield, Smartphone, Zap
+    ArrowRight, CheckCircle, Star, Calendar, Bell, Users,
+    Clock, Shield, Smartphone, Zap, Phone
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -14,6 +13,9 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/terminkalender',
     },
 };
+
+const registerUrl = 'https://app.treatflow.io/auth/register?lang=de';
+const consultUrl = 'https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f';
 
 const benefits = [
     { icon: Calendar, text: '24/7 Online-Terminbuchung' },
@@ -115,9 +117,40 @@ const faqs = [
     },
 ];
 
+function CTAButton({ variant = 'primary', className = '' }: { variant?: 'primary' | 'secondary'; className?: string }) {
+    if (variant === 'primary') {
+        return (
+            <a
+                href={registerUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center justify-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-200 shadow-lg shadow-indigo-200 hover:shadow-xl hover:shadow-indigo-300 ${className}`}
+            >
+                14 Tage kostenlos testen
+                <ArrowRight className="h-5 w-5" />
+            </a>
+        );
+    }
+    return (
+        <a
+            href={consultUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center justify-center gap-2 border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:border-indigo-600 hover:text-indigo-600 transition-all duration-200 ${className}`}
+        >
+            <Phone className="h-5 w-5" />
+            Kostenlose Beratung
+        </a>
+    );
+}
+
 function TrustBadge() {
     return (
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-500">
+            <span className="flex items-center gap-1.5">
+                <CheckCircle className="h-4 w-4 text-green-500" />
+                Keine Kreditkarte
+            </span>
             <span className="flex items-center gap-1.5">
                 <CheckCircle className="h-4 w-4 text-green-500" />
                 Keine versteckten Kosten
@@ -156,7 +189,14 @@ export default function TerminsoftwareLandingPage() {
                         >
                             Alle Funktionen
                         </a>
-                        <DemoFirstActions location="header" tone="nav" density="compact" showDemoNote={false} showTrialDetail={false} />
+                        <a
+                            href={registerUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-indigo-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-indigo-700 transition-colors"
+                        >
+                            Kostenlos testen
+                        </a>
                     </div>
                 </div>
             </header>
@@ -178,7 +218,10 @@ export default function TerminsoftwareLandingPage() {
                                 Kunden buchen online, Erinnerungen gehen automatisch raus, No-Shows sinken um 80%.
                                 Alles in einer App - starte jetzt kostenlos.
                             </p>
-                            <DemoFirstActions location="hero" showDemoNote showTrialDetail className="mb-5" />
+                            <div className="flex flex-col sm:flex-row gap-3 mb-5">
+                                <CTAButton variant="primary" />
+                                <CTAButton variant="secondary" />
+                            </div>
                             <TrustBadge />
                         </div>
                         <div className="relative">
@@ -327,7 +370,8 @@ export default function TerminsoftwareLandingPage() {
                     </div>
 
                     <div className="text-center mt-12">
-                        <DemoFirstActions location="onboarding" align="center" showDemoNote showTrialDetail />
+                        <CTAButton variant="primary" />
+                        <p className="text-sm text-gray-500 mt-3">Kostenlos starten - in 5 Minuten bereit</p>
                     </div>
                 </div>
             </section>
@@ -416,10 +460,34 @@ export default function TerminsoftwareLandingPage() {
                         Bereit für stressfreie Terminplanung?
                     </h2>
                     <p className="text-lg text-indigo-100 mb-8 max-w-2xl mx-auto">
-                        Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.
+                        Starte jetzt deinen 14-Tage-Test und erlebe, wie Treatflow dein Studio verändert.
+                        Keine Kreditkarte, kein Risiko.
                     </p>
-                    <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href={registerUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-2 bg-white text-indigo-600 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-50 transition-colors shadow-lg"
+                        >
+                            14 Tage kostenlos testen
+                            <ArrowRight className="h-5 w-5" />
+                        </a>
+                        <a
+                            href={consultUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-indigo-600 transition-colors"
+                        >
+                            <Phone className="h-5 w-5" />
+                            Kostenlose Beratung
+                        </a>
+                    </div>
                     <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-indigo-200 mt-6">
+                        <span className="flex items-center gap-1.5">
+                            <CheckCircle className="h-4 w-4" />
+                            Keine Kreditkarte
+                        </span>
                         <span className="flex items-center gap-1.5">
                             <CheckCircle className="h-4 w-4" />
                             Kein Risiko

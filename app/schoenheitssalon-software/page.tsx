@@ -13,7 +13,6 @@ import {
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
-import DemoFirstActions from '../components/DemoFirstActions';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Schönheitssalon Software' }];
@@ -87,7 +86,26 @@ export default function SchoenheitssalonSoftwarePage() {
               Weniger Verwaltungschaos, mehr Zeit für deine Kunden. Mit Treatflow steuerst du Termine,
               Kundendaten und Dokumentation in einer klaren, alltagstauglichen App.
             </p>
-            <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://app.treatflow.io/auth/register?lang=de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors duration-200 flex items-center justify-center"
+              >
+                14 Tage kostenlos testen
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              <a
+                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-indigo-600 hover:text-indigo-600 transition-colors duration-200"
+              >
+                Demo buchen
+              </a>
+            </div>
+            <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Mit persönlicher Betreuung und Hilfe.</p>
           </div>
         </div>
       </section>
@@ -215,9 +233,26 @@ export default function SchoenheitssalonSoftwarePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Bereit für deine neue Studio-Software?</h2>
           <p className="text-indigo-100 mb-8 text-lg">
-            Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.
+            Starte mit 14 Tagen kostenlos und bekomme persönliche Hilfe beim Onboarding.
           </p>
-          <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://app.treatflow.io/auth/register?lang=de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 inline-flex items-center justify-center"
+            >
+              Jetzt kostenlos testen
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+            <Link
+              href="/kontakt"
+              className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-indigo-600 transition-colors duration-200 inline-flex items-center justify-center"
+            >
+              Kontakt aufnehmen
+            </Link>
+          </div>
+          <p className="text-sm text-indigo-200 mt-4">Jederzeit kündbar. DSGVO-konform. Mit persönlicher Betreuung.</p>
         </div>
       </section>
 

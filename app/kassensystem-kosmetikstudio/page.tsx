@@ -371,7 +371,7 @@ export default function KassensystemPage() {
             <FeaturePageCta
                 theme="indigo"
                 title="Bereit für eine fiskalkonforme Studio-Kasse?"
-                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
+                description="14 Tage kostenlos testen. Kasse als Add-on ab 39 €/Monat zzgl. einmalig 149 € Einrichtung – ohne Transaktionsgebühr an Treatflow."
                 secondaryLabel="Preise ansehen"
                 secondaryHref="/preise"
             />

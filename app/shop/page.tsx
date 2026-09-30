@@ -118,7 +118,7 @@ export default function ShopPage() {
             <FeaturePageCta
                 theme="emerald"
                 title="Bereit für deinen Studio-Shop?"
-                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
+                description="14 Tage kostenlos testen – Produkte verkaufen und Lager im Blick behalten."
                 secondaryLabel="Zur Kasse"
                 secondaryHref="/kassensystem-kosmetikstudio"
             />

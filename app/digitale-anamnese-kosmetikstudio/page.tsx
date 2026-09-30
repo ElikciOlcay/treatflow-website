@@ -9,7 +9,6 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import { generateFaqSchema } from '@/lib/schema';
-import DemoFirstActions from '../components/DemoFirstActions';
 
 const clusterLinks = [
     { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', description: 'Die All-in-One Lösung für dein Studio' },
@@ -143,7 +142,26 @@ export default function DigitaleAnamneseKosmetikstudioPage() {
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
                             Kunden füllen Anamnesebögen und Einwilligungen per Link vorab aus – mit elektronischer Unterschrift. Papierfrei, DSGVO-konform und jederzeit abrufbar.
                         </p>
-                        <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a
+                                href="https://app.treatflow.io/auth/register?lang=de"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-emerald-700 transition-colors duration-200 flex items-center justify-center"
+                            >
+                                14 Tage kostenlos testen
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </a>
+                            <a
+                                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-emerald-600 hover:text-emerald-600 transition-colors duration-200"
+                            >
+                                Beratung buchen
+                            </a>
+                        </div>
+                        <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
                     </div>
                     <div className="mt-12 max-w-5xl mx-auto">
                         <Image src="/images/lifestyle/anamnese-smartphone-vorab.png" alt="Digitale Anamnese – Kundin füllt Formular vorab am Smartphone aus" width={1920} height={823} className="w-full rounded-2xl shadow-xl object-cover aspect-[21/9]" sizes="100vw" />
@@ -256,8 +274,29 @@ export default function DigitaleAnamneseKosmetikstudioPage() {
                     <h2 className="text-4xl font-bold text-gray-900 mb-6">
                         Bereit für papierlose Anamnese?
                     </h2>
-                    <p className="text-xl text-gray-600 mb-8">Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.</p>
-                    <DemoFirstActions location="footer" align="center" showDemoNote showTrialDetail />
+                    <p className="text-xl text-gray-600 mb-8">
+                        Teste digitale Anamnesebögen 14 Tage kostenlos. Deine Kunden füllen vorab aus – du hast alles sofort parat.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://app.treatflow.io/auth/register?lang=de"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-emerald-700 transition-colors duration-200 flex items-center justify-center"
+                        >
+                            14 Tage gratis testen
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </a>
+                        <a
+                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-emerald-600 hover:text-emerald-600 transition-colors duration-200"
+                        >
+                            Beratung buchen
+                        </a>
+                    </div>
+                    <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Jederzeit kündbar.</p>
                 </div>
             </section>
 

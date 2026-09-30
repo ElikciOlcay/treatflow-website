@@ -260,7 +260,7 @@ export default function NisvDokumentationPage() {
             <FeaturePageCta
                 theme="teal"
                 title="NiSV-Pflichten digital erledigen?"
-                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
+                description="14 Tage kostenlos testen – Beratung, Einwilligung und Archiv in einer App."
                 secondaryLabel="Zu den Formularen"
                 secondaryHref="/formulare"
             />

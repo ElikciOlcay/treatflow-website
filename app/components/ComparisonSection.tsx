@@ -164,12 +164,12 @@ export default function ComparisonSection() {
                             Teste Treatflow 14 Tage kostenlos und erlebe den Unterschied zu anderen Anbietern.
                         </p>
                         <a
-                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                            href="https://app.treatflow.io/auth/register?lang=de"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                         >
-                            Persönliche Demo buchen
+                            Jetzt kostenlos testen
                             <Zap className="ml-2 h-5 w-5" />
                         </a>
                     </div>

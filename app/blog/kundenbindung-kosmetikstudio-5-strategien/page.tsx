@@ -327,11 +327,11 @@ export default function BlogPost() {
                                 und setze sie konsequent um. Du wirst überrascht sein, wie schnell sich die Ergebnisse zeigen!
                             </p>
                             <Link
-                                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
+                                href="https://app.treatflow.io/auth/register?lang=de"
                                 target="_blank"
                                 className="inline-flex items-center bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
                             >
-                                Persönliche Demo buchen
+                                Treatflow kostenlos testen
                                 <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
                         </div>

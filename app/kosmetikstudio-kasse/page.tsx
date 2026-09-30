@@ -9,7 +9,6 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import AiAnswerCapsule from '../components/AiAnswerCapsule';
-import DemoFirstActions from '../components/DemoFirstActions';
 
 export const metadata = {
     title: 'Kosmetikstudio Kasse: einfach & rechtssicher',
@@ -182,11 +181,19 @@ export default function KosmetikstudioKassePage() {
                             question="Welche Kasse eignet sich für ein Kosmetikstudio?"
                             answer="Für Kosmetikstudios eignet sich eine cloudbasierte Kasse, die direkt mit Terminkalender und Kundenkartei verbunden ist. Mit Treatflow kassierst du direkt aus dem Termin, akzeptierst Bar, Karte, Gutschein und Überweisung und sendest Belege per E-Mail. Die Kasse ist TSE-konform (Deutschland) und RKSV-konform (Österreich) und kostet 39 €/Monat als Add-on, ohne Transaktionsgebühren."
                         />
-                        <DemoFirstActions location="hero" align="center" showDemoNote showTrialDetail />
-                        <div className="mt-4">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a
+                                href="https://app.treatflow.io/auth/register?lang=de"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors duration-200 flex items-center justify-center"
+                            >
+                                14 Tage kostenlos testen
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </a>
                             <Link
                                 href="/kassensystem-kosmetikstudio"
-                                className="text-base font-semibold text-indigo-700 underline underline-offset-4 decoration-indigo-300 hover:text-indigo-900"
+                                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-indigo-600 hover:text-indigo-600 transition-colors duration-200"
                             >
                                 Technische Details ansehen
                             </Link>
@@ -354,11 +361,23 @@ export default function KosmetikstudioKassePage() {
                         Bereit für eine Kasse, die mitdenkt?
                     </h2>
                     <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
-                        Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag.
+                        Teste Treatflow 14 Tage kostenlos und schalte die Kasse als Add-on dazu –
+                        rechtssicher und ohne Provision.
                     </p>
-                    <DemoFirstActions location="footer" tone="onDark" align="center" showDemoNote showTrialDetail />
-                    <div className="mt-5">
-                        <Link href="/preise" className="text-base font-medium text-white underline underline-offset-4 decoration-white/50 hover:text-white">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="https://app.treatflow.io/auth/register?lang=de"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
+                        >
+                            14 Tage gratis testen
+                            <ArrowRight className="ml-2 h-5 w-5" />
+                        </a>
+                        <Link
+                            href="/preise"
+                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-indigo-600 transition-colors duration-200"
+                        >
                             Preise ansehen
                         </Link>
                     </div>

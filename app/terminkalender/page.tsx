@@ -230,7 +230,7 @@ export default function TerminkalenderPage() {
             <FeaturePageCta
                 theme="indigo"
                 title="Bereit für klare Terminplanung?"
-                description="Lerne Treatflow in einer persönlichen Demo kennen und stelle deine Fragen zu deinem Studioalltag."
+                description="14 Tage kostenlos testen – ohne Kreditkarte. Kalender, Teamplanung und Online-Buchung in einer App."
                 secondaryLabel="Online-Buchungen"
                 secondaryHref="/online-buchungen"
             />

@@ -1,9 +1,8 @@
-import { CheckCircle, X, ChevronDown } from "lucide-react";
+import { CheckCircle, X, ArrowRight, ChevronDown } from "lucide-react";
+import Link from "next/link";
 import PricingSectionIntl from "./PricingSectionIntl";
-import DemoFirstActions from "./DemoFirstActions";
 import type { PricingIntlCopy } from "@/app/i18n/markets/pricing-intl";
 import { generateFaqSchema } from "@/lib/schema";
-import { demoFirstLangFromLocale } from "@/lib/cta/demoFirst";
 
 export default function PricingPageIntl({ copy }: { copy: PricingIntlCopy }) {
   const faqSchema = generateFaqSchema(copy.faq.items);
@@ -67,14 +66,13 @@ export default function PricingPageIntl({ copy }: { copy: PricingIntlCopy }) {
           </div>
 
           <div className="mt-8 flex justify-center">
-            <DemoFirstActions
-              location="pricing"
-              lang={demoFirstLangFromLocale(
-                new URL(copy.earlyAccessHref, "https://www.treatflow.io").searchParams.get("lang")
-              )}
-              align="center"
-              showDemoNote={false}
-            />
+            <Link
+              href={copy.earlyAccessHref}
+              className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors inline-flex items-center justify-center"
+            >
+              {copy.cta}
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </div>
         </div>
       </section>
@@ -123,17 +121,13 @@ export default function PricingPageIntl({ copy }: { copy: PricingIntlCopy }) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">{copy.trialBox.title}</h2>
           <p className="text-indigo-100 text-lg mb-8">{copy.subtitle}</p>
-          <div className="flex justify-center">
-            <DemoFirstActions
-              location="footer"
-              lang={demoFirstLangFromLocale(
-                new URL(copy.earlyAccessHref, "https://www.treatflow.io").searchParams.get("lang")
-              )}
-              tone="onDark"
-              align="center"
-              showDemoNote={false}
-            />
-          </div>
+          <Link
+            href={copy.earlyAccessHref}
+            className="inline-flex items-center bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg"
+          >
+            {copy.cta}
+            <ArrowRight className="ml-3 h-5 w-5" />
+          </Link>
         </div>
       </section>
     </>

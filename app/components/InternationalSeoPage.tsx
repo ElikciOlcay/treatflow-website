@@ -1,11 +1,12 @@
-import Link from "next/link";
 import {
+  ArrowRight,
   CheckCircle,
   Shield,
   Server,
   Lock,
   type LucideIcon,
 } from "lucide-react";
+import Link from "next/link";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./AiAnswerCapsule";
 import FaqSectionEn, { type FaqEntry } from "./FaqSectionEn";
 import Breadcrumbs, { generateBreadcrumbSchema } from "./Breadcrumbs";
@@ -14,9 +15,8 @@ import Image from "next/image";
 import { generateServiceSchema } from "@/lib/schema";
 import type { SeoPageKey } from "../i18n/seo";
 import { BASE_URL, type PrefixedMarket } from "../i18n/config";
+import { getPrimaryCtaPath } from "../i18n/market-access";
 import { getUiChrome } from "../i18n/markets/ui-chrome";
-import DemoFirstActions from "./DemoFirstActions";
-import { demoFirstLangFromLocale } from "@/lib/cta/demoFirst";
 
 export type FeatureBlock = {
   icon: LucideIcon;
@@ -91,7 +91,8 @@ export default function InternationalSeoPage({
 }) {
   const locale = content.locale ?? "en";
   const chrome = getUiChrome(String(locale));
-  const ctaLang = demoFirstLangFromLocale(String(locale));
+  const earlyAccessHref = getPrimaryCtaPath(locale);
+  const primaryLabel = content.ctaPrimaryLabel ?? chrome.startTrial;
   const bottomTitle = content.ctaBottomTitle ?? "Ready to run your studio in one place?";
   const bottomText =
     content.ctaBottomText ??
@@ -103,6 +104,11 @@ export default function InternationalSeoPage({
     chrome.trustBadges[2],
     trustTrial,
   ];
+  const isExternalCta = earlyAccessHref.startsWith("http");
+  const CtaTag = isExternalCta ? "a" : Link;
+  const ctaProps = isExternalCta
+    ? { href: earlyAccessHref, target: "_blank", rel: "noopener noreferrer" }
+    : { href: earlyAccessHref };
   const homeHref = locale === "en" || String(locale).startsWith("en") ? "/en" : `/${locale}`;
   const homeLabel = String(locale) === "tr" ? chrome.homeSrOnly : "Home";
 
@@ -152,7 +158,13 @@ export default function InternationalSeoPage({
             {content.hero.subtitle}
           </p>
           <div className="flex justify-center">
-            <DemoFirstActions lang={ctaLang} location="hero" align="center" showDemoNote={false} />
+            <CtaTag
+              {...ctaProps}
+              className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors flex items-center justify-center"
+            >
+              {primaryLabel}
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </CtaTag>
           </div>
         </div>
 
@@ -417,7 +429,13 @@ export default function InternationalSeoPage({
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">{bottomTitle}</h2>
           <p className="text-indigo-100 text-lg mb-8">{bottomText}</p>
           <div className="flex justify-center">
-            <DemoFirstActions lang={ctaLang} location="footer" tone="onDark" align="center" showDemoNote={false} />
+            <CtaTag
+              {...ctaProps}
+              className="bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 inline-flex items-center justify-center"
+            >
+              {primaryLabel}
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </CtaTag>
           </div>
         </div>
       </section>

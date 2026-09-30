@@ -33,12 +33,12 @@ import {
 } from "../i18n/config";
 import {
   APP_LOGIN_BY_MARKET,
+  getPrimaryCtaPath,
+  isExternalCta,
 } from "../i18n/market-access";
 import { EN_SLUGS, localizeEnSlug } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
 import { getUiChrome } from "../i18n/markets/ui-chrome";
-import DemoFirstActions from "./DemoFirstActions";
-import { demoFirstLangFromMarket, registerHrefForMarket } from "@/lib/cta/demoFirst";
 
 type NavLang = "en" | "nl" | "fi" | "tr";
 
@@ -51,8 +51,6 @@ function toNavLang(market: PrefixedMarket): NavLang {
 }
 
 type L10n = Record<NavLang, string>;
-
-const moreLabel: L10n = { en: "More", nl: "Meer", fi: "Lisää", tr: "Daha fazla" };
 type FeatureGroupId = "appointments" | "clients" | "sales";
 
 const featureGroupTitles: Record<FeatureGroupId, L10n> = {
@@ -415,6 +413,9 @@ export default function NavigationEn({
   const market = locale;
   const lang = toNavLang(market);
   const base = marketPathPrefix[market];
+  const ctaPath = getPrimaryCtaPath(market);
+  const ctaExternal = isExternalCta(market);
+  const ctaLabel = ctaExternal ? dict.nav.tryFree : dict.nav.requestAccess;
   const loginUrl = APP_LOGIN_BY_MARKET[market] ?? APP_LOGIN_BY_MARKET.en;
 
   const featureLinks = featureDefs
@@ -466,11 +467,13 @@ export default function NavigationEn({
   const showNews = market !== "tr";
   const chrome = getUiChrome(market);
 
+  const ctaClass =
+    "bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors";
+
   return (
     <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center gap-8">
           <Link href={base || "/"} className="flex items-center">
             <img
               src="/images/logos/treatflow-logo.svg"
@@ -479,7 +482,7 @@ export default function NavigationEn({
             />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-7">
+          <div className="hidden lg:flex items-center space-x-6">
             <div className="relative group">
               <button className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors text-sm font-medium">
                 {dict.nav.features}
@@ -561,46 +564,38 @@ export default function NavigationEn({
             >
               {dict.nav.pricing}
             </Link>
-            <div className="relative group">
-              <button type="button" className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors text-sm font-medium">
-                {moreLabel[lang]}
-                <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              <div className="absolute top-full right-0 pt-2 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200">
-                <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-2">
-                  {showNews && (
-                    <Link href={newsHref} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-indigo-600">
-                      {dict.nav.news}
-                    </Link>
-                  )}
-                  <Link href={contactHref} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-indigo-600">
-                    {dict.nav.contact}
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="hidden lg:flex items-center gap-4">
-              <a
-                href={loginUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+            {showNews && (
+              <Link
+                href={newsHref}
                 className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
               >
-                {dict.nav.login}
+                {dict.nav.news}
+              </Link>
+            )}
+            <Link
+              href={contactHref}
+              className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
+            >
+              {dict.nav.contact}
+            </Link>
+            <a
+              href={loginUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
+            >
+              {dict.nav.login}
+            </a>
+            <LanguageSwitcher current={market} />
+            {ctaExternal ? (
+              <a href={ctaPath} target="_blank" rel="noopener noreferrer" className={ctaClass}>
+                {ctaLabel}
               </a>
-              <LanguageSwitcher current={market} />
-              <DemoFirstActions
-                location="header"
-                lang={demoFirstLangFromMarket(market)}
-                tone="nav"
-                registerHref={registerHrefForMarket(market)}
-                showDemoNote={false}
-                showTrialDetail={false}
-              />
-            </div>
+            ) : (
+              <Link href={ctaPath} className={ctaClass}>
+                {ctaLabel}
+              </Link>
+            )}
           </div>
 
           <button
@@ -701,18 +696,24 @@ export default function NavigationEn({
           <div className="pt-2">
             <LanguageSwitcher current={market} />
           </div>
-          <DemoFirstActions
-            location="header"
-            lang={demoFirstLangFromMarket(market)}
-            tone="brand"
-            density="compact"
-            fullWidth
-            align="center"
-            registerHref={registerHrefForMarket(market)}
-            showDemoNote={false}
-            showTrialDetail
-            onActivate={() => setMobileOpen(false)}
-          />
+          {ctaExternal ? (
+            <a
+              href={ctaPath}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-indigo-600 text-white text-center px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
+            >
+              {ctaLabel}
+            </a>
+          ) : (
+            <Link
+              href={ctaPath}
+              className="block bg-indigo-600 text-white text-center px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
+              onClick={() => setMobileOpen(false)}
+            >
+              {ctaLabel}
+            </Link>
+          )}
         </div>
       )}
     </nav>

@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Breadcrumbs, { generateBreadcrumbSchema } from "@/app/components/Breadcrumbs";
 import FaqSectionEn, { type FaqEntry } from "@/app/components/FaqSectionEn";
-import DemoFirstActions from "@/app/components/DemoFirstActions";
+import TrSeoCta from "@/app/components/tr-seo/TrSeoCta";
 import TrSeoPageView from "@/app/components/tr-seo/TrSeoPageView";
 import { generateArticleSchema, generateWebPageSchemaIntl } from "@/lib/schema";
 import { BASE_URL } from "@/app/i18n/config";
+import { getPrimaryCtaPath } from "@/app/i18n/market-access";
 import { TR_PATHS } from "@/app/i18n/tr-seo/paths";
 
 export type GuideBlock =
@@ -33,6 +34,9 @@ export type TrGuideContent = {
   faqs: FaqEntry[];
   related: { href: string; label: string }[];
 };
+
+const CTA_CLASS =
+  "inline-flex items-center justify-center bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors";
 
 export default function TrGuideArticle({ content }: { content: TrGuideContent }) {
   const pageUrl = `${BASE_URL}${content.path}`;
@@ -152,11 +156,17 @@ export default function TrGuideArticle({ content }: { content: TrGuideContent })
             );
           })}
           <div className="mt-12 p-6 bg-indigo-50 rounded-2xl">
-            <p className="font-semibold text-gray-900 mb-2">Treatflow stüdyona uyar mı? Birlikte bakalım.</p>
+            <p className="font-semibold text-gray-900 mb-2">Treatflow'u 30 gün deneyin</p>
             <p className="text-sm text-gray-600 mb-4">
-              Treatflow&apos;u kişisel bir demoda tanı ve stüdyo gününle ilgili sorularını sor.
+              Kredi kartı gerekmez. Randevu komisyonu yok. AB sunucuları, KVKK kapsamında.
             </p>
-            <DemoFirstActions lang="tr" location="footer" showDemoNote={false} />
+            <TrSeoCta
+              href={getPrimaryCtaPath("tr")}
+              label="Ücretsiz Deneyin"
+              className={CTA_CLASS}
+              landingPage={content.path}
+              keywordCluster="rehber"
+            />
           </div>
         </div>
       </article>

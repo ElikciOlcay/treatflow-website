@@ -1,11 +1,11 @@
-import { type LucideIcon, CheckCircle, Star } from 'lucide-react';
+import { type LucideIcon, ArrowRight, CheckCircle, Star } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import Breadcrumbs from './Breadcrumbs';
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from './AiAnswerCapsule';
 import ContentAttribution from './ContentAttribution';
-import DemoFirstActions from './DemoFirstActions';
+import { APP_REGISTER_URL } from '../i18n/market-access';
 
 export type FeatureHeroTheme = {
     sectionBg: string;
@@ -104,6 +104,7 @@ type FeatureHeroProps = {
     title: ReactNode;
     description: string;
     chips?: string[];
+    primaryCta?: { label: string; href: string; external?: boolean };
     secondaryCta?: { label: string; href: string };
     aiCapsule?: { question: string; answer: string };
     aiCapsules?: { question: string; answer: string }[];
@@ -120,9 +121,16 @@ type FeatureHeroProps = {
     children?: ReactNode;
 };
 
+const DEFAULT_PRIMARY = {
+    label: '14 Tage gratis testen',
+    href: APP_REGISTER_URL,
+    external: true,
+};
+
 const DEFAULT_TRUST = [
+    '14 Tage kostenlos',
+    'Keine Kreditkarte',
     'Keine Provision',
-    'EU-Server (DSGVO)',
 ];
 
 export default function FeatureHero({
@@ -133,6 +141,7 @@ export default function FeatureHero({
     title,
     description,
     chips = [],
+    primaryCta = DEFAULT_PRIMARY,
     secondaryCta,
     aiCapsule,
     aiCapsules,
@@ -179,17 +188,30 @@ export default function FeatureHero({
                                 </ul>
                             )}
 
-                            <div className="flex flex-col gap-4 items-center lg:items-start">
-                                <DemoFirstActions
-                                    location="hero"
-                                    tone="brand"
-                                    showDemoNote
-                                    showTrialDetail
-                                />
+                            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                                {primaryCta.external ? (
+                                    <a
+                                        href={primaryCta.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={`${t.ctaBg} text-white w-fit px-6 py-3 rounded-xl text-base font-semibold ${t.ctaHover} transition-all duration-300 inline-flex items-center justify-center shadow-md hover:shadow-lg`}
+                                    >
+                                        {primaryCta.label}
+                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                    </a>
+                                ) : (
+                                    <Link
+                                        href={primaryCta.href}
+                                        className={`${t.ctaBg} text-white w-fit px-6 py-3 rounded-xl text-base font-semibold ${t.ctaHover} transition-all duration-300 inline-flex items-center justify-center shadow-md hover:shadow-lg`}
+                                    >
+                                        {primaryCta.label}
+                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                    </Link>
+                                )}
                                 {secondaryCta && (
                                     <Link
                                         href={secondaryCta.href}
-                                        className={`inline-flex w-fit items-center justify-center border border-gray-200 bg-white text-gray-800 px-5 py-3 rounded-xl text-base font-semibold ${t.secondaryHover} transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
+                                        className={`inline-flex w-fit items-center justify-center border border-gray-200 bg-white text-gray-800 px-5 py-3 rounded-xl text-base font-semibold ${t.secondaryHover} transition-colors`}
                                     >
                                         {secondaryCta.label}
                                     </Link>
