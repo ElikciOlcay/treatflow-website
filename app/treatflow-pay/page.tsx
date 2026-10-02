@@ -1,4 +1,4 @@
-import { Wallet, Percent, Banknote, CreditCard, ShieldCheck, CalendarCheck } from 'lucide-react';
+import { Wallet, Percent, Banknote, CreditCard, ShieldCheck, Layers } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
@@ -20,7 +20,7 @@ const PAGE_DATE_PUBLISHED = '2026-10-02';
 
 export const metadata = {
     title: 'Treatflow Pay – Anzahlung und Vollzahlung bei der Online-Buchung',
-    description: 'Treatflow Pay: Kundinnen zahlen Anzahlung oder den vollen Preis direkt bei der Online-Buchung. Pro Leistung einstellbar, 2,69 % pro Transaktion, Auszahlung über Stripe.',
+    description: 'Treatflow Pay: Kundinnen zahlen Anzahlung oder den vollen Preis direkt bei der Online-Buchung. Pro Leistung einstellbar, 2,69 % pro Transaktion.',
     keywords: [
         'Treatflow Pay',
         'Anzahlung Online-Buchung',
@@ -34,7 +34,7 @@ export const metadata = {
     },
     openGraph: {
         title: 'Treatflow Pay – Anzahlung und Vollzahlung bei der Online-Buchung',
-        description: 'Anzahlung oder Vollzahlung direkt beim Buchen. Pro Leistung einstellbar, 2,69 % pro Transaktion, Auszahlung auf dein Stripe-Konto.',
+        description: 'Anzahlung oder Vollzahlung direkt beim Buchen. Pro Leistung einstellbar, 2,69 % pro Transaktion.',
         url: 'https://www.treatflow.io/treatflow-pay',
         images: [{ url: '/images/product-updates/treatflow-pay.png', width: 1200, height: 675, alt: 'Treatflow Pay – Anzahlung oder Vollzahlung' }],
     },
@@ -47,15 +47,11 @@ const faqs = [
     },
     {
         question: 'Welche Zahlarten gibt es?',
-        answer: 'Die Kundin bezahlt im Stripe-Checkout mit Kredit- oder Debitkarte. Apple Pay und Google Pay erscheinen dort, wenn ihr Gerät sie anbietet. Klarna, Ratenzahlung und SEPA-Lastschrift sind nicht enthalten. Der Betrag wird sofort eingezogen.',
-    },
-    {
-        question: 'Wann ist der Termin bestätigt?',
-        answer: 'Erst nach erfolgreicher Zahlung. Solange die Zahlung offen ist, bleibt der Termin ausstehend. Nach der Zahlung wird er bestätigt. Bei einer Anzahlung zahlt die Kundin den Rest vor Ort.',
+        answer: 'Die Kundin bezahlt im Stripe-Checkout mit Kredit- oder Debitkarte. Apple Pay und Google Pay erscheinen dort, wenn ihr Gerät sie anbietet.',
     },
     {
         question: 'Was kostet Treatflow Pay?',
-        answer: '2,69 % pro Transaktion, all-in. Es gibt keine weitere Treatflow-Gebühr auf die Zahlung. Der Mindestbetrag liegt bei 0,50 €. Die Auszahlung geht auf das Stripe-Konto, das du unter Apps mit Treatflow Pay verbindest.',
+        answer: '2,69 % pro Transaktion, all-in. Es gibt keine weitere Treatflow-Gebühr auf die Zahlung. Der Mindestbetrag liegt bei 0,50 €.',
     },
     {
         question: 'Ersetzt Treatflow Pay die Kasse oder SumUp?',
@@ -97,7 +93,7 @@ export default function TreatflowPayPage() {
                     __html: JSON.stringify(
                         generateWebPageSchema({
                             name: 'Treatflow Pay – Anzahlung und Vollzahlung bei der Online-Buchung',
-                            description: 'Treatflow Pay: Kundinnen zahlen Anzahlung oder den vollen Preis direkt bei der Online-Buchung. Pro Leistung einstellbar, 2,69 % pro Transaktion, Auszahlung über Stripe.',
+                            description: 'Treatflow Pay: Kundinnen zahlen Anzahlung oder den vollen Preis direkt bei der Online-Buchung. Pro Leistung einstellbar, 2,69 % pro Transaktion.',
                             url: 'https://www.treatflow.io/treatflow-pay',
                             dateModified: PAGE_DATE_MODIFIED,
                             datePublished: PAGE_DATE_PUBLISHED,
@@ -115,12 +111,12 @@ export default function TreatflowPayPage() {
                 eyebrow="Treatflow Pay"
                 eyebrowIcon={Wallet}
                 title={<>Anzahlung oder Vollzahlung <FeatureTitleHighlight>beim Buchen</FeatureTitleHighlight></>}
-                description="Lege pro Leistung fest, ob die Kundin eine Anzahlung, den vollen Preis oder nichts online zahlt. Die Auszahlung läuft über Stripe auf dein Konto."
+                description="Lege pro Leistung fest, ob die Kundin eine Anzahlung, den vollen Preis oder nichts online zahlt."
                 chips={['Pro Leistung', 'Karte, Apple Pay, Google Pay', '2,69 %']}
                 secondaryCta={{ label: 'Zur Online-Buchung', href: '/online-buchungen' }}
                 aiCapsule={{
                     question: 'Was ist Treatflow Pay?',
-                    answer: 'Treatflow Pay ist die Online-Zahlung bei der Terminbuchung. Pro Leistung kann das Studio keine Zahlung, eine Anzahlung in Prozent oder als Betrag, oder die Vollzahlung verlangen. Bezahlt wird per Kredit- oder Debitkarte, dazu Apple Pay und Google Pay im Stripe-Checkout. Klarna und Ratenzahlung sind nicht enthalten. Die Gebühr beträgt 2,69 % pro Transaktion, die Auszahlung geht auf das Stripe-Konto des Studios. Der Termin wird erst nach erfolgreicher Zahlung bestätigt.',
+                    answer: 'Treatflow Pay ist die Online-Zahlung bei der Terminbuchung. Pro Leistung kann das Studio keine Zahlung, eine Anzahlung in Prozent oder als Betrag, oder die Vollzahlung verlangen. Bezahlt wird per Kredit- oder Debitkarte, dazu Apple Pay und Google Pay im Stripe-Checkout. Die Gebühr beträgt 2,69 % pro Transaktion.',
                 }}
                 dateModified={PAGE_DATE_MODIFIED}
                 datePublished={PAGE_DATE_PUBLISHED}
@@ -149,8 +145,8 @@ export default function TreatflowPayPage() {
                     },
                     {
                         icon: Banknote,
-                        title: 'Auszahlung auf dein Konto',
-                        text: '2,69 % pro Transaktion, all-in. Der Rest geht auf das Stripe-Konto, das du mit Treatflow Pay verbindest.',
+                        title: '2,69 % pro Transaktion',
+                        text: 'Eine Gebühr, all-in. Keine weitere Treatflow-Gebühr auf die Zahlung.',
                     },
                 ]}
             />
@@ -161,7 +157,7 @@ export default function TreatflowPayPage() {
                 steps={[
                     { title: 'Treatflow Pay verbinden', text: 'Unter Apps richtest du Treatflow Pay ein und verbindest dein Stripe-Konto. Erst danach kann bei der Buchung kassiert werden.' },
                     { title: 'Je Leistung wählen', text: 'Bei jeder Behandlung: keine Online-Zahlung, Anzahlung in Prozent oder als Betrag, oder den vollen Preis.' },
-                    { title: 'Kundin bezahlt', text: 'Sie schließt die Buchung mit der Zahlung ab. Der Termin wird bestätigt, sobald die Zahlung durch ist. Bei einer Anzahlung bleibt der Rest vor Ort.' },
+                    { title: 'Kund:in bezahlt', text: 'Die Buchung wird mit der Zahlung abgeschlossen. Bei einer Anzahlung bleibt der Rest vor Ort.' },
                 ]}
             />
 
@@ -173,9 +169,9 @@ export default function TreatflowPayPage() {
                     { icon: Wallet, title: 'Keine Zahlung, Anzahlung oder Vollzahlung', text: 'Jede Leistung hat einen eigenen Modus. Leistungen ohne Online-Zahlung bleiben wie bisher buchbar.', points: ['Keine Online-Zahlung', 'Anzahlung', 'Vollzahlung'] },
                     { icon: Percent, title: 'Anzahlung in Prozent', text: 'Zum Beispiel 30 % des Leistungspreises. Der Satz gilt für diese Behandlung.', points: ['Prozent vom Preis', 'Pro Leistung', 'Rest vor Ort'] },
                     { icon: Banknote, title: 'Anzahlung als Betrag', text: 'Ein fester Euro-Betrag, höchstens der Preis der Leistung.', points: ['Fester Betrag', 'Gedeckelt auf den Preis', 'Rest vor Ort'] },
-                    { icon: CreditCard, title: 'Karte und Wallets', text: 'Zahlung im Stripe-Checkout. Klarna, Ratenzahlung und SEPA-Lastschrift gibt es dabei nicht.', points: ['Kredit- und Debitkarte', 'Apple Pay', 'Google Pay'] },
-                    { icon: ShieldCheck, title: '2,69 % all-in', text: 'Eine Gebühr pro Transaktion. Mindestbetrag 0,50 €. Auszahlung auf dein verbundenes Stripe-Konto.', points: ['2,69 % pro Zahlung', 'Ab 0,50 €', 'Stripe-Auszahlung'] },
-                    { icon: CalendarCheck, title: 'Termin nach Zahlung', text: 'Ohne erfolgreiche Zahlung bleibt der Termin ausstehend. Mehrere Leistungen einer Buchung werden zusammengerechnet.', points: ['Bestätigung nach Zahlung', 'Mehrere Leistungen', 'Nie über dem Buchungspreis'] },
+                    { icon: CreditCard, title: 'Karte und Wallets', text: 'Zahlung im Stripe-Checkout mit Karte, Apple Pay und Google Pay.', points: ['Kredit- und Debitkarte', 'Apple Pay', 'Google Pay'] },
+                    { icon: ShieldCheck, title: '2,69 % all-in', text: 'Eine Gebühr pro Transaktion. Mindestbetrag 0,50 €.', points: ['2,69 % pro Zahlung', 'Ab 0,50 €', 'All-in'] },
+                    { icon: Layers, title: 'Mehrere Leistungen', text: 'Beträge einer Buchung werden zusammengerechnet, höchstens bis zum Buchungspreis.', points: ['Summe der Leistungen', 'Gedeckelt auf den Preis', 'Pro Leistung einstellbar'] },
                 ]}
             />
 

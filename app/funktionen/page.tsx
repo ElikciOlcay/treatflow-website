@@ -71,7 +71,7 @@ const kernfunktionen = [
         href: '/treatflow-pay',
         icon: Wallet,
         title: 'Treatflow Pay',
-        description: 'Anzahlung oder Vollzahlung direkt bei der Online-Buchung. Pro Leistung einstellbar, Auszahlung über Stripe auf dein Konto.',
+        description: 'Anzahlung oder Vollzahlung direkt bei der Online-Buchung. Pro Leistung einstellbar, 2,69 % pro Transaktion.',
         color: 'text-violet-600',
         bg: 'bg-violet-50',
         border: 'border-violet-200 hover:border-violet-400',

@@ -62,7 +62,7 @@ const faqs = [
     },
     {
         question: 'Können Kundinnen bei der Online-Buchung direkt bezahlen?',
-        answer: 'Ja. Mit Treatflow Pay bezahlt die Kundin bei der Buchung eine Anzahlung oder den vollen Betrag. Du stellst das pro Leistung ein. Die Gebühr beträgt 2,69 % pro Transaktion, die Auszahlung läuft über Stripe auf dein Konto.',
+        answer: 'Ja. Mit Treatflow Pay bezahlt die Kundin bei der Buchung eine Anzahlung oder den vollen Betrag. Du stellst das pro Leistung ein. Die Gebühr beträgt 2,69 % pro Transaktion.',
     },
 ];
 
@@ -172,7 +172,7 @@ export default function OnlineBuchungenPage() {
                 items={[
                     { icon: Link2, title: 'Persönlicher Buchungslink', text: 'Dein Link zum Teilen auf Website und Social Media – mit Studio-Branding.', points: ['Individueller Link', 'QR-Code', 'Studio-Branding'] },
                     { icon: Languages, title: 'Sechs Sprachen', text: 'Die Buchungsseite passt sich der Sprache der Kundin an – ohne extra Setup.', points: ['DE, EN, TR, PL, IT, RU', 'Automatische Sprache', 'Ohne Barriere'] },
-                    { icon: Wallet, title: 'Treatflow Pay', text: 'Anzahlung oder Vollzahlung direkt bei der Online-Buchung. Die Auszahlung läuft über Stripe auf dein Konto.', points: ['Pro Leistung einstellbar', 'Anzahlung oder Vollzahlung', '2,69 % pro Transaktion'] },
+                    { icon: Wallet, title: 'Treatflow Pay', text: 'Anzahlung oder Vollzahlung direkt bei der Online-Buchung.', points: ['Pro Leistung einstellbar', 'Anzahlung oder Vollzahlung', '2,69 % pro Transaktion'] },
                     { icon: ListOrdered, title: 'Warteliste', text: 'Bei Ausbuchung vormerken. Wird ein Termin frei, geht eine E-Mail an passende Interessenten.', points: ['Auto-Mail bei Storno', 'Zwei Benachrichtigungsmodi', 'Übersicht im Dashboard'] },
                     { icon: Ticket, title: 'Rabattcodes', text: 'Codes für Neukunden und Kampagnen – direkt bei der Online-Buchung einlösen.', points: ['Neukunden & Aktionen', 'Einlösung beim Buchen', 'Nutzungsstatistik'] },
                     { icon: Bell, title: 'Erinnerungen', text: 'WhatsApp und E-Mail vor dem Termin. Kundinnen können rechtzeitig stornieren, der Slot wird frei.', points: ['WhatsApp & E-Mail', 'Flexible Zeitpunkte', 'Weniger No-Shows'] },
