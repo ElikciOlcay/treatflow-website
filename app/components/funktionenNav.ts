@@ -12,6 +12,7 @@ import {
   Gift,
   Plug,
   Workflow,
+  Wallet,
 } from "lucide-react";
 
 export type FunktionenNavItem = {
@@ -103,6 +104,13 @@ export const funktionenGroups: FunktionenNavGroup[] = [
         desc: "TSE- & RKSV-konform kassieren",
         icon: Receipt,
         color: "text-green-600 bg-green-100",
+      },
+      {
+        href: "/treatflow-pay",
+        label: "Treatflow Pay",
+        desc: "Anzahlung oder Vollzahlung online",
+        icon: Wallet,
+        color: "text-violet-600 bg-violet-100",
       },
       {
         href: "/gutscheine-kosmetikstudio",

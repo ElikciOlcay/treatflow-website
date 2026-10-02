@@ -220,6 +220,7 @@ export default function IntegrationenPage() {
                 items={[
                     { href: '/kassensystem-kosmetikstudio', title: 'Kassensystem', description: 'TSE- & RKSV-konform kassieren' },
                     { href: '/terminkalender', title: 'Terminkalender', description: 'Termine zentral & sync' },
+                    { href: '/treatflow-pay', title: 'Treatflow Pay', description: 'Anzahlung oder Vollzahlung' },
                     { href: '/online-buchungen', title: 'Online-Buchungen', description: '24/7 Buchung mit Pay' },
                 ]}
             />

@@ -1,4 +1,4 @@
-import { Link2, Calendar, Bell, Languages, Ticket, ListOrdered } from 'lucide-react';
+import { Link2, Calendar, Bell, Languages, Ticket, ListOrdered, Wallet } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
@@ -16,13 +16,13 @@ import {
 import { buildHreflangAlternates } from '../i18n/seo';
 import { generateWebPageSchema } from '@/lib/content-attribution';
 
-const PAGE_DATE_MODIFIED = '2026-08-18';
+const PAGE_DATE_MODIFIED = '2026-10-02';
 const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
     title: 'Online-Terminbuchung & Buchungssystem Kosmetikstudio',
-    description: 'Online-Terminbuchung für dein Kosmetikstudio: Kunden buchen 24/7 über deinen persönlichen Link. Automatische Bestätigungen, weniger No-Shows.',
-    keywords: ['Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Buchungssystem Kosmetik', 'Online Buchungssystem Kosmetik', 'Terminbuchungssoftware Kosmetik', 'Buchungssoftware Kosmetikstudio', 'Buchungslink Beauty', '24/7 Terminbuchung', 'Online-Terminbuchung Kosmetik', 'Kosmetikstudio Buchungssystem', 'mehrsprachige Buchungsseite', 'Buchungsseite mehrere Sprachen', 'Rabattcodes Online-Buchung', 'Rabattcode Kosmetikstudio', 'Warteliste Kosmetikstudio', 'Warteliste Online-Buchung'],
+    description: 'Online-Terminbuchung für dein Kosmetikstudio: Kunden buchen 24/7 über deinen persönlichen Link. Mit Treatflow Pay Anzahlung oder Vollzahlung direkt bei der Buchung.',
+    keywords: ['Online Terminbuchung Kosmetikstudio', 'Online Buchungssystem Kosmetikstudio', 'Buchungssystem Kosmetik', 'Online Buchungssystem Kosmetik', 'Terminbuchungssoftware Kosmetik', 'Buchungssoftware Kosmetikstudio', 'Buchungslink Beauty', '24/7 Terminbuchung', 'Online-Terminbuchung Kosmetik', 'Kosmetikstudio Buchungssystem', 'mehrsprachige Buchungsseite', 'Buchungsseite mehrere Sprachen', 'Rabattcodes Online-Buchung', 'Rabattcode Kosmetikstudio', 'Warteliste Kosmetikstudio', 'Warteliste Online-Buchung', 'Treatflow Pay', 'Anzahlung Online-Buchung'],
     alternates: {
         canonical: 'https://www.treatflow.io/online-buchungen',
         ...buildHreflangAlternates('online-booking'),
@@ -60,6 +60,10 @@ const faqs = [
         question: 'Was passiert, wenn alle Termine ausgebucht sind?',
         answer: 'Mit der Warteliste können sich deine Kunden auf freie Termine vormerken lassen. Wird ein bestehender Termin storniert, bekommen passende Interessenten automatisch eine E-Mail mit den frei gewordenen Zeiten. So gehen dir keine Anfragen verloren.',
     },
+    {
+        question: 'Können Kundinnen bei der Online-Buchung direkt bezahlen?',
+        answer: 'Ja. Mit Treatflow Pay bezahlt die Kundin bei der Buchung eine Anzahlung oder den vollen Betrag. Du stellst das pro Leistung ein. Die Gebühr beträgt 2,69 % pro Transaktion, die Auszahlung läuft über Stripe auf dein Konto.',
+    },
 ];
 
 const faqSchema = {
@@ -95,7 +99,7 @@ export default function OnlineBuchungenPage() {
                     __html: JSON.stringify(
                         generateWebPageSchema({
                             name: 'Online-Terminbuchung & Buchungssystem Kosmetikstudio',
-                            description: 'Online-Terminbuchung für dein Kosmetikstudio: Kunden buchen 24/7 über deinen persönlichen Link. Automatische Bestätigungen, weniger No-Shows.',
+                            description: 'Online-Terminbuchung für dein Kosmetikstudio: Kunden buchen 24/7 über deinen persönlichen Link. Mit Treatflow Pay Anzahlung oder Vollzahlung direkt bei der Buchung.',
                             url: 'https://www.treatflow.io/online-buchungen',
                             dateModified: PAGE_DATE_MODIFIED,
                             datePublished: PAGE_DATE_PUBLISHED,
@@ -114,11 +118,11 @@ export default function OnlineBuchungenPage() {
                 eyebrowIcon={Link2}
                 title={<>Online-Buchung für dein <FeatureTitleHighlight theme="orange">Studio</FeatureTitleHighlight></>}
                 description="Persönlicher Buchungslink – Kundinnen buchen rund um die Uhr. Termine landen automatisch im Kalender."
-                chips={['24/7 buchbar', 'Keine Provision', 'Warteliste inklusive']}
+                chips={['24/7 buchbar', 'Keine Provision', 'Treatflow Pay']}
                 secondaryCta={{ label: 'Zum Terminkalender', href: '/terminkalender' }}
                 aiCapsule={{
                     question: 'Welches Online-Buchungssystem eignet sich für Kosmetikstudios?',
-                    answer: 'Treatflow bietet ein spezialisiertes Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink, 24/7-Terminbuchung, automatischen Bestätigungen per WhatsApp und E-Mail sowie Integration mit Kundenkartei und Dokumentation. Keine Provision pro Buchung, ab 59 EUR/Monat im Booking-Plan, 14 Tage kostenlos testen.',
+                    answer: 'Treatflow bietet ein spezialisiertes Online-Buchungssystem für Kosmetikstudios mit persönlichem Buchungslink, 24/7-Terminbuchung, automatischen Bestätigungen per WhatsApp und E-Mail sowie Treatflow Pay für Anzahlung oder Vollzahlung bei der Buchung. Keine Provision pro Buchung, ab 59 EUR/Monat im Booking-Plan, 14 Tage kostenlos testen.',
                 }}
                 dateModified={PAGE_DATE_MODIFIED}
                 datePublished={PAGE_DATE_PUBLISHED}
@@ -157,17 +161,18 @@ export default function OnlineBuchungenPage() {
                 steps={[
                     { title: 'Behandlungen anlegen', text: 'Lege fest, welche Behandlungen buchbar sind, wie lange sie dauern und was sie kosten. Das System zeigt deinen Kunden nur freie Zeiten.' },
                     { title: 'Link teilen', text: 'Teile deinen persönlichen Buchungslink auf Instagram, deiner Website oder per WhatsApp. Einen QR-Code zum Ausdrucken gibt es auch.' },
-                    { title: 'Buchungen kommen rein', text: 'Neue Termine erscheinen automatisch in deinem Kalender. Bestätigungen und Erinnerungen gehen von allein raus.' },
+                    { title: 'Buchungen kommen rein', text: 'Neue Termine erscheinen automatisch in deinem Kalender. Bestätigungen und Erinnerungen gehen von allein raus. Mit Treatflow Pay kann die Kundin Anzahlung oder den vollen Preis direkt mitbezahlen.' },
                 ]}
             />
 
             <FeatureCards
                 theme="orange"
                 title="Was du bekommst"
-                description="Buchungslink, Sprachen, Warteliste und Rabatte – ohne Provision pro Termin."
+                description="Buchungslink, Sprachen, Warteliste, Rabatte und Treatflow Pay – ohne Provision pro Termin."
                 items={[
                     { icon: Link2, title: 'Persönlicher Buchungslink', text: 'Dein Link zum Teilen auf Website und Social Media – mit Studio-Branding.', points: ['Individueller Link', 'QR-Code', 'Studio-Branding'] },
                     { icon: Languages, title: 'Sechs Sprachen', text: 'Die Buchungsseite passt sich der Sprache der Kundin an – ohne extra Setup.', points: ['DE, EN, TR, PL, IT, RU', 'Automatische Sprache', 'Ohne Barriere'] },
+                    { icon: Wallet, title: 'Treatflow Pay', text: 'Anzahlung oder Vollzahlung direkt bei der Online-Buchung. Die Auszahlung läuft über Stripe auf dein Konto.', points: ['Pro Leistung einstellbar', 'Anzahlung oder Vollzahlung', '2,69 % pro Transaktion'] },
                     { icon: ListOrdered, title: 'Warteliste', text: 'Bei Ausbuchung vormerken. Wird ein Termin frei, geht eine E-Mail an passende Interessenten.', points: ['Auto-Mail bei Storno', 'Zwei Benachrichtigungsmodi', 'Übersicht im Dashboard'] },
                     { icon: Ticket, title: 'Rabattcodes', text: 'Codes für Neukunden und Kampagnen – direkt bei der Online-Buchung einlösen.', points: ['Neukunden & Aktionen', 'Einlösung beim Buchen', 'Nutzungsstatistik'] },
                     { icon: Bell, title: 'Erinnerungen', text: 'WhatsApp und E-Mail vor dem Termin. Kundinnen können rechtzeitig stornieren, der Slot wird frei.', points: ['WhatsApp & E-Mail', 'Flexible Zeitpunkte', 'Weniger No-Shows'] },
@@ -181,6 +186,7 @@ export default function OnlineBuchungenPage() {
 
             <FeatureRelated
                 items={[
+                    { href: '/treatflow-pay', title: 'Treatflow Pay', description: 'Anzahlung oder Vollzahlung' },
                     { href: '/terminkalender', title: 'Terminkalender', description: 'Buchungen landen direkt im Plan' },
                     { href: '/nachrichtenautomatisierung', title: 'Nachrichten', description: 'Bestätigung und Reminder automatisch' },
                     { href: '/kundenverwaltung', title: 'Kundenverwaltung', description: 'Neue Buchung, bekanntes Profil' },

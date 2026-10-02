@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
     Calendar, Users, ClipboardCheck, FileText, Link2, Bell, Shield,
-    ArrowRight, CheckCircle, BarChart3, ShoppingBag, Receipt, Gift, Sparkles, Workflow
+    ArrowRight, CheckCircle, BarChart3, ShoppingBag, Receipt, Gift, Sparkles, Workflow, Wallet
 } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -13,13 +13,15 @@ import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
 import { buildHreflangAlternates } from '../i18n/seo';
 export const metadata: Metadata = {
     title: 'Alle Funktionen der Kosmetikstudio Software',
-    description: 'Entdecke alle Funktionen von Treatflow: Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare, Behandlungsdokumentation, Kunden-Workflows, NiSV-Dokumentation und automatische Erinnerungen.',
+    description: 'Entdecke alle Funktionen von Treatflow: Terminkalender, Online-Buchungen, Treatflow Pay, digitale Kundenkartei, Formulare, Behandlungsdokumentation, Kunden-Workflows, NiSV-Dokumentation und automatische Erinnerungen.',
     keywords: [
         'Kosmetikstudio Software Funktionen',
         'Treatflow Funktionen',
         'Terminkalender Kosmetik',
         'Kundenkartei Software',
         'Online-Buchungssystem Kosmetik',
+        'Treatflow Pay',
+        'Anzahlung Online-Buchung',
         'Behandlungsdokumentation',
         'NiSV Dokumentation',
     ],
@@ -64,6 +66,16 @@ const kernfunktionen = [
         bg: 'bg-purple-50',
         border: 'border-purple-200 hover:border-purple-400',
         highlights: ['Verkaufen & einlösen', 'Einzweck & Mehrzweck', 'Restwert automatisch'],
+    },
+    {
+        href: '/treatflow-pay',
+        icon: Wallet,
+        title: 'Treatflow Pay',
+        description: 'Anzahlung oder Vollzahlung direkt bei der Online-Buchung. Pro Leistung einstellbar, Auszahlung über Stripe auf dein Konto.',
+        color: 'text-violet-600',
+        bg: 'bg-violet-50',
+        border: 'border-violet-200 hover:border-violet-400',
+        highlights: ['Anzahlung oder Vollzahlung', 'Karte, Apple Pay, Google Pay', '2,69 % pro Transaktion'],
     },
     {
         href: '/online-buchungen',
@@ -202,7 +214,7 @@ export default function FunktionenPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                            11 Kernfunktionen für dein Studio
+                            12 Kernfunktionen für dein Studio
                         </h2>
                         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Jede Funktion ist auf die Bedürfnisse von Kosmetikstudios zugeschnitten.
