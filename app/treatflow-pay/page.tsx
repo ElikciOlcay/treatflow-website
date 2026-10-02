@@ -157,7 +157,7 @@ export default function TreatflowPayPage() {
                 steps={[
                     { title: 'Treatflow Pay verbinden', text: 'Unter Apps richtest du Treatflow Pay ein und verbindest dein Stripe-Konto. Erst danach kann bei der Buchung kassiert werden.' },
                     { title: 'Je Leistung wählen', text: 'Bei jeder Behandlung: keine Online-Zahlung, Anzahlung in Prozent oder als Betrag, oder den vollen Preis.' },
-                    { title: 'Kundin bezahlt', text: 'Sie schließt die Buchung mit der Zahlung ab. Bei einer Anzahlung bleibt der Rest vor Ort.' },
+                    { title: 'Kund:in bezahlt', text: 'Die Buchung wird mit der Zahlung abgeschlossen. Bei einer Anzahlung bleibt der Rest vor Ort.' },
                 ]}
             />
 
