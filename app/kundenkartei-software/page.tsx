@@ -9,9 +9,9 @@ import Breadcrumbs, { generateBreadcrumbSchema } from "../components/Breadcrumbs
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "../components/AiAnswerCapsule";
 
 export const metadata: Metadata = {
-  title: "Kundenkartei Kosmetik: App statt Papier und Excel",
+  title: "Kundenkartei App für Kosmetik & Nagelstudio – ab 39 €",
   description:
-    "Digitale Kundenkartei fürs Kosmetikstudio ab 39 Euro/Monat: Kontakte, Behandlungshistorie, Fotos und Formulare. DSGVO auf EU-Servern, 14 Tage kostenlos – ohne Kreditkarte.",
+    "Kundenkartei-App fürs Kosmetik- und Nagelstudio: Behandlungshistorie, Allergien, Vorher-Nachher-Fotos und Formulare mit Unterschrift an einem Ort. DSGVO, EU-Server. 14 Tage gratis, ohne Kreditkarte.",
   keywords: [
     "kundenkartei app",
     "app kundenkartei",
@@ -23,12 +23,14 @@ export const metadata: Metadata = {
     "kundenkartei app android kostenlos",
     "kundenkartei-app android kostenlos",
     "kundenkartei software",
+    "kundenkartei nagelstudio",
+    "digitale kundenkartei kosmetik",
   ],
   alternates: {
     canonical: "https://www.treatflow.io/kundenkartei-software",
   },
   openGraph: {
-    title: "Kundenkartei Kosmetik: App statt Papier und Excel",
+    title: "Kundenkartei App für Kosmetik & Nagelstudio",
     description:
       "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Fotos und Formulare in einer App. Kostenlos testen.",
     url: "https://www.treatflow.io/kundenkartei-software",
@@ -43,6 +45,10 @@ const breadcrumbItems = [
 const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems);
 
 const faqData = [
+  {
+    q: "Eignet sich die Kundenkartei auch fürs Nagelstudio?",
+    a: "Ja. Im Nagelstudio speicherst du pro Kundin Lieblingsfarben, Nagelform, verwendete Produkte sowie Gel- oder Acryl-Unverträglichkeiten und hältst das Ergebnis mit Fotos fest. Beim nächsten Termin siehst du sofort, was zuletzt gemacht wurde – auch wenn eine Kollegin übernimmt.",
+  },
   {
     q: "Wie verwalte ich Kundenkontakte ohne teure Software?",
     a: "Statt Papierkartei oder Excel reicht eine digitale Kundenakte: Kontakte, Historie, Allergien und Fotos an einem Ort. Treatflow Basic startet bei 39 Euro pro Monat, 14 Tage kostenlos testen ohne Kreditkarte. Die Daten liegen verschlüsselt auf EU-Servern.",
@@ -212,8 +218,8 @@ export default function KundenkarteiSoftwarePage() {
               Deine digitale <span className="text-indigo-600">Kundenkartei</span> für Kosmetik
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-              Kundendaten, Behandlungshistorie, Formulare und Fotos - alles an einem Ort.
-              Schnell abrufbar, sicher gespeichert und ohne Zettelchaos.
+              Die Kundenkartei-App für Kosmetik-, Nagel- und Lashstudios: Kundendaten, Behandlungshistorie,
+              Formulare und Fotos an einem Ort. Schnell abrufbar, sicher gespeichert und ohne Zettelchaos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

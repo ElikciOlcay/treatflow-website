@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import {
     Menu, X, Sparkles, Zap, Palette,
-    Stethoscope, Pen, ChevronDown, Gem, Eye, Waves, Hand
+    Stethoscope, Pen, ChevronDown, Gem, Eye, Waves, Hand, Footprints
 } from 'lucide-react';
 import Link from 'next/link';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -17,6 +17,7 @@ const branchen = [
     { href: '/aesthetische-medizin-software', label: 'Ästhetische Medizin', icon: Stethoscope, color: 'text-teal-600 bg-teal-100' },
     { href: '/tattoo-studio-software', label: 'Tattoo Studios', icon: Pen, color: 'text-gray-600 bg-gray-200' },
     { href: '/nagelstudio-software', label: 'Nagelstudios', icon: Gem, color: 'text-pink-600 bg-pink-100' },
+    { href: '/fusspflege-software', label: 'Fußpflege', icon: Footprints, color: 'text-emerald-600 bg-emerald-100' },
     { href: '/lash-studio-software', label: 'Lash Studios', icon: Eye, color: 'text-violet-600 bg-violet-100' },
     { href: '/spa-wellness-software', label: 'Spa & Wellness', icon: Waves, color: 'text-cyan-600 bg-cyan-100' },
     { href: '/massage-software', label: 'Massage-Praxen', icon: Hand, color: 'text-amber-600 bg-amber-100' },

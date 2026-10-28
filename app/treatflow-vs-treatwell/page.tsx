@@ -10,15 +10,17 @@ import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 
 export const metadata = {
-  title: 'Treatflow vs. Treatwell: Der ehrliche Vergleich für Kosmetikstudios',
+  title: 'Treatwell Kosten & Alternative: Vergleich mit Treatflow',
   description:
-    'Treatflow oder Treatwell? Keine Provisionen, NiSV-konforme Dokumentation und persönliche Betreuung vs. Marktplatz-Modell mit bis zu 35% Provision. Jetzt vergleichen.',
+    'Was kostet Treatwell 2026? Abo-Preise, 35 % Provision auf Neukunden und 2 % Vorauszahlungsgebühr – im Vergleich zur provisionsfreien Alternative Treatflow für Kosmetikstudios.',
   keywords: [
     'Treatflow vs Treatwell',
     'Treatwell Alternative',
     'Treatwell Provision',
     'Kosmetikstudio Software Vergleich',
     'Treatwell Kosten',
+    'Treatwell Preise',
+    'Was kostet Treatwell',
     'Treatflow Treatwell Unterschied',
   ],
   alternates: {
@@ -26,7 +28,7 @@ export const metadata = {
     ...buildHreflangAlternates('treatflow-vs-treatwell'),
   },
   openGraph: {
-    title: 'Treatflow vs. Treatwell: Der ehrliche Vergleich',
+    title: 'Treatwell Kosten & Alternative: Treatflow vs. Treatwell',
     description:
       'Keine Provisionen, NiSV-konform, persönliche Betreuung – bereits von 500+ Studios getestet statt Treatwell.',
     url: 'https://www.treatflow.io/treatflow-vs-treatwell',
@@ -50,7 +52,7 @@ const faqSchema = {
       name: 'Welche Alternative zu Treatwell gibt es ohne Provision?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Treatflow ist die führende provisionsfreie Alternative zu Treatwell für Kosmetikstudios im deutschsprachigen Raum. Statt bis zu 35% Provision pro Neukunde zahlst du einen Festpreis ab 39 EUR/Monat. Zusätzlich erhältst du NiSV-konforme Dokumentation, digitale Anamnese-Formulare und eine vollständige Kundenkartei – Funktionen, die Treatwell nicht bietet.',
+        text: 'Treatflow ist die führende provisionsfreie Alternative zu Treatwell für Kosmetikstudios im deutschsprachigen Raum. Statt bis zu 35% Provision pro Neukunde zahlst du einen Festpreis – ab 39 EUR/Monat für Kundenkartei und Doku, ab 59 EUR/Monat mit Online-Buchung. Zusätzlich erhältst du NiSV-konforme Dokumentation, digitale Anamnese-Formulare und eine vollständige Kundenkartei – Funktionen, die Treatwell nicht bietet.',
       },
     },
     {
@@ -66,7 +68,7 @@ const faqSchema = {
       name: 'Nimmt Treatflow Provisionen auf Buchungen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nein. Treatflow arbeitet mit transparenten Festpreisen ab 39 Euro/Monat. Es fallen keine Provisionen auf Buchungen oder Neukunden an - im Gegensatz zu Treatwell, wo bis zu 35% Provision auf Neukunden fällig werden.',
+        text: 'Nein. Treatflow arbeitet mit transparenten Festpreisen: Basic ab 39 Euro/Monat, mit Kalender und Online-Buchung ab 59 Euro/Monat. Es fallen keine Provisionen auf Buchungen oder Neukunden an - im Gegensatz zu Treatwell, wo bis zu 35% Provision auf Neukunden fällig werden.',
       },
     },
     {
@@ -168,8 +170,8 @@ const comparisonRows = [
   },
   {
     feature: 'Monatlicher Preis',
-    treatflow: 'Ab 39 Euro/Monat',
-    treatwell: 'Ab 39 Euro/Monat + Provisionen',
+    treatflow: 'Ab 39 €/Monat, mit Online-Buchung ab 59 €',
+    treatwell: 'Ab 39 €/Monat (Advanced 49 € + 7,50 € TSE) + Provisionen',
     treatflowOk: true,
     treatwellOk: false,
   },
@@ -248,7 +250,7 @@ export default function TreatflowVsTreatwell() {
             <AiAnswerCapsule
               className="mb-8"
               question="Welche Alternative zu Treatwell gibt es ohne Provision?"
-              answer="Treatflow ist die provisionsfreie Alternative zu Treatwell für Kosmetikstudios. Statt bis zu 35% Provision pro Neukunde zahlst du einen Festpreis ab 39 EUR/Monat. Du behältst alle Kundendaten, bekommst NiSV-konforme Dokumentation, digitale Anamnese-Formulare und einen eigenen Buchungslink – ohne Marktplatz-Modell."
+              answer="Treatflow ist die provisionsfreie Alternative zu Treatwell für Kosmetikstudios. Statt bis zu 35% Provision pro Neukunde zahlst du einen Festpreis – mit Online-Buchung ab 59 EUR/Monat. Du behältst alle Kundendaten, bekommst NiSV-konforme Dokumentation, digitale Anamnese-Formulare und einen eigenen Buchungslink – ohne Marktplatz-Modell."
             />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -288,6 +290,45 @@ export default function TreatflowVsTreatwell() {
                 </p>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Treatwell Kosten (verifiziert: treatwell.de/partners/preise, Stand 16.04.2026) */}
+        <section id="treatwell-kosten" className="py-20 bg-white">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 text-center">
+              Was kostet Treatwell? Preise und Provision 2026
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-10">
+              Die Treatwell-Kosten bestehen aus einem Monatsabo plus Gebühren pro Buchung. Hier die Eckdaten laut
+              Treatwell-Preisseite (Stand April 2026, alle Beträge zzgl. MwSt.) im Vergleich zu Treatflow.
+            </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="rounded-2xl border border-gray-200 bg-gray-50 p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Treatwell</h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li><strong>Starter:</strong> 39 € pro Monat</li>
+                  <li><strong>Advanced:</strong> 49 € pro Monat + 7,50 € TSE-Gebühr</li>
+                  <li><strong>Neukunden über den Marktplatz:</strong> 35 % Provision auf die erste Buchung (laut Treatwell je nach Standort unterschiedlich)</li>
+                  <li><strong>Wiederkehrende Kunden:</strong> 0 % Provision</li>
+                  <li><strong>Online-Vorauszahlung:</strong> 2 % Gebühr</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-indigo-200 bg-indigo-50 p-8">
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Treatflow</h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li><strong>Basic:</strong> 39 € pro Monat – Kundenkartei, Formulare, Dokumentation</li>
+                  <li><strong>Booking:</strong> 59 € pro Monat – plus Kalender, Online-Buchung, Erinnerungen</li>
+                  <li><strong>Kasse (Add-on):</strong> 39 € pro Monat + einmalig 149 € Einrichtung, TSE/RKSV inklusive</li>
+                  <li><strong>Provision:</strong> 0 % – auf alle Buchungen, auch Neukunden</li>
+                  <li><strong>Jährliche Zahlung:</strong> günstiger (Basic 35 €, Booking 53 € pro Monat)</li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-sm text-gray-500 mt-6 text-center">
+              Wann lohnt sich was? Treatwell bringt über den Marktplatz Sichtbarkeit bei Neukunden – dafür zahlst du pro
+              Neukunde. Treatflow ist kein Marktplatz: Du gewinnst Kunden über deine eigenen Kanäle und zahlst nur den Festpreis.
+            </p>
           </div>
         </section>
 

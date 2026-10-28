@@ -112,12 +112,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
-            url: `${baseUrl}/kosmetikstudio-kasse`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
             url: `${baseUrl}/kassensystem-kosmetikstudio-deutschland`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
@@ -244,6 +238,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         // Neue Branchen-Seiten
+        {
+            url: `${baseUrl}/fusspflege-software`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
         {
             url: `${baseUrl}/nagelstudio-software`,
             lastModified: new Date(),

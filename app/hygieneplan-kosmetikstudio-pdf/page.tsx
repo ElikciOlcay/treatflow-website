@@ -13,7 +13,7 @@ import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "../components/AiAnswerCap
 export const metadata: Metadata = {
     title: "Hygieneplan Kosmetikstudio PDF: Kostenlose Vorlage",
     description:
-        "Hygieneplan Kosmetikstudio als PDF-Vorlage kostenlos herunterladen. Muster für Kosmetikstudios, Nagelstudios und Beauty-Studios. Sofort einsetzbar.",
+        "Hygieneplan Kosmetikstudio als PDF-Vorlage kostenlos herunterladen. Muster für Kosmetikstudios, Nagelstudios, Fußpflege und Beauty-Studios. Sofort einsetzbar.",
     keywords: [
         "hygieneplan kosmetikstudio pdf",
         "hygieneplan kosmetikstudio vorlage",
@@ -540,6 +540,53 @@ export default function HygieneplanKosmetikstudioPdfPage() {
                     <p className="text-gray-600 mt-6">
                         Tipp: Die Vorlage eignet sich ebenso als Muster-Hygieneplan für Fußpflege-,
                         Permanent-Makeup- und Tattoo-Studios – passe sie einfach an deine Behandlungen an.
+                    </p>
+                </div>
+            </section>
+
+            {/* Hygieneplan Fußpflege */}
+            <section className="py-20 bg-gray-50">
+                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex items-center gap-3 mb-4">
+                        <Scissors className="h-6 w-6 text-blue-600" />
+                        <h2 className="text-3xl font-bold text-gray-900">Hygieneplan für die Fußpflege</h2>
+                    </div>
+                    <p className="text-gray-600 mb-8 max-w-3xl">
+                        In der kosmetischen und mobilen Fußpflege wird mit Skalpell, Hornhauthobel und Fräsern
+                        gearbeitet – kleine Verletzungen und Pilzinfektionen sind ein reales Risiko. Die
+                        PDF-Vorlage lässt sich als Muster-Hygieneplan für die Fußpflege verwenden, wenn du diese
+                        Punkte ergänzt:
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-6 mb-8">
+                        {[
+                            {
+                                title: "Instrumente aufbereiten",
+                                description: "Zangen, Hautmesser und Fräsaufsätze nach jeder Kundin reinigen, desinfizieren und – wenn Haut verletzt werden kann – sterilisieren. Skalpellklingen sind Einmalartikel.",
+                            },
+                            {
+                                title: "Fußbad und Wanne",
+                                description: "Fußbad bzw. Wanne nach jeder Kundin entleeren, reinigen und desinfizieren. Einmal-Einlagen reduzieren den Aufwand.",
+                            },
+                            {
+                                title: "Mobile Fußpflege",
+                                description: "Für Hausbesuche: geschlossene Transportboxen für saubere und gebrauchte Instrumente, Händedesinfektion vor Ort und eine Unterlage für den Arbeitsplatz.",
+                            },
+                            {
+                                title: "Pilz und Wunden dokumentieren",
+                                description: "Auffälligkeiten wie Nagelpilz, Wunden oder Diabetes-Hinweise in der Kundenkartei festhalten und bei Bedarf an Podologie oder Arzt verweisen.",
+                            },
+                        ].map((item) => (
+                            <div key={item.title} className="bg-white border border-gray-100 rounded-2xl p-6">
+                                <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
+                                <p className="text-gray-700 text-sm leading-relaxed">{item.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <p className="text-gray-600">
+                        Kundenkartei, Termine und Hygiene-Doku digital führen? Mehr dazu auf unserer Seite{" "}
+                        <Link href="/fusspflege-software" className="text-blue-600 hover:text-blue-700 underline underline-offset-4">
+                            Software für Fußpflege
+                        </Link>.
                     </p>
                 </div>
             </section>

@@ -19,12 +19,13 @@ const faqs = [
     { question: 'Kann ich Kundenvorlieben wie Farben und Formen speichern?', answer: 'Ja, du kannst für jede Kundin individuelle Notizen, Lieblingsfarben, Nagelform und weitere Vorlieben speichern. So bist du bei jedem Termin bestens vorbereitet.' },
     { question: 'Können meine Kundinnen online Termine buchen?', answer: 'Ja, über deinen persönlichen Buchungslink können Kundinnen rund um die Uhr buchen. Perfekt für deine Instagram-Bio oder Website.' },
     { question: 'Funktioniert die Software für mehrere Mitarbeiter?', answer: 'Ja, du kannst mehrere Nageldesignerinnen mit eigenen Kalendern und Buchungslinks anlegen. Jede hat ihren eigenen Terminplan.' },
-    { question: 'Was kostet Treatflow?', answer: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen - ohne Kreditkarte.' },
+    { question: 'Gibt es eine digitale Kundenkartei fürs Nagelstudio?', answer: 'Ja. Die Kundenkartei speichert pro Kundin Kontaktdaten, Lieblingsfarben, Nagelform, verwendete Produkte, Allergien und Fotos deiner Arbeiten. So bist du bei jedem Termin vorbereitet – auch wenn eine Kollegin übernimmt.' },
+    { question: 'Was kostet Treatflow?', answer: 'Die Kundenkartei mit Formularen startet im Basic-Plan ab 39 EUR im Monat, Terminkalender und Online-Buchung gibt es im Booking-Plan ab 59 EUR im Monat (zzgl. MwSt.). Du kannst alle Funktionen 14 Tage kostenlos testen – ohne Kreditkarte.' },
 ];
 
 export const metadata = {
-    title: 'Nagelstudio Software: Termine & Verwaltung',
-    description: 'Software für Nagelstudios. Online-Terminbuchung, Kundenverwaltung, digitale Formulare und automatische Erinnerungen. 14 Tage gratis testen.',
+    title: 'Nagelstudio Software: Termine & Kundenkartei',
+    description: 'Software für Nagelstudios: Online-Terminbuchung, digitale Kundenkartei mit Farben, Formen und Allergien, Formulare und WhatsApp-Erinnerungen. Ohne Provision, 14 Tage gratis testen.',
     keywords: [
         'Nagelstudio Software',
         'Software für Nagelstudios',
@@ -33,6 +34,7 @@ export const metadata = {
         'Nageldesign Software',
         'Nagelstudio Online Buchung',
         'Nagelstudio Kundenverwaltung',
+        'Kundenkartei Nagelstudio',
         'Nail Studio Software',
         'Maniküre Software',
         'Nagelstudio Management',
