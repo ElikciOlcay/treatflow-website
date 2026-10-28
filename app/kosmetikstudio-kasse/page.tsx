@@ -19,7 +19,8 @@ export const metadata = {
         'mobile Kasse Kosmetik', 'Kasse ohne Provision', 'cloudbasierte Kasse Studio',
     ],
     alternates: {
-        canonical: 'https://www.treatflow.io/kosmetikstudio-kasse',
+        // Konsolidiert: Kassen-Keywords bündeln auf der Hauptseite (Kannibalisierung, GSC Okt 2026)
+        canonical: 'https://www.treatflow.io/kassensystem-kosmetikstudio',
     },
     openGraph: {
         type: 'website',

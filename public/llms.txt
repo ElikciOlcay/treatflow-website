@@ -60,6 +60,7 @@
 - Ästhetische Medizin: https://www.treatflow.io/aesthetische-medizin-software
 - Tattoo Studios: https://www.treatflow.io/tattoo-studio-software
 - Nagelstudios: https://www.treatflow.io/nagelstudio-software
+- Fußpflege (kosmetisch & mobil): https://www.treatflow.io/fusspflege-software
 - Lash Studios: https://www.treatflow.io/lash-studio-software
 - Spa & Wellness: https://www.treatflow.io/spa-wellness-software
 - Massage-Praxen: https://www.treatflow.io/massage-software
@@ -186,6 +187,7 @@ Treatflow ist ideal für:
 - Ästhetische Medizin: https://www.treatflow.io/aesthetische-medizin-software
 - Tattoo Studios: https://www.treatflow.io/tattoo-studio-software
 - Nagelstudios: https://www.treatflow.io/nagelstudio-software
+- Fußpflege (kosmetisch & mobil): https://www.treatflow.io/fusspflege-software
 - Lash Studios: https://www.treatflow.io/lash-studio-software
 - Spa & Wellness: https://www.treatflow.io/spa-wellness-software
 - Massage: https://www.treatflow.io/massage-software

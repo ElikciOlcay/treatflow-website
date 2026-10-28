@@ -18,10 +18,10 @@ import {
 } from '../components/FeatureSections';
 
 export const metadata = {
-    title: 'Kassensystem für Kosmetikstudios – TSE & RKSV konform',
-    description: 'Treatflow Kasse: TSE-konforme Kassensoftware (KassenSichV) für Deutschland und RKSV-Registrierkasse für Österreich. Mit SumUp Solo Kartenterminal, Belegen mit QR-Code, Gutscheinen und DSFinV-K-/DEP7-Export. Ab 39 €/Monat als Add-on.',
+    title: 'Kassensystem Kosmetikstudio: TSE- & RKSV-Kasse ab 39 €',
+    description: 'Kassensystem für Kosmetik- und Beautystudios: TSE-Kasse (DE) und RKSV-Registrierkasse (AT), direkt aus dem Termin kassieren, SumUp-Kartenzahlung, Gutscheine, Steuerberater-Export. Ohne Transaktionsgebühr. Treatflow Kasse: TSE-konforme Kassensoftware (KassenSichV) für Deutschland und RKSV-Registrierkasse für Österreich. Mit SumUp Solo Kartenterminal, Belegen mit QR-Code, Gutscheinen und DSFinV-K-/DEP7-Export. Ab 39 €/Monat als Add-on.',
     keywords: [
-        'Kassensystem Kosmetikstudio', 'Kassensoftware Kosmetikstudio', 'TSE Kasse Kosmetik',
+        'Kassensystem Kosmetikstudio', 'Kassensystem Kosmetik', 'Kassensysteme für Kosmetikstudios', 'Kosmetikstudio Kassensystem', 'Kassensoftware Kosmetikstudio', 'TSE Kasse Kosmetik',
         'Registrierkasse Kosmetikstudio', 'RKSV Kasse Österreich', 'KassenSichV Kasse',
         'Kasse Beauty Salon', 'Kassensystem Friseur', 'Kasse mit Terminbuchung',
         'GoBD konforme Kasse', 'DSFinV-K Export', 'Gutscheinverwaltung Kasse',
@@ -38,7 +38,7 @@ export const metadata = {
         type: 'website',
         locale: 'de_DE',
         siteName: 'Treatflow',
-        title: 'Kassensystem für Kosmetikstudios – TSE & RKSV konform',
+        title: 'Kassensystem Kosmetikstudio: TSE- & RKSV-Kasse',
         description: 'TSE-konforme Kasse (DE) und RKSV-Registrierkasse (AT) mit SumUp Kartenterminal. Kassieren aus dem Termin, fiskalkonforme Belege, Gutscheine und Steuerberater-Export.',
         url: 'https://www.treatflow.io/kassensystem-kosmetikstudio',
         images: [
@@ -227,8 +227,8 @@ export default function KassensystemPage() {
                 ]}
                 eyebrow="Kassensystem"
                 eyebrowIcon={Receipt}
-                title={<>Kasse mit <FeatureTitleHighlight theme="indigo">TSE & RKSV</FeatureTitleHighlight></>}
-                description="Direkt aus dem Termin kassieren – SumUp Solo, fiskalkonforme Belege und Export für den Steuerberater."
+                title={<>Kassensystem fürs Kosmetikstudio – mit <FeatureTitleHighlight theme="indigo">TSE & RKSV</FeatureTitleHighlight></>}
+                description="Das Kassensystem für Kosmetik- und Beautystudios: direkt aus dem Termin kassieren – SumUp Solo, fiskalkonforme Belege und Export für den Steuerberater."
                 chips={['TSE & RKSV inklusive', 'SumUp Solo integriert', 'Ohne Transaktionsgebühr']}
                 secondaryCta={{ label: 'SumUp-Integration', href: '/integrationen' }}
                 aiCapsule={{
@@ -358,7 +358,7 @@ export default function KassensystemPage() {
 
             <SocialProofBar />
 
-            <FeatureFaq title="Häufige Fragen zur Kasse" items={faqs} />
+            <FeatureFaq title="Häufige Fragen zum Kassensystem fürs Kosmetikstudio" items={faqs} />
 
             <FeatureRelated
                 items={[

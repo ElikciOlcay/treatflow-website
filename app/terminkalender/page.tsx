@@ -16,19 +16,19 @@ import {
 import { buildHreflangAlternates } from '../i18n/seo';
 import { generateWebPageSchema } from '@/lib/content-attribution';
 
-const PAGE_DATE_MODIFIED = '2026-08-18';
+const PAGE_DATE_MODIFIED = '2026-10-28';
 const PAGE_DATE_PUBLISHED = '2024-06-01';
 
 export const metadata = {
-    title: 'Terminkalender Kosmetikstudio: Team & Räume planen',
-    description: 'Terminplaner fürs Kosmetikstudio mit Tagesansicht für Mitarbeiter und Räume, Drag & Drop, Online-Buchung und automatischen Erinnerungen. Auslastung planen und Doppelbelegungen vermeiden.',
-    keywords: ['Terminsoftware Kosmetikstudio', 'Terminplaner Kosmetikstudio', 'Terminplaner für Kosmetikstudio', 'Terminkalender Kosmetikstudio', 'Tagesansicht Mitarbeiter', 'Raumplanung Kosmetikstudio', 'Mitarbeiter Auslastung planen', 'Drag and Drop Terminplaner', 'Kosmetikstudio Terminverwaltung', 'Terminbuchungssoftware Kosmetiker'],
+    title: 'Terminplaner Kosmetikstudio: Software für Team & Räume',
+    description: 'Terminplaner-Software fürs Kosmetikstudio: Terminkalender mit Spalten für Mitarbeiter und Räume, Online-Buchung, Drag & Drop und WhatsApp-Erinnerungen. Ohne Provision, 14 Tage gratis testen.',
+    keywords: ['Terminplaner Kosmetikstudio', 'Terminplaner Software Kosmetikstudio', 'Terminplaner Kosmetik', 'Terminplaner Kosmetik kostenlos', 'Terminsoftware Kosmetikstudio', 'Buchungssystem Kosmetikstudio', 'Terminplaner für Kosmetikstudio', 'Terminkalender Kosmetikstudio', 'Tagesansicht Mitarbeiter', 'Raumplanung Kosmetikstudio', 'Mitarbeiter Auslastung planen', 'Drag and Drop Terminplaner', 'Kosmetikstudio Terminverwaltung', 'Terminbuchungssoftware Kosmetiker'],
     alternates: {
         canonical: 'https://www.treatflow.io/terminkalender',
         ...buildHreflangAlternates('appointment-calendar'),
     },
     openGraph: {
-        title: 'Terminkalender für Team & Räume',
+        title: 'Terminplaner fürs Kosmetikstudio – Team & Räume',
         description: 'Plane Mitarbeiter, Räume und Termine übersichtlich in einer Tagesansicht – mit Drag & Drop, Online-Buchungen und automatischen Erinnerungen.',
         url: 'https://www.treatflow.io/terminkalender',
         images: [{ url: '/images/mockups/kalender-overview.png', width: 1200, height: 630, alt: 'Treatflow Terminkalender Interface' }],
@@ -42,7 +42,15 @@ const faqs = [
     },
     {
         question: 'Was kostet eine Terminsoftware für Kosmetikstudios?',
-        answer: 'Treatflow bietet Terminverwaltung mit Online-Buchungen ab 59 EUR pro Monat im Booking-Plan. 14 Tage kostenlos testen, keine Kreditkarte nötig. Es gibt keine versteckten Kosten oder Provisionen pro Buchung.',
+        answer: 'Treatflow bietet Terminverwaltung mit Online-Buchungen ab 59 EUR pro Monat im Booking-Plan (53 EUR bei jährlicher Zahlung, zzgl. MwSt.). 14 Tage kostenlos testen, keine Kreditkarte nötig. Es gibt keine versteckten Kosten oder Provisionen pro Buchung.',
+    },
+    {
+        question: 'Gibt es einen kostenlosen Terminplaner für Kosmetikstudios?',
+        answer: 'Kostenlose Terminplaner gibt es – meist mit Einschränkungen, Werbung oder Provisionen pro Buchung über ein Marktplatz-Modell. Ein reiner Papier- oder Excel-Terminplaner ist zwar gratis, kann aber keine Online-Buchung, keine Erinnerungen und keine Verbindung zur Kundenkartei. Treatflow kannst du 14 Tage kostenlos und ohne Kreditkarte testen; danach kostet der Terminplaner mit Online-Buchung 59 EUR pro Monat, ohne Provision pro Termin.',
+    },
+    {
+        question: 'Terminplaner, Terminkalender oder Buchungssystem – was ist der Unterschied?',
+        answer: 'Im Studioalltag meinen alle drei Begriffe fast dasselbe: Der Terminplaner bzw. Terminkalender ist die Ansicht, in der du und dein Team die Termine verwalten. Das Buchungssystem ist der Teil, über den Kundinnen selbst online buchen. In Treatflow ist beides eins – Online-Buchungen landen direkt im Terminplaner, inklusive Erinnerung und Kundenkartei.',
     },
     {
         question: 'Können meine Kunden online Termine buchen?',
@@ -83,7 +91,7 @@ const faqSchema = {
 const softwareSchema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: 'Treatflow Terminkalender',
+    name: 'Treatflow Terminplaner für Kosmetikstudios',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     description: 'Terminkalender für Kosmetikstudios mit Mitarbeiter- und Raumspalten, Drag & Drop, Online-Buchung und automatischen Erinnerungen.',
@@ -96,7 +104,7 @@ const softwareSchema = {
         'Tages-, Wochen- und Monatsansicht',
         'Online-Buchung und automatische Erinnerungen',
     ],
-    offers: { '@type': 'Offer', price: '39', priceCurrency: 'EUR' },
+    offers: { '@type': 'Offer', price: '59', priceCurrency: 'EUR' },
     aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: '4.6',
@@ -127,7 +135,7 @@ export default function TerminkalenderPage() {
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(
                         generateWebPageSchema({
-                            name: 'Terminkalender Kosmetikstudio: Team & Räume planen',
+                            name: 'Terminplaner Kosmetikstudio: Software für Team & Räume',
                             description: 'Terminplaner fürs Kosmetikstudio mit Tagesansicht für Mitarbeiter und Räume, Drag & Drop, Online-Buchung und automatischen Erinnerungen.',
                             url: 'https://www.treatflow.io/terminkalender',
                             dateModified: PAGE_DATE_MODIFIED,
@@ -144,10 +152,10 @@ export default function TerminkalenderPage() {
                     { label: 'Funktionen', href: '/funktionen' },
                     { label: 'Terminkalender' },
                 ]}
-                eyebrow="Terminkalender"
+                eyebrow="Terminplaner & Terminkalender"
                 eyebrowIcon={Calendar}
-                title={<>Termine für Team und <FeatureTitleHighlight>Räume</FeatureTitleHighlight></>}
-                description="Mitarbeiter, Räume und Termine in einer Ansicht. Per Drag & Drop umplanen und Doppelbelegungen vermeiden."
+                title={<>Terminplaner fürs Kosmetikstudio – für Team und <FeatureTitleHighlight>Räume</FeatureTitleHighlight></>}
+                description="Der Terminplaner für dein Kosmetikstudio: Mitarbeiter, Räume und Termine in einer Ansicht, Online-Buchung inklusive. Per Drag & Drop umplanen und Doppelbelegungen vermeiden."
                 chips={['Drag & Drop', 'Team & Räume', 'Weniger No-Shows']}
                 secondaryCta={{ label: 'Online-Buchungen', href: '/online-buchungen' }}
                 aiCapsules={[
@@ -170,7 +178,7 @@ export default function TerminkalenderPage() {
 
             <FeatureUnderstand
                 theme="indigo"
-                title="Dein digitaler Terminplan für das ganze Studio"
+                title="Terminplaner-Software für das ganze Studio"
                 description="Alle Termine, Mitarbeiter und Räume auf einen Blick – du siehst sofort, wer wann frei ist."
                 items={[
                     {
@@ -217,7 +225,7 @@ export default function TerminkalenderPage() {
 
             <SocialProofBar />
 
-            <FeatureFaq title="Häufige Fragen zur Terminplanung" items={faqs} />
+            <FeatureFaq title="Häufige Fragen zum Terminplaner fürs Kosmetikstudio" items={faqs} />
 
             <FeatureRelated
                 items={[

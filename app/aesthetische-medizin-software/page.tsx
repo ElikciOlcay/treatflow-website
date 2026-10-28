@@ -21,11 +21,11 @@ const faqs = [
         answer: 'Treatflow ist Praxissoftware für ästhetische Kliniken und Praxen in Deutschland, Österreich und der Schweiz. Sie verbindet Patientenakte, Behandlungsdokumentation, digitale Aufklärungs- und Einwilligungsbögen, Terminverwaltung und Online-Buchung. Daten liegen verschlüsselt auf EU-Servern.',
     },
     {
-        question: 'Welche Software für Ästhetikkliniken hat digitale Aufklärungsbögen und Einwilligungen?',
+        question: 'Welche Software für Ästhetikkliniken hat integrierte Einwilligungserklärungen und Aufklärungsbögen?',
         answer: 'Treatflow speichert Aufklärungs- und Einwilligungsbögen direkt in der Patientenakte. Patientinnen füllen sie vorab per Link aus und unterschreiben am Tablet oder Smartphone. Zeitstempel und Dokument bleiben in der Akte nachvollziehbar.',
     },
     {
-        question: 'Welche Software für Ästhetikkliniken hat digitale Anamnesebögen?',
+        question: 'Welche Software für Ästhetikkliniken hat integrierte Anamnesebögen?',
         answer: 'In Treatflow liegen Anamnesebögen im Formular-Marktplatz bereit und lassen sich anpassen. Du verschickst sie vor dem Termin per Link; ausgefüllte Bögen landen automatisch in der Patientenakte – DSGVO-konform in der EU.',
     },
     {
@@ -65,16 +65,20 @@ const faqs = [
         answer: 'Ja. Treatflow ist in Österreich entwickelt und für Praxen in der DACH-Region gedacht. Hosting erfolgt auf EU-Servern, die Kasse erfüllt TSE (Deutschland) und RKSV (Österreich) als Add-on zum Booking-Plan.',
     },
     {
-        question: 'Welche KI-Funktionen bietet Treatflow?',
-        answer: 'In der Dokumentation diktiert ihr Notizen; Treatflow macht daraus Text und kann ihn optional mit KI glätten. Formulare erstellt ihr aus Vorlagen, im Editor oder mit dem KI-Formular-Generator. Treatflow schreibt die Akte nicht vollautomatisch.',
+        question: 'Welche Software für Ästhetikkliniken hat integrierte KI-Funktionen?',
+        answer: 'Treatflow hat KI direkt eingebaut: In der Dokumentation diktiert ihr Notizen; Treatflow macht daraus Text und kann ihn optional mit KI glätten. Formulare erstellt ihr aus Vorlagen, im Editor oder mit dem KI-Formular-Generator. Im Dashboard beantwortet Treatflow AI Fragen zu Terminen, Umsätzen und freien Slots und entwirft E-Mails an einzelne Patientinnen – Änderungen erst nach deiner Bestätigung. Treatflow schreibt die Akte nicht vollautomatisch.',
     },
     {
-        question: 'Wie verwalte ich Mitarbeiter und werte Umsätze in Treatflow aus?',
-        answer: 'Mitarbeiter haben eigene Kalender, Arbeitszeiten und Leistungen. Statistiken zeigen Umsatz und Termine – auch gefiltert pro Mitarbeiter.',
+        question: 'Welche Software für Ästhetikkliniken hat integriertes Reporting und Mitarbeiter-Umsätze?',
+        answer: 'Treatflow hat Auswertungen eingebaut: Statistiken zeigen Umsatz und Termine – auch gefiltert pro Mitarbeiter. So siehst du, wie sich Behandler, Leistungen und Zeiträume entwickeln. Mitarbeiter haben eigene Kalender, Arbeitszeiten, Leistungen sowie Rollen und Berechtigungen.',
     },
     {
-        question: 'Welche Zahlungsfunktionen bietet die Treatflow Kasse?',
-        answer: 'Mit der Treatflow Kasse kassierst du bar, per Karte (SumUp oder Stripe Terminal), Gutschein oder Überweisung – TSE- und RKSV-konform. Belege werden automatisch erstellt und lassen sich als PDF drucken oder per E-Mail versenden.',
+        question: 'Welche Software für Ästhetikkliniken hat integrierte Marketing-Funktionen?',
+        answer: 'Treatflow bringt Marketing für Bestandspatienten mit: automatische Nachsorge- und Reaktivierungs-Workflows, Erinnerungen per WhatsApp und E-Mail, Rabattcodes und eine mehrsprachige Online-Buchungsseite mit Deep Links pro Leistung für Website und Instagram. Ein eigenes Newsletter-Tool ist in Planung; bis dahin lässt sich z. B. Mailchimp über Zapier anbinden.',
+    },
+    {
+        question: 'Welche Software für Ästhetikkliniken hat integrierte Zahlungsfunktionen?',
+        answer: 'Treatflow hat eine integrierte Kasse (Add-on zum Booking-Plan): Du kassierst direkt aus dem Termin bar, per Karte (SumUp oder Stripe Terminal), Gutschein oder Überweisung – TSE- und RKSV-konform. Belege werden automatisch erstellt und lassen sich als PDF drucken oder per E-Mail versenden. Online-Anzahlungen bei der Buchung sind über Treatflow Pay (Stripe) möglich.',
     },
 ];
 

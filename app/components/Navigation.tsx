@@ -1,6 +1,6 @@
 import {
     ChevronDown, Sparkles, Zap, Palette,
-    Stethoscope, Pen, Gem, Eye, Waves, Hand
+    Stethoscope, Pen, Gem, Eye, Waves, Hand, Footprints
 } from "lucide-react";
 import Link from 'next/link';
 import MobileMenu from "./MobileMenu";
@@ -32,6 +32,7 @@ const branchen = [
     { href: '/aesthetische-medizin-software', label: 'Ästhetische Medizin', desc: 'Praxis- und Patientenverwaltung', icon: Stethoscope, color: 'text-teal-600 bg-teal-100' },
     { href: '/tattoo-studio-software', label: 'Tattoo Studios', desc: 'Einwilligungen und Buchungen', icon: Pen, color: 'text-gray-600 bg-gray-200' },
     { href: '/nagelstudio-software', label: 'Nagelstudios', desc: 'Termine und Kundenvorlieben', icon: Gem, color: 'text-pink-600 bg-pink-100' },
+    { href: '/fusspflege-software', label: 'Fußpflege', desc: 'Kundenkartei und Befunde', icon: Footprints, color: 'text-emerald-600 bg-emerald-100' },
     { href: '/lash-studio-software', label: 'Lash Studios', desc: 'Wimpern und Refill-Planung', icon: Eye, color: 'text-violet-600 bg-violet-100' },
     { href: '/spa-wellness-software', label: 'Spa & Wellness', desc: 'Gästeverwaltung und Buchungen', icon: Waves, color: 'text-cyan-600 bg-cyan-100' },
     { href: '/massage-software', label: 'Massage-Praxen', desc: 'Termine und Gesundheitsfragebögen', icon: Hand, color: 'text-amber-600 bg-amber-100' },

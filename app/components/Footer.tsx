@@ -62,6 +62,7 @@ export default function Footer() {
               <li><Link href="/permanent-makeup-software" className="text-gray-400 hover:text-white transition-colors">Permanent Makeup</Link></li>
               <li><Link href="/aesthetische-medizin-software" className="text-gray-400 hover:text-white transition-colors">Ästhetische Medizin</Link></li>
               <li><Link href="/nagelstudio-software" className="text-gray-400 hover:text-white transition-colors">Nagelstudios</Link></li>
+              <li><Link href="/fusspflege-software" className="text-gray-400 hover:text-white transition-colors">Fußpflege</Link></li>
               <li><Link href="/lash-studio-software" className="text-gray-400 hover:text-white transition-colors">Lash Studios</Link></li>
               <li><Link href="/tattoo-studio-software" className="text-gray-400 hover:text-white transition-colors">Tattoo Studios</Link></li>
               <li><Link href="/spa-wellness-software" className="text-gray-400 hover:text-white transition-colors">Spa & Wellness</Link></li>
