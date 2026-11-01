@@ -4,6 +4,7 @@ import { getDictionaryForMarket } from "@/app/i18n/dictionaries";
 import {
   BASE_URL,
   htmlLangTags,
+  isBundleLang,
   isPrefixedMarket,
   marketPathPrefix,
   ogLocaleTags,
@@ -14,8 +15,82 @@ import NavigationEn from "@/app/components/NavigationEn";
 import FooterEn from "@/app/components/FooterEn";
 import HtmlLang from "@/app/components/HtmlLang";
 import { countryHomeMeta } from "@/app/i18n/markets/country-homes";
+import { getLocaleContent } from "@/app/i18n/locales";
+
+/** Kurzbeschreibung + Liefergebiet je Bundle-Sprache (Organization/WebSite JSON-LD). */
+const bundleOrgMeta: Record<
+  "nl" | "it" | "pl" | "es" | "fr",
+  { org: string; site: string; areaServed: string[] }
+> = {
+  nl: {
+    org: "Salonsoftware voor schoonheidssalons, esthetische klinieken en behandelstudio's: online afspraken, klantendossiers, digitale intakeformulieren en behandeldocumentatie. Gehost in de EU, AVG-proof.",
+    site: "Alles-in-één software voor schoonheidssalons en esthetische klinieken.",
+    areaServed: ["NL", "BE"],
+  },
+  it: {
+    org: "Gestionale per centri estetici, studi di medicina estetica e centri di trattamento: prenotazioni online, schede clienti, moduli di consenso digitali e documentazione dei trattamenti. Server nell'UE, conforme al GDPR.",
+    site: "Software tutto-in-uno per centri estetici e studi di medicina estetica.",
+    areaServed: ["IT"],
+  },
+  pl: {
+    org: "Program do salonów kosmetycznych, gabinetów medycyny estetycznej i studiów zabiegowych: rezerwacje online, kartoteka klientów, cyfrowe formularze zgody i dokumentacja zabiegów. Serwery w UE, zgodność z RODO.",
+    site: "Kompleksowy program dla salonów kosmetycznych i gabinetów medycyny estetycznej.",
+    areaServed: ["PL"],
+  },
+  es: {
+    org: "Software para centros de estética, clínicas de medicina estética y centros de tratamiento: reservas online, fichas de clientes, formularios de consentimiento digitales y documentación de tratamientos. Alojado en la UE, conforme al RGPD.",
+    site: "Software todo en uno para centros de estética y clínicas estéticas.",
+    areaServed: ["ES"],
+  },
+  fr: {
+    org: "Logiciel pour instituts de beauté, cliniques de médecine esthétique et centres de soins : réservation en ligne, fiches clientes, formulaires de consentement numériques et suivi des soins. Hébergé dans l'UE, conforme au RGPD.",
+    site: "Logiciel tout-en-un pour instituts de beauté et cliniques esthétiques.",
+    areaServed: ["FR", "BE", "LU", "CH"],
+  },
+};
+
+const allSiteLanguages = ["de", "en", "nl", "it", "pl", "es", "fr", "tr"];
 
 function organizationSchema(market: PrefixedMarket) {
+  if (isBundleLang(market)) {
+    const meta = bundleOrgMeta[market];
+    const lang = htmlLangTags[market];
+    return {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": `${BASE_URL}/${market}#organization`,
+          name: "Treatflow",
+          url: BASE_URL,
+          logo: {
+            "@type": "ImageObject",
+            url: `${BASE_URL}/images/logos/treatflow-logo.svg`,
+          },
+          description: meta.org,
+          foundingLocation: { "@type": "Place", name: "Austria" },
+          knowsLanguage: allSiteLanguages,
+          sameAs: ["https://www.instagram.com/treatflow.io/"],
+          contactPoint: {
+            "@type": "ContactPoint",
+            contactType: "customer service",
+            email: "hello@treatflow.io",
+            availableLanguage: ["English", "German"],
+            areaServed: meta.areaServed,
+          },
+        },
+        {
+          "@type": "WebSite",
+          "@id": `${BASE_URL}/${market}#website`,
+          url: `${BASE_URL}/${market}`,
+          name: "Treatflow",
+          description: meta.site,
+          publisher: { "@id": `${BASE_URL}/${market}#organization` },
+          inLanguage: lang,
+        },
+      ],
+    };
+  }
   if (market === "tr") {
     return {
       "@context": "https://schema.org",
@@ -92,6 +167,16 @@ const enOrganizationSchema = {
   ],
 };
 
+const languageNames: Record<PrefixedMarket, string> = {
+  en: "English",
+  tr: "Turkish",
+  nl: "Dutch",
+  it: "Italian",
+  pl: "Polish",
+  es: "Spanish",
+  fr: "French",
+};
+
 export function generateStaticParams() {
   return prefixedMarkets.map((market) => ({ market }));
 }
@@ -105,7 +190,9 @@ export async function generateMetadata({
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
   const prefix = marketPathPrefix[market];
-  const homeMeta = countryHomeMeta[market as keyof typeof countryHomeMeta];
+  const homeMeta = isBundleLang(market)
+    ? getLocaleContent(market).homeMeta
+    : countryHomeMeta[market as keyof typeof countryHomeMeta];
   const defaultTitle =
     homeMeta?.title ??
     "Treatflow: All-in-One Software for Beauty Salons & Aesthetic Clinics";
@@ -129,7 +216,7 @@ export async function generateMetadata({
       siteName: "Treatflow",
     },
     other: {
-      language: market === "tr" ? "Turkish" : "English",
+      language: languageNames[market],
     },
   };
 }

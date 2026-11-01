@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, Share2, TrendingUp, Users, CheckCircle, AlertCircle, BarChart3 } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import { blogTopicAlternates } from '@/lib/blog-intl';
 
 
 
@@ -12,9 +13,7 @@ export const metadata: Metadata = {
     description: '30% mehr Buchungen durch Online-Terminvergabe. Warum jedes moderne Kosmetikstudio ein Online-Buchungssystem braucht und wie du das richtige findest.',
     keywords: ["Online Buchung Kosmetik","Terminbuchung Beauty","Kosmetikstudio Software","Beauty Booking System","Online Terminvergabe","Digital Beauty"],
     authors: [{ name: 'Olcay Elikci' }],
-    alternates: {
-        canonical: 'https://www.treatflow.io/blog/online-buchungssystem-vorteile',
-    },
+    alternates: { canonical: 'https://www.treatflow.io/blog/online-buchungssystem-vorteile', languages: blogTopicAlternates('online-booking-salon') },
     openGraph: {
         title: 'Online-Buchungssystem: 7 Vorteile für Kosmetikstudios',
         description: '30% mehr Buchungen durch Online-Terminvergabe. Warum jedes moderne Kosmetikstudio ein Online-Buchungssystem braucht und wie du das richtige findest.',

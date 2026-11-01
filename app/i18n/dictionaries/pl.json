@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "features": "Funkcje",
+    "industries": "Branże",
+    "pricing": "Cennik",
+    "news": "Nowości",
+    "contact": "Kontakt",
+    "login": "Zaloguj się",
+    "tryFree": "Wypróbuj za darmo",
+    "requestAccess": "Wypróbuj za darmo"
+  },
+  "footer": {
+    "tagline": "Twój cyfrowy asystent salonu. Made in Austria.",
+    "features": "Funkcje",
+    "industries": "Branże",
+    "product": "Produkt",
+    "company": "Firma",
+    "legal": "Informacje prawne",
+    "aboutUs": "O nas",
+    "contact": "Kontakt",
+    "pricing": "Cennik",
+    "tryFree": "Wypróbuj za darmo",
+    "requestAccess": "Wypróbuj za darmo",
+    "login": "Zaloguj się",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin",
+    "rights": "Wszelkie prawa zastrzeżone."
+  },
+  "common": {
+    "tryFree": "Wypróbuj za darmo przez 14 dni",
+    "requestAccess": "Wypróbuj za darmo",
+    "bookDemo": "Wypróbuj za darmo",
+    "learnMore": "Dowiedz się więcej",
+    "noCreditCard": "Bez karty kredytowej",
+    "cancelAnytime": "Rezygnacja w każdej chwili",
+    "waitlistNote": "Rozpocznij darmowy okres próbny w kilka minut. Bez karty kredytowej."
+  }
+}

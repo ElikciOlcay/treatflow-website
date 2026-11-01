@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import { buildPageMetadata } from "@/app/i18n/seo";
 import PricingPageIntl from "@/app/components/PricingPageIntl";
 import { getMarketPricingCopy } from "@/app/i18n/markets/market-content";
-import { isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
+import { isBundleLang, isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
+import { getLocaleContent } from "@/app/i18n/locales";
 
 export async function generateMetadata({
   params,
@@ -25,7 +26,9 @@ export async function generateMetadata({
             "salon yazılımı fiyatları",
             "online randevu sistemi fiyat",
           ]
-        : undefined,
+        : isBundleLang(market)
+          ? getLocaleContent(market).pricingKeywords
+          : undefined,
   });
 }
 

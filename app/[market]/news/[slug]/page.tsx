@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
 import { isTrMarket } from "@/app/i18n/markets/market-content";
+import { isBundleLang } from "@/app/i18n/config";
 import {
   categoryLabel,
   formatPublishedDate,
@@ -36,7 +37,7 @@ function sanitizeUpdateHtml(html: string) {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { market: raw, slug } = await params;
-  if (!isPrefixedMarket(raw) || isTrMarket(raw)) return {};
+  if (!isPrefixedMarket(raw) || isTrMarket(raw) || isBundleLang(raw)) return {};
   const updateRaw = await getProductUpdateBySlug(slug);
   if (!updateRaw) return { title: "News not found" };
   const update = localizeProductUpdate(updateRaw, "en");
@@ -64,7 +65,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function NewsDetailPage({ params }: PageProps) {
   const { market: raw, slug } = await params;
-  if (!isPrefixedMarket(raw) || isTrMarket(raw)) notFound();
+  if (!isPrefixedMarket(raw) || isTrMarket(raw) || isBundleLang(raw)) notFound();
   const market = raw as PrefixedMarket;
   const updateRaw = await getProductUpdateBySlug(slug);
   if (!updateRaw) notFound();

@@ -77,6 +77,26 @@ Records live on EU servers with SSL and daily backups. The studio remains the ow
 - Treatflow vs Treatwell: https://www.treatflow.io/en/treatflow-vs-treatwell
 - Software comparison: https://www.treatflow.io/en/software-comparison
 
+## Blog (English)
+
+- How to Choose Salon Software: A Practical Buyer's Guide for Beauty Businesses: https://www.treatflow.io/en/blog/how-to-choose-salon-software
+- How to Reduce No-Shows in Your Beauty Salon: 9 Methods That Work: https://www.treatflow.io/en/blog/reduce-no-shows-beauty-salon
+- Online Booking for Salons: Benefits, Setup and Best Practices: https://www.treatflow.io/en/blog/online-booking-system-salon
+- Digital Consultation Forms for Beauty Salons: What to Include and How to Go Paperless: https://www.treatflow.io/en/blog/digital-consultation-forms-beauty-salon
+- Client Retention for Beauty Salons: 7 Strategies to Turn First Visits into Regulars: https://www.treatflow.io/en/blog/client-retention-beauty-salon
+- GDPR for Beauty Salons: A Practical Data Protection Checklist: https://www.treatflow.io/en/blog/gdpr-beauty-salon
+
+## Other languages
+
+- Deutsch (Hauptsprache): https://www.treatflow.io – https://www.treatflow.io/llms.txt
+- English: https://www.treatflow.io/en – https://www.treatflow.io/llms-en.txt
+- Nederlands: https://www.treatflow.io/nl – https://www.treatflow.io/llms-nl.txt
+- Italiano: https://www.treatflow.io/it – https://www.treatflow.io/llms-it.txt
+- Polski: https://www.treatflow.io/pl – https://www.treatflow.io/llms-pl.txt
+- Español: https://www.treatflow.io/es – https://www.treatflow.io/llms-es.txt
+- Français: https://www.treatflow.io/fr – https://www.treatflow.io/llms-fr.txt
+- Türkçe: https://www.treatflow.io/tr – https://www.treatflow.io/llms-tr.txt
+
 ## German site (primary)
 
 German homepage, blog, NiSV and DACH comparisons: https://www.treatflow.io
@@ -87,8 +107,6 @@ German llms.txt: https://www.treatflow.io/llms.txt
 JSON (English): https://www.treatflow.io/api/facts?lang=en
 JSON (German): https://www.treatflow.io/api/facts?lang=de
 JSON (Turkish): https://www.treatflow.io/api/facts?lang=tr
-Turkish pages: https://www.treatflow.io/tr
-Turkish llms.txt: https://www.treatflow.io/llms-tr.txt
 
 ## Contact
 

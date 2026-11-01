@@ -6,13 +6,14 @@ import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, Share2, Bell, CheckCircle } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 import LeadMagnetEmbed from '../../components/LeadMagnetEmbed';
+import { blogTopicAlternates } from '@/lib/blog-intl';
 
 export const metadata: Metadata = {
     title: 'No-Shows im Kosmetikstudio reduzieren',
     description: 'Leere Stühle nerven. Mit Erinnerungen, Buchungsbestätigung und ein paar Kniffen senkst du verpasste Termine spürbar – ohne Aufwand.',
     keywords: ['No-Show Kosmetikstudio', 'Terminerinnerung', 'SMS Erinnerung Beauty', 'Absagequote senken', 'Kosmetik Termin'],
     authors: [{ name: 'Olcay Elikci' }],
-    alternates: { canonical: 'https://www.treatflow.io/blog/no-shows-reduzieren-kosmetikstudio' },
+    alternates: { canonical: 'https://www.treatflow.io/blog/no-shows-reduzieren-kosmetikstudio', languages: blogTopicAlternates('reduce-no-shows') },
     openGraph: {
         title: 'No-Shows im Kosmetikstudio reduzieren: Was wirklich hilft',
         description: 'Mit Erinnerungen und der richtigen Abläufe senkst du verpasste Termine spürbar.',

@@ -6,14 +6,17 @@ import Breadcrumbs, { generateBreadcrumbSchema } from "./Breadcrumbs";
 import FaqSectionEn from "./FaqSectionEn";
 import TreatmentWorkflow from "./TreatmentWorkflow";
 import { getFeaturesOverview } from "@/app/i18n/markets/features-overview";
-import type { PrefixedMarket } from "@/app/i18n/config";
+import { htmlLangTags, type PrefixedMarket } from "@/app/i18n/config";
+import { getUiChrome } from "@/app/i18n/markets/ui-chrome";
 
 export default function FeaturesPageEn({ market = "en" }: { market?: PrefixedMarket }) {
   const content = getFeaturesOverview(market);
+  const chrome = getUiChrome(market);
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: market === "tr" ? "Treatflow özellikleri" : "Treatflow features",
+    name: chrome.featuresListName,
+    inLanguage: htmlLangTags[market],
     itemListElement: content.cards.map((card, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -31,7 +34,7 @@ export default function FeaturesPageEn({ market = "en" }: { market?: PrefixedMar
             generateBreadcrumbSchema(
               [{ label: content.breadcrumbLabel }],
               content.homeHref,
-              market === "tr" ? "Ana sayfa" : "Home"
+              chrome.homeSrOnly
             )
           ),
         }}
@@ -42,7 +45,7 @@ export default function FeaturesPageEn({ market = "en" }: { market?: PrefixedMar
       />
       <Breadcrumbs
         homeHref={content.homeHref}
-        homeLabel={market === "tr" ? "Ana sayfa" : "Home"}
+        homeLabel={chrome.homeSrOnly}
         items={[{ label: content.breadcrumbLabel }]}
       />
 

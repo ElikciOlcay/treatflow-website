@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, CheckCircle, Star, Zap, Shield, Users, Smartphone } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import { blogTopicAlternates } from '@/lib/blog-intl';
 
 export const metadata: Metadata = {
     title: 'Beste Kosmetikstudio Software 2026: Vergleich',
@@ -17,9 +18,7 @@ export const metadata: Metadata = {
         'Studio Management Software',
     ],
     authors: [{ name: 'Olcay Elikci' }],
-    alternates: {
-        canonical: 'https://www.treatflow.io/blog/beste-kosmetikstudio-software-2026',
-    },
+    alternates: { canonical: 'https://www.treatflow.io/blog/beste-kosmetikstudio-software-2026', languages: blogTopicAlternates('choose-salon-software') },
     openGraph: {
         title: 'Beste Kosmetikstudio Software 2026 im Vergleich',
         description: 'Welche Software eignet sich am besten für dein Kosmetikstudio? Wir vergleichen die besten Lösungen 2026.',

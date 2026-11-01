@@ -4,6 +4,16 @@ import { DEMO_FORMS } from '@/lib/demoForms'
 import { buildHreflangAlternates, seoPageSlugs, type SeoPageKey } from '@/app/i18n/seo'
 import { TR_PATHS } from '@/app/i18n/tr-seo/paths'
 import { trGuides } from '@/app/i18n/tr-seo/guides'
+import { contentLanguages, marketPathPrefix, prefixedMarkets, type PrefixedMarket } from '@/app/i18n/config'
+import {
+    allBlogPosts,
+    blogIndexAlternates,
+    blogIndexUrl,
+    blogPostUrl,
+    blogTopicAlternates,
+    getBlogPosts,
+    topicForDeSlug,
+} from '@/lib/blog-intl'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://www.treatflow.io'
@@ -461,13 +471,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { key: 'software-comparison', priority: 0.85 },
     ]
 
-    const localePrefixes = {
-        en: '/en',
-        tr: '/tr',
-    } as const
-
-    function localeRoutes(locale: keyof typeof localePrefixes) {
-        const prefix = localePrefixes[locale]
+    function localeRoutes(locale: PrefixedMarket) {
+        const prefix = marketPathPrefix[locale]
         const home = internationalEntry(prefix, 'home', 0.9)
         const rest = [...sharedKeys, ...featureAndIndustryKeys]
             .map(({ key, priority }) => {
@@ -479,8 +484,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
         return [home, ...rest]
     }
 
-    const marketRoutes = (Object.keys(localePrefixes) as (keyof typeof localePrefixes)[])
-        .flatMap((market) => localeRoutes(market))
+    const marketRoutes = prefixedMarkets.flatMap((market) => localeRoutes(market))
+
+    // Internationaler Blog (/{lang}/blog) mit hreflang je Thema
+    const intlBlogRoutes = [
+        ...contentLanguages
+            .filter((lang) => getBlogPosts(lang).length > 0)
+            .map((lang) => ({
+                url: blogIndexUrl(lang),
+                lastModified: new Date(),
+                changeFrequency: 'weekly' as const,
+                priority: 0.8,
+                alternates: { languages: blogIndexAlternates() },
+            })),
+        ...allBlogPosts().map((post) => ({
+            url: blogPostUrl(post.lang, post.slug),
+            lastModified: new Date(post.updatedAt),
+            changeFrequency: 'monthly' as const,
+            priority: 0.75,
+            alternates: { languages: blogTopicAlternates(post.topic) },
+        })),
+    ]
 
     const neuigkeitenIndex = {
         url: `${baseUrl}/neuigkeiten`,
@@ -494,14 +518,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.9,
+        alternates: { languages: blogIndexAlternates() },
     }
 
-    const blogRoutes = blogPosts.map((post) => ({
-        url: `${baseUrl}/blog/${post.slug}`,
-        lastModified: new Date(post.publishedAt),
-        changeFrequency: 'monthly' as const,
-        priority: post.featured ? 0.9 : 0.8,
-    }))
+    const blogRoutes = blogPosts.map((post) => {
+        const topic = topicForDeSlug(post.slug)
+        return {
+            url: `${baseUrl}/blog/${post.slug}`,
+            lastModified: new Date(post.publishedAt),
+            changeFrequency: 'monthly' as const,
+            priority: post.featured ? 0.9 : 0.8,
+            ...(topic ? { alternates: { languages: blogTopicAlternates(topic) } } : {}),
+        }
+    })
 
     const landingRoutes = [
         {
@@ -525,18 +554,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly' as const,
             priority: 0.6,
         },
-        {
-            url: `${baseUrl}/llms-en.txt`,
+        ...['en', 'tr', 'nl', 'it', 'pl', 'es', 'fr'].map((lang) => ({
+            url: `${baseUrl}/llms-${lang}.txt`,
             lastModified: new Date(),
             changeFrequency: 'weekly' as const,
             priority: 0.6,
-        },
-        {
-            url: `${baseUrl}/llms-tr.txt`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly' as const,
-            priority: 0.6,
-        },
+        })),
         {
             url: `${baseUrl}/llms-full.txt`,
             lastModified: new Date(),
@@ -582,6 +605,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...staticRoutes,
         ...marketRoutes,
         ...trGuideRoutes,
+        ...intlBlogRoutes,
         neuigkeitenIndex,
         blogIndex,
         ...blogRoutes,

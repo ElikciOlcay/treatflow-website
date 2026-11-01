@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, CheckCircle } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
 import { generateFaqSchema } from '@/lib/schema';
+import { blogTopicAlternates } from '@/lib/blog-intl';
 
 const canonical = 'https://www.treatflow.io/blog/anamnesebogen-kosmetikstudio';
 const imagePath = '/images/blog/anamnesebogen-kosmetikstudio.jpg';
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
         'Kosmetikstudio Kundendokumentation',
     ],
     authors: [{ name: 'Olcay Elikci' }],
-    alternates: { canonical },
+    alternates: { canonical, languages: blogTopicAlternates('digital-consultation-forms') },
     openGraph: {
         title: 'Anamnesebogen Kosmetikstudio: Digital & sicher 2026',
         description:

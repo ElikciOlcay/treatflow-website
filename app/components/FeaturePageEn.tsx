@@ -5,6 +5,7 @@ import FaqSectionEn, { type FaqEntry } from "./FaqSectionEn";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./AiAnswerCapsule";
 import Breadcrumbs, { generateBreadcrumbSchema } from "./Breadcrumbs";
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
+import { chromeLangFromPath, getUiChrome } from "@/app/i18n/markets/ui-chrome";
 
 export type FeatureItem = {
   icon: LucideIcon;
@@ -47,18 +48,14 @@ export default function FeaturePageEn({
   features,
   closingTitle,
   closingText,
-  earlyAccessHref = APP_REGISTER_BY_MARKET.en,
-  primaryCta = "Start 14-day free trial",
-  bottomTitle = "Ready to get started?",
-  bottomText = "Start your free trial – no credit card required, cancel anytime.",
+  earlyAccessHref,
+  primaryCta,
+  bottomTitle,
+  bottomText,
   faqs,
   relatedLinks,
-  relatedTitle = "Related pages",
-  trustItems = [
-    "EU hosting",
-    "14-day free trial",
-    "No commission on bookings",
-  ],
+  relatedTitle,
+  trustItems,
   faqTitle,
   faqBadge,
   aiCapsules,
@@ -67,11 +64,20 @@ export default function FeaturePageEn({
   secondaryCta,
   promo,
 }: FeaturePageProps) {
-  const CtaTag = earlyAccessHref.startsWith("http") ? "a" : Link;
-  const ctaProps = earlyAccessHref.startsWith("http")
-    ? { href: earlyAccessHref, target: "_blank", rel: "noopener noreferrer" }
-    : { href: earlyAccessHref };
-  const homeLabel = breadcrumbHomeHref.startsWith("/tr") ? "Ana sayfa" : "Home";
+  // Sprache aus dem Breadcrumb-Home-Pfad (/en, /tr, /nl, …)
+  const lang = chromeLangFromPath(breadcrumbHomeHref);
+  const chrome = getUiChrome(lang);
+  const ctaHref = earlyAccessHref ?? APP_REGISTER_BY_MARKET[lang] ?? APP_REGISTER_BY_MARKET.en;
+  const ctaLabel = primaryCta ?? chrome.startTrial;
+  const closingCtaTitle = bottomTitle ?? chrome.bottomTitle;
+  const closingCtaText = bottomText ?? chrome.bottomText;
+  const relatedHeading = relatedTitle ?? chrome.relatedTitle;
+  const trustList = trustItems ?? [...chrome.trustItems];
+  const CtaTag = ctaHref.startsWith("http") ? "a" : Link;
+  const ctaProps = ctaHref.startsWith("http")
+    ? { href: ctaHref, target: "_blank", rel: "noopener noreferrer" }
+    : { href: ctaHref };
+  const homeLabel = chrome.homeSrOnly;
   return (
     <main>
       <script
@@ -116,7 +122,7 @@ export default function FeaturePageEn({
                     : "bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg"
                 }
               >
-                {primaryCta}
+                {ctaLabel}
                 <ArrowRight className={secondaryCta ? "ml-2 h-4 w-4" : "ml-2 h-5 w-5"} />
               </CtaTag>
               {secondaryCta && (
@@ -180,7 +186,7 @@ export default function FeaturePageEn({
         <section className="py-12 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              {problem.title ?? (breadcrumbHomeHref.startsWith("/tr") ? "Treatflow hangi sorunu çözer?" : "The problem Treatflow solves")}
+              {problem.title ?? chrome.problemTitle}
             </h2>
             <p className="font-semibold text-gray-900 mb-2">{problem.problem}</p>
             <p className="text-gray-600 leading-relaxed">{problem.solution}</p>
@@ -191,7 +197,7 @@ export default function FeaturePageEn({
       <section className="py-10 bg-white border-y border-gray-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid sm:grid-cols-3 gap-4 text-center sm:text-left">
-            {trustItems.map((item) => (
+            {trustList.map((item) => (
               <div key={item} className="flex items-center justify-center sm:justify-start gap-2 text-sm text-gray-700">
                 <CheckCircle className="h-4 w-4 text-indigo-600 flex-shrink-0" />
                 <span>{item}</span>
@@ -230,7 +236,7 @@ export default function FeaturePageEn({
       {relatedLinks && relatedLinks.length > 0 && (
         <section className="py-12 bg-gray-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4 text-center">{relatedTitle}</h2>
+            <h2 className="text-lg font-semibold text-gray-900 mb-4 text-center">{relatedHeading}</h2>
             <div className="flex flex-wrap justify-center gap-3">
               {relatedLinks.map((link) => (
                 <Link
@@ -247,18 +253,22 @@ export default function FeaturePageEn({
       )}
 
       {faqs && faqs.length > 0 && (
-        <FaqSectionEn faqs={faqs} title={faqTitle} badge={faqBadge} />
+        <FaqSectionEn
+          faqs={faqs}
+          title={faqTitle ?? chrome.faqTitle}
+          badge={faqBadge ?? chrome.faqBadge}
+        />
       )}
 
       <section className="py-20 bg-indigo-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">{bottomTitle}</h2>
-          <p className="text-indigo-100 text-lg mb-8">{bottomText}</p>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">{closingCtaTitle}</h2>
+          <p className="text-indigo-100 text-lg mb-8">{closingCtaText}</p>
           <CtaTag
             {...ctaProps}
             className="inline-flex items-center bg-white text-indigo-600 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg"
           >
-            {primaryCta}
+            {ctaLabel}
             <ArrowRight className="ml-3 h-5 w-5" />
           </CtaTag>
         </div>

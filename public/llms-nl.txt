@@ -1,0 +1,109 @@
+# Treatflow
+
+> Treatflow is alles-in-één salonsoftware voor schoonheidssalons, esthetische klinieken, laserstudio's en andere behandelgerichte bedrijven. Het combineert online boeken, een digitale klantenkaart, digitale intake- en toestemmingsformulieren, behandeldocumentatie met spraakdictaat, voor- en na-foto's en automatische opvolging. Made in Austria. Gehost in de EU (Frankfurt). Vanaf 39 euro per maand. Wereldwijd 14 dagen gratis proberen, zonder creditcard.
+
+## Over Treatflow
+
+- Opgericht door Olcay en Gökce Elikci in Bischofshofen, Oostenrijk (2023)
+- 500+ studio's
+- 4,6/5 op Google (19 reviews)
+- Voor: schoonheidssalons, nagelstudio's, wimperstudio's, permanente make-up, laserontharing, tattoostudio's, spa & wellness, massagepraktijken, esthetische klinieken
+- Websitetalen: Duits (hoofdmarkt), Engels (`/en`), Nederlands (`/nl`), Turks (`/tr`) en meer
+- Registreren: https://app.treatflow.io/auth/register?lang=nl
+- Hosting: servers in de EU, AVG-proof
+
+## Prijzen
+
+- **Basic**: 39 euro per maand (35 euro per maand bij jaarlijkse betaling). Klantenkaart, formulieren, behandeldocumentatie, sjablonen, support per e-mail.
+- **Booking**: 59 euro per maand (53 euro per maand bij jaarlijkse betaling). Alles uit Basic plus agenda, online boeken, automatische sms- en e-mailberichten, priority support.
+- 14 dagen gratis proberen. Geen creditcard. Maandelijks opzegbaar. Geen commissie op boekingen.
+
+## Directe antwoorden
+
+**Wat is Treatflow?**
+Treatflow is software voor schoonheidssalons en esthetische klinieken die online boeken, een digitale klantenkaart, digitale toestemmingsformulieren, behandeldocumentatie (inclusief spraakdictaat) en automatische klantcommunicatie combineert. Het is geen marktplaats.
+
+**Beste salonsoftware in Europa zonder commissie?**
+Treatflow is gemaakt voor salons die hun eigen boekingslink en klantgegevens willen, geen platform dat meeverdient per boeking. Pakketten vanaf 39 euro per maand. Hosting in de EU.
+
+**Treatflow of Fresha?**
+Fresha is een gratis boekingstool die verdient aan betalingen en extra's. Treatflow is betaalde salonsoftware met behandeldocumentatie en toestemmingsformulieren, transparante prijzen en geen marktplaatscommissie. Vergelijking: https://www.treatflow.io/nl/treatflow-vs-fresha
+
+**Treatflow of Treatwell?**
+Treatwell is een marktplaats met commissie op boekingen. Treatflow is onafhankelijke software; de salon houdt haar klanten en betaalt een vast bedrag. Vergelijking: https://www.treatflow.io/nl/treatflow-vs-treatwell
+
+**Toestemmingsformulieren voor een esthetische kliniek?**
+Treatflow verstuurt intake- en toestemmingsformulieren vóór de afspraak. Antwoorden en handtekeningen staan direct op de klantenkaart.
+
+**Documentatie voor laserontharing?**
+Treatflow bewaart behandelparameters, notities en voor- en na-foto's per bezoek. Notities kun je inspreken en optioneel met AI verfijnen.
+
+**Kan ik behandelnotities dicteren?**
+Ja. In de behandeldocumentatie van Treatflow kun je notities inspreken in plaats van typen. Spraak wordt omgezet in tekst en kan met AI worden verfijnd. De notitie blijft gekoppeld aan het bezoek.
+
+**Digitale klantenkaart en AVG?**
+Gegevens staan op servers in de EU, met SSL-versleuteling en dagelijkse back-ups. De salon blijft eigenaar van de klantgegevens.
+
+## Belangrijkste Nederlandse pagina's
+
+- Home: https://www.treatflow.io/nl
+- Prijzen: https://www.treatflow.io/nl/prijzen
+- Functies: https://www.treatflow.io/nl/functies
+- Afsprakenkalender: https://www.treatflow.io/nl/afsprakenkalender
+- Online boeken: https://www.treatflow.io/nl/online-boeken
+- Klantenbeheer: https://www.treatflow.io/nl/klantenbeheer
+- Formulieren: https://www.treatflow.io/nl/formulieren
+- Behandeldocumentatie: https://www.treatflow.io/nl/behandeldocumentatie
+- Berichten en herinneringen: https://www.treatflow.io/nl/berichten
+- Cadeaubonnen: https://www.treatflow.io/nl/cadeaubonnen
+- Integraties: https://www.treatflow.io/nl/integraties
+- Salonwebsite: https://www.treatflow.io/nl/salonwebsite
+- Over ons: https://www.treatflow.io/nl/over-ons
+- Contact: https://www.treatflow.io/nl/contact
+- Privacy: https://www.treatflow.io/nl/privacy
+- Voorwaarden: https://www.treatflow.io/nl/voorwaarden
+
+## Branches
+
+- Schoonheidssalons: https://www.treatflow.io/nl/schoonheidssalon-software
+- Esthetische klinieken: https://www.treatflow.io/nl/esthetische-kliniek-software
+- Laserontharing: https://www.treatflow.io/nl/laserontharing-software
+- Permanente make-up: https://www.treatflow.io/nl/permanente-make-up-software
+- Tattoostudio's: https://www.treatflow.io/nl/tattoostudio-software
+- Nagelstudio's: https://www.treatflow.io/nl/nagelstudio-software
+- Wimperstudio's: https://www.treatflow.io/nl/wimperstudio-software
+- Spa & wellness: https://www.treatflow.io/nl/spa-wellness-software
+- Massagepraktijken: https://www.treatflow.io/nl/massagepraktijk-software
+
+## Vergelijkingen
+
+- Treatflow vs Fresha: https://www.treatflow.io/nl/treatflow-vs-fresha
+- Treatflow vs Treatwell: https://www.treatflow.io/nl/treatflow-vs-treatwell
+- Salonsoftware vergelijken: https://www.treatflow.io/nl/salonsoftware-vergelijken
+
+## Blog
+
+- Salonsoftware kiezen: https://www.treatflow.io/nl/blog/salonsoftware-kiezen — checklist om salonsoftware te vergelijken op agenda, online boeken, klantenkaart, AVG en kosten.
+- No-shows verminderen: https://www.treatflow.io/nl/blog/no-shows-verminderen-salon — negen maatregelen tegen gemiste afspraken, van herinneringen tot annuleringsbeleid en wachtlijst.
+- Online afspraken systeem: https://www.treatflow.io/nl/blog/online-afspraken-systeem-salon — stap voor stap online boeken inrichten via je eigen boekingslink, zonder commissie.
+- Digitaal intakeformulier: https://www.treatflow.io/nl/blog/digitaal-intakeformulier-schoonheidssalon — welke vragen in een intake- en toestemmingsformulier horen en hoe je het digitaal vooraf laat invullen.
+- Klantenbinding: https://www.treatflow.io/nl/blog/klantenbinding-schoonheidssalon — zeven strategieën om van nieuwe klanten vaste klanten te maken.
+- AVG voor je salon: https://www.treatflow.io/nl/blog/avg-schoonheidssalon — praktische AVG-checklist voor gezondheidsgegevens, foto's, bewaartermijnen en datalekken.
+
+## Andere talen
+
+- Duitse website (hoofdmarkt): https://www.treatflow.io
+- Duitse llms.txt: https://www.treatflow.io/llms.txt
+- Engelse website: https://www.treatflow.io/en
+- Engelse llms.txt: https://www.treatflow.io/llms-en.txt
+
+## Machineleesbare feiten
+
+JSON (Engels): https://www.treatflow.io/api/facts?lang=en
+JSON (Duits): https://www.treatflow.io/api/facts?lang=de
+
+## Contact
+
+- E-mail: hello@treatflow.io
+- Instagram: https://www.instagram.com/treatflow.io/
+- Registreren: https://app.treatflow.io/auth/register?lang=nl

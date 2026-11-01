@@ -14,9 +14,14 @@ import TreatmentWorkflow, { type WorkflowStep } from "./TreatmentWorkflow";
 import Image from "next/image";
 import { generateServiceSchema } from "@/lib/schema";
 import type { SeoPageKey } from "../i18n/seo";
-import { BASE_URL, type PrefixedMarket } from "../i18n/config";
+import {
+  BASE_URL,
+  isPrefixedMarket,
+  marketPathPrefix,
+  type PrefixedMarket,
+} from "../i18n/config";
 import { getPrimaryCtaPath } from "../i18n/market-access";
-import { getUiChrome } from "../i18n/markets/ui-chrome";
+import { areaServedForMarket, getUiChrome } from "../i18n/markets/ui-chrome";
 
 export type FeatureBlock = {
   icon: LucideIcon;
@@ -93,10 +98,8 @@ export default function InternationalSeoPage({
   const chrome = getUiChrome(String(locale));
   const earlyAccessHref = getPrimaryCtaPath(locale);
   const primaryLabel = content.ctaPrimaryLabel ?? chrome.startTrial;
-  const bottomTitle = content.ctaBottomTitle ?? "Ready to run your studio in one place?";
-  const bottomText =
-    content.ctaBottomText ??
-    "Start your free trial – no credit card required, cancel anytime.";
+  const bottomTitle = content.ctaBottomTitle ?? chrome.bottomTitle;
+  const bottomText = content.ctaBottomText ?? chrome.bottomText;
   const trustTrial = content.trustTrialLabel ?? chrome.trustBadges[3];
   const trustBadges = content.trustBadges ?? [
     chrome.trustBadges[0],
@@ -109,18 +112,17 @@ export default function InternationalSeoPage({
   const ctaProps = isExternalCta
     ? { href: earlyAccessHref, target: "_blank", rel: "noopener noreferrer" }
     : { href: earlyAccessHref };
-  const homeHref = locale === "en" || String(locale).startsWith("en") ? "/en" : `/${locale}`;
-  const homeLabel = String(locale) === "tr" ? chrome.homeSrOnly : "Home";
+  const localeKey = String(locale);
+  const market: PrefixedMarket = isPrefixedMarket(localeKey) ? localeKey : "en";
+  const homeHref = marketPathPrefix[market] || "/en";
+  const homeLabel = chrome.homeSrOnly;
 
   const serviceSchema = generateServiceSchema({
     name: content.serviceName,
     description: content.serviceDescription,
     url: `${BASE_URL}${content.canonicalPath}`,
-    serviceType:
-      String(locale) === "tr"
-        ? "Güzellik salonu yönetim yazılımı"
-        : "Beauty and aesthetic studio management software",
-    areaServed: content.areaServed ?? (String(locale) === "tr" ? ["TR"] : ["EU"]),
+    serviceType: chrome.serviceType,
+    areaServed: content.areaServed ?? areaServedForMarket(market),
   });
 
   return (

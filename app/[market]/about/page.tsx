@@ -3,12 +3,13 @@ import { Heart, MapPin, ShieldCheck, Users, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { buildPageMetadata } from "@/app/i18n/seo";
 import {
+  isBundleLang,
   isPrefixedMarket,
   marketLanguage,
   type PrefixedMarket,
 } from "@/app/i18n/config";
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
-import { getAboutCopy } from "@/app/i18n/markets/static-pages-nl-fi";
+import { getLocaleContent } from "@/app/i18n/locales";
 
 const icons = [Heart, ShieldCheck, Users, MapPin] as const;
 
@@ -81,7 +82,7 @@ export async function generateMetadata({
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "tr" ? trAbout : lang === "nl" || lang === "fi" ? getAboutCopy(lang) : enAbout;
+  const content = lang === "tr" ? trAbout : isBundleLang(market) ? getLocaleContent(market).about : enAbout;
   return buildPageMetadata({
     pageKey: "about",
     locale: market,
@@ -99,7 +100,7 @@ export default async function AboutPage({
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "tr" ? trAbout : lang === "nl" || lang === "fi" ? getAboutCopy(lang) : enAbout;
+  const content = lang === "tr" ? trAbout : isBundleLang(market) ? getLocaleContent(market).about : enAbout;
   const registerUrl = APP_REGISTER_BY_MARKET[market];
   const ctaLabel =
     lang === "tr"
@@ -128,7 +129,7 @@ export default async function AboutPage({
         <div className="max-w-5xl mx-auto relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[16/9]">
           <Image
             src="/images/lifestyle/ueber-uns-studio-interior.png"
-            alt={lang === "tr" ? "Modern bir güzellik salonu iç mekanı" : "Modern beauty studio interior"}
+            alt={lang === "tr" ? "Modern bir güzellik salonu iç mekanı" : isBundleLang(market) ? content.title : "Modern beauty studio interior"}
             fill
             sizes="(max-width: 1024px) 100vw, 1024px"
             className="object-cover object-center"

@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./AiAnswerCapsule";
+import { getUiChrome } from "../i18n/markets/ui-chrome";
 
 export type HomePageIntlContent = {
   locale: string;
@@ -58,6 +59,7 @@ export type HomePageIntlContent = {
 };
 
 export default function HomePageIntl({ content }: { content: HomePageIntlContent }) {
+  const chrome = getUiChrome(content.locale);
   return (
     <>
       {content.schemas?.software && (
@@ -276,7 +278,7 @@ export default function HomePageIntl({ content }: { content: HomePageIntlContent
         </div>
       </section>
 
-      <section className="py-20 bg-indigo-600" aria-label="Call to action">
+      <section className="py-20 bg-indigo-600" aria-label={chrome.ctaSectionAria}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">{content.cta.title}</h2>
           <p className="text-indigo-100 text-lg mb-8">{content.cta.subtitle}</p>

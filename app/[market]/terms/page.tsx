@@ -1,11 +1,12 @@
 import { notFound } from "next/navigation";
 import { buildPageMetadata } from "@/app/i18n/seo";
 import {
+  isBundleLang,
   isPrefixedMarket,
   marketLanguage,
   type PrefixedMarket,
 } from "@/app/i18n/config";
-import { getTermsCopy } from "@/app/i18n/markets/static-pages-nl-fi";
+import { getLocaleContent } from "@/app/i18n/locales";
 import { enTerms } from "@/app/i18n/markets/legal-en";
 import { trTerms } from "@/app/i18n/markets/legal-tr";
 
@@ -19,7 +20,7 @@ export async function generateMetadata({
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
   const content =
-    lang === "tr" ? trTerms : lang === "nl" || lang === "fi" ? getTermsCopy(lang) : enTerms;
+    lang === "tr" ? trTerms : isBundleLang(market) ? getLocaleContent(market).terms : enTerms;
   return buildPageMetadata({
     pageKey: "terms",
     locale: market,
@@ -37,21 +38,9 @@ export default async function TermsPage({
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const structured = lang === "tr" ? trTerms : lang === "nl" || lang === "fi" ? null : enTerms;
+  const structured =
+    lang === "tr" ? trTerms : isBundleLang(market) ? getLocaleContent(market).terms : enTerms;
 
-  if (!structured) {
-    const content = getTermsCopy(lang as "nl" | "fi");
-    return (
-      <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto prose prose-indigo">
-          <h1>{content.title}</h1>
-          {content.paragraphs.map((p) => (
-            <p key={p.slice(0, 40)}>{p}</p>
-          ))}
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 bg-white">

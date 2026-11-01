@@ -1,11 +1,12 @@
 import { notFound } from "next/navigation";
 import { buildPageMetadata } from "@/app/i18n/seo";
 import {
+  isBundleLang,
   isPrefixedMarket,
   marketLanguage,
   type PrefixedMarket,
 } from "@/app/i18n/config";
-import { getPrivacyCopy } from "@/app/i18n/markets/static-pages-nl-fi";
+import { getLocaleContent } from "@/app/i18n/locales";
 import { enPrivacy } from "@/app/i18n/markets/legal-en";
 import { trPrivacy } from "@/app/i18n/markets/legal-tr";
 import CookiebotDeclaration from "@/app/components/CookiebotDeclaration";
@@ -20,7 +21,7 @@ export async function generateMetadata({
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
   const content =
-    lang === "tr" ? trPrivacy : lang === "nl" || lang === "fi" ? getPrivacyCopy(lang) : enPrivacy;
+    lang === "tr" ? trPrivacy : isBundleLang(market) ? getLocaleContent(market).privacy : enPrivacy;
   return buildPageMetadata({
     pageKey: "privacy",
     locale: market,
@@ -38,22 +39,9 @@ export default async function PrivacyPage({
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const structured = lang === "tr" ? trPrivacy : lang === "nl" || lang === "fi" ? null : enPrivacy;
+  const structured =
+    lang === "tr" ? trPrivacy : isBundleLang(market) ? getLocaleContent(market).privacy : enPrivacy;
 
-  if (!structured) {
-    const content = getPrivacyCopy(lang as "nl" | "fi");
-    return (
-      <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto prose prose-indigo">
-          <h1>{content.title}</h1>
-          {content.paragraphs.map((p) => (
-            <p key={p.slice(0, 40)}>{p}</p>
-          ))}
-          <CookiebotDeclaration />
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 bg-white">

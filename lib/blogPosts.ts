@@ -9,6 +9,9 @@
  * automatisch konsistent.
  */
 
+import { posts as germanDataPosts } from './blog-intl/posts/de';
+import { blogTopics } from './blog-intl/topics';
+
 export type BlogPost = {
     slug: string;
     title: string;
@@ -23,7 +26,7 @@ export type BlogPost = {
     image: string;
 };
 
-export const blogPosts: BlogPost[] = [
+const manualBlogPosts: BlogPost[] = [
     {
         slug: 'anamnesebogen-kosmetikstudio',
         title: 'Anamnesebogen Kosmetikstudio: Warum digitale Bögen 2026 dazugehören',
@@ -492,3 +495,18 @@ export const blogPosts: BlogPost[] = [
         image: '/images/blog/no-shows.png',
     },
 ];
+
+/** Datengetriebene deutsche Artikel (lib/blog-intl/posts/de.ts) als Uebersichts-Eintraege. */
+const dataBlogPosts: BlogPost[] = germanDataPosts.map((post) => ({
+    slug: post.slug,
+    title: post.title,
+    excerpt: post.excerpt,
+    category: post.category,
+    readTime: `${post.readMinutes} min`,
+    publishDate: new Intl.DateTimeFormat('de-DE', { dateStyle: 'long' }).format(new Date(post.publishedAt)),
+    publishedAt: post.publishedAt,
+    featured: false,
+    image: blogTopics[post.topic].image,
+}));
+
+export const blogPosts: BlogPost[] = [...dataBlogPosts, ...manualBlogPosts];

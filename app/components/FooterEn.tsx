@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Dictionary } from "../i18n/dictionaries";
 import {
+  isBundleLang,
   marketHomePath,
   marketLabels,
   marketPathPrefix,
@@ -12,20 +13,13 @@ import {
   getPrimaryCtaPath,
   isExternalCta,
 } from "../i18n/market-access";
-import { EN_SLUGS, localizeEnSlug } from "../i18n/market-routes";
+import { marketPagePath } from "../i18n/market-routes";
 import type { IndustryPageKey } from "../i18n/industry-slugs";
 import CookieSettingsLink from "./CookieSettingsLink";
-import { getUiChrome } from "../i18n/markets/ui-chrome";
+import { chromeLangFromMarket, getUiChrome, type ChromeLang } from "../i18n/markets/ui-chrome";
 
-type NavLang = "en" | "nl" | "fi" | "tr";
-
-function toNavLang(market: PrefixedMarket): NavLang {
-  const m = market as string;
-  if (m === "nl") return "nl";
-  if (m === "fi") return "fi";
-  if (m === "tr") return "tr";
-  return "en";
-}
+/** fi ist keine Live-Sprache mehr; Eintraege bleiben erhalten. */
+type NavLang = ChromeLang | "fi";
 
 const featureLabels: Record<
   NavLang,
@@ -62,12 +56,12 @@ const featureLabels: Record<
     booking: "Online boeken",
     records: "Klantendossiers",
     forms: "Formulieren",
-    docs: "Behandelingsdocumentatie",
+    docs: "Behandeldocumentatie",
     messaging: "Berichten",
     integrations: "Integraties",
     features: "Alle functies",
     shop: "Shop",
-    website: "Studio-website",
+    website: "Salonwebsite",
   },
   fi: {
     calendar: "Ajanvarauskalenteri",
@@ -95,6 +89,58 @@ const featureLabels: Record<
     shop: "Mağaza",
     website: "Salon web sitesi",
   },
+  it: {
+    calendar: "Calendario appuntamenti",
+    vouchers: "Buoni regalo",
+    booking: "Prenotazioni online",
+    records: "Schede clienti",
+    forms: "Anamnesi e consenso",
+    docs: "Documentazione trattamenti",
+    messaging: "Promemoria",
+    integrations: "Integrazioni",
+    features: "Tutte le funzioni",
+    shop: "Negozio",
+    website: "Sito web del centro",
+  },
+  pl: {
+    calendar: "Kalendarz wizyt",
+    vouchers: "Bony podarunkowe",
+    booking: "Rezerwacje online",
+    records: "Kartoteka klientów",
+    forms: "Wywiad i zgody",
+    docs: "Dokumentacja zabiegów",
+    messaging: "Przypomnienia",
+    integrations: "Integracje",
+    features: "Wszystkie funkcje",
+    shop: "Sklep",
+    website: "Strona salonu",
+  },
+  es: {
+    calendar: "Agenda de citas",
+    vouchers: "Tarjetas regalo",
+    booking: "Reservas online",
+    records: "Fichas de clientes",
+    forms: "Consulta y consentimiento",
+    docs: "Documentación de tratamientos",
+    messaging: "Recordatorios",
+    integrations: "Integraciones",
+    features: "Todas las funciones",
+    shop: "Tienda",
+    website: "Web del centro",
+  },
+  fr: {
+    calendar: "Agenda des rendez-vous",
+    vouchers: "Cartes cadeaux",
+    booking: "Réservation en ligne",
+    records: "Fiches clients",
+    forms: "Questionnaires et consentements",
+    docs: "Documentation des soins",
+    messaging: "Rappels",
+    integrations: "Intégrations",
+    features: "Toutes les fonctionnalités",
+    shop: "Boutique",
+    website: "Site web de l'institut",
+  },
 };
 
 const industryLabels: Record<NavLang, Record<IndustryPageKey, string>> = {
@@ -110,12 +156,12 @@ const industryLabels: Record<NavLang, Record<IndustryPageKey, string>> = {
     "massage-software": "Massage practices",
   },
   nl: {
-    "beauty-salon-software": "Beauty salons",
+    "beauty-salon-software": "Schoonheidssalons",
     "laser-hair-removal-software": "Laserontharing",
     "permanent-makeup-software": "Permanente make-up",
     "aesthetic-clinic-software": "Esthetische klinieken",
     "tattoo-studio-software": "Tattoostudio's",
-    "nail-salon-software": "Nagelsalons",
+    "nail-salon-software": "Nagelstudio's",
     "lash-studio-software": "Wimperstudio's",
     "spa-wellness-software": "Spa & wellness",
     "massage-software": "Massagepraktijken",
@@ -142,6 +188,50 @@ const industryLabels: Record<NavLang, Record<IndustryPageKey, string>> = {
     "spa-wellness-software": "Spa ve wellness",
     "massage-software": "Masaj merkezleri",
   },
+  it: {
+    "beauty-salon-software": "Centri estetici",
+    "laser-hair-removal-software": "Epilazione laser",
+    "permanent-makeup-software": "Trucco permanente",
+    "aesthetic-clinic-software": "Cliniche estetiche",
+    "tattoo-studio-software": "Studi di tatuaggi",
+    "nail-salon-software": "Centri unghie",
+    "lash-studio-software": "Extension ciglia",
+    "spa-wellness-software": "Spa e wellness",
+    "massage-software": "Centri massaggi",
+  },
+  pl: {
+    "beauty-salon-software": "Salony kosmetyczne",
+    "laser-hair-removal-software": "Depilacja laserowa",
+    "permanent-makeup-software": "Makijaż permanentny",
+    "aesthetic-clinic-software": "Gabinety medycyny estetycznej",
+    "tattoo-studio-software": "Studia tatuażu",
+    "nail-salon-software": "Salony paznokci",
+    "lash-studio-software": "Stylizacja rzęs",
+    "spa-wellness-software": "Spa i wellness",
+    "massage-software": "Gabinety masażu",
+  },
+  es: {
+    "beauty-salon-software": "Centros de estética",
+    "laser-hair-removal-software": "Depilación láser",
+    "permanent-makeup-software": "Micropigmentación",
+    "aesthetic-clinic-software": "Clínicas estéticas",
+    "tattoo-studio-software": "Estudios de tatuaje",
+    "nail-salon-software": "Salones de uñas",
+    "lash-studio-software": "Estudios de pestañas",
+    "spa-wellness-software": "Spa y wellness",
+    "massage-software": "Centros de masaje",
+  },
+  fr: {
+    "beauty-salon-software": "Instituts de beauté",
+    "laser-hair-removal-software": "Épilation laser",
+    "permanent-makeup-software": "Maquillage permanent",
+    "aesthetic-clinic-software": "Cliniques esthétiques",
+    "tattoo-studio-software": "Salons de tatouage",
+    "nail-salon-software": "Ongleries",
+    "lash-studio-software": "Extensions de cils",
+    "spa-wellness-software": "Spa et bien-être",
+    "massage-software": "Centres de massage",
+  },
 };
 
 const industryOrder: IndustryPageKey[] = [
@@ -164,7 +254,9 @@ export default function FooterEn({
   locale?: PrefixedMarket;
 }) {
   const market = locale;
-  const lang = toNavLang(market);
+  const lang = chromeLangFromMarket(market);
+  const bundle = isBundleLang(market);
+  const page = (key: Parameters<typeof marketPagePath>[1]) => marketPagePath(market, key);
   const base = marketPathPrefix[market];
   const labels = featureLabels[lang];
   const industries = industryLabels[lang];
@@ -175,19 +267,18 @@ export default function FooterEn({
   const chrome = getUiChrome(market);
 
   const featureLinks = [
-    { href: `${base}/${localizeEnSlug(market, EN_SLUGS["appointment-calendar"])}`, label: labels.calendar },
-    ...(market === "tr"
-      ? []
-      : [{ href: `${base}/${EN_SLUGS.vouchers}`, label: labels.vouchers }]),
-    { href: `${base}/${localizeEnSlug(market, EN_SLUGS["online-booking"])}`, label: labels.booking },
-    { href: `${base}/${localizeEnSlug(market, EN_SLUGS["client-records"])}`, label: labels.records },
-    { href: `${base}/${EN_SLUGS.forms}`, label: labels.forms },
-    { href: `${base}/${EN_SLUGS["treatment-documentation"]}`, label: labels.docs },
-    { href: `${base}/${EN_SLUGS.messaging}`, label: labels.messaging },
-    { href: `${base}/${EN_SLUGS.integrations}`, label: labels.integrations },
-    { href: `${base}/${EN_SLUGS.features}`, label: labels.features },
-    { href: `${base}/${EN_SLUGS.shop}`, label: labels.shop },
-    { href: `${base}/${EN_SLUGS["studio-website"]}`, label: labels.website },
+    { href: page("appointment-calendar"), label: labels.calendar },
+    // Gutscheine: nur TR ausgeblendet
+    ...(market === "tr" ? [] : [{ href: page("vouchers"), label: labels.vouchers }]),
+    { href: page("online-booking"), label: labels.booking },
+    { href: page("client-records"), label: labels.records },
+    { href: page("forms"), label: labels.forms },
+    { href: page("treatment-documentation"), label: labels.docs },
+    { href: page("messaging"), label: labels.messaging },
+    { href: page("integrations"), label: labels.integrations },
+    { href: page("features"), label: labels.features },
+    { href: page("shop"), label: labels.shop },
+    { href: page("studio-website"), label: labels.website },
   ];
 
   return (
@@ -232,7 +323,7 @@ export default function FooterEn({
               {industryOrder.map((key) => (
                 <li key={key}>
                   <Link
-                    href={`${base}/${localizeEnSlug(market, EN_SLUGS[key])}`}
+                    href={page(key)}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {industries[key]}
@@ -247,7 +338,7 @@ export default function FooterEn({
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href={`${base}/${EN_SLUGS.about}`}
+                  href={page("about")}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {dict.footer.aboutUs}
@@ -255,22 +346,30 @@ export default function FooterEn({
               </li>
               <li>
                 <Link
-                  href={`${base}/${EN_SLUGS.contact}`}
+                  href={page("contact")}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {dict.footer.contact}
                 </Link>
               </li>
-              {market !== "tr" && (
+              {market !== "tr" && !bundle && (
                 <li>
                   <Link
-                    href={`${base}/${EN_SLUGS.news}`}
+                    href={page("news")}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {dict.nav.news}
                   </Link>
                 </li>
               )}
+              <li>
+                <Link
+                  href={`${base}/blog`}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  {chrome.blog}
+                </Link>
+              </li>
               {market === "tr" && (
                 <li>
                   <Link
@@ -281,17 +380,19 @@ export default function FooterEn({
                   </Link>
                 </li>
               )}
+              {!bundle && (
+                <li>
+                  <Link
+                    href={page("try-forms")}
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    {chrome.trySampleForms}
+                  </Link>
+                </li>
+              )}
               <li>
                 <Link
-                  href={`${base}/${EN_SLUGS["try-forms"]}`}
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  {chrome.trySampleForms}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`${base}/${EN_SLUGS["software-comparison"]}`}
+                  href={page("software-comparison")}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {chrome.softwareComparison}
@@ -299,7 +400,7 @@ export default function FooterEn({
               </li>
               <li>
                 <Link
-                  href={`${base}/${EN_SLUGS["treatflow-vs-fresha"]}`}
+                  href={page("treatflow-vs-fresha")}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {chrome.vsFresha}
@@ -307,7 +408,7 @@ export default function FooterEn({
               </li>
               <li>
                 <Link
-                  href={`${base}/${EN_SLUGS["treatflow-vs-treatwell"]}`}
+                  href={page("treatflow-vs-treatwell")}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {chrome.vsTreatwell}
@@ -315,7 +416,7 @@ export default function FooterEn({
               </li>
               <li>
                 <Link
-                  href={`${base}/${localizeEnSlug(market, EN_SLUGS.pricing)}`}
+                  href={page("pricing")}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {dict.footer.pricing}
@@ -355,7 +456,7 @@ export default function FooterEn({
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href={`${base}/${EN_SLUGS.privacy}`}
+                  href={page("privacy")}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {dict.footer.privacy}
@@ -369,7 +470,7 @@ export default function FooterEn({
               </li>
               <li>
                 <Link
-                  href={`${base}/${EN_SLUGS.terms}`}
+                  href={page("terms")}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   {dict.footer.terms}
@@ -395,6 +496,8 @@ export default function FooterEn({
               <Link
                 key={m}
                 href={marketHomePath(m)}
+                hrefLang={m}
+                lang={m}
                 className="hover:text-white transition-colors"
               >
                 {marketLabels[m]}

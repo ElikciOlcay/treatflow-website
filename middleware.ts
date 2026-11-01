@@ -1,15 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
   GERMAN_SPEAKING_COUNTRIES,
+  MARKET_BY_COUNTRY,
   MARKET_COOKIE,
+  isPrefixedMarket,
   resolveSiteMarket,
+  type Market,
 } from "./app/i18n/config";
+import { LOCALIZED_SLUGS, delocalizeSlug, localizeEnSlug } from "./app/i18n/market-routes";
 
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
 /** Bekannte Crawler – keine Geo-Redirects auf /, damit hreflang sauber bleibt. */
 const BOT_UA =
-  /bot|crawler|spider|slurp|bingpreview|facebookexternalhit|embedly|quora|pinterest|redditbot|gptbot|chatgpt|claude|anthropic|perplexity|google-extended|bytespider|applebot|duckduckbot/i;
+  /bot|crawler|spider|slurp|bingpreview|facebookexternalhit|embedly|quora|pinterest|redditbot|gptbot|chatgpt|claude|anthropic|perplexity|google-extended|bytespider|applebot|duckduckbot|mistral|cohere|meta-external/i;
 
 function detectCountry(request: NextRequest): string | null {
   const header =
@@ -23,17 +27,22 @@ function isBot(request: NextRequest): boolean {
   return BOT_UA.test(ua);
 }
 
-/** Browser bevorzugt Deutsch (Accept-Language). */
-function prefersGermanLanguage(request: NextRequest): boolean {
+/** Erste unterstuetzte Sprache aus Accept-Language (de oder ein Prefix-Markt). */
+function preferredLanguage(request: NextRequest): Market | null {
   const acceptLanguage = request.headers.get("accept-language")?.toLowerCase();
-  if (!acceptLanguage) return false;
-  return acceptLanguage.split(",").some((part) => part.trim().startsWith("de"));
-}
-
-function prefersTurkishLanguage(request: NextRequest): boolean {
-  const acceptLanguage = request.headers.get("accept-language")?.toLowerCase();
-  if (!acceptLanguage) return false;
-  return acceptLanguage.split(",").some((part) => part.trim().startsWith("tr"));
+  if (!acceptLanguage) return null;
+  const tags = acceptLanguage
+    .split(",")
+    .map((part) => {
+      const [tag, q] = part.trim().split(";q=");
+      return { lang: tag.split("-")[0], q: q ? Number(q) : 1 };
+    })
+    .sort((a, b) => b.q - a.q);
+  for (const { lang } of tags) {
+    if (lang === "de") return "de";
+    if (isPrefixedMarket(lang)) return lang;
+  }
+  return null;
 }
 
 function isGermanSpeakingCountry(country: string | null): boolean {
@@ -41,7 +50,7 @@ function isGermanSpeakingCountry(country: string | null): boolean {
   return (GERMAN_SPEAKING_COUNTRIES as readonly string[]).includes(country);
 }
 
-function redirectToLanguage(request: NextRequest, market: "de" | "en" | "tr", path = "") {
+function redirectToLanguage(request: NextRequest, market: Market, path = "") {
   const prefix = market === "de" ? "" : `/${market}`;
   const target = path
     ? `${prefix}${path.startsWith("/") ? path : `/${path}`}` || "/"
@@ -55,7 +64,7 @@ function redirectToLanguage(request: NextRequest, market: "de" | "en" | "tr", pa
   return response;
 }
 
-/** Alte Sprach-Locales (es/it/fr) und Legacy-Laender → /en. */
+/** Legacy-Laender → /en. */
 function rewriteLegacyPath(pathname: string): string | null {
   if (pathname === "/en-nl" || pathname.startsWith("/en-nl/")) {
     const rest = pathname.replace(/^\/en-nl/, "") || "";
@@ -63,46 +72,11 @@ function rewriteLegacyPath(pathname: string): string | null {
   }
 
   const countryMatch = pathname.match(
-    /^\/(us|uk|nl|fi|ie|ca|au|ae)(\/.*)?$/
+    /^\/(us|uk|fi|ie|ca|au|ae)(\/.*)?$/
   );
   if (countryMatch) {
     const rest = countryMatch[2] || "";
     return `/en${rest}`;
-  }
-
-  const localeMatch = pathname.match(/^\/(es|it|fr)(\/.*)?$/);
-  if (localeMatch) {
-    const legacy = localeMatch[1];
-    const rest = localeMatch[2] || "";
-    const slugMaps: Record<string, Record<string, string>> = {
-      es: {
-        "/precios": "/pricing",
-        "/contacto": "/contact",
-        "/acceso-anticipado": "/early-access",
-        "/sobre-nosotros": "/about",
-        "/privacidad": "/privacy",
-        "/terminos": "/terms",
-        "/funciones": "/features",
-      },
-      it: {
-        "/prezzi": "/pricing",
-        "/contatto": "/contact",
-        "/accesso-anticipato": "/early-access",
-        "/chi-siamo": "/about",
-        "/termini": "/terms",
-        "/funzioni": "/features",
-      },
-      fr: {
-        "/tarifs": "/pricing",
-        "/acces-anticipe": "/early-access",
-        "/a-propos": "/about",
-        "/confidentialite": "/privacy",
-        "/conditions": "/terms",
-        "/fonctionnalites": "/features",
-      },
-    };
-    const mapped = slugMaps[legacy]?.[rest] ?? rest;
-    return `/en${mapped}`;
   }
 
   return null;
@@ -116,20 +90,34 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL(legacyTarget, request.url), 301);
   }
 
-  // /en und Unterseiten: Cookie auf en setzen, Seite rendern
-  if (pathname === "/en" || pathname.startsWith("/en/")) {
-    const response = NextResponse.next();
-    response.cookies.set(MARKET_COOKIE, "en", {
-      maxAge: COOKIE_MAX_AGE,
-      sameSite: "lax",
-      path: "/",
-    });
-    return response;
-  }
+  const prefixMatch = pathname.match(/^\/([a-z]{2})(?:\/([^/]+))?(\/.*)?$/);
+  if (prefixMatch && isPrefixedMarket(prefixMatch[1])) {
+    const market = prefixMatch[1];
+    const firstSegment = prefixMatch[2];
+    const rest = prefixMatch[3] ?? "";
+    let response: NextResponse;
 
-  if (pathname === "/tr" || pathname.startsWith("/tr/")) {
-    const response = NextResponse.next();
-    response.cookies.set(MARKET_COOKIE, "tr", {
+    if (firstSegment && market in LOCALIZED_SLUGS) {
+      const localized = localizeEnSlug(market, firstSegment);
+      const internal = delocalizeSlug(market, firstSegment);
+      if (localized !== firstSegment) {
+        // EN-Slug unter Sprach-Prefix → kanonischer lokaler Slug
+        const url = request.nextUrl.clone();
+        url.pathname = `/${market}/${localized}${rest}`;
+        return NextResponse.redirect(url, 301);
+      }
+      if (internal) {
+        const url = request.nextUrl.clone();
+        url.pathname = `/${market}/${internal}${rest}`;
+        response = NextResponse.rewrite(url);
+      } else {
+        response = NextResponse.next();
+      }
+    } else {
+      response = NextResponse.next();
+    }
+
+    response.cookies.set(MARKET_COOKIE, market, {
       maxAge: COOKIE_MAX_AGE,
       sameSite: "lax",
       path: "/",
@@ -159,14 +147,13 @@ export function middleware(request: NextRequest) {
       }
       return response;
     }
-    if (resolved === "tr") {
-      return redirectToLanguage(request, "tr");
-    }
-    return redirectToLanguage(request, "en");
+    return redirectToLanguage(request, resolved);
   }
 
   const country = detectCountry(request);
-  if (isGermanSpeakingCountry(country) || prefersGermanLanguage(request)) {
+  const browserLang = preferredLanguage(request);
+  // DACH bleibt Kernmarkt: Besucher aus DE/AT/CH/LI sehen weiter die deutsche Seite
+  if (browserLang === "de" || isGermanSpeakingCountry(country)) {
     const response = NextResponse.next();
     response.cookies.set(MARKET_COOKIE, "de", {
       maxAge: COOKIE_MAX_AGE,
@@ -176,16 +163,20 @@ export function middleware(request: NextRequest) {
     return response;
   }
 
-  if (country === "TR" || prefersTurkishLanguage(request)) {
-    return redirectToLanguage(request, "tr");
+  // Ausserhalb DACH: Browsersprache vor Land (z. B. Englisch sprechende Person in Spanien)
+  if (browserLang) {
+    return redirectToLanguage(request, browserLang);
+  }
+  const countryMarket = country ? MARKET_BY_COUNTRY[country] : undefined;
+  if (countryMarket && countryMarket !== "de") {
+    return redirectToLanguage(request, countryMarket);
   }
 
-  // Alle anderen → Englisch (nicht laenderbezogen)
   return redirectToLanguage(request, "en");
 }
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|images|favicon|manifest|robots.txt|sitemap.xml|llms.txt|llms-en.txt|llms-tr.txt|llms-full.txt|.*\\..*).*)",
+    "/((?!api|_next/static|_next/image|images|favicon|manifest|robots.txt|sitemap.xml|llms|.*\\..*).*)",
   ],
 };

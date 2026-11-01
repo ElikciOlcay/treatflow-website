@@ -5,13 +5,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, Share2, Shield } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import { blogTopicAlternates } from '@/lib/blog-intl';
 
 export const metadata: Metadata = {
     title: 'DSGVO Kosmetikstudio: Datenschutz ohne Panik',
     description: 'Kundendaten, Fotos, Anamnese – was du speichern darfst, was du brauchst und wie du DSGVO-konform bleibst.',
     keywords: ['DSGVO Kosmetikstudio', 'Datenschutz Beauty', 'Kundendaten speichern', 'DSGVO konform Beauty', 'Kosmetikstudio Datenschutz'],
     authors: [{ name: 'Olcay Elikci' }],
-    alternates: { canonical: 'https://www.treatflow.io/blog/dsgvo-datenschutz-kosmetikstudio' },
+    alternates: { canonical: 'https://www.treatflow.io/blog/dsgvo-datenschutz-kosmetikstudio', languages: blogTopicAlternates('gdpr-beauty-salon') },
     openGraph: {
         title: 'DSGVO im Kosmetikstudio: Datenschutz ohne Panik',
         description: 'Kundendaten, Fotos, Anamnese – was du speichern darfst und wie du DSGVO-konform bleibst.',

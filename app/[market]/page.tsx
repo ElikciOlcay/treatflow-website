@@ -7,7 +7,9 @@ import {
   getCountryHomePage,
   type CountryHomeMarket,
 } from "@/app/i18n/markets/country-homes";
-import { isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
+import { isBundleLang, isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
+import { getLocaleContent } from "@/app/i18n/locales";
+import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 
 export async function generateMetadata({
   params,
@@ -17,6 +19,16 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
+  if (isBundleLang(market)) {
+    const { homeMeta } = getLocaleContent(market);
+    return buildPageMetadata({
+      pageKey: "home",
+      locale: market,
+      title: homeMeta.title,
+      description: homeMeta.description,
+      keywords: homeMeta.keywords,
+    });
+  }
   const meta = countryHomeMeta[market as CountryHomeMarket];
   return buildPageMetadata({
     pageKey: "home",
@@ -48,6 +60,16 @@ export default async function MarketHome({
   const market = raw as PrefixedMarket;
   if (market === "en") {
     return <HomePageEn />;
+  }
+  if (isBundleLang(market)) {
+    return (
+      <HomePageIntl
+        content={{
+          ...getLocaleContent(market).home,
+          earlyAccessHref: APP_REGISTER_BY_MARKET[market],
+        }}
+      />
+    );
   }
   return <HomePageIntl content={getCountryHomePage(market as CountryHomeMarket)} />;
   // TR wird als CountryHomeMarket via HomePageIntl gerendert

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CheckCircle, X, ArrowRight } from "lucide-react";
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
-import type { PrefixedMarket } from "@/app/i18n/config";
+import { htmlLangTags, type PrefixedMarket } from "@/app/i18n/config";
 import { getUiChrome } from "@/app/i18n/markets/ui-chrome";
 import { marketPagePath } from "@/app/i18n/market-routes";
 
@@ -36,7 +36,7 @@ export default function EnComparisonPage({
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    inLanguage: market === "tr" ? "tr" : "en",
+    inLanguage: htmlLangTags[market],
     mainEntity: content.faqs.map((item) => ({
       "@type": "Question",
       name: item.q,

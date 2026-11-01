@@ -32,30 +32,11 @@ const nextConfig: NextConfig = {
           { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
       },
-      {
-        source: '/en',
-        headers: [
-          { key: 'Content-Language', value: 'en' },
-        ],
-      },
-      {
-        source: '/en/:path*',
-        headers: [
-          { key: 'Content-Language', value: 'en' },
-        ],
-      },
-      {
-        source: '/tr',
-        headers: [
-          { key: 'Content-Language', value: 'tr' },
-        ],
-      },
-      {
-        source: '/tr/:path*',
-        headers: [
-          { key: 'Content-Language', value: 'tr' },
-        ],
-      },
+      // Content-Language je Sprach-Prefix
+      ...['en', 'tr', 'nl', 'it', 'pl', 'es', 'fr'].flatMap((lang) => [
+        { source: `/${lang}`, headers: [{ key: 'Content-Language', value: lang }] },
+        { source: `/${lang}/:path*`, headers: [{ key: 'Content-Language', value: lang }] },
+      ]),
     ];
   },
 
@@ -94,8 +75,6 @@ const nextConfig: NextConfig = {
       { source: '/us/:path*', destination: '/en/:path*', permanent: true },
       { source: '/uk', destination: '/en', permanent: true },
       { source: '/uk/:path*', destination: '/en/:path*', permanent: true },
-      { source: '/nl', destination: '/en', permanent: true },
-      { source: '/nl/:path*', destination: '/en/:path*', permanent: true },
       { source: '/fi', destination: '/en', permanent: true },
       { source: '/fi/:path*', destination: '/en/:path*', permanent: true },
       { source: '/ie', destination: '/en', permanent: true },
@@ -107,13 +86,11 @@ const nextConfig: NextConfig = {
       { source: '/ae', destination: '/en', permanent: true },
       { source: '/ae/:path*', destination: '/en/:path*', permanent: true },
 
-      // Legacy Sprach-Locales → Englisch
-      { source: '/es', destination: '/en', permanent: true },
-      { source: '/es/:path*', destination: '/en/:path*', permanent: true },
-      { source: '/it', destination: '/en', permanent: true },
-      { source: '/it/:path*', destination: '/en/:path*', permanent: true },
-      { source: '/fr', destination: '/en', permanent: true },
-      { source: '/fr/:path*', destination: '/en/:path*', permanent: true },
+      // /es, /it, /fr, /nl sind wieder eigene Sprachen. Nur Early Access gibt es nicht mehr.
+      { source: '/es/acceso-anticipado', destination: '/es', permanent: true },
+      { source: '/it/accesso-anticipato', destination: '/it', permanent: true },
+      { source: '/fr/acces-anticipe', destination: '/fr', permanent: true },
+      { source: '/:lang(nl|it|pl|es|fr)/early-access', destination: '/:lang', permanent: true },
 
       // 404-Fixes: Alte URLs aus Search Console
       { source: '/cookie-richtlinie-eu', destination: '/datenschutz', permanent: true },

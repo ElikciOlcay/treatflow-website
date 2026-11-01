@@ -3,13 +3,14 @@
     "features": "Funciones",
     "industries": "Sectores",
     "pricing": "Precios",
+    "news": "Novedades",
     "contact": "Contacto",
     "login": "Iniciar sesión",
-    "tryFree": "Probar gratis",
-    "requestAccess": "Probar gratis"
+    "tryFree": "Prueba gratis",
+    "requestAccess": "Prueba gratis"
   },
   "footer": {
-    "tagline": "Tu asistente digital para el salón. Hecho en Austria.",
+    "tagline": "Tu asistente digital para el centro. Made in Austria.",
     "features": "Funciones",
     "industries": "Sectores",
     "product": "Producto",
@@ -18,20 +19,20 @@
     "aboutUs": "Sobre nosotros",
     "contact": "Contacto",
     "pricing": "Precios",
-    "tryFree": "Probar gratis",
-    "requestAccess": "Probar gratis",
+    "tryFree": "Prueba gratis",
+    "requestAccess": "Prueba gratis",
     "login": "Iniciar sesión",
     "privacy": "Política de privacidad",
-    "terms": "Términos del servicio",
+    "terms": "Condiciones del servicio",
     "rights": "Todos los derechos reservados."
   },
   "common": {
-    "tryFree": "Prueba gratuita de 14 días",
-    "requestAccess": "Probar gratis",
-    "bookDemo": "Probar gratis",
+    "tryFree": "Prueba gratis 14 días",
+    "requestAccess": "Prueba gratis",
+    "bookDemo": "Prueba gratis",
     "learnMore": "Más información",
     "noCreditCard": "Sin tarjeta de crédito",
     "cancelAnytime": "Cancela cuando quieras",
-    "waitlistNote": "Empieza tu prueba gratuita en minutos. Sin tarjeta de crédito."
+    "waitlistNote": "Empieza tu prueba gratuita en pocos minutos. Sin tarjeta de crédito."
   }
 }

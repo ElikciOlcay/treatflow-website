@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, Share2, Heart, Star, CheckCircle, TrendingUp } from 'lucide-react';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../../components/Breadcrumbs';
+import { blogTopicAlternates } from '@/lib/blog-intl';
 
 
 const relatedPosts = [
@@ -25,9 +26,7 @@ export const metadata: Metadata = {
     description: 'Entdecke die wirksamsten Methoden, um Kundinnen langfristig zu binden und die Wiederkehrrate in deinem Kosmetikstudio zu erhöhen.',
     keywords: ["Kundenbindung Kosmetik", "Beauty Kundentreue", "Kosmetikstudio Stammkunden", "Beauty Customer Retention", "Kosmetik Kundenservice", "Beauty Loyalty"],
     authors: [{ name: 'Olcay Elikci' }],
-    alternates: {
-        canonical: 'https://www.treatflow.io/blog/kundenbindung-kosmetikstudio-5-strategien',
-    },
+    alternates: { canonical: 'https://www.treatflow.io/blog/kundenbindung-kosmetikstudio-5-strategien', languages: blogTopicAlternates('client-retention') },
     openGraph: {
         title: '5 Strategien für Kundenbindung im Kosmetikstudio',
         description: 'Entdecke die wirksamsten Methoden, um Kundinnen langfristig zu binden und die Wiederkehrrate in deinem Kosmetikstudio zu erhöhen.',

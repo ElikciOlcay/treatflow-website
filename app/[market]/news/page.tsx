@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { buildPageMetadata } from "@/app/i18n/seo";
 import { isPrefixedMarket, marketLanguage, type PrefixedMarket } from "@/app/i18n/config";
 import { isTrMarket } from "@/app/i18n/markets/market-content";
+import { isBundleLang } from "@/app/i18n/config";
 import {
   categoryLabel,
   formatPublishedDate,
@@ -41,7 +42,7 @@ export async function generateMetadata({
   params: Promise<{ market: string }>;
 }) {
   const { market: raw } = await params;
-  if (!isPrefixedMarket(raw) || isTrMarket(raw)) return {};
+  if (!isPrefixedMarket(raw) || isTrMarket(raw) || isBundleLang(raw)) return {};
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
   const copy = newsCopy[lang] ?? newsCopy.en;
@@ -59,7 +60,7 @@ export default async function NewsPage({
   params: Promise<{ market: string }>;
 }) {
   const { market: raw } = await params;
-  if (!isPrefixedMarket(raw) || isTrMarket(raw)) notFound();
+  if (!isPrefixedMarket(raw) || isTrMarket(raw) || isBundleLang(raw)) notFound();
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
   const copy = newsCopy[lang] ?? newsCopy.en;

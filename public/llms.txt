@@ -8,7 +8,7 @@
 - Über 500 Studios nutzen Treatflow
 - 4,6/5 Sterne auf Google (19 Bewertungen)
 - Zielgruppe: Kosmetikstudios, Nagelstudios, Lash Studios, Permanent Makeup Studios, Laserstudios, Tattoo Studios, Spa & Wellness, Massage-Praxen, Ästhetische Medizin
-- Sprachen der Website: Deutsch (Hauptsprache), English unter /en, Türkçe unter /tr
+- Sprachen der Website: Deutsch (Hauptsprache), English /en, Nederlands /nl, Italiano /it, Polski /pl, Español /es, Français /fr, Türkçe /tr
 - Self-Serve-Registrierung: weltweit, 14 Tage Test, https://app.treatflow.io/auth/register
 - Hosting: EU-Server, DSGVO-konform / GDPR
 
@@ -209,3 +209,16 @@ Für detaillierte Informationen siehe: https://www.treatflow.io/llms-full.txt
 ## Maschinenlesbare Fakten (JSON)
 
 Strukturierter JSON-Endpoint mit allen Kernfakten (Preise, Features, Branchen, Vergleiche, FAQ) für direkte Verarbeitung durch AI-Systeme: https://www.treatflow.io/api/facts
+
+## Sprachversionen
+
+- Deutsch (Hauptsprache): https://www.treatflow.io – llms.txt
+- English: https://www.treatflow.io/en – https://www.treatflow.io/llms-en.txt
+- Nederlands: https://www.treatflow.io/nl – https://www.treatflow.io/llms-nl.txt
+- Italiano: https://www.treatflow.io/it – https://www.treatflow.io/llms-it.txt
+- Polski: https://www.treatflow.io/pl – https://www.treatflow.io/llms-pl.txt
+- Español: https://www.treatflow.io/es – https://www.treatflow.io/llms-es.txt
+- Français: https://www.treatflow.io/fr – https://www.treatflow.io/llms-fr.txt
+- Türkçe: https://www.treatflow.io/tr – https://www.treatflow.io/llms-tr.txt
+
+Internationaler Blog: https://www.treatflow.io/en/blog (sowie /nl/blog, /it/blog, /pl/blog, /es/blog, /fr/blog, /tr/blog)
