@@ -1,6 +1,6 @@
 import {
+  isPrefixedMarket,
   marketLanguage,
-  marketPathPrefix,
   markets,
   type Market,
   type PrefixedMarket,
@@ -16,18 +16,21 @@ export const APP_BASE_URL =
   process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "") ||
   "https://app.treatflow.io";
 
-/** Sprachen, die die App aktuell per ?lang= zuverlaessig uebernimmt. */
-export type AppHandoffLanguage = "de" | "en" | "tr";
+/** Sprachen, die die App per ?lang= uebernimmt (tfv2: app/lib/i18n.ts). */
+export type AppHandoffLanguage = "de" | "en" | "tr" | "nl" | "it" | "pl";
+
+const APP_LANGUAGES: readonly AppHandoffLanguage[] = ["de", "en", "tr", "nl", "it", "pl"];
 
 /**
  * Website-Markt-/Dictionary-Sprache → App-?lang=.
- * nl/fi fallen vorerst auf en, bis die App-UI dafuer fertig ist.
+ * es/fr/fi gibt es in der App (noch) nicht → en.
  */
 export function toAppLanguage(
   language: string | null | undefined
 ): AppHandoffLanguage {
-  if (language === "de") return "de";
-  if (language === "tr") return "tr";
+  if (language && (APP_LANGUAGES as readonly string[]).includes(language)) {
+    return language as AppHandoffLanguage;
+  }
   return "en";
 }
 
@@ -85,12 +88,9 @@ export function isExternalCta(_market?: Market | string): boolean {
   return true;
 }
 
-/** Locale-/Markt-Strings → aktive Site-Sprache (de | en | tr). */
+/** Locale-/Markt-Strings → aktive Site-Sprache. */
 function resolveMarket(value: string): Market {
-  if (value === "de" || value === "en" || value === "tr") return value;
-  if (isMarketLike(value)) {
-    return value === "de" ? "de" : value === "tr" ? "tr" : "en";
-  }
+  if (value === "de" || isPrefixedMarket(value)) return value;
   return "en";
 }
 
@@ -128,10 +128,6 @@ export const APP_LOGIN_BY_LOCALE = APP_LOGIN_BY_MARKET;
 /** @deprecated Alias – Early Access gibt es nicht mehr. */
 export function getEarlyAccessPath(market: Market | string): string {
   return getPrimaryCtaPath(market);
-}
-
-function isMarketLike(value: string): value is Market {
-  return value in marketPathPrefix;
 }
 
 /** Hilfs-Typ fuer Call-Sites die PrefixedMarket uebergeben. */

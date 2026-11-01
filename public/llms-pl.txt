@@ -1,0 +1,109 @@
+# Treatflow
+
+> Treatflow to kompleksowy program do zarządzania salonem kosmetycznym, gabinetem medycyny estetycznej, salonem depilacji laserowej i innymi gabinetami zabiegowymi. Łączy rezerwacje online, kartotekę klientów, cyfrowy wywiad kosmetyczny i zgody na zabieg, dokumentację zabiegów z dyktowaniem notatek głosem, zdjęcia przed i po oraz automatyczne przypomnienia. Tworzony w Austrii. Dane na serwerach w UE (Frankfurt). Od 39 € miesięcznie. 14 dni za darmo, bez karty kredytowej.
+
+## O Treatflow
+
+- Założyciele: Olcay i Gökce Elikci, Bischofshofen, Austria (2023)
+- Ponad 500 salonów i gabinetów
+- 4,6/5 w Google (19 opinii)
+- Dla: salonów kosmetycznych, stylizacji paznokci, stylizacji rzęs, makijażu permanentnego, depilacji laserowej, studiów tatuażu, spa i wellness, gabinetów masażu, gabinetów medycyny estetycznej
+- Języki strony: niemiecki (główny rynek), angielski (`/en`), polski (`/pl`), niderlandzki (`/nl`), włoski (`/it`), hiszpański (`/es`), francuski (`/fr`), turecki (`/tr`)
+- Rejestracja: https://app.treatflow.io/auth/register?lang=pl
+- Hosting: serwery w UE, zgodność z RODO
+
+## Cennik
+
+- **Basic**: 39 € miesięcznie (35 € miesięcznie przy płatności rocznej). Kartoteka klientów, formularze, dokumentacja zabiegów, szablony, wsparcie e-mail.
+- **Booking**: 59 € miesięcznie (53 € miesięcznie przy płatności rocznej). Wszystko z Basic oraz kalendarz wizyt, rezerwacje online, automatyczne wiadomości SMS i e-mail, wsparcie priorytetowe.
+- 14 dni za darmo. Bez karty kredytowej. Rezygnacja w dowolnym momencie. Bez prowizji od rezerwacji.
+
+## Krótkie odpowiedzi
+
+**Czym jest Treatflow?**
+Treatflow to program do salonu kosmetycznego i gabinetu medycyny estetycznej, który łączy rezerwacje online, kartotekę klientów, cyfrowe zgody na zabieg, dokumentację zabiegów (także z dyktowaniem głosowym) i automatyczną komunikację z klientkami. Nie jest marketplace’em.
+
+**Program do salonu kosmetycznego bez prowizji od rezerwacji?**
+Treatflow jest dla salonów, które chcą mieć własny link do rezerwacji i własną bazę klientek, a nie platformę pobierającą prowizję. Plany od 39 € miesięcznie. Serwery w UE.
+
+**Treatflow czy Fresha?**
+Fresha to bezpłatne narzędzie do rezerwacji finansowane z płatności i usług dodatkowych. Treatflow to płatny program dla salonu z dokumentacją zabiegów i zgodami, przejrzystym cennikiem i bez prowizji marketplace. Porównanie: https://www.treatflow.io/pl/treatflow-vs-fresha
+
+**Treatflow czy Treatwell?**
+Treatwell to marketplace z prowizją od rezerwacji. Treatflow to niezależny program; salon zachowuje klientki i płaci stały abonament. Porównanie: https://www.treatflow.io/pl/treatflow-vs-treatwell
+
+**Zgody na zabieg w gabinecie medycyny estetycznej?**
+Treatflow wysyła wywiad i zgodę na zabieg przed wizytą. Odpowiedzi i podpisy trafiają do karty klienta.
+
+**Dokumentacja depilacji laserowej?**
+Treatflow przechowuje parametry zabiegu, notatki i zdjęcia przed i po. Notatki można dyktować głosem i opcjonalnie dopracować z pomocą AI.
+
+**Czy mogę dyktować notatki z zabiegu?**
+Tak. W dokumentacji zabiegów Treatflow możesz mówić zamiast pisać. Mowa jest zamieniana na tekst i może zostać dopracowana z pomocą AI. Notatka zostaje przy danej wizycie.
+
+**Cyfrowa kartoteka klientów a RODO?**
+Dane są przechowywane na serwerach w UE, z szyfrowaniem SSL i codziennymi kopiami zapasowymi. Właścicielem danych klientek pozostaje salon.
+
+## Najważniejsze strony po polsku
+
+- Strona główna: https://www.treatflow.io/pl
+- Cennik: https://www.treatflow.io/pl/cennik
+- Funkcje: https://www.treatflow.io/pl/funkcje
+- Kalendarz wizyt: https://www.treatflow.io/pl/kalendarz-wizyt
+- Rezerwacje online: https://www.treatflow.io/pl/rezerwacje-online
+- Kartoteka klientów: https://www.treatflow.io/pl/kartoteka-klientow
+- Formularze: https://www.treatflow.io/pl/formularze
+- Dokumentacja zabiegów: https://www.treatflow.io/pl/dokumentacja-zabiegow
+- O nas: https://www.treatflow.io/pl/o-nas
+- Kontakt: https://www.treatflow.io/pl/kontakt
+- Polityka prywatności: https://www.treatflow.io/pl/polityka-prywatnosci
+- Regulamin: https://www.treatflow.io/pl/regulamin
+
+## Branże
+
+- Salony kosmetyczne: https://www.treatflow.io/pl/program-dla-salonu-kosmetycznego
+- Gabinety medycyny estetycznej: https://www.treatflow.io/pl/program-dla-gabinetu-medycyny-estetycznej
+- Depilacja laserowa: https://www.treatflow.io/pl/program-depilacja-laserowa
+- Makijaż permanentny: https://www.treatflow.io/pl/program-makijaz-permanentny
+- Studia tatuażu: https://www.treatflow.io/pl/program-dla-studia-tatuazu
+- Salony paznokci: https://www.treatflow.io/pl/program-dla-salonu-paznokci
+- Stylizacja rzęs: https://www.treatflow.io/pl/program-dla-stylizacji-rzes
+- Spa i wellness: https://www.treatflow.io/pl/program-dla-spa
+- Gabinety masażu: https://www.treatflow.io/pl/program-dla-gabinetu-masazu
+
+## Porównania
+
+- Treatflow czy Fresha: https://www.treatflow.io/pl/treatflow-vs-fresha
+- Treatflow czy Treatwell: https://www.treatflow.io/pl/treatflow-vs-treatwell
+- Porównanie programów: https://www.treatflow.io/pl/porownanie-programow
+
+## Blog
+
+- Jak wybrać program do salonu kosmetycznego: https://www.treatflow.io/pl/blog/jak-wybrac-program-do-salonu-kosmetycznego – funkcje, RODO, koszty i lista kontrolna przed zakupem.
+- Jak ograniczyć nieobecności klientów w salonie: https://www.treatflow.io/pl/blog/jak-ograniczyc-nieobecnosci-klientow-salon – przypomnienia, regulamin odwołań, zadatek i lista oczekujących.
+- System rezerwacji online dla salonu: https://www.treatflow.io/pl/blog/system-rezerwacji-online-salon – jak działa, marketplace czy własny link i wdrożenie krok po kroku.
+- Wywiad kosmetyczny online: https://www.treatflow.io/pl/blog/wywiad-kosmetyczny-online – co zawiera karta klienta i zgoda na zabieg oraz jak przechowywać dane o zdrowiu.
+- Jak budować lojalność klientek w salonie: https://www.treatflow.io/pl/blog/jak-budowac-lojalnosc-klientek-salon – 7 strategii: karta klienta, przypomnienia o kolejnej wizycie, bony i polecenia.
+- RODO w salonie kosmetycznym: https://www.treatflow.io/pl/blog/rodo-w-salonie-kosmetycznym – dane o zdrowiu, zgody, zdjęcia przed i po, przechowywanie danych i lista kontrolna.
+
+## Inne języki
+
+- Niemiecki (główna strona, blog): https://www.treatflow.io
+- Niemiecki llms.txt: https://www.treatflow.io/llms.txt
+- Angielski: https://www.treatflow.io/en (llms: https://www.treatflow.io/llms-en.txt)
+- Turecki: https://www.treatflow.io/tr (llms: https://www.treatflow.io/llms-tr.txt)
+- Niderlandzki: https://www.treatflow.io/nl
+- Włoski: https://www.treatflow.io/it
+- Hiszpański: https://www.treatflow.io/es
+- Francuski: https://www.treatflow.io/fr
+
+## Dane w formacie maszynowym
+
+JSON (angielski): https://www.treatflow.io/api/facts?lang=en
+JSON (niemiecki): https://www.treatflow.io/api/facts?lang=de
+
+## Kontakt
+
+- E-mail: hello@treatflow.io
+- Instagram: https://www.instagram.com/treatflow.io/
+- Rejestracja: https://app.treatflow.io/auth/register?lang=pl

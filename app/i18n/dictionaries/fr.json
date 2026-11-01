@@ -1,8 +1,9 @@
 {
   "nav": {
     "features": "Fonctionnalités",
-    "industries": "Secteurs",
+    "industries": "Métiers",
     "pricing": "Tarifs",
+    "news": "Nouveautés",
     "contact": "Contact",
     "login": "Connexion",
     "tryFree": "Essai gratuit",
@@ -11,7 +12,7 @@
   "footer": {
     "tagline": "Votre assistant digital pour l'institut. Made in Austria.",
     "features": "Fonctionnalités",
-    "industries": "Secteurs",
+    "industries": "Métiers",
     "product": "Produit",
     "company": "Entreprise",
     "legal": "Mentions légales",
@@ -26,12 +27,12 @@
     "rights": "Tous droits réservés."
   },
   "common": {
-    "tryFree": "Essai gratuit de 14 jours",
+    "tryFree": "Essayer gratuitement 14 jours",
     "requestAccess": "Essai gratuit",
     "bookDemo": "Essai gratuit",
     "learnMore": "En savoir plus",
     "noCreditCard": "Sans carte bancaire",
     "cancelAnytime": "Résiliable à tout moment",
-    "waitlistNote": "Démarrez votre essai gratuit en quelques minutes. Aucune carte bancaire requise."
+    "waitlistNote": "Lancez votre essai gratuit en quelques minutes. Sans carte bancaire."
   }
 }

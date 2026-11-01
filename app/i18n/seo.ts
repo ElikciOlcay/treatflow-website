@@ -8,7 +8,8 @@ import {
   siteLanguages,
   prefixedMarkets,
 } from "./config";
-import { EN_SLUGS, TR_SLUG_OVERRIDES, type MarketPageSlug } from "./market-routes";
+import { EN_SLUGS, marketSlug, type MarketPageSlug } from "./market-routes";
+import { isBundleLang } from "./config";
 
 /** Logische Seiten-IDs fuer hreflang-Zuordnung ueber Maerkte hinweg. */
 export type SeoPageKey =
@@ -87,7 +88,10 @@ const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
 
 type PageSlugMap = Partial<Record<Market, string>>;
 
-/** Alle Maerkte die in hreflang/Sitemap erscheinen sollen (inkl. TR). */
+/** Seiten, die es in den Bundle-Sprachen (NL/IT/PL/ES/FR) nicht gibt. */
+const NOT_IN_BUNDLE_LANGS: readonly SeoPageKey[] = ["news", "try-forms", "early-access", "point-of-sale"];
+
+/** Alle Maerkte die in hreflang/Sitemap erscheinen sollen. */
 const seoMarkets: readonly Market[] = ["de", ...prefixedMarkets];
 
 function buildSlugMap(pageKey: SeoPageKey): PageSlugMap {
@@ -101,16 +105,16 @@ function buildSlugMap(pageKey: SeoPageKey): PageSlugMap {
     return map;
   }
 
-  // Alle SEO-Maerkte (DE + EN + TR) bekommen Slugs
+  // Alle SEO-Maerkte bekommen Slugs (lokalisiert fuer TR/NL/IT/PL/ES/FR)
   for (const market of seoMarkets) {
     if (market === "de") continue;
+    if (isBundleLang(market) && NOT_IN_BUNDLE_LANGS.includes(pageKey)) continue;
     if (pageKey === "early-access") {
       map[market] = EN_SLUGS[pageKey];
       continue;
     }
     if (enSlug !== undefined) {
-      map[market] =
-        market === "tr" ? TR_SLUG_OVERRIDES[enKey as MarketPageSlug] ?? enSlug : enSlug;
+      map[market] = marketSlug(market, enKey as MarketPageSlug);
     }
   }
   return map;
@@ -195,8 +199,9 @@ export function buildHreflangAlternates(
     if (url) languages[hreflangTags[market]] = url;
   });
 
-  // DACH-first, falls die Seite DE hat. TR-only Seiten zeigen auf sich selbst.
-  const xDefaultMarket = options?.xDefault ?? "de";
+  // x-default = Englisch (Fallback fuer alle nicht abgedeckten Sprachen),
+  // sonst DE. TR-only Seiten zeigen auf sich selbst.
+  const xDefaultMarket = options?.xDefault ?? (slugs.en !== undefined ? "en" : "de");
   const xDefaultSlug = slugs[xDefaultMarket] ?? slugs.de;
   if (xDefaultSlug !== undefined) {
     const xMarket = slugs[xDefaultMarket] !== undefined ? xDefaultMarket : "de";

@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import FeaturesPageEn from "@/app/components/FeaturesPageEn";
 import { buildPageMetadata } from "@/app/i18n/seo";
-import { isPrefixedMarket, marketLanguage, type PrefixedMarket } from "@/app/i18n/config";
+import { isBundleLang, isPrefixedMarket, marketLanguage, type PrefixedMarket } from "@/app/i18n/config";
+import { getLocaleContent } from "@/app/i18n/locales";
 
 const featuresMeta: Record<string, { title: string; description: string }> = {
   tr: {
@@ -20,7 +21,7 @@ export async function generateMetadata({
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const meta = featuresMeta[lang] ?? {
+  const meta = (isBundleLang(market) ? getLocaleContent(market).featuresMeta : featuresMeta[lang]) ?? {
     title: "Features for Salons and Clinics",
     description:
       "Appointment calendar, online booking without commission, client records, digital consent forms, treatment documentation with voice dictation, reminders and integrations – in one studio system.",

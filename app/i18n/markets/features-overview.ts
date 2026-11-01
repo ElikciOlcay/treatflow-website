@@ -15,6 +15,8 @@ import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 import { EN_SLUGS, marketPagePath, type MarketPageSlug } from "@/app/i18n/market-routes";
 import type { PrefixedMarket } from "@/app/i18n/config";
 import { getUiChrome } from "./ui-chrome";
+import { isBundleLang } from "@/app/i18n/config";
+import { getLocaleContent } from "@/app/i18n/locales";
 
 export type FeaturesOverviewCard = {
   href: string;
@@ -464,5 +466,6 @@ function trContent(): FeaturesOverviewContent {
 
 export function getFeaturesOverview(market: PrefixedMarket): FeaturesOverviewContent {
   if (market === "tr") return trContent();
+  if (isBundleLang(market)) return getLocaleContent(market).featuresOverview;
   return enContent(market);
 }

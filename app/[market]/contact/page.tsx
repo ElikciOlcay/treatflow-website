@@ -1,12 +1,13 @@
 import { notFound } from "next/navigation";
 import { buildPageMetadata } from "@/app/i18n/seo";
 import {
+  isBundleLang,
   isPrefixedMarket,
   marketLanguage,
   type PrefixedMarket,
 } from "@/app/i18n/config";
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
-import { getContactCopy } from "@/app/i18n/markets/static-pages-nl-fi";
+import { getLocaleContent } from "@/app/i18n/locales";
 
 const trContact = {
   metaTitle: "Treatflow ile İletişim",
@@ -35,7 +36,7 @@ export async function generateMetadata({
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "tr" ? trContact : lang === "nl" || lang === "fi" ? getContactCopy(lang) : enContact;
+  const content = lang === "tr" ? trContact : isBundleLang(market) ? getLocaleContent(market).contact : enContact;
   return buildPageMetadata({
     locale: market,
     pageKey: "contact",
@@ -53,7 +54,7 @@ export default async function ContactPage({
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
   const lang = marketLanguage[market];
-  const content = lang === "tr" ? trContact : lang === "nl" || lang === "fi" ? getContactCopy(lang) : enContact;
+  const content = lang === "tr" ? trContact : isBundleLang(market) ? getLocaleContent(market).contact : enContact;
   const registerUrl = APP_REGISTER_BY_MARKET[market];
   const ctaLabel =
     lang === "tr"

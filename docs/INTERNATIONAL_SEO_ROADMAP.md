@@ -2,55 +2,54 @@
 
 Zentrale Referenz für internationale Marketing-Seiten und Early Access.
 
-**Stand:** Juli 2026  
-**Technische Basis:** Next.js App Router, Locale-Subtrees (`/`, `/en`, `/es`, `/it`, `/fr`)
+**Stand:** November 2026
+**Technische Basis:** Next.js App Router, `app/[market]` für alle Sprachen außer DE (Root)
 
 ---
 
 ## Aktueller Status
 
-| Markt | URL | Sprache | Conversion | Status |
-|-------|-----|---------|------------|--------|
-| DACH | `/` | Deutsch | Self-Serve + Demo buchen | **live** |
-| Global EN | `/en` | Englisch | Early Access | **live** – Features + 9 Branchen |
-| Spanisch | `/es` | Español | Early Access | **live** – Features + 9 Branchen |
-| Italienisch | `/it` | Italiano | Early Access | **live** – Features + 9 Branchen |
-| Französisch | `/fr` | Français | Early Access | **live** – Features + 9 Branchen |
+| Sprache | URL | Inhalte | Blog | llms |
+|---------|-----|---------|------|------|
+| Deutsch | `/` | komplett (inkl. DACH-only: Kasse, Pay, NiSV) | `/blog` | `llms.txt` |
+| Englisch | `/en` | komplett | `/en/blog` | `llms-en.txt` |
+| Türkisch | `/tr` | komplett + Ratgeber `/tr/rehber` | `/tr/blog` | `llms-tr.txt` |
+| Niederländisch | `/nl` | komplett | `/nl/blog` | `llms-nl.txt` |
+| Italienisch | `/it` | komplett | `/it/blog` | `llms-it.txt` |
+| Polnisch | `/pl` | komplett | `/pl/blog` | `llms-pl.txt` |
+| Spanisch | `/es` | komplett | `/es/blog` | `llms-es.txt` |
+| Französisch | `/fr` | komplett | `/fr/blog` | `llms-fr.txt` |
 
-`/en-nl` wurde entfernt (301 → `/en`). Niederländisch `/nl` bleibt optional geplant.
-
-**Parität (Aug 2026):** Internationale Locales haben dieselben Kern-Funktionen und Branchenseiten wie die DE-Navigation (ohne Blog, ohne NiSV/TSE-DACH-Spezifika). Content über `industry-pages-intl.ts`, `extra-feature-pages-intl.ts`, `FeaturePageEn`, `InternationalSeoPage`.
+Nicht in NL/IT/PL/ES/FR: Neuigkeiten, Formulare testen, Kasse/POS, Early Access.
 
 ---
 
 ## Architektur
 
-- `app/i18n/config.ts` – Locales, Prefixes, Geo-Redirect
-- `app/i18n/seo.ts` – hreflang, `SeoPageKey`, Metadata
-- `app/i18n/market-access.ts` – CTA: Register (DE) vs Early Access (intl)
-- `app/i18n/markets/` – Content pro Markt
-- Shared UI: `HomePageIntl`, `FeaturePageEn`, `PricingPageIntl`, `EarlyAccessPage`
+- `app/i18n/config.ts` – Sprachen, Prefixe, Geo-Zuordnung (`MARKET_BY_COUNTRY`)
+- `app/i18n/market-routes.ts` – `EN_SLUGS` + `LOCALIZED_SLUGS` (lokale URLs je Sprache; ES/IT/FR = alte Slugs von 2026)
+- `middleware.ts` – rewritet `/nl/prijzen` → `/nl/pricing` (Ordner), 301t `/nl/pricing` → `/nl/prijzen`, Geo-/Browser-Redirect auf `/`
+- `app/i18n/seo.ts` – hreflang für alle Sprachen, x-default = Englisch
+- `app/i18n/locales/<lang>/` – Inhalte NL/IT/PL/ES/FR (`general.ts` + `pages.ts`, Vertrag `locales/types.ts`). Links als `/en/...` schreiben, `getLocaleContent()` lokalisiert sie.
+- TR/EN: weiter über `app/i18n/markets/*`
+- Blog: `lib/blog-intl/` (Themen in `topics.ts`, Artikel in `posts/<lang>.ts`), Routen `app/[market]/blog`. Ein Thema verbindet alle Sprachfassungen + die deutsche Fassung per hreflang.
 
-### Neue Locale hinzufügen
+### Neuen Blogartikel international anlegen
 
-1. Locale in `config.ts`
-2. Slugs in `seo.ts`
-3. Content unter `markets/`
-4. Subtree `app/<locale>/`
-5. `sitemap.ts` + Middleware Geo
-6. Early-Access-Pfad in `market-access.ts`
-7. Diese Roadmap aktualisieren
+1. Thema in `lib/blog-intl/types.ts` (`BlogTopicId`) und `topics.ts` ergänzen (`deSlug`, Bild, pageKeys)
+2. Artikel je Sprache in `lib/blog-intl/posts/<lang>.ts` (answer-first, takeaways, FAQ)
+3. Sitemap, RSS (`/{lang}/blog/feed.xml`) und hreflang laufen automatisch
+4. Artikel in `public/llms-<lang>.txt` ergänzen
 
-### hreflang
+### Neue Sprache hinzufügen
 
-| Pfad | hreflang |
-|------|----------|
-| `/` | `de` |
-| `/en` | `en` |
-| `/es` | `es` |
-| `/it` | `it` |
-| `/fr` | `fr` |
-| x-default | `/en` |
+1. `config.ts` (markets, prefixedMarkets, bundleLanguages, Tabellen)
+2. Slugs in `LOCALIZED_SLUGS`
+3. `app/i18n/locales/<lang>/` nach `types.ts`
+4. Chrome-Texte: `ui-chrome.ts`, `dictionaries/<lang>.json`, NavigationEn/FooterEn
+5. Blog-UI in `lib/blog-intl/ui.ts`, Artikel in `posts/<lang>.ts`
+6. `public/llms-<lang>.txt`, `robots.ts`, `next.config.ts` (Content-Language)
+7. App-Sprache in `market-access.ts` (`APP_LANGUAGES`), falls die App sie kann
 
 Siehe auch `docs/GSC_INTERNATIONAL_CHECKLIST.md`.
 
@@ -58,9 +57,8 @@ Siehe auch `docs/GSC_INTERNATIONAL_CHECKLIST.md`.
 
 ## Conversion-Regeln
 
-- **DE:** Registrierung + HubSpot-Demo
-- **EN/ES/IT/FR:** nur Early-Access-Formular → `/api/demo-anfrage` → Loops an `olcay.elikci@treatflow.io`
-- Antwort-Templates: `docs/EARLY_ACCESS_INBOX.md`
+- **Alle Sprachen:** Self-Serve-Registrierung in der App mit `?lang=` (de/en/tr/nl/it/pl; es/fr → en)
+- **DE:** zusätzlich HubSpot-Demo
 
 ---
 

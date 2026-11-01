@@ -1,37 +1,38 @@
 {
   "nav": {
-    "features": "Funzionalità",
+    "features": "Funzioni",
     "industries": "Settori",
     "pricing": "Prezzi",
-    "contact": "Contatto",
+    "news": "Novità",
+    "contact": "Contatti",
     "login": "Accedi",
     "tryFree": "Prova gratis",
     "requestAccess": "Prova gratis"
   },
   "footer": {
     "tagline": "Il tuo assistente digitale per il centro estetico. Made in Austria.",
-    "features": "Funzionalità",
+    "features": "Funzioni",
     "industries": "Settori",
     "product": "Prodotto",
     "company": "Azienda",
-    "legal": "Legale",
+    "legal": "Note legali",
     "aboutUs": "Chi siamo",
-    "contact": "Contatto",
+    "contact": "Contatti",
     "pricing": "Prezzi",
     "tryFree": "Prova gratis",
     "requestAccess": "Prova gratis",
     "login": "Accedi",
-    "privacy": "Privacy Policy",
+    "privacy": "Informativa sulla privacy",
     "terms": "Termini di servizio",
     "rights": "Tutti i diritti riservati."
   },
   "common": {
-    "tryFree": "Prova gratuita di 14 giorni",
+    "tryFree": "Prova gratis per 14 giorni",
     "requestAccess": "Prova gratis",
     "bookDemo": "Prova gratis",
     "learnMore": "Scopri di più",
-    "noCreditCard": "Nessuna carta di credito richiesta",
-    "cancelAnytime": "Disdici in qualsiasi momento",
-    "waitlistNote": "Inizia la prova gratuita in pochi minuti. Nessuna carta di credito."
+    "noCreditCard": "Nessuna carta di credito",
+    "cancelAnytime": "Disdici quando vuoi",
+    "waitlistNote": "Inizia la prova gratuita in pochi minuti. Nessuna carta di credito richiesta."
   }
 }

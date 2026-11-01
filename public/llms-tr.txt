@@ -98,3 +98,22 @@ JSON (Almanca): https://www.treatflow.io/api/facts
 - E-posta: hello@treatflow.io
 - Instagram: https://www.instagram.com/treatflow.io/
 - Kayıt: https://app.treatflow.io/auth/register?lang=tr
+
+## Blog (Türkçe)
+
+- Randevuya Gelmeyen Müşteriler Nasıl Azaltılır? Salonlar İçin Adım Adım Plan: https://www.treatflow.io/tr/blog/randevuya-gelmeyen-musteri-azaltma
+- Salon Yazılımı Nasıl Seçilir? İhtiyaç Analizinden 30 Günlük Denemeye Karar Planı: https://www.treatflow.io/tr/blog/salon-yazilimi-nasil-secilir
+- Dijital Onam ve Anamnez Formu Nasıl Hazırlanır? Hizmete Göre Soru Listesi: https://www.treatflow.io/tr/blog/dijital-onam-formu-guzellik-salonu
+- Salonlar İçin Online Randevu Sistemi: Kurulum, Kurallar ve WhatsApp Akışı: https://www.treatflow.io/tr/blog/online-randevu-sistemi-salon
+- Güzellik Salonları İçin KVKK Rehberi: Müşteri Verisi, Fotoğraf ve Sağlık Bilgisi: https://www.treatflow.io/tr/blog/kvkk-guzellik-salonu
+- Güzellik Salonunda Müşteri Sadakati Nasıl Artırılır? Tekrar Randevu İçin 7 Yöntem: https://www.treatflow.io/tr/blog/musteri-sadakati-guzellik-salonu
+
+## Diğer diller
+
+- Deutsch: https://www.treatflow.io – https://www.treatflow.io/llms.txt
+- English: https://www.treatflow.io/en – https://www.treatflow.io/llms-en.txt
+- Nederlands: https://www.treatflow.io/nl – https://www.treatflow.io/llms-nl.txt
+- Italiano: https://www.treatflow.io/it – https://www.treatflow.io/llms-it.txt
+- Polski: https://www.treatflow.io/pl – https://www.treatflow.io/llms-pl.txt
+- Español: https://www.treatflow.io/es – https://www.treatflow.io/llms-es.txt
+- Français: https://www.treatflow.io/fr – https://www.treatflow.io/llms-fr.txt

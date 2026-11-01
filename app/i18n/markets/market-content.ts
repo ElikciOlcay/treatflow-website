@@ -1,16 +1,18 @@
 import type { PrefixedMarket } from "../config";
-import { marketLanguage } from "../config";
+import { isBundleLang, marketLanguage } from "../config";
+import { getLocaleContent } from "../locales";
+import type { IntlExtraFeatureKey } from "../locales/types";
 import type { InternationalPageContent } from "@/app/components/InternationalSeoPage";
 import type { FeaturePageProps } from "@/app/components/FeaturePageEn";
 import type { PricingIntlCopy } from "./pricing-intl";
 import { getPricingIntlCopy, type PricingLocale } from "./pricing-intl";
 import { getIndustryPage, type IndustryPageKey } from "./industry-pages-intl";
 import { getExtraFeaturePage } from "./extra-feature-pages-intl";
-import { getExtraFeaturePageNlFi } from "./extra-feature-pages-nl-fi";
-import { getIndustryPageNlFi } from "./industry-pages-nl-fi";
 import { getIndustryPageTr } from "./industry-pages-tr";
 import { getExtraFeaturePageTr } from "./extra-feature-pages-tr";
 import type { ExtraFeatureKey } from "../feature-slugs";
+import type { CoreKey } from "./core-feature-pages";
+import { getUiChrome } from "./ui-chrome";
 import { APP_REGISTER_BY_MARKET } from "../market-access";
 
 function selfServeCtaLabel(lang: string): string {
@@ -105,6 +107,12 @@ export function remapEnPaths<T>(value: T, market: PrefixedMarket): T {
 
 export function getMarketPricingCopy(market: PrefixedMarket): PricingIntlCopy {
   const lang = marketLanguage[market];
+  if (isBundleLang(market)) {
+    return {
+      ...getLocaleContent(market).pricing,
+      earlyAccessHref: APP_REGISTER_BY_MARKET[market],
+    };
+  }
   const pricingLocale: PricingLocale =
     lang === "nl" || lang === "fi" || lang === "tr" ? lang : "en";
   const copy = getPricingIntlCopy(pricingLocale);
@@ -123,8 +131,11 @@ export function getMarketIndustryPage(
   if (isTrMarket(market)) {
     return getIndustryPageTr(key, market);
   }
-  if (isNlFiMarket(market)) {
-    return getIndustryPageNlFi(market, key, market);
+  if (isBundleLang(market)) {
+    return {
+      ...getLocaleContent(market).industries[key],
+      locale: market,
+    };
   }
   const page = getIndustryPage("en", key);
   return {
@@ -146,16 +157,33 @@ export function getMarketExtraFeaturePage(
       earlyAccessHref: APP_REGISTER_BY_MARKET[market],
     };
   }
-  if (isNlFiMarket(market)) {
-    return {
-      ...getExtraFeaturePageNlFi(market, key),
-      ...cta,
-      earlyAccessHref: APP_REGISTER_BY_MARKET[market],
-    };
+  if (isBundleLang(market)) {
+    const page = getLocaleContent(market).extraFeatures[key as IntlExtraFeatureKey];
+    if (page) {
+      return { ...page, earlyAccessHref: APP_REGISTER_BY_MARKET[market] };
+    }
   }
   return {
     ...remapEnPaths(getExtraFeaturePage("en", key), market),
     ...cta,
     earlyAccessHref: APP_REGISTER_BY_MARKET[market],
+  };
+}
+
+/** Kernfunktionsseite (Kalender, Buchung, Kartei, Formulare, Doku) fuer Bundle-Sprachen. */
+export function getBundleCoreFeaturePage(
+  market: PrefixedMarket,
+  key: CoreKey
+): FeaturePageProps | null {
+  if (!isBundleLang(market)) return null;
+  const chrome = getUiChrome(market);
+  return {
+    ...getLocaleContent(market).coreFeatures[key],
+    earlyAccessHref: APP_REGISTER_BY_MARKET[market],
+    relatedTitle: chrome.relatedTitle,
+    trustItems: [...chrome.trustItems],
+    faqTitle: chrome.faqTitle,
+    faqBadge: chrome.faqBadge,
+    breadcrumbHomeHref: `/${market}`,
   };
 }

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Calendar, Clock, ArrowRight, TrendingUp, Users, Sparkles } from 'lucide-react';
 import { blogPosts } from '@/lib/blogPosts';
+import { blogIndexAlternates } from '@/lib/blog-intl';
 import NewsletterForm from '../components/NewsletterForm';
 
 export const metadata = {
@@ -13,6 +14,7 @@ export const metadata = {
     keywords: ['Kosmetikstudio Blog', 'Beauty Business Tipps', 'Kundenbindung Kosmetik', 'Praxisführung Beauty', 'Kosmetik Trends', 'Studio Management'],
     alternates: {
         canonical: 'https://www.treatflow.io/blog',
+        languages: blogIndexAlternates(),
     },
     openGraph: {
         title: 'Kosmetikstudio Blog - Tipps & Trends für Beauty-Profis',

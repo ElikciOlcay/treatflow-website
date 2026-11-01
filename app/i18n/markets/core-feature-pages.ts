@@ -24,6 +24,7 @@ import type { FeaturePageProps } from "@/app/components/FeaturePageEn";
 import { marketLanguage, marketPathPrefix, type PrefixedMarket } from "@/app/i18n/config";
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 import { getUiChrome } from "./ui-chrome";
+import { getBundleCoreFeaturePage } from "./market-content";
 
 type CoreKey =
   | "appointment-calendar"
@@ -856,6 +857,8 @@ export function getCoreFeaturePage(
   market: PrefixedMarket,
   key: CoreKey
 ): FeaturePageProps {
+  const bundled = getBundleCoreFeaturePage(market, key);
+  if (bundled) return bundled;
   const lang = resolveCoreLang(market);
   const primaryCta =
     lang === "tr"
