@@ -45,6 +45,7 @@ const clusterPages = [
     },
 ];
 import Navigation from '../components/Navigation';
+import ProductVideoSection from '../components/ProductVideoSection';
 import Footer from '../components/Footer';
 import QuickFacts from '../components/QuickFacts';
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from '../components/AiAnswerCapsule';
@@ -401,6 +402,14 @@ export default function KosmetikstudioSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <ProductVideoSection
+                title="Treatflow fürs Kosmetikstudio in einer Minute"
+                description="Online-Buchung, Kalender, digitale Anamnese und Doku per Sprachdiktat – so läuft dein Kosmetikstudio mit Treatflow."
+                videoSrc="/videos/branchen/kosmetik.mp4"
+                posterSrc="/images/video/branchen/kosmetik-poster.jpg"
+                posterAlt="Video: Treatflow fürs Kosmetikstudio in einer Minute"
+            />
 
             {/* Pain Points Section */}
             <section className="py-20 bg-white">

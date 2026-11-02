@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
 import Navigation from '../components/Navigation';
+import ProductVideoSection from '../components/ProductVideoSection';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
@@ -289,6 +290,14 @@ export default function AesthetischeMedizinSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <ProductVideoSection
+                title="Treatflow für ästhetische Medizin in einer Minute"
+                description="Online-Buchung, digitale Aufklärung mit Unterschrift und Behandlungsdoku per Diktat."
+                videoSrc="/videos/branchen/aesthetik.mp4"
+                posterSrc="/images/video/branchen/aesthetik-poster.jpg"
+                posterAlt="Video: Treatflow für ästhetische Medizin in einer Minute"
+            />
 
             {/* Pain Points Section */}
             <section className="py-20 bg-white">

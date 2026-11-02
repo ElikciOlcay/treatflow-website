@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
 import Navigation from '../components/Navigation';
+import ProductVideoSection from '../components/ProductVideoSection';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
@@ -210,6 +211,14 @@ export default function TattooStudioSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <ProductVideoSection
+                title="Treatflow fürs Tattoo-Studio in einer Minute"
+                description="Online-Buchung, Kalender für alle Artists, digitale Einverständniserklärung und Session-Doku per Diktat."
+                videoSrc="/videos/branchen/tattoo.mp4"
+                posterSrc="/images/video/branchen/tattoo-poster.jpg"
+                posterAlt="Video: Treatflow fürs Tattoo-Studio in einer Minute"
+            />
 
             {/* Pain Points Section */}
             <section className="py-20 bg-white">

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
 import Navigation from '../components/Navigation';
+import ProductVideoSection from '../components/ProductVideoSection';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
@@ -210,6 +211,14 @@ export default function LaserHaarentfernungSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <ProductVideoSection
+                title="Treatflow fürs Laserstudio in einer Minute"
+                description="Online-Buchung, Laserräume im Kalender, Anamnese mit Unterschrift und Laser-Doku per Diktat."
+                videoSrc="/videos/branchen/laser.mp4"
+                posterSrc="/images/video/branchen/laser-poster.jpg"
+                posterAlt="Video: Treatflow fürs Laserstudio in einer Minute"
+            />
 
             {/* Pain Points Section */}
             <section className="py-20 bg-white">
