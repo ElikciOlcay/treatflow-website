@@ -5,6 +5,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
+import ProductVideoSection from '../components/ProductVideoSection';
 import {
     FeatureUnderstand,
     FeatureHowItWorks,
@@ -140,6 +141,14 @@ export default function BehandlungsdokumentationPage() {
                     src: '/images/mockups/dokumentation-hero.png',
                     alt: 'Treatflow Behandlungsdokumentation mit Fotos und Notizen',
                 }}
+            />
+
+            <ProductVideoSection
+                title="Behandlungsdoku in einer Minute erklärt"
+                description="Einfach einsprechen – die KI macht daraus eine saubere, strukturierte Dokumentation."
+                videoSrc="/videos/funktionen/behandlungsdokumentation.mp4"
+                posterSrc="/images/video/funktionen/behandlungsdokumentation-poster.jpg"
+                posterAlt="Video: Behandlungsdoku in einer Minute erklärt"
             />
 
             <FeatureUnderstand

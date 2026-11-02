@@ -8,6 +8,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
+import ProductVideoSection from '../components/ProductVideoSection';
 import {
     FeatureUnderstand,
     FeatureHowItWorks,
@@ -276,6 +277,14 @@ export default function KassensystemPage() {
                         </div>
                     </div>
                 }
+            />
+
+            <ProductVideoSection
+                title="Die Treatflow-Kasse in einer Minute erklärt"
+                description="Behandlungen und Produkte mit wenigen Klicks kassieren – mit TSE und RKSV."
+                videoSrc="/videos/funktionen/kassensystem.mp4"
+                posterSrc="/images/video/funktionen/kassensystem-poster.jpg"
+                posterAlt="Video: Die Treatflow-Kasse in einer Minute erklärt"
             />
 
             <FeatureUnderstand

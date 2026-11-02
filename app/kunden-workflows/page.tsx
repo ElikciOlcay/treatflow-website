@@ -5,6 +5,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
+import ProductVideoSection from '../components/ProductVideoSection';
 import {
     FeatureUnderstand,
     FeatureHowItWorks,
@@ -152,6 +153,14 @@ export default function KundenWorkflowsPage() {
                     src: '/images/mockups/kunden-workflows.jpg',
                     alt: 'Treatflow Workflow-Builder mit Auslöser, Wartezeit und Nachricht',
                 }}
+            />
+
+            <ProductVideoSection
+                title="Kunden-Workflows in einer Minute erklärt"
+                description="Automatische Abläufe nach der Behandlung: warten, nachfassen, bei neuer Buchung stoppen."
+                videoSrc="/videos/funktionen/kunden-workflows.mp4"
+                posterSrc="/images/video/funktionen/kunden-workflows-poster.jpg"
+                posterAlt="Video: Kunden-Workflows in einer Minute erklärt"
             />
 
             <FeatureUnderstand

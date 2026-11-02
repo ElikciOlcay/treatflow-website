@@ -4,14 +4,26 @@ import { useState } from "react";
 import Image from "next/image";
 import { Play } from "lucide-react";
 
-const VIDEO_SRC = "/videos/treatflow-produktfilm.mp4";
-const POSTER_SRC = "/images/video/treatflow-produktfilm-poster.jpg";
+type ProductVideoSectionProps = {
+    title?: string;
+    description?: string;
+    videoSrc?: string;
+    posterSrc?: string;
+    posterAlt?: string;
+};
 
 /**
- * Produktfilm direkt nach dem Hero. Bis zum Klick wird nur das Vorschaubild geladen,
- * erst dann das Video (mit Ton und Steuerung) – so bleibt die Startseite schnell.
+ * Video direkt nach dem Hero (Startseite: Produktfilm, Funktionsseiten: Funktionsvideo).
+ * Bis zum Klick wird nur das Vorschaubild geladen, erst dann das Video (mit Ton und
+ * Steuerung) – so bleibt die Seite schnell.
  */
-export default function ProductVideoSection() {
+export default function ProductVideoSection({
+    title = "Treatflow in einer Minute erklärt",
+    description = "Online-Buchung, Kalender, digitale Formulare, Doku per Sprachdiktat, Kasse und mehr – so sieht dein Studioalltag mit Treatflow aus.",
+    videoSrc = "/videos/treatflow-produktfilm.mp4",
+    posterSrc = "/images/video/treatflow-produktfilm-poster.jpg",
+    posterAlt = "Treatflow Produktfilm: Kalender, Online-Buchung und Kasse im Überblick",
+}: ProductVideoSectionProps) {
     const [playing, setPlaying] = useState(false);
 
     return (
@@ -19,18 +31,16 @@ export default function ProductVideoSection() {
             <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-8">
                     <h2 id="produktfilm-titel" className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
-                        Treatflow in einer Minute erklärt
+                        {title}
                     </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Online-Buchung, Kalender, digitale Formulare, Doku per Sprachdiktat, Kasse und mehr – so sieht dein Studioalltag mit Treatflow aus.
-                    </p>
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">{description}</p>
                 </div>
 
                 <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-900/5 bg-gray-900">
                     {playing ? (
                         <video
-                            src={VIDEO_SRC}
-                            poster={POSTER_SRC}
+                            src={videoSrc}
+                            poster={posterSrc}
                             controls
                             autoPlay
                             playsInline
@@ -44,11 +54,11 @@ export default function ProductVideoSection() {
                             type="button"
                             onClick={() => setPlaying(true)}
                             className="group absolute inset-0 w-full h-full cursor-pointer"
-                            aria-label="Produktfilm abspielen"
+                            aria-label={`Video abspielen: ${title}`}
                         >
                             <Image
-                                src={POSTER_SRC}
-                                alt="Treatflow Produktfilm: Kalender, Online-Buchung und Kasse im Überblick"
+                                src={posterSrc}
+                                alt={posterAlt}
                                 fill
                                 sizes="(max-width: 1024px) 100vw, 1024px"
                                 className="object-cover"

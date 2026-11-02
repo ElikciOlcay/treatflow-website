@@ -5,6 +5,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
+import ProductVideoSection from '../components/ProductVideoSection';
 import {
     FeatureUnderstand,
     FeatureHowItWorks,
@@ -134,6 +135,14 @@ export default function NachrichtenautomatisierungPage() {
                     src: '/images/lifestyle/sms-erinnerung-studio.png',
                     alt: 'WhatsApp-Erinnerung im Studio – Kundin erhält Terminerinnerung auf dem Smartphone',
                 }}
+            />
+
+            <ProductVideoSection
+                title="Automatische Nachrichten in einer Minute erklärt"
+                description="Bestätigungen und Erinnerungen per E-Mail oder WhatsApp – mit fertigen Vorlagen aus der Bibliothek."
+                videoSrc="/videos/funktionen/nachrichten.mp4"
+                posterSrc="/images/video/funktionen/nachrichten-poster.jpg"
+                posterAlt="Video: Automatische Nachrichten in einer Minute erklärt"
             />
 
             <FeatureUnderstand
