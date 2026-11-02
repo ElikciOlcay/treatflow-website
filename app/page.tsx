@@ -29,6 +29,7 @@ import SocialProofBar from "./components/SocialProofBar";
 import Footer from "./components/Footer";
 import { buildHreflangAlternates } from "./i18n/seo";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "./components/AiAnswerCapsule";
+import ProductVideoSection from "./components/ProductVideoSection";
 
 export const metadata: Metadata = {
   title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
@@ -348,6 +349,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Produktfilm direkt nach dem Hero */}
+        <ProductVideoSection />
 
         {/* 2. Trust + frühe Social Proof */}
         <section className="py-5 bg-gray-50 border-y border-gray-100">
