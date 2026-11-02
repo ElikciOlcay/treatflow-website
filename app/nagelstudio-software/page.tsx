@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
 import Navigation from '../components/Navigation';
+import ProductVideoSection from '../components/ProductVideoSection';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
@@ -123,6 +124,14 @@ export default function NagelstudioSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <ProductVideoSection
+                title="Treatflow fürs Nagelstudio in einer Minute"
+                description="Online-Buchung, Auffüllen im Blick, digitale Anamnese und Design-Doku per Diktat."
+                videoSrc="/videos/branchen/nagel.mp4"
+                posterSrc="/images/video/branchen/nagel-poster.jpg"
+                posterAlt="Video: Treatflow fürs Nagelstudio in einer Minute"
+            />
 
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

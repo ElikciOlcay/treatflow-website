@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Script from 'next/script';
 import Navigation from '../components/Navigation';
+import ProductVideoSection from '../components/ProductVideoSection';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
 import Breadcrumbs, { generateBreadcrumbSchema } from '../components/Breadcrumbs';
@@ -112,6 +113,14 @@ export default function FusspflegeSoftwarePage() {
                     </div>
                 </div>
             </section>
+
+            <ProductVideoSection
+                title="Treatflow für die Fußpflege in einer Minute"
+                description="Online-Buchung, Kalender fürs Team, Anamnese mit Vorerkrankungen und Doku per Diktat."
+                videoSrc="/videos/branchen/fusspflege.mp4"
+                posterSrc="/images/video/branchen/fusspflege-poster.jpg"
+                posterAlt="Video: Treatflow für die Fußpflege in einer Minute"
+            />
 
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
