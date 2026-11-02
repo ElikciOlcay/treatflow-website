@@ -5,6 +5,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
+import ProductVideoSection from '../components/ProductVideoSection';
 import {
     FeatureUnderstand,
     FeatureHowItWorks,
@@ -130,6 +131,14 @@ export default function OnlineBuchungenPage() {
                     src: '/images/mockups/online-buchung-hero.png',
                     alt: 'Treatflow Online-Buchungssystem – persönlicher Buchungslink',
                 }}
+            />
+
+            <ProductVideoSection
+                title="Online-Buchung in einer Minute erklärt"
+                description="So buchen deine Kundinnen rund um die Uhr selbst – und der Termin steht sofort in deinem Kalender."
+                videoSrc="/videos/funktionen/online-buchungen.mp4"
+                posterSrc="/images/video/funktionen/online-buchungen-poster.jpg"
+                posterAlt="Video: Online-Buchung in einer Minute erklärt"
             />
 
             <FeatureUnderstand

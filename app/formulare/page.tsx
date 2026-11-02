@@ -6,6 +6,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
+import ProductVideoSection from '../components/ProductVideoSection';
 import {
     FeatureUnderstand,
     FeatureHowItWorks,
@@ -123,6 +124,14 @@ export default function FormularePage() {
                     src: '/images/mockups/formulare-marketplace.png',
                     alt: 'Treatflow Formulare Marketplace mit Vorlagen und KI-Generator',
                 }}
+            />
+
+            <ProductVideoSection
+                title="Digitale Formulare in einer Minute erklärt"
+                description="Anamnese und Einwilligung digital ausfüllen, mit dem Finger unterschreiben, automatisch bei der Kundin."
+                videoSrc="/videos/funktionen/formulare.mp4"
+                posterSrc="/images/video/funktionen/formulare-poster.jpg"
+                posterAlt="Video: Digitale Formulare in einer Minute erklärt"
             />
 
             <FeatureUnderstand

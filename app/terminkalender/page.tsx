@@ -5,6 +5,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
+import ProductVideoSection from '../components/ProductVideoSection';
 import {
     FeatureUnderstand,
     FeatureHowItWorks,
@@ -174,6 +175,14 @@ export default function TerminkalenderPage() {
                     src: '/images/mockups/kalender-overview.png',
                     alt: 'Treatflow Terminkalender – Tagesansicht mit Mitarbeitern und Räumen',
                 }}
+            />
+
+            <ProductVideoSection
+                title="Der Terminkalender in einer Minute erklärt"
+                description="Termin per Klick anlegen, jede Mitarbeiterin in ihrer Spalte, Tag, Woche und Monat im Blick."
+                videoSrc="/videos/funktionen/terminkalender.mp4"
+                posterSrc="/images/video/funktionen/terminkalender-poster.jpg"
+                posterAlt="Video: Der Terminkalender in einer Minute erklärt"
             />
 
             <FeatureUnderstand

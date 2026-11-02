@@ -5,6 +5,7 @@ import SocialProofBar from '../components/SocialProofBar';
 import Script from 'next/script';
 import { generateBreadcrumbSchema } from '../components/Breadcrumbs';
 import FeatureHero, { FeatureTitleHighlight } from '../components/FeatureHero';
+import ProductVideoSection from '../components/ProductVideoSection';
 import {
     FeatureUnderstand,
     FeatureHowItWorks,
@@ -138,6 +139,14 @@ export default function KundenverwaltungPage() {
                     src: '/images/mockups/kundenverwaltung-overview.png',
                     alt: 'Treatflow Kundenkartei – Übersicht mit Suche und Detailansicht',
                 }}
+            />
+
+            <ProductVideoSection
+                title="Die Kundenverwaltung in einer Minute erklärt"
+                description="Die digitale Kundenakte mit Behandlungen, Terminen, Formularen und Notizen an einem Ort."
+                videoSrc="/videos/funktionen/kundenverwaltung.mp4"
+                posterSrc="/images/video/funktionen/kundenverwaltung-poster.jpg"
+                posterAlt="Video: Die Kundenverwaltung in einer Minute erklärt"
             />
 
             <FeatureUnderstand
