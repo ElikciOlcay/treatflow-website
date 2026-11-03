@@ -33,6 +33,11 @@ import {
   Users,
   Workflow,
   Zap,
+  CalendarClock,
+  Ban,
+  KeyRound,
+  BadgePercent,
+  CalendarCog,
 } from "lucide-react";
 import type { InternationalPageContent } from "@/app/components/InternationalSeoPage";
 import type { SeoPageKey } from "@/app/i18n/seo";
@@ -92,6 +97,9 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
       { icon: Clock, title: "Snel verzetten", desc: "Verplaats of verleng afspraken met eenvoudig slepen en neerzetten." },
       { icon: Smartphone, title: "Op elk apparaat", desc: "Beheer je agenda op desktop, tablet of telefoon." },
       { icon: Bell, title: "Automatische herinneringen", desc: "Minder no-shows dankzij automatische herinneringen via WhatsApp en e-mail." },
+      { icon: CalendarClock, title: "Roosterplanner", desc: "Plan de week van je team met diensten, sjablonen en afwezigheden. Online boeken toont dan alleen tijden binnen geplande diensten." },
+      { icon: Ban, title: "Tijdblokken & reeksen", desc: "Blokkeer pauzes, teamoverleg en vakantie – ook terugkerend. Kuren plan je als reeks met meerdere sessies." },
+      { icon: KeyRound, title: "Tablet met medewerker-pincode", desc: "Elk teamlid logt in met een eigen pincode. Rollen scheiden beheerders en medewerkers, de schermvergrendeling beschermt klantgegevens." },
     ],
     closingTitle: "Minder administratie, meer tijd voor je klanten",
     closingText:
@@ -138,6 +146,8 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
       { icon: Bell, title: "Automatische bevestigingen", desc: "Direct een bevestiging, plus herinneringen die no-shows verminderen." },
       { icon: Smartphone, title: "Mobile-first", desc: "Gemaakt voor de telefoon – daar boeken de meeste beautyklanten." },
       { icon: Link2, title: "Gekoppelde agenda", desc: "Elke boeking komt direct in je studio-agenda terecht." },
+      { icon: BadgePercent, title: "Aanbiedingen & vanaf-prijzen", desc: "Zet behandelingen in de etalage als aanbieding met doorgestreepte prijs, afbeelding en aftelling. Toon een vanaf-prijs voor behandelingen op maat." },
+      { icon: CalendarCog, title: "Afspraak zelf beheren", desc: "Via de link in de bevestiging zien klanten hun afspraak en kunnen ze die verzetten of annuleren – als jij dat toestaat." },
     ],
     closingTitle: "Meer afspraken, minder tijd aan de telefoon",
     closingText:
@@ -473,6 +483,9 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
       { icon: RefreshCw, title: "Minder dubbel werk", desc: "Voer gegevens één keer in Treatflow in – de rest volgt vanzelf." },
       { icon: Workflow, title: "Eigen automatiseringen", desc: "Reageer op nieuwe boekingen of formulieren zonder te programmeren." },
       { icon: Plug, title: "Groeiend ecosysteem", desc: "Koppel de tools waar je salon al op draait." },
+      { icon: MessageCircle, title: "WhatsApp", desc: "Bevestigingen, herinneringen, annuleringen en verzettingen via WhatsApp – met e-mail als terugval." },
+      { icon: Sparkles, title: "AI-assistenten (MCP)", desc: "Claude, ChatGPT & co. beantwoorden vragen over afspraken, klanten en omzet – alleen lezen, gezondheidsgegevens blijven in Treatflow." },
+      { icon: CalendarClock, title: "Roosterplanner", desc: "Plan diensten, vakanties en afwezigheden per week – online boeken volgt het rooster. Gratis." },
     ],
     closingTitle: "Eén betrouwbare bron voor je studio",
     closingText:
@@ -488,6 +501,8 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
         answer:
           "Ja. Met het Booking-abonnement koppel je Treatflow via Zapier aan andere tools, bijvoorbeeld spreadsheets of e-mailworkflows.",
       },
+      { question: "Kan ik Claude of ChatGPT met mijn salon verbinden?", answer: "Ja. Onder Apps → AI-assistenten (MCP) verbind je Claude, ChatGPT, Cursor en andere assistenten met je salon. Ze beantwoorden vragen over afspraken, vrije tijden, contactgegevens van klanten, behandelingen en omzet. De toegang is alleen-lezen: behandeldossiers, intakeformulieren, foto's en notities worden nooit gedeeld." },
+      { question: "Wat doet de roosterplanner?", answer: "Met de roosterplanner plan je de week van je team met diensten, sjablonen en afwezigheden zoals vakantie of ziekte. Is hij actief, dan toont online boeken alleen tijden binnen geplande diensten. Je activeert hem gratis onder Apps; de eerste acht weken worden gevuld met je bestaande werktijden." },
     ],
     aiCapsules: [
       {

@@ -1,4 +1,4 @@
-import { Calendar, Users, Bell, Move, Clock, LayoutGrid } from 'lucide-react';
+import { Calendar, Users, Bell, Move, Clock, LayoutGrid, CalendarClock, Ban, KeyRound } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
@@ -228,6 +228,9 @@ export default function TerminkalenderPage() {
                     { icon: LayoutGrid, title: 'Tages- bis Monatsansicht', text: 'Wechsle zwischen Tag, Woche und Monat – je nachdem, was du gerade brauchst.', points: ['Tagesansicht', 'Woche', 'Monat'] },
                     { icon: Bell, title: 'Automatische Erinnerungen', text: 'WhatsApp und E-Mail vor dem Termin. Weniger No-Shows, weniger Nachtelefonieren.', points: ['WhatsApp & E-Mail', 'Flexible Zeitpunkte', 'Storno-Hinweis'] },
                     { icon: Calendar, title: 'Online-Buchung', text: 'Buchungen landen direkt im Kalender. Keine Doppelbuchung, automatische Bestätigung.', points: ['Persönlicher Link', 'Sofort im Kalender', 'Ohne Provision'] },
+                    { icon: CalendarClock, title: 'Schichtplaner', text: 'Plane die Woche deines Teams mit Schichten, Vorlagen und Abwesenheiten. Die Online-Buchung zeigt dann nur Zeiten in geplanten Schichten.', points: ['Wochenplan & Vorlagen', 'Urlaub & Krankheit', 'Kostenlos unter Apps'] },
+                    { icon: Ban, title: 'Zeitblöcke & Serien', text: 'Pausen, Teamtermine und Urlaub blocken – auch regelmäßig als Serienblocker. Kuren planst du als Serie mit mehreren Sitzungen.', points: ['Pausen & Urlaub', 'Serienblocker', 'Serientermine für Kuren'] },
+                    { icon: KeyRound, title: 'Tablet mit Mitarbeiter-PIN', text: 'Jedes Teammitglied meldet sich mit eigener PIN an. Rollen trennen Admins und Mitarbeiter, die Bildschirmsperre schützt Kundendaten.', points: ['Eigene PIN', 'Admin & Mitarbeiter', 'Automatische Sperre'] },
                     { icon: Clock, title: 'Weniger Verwaltungszeit', text: 'Weniger Anrufe, klarere Abläufe – mehr Zeit für Behandlungen statt für den Plan.', points: ['Weniger Telefonate', 'Klare Slots', 'Schneller Überblick'] },
                 ]}
             />

@@ -33,6 +33,11 @@ import {
   Users,
   Workflow,
   Zap,
+  CalendarClock,
+  Ban,
+  KeyRound,
+  BadgePercent,
+  CalendarCog,
 } from "lucide-react";
 import type { LocaleSiteContent } from "../types";
 import { industries } from "./pages-industries";
@@ -74,6 +79,9 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
         { icon: Clock, title: "Szybkie zmiany terminów", desc: "Przesuwaj i wydłużaj wizyty jednym ruchem myszy." },
         { icon: Smartphone, title: "Na każdym urządzeniu", desc: "Obsługuj kalendarz na komputerze, tablecie lub telefonie." },
         { icon: Bell, title: "Automatyczne przypomnienia", desc: "Mniej nieodwołanych wizyt dzięki przypomnieniom przez WhatsApp i e-mail." },
+        { icon: CalendarClock, title: "Grafik zmian", desc: "Zaplanuj tydzień zespołu ze zmianami, szablonami i nieobecnościami. Rezerwacja online pokazuje wtedy tylko godziny w zaplanowanych zmianach." },
+        { icon: Ban, title: "Blokady czasu i serie", desc: "Blokuj przerwy, spotkania zespołu i urlopy – także cyklicznie. Kuracje planujesz jako serię kilku wizyt." },
+        { icon: KeyRound, title: "Tablet z PIN-em pracownika", desc: "Każda osoba z zespołu loguje się własnym PIN-em. Role oddzielają administratorów od pracowników, a blokada ekranu chroni dane klientów." },
       ],
       closingTitle: "Mniej administracji, więcej czasu dla klientów",
       closingText:
@@ -120,6 +128,8 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
         { icon: Bell, title: "Automatyczne potwierdzenia", desc: "Natychmiastowe potwierdzenie i przypomnienia, które ograniczają nieobecności." },
         { icon: Smartphone, title: "Przede wszystkim mobilnie", desc: "Zaprojektowane z myślą o telefonie – tam, gdzie rezerwuje większość klientów." },
         { icon: Link2, title: "Zsynchronizowany kalendarz", desc: "Każda rezerwacja trafia prosto do kalendarza salonu." },
+        { icon: BadgePercent, title: "Promocje i ceny „od”", desc: "Wyróżniaj usługi jako promocje z przekreśloną ceną, zdjęciem i odliczaniem. Dla zabiegów wycenianych indywidualnie pokaż cenę „od”." },
+        { icon: CalendarCog, title: "Samodzielne zarządzanie wizytą", desc: "Przez link w potwierdzeniu klientki widzą swoją wizytę i mogą ją przełożyć lub odwołać – jeśli na to pozwolisz." },
       ],
       closingTitle: "Więcej zajętych terminów, mniej czasu przy telefonie",
       closingText:
@@ -458,6 +468,9 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
         { icon: RefreshCw, title: "Mniej podwójnej pracy", desc: "Wprowadzasz dane raz w Treatflow – reszta dzieje się sama." },
         { icon: Workflow, title: "Własne automatyzacje", desc: "Reaguj na nowe rezerwacje lub formularze bez pisania kodu." },
         { icon: Plug, title: "Rosnący ekosystem", desc: "Połącz narzędzia, na których Twój salon już polega." },
+        { icon: MessageCircle, title: "WhatsApp", desc: "Potwierdzenia, przypomnienia, odwołania i przełożenia przez WhatsApp – z e-mailem jako zapasem." },
+        { icon: Sparkles, title: "Asystenci AI (MCP)", desc: "Claude, ChatGPT i inni odpowiadają na pytania o wizyty, klientów i obroty – tylko do odczytu, dane zdrowotne zostają w Treatflow." },
+        { icon: CalendarClock, title: "Grafik zmian", desc: "Planuj zmiany, urlopy i nieobecności tygodniowo – rezerwacja online działa według grafiku. Bezpłatnie." },
       ],
       closingTitle: "Jedno źródło prawdy dla Twojego salonu",
       closingText:
@@ -473,6 +486,8 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
           answer:
             "Tak. W pakiecie Booking możesz połączyć Treatflow z innymi narzędziami przez Zapier, na przykład z arkuszami kalkulacyjnymi lub automatyzacjami e-mail.",
         },
+        { question: "Czy mogę połączyć Claude lub ChatGPT z moim salonem?", answer: "Tak. W Aplikacje → Asystenci AI (MCP) łączysz Claude, ChatGPT, Cursor i innych asystentów ze swoim salonem. Mogą odpowiadać na pytania o wizyty, wolne terminy, dane kontaktowe klientów, usługi i obroty. Dostęp jest tylko do odczytu: dokumentacja zabiegów, wywiady, zdjęcia i notatki nigdy nie są udostępniane." },
+        { question: "Do czego służy grafik zmian?", answer: "Grafik zmian pozwala zaplanować tydzień zespołu ze zmianami, szablonami i nieobecnościami, takimi jak urlop czy choroba. Gdy jest aktywny, rezerwacja online oferuje tylko godziny w zaplanowanych zmianach. Włączasz go bezpłatnie w Aplikacjach; pierwsze osiem tygodni wypełnia się na podstawie dotychczasowych godzin pracy." },
       ],
       aiCapsules: [
         {

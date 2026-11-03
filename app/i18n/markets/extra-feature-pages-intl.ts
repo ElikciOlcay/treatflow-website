@@ -33,6 +33,7 @@ import {
   Users,
   Workflow,
   Zap,
+  CalendarClock,
 } from "lucide-react";
 
 export type { ExtraFeatureKey, FeatureLocale };
@@ -781,6 +782,9 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
           title: "Growing ecosystem",
           desc: "Connect the stack your salon already relies on.",
         },
+        { icon: MessageCircle, title: "WhatsApp", desc: "Confirmations, reminders, cancellations and reschedules via WhatsApp – with email as a fallback." },
+        { icon: Sparkles, title: "AI assistants (MCP)", desc: "Claude, ChatGPT & co. answer questions about appointments, clients and revenue – read-only, health data stays in Treatflow." },
+        { icon: CalendarClock, title: "Shift planner", desc: "Plan shifts, holidays and absences per week – online booking follows the plan. Free of charge." },
       ],
       closingTitle: "One source of truth for your studio",
       closingText:
@@ -796,6 +800,8 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
           answer:
             "Yes. On the Booking plan you can connect Treatflow to other tools through Zapier, for example spreadsheets or email workflows.",
         },
+        { question: "Can I connect Claude or ChatGPT to my studio?", answer: "Yes. Under Apps → AI assistants (MCP) you connect Claude, ChatGPT, Cursor and other assistants to your studio. They can answer questions about appointments, free slots, client contact data, services and revenue. Access is read-only: treatment records, consultation forms, photos and notes are never shared." },
+        { question: "What does the shift planner do?", answer: "The shift planner lets you plan your team's week with shifts, templates and absences such as holidays or sick leave. Once active, online booking only offers times within planned shifts. You activate it for free under Apps; the first eight weeks are prefilled from your existing working hours." },
       ],
       aiCapsules: [
         {
