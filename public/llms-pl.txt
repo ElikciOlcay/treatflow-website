@@ -85,6 +85,7 @@ Dane są przechowywane na serwerach w UE, z szyfrowaniem SSL i codziennymi kopia
 - Wywiad kosmetyczny online: https://www.treatflow.io/pl/blog/wywiad-kosmetyczny-online – co zawiera karta klienta i zgoda na zabieg oraz jak przechowywać dane o zdrowiu.
 - Jak budować lojalność klientek w salonie: https://www.treatflow.io/pl/blog/jak-budowac-lojalnosc-klientek-salon – 7 strategii: karta klienta, przypomnienia o kolejnej wizycie, bony i polecenia.
 - RODO w salonie kosmetycznym: https://www.treatflow.io/pl/blog/rodo-w-salonie-kosmetycznym – dane o zdrowiu, zgody, zdjęcia przed i po, przechowywanie danych i lista kontrolna.
+- Jak wycenić zabiegi kosmetyczne: https://www.treatflow.io/pl/blog/jak-wycenic-zabiegi-kosmetyczne – minimalna stawka godzinowa, czas, materiały i marża, konkurencja i przejrzysty cennik.
 
 ## Inne języki
 

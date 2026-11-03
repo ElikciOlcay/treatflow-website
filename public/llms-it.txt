@@ -91,6 +91,7 @@ Le schede sono su server nell'UE con SSL e backup giornalieri. Il centro resta t
 - Scheda cliente e anamnesi digitale: https://www.treatflow.io/it/blog/scheda-cliente-digitale-centro-estetico – cosa chiedere nell'anamnesi, consenso informato con firma digitale, documentazione dei trattamenti.
 - Fidelizzare le clienti: https://www.treatflow.io/it/blog/fidelizzare-clienti-centro-estetico – sette strategie per far tornare le clienti, dal prossimo appuntamento ai buoni regalo.
 - GDPR per centri estetici: https://www.treatflow.io/it/blog/gdpr-centro-estetico – informativa, dati sanitari, foto, registro dei trattamenti, fornitori software e checklist.
+- Calcolare i prezzi dei trattamenti: https://www.treatflow.io/it/blog/come-calcolare-prezzi-centro-estetico – costo orario minimo, tempo, prodotti e margine, concorrenza e listino prezzi chiaro.
 
 ## Altre lingue
 

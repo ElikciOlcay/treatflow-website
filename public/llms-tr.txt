@@ -107,6 +107,7 @@ JSON (Almanca): https://www.treatflow.io/api/facts
 - Salonlar İçin Online Randevu Sistemi: Kurulum, Kurallar ve WhatsApp Akışı: https://www.treatflow.io/tr/blog/online-randevu-sistemi-salon
 - Güzellik Salonları İçin KVKK Rehberi: Müşteri Verisi, Fotoğraf ve Sağlık Bilgisi: https://www.treatflow.io/tr/blog/kvkk-guzellik-salonu
 - Güzellik Salonunda Müşteri Sadakati Nasıl Artırılır? Tekrar Randevu İçin 7 Yöntem: https://www.treatflow.io/tr/blog/musteri-sadakati-guzellik-salonu
+- Güzellik Salonu Fiyatları Nasıl Hesaplanır? Hizmet Başına Adım Adım Fiyatlandırma: https://www.treatflow.io/tr/blog/guzellik-salonu-fiyat-hesaplama
 
 ## Diğer diller
 

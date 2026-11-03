@@ -1026,4 +1026,190 @@ export const posts: BlogArticle[] = [
       { label: "Ley 41/2002 de autonomía del paciente, BOE", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 7. Calcular precios de tratamientos
+  // ---------------------------------------------------------------------------
+  {
+    topic: "pricing-beauty-treatments",
+    lang: "es",
+    slug: "como-calcular-precios-centro-de-estetica",
+    title: "Cómo calcular los precios de tu centro de estética: método paso a paso por tratamiento",
+    metaTitle: "Cómo calcular los precios de un centro de estética",
+    description:
+      "Cómo calcular los precios de tus tratamientos: coste por hora mínimo, tiempo, producto y margen por servicio, comparación con la competencia y una tarifa clara.",
+    excerpt:
+      "Copiar la tarifa del centro de enfrente no es una estrategia. Aquí tienes el cálculo de tu coste por hora, cuatro ejemplos de precio y claves para una tarifa que da confianza.",
+    category: "Gestión del centro",
+    keywords: [
+      "cómo calcular precios centro de estética",
+      "precios centro de estética",
+      "tarifa de precios estética",
+      "coste por hora esteticista",
+      "cuánto cobrar por una limpieza facial",
+      "estrategia de precios salón de belleza",
+      "precio extensiones de pestañas",
+    ],
+    publishedAt: "2026-11-03",
+    updatedAt: "2026-11-03",
+    readMinutes: 8,
+    answer:
+      "El precio correcto de un tratamiento se calcula de abajo arriba, desde tus costes, y solo al final se contrasta con el mercado. Primero saca tu coste por hora mínimo: gastos fijos mensuales más el sueldo que necesitas, dividido entre las horas que de verdad facturas. Multiplica esa tarifa por el tiempo total que ocupa el tratamiento (con preparación y limpieza), suma el producto consumido y un margen del 10–20 %.",
+    takeaways: [
+      "Coste por hora mínimo = (gastos fijos + tu sueldo) ÷ horas facturables, y son muchas menos que tus horas de apertura.",
+      "Calcula todo el tiempo que el tratamiento ocupa la cabina y a la profesional, no solo los minutos en camilla.",
+      "Suma el material fungible de cada servicio y un margen para reservas, reparaciones y crecimiento.",
+      "Los precios de la competencia indican lo que acepta el mercado, no lo que tú necesitas ganar.",
+      "Una tarifa clara, por niveles y visible online genera confianza y facilita que suban de categoría.",
+    ],
+    intro: [
+      "Muchas dueñas de centros fijan sus precios una sola vez, al abrir, mirando lo que cobran los salones del barrio. Unos años después, el alquiler, el producto, la luz y los sueldos han subido, pero la tarifa apenas se ha movido. La agenda está llena; la cuenta del banco, no. Estar ocupada y ser rentable no son lo mismo.",
+      "En esta guía verás cómo calcular precios que cubren tus costes y te pagan bien. Sirve para centros de estética, clínicas de medicina estética, centros de uñas, pestañas y micropigmentación, centros de depilación láser, spas y centros de masaje. Las cifras de los ejemplos son orientativas: cámbialas por las tuyas y tendrás un precio mínimo sólido para cada servicio.",
+    ],
+    sections: [
+      {
+        heading: "¿Por qué tantos centros de estética cobran de menos?",
+        paragraphs: [
+          "El motivo más habitual es que los precios se copian en lugar de calcularse. No conoces el alquiler, la plantilla ni la financiación del centro que tomas como referencia, así que heredas sus suposiciones y, quizá, también sus pérdidas.",
+          "El segundo motivo es el miedo: a perder clientas fijas, a parecer cara, a tener huecos en la agenda. En la práctica, quien vuelve por el resultado y la experiencia rara vez se va por un precio razonable y bien explicado. Quien solo busca lo más barato se irá de todos modos a la siguiente oferta.",
+          "El tercer motivo es el tiempo invisible. Un facial de 60 minutos, sumando la ficha previa, preparar la cabina, limpiar, desinfectar y anotar el tratamiento, te ocupa fácilmente 75 minutos. Si ese tiempo no está en el precio, lo estás regalando.",
+        ],
+      },
+      {
+        heading: "¿Cómo se calcula el coste por hora mínimo?",
+        paragraphs: [
+          "Tu coste por hora mínimo es lo que tiene que generar cada hora facturable para cubrir todos los gastos y pagarte un sueldo justo. Recalcúlalo al menos una vez al año y siempre que cambie un gasto importante, como un nuevo alquiler o un equipo nuevo.",
+        ],
+        steps: [
+          "Suma tus gastos fijos mensuales: alquiler, suministros, seguros, software, marketing, gestoría, formación, renting o financiación de equipos y todo lo que pagas vengan o no las clientas.",
+          "Decide el sueldo que necesitas como titular, incluyendo IRPF y la cuota de autónomos. Si tienes empleadas, añade su coste empresa completo.",
+          "Calcula tus horas facturables: días laborables al mes × horas al día, menos el tiempo de gestión, pausas, limpieza entre clientas, bajas y huecos de agenda. Para la mayoría de centros es realista restar un 20–30 %.",
+          "Divide gastos fijos más sueldo entre las horas facturables. Ese es tu precio por hora de equilibrio.",
+          "Añade un margen de entre el 10 y el 20 % para reservas, averías, meses flojos e inversiones.",
+        ],
+        table: {
+          headers: ["Concepto (ejemplo)", "Al mes"],
+          rows: [
+            ["Alquiler", "900 €"],
+            ["Luz y agua", "150 €"],
+            ["Seguros", "80 €"],
+            ["Software de gestión", "59 €"],
+            ["Marketing", "200 €"],
+            ["Gestoría", "120 €"],
+            ["Formación", "100 €"],
+            ["Renting de aparatología", "350 €"],
+            ["Otros", "141 €"],
+            ["**Total gastos fijos**", "**2.100 €**"],
+            ["Sueldo de la titular con IRPF y cuota de autónomos", "3.500 €"],
+            ["Horas facturables (20 días × 8 h menos 25 %)", "120 h"],
+            ["Equilibrio: 5.600 € ÷ 120 h", "46,67 €/h"],
+            ["Tarifa objetivo con margen del 15 %", "≈ 54 €/h"],
+          ],
+        },
+        callout:
+          "El error más frecuente está en las horas facturables. Si calculas con 160 horas pero en realidad atiendes clientas 110, cada precio de tu tarifa está aproximadamente un tercio por debajo de lo que debería.",
+      },
+      {
+        heading: "¿Cómo pasas del precio por hora al precio del tratamiento?",
+        paragraphs: [
+          "Para cada servicio, toma el tiempo total que la cabina y la profesional están ocupadas, multiplícalo por tu tarifa objetivo y suma el fungible de cada sesión: mascarillas, ampollas, gel, pestañas, adhesivo, agujas o material desechable. Si el renting del equipo ya está en tus gastos fijos, no lo cuentes otra vez.",
+          "El resultado es tu precio mínimo. Puedes cobrar más por experiencia, demanda o una línea de producto premium, pero no deberías cobrar menos de forma habitual.",
+        ],
+        table: {
+          headers: ["Tratamiento", "Tiempo ocupado", "Tiempo × 54 €", "Fungible", "Precio mínimo"],
+          rows: [
+            ["Limpieza facial clásica", "75 min", "67,50 €", "8 €", "≈ 76 €"],
+            ["Manicura semipermanente", "70 min", "63,00 €", "5 €", "≈ 68 €"],
+            ["Extensiones de pestañas, puesta completa", "130 min", "117,00 €", "12 €", "≈ 129 €"],
+            ["Depilación láser de axilas", "25 min", "22,50 €", "4 €", "≈ 27 €"],
+          ],
+        },
+        bullets: [
+          "Los tratamientos cortos con aparatología, como el láser, suelen tener precios muy por encima de su mínimo por tiempo, por la inversión, la formación y la demanda. Está bien, siempre que el mínimo quede cubierto.",
+          "Los tratamientos largos con poco producto, como los masajes, son los que más a menudo se cobran por debajo de su valor. Revísalos primero.",
+        ],
+      },
+      {
+        heading: "¿Cuánto deben pesar los precios de la competencia?",
+        paragraphs: [
+          "Fíjate en cinco a diez centros con los que tu clienta ideal te compararía de verdad, no en todos los de tu ciudad. Anota los precios de tus tres o cuatro tratamientos clave y cómo se posiciona cada centro: low cost, gama media o premium.",
+          "Después compáralo con tu precio mínimo. Si el mercado está claramente por encima, tienes margen para fijar precios según el valor. Si está por debajo, la guerra de precios es una carrera perdida: refuerza lo que te diferencia, como especialización, resultados, documentación cuidadosa, comodidad o disponibilidad, y pon precio en consecuencia.",
+        ],
+        bullets: [
+          "El posicionamiento low cost exige mucho volumen y procesos muy ágiles.",
+          "La gama media exige una experiencia constante y una buena tasa de repetición.",
+          "El premium exige experiencia visible, una consulta previa cuidada y un recorrido de clienta impecable desde la reserva hasta el cuidado posterior.",
+        ],
+      },
+      {
+        heading: "¿Cómo crear una tarifa de precios que tus clientas entiendan?",
+        paragraphs: [
+          "Una buena tarifa ayuda a decidir rápido y hace que la opción de más valor parezca natural. Mantenla corta, pon la duración junto al precio y describe el resultado, no solo los pasos.",
+        ],
+        bullets: [
+          "Ofrece dos o tres niveles en los tratamientos principales, por ejemplo un facial de 45, 75 y 90 minutos. Cuando las diferencias se entienden, muchas clientas eligen el del medio.",
+          "Pon precio aparte a los extras (contorno de ojos, mascarilla adicional, parafina, nail art) para que puedan mejorar el servicio sin que descuentes el principal.",
+          "Agrupa los tratamientos por sesiones, como el láser o los programas faciales, en bonos con un número de sesiones definido y un ahorro moderado.",
+          "Decide si la valoración inicial es gratuita, de pago o descontable del primer tratamiento, y dilo con claridad.",
+          "Muestra precios finales con IVA incluido y usa los precios 'desde' solo cuando el importe dependa de verdad de la zona o la longitud.",
+          "Usa los mismos precios en todas partes: web, página de reservas online, Instagram y centro.",
+        ],
+        callout:
+          "En la reserva online cada servicio tiene su duración y su precio, así que la clienta ve qué reserva antes de confirmar. Con Treatflow, la página de reservas está en tu propio enlace y no pagas comisión por cita: solo una cuota fija de 39 o 59 € al mes, con 14 días de prueba gratis y sin tarjeta.",
+      },
+      {
+        heading: "¿Cuándo y cómo subir los precios?",
+        paragraphs: [
+          "Revisa tu cálculo al menos una vez al año y después de cada subida importante de costes. Los ajustes pequeños y periódicos se aceptan mucho mejor que un gran salto tras varios años.",
+        ],
+        steps: [
+          "Recalcula tu precio por hora con los costes actuales y compara cada servicio con su mínimo.",
+          "Anuncia los nuevos precios con cuatro a seis semanas de antelación por email, mensaje y en el centro.",
+          "Da un motivo breve y sincero, como la subida del producto, la energía o la formación, sin pedir perdón.",
+          "Mantén el precio antiguo en las citas ya reservadas para que nadie se sienta sorprendida.",
+          "Prepara a tu equipo para que todas respondan a las preguntas con la misma calma.",
+        ],
+      },
+      {
+        heading: "¿Qué errores de precio le cuestan más dinero a un centro?",
+        paragraphs: [
+          "Casi todos los problemas de precio nacen de unos pocos hábitos que se cuelan con el tiempo. Revisa tu tarifa con esta lista una vez al año.",
+        ],
+        bullets: [
+          "Ofertas de bienvenida que nunca terminan y enseñan a las clientas a esperar el descuento.",
+          "Descuentos personales improvisados, sin registrar, que acaban siendo lo normal.",
+          "No incluir preparación, limpieza y documentación en la duración de los servicios.",
+          "No tener normas para cancelaciones tardías y citas no presentadas, de modo que cada hueco lo pagas tú.",
+          "Pasar años sin subir precios y luego subirlos mucho de golpe.",
+          "No comprobar nunca qué servicios dejan dinero y cuáles solo llenan la agenda.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Cómo se calcula el precio de un tratamiento estético?",
+        a: "Primero calcula tu precio por hora: gastos fijos mensuales más tu sueldo, divididos entre tus horas facturables reales, más un 10–20 % de margen. Multiplícalo por el tiempo total del tratamiento con preparación y limpieza, y suma el fungible. El resultado es tu precio mínimo.",
+      },
+      {
+        q: "¿Cuánto cobrar por una limpieza facial?",
+        a: "No hay un precio único, porque el alquiler, los sueldos y el posicionamiento cambian según la ciudad. Con una tarifa de ejemplo de 54 € la hora y 75 minutos de tiempo ocupado, una limpieza facial clásica debería costar al menos unos 76 €. Haz el cálculo con tus cifras y compáralo con los centros entre los que eligen tus clientas.",
+      },
+      {
+        q: "¿Puedo simplemente cobrar lo mismo que la competencia?",
+        a: "Usa sus precios como comprobación del mercado, no como punto de partida. No conoces sus costes ni sabes si son rentables. Si tu mínimo está por encima del mercado local, trabaja tu posicionamiento en lugar de bajar por debajo de coste.",
+      },
+      {
+        q: "¿Conviene publicar los precios en la web y en Instagram?",
+        a: "En la mayoría de los casos, sí. Los precios visibles reducen los mensajes de '¿cuánto cuesta?', filtran a clientas que no encajan y facilitan la reserva online. Si el precio depende de la zona o la longitud, indica un 'desde' claro y explica qué influye en el importe final.",
+      },
+      {
+        q: "¿Cada cuánto hay que subir los precios de un centro de estética?",
+        a: "Revisa los precios al menos una vez al año y tras cambios importantes de costes. Un ajuste anual moderado, avisado con unas semanas de antelación, suele recibirse mucho mejor que una subida fuerte tras años sin tocar la tarifa.",
+      },
+    ],
+    related: [
+      { pageKey: "pricing", label: "Precios y planes" },
+      { pageKey: "client-records", label: "Fichas de clientes con historial" },
+      { pageKey: "features", label: "Todas las funciones" },
+    ],
+  },
 ];

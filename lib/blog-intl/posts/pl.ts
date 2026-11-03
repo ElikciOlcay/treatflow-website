@@ -1011,4 +1011,190 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 7. Wycena zabiegów
+  // ---------------------------------------------------------------------------
+  {
+    topic: "pricing-beauty-treatments",
+    lang: "pl",
+    slug: "jak-wycenic-zabiegi-kosmetyczne",
+    title: "Jak wycenić zabiegi kosmetyczne? Kalkulacja ceny krok po kroku dla salonu i gabinetu",
+    metaTitle: "Jak wycenić zabiegi kosmetyczne? Kalkulacja ceny",
+    description:
+      "Jak wycenić zabiegi kosmetyczne: oblicz minimalną stawkę godzinową, dolicz czas, materiały i marżę, sprawdź konkurencję i zbuduj cennik, któremu klientki ufają.",
+    excerpt:
+      "Kopiowanie cennika salonu z sąsiedztwa to nie strategia. Prosta kalkulacja stawki godzinowej, przykłady dla czterech zabiegów i wskazówki do przejrzystego cennika.",
+    category: "Zarządzanie salonem",
+    keywords: [
+      "jak wycenić zabiegi kosmetyczne",
+      "cennik salonu kosmetycznego",
+      "kalkulacja ceny zabiegu",
+      "stawka godzinowa kosmetyczki",
+      "ile kosztuje oczyszczanie twarzy",
+      "wycena przedłużania rzęs",
+      "strategia cenowa salon beauty",
+    ],
+    publishedAt: "2026-11-03",
+    updatedAt: "2026-11-03",
+    readMinutes: 8,
+    answer:
+      "Cenę zabiegu kosmetycznego liczysz od kosztów w górę, a dopiero na końcu porównujesz ją z rynkiem. Najpierw oblicz minimalną stawkę godzinową: miesięczne koszty stałe plus wynagrodzenie, którego potrzebujesz, podzielone przez godziny, które realnie spędzasz z klientkami. Pomnóż tę stawkę przez cały czas, na jaki zabieg blokuje gabinet (z przygotowaniem i sprzątaniem), dodaj materiały i marżę rzędu 10–20 %.",
+    takeaways: [
+      "Minimalna stawka godzinowa = (koszty stałe + Twoje wynagrodzenie) ÷ godziny zabiegowe, a tych jest dużo mniej niż godzin otwarcia.",
+      "Wyceniaj cały czas, na jaki zabieg zajmuje gabinet i specjalistkę, a nie tylko minuty na fotelu.",
+      "Dolicz materiały zużywane przy każdym zabiegu i marżę na rezerwy, naprawy i rozwój.",
+      "Ceny konkurencji pokazują, co akceptuje rynek, a nie ile Ty musisz zarobić.",
+      "Przejrzysty cennik z poziomami i cenami widocznymi online buduje zaufanie.",
+    ],
+    intro: [
+      "Wiele właścicielek salonów ustala ceny raz, przy otwarciu, patrząc na cenniki okolicznych gabinetów. Po kilku latach czynsz, kosmetyki, prąd i pensje są wyższe, a cennik prawie się nie zmienił. Kalendarz jest pełny, konto już nie. Pełny grafik i zyskowny salon to dwie różne rzeczy.",
+      "Z tego poradnika dowiesz się, jak policzyć ceny, które pokrywają koszty i dają Ci uczciwe wynagrodzenie. Metoda działa w salonach kosmetycznych, gabinetach medycyny estetycznej, studiach paznokci, rzęs i makijażu permanentnego, salonach depilacji laserowej, spa i gabinetach masażu. Kwoty w przykładach są poglądowe: podstaw własne liczby, a dostaniesz solidną cenę minimalną dla każdego zabiegu.",
+    ],
+    sections: [
+      {
+        heading: "Dlaczego tak wiele salonów zaniża ceny?",
+        paragraphs: [
+          "Najczęstszy powód: ceny są kopiowane, a nie liczone. Nie znasz czynszu, kosztów personelu ani rat leasingowych salonu, na którym się wzorujesz. Przejmujesz więc cudze założenia, a być może także cudze straty.",
+          "Drugi powód to obawa: przed utratą stałych klientek, przed tym, że wyjdziesz na drogą, przed pustymi okienkami w grafiku. W praktyce klientki, które wracają dla efektu i atmosfery, rzadko odchodzą z powodu rozsądnej, dobrze wyjaśnionej ceny. Te, które szukają wyłącznie najtańszej oferty, i tak pójdą do następnej promocji.",
+          "Trzeci powód to niewidoczny czas. Zabieg na twarz trwający 60 minut, razem z wywiadem, przygotowaniem stanowiska, sprzątaniem, dezynfekcją i uzupełnieniem karty klientki, zajmuje Ci spokojnie 75 minut. Jeśli tego czasu nie ma w cenie, pracujesz za darmo.",
+        ],
+      },
+      {
+        heading: "Jak obliczyć minimalną stawkę godzinową?",
+        paragraphs: [
+          "Minimalna stawka godzinowa to kwota, którą musi przynieść każda godzina zabiegowa, żeby pokryć wszystkie koszty i dać Ci uczciwe wynagrodzenie. Przeliczaj ją co najmniej raz w roku i zawsze, gdy zmienia się duży koszt, na przykład czynsz albo rata za nowe urządzenie.",
+        ],
+        steps: [
+          "Zsumuj miesięczne koszty stałe: czynsz, media, ubezpieczenie, oprogramowanie, marketing, księgowość, szkolenia, leasing sprzętu i wszystko, co płacisz niezależnie od tego, czy klientki przychodzą.",
+          "Ustal wynagrodzenie, którego potrzebujesz jako właścicielka, razem z podatkiem i składkami ZUS. Jeśli zatrudniasz pracowników, dolicz pełny koszt ich zatrudnienia.",
+          "Policz godziny zabiegowe: dni robocze w miesiącu × godziny dziennie, minus czas na administrację, przerwy, sprzątanie między klientkami, chorobę i luki w grafiku. Dla większości salonów realne jest odjęcie 20–30 %.",
+          "Podziel koszty stałe plus wynagrodzenie przez godziny zabiegowe. To Twoja stawka progu rentowności.",
+          "Dodaj marżę około 10–20 % na rezerwy, naprawy, słabsze miesiące i inwestycje.",
+        ],
+        table: {
+          headers: ["Pozycja (przykład)", "Miesięcznie"],
+          rows: [
+            ["Czynsz", "3000 zł"],
+            ["Media", "500 zł"],
+            ["Ubezpieczenie", "200 zł"],
+            ["Program do salonu", "250 zł"],
+            ["Marketing", "800 zł"],
+            ["Księgowość", "500 zł"],
+            ["Szkolenia", "400 zł"],
+            ["Leasing urządzeń", "1500 zł"],
+            ["Inne", "350 zł"],
+            ["**Koszty stałe razem**", "**7500 zł**"],
+            ["Wynagrodzenie właścicielki z podatkiem i ZUS", "9000 zł"],
+            ["Godziny zabiegowe (20 dni × 8 h minus 25 %)", "120 h"],
+            ["Próg rentowności: 16 500 zł ÷ 120 h", "137,50 zł/h"],
+            ["Stawka docelowa z marżą 15 %", "≈ 158 zł/h"],
+          ],
+        },
+        callout:
+          "Najwięcej błędów dotyczy godzin zabiegowych. Jeśli liczysz na 160 godzin, a realnie pracujesz z klientkami 110, każda cena w Twoim cenniku jest za niska mniej więcej o jedną trzecią.",
+      },
+      {
+        heading: "Jak przełożyć stawkę godzinową na cenę zabiegu?",
+        paragraphs: [
+          "Dla każdego zabiegu weź łączny czas, przez który gabinet i specjalistka są zajęte, pomnóż go przez stawkę docelową i dodaj materiały zużywane na jeden zabieg: maski, ampułki, żel, rzęsy, klej, igły, jednorazowe podkłady. Jeśli leasing urządzenia jest już w kosztach stałych, nie licz go drugi raz.",
+          "Wynik to Twoja cena minimalna. Możesz brać więcej, np. za doświadczenie, popyt czy markę premium, ale nie powinnaś regularnie schodzić poniżej.",
+        ],
+        table: {
+          headers: ["Zabieg", "Zajęty czas", "Czas × 158 zł", "Materiały", "Cena minimalna"],
+          rows: [
+            ["Oczyszczanie twarzy", "75 min", "197,50 zł", "30 zł", "≈ 228 zł"],
+            ["Manicure hybrydowy", "70 min", "184,30 zł", "15 zł", "≈ 199 zł"],
+            ["Przedłużanie rzęs, aplikacja", "130 min", "342,30 zł", "45 zł", "≈ 387 zł"],
+            ["Depilacja laserowa pach", "25 min", "65,80 zł", "15 zł", "≈ 81 zł"],
+          ],
+        },
+        bullets: [
+          "Krótkie zabiegi aparaturowe, jak laser, są zwykle wyceniane wyraźnie powyżej ceny wynikającej z czasu, bo stoi za nimi inwestycja, szkolenie i popyt. To w porządku, o ile minimum jest pokryte.",
+          "Długie zabiegi z małym zużyciem materiałów, np. masaże, najczęściej są zbyt tanie. Sprawdź je w pierwszej kolejności.",
+        ],
+      },
+      {
+        heading: "Na ile brać pod uwagę ceny konkurencji?",
+        paragraphs: [
+          "Przejrzyj pięć–dziesięć salonów, z którymi Twoja idealna klientka naprawdę by Cię porównała, a nie wszystkie gabinety w mieście. Zapisz ceny trzech–czterech kluczowych zabiegów i to, jak każdy salon się pozycjonuje: budżetowo, w średnim segmencie czy premium.",
+          "Porównaj to ze swoją ceną minimalną. Jeśli rynek jest wyraźnie wyżej, masz przestrzeń, by wyceniać według wartości. Jeśli rynek jest poniżej Twojego minimum, wojna cenowa to wyścig, którego nie wygrasz. Zamiast tego pokaż, czym się wyróżniasz: specjalizacją, efektami, staranną dokumentacją, komfortem albo dostępnością terminów.",
+        ],
+        bullets: [
+          "Pozycja budżetowa wymaga dużego wolumenu i bardzo sprawnych procesów.",
+          "Średni segment wymaga powtarzalnej jakości i wysokiego odsetka powrotów.",
+          "Premium wymaga widocznej wiedzy, starannej konsultacji i świetnej ścieżki klientki od rezerwacji po pielęgnację pozabiegową.",
+        ],
+      },
+      {
+        heading: "Jak zbudować cennik, który klientki rozumieją?",
+        paragraphs: [
+          "Dobry cennik pomaga szybko podjąć decyzję i sprawia, że droższa opcja wydaje się naturalna. Niech będzie krótki, z czasem trwania obok ceny i opisem efektu, a nie tylko kolejnych kroków.",
+        ],
+        bullets: [
+          "Przy kluczowych zabiegach zaproponuj dwa–trzy warianty, np. zabieg na twarz 45, 75 i 90 minut. Gdy różnice są jasne, wiele klientek wybiera środkowy.",
+          "Dodatki wyceniaj osobno (okolice oczu, dodatkowa maska, parafina, zdobienia), by klientka mogła rozszerzyć zabieg bez rabatu na usługę główną.",
+          "Serie zabiegów, np. depilację laserową czy programy pielęgnacyjne, łącz w pakiety z określoną liczbą wizyt i umiarkowaną korzyścią.",
+          "Zdecyduj, czy konsultacja jest bezpłatna, płatna czy zaliczana na poczet pierwszego zabiegu, i napisz to wprost.",
+          "Podawaj ceny końcowe z VAT, jeśli jesteś czynnym podatnikiem; przy zwolnieniu podmiotowym ustal szczegóły z księgową. Ceny 'od' stosuj tylko wtedy, gdy kwota naprawdę zależy od obszaru lub długości.",
+          "Wszędzie używaj tych samych cen: na stronie, w rezerwacji online, na Instagramie i w salonie.",
+        ],
+        callout:
+          "W rezerwacji online każda usługa ma swój czas trwania i cenę, więc klientka widzi, co rezerwuje, zanim potwierdzi. W Treatflow strona rezerwacji działa pod Twoim własnym linkiem i nie płacisz prowizji od wizyt, tylko stałą opłatę 39 lub 59 EUR miesięcznie. Możesz testować 14 dni za darmo, bez karty kredytowej.",
+      },
+      {
+        heading: "Kiedy i jak podnieść ceny w salonie?",
+        paragraphs: [
+          "Przeliczaj kalkulację co najmniej raz w roku i po każdej dużej zmianie kosztów. Małe, regularne podwyżki klientki przyjmują znacznie łatwiej niż jeden duży skok po kilku latach.",
+        ],
+        steps: [
+          "Przelicz stawkę godzinową na aktualnych kosztach i porównaj każdy zabieg z jego ceną minimalną.",
+          "Zapowiedz nowe ceny z czterech–sześciotygodniowym wyprzedzeniem: mailowo, wiadomością i w salonie.",
+          "Podaj krótki, szczery powód, np. wyższe koszty kosmetyków, energii czy szkoleń, bez przepraszania.",
+          "Pozostaw stare ceny dla wizyt już zarezerwowanych, żeby nikt nie poczuł się zaskoczony.",
+          "Przygotuj zespół, by każda osoba odpowiadała na pytania tak samo spokojnie.",
+        ],
+      },
+      {
+        heading: "Jakie błędy w wycenie kosztują salony najwięcej?",
+        paragraphs: [
+          "Większość problemów z cenami bierze się z kilku nawyków, które wkradają się z czasem. Raz w roku sprawdź swój cennik z tą listą.",
+        ],
+        bullets: [
+          "Promocje na start, które nigdy się nie kończą i uczą klientki czekać na rabat.",
+          "Spontaniczne rabaty dla znajomych klientek, nigdzie niezapisane, które po cichu stają się normą.",
+          "Pomijanie w czasie zabiegu przygotowania, sprzątania i dokumentacji.",
+          "Brak zasad dla późnych odwołań i nieobecności, przez co za każdą lukę w grafiku płacisz Ty.",
+          "Brak podwyżek przez lata, a potem jedna duża podwyżka naraz.",
+          "Niesprawdzanie, które zabiegi naprawdę zarabiają, a które tylko wypełniają kalendarz.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Jak obliczyć cenę zabiegu kosmetycznego?",
+        a: "Najpierw oblicz stawkę godzinową: miesięczne koszty stałe plus Twoje wynagrodzenie, podzielone przez realne godziny zabiegowe, plus 10–20 % marży. Pomnóż ją przez łączny czas zabiegu z przygotowaniem i sprzątaniem i dodaj koszt materiałów. Wynik to cena minimalna.",
+      },
+      {
+        q: "Ile powinno kosztować oczyszczanie twarzy?",
+        a: "Nie ma jednej ceny dla całej Polski, bo czynsze, pensje i pozycjonowanie różnią się między miastami. Przy przykładowej stawce 158 zł za godzinę i 75 minutach zajętego czasu klasyczne oczyszczanie powinno kosztować co najmniej ok. 228 zł. Policz to na swoich liczbach i porównaj z salonami, między którymi wybierają Twoje klientki.",
+      },
+      {
+        q: "Czy mogę po prostu przyjąć ceny konkurencji?",
+        a: "Traktuj ceny konkurencji jako sprawdzian rynku, a nie punkt wyjścia. Nie znasz ich kosztów ani nie wiesz, czy są rentowne. Jeśli Twoje minimum jest wyżej niż lokalny rynek, popracuj nad pozycjonowaniem zamiast schodzić poniżej kosztów.",
+      },
+      {
+        q: "Czy warto pokazywać cennik online?",
+        a: "W większości przypadków tak. Widoczne ceny ograniczają pytania w wiadomościach, odsiewają klientki, które do Ciebie nie pasują, i ułatwiają rezerwację online. Gdy cena zależy od obszaru lub długości, podaj jasną cenę 'od' i wyjaśnij, od czego zależy kwota końcowa.",
+      },
+      {
+        q: "Jak często podnosić ceny w salonie kosmetycznym?",
+        a: "Sprawdzaj ceny co najmniej raz w roku i po dużych zmianach kosztów. Umiarkowana coroczna korekta, zapowiedziana kilka tygodni wcześniej, jest zwykle przyjmowana dużo lepiej niż wysoka podwyżka po latach bez zmian.",
+      },
+    ],
+    related: [
+      { pageKey: "pricing", label: "Cennik" },
+      { pageKey: "client-records", label: "Kartoteka klientów" },
+      { pageKey: "features", label: "Wszystkie funkcje" },
+    ],
+  },
 ];

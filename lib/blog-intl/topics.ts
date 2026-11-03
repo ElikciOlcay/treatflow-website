@@ -40,6 +40,11 @@ export const blogTopics: Record<
     image: "/images/blog/kundenbindung-strategien.jpg",
     pageKeys: ["messaging", "client-records", "vouchers"],
   },
+  "pricing-beauty-treatments": {
+    deSlug: "preisgestaltung-kosmetikbehandlungen",
+    image: "/images/blog/preisgestaltung-guide.jpg",
+    pageKeys: ["pricing", "client-records", "features"],
+  },
 };
 
 export const blogTopicOrder: BlogTopicId[] = [
@@ -49,4 +54,5 @@ export const blogTopicOrder: BlogTopicId[] = [
   "digital-consultation-forms",
   "client-retention",
   "gdpr-beauty-salon",
+  "pricing-beauty-treatments",
 ];

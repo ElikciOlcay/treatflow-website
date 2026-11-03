@@ -86,6 +86,7 @@ Las fichas se guardan en servidores de la UE con SSL y copias de seguridad diari
 - Ficha de cliente y consentimiento informado digital: https://www.treatflow.io/es/blog/ficha-cliente-digital-estetica — Qué preguntar según el tratamiento, consentimiento informado, firma digital y plazos de conservación.
 - Cómo fidelizar clientas en tu centro de estética: https://www.treatflow.io/es/blog/fidelizar-clientes-centro-estetica — Siete estrategias: próxima cita, mensajes automáticos, bonos, personalización y clientas inactivas.
 - RGPD y LOPDGDD en tu centro de estética: https://www.treatflow.io/es/blog/rgpd-centro-estetica — Datos de salud, documentos necesarios, fotos de antes y después, comunicaciones comerciales y brechas de seguridad.
+- Cómo calcular los precios de tu centro de estética: https://www.treatflow.io/es/blog/como-calcular-precios-centro-de-estetica — Coste por hora mínimo, tiempo, fungible y margen, competencia y una tarifa clara.
 
 ## Otros idiomas
 

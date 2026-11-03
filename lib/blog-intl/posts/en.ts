@@ -984,4 +984,190 @@ export const posts: BlogArticle[] = [
       { label: "GDPR.eu: guide to the GDPR", url: "https://gdpr.eu/" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 7. Pricing beauty treatments
+  // ---------------------------------------------------------------------------
+  {
+    topic: "pricing-beauty-treatments",
+    lang: "en",
+    slug: "how-to-price-beauty-treatments",
+    title: "How to Price Beauty Treatments: A Step-by-Step Calculation for Salons and Clinics",
+    metaTitle: "How to Price Beauty Treatments: Step-by-Step Guide",
+    description:
+      "How to price beauty treatments: work out your minimum hourly rate, add time, consumables and margin, check the market and build a price list clients trust.",
+    excerpt:
+      "Copying the salon down the road is not a pricing strategy. Here is a simple calculation for your minimum hourly rate, worked examples for four treatments and tips for a clear price list.",
+    category: "Business",
+    keywords: [
+      "how to price beauty treatments",
+      "beauty salon pricing",
+      "salon price list",
+      "how much to charge for facials",
+      "salon pricing strategy",
+      "aesthetic clinic pricing",
+      "calculate hourly rate salon",
+    ],
+    publishedAt: "2026-11-03",
+    updatedAt: "2026-11-03",
+    readMinutes: 8,
+    answer:
+      "Price beauty treatments from your costs upwards, then check them against the market. First calculate your minimum hourly rate: monthly fixed costs plus the salary you need, divided by the hours you can realistically bill. Multiply that rate by the full time a treatment blocks (including preparation and cleaning), add consumables and a margin of around 10–20 %, and only then compare the result with local competitors and your positioning.",
+    takeaways: [
+      "Your minimum hourly rate = (fixed costs + your own salary) ÷ billable hours, and billable hours are usually far fewer than opening hours.",
+      "Price the full time a treatment blocks a room and a therapist, not only the time the client is on the couch.",
+      "Add consumables per treatment and a margin for reserves, repairs and growth.",
+      "Competitor prices tell you what the market accepts, not what you need to earn.",
+      "A clear, tiered price list with transparent online prices builds trust and makes upselling easier.",
+    ],
+    intro: [
+      "Many salon owners set their prices once, when they open, by looking at what other studios in town charge. A few years later rent, products, energy and wages have gone up, the price list has barely moved, and the diary is full while the bank account is not. Being busy and being profitable are two different things.",
+      "This guide shows you how to calculate prices that cover your costs and pay you properly, for any treatment-based business: beauty salons, aesthetic clinics, nail, lash and PMU studios, laser studios, spas and massage practices. The figures in the examples are illustrative; replace them with your own numbers and you will have a solid floor for every service on your menu.",
+    ],
+    sections: [
+      {
+        heading: "Why do so many salons undercharge?",
+        paragraphs: [
+          "The most common reason is that prices are copied, not calculated. You do not know the rent, the staff costs or the financing of the salon you are copying, so you are inheriting someone else's assumptions, and possibly their losses.",
+          "The second reason is fear: fear of losing regulars, fear of looking expensive, fear of empty slots. In practice, clients who return because of the result and the experience rarely leave over a moderate, well-explained price. The clients who only come for the lowest price are the ones most likely to move on to the next offer anyway.",
+          "The third reason is invisible time. A 60-minute facial does not take 60 minutes of your day once you add the consultation, preparing the room, cleaning, disinfecting and writing up the treatment notes. If that time is not in the price, you are working it for free.",
+        ],
+      },
+      {
+        heading: "How do you calculate your minimum hourly rate?",
+        paragraphs: [
+          "Your minimum hourly rate is the amount every billable hour has to bring in so that all costs are covered and you are paid a fair salary. Calculate it once a year and whenever a big cost changes, such as a new lease or a new device.",
+        ],
+        steps: [
+          "Add up your monthly fixed costs: rent, utilities, insurance, software, marketing, accounting, training, equipment financing and everything else that is due whether clients come or not.",
+          "Decide on the salary you need as the owner, including income tax and social contributions. If you employ staff, add their full employer cost too.",
+          "Work out your billable hours: working days per month times working hours, minus time for admin, breaks, cleaning between clients, sickness and gaps in the diary. Deducting 20–30 % is realistic for most studios.",
+          "Divide fixed costs plus salary by billable hours. That is your break-even hourly rate.",
+          "Add a margin of around 10–20 % for reserves, repairs, quiet months and investment.",
+        ],
+        table: {
+          headers: ["Item (example)", "Per month"],
+          rows: [
+            ["Rent", "€900"],
+            ["Utilities", "€150"],
+            ["Insurance", "€80"],
+            ["Salon software", "€59"],
+            ["Marketing", "€200"],
+            ["Accountant", "€120"],
+            ["Training", "€100"],
+            ["Equipment financing", "€350"],
+            ["Other", "€141"],
+            ["**Fixed costs total**", "**€2,100**"],
+            ["Owner salary incl. tax and contributions", "€3,500"],
+            ["Billable hours (20 days × 8 h minus 25 %)", "120 h"],
+            ["Break-even rate: €5,600 ÷ 120 h", "€46.67/h"],
+            ["Target rate with 15 % margin", "≈ €54/h"],
+          ],
+        },
+        callout:
+          "Billable hours are the lever most people get wrong. If you plan with 160 hours but really treat clients for 110, every price on your list is roughly a third too low.",
+      },
+      {
+        heading: "How do you turn the hourly rate into a treatment price?",
+        paragraphs: [
+          "For each service, take the total time it blocks the room and the therapist, multiply it by your target hourly rate and add the consumables you use per treatment, such as masks, ampoules, gel, lashes, adhesive, needles or disposable covers. Device costs are already covered if the financing is part of your fixed costs; do not count them twice.",
+          "The result is your price floor. You can charge more, for example for experience, demand or a premium product line, but you should not regularly charge less.",
+        ],
+        table: {
+          headers: ["Treatment", "Blocked time", "Time × €54", "Consumables", "Price floor"],
+          rows: [
+            ["Classic facial", "75 min", "€67.50", "€8", "≈ €76"],
+            ["Gel manicure", "70 min", "€63.00", "€5", "≈ €68"],
+            ["Lash extensions, full set", "130 min", "€117.00", "€12", "≈ €129"],
+            ["Laser hair removal, underarms", "25 min", "€22.50", "€4", "≈ €27"],
+          ],
+        },
+        bullets: [
+          "Short device-based treatments often sit far above their time-based floor because of the investment, training and demand behind them. That is fine, as long as the floor is covered.",
+          "Long treatments with low material costs, such as massages, are the ones most often underpriced. Check them first.",
+        ],
+      },
+      {
+        heading: "How much should competitor prices matter?",
+        paragraphs: [
+          "Look at five to ten studios that your ideal clients would realistically compare you with, not every salon in the city. Note the prices for your three or four key treatments and how each studio positions itself: budget, mid-range or premium.",
+          "Then compare with your floor. If the market sits well above your floor, you have room to price for value. If the market sits below your floor, competing on price is a race you will lose; instead, sharpen what makes you different, such as specialisation, results, documentation, comfort or availability, and price accordingly.",
+        ],
+        bullets: [
+          "Budget positioning needs volume and very lean processes.",
+          "Mid-range positioning needs a consistent experience and good rebooking.",
+          "Premium positioning needs visible expertise, careful consultation and an excellent client journey from booking to aftercare.",
+        ],
+      },
+      {
+        heading: "How do you build a price list clients understand?",
+        paragraphs: [
+          "A good price list helps clients decide quickly and makes the higher-value option feel natural. Keep it short, show durations next to prices and describe the result, not only the steps.",
+        ],
+        bullets: [
+          "Offer two or three levels for core treatments, for example a 45-minute, a 75-minute and a 90-minute facial. Many clients choose the middle option when the differences are clear.",
+          "Price add-ons separately (eye treatment, extra mask, paraffin, nail art) so clients can upgrade without you discounting the main service.",
+          "Bundle course treatments, such as laser series or skin programmes, into packages with a clear number of sessions and a moderate saving.",
+          "Decide whether consultations are free, charged or credited against the first treatment, and say so openly.",
+          "Show final prices including VAT where it applies, and use 'from' prices only when the final price genuinely depends on the area or length.",
+          "Publish the same prices everywhere: on the website, in the online booking page and in the studio.",
+        ],
+        callout:
+          "In online booking, each service carries its own duration and price, so clients see what they book before they confirm. With Treatflow, the booking page sits under your own link and there is no commission on bookings, which keeps your cost per appointment predictable.",
+      },
+      {
+        heading: "When and how should you raise your prices?",
+        paragraphs: [
+          "Review your calculation at least once a year and whenever a major cost changes. Small, regular increases are easier for clients to accept than a big jump after several years.",
+        ],
+        steps: [
+          "Recalculate your hourly rate with current costs and compare every service with its floor.",
+          "Announce new prices four to six weeks in advance by email, message and in the studio.",
+          "Give a short, honest reason, such as higher product, energy or training costs, without apologising.",
+          "Let existing bookings keep the old price so nobody feels caught out.",
+          "Brief your team so everyone answers questions in the same calm way.",
+        ],
+      },
+      {
+        heading: "Which pricing mistakes cost salons the most money?",
+        paragraphs: [
+          "Most pricing problems come from a handful of habits that creep in over time. Check your price list against this list once a year.",
+        ],
+        bullets: [
+          "Permanent discounts and 'introductory offers' that never end and train clients to wait for deals.",
+          "Spontaneous personal discounts that are not recorded and quietly become the new normal.",
+          "Ignoring preparation, cleaning and documentation time in treatment durations.",
+          "Not charging for late cancellations and no-shows, so empty slots are carried entirely by you.",
+          "Raising prices only after years, then by a large amount at once.",
+          "Never checking which services actually earn money and which only fill the diary.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "How do I calculate the price of a beauty treatment?",
+        a: "Calculate your hourly rate first: monthly fixed costs plus your salary, divided by realistic billable hours, plus a margin of 10–20 %. Multiply that rate by the total time the treatment blocks, including preparation and cleaning, and add the consumables you use. The result is your price floor.",
+      },
+      {
+        q: "How much should I charge for a facial?",
+        a: "There is no universal price, because rent, wages and positioning differ by location. With an example hourly rate of €54 and a 75-minute time block, a classic facial would need to cost at least around €76. Do the calculation with your own figures and then compare with salons your clients would realistically choose between.",
+      },
+      {
+        q: "Should I just match my competitors' prices?",
+        a: "Use competitor prices as a market check, not as your starting point. You do not know their costs or whether they are profitable. If your calculated floor is above the local market, work on your positioning instead of cutting prices below cost.",
+      },
+      {
+        q: "Should beauty salons show prices online?",
+        a: "Yes, in most cases. Transparent prices reduce enquiries, filter out clients who are not a good fit and make online booking easier. Where the price depends on the area or hair length, show a clear 'from' price and explain what affects the final amount.",
+      },
+      {
+        q: "How often should a salon raise its prices?",
+        a: "Review prices at least once a year and after big cost changes. Moderate annual adjustments, announced a few weeks in advance, are usually accepted far more easily than a large increase after several years.",
+      },
+    ],
+    related: [
+      { pageKey: "pricing", label: "Treatflow pricing" },
+      { pageKey: "client-records", label: "Client records with full history" },
+      { pageKey: "features", label: "All features" },
+    ],
+  },
 ];

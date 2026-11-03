@@ -1035,4 +1035,190 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 7. Prijzen berekenen
+  // ---------------------------------------------------------------------------
+  {
+    topic: "pricing-beauty-treatments",
+    lang: "nl",
+    slug: "prijzen-berekenen-schoonheidssalon",
+    title: "Prijzen berekenen voor je schoonheidssalon: zo kom je tot een eerlijke behandelprijs",
+    metaTitle: "Prijzen berekenen voor je schoonheidssalon",
+    description:
+      "Zo bereken je de prijzen in je schoonheidssalon: minimaal uurtarief, tijd, materiaal en marge per behandeling, een blik op de markt en een heldere prijslijst.",
+    excerpt:
+      "De prijzen van de salon om de hoek overnemen is geen strategie. Met deze berekening weet je wat elke behandeling minimaal moet kosten, inclusief rekenvoorbeelden.",
+    category: "Ondernemen",
+    keywords: [
+      "prijzen berekenen schoonheidssalon",
+      "uurtarief schoonheidsspecialiste berekenen",
+      "prijslijst schoonheidssalon",
+      "wat kost een gezichtsbehandeling",
+      "tarieven salon bepalen",
+      "prijsstrategie salon",
+      "prijs wimperextensions berekenen",
+    ],
+    publishedAt: "2026-11-03",
+    updatedAt: "2026-11-03",
+    readMinutes: 8,
+    answer:
+      "Een goede behandelprijs reken je van onderen naar boven uit en toets je pas daarna aan de markt. Bereken eerst je minimale uurtarief: je vaste lasten per maand plus het inkomen dat je nodig hebt, gedeeld door het aantal uren dat je echt aan klanten besteedt. Vermenigvuldig dat tarief met de totale tijd die een behandeling in beslag neemt (inclusief voorbereiden en schoonmaken), tel materiaalkosten en een marge van 10 tot 20 % op, en vergelijk dan pas met de concurrentie.",
+    takeaways: [
+      "Minimaal uurtarief = (vaste lasten + je eigen inkomen) ÷ declarabele uren, en dat zijn er veel minder dan je openingsuren.",
+      "Reken de volledige tijd dat een behandeling je ruimte en jou bezet houdt, niet alleen de tijd op de behandelstoel.",
+      "Tel per behandeling de verbruiksmaterialen op en reken een marge voor reserves, reparaties en groei.",
+      "Prijzen van concurrenten laten zien wat de markt accepteert, niet wat jij moet verdienen.",
+      "Een overzichtelijke prijslijst met niveaus en zichtbare online prijzen wekt vertrouwen.",
+    ],
+    intro: [
+      "Veel saloneigenaren bepalen hun prijzen één keer, bij de opening, door te kijken wat andere salons in de buurt vragen. Een paar jaar later zijn huur, producten, energie en lonen gestegen, maar de prijslijst is nauwelijks veranderd. De agenda zit vol, de rekening niet. Druk zijn en winstgevend zijn is niet hetzelfde.",
+      "In dit artikel lees je hoe je prijzen berekent die je kosten dekken en jou een fatsoenlijk inkomen geven. Dat werkt voor schoonheidssalons, huidklinieken, nagel-, wimper- en PMU-studio's, laserstudio's, spa's en massagepraktijken. De bedragen in de voorbeelden zijn illustratief: vul je eigen cijfers in en je hebt voor elke behandeling een stevige ondergrens.",
+    ],
+    sections: [
+      {
+        heading: "Waarom rekenen zoveel salons te weinig?",
+        paragraphs: [
+          "De belangrijkste reden: prijzen worden gekopieerd in plaats van berekend. Je weet niet wat de salon die je volgt aan huur, personeel of financiering betaalt. Je neemt dus andermans aannames over, en misschien ook andermans verlies.",
+          "De tweede reden is angst: angst om vaste klanten kwijt te raken, om duur over te komen, om lege plekken in de agenda. In de praktijk vertrekken klanten die voor het resultaat en de ervaring komen zelden om een redelijke, goed uitgelegde prijs. Wie alleen op de laagste prijs let, gaat sowieso naar de volgende aanbieding.",
+          "De derde reden is onzichtbare tijd. Een gezichtsbehandeling van 60 minuten kost je met intake, ruimte klaarzetten, schoonmaken, desinfecteren en het bijwerken van de klantenkaart al snel 75 minuten. Zit die tijd niet in de prijs, dan werk je die gratis.",
+        ],
+      },
+      {
+        heading: "Hoe bereken je je minimale uurtarief?",
+        paragraphs: [
+          "Je minimale uurtarief is het bedrag dat elk declarabel uur moet opleveren om alle kosten te dekken en jezelf een eerlijk inkomen te betalen. Reken het minstens één keer per jaar door, en altijd wanneer een grote kostenpost verandert, zoals een nieuw huurcontract of een nieuw apparaat.",
+        ],
+        steps: [
+          "Tel je vaste lasten per maand op: huur, energie, verzekeringen, software, marketing, boekhouder, opleidingen, financiering van apparatuur en alles wat je betaalt, of er nu klanten komen of niet.",
+          "Bepaal welk inkomen je als eigenaar nodig hebt, inclusief inkomstenbelasting en premies. Heb je personeel, tel dan ook hun volledige loonkosten mee.",
+          "Bereken je declarabele uren: werkdagen per maand × uren per dag, min tijd voor administratie, pauzes, schoonmaken tussen klanten, ziekte en gaten in de agenda. Voor de meeste salons is 20 tot 30 % aftrekken realistisch.",
+          "Deel vaste lasten plus inkomen door je declarabele uren. Dat is je break-even-uurtarief.",
+          "Tel daar een marge van ongeveer 10 tot 20 % bij op voor reserves, reparaties, rustige maanden en investeringen.",
+        ],
+        table: {
+          headers: ["Kostenpost (voorbeeld)", "Per maand"],
+          rows: [
+            ["Huur", "€ 900"],
+            ["Energie en water", "€ 150"],
+            ["Verzekeringen", "€ 80"],
+            ["Salonsoftware", "€ 59"],
+            ["Marketing", "€ 200"],
+            ["Boekhouder", "€ 120"],
+            ["Opleidingen", "€ 100"],
+            ["Financiering apparatuur", "€ 350"],
+            ["Overig", "€ 141"],
+            ["**Totaal vaste lasten**", "**€ 2.100**"],
+            ["Inkomen eigenaar incl. belasting en premies", "€ 3.500"],
+            ["Declarabele uren (20 dagen × 8 uur min 25 %)", "120 uur"],
+            ["Break-even: € 5.600 ÷ 120 uur", "€ 46,67 per uur"],
+            ["Doeltarief met 15 % marge", "≈ € 54 per uur"],
+          ],
+        },
+        callout:
+          "Declarabele uren zijn de grootste valkuil. Reken je met 160 uur terwijl je in werkelijkheid 110 uur behandelt, dan is elke prijs op je lijst ongeveer een derde te laag.",
+      },
+      {
+        heading: "Hoe maak je van je uurtarief een behandelprijs?",
+        paragraphs: [
+          "Neem per behandeling de totale tijd dat ruimte en behandelaar bezet zijn, vermenigvuldig die met je doeltarief en tel de verbruiksmaterialen op: maskers, ampullen, gel, wimpers, lijm, naalden of wegwerpmateriaal. Zit de financiering van een apparaat al in je vaste lasten, reken die dan niet nog een keer mee.",
+          "De uitkomst is je ondergrens. Je mag meer vragen, bijvoorbeeld vanwege ervaring, vraag of een luxe productlijn, maar je zou niet structureel minder moeten vragen.",
+        ],
+        table: {
+          headers: ["Behandeling", "Bezette tijd", "Tijd × € 54", "Materiaal", "Ondergrens"],
+          rows: [
+            ["Klassieke gezichtsbehandeling", "75 min", "€ 67,50", "€ 8", "≈ € 76"],
+            ["Gellak manicure", "70 min", "€ 63,00", "€ 5", "≈ € 68"],
+            ["Wimperextensions, nieuwe set", "130 min", "€ 117,00", "€ 12", "≈ € 129"],
+            ["Laserontharing oksels", "25 min", "€ 22,50", "€ 4", "≈ € 27"],
+          ],
+        },
+        bullets: [
+          "Korte apparaatbehandelingen liggen in de praktijk vaak ver boven hun ondergrens, vanwege de investering, opleiding en vraag. Prima, zolang de ondergrens gedekt is.",
+          "Lange behandelingen met weinig materiaal, zoals massages, zijn het vaakst te goedkoop. Controleer die als eerste.",
+        ],
+      },
+      {
+        heading: "Hoeveel gewicht geef je aan de prijzen van concurrenten?",
+        paragraphs: [
+          "Kijk naar vijf tot tien zaken waarmee jouw ideale klant je echt zou vergelijken, niet naar elke salon in de stad. Noteer de prijzen van je drie of vier belangrijkste behandelingen en hoe elke salon zich positioneert: budget, middensegment of premium.",
+          "Leg dat naast je ondergrens. Zit de markt duidelijk boven je ondergrens, dan heb je ruimte om op waarde te prijzen. Zit de markt eronder, dan is concurreren op prijs een race die je verliest. Maak in plaats daarvan scherp wat je onderscheidt, zoals specialisatie, resultaat, zorgvuldige documentatie, comfort of beschikbaarheid, en prijs daarnaar.",
+        ],
+        bullets: [
+          "Een budgetpositie vraagt om volume en heel efficiënte processen.",
+          "Het middensegment vraagt om een constante ervaring en veel herhaalafspraken.",
+          "Premium vraagt om zichtbare expertise, een zorgvuldig intakegesprek en een uitstekende klantreis van boeking tot nazorg.",
+        ],
+      },
+      {
+        heading: "Hoe maak je een prijslijst die klanten begrijpen?",
+        paragraphs: [
+          "Een goede prijslijst helpt klanten snel te kiezen en laat de waardevollere optie vanzelfsprekend voelen. Houd hem kort, zet de duur naast de prijs en beschrijf het resultaat, niet alleen de stappen.",
+        ],
+        bullets: [
+          "Bied voor je kernbehandelingen twee of drie niveaus, bijvoorbeeld een gezichtsbehandeling van 45, 75 en 90 minuten. Als de verschillen duidelijk zijn, kiezen veel klanten de middelste.",
+          "Prijs extra's apart (oogbehandeling, extra masker, paraffine, nail art), zodat klanten kunnen upgraden zonder dat je korting geeft op de hoofdbehandeling.",
+          "Bundel kuren, zoals laserseries of huidprogramma's, in pakketten met een vast aantal sessies en een bescheiden voordeel.",
+          "Bepaal of een intake gratis is, betaald of verrekend wordt met de eerste behandeling, en communiceer dat open.",
+          "Toon eindprijzen inclusief btw als je btw-plichtig bent, en gebruik vanaf-prijzen alleen als de prijs echt afhangt van zone of lengte. Valt je salon onder de kleineondernemersregeling (KOR), stem je prijsopbouw dan af met je boekhouder.",
+          "Gebruik overal dezelfde prijzen: op je website, in de online agenda en in de salon.",
+        ],
+        callout:
+          "Bij online boeken heeft elke behandeling een eigen duur en prijs, zodat klanten zien wat ze boeken voordat ze bevestigen. Met Treatflow staat je boekingspagina onder je eigen link en betaal je geen commissie per boeking: een vast bedrag van € 39 of € 59 per maand. Je kunt het 14 dagen gratis proberen, zonder creditcard.",
+      },
+      {
+        heading: "Wanneer en hoe verhoog je je prijzen?",
+        paragraphs: [
+          "Reken je tarieven minstens één keer per jaar opnieuw door en altijd na een grote kostenstijging. Kleine, regelmatige aanpassingen worden veel makkelijker geaccepteerd dan één grote sprong na een paar jaar.",
+        ],
+        steps: [
+          "Bereken je uurtarief opnieuw met de actuele kosten en vergelijk elke behandeling met haar ondergrens.",
+          "Kondig nieuwe prijzen vier tot zes weken van tevoren aan, per e-mail, bericht en in de salon.",
+          "Geef een korte, eerlijke reden, zoals hogere kosten voor producten, energie of opleiding, zonder je te verontschuldigen.",
+          "Laat bestaande afspraken tegen de oude prijs doorgaan, zodat niemand zich overvallen voelt.",
+          "Bereid je team voor, zodat iedereen vragen op dezelfde rustige manier beantwoordt.",
+        ],
+      },
+      {
+        heading: "Welke prijsfouten kosten salons het meeste geld?",
+        paragraphs: [
+          "De meeste prijsproblemen ontstaan uit een paar gewoontes die er langzaam insluipen. Loop je prijslijst één keer per jaar langs deze lijst.",
+        ],
+        bullets: [
+          "Kennismakingsacties die nooit stoppen en klanten leren wachten op korting.",
+          "Spontane persoonlijke kortingen die nergens worden vastgelegd en ongemerkt de nieuwe standaard worden.",
+          "Voorbereiding, schoonmaken en administratie niet meenemen in de duur van behandelingen.",
+          "Geen afspraken over late annuleringen en no-shows, waardoor jij elke lege plek volledig betaalt.",
+          "Jarenlang niets verhogen en dan in één keer flink.",
+          "Nooit controleren welke behandelingen echt geld opleveren en welke alleen de agenda vullen.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Hoe bereken ik de prijs van een schoonheidsbehandeling?",
+        a: "Bereken eerst je uurtarief: vaste lasten per maand plus je inkomen, gedeeld door je realistische declarabele uren, plus 10 tot 20 % marge. Vermenigvuldig dat met de totale tijd van de behandeling inclusief voorbereiding en schoonmaken en tel de materiaalkosten op. Dat is je ondergrens.",
+      },
+      {
+        q: "Wat kost een gezichtsbehandeling gemiddeld?",
+        a: "Een vaste prijs bestaat niet, want huur, lonen en positionering verschillen per plaats. Met een voorbeeldtarief van € 54 per uur en 75 minuten bezette tijd moet een klassieke gezichtsbehandeling minstens zo'n € 76 kosten. Maak de berekening met je eigen cijfers en vergelijk daarna met salons waar jouw klanten echt tussen kiezen.",
+      },
+      {
+        q: "Kan ik niet gewoon dezelfde prijzen vragen als mijn concurrenten?",
+        a: "Gebruik prijzen van concurrenten als markttoets, niet als vertrekpunt. Je kent hun kosten niet en weet niet of ze winst maken. Ligt jouw ondergrens boven de lokale markt, werk dan aan je positionering in plaats van onder de kostprijs te gaan zitten.",
+      },
+      {
+        q: "Moet ik mijn prijzen online zetten?",
+        a: "In de meeste gevallen wel. Zichtbare prijzen besparen je vragen per bericht, filteren klanten die niet bij je passen en maken online boeken makkelijker. Hangt de prijs af van zone of lengte, toon dan een duidelijke vanaf-prijs en leg uit wat het eindbedrag bepaalt.",
+      },
+      {
+        q: "Hoe vaak moet een salon de prijzen verhogen?",
+        a: "Controleer je prijzen minstens één keer per jaar en na grote kostenwijzigingen. Een gematigde jaarlijkse aanpassing, een paar weken vooraf aangekondigd, wordt meestal veel beter ontvangen dan een flinke verhoging na jaren stilstand.",
+      },
+    ],
+    related: [
+      { pageKey: "pricing", label: "Prijzen en pakketten" },
+      { pageKey: "client-records", label: "Digitale klantenkaart" },
+      { pageKey: "features", label: "Alle functies van Treatflow" },
+    ],
+  },
 ];
