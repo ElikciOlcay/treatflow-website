@@ -1,4 +1,4 @@
-import { Link2, Calendar, Bell, Languages, Ticket, ListOrdered, Wallet } from 'lucide-react';
+import { Link2, Calendar, Bell, Languages, Ticket, ListOrdered, Wallet, BadgePercent, CalendarCog } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import SocialProofBar from '../components/SocialProofBar';
@@ -179,13 +179,15 @@ export default function OnlineBuchungenPage() {
                 title="Was du bekommst"
                 description="Buchungslink, Sprachen, Warteliste, Rabatte und Treatflow Pay – ohne Provision pro Termin."
                 items={[
-                    { icon: Link2, title: 'Persönlicher Buchungslink', text: 'Dein Link zum Teilen auf Website und Social Media – mit Studio-Branding.', points: ['Individueller Link', 'QR-Code', 'Studio-Branding'] },
+                    { icon: Link2, title: 'Persönlicher Buchungslink', text: 'Dein Link zum Teilen auf Website und Social Media – mit Studio-Branding.', points: ['Individueller Link', 'Direktlinks zu Kategorien', 'QR-Code'] },
                     { icon: Languages, title: 'Sechs Sprachen', text: 'Die Buchungsseite passt sich der Sprache der Kundin an – ohne extra Setup.', points: ['DE, EN, TR, PL, IT, RU', 'Automatische Sprache', 'Ohne Barriere'] },
-                    { icon: Wallet, title: 'Treatflow Pay', text: 'Anzahlung oder Vollzahlung direkt bei der Online-Buchung.', points: ['Pro Leistung einstellbar', 'Anzahlung oder Vollzahlung', '2,69 % pro Transaktion'] },
+                    { icon: Wallet, title: 'Treatflow Pay', text: 'Anzahlung oder Vollzahlung direkt bei der Online-Buchung.', points: ['Pro Leistung einstellbar', 'Pflicht nur für Neukunden möglich', '2,69 % pro Transaktion'] },
                     { icon: ListOrdered, title: 'Warteliste', text: 'Bei Ausbuchung vormerken. Wird ein Termin frei, geht eine E-Mail an passende Interessenten.', points: ['Auto-Mail bei Storno', 'Zwei Benachrichtigungsmodi', 'Übersicht im Dashboard'] },
                     { icon: Ticket, title: 'Rabattcodes', text: 'Codes für Neukunden und Kampagnen – direkt bei der Online-Buchung einlösen.', points: ['Neukunden & Aktionen', 'Einlösung beim Buchen', 'Nutzungsstatistik'] },
                     { icon: Bell, title: 'Erinnerungen', text: 'WhatsApp und E-Mail vor dem Termin. Kundinnen können rechtzeitig stornieren, der Slot wird frei.', points: ['WhatsApp & E-Mail', 'Flexible Zeitpunkte', 'Weniger No-Shows'] },
-                    { icon: Calendar, title: 'Flexible Termine', text: 'Arbeitszeiten, Behandlungsdauern, Pausen und Urlaub – nur echte Verfügbarkeit wird angeboten.', points: ['Arbeitszeiten', 'Pausen & Urlaub', 'Keine Doppelbuchung'] },
+                    { icon: Calendar, title: 'Flexible Termine', text: 'Arbeitszeiten oder Schichtplan, Behandlungsdauern, Pausen und Urlaub – nur echte Verfügbarkeit wird angeboten. Leistungen lassen sich auf bestimmte Arbeitstage beschränken.', points: ['Arbeitszeiten oder Schichtplan', 'Leistungen pro Arbeitstag', 'Keine Doppelbuchung'] },
+                    { icon: BadgePercent, title: 'Angebote & Ab-Preise', text: 'Leistungen als Angebot hervorheben – mit Streichpreis, Bild und Countdown. Für individuell kalkulierte Behandlungen zeigst du einen Ab-Preis.', points: ['Streichpreis & Badge', 'Countdown bis Enddatum', 'Ab-Preise'] },
+                    { icon: CalendarCog, title: 'Termin selbst verwalten', text: 'Über den Link in der Bestätigung sehen Kundinnen ihren Termin und können ihn verschieben oder stornieren – sofern du das erlaubst.', points: ['Verschieben & Stornieren', 'Zugang per Code', 'Einzeln abschaltbar'] },
                 ]}
             />
 

@@ -19,6 +19,11 @@ import {
   CreditCard,
   Mic,
   type LucideIcon,
+  CalendarClock,
+  Ban,
+  KeyRound,
+  BadgePercent,
+  CalendarCog,
 } from "lucide-react";
 import type { FeaturePageProps } from "@/app/components/FeaturePageEn";
 import { marketLanguage, marketPathPrefix, type PrefixedMarket } from "@/app/i18n/config";
@@ -61,6 +66,9 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         { icon: Clock, title: "Fast rescheduling", desc: "Move or extend appointments with simple drag & drop." },
         { icon: Smartphone, title: "Works on any device", desc: "Manage your calendar from desktop, tablet or phone." },
         { icon: Bell, title: "Automatic reminders", desc: "Reduce no-shows with automatic WhatsApp and email reminders." },
+        { icon: CalendarClock, title: "Shift planner", desc: "Plan your team's week with shifts, templates and absences. Online booking then only offers times within planned shifts." },
+        { icon: Ban, title: "Time blocks & series", desc: "Block breaks, team meetings and holidays – also as recurring blocks. Plan treatment courses as a series of sessions." },
+        { icon: KeyRound, title: "Tablet with staff PIN", desc: "Every team member signs in with their own PIN. Roles separate admins from staff, and the screen lock protects client data." },
       ],
       closingTitle: "Less admin, more time for your clients",
       closingText:
@@ -133,6 +141,9 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         { icon: Clock, title: "Hızlı erteleme", desc: "Randevuyu sürükle-bırak ile taşıyın veya süreyi uzatın." },
         { icon: Smartphone, title: "Her cihazdan", desc: "Takvimi bilgisayar, tablet veya telefondan yönetin." },
         { icon: Bell, title: "Otomatik hatırlatma", desc: "WhatsApp ve e-posta hatırlatmalarıyla randevuya gelmeme oranını azaltın." },
+        { icon: CalendarClock, title: "Vardiya planlayıcı", desc: "Ekibinizin haftasını vardiyalar, şablonlar ve izinlerle planlayın. Online randevu yalnızca planlanan vardiyalardaki saatleri sunar." },
+        { icon: Ban, title: "Zaman blokları ve seriler", desc: "Molaları, ekip toplantılarını ve tatilleri bloke edin – tekrarlayan bloklar olarak da. Kür tedavilerini birden fazla seanslık seri olarak planlayın." },
+        { icon: KeyRound, title: "Personel PIN'li tablet", desc: "Her ekip üyesi kendi PIN'i ile giriş yapar. Roller yöneticileri ve personeli ayırır, ekran kilidi müşteri verilerini korur." },
       ],
       closingTitle: "Daha az telefon, müşteriye daha çok zaman",
       closingText:
@@ -208,6 +219,8 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         { icon: Bell, title: "Auto confirmations", desc: "Instant confirmation plus reminders that cut no-shows." },
         { icon: Smartphone, title: "Mobile-first", desc: "Designed for phones - where most beauty clients book." },
         { icon: Link2, title: "Synced calendar", desc: "Every booking lands straight in your studio calendar." },
+        { icon: BadgePercent, title: "Offers & from-prices", desc: "Highlight services as offers with a struck-through price, image and countdown. Show a from-price for individually priced treatments." },
+        { icon: CalendarCog, title: "Self-service appointments", desc: "Via the link in the confirmation, clients view their appointment and can reschedule or cancel it – if you allow it." },
       ],
       closingTitle: "Fill more chairs with less phone time",
       closingText:
@@ -265,6 +278,8 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         { icon: Bell, title: "Otomatik onay", desc: "Randevu alındığında onay gönderilir; hatırlatmalar randevuya gelmeme oranını azaltmaya yardımcı olur." },
         { icon: Smartphone, title: "Mobil uyumlu", desc: "Müşterilerin çoğu telefondan randevu alır – sayfa buna göre tasarlandı." },
         { icon: Link2, title: "Takvimle entegre", desc: "Her randevu doğrudan salon takviminize düşer." },
+        { icon: BadgePercent, title: "Kampanyalar ve 'başlayan' fiyatlar", desc: "Hizmetleri üstü çizili fiyat, görsel ve geri sayımla kampanya olarak öne çıkarın. Kişiye özel fiyatlanan işlemler için 'başlayan' fiyat gösterin." },
+        { icon: CalendarCog, title: "Randevuyu kendisi yönetsin", desc: "Onaydaki bağlantıyla müşteriler randevularını görür ve izin verirseniz erteleyebilir veya iptal edebilir." },
       ],
       closingTitle: "Daha az telefon, daha dolu takvim",
       closingText:

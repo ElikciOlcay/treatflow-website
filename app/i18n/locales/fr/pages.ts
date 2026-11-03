@@ -33,6 +33,11 @@ import {
   Users,
   Workflow,
   Zap,
+  CalendarClock,
+  Ban,
+  KeyRound,
+  BadgePercent,
+  CalendarCog,
 } from "lucide-react";
 import type { InternationalPageContent } from "@/app/components/InternationalSeoPage";
 import type { FeatureContent, LocaleSiteContent } from "../types";
@@ -145,6 +150,9 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
         title: "Rappels automatiques",
         desc: "Réduisez les rendez-vous manqués grâce aux rappels automatiques par WhatsApp et e-mail.",
       },
+      { icon: CalendarClock, title: "Planning des équipes", desc: "Planifiez la semaine de votre équipe avec des créneaux de travail, des modèles et des absences. La réservation en ligne ne propose alors que des horaires pendant les créneaux planifiés." },
+      { icon: Ban, title: "Blocages et séries", desc: "Bloquez pauses, réunions d'équipe et congés – aussi de façon récurrente. Planifiez les cures comme une série de séances." },
+      { icon: KeyRound, title: "Tablette avec code PIN", desc: "Chaque membre de l'équipe se connecte avec son propre code PIN. Les rôles séparent administrateurs et employés, le verrouillage d'écran protège les données clients." },
     ],
     closingTitle: "Moins d'administratif, plus de temps pour vos clients",
     closingText:
@@ -216,6 +224,8 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
         title: "Agenda synchronisé",
         desc: "Chaque réservation arrive directement dans l'agenda de votre institut.",
       },
+      { icon: BadgePercent, title: "Offres et prix « à partir de »", desc: "Mettez des prestations en avant comme offre avec prix barré, image et compte à rebours. Affichez un prix « à partir de » pour les soins sur mesure." },
+      { icon: CalendarCog, title: "Rendez-vous en autonomie", desc: "Via le lien de confirmation, vos clientes consultent leur rendez-vous et peuvent le déplacer ou l'annuler – si vous l'autorisez." },
     ],
     closingTitle: "Plus de rendez-vous, moins de temps au téléphone",
     closingText:
@@ -710,6 +720,9 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
         title: "Un écosystème qui grandit",
         desc: "Connectez les outils sur lesquels votre institut s'appuie déjà.",
       },
+      { icon: MessageCircle, title: "WhatsApp", desc: "Confirmations, rappels, annulations et reports via WhatsApp – avec l'e-mail en secours." },
+      { icon: Sparkles, title: "Assistants IA (MCP)", desc: "Claude, ChatGPT & co. répondent aux questions sur les rendez-vous, les clients et le chiffre d'affaires – en lecture seule, les données de santé restent dans Treatflow." },
+      { icon: CalendarClock, title: "Planning des équipes", desc: "Planifiez créneaux, congés et absences par semaine – la réservation en ligne suit le planning. Gratuit." },
     ],
     closingTitle: "Une seule source de vérité pour votre institut",
     closingText:
@@ -725,6 +738,8 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
         answer:
           "Oui. Avec la formule Booking, vous pouvez connecter Treatflow à d'autres outils via Zapier, par exemple des tableurs ou des automatisations d'e-mails.",
       },
+      { question: "Puis-je connecter Claude ou ChatGPT à mon institut ?", answer: "Oui. Dans Apps → Assistants IA (MCP), vous connectez Claude, ChatGPT, Cursor et d'autres assistants à votre institut. Ils répondent aux questions sur les rendez-vous, les créneaux libres, les coordonnées des clients, les prestations et le chiffre d'affaires. L'accès est en lecture seule : dossiers de soins, fiches d'anamnèse, photos et notes ne sont jamais partagés." },
+      { question: "À quoi sert le planning des équipes ?", answer: "Le planning des équipes vous permet d'organiser la semaine de votre équipe avec des créneaux, des modèles et des absences comme les congés ou les arrêts maladie. Une fois activé, la réservation en ligne ne propose que des horaires pendant les créneaux planifiés. Vous l'activez gratuitement dans Apps ; les huit premières semaines sont préremplies à partir de vos horaires de travail existants." },
     ],
     aiCapsules: [
       {

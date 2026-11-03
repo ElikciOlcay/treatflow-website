@@ -28,6 +28,7 @@ import {
   Users,
   Workflow,
   Zap,
+  CalendarClock,
 } from "lucide-react";
 
 type PageContent = Omit<
@@ -332,6 +333,9 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
         title: "Büyüyen ekosistem",
         desc: "Salonunuzun zaten kullandığı araçları bağlayın.",
       },
+      { icon: MessageCircle, title: "WhatsApp", desc: "Onaylar, hatırlatmalar, iptaller ve ertelemeler WhatsApp ile – yedek olarak e-posta." },
+      { icon: Sparkles, title: "Yapay zekâ asistanları (MCP)", desc: "Claude, ChatGPT ve diğerleri randevular, müşteriler ve ciro hakkındaki soruları yanıtlar – yalnızca okuma, sağlık verileri Treatflow'da kalır." },
+      { icon: CalendarClock, title: "Vardiya planlayıcı", desc: "Vardiyaları, tatilleri ve izinleri haftalık planlayın – online randevu plana göre çalışır. Ücretsiz." },
     ],
     closingTitle: "Salonunuz için tek kaynak",
     closingText:
@@ -347,6 +351,8 @@ const pages: Record<ExtraFeatureKey, PageContent> = {
         answer:
           "Evet. Booking paketinde Treatflow'u Zapier üzerinden tablolar veya e-posta iş akışları gibi diğer araçlara bağlayabilirsiniz.",
       },
+      { question: "Claude veya ChatGPT'yi salonuma bağlayabilir miyim?", answer: "Evet. Uygulamalar → Yapay zekâ asistanları (MCP) bölümünden Claude, ChatGPT, Cursor ve diğer asistanları salonunuza bağlarsınız. Asistan randevular, boş saatler, müşteri iletişim bilgileri, hizmetler ve ciro hakkındaki soruları yanıtlayabilir. Erişim yalnızca okumadır: tedavi kayıtları, anamnez formları, fotoğraflar ve notlar asla paylaşılmaz." },
+      { question: "Vardiya planlayıcı ne işe yarar?", answer: "Vardiya planlayıcı ile ekibinizin haftasını vardiyalar, şablonlar ve tatil ya da hastalık gibi izinlerle planlarsınız. Etkinleştirildiğinde online randevu yalnızca planlanan vardiyalardaki saatleri sunar. Uygulamalar bölümünden ücretsiz etkinleştirirsiniz; ilk sekiz hafta mevcut çalışma saatlerinizden doldurulur." },
     ],
     relatedLinks: [
       { href: "/tr/online-randevu-sistemi", label: "Online randevu" },

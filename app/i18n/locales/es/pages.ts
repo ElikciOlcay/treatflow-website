@@ -38,6 +38,11 @@ import {
   Users,
   Workflow,
   Zap,
+  CalendarClock,
+  Ban,
+  KeyRound,
+  BadgePercent,
+  CalendarCog,
 } from "lucide-react";
 
 type FeatureLinkKey =
@@ -166,6 +171,9 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
         { icon: Clock, title: "Cambios rápidos", desc: "Mueve o alarga citas arrastrando y soltando." },
         { icon: Smartphone, title: "En cualquier dispositivo", desc: "Gestiona tu agenda desde el ordenador, la tablet o el móvil." },
         { icon: Bell, title: "Recordatorios automáticos", desc: "Reduce las ausencias con recordatorios automáticos por WhatsApp y email." },
+        { icon: CalendarClock, title: "Planificador de turnos", desc: "Planifica la semana de tu equipo con turnos, plantillas y ausencias. La reserva online solo ofrece horas dentro de los turnos planificados." },
+        { icon: Ban, title: "Bloqueos y series", desc: "Bloquea pausas, reuniones de equipo y vacaciones, también de forma periódica. Planifica los tratamientos por bonos como una serie de sesiones." },
+        { icon: KeyRound, title: "Tablet con PIN de empleado", desc: "Cada miembro del equipo entra con su propio PIN. Los roles separan administradores y empleados, y el bloqueo de pantalla protege los datos de clientes." },
       ],
       closingTitle: "Menos gestión, más tiempo para tus clientas",
       closingText:
@@ -212,6 +220,8 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
         { icon: Bell, title: "Confirmación automática", desc: "Confirmación inmediata y recordatorios que reducen las ausencias." },
         { icon: Smartphone, title: "Pensada para el móvil", desc: "Diseñada para el teléfono, desde donde reservan la mayoría de las clientas." },
         { icon: Link2, title: "Agenda sincronizada", desc: "Cada reserva entra directamente en la agenda de tu centro." },
+        { icon: BadgePercent, title: "Ofertas y precios «desde»", desc: "Destaca servicios como oferta con precio tachado, imagen y cuenta atrás. Muestra un precio «desde» para tratamientos a medida." },
+        { icon: CalendarCog, title: "Cita autogestionada", desc: "Con el enlace de la confirmación, tus clientas ven su cita y pueden cambiarla o cancelarla, si tú lo permites." },
       ],
       closingTitle: "Más citas, menos tiempo al teléfono",
       closingText:
@@ -614,6 +624,9 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
           title: "Ecosistema en crecimiento",
           desc: "Conecta las herramientas en las que ya confía tu salón.",
         },
+        { icon: MessageCircle, title: "WhatsApp", desc: "Confirmaciones, recordatorios, cancelaciones y cambios por WhatsApp, con el e-mail como alternativa." },
+        { icon: Sparkles, title: "Asistentes de IA (MCP)", desc: "Claude, ChatGPT y otros responden preguntas sobre citas, clientes y facturación: solo lectura, los datos de salud se quedan en Treatflow." },
+        { icon: CalendarClock, title: "Planificador de turnos", desc: "Planifica turnos, vacaciones y ausencias por semana: la reserva online sigue el plan. Gratis." },
       ],
       closingTitle: "Una única fuente de datos para tu centro",
       closingText:
@@ -629,6 +642,8 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
           answer:
             "Sí. Con el plan Booking puedes conectar Treatflow con otras herramientas a través de Zapier, por ejemplo hojas de cálculo o flujos de email.",
         },
+        { question: "¿Puedo conectar Claude o ChatGPT con mi centro?", answer: "Sí. En Apps → Asistentes de IA (MCP) conectas Claude, ChatGPT, Cursor y otros asistentes con tu centro. Pueden responder preguntas sobre citas, horas libres, datos de contacto de clientes, servicios y facturación. El acceso es solo de lectura: historiales de tratamiento, anamnesis, fotos y notas nunca se comparten." },
+        { question: "¿Qué hace el planificador de turnos?", answer: "Con el planificador de turnos organizas la semana de tu equipo con turnos, plantillas y ausencias como vacaciones o bajas. Cuando está activo, la reserva online solo ofrece horas dentro de los turnos planificados. Lo activas gratis en Apps; las primeras ocho semanas se rellenan con tus horarios de trabajo actuales." },
       ],
       aiCapsules: [
         {

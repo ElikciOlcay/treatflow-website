@@ -33,6 +33,11 @@ import {
   Users,
   Workflow,
   Zap,
+  CalendarClock,
+  Ban,
+  KeyRound,
+  BadgePercent,
+  CalendarCog,
 } from "lucide-react";
 import type { InternationalPageContent } from "@/app/components/InternationalSeoPage";
 import type { SeoPageKey } from "@/app/i18n/seo";
@@ -77,6 +82,9 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
       { icon: Clock, title: "Spostamenti rapidi", desc: "Sposta o allunga gli appuntamenti con un semplice drag & drop." },
       { icon: Smartphone, title: "Su ogni dispositivo", desc: "Gestisci l'agenda da computer, tablet o smartphone." },
       { icon: Bell, title: "Promemoria automatici", desc: "Riduci gli appuntamenti mancati con promemoria automatici via WhatsApp ed email." },
+      { icon: CalendarClock, title: "Pianificazione turni", desc: "Pianifica la settimana del team con turni, modelli e assenze. La prenotazione online mostra solo orari all'interno dei turni pianificati." },
+      { icon: Ban, title: "Blocchi orari e serie", desc: "Blocca pause, riunioni e ferie – anche in modo ricorrente. Pianifica i percorsi di trattamento come serie di sedute." },
+      { icon: KeyRound, title: "Tablet con PIN del personale", desc: "Ogni membro del team accede con il proprio PIN. I ruoli separano amministratori e personale, il blocco schermo protegge i dati dei clienti." },
     ],
     closingTitle: "Meno burocrazia, più tempo per le tue clienti",
     closingText:
@@ -123,6 +131,8 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
       { icon: Bell, title: "Conferme automatiche", desc: "Conferma immediata e promemoria che riducono gli appuntamenti mancati." },
       { icon: Smartphone, title: "Mobile-first", desc: "Pensata per lo smartphone – dove prenota la maggior parte delle clienti." },
       { icon: Link2, title: "Agenda sincronizzata", desc: "Ogni prenotazione arriva direttamente nell'agenda del centro." },
+      { icon: BadgePercent, title: "Offerte e prezzi «a partire da»", desc: "Metti in evidenza i servizi come offerta con prezzo barrato, immagine e conto alla rovescia. Mostra un prezzo «a partire da» per i trattamenti su misura." },
+      { icon: CalendarCog, title: "Appuntamento in autonomia", desc: "Con il link nella conferma i clienti vedono il loro appuntamento e possono spostarlo o annullarlo – se lo consenti." },
     ],
     closingTitle: "Più cabine occupate, meno tempo al telefono",
     closingText:
@@ -461,6 +471,9 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
       { icon: RefreshCw, title: "Meno doppio lavoro", desc: "Inserisci i dati una volta in Treatflow – il resto si aggiorna da sé." },
       { icon: Workflow, title: "Automazioni su misura", desc: "Reagisci a nuove prenotazioni o moduli senza scrivere codice." },
       { icon: Plug, title: "Ecosistema in crescita", desc: "Collega gli strumenti su cui il tuo centro fa già affidamento." },
+      { icon: MessageCircle, title: "WhatsApp", desc: "Conferme, promemoria, cancellazioni e spostamenti via WhatsApp – con l'e-mail come alternativa." },
+      { icon: Sparkles, title: "Assistenti IA (MCP)", desc: "Claude, ChatGPT & co. rispondono a domande su appuntamenti, clienti e fatturato – solo lettura, i dati sanitari restano in Treatflow." },
+      { icon: CalendarClock, title: "Pianificazione turni", desc: "Pianifica turni, ferie e assenze per settimana – la prenotazione online segue il piano. Gratuita." },
     ],
     closingTitle: "Un'unica fonte di dati per il tuo centro",
     closingText:
@@ -476,6 +489,8 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
         answer:
           "Sì. Con il piano Booking puoi collegare Treatflow ad altri strumenti tramite Zapier, ad esempio fogli di calcolo o flussi email.",
       },
+      { question: "Posso collegare Claude o ChatGPT al mio centro?", answer: "Sì. In App → Assistenti IA (MCP) colleghi Claude, ChatGPT, Cursor e altri assistenti al tuo centro. Possono rispondere a domande su appuntamenti, orari liberi, dati di contatto dei clienti, servizi e fatturato. L'accesso è di sola lettura: schede di trattamento, anamnesi, foto e note non vengono mai condivise." },
+      { question: "A cosa serve la pianificazione turni?", answer: "Con la pianificazione turni organizzi la settimana del team con turni, modelli e assenze come ferie o malattia. Quando è attiva, la prenotazione online offre solo orari all'interno dei turni pianificati. La attivi gratuitamente in App; le prime otto settimane vengono precompilate con gli orari di lavoro esistenti." },
     ],
     aiCapsules: [
       {
