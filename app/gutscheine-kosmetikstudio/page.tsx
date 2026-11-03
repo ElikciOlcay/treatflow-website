@@ -1,5 +1,6 @@
 import {
     Gift, ShieldCheck, ScanLine, CalendarClock, Receipt, TrendingUp, Sparkles, Wallet,
+    Globe, CreditCard, Palette, PackageCheck,
 } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -18,25 +19,26 @@ import {
 import { buildHreflangAlternates } from '../i18n/seo';
 import { generateWebPageSchema } from '@/lib/content-attribution';
 
-const PAGE_DATE_MODIFIED = '2026-08-18';
+const PAGE_DATE_MODIFIED = '2026-11-03';
 const PAGE_DATE_PUBLISHED = '2025-06-01';
 
 export const metadata = {
-    title: 'Gutscheine für Kosmetikstudios – verkaufen & einlösen',
-    description: 'Gutscheinverwaltung für dein Kosmetikstudio: Geschenkgutscheine direkt an der Kasse verkaufen und einlösen, Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik, Gültigkeit und Restwert im Blick. Teil der TSE-/RKSV-konformen Treatflow Kasse.',
+    title: 'Gutscheine für Kosmetikstudios – online & an der Kasse verkaufen',
+    description: 'Gutscheinverwaltung für dein Kosmetikstudio: Geschenkgutscheine online über deine Buchungsseite und direkt an der Kasse verkaufen und einlösen. Bezahlung per Treatflow Pay oder Überweisung, eigenes Gutschein-Design, Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik. Teil der TSE-/RKSV-konformen Treatflow Kasse.',
     keywords: [
         'Gutscheine Kosmetikstudio', 'Gutscheinverwaltung Kosmetikstudio', 'Geschenkgutschein Kosmetikstudio',
         'Gutscheine verkaufen Kosmetikstudio', 'Gutschein einlösen Kasse', 'Gutschein Software Beauty',
         'digitale Gutscheine Studio', 'Einzweckgutschein', 'Mehrzweckgutschein',
         'Gutscheinverwaltung Software', 'Gutschein Kasse Kosmetik', 'Wertgutschein Studio',
+        'Gutscheine online verkaufen', 'Online-Gutschein Kosmetikstudio', 'Gutschein Buchungsseite', 'Gutschein PDF per E-Mail',
     ],
     alternates: {
         canonical: 'https://www.treatflow.io/gutscheine-kosmetikstudio',
         ...buildHreflangAlternates('vouchers'),
     },
     openGraph: {
-        title: 'Gutscheine für Kosmetikstudios – verkaufen & einlösen',
-        description: 'Geschenkgutscheine an der Kasse verkaufen und einlösen – Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik, Gültigkeit und Restwert. Teil der Treatflow Kasse.',
+        title: 'Gutscheine für Kosmetikstudios – online & an der Kasse verkaufen',
+        description: 'Geschenkgutscheine online über die Buchungsseite und an der Kasse verkaufen und einlösen – mit eigenem Design, Treatflow Pay oder Überweisung, korrekter Steuerlogik und Restwert. Teil der Treatflow Kasse.',
         url: 'https://www.treatflow.io/gutscheine-kosmetikstudio',
     },
 };
@@ -45,6 +47,22 @@ const faqs = [
     {
         question: 'Kann ich mit Treatflow Gutscheine verkaufen und einlösen?',
         answer: 'Ja. In der Treatflow Kasse verkaufst du Geschenkgutscheine direkt im Kassiervorgang und löst sie bei einem späteren Besuch wieder ein – ganz oder teilweise. Restwerte werden automatisch verwaltet, sodass ein Gutschein bei mehreren Besuchen weiter genutzt werden kann.',
+    },
+    {
+        question: 'Kann ich Gutscheine online verkaufen?',
+        answer: 'Ja. Mit der App „Gutscheine“ (Einstellungen → Apps) erscheint auf deiner öffentlichen Buchungsseite der Link „Gutschein kaufen“. Kundinnen wählen einen festen oder freien Betrag (innerhalb deines Minimums und Maximums), die Variante – PDF per E-Mail, per Post (mit von dir festgelegter Versandgebühr inkl. MwSt.) oder Abholung im Studio – und können Empfänger, Absender und eine persönliche Nachricht ergänzen. Eine Live-Vorschau zeigt den Gutschein. Die App ist nur zusammen mit der Treatflow Kasse verfügbar, weil die Gutscheine dort eingelöst werden.',
+    },
+    {
+        question: 'Wie bezahlen Kundinnen online gekaufte Gutscheine?',
+        answer: 'Du entscheidest, welche Zahlungsarten du anbietest: Mit Treatflow Pay zahlen Kundinnen per Karte, Apple Pay oder Google Pay – der Gutschein wird sofort ausgestellt und als PDF per E-Mail verschickt. Bei Überweisung erstellt die Kasse automatisch eine Rechnung mit GiroCode und verschickt sie per E-Mail; der Gutschein wird ausgestellt, sobald du den Zahlungseingang in der Kasse bestätigst. Die Bankverbindung kommt aus deinen Kasseneinstellungen.',
+    },
+    {
+        question: 'Wie werden online verkaufte Gutscheine versteuert?',
+        answer: 'Online verkaufte Gutscheine sind Mehrzweckgutscheine. Die Umsatzsteuer wird daher nicht beim Kauf, sondern erst bei der Einlösung in der Kasse fällig – dort wird der Vorgang TSE- bzw. RKSV-signiert. In der Kasse verwaltest du Online-Bestellungen im Reiter „Online-Bestellungen“: Zahlung bestätigen, als versendet oder abgeholt markieren, stornieren, PDF öffnen oder die E-Mail erneut senden.',
+    },
+    {
+        question: 'Kann ich das Design der Gutscheine anpassen?',
+        answer: 'Ja. Im Gutschein-Designer wählst du aus zehn Vorlagen (Foto, Diagonal, Großer Betrag, Karte, Ticket, Sanft, Klassisch, Modern, Elegant, Minimal) und passt Farben, Logo, eigenes Bild und Texte an. Die Vorschau entspricht genau dem PDF im Format A5 quer.',
     },
     {
         question: 'Was ist der Unterschied zwischen Einzweck- und Mehrzweckgutschein?',
@@ -56,11 +74,11 @@ const faqs = [
     },
     {
         question: 'Kann ich eine Gültigkeit für Gutscheine festlegen?',
-        answer: 'Ja. Du kannst ein Gültigkeitsdatum hinterlegen. Beim Einlösen prüft Treatflow Status und Restwert des Gutscheins, sodass du immer den aktuellen Stand siehst.',
+        answer: 'Ja. Du kannst ein Gültigkeitsdatum hinterlegen. Für online verkaufte Gutscheine legst du die Gültigkeit in der App fest – z. B. drei Jahre zum Jahresende, eine Anzahl Monate oder unbegrenzt. Beim Einlösen prüft Treatflow Status und Restwert des Gutscheins, sodass du immer den aktuellen Stand siehst.',
     },
     {
         question: 'Was kostet die Gutscheinfunktion?',
-        answer: 'Der Gutscheinverkauf und die Einlösung sind Teil der Treatflow Kasse, einem Add-on zum Booking-Plan für 39 €/Monat (jährlich 35 €/Monat) zzgl. einmalig 149 € Einrichtung. Es fallen keine Transaktionsgebühren pro Gutschein an.',
+        answer: 'Der Gutscheinverkauf und die Einlösung sind Teil der Treatflow Kasse, einem Add-on zum Booking-Plan für 39 €/Monat (jährlich 35 €/Monat) zzgl. einmalig 149 € Einrichtung. Für Gutscheine, die an der Kasse verkauft werden, fallen keine Transaktionsgebühren pro Gutschein an. Für den Online-Verkauf aktivierst du zusätzlich die App „Gutscheine“.',
     },
     {
         question: 'Lohnen sich Gutscheine für mein Studio?',
@@ -84,7 +102,7 @@ const serviceSchema = {
     name: 'Gutscheinverwaltung für Kosmetikstudios',
     serviceType: 'Gutschein- und Geschenkgutschein-Verwaltung',
     description:
-        'Geschenkgutscheine im Kosmetikstudio direkt an der Kasse verkaufen und einlösen – Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik, Gültigkeit und Restwertverwaltung. Fiskalkonform über die TSE-/RKSV-konforme Treatflow Kasse.',
+        'Geschenkgutscheine im Kosmetikstudio online über die Buchungsseite und direkt an der Kasse verkaufen und einlösen – Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik, Gültigkeit und Restwertverwaltung. Fiskalkonform über die TSE-/RKSV-konforme Treatflow Kasse.',
     url: 'https://www.treatflow.io/gutscheine-kosmetikstudio',
     provider: {
         '@type': 'Organization',
@@ -117,9 +135,9 @@ export default function GutscheinePage() {
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(
                         generateWebPageSchema({
-                            name: 'Gutscheine für Kosmetikstudios – verkaufen & einlösen',
+                            name: 'Gutscheine für Kosmetikstudios – online & an der Kasse verkaufen',
                             description:
-                                'Gutscheinverwaltung für dein Kosmetikstudio: Geschenkgutscheine direkt an der Kasse verkaufen und einlösen, Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik.',
+                                'Gutscheinverwaltung für dein Kosmetikstudio: Geschenkgutscheine online über die Buchungsseite und direkt an der Kasse verkaufen und einlösen, Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik.',
                             url: 'https://www.treatflow.io/gutscheine-kosmetikstudio',
                             dateModified: PAGE_DATE_MODIFIED,
                             datePublished: PAGE_DATE_PUBLISHED,
@@ -137,12 +155,12 @@ export default function GutscheinePage() {
                 eyebrow="Gutscheine"
                 eyebrowIcon={Gift}
                 title={<>Gutscheine verkaufen & <FeatureTitleHighlight theme="purple">einlösen</FeatureTitleHighlight></>}
-                description="Direkt an der Kasse – steuerlich korrekt, fiskalkonform, mit automatischem Restwert."
-                chips={['Fiskalkonform', 'Restwert automatisch', 'Teil der Kasse']}
+                description="Online über deine Buchungsseite und direkt an der Kasse – steuerlich korrekt, fiskalkonform, mit automatischem Restwert."
+                chips={['Online verkaufen', 'Fiskalkonform', 'Restwert automatisch', 'Teil der Kasse']}
                 secondaryCta={{ label: 'Zur Kasse', href: '/kassensystem-kosmetikstudio' }}
                 aiCapsule={{
                     question: 'Wie kann ich in meinem Kosmetikstudio Gutscheine verwalten?',
-                    answer: 'Mit der Treatflow Kasse verkaufst du Geschenkgutscheine direkt im Kassiervorgang und löst sie später ganz oder teilweise wieder ein – Restwerte werden automatisch verwaltet. Treatflow unterstützt Einzweck- und Mehrzweckgutscheine mit korrekter steuerlicher Behandlung, optionalem Gültigkeitsdatum und fiskalkonformer Signatur (KassenSichV in Deutschland, RKSV in Österreich). Die Gutscheinfunktion ist Teil der Kasse, einem Add-on zum Booking-Plan für 39 €/Monat zzgl. einmalig 149 € Einrichtung.',
+                    answer: 'Mit der Treatflow Kasse verkaufst du Geschenkgutscheine direkt im Kassiervorgang – und mit der App „Gutscheine“ auch online über deine Buchungsseite, bezahlt per Treatflow Pay oder Überweisung. Eingelöst werden sie später ganz oder teilweise wieder ein – Restwerte werden automatisch verwaltet. Treatflow unterstützt Einzweck- und Mehrzweckgutscheine mit korrekter steuerlicher Behandlung, optionalem Gültigkeitsdatum und fiskalkonformer Signatur (KassenSichV in Deutschland, RKSV in Österreich). Die Gutscheinfunktion ist Teil der Kasse, einem Add-on zum Booking-Plan für 39 €/Monat zzgl. einmalig 149 € Einrichtung.',
                 }}
                 dateModified={PAGE_DATE_MODIFIED}
                 datePublished={PAGE_DATE_PUBLISHED}
@@ -173,8 +191,8 @@ export default function GutscheinePage() {
 
             <FeatureUnderstand
                 theme="purple"
-                title="Gutscheine verkaufen und einlösen – direkt an der Kasse"
-                description="Verkauf und Einlösung laufen über deine Kasse. Restwert, Gültigkeit und Steuer werden automatisch verwaltet."
+                title="Gutscheine verkaufen und einlösen – online und an der Kasse"
+                description="Verkaufe Gutscheine an der Kasse oder online über deine Buchungsseite. Eingelöst wird an der Kasse – Restwert, Gültigkeit und Steuer werden automatisch verwaltet."
                 items={[
                     {
                         icon: Gift,
@@ -198,8 +216,8 @@ export default function GutscheinePage() {
                 theme="purple"
                 description="In drei Schritten vom Verkauf zur Einlösung."
                 steps={[
-                    { title: 'Gutschein verkaufen', text: 'Wähle einen Betrag und verkaufe den Gutschein im normalen Kassiervorgang. Der Beleg wird automatisch fiskalkonform signiert.' },
-                    { title: 'Code übergeben', text: 'Dein Kunde bekommt einen Code mit Gültigkeit – perfekt als Geschenk zu Weihnachten, Geburtstag oder Muttertag.' },
+                    { title: 'Gutschein verkaufen', text: 'An der Kasse im normalen Kassiervorgang – oder online: Kundinnen wählen auf deiner Buchungsseite Betrag, Variante (PDF per E-Mail, per Post oder Abholung im Studio) und eine persönliche Nachricht und zahlen per Treatflow Pay oder Überweisung.' },
+                    { title: 'Code übergeben', text: 'Dein Kunde bekommt einen Code mit Gültigkeit – als Beleg an der Kasse oder als gestaltetes PDF per E-Mail. Perfekt als Geschenk zu Weihnachten, Geburtstag oder Muttertag.' },
                     { title: 'Spaeter einlösen', text: 'Beim nächsten Besuch loest der Beschenkte den Gutschein ganz oder teilweise ein. Der Restwert bleibt automatisch gespeichert.' },
                 ]}
             />
@@ -207,12 +225,16 @@ export default function GutscheinePage() {
             <FeatureCards
                 theme="purple"
                 title="Was du bekommst"
-                description="Gutscheinverwaltung, die mit Kasse, Kalender und Kundenkartei zusammenarbeitet."
+                description="Gutscheinverwaltung, die mit Buchungsseite, Kasse, Kalender und Kundenkartei zusammenarbeitet."
                 items={[
+                    { icon: Globe, title: 'Online verkaufen', text: '„Gutschein kaufen“ direkt auf deiner Buchungsseite – mit Live-Vorschau.', points: ['Feste und freie Beträge', 'PDF, Post oder Abholung', 'Persönliche Nachricht'] },
+                    { icon: CreditCard, title: 'Online bezahlen', text: 'Treatflow Pay oder Überweisung – du entscheidest.', points: ['Karte, Apple Pay, Google Pay', 'Rechnung mit GiroCode', 'Sofort-PDF per E-Mail'] },
+                    { icon: Palette, title: 'Eigenes Design', text: '10 Vorlagen mit Farben, Logo, eigenem Bild und Texten.', points: ['Vorschau = PDF', 'A5 quer', 'Gültigkeit einstellbar'] },
+                    { icon: PackageCheck, title: 'Online-Bestellungen', text: 'Eigener Reiter in der Kasse für alle Online-Käufe.', points: ['Zahlung bestätigen', 'Versendet / abgeholt', 'PDF & E-Mail erneut senden'] },
                     { icon: Gift, title: 'Verkauf an der Kasse', text: 'Beliebiger Betrag direkt im Checkout – sofort gültig.', points: ['Frei wählbarer Betrag', 'Direkt im Checkout', 'Sofort gültig'] },
                     { icon: ScanLine, title: 'Einfach einlösen', text: 'Ganz oder teilweise – Restwert bleibt erhalten.', points: ['Teil-Einlösung', 'Restwert automatisch', 'Schnelle Code-Suche'] },
                     { icon: ShieldCheck, title: 'Steuerlich korrekt', text: 'Einzweck und Mehrzweck mit korrekter Steuerbuchung.', points: ['Einzweckgutschein', 'Mehrzweckgutschein', 'Richtige Buchung'] },
-                    { icon: CalendarClock, title: 'Gültigkeit & Status', text: 'Datum hinterlegen, Status und Restwert jederzeit sehen.', points: ['Gültigkeitsdatum', 'Status-Prüfung', 'Restwert sichtbar'] },
+                    { icon: CalendarClock, title: 'Gültigkeit & Status', text: 'Datum hinterlegen, Herkunft, Restwert und Einlösungen jederzeit sehen.', points: ['Gültigkeitsdatum', 'Herkunft Online/Kasse', 'Einlösungs-Historie'] },
                     { icon: Receipt, title: 'Fiskalkonform', text: 'Jeder Vorgang signiert – KassenSichV und RKSV.', points: ['KassenSichV (DE)', 'RKSV (AT)', 'Signatur-QR'] },
                     { icon: TrendingUp, title: 'Mehr Umsatz', text: 'Sofortiger Cashflow und Neukunden über Beschenkte.', points: ['Sofortiger Umsatz', 'Neukunden', 'Stärkere Bindung'] },
                 ]}
@@ -226,14 +248,14 @@ export default function GutscheinePage() {
                 items={[
                     { href: '/kassensystem-kosmetikstudio', title: 'Kassensystem', description: 'TSE- & RKSV-konform kassieren' },
                     { href: '/shop', title: 'Produktverkauf & Lager', description: 'Pflegeprodukte verkaufen' },
-                    { href: '/terminkalender', title: 'Terminkalender', description: 'Aus dem Termin direkt kassieren' },
+                    { href: '/online-buchungen', title: 'Online-Buchungen', description: 'Buchungsseite mit Gutschein-Shop' },
                 ]}
             />
 
             <FeaturePageCta
                 theme="purple"
                 title="Mehr Umsatz mit Gutscheinen"
-                description="14 Tage kostenlos testen – Gutscheine fiskalkonform verkaufen und einlösen, ohne Gebühren pro Gutschein."
+                description="14 Tage kostenlos testen – Gutscheine online und an der Kasse verkaufen und fiskalkonform einlösen."
                 secondaryLabel="Zur Kasse"
                 secondaryHref="/kassensystem-kosmetikstudio"
             />

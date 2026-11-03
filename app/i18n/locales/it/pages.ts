@@ -1,4 +1,5 @@
 import {
+  Palette,
   BarChart3,
   Bell,
   Calendar,
@@ -355,16 +356,17 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
     eyebrow: "Buoni regalo",
     title: "Vendi e riscatta buoni regalo senza confusione",
     subtitle:
-      "Crea buoni regalo, vendili in centro e riscatta il saldo residuo in automatico – un modo semplice per aumentare il fatturato del centro.",
+      "Vendi buoni regalo in cassa o online tramite la tua pagina di prenotazione, personalizzane il design e riscatta il saldo residuo in automatico – un modo semplice per aumentare il fatturato del centro.",
     bullets: [
-      "Vendi buoni in centro o online",
+      "Vendi buoni in centro o online dalla pagina di prenotazione",
+      "Pagamento online con Treatflow Pay o bonifico",
       "Riscatta l'importo intero o una parte",
       "Saldo residuo calcolato in automatico",
       "Validità e storico cliente sempre chiari",
     ],
     image: {
-      src: "/images/product-updates/rabattcodes-kalender.png",
-      alt: "Buoni regalo e codici sconto Treatflow nell'agenda",
+      src: "/images/product-updates/gutscheine-online-verkaufen.png",
+      alt: "Editor dei buoni regalo Treatflow con modelli e anteprima PDF in tempo reale",
     },
     features: [
       { icon: Gift, title: "Buoni regalo", desc: "Offri buoni a valore fisso o legati a un trattamento specifico, che piacciono alle clienti." },
@@ -373,10 +375,30 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
       { icon: RefreshCw, title: "Saldo residuo", desc: "I riscatti parziali aggiornano il saldo in automatico." },
       { icon: Calendar, title: "Controllo della validità", desc: "Imposta date di scadenza, così le offerte restano chiare e gestibili." },
       { icon: BarChart3, title: "Panoramica vendite", desc: "Vedi quanti buoni sono stati venduti, riscattati o sono ancora aperti." },
+      { icon: Globe, title: "Vendita online", desc: "Un link “Acquista buono” sulla pagina di prenotazione: importi fissi o liberi, PDF via email, per posta o ritiro in centro, con messaggio personale." },
+      { icon: CreditCard, title: "Pagamento online", desc: "Con Treatflow Pay (carta, Apple Pay, Google Pay) il buono viene emesso subito. Con il bonifico la cassa invia una fattura e il buono viene emesso quando confermi il pagamento." },
+      { icon: Palette, title: "Editor dei buoni", desc: "10 modelli con i tuoi colori, logo, immagine e testi – l'anteprima corrisponde al PDF (A5 orizzontale)." },
     ],
     closingTitle: "Buoni regalo che fanno davvero tornare le clienti",
     closingText:
       "I buoni regalo riempiono le giornate più tranquille e portano nuove clienti. Treatflow rende semplice venderli e riscattarli, così nulla si perde nei fogli Excel.",
+    faqs: [
+      {
+        question: "Posso vendere buoni regalo online?",
+        answer:
+          "Sì. Con l'app Buoni regalo (Impostazioni → App) sulla tua pagina di prenotazione pubblica compare il link “Acquista buono”. Le clienti scelgono un importo fisso o libero entro i tuoi limiti, PDF via email, spedizione per posta (con un costo di spedizione che stabilisci tu) o ritiro in centro, e possono aggiungere destinatario, mittente e un messaggio personale. L'app è disponibile solo insieme alla cassa Treatflow, perché i buoni vengono riscattati lì.",
+      },
+      {
+        question: "Come pagano le clienti i buoni online?",
+        answer:
+          "Scegli tu i metodi di pagamento: con Treatflow Pay le clienti pagano con carta, Apple Pay o Google Pay e il buono viene emesso subito e inviato come PDF via email. Con il bonifico la cassa crea e invia automaticamente una fattura; il buono viene emesso quando confermi il pagamento in cassa.",
+      },
+      {
+        question: "Come vengono tassati i buoni venduti online?",
+        answer:
+          "I buoni venduti online sono buoni multiuso: l'IVA è dovuta solo al momento del riscatto nella cassa Treatflow, non all'acquisto. In cassa gestisci gli ordini online e per ogni buono vedi l'origine (online o cassa), il saldo residuo e lo storico dei riscatti.",
+      },
+    ],
   },
   messaging: {
     ...featureCta,
@@ -458,6 +480,7 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
       { icon: CalendarDays, title: "Google Calendar", desc: "Calendario personale e agenda del centro sincronizzati in tempo reale." },
       { icon: Receipt, title: "Contabilità", desc: "Crea fatture e sincronizza le clienti senza ricopiare i dati." },
       { icon: Zap, title: "Zapier", desc: "Avvia flussi in Fogli Google, CRM, email e altro." },
+      { icon: Gift, title: "Buoni regalo", desc: "Vendi buoni regalo online dalla pagina di prenotazione – pagati con Treatflow Pay o bonifico, riscattati nella cassa Treatflow." },
       { icon: RefreshCw, title: "Meno doppio lavoro", desc: "Inserisci i dati una volta in Treatflow – il resto si aggiorna da sé." },
       { icon: Workflow, title: "Automazioni su misura", desc: "Reagisci a nuove prenotazioni o moduli senza scrivere codice." },
       { icon: Plug, title: "Ecosistema in crescita", desc: "Collega gli strumenti su cui il tuo centro fa già affidamento." },
@@ -466,6 +489,11 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
     closingText:
       "Le integrazioni mettono Treatflow al centro del lavoro quotidiano, mentre i tuoi strumenti preferiti restano aggiornati – in automatico.",
     faqs: [
+      {
+        question: "Posso vendere buoni regalo online?",
+        answer:
+          "Sì. Attiva l'app Buoni regalo in Impostazioni → App e sulla pagina di prenotazione compare il link “Acquista buono”. Le clienti pagano con Treatflow Pay o bonifico e ricevono il buono come PDF via email, per posta o da ritirare in centro. L'app richiede la cassa Treatflow, dove i buoni vengono riscattati.",
+      },
       {
         question: "Treatflow si integra con Google Calendar?",
         answer:

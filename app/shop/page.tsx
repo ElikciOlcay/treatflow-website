@@ -110,7 +110,7 @@ export default function ShopPage() {
             <FeatureRelated
                 items={[
                     { href: '/kassensystem-kosmetikstudio', title: 'Kassensystem', description: 'TSE- & RKSV-konform kassieren' },
-                    { href: '/gutscheine-kosmetikstudio', title: 'Gutscheine', description: 'Verkaufen & einlösen an der Kasse' },
+                    { href: '/gutscheine-kosmetikstudio', title: 'Gutscheine', description: 'Online & an der Kasse verkaufen' },
                     { href: '/kundenverwaltung', title: 'Kundenverwaltung', description: 'Kaufhistorie im Kundenprofil' },
                 ]}
             />

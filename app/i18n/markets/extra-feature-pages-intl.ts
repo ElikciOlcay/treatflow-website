@@ -6,6 +6,7 @@ import {
   type FeatureLocale,
 } from "@/app/i18n/feature-slugs";
 import {
+  Palette,
   BarChart3,
   Bell,
   Calendar,
@@ -295,16 +296,17 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
       eyebrow: "Gift vouchers",
       title: "Sell and redeem vouchers without the chaos",
       subtitle:
-        "Create gift vouchers, sell them at checkout and redeem remaining balances automatically – a simple revenue booster for your salon.",
+        "Sell gift vouchers at checkout or online via your booking page, design them yourself and redeem remaining balances automatically – a simple revenue booster for your salon.",
       bullets: [
-        "Sell vouchers at the till or online",
+        "Sell vouchers at the till or online via your booking page",
+        "Online payment with Treatflow Pay or bank transfer",
         "Redeem full or partial amounts",
         "Automatic remaining balance tracking",
         "Clear validity and client history",
       ],
       image: {
-        src: "/images/product-updates/rabattcodes-kalender.png",
-        alt: "Treatflow gift vouchers and discount codes in the calendar",
+        src: "/images/product-updates/gutscheine-online-verkaufen.png",
+        alt: "Treatflow voucher designer with templates and a live PDF preview",
       },
       features: [
         {
@@ -337,10 +339,30 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
           title: "Sales overview",
           desc: "See how many vouchers were sold, redeemed or still open.",
         },
+        { icon: Globe, title: "Sell online", desc: "A “Buy voucher” link on your booking page: fixed or free amounts, PDF by email, by post or pick-up in the salon, with a personal message." },
+        { icon: CreditCard, title: "Online payment", desc: "Treatflow Pay (card, Apple Pay, Google Pay) issues the voucher instantly. With bank transfer, the POS sends an invoice and issues the voucher once you confirm payment." },
+        { icon: Palette, title: "Voucher designer", desc: "10 templates with your colours, logo, image and texts – the preview matches the PDF (A5 landscape)." },
       ],
       closingTitle: "Vouchers that actually bring clients back",
       closingText:
         "Gift vouchers fill quiet days and introduce new clients. Treatflow keeps selling and redeeming simple so nothing gets lost in spreadsheets.",
+      faqs: [
+        {
+          question: "Can I sell gift vouchers online?",
+          answer:
+            "Yes. With the Vouchers app (Settings → Apps), a “Buy voucher” link appears on your public booking page. Clients choose a fixed or free amount within your limits, PDF by email, delivery by post (with a shipping fee you set) or pick-up in the salon, and can add a recipient, sender and personal message. The app is only available together with the Treatflow POS, because vouchers are redeemed there.",
+        },
+        {
+          question: "How do clients pay for vouchers online?",
+          answer:
+            "You choose the payment methods: with Treatflow Pay clients pay by card, Apple Pay or Google Pay, and the voucher is issued immediately and emailed as a PDF. With bank transfer, the POS automatically creates and emails an invoice; the voucher is issued once you confirm the payment in the POS.",
+        },
+        {
+          question: "How are vouchers sold online taxed?",
+          answer:
+            "Vouchers sold online are multi-purpose vouchers: VAT is only due when the voucher is redeemed at the Treatflow POS, not when it is bought. In the POS you manage online orders, see whether a voucher was sold online or at the till, its remaining balance and its redemption history.",
+        },
+      ],
     },
     es: {
       eyebrow: "Vales regalo",
@@ -766,6 +788,7 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
           title: "Zapier",
           desc: "Trigger workflows in Sheets, CRM, email and more.",
         },
+        { icon: Gift, title: "Vouchers", desc: "Sell gift vouchers online via your booking page – paid with Treatflow Pay or bank transfer, redeemed at the Treatflow POS." },
         {
           icon: RefreshCw,
           title: "Less double work",
@@ -786,6 +809,11 @@ const pages: Record<ExtraFeatureKey, Record<FeatureLocale, PageContent>> = {
       closingText:
         "Integrations keep Treatflow at the centre of your operations while your favourite tools stay in the loop – automatically.",
       faqs: [
+        {
+          question: "Can I sell gift vouchers online?",
+          answer:
+            "Yes. Activate the Vouchers app under Settings → Apps and a “Buy voucher” link appears on your booking page. Clients pay with Treatflow Pay or bank transfer and receive the voucher as a PDF by email, by post or for pick-up. The app requires the Treatflow POS, where vouchers are redeemed.",
+        },
         {
           question: "Does Treatflow integrate with Google Calendar?",
           answer:

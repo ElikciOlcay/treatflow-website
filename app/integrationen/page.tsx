@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import {
+    Gift,
     Receipt, Calendar, Zap, Plug, RefreshCw, Workflow, ShieldCheck, CreditCard, Wallet, Building2,
 } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
         'Zapier Kosmetikstudio',
         'SumUp Kartenterminal Kosmetikstudio',
         'Online Zahlung Kosmetikstudio',
+        'Gutscheine online verkaufen',
         'Buchhaltung Kosmetikstudio',
         'Terminkalender Sync',
         'AbaNinja Schweiz',
@@ -56,6 +58,10 @@ const faqs = [
     {
         question: 'Kann ich Rechnungen automatisch an Lexware Office übergeben?',
         answer: 'Ja. Mit der Lexware-Integration kannst du Kunden automatisch synchronisieren und Rechnungen direkt aus dem Termin heraus in Lexware Office erstellen. Das spart manuelle Doppelerfassung und hält deine Buchhaltung aktuell.',
+    },
+    {
+        question: 'Kann ich Gutscheine online verkaufen?',
+        answer: 'Ja. Mit der App „Gutscheine“ unter Einstellungen → Apps erscheint auf deiner Buchungsseite der Link „Gutschein kaufen“. Kundinnen wählen Betrag und Variante (PDF per E-Mail, per Post oder Abholung im Studio) und zahlen per Treatflow Pay oder Überweisung. Die App ist nur zusammen mit der Treatflow Kasse verfügbar, weil die Gutscheine dort eingelöst werden.',
     },
     {
         question: 'Wofür brauche ich die Zapier-Integration?',
@@ -196,6 +202,12 @@ export default function IntegrationenPage() {
                         title: 'Treatflow Pay',
                         text: 'Anzahlungen oder Vollzahlungen bei Online-Buchungen – sicher über Stripe.',
                         points: ['Anzahlungen', 'Vollzahlung vorab', '2,69 % transparent'],
+                    },
+                    {
+                        icon: Gift,
+                        title: 'Gutscheine',
+                        text: 'Gutscheine online über deine Buchungsseite verkaufen – eingelöst wird in der Treatflow Kasse.',
+                        points: ['Treatflow Pay oder Überweisung', '10 Design-Vorlagen', 'Nur mit der Kasse'],
                     },
                     {
                         icon: Zap,

@@ -4,6 +4,7 @@ import type { IndustryPageKey } from "@/app/i18n/industry-slugs";
 import type { LocaleSiteContent } from "../types";
 
 import {
+  Palette,
   BarChart3,
   Bell,
   Calendar,
@@ -433,16 +434,17 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
       eyebrow: "Tarjetas regalo",
       title: "Vende y canjea tarjetas regalo sin líos",
       subtitle:
-        "Crea tarjetas regalo, véndelas en tu centro y canjea los saldos restantes de forma automática: una forma sencilla de generar ingresos extra.",
+        "Vende tarjetas regalo en caja u online desde tu página de reservas, diséñalas a tu gusto y canjea los saldos restantes de forma automática: una forma sencilla de generar ingresos extra.",
       bullets: [
-        "Vende tarjetas regalo en el centro u online",
+        "Vende tarjetas regalo en el centro u online desde tu página de reservas",
+        "Pago online con Treatflow Pay o transferencia",
         "Canje total o parcial",
         "Control automático del saldo restante",
         "Validez clara e historial por clienta",
       ],
       image: {
-        src: "/images/product-updates/rabattcodes-kalender.png",
-        alt: "Tarjetas regalo y códigos de descuento de Treatflow en la agenda",
+        src: "/images/product-updates/gutscheine-online-verkaufen.png",
+        alt: "Editor de tarjetas regalo de Treatflow con plantillas y vista previa del PDF en tiempo real",
       },
       features: [
         {
@@ -475,10 +477,30 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
           title: "Resumen de ventas",
           desc: "Consulta cuántas tarjetas se han vendido, canjeado o siguen pendientes.",
         },
+        { icon: Globe, title: "Venta online", desc: "Un enlace “Comprar tarjeta regalo” en tu página de reservas: importes fijos o libres, PDF por email, por correo postal o recogida en el centro, con mensaje personal." },
+        { icon: CreditCard, title: "Pago online", desc: "Con Treatflow Pay (tarjeta, Apple Pay, Google Pay) la tarjeta regalo se emite al instante. Con transferencia, la caja envía una factura y la tarjeta se emite cuando confirmas el pago." },
+        { icon: Palette, title: "Editor de diseño", desc: "10 plantillas con tus colores, logo, imagen y textos: la vista previa coincide con el PDF (A5 horizontal)." },
       ],
       closingTitle: "Tarjetas regalo que de verdad traen clientas de vuelta",
       closingText:
         "Las tarjetas regalo llenan los días flojos y atraen clientas nuevas. Treatflow hace que venderlas y canjearlas sea sencillo, sin que nada se pierda en hojas de cálculo.",
+      faqs: [
+        {
+          question: "¿Puedo vender tarjetas regalo online?",
+          answer:
+            "Sí. Con la app Tarjetas regalo (Ajustes → Apps) aparece en tu página de reservas pública el enlace “Comprar tarjeta regalo”. Las clientas eligen un importe fijo o libre dentro de tus límites, PDF por email, envío por correo postal (con unos gastos de envío que tú defines) o recogida en el centro, y pueden añadir destinataria, remitente y un mensaje personal. La app solo está disponible junto con la caja de Treatflow, porque las tarjetas se canjean allí.",
+        },
+        {
+          question: "¿Cómo pagan las clientas las tarjetas regalo online?",
+          answer:
+            "Tú eliges los métodos de pago: con Treatflow Pay pagan con tarjeta, Apple Pay o Google Pay, y la tarjeta regalo se emite al momento y se envía en PDF por email. Con transferencia, la caja crea y envía automáticamente una factura; la tarjeta se emite cuando confirmas el pago en la caja.",
+        },
+        {
+          question: "¿Cómo tributan las tarjetas regalo vendidas online?",
+          answer:
+            "Las tarjetas regalo vendidas online son bonos polivalentes: el IVA se devenga al canjearlas en la caja de Treatflow, no al comprarlas. En la caja gestionas los pedidos online y ves en cada tarjeta su origen (online o caja), el saldo restante y el historial de canjes.",
+        },
+      ],
       relatedLinks: [
         { href: "/en/online-booking", label: "Reservas online" },
         { href: "/en/client-records", label: "Fichas de clientes" },
@@ -599,6 +621,7 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
           title: "Zapier",
           desc: "Lanza flujos de trabajo en Sheets, tu CRM, el email y mucho más.",
         },
+        { icon: Gift, title: "Tarjetas regalo", desc: "Vende tarjetas regalo online desde tu página de reservas: pagadas con Treatflow Pay o transferencia y canjeadas en la caja de Treatflow." },
         {
           icon: RefreshCw,
           title: "Menos trabajo duplicado",
@@ -619,6 +642,11 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
       closingText:
         "Las integraciones mantienen Treatflow en el centro de tu operativa mientras tus herramientas favoritas siguen al día, de forma automática.",
       faqs: [
+        {
+          question: "¿Puedo vender tarjetas regalo online?",
+          answer:
+            "Sí. Activa la app Tarjetas regalo en Ajustes → Apps y en tu página de reservas aparece el enlace “Comprar tarjeta regalo”. Las clientas pagan con Treatflow Pay o transferencia y reciben la tarjeta en PDF por email, por correo postal o para recoger en el centro. La app requiere la caja de Treatflow, donde se canjean las tarjetas.",
+        },
         {
           question: "¿Treatflow se integra con Google Calendar?",
           answer:
