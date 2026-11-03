@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from 'react';
 import { ArrowRight, CheckCircle, Download, Loader2, Lock } from 'lucide-react';
 import Link from 'next/link';
+import { normalizePhone, PHONE_COUNTRIES, type PhoneCountryCode } from '@/lib/phone';
 
 interface LeadDownloadFormProps {
     downloadUrl: string;
@@ -25,12 +26,20 @@ export default function LeadDownloadForm({
 }: LeadDownloadFormProps) {
     const [email, setEmail] = useState('');
     const [studioName, setStudioName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [phoneCountry, setPhoneCountry] = useState<PhoneCountryCode>('AT');
     const [contactConsent, setContactConsent] = useState(false);
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
     const [errorMsg, setErrorMsg] = useState('');
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
+
+        if (!normalizePhone(phone, phoneCountry)) {
+            setErrorMsg('Bitte gib eine gültige Telefonnummer ein.');
+            setStatus('error');
+            return;
+        }
 
         if (!contactConsent) {
             setErrorMsg('Bitte stimme der Kontaktaufnahme zu, um den Download zu starten.');
@@ -45,7 +54,7 @@ export default function LeadDownloadForm({
             const res = await fetch('/api/lead-magnet', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, studioName, leadSource, contactConsent: true }),
+                body: JSON.stringify({ email, studioName, phone, phoneCountry, leadSource, contactConsent: true }),
             });
 
             const data = await res.json();
@@ -130,6 +139,36 @@ export default function LeadDownloadForm({
                     />
                 </div>
                 <div>
+                    <label htmlFor="lead-phone" className="block text-sm font-medium text-gray-700 mb-1">
+                        Telefonnummer *
+                    </label>
+                    <div className="flex gap-2">
+                        <select
+                            aria-label="Ländervorwahl"
+                            value={phoneCountry}
+                            onChange={(e) => setPhoneCountry(e.target.value as PhoneCountryCode)}
+                            className="px-3 py-3 border border-gray-300 rounded-xl bg-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                        >
+                            {PHONE_COUNTRIES.map((c) => (
+                                <option key={c.code} value={c.code}>
+                                    {c.label}
+                                </option>
+                            ))}
+                        </select>
+                        <input
+                            id="lead-phone"
+                            type="tel"
+                            inputMode="tel"
+                            autoComplete="tel"
+                            required
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
+                            placeholder="660 1234567"
+                            className="min-w-0 flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+                        />
+                    </div>
+                </div>
+                <div>
                     <label htmlFor="lead-studio" className="block text-sm font-medium text-gray-700 mb-1">
                         Studio-Name <span className="text-gray-400">(optional)</span>
                     </label>
@@ -158,8 +197,9 @@ export default function LeadDownloadForm({
                     />
                     <span className="text-sm text-gray-600 leading-relaxed">
                         Ich bin damit einverstanden, dass Treatflow mich bzw. mein Studio per E-Mail
-                        kontaktieren darf (z. B. zu Treatflow und relevanten Studio-Themen). Die
-                        Einwilligung kann jederzeit widerrufen werden.{' '}
+                        und telefonisch (auch über einen KI-Telefonassistenten) kontaktieren darf
+                        (z. B. zu Treatflow und relevanten Studio-Themen). Die Einwilligung kann
+                        jederzeit widerrufen werden.{' '}
                         <Link href="/datenschutz" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-2">
                             Datenschutzerklärung
                         </Link>
