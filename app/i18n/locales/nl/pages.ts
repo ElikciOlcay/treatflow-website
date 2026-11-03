@@ -1,4 +1,5 @@
 import {
+  Palette,
   BarChart3,
   Bell,
   Calendar,
@@ -364,16 +365,17 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
     eyebrow: "Cadeaubonnen",
     title: "Cadeaubonnen verkopen en verzilveren zonder gedoe",
     subtitle:
-      "Maak cadeaubonnen aan, verkoop ze in de studio of online en laat restsaldi automatisch bijwerken – een eenvoudige extra inkomstenbron voor je salon.",
+      "Verkoop cadeaubonnen aan de kassa of online via je boekingspagina, ontwerp ze zelf en laat restsaldi automatisch bijwerken – een eenvoudige extra inkomstenbron voor je salon.",
     bullets: [
-      "Cadeaubonnen verkopen in de studio of online",
+      "Cadeaubonnen verkopen in de studio of online via je boekingspagina",
+      "Online betalen met Treatflow Pay of overboeking",
       "Volledig of gedeeltelijk verzilveren",
       "Restsaldo automatisch bijgehouden",
       "Duidelijke geldigheid en klanthistorie",
     ],
     image: {
-      src: "/images/product-updates/rabattcodes-kalender.png",
-      alt: "Cadeaubonnen en kortingscodes in de Treatflow-agenda",
+      src: "/images/product-updates/gutscheine-online-verkaufen.png",
+      alt: "Treatflow-cadeaubonontwerper met sjablonen en live PDF-voorbeeld",
     },
     features: [
       { icon: Gift, title: "Cadeaubonnen", desc: "Bied bonnen aan met een vast bedrag of voor een specifieke behandeling." },
@@ -382,10 +384,30 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
       { icon: RefreshCw, title: "Restsaldo", desc: "Bij gedeeltelijk verzilveren wordt het saldo automatisch bijgewerkt." },
       { icon: Calendar, title: "Geldigheid instellen", desc: "Stel een vervaldatum in, zodat acties overzichtelijk blijven." },
       { icon: BarChart3, title: "Verkoopoverzicht", desc: "Zie hoeveel bonnen er zijn verkocht, verzilverd of nog openstaan." },
+      { icon: Globe, title: "Online verkopen", desc: "Een link “Cadeaubon kopen” op je boekingspagina: vaste of vrije bedragen, PDF per e-mail, per post of ophalen in de studio, met persoonlijk bericht." },
+      { icon: CreditCard, title: "Online betalen", desc: "Met Treatflow Pay (kaart, Apple Pay, Google Pay) wordt de bon direct uitgegeven. Bij overboeking stuurt de kassa een factuur en volgt de bon zodra jij de betaling bevestigt." },
+      { icon: Palette, title: "Bonontwerper", desc: "10 sjablonen met je eigen kleuren, logo, afbeelding en teksten – het voorbeeld is gelijk aan de PDF (A5 liggend)." },
     ],
     closingTitle: "Cadeaubonnen die klanten echt terugbrengen",
     closingText:
       "Cadeaubonnen vullen rustige dagen en brengen nieuwe klanten binnen. Treatflow houdt verkopen en verzilveren eenvoudig, zodat er niets verloren gaat in spreadsheets.",
+    faqs: [
+      {
+        question: "Kan ik cadeaubonnen online verkopen?",
+        answer:
+          "Ja. Met de app Cadeaubonnen (Instellingen → Apps) verschijnt op je openbare boekingspagina de link “Cadeaubon kopen”. Klanten kiezen een vast of vrij bedrag binnen jouw grenzen, een PDF per e-mail, verzending per post (met een door jou ingestelde verzendkost) of ophalen in de studio, en kunnen ontvanger, afzender en een persoonlijk bericht toevoegen. De app is alleen beschikbaar samen met de Treatflow-kassa, omdat de bonnen daar worden verzilverd.",
+      },
+      {
+        question: "Hoe betalen klanten online cadeaubonnen?",
+        answer:
+          "Jij kiest de betaalmethoden: met Treatflow Pay betalen klanten met kaart, Apple Pay of Google Pay en wordt de bon direct uitgegeven en als PDF gemaild. Bij overboeking maakt de kassa automatisch een factuur aan en mailt die; de bon wordt uitgegeven zodra jij de betaling in de kassa bevestigt.",
+      },
+      {
+        question: "Hoe worden online verkochte cadeaubonnen belast?",
+        answer:
+          "Online verkochte cadeaubonnen zijn meervoudige vouchers: de btw is pas verschuldigd bij het verzilveren aan de Treatflow-kassa, niet bij de aankoop. In de kassa beheer je online bestellingen en zie je per bon de herkomst (online of kassa), het restsaldo en de verzilveringshistorie.",
+      },
+    ],
     relatedLinks: [
       { href: "/en/shop", label: "Shop en voorraad" },
       { href: "/en/online-booking", label: "Online boeken" },
@@ -470,6 +492,7 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
       { icon: CalendarDays, title: "Google Agenda", desc: "Houd je privé- en studio-agenda realtime synchroon." },
       { icon: Receipt, title: "Boekhouding", desc: "Maak facturen en synchroniseer klanten zonder gegevens over te typen." },
       { icon: Zap, title: "Zapier", desc: "Start workflows in Sheets, je CRM, e-mail en meer." },
+      { icon: Gift, title: "Cadeaubonnen", desc: "Verkoop cadeaubonnen online via je boekingspagina – betaald met Treatflow Pay of overboeking, verzilverd aan de Treatflow-kassa." },
       { icon: RefreshCw, title: "Minder dubbel werk", desc: "Voer gegevens één keer in Treatflow in – de rest volgt vanzelf." },
       { icon: Workflow, title: "Eigen automatiseringen", desc: "Reageer op nieuwe boekingen of formulieren zonder te programmeren." },
       { icon: Plug, title: "Groeiend ecosysteem", desc: "Koppel de tools waar je salon al op draait." },
@@ -478,6 +501,11 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
     closingText:
       "Met integraties staat Treatflow centraal in je bedrijfsvoering, terwijl je favoriete tools automatisch bijblijven.",
     faqs: [
+      {
+        question: "Kan ik cadeaubonnen online verkopen?",
+        answer:
+          "Ja. Activeer de app Cadeaubonnen onder Instellingen → Apps en op je boekingspagina verschijnt de link “Cadeaubon kopen”. Klanten betalen met Treatflow Pay of overboeking en ontvangen de bon als PDF per e-mail, per post of om op te halen. De app vereist de Treatflow-kassa, waar de bonnen worden verzilverd.",
+      },
       {
         question: "Werkt Treatflow samen met Google Agenda?",
         answer:

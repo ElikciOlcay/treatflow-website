@@ -1,4 +1,5 @@
 import {
+  Palette,
   BarChart3,
   Bell,
   Calendar,
@@ -353,16 +354,17 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
       eyebrow: "Bony podarunkowe",
       title: "Sprzedawaj i realizuj bony bez chaosu",
       subtitle:
-        "Twórz bony podarunkowe, sprzedawaj je w salonie i automatycznie rozliczaj pozostałe saldo – prosty sposób na dodatkowy przychód.",
+        "Sprzedawaj bony podarunkowe w kasie lub online przez stronę rezerwacji, projektuj je samodzielnie i automatycznie rozliczaj pozostałe saldo – prosty sposób na dodatkowy przychód.",
       bullets: [
-        "Sprzedaż bonów w salonie lub online",
+        "Sprzedaż bonów w salonie lub online przez stronę rezerwacji",
+        "Płatność online przez Treatflow Pay lub przelew",
         "Realizacja całej kwoty lub jej części",
         "Automatyczne śledzenie pozostałego salda",
         "Jasna ważność i historia klienta",
       ],
       image: {
-        src: "/images/product-updates/rabattcodes-kalender.png",
-        alt: "Bony podarunkowe i kody rabatowe w kalendarzu Treatflow",
+        src: "/images/product-updates/gutscheine-online-verkaufen.png",
+        alt: "Edytor bonów podarunkowych Treatflow z szablonami i podglądem PDF na żywo",
       },
       features: [
         { icon: Gift, title: "Bony podarunkowe", desc: "Oferuj bony kwotowe lub na konkretne zabiegi, które klienci uwielbiają." },
@@ -371,10 +373,30 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
         { icon: RefreshCw, title: "Pozostałe saldo", desc: "Częściowa realizacja automatycznie aktualizuje saldo." },
         { icon: Calendar, title: "Kontrola ważności", desc: "Ustal daty ważności, aby oferty były jasne i łatwe w zarządzaniu." },
         { icon: BarChart3, title: "Przegląd sprzedaży", desc: "Sprawdź, ile bonów sprzedano, zrealizowano i ile jest jeszcze otwartych." },
+        { icon: Globe, title: "Sprzedaż online", desc: "Link „Kup bon” na stronie rezerwacji: stałe lub dowolne kwoty, PDF e-mailem, pocztą lub odbiór w salonie, z osobistą wiadomością." },
+        { icon: CreditCard, title: "Płatność online", desc: "Z Treatflow Pay (karta, Apple Pay, Google Pay) bon jest wystawiany od razu. Przy przelewie kasa wysyła fakturę, a bon powstaje po potwierdzeniu wpłaty." },
+        { icon: Palette, title: "Edytor bonów", desc: "10 szablonów z Twoimi kolorami, logo, zdjęciem i tekstami – podgląd odpowiada plikowi PDF (A5 poziomo)." },
       ],
       closingTitle: "Bony, które naprawdę przyprowadzają klientów z powrotem",
       closingText:
         "Bony podarunkowe zapełniają spokojniejsze dni i przyciągają nowych klientów. Treatflow upraszcza sprzedaż i realizację, więc nic nie ginie w arkuszach kalkulacyjnych.",
+      faqs: [
+        {
+          question: "Czy mogę sprzedawać bony podarunkowe online?",
+          answer:
+            "Tak. Po włączeniu aplikacji Bony (Ustawienia → Aplikacje) na publicznej stronie rezerwacji pojawia się link „Kup bon”. Klienci wybierają stałą lub dowolną kwotę w ustalonych przez Ciebie granicach, PDF e-mailem, wysyłkę pocztą (z ustaloną przez Ciebie opłatą) lub odbiór w salonie i mogą dodać odbiorcę, nadawcę oraz osobistą wiadomość. Aplikacja jest dostępna tylko razem z kasą Treatflow, bo tam bony są realizowane.",
+        },
+        {
+          question: "Jak klienci płacą za bony online?",
+          answer:
+            "Sam wybierasz metody płatności: z Treatflow Pay klienci płacą kartą, Apple Pay lub Google Pay, a bon jest wystawiany od razu i wysyłany jako PDF e-mailem. Przy przelewie kasa automatycznie tworzy i wysyła fakturę; bon zostaje wystawiony po potwierdzeniu wpłaty w kasie.",
+        },
+        {
+          question: "Jak opodatkowane są bony sprzedane online?",
+          answer:
+            "Bony sprzedane online są bonami różnego przeznaczenia: VAT jest należny dopiero przy realizacji w kasie Treatflow, a nie przy zakupie. W kasie zarządzasz zamówieniami online i widzisz dla każdego bonu jego pochodzenie (online lub kasa), pozostałe saldo i historię realizacji.",
+        },
+      ],
     },
     messaging: {
       ...featureChrome,
@@ -455,6 +477,7 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
         { icon: CalendarDays, title: "Kalendarz Google", desc: "Synchronizuj w czasie rzeczywistym kalendarz prywatny i kalendarz salonu." },
         { icon: Receipt, title: "Księgowość", desc: "Wystawiaj faktury i synchronizuj klientów bez przepisywania danych." },
         { icon: Zap, title: "Zapier", desc: "Uruchamiaj automatyzacje w arkuszach, CRM, e-mailu i wielu innych narzędziach." },
+        { icon: Gift, title: "Bony podarunkowe", desc: "Sprzedawaj bony online przez stronę rezerwacji – płatne przez Treatflow Pay lub przelew, realizowane w kasie Treatflow." },
         { icon: RefreshCw, title: "Mniej podwójnej pracy", desc: "Wprowadzasz dane raz w Treatflow – reszta dzieje się sama." },
         { icon: Workflow, title: "Własne automatyzacje", desc: "Reaguj na nowe rezerwacje lub formularze bez pisania kodu." },
         { icon: Plug, title: "Rosnący ekosystem", desc: "Połącz narzędzia, na których Twój salon już polega." },
@@ -463,6 +486,11 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
       closingText:
         "Integracje sprawiają, że Treatflow jest centrum Twojej pracy, a ulubione narzędzia automatycznie pozostają na bieżąco.",
       faqs: [
+        {
+          question: "Czy mogę sprzedawać bony podarunkowe online?",
+          answer:
+            "Tak. Włącz aplikację Bony w Ustawienia → Aplikacje, a na stronie rezerwacji pojawi się link „Kup bon”. Klienci płacą przez Treatflow Pay lub przelewem i otrzymują bon jako PDF e-mailem, pocztą lub do odbioru w salonie. Aplikacja wymaga kasy Treatflow, w której bony są realizowane.",
+        },
         {
           question: "Czy Treatflow integruje się z Kalendarzem Google?",
           answer:

@@ -1,4 +1,5 @@
 import {
+  Palette,
   BarChart3,
   Bell,
   Calendar,
@@ -531,16 +532,17 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
     eyebrow: "Bons cadeaux",
     title: "Vendez et encaissez vos bons cadeaux sans prise de tête",
     subtitle:
-      "Créez des bons cadeaux, vendez-les en quelques clics et déduisez automatiquement les soldes restants – un levier simple de chiffre d'affaires pour votre institut.",
+      "Vendez vos bons cadeaux en caisse ou en ligne via votre page de réservation, personnalisez leur design et déduisez automatiquement les soldes restants – un levier simple de chiffre d'affaires pour votre institut.",
     bullets: [
-      "Vente de bons à l'institut ou en ligne",
+      "Vente de bons à l'institut ou en ligne via votre page de réservation",
+      "Paiement en ligne avec Treatflow Pay ou par virement",
       "Utilisation totale ou partielle",
       "Suivi automatique du solde restant",
       "Validité et historique client clairs",
     ],
     image: {
-      src: "/images/product-updates/rabattcodes-kalender.png",
-      alt: "Bons cadeaux et codes promo Treatflow dans l'agenda",
+      src: "/images/product-updates/gutscheine-online-verkaufen.png",
+      alt: "Éditeur de bons cadeaux Treatflow avec modèles et aperçu PDF en direct",
     },
     features: [
       {
@@ -573,10 +575,30 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
         title: "Suivi des ventes",
         desc: "Voyez combien de bons ont été vendus, utilisés ou restent ouverts.",
       },
+      { icon: Globe, title: "Vente en ligne", desc: "Un lien « Acheter un bon » sur votre page de réservation : montants fixes ou libres, PDF par e-mail, envoi postal ou retrait à l'institut, avec message personnel." },
+      { icon: CreditCard, title: "Paiement en ligne", desc: "Avec Treatflow Pay (carte, Apple Pay, Google Pay), le bon est émis immédiatement. Par virement, la caisse envoie une facture et le bon est émis dès que vous confirmez le paiement." },
+      { icon: Palette, title: "Éditeur de bons", desc: "10 modèles avec vos couleurs, logo, image et textes – l'aperçu correspond au PDF (A5 paysage)." },
     ],
     closingTitle: "Des bons cadeaux qui font vraiment revenir les clients",
     closingText:
       "Les bons cadeaux remplissent les journées calmes et vous amènent de nouveaux clients. Treatflow simplifie la vente et l'utilisation pour que rien ne se perde dans un tableur.",
+    faqs: [
+      {
+        question: "Puis-je vendre des bons cadeaux en ligne ?",
+        answer:
+          "Oui. Avec l'app Bons cadeaux (Paramètres → Apps), le lien « Acheter un bon » apparaît sur votre page de réservation publique. Les clients choisissent un montant fixe ou libre dans vos limites, un PDF par e-mail, un envoi postal (avec des frais d'envoi que vous définissez) ou un retrait à l'institut, et peuvent ajouter destinataire, expéditeur et message personnel. L'app n'est disponible qu'avec la caisse Treatflow, car les bons y sont encaissés.",
+      },
+      {
+        question: "Comment les clients paient-ils les bons en ligne ?",
+        answer:
+          "Vous choisissez les moyens de paiement : avec Treatflow Pay, les clients paient par carte, Apple Pay ou Google Pay, et le bon est émis immédiatement puis envoyé en PDF par e-mail. Par virement, la caisse crée et envoie automatiquement une facture ; le bon est émis dès que vous confirmez le paiement dans la caisse.",
+      },
+      {
+        question: "Comment les bons vendus en ligne sont-ils taxés ?",
+        answer:
+          "Les bons vendus en ligne sont des bons à usages multiples : la TVA n'est due qu'au moment de leur utilisation dans la caisse Treatflow, pas à l'achat. Dans la caisse, vous gérez les commandes en ligne et voyez pour chaque bon son origine (en ligne ou caisse), le solde restant et l'historique d'utilisation.",
+      },
+    ],
   },
 
   messaging: {
@@ -695,6 +717,7 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
         title: "Zapier",
         desc: "Déclenchez des automatisations dans Sheets, votre CRM, votre messagerie et plus encore.",
       },
+      { icon: Gift, title: "Bons cadeaux", desc: "Vendez des bons cadeaux en ligne via votre page de réservation – payés avec Treatflow Pay ou par virement, encaissés dans la caisse Treatflow." },
       {
         icon: RefreshCw,
         title: "Moins de doublons",
@@ -715,6 +738,11 @@ const extraFeatures: LocaleSiteContent["extraFeatures"] = {
     closingText:
       "Les intégrations placent Treatflow au centre de votre activité, tandis que vos outils préférés restent informés – automatiquement.",
     faqs: [
+      {
+        question: "Puis-je vendre des bons cadeaux en ligne ?",
+        answer:
+          "Oui. Activez l'app Bons cadeaux dans Paramètres → Apps et le lien « Acheter un bon » apparaît sur votre page de réservation. Les clients paient avec Treatflow Pay ou par virement et reçoivent le bon en PDF par e-mail, par la poste ou à retirer à l'institut. L'app nécessite la caisse Treatflow, où les bons sont encaissés.",
+      },
       {
         question: "Treatflow s'intègre-t-il à Google Agenda ?",
         answer:
