@@ -941,4 +941,190 @@ export const posts: BlogArticle[] = [
       { label: "PFPDT (Suisse)", url: "https://www.edoeb.admin.ch" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 7. Calculer ses prix
+  // ---------------------------------------------------------------------------
+  {
+    topic: "pricing-beauty-treatments",
+    lang: "fr",
+    slug: "calculer-prix-soins-institut-de-beaute",
+    title: "Comment calculer le prix de vos soins en institut de beauté : la méthode pas à pas",
+    metaTitle: "Calculer le prix de ses soins en institut de beauté",
+    description:
+      "Comment calculer le prix de vos soins esthétiques : taux horaire minimum, temps, produits et marge par prestation, concurrence et carte de soins claire.",
+    excerpt:
+      "Copier les tarifs de l'institut voisin n'est pas une stratégie. Voici le calcul de votre taux horaire, quatre exemples chiffrés et les clés d'une carte de soins qui inspire confiance.",
+    category: "Gestion d'institut",
+    keywords: [
+      "calculer prix soin esthétique",
+      "tarifs institut de beauté",
+      "carte des soins institut",
+      "taux horaire esthéticienne",
+      "prix d'un soin visage",
+      "stratégie de prix institut",
+      "prix extension de cils",
+    ],
+    publishedAt: "2026-11-03",
+    updatedAt: "2026-11-03",
+    readMinutes: 8,
+    answer:
+      "Le bon prix d'un soin se calcule à partir de vos coûts, puis se confronte au marché en dernier. Calculez d'abord votre taux horaire minimum : charges fixes mensuelles plus la rémunération dont vous avez besoin, divisées par les heures réellement facturables. Multipliez ce taux par le temps total que le soin immobilise (préparation et nettoyage compris), ajoutez les consommables et une marge de 10 à 20 %.",
+    takeaways: [
+      "Taux horaire minimum = (charges fixes + votre rémunération) ÷ heures facturables, bien moins nombreuses que vos heures d'ouverture.",
+      "Facturez tout le temps où la cabine et la praticienne sont occupées, pas seulement les minutes sur la table de soin.",
+      "Ajoutez les consommables de chaque prestation et une marge pour les réserves, les réparations et le développement.",
+      "Les prix de la concurrence indiquent ce que le marché accepte, pas ce que vous devez gagner.",
+      "Une carte claire, par niveaux et visible en ligne, rassure et facilite la montée en gamme.",
+    ],
+    intro: [
+      "Beaucoup de gérantes fixent leurs tarifs une seule fois, à l'ouverture, en regardant ce que pratiquent les instituts du quartier. Quelques années plus tard, le loyer, les produits, l'énergie et les salaires ont augmenté, mais la carte n'a presque pas bougé. Le planning est plein, le compte en banque beaucoup moins. Être débordée et être rentable, ce n'est pas la même chose.",
+      "Ce guide vous montre comment calculer des prix qui couvrent vos coûts et vous rémunèrent correctement. Il s'applique aux instituts de beauté, cabinets de médecine esthétique, ongleries, bars à cils, studios de maquillage permanent, centres d'épilation laser, spas et cabinets de massage. Les montants des exemples sont indicatifs : remplacez-les par vos chiffres et vous obtiendrez un prix plancher solide pour chaque prestation.",
+    ],
+    sections: [
+      {
+        heading: "Pourquoi tant d'instituts vendent-ils leurs soins trop bas ?",
+        paragraphs: [
+          "La raison la plus fréquente : les prix sont copiés, pas calculés. Vous ne connaissez ni le loyer, ni la masse salariale, ni les crédits de l'institut que vous prenez pour modèle. Vous héritez donc de ses hypothèses, et peut-être de ses pertes.",
+          "La deuxième raison est la peur : peur de perdre les fidèles, de paraître chère, d'avoir des trous dans le planning. En pratique, une cliente qui revient pour le résultat et l'expérience part rarement à cause d'un prix raisonnable et bien expliqué. Celle qui ne cherche que le moins cher partira de toute façon vers la prochaine promotion.",
+          "La troisième raison est le temps invisible. Un soin visage de 60 minutes, avec le questionnaire, la préparation de la cabine, le nettoyage, la désinfection et la mise à jour de la fiche cliente, vous occupe facilement 75 minutes. Si ce temps n'est pas dans le prix, vous le travaillez gratuitement.",
+        ],
+      },
+      {
+        heading: "Comment calculer votre taux horaire minimum ?",
+        paragraphs: [
+          "Votre taux horaire minimum est ce que chaque heure facturable doit rapporter pour couvrir toutes vos charges et vous verser une rémunération juste. Recalculez-le au moins une fois par an et dès qu'un poste important change, par exemple un nouveau bail ou un nouvel appareil.",
+        ],
+        steps: [
+          "Additionnez vos charges fixes mensuelles : loyer, énergie, assurances, logiciel, marketing, expert-comptable, formation, crédit-bail des appareils et tout ce que vous payez, que les clientes viennent ou non.",
+          "Fixez la rémunération dont vous avez besoin en tant que gérante, impôts et cotisations sociales compris. Si vous avez des salariées, ajoutez leur coût employeur complet.",
+          "Calculez vos heures facturables : jours travaillés par mois × heures par jour, moins le temps d'administration, les pauses, le nettoyage entre deux clientes, les arrêts maladie et les creux du planning. Retirer 20 à 30 % est réaliste pour la plupart des instituts.",
+          "Divisez charges fixes plus rémunération par les heures facturables : c'est votre taux horaire d'équilibre.",
+          "Ajoutez une marge d'environ 10 à 20 % pour les réserves, les pannes, les mois calmes et les investissements.",
+        ],
+        table: {
+          headers: ["Poste (exemple)", "Par mois"],
+          rows: [
+            ["Loyer", "900 €"],
+            ["Énergie et eau", "150 €"],
+            ["Assurances", "80 €"],
+            ["Logiciel de gestion", "59 €"],
+            ["Marketing", "200 €"],
+            ["Expert-comptable", "120 €"],
+            ["Formation", "100 €"],
+            ["Crédit-bail appareils", "350 €"],
+            ["Divers", "141 €"],
+            ["**Total charges fixes**", "**2 100 €**"],
+            ["Rémunération de la gérante, impôts et cotisations compris", "3 500 €"],
+            ["Heures facturables (20 jours × 8 h moins 25 %)", "120 h"],
+            ["Équilibre : 5 600 € ÷ 120 h", "46,67 €/h"],
+            ["Taux cible avec 15 % de marge", "≈ 54 €/h"],
+          ],
+        },
+        callout:
+          "L'erreur la plus courante porte sur les heures facturables. Si vous calculez sur 160 heures alors que vous soignez réellement des clientes 110 heures, chaque prix de votre carte est trop bas d'environ un tiers.",
+      },
+      {
+        heading: "Comment passer du taux horaire au prix d'un soin ?",
+        paragraphs: [
+          "Pour chaque prestation, prenez le temps total pendant lequel la cabine et la praticienne sont occupées, multipliez-le par votre taux cible et ajoutez les consommables utilisés : masques, ampoules, gel, cils, colle, aiguilles, matériel à usage unique. Si le crédit-bail de l'appareil figure déjà dans vos charges fixes, ne le comptez pas une seconde fois.",
+          "Le résultat est votre prix plancher. Vous pouvez demander davantage, pour votre expérience, la demande ou une gamme de produits haut de gamme, mais vous ne devriez pas descendre en dessous de façon régulière.",
+        ],
+        table: {
+          headers: ["Soin", "Temps immobilisé", "Temps × 54 €", "Consommables", "Prix plancher"],
+          rows: [
+            ["Soin visage classique", "75 min", "67,50 €", "8 €", "≈ 76 €"],
+            ["Pose de vernis semi-permanent", "70 min", "63,00 €", "5 €", "≈ 68 €"],
+            ["Extension de cils, pose complète", "130 min", "117,00 €", "12 €", "≈ 129 €"],
+            ["Épilation laser des aisselles", "25 min", "22,50 €", "4 €", "≈ 27 €"],
+          ],
+        },
+        bullets: [
+          "Les soins courts sur appareil, comme le laser, se vendent souvent bien au-dessus de leur plancher horaire, en raison de l'investissement, de la formation et de la demande. C'est normal, tant que le plancher est couvert.",
+          "Les soins longs avec peu de produits, comme les massages, sont ceux qui sont le plus souvent sous-évalués. Vérifiez-les en premier.",
+        ],
+      },
+      {
+        heading: "Quelle place accorder aux prix de la concurrence ?",
+        paragraphs: [
+          "Observez cinq à dix établissements auxquels votre cliente idéale vous comparerait réellement, pas tous les instituts de la ville. Notez les prix de vos trois ou quatre soins phares et le positionnement de chacun : entrée de gamme, milieu de gamme ou haut de gamme.",
+          "Comparez ensuite avec votre prix plancher. Si le marché est nettement au-dessus, vous avez de la marge pour tarifer selon la valeur perçue. S'il est en dessous, la guerre des prix est une course perdue d'avance : mettez plutôt en avant ce qui vous distingue, comme la spécialisation, les résultats, une documentation rigoureuse, le confort ou la disponibilité, et fixez vos prix en conséquence.",
+        ],
+        bullets: [
+          "Un positionnement d'entrée de gamme demande du volume et des process très rodés.",
+          "Le milieu de gamme demande une expérience régulière et un bon taux de reprise de rendez-vous.",
+          "Le haut de gamme demande une expertise visible, une consultation soignée et un parcours client irréprochable, de la réservation aux conseils post-soin.",
+        ],
+      },
+      {
+        heading: "Comment construire une carte de soins claire pour vos clientes ?",
+        paragraphs: [
+          "Une bonne carte aide à choisir vite et rend l'option la plus valorisante naturelle. Gardez-la courte, indiquez la durée à côté du prix et décrivez le résultat, pas seulement les étapes.",
+        ],
+        bullets: [
+          "Proposez deux ou trois niveaux pour vos soins principaux, par exemple un soin visage de 45, 75 et 90 minutes. Quand les différences sont claires, beaucoup de clientes choisissent celui du milieu.",
+          "Tarifez à part les options (contour des yeux, masque supplémentaire, paraffine, nail art) pour permettre une montée en gamme sans remise sur le soin principal.",
+          "Regroupez les cures, comme les séances de laser ou les programmes visage, en forfaits avec un nombre de séances défini et un avantage modéré.",
+          "Décidez si le bilan initial est offert, payant ou déduit du premier soin, et annoncez-le clairement.",
+          "Affichez des prix TTC ; si vous êtes en franchise en base de TVA, voyez avec votre expert-comptable la mention à faire figurer. Réservez les prix « à partir de » aux soins dont le montant dépend vraiment de la zone ou de la longueur.",
+          "Utilisez partout les mêmes prix : site, page de réservation en ligne, Instagram et institut.",
+        ],
+        callout:
+          "Dans la réservation en ligne, chaque prestation a sa durée et son prix : la cliente voit ce qu'elle réserve avant de confirmer. Avec Treatflow, la page de réservation est sur votre propre lien et aucune commission n'est prélevée sur les rendez-vous, seulement un abonnement fixe de 39 ou 59 € par mois, avec 14 jours d'essai gratuit sans carte bancaire.",
+      },
+      {
+        heading: "Quand et comment augmenter vos prix ?",
+        paragraphs: [
+          "Refaites votre calcul au moins une fois par an et après chaque hausse importante de vos charges. De petites hausses régulières passent beaucoup mieux qu'un gros saut après plusieurs années.",
+        ],
+        steps: [
+          "Recalculez votre taux horaire avec vos charges actuelles et comparez chaque soin à son prix plancher.",
+          "Annoncez les nouveaux tarifs quatre à six semaines à l'avance, par e-mail, par message et en institut.",
+          "Donnez une raison courte et honnête, comme la hausse des produits, de l'énergie ou de la formation, sans vous excuser.",
+          "Maintenez l'ancien prix pour les rendez-vous déjà pris afin que personne ne se sente piégée.",
+          "Préparez votre équipe pour que chacune réponde aux questions avec le même calme.",
+        ],
+      },
+      {
+        heading: "Quelles erreurs de prix coûtent le plus cher à un institut ?",
+        paragraphs: [
+          "La plupart des problèmes de prix viennent de quelques habitudes qui s'installent avec le temps. Une fois par an, passez votre carte au crible de cette liste.",
+        ],
+        bullets: [
+          "Des offres de bienvenue qui ne s'arrêtent jamais et habituent les clientes à attendre les remises.",
+          "Des réductions personnelles accordées sur le moment, jamais notées, qui deviennent la norme.",
+          "Oublier la préparation, le nettoyage et la documentation dans la durée des soins.",
+          "N'avoir aucune règle pour les annulations tardives et les rendez-vous non honorés, si bien que chaque créneau vide est à votre charge.",
+          "Ne rien augmenter pendant des années, puis augmenter fortement d'un coup.",
+          "Ne jamais vérifier quelles prestations rapportent vraiment et lesquelles remplissent seulement le planning.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Comment calculer le prix d'un soin esthétique ?",
+        a: "Calculez d'abord votre taux horaire : charges fixes mensuelles plus votre rémunération, divisées par vos heures facturables réelles, plus 10 à 20 % de marge. Multipliez-le par le temps total du soin, préparation et nettoyage compris, puis ajoutez les consommables. Vous obtenez votre prix plancher.",
+      },
+      {
+        q: "Quel prix pour un soin du visage en institut ?",
+        a: "Il n'existe pas de prix unique : loyers, salaires et positionnement varient d'une ville à l'autre. Avec un taux d'exemple de 54 € de l'heure et 75 minutes de temps immobilisé, un soin visage classique devrait coûter au moins 76 € environ. Faites le calcul avec vos chiffres, puis comparez avec les instituts entre lesquels vos clientes hésitent.",
+      },
+      {
+        q: "Puis-je simplement m'aligner sur les prix de la concurrence ?",
+        a: "Utilisez les prix des concurrents comme contrôle du marché, pas comme point de départ. Vous ne connaissez ni leurs charges ni leur rentabilité. Si votre plancher dépasse le marché local, travaillez votre positionnement plutôt que de vendre à perte.",
+      },
+      {
+        q: "Faut-il afficher ses prix en ligne ?",
+        a: "Dans la plupart des cas, oui. Des prix visibles réduisent les messages « c'est combien ? », filtrent les clientes qui ne vous correspondent pas et facilitent la réservation en ligne. Quand le prix dépend de la zone ou de la longueur, indiquez un « à partir de » clair et expliquez ce qui détermine le montant final.",
+      },
+      {
+        q: "À quelle fréquence augmenter les prix d'un institut ?",
+        a: "Revoyez vos prix au moins une fois par an et après toute hausse importante des charges. Un ajustement annuel modéré, annoncé quelques semaines à l'avance, est généralement bien mieux accepté qu'une forte hausse après des années sans changement.",
+      },
+    ],
+    related: [
+      { pageKey: "pricing", label: "Tarifs de Treatflow" },
+      { pageKey: "client-records", label: "Fiches clientes" },
+      { pageKey: "features", label: "Toutes les fonctionnalités" },
+    ],
+  },
 ];

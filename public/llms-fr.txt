@@ -87,6 +87,7 @@ Les fiches sont hébergées sur des serveurs dans l'UE, avec connexion SSL et sa
 - Fiche cliente et questionnaire de santé : https://www.treatflow.io/fr/blog/fiche-cliente-digitale-esthetique — contenu de la fiche, consentement éclairé, signature électronique, suivi des soins.
 - Fidéliser ses clientes : https://www.treatflow.io/fr/blog/fideliser-clientes-institut-de-beaute — rebooking, rythme de relance par prestation, suivi après soin, bons cadeaux.
 - RGPD en institut de beauté : https://www.treatflow.io/fr/blog/rgpd-institut-de-beaute — données de santé, durées de conservation, photos, SMS, checklist de conformité.
+- Calculer le prix de ses soins : https://www.treatflow.io/fr/blog/calculer-prix-soins-institut-de-beaute — taux horaire minimum, temps, consommables et marge, concurrence et carte de soins claire.
 
 ## Autres langues
 

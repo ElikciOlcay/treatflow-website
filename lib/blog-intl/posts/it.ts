@@ -1091,4 +1091,190 @@ export const posts: BlogArticle[] = [
       { label: "IFPDT – Incaricato federale della protezione dei dati (Svizzera)", url: "https://www.edoeb.admin.ch" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 7. Calcolare i prezzi dei trattamenti
+  // ---------------------------------------------------------------------------
+  {
+    topic: "pricing-beauty-treatments",
+    lang: "it",
+    slug: "come-calcolare-prezzi-centro-estetico",
+    title: "Come calcolare i prezzi dei trattamenti nel centro estetico: il metodo passo dopo passo",
+    metaTitle: "Come calcolare i prezzi nel centro estetico",
+    description:
+      "Come calcolare i prezzi dei trattamenti estetici: costo orario minimo, tempo, prodotti e margine per servizio, confronto con la concorrenza e listino chiaro.",
+    excerpt:
+      "Copiare il listino del centro vicino non è una strategia. Ecco come calcolare il tuo costo orario, quattro esempi di prezzo e i consigli per un listino che ispira fiducia.",
+    category: "Gestione del centro",
+    keywords: [
+      "come calcolare i prezzi centro estetico",
+      "listino prezzi centro estetico",
+      "prezzi trattamenti estetici",
+      "costo orario estetista",
+      "quanto costa una pulizia del viso",
+      "strategia prezzi centro estetico",
+      "prezzo extension ciglia",
+    ],
+    publishedAt: "2026-11-03",
+    updatedAt: "2026-11-03",
+    readMinutes: 8,
+    answer:
+      "Il prezzo giusto di un trattamento si costruisce partendo dai costi e solo alla fine si confronta con il mercato. Calcola prima il tuo costo orario minimo: costi fissi mensili più il compenso che ti serve, diviso per le ore realmente fatturabili. Moltiplica questa tariffa per il tempo complessivo che il trattamento occupa (preparazione e pulizia comprese), aggiungi i prodotti consumati e un margine del 10–20 %.",
+    takeaways: [
+      "Costo orario minimo = (costi fissi + il tuo compenso) ÷ ore fatturabili, che sono molte meno delle ore di apertura.",
+      "Conta tutto il tempo in cui cabina e operatrice sono occupate, non solo i minuti sul lettino.",
+      "Aggiungi i prodotti di consumo per ogni trattamento e un margine per riserve, riparazioni e crescita.",
+      "I prezzi della concorrenza ti dicono cosa accetta il mercato, non quanto devi guadagnare tu.",
+      "Un listino chiaro, a livelli e visibile online crea fiducia e rende naturale l'upgrade.",
+    ],
+    intro: [
+      "Molte titolari fissano i prezzi una sola volta, all'apertura, guardando cosa chiedono gli altri centri della zona. Qualche anno dopo affitto, prodotti, energia e stipendi sono aumentati, ma il listino è quasi fermo. L'agenda è piena, il conto in banca no. Essere sempre occupate ed essere in utile sono due cose diverse.",
+      "In questa guida vedi come calcolare prezzi che coprono i costi e ti pagano il giusto: vale per centri estetici, studi di medicina estetica, centri unghie, ciglia e trucco permanente, centri laser, spa e massaggi. Le cifre degli esempi sono indicative: sostituiscile con i tuoi numeri e avrai una soglia minima solida per ogni servizio del listino.",
+    ],
+    sections: [
+      {
+        heading: "Perché così tanti centri estetici fanno prezzi troppo bassi?",
+        paragraphs: [
+          "Il motivo più comune è che i prezzi vengono copiati, non calcolati. Non conosci l'affitto, il personale o i finanziamenti del centro che stai imitando: stai ereditando le sue ipotesi e, forse, anche le sue perdite.",
+          "Il secondo motivo è la paura: di perdere le clienti abituali, di sembrare care, di avere buchi in agenda. Nella pratica, chi torna per il risultato e per l'esperienza raramente se ne va per un prezzo ragionevole e ben spiegato. Chi cerca solo il prezzo più basso passerà comunque alla prossima promozione.",
+          "Il terzo motivo è il tempo invisibile. Un trattamento viso da 60 minuti, tra anamnesi, preparazione della cabina, pulizia, sanificazione e aggiornamento della scheda cliente, ti occupa facilmente 75 minuti. Se quel tempo non è nel prezzo, lo stai regalando.",
+        ],
+      },
+      {
+        heading: "Come si calcola il costo orario minimo?",
+        paragraphs: [
+          "Il costo orario minimo è quanto deve rendere ogni ora fatturabile per coprire tutti i costi e pagarti un compenso equo. Ricalcolalo almeno una volta l'anno e ogni volta che cambia una voce importante, come un nuovo contratto d'affitto o un nuovo macchinario.",
+        ],
+        steps: [
+          "Somma i costi fissi mensili: affitto, utenze, assicurazioni, software, marketing, commercialista, formazione, leasing o finanziamento delle apparecchiature e tutto ciò che paghi anche se le clienti non arrivano.",
+          "Stabilisci il compenso che ti serve come titolare, comprese imposte e contributi INPS. Se hai dipendenti, aggiungi il loro costo aziendale completo.",
+          "Calcola le ore fatturabili: giorni lavorativi al mese × ore al giorno, meno il tempo per amministrazione, pause, pulizia tra una cliente e l'altra, malattia e buchi in agenda. Per la maggior parte dei centri è realistico togliere il 20–30 %.",
+          "Dividi costi fissi più compenso per le ore fatturabili: ottieni il costo orario di pareggio.",
+          "Aggiungi un margine del 10–20 % circa per riserve, riparazioni, mesi tranquilli e investimenti.",
+        ],
+        table: {
+          headers: ["Voce (esempio)", "Al mese"],
+          rows: [
+            ["Affitto", "900 €"],
+            ["Utenze", "150 €"],
+            ["Assicurazioni", "80 €"],
+            ["Gestionale", "59 €"],
+            ["Marketing", "200 €"],
+            ["Commercialista", "120 €"],
+            ["Formazione", "100 €"],
+            ["Leasing apparecchiature", "350 €"],
+            ["Altro", "141 €"],
+            ["**Totale costi fissi**", "**2.100 €**"],
+            ["Compenso titolare con imposte e contributi", "3.500 €"],
+            ["Ore fatturabili (20 giorni × 8 h meno 25 %)", "120 h"],
+            ["Pareggio: 5.600 € ÷ 120 h", "46,67 €/h"],
+            ["Tariffa obiettivo con margine del 15 %", "≈ 54 €/h"],
+          ],
+        },
+        callout:
+          "L'errore più frequente riguarda le ore fatturabili. Se calcoli su 160 ore ma in realtà lavori sulle clienti per 110, ogni prezzo del listino è più basso di circa un terzo.",
+      },
+      {
+        heading: "Come si passa dalla tariffa oraria al prezzo del trattamento?",
+        paragraphs: [
+          "Per ogni servizio prendi il tempo totale in cui cabina e operatrice sono occupate, moltiplicalo per la tariffa obiettivo e aggiungi i materiali di consumo: maschere, fiale, gel, ciglia, colla, aghi, monouso. Se il leasing del macchinario è già nei costi fissi, non contarlo una seconda volta.",
+          "Il risultato è la tua soglia minima. Puoi chiedere di più, per esperienza, domanda o una linea di prodotti premium, ma non dovresti scendere sotto in modo abituale.",
+        ],
+        table: {
+          headers: ["Trattamento", "Tempo occupato", "Tempo × 54 €", "Materiali", "Soglia minima"],
+          rows: [
+            ["Pulizia del viso classica", "75 min", "67,50 €", "8 €", "≈ 76 €"],
+            ["Manicure semipermanente", "70 min", "63,00 €", "5 €", "≈ 68 €"],
+            ["Extension ciglia, applicazione completa", "130 min", "117,00 €", "12 €", "≈ 129 €"],
+            ["Epilazione laser ascelle", "25 min", "22,50 €", "4 €", "≈ 27 €"],
+          ],
+        },
+        bullets: [
+          "I trattamenti brevi con apparecchiature, come il laser, hanno spesso prezzi molto sopra la soglia a tempo per via dell'investimento, della formazione e della domanda. Va bene, purché la soglia sia coperta.",
+          "I trattamenti lunghi con pochi materiali, come i massaggi, sono quelli più spesso sottoprezzati: controllali per primi.",
+        ],
+      },
+      {
+        heading: "Quanto devono contare i prezzi della concorrenza?",
+        paragraphs: [
+          "Osserva cinque-dieci centri con cui la tua cliente ideale ti confronterebbe davvero, non tutti quelli della città. Annota i prezzi dei tuoi tre o quattro trattamenti principali e il posizionamento di ciascuno: economico, fascia media o premium.",
+          "Poi confrontali con la tua soglia. Se il mercato è ben sopra, hai spazio per un prezzo basato sul valore. Se il mercato è sotto la tua soglia, la guerra dei prezzi è una gara persa: rendi invece evidente ciò che ti distingue, come specializzazione, risultati, documentazione accurata, comfort o disponibilità, e fissa il prezzo di conseguenza.",
+        ],
+        bullets: [
+          "Il posizionamento economico richiede volumi alti e processi molto snelli.",
+          "La fascia media richiede un'esperienza costante e un buon tasso di ritorno.",
+          "Il premium richiede competenza visibile, una consulenza accurata e un percorso cliente impeccabile dalla prenotazione al post-trattamento.",
+        ],
+      },
+      {
+        heading: "Come costruire un listino prezzi che le clienti capiscono?",
+        paragraphs: [
+          "Un buon listino aiuta a decidere in fretta e rende naturale l'opzione di maggior valore. Tienilo breve, indica la durata accanto al prezzo e descrivi il risultato, non solo i passaggi.",
+        ],
+        bullets: [
+          "Offri due o tre livelli per i trattamenti principali, per esempio un viso da 45, 75 e 90 minuti. Quando le differenze sono chiare, molte clienti scelgono quello centrale.",
+          "Prezza a parte gli extra (contorno occhi, maschera aggiuntiva, paraffina, nail art), così la cliente può fare upgrade senza che tu sconti il trattamento base.",
+          "Raggruppa i percorsi, come cicli laser o programmi viso, in pacchetti con un numero di sedute definito e un vantaggio contenuto.",
+          "Decidi se la consulenza è gratuita, a pagamento o scalata dal primo trattamento, e dillo apertamente.",
+          "Mostra prezzi finali IVA inclusa; se sei in regime forfettario, verifica con il commercialista come impostare il listino. Usa i prezzi 'a partire da' solo quando il prezzo dipende davvero dalla zona o dalla lunghezza.",
+          "Usa gli stessi prezzi ovunque: sito, pagina di prenotazione online e centro.",
+        ],
+        callout:
+          "Nella prenotazione online ogni servizio ha la sua durata e il suo prezzo, quindi la cliente vede cosa prenota prima di confermare. Con Treatflow la pagina di prenotazione è sul tuo link e non paghi commissioni sulle prenotazioni: un canone fisso di 39 o 59 € al mese, con 14 giorni di prova gratuita senza carta di credito.",
+      },
+      {
+        heading: "Quando e come aumentare i prezzi?",
+        paragraphs: [
+          "Rivedi il calcolo almeno una volta l'anno e dopo ogni aumento importante dei costi. Ritocchi piccoli e regolari vengono accettati molto più facilmente di un grande salto dopo anni.",
+        ],
+        steps: [
+          "Ricalcola la tariffa oraria con i costi attuali e confronta ogni servizio con la sua soglia minima.",
+          "Annuncia i nuovi prezzi con quattro-sei settimane di anticipo, via e-mail, messaggio e in istituto.",
+          "Dai una motivazione breve e sincera, come l'aumento dei costi di prodotti, energia o formazione, senza scusarti.",
+          "Mantieni il vecchio prezzo per gli appuntamenti già fissati, così nessuna si sente presa in contropiede.",
+          "Prepara il team, perché tutte rispondano alle domande con la stessa calma.",
+        ],
+      },
+      {
+        heading: "Quali errori di prezzo costano di più a un centro estetico?",
+        paragraphs: [
+          "La maggior parte dei problemi nasce da poche abitudini che si insinuano col tempo. Una volta l'anno confronta il listino con questo elenco.",
+        ],
+        bullets: [
+          "Promozioni di benvenuto che non finiscono mai e insegnano alle clienti ad aspettare lo sconto.",
+          "Sconti personali dati sul momento, non registrati, che diventano la nuova normalità.",
+          "Non includere preparazione, pulizia e documentazione nella durata dei trattamenti.",
+          "Nessuna regola per disdette tardive e appuntamenti mancati, così ogni buco in agenda lo paghi tu.",
+          "Non aumentare per anni e poi fare un aumento forte tutto in una volta.",
+          "Non verificare mai quali servizi rendono davvero e quali riempiono solo l'agenda.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Come si calcola il prezzo di un trattamento estetico?",
+        a: "Calcola prima la tua tariffa oraria: costi fissi mensili più il tuo compenso, divisi per le ore fatturabili realistiche, più un margine del 10–20 %. Moltiplica la tariffa per il tempo totale del trattamento, preparazione e pulizia comprese, e aggiungi i materiali. Il risultato è la soglia minima.",
+      },
+      {
+        q: "Quanto deve costare una pulizia del viso?",
+        a: "Non esiste un prezzo valido ovunque: affitti, stipendi e posizionamento cambiano da città a città. Con una tariffa di esempio di 54 € l'ora e 75 minuti di tempo occupato, una pulizia del viso classica dovrebbe costare almeno 76 € circa. Fai il calcolo con i tuoi numeri e poi guarda i centri con cui le tue clienti ti confrontano.",
+      },
+      {
+        q: "Posso semplicemente allinearmi ai prezzi della concorrenza?",
+        a: "Usa i prezzi dei concorrenti come verifica di mercato, non come punto di partenza. Non conosci i loro costi né sai se sono in utile. Se la tua soglia è sopra il mercato locale, lavora sul posizionamento invece di scendere sotto costo.",
+      },
+      {
+        q: "È meglio pubblicare i prezzi online?",
+        a: "Nella maggior parte dei casi sì. Prezzi visibili riducono le richieste in chat, filtrano le clienti poco adatte e semplificano la prenotazione online. Se il prezzo dipende da zona o lunghezza, indica un 'a partire da' chiaro e spiega cosa determina l'importo finale.",
+      },
+      {
+        q: "Ogni quanto aumentare i prezzi del centro estetico?",
+        a: "Rivedi i prezzi almeno una volta l'anno e dopo grandi variazioni dei costi. Un adeguamento annuale moderato, comunicato qualche settimana prima, viene di solito accolto molto meglio di un forte aumento dopo anni di prezzi fermi.",
+      },
+    ],
+    related: [
+      { pageKey: "pricing", label: "Prezzi" },
+      { pageKey: "client-records", label: "Schede clienti" },
+      { pageKey: "features", label: "Tutte le funzioni" },
+    ],
+  },
 ];

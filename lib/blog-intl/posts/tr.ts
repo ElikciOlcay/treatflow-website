@@ -1137,4 +1137,191 @@ export const posts: BlogArticle[] = [
       { pageKey: "client-records", label: "Müşteri takip programı" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 7) Hizmet fiyatlandırma
+  // ---------------------------------------------------------------------------
+  {
+    topic: "pricing-beauty-treatments",
+    lang: "tr",
+    slug: "guzellik-salonu-fiyat-hesaplama",
+    title: "Güzellik Salonu Fiyatları Nasıl Hesaplanır? Hizmet Başına Adım Adım Fiyatlandırma",
+    metaTitle: "Güzellik Salonu Fiyatları Nasıl Hesaplanır?",
+    description:
+      "Güzellik salonu fiyat hesaplama: saatlik maliyetinizi bulun, süre, sarf malzemesi ve kâr payını ekleyin, rakipleri doğru okuyun ve net bir fiyat listesi kurun.",
+    excerpt:
+      "Yandaki salonun fiyatını kopyalamak bir strateji değildir. Saatlik maliyet hesabı, dört hizmet için örnek fiyat ve müşterinin güvendiği bir fiyat listesi için pratik adımlar.",
+    category: "İşletme",
+    keywords: [
+      "güzellik salonu fiyat hesaplama",
+      "güzellik salonu fiyat listesi",
+      "cilt bakımı fiyatı nasıl belirlenir",
+      "salon hizmet fiyatlandırma",
+      "kirpik fiyatı hesaplama",
+      "lazer epilasyon fiyat belirleme",
+      "güzellik merkezi kâr hesabı",
+    ],
+    publishedAt: "2026-11-03",
+    updatedAt: "2026-11-03",
+    readMinutes: 8,
+    answer:
+      "Güzellik salonunda doğru fiyat, maliyetten yukarı doğru hesaplanır ve en son piyasayla karşılaştırılır. Önce saatlik asgari tutarınızı bulun: aylık sabit giderler ile kendinize ödemeniz gereken maaşın toplamını, gerçekten faturalanabilir çalışma saatlerine bölün. Bu tutarı hizmetin odayı ve uzmanı meşgul ettiği toplam süreyle çarpın, sarf malzemesini ve yüzde 10–20 civarında bir kâr payını ekleyin.",
+    takeaways: [
+      "Saatlik asgari tutar = (sabit giderler + kendi maaşınız) ÷ faturalanabilir saat; bu saat açık olduğunuz saatten çok daha azdır.",
+      "Fiyata sadece müşterinin koltukta geçirdiği süreyi değil, hazırlık, temizlik ve kayıt süresini de katın.",
+      "Her hizmetin sarf malzemesi maliyetini ayrı hesaplayın; cihaz taksitlerini iki kez saymayın.",
+      "Rakip fiyatları piyasanın neyi kabul ettiğini gösterir, sizin ne kazanmanız gerektiğini değil.",
+      "Kademeli, süresi ve fiyatı açıkça yazılmış bir liste güven verir ve üst pakete geçişi kolaylaştırır.",
+    ],
+    intro: [
+      "Birçok salon fiyatlarını açılışta bir kez belirler: çevredeki salonlara bakılır, ortalama bir rakam seçilir. Aradan bir iki yıl geçer; kira, ürün, elektrik ve maaşlar artmıştır ama fiyat listesi neredeyse aynı kalmıştır. Takvim doludur, banka hesabında ise beklenen para yoktur. Yoğun olmak ile kârlı olmak aynı şey değildir.",
+      "Bu rehber; güzellik salonları, medikal estetik klinikleri, lazer epilasyon merkezleri, protez tırnak, kirpik ve kalıcı makyaj stüdyoları, spa ve masaj salonları için maliyetinizi karşılayan ve emeğinizin karşılığını veren fiyatları nasıl hesaplayacağınızı gösteriyor. Örnekteki rakamlar yalnızca açıklama amaçlıdır; kendi rakamlarınızı yerleştirdiğinizde her hizmet için sağlam bir taban fiyatınız olur.",
+    ],
+    sections: [
+      {
+        heading: "Salonlar neden hizmetlerini değerinin altında satar?",
+        paragraphs: [
+          "En yaygın neden, fiyatın hesaplanmayıp kopyalanmasıdır. Örnek aldığınız salonun kirasını, personel giderini, cihazını nasıl finanse ettiğini bilmezsiniz. Yani başkasının varsayımlarını, belki de zararını devralırsınız.",
+          "İkinci neden kaygıdır: düzenli müşteriyi kaybetme, pahalı görünme, boş saat kalma korkusu. Oysa sonucu ve hizmet deneyimini sevdiği için gelen müşteri, makul ve iyi anlatılmış bir fiyat farkı yüzünden kolay kolay vazgeçmez. Sadece en ucuzu arayan müşteri ise zaten bir sonraki kampanyaya gidecektir.",
+          "Üçüncü neden görünmeyen süredir. 60 dakikalık bir cilt bakımı; ön görüşme, oda hazırlığı, temizlik, dezenfeksiyon ve işlem notuyla birlikte gününüzden 60 dakikadan fazlasını alır. Bu süre fiyatta yoksa, o kısmı ücretsiz çalışıyorsunuz demektir.",
+        ],
+      },
+      {
+        heading: "Saatlik asgari tutar nasıl hesaplanır?",
+        paragraphs: [
+          "Saatlik asgari tutar, tüm giderlerin karşılanması ve size adil bir maaş kalması için her faturalanabilir saatin getirmesi gereken paradır. Bu hesabı yılda en az bir kez ve kira artışı, yeni cihaz gibi büyük bir değişiklikte mutlaka yenileyin. Yüksek enflasyon dönemlerinde üç ayda bir gözden geçirmek daha sağlıklıdır.",
+        ],
+        steps: [
+          "Aylık sabit giderlerinizi toplayın: kira, aidat, elektrik-su-doğalgaz, sigorta, yazılım, reklam, muhasebe, eğitim, cihaz taksidi ve müşteri gelse de gelmese de ödediğiniz her şey.",
+          "Kendinize ödemeniz gereken maaşı belirleyin; vergi ve Bağ-Kur/SGK primlerini de dahil edin. Çalışanınız varsa onların toplam işveren maliyetini de ekleyin.",
+          "Faturalanabilir saati bulun: aylık iş günü × günlük çalışma saati, eksi yönetim işleri, mola, müşteri arası temizlik, hastalık ve takvimdeki boşluklar. Çoğu salon için yüzde 20–30 düşmek gerçekçidir.",
+          "Sabit giderler ile maaşın toplamını faturalanabilir saate bölün. Bu, başa baş saatlik tutarınızdır.",
+          "Yedek, tamir, sakin aylar ve yatırım için yüzde 10–20 civarında kâr payı ekleyin.",
+        ],
+        table: {
+          headers: ["Kalem (örnek)", "Aylık"],
+          rows: [
+            ["Kira", "30.000 TL"],
+            ["Elektrik, su, doğalgaz", "5.000 TL"],
+            ["Sigorta", "1.500 TL"],
+            ["Salon yazılımı", "1.990 TL"],
+            ["Reklam ve sosyal medya", "6.000 TL"],
+            ["Muhasebe", "4.000 TL"],
+            ["Eğitim", "3.000 TL"],
+            ["Cihaz taksidi", "12.000 TL"],
+            ["Diğer", "6.510 TL"],
+            ["**Sabit giderler toplamı**", "**70.000 TL**"],
+            ["Sahibin maaşı (vergi ve prim dahil)", "80.000 TL"],
+            ["Faturalanabilir saat (22 gün × 8 saat, eksi yaklaşık %30)", "120 saat"],
+            ["Başa baş tutar: 150.000 TL ÷ 120 saat", "1.250 TL/saat"],
+            ["%15 kâr payıyla hedef tutar", "≈ 1.440 TL/saat"],
+          ],
+        },
+        callout:
+          "En sık yapılan hata faturalanabilir saattir. 160 saatle hesap yapıp gerçekte 110 saat müşteriyle çalışıyorsanız, listenizdeki her fiyat yaklaşık üçte bir düşük demektir.",
+      },
+      {
+        heading: "Saatlik tutardan hizmet fiyatına nasıl geçilir?",
+        paragraphs: [
+          "Her hizmet için odayı ve uzmanı meşgul ettiği toplam süreyi hedef saatlik tutarla çarpın, ardından işlem başına sarf malzemesini ekleyin: maske, ampul, jel, kirpik, yapıştırıcı, iğne, tek kullanımlık örtü gibi. Cihaz taksidi zaten sabit giderlerin içindeyse onu bir kez daha eklemeyin.",
+          "Çıkan sonuç taban fiyatınızdır. Deneyim, talep veya premium ürün nedeniyle daha fazlasını isteyebilirsiniz; ama düzenli olarak bunun altına inmemelisiniz.",
+        ],
+        table: {
+          headers: ["Hizmet", "Toplam süre", "Süre × 1.440 TL", "Sarf malzemesi", "Taban fiyat"],
+          rows: [
+            ["Klasik cilt bakımı", "75 dk", "1.800 TL", "250 TL", "≈ 2.050 TL"],
+            ["Kalıcı oje", "70 dk", "1.680 TL", "150 TL", "≈ 1.830 TL"],
+            ["İpek kirpik, ilk uygulama", "130 dk", "3.120 TL", "400 TL", "≈ 3.520 TL"],
+            ["Lazer epilasyon, koltuk altı", "25 dk", "600 TL", "100 TL", "≈ 700 TL"],
+          ],
+        },
+        bullets: [
+          "Lazer gibi kısa ama cihaz yatırımı yüksek işlemler genellikle süreye dayalı tabanın çok üzerinde fiyatlanır. Taban karşılandığı sürece bu sorun değildir.",
+          "Masaj gibi uzun ve malzeme maliyeti düşük hizmetler en sık değerinin altında satılanlardır; önce onları kontrol edin.",
+        ],
+      },
+      {
+        heading: "Rakip fiyatlarına ne kadar bakmalısınız?",
+        paragraphs: [
+          "Şehirdeki tüm salonlara değil, hedef müşterinizin gerçekten karşılaştıracağı beş ila on işletmeye bakın. En önemli üç dört hizmetinizin fiyatlarını ve her salonun kendini nasıl konumlandırdığını not edin: ekonomik, orta segment ya da premium.",
+          "Sonra bunu taban fiyatınızla karşılaştırın. Piyasa tabanınızın belirgin şekilde üzerindeyse değere göre fiyatlama alanınız var demektir. Piyasa tabanınızın altındaysa fiyatla yarışmak kaybedeceğiniz bir yarıştır; bunun yerine uzmanlaşma, sonuç, düzenli kayıt, konfor veya randevu kolaylığı gibi farkınızı netleştirin.",
+        ],
+        bullets: [
+          "Ekonomik konum yüksek hacim ve çok yalın süreçler ister.",
+          "Orta segment, her seferinde tutarlı bir deneyim ve iyi bir tekrar randevu oranı ister.",
+          "Premium konum, görünür uzmanlık, özenli ön görüşme ve randevudan bakım sonrasına kadar kusursuz bir müşteri deneyimi ister.",
+        ],
+      },
+      {
+        heading: "Müşterinin anladığı bir fiyat listesi nasıl hazırlanır?",
+        paragraphs: [
+          "İyi bir fiyat listesi müşterinin hızlı karar vermesini sağlar ve daha değerli seçeneği doğal gösterir. Listeyi kısa tutun, her fiyatın yanına süreyi yazın ve sadece adımları değil sonucu da anlatın.",
+          "Fiyatların görünür olması güven açısından olduğu kadar mevzuat açısından da önemlidir: Ticaret Bakanlığı'nın Fiyat Etiketi Yönetmeliği hizmet fiyatlarının da tüketicinin görebileceği şekilde ilan edilmesini ister. Ayrıntılar için muhasebecinize veya ilgili il ticaret müdürlüğüne danışın.",
+        ],
+        bullets: [
+          "Ana hizmetler için iki üç kademe sunun; örneğin 45, 75 ve 90 dakikalık cilt bakımı. Farklar netse müşterilerin önemli bir kısmı ortadaki seçeneği tercih eder.",
+          "Ek hizmetleri ayrı fiyatlayın (göz çevresi bakımı, ek maske, parafin, nail art); böylece ana hizmette indirim yapmadan yükseltme sunabilirsiniz.",
+          "Lazer epilasyon veya cilt bakım programı gibi seanslı işlemleri, seans sayısı belli ve makul avantajlı paketler halinde sunun.",
+          "Ön görüşmenin ücretsiz mi, ücretli mi, yoksa ilk işlemden düşülecek mi olduğuna karar verin ve bunu açıkça yazın.",
+          "KDV dahil son fiyatı gösterin; ‘başlayan fiyatlarla’ ifadesini sadece fiyat gerçekten bölgeye veya uzunluğa göre değişiyorsa kullanın.",
+          "Web sitesinde, online randevu sayfasında, Instagram'da ve salonda aynı fiyatları kullanın.",
+        ],
+        callout:
+          "Online randevuda her hizmetin kendi süresi ve fiyatı vardır; müşteri onaylamadan önce ne aldığını görür. Treatflow'da randevu sayfası size ait bir bağlantıda çalışır, randevu başına komisyon alınmaz ve onay ile hatırlatmalar WhatsApp ve e-posta ile gider. 30 gün ücretsiz deneyebilirsiniz, kredi kartı gerekmez.",
+      },
+      {
+        heading: "Fiyatlar ne zaman ve nasıl artırılmalı?",
+        paragraphs: [
+          "Hesabınızı en az yılda bir, enflasyonun yüksek olduğu dönemlerde daha sık gözden geçirin. Küçük ve düzenli artışlar, yıllar sonra yapılan büyük bir sıçramaya göre müşteri tarafından çok daha kolay kabul edilir.",
+        ],
+        steps: [
+          "Güncel giderlerle saatlik tutarı yeniden hesaplayın ve her hizmeti taban fiyatıyla karşılaştırın.",
+          "Yeni fiyatları birkaç hafta önceden WhatsApp, e-posta ve salondaki bilgilendirmeyle duyurun.",
+          "Ürün, enerji veya eğitim maliyetleri gibi kısa ve dürüst bir gerekçe verin; özür diler gibi yazmayın.",
+          "Önceden alınmış randevuların eski fiyattan kalmasına izin verin; kimse kendini kandırılmış hissetmesin.",
+          "Ekibinizi bilgilendirin ki herkes sorulara aynı sakin cümlelerle yanıt versin.",
+        ],
+      },
+      {
+        heading: "Salonlara en çok para kaybettiren fiyat hataları hangileri?",
+        paragraphs: [
+          "Fiyat sorunlarının çoğu zamanla yerleşen birkaç alışkanlıktan doğar. Fiyat listenizi yılda bir kez bu listeye göre kontrol edin.",
+        ],
+        bullets: [
+          "Hiç bitmeyen ‘açılış indirimleri’ ve sürekli kampanyalar; müşteri indirimi beklemeyi öğrenir.",
+          "Kayda geçmeyen anlık kişisel indirimler; zamanla yeni normal haline gelir.",
+          "Hizmet süresine hazırlık, temizlik ve kayıt süresini katmamak.",
+          "Son dakika iptalleri ve gelmeyen müşteriler için hiçbir kural koymamak; boş saatin bedelini tamamen siz ödersiniz.",
+          "Fiyatları yıllarca sabit tutup sonra tek seferde büyük oranda artırmak.",
+          "Hangi hizmetin gerçekten kazandırdığını, hangisinin sadece takvimi doldurduğunu hiç kontrol etmemek.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Bir güzellik hizmetinin fiyatı nasıl hesaplanır?",
+        a: "Önce saatlik tutarınızı bulun: aylık sabit giderler artı maaşınız, gerçekçi faturalanabilir saate bölünür ve yüzde 10–20 kâr payı eklenir. Bu tutarı hizmetin hazırlık ve temizlik dahil toplam süresiyle çarpın, sarf malzemesini ekleyin. Sonuç taban fiyatınızdır.",
+      },
+      {
+        q: "Cilt bakımı fiyatı ne kadar olmalı?",
+        a: "Tek bir doğru fiyat yoktur; kira, maaş ve konum şehirden şehre değişir. Örnekteki 1.440 TL'lik saatlik tutar ve 75 dakikalık süreyle klasik bir cilt bakımının en az yaklaşık 2.050 TL olması gerekir. Hesabı kendi rakamlarınızla yapın, sonra müşterinizin karşılaştırdığı salonlara bakın.",
+      },
+      {
+        q: "Rakiplerle aynı fiyatı vermek mantıklı mı?",
+        a: "Rakip fiyatlarını başlangıç noktası değil, piyasa kontrolü olarak kullanın. Onların maliyetini ve kâr edip etmediğini bilmiyorsunuz. Hesapladığınız taban, piyasanın üzerindeyse fiyatı maliyetin altına çekmek yerine konumlandırmanızı güçlendirin.",
+      },
+      {
+        q: "Fiyatları Instagram'da ve web sitesinde paylaşmalı mıyım?",
+        a: "Çoğu durumda evet. ‘Fiyat için DM’ yerine açık fiyat göstermek gereksiz soruları azaltır, size uygun olmayan müşteriyi baştan eler ve online randevuyu kolaylaştırır. Fiyat bölgeye veya uzunluğa göre değişiyorsa net bir başlangıç fiyatı yazın.",
+      },
+      {
+        q: "Salon fiyatları ne sıklıkla güncellenmeli?",
+        a: "En az yılda bir kez ve büyük maliyet değişikliklerinden sonra. Enflasyonun yüksek olduğu dönemlerde birkaç ayda bir küçük güncellemeler, tek seferlik büyük artışlardan daha az tepki çeker. Değişikliği birkaç hafta önceden duyurun.",
+      },
+    ],
+    related: [
+      { pageKey: "pricing", label: "Fiyatlar ve 30 gün ücretsiz deneme" },
+      { pageKey: "client-records", label: "Müşteri takip programı" },
+      { pageKey: "features", label: "Tüm özellikler" },
+    ],
+  },
 ];
