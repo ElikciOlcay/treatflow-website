@@ -31,6 +31,53 @@ export function formatViennaTimestamp(date = new Date()) {
     );
 }
 
+type LoopsPropertyType = 'string' | 'number' | 'boolean' | 'date';
+
+let ensuredProperties: Promise<void> | null = null;
+
+/**
+ * Loops akzeptiert eigene Kontakt-Properties nur, wenn sie im Account existieren.
+ * Legt fehlende Properties einmal pro Server-Instanz an.
+ */
+export function ensureLoopsContactProperties(properties: Record<string, LoopsPropertyType>) {
+    if (ensuredProperties) return ensuredProperties;
+
+    ensuredProperties = (async () => {
+        const apiKey = process.env.LOOPS_API_KEY;
+        if (!apiKey) {
+            throw new Error('LOOPS_API_KEY nicht konfiguriert');
+        }
+        const headers = {
+            Authorization: `Bearer ${apiKey}`,
+            'Content-Type': 'application/json',
+        };
+
+        const listRes = await fetch(`${LOOPS_API_BASE}/contacts/properties?list=custom`, { headers });
+        if (!listRes.ok) {
+            throw new Error(`Loops Properties API Error: ${listRes.status} ${await listRes.text()}`);
+        }
+        const existing = (await listRes.json()) as Array<{ key: string }>;
+        const existingKeys = new Set(existing.map((p) => p.key));
+
+        for (const [name, type] of Object.entries(properties)) {
+            if (existingKeys.has(name)) continue;
+            const createRes = await fetch(`${LOOPS_API_BASE}/contacts/properties`, {
+                method: 'POST',
+                headers,
+                body: JSON.stringify({ name, type }),
+            });
+            if (!createRes.ok) {
+                throw new Error(`Loops Property "${name}" konnte nicht angelegt werden: ${createRes.status} ${await createRes.text()}`);
+            }
+        }
+    })().catch((error) => {
+        ensuredProperties = null; // beim nächsten Request erneut versuchen
+        throw error;
+    });
+
+    return ensuredProperties;
+}
+
 export async function upsertLoopsContact(payload: Record<string, unknown>) {
     const apiKey = process.env.LOOPS_API_KEY;
     if (!apiKey) {

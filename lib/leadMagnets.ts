@@ -39,7 +39,7 @@ export const leadMagnets: LeadMagnet[] = [
         buttonText: 'NiSV-Playbook herunterladen',
         successTitle: 'Dein NiSV-Playbook ist bereit!',
         formTitle: 'Playbook kostenlos herunterladen',
-        formHint: 'Trage deine E-Mail ein und erhalte die PDF sofort.',
+        formHint: 'Trage E-Mail und Telefonnummer ein und erhalte die PDF sofort.',
         bullets: [
             'Geräte-Radar für Laser, IPL, US, RF und Plasma',
             '12-Punkte-Checkliste inkl. Fachkunde und Anzeige',
@@ -108,7 +108,7 @@ export const leadMagnets: LeadMagnet[] = [
         buttonText: 'Kundenkartei-Playbook herunterladen',
         successTitle: 'Dein Kundenkartei-Playbook ist bereit!',
         formTitle: 'Playbook kostenlos herunterladen',
-        formHint: 'Trage deine E-Mail ein und erhalte die PDF sofort.',
+        formHint: 'Trage E-Mail und Telefonnummer ein und erhalte die PDF sofort.',
         bullets: [
             'Die 5 Schichten einer Kartei, die das Team nutzt',
             'Druckbare Stammkarte plus Verlaufsseite',
@@ -171,7 +171,7 @@ export const leadMagnets: LeadMagnet[] = [
         buttonText: 'No-Show-Playbook herunterladen',
         successTitle: 'Dein No-Show-Playbook ist bereit!',
         formTitle: 'Playbook kostenlos herunterladen',
-        formHint: 'Trage deine E-Mail ein und erhalte die PDF sofort.',
+        formHint: 'Trage E-Mail und Telefonnummer ein und erhalte die PDF sofort.',
         bullets: [
             'Rechenblatt: Was No-Shows im Monat kosten',
             '3-Stufen-System: erinnern, absichern, nachfassen',
@@ -234,7 +234,7 @@ export const leadMagnets: LeadMagnet[] = [
         buttonText: 'Preislisten-Playbook herunterladen',
         successTitle: 'Dein Preislisten-Playbook ist bereit!',
         formTitle: 'Playbook kostenlos herunterladen',
-        formHint: 'Trage deine E-Mail ein und erhalte die PDF sofort.',
+        formHint: 'Trage E-Mail und Telefonnummer ein und erhalte die PDF sofort.',
         bullets: [
             'Untergrenze und Minutenpreis rechnen',
             'Kernleistungen, Add-ons, Pakete, Mitgliedschaft',
