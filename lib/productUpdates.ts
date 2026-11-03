@@ -7,6 +7,7 @@ export type ProductUpdate = {
     content: string;
     category: string | null;
     image_url: string;
+    video_url?: string | null;
     link_url: string | null;
     link_label: string | null;
     published_at: string;
@@ -17,7 +18,7 @@ export type ProductUpdate = {
 };
 
 const SELECT_FIELDS =
-    'id, title, summary, content, category, image_url, link_url, link_label, published_at, title_en, summary_en, content_en, link_label_en';
+    'id, title, summary, content, category, image_url, video_url, link_url, link_label, published_at, title_en, summary_en, content_en, link_label_en';
 
 export function productUpdateSlug(update: Pick<ProductUpdate, 'id' | 'image_url'>) {
     const fromImage = update.image_url.match(/\/images\/product-updates\/([^/.]+)/)?.[1];
