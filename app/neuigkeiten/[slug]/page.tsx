@@ -105,14 +105,25 @@ export default async function NeuigkeitDetailPage({ params }: PageProps) {
                     )}
 
                     <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-gray-50 mb-10">
-                        <Image
-                            src={update.image_url}
-                            alt={update.title}
-                            fill
-                            className="object-cover"
-                            priority
-                            sizes="(min-width: 768px) 768px, 100vw"
-                        />
+                        {update.video_url ? (
+                            <video
+                                controls
+                                playsInline
+                                preload="metadata"
+                                poster={update.image_url}
+                                src={update.video_url}
+                                className="absolute inset-0 h-full w-full bg-black object-contain"
+                            />
+                        ) : (
+                            <Image
+                                src={update.image_url}
+                                alt={update.title}
+                                fill
+                                className="object-cover"
+                                priority
+                                sizes="(min-width: 768px) 768px, 100vw"
+                            />
+                        )}
                     </div>
 
                     <div
