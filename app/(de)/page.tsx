@@ -5,32 +5,22 @@ import {
   CheckCircle,
   ClipboardCheck,
   FileText,
-  Lock,
   Receipt,
-  Server,
   Shield,
-  ShieldCheck,
   Users,
   Workflow,
 } from "lucide-react";
 import Link from 'next/link';
 import type { Metadata } from "next";
 import Navigation from "@/app/components/Navigation";
-import ChallengeSelector from "@/app/components/ChallengeSelector";
-import ComparisonTable from "@/app/components/ComparisonTable";
-import BenefitStats from "@/app/components/BenefitStats";
-import SupportTrustBanner from "@/app/components/SupportTrustBanner";
 import PricingSection from "@/app/components/PricingSection";
 import FAQSection from "@/app/components/FAQSection";
-import TestimonialsSection from "@/app/components/TestimonialsSection";
 import SocialProofBar from "@/app/components/SocialProofBar";
 import Footer from "@/app/components/Footer";
 import { buildHreflangAlternates } from "@/app/i18n/seo";
-import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "@/app/components/AiAnswerCapsule";
 import ProductVideoSection from "@/app/components/ProductVideoSection";
 import HomeHero from "@/app/components/home/HomeHero";
 import StudioDayTimeline from "@/app/components/home/StudioDayTimeline";
-import ModuleMarquee from "@/app/components/home/ModuleMarquee";
 
 export const metadata: Metadata = {
   title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
@@ -272,94 +262,13 @@ export default function Home() {
         {/* 1. Hero */}
         <HomeHero />
 
-        {/* Produktfilm direkt nach dem Hero */}
-        <ProductVideoSection />
-
-        {/* 2. Trust + frühe Social Proof */}
-        <section className="py-5 bg-gray-50 border-y border-gray-100">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-              {[
-                { icon: Lock, text: 'SSL-verschlüsselt' },
-                { icon: Server, text: 'EU-Server (DSGVO)' },
-                { icon: Shield, text: 'Tägliche Datensicherung' },
-                { icon: ShieldCheck, text: 'NiSV-konform' },
-              ].map((item) => (
-                <div key={item.text} className="flex items-center gap-2 text-sm text-gray-600">
-                  <item.icon className="h-4 w-4 text-indigo-500" />
-                  <span>{item.text}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
+        {/* 2. Bewertungen */}
         <SocialProofBar />
 
-        <div className="px-4 sm:px-6 lg:px-8 bg-white pt-12 pb-10">
-          <AiAnswerCapsuleGroup>
-            <AiAnswerCapsule
-              question="Was ist Treatflow?"
-              answer="Treatflow ist eine All-in-One-App für den Studioalltag: Termine, Kundenakte, digitale Formulare und Behandlungsdokumentation hängen in einem System zusammen – ohne Provision pro Buchung. Entwickelt in Österreich, Daten auf EU-Servern. Optional gibt es eine TSE-/RKSV-Kasse."
-            />
-            <AiAnswerCapsule
-              question="Für wen ist Treatflow?"
-              answer="Für Studios, die Behandlungen durchführen, nicht nur Termine verkaufen: Kosmetik, Ästhetik, Laser, Nagel, Wimpern, Permanent Makeup, Massage und Spa. Vom Einzelunternehmen bis zum kleinen Team. Kein Marktplatz für Endkunden, sondern Software fürs Studio."
-            />
-          </AiAnswerCapsuleGroup>
-        </div>
-
-        <ModuleMarquee />
-
-        {/* 3. Problem → Lösung */}
-        <ChallengeSelector />
-
-        {/* Ein Termin von der Buchung bis zur Nachsorge */}
+        {/* 3. Ein Termin von der Buchung bis zur Nachsorge */}
         <StudioDayTimeline />
 
-        {/* 4. Klarer Einstieg */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-7xl mx-auto">
-            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-6 lg:p-8">
-              <div className="text-center mb-8">
-                <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
-                  So startest du mit Treatflow
-                </h2>
-                <p className="text-gray-600">
-                  Klarer Ablauf ohne langes Setup.
-                </p>
-              </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                {[
-                  { step: "1", title: "Kostenlos registrieren", desc: "Account in wenigen Minuten anlegen und direkt starten." },
-                  { step: "2", title: "Daten übernehmen", desc: "Wir unterstützen dich beim Import deiner bestehenden Kundendaten." },
-                  { step: "3", title: "Online Buchungen aktivieren", desc: "Buchungslink teilen und erste Termine automatisch erhalten." },
-                ].map((item) => (
-                  <div key={item.step} className="bg-white rounded-xl border border-gray-100 p-5 text-center">
-                    <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center">
-                      {item.step}
-                    </div>
-                    <h3 className="font-semibold text-gray-900 mb-2">{item.title}</h3>
-                    <p className="text-sm text-gray-600">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="text-center mt-8">
-                <a
-                  href="https://app.treatflow.io/auth/register?lang=de"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center bg-indigo-600 text-white px-7 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-colors"
-                >
-                  Jetzt kostenlos starten
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 5. Ein Feature-Block (Outcomes) */}
+        {/* 4. Funktionen */}
         <section id="features" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
@@ -403,44 +312,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 6. Ergebnisse */}
-        <BenefitStats />
+        {/* 5. Produktfilm */}
+        <ProductVideoSection />
 
-        {/* 7. Differenzierung */}
-        <ComparisonTable />
-
-        {/* 8. Betreuung */}
-        <SupportTrustBanner />
-
-        {/* 9. Preis → Proof → FAQ */}
+        {/* 6. Preise und FAQ */}
         <PricingSection />
-        <TestimonialsSection />
         <FAQSection />
 
-        {/* Treatwell-Klarstellung (kurz) */}
-        <section className="py-10 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 lg:p-8 flex flex-col md:flex-row items-center gap-6">
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  Du suchst Treatwell? Das sind nicht wir.
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Treatflow ist keine Buchungsplattform mit Provisionen, sondern Studio-Software für Kosmetikstudios – mit Kundenkartei, Dokumentation und persönlicher Betreuung.
-                </p>
-              </div>
-              <Link
-                href="/treatflow-vs-treatwell"
-                className="inline-flex items-center bg-indigo-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition-colors whitespace-nowrap flex-shrink-0"
-              >
-                Unterschiede ansehen
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* 10. Final CTA */}
+        {/* 7. Abschluss */}
         <section className="py-20 bg-indigo-600" aria-label="Call-to-Action">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">

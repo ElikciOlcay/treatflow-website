@@ -81,7 +81,7 @@ export default function HomeHero() {
             </a>
           </div>
           <div className="mb-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-600 lg:justify-start">
-            {["Ohne Kreditkarte", "In 2 Minuten startklar", "Kostenloser Datenumzug", "Persönliche Betreuung"].map((item) => (
+            {["Ohne Kreditkarte", "In 2 Minuten startklar", "Kostenloser Datenumzug"].map((item) => (
               <div key={item} className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4 text-emerald-500" />
                 <span>{item}</span>

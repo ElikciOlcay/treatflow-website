@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Bell, CalendarDays, Camera, FileSignature, MessageCircleHeart, Receipt, type LucideIcon } from "lucide-react";
+import { Bell, CalendarDays, Camera, FilePenLine, Receipt, type LucideIcon } from "lucide-react";
 
 type Step = {
   time: string;
@@ -40,7 +40,7 @@ const STEPS: Step[] = [
     text: "Das Formular landet direkt in Lenas Kundenakte. Kein Papier, das abgetippt werden muss.",
     meta: "Anamnesebogen · digital signiert",
     href: "/formulare",
-    Icon: FileSignature,
+    Icon: FilePenLine,
     tone: "bg-violet-50 text-violet-600 ring-violet-100",
   },
   {
@@ -63,19 +63,9 @@ const STEPS: Step[] = [
     Icon: Receipt,
     tone: "bg-emerald-50 text-emerald-600 ring-emerald-100",
   },
-  {
-    time: "Fr · 10:00",
-    module: "Nachsorge",
-    title: "Lena bekommt ihre Pflegetipps.",
-    text: "Die Nachsorge-Nachricht verschickt Treatflow von selbst. So bleibt dein Studio in Erinnerung.",
-    meta: "Automatisch versendet",
-    href: "/nachrichtenautomatisierung",
-    Icon: MessageCircleHeart,
-    tone: "bg-amber-50 text-amber-600 ring-amber-100",
-  },
 ];
 
-/** Ein Termin von der Buchung bis zur Nachsorge, als Zeitleiste erzählt. */
+/** Ein Termin von der Buchung bis zur Kasse, als Zeitleiste erzählt. */
 export default function StudioDayTimeline() {
   return (
     <section className="bg-gray-50 px-4 py-14 sm:px-6 lg:px-8 lg:py-20" aria-labelledby="studio-day-title">
@@ -83,14 +73,14 @@ export default function StudioDayTimeline() {
         <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-indigo-600">Ein Termin, ein System</p>
           <h2 id="studio-day-title" className="text-3xl font-bold leading-tight tracking-tight text-gray-900 lg:text-4xl">
-            Von der Buchung bis zur Nachsorge – ohne einmal die App zu wechseln.
+            Von der Buchung bis zur Kasse. In einer App.
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-gray-600">
-            So läuft ein Termin mit Treatflow. Jeder Schritt baut auf dem vorherigen auf, nichts muss doppelt eingetragen werden.
+            So läuft ein Termin mit Treatflow. Nichts muss doppelt eingetragen werden.
           </p>
         </div>
 
-        <ol className="relative space-y-4 before:absolute before:bottom-6 before:left-[1.375rem] before:top-6 before:w-px before:bg-gradient-to-b before:from-indigo-200 before:via-gray-200 before:to-amber-200 sm:before:left-[1.625rem]">
+        <ol className="relative space-y-4 before:absolute before:bottom-6 before:left-[1.375rem] before:top-6 before:w-px before:bg-gradient-to-b before:from-indigo-200 before:via-gray-200 before:to-emerald-200 sm:before:left-[1.625rem]">
           {STEPS.map((step) => (
             <li key={step.time} className="tf-reveal relative flex gap-4 sm:gap-5">
               <span
