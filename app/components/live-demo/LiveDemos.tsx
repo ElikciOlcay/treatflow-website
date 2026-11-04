@@ -3,7 +3,8 @@
 import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowRight, CalendarDays, CheckCircle, Mic, type LucideIcon } from "lucide-react";
-import BookingPanel from "./BookingPanel";
+import BookingPanel, { type DemoCustomer } from "./BookingPanel";
+import BookingMessages from "./BookingMessages";
 import DictationPanel from "./DictationPanel";
 
 /** Kartenrahmen eines Beispiel-Studios, in dem jede Live-Demo läuft. */
@@ -39,11 +40,13 @@ type DemoSectionProps = {
   points: string[];
   link: { href: string; label: string };
   demo: ReactNode;
+  /** Optionaler Inhalt unter dem zweispaltigen Bereich */
+  below?: ReactNode;
   reverse?: boolean;
   tone?: "white" | "gray";
 };
 
-function DemoSection({ id, eyebrow, Icon, title, text, points, link, demo, reverse = false, tone = "white" }: DemoSectionProps) {
+function DemoSection({ id, eyebrow, Icon, title, text, points, link, demo, below, reverse = false, tone = "white" }: DemoSectionProps) {
   return (
     <section id={id} className={`scroll-mt-24 px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28 ${tone === "gray" ? "bg-gray-50" : "bg-white"}`}>
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
@@ -69,13 +72,14 @@ function DemoSection({ id, eyebrow, Icon, title, text, points, link, demo, rever
         </div>
         <div className={reverse ? "lg:order-1" : ""}>{demo}</div>
       </div>
+      {below}
     </section>
   );
 }
 
 /** Die beiden interaktiven Demos der Seite; der gebuchte Termin wird ans Diktat weitergegeben. */
 export default function LiveDemos() {
-  const [booking, setBooking] = useState<{ time: string; treatment: string } | null>(null);
+  const [booking, setBooking] = useState<{ time: string; treatment: string; customer: DemoCustomer; dayLabel: string } | null>(null);
 
   return (
     <>
@@ -91,11 +95,12 @@ export default function LiveDemos() {
           "Keine Provision pro Buchung",
         ]}
         link={{ href: "/online-buchungen", label: "Mehr zur Online-Buchung" }}
+        below={booking ? <BookingMessages key={`${booking.treatment}-${booking.dayLabel}-${booking.time}-${booking.customer.name}`} booking={booking} /> : null}
         demo={
           <DemoFrame subtitle="Online-Buchung · Beispiel">
             <BookingPanel
               onInteract={() => {}}
-              onBooked={(time, treatment) => setBooking({ time, treatment })}
+              onBooked={(time, treatment, customer, dayLabel) => setBooking({ time, treatment, customer, dayLabel })}
               onContinue={() => document.getElementById("behandlung-dokumentieren")?.scrollIntoView({ behavior: "smooth" })}
             />
           </DemoFrame>

@@ -116,3 +116,71 @@ body {
     animation: none !important;
   }
 }
+
+/* Live-Demo: Nachrichten nach der Buchung */
+.tf-msg-reveal {
+  animation: tf-msg-reveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.tf-msg-pop {
+  animation: tf-msg-pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  transform-origin: top left;
+}
+
+.tf-msg-pulse {
+  animation: tf-msg-pulse 1.2s ease-in-out infinite;
+}
+
+.tf-typing-dot {
+  animation: tf-typing 1s ease-in-out infinite;
+}
+
+@keyframes tf-msg-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes tf-msg-pop {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes tf-msg-pulse {
+  50% {
+    opacity: 0.45;
+  }
+}
+
+@keyframes tf-typing {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  30% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tf-msg-reveal,
+  .tf-msg-pop,
+  .tf-msg-pulse,
+  .tf-typing-dot {
+    animation: none !important;
+  }
+}
