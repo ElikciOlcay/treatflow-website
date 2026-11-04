@@ -10,12 +10,10 @@ import {
   Server,
   Shield,
   ShieldCheck,
-  Star,
   Users,
   Workflow,
 } from "lucide-react";
 import Link from 'next/link';
-import Image from 'next/image';
 import type { Metadata } from "next";
 import Navigation from "@/app/components/Navigation";
 import ChallengeSelector from "@/app/components/ChallengeSelector";
@@ -30,6 +28,9 @@ import Footer from "@/app/components/Footer";
 import { buildHreflangAlternates } from "@/app/i18n/seo";
 import AiAnswerCapsule, { AiAnswerCapsuleGroup } from "@/app/components/AiAnswerCapsule";
 import ProductVideoSection from "@/app/components/ProductVideoSection";
+import HomeHero from "@/app/components/home/HomeHero";
+import StudioDayTimeline from "@/app/components/home/StudioDayTimeline";
+import ModuleMarquee from "@/app/components/home/ModuleMarquee";
 
 export const metadata: Metadata = {
   title: "Treatflow: All-in-One Software für dein Kosmetikstudio",
@@ -269,86 +270,7 @@ export default function Home() {
         <Navigation />
 
         {/* 1. Hero */}
-        <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
-            <div className="order-1 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                Für Kosmetikstudios, die wachsen wollen
-              </div>
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-4">
-                Schluss mit Terminchaos,{" "}
-                <span className="text-indigo-600">Zettelwirtschaft</span>
-                {" "}und No-Shows
-              </h1>
-              <p className="text-lg lg:text-xl text-gray-600 mb-6 leading-relaxed">
-                Termine, Kunden, Formulare, Behandlungsdokumentation und Kasse in einer übersichtlichen App.
-                So findet sich dein Team sofort zurecht.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                <a
-                  href="https://app.treatflow.io/auth/register?lang=de"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-                >
-                  Jetzt 14 Tage kostenlos testen
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-                <a
-                  href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-all duration-300 flex items-center justify-center"
-                >
-                  Demo buchen
-                </a>
-              </div>
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-600 mb-6">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-emerald-500" />
-                  <span>Ohne Kreditkarte</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-emerald-500" />
-                  <span>In 2 Minuten startklar</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-emerald-500" />
-                  <span>Kostenloser Datenumzug</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="h-4 w-4 text-emerald-500" />
-                  <span>Persönliche Betreuung</span>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-3 text-sm">
-                <div className="flex items-center gap-2">
-                  <div className="flex text-amber-500">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-current" />
-                    ))}
-                  </div>
-                  <span className="text-gray-600">4,6/5 auf Google</span>
-                </div>
-                <span className="hidden sm:inline text-gray-400">|</span>
-                <span className="text-gray-600">
-                  Bereits von <span className="font-semibold text-gray-900">500+ Studios</span> getestet
-                </span>
-              </div>
-            </div>
-            <div className="order-2 relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[4/3] lg:min-h-[400px] lg:aspect-auto">
-              <Image
-                src="/images/lifestyle/hero-startseite-en.png"
-                alt="Treatflow auf Laptop und Tablet: Kalender, Kasse und Kundenakte in einem modernen Studio"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover object-center"
-                quality={85}
-                priority
-              />
-            </div>
-          </div>
-        </section>
+        <HomeHero />
 
         {/* Produktfilm direkt nach dem Hero */}
         <ProductVideoSection />
@@ -387,8 +309,13 @@ export default function Home() {
           </AiAnswerCapsuleGroup>
         </div>
 
+        <ModuleMarquee />
+
         {/* 3. Problem → Lösung */}
         <ChallengeSelector />
+
+        {/* Ein Termin von der Buchung bis zur Nachsorge */}
+        <StudioDayTimeline />
 
         {/* 4. Klarer Einstieg */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
