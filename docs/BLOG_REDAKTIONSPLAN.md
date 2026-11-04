@@ -4,7 +4,7 @@ Jede Woche erscheint **ein Thema in allen 8 Sprachen** (de, en, tr, nl, it, pl, 
 Die wöchentliche Cloud-Aufgabe nimmt die **erste Zeile mit Status `offen`**, schreibt
 die Artikel, setzt den Status auf `live (JJJJ-MM-TT)` und merged.
 
-- **DE vorhanden** = es gibt schon einen deutschen Artikel unter `app/blog/<deSlug>/`.
+- **DE vorhanden** = es gibt schon einen deutschen Artikel unter `app/(de)/blog/<deSlug>/`.
   Dann nur `deSlug` im Thema setzen und die 7 anderen Sprachen schreiben.
 - **DE neu** = auch die deutsche Fassung in `lib/blog-intl/posts/de.ts` schreiben.
 - Bilder: nur vorhandene Dateien aus `public/images/blog/`, `public/images/lifestyle/`

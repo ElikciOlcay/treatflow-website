@@ -23,8 +23,8 @@ const topicIds = Object.keys(blogTopics) as BlogTopicId[];
 for (const topic of topicIds) {
   const meta = blogTopics[topic];
   if (!existsSync(join(root, "public", meta.image))) errors.push(`[${topic}] Bild fehlt: ${meta.image}`);
-  if (meta.deSlug && !existsSync(join(root, "app/blog", meta.deSlug, "page.tsx"))) {
-    errors.push(`[${topic}] deSlug zeigt auf keine Seite: app/blog/${meta.deSlug}/page.tsx`);
+  if (meta.deSlug && !existsSync(join(root, "app/(de)/blog", meta.deSlug, "page.tsx"))) {
+    errors.push(`[${topic}] deSlug zeigt auf keine Seite: app/(de)/blog/${meta.deSlug}/page.tsx`);
   }
 }
 
@@ -54,8 +54,8 @@ function checkPost(post: BlogArticle, lang: BlogLang, slugs: Set<string>, llms: 
   if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(post.slug)) errors.push(`${id} Slug nicht ASCII/kebab-case`);
   if (slugs.has(post.slug)) errors.push(`${id} Slug doppelt`);
   slugs.add(post.slug);
-  if (lang === "de" && existsSync(join(root, "app/blog", post.slug))) {
-    errors.push(`${id} kollidiert mit bestehendem Ordner app/blog/${post.slug}`);
+  if (lang === "de" && existsSync(join(root, "app/(de)/blog", post.slug))) {
+    errors.push(`${id} kollidiert mit bestehendem Ordner app/(de)/blog/${post.slug}`);
   }
   if (post.metaTitle.length > 60) errors.push(`${id} metaTitle ${post.metaTitle.length} > 60 Zeichen`);
   if (post.description.length < 110 || post.description.length > 165) {

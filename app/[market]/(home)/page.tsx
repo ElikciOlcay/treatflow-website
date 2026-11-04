@@ -1,0 +1,77 @@
+// In einer Gruppe, damit die Titel-Vorlage des [market]-Layouts („%s | Treatflow“) greift.
+import { notFound } from "next/navigation";
+import { buildPageMetadata } from "@/app/i18n/seo";
+import HomePageEn from "@/app/components/HomePageEn";
+import HomePageIntl from "@/app/components/HomePageIntl";
+import {
+  countryHomeMeta,
+  getCountryHomePage,
+  type CountryHomeMarket,
+} from "@/app/i18n/markets/country-homes";
+import { isBundleLang, isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
+import { getLocaleContent } from "@/app/i18n/locales";
+import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ market: string }>;
+}) {
+  const { market: raw } = await params;
+  if (!isPrefixedMarket(raw)) return {};
+  const market = raw as PrefixedMarket;
+  if (isBundleLang(market)) {
+    const { homeMeta } = getLocaleContent(market);
+    return buildPageMetadata({
+      pageKey: "home",
+      locale: market,
+      title: homeMeta.title,
+      description: homeMeta.description,
+      keywords: homeMeta.keywords,
+    });
+  }
+  const meta = countryHomeMeta[market as CountryHomeMarket];
+  return buildPageMetadata({
+    pageKey: "home",
+    locale: market,
+    title: meta.title,
+    description: meta.description,
+    keywords:
+      market === "tr"
+        ? [
+            "güzellik salonu yazılımı",
+            "salon yönetim yazılımı",
+            "online randevu sistemi",
+            "dijital onam formu",
+            "müşteri takip programı",
+            "estetik klinik yazılımı",
+            "lazer epilasyon randevu",
+          ]
+        : undefined,
+  });
+}
+
+export default async function MarketHome({
+  params,
+}: {
+  params: Promise<{ market: string }>;
+}) {
+  const { market: raw } = await params;
+  if (!isPrefixedMarket(raw)) notFound();
+  const market = raw as PrefixedMarket;
+  if (market === "en") {
+    return <HomePageEn />;
+  }
+  if (isBundleLang(market)) {
+    return (
+      <HomePageIntl
+        content={{
+          ...getLocaleContent(market).home,
+          earlyAccessHref: APP_REGISTER_BY_MARKET[market],
+        }}
+      />
+    );
+  }
+  return <HomePageIntl content={getCountryHomePage(market as CountryHomeMarket)} />;
+  // TR wird als CountryHomeMarket via HomePageIntl gerendert
+}

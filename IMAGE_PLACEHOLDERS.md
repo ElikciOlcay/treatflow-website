@@ -32,37 +32,37 @@ Diese Datei dokumentiert alle Stellen, wo echte Screenshots/Bilder eingefügt we
 **Zu ersetzen:** Echte Screenshots der jeweiligen Features
 
 ### 4.1 Terminkalender Hero
-**Datei:** `app/terminkalender/page.tsx` (Zeile ~67-77)
+**Datei:** `app/(de)/terminkalender/page.tsx` (Zeile ~67-77)
 **Browser-URL:** app.treatflow.io/kalender
 **Icon:** Calendar (Indigo)
 **Ersetzen mit:** Screenshot des echten Terminkalenders
 
 ### 4.2 Kundenverwaltung Hero  
-**Datei:** `app/kundenverwaltung/page.tsx` (Zeile ~67-77)
+**Datei:** `app/(de)/kundenverwaltung/page.tsx` (Zeile ~67-77)
 **Browser-URL:** app.treatflow.io/kunden
 **Icon:** Users (Blue)
 **Ersetzen mit:** Screenshot der echten Kundenverwaltung
 
 ### 4.3 Formulare Hero
-**Datei:** `app/formulare/page.tsx` (Zeile ~67-77)
+**Datei:** `app/(de)/formulare/page.tsx` (Zeile ~67-77)
 **Browser-URL:** app.treatflow.io/formulare
 **Icon:** FileText (Green)
 **Ersetzen mit:** Screenshot des echten Formular-Marketplace
 
 ### 4.4 Behandlungsdokumentation Hero
-**Datei:** `app/behandlungsdokumentation/page.tsx` (Zeile ~67-77)
+**Datei:** `app/(de)/behandlungsdokumentation/page.tsx` (Zeile ~67-77)
 **Browser-URL:** app.treatflow.io/dokumentation
 **Icon:** FileText (Purple)
 **Ersetzen mit:** Screenshot der echten Behandlungsdokumentation
 
 ### 4.5 Online-Buchungen Hero
-**Datei:** `app/online-buchungen/page.tsx` (Zeile ~67-77)
+**Datei:** `app/(de)/online-buchungen/page.tsx` (Zeile ~67-77)
 **Browser-URL:** mein-studio.treatflow.io
 **Icon:** Link2 (Orange)
 **Ersetzen mit:** Screenshot der echten Online-Buchungsseite (Kundensicht)
 
 ### 4.6 Shop Hero
-**Datei:** `app/shop/page.tsx` (Zeile ~67-77)
+**Datei:** `app/(de)/shop/page.tsx` (Zeile ~67-77)
 **Browser-URL:** app.treatflow.io/shop
 **Icon:** ShoppingBag (Emerald)
 **Ersetzen mit:** Screenshot des echten integrierten Shops

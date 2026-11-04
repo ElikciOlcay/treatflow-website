@@ -1,4 +1,4 @@
-import { GoogleStars } from '@/app/landing/kosmetikstudio-software/data';
+import { GoogleStars } from '@/app/(de)/landing/kosmetikstudio-software/data';
 
 type LandingFeaturedTestimonialProps = {
     text: string;

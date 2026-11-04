@@ -13,7 +13,8 @@ import {
 } from "@/app/i18n/config";
 import NavigationEn from "@/app/components/NavigationEn";
 import FooterEn from "@/app/components/FooterEn";
-import HtmlLang from "@/app/components/HtmlLang";
+import RootDocument from "@/app/components/RootDocument";
+import { rootMetadata, rootViewport } from "@/app/root-metadata";
 import { countryHomeMeta } from "@/app/i18n/markets/country-homes";
 import { getLocaleContent } from "@/app/i18n/locales";
 
@@ -177,6 +178,8 @@ const languageNames: Record<PrefixedMarket, string> = {
   fr: "French",
 };
 
+export const viewport = rootViewport;
+
 export function generateStaticParams() {
   return prefixedMarkets.map((market) => ({ market }));
 }
@@ -187,7 +190,7 @@ export async function generateMetadata({
   params: Promise<{ market: string }>;
 }): Promise<Metadata> {
   const { market: raw } = await params;
-  if (!isPrefixedMarket(raw)) return {};
+  if (!isPrefixedMarket(raw)) return rootMetadata;
   const market = raw as PrefixedMarket;
   const prefix = marketPathPrefix[market];
   const homeMeta = isBundleLang(market)
@@ -199,7 +202,9 @@ export async function generateMetadata({
   const defaultDescription =
     homeMeta?.description ??
     "Treatflow is software for beauty salons and aesthetic clinics: online booking, client records, digital forms, treatment documentation and automated follow-ups. Hosted in the EU. 14-day free trial.";
+  // Bisher erbte dieses Layout die Standardwerte vom gemeinsamen Root-Layout.
   return {
+    ...rootMetadata,
     metadataBase: new URL(BASE_URL),
     title: {
       default: defaultTitle,
@@ -234,15 +239,16 @@ export default async function MarketLayout({
   const dict = await getDictionaryForMarket(market);
 
   return (
-    <div className="min-h-screen bg-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema(market)) }}
-      />
-      <HtmlLang lang={htmlLangTags[market]} />
-      <NavigationEn dict={dict} locale={market} />
-      {children}
-      <FooterEn dict={dict} locale={market} />
-    </div>
+    <RootDocument lang={htmlLangTags[market]}>
+      <div className="min-h-screen bg-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema(market)) }}
+        />
+        <NavigationEn dict={dict} locale={market} />
+        {children}
+        <FooterEn dict={dict} locale={market} />
+      </div>
+    </RootDocument>
   );
 }

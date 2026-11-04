@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import NavigationEn from '../../components/NavigationEn';
 import FooterEn from '../../components/FooterEn';
-import HtmlLang from '../../components/HtmlLang';
 import DemoFormsGallery from '../../components/demo-forms/DemoFormsGallery';
 import { demoFormHreflangTr, getDemoCopy } from '@/lib/demoForms';
 import { getDictionaryForMarket } from '../../i18n/dictionaries';
@@ -25,7 +24,6 @@ export default async function TryFormsPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <HtmlLang lang="tr" />
       <NavigationEn dict={dict} locale="tr" />
       <DemoFormsGallery locale="tr" />
       <FooterEn dict={dict} locale="tr" />

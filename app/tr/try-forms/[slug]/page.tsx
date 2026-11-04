@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import DemoFormPlayer from '../../../components/demo-forms/DemoFormPlayer';
-import HtmlLang from '../../../components/HtmlLang';
 import {
   demoFormHreflangTr,
   getDemoCopy,
@@ -43,7 +42,6 @@ export default async function TryFormDemoPage({ params }: PageProps) {
   if (!form) notFound();
   return (
     <>
-      <HtmlLang lang="tr" />
       <DemoFormPlayer form={form} locale="tr" />
     </>
   );

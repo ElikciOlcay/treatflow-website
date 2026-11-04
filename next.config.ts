@@ -219,6 +219,8 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizeCss: true,
     scrollRestoration: true,
+    // Eigene 404-Seite, weil es mehrere Root-Layouts gibt
+    globalNotFound: true,
   },
 
   ...(process.env.ANALYZE === 'true'
