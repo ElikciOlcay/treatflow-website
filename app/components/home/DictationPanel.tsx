@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { ArrowRight, Loader2, Mic, Sparkles, Square } from "lucide-react";
 
 // Öffentlicher Demo-Endpunkt der App (gleiche KI wie in der Behandlungsdoku, gedrosselt)
@@ -32,11 +33,16 @@ function speechRecognition(): { new (): SpeechRecognitionLike } | null {
 
 type DictationPanelProps = {
   booking: { time: string; treatment: string } | null;
-  onContinue: () => void;
 };
 
+const STEPS = [
+  "Mikrofon antippen und erzählen, was du gemacht hast",
+  "Auf „Mit KI aufbereiten“ tippen",
+  "Fertige Doku ansehen, wie sie in der Kundenakte steht",
+];
+
 /** KI-Diktat wie in der App: sprechen oder tippen, die KI macht daraus eine saubere Behandlungsdoku. */
-export default function DictationPanel({ booking, onContinue }: DictationPanelProps) {
+export default function DictationPanel({ booking }: DictationPanelProps) {
   const [text, setText] = useState("");
   const [recording, setRecording] = useState(false);
   const [supported, setSupported] = useState(true);
@@ -151,14 +157,13 @@ export default function DictationPanel({ booking, onContinue }: DictationPanelPr
         </ul>
         <p className="mt-3 text-xs text-gray-500">In Treatflow landet die Doku direkt in der Kundenakte, zusammen mit Fotos und Parametern.</p>
         <div className="mt-4 flex flex-col gap-2 sm:flex-row">
-          <button
-            type="button"
-            onClick={onContinue}
+          <Link
+            href="/formulare-testen"
             className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-gray-900 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-800"
           >
-            Weiter: Formular testen
+            Formulare testen
             <ArrowRight className="h-4 w-4" />
-          </button>
+          </Link>
           <button
             type="button"
             onClick={() => {
@@ -176,19 +181,26 @@ export default function DictationPanel({ booking, onContinue }: DictationPanelPr
 
   return (
     <div>
-      <p className="mb-3 text-sm text-gray-600">
-        {booking ? (
-          <>Dokumentiere den Termin <span className="font-medium text-gray-900">{booking.treatment}</span> einfach per Sprache.</>
-        ) : (
-          <>Sprich wie nach einer Behandlung. Die KI macht daraus eine saubere Doku.</>
-        )}
+      <p className="text-sm font-semibold text-gray-900">
+        Behandlung dokumentieren
+        {booking && <span className="font-normal text-gray-500"> · {booking.treatment}</span>}
       </p>
+      <ol className="mb-3 mt-2 space-y-1 text-xs text-gray-600">
+        {STEPS.map((step, index) => (
+          <li key={step} className="flex items-start gap-2">
+            <span className="flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 text-[10px] font-bold text-indigo-700">
+              {index + 1}
+            </span>
+            {step}
+          </li>
+        ))}
+      </ol>
 
       <div className="relative">
         <textarea
           value={text}
           onChange={(event) => setText(event.target.value.slice(0, MAX_LENGTH))}
-          rows={4}
+          rows={3}
           maxLength={MAX_LENGTH}
           placeholder="z. B. Laser Achseln, dritte Sitzung, 12 Joule, Haut leicht gerötet …"
           aria-label="Diktierter Text"
@@ -214,7 +226,7 @@ export default function DictationPanel({ booking, onContinue }: DictationPanelPr
           Beispiel einfügen
         </button>
         <span>
-          {recording ? "Hört zu …" : supported ? "Mikrofon antippen oder tippen" : "Diktat hier nicht verfügbar, bitte tippen"}
+          {recording ? "Hört zu … zum Beenden nochmal tippen" : supported ? "Oder einfach eintippen" : "Diktat hier nicht verfügbar, bitte tippen"}
         </span>
       </div>
 
