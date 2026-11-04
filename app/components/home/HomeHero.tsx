@@ -38,12 +38,14 @@ export default function HomeHero() {
   }, [touched]);
 
   return (
-    <section className="relative overflow-hidden bg-white px-4 pb-60 pt-28 sm:px-6 sm:pb-60 lg:px-8 lg:pb-72">
+    <section className="relative overflow-hidden bg-white px-4 pb-[21rem] pt-28 sm:px-6 sm:pb-[23rem] lg:px-8 lg:pb-[25rem] lg:pt-32">
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         <div className="absolute inset-0 bg-[radial-gradient(60rem_36rem_at_10%_-10%,rgba(99,102,241,0.10),transparent_60%),radial-gradient(48rem_30rem_at_100%_10%,rgba(56,189,248,0.08),transparent_60%)]" />
         {/* Kalender als Boden unter dem Inhalt, nicht dahinter */}
-        <div className="absolute inset-x-0 bottom-0 h-[360px] sm:h-[420px] lg:h-[460px]">
+        <div className="absolute inset-x-0 bottom-12 h-[360px] sm:h-[420px] lg:bottom-16 lg:h-[420px]">
           <StudioCalendarBackdrop step={calendarStep} locale="de-DE" newBookingLabel="Neue Buchung" bookedTime={bookedTime} />
+          {/* Kalender läuft nach unten weich aus statt hart an der nächsten Fläche zu enden */}
+          <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-white to-transparent" />
         </div>
       </div>
 
