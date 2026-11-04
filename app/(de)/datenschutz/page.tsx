@@ -217,16 +217,73 @@ export default function Datenschutz() {
                                 </div>
                             </div>
 
-                            {/* 10. Änderungen */}
+                            {/* 10. Google-Kalender-Integration */}
                             <div>
-                                <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Änderungen der Datenschutzerklärung</h2>
+                                <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Google-Kalender-Integration</h2>
+                                <div className="text-gray-700 leading-relaxed space-y-4">
+                                    <p>
+                                        Studios können in der Treatflow-App (app.treatflow.io) unter <strong>Apps → Google Kalender</strong> freiwillig ihr
+                                        Google-Konto verbinden. Die Verbindung entsteht nur, wenn ein Nutzer den Zugriff über den Zustimmungsbildschirm von
+                                        Google aktiv erteilt.
+                                    </p>
+                                    <div>
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-2">Welche Daten wir abrufen und wofür</h3>
+                                        <ul className="list-disc list-inside mt-2 space-y-1">
+                                            <li><strong>Basisprofil (openid, E-Mail, Profil):</strong> Zuordnung des Google-Kontos zum Treatflow-Konto und Anzeige, welches Google-Konto verbunden ist</li>
+                                            <li><strong>Kalenderliste (calendar.readonly):</strong> Anzeige Ihrer Kalender, damit Sie den Kalender für die Synchronisierung auswählen können</li>
+                                            <li><strong>Kalenderereignisse (calendar.events):</strong> Treatflow-Termine und Zeitblöcke als Ereignisse im gewählten Kalender anlegen, ändern und löschen sowie Ereignisse aus diesem Kalender lesen, um sie in Treatflow als blockierte Zeiten bzw. Termine anzuzeigen (Zwei-Wege-Synchronisierung)</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-2">Welche Daten wir speichern</h3>
+                                        <p>
+                                            Zugriffs- und Aktualisierungstoken (AES-verschlüsselt), Google-Konto-ID und E-Mail-Adresse, ID und Name des
+                                            gewählten Kalenders, IDs, Zeiten und Titel der synchronisierten Ereignisse sowie Synchronisierungsprotokolle.
+                                            Alle Daten werden in unserer Datenbank in der EU (Supabase, Frankfurt) gespeichert.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-2">Verwendung und Weitergabe</h3>
+                                        <p>
+                                            Google-Nutzerdaten werden ausschließlich für die Kalendersynchronisierung innerhalb von Treatflow verwendet.
+                                            Wir geben sie nicht an Dritte weiter, verkaufen sie nicht, nutzen sie nicht für Werbung und nicht zum Training
+                                            von KI-Modellen. Eine Einsicht durch Menschen erfolgt nur mit Ihrer ausdrücklichen Zustimmung (z. B. bei einer
+                                            Supportanfrage), wenn es für die Sicherheit oder die Aufklärung von Missbrauch erforderlich ist oder wenn eine
+                                            gesetzliche Pflicht besteht.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-2">Widerruf und Löschung</h3>
+                                        <p>
+                                            Sie können die Verbindung jederzeit in Treatflow unter Apps → Google Kalender mit „Trennen“ aufheben; dabei
+                                            werden die gespeicherten Tokens gelöscht. Alternativ können Sie den Zugriff unter{' '}
+                                            <a href="https://myaccount.google.com/permissions" className="text-indigo-600 hover:text-indigo-800">https://myaccount.google.com/permissions</a>{' '}
+                                            widerrufen.
+                                        </p>
+                                    </div>
+                                    <p>
+                                        Die Nutzung und Übertragung von Informationen, die Treatflow über Google-APIs erhält, an andere Apps erfolgt gemäß der{' '}
+                                        <a href="https://developers.google.com/terms/api-services-user-data-policy" className="text-indigo-600 hover:text-indigo-800">Google API Services User Data Policy</a>,
+                                        einschließlich der Anforderungen zur eingeschränkten Nutzung (Limited Use).
+                                    </p>
+                                    <p lang="en" className="italic">
+                                        Treatflow&apos;s use and transfer to any other app of information received from Google APIs will adhere to the{' '}
+                                        <a href="https://developers.google.com/terms/api-services-user-data-policy" className="text-indigo-600 hover:text-indigo-800">Google API Services User Data Policy</a>,
+                                        including the Limited Use requirements.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* 11. Änderungen */}
+                            <div>
+                                <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Änderungen der Datenschutzerklärung</h2>
                                 <div className="text-gray-700 leading-relaxed">
                                     <p>
                                         Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren, um rechtlichen Anforderungen zu entsprechen
                                         oder Änderungen unserer Services abzubilden. Die aktuelle Version finden Sie stets auf dieser Seite.
                                     </p>
                                     <p className="mt-4 text-sm text-gray-600">
-                                        <strong>Stand:</strong> September 2025
+                                        <strong>Stand:</strong> November 2026
                                     </p>
                                 </div>
                             </div>

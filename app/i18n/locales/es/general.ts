@@ -788,7 +788,22 @@ const privacy: LocaleSiteContent["privacy"] = {
       html: `<p>Según la normativa aplicable, puedes solicitar el acceso, la rectificación, la supresión, la limitación del tratamiento y la portabilidad de tus datos, así como oponerte al tratamiento. Puedes presentar una reclamación ante una autoridad de control: en España, la Agencia Española de Protección de Datos (AEPD); en Austria, la Datenschutzbehörde. Escríbenos a hello@treatflow.io.</p>`,
     },
     {
-      heading: "6. Versión completa en alemán",
+      heading: "6. Integración con Google Calendar",
+      html: `<p>Los centros pueden conectar opcionalmente su cuenta de Google en la app de Treatflow (app.treatflow.io) en <strong>Apps → Google Calendar</strong>. La conexión es voluntaria y solo se establece cuando un usuario concede activamente el acceso en la pantalla de consentimiento de Google.</p>
+<p><strong>A qué datos accedemos y para qué:</strong></p>
+<ul>
+<li><strong>Perfil básico (openid, correo electrónico, perfil):</strong> para vincular la cuenta de Google con la cuenta de Treatflow y mostrar qué cuenta de Google está conectada.</li>
+<li><strong>Lista de calendarios (calendar.readonly):</strong> para mostrar tus calendarios y que puedas elegir el que quieres sincronizar.</li>
+<li><strong>Eventos del calendario (calendar.events):</strong> para crear, modificar y eliminar citas y bloqueos de tiempo de Treatflow como eventos en el calendario elegido, y para leer los eventos de ese calendario y mostrarlos en Treatflow como horas bloqueadas o citas (sincronización bidireccional).</li>
+</ul>
+<p><strong>Datos que almacenamos:</strong> tokens de acceso y de actualización (cifrados con AES), el ID y la dirección de correo de la cuenta de Google, el ID y el nombre del calendario elegido, los ID, horas y títulos de los eventos sincronizados y los registros de sincronización. Todos los datos se almacenan en nuestra base de datos en la UE (Supabase, Fráncfort).</p>
+<p><strong>Uso y cesión:</strong> los datos de usuario de Google se utilizan exclusivamente para la sincronización del calendario dentro de Treatflow. No los cedemos a terceros, no los vendemos, no los usamos para publicidad ni para entrenar modelos de inteligencia artificial. Ninguna persona accede a estos datos salvo con tu consentimiento expreso (p. ej., en una consulta de soporte), cuando sea necesario por motivos de seguridad o para investigar abusos, o cuando lo exija la ley.</p>
+<p><strong>Revocación del acceso y eliminación:</strong> puedes desconectar la cuenta en cualquier momento en Treatflow en Apps → Google Calendar con «Desconectar»; los tokens guardados se eliminan. También puedes revocar el acceso en <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</p>
+<p>El uso que Treatflow haga de la información recibida de las API de Google y su transferencia a cualquier otra aplicación se ajustarán a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario de los Servicios de API de Google</a> (Google API Services User Data Policy), incluidos los requisitos de Uso Limitado (Limited Use). Texto original en inglés:</p>
+<p lang="en"><em>Treatflow's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</em></p>`,
+    },
+    {
+      heading: "7. Versión completa en alemán",
       html: `<p>Encontrarás la información sobre cookies, encargados del tratamiento, plazos de conservación y el texto legal completo en la <a href="/datenschutz">política de privacidad en alemán</a>.</p>`,
     },
   ],

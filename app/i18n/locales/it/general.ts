@@ -812,7 +812,22 @@ const privacy: LocaleSiteContent["privacy"] = {
       html: `<p>In base alla normativa applicabile puoi chiedere l'accesso, la rettifica, la cancellazione, la limitazione e la portabilità dei dati, e opporti al trattamento. Puoi presentare reclamo a un'autorità di controllo, ad esempio il Garante per la protezione dei dati personali in Italia; l'autorità austriaca competente è la Datenschutzbehörde. Contattaci a hello@treatflow.io.</p>`,
     },
     {
-      heading: "6. Versione completa in tedesco",
+      heading: "6. Integrazione con Google Calendar",
+      html: `<p>I centri possono collegare facoltativamente il proprio account Google nell'app Treatflow (app.treatflow.io) in <strong>App → Google Calendar</strong>. Il collegamento è volontario e avviene solo quando un utente concede attivamente l'accesso tramite la schermata di consenso di Google.</p>
+<p><strong>Dati a cui accediamo e perché:</strong></p>
+<ul>
+<li><strong>Profilo di base (openid, email, profilo):</strong> per associare l'account Google all'account Treatflow e mostrare quale account Google è collegato.</li>
+<li><strong>Elenco dei calendari (calendar.readonly):</strong> per mostrarti i tuoi calendari e permetterti di scegliere quello da sincronizzare.</li>
+<li><strong>Eventi del calendario (calendar.events):</strong> per creare, modificare ed eliminare appuntamenti e blocchi orari di Treatflow come eventi nel calendario scelto e per leggere gli eventi di quel calendario, così da mostrarli in Treatflow come orari bloccati o appuntamenti (sincronizzazione bidirezionale).</li>
+</ul>
+<p><strong>Dati che conserviamo:</strong> token di accesso e di aggiornamento (cifrati con AES), ID e indirizzo email dell'account Google, ID e nome del calendario scelto, ID, orari e titoli degli eventi sincronizzati e registri di sincronizzazione. Tutti i dati sono conservati nel nostro database nell'UE (Supabase, Francoforte).</p>
+<p><strong>Utilizzo e condivisione:</strong> i dati utente di Google vengono utilizzati esclusivamente per fornire la sincronizzazione del calendario all'interno di Treatflow. Non li condividiamo con terzi, non li vendiamo, non li usiamo per pubblicità né per addestrare modelli di intelligenza artificiale. Nessuna persona visualizza questi dati, salvo tuo consenso esplicito (ad es. per una richiesta di assistenza), per motivi di sicurezza o per indagare su abusi, oppure se richiesto dalla legge.</p>
+<p><strong>Revoca dell'accesso e cancellazione:</strong> puoi scollegare l'account in qualsiasi momento in Treatflow in App → Google Calendar con “Disconnetti”; i token salvati vengono eliminati. Puoi anche revocare l'accesso tramite <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</p>
+<p>L'utilizzo e il trasferimento ad altre app, da parte di Treatflow, delle informazioni ricevute dalle API di Google rispetteranno le <a href="https://developers.google.com/terms/api-services-user-data-policy">Norme sui dati utente dei servizi API di Google</a> (Google API Services User Data Policy), inclusi i requisiti di Uso limitato (Limited Use). Testo originale in inglese:</p>
+<p lang="en"><em>Treatflow's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</em></p>`,
+    },
+    {
+      heading: "7. Versione completa in tedesco",
       html: `<p>Per cookie, responsabili del trattamento, tempi di conservazione e il testo giuridico completo consulta l'<a href="/datenschutz">informativa sulla privacy in tedesco</a>, che è la versione vincolante.</p>`,
     },
   ],
