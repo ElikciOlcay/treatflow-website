@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import Breadcrumbs from './Breadcrumbs';
-import AiAnswerCapsule, { AiAnswerCapsuleGroup } from './AiAnswerCapsule';
 import ContentAttribution from './ContentAttribution';
 import { APP_REGISTER_URL } from '../i18n/market-access';
 
@@ -105,7 +104,7 @@ type FeatureHeroProps = {
     description: string;
     chips?: string[];
     primaryCta?: { label: string; href: string; external?: boolean };
-    secondaryCta?: { label: string; href: string };
+    secondaryCta?: { label: string; href: string; external?: boolean };
     aiCapsule?: { question: string; answer: string };
     aiCapsules?: { question: string; answer: string }[];
     dateModified?: string;
@@ -153,88 +152,95 @@ export default function FeatureHero({
 }: FeatureHeroProps) {
     const t = featureHeroThemes[theme];
     const capsules = aiCapsules && aiCapsules.length > 0 ? aiCapsules : aiCapsule ? [aiCapsule] : [];
+    const primaryClass =
+        'group inline-flex w-full sm:w-fit items-center justify-center whitespace-nowrap rounded-xl bg-gradient-to-r from-indigo-600 to-sky-500 px-7 py-3.5 text-base font-semibold text-white shadow-[0_14px_34px_-14px_rgba(79,70,229,0.8)] transition-all duration-200 hover:brightness-110';
+    const secondaryClass =
+        'inline-flex w-full sm:w-fit items-center justify-center rounded-xl border border-gray-200 bg-white px-6 py-3.5 text-base font-semibold text-gray-700 transition-colors hover:border-indigo-300 hover:text-indigo-600';
 
     return (
         <>
-            <section className={`pb-16 sm:pb-20 ${t.sectionBg}`}>
-                <Breadcrumbs items={breadcrumbs} />
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            <section className="relative overflow-hidden bg-white pb-20 sm:pb-24">
+                {/* Ruhiger Hintergrund wie auf der Startseite statt kräftiger Verläufe */}
+                <div
+                    className="pointer-events-none absolute inset-0 bg-[radial-gradient(56rem_32rem_at_8%_-10%,rgba(99,102,241,0.09),transparent_60%),radial-gradient(44rem_28rem_at_100%_0%,rgba(56,189,248,0.07),transparent_60%)]"
+                    aria-hidden="true"
+                />
+                <div className="relative">
+                    <Breadcrumbs items={breadcrumbs} />
+                </div>
+                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center">
                         <div className="order-1 text-center lg:text-left">
-                            <div className={`inline-flex items-center gap-2 ${t.pillBg} ${t.pillText} px-4 py-2 rounded-full text-sm font-semibold mb-6`}>
+                            <div className={`inline-flex items-center gap-2 ${t.pillBg} ${t.pillText} px-4 py-1.5 rounded-full text-sm font-semibold mb-6`}>
                                 <EyebrowIcon className="h-4 w-4" />
                                 {eyebrow}
                             </div>
 
                             <h1
-                                className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4 hyphens-none"
+                                className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 leading-[1.1] mb-5 hyphens-none"
                                 lang="de"
                             >
                                 {title}
                             </h1>
 
-                            <p className="text-lg lg:text-xl text-gray-600 mb-6 leading-relaxed">
+                            <p className="text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
                                 {description}
                             </p>
 
                             {chips.length > 0 && (
-                                <ul className="space-y-2 mb-8 inline-block text-left">
+                                <ul className="mt-6 flex flex-wrap justify-center lg:justify-start gap-2">
                                     {chips.map((label) => (
-                                        <li key={label} className="flex items-start gap-2 text-gray-700">
-                                            <CheckCircle className="h-5 w-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                                        <li
+                                            key={label}
+                                            className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1 text-sm text-gray-700"
+                                        >
+                                            <CheckCircle className="h-4 w-4 text-emerald-500 flex-shrink-0" />
                                             <span>{label}</span>
                                         </li>
                                     ))}
                                 </ul>
                             )}
 
-                            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                            <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                                 {primaryCta.external ? (
-                                    <a
-                                        href={primaryCta.href}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={`${t.ctaBg} text-white w-fit px-6 py-3 rounded-xl text-base font-semibold ${t.ctaHover} transition-all duration-300 inline-flex items-center justify-center shadow-md hover:shadow-lg`}
-                                    >
+                                    <a href={primaryCta.href} target="_blank" rel="noopener noreferrer" className={primaryClass}>
                                         {primaryCta.label}
-                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                                     </a>
                                 ) : (
-                                    <Link
-                                        href={primaryCta.href}
-                                        className={`${t.ctaBg} text-white w-fit px-6 py-3 rounded-xl text-base font-semibold ${t.ctaHover} transition-all duration-300 inline-flex items-center justify-center shadow-md hover:shadow-lg`}
-                                    >
+                                    <Link href={primaryCta.href} className={primaryClass}>
                                         {primaryCta.label}
-                                        <ArrowRight className="ml-2 h-4 w-4" />
+                                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                                     </Link>
                                 )}
-                                {secondaryCta && (
-                                    <Link
-                                        href={secondaryCta.href}
-                                        className={`inline-flex w-fit items-center justify-center border border-gray-200 bg-white text-gray-800 px-5 py-3 rounded-xl text-base font-semibold ${t.secondaryHover} transition-colors`}
-                                    >
-                                        {secondaryCta.label}
-                                    </Link>
-                                )}
+                                {secondaryCta &&
+                                    (secondaryCta.external ? (
+                                        <a href={secondaryCta.href} target="_blank" rel="noopener noreferrer" className={secondaryClass}>
+                                            {secondaryCta.label}
+                                        </a>
+                                    ) : (
+                                        <Link href={secondaryCta.href} className={secondaryClass}>
+                                            {secondaryCta.label}
+                                        </Link>
+                                    ))}
                             </div>
 
-                            <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-gray-600">
+                            {/* Eine ruhige Vertrauenszeile statt zwei */}
+                            <div className="mt-6 flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-2 text-sm text-gray-500">
                                 {DEFAULT_TRUST.map((item) => (
-                                    <div key={item} className="flex items-center gap-2">
+                                    <span key={item} className="flex items-center gap-1.5">
                                         <CheckCircle className="h-4 w-4 text-emerald-500" />
-                                        <span>{item}</span>
-                                    </div>
+                                        {item}
+                                    </span>
                                 ))}
-                            </div>
-                            <div className="mt-3 flex items-center justify-center lg:justify-start gap-3 text-sm">
-                                <span className="font-semibold text-gray-900">500+ Studios</span>
-                                <span className="text-gray-400">|</span>
-                                <div className="flex text-amber-500">
-                                    {[...Array(5)].map((_, i) => (
-                                        <Star key={i} className="h-4 w-4 fill-current" />
-                                    ))}
-                                </div>
-                                <span className="text-gray-600">4,6/5 auf Google</span>
+                                <span className="flex items-center gap-1.5">
+                                    <span className="flex text-amber-500" aria-hidden="true">
+                                        {[...Array(5)].map((_, i) => (
+                                            <Star key={i} className="h-3.5 w-3.5 fill-current" />
+                                        ))}
+                                    </span>
+                                    4,6/5 auf Google · 500+ Studios
+                                </span>
                             </div>
 
                             {children}
@@ -244,13 +250,13 @@ export default function FeatureHero({
                             {visual ? (
                                 <div className="relative w-full">{visual}</div>
                             ) : image ? (
-                                <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[4/3] lg:min-h-[400px] lg:aspect-auto bg-white">
+                                <div className="relative w-full overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-[0_30px_70px_-35px_rgba(15,23,42,0.45)] aspect-[4/3]">
                                     <Image
                                         src={image.src}
                                         alt={image.alt}
                                         fill
                                         sizes="(max-width: 1024px) 100vw, 50vw"
-                                        className="object-cover object-center"
+                                        className="object-cover object-top"
                                         priority
                                     />
                                 </div>
@@ -261,24 +267,28 @@ export default function FeatureHero({
             </section>
 
             {(capsules.length > 0 || (dateModified && datePublished)) && (
-                <section className="pt-12 pb-10 bg-white border-b border-gray-100">
-                    <div className={`${capsules.length > 1 ? 'max-w-6xl' : 'max-w-4xl'} mx-auto px-4 sm:px-6 lg:px-8`}>
+                <section className="border-y border-gray-100 bg-gray-50/70 py-14 sm:py-16">
+                    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                         {capsules.length > 0 && (
-                            <AiAnswerCapsuleGroup>
-                                {capsules.map((capsule) => (
-                                    <AiAnswerCapsule
-                                        key={capsule.question}
-                                        question={capsule.question}
-                                        answer={capsule.answer}
-                                    />
-                                ))}
-                            </AiAnswerCapsuleGroup>
+                            <>
+                                <p className={`mb-6 text-sm font-semibold uppercase tracking-wide ${t.accent} text-center lg:text-left`}>Kurz erklärt</p>
+                                <div className={`grid gap-x-12 gap-y-8 ${capsules.length > 1 ? 'md:grid-cols-2' : 'max-w-3xl'}`}>
+                                    {capsules.map((capsule) => (
+                                        <div key={capsule.question}>
+                                            <h2 className="text-lg font-semibold text-gray-900 mb-2 hyphens-none" lang="de">
+                                                {capsule.question}
+                                            </h2>
+                                            <p className="text-gray-600 leading-relaxed">{capsule.answer}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </>
                         )}
                         {dateModified && datePublished && (
                             <ContentAttribution
                                 dateModified={dateModified}
                                 datePublished={datePublished}
-                                className={capsules.length > 0 ? 'mt-6' : ''}
+                                className={capsules.length > 0 ? 'mt-8 lg:justify-start' : ''}
                             />
                         )}
                     </div>

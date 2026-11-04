@@ -1,9 +1,8 @@
 import {
-    Calendar, Users, FileText, Shield, Bell, ArrowRight, CheckCircle,
+    Calendar, Users, FileText, Shield, Bell,
     Clock, Smartphone, Star, Zap, Heart, TrendingUp, ClipboardCheck, Receipt
 } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 import { buildHreflangAlternates } from '@/app/i18n/seo';
 const clusterPages = [
@@ -48,12 +47,26 @@ import Navigation from '@/app/components/Navigation';
 import ProductVideoSection from '@/app/components/ProductVideoSection';
 import Footer from '@/app/components/Footer';
 import QuickFacts from '@/app/components/QuickFacts';
-import AiAnswerCapsule, { AiAnswerCapsuleGroup } from '@/app/components/AiAnswerCapsule';
-import ContentAttribution from '@/app/components/ContentAttribution';
 import SocialProofBar from '@/app/components/SocialProofBar';
 import Script from 'next/script';
-import Breadcrumbs, { generateBreadcrumbSchema } from '@/app/components/Breadcrumbs';
+import { generateBreadcrumbSchema } from '@/app/components/Breadcrumbs';
+import FeatureHero, { FeatureTitleHighlight } from '@/app/components/FeatureHero';
+import {
+    FeatureUnderstand,
+    FeatureCards,
+    FeatureChecklist,
+    FeatureFaq,
+    FeatureRelated,
+    FeaturePageCta,
+} from '@/app/components/FeatureSections';
 import { generateWebPageSchema } from '@/lib/content-attribution';
+
+const CONSULTING_URL = 'https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f';
+
+const breadcrumbItems = [
+    { label: 'Branchen', href: '/#branchen' },
+    { label: 'Kosmetikstudio Software' },
+];
 
 const PAGE_DATE_MODIFIED = '2026-08-06';
 const PAGE_DATE_PUBLISHED = '2024-06-01';
@@ -124,51 +137,32 @@ const solutions = [
         icon: Calendar,
         title: 'Online-Buchungen rund um die Uhr',
         description: 'Deine Kunden buchen selbstständig über deinen persönlichen Buchungslink - auch nach Feierabend. Keine Telefonate, keine Doppelbuchungen.',
-        gradient: 'from-indigo-500 to-purple-600',
-        bg: 'from-indigo-50 to-purple-50',
     },
     {
         icon: Users,
         title: 'Digitale Kundenverwaltung',
         description: 'Alle Kundendaten, Behandlungshistorien, Allergien und Fotos an einem Ort. Sofort abrufbar bei jedem Termin.',
-        gradient: 'from-emerald-500 to-teal-600',
-        bg: 'from-emerald-50 to-teal-50',
     },
     {
         icon: ClipboardCheck,
         title: 'Digitale Formulare & Anamnese',
         description: 'Anamnesebögen und Einwilligungen digital ausfüllen lassen - vor dem Termin oder am Tablet im Studio. Papierfrei und rechtssicher.',
-        gradient: 'from-orange-500 to-red-600',
-        bg: 'from-orange-50 to-red-50',
     },
     {
         icon: FileText,
         title: 'Behandlungsdokumentation',
         description: 'Dokumentiere jede Behandlung digital mit Fotos, Notizen und Produkten. Perfekt für Nachbehandlungen und den Überblick.',
-        gradient: 'from-blue-500 to-indigo-600',
-        bg: 'from-blue-50 to-indigo-50',
     },
     {
         icon: Bell,
         title: 'Automatische Erinnerungen',
         description: 'Reduziere No-Shows um bis zu 80% mit automatischen Terminerinnerungen per WhatsApp und E-Mail.',
-        gradient: 'from-pink-500 to-rose-600',
-        bg: 'from-pink-50 to-rose-50',
     },
     {
         icon: Shield,
         title: 'DSGVO-konform & sicher',
         description: 'Alle Daten werden verschlüsselt in der EU gespeichert. Datenschutzkonform und sicher - für dich und deine Kunden.',
-        gradient: 'from-violet-500 to-purple-600',
-        bg: 'from-violet-50 to-purple-50',
     },
-];
-
-const stats = [
-    { value: '80%', label: 'weniger No-Shows', description: 'durch automatische Erinnerungen' },
-    { value: '5h+', label: 'Zeit gespart pro Woche', description: 'durch Online-Buchungen' },
-    { value: '100%', label: 'papierlos', description: 'digitale Formulare & Dokumentation' },
-    { value: '24/7', label: 'buchbar', description: 'auch nach Feierabend' },
 ];
 
 const whyTreatflow = [
@@ -273,16 +267,73 @@ const faqSchema = {
     ]
 };
 
+const features = [
+    'Online-Terminbuchung mit persönlichem Link',
+    'Übersichtlicher Terminkalender',
+    'Digitale Anamnesebögen',
+    'Einwilligungsformulare mit Unterschrift',
+    'Behandlungsdokumentation mit Fotos',
+    'Kundenverwaltung mit Behandlungshistorie',
+    'Automatische Terminerinnerungen per WhatsApp',
+    'Follow-up Nachrichten nach Behandlungen',
+    'Geburtstagsnachrichten automatisch',
+    'NiSV-konforme Dokumentation',
+    'DSGVO-konform & EU-Hosting',
+    'Mobil optimiert für Tablet und Smartphone',
+];
+
+const furtherTopics = [
+    { href: '/kosmetikstudio-software-kostenlos', label: 'Kosmetikstudio Software kostenlos' },
+    { href: '/kosmetikstudio-software-vergleich', label: 'Kosmetikstudio Software Vergleich' },
+    { href: '/blog/beste-kosmetikstudio-software-2026', label: 'Beste Kosmetikstudio Software 2026' },
+    { href: '/kundenkartei-software', label: 'Kundenkartei App' },
+    { href: '/kosmetikstudio-software-oesterreich', label: 'Kosmetikstudio Software Österreich' },
+    { href: '/kosmetikstudio-software-wien', label: 'Kosmetikstudio Software Wien' },
+];
+
+/** Sichtbare FAQ (wie bisher ohne die Frage „beste Software in Deutschland“, die nur im Schema und in der Kurz-erklärt-Box steht) */
+const visibleFaqs = [
+    {
+        question: 'Ist Treatflow wirklich speziell für Kosmetikstudios?',
+        answer: 'Ja, Treatflow wurde speziell für die Bedürfnisse von Kosmetikstudios, Beauty Studios und ästhetischen Praxen entwickelt. Von der Anamnesebogen-Verwaltung bis zur Behandlungsdokumentation - jede Funktion ist auf deinen Arbeitsalltag zugeschnitten.',
+    },
+    {
+        question: 'Wie lange dauert die Einrichtung?',
+        answer: 'Die Grundeinrichtung dauert nur wenige Minuten. Behandlungen anlegen, Arbeitszeiten einstellen und deinen Buchungslink teilen - und du bist startklar. Unser Onboarding-Team hilft dir gerne bei der Einrichtung.',
+    },
+    {
+        question: 'Können meine Kunden selbst Termine buchen?',
+        answer: 'Ja, über deinen persönlichen Buchungslink können deine Kunden rund um die Uhr Termine buchen. Du erhältst automatische Bestätigungen und Erinnerungen werden automatisch versendet.',
+    },
+    {
+        question: 'Ist Treatflow DSGVO-konform?',
+        answer: 'Absolut. Alle Daten werden verschlüsselt in EU-Rechenzentren gespeichert. Treatflow erfüllt alle Anforderungen der DSGVO und ist ideal für die sensiblen Kundendaten in Kosmetikstudios.',
+    },
+    {
+        question: 'Was kostet Treatflow?',
+        answer: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen - ohne Kreditkarte und ohne versteckte Kosten.',
+    },
+    {
+        question: 'Gibt es eine kostenlose Kosmetikstudio Software?',
+        answer: 'Treatflow kannst du 14 Tage komplett kostenlos und unverbindlich testen - ohne Kreditkarte. Rein kostenlose Lösungen stoßen im Studio-Alltag schnell an Grenzen (keine saubere Behandlungshistorie, oft nicht DSGVO-konform, kein Support). Eine professionelle Kosmetikstudio Software ab 39 EUR im Monat spart dir dagegen täglich Zeit und reduziert No-Shows.',
+    },
+    {
+        question: 'Welche Software braucht ein Kosmetikstudio?',
+        answer: 'Ein Kosmetikstudio braucht Terminverwaltung, digitale Kundenkartei, Online-Buchung, Anamnesebögen und Behandlungsdokumentation. Treatflow vereint das in einer App – ohne Provision pro Buchung, ab 39 EUR im Monat, 14 Tage testen.',
+    },
+    {
+        question: 'Welche Software ist die beste für ein kleines Kosmetikstudio?',
+        answer: 'Für kleine Kosmetikstudios und Einzelunternehmerinnen eignet sich eine schlanke All-in-One-Software wie Treatflow, die Online-Buchung, Kundenkartei, Formulare und Dokumentation ohne komplizierte Einrichtung vereint. Du startest in wenigen Minuten und zahlst keine Provision pro Buchung.',
+    },
+];
+
 export default function KosmetikstudioSoftwarePage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema([
-                    { label: 'Branchen', href: '/#branchen' },
-                    { label: 'Kosmetikstudio Software' },
-                ])) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
             />
             <Script
                 id="kosmetikstudio-software-faq-schema"
@@ -327,81 +378,32 @@ export default function KosmetikstudioSoftwarePage() {
                     ),
                 }}
             />
-            {/* Hero Section */}
-            <section className="pb-20 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
-                <Breadcrumbs items={[
-                    { label: 'Branchen', href: '/#branchen' },
-                    { label: 'Kosmetikstudio Software' },
-                ]} />
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-4xl mx-auto">
-                        <div className="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                            <Star className="h-4 w-4 mr-2" />
-                            Deine All-in-One Software für Kosmetikstudios
-                        </div>
-                        <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                            Die Software für dein{' '}
-                            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                                Kosmetikstudio
-                            </span>
-                        </h1>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-4">
-                            Termine, Kunden, Formulare und Dokumentation - alles in einer Plattform.
-                            Weniger Verwaltung, mehr Zeit für deine Kunden.
-                        </p>
-                    </div>
-                    <div className="mt-8 mb-8">
-                        <AiAnswerCapsuleGroup>
-                            <AiAnswerCapsule
-                                question="Welche Software braucht ein Kosmetikstudio?"
-                                answer="Terminverwaltung, digitale Kundenkartei, Online-Buchung, Anamnese und Behandlungsdokumentation. Treatflow vereint das in einer App – ohne Provision, ab 39 Euro im Monat, 14 Tage kostenlos testen. Daten liegen auf EU-Servern."
-                            />
-                            <AiAnswerCapsule
-                                question="Welche ist die beste Software für Kosmetikstudios in Deutschland?"
-                                answer="Treatflow ist All-in-One-Software für Kosmetikstudios im deutschsprachigen Raum: Kalender, Buchung, Kundenkartei, Formulare, Dokumentation und NiSV-Protokolle. Bereits von über 500 Studios getestet. Ab 39 EUR/Monat, DSGVO-konform auf EU-Servern."
-                            />
-                        </AiAnswerCapsuleGroup>
-                    </div>
-                    <div className="text-center max-w-4xl mx-auto">
-                        <ContentAttribution
-                            dateModified={PAGE_DATE_MODIFIED}
-                            datePublished={PAGE_DATE_PUBLISHED}
-                            className="mb-10"
-                        />
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a
-                                href="https://app.treatflow.io/auth/register?lang=de"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-indigo-700 transition-colors duration-200 flex items-center justify-center"
-                            >
-                                14 Tage kostenlos testen
-                                <ArrowRight className="ml-2 h-5 w-5" />
-                            </a>
-                            <a
-                                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-indigo-600 hover:text-indigo-600 transition-colors duration-200"
-                            >
-                                Beratung buchen
-                            </a>
-                        </div>
-                        <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
-                    </div>
-                    <div className="mt-12 max-w-5xl mx-auto">
-                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
-                            <Image
-                                src="/images/lifestyle/kosmetikstudio-willkommen.png"
-                                alt="Studio-Beratung am Empfang – professionell und einladend"
-                                fill
-                                sizes="100vw"
-                                className="object-cover"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <FeatureHero
+                theme="indigo"
+                breadcrumbs={breadcrumbItems}
+                eyebrow="Deine All-in-One Software für Kosmetikstudios"
+                eyebrowIcon={Star}
+                title={<>Die Software für dein <FeatureTitleHighlight theme="indigo">Kosmetikstudio</FeatureTitleHighlight></>}
+                description="Termine, Kunden, Formulare und Dokumentation - alles in einer Plattform. Weniger Verwaltung, mehr Zeit für deine Kunden."
+                primaryCta={{ label: '14 Tage kostenlos testen', href: 'https://app.treatflow.io/auth/register?lang=de', external: true }}
+                secondaryCta={{ label: 'Beratung buchen', href: CONSULTING_URL, external: true }}
+                aiCapsules={[
+                    {
+                        question: 'Welche Software braucht ein Kosmetikstudio?',
+                        answer: 'Terminverwaltung, digitale Kundenkartei, Online-Buchung, Anamnese und Behandlungsdokumentation. Treatflow vereint das in einer App – ohne Provision, ab 39 Euro im Monat, 14 Tage kostenlos testen. Daten liegen auf EU-Servern.',
+                    },
+                    {
+                        question: 'Welche ist die beste Software für Kosmetikstudios in Deutschland?',
+                        answer: 'Treatflow ist All-in-One-Software für Kosmetikstudios im deutschsprachigen Raum: Kalender, Buchung, Kundenkartei, Formulare, Dokumentation und NiSV-Protokolle. Bereits von über 500 Studios getestet. Ab 39 EUR/Monat, DSGVO-konform auf EU-Servern.',
+                    },
+                ]}
+                dateModified={PAGE_DATE_MODIFIED}
+                datePublished={PAGE_DATE_PUBLISHED}
+                image={{
+                    src: '/images/lifestyle/kosmetikstudio-willkommen.png',
+                    alt: 'Studio-Beratung am Empfang – professionell und einladend',
+                }}
+            />
 
             <ProductVideoSection
                 title="Treatflow fürs Kosmetikstudio in einer Minute"
@@ -411,98 +413,41 @@ export default function KosmetikstudioSoftwarePage() {
                 posterAlt="Video: Treatflow fürs Kosmetikstudio in einer Minute"
             />
 
-            {/* Pain Points Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            Kennst du diese Probleme?
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Die meisten Kosmetikerinnen kämpfen täglich mit denselben Herausforderungen.
-                            Es gibt einen besseren Weg.
-                        </p>
-                    </div>
+            <FeatureUnderstand
+                theme="rose"
+                title="Kennst du diese Probleme?"
+                description="Die meisten Kosmetikerinnen kämpfen täglich mit denselben Herausforderungen. Es gibt einen besseren Weg."
+                items={painPoints.map((point) => ({ icon: point.icon, title: point.title, text: point.description }))}
+            />
 
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {painPoints.map((point, index) => (
-                            <div key={index} className="flex gap-5 p-6 rounded-2xl bg-red-50/50 border border-red-100">
-                                <div className="flex-shrink-0 w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
-                                    <point.icon className="h-6 w-6 text-red-600" />
-                                </div>
-                                <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{point.title}</h3>
-                                    <p className="text-gray-600">{point.description}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <FeatureCards
+                theme="indigo"
+                title="So löst Treatflow deine Probleme"
+                description="Eine Plattform, die speziell für die Bedürfnisse von Kosmetikstudios entwickelt wurde."
+                items={solutions.map((solution) => ({ icon: solution.icon, title: solution.title, text: solution.description }))}
+            />
 
-            {/* Solutions Section */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            So löst Treatflow deine Probleme
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Eine Plattform, die speziell für die Bedürfnisse von Kosmetikstudios entwickelt wurde.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {solutions.map((solution, index) => (
-                            <div key={index} className={`bg-gradient-to-br ${solution.bg} p-8 rounded-2xl`}>
-                                <div className={`w-12 h-12 bg-gradient-to-r ${solution.gradient} rounded-lg flex items-center justify-center mb-6`}>
-                                    <solution.icon className="h-6 w-6 text-white" />
-                                </div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">{solution.title}</h3>
-                                <p className="text-gray-600 leading-relaxed">{solution.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Stats Section */}
-            <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {stats.map((stat, index) => (
-                            <div key={index} className="text-center">
-                                <div className="text-5xl font-bold text-white mb-2">{stat.value}</div>
-                                <div className="text-lg font-semibold text-indigo-100 mb-1">{stat.label}</div>
-                                <div className="text-sm text-indigo-200">{stat.description}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Why Treatflow Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            {/* Warum Treatflow: ruhige Variante im Raster, ohne Kartenrahmen */}
+            <section className="py-20 sm:py-24 lg:py-28 bg-gray-50">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="mb-12 lg:mb-16 text-center max-w-2xl mx-auto">
+                        <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 hyphens-none" lang="de">
                             Warum Treatflow statt generischer Buchungssoftware?
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="mt-4 text-lg text-gray-600 leading-relaxed">
                             Generische Tools wie Calendly oder SimplyBook verstehen dein Studio nicht.
                             Treatflow wurde von Anfang an für Beauty Studios gebaut.
                         </p>
                     </div>
-
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {whyTreatflow.map((item, index) => (
-                            <div key={index} className="flex gap-5 p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all duration-200">
-                                <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
-                                    <item.icon className="h-6 w-6 text-indigo-600" />
+                    <div className="grid gap-x-10 gap-y-12 sm:grid-cols-2">
+                        {whyTreatflow.map((item) => (
+                            <div key={item.title} className="flex gap-5">
+                                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600">
+                                    <item.icon className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
-                                    <p className="text-gray-600">{item.description}</p>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
+                                    <p className="text-gray-600 leading-relaxed">{item.description}</p>
                                 </div>
                             </div>
                         ))}
@@ -510,192 +455,49 @@ export default function KosmetikstudioSoftwarePage() {
                 </div>
             </section>
 
-            {/* Cluster-Verlinkung */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            Entdecke alle Funktionen im Detail
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Treatflow bietet spezialisierte Lösungen für jeden Bereich deines Studios.
-                        </p>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-                        {clusterPages.map((page) => (
-                            <Link
-                                key={page.href}
-                                href={page.href}
-                                className="group bg-white p-6 rounded-2xl border border-gray-200 hover:border-indigo-200 hover:shadow-lg transition-all duration-200"
-                            >
-                                <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
-                                    <page.icon className="h-6 w-6 text-indigo-600" />
-                                </div>
-                                <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
-                                    {page.title}
-                                </h3>
-                                <p className="text-gray-600 text-sm mb-3">{page.description}</p>
-                                <span className="inline-flex items-center text-indigo-600 text-sm font-medium">
-                                    Mehr erfahren
-                                    <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                                </span>
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Feature List Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            Alles was dein Kosmetikstudio braucht
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Von der Terminbuchung bis zur Dokumentation - Treatflow deckt deinen gesamten Studio-Alltag ab.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {[
-                            'Online-Terminbuchung mit persönlichem Link',
-                            'Übersichtlicher Terminkalender',
-                            'Digitale Anamnesebögen',
-                            'Einwilligungsformulare mit Unterschrift',
-                            'Behandlungsdokumentation mit Fotos',
-                            'Kundenverwaltung mit Behandlungshistorie',
-                            'Automatische Terminerinnerungen per WhatsApp',
-                            'Follow-up Nachrichten nach Behandlungen',
-                            'Geburtstagsnachrichten automatisch',
-                            'NiSV-konforme Dokumentation',
-                            'DSGVO-konform & EU-Hosting',
-                            'Mobil optimiert für Tablet und Smartphone',
-                        ].map((feature, index) => (
-                            <div key={index} className="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100">
-                                <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-                                <span className="text-gray-700 font-medium">{feature}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Weiterführende Themen / Cluster-Verlinkung */}
-            <section className="py-16 bg-gray-50">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Weiterführende Themen</h2>
-                    <div className="flex flex-wrap justify-center gap-5 text-sm">
-                        <Link href="/kosmetikstudio-software-kostenlos" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
-                            Kosmetikstudio Software kostenlos
-                        </Link>
-                        <Link href="/kosmetikstudio-software-vergleich" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
-                            Kosmetikstudio Software Vergleich
-                        </Link>
-                        <Link href="/blog/beste-kosmetikstudio-software-2026" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
-                            Beste Kosmetikstudio Software 2026
-                        </Link>
-                        <Link href="/kundenkartei-software" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
-                            Kundenkartei App
-                        </Link>
-                        <Link href="/kosmetikstudio-software-oesterreich" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
-                            Kosmetikstudio Software Österreich
-                        </Link>
-                        <Link href="/kosmetikstudio-software-wien" className="text-indigo-600 hover:text-indigo-700 underline underline-offset-4">
-                            Kosmetikstudio Software Wien
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <FeatureChecklist
+                title="Alles was dein Kosmetikstudio braucht"
+                description="Von der Terminbuchung bis zur Dokumentation - Treatflow deckt deinen gesamten Studio-Alltag ab."
+                items={features}
+            />
 
             <SocialProofBar />
 
-            {/* CTA Section */}
-            <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">
-                        Bereit, dein Kosmetikstudio zu digitalisieren?
-                    </h2>
-                    <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto">
-                        Teste Treatflow 14 Tage kostenlos und erlebe, wie viel einfacher dein Studio-Alltag sein kann.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="https://app.treatflow.io/auth/register?lang=de"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
-                        >
-                            14 Tage gratis testen
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                        <a
-                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-indigo-600 transition-colors duration-200"
-                        >
-                            Beratung buchen
-                        </a>
-                    </div>
-                    <p className="text-sm text-indigo-200 mt-4">Keine Kreditkarte nötig. Jederzeit kündbar.</p>
-                </div>
-            </section>
-
-            {/* FAQ Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            Häufige Fragen
-                        </h2>
-                    </div>
-
-                    <div className="space-y-6">
-                        {[
-                            {
-                                q: 'Ist Treatflow wirklich speziell für Kosmetikstudios?',
-                                a: 'Ja, Treatflow wurde speziell für die Bedürfnisse von Kosmetikstudios, Beauty Studios und ästhetischen Praxen entwickelt. Von der Anamnesebogen-Verwaltung bis zur Behandlungsdokumentation - jede Funktion ist auf deinen Arbeitsalltag zugeschnitten.',
-                            },
-                            {
-                                q: 'Wie lange dauert die Einrichtung?',
-                                a: 'Die Grundeinrichtung dauert nur wenige Minuten. Behandlungen anlegen, Arbeitszeiten einstellen und deinen Buchungslink teilen - und du bist startklar. Unser Onboarding-Team hilft dir gerne bei der Einrichtung.',
-                            },
-                            {
-                                q: 'Können meine Kunden selbst Termine buchen?',
-                                a: 'Ja, über deinen persönlichen Buchungslink können deine Kunden rund um die Uhr Termine buchen. Du erhältst automatische Bestätigungen und Erinnerungen werden automatisch versendet.',
-                            },
-                            {
-                                q: 'Ist Treatflow DSGVO-konform?',
-                                a: 'Absolut. Alle Daten werden verschlüsselt in EU-Rechenzentren gespeichert. Treatflow erfüllt alle Anforderungen der DSGVO und ist ideal für die sensiblen Kundendaten in Kosmetikstudios.',
-                            },
-                            {
-                                q: 'Was kostet Treatflow?',
-                                a: 'Treatflow bietet flexible Pläne ab 39 EUR im Monat. Du kannst alle Funktionen 14 Tage kostenlos testen - ohne Kreditkarte und ohne versteckte Kosten.',
-                            },
-                            {
-                                q: 'Gibt es eine kostenlose Kosmetikstudio Software?',
-                                a: 'Treatflow kannst du 14 Tage komplett kostenlos und unverbindlich testen - ohne Kreditkarte. Rein kostenlose Lösungen stoßen im Studio-Alltag schnell an Grenzen (keine saubere Behandlungshistorie, oft nicht DSGVO-konform, kein Support). Eine professionelle Kosmetikstudio Software ab 39 EUR im Monat spart dir dagegen täglich Zeit und reduziert No-Shows.',
-                            },
-                            {
-                                q: 'Welche Software braucht ein Kosmetikstudio?',
-                                a: 'Ein Kosmetikstudio braucht Terminverwaltung, digitale Kundenkartei, Online-Buchung, Anamnesebögen und Behandlungsdokumentation. Treatflow vereint das in einer App – ohne Provision pro Buchung, ab 39 EUR im Monat, 14 Tage testen.',
-                            },
-                            {
-                                q: 'Welche Software ist die beste für ein kleines Kosmetikstudio?',
-                                a: 'Für kleine Kosmetikstudios und Einzelunternehmerinnen eignet sich eine schlanke All-in-One-Software wie Treatflow, die Online-Buchung, Kundenkartei, Formulare und Dokumentation ohne komplizierte Einrichtung vereint. Du startest in wenigen Minuten und zahlst keine Provision pro Buchung.',
-                            },
-                        ].map((faq, index) => (
-                            <div key={index} className="border border-gray-200 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.q}</h3>
-                                <p className="text-gray-600 leading-relaxed">{faq.a}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <FeatureFaq title="Häufige Fragen" items={visibleFaqs} />
 
             <QuickFacts variant="compact" />
+
+            <FeatureRelated
+                title="Entdecke alle Funktionen im Detail"
+                description="Treatflow bietet spezialisierte Lösungen für jeden Bereich deines Studios."
+                items={clusterPages.map(({ href, title, description }) => ({ href, title, description }))}
+            />
+
+            {/* Weiterführende Themen / Cluster-Verlinkung, als Fortsetzung des Abschnitts darüber */}
+            <section className="pb-16 sm:pb-20 bg-gray-50">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-xl font-semibold text-gray-900 text-center mb-6">Weiterführende Themen</h2>
+                    <ul className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm">
+                        {furtherTopics.map((topic) => (
+                            <li key={topic.href}>
+                                <Link href={topic.href} className="text-gray-600 underline decoration-gray-300 underline-offset-4 transition-colors hover:text-indigo-600 hover:decoration-indigo-300">
+                                    {topic.label}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+
+            <FeaturePageCta
+                theme="indigo"
+                title="Bereit, dein Kosmetikstudio zu digitalisieren?"
+                description="Teste Treatflow 14 Tage kostenlos und erlebe, wie viel einfacher dein Studio-Alltag sein kann."
+                primaryHref="https://app.treatflow.io/auth/register?lang=de"
+                secondaryLabel="Beratung buchen"
+                secondaryHref={CONSULTING_URL}
+                secondaryExternal
+            />
 
             <Footer />
         </div>
