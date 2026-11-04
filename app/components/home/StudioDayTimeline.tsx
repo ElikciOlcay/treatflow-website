@@ -78,7 +78,7 @@ const STEPS: Step[] = [
 /** Ein Termin von der Buchung bis zur Nachsorge, als Zeitleiste erzählt. */
 export default function StudioDayTimeline() {
   return (
-    <section className="bg-gray-50 px-4 py-20 sm:px-6 lg:px-8" aria-labelledby="studio-day-title">
+    <section className="bg-gray-50 px-4 py-14 sm:px-6 lg:px-8 lg:py-20" aria-labelledby="studio-day-title">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-indigo-600">Ein Termin, ein System</p>

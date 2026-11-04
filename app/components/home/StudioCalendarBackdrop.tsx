@@ -130,11 +130,12 @@ export default function CalendarBackdrop({ step, locale, newBookingLabel, booked
       // Kalender als Fläche in Perspektive: oben schmal, unten breit
       const top = height * 0.46;
       const bottom = height * 1.08;
-      const planeWidth = Math.min(width * 0.92, 1080);
+      const narrow = width < 640;
+      const planeWidth = Math.min(width * (narrow ? 0.8 : 0.92), 1080);
       const project = (u: number, v: number) => {
         const depth = Math.pow(v, 1.5);
         const y = top + depth * (bottom - top);
-        const spread = 0.62 + 0.75 * depth;
+        const spread = narrow ? 0.7 + 0.4 * depth : 0.62 + 0.75 * depth;
         return { x: width / 2 + (u - 0.5) * planeWidth * spread, y, scale: spread };
       };
       const cellPoint = (day: number, row: number) => project(day / DAYS, row / ROWS);
@@ -189,6 +190,7 @@ export default function CalendarBackdrop({ step, locale, newBookingLabel, booked
       ctx.textAlign = "right";
       for (let row = 0; row < ROWS; row += 2) {
         const p = cellPoint(0, row + 0.5);
+        if (p.x - 10 * p.scale < 34) continue; // Uhrzeit hätte links keinen Platz
         ctx.font = `500 ${Math.round(9 + p.scale * 3)}px Inter, ui-sans-serif, system-ui, sans-serif`;
         ctx.fillStyle = palette.hourLabel;
         ctx.fillText(`${String(FIRST_HOUR + row).padStart(2, "0")}:00`, p.x - 10 * p.scale, p.y);

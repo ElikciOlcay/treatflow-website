@@ -38,7 +38,7 @@ export default function HomeHero() {
   }, [touched]);
 
   return (
-    <section className="relative overflow-hidden bg-white px-4 pb-52 pt-28 sm:px-6 sm:pb-60 lg:px-8 lg:pb-72">
+    <section className="relative overflow-hidden bg-white px-4 pb-60 pt-28 sm:px-6 sm:pb-60 lg:px-8 lg:pb-72">
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         <div className="absolute inset-0 bg-[radial-gradient(60rem_36rem_at_10%_-10%,rgba(99,102,241,0.10),transparent_60%),radial-gradient(48rem_30rem_at_100%_10%,rgba(56,189,248,0.08),transparent_60%)]" />
         {/* Kalender als Boden unter dem Inhalt, nicht dahinter */}
@@ -66,7 +66,7 @@ export default function HomeHero() {
               href={REGISTER_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center rounded-xl bg-gradient-to-r from-indigo-600 to-sky-500 px-8 py-4 text-lg font-semibold text-white shadow-[0_14px_34px_-14px_rgba(79,70,229,0.8)] transition-all duration-200 hover:brightness-110"
+              className="group flex items-center justify-center rounded-xl bg-gradient-to-r from-indigo-600 to-sky-500 whitespace-nowrap px-6 py-4 text-base font-semibold text-white shadow-[0_14px_34px_-14px_rgba(79,70,229,0.8)] sm:px-8 sm:text-lg transition-all duration-200 hover:brightness-110"
             >
               Jetzt 14 Tage kostenlos testen
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-0.5" />
@@ -75,7 +75,7 @@ export default function HomeHero() {
               href={DEMO_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center rounded-xl border border-gray-200 bg-white/80 px-8 py-4 text-lg font-semibold text-gray-700 backdrop-blur transition-colors hover:border-indigo-300 hover:text-indigo-600"
+              className="flex items-center justify-center rounded-xl border border-gray-200 bg-white/80 px-6 py-4 text-base font-semibold sm:px-8 sm:text-lg text-gray-700 backdrop-blur transition-colors hover:border-indigo-300 hover:text-indigo-600"
             >
               Demo buchen
             </a>
@@ -134,22 +134,29 @@ function BookingDemo({ onBooked, onInteract }: BookingDemoProps) {
   return (
     <div className="relative mx-auto w-full max-w-md">
       <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-indigo-200/50 via-white/0 to-sky-200/50 blur-2xl" aria-hidden="true" />
-      <div className="rounded-2xl border border-gray-200/80 bg-white/95 p-5 shadow-[0_30px_70px_-35px_rgba(15,23,42,0.45)] backdrop-blur sm:p-6">
-        <div className="mb-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-rose-300 to-indigo-400 text-sm font-bold text-white">
+      <div className="rounded-2xl border border-gray-200/80 bg-white/95 p-4 shadow-[0_30px_70px_-35px_rgba(15,23,42,0.45)] backdrop-blur min-[380px]:p-5 sm:p-6">
+        <div className="mb-4 flex items-center justify-between gap-3">
+          <div className="flex min-w-0 items-center gap-3">
+            <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-rose-300 to-indigo-400 text-sm font-bold text-white">
               A
             </span>
             <div className="text-left">
               <p className="text-sm font-semibold text-gray-900">Studio Aurora</p>
-              <p className="text-xs text-gray-500">Online-Buchung · Beispiel</p>
+              <p className="truncate text-xs text-gray-500">Online-Buchung · Beispiel</p>
             </div>
           </div>
-          <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-[11px] font-semibold text-emerald-700">Probier es aus</span>
+          <span className="hidden flex-shrink-0 whitespace-nowrap rounded-full bg-emerald-50 min-[360px]:inline-block px-2.5 py-1 text-[11px] font-semibold text-emerald-700">Probier es aus</span>
         </div>
 
-        {booked && treatment !== null && time ? (
-          <div className="py-4 text-center" role="status" aria-live="polite">
+        <div className="grid grid-cols-[minmax(0,1fr)]">
+        <div
+          className={`[grid-area:1/1] flex flex-col justify-center py-4 text-center ${booked ? "" : "invisible"}`}
+          role="status"
+          aria-live="polite"
+          aria-hidden={!booked}
+        >
+          {booked && treatment !== null && time ? (
+          <>
             <span className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 text-white shadow-[0_10px_24px_-10px_rgba(16,185,129,0.9)]">
               <Check className="h-6 w-6" strokeWidth={3} />
             </span>
@@ -174,9 +181,10 @@ function BookingDemo({ onBooked, onInteract }: BookingDemoProps) {
             >
               Noch einen Termin buchen
             </button>
-          </div>
-        ) : (
-          <>
+          </>
+          ) : null}
+        </div>
+        <div className={`[grid-area:1/1] ${booked ? "invisible" : ""}`} aria-hidden={booked} inert={booked}>
             <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">1. Behandlung</p>
             <div className="space-y-2">
               {TREATMENTS.map((item, index) => {
@@ -190,14 +198,14 @@ function BookingDemo({ onBooked, onInteract }: BookingDemoProps) {
                       setTreatment(index);
                     }}
                     aria-pressed={active}
-                    className={`flex w-full items-center justify-between rounded-xl border px-3.5 py-2.5 text-left text-sm transition-all ${
+                    className={`flex w-full items-center justify-between gap-3 rounded-xl border px-3.5 py-2.5 text-left text-sm transition-all ${
                       active
                         ? "border-indigo-400 bg-indigo-50 shadow-[0_0_0_1px_rgba(99,102,241,0.35)]"
                         : "border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50"
                     }`}
                   >
-                    <span className="font-medium text-gray-900">{item.name}</span>
-                    <span className="flex items-center gap-3 text-xs text-gray-500">
+                    <span className="min-w-0 font-medium text-gray-900">{item.name}</span>
+                    <span className="flex flex-shrink-0 items-center gap-2.5 whitespace-nowrap text-xs text-gray-500">
                       <span className="flex items-center gap-1">
                         <Clock className="h-3.5 w-3.5" />
                         {item.minutes} Min
@@ -249,8 +257,8 @@ function BookingDemo({ onBooked, onInteract }: BookingDemoProps) {
               <ArrowRight className="h-4 w-4" />
             </button>
             <p className="mt-3 text-center text-[11px] text-gray-400">So sieht deine Buchungsseite für Kundinnen aus.</p>
-          </>
-        )}
+        </div>
+        </div>
       </div>
     </div>
   );
