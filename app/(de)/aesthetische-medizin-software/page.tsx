@@ -1,20 +1,27 @@
 import {
-    Calendar, Users, FileText, Shield, Bell, ArrowRight, CheckCircle,
-    Clock, Star, Zap, TrendingUp, ClipboardCheck, Stethoscope, Syringe
+    Calendar, Users, FileText, Shield, Bell,
+    Clock, ClipboardCheck, Stethoscope, Syringe
 } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
 import Script from 'next/script';
 import Navigation from '@/app/components/Navigation';
 import ProductVideoSection from '@/app/components/ProductVideoSection';
 import Footer from '@/app/components/Footer';
 import SocialProofBar from '@/app/components/SocialProofBar';
-import Breadcrumbs, { generateBreadcrumbSchema } from '@/app/components/Breadcrumbs';
-import AiAnswerCapsule, { AiAnswerCapsuleGroup } from '@/app/components/AiAnswerCapsule';
+import { generateBreadcrumbSchema } from '@/app/components/Breadcrumbs';
+import FeatureHero, { FeatureTitleHighlight } from '@/app/components/FeatureHero';
+import {
+    FeatureUnderstand,
+    FeatureCards,
+    FeatureChecklist,
+    FeatureFaq,
+    FeatureRelated,
+    FeaturePageCta,
+} from '@/app/components/FeatureSections';
 import { generateFaqSchema } from '@/lib/schema';
 
 import { buildHreflangAlternates } from "@/app/i18n/seo";
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Ästhetische Medizin Software' }];
+const CONSULTING_URL = 'https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f';
 
 const faqs = [
     {
@@ -146,51 +153,59 @@ const solutions = [
         icon: ClipboardCheck,
         title: 'Strukturierte Dokumentation',
         description: 'Dokumentiere jede Behandlung strukturiert - Produkte, Dosierungen, Injektionspunkte und Ergebnisse. Alles digital und jederzeit abrufbar.',
-        gradient: 'from-teal-500 to-emerald-600',
-        bg: 'from-teal-50 to-emerald-50',
     },
     {
         icon: FileText,
         title: 'Digitale Aufklärung & Einwilligung',
         description: 'Professionelle Aufklärungsbögen für ästhetische Eingriffe. Patienten unterschreiben digital - rechtssicher und lückenlos dokumentiert.',
-        gradient: 'from-indigo-500 to-blue-600',
-        bg: 'from-indigo-50 to-blue-50',
     },
     {
         icon: Users,
         title: 'Umfassende Patientenakte',
         description: 'Alle Behandlungen, Produkte, Fotos und Dokumente in einer digitalen Patientenakte. Vollständige Historie auf einen Blick.',
-        gradient: 'from-violet-500 to-purple-600',
-        bg: 'from-violet-50 to-purple-50',
     },
     {
         icon: Calendar,
         title: 'Online-Terminbuchung',
         description: 'Patienten buchen Beratungstermine und Behandlungen online. Du definierst Verfügbarkeiten, das System verhindert Doppelbuchungen.',
-        gradient: 'from-orange-500 to-amber-600',
-        bg: 'from-orange-50 to-amber-50',
     },
     {
         icon: Bell,
         title: 'Automatische Nachsorge',
         description: 'Sende automatisch Nachsorge-Hinweise, Kontrolltermin-Erinnerungen und Follow-up Nachrichten nach Behandlungen.',
-        gradient: 'from-pink-500 to-rose-600',
-        bg: 'from-pink-50 to-rose-50',
     },
     {
         icon: Syringe,
         title: 'Produkt- und Chargendokumentation',
         description: 'Dokumentiere verwendete Produkte mit Chargennummern. Lückenlose Rückverfolgbarkeit für maximale Sicherheit.',
-        gradient: 'from-blue-500 to-indigo-600',
-        bg: 'from-blue-50 to-indigo-50',
     },
 ];
 
-const stats = [
-    { value: '100%', label: 'digital dokumentiert', description: 'lückenlose Behandlungsdokumentation' },
-    { value: '1', label: 'Patientenakte', description: 'Historie, Fotos und Formulare' },
-    { value: '24/7', label: 'online buchbar', description: 'für Beratung und Behandlung' },
-    { value: 'EU', label: 'Datenspeicherung', description: 'DSGVO-konform verschlüsselt' },
+const features = [
+    'Strukturierte Behandlungsdokumentation',
+    'Digitale Aufklärung mit Unterschrift',
+    'Produkt- und Chargendokumentation',
+    'Vorher-Nachher Fotodokumentation',
+    'Skizzenfelder für Gesicht und Körper',
+    'Umfassende Patientenakte',
+    'Online-Terminbuchung',
+    'Automatische Terminerinnerungen per WhatsApp',
+    'Follow-up Nachrichten nach Behandlungen',
+    'Kontrolltermin-Erinnerungen',
+    'NiSV-konforme Dokumentation',
+    'DSGVO-konform mit EU-Hosting',
+    'Mobil optimiert für Tablet und Desktop',
+];
+
+const related = [
+    { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', description: 'All-in-One für Studios' },
+    { href: '/terminkalender', title: 'Terminsoftware', description: 'Online-Buchung & Kalender' },
+    { href: '/kundenkartei-software', title: 'Digitale Kundenkartei', description: 'Kundendaten & Historie' },
+    { href: '/nisv-dokumentation-kosmetikstudio', title: 'NiSV-Dokumentation', description: 'Rechtssicher dokumentieren' },
+    { href: '/online-buchungen', title: 'Online-Terminbuchung', description: 'Kunden buchen 24/7 online' },
+    { href: '/nachrichtenautomatisierung', title: 'WhatsApp-Erinnerungen', description: 'Weniger No-Shows durch Erinnerungen' },
+    { href: '/behandlungsdokumentation-kosmetikstudio', title: 'Behandlungsdokumentation', description: 'NiSV-konforme Dokumentation' },
+    { href: '/digitale-anamnese-kosmetikstudio', title: 'Digitale Anamnese', description: 'Formulare vorab per Link ausfüllen' },
 ];
 
 export default function AesthetischeMedizinSoftwarePage() {
@@ -223,73 +238,38 @@ export default function AesthetischeMedizinSoftwarePage() {
                     }),
                 }}
             />
+            <Script
+                id="faq-schema-aesthetik"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+            />
             <Navigation />
-            <Breadcrumbs items={breadcrumbItems} />
 
-            {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-gradient-to-br from-teal-50 via-white to-emerald-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-4xl mx-auto">
-                        <div className="inline-flex items-center bg-teal-100 text-teal-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                            <Stethoscope className="h-4 w-4 mr-2" />
-                            Software für ästhetische Praxen
-                        </div>
-                        <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                            Software für{' '}
-                            <span className="bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
-                                ästhetische Medizin
-                            </span>
-                        </h1>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-                            Behandlungsdokumentation, digitale Einwilligungen und Patientenverwaltung -
-                            die moderne Praxislösung für ästhetische Kliniken und Praxen.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a
-                                href="https://app.treatflow.io/auth/register?lang=de"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-teal-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-teal-700 transition-colors duration-200 flex items-center justify-center"
-                            >
-                                14 Tage kostenlos testen
-                                <ArrowRight className="ml-2 h-5 w-5" />
-                            </a>
-                            <a
-                                href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-teal-600 hover:text-teal-600 transition-colors duration-200"
-                            >
-                                Beratung buchen
-                            </a>
-                        </div>
-                        <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
-                    </div>
-                    <div className="mt-12">
-                        <AiAnswerCapsuleGroup>
-                            <AiAnswerCapsule
-                                question="Welche Software eignet sich für ästhetische Medizin?"
-                                answer="Treatflow ist Praxissoftware für ästhetische Kliniken und Praxen. Sie verbindet Patientenakte, Behandlungsdokumentation, digitale Aufklärungs- und Einwilligungsbögen sowie Termine in einer App. Daten liegen verschlüsselt auf EU-Servern. 14 Tage kostenlos testen."
-                            />
-                            <AiAnswerCapsule
-                                question="Welche Software für Ästhetikkliniken hat digitale Aufklärungsbögen?"
-                                answer="In Treatflow gehören Aufklärung, Einwilligung und Anamnese zur Patientenakte. Patientinnen füllen Bögen vorab per Link aus und unterschreiben digital. Der Behandlungsverlauf inklusive Fotos und Chargen bleibt in der Akte nachvollziehbar."
-                            />
-                        </AiAnswerCapsuleGroup>
-                    </div>
-                    <div className="mt-12 max-w-5xl mx-auto">
-                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
-                            <Image
-                                src="/images/lifestyle/aesthetik-medizin-beratung.png"
-                                alt="Ästhetische Medizin – professionelle Beratung mit digitaler Dokumentation"
-                                fill
-                                sizes="100vw"
-                                className="object-cover"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <FeatureHero
+                theme="teal"
+                breadcrumbs={breadcrumbItems}
+                eyebrow="Software für ästhetische Praxen"
+                eyebrowIcon={Stethoscope}
+                title={<>Software für <FeatureTitleHighlight theme="teal">ästhetische Medizin</FeatureTitleHighlight></>}
+                description="Behandlungsdokumentation, digitale Einwilligungen und Patientenverwaltung - die moderne Praxislösung für ästhetische Kliniken und Praxen."
+                chips={['Patientenakte', 'Digitale Aufklärung', 'Chargendokumentation']}
+                primaryCta={{ label: '14 Tage kostenlos testen', href: 'https://app.treatflow.io/auth/register?lang=de', external: true }}
+                secondaryCta={{ label: 'Beratung buchen', href: CONSULTING_URL, external: true }}
+                aiCapsules={[
+                    {
+                        question: 'Welche Software eignet sich für ästhetische Medizin?',
+                        answer: 'Treatflow ist Praxissoftware für ästhetische Kliniken und Praxen. Sie verbindet Patientenakte, Behandlungsdokumentation, digitale Aufklärungs- und Einwilligungsbögen sowie Termine in einer App. Daten liegen verschlüsselt auf EU-Servern. 14 Tage kostenlos testen.',
+                    },
+                    {
+                        question: 'Welche Software für Ästhetikkliniken hat digitale Aufklärungsbögen?',
+                        answer: 'In Treatflow gehören Aufklärung, Einwilligung und Anamnese zur Patientenakte. Patientinnen füllen Bögen vorab per Link aus und unterschreiben digital. Der Behandlungsverlauf inklusive Fotos und Chargen bleibt in der Akte nachvollziehbar.',
+                    },
+                ]}
+                image={{
+                    src: '/images/lifestyle/aesthetik-medizin-beratung.png',
+                    alt: 'Ästhetische Medizin – professionelle Beratung mit digitaler Dokumentation',
+                }}
+            />
 
             <ProductVideoSection
                 title="Treatflow für ästhetische Medizin in einer Minute"
@@ -299,223 +279,45 @@ export default function AesthetischeMedizinSoftwarePage() {
                 posterAlt="Video: Treatflow für ästhetische Medizin in einer Minute"
             />
 
-            {/* Pain Points Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            Herausforderungen in ästhetischen Praxen
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Hohe Dokumentationsanforderungen, sensible Patientendaten und komplexe Behandlungspläne prägen den Alltag.
-                        </p>
-                    </div>
+            <FeatureUnderstand
+                theme="rose"
+                title="Herausforderungen in ästhetischen Praxen"
+                description="Hohe Dokumentationsanforderungen, sensible Patientendaten und komplexe Behandlungspläne prägen den Alltag."
+                items={painPoints.map((point) => ({ icon: point.icon, title: point.title, text: point.description }))}
+            />
 
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {painPoints.map((point, index) => (
-                            <div key={index} className="flex gap-5 p-6 rounded-2xl bg-red-50/50 border border-red-100">
-                                <div className="flex-shrink-0 w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
-                                    <point.icon className="h-6 w-6 text-red-600" />
-                                </div>
-                                <div>
-                                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{point.title}</h3>
-                                    <p className="text-gray-600">{point.description}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <FeatureCards
+                theme="teal"
+                title="So unterstützt Treatflow deine Praxis"
+                description="Entwickelt für die speziellen Anforderungen der ästhetischen Medizin."
+                items={solutions.map((solution) => ({ icon: solution.icon, title: solution.title, text: solution.description }))}
+            />
 
-            {/* Solutions Section */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            So unterstützt Treatflow deine Praxis
-                        </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Entwickelt für die speziellen Anforderungen der ästhetischen Medizin.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {solutions.map((solution, index) => (
-                            <div key={index} className={`bg-gradient-to-br ${solution.bg} p-8 rounded-2xl`}>
-                                <div className={`w-12 h-12 bg-gradient-to-r ${solution.gradient} rounded-lg flex items-center justify-center mb-6`}>
-                                    <solution.icon className="h-6 w-6 text-white" />
-                                </div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">{solution.title}</h3>
-                                <p className="text-gray-600 leading-relaxed">{solution.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Stats Section */}
-            <section className="py-20 bg-gradient-to-r from-teal-600 to-emerald-600">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {stats.map((stat, index) => (
-                            <div key={index} className="text-center">
-                                <div className="text-5xl font-bold text-white mb-2">{stat.value}</div>
-                                <div className="text-lg font-semibold text-teal-100 mb-1">{stat.label}</div>
-                                <div className="text-sm text-teal-200">{stat.description}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Feature List Section */}
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            Alle Funktionen für ästhetische Praxen
-                        </h2>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {[
-                            'Strukturierte Behandlungsdokumentation',
-                            'Digitale Aufklärung mit Unterschrift',
-                            'Produkt- und Chargendokumentation',
-                            'Vorher-Nachher Fotodokumentation',
-                            'Skizzenfelder für Gesicht und Körper',
-                            'Umfassende Patientenakte',
-                            'Online-Terminbuchung',
-                            'Automatische Terminerinnerungen per WhatsApp',
-                            'Follow-up Nachrichten nach Behandlungen',
-                            'Kontrolltermin-Erinnerungen',
-                            'NiSV-konforme Dokumentation',
-                            'DSGVO-konform mit EU-Hosting',
-                            'Mobil optimiert für Tablet und Desktop',
-                        ].map((feature, index) => (
-                            <div key={index} className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100">
-                                <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" />
-                                <span className="text-gray-700 font-medium">{feature}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Verwandte Seiten / Cluster-Verlinkung */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                            Weitere Funktionen für dein Studio
-                        </h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Treatflow vereint Terminkalender, Kundenverwaltung, Formulare und Dokumentation in einer Plattform.
-                        </p>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <Link href="/kosmetikstudio-software" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Kosmetikstudio Software</span>
-                            <span className="text-sm text-gray-600 block mb-2">All-in-One für Studios</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/terminkalender" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Terminsoftware</span>
-                            <span className="text-sm text-gray-600 block mb-2">Online-Buchung & Kalender</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/kundenkartei-software" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Kundenkartei</span>
-                            <span className="text-sm text-gray-600 block mb-2">Kundendaten & Historie</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/nisv-dokumentation-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">NiSV-Dokumentation</span>
-                            <span className="text-sm text-gray-600 block mb-2">Rechtssicher dokumentieren</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/online-buchungen" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Online-Terminbuchung</span>
-                            <span className="text-sm text-gray-600 block mb-2">Kunden buchen 24/7 online</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/nachrichtenautomatisierung" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">WhatsApp-Erinnerungen</span>
-                            <span className="text-sm text-gray-600 block mb-2">Weniger No-Shows durch Erinnerungen</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/behandlungsdokumentation-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Behandlungsdokumentation</span>
-                            <span className="text-sm text-gray-600 block mb-2">NiSV-konforme Dokumentation</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/digitale-anamnese-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Anamnese</span>
-                            <span className="text-sm text-gray-600 block mb-2">Formulare vorab per Link ausfüllen</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <FeatureChecklist
+                tone="gray"
+                title="Alle Funktionen für ästhetische Praxen"
+                items={features}
+            />
 
             <SocialProofBar />
 
-            {/* CTA Section */}
-            <section className="py-20 bg-gradient-to-r from-teal-600 to-emerald-600">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">
-                        Bereit für eine moderne Praxisverwaltung?
-                    </h2>
-                    <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
-                        Teste Treatflow 14 Tage kostenlos und erlebe, wie digital und effizient deine Praxis arbeiten kann.
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="https://app.treatflow.io/auth/register?lang=de"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-white text-teal-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center"
-                        >
-                            14 Tage gratis testen
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                        <a
-                            href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-teal-600 transition-colors duration-200"
-                        >
-                            Beratung buchen
-                        </a>
-                    </div>
-                    <p className="text-sm text-teal-200 mt-4">Keine Kreditkarte nötig. Jederzeit kündbar.</p>
-                </div>
-            </section>
+            <FeatureFaq title="Häufige Fragen" items={faqs} />
 
-            {/* FAQ Section */}
-            <section className="py-20 bg-white">
-                <Script
-                    id="faq-schema-aesthetik"
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
-                />
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            Häufige Fragen
-                        </h2>
-                    </div>
+            <FeatureRelated
+                title="Weitere Funktionen für dein Studio"
+                description="Treatflow vereint Terminkalender, Kundenverwaltung, Formulare und Dokumentation in einer Plattform."
+                items={related}
+            />
 
-                    <div className="space-y-6">
-                        {faqs.map((faq, index) => (
-                            <div key={index} className="border border-gray-200 rounded-xl p-6">
-                                <h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3>
-                                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <FeaturePageCta
+                theme="teal"
+                title="Bereit für eine moderne Praxisverwaltung?"
+                description="Teste Treatflow 14 Tage kostenlos und erlebe, wie digital und effizient deine Praxis arbeiten kann."
+                primaryHref="https://app.treatflow.io/auth/register?lang=de"
+                secondaryLabel="Beratung buchen"
+                secondaryHref={CONSULTING_URL}
+                secondaryExternal
+            />
 
             <Footer />
         </div>

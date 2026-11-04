@@ -235,7 +235,7 @@ export function FeatureRelated({
                             className="group flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 transition-all hover:border-indigo-300 hover:shadow-md"
                         >
                             <span>
-                                <span className="block font-semibold text-gray-900 group-hover:text-indigo-600">{item.title}</span>
+                                <h3 className="text-base font-semibold text-gray-900 group-hover:text-indigo-600">{item.title}</h3>
                                 <span className="block text-sm text-gray-500">{item.description}</span>
                             </span>
                             <ArrowRight className="h-4 w-4 flex-shrink-0 text-gray-300 transition-colors group-hover:text-indigo-500" />

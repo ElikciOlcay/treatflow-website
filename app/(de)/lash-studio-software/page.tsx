@@ -1,19 +1,27 @@
 import {
-    Calendar, Users, FileText, Shield, Bell, ArrowRight, CheckCircle,
-    Clock, Zap, Heart, TrendingUp, ClipboardCheck, Eye, Sparkles
+    Calendar, Users, FileText, Shield, Bell,
+    Clock, ClipboardCheck, Eye, Sparkles
 } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
 import Script from 'next/script';
 import Navigation from '@/app/components/Navigation';
 import ProductVideoSection from '@/app/components/ProductVideoSection';
 import Footer from '@/app/components/Footer';
 import SocialProofBar from '@/app/components/SocialProofBar';
-import Breadcrumbs, { generateBreadcrumbSchema } from '@/app/components/Breadcrumbs';
+import { generateBreadcrumbSchema } from '@/app/components/Breadcrumbs';
+import FeatureHero, { FeatureTitleHighlight } from '@/app/components/FeatureHero';
+import {
+    FeatureUnderstand,
+    FeatureCards,
+    FeatureChecklist,
+    FeatureFaq,
+    FeatureRelated,
+    FeaturePageCta,
+} from '@/app/components/FeatureSections';
 import { generateFaqSchema } from '@/lib/schema';
 
 import { buildHreflangAlternates } from "@/app/i18n/seo";
 const breadcrumbItems = [{ label: 'Branchen' }, { label: 'Lash Studio Software' }];
+const CONSULTING_URL = 'https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f';
 
 const faqs = [
     { question: 'Eignet sich Treatflow für Wimpernverlängerung und Lash Lifting?', answer: 'Ja, Treatflow eignet sich für alle Wimpernbehandlungen - Wimpernverlängerung, Volume Lashes, Lash Lifting, Wimpernfärben und mehr. Formulare und Dokumentation sind flexibel anpassbar.' },
@@ -58,19 +66,38 @@ const painPoints = [
 ];
 
 const solutions = [
-    { icon: Calendar, title: 'Online-Buchungen per Link', description: 'Dein persönlicher Buchungslink für Instagram-Bio, Website und WhatsApp. Kundinnen buchen selbst - kein DM-Chaos mehr.', gradient: 'from-violet-500 to-purple-600', bg: 'from-violet-50 to-purple-50' },
-    { icon: Users, title: 'Kundenprofile mit Lash-Details', description: 'Speichere Wimpernlänge, Biegung, Kleber-Typ, Allergien und individuelle Notizen pro Kundin.', gradient: 'from-pink-500 to-rose-600', bg: 'from-pink-50 to-rose-50' },
-    { icon: ClipboardCheck, title: 'Digitale Einwilligungen', description: 'Allergieabfrage und Einwilligungsformulare digital ausfüllen und unterschreiben lassen - vorab per Link oder am Tablet.', gradient: 'from-emerald-500 to-teal-600', bg: 'from-emerald-50 to-teal-50' },
-    { icon: Bell, title: 'Automatische Erinnerungen', description: 'Reduziere No-Shows mit automatischen Erinnerungen per WhatsApp und E-Mail. Sende auch Pflegehinweise nach der Behandlung.', gradient: 'from-orange-500 to-amber-600', bg: 'from-orange-50 to-amber-50' },
-    { icon: Sparkles, title: 'Refill-Erinnerungen', description: 'Erinnere Kundinnen automatisch an den nächsten Refill-Termin im idealen Zeitfenster von 2-3 Wochen.', gradient: 'from-blue-500 to-indigo-600', bg: 'from-blue-50 to-indigo-50' },
-    { icon: Shield, title: 'DSGVO-konform & sicher', description: 'Alle Kundendaten verschlüsselt in EU-Rechenzentren gespeichert. Datenschutzkonform und sicher.', gradient: 'from-gray-600 to-gray-800', bg: 'from-gray-50 to-slate-100' },
+    { icon: Calendar, title: 'Online-Buchungen per Link', description: 'Dein persönlicher Buchungslink für Instagram-Bio, Website und WhatsApp. Kundinnen buchen selbst - kein DM-Chaos mehr.' },
+    { icon: Users, title: 'Kundenprofile mit Lash-Details', description: 'Speichere Wimpernlänge, Biegung, Kleber-Typ, Allergien und individuelle Notizen pro Kundin.' },
+    { icon: ClipboardCheck, title: 'Digitale Einwilligungen', description: 'Allergieabfrage und Einwilligungsformulare digital ausfüllen und unterschreiben lassen - vorab per Link oder am Tablet.' },
+    { icon: Bell, title: 'Automatische Erinnerungen', description: 'Reduziere No-Shows mit automatischen Erinnerungen per WhatsApp und E-Mail. Sende auch Pflegehinweise nach der Behandlung.' },
+    { icon: Sparkles, title: 'Refill-Erinnerungen', description: 'Erinnere Kundinnen automatisch an den nächsten Refill-Termin im idealen Zeitfenster von 2-3 Wochen.' },
+    { icon: Shield, title: 'DSGVO-konform & sicher', description: 'Alle Kundendaten verschlüsselt in EU-Rechenzentren gespeichert. Datenschutzkonform und sicher.' },
 ];
 
-const stats = [
-    { value: '80%', label: 'weniger No-Shows', description: 'durch automatische Erinnerungen' },
-    { value: '5h+', label: 'Zeit gespart pro Woche', description: 'durch Online-Buchungen' },
-    { value: '24/7', label: 'online buchbar', description: 'perfekt für Instagram' },
-    { value: '100%', label: 'papierfrei', description: 'digitale Einwilligungen' },
+const features = [
+    'Online-Terminbuchung per Buchungslink',
+    'Digitale Einwilligungsformulare',
+    'Allergieabfrage vor der Behandlung',
+    'Kundenprofile mit Wimpern-Details',
+    'Automatische Terminerinnerungen per WhatsApp',
+    'Refill-Erinnerungen automatisch senden',
+    'Pflegehinweise nach Behandlung',
+    'Foto-Dokumentation',
+    'Kalender mit Tages- und Wochenansicht',
+    'Mehrere Lash Artists verwalten',
+    'DSGVO-konforme Datenspeicherung',
+    'Mobil optimiert für Tablet und Smartphone',
+];
+
+const related = [
+    { href: '/kosmetikstudio-software', title: 'Kosmetikstudio Software', description: 'All-in-One für Studios' },
+    { href: '/terminkalender', title: 'Terminsoftware', description: 'Online-Buchung & Kalender' },
+    { href: '/kundenverwaltung', title: 'Digitale Kundenkartei', description: 'Kundendaten & Historie' },
+    { href: '/anamnesebogen-kosmetikstudio', title: 'Digitale Anamnesebögen', description: 'Formulare & Einwilligungen' },
+    { href: '/online-buchungen', title: 'Online-Terminbuchung', description: 'Kunden buchen 24/7 online' },
+    { href: '/nachrichtenautomatisierung', title: 'WhatsApp-Erinnerungen', description: 'Weniger No-Shows durch Erinnerungen' },
+    { href: '/behandlungsdokumentation-kosmetikstudio', title: 'Behandlungsdokumentation', description: 'NiSV-konforme Dokumentation' },
+    { href: '/digitale-anamnese-kosmetikstudio', title: 'Digitale Anamnese', description: 'Formulare vorab per Link ausfüllen' },
 ];
 
 export default function LashStudioSoftwarePage() {
@@ -81,46 +108,28 @@ export default function LashStudioSoftwarePage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems)) }}
             />
+            <Script
+                id="faq-schema-lash"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
+            />
             <Navigation />
-            <Breadcrumbs items={breadcrumbItems} />
 
-            <section className="pt-32 pb-20 bg-gradient-to-br from-violet-50 via-white to-purple-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-4xl mx-auto">
-                        <div className="inline-flex items-center bg-violet-100 text-violet-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                            <Eye className="h-4 w-4 mr-2" />
-                            Software für Lash Studios
-                        </div>
-                        <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                            Software für dein{' '}
-                            <span className="bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">Wimpernstudio</span>
-                        </h1>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-                            Online-Buchungen, Kundenverwaltung mit Lash-Details und digitale Einwilligungen - damit du dich auf perfekte Wimpern konzentrieren kannst.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="https://app.treatflow.io/auth/register?lang=de" target="_blank" rel="noopener noreferrer" className="bg-violet-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-violet-700 transition-colors duration-200 flex items-center justify-center">
-                                14 Tage kostenlos testen <ArrowRight className="ml-2 h-5 w-5" />
-                            </a>
-                            <a href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f" target="_blank" rel="noopener noreferrer" className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-xl font-semibold hover:border-violet-600 hover:text-violet-600 transition-colors duration-200">
-                                Beratung buchen
-                            </a>
-                        </div>
-                        <p className="text-sm text-gray-500 mt-4">Keine Kreditkarte nötig. Keine versteckten Kosten.</p>
-                    </div>
-                    <div className="mt-12 max-w-5xl mx-auto">
-                        <div className="relative w-full rounded-2xl shadow-xl overflow-hidden aspect-[21/9]">
-                            <Image
-                                src="/images/branchen/hero-lash.jpg"
-                                alt="Lash Studio – professionelle Wimpernbehandlung"
-                                fill
-                                sizes="100vw"
-                                className="object-cover"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <FeatureHero
+                theme="purple"
+                breadcrumbs={breadcrumbItems}
+                eyebrow="Software für Lash Studios"
+                eyebrowIcon={Eye}
+                title={<>Software für dein <FeatureTitleHighlight theme="purple">Wimpernstudio</FeatureTitleHighlight></>}
+                description="Online-Buchungen, Kundenverwaltung mit Lash-Details und digitale Einwilligungen - damit du dich auf perfekte Wimpern konzentrieren kannst."
+                chips={['Online-Buchungen', 'Lash-Details pro Kundin', 'Digitale Einwilligungen']}
+                primaryCta={{ label: '14 Tage kostenlos testen', href: 'https://app.treatflow.io/auth/register?lang=de', external: true }}
+                secondaryCta={{ label: 'Beratung buchen', href: CONSULTING_URL, external: true }}
+                image={{
+                    src: '/images/branchen/hero-lash.jpg',
+                    alt: 'Lash Studio – professionelle Wimpernbehandlung',
+                }}
+            />
 
             <ProductVideoSection
                 title="Treatflow fürs Lash-Studio in einer Minute"
@@ -130,145 +139,45 @@ export default function LashStudioSoftwarePage() {
                 posterAlt="Video: Treatflow fürs Lash-Studio in einer Minute"
             />
 
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Typische Probleme im Lash-Alltag</h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">Du willst Wimpern zaubern - nicht Verwaltung erledigen.</p>
-                    </div>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {painPoints.map((point, index) => (
-                            <div key={index} className="flex gap-5 p-6 rounded-2xl bg-red-50/50 border border-red-100">
-                                <div className="flex-shrink-0 w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center"><point.icon className="h-6 w-6 text-red-600" /></div>
-                                <div><h3 className="text-lg font-semibold text-gray-900 mb-2">{point.title}</h3><p className="text-gray-600">{point.description}</p></div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <FeatureUnderstand
+                theme="rose"
+                title="Typische Probleme im Lash-Alltag"
+                description="Du willst Wimpern zaubern - nicht Verwaltung erledigen."
+                items={painPoints.map((point) => ({ icon: point.icon, title: point.title, text: point.description }))}
+            />
 
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">So hilft Treatflow deinem Lash Studio</h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">Entwickelt für die speziellen Anforderungen von Wimpernstudios.</p>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {solutions.map((s, i) => (
-                            <div key={i} className={`bg-gradient-to-br ${s.bg} p-8 rounded-2xl`}>
-                                <div className={`w-12 h-12 bg-gradient-to-r ${s.gradient} rounded-lg flex items-center justify-center mb-6`}><s.icon className="h-6 w-6 text-white" /></div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-3">{s.title}</h3>
-                                <p className="text-gray-600 leading-relaxed">{s.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <FeatureCards
+                theme="purple"
+                title="So hilft Treatflow deinem Lash Studio"
+                description="Entwickelt für die speziellen Anforderungen von Wimpernstudios."
+                items={solutions.map((solution) => ({ icon: solution.icon, title: solution.title, text: solution.description }))}
+            />
 
-            <section className="py-20 bg-gradient-to-r from-violet-600 to-purple-600">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {stats.map((s, i) => (<div key={i} className="text-center"><div className="text-5xl font-bold text-white mb-2">{s.value}</div><div className="text-lg font-semibold text-violet-100 mb-1">{s.label}</div><div className="text-sm text-violet-200">{s.description}</div></div>))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="py-20 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16"><h2 className="text-4xl font-bold text-gray-900 mb-4">Alle Funktionen für Lash Studios</h2></div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {['Online-Terminbuchung per Buchungslink', 'Digitale Einwilligungsformulare', 'Allergieabfrage vor der Behandlung', 'Kundenprofile mit Wimpern-Details', 'Automatische Terminerinnerungen per WhatsApp', 'Refill-Erinnerungen automatisch senden', 'Pflegehinweise nach Behandlung', 'Foto-Dokumentation', 'Kalender mit Tages- und Wochenansicht', 'Mehrere Lash Artists verwalten', 'DSGVO-konforme Datenspeicherung', 'Mobil optimiert für Tablet und Smartphone'].map((f, i) => (
-                            <div key={i} className="flex items-center gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100"><CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0" /><span className="text-gray-700 font-medium">{f}</span></div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <FeatureChecklist
+                tone="gray"
+                title="Alle Funktionen für Lash Studios"
+                items={features}
+            />
 
             <SocialProofBar />
 
-            <section className="py-20 bg-gradient-to-r from-violet-600 to-purple-600">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">Bereit für ein digitales Lash Studio?</h2>
-                    <p className="text-xl text-violet-100 mb-8 max-w-2xl mx-auto">Teste Treatflow 14 Tage kostenlos und erlebe, wie viel einfacher dein Studio-Alltag sein kann.</p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="https://app.treatflow.io/auth/register?lang=de" target="_blank" rel="noopener noreferrer" className="bg-white text-violet-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-200 flex items-center justify-center">14 Tage gratis testen <ArrowRight className="ml-2 h-5 w-5" /></a>
-                        <a href="https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-violet-600 transition-colors duration-200">Beratung buchen</a>
-                    </div>
-                    <p className="text-sm text-violet-200 mt-4">Keine Kreditkarte nötig. Jederzeit kündbar.</p>
-                </div>
-            </section>
+            <FeatureFaq title="Häufige Fragen" items={faqs} />
 
-            <section className="py-20 bg-white">
-                <Script
-                    id="faq-schema-lash"
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFaqSchema(faqs)) }}
-                />
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16"><h2 className="text-4xl font-bold text-gray-900 mb-4">Häufige Fragen</h2></div>
-                    <div className="space-y-6">
-                        {faqs.map((faq, i) => (
-                            <div key={i} className="border border-gray-200 rounded-xl p-6"><h3 className="text-lg font-semibold text-gray-900 mb-3">{faq.question}</h3><p className="text-gray-600 leading-relaxed">{faq.answer}</p></div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <FeatureRelated
+                title="Weitere Funktionen für dein Studio"
+                description="Treatflow vereint Terminkalender, Kundenverwaltung, Formulare und Dokumentation in einer Plattform."
+                items={related}
+            />
 
-            {/* Verwandte Seiten / Cluster-Verlinkung */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                            Weitere Funktionen für dein Studio
-                        </h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Treatflow vereint Terminkalender, Kundenverwaltung, Formulare und Dokumentation in einer Plattform.
-                        </p>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <Link href="/kosmetikstudio-software" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Kosmetikstudio Software</span>
-                            <span className="text-sm text-gray-600 block mb-2">All-in-One für Studios</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/terminkalender" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Terminsoftware</span>
-                            <span className="text-sm text-gray-600 block mb-2">Online-Buchung & Kalender</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/kundenverwaltung" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Kundenkartei</span>
-                            <span className="text-sm text-gray-600 block mb-2">Kundendaten & Historie</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/anamnesebogen-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Anamnesebögen</span>
-                            <span className="text-sm text-gray-600 block mb-2">Formulare & Einwilligungen</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/online-buchungen" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Online-Terminbuchung</span>
-                            <span className="text-sm text-gray-600 block mb-2">Kunden buchen 24/7 online</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/nachrichtenautomatisierung" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">WhatsApp-Erinnerungen</span>
-                            <span className="text-sm text-gray-600 block mb-2">Weniger No-Shows durch Erinnerungen</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/behandlungsdokumentation-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Behandlungsdokumentation</span>
-                            <span className="text-sm text-gray-600 block mb-2">NiSV-konforme Dokumentation</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                        <Link href="/digitale-anamnese-kosmetikstudio" className="group p-6 rounded-2xl border border-gray-200 bg-white hover:border-indigo-200 hover:shadow-lg transition-all">
-                            <span className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 block mb-1">Digitale Anamnese</span>
-                            <span className="text-sm text-gray-600 block mb-2">Formulare vorab per Link ausfüllen</span>
-                            <span className="inline-flex items-center text-indigo-600 text-sm font-medium">Mehr erfahren <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" /></span>
-                        </Link>
-                    </div>
-                </div>
-            </section>
+            <FeaturePageCta
+                theme="purple"
+                title="Bereit für ein digitales Lash Studio?"
+                description="Teste Treatflow 14 Tage kostenlos und erlebe, wie viel einfacher dein Studio-Alltag sein kann."
+                primaryHref="https://app.treatflow.io/auth/register?lang=de"
+                secondaryLabel="Beratung buchen"
+                secondaryHref={CONSULTING_URL}
+                secondaryExternal
+            />
 
             <Footer />
         </div>
