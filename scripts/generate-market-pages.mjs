@@ -636,7 +636,7 @@ if (fs.existsSync(marketRoot)) {
 ensureDir(marketRoot);
 
 write(path.join(marketRoot, "layout.tsx"), layout);
-write(path.join(marketRoot, "page.tsx"), homePage);
+write(path.join(marketRoot, "(home)", "page.tsx"), homePage);
 write(path.join(marketRoot, "pricing", "page.tsx"), pricingPage);
 write(path.join(marketRoot, "early-access", "page.tsx"), earlyAccessPage);
 write(path.join(marketRoot, "contact", "page.tsx"), contactPage);

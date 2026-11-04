@@ -2,7 +2,7 @@
 
 import { CheckCircle, ArrowRight, Shield } from 'lucide-react';
 import { LandingPrimaryCTA } from '@/app/components/landing/LandingCTA';
-import { basicFeatures, bookingFeatures } from '@/app/landing/kosmetikstudio-software/data';
+import { basicFeatures, bookingFeatures } from '@/app/(de)/landing/kosmetikstudio-software/data';
 import { LANDING_URLS, trackLandingSignup } from '@/lib/analytics/landingEvents';
 
 type LandingPricingSectionProps = {

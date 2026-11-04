@@ -1,11 +1,11 @@
 /**
  * Zentrale Source-of-Truth fuer alle Blog-Posts.
- * - Blog-Uebersicht (`app/blog/page.tsx`) rendert daraus die Liste.
+ * - Blog-Uebersicht (`app/(de)/blog/page.tsx`) rendert daraus die Liste.
  * - Sitemap (`app/sitemap.ts`) nutzt `publishedAt` als `lastModified`.
- * - RSS-Feed (`app/blog/feed.xml/route.ts`) nutzt `publishedAt` + `excerpt` + `category`.
+ * - RSS-Feed (`app/(de)/blog/feed.xml/route.ts`) nutzt `publishedAt` + `excerpt` + `category`.
  *
  * Beim Anlegen eines neuen Blog-Posts: hier eintragen UND die zugehoerige
- * `app/blog/<slug>/page.tsx` erstellen. Damit sind sitemap, RSS und UI
+ * `app/(de)/blog/<slug>/page.tsx` erstellen. Damit sind sitemap, RSS und UI
  * automatisch konsistent.
  */
 

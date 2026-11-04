@@ -38,7 +38,7 @@ META_TEST_EVENT_CODE=TEST12345        # Optional für Testing
 
 ### 3. Pixel ID in Landing Page
 
-Ersetzen Sie in `app/landing/dokumentation-formulare/page.tsx`:
+Ersetzen Sie in `app/(de)/landing/dokumentation-formulare/page.tsx`:
 
 ```javascript
 fbq('init', 'YOUR_PIXEL_ID'); // Replace with your actual Pixel ID

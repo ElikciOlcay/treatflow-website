@@ -33,33 +33,33 @@ public/images/
 #### Terminkalender
 - **Dateiname:** `terminkalender-hero.png`
 - **Beschreibung:** Kalender-Ansicht (Wochen/Monatsansicht)
-- **Verwendung:** `app/terminkalender/page.tsx`
+- **Verwendung:** `app/(de)/terminkalender/page.tsx`
 
 #### Kundenverwaltung
 - **Dateiname:** `kundenverwaltung-hero.png`
 - **Beschreibung:** Kundenliste mit Details
-- **Verwendung:** `app/kundenverwaltung/page.tsx`
+- **Verwendung:** `app/(de)/kundenverwaltung/page.tsx`
 
 #### Formulare
 - **Dateiname:** `formulare-hero.png`
 - **Beschreibung:** Formular-Marketplace oder Editor
-- **Verwendung:** `app/formulare/page.tsx`
+- **Verwendung:** `app/(de)/formulare/page.tsx`
 
 #### Behandlungsdokumentation
 - **Dateiname:** `dokumentation-hero.png`
 - **Beschreibung:** Behandlungsdokumentation Interface
-- **Verwendung:** `app/behandlungsdokumentation/page.tsx`
+- **Verwendung:** `app/(de)/behandlungsdokumentation/page.tsx`
 
 #### Online-Buchungen
 - **Dateiname:** `online-buchung-hero.png`
 - **Beschreibung:** Kundensicht der Buchungsseite
-- **Verwendung:** `app/online-buchungen/page.tsx`
+- **Verwendung:** `app/(de)/online-buchungen/page.tsx`
 - **Besonderheit:** Zeigt die Kundenseite (mein-studio.treatflow.io)
 
 #### Shop
 - **Dateiname:** `shop-hero.png`
 - **Beschreibung:** E-Commerce Interface
-- **Verwendung:** `app/shop/page.tsx`
+- **Verwendung:** `app/(de)/shop/page.tsx`
 
 ## Technische Anforderungen
 
