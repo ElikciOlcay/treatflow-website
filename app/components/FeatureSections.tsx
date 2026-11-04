@@ -11,6 +11,9 @@ type SectionHeaderProps = {
     align?: 'left' | 'center';
 };
 
+/** Einheitlicher Abstand für alle Abschnitte der Funktions- und Branchenseiten */
+const SECTION = 'py-20 sm:py-24 lg:py-28';
+
 export function FeatureSectionHeader({
     eyebrow,
     title,
@@ -18,11 +21,11 @@ export function FeatureSectionHeader({
     align = 'center',
 }: SectionHeaderProps) {
     return (
-        <div className={`mb-12 ${align === 'center' ? 'text-center max-w-3xl mx-auto' : 'max-w-2xl'}`}>
+        <div className={`mb-12 lg:mb-16 ${align === 'center' ? 'text-center max-w-2xl mx-auto' : 'max-w-2xl'}`}>
             {eyebrow && (
-                <p className="text-sm font-semibold text-indigo-600 mb-2">{eyebrow}</p>
+                <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600 mb-3">{eyebrow}</p>
             )}
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 hyphens-none" lang="de">
+            <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 hyphens-none" lang="de">
                 {title}
             </h2>
             {description && (
@@ -32,6 +35,7 @@ export function FeatureSectionHeader({
     );
 }
 
+/** Drei Kernvorteile, groß und ohne Kartenrahmen. */
 export function FeatureUnderstand({
     theme = 'indigo',
     title = 'So hilft dir die Funktion',
@@ -46,20 +50,17 @@ export function FeatureUnderstand({
     const t = featureHeroThemes[theme];
 
     return (
-        <section className="py-16 sm:py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className={`${SECTION} bg-white`}>
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <FeatureSectionHeader title={title} description={description} />
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className={`grid gap-x-10 gap-y-12 ${items.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-3'}`}>
                     {items.map((item) => (
-                        <div
-                            key={item.title}
-                            className="group bg-white p-6 rounded-2xl border border-gray-100 transition-all duration-300 hover:shadow-xl"
-                        >
-                            <div className={`w-12 h-12 ${t.pillBg} ${t.accent} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                        <div key={item.title} className="text-center md:text-left">
+                            <div className={`mx-auto md:mx-0 mb-5 flex h-12 w-12 items-center justify-center rounded-xl ${t.pillBg} ${t.accent}`}>
                                 <item.icon className="h-6 w-6" />
                             </div>
-                            <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                            <p className="text-sm text-gray-600 leading-relaxed">{item.text}</p>
+                            <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
+                            <p className="text-gray-600 leading-relaxed">{item.text}</p>
                         </div>
                     ))}
                 </div>
@@ -68,6 +69,7 @@ export function FeatureUnderstand({
     );
 }
 
+/** Drei Schritte nebeneinander, verbunden durch eine Linie. */
 export function FeatureHowItWorks({
     theme = 'indigo',
     title = 'So funktioniert’s',
@@ -82,17 +84,17 @@ export function FeatureHowItWorks({
     const t = featureHeroThemes[theme];
 
     return (
-        <section className="py-16 sm:py-20 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className={`${SECTION} bg-gray-50`}>
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <FeatureSectionHeader title={title} description={description} />
-                <ol className="grid md:grid-cols-3 gap-6">
+                <ol className="relative grid md:grid-cols-3 gap-x-10 gap-y-10 md:before:absolute md:before:left-[16%] md:before:right-[16%] md:before:top-5 md:before:h-px md:before:bg-gray-200">
                     {steps.map((step, i) => (
-                        <li key={step.title} className="bg-white rounded-2xl border border-gray-100 p-6">
-                            <div className={`inline-flex h-10 w-10 items-center justify-center rounded-full ${t.ctaBg} text-white font-bold mb-4`}>
+                        <li key={step.title} className="relative text-center">
+                            <div className={`relative z-10 mx-auto mb-5 flex h-10 w-10 items-center justify-center rounded-full ${t.ctaBg} text-white font-bold ring-8 ring-gray-50`}>
                                 {i + 1}
                             </div>
-                            <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
-                            <p className="text-sm text-gray-600 leading-relaxed">{step.text}</p>
+                            <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
+                            <p className="text-gray-600 leading-relaxed max-w-xs mx-auto">{step.text}</p>
                         </li>
                     ))}
                 </ol>
@@ -101,6 +103,7 @@ export function FeatureHowItWorks({
     );
 }
 
+/** Funktionsliste als ruhiges Raster: Icon und Titel in einer Zeile, Stichpunkte als leise Zeile darunter. */
 export function FeatureCards({
     theme = 'indigo',
     title = 'Was du bekommst',
@@ -115,25 +118,24 @@ export function FeatureCards({
     const t = featureHeroThemes[theme];
 
     return (
-        <section className="py-16 sm:py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className={`${SECTION} bg-white`}>
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <FeatureSectionHeader title={title} description={description} />
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
                     {items.map((item) => (
-                        <article
-                            key={item.title}
-                            className="group bg-white p-6 rounded-2xl border border-gray-100 transition-all duration-300 hover:shadow-xl"
-                        >
-                            <div className={`w-12 h-12 ${t.pillBg} ${t.accent} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                                <item.icon className="h-6 w-6" />
+                        <article key={item.title}>
+                            <div className="flex items-center gap-3 mb-3">
+                                <span className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg ${t.pillBg} ${t.accent}`}>
+                                    <item.icon className="h-5 w-5" />
+                                </span>
+                                <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
                             </div>
-                            <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
-                            <p className="text-sm text-gray-600 leading-relaxed mb-3">{item.text}</p>
+                            <p className="text-gray-600 leading-relaxed">{item.text}</p>
                             {item.points && item.points.length > 0 && (
-                                <ul className="space-y-2">
+                                <ul className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-sm text-gray-500">
                                     {item.points.map((p) => (
-                                        <li key={p} className="flex items-start gap-2 text-sm text-gray-700">
-                                            <CheckCircle className="h-4 w-4 text-emerald-500 mt-0.5 flex-shrink-0" />
+                                        <li key={p} className="flex items-center gap-1.5">
+                                            <CheckCircle className="h-3.5 w-3.5 text-emerald-500 flex-shrink-0" />
                                             <span>{p}</span>
                                         </li>
                                     ))}
@@ -142,6 +144,35 @@ export function FeatureCards({
                         </article>
                     ))}
                 </div>
+            </div>
+        </section>
+    );
+}
+
+/** Lange Funktionslisten als ruhige Checkliste in Spalten, ohne Kästen. */
+export function FeatureChecklist({
+    title,
+    description,
+    items,
+    tone = 'white',
+}: {
+    title: string;
+    description?: string;
+    items: string[];
+    tone?: 'white' | 'gray';
+}) {
+    return (
+        <section className={`${SECTION} ${tone === 'gray' ? 'bg-gray-50' : 'bg-white'}`}>
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <FeatureSectionHeader title={title} description={description} />
+                <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4">
+                    {items.map((item) => (
+                        <li key={item} className="flex items-start gap-3 text-gray-700">
+                            <CheckCircle className="h-5 w-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                            <span>{item}</span>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </section>
     );
@@ -157,20 +188,17 @@ export function FeatureFaq({
     if (items.length === 0) return null;
 
     return (
-        <section className="py-16 sm:py-20 bg-white">
+        <section className={`${SECTION} bg-white`}>
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                 <FeatureSectionHeader title={title} />
-                <div className="space-y-3">
+                <div className="divide-y divide-gray-200 border-y border-gray-200">
                     {items.map((faq) => (
-                        <details
-                            key={faq.question}
-                            className="group rounded-2xl border border-gray-100 bg-white open:bg-gray-50"
-                        >
-                            <summary className="cursor-pointer list-none px-6 py-5 font-semibold text-gray-900 flex items-center justify-between gap-4">
-                                <span>{faq.question}</span>
-                                <span className="text-gray-400 group-open:rotate-45 transition-transform text-xl leading-none">+</span>
+                        <details key={faq.question} className="group">
+                            <summary className="cursor-pointer list-none py-5 font-semibold text-gray-900 flex items-center justify-between gap-6 hover:text-indigo-600 transition-colors">
+                                <h3 className="text-base font-semibold">{faq.question}</h3>
+                                <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-gray-200 text-gray-400 text-lg leading-none group-open:rotate-45 transition-transform">+</span>
                             </summary>
-                            <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                            <div className="pb-6 pr-12 text-gray-600 leading-relaxed">
                                 {faq.answer}
                             </div>
                         </details>
@@ -183,25 +211,34 @@ export function FeatureFaq({
 
 export function FeatureRelated({
     title = 'Passende Funktionen',
+    description,
     items,
 }: {
     title?: string;
+    description?: string;
     items: { href: string; title: string; description: string }[];
 }) {
     if (items.length === 0) return null;
 
     return (
-        <section className="py-12 bg-gray-50">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-lg font-semibold text-gray-900 mb-4 text-center">{title}</h2>
-                <div className="flex flex-wrap justify-center gap-3">
+        <section className="py-16 sm:py-20 bg-gray-50">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="mb-8 text-center">
+                    <h2 className="text-xl font-semibold text-gray-900">{title}</h2>
+                    {description && <p className="mt-2 text-gray-600 max-w-2xl mx-auto">{description}</p>}
+                </div>
+                <div className={`grid gap-4 ${items.length >= 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2 max-w-3xl mx-auto'}`}>
                     {items.map((item) => (
                         <Link
                             key={item.href}
                             href={item.href}
-                            className="inline-flex items-center px-4 py-2 rounded-full border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:border-indigo-300 hover:text-indigo-600 transition-colors"
+                            className="group flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 transition-all hover:border-indigo-300 hover:shadow-md"
                         >
-                            {item.title}
+                            <span>
+                                <span className="block font-semibold text-gray-900 group-hover:text-indigo-600">{item.title}</span>
+                                <span className="block text-sm text-gray-500">{item.description}</span>
+                            </span>
+                            <ArrowRight className="h-4 w-4 flex-shrink-0 text-gray-300 transition-colors group-hover:text-indigo-500" />
                         </Link>
                     ))}
                 </div>
@@ -210,14 +247,16 @@ export function FeatureRelated({
     );
 }
 
+/** Abschluss im Stil der Startseite: eine ruhige Fläche mit Verlauf statt Vollfarbe. */
 export function FeaturePageCta({
-    theme = 'indigo',
+    theme: _theme = 'indigo',
     title,
     description,
     primaryLabel = '14 Tage gratis testen',
     primaryHref = APP_REGISTER_URL,
     secondaryLabel = 'Preise ansehen',
     secondaryHref = '/preise',
+    secondaryExternal = false,
 }: {
     theme?: FeatureHeroThemeKey;
     title: string;
@@ -226,32 +265,42 @@ export function FeaturePageCta({
     primaryHref?: string;
     secondaryLabel?: string;
     secondaryHref?: string;
+    secondaryExternal?: boolean;
 }) {
-    const t = featureHeroThemes[theme];
-
+    const secondaryClass =
+        'inline-flex items-center justify-center rounded-xl border border-white/40 px-7 py-3.5 text-base font-semibold text-white transition-colors hover:bg-white/10';
     return (
-        <section className={`py-20 ${t.ctaBg}`}>
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 hyphens-none" lang="de">
-                    {title}
-                </h2>
-                <p className="text-lg text-white/90 mb-8 leading-relaxed">{description}</p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a
-                        href={primaryHref}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`inline-flex items-center justify-center bg-white ${t.accent} px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition-all duration-300 shadow-lg`}
-                    >
-                        {primaryLabel}
-                        <ArrowRight className="ml-3 h-5 w-5" />
-                    </a>
-                    <Link
-                        href={secondaryHref}
-                        className="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white/10 transition-colors"
-                    >
-                        {secondaryLabel}
-                    </Link>
+        <section className={`${SECTION} bg-white`}>
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-indigo-500 to-sky-500 px-6 py-14 text-center sm:px-12 sm:py-16">
+                    <div
+                        className="pointer-events-none absolute inset-0 bg-[radial-gradient(30rem_18rem_at_85%_0%,rgba(255,255,255,0.18),transparent_60%)]"
+                        aria-hidden="true"
+                    />
+                    <h2 className="relative text-3xl lg:text-4xl font-bold tracking-tight text-white mb-4 hyphens-none" lang="de">
+                        {title}
+                    </h2>
+                    <p className="relative text-lg text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">{description}</p>
+                    <div className="relative flex flex-col sm:flex-row gap-3 justify-center">
+                        <a
+                            href={primaryHref}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center whitespace-nowrap rounded-xl bg-white px-7 py-3.5 text-base font-semibold text-indigo-700 shadow-lg transition-colors hover:bg-indigo-50"
+                        >
+                            {primaryLabel}
+                            <ArrowRight className="ml-2 h-4 w-4" />
+                        </a>
+                        {secondaryExternal ? (
+                            <a href={secondaryHref} target="_blank" rel="noopener noreferrer" className={secondaryClass}>
+                                {secondaryLabel}
+                            </a>
+                        ) : (
+                            <Link href={secondaryHref} className={secondaryClass}>
+                                {secondaryLabel}
+                            </Link>
+                        )}
+                    </div>
                 </div>
             </div>
         </section>
@@ -260,8 +309,8 @@ export function FeaturePageCta({
 
 export function FeatureContentBlock({ children }: { children: ReactNode }) {
     return (
-        <section className="py-16 bg-white">
-            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-gray prose-headings:hyphens-none">
+        <section className={`${SECTION} bg-white`}>
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-gray prose-lg prose-headings:hyphens-none prose-headings:tracking-tight">
                 {children}
             </div>
         </section>
