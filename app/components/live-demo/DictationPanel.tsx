@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { ArrowRight, Loader2, Mic, Sparkles, Square } from "lucide-react";
 
 // Öffentlicher Demo-Endpunkt der App (gleiche KI wie in der Behandlungsdoku, gedrosselt)
@@ -157,13 +156,13 @@ export default function DictationPanel({ booking }: DictationPanelProps) {
         </ul>
         <p className="mt-3 text-xs text-gray-500">In Treatflow landet die Doku direkt in der Kundenakte, zusammen mit Fotos und Parametern.</p>
         <div className="mt-4 flex flex-col gap-2 sm:flex-row">
-          <Link
-            href="/formulare-testen"
+          <a
+            href="#formulare-ausfuellen"
             className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-gray-900 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-800"
           >
-            Formulare testen
+            Weiter: Formulare
             <ArrowRight className="h-4 w-4" />
-          </Link>
+          </a>
           <button
             type="button"
             onClick={() => {

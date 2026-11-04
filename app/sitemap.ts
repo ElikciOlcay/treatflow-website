@@ -54,6 +54,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
+        {
+            url: `${baseUrl}/funktionen-live-testen`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
+        },
         internationalEntry('/formulare-testen', 'try-forms', 0.8),
         ...DEMO_FORMS.map((form) => ({
             url: `${baseUrl}/formulare-testen/${form.slug}`,
