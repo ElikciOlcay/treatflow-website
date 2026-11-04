@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Bell, CalendarCheck, CheckCheck, Mail } from "lucide-react";
+import { createPortal } from "react-dom";
+import { Check, Clock, Mail, MessageCircle, Send, type LucideIcon } from "lucide-react";
 import type { DemoCustomer } from "./BookingPanel";
 import StudioCalendarDemo from "./StudioCalendarDemo";
 import { scrollToElement } from "./scroll";
@@ -10,141 +11,200 @@ type BookingMessagesProps = {
   booking: { time: string; treatment: string; customer: DemoCustomer; dayLabel: string };
 };
 
-// Zeitplan der Animation in Millisekunden ab der Buchung
-const EMAIL_AT = 400;
-const TYPING_AT = 1700;
-const WHATSAPP_AT = 3300;
-const CALENDAR_AT = 5200;
+// Zeitplan in Millisekunden ab der Landung im Kalender
+const FLIGHT_MS = 1400;
+const EMAIL_SENDING_AT = 150;
+const WHATSAPP_SENDING_AT = 450;
+const EMAIL_SENT_AT = 1250;
+const WHATSAPP_SENT_AT = 1650;
+const REMINDER_AT = 2300;
 
-/** Zeigt nach der Demo-Buchung, welche Nachrichten Treatflow der Kundin automatisch schickt. */
+type SendState = "idle" | "sending" | "sent";
+
+function easeInOutCubic(t: number) {
+  return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+
+/**
+ * Nach der Demo-Buchung: Die Seite scrollt zum Studio-Kalender, der Termin fliegt aus dem
+ * Buchungsfenster in seine Spalte, rechts daneben gehen E-Mail und WhatsApp raus.
+ */
 export default function BookingMessages({ booking }: BookingMessagesProps) {
-  const [phase, setPhase] = useState(0);
-  const rootRef = useRef<HTMLDivElement | null>(null);
+  const targetRef = useRef<HTMLDivElement | null>(null);
+  const ghostRef = useRef<HTMLDivElement | null>(null);
+  const [flying, setFlying] = useState(false);
+  const [landed, setLanded] = useState(false);
+  const [email, setEmail] = useState<SendState>("idle");
+  const [whatsapp, setWhatsapp] = useState<SendState>("idle");
+  const [reminder, setReminder] = useState(false);
   const firstName = booking.customer.name.split(" ")[0] || booking.customer.name;
 
   useEffect(() => {
-    setPhase(0);
+    const timers: number[] = [];
+    let frame = 0;
+
+    const afterLanding = () => {
+      setFlying(false);
+      setLanded(true);
+      timers.push(
+        window.setTimeout(() => setEmail("sending"), EMAIL_SENDING_AT),
+        window.setTimeout(() => setWhatsapp("sending"), WHATSAPP_SENDING_AT),
+        window.setTimeout(() => setEmail("sent"), EMAIL_SENT_AT),
+        window.setTimeout(() => setWhatsapp("sent"), WHATSAPP_SENT_AT),
+        window.setTimeout(() => setReminder(true), REMINDER_AT)
+      );
+    };
+
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setPhase(4);
+      setLanded(true);
+      setEmail("sent");
+      setWhatsapp("sent");
+      setReminder(true);
       return;
     }
-    scrollToElement(rootRef.current, "start");
-    const timers = [
-      window.setTimeout(() => setPhase(1), EMAIL_AT),
-      window.setTimeout(() => setPhase(2), TYPING_AT),
-      window.setTimeout(() => setPhase(3), WHATSAPP_AT),
-      window.setTimeout(() => setPhase(4), CALENDAR_AT),
-    ];
-    return () => timers.forEach((timer) => window.clearTimeout(timer));
-  }, [booking]);
+
+    // Startpunkt ist die Bestätigung im Buchungsfenster; der Termin fliegt, während die Seite scrollt
+    const source = document.querySelector("[data-demo-booked]")?.getBoundingClientRect();
+    scrollToElement(targetRef.current, "center");
+    if (!source) {
+      afterLanding();
+      return () => timers.forEach((timer) => window.clearTimeout(timer));
+    }
+
+    setFlying(true);
+    const startWidth = Math.min(240, source.width);
+    const startHeight = 52;
+    const startX = source.left + (source.width - startWidth) / 2;
+    const startY = source.top + Math.min(source.height / 2, 120) - startHeight / 2;
+    const startedAt = performance.now();
+
+    const step = (now: number) => {
+      const ghost = ghostRef.current;
+      const target = targetRef.current?.getBoundingClientRect();
+      const t = Math.min(1, (now - startedAt) / FLIGHT_MS);
+      if (ghost && target) {
+        const e = easeInOutCubic(t);
+        const arc = Math.sin(Math.PI * t);
+        ghost.style.left = `${startX + (target.left - startX) * e - arc * 40}px`;
+        ghost.style.top = `${startY + (target.top - startY) * e}px`;
+        ghost.style.width = `${startWidth + (target.width - startWidth) * e}px`;
+        ghost.style.height = `${startHeight + (target.height - startHeight) * e}px`;
+        ghost.style.transform = `rotate(${-5 * arc}deg) scale(${1 + 0.08 * arc})`;
+        ghost.style.opacity = "1";
+      }
+      if (t < 1) frame = window.requestAnimationFrame(step);
+      else afterLanding();
+    };
+    frame = window.requestAnimationFrame(step);
+
+    return () => {
+      window.cancelAnimationFrame(frame);
+      timers.forEach((timer) => window.clearTimeout(timer));
+    };
+  }, []);
 
   return (
-    <div ref={rootRef} className="tf-msg-reveal mx-auto mt-16 max-w-5xl scroll-mt-28 lg:mt-20" aria-live="polite">
+    <div className="mx-auto mt-16 max-w-6xl lg:mt-20">
       <div className="mx-auto mb-10 max-w-2xl text-center">
         <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-indigo-600">Und das passiert danach automatisch</p>
         <h3 className="text-2xl font-bold tracking-tight text-gray-900 lg:text-3xl">
-          {firstName} bekommt Bestätigung und Erinnerung automatisch. Du musst nichts tun.
+          Der Termin steht sofort im Kalender und {firstName} ist informiert.
         </h3>
       </div>
 
-      <div className="grid items-start gap-8 md:grid-cols-2 md:gap-10">
-        {/* E-Mail direkt nach der Buchung */}
-        <div>
-          <p className="mb-3 flex items-center gap-2 text-sm font-semibold text-gray-700">
-            <Mail className="h-4 w-4 text-indigo-500" />
-            Sofort nach der Buchung · E-Mail
-          </p>
-          <div className="rounded-2xl border border-gray-200 bg-white shadow-[0_24px_60px_-36px_rgba(15,23,42,0.45)]">
-            <div className="flex items-center gap-1.5 border-b border-gray-100 px-4 py-3" aria-hidden="true">
-              <span className="h-2.5 w-2.5 rounded-full bg-rose-300" />
-              <span className="h-2.5 w-2.5 rounded-full bg-amber-300" />
-              <span className="h-2.5 w-2.5 rounded-full bg-emerald-300" />
-              <span className="ml-3 truncate text-xs text-gray-400">Posteingang · {booking.customer.email}</span>
-            </div>
-            <div className="min-h-[15.5rem] p-5">
-              {phase >= 1 ? (
-                <div className="tf-msg-pop">
-                  <div className="flex items-start gap-3">
-                    <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-rose-300 to-indigo-400 text-sm font-bold text-white">
-                      A
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-baseline justify-between gap-2">
-                        <p className="truncate text-sm font-semibold text-gray-900">Studio Aurora</p>
-                        <span className="flex-shrink-0 text-xs text-gray-400">gerade eben</span>
-                      </div>
-                      <p className="truncate text-sm font-medium text-gray-800">Dein Termin ist bestätigt</p>
-                    </div>
-                  </div>
-                  <div className="mt-4 space-y-3 text-sm leading-relaxed text-gray-600">
-                    <p>Hallo {firstName},</p>
-                    <p>
-                      danke für deine Buchung. Wir freuen uns auf dich!
-                    </p>
-                    <div className="flex items-center gap-3 rounded-xl bg-indigo-50 px-3.5 py-3 text-gray-800">
-                      <CalendarCheck className="h-5 w-5 flex-shrink-0 text-indigo-500" />
-                      <span>
-                        <span className="font-semibold">{booking.treatment}</span>
-                        <span className="block text-xs text-gray-500">{booking.dayLabel} · {booking.time} Uhr · Studio Aurora</span>
-                      </span>
-                    </div>
-                    <span className="inline-flex rounded-lg bg-gray-900 px-3.5 py-2 text-xs font-semibold text-white">Termin verwalten</span>
-                  </div>
-                </div>
-              ) : (
-                <div className="flex h-full min-h-[13rem] items-center justify-center text-sm text-gray-400">
-                  <span className="tf-msg-pulse">E-Mail wird gesendet …</span>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
+      <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] lg:gap-12">
+        <StudioCalendarDemo booking={booking} landed={landed} targetRef={targetRef} />
 
-        {/* WhatsApp-Erinnerung vor dem Termin */}
-        <div>
-          <p className="mb-3 flex items-center gap-2 text-sm font-semibold text-gray-700">
-            <Bell className="h-4 w-4 text-emerald-500" />
-            Vor dem Termin · WhatsApp
-          </p>
-          <div className="mx-auto w-full max-w-[19rem] rounded-[2.25rem] border-[6px] border-gray-900 bg-gray-900 shadow-[0_24px_60px_-30px_rgba(15,23,42,0.6)]">
-            <div className="overflow-hidden rounded-[1.75rem] bg-[#efeae2]">
-              <div className="flex items-center gap-2.5 bg-[#075e54] px-4 pb-3 pt-4 text-white">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-rose-300 to-indigo-400 text-xs font-bold">A</span>
+        <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-[0_24px_60px_-36px_rgba(15,23,42,0.45)] sm:p-6" aria-live="polite">
+          <p className="mb-5 text-sm font-semibold text-gray-900">Automatisch verschickt</p>
+          <div className="space-y-3">
+            <SendRow
+              Icon={Mail}
+              iconClass="bg-indigo-500"
+              title="Bestätigung per E-Mail"
+              recipient={booking.customer.email}
+              state={email}
+            />
+            <SendRow
+              Icon={MessageCircle}
+              iconClass="bg-[#25d366]"
+              title="Bestätigung per WhatsApp"
+              recipient={booking.customer.phone}
+              state={whatsapp}
+            />
+            {reminder && (
+              <div className="tf-msg-pop flex items-center gap-3 rounded-xl border border-dashed border-gray-200 px-3.5 py-3">
+                <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-600">
+                  <Clock className="h-5 w-5" />
+                </span>
                 <div className="min-w-0">
-                  <p className="truncate text-sm font-semibold">Studio Aurora</p>
-                  <p className="text-[11px] text-white/75">{phase === 2 ? "schreibt …" : "online"}</p>
+                  <p className="text-sm font-semibold text-gray-900">Erinnerung geplant</p>
+                  <p className="truncate text-xs text-gray-500">1 Tag vor dem Termin</p>
                 </div>
               </div>
-              <div className="flex min-h-[15.5rem] flex-col justify-end gap-2 p-3">
-                <span className="mx-auto mb-1 rounded-md bg-white/80 px-2 py-0.5 text-[10px] font-medium text-gray-500">1 Tag vor dem Termin</span>
-                {phase === 2 && (
-                  <div className="tf-msg-pop flex w-fit items-center gap-1 rounded-2xl rounded-tl-sm bg-white px-3.5 py-3 shadow-sm" aria-label="Studio Aurora schreibt">
-                    <span className="tf-typing-dot h-1.5 w-1.5 rounded-full bg-gray-400" />
-                    <span className="tf-typing-dot h-1.5 w-1.5 rounded-full bg-gray-400" style={{ animationDelay: "150ms" }} />
-                    <span className="tf-typing-dot h-1.5 w-1.5 rounded-full bg-gray-400" style={{ animationDelay: "300ms" }} />
-                  </div>
-                )}
-                {phase >= 3 && (
-                  <div className="tf-msg-pop max-w-[90%] rounded-2xl rounded-tl-sm bg-white px-3.5 py-2.5 text-[13px] leading-snug text-gray-800 shadow-sm">
-                    <p>
-                      Hallo {firstName}, kleine Erinnerung: Dein Termin für <span className="font-semibold">{booking.treatment}</span> ist morgen um{" "}
-                      <span className="font-semibold">{booking.time} Uhr</span>. Wir freuen uns auf dich! 🌸
-                    </p>
-                    <p className="mt-1 flex items-center justify-end gap-1 text-[10px] text-gray-400">
-                      09:00
-                      <CheckCheck className="h-3.5 w-3.5 text-sky-500" />
-                    </p>
-                  </div>
-                )}
-              </div>
-            </div>
+            )}
           </div>
+          <p className="mt-5 text-xs leading-relaxed text-gray-500">Wann und wie erinnert wird, stellst du in Treatflow selbst ein. Du musst nichts tun.</p>
         </div>
       </div>
-      <p className="mt-8 text-center text-sm text-gray-500">Wann die Erinnerung rausgeht, stellst du in Treatflow selbst ein.</p>
 
-      {/* Danach: der Termin fliegt in den Studio-Kalender */}
-      {phase >= 4 && <StudioCalendarDemo booking={booking} />}
+      {flying &&
+        createPortal(
+          <div
+            ref={ghostRef}
+            className="pointer-events-none fixed z-[60] overflow-hidden rounded-lg border-l-4 border-indigo-800 bg-indigo-600 px-2 py-1.5 text-[11px] leading-tight text-white opacity-0 shadow-[0_20px_40px_-12px_rgba(79,70,229,0.7)]"
+            aria-hidden="true"
+          >
+            <p className="truncate font-semibold">{booking.customer.name}</p>
+            <p className="truncate opacity-90">
+              {booking.treatment} · {booking.time}
+            </p>
+          </div>,
+          document.body
+        )}
+    </div>
+  );
+}
+
+type SendRowProps = {
+  Icon: LucideIcon;
+  iconClass: string;
+  title: string;
+  recipient: string;
+  state: SendState;
+};
+
+/** Eine Nachricht, die verschickt wird: erst fliegt ein Papierflieger los, dann kommt der Haken. */
+function SendRow({ Icon, iconClass, title, recipient, state }: SendRowProps) {
+  return (
+    <div
+      className={`flex items-center gap-3 rounded-xl border px-3.5 py-3 transition-colors duration-500 ${
+        state === "sent" ? "border-emerald-200 bg-emerald-50/60" : "border-gray-100 bg-gray-50"
+      } ${state === "idle" ? "opacity-50" : ""}`}
+    >
+      <span className={`relative flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full text-white ${iconClass}`}>
+        {state === "sending" && <span className={`absolute inset-0 animate-ping rounded-full opacity-40 ${iconClass}`} aria-hidden="true" />}
+        <Icon className="relative h-5 w-5" />
+      </span>
+      <div className="min-w-0 flex-1">
+        <p className="text-sm font-semibold text-gray-900">{title}</p>
+        <p className="truncate text-xs text-gray-500">
+          {state === "sent" ? `Zugestellt an ${recipient}` : state === "sending" ? "Wird gesendet …" : "Wartet auf Buchung"}
+        </p>
+        {state === "sending" && (
+          <span className="mt-1.5 block h-1 overflow-hidden rounded-full bg-gray-200" aria-hidden="true">
+            <span className="tf-send-progress block h-full rounded-full bg-indigo-500" />
+          </span>
+        )}
+      </div>
+      <span className="relative flex h-7 w-7 flex-shrink-0 items-center justify-center">
+        {state === "sending" && <Send className="tf-send-fly h-4 w-4 text-indigo-500" aria-hidden="true" />}
+        {state === "sent" && (
+          <span className="tf-msg-pop flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500 text-white">
+            <Check className="h-4 w-4" strokeWidth={3} />
+          </span>
+        )}
+      </span>
     </div>
   );
 }

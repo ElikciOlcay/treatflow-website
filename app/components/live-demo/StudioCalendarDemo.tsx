@@ -1,12 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import type { RefObject } from "react";
 import { ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
 import { TREATMENTS, type DemoCustomer } from "./BookingPanel";
-import { scrollToElement } from "./scroll";
 
 type StudioCalendarDemoProps = {
   booking: { time: string; treatment: string; customer: DemoCustomer; dayLabel: string };
+  /** true, sobald der fliegende Termin angekommen ist */
+  landed: boolean;
+  /** Platz des neuen Termins; dorthin fliegt der Termin aus dem Buchungsfenster */
+  targetRef: RefObject<HTMLDivElement | null>;
 };
 
 const FIRST_HOUR = 9;
@@ -45,10 +48,8 @@ function topFor(time: string) {
   return ((minutes(time) - FIRST_HOUR * 60) / 60) * HOUR_PX;
 }
 
-/** Tagesansicht des Studio-Kalenders, in die der gerade gebuchte Demo-Termin hineinfliegt. */
-export default function StudioCalendarDemo({ booking }: StudioCalendarDemoProps) {
-  const rootRef = useRef<HTMLDivElement | null>(null);
-  const [landed, setLanded] = useState(false);
+/** Tagesansicht des Studio-Kalenders mit freiem Platz für den gerade gebuchten Demo-Termin. */
+export default function StudioCalendarDemo({ booking, landed, targetRef }: StudioCalendarDemoProps) {
   const staffIndex = Math.max(0, STAFF.findIndex((s) => s.treatment === booking.treatment));
   const duration = TREATMENTS.find((t) => t.name === booking.treatment)?.minutes ?? 60;
   const end = formatTime(minutes(booking.time) + duration);
@@ -56,19 +57,8 @@ export default function StudioCalendarDemo({ booking }: StudioCalendarDemoProps)
   const height = (duration / 60) * HOUR_PX;
   const dayTitle = booking.dayLabel === "heute" ? "Heute" : booking.dayLabel;
 
-  useEffect(() => {
-    scrollToElement(rootRef.current, "center");
-    const timer = window.setTimeout(() => setLanded(true), 1700); // nach Ende des Flugs (0,5 s + 1,1 s)
-    return () => window.clearTimeout(timer);
-  }, []);
-
   return (
-    <div ref={rootRef} className="tf-msg-reveal mx-auto mt-16 max-w-3xl scroll-mt-28 lg:mt-20">
-      <div className="mx-auto mb-8 max-w-2xl text-center">
-        <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-indigo-600">Im Studio-Kalender</p>
-        <h3 className="text-2xl font-bold tracking-tight text-gray-900 lg:text-3xl">Der Termin steht sofort bei deinem Team im Kalender.</h3>
-      </div>
-
+    <div>
       <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-[0_30px_70px_-35px_rgba(15,23,42,0.45)]">
         {/* Kopfzeile wie in der App */}
         <div className="flex items-center justify-between gap-3 border-b border-gray-100 px-4 py-3">
@@ -120,8 +110,9 @@ export default function StudioCalendarDemo({ booking }: StudioCalendarDemoProps)
               ))}
               {column === staffIndex && (
                 <div
-                  className={`tf-cal-fly absolute inset-x-1 z-10 overflow-hidden rounded-md border-l-4 border-indigo-600 bg-indigo-600 px-1.5 py-1 text-[10px] leading-tight text-white sm:text-[11px] ${landed ? "tf-cal-landed" : ""}`}
-                  style={{ top: top + 1, height: height - 2 }}
+                  ref={targetRef}
+                  className={`absolute inset-x-1 z-10 overflow-hidden rounded-md border-l-4 border-indigo-600 bg-indigo-600 px-1.5 py-1 text-[10px] leading-tight text-white sm:text-[11px] ${landed ? "tf-cal-landed" : ""}`}
+                  style={{ top: top + 1, height: height - 2, visibility: landed ? "visible" : "hidden" }}
                   role="status"
                   aria-label={`Neuer Termin: ${booking.customer.name}, ${booking.treatment}, ${booking.time} bis ${end} Uhr`}
                 >
@@ -154,7 +145,6 @@ export default function StudioCalendarDemo({ booking }: StudioCalendarDemoProps)
 
         </div>
       </div>
-      <p className="mt-6 text-center text-sm text-gray-500">Kein Abtippen, kein Doppelbuchen: Online-Buchungen landen direkt in der richtigen Spalte.</p>
     </div>
   );
 }

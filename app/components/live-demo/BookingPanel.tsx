@@ -112,7 +112,7 @@ export default function BookingPanel({ onBooked, onInteract, onContinue }: Booki
 
   if (step === "booked" && treatment !== null && time) {
     return (
-      <div className="flex flex-col justify-center py-4 text-center" role="status" aria-live="polite">
+      <div className="flex flex-col justify-center py-4 text-center" role="status" aria-live="polite" data-demo-booked>
         <span className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 text-white shadow-[0_10px_24px_-10px_rgba(16,185,129,0.9)]">
           <Check className="h-6 w-6" strokeWidth={3} />
         </span>
