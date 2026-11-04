@@ -788,7 +788,22 @@ const privacy: LocaleSiteContent["privacy"] = {
       html: `<p>Afhankelijk van het toepasselijke recht kun je inzage, rectificatie, wissing, beperking en overdraagbaarheid van je gegevens vragen en bezwaar maken tegen de verwerking. Je kunt een klacht indienen bij een toezichthoudende autoriteit. Onze bevoegde autoriteit in Oostenrijk is de Datenschutzbehörde; in Nederland kun je ook terecht bij de Autoriteit Persoonsgegevens en in België bij de Gegevensbeschermingsautoriteit. Neem contact met ons op via hello@treatflow.io.</p>`,
     },
     {
-      heading: "6. Volledige Duitse verklaring",
+      heading: "6. Google Agenda-integratie",
+      html: `<p>Studio's kunnen in de Treatflow-app (app.treatflow.io) onder <strong>Apps → Google Agenda</strong> optioneel hun Google-account koppelen. De koppeling is vrijwillig en komt alleen tot stand wanneer een gebruiker via het toestemmingsscherm van Google actief toegang verleent.</p>
+<p><strong>Welke gegevens we gebruiken en waarom:</strong></p>
+<ul>
+<li><strong>Basisprofiel (openid, e-mail, profiel):</strong> om het Google-account aan het Treatflow-account te koppelen en te tonen welk Google-account verbonden is.</li>
+<li><strong>Lijst met agenda's (calendar.readonly):</strong> om je agenda's te tonen, zodat je kunt kiezen welke agenda wordt gesynchroniseerd.</li>
+<li><strong>Agenda-afspraken (calendar.events):</strong> om Treatflow-afspraken en tijdblokken als afspraken in de gekozen agenda aan te maken, te wijzigen en te verwijderen, en om afspraken uit die agenda te lezen zodat ze in Treatflow als geblokkeerde tijden of afspraken verschijnen (synchronisatie in twee richtingen).</li>
+</ul>
+<p><strong>Welke gegevens we opslaan:</strong> toegangs- en vernieuwingstokens (AES-versleuteld), de Google-account-ID en het e-mailadres, de ID en naam van de gekozen agenda, de ID's, tijden en titels van gesynchroniseerde afspraken en synchronisatielogboeken. Alle gegevens worden opgeslagen in onze database in de EU (Supabase, Frankfurt).</p>
+<p><strong>Gebruik en delen:</strong> Google-gebruikersgegevens worden uitsluitend gebruikt voor de agendasynchronisatie binnen Treatflow. We delen ze niet met derden, verkopen ze niet, gebruiken ze niet voor reclame en niet voor het trainen van AI-modellen. Medewerkers bekijken deze gegevens niet, tenzij je daar uitdrukkelijk toestemming voor geeft (bijv. bij een supportvraag), het nodig is voor beveiliging of het onderzoeken van misbruik, of de wet dit vereist.</p>
+<p><strong>Toegang intrekken en verwijderen:</strong> je kunt de koppeling op elk moment in Treatflow onder Apps → Google Agenda met „Ontkoppelen” verbreken; daarbij worden de opgeslagen tokens verwijderd. Je kunt de toegang ook intrekken via <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</p>
+<p>Het gebruik door Treatflow van informatie die via Google API's wordt ontvangen, en de overdracht daarvan aan andere apps, voldoet aan het <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, inclusief de vereisten voor beperkt gebruik (Limited Use). Engelse originele tekst:</p>
+<p lang="en"><em>Treatflow's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</em></p>`,
+    },
+    {
+      heading: "7. Volledige Duitse verklaring",
       html: `<p>Voor cookies, verwerkers, bewaartermijnen en de volledige juridische tekst, zie de <a href="/datenschutz">Duitse privacyverklaring</a>. Bij verschillen tussen deze samenvatting en de Duitse versie is de Duitse versie leidend.</p>`,
     },
   ],

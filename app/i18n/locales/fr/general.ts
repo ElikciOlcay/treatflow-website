@@ -936,7 +936,22 @@ export const general: Omit<LocaleSiteContent, "coreFeatures" | "extraFeatures" |
         html: `<p>Selon la législation applicable, vous pouvez demander l'accès à vos données, leur rectification, leur effacement, la limitation du traitement, la portabilité, et vous opposer au traitement. Vous pouvez introduire une réclamation auprès d'une autorité de contrôle, par exemple la CNIL en France. Autorité autrichienne compétente : Datenschutzbehörde. Contactez-nous à hello@treatflow.io.</p>`,
       },
       {
-        heading: "6. Version allemande complète",
+        heading: "6. Intégration Google Agenda",
+        html: `<p>Les instituts peuvent connecter, de manière facultative, leur compte Google dans l'application Treatflow (app.treatflow.io) sous <strong>Applications → Google Agenda</strong>. La connexion est volontaire et n'est établie que lorsqu'un utilisateur accorde activement l'accès via l'écran de consentement de Google.</p>
+<p><strong>Données consultées et finalités :</strong></p>
+<ul>
+<li><strong>Profil de base (openid, e-mail, profil) :</strong> pour associer le compte Google au compte Treatflow et afficher le compte Google connecté.</li>
+<li><strong>Liste des agendas (calendar.readonly) :</strong> pour afficher vos agendas afin que vous puissiez choisir celui à synchroniser.</li>
+<li><strong>Événements de l'agenda (calendar.events) :</strong> pour créer, modifier et supprimer les rendez-vous et plages bloquées de Treatflow sous forme d'événements dans l'agenda choisi, et pour lire les événements de cet agenda afin de les afficher dans Treatflow comme créneaux bloqués ou rendez-vous (synchronisation bidirectionnelle).</li>
+</ul>
+<p><strong>Données conservées :</strong> jetons d'accès et d'actualisation (chiffrés en AES), identifiant et adresse e-mail du compte Google, identifiant et nom de l'agenda choisi, identifiants, horaires et titres des événements synchronisés, ainsi que les journaux de synchronisation. Toutes les données sont stockées dans notre base de données dans l'UE (Supabase, Francfort).</p>
+<p><strong>Utilisation et partage :</strong> les données utilisateur Google sont utilisées exclusivement pour assurer la synchronisation de l'agenda dans Treatflow. Nous ne les transmettons pas à des tiers, ne les vendons pas et ne les utilisons ni à des fins publicitaires ni pour entraîner des modèles d'intelligence artificielle. Aucune personne ne consulte ces données, sauf avec votre consentement explicite (par ex. pour une demande d'assistance), lorsque cela est nécessaire pour la sécurité ou l'examen d'abus, ou lorsque la loi l'exige.</p>
+<p><strong>Révocation de l'accès et suppression :</strong> vous pouvez vous déconnecter à tout moment dans Treatflow sous Applications → Google Agenda avec « Déconnecter » ; les jetons enregistrés sont alors supprimés. Vous pouvez également révoquer l'accès via <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</p>
+<p>L'utilisation et le transfert vers toute autre application, par Treatflow, des informations reçues des API Google respecteront le <a href="https://developers.google.com/terms/api-services-user-data-policy">Règlement sur les données utilisateur des services d'API Google</a> (Google API Services User Data Policy), y compris les exigences d'utilisation limitée (Limited Use). Texte original en anglais :</p>
+<p lang="en"><em>Treatflow's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</em></p>`,
+      },
+      {
+        heading: "7. Version allemande complète",
         html: `<p>Pour les cookies, les sous-traitants, les durées de conservation et le texte juridique complet, consultez la <a href="/datenschutz">politique de confidentialité en allemand</a>, qui fait foi.</p>`,
       },
     ],

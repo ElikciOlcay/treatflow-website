@@ -36,7 +36,22 @@ export const trPrivacy = {
       html: `<p>Uygulanabilir hukuka göre erişim, düzeltme, silme, kısıtlama, taşınabilirlik talep edebilir ve işlemeye itiraz edebilirsiniz. Bir denetim makamına şikayette bulunabilirsiniz. Avusturya: Datenschutzbehörde. Türkiye'de KVKK kapsamında ilgili kişi haklarınız saklıdır. Bize hello@treatflow.io adresinden yazın.</p>`,
     },
     {
-      heading: "6. Tam Almanca metin",
+      heading: "6. Google Takvim entegrasyonu",
+      html: `<p>İşletmeler, Treatflow uygulamasında (app.treatflow.io) <strong>Uygulamalar → Google Takvim</strong> altında Google hesaplarını isteğe bağlı olarak bağlayabilir. Bağlantı gönüllüdür ve yalnızca kullanıcı Google onay ekranında erişime açıkça izin verdiğinde kurulur.</p>
+<p><strong>Eriştiğimiz veriler ve amaçları:</strong></p>
+<ul>
+<li><strong>Temel profil (openid, e-posta, profil):</strong> Google hesabını Treatflow hesabıyla eşleştirmek ve hangi Google hesabının bağlı olduğunu göstermek için.</li>
+<li><strong>Takvim listesi (calendar.readonly):</strong> senkronize edilecek takvimi seçebilmeniz için takvimlerinizi listelemek amacıyla.</li>
+<li><strong>Takvim etkinlikleri (calendar.events):</strong> Treatflow randevularını ve zaman bloklarını seçilen takvime etkinlik olarak yazmak, güncellemek ve silmek; ayrıca bu takvimdeki etkinlikleri okuyarak Treatflow'da dolu zaman veya randevu olarak göstermek için (çift yönlü senkronizasyon).</li>
+</ul>
+<p><strong>Sakladığımız veriler:</strong> erişim ve yenileme token'ları (AES ile şifrelenmiş), Google hesap kimliği ve e-posta adresi, seçilen takvimin kimliği ve adı, senkronize edilen etkinliklerin kimlikleri, saatleri ve başlıkları ile senkronizasyon kayıtları. Tüm veriler AB'deki veritabanımızda (Supabase, Frankfurt) saklanır.</p>
+<p><strong>Kullanım ve paylaşım:</strong> Google kullanıcı verileri yalnızca Treatflow içindeki takvim senkronizasyonunu sağlamak için kullanılır. Üçüncü taraflarla paylaşılmaz, satılmaz, reklam için ve yapay zekâ modellerinin eğitimi için kullanılmaz. Açık onayınız olmadıkça (ör. destek talebi), güvenlik veya kötüye kullanımın incelenmesi için gerekmedikçe ya da yasal bir yükümlülük bulunmadıkça bu veriler insanlar tarafından görüntülenmez.</p>
+<p><strong>Erişimin iptali ve silme:</strong> Bağlantıyı istediğiniz zaman Treatflow'da Uygulamalar → Google Takvim altında “Bağlantıyı kes” ile kaldırabilirsiniz; bu işlem saklanan token'ları siler. Erişimi ayrıca <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a> üzerinden de iptal edebilirsiniz.</p>
+<p>Treatflow'un Google API'lerinden aldığı bilgileri kullanması ve başka bir uygulamaya aktarması, Sınırlı Kullanım (Limited Use) gereklilikleri dahil olmak üzere <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Hizmetleri Kullanıcı Verileri Politikası</a>'na uygun olacaktır. İngilizce orijinal metin:</p>
+<p lang="en"><em>Treatflow's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</em></p>`,
+    },
+    {
+      heading: "7. Tam Almanca metin",
       html: `<p>Çerezler, işleyenler, saklama süreleri ve eksiksiz hukuki metin için <a href="/datenschutz">Almanca gizlilik politikasına</a> bakın.</p>`,
     },
   ],
