@@ -485,8 +485,8 @@ const manualBlogPosts: BlogPost[] = [
     },
     {
         slug: 'nachrichtenautomatisierung-kosmetikstudio',
-        title: 'Nachrichtenautomatisierung für Kosmetikstudios: 80% weniger No-Shows durch automatische Erinnerungen',
-        excerpt: 'Entdecke, wie automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche dein Kosmetikstudio revolutionieren. Reduziere No-Shows um 80% und steigere die Kundenbindung.',
+        title: 'Nachrichtenautomatisierung für Kosmetikstudios: weniger No-Shows durch automatische Erinnerungen',
+        excerpt: 'Entdecke, wie automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche dein Kosmetikstudio revolutionieren. Reduziere No-Shows und steigere die Kundenbindung.',
         category: 'Automatisierung',
         readTime: '8 min',
         publishDate: '20. Januar 2024',

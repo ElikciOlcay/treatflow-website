@@ -222,7 +222,7 @@ export default function BlogPost() {
                                     { title: 'Digitale Kundenverwaltung', desc: 'Alle Kundendaten, Behandlungshistorien und Allergien an einem Ort. Sofort abrufbar bei jedem Termin.' },
                                     { title: 'Digitale Formulare & Einwilligungen', desc: 'Anamnesebögen und Einwilligungen digital ausfüllen und unterschreiben lassen - DSGVO-konform.' },
                                     { title: 'Behandlungsdokumentation', desc: 'Jede Behandlung digital dokumentieren, inkl. Fotos, Produkte und Notizen. NiSV-konform.' },
-                                    { title: 'Automatische Erinnerungen', desc: 'Terminerinnerungen per E-Mail und SMS reduzieren No-Shows um bis zu 80%.' },
+                                    { title: 'Automatische Erinnerungen', desc: 'Terminerinnerungen per E-Mail und SMS reduzieren No-Shows spürbar.' },
                                     { title: 'Automatische Nachrichten', desc: 'Follow-up Nachrichten, Geburtstagswünsche und Rückholaktionen vollautomatisch versenden.' },
                                 ].map((feature, index) => (
                                     <div key={index} className="flex gap-4">
@@ -305,7 +305,7 @@ export default function BlogPost() {
                                 {
                                     num: '02',
                                     title: 'Weniger No-Shows',
-                                    desc: 'Automatische Erinnerungen per E-Mail und SMS reduzieren Terminausfälle um bis zu 80%.',
+                                    desc: 'Automatische Erinnerungen per E-Mail und SMS reduzieren Terminausfälle spürbar.',
                                 },
                                 {
                                     num: '03',

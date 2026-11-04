@@ -46,7 +46,7 @@ export const metadata = {
 const faqs = [
     {
         question: 'Wie kann ich No-Shows im Kosmetikstudio reduzieren?',
-        answer: 'Automatische Terminerinnerungen per WhatsApp und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z.B. 3 Tage und 1 Tag vor dem Termin). Studios berichten von bis zu 80% weniger Ausfällen.',
+        answer: 'Automatische Terminerinnerungen per WhatsApp und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z.B. 3 Tage und 1 Tag vor dem Termin). So sinkt die Zahl vergessener Termine deutlich.',
     },
     {
         question: 'Was kosten WhatsApp-Erinnerungen für Termine?',
@@ -123,11 +123,11 @@ export default function NachrichtenautomatisierungPage() {
                 eyebrowIcon={MessageCircle}
                 title={<>Automatische <FeatureTitleHighlight theme="purple">Erinnerungen</FeatureTitleHighlight></>}
                 description="Terminbestätigungen, Reminder und Follow-ups per WhatsApp und E-Mail – weniger No-Shows, mehr Bindung."
-                chips={['WhatsApp & E-Mail', 'Bis 80% weniger No-Shows', 'Geburtstagsgrüße']}
+                chips={['WhatsApp & E-Mail', 'Weniger No-Shows', 'Geburtstagsgrüße']}
                 secondaryCta={{ label: 'Zum Terminkalender', href: '/terminkalender' }}
                 aiCapsule={{
                     question: 'Wie kann ich No-Shows im Kosmetikstudio reduzieren?',
-                    answer: 'Automatische Terminerinnerungen per WhatsApp und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z. B. 24 Stunden und 2 Stunden vor dem Termin). Studios mit aktivierten Remindern berichten von bis zu 80% weniger ausgefallenen Terminen.',
+                    answer: 'Automatische Terminerinnerungen per WhatsApp und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z. B. 24 Stunden und 2 Stunden vor dem Termin). Mit aktivierten Erinnerungen fallen deutlich weniger Termine aus.',
                 }}
                 dateModified={PAGE_DATE_MODIFIED}
                 datePublished={PAGE_DATE_PUBLISHED}
@@ -153,7 +153,7 @@ export default function NachrichtenautomatisierungPage() {
                     {
                         icon: Bell,
                         title: 'Weniger vergessene Termine',
-                        text: 'Deine Kunden bekommen 1–7 Tage vor dem Termin eine Erinnerung per WhatsApp oder E-Mail. Studios berichten von bis zu 80 % weniger Ausfällen.',
+                        text: 'Deine Kunden bekommen 1–7 Tage vor dem Termin eine Erinnerung per WhatsApp oder E-Mail. So fallen deutlich weniger Termine aus.',
                     },
                     {
                         icon: MessageCircle,

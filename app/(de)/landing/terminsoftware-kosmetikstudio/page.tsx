@@ -7,7 +7,7 @@ import {
 
 export const metadata: Metadata = {
     title: 'Terminsoftware Kosmetikstudio - 14 Tage gratis testen',
-    description: 'Online-Terminbuchung, Kalender und automatische Erinnerungen für dein Kosmetikstudio. 80% weniger No-Shows. Jetzt 14 Tage kostenlos testen.',
+    description: 'Online-Terminbuchung, Kalender und automatische Erinnerungen für dein Kosmetikstudio. Weniger No-Shows. Jetzt 14 Tage kostenlos testen.',
     robots: 'noindex, nofollow',
     alternates: {
         canonical: 'https://www.treatflow.io/terminkalender',
@@ -21,7 +21,7 @@ const benefits = [
     { icon: Calendar, text: '24/7 Online-Terminbuchung' },
     { icon: Bell, text: 'Automatische Erinnerungen (WhatsApp & E-Mail)' },
     { icon: Users, text: 'Mitarbeiterkalender & Schichtplanung' },
-    { icon: Clock, text: '80% weniger No-Shows' },
+    { icon: Clock, text: 'Weniger No-Shows' },
     { icon: Shield, text: 'DSGVO-konform, EU-Server' },
     { icon: Smartphone, text: 'Mobil, Tablet & Desktop' },
 ];
@@ -33,7 +33,7 @@ const painSolutions = [
     },
     {
         pain: 'No-Shows kosten dich jede Woche Umsatz.',
-        solution: 'Automatische WhatsApp-Erinnerungen reduzieren Ausfälle um 80%.',
+        solution: 'Automatische WhatsApp-Erinnerungen reduzieren Ausfälle spürbar.',
     },
     {
         pain: 'Doppelbuchungen und Kalender-Chaos.',
@@ -105,7 +105,7 @@ const faqs = [
     },
     {
         q: 'Wie funktionieren die automatischen Erinnerungen?',
-        a: 'Nach der Buchung erhalten Kunden eine Bestätigung. 24h und 2h vor dem Termin geht automatisch eine Erinnerung per WhatsApp oder E-Mail raus. Das reduziert No-Shows um bis zu 80%.',
+        a: 'Nach der Buchung erhalten Kunden eine Bestätigung. 24h und 2h vor dem Termin geht automatisch eine Erinnerung per WhatsApp oder E-Mail raus. Das reduziert No-Shows spürbar.',
     },
     {
         q: 'Kann ich mehrere Mitarbeiter verwalten?',
@@ -215,7 +215,7 @@ export default function TerminsoftwareLandingPage() {
                                 <span className="text-indigo-600">Kosmetikstudio</span>
                             </h1>
                             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8">
-                                Kunden buchen online, Erinnerungen gehen automatisch raus, No-Shows sinken um 80%.
+                                Kunden buchen online, Erinnerungen gehen automatisch raus, No-Shows sinken spürbar.
                                 Alles in einer App - starte jetzt kostenlos.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-3 mb-5">
@@ -276,8 +276,8 @@ export default function TerminsoftwareLandingPage() {
                         </div>
                         <div className="h-8 w-px bg-gray-200 hidden sm:block" />
                         <div className="flex items-center gap-2">
-                            <span className="text-3xl font-bold text-indigo-600">80%</span>
-                            <span className="text-sm text-gray-600">weniger<br />No-Shows</span>
+                            <span className="text-3xl font-bold text-indigo-600">Weniger</span>
+                            <span className="text-sm text-gray-600">No-Shows durch<br />Erinnerungen</span>
                         </div>
                         <div className="h-8 w-px bg-gray-200 hidden sm:block" />
                         <div className="flex items-center gap-2">

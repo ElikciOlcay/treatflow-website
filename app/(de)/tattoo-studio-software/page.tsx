@@ -38,7 +38,7 @@ const faqs = [
     },
     {
         question: 'Erinnert das System meine Kunden automatisch?',
-        answer: 'Ja, Treatflow sendet automatisch Terminerinnerungen per WhatsApp und E-Mail - z.B. 3 Tage und 1 Tag vor dem Termin. Das reduziert No-Shows um bis zu 80%.',
+        answer: 'Ja, Treatflow sendet automatisch Terminerinnerungen per WhatsApp und E-Mail - z.B. 3 Tage und 1 Tag vor dem Termin. Das reduziert No-Shows spürbar.',
     },
     {
         question: 'Funktioniert die Software auch für mehrere Tätowierer?',

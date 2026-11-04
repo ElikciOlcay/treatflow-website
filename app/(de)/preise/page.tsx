@@ -47,7 +47,7 @@ const faqData = [
     },
     {
         question: 'Lohnt sich der Booking-Plan?',
-        answer: 'Wenn du Online-Buchungen, automatische Terminerinnerungen per WhatsApp und einen digitalen Terminkalender benötigst, ja. Studios mit dem Booking-Plan berichten von bis zu 80% weniger No-Shows und deutlich weniger Telefonaufwand.',
+        answer: 'Wenn du Online-Buchungen, automatische Terminerinnerungen per WhatsApp und einen digitalen Terminkalender benötigst, ja. Mit dem Booking-Plan hast du deutlich weniger No-Shows und weniger Telefonaufwand.',
     },
     {
         question: 'Was kostet das Kassensystem?',

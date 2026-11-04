@@ -53,7 +53,7 @@ const SLUG_MAP: Record<string, OgContent> = {
     'sms-erinnerungen': {
         eyebrow: 'Funktion',
         title: 'WhatsApp-Erinnerungen',
-        subtitle: 'Bis zu 80% weniger No-Shows automatisch',
+        subtitle: 'Weniger No-Shows, ganz automatisch',
     },
     'digitale-anamnese': {
         eyebrow: 'Funktion',

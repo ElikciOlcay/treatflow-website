@@ -55,7 +55,7 @@ const faqs = [
     },
     {
         question: 'Wie reduziert ein Buchungssystem No-Shows?',
-        answer: 'Durch automatische Terminerinnerungen per WhatsApp und E-Mail zu konfigurierbaren Zeitpunkten vor dem Termin. Kunden werden erinnert und können bei Bedarf stornieren, sodass der Termin für andere frei wird. Studios berichten von bis zu 80% weniger No-Shows.',
+        answer: 'Durch automatische Terminerinnerungen per WhatsApp und E-Mail zu konfigurierbaren Zeitpunkten vor dem Termin. Kunden werden erinnert und können bei Bedarf stornieren, sodass der Termin für andere frei wird. So sinkt die Zahl der No-Shows deutlich.',
     },
     {
         question: 'Was passiert, wenn alle Termine ausgebucht sind?',
