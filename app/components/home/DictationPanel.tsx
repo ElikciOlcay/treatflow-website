@@ -77,7 +77,11 @@ export default function DictationPanel({ booking, onContinue }: DictationPanelPr
     };
     recognition.onerror = (event) => {
       if (event.error === "not-allowed" || event.error === "service-not-allowed") {
-        setMessage("Kein Zugriff aufs Mikrofon. Du kannst den Text auch eintippen.");
+        setMessage("Kein Zugriff aufs Mikrofon. Erlaube es über das Schloss-Symbol in der Adressleiste oder tippe den Text ein.");
+      } else if (event.error === "no-speech") {
+        setMessage("Ich habe nichts gehört. Tippe aufs Mikrofon und sprich etwas lauter.");
+      } else if (event.error === "network") {
+        setMessage("Die Spracherkennung braucht eine Internetverbindung. Du kannst den Text auch eintippen.");
       }
     };
     recognition.onend = () => {
@@ -119,7 +123,13 @@ export default function DictationPanel({ booking, onContinue }: DictationPanelPr
       setStatus("done");
     } catch (error) {
       setStatus("error");
-      setMessage(error instanceof Error ? error.message : "Die KI ist gerade nicht erreichbar.");
+      // Netzwerkfehler (z. B. „Failed to fetch“) nicht roh anzeigen
+      const offline = error instanceof TypeError;
+      setMessage(
+        !offline && error instanceof Error
+          ? error.message
+          : "Die KI ist gerade nicht erreichbar. Bitte versuch es in ein paar Minuten noch einmal."
+      );
     }
   };
 
