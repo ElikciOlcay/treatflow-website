@@ -68,7 +68,7 @@ const STEPS: Step[] = [
 /** Ein Termin von der Buchung bis zur Kasse, als Zeitleiste erzählt. */
 export default function StudioDayTimeline() {
   return (
-    <section className="bg-gray-50 px-4 py-14 sm:px-6 lg:px-8 lg:py-20" aria-labelledby="studio-day-title">
+    <section className="bg-white px-4 py-20 sm:px-6 lg:px-8 lg:py-28" aria-labelledby="studio-day-title">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-indigo-600">Ein Termin, ein System</p>
@@ -80,11 +80,11 @@ export default function StudioDayTimeline() {
           </p>
         </div>
 
-        <ol className="relative space-y-4 before:absolute before:bottom-6 before:left-[1.375rem] before:top-6 before:w-px before:bg-gradient-to-b before:from-indigo-200 before:via-gray-200 before:to-emerald-200 sm:before:left-[1.625rem]">
+        <ol className="relative space-y-5 before:absolute before:bottom-6 before:left-[1.375rem] before:top-6 before:w-px before:bg-gradient-to-b before:from-indigo-200 before:via-gray-200 before:to-emerald-200 sm:before:left-[1.625rem]">
           {STEPS.map((step) => (
             <li key={step.time} className="tf-reveal relative flex gap-4 sm:gap-5">
               <span
-                className={`relative z-10 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl ring-4 ring-gray-50 sm:h-[3.25rem] sm:w-[3.25rem] ${step.tone}`}
+                className={`relative z-10 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl ring-4 ring-white sm:h-[3.25rem] sm:w-[3.25rem] ${step.tone}`}
               >
                 <step.Icon className="h-5 w-5" />
               </span>
