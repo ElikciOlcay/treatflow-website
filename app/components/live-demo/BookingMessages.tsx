@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { Check, Clock, Mail, MessageCircle, Send, type LucideIcon } from "lucide-react";
+import { ArrowDown, Check, Clock, Mail, MessageCircle, Send, type LucideIcon } from "lucide-react";
 import type { DemoCustomer } from "./BookingPanel";
 import StudioCalendarDemo from "./StudioCalendarDemo";
 import { scrollToElement } from "./scroll";
@@ -18,6 +18,7 @@ const WHATSAPP_SENDING_AT = 450;
 const EMAIL_SENT_AT = 1250;
 const WHATSAPP_SENT_AT = 1650;
 const REMINDER_AT = 2300;
+const NEXT_HINT_AT = 3200;
 
 type SendState = "idle" | "sending" | "sent";
 
@@ -37,6 +38,7 @@ export default function BookingMessages({ booking }: BookingMessagesProps) {
   const [email, setEmail] = useState<SendState>("idle");
   const [whatsapp, setWhatsapp] = useState<SendState>("idle");
   const [reminder, setReminder] = useState(false);
+  const [nextHint, setNextHint] = useState(false);
   const firstName = booking.customer.name.split(" ")[0] || booking.customer.name;
 
   useEffect(() => {
@@ -51,7 +53,8 @@ export default function BookingMessages({ booking }: BookingMessagesProps) {
         window.setTimeout(() => setWhatsapp("sending"), WHATSAPP_SENDING_AT),
         window.setTimeout(() => setEmail("sent"), EMAIL_SENT_AT),
         window.setTimeout(() => setWhatsapp("sent"), WHATSAPP_SENT_AT),
-        window.setTimeout(() => setReminder(true), REMINDER_AT)
+        window.setTimeout(() => setReminder(true), REMINDER_AT),
+        window.setTimeout(() => setNextHint(true), NEXT_HINT_AT)
       );
     };
 
@@ -60,6 +63,7 @@ export default function BookingMessages({ booking }: BookingMessagesProps) {
       setEmail("sent");
       setWhatsapp("sent");
       setReminder(true);
+      setNextHint(true);
       return;
     }
 
@@ -147,6 +151,33 @@ export default function BookingMessages({ booking }: BookingMessagesProps) {
           <p className="mt-5 text-xs leading-relaxed text-gray-500">Wann und wie erinnert wird, stellst du in Treatflow selbst ein. Du musst nichts tun.</p>
         </div>
       </div>
+
+      {/* Nach der Animation: weiter zur Behandlungsdoku */}
+      {nextHint && (
+        <div className="tf-msg-pop mt-14 flex justify-center lg:mt-16">
+          <a
+            href="#behandlung-dokumentieren"
+            onClick={(event) => {
+              event.preventDefault();
+              scrollToElement(document.getElementById("behandlung-dokumentieren"), "start");
+            }}
+            className="group flex flex-col items-center gap-4 text-center"
+          >
+            <span>
+              <span className="block text-sm font-semibold uppercase tracking-wide text-indigo-600">Weiter geht&apos;s</span>
+              <span className="mt-1 block text-xl font-bold text-gray-900 group-hover:text-indigo-600 lg:text-2xl">
+                Jetzt die Behandlung dokumentieren
+              </span>
+            </span>
+            <span className="relative flex h-14 w-14 items-center justify-center">
+              <span className="absolute inset-0 animate-ping rounded-full bg-indigo-400 opacity-30" aria-hidden="true" />
+              <span className="tf-arrow-bounce relative flex h-14 w-14 items-center justify-center rounded-full bg-indigo-600 text-white shadow-[0_14px_30px_-10px_rgba(79,70,229,0.8)] transition-colors group-hover:bg-indigo-700">
+                <ArrowDown className="h-6 w-6" strokeWidth={2.5} />
+              </span>
+            </span>
+          </a>
+        </div>
+      )}
 
       {flying &&
         createPortal(
