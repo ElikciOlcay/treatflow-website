@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Bell, CalendarCheck, CheckCheck, Mail } from "lucide-react";
 import type { DemoCustomer } from "./BookingPanel";
+import StudioCalendarDemo from "./StudioCalendarDemo";
+import { scrollToElement } from "./scroll";
 
 type BookingMessagesProps = {
   booking: { time: string; treatment: string; customer: DemoCustomer; dayLabel: string };
@@ -12,6 +14,7 @@ type BookingMessagesProps = {
 const EMAIL_AT = 400;
 const TYPING_AT = 1700;
 const WHATSAPP_AT = 3300;
+const CALENDAR_AT = 5200;
 
 /** Zeigt nach der Demo-Buchung, welche Nachrichten Treatflow der Kundin automatisch schickt. */
 export default function BookingMessages({ booking }: BookingMessagesProps) {
@@ -22,14 +25,15 @@ export default function BookingMessages({ booking }: BookingMessagesProps) {
   useEffect(() => {
     setPhase(0);
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setPhase(3);
+      setPhase(4);
       return;
     }
-    rootRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    scrollToElement(rootRef.current, "start");
     const timers = [
       window.setTimeout(() => setPhase(1), EMAIL_AT),
       window.setTimeout(() => setPhase(2), TYPING_AT),
       window.setTimeout(() => setPhase(3), WHATSAPP_AT),
+      window.setTimeout(() => setPhase(4), CALENDAR_AT),
     ];
     return () => timers.forEach((timer) => window.clearTimeout(timer));
   }, [booking]);
@@ -138,6 +142,9 @@ export default function BookingMessages({ booking }: BookingMessagesProps) {
         </div>
       </div>
       <p className="mt-8 text-center text-sm text-gray-500">Wann die Erinnerung rausgeht, stellst du in Treatflow selbst ein.</p>
+
+      {/* Danach: der Termin fliegt in den Studio-Kalender */}
+      {phase >= 4 && <StudioCalendarDemo booking={booking} />}
     </div>
   );
 }

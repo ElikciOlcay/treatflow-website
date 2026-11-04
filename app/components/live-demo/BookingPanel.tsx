@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { ArrowLeft, ArrowRight, Bell, CalendarCheck, Check, Clock } from "lucide-react";
 
 // Beispiel-Studio für die Demo, keine echten Preise
-const TREATMENTS = [
+export const TREATMENTS = [
   { name: "Gesichtsbehandlung", minutes: 60, price: "89 €" },
   { name: "Laser-Haarentfernung", minutes: 30, price: "79 €" },
   { name: "Wimpernlifting", minutes: 45, price: "59 €" },
