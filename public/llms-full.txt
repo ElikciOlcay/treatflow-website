@@ -43,7 +43,7 @@ Treatflow ist ideal für Einzelunternehmer und kleine bis mittlere Studios (1–
 In unter 10 Minuten startklar: Registrieren (2 Min), Behandlungen und Öffnungszeiten anlegen (5 Min), Buchungslink teilen (1 Min). Datenübernahme von anderen Anbietern (Excel, Google Sheets, andere Software) wird kostenlos angeboten.
 
 **Wie reduziert Treatflow No-Shows?**
-Durch automatische Terminerinnerungen per SMS und E-Mail – konfigurierbar z. B. 24 Stunden und 2 Stunden vor dem Termin. Studios mit aktivierten Reminder berichten von bis zu 80% weniger No-Shows. Optional auch Nachsorge-Nachrichten nach der Behandlung.
+Durch automatische Terminerinnerungen per SMS und E-Mail – konfigurierbar z. B. 24 Stunden und 2 Stunden vor dem Termin. Mit aktivierten Erinnerungen fallen deutlich weniger Termine aus. Optional auch Nachsorge-Nachrichten nach der Behandlung.
 
 **Ist Treatflow auch für Einzelunternehmer geeignet?**
 Ja, Treatflow ist besonders für Einzelunternehmer und Solo-Selbstständige ausgelegt. Der Basic-Plan (39 EUR/Monat) bietet alle Funktionen für eine Person ohne Mitarbeiterverwaltung. Online-Buchung und Mitarbeiterplanung kommen ab Booking-Plan (59 EUR/Monat) dazu.
@@ -281,7 +281,7 @@ https://www.treatflow.io/preise
 - Terminerinnerung 24h vor Termin (konfigurierbar)
 - Terminerinnerung 2h vor Termin (konfigurierbar)
 - Nachsorge-Nachricht nach Behandlung
-- Reduziert No-Shows um bis zu 80%
+- Reduziert No-Shows spürbar
 - Personalisierbare Textbausteine
 - SMS- und E-Mail-Versand möglich
 - Lieferstatistik einsehbar
@@ -605,7 +605,7 @@ Ein PMU-Studio in Wien nutzt Treatflow für Online-Buchungen via Instagram-Bio-L
 
 ### Wachsendes Beauty-Studio mit Team
 
-Ein Studio mit 5 Mitarbeitern nutzt Treatflow Booking. Jeder Mitarbeiter hat seinen eigenen Kalender mit individuellen Arbeitszeiten. Online-Buchung ist über die Studio-Website integriert. Automatische SMS-Erinnerungen 24h vor Termin haben No-Shows um 80% reduziert. Die gemeinsame Kundenkartei sorgt für nahtlose Übergaben zwischen Behandlerinnen.
+Ein Studio mit 5 Mitarbeitern nutzt Treatflow Booking. Jeder Mitarbeiter hat seinen eigenen Kalender mit individuellen Arbeitszeiten. Online-Buchung ist über die Studio-Website integriert. Automatische SMS-Erinnerungen 24h vor Termin haben No-Shows deutlich reduziert. Die gemeinsame Kundenkartei sorgt für nahtlose Übergaben zwischen Behandlerinnen.
 
 ### Multi-Service Schönheitssalon
 

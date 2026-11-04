@@ -21,7 +21,7 @@ import { generateFaqSchema } from '@/lib/schema';
 export const metadata = {
     title: 'WhatsApp-Erinnerungen Kosmetik: weniger No-Shows',
     description:
-        'Automatische WhatsApp-Erinnerungen für dein Kosmetikstudio. Reduziere No-Shows um bis zu 80% mit Terminerinnerungen per WhatsApp und E-Mail. 14 Tage gratis.',
+        'Automatische WhatsApp-Erinnerungen für dein Kosmetikstudio. Reduziere No-Shows mit Terminerinnerungen per WhatsApp und E-Mail. 14 Tage gratis.',
     keywords: [
         'SMS Erinnerung Kosmetikstudio',
         'Terminerinnerung Kosmetik SMS',
@@ -37,7 +37,7 @@ export const metadata = {
     openGraph: {
         title: 'WhatsApp-Erinnerungen Kosmetikstudio: No-Shows reduzieren',
         description:
-            'Automatische WhatsApp-Erinnerungen für dein Kosmetikstudio. Reduziere No-Shows um bis zu 80% mit Terminerinnerungen per WhatsApp und E-Mail.',
+            'Automatische WhatsApp-Erinnerungen für dein Kosmetikstudio. Reduziere No-Shows mit Terminerinnerungen per WhatsApp und E-Mail.',
         url: 'https://www.treatflow.io/sms-erinnerungen-kosmetikstudio',
         images: [
             {
@@ -93,7 +93,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                             </span>
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-                            Reduziere No-Shows um bis zu 80% mit automatischen Terminerinnerungen per WhatsApp und E-Mail.
+                            Reduziere No-Shows mit automatischen Terminerinnerungen per WhatsApp und E-Mail.
                             Deine Kunden werden pünktlich erinnert – du sparst Zeit und Ärger.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -303,7 +303,7 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                                 </li>
                                 <li className="flex items-center text-gray-700">
                                     <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                                    Bis zu 80% weniger No-Shows
+                                    Spürbar weniger No-Shows
                                 </li>
                             </ul>
                         </div>
@@ -326,8 +326,8 @@ export default function SmsErinnerungenKosmetikstudioPage() {
                             <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                                 <TrendingUp className="h-8 w-8 text-white" />
                             </div>
-                            <div className="text-4xl font-bold text-white mb-2">80%</div>
-                            <p className="text-purple-100 font-medium">weniger No-Shows</p>
+                            <div className="text-4xl font-bold text-white mb-2">Weniger</div>
+                            <p className="text-purple-100 font-medium">No-Shows</p>
                         </div>
                         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/20">
                             <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">

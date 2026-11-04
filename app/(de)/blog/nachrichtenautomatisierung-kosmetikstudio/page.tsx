@@ -7,7 +7,7 @@ import Breadcrumbs, { generateBreadcrumbSchema } from '@/app/components/Breadcru
 
 export const metadata: Metadata = {
     title: 'Nachrichtenautomatisierung: Weniger No-Shows',
-    description: 'Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche reduzieren No-Shows um 80% und steigern die Kundenbindung.',
+    description: 'Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche reduzieren No-Shows und steigern die Kundenbindung.',
     keywords: [
         'Nachrichtenautomatisierung Kosmetikstudio',
         'Automatische Terminerinnerungen',
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
         canonical: 'https://www.treatflow.io/blog/nachrichtenautomatisierung-kosmetikstudio',
     },
     openGraph: {
-        title: 'Nachrichtenautomatisierung: 80% weniger No-Shows',
-        description: 'Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche reduzieren No-Shows um 80% und steigern die Kundenbindung.',
+        title: 'Nachrichtenautomatisierung: weniger No-Shows',
+        description: 'Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche reduzieren No-Shows und steigern die Kundenbindung.',
         url: 'https://www.treatflow.io/blog/nachrichtenautomatisierung-kosmetikstudio',
         siteName: 'Treatflow Blog',
         images: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Nachrichtenautomatisierung: 80% weniger No-Shows',
+        title: 'Nachrichtenautomatisierung: weniger No-Shows',
         description: 'Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche für mehr Kundenbindung.',
         images: ['/images/blog/no-shows.png'],
     },
@@ -56,8 +56,8 @@ export default function BlogPost() {
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Nachrichtenautomatisierung im Kosmetikstudio: 80% weniger No-Shows durch automatische Erinnerungen",
-        "description": "Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche reduzieren No-Shows um 80% und steigern die Kundenbindung. So funktioniert moderne Kundenkommunikation.",
+        "headline": "Nachrichtenautomatisierung im Kosmetikstudio: weniger No-Shows durch automatische Erinnerungen",
+        "description": "Automatische Terminerinnerungen, Follow-ups und Geburtstagswünsche reduzieren No-Shows und steigern die Kundenbindung. So funktioniert moderne Kundenkommunikation.",
         "image": "https://www.treatflow.io/images/blog/No-Shows.png",
         "author": {
             "@type": "Person",
@@ -128,7 +128,7 @@ export default function BlogPost() {
                         </div>
 
                         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                            Nachrichtenautomatisierung im Kosmetikstudio: 80% weniger No-Shows durch automatische Erinnerungen
+                            Nachrichtenautomatisierung im Kosmetikstudio: weniger No-Shows durch automatische Erinnerungen
                         </h1>
 
                         <p className="text-xl text-gray-600 leading-relaxed mb-8">
@@ -233,7 +233,7 @@ export default function BlogPost() {
 
                                 <div className="bg-green-100 border border-green-300 rounded-lg p-4">
                                     <p className="text-green-800 font-medium mb-0">
-                                        ✅ Studien zeigen: Automatische Erinnerungen reduzieren No-Shows um 60-80%
+                                        ✅ Automatische Erinnerungen reduzieren No-Shows spürbar
                                     </p>
                                 </div>
                             </div>
@@ -311,8 +311,8 @@ export default function BlogPost() {
 
                         <div className="grid md:grid-cols-2 gap-6 mb-8">
                             <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
-                                <div className="text-4xl font-bold text-green-600 mb-2">80%</div>
-                                <div className="text-green-800 font-medium mb-1">Weniger No-Shows</div>
+                                <div className="text-4xl font-bold text-green-600 mb-2">Weniger</div>
+                                <div className="text-green-800 font-medium mb-1">No-Shows</div>
                                 <div className="text-sm text-green-700">Durch rechtzeitige Erinnerungen</div>
                             </div>
 

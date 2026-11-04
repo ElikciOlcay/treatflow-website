@@ -39,7 +39,7 @@ export const metadata = {
 const faqs = [
     {
         question: 'Wie organisiere ich Termine im Kosmetikstudio am besten?',
-        answer: 'Mit einer spezialisierten Terminsoftware wie Treatflow organisierst du Termine am effizientesten. Online-Buchungen ermöglichen Kunden 24/7 zu buchen, automatische Erinnerungen per WhatsApp reduzieren No-Shows um bis zu 80%, und die übersichtliche Kalenderansicht gibt dir jederzeit den vollen Überblick.',
+        answer: 'Mit einer spezialisierten Terminsoftware wie Treatflow organisierst du Termine am effizientesten. Online-Buchungen ermöglichen Kunden 24/7 zu buchen, automatische Erinnerungen per WhatsApp reduzieren No-Shows spürbar, und die übersichtliche Kalenderansicht gibt dir jederzeit den vollen Überblick.',
     },
     {
         question: 'Was kostet eine Terminsoftware für Kosmetikstudios?',
@@ -59,7 +59,7 @@ const faqs = [
     },
     {
         question: 'Wie reduziere ich No-Shows im Kosmetikstudio?',
-        answer: 'Automatische Terminerinnerungen per WhatsApp und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten vor dem Termin. Studios berichten von bis zu 80% weniger No-Shows.',
+        answer: 'Automatische Terminerinnerungen per WhatsApp und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten vor dem Termin. So sinkt die Zahl der No-Shows deutlich.',
     },
     {
         question: 'Welche Funktionen sollte ein Terminplaner für Kosmetikstudios haben?',
@@ -203,7 +203,7 @@ export default function TerminkalenderPage() {
                     {
                         icon: Bell,
                         title: 'Automatische Erinnerungen',
-                        text: 'Deine Kunden bekommen vor dem Termin eine Erinnerung per WhatsApp oder E-Mail. Das reduziert vergessene Termine um bis zu 80 %.',
+                        text: 'Deine Kunden bekommen vor dem Termin eine Erinnerung per WhatsApp oder E-Mail. Das reduziert vergessene Termine spürbar.',
                     },
                 ]}
             />

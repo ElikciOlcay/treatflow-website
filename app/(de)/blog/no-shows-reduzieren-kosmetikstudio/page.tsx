@@ -92,7 +92,7 @@ export default function BlogPost() {
 
                         <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-10">Erinnerungen – der größte Hebel</h2>
                         <p className="text-gray-700 leading-relaxed mb-6">
-                            Studios, die <Link href="/nachrichtenautomatisierung" className="text-indigo-600 hover:text-indigo-700 font-medium">automatische SMS-Erinnerungen</Link> (z.B. 24 Stunden vorher) schicken, berichten oft von deutlich weniger unentschuldigten Ausfällen. Die Zahlen variieren, aber Reduktionen um 40 bis 80 Prozent sind keine Seltenheit. Der Grund ist simpel: Die Kundin wird nochmal an den Termin erinnert und kann rechtzeitig absagen oder den Termin verschieben.
+                            Studios, die <Link href="/nachrichtenautomatisierung" className="text-indigo-600 hover:text-indigo-700 font-medium">automatische SMS-Erinnerungen</Link> (z.B. 24 Stunden vorher) schicken, berichten oft von deutlich weniger unentschuldigten Ausfällen. Die Zahlen variieren, aber deutliche Rückgänge sind keine Seltenheit. Der Grund ist simpel: Die Kundin wird nochmal an den Termin erinnert und kann rechtzeitig absagen oder den Termin verschieben.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-6">
                             Wichtig: Nicht nur einmal erinnern. Eine Bestätigung direkt nach der Buchung („Dein Termin am … ist reserviert“) und eine Erinnerung ein bis zwei Tage vorher bringen am meisten. So bleibt der Termin präsent und du wirkst professionell.

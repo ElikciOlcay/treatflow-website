@@ -646,7 +646,7 @@ export default function BlogPost() {
                                 <Link href="/blog/nachrichtenautomatisierung-kosmetikstudio" className="group">
                                     <div className="bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors">
                                         <h4 className="text-lg font-semibold text-gray-900 group-hover:text-indigo-600 mb-2">
-                                            Nachrichtenautomatisierung: 80% weniger No-Shows
+                                            Nachrichtenautomatisierung: weniger No-Shows
                                         </h4>
                                         <p className="text-gray-600 text-sm">
                                             Automatische Terminerinnerungen und Follow-ups für mehr Effizienz...

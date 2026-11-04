@@ -426,7 +426,7 @@ export function GET(request: Request) {
             ratingMax: 5,
             ratingCount: 19,
             ratingPlatform: "Google",
-            avgNoShowReduction: "bis zu 80%",
+            avgNoShowReduction: "weniger No-Shows durch Erinnerungen",
             avgAdminTimeSavingsPerWeek: "10h",
         },
         pricing: {
@@ -539,7 +539,7 @@ export function GET(request: Request) {
             {
                 key: "nachrichtenautomatisierung",
                 name: "Nachrichten-Automatisierung",
-                description: "Automatische Terminerinnerungen per WhatsApp und E-Mail, Nachsorge-Nachrichten – reduziert No-Shows um bis zu 80%.",
+                description: "Automatische Terminerinnerungen per WhatsApp und E-Mail, Nachsorge-Nachrichten – reduziert No-Shows spürbar.",
                 url: "https://www.treatflow.io/nachrichtenautomatisierung",
             },
             {

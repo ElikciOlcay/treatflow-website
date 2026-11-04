@@ -156,7 +156,7 @@ const solutions = [
     {
         icon: Bell,
         title: 'Automatische Erinnerungen',
-        description: 'Reduziere No-Shows um bis zu 80% mit automatischen Terminerinnerungen per WhatsApp und E-Mail.',
+        description: 'Reduziere No-Shows mit automatischen Terminerinnerungen per WhatsApp und E-Mail.',
     },
     {
         icon: Shield,
