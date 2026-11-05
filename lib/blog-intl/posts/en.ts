@@ -800,7 +800,6 @@ export const posts: BlogArticle[] = [
     related: [
       { pageKey: "messaging", label: "Automated messages" },
       { pageKey: "client-records", label: "Client records" },
-      { pageKey: "vouchers", label: "Gift vouchers" },
     ],
   },
 

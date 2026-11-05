@@ -901,7 +901,6 @@ export const posts: BlogArticle[] = [
     related: [
       { pageKey: "messaging", label: "Messaggi e promemoria automatici" },
       { pageKey: "client-records", label: "Schede clienti" },
-      { pageKey: "vouchers", label: "Buoni regalo" },
     ],
     sources: [
       { label: "Garante per la protezione dei dati personali", url: "https://www.garanteprivacy.it" },

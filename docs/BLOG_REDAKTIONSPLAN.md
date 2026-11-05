@@ -10,7 +10,8 @@ die Artikel, setzt den Status auf `live (JJJJ-MM-TT)` und merged.
 - Bilder: nur vorhandene Dateien aus `public/images/blog/`, `public/images/lifestyle/`
   oder `public/images/branchen/` verwenden.
 - Neue Themen dürfen unten angehängt werden. Keine DACH-only-Themen
-  (Kasse/POS, Treatflow Pay, TSE, RKSV, NiSV) – die bleiben im deutschen Blog.
+  (Kasse/POS, Treatflow Pay, TSE, RKSV, NiSV, WhatsApp-Versand, Gutscheine, Buchhaltung) – die bleiben im deutschen Blog.
+- Länderspezifische Artikel (nur eine Sprache) stehen in `BLOG_MARKTPLAN.md`.
 
 | # | Status | Themen-ID | DE | Arbeitstitel | Fokus (EN) | pageKeys | Bild |
 |---|--------|-----------|----|--------------|------------|----------|------|
@@ -24,7 +25,7 @@ die Artikel, setzt den Status auf `live (JJJJ-MM-TT)` und merged.
 | 8 | offen | cancellation-policy-salon | `stornogebuehren-kosmetikstudio` | Stornoregeln und Ausfallgebühren | salon cancellation policy | online-booking, messaging, appointment-calendar | /images/blog/no-shows.png |
 | 9 | offen | google-reviews-salon | `google-bewertungen-kosmetikstudio` | Mehr Google-Bewertungen | get more google reviews salon | messaging, online-booking, studio-website | /images/blog/google-business-kosmetik.jpg |
 | 10 | offen | win-back-clients | `kunden-reaktivieren-kosmetikstudio` | Inaktive Kundinnen zurückholen | win back salon clients | messaging, client-records, vouchers | /images/blog/kunden-reaktivieren-kosmetikstudio.jpg |
-| 11 | offen | whatsapp-for-salons | `whatsapp-kosmetikstudio` | WhatsApp im Studio | whatsapp for beauty salons | messaging, online-booking, client-records | /images/blog/whatsapp-kosmetikstudio.jpg |
+| 11 | zurückgestellt (WhatsApp nur DACH) | whatsapp-for-salons | `whatsapp-kosmetikstudio` | WhatsApp im Studio | whatsapp for beauty salons | messaging, online-booking, client-records | /images/blog/whatsapp-kosmetikstudio.jpg |
 | 12 | offen | open-beauty-salon | `kosmetikstudio-eroeffnen-guide` | Studio eröffnen – Leitfaden | how to open a beauty salon | beauty-salon-software, pricing, features | /images/blog/kosmetikstudio-eroeffnen.jpg |
 | 13 | offen | treatment-documentation-guide | `behandlungsdokumentation-kosmetik` | Behandlungen dokumentieren | treatment records beauty | treatment-documentation, client-records, forms | /images/lifestyle/dokumentation-waehrend-behandlung.png |
 | 14 | offen | raise-prices-salon | `preiserhoehung-kosmetikstudio` | Preiserhöhung kommunizieren | how to raise prices salon | pricing, messaging, client-records | /images/blog/preiserhoehung-kosmetikstudio.jpg |
@@ -41,7 +42,7 @@ die Artikel, setzt den Status auf `live (JJJJ-MM-TT)` und merged.
 | 25 | offen | email-marketing-salon | `email-marketing-kosmetikstudios` | E-Mail-Marketing | email marketing for salons | messaging, client-records, vouchers | /images/blog/email-marketing-kosmetikstudios.jpg |
 | 26 | offen | salon-schedule-planning | `wochenplanung-termine-kosmetikstudio` | Wochenplanung und Auslastung | salon schedule planning utilisation | appointment-calendar, online-booking, messaging | /images/blog/wochenplanung-termine.jpg |
 | 27 | offen | pmu-studio-workflow | DE neu | PMU-Studio: Beratung, Einwilligung, Nachbehandlung | permanent makeup consent and aftercare | permanent-makeup-software, forms, messaging | /images/branchen/hero-pmu.jpg |
-| 28 | offen | gift-vouchers-salon | `gutscheine-kosmetikstudio-verkaufen` | Gutscheine verkaufen | sell gift vouchers salon | vouchers, messaging, studio-website | /images/blog/produktverkauf-guide.jpg |
+| 28 | zurückgestellt (Gutscheine nur DACH) | gift-vouchers-salon | `gutscheine-kosmetikstudio-verkaufen` | Gutscheine verkaufen | sell gift vouchers salon | vouchers, messaging, studio-website | /images/blog/produktverkauf-guide.jpg |
 | 29 | offen | holiday-cover-salon | `urlaub-vertretung-kosmetikstudio` | Urlaub und Vertretung planen | salon holiday closure planning | appointment-calendar, messaging, online-booking | /images/blog/urlaub-vertretung-studio.jpg |
 | 30 | offen | salon-website-guide | DE neu | Website fürs Studio: Was wirklich Buchungen bringt | beauty salon website that converts | studio-website, online-booking, pricing | /images/lifestyle/online-buchung-smartphone.png |
 | 31 | offen | nail-salon-organisation | DE neu | Nagelstudio organisieren: Auffüllen, Pausen, Zeiten | nail salon booking and scheduling | nail-salon-software, appointment-calendar, online-booking | /images/branchen/hero-nagelstudio.jpg |
