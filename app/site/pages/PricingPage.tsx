@@ -2,18 +2,17 @@ import { CheckCircle, X, ArrowRight, ChevronDown } from "lucide-react";
 import CTASection from "@/app/components/CTASection";
 import PricingSection from "@/app/components/PricingSection";
 import QuickFacts from "@/app/components/QuickFacts";
-import Breadcrumbs, { generateBreadcrumbSchema } from "@/app/components/Breadcrumbs";
+import Breadcrumbs from "@/app/components/Breadcrumbs";
 import ContentAttribution from "@/app/components/ContentAttribution";
 import AiAnswerCapsule from "@/app/components/AiAnswerCapsule";
-import { BASE_URL } from "@/app/i18n/config";
 import { filterByFeature } from "@/app/i18n/feature-availability";
 import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 import { sitePagePath } from "@/app/i18n/site-pages";
-import { generateWebPageSchema } from "@/lib/content-attribution";
 import { getFeatureCommon } from "@/app/site/content/feature-common";
 import { getHomeContent } from "@/app/site/content/home";
 import { getPricingPageContent } from "@/app/site/content/pricing";
 import type { SiteMarket } from "@/app/site/content/shared";
+import { PageSchemas } from "@/app/site/schema";
 
 /**
  * Preisseite für alle Sprachen (DE: app/(de)/preise, sonst app/[market]/pricing bzw. app/tr/fiyatlar).
@@ -24,72 +23,34 @@ export default function PricingPage({ market }: { market: SiteMarket }) {
   const content = getPricingPageContent(market);
   const common = getFeatureCommon(market);
   const homePath = sitePagePath(market, "home") ?? "/";
-  const pageUrl = `${BASE_URL}${sitePagePath(market, "pricing") ?? ""}`;
   const breadcrumbs = [{ label: content.breadcrumb }];
   const { comparison, why } = content;
   const faqData = filterByFeature(content.faq.items, market);
   const rows = filterByFeature(comparison.rows, market);
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqData.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  };
-
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Treatflow",
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "Web",
-    offers: filterByFeature(content.schema.offers, market).map((offer) => ({
-      "@type": "Offer",
-      name: offer.name,
-      price: offer.price,
-      priceCurrency: offer.currency,
-      priceValidUntil: content.schema.priceValidUntil,
-      availability: "https://schema.org/InStock",
-      ...(offer.description ? { description: offer.description } : {}),
-    })),
-  };
+  const offers = filterByFeature(content.schema.offers, market).map((offer) => ({
+    "@type": "Offer",
+    name: offer.name,
+    price: offer.price,
+    priceCurrency: offer.currency,
+    priceValidUntil: content.schema.priceValidUntil,
+    availability: "https://schema.org/InStock",
+    ...(offer.description ? { description: offer.description } : {}),
+  }));
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbs, homePath, common.breadcrumbHome)),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            generateWebPageSchema({
-              name: content.schema.webPage.name,
-              description: content.schema.webPage.description,
-              url: pageUrl,
-              dateModified: content.dates.modified,
-              datePublished: content.dates.published,
-              inLanguage: common.schemaLanguage,
-            })
-          ),
-        }}
+      <PageSchemas
+        market={market}
+        path={sitePagePath(market, "pricing") ?? "/"}
+        name={content.schema.webPage.name}
+        description={content.schema.webPage.description}
+        breadcrumbs={breadcrumbs}
+        dateModified={content.dates.modified}
+        datePublished={content.dates.published}
+        faq={faqData}
+        software={{ offers }}
+        speakable={["#treatflow-quick-facts"]}
       />
 
       <Breadcrumbs items={breadcrumbs} homeHref={homePath} homeLabel={common.breadcrumbHome} />
@@ -189,7 +150,7 @@ export default function PricingPage({ market }: { market: SiteMarket }) {
         </div>
       </section>
 
-      <QuickFacts variant="compact" market={market} />
+      <QuickFacts variant="compact" market={market} speakableSchema={false} />
 
       {/* FAQ Section */}
       <section className="py-20 bg-gray-50">

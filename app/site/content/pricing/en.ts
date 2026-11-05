@@ -2,7 +2,7 @@ import type { PricingPageContent } from "./types";
 
 export const pricingEn: PricingPageContent = {
   meta: {
-    title: "Pricing",
+    title: "Salon Software Pricing – from €39 per Month",
     description:
       "Treatflow pricing: Basic from €39/month, Booking from €59/month. No booking commission, 14-day free trial, no credit card required.",
     keywords: [

@@ -1,12 +1,15 @@
 import Image from "next/image";
-import Script from "next/script";
 import { ArrowRight, CheckCircle, ChevronDown, Gift, Globe, Zap } from "lucide-react";
 import SocialProofBar from "@/app/components/SocialProofBar";
+import { BASE_URL } from "@/app/i18n/config";
 import { DEMO_BOOKING_URL } from "@/app/i18n/market-access";
+import { stripTitleBrand } from "@/app/i18n/seo";
+import { sitePagePath } from "@/app/i18n/site-pages";
 import { getHomeContent } from "@/app/site/content/home";
 import type { SiteMarket } from "@/app/site/content/shared";
 import { getStudioWebsiteContent, type StudioWebsiteContent } from "@/app/site/content/studio-website";
 import { siteIcons } from "@/app/site/icons";
+import { JsonLd, ORGANIZATION_ID, breadcrumbSchema, faqPageSchema, webPageSchema } from "@/app/site/schema";
 
 /**
  * Seite „studio-website“ (Website für Kosmetikstudios) für alle Sprachen.
@@ -14,20 +17,22 @@ import { siteIcons } from "@/app/site/icons";
  * Texte aus app/site/content/studio-website/<lang>.ts.
  */
 
-/** JSON-LD (Service + FAQ). DE rendert es wie bisher vor der Navigation. */
+/**
+ * JSON-LD (Breadcrumb, WebPage, Service, FAQ). DE rendert es wie bisher vor der Navigation.
+ * Kein SoftwareApplication-Block: die Seite verkauft eine Dienstleistung (Website-Erstellung).
+ */
 export function StudioWebsiteSchemas({ market }: { market: SiteMarket }) {
   const content = getStudioWebsiteContent(market);
   const s = content.schema;
+  const pageUrl = `${BASE_URL}${sitePagePath(market, "studio-website") ?? ""}`;
+  const serviceId = `${pageUrl}#service`;
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": serviceId,
     name: s.serviceName,
     description: s.serviceDescription,
-    provider: {
-      "@type": "Organization",
-      name: "Treatflow",
-      url: "https://www.treatflow.io",
-    },
+    provider: { "@id": ORGANIZATION_ID },
     serviceType: s.serviceType,
     ...(s.areaServed ? { areaServed: s.areaServed } : {}),
     offers: {
@@ -44,31 +49,21 @@ export function StudioWebsiteSchemas({ market }: { market: SiteMarket }) {
   };
   const schemaFaqs =
     content.faq.schemaCount === undefined ? content.faq.items : content.faq.items.slice(0, content.faq.schemaCount);
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: schemaFaqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
 
   return (
     <>
-      <Script
-        id="service-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      <JsonLd data={breadcrumbSchema(market, [{ label: s.serviceName }], pageUrl)} />
+      <JsonLd
+        data={webPageSchema(market, {
+          url: pageUrl,
+          name: stripTitleBrand(content.meta.title),
+          description: content.meta.description,
+          breadcrumb: true,
+          aboutId: serviceId,
+        })}
       />
-      <Script
-        id="faq-schema-websites"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <JsonLd data={serviceSchema} />
+      <JsonLd data={faqPageSchema(market, pageUrl, schemaFaqs)} />
     </>
   );
 }

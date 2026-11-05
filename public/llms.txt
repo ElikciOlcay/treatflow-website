@@ -1,224 +1,151 @@
 # Treatflow
 
-> Treatflow ist die All-in-One Software für Kosmetikstudios, Beauty-Salons und Ästhetik-Praxen. Terminkalender, digitale Kundenkartei, Online-Buchungen, Anamnese-Formulare, Behandlungsdokumentation, NiSV-konforme Protokolle und ein TSE-/RKSV-konformes Kassensystem - alles in einer App. Made in Austria. DSGVO-konform. Ab 39 EUR/Monat. 14 Tage Self-Serve-Test weltweit, keine Kreditkarte.
+> Treatflow ist die All-in-One-Software für Kosmetikstudios, Beauty-Salons, Ästhetik-Praxen und andere Studios, die Behandlungen durchführen (Laser, Nagel, Wimpern, Permanent Makeup, Tattoo, Fußpflege, Spa, Massage). Terminkalender, Online-Buchungen ohne Provision, digitale Kundenkartei, Anamnese- und Einwilligungsformulare, Behandlungs- und NiSV-Dokumentation, WhatsApp- und E-Mail-Erinnerungen, Kunden-Workflows, Treatflow Pay und eine TSE-/RKSV-konforme Kasse mit Gutscheinen – alles in einer App. Made in Austria, Daten auf EU-Servern in Frankfurt, DSGVO-konform. Basic 39 €/Monat, Booking 59 €/Monat (zzgl. MwSt.), 14 Tage kostenlos testen, keine Kreditkarte, keine Provision pro Buchung.
+
+Stand: 2026-11-05. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website (https://www.treatflow.io) für Deutschland, Österreich und die Schweiz (DACH). Kasse, Gutscheine, NiSV-Dokumentation, WhatsApp-Nachrichten, SumUp und Lexware/AbaNinja gibt es nur im DACH-Raum.
 
 ## Über Treatflow
 
-- Gegründet von Olcay und Gökce Elikci in Österreich
-- Über 500 Studios nutzen Treatflow
-- 4,6/5 Sterne auf Google (19 Bewertungen)
-- Zielgruppe: Kosmetikstudios, Nagelstudios, Lash Studios, Permanent Makeup Studios, Laserstudios, Tattoo Studios, Spa & Wellness, Massage-Praxen, Ästhetische Medizin
-- Sprachen der Website: Deutsch (Hauptsprache), English /en, Nederlands /nl, Italiano /it, Polski /pl, Español /es, Français /fr, Türkçe /tr
-- Self-Serve-Registrierung: weltweit, 14 Tage Test, https://app.treatflow.io/auth/register
-- Hosting: EU-Server, DSGVO-konform / GDPR
+- Unternehmen: Treatflow GmbH, 2023 gegründet von Olcay und Gökce Elikci in Bischofshofen, Österreich
+- Bereits von 500+ Studios getestet; 4,6/5 auf Google (19 Bewertungen)
+- Für: Kosmetikstudios, Schönheitssalons, Ästhetische Medizin, Laser & IPL, Nagelstudios, Lash Studios, Permanent Makeup, Tattoo Studios, Fußpflege, Spa & Wellness, Massage-Praxen
+- Kein Marktplatz: Das Studio nutzt seinen eigenen Buchungslink, die Kundendaten gehören dem Studio
+- Läuft im Browser auf Computer, Tablet und Smartphone; keine Installation nötig
+
+## Funktionen
+
+- [Terminkalender](https://www.treatflow.io/terminkalender): Tages-, Wochen- und Monatsansicht mit Spalten pro Mitarbeiter und Raum, Schutz vor Doppelbelegungen
+- [Online-Buchungen](https://www.treatflow.io/online-buchungen): persönlicher Buchungslink, 24/7, ohne Provision pro Buchung
+- [Kundenverwaltung](https://www.treatflow.io/kundenverwaltung): Kundenprofile mit Behandlungshistorie, Notizen und Fotos
+- [Kundenkartei Software](https://www.treatflow.io/kundenkartei-software): digitale Kundenkartei statt Papier oder Excel
+- [Formulare](https://www.treatflow.io/formulare): digitale Anamnese, Einwilligungen und Aufklärungsbögen mit digitaler Unterschrift, vorab per Link ausfüllbar; Formular-Marketplace und KI-Generator
+- [Dokumentation](https://www.treatflow.io/behandlungsdokumentation): Behandlungen mit Parametern, Produkten und Vorher-Nachher-Fotos festhalten, inkl. Sprachnotiz
+- [NiSV-Dokumentation](https://www.treatflow.io/nisv-dokumentation): Beratungsprotokolle und Behandlungsdokumentation nach NiSV (Laser, IPL, apparative Kosmetik)
+- [Nachrichten](https://www.treatflow.io/nachrichtenautomatisierung): automatische Terminbestätigungen, Erinnerungen und Follow-ups per WhatsApp und E-Mail
+- [Kunden-Workflows](https://www.treatflow.io/kunden-workflows): mehrstufige Automationen für Nachsorge, Wiederbuchung und Reaktivierung
+- [Kassensystem](https://www.treatflow.io/kassensystem-kosmetikstudio): TSE-konform (KassenSichV, DE) und RKSV-konform (AT), direkt aus dem Termin kassieren, Belege mit Signatur-QR, Tagesabschluss, DSFinV-K-/DEP7-Export
+- [Gutscheine](https://www.treatflow.io/gutscheine-kosmetikstudio): Geschenkgutscheine an der Kasse verkaufen und einlösen, automatischer Restwert, Einzweck- und Mehrzweckgutscheine
+- [Treatflow Pay](https://www.treatflow.io/treatflow-pay): Anzahlung oder vollen Preis direkt bei der Online-Buchung kassieren, pro Leistung einstellbar, 2,69 % pro Transaktion
+- [Shop](https://www.treatflow.io/shop): Produktverkauf und Lagerverwaltung
+- [Integrationen](https://www.treatflow.io/integrationen): Lexware Office, AbaNinja (Schweiz), Google Kalender, SumUp und Zapier
+- [Studio-Website](https://www.treatflow.io/website-fuer-kosmetikstudios): individuelle, mobil optimierte Website für dein Studio, ab 1.000 Euro
+- [Alle Funktionen](https://www.treatflow.io/funktionen): Übersicht aller Funktionen
 
 ## Preise
 
-- **Basic**: 39 EUR/Monat (jährlich 35 EUR/Monat). Kundenverwaltung, Formulare, Dokumentation, Vorlagen für Anamnesen, E-Mail-Support.
-- **Booking**: 59 EUR/Monat (jährlich 53 EUR/Monat). Alles aus Basic + Terminverwaltung, Online-Buchungssystem, SMS & E-Mail Automatisierung, Priority Support.
-- **Kasse (Add-on zu Booking)**: 39 EUR/Monat (jährlich 35 EUR/Monat) zzgl. einmalig 149 EUR Einrichtung. TSE-/RKSV-konformes Kassensystem ohne Transaktionsgebühren.
-- 14 Tage kostenlose Testversion. Keine Kreditkarte erforderlich. Jederzeit kündbar.
+- [Preise](https://www.treatflow.io/preise): Pläne im Detail vergleichen
+- Basic: 39 €/Monat oder 421 €/Jahr (35 €/Monat). Kundenverwaltung, Formulare mit digitaler Unterschrift, Dokumentation inkl. Sprachnotiz, Vorher-Nachher-Fotos, Team-Notizen und Aufgaben, Shop und Produkte, Statistiken, Mitarbeiter und Rollen, NiSV-Dokumentation, E-Mail-Support. Ohne Terminkalender.
+- Booking: 59 €/Monat oder 637 €/Jahr (53 €/Monat). Alles aus Basic plus Terminkalender mit Mitarbeiter- und Raumspalten, Online-Buchung ohne Provision, Warteliste, WhatsApp- und E-Mail-Erinnerungen, Kunden-Workflows, Rabattcodes, mehrsprachige Buchungsseite, Integrationen (Lexware, Google Kalender, Zapier, SumUp), Priority E-Mail- und Chat-Support.
+- Kasse (Add-on zu Booking): 39 €/Monat (jährlich 35 €/Monat) zzgl. einmalig 149 € Einrichtung; TSE-/RKSV-konform, keine Transaktionsgebühren, keine Provision pro Verkauf.
+- Alle Preise in Euro, zzgl. MwSt. 14 Tage kostenlos testen, keine Kreditkarte, keine Setup-Gebühren, monatlich kündbar, kostenloser Datenumzug.
+- Treatflow Pay (optional): 2,69 % pro Online-Zahlung.
 
-## Kernfunktionen
+## Testen und registrieren
 
-- **Terminkalender**: Tagesansicht mit Spalten pro Mitarbeiter oder Raum, Auslastungsübersicht, Schutz vor Doppelbelegungen, Drag & Drop, Wochen-/Monatsansicht, Pausen und Blocker
-- **Online-Buchungen**: Persönlicher Buchungslink, 24/7 Online-Terminbuchung für Kunden
-- **Kassensystem**: TSE-konforme Kasse (KassenSichV, DE) und RKSV-Registrierkasse (AT), Kassieren aus dem Termin, Bar/Karte/Gutschein/Überweisung, fiskalkonforme Belege mit Signatur-QR, Gutscheine, Tagesabschluss, DSFinV-K-/DEP7-Export
-- **Kundenverwaltung**: Digitale Kundenkartei, Behandlungshistorie, Fotos, Notizen
-- **Formulare**: Digitale Anamnesebögen, Einwilligungen, Aufklärungsbögen (vorab per E-Mail/SMS an Kunden)
-- **Dokumentation**: Behandlungen mit Parametern, Preisen und Fotos digital dokumentieren
-- **Gutscheine**: Geschenkgutscheine an der Kasse verkaufen und einlösen (ganz oder teilweise, automatischer Restwert), Einzweck- und Mehrzweckgutscheine mit korrekter Steuerlogik, Gültigkeitsdatum, fiskalkonform signiert (Teil der Kasse)
-- **NiSV-Dokumentation**: Beratungsprotokolle und Behandlungsdokumentation gemäß NiSV (Verordnung zum Schutz vor nichtionisierender Strahlung)
-- **Nachrichten-Automatisierung**: Automatische Terminerinnerungen per SMS und E-Mail, Nachsorge-Nachrichten
-- **Shop/Formulare-Marktplatz**: Fertige Vorlagen für Anamnesebögen und Einwilligungen
+- [Kostenlos testen](https://app.treatflow.io/auth/register?lang=de): 14 Tage gratis, keine Kreditkarte
+- [Funktionen live testen](https://www.treatflow.io/funktionen-live-testen): Termin online buchen, Behandlung per KI-Diktat dokumentieren und Anamnese-Formulare unterschreiben, ohne Anmeldung
+- [Formulare testen](https://www.treatflow.io/formulare-testen): Beispiel-Anamnesen und Einwilligungen ausprobieren
+- [Demo buchen](https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f): persönliches Beratungsgespräch mit dem Treatflow-Team
 
-## Wichtige Seiten
+## Sprachen
 
-- Homepage: https://www.treatflow.io
-- Terminkalender: https://www.treatflow.io/terminkalender
-- Kundenkartei: https://www.treatflow.io/kundenkartei-software
-- Kundenverwaltung: https://www.treatflow.io/kundenverwaltung
-- Formulare: https://www.treatflow.io/formulare
-- Anamnesebogen: https://www.treatflow.io/anamnesebogen-kosmetikstudio
-- Dokumentation: https://www.treatflow.io/behandlungsdokumentation
-- Online-Buchungen: https://www.treatflow.io/online-buchungen
-- Hygieneplan PDF: https://www.treatflow.io/hygieneplan-kosmetikstudio-pdf
-- Kassensystem: https://www.treatflow.io/kassensystem-kosmetikstudio
-- Gutscheine: https://www.treatflow.io/gutscheine-kosmetikstudio
-- NiSV-Dokumentation: https://www.treatflow.io/nisv-dokumentation
-- Nachrichten: https://www.treatflow.io/nachrichtenautomatisierung
-- Kunden-Workflows: https://www.treatflow.io/kunden-workflows
-- Software-Vergleich: https://www.treatflow.io/kosmetikstudio-software-vergleich
-- Über uns: https://www.treatflow.io/ueber-uns
-- Blog: https://www.treatflow.io/blog
+- App-Oberfläche: Deutsch, Englisch, Niederländisch, Italienisch, Polnisch, Türkisch, Spanisch, Französisch
+- Buchungsseite für Kundinnen und Kunden: in der Sprache der Kundin; zusätzlich auch auf Russisch
+- Website: Deutsch (Hauptsprache), Englisch (/en), Niederländisch (/nl), Italienisch (/it), Polnisch (/pl), Spanisch (/es), Französisch (/fr), Türkisch (/tr)
 
-## Branchenseiten
+## Datenschutz
 
-- Kosmetikstudios: https://www.treatflow.io/kosmetikstudio-software
-- Laser Haarentfernung: https://www.treatflow.io/laser-haarentfernung-software
-- Permanent Makeup: https://www.treatflow.io/permanent-makeup-software
-- Ästhetische Medizin: https://www.treatflow.io/aesthetische-medizin-software
-- Tattoo Studios: https://www.treatflow.io/tattoo-studio-software
-- Nagelstudios: https://www.treatflow.io/nagelstudio-software
-- Fußpflege (kosmetisch & mobil): https://www.treatflow.io/fusspflege-software
-- Lash Studios: https://www.treatflow.io/lash-studio-software
-- Spa & Wellness: https://www.treatflow.io/spa-wellness-software
-- Massage-Praxen: https://www.treatflow.io/massage-software
-- Schönheitssalons: https://www.treatflow.io/schoenheitssalon-software
+- DSGVO-konform; alle Daten verschlüsselt auf EU-Servern in Frankfurt (Deutschland), SSL und tägliche Backups
+- Die Kundendaten gehören dem Studio; Export jederzeit möglich, auch nach einer Kündigung
+- [Datenschutz](https://www.treatflow.io/datenschutz): Datenschutzerklärung
 
-## Vergleich: Treatflow vs. Treatwell
+## Branchen
 
-Treatflow ist eine eigenständige Studio-Software (SaaS). Treatwell ist eine Buchungsplattform/Marktplatz. Treatflow bietet: eigene Kundendaten, keine Provision pro Buchung, Dokumentation und NiSV-Compliance, flexible Formulare. Vergleichsseite: https://www.treatflow.io/treatflow-vs-treatwell
+- [Kosmetikstudios](https://www.treatflow.io/kosmetikstudio-software): die All-in-One-Lösung
+- [Schönheitssalons](https://www.treatflow.io/schoenheitssalon-software): Software für Multi-Service-Salons
+- [Ästhetische Medizin](https://www.treatflow.io/aesthetische-medizin-software): Praxis- und Patientenverwaltung
+- [Laser Haarentfernung](https://www.treatflow.io/laser-haarentfernung-software): Sitzungen und Parameter NiSV-konform dokumentieren
+- [Permanent Makeup](https://www.treatflow.io/permanent-makeup-software): PMU und Microblading
+- [Tattoo Studios](https://www.treatflow.io/tattoo-studio-software): Einwilligungen und Buchungen
+- [Nagelstudios](https://www.treatflow.io/nagelstudio-software): Termine und Kundenvorlieben
+- [Fußpflege](https://www.treatflow.io/fusspflege-software): Kundenkartei und Befunde, kosmetisch und mobil
+- [Lash Studios](https://www.treatflow.io/lash-studio-software): Wimpern und Refill-Planung
+- [Spa & Wellness](https://www.treatflow.io/spa-wellness-software): Gästeverwaltung und Buchungen
+- [Massage-Praxen](https://www.treatflow.io/massage-software): Termine und Gesundheitsfragebögen
 
-## International pages (SEO / AI discovery)
+## Vergleiche
 
-- English: https://www.treatflow.io/en
-- English llms.txt: https://www.treatflow.io/llms-en.txt
-- English facts JSON: https://www.treatflow.io/api/facts?lang=en
-- Turkish: https://www.treatflow.io/tr
-- Turkish llms.txt: https://www.treatflow.io/llms-tr.txt
-- Turkish facts JSON: https://www.treatflow.io/api/facts?lang=tr
-- Machine-readable facts (DE): https://www.treatflow.io/api/facts
+- [Software-Vergleich](https://www.treatflow.io/kosmetikstudio-software-vergleich): Kosmetikstudio-Software im Vergleich
+- [Treatflow vs. Treatwell](https://www.treatflow.io/treatflow-vs-treatwell): Treatwell ist ein Marktplatz mit Provision pro Buchung; Treatflow ist eigenständige Software zum Festpreis
+- [Treatflow vs. Fresha](https://www.treatflow.io/treatflow-vs-fresha): Fresha bietet eine kostenlose Basisversion und verdient an Payment-Gebühren und Premium-Features; Treatflow hat transparente Festpreise
+- [Treatflow vs. Shore](https://www.treatflow.io/treatflow-vs-shore): allgemeine Terminbuchung vs. Studio-Software mit Dokumentation und Formularen
+- [Treatflow vs. Timely](https://www.treatflow.io/treatflow-vs-timely): Treatflow mit deutschem Support und EU-Hosting
+- [Kostenlose Kosmetikstudio-Software](https://www.treatflow.io/kosmetikstudio-software-kostenlos): kostenlos vs. bezahlt
 
-## Kontakt
+## Ratgeber und Vorlagen
 
-- E-Mail: hello@treatflow.io
-- Website: https://www.treatflow.io
-- Instagram: https://www.instagram.com/treatflow.io/
-- Registrieren: https://app.treatflow.io/auth/register
+- [Anamnesebogen Kosmetikstudio](https://www.treatflow.io/anamnesebogen-kosmetikstudio): Inhalte und digitale Umsetzung
+- [Digitale Anamnese](https://www.treatflow.io/digitale-anamnese-kosmetikstudio): Anamnese vor dem Termin per Link
+- [Behandlungsdokumentation Kosmetikstudio](https://www.treatflow.io/behandlungsdokumentation-kosmetikstudio): was dokumentiert werden sollte
+- [NiSV-Dokumentation Kosmetikstudio](https://www.treatflow.io/nisv-dokumentation-kosmetikstudio): Pflichten nach NiSV
+- [Kosmetikstudio Kasse](https://www.treatflow.io/kosmetikstudio-kasse): Kasse für Kosmetikstudios
+- [Kassensystem Deutschland](https://www.treatflow.io/kassensystem-kosmetikstudio-deutschland): TSE und KassenSichV
+- [Registrierkasse Österreich](https://www.treatflow.io/registrierkasse-kosmetikstudio-oesterreich): RKSV
+- [Hygieneplan PDF](https://www.treatflow.io/hygieneplan-kosmetikstudio-pdf): Vorlage zum Download
+- [NiSV-Checkliste PDF](https://www.treatflow.io/nisv-checkliste-kosmetikstudio-pdf): Vorlage zum Download
+- [Kundenkartei-Vorlage PDF](https://www.treatflow.io/kundenkartei-vorlage-kosmetikstudio-pdf): Vorlage zum Download
+- [No-Show-Playbook PDF](https://www.treatflow.io/no-show-playbook-kosmetikstudio-pdf): Vorlage zum Download
+- [Preislisten-Vorlage PDF](https://www.treatflow.io/preisliste-vorlage-kosmetikstudio-pdf): Vorlage zum Download
+- [Kosmetikstudio-Software Deutschland](https://www.treatflow.io/kosmetikstudio-software-deutschland): Studios in Deutschland
+- [Kosmetikstudio-Software Österreich](https://www.treatflow.io/kosmetikstudio-software-oesterreich): Studios in Österreich
 
-## Warum Treatflow statt Alternativen?
+## Häufige Fragen
 
-### Treatflow vs. Treatwell
-- Treatwell ist ein Marktplatz mit bis zu 35% Provision pro Buchung
-- Treatflow ist eigenständige Software ohne Provision
-- Bei Treatflow gehören die Kundendaten dem Studio
-- Treatflow bietet NiSV-Dokumentation, Treatwell nicht
-- Vergleich: https://www.treatflow.io/treatflow-vs-treatwell
+**Was ist Treatflow?**
+Eine All-in-One-App für den Studioalltag: Termine, Kundenakte, digitale Formulare und Behandlungsdokumentation hängen in einem System zusammen – ohne Provision pro Buchung. Entwickelt in Österreich, Daten auf EU-Servern.
 
-### Treatflow vs. Fresha
-- Fresha ist kostenlos, finanziert sich über Zusatzprodukte und Payment-Gebühren
-- Treatflow bietet transparente Preise ab 39 EUR/Monat ohne versteckte Kosten
-- Treatflow hat NiSV-konforme Dokumentation und digitale Formulare, Fresha nicht
-- Treatflow ist spezialisiert auf den deutschsprachigen Raum mit deutschem Support
-- Vergleich: https://www.treatflow.io/treatflow-vs-fresha
+**Für wen ist Treatflow?**
+Für Studios, die Behandlungen durchführen – von Kosmetik über Ästhetik und Laser bis Nagel, Wimpern, Permanent Makeup, Massage und Spa.
 
-### Treatflow vs. Shore
-- Shore ist eine deutsche Terminbuchungslösung für verschiedene Branchen
-- Treatflow ist spezialisiert auf Kosmetikstudios mit Dokumentation und Formularen
-- Treatflow bietet NiSV-Compliance, Shore nicht
-- Treatflow hat einen KI-Formular-Generator
-- Vergleich: https://www.treatflow.io/treatflow-vs-shore
+**Was kostet Treatflow?**
+Basic 39 €/Monat (Kundenverwaltung, Formulare, Dokumentation), Booking 59 €/Monat (zusätzlich Terminkalender, Online-Buchungen, automatische Erinnerungen), jeweils zzgl. MwSt. Bei jährlicher Zahlung sparst du 10 %. Die Kasse ist optional als Add-on ab 39 €/Monat. Keine Provision, keine Setup-Gebühren.
 
-### Treatflow vs. Timely
-- Timely ist eine Salon-Software aus Neuseeland, primär auf Englisch
-- Treatflow ist komplett auf Deutsch mit deutschem Support
-- Timely hat keine Behandlungsdokumentation und keine NiSV-Konformität
-- Treatflow hostet auf EU-Servern, Timely in Australien/Neuseeland
-- Vergleich: https://www.treatflow.io/treatflow-vs-timely
+**Wie lange kann ich Treatflow kostenlos testen?**
+14 Tage, vollkommen kostenlos und ohne Kreditkarte. Danach entscheidest du, ob du weitermachst.
 
-## Für wen ist Treatflow die beste Wahl?
+**Ist die Kasse TSE- und RKSV-konform?**
+Ja. In Deutschland signiert Treatflow jeden Verkauf über eine zertifizierte TSE gemäß KassenSichV und erstellt DSFinV-K-Exporte. In Österreich erfüllt die Kasse die RKSV inklusive Start-, Monats-, Jahres- und Schlussbeleg sowie DEP7-Export.
 
-Treatflow ist ideal für:
-- Kosmetikstudios, die NiSV-konforme Dokumentation benötigen
-- Studios, die keine Provision pro Buchung zahlen möchten
-- Einzelunternehmer und kleine Teams (1-10 Mitarbeiter)
-- Studios im deutschsprachigen Raum (DE, AT, CH)
-- Studios, die Anamnese und Einwilligung digital vor dem Termin versenden möchten
-- Studios, die von Papier auf digital umsteigen wollen
+**Ist Treatflow DSGVO-konform?**
+Ja. Alle Daten werden verschlüsselt auf EU-Servern in Frankfurt gespeichert, auch digitale Anamnesen und Behandlungsdokumentation.
 
-## Häufig gestellte Fragen in Kurzform
+**Kann ich meine bestehenden Kundendaten importieren?**
+Ja, wir helfen dir beim kostenlosen Umzug deiner Daten in die digitale Kundenkartei.
 
-- Was ist Treatflow? All-in-One-App: Termine, Kundenakte, Formulare und Dokumentation in einem System, ohne Buchungsprovision. Made in Austria, EU-Server. Optional TSE-/RKSV-Kasse.
-- Für wen ist Treatflow? Für Studios, die Behandlungen durchführen – Kosmetik, Ästhetik, Laser, Nagel, Wimpern, PMU, Massage, Spa. Kein Marktplatz, sondern Software fürs Studio.
-- Welche Software braucht ein Kosmetikstudio? Kalender, Kundenkartei, Online-Buchung, Anamnese, Behandlungsdokumentation. Treatflow vereint das ohne Provision.
-- Beste Software für Kosmetikstudios Deutschland? Treatflow - All-in-One mit NiSV-Doku, ab 39 EUR/Monat
-- Wie verwalte ich Kundenkontakte ohne teure Software? Digitale Kundenkartei statt Papier/Excel. Treatflow Basic ab 39 EUR/Monat, 14 Tage testen, EU-Server. https://www.treatflow.io/kundenkartei-software
-- Welche Software eignet sich für ästhetische Medizin? Treatflow: Patientenakte, Aufklärungsbögen, Behandlungsverlauf, Termine. https://www.treatflow.io/aesthetische-medizin-software
-- Welche Software für Ästhetikkliniken hat digitale Einwilligungen? Treatflow speichert Aufklärung und Unterschrift in der Patientenakte, vorab per Link.
-- Welche Software für Ästhetikkliniken hat digitale Anamnesebögen? Treatflow Formular-Marktplatz plus Editor, Versand vor dem Termin.
-- Wie dokumentiere ich den Behandlungsverlauf in der Ästhetik? Sitzungseinträge mit Parametern, Chargen, Fotos; Historie in der Akte. Diktat: Sprache zu Text, optional KI-Glättung.
-- Ist die Patientenakte DSGVO-konform? Ja, verschlüsselt auf EU-Servern (Frankfurt). Keine HIPAA-Zertifizierung.
-- Gibt es Bodycharts? Skizzenfelder in Formularen (Gesicht/Körper) und Markierungen auf Fotos in der Dokumentation. Kein separates Bodychart-Modul.
-- Wo bekomme ich einen Hygieneplan Kosmetikstudio PDF? Kostenlose Muster-Vorlage: https://www.treatflow.io/hygieneplan-kosmetikstudio-pdf
-- Alternative zu Treatwell ohne Provision? Treatflow - eigene Studio-Software, keine Provision
-- Kundenkartei App Kosmetikstudio Empfehlung? Treatflow Kundenkartei mit Historie und Fotos
-- Wie No-Shows reduzieren? Automatische SMS-Erinnerungen mit Treatflow
-- NiSV Dokumentation Software? Treatflow mit integrierter NiSV-Doku und Beratungsprotokollen
-- Kosmetikstudio digital organisieren? Treatflow vereint Termine, Kunden, Formulare und Doku
-- Online Buchungssystem Kosmetikstudio? Treatflow mit persönlichem Buchungslink, 24/7
-- Behandlungsdokumentation Kosmetik Software? Treatflow mit Foto-Management und Sprachdiktat
-- Kassensystem für Kosmetikstudio? Treatflow Kasse - TSE-konform (DE) und RKSV-konform (AT), ab 39 EUR/Monat als Add-on
-- TSE-Kasse / RKSV-Registrierkasse Beauty? Treatflow signiert jeden Verkauf, Belege mit QR, DSFinV-K-/DEP7-Export
-- Gutscheine verkaufen und einlösen? Treatflow Kasse - Einzweck-/Mehrzweckgutscheine, automatischer Restwert, fiskalkonform
-- Geschenkgutschein-Verwaltung Kosmetikstudio? Treatflow - verkaufen, einlösen, Gültigkeit und Restwert im Blick
-- Darf ein Kosmetikstudio Stornogebühren verlangen? Ja, wenn Bedingungen vor der Buchung klar kommuniziert sind. Beitrag: https://www.treatflow.io/blog/stornogebuehren-kosmetikstudio
-- Was kann ein Kosmetikstudio steuerlich absetzen? Betriebsausgaben wie Miete, Produkte, Software; keine Steuerberatung. https://www.treatflow.io/blog/kosmetikstudio-buchhaltung-steuern
+**Kann ich jederzeit kündigen?**
+Ja. Bei monatlicher Zahlung jederzeit zum Ende des Abrechnungszeitraums, ohne Mindestlaufzeit. Alle Daten kannst du exportieren.
 
-## Alle wichtigen Seiten
+## Unternehmen und Kontakt
 
-### Funktionen
-- Terminkalender: https://www.treatflow.io/terminkalender
-- Online-Buchungen: https://www.treatflow.io/online-buchungen
-- Kundenverwaltung: https://www.treatflow.io/kundenverwaltung
-- Formulare: https://www.treatflow.io/formulare
-- Dokumentation: https://www.treatflow.io/behandlungsdokumentation
-- Kassensystem: https://www.treatflow.io/kassensystem-kosmetikstudio
-- Gutscheine: https://www.treatflow.io/gutscheine-kosmetikstudio
-- NiSV: https://www.treatflow.io/nisv-dokumentation
-- SMS-Erinnerungen: https://www.treatflow.io/nachrichtenautomatisierung
-- Kunden-Workflows: https://www.treatflow.io/kunden-workflows
-- Shop: https://www.treatflow.io/shop
+- [Über uns](https://www.treatflow.io/ueber-uns): Team und Geschichte von Treatflow
+- [Kontakt](https://www.treatflow.io/kontakt): E-Mail an hello@treatflow.io oder Gespräch buchen
+- [Blog](https://www.treatflow.io/blog): Ratgeber für Studioinhaberinnen
+- [Neuigkeiten](https://www.treatflow.io/neuigkeiten): Produkt-Updates
+- [AGB](https://www.treatflow.io/agb): Allgemeine Geschäftsbedingungen
+- [Impressum](https://www.treatflow.io/impressum): Anbieterkennzeichnung
+- [Instagram](https://www.instagram.com/treatflow.io/): @treatflow.io
 
-### Vergleiche
-- Software-Vergleich: https://www.treatflow.io/kosmetikstudio-software-vergleich
-- vs. Treatwell: https://www.treatflow.io/treatflow-vs-treatwell
-- vs. Fresha: https://www.treatflow.io/treatflow-vs-fresha
-- vs. Shore: https://www.treatflow.io/treatflow-vs-shore
-- vs. Timely: https://www.treatflow.io/treatflow-vs-timely
-- Preise: https://www.treatflow.io/preise
-- Kostenlos vs. Bezahlt: https://www.treatflow.io/kosmetikstudio-software-kostenlos
+## Andere Sprachen
 
-### Branchen
-- Kosmetikstudios: https://www.treatflow.io/kosmetikstudio-software
-- Schönheitssalons: https://www.treatflow.io/schoenheitssalon-software
-- Laser Haarentfernung: https://www.treatflow.io/laser-haarentfernung-software
-- Permanent Makeup: https://www.treatflow.io/permanent-makeup-software
-- Ästhetische Medizin: https://www.treatflow.io/aesthetische-medizin-software
-- Tattoo Studios: https://www.treatflow.io/tattoo-studio-software
-- Nagelstudios: https://www.treatflow.io/nagelstudio-software
-- Fußpflege (kosmetisch & mobil): https://www.treatflow.io/fusspflege-software
-- Lash Studios: https://www.treatflow.io/lash-studio-software
-- Spa & Wellness: https://www.treatflow.io/spa-wellness-software
-- Massage: https://www.treatflow.io/massage-software
+- [English](https://www.treatflow.io/llms-en.txt): englische Website (ohne DACH-Funktionen)
+- [Nederlands](https://www.treatflow.io/llms-nl.txt): niederländische Website
+- [Italiano](https://www.treatflow.io/llms-it.txt): italienische Website
+- [Polski](https://www.treatflow.io/llms-pl.txt): polnische Website
+- [Español](https://www.treatflow.io/llms-es.txt): spanische Website
+- [Français](https://www.treatflow.io/llms-fr.txt): französische Website
+- [Türkçe](https://www.treatflow.io/llms-tr.txt): türkische Website (Preise in TRY, ohne Treatflow Pay)
 
-### Ratgeber
-- Kundenkartei Software: https://www.treatflow.io/kundenkartei-software
-- Terminsoftware Kosmetikstudio: https://www.treatflow.io/terminkalender
-- Kundenkartei Kosmetikstudio: https://www.treatflow.io/kundenverwaltung
-- Anamnesebogen Kosmetikstudio: https://www.treatflow.io/anamnesebogen-kosmetikstudio
-- Online-Terminbuchung: https://www.treatflow.io/online-buchungen
-- SMS-Erinnerungen: https://www.treatflow.io/sms-erinnerungen-kosmetikstudio
-- NiSV-Dokumentation: https://www.treatflow.io/nisv-dokumentation-kosmetikstudio
-- Blog: https://www.treatflow.io/blog
+## Optional
 
-## Ausführliche Version
-
-Für detaillierte Informationen siehe: https://www.treatflow.io/llms-full.txt
-
-## Maschinenlesbare Fakten (JSON)
-
-Strukturierter JSON-Endpoint mit allen Kernfakten (Preise, Features, Branchen, Vergleiche, FAQ) für direkte Verarbeitung durch AI-Systeme: https://www.treatflow.io/api/facts
-
-## Sprachversionen
-
-- Deutsch (Hauptsprache): https://www.treatflow.io – llms.txt
-- English: https://www.treatflow.io/en – https://www.treatflow.io/llms-en.txt
-- Nederlands: https://www.treatflow.io/nl – https://www.treatflow.io/llms-nl.txt
-- Italiano: https://www.treatflow.io/it – https://www.treatflow.io/llms-it.txt
-- Polski: https://www.treatflow.io/pl – https://www.treatflow.io/llms-pl.txt
-- Español: https://www.treatflow.io/es – https://www.treatflow.io/llms-es.txt
-- Français: https://www.treatflow.io/fr – https://www.treatflow.io/llms-fr.txt
-- Türkçe: https://www.treatflow.io/tr – https://www.treatflow.io/llms-tr.txt
-
-Internationaler Blog: https://www.treatflow.io/en/blog (sowie /nl/blog, /it/blog, /pl/blog, /es/blog, /fr/blog, /tr/blog)
+- [Ausführliche Version, alle Sprachen](https://www.treatflow.io/llms-full.txt): Kernfakten aller Märkte in einer Datei
+- [Maschinenlesbare Fakten (JSON)](https://www.treatflow.io/api/facts): Kernfakten als JSON

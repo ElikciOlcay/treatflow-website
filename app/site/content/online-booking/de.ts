@@ -108,7 +108,7 @@ export const onlineBookingDe: OnlineBookingContent = {
     description: "Buchungslink, Sprachen, Warteliste, Rabatte und Treatflow Pay – ohne Provision pro Termin.",
     items: [
       { icon: "link", title: "Persönlicher Buchungslink", text: "Dein Link zum Teilen auf Website und Social Media – mit Studio-Branding.", points: ["Individueller Link", "QR-Code", "Studio-Branding"] },
-      { icon: "languages", title: "Sieben Sprachen", text: "Die Buchungsseite passt sich der Sprache der Kundin an – ohne extra Setup.", points: ["DE, EN, NL, TR, PL, IT, RU", "Automatische Sprache", "Ohne Barriere"] },
+      { icon: "languages", title: "Neun Sprachen", text: "Die Buchungsseite passt sich der Sprache der Kundin an – ohne extra Setup.", points: ["DE, EN, NL, IT, PL, TR, ES, FR, RU", "Automatische Sprache", "Ohne Barriere"] },
       { icon: "wallet", title: "Treatflow Pay", text: "Anzahlung oder Vollzahlung direkt bei der Online-Buchung.", points: ["Pro Leistung einstellbar", "Anzahlung oder Vollzahlung", "2,69 % pro Transaktion"], feature: "pay" },
       { icon: "list-ordered", title: "Warteliste", text: "Bei Ausbuchung vormerken. Wird ein Termin frei, geht eine E-Mail an passende Interessenten.", points: ["Auto-Mail bei Storno", "Zwei Benachrichtigungsmodi", "Übersicht im Dashboard"] },
       { icon: "ticket", title: "Rabattcodes", text: "Codes für Neukunden und Kampagnen – direkt bei der Online-Buchung einlösen.", points: ["Neukunden & Aktionen", "Einlösung beim Buchen", "Nutzungsstatistik"] },

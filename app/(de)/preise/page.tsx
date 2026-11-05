@@ -1,12 +1,13 @@
+import type { Metadata } from 'next';
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
 import PricingPage from '@/app/site/pages/PricingPage';
-import { buildHreflangAlternates } from '@/app/i18n/seo';
+import { buildHreflangAlternates, withDeOpenGraph } from '@/app/i18n/seo';
 import { getPricingPageContent } from '@/app/site/content/pricing';
 
 const { meta } = getPricingPageContent('de');
 
-export const metadata = {
+export const metadata: Metadata = withDeOpenGraph('pricing', {
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
@@ -19,7 +20,7 @@ export const metadata = {
         description: meta.openGraph.description,
         url: 'https://www.treatflow.io/preise',
     },
-};
+});
 
 /** Deutsche Seite. Sektionen: app/site/pages/PricingPage.tsx, Texte: app/site/content/pricing/de.ts (+ home/de.ts `pricing`) */
 export default function PreisePage() {

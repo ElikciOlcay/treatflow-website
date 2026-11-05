@@ -2,12 +2,12 @@ import Link from "next/link";
 import { ArrowRight, CalendarDays, FilePenLine, Mic, PlayCircle } from "lucide-react";
 import LiveDemos from "@/app/components/live-demo/LiveDemos";
 import { FeaturePageCta } from "@/app/components/FeatureSections";
-import { generateBreadcrumbSchema } from "@/app/components/Breadcrumbs";
 import { resolveHref, resolveHrefOrHome, sitePagePath } from "@/app/i18n/site-pages";
 import { getDemoForms, type DemoLocale } from "@/lib/demoForms";
 import { getFeatureCommon } from "@/app/site/content/feature-common";
 import { getTryFeaturesContent } from "@/app/site/content/try-features";
 import type { SiteMarket } from "@/app/site/content/shared";
+import { PageSchemas } from "@/app/site/schema";
 
 /** Sprachen mit Formular-Demo (lib/demoForms); die anderen haben keine `try-forms`-Seite. */
 function demoFormsLocale(market: SiteMarket): DemoLocale | null {
@@ -20,7 +20,7 @@ function tryFormsPath(market: SiteMarket): string | null {
 }
 
 /**
- * Breadcrumb-JSON-LD der Seite. Eigene Komponente, weil sie auf der DE-Seite (wie bisher)
+ * JSON-LD der Seite (Breadcrumb, WebPage, SoftwareApplication). Eigene Komponente, weil sie auf der DE-Seite (wie bisher)
  * vor der Navigation steht.
  */
 export function TryFeaturesSchema({ market }: { market: SiteMarket }) {
@@ -32,15 +32,12 @@ export function TryFeaturesSchema({ market }: { market: SiteMarket }) {
     { label: content.breadcrumb },
   ];
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(
-          market === "de"
-            ? generateBreadcrumbSchema(breadcrumbs)
-            : generateBreadcrumbSchema(breadcrumbs, sitePagePath(market, "home") ?? "/", common.breadcrumbHome)
-        ),
-      }}
+    <PageSchemas
+      market={market}
+      path={sitePagePath(market, "try-features") ?? "/"}
+      name={content.meta.title}
+      description={content.meta.description}
+      breadcrumbs={breadcrumbs}
     />
   );
 }

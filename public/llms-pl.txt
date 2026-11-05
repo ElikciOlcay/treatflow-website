@@ -1,110 +1,120 @@
 # Treatflow
 
-> Treatflow to kompleksowy program do zarządzania salonem kosmetycznym, gabinetem medycyny estetycznej, salonem depilacji laserowej i innymi gabinetami zabiegowymi. Łączy rezerwacje online, kartotekę klientów, cyfrowy wywiad kosmetyczny i zgody na zabieg, dokumentację zabiegów z dyktowaniem notatek głosem, zdjęcia przed i po oraz automatyczne przypomnienia. Tworzony w Austrii. Dane na serwerach w UE (Frankfurt). Od 39 € miesięcznie. 14 dni za darmo, bez karty kredytowej.
+> Treatflow to program all-in-one dla salonów kosmetycznych, gabinetów medycyny estetycznej i innych miejsc, w których wykonuje się zabiegi (depilacja laserowa, stylizacja paznokci i rzęs, makijaż permanentny, tatuaż, spa, masaż). Łączy kalendarz wizyt, rezerwacje online bez prowizji, kartotekę klientów, kartę wywiadu i zgody na zabieg online, dokumentację zabiegów z notatkami głosowymi, przypomnienia e-mail, automatyzacje dla klientów oraz Treatflow Pay do zaliczek online. Tworzony w Austrii, dane na serwerach w UE we Frankfurcie, zgodny z RODO. Basic 39 €/miesiąc, Booking 59 €/miesiąc (netto + VAT), 14 dni za darmo, bez podawania karty, bez prowizji od rezerwacji.
+
+Ostatnia aktualizacja: 2026-11-05. Język: polski. Ten plik opisuje polską wersję strony (https://www.treatflow.io/pl) i wymienia tylko funkcje oferowane poza Niemcami, Austrią i Szwajcarią.
 
 ## O Treatflow
 
-- Założyciele: Olcay i Gökce Elikci, Bischofshofen, Austria (2023)
-- Ponad 500 salonów i gabinetów
-- 4,6/5 w Google (19 opinii)
-- Dla: salonów kosmetycznych, stylizacji paznokci, stylizacji rzęs, makijażu permanentnego, depilacji laserowej, studiów tatuażu, spa i wellness, gabinetów masażu, gabinetów medycyny estetycznej
-- Języki strony: niemiecki (główny rynek), angielski (`/en`), polski (`/pl`), niderlandzki (`/nl`), włoski (`/it`), hiszpański (`/es`), francuski (`/fr`), turecki (`/tr`)
-- Rejestracja: https://app.treatflow.io/auth/register?lang=pl
-- Hosting: serwery w UE, zgodność z RODO
+- Firma: Treatflow GmbH, założona w 2023 r. przez Olcaya i Gökce Elikci w Bischofshofen w Austrii
+- Przetestowany już przez ponad 500 salonów i gabinetów; 4,6/5 w Google (19 opinii)
+- Dla: salonów kosmetycznych, gabinetów medycyny estetycznej, depilacji laserowej i IPL, salonów paznokci, stylizacji rzęs, makijażu permanentnego, studiów tatuażu, spa i wellness, gabinetów masażu
+- To nie jest platforma rezerwacyjna: salon korzysta z własnego linku do rezerwacji, a dane klientów należą do niego
+- Działa w przeglądarce na komputerze, tablecie i smartfonie; niczego nie trzeba instalować
+
+## Najważniejsze funkcje
+
+- [Kalendarz wizyt](https://www.treatflow.io/pl/kalendarz-wizyt): widok dnia, tygodnia i miesiąca z kolumnami dla pracowników i gabinetów
+- [Rezerwacje online](https://www.treatflow.io/pl/rezerwacje-online): własny link do rezerwacji 24/7, bez prowizji od rezerwacji
+- [Kartoteka klientów](https://www.treatflow.io/pl/kartoteka-klientow): profile klientów z historią zabiegów, notatkami i zdjęciami
+- [Formularze](https://www.treatflow.io/pl/formularze): karta wywiadu i zgody na zabieg z podpisem elektronicznym, wypełniane online przed wizytą; biblioteka gotowych formularzy i generator formularzy AI
+- [Dokumentacja zabiegów](https://www.treatflow.io/pl/dokumentacja-zabiegow): notatki, parametry oraz zdjęcia przed i po dla każdego zabiegu, także notatki głosowe
+- [Przypomnienia](https://www.treatflow.io/pl/przypomnienia): automatyczne przypomnienia e-mail, mniej nieodwołanych wizyt
+- [Automatyzacje dla klientów](https://www.treatflow.io/pl/automatyzacje-dla-klientow): opieka pozabiegowa i odzyskiwanie klientów w kilku krokach
+- [Treatflow Pay](https://www.treatflow.io/pl/treatflow-pay): klienci wpłacają zaliczkę lub pełną kwotę od razu przy rezerwacji online; ustawiane osobno dla każdej usługi; 2,69% za transakcję
+- [Sklep](https://www.treatflow.io/pl/sklep): sprzedaż produktów i magazyn
+- [Integracje](https://www.treatflow.io/pl/integracje): Kalendarz Google, Zapier i asystenci AI
+- [Strona salonu](https://www.treatflow.io/pl/strona-salonu): strona internetowa na miarę Twojego salonu, dopasowana do smartfonów i rezerwacji
+- [Wszystkie funkcje](https://www.treatflow.io/pl/funkcje): przegląd wszystkich funkcji
 
 ## Cennik
 
-- **Basic**: 39 € miesięcznie (35 € miesięcznie przy płatności rocznej). Kartoteka klientów, formularze, dokumentacja zabiegów, szablony, wsparcie e-mail.
-- **Booking**: 59 € miesięcznie (53 € miesięcznie przy płatności rocznej). Wszystko z Basic oraz kalendarz wizyt, rezerwacje online, automatyczne wiadomości SMS i e-mail, wsparcie priorytetowe.
-- 14 dni za darmo. Bez karty kredytowej. Rezygnacja w dowolnym momencie. Bez prowizji od rezerwacji.
+- [Cennik](https://www.treatflow.io/pl/cennik): szczegółowe porównanie pakietów
+- Basic: 39 €/miesiąc lub 421 €/rok (35 €/miesiąc). Zarządzanie klientami, formularze z podpisem elektronicznym, dokumentacja i notatki głosowe, zdjęcia przed i po, notatki i zadania zespołu, sklep i produkty, statystyki, pracownicy i role, wsparcie e-mail. Bez kalendarza wizyt.
+- Booking: 59 €/miesiąc lub 637 €/rok (53 €/miesiąc). Wszystko z pakietu Basic oraz kalendarz z kolumnami dla pracowników i gabinetów, rezerwacje online bez prowizji, lista oczekujących, przypomnienia e-mail, automatyzacje dla klientów, kody rabatowe, wielojęzyczna strona rezerwacji, integracje (Kalendarz Google, Zapier, asystenci AI), priorytetowe wsparcie e-mail i czat.
+- Ceny w euro, netto + VAT. 14 dni za darmo, bez podawania karty, bez opłat za wdrożenie, rezygnacja co miesiąc, bezpłatne przeniesienie danych.
+- Treatflow Pay (opcjonalnie): 2,69% od płatności online.
 
-## Krótkie odpowiedzi
+## Wypróbuj i załóż konto
 
-**Czym jest Treatflow?**
-Treatflow to program do salonu kosmetycznego i gabinetu medycyny estetycznej, który łączy rezerwacje online, kartotekę klientów, cyfrowe zgody na zabieg, dokumentację zabiegów (także z dyktowaniem głosowym) i automatyczną komunikację z klientkami. Nie jest marketplace’em.
+- [Wypróbuj za darmo](https://app.treatflow.io/auth/register?lang=pl): 14 dni za darmo, bez podawania karty
+- [Wypróbuj funkcje na żywo](https://www.treatflow.io/pl/wyprobuj-funkcje): zarezerwuj wizytę online i udokumentuj zabieg, dyktując notatkę z pomocą AI, bez rejestracji
+- [Umów prezentację](https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f): indywidualne spotkanie z zespołem Treatflow
 
-**Program do salonu kosmetycznego bez prowizji od rezerwacji?**
-Treatflow jest dla salonów, które chcą mieć własny link do rezerwacji i własną bazę klientek, a nie platformę pobierającą prowizję. Plany od 39 € miesięcznie. Serwery w UE.
+## Języki
 
-**Treatflow czy Fresha?**
-Fresha to bezpłatne narzędzie do rezerwacji finansowane z płatności i usług dodatkowych. Treatflow to płatny program dla salonu z dokumentacją zabiegów i zgodami, przejrzystym cennikiem i bez prowizji marketplace. Porównanie: https://www.treatflow.io/pl/treatflow-vs-fresha
+- Aplikacja: polski, angielski, niemiecki, niderlandzki, włoski, turecki, hiszpański, francuski
+- Strona rezerwacji dla klientów: w języku klienta; dodatkowo również po rosyjsku
+- Strona internetowa: polski (/pl), niemiecki, angielski (/en), niderlandzki (/nl), włoski (/it), hiszpański (/es), francuski (/fr), turecki (/tr)
 
-**Treatflow czy Treatwell?**
-Treatwell to marketplace z prowizją od rezerwacji. Treatflow to niezależny program; salon zachowuje klientki i płaci stały abonament. Porównanie: https://www.treatflow.io/pl/treatflow-vs-treatwell
+## Ochrona danych
 
-**Zgody na zabieg w gabinecie medycyny estetycznej?**
-Treatflow wysyła wywiad i zgodę na zabieg przed wizytą. Odpowiedzi i podpisy trafiają do karty klienta.
-
-**Dokumentacja depilacji laserowej?**
-Treatflow przechowuje parametry zabiegu, notatki i zdjęcia przed i po. Notatki można dyktować głosem i opcjonalnie dopracować z pomocą AI.
-
-**Czy mogę dyktować notatki z zabiegu?**
-Tak. W dokumentacji zabiegów Treatflow możesz mówić zamiast pisać. Mowa jest zamieniana na tekst i może zostać dopracowana z pomocą AI. Notatka zostaje przy danej wizycie.
-
-**Cyfrowa kartoteka klientów a RODO?**
-Dane są przechowywane na serwerach w UE, z szyfrowaniem SSL i codziennymi kopiami zapasowymi. Właścicielem danych klientek pozostaje salon.
-
-## Najważniejsze strony po polsku
-
-- Strona główna: https://www.treatflow.io/pl
-- Cennik: https://www.treatflow.io/pl/cennik
-- Funkcje: https://www.treatflow.io/pl/funkcje
-- Kalendarz wizyt: https://www.treatflow.io/pl/kalendarz-wizyt
-- Rezerwacje online: https://www.treatflow.io/pl/rezerwacje-online
-- Kartoteka klientów: https://www.treatflow.io/pl/kartoteka-klientow
-- Formularze: https://www.treatflow.io/pl/formularze
-- Dokumentacja zabiegów: https://www.treatflow.io/pl/dokumentacja-zabiegow
-- O nas: https://www.treatflow.io/pl/o-nas
-- Kontakt: https://www.treatflow.io/pl/kontakt
-- Polityka prywatności: https://www.treatflow.io/pl/polityka-prywatnosci
-- Regulamin: https://www.treatflow.io/pl/regulamin
+- Zgodność z RODO; wszystkie dane są szyfrowane i przechowywane na serwerach w UE we Frankfurcie (Niemcy), z SSL i codzienną kopią zapasową
+- Dane klientów należą do salonu; można je w każdej chwili wyeksportować, także po rezygnacji
+- [Polityka prywatności](https://www.treatflow.io/pl/polityka-prywatnosci): jak Treatflow przetwarza dane
 
 ## Branże
 
-- Salony kosmetyczne: https://www.treatflow.io/pl/program-dla-salonu-kosmetycznego
-- Gabinety medycyny estetycznej: https://www.treatflow.io/pl/program-dla-gabinetu-medycyny-estetycznej
-- Depilacja laserowa: https://www.treatflow.io/pl/program-depilacja-laserowa
-- Makijaż permanentny: https://www.treatflow.io/pl/program-makijaz-permanentny
-- Studia tatuażu: https://www.treatflow.io/pl/program-dla-studia-tatuazu
-- Salony paznokci: https://www.treatflow.io/pl/program-dla-salonu-paznokci
-- Stylizacja rzęs: https://www.treatflow.io/pl/program-dla-stylizacji-rzes
-- Spa i wellness: https://www.treatflow.io/pl/program-dla-spa
-- Gabinety masażu: https://www.treatflow.io/pl/program-dla-gabinetu-masazu
+- [Salony kosmetyczne](https://www.treatflow.io/pl/program-dla-salonu-kosmetycznego): program all-in-one dla salonu
+- [Gabinety medycyny estetycznej](https://www.treatflow.io/pl/program-dla-gabinetu-medycyny-estetycznej): dokumentacja i kartoteka pacjentów
+- [Depilacja laserowa](https://www.treatflow.io/pl/program-depilacja-laserowa): serie zabiegów i zgody
+- [Makijaż permanentny](https://www.treatflow.io/pl/program-makijaz-permanentny): PMU i microblading
+- [Studia tatuażu](https://www.treatflow.io/pl/program-dla-studia-tatuazu): zgody i rezerwacje
+- [Salony paznokci](https://www.treatflow.io/pl/program-dla-salonu-paznokci): wizyty i preferencje klientów
+- [Stylizacja rzęs](https://www.treatflow.io/pl/program-dla-stylizacji-rzes): przedłużanie rzęs i terminy uzupełnień
+- [Spa i wellness](https://www.treatflow.io/pl/program-dla-spa): obsługa gości i rezerwacje
+- [Gabinety masażu](https://www.treatflow.io/pl/program-dla-gabinetu-masazu): rezerwacje i ankiety zdrowotne
 
 ## Porównania
 
-- Treatflow czy Fresha: https://www.treatflow.io/pl/treatflow-vs-fresha
-- Treatflow czy Treatwell: https://www.treatflow.io/pl/treatflow-vs-treatwell
-- Porównanie programów: https://www.treatflow.io/pl/porownanie-programow
+- [Porównanie programów](https://www.treatflow.io/pl/porownanie-programow): programy dla salonów zestawione obok siebie
+- [Treatflow vs Fresha](https://www.treatflow.io/pl/treatflow-vs-fresha): Fresha ma darmową wersję podstawową i zarabia na opłatach od płatności oraz płatnych funkcjach; Treatflow ma stałe, przejrzyste ceny
+- [Treatflow vs Treatwell](https://www.treatflow.io/pl/treatflow-vs-treatwell): Treatwell to platforma rezerwacyjna pobierająca prowizję; Treatflow to niezależny program ze stałą miesięczną opłatą
 
-## Blog
+## Najczęściej zadawane pytania
 
-- Jak wybrać program do salonu kosmetycznego: https://www.treatflow.io/pl/blog/jak-wybrac-program-do-salonu-kosmetycznego – funkcje, RODO, koszty i lista kontrolna przed zakupem.
-- Jak ograniczyć nieobecności klientów w salonie: https://www.treatflow.io/pl/blog/jak-ograniczyc-nieobecnosci-klientow-salon – przypomnienia, regulamin odwołań, zadatek i lista oczekujących.
-- System rezerwacji online dla salonu: https://www.treatflow.io/pl/blog/system-rezerwacji-online-salon – jak działa, marketplace czy własny link i wdrożenie krok po kroku.
-- Wywiad kosmetyczny online: https://www.treatflow.io/pl/blog/wywiad-kosmetyczny-online – co zawiera karta klienta i zgoda na zabieg oraz jak przechowywać dane o zdrowiu.
-- Jak budować lojalność klientek w salonie: https://www.treatflow.io/pl/blog/jak-budowac-lojalnosc-klientek-salon – 7 strategii: karta klienta, przypomnienia o kolejnej wizycie, bony i polecenia.
-- RODO w salonie kosmetycznym: https://www.treatflow.io/pl/blog/rodo-w-salonie-kosmetycznym – dane o zdrowiu, zgody, zdjęcia przed i po, przechowywanie danych i lista kontrolna.
-- Jak wycenić zabiegi kosmetyczne: https://www.treatflow.io/pl/blog/jak-wycenic-zabiegi-kosmetyczne – minimalna stawka godzinowa, czas, materiały i marża, konkurencja i przejrzysty cennik.
+**Czym jest Treatflow?**
+Aplikacją all-in-one do codziennej pracy salonu: wizyty, kartoteka klientów, formularze online i dokumentacja zabiegów w jednym systemie, bez prowizji od rezerwacji. Tworzona w Austrii, dane na serwerach w UE.
+
+**Dla kogo jest Treatflow?**
+Dla każdego miejsca, w którym wykonuje się zabiegi: od gabinetów kosmetycznych i medycyny estetycznej, przez depilację laserową, stylizację paznokci i rzęs oraz makijaż permanentny, po masaż i spa.
+
+**Ile kosztuje Treatflow?**
+Basic 39 €/miesiąc (zarządzanie klientami, formularze, dokumentacja) i Booking 59 €/miesiąc (dodatkowo kalendarz wizyt, rezerwacje online i przypomnienia), netto + VAT. Płatność roczna to 10% oszczędności. Bez ukrytych kosztów, bez opłat za wdrożenie, bez prowizji.
+
+**Jak długo mogę testować Treatflow za darmo?**
+14 dni, całkowicie za darmo i bez podawania karty. Po okresie próbnym to Ty decydujesz, czy zostajesz.
+
+**Czy Treatflow jest zgodny z RODO?**
+Tak. Wszystkie dane są szyfrowane i przechowywane na serwerach w UE, we Frankfurcie (Niemcy). Dotyczy to również kart wywiadu online i dokumentacji zabiegów.
+
+**Czy mogę pobierać zaliczkę przy rezerwacji online?**
+Tak, dzięki Treatflow Pay. Dla każdej usługi wybierasz: bez płatności, zaliczka lub pełna płatność. Opłata wynosi 2,69% za transakcję.
+
+**Czy mogę zaimportować dotychczasowe dane klientów?**
+Tak, a przeniesienie danych jest bezpłatne. Zespół wsparcia pomoże przenieść dane do cyfrowej kartoteki klientów.
+
+**Czy mogę zrezygnować w każdej chwili?**
+Tak. Przy płatności miesięcznej możesz zrezygnować w każdej chwili ze skutkiem na koniec okresu rozliczeniowego. Nie ma minimalnego okresu umowy, a wszystkie dane możesz wyeksportować.
+
+## Firma i kontakt
+
+- [O nas](https://www.treatflow.io/pl/o-nas): zespół i historia Treatflow
+- [Kontakt](https://www.treatflow.io/pl/kontakt): napisz na hello@treatflow.io lub umów rozmowę
+- [Blog](https://www.treatflow.io/pl/blog): artykuły dla właścicieli salonów
+- [Regulamin](https://www.treatflow.io/pl/regulamin): warunki korzystania z usługi
+- [Instagram](https://www.instagram.com/treatflow.io/): @treatflow.io
 
 ## Inne języki
 
-- Niemiecki (główna strona, blog): https://www.treatflow.io
-- Niemiecki llms.txt: https://www.treatflow.io/llms.txt
-- Angielski: https://www.treatflow.io/en (llms: https://www.treatflow.io/llms-en.txt)
-- Turecki: https://www.treatflow.io/tr (llms: https://www.treatflow.io/llms-tr.txt)
-- Niderlandzki: https://www.treatflow.io/nl
-- Włoski: https://www.treatflow.io/it
-- Hiszpański: https://www.treatflow.io/es
-- Francuski: https://www.treatflow.io/fr
+- [Deutsch](https://www.treatflow.io/llms.txt): strona niemiecka, w tym funkcje oferowane tylko w Niemczech, Austrii i Szwajcarii
+- [English](https://www.treatflow.io/llms-en.txt): strona angielska
+- [Nederlands](https://www.treatflow.io/llms-nl.txt): strona niderlandzka
+- [Italiano](https://www.treatflow.io/llms-it.txt): strona włoska
+- [Español](https://www.treatflow.io/llms-es.txt): strona hiszpańska
+- [Français](https://www.treatflow.io/llms-fr.txt): strona francuska
+- [Türkçe](https://www.treatflow.io/llms-tr.txt): strona turecka (ceny w TRY)
 
-## Dane w formacie maszynowym
+## Optional
 
-JSON (angielski): https://www.treatflow.io/api/facts?lang=en
-JSON (niemiecki): https://www.treatflow.io/api/facts?lang=de
-
-## Kontakt
-
-- E-mail: hello@treatflow.io
-- Instagram: https://www.instagram.com/treatflow.io/
-- Rejestracja: https://app.treatflow.io/auth/register?lang=pl
+- [Pełny kontekst, wszystkie języki](https://www.treatflow.io/llms-full.txt): najważniejsze fakty dla każdego rynku w jednym pliku

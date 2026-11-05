@@ -80,7 +80,7 @@ export const onlineBookingEn: OnlineBookingContent = {
     description: "Booking link, languages, waitlist, discount codes and Treatflow Pay – with no commission per appointment.",
     items: [
       { icon: "link", title: "Personal booking link", text: "Your link to share on your website and social media – with your salon's branding.", points: ["Custom link", "QR code", "Salon branding"] },
-      { icon: "languages", title: "Seven languages", text: "The booking page adapts to your client's language – no extra setup.", points: ["DE, EN, NL, TR, PL, IT, RU", "Automatic language", "No language barriers"] },
+      { icon: "languages", title: "Nine languages", text: "The booking page adapts to your client's language – no extra setup.", points: ["DE, EN, NL, IT, PL, TR, ES, FR, RU", "Automatic language", "No language barriers"] },
       { icon: "wallet", title: "Treatflow Pay", text: "Deposit or full payment right at online booking.", points: ["Set per service", "Deposit or full payment", "2.69% per transaction"], feature: "pay" },
       { icon: "list-ordered", title: "Waitlist", text: "Clients join the waitlist when you're fully booked. When a slot opens up, matching clients get an email.", points: ["Automatic email on cancellation", "Two notification modes", "Overview in the dashboard"] },
       { icon: "ticket", title: "Discount codes", text: "Codes for new clients and promotions – redeemed right at online booking.", points: ["New clients & promotions", "Redeemed at booking", "Usage statistics"] },

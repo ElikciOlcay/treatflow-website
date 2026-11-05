@@ -80,7 +80,7 @@ export const onlineBookingNl: OnlineBookingContent = {
     description: "Boekingslink, talen, wachtlijst, kortingscodes en Treatflow Pay – zonder commissie per afspraak.",
     items: [
       { icon: "link", title: "Eigen boekingslink", text: "Je eigen link om te delen op je website en social media – in de huisstijl van je salon.", points: ["Eigen link", "QR-code", "In jouw huisstijl"] },
-      { icon: "languages", title: "Zeven talen", text: "De boekingspagina toont automatisch de taal van je klant – zonder extra instellingen.", points: ["DE, EN, NL, TR, PL, IT, RU", "Automatische taalkeuze", "Geen taalbarrières"] },
+      { icon: "languages", title: "Negen talen", text: "De boekingspagina toont automatisch de taal van je klant – zonder extra instellingen.", points: ["DE, EN, NL, IT, PL, TR, ES, FR, RU", "Automatische taalkeuze", "Geen taalbarrières"] },
       { icon: "wallet", title: "Treatflow Pay", text: "Aanbetaling of volledige betaling direct bij het online boeken.", points: ["Per behandeling in te stellen", "Aanbetaling of volledige betaling", "2,69% per transactie"], feature: "pay" },
       { icon: "list-ordered", title: "Wachtlijst", text: "Klanten zetten zich op de wachtlijst als je vol zit. Komt er een plek vrij, dan krijgen de juiste klanten een e-mail.", points: ["Automatische e-mail bij annulering", "Twee meldingsopties", "Overzicht in het dashboard"] },
       { icon: "ticket", title: "Kortingscodes", text: "Codes voor nieuwe klanten en acties – direct te gebruiken bij het online boeken.", points: ["Nieuwe klanten & acties", "Verzilveren bij het boeken", "Zien hoe vaak ze gebruikt worden"] },

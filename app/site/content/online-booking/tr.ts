@@ -80,7 +80,7 @@ export const onlineBookingTr: OnlineBookingContent = {
     description: "Randevu bağlantısı, diller, bekleme listesi ve indirim kodları – randevu başına komisyon olmadan.",
     items: [
       { icon: "link", title: "Size özel randevu bağlantısı", text: "Web sitenizde ve sosyal medyada paylaşabileceğiniz, salonunuzun adını ve görünümünü taşıyan bağlantı.", points: ["Salona özel bağlantı", "QR kod", "Salonunuzun görünümü"] },
-      { icon: "languages", title: "Yedi dil", text: "Randevu sayfası müşterinizin dilinde açılır – ek ayar gerekmez.", points: ["DE, EN, NL, TR, PL, IT, RU", "Otomatik dil seçimi", "Dil engeli yok"] },
+      { icon: "languages", title: "Dokuz dil", text: "Randevu sayfası müşterinizin dilinde açılır – ek ayar gerekmez.", points: ["DE, EN, NL, IT, PL, TR, ES, FR, RU", "Otomatik dil seçimi", "Dil engeli yok"] },
       { icon: "wallet", title: "Treatflow Pay", text: "Online randevuda kapora veya tam ödeme.", points: ["Hizmet bazında ayar", "Kapora veya tam ödeme", "İşlem başına %2,69"], feature: "pay" },
       { icon: "list-ordered", title: "Bekleme listesi", text: "Takviminiz doluysa müşteriler bekleme listesine yazılır. Bir saat boşaldığında uygun müşterilere e-posta gider.", points: ["İptalde otomatik e-posta", "İki bildirim modu", "Panelden tek bakışta"] },
       { icon: "ticket", title: "İndirim kodları", text: "Yeni müşterilere ve kampanyalara özel kodlar – doğrudan online randevuda kullanılır.", points: ["Yeni müşteri ve kampanyalar", "Randevu sırasında kullanılır", "Kullanım istatistikleri"] },

@@ -81,7 +81,7 @@ export const onlineBookingIt: OnlineBookingContent = {
     description: "Link di prenotazione, lingue, lista d'attesa, codici sconto e Treatflow Pay, senza commissioni sugli appuntamenti.",
     items: [
       { icon: "link", title: "Link di prenotazione personale", text: "Il tuo link da condividere sul sito e sui social, con il brand del tuo centro.", points: ["Link personalizzato", "QR code", "Brand del centro"] },
-      { icon: "languages", title: "Sette lingue", text: "La pagina di prenotazione si adatta alla lingua del cliente, senza configurazioni aggiuntive.", points: ["DE, EN, NL, TR, PL, IT, RU", "Lingua automatica", "Nessuna barriera"] },
+      { icon: "languages", title: "Nove lingue", text: "La pagina di prenotazione si adatta alla lingua del cliente, senza configurazioni aggiuntive.", points: ["DE, EN, NL, IT, PL, TR, ES, FR, RU", "Lingua automatica", "Nessuna barriera"] },
       { icon: "wallet", title: "Treatflow Pay", text: "Acconto o saldo completo già al momento della prenotazione online.", points: ["Impostabile per servizio", "Acconto o saldo completo", "2,69% per transazione"], feature: "pay" },
       { icon: "list-ordered", title: "Lista d'attesa", text: "Quando sei al completo, i clienti si iscrivono alla lista d'attesa. Se si libera un posto, chi è in lista riceve un'email.", points: ["Email automatica in caso di disdetta", "Due modalità di notifica", "Panoramica nella dashboard"] },
       { icon: "ticket", title: "Codici sconto", text: "Codici per nuovi clienti e promozioni, da inserire direttamente nella prenotazione online.", points: ["Nuovi clienti e promozioni", "Riscatto alla prenotazione", "Statistiche di utilizzo"] },

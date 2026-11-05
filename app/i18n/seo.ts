@@ -207,7 +207,7 @@ export function stripTitleBrand(title: string): string {
 export function buildHreflangAlternates(
   pageKey: SeoPageKey,
   options?: { xDefault?: Market }
-): Metadata["alternates"] {
+): { languages: Record<string, string> } {
   const slugs = seoPageSlugs[pageKey];
   const languages: Record<string, string> = {};
 
@@ -237,6 +237,40 @@ export function buildHreflangAlternates(
   }
 
   return { languages };
+}
+
+/** og:locale:alternate – OpenGraph-Locales der anderen Sprachen, in denen es die Seite gibt. */
+export function ogAlternateLocales(pageKey: SeoPageKey, locale: Market): string[] {
+  const slugs = seoPageSlugs[pageKey];
+  return seoMarkets
+    .filter((market) => market !== locale && slugs[market] !== undefined)
+    .map((market) => ogLocaleTags[market]);
+}
+
+/**
+ * Vervollständigt die Metadaten deutscher Seiten (eigene `openGraph`-Objekte ersetzen das
+ * Layout-OpenGraph komplett): og:type, og:site_name, og:locale (+ alternates), og:url = Canonical,
+ * Standardbild, falls die Seite keins setzt.
+ */
+export function withDeOpenGraph(pageKey: SeoPageKey, metadata: Metadata): Metadata {
+  const canonical = slugToUrl("de", seoPageSlugs[pageKey].de) ?? undefined;
+  const og = (metadata.openGraph ?? {}) as NonNullable<Metadata["openGraph"]>;
+  const title = typeof metadata.title === "string" ? stripTitleBrand(metadata.title) : undefined;
+  const description = metadata.description ?? undefined;
+  return {
+    ...metadata,
+    openGraph: {
+      type: "website",
+      siteName: "Treatflow",
+      title,
+      description,
+      url: canonical,
+      images: [{ url: `${BASE_URL}/images/og-image.png`, width: 1200, height: 630, alt: "Treatflow" }],
+      ...og,
+      locale: ogLocaleTags.de,
+      alternateLocale: ogAlternateLocales(pageKey, "de"),
+    },
+  };
 }
 
 export function buildPageMetadata(params: {
@@ -271,6 +305,7 @@ export function buildPageMetadata(params: {
       siteName: "Treatflow",
       type: "website",
       locale: ogLocaleTags[params.locale],
+      alternateLocale: ogAlternateLocales(params.pageKey, params.locale),
       images: [
         {
           url: ogImage,

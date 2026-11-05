@@ -1,6 +1,4 @@
-import Script from "next/script";
 import SocialProofBar from "@/app/components/SocialProofBar";
-import { generateBreadcrumbSchema } from "@/app/components/Breadcrumbs";
 import FeatureHero, { FeatureTitleHighlight } from "@/app/components/FeatureHero";
 import {
   FeatureUnderstand,
@@ -17,18 +15,18 @@ import { getHomeContent } from "@/app/site/content/home";
 import { getIntegrationsContent } from "@/app/site/content/integrations";
 import { gatedTexts, type SiteMarket } from "@/app/site/content/shared";
 import { siteIcons } from "@/app/site/icons";
+import { PageSchemas } from "@/app/site/schema";
 
 const theme = "indigo" as const;
 
 /**
  * Seite „integrations“ für alle Sprachen (DE: Root-Route, sonst app/[market]/…).
- * Wie FeaturePage, aber mit App-Raster im Hero statt Bild und ohne Datum/WebPage-Schema
- * (= bisherige deutsche Seite). Texte: app/site/content/integrations/<lang>.ts
+ * Wie FeaturePage, aber mit App-Raster im Hero statt Bild und ohne Datum
+ * (WebPage-Schema aus Meta-Titel/-Beschreibung). Texte: app/site/content/integrations/<lang>.ts
  */
 export default function IntegrationsPage({ market }: { market: SiteMarket }) {
   const content = getIntegrationsContent(market);
   const common = getFeatureCommon(market);
-  const homePath = sitePagePath(market, "home") ?? "/";
   const featuresPath = sitePagePath(market, "features");
   const breadcrumbs = [
     featuresPath
@@ -38,16 +36,6 @@ export default function IntegrationsPage({ market }: { market: SiteMarket }) {
   ];
 
   const faqs = filterByFeature(content.faq.items, market);
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
-    })),
-  };
-
   const hero = content.hero;
   const heroSecondaryHref = hero.secondaryCta ? resolveHref(market, hero.secondaryCta.href) : null;
   const ctaSecondaryHref = content.cta.secondary ? resolveHref(market, content.cta.secondary.href) : null;
@@ -60,20 +48,13 @@ export default function IntegrationsPage({ market }: { market: SiteMarket }) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            market === "de"
-              ? generateBreadcrumbSchema(breadcrumbs)
-              : generateBreadcrumbSchema(breadcrumbs, homePath, common.breadcrumbHome)
-          ),
-        }}
-      />
-      <Script
-        id={`${content.schema.id}-faq-schema`}
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      <PageSchemas
+        market={market}
+        path={sitePagePath(market, "integrations") ?? "/"}
+        name={content.meta.title}
+        description={content.meta.description}
+        breadcrumbs={breadcrumbs}
+        faq={faqs}
       />
 
       <FeatureHero

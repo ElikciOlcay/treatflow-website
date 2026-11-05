@@ -163,7 +163,7 @@ export type HomeSeoContent = {
 /** JSON-LD der Startseite. `faq` fehlt → wird aus `faq.items` erzeugt. */
 export type HomeSchemaContent = {
   software: Record<string, unknown>;
-  faq?: Record<string, unknown>;
+  // Kein eigenes FAQ-Schema: FAQPage wird aus den sichtbaren `faq.items` erzeugt (HomeSchemas).
 };
 
 /** Alle Inhalte der Startseite in einer Sprache. */

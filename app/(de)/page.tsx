@@ -3,10 +3,10 @@ import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
 import HomePage from "@/app/components/home/HomePage";
 import HomeSchemas from "@/app/components/home/HomeSchemas";
-import { buildHreflangAlternates } from "@/app/i18n/seo";
+import { buildHreflangAlternates, withDeOpenGraph } from "@/app/i18n/seo";
 import { homeDe } from "@/app/site/content/home/de";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withDeOpenGraph("home", {
   title: homeDe.meta.title,
   description: homeDe.meta.description,
   alternates: {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       "Terminkalender, Online-Buchungen, digitale Kundenkartei, Formulare und Behandlungsdokumentation – alles in einer App.",
     images: ["https://www.treatflow.io/images/og-image.png"],
   },
-};
+});
 
 /** Deutsche Startseite. Sektionen + Texte: HomePage + app/site/content/home/de.ts */
 export default function Home() {

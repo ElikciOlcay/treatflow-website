@@ -21,6 +21,8 @@ interface QuickFactsProps {
     className?: string;
     /** Sprache; ohne Angabe Deutsch. Texte: app/site/content/feature-common */
     market?: SiteMarket;
+    /** `false`, wenn die Seite `speakable` schon in ihrem eigenen WebPage-Schema hat (PageSchemas). */
+    speakableSchema?: boolean;
 }
 
 const speakableSchema = {
@@ -36,6 +38,7 @@ export default function QuickFacts({
     variant = "default",
     className = "",
     market = "de",
+    speakableSchema: withSpeakable = true,
 }: QuickFactsProps) {
     const isCompact = variant === "compact";
     const content = getFeatureCommon(market).quickFacts;
@@ -46,12 +49,14 @@ export default function QuickFacts({
             aria-label={content.ariaLabel}
             className={`${isCompact ? "py-10" : "py-16"} bg-white ${className}`}
         >
-            <Script
-                id="quickfacts-speakable"
-                type="application/ld+json"
-                strategy="afterInteractive"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
-            />
+            {withSpeakable && (
+                <Script
+                    id="quickfacts-speakable"
+                    type="application/ld+json"
+                    strategy="afterInteractive"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }}
+                />
+            )}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {!isCompact && (
                     <div className="text-center mb-10">

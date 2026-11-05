@@ -1,12 +1,13 @@
+import type { Metadata } from 'next';
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
 import TreatmentDocumentationPage from '@/app/site/pages/TreatmentDocumentationPage';
-import { buildHreflangAlternates } from '@/app/i18n/seo';
+import { buildHreflangAlternates, withDeOpenGraph } from '@/app/i18n/seo';
 import { getTreatmentDocumentationContent } from '@/app/site/content/treatment-documentation';
 
 const { meta } = getTreatmentDocumentationContent('de');
 
-export const metadata = {
+export const metadata: Metadata = withDeOpenGraph('treatment-documentation', {
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
@@ -20,7 +21,7 @@ export const metadata = {
         url: 'https://www.treatflow.io/behandlungsdokumentation',
         images: [{ url: meta.openGraph.image.url, width: 1200, height: 630, alt: meta.openGraph.image.alt }],
     },
-};
+});
 
 /** Deutsche Seite. Sektionen: app/site/pages/TreatmentDocumentationPage.tsx, Texte: app/site/content/treatment-documentation/de.ts */
 export default function Page() {

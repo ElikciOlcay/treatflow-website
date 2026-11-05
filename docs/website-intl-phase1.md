@@ -79,7 +79,7 @@ Regeln:
 5. **Icons als Namen** (`icon: "calendar"`), damit Inhalte serialisierbar sind (MobileMenu und
    HomeHero sind Client-Komponenten).
 6. **Fakten je Markt:** 14 Tage Test, EUR-Preise (Basic 39/421 €, Booking 59/637 €); Türkei:
-   30 Tage Test, ₺1.490/₺1.990 (jährlich ₺16.100/₺21.500), kein Treatflow Pay.
+   14 Tage Test (wie alle Märkte), ₺1.490/₺1.990 (jährlich ₺16.100/₺21.500), kein Treatflow Pay.
    Videos nur, wenn es ein Video in der Sprache gibt (`home.video` fehlt außer in DE).
 
 ### Eine Seite umstellen (Rezept)

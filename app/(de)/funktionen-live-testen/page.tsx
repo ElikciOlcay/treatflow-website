@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Navigation from "@/app/components/Navigation";
 import Footer from "@/app/components/Footer";
 import TryFeaturesPage, { TryFeaturesSchema } from "@/app/site/pages/TryFeaturesPage";
-import { buildHreflangAlternates } from "@/app/i18n/seo";
+import { buildHreflangAlternates, withDeOpenGraph } from "@/app/i18n/seo";
 import { getTryFeaturesContent } from "@/app/site/content/try-features";
 
 const PAGE_URL = "https://www.treatflow.io/funktionen-live-testen";
 const { meta } = getTryFeaturesContent("de");
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withDeOpenGraph("try-features", {
   title: meta.title,
   description: meta.description,
   alternates: { canonical: PAGE_URL, ...buildHreflangAlternates("try-features") },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: meta.openGraph.description,
     url: PAGE_URL,
   },
-};
+});
 
 /** Deutsche Seite. Sektionen: app/site/pages/TryFeaturesPage.tsx, Texte: app/site/content/try-features/de.ts */
 export default function FunktionenLiveTestenPage() {

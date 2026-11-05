@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
-import DeSiteSchema from './DeSiteSchema';
+import SiteSchema from './SiteSchema';
 import CookieSettingsLink from './CookieSettingsLink';
 import { marketHomePath, marketLabels, switchableMarkets } from '../i18n/config';
 import type { SiteMarket } from '../site/content/shared';
@@ -27,7 +27,7 @@ function FooterLinkItem({ link }: { link: ResolvedFooterLink }) {
 }
 
 /**
- * Footer aller Sprachen. Ohne Props = deutsche Seite (wie bisher, inkl. DE-Schema).
+ * Footer aller Sprachen. Ohne Props = deutsche Seite. Gibt auch Organization + WebSite (JSON-LD) aus.
  * Inhalte: app/site/content/footer/<lang>.ts
  */
 export default function Footer({
@@ -41,7 +41,7 @@ export default function Footer({
 
   return (
     <>
-    {market === 'de' && <DeSiteSchema />}
+    <SiteSchema market={market} />
     <footer id="contact" className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10">

@@ -82,7 +82,7 @@ export const onlineBookingPl: OnlineBookingContent = {
     description: "Link do rezerwacji, wersje językowe, lista oczekujących, kody rabatowe i Treatflow Pay – bez prowizji od wizyt.",
     items: [
       { icon: "link", title: "Własny link do rezerwacji", text: "Link do udostępnienia na stronie i w social mediach – w barwach Twojego salonu.", points: ["Własny link", "Kod QR", "Wygląd Twojego salonu"] },
-      { icon: "languages", title: "Siedem języków", text: "Strona rezerwacji dopasowuje się do języka klienta – bez dodatkowej konfiguracji.", points: ["DE, EN, NL, TR, PL, IT, RU", "Automatyczny wybór języka", "Bez barier językowych"] },
+      { icon: "languages", title: "Dziewięć języków", text: "Strona rezerwacji dopasowuje się do języka klienta – bez dodatkowej konfiguracji.", points: ["DE, EN, NL, IT, PL, TR, ES, FR, RU", "Automatyczny wybór języka", "Bez barier językowych"] },
       { icon: "wallet", title: "Treatflow Pay", text: "Zaliczka lub pełna płatność już przy rezerwacji online.", points: ["Ustawienie dla każdej usługi", "Zaliczka lub pełna płatność", "2,69% za transakcję"], feature: "pay" },
       { icon: "list-ordered", title: "Lista oczekujących", text: "Gdy grafik jest pełny, klienci zapisują się na listę oczekujących. Kiedy zwolni się termin, pasujące osoby dostają e-mail.", points: ["Automatyczny e-mail po odwołaniu wizyty", "Dwa tryby powiadomień", "Podgląd w panelu"] },
       { icon: "ticket", title: "Kody rabatowe", text: "Kody dla nowych klientów i akcji promocyjnych – realizowane od razu przy rezerwacji online.", points: ["Nowi klienci i promocje", "Realizacja przy rezerwacji", "Statystyki użycia"] },

@@ -80,7 +80,7 @@ export const onlineBookingEs: OnlineBookingContent = {
     description: "Enlace de reservas, idiomas, lista de espera, códigos de descuento y Treatflow Pay, sin comisión por cita.",
     items: [
       { icon: "link", title: "Tu propio enlace de reservas", text: "Tu enlace para compartir en tu web y en redes sociales, con la imagen de tu centro.", points: ["Enlace personalizado", "Código QR", "Con la imagen de tu centro"] },
-      { icon: "languages", title: "Siete idiomas", text: "La página de reservas se muestra en el idioma de tu cliente, sin configurar nada.", points: ["DE, EN, NL, TR, PL, IT, RU", "Idioma automático", "Sin barreras de idioma"] },
+      { icon: "languages", title: "Nueve idiomas", text: "La página de reservas se muestra en el idioma de tu cliente, sin configurar nada.", points: ["DE, EN, NL, IT, PL, TR, ES, FR, RU", "Idioma automático", "Sin barreras de idioma"] },
       { icon: "wallet", title: "Treatflow Pay", text: "Señal o pago completo en el momento de reservar online.", points: ["Configurable por servicio", "Señal o pago completo", "2,69 % por transacción"], feature: "pay" },
       { icon: "list-ordered", title: "Lista de espera", text: "Si tienes la agenda llena, tus clientes se apuntan a la lista de espera. Cuando se libera un hueco, quienes encajan reciben un aviso por email.", points: ["Email automático si se cancela una cita", "Dos modos de aviso", "Resumen en el panel"] },
       { icon: "ticket", title: "Códigos de descuento", text: "Códigos para nuevos clientes y promociones que se canjean al reservar online.", points: ["Captación de nuevos clientes", "Se canjean al reservar", "Estadísticas de uso"] },

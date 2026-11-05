@@ -1,14 +1,13 @@
 import Link from "next/link";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import CTASection from "@/app/components/CTASection";
-import { generateBreadcrumbSchema } from "@/app/components/Breadcrumbs";
 import FeatureHero, { FeatureTitleHighlight } from "@/app/components/FeatureHero";
 import { filterByFeature } from "@/app/i18n/feature-availability";
 import { resolveHref, sitePagePath } from "@/app/i18n/site-pages";
-import { getFeatureCommon } from "@/app/site/content/feature-common";
 import { getFeaturesContent } from "@/app/site/content/features";
 import type { SiteMarket } from "@/app/site/content/shared";
 import { siteIcons } from "@/app/site/icons";
+import { PageSchemas } from "@/app/site/schema";
 
 /**
  * Funktionsübersicht für alle Sprachen (DE: app/(de)/funktionen, sonst app/[market]/features).
@@ -17,8 +16,6 @@ import { siteIcons } from "@/app/site/icons";
  */
 export default function FeaturesOverviewPage({ market }: { market: SiteMarket }) {
   const content = getFeaturesContent(market);
-  const common = getFeatureCommon(market);
-  const homePath = sitePagePath(market, "home") ?? "/";
   const breadcrumbs = [{ label: content.breadcrumb }];
   const { hero, grid, why } = content;
   const secondaryHref = resolveHref(market, hero.secondaryCta.href);
@@ -30,15 +27,13 @@ export default function FeaturesOverviewPage({ market }: { market: SiteMarket })
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            market === "de"
-              ? generateBreadcrumbSchema(breadcrumbs)
-              : generateBreadcrumbSchema(breadcrumbs, homePath, common.breadcrumbHome)
-          ),
-        }}
+      <PageSchemas
+        market={market}
+        path={sitePagePath(market, "features") ?? "/"}
+        name={content.meta.title}
+        description={content.meta.description}
+        breadcrumbs={breadcrumbs}
+        software={{ featureList: items.map((item) => item.title) }}
       />
 
       <FeatureHero

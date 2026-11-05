@@ -1,12 +1,13 @@
+import type { Metadata } from 'next';
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
 import TreatflowPayPage from '@/app/site/pages/TreatflowPayPage';
-import { buildHreflangAlternates } from '@/app/i18n/seo';
+import { buildHreflangAlternates, withDeOpenGraph } from '@/app/i18n/seo';
 import { getTreatflowPayContent } from '@/app/site/content/treatflow-pay';
 
 const { meta } = getTreatflowPayContent('de')!;
 
-export const metadata = {
+export const metadata: Metadata = withDeOpenGraph('treatflow-pay', {
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
@@ -21,7 +22,7 @@ export const metadata = {
         // Produkt-Update-Bild im 16:9-Format (wie bisher)
         images: [{ url: meta.openGraph.image.url, width: 1200, height: 675, alt: meta.openGraph.image.alt }],
     },
-};
+});
 
 /** Deutsche Seite. Sektionen: app/site/pages/TreatflowPayPage.tsx, Texte: app/site/content/treatflow-pay/de.ts */
 export default function Page() {

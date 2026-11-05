@@ -14,10 +14,11 @@ import { getHomeContent } from "@/app/site/content/home";
 import { getShopContent } from "@/app/site/content/shop";
 import { gatedTexts, type SiteMarket } from "@/app/site/content/shared";
 import { siteIcons, type SiteIconName } from "@/app/site/icons";
+import { PageSchemas } from "@/app/site/schema";
 
 /**
  * Seite „shop“ (Produktverkauf & Lager) für alle Sprachen.
- * Markup = bisherige deutsche Seite (ohne FAQ/JSON-LD); Texte aus app/site/content/shop/<lang>.ts.
+ * Markup = bisherige deutsche Seite (ohne FAQ); JSON-LD über PageSchemas; Texte aus app/site/content/shop/<lang>.ts.
  * Kasse/Gutscheine (DACH-only) entfallen außerhalb von DE über `feature`-Tags bzw. Seiten-Keys.
  */
 export default function ShopPage({ market }: { market: SiteMarket }) {
@@ -42,6 +43,14 @@ export default function ShopPage({ market }: { market: SiteMarket }) {
 
   return (
     <>
+      <PageSchemas
+        market={market}
+        path={sitePagePath(market, "shop") ?? "/"}
+        name={content.meta.title}
+        description={content.meta.description}
+        breadcrumbs={breadcrumbs}
+      />
+
       <FeatureHero
         theme={theme}
         market={market}

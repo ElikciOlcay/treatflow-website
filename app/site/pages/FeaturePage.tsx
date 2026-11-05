@@ -1,7 +1,5 @@
 import type { ReactNode } from "react";
-import Script from "next/script";
 import SocialProofBar from "@/app/components/SocialProofBar";
-import { generateBreadcrumbSchema } from "@/app/components/Breadcrumbs";
 import FeatureHero, { FeatureTitleHighlight, type FeatureHeroThemeKey } from "@/app/components/FeatureHero";
 import ProductVideoSection from "@/app/components/ProductVideoSection";
 import {
@@ -12,14 +10,13 @@ import {
   FeatureRelated,
   FeaturePageCta,
 } from "@/app/components/FeatureSections";
-import { BASE_URL } from "@/app/i18n/config";
 import { filterByFeature } from "@/app/i18n/feature-availability";
 import { resolveHref, sitePagePath, type SitePageKey } from "@/app/i18n/site-pages";
-import { generateWebPageSchema } from "@/lib/content-attribution";
 import { getFeatureCommon, type FeaturePageContent } from "@/app/site/content/feature-common";
 import { getHomeContent } from "@/app/site/content/home";
 import { gatedTexts, type SiteMarket } from "@/app/site/content/shared";
 import { siteIcons } from "@/app/site/icons";
+import { PageSchemas } from "@/app/site/schema";
 
 /**
  * Funktionsseite im Hero/Sections-Layout für alle Sprachen
@@ -41,8 +38,6 @@ export default function FeaturePage({
   afterUnderstand?: ReactNode;
 }) {
   const common = getFeatureCommon(market);
-  const pageUrl = `${BASE_URL}${sitePagePath(market, pageKey) ?? ""}`;
-  const homePath = sitePagePath(market, "home") ?? "/";
   const featuresPath = sitePagePath(market, "features");
   const breadcrumbs = [
     featuresPath
@@ -52,40 +47,7 @@ export default function FeaturePage({
   ];
 
   const faqs = filterByFeature(content.faq.items, market);
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: { "@type": "Answer", text: item.answer },
-    })),
-  };
-
   const sw = content.schema.software;
-  const softwareSchema = sw && {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: sw.name,
-    applicationCategory: "BusinessApplication",
-    operatingSystem: "Web",
-    description: sw.description,
-    url: pageUrl,
-    ...(sw.featureList ? { featureList: sw.featureList } : {}),
-    offers: { "@type": "Offer", price: sw.price, priceCurrency: sw.currency },
-    ...(sw.rating
-      ? {
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "4.6",
-            reviewCount: "19",
-            bestRating: "5",
-          },
-        }
-      : {}),
-  };
-
-  const id = content.schema.id;
   const hero = content.hero;
   const heroSecondaryHref = hero.secondaryCta ? resolveHref(market, hero.secondaryCta.href) : null;
   const ctaSecondaryHref = content.cta.secondary ? resolveHref(market, content.cta.secondary.href) : null;
@@ -97,36 +59,17 @@ export default function FeaturePage({
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            market === "de"
-              ? generateBreadcrumbSchema(breadcrumbs)
-              : generateBreadcrumbSchema(breadcrumbs, homePath, common.breadcrumbHome)
-          ),
-        }}
+      <PageSchemas
+        market={market}
+        path={sitePagePath(market, pageKey) ?? "/"}
+        name={content.schema.webPage.name}
+        description={content.schema.webPage.description}
+        breadcrumbs={breadcrumbs}
+        dateModified={content.dates.modified}
+        datePublished={content.dates.published}
+        faq={faqs}
+        software={{ description: sw?.description, featureList: sw?.featureList, rating: sw?.rating }}
       />
-      <Script id={`${id}-faq-schema`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script
-        id={`${id}-webpage-schema`}
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            generateWebPageSchema({
-              name: content.schema.webPage.name,
-              description: content.schema.webPage.description,
-              url: pageUrl,
-              dateModified: content.dates.modified,
-              datePublished: content.dates.published,
-              inLanguage: common.schemaLanguage,
-            })
-          ),
-        }}
-      />
-      {softwareSchema && (
-        <Script id={`${id}-software-schema`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
-      )}
 
       <FeatureHero
         theme={theme}

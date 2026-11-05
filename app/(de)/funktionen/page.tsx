@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
 import FeaturesOverviewPage from '@/app/site/pages/FeaturesOverviewPage';
-import { buildHreflangAlternates } from '@/app/i18n/seo';
+import { buildHreflangAlternates, withDeOpenGraph } from '@/app/i18n/seo';
 import { getFeaturesContent } from '@/app/site/content/features';
 
 const { meta } = getFeaturesContent('de');
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withDeOpenGraph('features', {
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         description: meta.openGraph.description,
         url: 'https://www.treatflow.io/funktionen',
     },
-};
+});
 
 /** Deutsche Seite. Sektionen: app/site/pages/FeaturesOverviewPage.tsx, Texte: app/site/content/features/de.ts */
 export default function FunktionenPage() {
