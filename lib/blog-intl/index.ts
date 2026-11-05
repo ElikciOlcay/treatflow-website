@@ -54,7 +54,8 @@ export function blogTopicAlternates(topic: BlogTopicId): Record<string, string> 
     const post = byLang[lang]?.find((item) => item.topic === topic);
     if (post) languages[hreflangTags[lang]] = blogPostUrl(lang, post.slug);
   }
-  languages["x-default"] = languages.en ?? languages.de;
+  // Markt-Themen gibt es evtl. nur in einer Sprache
+  languages["x-default"] = languages.en ?? languages.de ?? Object.values(languages)[0];
   return languages;
 }
 

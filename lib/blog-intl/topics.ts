@@ -1,14 +1,15 @@
-import type { BlogTopicId } from "./types";
+import type { BlogLang, BlogTopicId } from "./types";
 
 /**
- * Themen des Blogs. Jedes Thema erscheint in allen 8 Sprachen.
+ * Themen des Blogs. Ein Thema erscheint in allen 8 Sprachen, ausser `markets` ist gesetzt:
+ * dann gibt es es nur in diesen Sprachen (Markt-Themen mit lokalen Suchbegriffen, z. B. nur TR).
  * `deSlug` nur fuer aeltere Themen, deren deutsche Fassung eine eigene Seite unter
  * app/blog/<deSlug>/ ist. Neue Themen haben die deutsche Fassung in posts/de.ts.
  * Bilder sind sprachneutral (public/images/blog/).
  */
 export const blogTopics: Record<
   BlogTopicId,
-  { deSlug?: string; image: string; pageKeys: string[] }
+  { deSlug?: string; image: string; pageKeys: string[]; markets?: BlogLang[] }
 > = {
   "reduce-no-shows": {
     deSlug: "no-shows-reduzieren-kosmetikstudio",
@@ -38,7 +39,7 @@ export const blogTopics: Record<
   "client-retention": {
     deSlug: "kundenbindung-kosmetikstudio-5-strategien",
     image: "/images/blog/kundenbindung-strategien.jpg",
-    pageKeys: ["messaging", "client-records", "vouchers"],
+    pageKeys: ["messaging", "client-records", "online-booking"],
   },
   "pricing-beauty-treatments": {
     deSlug: "preisgestaltung-kosmetikbehandlungen",

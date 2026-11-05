@@ -36,6 +36,11 @@ for (const lang of langs) {
 
   for (const topic of topicIds) {
     const has = posts.some((p) => p.topic === topic);
+    const markets = blogTopics[topic].markets;
+    if (markets && !markets.includes(lang)) {
+      if (has) errors.push(`[${topic}] Markt-Thema nur fuer ${markets.join(", ")}, aber Artikel in ${lang}`);
+      continue;
+    }
     if (lang === "de") {
       if (!has && !blogTopics[topic].deSlug) errors.push(`[${topic}] keine deutsche Fassung (posts/de.ts oder deSlug)`);
       if (has && blogTopics[topic].deSlug) errors.push(`[${topic}] deutsche Fassung doppelt (posts/de.ts UND deSlug)`);

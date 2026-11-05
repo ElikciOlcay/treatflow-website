@@ -847,7 +847,6 @@ export const posts: BlogArticle[] = [
     related: [
       { pageKey: "messaging", label: "Mensajes automáticos para tus clientas" },
       { pageKey: "client-records", label: "Fichas de clientes con historial" },
-      { pageKey: "vouchers", label: "Vales y tarjetas regalo" },
     ],
     sources: [
       { label: "Ley 34/2002, de servicios de la sociedad de la información (LSSI), BOE", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758" },

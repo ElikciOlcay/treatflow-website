@@ -841,7 +841,6 @@ export const posts: BlogArticle[] = [
     related: [
       { pageKey: "messaging", label: "Automatische berichten en herinneringen" },
       { pageKey: "client-records", label: "Digitale klantenkaart" },
-      { pageKey: "vouchers", label: "Cadeaubonnen" },
     ],
     sources: [
       { label: "Autoriteit Consument & Markt (ACM)", url: "https://www.acm.nl" },

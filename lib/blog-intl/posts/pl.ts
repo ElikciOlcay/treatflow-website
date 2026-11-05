@@ -829,7 +829,6 @@ export const posts: BlogArticle[] = [
     related: [
       { pageKey: "messaging", label: "Automatyczne przypomnienia" },
       { pageKey: "client-records", label: "Kartoteka klientów" },
-      { pageKey: "vouchers", label: "Bony podarunkowe" },
     ],
   },
   {

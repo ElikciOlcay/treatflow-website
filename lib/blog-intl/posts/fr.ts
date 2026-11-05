@@ -766,7 +766,6 @@ export const posts: BlogArticle[] = [
     related: [
       { pageKey: "messaging", label: "Messages et rappels automatiques" },
       { pageKey: "client-records", label: "Fiches clientes" },
-      { pageKey: "vouchers", label: "Bons cadeaux" },
     ],
     sources: [
       { label: "CNIL – Commission nationale de l'informatique et des libertés", url: "https://www.cnil.fr" },
