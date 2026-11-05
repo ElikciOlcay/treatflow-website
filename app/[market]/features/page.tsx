@@ -1,16 +1,8 @@
 import { notFound } from "next/navigation";
-import FeaturesPageEn from "@/app/components/FeaturesPageEn";
 import { buildPageMetadata } from "@/app/i18n/seo";
-import { isBundleLang, isPrefixedMarket, marketLanguage, type PrefixedMarket } from "@/app/i18n/config";
-import { getLocaleContent } from "@/app/i18n/locales";
-
-const featuresMeta: Record<string, { title: string; description: string }> = {
-  tr: {
-    title: "Güzellik Salonu Yazılımı Özellikleri",
-    description:
-      "Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam, sesli işlem kaydı ve WhatsApp hatırlatmaları – tek salon yazılımında. 30 gün ücretsiz deneyin.",
-  },
-};
+import { isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
+import FeaturesOverviewPage from "@/app/site/pages/FeaturesOverviewPage";
+import { getFeaturesContent } from "@/app/site/content/features";
 
 export async function generateMetadata({
   params,
@@ -20,20 +12,17 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
-  const lang = marketLanguage[market];
-  const meta = (isBundleLang(market) ? getLocaleContent(market).featuresMeta : featuresMeta[lang]) ?? {
-    title: "Features for Salons and Clinics",
-    description:
-      "Appointment calendar, online booking without commission, client records, digital consent forms, treatment documentation with voice dictation, reminders and integrations – in one studio system.",
-  };
+  const { meta } = getFeaturesContent(market);
   return buildPageMetadata({
     pageKey: "features",
     locale: market,
     title: meta.title,
     description: meta.description,
+    keywords: meta.keywords,
   });
 }
 
+/** Gleiche Seite wie DE, Inhalte aus app/site/content/features/<lang>.ts */
 export default async function Page({
   params,
 }: {
@@ -42,5 +31,5 @@ export default async function Page({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
-  return <FeaturesPageEn market={market} />;
+  return <FeaturesOverviewPage market={market} />;
 }

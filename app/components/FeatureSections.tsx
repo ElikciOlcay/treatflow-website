@@ -2,13 +2,19 @@ import { type LucideIcon, ArrowRight, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { featureHeroThemes, type FeatureHeroThemeKey } from './FeatureHero';
-import { APP_REGISTER_URL } from '../i18n/market-access';
+import { APP_REGISTER_BY_MARKET } from '../i18n/market-access';
+import { htmlLangTags } from '../i18n/config';
+import { resolveHrefOrHome } from '../i18n/site-pages';
+import { getFeatureCommon } from '../site/content/feature-common';
+import type { SiteMarket } from '../site/content/shared';
 
 type SectionHeaderProps = {
     eyebrow?: string;
     title: string;
     description?: string;
     align?: 'left' | 'center';
+    /** Sprache (für lang/Silbentrennung); ohne Angabe Deutsch. */
+    market?: SiteMarket;
 };
 
 /** Einheitlicher Abstand für alle Abschnitte der Funktions- und Branchenseiten */
@@ -19,13 +25,14 @@ export function FeatureSectionHeader({
     title,
     description,
     align = 'center',
+    market = 'de',
 }: SectionHeaderProps) {
     return (
         <div className={`mb-12 lg:mb-16 ${align === 'center' ? 'text-center max-w-2xl mx-auto' : 'max-w-2xl'}`}>
             {eyebrow && (
                 <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600 mb-3">{eyebrow}</p>
             )}
-            <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 hyphens-none" lang="de">
+            <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 hyphens-none" lang={htmlLangTags[market]}>
                 {title}
             </h2>
             {description && (
@@ -38,21 +45,24 @@ export function FeatureSectionHeader({
 /** Drei Kernvorteile, groß und ohne Kartenrahmen. */
 export function FeatureUnderstand({
     theme = 'indigo',
-    title = 'So hilft dir die Funktion',
+    title,
     description,
     items,
+    market = 'de',
 }: {
     theme?: FeatureHeroThemeKey;
     title?: string;
     description?: string;
     items: { icon: LucideIcon; title: string; text: string }[];
+    market?: SiteMarket;
 }) {
     const t = featureHeroThemes[theme];
+    title ??= getFeatureCommon(market).sections.understand;
 
     return (
         <section className={`${SECTION} bg-white`}>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <FeatureSectionHeader title={title} description={description} />
+                <FeatureSectionHeader title={title} description={description} market={market} />
                 <div className={`grid gap-x-10 gap-y-12 ${items.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-3'}`}>
                     {items.map((item) => (
                         <div key={item.title} className="text-center md:text-left">
@@ -72,21 +82,24 @@ export function FeatureUnderstand({
 /** Drei Schritte nebeneinander, verbunden durch eine Linie. */
 export function FeatureHowItWorks({
     theme = 'indigo',
-    title = 'So funktioniert’s',
+    title,
     description,
     steps,
+    market = 'de',
 }: {
     theme?: FeatureHeroThemeKey;
     title?: string;
     description?: string;
     steps: { title: string; text: string }[];
+    market?: SiteMarket;
 }) {
     const t = featureHeroThemes[theme];
+    title ??= getFeatureCommon(market).sections.howItWorks;
 
     return (
         <section className={`${SECTION} bg-gray-50`}>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <FeatureSectionHeader title={title} description={description} />
+                <FeatureSectionHeader title={title} description={description} market={market} />
                 <ol className="relative grid md:grid-cols-3 gap-x-10 gap-y-10 md:before:absolute md:before:left-[16%] md:before:right-[16%] md:before:top-5 md:before:h-px md:before:bg-gray-200">
                     {steps.map((step, i) => (
                         <li key={step.title} className="relative text-center">
@@ -106,21 +119,24 @@ export function FeatureHowItWorks({
 /** Funktionsliste als ruhiges Raster: Icon und Titel in einer Zeile, Stichpunkte als leise Zeile darunter. */
 export function FeatureCards({
     theme = 'indigo',
-    title = 'Was du bekommst',
+    title,
     description,
     items,
+    market = 'de',
 }: {
     theme?: FeatureHeroThemeKey;
     title?: string;
     description?: string;
     items: { icon: LucideIcon; title: string; text: string; points?: string[] }[];
+    market?: SiteMarket;
 }) {
     const t = featureHeroThemes[theme];
+    title ??= getFeatureCommon(market).sections.cards;
 
     return (
         <section className={`${SECTION} bg-white`}>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <FeatureSectionHeader title={title} description={description} />
+                <FeatureSectionHeader title={title} description={description} market={market} />
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
                     {items.map((item) => (
                         <article key={item.title}>
@@ -155,16 +171,18 @@ export function FeatureChecklist({
     description,
     items,
     tone = 'white',
+    market = 'de',
 }: {
     title: string;
     description?: string;
     items: string[];
     tone?: 'white' | 'gray';
+    market?: SiteMarket;
 }) {
     return (
         <section className={`${SECTION} ${tone === 'gray' ? 'bg-gray-50' : 'bg-white'}`}>
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <FeatureSectionHeader title={title} description={description} />
+                <FeatureSectionHeader title={title} description={description} market={market} />
                 <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4">
                     {items.map((item) => (
                         <li key={item} className="flex items-start gap-3 text-gray-700">
@@ -179,18 +197,21 @@ export function FeatureChecklist({
 }
 
 export function FeatureFaq({
-    title = 'Häufige Fragen',
+    title,
     items,
+    market = 'de',
 }: {
     title?: string;
     items: { question: string; answer: string }[];
+    market?: SiteMarket;
 }) {
     if (items.length === 0) return null;
+    title ??= getFeatureCommon(market).sections.faq;
 
     return (
         <section className={`${SECTION} bg-white`}>
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                <FeatureSectionHeader title={title} />
+                <FeatureSectionHeader title={title} market={market} />
                 <div className="divide-y divide-gray-200 border-y border-gray-200">
                     {items.map((faq) => (
                         <details key={faq.question} className="group">
@@ -210,15 +231,18 @@ export function FeatureFaq({
 }
 
 export function FeatureRelated({
-    title = 'Passende Funktionen',
+    title,
     description,
     items,
+    market = 'de',
 }: {
     title?: string;
     description?: string;
     items: { href: string; title: string; description: string }[];
+    market?: SiteMarket;
 }) {
     if (items.length === 0) return null;
+    title ??= getFeatureCommon(market).sections.related;
 
     return (
         <section className="py-16 sm:py-20 bg-gray-50">
@@ -252,11 +276,12 @@ export function FeaturePageCta({
     theme: _theme = 'indigo',
     title,
     description,
-    primaryLabel = '14 Tage gratis testen',
-    primaryHref = APP_REGISTER_URL,
-    secondaryLabel = 'Preise ansehen',
-    secondaryHref = '/preise',
+    primaryLabel,
+    primaryHref,
+    secondaryLabel,
+    secondaryHref,
     secondaryExternal = false,
+    market = 'de',
 }: {
     theme?: FeatureHeroThemeKey;
     title: string;
@@ -266,7 +291,13 @@ export function FeaturePageCta({
     secondaryLabel?: string;
     secondaryHref?: string;
     secondaryExternal?: boolean;
+    market?: SiteMarket;
 }) {
+    const common = getFeatureCommon(market).pageCta;
+    primaryLabel ??= common.primary;
+    primaryHref ??= APP_REGISTER_BY_MARKET[market];
+    secondaryLabel ??= common.secondary;
+    secondaryHref ??= resolveHrefOrHome(market, common.secondaryHref);
     const secondaryClass =
         'inline-flex items-center justify-center rounded-xl border border-white/40 px-7 py-3.5 text-base font-semibold text-white transition-colors hover:bg-white/10';
     return (
@@ -277,7 +308,7 @@ export function FeaturePageCta({
                         className="pointer-events-none absolute inset-0 bg-[radial-gradient(30rem_18rem_at_85%_0%,rgba(255,255,255,0.18),transparent_60%)]"
                         aria-hidden="true"
                     />
-                    <h2 className="relative text-3xl lg:text-4xl font-bold tracking-tight text-white mb-4 hyphens-none" lang="de">
+                    <h2 className="relative text-3xl lg:text-4xl font-bold tracking-tight text-white mb-4 hyphens-none" lang={htmlLangTags[market]}>
                         {title}
                     </h2>
                     <p className="relative text-lg text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">{description}</p>

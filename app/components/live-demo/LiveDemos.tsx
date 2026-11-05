@@ -6,9 +6,11 @@ import { ArrowRight, CalendarDays, CheckCircle, Mic, type LucideIcon } from "luc
 import BookingPanel, { type DemoCustomer } from "./BookingPanel";
 import BookingMessages from "./BookingMessages";
 import DictationPanel from "./DictationPanel";
+import { tryFeaturesDe } from "@/app/site/content/try-features/de";
+import type { LiveDemosContent, TryFeaturesContent } from "@/app/site/content/try-features/types";
 
 /** Kartenrahmen eines Beispiel-Studios, in dem jede Live-Demo läuft. */
-function DemoFrame({ subtitle, children }: { subtitle: string; children: ReactNode }) {
+function DemoFrame({ subtitle, studioName, liveBadge, children }: { subtitle: string; studioName: string; liveBadge: string; children: ReactNode }) {
   return (
     <div className="relative mx-auto w-full max-w-md">
       <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-indigo-200/50 via-white/0 to-sky-200/50 blur-2xl" aria-hidden="true" />
@@ -19,11 +21,11 @@ function DemoFrame({ subtitle, children }: { subtitle: string; children: ReactNo
               A
             </span>
             <div className="text-left">
-              <p className="text-sm font-semibold text-gray-900">Studio Aurora</p>
+              <p className="text-sm font-semibold text-gray-900">{studioName}</p>
               <p className="truncate text-xs text-gray-500">{subtitle}</p>
             </div>
           </div>
-          <span className="hidden flex-shrink-0 whitespace-nowrap rounded-full bg-emerald-50 min-[360px]:inline-block px-2.5 py-1 text-[11px] font-semibold text-emerald-700">Live-Demo</span>
+          <span className="hidden flex-shrink-0 whitespace-nowrap rounded-full bg-emerald-50 min-[360px]:inline-block px-2.5 py-1 text-[11px] font-semibold text-emerald-700">{liveBadge}</span>
         </div>
         {children}
       </div>
@@ -38,7 +40,8 @@ type DemoSectionProps = {
   title: string;
   text: string;
   points: string[];
-  link: { href: string; label: string };
+  /** `null`-href = Seite gibt es in der Sprache nicht → Link ausblenden */
+  link: { href: string | null; label: string };
   demo: ReactNode;
   /** Optionaler Inhalt unter dem zweispaltigen Bereich */
   below?: ReactNode;
@@ -65,10 +68,12 @@ function DemoSection({ id, eyebrow, Icon, title, text, points, link, demo, below
               </li>
             ))}
           </ul>
-          <Link href={link.href} className="mt-6 inline-flex items-center gap-1.5 font-semibold text-indigo-600 hover:text-indigo-800">
-            {link.label}
-            <ArrowRight className="h-4 w-4" />
-          </Link>
+          {link.href && (
+            <Link href={link.href} className="mt-6 inline-flex items-center gap-1.5 font-semibold text-indigo-600 hover:text-indigo-800">
+              {link.label}
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          )}
         </div>
         <div className={reverse ? "lg:order-1" : ""}>{demo}</div>
       </div>
@@ -77,50 +82,70 @@ function DemoSection({ id, eyebrow, Icon, title, text, points, link, demo, below
   );
 }
 
+type LiveDemosProps = {
+  /** Texte der Sprache (Default: Deutsch) */
+  content?: LiveDemosContent;
+  /** Aufgelöste „Mehr zu …“-Links (`null` = ausblenden) */
+  links?: { booking: string | null; dictation: string | null };
+  anchors?: TryFeaturesContent["anchors"];
+  /** Ziel von „Weiter: Formulare“ im Diktat; `null`, wenn die Sprache keine Formular-Demo hat */
+  formsHref?: string | null;
+};
+
 /** Die beiden interaktiven Demos der Seite; der gebuchte Termin wird ans Diktat weitergegeben. */
-export default function LiveDemos() {
+export default function LiveDemos({
+  content: c = tryFeaturesDe.demos,
+  links = { booking: "/online-buchungen", dictation: "/behandlungsdokumentation" },
+  anchors = tryFeaturesDe.anchors,
+  formsHref = `#${tryFeaturesDe.anchors.forms}`,
+}: LiveDemosProps = {}) {
   const [booking, setBooking] = useState<{ time: string; treatment: string; customer: DemoCustomer; dayLabel: string } | null>(null);
 
   return (
     <>
       <DemoSection
-        id="termin-buchen"
-        eyebrow="Online-Buchung"
+        id={anchors.booking}
+        eyebrow={c.booking.eyebrow}
         Icon={CalendarDays}
-        title="Termin buchen, wie es deine Kundinnen tun"
-        text="Behandlung wählen, freie Zeit antippen, Daten bestätigen. So einfach buchen Kundinnen über deinen Buchungslink, auch abends und am Wochenende."
-        points={[
-          "Termin steht sofort im Kalender des Studios",
-          "Bestätigung und Erinnerung per E-Mail oder WhatsApp",
-          "Keine Provision pro Buchung",
-        ]}
-        link={{ href: "/online-buchungen", label: "Mehr zur Online-Buchung" }}
-        below={booking ? <BookingMessages key={`${booking.treatment}-${booking.dayLabel}-${booking.time}-${booking.customer.name}`} booking={booking} /> : null}
+        title={c.booking.title}
+        text={c.booking.text}
+        points={c.booking.points}
+        link={{ href: links.booking, label: c.booking.link.label }}
+        below={
+          booking ? (
+            <BookingMessages
+              key={`${booking.treatment}-${booking.dayLabel}-${booking.time}-${booking.customer.name}`}
+              booking={booking}
+              content={c.messages}
+              calendar={c.calendar}
+              treatments={c.bookingPanel.treatments}
+              today={c.bookingPanel.today}
+              dictationId={anchors.dictation}
+            />
+          ) : null
+        }
         demo={
-          <DemoFrame subtitle="Online-Buchung · Beispiel">
+          <DemoFrame subtitle={c.booking.frameSubtitle} studioName={c.studioName} liveBadge={c.liveBadge}>
             <BookingPanel
+              content={c.bookingPanel}
               onInteract={() => {}}
               onBooked={(time, treatment, customer, dayLabel) => setBooking({ time, treatment, customer, dayLabel })}
-              onContinue={() => document.getElementById("behandlung-dokumentieren")?.scrollIntoView({ behavior: "smooth" })}
+              onContinue={() => document.getElementById(anchors.dictation)?.scrollIntoView({ behavior: "smooth" })}
             />
           </DemoFrame>
         }
       />
       <DemoSection
-        id="behandlung-dokumentieren"
-        eyebrow="Behandlung dokumentieren"
+        id={anchors.dictation}
+        eyebrow={c.dictation.eyebrow}
         Icon={Mic}
-        title="Erzähl einfach, die KI schreibt die Doku"
-        text="Nach der Behandlung kurz sagen, was du gemacht hast. Treatflow macht daraus eine saubere, stichpunktartige Dokumentation für die Kundenakte."
-        points={[
-          "Funktioniert per Sprache oder Tippen, direkt im Browser",
-          "Parameter wie Zone, Joule oder Hautreaktion werden sauber übernommen",
-          "Die KI erfindet nichts dazu, sie ordnet nur deine Angaben",
-        ]}
-        link={{ href: "/behandlungsdokumentation", label: "Mehr zur Behandlungsdokumentation" }}
+        title={c.dictation.title}
+        text={c.dictation.text}
+        points={c.dictation.points}
+        link={{ href: links.dictation, label: c.dictation.link.label }}
         demo={
-          <DemoFrame subtitle="Behandlungsdoku · Beispiel">
-            <DictationPanel booking={booking} />
+          <DemoFrame subtitle={c.dictation.frameSubtitle} studioName={c.studioName} liveBadge={c.liveBadge}>
+            <DictationPanel booking={booking} content={c.dictationPanel} timeSuffix={c.bookingPanel.timeSuffix} formsHref={formsHref} />
           </DemoFrame>
         }
         reverse

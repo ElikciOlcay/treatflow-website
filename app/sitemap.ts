@@ -4,7 +4,8 @@ import { DEMO_FORMS } from '@/lib/demoForms'
 import { buildHreflangAlternates, seoPageSlugs, type SeoPageKey } from '@/app/i18n/seo'
 import { TR_PATHS } from '@/app/i18n/tr-seo/paths'
 import { trGuides } from '@/app/i18n/tr-seo/guides'
-import { contentLanguages, marketPathPrefix, prefixedMarkets, type PrefixedMarket } from '@/app/i18n/config'
+import { contentLanguages, marketPathPrefix, prefixedMarkets, type Market, type PrefixedMarket } from '@/app/i18n/config'
+import { pageLastModified } from '@/app/site/page-dates'
 import {
     allBlogPosts,
     blogIndexAlternates,
@@ -18,10 +19,10 @@ import {
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://www.treatflow.io'
 
-    function internationalEntry(path: string, pageKey: SeoPageKey, priority: number) {
+    function internationalEntry(path: string, pageKey: SeoPageKey, priority: number, market?: Market) {
         return {
             url: `${baseUrl}${path}`,
-            lastModified: new Date(),
+            lastModified: (market && pageLastModified(pageKey, market)) || new Date(),
             changeFrequency: 'monthly' as const,
             priority,
             alternates: buildHreflangAlternates(pageKey),
@@ -30,36 +31,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Statische Seiten
     const staticRoutes = [
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 1,
-        },
-        {
-            url: `${baseUrl}/terminkalender`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/kundenverwaltung`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/formulare`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/funktionen-live-testen`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.7,
-        },
+        internationalEntry('', 'home', 1, 'de'),
+        internationalEntry('/terminkalender', 'appointment-calendar', 0.8, 'de'),
+        internationalEntry('/kundenverwaltung', 'client-records', 0.8, 'de'),
+        internationalEntry('/formulare', 'forms', 0.8, 'de'),
+        internationalEntry('/funktionen-live-testen', 'try-features', 0.7, 'de'),
         internationalEntry('/formulare-testen', 'try-forms', 0.8),
         ...DEMO_FORMS.map((form) => ({
             url: `${baseUrl}/formulare-testen/${form.slug}`,
@@ -103,24 +79,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 },
             },
         })),
-        {
-            url: `${baseUrl}/behandlungsdokumentation`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/online-buchungen`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/treatflow-pay`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
+        internationalEntry('/behandlungsdokumentation', 'treatment-documentation', 0.8, 'de'),
+        internationalEntry('/online-buchungen', 'online-booking', 0.8, 'de'),
+        internationalEntry('/treatflow-pay', 'treatflow-pay', 0.8, 'de'),
         {
             url: `${baseUrl}/kassensystem-kosmetikstudio`,
             lastModified: new Date(),
@@ -151,24 +112,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
-        {
-            url: `${baseUrl}/integrationen`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/shop`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/kontakt`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.6,
-        },
+        internationalEntry('/integrationen', 'integrations', 0.8, 'de'),
+        internationalEntry('/shop', 'shop', 0.8, 'de'),
+        internationalEntry('/kontakt', 'contact', 0.6, 'de'),
         {
             url: `${baseUrl}/impressum`,
             lastModified: new Date(),
@@ -180,79 +126,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date('2026-08-19'),
             changeFrequency: 'yearly' as const,
             priority: 0.3,
+            alternates: buildHreflangAlternates('terms'),
         },
         {
             url: `${baseUrl}/datenschutz`,
             lastModified: new Date(),
             changeFrequency: 'yearly' as const,
             priority: 0.3,
+            alternates: buildHreflangAlternates('privacy'),
         },
-        {
-            url: `${baseUrl}/ueber-uns`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.6,
-        },
+        internationalEntry('/ueber-uns', 'about', 0.6, 'de'),
         {
             url: `${baseUrl}/nisv-dokumentation`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
-        {
-            url: `${baseUrl}/kosmetikstudio-software-vergleich`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/funktionen`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/kosmetikstudio-software`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/laser-haarentfernung-software`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/permanent-makeup-software`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/aesthetische-medizin-software`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/tattoo-studio-software`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/nachrichtenautomatisierung`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/kunden-workflows`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
+        internationalEntry('/kosmetikstudio-software-vergleich', 'software-comparison', 0.8, 'de'),
+        internationalEntry('/funktionen', 'features', 0.9, 'de'),
+        internationalEntry('/kosmetikstudio-software', 'beauty-salon-software', 0.9, 'de'),
+        internationalEntry('/laser-haarentfernung-software', 'laser-hair-removal-software', 0.9, 'de'),
+        internationalEntry('/permanent-makeup-software', 'permanent-makeup-software', 0.9, 'de'),
+        internationalEntry('/aesthetische-medizin-software', 'aesthetic-clinic-software', 0.9, 'de'),
+        internationalEntry('/tattoo-studio-software', 'tattoo-studio-software', 0.9, 'de'),
+        internationalEntry('/nachrichtenautomatisierung', 'messaging', 0.8, 'de'),
+        internationalEntry('/kunden-workflows', 'customer-workflows', 0.8, 'de'),
         // Neue Branchen-Seiten
         {
             url: `${baseUrl}/fusspflege-software`,
@@ -260,30 +158,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
-        {
-            url: `${baseUrl}/nagelstudio-software`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/lash-studio-software`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/spa-wellness-software`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/massage-software`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
+        internationalEntry('/nagelstudio-software', 'nail-salon-software', 0.9, 'de'),
+        internationalEntry('/lash-studio-software', 'lash-studio-software', 0.9, 'de'),
+        internationalEntry('/spa-wellness-software', 'spa-wellness-software', 0.9, 'de'),
+        internationalEntry('/massage-software', 'massage-software', 0.9, 'de'),
         // Feature-Seiten
         {
             url: `${baseUrl}/digitale-anamnese-kosmetikstudio`,
@@ -359,12 +237,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.7,
         },
-        {
-            url: `${baseUrl}/website-fuer-kosmetikstudios`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
+        internationalEntry('/website-fuer-kosmetikstudios', 'studio-website', 0.8, 'de'),
         {
             url: `${baseUrl}/hygieneplan-kosmetikstudio-pdf`,
             lastModified: new Date(),
@@ -401,30 +274,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.9,
         },
-        {
-            url: `${baseUrl}/treatflow-vs-treatwell`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/treatflow-vs-fresha`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
+        internationalEntry('/treatflow-vs-treatwell', 'treatflow-vs-treatwell', 0.9, 'de'),
+        internationalEntry('/treatflow-vs-fresha', 'treatflow-vs-fresha', 0.9, 'de'),
         {
             url: `${baseUrl}/treatflow-vs-shore`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
             priority: 0.9,
         },
-        {
-            url: `${baseUrl}/preise`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.9,
-        },
+        internationalEntry('/preise', 'pricing', 0.9, 'de'),
         {
             url: `${baseUrl}/treatflow-vs-timely`,
             lastModified: new Date(),
@@ -446,9 +304,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { key: 'client-records', priority: 0.9 },
         { key: 'forms', priority: 0.8 },
         { key: 'try-forms', priority: 0.8 },
+        { key: 'try-features', priority: 0.7 },
         { key: 'treatment-documentation', priority: 0.8 },
         { key: 'vouchers', priority: 0.8 },
         { key: 'messaging', priority: 0.8 },
+        { key: 'customer-workflows', priority: 0.8 },
+        { key: 'treatflow-pay', priority: 0.8 },
         { key: 'integrations', priority: 0.8 },
         { key: 'features', priority: 0.8 },
         { key: 'shop', priority: 0.75 },
@@ -479,12 +340,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     function localeRoutes(locale: PrefixedMarket) {
         const prefix = marketPathPrefix[locale]
-        const home = internationalEntry(prefix, 'home', 0.9)
+        const home = internationalEntry(prefix, 'home', 0.9, locale)
         const rest = [...sharedKeys, ...featureAndIndustryKeys]
             .map(({ key, priority }) => {
                 const slug = seoPageSlugs[key]?.[locale]
                 if (slug === undefined) return null
-                return internationalEntry(`${prefix}/${slug}`, key, priority)
+                return internationalEntry(`${prefix}/${slug}`, key, priority, locale)
             })
             .filter(Boolean) as ReturnType<typeof internationalEntry>[]
         return [home, ...rest]
@@ -517,6 +378,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.8,
+        alternates: buildHreflangAlternates('news'),
     }
 
     const blogIndex = {
@@ -578,18 +440,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly' as const,
             priority: 0.6,
         },
-        {
-            url: `${baseUrl}/api/facts?lang=en`,
+        ...prefixedMarkets.map((lang) => ({
+            url: `${baseUrl}/api/facts?lang=${lang}`,
             lastModified: new Date(),
             changeFrequency: 'weekly' as const,
             priority: 0.6,
-        },
-        {
-            url: `${baseUrl}/api/facts?lang=tr`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly' as const,
-            priority: 0.6,
-        },
+        })),
     ]
 
     const trGuideRoutes = [

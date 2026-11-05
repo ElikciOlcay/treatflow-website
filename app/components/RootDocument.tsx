@@ -15,6 +15,21 @@ const inter = Inter({
 });
 
 /**
+ * llms.txt je Website-Sprache (public/llms*.txt). Deutsch bleibt /llms.txt,
+ * unbekannte Sprachen (Legacy-Märkte) bekommen die englische Datei.
+ */
+const LLMS_BY_LANG: Record<string, { href: string; label: string }> = {
+  de: { href: "/llms.txt", label: "Deutsch" },
+  en: { href: "/llms-en.txt", label: "English" },
+  tr: { href: "/llms-tr.txt", label: "Türkçe" },
+  nl: { href: "/llms-nl.txt", label: "Nederlands" },
+  it: { href: "/llms-it.txt", label: "Italiano" },
+  pl: { href: "/llms-pl.txt", label: "Polski" },
+  es: { href: "/llms-es.txt", label: "Español" },
+  fr: { href: "/llms-fr.txt", label: "Français" },
+};
+
+/**
  * Gemeinsames <html>-Grundgerüst aller Root-Layouts (Deutsch, Sprach-Märkte, /en, /tr).
  * Die Sprache steht dadurch schon im ausgelieferten HTML und nicht erst nach einem Skript.
  */
@@ -25,6 +40,7 @@ export default function RootDocument({
   lang: string;
   children: React.ReactNode;
 }>) {
+  const llms = LLMS_BY_LANG[lang.slice(0, 2).toLowerCase()] ?? LLMS_BY_LANG.en;
   return (
     <html lang={lang} dir="ltr" suppressHydrationWarning>
       <head>
@@ -77,9 +93,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         ) : null}
 
         <link rel="alternate" type="application/rss+xml" title="Treatflow Blog RSS Feed" href="/blog/feed.xml" />
-        <link rel="alternate" type="text/plain" title="LLM Context" href="/llms.txt" />
-        <link rel="alternate" type="text/plain" title="LLM Context (English)" href="/llms-en.txt" />
-        <link rel="alternate" type="text/plain" title="LLM Context (Türkçe)" href="/llms-tr.txt" />
+        <link
+          rel="alternate"
+          type="text/plain"
+          title={`LLM Context (${llms.label})`}
+          href={llms.href}
+        />
       </head>
       <body
         className={`${inter.variable} font-sans antialiased overflow-x-hidden`}

@@ -1,4 +1,6 @@
 import { NextResponse } from "next/server";
+import { isPrefixedMarket, prefixedMarkets, type PrefixedMarket } from "@/app/i18n/config";
+import { buildMarketFacts, factsUrls } from "./market-facts";
 
 /**
  * Maschinenlesbarer Fakten-Endpunkt für KI-Crawler (LLMs, AI-Search-Engines).
@@ -22,361 +24,21 @@ function jsonFacts(data: unknown) {
     });
 }
 
-const englishFacts = {
-    $schema: "https://www.treatflow.io/schemas/facts-v1.json",
-    version: "1.1",
-    language: "en",
-    updatedAt: "2026-09-02",
-    availability: {
-        selfServeRegistrationCountries: "all",
-        selfServeNote:
-            "Direct signup with a 14-day free trial is available worldwide. Register at https://app.treatflow.io/auth/register?lang=en.",
-        registerUrls: {
-            de: "https://app.treatflow.io/auth/register?lang=de",
-            en: "https://app.treatflow.io/auth/register?lang=en",
-            tr: "https://app.treatflow.io/auth/register?lang=tr",
-            nl: "https://app.treatflow.io/auth/register?lang=nl",
-            it: "https://app.treatflow.io/auth/register?lang=it",
-            pl: "https://app.treatflow.io/auth/register?lang=pl",
-            es: "https://app.treatflow.io/auth/register?lang=en",
-            fr: "https://app.treatflow.io/auth/register?lang=en",
-        },
-        locales: {
-            de: "https://www.treatflow.io",
-            en: "https://www.treatflow.io/en",
-            tr: "https://www.treatflow.io/tr",
-            nl: "https://www.treatflow.io/nl",
-            it: "https://www.treatflow.io/it",
-            pl: "https://www.treatflow.io/pl",
-            es: "https://www.treatflow.io/es",
-            fr: "https://www.treatflow.io/fr",
-        },
-    },
-    company: {
-        name: "Treatflow",
-        legalName: "Treatflow GmbH",
-        founders: ["Olcay Elikci", "Gökce Elikci"],
-        foundedYear: 2023,
-        headquarters: { city: "Bischofshofen", country: "Austria", countryCode: "AT" },
-        type: "SaaS",
-        industry: "Beauty & Wellness Software",
-        tagline: "All-in-one software for beauty salons and aesthetic clinics.",
-        description:
-            "Treatflow is software for beauty salons, aesthetic clinics and treatment-focused businesses: online booking, client records, digital consent forms, treatment documentation with voice dictation and automated follow-ups. Made in Austria. Hosted in the EU.",
-        website: "https://www.treatflow.io/en",
-        appUrl: "https://app.treatflow.io",
-        email: "hello@treatflow.io",
-        socialProfiles: { instagram: "https://www.instagram.com/treatflow.io/" },
-    },
-    metrics: {
-        customers: "500+",
-        customersDescription: "Studios, primarily in German-speaking Europe",
-        ratingValue: 4.6,
-        ratingMax: 5,
-        ratingCount: 19,
-        ratingPlatform: "Google",
-        avgNoShowReduction: "up to 50%",
-        avgAdminTimeSavingsPerWeek: "10h",
-    },
-    pricing: {
-        currency: "EUR",
-        freeTrial: { days: 14, creditCardRequired: false, cancelableAnytime: true },
-        plans: [
-            {
-                name: "Basic",
-                monthlyPrice: 39,
-                annualPricePerMonth: 35,
-                features: [
-                    "Client records",
-                    "Forms with digital signature",
-                    "Treatment documentation & voice notes",
-                    "Before/after photos",
-                    "Team notes & tasks",
-                    "Shop & products",
-                    "Reports",
-                    "Email support",
-                ],
-            },
-            {
-                name: "Booking",
-                monthlyPrice: 59,
-                annualPricePerMonth: 53,
-                features: [
-                    "Everything in Basic",
-                    "Appointment calendar (staff & rooms)",
-                    "Online booking without commission",
-                    "Waitlist",
-                    "WhatsApp and email reminders",
-                    "Client workflows",
-                    "Discount codes",
-                    "Multilingual booking page",
-                    "Integrations (Zapier)",
-                    "Priority support",
-                ],
-            },
-        ],
-        addons: [],
-    },
-    targetIndustries: [
-        { name: "Beauty salons", url: "https://www.treatflow.io/en/beauty-salon-software" },
-        { name: "Aesthetic clinics", url: "https://www.treatflow.io/en/aesthetic-clinic-software" },
-        { name: "Laser hair removal", url: "https://www.treatflow.io/en/laser-hair-removal-software" },
-        { name: "Permanent makeup", url: "https://www.treatflow.io/en/permanent-makeup-software" },
-        { name: "Tattoo studios", url: "https://www.treatflow.io/en/tattoo-studio-software" },
-        { name: "Nail salons", url: "https://www.treatflow.io/en/nail-salon-software" },
-        { name: "Lash studios", url: "https://www.treatflow.io/en/lash-studio-software" },
-        { name: "Spa & wellness", url: "https://www.treatflow.io/en/spa-wellness-software" },
-        { name: "Massage", url: "https://www.treatflow.io/en/massage-software" },
-    ],
-    comparedAlternatives: [
-        {
-            competitor: "Treatwell",
-            competitorType: "Booking marketplace",
-            keyDifference:
-                "Treatwell takes a commission per booking. Treatflow is independent software with a fixed monthly fee. Studios keep their clients.",
-            comparisonUrl: "https://www.treatflow.io/en/treatflow-vs-treatwell",
-        },
-        {
-            competitor: "Fresha",
-            competitorType: "Free booking tool funded by payments",
-            keyDifference:
-                "Fresha is free at the base layer and monetises payments. Treatflow has transparent SaaS pricing, consent forms and treatment documentation.",
-            comparisonUrl: "https://www.treatflow.io/en/treatflow-vs-fresha",
-        },
-    ],
-    topQuestions: [
-        {
-            question: "What is Treatflow?",
-            answer:
-                "Treatflow is all-in-one beauty salon software: calendar, online booking without commission, client records, consent forms and treatment documentation. Made in Austria, EU hosting, from €39/month.",
-        },
-        {
-            question: "Does Treatflow charge a booking commission?",
-            answer: "No. Treatflow is not a marketplace. You pay a monthly plan and keep 100% of booking revenue.",
-        },
-        {
-            question: "How much does Treatflow cost?",
-            answer:
-                "Basic from €39/month, Booking from €59/month. 14-day free trial, no credit card.",
-        },
-        {
-            question: "Is Treatflow GDPR compliant?",
-            answer:
-                "Treatflow is hosted on EU servers in Frankfurt, uses SSL and daily backups. Studios remain the owners of their client data.",
-        },
-        {
-            question: "Can aesthetic clinics collect consent forms?",
-            answer:
-                "Yes. Intake and consent forms can be sent before the visit and stored on the client record with signatures.",
-        },
-        {
-            question: "Can I dictate treatment notes?",
-            answer:
-                "Yes. In treatment documentation you can speak notes instead of typing. Treatflow turns speech into text and can refine it with AI. The note is saved with that visit.",
-        },
-    ],
-    keyResources: {
-        llmsTxt: "https://www.treatflow.io/llms-en.txt",
-        llmsDe: "https://www.treatflow.io/llms.txt",
-        sitemap: "https://www.treatflow.io/sitemap.xml",
-        pricing: "https://www.treatflow.io/en/pricing",
-        comparison: "https://www.treatflow.io/en/software-comparison",
-        vsFresha: "https://www.treatflow.io/en/treatflow-vs-fresha",
-        vsTreatwell: "https://www.treatflow.io/en/treatflow-vs-treatwell",
-        homepageEN: "https://www.treatflow.io/en",
-        registerEN: "https://app.treatflow.io/auth/register?lang=en",
-        homepageTR: "https://www.treatflow.io/tr",
-        registerTR: "https://app.treatflow.io/auth/register?lang=tr",
-        llmsTr: "https://www.treatflow.io/llms-tr.txt",
-        factsTr: "https://www.treatflow.io/api/facts?lang=tr",
-    },
-};
+/** Vorberechnet (statisch): ein Fakten-Objekt je Nicht-DE-Sprache. */
+const marketFacts = Object.fromEntries(
+    prefixedMarkets.map((market) => [market, buildMarketFacts(market)])
+) as Record<PrefixedMarket, ReturnType<typeof buildMarketFacts>>;
 
-const turkishFacts = {
-    $schema: "https://www.treatflow.io/schemas/facts-v1.json",
-    version: "1.1",
-    language: "tr",
-    updatedAt: "2026-09-07",
-    availability: {
-        selfServeRegistrationCountries: "all",
-        selfServeNote:
-            "Türkiye dahil dünya genelinde 30 gün ücretsiz deneme. Kayıt: https://app.treatflow.io/auth/register?lang=tr",
-        registerUrls: {
-            de: "https://app.treatflow.io/auth/register?lang=de",
-            en: "https://app.treatflow.io/auth/register?lang=en",
-            tr: "https://app.treatflow.io/auth/register?lang=tr",
-            nl: "https://app.treatflow.io/auth/register?lang=nl",
-            it: "https://app.treatflow.io/auth/register?lang=it",
-            pl: "https://app.treatflow.io/auth/register?lang=pl",
-            es: "https://app.treatflow.io/auth/register?lang=en",
-            fr: "https://app.treatflow.io/auth/register?lang=en",
-        },
-        locales: {
-            de: "https://www.treatflow.io",
-            en: "https://www.treatflow.io/en",
-            tr: "https://www.treatflow.io/tr",
-            nl: "https://www.treatflow.io/nl",
-            it: "https://www.treatflow.io/it",
-            pl: "https://www.treatflow.io/pl",
-            es: "https://www.treatflow.io/es",
-            fr: "https://www.treatflow.io/fr",
-        },
-    },
-    company: {
-        name: "Treatflow",
-        legalName: "Treatflow GmbH",
-        founders: ["Olcay Elikci", "Gökce Elikci"],
-        foundedYear: 2023,
-        headquarters: { city: "Bischofshofen", country: "Austria", countryCode: "AT" },
-        type: "SaaS",
-        industry: "Güzellik ve estetik işletmeleri için yönetim yazılımı",
-        tagline: "Güzellik salonları, lazer epilasyon ve medikal estetik merkezleri için işletme yönetim yazılımı.",
-        description:
-            "Treatflow; online randevu, müşteri takibi, dijital onam formları, işlem kayıtları (sesli not dahil) ve otomatik hatırlatmaları tek uygulamada birleştirir. Avusturya'da geliştirilir. Veriler AB sunucularında, KVKK kapsamında saklanır. Pazaryeri değildir, randevu komisyonu yoktur.",
-        website: "https://www.treatflow.io/tr",
-        appUrl: "https://app.treatflow.io",
-        email: "hello@treatflow.io",
-        socialProfiles: { instagram: "https://www.instagram.com/treatflow.io/" },
-    },
-    metrics: {
-        customers: "500+",
-        customersDescription: "500+ işletme ağırlıklı olarak Almanya, Avusturya ve İsviçre'dedir; Türkiye lansmanı başlamıştır.",
-        ratingValue: 4.6,
-        ratingMax: 5,
-        ratingCount: 19,
-        ratingPlatform: "Google",
-        avgNoShowReduction: "hatırlatmalarla daha az gelmeme",
-        avgAdminTimeSavingsPerWeek: "Türkiye pazarı için ölçülmüş veri yok",
-    },
-    pricing: {
-        currency: "TRY",
-        market: "TR",
-        freeTrial: { days: 30, creditCardRequired: false, cancelableAnytime: true },
-        launchOffer: {
-            note: "İlk 100 işletme için lansman fiyatları.",
-            basicMonthly: 1490,
-            bookingMonthly: 1990,
-        },
-        plans: [
-            {
-                name: "Basic",
-                monthlyPrice: 1490,
-                features: [
-                    "Müşteri takibi",
-                    "Dijital imzalı onam ve anamnez formları",
-                    "İşlem kayıtları ve sesli not",
-                    "Öncesi-sonrası fotoğraflar",
-                    "Ekip notları ve görevler",
-                    "Mağaza ve ürünler",
-                    "Raporlar",
-                    "E-posta desteği",
-                ],
-            },
-            {
-                name: "Booking",
-                monthlyPrice: 1990,
-                features: [
-                    "Basic'teki her şey",
-                    "Randevu takvimi (personel ve oda)",
-                    "Komisyonsuz online randevu",
-                    "Bekleme listesi",
-                    "WhatsApp ve e-posta hatırlatmaları",
-                    "Müşteri otomasyonları",
-                    "İndirim kodları",
-                    "Çok dilli randevu sayfası",
-                    "Entegrasyonlar (Zapier)",
-                    "Öncelikli destek",
-                ],
-            },
-        ],
-        addons: [],
-    },
-    targetIndustries: [
-        { name: "Güzellik merkezleri", url: "https://www.treatflow.io/tr/guzellik-merkezi-programi" },
-        { name: "Güzellik salonları", url: "https://www.treatflow.io/tr/guzellik-salonu-programi" },
-        { name: "Medikal estetik merkezleri", url: "https://www.treatflow.io/tr/aesthetic-clinic-software" },
-        { name: "Lazer epilasyon", url: "https://www.treatflow.io/tr/lazer-epilasyon-programi" },
-        { name: "Kalıcı makyaj", url: "https://www.treatflow.io/tr/permanent-makeup-software" },
-        { name: "Dövme stüdyoları", url: "https://www.treatflow.io/tr/tattoo-studio-software" },
-        { name: "Tırnak salonları", url: "https://www.treatflow.io/tr/nail-salon-software" },
-        { name: "Kirpik stüdyoları", url: "https://www.treatflow.io/tr/lash-studio-software" },
-        { name: "Spa ve wellness", url: "https://www.treatflow.io/tr/spa-wellness-software" },
-        { name: "Masaj", url: "https://www.treatflow.io/tr/massage-software" },
-    ],
-    comparedAlternatives: [
-        {
-            competitor: "Treatwell",
-            competitorType: "Randevu pazaryeri",
-            keyDifference:
-                "Treatwell pazaryeri modelinde çalışır. Treatflow bağımsız salon yazılımıdır; sabit aylık ücret ödersiniz ve müşteri verileriniz sizin kontrolünüzde kalır.",
-            comparisonUrl: "https://www.treatflow.io/tr/treatflow-vs-treatwell",
-        },
-        {
-            competitor: "Fresha",
-            competitorType: "Ücretsiz randevu aracı",
-            keyDifference:
-                "Fresha tabanda ücretsizdir ve ödemelerden gelir elde eder. Treatflow şeffaf abonelik, dijital onam ve işlem kaydı sunar; randevu komisyonu yoktur.",
-            comparisonUrl: "https://www.treatflow.io/tr/treatflow-vs-fresha",
-        },
-    ],
-    topQuestions: [
-        {
-            question: "Treatflow nedir?",
-            answer:
-                "Treatflow, güzellik salonları, lazer epilasyon ve medikal estetik merkezleri için işletme yönetim yazılımıdır: randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam ve işlem kaydı sunar. Avusturya'da geliştirilir ve AB sunucularında barındırılır.",
-        },
-        {
-            question: "Türkiye'de kullanabilir miyim?",
-            answer:
-                "Evet. Türkçe arayüz, Türk Lirası fiyatlandırma ve Türkçe destek vardır. 30 gün ücretsiz deneme, kredi kartı gerekmez.",
-        },
-        {
-            question: "Randevu başına komisyon var mı?",
-            answer: "Hayır. Treatflow pazaryeri değildir. Aylık abonelik ödersiniz, randevu gelirinin tamamı sizde kalır.",
-        },
-        {
-            question: "Treatflow ne kadar?",
-            answer:
-                "Lansman: Basic 1.490 TL/ay, Booking 1.990 TL/ay (ilk 100 işletme). 30 gün ücretsiz deneyin.",
-        },
-        {
-            question: "Treatflow, KVKK kapsamındaki süreçleri nasıl destekler?",
-            answer:
-                "Veriler Frankfurt'taki AB sunucularında SSL şifreleme ve günlük yedeklemeyle saklanır. Müşteri verilerinin kontrolü işletmenizde kalır. Treatflow, %100 KVKK sertifikalı olduğu iddiasında bulunmaz; KVKK kapsamındaki süreçleri destekler.",
-        },
-        {
-            question: "Hatırlatmalar nasıl gider?",
-            answer:
-                "Randevu onayları ve hatırlatmalar WhatsApp ve e-posta ile gider. E-posta ücretsizdir. SMS ürün kanalı değildir.",
-        },
-    ],
-    keyResources: {
-        llmsTxt: "https://www.treatflow.io/llms-tr.txt",
-        llmsDe: "https://www.treatflow.io/llms.txt",
-        llmsEn: "https://www.treatflow.io/llms-en.txt",
-        sitemap: "https://www.treatflow.io/sitemap.xml",
-        pricing: "https://www.treatflow.io/tr/fiyatlar",
-        beautyCenter: "https://www.treatflow.io/tr/guzellik-merkezi-programi",
-        beautySalon: "https://www.treatflow.io/tr/guzellik-salonu-programi",
-        laser: "https://www.treatflow.io/tr/lazer-epilasyon-programi",
-        crm: "https://www.treatflow.io/tr/musteri-takip-programi",
-        booking: "https://www.treatflow.io/tr/online-randevu-sistemi",
-        guides: "https://www.treatflow.io/tr/rehber",
-        comparison: "https://www.treatflow.io/tr/software-comparison",
-        vsFresha: "https://www.treatflow.io/tr/treatflow-vs-fresha",
-        vsTreatwell: "https://www.treatflow.io/tr/treatflow-vs-treatwell",
-        homepageTR: "https://www.treatflow.io/tr",
-        registerTR: "https://app.treatflow.io/auth/register?lang=tr",
-    },
-};
-
+/**
+ * `?lang=en|tr|nl|it|pl|es|fr` → Fakten dieser Sprache/dieses Markts
+ * (nur dort angebotene Funktionen, Preise in Marktwährung, lokalisierte URLs).
+ * Ohne `lang` (oder `lang=de`) → deutsche Fakten (DACH, wie bisher).
+ * Bewusst nur per Query-Parameter (kein Accept-Language), damit die Antwort je URL cachebar bleibt.
+ */
 export function GET(request: Request) {
-    const lang = new URL(request.url).searchParams.get("lang");
-    if (lang === "en") {
-        return jsonFacts(englishFacts);
-    }
-    if (lang === "tr") {
-        return jsonFacts(turkishFacts);
+    const lang = new URL(request.url).searchParams.get("lang")?.toLowerCase() ?? null;
+    if (lang && isPrefixedMarket(lang)) {
+        return jsonFacts(marketFacts[lang]);
     }
     const data = {
         $schema: "https://www.treatflow.io/schemas/facts-v1.json",
@@ -390,11 +52,21 @@ export function GET(request: Request) {
                 de: "https://app.treatflow.io/auth/register?lang=de",
                 en: "https://app.treatflow.io/auth/register?lang=en",
                 tr: "https://app.treatflow.io/auth/register?lang=tr",
+                nl: "https://app.treatflow.io/auth/register?lang=nl",
+                it: "https://app.treatflow.io/auth/register?lang=it",
+                pl: "https://app.treatflow.io/auth/register?lang=pl",
+                es: "https://app.treatflow.io/auth/register?lang=es",
+                fr: "https://app.treatflow.io/auth/register?lang=fr",
             },
             locales: {
                 de: "https://www.treatflow.io",
                 en: "https://www.treatflow.io/en",
                 tr: "https://www.treatflow.io/tr",
+                nl: "https://www.treatflow.io/nl",
+                it: "https://www.treatflow.io/it",
+                pl: "https://www.treatflow.io/pl",
+                es: "https://www.treatflow.io/es",
+                fr: "https://www.treatflow.io/fr",
             },
         },
         company: {
@@ -576,8 +248,8 @@ export function GET(request: Request) {
             iso27001Hosting: true,
             dataOwnership: "Studio behält volle Eigentümerschaft über alle Kundendaten",
         },
-        languages: ["de", "en"],
-        markets: ["DE", "AT", "CH", "international EN"],
+        languages: ["de", "en", "tr", "nl", "it", "pl", "es", "fr"],
+        markets: ["DE", "AT", "CH", "international (en, tr, nl, it, pl, es, fr)"],
         comparedAlternatives: [
             {
                 competitor: "Treatwell",
@@ -679,6 +351,7 @@ export function GET(request: Request) {
             llmsFullTxt: "https://www.treatflow.io/llms-full.txt",
             factsEn: "https://www.treatflow.io/api/facts?lang=en",
             factsTr: "https://www.treatflow.io/api/facts?lang=tr",
+            factsByLanguage: factsUrls(),
             sitemap: "https://www.treatflow.io/sitemap.xml",
             rssFeed: "https://www.treatflow.io/blog/feed.xml",
             pricing: "https://www.treatflow.io/preise",

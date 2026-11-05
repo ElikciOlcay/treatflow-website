@@ -194,7 +194,7 @@ const nextConfig: NextConfig = {
       { source: '/en/consultation-forms', destination: '/en/forms', permanent: true },
       { source: '/en/appointment-reminders', destination: '/en/messaging', permanent: true },
       { source: '/en/automated-messages', destination: '/en/messaging', permanent: true },
-      { source: '/en/workflows', destination: '/en/messaging', permanent: true },
+      { source: '/en/workflows', destination: '/en/client-workflows', permanent: true },
       { source: '/en/before-after-photos', destination: '/en/treatment-documentation', permanent: true },
       { source: '/en/ai-treatment-notes', destination: '/en/treatment-documentation', permanent: true },
       { source: '/en/ai-dictation', destination: '/en/treatment-documentation', permanent: true },
@@ -214,6 +214,8 @@ const nextConfig: NextConfig = {
       { source: '/tr/laser-hair-removal-software', destination: '/tr/lazer-epilasyon-programi', statusCode: 301 },
       { source: '/tr/client-records', destination: '/tr/musteri-takip-programi', statusCode: 301 },
       { source: '/tr/online-booking', destination: '/tr/online-randevu-sistemi', statusCode: 301 },
+      { source: '/tr/client-workflows', destination: '/tr/musteri-otomasyonlari', statusCode: 301 },
+      { source: '/tr/try-features', destination: '/tr/canli-demo', statusCode: 301 },
     ];
   },
 

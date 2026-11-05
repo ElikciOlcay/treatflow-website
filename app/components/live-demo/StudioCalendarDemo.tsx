@@ -2,7 +2,9 @@
 
 import type { RefObject } from "react";
 import { ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
-import { TREATMENTS, type DemoCustomer } from "./BookingPanel";
+import type { DemoCustomer } from "./BookingPanel";
+import { tryFeaturesDe } from "@/app/site/content/try-features/de";
+import type { BookingPanelStrings, CalendarStrings } from "@/app/site/content/try-features/types";
 
 type StudioCalendarDemoProps = {
   booking: { time: string; treatment: string; customer: DemoCustomer; dayLabel: string };
@@ -10,29 +12,35 @@ type StudioCalendarDemoProps = {
   landed: boolean;
   /** Platz des neuen Termins; dorthin fliegt der Termin aus dem Buchungsfenster */
   targetRef: RefObject<HTMLDivElement | null>;
+  /** Texte des Kalenders (Default: Deutsch) */
+  content?: CalendarStrings;
+  /** Behandlungen der Buchungsdemo (Default: Deutsch) */
+  treatments?: BookingPanelStrings["treatments"];
+  /** Label „heute“ der Buchungsdemo (Default: Deutsch) */
+  today?: string;
 };
 
 const FIRST_HOUR = 9;
 const LAST_HOUR = 19;
 const HOUR_PX = 56;
 
-// Wer welche Behandlung übernimmt, wie im Demo-Studio Aurora
-const STAFF = [
-  { name: "Elif", initials: "EA", color: "bg-rose-400", treatment: "Gesichtsbehandlung" },
-  { name: "Jana", initials: "JV", color: "bg-amber-400", treatment: "Wimpernlifting" },
-  { name: "Mara", initials: "MK", color: "bg-emerald-500", treatment: "Laser-Haarentfernung" },
+// Wer welche Behandlung übernimmt, wie im Demo-Studio Aurora (Index in die Behandlungen der Buchungsdemo)
+const STAFF_STYLE = [
+  { color: "bg-rose-400", treatment: 0 },
+  { color: "bg-amber-400", treatment: 2 },
+  { color: "bg-emerald-500", treatment: 1 },
 ];
 
-// Bestehende Termine; liegen nie auf den buchbaren Demo-Zeiten
-const EXISTING: { staff: number; start: string; end: string; title: string; customer: string; tone: string }[] = [
-  { staff: 0, start: "12:15", end: "13:15", title: "Peeling", customer: "Sarah K.", tone: "bg-rose-50 border-rose-300 text-rose-900" },
-  { staff: 0, start: "15:20", end: "16:20", title: "Hydrafacial", customer: "Nina B.", tone: "bg-rose-50 border-rose-300 text-rose-900" },
-  { staff: 1, start: "10:20", end: "11:00", title: "Brow Lifting", customer: "Julia M.", tone: "bg-amber-50 border-amber-300 text-amber-900" },
-  { staff: 1, start: "12:00", end: "13:00", title: "Wimpernverlängerung", customer: "Anna S.", tone: "bg-amber-50 border-amber-300 text-amber-900" },
-  { staff: 1, start: "15:15", end: "16:15", title: "Refill", customer: "Mia T.", tone: "bg-amber-50 border-amber-300 text-amber-900" },
-  { staff: 2, start: "10:00", end: "10:45", title: "Laser Beine", customer: "Laura P.", tone: "bg-emerald-50 border-emerald-300 text-emerald-900" },
-  { staff: 2, start: "12:30", end: "13:30", title: "Laser Rücken", customer: "Tom R.", tone: "bg-emerald-50 border-emerald-300 text-emerald-900" },
-  { staff: 2, start: "15:00", end: "15:45", title: "Laser Gesicht", customer: "Eva L.", tone: "bg-emerald-50 border-emerald-300 text-emerald-900" },
+// Bestehende Termine; liegen nie auf den buchbaren Demo-Zeiten (Titel/Kundin je Sprache aus dem Content, gleiche Reihenfolge)
+const EXISTING_SLOTS: { staff: number; start: string; end: string; tone: string }[] = [
+  { staff: 0, start: "12:15", end: "13:15", tone: "bg-rose-50 border-rose-300 text-rose-900" },
+  { staff: 0, start: "15:20", end: "16:20", tone: "bg-rose-50 border-rose-300 text-rose-900" },
+  { staff: 1, start: "10:20", end: "11:00", tone: "bg-amber-50 border-amber-300 text-amber-900" },
+  { staff: 1, start: "12:00", end: "13:00", tone: "bg-amber-50 border-amber-300 text-amber-900" },
+  { staff: 1, start: "15:15", end: "16:15", tone: "bg-amber-50 border-amber-300 text-amber-900" },
+  { staff: 2, start: "10:00", end: "10:45", tone: "bg-emerald-50 border-emerald-300 text-emerald-900" },
+  { staff: 2, start: "12:30", end: "13:30", tone: "bg-emerald-50 border-emerald-300 text-emerald-900" },
+  { staff: 2, start: "15:00", end: "15:45", tone: "bg-emerald-50 border-emerald-300 text-emerald-900" },
 ];
 
 function minutes(time: string) {
@@ -49,13 +57,22 @@ function topFor(time: string) {
 }
 
 /** Tagesansicht des Studio-Kalenders mit freiem Platz für den gerade gebuchten Demo-Termin. */
-export default function StudioCalendarDemo({ booking, landed, targetRef }: StudioCalendarDemoProps) {
+export default function StudioCalendarDemo({
+  booking,
+  landed,
+  targetRef,
+  content: c = tryFeaturesDe.demos.calendar,
+  treatments = tryFeaturesDe.demos.bookingPanel.treatments,
+  today = tryFeaturesDe.demos.bookingPanel.today,
+}: StudioCalendarDemoProps) {
+  const STAFF = STAFF_STYLE.map((style, index) => ({ ...style, ...c.staff[index], treatment: treatments[style.treatment]?.name }));
+  const EXISTING = EXISTING_SLOTS.map((slot, index) => ({ ...slot, ...c.existing[index] }));
   const staffIndex = Math.max(0, STAFF.findIndex((s) => s.treatment === booking.treatment));
-  const duration = TREATMENTS.find((t) => t.name === booking.treatment)?.minutes ?? 60;
+  const duration = treatments.find((t) => t.name === booking.treatment)?.minutes ?? 60;
   const end = formatTime(minutes(booking.time) + duration);
   const top = topFor(booking.time);
   const height = (duration / 60) * HOUR_PX;
-  const dayTitle = booking.dayLabel === "heute" ? "Heute" : booking.dayLabel;
+  const dayTitle = booking.dayLabel === today ? c.todayTitle : booking.dayLabel;
 
   return (
     <div>
@@ -71,7 +88,7 @@ export default function StudioCalendarDemo({ booking, landed, targetRef }: Studi
             </span>
             <p className="ml-1 text-sm font-semibold text-gray-900">{dayTitle}</p>
           </div>
-          <span className="rounded-lg bg-gray-100 px-2.5 py-1 text-xs font-semibold text-gray-600">Tag</span>
+          <span className="rounded-lg bg-gray-100 px-2.5 py-1 text-xs font-semibold text-gray-600">{c.dayView}</span>
         </div>
 
         <div className="grid grid-cols-[3rem_repeat(3,minmax(0,1fr))] border-b border-gray-100 sm:grid-cols-[3.5rem_repeat(3,minmax(0,1fr))]">
@@ -114,7 +131,11 @@ export default function StudioCalendarDemo({ booking, landed, targetRef }: Studi
                   className={`absolute inset-x-1 z-10 overflow-hidden rounded-md border-l-4 border-indigo-600 bg-indigo-600 px-1.5 py-1 text-[10px] leading-tight text-white sm:text-[11px] ${landed ? "tf-cal-landed" : ""}`}
                   style={{ top: top + 1, height: height - 2, visibility: landed ? "visible" : "hidden" }}
                   role="status"
-                  aria-label={`Neuer Termin: ${booking.customer.name}, ${booking.treatment}, ${booking.time} bis ${end} Uhr`}
+                  aria-label={c.newAria
+                    .replace("{name}", booking.customer.name)
+                    .replace("{treatment}", booking.treatment)
+                    .replace("{time}", booking.time)
+                    .replace("{end}", end)}
                 >
                   {duration < 45 ? (
                     <p className="truncate">
@@ -137,7 +158,7 @@ export default function StudioCalendarDemo({ booking, landed, targetRef }: Studi
                   style={{ top: Math.max(4, top - 26) }}
                 >
                   <Sparkles className="h-3 w-3" />
-                  Neu · online gebucht
+                  {c.newBadge}
                 </span>
               )}
             </div>

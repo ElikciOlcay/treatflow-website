@@ -1,116 +1,123 @@
 # Treatflow
 
-> Treatflow is an all-in-one management platform for beauty salons, aesthetic clinics, laser studios and treatment-focused businesses. It combines online booking, client records, digital consultation and consent forms, treatment documentation with voice dictation, before-and-after photos and automated follow-ups. Made in Austria. Hosted in the EU (Frankfurt). From €39/month. 14-day free trial worldwide, no credit card required.
+> Treatflow is all-in-one software for beauty salons, aesthetic clinics and other treatment-based businesses (laser, nails, lashes, permanent makeup, tattoo, spa, massage). It combines an appointment calendar, commission-free online booking, client records, digital consultation and consent forms, treatment records with voice dictation, email reminders, client workflows and Treatflow Pay for online deposits. Developed in Austria, data on EU servers in Frankfurt, GDPR-compliant. Basic €39/month, Booking €59/month (plus VAT), 14-day free trial, no credit card required, no commission per booking.
+
+Last updated: 2026-11-05. Language: English. This file describes the English website (https://www.treatflow.io/en) and lists only features offered outside the German-speaking (DACH) market.
 
 ## About Treatflow
 
-- Founded by Olcay and Gökce Elikci in Bischofshofen, Austria (2023)
-- 500+ studios
-- 4.6/5 on Google (19 reviews)
-- For: beauty salons, nail studios, lash studios, permanent makeup, laser hair removal, tattoo studios, spa & wellness, massage, aesthetic clinics
-- Website languages: German (primary SEO market), English (`/en`), Turkish (`/tr`)
-- Signup: https://app.treatflow.io/auth/register?lang=en
-- Hosting: EU servers, GDPR-ready
+- Company: Treatflow GmbH, founded 2023 by Olcay and Gökce Elikci in Bischofshofen, Austria
+- Already tried by 500+ salons and clinics; rated 4.6/5 on Google (19 reviews)
+- For: beauty salons, aesthetic clinics, laser and IPL studios, nail salons, lash studios, permanent makeup studios, tattoo studios, spa & wellness, massage therapists
+- Not a marketplace: salons use their own booking link and keep their client data
+- Works in the browser on computer, tablet and smartphone; nothing to install
+
+## Core features
+
+- [Appointment calendar](https://www.treatflow.io/en/appointment-calendar): daily, weekly and monthly views with columns per staff member and room
+- [Online booking](https://www.treatflow.io/en/online-booking): your own booking link, open 24/7, no commission per booking
+- [Client records](https://www.treatflow.io/en/client-records): client profiles with treatment history, notes and photos
+- [Forms](https://www.treatflow.io/en/forms): digital consultation and consent forms with digital signature, filled in before the appointment via a link; form marketplace and AI form generator
+- [Treatment records](https://www.treatflow.io/en/treatment-documentation): notes, parameters, products and before-and-after photos per treatment, including voice dictation
+- [Reminders](https://www.treatflow.io/en/messaging): automated email appointment reminders to reduce no-shows
+- [Client workflows](https://www.treatflow.io/en/client-workflows): multi-step automations for aftercare, rebooking and win-back with wait times and conditions
+- [Treatflow Pay](https://www.treatflow.io/en/treatflow-pay): clients pay a deposit or the full price when they book online; set per service; card, Apple Pay and Google Pay; 2.69% per transaction
+- [Shop](https://www.treatflow.io/en/shop): sell aftercare and retail products with stock levels and sales history
+- [Integrations](https://www.treatflow.io/en/integrations): Google Calendar, Zapier and AI assistants such as Claude or ChatGPT
+- [Salon websites](https://www.treatflow.io/en/studio-website): custom, mobile-optimised website for your salon, built for bookings
+- [All features](https://www.treatflow.io/en/features): overview of every feature
 
 ## Pricing
 
-- **Basic**: €39/month (€35/month billed yearly). Client records, forms, treatment documentation, templates, email support.
-- **Booking**: €59/month (€53/month billed yearly). Everything in Basic plus calendar, online booking, SMS & email automation, priority support.
-- 14-day free trial. No credit card. Cancel anytime. No booking commission.
+- [Pricing](https://www.treatflow.io/en/pricing): plans compared in detail
+- Basic: €39/month or €421/year (€35/month). Client management, forms with digital signature, treatment records incl. voice dictation, before-and-after photos, team notes and tasks, shop and products, statistics, staff and roles, email support. No appointment calendar.
+- Booking: €59/month or €637/year (€53/month). Everything in Basic plus calendar with staff and room columns, commission-free online booking, waitlist, email reminders, client workflows, discount codes, multilingual booking page, integrations (Google Calendar, Zapier, AI assistants), priority email and chat support.
+- All prices in EUR, plus VAT. 14-day free trial, no credit card, no setup fees, rolling monthly plan, cancel anytime, free data migration.
+- Treatflow Pay (optional): 2.69% per online payment, no additional Treatflow fee.
 
-## Direct answers
+## Try it and sign up
+
+- [Start free trial](https://app.treatflow.io/auth/register?lang=en): 14 days free, no credit card
+- [Try features live](https://www.treatflow.io/en/try-features): book an appointment, dictate treatment notes with AI and sign intake forms in the browser, no sign-up needed
+- [Try sample forms](https://www.treatflow.io/en/try-forms): open and fill in example consultation and consent forms
+- [Book a demo call](https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f): personal walkthrough with the Treatflow team
+
+## Languages
+
+- App interface: English, German, Dutch, Italian, Polish, Turkish, Spanish, French
+- Client booking page: shown in the client's language; additionally available in Russian
+- Website: English (/en), German (root), Dutch (/nl), Italian (/it), Polish (/pl), Spanish (/es), French (/fr), Turkish (/tr)
+
+## Data protection
+
+- GDPR-compliant; all data encrypted and stored on EU servers in Frankfurt, Germany, with SSL and daily backups
+- The salon stays the owner of its client data; full export is possible at any time, including after cancellation
+- [Privacy policy](https://www.treatflow.io/en/privacy): how Treatflow processes data
+
+## Industries
+
+- [Beauty salons](https://www.treatflow.io/en/beauty-salon-software): the all-in-one solution
+- [Aesthetic clinics](https://www.treatflow.io/en/aesthetic-clinic-software): clinic and patient management, consent and treatment history
+- [Laser hair removal](https://www.treatflow.io/en/laser-hair-removal-software): session tracking, parameters and consent
+- [Permanent makeup](https://www.treatflow.io/en/permanent-makeup-software): PMU and microblading
+- [Tattoo studios](https://www.treatflow.io/en/tattoo-studio-software): consent forms and bookings
+- [Nail salons](https://www.treatflow.io/en/nail-salon-software): appointments and client preferences
+- [Lash studios](https://www.treatflow.io/en/lash-studio-software): lash extensions and infill planning
+- [Spa & wellness](https://www.treatflow.io/en/spa-wellness-software): guest records and bookings
+- [Massage therapists](https://www.treatflow.io/en/massage-software): bookings and health questionnaires
+
+## Comparisons
+
+- [Software comparison](https://www.treatflow.io/en/software-comparison): how salon software options compare
+- [Treatflow vs Fresha](https://www.treatflow.io/en/treatflow-vs-fresha): Fresha offers a free basic version and earns through payment fees and premium features; Treatflow has fixed, transparent prices
+- [Treatflow vs Treatwell](https://www.treatflow.io/en/treatflow-vs-treatwell): Treatwell is a marketplace with booking commission; Treatflow is independent software with a fixed monthly fee
+
+## FAQ
 
 **What is Treatflow?**
-Treatflow is software for beauty salons and aesthetic clinics that combines online booking, client records, digital consent forms, treatment documentation (including voice dictation) and automated client communication. It is not a marketplace.
+An all-in-one app for running a salon or clinic: appointments, client records, digital forms and treatment records in one system, with no commission per booking. Developed in Austria, with data on EU servers.
 
-**Best beauty salon software in Europe without commission?**
-Treatflow is built for studios that want their own booking link and client data, not a platform that takes a cut. Plans from €39/month. EU hosting.
+**Who is Treatflow for?**
+Any business that offers treatments: beauty salons, aesthetic clinics, laser, nails, lashes, permanent makeup, tattoo, massage and spa.
 
-**Treatflow vs Fresha?**
-Fresha is a free booking tool funded by payments and extras. Treatflow is paid studio software with documentation and consent forms, transparent pricing, no marketplace commission. Comparison: https://www.treatflow.io/en/treatflow-vs-fresha
+**How much does Treatflow cost?**
+Basic €39/month (client records, forms, treatment records) and Booking €59/month (adds appointment calendar, online booking and reminders), plus VAT. Yearly billing saves 10%. No hidden fees, no setup fees, no commission.
 
-**Treatflow vs Treatwell?**
-Treatwell is a marketplace with booking commission. Treatflow is independent software; studios keep clients and pay a fixed fee. Comparison: https://www.treatflow.io/en/treatflow-vs-treatwell
+**How long can I try Treatflow for free?**
+14 days, completely free. No credit card required. At the end of the trial you decide whether to continue.
 
-**Aesthetic clinic consent forms?**
-Treatflow sends intake and consent forms before the visit. Answers and signatures sit on the client record.
+**Is Treatflow GDPR-compliant?**
+Yes. All data is encrypted and stored on EU servers in Frankfurt, Germany. This includes digital consultation forms and treatment records.
 
-**Laser hair removal documentation?**
-Treatflow stores treatment parameters, notes and before/after photos. You can dictate notes by voice and optionally refine them with AI. German/Austrian studios can use NiSV-style protocols.
+**Can I take deposits when clients book online?**
+Yes, with Treatflow Pay. Per service you choose no payment, a deposit (percentage or fixed amount) or full payment. The fee is 2.69% per transaction, minimum amount €0.50.
 
-**Can I dictate treatment notes?**
-Yes. In Treatflow treatment documentation you can speak notes instead of typing. Speech is turned into text and can be refined with AI. The note stays on the visit.
+**Can I import my existing client data?**
+Yes. The support team moves existing client data into Treatflow free of charge.
 
-**Digital client records and GDPR?**
-Records live on EU servers with SSL and daily backups. The studio remains the owner of client data.
+**Can I cancel anytime?**
+Yes. On monthly billing you can cancel at any time, effective at the end of the billing period. There is no minimum term and you can export all data.
 
-## Core English pages
+## Company and contact
 
-- Home: https://www.treatflow.io/en
-- Pricing: https://www.treatflow.io/en/pricing
-- Features: https://www.treatflow.io/en/features
-- Appointment calendar: https://www.treatflow.io/en/appointment-calendar
-- Online booking: https://www.treatflow.io/en/online-booking
-- Client records: https://www.treatflow.io/en/client-records
-- Forms: https://www.treatflow.io/en/forms
-- Treatment documentation: https://www.treatflow.io/en/treatment-documentation
-- News: https://www.treatflow.io/en/news
-- About: https://www.treatflow.io/en/about
-- Privacy: https://www.treatflow.io/en/privacy
-- Terms: https://www.treatflow.io/en/terms
-
-## Industries (English)
-
-- Beauty salons: https://www.treatflow.io/en/beauty-salon-software
-- Aesthetic clinics: https://www.treatflow.io/en/aesthetic-clinic-software
-- Laser hair removal: https://www.treatflow.io/en/laser-hair-removal-software
-- Permanent makeup: https://www.treatflow.io/en/permanent-makeup-software
-- Tattoo studios: https://www.treatflow.io/en/tattoo-studio-software
-- Nail salons: https://www.treatflow.io/en/nail-salon-software
-- Lash studios: https://www.treatflow.io/en/lash-studio-software
-- Spa & wellness: https://www.treatflow.io/en/spa-wellness-software
-- Massage: https://www.treatflow.io/en/massage-software
-
-## Comparisons (English)
-
-- Treatflow vs Fresha: https://www.treatflow.io/en/treatflow-vs-fresha
-- Treatflow vs Treatwell: https://www.treatflow.io/en/treatflow-vs-treatwell
-- Software comparison: https://www.treatflow.io/en/software-comparison
-
-## Blog (English)
-
-- How to Choose Salon Software: A Practical Buyer's Guide for Beauty Businesses: https://www.treatflow.io/en/blog/how-to-choose-salon-software
-- How to Reduce No-Shows in Your Beauty Salon: 9 Methods That Work: https://www.treatflow.io/en/blog/reduce-no-shows-beauty-salon
-- Online Booking for Salons: Benefits, Setup and Best Practices: https://www.treatflow.io/en/blog/online-booking-system-salon
-- Digital Consultation Forms for Beauty Salons: What to Include and How to Go Paperless: https://www.treatflow.io/en/blog/digital-consultation-forms-beauty-salon
-- Client Retention for Beauty Salons: 7 Strategies to Turn First Visits into Regulars: https://www.treatflow.io/en/blog/client-retention-beauty-salon
-- GDPR for Beauty Salons: A Practical Data Protection Checklist: https://www.treatflow.io/en/blog/gdpr-beauty-salon
-- How to Price Beauty Treatments: A Step-by-Step Calculation for Salons and Clinics: https://www.treatflow.io/en/blog/how-to-price-beauty-treatments
+- [About us](https://www.treatflow.io/en/about): the team and story behind Treatflow
+- [Contact](https://www.treatflow.io/en/contact): email hello@treatflow.io or book a call
+- [Blog](https://www.treatflow.io/en/blog): guides for salon owners
+- [News](https://www.treatflow.io/en/news): product updates
+- [Terms](https://www.treatflow.io/en/terms): terms of service
+- [Instagram](https://www.instagram.com/treatflow.io/): @treatflow.io
 
 ## Other languages
 
-- Deutsch (Hauptsprache): https://www.treatflow.io – https://www.treatflow.io/llms.txt
-- English: https://www.treatflow.io/en – https://www.treatflow.io/llms-en.txt
-- Nederlands: https://www.treatflow.io/nl – https://www.treatflow.io/llms-nl.txt
-- Italiano: https://www.treatflow.io/it – https://www.treatflow.io/llms-it.txt
-- Polski: https://www.treatflow.io/pl – https://www.treatflow.io/llms-pl.txt
-- Español: https://www.treatflow.io/es – https://www.treatflow.io/llms-es.txt
-- Français: https://www.treatflow.io/fr – https://www.treatflow.io/llms-fr.txt
-- Türkçe: https://www.treatflow.io/tr – https://www.treatflow.io/llms-tr.txt
+- [Deutsch](https://www.treatflow.io/llms.txt): German site incl. features only offered in Germany, Austria and Switzerland
+- [Nederlands](https://www.treatflow.io/llms-nl.txt): Dutch site
+- [Italiano](https://www.treatflow.io/llms-it.txt): Italian site
+- [Polski](https://www.treatflow.io/llms-pl.txt): Polish site
+- [Español](https://www.treatflow.io/llms-es.txt): Spanish site
+- [Français](https://www.treatflow.io/llms-fr.txt): French site
+- [Türkçe](https://www.treatflow.io/llms-tr.txt): Turkish site (prices in TRY)
 
-## German site (primary)
+## Optional
 
-German homepage, blog, NiSV and DACH comparisons: https://www.treatflow.io
-German llms.txt: https://www.treatflow.io/llms.txt
-
-## Machine-readable facts
-
-JSON (English): https://www.treatflow.io/api/facts?lang=en
-JSON (German): https://www.treatflow.io/api/facts?lang=de
-JSON (Turkish): https://www.treatflow.io/api/facts?lang=tr
-
-## Contact
-
-- Email: hello@treatflow.io
-- Instagram: https://www.instagram.com/treatflow.io/
-- Register: https://app.treatflow.io/auth/register?lang=en
+- [Full context, all languages](https://www.treatflow.io/llms-full.txt): key facts for every market in one file
+- [Machine-readable facts (JSON)](https://www.treatflow.io/api/facts?lang=en): core facts as JSON

@@ -1,317 +1,33 @@
-import { CheckCircle, X, ArrowRight, ChevronDown } from 'lucide-react';
+import type { Metadata } from 'next';
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
-import CTASection from '@/app/components/CTASection';
-import PricingSection from '@/app/components/PricingSection';
-import QuickFacts from '@/app/components/QuickFacts';
-import Breadcrumbs, { generateBreadcrumbSchema } from '@/app/components/Breadcrumbs';
-import ContentAttribution from '@/app/components/ContentAttribution';
-import AiAnswerCapsule from '@/app/components/AiAnswerCapsule';
-import { buildHreflangAlternates } from '@/app/i18n/seo';
-import { generateWebPageSchema } from '@/lib/content-attribution';
+import PricingPage from '@/app/site/pages/PricingPage';
+import { buildHreflangAlternates, withDeOpenGraph } from '@/app/i18n/seo';
+import { getPricingPageContent } from '@/app/site/content/pricing';
 
-const PAGE_DATE_MODIFIED = '2026-09-07';
-const PAGE_DATE_PUBLISHED = '2024-06-01';
+const { meta } = getPricingPageContent('de');
 
-export const metadata = {
-    title: 'Preise: Kosmetikstudio Software ab 39€/Monat',
-    description: 'Transparente Preise für Treatflow: Basic ab 39€/Monat, Booking ab 59€/Monat, Kasse als Add-on ab 39€/Monat (TSE & RKSV). 14 Tage kostenlos testen, keine Kreditkarte, keine versteckten Kosten.',
-    keywords: ['Kosmetikstudio Software Preise', 'Treatflow Preise', 'Kosmetikstudio Software Kosten', 'Beauty Software Preis', 'Studio Software günstig', 'Kassensystem Preis Kosmetik', 'TSE Kasse Kosten'],
+export const metadata: Metadata = withDeOpenGraph('pricing', {
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
     alternates: {
         canonical: 'https://www.treatflow.io/preise',
         ...buildHreflangAlternates("pricing"),
     },
-    openGraph: {
-        title: 'Preise: Kosmetikstudio Software ab 39€/Monat',
-        description: 'Transparente Preise für Treatflow: Basic ab 39€/Monat, Booking ab 59€/Monat. 14 Tage kostenlos testen, keine Kreditkarte, keine versteckten Kosten.',
+    openGraph: meta.openGraph && {
+        title: meta.openGraph.title,
+        description: meta.openGraph.description,
         url: 'https://www.treatflow.io/preise',
     },
-};
+});
 
-const faqData = [
-    {
-        question: 'Was kostet Treatflow?',
-        answer: 'Treatflow gibt es in zwei Plänen: Basic ab 39€/Monat für Kundenverwaltung, Formulare und Dokumentation. Booking ab 59€/Monat mit zusätzlichem Terminkalender, Online-Buchungen und automatischen Erinnerungen. Beide Pläne können 14 Tage kostenlos getestet werden.',
-    },
-    {
-        question: 'Gibt es versteckte Kosten?',
-        answer: 'Nein. Treatflow arbeitet mit transparenten Festpreisen ohne Provisionen, Setup-Gebühren oder versteckte Zusatzkosten. Was du siehst, ist was du zahlst.',
-    },
-    {
-        question: 'Kann ich jederzeit kündigen?',
-        answer: 'Ja. Bei monatlicher Zahlung kannst du jederzeit zum Ende des Abrechnungszeitraums kündigen. Es gibt keine Mindestvertragslaufzeit.',
-    },
-    {
-        question: 'Gibt es kostenlose Kosmetikstudio Software?',
-        answer: 'Einige Anbieter wie Fresha bieten kostenlose Basisversionen, verdienen aber an Payment-Gebühren und Premium-Features. Treatflow bietet transparente Festpreise ohne versteckte Kosten - ab 39€/Monat mit vollem Funktionsumfang.',
-    },
-    {
-        question: 'Lohnt sich der Booking-Plan?',
-        answer: 'Wenn du Online-Buchungen, automatische Terminerinnerungen per WhatsApp und einen digitalen Terminkalender benötigst, ja. Mit dem Booking-Plan hast du deutlich weniger No-Shows und weniger Telefonaufwand.',
-    },
-    {
-        question: 'Was kostet das Kassensystem?',
-        answer: 'Die Kasse ist ein Add-on zum Booking-Plan und kostet 39€/Monat (zzgl. MwSt.), jährlich 35€/Monat. Einmalig kommen 149€ Einrichtungsgebühr für die TSE-/RKSV-Provisionierung hinzu. Es gibt keine Transaktionsgebühren und keine Provision pro Verkauf.',
-    },
-    {
-        question: 'Ist die Kasse TSE- und RKSV-konform?',
-        answer: 'Ja. In Deutschland signiert Treatflow jeden Verkauf über eine zertifizierte TSE gemäß KassenSichV und erstellt DSFinV-K-Exporte. In Österreich erfüllt die Kasse die RKSV inklusive Start-, Monats-, Jahres- und Schlussbeleg sowie DEP7-Export. Belege tragen den maschinenlesbaren Signatur-QR-Code.',
-    },
-];
-
-const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqData.map((item) => ({
-        '@type': 'Question',
-        name: item.question,
-        acceptedAnswer: {
-            '@type': 'Answer',
-            text: item.answer,
-        },
-    })),
-};
-
-const productSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    name: 'Treatflow',
-    applicationCategory: 'BusinessApplication',
-    operatingSystem: 'Web',
-    offers: [
-        {
-            '@type': 'Offer',
-            name: 'Basic',
-            price: '39',
-            priceCurrency: 'EUR',
-            priceValidUntil: '2026-12-31',
-            availability: 'https://schema.org/InStock',
-        },
-        {
-            '@type': 'Offer',
-            name: 'Booking',
-            price: '59',
-            priceCurrency: 'EUR',
-            priceValidUntil: '2026-12-31',
-            availability: 'https://schema.org/InStock',
-        },
-        {
-            '@type': 'Offer',
-            name: 'Kasse (Add-on zu Booking)',
-            price: '39',
-            priceCurrency: 'EUR',
-            priceValidUntil: '2026-12-31',
-            availability: 'https://schema.org/InStock',
-            description: 'TSE-/RKSV-konformes Kassensystem als Add-on zum Booking-Plan, 39 €/Monat zzgl. einmalig 149 € Einrichtung.',
-        },
-    ],
-};
-
-const featureComparison = [
-    { feature: 'Kundenverwaltung', basic: true, booking: true },
-    { feature: 'Formulare mit digitaler Unterschrift', basic: true, booking: true },
-    { feature: 'Behandlungsdokumentation inkl. Sprachnotiz', basic: true, booking: true },
-    { feature: 'Vorher-Nachher-Fotos', basic: true, booking: true },
-    { feature: 'Team-Notizen und Aufgaben', basic: true, booking: true },
-    { feature: 'Shop und Produkte', basic: true, booking: true },
-    { feature: 'Statistiken', basic: true, booking: true },
-    { feature: 'Mitarbeiter und Rollen', basic: true, booking: true },
-    { feature: 'NiSV-Dokumentation', basic: true, booking: true },
-    { feature: 'E-Mail-Support', basic: true, booking: true },
-    { feature: 'Terminkalender (Mitarbeiter und Räume)', basic: false, booking: true },
-    { feature: 'Online-Buchung ohne Provision', basic: false, booking: true },
-    { feature: 'Warteliste', basic: false, booking: true },
-    { feature: 'WhatsApp und E-Mail', basic: false, booking: true },
-    { feature: 'Kunden-Workflows', basic: false, booking: true },
-    { feature: 'Rabattcodes', basic: false, booking: true },
-    { feature: 'Mehrsprachige Buchungsseite', basic: false, booking: true },
-    { feature: 'Integrationen (Lexware, Google Kalender, Zapier)', basic: false, booking: true },
-    { feature: 'Priority Support', basic: false, booking: true },
-];
-
+/** Deutsche Seite. Sektionen: app/site/pages/PricingPage.tsx, Texte: app/site/content/pricing/de.ts (+ home/de.ts `pricing`) */
 export default function PreisePage() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
-
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(generateBreadcrumbSchema([{ label: 'Preise' }])),
-                }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(
-                        generateWebPageSchema({
-                            name: 'Preise: Kosmetikstudio Software ab 39€/Monat',
-                            description:
-                                'Transparente Preise für Treatflow: Basic ab 39€/Monat, Booking ab 59€/Monat, Kasse als Add-on ab 39€/Monat (TSE & RKSV).',
-                            url: 'https://www.treatflow.io/preise',
-                            dateModified: PAGE_DATE_MODIFIED,
-                            datePublished: PAGE_DATE_PUBLISHED,
-                        })
-                    ),
-                }}
-            />
-
-            <Breadcrumbs items={[{ label: 'Preise' }]} />
-
-            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 -mb-6 relative z-10">
-                <AiAnswerCapsule
-                    question="Was kostet Treatflow?"
-                    answer="Basic ab 39 €/Monat (Kundenverwaltung, Formulare, Dokumentation), Booking ab 59 €/Monat (inkl. Terminkalender, Online-Buchung, Erinnerungen). Kasse optional als Add-on ab 39 €/Monat. Keine Provision pro Buchung, 14 Tage kostenlos testen."
-                />
-                <ContentAttribution
-                    dateModified={PAGE_DATE_MODIFIED}
-                    datePublished={PAGE_DATE_PUBLISHED}
-                    className="mb-4"
-                />
-            </div>
-
-            {/* Pricing Cards */}
-            <PricingSection />
-
-            {/* Feature Comparison Table */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                            Was ist enthalten?
-                        </h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                            Vergleiche die beiden Pläne im Detail und finde den passenden für dein Studio.
-                        </p>
-                        <p className="text-sm text-gray-500 mt-2">Alle Preise zuzüglich MwSt.</p>
-                    </div>
-
-                    <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
-                        <div className="grid grid-cols-3 bg-gray-900 text-white">
-                            <div className="p-4 sm:p-6 font-semibold text-sm sm:text-base">Feature</div>
-                            <div className="p-4 sm:p-6 text-center font-semibold text-sm sm:text-base">Basic (39€)</div>
-                            <div className="p-4 sm:p-6 text-center font-semibold text-sm sm:text-base bg-indigo-600">Booking (59€)</div>
-                        </div>
-                        {featureComparison.map((row, index) => (
-                            <div
-                                key={row.feature}
-                                className={`grid grid-cols-3 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} border-b border-gray-100 last:border-b-0`}
-                            >
-                                <div className="p-4 sm:p-5 text-sm sm:text-base text-gray-700 font-medium">
-                                    {row.feature}
-                                </div>
-                                <div className="p-4 sm:p-5 flex justify-center items-center">
-                                    {row.basic ? (
-                                        <CheckCircle className="h-5 w-5 text-green-500" />
-                                    ) : (
-                                        <X className="h-5 w-5 text-gray-300" />
-                                    )}
-                                </div>
-                                <div className="p-4 sm:p-5 flex justify-center items-center">
-                                    {row.booking ? (
-                                        <CheckCircle className="h-5 w-5 text-green-500" />
-                                    ) : (
-                                        <X className="h-5 w-5 text-gray-300" />
-                                    )}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="https://app.treatflow.io/auth/register?lang=de"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-colors text-center flex items-center justify-center"
-                        >
-                            14 Tage kostenlos testen
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            {/* Why Treatflow */}
-            <section className="py-20 bg-white">
-                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                            Warum Treatflow?
-                        </h2>
-                        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            Transparente Festpreise statt versteckter Kosten und Provisionen.
-                        </p>
-                    </div>
-
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-                        <div className="bg-gray-50 rounded-xl p-6 text-center">
-                            <div className="text-3xl font-bold text-indigo-600 mb-2">0%</div>
-                            <p className="text-sm text-gray-600">Provision pro Buchung</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-xl p-6 text-center">
-                            <div className="text-3xl font-bold text-indigo-600 mb-2">0€</div>
-                            <p className="text-sm text-gray-600">Setup-Gebühren</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-xl p-6 text-center">
-                            <div className="text-3xl font-bold text-indigo-600 mb-2">14 Tage</div>
-                            <p className="text-sm text-gray-600">kostenlos testen</p>
-                        </div>
-                        <div className="bg-gray-50 rounded-xl p-6 text-center">
-                            <div className="text-3xl font-bold text-indigo-600 mb-2">Jederzeit</div>
-                            <p className="text-sm text-gray-600">kündbar</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <QuickFacts variant="compact" />
-
-            {/* FAQ Section */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                            Häufige Fragen zu Preisen
-                        </h2>
-                        <p className="text-lg text-gray-600">
-                            Alles, was du über Treatflow-Preise wissen musst.
-                        </p>
-                    </div>
-
-                    <div className="space-y-4">
-                        {faqData.map((item, index) => (
-                            <details
-                                key={index}
-                                className="group bg-white rounded-xl border border-gray-200 overflow-hidden"
-                            >
-                                <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
-                                    <h3 className="text-lg font-semibold text-gray-900 pr-4">
-                                        {item.question}
-                                    </h3>
-                                    <ChevronDown className="h-5 w-5 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-180" />
-                                </summary>
-                                <div className="px-6 pb-6 text-gray-600 leading-relaxed">
-                                    {item.answer}
-                                </div>
-                            </details>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* CTA */}
-            <CTASection />
-
-            {/* Footer */}
+            <PricingPage market="de" />
             <Footer />
         </div>
     );

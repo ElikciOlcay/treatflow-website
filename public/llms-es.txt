@@ -1,110 +1,120 @@
 # Treatflow
 
-> Treatflow es una plataforma de gestión todo en uno para centros de estética, salones de belleza, clínicas de medicina estética, centros de depilación láser y negocios de tratamientos. Reúne reservas online, fichas de clientes, fichas de anamnesis y consentimientos digitales, documentación de tratamientos con dictado por voz, fotos de antes y después y comunicación automática con las clientas. Hecho en Austria. Alojado en la UE (Frankfurt). Desde 39 €/mes. Prueba gratuita de 14 días en todo el mundo, sin tarjeta de crédito.
+> Treatflow es el software de gestión todo en uno para centros de estética, salones de belleza, clínicas estéticas y otros negocios que realizan tratamientos (depilación láser, uñas, pestañas, micropigmentación, tatuaje, spa, masajes). Reúne agenda de citas, reservas online sin comisiones, fichas de cliente, anamnesis y consentimientos digitales, documentación de tratamientos con notas de voz, recordatorios por email, flujos de clientes y Treatflow Pay para cobrar señales online. Desarrollado en Austria, datos en servidores de la UE en Fráncfort, cumple el RGPD. Basic 39 €/mes, Booking 59 €/mes (IVA no incluido), 14 días gratis, sin tarjeta de crédito, sin comisión por reserva.
+
+Última actualización: 2026-11-05. Idioma: español. Este archivo describe la web en español (https://www.treatflow.io/es) y solo incluye funciones que se ofrecen fuera de Alemania, Austria y Suiza.
 
 ## Sobre Treatflow
 
-- Fundado por Olcay y Gökce Elikci en Bischofshofen, Austria (2023)
-- Más de 500 centros
-- 4,6/5 en Google (19 reseñas)
-- Para: centros de estética y salones de belleza, salones de uñas, estudios de pestañas, micropigmentación (maquillaje permanente), depilación láser, estudios de tatuaje, spa y wellness, masajes, clínicas de medicina estética
-- Idiomas de la web: alemán (mercado principal), inglés (`/en`), español (`/es`), turco (`/tr`), neerlandés (`/nl`), italiano (`/it`), polaco (`/pl`), francés (`/fr`)
-- Registro: https://app.treatflow.io/auth/register?lang=en
-- Alojamiento: servidores en la UE, preparado para el RGPD
+- Empresa: Treatflow GmbH, fundada en 2023 por Olcay y Gökce Elikci en Bischofshofen (Austria)
+- Ya lo han probado más de 500 centros y clínicas; 4,6/5 en Google (19 opiniones)
+- Para: centros de estética, clínicas estéticas, depilación láser e IPL, salones de uñas, estudios de pestañas, micropigmentación, estudios de tatuaje, spa y wellness, centros de masaje
+- No es un marketplace: el centro usa su propio enlace de reservas y los datos de sus clientes son suyos
+- Funciona en el navegador, en ordenador, tablet y móvil; no hay que instalar nada
+
+## Funciones principales
+
+- [Agenda de citas](https://www.treatflow.io/es/calendario-citas): vista por día, semana y mes con columnas por profesional y cabina
+- [Reservas online](https://www.treatflow.io/es/reservas-online): tu enlace de reservas, 24/7, sin comisión por reserva
+- [Fichas de cliente](https://www.treatflow.io/es/fichas-clientes): datos, historial de tratamientos, notas y fotos
+- [Formularios](https://www.treatflow.io/es/formularios): anamnesis y consentimientos digitales con firma digital, rellenados antes de la cita desde un enlace; marketplace de formularios y generador con IA
+- [Documentación de tratamientos](https://www.treatflow.io/es/documentacion-tratamientos): notas, parámetros y fotos de antes y después por tratamiento, también con notas de voz
+- [Recordatorios](https://www.treatflow.io/es/mensajeria): recordatorios automáticos por email que reducen los plantones
+- [Flujos de clientes](https://www.treatflow.io/es/flujos-clientes): seguimientos automáticos paso a paso y recuperación de clientes inactivos
+- [Treatflow Pay](https://www.treatflow.io/es/treatflow-pay): tus clientes pagan una señal o el precio completo al reservar online; configurable por servicio; 2,69 % por transacción
+- [Tienda](https://www.treatflow.io/es/tienda): venta de productos e inventario
+- [Integraciones](https://www.treatflow.io/es/integraciones): Google Calendar, Zapier y asistentes de IA
+- [Web del centro](https://www.treatflow.io/es/web-para-salones): una web a medida para tu centro, adaptada al móvil y pensada para las reservas
+- [Todas las funciones](https://www.treatflow.io/es/funciones): resumen de todas las funciones
 
 ## Precios
 
-- **Basic**: 39 €/mes (35 €/mes con pago anual). Fichas de clientes, formularios, documentación de tratamientos, plantillas, soporte por email.
-- **Booking**: 59 €/mes (53 €/mes con pago anual). Todo lo de Basic más calendario, reservas online, automatización de SMS y email, soporte prioritario.
-- Prueba gratuita de 14 días. Sin tarjeta de crédito. Cancela cuando quieras. Sin comisión por reserva.
+- [Precios](https://www.treatflow.io/es/precios): comparativa detallada de los planes
+- Basic: 39 €/mes o 421 €/año (35 €/mes). Fichas de cliente, formularios con firma digital, documentación de tratamientos y notas de voz, fotos de antes y después, notas y tareas para el equipo, tienda y productos, informes, empleados y roles, soporte por email. Sin agenda de citas.
+- Booking: 59 €/mes o 637 €/año (53 €/mes). Todo lo del plan Basic más agenda con columnas por profesional y cabina, reservas online sin comisiones, lista de espera, recordatorios por email, flujos de clientes, códigos de descuento, página de reservas en varios idiomas, integraciones (Google Calendar, Zapier, asistentes de IA), soporte prioritario por email y chat.
+- Precios en euros, IVA no incluido. 14 días gratis, sin tarjeta de crédito, sin cuota de alta, sin permanencia, migración de datos gratuita.
+- Treatflow Pay (opcional): 2,69 % por pago online.
 
-## Respuestas directas
+## Pruébalo y regístrate
+
+- [Prueba gratis](https://app.treatflow.io/auth/register?lang=es): 14 días gratis, sin tarjeta de crédito
+- [Prueba las funciones en directo](https://www.treatflow.io/es/probar-funciones): reserva una cita online y documenta un tratamiento dictándolo con IA, sin registro
+- [Reserva una demo](https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f): presentación personal con el equipo de Treatflow
+
+## Idiomas
+
+- App: español, inglés, alemán, neerlandés, italiano, polaco, turco, francés
+- Página de reservas para clientes: en el idioma del cliente; además, también en ruso
+- Web: español (/es), alemán, inglés (/en), neerlandés (/nl), italiano (/it), polaco (/pl), francés (/fr), turco (/tr)
+
+## Protección de datos
+
+- Cumple el RGPD; todos los datos se cifran y se alojan en servidores de la UE en Fráncfort (Alemania), con SSL y copias de seguridad diarias
+- Los datos de los clientes son del centro; se pueden exportar en cualquier momento, también tras cancelar
+- [Política de privacidad](https://www.treatflow.io/es/privacidad): cómo trata Treatflow los datos
+
+## Sectores
+
+- [Centros de estética](https://www.treatflow.io/es/software-salon-belleza): la solución todo en uno
+- [Clínicas estéticas](https://www.treatflow.io/es/software-clinica-estetica): gestión de clínica y pacientes
+- [Depilación láser](https://www.treatflow.io/es/software-depilacion-laser): sesiones y consentimientos
+- [Micropigmentación](https://www.treatflow.io/es/software-maquillaje-permanente): PMU y microblading
+- [Estudios de tatuaje](https://www.treatflow.io/es/software-estudio-tatuajes): consentimientos y reservas
+- [Salones de uñas](https://www.treatflow.io/es/software-salon-unas): citas y preferencias de cada cliente
+- [Estudios de pestañas](https://www.treatflow.io/es/software-extension-pestanas): extensiones y retoques planificados
+- [Spa y wellness](https://www.treatflow.io/es/software-spa-wellness): gestión de clientes y reservas
+- [Centros de masaje](https://www.treatflow.io/es/software-masajes): reservas y cuestionarios de salud
+
+## Comparativas
+
+- [Comparativa de software](https://www.treatflow.io/es/comparativa-software): programas para centros de estética, frente a frente
+- [Treatflow vs Fresha](https://www.treatflow.io/es/treatflow-vs-fresha): Fresha ofrece una versión básica gratuita y gana dinero con comisiones de pago y funciones premium; Treatflow tiene precios fijos y transparentes
+- [Treatflow vs Treatwell](https://www.treatflow.io/es/treatflow-vs-treatwell): Treatwell es un marketplace que cobra comisión por reserva; Treatflow es software independiente con una cuota mensual fija
+
+## Preguntas frecuentes
 
 **¿Qué es Treatflow?**
-Treatflow es un software para centros de estética y clínicas de medicina estética que combina reservas online, fichas de clientes, consentimientos digitales, documentación de tratamientos (incluido el dictado por voz) y comunicación automática con las clientas. No es un marketplace.
+Una app todo en uno para el día a día de tu centro: citas, fichas de cliente, formularios digitales y documentación de tratamientos en un solo sistema y sin comisión por reserva. Desarrollado en Austria, con los datos en servidores de la UE.
 
-**¿Cuál es el mejor software para centros de estética en Europa sin comisiones?**
-Treatflow está pensado para centros que quieren su propio enlace de reservas y sus propios datos de clientas, no una plataforma que se quede con una parte. Planes desde 39 €/mes. Alojamiento en la UE.
+**¿Para quién es Treatflow?**
+Para cualquier centro que realice tratamientos: estética y medicina estética, láser, uñas, pestañas, micropigmentación, masajes y spa.
 
-**¿Treatflow o Fresha?**
-Fresha es una herramienta de reservas gratuita que se financia con pagos y extras. Treatflow es un software de gestión de pago, con documentación y consentimientos, precios transparentes y sin comisión de marketplace. Comparativa: https://www.treatflow.io/es/treatflow-vs-fresha
+**¿Cuánto cuesta Treatflow?**
+Basic 39 €/mes (fichas de cliente, formularios, documentación) y Booking 59 €/mes (añade agenda de citas, reservas online y recordatorios), IVA no incluido. Con el pago anual ahorras un 10 %. Sin costes ocultos, sin cuota de alta y sin comisiones.
 
-**¿Treatflow o Treatwell?**
-Treatwell es un marketplace con comisión por reserva. Treatflow es un software independiente: el centro conserva a sus clientas y paga una cuota fija. Comparativa: https://www.treatflow.io/es/treatflow-vs-treatwell
+**¿Cuánto tiempo puedo probar Treatflow gratis?**
+14 días, gratis y sin tarjeta de crédito. Cuando termine la prueba, tú decides si sigues.
 
-**¿Consentimientos informados para clínicas de medicina estética?**
-Treatflow envía la ficha de anamnesis y el consentimiento antes de la cita. Las respuestas y las firmas quedan guardadas en la ficha de la clienta.
+**¿Treatflow cumple el RGPD?**
+Sí. Todos los datos se cifran y se alojan en servidores de la UE, en Fráncfort (Alemania). Esto incluye las fichas de anamnesis digitales y la documentación de tratamientos.
 
-**¿Documentación de depilación láser?**
-Treatflow guarda los parámetros del tratamiento, notas y fotos de antes y después. Puedes dictar las notas por voz y, si quieres, mejorarlas con IA.
+**¿Puedo cobrar una señal al reservar online?**
+Sí, con Treatflow Pay. Para cada servicio eliges sin pago, señal o pago completo. La tarifa es del 2,69 % por transacción.
 
-**¿Puedo dictar las notas del tratamiento?**
-Sí. En la documentación de tratamientos de Treatflow puedes hablar en lugar de escribir. La voz se convierte en texto y puede mejorarse con IA. La nota queda guardada en la visita.
+**¿Puedo importar mis datos de clientes actuales?**
+Sí, y la migración es gratuita. Nuestro equipo de soporte traspasa tus datos de forma segura a tus fichas de cliente digitales.
 
-**¿Fichas de clientes digitales y RGPD?**
-Las fichas se guardan en servidores de la UE con SSL y copias de seguridad diarias. El centro sigue siendo el propietario de los datos de sus clientas.
+**¿Puedo cancelar cuando quiera?**
+Sí. Con el pago mensual puedes cancelar en cualquier momento, con efecto al final del periodo de facturación. Sin permanencia, y puedes exportar todos tus datos.
 
-## Páginas principales en español
+## Empresa y contacto
 
-- Inicio: https://www.treatflow.io/es
-- Precios: https://www.treatflow.io/es/precios
-- Funciones: https://www.treatflow.io/es/funciones
-- Calendario de citas: https://www.treatflow.io/es/calendario-citas
-- Reservas online: https://www.treatflow.io/es/reservas-online
-- Fichas de clientes: https://www.treatflow.io/es/fichas-clientes
-- Formularios y consentimientos: https://www.treatflow.io/es/formularios
-- Documentación de tratamientos: https://www.treatflow.io/es/documentacion-tratamientos
-- Mensajería y recordatorios: https://www.treatflow.io/es/mensajeria
-- Sobre nosotros: https://www.treatflow.io/es/sobre-nosotros
-- Contacto: https://www.treatflow.io/es/contacto
-- Privacidad: https://www.treatflow.io/es/privacidad
-- Términos: https://www.treatflow.io/es/terminos
-
-## Sectores (español)
-
-- Centros de estética y salones de belleza: https://www.treatflow.io/es/software-salon-belleza
-- Clínicas de medicina estética: https://www.treatflow.io/es/software-clinica-estetica
-- Depilación láser: https://www.treatflow.io/es/software-depilacion-laser
-- Micropigmentación / maquillaje permanente: https://www.treatflow.io/es/software-maquillaje-permanente
-- Estudios de tatuaje: https://www.treatflow.io/es/software-estudio-tatuajes
-- Salones de uñas: https://www.treatflow.io/es/software-salon-unas
-- Extensiones de pestañas: https://www.treatflow.io/es/software-extension-pestanas
-- Spa y wellness: https://www.treatflow.io/es/software-spa-wellness
-- Masajes: https://www.treatflow.io/es/software-masajes
-
-## Comparativas (español)
-
-- Treatflow vs Fresha: https://www.treatflow.io/es/treatflow-vs-fresha
-- Treatflow vs Treatwell: https://www.treatflow.io/es/treatflow-vs-treatwell
-- Comparativa de software: https://www.treatflow.io/es/comparativa-software
-
-## Blog (español)
-
-- Cómo elegir software para tu centro de estética: https://www.treatflow.io/es/blog/como-elegir-software-centro-estetica — Funciones imprescindibles, RGPD, coste total, marketplace frente a software propio y checklist para comparar.
-- Cómo reducir las citas perdidas (no-shows): https://www.treatflow.io/es/blog/reducir-citas-perdidas-centro-estetica — Recordatorios por email, SMS y WhatsApp, política de cancelación y cómo rellenar huecos libres.
-- Reservas online para tu centro de estética: https://www.treatflow.io/es/blog/reservas-online-centro-estetica — Ventajas, configuración paso a paso, qué servicios abrir online y dónde poner el enlace de reservas.
-- Ficha de cliente y consentimiento informado digital: https://www.treatflow.io/es/blog/ficha-cliente-digital-estetica — Qué preguntar según el tratamiento, consentimiento informado, firma digital y plazos de conservación.
-- Cómo fidelizar clientas en tu centro de estética: https://www.treatflow.io/es/blog/fidelizar-clientes-centro-estetica — Siete estrategias: próxima cita, mensajes automáticos, bonos, personalización y clientas inactivas.
-- RGPD y LOPDGDD en tu centro de estética: https://www.treatflow.io/es/blog/rgpd-centro-estetica — Datos de salud, documentos necesarios, fotos de antes y después, comunicaciones comerciales y brechas de seguridad.
-- Cómo calcular los precios de tu centro de estética: https://www.treatflow.io/es/blog/como-calcular-precios-centro-de-estetica — Coste por hora mínimo, tiempo, fungible y margen, competencia y una tarifa clara.
+- [Sobre nosotros](https://www.treatflow.io/es/sobre-nosotros): el equipo y la historia de Treatflow
+- [Contacto](https://www.treatflow.io/es/contacto): escribe a hello@treatflow.io o reserva una llamada
+- [Blog](https://www.treatflow.io/es/blog): artículos para dueños de centros de estética
+- [Condiciones del servicio](https://www.treatflow.io/es/terminos): términos de uso
+- [Instagram](https://www.instagram.com/treatflow.io/): @treatflow.io
 
 ## Otros idiomas
 
-- Web alemana (principal): https://www.treatflow.io
-- llms.txt en alemán: https://www.treatflow.io/llms.txt
-- llms.txt en inglés: https://www.treatflow.io/llms-en.txt
-- llms.txt en turco: https://www.treatflow.io/llms-tr.txt
-- Páginas en inglés: https://www.treatflow.io/en
-- Otras versiones: neerlandés https://www.treatflow.io/nl, italiano https://www.treatflow.io/it, polaco https://www.treatflow.io/pl, francés https://www.treatflow.io/fr
+- [Deutsch](https://www.treatflow.io/llms.txt): web alemana, incluidas las funciones que solo se ofrecen en Alemania, Austria y Suiza
+- [English](https://www.treatflow.io/llms-en.txt): web en inglés
+- [Nederlands](https://www.treatflow.io/llms-nl.txt): web en neerlandés
+- [Italiano](https://www.treatflow.io/llms-it.txt): web en italiano
+- [Polski](https://www.treatflow.io/llms-pl.txt): web en polaco
+- [Français](https://www.treatflow.io/llms-fr.txt): web en francés
+- [Türkçe](https://www.treatflow.io/llms-tr.txt): web en turco (precios en TRY)
 
-## Datos legibles por máquinas
+## Optional
 
-JSON (inglés): https://www.treatflow.io/api/facts?lang=en
-JSON (alemán): https://www.treatflow.io/api/facts?lang=de
-JSON (turco): https://www.treatflow.io/api/facts?lang=tr
-
-## Contacto
-
-- Email: hello@treatflow.io
-- Instagram: https://www.instagram.com/treatflow.io/
-- Registro: https://app.treatflow.io/auth/register?lang=en
+- [Contexto completo, todos los idiomas](https://www.treatflow.io/llms-full.txt): los datos clave de cada mercado en un solo archivo

@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
-import FeaturePageEn from "@/app/components/FeaturePageEn";
 import { buildPageMetadata } from "@/app/i18n/seo";
-import { getMarketExtraFeaturePage } from "@/app/i18n/markets/market-content";
 import { isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
+import MessagingPage from "@/app/site/pages/MessagingPage";
+import { getMessagingContent } from "@/app/site/content/messaging";
 
 export async function generateMetadata({
   params,
@@ -12,15 +12,17 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
-  const content = getMarketExtraFeaturePage(market, "messaging");
+  const { meta } = getMessagingContent(market);
   return buildPageMetadata({
     pageKey: "messaging",
     locale: market,
-    title: content.title,
-    description: content.subtitle,
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
   });
 }
 
+/** Gleiche Seite wie DE (ohne WhatsApp), Inhalte aus app/site/content/messaging/<lang>.ts */
 export default async function Page({
   params,
 }: {
@@ -29,5 +31,5 @@ export default async function Page({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
-  return <FeaturePageEn {...getMarketExtraFeaturePage(market, "messaging")} />;
+  return <MessagingPage market={market} />;
 }

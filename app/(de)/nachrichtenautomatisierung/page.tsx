@@ -1,217 +1,34 @@
-import { Clock, Heart, MessageCircle, Zap, Mail, Bell } from 'lucide-react';
+import type { Metadata } from 'next';
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
-import SocialProofBar from '@/app/components/SocialProofBar';
-import Script from 'next/script';
-import { generateBreadcrumbSchema } from '@/app/components/Breadcrumbs';
-import FeatureHero, { FeatureTitleHighlight } from '@/app/components/FeatureHero';
-import ProductVideoSection from '@/app/components/ProductVideoSection';
-import {
-    FeatureUnderstand,
-    FeatureHowItWorks,
-    FeatureCards,
-    FeatureFaq,
-    FeatureRelated,
-    FeaturePageCta,
-} from '@/app/components/FeatureSections';
-import { buildHreflangAlternates } from '@/app/i18n/seo';
-import { generateWebPageSchema } from '@/lib/content-attribution';
+import MessagingPage from '@/app/site/pages/MessagingPage';
+import { buildHreflangAlternates, withDeOpenGraph } from '@/app/i18n/seo';
+import { getMessagingContent } from '@/app/site/content/messaging';
 
-const PAGE_DATE_MODIFIED = '2026-09-07';
-const PAGE_DATE_PUBLISHED = '2024-06-01';
+const { meta } = getMessagingContent('de');
 
-export const metadata = {
-    title: 'WhatsApp & E-Mail Erinnerungen fürs Kosmetikstudio',
-    description: 'Automatische Nachrichten per WhatsApp und E-Mail für Kosmetikstudios: Terminbestätigungen, Erinnerungen, Stornierungen und Follow-ups.',
-    keywords: ['Nachrichtenautomatisierung Kosmetik', 'WhatsApp Terminerinnerung Kosmetikstudio', 'No-Show reduzieren Kosmetikstudio', 'Automatische Terminerinnerungen', 'WhatsApp Terminbestätigung', 'Follow-up E-Mails', 'Geburtstagswünsche automatisch', 'Kundenbindung Beauty Studio'],
+export const metadata: Metadata = withDeOpenGraph('messaging', {
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
     alternates: {
         canonical: 'https://www.treatflow.io/nachrichtenautomatisierung',
         ...buildHreflangAlternates('messaging'),
     },
-    openGraph: {
-        title: 'WhatsApp & E-Mail Erinnerungen für Kosmetikstudios',
-        description: 'Automatische Nachrichten per WhatsApp und E-Mail: Terminbestätigungen, Erinnerungen, Stornierungen und Follow-ups.',
+    openGraph: meta.openGraph && {
+        title: meta.openGraph.title,
+        description: meta.openGraph.description,
         url: 'https://www.treatflow.io/nachrichtenautomatisierung',
-        images: [
-            {
-                url: '/images/mockups/nachrichtenautomatisierung.png',
-                width: 1200,
-                height: 630,
-                alt: 'Treatflow Nachrichtenautomatisierung',
-            },
-        ],
+        images: [{ url: meta.openGraph.image.url, width: 1200, height: 630, alt: meta.openGraph.image.alt }],
     },
-};
+});
 
-const faqs = [
-    {
-        question: 'Wie kann ich No-Shows im Kosmetikstudio reduzieren?',
-        answer: 'Automatische Terminerinnerungen per WhatsApp und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z.B. 3 Tage und 1 Tag vor dem Termin). So sinkt die Zahl vergessener Termine deutlich.',
-    },
-    {
-        question: 'Was kosten WhatsApp-Erinnerungen für Termine?',
-        answer: 'WhatsApp-Erinnerungen bei Treatflow kosten ab 0,09 EUR pro Nachricht. Die WhatsApp-Automatisierung ist im Booking-Plan (59 EUR/Monat) enthalten. E-Mail-Erinnerungen sind in allen Plänen kostenlos und unbegrenzt.',
-    },
-    {
-        question: 'Welche Nachrichten sollte ich automatisieren?',
-        answer: 'Die wichtigsten automatisierten Nachrichten sind: Buchungsbestätigungen, Terminerinnerungen (1-7 Tage vorher), Stornierungsbenachrichtigungen, Follow-up-Nachrichten nach Behandlungen und Geburtstagswünsche. Damit sparst du Zeit und stärkst die Kundenbindung.',
-    },
-    {
-        question: 'Funktionieren WhatsApp-Erinnerungen besser als E-Mails?',
-        answer: 'WhatsApp-Nachrichten werden in der Regel schnell gelesen, E-Mails oft erst später. Für Terminerinnerungen empfehlen wir WhatsApp, für ausführlichere Nachrichten wie Follow-ups oder Nachsorgehinweise eignen sich E-Mails. Treatflow unterstützt beide Kanäle.',
-    },
-    {
-        question: 'Kann ich Nachsorge-Nachrichten automatisch versenden?',
-        answer: 'Ja. Mit Treatflow kannst du automatische Follow-up-Nachrichten nach Behandlungen einrichten. Diese können Nachsorgetipps, Feedback-Anfragen oder Angebote für Folgetermine enthalten - per WhatsApp oder E-Mail.',
-    },
-];
-
-const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((item) => ({
-        '@type': 'Question',
-        name: item.question,
-        acceptedAnswer: { '@type': 'Answer', text: item.answer },
-    })),
-};
-
-export default function NachrichtenautomatisierungPage() {
+/** Deutsche Seite. Sektionen: app/site/pages/MessagingPage.tsx, Texte: app/site/content/messaging/de.ts */
+export default function Page() {
     return (
         <div className="min-h-screen bg-white">
             <Navigation />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(
-                        generateBreadcrumbSchema([
-                            { label: 'Funktionen', href: '/funktionen' },
-                            { label: 'Nachrichten' },
-                        ])
-                    ),
-                }}
-            />
-            <Script
-                id="nachrichtenautomatisierung-faq-schema"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
-            <Script
-                id="nachrichtenautomatisierung-webpage-schema"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(
-                        generateWebPageSchema({
-                            name: 'WhatsApp & E-Mail Erinnerungen fürs Kosmetikstudio',
-                            description:
-                                'Automatische Nachrichten per WhatsApp und E-Mail für Kosmetikstudios: Terminbestätigungen, Erinnerungen, Stornierungen und Follow-ups.',
-                            url: 'https://www.treatflow.io/nachrichtenautomatisierung',
-                            dateModified: PAGE_DATE_MODIFIED,
-                            datePublished: PAGE_DATE_PUBLISHED,
-                        })
-                    ),
-                }}
-            />
-
-            <FeatureHero
-                theme="purple"
-                breadcrumbs={[
-                    { label: 'Funktionen', href: '/funktionen' },
-                    { label: 'Nachrichten' },
-                ]}
-                eyebrow="Nachrichtenautomatisierung"
-                eyebrowIcon={MessageCircle}
-                title={<>Automatische <FeatureTitleHighlight theme="purple">Erinnerungen</FeatureTitleHighlight></>}
-                description="Terminbestätigungen, Reminder und Follow-ups per WhatsApp und E-Mail – weniger No-Shows, mehr Bindung."
-                chips={['WhatsApp & E-Mail', 'Weniger No-Shows', 'Geburtstagsgrüße']}
-                secondaryCta={{ label: 'Zum Terminkalender', href: '/terminkalender' }}
-                aiCapsule={{
-                    question: 'Wie kann ich No-Shows im Kosmetikstudio reduzieren?',
-                    answer: 'Automatische Terminerinnerungen per WhatsApp und E-Mail sind der effektivste Weg, No-Shows zu reduzieren. Treatflow versendet Erinnerungen zu konfigurierbaren Zeitpunkten (z. B. 24 Stunden und 2 Stunden vor dem Termin). Mit aktivierten Erinnerungen fallen deutlich weniger Termine aus.',
-                }}
-                dateModified={PAGE_DATE_MODIFIED}
-                datePublished={PAGE_DATE_PUBLISHED}
-                image={{
-                    src: '/images/lifestyle/sms-erinnerung-studio.png',
-                    alt: 'WhatsApp-Erinnerung im Studio – Kundin erhält Terminerinnerung auf dem Smartphone',
-                }}
-            />
-
-            <ProductVideoSection
-                title="Automatische Nachrichten in einer Minute erklärt"
-                description="Bestätigungen und Erinnerungen per E-Mail oder WhatsApp – mit fertigen Vorlagen aus der Bibliothek."
-                videoSrc="/videos/funktionen/nachrichten.mp4"
-                posterSrc="/images/video/funktionen/nachrichten-poster.jpg"
-                posterAlt="Video: Automatische Nachrichten in einer Minute erklärt"
-            />
-
-            <FeatureUnderstand
-                theme="purple"
-                title="Nachrichten, die automatisch rausgehen"
-                description="Terminbestätigung, Erinnerung und Nachsorge – deine Kunden bekommen die richtige Nachricht zur richtigen Zeit, ohne dass du etwas tun musst."
-                items={[
-                    {
-                        icon: Bell,
-                        title: 'Weniger vergessene Termine',
-                        text: 'Deine Kunden bekommen 1–7 Tage vor dem Termin eine Erinnerung per WhatsApp oder E-Mail. So fallen deutlich weniger Termine aus.',
-                    },
-                    {
-                        icon: MessageCircle,
-                        title: 'Nachsorge und Follow-up',
-                        text: 'Nach der Behandlung bekommt dein Kunde automatisch Tipps, eine Feedback-Anfrage oder ein Folgetermin-Angebot.',
-                    },
-                    {
-                        icon: Heart,
-                        title: 'Persönliche Grüße',
-                        text: 'Geburtstagswünsche und personalisierte Nachrichten gehen automatisch raus – das stärkt die Bindung ohne Extra-Aufwand.',
-                    },
-                ]}
-            />
-
-            <FeatureHowItWorks
-                theme="purple"
-                description="In drei Schritten zu automatischen Nachrichten."
-                steps={[
-                    { title: 'Vorlage wählen', text: 'Wähle eine fertige Vorlage für Bestätigung, Erinnerung oder Follow-up. Platzhalter wie Name und Termindatum werden automatisch gefüllt.' },
-                    { title: 'Zeitpunkt festlegen', text: 'Bestimme, wann die Nachricht rausgehen soll – z. B. 3 Tage und 1 Tag vor dem Termin oder direkt nach der Behandlung.' },
-                    { title: 'Läuft von allein', text: 'Treatflow verschickt die Nachrichten per WhatsApp oder E-Mail zur richtigen Zeit. Du kümmerst dich um deine Kunden.' },
-                ]}
-            />
-
-            <FeatureCards
-                theme="purple"
-                title="Was du bekommst"
-                description="Alles für automatische Kundenkommunikation – klar und steuerbar."
-                items={[
-                    { icon: Clock, title: 'Terminerinnerungen', text: 'Flexibler Zeitpunkt, personalisierte Texte, WhatsApp und E-Mail.', points: ['1–7 Tage vorher', 'Beide Kanäle', 'Weniger Ausfälle'] },
-                    { icon: Mail, title: 'Buchungsbestätigung', text: 'Sofort nach der Buchung – mit Termin, Behandlung und Studio-Infos.', points: ['Automatisch', 'Klarer Inhalt', 'Weniger Rückfragen'] },
-                    { icon: MessageCircle, title: 'Follow-up & Nachsorge', text: 'Nach der Behandlung Tipps, Feedback oder Folgetermin anbieten.', points: ['WhatsApp oder E-Mail', 'Vorlagen', 'Mehr Bindung'] },
-                    { icon: Heart, title: 'Geburtstagswünsche', text: 'Persönliche Grüße und optionale Angebote am Geburtstag.', points: ['Automatisch', 'Rabatt möglich', 'Stärkere Bindung'] },
-                    { icon: Zap, title: 'Platzhalter', text: 'Name, Termin, Behandlung – Texte füllen sich von selbst.', points: ['Personalisierung', 'Behandlungsspezifisch', 'Schnelle Vorlagen'] },
-                    { icon: Bell, title: 'Storno-Infos', text: 'Kunden und Studio bleiben bei Absagen auf dem Laufenden.', points: ['Sofort', 'Transparent', 'Weniger Chaos'] },
-                ]}
-            />
-
-            <SocialProofBar />
-
-            <FeatureFaq title="Häufige Fragen zur Nachrichtenautomatisierung" items={faqs} />
-
-            <FeatureRelated
-                items={[
-                    { href: '/kunden-workflows', title: 'Kunden-Workflows', description: 'Mehrstufige Nachsorge & Reaktivierung' },
-                    { href: '/online-buchungen', title: 'Online-Buchungen', description: 'Termine kommen mit Bestätigung an' },
-                    { href: '/terminkalender', title: 'Terminkalender', description: 'Termine & Erinnerungen zusammen' },
-                ]}
-            />
-
-            <FeaturePageCta
-                theme="purple"
-                title="Bereit für automatische Kundenkommunikation?"
-                description="14 Tage kostenlos testen – Erinnerungen, Follow-ups und Geburtstage ohne Extra-Arbeit."
-                secondaryLabel="Zum Terminkalender"
-                secondaryHref="/terminkalender"
-            />
-
+            <MessagingPage market="de" />
             <Footer />
         </div>
     );

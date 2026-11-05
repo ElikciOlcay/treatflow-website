@@ -59,7 +59,7 @@ export const guideComparison2026: TrGuideContent = {
         ["Otomasyon", "Müşteri otomasyonları, WhatsApp+e-posta", "SMS/otomasyon vurgusu", "WhatsApp/SMS hatırlatma", "Hatırlatıcı", "SMS hatırlatma", "SMS+WhatsApp"],
         ["Çoklu personel", "Evet, roller + takvim sütunları", "Evet", "Evet", "Evet", "Evet", "Uzman/kabin"],
         ["Kasa / POS (TR)", "Yok", "Kasa vurgusu", "Kasa/prim", "Kasa", "Adisyon", "Adisyon"],
-        ["Fiyat modeli", "Sabit TL abonelik, 30 gün deneme", "Abonelik (site)", "Deneme vurgusu", "Deneme vurgusu", "Paketler (site)", "Tek ürün çatısı"],
+        ["Fiyat modeli", "Sabit TL abonelik, 14 gün deneme", "Abonelik (site)", "Deneme vurgusu", "Deneme vurgusu", "Paketler (site)", "Tek ürün çatısı"],
       ],
     },
     {
@@ -103,7 +103,7 @@ export const guideComparison2026: TrGuideContent = {
     {
       question: "Türkiye'de güzellik merkezi için en iyi program hangisi?",
       answer:
-        "Tek kazanan yok. Kasa ve prim istiyorsanız yerel randevu+adisyon araçları öne çıkar. Onam ve işlem kaydı istiyorsanız Treatflow'u 30 gün deneyin.",
+        "Tek kazanan yok. Kasa ve prim istiyorsanız yerel randevu+adisyon araçları öne çıkar. Onam ve işlem kaydı istiyorsanız Treatflow'u 14 gün deneyin.",
     },
     {
       question: "Güzellik merkezi programı önerir misin?",
@@ -177,7 +177,7 @@ export const guideHowToChoose: TrGuideContent = {
     },
     {
       type: "p",
-      text: "Treatflow randevu komisyonu almaz. Hatırlatma WhatsApp ve e-posta iledir. 30 gün deneme, kredi kartı yok.",
+      text: "Treatflow randevu komisyonu almaz. Hatırlatma WhatsApp ve e-posta iledir. 14 gün deneme, kredi kartı yok.",
     },
     {
       type: "h2",

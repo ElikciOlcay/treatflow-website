@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
 import TrSeoShell from "@/app/components/tr-seo/TrSeoShell";
-import PricingPageIntl from "@/app/components/PricingPageIntl";
+import PricingPage from "@/app/site/pages/PricingPage";
 import { buildPageMetadata } from "@/app/i18n/seo";
-import { getMarketPricingCopy } from "@/app/i18n/markets/market-content";
+import { getPricingPageContent } from "@/app/site/content/pricing";
 
-const copy = getMarketPricingCopy("tr");
+const { meta } = getPricingPageContent("tr");
 
 export const metadata: Metadata = buildPageMetadata({
   pageKey: "pricing",
   locale: "tr",
-  title: copy.meta.title,
-  description: copy.meta.description,
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
 });
 
+/** Gleiche Seite wie DE/[market], Inhalte aus app/site/content/pricing/tr.ts (+ home/tr.ts `pricing`) */
 export default function Page() {
   return (
     <TrSeoShell>
-      <div className="pt-16">
-        <PricingPageIntl copy={copy} />
-      </div>
+      <PricingPage market="tr" />
     </TrSeoShell>
   );
 }

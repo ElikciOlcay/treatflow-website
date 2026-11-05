@@ -17,13 +17,13 @@ export const APP_BASE_URL =
   "https://app.treatflow.io";
 
 /** Sprachen, die die App per ?lang= uebernimmt (tfv2: app/lib/i18n.ts). */
-export type AppHandoffLanguage = "de" | "en" | "tr" | "nl" | "it" | "pl";
+export type AppHandoffLanguage = "de" | "en" | "tr" | "nl" | "it" | "pl" | "es" | "fr";
 
-const APP_LANGUAGES: readonly AppHandoffLanguage[] = ["de", "en", "tr", "nl", "it", "pl"];
+const APP_LANGUAGES: readonly AppHandoffLanguage[] = ["de", "en", "tr", "nl", "it", "pl", "es", "fr"];
 
 /**
  * Website-Markt-/Dictionary-Sprache → App-?lang=.
- * es/fr/fi gibt es in der App (noch) nicht → en.
+ * Die App gibt es in allen Website-Sprachen (es/fr seit tfv2 #170); unbekannte → en.
  */
 export function toAppLanguage(
   language: string | null | undefined

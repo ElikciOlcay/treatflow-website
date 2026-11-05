@@ -1012,7 +1012,7 @@ const trHomeFaqs = [
   },
   {
     q: "Ücretsiz deneme ne kadar?",
-    a: "30 gün ücretsiz deneme. Kredi kartı gerekmez, taahhüt yoktur. İstediğiniz zaman iptal edebilirsiniz.",
+    a: "14 gün ücretsiz deneme. Kredi kartı gerekmez, taahhüt yoktur. İstediğiniz zaman iptal edebilirsiniz.",
   },
   {
     q: "Treatflow ne kadar?",
@@ -1085,8 +1085,8 @@ const trHomePage: HomePageIntlContent = {
   },
   cta: {
     title: "Salonunuzu bugün dijitalleştirin",
-    subtitle: "Treatflow'u 30 gün ücretsiz deneyin. Kredi kartı gerekmez, taahhüt yok.",
-    note: "30 gün ücretsiz deneme · Kredi kartı gerekmez · İstediğiniz zaman iptal edin",
+    subtitle: "Treatflow'u 14 gün ücretsiz deneyin. Kredi kartı gerekmez, taahhüt yok.",
+    note: "14 gün ücretsiz deneme · Kredi kartı gerekmez · İstediğiniz zaman iptal edin",
   },
   faqs: {
     title: "Sıkça sorulan sorular",
@@ -1324,7 +1324,7 @@ export function getCountryHomePage(market: CountryHomeMarket): HomePageIntlConte
         : "Start free trial";
 
   const ctaSubtitle = isTr
-    ? "Treatflow'u hemen deneyin – 30 gün ücretsiz, kredi kartı gerekmez."
+    ? "Treatflow'u hemen deneyin – 14 gün ücretsiz, kredi kartı gerekmez."
     : isNl
       ? "Start direct met Treatflow – 14 dagen gratis, geen creditcard."
       : isFi
@@ -1332,7 +1332,7 @@ export function getCountryHomePage(market: CountryHomeMarket): HomePageIntlConte
         : "Start Treatflow today – 14-day free trial, no credit card required.";
 
   const ctaNote = isTr
-    ? "30 gün ücretsiz deneme · Kredi kartı gerekmez · İstediğiniz zaman iptal edin"
+    ? "14 gün ücretsiz deneme · Kredi kartı gerekmez · İstediğiniz zaman iptal edin"
     : isNl
       ? "14 dagen gratis · Geen creditcard · Opzeggen wanneer je wilt"
       : isFi
@@ -1383,7 +1383,7 @@ export const countryHomeMeta: Record<
   tr: {
     title: "Güzellik Salonu Yazılımı: Randevu ve Müşteri Takibi",
     description:
-      "Türkiye için salon yönetim yazılımı: komisyonsuz online randevu, müşteri takibi, dijital onam ve işlem kaydı. İlk 100 işletmeye lansman fiyatları: Basic ₺1.490/ay, Booking ₺1.990/ay. 30 gün ücretsiz deneyin.",
+      "Türkiye için salon yönetim yazılımı: komisyonsuz online randevu, müşteri takibi, dijital onam ve işlem kaydı. İlk 100 işletmeye lansman fiyatları: Basic ₺1.490/ay, Booking ₺1.990/ay. 14 gün ücretsiz deneyin.",
   },
   us: {
     title: "Salon & Med Spa Software for the United States",

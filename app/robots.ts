@@ -7,7 +7,7 @@ const disallow = [
   "/admin/",
   "/dashboard/",
   "/*/point-of-sale",
-  "/tr/vouchers",
+  "/*/vouchers",
   "/tr/news",
   "/nl/nieuws",
   "/it/novita",

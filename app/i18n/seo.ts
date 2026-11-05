@@ -26,6 +26,8 @@ export type SeoPageKey =
   | "point-of-sale"
   | "vouchers"
   | "messaging"
+  | "customer-workflows"
+  | "treatflow-pay"
   | "integrations"
   | "features"
   | "shop"
@@ -47,7 +49,8 @@ export type SeoPageKey =
   | "treatflow-vs-fresha"
   | "treatflow-vs-treatwell"
   | "software-comparison"
-  | "try-forms";
+  | "try-forms"
+  | "try-features";
 
 /** DE-Root-Slugs (bestehende SEO-URLs). */
 const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
@@ -63,10 +66,13 @@ const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
   forms: "formulare",
   "consent-forms": "formulare",
   "try-forms": "formulare-testen",
+  "try-features": "funktionen-live-testen",
   "treatment-documentation": "behandlungsdokumentation",
   "point-of-sale": "kassensystem-kosmetikstudio",
   vouchers: "gutscheine-kosmetikstudio",
   messaging: "nachrichtenautomatisierung",
+  "customer-workflows": "kunden-workflows",
+  "treatflow-pay": "treatflow-pay",
   integrations: "integrationen",
   features: "funktionen",
   shop: "shop",
@@ -89,7 +95,13 @@ const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
 type PageSlugMap = Partial<Record<Market, string>>;
 
 /** Seiten, die es in den Bundle-Sprachen (NL/IT/PL/ES/FR) nicht gibt. */
-const NOT_IN_BUNDLE_LANGS: readonly SeoPageKey[] = ["news", "try-forms", "early-access", "point-of-sale"];
+const NOT_IN_BUNDLE_LANGS: readonly SeoPageKey[] = [
+  "news",
+  "try-forms",
+  "early-access",
+  "point-of-sale",
+  "vouchers",
+];
 
 /** Alle Maerkte die in hreflang/Sitemap erscheinen sollen. */
 const seoMarkets: readonly Market[] = ["de", ...prefixedMarkets];
@@ -134,16 +146,23 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
   forms: buildSlugMap("forms"),
   "consent-forms": buildSlugMap("consent-forms"),
   "try-forms": buildSlugMap("try-forms"),
+  "try-features": buildSlugMap("try-features"),
   "treatment-documentation": buildSlugMap("treatment-documentation"),
   "point-of-sale": {
     de: "kassensystem-kosmetikstudio",
   },
-  vouchers: (() => {
-    const map = buildSlugMap("vouchers");
+  // Gutscheine sind DACH-only (siehe feature-availability.ts) → nur DE.
+  vouchers: {
+    de: "gutscheine-kosmetikstudio",
+  },
+  messaging: buildSlugMap("messaging"),
+  "customer-workflows": buildSlugMap("customer-workflows"),
+  // Treatflow Pay (Stripe Connect) gibt es nicht in der Türkei (siehe feature-availability.ts).
+  "treatflow-pay": (() => {
+    const map = buildSlugMap("treatflow-pay");
     delete map.tr;
     return map;
   })(),
-  messaging: buildSlugMap("messaging"),
   integrations: buildSlugMap("integrations"),
   features: buildSlugMap("features"),
   shop: buildSlugMap("shop"),
@@ -188,7 +207,7 @@ export function stripTitleBrand(title: string): string {
 export function buildHreflangAlternates(
   pageKey: SeoPageKey,
   options?: { xDefault?: Market }
-): Metadata["alternates"] {
+): { languages: Record<string, string> } {
   const slugs = seoPageSlugs[pageKey];
   const languages: Record<string, string> = {};
 
@@ -218,6 +237,40 @@ export function buildHreflangAlternates(
   }
 
   return { languages };
+}
+
+/** og:locale:alternate – OpenGraph-Locales der anderen Sprachen, in denen es die Seite gibt. */
+export function ogAlternateLocales(pageKey: SeoPageKey, locale: Market): string[] {
+  const slugs = seoPageSlugs[pageKey];
+  return seoMarkets
+    .filter((market) => market !== locale && slugs[market] !== undefined)
+    .map((market) => ogLocaleTags[market]);
+}
+
+/**
+ * Vervollständigt die Metadaten deutscher Seiten (eigene `openGraph`-Objekte ersetzen das
+ * Layout-OpenGraph komplett): og:type, og:site_name, og:locale (+ alternates), og:url = Canonical,
+ * Standardbild, falls die Seite keins setzt.
+ */
+export function withDeOpenGraph(pageKey: SeoPageKey, metadata: Metadata): Metadata {
+  const canonical = slugToUrl("de", seoPageSlugs[pageKey].de) ?? undefined;
+  const og = (metadata.openGraph ?? {}) as NonNullable<Metadata["openGraph"]>;
+  const title = typeof metadata.title === "string" ? stripTitleBrand(metadata.title) : undefined;
+  const description = metadata.description ?? undefined;
+  return {
+    ...metadata,
+    openGraph: {
+      type: "website",
+      siteName: "Treatflow",
+      title,
+      description,
+      url: canonical,
+      images: [{ url: `${BASE_URL}/images/og-image.png`, width: 1200, height: 630, alt: "Treatflow" }],
+      ...og,
+      locale: ogLocaleTags.de,
+      alternateLocale: ogAlternateLocales(pageKey, "de"),
+    },
+  };
 }
 
 export function buildPageMetadata(params: {
@@ -252,6 +305,7 @@ export function buildPageMetadata(params: {
       siteName: "Treatflow",
       type: "website",
       locale: ogLocaleTags[params.locale],
+      alternateLocale: ogAlternateLocales(params.pageKey, params.locale),
       images: [
         {
           url: ogImage,

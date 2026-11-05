@@ -231,9 +231,10 @@ export const htmlLangTags: Record<Market, string> = {
   ae: "en",
 };
 
+/** OpenGraph-Locale je Sprache. Englisch = britische Schreibweise (EU-Markt, Texte in BE). */
 export const ogLocaleTags: Record<Market, string> = {
   de: "de_DE",
-  en: "en_US",
+  en: "en_GB",
   tr: "tr_TR",
   nl: "nl_NL",
   it: "it_IT",

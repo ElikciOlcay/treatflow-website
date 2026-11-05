@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
-import NavigationEn from '../../components/NavigationEn';
-import FooterEn from '../../components/FooterEn';
+import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
 import DemoFormsGallery from '../../components/demo-forms/DemoFormsGallery';
 import { demoFormHreflangEn, getDemoCopy } from '@/lib/demoForms';
-import { getDictionaryForMarket } from '../../i18n/dictionaries';
 
 const copy = getDemoCopy('en');
 
@@ -20,13 +19,12 @@ export const metadata: Metadata = {
 };
 
 export default async function TryFormsPage() {
-  const dict = await getDictionaryForMarket('en');
 
   return (
     <div className="min-h-screen bg-white">
-      <NavigationEn dict={dict} locale="en" />
+      <Navigation market="en" />
       <DemoFormsGallery locale="en" />
-      <FooterEn dict={dict} locale="en" />
+      <Footer market="en" />
     </div>
   );
 }

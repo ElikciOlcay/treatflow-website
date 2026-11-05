@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
-import FeaturePageEn from "@/app/components/FeaturePageEn";
 import { buildPageMetadata } from "@/app/i18n/seo";
-import { getCoreFeaturePage } from "@/app/i18n/markets/core-feature-pages";
 import { isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
+import OnlineBookingPage from "@/app/site/pages/OnlineBookingPage";
+import { getOnlineBookingContent } from "@/app/site/content/online-booking";
 
 export async function generateMetadata({
   params,
@@ -12,15 +12,17 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
-  const content = getCoreFeaturePage(market, "online-booking");
+  const { meta } = getOnlineBookingContent(market);
   return buildPageMetadata({
     pageKey: "online-booking",
     locale: market,
-    title: content.title,
-    description: content.subtitle,
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
   });
 }
 
+/** Gleiche Seite wie DE, Inhalte aus app/site/content/online-booking/<lang>.ts */
 export default async function Page({
   params,
 }: {
@@ -29,5 +31,5 @@ export default async function Page({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
-  return <FeaturePageEn {...getCoreFeaturePage(market, "online-booking")} />;
+  return <OnlineBookingPage market={market} />;
 }

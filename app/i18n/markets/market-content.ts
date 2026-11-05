@@ -16,7 +16,7 @@ import { getUiChrome } from "./ui-chrome";
 import { APP_REGISTER_BY_MARKET } from "../market-access";
 
 function selfServeCtaLabel(lang: string): string {
-  if (lang === "tr") return "30 gün ücretsiz deneyin";
+  if (lang === "tr") return "14 gün ücretsiz deneyin";
   if (lang === "nl") return "Gratis proberen";
   if (lang === "fi") return "Aloita ilmainen kokeilu";
   return "Start free trial";
@@ -24,7 +24,7 @@ function selfServeCtaLabel(lang: string): string {
 
 function selfServePricingSubtitle(lang: string): string {
   if (lang === "tr") {
-    return "İşletmenize uygun paketi seçin. 30 gün ücretsiz deneyin – kredi kartı gerekmez, taahhüt yok.";
+    return "İşletmenize uygun paketi seçin. 14 gün ücretsiz deneyin – kredi kartı gerekmez, taahhüt yok.";
   }
   if (lang === "nl") {
     return "Kies het plan dat bij jouw studio past. Start direct met 14 dagen gratis – geen creditcard nodig.";
@@ -51,7 +51,7 @@ function selfServeFeatureCta(lang: string): Pick<
   if (lang === "tr") {
     return {
       earlyAccessHref: "",
-      primaryCta: "30 gün ücretsiz deneyin",
+      primaryCta: "14 gün ücretsiz deneyin",
       bottomTitle: "Başlamaya hazır mısınız?",
       bottomText:
         "Ücretsiz denemenizi başlatın – kredi kartı gerekmez, taahhüt yok.",

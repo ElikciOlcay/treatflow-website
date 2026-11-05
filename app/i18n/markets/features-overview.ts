@@ -298,7 +298,7 @@ function trContent(): FeaturesOverviewContent {
       "Randevu başına komisyon yok",
       "Onam, fotoğraf ve notlar müşteri kaydında",
       "İşlem notlarını sesle yazın",
-      "30 gün ücretsiz, kredi kartı gerekmez",
+      "14 gün ücretsiz, kredi kartı gerekmez",
     ],
     primaryCta: chrome.startTrial,
     pricingCta: chrome.seePricing,
@@ -454,7 +454,7 @@ function trContent(): FeaturesOverviewContent {
       {
         question: "Ödemeden önce tüm özellikleri deneyebilir miyim?",
         answer:
-          "Evet. 30 gün ücretsiz deneme, kredi kartı gerekmez, taahhüt yok. İstediğiniz zaman iptal edin.",
+          "Evet. 14 gün ücretsiz deneme, kredi kartı gerekmez, taahhüt yok. İstediğiniz zaman iptal edin.",
       },
     ],
     faqTitle: chrome.faqTitle,

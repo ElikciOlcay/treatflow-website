@@ -1,16 +1,10 @@
 // In einer Gruppe, damit die Titel-Vorlage des [market]-Layouts („%s | Treatflow“) greift.
 import { notFound } from "next/navigation";
 import { buildPageMetadata } from "@/app/i18n/seo";
-import HomePageEn from "@/app/components/HomePageEn";
-import HomePageIntl from "@/app/components/HomePageIntl";
-import {
-  countryHomeMeta,
-  getCountryHomePage,
-  type CountryHomeMarket,
-} from "@/app/i18n/markets/country-homes";
-import { isBundleLang, isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
-import { getLocaleContent } from "@/app/i18n/locales";
-import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
+import { isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
+import HomePage from "@/app/components/home/HomePage";
+import HomeSchemas from "@/app/components/home/HomeSchemas";
+import { getHomeContent } from "@/app/site/content/home";
 
 export async function generateMetadata({
   params,
@@ -20,37 +14,17 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
-  if (isBundleLang(market)) {
-    const { homeMeta } = getLocaleContent(market);
-    return buildPageMetadata({
-      pageKey: "home",
-      locale: market,
-      title: homeMeta.title,
-      description: homeMeta.description,
-      keywords: homeMeta.keywords,
-    });
-  }
-  const meta = countryHomeMeta[market as CountryHomeMarket];
+  const { meta } = getHomeContent(market);
   return buildPageMetadata({
     pageKey: "home",
     locale: market,
     title: meta.title,
     description: meta.description,
-    keywords:
-      market === "tr"
-        ? [
-            "güzellik salonu yazılımı",
-            "salon yönetim yazılımı",
-            "online randevu sistemi",
-            "dijital onam formu",
-            "müşteri takip programı",
-            "estetik klinik yazılımı",
-            "lazer epilasyon randevu",
-          ]
-        : undefined,
+    keywords: meta.keywords,
   });
 }
 
+/** Startseite aller Nicht-DE-Sprachen: gleiche Sektionen wie DE, Inhalte aus app/site/content/home/<lang>.ts */
 export default async function MarketHome({
   params,
 }: {
@@ -59,19 +33,11 @@ export default async function MarketHome({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
-  if (market === "en") {
-    return <HomePageEn />;
-  }
-  if (isBundleLang(market)) {
-    return (
-      <HomePageIntl
-        content={{
-          ...getLocaleContent(market).home,
-          earlyAccessHref: APP_REGISTER_BY_MARKET[market],
-        }}
-      />
-    );
-  }
-  return <HomePageIntl content={getCountryHomePage(market as CountryHomeMarket)} />;
-  // TR wird als CountryHomeMarket via HomePageIntl gerendert
+  const content = getHomeContent(market);
+  return (
+    <>
+      <HomeSchemas content={content} market={market} />
+      <HomePage content={content} market={market} />
+    </>
+  );
 }

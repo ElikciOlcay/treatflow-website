@@ -17,10 +17,13 @@ export const EN_SLUGS = {
   "client-records": "client-records",
   forms: "forms",
   "try-forms": "try-forms",
+  "try-features": "try-features",
   "treatment-documentation": "treatment-documentation",
   "point-of-sale": "point-of-sale",
   vouchers: "vouchers",
   messaging: "messaging",
+  "customer-workflows": "client-workflows",
+  "treatflow-pay": "treatflow-pay",
   integrations: "integrations",
   features: "features",
   shop: "shop",
@@ -45,8 +48,10 @@ export const EN_SLUGS = {
  * - Guides: do not add an empty `/en/guides` hub. Publish articles only with real content.
  * - Compare: further competitors (Phorest, Vagaro, Booksy, Pabau) only after verified data.
  * - Keyword variants live as 301 aliases in `next.config.ts`, not as duplicate pages.
- * - POS, payments and gift vouchers stay DACH-only. Do not add `/en/point-of-sale`,
- *   `/tr/point-of-sale` or `/tr/vouchers` product pages.
+ * - Feature availability lives in `feature-availability.ts`: POS, gift vouchers,
+ *   WhatsApp, SumUp, Lexware/AbaNinja and NiSV stay DACH-only (German site only).
+ *   `/{market}/point-of-sale` and `/{market}/vouchers` return 404.
+ *   Treatflow Pay is offered everywhere except Turkey.
  */
 export type MarketPageSlug = keyof typeof EN_SLUGS;
 
@@ -61,6 +66,8 @@ export const TR_SLUG_OVERRIDES: Partial<Record<MarketPageSlug, string>> = {
   "laser-hair-removal-software": "lazer-epilasyon-programi",
   "client-records": "musteri-takip-programi",
   "online-booking": "online-randevu-sistemi",
+  "customer-workflows": "musteri-otomasyonlari",
+  "try-features": "canli-demo",
 };
 
 /**
@@ -85,6 +92,8 @@ export const LOCALIZED_SLUGS: Record<
     "treatment-documentation": "behandeldocumentatie",
     vouchers: "cadeaubonnen",
     messaging: "berichten",
+    "customer-workflows": "klantworkflows",
+    "try-features": "functies-live-testen",
     integrations: "integraties",
     features: "functies",
     "studio-website": "salonwebsite",
@@ -112,6 +121,8 @@ export const LOCALIZED_SLUGS: Record<
     "treatment-documentation": "documentazione-trattamenti",
     vouchers: "buoni-regalo",
     messaging: "messaggistica",
+    "customer-workflows": "flussi-clienti",
+    "try-features": "prova-funzioni-dal-vivo",
     integrations: "integrazioni",
     features: "funzioni",
     shop: "negozio",
@@ -141,6 +152,8 @@ export const LOCALIZED_SLUGS: Record<
     "treatment-documentation": "dokumentacja-zabiegow",
     vouchers: "bony-podarunkowe",
     messaging: "przypomnienia",
+    "customer-workflows": "automatyzacje-dla-klientow",
+    "try-features": "wyprobuj-funkcje",
     integrations: "integracje",
     features: "funkcje",
     shop: "sklep",
@@ -170,6 +183,8 @@ export const LOCALIZED_SLUGS: Record<
     "treatment-documentation": "documentacion-tratamientos",
     vouchers: "vales",
     messaging: "mensajeria",
+    "customer-workflows": "flujos-clientes",
+    "try-features": "probar-funciones",
     integrations: "integraciones",
     features: "funciones",
     shop: "tienda",
@@ -198,6 +213,8 @@ export const LOCALIZED_SLUGS: Record<
     "treatment-documentation": "documentation-soins",
     vouchers: "bons-cadeaux",
     messaging: "messagerie",
+    "customer-workflows": "parcours-clients",
+    "try-features": "tester-les-fonctionnalites",
     features: "fonctionnalites",
     shop: "boutique",
     "studio-website": "site-web-institut",
