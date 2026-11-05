@@ -1,0 +1,150 @@
+import type { FeaturesOverviewContent } from "./types";
+
+export const featuresEn: FeaturesOverviewContent = {
+  meta: {
+    title: "Features for Salons and Clinics",
+    description:
+      "Appointment calendar, online booking without commission, client records, digital consent forms, treatment documentation with voice dictation, reminders and integrations – in one studio system.",
+    keywords: [
+      "salon software features",
+      "beauty salon software",
+      "appointment calendar for salons",
+      "digital client records",
+      "online booking system for salons",
+      "treatment documentation software",
+    ],
+  },
+  breadcrumb: "Features",
+  hero: {
+    eyebrow: "Feature overview",
+    eyebrowIcon: "sparkles",
+    title: { before: "All ", highlight: "features", after: " at a glance" },
+    description: "Calendar, bookings, client records, forms and documentation – one platform for your studio.",
+    chips: ["All-in-one", "No commission", "Made in Austria"],
+    secondaryCta: { label: "See pricing", href: { page: "pricing" } },
+    tiles: [
+      { label: "Calendar", icon: "calendar", gradient: "from-indigo-500 to-purple-600" },
+      { label: "Bookings", icon: "link", gradient: "from-rose-500 to-orange-600" },
+      { label: "Clients", icon: "users", gradient: "from-blue-500 to-indigo-600" },
+      { label: "Forms", icon: "clipboard-check", gradient: "from-orange-500 to-amber-600" },
+      { label: "Documentation", icon: "file-text", gradient: "from-violet-500 to-purple-600" },
+      { label: "Workflows", icon: "workflow", gradient: "from-green-500 to-emerald-600" },
+    ],
+  },
+  grid: {
+    title: "{count} core features for your studio",
+    subtitle: "Every feature is built around the needs of beauty studios and clinics.",
+    more: "Learn more",
+    items: [
+      {
+        href: { page: "appointment-calendar" },
+        icon: "calendar",
+        title: "Appointment calendar",
+        description:
+          "Plan staff and rooms clearly in their own columns. Spot free capacity, avoid double bookings and coordinate changes faster.",
+        color: "text-indigo-600",
+        bg: "bg-indigo-50",
+        border: "border-indigo-200 hover:border-indigo-400",
+        highlights: ["Staff & room columns", "Utilisation at a glance", "Drag & drop"],
+      },
+      {
+        href: { page: "treatflow-pay" },
+        icon: "wallet",
+        title: "Treatflow Pay",
+        description: "Deposit or full payment right at online booking. Configurable per service, 2.69% per transaction.",
+        color: "text-violet-600",
+        bg: "bg-violet-50",
+        border: "border-violet-200 hover:border-violet-400",
+        highlights: ["Deposit or full payment", "Card, Apple Pay, Google Pay", "2.69% per transaction"],
+        feature: "pay",
+      },
+      {
+        href: { page: "online-booking" },
+        icon: "link",
+        title: "Online booking",
+        description:
+          "Your studio's personal booking link. Clients book around the clock – confirmations and reminders go out automatically.",
+        color: "text-rose-600",
+        bg: "bg-rose-50",
+        border: "border-rose-200 hover:border-rose-400",
+        highlights: ["24/7 booking link", "Automatic confirmations", "No double bookings"],
+      },
+      {
+        href: { page: "client-records" },
+        icon: "users",
+        title: "Digital client records",
+        description:
+          "Digital client records with treatment history, before-and-after photos, allergies and notes. Everything in one place.",
+        color: "text-emerald-600",
+        bg: "bg-emerald-50",
+        border: "border-emerald-200 hover:border-emerald-400",
+        highlights: ["Unlimited clients", "Photos & notes", "GDPR-compliant"],
+      },
+      {
+        href: { page: "forms" },
+        icon: "clipboard-check",
+        title: "Forms & consultation",
+        description:
+          "Digital intake forms and consent forms. Clients fill them in on their smartphone before the appointment – paperless and legally sound.",
+        color: "text-orange-600",
+        bg: "bg-orange-50",
+        border: "border-orange-200 hover:border-orange-400",
+        highlights: ["Digital intake", "Send in advance via link", "Paperless"],
+      },
+      {
+        href: { page: "treatment-documentation" },
+        icon: "file-text",
+        title: "Treatment documentation",
+        description:
+          "Document every treatment digitally: photos, products used, notes and results. Ideal for follow-up treatments.",
+        color: "text-blue-600",
+        bg: "bg-blue-50",
+        border: "border-blue-200 hover:border-blue-400",
+        highlights: ["Photos & products", "Treatment history", "Complete records"],
+      },
+      {
+        href: { page: "messaging" },
+        icon: "bell",
+        title: "Automatic reminders",
+        description: "Email reminders before every appointment. Reduce no-shows – fully automatically.",
+        color: "text-purple-600",
+        bg: "bg-purple-50",
+        border: "border-purple-200 hover:border-purple-400",
+        highlights: ["Email reminders", "Fewer no-shows", "Configurable timing"],
+      },
+      {
+        href: { page: "customer-workflows" },
+        icon: "workflow",
+        title: "Client workflows",
+        description:
+          "Multi-step automations for aftercare, reactivation and follow-ups – with waiting times, conditions and emails.",
+        color: "text-indigo-600",
+        bg: "bg-indigo-50",
+        border: "border-indigo-200 hover:border-indigo-400",
+        highlights: ["Visual builder", "Automatic emails", "Stops on a new booking"],
+      },
+      {
+        href: { page: "shop" },
+        icon: "shopping-bag",
+        title: "Product sales & stock",
+        description:
+          "Sell care products directly to your clients. Manage stock, record sales and grow additional revenue.",
+        color: "text-amber-600",
+        bg: "bg-amber-50",
+        border: "border-amber-200 hover:border-amber-400",
+        highlights: ["Product sales", "Stock management", "Grow revenue"],
+      },
+    ],
+  },
+  why: {
+    title: "Why Treatflow?",
+    points: [
+      "All-in-one: every feature in one platform",
+      "GDPR-compliant with EU servers",
+      "No hidden fees or commissions",
+      "14-day free trial, no credit card",
+      "Free support and onboarding",
+      "Made in Austria",
+    ],
+  },
+};

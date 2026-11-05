@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Script from "next/script";
 import SocialProofBar from "@/app/components/SocialProofBar";
 import { generateBreadcrumbSchema } from "@/app/components/Breadcrumbs";
@@ -30,11 +31,14 @@ export default function FeaturePage({
   market,
   pageKey,
   theme,
+  afterUnderstand,
 }: {
   content: FeaturePageContent;
   market: SiteMarket;
   pageKey: SitePageKey;
   theme: FeatureHeroThemeKey;
+  /** Optionale Spezialsektion zwischen Understand und HowItWorks (z. B. Formulare: „Beispiele testen“). */
+  afterUnderstand?: ReactNode;
 }) {
   const common = getFeatureCommon(market);
   const pageUrl = `${BASE_URL}${sitePagePath(market, pageKey) ?? ""}`;
@@ -174,6 +178,8 @@ export default function FeaturePage({
           text: item.text,
         }))}
       />
+
+      {afterUnderstand}
 
       <FeatureHowItWorks
         theme={theme}

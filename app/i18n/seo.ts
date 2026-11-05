@@ -26,6 +26,8 @@ export type SeoPageKey =
   | "point-of-sale"
   | "vouchers"
   | "messaging"
+  | "customer-workflows"
+  | "treatflow-pay"
   | "integrations"
   | "features"
   | "shop"
@@ -67,6 +69,8 @@ const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
   "point-of-sale": "kassensystem-kosmetikstudio",
   vouchers: "gutscheine-kosmetikstudio",
   messaging: "nachrichtenautomatisierung",
+  "customer-workflows": "kunden-workflows",
+  "treatflow-pay": "treatflow-pay",
   integrations: "integrationen",
   features: "funktionen",
   shop: "shop",
@@ -149,6 +153,13 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
     de: "gutscheine-kosmetikstudio",
   },
   messaging: buildSlugMap("messaging"),
+  "customer-workflows": buildSlugMap("customer-workflows"),
+  // Treatflow Pay (Stripe Connect) gibt es nicht in der Türkei (siehe feature-availability.ts).
+  "treatflow-pay": (() => {
+    const map = buildSlugMap("treatflow-pay");
+    delete map.tr;
+    return map;
+  })(),
   integrations: buildSlugMap("integrations"),
   features: buildSlugMap("features"),
   shop: buildSlugMap("shop"),

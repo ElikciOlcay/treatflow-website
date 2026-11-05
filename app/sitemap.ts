@@ -449,6 +449,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { key: 'treatment-documentation', priority: 0.8 },
         { key: 'vouchers', priority: 0.8 },
         { key: 'messaging', priority: 0.8 },
+        { key: 'customer-workflows', priority: 0.8 },
+        { key: 'treatflow-pay', priority: 0.8 },
         { key: 'integrations', priority: 0.8 },
         { key: 'features', priority: 0.8 },
         { key: 'shop', priority: 0.75 },

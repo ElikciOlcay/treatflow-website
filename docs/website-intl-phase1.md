@@ -122,6 +122,12 @@ crawlbaren Sprachlinks (wie früher `FooterEn`).
   drei Routen und die TR-`TrMoneyPage` für Buchung/Kundenverwaltung ersetzt).
 - Gutscheine: `app/[market]/vouchers` → 404 für alle Sprachen, `seoPageSlugs.vouchers` nur DE
   (kein hreflang/Sitemap mehr), robots `/*/vouchers`.
+- Phase-1-Seiten in allen Sprachen auf dem DE-Layout: Funktionen, Preise (TR `app/tr/fiyatlar`),
+  Formulare, Behandlungsdokumentation, Nachrichten (außerhalb DE nur E-Mail), Integrationen
+  (außerhalb DE Google, Zapier, KI-Assistenten, Treatflow Pay), Shop, Studio-Website.
+  Neu: Kunden-Workflows (`client-workflows`, TR `musteri-otomasyonlari`, nl `klantworkflows`,
+  it `flussi-clienti`, pl `automatyzacje-dla-klientow`, es `flujos-clientes`, fr `parcours-clients`)
+  und Treatflow Pay (`treatflow-pay`, nicht tr). Entfernt: `FeaturesPageEn.tsx`, `PricingPageIntl.tsx`.
 
 ## Offene Punkte für die nächsten Agents
 
@@ -129,35 +135,17 @@ crawlbaren Sprachlinks (wie früher `FooterEn`).
 
 | Key (`site-pages.ts`) | DE-Quelle | Ziel | Hinweis |
 | --- | --- | --- | --- |
-| `customer-workflows` | `app/(de)/kunden-workflows` | `app/[market]/customer-workflows` | Startseite verlinkt per `fallback` auf messaging |
-| `treatflow-pay` | `app/(de)/treatflow-pay` | `app/[market]/treatflow-pay` | `feature: "pay"` → nicht in tr |
 | `try-features` | `app/(de)/funktionen-live-testen` | `app/[market]/try-features` | Hero-Bild ist dann wieder verlinkt |
 | `foot-care-software` | `app/(de)/fusspflege-software` | `app/[market]/foot-care-software` | Branchen-Menü + Footer |
 | `imprint` | `app/(de)/impressum` | `app/[market]/imprint` | rechtlich prüfen: evtl. auf DE-Impressum verlinken |
 | `news` | – | nl/it/pl/es/fr/tr | gibt es nur für en (bewusst) |
 | `try-forms` | `app/(de)/formulare-testen` | nl/it/pl/es/fr | existiert nur en/tr |
 
-### Phase-1-Seiten: auf das Muster umstellen (DE-Design + Inhalte je Sprache)
+### Phase 2 (noch offen)
 
-| Seite | DE-Quelle | [market]-Route (EN-Slug) |
-| --- | --- | --- |
-| Funktionen | `app/(de)/funktionen/page.tsx` | `app/[market]/features` |
-| Preise | `app/(de)/preise/page.tsx` | `app/[market]/pricing` (TR: `app/tr/fiyatlar`) |
-| Formulare | `app/(de)/formulare/page.tsx` | `app/[market]/forms` |
-| Behandlungsdokumentation | `app/(de)/behandlungsdokumentation/page.tsx` | `app/[market]/treatment-documentation` |
-| Nachrichten | `app/(de)/nachrichtenautomatisierung/page.tsx` | `app/[market]/messaging` (ohne WhatsApp) |
-| Kunden-Workflows | `app/(de)/kunden-workflows/page.tsx` | neu: `app/[market]/customer-workflows` |
-| Integrationen | `app/(de)/integrationen/page.tsx` | `app/[market]/integrations` (ohne Lexware/AbaNinja/SumUp) |
-| Shop | `app/(de)/shop/page.tsx` | `app/[market]/shop` |
-| Studio-Website | `app/(de)/website-fuer-kosmetikstudios/page.tsx` | `app/[market]/studio-website` |
-| Treatflow Pay | `app/(de)/treatflow-pay/page.tsx` | neu: `app/[market]/treatflow-pay` (nicht tr) |
-
-Viele DE-Funktionsseiten nutzen `ProductVideoSection` mit deutschen Videos: in anderen Sprachen
-weglassen, bis es Videos gibt. `SocialProofBar` nimmt `content={getHomeContent(market).socialProof}`.
-
-Die übrigen [market]-Seiten nutzen noch `FeaturePageEn` + `core-feature-pages.ts`/`feature-pages-intl.ts`
-(forms, treatment-documentation, messaging, integrations, shop, studio-website). Die meisten DE-Quellen
-nutzen bereits FeatureHero/FeatureSections → mit `FeaturePage` (ggf. um Spezialsektionen erweitern) umstellbar.
+Branchen-, Vergleichs- und Info-Seiten (about, contact, terms, news, blog) nutzen noch die alten
+Market-Inhalte (`FeaturePageEn`, `market-content.ts`, `extra-feature-pages-*.ts`) und nennen außerhalb
+DE teils WhatsApp/NiSV. Danach können die alten Market-Inhalte und `PricingSectionIntl` weg.
 
 ### Sonstiges / bekannt
 
@@ -178,3 +166,7 @@ nutzen bereits FeatureHero/FeatureSections → mit `FeaturePage` (ggf. um Spezia
 - TR-Meta-Beschreibung nennt „İlk 100 işletmeye lansman fiyatları“ – prüfen, ob noch aktuell.
 - Formulierungen der Übersetzungen (z. B. FR „lapins“ für No-Shows, NL „Colofon“ für Impressum)
   sollten Muttersprachler einmal gegenlesen.
+- Offene Fragen aus Phase 1: Studio-Website-Preis (ab 1.000 €, 200 € Guthaben) auch für TR/PL?
+  MCP im FAQ „im Booking-Plan enthalten“ korrekt? „E-Mail-Erinnerungen unbegrenzt in allen Plänen“
+  für alle Märkte? Außerhalb DE weiche Rechtsaussagen in Formular-/Doku-FAQs juristisch prüfen.
+- Bilder mit deutscher Oberfläche (z. B. `formulare-marketplace.png`, `og-website-service.jpg`).

@@ -1,9 +1,8 @@
 import { notFound } from "next/navigation";
 import { buildPageMetadata } from "@/app/i18n/seo";
-import PricingPageIntl from "@/app/components/PricingPageIntl";
-import { getMarketPricingCopy } from "@/app/i18n/markets/market-content";
-import { isBundleLang, isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
-import { getLocaleContent } from "@/app/i18n/locales";
+import { isPrefixedMarket, type PrefixedMarket } from "@/app/i18n/config";
+import PricingPage from "@/app/site/pages/PricingPage";
+import { getPricingPageContent } from "@/app/site/content/pricing";
 
 export async function generateMetadata({
   params,
@@ -13,25 +12,17 @@ export async function generateMetadata({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) return {};
   const market = raw as PrefixedMarket;
-  const copy = getMarketPricingCopy(market);
+  const { meta } = getPricingPageContent(market);
   return buildPageMetadata({
     pageKey: "pricing",
     locale: market,
-    title: copy.meta.title,
-    description: copy.meta.description,
-    keywords:
-      market === "tr"
-        ? [
-            "güzellik salonu yazılımı fiyat",
-            "salon yazılımı fiyatları",
-            "online randevu sistemi fiyat",
-          ]
-        : isBundleLang(market)
-          ? getLocaleContent(market).pricingKeywords
-          : undefined,
+    title: meta.title,
+    description: meta.description,
+    keywords: meta.keywords,
   });
 }
 
+/** Gleiche Seite wie DE, Inhalte aus app/site/content/pricing/<lang>.ts (+ home/<lang>.ts `pricing`) */
 export default async function MarketPricing({
   params,
 }: {
@@ -40,5 +31,5 @@ export default async function MarketPricing({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
-  return <PricingPageIntl copy={getMarketPricingCopy(market)} />;
+  return <PricingPage market={market} />;
 }
