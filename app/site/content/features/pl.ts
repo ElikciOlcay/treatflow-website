@@ -2,14 +2,14 @@ import type { FeaturesOverviewContent } from "./types";
 
 export const featuresPl: FeaturesOverviewContent = {
   meta: {
-    title: "Funkcje dla salonów i gabinetów",
+    title: "Funkcje programu do salonu kosmetycznego",
     description:
-      "Kalendarz wizyt, rezerwacje online bez prowizji, kartoteka klientów, cyfrowe formularze zgód, dokumentacja zabiegów z dyktowaniem głosowym, przypomnienia i integracje – w jednym systemie dla salonu.",
+      "Kalendarz wizyt, rezerwacje online bez prowizji, kartoteka klientów, zgody na zabieg online, dokumentacja zabiegów z dyktowaniem głosowym, przypomnienia e-mail i integracje – w jednym systemie dla salonu i gabinetu.",
     keywords: [
       "program do salonu kosmetycznego",
       "system rezerwacji online",
       "kartoteka klientów salon kosmetyczny",
-      "elektroniczna karta zabiegowa",
+      "elektroniczna karta klienta",
       "formularz zgody na zabieg online",
     ],
   },
@@ -18,7 +18,7 @@ export const featuresPl: FeaturesOverviewContent = {
     eyebrow: "Przegląd funkcji",
     eyebrowIcon: "sparkles",
     title: { before: "Wszystkie ", highlight: "funkcje", after: " w jednym miejscu" },
-    description: "Kalendarz, rezerwacje, kartoteka klientów, formularze i dokumentacja – jedna platforma dla Twojego salonu.",
+    description: "Kalendarz, rezerwacje, kartoteka klientów, formularze i dokumentacja – jeden system dla całego salonu.",
     chips: ["Wszystko w jednym", "Bez prowizji", "Made in Austria"],
     secondaryCta: { label: "Zobacz cennik", href: { page: "pricing" } },
     tiles: [
@@ -32,7 +32,7 @@ export const featuresPl: FeaturesOverviewContent = {
   },
   grid: {
     title: "Kluczowe funkcje dla Twojego salonu ({count})",
-    subtitle: "Każda funkcja jest dopasowana do potrzeb salonów kosmetycznych i gabinetów.",
+    subtitle: "Każda funkcja powstała z myślą o codziennej pracy salonów kosmetycznych i gabinetów.",
     more: "Dowiedz się więcej",
     items: [
       {
@@ -40,7 +40,7 @@ export const featuresPl: FeaturesOverviewContent = {
         icon: "calendar",
         title: "Kalendarz wizyt",
         description:
-          "Planuj pracowników i gabinety przejrzyście w osobnych kolumnach. Widzisz wolne terminy, unikasz podwójnych rezerwacji i szybciej koordynujesz zmiany.",
+          "Każda osoba z zespołu i każdy gabinet w osobnej kolumnie. Widzisz wolne terminy, unikasz podwójnych rezerwacji i szybciej ogarniasz zmiany w grafiku.",
         color: "text-indigo-600",
         bg: "bg-indigo-50",
         border: "border-indigo-200 hover:border-indigo-400",
@@ -50,7 +50,7 @@ export const featuresPl: FeaturesOverviewContent = {
         href: { page: "treatflow-pay" },
         icon: "wallet",
         title: "Treatflow Pay",
-        description: "Zaliczka lub pełna płatność już przy rezerwacji online. Ustawiane dla każdej usługi, 2,69% od transakcji.",
+        description: "Zaliczka lub pełna płatność już przy rezerwacji online. Ustawiasz osobno dla każdej usługi, 2,69% od transakcji.",
         color: "text-violet-600",
         bg: "bg-violet-50",
         border: "border-violet-200 hover:border-violet-400",
@@ -62,7 +62,7 @@ export const featuresPl: FeaturesOverviewContent = {
         icon: "link",
         title: "Rezerwacje online",
         description:
-          "Własny link do rezerwacji dla Twojego salonu. Klienci rezerwują o każdej porze – potwierdzenia i przypomnienia wysyłają się automatycznie.",
+          "Własny link do rezerwacji dla Twojego salonu. Klienci umawiają się o każdej porze, a potwierdzenia i przypomnienia wysyłają się same.",
         color: "text-rose-600",
         bg: "bg-rose-50",
         border: "border-rose-200 hover:border-rose-400",
@@ -84,18 +84,18 @@ export const featuresPl: FeaturesOverviewContent = {
         icon: "clipboard-check",
         title: "Formularze i wywiad",
         description:
-          "Cyfrowe karty wywiadu i formularze zgody. Klienci wypełniają je wcześniej na smartfonie – bez papieru i zgodnie z przepisami.",
+          "Karty wywiadu i zgody na zabieg online. Klienci wypełniają je przed wizytą na smartfonie – bez papieru i zgodnie z RODO.",
         color: "text-orange-600",
         bg: "bg-orange-50",
         border: "border-orange-200 hover:border-orange-400",
-        highlights: ["Cyfrowy wywiad", "Wysyłka linkiem przed wizytą", "Bez papieru"],
+        highlights: ["Karta wywiadu online", "Link przed wizytą", "Bez papieru"],
       },
       {
         href: { page: "treatment-documentation" },
         icon: "file-text",
         title: "Dokumentacja zabiegów",
         description:
-          "Dokumentuj każdy zabieg cyfrowo: zdjęcia, użyte produkty, notatki i efekty. Idealne przy kolejnych zabiegach.",
+          "Każdy zabieg w jednym wpisie: zdjęcia, użyte produkty, notatki i efekty. Przy kolejnej wizycie wszystko masz pod ręką.",
         color: "text-blue-600",
         bg: "bg-blue-50",
         border: "border-blue-200 hover:border-blue-400",
@@ -105,18 +105,18 @@ export const featuresPl: FeaturesOverviewContent = {
         href: { page: "messaging" },
         icon: "bell",
         title: "Automatyczne przypomnienia",
-        description: "Przypomnienia e-mail przed każdą wizytą. Mniej nieobecności – w pełni automatycznie.",
+        description: "Przypomnienie e-mail przed każdą wizytą. Mniej nieodwołanych wizyt – w pełni automatycznie.",
         color: "text-purple-600",
         bg: "bg-purple-50",
         border: "border-purple-200 hover:border-purple-400",
-        highlights: ["Przypomnienia e-mail", "Mniej nieobecności", "Konfigurowalne terminy wysyłki"],
+        highlights: ["Przypomnienia e-mail", "Mniej nieodwołanych wizyt", "Własny termin wysyłki"],
       },
       {
         href: { page: "customer-workflows" },
         icon: "workflow",
         title: "Automatyzacje dla klientów",
         description:
-          "Wieloetapowe automatyzacje do opieki pozabiegowej, reaktywacji i kontaktu po wizycie – z czasem oczekiwania, warunkami i e-mailami.",
+          "Wieloetapowe automatyzacje do opieki pozabiegowej, odzyskiwania klientów i kontaktu po wizycie – z odstępami czasowymi, warunkami i e-mailami.",
         color: "text-indigo-600",
         bg: "bg-indigo-50",
         border: "border-indigo-200 hover:border-indigo-400",
@@ -127,21 +127,21 @@ export const featuresPl: FeaturesOverviewContent = {
         icon: "shopping-bag",
         title: "Sprzedaż produktów i magazyn",
         description:
-          "Sprzedawaj kosmetyki pielęgnacyjne bezpośrednio klientom. Zarządzaj magazynem, rejestruj sprzedaż i zwiększaj dodatkowe przychody.",
+          "Sprzedawaj kosmetyki do pielęgnacji domowej prosto w salonie. Kontroluj magazyn, rejestruj sprzedaż i buduj dodatkowe przychody.",
         color: "text-amber-600",
         bg: "bg-amber-50",
         border: "border-amber-200 hover:border-amber-400",
-        highlights: ["Sprzedaż produktów", "Zarządzanie magazynem", "Większe przychody"],
+        highlights: ["Sprzedaż produktów", "Stany magazynowe", "Dodatkowe przychody"],
       },
     ],
   },
   why: {
     title: "Dlaczego Treatflow?",
     points: [
-      "Wszystko w jednym: wszystkie funkcje na jednej platformie",
+      "Wszystko w jednym: wszystkie funkcje w jednym systemie",
       "Zgodność z RODO, serwery w UE",
       "Bez ukrytych kosztów i prowizji",
-      "14 dni za darmo, bez karty kredytowej",
+      "14 dni za darmo, bez podawania karty",
       "Bezpłatne wsparcie i wdrożenie",
       "Made in Austria",
     ],

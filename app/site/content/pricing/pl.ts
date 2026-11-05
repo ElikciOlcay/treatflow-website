@@ -2,14 +2,14 @@ import type { PricingPageContent } from "./types";
 
 export const pricingPl: PricingPageContent = {
   meta: {
-    title: "Cennik",
+    title: "Cennik programu do salonu kosmetycznego",
     description:
-      "Cennik Treatflow: Basic od 39 €/miesiąc, Booking od 59 €/miesiąc. Bez prowizji od rezerwacji, 14 dni za darmo, bez karty kredytowej.",
+      "Ile kosztuje program do salonu? Treatflow: Basic od 39 €/miesiąc, Booking od 59 €/miesiąc. Bez prowizji od rezerwacji, 14 dni za darmo, bez podawania karty.",
     keywords: [
       "program do salonu kosmetycznego cena",
       "system rezerwacji online cena",
       "program do salonu kosmetycznego bez prowizji",
-      "oprogramowanie dla gabinetu kosmetycznego cennik",
+      "program do gabinetu kosmetycznego cennik",
       "program do gabinetu medycyny estetycznej cena",
     ],
   },
@@ -18,7 +18,7 @@ export const pricingPl: PricingPageContent = {
   capsule: {
     question: "Ile kosztuje Treatflow?",
     answer:
-      "Basic od 39 €/miesiąc (zarządzanie klientami, formularze, dokumentacja), Booking od 59 €/miesiąc (z kalendarzem wizyt, rezerwacjami online i przypomnieniami). Bez prowizji od rezerwacji, 14 dni za darmo.",
+      "Basic od 39 €/miesiąc (kartoteka klientów, formularze, dokumentacja), Booking od 59 €/miesiąc (dodatkowo kalendarz wizyt, rezerwacje online i przypomnienia). Bez prowizji od rezerwacji, 14 dni za darmo.",
   },
   schema: {
     webPage: {
@@ -34,7 +34,7 @@ export const pricingPl: PricingPageContent = {
   comparison: {
     title: "Co zawierają pakiety?",
     subtitle: "Porównaj szczegółowo oba pakiety i wybierz ten, który pasuje do Twojego salonu.",
-    vatNote: "Wszystkie ceny netto (bez VAT).",
+    vatNote: "Wszystkie ceny netto + VAT.",
     featureLabel: "Funkcja",
     basicLabel: "Basic (39 €)",
     bookingLabel: "Booking (59 €)",
@@ -58,11 +58,11 @@ export const pricingPl: PricingPageContent = {
       { label: "Integracje (Kalendarz Google, Zapier, asystenci AI)", basic: false, booking: true },
       { label: "Wsparcie priorytetowe", basic: false, booking: true },
     ],
-    cta: "Wypróbuj za darmo przez 14 dni",
+    cta: "Wypróbuj 14 dni za darmo",
   },
   why: {
     title: "Dlaczego Treatflow?",
-    subtitle: "Przejrzyste stałe ceny zamiast ukrytych kosztów i prowizji.",
+    subtitle: "Stała, przejrzysta cena zamiast ukrytych kosztów i prowizji.",
     stats: [
       { value: "0%", label: "prowizji od rezerwacji" },
       { value: "0 €", label: "opłat za wdrożenie" },
@@ -77,12 +77,12 @@ export const pricingPl: PricingPageContent = {
       {
         question: "Ile kosztuje Treatflow?",
         answer:
-          "Treatflow oferuje dwa pakiety: Basic od 39 €/miesiąc do zarządzania klientami, formularzy i dokumentacji. Booking od 59 €/miesiąc dodatkowo z kalendarzem wizyt, rezerwacjami online i automatycznymi przypomnieniami. Oba pakiety możesz testować za darmo przez 14 dni.",
+          "Treatflow ma dwa pakiety: Basic od 39 €/miesiąc – kartoteka klientów, formularze i dokumentacja – oraz Booking od 59 €/miesiąc, który dodaje kalendarz wizyt, rezerwacje online i automatyczne przypomnienia. Oba pakiety możesz testować za darmo przez 14 dni.",
       },
       {
         question: "Czy są ukryte koszty?",
         answer:
-          "Nie. Treatflow działa w oparciu o przejrzyste stałe ceny – bez prowizji, opłat za wdrożenie i ukrytych dopłat. Płacisz dokładnie tyle, ile widzisz.",
+          "Nie. W Treatflow obowiązują stałe, przejrzyste ceny – bez prowizji, opłat za wdrożenie i ukrytych dopłat. Płacisz dokładnie tyle, ile widzisz w cenniku.",
       },
       {
         question: "Czy mogę zrezygnować w każdej chwili?",
@@ -92,12 +92,12 @@ export const pricingPl: PricingPageContent = {
       {
         question: "Czy istnieje darmowy program do salonu kosmetycznego?",
         answer:
-          "Niektórzy dostawcy, np. Fresha, oferują darmowe wersje podstawowe, ale zarabiają na opłatach za płatności i funkcjach premium. Treatflow oferuje przejrzyste stałe ceny bez ukrytych kosztów – od 39 €/miesiąc z pełnym zakresem funkcji.",
+          "Niektórzy dostawcy, np. Fresha, mają darmowe wersje podstawowe, ale zarabiają na opłatach od płatności i funkcjach premium. Treatflow stawia na stałą, przejrzystą cenę bez ukrytych kosztów – od 39 €/miesiąc z pełnym zakresem funkcji.",
       },
       {
         question: "Czy pakiet Booking się opłaca?",
         answer:
-          "Tak, jeśli potrzebujesz rezerwacji online, automatycznych przypomnień e-mail o wizytach i cyfrowego kalendarza. Z pakietem Booking masz wyraźnie mniej nieobecności i mniej czasu spędzasz przy telefonie.",
+          "Tak, jeśli potrzebujesz rezerwacji online, automatycznych przypomnień e-mail i elektronicznego kalendarza wizyt. Z pakietem Booking masz wyraźnie mniej nieodwołanych wizyt i spędzasz mniej czasu przy telefonie.",
       },
     ],
   },

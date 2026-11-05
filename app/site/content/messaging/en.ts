@@ -2,7 +2,7 @@ import type { MessagingContent } from "./types";
 
 export const messagingEn: MessagingContent = {
   meta: {
-    title: "Automated Email Reminders for Beauty Salons",
+    title: "Automated Email Appointment Reminders for Salons",
     description:
       "Automatic client messages for beauty salons: booking confirmations, email reminders, cancellation notices, follow-ups and birthday greetings – with ready-made templates.",
     keywords: [
@@ -20,14 +20,14 @@ export const messagingEn: MessagingContent = {
   schema: {
     id: "nachrichtenautomatisierung",
     webPage: {
-      name: "Automated Email Reminders for Beauty Salons",
+      name: "Automated Email Appointment Reminders for Salons",
       description:
         "Automatic client messages for beauty salons: booking confirmations, email reminders, cancellation notices, follow-ups and birthday greetings.",
     },
   },
-  breadcrumb: "Messaging",
+  breadcrumb: "Reminders",
   hero: {
-    eyebrow: "Messaging automation",
+    eyebrow: "Automated messages",
     eyebrowIcon: "message-circle",
     title: { before: "Automatic ", highlight: "reminders" },
     description:
@@ -64,7 +64,7 @@ export const messagingEn: MessagingContent = {
       {
         icon: "heart",
         title: "Personal greetings",
-        text: "Birthday wishes and personalised messages go out automatically – building loyalty with no extra effort.",
+        text: "Birthday wishes and personalised messages go out automatically – building loyalty with zero extra effort.",
       },
     ],
   },
@@ -73,7 +73,7 @@ export const messagingEn: MessagingContent = {
     steps: [
       { title: "Pick a template", text: "Choose a ready-made template for confirmations, reminders or follow-ups. Placeholders such as the client's name and appointment date are filled in automatically." },
       { title: "Set the timing", text: "Decide when the message should go out – for example 3 days and 1 day before the appointment, or right after the treatment." },
-      { title: "It runs by itself", text: "Treatflow sends the emails at the right time. You take care of your clients." },
+      { title: "It runs by itself", text: "Treatflow sends the emails at the right time, so you can focus on your clients." },
     ],
   },
   cards: {
@@ -89,7 +89,7 @@ export const messagingEn: MessagingContent = {
     ],
   },
   faq: {
-    title: "Frequently asked questions about messaging automation",
+    title: "Frequently asked questions about automated messages",
     items: [
       {
         question: "How can I reduce no-shows in my beauty salon?",
@@ -131,7 +131,7 @@ export const messagingEn: MessagingContent = {
     ],
   },
   cta: {
-    title: "Ready for automatic client communication?",
+    title: "Ready to put client communication on autopilot?",
     description: "Try it free for 14 days – reminders, follow-ups and birthday greetings without extra work.",
     secondary: { label: "See the calendar", href: { page: "appointment-calendar" } },
   },

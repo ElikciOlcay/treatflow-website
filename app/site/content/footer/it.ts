@@ -6,7 +6,7 @@ import type { FooterContent } from "./types";
  * nascosti automaticamente (vedi app/i18n/site-pages.ts).
  */
 export const footerIt: FooterContent = {
-  tagline: "Il tuo assistente digitale per il centro. Made in Austria.",
+  tagline: "Il gestionale digitale per il tuo centro. Made in Austria.",
   instagramAria: "Treatflow su Instagram",
   columns: [
     {
@@ -22,7 +22,7 @@ export const footerIt: FooterContent = {
             { href: { page: "try-forms" }, label: "Prova i moduli di esempio" },
             { href: { page: "treatment-documentation" }, label: "Documentazione" },
             { href: { page: "messaging" }, label: "Promemoria" },
-            { href: { page: "customer-workflows" }, label: "Flussi per le clienti" },
+            { href: { page: "customer-workflows" }, label: "Flussi clienti" },
             { href: { page: "integrations" }, label: "Integrazioni" },
           ],
         },
@@ -36,11 +36,11 @@ export const footerIt: FooterContent = {
             { href: { page: "beauty-salon-software" }, label: "Centri estetici" },
             { href: { page: "laser-hair-removal-software" }, label: "Laser e IPL" },
             { href: { page: "permanent-makeup-software" }, label: "Trucco permanente" },
-            { href: { page: "aesthetic-clinic-software" }, label: "Cliniche estetiche" },
-            { href: { page: "nail-salon-software" }, label: "Centri unghie" },
+            { href: { page: "aesthetic-clinic-software" }, label: "Medicina estetica" },
+            { href: { page: "nail-salon-software" }, label: "Onicotecnica" },
             { href: { page: "foot-care-software" }, label: "Pedicure e podologia" },
             { href: { page: "lash-studio-software" }, label: "Extension ciglia" },
-            { href: { page: "tattoo-studio-software" }, label: "Studi di tatuaggi" },
+            { href: { page: "tattoo-studio-software" }, label: "Studi di tatuaggio" },
             { href: { page: "spa-wellness-software" }, label: "Spa e wellness" },
             { href: { page: "massage-software" }, label: "Massaggi" },
           ],
@@ -53,7 +53,7 @@ export const footerIt: FooterContent = {
           title: "Prodotto",
           links: [
             { href: { page: "pricing" }, label: "Prezzi" },
-            { href: { page: "software-comparison" }, label: "Confronto software" },
+            { href: { page: "software-comparison" }, label: "Confronto gestionali" },
             { href: { page: "treatflow-vs-treatwell" }, label: "Treatflow vs Treatwell" },
             { href: { page: "treatflow-vs-fresha" }, label: "Treatflow vs Fresha" },
             { href: { page: "shop" }, label: "Shop" },
@@ -88,15 +88,15 @@ export const footerIt: FooterContent = {
       ],
     },
   ],
-  popularTopicsTitle: "Argomenti popolari",
+  popularTopicsTitle: "Argomenti più cercati",
   popularTopics: [
     { href: { page: "online-booking" }, label: "Prenotazioni online per centri estetici" },
-    { href: { page: "treatment-documentation" }, label: "Software per la documentazione dei trattamenti" },
-    { href: { page: "forms" }, label: "Schede di anamnesi digitali" },
+    { href: { page: "treatment-documentation" }, label: "Scheda trattamento digitale" },
+    { href: { page: "forms" }, label: "Scheda anamnestica digitale" },
     { href: { page: "messaging" }, label: "Promemoria appuntamenti" },
     { href: { page: "appointment-calendar" }, label: "Agenda appuntamenti per centri estetici" },
     { href: { page: "client-records" }, label: "Schede clienti per centri estetici" },
-    { href: { page: "aesthetic-clinic-software" }, label: "Software per cliniche estetiche" },
+    { href: { page: "aesthetic-clinic-software" }, label: "Gestionale per la medicina estetica" },
     { href: { page: "software-comparison" }, label: "Confronto gestionali per centri estetici" },
   ],
   rights: "Tutti i diritti riservati.",

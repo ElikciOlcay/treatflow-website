@@ -4,13 +4,13 @@ export const clientWorkflowsTr: ClientWorkflowsContent = {
   meta: {
     title: "Güzellik Salonları için Müşteri Otomasyonları",
     description:
-      "Treatflow ile çok adımlı otomasyonlar: bekleme süreleri, koşullar ve e-posta gönderimiyle işlem sonrası takip, müşteri geri kazanımı ve hatırlatmalar – elle takip etmeye gerek kalmadan.",
+      "Treatflow ile çok adımlı müşteri otomasyonları: bekleme süreleri, koşullar ve otomatik e-postalarla bakım takibi, kayıp müşteri geri kazanımı ve hatırlatmalar – tek tek takip etmeden.",
     keywords: [
       "müşteri otomasyonu güzellik salonu",
       "salon pazarlama otomasyonu",
       "işlem sonrası takip",
-      "müşteri geri kazanma",
-      "güzellik merkezi müşteri takibi",
+      "kayıp müşteri geri kazanma",
+      "salon müşteri sadakati",
       "Treatflow otomasyon",
     ],
   },
@@ -20,7 +20,7 @@ export const clientWorkflowsTr: ClientWorkflowsContent = {
     webPage: {
       name: "Güzellik Salonları için Müşteri Otomasyonları",
       description:
-        "Çok adımlı otomasyonlar: bekleme süreleri, koşullar ve e-posta gönderimiyle işlem sonrası takip, geri kazanım ve hatırlatmalar.",
+        "Çok adımlı otomasyonlar: bekleme süreleri, koşullar ve otomatik e-postalarla bakım takibi, geri kazanım ve hatırlatmalar.",
     },
   },
   breadcrumb: "Müşteri otomasyonları",
@@ -29,14 +29,14 @@ export const clientWorkflowsTr: ClientWorkflowsContent = {
     eyebrowIcon: "workflow",
     title: { before: "Çok adımlı ", highlight: "otomasyonlar" },
     description:
-      "İşlem sonrası takip, geri kazanım ve hatırlatma akışları kurun – bekleme süreleri, koşullar ve otomatik e-postalarla.",
-    chips: ["Görsel akış editörü", "Otomatik e-postalar", "Yeni randevuda durur"],
-    secondaryCta: { label: "Hatırlatmalara git", href: { page: "messaging" } },
+      "Bakım takibi, müşteri geri kazanımı ve hatırlatmalar için akışlar kurun – bekleme süreleri, koşullar ve otomatik e-postalarla.",
+    chips: ["Görsel akış editörü", "Otomatik e-postalar", "Yeni randevu alınınca durur"],
+    secondaryCta: { label: "Hatırlatmaları görün", href: { page: "messaging" } },
     capsules: [
       {
         question: "Güzellik salonunda işlem sonrası takibi nasıl otomatikleştiririm?",
         answer:
-          "Treatflow'daki müşteri otomasyonlarıyla çok adımlı akışlar kurarsınız: örneğin işlemden sonra 2 gün bekleyin, müşterinin nasıl olduğunu sorun, yeni randevu alıp almadığını kontrol edin ve ancak almadıysa bir sonraki randevu için davet gönderin. Böylece elle takip etmeden müşterinizle bağınızı korursunuz.",
+          "Treatflow'daki müşteri otomasyonlarıyla çok adımlı akışlar kurarsınız: örneğin işlemden 2 gün sonra müşterinize nasıl olduğunu sorun, yeni randevu alıp almadığını kontrol edin ve almadıysa bir sonraki randevuya davet edin. Böylece tek tek takip etmeden müşterinizle bağınızı korursunuz.",
       },
     ],
     image: {
@@ -47,52 +47,52 @@ export const clientWorkflowsTr: ClientWorkflowsContent = {
   understand: {
     title: "Kendi kendine ilerleyen akışlar",
     description:
-      "Tek tek hatırlatmalar yerine adım adım ilerleyen akışlar kurarsınız – işlem sonrası takip, geri kazanım ve birden fazla adımlı hatırlatmalar için.",
+      "Tek seferlik hatırlatmalar yerine adım adım ilerleyen akışlar kurarsınız – bakım takibi, müşteri geri kazanımı ve çok adımlı hatırlatmalar için.",
     items: [
       {
         icon: "heart",
         title: "Ek iş yükü olmadan bakım takibi",
-        text: "Cildin nasıl olduğunu otomatik olarak sorun – müşteri isterse bir sonraki randevuyu önerin.",
+        text: "Cildinin nasıl olduğunu otomatik olarak sorun – müşteri isterse bir sonraki randevuyu önerin.",
       },
       {
         icon: "bell",
         title: "Uzun süredir gelmeyen müşterileri geri kazanın",
-        text: "60–90 gün ziyaret olmazsa salonunuza geri davet eden bir mesaj gider – kişisel ve doğru zamanda.",
+        text: "60–90 gün uğramayan müşterilere salonunuza davet eden bir mesaj gider – kişisel ve tam zamanında.",
       },
       {
         icon: "git-branch",
         title: "Akıllı dallanma",
-        text: "Yeni randevu alınıp alınmadığını kontrol edin. Alındıysa akış durur – aynı müşteriye iki kez yazılmaz.",
+        text: "Yeni randevu alınıp alınmadığını kontrol edin. Alındıysa akış durur – aynı müşteriye gereksiz yere tekrar yazılmaz.",
       },
     ],
   },
   howItWorks: {
     description: "Üç adımda ilk otomasyonunuz.",
     steps: [
-      { title: "Tetikleyiciyi seçin", text: "Örneğin randevu bittikten sonra veya bir müşteri uzun süredir gelmediğinde başlatın." },
+      { title: "Tetikleyiciyi seçin", text: "Örneğin randevu tamamlandığında veya bir müşteri uzun süredir gelmediğinde başlasın." },
       { title: "Adımları bağlayın", text: "Bekleme sürelerini, mesajları ve koşulları görsel editörde sıralayın." },
       { title: "Etkinleştirin", text: "Treatflow akışı yürütür ve mesajları e-posta ile gönderir." },
     ],
   },
   cards: {
     title: "Neler sunuyoruz",
-    description: "Çok adımlı müşteri iletişimi için ihtiyacınız olan her şey – net ve kontrol edilebilir.",
+    description: "Çok adımlı müşteri iletişimi için ihtiyacınız olan her şey – sade ve kontrol sizde.",
     items: [
-      { icon: "workflow", title: "Görsel akış editörü", text: "Tetikleyici, bekleme süresi, mesaj ve koşul – sürükle bırak ile.", points: ["Net genel bakış", "Birden fazla adım", "Kolayca değiştirilebilir"] },
+      { icon: "workflow", title: "Görsel akış editörü", text: "Tetikleyici, bekleme süresi, mesaj ve koşul – sürükle-bırak ile.", points: ["Net genel bakış", "Birden fazla adım", "Kolayca değiştirilebilir"] },
       { icon: "message-circle", title: "E-posta mesajları", text: "Her adım müşterinizin gelen kutusuna ulaşır.", points: ["E-posta", "Kendi metniniz", "Otomatik gönderim"] },
-      { icon: "clock", title: "Bekleme süreleri", text: "Adımlar arasında gün veya saat – salonunuzdaki iş akışına uygun.", points: ["Doğru takip zamanı", "Geri kazanım", "Akılda tutmaya gerek yok"] },
-      { icon: "git-branch", title: "Koşullar", text: "Örneğin yeni randevuları kontrol edin ve akışı zamanında durdurun.", points: ["Mükerrer e-posta yok", "Akıllı dallanma", "Daha alakalı mesajlar"] },
-      { icon: "heart", title: "Bakım sonrası akışlar", text: "Önce hal hatır sorma, ardından gerekirse yeni randevu daveti – yalnızca anlamlı olduğunda.", points: ["Daha güçlü bağlılık", "İleride daha az gelmeyen müşteri", "Daha fazla tekrar randevu"] },
+      { icon: "clock", title: "Bekleme süreleri", text: "Adımlar arasında gün veya saat – salonunuzdaki iş akışına uygun.", points: ["Doğru takip zamanı", "Geri kazanım", "Aklınızda tutmanıza gerek yok"] },
+      { icon: "git-branch", title: "Koşullar", text: "Örneğin yeni randevu olup olmadığını kontrol edin ve akışı zamanında durdurun.", points: ["Mükerrer e-posta yok", "Akıllı dallanma", "Daha alakalı mesajlar"] },
+      { icon: "heart", title: "Bakım sonrası akışlar", text: "Önce hal hatır sorma, ardından gerekirse yeni randevu daveti – yalnızca gerçekten gerektiğinde.", points: ["Daha güçlü bağlılık", "İleride daha az gelmeyen müşteri", "Daha fazla tekrar randevu"] },
       { icon: "zap", title: "Geri kazanım", text: "Uzun bir aradan sonra müşterileri otomatik olarak yeniden davet edin.", points: ["60–90 gün", "Kişisel", "Liste karmaşası yok"] },
     ],
   },
   faq: {
-    title: "Müşteri otomasyonları hakkında sık sorulan sorular",
+    title: "Müşteri otomasyonları hakkında sıkça sorulan sorular",
     items: [
       {
         question: "Treatflow'da müşteri otomasyonları nedir?",
         answer:
-          "Müşteri otomasyonları çok adımlı akışlardır: tetikleyici, bekleme süreleri, mesajlar ve koşullardan oluşan süreçler kurarsınız. Böylece işlem sonrası takip, geri kazanım ve hatırlatmalar her mesajı elle yazmanıza gerek kalmadan otomatik işler.",
+          "Müşteri otomasyonları çok adımlı akışlardır: tetikleyici, bekleme süreleri, mesajlar ve koşullardan oluşan süreçler kurarsınız. Böylece bakım takibi, müşteri geri kazanımı ve hatırlatmalar, her mesajı tek tek yazmanıza gerek kalmadan otomatik işler.",
       },
       {
         question: "Otomasyonların basit hatırlatmalardan farkı nedir?",
@@ -102,7 +102,7 @@ export const clientWorkflowsTr: ClientWorkflowsContent = {
       {
         question: "Otomasyon mesajları hangi kanaldan gönderilir?",
         answer:
-          "Otomasyon adımları e-posta ile gönderilir. Randevu hatırlatmaları basit mesajlar bölümünde kullanılmaya devam eder.",
+          "Otomasyon adımları e-postayla gönderilir. Randevu hatırlatmaları ise yine Hatırlatmalar bölümünden ayarlanır.",
       },
       {
         question: "Müşteri yeni randevu aldığında otomasyon durabilir mi?",
@@ -112,7 +112,7 @@ export const clientWorkflowsTr: ClientWorkflowsContent = {
       {
         question: "Başlangıç için hangi otomasyonlar uygundur?",
         answer:
-          "En çok tercih edilenler: işlemden 1–2 gün sonra bakım takibi, 60–90 gün ziyaret olmadığında geri kazanım ve henüz yeni randevu alınmadıysa ikinci bir mesaj gönderen çok adımlı bakım takibi.",
+          "En çok tercih edilenler: işlemden 1–2 gün sonra bakım takibi, 60–90 gün uğramayan müşteriler için geri kazanım mesajı ve henüz yeni randevu alınmadıysa ikinci bir mesaj gönderen çok adımlı bakım takibi.",
       },
     ],
   },
@@ -120,12 +120,12 @@ export const clientWorkflowsTr: ClientWorkflowsContent = {
     items: [
       { href: { page: "messaging" }, title: "Hatırlatmalar", description: "Randevudan önce e-posta" },
       { href: { page: "appointment-calendar" }, title: "Randevu takvimi", description: "Randevular ve otomasyonlar bir arada" },
-      { href: { page: "client-records" }, title: "Müşteri takibi", description: "Geçmiş ve takip" },
+      { href: { page: "client-records" }, title: "Müşteri takibi", description: "Müşteri kartı ve işlem geçmişi" },
     ],
   },
   cta: {
     title: "Çok adımlı müşteri otomasyonlarına hazır mısınız?",
-    description: "30 gün ücretsiz deneyin – elle takip etmeden bakım takibi ve müşteri geri kazanımı.",
-    secondary: { label: "Hatırlatmalara git", href: { page: "messaging" } },
+    description: "30 gün ücretsiz deneyin – tek tek uğraşmadan bakım takibi ve müşteri geri kazanımı.",
+    secondary: { label: "Hatırlatmaları görün", href: { page: "messaging" } },
   },
 };

@@ -4,14 +4,14 @@ export const treatmentDocumentationEs: TreatmentDocumentationContent = {
   meta: {
     title: "Documentación digital de tratamientos para centros de estética",
     description:
-      "Documentación digital de tratamientos para centros de estética y clínicas estéticas: fotos de antes y después, notas, parámetros de los equipos e historial en el perfil de cliente. Dicta las notas en lugar de escribirlas.",
+      "Documentación digital de tratamientos para centros de estética y clínicas estéticas: fotos de antes y después, notas, parámetros de aparatología e historial en la ficha del cliente. Dicta las notas en vez de escribirlas.",
     keywords: [
-      "software documentación de tratamientos",
+      "ficha de tratamiento estética",
       "historial de tratamientos centro de estética",
-      "software fotos antes y después",
-      "app notas de tratamiento",
+      "software documentación de tratamientos",
+      "fotos antes y después estética",
       "dictar notas de tratamiento",
-      "documentación clínica estética",
+      "historia clínica estética digital",
     ],
   },
   dates: { modified: "2026-08-18", published: "2024-06-01" },
@@ -28,19 +28,19 @@ export const treatmentDocumentationEs: TreatmentDocumentationContent = {
     eyebrowIcon: "file-text",
     title: { before: "Documenta tus tratamientos en ", highlight: "digital" },
     description:
-      "Fotos, notas y parámetros en un solo lugar, con ayuda de la IA. En la siguiente cita sabrás al instante qué se hizo.",
+      "Fotos, notas y parámetros en un solo lugar, con ayuda de la IA. En la siguiente cita sabrás al momento qué se hizo.",
     chips: ["Fotos de antes y después", "Dictado con IA", "Firma digital"],
     secondaryCta: { label: "Formularios digitales", href: { page: "forms" } },
     capsules: [
       {
         question: "¿Qué software sirve para documentar tratamientos estéticos?",
         answer:
-          "Treatflow documenta los tratamientos en digital con fotos de antes y después, parámetros, notas y firma. Sobre todo en tratamientos con aparatología como láser o IPL, una documentación completa es importante, y Treatflow da soporte justo a ese flujo de trabajo.",
+          "Treatflow documenta los tratamientos en digital con fotos de antes y después, parámetros, notas y firma. Una documentación completa es especialmente importante en tratamientos con aparatología como láser o IPL, y Treatflow está pensado justo para ese día a día.",
       },
       {
         question: "¿Cómo documento la evolución de los tratamientos estéticos?",
         answer:
-          "Cada sesión recibe una entrada con parámetros, productos, fotos y notas. El historial queda en la ficha de cliente. Puedes dictar las notas; Treatflow las convierte en texto y, si quieres, lo pule.",
+          "Cada sesión tiene su registro con parámetros, productos, fotos y notas, y el historial queda en la ficha de cliente. Puedes dictar las notas: Treatflow las pasa a texto y, si quieres, lo pule.",
       },
     ],
     image: {
@@ -49,44 +49,44 @@ export const treatmentDocumentationEs: TreatmentDocumentationContent = {
     },
   },
   understand: {
-    title: "Cada tratamiento bien registrado",
+    title: "Cada tratamiento, bien documentado",
     description:
-      "Después de cada sesión tienes una entrada digital con fotos, notas y parámetros, todo guardado en el perfil de cliente.",
+      "Después de cada sesión tienes un registro digital con fotos, notas y parámetros, guardado en la ficha del cliente.",
     items: [
       {
         icon: "camera",
         title: "Fotos de antes y después",
-        text: "Registra la evolución con fotos. Así puedes enseñar a tu clienta cómo avanza el tratamiento.",
+        text: "Registra la evolución con fotos y enséñale a tu cliente cómo avanza el tratamiento.",
       },
       {
         icon: "brain",
         title: "Con la voz o con IA",
-        text: "Dicta tus notas. Treatflow las convierte en texto y, si quieres, lo pule con IA. Menos teclear, más tiempo para el tratamiento.",
+        text: "Dicta tus notas: Treatflow las pasa a texto y, si quieres, lo pule con IA. Menos teclear y más tiempo para tratar.",
       },
       {
         icon: "shield",
         title: "Completa y trazable",
-        text: "Cada entrada se guarda con fecha, parámetros y firma opcional en el perfil de cliente, para que puedas demostrar qué se hizo si más adelante surgen preguntas.",
+        text: "Cada registro se guarda con fecha, parámetros y, si quieres, firma en la ficha del cliente, para que puedas acreditar qué se hizo si más adelante surgen dudas.",
       },
     ],
   },
   howItWorks: {
     description: "Documentación lista en tres pasos.",
     steps: [
-      { title: "Abre la documentación", text: "Abre la documentación directamente desde la cita o el perfil de cliente: la clienta y el tratamiento ya vienen rellenados." },
-      { title: "Añade fotos y notas", text: "Sube fotos, introduce los parámetros del tratamiento y dicta o escribe tus notas. Si hace falta, pide la firma de la clienta." },
-      { title: "Guardado y siempre disponible", text: "Todo se guarda automáticamente en el perfil de cliente. En la siguiente cita ves al instante qué se hizo la última vez." },
+      { title: "Abre la documentación", text: "Ábrela directamente desde la cita o la ficha del cliente: el cliente y el tratamiento ya vienen rellenados." },
+      { title: "Añade fotos y notas", text: "Sube fotos, introduce los parámetros del tratamiento y dicta o escribe tus notas. Si hace falta, pide la firma del cliente." },
+      { title: "Guardado y siempre a mano", text: "Todo se guarda automáticamente en la ficha del cliente. En la siguiente cita ves al momento qué se hizo la última vez." },
     ],
   },
   cards: {
-    title: "Lo que obtienes",
-    description: "Todo lo que necesitas para documentar tus tratamientos con orden, sin papeleo.",
+    title: "Qué incluye",
+    description: "Todo lo que necesitas para documentar tus tratamientos con orden y sin papeleo.",
     items: [
-      { icon: "camera", title: "Fotos de antes y después", text: "Guarda las fotos directamente con el tratamiento y compáralas por orden cronológico.", points: ["Mismo contexto", "En el perfil de cliente", "Conforme al RGPD"] },
-      { icon: "mic", title: "Dictado por voz", text: "Habla en lugar de escribir: ideal durante el tratamiento o justo después.", points: ["Manos libres", "Rápido", "Texto claro"] },
-      { icon: "brain", title: "Asistente IA", text: "Si quieres, pule y estructura el texto dictado; revisas la entrada antes de guardarla.", points: ["Pulir el texto", "Estructura", "Menos teclear"] },
-      { icon: "file-text", title: "Parámetros y productos", text: "Registra con orden los valores de los equipos, los productos y los ajustes.", points: ["Láser/IPL", "Productos", "Cuidados posteriores"] },
-      { icon: "pen-tool", title: "Firma digital", text: "Recoge el consentimiento o la confirmación en digital en la tableta.", points: ["En el dispositivo", "En el perfil", "Trazable"] },
+      { icon: "camera", title: "Fotos de antes y después", text: "Guarda las fotos junto al tratamiento y compáralas en orden cronológico.", points: ["Junto al tratamiento", "En la ficha del cliente", "Conforme al RGPD"] },
+      { icon: "mic", title: "Dictado por voz", text: "Habla en vez de escribir: ideal durante el tratamiento o justo al terminar.", points: ["Manos libres", "Rápido", "Texto claro"] },
+      { icon: "brain", title: "Asistente de IA", text: "Si quieres, pule y ordena el texto dictado; tú revisas el registro antes de guardarlo.", points: ["Pulir el texto", "Estructura", "Menos teclear"] },
+      { icon: "file-text", title: "Parámetros y productos", text: "Registra con orden los valores de la aparatología, los productos y los ajustes.", points: ["Láser/IPL", "Productos", "Cuidados posteriores"] },
+      { icon: "pen-tool", title: "Firma digital", text: "Recoge el consentimiento o la conformidad del cliente en la tablet.", points: ["En la tablet", "En la ficha", "Trazable"] },
       { icon: "shield", title: "Archivo seguro", text: "Toda la documentación se guarda en servidores de la UE y se puede consultar en cualquier momento.", points: ["Servidores en la UE", "Cifrado", "Siempre disponible"] },
     ],
   },
@@ -96,27 +96,27 @@ export const treatmentDocumentationEs: TreatmentDocumentationContent = {
       {
         question: "¿Qué software sirve para documentar tratamientos estéticos?",
         answer:
-          "Treatflow documenta los tratamientos en digital con fotos de antes y después, parámetros, notas y firma. Sobre todo en tratamientos con aparatología como láser o IPL, una documentación completa es importante, y Treatflow da soporte justo a ese flujo de trabajo.",
+          "Treatflow documenta los tratamientos en digital con fotos de antes y después, parámetros, notas y firma. Una documentación completa es especialmente importante en tratamientos con aparatología como láser o IPL, y Treatflow está pensado justo para ese día a día.",
       },
       {
         question: "¿Cómo documento la evolución de los tratamientos estéticos?",
         answer:
-          "Cada sesión recibe una entrada con parámetros, números de lote, fotos y notas. El historial de la ficha de cliente muestra la evolución a lo largo de varias citas. Puedes dictar las notas; Treatflow las convierte en texto y, si quieres, lo pule con IA.",
+          "Cada sesión tiene su registro con parámetros, números de lote, fotos y notas. El historial de la ficha de cliente muestra la evolución a lo largo de las citas. Puedes dictar las notas: Treatflow las pasa a texto y, si quieres, lo pule con IA.",
       },
       {
         question: "¿Es obligatoria la documentación de tratamientos en un centro de estética?",
         answer:
-          "Depende del país y del tratamiento. En los tratamientos con aparatología como láser o IPL, normalmente se espera una documentación completa. En todos los demás es recomendable: por seguridad jurídica, calidad y satisfacción de las clientas.",
+          "Depende del país y del tratamiento. En los tratamientos con aparatología como láser o IPL, normalmente se espera una documentación completa. En los demás es muy recomendable, por seguridad jurídica, por calidad y por la satisfacción de tus clientes.",
       },
       {
         question: "¿Qué debe incluir una documentación profesional de tratamientos?",
         answer:
-          "Tipo y fecha del tratamiento, productos y parámetros, fotos de antes y después, valoración de la piel, notas de evolución, recomendaciones de cuidados posteriores y, opcionalmente, la firma de la clienta.",
+          "Tipo y fecha del tratamiento, productos y parámetros, fotos de antes y después, valoración de la piel, notas de evolución, recomendaciones de cuidados posteriores y, opcionalmente, la firma del cliente.",
       },
       {
-        question: "¿Cómo hago correctamente las fotos de antes y después?",
+        question: "¿Cómo se hacen bien las fotos de antes y después?",
         answer:
-          "En las mismas condiciones (luz, ángulo, distancia). En Treatflow guardas las fotos directamente en la documentación y las asignas al perfil de cliente.",
+          "Siempre en las mismas condiciones (luz, ángulo y distancia). En Treatflow guardas las fotos directamente en la documentación y quedan asociadas a la ficha del cliente.",
       },
       {
         question: "¿Qué debo documentar en los tratamientos de láser e IPL?",
@@ -126,7 +126,7 @@ export const treatmentDocumentationEs: TreatmentDocumentationContent = {
       {
         question: "¿Puedo dictar las notas del tratamiento en lugar de escribirlas?",
         answer:
-          "Sí. En la documentación dictas las notas. Treatflow convierte la voz en texto y, si quieres, lo pule con IA. La ficha no se redacta de forma totalmente automática.",
+          "Sí. En la documentación dictas las notas y Treatflow pasa la voz a texto; si quieres, lo pule con IA. Eso sí, la ficha no se redacta de forma totalmente automática.",
       },
       {
         question: "¿Puedo marcar zonas de tratamiento en fotos o bocetos?",
@@ -137,14 +137,14 @@ export const treatmentDocumentationEs: TreatmentDocumentationContent = {
   },
   related: {
     items: [
-      { href: { page: "forms" }, title: "Formularios", description: "Anamnesis y consentimientos en digital" },
-      { href: { page: "client-records" }, title: "Fichas de clientes", description: "Historial en el perfil de cliente" },
+      { href: { page: "forms" }, title: "Formularios", description: "Anamnesis y consentimientos digitales" },
+      { href: { page: "client-records" }, title: "Fichas de cliente", description: "El historial, en la ficha del cliente" },
       { href: { page: "appointment-calendar" }, title: "Agenda de citas", description: "Abre la documentación desde la cita" },
     ],
   },
   cta: {
-    title: "¿Lista para una documentación clara?",
-    description: "Pruébalo gratis durante 14 días, sin tarjeta de crédito. Documentación, fotos y firmas en una sola app.",
+    title: "Documenta tus tratamientos con orden",
+    description: "Pruébalo gratis 14 días, sin tarjeta de crédito: documentación, fotos y firmas en una sola app.",
     secondary: { label: "Formularios digitales", href: { page: "forms" } },
   },
 };

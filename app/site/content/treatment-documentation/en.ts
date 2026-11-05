@@ -2,50 +2,50 @@ import type { TreatmentDocumentationContent } from "./types";
 
 export const treatmentDocumentationEn: TreatmentDocumentationContent = {
   meta: {
-    title: "Digital Treatment Documentation for Beauty Salons",
+    title: "Digital Treatment Records for Salons & Aesthetic Clinics",
     description:
-      "Digital treatment documentation for beauty and aesthetic salons: before-and-after photos, notes, device parameters and history in the client profile. Dictate notes instead of typing.",
+      "Digital treatment records for beauty salons and aesthetic clinics: before-and-after photos, notes, device settings and treatment history in the client profile. Dictate your notes instead of typing them.",
     keywords: [
-      "treatment documentation software",
+      "treatment record software",
       "beauty salon treatment records",
       "before and after photo software",
       "treatment notes app",
       "dictate treatment notes",
-      "aesthetic clinic documentation",
+      "aesthetics clinic treatment notes",
     ],
   },
   dates: { modified: "2026-08-18", published: "2024-06-01" },
   schema: {
     id: "behandlungsdokumentation",
     webPage: {
-      name: "Digital Treatment Documentation for Beauty Salons",
-      description: "Digital treatment documentation with before-and-after photos, notes and history.",
+      name: "Digital Treatment Records for Salons & Aesthetic Clinics",
+      description: "Digital treatment records with before-and-after photos, notes and history.",
     },
   },
-  breadcrumb: "Documentation",
+  breadcrumb: "Treatment records",
   hero: {
-    eyebrow: "Treatment documentation",
+    eyebrow: "Treatment records",
     eyebrowIcon: "file-text",
-    title: { before: "Document treatments ", highlight: "digitally" },
+    title: { before: "Record every treatment ", highlight: "digitally" },
     description:
       "Photos, notes and parameters in one place – with AI support. At the next appointment you know straight away what was done.",
     chips: ["Before-and-after photos", "AI dictation", "Digital signature"],
     secondaryCta: { label: "Digital forms", href: { page: "forms" } },
     capsules: [
       {
-        question: "Which software is suitable for documenting beauty treatments?",
+        question: "What software can I use to record beauty treatments?",
         answer:
-          "Treatflow documents treatments digitally with before-and-after photos, parameters, notes and signature. Especially for device-based treatments such as laser or IPL, complete documentation matters – Treatflow supports exactly this workflow.",
+          "Treatflow documents treatments digitally with before-and-after photos, parameters, notes and signature. Complete records matter most for device-based treatments such as laser or IPL – and that's exactly the workflow Treatflow supports.",
       },
       {
-        question: "How do I document the course of aesthetic treatments?",
+        question: "How do I keep records across a course of aesthetic treatments?",
         answer:
           "Every session gets an entry with parameters, products, photos and notes. The history stays in the client record. You can dictate notes; Treatflow turns them into text and can optionally polish it.",
       },
     ],
     image: {
       src: "/images/mockups/dokumentation-hero.png",
-      alt: "Treatflow treatment documentation with photos and notes",
+      alt: "Treatflow treatment record with photos and notes",
     },
   },
   understand: {
@@ -60,7 +60,7 @@ export const treatmentDocumentationEn: TreatmentDocumentationContent = {
       },
       {
         icon: "brain",
-        title: "Capture by voice or AI",
+        title: "Dictate instead of typing",
         text: "Dictate your notes. Treatflow turns them into text and can optionally polish it with AI. Less typing, more time for the treatment.",
       },
       {
@@ -71,52 +71,52 @@ export const treatmentDocumentationEn: TreatmentDocumentationContent = {
     ],
   },
   howItWorks: {
-    description: "Three steps to finished documentation.",
+    description: "Three steps to a complete treatment record.",
     steps: [
-      { title: "Open the documentation", text: "Open the documentation straight from the appointment or client profile – client and treatment are already filled in." },
+      { title: "Open a treatment record", text: "Open it straight from the appointment or client profile – client and treatment are already filled in." },
       { title: "Add photos and notes", text: "Upload photos, enter treatment parameters and dictate or type your notes. If needed, have the client sign." },
       { title: "Saved and available", text: "Everything goes into the client profile automatically. At the next appointment you see right away what was done last time." },
     ],
   },
   cards: {
     title: "What you get",
-    description: "Everything you need for clean treatment documentation – without paperwork.",
+    description: "Everything you need for thorough treatment records – without the paperwork.",
     items: [
-      { icon: "camera", title: "Before-and-after photos", text: "Save photos directly with the treatment and compare them chronologically.", points: ["Same context", "In the client profile", "GDPR-compliant"] },
+      { icon: "camera", title: "Before-and-after photos", text: "Save photos directly with the treatment and compare them chronologically.", points: ["Linked to the treatment", "In the client profile", "GDPR-compliant"] },
       { icon: "mic", title: "Voice dictation", text: "Speak your notes instead of typing – ideal during or right after the treatment.", points: ["Hands-free", "Fast", "Clearly worded"] },
       { icon: "brain", title: "AI assistant", text: "Optionally polish and structure the dictated text – you review the entry before saving.", points: ["Polish text", "Structure", "Less typing"] },
-      { icon: "file-text", title: "Parameters & products", text: "Record device settings, products and parameters cleanly.", points: ["Laser/IPL", "Products", "Aftercare"] },
+      { icon: "file-text", title: "Parameters & products", text: "Log device settings, products and parameters accurately.", points: ["Laser/IPL", "Products", "Aftercare"] },
       { icon: "pen-tool", title: "Digital signature", text: "Capture consent or confirmation digitally on the tablet.", points: ["On the device", "In the profile", "Traceable"] },
-      { icon: "shield", title: "Secure archive", text: "All documentation is stored on EU servers and can be retrieved at any time.", points: ["EU servers", "Encrypted", "Always available"] },
+      { icon: "shield", title: "Secure archive", text: "All treatment records are stored on EU servers and can be retrieved at any time.", points: ["EU servers", "Encrypted", "Always available"] },
     ],
   },
   faq: {
-    title: "Frequently asked questions about documentation",
+    title: "Frequently asked questions about treatment records",
     items: [
       {
-        question: "Which software is suitable for documenting beauty treatments?",
+        question: "What software can I use to record beauty treatments?",
         answer:
-          "Treatflow documents treatments digitally with before-and-after photos, parameters, notes and signature. Especially for device-based treatments such as laser or IPL, complete documentation matters – Treatflow supports exactly this workflow.",
+          "Treatflow documents treatments digitally with before-and-after photos, parameters, notes and signature. Complete records matter most for device-based treatments such as laser or IPL – and that's exactly the workflow Treatflow supports.",
       },
       {
-        question: "How do I document the course of aesthetic treatments?",
+        question: "How do I keep records across a course of aesthetic treatments?",
         answer:
           "Every session gets an entry with parameters, batch numbers, photos and notes. The history in the client record shows progress across several appointments. You can speak your notes; Treatflow turns them into text and can optionally polish it with AI.",
       },
       {
-        question: "Is treatment documentation required in a beauty salon?",
+        question: "Do beauty salons have to keep treatment records?",
         answer:
-          "Requirements depend on your country and the treatment. For device-based treatments such as laser or IPL, complete documentation is usually expected. For all other treatments it is recommended – for legal certainty, quality and client satisfaction.",
+          "Requirements depend on your country and the treatment. For device-based treatments such as laser or IPL, complete records are usually expected. For everything else they are still recommended – for legal protection, quality and client satisfaction.",
       },
       {
-        question: "What belongs in professional treatment documentation?",
+        question: "What should a professional treatment record include?",
         answer:
           "Treatment type and date, products and parameters, before-and-after photos, skin assessment, progress notes, aftercare recommendations and optionally the client's signature.",
       },
       {
-        question: "How do I take before-and-after photos correctly?",
+        question: "How do I take good before-and-after photos?",
         answer:
-          "Under the same conditions (light, angle, distance). In Treatflow you save photos directly in the documentation and link them to the client profile.",
+          "Always under the same conditions (light, angle, distance). In Treatflow you save photos directly in the treatment record and link them to the client profile.",
       },
       {
         question: "What should I document for laser and IPL treatments?",
@@ -126,7 +126,7 @@ export const treatmentDocumentationEn: TreatmentDocumentationContent = {
       {
         question: "Can I dictate treatment notes instead of typing?",
         answer:
-          "Yes. In the documentation you speak your notes. Treatflow converts speech to text and can optionally polish the text with AI. The record is not written fully automatically.",
+          "Yes. In the treatment record you speak your notes. Treatflow converts speech to text and can optionally polish the text with AI. The record is not written fully automatically.",
       },
       {
         question: "Can I mark treatment areas on photos or sketches?",
@@ -137,14 +137,14 @@ export const treatmentDocumentationEn: TreatmentDocumentationContent = {
   },
   related: {
     items: [
-      { href: { page: "forms" }, title: "Forms", description: "Digital intake and consent forms" },
+      { href: { page: "forms" }, title: "Forms", description: "Digital consultation and consent forms" },
       { href: { page: "client-records" }, title: "Client records", description: "History in the client profile" },
-      { href: { page: "appointment-calendar" }, title: "Appointment calendar", description: "Open documentation from the appointment" },
+      { href: { page: "appointment-calendar" }, title: "Appointment calendar", description: "Open the treatment record from the appointment" },
     ],
   },
   cta: {
-    title: "Ready for clear documentation?",
-    description: "Try it free for 14 days – no credit card required. Documentation, photos and signatures in one app.",
+    title: "Ready for clear, complete treatment records?",
+    description: "Try it free for 14 days – no credit card required. Treatment records, photos and signatures in one app.",
     secondary: { label: "Digital forms", href: { page: "forms" } },
   },
 };

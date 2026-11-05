@@ -17,7 +17,7 @@ export const footerTr: FooterContent = {
             { href: { page: "online-booking" }, label: "Online randevu" },
             { href: { page: "client-records" }, label: "Müşteri takibi" },
             { href: { page: "forms" }, label: "Onam formları" },
-            { href: { page: "try-forms" }, label: "Örnek formları deneyin" },
+            { href: { page: "try-forms" }, label: "Örnek formları inceleyin" },
             { href: { page: "treatment-documentation" }, label: "İşlem kayıtları" },
             { href: { page: "messaging" }, label: "Hatırlatmalar" },
             { href: { page: "customer-workflows" }, label: "Müşteri otomasyonları" },
@@ -77,7 +77,7 @@ export const footerTr: FooterContent = {
           ],
         },
         {
-          title: "Yasal",
+          title: "Yasal bilgiler",
           links: [
             { href: { page: "privacy" }, label: "Gizlilik Politikası" },
             { special: "cookie-settings", label: "Çerez ayarları" },
@@ -90,14 +90,14 @@ export const footerTr: FooterContent = {
   ],
   popularTopicsTitle: "Popüler konular",
   popularTopics: [
-    { href: { page: "online-booking" }, label: "Güzellik salonları için online randevu" },
-    { href: { page: "treatment-documentation" }, label: "İşlem kaydı yazılımı" },
+    { href: { page: "online-booking" }, label: "Güzellik salonu online randevu sistemi" },
+    { href: { page: "treatment-documentation" }, label: "İşlem kaydı programı" },
     { href: { page: "forms" }, label: "Dijital anamnez ve onam formları" },
     { href: { page: "messaging" }, label: "Randevu hatırlatmaları" },
     { href: { page: "appointment-calendar" }, label: "Salon randevu programı" },
-    { href: { page: "client-records" }, label: "Salonlar için müşteri takibi" },
-    { href: { page: "aesthetic-clinic-software" }, label: "Estetik klinik yazılımı" },
-    { href: { page: "software-comparison" }, label: "Salon yazılımı karşılaştırması" },
+    { href: { page: "client-records" }, label: "Güzellik salonu müşteri takip programı" },
+    { href: { page: "aesthetic-clinic-software" }, label: "Estetik klinik programı" },
+    { href: { page: "software-comparison" }, label: "Salon programlarını karşılaştırın" },
   ],
   rights: "Tüm hakları saklıdır.",
 };

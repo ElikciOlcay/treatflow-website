@@ -10,7 +10,7 @@ export const studioWebsiteEn: StudioWebsiteContent = {
       "beauty salon web design",
       "salon website design",
       "website for laser clinic",
-      "beauty salon homepage",
+      "aesthetics clinic website design",
       "nail salon website",
       "permanent makeup studio website",
     ],
@@ -28,14 +28,14 @@ export const studioWebsiteEn: StudioWebsiteContent = {
     title: { before: "Custom websites for", highlight: "beauty salons" },
     lead: "Professional, modern and built for bookings. Your website becomes your strongest channel for new clients.",
     sub: "We don't just build beautiful websites. We build websites that create trust and generate enquiries.",
-    primaryCta: "Get free advice",
+    primaryCta: "Book a free consultation",
     emailCta: "Enquire by email",
     checks: ["From €1,000", "Custom design", "Ready in 2–4 weeks"],
   },
   demo: {
     badge: "See a live example (in German)",
     title: "This is what your salon website could look like",
-    description: "See for yourself. We built this example website for a fictional premium studio.",
+    description: "See for yourself. We built this example website for a fictional high-end salon.",
     href: "/demo/skin-atelier",
     imageAlt: "Skin Atelier – Treatflow demo website for beauty salons (in German)",
     overlayLabel: "Demo website",
@@ -48,9 +48,9 @@ export const studioWebsiteEn: StudioWebsiteContent = {
   why: {
     title: "Why your salon needs a professional website",
     description:
-      "Your clients do their research online before they book. A professional website is your digital business card and your strongest tool for winning new clients.",
+      "Your clients do their research online before they book. A professional website is your digital shop window and your strongest tool for winning new clients.",
     stats: [
-      { value: "97%", label: "search online", desc: "Almost every client googles a salon before booking." },
+      { value: "97%", label: "search online", desc: "Almost every client looks a salon up online before booking." },
       { value: "75%", label: "judge by the website", desc: "The quality of your website shapes how much people trust your salon." },
       { value: "3x", label: "more enquiries", desc: "Salons with a professional website receive significantly more booking requests." },
     ],
@@ -86,13 +86,13 @@ export const studioWebsiteEn: StudioWebsiteContent = {
       },
       {
         icon: "globe",
-        title: "Right for every niche",
+        title: "For every specialism",
         desc: "Beauty, laser, Hydrafacial, permanent makeup, microneedling, nails, lashes and more.",
       },
     ],
   },
   advantage: {
-    badge: "Exclusive benefit",
+    badge: "Exclusive perk",
     title: "Even better with Treatflow",
     description:
       "Your website gets even stronger when it's connected to Treatflow. Your booking link, treatments and opening hours can be pulled straight from Treatflow.",
@@ -102,10 +102,10 @@ export const studioWebsiteEn: StudioWebsiteContent = {
       "Automatic updates possible",
       "A seamless client journey from click to appointment",
     ],
-    boxTitle: "Treatflow customer benefit",
+    boxTitle: "Perk for Treatflow customers",
     boxText: "As a Treatflow customer, you also get the following when you order a website:",
     creditAmount: "€200",
-    creditLabel: "Treatflow credit as a gift",
+    creditLabel: "Treatflow credit, on us",
     creditNote: "Redeemable against your Treatflow subscription – so you save on your salon software too.",
   },
   pricing: {
@@ -121,7 +121,7 @@ export const studioWebsiteEn: StudioWebsiteContent = {
       "Conversion-optimised structure",
       "Contact and booking integration",
       "Up to 5 subpages included",
-      "Legal notice and privacy policy",
+      "Privacy policy and legal pages",
       "SSL encryption",
     ],
     customerLabel: "Treatflow customers:",
@@ -133,7 +133,7 @@ export const studioWebsiteEn: StudioWebsiteContent = {
     title: "How your salon website comes together",
     description: "From the first idea to the finished website – in four simple steps.",
     steps: [
-      { step: "01", title: "First call", desc: "We get to know your salon, understand your goals and agree on the scope." },
+      { step: "01", title: "Discovery call", desc: "We get to know your salon, understand your goals and agree on the scope." },
       { step: "02", title: "Concept & design", desc: "We create a custom design concept that matches your brand." },
       { step: "03", title: "Build", desc: "Your website is professionally developed and filled with your content." },
       { step: "04", title: "Launch", desc: "Once you approve it, the website goes live. We support you through the launch." },
@@ -149,9 +149,9 @@ export const studioWebsiteEn: StudioWebsiteContent = {
           "Your website is usually ready within 2–4 weeks. The exact timeframe depends on the scope and on how quickly your content is delivered.",
       },
       {
-        question: "Do I need texts and photos already?",
+        question: "Do I need to have copy and photos ready?",
         answer:
-          "No, that's not a must. We help you write the texts and advise you on images. Professional photos of your salon are ideal, of course, but we'll find the best solution together.",
+          "No, that's not a must. We'll help you write the copy and advise you on images. Professional photos of your salon are ideal, of course, but we'll find the best solution together.",
       },
       {
         question: "Can my existing domain be used?",
@@ -183,7 +183,7 @@ export const studioWebsiteEn: StudioWebsiteContent = {
   cta: {
     title: "Ready for your professional salon website?",
     description: "Let's build the perfect website for your salon together. Get free, no-obligation advice.",
-    primary: "Get free advice",
+    primary: "Book a free consultation",
     email: "Enquire by email",
     checks: ["No obligation", "Personal advice", "Specialised in beauty businesses"],
   },

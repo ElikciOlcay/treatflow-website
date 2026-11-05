@@ -80,7 +80,7 @@ export const clientWorkflowsEn: ClientWorkflowsContent = {
     items: [
       { icon: "workflow", title: "Visual builder", text: "Trigger, wait times, message and condition via drag & drop.", points: ["Clear overview", "Multiple stages", "Quick to adjust"] },
       { icon: "message-circle", title: "Email messages", text: "Each step reaches your clients in their inbox.", points: ["Email", "Your own text", "Sent automatically"] },
-      { icon: "clock", title: "Wait times", text: "Days or hours between steps – just like your salon routine.", points: ["Aftercare timing", "Reactivation", "Nothing to remember"] },
+      { icon: "clock", title: "Wait times", text: "Days or hours between steps – to match your salon's routine.", points: ["Aftercare timing", "Reactivation", "Nothing to remember"] },
       { icon: "git-branch", title: "Conditions", text: "Check for new bookings, for example, and stop the sequence in time.", points: ["No duplicate emails", "Smart branching", "More relevance"] },
       { icon: "heart", title: "Aftercare sequences", text: "A first check-in, then optionally a follow-up appointment – only when it makes sense.", points: ["Stronger loyalty", "Fewer no-shows later", "More repeat appointments"] },
       { icon: "zap", title: "Reactivation", text: "Automatically invite clients back after a longer break.", points: ["60–90 days", "Personal", "No spreadsheet chaos"] },
@@ -102,7 +102,7 @@ export const clientWorkflowsEn: ClientWorkflowsContent = {
       {
         question: "Which channel do workflow messages use?",
         answer:
-          "Workflow steps are sent by email. Appointment reminders remain available under the simple messages.",
+          "Workflow steps are sent by email. Appointment reminders are still set up separately as standard messages.",
       },
       {
         question: "Can a workflow stop when the client rebooks?",
@@ -124,7 +124,7 @@ export const clientWorkflowsEn: ClientWorkflowsContent = {
     ],
   },
   cta: {
-    title: "Ready for multi-step client workflows?",
+    title: "Ready to automate your client follow-ups?",
     description: "Try it free for 14 days – aftercare and reactivation without manual chasing.",
     secondary: { label: "See reminders", href: { page: "messaging" } },
   },

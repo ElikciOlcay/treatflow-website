@@ -8,7 +8,8 @@ export const messagingFr: MessagingContent = {
     keywords: [
       "rappel de rendez-vous par e-mail institut de beauté",
       "messages automatiques clients",
-      "réduire les rendez-vous manqués institut",
+      "réduire les rendez-vous non honorés institut",
+      "rappel SMS ou e-mail rendez-vous",
       "rappels de rendez-vous automatiques",
       "e-mail de confirmation de réservation",
       "e-mail de suivi après un soin",
@@ -25,20 +26,20 @@ export const messagingFr: MessagingContent = {
         "Messages automatiques pour instituts de beauté : confirmations de réservation, rappels par e-mail, avis d'annulation, suivis et vœux d'anniversaire.",
     },
   },
-  breadcrumb: "Messages",
+  breadcrumb: "Rappels",
   hero: {
     eyebrow: "Messages automatiques",
     eyebrowIcon: "message-circle",
     title: { before: "Des rappels ", highlight: "automatiques" },
     description:
-      "Confirmations de réservation, rappels et suivis par e-mail – moins de rendez-vous manqués, plus de clients fidèles.",
-    chips: ["Rappels par e-mail", "Moins de rendez-vous manqués", "Vœux d'anniversaire"],
+      "Confirmations de réservation, rappels et suivis par e-mail – moins de rendez-vous non honorés, plus de clients fidèles.",
+    chips: ["Rappels par e-mail", "Moins de no-shows", "Vœux d'anniversaire"],
     secondaryCta: { label: "Voir l'agenda", href: { page: "appointment-calendar" } },
     capsules: [
       {
-        question: "Comment réduire les rendez-vous manqués dans mon institut de beauté ?",
+        question: "Comment réduire les rendez-vous non honorés dans mon institut de beauté ?",
         answer:
-          "Les rappels automatiques sont le moyen le plus efficace de réduire les rendez-vous manqués. Treatflow envoie des rappels par e-mail aux moments que vous choisissez (par exemple 24 heures et 2 heures avant le rendez-vous). Avec les rappels activés, beaucoup moins de rendez-vous sont oubliés.",
+          "Les rappels automatiques sont le moyen le plus efficace de réduire les rendez-vous non honorés. Treatflow envoie des rappels par e-mail aux moments que vous choisissez (par exemple 24 heures et 2 heures avant le rendez-vous). Avec les rappels activés, beaucoup moins de rendez-vous sont oubliés.",
       },
     ],
     image: {
@@ -54,7 +55,7 @@ export const messagingFr: MessagingContent = {
       {
         icon: "bell",
         title: "Moins de rendez-vous oubliés",
-        text: "Vos clients reçoivent un rappel par e-mail 1 à 7 jours avant leur rendez-vous. Résultat : beaucoup moins de rendez-vous manqués.",
+        text: "Vos clients reçoivent un rappel par e-mail 1 à 7 jours avant leur rendez-vous. Résultat : beaucoup moins de rendez-vous non honorés.",
       },
       {
         icon: "message-circle",
@@ -63,8 +64,8 @@ export const messagingFr: MessagingContent = {
       },
       {
         icon: "heart",
-        title: "Attentions personnelles",
-        text: "Vœux d'anniversaire et messages personnalisés partent automatiquement – de quoi renforcer le lien sans effort supplémentaire.",
+        title: "Petites attentions",
+        text: "Vœux d'anniversaire et messages personnalisés partent automatiquement – pour entretenir la relation sans effort supplémentaire.",
       },
     ],
   },
@@ -73,28 +74,28 @@ export const messagingFr: MessagingContent = {
     steps: [
       { title: "Choisir un modèle", text: "Choisissez un modèle prêt à l'emploi pour une confirmation, un rappel ou un suivi. Les champs comme le nom du client et la date du rendez-vous sont remplis automatiquement." },
       { title: "Définir le moment", text: "Décidez quand le message doit partir – par exemple 3 jours et 1 jour avant le rendez-vous, ou juste après le soin." },
-      { title: "Tout se fait seul", text: "Treatflow envoie les e-mails au bon moment. Vous, vous vous occupez de vos clients." },
+      { title: "Et c'est automatique", text: "Treatflow envoie les e-mails au bon moment. Vous, vous vous consacrez à vos clients." },
     ],
   },
   cards: {
     title: "Ce que vous obtenez",
     description: "Tout pour communiquer automatiquement avec vos clients – clair et entièrement sous votre contrôle.",
     items: [
-      { icon: "clock", title: "Rappels de rendez-vous", text: "Moment flexible et textes personnalisés, envoyés par e-mail.", points: ["1 à 7 jours avant", "Plusieurs rappels", "Moins d'annulations"] },
+      { icon: "clock", title: "Rappels de rendez-vous", text: "Moment flexible et textes personnalisés, envoyés par e-mail.", points: ["1 à 7 jours avant", "Plusieurs rappels", "Moins d'oublis"] },
       { icon: "mail", title: "Confirmation de réservation", text: "Dès la réservation – avec le rendez-vous, le soin et les infos de l'institut.", points: ["Automatique", "Contenu clair", "Moins de questions"] },
       { icon: "message-circle", title: "Suivi après le soin", text: "Après le soin, partagez des conseils, demandez un avis ou proposez le prochain rendez-vous.", points: ["Automatique après la visite", "Modèles", "Plus de fidélité"] },
-      { icon: "heart", title: "Vœux d'anniversaire", text: "Des vœux personnels et une offre facultative le jour de l'anniversaire de votre client.", points: ["Automatiques", "Remise possible", "Lien renforcé"] },
+      { icon: "heart", title: "Vœux d'anniversaire", text: "Des vœux personnels et une offre facultative le jour de l'anniversaire de votre client.", points: ["Automatiques", "Remise possible", "Clients fidélisés"] },
       { icon: "zap", title: "Modèles et champs variables", text: "Nom, rendez-vous, soin – vos textes se complètent tout seuls.", points: ["Personnalisation", "Par soin", "Prêts en quelques minutes"] },
-      { icon: "bell", title: "Avis d'annulation", text: "Client et institut restent informés dès qu'un rendez-vous est annulé.", points: ["Immédiats", "Transparents", "Moins de désordre"] },
+      { icon: "bell", title: "Avis d'annulation", text: "Client et institut restent informés dès qu'un rendez-vous est annulé.", points: ["Immédiats", "Transparents", "Moins de confusion"] },
     ],
   },
   faq: {
     title: "Questions fréquentes sur les messages automatiques",
     items: [
       {
-        question: "Comment réduire les rendez-vous manqués dans mon institut de beauté ?",
+        question: "Comment réduire les rendez-vous non honorés dans mon institut de beauté ?",
         answer:
-          "Les rappels automatiques sont le moyen le plus efficace de réduire les rendez-vous manqués. Treatflow envoie des rappels par e-mail à des moments configurables (par exemple 3 jours et 1 jour avant le rendez-vous). Le nombre de rendez-vous oubliés baisse nettement.",
+          "Les rappels automatiques sont le moyen le plus efficace de réduire les rendez-vous non honorés. Treatflow envoie des rappels par e-mail à des moments configurables (par exemple 3 jours et 1 jour avant le rendez-vous). Le nombre de rendez-vous oubliés baisse nettement.",
       },
       {
         question: "Combien coûtent les rappels par e-mail ?",
@@ -102,7 +103,7 @@ export const messagingFr: MessagingContent = {
           "Les rappels et confirmations par e-mail sont inclus dans toutes les formules Treatflow, sans frais supplémentaires et sans limite d'envoi.",
       },
       {
-        question: "Quels messages faut-il automatiser ?",
+        question: "Quels messages automatiser en priorité ?",
         answer:
           "Les messages automatiques les plus importants sont : les confirmations de réservation, les rappels de rendez-vous (1 à 7 jours avant), les avis d'annulation, les suivis après les soins et les vœux d'anniversaire. Vous gagnez du temps et fidélisez votre clientèle.",
       },
@@ -127,11 +128,11 @@ export const messagingFr: MessagingContent = {
     items: [
       { href: { page: "customer-workflows" }, title: "Parcours clients", description: "Suivi et relance en plusieurs étapes" },
       { href: { page: "online-booking" }, title: "Réservation en ligne", description: "Les réservations arrivent avec confirmation" },
-      { href: { page: "appointment-calendar" }, title: "Agenda des rendez-vous", description: "Rendez-vous et rappels au même endroit" },
+      { href: { page: "appointment-calendar" }, title: "Agenda et planning", description: "Rendez-vous et rappels au même endroit" },
     ],
   },
   cta: {
-    title: "Prêt pour une communication client automatique ?",
+    title: "Prêt à automatiser vos rappels ?",
     description: "Essayez gratuitement pendant 14 jours – rappels, suivis et vœux d'anniversaire sans travail supplémentaire.",
     secondary: { label: "Voir l'agenda", href: { page: "appointment-calendar" } },
   },

@@ -8,7 +8,8 @@ export const messagingPl: MessagingContent = {
     keywords: [
       "przypomnienie o wizycie e-mail salon",
       "automatyczne wiadomości do klientów",
-      "mniej nieobecności salon kosmetyczny",
+      "no-show salon kosmetyczny",
+      "jak ograniczyć nieodwołane wizyty",
       "automatyczne przypomnienia o wizytach",
       "e-mail z potwierdzeniem rezerwacji",
       "wiadomość po zabiegu",
@@ -31,14 +32,14 @@ export const messagingPl: MessagingContent = {
     eyebrowIcon: "message-circle",
     title: { before: "Automatyczne ", highlight: "przypomnienia" },
     description:
-      "Potwierdzenia rezerwacji, przypomnienia i wiadomości po wizycie wysyłane e-mailem – mniej nieobecności, więcej stałych klientów.",
-    chips: ["Przypomnienia e-mail", "Mniej nieobecności", "Życzenia urodzinowe"],
+      "Potwierdzenia rezerwacji, przypomnienia i wiadomości po wizycie wysyłane e-mailem – mniej nieodwołanych wizyt, więcej stałych klientów.",
+    chips: ["Przypomnienia e-mail", "Mniej nieodwołanych wizyt", "Życzenia urodzinowe"],
     secondaryCta: { label: "Zobacz kalendarz", href: { page: "appointment-calendar" } },
     capsules: [
       {
-        question: "Jak ograniczyć nieobecności klientów w salonie kosmetycznym?",
+        question: "Jak ograniczyć nieodwołane wizyty w salonie kosmetycznym?",
         answer:
-          "Automatyczne przypomnienia o wizytach to najskuteczniejszy sposób na ograniczenie nieobecności. Treatflow wysyła przypomnienia e-mail w wybranych przez Ciebie momentach (np. 24 godziny i 2 godziny przed wizytą). Gdy przypomnienia są włączone, klienci znacznie rzadziej zapominają o wizytach.",
+          "Najskuteczniejszym sposobem są automatyczne przypomnienia o wizytach. Treatflow wysyła przypomnienia e-mail w wybranych przez Ciebie momentach (np. 24 godziny i 2 godziny przed wizytą). Gdy przypomnienia są włączone, klienci znacznie rzadziej zapominają o wizytach.",
       },
     ],
     image: {
@@ -49,17 +50,17 @@ export const messagingPl: MessagingContent = {
   understand: {
     title: "Wiadomości, które wysyłają się same",
     description:
-      "Potwierdzenie, przypomnienie i zalecenia po zabiegu – Twoi klienci dostają właściwą wiadomość we właściwym momencie, a Ty nie musisz nic robić.",
+      "Potwierdzenie, przypomnienie i zalecenia po zabiegu – klienci dostają właściwą wiadomość we właściwym momencie, a Ty nie musisz o niczym pamiętać.",
     items: [
       {
         icon: "bell",
         title: "Mniej zapomnianych wizyt",
-        text: "Twoi klienci dostają przypomnienie e-mail od 1 do 7 dni przed wizytą. Dzięki temu znacznie mniej wizyt przepada.",
+        text: "Klienci dostają przypomnienie e-mail od 1 do 7 dni przed wizytą. Dzięki temu znacznie mniej wizyt przepada.",
       },
       {
         icon: "message-circle",
         title: "Opieka po zabiegu",
-        text: "Po zabiegu klient automatycznie otrzymuje wskazówki pielęgnacyjne, prośbę o opinię lub propozycję kolejnej wizyty.",
+        text: "Po zabiegu klienci automatycznie dostają wskazówki pielęgnacyjne, prośbę o opinię lub propozycję kolejnej wizyty.",
       },
       {
         icon: "heart",
@@ -73,15 +74,15 @@ export const messagingPl: MessagingContent = {
     steps: [
       { title: "Wybierz szablon", text: "Wybierz gotowy szablon potwierdzenia, przypomnienia lub wiadomości po wizycie. Pola takie jak imię klienta i data wizyty uzupełniają się automatycznie." },
       { title: "Ustal termin wysyłki", text: "Zdecyduj, kiedy wiadomość ma zostać wysłana – np. 3 dni i 1 dzień przed wizytą albo zaraz po zabiegu." },
-      { title: "Reszta dzieje się sama", text: "Treatflow wysyła e-maile we właściwym momencie. Ty zajmujesz się klientami." },
+      { title: "Reszta dzieje się sama", text: "Treatflow wysyła e-maile we właściwym momencie, a Ty możesz skupić się na klientach." },
     ],
   },
   cards: {
     title: "Co otrzymujesz",
     description: "Wszystko do automatycznej komunikacji z klientami – przejrzyście i w pełni pod Twoją kontrolą.",
     items: [
-      { icon: "clock", title: "Przypomnienia o wizytach", text: "Elastyczny termin wysyłki i spersonalizowane treści, wysyłane e-mailem.", points: ["Od 1 do 7 dni wcześniej", "Kilka przypomnień", "Mniej odwołań"] },
-      { icon: "mail", title: "Potwierdzenie rezerwacji", text: "Od razu po rezerwacji – z terminem, zabiegiem i danymi salonu.", points: ["Automatycznie", "Jasna treść", "Mniej pytań"] },
+      { icon: "clock", title: "Przypomnienia o wizytach", text: "Elastyczny termin wysyłki i spersonalizowane treści, wysyłane e-mailem.", points: ["Od 1 do 7 dni wcześniej", "Kilka przypomnień", "Mniej przepadających wizyt"] },
+      { icon: "mail", title: "Potwierdzenie rezerwacji", text: "Od razu po rezerwacji – z terminem, zabiegiem i danymi salonu.", points: ["Automatycznie", "Jasna treść", "Mniej dopytywania"] },
       { icon: "message-circle", title: "Wiadomości po wizycie", text: "Po zabiegu przekaż wskazówki, poproś o opinię lub zaproponuj kolejną wizytę.", points: ["Automatycznie po wizycie", "Szablony", "Większa lojalność"] },
       { icon: "heart", title: "Życzenia urodzinowe", text: "Osobiste życzenia i opcjonalna oferta w dniu urodzin klienta.", points: ["Automatycznie", "Możliwy rabat", "Silniejsza więź"] },
       { icon: "zap", title: "Szablony i pola dynamiczne", text: "Imię, termin, zabieg – treści uzupełniają się same.", points: ["Personalizacja", "Dla każdego zabiegu", "Szybka konfiguracja"] },
@@ -92,9 +93,9 @@ export const messagingPl: MessagingContent = {
     title: "Najczęstsze pytania o automatyczne wiadomości",
     items: [
       {
-        question: "Jak ograniczyć nieobecności klientów w salonie kosmetycznym?",
+        question: "Jak ograniczyć nieodwołane wizyty w salonie kosmetycznym?",
         answer:
-          "Automatyczne przypomnienia o wizytach to najskuteczniejszy sposób na ograniczenie nieobecności. Treatflow wysyła przypomnienia e-mail w ustawionych przez Ciebie momentach (np. 3 dni i 1 dzień przed wizytą). Dzięki temu liczba zapomnianych wizyt wyraźnie spada.",
+          "Najskuteczniejszym sposobem są automatyczne przypomnienia o wizytach. Treatflow wysyła przypomnienia e-mail w ustawionych przez Ciebie momentach (np. 3 dni i 1 dzień przed wizytą). Dzięki temu liczba zapomnianych wizyt wyraźnie spada.",
       },
       {
         question: "Ile kosztują przypomnienia e-mail?",
@@ -119,7 +120,7 @@ export const messagingPl: MessagingContent = {
       {
         question: "Czy mogę połączyć kilka wiadomości w jedną automatyzację?",
         answer:
-          "Tak. Dzięki automatyzacjom dla klientów łączysz kilka kroków – np. wskazówki pielęgnacyjne dwa dni po zabiegu, przypomnienie o ponownej rezerwacji po sześciu tygodniach i wiadomość do klientów, którzy dawno nie odwiedzili salonu.",
+          "Tak. W automatyzacjach dla klientów łączysz kilka kroków – np. wskazówki pielęgnacyjne dwa dni po zabiegu, zaproszenie na kolejną wizytę po sześciu tygodniach i wiadomość do klientów, którzy dawno nie odwiedzili salonu.",
       },
     ],
   },
@@ -132,7 +133,7 @@ export const messagingPl: MessagingContent = {
   },
   cta: {
     title: "Czas na automatyczną komunikację z klientami?",
-    description: "Wypróbuj za darmo przez 14 dni – przypomnienia, wiadomości po wizycie i życzenia urodzinowe bez dodatkowej pracy.",
+    description: "Wypróbuj 14 dni za darmo – przypomnienia, wiadomości po wizycie i życzenia urodzinowe bez dodatkowej pracy.",
     secondary: { label: "Zobacz kalendarz", href: { page: "appointment-calendar" } },
   },
 };

@@ -2,9 +2,9 @@ import type { FeaturesOverviewContent } from "./types";
 
 export const featuresFr: FeaturesOverviewContent = {
   meta: {
-    title: "Fonctionnalités pour instituts et cliniques",
+    title: "Fonctionnalités du logiciel pour instituts et centres esthétiques",
     description:
-      "Agenda, prise de rendez-vous en ligne sans commission, fiches clients, formulaires de consentement numériques, documentation des soins avec dictée vocale, rappels et intégrations – dans un seul logiciel pour votre institut.",
+      "Agenda, prise de rendez-vous en ligne sans commission, fiches clients, formulaires de consentement numériques, suivi des soins avec dictée vocale, rappels et intégrations – dans un seul logiciel pour votre institut.",
     keywords: [
       "fonctionnalités logiciel institut de beauté",
       "logiciel gestion institut de beauté",
@@ -17,21 +17,21 @@ export const featuresFr: FeaturesOverviewContent = {
     eyebrow: "Aperçu des fonctionnalités",
     eyebrowIcon: "sparkles",
     title: { before: "Toutes les ", highlight: "fonctionnalités", after: " en un coup d'œil" },
-    description: "Agenda, réservations, fiches clients, formulaires et documentation – une seule plateforme pour votre institut.",
-    chips: ["Tout-en-un", "Sans commission", "Made in Austria"],
+    description: "Agenda, réservations, fiches clients, formulaires et suivi des soins – une seule plateforme pour votre institut.",
+    chips: ["Tout-en-un", "Sans commission", "Conçu en Autriche"],
     secondaryCta: { label: "Voir les tarifs", href: { page: "pricing" } },
     tiles: [
       { label: "Agenda", icon: "calendar", gradient: "from-indigo-500 to-purple-600" },
       { label: "Réservations", icon: "link", gradient: "from-rose-500 to-orange-600" },
       { label: "Clients", icon: "users", gradient: "from-blue-500 to-indigo-600" },
       { label: "Formulaires", icon: "clipboard-check", gradient: "from-orange-500 to-amber-600" },
-      { label: "Documentation", icon: "file-text", gradient: "from-violet-500 to-purple-600" },
+      { label: "Suivi des soins", icon: "file-text", gradient: "from-violet-500 to-purple-600" },
       { label: "Parcours", icon: "workflow", gradient: "from-green-500 to-emerald-600" },
     ],
   },
   grid: {
     title: "{count} fonctionnalités clés pour votre institut",
-    subtitle: "Chaque fonctionnalité est pensée pour les besoins des instituts de beauté et des cliniques.",
+    subtitle: "Chaque fonctionnalité est pensée pour le quotidien des instituts de beauté et des centres esthétiques.",
     more: "En savoir plus",
     items: [
       {
@@ -61,7 +61,7 @@ export const featuresFr: FeaturesOverviewContent = {
         icon: "link",
         title: "Réservation en ligne",
         description:
-          "Un lien de réservation personnel pour votre institut. Vos clientes réservent à toute heure – confirmations et rappels partent automatiquement.",
+          "Un lien de réservation personnel pour votre institut. Vos clients réservent à toute heure – confirmations et rappels partent automatiquement.",
         color: "text-rose-600",
         bg: "bg-rose-50",
         border: "border-rose-200 hover:border-rose-400",
@@ -81,34 +81,34 @@ export const featuresFr: FeaturesOverviewContent = {
       {
         href: { page: "forms" },
         icon: "clipboard-check",
-        title: "Formulaires et anamnèse",
+        title: "Formulaires et consentements",
         description:
-          "Questionnaires d'anamnèse et formulaires de consentement numériques. Vos clientes les remplissent à l'avance sur leur smartphone – sans papier et juridiquement solide.",
+          "Questionnaires de santé et formulaires de consentement numériques. Vos clients les remplissent à l'avance sur leur smartphone – sans papier et juridiquement fiable.",
         color: "text-orange-600",
         bg: "bg-orange-50",
         border: "border-orange-200 hover:border-orange-400",
-        highlights: ["Anamnèse numérique", "Envoi préalable par lien", "Zéro papier"],
+        highlights: ["Questionnaire de santé numérique", "Envoi préalable par lien", "Zéro papier"],
       },
       {
         href: { page: "treatment-documentation" },
         icon: "file-text",
-        title: "Documentation des soins",
+        title: "Suivi des soins",
         description:
-          "Documentez chaque soin en numérique : photos, produits utilisés, notes et résultats. Idéal pour les soins de suivi.",
+          "Consignez chaque soin en numérique : photos, produits utilisés, notes et résultats. Idéal pour les protocoles en plusieurs séances.",
         color: "text-blue-600",
         bg: "bg-blue-50",
         border: "border-blue-200 hover:border-blue-400",
-        highlights: ["Photos et produits", "Historique des soins", "Documentation complète"],
+        highlights: ["Photos et produits", "Historique des soins", "Fiches de soin complètes"],
       },
       {
         href: { page: "messaging" },
         icon: "bell",
         title: "Rappels automatiques",
-        description: "Rappels par e-mail avant chaque rendez-vous. Moins de rendez-vous non honorés – entièrement automatiquement.",
+        description: "Rappels par e-mail avant chaque rendez-vous. Moins de rendez-vous non honorés, sans lever le petit doigt.",
         color: "text-purple-600",
         bg: "bg-purple-50",
         border: "border-purple-200 hover:border-purple-400",
-        highlights: ["Rappels par e-mail", "Moins de rendez-vous manqués", "Horaires configurables"],
+        highlights: ["Rappels par e-mail", "Moins de no-shows", "Horaires configurables"],
       },
       {
         href: { page: "customer-workflows" },
@@ -126,11 +126,11 @@ export const featuresFr: FeaturesOverviewContent = {
         icon: "shopping-bag",
         title: "Vente de produits et stock",
         description:
-          "Vendez des produits de soin directement à vos clientes. Gérez le stock, enregistrez les ventes et augmentez votre chiffre d'affaires additionnel.",
+          "Vendez vos produits de soin directement à vos clients. Gérez le stock, enregistrez les ventes et développez un complément de chiffre d'affaires.",
         color: "text-amber-600",
         bg: "bg-amber-50",
         border: "border-amber-200 hover:border-amber-400",
-        highlights: ["Vente de produits", "Gestion du stock", "Plus de chiffre d'affaires"],
+        highlights: ["Vente de produits", "Gestion du stock", "Revente en institut"],
       },
     ],
   },
@@ -139,10 +139,10 @@ export const featuresFr: FeaturesOverviewContent = {
     points: [
       "Tout-en-un : toutes les fonctionnalités sur une seule plateforme",
       "Conforme au RGPD avec serveurs dans l'UE",
-      "Aucun frais caché ni commission",
+      "Ni frais cachés ni commission",
       "14 jours d'essai gratuit, sans carte bancaire",
       "Support et prise en main gratuits",
-      "Made in Austria",
+      "Conçu en Autriche",
     ],
   },
 };

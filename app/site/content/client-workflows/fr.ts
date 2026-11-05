@@ -10,7 +10,8 @@ export const clientWorkflowsFr: ClientWorkflowsContent = {
       "automatisation marketing institut",
       "suivi après soin automatique",
       "relancer clients institut de beauté",
-      "relance automatique clientes",
+      "relance automatique clients",
+      "réactivation clients inactifs",
       "Treatflow parcours",
     ],
   },
@@ -36,7 +37,7 @@ export const clientWorkflowsFr: ClientWorkflowsContent = {
       {
         question: "Comment automatiser le suivi après soin dans mon institut de beauté ?",
         answer:
-          "Avec les parcours clients de Treatflow, vous créez des séquences en plusieurs étapes : par exemple, attendre 2 jours après le soin, prendre des nouvelles, vérifier si la cliente a déjà repris rendez-vous et, seulement dans le cas contraire, lui envoyer une invitation pour le prochain rendez-vous. Vous gardez le contact sans avoir à relancer qui que ce soit à la main.",
+          "Avec les parcours clients de Treatflow, vous créez des séquences en plusieurs étapes : par exemple, attendre 2 jours après le soin, prendre des nouvelles, vérifier si le client a déjà repris rendez-vous et, seulement dans le cas contraire, lui envoyer une invitation pour le prochain rendez-vous. Vous gardez le contact sans avoir à relancer qui que ce soit à la main.",
       },
     ],
     image: {
@@ -52,16 +53,16 @@ export const clientWorkflowsFr: ClientWorkflowsContent = {
       {
         icon: "heart",
         title: "Un suivi après soin sans effort",
-        text: "Demandez automatiquement comment va la peau – et proposez le prochain rendez-vous si votre cliente est intéressée.",
+        text: "Prenez automatiquement des nouvelles après le soin – et proposez le prochain rendez-vous si votre client est intéressé.",
       },
       {
         icon: "bell",
-        title: "Faire revenir les clients inactifs",
+        title: "Réactiver les clients inactifs",
         text: "Après 60 à 90 jours sans visite, une invitation à revenir à l'institut est envoyée – personnelle et au bon moment.",
       },
       {
         icon: "git-branch",
-        title: "Des embranchements intelligents",
+        title: "Des conditions intelligentes",
         text: "Vérifiez si une nouvelle réservation a été faite. Si oui, le parcours s'arrête – pas de messages en double.",
       },
     ],
@@ -69,7 +70,7 @@ export const clientWorkflowsFr: ClientWorkflowsContent = {
   howItWorks: {
     description: "Votre premier parcours en trois étapes.",
     steps: [
-      { title: "Choisir un déclencheur", text: "Démarrez par exemple à la fin d'un rendez-vous ou quand une cliente n'est pas venue depuis longtemps." },
+      { title: "Choisir un déclencheur", text: "Démarrez par exemple à la fin d'un rendez-vous ou quand un client n'est pas venu depuis longtemps." },
       { title: "Relier les étapes", text: "Organisez délais, messages et conditions dans l'éditeur visuel." },
       { title: "Activer", text: "Treatflow exécute la séquence et envoie les messages par e-mail." },
     ],
@@ -82,8 +83,8 @@ export const clientWorkflowsFr: ClientWorkflowsContent = {
       { icon: "message-circle", title: "Messages par e-mail", text: "Chaque étape arrive directement dans la boîte de réception de vos clients.", points: ["E-mail", "Votre propre texte", "Envoi automatique"] },
       { icon: "clock", title: "Délais", text: "Des jours ou des heures entre les étapes – au rythme de votre institut.", points: ["Suivi au bon moment", "Relance", "Rien à retenir"] },
       { icon: "git-branch", title: "Conditions", text: "Vérifiez par exemple les nouvelles réservations et arrêtez la séquence à temps.", points: ["Pas d'e-mails en double", "Embranchements intelligents", "Messages plus pertinents"] },
-      { icon: "heart", title: "Séquences de suivi après soin", text: "D'abord des nouvelles, puis éventuellement le prochain rendez-vous – seulement quand c'est pertinent.", points: ["Plus de fidélité", "Moins de rendez-vous manqués ensuite", "Plus de rendez-vous de suivi"] },
-      { icon: "zap", title: "Relance", text: "Réinvitez automatiquement vos clients après une longue absence.", points: ["60 à 90 jours", "Personnalisée", "Sans listes interminables"] },
+      { icon: "heart", title: "Séquences de suivi après soin", text: "D'abord des nouvelles, puis éventuellement le prochain rendez-vous – seulement quand c'est pertinent.", points: ["Plus de fidélité", "Moins d'oublis par la suite", "Plus de rendez-vous de suivi"] },
+      { icon: "zap", title: "Réactivation", text: "Relancez automatiquement vos clients après une longue absence.", points: ["60 à 90 jours", "Personnalisée", "Sans listes interminables"] },
     ],
   },
   faq: {
@@ -119,12 +120,12 @@ export const clientWorkflowsFr: ClientWorkflowsContent = {
   related: {
     items: [
       { href: { page: "messaging" }, title: "Rappels", description: "E-mails avant le rendez-vous" },
-      { href: { page: "appointment-calendar" }, title: "Agenda des rendez-vous", description: "Rendez-vous et automatisations réunis" },
+      { href: { page: "appointment-calendar" }, title: "Agenda et planning", description: "Rendez-vous et automatisations réunis" },
       { href: { page: "client-records" }, title: "Fiches clients", description: "Historique et relances" },
     ],
   },
   cta: {
-    title: "Prêt pour des parcours clients en plusieurs étapes ?",
+    title: "Prêt à fidéliser vos clients en pilote automatique ?",
     description: "Essayez gratuitement pendant 14 jours – suivi après soin et relance sans effort manuel.",
     secondary: { label: "Voir les rappels", href: { page: "messaging" } },
   },

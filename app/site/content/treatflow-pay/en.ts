@@ -35,7 +35,7 @@ export const treatflowPayEn: TreatflowPayContent = {
       {
         question: "What is Treatflow Pay?",
         answer:
-          "Treatflow Pay is online payment at the time of booking. For each service, the salon can ask for no payment, a deposit as a percentage or fixed amount, or full payment. Clients pay by credit or debit card, plus Apple Pay and Google Pay in the Stripe checkout. The fee is 2.69% per transaction.",
+          "Treatflow Pay lets clients pay online when they book. For each service, the salon can ask for no payment, a deposit as a percentage or fixed amount, or full payment. Clients pay by credit or debit card, plus Apple Pay and Google Pay in the Stripe checkout. The fee is 2.69% per transaction.",
       },
     ],
     image: {
@@ -44,8 +44,8 @@ export const treatflowPayEn: TreatflowPayContent = {
     },
   },
   understand: {
-    title: "Fewer no-shows, clear incoming payments",
-    description: "You decide for each treatment what is due online. The client pays right in the booking flow.",
+    title: "Fewer no-shows, clearer cash flow",
+    description: "You decide for each treatment what is due online. The client pays as part of booking.",
     items: [
       {
         icon: "percent",
@@ -95,16 +95,16 @@ export const treatflowPayEn: TreatflowPayContent = {
       {
         question: "Which payment methods are available?",
         answer:
-          "The client pays by credit or debit card in the Stripe checkout. Apple Pay and Google Pay appear there when her device supports them.",
+          "The client pays by credit or debit card in the Stripe checkout. Apple Pay and Google Pay appear there if their device supports them.",
       },
       {
         question: "How much does Treatflow Pay cost?",
         answer: "2.69% per transaction, all-in. There is no additional Treatflow fee on the payment. The minimum amount is €0.50.",
       },
       {
-        question: "Is Treatflow Pay also for payments in the salon?",
+        question: "Can I use Treatflow Pay for payments in the salon?",
         answer:
-          "No. Treatflow Pay is for online booking. Payments in the salon work as before, for example with your existing card terminal.",
+          "No. Treatflow Pay is for online booking. Payments in the salon work as before, for example with your existing card machine.",
       },
     ],
   },
@@ -117,7 +117,7 @@ export const treatflowPayEn: TreatflowPayContent = {
   cta: {
     title: "Take deposits right at booking",
     description:
-      "Try it free for 14 days. Connect Treatflow Pay under Apps afterwards – the fee only applies to real payments.",
+      "Try it free for 14 days. Connect Treatflow Pay under Apps afterwards – you only pay the fee on actual payments.",
     secondary: { label: "See online booking", href: { page: "online-booking" } },
   },
 };

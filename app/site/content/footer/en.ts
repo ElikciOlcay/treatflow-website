@@ -6,7 +6,7 @@ import type { FooterContent } from "./types";
  * language yet are hidden automatically (see app/i18n/site-pages.ts).
  */
 export const footerEn: FooterContent = {
-  tagline: "Your digital studio assistant. Made in Austria.",
+  tagline: "The digital assistant for salons and clinics. Made in Austria.",
   instagramAria: "Treatflow on Instagram",
   columns: [
     {
@@ -20,7 +20,7 @@ export const footerEn: FooterContent = {
             { href: { page: "client-records" }, label: "Client records" },
             { href: { page: "forms" }, label: "Forms" },
             { href: { page: "try-forms" }, label: "Try sample forms" },
-            { href: { page: "treatment-documentation" }, label: "Documentation" },
+            { href: { page: "treatment-documentation" }, label: "Treatment records" },
             { href: { page: "messaging" }, label: "Reminders" },
             { href: { page: "customer-workflows" }, label: "Client workflows" },
             { href: { page: "integrations" }, label: "Integrations" },
@@ -57,9 +57,9 @@ export const footerEn: FooterContent = {
             { href: { page: "treatflow-vs-treatwell" }, label: "Treatflow vs Treatwell" },
             { href: { page: "treatflow-vs-fresha" }, label: "Treatflow vs Fresha" },
             { href: { page: "shop" }, label: "Shop" },
-            { href: { page: "studio-website" }, label: "Studio website" },
+            { href: { page: "studio-website" }, label: "Salon websites" },
             { special: "register", label: "Start free trial" },
-            { special: "login", label: "Login" },
+            { special: "login", label: "Log in" },
           ],
         },
       ],
@@ -72,7 +72,7 @@ export const footerEn: FooterContent = {
             { href: { page: "about" }, label: "About us" },
             { href: { page: "blog" }, label: "Blog" },
             { href: { page: "news" }, label: "News" },
-            { href: { page: "try-features" }, label: "Try features live" },
+            { href: { page: "try-features" }, label: "Try the features live" },
             { href: { page: "contact" }, label: "Contact" },
           ],
         },
@@ -81,8 +81,8 @@ export const footerEn: FooterContent = {
           links: [
             { href: { page: "privacy" }, label: "Privacy policy" },
             { special: "cookie-settings", label: "Cookie settings" },
-            { href: { page: "terms" }, label: "Terms" },
-            { href: { page: "imprint" }, label: "Imprint" },
+            { href: { page: "terms" }, label: "Terms & conditions" },
+            { href: { page: "imprint" }, label: "Legal notice" },
           ],
         },
       ],
@@ -91,11 +91,11 @@ export const footerEn: FooterContent = {
   popularTopicsTitle: "Popular topics",
   popularTopics: [
     { href: { page: "online-booking" }, label: "Online booking for beauty salons" },
-    { href: { page: "treatment-documentation" }, label: "Treatment documentation software" },
+    { href: { page: "treatment-documentation" }, label: "Treatment record software" },
     { href: { page: "forms" }, label: "Digital consultation forms" },
     { href: { page: "messaging" }, label: "Appointment reminders" },
-    { href: { page: "appointment-calendar" }, label: "Salon appointment software" },
-    { href: { page: "client-records" }, label: "Client records for salons" },
+    { href: { page: "appointment-calendar" }, label: "Salon appointment diary software" },
+    { href: { page: "client-records" }, label: "Salon client record software" },
     { href: { page: "aesthetic-clinic-software" }, label: "Aesthetic clinic software" },
     { href: { page: "software-comparison" }, label: "Salon software comparison" },
   ],

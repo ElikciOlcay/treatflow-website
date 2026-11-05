@@ -2,13 +2,13 @@ import type { ClientRecordsContent } from "./types";
 
 export const clientRecordsEn: ClientRecordsContent = {
   meta: {
-    title: "Client Records Software for Beauty Salons: Data & History",
+    title: "Client Record Software for Salons: Client Cards & History",
     description:
       "Professional client management for your beauty salon: treatment history, client notes and photos in one place. GDPR-compliant, hosted in the EU.",
     keywords: [
       "client records software beauty salon",
       "salon client management",
-      "digital client cards",
+      "digital client record cards",
       "beauty salon CRM",
       "treatment history software",
       "GDPR client data salon",
@@ -18,7 +18,7 @@ export const clientRecordsEn: ClientRecordsContent = {
   schema: {
     id: "kundenverwaltung",
     webPage: {
-      name: "Client Records Software for Beauty Salons: Data & History",
+      name: "Client Record Software for Salons: Client Cards & History",
       description:
         "Professional client management for your beauty salon: treatment history, client notes and photos in one place. GDPR-compliant.",
     },
@@ -57,7 +57,7 @@ export const clientRecordsEn: ClientRecordsContent = {
       {
         icon: "shield",
         title: "Secure and GDPR-compliant",
-        text: "Your client data is stored encrypted on EU servers. Access and deletion requests can be handled at any time.",
+        text: "Your client data is stored encrypted on EU servers. Subject access and erasure requests can be handled at any time.",
       },
       {
         icon: "upload",
@@ -85,10 +85,10 @@ export const clientRecordsEn: ClientRecordsContent = {
     items: [
       { icon: "database", title: "Unlimited clients", text: "As many profiles as your salon needs – no surcharge per contact.", points: ["No client limit", "Stays fast", "Automatic backups"] },
       { icon: "upload", title: "Data import", text: "Bring existing lists over from Excel or CSV. Help with the move included.", points: ["Excel & CSV", "Field mapping", "Duplicate detection"] },
-      { icon: "shield", title: "GDPR-compliant", text: "Storage in the EU, encryption, access and deletion on request.", points: ["EU servers", "Encrypted", "Right to erasure"] },
+      { icon: "shield", title: "GDPR-compliant", text: "Storage in the EU, encryption, subject access and erasure on request.", points: ["EU servers", "Encrypted", "Right to erasure"] },
       { icon: "search", title: "Fast search", text: "Find profiles by name, phone, email or treatment – in seconds.", points: ["Full-text search", "Filters", "Sorting"] },
       { icon: "camera", title: "Photos & history", text: "Before-and-after photos and treatments right in the profile, not in separate folders.", points: ["Photos in the profile", "Treatment history", "Notes"] },
-      { icon: "users", title: "Always with you", text: "Web-based on smartphone, tablet and desktop – no extra app to install.", points: ["Smartphone", "Tablet at the treatment bed", "Desktop"] },
+      { icon: "users", title: "Always with you", text: "Web-based on smartphone, tablet and desktop – no extra app to install.", points: ["Smartphone", "Tablet in the treatment room", "Desktop"] },
     ],
   },
   faq: {
@@ -129,8 +129,8 @@ export const clientRecordsEn: ClientRecordsContent = {
   related: {
     items: [
       { href: { page: "appointment-calendar" }, title: "Appointment calendar", description: "Client profile right from the appointment" },
-      { href: { page: "forms" }, title: "Forms", description: "Intake forms land in the client record" },
-      { href: { page: "treatment-documentation" }, title: "Documentation", description: "History in the client profile" },
+      { href: { page: "forms" }, title: "Forms", description: "Consultation forms go straight to the client record" },
+      { href: { page: "treatment-documentation" }, title: "Treatment records", description: "History in the client profile" },
     ],
   },
   cta: {

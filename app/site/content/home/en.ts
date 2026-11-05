@@ -9,7 +9,7 @@ export const homeEn: HomeContent = {
   meta: {
     title: "Salon & Aesthetic Clinic Software",
     description:
-      "Treatflow is all-in-one software for beauty salons, aesthetic clinics and treatment businesses. Online booking, client records, digital forms, treatment documentation and reminders. 14-day free trial.",
+      "All-in-one software for beauty salons and aesthetic clinics: online booking, client records, digital consultation and consent forms, treatment records and email reminders. Try it free for 14 days.",
   },
 
   schema: {
@@ -21,7 +21,7 @@ export const homeEn: HomeContent = {
       operatingSystem: "Web Browser",
       inLanguage: "en",
       description:
-        "Treatflow is an all-in-one management platform for beauty salons, aesthetic clinics and treatment-focused businesses. It combines online booking, client records, digital consultation and consent forms, treatment documentation, before-and-after photos and automated follow-ups. Hosted in the EU.",
+        "Treatflow is an all-in-one management platform for beauty salons, aesthetic clinics and treatment-focused businesses. It combines online booking, client records, digital consultation and consent forms, treatment records, before-and-after photos and automated follow-ups. Hosted in the EU.",
       url: "https://www.treatflow.io/en",
       author: { "@type": "Organization", name: "Treatflow", url: "https://www.treatflow.io" },
       offers: [
@@ -31,7 +31,7 @@ export const homeEn: HomeContent = {
           price: "39",
           priceCurrency: "EUR",
           billingIncrement: "P1M",
-          description: "Client records, forms and treatment documentation",
+          description: "Client records, forms and treatment records",
         },
         {
           "@type": "Offer",
@@ -54,7 +54,7 @@ export const homeEn: HomeContent = {
         "Appointment calendar with online booking",
         "Digital client records",
         "Consultation and consent forms",
-        "Treatment documentation with photos",
+        "Treatment records with photos",
         "Voice dictation for treatment notes",
         "Automatic email reminders",
         "Client workflows",
@@ -63,25 +63,25 @@ export const homeEn: HomeContent = {
   },
 
   hero: {
-    badge: "For beauty studios that want to grow",
+    badge: "For salons and clinics ready to grow",
     title: {
-      before: "No more booking chaos,",
+      before: "Say goodbye to booking chaos,",
       highlight: "paperwork",
       connector: "and",
       end: "no-shows",
     },
     subtitle:
-      "Appointments, clients, forms and treatment documentation in one clear app. Your team will find its way around straight away.",
+      "Appointments, clients, forms and treatment records in one easy-to-use app. Your team will pick it up straight away.",
     primaryCta: "Start your 14-day free trial",
     demoCta: "Book a demo",
-    checks: ["No credit card", "Ready in 2 minutes", "Free data migration"],
+    checks: ["No credit card", "Set up in 2 minutes", "Free data migration"],
     rating: "4.6/5 on Google",
-    tested: { before: "Already tested by ", highlight: "500+ studios", after: "" },
+    tested: { before: "Already tried by ", highlight: "500+ salons & clinics", after: "" },
     calendarLocale: "en-GB",
     newBookingLabel: "New booking",
     image: {
       src: "/images/lifestyle/hero-startseite-en.png",
-      alt: "Treatflow on laptop and tablet: calendar and client records in a modern studio",
+      alt: "Treatflow on laptop and tablet: calendar and client records in a modern salon",
     },
     liveDemo: { href: { page: "try-features" }, label: "Try the features live" },
   },
@@ -89,10 +89,10 @@ export const homeEn: HomeContent = {
   socialProof: {
     rating: "4.6/5 on Google",
     allReviews: "See all reviews",
-    tested: { before: "Already tested by ", highlight: "500+ studios", after: "" },
+    tested: { before: "Already tried by ", highlight: "500+ salons & clinics", after: "" },
     reviews: [
       {
-        text: "The support is outstanding – always kind, friendly and solution-focused. Highly recommended!",
+        text: "Outstanding support – always kind, friendly and quick to find a solution. Highly recommended!",
         name: "Velura Saarburg",
         studio: "Laser hair removal",
       },
@@ -102,9 +102,9 @@ export const homeEn: HomeContent = {
         studio: "Local Guide",
       },
       {
-        text: "Switched from Phorest – excellent value for money. I can recommend it with a clear conscience.",
+        text: "Switched from Phorest – excellent value for money. I'd recommend it without hesitation.",
         name: "Sharon U.",
-        studio: "Beauty studio",
+        studio: "Beauty salon",
       },
     ],
     note: "Google reviews, translated from German.",
@@ -113,13 +113,13 @@ export const homeEn: HomeContent = {
   studioDay: {
     eyebrow: "One appointment, one system",
     title: "From booking to aftercare. In one app.",
-    subtitle: "This is how an appointment runs with Treatflow. Nothing has to be entered twice.",
+    subtitle: "Here's how an appointment flows through Treatflow – nothing gets entered twice.",
     steps: [
       {
         time: "Mon · 21:14",
         module: "Online booking",
-        title: "Lena books in the evening from her sofa.",
-        text: "No phone call and no commission per booking. The appointment is in the calendar straight away.",
+        title: "Lena books from her sofa in the evening.",
+        text: "No phone call, no booking commission. The appointment goes straight into the calendar.",
         meta: "Facial · Thu 10:45",
         href: { page: "online-booking" },
         icon: "calendar-days",
@@ -129,7 +129,7 @@ export const homeEn: HomeContent = {
         time: "Wed · 10:45",
         module: "Reminder",
         title: "The reminder goes out automatically.",
-        text: "One day before, by email. Fewer forgotten appointments, without anyone having to think about it.",
+        text: "One day before, by email. Fewer forgotten appointments – and nobody has to remember to send it.",
         meta: "Delivered · confirmed",
         href: { page: "messaging" },
         icon: "bell",
@@ -138,7 +138,7 @@ export const homeEn: HomeContent = {
       {
         time: "Thu · 10:40",
         module: "Forms",
-        title: "Consultation form on the tablet, signed.",
+        title: "Consultation form signed on the tablet.",
         text: "The form goes straight into Lena's client record. No paperwork to type up afterwards.",
         meta: "Consultation form · signed digitally",
         href: { page: "forms" },
@@ -147,9 +147,9 @@ export const homeEn: HomeContent = {
       },
       {
         time: "Thu · 11:40",
-        module: "Documentation",
-        title: "Treatment documented, with photos.",
-        text: "Parameters, products and before-and-after photos stay in the treatment history.",
+        module: "Treatment records",
+        title: "Treatment recorded, photos included.",
+        text: "Parameters, products and before-and-after photos are saved to her treatment history.",
         meta: "3 photos · parameters saved",
         href: { page: "treatment-documentation" },
         icon: "camera",
@@ -158,8 +158,8 @@ export const homeEn: HomeContent = {
       {
         time: "Fri · 09:00",
         module: "Aftercare",
-        title: "Aftercare and rebooking run on their own.",
-        text: "A care tip the next day, a rebooking reminder a few weeks later. Set up once as a client workflow.",
+        title: "Aftercare and rebooking take care of themselves.",
+        text: "An aftercare tip the next day, a rebooking nudge a few weeks later. Set up once as a client workflow.",
         meta: "Workflow · next step in 4 weeks",
         href: { page: "customer-workflows", fallback: "messaging" },
         icon: "workflow",
@@ -170,24 +170,24 @@ export const homeEn: HomeContent = {
 
   features: {
     title: "Less chaos. More time for your clients.",
-    subtitle: "Everything your studio needs – in one app your team understands straight away.",
+    subtitle: "Everything your salon needs – in one app your team will get the hang of straight away.",
     items: [
       { href: { page: "appointment-calendar" }, icon: "calendar-days", label: "Appointment calendar", desc: "All appointments in a clear daily and weekly view.", color: "bg-indigo-100 text-indigo-600" },
-      { href: { page: "online-booking" }, icon: "users", label: "Online booking", desc: "Clients book themselves – even outside your opening hours.", color: "bg-emerald-100 text-emerald-600" },
-      { href: { page: "client-records" }, icon: "file-text", label: "Client records", desc: "History, notes and photos in one place and quick to find.", color: "bg-blue-100 text-blue-600" },
-      { href: { page: "forms" }, icon: "clipboard-check", label: "Forms", desc: "Digital consultation and consent forms, completed in advance via link.", color: "bg-orange-100 text-orange-600" },
-      { href: { page: "treatment-documentation" }, icon: "shield", label: "Documentation", desc: "Document every treatment properly, with photos and parameters.", color: "bg-teal-100 text-teal-600" },
+      { href: { page: "online-booking" }, icon: "users", label: "Online booking", desc: "Clients book themselves – even when you're closed.", color: "bg-emerald-100 text-emerald-600" },
+      { href: { page: "client-records" }, icon: "file-text", label: "Client records", desc: "History, notes and photos in one place, found in seconds.", color: "bg-blue-100 text-blue-600" },
+      { href: { page: "forms" }, icon: "clipboard-check", label: "Forms", desc: "Digital consultation and consent forms, filled in before the appointment via a link.", color: "bg-orange-100 text-orange-600" },
+      { href: { page: "treatment-documentation" }, icon: "shield", label: "Treatment records", desc: "Record every treatment properly, with photos and parameters.", color: "bg-teal-100 text-teal-600" },
       { href: { page: "treatflow-pay", fallback: "online-booking" }, icon: "wallet", label: "Treatflow Pay", desc: "Take a deposit or full payment online when clients book.", color: "bg-green-100 text-green-600", feature: "pay" },
-      { href: { page: "messaging" }, icon: "bell", label: "Reminders", desc: "Automatic email reminders reduce no-shows.", color: "bg-rose-100 text-rose-600" },
-      { href: { page: "customer-workflows", fallback: "messaging" }, icon: "workflow", label: "Client workflows", desc: "Automate aftercare and reactivation in several steps.", color: "bg-violet-100 text-violet-600" },
+      { href: { page: "messaging" }, icon: "bell", label: "Reminders", desc: "Automatic email reminders cut no-shows.", color: "bg-rose-100 text-rose-600" },
+      { href: { page: "customer-workflows", fallback: "messaging" }, icon: "workflow", label: "Client workflows", desc: "Automate multi-step aftercare and win-back campaigns.", color: "bg-violet-100 text-violet-600" },
     ],
     cta: "Start your 14-day free trial",
     ctaNote: "No credit card. Cancel anytime.",
   },
 
   pricing: {
-    eyebrow: "Transparent pricing",
-    titleBefore: "Simple pricing -",
+    eyebrow: "Clear pricing",
+    titleBefore: "Simple pricing –",
     titleHighlight: " no hidden fees",
     subtitle:
       "Treatflow starts at €39/month (Basic) or €59/month (Booking). Try it free for 14 days – no commission and no risk.",
@@ -202,11 +202,11 @@ export const homeEn: HomeContent = {
       monthlyPrice: "€39",
       yearlyPrice: "€421",
       yearlyHint: "€35/month • Save €47/year",
-      description: "Digital consultation forms, client records and treatment documentation – without scheduling.",
+      description: "Client records, digital consultation forms and treatment records – without the appointment calendar.",
       included: [
         "Client management",
         "Forms with digital signature",
-        "Documentation incl. voice notes",
+        "Treatment records incl. voice dictation",
         "Before-and-after photos",
         "Team notes and tasks",
         "Shop and products",
@@ -228,7 +228,7 @@ export const homeEn: HomeContent = {
       monthlyPrice: "€59",
       yearlyPrice: "€637",
       yearlyHint: "€53/month • Save €71/year",
-      description: "Appointment calendar, online booking and automatic reminders for your studio.",
+      description: "Appointment calendar, online booking and automatic reminders for your salon.",
       included: [
         "Everything in Basic",
         "Calendar with staff and room columns",
@@ -246,25 +246,25 @@ export const homeEn: HomeContent = {
     trial: {
       title: "Try free for 14 days",
       text: "No credit card required • Cancel anytime • Free data migration",
-      points: ["No setup fees", "Cancel monthly", "GDPR-compliant"],
+      points: ["No setup fees", "Rolling monthly plan", "GDPR-compliant"],
     },
   },
 
   faq: {
     badge: "FAQ",
-    titleBefore: "Still have questions?",
-    titleHighlight: " We have answers!",
+    titleBefore: "Got questions?",
+    titleHighlight: " We've got answers.",
     subtitle: "Here you'll find answers to the most common questions about Treatflow.",
     items: [
       {
         question: "What is Treatflow?",
         answer:
-          "Treatflow is an all-in-one app for everyday studio work: appointments, client records, digital forms and treatment documentation are connected in one system – with no commission per booking. Developed in Austria, with data on EU servers.",
+          "Treatflow is an all-in-one app for the day-to-day running of your salon or clinic: appointments, client records, digital forms and treatment records are connected in one system – with no commission per booking. Developed in Austria, with data on EU servers.",
       },
       {
         question: "Who is Treatflow for?",
         answer: [
-          "For studios that perform treatments – from beauty and aesthetics to laser, nails, lashes, permanent makeup, massage and spa. Learn more about our ",
+          "For any business that offers treatments – from beauty salons and aesthetics clinics to laser, nails, lashes, permanent makeup, massage and spa. Find out more about our ",
           { text: "aesthetic clinic software", href: { page: "aesthetic-clinic-software" } },
           " and ",
           { text: "client records", href: { page: "client-records" } },
@@ -274,7 +274,7 @@ export const homeEn: HomeContent = {
       {
         question: "How long can I try Treatflow for free?",
         answer:
-          "You can try Treatflow completely free for 14 days. No credit card required, no hidden costs. After the trial you decide whether you want to continue.",
+          "You can try Treatflow completely free for 14 days. No credit card required, no hidden costs. At the end of the trial, you decide whether to carry on.",
       },
       {
         question: "What is the difference between Basic and Booking?",
@@ -294,14 +294,14 @@ export const homeEn: HomeContent = {
           "Yes. Treatflow is fully GDPR-compliant. All data is encrypted and stored securely on EU servers in Frankfurt, Germany. Digital ",
           { text: "consultation forms", href: { page: "forms" } },
           " and ",
-          { text: "treatment documentation", href: { page: "treatment-documentation" } },
+          { text: "treatment records", href: { page: "treatment-documentation" } },
           " are covered as well.",
         ],
       },
       {
         question: "Can I import my existing client data?",
         answer: [
-          "Yes, we help you move your data free of charge. Our support team helps you transfer your existing client data safely into your ",
+          "Yes – we'll move your data over free of charge. Our support team will help you transfer your existing client data safely into your ",
           { text: "digital client records", href: { page: "client-records" } },
           ".",
         ],
@@ -314,12 +314,12 @@ export const homeEn: HomeContent = {
       {
         question: "What happens to my data if I cancel?",
         answer:
-          "You stay in full control of your data. If you cancel, you can export all of it. We only delete your data completely after a transition period.",
+          "You stay in full control of your data. If you cancel, you can export all of it. Your data is only fully deleted after a transition period.",
       },
       {
         question: "Do I need technical knowledge to use Treatflow?",
         answer:
-          "No. Treatflow is very easy to use. There is nothing to install – simply sign in in your browser and get started. If you have questions, our support team is happy to help.",
+          "No. Treatflow is very easy to use. There's nothing to install – just log in from your browser and get started. If you have questions, our support team is happy to help.",
       },
       {
         question: "How does the form marketplace work?",
@@ -332,28 +332,28 @@ export const homeEn: HomeContent = {
       {
         question: "Can I manage an unlimited number of clients?",
         answer:
-          "Yes. You can manage as many clients as you like. The system scales and grows with your studio, and the import function makes it easy to bring over existing client data.",
+          "Yes. You can manage as many clients as you like. Treatflow grows with your business, and the import function makes it easy to bring over existing client data.",
       },
     ],
     contactTitle: "Any other questions?",
     contactText:
-      "Our support team is happy to help. Send us an email or book a consultation call directly.",
-    demoCta: "Book a consultation",
+      "Our support team is happy to help. Drop us an email or book a call with us.",
+    demoCta: "Book a call",
   },
 
   cta: {
     ariaLabel: "Call to action",
-    title: "Ready to run your studio with more clarity?",
-    subtitle: "Start today and see how easy studio organisation can be.",
+    title: "Ready for a calmer, better-organised salon?",
+    subtitle: "Start today and see how easy running your salon can be.",
     checks: [
       "Try free for 14 days",
       "No credit card needed",
-      "Ready in 2 minutes",
-      "Personal support and help",
+      "Set up in 2 minutes",
+      "Friendly, personal support",
     ],
     primaryCta: "Start your free trial",
     demoCta: "Book a demo",
-    note: "Cancel anytime. GDPR-compliant. With personal support and help.",
+    note: "Cancel anytime. GDPR-compliant. Real people on hand to help.",
   },
 
   seo: {
@@ -361,12 +361,12 @@ export const homeEn: HomeContent = {
     intro: [
       "Treatflow is the ",
       { text: "software for beauty salons", href: { page: "beauty-salon-software" } },
-      " with appointment calendar, online booking, digital client records, forms and treatment documentation – no commission, GDPR-compliant and made in Austria.",
+      " with appointment calendar, online booking, digital client records, forms and treatment records – no commission, GDPR-compliant and made in Austria.",
     ],
     links: [
       { href: { page: "client-records" }, label: "Client records software" },
       { href: { page: "online-booking" }, label: "Online appointment booking" },
-      { href: { page: "treatment-documentation" }, label: "Treatment documentation" },
+      { href: { page: "treatment-documentation" }, label: "Treatment record software" },
       { href: { page: "forms" }, label: "Digital consultation forms" },
       { href: { page: "messaging" }, label: "Appointment reminders" },
       { href: { page: "software-comparison" }, label: "Software comparison" },

@@ -6,7 +6,7 @@ import type { FooterContent } from "./types";
  * automáticamente (ver app/i18n/site-pages.ts).
  */
 export const footerEs: FooterContent = {
-  tagline: "Tu asistente digital para el centro. Hecho en Austria.",
+  tagline: "Tu aliado digital para el día a día del centro. Hecho en Austria.",
   instagramAria: "Treatflow en Instagram",
   columns: [
     {
@@ -17,9 +17,9 @@ export const footerEs: FooterContent = {
             { href: { page: "appointment-calendar" }, label: "Agenda de citas" },
             { href: { page: "online-booking" }, label: "Reservas online" },
             { href: { page: "treatflow-pay" }, label: "Treatflow Pay", feature: "pay" },
-            { href: { page: "client-records" }, label: "Fichas de clientes" },
+            { href: { page: "client-records" }, label: "Fichas de cliente" },
             { href: { page: "forms" }, label: "Formularios" },
-            { href: { page: "try-forms" }, label: "Prueba formularios de ejemplo" },
+            { href: { page: "try-forms" }, label: "Formularios de ejemplo" },
             { href: { page: "treatment-documentation" }, label: "Documentación" },
             { href: { page: "messaging" }, label: "Recordatorios" },
             { href: { page: "customer-workflows" }, label: "Flujos de clientes" },
@@ -88,16 +88,16 @@ export const footerEs: FooterContent = {
       ],
     },
   ],
-  popularTopicsTitle: "Temas populares",
+  popularTopicsTitle: "Lo más buscado",
   popularTopics: [
     { href: { page: "online-booking" }, label: "Reservas online para centros de estética" },
     { href: { page: "treatment-documentation" }, label: "Software de documentación de tratamientos" },
     { href: { page: "forms" }, label: "Fichas de anamnesis digitales" },
     { href: { page: "messaging" }, label: "Recordatorios de citas" },
     { href: { page: "appointment-calendar" }, label: "Agenda de citas para centros de estética" },
-    { href: { page: "client-records" }, label: "Fichas de clientes para centros" },
+    { href: { page: "client-records" }, label: "Fichas de cliente para centros de estética" },
     { href: { page: "aesthetic-clinic-software" }, label: "Software para clínicas estéticas" },
-    { href: { page: "software-comparison" }, label: "Comparativa de software para centros" },
+    { href: { page: "software-comparison" }, label: "Comparativa de programas para centros de estética" },
   ],
   rights: "Todos los derechos reservados.",
 };

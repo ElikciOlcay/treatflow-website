@@ -215,6 +215,7 @@ const nextConfig: NextConfig = {
       { source: '/tr/client-records', destination: '/tr/musteri-takip-programi', statusCode: 301 },
       { source: '/tr/online-booking', destination: '/tr/online-randevu-sistemi', statusCode: 301 },
       { source: '/tr/client-workflows', destination: '/tr/musteri-otomasyonlari', statusCode: 301 },
+      { source: '/tr/try-features', destination: '/tr/canli-demo', statusCode: 301 },
     ];
   },
 

@@ -35,12 +35,12 @@ export const integrationsEn: IntegrationsContent = {
   },
   understand: {
     title: "At a glance: what integrations are for",
-    description: "Less double work – data flows between your tools.",
+    description: "No more double entry – data flows between your tools.",
     items: [
       {
         icon: "refresh",
-        title: "Less double work",
-        text: "Maintain clients and appointments once – your calendar and connected tools stay up to date.",
+        title: "No more double entry",
+        text: "Enter clients and appointments once – your calendar and connected tools stay up to date.",
       },
       {
         icon: "workflow",
@@ -50,7 +50,7 @@ export const integrationsEn: IntegrationsContent = {
       {
         icon: "shield-check",
         title: "GDPR-compliant",
-        text: "Secure connections and EU-compliant data processing. Medical data never leaves Treatflow.",
+        text: "Secure connections and data processing in line with EU rules. Medical data never leaves Treatflow.",
       },
     ],
   },
@@ -109,12 +109,12 @@ export const integrationsEn: IntegrationsContent = {
       {
         question: "Can I use Treatflow with ChatGPT or Claude?",
         answer:
-          "Yes. Add Treatflow as a connector in your AI assistant and sign in with your Treatflow account. You can then ask about appointments, free slots, clients or revenue. Access is read-only by default; if you allow it, the assistant can also create and reschedule appointments, with every change logged. Treatment documentation, forms and photos are never shared.",
+          "Yes. Add Treatflow as a connector in your AI assistant and sign in with your Treatflow account. You can then ask about appointments, free slots, clients or revenue. Access is read-only by default; if you allow it, the assistant can also create and reschedule appointments, with every change logged. Treatment records, forms and photos are never shared.",
       },
       {
-        question: "What do I need the Zapier integration for?",
+        question: "What is the Zapier integration for?",
         answer:
-          "With Zapier you automate your own workflows without programming. When a new appointment is booked or a form is completed, Treatflow can, for example, add a row to Google Sheets, create a contact in your CRM or trigger an email.",
+          "With Zapier you automate your own workflows without any coding. When a new appointment is booked or a form is completed, Treatflow can, for example, add a row to Google Sheets, create a contact in your CRM or trigger an email.",
       },
       {
         question: "Can clients pay online when they book?",

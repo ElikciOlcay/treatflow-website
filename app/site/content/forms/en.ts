@@ -2,25 +2,25 @@ import type { FormsContent } from "./types";
 
 export const formsEn: FormsContent = {
   meta: {
-    title: "Digital Intake & Consent Forms for Beauty Salons",
+    title: "Digital Consultation & Consent Forms for Salons and Clinics",
     description:
-      "Digital intake, medical history and consent forms for beauty and aesthetic salons: ready-made templates, AI form generator and drag & drop editor. Clients fill in and sign before their appointment.",
+      "Digital consultation, medical history and consent forms for beauty salons and aesthetic clinics: ready-made templates, AI form generator and drag & drop editor. Clients fill in and sign before their appointment.",
     keywords: [
-      "beauty salon intake form",
+      "beauty salon consultation form",
       "client consultation form",
       "digital consent form salon",
       "medical history form aesthetics",
       "AI form generator",
-      "salon form templates",
+      "consent form templates salon",
     ],
   },
   dates: { modified: "2026-08-18", published: "2024-06-01" },
   schema: {
     id: "formulare",
     webPage: {
-      name: "Digital Intake & Consent Forms for Beauty Salons",
+      name: "Digital Consultation & Consent Forms for Salons and Clinics",
       description:
-        "Ready-made templates, AI form generator and drag & drop editor for intake and consent forms in beauty and aesthetic salons.",
+        "Ready-made templates, AI form generator and drag & drop editor for consultation and consent forms in beauty salons and aesthetic clinics.",
     },
   },
   breadcrumb: "Forms",
@@ -30,12 +30,12 @@ export const formsEn: FormsContent = {
     title: { before: "Forms for every ", highlight: "treatment" },
     description: "Marketplace, AI generator and drag & drop. Use templates or create your own forms in minutes.",
     chips: ["AI generator", "Marketplace", "Drag & drop"],
-    secondaryCta: { label: "Try examples", href: { page: "try-forms" } },
+    secondaryCta: { label: "Try sample forms", href: { page: "try-forms" } },
     capsules: [
       {
         question: "Which forms does a beauty salon need?",
         answer:
-          "At a minimum, intake and medical history forms and consent forms – plus detailed information sheets for device-based treatments such as laser or IPL. Treatflow provides ready-made templates and an AI generator; clients fill them in digitally before their visit and the data is stored GDPR-compliantly in the client record.",
+          "At a minimum, a consultation form covering medical history and a consent form – plus detailed pre-treatment information for device-based treatments such as laser or IPL. Treatflow provides ready-made templates and an AI generator; clients fill them in digitally before their visit and the data is stored GDPR-compliantly in the client record.",
       },
     ],
     image: {
@@ -44,14 +44,14 @@ export const formsEn: FormsContent = {
     },
   },
   understand: {
-    title: "Intake and consent – digital instead of paper",
+    title: "Consultation and consent – digital, not paper",
     description:
       "Your clients complete forms on their own phone before the appointment. The data goes straight into the client profile.",
     items: [
       {
         icon: "file-text",
         title: "Use ready-made templates",
-        text: "The marketplace has templates for intake, treatment information and consent – including for laser and IPL treatments.",
+        text: "The marketplace has templates for consultations, treatment information and consent – including for laser and IPL treatments.",
       },
       {
         icon: "sparkles",
@@ -66,9 +66,9 @@ export const formsEn: FormsContent = {
     ],
   },
   tryBanner: {
-    title: "Try example forms without signing up",
-    text: "These templates show the digital check-in. You create forms for your salon with the AI generator – or we set them up together with you.",
-    button: "Open examples",
+    title: "Try sample forms – no sign-up needed",
+    text: "These templates show how digital check-in works. Create forms for your own salon with the AI generator – or we'll set them up with you.",
+    button: "Open sample forms",
     href: { page: "try-forms" },
   },
   howItWorks: {
@@ -81,12 +81,12 @@ export const formsEn: FormsContent = {
   },
   cards: {
     title: "What you get",
-    description: "Three ways to intake and consent forms – plus sending and digital signatures.",
+    description: "Three ways to create consultation and consent forms – plus sending and digital signatures.",
     items: [
-      { icon: "file-text", title: "Forms marketplace", text: "Ready-made templates for beauty treatments – professionally written and ready to use.", points: ["Intake & information", "Consent forms", "Ready to use"] },
+      { icon: "file-text", title: "Forms marketplace", text: "Ready-made templates for beauty treatments – professionally written and ready to use.", points: ["Consultation & information", "Consent forms", "Ready to use"] },
       { icon: "sparkles", title: "AI generator", text: "Describe the treatment in your own words – the AI builds the form with the fields you need.", points: ["Fields created automatically", "In seconds", "Editable afterwards"] },
       { icon: "layout", title: "Drag & drop editor", text: "Build your own forms or adapt templates – with every field type and a live preview.", points: ["All field types", "Live preview", "Full control"] },
-      { icon: "send", title: "Sent ahead by link", text: "The form goes out by email before the appointment. Saves 10–15 minutes at reception.", points: ["By email", "On their own device", "Saved to the client profile"] },
+      { icon: "send", title: "Sent in advance by link", text: "The form goes out by email before the appointment. Saves 10–15 minutes at reception.", points: ["By email", "On their own device", "Saved to the client profile"] },
       { icon: "pen-tool", title: "Digital signature", text: "Clients sign consent on the tablet. Timestamped and archived in the EU.", points: ["On the device", "Timestamp", "Fully traceable"] },
       { icon: "shield", title: "Secure archive", text: "Every completed form is stored with signature and timestamp on EU servers and stays with the client record.", points: ["EU servers", "Encrypted", "GDPR-compliant"] },
     ],
@@ -97,15 +97,15 @@ export const formsEn: FormsContent = {
       {
         question: "Which forms does a beauty salon need?",
         answer:
-          "At a minimum, a beauty salon needs intake and medical history forms and consent forms. Device-based treatments such as laser or IPL also call for detailed information about risks. Depending on the treatment, allergy questionnaires, aftercare instructions and satisfaction surveys can be added.",
+          "At a minimum, a beauty salon needs a consultation form covering medical history and consent forms. Device-based treatments such as laser or IPL also call for detailed information about risks. Depending on the treatment, allergy questionnaires, aftercare instructions and satisfaction surveys can be added.",
       },
       {
-        question: "What should a beauty intake form include?",
+        question: "What should a beauty consultation form include?",
         answer:
-          "An intake form for beauty treatments should ask for personal details, current medication, allergies and intolerances, skin conditions, pregnancy and previous treatments. Device-based treatments such as laser or IPL usually require additional questions.",
+          "A consultation form for beauty treatments should ask for personal details, current medication, allergies and intolerances, skin conditions, pregnancy and previous treatments. Device-based treatments such as laser or IPL usually require additional questions.",
       },
       {
-        question: "Can I send intake forms to clients digitally?",
+        question: "Can I send consultation forms to clients digitally?",
         answer:
           "Yes. With Treatflow you can send forms to your clients by email before their visit. They fill them in on their own phone ahead of the appointment – saving you 10–15 minutes per appointment in the salon.",
       },
@@ -118,14 +118,14 @@ export const formsEn: FormsContent = {
   },
   related: {
     items: [
-      { href: { page: "try-forms" }, title: "Try forms", description: "Fill in example forms without signing up" },
-      { href: { page: "treatment-documentation" }, title: "Documentation", description: "Forms plus treatment history" },
+      { href: { page: "try-forms" }, title: "Try sample forms", description: "Fill in sample forms, no sign-up needed" },
+      { href: { page: "treatment-documentation" }, title: "Treatment records", description: "Forms plus treatment history" },
       { href: { page: "client-records" }, title: "Client records", description: "Completed forms in the profile" },
     ],
   },
   cta: {
     title: "Ready for digital forms?",
     description: "Try it free for 14 days – marketplace, AI generator and drag & drop, no credit card required.",
-    secondary: { label: "Try examples", href: { page: "try-forms" } },
+    secondary: { label: "Try sample forms", href: { page: "try-forms" } },
   },
 };

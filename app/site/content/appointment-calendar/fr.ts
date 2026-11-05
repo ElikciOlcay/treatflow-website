@@ -2,17 +2,17 @@ import type { AppointmentCalendarContent } from "./types";
 
 export const appointmentCalendarFr: AppointmentCalendarContent = {
   meta: {
-    title: "Agenda pour institut de beauté : équipe et cabines",
+    title: "Agenda et planning pour institut de beauté : équipe et cabines",
     description:
-      "Logiciel de prise de rendez-vous pour instituts de beauté et cliniques esthétiques : un agenda avec une colonne par collaborateur et par cabine, réservation en ligne, glisser-déposer et rappels automatiques par e-mail. Sans commission, 14 jours d'essai gratuit.",
+      "Logiciel de prise de rendez-vous pour instituts de beauté et centres esthétiques : un agenda avec une colonne par collaborateur et par cabine, réservation en ligne, glisser-déposer et rappels automatiques par e-mail. Sans commission, 14 jours d'essai gratuit.",
     keywords: [
       "agenda institut de beauté",
       "logiciel de planning institut",
       "logiciel prise de rendez-vous spa",
       "agenda de réservation institut de beauté",
       "planning équipe et cabines",
-      "logiciel de rendez-vous clinique esthétique",
-      "agenda glisser-déposer",
+      "logiciel de rendez-vous médecine esthétique",
+      "agenda en ligne esthéticienne",
     ],
   },
   dates: { modified: "2026-10-28", published: "2024-06-01" },
@@ -40,9 +40,9 @@ export const appointmentCalendarFr: AppointmentCalendarContent = {
       rating: true,
     },
   },
-  breadcrumb: "Agenda des rendez-vous",
+  breadcrumb: "Agenda et planning",
   hero: {
-    eyebrow: "Planning et agenda des rendez-vous",
+    eyebrow: "Agenda et planning",
     eyebrowIcon: "calendar",
     title: { before: "L'agenda de votre institut – pour votre équipe et vos ", highlight: "cabines" },
     description:
@@ -56,7 +56,7 @@ export const appointmentCalendarFr: AppointmentCalendarContent = {
           "Treatflow réunit rendez-vous, collaborateurs et cabines dans un seul agenda. La vue jour affiche chaque personne ou cabine dans sa propre colonne : vous repérez les créneaux libres, évitez les doubles réservations et gérez les changements plus rapidement. La réservation en ligne et les rappels automatiques réduisent en outre les appels et les rendez-vous non honorés.",
       },
       {
-        question: "Quel logiciel de rendez-vous convient aux cliniques esthétiques ?",
+        question: "Quel logiciel de rendez-vous pour un centre de médecine esthétique ?",
         answer:
           "Treatflow associe un agenda avec colonnes par collaborateur et par cabine, la réservation en ligne pour les consultations et les soins, et des rappels par e-mail. Les réservations arrivent directement dans l'agenda, sans commission.",
       },
@@ -78,17 +78,17 @@ export const appointmentCalendarFr: AppointmentCalendarContent = {
       {
         icon: "move",
         title: "Déplacer par glisser-déposer",
-        text: "Un changement de programme ? Faites simplement glisser le rendez-vous vers un nouveau créneau – inutile de le supprimer puis de le recréer.",
+        text: "Un imprévu ? Faites glisser le rendez-vous vers un autre créneau – inutile de l'annuler puis de le recréer.",
       },
       {
         icon: "bell",
         title: "Rappels automatiques",
-        text: "Vos clients reçoivent un rappel par e-mail avant leur rendez-vous. Les oublis diminuent nettement.",
+        text: "Vos clients reçoivent un rappel par e-mail avant leur rendez-vous. Résultat : nettement moins d'oublis.",
       },
     ],
   },
   howItWorks: {
-    description: "Trois étapes pour un planning d'institut opérationnel.",
+    description: "Votre planning opérationnel en trois étapes.",
     steps: [
       { title: "Configurer équipe, prestations et cabines", text: "Ajoutez vos collaborateurs, vos soins et vos cabines avec leurs horaires. L'agenda affiche ensuite une colonne distincte pour chacun d'eux." },
       { title: "Ajouter des rendez-vous", text: "Saisissez vous-même les rendez-vous ou activez la réservation en ligne – les réservations de vos clients apparaissent alors automatiquement dans l'agenda." },
@@ -100,11 +100,11 @@ export const appointmentCalendarFr: AppointmentCalendarContent = {
     description: "Tout pour le planning de votre institut – équipe, cabines et rappels dans un seul agenda.",
     items: [
       { icon: "users", title: "Équipe et cabines", text: "Une colonne par collaborateur ou par cabine. Occupation et créneaux libres en un coup d'œil.", points: ["Vue en colonnes", "Disponibilités visibles", "Aucune double réservation"] },
-      { icon: "move", title: "Glisser-déposer", text: "Déplacez, prolongez ou échangez des rendez-vous – sans formulaire, sans chaos.", points: ["Déplacé en quelques secondes", "En direct dans l'agenda", "Pour toute l'équipe"] },
+      { icon: "move", title: "Glisser-déposer", text: "Déplacez, prolongez ou échangez des rendez-vous – sans formulaire, sans chaos.", points: ["Déplacé en quelques secondes", "Mis à jour en temps réel", "Pour toute l'équipe"] },
       { icon: "layout-grid", title: "De la vue jour à la vue mois", text: "Passez du jour à la semaine ou au mois – selon ce dont vous avez besoin.", points: ["Vue jour", "Semaine", "Mois"] },
       { icon: "bell", title: "Rappels automatiques", text: "Des rappels par e-mail avant chaque rendez-vous. Moins d'absences, moins d'appels de relance.", points: ["Rappels par e-mail", "Moment d'envoi au choix", "Lien d'annulation"] },
       { icon: "calendar", title: "Réservation en ligne", text: "Les réservations arrivent directement dans l'agenda. Aucune double réservation, confirmation automatique.", points: ["Lien de réservation personnel", "Immédiatement dans l'agenda", "Sans commission"] },
-      { icon: "clock", title: "Moins de tâches administratives", text: "Moins d'appels, des processus plus clairs – plus de temps pour les soins plutôt que pour le planning.", points: ["Moins d'appels", "Créneaux clairs", "Vue d'ensemble rapide"] },
+      { icon: "clock", title: "Moins de tâches administratives", text: "Moins d'appels, une organisation plus fluide – et plus de temps pour vos soins que pour votre planning.", points: ["Moins d'appels", "Créneaux clairs", "Vue d'ensemble rapide"] },
     ],
   },
   faq: {
@@ -113,7 +113,7 @@ export const appointmentCalendarFr: AppointmentCalendarContent = {
       {
         question: "Comment organiser au mieux les rendez-vous d'un institut de beauté ?",
         answer:
-          "Un outil de planning spécialisé comme Treatflow est la solution la plus efficace. La réservation en ligne permet à vos clients de réserver 24h/24 et 7j/7, les rappels automatiques par e-mail réduisent nettement les rendez-vous non honorés, et la vue claire de l'agenda vous donne à tout moment une vision complète.",
+          "Le plus efficace est un outil de planning spécialisé comme Treatflow. La réservation en ligne permet à vos clients de réserver 24h/24 et 7j/7, les rappels automatiques par e-mail réduisent nettement les rendez-vous non honorés, et la vue claire de l'agenda vous donne à tout moment une vision complète.",
       },
       {
         question: "Combien coûte un logiciel de rendez-vous pour institut de beauté ?",
@@ -123,7 +123,7 @@ export const appointmentCalendarFr: AppointmentCalendarContent = {
       {
         question: "Existe-t-il un agenda gratuit pour institut de beauté ?",
         answer:
-          "Des agendas gratuits existent – généralement avec des limitations, de la publicité ou une commission par réservation via un modèle de place de marché. Un agenda papier ou un tableur ne coûte rien, mais ne permet ni la réservation en ligne, ni l'envoi de rappels, ni le lien avec vos fiches clients. Vous pouvez essayer Treatflow gratuitement pendant 14 jours sans carte bancaire ; ensuite, l'agenda avec réservation en ligne coûte 59 €/mois, sans commission par rendez-vous.",
+          "Il existe des agendas gratuits – généralement limités, financés par la publicité ou par une commission sur les réservations via une place de marché. Un agenda papier ou un tableur ne coûte rien, mais ne permet ni la réservation en ligne, ni l'envoi de rappels, ni le lien avec vos fiches clients. Vous pouvez essayer Treatflow gratuitement pendant 14 jours sans carte bancaire ; ensuite, l'agenda avec réservation en ligne coûte 59 €/mois, sans commission par rendez-vous.",
       },
       {
         question: "Planning, agenda ou système de réservation : quelle différence ?",
@@ -133,7 +133,7 @@ export const appointmentCalendarFr: AppointmentCalendarContent = {
       {
         question: "Mes clients peuvent-ils réserver en ligne ?",
         answer:
-          "Oui. Vous obtenez un lien de réservation personnel à partager sur votre site web, sur Instagram ou par message. Vos clients choisissent soins et horaires à toute heure. Les nouvelles réservations apparaissent instantanément dans l'agenda et les confirmations sont envoyées automatiquement par e-mail.",
+          "Oui. Vous disposez d'un lien de réservation personnel à partager sur votre site web, sur Instagram ou par message. Vos clients choisissent leur soin et leur créneau à toute heure. Les nouvelles réservations apparaissent instantanément dans l'agenda et les confirmations sont envoyées automatiquement par e-mail.",
       },
       {
         question: "Comment réduire les rendez-vous non honorés dans mon institut ?",
@@ -143,7 +143,7 @@ export const appointmentCalendarFr: AppointmentCalendarContent = {
       {
         question: "Quelles fonctionnalités un agenda pour institut de beauté doit-il offrir ?",
         answer:
-          "Un bon agenda pour institut de beauté doit proposer la réservation en ligne, des vues jour/semaine/mois, la planification des collaborateurs et des cabines, des rappels automatiques par e-mail, le glisser-déposer et un lien avec les fiches clients et la documentation des soins.",
+          "Un bon agenda pour institut de beauté doit proposer la réservation en ligne, des vues jour/semaine/mois, la planification des collaborateurs et des cabines, des rappels automatiques par e-mail, le glisser-déposer et un lien avec les fiches clients et le suivi des soins.",
       },
       {
         question: "Comment planifier plusieurs collaborateurs et cabines ?",
@@ -153,10 +153,10 @@ export const appointmentCalendarFr: AppointmentCalendarContent = {
       {
         question: "Comment éviter les doubles réservations de collaborateurs et de cabines ?",
         answer:
-          "Treatflow affiche côte à côte l'occupation des collaborateurs et des cabines. Les créneaux libres et occupés sont visibles d'un coup d'œil : les goulets d'étranglement et les doubles réservations sont évités en amont.",
+          "Treatflow affiche côte à côte l'occupation des collaborateurs et des cabines. Les créneaux libres et occupés sont visibles d'un coup d'œil : vous anticipez les créneaux saturés et évitez les doubles réservations.",
       },
       {
-        question: "Quel logiciel de rendez-vous convient aux cliniques esthétiques ?",
+        question: "Quel logiciel de rendez-vous pour un centre de médecine esthétique ?",
         answer:
           "Treatflow associe un agenda avec colonnes par collaborateur et par cabine, la réservation en ligne pour les consultations et les soins, et des rappels par e-mail. Les nouvelles réservations arrivent directement dans l'agenda, sans commission par rendez-vous.",
       },
@@ -170,7 +170,7 @@ export const appointmentCalendarFr: AppointmentCalendarContent = {
     ],
   },
   cta: {
-    title: "Prêt pour un planning sans stress ?",
+    title: "Envie d'un planning sans stress ?",
     description: "Essayez gratuitement pendant 14 jours – sans carte bancaire. Agenda, planning d'équipe et réservation en ligne dans une seule application.",
     secondary: { label: "Réservation en ligne", href: { page: "online-booking" } },
   },

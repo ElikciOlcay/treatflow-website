@@ -4,10 +4,10 @@ export const clientRecordsFr: ClientRecordsContent = {
   meta: {
     title: "Fiches clients pour institut de beauté : données et historique",
     description:
-      "Une gestion clients professionnelle pour votre institut de beauté : historique des soins, notes et photos au même endroit. Conforme au RGPD, hébergé dans l'UE.",
+      "Un fichier clients professionnel pour votre institut de beauté : historique des soins, notes et photos au même endroit. Conforme au RGPD, données hébergées dans l'UE.",
     keywords: [
       "logiciel fiches clients institut de beauté",
-      "gestion clients institut",
+      "fichier clients institut de beauté",
       "fiches clients numériques",
       "CRM institut de beauté",
       "logiciel historique des soins",
@@ -100,9 +100,9 @@ export const clientRecordsFr: ClientRecordsContent = {
           "Treatflow est un logiciel de gestion clients conçu pour les instituts de beauté. L'application propose des fiches clients numériques, l'historique des soins, des photos, des notes et un stockage des données conforme au RGPD dans l'UE. Essayez gratuitement pendant 14 jours.",
       },
       {
-        question: "Que sont des fiches clients numériques pour institut de beauté ?",
+        question: "Qu'est-ce qu'un fichier clients numérique pour institut de beauté ?",
         answer:
-          "Les fiches clients numériques sont un logiciel qui réunit au même endroit toutes les données clients, l'historique des soins, les photos avant/après et les notes. Contrairement aux fiches papier, elles sont conformes au RGPD, consultables par recherche et accessibles depuis n'importe quel appareil.",
+          "C'est un logiciel qui réunit au même endroit toutes les données clients, l'historique des soins, les photos avant/après et les notes. Contrairement aux fiches papier, il est conforme au RGPD, consultable en quelques secondes et accessible depuis n'importe quel appareil.",
       },
       {
         question: "Les fiches clients numériques sont-elles conformes au RGPD ?",
@@ -112,12 +112,12 @@ export const clientRecordsFr: ClientRecordsContent = {
       {
         question: "Quelles informations doit contenir la fiche client d'un institut ?",
         answer:
-          "Une fiche client professionnelle doit contenir les coordonnées, l'historique des soins, les allergies et intolérances, les photos avant/après, les formulaires remplis (questionnaire de santé, consentement), les notes et l'historique des rendez-vous.",
+          "Une fiche client professionnelle doit contenir les coordonnées, l'historique des soins, les allergies et intolérances, les photos avant/après, les formulaires remplis (questionnaire de santé, formulaire de consentement), les notes et l'historique des rendez-vous.",
       },
       {
         question: "Puis-je importer mes données clients existantes ?",
         answer:
-          "Oui. Treatflow permet d'importer des données clients depuis des fichiers Excel et CSV. Notre équipe d'accompagnement vous aide gratuitement à transférer vos données depuis votre ancien système.",
+          "Oui. Treatflow permet d'importer des données clients depuis des fichiers Excel et CSV. Notre équipe vous aide gratuitement à transférer vos données depuis votre ancien système.",
       },
       {
         question: "Treatflow peut-il envoyer des messages automatiques à mes clients ?",
@@ -128,13 +128,13 @@ export const clientRecordsFr: ClientRecordsContent = {
   },
   related: {
     items: [
-      { href: { page: "appointment-calendar" }, title: "Agenda des rendez-vous", description: "La fiche client directement depuis le rendez-vous" },
+      { href: { page: "appointment-calendar" }, title: "Agenda et planning", description: "La fiche client directement depuis le rendez-vous" },
       { href: { page: "forms" }, title: "Formulaires", description: "Les questionnaires arrivent dans la fiche client" },
-      { href: { page: "treatment-documentation" }, title: "Documentation", description: "L'historique dans la fiche client" },
+      { href: { page: "treatment-documentation" }, title: "Suivi des soins", description: "L'historique dans la fiche client" },
     ],
   },
   cta: {
-    title: "Prêt pour des fiches clients bien organisées ?",
+    title: "Envie d'un fichier clients enfin bien rangé ?",
     description: "Essayez gratuitement pendant 14 jours – sans carte bancaire. Import, historique et conformité RGPD dans une seule application.",
     secondary: { label: "Formulaires numériques", href: { page: "forms" } },
   },

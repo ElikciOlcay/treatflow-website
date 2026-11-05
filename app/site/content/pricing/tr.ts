@@ -5,11 +5,13 @@ export const pricingTr: PricingPageContent = {
   meta: {
     title: "Güzellik Salonu Yazılımı Fiyatları",
     description:
-      "Treatflow fiyatları Türkiye'de: Basic ₺1.490, Booking ₺1.990 (lansman, ilk 100 işletme). 30 gün ücretsiz deneyin, kredi kartı gerekmez. Randevu komisyonu yok.",
+      "Treatflow Türkiye fiyatları: Basic aylık ₺1.490, Booking aylık ₺1.990 (ilk 100 işletmeye özel lansman fiyatı). 30 gün ücretsiz deneyin, kredi kartı gerekmez. Randevu başına komisyon yok.",
     keywords: [
       "güzellik salonu yazılımı fiyat",
       "salon yazılımı fiyatları",
       "online randevu sistemi fiyat",
+      "güzellik salonu programı fiyatları",
+      "salon programı aylık ücret",
     ],
   },
   dates: { modified: "2026-11-05", published: "2024-06-01" },
@@ -17,7 +19,7 @@ export const pricingTr: PricingPageContent = {
   capsule: {
     question: "Treatflow'un fiyatı ne kadar?",
     answer:
-      "Basic aylık ₺1.490 (müşteri takibi, formlar, işlem kayıtları), Booking aylık ₺1.990 (randevu takvimi, online randevu ve hatırlatmalar dahil). Randevu başına komisyon yok, 30 gün ücretsiz deneme.",
+      "Basic aylık ₺1.490 (müşteri takibi, formlar, işlem kayıtları), Booking aylık ₺1.990 (bunlara ek olarak randevu takvimi, online randevu ve hatırlatmalar). Randevu başına komisyon yok, 30 gün ücretsiz deneme.",
   },
   schema: {
     webPage: {
@@ -32,7 +34,7 @@ export const pricingTr: PricingPageContent = {
   },
   comparison: {
     title: "Pakette neler var?",
-    subtitle: "İki paketi ayrıntılı karşılaştırın ve işletmenize uygun olanı bulun.",
+    subtitle: "İki paketi ayrıntılı karşılaştırın, işletmenize uygun olanı seçin.",
     vatNote: "Tüm fiyatlar KDV hariçtir.",
     featureLabel: "Özellik",
     basicLabel: "Basic (₺1.490)",
@@ -61,42 +63,42 @@ export const pricingTr: PricingPageContent = {
   },
   why: {
     title: "Neden Treatflow?",
-    subtitle: "Gizli ücretler ve komisyonlar yerine şeffaf sabit fiyatlar.",
+    subtitle: "Gizli ücret ve komisyon yerine şeffaf, sabit fiyatlar.",
     stats: [
       { value: "%0", label: "Randevu başına komisyon" },
       { value: "₺0", label: "Kurulum ücreti" },
       { value: "30 gün", label: "ücretsiz deneme" },
-      { value: "İstediğiniz zaman", label: "iptal" },
+      { value: "Taahhütsüz", label: "istediğiniz zaman iptal" },
     ],
   },
   faq: {
-    title: "Fiyatlarla ilgili sık sorulan sorular",
+    title: "Fiyatlarla ilgili sıkça sorulan sorular",
     subtitle: "Treatflow fiyatları hakkında bilmeniz gereken her şey.",
     items: [
       {
         question: "Treatflow'un fiyatı ne kadar?",
         answer:
-          "Treatflow iki paketten oluşur: Müşteri takibi, formlar ve işlem kayıtları için aylık ₺1.490'dan Basic. Randevu takvimi, online randevu ve otomatik hatırlatmaları da içeren aylık ₺1.990'dan Booking. İki paketi de 30 gün ücretsiz deneyebilirsiniz.",
+          "Treatflow'da iki paket vardır: Müşteri takibi, formlar ve işlem kayıtları için aylık ₺1.490 olan Basic ve bunlara ek olarak randevu takvimi, online randevu ve otomatik hatırlatmaları içeren aylık ₺1.990 olan Booking. İki paketi de 30 gün ücretsiz deneyebilirsiniz.",
       },
       {
         question: "Gizli ücret var mı?",
         answer:
-          "Hayır. Treatflow komisyon, kurulum ücreti veya gizli ek maliyet olmadan şeffaf sabit fiyatlarla çalışır. Gördüğünüz fiyatı ödersiniz.",
+          "Hayır. Treatflow'da komisyon, kurulum ücreti veya gizli ek maliyet yoktur; şeffaf, sabit fiyatlar geçerlidir. Gördüğünüz fiyatı ödersiniz.",
       },
       {
         question: "İstediğim zaman iptal edebilir miyim?",
         answer:
-          "Evet. Aylık ödemede, fatura döneminin sonunda geçerli olmak üzere istediğiniz zaman iptal edebilirsiniz. Asgari sözleşme süresi yoktur.",
+          "Evet. Aylık ödemede, fatura döneminin sonunda geçerli olmak üzere istediğiniz zaman iptal edebilirsiniz. Taahhüt veya asgari sözleşme süresi yoktur.",
       },
       {
-        question: "Ücretsiz salon yazılımı var mı?",
+        question: "Ücretsiz salon programı var mı?",
         answer:
-          "Fresha gibi bazı sağlayıcılar ücretsiz temel sürümler sunar, ancak gelirlerini ödeme ücretleri ve premium özelliklerden elde eder. Treatflow gizli maliyet olmadan şeffaf sabit fiyatlar sunar – tüm özelliklerle aylık ₺1.490'dan başlayan fiyatlarla.",
+          "Fresha gibi bazı sağlayıcılar ücretsiz temel sürüm sunar, ancak gelirlerini ödeme komisyonlarından ve ücretli ek özelliklerden elde eder. Treatflow ise gizli maliyet olmadan şeffaf, sabit fiyatlar sunar – tüm özellikleriyle aylık ₺1.490'dan başlayan fiyatlarla.",
       },
       {
-        question: "Booking paketi değer mi?",
+        question: "Booking paketi buna değer mi?",
         answer:
-          "Online randevuya, otomatik e-posta hatırlatmalarına ve dijital randevu takvimine ihtiyacınız varsa evet. Booking paketiyle gelmeyen müşteri sayısı belirgin şekilde azalır ve telefonda daha az zaman harcarsınız.",
+          "Online randevuya, otomatik e-posta hatırlatmalarına ve dijital randevu takvimine ihtiyacınız varsa kesinlikle. Booking paketiyle randevuya gelmeyen müşteri sayısı belirgin şekilde azalır, telefonda daha az zaman harcarsınız.",
       },
     ],
   },

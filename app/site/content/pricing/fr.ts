@@ -2,7 +2,7 @@ import type { PricingPageContent } from "./types";
 
 export const pricingFr: PricingPageContent = {
   meta: {
-    title: "Tarifs",
+    title: "Tarifs du logiciel pour institut de beauté",
     description:
       "Tarifs Treatflow : Basic dès 39 €/mois, Booking dès 59 €/mois. Aucune commission sur les réservations, 14 jours d'essai gratuit, sans carte bancaire.",
     keywords: [
@@ -10,7 +10,7 @@ export const pricingFr: PricingPageContent = {
       "tarif logiciel esthéticienne",
       "logiciel prise de rendez-vous sans commission",
       "abonnement logiciel salon de beauté",
-      "logiciel clinique esthétique tarif",
+      "logiciel médecine esthétique tarif",
     ],
   },
   dates: { modified: "2026-11-05", published: "2024-06-01" },
@@ -18,7 +18,7 @@ export const pricingFr: PricingPageContent = {
   capsule: {
     question: "Combien coûte Treatflow ?",
     answer:
-      "Basic dès 39 €/mois (fiches clients, formulaires, documentation), Booking dès 59 €/mois (avec agenda, réservation en ligne et rappels). Aucune commission par réservation, 14 jours d'essai gratuit.",
+      "Basic dès 39 €/mois (fiches clients, formulaires, suivi des soins), Booking dès 59 €/mois (avec agenda, réservation en ligne et rappels). Aucune commission par réservation, 14 jours d'essai gratuit.",
   },
   schema: {
     webPage: {
@@ -41,7 +41,7 @@ export const pricingFr: PricingPageContent = {
     rows: [
       { label: "Fiches clients", basic: true, booking: true },
       { label: "Formulaires avec signature électronique", basic: true, booking: true },
-      { label: "Documentation des soins et notes vocales", basic: true, booking: true },
+      { label: "Suivi des soins et notes vocales", basic: true, booking: true },
       { label: "Photos avant/après", basic: true, booking: true },
       { label: "Notes d'équipe et tâches", basic: true, booking: true },
       { label: "Boutique et produits", basic: true, booking: true },
@@ -58,7 +58,7 @@ export const pricingFr: PricingPageContent = {
       { label: "Intégrations (Google Agenda, Zapier, assistants IA)", basic: false, booking: true },
       { label: "Support prioritaire", basic: false, booking: true },
     ],
-    cta: "Essayer gratuitement 14 jours",
+    cta: "Essayer 14 jours gratuitement",
   },
   why: {
     title: "Pourquoi Treatflow ?",
@@ -77,27 +77,27 @@ export const pricingFr: PricingPageContent = {
       {
         question: "Combien coûte Treatflow ?",
         answer:
-          "Treatflow propose deux formules : Basic dès 39 €/mois pour les fiches clients, les formulaires et la documentation. Booking dès 59 €/mois avec en plus l'agenda, la réservation en ligne et les rappels automatiques. Les deux formules peuvent être testées gratuitement pendant 14 jours.",
+          "Treatflow propose deux formules : Basic dès 39 €/mois pour les fiches clients, les formulaires et le suivi des soins. Booking dès 59 €/mois avec en plus l'agenda, la réservation en ligne et les rappels automatiques. Les deux formules peuvent être testées gratuitement pendant 14 jours.",
       },
       {
         question: "Y a-t-il des frais cachés ?",
         answer:
-          "Non. Treatflow fonctionne avec des tarifs fixes et transparents, sans commission, frais de mise en service ni coûts cachés. Vous payez ce que vous voyez.",
+          "Non. Treatflow fonctionne avec des tarifs fixes et transparents, sans commission, frais de mise en service ni coûts cachés. Le prix affiché est le prix payé.",
       },
       {
         question: "Puis-je résilier à tout moment ?",
         answer:
-          "Oui. Avec le paiement mensuel, vous pouvez résilier à tout moment pour la fin de la période de facturation. Il n'y a pas de durée minimale d'engagement.",
+          "Oui. En formule mensuelle, vous pouvez résilier à tout moment, avec effet à la fin de la période de facturation. Aucune durée minimale d'engagement.",
       },
       {
         question: "Existe-t-il un logiciel gratuit pour institut de beauté ?",
         answer:
-          "Certains éditeurs comme Fresha proposent des versions de base gratuites, mais se rémunèrent via les frais de paiement et les fonctionnalités premium. Treatflow propose des tarifs fixes et transparents sans frais cachés – dès 39 €/mois avec toutes les fonctionnalités.",
+          "Certains éditeurs comme Fresha proposent une version de base gratuite, mais se rémunèrent sur les frais de paiement et les options payantes. Treatflow propose des tarifs fixes et transparents sans frais cachés – dès 39 €/mois avec toutes les fonctionnalités.",
       },
       {
         question: "La formule Booking vaut-elle le coup ?",
         answer:
-          "Oui, si vous avez besoin de la réservation en ligne, de rappels automatiques par e-mail et d'un agenda numérique. Avec la formule Booking, vous avez nettement moins de rendez-vous non honorés et passez moins de temps au téléphone.",
+          "Oui, si vous avez besoin de la réservation en ligne, de rappels automatiques par e-mail et d'un agenda numérique. Avec la formule Booking, vous limitez nettement les rendez-vous non honorés et passez moins de temps au téléphone.",
       },
     ],
   },

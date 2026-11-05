@@ -37,7 +37,7 @@ const SITE_PAGES = {
   blog: { de: "blog", path: (m) => `${marketPathPrefix[m]}/blog` },
   news: { seo: "news" },
   features: { seo: "features" },
-  "try-features": { de: "funktionen-live-testen" },
+  "try-features": { seo: "try-features" },
   "try-forms": { seo: "try-forms" },
   "appointment-calendar": { seo: "appointment-calendar" },
   "online-booking": { seo: "online-booking" },

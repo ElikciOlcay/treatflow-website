@@ -2,13 +2,14 @@ import type { ClientRecordsContent } from "./types";
 
 export const clientRecordsPl: ClientRecordsContent = {
   meta: {
-    title: "Kartoteka klientów dla salonu kosmetycznego: dane i historia",
+    title: "Kartoteka klientów dla salonu kosmetycznego: karta klienta online",
     description:
-      "Profesjonalna kartoteka klientów dla Twojego salonu kosmetycznego: historia zabiegów, notatki i zdjęcia w jednym miejscu. Zgodnie z RODO, hosting w UE.",
+      "Elektroniczna kartoteka klientów dla salonu kosmetycznego i gabinetu: karta klienta z historią zabiegów, notatkami i zdjęciami w jednym miejscu. Zgodnie z RODO, serwery w UE.",
     keywords: [
       "kartoteka klientów salon kosmetyczny",
       "zarządzanie klientami salon",
-      "cyfrowe karty klientów",
+      "karta klienta salon kosmetyczny",
+      "elektroniczna karta klienta",
       "CRM dla salonu kosmetycznego",
       "program historia zabiegów",
       "RODO dane klientów salon",
@@ -34,14 +35,14 @@ export const clientRecordsPl: ClientRecordsContent = {
     eyebrow: "Cyfrowa kartoteka klientów",
     eyebrowIcon: "users",
     title: { before: "Wszystkie dane klientów w jednym ", highlight: "miejscu" },
-    description: "Nieograniczona liczba kart klientów z historią, importem i wyszukiwarką. Zgodnie z RODO, na serwerach w UE.",
+    description: "Dowolna liczba kart klientów z historią, importem i wyszukiwarką. Zgodnie z RODO, na serwerach w UE.",
     chips: ["Zgodność z RODO", "Import danych", "Bez limitu klientów"],
-    secondaryCta: { label: "Formularze cyfrowe", href: { page: "forms" } },
+    secondaryCta: { label: "Formularze online", href: { page: "forms" } },
     capsules: [
       {
         question: "Jaka aplikacja sprawdzi się do zarządzania klientami w salonie kosmetycznym?",
         answer:
-          "Treatflow oferuje kartotekę klientów stworzoną dla salonów kosmetycznych: cyfrowe karty klientów, historię zabiegów, zdjęcia i hosting zgodny z RODO w UE. Wszystkie dane klientów są dostępne na komputerze, tablecie i smartfonie. Wypróbuj za darmo przez 14 dni.",
+          "Treatflow to kartoteka klientów stworzona dla salonów kosmetycznych: elektroniczne karty klientów, historia zabiegów, zdjęcia i przechowywanie danych w UE zgodnie z RODO. Wszystkie dane masz pod ręką na komputerze, tablecie i smartfonie. Wypróbuj 14 dni za darmo.",
       },
     ],
     image: {
@@ -57,17 +58,17 @@ export const clientRecordsPl: ClientRecordsContent = {
       {
         icon: "shield",
         title: "Bezpiecznie i zgodnie z RODO",
-        text: "Dane Twoich klientów są przechowywane w formie zaszyfrowanej na serwerach w UE. Wnioski o dostęp do danych i ich usunięcie możesz zrealizować w każdej chwili.",
+        text: "Dane Twoich klientów są szyfrowane i przechowywane na serwerach w UE. Wnioski o dostęp do danych lub ich usunięcie zrealizujesz w każdej chwili.",
       },
       {
         icon: "upload",
         title: "Przenieś swoje dotychczasowe dane",
-        text: "Masz już listę klientów? Po prostu zaimportuj ją z Excela lub pliku CSV. Nasz zespół pomoże Ci w przeprowadzce.",
+        text: "Masz już listę klientów? Po prostu zaimportuj ją z Excela lub pliku CSV. Nasz zespół pomoże Ci przenieść dane.",
       },
       {
         icon: "database",
         title: "Bez limitu klientów",
-        text: "Niezależnie od tego, czy masz 50, czy 5000 klientów – bez limitu i bez dopłat za kontakt.",
+        text: "Niezależnie od tego, czy masz 50, czy 5000 klientów – bez limitu i bez dopłat za każdą kartę.",
       },
     ],
   },
@@ -75,19 +76,19 @@ export const clientRecordsPl: ClientRecordsContent = {
     description: "Trzy kroki do cyfrowej kartoteki klientów.",
     steps: [
       { title: "Dodaj lub zaimportuj klientów", text: "Twórz nowych klientów ręcznie lub zaimportuj dotychczasową listę z Excela lub pliku CSV. Duplikaty są wykrywane automatycznie." },
-      { title: "Uzupełnij profil", text: "Zapisuj w profilu dane kontaktowe, alergie, notatki i zdjęcia. Wypełnione formularze dodawane są automatycznie." },
-      { title: "Wszystko gotowe na kolejną wizytę", text: "Otwórz profil klienta przed zabiegiem – od razu widzisz, co zostało zrobione ostatnio i na co zwrócić uwagę." },
+      { title: "Uzupełnij kartę klienta", text: "Zapisuj w karcie dane kontaktowe, alergie, notatki i zdjęcia. Wypełnione formularze dodawane są automatycznie." },
+      { title: "Wszystko gotowe na kolejną wizytę", text: "Przed zabiegiem otwórz kartę klienta – od razu widzisz, co zostało zrobione ostatnio i na co zwrócić uwagę." },
     ],
   },
   cards: {
     title: "Co otrzymujesz",
     description: "Cyfrowa kartoteka klientów bez ograniczeń – z importem, wyszukiwarką i zgodnością z RODO.",
     items: [
-      { icon: "database", title: "Bez limitu klientów", text: "Tyle profili, ile potrzebuje Twój salon – bez dopłat za kontakt.", points: ["Bez limitu klientów", "Zawsze szybko", "Automatyczne kopie zapasowe"] },
-      { icon: "upload", title: "Import danych", text: "Przenieś dotychczasowe listy z Excela lub pliku CSV. Pomoc w przeprowadzce w cenie.", points: ["Excel i CSV", "Przypisywanie pól", "Wykrywanie duplikatów"] },
+      { icon: "database", title: "Bez limitu klientów", text: "Tyle kart klientów, ile potrzebuje Twój salon – bez dopłat za każdą kartę.", points: ["Bez limitu klientów", "Zawsze szybko", "Automatyczne kopie zapasowe"] },
+      { icon: "upload", title: "Import danych", text: "Przenieś dotychczasowe listy z Excela lub pliku CSV. Pomoc w przeniesieniu danych w cenie.", points: ["Excel i CSV", "Przypisywanie pól", "Wykrywanie duplikatów"] },
       { icon: "shield", title: "Zgodność z RODO", text: "Przechowywanie danych w UE, szyfrowanie, dostęp do danych i ich usunięcie na żądanie.", points: ["Serwery w UE", "Szyfrowanie", "Prawo do usunięcia danych"] },
-      { icon: "search", title: "Szybka wyszukiwarka", text: "Znajdź profil po imieniu i nazwisku, numerze telefonu, adresie e-mail lub zabiegu – w kilka sekund.", points: ["Wyszukiwanie pełnotekstowe", "Filtry", "Sortowanie"] },
-      { icon: "camera", title: "Zdjęcia i historia", text: "Zdjęcia przed i po oraz zabiegi bezpośrednio w profilu, a nie w osobnych folderach.", points: ["Zdjęcia w profilu", "Historia zabiegów", "Notatki"] },
+      { icon: "search", title: "Szybka wyszukiwarka", text: "Znajdź kartę klienta po imieniu i nazwisku, numerze telefonu, adresie e-mail lub zabiegu – w kilka sekund.", points: ["Wyszukiwanie pełnotekstowe", "Filtry", "Sortowanie"] },
+      { icon: "camera", title: "Zdjęcia i historia", text: "Zdjęcia przed i po oraz historia zabiegów bezpośrednio w karcie klienta, a nie w osobnych folderach.", points: ["Zdjęcia w karcie", "Historia zabiegów", "Notatki"] },
       { icon: "users", title: "Zawsze pod ręką", text: "W przeglądarce na smartfonie, tablecie i komputerze – bez instalowania dodatkowej aplikacji.", points: ["Smartfon", "Tablet przy fotelu zabiegowym", "Komputer"] },
     ],
   },
@@ -97,7 +98,7 @@ export const clientRecordsPl: ClientRecordsContent = {
       {
         question: "Jaka aplikacja sprawdzi się do zarządzania klientami w salonie kosmetycznym?",
         answer:
-          "Treatflow to program do zarządzania klientami stworzony dla salonów kosmetycznych. Aplikacja oferuje cyfrowe karty klientów, historię zabiegów, zdjęcia, notatki i przechowywanie danych w UE zgodnie z RODO. Wypróbuj za darmo przez 14 dni.",
+          "Treatflow to program do prowadzenia kartoteki klientów stworzony dla salonów kosmetycznych: elektroniczne karty klientów, historia zabiegów, zdjęcia, notatki i przechowywanie danych w UE zgodnie z RODO. Wypróbuj 14 dni za darmo.",
       },
       {
         question: "Czym jest cyfrowa kartoteka klientów dla salonu kosmetycznego?",
@@ -107,7 +108,7 @@ export const clientRecordsPl: ClientRecordsContent = {
       {
         question: "Czy cyfrowa kartoteka klientów jest zgodna z RODO?",
         answer:
-          "Tak. Treatflow przechowuje wszystkie dane klientów w formie zaszyfrowanej na serwerach w UE i spełnia wszystkie wymogi RODO. Klienci mogą w każdej chwili wglądać w swoje dane i zażądać ich usunięcia.",
+          "Tak. Treatflow przechowuje wszystkie dane klientów w formie zaszyfrowanej na serwerach w UE i spełnia wymogi RODO. Klienci mogą w każdej chwili uzyskać wgląd w swoje dane i zażądać ich usunięcia.",
       },
       {
         question: "Jakie informacje powinna zawierać karta klienta w salonie?",
@@ -122,20 +123,20 @@ export const clientRecordsPl: ClientRecordsContent = {
       {
         question: "Czy Treatflow może wysyłać automatyczne wiadomości do moich klientów?",
         answer:
-          "Tak. Treatflow ma wbudowaną automatyzację wiadomości. Możesz ustawić automatyczne przypomnienia o wizytach, życzenia urodzinowe i wiadomości po zabiegach, które wzmacniają lojalność klientów – bez dodatkowego wysiłku.",
+          "Tak. Treatflow ma wbudowane automatyczne wiadomości: przypomnienia o wizytach, życzenia urodzinowe i wiadomości po zabiegu, które budują lojalność klientów – bez dodatkowej pracy.",
       },
     ],
   },
   related: {
     items: [
-      { href: { page: "appointment-calendar" }, title: "Kalendarz wizyt", description: "Profil klienta prosto z wizyty" },
+      { href: { page: "appointment-calendar" }, title: "Kalendarz wizyt", description: "Karta klienta otwierana prosto z wizyty" },
       { href: { page: "forms" }, title: "Formularze", description: "Formularze wywiadu trafiają do karty klienta" },
-      { href: { page: "treatment-documentation" }, title: "Dokumentacja", description: "Historia w profilu klienta" },
+      { href: { page: "treatment-documentation" }, title: "Dokumentacja", description: "Historia w karcie klienta" },
     ],
   },
   cta: {
     title: "Czas na uporządkowaną kartotekę klientów?",
-    description: "Wypróbuj za darmo przez 14 dni – bez karty kredytowej. Import, historia i zgodność z RODO w jednej aplikacji.",
-    secondary: { label: "Formularze cyfrowe", href: { page: "forms" } },
+    description: "Wypróbuj 14 dni za darmo – bez podawania karty. Import, historia zabiegów i zgodność z RODO w jednej aplikacji.",
+    secondary: { label: "Formularze online", href: { page: "forms" } },
   },
 };

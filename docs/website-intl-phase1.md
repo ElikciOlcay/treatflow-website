@@ -128,6 +128,12 @@ crawlbaren Sprachlinks (wie früher `FooterEn`).
   Neu: Kunden-Workflows (`client-workflows`, TR `musteri-otomasyonlari`, nl `klantworkflows`,
   it `flussi-clienti`, pl `automatyzacje-dla-klientow`, es `flujos-clientes`, fr `parcours-clients`)
   und Treatflow Pay (`treatflow-pay`, nicht tr). Entfernt: `FeaturesPageEn.tsx`, `PricingPageIntl.tsx`.
+- Funktionen live testen (`try-features`): `app/site/pages/TryFeaturesPage.tsx` + `app/site/content/try-features/*`,
+  Live-Demo-Komponenten (`app/components/live-demo/*`) nehmen Texte per Prop (Default Deutsch). Slugs: en `try-features`,
+  tr `canli-demo` (`app/tr/canli-demo`), nl `functies-live-testen`, it `prova-funzioni-dal-vivo`, pl `wyprobuj-funkcje`,
+  es `probar-funciones`, fr `tester-les-fonctionnalites`. Formular-Sektion nur de/en/tr (es gibt `try-forms`), außerhalb DE
+  keine WhatsApp-Zeile. Offen: Demo-Endpunkt `/api/public/demo-dictation` der App antwortet immer deutsch – die Website
+  schickt außerhalb DE `locale` mit, die App muss das noch auswerten.
 
 ## Offene Punkte für die nächsten Agents
 
@@ -135,7 +141,6 @@ crawlbaren Sprachlinks (wie früher `FooterEn`).
 
 | Key (`site-pages.ts`) | DE-Quelle | Ziel | Hinweis |
 | --- | --- | --- | --- |
-| `try-features` | `app/(de)/funktionen-live-testen` | `app/[market]/try-features` | Hero-Bild ist dann wieder verlinkt |
 | `foot-care-software` | `app/(de)/fusspflege-software` | `app/[market]/foot-care-software` | Branchen-Menü + Footer |
 | `imprint` | `app/(de)/impressum` | `app/[market]/imprint` | rechtlich prüfen: evtl. auf DE-Impressum verlinken |
 | `news` | – | nl/it/pl/es/fr/tr | gibt es nur für en (bewusst) |

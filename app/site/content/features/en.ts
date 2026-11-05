@@ -4,7 +4,7 @@ export const featuresEn: FeaturesOverviewContent = {
   meta: {
     title: "Features for Salons and Clinics",
     description:
-      "Appointment calendar, online booking without commission, client records, digital consent forms, treatment documentation with voice dictation, reminders and integrations – in one studio system.",
+      "Appointment calendar, online booking without commission, client records, digital consent forms, treatment records with voice dictation, reminders and integrations – all in one system for salons and clinics.",
     keywords: [
       "salon software features",
       "beauty salon software",
@@ -19,7 +19,7 @@ export const featuresEn: FeaturesOverviewContent = {
     eyebrow: "Feature overview",
     eyebrowIcon: "sparkles",
     title: { before: "All ", highlight: "features", after: " at a glance" },
-    description: "Calendar, bookings, client records, forms and documentation – one platform for your studio.",
+    description: "Calendar, bookings, client records, forms and treatment records – one platform for your salon or clinic.",
     chips: ["All-in-one", "No commission", "Made in Austria"],
     secondaryCta: { label: "See pricing", href: { page: "pricing" } },
     tiles: [
@@ -27,13 +27,13 @@ export const featuresEn: FeaturesOverviewContent = {
       { label: "Bookings", icon: "link", gradient: "from-rose-500 to-orange-600" },
       { label: "Clients", icon: "users", gradient: "from-blue-500 to-indigo-600" },
       { label: "Forms", icon: "clipboard-check", gradient: "from-orange-500 to-amber-600" },
-      { label: "Documentation", icon: "file-text", gradient: "from-violet-500 to-purple-600" },
+      { label: "Treatments", icon: "file-text", gradient: "from-violet-500 to-purple-600" },
       { label: "Workflows", icon: "workflow", gradient: "from-green-500 to-emerald-600" },
     ],
   },
   grid: {
-    title: "{count} core features for your studio",
-    subtitle: "Every feature is built around the needs of beauty studios and clinics.",
+    title: "{count} core features for your salon",
+    subtitle: "Every feature is built around the needs of beauty salons and clinics.",
     more: "Learn more",
     items: [
       {
@@ -63,7 +63,7 @@ export const featuresEn: FeaturesOverviewContent = {
         icon: "link",
         title: "Online booking",
         description:
-          "Your studio's personal booking link. Clients book around the clock – confirmations and reminders go out automatically.",
+          "Your salon's own booking link. Clients book around the clock – confirmations and reminders go out automatically.",
         color: "text-rose-600",
         bg: "bg-rose-50",
         border: "border-rose-200 hover:border-rose-400",
@@ -83,20 +83,20 @@ export const featuresEn: FeaturesOverviewContent = {
       {
         href: { page: "forms" },
         icon: "clipboard-check",
-        title: "Forms & consultation",
+        title: "Consultation & consent forms",
         description:
-          "Digital intake forms and consent forms. Clients fill them in on their smartphone before the appointment – paperless and legally sound.",
+          "Digital consultation and consent forms. Clients fill them in on their smartphone before the appointment – paperless and legally sound.",
         color: "text-orange-600",
         bg: "bg-orange-50",
         border: "border-orange-200 hover:border-orange-400",
-        highlights: ["Digital intake", "Send in advance via link", "Paperless"],
+        highlights: ["Digital consultation", "Sent in advance by link", "Paperless"],
       },
       {
         href: { page: "treatment-documentation" },
         icon: "file-text",
-        title: "Treatment documentation",
+        title: "Treatment records",
         description:
-          "Document every treatment digitally: photos, products used, notes and results. Ideal for follow-up treatments.",
+          "Record every treatment digitally: photos, products used, notes and results. Ideal for courses of treatment.",
         color: "text-blue-600",
         bg: "bg-blue-50",
         border: "border-blue-200 hover:border-blue-400",
@@ -126,13 +126,13 @@ export const featuresEn: FeaturesOverviewContent = {
       {
         href: { page: "shop" },
         icon: "shopping-bag",
-        title: "Product sales & stock",
+        title: "Retail & stock",
         description:
-          "Sell care products directly to your clients. Manage stock, record sales and grow additional revenue.",
+          "Sell aftercare products directly to your clients. Manage stock, record sales and boost your retail revenue.",
         color: "text-amber-600",
         bg: "bg-amber-50",
         border: "border-amber-200 hover:border-amber-400",
-        highlights: ["Product sales", "Stock management", "Grow revenue"],
+        highlights: ["Product sales", "Stock management", "Extra revenue"],
       },
     ],
   },

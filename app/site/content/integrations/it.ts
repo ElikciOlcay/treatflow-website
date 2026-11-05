@@ -4,14 +4,14 @@ export const integrationsIt: IntegrationsContent = {
   meta: {
     title: "Integrazioni e app per il tuo centro estetico",
     description:
-      "Collega Treatflow a Google Calendar, Zapier e ad assistenti IA come Claude o ChatGPT, e incassa online con Treatflow Pay: sincronizzazione dell'agenda, automazioni e pagamenti in un'unica piattaforma.",
+      "Collega Treatflow a Google Calendar, Zapier e ad assistenti IA come Claude o ChatGPT e incassa online con Treatflow Pay: sincronizzazione dell'agenda, automazioni e pagamenti in un'unica piattaforma.",
     keywords: [
       "integrazioni Treatflow",
       "integrazioni software centro estetico",
       "sincronizzazione Google Calendar centro estetico",
       "Zapier centro estetico",
       "software centro estetico ChatGPT",
-      "Claude MCP software gestionale",
+      "gestionale centro estetico Claude MCP",
       "pagamenti online centro estetico",
       "sincronizzare agenda appuntamenti",
     ],
@@ -21,9 +21,9 @@ export const integrationsIt: IntegrationsContent = {
   hero: {
     eyebrow: "Integrazioni",
     eyebrowIcon: "plug",
-    title: { before: "Collega le app, i tuoi ", highlight: "dati", after: " sempre allineati" },
+    title: { before: "Collega le tue app, i tuoi ", highlight: "dati", after: " restano sempre allineati" },
     description:
-      "Google Calendar, Zapier, assistenti IA e Treatflow Pay: colleghi una volta, tutto resta aggiornato ovunque.",
+      "Google Calendar, Zapier, assistenti IA e Treatflow Pay: colleghi una volta e tutto resta aggiornato ovunque.",
     chips: ["Google Calendar", "Zapier", "Assistenti IA (MCP)", { text: "Treatflow Pay", feature: "pay" }],
     secondaryCta: { label: "Scopri l'agenda", href: { page: "appointment-calendar" } },
     tiles: [
@@ -35,61 +35,61 @@ export const integrationsIt: IntegrationsContent = {
   },
   understand: {
     title: "In breve: a cosa servono le integrazioni",
-    description: "Meno lavoro doppio: i dati passano da uno strumento all'altro.",
+    description: "Niente più dati inseriti due volte: le informazioni passano da uno strumento all'altro.",
     items: [
       {
         icon: "refresh",
-        title: "Meno lavoro doppio",
+        title: "Niente doppi inserimenti",
         text: "Inserisci clienti e appuntamenti una sola volta: agenda e strumenti collegati restano aggiornati.",
       },
       {
         icon: "workflow",
         title: "Processi automatici",
-        text: "Voci in agenda e flussi Zapier lavorano in background, senza che tu debba intervenire.",
+        text: "Sincronizzazione dell'agenda e flussi Zapier lavorano in background, senza che tu debba intervenire.",
       },
       {
         icon: "shield-check",
         title: "Conforme al GDPR",
-        text: "Collegamenti sicuri e trattamento dei dati conforme alle norme UE. I dati sanitari non escono mai da Treatflow.",
+        text: "Connessioni sicure e trattamento dei dati conforme alle norme UE. I dati sanitari non escono mai da Treatflow.",
       },
     ],
   },
   howItWorks: {
-    description: "Collegato in tre passaggi, senza competenze tecniche.",
+    description: "Tre passaggi, nessuna competenza tecnica richiesta.",
     steps: [
       { title: "Scegli l'app", text: "Seleziona l'integrazione che ti serve in Impostazioni centro > App." },
-      { title: "Collega l'account", text: "Accedi una sola volta presso il fornitore, ad esempio Google, Zapier, Claude o ChatGPT." },
-      { title: "Sincronizzazione automatica", text: "Da questo momento appuntamenti, clienti e flussi lavorano insieme." },
+      { title: "Collega l'account", text: "Accedi una sola volta al servizio esterno, ad esempio Google, Zapier, Claude o ChatGPT." },
+      { title: "Sincronizzazione automatica", text: "Da quel momento appuntamenti, clienti e automazioni lavorano insieme." },
     ],
   },
   cards: {
-    title: "Queste app sono integrate",
+    title: "Le app già integrate",
     description: "Dalla sincronizzazione dell'agenda alle automazioni, fino agli assistenti IA e ai pagamenti online.",
     items: [
       {
         icon: "calendar",
         title: "Google Calendar",
         text: "Sincronizzazione bidirezionale: Treatflow e Google restano allineati in tempo reale.",
-        points: ["Sincronizzazione bidirezionale", "Nessuna doppia prenotazione", "Privato e lavoro separati"],
+        points: ["Sincronizzazione bidirezionale", "Nessuna doppia prenotazione", "Impegni privati e di lavoro separati"],
       },
       {
         icon: "wallet",
         title: "Treatflow Pay",
-        text: "Acconti o pagamenti completi per le prenotazioni online, elaborati in modo sicuro tramite Stripe.",
-        points: ["Acconti", "Pagamento anticipato completo", "2,69% trasparente"],
+        text: "Acconti o saldo completo per le prenotazioni online, elaborati in modo sicuro tramite Stripe.",
+        points: ["Acconti", "Pagamento anticipato completo", "2,69%, tutto trasparente"],
         feature: "pay",
       },
       {
         icon: "zap",
         title: "Zapier",
-        text: "Collega oltre 7.000 app: flussi automatici per nuovi appuntamenti e moduli.",
+        text: "Collega oltre 7.000 app: automazioni per nuovi appuntamenti e moduli compilati.",
         points: ["Oltre 7.000 app", "Webhook", "Senza codice"],
       },
       {
         icon: "bot",
         title: "Assistenti IA (MCP)",
-        text: "Collega Claude, ChatGPT e altri assistenti e fai domande su appuntamenti, clienti o incassi.",
-        points: ["Di base solo lettura", "I dati sanitari restano in Treatflow", "Accesso revocabile in ogni momento"],
+        text: "Collega Claude, ChatGPT e altri assistenti e chiedi informazioni su appuntamenti, clienti o incassi.",
+        points: ["Di default in sola lettura", "I dati sanitari restano in Treatflow", "Accesso revocabile in ogni momento"],
       },
     ],
   },
@@ -109,37 +109,37 @@ export const integrationsIt: IntegrationsContent = {
       {
         question: "Posso usare Treatflow con ChatGPT o Claude?",
         answer:
-          "Sì. Aggiungi Treatflow come connettore nel tuo assistente IA e accedi con il tuo account Treatflow. Potrai poi fare domande su appuntamenti, orari liberi, clienti o incassi. L'accesso è di base in sola lettura; se lo consenti, l'assistente può anche creare e spostare appuntamenti, e ogni modifica viene registrata. Documentazione dei trattamenti, moduli e foto non vengono mai condivisi.",
+          "Sì. Aggiungi Treatflow come connettore nel tuo assistente IA e accedi con il tuo account Treatflow. Potrai poi chiedere informazioni su appuntamenti, orari liberi, clienti o incassi. L'accesso è di default in sola lettura; se lo consenti, l'assistente può anche creare e spostare appuntamenti, e ogni modifica viene registrata. Documentazione dei trattamenti, moduli e foto non vengono mai condivisi.",
       },
       {
-        question: "A cosa mi serve l'integrazione con Zapier?",
+        question: "A cosa serve l'integrazione con Zapier?",
         answer:
           "Con Zapier automatizzi i tuoi flussi di lavoro senza programmare. Quando arriva un nuovo appuntamento o viene compilato un modulo, Treatflow può ad esempio aggiungere una riga in Google Sheets, creare un contatto nel CRM o inviare un'email.",
       },
       {
-        question: "Le clienti possono pagare online al momento della prenotazione?",
+        question: "I clienti possono pagare online al momento della prenotazione?",
         answer:
-          "Sì. Con Treatflow Pay le clienti versano un acconto o l'intero importo quando prenotano online, con pagamento elaborato in modo sicuro tramite Stripe. Decidi tu per ogni trattamento se il pagamento è richiesto.",
+          "Sì. Con Treatflow Pay i clienti versano un acconto o l'intero importo quando prenotano online; il pagamento è elaborato in modo sicuro tramite Stripe. Decidi tu, trattamento per trattamento, se richiedere il pagamento.",
         feature: "pay",
       },
       {
-        question: "Le integrazioni sono incluse in ogni piano?",
+        question: "Le integrazioni sono incluse in tutti i piani?",
         answer:
-          "Le integrazioni sono incluse nel piano Booking. Dopo la registrazione le trovi e le attivi nella dashboard in Impostazioni centro > App.",
+          "Le integrazioni sono incluse nel piano Booking. Dopo la registrazione le trovi e le attivi nella dashboard, in Impostazioni centro > App.",
       },
     ],
   },
   related: {
     items: [
-      { href: { page: "appointment-calendar" }, title: "Agenda appuntamenti", description: "Tutti gli appuntamenti in un posto, sempre sincronizzati" },
-      { href: { page: "treatflow-pay" }, title: "Treatflow Pay", description: "Acconto o pagamento completo", feature: "pay" },
+      { href: { page: "appointment-calendar" }, title: "Agenda appuntamenti", description: "Tutti gli appuntamenti in un unico posto, sempre sincronizzati" },
+      { href: { page: "treatflow-pay" }, title: "Treatflow Pay", description: "Acconto o saldo completo online", feature: "pay" },
       { href: { page: "online-booking" }, title: "Prenotazioni online", description: "Prenotazioni 24/7 con pagamento" },
       { href: { page: "messaging" }, title: "Promemoria", description: "Conferme e promemoria automatici" },
     ],
   },
   cta: {
     title: "Strumenti collegati per il tuo centro",
-    description: "Provalo gratis per 14 giorni: collega Google Calendar, Zapier e il tuo assistente IA in pochi minuti.",
+    description: "Provalo gratis per 14 giorni: colleghi Google Calendar, Zapier e il tuo assistente IA in pochi minuti.",
     secondary: { label: "Tutte le funzioni", href: { page: "features" } },
   },
 };

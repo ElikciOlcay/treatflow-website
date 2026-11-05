@@ -4,7 +4,7 @@ export const studioWebsiteFr: StudioWebsiteContent = {
   meta: {
     title: "Site web sur mesure pour instituts de beauté",
     description:
-      "Un site web sur mesure pour votre institut de beauté, centre laser ou activité beauté. Professionnel, adapté au mobile et conçu pour les réservations. À partir de 1 000 euros.",
+      "Un site internet sur mesure pour votre institut de beauté, centre laser ou activité beauté. Professionnel, adapté au mobile et pensé pour générer des réservations. À partir de 1 000 euros.",
     keywords: [
       "site web institut de beauté",
       "création site institut de beauté",
@@ -17,7 +17,7 @@ export const studioWebsiteFr: StudioWebsiteContent = {
   schema: {
     serviceName: "Site web sur mesure pour instituts de beauté",
     serviceDescription:
-      "Des sites web professionnels et sur mesure pour les instituts et entreprises de beauté. Optimisés pour les réservations et l'acquisition de nouvelles clientes.",
+      "Des sites web professionnels et sur mesure pour les instituts et entreprises de beauté. Optimisés pour les réservations et l'acquisition de nouveaux clients.",
     serviceType: "Conception de sites web",
     areaServed: ["FR", "BE"],
     priceDescription: "Site web sur mesure à partir de 1 000 euros",
@@ -26,8 +26,8 @@ export const studioWebsiteFr: StudioWebsiteContent = {
   hero: {
     badge: "Nouveau service de Treatflow",
     title: { before: "Des sites web sur mesure pour les", highlight: "instituts de beauté" },
-    lead: "Professionnels, modernes et conçus pour les réservations. Votre site devient votre meilleur canal pour attirer de nouvelles clientes.",
-    sub: "Nous ne créons pas simplement de beaux sites. Nous créons des sites qui inspirent confiance et génèrent des demandes.",
+    lead: "Professionnels, modernes et conçus pour les réservations. Votre site devient votre meilleur atout pour attirer de nouveaux clients.",
+    sub: "Nous ne créons pas seulement de beaux sites, mais des sites qui inspirent confiance et génèrent des demandes.",
     primaryCta: "Conseil gratuit",
     emailCta: "Demande par e-mail",
     checks: ["À partir de 1 000 euros", "Design sur mesure", "Prêt en 2 à 4 semaines"],
@@ -48,9 +48,9 @@ export const studioWebsiteFr: StudioWebsiteContent = {
   why: {
     title: "Pourquoi votre institut a besoin d'un site professionnel",
     description:
-      "Vos clientes se renseignent en ligne avant de réserver. Un site professionnel est votre carte de visite numérique et votre meilleur outil pour gagner de nouvelles clientes.",
+      "Vos clients se renseignent en ligne avant de réserver. Un site professionnel est votre vitrine numérique et votre meilleur outil pour gagner de nouveaux clients.",
     stats: [
-      { value: "97 %", label: "cherchent en ligne", desc: "Presque toutes les clientes cherchent un institut sur Google avant de réserver." },
+      { value: "97 %", label: "cherchent en ligne", desc: "Presque tous les clients cherchent un institut sur Google avant de réserver." },
       { value: "75 %", label: "jugent sur le site", desc: "La qualité de votre site influence la confiance accordée à votre institut." },
       { value: "3x", label: "plus de demandes", desc: "Les instituts dotés d'un site professionnel reçoivent nettement plus de demandes de réservation." },
     ],
@@ -130,7 +130,7 @@ export const studioWebsiteFr: StudioWebsiteContent = {
     footnote: "Premier échange sans engagement. Nos conseils sont gratuits.",
   },
   process: {
-    title: "Comment naît le site de votre institut",
+    title: "Comment se crée le site de votre institut",
     description: "De la première idée au site terminé – en quatre étapes simples.",
     steps: [
       { step: "01", title: "Premier échange", desc: "Nous découvrons votre institut, comprenons vos objectifs et définissons le périmètre." },
@@ -161,7 +161,7 @@ export const studioWebsiteFr: StudioWebsiteContent = {
       {
         question: "Le site peut-il être combiné avec Treatflow ?",
         answer:
-          "Absolument. Votre lien de réservation Treatflow, vos soins et vos horaires peuvent être intégrés directement au site. Vos nouvelles clientes réservent ainsi directement depuis votre propre site.",
+          "Absolument. Votre lien de réservation Treatflow, vos soins et vos horaires peuvent être intégrés directement au site. Vos nouveaux clients réservent ainsi directement depuis votre propre site.",
       },
       {
         question: "Combien coûte un site sur mesure ?",

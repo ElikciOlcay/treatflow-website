@@ -34,7 +34,7 @@ export const footerPl: FooterContent = {
           title: "Branże",
           links: [
             { href: { page: "beauty-salon-software" }, label: "Salony kosmetyczne" },
-            { href: { page: "laser-hair-removal-software" }, label: "Laser i IPL" },
+            { href: { page: "laser-hair-removal-software" }, label: "Depilacja laserowa" },
             { href: { page: "permanent-makeup-software" }, label: "Makijaż permanentny" },
             { href: { page: "aesthetic-clinic-software" }, label: "Gabinety medycyny estetycznej" },
             { href: { page: "nail-salon-software" }, label: "Salony paznokci" },
@@ -42,7 +42,7 @@ export const footerPl: FooterContent = {
             { href: { page: "lash-studio-software" }, label: "Stylizacja rzęs" },
             { href: { page: "tattoo-studio-software" }, label: "Studia tatuażu" },
             { href: { page: "spa-wellness-software" }, label: "Spa i wellness" },
-            { href: { page: "massage-software" }, label: "Masaż" },
+            { href: { page: "massage-software" }, label: "Gabinety masażu" },
           ],
         },
       ],
@@ -80,7 +80,7 @@ export const footerPl: FooterContent = {
           title: "Informacje prawne",
           links: [
             { href: { page: "privacy" }, label: "Polityka prywatności" },
-            { special: "cookie-settings", label: "Ustawienia cookies" },
+            { special: "cookie-settings", label: "Ustawienia plików cookie" },
             { href: { page: "terms" }, label: "Regulamin" },
             { href: { page: "imprint" }, label: "Nota prawna" },
           ],
@@ -92,7 +92,7 @@ export const footerPl: FooterContent = {
   popularTopics: [
     { href: { page: "online-booking" }, label: "Rezerwacje online dla salonu kosmetycznego" },
     { href: { page: "treatment-documentation" }, label: "Program do dokumentacji zabiegów" },
-    { href: { page: "forms" }, label: "Cyfrowe formularze wywiadu" },
+    { href: { page: "forms" }, label: "Karta wywiadu i zgoda na zabieg online" },
     { href: { page: "messaging" }, label: "Przypomnienia o wizytach" },
     { href: { page: "appointment-calendar" }, label: "Program do umawiania wizyt w salonie" },
     { href: { page: "client-records" }, label: "Kartoteka klientów dla salonu" },

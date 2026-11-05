@@ -30,18 +30,18 @@ export const featureCommonEs: FeatureCommonContent = {
     authorHref: { page: "about" },
   },
   ctaSection: {
-    title: "¿Todo listo para llevar tu centro al siguiente nivel?",
-    text: "Empieza hoy tu prueba gratuita de 14 días. Sin tarjeta de crédito y sin costes ocultos.",
+    title: "Lleva tu centro al siguiente nivel",
+    text: "Empieza hoy tu prueba gratuita de 14 días, sin tarjeta de crédito y sin costes ocultos.",
     primary: "Prueba gratis",
     demo: "Reserva una llamada de asesoramiento",
   },
   quickFacts: {
     ariaLabel: "Treatflow en breve",
     title: "Treatflow de un vistazo",
-    subtitle: "Los datos clave sobre Treatflow.",
+    subtitle: "Lo esencial sobre Treatflow, en cifras.",
     facts: [
-      { icon: "map-pin", value: "Made in Austria", label: "Bischofshofen, fundada en 2023", color: "bg-rose-100 text-rose-600" },
-      { icon: "shield", value: "Conforme al RGPD", label: "Servidores en la UE (Fráncfort), SSL, copias diarias", color: "bg-emerald-100 text-emerald-600" },
+      { icon: "map-pin", value: "Hecho en Austria", label: "Bischofshofen, fundada en 2023", color: "bg-rose-100 text-rose-600" },
+      { icon: "shield", value: "Conforme al RGPD", label: "Servidores en la UE (Fráncfort), SSL y copias de seguridad diarias", color: "bg-emerald-100 text-emerald-600" },
       { icon: "euro", value: "Desde 39 €/mes", label: "Plan Basic, 35 €/mes con pago anual", color: "bg-indigo-100 text-indigo-600" },
       { icon: "users", value: "Más de 500 centros", label: "Ya han probado Treatflow", color: "bg-amber-100 text-amber-600" },
       { icon: "star", value: "4,6/5 estrellas", label: "Valoración en Google (19 reseñas)", color: "bg-yellow-100 text-yellow-600" },

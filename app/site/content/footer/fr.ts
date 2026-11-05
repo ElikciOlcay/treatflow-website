@@ -6,7 +6,7 @@ import type { FooterContent } from "./types";
  * sont masqués automatiquement (voir app/i18n/site-pages.ts).
  */
 export const footerFr: FooterContent = {
-  tagline: "Votre assistant digital pour l'institut. Conçu en Autriche.",
+  tagline: "L'assistant numérique de votre institut. Conçu en Autriche.",
   instagramAria: "Treatflow sur Instagram",
   columns: [
     {
@@ -14,13 +14,13 @@ export const footerFr: FooterContent = {
         {
           title: "Fonctionnalités",
           links: [
-            { href: { page: "appointment-calendar" }, label: "Agenda des rendez-vous" },
+            { href: { page: "appointment-calendar" }, label: "Agenda et planning" },
             { href: { page: "online-booking" }, label: "Réservation en ligne" },
             { href: { page: "treatflow-pay" }, label: "Treatflow Pay", feature: "pay" },
             { href: { page: "client-records" }, label: "Fiches clients" },
             { href: { page: "forms" }, label: "Formulaires" },
             { href: { page: "try-forms" }, label: "Essayer des formulaires d'exemple" },
-            { href: { page: "treatment-documentation" }, label: "Documentation des soins" },
+            { href: { page: "treatment-documentation" }, label: "Suivi des soins" },
             { href: { page: "messaging" }, label: "Rappels" },
             { href: { page: "customer-workflows" }, label: "Parcours clients" },
             { href: { page: "integrations" }, label: "Intégrations" },
@@ -36,7 +36,7 @@ export const footerFr: FooterContent = {
             { href: { page: "beauty-salon-software" }, label: "Instituts de beauté" },
             { href: { page: "laser-hair-removal-software" }, label: "Laser et IPL" },
             { href: { page: "permanent-makeup-software" }, label: "Maquillage permanent" },
-            { href: { page: "aesthetic-clinic-software" }, label: "Cliniques esthétiques" },
+            { href: { page: "aesthetic-clinic-software" }, label: "Médecine esthétique" },
             { href: { page: "nail-salon-software" }, label: "Ongleries" },
             { href: { page: "foot-care-software" }, label: "Soins des pieds" },
             { href: { page: "lash-studio-software" }, label: "Extensions de cils" },
@@ -91,12 +91,12 @@ export const footerFr: FooterContent = {
   popularTopicsTitle: "Sujets populaires",
   popularTopics: [
     { href: { page: "online-booking" }, label: "Réservation en ligne pour instituts de beauté" },
-    { href: { page: "treatment-documentation" }, label: "Logiciel de documentation des soins" },
+    { href: { page: "treatment-documentation" }, label: "Logiciel de suivi des soins" },
     { href: { page: "forms" }, label: "Questionnaires clients numériques" },
     { href: { page: "messaging" }, label: "Rappels de rendez-vous" },
-    { href: { page: "appointment-calendar" }, label: "Logiciel de rendez-vous pour institut" },
+    { href: { page: "appointment-calendar" }, label: "Logiciel de planning pour institut" },
     { href: { page: "client-records" }, label: "Fiches clients pour instituts" },
-    { href: { page: "aesthetic-clinic-software" }, label: "Logiciel pour clinique esthétique" },
+    { href: { page: "aesthetic-clinic-software" }, label: "Logiciel de médecine esthétique" },
     { href: { page: "software-comparison" }, label: "Comparatif de logiciels pour instituts" },
   ],
   rights: "Tous droits réservés.",

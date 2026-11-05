@@ -2,12 +2,12 @@ import type { ShopContent } from "./types";
 
 export const shopEn: ShopContent = {
   meta: {
-    title: "Product Sales & Inventory for Beauty Salons",
+    title: "Retail & Stock Management for Beauty Salons",
     description:
-      "Built-in product sales for beauty salons. Sell aftercare products directly to your clients and keep stock under control with simple inventory management.",
+      "Built-in retail for beauty salons. Sell aftercare products directly to your clients and keep on top of stock with simple stock management.",
     keywords: [
       "product sales beauty salon",
-      "salon inventory management",
+      "salon stock management",
       "sell skincare products salon",
       "salon retail software",
       "extra revenue beauty salon",
@@ -15,15 +15,15 @@ export const shopEn: ShopContent = {
   },
   breadcrumb: "Shop",
   hero: {
-    eyebrow: "Product sales & inventory",
+    eyebrow: "Retail & stock",
     eyebrowIcon: "package",
-    title: { before: "Sell products, keep ", highlight: "stock", after: " in view" },
+    title: { before: "Sell products, keep ", highlight: "stock", after: " under control" },
     description: "Sell aftercare products in your salon – with stock levels and sales history.",
-    chips: ["Stock in view", "Sales history", "Unlimited products"],
+    chips: ["Stock at a glance", "Sales history", "Unlimited products"],
     secondaryCta: { label: "Client records", href: { page: "client-records" } },
     image: {
       src: "/images/mockups/shop-hero.png",
-      alt: "Treatflow product sales and inventory management",
+      alt: "Treatflow retail sales and stock management",
     },
   },
   understand: {
@@ -34,11 +34,11 @@ export const shopEn: ShopContent = {
       {
         icon: "package",
         title: "Add and sell products",
-        text: "Add serums, creams and accessories as items. Sell them right after the treatment or at the front desk.",
+        text: "Add serums, creams and accessories as items. Sell them right after the treatment or at reception.",
       },
       {
         icon: "trending-up",
-        title: "Stock levels in view",
+        title: "Stock levels at a glance",
         text: "You always see how much of a product is left. When stock runs low, you know it's time to reorder.",
       },
       {
@@ -67,10 +67,10 @@ export const shopEn: ShopContent = {
   },
   cards: {
     title: "What you get",
-    description: "Simple product sales for beauty salons – clear and easy to follow.",
+    description: "Simple retail for beauty salons – clear and easy to manage.",
     items: [
       { icon: "package", title: "Unlimited products", text: "As many items as you want – no limits.", points: ["No limits", "Categories", "Flexible prices"] },
-      { icon: "trending-up", title: "Inventory management", text: "Stock at a glance and a warning when quantities run low.", points: ["Stock overview", "Reordering", "Sales history"] },
+      { icon: "trending-up", title: "Stock management", text: "Stock at a glance and a warning when quantities run low.", points: ["Stock overview", "Reordering", "Sales history"] },
       { icon: "camera", title: "Images & descriptions", text: "Present products with photos and descriptions.", points: ["Product images", "Descriptions", "Variants"] },
       { icon: "shopping-bag", title: "What you can sell", text: "Aftercare, packages and accessories.", points: ["Aftercare products", "Packages", "Accessories"] },
       { icon: "bar-chart", title: "Sales overview", text: "Keep an eye on revenue and top products.", points: ["Revenue", "Top items", "Traceable"] },
@@ -80,12 +80,12 @@ export const shopEn: ShopContent = {
   related: {
     items: [
       { href: { page: "client-records" }, title: "Client records", description: "Purchase history in the client profile" },
-      { href: { page: "treatment-documentation" }, title: "Treatment documentation", description: "Record treatments and aftercare" },
+      { href: { page: "treatment-documentation" }, title: "Treatment records", description: "Record treatments and aftercare" },
       { href: { page: "online-booking" }, title: "Online booking", description: "Clients book 24/7 – commission-free" },
     ],
   },
   cta: {
-    title: "Ready for your salon shop?",
-    description: "Try it free for 14 days – sell products and keep your stock in view.",
+    title: "Ready to start selling in your salon?",
+    description: "Try it free for 14 days – sell products and keep track of your stock.",
   },
 };

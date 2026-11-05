@@ -7,15 +7,17 @@ import type { HomeContent } from "./types";
  */
 export const homePl: HomeContent = {
   meta: {
-    title: "Program do salonu kosmetycznego i gabinetu",
+    title: "Program do salonu kosmetycznego: rezerwacje online i kartoteka",
     description:
-      "Treatflow to kompleksowy program do salonu kosmetycznego i gabinetu medycyny estetycznej: rezerwacje online bez prowizji, kartoteka klientów, cyfrowe formularze, dokumentacja zabiegów i przypomnienia. 14 dni za darmo.",
+      "Treatflow to program do salonu kosmetycznego i gabinetu medycyny estetycznej: kalendarz wizyt, rezerwacje online bez prowizji, kartoteka klientów, zgody na zabieg online, dokumentacja zabiegów i przypomnienia e-mail. Wypróbuj 14 dni za darmo.",
     keywords: [
       "program do salonu kosmetycznego",
       "system rezerwacji online",
-      "oprogramowanie dla salonu kosmetycznego",
+      "program do gabinetu kosmetycznego",
       "program do gabinetu medycyny estetycznej",
+      "system rezerwacji dla salonu",
       "kalendarz wizyt online",
+      "kartoteka klientów salon kosmetyczny",
     ],
   },
 
@@ -28,7 +30,7 @@ export const homePl: HomeContent = {
       operatingSystem: "Web Browser",
       inLanguage: "pl",
       description:
-        "Treatflow to kompleksowa platforma do zarządzania salonem kosmetycznym, gabinetem medycyny estetycznej i innymi firmami wykonującymi zabiegi. Łączy rezerwacje online, kartotekę klientów, cyfrowe formularze wywiadu i zgód, dokumentację zabiegów, zdjęcia przed i po oraz automatyczną opiekę pozabiegową. Hosting w UE.",
+        "Treatflow to kompleksowy program do zarządzania salonem kosmetycznym, gabinetem medycyny estetycznej i każdym innym miejscem, w którym wykonuje się zabiegi. Łączy rezerwacje online, kartotekę klientów, karty wywiadu i zgody na zabieg online, dokumentację zabiegów, zdjęcia przed i po oraz automatyczną opiekę pozabiegową. Hosting w UE.",
       url: "https://www.treatflow.io/pl",
       author: { "@type": "Organization", name: "Treatflow", url: "https://www.treatflow.io" },
       offers: [
@@ -60,7 +62,7 @@ export const homePl: HomeContent = {
       featureList: [
         "Kalendarz wizyt z rezerwacjami online",
         "Cyfrowa kartoteka klientów",
-        "Formularze wywiadu i zgód",
+        "Karty wywiadu i zgody na zabieg",
         "Dokumentacja zabiegów ze zdjęciami",
         "Dyktowanie głosowe notatek z zabiegów",
         "Automatyczne przypomnienia e-mail",
@@ -72,16 +74,16 @@ export const homePl: HomeContent = {
   hero: {
     badge: "Dla salonów kosmetycznych, które chcą się rozwijać",
     title: {
-      before: "Koniec z chaosem w rezerwacjach,",
-      highlight: "papierami",
+      before: "Koniec z chaosem w grafiku,",
+      highlight: "papierologią",
       connector: "i",
-      end: "nieobecnościami",
+      end: "nieodwołanymi wizytami",
     },
     subtitle:
       "Wizyty, klienci, formularze i dokumentacja zabiegów w jednej przejrzystej aplikacji. Twój zespół od razu się w niej odnajdzie.",
-    primaryCta: "Wypróbuj za darmo przez 14 dni",
+    primaryCta: "Wypróbuj 14 dni za darmo",
     demoCta: "Umów prezentację",
-    checks: ["Bez karty kredytowej", "Gotowe w 2 minuty", "Bezpłatne przeniesienie danych"],
+    checks: ["Bez podawania karty", "Start w 2 minuty", "Bezpłatne przeniesienie danych"],
     rating: "4,6/5 w Google",
     tested: { before: "Przetestowało już ", highlight: "500+ salonów", after: "" },
     calendarLocale: "pl-PL",
@@ -104,12 +106,12 @@ export const homePl: HomeContent = {
         studio: "Depilacja laserowa",
       },
       {
-        text: "Bezkonkurencyjna cena i intuicyjna obsługa. Moja prośba została zrealizowana w ciągu jednego dnia!",
+        text: "Bezkonkurencyjna cena i intuicyjna obsługa. Moją prośbę zrealizowali w jeden dzień!",
         name: "Stefanie R.",
         studio: "Local Guide",
       },
       {
-        text: "Przeszłam z Phorest – świetny stosunek jakości do ceny. Mogę z czystym sumieniem polecić.",
+        text: "Przeszłam z Phorestu – świetny stosunek jakości do ceny. Polecam z czystym sumieniem.",
         name: "Sharon U.",
         studio: "Salon kosmetyczny",
       },
@@ -120,13 +122,13 @@ export const homePl: HomeContent = {
   studioDay: {
     eyebrow: "Jedna wizyta, jeden system",
     title: "Od rezerwacji po opiekę pozabiegową. W jednej aplikacji.",
-    subtitle: "Tak przebiega wizyta z Treatflow. Niczego nie trzeba wpisywać dwa razy.",
+    subtitle: "Tak wygląda wizyta z Treatflow. Niczego nie wpisujesz dwa razy.",
     steps: [
       {
         time: "pon. · 21:14",
         module: "Rezerwacje online",
-        title: "Lena rezerwuje wieczorem z kanapy.",
-        text: "Bez telefonu i bez prowizji od rezerwacji. Wizyta od razu pojawia się w kalendarzu.",
+        title: "Lena umawia się wieczorem, prosto z kanapy.",
+        text: "Bez dzwonienia i bez prowizji od rezerwacji. Wizyta od razu pojawia się w kalendarzu.",
         meta: "Zabieg na twarz · czw. 10:45",
         href: { page: "online-booking" },
         icon: "calendar-days",
@@ -135,7 +137,7 @@ export const homePl: HomeContent = {
       {
         time: "śr. · 10:45",
         module: "Przypomnienie",
-        title: "Przypomnienie wychodzi automatycznie.",
+        title: "Przypomnienie wysyła się samo.",
         text: "Dzień wcześniej, e-mailem. Mniej zapomnianych wizyt – i nikt nie musi o tym pamiętać.",
         meta: "Dostarczono · potwierdzono",
         href: { page: "messaging" },
@@ -145,9 +147,9 @@ export const homePl: HomeContent = {
       {
         time: "czw. · 10:40",
         module: "Formularze",
-        title: "Wywiad na tablecie, podpisany.",
-        text: "Formularz trafia prosto do karty Leny. Bez przepisywania papierów po wizycie.",
-        meta: "Formularz wywiadu · podpisany cyfrowo",
+        title: "Karta wywiadu wypełniona i podpisana na tablecie.",
+        text: "Formularz trafia prosto do karty Leny. Koniec z przepisywaniem papierów po wizycie.",
+        meta: "Karta wywiadu · podpisana elektronicznie",
         href: { page: "forms" },
         icon: "file-pen-line",
         tone: "bg-violet-50 text-violet-600 ring-violet-100",
@@ -166,7 +168,7 @@ export const homePl: HomeContent = {
         time: "pt. · 09:00",
         module: "Opieka pozabiegowa",
         title: "Opieka pozabiegowa i kolejna wizyta – automatycznie.",
-        text: "Wskazówka pielęgnacyjna następnego dnia, przypomnienie o kolejnej wizycie kilka tygodni później. Ustawiasz to raz jako automatyzację dla klientów.",
+        text: "Następnego dnia wskazówki pielęgnacyjne, kilka tygodni później przypomnienie o kolejnej wizycie. Ustawiasz to raz – jako automatyzację dla klientów.",
         meta: "Automatyzacja · następny krok za 4 tygodnie",
         href: { page: "customer-workflows", fallback: "messaging" },
         icon: "workflow",
@@ -177,19 +179,19 @@ export const homePl: HomeContent = {
 
   features: {
     title: "Mniej chaosu. Więcej czasu dla klientów.",
-    subtitle: "Wszystko, czego potrzebuje Twój salon – w jednej aplikacji, którą Twój zespół od razu zrozumie.",
+    subtitle: "Wszystko, czego potrzebuje Twój salon – w jednej aplikacji, w której Twój zespół od razu się odnajdzie.",
     items: [
       { href: { page: "appointment-calendar" }, icon: "calendar-days", label: "Kalendarz wizyt", desc: "Wszystkie wizyty w przejrzystym widoku dnia i tygodnia.", color: "bg-indigo-100 text-indigo-600" },
-      { href: { page: "online-booking" }, icon: "users", label: "Rezerwacje online", desc: "Klienci rezerwują sami – także poza godzinami otwarcia.", color: "bg-emerald-100 text-emerald-600" },
-      { href: { page: "client-records" }, icon: "file-text", label: "Kartoteka klientów", desc: "Historia, notatki i zdjęcia w jednym miejscu, szybko dostępne.", color: "bg-blue-100 text-blue-600" },
-      { href: { page: "forms" }, icon: "clipboard-check", label: "Formularze", desc: "Cyfrowy wywiad i formularze zgód, wypełniane wcześniej przez link.", color: "bg-orange-100 text-orange-600" },
-      { href: { page: "treatment-documentation" }, icon: "shield", label: "Dokumentacja", desc: "Rzetelnie dokumentuj każdy zabieg – ze zdjęciami i parametrami.", color: "bg-teal-100 text-teal-600" },
+      { href: { page: "online-booking" }, icon: "users", label: "Rezerwacje online", desc: "Klienci umawiają się sami – także po godzinach otwarcia.", color: "bg-emerald-100 text-emerald-600" },
+      { href: { page: "client-records" }, icon: "file-text", label: "Kartoteka klientów", desc: "Historia, notatki i zdjęcia każdego klienta zawsze pod ręką.", color: "bg-blue-100 text-blue-600" },
+      { href: { page: "forms" }, icon: "clipboard-check", label: "Formularze", desc: "Karta wywiadu i zgody na zabieg wypełniane online jeszcze przed wizytą.", color: "bg-orange-100 text-orange-600" },
+      { href: { page: "treatment-documentation" }, icon: "shield", label: "Dokumentacja", desc: "Każdy zabieg rzetelnie udokumentowany – ze zdjęciami i parametrami.", color: "bg-teal-100 text-teal-600" },
       { href: { page: "treatflow-pay", fallback: "online-booking" }, icon: "wallet", label: "Treatflow Pay", desc: "Pobieraj zaliczkę lub pełną płatność online już przy rezerwacji.", color: "bg-green-100 text-green-600", feature: "pay" },
-      { href: { page: "messaging" }, icon: "bell", label: "Przypomnienia", desc: "Automatyczne przypomnienia e-mail ograniczają nieobecności.", color: "bg-rose-100 text-rose-600" },
+      { href: { page: "messaging" }, icon: "bell", label: "Przypomnienia", desc: "Automatyczne przypomnienia e-mail – mniej nieodwołanych wizyt.", color: "bg-rose-100 text-rose-600" },
       { href: { page: "customer-workflows", fallback: "messaging" }, icon: "workflow", label: "Automatyzacje dla klientów", desc: "Zautomatyzuj opiekę pozabiegową i odzyskiwanie klientów w kilku krokach.", color: "bg-violet-100 text-violet-600" },
     ],
-    cta: "Wypróbuj za darmo przez 14 dni",
-    ctaNote: "Bez karty kredytowej. Rezygnacja w każdej chwili.",
+    cta: "Wypróbuj 14 dni za darmo",
+    ctaNote: "Bez podawania karty. Rezygnacja w każdej chwili.",
   },
 
   pricing: {
@@ -197,19 +199,19 @@ export const homePl: HomeContent = {
     titleBefore: "Proste ceny –",
     titleHighlight: " bez ukrytych opłat",
     subtitle:
-      "Treatflow kosztuje od 39 €/miesiąc (Basic) lub 59 €/miesiąc (Booking). Wypróbuj za darmo przez 14 dni – bez prowizji i bez ryzyka.",
+      "Treatflow kosztuje od 39 €/miesiąc (Basic) lub 59 €/miesiąc (Booking). Przetestuj 14 dni za darmo – bez prowizji i bez ryzyka.",
     monthly: "Miesięcznie",
     yearly: "Rocznie",
     saveBadge: "Oszczędzasz 10%",
     perMonth: "/miesiąc",
     perYear: "/rok",
-    vatNote: "netto (bez VAT)",
+    vatNote: "netto + VAT",
     basic: {
       name: "Basic",
       monthlyPrice: "39 €",
       yearlyPrice: "421 €",
       yearlyHint: "35 €/miesiąc • Oszczędzasz 47 € rocznie",
-      description: "Cyfrowy wywiad, kartoteka klientów i dokumentacja zabiegów – bez kalendarza wizyt.",
+      description: "Karty wywiadu online, kartoteka klientów i dokumentacja zabiegów – bez kalendarza wizyt.",
       included: [
         "Zarządzanie klientami",
         "Formularze z podpisem elektronicznym",
@@ -227,7 +229,7 @@ export const homePl: HomeContent = {
         "Automatyzacje i lista oczekujących",
         "Wsparcie priorytetowe",
       ],
-      cta: "Wypróbuj za darmo przez 14 dni",
+      cta: "Wypróbuj 14 dni za darmo",
     },
     booking: {
       name: "Booking",
@@ -248,11 +250,11 @@ export const homePl: HomeContent = {
         "Integracje (Kalendarz Google, Zapier, asystenci AI)",
         "Priorytetowe wsparcie e-mail i czat",
       ],
-      cta: "Wypróbuj za darmo przez 14 dni",
+      cta: "Wypróbuj 14 dni za darmo",
     },
     trial: {
       title: "14 dni za darmo",
-      text: "Bez karty kredytowej • Rezygnacja w każdej chwili • Bezpłatne przeniesienie danych",
+      text: "Bez podawania karty • Rezygnacja w każdej chwili • Bezpłatne przeniesienie danych",
       points: ["Bez opłat za wdrożenie", "Rezygnacja co miesiąc", "Zgodność z RODO"],
     },
   },
@@ -266,12 +268,12 @@ export const homePl: HomeContent = {
       {
         question: "Czym jest Treatflow?",
         answer:
-          "Treatflow to aplikacja all-in-one do codziennej pracy salonu: wizyty, kartoteka klientów, cyfrowe formularze i dokumentacja zabiegów są połączone w jednym systemie – bez prowizji od rezerwacji. Stworzona w Austrii, z danymi na serwerach w UE.",
+          "Treatflow to aplikacja all-in-one do codziennej pracy salonu: wizyty, kartoteka klientów, formularze online i dokumentacja zabiegów w jednym systemie – bez prowizji od rezerwacji. Tworzymy ją w Austrii, a dane przechowujemy na serwerach w UE.",
       },
       {
         question: "Dla kogo jest Treatflow?",
         answer: [
-          "Dla salonów, które wykonują zabiegi – od kosmetyki i medycyny estetycznej, przez depilację laserową, paznokcie, rzęsy i makijaż permanentny, po masaż i spa. Dowiedz się więcej o naszym ",
+          "Dla każdego miejsca, w którym wykonuje się zabiegi – od gabinetów kosmetycznych i medycyny estetycznej, przez depilację laserową, stylizację paznokci i rzęs oraz makijaż permanentny, po masaż i spa. Dowiedz się więcej o naszym ",
           { text: "programie do gabinetu medycyny estetycznej", href: { page: "aesthetic-clinic-software" } },
           " i ",
           { text: "kartotece klientów", href: { page: "client-records" } },
@@ -281,14 +283,14 @@ export const homePl: HomeContent = {
       {
         question: "Jak długo mogę testować Treatflow za darmo?",
         answer:
-          "Treatflow możesz testować całkowicie za darmo przez 14 dni. Bez karty kredytowej i bez ukrytych kosztów. Po okresie próbnym sam decydujesz, czy chcesz kontynuować.",
+          "Treatflow możesz testować całkowicie za darmo przez 14 dni – bez podawania karty i bez ukrytych kosztów. Po okresie próbnym to Ty decydujesz, czy zostajesz.",
       },
       {
         question: "Czym różni się pakiet Basic od Booking?",
         answer: [
           "Basic (39 €/miesiąc) obejmuje nieograniczone ",
           { text: "zarządzanie klientami", href: { page: "client-records" } },
-          ", marketplace formularzy, generator formularzy AI i sklep. Booking (59 €/miesiąc) dodaje profesjonalny ",
+          ", bibliotekę gotowych formularzy, generator formularzy AI i sklep. Booking (59 €/miesiąc) dodaje profesjonalny ",
           { text: "kalendarz rezerwacji", href: { page: "appointment-calendar" } },
           " z własnym linkiem do rezerwacji i automatycznymi ",
           { text: "przypomnieniami o wizytach", href: { page: "messaging" } },
@@ -298,8 +300,8 @@ export const homePl: HomeContent = {
       {
         question: "Czy Treatflow jest zgodny z RODO?",
         answer: [
-          "Tak. Treatflow jest w pełni zgodny z RODO. Wszystkie dane są szyfrowane i bezpiecznie przechowywane na serwerach w UE we Frankfurcie (Niemcy). Dotyczy to również cyfrowych ",
-          { text: "formularzy wywiadu", href: { page: "forms" } },
+          "Tak. Treatflow jest w pełni zgodny z RODO. Wszystkie dane są szyfrowane i bezpiecznie przechowywane na serwerach w UE, we Frankfurcie (Niemcy). Dotyczy to również ",
+          { text: "kart wywiadu online", href: { page: "forms" } },
           " i ",
           { text: "dokumentacji zabiegów", href: { page: "treatment-documentation" } },
           ".",
@@ -308,7 +310,7 @@ export const homePl: HomeContent = {
       {
         question: "Czy mogę zaimportować dotychczasowe dane klientów?",
         answer: [
-          "Tak, bezpłatnie pomagamy w przeniesieniu danych. Nasz zespół wsparcia pomoże Ci bezpiecznie przenieść dotychczasowe dane klientów do ",
+          "Tak, a przeniesienie danych jest bezpłatne. Nasz zespół wsparcia pomoże Ci bezpiecznie przenieść dotychczasowe dane klientów do ",
           { text: "cyfrowej kartoteki klientów", href: { page: "client-records" } },
           ".",
         ],
@@ -326,41 +328,41 @@ export const homePl: HomeContent = {
       {
         question: "Czy potrzebuję wiedzy technicznej, żeby korzystać z Treatflow?",
         answer:
-          "Nie. Treatflow jest bardzo prosty w obsłudze. Nie trzeba niczego instalować – wystarczy zalogować się w przeglądarce i zacząć. Jeśli masz pytania, nasz zespół wsparcia chętnie pomoże.",
+          "Nie. Treatflow jest bardzo prosty w obsłudze. Niczego nie instalujesz – logujesz się w przeglądarce i od razu zaczynasz. A jeśli pojawią się pytania, nasz zespół wsparcia chętnie pomoże.",
       },
       {
-        question: "Jak działa marketplace formularzy?",
+        question: "Jak działa biblioteka formularzy?",
         answer: [
-          "W marketplace znajdziesz profesjonalne ",
+          "W bibliotece znajdziesz profesjonalne ",
           { text: "formularze", href: { page: "forms" } },
-          " do wszystkich zabiegów kosmetycznych. Używaj ich bez zmian, dopasuj je generatorem AI albo dostosuj w edytorze metodą przeciągnij i upuść. Cyfrowe formularze wywiadu są od razu gotowe do użycia.",
+          " do wszystkich zabiegów kosmetycznych. Używaj ich bez zmian, dopasuj je generatorem AI albo przerób w edytorze metodą „przeciągnij i upuść”. Gotowe karty wywiadu możesz wysyłać od razu.",
         ],
       },
       {
-        question: "Czy mogę prowadzić nieograniczoną liczbę klientów?",
+        question: "Czy liczba klientów jest ograniczona?",
         answer:
-          "Tak. Możesz prowadzić dowolną liczbę klientów. System rośnie razem z Twoim salonem, a funkcja importu ułatwia przeniesienie dotychczasowych danych klientów.",
+          "Nie. Możesz prowadzić dowolną liczbę kart klientów. System rośnie razem z Twoim salonem, a import ułatwia przeniesienie dotychczasowych danych.",
       },
     ],
     contactTitle: "Masz inne pytania?",
     contactText:
-      "Nasz zespół wsparcia chętnie pomoże. Napisz do nas e-mail lub od razu umów rozmowę doradczą.",
-    demoCta: "Umów rozmowę doradczą",
+      "Nasz zespół wsparcia chętnie pomoże. Napisz do nas e-mail albo od razu umów rozmowę z doradcą.",
+    demoCta: "Umów rozmowę z doradcą",
   },
 
   cta: {
     ariaLabel: "Wezwanie do działania",
     title: "Czas na lepiej zorganizowany salon?",
-    subtitle: "Zacznij już dziś i przekonaj się, jak prosta może być organizacja salonu.",
+    subtitle: "Zacznij już dziś i zobacz, jak prosto może działać Twój salon.",
     checks: [
       "14 dni za darmo",
-      "Bez karty kredytowej",
-      "Gotowe w 2 minuty",
-      "Osobiste wsparcie i pomoc",
+      "Bez podawania karty",
+      "Start w 2 minuty",
+      "Osobiste wsparcie",
     ],
     primaryCta: "Wypróbuj za darmo",
     demoCta: "Umów prezentację",
-    note: "Rezygnacja w każdej chwili. Zgodność z RODO. Z osobistym wsparciem i pomocą.",
+    note: "Rezygnacja w każdej chwili. Zgodność z RODO. Osobiste wsparcie.",
   },
 
   seo: {
@@ -371,10 +373,10 @@ export const homePl: HomeContent = {
       " z kalendarzem wizyt, rezerwacjami online, cyfrową kartoteką klientów, formularzami i dokumentacją zabiegów – bez prowizji, zgodny z RODO i stworzony w Austrii.",
     ],
     links: [
-      { href: { page: "client-records" }, label: "Program do kartoteki klientów" },
+      { href: { page: "client-records" }, label: "Kartoteka klientów online" },
       { href: { page: "online-booking" }, label: "Rezerwacja wizyt online" },
       { href: { page: "treatment-documentation" }, label: "Dokumentacja zabiegów" },
-      { href: { page: "forms" }, label: "Cyfrowe formularze wywiadu" },
+      { href: { page: "forms" }, label: "Karta wywiadu i zgody online" },
       { href: { page: "messaging" }, label: "Przypomnienia o wizytach" },
       { href: { page: "software-comparison" }, label: "Porównanie programów" },
       { href: { page: "treatflow-vs-treatwell" }, label: "Treatflow vs Treatwell" },

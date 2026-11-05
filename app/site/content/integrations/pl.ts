@@ -21,9 +21,9 @@ export const integrationsPl: IntegrationsContent = {
   hero: {
     eyebrow: "Integracje",
     eyebrowIcon: "plug",
-    title: { before: "Połącz aplikacje, a ", highlight: "dane", after: " będą zawsze zgodne" },
+    title: { before: "Połącz aplikacje – ", highlight: "dane", after: " zawsze aktualne" },
     description:
-      "Kalendarz Google, Zapier, asystenci AI i Treatflow Pay – łączysz raz, wszystko jest aktualne wszędzie.",
+      "Kalendarz Google, Zapier, asystenci AI i Treatflow Pay – łączysz raz, a dane są wszędzie aktualne.",
     chips: ["Kalendarz Google", "Zapier", "Asystenci AI (MCP)", { text: "Treatflow Pay", feature: "pay" }],
     secondaryCta: { label: "Zobacz kalendarz", href: { page: "appointment-calendar" } },
     tiles: [
@@ -35,12 +35,12 @@ export const integrationsPl: IntegrationsContent = {
   },
   understand: {
     title: "W skrócie: do czego służą integracje",
-    description: "Mniej podwójnej pracy – dane same przepływają między Twoimi narzędziami.",
+    description: "Mniej wpisywania tego samego dwa razy – dane same przepływają między Twoimi narzędziami.",
     items: [
       {
         icon: "refresh",
         title: "Mniej podwójnej pracy",
-        text: "Klientów i wizyty wprowadzasz raz – kalendarz i połączone narzędzia pozostają aktualne.",
+        text: "Klientów i wizyty wpisujesz raz – kalendarz i połączone narzędzia same się aktualizują.",
       },
       {
         icon: "workflow",
@@ -59,7 +59,7 @@ export const integrationsPl: IntegrationsContent = {
     steps: [
       { title: "Wybierz aplikację", text: "Wybierz integrację w Ustawieniach salonu > Aplikacje." },
       { title: "Połącz konto", text: "Zaloguj się jednorazowo u dostawcy – np. w Google, Zapierze, Claude lub ChatGPT." },
-      { title: "Automatyczna synchronizacja", text: "Od teraz wizyty, klienci i automatyzacje działają razem." },
+      { title: "Automatyczna synchronizacja", text: "Od tej chwili wizyty, klienci i automatyzacje działają razem." },
     ],
   },
   cards: {
@@ -69,8 +69,8 @@ export const integrationsPl: IntegrationsContent = {
       {
         icon: "calendar",
         title: "Kalendarz Google",
-        text: "Synchronizacja dwukierunkowa: Treatflow i Google są zgodne w czasie rzeczywistym.",
-        points: ["Synchronizacja dwukierunkowa", "Bez podwójnych rezerwacji", "Prywatne i salonowe osobno"],
+        text: "Synchronizacja dwukierunkowa: Treatflow i Google na bieżąco pokazują to samo.",
+        points: ["Synchronizacja dwukierunkowa", "Bez podwójnych rezerwacji", "Terminy prywatne osobno od salonowych"],
       },
       {
         icon: "wallet",
@@ -82,13 +82,13 @@ export const integrationsPl: IntegrationsContent = {
       {
         icon: "zap",
         title: "Zapier",
-        text: "Połącz ponad 7000 aplikacji – automatyzacje przy nowych wizytach i formularzach.",
+        text: "Ponad 7000 aplikacji – automatyzacje uruchamiane przy nowych wizytach i formularzach.",
         points: ["Ponad 7000 aplikacji", "Webhooki", "Bez kodowania"],
       },
       {
         icon: "bot",
         title: "Asystenci AI (MCP)",
-        text: "Połącz Claude, ChatGPT i innych asystentów i pytaj o wizyty, klientów lub przychody.",
+        text: "Połącz Claude, ChatGPT lub innego asystenta i pytaj o wizyty, klientów czy przychody.",
         points: ["Domyślnie tylko odczyt", "Dane medyczne zostają w Treatflow", "Dostęp można cofnąć w każdej chwili"],
       },
     ],
@@ -125,7 +125,7 @@ export const integrationsPl: IntegrationsContent = {
       {
         question: "Czy integracje są dostępne w każdym planie?",
         answer:
-          "Integracje są zawarte w planie Booking. Po rejestracji znajdziesz je i włączysz w panelu w Ustawieniach salonu > Aplikacje.",
+          "Integracje są częścią pakietu Booking. Po rejestracji włączysz je w panelu, w Ustawieniach salonu > Aplikacje.",
       },
     ],
   },
@@ -139,7 +139,7 @@ export const integrationsPl: IntegrationsContent = {
   },
   cta: {
     title: "Połączone narzędzia dla Twojego salonu",
-    description: "Wypróbuj za darmo przez 14 dni – połącz Kalendarz Google, Zapier i swojego asystenta AI w kilka minut.",
+    description: "Wypróbuj 14 dni za darmo – połącz Kalendarz Google, Zapier i swojego asystenta AI w kilka minut.",
     secondary: { label: "Wszystkie funkcje", href: { page: "features" } },
   },
 };

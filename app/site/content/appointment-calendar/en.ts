@@ -2,24 +2,24 @@ import type { AppointmentCalendarContent } from "./types";
 
 export const appointmentCalendarEn: AppointmentCalendarContent = {
   meta: {
-    title: "Appointment Calendar for Beauty Salons: Team & Rooms",
+    title: "Salon Appointment Calendar & Diary for Staff and Rooms",
     description:
       "Appointment scheduling software for beauty salons and aesthetic clinics: a calendar with columns for staff and rooms, online booking, drag & drop and automatic email reminders. No commission, 14-day free trial.",
     keywords: [
       "appointment calendar beauty salon",
       "salon scheduling software",
-      "appointment scheduling software spa",
+      "salon diary software",
       "beauty salon booking calendar",
       "staff and room scheduling",
       "aesthetic clinic scheduling software",
-      "drag and drop appointment calendar",
+      "online appointment book salon",
     ],
   },
   dates: { modified: "2026-10-28", published: "2024-06-01" },
   schema: {
     id: "terminkalender",
     webPage: {
-      name: "Appointment Calendar for Beauty Salons: Team & Rooms",
+      name: "Salon Appointment Calendar & Diary for Staff and Rooms",
       description:
         "Appointment calendar for beauty salons with a day view for staff and rooms, drag & drop, online booking and automatic reminders.",
     },
@@ -44,7 +44,7 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
   hero: {
     eyebrow: "Scheduling & appointment calendar",
     eyebrowIcon: "calendar",
-    title: { before: "The appointment calendar for your salon – for your team and ", highlight: "rooms" },
+    title: { before: "The salon appointment calendar for your team and ", highlight: "rooms" },
     description:
       "The scheduling tool for your beauty salon: staff, rooms and appointments in one view, online booking included. Reschedule with drag & drop and avoid double bookings.",
     chips: ["Drag & drop", "Team & rooms", "Fewer no-shows"],
@@ -83,12 +83,12 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
       {
         icon: "bell",
         title: "Automatic reminders",
-        text: "Your clients receive an email reminder before their appointment. That noticeably reduces forgotten appointments.",
+        text: "Your clients receive an email reminder before their appointment. That means noticeably fewer forgotten appointments.",
       },
     ],
   },
   howItWorks: {
-    description: "Three steps to a running salon schedule.",
+    description: "Your salon diary up and running in three steps.",
     steps: [
       { title: "Set up team, services and rooms", text: "Add your staff, treatments and rooms with working hours. The calendar then shows a separate column for each of them." },
       { title: "Add appointments", text: "Enter appointments yourself or switch on online booking – your clients' bookings then appear in the calendar automatically." },
@@ -100,11 +100,11 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
     description: "Everything for salon scheduling – team, rooms and reminders in one calendar.",
     items: [
       { icon: "users", title: "Team & rooms", text: "One column per team member or room. Utilisation and free slots at a glance.", points: ["Column view", "Spot free capacity", "No double bookings"] },
-      { icon: "move", title: "Drag & drop", text: "Move, extend or swap appointments – no forms, no chaos.", points: ["Reschedule in seconds", "Live in the calendar", "For the whole team"] },
+      { icon: "move", title: "Drag & drop", text: "Move, extend or swap appointments – no re-entering, no chaos.", points: ["Reschedule in seconds", "Live in the calendar", "For the whole team"] },
       { icon: "layout-grid", title: "Day to month view", text: "Switch between day, week and month – whatever you need right now.", points: ["Day view", "Week", "Month"] },
       { icon: "bell", title: "Automatic reminders", text: "Email reminders before every appointment. Fewer no-shows, fewer follow-up calls.", points: ["Email reminders", "Flexible timing", "Cancellation link"] },
       { icon: "calendar", title: "Online booking", text: "Bookings land straight in the calendar. No double bookings, automatic confirmation.", points: ["Personal booking link", "Instantly in the calendar", "No commission"] },
-      { icon: "clock", title: "Less admin time", text: "Fewer calls, clearer processes – more time for treatments instead of the schedule.", points: ["Fewer phone calls", "Clear time slots", "Quick overview"] },
+      { icon: "clock", title: "Less admin time", text: "Fewer calls, clearer processes – more time for treatments, less time on the diary.", points: ["Fewer phone calls", "Clear time slots", "Quick overview"] },
     ],
   },
   faq: {
@@ -121,14 +121,14 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
           "Treatflow offers scheduling with online booking from €59 per month on the Booking plan (€53 per month billed yearly, plus VAT). Try it free for 14 days, no credit card required. There are no hidden costs and no commission per booking.",
       },
       {
-        question: "Is there a free appointment planner for beauty salons?",
+        question: "Is there free appointment software for beauty salons?",
         answer:
-          "Free planners exist – usually with limitations, ads or a commission per booking through a marketplace model. A paper diary or spreadsheet costs nothing, but it can't take online bookings, send reminders or connect to your client records. You can try Treatflow free for 14 days without a credit card; after that, the calendar with online booking costs €59 per month, with no commission per appointment.",
+          "Free options exist – usually with limitations, ads or a commission per booking through a marketplace model. A paper appointment book or spreadsheet costs nothing, but it can't take online bookings, send reminders or connect to your client records. You can try Treatflow free for 14 days without a credit card; after that, the calendar with online booking costs €59 per month, with no commission per appointment.",
       },
       {
-        question: "Appointment planner, calendar or booking system – what's the difference?",
+        question: "Appointment book, diary or booking system – what's the difference?",
         answer:
-          "In day-to-day salon life, all three mean almost the same thing: the planner or calendar is the view in which you and your team manage appointments. The booking system is the part clients use to book online themselves. In Treatflow they are one and the same – online bookings land directly in the calendar, including reminders and client records.",
+          "In day-to-day salon life, all three mean almost the same thing: the appointment book or diary is where you and your team manage appointments. The booking system is the part clients use to book online themselves. In Treatflow they are one and the same – online bookings land directly in the calendar, including reminders and client records.",
       },
       {
         question: "Can my clients book appointments online?",
@@ -143,7 +143,7 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
       {
         question: "Which features should a salon appointment calendar have?",
         answer:
-          "A good appointment calendar for beauty salons should offer online booking, day/week/month views, staff and room planning, automatic email reminders, drag & drop and a connection to client records and treatment documentation.",
+          "A good appointment calendar for beauty salons should offer online booking, day/week/month views, staff and room planning, automatic email reminders, drag & drop and a connection to client profiles and treatment records.",
       },
       {
         question: "How do I schedule several team members and rooms?",
@@ -165,7 +165,7 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
   related: {
     items: [
       { href: { page: "online-booking" }, title: "Online booking", description: "24/7 via your booking link" },
-      { href: { page: "messaging" }, title: "Messaging", description: "Automatic email reminders" },
+      { href: { page: "messaging" }, title: "Reminders", description: "Automatic email reminders" },
       { href: { page: "client-records" }, title: "Client records", description: "Client profile right from the appointment" },
     ],
   },

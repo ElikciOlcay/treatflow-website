@@ -2,15 +2,16 @@ import type { PricingPageContent } from "./types";
 
 export const pricingIt: PricingPageContent = {
   meta: {
-    title: "Prezzi del gestionale per centri estetici",
+    title: "Prezzi del gestionale per centri estetici: da 39 €/mese",
     description:
-      "Prezzi Treatflow: Basic da 39 €/mese, Booking da 59 €/mese. Nessuna commissione sulle prenotazioni, 14 giorni di prova gratuita, senza carta di credito.",
+      "Quanto costa Treatflow? Basic 39 €/mese, Booking 59 €/mese. Zero commissioni sulle prenotazioni, prova gratuita di 14 giorni senza carta di credito.",
     keywords: [
       "gestionale centro estetico prezzi",
       "software centro estetico costo",
       "gestionale estetista prezzo",
       "software prenotazioni online prezzi",
       "programma centro estetico abbonamento",
+      "quanto costa un gestionale per centro estetico",
     ],
   },
   dates: { modified: "2026-11-05", published: "2024-06-01" },
@@ -18,7 +19,7 @@ export const pricingIt: PricingPageContent = {
   capsule: {
     question: "Quanto costa Treatflow?",
     answer:
-      "Basic da 39 €/mese (gestione clienti, moduli, documentazione), Booking da 59 €/mese (con agenda appuntamenti, prenotazioni online e promemoria). Nessuna commissione sulle prenotazioni, 14 giorni di prova gratuita.",
+      "Basic costa 39 €/mese (schede clienti, moduli, documentazione dei trattamenti), Booking 59 €/mese (in più agenda appuntamenti, prenotazioni online e promemoria). Zero commissioni sulle prenotazioni e 14 giorni di prova gratuita.",
   },
   schema: {
     webPage: {
@@ -32,14 +33,14 @@ export const pricingIt: PricingPageContent = {
     ],
   },
   comparison: {
-    title: "Cosa è incluso?",
-    subtitle: "Confronta i due piani nel dettaglio e trova quello giusto per il tuo centro.",
+    title: "Cosa include ogni piano?",
+    subtitle: "Confronta i due piani voce per voce e scegli quello giusto per il tuo centro.",
     vatNote: "Tutti i prezzi sono IVA esclusa.",
     featureLabel: "Funzione",
     basicLabel: "Basic (39 €)",
     bookingLabel: "Booking (59 €)",
     rows: [
-      { label: "Gestione clienti", basic: true, booking: true },
+      { label: "Schede clienti", basic: true, booking: true },
       { label: "Moduli con firma digitale", basic: true, booking: true },
       { label: "Documentazione dei trattamenti con note vocali", basic: true, booking: true },
       { label: "Foto prima/dopo", basic: true, booking: true },
@@ -48,11 +49,11 @@ export const pricingIt: PricingPageContent = {
       { label: "Statistiche", basic: true, booking: true },
       { label: "Personale e ruoli", basic: true, booking: true },
       { label: "Supporto via email", basic: true, booking: true },
-      { label: "Agenda appuntamenti (operatrici e cabine)", basic: false, booking: true },
+      { label: "Agenda appuntamenti (operatori e cabine)", basic: false, booking: true },
       { label: "Prenotazioni online senza commissioni", basic: false, booking: true },
       { label: "Lista d'attesa", basic: false, booking: true },
       { label: "Promemoria via email", basic: false, booking: true },
-      { label: "Flussi automatici per le clienti", basic: false, booking: true },
+      { label: "Flussi automatici per i clienti", basic: false, booking: true },
       { label: "Codici sconto", basic: false, booking: true },
       { label: "Pagina di prenotazione multilingue", basic: false, booking: true },
       { label: "Integrazioni (Google Calendar, Zapier, assistenti IA)", basic: false, booking: true },
@@ -62,12 +63,12 @@ export const pricingIt: PricingPageContent = {
   },
   why: {
     title: "Perché Treatflow?",
-    subtitle: "Prezzi fissi trasparenti invece di costi nascosti e commissioni.",
+    subtitle: "Un canone fisso e trasparente, senza costi nascosti né commissioni.",
     stats: [
-      { value: "0%", label: "Commissione per prenotazione" },
-      { value: "0 €", label: "Costi di attivazione" },
+      { value: "0%", label: "di commissione sulle prenotazioni" },
+      { value: "0 €", label: "di costi di attivazione" },
       { value: "14 giorni", label: "di prova gratuita" },
-      { value: "Sempre", label: "disdicibile" },
+      { value: "Disdetta", label: "quando vuoi" },
     ],
   },
   faq: {
@@ -77,27 +78,27 @@ export const pricingIt: PricingPageContent = {
       {
         question: "Quanto costa Treatflow?",
         answer:
-          "Treatflow è disponibile in due piani: Basic da 39 €/mese per gestione clienti, moduli e documentazione. Booking da 59 €/mese con in più agenda appuntamenti, prenotazioni online e promemoria automatici. Entrambi i piani si possono provare gratis per 14 giorni.",
+          "Treatflow ha due piani: Basic a 39 €/mese per schede clienti, moduli e documentazione dei trattamenti; Booking a 59 €/mese, che aggiunge agenda appuntamenti, prenotazioni online e promemoria automatici. Puoi provare entrambi gratis per 14 giorni.",
       },
       {
         question: "Ci sono costi nascosti?",
         answer:
-          "No. Treatflow lavora con prezzi fissi trasparenti, senza commissioni, costi di attivazione o extra nascosti. Quello che vedi è quello che paghi.",
+          "No. Treatflow ha un canone fisso e trasparente: niente commissioni, niente costi di attivazione, niente extra a sorpresa. Paghi esattamente il prezzo che vedi.",
       },
       {
         question: "Posso disdire in qualsiasi momento?",
         answer:
-          "Sì. Con il pagamento mensile puoi disdire in qualsiasi momento, con effetto alla fine del periodo di fatturazione. Non c'è una durata minima del contratto.",
+          "Sì. Con l'abbonamento mensile puoi disdire quando vuoi, con effetto alla fine del periodo di fatturazione. Nessun vincolo di durata minima.",
       },
       {
         question: "Esiste un gestionale gratuito per centri estetici?",
         answer:
-          "Alcuni fornitori come Fresha offrono versioni base gratuite, ma guadagnano con le commissioni sui pagamenti e le funzioni premium. Treatflow offre prezzi fissi trasparenti senza costi nascosti – da 39 €/mese con tutte le funzioni.",
+          "Alcuni fornitori, come Fresha, offrono una versione base gratuita, ma guadagnano con le commissioni sui pagamenti e le funzioni a pagamento. Treatflow punta su un canone fisso e trasparente, senza costi nascosti: da 39 €/mese, con tutte le funzioni incluse.",
       },
       {
         question: "Conviene il piano Booking?",
         answer:
-          "Sì, se ti servono prenotazioni online, promemoria automatici via email e un'agenda digitale. Con il piano Booking hai molti meno no-show e passi meno tempo al telefono.",
+          "Sì, se ti servono prenotazioni online, promemoria automatici via email e un'agenda digitale. Con il piano Booking hai molti meno no-show e passi molto meno tempo al telefono.",
       },
     ],
   },

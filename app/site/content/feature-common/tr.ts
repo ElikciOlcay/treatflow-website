@@ -6,14 +6,14 @@ export const featureCommonTr: FeatureCommonContent = {
   hero: {
     primaryCta: "30 gün ücretsiz deneyin",
     trust: ["30 gün ücretsiz", "Kredi kartı gerekmez", "Komisyon yok"],
-    rating: "Google'da 4.6/5 · 500+ işletme",
+    rating: "Google'da 4,6/5 · 500+ işletme",
     shortExplained: "Kısaca",
   },
   sections: {
-    understand: "Bu özellik size nasıl yardımcı olur",
+    understand: "Salonunuza ne kazandırır?",
     howItWorks: "Nasıl çalışır",
     cards: "Neler sunuyoruz",
-    faq: "Sık sorulan sorular",
+    faq: "Sıkça sorulan sorular",
     related: "İlgili özellikler",
   },
   pageCta: {
@@ -31,9 +31,9 @@ export const featureCommonTr: FeatureCommonContent = {
   },
   ctaSection: {
     title: "Salonunuzu bir üst seviyeye taşımaya hazır mısınız?",
-    text: "30 günlük ücretsiz deneme sürenizi bugün başlatın. Kredi kartı gerekmez, gizli maliyet yok.",
+    text: "30 günlük ücretsiz denemenizi bugün başlatın. Kredi kartı gerekmez, gizli ücret yok.",
     primary: "Ücretsiz deneyin",
-    demo: "Danışmanlık görüşmesi planlayın",
+    demo: "Danışmanlık görüşmesi ayarlayın",
   },
   quickFacts: {
     ariaLabel: "Treatflow hakkında kısa bilgiler",
@@ -44,8 +44,8 @@ export const featureCommonTr: FeatureCommonContent = {
       { icon: "shield", value: "KVKK ve GDPR uyumlu", label: "AB sunucuları (Frankfurt), SSL, günlük yedekleme", color: "bg-emerald-100 text-emerald-600" },
       { icon: "wallet", value: "Aylık ₺1.490'dan başlayan fiyatlar", label: "Basic paket, yıllık ödemede aylık ₺1.342", color: "bg-indigo-100 text-indigo-600" },
       { icon: "users", value: "500+ işletme", label: "Treatflow'u denedi", color: "bg-amber-100 text-amber-600" },
-      { icon: "star", value: "4.6/5 yıldız", label: "Google puanı (19 yorum)", color: "bg-yellow-100 text-yellow-600" },
-      { icon: "clock", value: "30 gün ücretsiz", label: "Kredi kartı gerekmez, istediğiniz zaman iptal", color: "bg-sky-100 text-sky-600" },
+      { icon: "star", value: "4,6/5 puan", label: "Google puanı (19 değerlendirme)", color: "bg-yellow-100 text-yellow-600" },
+      { icon: "clock", value: "30 gün ücretsiz", label: "Kredi kartı gerekmez, istediğiniz zaman iptal edin", color: "bg-sky-100 text-sky-600" },
     ],
   },
   schemaLanguage: "tr-TR",

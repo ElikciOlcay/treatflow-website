@@ -46,13 +46,13 @@ export const onlineBookingEn: OnlineBookingContent = {
     },
   },
   understand: {
-    title: "Your clients book themselves – you treat",
+    title: "Clients book themselves – you focus on treatments",
     description:
       "With your personal booking link, clients can pick appointments around the clock. No more phone tag or back-and-forth messages.",
     items: [
       {
         icon: "calendar",
-        title: "Open around the clock",
+        title: "Open 24/7",
         text: "Your booking link is available 24/7. More than 60% of bookings come in during evenings or weekends.",
       },
       {
@@ -80,12 +80,12 @@ export const onlineBookingEn: OnlineBookingContent = {
     description: "Booking link, languages, waitlist, discount codes and Treatflow Pay – with no commission per appointment.",
     items: [
       { icon: "link", title: "Personal booking link", text: "Your link to share on your website and social media – with your salon's branding.", points: ["Custom link", "QR code", "Salon branding"] },
-      { icon: "languages", title: "Six languages", text: "The booking page adapts to your client's language – no extra setup.", points: ["DE, EN, TR, PL, IT, RU", "Automatic language", "No barriers"] },
+      { icon: "languages", title: "Seven languages", text: "The booking page adapts to your client's language – no extra setup.", points: ["DE, EN, NL, TR, PL, IT, RU", "Automatic language", "No language barriers"] },
       { icon: "wallet", title: "Treatflow Pay", text: "Deposit or full payment right at online booking.", points: ["Set per service", "Deposit or full payment", "2.69% per transaction"], feature: "pay" },
       { icon: "list-ordered", title: "Waitlist", text: "Clients join the waitlist when you're fully booked. When a slot opens up, matching clients get an email.", points: ["Automatic email on cancellation", "Two notification modes", "Overview in the dashboard"] },
-      { icon: "ticket", title: "Discount codes", text: "Codes for new clients and campaigns – redeemed right at online booking.", points: ["New clients & promotions", "Redeemed at booking", "Usage statistics"] },
+      { icon: "ticket", title: "Discount codes", text: "Codes for new clients and promotions – redeemed right at online booking.", points: ["New clients & promotions", "Redeemed at booking", "Usage statistics"] },
       { icon: "bell", title: "Reminders", text: "Email reminders before the appointment. Clients can cancel in good time and the slot becomes free again.", points: ["Email reminders", "Flexible timing", "Fewer no-shows"] },
-      { icon: "calendar", title: "Flexible scheduling", text: "Working hours, treatment durations, breaks and holidays – only real availability is offered.", points: ["Working hours", "Breaks & holidays", "No double bookings"] },
+      { icon: "calendar", title: "Flexible scheduling", text: "Working hours, treatment durations, breaks and holidays – only genuinely free slots are offered.", points: ["Working hours", "Breaks & holidays", "No double bookings"] },
     ],
   },
   faq: {
@@ -94,7 +94,7 @@ export const onlineBookingEn: OnlineBookingContent = {
       {
         question: "Which online booking system is right for beauty salons?",
         answer:
-          "Treatflow offers an online booking system built for beauty salons, with a personal booking link, automatic email confirmations, staff calendars and a connection to client records and treatment documentation. From €59 per month.",
+          "Treatflow offers an online booking system built for beauty salons, with a personal booking link, automatic email confirmations, staff calendars and a connection to client profiles and treatment records. From €59 per month.",
       },
       {
         question: "How do I set up online booking for my salon?",
@@ -133,12 +133,12 @@ export const onlineBookingEn: OnlineBookingContent = {
     items: [
       { href: { page: "treatflow-pay" }, title: "Treatflow Pay", description: "Deposit or full payment", feature: "pay" },
       { href: { page: "appointment-calendar" }, title: "Appointment calendar", description: "Bookings land straight in your schedule" },
-      { href: { page: "messaging" }, title: "Messaging", description: "Automatic confirmations and reminders" },
+      { href: { page: "messaging" }, title: "Reminders", description: "Automatic confirmations and reminders" },
       { href: { page: "client-records" }, title: "Client records", description: "New booking, familiar profile" },
     ],
   },
   cta: {
-    title: "Ready for automatic bookings?",
+    title: "Ready to take bookings around the clock?",
     description: "Try it free for 14 days – no credit card and no commission per booking.",
     secondary: { label: "See the calendar", href: { page: "appointment-calendar" } },
   },

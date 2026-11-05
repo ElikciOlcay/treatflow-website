@@ -7,15 +7,16 @@ import type { HomeContent } from "./types";
  */
 export const homeIt: HomeContent = {
   meta: {
-    title: "Gestionale per centri estetici e cliniche estetiche",
+    title: "Gestionale per centri estetici e medicina estetica",
     description:
-      "Treatflow è il gestionale all-in-one per centri estetici, cliniche di medicina estetica e studi di trattamento. Prenotazioni online, schede clienti, moduli digitali, documentazione dei trattamenti e promemoria. 14 giorni gratis.",
+      "Treatflow è il gestionale all-in-one per centri estetici e studi di medicina estetica: agenda appuntamenti, prenotazioni online, schede clienti, consenso informato digitale, documentazione dei trattamenti e promemoria. Prova gratuita di 14 giorni.",
     keywords: [
       "gestionale centro estetico",
+      "gestionale per estetiste",
       "software centro estetico",
-      "software prenotazioni centro estetico",
-      "gestionale clinica estetica",
-      "agenda online centro estetico",
+      "programma prenotazioni centro estetico",
+      "gestionale medicina estetica",
+      "agenda appuntamenti online centro estetico",
     ],
   },
 
@@ -28,7 +29,7 @@ export const homeIt: HomeContent = {
       operatingSystem: "Web Browser",
       inLanguage: "it",
       description:
-        "Treatflow è una piattaforma gestionale all-in-one per centri estetici, cliniche di medicina estetica e studi di trattamento. Riunisce prenotazioni online, schede clienti, moduli digitali di anamnesi e consenso, documentazione dei trattamenti, foto prima/dopo e follow-up automatici. Ospitato nell'UE.",
+        "Treatflow è il gestionale all-in-one per centri estetici e studi di medicina estetica. Riunisce agenda, prenotazioni online, schede clienti, schede anamnestiche e consenso informato digitali, documentazione dei trattamenti, foto prima/dopo e follow-up automatici. Dati ospitati nell'UE.",
       url: "https://www.treatflow.io/it",
       author: { "@type": "Organization", name: "Treatflow", url: "https://www.treatflow.io" },
       offers: [
@@ -60,30 +61,30 @@ export const homeIt: HomeContent = {
       featureList: [
         "Agenda appuntamenti con prenotazioni online",
         "Schede clienti digitali",
-        "Moduli di anamnesi e consenso",
+        "Schede anamnestiche e consenso informato digitali",
         "Documentazione dei trattamenti con foto",
         "Dettatura vocale delle note di trattamento",
         "Promemoria automatici via email",
-        "Flussi automatici per le clienti",
+        "Flussi automatici per i clienti",
       ],
     },
   },
 
   hero: {
-    badge: "Per i centri estetici che vogliono crescere",
+    badge: "Per centri estetici che vogliono crescere",
     title: {
-      before: "Basta caos negli appuntamenti,",
+      before: "Basta caos in agenda,",
       highlight: "montagne di carta",
       connector: "e",
-      end: "disdette last minute",
+      end: "disdette all'ultimo minuto",
     },
     subtitle:
-      "Appuntamenti, clienti, moduli e documentazione dei trattamenti in un'unica app chiara. Il tuo team si orienta da subito.",
+      "Appuntamenti, clienti, moduli e documentazione dei trattamenti in un'unica app semplice e intuitiva. Il tuo team la usa dal primo giorno.",
     primaryCta: "Inizia la prova gratuita di 14 giorni",
     demoCta: "Prenota una demo",
-    checks: ["Nessuna carta di credito", "Pronto in 2 minuti", "Migrazione dati gratuita"],
+    checks: ["Senza carta di credito", "Attivo in 2 minuti", "Trasferimento dati gratuito"],
     rating: "4,6/5 su Google",
-    tested: { before: "Già provato da ", highlight: "oltre 500 centri", after: "" },
+    tested: { before: "Già testato da ", highlight: "oltre 500 centri", after: "" },
     calendarLocale: "it-IT",
     newBookingLabel: "Nuova prenotazione",
     image: {
@@ -96,20 +97,20 @@ export const homeIt: HomeContent = {
   socialProof: {
     rating: "4,6/5 su Google",
     allReviews: "Vedi tutte le recensioni",
-    tested: { before: "Già provato da ", highlight: "oltre 500 centri", after: "" },
+    tested: { before: "Già testato da ", highlight: "oltre 500 centri", after: "" },
     reviews: [
       {
-        text: "L'assistenza è eccezionale: sempre gentile, cordiale e orientata alle soluzioni. Consigliatissimo!",
+        text: "Assistenza eccezionale: sempre gentili, disponibili e attenti a trovare una soluzione. Consigliatissimo!",
         name: "Velura Saarburg",
         studio: "Epilazione laser",
       },
       {
-        text: "Prezzo imbattibile e facile da usare. La mia richiesta è stata realizzata in un giorno!",
+        text: "Prezzo imbattibile e facilissimo da usare. Hanno realizzato la mia richiesta in un giorno!",
         name: "Stefanie R.",
         studio: "Local Guide",
       },
       {
-        text: "Sono passata da Phorest: ottimo rapporto qualità-prezzo. Lo consiglio in tutta coscienza.",
+        text: "Sono passata da Phorest a Treatflow: ottimo rapporto qualità-prezzo. Lo consiglio senza riserve.",
         name: "Sharon U.",
         studio: "Centro estetico",
       },
@@ -118,15 +119,15 @@ export const homeIt: HomeContent = {
   },
 
   studioDay: {
-    eyebrow: "Un appuntamento, un solo sistema",
-    title: "Dalla prenotazione al post-trattamento. In un'unica app.",
-    subtitle: "Ecco come si svolge un appuntamento con Treatflow. Niente va inserito due volte.",
+    eyebrow: "Un appuntamento, un unico sistema",
+    title: "Dalla prenotazione al post-trattamento, tutto in un'unica app.",
+    subtitle: "Ecco il percorso di un appuntamento con Treatflow. Nessun dato da inserire due volte.",
     steps: [
       {
         time: "lun · 21:14",
         module: "Prenotazione online",
-        title: "Lena prenota la sera, dal divano.",
-        text: "Nessuna telefonata e nessuna commissione sulla prenotazione. L'appuntamento è subito in agenda.",
+        title: "Giulia prenota la sera, dal divano.",
+        text: "Nessuna telefonata e nessuna commissione sulla prenotazione. L'appuntamento compare subito in agenda.",
         meta: "Trattamento viso · gio 10:45",
         href: { page: "online-booking" },
         icon: "calendar-days",
@@ -135,8 +136,8 @@ export const homeIt: HomeContent = {
       {
         time: "mer · 10:45",
         module: "Promemoria",
-        title: "Il promemoria parte in automatico.",
-        text: "Il giorno prima, via email. Meno appuntamenti dimenticati, senza che nessuno debba pensarci.",
+        title: "Il promemoria parte da solo.",
+        text: "Il giorno prima, via email. Meno appuntamenti dimenticati, senza che nessuno ci debba pensare.",
         meta: "Consegnato · confermato",
         href: { page: "messaging" },
         icon: "bell",
@@ -145,9 +146,9 @@ export const homeIt: HomeContent = {
       {
         time: "gio · 10:40",
         module: "Moduli",
-        title: "Anamnesi sul tablet, firmata.",
-        text: "Il modulo finisce direttamente nella scheda cliente di Lena. Nessun foglio da ricopiare dopo.",
-        meta: "Scheda di anamnesi · firmata digitalmente",
+        title: "Scheda anamnestica compilata e firmata sul tablet.",
+        text: "Il modulo finisce direttamente nella scheda cliente di Giulia. Niente fogli da ricopiare a fine giornata.",
+        meta: "Scheda anamnestica · firmata digitalmente",
         href: { page: "forms" },
         icon: "file-pen-line",
         tone: "bg-violet-50 text-violet-600 ring-violet-100",
@@ -156,7 +157,7 @@ export const homeIt: HomeContent = {
         time: "gio · 11:40",
         module: "Documentazione",
         title: "Trattamento documentato, con foto.",
-        text: "Parametri, prodotti e foto prima/dopo restano nello storico dei trattamenti.",
+        text: "Parametri, prodotti e foto prima/dopo vengono salvati nello storico dei trattamenti.",
         meta: "3 foto · parametri salvati",
         href: { page: "treatment-documentation" },
         icon: "camera",
@@ -165,8 +166,8 @@ export const homeIt: HomeContent = {
       {
         time: "ven · 09:00",
         module: "Post-trattamento",
-        title: "Consigli post-trattamento e richiamo vanno da soli.",
-        text: "Un consiglio di cura il giorno dopo, un promemoria per riprenotare qualche settimana più tardi. Impostato una volta come flusso per le clienti.",
+        title: "Consigli post-trattamento e richiamo partono da soli.",
+        text: "Il giorno dopo un consiglio per la cura a casa, qualche settimana più tardi un invito a riprenotare. Basta impostare il flusso una volta.",
         meta: "Flusso · prossimo passo tra 4 settimane",
         href: { page: "customer-workflows", fallback: "messaging" },
         icon: "workflow",
@@ -176,28 +177,28 @@ export const homeIt: HomeContent = {
   },
 
   features: {
-    title: "Meno caos. Più tempo per le tue clienti.",
-    subtitle: "Tutto ciò che serve al tuo centro, in un'unica app che il tuo team capisce subito.",
+    title: "Meno caos. Più tempo per i tuoi clienti.",
+    subtitle: "Tutto ciò che serve al tuo centro, in un'unica app che il tuo team impara a usare in pochi minuti.",
     items: [
       { href: { page: "appointment-calendar" }, icon: "calendar-days", label: "Agenda appuntamenti", desc: "Tutti gli appuntamenti in una vista giornaliera e settimanale chiara.", color: "bg-indigo-100 text-indigo-600" },
-      { href: { page: "online-booking" }, icon: "users", label: "Prenotazioni online", desc: "Le clienti prenotano da sole, anche fuori dagli orari di apertura.", color: "bg-emerald-100 text-emerald-600" },
+      { href: { page: "online-booking" }, icon: "users", label: "Prenotazioni online", desc: "I clienti prenotano da soli, anche a centro chiuso.", color: "bg-emerald-100 text-emerald-600" },
       { href: { page: "client-records" }, icon: "file-text", label: "Schede clienti", desc: "Storico, note e foto in un unico posto, sempre a portata di mano.", color: "bg-blue-100 text-blue-600" },
-      { href: { page: "forms" }, icon: "clipboard-check", label: "Moduli", desc: "Anamnesi e consensi digitali, compilati in anticipo tramite link.", color: "bg-orange-100 text-orange-600" },
-      { href: { page: "treatment-documentation" }, icon: "shield", label: "Documentazione", desc: "Documenta ogni trattamento in modo accurato, con foto e parametri.", color: "bg-teal-100 text-teal-600" },
-      { href: { page: "treatflow-pay", fallback: "online-booking" }, icon: "wallet", label: "Treatflow Pay", desc: "Incassa un acconto o l'intero importo online al momento della prenotazione.", color: "bg-green-100 text-green-600", feature: "pay" },
-      { href: { page: "messaging" }, icon: "bell", label: "Promemoria", desc: "I promemoria automatici via email riducono gli appuntamenti mancati.", color: "bg-rose-100 text-rose-600" },
-      { href: { page: "customer-workflows", fallback: "messaging" }, icon: "workflow", label: "Flussi per le clienti", desc: "Automatizza post-trattamento e riattivazione in più passaggi.", color: "bg-violet-100 text-violet-600" },
+      { href: { page: "forms" }, icon: "clipboard-check", label: "Moduli", desc: "Schede anamnestiche e consensi informati, compilati online prima dell'appuntamento.", color: "bg-orange-100 text-orange-600" },
+      { href: { page: "treatment-documentation" }, icon: "shield", label: "Documentazione", desc: "Ogni trattamento documentato con precisione, con foto e parametri.", color: "bg-teal-100 text-teal-600" },
+      { href: { page: "treatflow-pay", fallback: "online-booking" }, icon: "wallet", label: "Treatflow Pay", desc: "Incassa online un acconto o l'intero importo già al momento della prenotazione.", color: "bg-green-100 text-green-600", feature: "pay" },
+      { href: { page: "messaging" }, icon: "bell", label: "Promemoria", desc: "I promemoria automatici via email riducono i no-show.", color: "bg-rose-100 text-rose-600" },
+      { href: { page: "customer-workflows", fallback: "messaging" }, icon: "workflow", label: "Flussi clienti", desc: "Post-trattamento e richiamo dei clienti inattivi, automatizzati in più passaggi.", color: "bg-violet-100 text-violet-600" },
     ],
     cta: "Inizia la prova gratuita di 14 giorni",
-    ctaNote: "Nessuna carta di credito. Disdici quando vuoi.",
+    ctaNote: "Senza carta di credito. Disdici quando vuoi.",
   },
 
   pricing: {
     eyebrow: "Prezzi trasparenti",
-    titleBefore: "Prezzi semplici –",
+    titleBefore: "Prezzi chiari,",
     titleHighlight: " nessun costo nascosto",
     subtitle:
-      "Treatflow parte da 39 €/mese (Basic) o 59 €/mese (Booking). Provalo gratis per 14 giorni: nessuna commissione, nessun rischio.",
+      "Treatflow costa 39 €/mese (Basic) o 59 €/mese (Booking). Provalo gratis per 14 giorni: zero commissioni, zero rischi.",
     monthly: "Mensile",
     yearly: "Annuale",
     saveBadge: "Risparmi il 10%",
@@ -209,7 +210,7 @@ export const homeIt: HomeContent = {
       monthlyPrice: "39 €",
       yearlyPrice: "421 €",
       yearlyHint: "35 €/mese • Risparmi 47 €/anno",
-      description: "Anamnesi digitale, schede clienti e documentazione dei trattamenti – senza agenda appuntamenti.",
+      description: "Schede anamnestiche digitali, schede clienti e documentazione dei trattamenti, senza agenda appuntamenti.",
       included: [
         "Gestione clienti",
         "Moduli con firma digitale",
@@ -231,18 +232,18 @@ export const homeIt: HomeContent = {
     },
     booking: {
       name: "Booking",
-      popular: "Più scelto",
+      popular: "Il più scelto",
       monthlyPrice: "59 €",
       yearlyPrice: "637 €",
       yearlyHint: "53 €/mese • Risparmi 71 €/anno",
       description: "Agenda appuntamenti, prenotazioni online e promemoria automatici per il tuo centro.",
       included: [
         "Tutto ciò che include Basic",
-        "Agenda con colonne per operatrici e cabine",
+        "Agenda con colonne per operatori e cabine",
         "Prenotazioni online senza commissioni",
         "Lista d'attesa",
         "Promemoria via email",
-        "Flussi automatici per le clienti",
+        "Flussi automatici per i clienti",
         "Codici sconto",
         "Pagina di prenotazione multilingue",
         "Integrazioni (Google Calendar, Zapier, assistenti IA)",
@@ -252,7 +253,7 @@ export const homeIt: HomeContent = {
     },
     trial: {
       title: "Prova gratuita di 14 giorni",
-      text: "Nessuna carta di credito • Disdici quando vuoi • Migrazione dati gratuita",
+      text: "Senza carta di credito • Disdici quando vuoi • Trasferimento dati gratuito",
       points: ["Nessun costo di attivazione", "Disdetta mensile", "Conforme al GDPR"],
     },
   },
@@ -260,19 +261,19 @@ export const homeIt: HomeContent = {
   faq: {
     badge: "FAQ",
     titleBefore: "Hai ancora domande?",
-    titleHighlight: " Abbiamo le risposte!",
+    titleHighlight: " Ecco le risposte!",
     subtitle: "Qui trovi le risposte alle domande più frequenti su Treatflow.",
     items: [
       {
         question: "Cos'è Treatflow?",
         answer:
-          "Treatflow è un'app all-in-one per il lavoro quotidiano del centro: appuntamenti, schede clienti, moduli digitali e documentazione dei trattamenti sono collegati in un unico sistema, senza commissioni sulle prenotazioni. Sviluppato in Austria, con i dati su server nell'UE.",
+          "Treatflow è un'app all-in-one per la gestione quotidiana del centro: appuntamenti, schede clienti, moduli digitali e documentazione dei trattamenti in un unico sistema, senza commissioni sulle prenotazioni. Sviluppato in Austria, con i dati su server nell'UE.",
       },
       {
         question: "A chi è rivolto Treatflow?",
         answer: [
-          "Ai centri che eseguono trattamenti: dall'estetica alla medicina estetica, fino a laser, unghie, ciglia, trucco permanente, massaggi e spa. Scopri di più sul nostro ",
-          { text: "software per cliniche estetiche", href: { page: "aesthetic-clinic-software" } },
+          "A chi lavora su appuntamento con i trattamenti: centri estetici e studi di medicina estetica, ma anche epilazione laser, onicotecnica, extension ciglia, trucco permanente, massaggi e spa. Scopri di più sul nostro ",
+          { text: "gestionale per la medicina estetica", href: { page: "aesthetic-clinic-software" } },
           " e sulle ",
           { text: "schede clienti", href: { page: "client-records" } },
           ".",
@@ -281,15 +282,15 @@ export const homeIt: HomeContent = {
       {
         question: "Per quanto tempo posso provare Treatflow gratis?",
         answer:
-          "Puoi provare Treatflow gratis per 14 giorni. Nessuna carta di credito, nessun costo nascosto. Al termine della prova decidi tu se continuare.",
+          "Puoi provare Treatflow gratis per 14 giorni, senza carta di credito e senza costi nascosti. Alla fine della prova decidi tu se continuare.",
       },
       {
         question: "Che differenza c'è tra Basic e Booking?",
         answer: [
           "Basic (39 €/mese) include la ",
           { text: "gestione clienti", href: { page: "client-records" } },
-          " illimitata, il marketplace dei moduli, il generatore di moduli con IA e lo shop. Booking (59 €/mese) aggiunge l'",
-          { text: "agenda di prenotazione", href: { page: "appointment-calendar" } },
+          " senza limiti, il marketplace dei moduli, il generatore di moduli con IA e lo shop. Booking (59 €/mese) aggiunge l'",
+          { text: "agenda appuntamenti", href: { page: "appointment-calendar" } },
           " professionale con il tuo link di prenotazione e i ",
           { text: "promemoria appuntamenti", href: { page: "messaging" } },
           " automatici.",
@@ -298,17 +299,17 @@ export const homeIt: HomeContent = {
       {
         question: "Treatflow è conforme al GDPR?",
         answer: [
-          "Sì. Treatflow è pienamente conforme al GDPR. Tutti i dati sono crittografati e conservati in sicurezza su server UE a Francoforte, in Germania. Questo vale anche per i ",
-          { text: "moduli di anamnesi", href: { page: "forms" } },
+          "Sì. Treatflow è pienamente conforme al GDPR. Tutti i dati sono crittografati e conservati in sicurezza su server nell'UE, a Francoforte (Germania). Lo stesso vale per le ",
+          { text: "schede anamnestiche", href: { page: "forms" } },
           " digitali e per la ",
           { text: "documentazione dei trattamenti", href: { page: "treatment-documentation" } },
           ".",
         ],
       },
       {
-        question: "Posso importare i dati delle mie clienti?",
+        question: "Posso importare i dati dei miei clienti?",
         answer: [
-          "Sì, ti aiutiamo a trasferire i dati gratuitamente. Il nostro supporto trasferisce in sicurezza i dati delle tue clienti nelle tue ",
+          "Sì, e il trasferimento è gratuito. Il nostro supporto importa in sicurezza i dati dei tuoi clienti nelle nuove ",
           { text: "schede clienti digitali", href: { page: "client-records" } },
           ".",
         ],
@@ -316,51 +317,51 @@ export const homeIt: HomeContent = {
       {
         question: "Treatflow funziona anche sullo smartphone?",
         answer:
-          "Sì. Treatflow funziona su tutti i dispositivi: computer, tablet e smartphone. Accedi ai dati di clienti e appuntamenti ovunque tu sia.",
+          "Sì. Treatflow funziona su computer, tablet e smartphone. Clienti e appuntamenti sono sempre a portata di mano, ovunque tu sia.",
       },
       {
         question: "Cosa succede ai miei dati se disdico?",
         answer:
-          "I tuoi dati restano sempre sotto il tuo controllo. Se disdici, puoi esportarli tutti. Li cancelliamo completamente solo dopo un periodo di transizione.",
+          "I tuoi dati restano sempre tuoi. Se disdici, puoi esportarli tutti. Li cancelliamo definitivamente solo dopo un periodo di transizione.",
       },
       {
         question: "Servono competenze tecniche per usare Treatflow?",
         answer:
-          "No. Treatflow è molto semplice da usare. Non c'è nulla da installare: accedi dal browser e inizi subito. Per qualsiasi domanda, il nostro supporto è a tua disposizione.",
+          "No. Treatflow è pensato per essere semplice. Non c'è nulla da installare: accedi dal browser e inizi subito. Per qualsiasi dubbio, il nostro supporto è a tua disposizione.",
       },
       {
         question: "Come funziona il marketplace dei moduli?",
         answer: [
           "Nel marketplace trovi ",
           { text: "moduli", href: { page: "forms" } },
-          " professionali per tutti i trattamenti estetici. Usali così come sono, adattali con il generatore IA o personalizzali nell'editor drag-and-drop. Le schede di anamnesi digitali sono pronte da usare subito.",
+          " professionali per tutti i trattamenti estetici. Usali così come sono, adattali con il generatore IA o personalizzali nell'editor drag & drop. Le schede anamnestiche digitali sono pronte all'uso.",
         ],
       },
       {
-        question: "Posso gestire un numero illimitato di clienti?",
+        question: "C'è un limite al numero di clienti?",
         answer:
-          "Sì. Puoi gestire tutte le clienti che vuoi. Il sistema cresce insieme al tuo centro e la funzione di importazione ti permette di trasferire facilmente i dati esistenti.",
+          "No. Puoi gestire tutti i clienti che vuoi. Treatflow cresce insieme al tuo centro e con l'importazione trasferisci facilmente i dati che hai già.",
       },
     ],
     contactTitle: "Hai altre domande?",
     contactText:
-      "Il nostro supporto è a tua disposizione. Scrivici un'email o prenota direttamente una consulenza.",
+      "Il nostro supporto è a tua disposizione. Scrivici un'email o prenota subito una consulenza.",
     demoCta: "Prenota una consulenza",
   },
 
   cta: {
     ariaLabel: "Invito all'azione",
-    title: "Pronta a gestire il tuo centro con più chiarezza?",
-    subtitle: "Inizia oggi e scopri quanto può essere semplice organizzare il tuo centro.",
+    title: "Vuoi gestire il tuo centro con più ordine e meno stress?",
+    subtitle: "Inizia oggi e scopri quanto può essere semplice organizzare il lavoro in centro.",
     checks: [
       "Prova gratuita di 14 giorni",
-      "Nessuna carta di credito",
-      "Pronto in 2 minuti",
+      "Senza carta di credito",
+      "Attivo in 2 minuti",
       "Assistenza personale",
     ],
     primaryCta: "Inizia la prova gratuita",
     demoCta: "Prenota una demo",
-    note: "Disdici quando vuoi. Conforme al GDPR. Con assistenza personale.",
+    note: "Disdici quando vuoi. Conforme al GDPR. Assistenza personale inclusa.",
   },
 
   seo: {
@@ -371,12 +372,12 @@ export const homeIt: HomeContent = {
       " con agenda appuntamenti, prenotazioni online, schede clienti digitali, moduli e documentazione dei trattamenti: senza commissioni, conforme al GDPR e made in Austria.",
     ],
     links: [
-      { href: { page: "client-records" }, label: "Software per schede clienti" },
-      { href: { page: "online-booking" }, label: "Prenotazione appuntamenti online" },
+      { href: { page: "client-records" }, label: "Gestionale schede clienti" },
+      { href: { page: "online-booking" }, label: "Prenotazione online appuntamenti" },
       { href: { page: "treatment-documentation" }, label: "Documentazione dei trattamenti" },
-      { href: { page: "forms" }, label: "Schede di anamnesi digitali" },
+      { href: { page: "forms" }, label: "Scheda anamnestica e consenso informato" },
       { href: { page: "messaging" }, label: "Promemoria appuntamenti" },
-      { href: { page: "software-comparison" }, label: "Confronto software" },
+      { href: { page: "software-comparison" }, label: "Confronto gestionali" },
       { href: { page: "treatflow-vs-treatwell" }, label: "Treatflow vs Treatwell" },
       { href: { page: "treatflow-vs-fresha" }, label: "Treatflow vs Fresha" },
     ],

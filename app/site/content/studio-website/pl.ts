@@ -4,12 +4,12 @@ export const studioWebsitePl: StudioWebsiteContent = {
   meta: {
     title: "Strona internetowa na zamówienie dla salonów kosmetycznych",
     description:
-      "Indywidualna strona internetowa dla Twojego salonu kosmetycznego, studia laserowego lub firmy beauty. Profesjonalna, dopasowana do smartfonów i nastawiona na rezerwacje. Od 1000 euro.",
+      "Strona internetowa szyta na miarę dla Twojego salonu kosmetycznego, gabinetu laserowego lub studia beauty. Profesjonalna, dopasowana do smartfonów i nastawiona na rezerwacje. Od 1000 euro.",
     keywords: [
       "strona internetowa salon kosmetyczny",
       "projektowanie stron salon kosmetyczny",
       "strona www salon urody",
-      "strona internetowa studio laserowe",
+      "strona internetowa gabinet laserowy",
       "strona internetowa stylizacja paznokci",
       "strona internetowa makijaż permanentny",
     ],
@@ -17,7 +17,7 @@ export const studioWebsitePl: StudioWebsiteContent = {
   schema: {
     serviceName: "Indywidualna strona internetowa dla salonów kosmetycznych",
     serviceDescription:
-      "Profesjonalne, indywidualne strony internetowe dla salonów kosmetycznych i firm beauty. Zoptymalizowane pod rezerwacje i pozyskiwanie nowych klientek.",
+      "Profesjonalne, indywidualne strony internetowe dla salonów kosmetycznych i firm beauty. Zoptymalizowane pod rezerwacje i pozyskiwanie nowych klientów.",
     serviceType: "Projektowanie stron internetowych",
     areaServed: ["PL"],
     priceDescription: "Indywidualna strona internetowa od 1000 euro",
@@ -26,33 +26,33 @@ export const studioWebsitePl: StudioWebsiteContent = {
   hero: {
     badge: "Nowa usługa od Treatflow",
     title: { before: "Indywidualne strony internetowe dla", highlight: "salonów kosmetycznych" },
-    lead: "Profesjonalne, nowoczesne i nastawione na rezerwacje. Twoja strona staje się najsilniejszym kanałem pozyskiwania nowych klientek.",
+    lead: "Profesjonalne, nowoczesne i nastawione na rezerwacje. Twoja strona staje się najsilniejszym źródłem nowych klientów.",
     sub: "Nie budujemy po prostu ładnych stron. Budujemy strony, które budzą zaufanie i przynoszą zapytania.",
     primaryCta: "Bezpłatna konsultacja",
     emailCta: "Zapytanie e-mailem",
-    checks: ["Od 1000 euro", "Indywidualny projekt", "Gotowa w 2-4 tygodnie"],
+    checks: ["Od 1000 euro", "Indywidualny projekt", "Gotowa w 2–4 tygodnie"],
   },
   demo: {
     badge: "Zobacz przykład na żywo (po niemiecku)",
     title: "Tak może wyglądać strona Twojego salonu",
-    description: "Przekonaj się sama. Tę przykładową stronę stworzyliśmy dla fikcyjnego salonu premium.",
+    description: "Zobacz na własne oczy. Tę przykładową stronę stworzyliśmy dla fikcyjnego salonu premium.",
     href: "/demo/skin-atelier",
     imageAlt: "Skin Atelier – strona demo Treatflow dla salonów kosmetycznych (po niemiecku)",
     overlayLabel: "Strona demo",
     overlayTitle: "Skin Atelier Monachium",
     hoverCta: "Zobacz demo",
     cardTitle: "Indywidualna strona demo",
-    cardText: "Projekt premium z rezerwacjami, zabiegami, opiniami klientek i nie tylko",
+    cardText: "Projekt premium z rezerwacjami, zabiegami, opiniami klientów i nie tylko",
     cardCta: "Zobacz na żywo",
   },
   why: {
     title: "Dlaczego Twój salon potrzebuje profesjonalnej strony",
     description:
-      "Twoje klientki szukają informacji w internecie, zanim zarezerwują wizytę. Profesjonalna strona to Twoja cyfrowa wizytówka i najskuteczniejsze narzędzie do pozyskiwania nowych klientek.",
+      "Zanim klienci umówią wizytę, szukają informacji w internecie. Profesjonalna strona to Twoja wizytówka w sieci i najskuteczniejsze narzędzie do pozyskiwania nowych klientów.",
     stats: [
-      { value: "97%", label: "szuka w internecie", desc: "Prawie wszystkie klientki sprawdzają salon w Google przed rezerwacją." },
-      { value: "75%", label: "ocenia po stronie", desc: "Jakość Twojej strony wpływa na zaufanie do salonu." },
-      { value: "3x", label: "więcej zapytań", desc: "Salony z profesjonalną stroną otrzymują wyraźnie więcej próśb o rezerwację." },
+      { value: "97%", label: "szuka w internecie", desc: "Prawie wszyscy klienci sprawdzają salon w Google przed rezerwacją." },
+      { value: "75%", label: "ocenia po stronie", desc: "Od jakości Twojej strony zależy zaufanie do salonu." },
+      { value: "3x", label: "więcej zapytań", desc: "Salony z profesjonalną stroną dostają wyraźnie więcej zapytań o wizyty." },
     ],
   },
   services: {
@@ -77,7 +77,7 @@ export const studioWebsitePl: StudioWebsiteContent = {
       {
         icon: "mouse-pointer-click",
         title: "Nastawiona na rezerwacje",
-        desc: "Każda podstrona jest zaprojektowana tak, by zamieniać odwiedzających w zapytania lub rezerwacje.",
+        desc: "Każda podstrona jest zaprojektowana tak, by odwiedzający wysyłali zapytania lub od razu rezerwowali.",
       },
       {
         icon: "calendar-days",
@@ -100,17 +100,17 @@ export const studioWebsitePl: StudioWebsiteContent = {
       "Link do rezerwacji online bezpośrednio na stronie",
       "Zabiegi i ceny na stronie",
       "Możliwa automatyczna aktualizacja",
-      "Płynne doświadczenie klientki od kliknięcia do wizyty",
+      "Płynna ścieżka klienta od kliknięcia do wizyty",
     ],
     boxTitle: "Korzyść dla klientów Treatflow",
-    boxText: "Jako klientka Treatflow przy zamówieniu strony otrzymujesz dodatkowo:",
+    boxText: "Jeśli korzystasz z Treatflow, przy zamówieniu strony otrzymujesz dodatkowo:",
     creditAmount: "200 euro",
     creditLabel: "środków Treatflow w prezencie",
     creditNote: "Do wykorzystania na abonament Treatflow. Dzięki temu oszczędzasz także na oprogramowaniu salonu.",
   },
   pricing: {
     title: "Przejrzyste ceny, bez ukrytych kosztów",
-    description: "Wierzymy w uczciwe, jasne ceny. Bez drobnego druku.",
+    description: "Stawiamy na uczciwe, jasne ceny. Bez gwiazdek i drobnego druku.",
     badge: "Indywidualny projekt strony",
     price: { prefix: "od", amount: "1000", currency: "euro" },
     note: "Jednorazowo. Bez abonamentu za stworzenie strony.",
@@ -146,7 +146,7 @@ export const studioWebsitePl: StudioWebsiteContent = {
       {
         question: "Jak długo trwa stworzenie strony mojego salonu?",
         answer:
-          "Zwykle strona jest gotowa w ciągu 2-4 tygodni. Dokładny czas zależy od zakresu i od tego, jak szybko dostarczysz treści.",
+          "Zwykle strona jest gotowa w ciągu 2–4 tygodni. Dokładny czas zależy od zakresu i od tego, jak szybko dostarczysz treści.",
       },
       {
         question: "Czy muszę mieć gotowe teksty i zdjęcia?",
@@ -161,7 +161,7 @@ export const studioWebsitePl: StudioWebsiteContent = {
       {
         question: "Czy stronę można połączyć z Treatflow?",
         answer:
-          "Oczywiście. Twój link do rezerwacji Treatflow, zabiegi i godziny otwarcia można zintegrować bezpośrednio ze stroną. Dzięki temu nowe klientki rezerwują wizyty prosto z Twojej strony.",
+          "Oczywiście. Twój link do rezerwacji Treatflow, zabiegi i godziny otwarcia można zintegrować bezpośrednio ze stroną. Dzięki temu nowi klienci umawiają się prosto z Twojej strony.",
       },
       {
         question: "Ile kosztuje indywidualna strona?",
@@ -174,7 +174,7 @@ export const studioWebsitePl: StudioWebsiteContent = {
           "Tak, na życzenie przejmujemy również hosting i techniczne utrzymanie Twojej strony. Nie musisz się niczym martwić.",
       },
       {
-        question: "Czy później mogę sama edytować stronę?",
+        question: "Czy później mogę samodzielnie edytować stronę?",
         answer:
           "W zależności od konfiguracji oferujemy rozwiązania, w których proste zmiany, takie jak teksty i zdjęcia, wprowadzasz samodzielnie. Przy większych zmianach pomagamy.",
       },

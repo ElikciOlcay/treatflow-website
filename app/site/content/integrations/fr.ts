@@ -4,7 +4,7 @@ export const integrationsFr: IntegrationsContent = {
   meta: {
     title: "Intégrations et applications pour votre institut de beauté",
     description:
-      "Connectez Treatflow à Google Agenda, Zapier et à des assistants IA comme Claude ou ChatGPT, et encaissez en ligne avec Treatflow Pay – synchronisation de l'agenda, automatisations et paiements sur une seule plateforme.",
+      "Connectez Treatflow à Google Agenda, à Zapier et à des assistants IA comme Claude ou ChatGPT, et encaissez en ligne avec Treatflow Pay – synchronisation de l'agenda, automatisations et paiements sur une seule plateforme.",
     keywords: [
       "intégrations Treatflow",
       "intégrations logiciel institut de beauté",
@@ -13,7 +13,7 @@ export const integrationsFr: IntegrationsContent = {
       "logiciel institut de beauté ChatGPT",
       "Claude MCP logiciel de gestion",
       "paiement en ligne institut de beauté",
-      "synchroniser l'agenda des rendez-vous",
+      "synchroniser son agenda institut",
     ],
   },
   schema: { id: "integrationen" },
@@ -23,7 +23,7 @@ export const integrationsFr: IntegrationsContent = {
     eyebrowIcon: "plug",
     title: { before: "Connectez vos applis, vos ", highlight: "données", after: " restent synchronisées" },
     description:
-      "Google Agenda, Zapier, assistants IA et Treatflow Pay – connectez une fois, tout reste à jour partout.",
+      "Google Agenda, Zapier, assistants IA et Treatflow Pay – une seule connexion, et tout reste à jour partout.",
     chips: ["Google Agenda", "Zapier", "Assistants IA (MCP)", { text: "Treatflow Pay", feature: "pay" }],
     secondaryCta: { label: "Voir l'agenda", href: { page: "appointment-calendar" } },
     tiles: [
@@ -34,8 +34,8 @@ export const integrationsFr: IntegrationsContent = {
     ],
   },
   understand: {
-    title: "En bref : à quoi servent les intégrations",
-    description: "Moins de double saisie – les données circulent entre vos outils.",
+    title: "À quoi servent les intégrations ?",
+    description: "Fini la double saisie – vos données circulent entre vos outils.",
     items: [
       {
         icon: "refresh",
@@ -70,12 +70,12 @@ export const integrationsFr: IntegrationsContent = {
         icon: "calendar",
         title: "Google Agenda",
         text: "Synchronisation bidirectionnelle : Treatflow et Google restent alignés en temps réel.",
-        points: ["Synchronisation bidirectionnelle", "Aucune double réservation", "Vie privée et institut séparés"],
+        points: ["Synchronisation bidirectionnelle", "Aucune double réservation", "Agenda perso et pro séparés"],
       },
       {
         icon: "wallet",
         title: "Treatflow Pay",
-        text: "Acomptes ou paiements complets lors des réservations en ligne – traités en toute sécurité via Stripe.",
+        text: "Acompte ou paiement intégral lors des réservations en ligne – traités en toute sécurité via Stripe.",
         points: ["Acomptes", "Paiement intégral à l'avance", "2,69 % en toute transparence"],
         feature: "pay",
       },
@@ -109,7 +109,7 @@ export const integrationsFr: IntegrationsContent = {
       {
         question: "Puis-je utiliser Treatflow avec ChatGPT ou Claude ?",
         answer:
-          "Oui. Ajoutez Treatflow comme connecteur dans votre assistant IA et connectez-vous avec votre compte Treatflow. Vous pouvez ensuite poser des questions sur les rendez-vous, les créneaux libres, les clients ou le chiffre d'affaires. L'accès est en lecture seule par défaut ; si vous l'autorisez, l'assistant peut aussi créer et déplacer des rendez-vous, chaque modification étant enregistrée. La documentation des soins, les formulaires et les photos ne sont jamais partagés.",
+          "Oui. Ajoutez Treatflow comme connecteur dans votre assistant IA et connectez-vous avec votre compte Treatflow. Vous pouvez ensuite poser des questions sur les rendez-vous, les créneaux libres, les clients ou le chiffre d'affaires. L'accès est en lecture seule par défaut ; si vous l'autorisez, l'assistant peut aussi créer et déplacer des rendez-vous, chaque modification étant enregistrée. Les fiches de soin, les formulaires et les photos ne sont jamais partagés.",
       },
       {
         question: "À quoi sert l'intégration Zapier ?",
@@ -131,8 +131,8 @@ export const integrationsFr: IntegrationsContent = {
   },
   related: {
     items: [
-      { href: { page: "appointment-calendar" }, title: "Agenda des rendez-vous", description: "Tous les rendez-vous au même endroit, toujours synchronisés" },
-      { href: { page: "treatflow-pay" }, title: "Treatflow Pay", description: "Acompte ou paiement complet", feature: "pay" },
+      { href: { page: "appointment-calendar" }, title: "Agenda et planning", description: "Tous les rendez-vous au même endroit, toujours synchronisés" },
+      { href: { page: "treatflow-pay" }, title: "Treatflow Pay", description: "Acompte ou paiement intégral", feature: "pay" },
       { href: { page: "online-booking" }, title: "Réservation en ligne", description: "Réservation 24 h/24 avec paiement" },
       { href: { page: "messaging" }, title: "Rappels", description: "Confirmations et rappels automatiques" },
     ],

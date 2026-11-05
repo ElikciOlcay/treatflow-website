@@ -18,7 +18,7 @@ export const pricingEn: PricingPageContent = {
   capsule: {
     question: "How much does Treatflow cost?",
     answer:
-      "Basic from €39/month (client records, forms, documentation), Booking from €59/month (incl. appointment calendar, online booking, reminders). No commission per booking, 14-day free trial.",
+      "Basic from €39/month (client records, consultation forms, treatment records), Booking from €59/month (incl. appointment calendar, online booking, reminders). No commission per booking, 14-day free trial.",
   },
   schema: {
     webPage: {
@@ -33,7 +33,7 @@ export const pricingEn: PricingPageContent = {
   },
   comparison: {
     title: "What's included?",
-    subtitle: "Compare both plans in detail and find the right fit for your studio.",
+    subtitle: "Compare both plans in detail and find the right fit for your salon.",
     vatNote: "All prices exclude VAT.",
     featureLabel: "Feature",
     basicLabel: "Basic (€39)",
@@ -41,7 +41,7 @@ export const pricingEn: PricingPageContent = {
     rows: [
       { label: "Client management", basic: true, booking: true },
       { label: "Forms with digital signature", basic: true, booking: true },
-      { label: "Treatment documentation incl. voice notes", basic: true, booking: true },
+      { label: "Treatment records incl. voice dictation", basic: true, booking: true },
       { label: "Before-and-after photos", basic: true, booking: true },
       { label: "Team notes and tasks", basic: true, booking: true },
       { label: "Shop and products", basic: true, booking: true },
@@ -62,12 +62,12 @@ export const pricingEn: PricingPageContent = {
   },
   why: {
     title: "Why Treatflow?",
-    subtitle: "Transparent fixed prices instead of hidden fees and commissions.",
+    subtitle: "Fixed, transparent prices – no hidden fees, no commission.",
     stats: [
       { value: "0%", label: "Commission per booking" },
       { value: "€0", label: "Setup fees" },
       { value: "14 days", label: "free trial" },
-      { value: "Anytime", label: "cancel" },
+      { value: "Cancel", label: "anytime" },
     ],
   },
   faq: {
@@ -77,7 +77,7 @@ export const pricingEn: PricingPageContent = {
       {
         question: "How much does Treatflow cost?",
         answer:
-          "Treatflow comes in two plans: Basic from €39/month for client management, forms and documentation. Booking from €59/month adds the appointment calendar, online booking and automatic reminders. Both plans can be tested free for 14 days.",
+          "Treatflow comes in two plans: Basic from €39/month for client management, forms and treatment records. Booking from €59/month adds the appointment calendar, online booking and automatic reminders. You can try both plans free for 14 days.",
       },
       {
         question: "Are there hidden fees?",
@@ -87,7 +87,7 @@ export const pricingEn: PricingPageContent = {
       {
         question: "Can I cancel anytime?",
         answer:
-          "Yes. With monthly billing you can cancel at any time, effective at the end of the billing period. There is no minimum contract term.",
+          "Yes. On monthly billing you can cancel at any time, effective from the end of the billing period. There's no minimum term.",
       },
       {
         question: "Is there free salon software?",
@@ -97,7 +97,7 @@ export const pricingEn: PricingPageContent = {
       {
         question: "Is the Booking plan worth it?",
         answer:
-          "If you need online booking, automatic email appointment reminders and a digital appointment calendar, yes. With the Booking plan you have significantly fewer no-shows and less time on the phone.",
+          "If you need online booking, automatic email appointment reminders and a digital appointment calendar, yes. With the Booking plan you'll see significantly fewer no-shows and spend less time on the phone.",
       },
     ],
   },

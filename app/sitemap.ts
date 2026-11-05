@@ -54,12 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly' as const,
             priority: 0.8,
         },
-        {
-            url: `${baseUrl}/funktionen-live-testen`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.7,
-        },
+        internationalEntry('/funktionen-live-testen', 'try-features', 0.7),
         internationalEntry('/formulare-testen', 'try-forms', 0.8),
         ...DEMO_FORMS.map((form) => ({
             url: `${baseUrl}/formulare-testen/${form.slug}`,
@@ -446,6 +441,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { key: 'client-records', priority: 0.9 },
         { key: 'forms', priority: 0.8 },
         { key: 'try-forms', priority: 0.8 },
+        { key: 'try-features', priority: 0.7 },
         { key: 'treatment-documentation', priority: 0.8 },
         { key: 'vouchers', priority: 0.8 },
         { key: 'messaging', priority: 0.8 },

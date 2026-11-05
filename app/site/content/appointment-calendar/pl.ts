@@ -4,11 +4,12 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
   meta: {
     title: "Kalendarz wizyt dla salonu kosmetycznego: zespół i gabinety",
     description:
-      "Program do umawiania wizyt dla salonów kosmetycznych i gabinetów medycyny estetycznej: kalendarz z kolumnami dla pracowników i gabinetów, rezerwacje online, przeciąganie i upuszczanie oraz automatyczne przypomnienia e-mail. Bez prowizji, 14 dni za darmo.",
+      "Kalendarz wizyt i grafik dla salonów kosmetycznych i gabinetów medycyny estetycznej: kolumny dla pracowników i gabinetów, rezerwacje online, przesuwanie wizyt myszką oraz automatyczne przypomnienia e-mail. Bez prowizji, 14 dni za darmo.",
     keywords: [
       "kalendarz wizyt salon kosmetyczny",
       "program do umawiania wizyt salon",
-      "grafik wizyt spa",
+      "grafik salonu kosmetycznego",
+      "terminarz wizyt online",
       "kalendarz rezerwacji salon kosmetyczny",
       "planowanie pracowników i gabinetów",
       "program do umawiania wizyt gabinet medycyny estetycznej",
@@ -44,10 +45,10 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
   hero: {
     eyebrow: "Planowanie i kalendarz wizyt",
     eyebrowIcon: "calendar",
-    title: { before: "Kalendarz wizyt dla Twojego salonu – dla zespołu i ", highlight: "gabinetów" },
+    title: { before: "Kalendarz wizyt dla całego zespołu i wszystkich ", highlight: "gabinetów" },
     description:
-      "Narzędzie do planowania wizyt w Twoim salonie kosmetycznym: pracownicy, gabinety i wizyty w jednym widoku, z rezerwacjami online. Przesuwaj wizyty metodą przeciągnij i upuść i unikaj podwójnych rezerwacji.",
-    chips: ["Przeciągnij i upuść", "Zespół i gabinety", "Mniej nieobecności"],
+      "Grafik całego salonu w jednym widoku: pracownicy, gabinety i wizyty, a do tego rezerwacje online. Wizyty przesuwasz jednym ruchem, a podwójne rezerwacje po prostu się nie zdarzają.",
+    chips: ["Przeciągnij i upuść", "Zespół i gabinety", "Mniej nieodwołanych wizyt"],
     secondaryCta: { label: "Rezerwacje online", href: { page: "online-booking" } },
     capsules: [
       {
@@ -83,7 +84,7 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
       {
         icon: "bell",
         title: "Automatyczne przypomnienia",
-        text: "Twoi klienci dostają przed wizytą przypomnienie e-mail. Dzięki temu wyraźnie mniej wizyt zostaje zapomnianych.",
+        text: "Przed wizytą klienci dostają przypomnienie e-mail. Dzięki temu znacznie rzadziej zapominają o terminie.",
       },
     ],
   },
@@ -91,8 +92,8 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
     description: "Trzy kroki do sprawnie działającego grafiku salonu.",
     steps: [
       { title: "Skonfiguruj zespół, usługi i gabinety", text: "Dodaj pracowników, zabiegi i gabinety wraz z godzinami pracy. Kalendarz pokaże wtedy osobną kolumnę dla każdego z nich." },
-      { title: "Dodawaj wizyty", text: "Wpisuj wizyty samodzielnie lub włącz rezerwacje online – rezerwacje Twoich klientów pojawią się wtedy w kalendarzu automatycznie." },
-      { title: "Przypomnienia wysyłają się same", text: "Twoi klienci otrzymują e-mailem potwierdzenie rezerwacji i przypomnienie – niczego nie musisz wysyłać ręcznie." },
+      { title: "Dodawaj wizyty", text: "Wpisuj wizyty samodzielnie lub włącz rezerwacje online – wtedy wizyty umówione przez klientów same pojawią się w kalendarzu." },
+      { title: "Przypomnienia wysyłają się same", text: "Klienci dostają e-mailem potwierdzenie rezerwacji i przypomnienie – niczego nie wysyłasz ręcznie." },
     ],
   },
   cards: {
@@ -100,11 +101,11 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
     description: "Wszystko do planowania wizyt w salonie – zespół, gabinety i przypomnienia w jednym kalendarzu.",
     items: [
       { icon: "users", title: "Zespół i gabinety", text: "Osobna kolumna dla każdej osoby z zespołu lub gabinetu. Obłożenie i wolne terminy na pierwszy rzut oka.", points: ["Widok kolumnowy", "Wolne terminy od razu widoczne", "Bez podwójnych rezerwacji"] },
-      { icon: "move", title: "Przeciągnij i upuść", text: "Przesuwaj, wydłużaj lub zamieniaj wizyty – bez formularzy i bez chaosu.", points: ["Zmiana terminu w kilka sekund", "Od razu w kalendarzu", "Dla całego zespołu"] },
+      { icon: "move", title: "Przeciągnij i upuść", text: "Przesuwaj, wydłużaj lub zamieniaj wizyty – bez wypełniania formularzy i bez chaosu.", points: ["Zmiana terminu w kilka sekund", "Od razu w kalendarzu", "Dla całego zespołu"] },
       { icon: "layout-grid", title: "Od widoku dnia po miesiąc", text: "Przełączaj się między dniem, tygodniem i miesiącem – zależnie od tego, czego akurat potrzebujesz.", points: ["Widok dnia", "Tydzień", "Miesiąc"] },
-      { icon: "bell", title: "Automatyczne przypomnienia", text: "Przypomnienia e-mail przed każdą wizytą. Mniej nieobecności, mniej telefonów z przypomnieniem.", points: ["Przypomnienia e-mail", "Elastyczny termin wysyłki", "Link do odwołania wizyty"] },
+      { icon: "bell", title: "Automatyczne przypomnienia", text: "Przypomnienie e-mail przed każdą wizytą. Mniej nieodwołanych wizyt i mniej obdzwaniania klientów.", points: ["Przypomnienia e-mail", "Elastyczny termin wysyłki", "Link do odwołania wizyty"] },
       { icon: "calendar", title: "Rezerwacje online", text: "Rezerwacje trafiają prosto do kalendarza. Bez podwójnych rezerwacji, z automatycznym potwierdzeniem.", points: ["Własny link do rezerwacji", "Od razu w kalendarzu", "Bez prowizji"] },
-      { icon: "clock", title: "Mniej pracy administracyjnej", text: "Mniej telefonów, jaśniejsze procesy – więcej czasu na zabiegi zamiast na grafik.", points: ["Mniej telefonów", "Przejrzyste terminy", "Szybki podgląd"] },
+      { icon: "clock", title: "Mniej pracy administracyjnej", text: "Mniej telefonów, prostsza organizacja – więcej czasu na zabiegi, a mniej na układanie grafiku.", points: ["Mniej telefonów", "Przejrzyste terminy", "Szybki podgląd"] },
     ],
   },
   faq: {
@@ -113,17 +114,17 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
       {
         question: "Jak najlepiej organizować wizyty w salonie kosmetycznym?",
         answer:
-          "Najskuteczniej sprawdza się wyspecjalizowane narzędzie do planowania wizyt, takie jak Treatflow. Dzięki rezerwacjom online klienci mogą umawiać się 24/7, automatyczne przypomnienia e-mail wyraźnie ograniczają nieobecności, a przejrzysty kalendarz daje Ci pełny obraz sytuacji w każdej chwili.",
+          "Najlepiej sprawdza się program stworzony do umawiania wizyt, taki jak Treatflow. Dzięki rezerwacjom online klienci umawiają się 24/7, automatyczne przypomnienia e-mail wyraźnie ograniczają nieodwołane wizyty, a przejrzysty kalendarz w każdej chwili pokazuje Ci pełny obraz dnia.",
       },
       {
         question: "Ile kosztuje program do umawiania wizyt dla salonu kosmetycznego?",
         answer:
-          "Treatflow oferuje planowanie wizyt z rezerwacjami online od 59 €/miesiąc w planie Booking (53 €/miesiąc przy płatności rocznej, netto bez VAT). Możesz go wypróbować za darmo przez 14 dni, bez karty kredytowej. Nie ma ukrytych kosztów ani prowizji od rezerwacji.",
+          "Treatflow oferuje planowanie wizyt z rezerwacjami online od 59 €/miesiąc w planie Booking (53 €/miesiąc przy płatności rocznej, netto + VAT). Możesz go wypróbować za darmo przez 14 dni, bez podawania karty. Nie ma ukrytych kosztów ani prowizji od rezerwacji.",
       },
       {
         question: "Czy istnieje darmowy program do umawiania wizyt dla salonu kosmetycznego?",
         answer:
-          "Darmowe programy istnieją – zwykle z ograniczeniami, reklamami lub prowizją od każdej rezerwacji w modelu marketplace. Papierowy kalendarz czy arkusz kalkulacyjny nic nie kosztują, ale nie przyjmą rezerwacji online, nie wyślą przypomnień i nie połączą się z kartoteką klientów. Treatflow możesz wypróbować za darmo przez 14 dni bez karty kredytowej; potem kalendarz z rezerwacjami online kosztuje 59 €/miesiąc, bez prowizji od wizyt.",
+          "Darmowe programy istnieją – zwykle z ograniczeniami, reklamami lub prowizją od każdej rezerwacji w modelu marketplace. Papierowy kalendarz czy arkusz kalkulacyjny nic nie kosztują, ale nie przyjmą rezerwacji online, nie wyślą przypomnień i nie połączą się z kartoteką klientów. Treatflow możesz wypróbować za darmo przez 14 dni bez podawania karty; potem kalendarz z rezerwacjami online kosztuje 59 €/miesiąc, bez prowizji od wizyt.",
       },
       {
         question: "Terminarz, kalendarz czy system rezerwacji – czym się różnią?",
@@ -136,9 +137,9 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
           "Tak. Otrzymujesz własny link do rezerwacji, który możesz udostępnić na swojej stronie, na Instagramie lub w wiadomościach. Klienci wybierają zabiegi i terminy o każdej porze. Nowe rezerwacje od razu pojawiają się w kalendarzu, a potwierdzenia wysyłane są automatycznie e-mailem.",
       },
       {
-        question: "Jak ograniczyć nieobecności klientów w salonie?",
+        question: "Jak ograniczyć nieodwołane wizyty (no-show) w salonie?",
         answer:
-          "Automatyczne przypomnienia e-mail to najskuteczniejszy sposób na ograniczenie nieodwołanych wizyt. Treatflow wysyła przypomnienia w wybranym przez Ciebie czasie przed wizytą, dzięki czemu znacznie mniej klientów zapomina o terminie.",
+          "Najskuteczniejszym sposobem są automatyczne przypomnienia e-mail. Treatflow wysyła je w wybranym przez Ciebie czasie przed wizytą, dzięki czemu znacznie mniej klientów zapomina o terminie.",
       },
       {
         question: "Jakie funkcje powinien mieć kalendarz wizyt dla salonu?",
@@ -148,7 +149,7 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
       {
         question: "Jak zaplanować pracę kilku osób z zespołu i kilku gabinetów?",
         answer:
-          "Widok dnia w Treatflow pokazuje pracowników lub gabinety w osobnych kolumnach. Widzisz wolne terminy, unikasz podwójnych rezerwacji i łatwiej koordynujesz zmiany w ostatniej chwili.",
+          "Widok dnia w Treatflow pokazuje pracowników lub gabinety w osobnych kolumnach. Widzisz wolne terminy, unikasz podwójnych rezerwacji i łatwiej ogarniasz zmiany w ostatniej chwili.",
       },
       {
         question: "Jak uniknąć podwójnych rezerwacji pracowników i gabinetów?",
@@ -166,12 +167,12 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
     items: [
       { href: { page: "online-booking" }, title: "Rezerwacje online", description: "24/7 przez Twój link do rezerwacji" },
       { href: { page: "messaging" }, title: "Przypomnienia", description: "Automatyczne przypomnienia e-mail" },
-      { href: { page: "client-records" }, title: "Kartoteka klientów", description: "Profil klienta prosto z wizyty" },
+      { href: { page: "client-records" }, title: "Kartoteka klientów", description: "Karta klienta otwierana prosto z wizyty" },
     ],
   },
   cta: {
     title: "Czas na planowanie wizyt bez stresu?",
-    description: "Wypróbuj za darmo przez 14 dni – bez karty kredytowej. Kalendarz, planowanie zespołu i rezerwacje online w jednej aplikacji.",
+    description: "Wypróbuj 14 dni za darmo – bez podawania karty. Kalendarz, grafik zespołu i rezerwacje online w jednej aplikacji.",
     secondary: { label: "Rezerwacje online", href: { page: "online-booking" } },
   },
 };
