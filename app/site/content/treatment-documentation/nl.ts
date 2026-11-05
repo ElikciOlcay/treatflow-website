@@ -44,7 +44,7 @@ export const treatmentDocumentationNl: TreatmentDocumentationContent = {
       },
     ],
     image: {
-      src: "/images/mockups/dokumentation-hero.png",
+      src: "/images/mockups/nl/dokumentation-hero.png",
       alt: "Behandelverslag in Treatflow met foto's en notities",
     },
   },

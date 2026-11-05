@@ -63,7 +63,7 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kalender-overview.png",
+      src: "/images/mockups/pl/kalender-overview.png",
       alt: "Kalendarz wizyt Treatflow – widok dnia z pracownikami i gabinetami",
     },
   },

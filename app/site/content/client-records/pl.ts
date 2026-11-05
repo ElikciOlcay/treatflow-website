@@ -46,7 +46,7 @@ export const clientRecordsPl: ClientRecordsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kundenverwaltung-overview.png",
+      src: "/images/mockups/pl/kundenverwaltung-overview.png",
       alt: "Kartoteka klientów Treatflow – przegląd z wyszukiwarką i widokiem szczegółów",
     },
   },

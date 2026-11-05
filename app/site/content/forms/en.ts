@@ -39,7 +39,7 @@ export const formsEn: FormsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/formulare-marketplace.png",
+      src: "/images/mockups/en/formulare-marketplace.png",
       alt: "Treatflow forms marketplace with templates and AI generator",
     },
   },

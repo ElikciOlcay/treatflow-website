@@ -22,7 +22,7 @@ export const shopIt: ShopContent = {
     chips: ["Magazzino sotto controllo", "Storico vendite", "Prodotti illimitati"],
     secondaryCta: { label: "Schede clienti", href: { page: "client-records" } },
     image: {
-      src: "/images/mockups/shop-hero.png",
+      src: "/images/mockups/it/shop-hero.png",
       alt: "Vendita prodotti e gestione del magazzino con Treatflow",
     },
   },

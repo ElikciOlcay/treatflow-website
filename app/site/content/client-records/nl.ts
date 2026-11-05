@@ -45,7 +45,7 @@ export const clientRecordsNl: ClientRecordsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kundenverwaltung-overview.png",
+      src: "/images/mockups/nl/kundenverwaltung-overview.png",
       alt: "Klantdossiers in Treatflow – overzicht met zoekfunctie en klantdetails",
     },
   },

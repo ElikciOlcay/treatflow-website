@@ -62,7 +62,7 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kalender-overview.png",
+      src: "/images/mockups/en/kalender-overview.png",
       alt: "Treatflow appointment calendar – day view with staff and rooms",
     },
   },

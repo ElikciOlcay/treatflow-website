@@ -46,7 +46,7 @@ export const clientRecordsTr: ClientRecordsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kundenverwaltung-overview.png",
+      src: "/images/mockups/tr/kundenverwaltung-overview.png",
       alt: "Treatflow müşteri takibi – arama ve detay görünümüyle genel bakış",
     },
   },

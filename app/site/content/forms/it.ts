@@ -41,7 +41,7 @@ export const formsIt: FormsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/formulare-marketplace.png",
+      src: "/images/mockups/it/formulare-marketplace.png",
       alt: "Marketplace dei moduli Treatflow con modelli e generatore IA",
     },
   },

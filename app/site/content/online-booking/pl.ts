@@ -43,7 +43,7 @@ export const onlineBookingPl: OnlineBookingContent = {
       },
     ],
     image: {
-      src: "/images/mockups/online-buchung-hero.png",
+      src: "/images/mockups/pl/online-buchung-hero.png",
       alt: "System rezerwacji online Treatflow – własny link do rezerwacji",
     },
   },

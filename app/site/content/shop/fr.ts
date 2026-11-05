@@ -23,7 +23,7 @@ export const shopFr: ShopContent = {
     chips: ["Stock en vue", "Historique des ventes", "Produits illimités"],
     secondaryCta: { label: "Fiches clients", href: { page: "client-records" } },
     image: {
-      src: "/images/mockups/shop-hero.png",
+      src: "/images/mockups/fr/shop-hero.png",
       alt: "Vente de produits et gestion du stock avec Treatflow",
     },
   },

@@ -46,7 +46,7 @@ export const treatmentDocumentationPl: TreatmentDocumentationContent = {
       },
     ],
     image: {
-      src: "/images/mockups/dokumentation-hero.png",
+      src: "/images/mockups/pl/dokumentation-hero.png",
       alt: "Dokumentacja zabiegów w Treatflow ze zdjęciami i notatkami",
     },
   },

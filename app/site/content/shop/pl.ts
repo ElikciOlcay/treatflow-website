@@ -22,7 +22,7 @@ export const shopPl: ShopContent = {
     chips: ["Magazyn pod kontrolą", "Historia sprzedaży", "Bez limitu produktów"],
     secondaryCta: { label: "Kartoteka klientów", href: { page: "client-records" } },
     image: {
-      src: "/images/mockups/shop-hero.png",
+      src: "/images/mockups/pl/shop-hero.png",
       alt: "Sprzedaż produktów i zarządzanie magazynem w Treatflow",
     },
   },

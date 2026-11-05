@@ -40,7 +40,7 @@ export const formsNl: FormsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/formulare-marketplace.png",
+      src: "/images/mockups/nl/formulare-marketplace.png",
       alt: "Formulieren-Marketplace in Treatflow met sjablonen en AI-generator",
     },
   },

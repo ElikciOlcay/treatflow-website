@@ -63,7 +63,7 @@ export const appointmentCalendarIt: AppointmentCalendarContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kalender-overview.png",
+      src: "/images/mockups/it/kalender-overview.png",
       alt: "Agenda appuntamenti Treatflow: vista giornaliera con operatori e cabine",
     },
   },

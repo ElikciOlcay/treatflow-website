@@ -63,7 +63,7 @@ export const appointmentCalendarNl: AppointmentCalendarContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kalender-overview.png",
+      src: "/images/mockups/nl/kalender-overview.png",
       alt: "Online agenda van Treatflow – dagoverzicht met medewerkers en ruimtes",
     },
   },

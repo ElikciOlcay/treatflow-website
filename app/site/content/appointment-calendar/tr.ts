@@ -63,7 +63,7 @@ export const appointmentCalendarTr: AppointmentCalendarContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kalender-overview.png",
+      src: "/images/mockups/tr/kalender-overview.png",
       alt: "Treatflow randevu takvimi – personel ve odalarla günlük görünüm",
     },
   },

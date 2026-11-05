@@ -328,7 +328,7 @@ export const beautySalonPage: TrMoneyPageContent = {
       caption: "Müşteri müsait saati görür, siz doluluğu kontrol edersiniz.",
     },
     {
-      src: "/images/mockups/kundenverwaltung-overview.png",
+      src: "/images/mockups/tr/kundenverwaltung-overview.png",
       alt: "Treatflow güzellik salonu müşteri listesi",
       caption: "Arama: isim, telefon, son işlem.",
     },
@@ -582,7 +582,7 @@ export const crmPage: TrMoneyPageContent = {
   ],
   screenshots: [
     {
-      src: "/images/mockups/kundenverwaltung-overview.png",
+      src: "/images/mockups/tr/kundenverwaltung-overview.png",
       alt: "Treatflow müşteri takip listesi",
       caption: "Liste ve arama. Satış hunisi görünümü yoktur; odak müşteri geçmişidir.",
     },

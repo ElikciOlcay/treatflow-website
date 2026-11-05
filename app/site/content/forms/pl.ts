@@ -41,7 +41,7 @@ export const formsPl: FormsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/formulare-marketplace.png",
+      src: "/images/mockups/pl/formulare-marketplace.png",
       alt: "Biblioteka formularzy Treatflow z szablonami i generatorem AI",
     },
   },

@@ -62,7 +62,7 @@ export const appointmentCalendarFr: AppointmentCalendarContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kalender-overview.png",
+      src: "/images/mockups/fr/kalender-overview.png",
       alt: "Agenda Treatflow – vue jour avec collaborateurs et cabines",
     },
   },

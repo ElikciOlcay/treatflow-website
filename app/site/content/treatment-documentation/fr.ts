@@ -45,7 +45,7 @@ export const treatmentDocumentationFr: TreatmentDocumentationContent = {
       },
     ],
     image: {
-      src: "/images/mockups/dokumentation-hero.png",
+      src: "/images/mockups/fr/dokumentation-hero.png",
       alt: "Suivi des soins Treatflow : fiche de soin avec photos et notes",
     },
   },

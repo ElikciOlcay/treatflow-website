@@ -45,7 +45,7 @@ export const clientRecordsEn: ClientRecordsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kundenverwaltung-overview.png",
+      src: "/images/mockups/en/kundenverwaltung-overview.png",
       alt: "Treatflow client records – overview with search and detail view",
     },
   },

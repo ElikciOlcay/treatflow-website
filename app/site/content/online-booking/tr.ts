@@ -41,7 +41,7 @@ export const onlineBookingTr: OnlineBookingContent = {
       },
     ],
     image: {
-      src: "/images/mockups/online-buchung-hero.png",
+      src: "/images/mockups/tr/online-buchung-hero.png",
       alt: "Treatflow online randevu sistemi – salona özel randevu bağlantısı",
     },
   },

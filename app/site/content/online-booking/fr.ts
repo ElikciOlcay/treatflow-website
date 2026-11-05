@@ -41,7 +41,7 @@ export const onlineBookingFr: OnlineBookingContent = {
       },
     ],
     image: {
-      src: "/images/mockups/online-buchung-hero.png",
+      src: "/images/mockups/fr/online-buchung-hero.png",
       alt: "Réservation en ligne Treatflow – lien de réservation personnel",
     },
   },

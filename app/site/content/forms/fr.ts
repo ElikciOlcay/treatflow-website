@@ -40,7 +40,7 @@ export const formsFr: FormsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/formulare-marketplace.png",
+      src: "/images/mockups/fr/formulare-marketplace.png",
       alt: "Bibliothèque de formulaires Treatflow avec modèles et générateur IA",
     },
   },

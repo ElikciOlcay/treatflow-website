@@ -41,7 +41,7 @@ export const onlineBookingNl: OnlineBookingContent = {
       },
     ],
     image: {
-      src: "/images/mockups/online-buchung-hero.png",
+      src: "/images/mockups/nl/online-buchung-hero.png",
       alt: "Online boekingssysteem van Treatflow – eigen boekingslink",
     },
   },

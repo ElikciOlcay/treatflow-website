@@ -22,7 +22,7 @@ export const shopTr: ShopContent = {
     chips: ["Stok takibi", "Satış geçmişi", "Sınırsız ürün"],
     secondaryCta: { label: "Müşteri takibi", href: { page: "client-records" } },
     image: {
-      src: "/images/mockups/shop-hero.png",
+      src: "/images/mockups/tr/shop-hero.png",
       alt: "Treatflow ürün satışı ve stok yönetimi",
     },
   },

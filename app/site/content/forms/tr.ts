@@ -40,7 +40,7 @@ export const formsTr: FormsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/formulare-marketplace.png",
+      src: "/images/mockups/tr/formulare-marketplace.png",
       alt: "Hazır şablonlar ve yapay zekâ oluşturucuyla Treatflow form kütüphanesi",
     },
   },

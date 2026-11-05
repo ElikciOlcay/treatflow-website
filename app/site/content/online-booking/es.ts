@@ -41,7 +41,7 @@ export const onlineBookingEs: OnlineBookingContent = {
       },
     ],
     image: {
-      src: "/images/mockups/online-buchung-hero.png",
+      src: "/images/mockups/es/online-buchung-hero.png",
       alt: "Sistema de reservas online de Treatflow: tu propio enlace de reservas",
     },
   },

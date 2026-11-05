@@ -41,7 +41,7 @@ export const onlineBookingEn: OnlineBookingContent = {
       },
     ],
     image: {
-      src: "/images/mockups/online-buchung-hero.png",
+      src: "/images/mockups/en/online-buchung-hero.png",
       alt: "Treatflow online booking system – personal booking link",
     },
   },

@@ -22,7 +22,7 @@ export const shopNl: ShopContent = {
     chips: ["Voorraad in beeld", "Verkoophistorie", "Onbeperkt aantal producten"],
     secondaryCta: { label: "Klantdossiers", href: { page: "client-records" } },
     image: {
-      src: "/images/mockups/shop-hero.png",
+      src: "/images/mockups/nl/shop-hero.png",
       alt: "Treatflow productverkoop en voorraadbeheer",
     },
   },
