@@ -87,7 +87,7 @@ export default function TrMoneyPage({ content }: { content: TrMoneyPageContent }
       offers: {
         price: "0",
         priceCurrency: "TRY",
-        description: "30 gün ücretsiz deneme, kredi kartı gerekmez",
+        description: "14 gün ücretsiz deneme, kredi kartı gerekmez",
       },
       aggregateRating: {
         ratingValue: "4.6",
@@ -148,7 +148,7 @@ export default function TrMoneyPage({ content }: { content: TrMoneyPageContent }
                 </Link>
               </div>
               <p className="text-sm text-gray-500 mt-4">
-                30 gün ücretsiz. Kredi kartı gerekmez. Randevu komisyonu yok.
+                14 gün ücretsiz. Kredi kartı gerekmez. Randevu komisyonu yok.
               </p>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-gray-100">
@@ -343,7 +343,7 @@ export default function TrMoneyPage({ content }: { content: TrMoneyPageContent }
 
       <section className="py-16 bg-indigo-600">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">30 gün ücretsiz deneyin</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">14 gün ücretsiz deneyin</h2>
           <p className="text-indigo-100 mb-8">
             Kredi kartı gerekmez. Veri aktarımında yardımcı oluruz. Taahhüt yok.
           </p>

@@ -208,7 +208,7 @@ export const posts: BlogArticle[] = [
     title: "Salon Yazılımı Nasıl Seçilir? İhtiyaç Analizinden 30 Günlük Denemeye Karar Planı",
     metaTitle: "Salon Yazılımı Nasıl Seçilir? Adım Adım Karar Planı",
     description:
-      "Salon yazılımı seçerken özellik listesi yetmez. İhtiyaç analizi, puanlama tablosu, 30 günlük deneme planı ve veri taşıma adımlarıyla doğru kararı verin.",
+      "Salon yazılımı seçerken özellik listesi yetmez. İhtiyaç analizi, puanlama tablosu, 14 günlük deneme planı ve veri taşıma adımlarıyla doğru kararı verin.",
     excerpt:
       "Özellik listeleri birbirine benzer; farkı, yazılımı kendi salonunuzda nasıl test ettiğiniz belirler. Bu rehber seçim sürecini baştan sona bir karar planına dönüştürüyor.",
     category: "Yazılım",
@@ -303,9 +303,9 @@ export const posts: BlogArticle[] = [
         },
       },
       {
-        heading: "30 günlük deneme süresi nasıl verimli kullanılır?",
+        heading: "14 günlük deneme süresi nasıl verimli kullanılır?",
         paragraphs: [
-          "Deneme süresini “bir ara bakarım” diye geçirmek en sık yapılan hatadır. Süreyi haftalara bölün ve her hafta için net bir hedef koyun. Treatflow Türkiye'de 30 gün ücretsiz deneme sunar ve kredi kartı istemez; bu süre aşağıdaki planı uygulamak için yeterlidir.",
+          "Deneme süresini “bir ara bakarım” diye geçirmek en sık yapılan hatadır. Süreyi haftalara bölün ve her hafta için net bir hedef koyun. Treatflow Türkiye'de 14 gün ücretsiz deneme sunar ve kredi kartı istemez; bu süre aşağıdaki planı uygulamak için yeterlidir.",
         ],
         steps: [
           "1. hafta – Kurulum: Hizmetleri süre ve fiyatlarıyla girin, personel ve çalışma saatlerini tanımlayın, bir anamnez formu hazırlayın.",
@@ -386,7 +386,7 @@ export const posts: BlogArticle[] = [
     related: [
       { pageKey: "beauty-salon-software", label: "Güzellik salonu programı" },
       { pageKey: "features", label: "Tüm özellikler" },
-      { pageKey: "pricing", label: "Fiyatlar ve 30 gün ücretsiz deneme" },
+      { pageKey: "pricing", label: "Fiyatlar ve 14 gün ücretsiz deneme" },
       { pageKey: "software-comparison", label: "Salon yazılımı karşılaştırması" },
     ],
   },
@@ -887,7 +887,7 @@ export const posts: BlogArticle[] = [
       {
         heading: "Müşteri verilerinin silinmesini isterse ne yapılmalı?",
         paragraphs: [
-          "KVKK'nın 11. maddesi müşteriye verilerinin işlenip işlenmediğini öğrenme, düzeltilmesini ve şartları oluştuğunda silinmesini isteme gibi haklar tanır. Başvurular en geç 30 gün içinde ücretsiz olarak yanıtlanmalıdır (işlemin ayrıca bir maliyet gerektirdiği durumlar hariç).",
+          "KVKK'nın 11. maddesi müşteriye verilerinin işlenip işlenmediğini öğrenme, düzeltilmesini ve şartları oluştuğunda silinmesini isteme gibi haklar tanır. Başvurular en geç 14 gün içinde ücretsiz olarak yanıtlanmalıdır (işlemin ayrıca bir maliyet gerektirdiği durumlar hariç).",
           "Silme talebinde, saklamanızı gerektiren yasal bir yükümlülük olup olmadığını değerlendirin (ör. fatura kayıtları). Bunun dışında kalan veriler silinmeli veya anonim hâle getirilmelidir. Bir kişisel veri saklama ve imha politikası hazırlamak bu kararları kolaylaştırır.",
         ],
       },
@@ -1266,7 +1266,7 @@ export const posts: BlogArticle[] = [
           "Web sitesinde, online randevu sayfasında, Instagram'da ve salonda aynı fiyatları kullanın.",
         ],
         callout:
-          "Online randevuda her hizmetin kendi süresi ve fiyatı vardır; müşteri onaylamadan önce ne aldığını görür. Treatflow'da randevu sayfası size ait bir bağlantıda çalışır, randevu başına komisyon alınmaz ve onay ile hatırlatmalar WhatsApp ve e-posta ile gider. 30 gün ücretsiz deneyebilirsiniz, kredi kartı gerekmez.",
+          "Online randevuda her hizmetin kendi süresi ve fiyatı vardır; müşteri onaylamadan önce ne aldığını görür. Treatflow'da randevu sayfası size ait bir bağlantıda çalışır, randevu başına komisyon alınmaz ve onay ile hatırlatmalar WhatsApp ve e-posta ile gider. 14 gün ücretsiz deneyebilirsiniz, kredi kartı gerekmez.",
       },
       {
         heading: "Fiyatlar ne zaman ve nasıl artırılmalı?",
@@ -1319,7 +1319,7 @@ export const posts: BlogArticle[] = [
       },
     ],
     related: [
-      { pageKey: "pricing", label: "Fiyatlar ve 30 gün ücretsiz deneme" },
+      { pageKey: "pricing", label: "Fiyatlar ve 14 gün ücretsiz deneme" },
       { pageKey: "client-records", label: "Müşteri takip programı" },
       { pageKey: "features", label: "Tüm özellikler" },
     ],

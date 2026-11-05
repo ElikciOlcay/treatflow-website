@@ -133,7 +133,7 @@ export const messagingTr: MessagingContent = {
   },
   cta: {
     title: "Otomatik müşteri iletişimine hazır mısınız?",
-    description: "30 gün ücretsiz deneyin – hatırlatmalar, takip mesajları ve doğum günü mesajları ek iş yükü olmadan.",
+    description: "14 gün ücretsiz deneyin – hatırlatmalar, takip mesajları ve doğum günü mesajları ek iş yükü olmadan.",
     secondary: { label: "Takvimi görün", href: { page: "appointment-calendar" } },
   },
 };

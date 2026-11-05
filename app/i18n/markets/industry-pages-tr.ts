@@ -56,16 +56,16 @@ const featureLabels: Record<FeatureSlugKey, string> = {
 const localeShell = {
   marketLabel: "Türkiye",
   areaServed: ["TR"],
-  ctaPrimaryLabel: "30 gün ücretsiz deneyin",
+  ctaPrimaryLabel: "14 gün ücretsiz deneyin",
   ctaBottomTitle: "Salonunuzu dijitalleştirmeye hazır mısınız?",
   ctaBottomText:
-    "Hemen kaydolun, 30 gün ücretsiz deneyin. Kredi kartı gerekmez, taahhüt yok.",
-  trustTrialLabel: "30 gün ücretsiz deneme",
+    "Hemen kaydolun, 14 gün ücretsiz deneyin. Kredi kartı gerekmez, taahhüt yok.",
+  trustTrialLabel: "14 gün ücretsiz deneme",
   trustBadges: [
     "KVKK kapsamında",
     "AB sunucuları",
     "SSL şifreleme",
-    "30 gün ücretsiz deneme",
+    "14 gün ücretsiz deneme",
   ],
   internalLinksTitle: "İlgili sayfalar",
   problemsTitle: "Treatflow hangi sorunları çözer?",
@@ -175,11 +175,11 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "beauty-salon-software": {
     serviceName: "Güzellik Salonu Yazılımı",
     serviceDescription:
-      "Güzellik salonu yazılımı: komisyonsuz online randevu, müşteri takibi, dijital onam formları ve işlem kaydı. 30 gün ücretsiz deneyin.",
+      "Güzellik salonu yazılımı: komisyonsuz online randevu, müşteri takibi, dijital onam formları ve işlem kaydı. 14 gün ücretsiz deneyin.",
     eyebrow: "Güzellik Salonu Yazılımı",
     h1: "Güzellik salonları için A'dan Z'ye yönetim yazılımı",
     subtitle:
-      "Randevu takvimi, Instagram'dan online randevu, müşteri kaydı, onam formları ve işlem notları tek panelde. Pazaryeri komisyonu yok; 30 gün ücretsiz deneyin.",
+      "Randevu takvimi, Instagram'dan online randevu, müşteri kaydı, onam formları ve işlem notları tek panelde. Pazaryeri komisyonu yok; 14 gün ücretsiz deneyin.",
     aiCapsules: [
       {
         question: "Güzellik salonları için en iyi yazılım hangisi?",
@@ -263,7 +263,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Nasıl başlayabilirim?",
         answer:
-          "Hemen kaydolun ve 30 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
+          "Hemen kaydolun ve 14 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
       },
       {
         question: "Verilerim nerede saklanır?",
@@ -278,7 +278,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "aesthetic-clinic-software": {
     serviceName: "Medikal Estetik Merkezi Yazılımı",
     serviceDescription:
-      "Medikal estetik merkezi yazılımı: dijital onam, işlem kaydı, müşteri takibi ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
+      "Medikal estetik merkezi yazılımı: dijital onam, işlem kaydı, müşteri takibi ve komisyonsuz online randevu. 14 gün ücretsiz deneyin.",
     eyebrow: "Medikal Estetik Merkezi Yazılımı",
     h1: "Onam, işlem kaydı ve müşteri takibi ile medikal estetik yazılımı",
     subtitle:
@@ -366,7 +366,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Nasıl başlayabilirim?",
         answer:
-          "Hemen kaydolun ve 30 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
+          "Hemen kaydolun ve 14 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
       },
       {
         question: "Treatflow, KVKK kapsamındaki süreçleri nasıl destekler?",
@@ -380,7 +380,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "laser-hair-removal-software": {
     serviceName: "Lazer Epilasyon Yazılımı",
     serviceDescription:
-      "Lazer epilasyon yazılımı: seans takibi, dijital onam, öncesi-sonrası fotoğraf ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
+      "Lazer epilasyon yazılımı: seans takibi, dijital onam, öncesi-sonrası fotoğraf ve komisyonsuz online randevu. 14 gün ücretsiz deneyin.",
     eyebrow: "Lazer Stüdyosu Yazılımı",
     h1: "Uygulama serileri ile lazer epilasyon yazılımı",
     subtitle:
@@ -468,7 +468,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Nasıl başlayabilirim?",
         answer:
-          "Hemen kaydolun ve 30 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
+          "Hemen kaydolun ve 14 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
       },
       {
         question: "Verilerim nerede saklanır?",
@@ -483,7 +483,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "permanent-makeup-software": {
     serviceName: "Kalıcı Makyaj Stüdyosu Yazılımı",
     serviceDescription:
-      "Kalıcı makyaj yazılımı: dijital onam, pigment notları, fotoğraf arşivi ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
+      "Kalıcı makyaj yazılımı: dijital onam, pigment notları, fotoğraf arşivi ve komisyonsuz online randevu. 14 gün ücretsiz deneyin.",
     eyebrow: "Kalıcı Makyaj Yazılımı",
     h1: "Kalıcı makyaj stüdyoları için PMU yazılımı",
     subtitle:
@@ -571,7 +571,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Nasıl başlayabilirim?",
         answer:
-          "Hemen kaydolun ve 30 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
+          "Hemen kaydolun ve 14 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
       },
       {
         question: "Verilerim nerede saklanır?",
@@ -586,7 +586,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "tattoo-studio-software": {
     serviceName: "Dövme Stüdyosu Yazılımı",
     serviceDescription:
-      "Dövme stüdyosu yazılımı: dijital onam, müşteri kaydı, seans notları ve komisyonsuz randevu. 30 gün ücretsiz deneyin.",
+      "Dövme stüdyosu yazılımı: dijital onam, müşteri kaydı, seans notları ve komisyonsuz randevu. 14 gün ücretsiz deneyin.",
     eyebrow: "Dövme Stüdyosu Yazılımı",
     h1: "Modern stüdyolar için dövme yazılımı",
     subtitle:
@@ -674,7 +674,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Nasıl başlayabilirim?",
         answer:
-          "Hemen kaydolun ve 30 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
+          "Hemen kaydolun ve 14 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
       },
       {
         question: "Verilerim nerede saklanır?",
@@ -689,7 +689,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "nail-salon-software": {
     serviceName: "Tırnak Salonu Yazılımı",
     serviceDescription:
-      "Tırnak salonu yazılımı: komisyonsuz online randevu, müşteri takibi, hatırlatmalar ve işlem notları. 30 gün ücretsiz deneyin.",
+      "Tırnak salonu yazılımı: komisyonsuz online randevu, müşteri takibi, hatırlatmalar ve işlem notları. 14 gün ücretsiz deneyin.",
     eyebrow: "Tırnak Salonu Yazılımı",
     h1: "Yoğun protez tırnak salonları için randevu yazılımı",
     subtitle:
@@ -777,7 +777,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Nasıl başlayabilirim?",
         answer:
-          "Hemen kaydolun ve 30 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
+          "Hemen kaydolun ve 14 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
       },
       {
         question: "Verilerim nerede saklanır?",
@@ -792,7 +792,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "lash-studio-software": {
     serviceName: "Kirpik Salonu Yazılımı",
     serviceDescription:
-      "Kirpik salonu yazılımı: bakım randevuları, müşteri notları, dijital onam ve komisyonsuz online randevu. 30 gün ücretsiz deneyin.",
+      "Kirpik salonu yazılımı: bakım randevuları, müşteri notları, dijital onam ve komisyonsuz online randevu. 14 gün ücretsiz deneyin.",
     eyebrow: "Kirpik Salonu Yazılımı",
     h1: "Kirpik uzmanları için salon yazılımı",
     subtitle:
@@ -880,7 +880,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Nasıl başlayabilirim?",
         answer:
-          "Hemen kaydolun ve 30 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
+          "Hemen kaydolun ve 14 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
       },
       {
         question: "Verilerim nerede saklanır?",
@@ -895,7 +895,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "spa-wellness-software": {
     serviceName: "Spa ve Wellness Yazılımı",
     serviceDescription:
-      "Spa yazılımı: komisyonsuz online randevu, müşteri kaydı, uygulama notları ve dijital onam. 30 gün ücretsiz deneyin.",
+      "Spa yazılımı: komisyonsuz online randevu, müşteri kaydı, uygulama notları ve dijital onam. 14 gün ücretsiz deneyin.",
     eyebrow: "Spa ve Wellness Yazılımı",
     h1: "Huzurlu operasyonlar için spa ve wellness yazılımı",
     subtitle:
@@ -983,7 +983,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Nasıl başlayabilirim?",
         answer:
-          "Hemen kaydolun ve 30 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
+          "Hemen kaydolun ve 14 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
       },
       {
         question: "Verilerim nerede saklanır?",
@@ -998,7 +998,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
   "massage-software": {
     serviceName: "Masaj Stüdyosu Yazılımı",
     serviceDescription:
-      "Masaj yazılımı: komisyonsuz online randevu, anamnez, seans notları ve hatırlatmalar. 30 gün ücretsiz deneyin.",
+      "Masaj yazılımı: komisyonsuz online randevu, anamnez, seans notları ve hatırlatmalar. 14 gün ücretsiz deneyin.",
     eyebrow: "Masaj Stüdyosu Yazılımı",
     h1: "Terapistler ve stüdyolar için masaj yazılımı",
     subtitle:
@@ -1086,7 +1086,7 @@ const pages: Record<IndustryPageKey, PageBody> = {
       {
         question: "Nasıl başlayabilirim?",
         answer:
-          "Hemen kaydolun ve 30 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
+          "Hemen kaydolun ve 14 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.",
       },
       {
         question: "Verilerim nerede saklanır?",

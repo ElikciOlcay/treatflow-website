@@ -124,7 +124,7 @@ export const integrationsTr: IntegrationsContent = {
   },
   cta: {
     title: "Salonunuz için birbirine bağlı araçlar",
-    description: "30 gün ücretsiz deneyin – Google Takvim'i, Zapier'i ve yapay zekâ asistanınızı dakikalar içinde bağlayın.",
+    description: "14 gün ücretsiz deneyin – Google Takvim'i, Zapier'i ve yapay zekâ asistanınızı dakikalar içinde bağlayın.",
     secondary: { label: "Tüm özellikler", href: { page: "features" } },
   },
 };

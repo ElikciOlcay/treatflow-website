@@ -49,8 +49,8 @@ export function getDemoCopy(locale: DemoLocale) {
         bottomLock: 'Demo hiçbir şey kaydetmez',
         bottomTitle: 'Formları salonunuzda kullanmaya hazır mısınız?',
         bottomText:
-          'Bu örnekler bir başlangıçtır. Şablonları uyarlayın, linkle gönderin veya yeni formları birlikte kuralım – 30 gün ücretsiz.',
-        trialCta: '30 gün ücretsiz deneyin',
+          'Bu örnekler bir başlangıçtır. Şablonları uyarlayın, linkle gönderin veya yeni formları birlikte kuralım – 14 gün ücretsiz.',
+        trialCta: '14 gün ücretsiz deneyin',
         moreCta: 'Formlar hakkında',
       },
       player: {
@@ -67,7 +67,7 @@ export function getDemoCopy(locale: DemoLocale) {
         doneTitle: 'Müşteri ön kaydı böyle biter',
         doneText:
           'Treatflow\'da şablonları uyarlar, link veya QR ile gönderir ya da üreticiyle yeni form oluşturursunuz. Kurulumda da yardımcı oluruz.',
-        trialCta: '30 gün ücretsiz deneyin',
+        trialCta: '14 gün ücretsiz deneyin',
         moreSamples: 'Daha fazla örnek aç',
         signatureSection: 'İmza',
         signHint: 'Parmak veya fareyle imzalayın',

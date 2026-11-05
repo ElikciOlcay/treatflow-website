@@ -48,12 +48,12 @@ const cta: Pick<
   | "breadcrumbHomeHref"
 > = {
   earlyAccessHref: "https://app.treatflow.io/auth/register?lang=tr",
-  primaryCta: "30 gün ücretsiz deneyin",
+  primaryCta: "14 gün ücretsiz deneyin",
   bottomTitle: "Başlamaya hazır mısınız?",
   bottomText:
     "Ücretsiz denemenizi başlatın \u2013 kredi kartı gerekmez, istediğiniz zaman iptal edin.",
   relatedTitle: "İlgili sayfalar",
-  trustItems: ["AB sunucuları", "30 gün ücretsiz deneme", "Randevu komisyonu yok"],
+  trustItems: ["AB sunucuları", "14 gün ücretsiz deneme", "Randevu komisyonu yok"],
   faqTitle: "Sıkça sorulan sorular",
   faqBadge: "SSS",
   breadcrumbHomeHref: "/tr",

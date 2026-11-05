@@ -101,7 +101,7 @@ export const blogUi: Record<BlogLang, BlogUi> = {
     sourcesTitle: "Kaynaklar",
     moreArticles: "Diğer yazılar",
     ctaTitle: "Salonunuzu tek yerden yönetin",
-    ctaText: "Randevu, müşteri takibi, onam formları ve hatırlatmalar tek uygulamada. 30 gün ücretsiz, kredi kartı gerekmez.",
+    ctaText: "Randevu, müşteri takibi, onam formları ve hatırlatmalar tek uygulamada. 14 gün ücretsiz, kredi kartı gerekmez.",
     ctaButton: "Ücretsiz deneyin",
     home: "Ana sayfa",
     rss: "RSS",

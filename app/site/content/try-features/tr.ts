@@ -164,7 +164,7 @@ export const tryFeaturesTr: TryFeaturesContent = {
   },
   cta: {
     title: "Gördükleriniz hoşunuza gitti mi?",
-    description: "Treatflow'u kendi salonunuzla 30 gün ücretsiz deneyin. Kredi kartı gerekmez, istediğiniz zaman iptal edin.",
+    description: "Treatflow'u kendi salonunuzla 14 gün ücretsiz deneyin. Kredi kartı gerekmez, istediğiniz zaman iptal edin.",
     secondaryLabel: "Fiyatları görün",
   },
 };

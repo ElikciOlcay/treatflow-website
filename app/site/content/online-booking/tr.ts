@@ -37,7 +37,7 @@ export const onlineBookingTr: OnlineBookingContent = {
       {
         question: "Güzellik salonları için hangi online randevu sistemi uygundur?",
         answer:
-          "Treatflow, güzellik salonları için geliştirilmiş bir online randevu sistemi sunar: size özel randevu bağlantısı, 7/24 randevu, otomatik e-posta onayları ve bekleme listesi. Randevu başına komisyon yoktur; Booking paketinde aylık ₺1.990'dan başlar (KDV hariç), 30 gün ücretsiz denenebilir.",
+          "Treatflow, güzellik salonları için geliştirilmiş bir online randevu sistemi sunar: size özel randevu bağlantısı, 7/24 randevu, otomatik e-posta onayları ve bekleme listesi. Randevu başına komisyon yoktur; Booking paketinde aylık ₺1.990'dan başlar (KDV hariç), 14 gün ücretsiz denenebilir.",
       },
     ],
     image: {
@@ -104,7 +104,7 @@ export const onlineBookingTr: OnlineBookingContent = {
       {
         question: "Güzellik salonları için online randevu sisteminin maliyeti nedir?",
         answer:
-          "Treatflow'da online randevu, aylık ₺1.990'dan başlayan Booking paketine dahildir (yıllık ödemede ₺1.792/ay, KDV hariç). Randevu başına komisyon ve gizli maliyet yoktur; kredi kartı gerektirmeyen 30 günlük ücretsiz deneme sunulur.",
+          "Treatflow'da online randevu, aylık ₺1.990'dan başlayan Booking paketine dahildir (yıllık ödemede ₺1.792/ay, KDV hariç). Randevu başına komisyon ve gizli maliyet yoktur; kredi kartı gerektirmeyen 14 günlük ücretsiz deneme sunulur.",
       },
       {
         question: "Müşteriler günün her saatinde randevu alabilir mi?",
@@ -139,7 +139,7 @@ export const onlineBookingTr: OnlineBookingContent = {
   },
   cta: {
     title: "Online randevuya geçmeye hazır mısınız?",
-    description: "30 gün ücretsiz deneyin – kredi kartı ve randevu başına komisyon olmadan.",
+    description: "14 gün ücretsiz deneyin – kredi kartı ve randevu başına komisyon olmadan.",
     secondary: { label: "Takvimi görün", href: { page: "appointment-calendar" } },
   },
 };

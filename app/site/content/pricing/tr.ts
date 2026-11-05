@@ -1,11 +1,11 @@
 import type { PricingPageContent } from "./types";
 
-/** Türkei: ₺-Preise (wie home/tr.ts), 30 Tage Test. */
+/** Türkei: ₺-Preise (wie home/tr.ts), 14 Tage Test. */
 export const pricingTr: PricingPageContent = {
   meta: {
     title: "Güzellik Salonu Yazılımı Fiyatları",
     description:
-      "Treatflow Türkiye fiyatları: Basic aylık ₺1.490, Booking aylık ₺1.990 (ilk 100 işletmeye özel lansman fiyatı). 30 gün ücretsiz deneyin, kredi kartı gerekmez. Randevu başına komisyon yok.",
+      "Treatflow Türkiye fiyatları: Basic aylık ₺1.490, Booking aylık ₺1.990 (ilk 100 işletmeye özel lansman fiyatı). 14 gün ücretsiz deneyin, kredi kartı gerekmez. Randevu başına komisyon yok.",
     keywords: [
       "güzellik salonu yazılımı fiyat",
       "salon yazılımı fiyatları",
@@ -19,7 +19,7 @@ export const pricingTr: PricingPageContent = {
   capsule: {
     question: "Treatflow'un fiyatı ne kadar?",
     answer:
-      "Basic aylık ₺1.490 (müşteri takibi, formlar, işlem kayıtları), Booking aylık ₺1.990 (bunlara ek olarak randevu takvimi, online randevu ve hatırlatmalar). Randevu başına komisyon yok, 30 gün ücretsiz deneme.",
+      "Basic aylık ₺1.490 (müşteri takibi, formlar, işlem kayıtları), Booking aylık ₺1.990 (bunlara ek olarak randevu takvimi, online randevu ve hatırlatmalar). Randevu başına komisyon yok, 14 gün ücretsiz deneme.",
   },
   schema: {
     webPage: {
@@ -59,7 +59,7 @@ export const pricingTr: PricingPageContent = {
       { label: "Entegrasyonlar (Google Takvim, Zapier, yapay zekâ asistanları)", basic: false, booking: true },
       { label: "Öncelikli destek", basic: false, booking: true },
     ],
-    cta: "30 gün ücretsiz deneyin",
+    cta: "14 gün ücretsiz deneyin",
   },
   why: {
     title: "Neden Treatflow?",
@@ -67,7 +67,7 @@ export const pricingTr: PricingPageContent = {
     stats: [
       { value: "%0", label: "Randevu başına komisyon" },
       { value: "₺0", label: "Kurulum ücreti" },
-      { value: "30 gün", label: "ücretsiz deneme" },
+      { value: "14 gün", label: "ücretsiz deneme" },
       { value: "Taahhütsüz", label: "istediğiniz zaman iptal" },
     ],
   },
@@ -78,7 +78,7 @@ export const pricingTr: PricingPageContent = {
       {
         question: "Treatflow'un fiyatı ne kadar?",
         answer:
-          "Treatflow'da iki paket vardır: Müşteri takibi, formlar ve işlem kayıtları için aylık ₺1.490 olan Basic ve bunlara ek olarak randevu takvimi, online randevu ve otomatik hatırlatmaları içeren aylık ₺1.990 olan Booking. İki paketi de 30 gün ücretsiz deneyebilirsiniz.",
+          "Treatflow'da iki paket vardır: Müşteri takibi, formlar ve işlem kayıtları için aylık ₺1.490 olan Basic ve bunlara ek olarak randevu takvimi, online randevu ve otomatik hatırlatmaları içeren aylık ₺1.990 olan Booking. İki paketi de 14 gün ücretsiz deneyebilirsiniz.",
       },
       {
         question: "Gizli ücret var mı?",

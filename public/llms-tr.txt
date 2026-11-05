@@ -1,6 +1,6 @@
 # Treatflow
 
-> Treatflow, güzellik salonları, medikal estetik ve lazer epilasyon merkezleri için işletme yönetim yazılımıdır. Online randevu, müşteri takibi, dijital onam formları, işlem kayıtları, sesli not ve otomatik hatırlatmaları tek uygulamada birleştirir. Avusturya'da geliştirilir. Veriler KVKK kapsamındaki süreçlerle Frankfurt'taki AB sunucularında saklanır. İlk 100 işletme için lansman fiyatları Basic pakette aylık 1.490 TL, Booking pakette aylık 1.990 TL'dir. 30 gün ücretsiz deneme sunulur ve kredi kartı gerekmez. Randevu başına komisyon yoktur.
+> Treatflow, güzellik salonları, medikal estetik ve lazer epilasyon merkezleri için işletme yönetim yazılımıdır. Online randevu, müşteri takibi, dijital onam formları, işlem kayıtları, sesli not ve otomatik hatırlatmaları tek uygulamada birleştirir. Avusturya'da geliştirilir. Veriler KVKK kapsamındaki süreçlerle Frankfurt'taki AB sunucularında saklanır. İlk 100 işletme için lansman fiyatları Basic pakette aylık 1.490 TL, Booking pakette aylık 1.990 TL'dir. 14 gün ücretsiz deneme sunulur ve kredi kartı gerekmez. Randevu başına komisyon yoktur.
 
 ## Treatflow hakkında
 
@@ -16,7 +16,7 @@
 
 - **Basic**: ayda 1.490 TL (lansman, ilk 100 işletme). Müşteri takibi, dijital imzalı onam ve anamnez, işlem kayıtları, sesli not, öncesi-sonrası fotoğraf, ekip notları, mağaza, raporlar ve e-posta desteği.
 - **Booking**: ayda 1.990 TL (lansman, ilk 100 işletme). Basic'teki her şey artı randevu takvimi, komisyonsuz online randevu, bekleme listesi, WhatsApp ve e-posta hatırlatmaları, müşteri otomasyonları, indirim kodları, çok dilli randevu sayfası, Zapier, öncelikli destek.
-- 30 gün ücretsiz deneme. Kredi kartı gerekmez. İstediğiniz zaman iptal. Randevu komisyonu yok.
+- 14 gün ücretsiz deneme. Kredi kartı gerekmez. İstediğiniz zaman iptal. Randevu komisyonu yok.
 
 ## Kısa yanıtlar
 

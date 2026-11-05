@@ -3,13 +3,13 @@ import type { HomeContent } from "./types";
 /**
  * Türkçe ana sayfa. `en.ts` ile aynı bölümler; Türkiye'de sunulmayan özellikler
  * (kasa, hediye çeki, WhatsApp, Treatflow Pay, Lexware, SumUp, NiSV) yok.
- * Deneme süresi 30 gün, fiyatlar TL (KDV hariç). Ürün videosu yok – mevcut film Almanca.
+ * Deneme süresi 14 gün, fiyatlar TL (KDV hariç). Ürün videosu yok – mevcut film Almanca.
  */
 export const homeTr: HomeContent = {
   meta: {
     title: "Güzellik Salonu Programı: Online Randevu ve Müşteri Takibi",
     description:
-      "Güzellik salonları ve estetik klinikler için yönetim programı: komisyonsuz online randevu, müşteri takibi, dijital onam formları ve işlem kayıtları. İlk 100 işletmeye özel lansman fiyatı: Basic ₺1.490/ay, Booking ₺1.990/ay. 30 gün ücretsiz deneyin.",
+      "Güzellik salonları ve estetik klinikler için yönetim programı: komisyonsuz online randevu, müşteri takibi, dijital onam formları ve işlem kayıtları. İlk 100 işletmeye özel lansman fiyatı: Basic ₺1.490/ay, Booking ₺1.990/ay. 14 gün ücretsiz deneyin.",
     keywords: [
       "güzellik salonu programı",
       "güzellik merkezi programı",
@@ -83,7 +83,7 @@ export const homeTr: HomeContent = {
     },
     subtitle:
       "Randevular, müşteri kartları, onam formları ve işlem kayıtları tek ve sade bir uygulamada. Ekibiniz ilk günden kolayca kullanır.",
-    primaryCta: "30 gün ücretsiz deneyin",
+    primaryCta: "14 gün ücretsiz deneyin",
     demoCta: "Demo talep edin",
     checks: ["Kredi kartı gerekmez", "2 dakikada kurulum", "Ücretsiz veri aktarımı"],
     rating: "Google'da 4,6/5",
@@ -192,7 +192,7 @@ export const homeTr: HomeContent = {
       { href: { page: "messaging" }, icon: "bell", label: "Hatırlatmalar", desc: "Otomatik e-posta hatırlatmalarıyla randevuya gelmeyen müşteri sayısı azalır.", color: "bg-rose-100 text-rose-600" },
       { href: { page: "customer-workflows", fallback: "messaging" }, icon: "workflow", label: "Müşteri otomasyonları", desc: "Bakım takibini ve kayıp müşterileri geri kazanmayı adım adım otomatikleştirin.", color: "bg-violet-100 text-violet-600" },
     ],
-    cta: "30 gün ücretsiz deneyin",
+    cta: "14 gün ücretsiz deneyin",
     ctaNote: "Kredi kartı gerekmez. İstediğiniz zaman iptal edin.",
   },
 
@@ -201,7 +201,7 @@ export const homeTr: HomeContent = {
     titleBefore: "Net fiyatlar –",
     titleHighlight: " gizli ücret yok",
     subtitle:
-      "Treatflow'un aylık ücreti Basic için ₺1.490, Booking için ₺1.990. 30 gün ücretsiz deneyin – komisyon yok, risk yok.",
+      "Treatflow'un aylık ücreti Basic için ₺1.490, Booking için ₺1.990. 14 gün ücretsiz deneyin – komisyon yok, risk yok.",
     monthly: "Aylık",
     yearly: "Yıllık",
     saveBadge: "%10 indirim",
@@ -231,7 +231,7 @@ export const homeTr: HomeContent = {
         "Otomasyonlar ve bekleme listesi",
         "Öncelikli destek",
       ],
-      cta: "30 gün ücretsiz deneyin",
+      cta: "14 gün ücretsiz deneyin",
     },
     booking: {
       name: "Booking",
@@ -252,10 +252,10 @@ export const homeTr: HomeContent = {
         "Entegrasyonlar (Google Takvim, Zapier, yapay zekâ asistanları)",
         "Öncelikli e-posta ve sohbet desteği",
       ],
-      cta: "30 gün ücretsiz deneyin",
+      cta: "14 gün ücretsiz deneyin",
     },
     trial: {
-      title: "30 gün ücretsiz deneyin",
+      title: "14 gün ücretsiz deneyin",
       text: "Kredi kartı gerekmez • İstediğiniz zaman iptal edin • Ücretsiz veri aktarımı",
       points: ["Kurulum ücreti yok", "Aylık iptal", "KVKK kapsamında süreçler"],
     },
@@ -285,7 +285,7 @@ export const homeTr: HomeContent = {
       {
         question: "Treatflow'u ne kadar süre ücretsiz deneyebilirim?",
         answer:
-          "Treatflow'u 30 gün boyunca tamamen ücretsiz deneyebilirsiniz. Kredi kartı gerekmez, gizli ücret yoktur. Deneme süresi bitince devam edip etmeyeceğinize siz karar verirsiniz.",
+          "Treatflow'u 14 gün boyunca tamamen ücretsiz deneyebilirsiniz. Kredi kartı gerekmez, gizli ücret yoktur. Deneme süresi bitince devam edip etmeyeceğinize siz karar verirsiniz.",
       },
       {
         question: "Basic ile Booking arasındaki fark nedir?",
@@ -357,7 +357,7 @@ export const homeTr: HomeContent = {
     title: "Salonunuzu daha düzenli yönetmeye hazır mısınız?",
     subtitle: "Bugün başlayın, salon yönetiminin ne kadar kolaylaşabileceğini görün.",
     checks: [
-      "30 gün ücretsiz deneyin",
+      "14 gün ücretsiz deneyin",
       "Kredi kartı gerekmez",
       "2 dakikada hazır",
       "Birebir destek",

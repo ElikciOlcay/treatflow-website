@@ -871,7 +871,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     titleBefore: "Net fiyat –",
     titleHighlight: "gizli ücret yok",
     subtitle:
-      "İşletmenize uygun paketi seçin. 30 gün ücretsiz deneyin – kredi kartı gerekmez, taahhüt yok.",
+      "İşletmenize uygun paketi seçin. 14 gün ücretsiz deneyin – kredi kartı gerekmez, taahhüt yok.",
     monthly: "Aylık",
     yearly: "Yıllık",
     saveBadge: "2 ay tasarruf",
@@ -881,7 +881,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     bookingYearlyHint: "Yıllık ödemede aylık karşılığı",
     exclVat: "KDV hariç fiyatlar",
     popular: "En çok tercih edilen",
-    cta: "30 gün ücretsiz deneyin",
+    cta: "14 gün ücretsiz deneyin",
     earlyAccessHref: "https://app.treatflow.io/auth/register?lang=tr",
     prices: {
       currencySymbol: "₺",
@@ -930,10 +930,10 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
       ],
     },
     trialBox: {
-      title: "30 gün ücretsiz deneyin",
+      title: "14 gün ücretsiz deneyin",
       text: "Hemen başlayın – kredi kartı gerekmez, taahhüt yok.",
       points: [
-        "30 gün tüm özellikler",
+        "14 gün tüm özellikler",
         "Kredi kartı gerekmez",
         "Taahhüt yok, istediğiniz zaman iptal",
         "Ücretsiz veri aktarımı",
@@ -972,7 +972,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
         { value: "%0", label: "Komisyon" },
         { value: "500+", label: "İşletme" },
         { value: "KVKK", label: "AB sunucuları" },
-        { value: "30 gün", label: "Ücretsiz deneme" },
+        { value: "14 gün", label: "Ücretsiz deneme" },
       ],
     },
     faq: {
@@ -982,7 +982,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
         {
           question: "Ücretsiz deneme nasıl işler?",
           answer:
-            "Kayıt olun, 30 gün boyunca tüm özellikleri ücretsiz kullanın. Kredi kartı gerekmez. Deneme bitince paket seçebilir veya hesabı kapatabilirsiniz.",
+            "Kayıt olun, 14 gün boyunca tüm özellikleri ücretsiz kullanın. Kredi kartı gerekmez. Deneme bitince paket seçebilir veya hesabı kapatabilirsiniz.",
         },
         {
           question: "Randevu başına komisyon var mı?",
@@ -1002,14 +1002,14 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
         {
           question: "Türkiye'den kayıt olabilir miyim?",
           answer:
-            "Evet. Türk Lirası fiyatlandırma ve Türkçe arayüz ile app.treatflow.io üzerinden 30 günlük ücretsiz denemenizi başlatabilirsiniz – kredi kartı gerekmez.",
+            "Evet. Türk Lirası fiyatlandırma ve Türkçe arayüz ile app.treatflow.io üzerinden 14 günlük ücretsiz denemenizi başlatabilirsiniz – kredi kartı gerekmez.",
         },
       ],
     },
     meta: {
       title: "Güzellik Salonu Yazılımı Fiyatları",
       description:
-        "Treatflow fiyatları Türkiye'de: Basic ₺1.490, Booking ₺1.990 (lansman, ilk 100 işletme). 30 gün ücretsiz deneyin, kredi kartı gerekmez. Randevu komisyonu yok.",
+        "Treatflow fiyatları Türkiye'de: Basic ₺1.490, Booking ₺1.990 (lansman, ilk 100 işletme). 14 gün ücretsiz deneyin, kredi kartı gerekmez. Randevu komisyonu yok.",
     },
   },
 };

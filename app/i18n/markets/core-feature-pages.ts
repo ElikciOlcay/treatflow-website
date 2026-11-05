@@ -862,7 +862,7 @@ export function getCoreFeaturePage(
   const lang = resolveCoreLang(market);
   const primaryCta =
     lang === "tr"
-      ? "30 gün ücretsiz deneyin"
+      ? "14 gün ücretsiz deneyin"
       : lang === "nl"
         ? "14 dagen gratis proberen"
         : lang === "fi"

@@ -35,7 +35,7 @@ function stickyCopy(market: Market) {
     return { cta: 'Aloita ilmainen kokeilu', note: '14 päivää ilmaiseksi · Ei luottokorttia' };
   }
   if (market === 'tr') {
-    return { cta: 'Ücretsiz deneyin', note: '30 gün ücretsiz · Kredi kartı gerekmez' };
+    return { cta: 'Ücretsiz deneyin', note: '14 gün ücretsiz · Kredi kartı gerekmez' };
   }
   if (market === 'de') {
     return { cta: 'Jetzt kostenlos testen', note: '14 Tage gratis · Keine Kreditkarte' };

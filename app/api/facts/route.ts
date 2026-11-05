@@ -200,7 +200,7 @@ const turkishFacts = {
     availability: {
         selfServeRegistrationCountries: "all",
         selfServeNote:
-            "Türkiye dahil dünya genelinde 30 gün ücretsiz deneme. Kayıt: https://app.treatflow.io/auth/register?lang=tr",
+            "Türkiye dahil dünya genelinde 14 gün ücretsiz deneme. Kayıt: https://app.treatflow.io/auth/register?lang=tr",
         registerUrls: {
             de: "https://app.treatflow.io/auth/register?lang=de",
             en: "https://app.treatflow.io/auth/register?lang=en",
@@ -328,7 +328,7 @@ const turkishFacts = {
         {
             question: "Türkiye'de kullanabilir miyim?",
             answer:
-                "Evet. Türkçe arayüz, Türk Lirası fiyatlandırma ve Türkçe destek vardır. 30 gün ücretsiz deneme, kredi kartı gerekmez.",
+                "Evet. Türkçe arayüz, Türk Lirası fiyatlandırma ve Türkçe destek vardır. 14 gün ücretsiz deneme, kredi kartı gerekmez.",
         },
         {
             question: "Randevu başına komisyon var mı?",
@@ -337,7 +337,7 @@ const turkishFacts = {
         {
             question: "Treatflow ne kadar?",
             answer:
-                "Lansman: Basic 1.490 TL/ay, Booking 1.990 TL/ay (ilk 100 işletme). 30 gün ücretsiz deneyin.",
+                "Lansman: Basic 1.490 TL/ay, Booking 1.990 TL/ay (ilk 100 işletme). 14 gün ücretsiz deneyin.",
         },
         {
             question: "Treatflow, KVKK kapsamındaki süreçleri nasıl destekler?",

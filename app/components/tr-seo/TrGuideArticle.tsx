@@ -156,7 +156,7 @@ export default function TrGuideArticle({ content }: { content: TrGuideContent })
             );
           })}
           <div className="mt-12 p-6 bg-indigo-50 rounded-2xl">
-            <p className="font-semibold text-gray-900 mb-2">Treatflow'u 30 gün deneyin</p>
+            <p className="font-semibold text-gray-900 mb-2">Treatflow'u 14 gün deneyin</p>
             <p className="text-sm text-gray-600 mb-4">
               Kredi kartı gerekmez. Randevu komisyonu yok. AB sunucuları, KVKK kapsamında.
             </p>

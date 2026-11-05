@@ -5,7 +5,7 @@ export const featuresTr: FeaturesOverviewContent = {
   meta: {
     title: "Güzellik Salonu Programı: Tüm Özellikler",
     description:
-      "Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam formları, sesli notla işlem kaydı ve otomatik e-posta hatırlatmaları – hepsi tek salon programında. 30 gün ücretsiz deneyin.",
+      "Randevu takvimi, komisyonsuz online randevu, müşteri takibi, dijital onam formları, sesli notla işlem kaydı ve otomatik e-posta hatırlatmaları – hepsi tek salon programında. 14 gün ücretsiz deneyin.",
     keywords: [
       "güzellik salonu programı",
       "güzellik salonu yazılımı",
@@ -132,7 +132,7 @@ export const featuresTr: FeaturesOverviewContent = {
       "Hepsi bir arada: tüm özellikler tek platformda",
       "AB sunucularında güvenli veri saklama",
       "Gizli ücret veya komisyon yok",
-      "30 gün ücretsiz deneme, kredi kartı gerekmez",
+      "14 gün ücretsiz deneme, kredi kartı gerekmez",
       "Ücretsiz destek ve kurulum yardımı",
       "Avusturya'da geliştirildi",
     ],

@@ -4,7 +4,7 @@ export const appointmentCalendarTr: AppointmentCalendarContent = {
   meta: {
     title: "Güzellik Salonu Randevu Programı: Personel ve Oda Planlama",
     description:
-      "Güzellik salonları ve estetik klinikler için randevu programı: personel ve oda bazlı takvim, online randevu, sürükle-bırak ve otomatik e-posta hatırlatmaları. Komisyon yok, 30 gün ücretsiz deneyin.",
+      "Güzellik salonları ve estetik klinikler için randevu programı: personel ve oda bazlı takvim, online randevu, sürükle-bırak ve otomatik e-posta hatırlatmaları. Komisyon yok, 14 gün ücretsiz deneyin.",
     keywords: [
       "güzellik salonu randevu programı",
       "randevu takvimi güzellik salonu",
@@ -119,12 +119,12 @@ export const appointmentCalendarTr: AppointmentCalendarContent = {
       {
         question: "Güzellik salonları için randevu programının maliyeti nedir?",
         answer:
-          "Treatflow, online randevulu takvimi Booking paketinde aylık ₺1.990'dan sunar (yıllık ödemede ₺1.792/ay, KDV hariç). 30 gün ücretsiz deneyin, kredi kartı gerekmez. Gizli maliyet ve randevu başına komisyon yoktur.",
+          "Treatflow, online randevulu takvimi Booking paketinde aylık ₺1.990'dan sunar (yıllık ödemede ₺1.792/ay, KDV hariç). 14 gün ücretsiz deneyin, kredi kartı gerekmez. Gizli maliyet ve randevu başına komisyon yoktur.",
       },
       {
         question: "Güzellik salonları için ücretsiz bir randevu programı var mı?",
         answer:
-          "Ücretsiz programlar var – ancak genellikle kısıtlamalarla, reklamlarla ya da platform üzerinden alınan her randevuya komisyonla. Randevu defteri veya Excel tablosu ücretsizdir ama online randevu almaz, hatırlatma göndermez ve müşteri kartlarınızla bağlantılı değildir. Treatflow'u kredi kartı olmadan 30 gün ücretsiz deneyebilirsiniz; sonrasında online randevulu takvim aylık ₺1.990'dır ve randevu başına komisyon yoktur.",
+          "Ücretsiz programlar var – ancak genellikle kısıtlamalarla, reklamlarla ya da platform üzerinden alınan her randevuya komisyonla. Randevu defteri veya Excel tablosu ücretsizdir ama online randevu almaz, hatırlatma göndermez ve müşteri kartlarınızla bağlantılı değildir. Treatflow'u kredi kartı olmadan 14 gün ücretsiz deneyebilirsiniz; sonrasında online randevulu takvim aylık ₺1.990'dır ve randevu başına komisyon yoktur.",
       },
       {
         question: "Randevu programı, takvim veya online randevu sistemi – farkı ne?",
@@ -172,7 +172,7 @@ export const appointmentCalendarTr: AppointmentCalendarContent = {
   },
   cta: {
     title: "Stressiz randevu yönetimine hazır mısınız?",
-    description: "30 gün ücretsiz deneyin – kredi kartı gerekmez. Takvim, ekip planlama ve online randevu tek uygulamada.",
+    description: "14 gün ücretsiz deneyin – kredi kartı gerekmez. Takvim, ekip planlama ve online randevu tek uygulamada.",
     secondary: { label: "Online randevu", href: { page: "online-booking" } },
   },
 };

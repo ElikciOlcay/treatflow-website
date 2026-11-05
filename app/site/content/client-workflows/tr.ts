@@ -125,7 +125,7 @@ export const clientWorkflowsTr: ClientWorkflowsContent = {
   },
   cta: {
     title: "Çok adımlı müşteri otomasyonlarına hazır mısınız?",
-    description: "30 gün ücretsiz deneyin – tek tek uğraşmadan bakım takibi ve müşteri geri kazanımı.",
+    description: "14 gün ücretsiz deneyin – tek tek uğraşmadan bakım takibi ve müşteri geri kazanımı.",
     secondary: { label: "Hatırlatmaları görün", href: { page: "messaging" } },
   },
 };

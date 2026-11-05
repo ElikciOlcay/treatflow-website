@@ -42,7 +42,7 @@ export const clientRecordsTr: ClientRecordsContent = {
       {
         question: "Güzellik salonunda müşteri takibi için hangi program uygundur?",
         answer:
-          "Treatflow, güzellik salonları için geliştirilmiş bir müşteri takip programıdır: dijital müşteri kartları, işlem geçmişi, fotoğraflar ve AB sunucularında KVKK ve GDPR uyumlu barındırma. Tüm müşteri bilgilerinize bilgisayardan, tabletten ve akıllı telefondan ulaşırsınız. 30 gün ücretsiz deneyin.",
+          "Treatflow, güzellik salonları için geliştirilmiş bir müşteri takip programıdır: dijital müşteri kartları, işlem geçmişi, fotoğraflar ve AB sunucularında KVKK ve GDPR uyumlu barındırma. Tüm müşteri bilgilerinize bilgisayardan, tabletten ve akıllı telefondan ulaşırsınız. 14 gün ücretsiz deneyin.",
       },
     ],
     image: {
@@ -98,7 +98,7 @@ export const clientRecordsTr: ClientRecordsContent = {
       {
         question: "Güzellik salonunda müşteri takibi için hangi program uygundur?",
         answer:
-          "Treatflow, güzellik salonları için geliştirilmiş bir müşteri takip programıdır. Dijital müşteri kartları, işlem geçmişi, fotoğraflar, notlar ve AB'de KVKK ile GDPR uyumlu veri saklama sunar. 30 gün ücretsiz deneyin.",
+          "Treatflow, güzellik salonları için geliştirilmiş bir müşteri takip programıdır. Dijital müşteri kartları, işlem geçmişi, fotoğraflar, notlar ve AB'de KVKK ile GDPR uyumlu veri saklama sunar. 14 gün ücretsiz deneyin.",
       },
       {
         question: "Güzellik salonları için dijital müşteri kartı nedir?",
@@ -136,7 +136,7 @@ export const clientRecordsTr: ClientRecordsContent = {
   },
   cta: {
     title: "Müşteri kayıtlarınızı düzene sokmaya hazır mısınız?",
-    description: "30 gün ücretsiz deneyin – kredi kartı gerekmez. Veri aktarımı, geçmiş ve KVKK ile GDPR uyumu tek uygulamada.",
+    description: "14 gün ücretsiz deneyin – kredi kartı gerekmez. Veri aktarımı, geçmiş ve KVKK ile GDPR uyumu tek uygulamada.",
     secondary: { label: "Dijital formlar", href: { page: "forms" } },
   },
 };

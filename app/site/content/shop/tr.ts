@@ -86,6 +86,6 @@ export const shopTr: ShopContent = {
   },
   cta: {
     title: "Salonunuzda ürün satışına hazır mısınız?",
-    description: "30 gün ücretsiz deneyin – ürünlerinizi satın, stoğunuzu kolayca takip edin.",
+    description: "14 gün ücretsiz deneyin – ürünlerinizi satın, stoğunuzu kolayca takip edin.",
   },
 };

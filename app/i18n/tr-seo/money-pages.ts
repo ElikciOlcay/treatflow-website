@@ -4,7 +4,7 @@ import { TR_PATHS } from "./paths";
 const DATE = "2026-09-07";
 
 const pricingText =
-  "Türkiye lansman fiyatları ilk 100 işletme için Basic pakette aylık 1.490 TL, Booking pakette aylık 1.990 TL'dir. 30 gün ücretsiz deneyin. Kredi kartı gerekmez. Randevu başına komisyon yoktur.";
+  "Türkiye lansman fiyatları ilk 100 işletme için Basic pakette aylık 1.490 TL, Booking pakette aylık 1.990 TL'dir. 14 gün ücretsiz deneyin. Kredi kartı gerekmez. Randevu başına komisyon yoktur.";
 
 const sharedRelated = {
   center: {
@@ -35,7 +35,7 @@ const sharedRelated = {
   pricing: {
     href: TR_PATHS.pricing,
     label: "Fiyatlar",
-    desc: "TL fiyatlar, 30 gün deneme, komisyon yok.",
+    desc: "TL fiyatlar, 14 gün deneme, komisyon yok.",
   },
   forms: {
     href: TR_PATHS.forms,
@@ -55,7 +55,7 @@ export const beautyCenterPage: TrMoneyPageContent = {
   keywordCluster: "guzellik-merkezi-programi",
   title: "Güzellik Merkezi Programı",
   description:
-    "Güzellik merkezi yazılımı: randevu, müşteri takibi, dijital onam, işlem kaydı ve fotoğraf tek uygulamada. 30 gün ücretsiz deneyin.",
+    "Güzellik merkezi yazılımı: randevu, müşteri takibi, dijital onam, işlem kaydı ve fotoğraf tek uygulamada. 14 gün ücretsiz deneyin.",
   h1: "Güzellik merkezi programı: randevu ile bitmeyen bir sistem",
   eyebrow: "Güzellik merkezleri ve medikal estetik işletmeleri",
   subtitle:
@@ -74,7 +74,7 @@ export const beautyCenterPage: TrMoneyPageContent = {
   whatParas: [
     "Treatflow, güzellik merkezleri, lazer epilasyon stüdyoları ve medikal estetik işletmeleri için salon yönetim yazılımıdır. Avusturya'da geliştirilir. Müşteri verileri Frankfurt'taki AB sunucularında, KVKK kapsamında saklanır.",
     "Klasik randevu programı saati doldurur. Treatflow müşterinin o güne nasıl geldiğini, hangi formu imzaladığını, hangi parametrelerle işlem gördüğünü ve bir sonraki seansın ne zaman olduğunu aynı kartta tutar.",
-    "Pazaryeri değildir. Online randevu sizin sayfanızdan gelir; randevu başına komisyon yoktur. Türkiye lansmanında 30 gün ücretsiz deneme vardır, kredi kartı gerekmez.",
+    "Pazaryeri değildir. Online randevu sizin sayfanızdan gelir; randevu başına komisyon yoktur. Türkiye lansmanında 14 gün ücretsiz deneme vardır, kredi kartı gerekmez.",
   ],
   whoTitle: "Kimler için?",
   audiences: [
@@ -199,7 +199,7 @@ export const beautyCenterPage: TrMoneyPageContent = {
     {
       question: "Türkiye'de güzellik merkezi için en iyi program hangisi?",
       answer:
-        "En iyi program, sizin işinize bağlıdır. Sadece randevu ve kasa istiyorsanız yerel randevu yazılımları yeterli olabilir. Onam, işlem kaydı ve fotoğraf aynı dosyada durmalıysa Treatflow bu iş için tasarlandı. 30 gün deneyip karar verin.",
+        "En iyi program, sizin işinize bağlıdır. Sadece randevu ve kasa istiyorsanız yerel randevu yazılımları yeterli olabilir. Onam, işlem kaydı ve fotoğraf aynı dosyada durmalıysa Treatflow bu iş için tasarlandı. 14 gün deneyip karar verin.",
     },
     {
       question: "Güzellik merkezi programında hangi özellikler olmalı?",
@@ -209,7 +209,7 @@ export const beautyCenterPage: TrMoneyPageContent = {
     {
       question: "Geçiş nasıl işler?",
       answer:
-        "Kayıt olun, 30 gün tüm özellikleri kullanın. Mevcut müşteri verilerinin aktarımında yardımcı oluruz. Kredi kartı gerekmez.",
+        "Kayıt olun, 14 gün tüm özellikleri kullanın. Mevcut müşteri verilerinin aktarımında yardımcı oluruz. Kredi kartı gerekmez.",
     },
     {
       question: "Veriler nerede tutulur?",
@@ -255,7 +255,7 @@ export const beautySalonPage: TrMoneyPageContent = {
   keywordCluster: "guzellik-salonu-programi",
   title: "Güzellik Salonu Programı",
   description:
-    "Güzellik salonu yazılımı ve randevu programı: müşteri kartı, dijital onam, işlem notu. 30 gün ücretsiz deneyin, komisyon yok.",
+    "Güzellik salonu yazılımı ve randevu programı: müşteri kartı, dijital onam, işlem notu. 14 gün ücretsiz deneyin, komisyon yok.",
   h1: "Güzellik salonu programı: randevu, müşteri ve onam aynı yerde",
   eyebrow: "Güzellik salonları ve butik stüdyolar",
   subtitle:
@@ -264,7 +264,7 @@ export const beautySalonPage: TrMoneyPageContent = {
     "Instagram, Google ve web'den 7/24 randevu",
     "Müşteri kartı: not, geçmiş, fotoğraf",
     "Dijital onam – seans öncesi imza",
-    "30 gün ücretsiz, kredi kartı yok",
+    "14 gün ücretsiz, kredi kartı yok",
   ],
   heroImage: {
     src: "/images/lifestyle/online-buchung-smartphone.png",
@@ -345,7 +345,7 @@ export const beautySalonPage: TrMoneyPageContent = {
     {
       question: "Güzellik salonu için hangi program kullanılmalı?",
       answer:
-        "Sadece takvim istiyorsanız birçok randevu aracı iş görür. Müşteri geçmişi, onam ve işlem notu da gerekiyorsa Treatflow'u 30 gün deneyin. Pazaryeri komisyonu yoktur.",
+        "Sadece takvim istiyorsanız birçok randevu aracı iş görür. Müşteri geçmişi, onam ve işlem notu da gerekiyorsa Treatflow'u 14 gün deneyin. Pazaryeri komisyonu yoktur.",
     },
     {
       question: "Güzellik salonu randevuları nasıl yönetilir?",
@@ -387,7 +387,7 @@ export const laserPage: TrMoneyPageContent = {
   keywordCluster: "lazer-epilasyon-programi",
   title: "Lazer Epilasyon Programı",
   description:
-    "Lazer epilasyon müşteri takip programı: seans kaydı, onam, fotoğraf ve randevu. 30 gün ücretsiz deneyin.",
+    "Lazer epilasyon müşteri takip programı: seans kaydı, onam, fotoğraf ve randevu. 14 gün ücretsiz deneyin.",
   h1: "Lazer epilasyon programı: seans, onam ve müşteri kaydı",
   eyebrow: "Lazer epilasyon merkezleri",
   subtitle:
@@ -731,7 +731,7 @@ export const bookingPage: TrMoneyPageContent = {
     {
       question: "Ücretsiz online randevu var mı?",
       answer:
-        "30 gün ücretsiz deneme vardır. Kalıcı ücretsiz randevu pazaryeri değiliz. 'Ücretsiz randevu al' tüketici aramaları için tasarlanmadık.",
+        "14 gün ücretsiz deneme vardır. Kalıcı ücretsiz randevu pazaryeri değiliz. 'Ücretsiz randevu al' tüketici aramaları için tasarlanmadık.",
     },
   ],
   related: [

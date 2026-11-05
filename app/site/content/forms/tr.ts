@@ -126,7 +126,7 @@ export const formsTr: FormsContent = {
   },
   cta: {
     title: "Dijital formlara hazır mısınız?",
-    description: "30 gün ücretsiz deneyin – hazır şablonlar, yapay zekâ oluşturucu ve sürükle-bırak editör. Kredi kartı gerekmez.",
+    description: "14 gün ücretsiz deneyin – hazır şablonlar, yapay zekâ oluşturucu ve sürükle-bırak editör. Kredi kartı gerekmez.",
     secondary: { label: "Örnek formları deneyin", href: { page: "try-forms" } },
   },
 };

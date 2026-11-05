@@ -144,7 +144,7 @@ export const treatmentDocumentationTr: TreatmentDocumentationContent = {
   },
   cta: {
     title: "İşlem kayıtlarınızı dijitale taşımaya hazır mısınız?",
-    description: "30 gün ücretsiz deneyin – kredi kartı gerekmez. Kayıt, fotoğraflar ve imza tek uygulamada.",
+    description: "14 gün ücretsiz deneyin – kredi kartı gerekmez. Kayıt, fotoğraflar ve imza tek uygulamada.",
     secondary: { label: "Dijital formlar", href: { page: "forms" } },
   },
 };

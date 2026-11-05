@@ -60,7 +60,7 @@ export const trPrivacy = {
 export const trTerms = {
   metaTitle: "Kullanım Koşulları",
   metaDescription:
-    "Treatflow koşulları: güzellik salonları için SaaS, şeffaf fiyat, 30 günlük deneme, randevu komisyonu yok. Bağlayıcı sözleşme Almanca AGB'dir.",
+    "Treatflow koşulları: güzellik salonları için SaaS, şeffaf fiyat, 14 günlük deneme, randevu komisyonu yok. Bağlayıcı sözleşme Almanca AGB'dir.",
   title: "Kullanım Koşulları",
   intro:
     "Treatflow, güzellik ve estetik işletmelerinin operasyonlarını yönetmek için sunulan ücretli bir SaaS ürünüdür. Hesap oluşturarak bu koşulları kabul edersiniz. Bağlayıcı sözleşme /agb adresindeki Almanca AGB'dir. Bu sayfa Türkiye'deki işletmeler için temel ticari koşulları açıklar.",
@@ -71,7 +71,7 @@ export const trTerms = {
     },
     {
       heading: "2. Paketler, deneme ve iptal",
-      html: `<p>İlk 100 işletme için Türkiye lansman fiyatları Basic pakette aylık 1.490 TL, Booking pakette aylık 1.990 TL'dir. Güncel fiyatlar her zaman <a href="/tr/fiyatlar">fiyatlar sayfasında</a> yayımlanır. 30 günlük deneme kredi kartı gerektirmez. Aylık paketler fatura dönemi sonunda iptal edilebilir. Taahhüt yoktur.</p>`,
+      html: `<p>İlk 100 işletme için Türkiye lansman fiyatları Basic pakette aylık 1.490 TL, Booking pakette aylık 1.990 TL'dir. Güncel fiyatlar her zaman <a href="/tr/fiyatlar">fiyatlar sayfasında</a> yayımlanır. 14 günlük deneme kredi kartı gerektirmez. Aylık paketler fatura dönemi sonunda iptal edilebilir. Taahhüt yoktur.</p>`,
     },
     {
       heading: "3. Salonun sorumluluğu",
