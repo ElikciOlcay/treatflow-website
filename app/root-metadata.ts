@@ -57,6 +57,8 @@ export const rootMetadata: Metadata = {
   manifest: '/manifest.json',
   other: {
     'google-site-verification': 'fB1kQag5y2XvmoHzg6-NG4dFb5qUF47LMa0BDMQHisc',
+    // Meta Business (Treatflow) – Domain-Verifizierung für treatflow.io
+    'facebook-domain-verification': 'qfde3hj070qzksr1c3fpavsq94kl09',
   },
 };
 
