@@ -1,12 +1,7 @@
 import Script from "next/script";
-import {
-    MapPin,
-    Shield,
-    Euro,
-    Users,
-    Star,
-    Clock,
-} from "lucide-react";
+import { siteIcons } from "@/app/site/icons";
+import { getFeatureCommon } from "@/app/site/content/feature-common";
+import type { SiteMarket } from "@/app/site/content/shared";
 
 /**
  * Kompakte Fakten-Box für Money-Pages.
@@ -24,46 +19,9 @@ type Variant = "default" | "compact";
 interface QuickFactsProps {
     variant?: Variant;
     className?: string;
+    /** Sprache; ohne Angabe Deutsch. Texte: app/site/content/feature-common */
+    market?: SiteMarket;
 }
-
-const facts = [
-    {
-        icon: MapPin,
-        value: "Made in Austria",
-        label: "Bischofshofen, gegründet 2023",
-        color: "bg-rose-100 text-rose-600",
-    },
-    {
-        icon: Shield,
-        value: "DSGVO-konform",
-        label: "EU-Server (Frankfurt), SSL, tägliche Backups",
-        color: "bg-emerald-100 text-emerald-600",
-    },
-    {
-        icon: Euro,
-        value: "Ab 39 EUR/Monat",
-        label: "Basic-Plan, jährlich 35 EUR/Monat",
-        color: "bg-indigo-100 text-indigo-600",
-    },
-    {
-        icon: Users,
-        value: "500+ Studios",
-        label: "Haben Treatflow bereits getestet (DE, AT, CH)",
-        color: "bg-amber-100 text-amber-600",
-    },
-    {
-        icon: Star,
-        value: "4,6/5 Sterne",
-        label: "Google-Bewertung (19 Reviews)",
-        color: "bg-yellow-100 text-yellow-600",
-    },
-    {
-        icon: Clock,
-        value: "14 Tage kostenlos",
-        label: "Ohne Kreditkarte, jederzeit kündbar",
-        color: "bg-sky-100 text-sky-600",
-    },
-];
 
 const speakableSchema = {
     "@context": "https://schema.org",
@@ -77,13 +35,15 @@ const speakableSchema = {
 export default function QuickFacts({
     variant = "default",
     className = "",
+    market = "de",
 }: QuickFactsProps) {
     const isCompact = variant === "compact";
+    const content = getFeatureCommon(market).quickFacts;
 
     return (
         <section
             id="treatflow-quick-facts"
-            aria-label="Treatflow Quick Facts"
+            aria-label={content.ariaLabel}
             className={`${isCompact ? "py-10" : "py-16"} bg-white ${className}`}
         >
             <Script
@@ -96,10 +56,10 @@ export default function QuickFacts({
                 {!isCompact && (
                     <div className="text-center mb-10">
                         <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
-                            Treatflow auf einen Blick
+                            {content.title}
                         </h2>
                         <p className="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
-                            Die wichtigsten Fakten zu Treatflow.
+                            {content.subtitle}
                         </p>
                     </div>
                 )}
@@ -118,7 +78,9 @@ export default function QuickFacts({
                     <meta itemProp="foundingDate" content="2023" />
                     <meta itemProp="foundingLocation" content="Bischofshofen, Austria" />
 
-                    {facts.map((fact) => (
+                    {content.facts.map((fact) => {
+                        const Icon = siteIcons[fact.icon];
+                        return (
                         <div
                             key={fact.value}
                             className="bg-gray-50 border border-gray-100 rounded-2xl p-4 text-center hover:shadow-md transition-all duration-300"
@@ -126,7 +88,7 @@ export default function QuickFacts({
                             <div
                                 className={`w-10 h-10 ${fact.color} rounded-xl flex items-center justify-center mx-auto mb-3`}
                             >
-                                <fact.icon className="h-5 w-5" />
+                                <Icon className="h-5 w-5" />
                             </div>
                             <div className="text-sm lg:text-base font-bold text-gray-900 leading-tight mb-1">
                                 {fact.value}
@@ -135,7 +97,8 @@ export default function QuickFacts({
                                 {fact.label}
                             </div>
                         </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>

@@ -4,7 +4,11 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 import Breadcrumbs from './Breadcrumbs';
 import ContentAttribution from './ContentAttribution';
-import { APP_REGISTER_URL } from '../i18n/market-access';
+import { APP_REGISTER_BY_MARKET } from '../i18n/market-access';
+import { htmlLangTags } from '../i18n/config';
+import { sitePagePath } from '../i18n/site-pages';
+import { getFeatureCommon } from '../site/content/feature-common';
+import type { SiteMarket } from '../site/content/shared';
 
 export type FeatureHeroTheme = {
     sectionBg: string;
@@ -118,19 +122,9 @@ type FeatureHeroProps = {
     };
     visual?: ReactNode;
     children?: ReactNode;
+    /** Sprache; ohne Angabe Deutsch. Texte: app/site/content/feature-common */
+    market?: SiteMarket;
 };
-
-const DEFAULT_PRIMARY = {
-    label: '14 Tage gratis testen',
-    href: APP_REGISTER_URL,
-    external: true,
-};
-
-const DEFAULT_TRUST = [
-    '14 Tage kostenlos',
-    'Keine Kreditkarte',
-    'Keine Provision',
-];
 
 export default function FeatureHero({
     theme = 'indigo',
@@ -140,7 +134,7 @@ export default function FeatureHero({
     title,
     description,
     chips = [],
-    primaryCta = DEFAULT_PRIMARY,
+    primaryCta: primaryCtaProp,
     secondaryCta,
     aiCapsule,
     aiCapsules,
@@ -149,8 +143,16 @@ export default function FeatureHero({
     image,
     visual,
     children,
+    market = 'de',
 }: FeatureHeroProps) {
     const t = featureHeroThemes[theme];
+    const common = getFeatureCommon(market);
+    const lang = htmlLangTags[market];
+    const primaryCta = primaryCtaProp ?? {
+        label: common.hero.primaryCta,
+        href: APP_REGISTER_BY_MARKET[market],
+        external: true,
+    };
     const capsules = aiCapsules && aiCapsules.length > 0 ? aiCapsules : aiCapsule ? [aiCapsule] : [];
     const primaryClass =
         'group inline-flex w-full sm:w-fit items-center justify-center whitespace-nowrap rounded-xl bg-gradient-to-r from-indigo-600 to-sky-500 px-7 py-3.5 text-base font-semibold text-white shadow-[0_14px_34px_-14px_rgba(79,70,229,0.8)] transition-all duration-200 hover:brightness-110';
@@ -166,7 +168,11 @@ export default function FeatureHero({
                     aria-hidden="true"
                 />
                 <div className="relative">
-                    <Breadcrumbs items={breadcrumbs} />
+                    <Breadcrumbs
+                        items={breadcrumbs}
+                        homeHref={sitePagePath(market, 'home') ?? '/'}
+                        homeLabel={common.breadcrumbHome}
+                    />
                 </div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-8">
                     <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center">
@@ -178,7 +184,7 @@ export default function FeatureHero({
 
                             <h1
                                 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 leading-[1.1] mb-5 hyphens-none"
-                                lang="de"
+                                lang={lang}
                             >
                                 {title}
                             </h1>
@@ -227,7 +233,7 @@ export default function FeatureHero({
 
                             {/* Eine ruhige Vertrauenszeile statt zwei */}
                             <div className="mt-6 flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-2 text-sm text-gray-500">
-                                {DEFAULT_TRUST.map((item) => (
+                                {common.hero.trust.map((item) => (
                                     <span key={item} className="flex items-center gap-1.5">
                                         <CheckCircle className="h-4 w-4 text-emerald-500" />
                                         {item}
@@ -239,7 +245,7 @@ export default function FeatureHero({
                                             <Star key={i} className="h-3.5 w-3.5 fill-current" />
                                         ))}
                                     </span>
-                                    4,6/5 auf Google · 500+ Studios
+                                    {common.hero.rating}
                                 </span>
                             </div>
 
@@ -271,11 +277,11 @@ export default function FeatureHero({
                     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                         {capsules.length > 0 && (
                             <>
-                                <p className={`mb-6 text-sm font-semibold uppercase tracking-wide ${t.accent} text-center lg:text-left`}>Kurz erklärt</p>
+                                <p className={`mb-6 text-sm font-semibold uppercase tracking-wide ${t.accent} text-center lg:text-left`}>{common.hero.shortExplained}</p>
                                 <div className={`grid gap-x-12 gap-y-8 ${capsules.length > 1 ? 'md:grid-cols-2' : 'max-w-3xl'}`}>
                                     {capsules.map((capsule) => (
                                         <div key={capsule.question}>
-                                            <h2 className="text-lg font-semibold text-gray-900 mb-2 hyphens-none" lang="de">
+                                            <h2 className="text-lg font-semibold text-gray-900 mb-2 hyphens-none" lang={lang}>
                                                 {capsule.question}
                                             </h2>
                                             <p className="text-gray-600 leading-relaxed">{capsule.answer}</p>
@@ -288,6 +294,7 @@ export default function FeatureHero({
                             <ContentAttribution
                                 dateModified={dateModified}
                                 datePublished={datePublished}
+                                market={market}
                                 className={capsules.length > 0 ? 'mt-8 lg:justify-start' : ''}
                             />
                         )}

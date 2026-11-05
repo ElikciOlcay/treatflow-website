@@ -29,9 +29,14 @@ export const TREATFLOW_AUTHORS = {
 export type TreatflowAuthorKey = keyof typeof TREATFLOW_AUTHORS;
 
 export function formatDeDate(isoDate: string): string {
+  return formatDate(isoDate, "de-DE");
+}
+
+/** ISO-Datum (YYYY-MM-DD) als ausgeschriebenes Datum in der Sprache `locale`. */
+export function formatDate(isoDate: string, locale: string): string {
   const [y, m, d] = isoDate.split("-").map(Number);
   if (!y || !m || !d) return isoDate;
-  return new Intl.DateTimeFormat("de-DE", {
+  return new Intl.DateTimeFormat(locale, {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -45,6 +50,8 @@ export type WebPageSchemaInput = {
   dateModified: string;
   datePublished?: string;
   authorKey?: TreatflowAuthorKey;
+  /** Default "de-DE" */
+  inLanguage?: string;
 };
 
 export function generateWebPageSchema(input: WebPageSchemaInput) {
@@ -57,7 +64,7 @@ export function generateWebPageSchema(input: WebPageSchemaInput) {
     url: input.url,
     dateModified: input.dateModified,
     ...(input.datePublished ? { datePublished: input.datePublished } : {}),
-    inLanguage: "de-DE",
+    inLanguage: input.inLanguage ?? "de-DE",
     isPartOf: {
       "@type": "WebSite",
       name: TREATFLOW_PUBLISHER.name,

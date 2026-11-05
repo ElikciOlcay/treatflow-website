@@ -21,7 +21,39 @@ app/site/content/<bereich>/
 ```
 
 Bereiche bisher: `navigation`, `footer`, `home` (Hero, Bewertungen, Zeitleiste,
-Funktionskacheln, Video, Preise, FAQ, CTA, SEO-Links, Meta, JSON-LD).
+Funktionskacheln, Video, Preise, FAQ, CTA, SEO-Links, Meta, JSON-LD), `feature-common`
+(gemeinsame Texte der Funktions-Bausteine) und die Funktionsseiten `appointment-calendar`,
+`online-booking`, `client-records`.
+
+### Funktionsseiten: `feature-common` + `FeaturePage`
+
+```
+app/site/content/feature-common/   Texte der Bausteine je Sprache (getFeatureCommon(market))
+  types.ts                         FeatureCommonContent + FeaturePageContent (Seiten-Inhaltstyp)
+app/site/content/<seite>/          types.ts (= FeaturePageContent), de/en/tr/nl/it/pl/es/fr.ts, index.ts
+app/site/pages/FeaturePage.tsx     generisches Layout: Hero → Video (nur wenn `video`) → Understand →
+                                   HowItWorks → Cards → SocialProofBar → FAQ → Related → CTA + JSON-LD
+app/site/pages/<Seite>Page.tsx     dünne Hülle: Content + pageKey + Theme
+```
+
+- Bausteine nehmen `market?: SiteMarket` (Default `"de"` = bisherige Texte, alle anderen DE-Seiten
+  bleiben unverändert): `FeatureHero` (Standard-CTA, Vertrauenszeile, „4,6/5 auf Google“, „Kurz
+  erklärt“, Breadcrumb-Home, `lang`), alle `FeatureSections` (Default-Überschriften, `lang`,
+  `FeaturePageCta` mit Register-URL je Markt und „Preise ansehen“ → `{ page: "pricing" }`),
+  `ContentAttribution` (Datum/Labels/Autor-Link je Sprache), `CTASection`, `QuickFacts`.
+  `generateWebPageSchema` hat `inLanguage` (Default `de-DE`).
+- Seiteninhalte sind serialisierbar (Icons als Namen, Links als `Href`). `feature`-Tags auf
+  Karten/FAQ/Kapseln/Related/Schritten, `GatedText` für Chips und Stichpunkte. Related-Links und
+  Hero-/CTA-Zweitbutton verschwinden, wenn die Zielseite in der Sprache fehlt
+  (`customer-workflows`, `treatflow-pay`, DE-only `/kundenkartei-software`).
+- `video` nur in `de.ts` (deutsche Funktionsvideos).
+- DE-Route `app/(de)/<slug>/page.tsx` baut Metadata aus `de.ts` (inkl. OpenGraph) und rendert
+  Navigation + `<XPage market="de" />` + Footer; `app/[market]/<en-slug>/page.tsx` nutzt
+  `buildPageMetadata`. TR-Money-Slugs (`app/tr/online-randevu-sistemi`, `app/tr/musteri-takip-programi`)
+  rendern dieselbe Seite in `TrSeoShell` (Meta-Titel/-Beschreibung aus dem früheren TR-SEO-Text).
+- Neue Funktionsseite mit gleichem Layout: Content-Ordner anlegen, `<X>Page.tsx` mit
+  `FeaturePage` bauen, DE- und [market]-Route umstellen. HTML der DE-Seite vorher/nachher per curl
+  vergleichen (für die drei Seiten: Markup + JSON-LD identisch).
 
 Regeln:
 
@@ -85,6 +117,9 @@ crawlbaren Sprachlinks (wie früher `FooterEn`).
   `tr-seo/TrSeoShell.tsx`, `en/try-forms`, `tr/try-forms` nutzen sie.
   Entfernt: `NavigationEn.tsx`, `FooterEn.tsx`, `HomePageEn.tsx`, `funktionenNav.ts`.
 - Inhalte für de, en, tr, nl, it, pl, es, fr (home, navigation, footer).
+- Funktions-Bausteine sprachfähig (`feature-common`), Terminkalender, Online-Buchungen und
+  Kundenverwaltung in allen 8 Sprachen auf dem DE-Layout (alte `FeaturePageEn`-Nutzung für diese
+  drei Routen und die TR-`TrMoneyPage` für Buchung/Kundenverwaltung ersetzt).
 - Gutscheine: `app/[market]/vouchers` → 404 für alle Sprachen, `seoPageSlugs.vouchers` nur DE
   (kein hreflang/Sitemap mehr), robots `/*/vouchers`.
 
@@ -108,9 +143,6 @@ crawlbaren Sprachlinks (wie früher `FooterEn`).
 | --- | --- | --- |
 | Funktionen | `app/(de)/funktionen/page.tsx` | `app/[market]/features` |
 | Preise | `app/(de)/preise/page.tsx` | `app/[market]/pricing` (TR: `app/tr/fiyatlar`) |
-| Terminkalender | `app/(de)/terminkalender/page.tsx` | `app/[market]/appointment-calendar` |
-| Online-Buchungen | `app/(de)/online-buchungen/page.tsx` | `app/[market]/online-booking` (TR: `app/tr/online-randevu-sistemi`) |
-| Kundenverwaltung | `app/(de)/kundenverwaltung/page.tsx` | `app/[market]/client-records` (TR: `app/tr/musteri-takip-programi`) |
 | Formulare | `app/(de)/formulare/page.tsx` | `app/[market]/forms` |
 | Behandlungsdokumentation | `app/(de)/behandlungsdokumentation/page.tsx` | `app/[market]/treatment-documentation` |
 | Nachrichten | `app/(de)/nachrichtenautomatisierung/page.tsx` | `app/[market]/messaging` (ohne WhatsApp) |
@@ -123,7 +155,18 @@ crawlbaren Sprachlinks (wie früher `FooterEn`).
 Viele DE-Funktionsseiten nutzen `ProductVideoSection` mit deutschen Videos: in anderen Sprachen
 weglassen, bis es Videos gibt. `SocialProofBar` nimmt `content={getHomeContent(market).socialProof}`.
 
+Die übrigen [market]-Seiten nutzen noch `FeaturePageEn` + `core-feature-pages.ts`/`feature-pages-intl.ts`
+(forms, treatment-documentation, messaging, integrations, shop, studio-website). Die meisten DE-Quellen
+nutzen bereits FeatureHero/FeatureSections → mit `FeaturePage` (ggf. um Spezialsektionen erweitern) umstellbar.
+
 ### Sonstiges / bekannt
+
+- `bookingPage`/`crmPage` in `app/i18n/tr-seo/money-pages.ts` sind ungenutzt (TR-Seiten rendern jetzt
+  `FeaturePage`); die anderen TR-Money-Pages nennen teils noch „WhatsApp ve e-posta“ – prüfen.
+- Treatflow-Pay-Gebühr (2,69 %) wird für alle Pay-Märkte übernommen – prüfen, ob außerhalb DACH gleich.
+- Übersetzungen der drei Funktionsseiten von Muttersprachlern gegenlesen, u. a. Raum-Begriffe
+  („cabine“/„cabinas“/„cabines“/„gabinety“), PL „gabinety“ kollidiert mit „gabinet medycyny estetycznej“;
+  TR-Aussage „KVKK ve GDPR uyumlu“ rechtlich bestätigen.
 
 - Hero-Bild `hero-startseite-en.png` zeigt evtl. Kassen-UI – für Nicht-DE ggf. neues Bild.
 - „Referenzen“-Link (`/#testimonials`) zielt auch auf DE ins Leere (kein `id="testimonials"` auf
