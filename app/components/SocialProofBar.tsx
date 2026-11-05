@@ -1,24 +1,10 @@
 import { Star, ExternalLink } from 'lucide-react';
+import { homeDe } from '@/app/site/content/home/de';
+import type { SocialProofContent } from '@/app/site/content/home/types';
 
-const reviews = [
-    {
-        text: 'Support ist herausragend – immer nett, freundlich und lösungsorientiert. Klare Empfehlung!',
-        name: 'Velura Saarburg',
-        studio: 'Laser-Haarentfernung',
-    },
-    {
-        text: 'Unschlagbar im Preis und intuitiv zu bedienen. Mein Wunsch wurde innerhalb eines Tages umgesetzt!',
-        name: 'Stefanie R.',
-        studio: 'Local Guide',
-    },
-    {
-        text: 'Von Phorest gewechselt – Preisleistung ist super. Kann ich mit bestem Gewissen empfehlen.',
-        name: 'Sharon U.',
-        studio: 'Kosmetikstudio',
-    },
-];
 
-export default function SocialProofBar() {
+/** Bewertungsleiste. Ohne Props = deutsche Texte. */
+export default function SocialProofBar({ content = homeDe.socialProof }: { content?: SocialProofContent } = {}) {
     return (
         <section className="py-12 bg-gray-50 border-y border-gray-100">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,7 +15,7 @@ export default function SocialProofBar() {
                                 <Star key={i} className="h-5 w-5 fill-current" />
                             ))}
                         </div>
-                        <span className="text-sm font-semibold text-gray-900">4,6/5 auf Google</span>
+                        <span className="text-sm font-semibold text-gray-900">{content.rating}</span>
                         <span className="text-xs text-gray-400">|</span>
                         <a
                             href="https://www.google.com/maps?cid=3775494386032646257"
@@ -37,16 +23,16 @@ export default function SocialProofBar() {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-indigo-600 transition-colors"
                         >
-                            Alle Reviews ansehen
+                            {content.allReviews}
                             <ExternalLink className="h-3 w-3" />
                         </a>
                     </div>
                     <p className="text-sm text-gray-600">
-                        Bereits von <span className="font-semibold text-gray-900">500+ Studios</span> getestet
+                        {content.tested.before}<span className="font-semibold text-gray-900">{content.tested.highlight}</span>{content.tested.after}
                     </p>
                 </div>
                 <div className="grid md:grid-cols-3 gap-4">
-                    {reviews.map((review) => (
+                    {content.reviews.map((review) => (
                         <div key={review.name} className="bg-white rounded-xl p-5 border border-gray-100">
                             <div className="flex text-amber-400 mb-3">
                                 {[...Array(5)].map((_, i) => (
@@ -64,6 +50,9 @@ export default function SocialProofBar() {
                         </div>
                     ))}
                 </div>
+                {content.note && (
+                    <p className="mt-4 text-center text-xs text-gray-400">{content.note}</p>
+                )}
             </div>
         </section>
     );

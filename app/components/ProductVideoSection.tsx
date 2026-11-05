@@ -10,6 +10,10 @@ type ProductVideoSectionProps = {
     videoSrc?: string;
     posterSrc?: string;
     posterAlt?: string;
+    /** Button-Text, aria-Präfix und Fallback-Text (Default: Deutsch). */
+    playLabel?: string;
+    playAriaPrefix?: string;
+    unsupported?: string;
 };
 
 /**
@@ -23,6 +27,9 @@ export default function ProductVideoSection({
     videoSrc = "/videos/treatflow-produktfilm.mp4",
     posterSrc = "/images/video/treatflow-produktfilm-poster.jpg",
     posterAlt = "Treatflow Produktfilm: Kalender, Online-Buchung und Kasse im Überblick",
+    playLabel = "Video ansehen",
+    playAriaPrefix = "Video abspielen",
+    unsupported = "Dein Browser kann dieses Video nicht abspielen.",
 }: ProductVideoSectionProps) {
     const [playing, setPlaying] = useState(false);
 
@@ -47,14 +54,14 @@ export default function ProductVideoSection({
                             preload="auto"
                             className="absolute inset-0 w-full h-full"
                         >
-                            Dein Browser kann dieses Video nicht abspielen.
+                            {unsupported}
                         </video>
                     ) : (
                         <button
                             type="button"
                             onClick={() => setPlaying(true)}
                             className="group absolute inset-0 w-full h-full cursor-pointer"
-                            aria-label={`Video abspielen: ${title}`}
+                            aria-label={`${playAriaPrefix}: ${title}`}
                         >
                             <Image
                                 src={posterSrc}
@@ -70,7 +77,7 @@ export default function ProductVideoSection({
                                     <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
                                         <Play className="h-5 w-5 fill-current ml-0.5" />
                                     </span>
-                                    Video ansehen
+                                    {playLabel}
                                 </span>
                             </span>
                         </button>

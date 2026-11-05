@@ -1,12 +1,47 @@
+import { Fragment } from 'react';
 import Link from 'next/link';
-import { APP_LOGIN_URL, APP_REGISTER_URL } from '../i18n/market-access';
 import DeSiteSchema from './DeSiteSchema';
 import CookieSettingsLink from './CookieSettingsLink';
+import { marketHomePath, marketLabels, switchableMarkets } from '../i18n/config';
+import type { SiteMarket } from '../site/content/shared';
+import { getFooterContent, type FooterContent } from '../site/content/footer';
+import { resolveFooter, type ResolvedFooterLink } from '../site/content/footer/resolve';
 
-export default function Footer() {
+const linkClass = "text-gray-400 hover:text-white transition-colors";
+
+function FooterLinkItem({ link }: { link: ResolvedFooterLink }) {
+  if (link.kind === 'cookie-settings') {
+    return (
+      <li>
+        <CookieSettingsLink
+          label={link.label}
+          className="text-gray-400 hover:text-white transition-colors bg-transparent border-0 p-0 cursor-pointer text-sm"
+        />
+      </li>
+    );
+  }
+  if (link.kind === 'external') {
+    return <li><a href={link.href} target="_blank" rel="noopener noreferrer" className={linkClass}>{link.label}</a></li>;
+  }
+  return <li><Link href={link.href} className={linkClass}>{link.label}</Link></li>;
+}
+
+/**
+ * Footer aller Sprachen. Ohne Props = deutsche Seite (wie bisher, inkl. DE-Schema).
+ * Inhalte: app/site/content/footer/<lang>.ts
+ */
+export default function Footer({
+  market = 'de',
+  content,
+}: {
+  market?: SiteMarket;
+  content?: FooterContent;
+} = {}) {
+  const footer = resolveFooter(content ?? getFooterContent(market), market);
+
   return (
     <>
-    <DeSiteSchema />
+    {market === 'de' && <DeSiteSchema />}
     <footer id="contact" className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10">
@@ -17,14 +52,14 @@ export default function Footer() {
               className="h-8 w-auto mb-4"
             />
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
-              Dein digitaler Studio-Assistent. Made in Austria.
+              {footer.tagline}
             </p>
             <div className="flex space-x-4">
               <a
                 href="https://www.instagram.com/treatflow.io/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Treatflow auf Instagram"
+                aria-label={footer.instagramAria}
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -34,118 +69,54 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
-            <h3 className="font-semibold mb-4">Funktionen</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/terminkalender" className="text-gray-400 hover:text-white transition-colors">Terminkalender</Link></li>
-              <li><Link href="/online-buchungen" className="text-gray-400 hover:text-white transition-colors">Online-Buchungen</Link></li>
-              <li><Link href="/treatflow-pay" className="text-gray-400 hover:text-white transition-colors">Treatflow Pay</Link></li>
-              <li><Link href="/kassensystem-kosmetikstudio" className="text-gray-400 hover:text-white transition-colors">Kassensystem</Link></li>
-              <li><Link href="/gutscheine-kosmetikstudio" className="text-gray-400 hover:text-white transition-colors">Gutscheine</Link></li>
-              <li><Link href="/kundenverwaltung" className="text-gray-400 hover:text-white transition-colors">Kundenverwaltung</Link></li>
-              <li><Link href="/formulare" className="text-gray-400 hover:text-white transition-colors">Formulare</Link></li>
-              <li><Link href="/formulare-testen" className="text-gray-400 hover:text-white transition-colors">Formulare testen</Link></li>
-              <li><Link href="/behandlungsdokumentation" className="text-gray-400 hover:text-white transition-colors">Dokumentation</Link></li>
-              <li><Link href="/nachrichtenautomatisierung" className="text-gray-400 hover:text-white transition-colors">Nachrichten</Link></li>
-              <li><Link href="/kunden-workflows" className="text-gray-400 hover:text-white transition-colors">Kunden-Workflows</Link></li>
-              <li><Link href="/nisv-dokumentation" className="text-gray-400 hover:text-white transition-colors">NiSV-Dokumentation</Link></li>
-              <li><Link href="/integrationen" className="text-gray-400 hover:text-white transition-colors">Integrationen</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold mb-4">Branchen</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/kosmetikstudio-software" className="text-gray-400 hover:text-white transition-colors">Kosmetikstudios</Link></li>
-              <li><Link href="/schoenheitssalon-software" className="text-gray-400 hover:text-white transition-colors">Schönheitssalons</Link></li>
-              <li><Link href="/laser-haarentfernung-software" className="text-gray-400 hover:text-white transition-colors">Laser & IPL</Link></li>
-              <li><Link href="/permanent-makeup-software" className="text-gray-400 hover:text-white transition-colors">Permanent Makeup</Link></li>
-              <li><Link href="/aesthetische-medizin-software" className="text-gray-400 hover:text-white transition-colors">Ästhetische Medizin</Link></li>
-              <li><Link href="/nagelstudio-software" className="text-gray-400 hover:text-white transition-colors">Nagelstudios</Link></li>
-              <li><Link href="/fusspflege-software" className="text-gray-400 hover:text-white transition-colors">Fußpflege</Link></li>
-              <li><Link href="/lash-studio-software" className="text-gray-400 hover:text-white transition-colors">Lash Studios</Link></li>
-              <li><Link href="/tattoo-studio-software" className="text-gray-400 hover:text-white transition-colors">Tattoo Studios</Link></li>
-              <li><Link href="/spa-wellness-software" className="text-gray-400 hover:text-white transition-colors">Spa & Wellness</Link></li>
-              <li><Link href="/massage-software" className="text-gray-400 hover:text-white transition-colors">Massage</Link></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold mb-4">Produkt</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/preise" className="text-gray-400 hover:text-white transition-colors">Preise</Link></li>
-              <li><Link href="/kosmetikstudio-software-vergleich" className="text-gray-400 hover:text-white transition-colors">Software-Vergleich</Link></li>
-              <li><Link href="/treatflow-vs-treatwell" className="text-gray-400 hover:text-white transition-colors">Treatflow vs. Treatwell</Link></li>
-              <li><Link href="/kundenkartei-software" className="text-gray-400 hover:text-white transition-colors">Kundenkartei Software</Link></li>
-              <li><Link href="/shop" className="text-gray-400 hover:text-white transition-colors">Shop</Link></li>
-              <li><Link href="/website-fuer-kosmetikstudios" className="text-gray-400 hover:text-white transition-colors">Studio-Website</Link></li>
-              <li><a href={APP_REGISTER_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Kostenlos testen</a></li>
-              <li><a href={APP_LOGIN_URL} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Login</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold mb-4">Unternehmen</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/ueber-uns" className="text-gray-400 hover:text-white transition-colors">Über uns</Link></li>
-              <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
-              <li><Link href="/neuigkeiten" className="text-gray-400 hover:text-white transition-colors">Neuigkeiten</Link></li>
-              <li><Link href="/hygieneplan-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Hygieneplan PDF</Link></li>
-              <li><Link href="/nisv-checkliste-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">NiSV-Checkliste PDF</Link></li>
-              <li><Link href="/kundenkartei-vorlage-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Kundenkartei-Vorlage</Link></li>
-              <li><Link href="/no-show-playbook-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">No-Show-Playbook</Link></li>
-              <li><Link href="/preisliste-vorlage-kosmetikstudio-pdf" className="text-gray-400 hover:text-white transition-colors">Preislisten-Vorlage</Link></li>
-              <li><Link href="/formulare-testen" className="text-gray-400 hover:text-white transition-colors">Formulare live testen</Link></li>
-              <li><Link href="/kontakt" className="text-gray-400 hover:text-white transition-colors">Kontakt</Link></li>
-            </ul>
-            <h3 className="font-semibold mb-4 mt-8">Regionen</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/kosmetikstudio-software-deutschland" className="text-gray-400 hover:text-white transition-colors">Deutschland</Link></li>
-              <li><Link href="/kosmetikstudio-software-oesterreich" className="text-gray-400 hover:text-white transition-colors">Österreich</Link></li>
-              <li><Link href="/kosmetikstudio-software-berlin" className="text-gray-400 hover:text-white transition-colors">Berlin</Link></li>
-              <li><Link href="/kosmetikstudio-software-wien" className="text-gray-400 hover:text-white transition-colors">Wien</Link></li>
-            </ul>
-            <h3 className="font-semibold mb-4 mt-8">Rechtliches</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/datenschutz" className="text-gray-400 hover:text-white transition-colors">Datenschutz</Link></li>
-              <li>
-                <CookieSettingsLink
-                  label="Cookie-Einstellungen"
-                  className="text-gray-400 hover:text-white transition-colors bg-transparent border-0 p-0 cursor-pointer text-sm"
-                />
-              </li>
-              <li><Link href="/agb" className="text-gray-400 hover:text-white transition-colors">AGB</Link></li>
-              <li><Link href="/impressum" className="text-gray-400 hover:text-white transition-colors">Impressum</Link></li>
-            </ul>
-          </div>
+          {footer.columns.map((column, columnIndex) => (
+            <div key={columnIndex}>
+              {column.sections.map((section, sectionIndex) => (
+                <Fragment key={section.title}>
+                  <h3 className={sectionIndex === 0 ? "font-semibold mb-4" : "font-semibold mb-4 mt-8"}>{section.title}</h3>
+                  <ul className="space-y-2 text-sm">
+                    {section.links.map((link) => (
+                      <FooterLinkItem key={`${link.kind}-${link.label}`} link={link} />
+                    ))}
+                  </ul>
+                </Fragment>
+              ))}
+            </div>
+          ))}
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="mb-8">
-            <h3 className="font-semibold text-gray-300 mb-4 text-sm">Beliebte Themen</h3>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { href: '/online-buchungen', label: 'Online-Terminbuchung Kosmetikstudio' },
-                { href: '/behandlungsdokumentation-kosmetikstudio', label: 'Behandlungsdokumentation Kosmetikstudio' },
-                { href: '/digitale-anamnese-kosmetikstudio', label: 'Digitale Anamnese Kosmetikstudio' },
-                { href: '/nachrichtenautomatisierung', label: 'WhatsApp-Erinnerungen Kosmetikstudio' },
-                { href: '/terminkalender', label: 'Terminsoftware Kosmetikstudio' },
-                { href: '/kundenverwaltung', label: 'Kundenkartei Kosmetikstudio' },
-                { href: '/anamnesebogen-kosmetikstudio', label: 'Anamnesebogen Kosmetikstudio' },
-                { href: '/nisv-dokumentation-kosmetikstudio', label: 'NiSV-Dokumentation' },
-                { href: '/kosmetikstudio-kasse', label: 'Kosmetikstudio Kasse' },
-                { href: '/kassensystem-kosmetikstudio-deutschland', label: 'Kassensystem Kosmetikstudio Deutschland' },
-                { href: '/registrierkasse-kosmetikstudio-oesterreich', label: 'Registrierkasse Kosmetikstudio Österreich' },
-              ].map((item) => (
-                <Link key={item.href} href={item.href} className="text-xs text-gray-500 hover:text-white transition-colors bg-gray-800 px-3 py-1 rounded-full">
-                  {item.label}
+          {footer.popularTopics.length > 0 && (
+            <div className="mb-8">
+              <h3 className="font-semibold text-gray-300 mb-4 text-sm">{footer.popularTopicsTitle}</h3>
+              <div className="flex flex-wrap gap-2">
+                {footer.popularTopics.map((item) => (
+                  <Link key={item.href + item.label} href={item.href} className="text-xs text-gray-500 hover:text-white transition-colors bg-gray-800 px-3 py-1 rounded-full">
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+          <div className="text-center text-gray-400 text-sm">
+            <p>&copy; {new Date().getFullYear()} Treatflow. {footer.rights}</p>
+          </div>
+          {market !== 'de' && (
+            // Crawlbare Sprachlinks (wie im alten FooterEn) – auf DE bewusst nicht, damit DE unverändert bleibt
+            <div className="mt-4 flex flex-wrap justify-center gap-4 text-sm text-gray-500">
+              {switchableMarkets.map((m) => (
+                <Link
+                  key={m}
+                  href={marketHomePath(m)}
+                  hrefLang={m}
+                  lang={m}
+                  className="hover:text-white transition-colors"
+                >
+                  {marketLabels[m]}
                 </Link>
               ))}
             </div>
-          </div>
-          <div className="text-center text-gray-400 text-sm">
-            <p>&copy; {new Date().getFullYear()} Treatflow. Alle Rechte vorbehalten.</p>
-          </div>
+          )}
         </div>
       </div>
     </footer>

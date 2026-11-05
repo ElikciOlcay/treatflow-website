@@ -89,7 +89,13 @@ const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
 type PageSlugMap = Partial<Record<Market, string>>;
 
 /** Seiten, die es in den Bundle-Sprachen (NL/IT/PL/ES/FR) nicht gibt. */
-const NOT_IN_BUNDLE_LANGS: readonly SeoPageKey[] = ["news", "try-forms", "early-access", "point-of-sale"];
+const NOT_IN_BUNDLE_LANGS: readonly SeoPageKey[] = [
+  "news",
+  "try-forms",
+  "early-access",
+  "point-of-sale",
+  "vouchers",
+];
 
 /** Alle Maerkte die in hreflang/Sitemap erscheinen sollen. */
 const seoMarkets: readonly Market[] = ["de", ...prefixedMarkets];
@@ -138,11 +144,10 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
   "point-of-sale": {
     de: "kassensystem-kosmetikstudio",
   },
-  vouchers: (() => {
-    const map = buildSlugMap("vouchers");
-    delete map.tr;
-    return map;
-  })(),
+  // Gutscheine sind DACH-only (siehe feature-availability.ts) → nur DE.
+  vouchers: {
+    de: "gutscheine-kosmetikstudio",
+  },
   messaging: buildSlugMap("messaging"),
   integrations: buildSlugMap("integrations"),
   features: buildSlugMap("features"),

@@ -1,14 +1,12 @@
-import NavigationEn from "@/app/components/NavigationEn";
-import FooterEn from "@/app/components/FooterEn";
-import { getDictionaryForMarket } from "@/app/i18n/dictionaries";
+import Navigation from "@/app/components/Navigation";
+import Footer from "@/app/components/Footer";
 
-export default async function TrSeoShell({ children }: { children: React.ReactNode }) {
-  const dict = await getDictionaryForMarket("tr");
+export default function TrSeoShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-white">
-      <NavigationEn dict={dict} locale="tr" />
+      <Navigation market="tr" />
       {children}
-      <FooterEn dict={dict} locale="tr" />
+      <Footer market="tr" />
     </div>
   );
 }

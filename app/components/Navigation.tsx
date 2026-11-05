@@ -1,21 +1,23 @@
-import {
-    ChevronDown, Sparkles, Zap, Palette,
-    Stethoscope, Pen, Gem, Eye, Waves, Hand, Footprints
-} from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import Link from 'next/link';
 import MobileMenu from "./MobileMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { funktionenGroups, type FunktionenNavItem } from "./funktionenNav";
-import { APP_LOGIN_URL, APP_REGISTER_URL } from "../i18n/market-access";
+import { APP_LOGIN_BY_MARKET, APP_REGISTER_BY_MARKET } from "../i18n/market-access";
+import { marketHomePath } from "../i18n/config";
+import { siteIcons } from "../site/icons";
+import type { SiteMarket } from "../site/content/shared";
+import { getNavigationContent, type NavigationContent } from "../site/content/navigation";
+import { resolveNavigation, type ResolvedNavItem } from "../site/content/navigation/resolve";
 
-function FunktionenLink({ item }: { item: FunktionenNavItem }) {
+function FunktionenLink({ item }: { item: ResolvedNavItem }) {
+    const Icon = siteIcons[item.icon];
     return (
         <Link
             href={item.href}
             className="flex items-start gap-3 p-2.5 rounded-lg hover:bg-gray-50 transition-colors"
         >
             <div className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 ${item.color}`}>
-                <item.icon className="h-4 w-4" />
+                <Icon className="h-4 w-4" />
             </div>
             <div>
                 <div className="text-sm font-medium text-gray-900">{item.label}</div>
@@ -25,26 +27,27 @@ function FunktionenLink({ item }: { item: FunktionenNavItem }) {
     );
 }
 
-const branchen = [
-    { href: '/kosmetikstudio-software', label: 'Kosmetikstudios', desc: 'Die All-in-One Lösung', icon: Sparkles, color: 'text-indigo-600 bg-indigo-100' },
-    { href: '/laser-haarentfernung-software', label: 'Laser Haarentfernung', desc: 'NiSV-konform dokumentieren', icon: Zap, color: 'text-blue-600 bg-blue-100' },
-    { href: '/permanent-makeup-software', label: 'Permanent Makeup', desc: 'PMU und Microblading', icon: Palette, color: 'text-rose-600 bg-rose-100' },
-    { href: '/aesthetische-medizin-software', label: 'Ästhetische Medizin', desc: 'Praxis- und Patientenverwaltung', icon: Stethoscope, color: 'text-teal-600 bg-teal-100' },
-    { href: '/tattoo-studio-software', label: 'Tattoo Studios', desc: 'Einwilligungen und Buchungen', icon: Pen, color: 'text-gray-600 bg-gray-200' },
-    { href: '/nagelstudio-software', label: 'Nagelstudios', desc: 'Termine und Kundenvorlieben', icon: Gem, color: 'text-pink-600 bg-pink-100' },
-    { href: '/fusspflege-software', label: 'Fußpflege', desc: 'Kundenkartei und Befunde', icon: Footprints, color: 'text-emerald-600 bg-emerald-100' },
-    { href: '/lash-studio-software', label: 'Lash Studios', desc: 'Wimpern und Refill-Planung', icon: Eye, color: 'text-violet-600 bg-violet-100' },
-    { href: '/spa-wellness-software', label: 'Spa & Wellness', desc: 'Gästeverwaltung und Buchungen', icon: Waves, color: 'text-cyan-600 bg-cyan-100' },
-    { href: '/massage-software', label: 'Massage-Praxen', desc: 'Termine und Gesundheitsfragebögen', icon: Hand, color: 'text-amber-600 bg-amber-100' },
-];
+/**
+ * Hauptnavigation aller Sprachen. Ohne Props = deutsche Seite (wie bisher).
+ * Inhalte: app/site/content/navigation/<lang>.ts
+ */
+export default function Navigation({
+    market = "de",
+    content,
+}: {
+    market?: SiteMarket;
+    content?: NavigationContent;
+} = {}) {
+    const nav = resolveNavigation(content ?? getNavigationContent(market), market);
+    const loginUrl = APP_LOGIN_BY_MARKET[market];
+    const registerUrl = APP_REGISTER_BY_MARKET[market];
 
-export default function Navigation() {
     return (
         <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center">
-                        <Link href="/" className="flex items-center">
+                        <Link href={marketHomePath(market)} className="flex items-center">
                             <img
                                 src="/images/logos/treatflow-logo.svg"
                                 alt="Treatflow Logo"
@@ -56,13 +59,13 @@ export default function Navigation() {
                         {/* Funktionen Mega Menu */}
                         <div className="relative group">
                             <button className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors text-sm font-medium">
-                                Funktionen
+                                {nav.featuresLabel}
                                 <ChevronDown className="ml-1 h-4 w-4" />
                             </button>
                             <div className="absolute top-full -left-4 pt-2 w-[760px] max-w-[calc(100vw-2rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                                 <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-4">
                                     <div className="grid grid-cols-3 gap-2">
-                                        {funktionenGroups.map((group) => (
+                                        {nav.featureGroups.map((group) => (
                                             <div key={group.title}>
                                                 <p className="text-[11px] font-semibold uppercase tracking-wider text-gray-400 px-2.5 mb-1">
                                                     {group.title}
@@ -75,14 +78,16 @@ export default function Navigation() {
                                             </div>
                                         ))}
                                     </div>
-                                    <div className="border-t border-gray-100 mt-3 pt-3">
-                                        <Link
-                                            href="/funktionen"
-                                            className="block text-center text-sm font-medium text-indigo-600 hover:text-indigo-700 py-2 rounded-lg hover:bg-indigo-50 transition-colors"
-                                        >
-                                            Alle Funktionen ansehen
-                                        </Link>
-                                    </div>
+                                    {nav.allFeatures && (
+                                        <div className="border-t border-gray-100 mt-3 pt-3">
+                                            <Link
+                                                href={nav.allFeatures.href}
+                                                className="block text-center text-sm font-medium text-indigo-600 hover:text-indigo-700 py-2 rounded-lg hover:bg-indigo-50 transition-colors"
+                                            >
+                                                {nav.allFeatures.label}
+                                            </Link>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -90,54 +95,55 @@ export default function Navigation() {
                         {/* Branchen Dropdown */}
                         <div className="relative group">
                             <button className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors text-sm font-medium">
-                                Branchen
+                                {nav.industriesLabel}
                                 <ChevronDown className="ml-1 h-4 w-4" />
                             </button>
                             <div className="absolute top-full -left-4 mt-2 w-[540px] bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-4">
                                 <div className="grid grid-cols-2 gap-1">
-                                    {branchen.map((item) => (
-                                        <Link
-                                            key={item.href}
-                                            href={item.href}
-                                            className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
-                                        >
-                                            <div className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 ${item.color}`}>
-                                                <item.icon className="h-4 w-4" />
-                                            </div>
-                                            <div>
-                                                <div className="text-sm font-medium text-gray-900">{item.label}</div>
-                                                <div className="text-xs text-gray-500 mt-0.5">{item.desc}</div>
-                                            </div>
-                                        </Link>
-                                    ))}
+                                    {nav.industries.map((item) => {
+                                        const Icon = siteIcons[item.icon];
+                                        return (
+                                            <Link
+                                                key={item.href}
+                                                href={item.href}
+                                                className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                                            >
+                                                <div className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 ${item.color}`}>
+                                                    <Icon className="h-4 w-4" />
+                                                </div>
+                                                <div>
+                                                    <div className="text-sm font-medium text-gray-900">{item.label}</div>
+                                                    <div className="text-xs text-gray-500 mt-0.5">{item.desc}</div>
+                                                </div>
+                                            </Link>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>
 
-                        <Link href="/preise" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Preise</Link>
-                        <Link href="/blog" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Blog</Link>
-                        <Link href="/neuigkeiten" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Neuigkeiten</Link>
-                        <Link href="/#testimonials" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Referenzen</Link>
-                        <Link href="/kontakt" className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">Kontakt</Link>
+                        {nav.links.map((link) => (
+                            <Link key={link.href} href={link.href} className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors">{link.label}</Link>
+                        ))}
                         <a
-                            href={APP_LOGIN_URL}
+                            href={loginUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
                         >
-                            Login
+                            {nav.login}
                         </a>
-                        <LanguageSwitcher current="de" />
+                        <LanguageSwitcher current={market} />
                         <a
-                            href={APP_REGISTER_URL}
+                            href={registerUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
                         >
-                            Kostenlos testen
+                            {nav.cta}
                         </a>
                     </div>
-                    <MobileMenu />
+                    <MobileMenu market={market} nav={nav} loginUrl={loginUrl} registerUrl={registerUrl} />
                 </div>
             </div>
         </nav>

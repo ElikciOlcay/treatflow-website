@@ -1,0 +1,386 @@
+import type { HomeContent } from "./types";
+
+/**
+ * Page d'accueil française. Mêmes sections que `en.ts`, sans les fonctionnalités
+ * réservées à la région DACH (caisse, cartes cadeaux, WhatsApp, Lexware, SumUp,
+ * NiSV). Pas encore de vidéo produit – le film existant est en allemand.
+ */
+export const homeFr: HomeContent = {
+  meta: {
+    title: "Logiciel pour institut de beauté et clinique esthétique",
+    description:
+      "Treatflow, le logiciel tout-en-un pour instituts de beauté, cliniques esthétiques et métiers du soin : prise de rendez-vous en ligne, fiches clients, formulaires numériques, documentation des soins et rappels. 14 jours d'essai gratuit.",
+    keywords: [
+      "logiciel institut de beauté",
+      "logiciel esthéticienne",
+      "prise de rendez-vous en ligne institut",
+      "logiciel clinique esthétique",
+      "fiche client esthétique",
+      "agenda institut de beauté",
+    ],
+  },
+
+  schema: {
+    software: {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      name: "Treatflow",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web Browser",
+      inLanguage: "fr",
+      description:
+        "Treatflow est une plateforme de gestion tout-en-un pour instituts de beauté, cliniques esthétiques et métiers du soin. Elle réunit prise de rendez-vous en ligne, fiches clients, questionnaires et formulaires de consentement numériques, documentation des soins, photos avant/après et suivis automatisés. Hébergée dans l'UE.",
+      url: "https://www.treatflow.io/fr",
+      author: { "@type": "Organization", name: "Treatflow", url: "https://www.treatflow.io" },
+      offers: [
+        {
+          "@type": "Offer",
+          name: "Basic",
+          price: "39",
+          priceCurrency: "EUR",
+          billingIncrement: "P1M",
+          description: "Fiches clients, formulaires et documentation des soins",
+        },
+        {
+          "@type": "Offer",
+          name: "Booking",
+          price: "59",
+          priceCurrency: "EUR",
+          billingIncrement: "P1M",
+          description: "Agenda, prise de rendez-vous en ligne et rappels automatiques",
+        },
+      ],
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.6",
+        ratingCount: "19",
+        reviewCount: "19",
+        bestRating: "5",
+        worstRating: "1",
+      },
+      featureList: [
+        "Agenda avec prise de rendez-vous en ligne",
+        "Fiches clients numériques",
+        "Questionnaires et formulaires de consentement",
+        "Documentation des soins avec photos",
+        "Dictée vocale pour les notes de soin",
+        "Rappels automatiques par e-mail",
+        "Parcours clients",
+      ],
+    },
+  },
+
+  hero: {
+    badge: "Pour les instituts qui veulent se développer",
+    title: {
+      before: "Fini le chaos des rendez-vous,",
+      highlight: "la paperasse",
+      connector: "et",
+      end: "les lapins",
+    },
+    subtitle:
+      "Rendez-vous, clients, formulaires et documentation des soins dans une seule application claire. Votre équipe s'y retrouve tout de suite.",
+    primaryCta: "Essayer gratuitement 14 jours",
+    demoCta: "Réserver une démo",
+    checks: ["Sans carte bancaire", "Prêt en 2 minutes", "Migration des données offerte"],
+    rating: "4,6/5 sur Google",
+    tested: { before: "Déjà testé par ", highlight: "plus de 500 instituts", after: "" },
+    calendarLocale: "fr-FR",
+    newBookingLabel: "Nouvelle réservation",
+    image: {
+      src: "/images/lifestyle/hero-startseite-en.png",
+      alt: "Treatflow sur ordinateur portable et tablette : agenda et fiches clients dans un institut moderne",
+    },
+    liveDemo: { href: { page: "try-features" }, label: "Tester les fonctionnalités en direct" },
+  },
+
+  socialProof: {
+    rating: "4,6/5 sur Google",
+    allReviews: "Voir tous les avis",
+    tested: { before: "Déjà testé par ", highlight: "plus de 500 instituts", after: "" },
+    reviews: [
+      {
+        text: "Le support est exceptionnel – toujours aimable, sympathique et orienté solutions. Je recommande vivement !",
+        name: "Velura Saarburg",
+        studio: "Épilation laser",
+      },
+      {
+        text: "Imbattable côté prix et intuitif à utiliser. Ma demande a été mise en œuvre en une journée !",
+        name: "Stefanie R.",
+        studio: "Local Guide",
+      },
+      {
+        text: "Passée de Phorest à Treatflow – excellent rapport qualité-prix. Je le recommande en toute confiance.",
+        name: "Sharon U.",
+        studio: "Institut de beauté",
+      },
+    ],
+    note: "Avis Google, traduits de l'allemand.",
+  },
+
+  studioDay: {
+    eyebrow: "Un rendez-vous, un seul système",
+    title: "De la réservation au suivi. Dans une seule application.",
+    subtitle: "Voici comment se déroule un rendez-vous avec Treatflow. Rien n'est saisi deux fois.",
+    steps: [
+      {
+        time: "lun. · 21:14",
+        module: "Réservation en ligne",
+        title: "Lena réserve le soir, depuis son canapé.",
+        text: "Pas d'appel, aucune commission par réservation. Le rendez-vous apparaît aussitôt dans l'agenda.",
+        meta: "Soin du visage · jeu. 10:45",
+        href: { page: "online-booking" },
+        icon: "calendar-days",
+        tone: "bg-indigo-50 text-indigo-600 ring-indigo-100",
+      },
+      {
+        time: "mer. · 10:45",
+        module: "Rappel",
+        title: "Le rappel part automatiquement.",
+        text: "La veille, par e-mail. Moins de rendez-vous oubliés, sans que personne n'ait à y penser.",
+        meta: "Envoyé · confirmé",
+        href: { page: "messaging" },
+        icon: "bell",
+        tone: "bg-sky-50 text-sky-600 ring-sky-100",
+      },
+      {
+        time: "jeu. · 10:40",
+        module: "Formulaires",
+        title: "Questionnaire rempli et signé sur la tablette.",
+        text: "Le formulaire est enregistré directement dans la fiche de Lena. Plus rien à recopier ensuite.",
+        meta: "Questionnaire · signé numériquement",
+        href: { page: "forms" },
+        icon: "file-pen-line",
+        tone: "bg-violet-50 text-violet-600 ring-violet-100",
+      },
+      {
+        time: "jeu. · 11:40",
+        module: "Documentation",
+        title: "Soin documenté, photos comprises.",
+        text: "Paramètres, produits et photos avant/après restent dans l'historique des soins.",
+        meta: "3 photos · paramètres enregistrés",
+        href: { page: "treatment-documentation" },
+        icon: "camera",
+        tone: "bg-rose-50 text-rose-600 ring-rose-100",
+      },
+      {
+        time: "ven. · 09:00",
+        module: "Suivi",
+        title: "Le suivi et la prochaine réservation se font tout seuls.",
+        text: "Un conseil d'entretien le lendemain, un rappel pour reprendre rendez-vous quelques semaines plus tard. Configuré une seule fois comme parcours client.",
+        meta: "Parcours · prochaine étape dans 4 semaines",
+        href: { page: "customer-workflows", fallback: "messaging" },
+        icon: "workflow",
+        tone: "bg-emerald-50 text-emerald-600 ring-emerald-100",
+      },
+    ],
+  },
+
+  features: {
+    title: "Moins de chaos. Plus de temps pour vos clients.",
+    subtitle: "Tout ce dont votre institut a besoin – dans une application que votre équipe comprend tout de suite.",
+    items: [
+      { href: { page: "appointment-calendar" }, icon: "calendar-days", label: "Agenda des rendez-vous", desc: "Tous vos rendez-vous dans une vue jour et semaine claire.", color: "bg-indigo-100 text-indigo-600" },
+      { href: { page: "online-booking" }, icon: "users", label: "Réservation en ligne", desc: "Vos clients réservent eux-mêmes – même en dehors de vos heures d'ouverture.", color: "bg-emerald-100 text-emerald-600" },
+      { href: { page: "client-records" }, icon: "file-text", label: "Fiches clients", desc: "Historique, notes et photos au même endroit, retrouvés en un instant.", color: "bg-blue-100 text-blue-600" },
+      { href: { page: "forms" }, icon: "clipboard-check", label: "Formulaires", desc: "Questionnaires et consentements numériques, remplis à l'avance via un lien.", color: "bg-orange-100 text-orange-600" },
+      { href: { page: "treatment-documentation" }, icon: "shield", label: "Documentation des soins", desc: "Documentez chaque soin correctement, avec photos et paramètres.", color: "bg-teal-100 text-teal-600" },
+      { href: { page: "treatflow-pay", fallback: "online-booking" }, icon: "wallet", label: "Treatflow Pay", desc: "Encaissez un acompte ou le paiement intégral en ligne dès la réservation.", color: "bg-green-100 text-green-600", feature: "pay" },
+      { href: { page: "messaging" }, icon: "bell", label: "Rappels", desc: "Les rappels automatiques par e-mail réduisent les rendez-vous manqués.", color: "bg-rose-100 text-rose-600" },
+      { href: { page: "customer-workflows", fallback: "messaging" }, icon: "workflow", label: "Parcours clients", desc: "Automatisez le suivi et la relance de vos clients en plusieurs étapes.", color: "bg-violet-100 text-violet-600" },
+    ],
+    cta: "Essayer gratuitement 14 jours",
+    ctaNote: "Sans carte bancaire. Résiliable à tout moment.",
+  },
+
+  pricing: {
+    eyebrow: "Des tarifs transparents",
+    titleBefore: "Des prix simples –",
+    titleHighlight: " sans frais cachés",
+    subtitle:
+      "Treatflow démarre à 39 €/mois (Basic) ou 59 €/mois (Booking). Essayez gratuitement pendant 14 jours – sans commission et sans risque.",
+    monthly: "Mensuel",
+    yearly: "Annuel",
+    saveBadge: "-10 %",
+    perMonth: "/mois",
+    perYear: "/an",
+    vatNote: "HT",
+    basic: {
+      name: "Basic",
+      monthlyPrice: "39 €",
+      yearlyPrice: "421 €",
+      yearlyHint: "35 €/mois • 47 € d'économie par an",
+      description:
+        "Questionnaires, formulaires de consentement et documentation des soins numériques – sans gestion des rendez-vous.",
+      included: [
+        "Fiches clients",
+        "Formulaires avec signature électronique",
+        "Documentation des soins et notes vocales",
+        "Photos avant/après",
+        "Notes d'équipe et tâches",
+        "Boutique et produits",
+        "Statistiques",
+        "Collaborateurs et rôles",
+        "Support par e-mail",
+      ],
+      excluded: [
+        "Agenda des rendez-vous",
+        "Réservation en ligne",
+        "Automatisations et liste d'attente",
+        "Support prioritaire",
+      ],
+      cta: "Essayer gratuitement 14 jours",
+    },
+    booking: {
+      name: "Booking",
+      popular: "Populaire",
+      monthlyPrice: "59 €",
+      yearlyPrice: "637 €",
+      yearlyHint: "53 €/mois • 71 € d'économie par an",
+      description: "Agenda, prise de rendez-vous en ligne et rappels automatiques pour votre institut.",
+      included: [
+        "Tout ce qui est inclus dans Basic",
+        "Agenda avec colonnes collaborateurs et cabines",
+        "Réservation en ligne sans commission",
+        "Liste d'attente",
+        "Rappels par e-mail",
+        "Parcours clients",
+        "Codes promo",
+        "Page de réservation multilingue",
+        "Intégrations (Google Agenda, Zapier, assistants IA)",
+        "Support prioritaire par e-mail et chat",
+      ],
+      cta: "Essayer gratuitement 14 jours",
+    },
+    trial: {
+      title: "14 jours d'essai gratuit",
+      text: "Sans carte bancaire • Résiliable à tout moment • Migration des données offerte",
+      points: ["Aucuns frais d'installation", "Résiliation mensuelle", "Conforme au RGPD"],
+    },
+  },
+
+  faq: {
+    badge: "FAQ",
+    titleBefore: "Encore des questions ?",
+    titleHighlight: " Nous avons les réponses !",
+    subtitle: "Retrouvez ici les réponses aux questions les plus fréquentes sur Treatflow.",
+    items: [
+      {
+        question: "Qu'est-ce que Treatflow ?",
+        answer:
+          "Treatflow est une application tout-en-un pour le quotidien de votre institut : rendez-vous, fiches clients, formulaires numériques et documentation des soins sont réunis dans un seul système – sans commission sur les réservations. Conçu en Autriche, avec des données hébergées sur des serveurs européens.",
+      },
+      {
+        question: "À qui s'adresse Treatflow ?",
+        answer: [
+          "Aux établissements qui réalisent des soins – de l'esthétique et de la médecine esthétique au laser, en passant par les ongles, les cils, le maquillage permanent, le massage et le spa. En savoir plus sur notre ",
+          { text: "logiciel pour clinique esthétique", href: { page: "aesthetic-clinic-software" } },
+          " et nos ",
+          { text: "fiches clients", href: { page: "client-records" } },
+          ".",
+        ],
+      },
+      {
+        question: "Combien de temps puis-je essayer Treatflow gratuitement ?",
+        answer:
+          "Vous pouvez essayer Treatflow gratuitement pendant 14 jours. Sans carte bancaire et sans frais cachés. À la fin de l'essai, vous décidez si vous souhaitez continuer.",
+      },
+      {
+        question: "Quelle est la différence entre Basic et Booking ?",
+        answer: [
+          "Basic (39 €/mois) comprend la ",
+          { text: "gestion des clients", href: { page: "client-records" } },
+          " en illimité, la bibliothèque de formulaires, le générateur de formulaires par IA et la boutique. Booking (59 €/mois) y ajoute l'",
+          { text: "agenda de réservation", href: { page: "appointment-calendar" } },
+          " professionnel avec votre propre lien de réservation et des ",
+          { text: "rappels de rendez-vous", href: { page: "messaging" } },
+          " automatiques.",
+        ],
+      },
+      {
+        question: "Treatflow est-il conforme au RGPD ?",
+        answer: [
+          "Oui. Treatflow est entièrement conforme au RGPD. Toutes les données sont chiffrées et stockées en toute sécurité sur des serveurs européens à Francfort, en Allemagne. Les ",
+          { text: "questionnaires numériques", href: { page: "forms" } },
+          " et la ",
+          { text: "documentation des soins", href: { page: "treatment-documentation" } },
+          " sont également couverts.",
+        ],
+      },
+      {
+        question: "Puis-je importer mes données clients existantes ?",
+        answer: [
+          "Oui, nous vous aidons gratuitement à migrer vos données. Notre équipe support transfère en toute sécurité vos données clients existantes dans vos ",
+          { text: "fiches clients numériques", href: { page: "client-records" } },
+          ".",
+        ],
+      },
+      {
+        question: "Treatflow fonctionne-t-il sur mon téléphone ?",
+        answer:
+          "Oui. Treatflow fonctionne sur tous les appareils – ordinateur, tablette et smartphone. Vous accédez à vos clients et à vos rendez-vous où que vous soyez.",
+      },
+      {
+        question: "Que deviennent mes données si je résilie ?",
+        answer:
+          "Vous gardez le contrôle total de vos données. En cas de résiliation, vous pouvez toutes les exporter. Nous ne les supprimons définitivement qu'après une période de transition.",
+      },
+      {
+        question: "Faut-il des connaissances techniques pour utiliser Treatflow ?",
+        answer:
+          "Non. Treatflow est très simple à utiliser. Rien à installer – il suffit de vous connecter dans votre navigateur pour commencer. Pour toute question, notre équipe support est là pour vous aider.",
+      },
+      {
+        question: "Comment fonctionne la bibliothèque de formulaires ?",
+        answer: [
+          "Dans la bibliothèque, vous trouvez des ",
+          { text: "formulaires", href: { page: "forms" } },
+          " professionnels pour tous les soins esthétiques. Utilisez-les tels quels, adaptez-les avec le générateur IA ou personnalisez-les dans l'éditeur glisser-déposer. Les questionnaires numériques sont prêts à l'emploi immédiatement.",
+        ],
+      },
+      {
+        question: "Puis-je gérer un nombre illimité de clients ?",
+        answer:
+          "Oui. Vous pouvez gérer autant de clients que vous le souhaitez. Le système évolue avec votre institut, et la fonction d'import facilite la reprise de vos données clients existantes.",
+      },
+    ],
+    contactTitle: "D'autres questions ?",
+    contactText:
+      "Notre équipe support est là pour vous aider. Écrivez-nous un e-mail ou réservez directement un appel conseil.",
+    demoCta: "Réserver un appel conseil",
+  },
+
+  cta: {
+    ariaLabel: "Appel à l'action",
+    title: "Envie de gérer votre institut plus sereinement ?",
+    subtitle: "Commencez dès aujourd'hui et découvrez à quel point l'organisation de votre institut peut être simple.",
+    checks: [
+      "14 jours d'essai gratuit",
+      "Sans carte bancaire",
+      "Prêt en 2 minutes",
+      "Accompagnement personnalisé",
+    ],
+    primaryCta: "Démarrer l'essai gratuit",
+    demoCta: "Réserver une démo",
+    note: "Résiliable à tout moment. Conforme au RGPD. Avec un accompagnement personnalisé.",
+  },
+
+  seo: {
+    ariaLabel: "Informations complémentaires",
+    intro: [
+      "Treatflow est le ",
+      { text: "logiciel pour instituts de beauté", href: { page: "beauty-salon-software" } },
+      " avec agenda, prise de rendez-vous en ligne, fiches clients numériques, formulaires et documentation des soins – sans commission, conforme au RGPD et conçu en Autriche.",
+    ],
+    links: [
+      { href: { page: "client-records" }, label: "Logiciel de fiches clients" },
+      { href: { page: "online-booking" }, label: "Prise de rendez-vous en ligne" },
+      { href: { page: "treatment-documentation" }, label: "Documentation des soins" },
+      { href: { page: "forms" }, label: "Questionnaires clients numériques" },
+      { href: { page: "messaging" }, label: "Rappels de rendez-vous" },
+      { href: { page: "software-comparison" }, label: "Comparatif de logiciels" },
+      { href: { page: "treatflow-vs-treatwell" }, label: "Treatflow vs Treatwell" },
+      { href: { page: "treatflow-vs-fresha" }, label: "Treatflow vs Fresha" },
+    ],
+  },
+};

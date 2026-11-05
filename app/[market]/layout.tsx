@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getDictionaryForMarket } from "@/app/i18n/dictionaries";
 import {
   BASE_URL,
   htmlLangTags,
@@ -11,12 +10,11 @@ import {
   prefixedMarkets,
   type PrefixedMarket,
 } from "@/app/i18n/config";
-import NavigationEn from "@/app/components/NavigationEn";
-import FooterEn from "@/app/components/FooterEn";
+import Navigation from "@/app/components/Navigation";
+import Footer from "@/app/components/Footer";
 import RootDocument from "@/app/components/RootDocument";
 import { rootMetadata, rootViewport } from "@/app/root-metadata";
-import { countryHomeMeta } from "@/app/i18n/markets/country-homes";
-import { getLocaleContent } from "@/app/i18n/locales";
+import { getHomeContent } from "@/app/site/content/home";
 
 /** Kurzbeschreibung + Liefergebiet je Bundle-Sprache (Organization/WebSite JSON-LD). */
 const bundleOrgMeta: Record<
@@ -193,9 +191,7 @@ export async function generateMetadata({
   if (!isPrefixedMarket(raw)) return rootMetadata;
   const market = raw as PrefixedMarket;
   const prefix = marketPathPrefix[market];
-  const homeMeta = isBundleLang(market)
-    ? getLocaleContent(market).homeMeta
-    : countryHomeMeta[market as keyof typeof countryHomeMeta];
+  const homeMeta = getHomeContent(market).meta;
   const defaultTitle =
     homeMeta?.title ??
     "Treatflow: All-in-One Software for Beauty Salons & Aesthetic Clinics";
@@ -236,7 +232,6 @@ export default async function MarketLayout({
   const { market: raw } = await params;
   if (!isPrefixedMarket(raw)) notFound();
   const market = raw as PrefixedMarket;
-  const dict = await getDictionaryForMarket(market);
 
   return (
     <RootDocument lang={htmlLangTags[market]}>
@@ -245,9 +240,9 @@ export default async function MarketLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema(market)) }}
         />
-        <NavigationEn dict={dict} locale={market} />
+        <Navigation market={market} />
         {children}
-        <FooterEn dict={dict} locale={market} />
+        <Footer market={market} />
       </div>
     </RootDocument>
   );

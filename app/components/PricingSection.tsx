@@ -3,24 +3,41 @@
 import { CheckCircle, X, Star, ArrowRight, Receipt } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { featureAvailable } from "@/app/i18n/feature-availability";
+import { APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
+import { resolveHref } from "@/app/i18n/site-pages";
+import { homeDe } from "@/app/site/content/home/de";
+import type { PricingContent } from "@/app/site/content/home/types";
+import { gatedTexts, type SiteMarket } from "@/app/site/content/shared";
 
-export default function PricingSection() {
+/** Preisblock (Basic/Booking + DACH-Kassen-Add-on). Ohne Props = deutsche Seite. */
+export default function PricingSection({
+  content = homeDe.pricing,
+  market = "de",
+}: {
+  content?: PricingContent;
+  market?: SiteMarket;
+} = {}) {
   const [isYearly, setIsYearly] = useState(false);
+  const registerUrl = APP_REGISTER_BY_MARKET[market];
+  const { basic, booking, addon } = content;
+  const showAddon = addon && (!addon.feature || featureAvailable(addon.feature, market));
+  const addonHref = showAddon ? resolveHref(market, addon.link.href) : null;
+
   return (
     <section id="pricing" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <Star className="h-4 w-4 fill-current" />
-            Transparente Preise
+            {content.eyebrow}
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            Einfache Preise -
-            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> keine versteckten Kosten</span>
+            {content.titleBefore}
+            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">{content.titleHighlight}</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Treatflow kostet ab 39 €/Monat (Basic) bzw. 59 €/Monat (Booking). Die Kasse ist optional ab 39 €/Monat.
-            14 Tage kostenlos testen – ohne Provision und ohne Risiko.
+            {content.subtitle}
           </p>
         </div>
 
@@ -34,7 +51,7 @@ export default function PricingSection() {
                 : 'text-gray-600 hover:text-gray-900'
                 }`}
             >
-              Monatlich
+              {content.monthly}
             </button>
             <button
               onClick={() => setIsYearly(true)}
@@ -43,9 +60,9 @@ export default function PricingSection() {
                 : 'text-gray-600 hover:text-gray-900'
                 }`}
             >
-              Jährlich
+              {content.yearly}
               <span className="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
-                Spare 10%
+                {content.saveBadge}
               </span>
             </button>
           </div>
@@ -55,47 +72,31 @@ export default function PricingSection() {
           {/* Basic Plan */}
           <div className="bg-white border border-gray-200 rounded-2xl p-6 hover:border-indigo-300 hover:shadow-lg transition-all duration-300">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Basic</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">{basic.name}</h3>
               <div className="text-4xl font-bold text-gray-900 mb-1">
                 {isYearly ? (
-                  <>€421<span className="text-lg text-gray-600">/Jahr</span></>
+                  <>{basic.yearlyPrice}<span className="text-lg text-gray-600">{content.perYear}</span></>
                 ) : (
-                  <>€39<span className="text-lg text-gray-600">/Monat</span></>
+                  <>{basic.monthlyPrice}<span className="text-lg text-gray-600">{content.perMonth}</span></>
                 )}
               </div>
               {isYearly && (
                 <p className="text-sm text-green-600 font-medium">
-                  €35/Monat • Spare €47/Jahr
+                  {basic.yearlyHint}
                 </p>
               )}
-              <p className="text-xs text-gray-500 mt-1">zuzüglich MwSt.</p>
-              <p className="text-sm text-gray-500 mt-2">Digitale Anamnesen, Formulare und Behandlungsdokumentation – ohne Terminplanung.</p>
+              <p className="text-xs text-gray-500 mt-1">{content.vatNote}</p>
+              <p className="text-sm text-gray-500 mt-2">{basic.description}</p>
             </div>
 
             <ul className="space-y-3 mb-6">
-              {[
-                "Kundenverwaltung",
-                "Formulare mit digitaler Unterschrift",
-                "Dokumentation inkl. Sprachnotiz",
-                "Vorher-Nachher-Fotos",
-                "Team-Notizen und Aufgaben",
-                "Shop und Produkte",
-                "Statistiken",
-                "Mitarbeiter und Rollen",
-                "NiSV-Dokumentation",
-                "E-Mail-Support",
-              ].map((item) => (
+              {gatedTexts(basic.included, market).map((item) => (
                 <li key={item} className="flex items-start">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-700 text-sm">{item}</span>
                 </li>
               ))}
-              {[
-                "Terminkalender",
-                "Online-Buchung",
-                "Automatisierungen und Warteliste",
-                "Priority Support",
-              ].map((item) => (
+              {gatedTexts(basic.excluded, market).map((item) => (
                 <li key={item} className="flex items-start">
                   <X className="h-4 w-4 text-gray-400 mr-3 mt-0.5 flex-shrink-0" />
                   <span className="text-gray-400 text-sm">{item}</span>
@@ -104,12 +105,12 @@ export default function PricingSection() {
             </ul>
 
             <a
-              href="https://app.treatflow.io/auth/register?lang=de"
+              href={registerUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-gray-900 text-white py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 flex items-center justify-center"
             >
-              14 Tage gratis testen
+              {basic.cta}
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </div>
@@ -117,40 +118,29 @@ export default function PricingSection() {
           {/* Booking Plan - Featured */}
           <div className="bg-gradient-to-br from-indigo-600 to-purple-700 text-white rounded-2xl p-6 relative overflow-hidden">
             <div className="absolute top-4 right-4 bg-white text-indigo-600 text-xs font-bold px-3 py-1 rounded-full">
-              Beliebt
+              {booking.popular}
             </div>
 
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2">Booking</h3>
+              <h3 className="text-2xl font-bold mb-2">{booking.name}</h3>
               <div className="text-4xl font-bold mb-1">
                 {isYearly ? (
-                  <>€637<span className="text-lg text-indigo-200">/Jahr</span></>
+                  <>{booking.yearlyPrice}<span className="text-lg text-indigo-200">{content.perYear}</span></>
                 ) : (
-                  <>€59<span className="text-lg text-indigo-200">/Monat</span></>
+                  <>{booking.monthlyPrice}<span className="text-lg text-indigo-200">{content.perMonth}</span></>
                 )}
               </div>
               {isYearly && (
                 <p className="text-sm text-green-300 font-medium">
-                  €53/Monat • Spare €71/Jahr
+                  {booking.yearlyHint}
                 </p>
               )}
-              <p className="text-xs text-indigo-200 mt-1">zuzüglich MwSt.</p>
-              <p className="text-sm text-indigo-200 mt-2">Terminkalender, Online-Buchungen und automatische Erinnerungen für dein Studio.</p>
+              <p className="text-xs text-indigo-200 mt-1">{content.vatNote}</p>
+              <p className="text-sm text-indigo-200 mt-2">{booking.description}</p>
             </div>
 
             <ul className="space-y-3 mb-6">
-              {[
-                "Alles aus Basic",
-                "Terminkalender mit Mitarbeiter- und Raumspalten",
-                "Online-Buchung ohne Provision",
-                "Warteliste",
-                "WhatsApp- und E-Mail-Erinnerungen",
-                "Kunden-Workflows",
-                "Rabattcodes",
-                "Mehrsprachige Buchungsseite",
-                "Integrationen (Lexware, Google Kalender, Zapier, SumUp)",
-                "Priority E-Mail- und Chat-Support",
-              ].map((item) => (
+              {gatedTexts(booking.included, market).map((item) => (
                 <li key={item} className="flex items-start">
                   <CheckCircle className="h-4 w-4 text-green-300 mr-3 mt-0.5 flex-shrink-0" />
                   <span className="text-sm">{item}</span>
@@ -159,78 +149,81 @@ export default function PricingSection() {
             </ul>
 
             <a
-              href="https://app.treatflow.io/auth/register?lang=de"
+              href={registerUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full bg-white text-indigo-600 py-3 rounded-xl font-bold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center"
             >
-              14 Tage gratis testen
+              {booking.cta}
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </div>
         </div>
 
-        {/* Add-on: Kasse */}
-        <div className="max-w-4xl mx-auto mt-8">
-          <div className="relative rounded-2xl p-[2px] bg-gradient-to-r from-indigo-500 to-purple-600 shadow-lg shadow-indigo-500/20">
-            <span className="absolute -top-3 left-6 z-10 inline-flex items-center gap-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
-              <Star className="h-3 w-3 fill-current" />
-              Beliebtes Add-on
-            </span>
-            <div className="bg-white rounded-[14px] p-6 sm:p-8">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center flex-shrink-0">
-                    <Receipt className="h-7 w-7 text-white" />
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-2 mb-1">
-                      <h3 className="text-2xl font-bold text-gray-900">Kasse</h3>
-                      <span className="text-[11px] font-semibold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded-full">
-                        Add-on zu Booking
-                      </span>
+        {/* Add-on: Kasse (nur DACH) */}
+        {showAddon && addon && (
+          <div className="max-w-4xl mx-auto mt-8">
+            <div className="relative rounded-2xl p-[2px] bg-gradient-to-r from-indigo-500 to-purple-600 shadow-lg shadow-indigo-500/20">
+              <span className="absolute -top-3 left-6 z-10 inline-flex items-center gap-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                <Star className="h-3 w-3 fill-current" />
+                {addon.badge}
+              </span>
+              <div className="bg-white rounded-[14px] p-6 sm:p-8">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                      <Receipt className="h-7 w-7 text-white" />
                     </div>
-                    <p className="text-sm text-gray-600 max-w-md">
-                      TSE-konform (DE) und RKSV-konform (AT): direkt aus dem Termin kassieren,
-                      fiskalkonforme Belege, Gutscheine, Tagesabschluss und Steuerberater-Export.
-                    </p>
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <h3 className="text-2xl font-bold text-gray-900">{addon.name}</h3>
+                        <span className="text-[11px] font-semibold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded-full">
+                          {addon.tag}
+                        </span>
+                      </div>
+                      <p className="text-sm text-gray-600 max-w-md">
+                        {addon.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="md:text-right flex-shrink-0">
-                  <div className="text-4xl font-bold text-gray-900">
-                    {isYearly ? (
-                      <>€35<span className="text-base text-gray-600">/Monat</span></>
-                    ) : (
-                      <>€39<span className="text-base text-gray-600">/Monat</span></>
+                  <div className="md:text-right flex-shrink-0">
+                    <div className="text-4xl font-bold text-gray-900">
+                      {isYearly ? (
+                        <>{addon.yearlyPrice}<span className="text-base text-gray-600">{content.perMonth}</span></>
+                      ) : (
+                        <>{addon.monthlyPrice}<span className="text-base text-gray-600">{content.perMonth}</span></>
+                      )}
+                    </div>
+                    <p className="text-xs text-gray-500">{addon.note}</p>
+                    {addonHref && (
+                      <Link
+                        href={addonHref}
+                        className="inline-flex items-center justify-center mt-3 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-indigo-700 transition-colors"
+                      >
+                        {addon.link.label}
+                        <ArrowRight className="ml-1.5 h-4 w-4" />
+                      </Link>
                     )}
                   </div>
-                  <p className="text-xs text-gray-500">zzgl. MwSt. · einmalig 149 € Einrichtung</p>
-                  <Link
-                    href="/kassensystem-kosmetikstudio"
-                    className="inline-flex items-center justify-center mt-3 bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-indigo-700 transition-colors"
-                  >
-                    Mehr zur Kasse
-                    <ArrowRight className="ml-1.5 h-4 w-4" />
-                  </Link>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
 
         {/* Bottom Info */}
         <div className="text-center mt-12">
           <div className="bg-gray-50 rounded-xl p-6 max-w-2xl mx-auto">
             <h3 className="text-lg font-bold text-gray-900 mb-2">
-              14 Tage kostenlos testen
+              {content.trial.title}
             </h3>
             <p className="text-gray-600 mb-4 text-sm">
-              Keine Kreditkarte erforderlich • Jederzeit kündbar • Kostenloser Datenumzug
+              {content.trial.text}
             </p>
             <div className="flex justify-center space-x-6 text-xs text-gray-500">
-              <span>✓ Keine Setup-Gebühren</span>
-              <span>✓ Monatlich kündbar</span>
-              <span>✓ DSGVO-konform</span>
+              {content.trial.points.map((point) => (
+                <span key={point}>✓ {point}</span>
+              ))}
             </div>
           </div>
         </div>

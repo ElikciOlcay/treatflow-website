@@ -45,8 +45,10 @@ export const EN_SLUGS = {
  * - Guides: do not add an empty `/en/guides` hub. Publish articles only with real content.
  * - Compare: further competitors (Phorest, Vagaro, Booksy, Pabau) only after verified data.
  * - Keyword variants live as 301 aliases in `next.config.ts`, not as duplicate pages.
- * - POS, payments and gift vouchers stay DACH-only. Do not add `/en/point-of-sale`,
- *   `/tr/point-of-sale` or `/tr/vouchers` product pages.
+ * - Feature availability lives in `feature-availability.ts`: POS, gift vouchers,
+ *   WhatsApp, SumUp, Lexware/AbaNinja and NiSV stay DACH-only (German site only).
+ *   `/{market}/point-of-sale` and `/{market}/vouchers` return 404.
+ *   Treatflow Pay is offered everywhere except Turkey.
  */
 export type MarketPageSlug = keyof typeof EN_SLUGS;
 
