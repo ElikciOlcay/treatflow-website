@@ -41,7 +41,7 @@ export const clientWorkflowsNl: ClientWorkflowsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kunden-workflows.jpg",
+      src: "/images/mockups/nl/kunden-workflows.jpg",
       alt: "Workfloweditor in Treatflow met trigger, wachttijd en bericht",
     },
   },

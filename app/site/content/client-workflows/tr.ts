@@ -40,7 +40,7 @@ export const clientWorkflowsTr: ClientWorkflowsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kunden-workflows.jpg",
+      src: "/images/mockups/tr/kunden-workflows.jpg",
       alt: "Tetikleyici, bekleme süresi ve mesaj içeren Treatflow akış editörü",
     },
   },

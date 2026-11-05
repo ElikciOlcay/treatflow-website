@@ -41,7 +41,7 @@ export const clientWorkflowsPl: ClientWorkflowsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kunden-workflows.jpg",
+      src: "/images/mockups/pl/kunden-workflows.jpg",
       alt: "Edytor automatyzacji Treatflow z wyzwalaczem, czasem oczekiwania i wiadomością",
     },
   },

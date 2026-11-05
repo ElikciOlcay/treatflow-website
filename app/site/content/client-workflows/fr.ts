@@ -41,7 +41,7 @@ export const clientWorkflowsFr: ClientWorkflowsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kunden-workflows.jpg",
+      src: "/images/mockups/fr/kunden-workflows.jpg",
       alt: "Éditeur de parcours Treatflow avec déclencheur, délai et message",
     },
   },

@@ -40,7 +40,7 @@ export const clientWorkflowsEn: ClientWorkflowsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kunden-workflows.jpg",
+      src: "/images/mockups/en/kunden-workflows.jpg",
       alt: "Treatflow workflow builder with trigger, wait time and message",
     },
   },

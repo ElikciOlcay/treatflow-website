@@ -40,7 +40,7 @@ export const clientWorkflowsEs: ClientWorkflowsContent = {
       },
     ],
     image: {
-      src: "/images/mockups/kunden-workflows.jpg",
+      src: "/images/mockups/es/kunden-workflows.jpg",
       alt: "Editor de flujos de Treatflow con disparador, tiempo de espera y mensaje",
     },
   },
