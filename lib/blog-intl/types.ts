@@ -12,7 +12,8 @@ export type BlogTopicId =
   | "online-booking-salon"
   | "gdpr-beauty-salon"
   | "client-retention"
-  | "pricing-beauty-treatments";
+  | "pricing-beauty-treatments"
+  | "tr-appointment-book-vs-software";
 
 export type BlogSection = {
   /** H2 des Abschnitts. Gern als Frage formuliert (wird von KI-Tools gern zitiert). */

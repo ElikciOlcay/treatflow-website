@@ -46,6 +46,11 @@ export const blogTopics: Record<
     image: "/images/blog/preisgestaltung-guide.jpg",
     pageKeys: ["pricing", "client-records", "features"],
   },
+  "tr-appointment-book-vs-software": {
+    image: "/images/lifestyle/online-buchung-smartphone.png",
+    pageKeys: ["appointment-calendar", "online-booking", "client-records"],
+    markets: ["tr"],
+  },
 };
 
 export const blogTopicOrder: BlogTopicId[] = [
@@ -56,4 +61,5 @@ export const blogTopicOrder: BlogTopicId[] = [
   "client-retention",
   "gdpr-beauty-salon",
   "pricing-beauty-treatments",
+  "tr-appointment-book-vs-software",
 ];

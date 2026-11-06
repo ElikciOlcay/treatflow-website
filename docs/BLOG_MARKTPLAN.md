@@ -19,7 +19,7 @@ Regeln:
 
 | # | Status | Lang | Themen-ID | Arbeitstitel | Fokus-Suchbegriff (Landessprache) | pageKeys | Bild |
 |---|--------|------|-----------|--------------|-----------------------------------|----------|------|
-| 1 | offen | tr | tr-appointment-book-vs-software | Randevu defteri und Excel vs. Programm | randevu takip programı, güzellik salonu randevu programı | appointment-calendar, online-booking, client-records | /images/lifestyle/online-buchung-smartphone.png |
+| 1 | live (2026-11-06) | tr | tr-appointment-book-vs-software | Randevu defteri und Excel vs. Programm | randevu takip programı, güzellik salonu randevu programı | appointment-calendar, online-booking, client-records | /images/lifestyle/online-buchung-smartphone.png |
 | 2 | offen | pl | pl-booking-without-commission | Online-Buchung ohne Provision für Salons | program do salonu kosmetycznego, rezerwacje online bez prowizji | online-booking, pricing, appointment-calendar | /images/blog/online-buchung-vorteile.jpg |
 | 3 | offen | it | it-beauty-centre-management-software | Gestionale fürs Kosmetikinstitut: worauf achten | gestionale centro estetico, programma gestione centro estetico | beauty-salon-software, features, pricing | /images/blog/beste-kosmetikstudio-software-2026.jpg |
 | 4 | offen | es | es-online-agenda-beauty-centre | Online-Agenda fürs Kosmetikzentrum | agenda online centro de estética, programa de citas estética | appointment-calendar, online-booking, client-records | /images/blog/terminkalender.png |

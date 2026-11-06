@@ -1324,4 +1324,191 @@ export const posts: BlogArticle[] = [
       { pageKey: "features", label: "Tüm özellikler" },
     ],
   },
+
+  // ---------------------------------------------------------------------------
+  // Markt-Thema (nur TR): Randevu defteri ve Excel mi, randevu takip programı mı?
+  // ---------------------------------------------------------------------------
+  {
+    topic: "tr-appointment-book-vs-software",
+    lang: "tr",
+    slug: "randevu-defteri-mi-randevu-takip-programi-mi",
+    title: "Randevu Defteri ve Excel mi, Randevu Takip Programı mı? Salonlar İçin Geçiş Rehberi",
+    metaTitle: "Randevu Defteri mi, Randevu Takip Programı mı?",
+    description:
+      "Randevu defteri ve Excel nerede yetmez, randevu takip programı ne zaman gerekir? Güzellik salonları için karşılaştırma, maliyet hesabı ve 7 günlük geçiş planı.",
+    excerpt:
+      "Kâğıt defter ve Excel tablosu başlangıçta iş görür; ekip büyüdükçe çift randevu, kaybolan notlar ve unutulan müşteriler başlar. Bu rehber, ne zaman ve nasıl geçmeniz gerektiğini anlatıyor.",
+    category: "Organizasyon",
+    keywords: [
+      "randevu takip programı",
+      "güzellik salonu randevu programı",
+      "randevu defteri",
+      "excel randevu takibi",
+      "kuaför randevu programı",
+      "salon randevu takibi",
+      "dijital randevu defteri",
+    ],
+    publishedAt: "2026-11-06",
+    updatedAt: "2026-11-06",
+    readMinutes: 8,
+    answer:
+      "Tek kişilik ve az randevulu bir salonda randevu defteri veya Excel tablosu bir süre yeterli olabilir; ancak ikinci personel, ikinci oda ya da günde birkaç değişiklik geldiğinde çift randevu, okunamayan notlar ve unutulan hatırlatmalar başlar. Bu noktada bir randevu takip programı; ortak takvim, müşteri geçmişi ve otomatik hatırlatmayı tek yerde topladığı için defterden daha az zaman ve daha az kayıp randevu demektir.",
+    takeaways: [
+      "Defter ve Excel'in asıl sorunu kayıt değil, paylaşım ve hatırlatmadır: aynı anda tek kişi bakar, müşteriye kendiliğinden haber vermez.",
+      "İkinci personel, ikinci oda/cihaz veya haftada birkaç çift randevu, geçiş için en net işaretlerdir.",
+      "Defterin gizli maliyeti; telefonda geçen dakikalar, gelmeyen müşteriler ve kaybolan notlardır.",
+      "Güzellik salonu randevu programına geçiş bir haftada planlanabilir; ileri tarihli randevular ve müşteri listesi ilk taşınacak verilerdir.",
+      "Eski defteri kapatmak için net bir tarih koyun; iki sistemi uzun süre birlikte tutmak geçişi bozar.",
+    ],
+    intro: [
+      "Türkiye'de pek çok kuaför ve güzellik salonunun kalbi hâlâ resepsiyondaki randevu defteridir. Kurşun kalemle yazılır, silinir, üstüne ok çekilir; bazı salonlarda bunun yanına bir Excel tablosu ya da telefondaki not uygulaması eklenir. Bu düzen yıllarca işe yarayabilir ve “bozulmayan şeyi neden değiştireyim?” sorusu çok yerindedir.",
+      "Bu rehber size bir yazılım satmaya değil, karar vermenize yardım etmeye çalışıyor: Defter ve Excel hangi durumlarda yeterli, hangi noktada randevu takip programı gerçekten zaman kazandırır ve geçiş müşterileri ile ekibi yormadan nasıl yapılır?",
+    ],
+    sections: [
+      {
+        heading: "Randevu defteri ve Excel hangi durumlarda hâlâ yeterlidir?",
+        paragraphs: [
+          "Defterin güçlü yanları gerçektir: elektrik ya da internet gerektirmez, herkes kullanmayı bilir ve bir bakışta günü gösterir. Excel ise aramayı ve basit listeler çıkarmayı kolaylaştırır. Aşağıdaki koşulların çoğu sizin için geçerliyse defter veya tablo bir süre daha iş görebilir.",
+        ],
+        bullets: [
+          "Salonda tek başınıza çalışıyorsunuz ve randevuları sadece siz alıyorsunuz.",
+          "Günde birkaç randevunuz var ve değişiklik nadiren oluyor.",
+          "Müşterilerinizin çoğu yıllardır gelen, alışkanlıkları belli kişiler.",
+          "Onam formu, seans takibi veya işlem notu tutmanız gereken hizmetler sunmuyorsunuz.",
+          "Gelmeyen müşteri sizin için ciddi bir ciro kaybı oluşturmuyor.",
+        ],
+        callout:
+          "Excel tablosu defterden daha düzenli görünür ama aynı temel sorunu taşır: dosya bir cihazda açıkken diğer kişi en güncel hâlini görmez ve tablo müşteriye kendiliğinden hatırlatma göndermez.",
+      },
+      {
+        heading: "Defterden randevu takip programına geçmenin zamanı geldiğini gösteren 7 işaret nedir?",
+        paragraphs: [
+          "Geçiş ihtiyacı genellikle tek bir büyük sorunla değil, küçük aksaklıkların birikmesiyle kendini gösterir. Son bir ayı düşünün ve aşağıdakilerden kaç tanesinin başınıza geldiğini sayın.",
+        ],
+        steps: [
+          "Aynı saate iki müşteri yazıldı ya da bir personelin dolu olduğu saat başka birine verildi.",
+          "Silinmiş veya okunamayan bir kayıt yüzünden müşteriyle “ben o saati demiştim” tartışması yaşandı.",
+          "Randevuları sadece bir kişi bilebiliyor; o kişi izindeyken kimse günün planından emin değil.",
+          "Hatırlatma için akşamları tek tek mesaj atıyor ya da arıyorsunuz, yetişemediğiniz günlerde müşteri gelmiyor.",
+          "Bir müşterinin en son hangi işlemi, hangi ürünle yaptırdığını bulmak için eski defter sayfalarını karıştırıyorsunuz.",
+          "Lazer, kirpik dolgusu veya kalıcı makyaj rötuşu gibi seanslı hizmetlerde sıradaki seansın zamanını kaçırıyorsunuz.",
+          "Bir defter kaybolsa ya da üzerine bir şey dökülse hangi müşteri bilgisinin gideceğini bilmiyorsunuz.",
+        ],
+        callout:
+          "Bu listeden üç veya daha fazlası tanıdık geliyorsa defter artık sizi yavaşlatıyor demektir. Özellikle ilk üç madde, ekip büyüdükçe katlanarak artar.",
+      },
+      {
+        heading: "Randevu defteri, Excel ve randevu takip programı nasıl karşılaştırılır?",
+        paragraphs: [
+          "Üç yöntemi aynı kriterlerle yan yana koymak kararı netleştirir. Tablo, tipik bir güzellik salonundaki günlük ihtiyaçlara göre hazırlandı.",
+        ],
+        table: {
+          headers: ["Kriter", "Randevu defteri", "Excel / tablo", "Randevu takip programı"],
+          rows: [
+            ["Birden fazla kişinin aynı anda görmesi", "Hayır, defter tek yerde durur", "Sınırlı, dosya çakışmaları olur", "Evet, herkes aynı güncel takvimi görür"],
+            ["Çift randevu kontrolü", "Göze bağlı", "Göze bağlı", "Dolu saat, personel ve oda bazında görünür"],
+            ["Müşteri hatırlatması", "Elle arama veya mesaj", "Elle arama veya mesaj", "Otomatik e-posta hatırlatması"],
+            ["Müşteri geçmişi", "Eski sayfalarda dağınık", "Ayrı sekmelerde, elle güncellenir", "Müşteri kartında randevu ve işlem geçmişi"],
+            ["Müşterinin kendisi randevu alması", "Mümkün değil", "Mümkün değil", "Online randevu linkiyle 7/24"],
+            ["Yedekleme", "Yok", "Dosyayı kimin, nereye kaydettiğine bağlı", "Sunucuda düzenli yedekleme"],
+            ["Başlangıç maliyeti", "Çok düşük", "Düşük", "Aylık abonelik"],
+          ],
+        },
+      },
+      {
+        heading: "Defterin gizli maliyeti nasıl hesaplanır?",
+        paragraphs: [
+          "Defter ucuz görünür çünkü maliyeti faturada değil, gün içinde kaybolan zamanda ve boş kalan koltukta saklıdır. Kendi salonunuz için kabaca bir hesap yapmak, abonelik ücretiyle karşılaştırma yapmanızı sağlar.",
+        ],
+        steps: [
+          "Bir hafta boyunca randevu almak, değiştirmek ve hatırlatmak için telefonda ve mesajda harcadığınız süreyi not edin.",
+          "Aynı hafta haber vermeden gelmeyen müşteri sayısını ve bu randevuların ortalama tutarını yazın.",
+          "Haftalık süreyi saatlik tutarınızla çarpın; buna gelmeyen randevuların tutarını ekleyin.",
+          "Çıkan rakamı dört ile çarparak aylık tahmini kaybı bulun ve bir programın aylık ücretiyle karşılaştırın.",
+        ],
+        callout:
+          "Bu hesap kesin bir sonuç vermez, ama çoğu salon sahibi ilk kez yaptığında telefonda geçen sürenin tahmin ettiğinden fazla olduğunu görür. Rakamları kendi kayıtlarınızdan alın; genel istatistiklere güvenmeyin.",
+      },
+      {
+        heading: "Güzellik salonu randevu programında hangi özellikler olmalı?",
+        paragraphs: [
+          "Defterden geçerken amaç, defterin yaptığı her şeyi daha iyi yapmak ve defterin yapamadıklarını eklemektir. Gereğinden karmaşık bir sistem, ekibin defteri özlemesine yol açar. Aşağıdaki liste, ilk gün işinize yarayacak temel özellikleri sıralıyor.",
+        ],
+        bullets: [
+          "**Personel ve oda sütunlu takvim:** Defterdeki sütunların dijital karşılığı; kimin, hangi odada, ne zaman müsait olduğunu tek ekranda gösterir.",
+          "**Müşteri kartı:** Telefon, notlar, geçmiş randevular ve yapılan işlemler aynı yerde durur.",
+          "**Otomatik hatırlatma:** Randevudan önce müşteriye kendiliğinden giden mesaj; Treatflow'da hatırlatmalar e-postayla gönderilir.",
+          "**Online randevu linki:** Müşterinin Instagram biyografinizden veya web sitenizden boş saati kendisinin seçmesi.",
+          "**Bekleme listesi:** İptal olan saati, o saati bekleyen müşteriye vermeyi kolaylaştırır.",
+          "**Telefonda çalışma:** Resepsiyonda bilgisayar olmasa bile takvimi cep telefonundan ya da tabletten yönetebilmek.",
+          "**Verilerin dışa aktarılması:** İleride sistemi değiştirmek isterseniz müşteri listenizi alabilmek.",
+        ],
+      },
+      {
+        heading: "Randevu defterinden programa 7 günde nasıl geçilir?",
+        paragraphs: [
+          "Geçişi bir hafta sonuna sıkıştırmak yerine bir haftaya yayın. Böylece günlük işler aksamadan, ekip ve müşteriler yeni düzene adım adım alışır.",
+        ],
+        steps: [
+          "1. gün – Hizmetler: Hizmet listesini gerçek süreleri ve fiyatlarıyla girin; temizlik ve hazırlık için tampon süre ekleyin.",
+          "2. gün – Ekip: Personeli, çalışma saatlerini, izin günlerini ve varsa odaları veya cihazları tanımlayın.",
+          "3. gün – Müşteriler: Excel listenizi veya defterdeki aktif müşterileri aktarın; en azından ad, telefon ve e-posta olsun.",
+          "4. gün – İleri tarihli randevular: Defterdeki gelecek randevuları tek tek yeni takvime girin ve her birinin yanına defterde bir tik atın.",
+          "5. gün – Hatırlatmalar: Otomatik e-posta hatırlatmalarını açın ve kendinize bir test randevusu oluşturup müşterinin ne gördüğünü kontrol edin.",
+          "6. gün – Online randevu: Randevu linkini önce birkaç sadık müşteriyle paylaşın, sonra Instagram biyografinize ekleyin.",
+          "7. gün – Defteri kapatma: Belirlediğiniz tarihten sonra yeni randevuyu yalnızca programa yazın; defteri bir süre sadece okumak için saklayın.",
+        ],
+        callout:
+          "Treatflow'da destek ekibi mevcut müşteri listenizi ücretsiz olarak dijital müşteri kartlarına taşır. Excel veya başka bir sistemden dışa aktardığınız liste geçişin en çok zaman alan kısmını kısaltır.",
+      },
+      {
+        heading: "Ekibi ve sadık müşterileri yeni sisteme nasıl alıştırırsınız?",
+        paragraphs: [
+          "Geçişte en büyük direnç genellikle ekipten gelir: “Defter daha hızlıydı.” Bu çoğu zaman yazılımın değil, alışkanlığın sesidir. İlk iki hafta sabırlı olun ve sorunları birlikte not edin.",
+        ],
+        bullets: [
+          "Her personelin kendi kullanıcı hesabı olsun; ortak şifre kimin neyi değiştirdiğini belirsizleştirir.",
+          "Resepsiyonda takvimin açık durduğu tek bir tablet veya bilgisayar belirleyin; defterin yerini fiziksel olarak alsın.",
+          "Yıllardır telefonla randevu alan müşterilere zorla link göndermeyin; telefonda konuşurken randevuyu doğrudan programa girin.",
+          "Yeni müşterilere ise ilk temastan itibaren randevu linkini önerin; alışkanlık en kolay baştan kurulur.",
+          "İlk hafta gün sonunda beş dakikalık kısa bir değerlendirme yapın: Bugün nerede zorlandık?",
+        ],
+      },
+      {
+        heading: "Randevu takip programının maliyeti ne kadar ve nasıl denenir?",
+        paragraphs: [
+          "Programları karşılaştırırken sadece aylık ücrete değil, bir yıllık toplam maliyete bakın: ek kullanıcı ücreti, mesaj kontörü, randevu başına komisyon ve kurulum bedeli varsa hepsini ekleyin.",
+          "Treatflow'da takvim, online randevu, bekleme listesi ve e-posta hatırlatmaları Booking paketindedir; Türkiye'de ilk 100 işletmeye özel lansman fiyatı aylık ₺1.990'dır (KDV hariç). Sadece müşteri kartı, formlar ve işlem kayıtlarını içeren Basic paket aylık ₺1.490'dır, ancak randevu takvimi içermez. Randevu başına komisyon ve kurulum ücreti yoktur; 14 gün ücretsiz deneyebilirsiniz ve kredi kartı gerekmez.",
+          "Deneme süresini gerçek bir test olarak kullanın: Bir haftayı yalnızca programla yönetin, ekipten geri bildirim toplayın ve yukarıdaki gizli maliyet hesabınızı tekrar yapın.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Randevu takip programı küçük bir salon için gerekli mi?",
+        a: "Tek kişilik ve az randevulu bir salonda defter bir süre yeterli olabilir. Ancak hatırlatmalar için harcanan zaman ve gelmeyen müşteriler artıyorsa, küçük bir salon da otomatik hatırlatma ve müşteri geçmişinden belirgin şekilde fayda görür.",
+      },
+      {
+        q: "Excel ile randevu takibi yapmak yeterli değil mi?",
+        a: "Excel defterden daha düzenli bir liste sunar, ama birden fazla kişinin aynı anda güncel takvimi görmesini, çift randevu kontrolünü ve otomatik hatırlatmayı sağlamaz. Tek kişilik kullanımda iş görür, ekip büyüdükçe zorlaşır.",
+      },
+      {
+        q: "Defterdeki eski randevuları da programa aktarmam gerekir mi?",
+        a: "Hayır. Önce ileri tarihli randevuları ve aktif müşteri listesini aktarmanız yeterlidir. Geçmiş kayıtlar için eski defterleri güvenli bir yerde saklayın; müşteri geldikçe önemli notları müşteri kartına ekleyebilirsiniz.",
+      },
+      {
+        q: "İnternet kesilirse randevularımı görebilir miyim?",
+        a: "Program tarayıcıda çalıştığı için bir bağlantı gerekir. Salonun internetinde sorun olduğunda takvime cep telefonunuzun mobil verisiyle ulaşabilirsiniz. Gün başında günün listesine bir göz atmak da iyi bir alışkanlıktır.",
+      },
+      {
+        q: "Müşteri bilgilerini programda tutmak KVKK açısından uygun mu?",
+        a: "Müşteri verisinin sorumlusu salonunuzdur; ister defterde ister programda tutun, KVKK yükümlülükleri geçerlidir. Programda erişimi kullanıcı bazında sınırlamak ve yedekleme genellikle kâğıda göre daha kolaydır. Ayrıntılar için Kişisel Verileri Koruma Kurumu'nun duyurularını takip edin veya bir uzmana danışın.",
+      },
+    ],
+    related: [
+      { pageKey: "appointment-calendar", label: "Randevu takvimi" },
+      { pageKey: "online-booking", label: "Komisyonsuz online randevu sistemi" },
+      { pageKey: "client-records", label: "Müşteri takip programı" },
+    ],
+  },
 ];
