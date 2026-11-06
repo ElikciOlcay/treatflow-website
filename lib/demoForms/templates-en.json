@@ -25,7 +25,7 @@
               "Stretch marks",
               "General skin improvement",
               "Scars (other than acne)",
-              "Pale, tired skin",
+              "Dull, tired skin",
               "Other"
             ]
           },
@@ -39,15 +39,15 @@
           {
             "id": "f3",
             "type": "radio",
-            "label": "Which skin type best suits yours?",
+            "label": "Which skin type is closest to yours?",
             "required": true,
             "options": [
-              "Type I (very fair, always sunburned, never tans)",
+              "Type I (very fair, always burns, never tans)",
               "Type II (light, burns quickly, tans minimally)",
               "Type III (moderate, sometimes sunburns, tans well)",
               "Type IV (darker, rarely sunburns, tans quickly)",
-              "Type V (dark, very rarely sunburn)",
-              "Type VI (very dark/black, never sunburned)"
+              "Type V (dark, very rarely burns)",
+              "Type VI (very dark/black, never burns)"
             ]
           },
           {
@@ -58,10 +58,10 @@
             "options": [
               "Normal and healthy",
               "Dry and flaky",
-              "Greasy with shine",
+              "Oily and shiny",
               "Combination skin (T-zone oily, cheeks dry)",
               "Sensitive and reactive",
-              "Unclean with pimples/blackheads",
+              "Blemished, with spots/blackheads",
               "Mature skin with wrinkles"
             ]
           },
@@ -78,7 +78,7 @@
               "Herpes/cold sores",
               "Sunburn",
               "Severe redness",
-              "None of the mentioned"
+              "None of the above"
             ]
           },
           {
@@ -89,7 +89,7 @@
             "options": [
               "Yes, professionally",
               "Yes, at home",
-              "No, for the first time"
+              "No, this is my first time"
             ]
           },
           {
@@ -105,7 +105,7 @@
             "label": "What expectations do you have of the treatment?",
             "required": true,
             "options": [
-              "Significant improvement in skin structure",
+              "Significant improvement in skin texture",
               "Moderate improvement over multiple sessions",
               "Preventive anti-aging measure",
               "Specific scar treatment",
@@ -128,7 +128,7 @@
               "Yes, pregnant",
               "Yes, breastfeeding",
               "No",
-              "Uncertain/possible pregnant"
+              "Unsure/possibly pregnant"
             ]
           },
           {
@@ -148,11 +148,11 @@
             "label": "Are you taking any of the following medications?",
             "required": true,
             "options": [
-              "Blood thinners (Marcumar, heparin, ASS, etc.)",
+              "Blood thinners (warfarin, heparin, aspirin, etc.)",
               "Immunosuppressants",
               "Cortisone (systemic)",
               "Antibiotics",
-              "chemotherapy",
+              "Chemotherapy",
               "Anticoagulants",
               "Other",
               "No medication"
@@ -178,22 +178,22 @@
               "Tendency to keloid/excessive scarring",
               "Wound healing disorders",
               "Skin cancer or precursors",
-              "epilepsy",
+              "Epilepsy",
               "Infectious diseases (HIV, hepatitis)",
-              "None of the mentioned"
+              "None of the above"
             ]
           },
           {
             "id": "f14",
             "type": "checkbox",
-            "label": "Do you have metallic implants in your facial/treatment area?",
+            "label": "Do you have metal implants in the face/treatment area?",
             "required": true,
             "options": [
               "Dental implants",
-              "Metallic dental fillings",
+              "Metal dental fillings",
               "Facial implants",
               "Permanent makeup",
-              "Other metallic implants",
+              "Other metal implants",
               "No implants"
             ]
           },
@@ -203,8 +203,8 @@
             "label": "Do you have allergies or intolerances?",
             "required": true,
             "options": [
-              "Local anesthetics (lidocaine, etc.)",
-              "latex",
+              "Local anaesthetics (lidocaine, etc.)",
+              "Latex",
               "Disinfectant",
               "Hyaluronic acid",
               "Vitamin C",
@@ -224,7 +224,7 @@
       },
       {
         "id": "p3",
-        "title": "Pre-treatments & skin care",
+        "title": "Previous treatments & skin care",
         "type": "form",
         "fields": [
           {
@@ -235,11 +235,11 @@
             "options": [
               "Chemical peels",
               "Laser treatments",
-              "IPL/flash light",
+              "IPL (intense pulsed light)",
               "Botox injections",
-              "Hyaluronic filler",
+              "Hyaluronic acid fillers",
               "Thread lifting",
-              "Radio frequency",
+              "Radiofrequency",
               "HIFU",
               "Other microneedling treatments",
               "No aesthetic treatments"
@@ -265,7 +265,7 @@
               "Hydroquinone",
               "Tretinoin cream",
               "Other prescription products",
-              "Just normal skin care"
+              "Regular skin care only"
             ]
           },
           {
@@ -287,9 +287,9 @@
             "label": "Have you had intense sun exposure in the last 4 weeks?",
             "required": true,
             "options": [
-              "Yes, vacation/solarium",
+              "Yes, holiday/sunbed",
               "Yes, occasionally",
-              "No, avoided",
+              "No, I have avoided it",
               "I do not know"
             ]
           },
@@ -310,10 +310,10 @@
       },
       {
         "id": "p4",
-        "title": "Comprehensive information about microneedling",
+        "title": "Microneedling information",
         "type": "document",
         "fields": [],
-        "content": "\n                <h2>Umfassende Aufklärung zur Microneedling-Behandlung</h2>\n                \n                <p>Sehr geehrte Patientin, sehr geehrter Patient,</p>\n                \n                <p>Sie haben sich für eine Microneedling-Behandlung entschieden. Mit diesem ausführlichen Aufklärungsdocument möchten wir Sie umfassend über die Behandlung, mögliche Risiken, Nebenwirkungen und die erforderliche Nachsorge informieren.</p>\n                \n                <h3>Was ist Microneedling?</h3>\n                <p>Microneedling ist ein minimal-invasives kosmetisches Proceedings, bei dem mit Help feiner Nadeln (0,5-2,5mm) kontrollierte Mikroverletzungen in der Haut erzeugt werden. Diese stimulieren die natürlichen Heilungsprozesse der Haut und regen die Produktion von Collagen und Elastin an. Das Proceedings wird auch als Collagen-Induktions-Therapie (CIT) bezeichnet.</p>\n                \n                <h3>Wirkungsweise und Mechanismus</h3>\n                <p>Die feinen Nadeln durchdringen die oberste Hautschicht (Epidermis) und erreichen die Dermis. Dadurch entstehen mikroskopisch kleine Kanäle, die folgende Prozesse auslösen:</p>\n                <ul>\n                    <li><strong>Wundheilungsreaction:</strong> Die Haut aktiviert ihre natürlichen Reparaturmechanismen</li>\n                    <li><strong>Collagenproduction:</strong> Neue Collagenfasern werden gebildet, die die Hautstruktur verbessern</li>\n                    <li><strong>Elastinbildung:</strong> Die Hautelastizität wird erhöht</li>\n                    <li><strong>Verbesserte Durchblutung:</strong> Die Nährstoffversorgung der Haut wird optimiert</li>\n                    <li><strong>Wirkstoffpenetration:</strong> Pflegeproducts können tiefer in die Haut eindringen</li>\n                </ul>\n                \n                <h3>Anwendungsgebiete</h3>\n                <ul>\n                    <li><strong>Acne scars:</strong> Verbesserung von atrophischen (eingesunkenen) Scars</li>\n                    <li><strong>Fine lines and wrinkles:</strong> Glättung oberflächlicher Alterungszeichen</li>\n                    <li><strong>Enlarged pores:</strong> Verfeinerung des Skin appearancees</li>\n                    <li><strong>Hyperpigmentierung:</strong> Aufhellung von Pigment spots</li>\n                    <li><strong>Stretch marks:</strong> Improvement of skin structure</li>\n                    <li><strong>Allgemeine Skin rejuvenation:</strong> Verbesserung von Textur und Ausstrahlung</li>\n                    <li><strong>Scars:</strong> Verschiedene Arten von Scarsgewebe</li>\n                </ul>\n                \n                <h3>Detaillierter Behandlungsablauf</h3>\n                <ol>\n                    <li><strong>Vorbereitung:</strong> Gründliche cleaning und Desinfektion der Haut</li>\n                    <li><strong>Betäubung:</strong> Auftragen einer Betäubungscreme (30-45 minsuten Einwirkzeit)</li>\n                    <li><strong>Behandlung:</strong> Systematisches Microneedling mit sterilen Nadeln</li>\n                    <li><strong>Wirkstoffapplikation:</strong> Auftragen von Seren (Hyaluronic acid, Vitamin C, etc.)</li>\n                    <li><strong>Beruhigung:</strong> Kühlende und beruhigende Maske</li>\n                    <li><strong>Nachsorge:</strong> Auftragen von Pflegeproductsn und Sonnenschutz</li>\n                </ol>\n                \n                <h3>Behandlungsparameter</h3>\n                <ul>\n                    <li><strong>Nadellänge:</strong> Je nach Hautproblem 0,5-2,5mm</li>\n                    <li><strong>Behandlungsduration:</strong> 30-90 Minuten je nach Bereich</li>\n                    <li><strong>Anzahl Sitzungen:</strong> 3-6 Treatments für optimale Ergebnisse</li>\n                    <li><strong>Behandlungsabstand:</strong> 4-6 Wochen zwischen den Sitzungen</li>\n                </ul>\n                \n                <h3>Mögliche Nebenwirkungen und Risiken</h3>\n                \n                <h4>Häufige, normale Reactionen (>50%):</h4>\n                <ul>\n                    <li>Rötung und Schwellung für 24-72 Stunden</li>\n                    <li>Spannungsgefühl und leichte Schmerzen</li>\n                    <li>Punktförmige Blutungen während der Behandlung</li>\n                    <li>Erhöhte Sensitivekeit der Haut</li>\n                    <li>Leichte Schuppung nach 3-5 Tagen</li>\n                </ul>\n                \n                <h4>Occasionallye Nebenwirkungen (5-20%):</h4>\n                <ul>\n                    <li>Stärkere Schwellungen (besonders um die Augen)</li>\n                    <li>Kleine Blutergüsse (Petechien)</li>\n                    <li>Juckreiz während der Heilung</li>\n                    <li>Vorübergehende Hyperpigmentierung</li>\n                    <li>dryness und Schuppung</li>\n                </ul>\n                \n                <h4>Rarelye Komplikationen (1-5%):</h4>\n                <ul>\n                    <li>Infektionen (bakteriell, viral, pilzbedingt)</li>\n                    <li>Allergische Reactionen auf Active ingredients</li>\n                    <li>activation von Herpes simplex</li>\n                    <li>Post-inflammatorische Hyperpigmentierung</li>\n                    <li>Scarsbildung (sehr selten bei sachgerechter Anwendung)</li>\n                </ul>\n                \n                <h4>Sehr seltene Risiken (<1%):</h4>\n                <ul>\n                    <li>Dauerhafte Pigmentveränderungen</li>\n                    <li>Granulombildung</li>\n                    <li>Übertragung von Illnessserregern (bei unsachgemäßer Hygiene)</li>\n                </ul>\n                \n                <h3>Kontraindikationen (Behandlung nicht möglich)</h3>\n                <ul>\n                    <li>Schwangerschaft und Stillzeit</li>\n                    <li>Aktive Hautinfektionen im Treatment area</li>\n                    <li>Active acne mit entzündlichen Läsionen</li>\n                    <li>Open wounds oder Eczema</li>\n                    <li>Einnahme von Isotretinoin in den letzten 6 Monaten</li>\n                    <li>Keloid tendency oder pathologische Scarsbildung</li>\n                    <li>Blood clotting disorders</li>\n                    <li>Immunsuppression</li>\n                    <li>Skin cancer im Treatment area</li>\n                </ul>\n                \n                <h3>Relative Kontraindikationen (erhöhte Vorsicht)</h3>\n                <ul>\n                    <li>diabetes mellitus</li>\n                    <li>Autoimmune diseases</li>\n                    <li>Einnahme von Blood thinnersn</li>\n                    <li>Rosacea oder sehr empfindliche Haut</li>\n                    <li>Kürzliche Sonneneinstrahlung oder Bräunung</li>\n                    <li>Verwendung von Retinol/Säuren in den letzten 7 Tagen</li>\n                </ul>\n                \n                <h3>Importante Behavioral instructions</h3>\n                \n                <h4>Vor der Behandlung (1-2 Wochen):</h4>\n                <ul>\n                    <li>Keine Retinol- oder Säureproducts verwenden</li>\n                    <li>Sonneneinstrahlung und Solarium vermeiden</li>\n                    <li>Keine Hair removal im Treatment area</li>\n                    <li>Bei Herpes-Neigung: Prophylaktische Medikation</li>\n                    <li>Ausreichend trinken und gesunde Ernährung</li>\n                </ul>\n                \n                <h4>Nach der Behandlung (1-2 Wochen):</h4>\n                <ul>\n                    <li>24-48 Stunden: Kein Make-up im behandelten Bereich</li>\n                    <li>48 Stunden: Keine Sauna, Sport oder starkes Schwitzen</li>\n                    <li>1 Woche: Keine Retinol- oder Säureproducts</li>\n                    <li>2 Wochen: Konsequenter Sonnenschutz (LSF 50+)</li>\n                    <li>Sanfte, unparfümierte Pflegeproducts verwenden</li>\n                    <li>Nicht kratzen oder reiben</li>\n                    <li>Viel Wasser trinken</li>\n                </ul>\n                \n                <h3>Ergebnisse und Erwartungen</h3>\n                <p>Die Ergebnisse des Microneedlings entwickeln sich graduell:</p>\n                <ul>\n                    <li><strong>Sofort:</strong> Leichter Glow-Effekt durch verbesserte Durchblutung</li>\n                    <li><strong>1-2 Wochen:</strong> Erste Improvement of skin structure</li>\n                    <li><strong>4-6 Wochen:</strong> Deutliche Collagenneubildung</li>\n                    <li><strong>3-6 months:</strong> Maximales Ergebnis nach Behandlungsseries</li>\n                </ul>\n                \n                <p>Realistische Erwartungen:</p>\n                <ul>\n                    <li>Improvement of skin structure um 30-70%</li>\n                    <li>Reduktion von Scars um 25-50%</li>\n                    <li>Verfeinerung der Poren</li>\n                    <li>Erhöhte Hautelastizität</li>\n                    <li>Gleichmäßigerer Hautton</li>\n                </ul>\n                \n                <h3>Kosten und Behandlungsplan</h3>\n                <p>Die Kosten variieren je nach Treatment area und Anzahl der Sitzungen. Für optimale Ergebnisse empfehlen wir:</p>\n                <ul>\n                    <li>3-6 Treatments im Abstand von 4-6 Wochen</li>\n                    <li>Auffrischungstreatmenten alle 6-12 months</li>\n                    <li>Individuelle Anpassung je nach Hautreaction</li>\n                </ul>\n                \n                <h3>Alternative Behandlungsmöglichkeiten</h3>\n                <ul>\n                    <li>Chemical peels</li>\n                    <li>Laser-Resurfacing</li>\n                    <li>Radiofrequency treatmenten</li>\n                    <li>IPL/flash light</li>\n                    <li>Injektionstreatmenten (Fillers, Botox)</li>\n                    <li>Operative Proceedings</li>\n                    <li>Keine Behandlung</li>\n                </ul>\n                \n                <p><strong>Notfallcontact:</strong> Bei schwerwiegenden Nebenwirkungen oder Komplikationen wenden Sie sich sofort an uns oder searchn Sie die nächste Notaufnahme auf.</p>\n                "
+        "content": "\n                <h2>Microneedling: full treatment information</h2>\n                \n                <p>Dear client,</p>\n                \n                <p>You have chosen to have a microneedling treatment. This detailed information document explains the treatment, possible risks, side effects and the aftercare required.</p>\n                \n                <h3>What is microneedling?</h3>\n                <p>Microneedling is a minimally invasive cosmetic procedure in which fine needles (0.5–2.5 mm) create controlled micro-injuries in the skin. These stimulate the skin's natural healing processes and boost the production of collagen and elastin. The procedure is also known as collagen induction therapy (CIT).</p>\n                \n                <h3>How it works</h3>\n                <p>The fine needles pass through the outer layer of the skin (epidermis) and reach the dermis. This creates microscopic channels that trigger the following processes:</p>\n                <ul>\n                    <li><strong>Wound-healing response:</strong> The skin activates its natural repair mechanisms</li>\n                    <li><strong>Collagen production:</strong> New collagen fibres form and improve the skin's texture</li>\n                    <li><strong>Elastin formation:</strong> Skin elasticity increases</li>\n                    <li><strong>Improved circulation:</strong> The supply of nutrients to the skin is optimised</li>\n                    <li><strong>Active ingredient penetration:</strong> Skincare products can penetrate deeper into the skin</li>\n                </ul>\n                \n                <h3>Areas of application</h3>\n                <ul>\n                    <li><strong>Acne scars:</strong> Improvement of atrophic (indented) scars</li>\n                    <li><strong>Fine lines and wrinkles:</strong> Smoothing of superficial signs of ageing</li>\n                    <li><strong>Enlarged pores:</strong> A more refined complexion</li>\n                    <li><strong>Hyperpigmentation:</strong> Lightening of pigmentation spots</li>\n                    <li><strong>Stretch marks:</strong> Improved skin texture</li>\n                    <li><strong>General skin rejuvenation:</strong> Better texture and radiance</li>\n                    <li><strong>Scars:</strong> Various types of scar tissue</li>\n                </ul>\n                \n                <h3>Treatment procedure in detail</h3>\n                <ol>\n                    <li><strong>Preparation:</strong> Thorough cleansing and disinfection of the skin</li>\n                    <li><strong>Numbing:</strong> Application of a numbing cream (30–45 minutes to take effect)</li>\n                    <li><strong>Treatment:</strong> Systematic microneedling with sterile needles</li>\n                    <li><strong>Active ingredients:</strong> Application of serums (hyaluronic acid, vitamin C, etc.)</li>\n                    <li><strong>Soothing:</strong> Cooling, calming mask</li>\n                    <li><strong>Aftercare:</strong> Application of skincare products and sun protection</li>\n                </ol>\n                \n                <h3>Treatment parameters</h3>\n                <ul>\n                    <li><strong>Needle length:</strong> 0.5–2.5 mm, depending on the skin concern</li>\n                    <li><strong>Treatment time:</strong> 30–90 minutes, depending on the area</li>\n                    <li><strong>Number of sessions:</strong> 3–6 treatments for optimal results</li>\n                    <li><strong>Interval:</strong> 4–6 weeks between sessions</li>\n                </ul>\n                \n                <h3>Possible side effects and risks</h3>\n                \n                <h4>Common, normal reactions (>50%):</h4>\n                <ul>\n                    <li>Redness and swelling for 24–72 hours</li>\n                    <li>A feeling of tightness and mild pain</li>\n                    <li>Pinpoint bleeding during the treatment</li>\n                    <li>Increased skin sensitivity</li>\n                    <li>Light flaking after 3–5 days</li>\n                </ul>\n                \n                <h4>Occasional side effects (5–20%):</h4>\n                <ul>\n                    <li>More pronounced swelling (especially around the eyes)</li>\n                    <li>Small bruises (petechiae)</li>\n                    <li>Itching during healing</li>\n                    <li>Temporary hyperpigmentation</li>\n                    <li>Dryness and flaking</li>\n                </ul>\n                \n                <h4>Rare complications (1–5%):</h4>\n                <ul>\n                    <li>Infections (bacterial, viral, fungal)</li>\n                    <li>Allergic reactions to active ingredients</li>\n                    <li>Reactivation of herpes simplex (cold sores)</li>\n                    <li>Post-inflammatory hyperpigmentation</li>\n                    <li>Scarring (very rare when performed correctly)</li>\n                </ul>\n                \n                <h4>Very rare risks (<1%):</h4>\n                <ul>\n                    <li>Permanent changes in pigmentation</li>\n                    <li>Granuloma formation</li>\n                    <li>Transmission of pathogens (if hygiene standards are not met)</li>\n                </ul>\n                \n                <h3>Contraindications (treatment not possible)</h3>\n                <ul>\n                    <li>Pregnancy and breastfeeding</li>\n                    <li>Active skin infections in the treatment area</li>\n                    <li>Active acne with inflamed lesions</li>\n                    <li>Open wounds or eczema</li>\n                    <li>Isotretinoin use within the last 6 months</li>\n                    <li>Tendency to keloids or abnormal scarring</li>\n                    <li>Blood clotting disorders</li>\n                    <li>Immunosuppression</li>\n                    <li>Skin cancer in the treatment area</li>\n                </ul>\n                \n                <h3>Relative contraindications (extra caution required)</h3>\n                <ul>\n                    <li>Diabetes mellitus</li>\n                    <li>Autoimmune diseases</li>\n                    <li>Use of blood thinners</li>\n                    <li>Rosacea or very sensitive skin</li>\n                    <li>Recent sun exposure or tanning</li>\n                    <li>Use of retinol/acids within the last 7 days</li>\n                </ul>\n                \n                <h3>Important dos and don'ts</h3>\n                \n                <h4>Before the treatment (1–2 weeks):</h4>\n                <ul>\n                    <li>Do not use retinol or acid-based products</li>\n                    <li>Avoid sun exposure and sunbeds</li>\n                    <li>No hair removal in the treatment area</li>\n                    <li>If you are prone to cold sores: preventive medication</li>\n                    <li>Drink plenty of fluids and eat a healthy diet</li>\n                </ul>\n                \n                <h4>After the treatment (1–2 weeks):</h4>\n                <ul>\n                    <li>24–48 hours: no make-up on the treated area</li>\n                    <li>48 hours: no sauna, exercise or heavy sweating</li>\n                    <li>1 week: no retinol or acid-based products</li>\n                    <li>2 weeks: consistent sun protection (SPF 50+)</li>\n                    <li>Use gentle, fragrance-free skincare products</li>\n                    <li>Do not scratch or rub the skin</li>\n                    <li>Drink plenty of water</li>\n                </ul>\n                \n                <h3>Results and expectations</h3>\n                <p>The results of microneedling develop gradually:</p>\n                <ul>\n                    <li><strong>Immediately:</strong> A subtle glow thanks to improved circulation</li>\n                    <li><strong>1–2 weeks:</strong> First improvement in skin texture</li>\n                    <li><strong>4–6 weeks:</strong> Noticeable new collagen formation</li>\n                    <li><strong>3–6 months:</strong> Full results after a course of treatments</li>\n                </ul>\n                \n                <p>Realistic expectations:</p>\n                <ul>\n                    <li>30–70% improvement in skin texture</li>\n                    <li>25–50% reduction in scarring</li>\n                    <li>Refined pores</li>\n                    <li>Increased skin elasticity</li>\n                    <li>A more even skin tone</li>\n                </ul>\n                \n                <h3>Costs and treatment plan</h3>\n                <p>Costs vary depending on the treatment area and the number of sessions. For optimal results, we recommend:</p>\n                <ul>\n                    <li>3–6 treatments at intervals of 4–6 weeks</li>\n                    <li>Maintenance treatments every 6–12 months</li>\n                    <li>Individual adjustments based on how your skin responds</li>\n                </ul>\n                \n                <h3>Alternative treatment options</h3>\n                <ul>\n                    <li>Chemical peels</li>\n                    <li>Laser resurfacing</li>\n                    <li>Radiofrequency treatments</li>\n                    <li>IPL (intense pulsed light)</li>\n                    <li>Injectable treatments (fillers, Botox)</li>\n                    <li>Surgical procedures</li>\n                    <li>No treatment</li>\n                </ul>\n                \n                <p><strong>Emergency contact:</strong> If you experience serious side effects or complications, contact us immediately or go to your nearest emergency department.</p>\n                "
       },
       {
         "id": "p5",
@@ -323,11 +323,11 @@
           {
             "id": "f23",
             "type": "checkbox",
-            "label": "Education and understanding",
+            "label": "Information and understanding",
             "required": true,
             "options": [
               "I have fully read and understood the comprehensive information on microneedling.",
-              "I had enough time to study the disclosure document.",
+              "I had enough time to read the information document.",
               "All of my questions were answered satisfactorily.",
               "I understand how microneedling works.",
               "I understand that multiple treatments are required for optimal results."
@@ -361,10 +361,10 @@
           {
             "id": "f26",
             "type": "checkbox",
-            "label": "Behavioral instructions",
+            "label": "Pre- and aftercare instructions",
             "required": true,
             "options": [
-              "I undertake to comply with the behavioral instructions before treatment.",
+              "I undertake to follow the pre-treatment instructions.",
               "I will follow the aftercare instructions carefully.",
               "I understand the importance of sun protection after treatment.",
               "I will contact you immediately if I have any problems."
@@ -391,7 +391,7 @@
             "options": [
               "I agree that photos will be taken for documentation purposes.",
               "I understand that these photos will be treated confidentially.",
-              "I agree to the storage of my data in accordance with data protection regulations."
+              "I consent to my data being stored in accordance with the GDPR."
             ]
           },
           {
@@ -417,7 +417,7 @@
         "title": "Confirmation and next steps",
         "type": "confirmation",
         "fields": [],
-        "content": "\n                <h2>Vielen Dank für Ihre ausführlichen Angaben!</h2>\n                \n                <p>Ihre Informationen und consent zur Microneedling-Behandlung wurden vollständig erfasst und werden vertraulich behandelt.</p>\n                \n                <h3>Importante Hinweise für Ihren Behandlungsappointment:</h3>\n                \n                <h4>1 Woche vor der Behandlung:</h4>\n                <ul>\n                    <li>Keine Retinol- oder Säureproducts verwenden</li>\n                    <li>Sonneneinstrahlung und Solarium vermeiden</li>\n                    <li>Keine Hair removal im Treatment area</li>\n                    <li>Bei Herpes-Neigung: Prophylaktische Medikation besprechen</li>\n                </ul>\n                \n                <h4>Am Behandlungstag:</h4>\n                <ul>\n                    <li>Ohne Make-up im Treatment area erscheinen</li>\n                    <li>Bequeme Kleidung tragen</li>\n                    <li>Ausreichend Zeit einplanen (ca. 60-90 Minuten)</li>\n                    <li>Bei Unwohlsein oder Hautproblemen den Termin verschieben</li>\n                </ul>\n                \n                <h4>Nach der Behandlung:</h4>\n                <ul>\n                    <li>24-48 Stunden kein Make-up</li>\n                    <li>48 Stunden keine Sauna oder intensiven Sport</li>\n                    <li>1 Woche keine Retinol- oder Säureproducts</li>\n                    <li>2 Wochen konsequenter Sonnenschutz (LSF 50+)</li>\n                    <li>Sanfte, unparfümierte Pflegeproducts verwenden</li>\n                </ul>\n                \n                <h3>Behandlungsplan:</h3>\n                <p>Für optimale Ergebnisse empfehlen wir 3-6 Treatments im Abstand von 4-6 Wochen. Der nächste Termin wird nach der ersten Behandlung basierend auf Ihrer Hautreaction geplant.</p>\n                \n                <h3>Notfallcontact:</h3>\n                <p>Bei schwerwiegenden Nebenwirkungen oder Komplikationen wenden Sie sich sofort an uns oder searchn Sie die nächste Notaufnahme auf.</p>\n                \n                <p><strong>Wir freuen uns darauf, Sie professionell und sicher zu behandeln!</strong></p>\n                "
+        "content": "\n                <h2>Thank you for your detailed information!</h2>\n                \n                <p>Your details and your consent to the microneedling treatment have been recorded in full and will be treated confidentially.</p>\n                \n                <h3>Important information for your appointment:</h3>\n                \n                <h4>1 week before the treatment:</h4>\n                <ul>\n                    <li>Do not use retinol or acid-based products</li>\n                    <li>Avoid sun exposure and sunbeds</li>\n                    <li>No hair removal in the treatment area</li>\n                    <li>If you are prone to cold sores: discuss preventive medication</li>\n                </ul>\n                \n                <h4>On the day of treatment:</h4>\n                <ul>\n                    <li>Arrive with no make-up on the treatment area</li>\n                    <li>Wear comfortable clothing</li>\n                    <li>Allow enough time (approx. 60–90 minutes)</li>\n                    <li>If you feel unwell or have skin problems, reschedule your appointment</li>\n                </ul>\n                \n                <h4>After the treatment:</h4>\n                <ul>\n                    <li>No make-up for 24–48 hours</li>\n                    <li>No sauna or intense exercise for 48 hours</li>\n                    <li>No retinol or acid-based products for 1 week</li>\n                    <li>Consistent sun protection (SPF 50+) for 2 weeks</li>\n                    <li>Use gentle, fragrance-free skincare products</li>\n                </ul>\n                \n                <h3>Treatment plan:</h3>\n                <p>For optimal results, we recommend 3–6 treatments at intervals of 4–6 weeks. Your next appointment will be planned after the first treatment, based on how your skin responds.</p>\n                \n                <h3>Emergency contact:</h3>\n                <p>If you experience serious side effects or complications, contact us immediately or go to your nearest emergency department.</p>\n                \n                <p><strong>We look forward to treating you professionally and safely!</strong></p>\n                "
       }
     ],
     "tags": [
@@ -438,7 +438,7 @@
     "pages": [
       {
         "id": "p1",
-        "title": "Treatment area & wishes",
+        "title": "Treatment areas & preferences",
         "type": "form",
         "fields": [
           {
@@ -448,11 +448,11 @@
             "required": true,
             "options": [
               "Eyebrows",
-              "Eyeliner on top",
-              "Eyeliner below",
+              "Upper eyeliner",
+              "Lower eyeliner",
               "Lip contour",
               "Full lip shading",
-              "Beauty spot/beauty spot",
+              "Beauty spot",
               "Nipple reconstruction",
               "Scar concealment"
             ]
@@ -477,7 +477,7 @@
           {
             "id": "f4",
             "type": "textarea",
-            "label": "How do you imagine the result?",
+            "label": "What result are you hoping for?",
             "required": true,
             "placeholder": "Describe your wishes and ideas"
           }
@@ -504,14 +504,14 @@
             "label": "Do you suffer from any of the following illnesses?",
             "required": true,
             "options": [
-              "diabetes",
+              "Diabetes",
               "Heart disease",
               "Blood clotting disorders",
               "Autoimmune diseases",
               "Skin diseases",
               "Infectious diseases (HIV, hepatitis)",
-              "epilepsy",
-              "None of the mentioned"
+              "Epilepsy",
+              "None of the above"
             ]
           },
           {
@@ -527,7 +527,7 @@
           {
             "id": "f8",
             "type": "radio",
-            "label": "Are you suffering from herpes in the treatment area?",
+            "label": "Do you get cold sores (herpes) in the treatment area?",
             "required": true,
             "options": [
               "Yes",
@@ -540,11 +540,11 @@
             "label": "Do you have allergies to any of the following substances?",
             "required": true,
             "options": [
-              "Local anesthetics (narcotics)",
-              "latex",
+              "Local anaesthetics (numbing agents)",
+              "Latex",
               "Nickel or other metals",
-              "Color pigments",
-              "None of the mentioned"
+              "Colour pigments",
+              "None of the above"
             ]
           },
           {
@@ -558,14 +558,14 @@
       },
       {
         "id": "p3",
-        "title": "Education about permanent make-up",
+        "title": "Permanent make-up information",
         "type": "document",
         "fields": [],
-        "content": "\n                <h2>Aufklärung zur Permanent makeup Behandlung</h2>\n                \n                <p>Sehr geehrte Kundin, sehr geehrter Kunde,</p>\n                \n                <p>Sie haben sich für eine Permanent makeup Behandlung entschieden. Mit diesem Dokument möchten wir Sie umfassend über den Behandlungsablauf, mögliche Risiken und die Nachsorge informieren.</p>\n                \n                <h3>Die Behandlungsmethode</h3>\n                <p>Beim Permanent makeup werden spezielle, für die Anwendung am Menschen geeignete Color pigments mit feinen Nadeln in die obere Hautschicht (Epidermis/Dermis) eingebracht. Die Haltbarkeit des Ergebnisses beträgt, abhängig von verschiedenen Faktoren wie Hauttyp, Lebensgewohnheiten und Sonneneinstrahlung, in der Regel 1-5 Jahre. Für ein optimales Ergebnis ist meist eine Nachtreatment nach 4-6 Wochen erforderlich.</p>\n                \n                <h3>Behandlungsablauf</h3>\n                <p>Die Behandlung umfasst folgende Schritte:</p>\n                <ol>\n                    <li>Beratungsgespräch und Farbauswahl</li>\n                    <li>Vorzeichnung der gewünschten Form</li>\n                    <li>Lokale Betäubung des Treatment areas (optional)</li>\n                    <li>Einbringen der Color pigments</li>\n                    <li>Abschließende Pflege und Nachsorgeberatung</li>\n                </ol>\n                \n                <h3>Mögliche Nebenwirkungen und Risiken</h3>\n                <ul>\n                    <li><strong>Normale Reactionen:</strong> Redness, leichte Schwellungen, leichtes Brennen und Spannungsgefühl für 1-2 Tage.</li>\n                    <li><strong>Rarelye Nebenwirkungen:</strong> Starke Schwellungen, Infektionen, allergische Reactionen auf Color pigments oder Betäubungsmittel, vorübergehende Bläschenbildung.</li>\n                    <li><strong>Longfristige Risiken:</strong> Farbveränderungen, unregelmäßiges Verblassen, asymmetrisches Erscheinungsbild, Scarsbildung.</li>\n                </ul>\n                \n                <h3>Nachsorge</h3>\n                <p>Für ein optimales Ergebnis ist die richtige Nachsorge entscheidend:</p>\n                <ul>\n                    <li>Behandelte Bereiche 7-10 Tage vor Sonne, Solarium, Sauna und Chlorwasser schützen</li>\n                    <li>Berührungen vermeiden und nicht kratzen, auch wenn es juckt</li>\n                    <li>Keine peelings, fruit acid- oder Retinolanwendungen für mindestens 2 Wochen</li>\n                    <li>Wimpernzange bei eyelineren erst nach vollständiger Abheilung verwenden</li>\n                    <li>Die empfohlene Nachtreatment nach 4-6 Wochen wahrnehmen</li>\n                </ul>\n                \n                <h3>Importante Hinweise</h3>\n                <ul>\n                    <li>Das endgültige Ergebnis ist erst nach der Abheilung und eventuellen Nachtreatment sichtbar</li>\n                    <li>Die Farbe erscheint direkt nach der Behandlung deutlich intensiver und dunkler</li>\n                    <li>Eine Garantie für die exakte Farbentwicklung und Haltbarkeit kann nicht gegeben werden</li>\n                    <li>Bei Unzufriedenheit mit dem Ergebnis kann eine Korrektur erforderlich sein</li>\n                </ul>\n                "
+        "content": "\n                <h2>Permanent make-up treatment information</h2>\n                \n                <p>Dear client,</p>\n                \n                <p>You have chosen to have a permanent make-up treatment. This document explains the treatment process, possible risks and aftercare.</p>\n                \n                <h3>The treatment method</h3>\n                <p>With permanent make-up, special colour pigments approved for use on humans are introduced into the upper layers of the skin (epidermis/dermis) using fine needles. Depending on factors such as skin type, lifestyle and sun exposure, the result usually lasts 1–5 years. A touch-up session after 4–6 weeks is usually needed for the best result.</p>\n                \n                <h3>Treatment process</h3>\n                <p>The treatment involves the following steps:</p>\n                <ol>\n                    <li>Consultation and colour selection</li>\n                    <li>Pre-drawing of the desired shape</li>\n                    <li>Local numbing of the treatment area (optional)</li>\n                    <li>Implantation of the colour pigments</li>\n                    <li>Final care and aftercare advice</li>\n                </ol>\n                \n                <h3>Possible side effects and risks</h3>\n                <ul>\n                    <li><strong>Normal reactions:</strong> Redness, slight swelling, a mild burning sensation and tightness for 1–2 days.</li>\n                    <li><strong>Rare side effects:</strong> Severe swelling, infections, allergic reactions to colour pigments or anaesthetics, temporary blistering.</li>\n                    <li><strong>Long-term risks:</strong> Colour changes, uneven fading, an asymmetrical appearance, scarring.</li>\n                </ul>\n                \n                <h3>Aftercare</h3>\n                <p>Correct aftercare is essential for the best result:</p>\n                <ul>\n                    <li>Protect the treated areas from sun, sunbeds, saunas and chlorinated water for 7–10 days</li>\n                    <li>Avoid touching the area and do not scratch, even if it itches</li>\n                    <li>No peels, AHA (fruit acid) or retinol products for at least 2 weeks</li>\n                    <li>After eyeliner treatment, only use an eyelash curler once the area has fully healed</li>\n                    <li>Attend the recommended touch-up session after 4–6 weeks</li>\n                </ul>\n                \n                <h3>Important information</h3>\n                <ul>\n                    <li>The final result is only visible after healing and any touch-up session</li>\n                    <li>Immediately after the treatment, the colour looks much more intense and darker</li>\n                    <li>No guarantee can be given for the exact colour development and longevity</li>\n                    <li>If you are not satisfied with the result, a correction may be needed</li>\n                </ul>\n                "
       },
       {
         "id": "p4",
-        "title": "consent",
+        "title": "Consent",
         "type": "form",
         "fields": [
           {
@@ -629,7 +629,7 @@
         "title": "Confirmation",
         "type": "confirmation",
         "fields": [],
-        "content": "\n                <h2>Vielen Dank für Ihre Angaben!</h2>\n                \n                <p>Ihre Informationen und consent zur Permanent makeup Behandlung wurden erfasst.</p>\n                \n                <h3>Bitte beachten Sie vor Ihrem Termin:</h3>\n                <ul>\n                    <li>Kommen Sie ohne Make-up im Treatment area</li>\n                    <li>Nehmen Sie 48 Stunden vor der Behandlung keine blutverdünnenden Medication ein (nur nach Rücksprache mit Ihrem Arzt)</li>\n                    <li>Vermeiden Sie Alkohol und koffeinhaltige Getränke am Tag der Behandlung</li>\n                    <li>Bringen Sie, falls vorhanden, Ihre Make-up Products mit, um den gewünschten Look zu besprechen</li>\n                </ul>\n                \n                <p>Wir freuen uns auf Ihren Besuch!</p>\n                "
+        "content": "\n                <h2>Thank you for your information!</h2>\n                \n                <p>Your details and your consent to the permanent make-up treatment have been recorded.</p>\n                \n                <h3>Please note before your appointment:</h3>\n                <ul>\n                    <li>Arrive with no make-up on the treatment area</li>\n                    <li>Do not take blood-thinning medication for 48 hours before the treatment (only after consulting your doctor)</li>\n                    <li>Avoid alcohol and caffeinated drinks on the day of the treatment</li>\n                    <li>If you have them, bring your own make-up products so we can discuss the look you would like</li>\n                </ul>\n                \n                <p>We look forward to seeing you!</p>\n                "
       }
     ],
     "tags": [
@@ -637,8 +637,8 @@
       "PMU",
       "Microblading",
       "Eyebrows",
-      "eyeliner",
-      "lips"
+      "Eyeliner",
+      "Lips"
     ]
   },
   {
@@ -661,7 +661,7 @@
             "options": [
               "Normal",
               "Dry",
-              "Greasy",
+              "Oily",
               "Combination skin",
               "Sensitive",
               "I do not know"
@@ -688,7 +688,7 @@
             "type": "textarea",
             "label": "Describe your daily skin care routine",
             "required": true,
-            "placeholder": "Cleanser, toner, serum, moisturizer, sunscreen etc."
+            "placeholder": "Cleanser, toner, serum, moisturiser, sunscreen, etc."
           },
           {
             "id": "f4",
@@ -702,7 +702,7 @@
               "Hyaluronic acid",
               "Niacinamide",
               "Enzymes/exfoliants",
-              "facial oils",
+              "Facial oils",
               "Masks"
             ]
           }
@@ -736,7 +736,7 @@
             "type": "textarea",
             "label": "What type of treatment did you receive and what was your experience?",
             "required": false,
-            "placeholder": "e.g. classic facial treatment, microdermabrasion, chemical peeling..."
+            "placeholder": "e.g. classic facial, microdermabrasion, chemical peel..."
           },
           {
             "id": "f8",
@@ -744,11 +744,11 @@
             "label": "Which of the following treatments are you interested in?",
             "required": true,
             "options": [
-              "Deep cleaning/cleansing",
+              "Deep cleansing/extractions",
               "Anti-aging treatment",
-              "Moisture treatment",
+              "Hydrating treatment",
               "Soothing treatment for sensitive skin",
-              "Acne/Blemish Treatment",
+              "Acne/blemish treatment",
               "Brightening treatment for pigment spots",
               "Lymphatic drainage/massage"
             ]
@@ -760,9 +760,9 @@
             "required": true,
             "options": [
               "Very sensitive",
-              "A bit sensitive",
+              "Slightly sensitive",
               "Normal",
-              "Robust/insensitive",
+              "Robust/not sensitive",
               "I do not know"
             ]
           }
@@ -779,10 +779,10 @@
             "label": "Do you have any of the following skin problems?",
             "required": true,
             "options": [
-              "Neurodermatitis/eczema",
-              "Psoriasis/psoriasis",
+              "Atopic dermatitis/eczema",
+              "Psoriasis",
               "Rosacea",
-              "tendency to herpes",
+              "Prone to cold sores (herpes)",
               "Fungal diseases",
               "No dermatological diagnoses"
             ]
@@ -847,17 +847,17 @@
             "options": [
               "Very important",
               "Important",
-              "Not that important, I'm going for long term results"
+              "Not that important, I'm focused on long-term results"
             ]
           },
           {
             "id": "f17",
             "type": "checkbox",
-            "label": "I agree with:",
+            "label": "I consent to:",
             "required": true,
             "options": [
-              "Cleansing/blackhead removal (can cause short-term redness)",
-              "Light peeling (may cause a slight tingling sensation)",
+              "Extractions/blackhead removal (can cause short-term redness)",
+              "Light peels (may cause a slight tingling sensation)",
               "Facial massage",
               "Masks",
               "Eyebrow and eyelash tinting"
@@ -879,7 +879,7 @@
         "title": "Confirmation",
         "type": "confirmation",
         "fields": [],
-        "content": "\n                <h2>Vielen Dank für Ihre Angaben!</h2>\n                \n                <p>Auf Basis Ihrer Informationen können wir Ihre Facial treatment optimal an Ihre Bedürfnisse anpassen.</p>\n                \n                <h3>Hinweise für Ihren Termin:</h3>\n                <ul>\n                    <li>Bitte erscheinen Sie ohne Make-up</li>\n                    <li>Vermeiden Sie 24 Stunden vor der Behandlung peelings oder stark wirkende Products</li>\n                    <li>Informieren Sie uns bei Veränderungen Ihres Hautzustands</li>\n                    <li>Bringen Sie gerne Ihre aktuellen Pflegeproducts mit, damit wir diese in die Beratung einbeziehen können</li>\n                </ul>\n                \n                <p>Wir freuen uns auf Ihren Besuch und darauf, Ihnen ein entspannendes und effektives Behandlungserlebnis zu bieten!</p>\n                "
+        "content": "\n                <h2>Thank you for your information!</h2>\n                \n                <p>Based on your details, we can tailor your facial treatment to your individual needs.</p>\n                \n                <h3>Information for your appointment:</h3>\n                <ul>\n                    <li>Please arrive without make-up</li>\n                    <li>Avoid exfoliants or strong active products for 24 hours before the treatment</li>\n                    <li>Let us know about any changes in your skin</li>\n                    <li>Feel free to bring your current skincare products so we can include them in your consultation</li>\n                </ul>\n                \n                <p>We look forward to seeing you and giving you a relaxing and effective treatment!</p>\n                "
       }
     ],
     "tags": [
@@ -887,7 +887,7 @@
       "Skin care",
       "Cosmetics",
       "Skin analysis",
-      "cleaning"
+      "Cleansing"
     ]
   },
   {
@@ -910,7 +910,7 @@
             "options": [
               "Yes, regularly",
               "Yes, occasionally",
-              "No, for the first time"
+              "No, this is my first time"
             ]
           },
           {
@@ -919,9 +919,9 @@
             "label": "What look do you want?",
             "required": true,
             "options": [
-              "Naturally",
+              "Natural",
               "Discreet",
-              "Dramatic/Voluminous",
+              "Dramatic/voluminous",
               "Cat-eye effect",
               "Doll eyes effect",
               "Unsure, please advise"
@@ -933,9 +933,9 @@
             "label": "Special requests",
             "required": false,
             "options": [
-              "Particularly light",
+              "Extra lightweight",
               "Waterproof",
-              "Colored eyelashes",
+              "Coloured lashes",
               "Rhinestones/crystals"
             ]
           },
@@ -960,7 +960,7 @@
               "Classic (1:1)",
               "Volume (2D-4D)",
               "Mega Volume (5D+)",
-              "Hybrid (mixture)",
+              "Hybrid (mix)",
               "Unsure, please advise"
             ]
           }
@@ -968,7 +968,7 @@
       },
       {
         "id": "p2",
-        "title": "Health warnings",
+        "title": "Health information",
         "type": "form",
         "fields": [
           {
@@ -984,24 +984,24 @@
           {
             "id": "f7",
             "type": "checkbox",
-            "label": "Do you have any of the following eye diseases?",
+            "label": "Do you have any of the following eye conditions?",
             "required": true,
             "options": [
               "Conjunctivitis",
               "Blepharitis (eyelid inflammation)",
               "Dry eyes",
-              "Barleycorn",
-              "glaucoma",
-              "Other eye diseases",
-              "No eye diseases"
+              "Stye",
+              "Glaucoma",
+              "Other eye conditions",
+              "No eye conditions"
             ]
           },
           {
             "id": "f8",
             "type": "textarea",
-            "label": "If 'Other eye diseases' is selected, please specify:",
+            "label": "If 'Other eye conditions' is selected, please specify:",
             "required": false,
-            "placeholder": "Please indicate your eye diseases"
+            "placeholder": "Please specify your eye condition(s)"
           },
           {
             "id": "f9",
@@ -1010,7 +1010,7 @@
             "required": true,
             "options": [
               "Glue/cyanoacrylate",
-              "latex",
+              "Latex",
               "Tape/plaster",
               "Acrylic",
               "Other",
@@ -1028,14 +1028,14 @@
       },
       {
         "id": "p3",
-        "title": "Eyelash extension education",
+        "title": "Lash extension information",
         "type": "document",
         "fields": [],
-        "content": "\n                <h2>Aufklärung zur Eyelash extensions</h2>\n                \n                <p>Sehr geehrte Kundin,</p>\n                \n                <p>Sie haben sich für eine Eyelash extensions entschieden. Mit diesem Dokument möchten wir Sie über den Behandlungsablauf, mögliche Risiken und die erforderliche Nachsorge informieren.</p>\n                \n                <h3>Behandlungsablauf</h3>\n                <p>Bei der Eyelash extensions werden synthetische Wimpern mit Help eines speziellen Klebers einzeln an Ihre natürlichen Wimpern angebracht. Die Behandlung durationt je nach gewünschtem Look etwa 1,5 bis 2,5 Stunden. Für eine optimale Haftung sollten Sie mit gereinigten, fett- und schminkfreien Wimpern zur Behandlung erscheinen.</p>\n                \n                <h3>Mögliche Risks and side effects</h3>\n                <ul>\n                    <li><strong>Allergische Reactionen:</strong> Der verwendete Kleber kann in seltenen Fällen allergische Reactionen auslösen. Bei den ersten Anzeichen einer Allergie (starke Rötung, Schwellung, Juckreiz) wenden Sie sich bitte umgehend an uns.</li>\n                    <li><strong>Augenirritationen:</strong> Während der Behandlung können die Augen leicht gereizt werden. Dies sollte nach der Behandlung schnell abklingen.</li>\n                    <li><strong>Beeinträchtigung der natürlichen Wimpern:</strong> Bei unsachgemäßer Anwendung oder falscher Pflege können die natürlichen Wimpern geschädigt werden.</li>\n                </ul>\n                \n                <h3>Nachsorge und Pflegehinweise</h3>\n                <ul>\n                    <li>Vermeiden Sie 24-48 Stunden nach der Behandlung Kontakt mit Wasser, Dampf und öligen Substanzen.</li>\n                    <li>Verwenden Sie keine ölhaltigen Products im eye area.</li>\n                    <li>Verzichten Sie auf das Reiben der Augen und übermäßiges Berühren der Wimpern.</li>\n                    <li>Benutzen Sie keine Wimpernzange und keine wasserfeste Mascara.</li>\n                    <li>Bürsten Sie Ihre Wimpern regelmäßig mit einer sauberen Wimpernbürste.</li>\n                    <li>Schlafen Sie möglichst auf dem Back, um Druck auf die Wimpern zu vermeiden.</li>\n                    <li>Für ein optimales Ergebnis empfehlen wir eine Auffüllung alle 2-3 Wochen.</li>\n                </ul>\n                \n                <h3>Haltbarkeit</h3>\n                <p>Die Haltbarkeit der Eyelash extensions ist individuell unterschiedlich und hängt von Ihrem natürlichen Wimpernzyklus, Ihrer Hautbeschaffenheit und Ihrer Pflege ab. Im Durchschnitt beträgt die Haltbarkeit 4-6 Wochen. Durch regelmäßige Auffüllappointments (alle 2-3 Wochen) kann das Ergebnis länger erhalten werden.</p>\n                "
+        "content": "\n                <h2>Lash extension information</h2>\n                \n                <p>Dear client,</p>\n                \n                <p>You have chosen to have lash extensions. This document explains the treatment process, possible risks and the aftercare required.</p>\n                \n                <h3>Treatment process</h3>\n                <p>During a lash extension treatment, synthetic lashes are attached one by one to your natural lashes using a special adhesive. Depending on the look you want, the treatment takes around 1.5 to 2.5 hours. For optimal adhesion, please arrive with clean lashes that are free of oil and make-up.</p>\n                \n                <h3>Possible risks and side effects</h3>\n                <ul>\n                    <li><strong>Allergic reactions:</strong> In rare cases, the adhesive used can cause allergic reactions. At the first signs of an allergy (severe redness, swelling, itching), please contact us immediately.</li>\n                    <li><strong>Eye irritation:</strong> Your eyes may become slightly irritated during the treatment. This should settle quickly afterwards.</li>\n                    <li><strong>Damage to natural lashes:</strong> Incorrect application or improper care can damage your natural lashes.</li>\n                </ul>\n                \n                <h3>Aftercare and care instructions</h3>\n                <ul>\n                    <li>Avoid contact with water, steam and oily substances for 24–48 hours after the treatment.</li>\n                    <li>Do not use oil-based products around the eyes.</li>\n                    <li>Avoid rubbing your eyes and touching your lashes too often.</li>\n                    <li>Do not use an eyelash curler or waterproof mascara.</li>\n                    <li>Brush your lashes regularly with a clean spoolie.</li>\n                    <li>Try to sleep on your back to avoid putting pressure on the lashes.</li>\n                    <li>For the best result, we recommend an infill every 2–3 weeks.</li>\n                </ul>\n                \n                <h3>How long they last</h3>\n                <p>How long lash extensions last varies from person to person and depends on your natural lash cycle, your skin type and how you look after them. On average, they last 4–6 weeks. Regular infill appointments (every 2–3 weeks) help the result last longer.</p>\n                "
       },
       {
         "id": "p4",
-        "title": "consent",
+        "title": "Consent",
         "type": "form",
         "fields": [
           {
@@ -1099,7 +1099,7 @@
         "title": "Confirmation",
         "type": "confirmation",
         "fields": [],
-        "content": "\n                <h2>Vielen Dank für Ihre Angaben!</h2>\n                \n                <p>Ihre Informationen und consent zur Eyelash extensions wurden erfasst.</p>\n                \n                <h3>Hinweise für Ihren Termin:</h3>\n                <ul>\n                    <li>Bitte erscheinen Sie ohne Augen-Make-up</li>\n                    <li>Entfernen Sie Kontaktlinsen vor der Behandlung</li>\n                    <li>Vermeiden Sie 24 Stunden vorher stark koffeinhaltige Getränke (reduziert Augenzucken)</li>\n                    <li>Planen Sie nach der Behandlung ausreichend Zeit ein, damit der Kleber vollständig trocknen kann</li>\n                </ul>\n                \n                <p>Wir freuen uns auf Ihren Besuch!</p>\n                "
+        "content": "\n                <h2>Thank you for your information!</h2>\n                \n                <p>Your details and your consent to the lash extension treatment have been recorded.</p>\n                \n                <h3>Information for your appointment:</h3>\n                <ul>\n                    <li>Please arrive without eye make-up</li>\n                    <li>Remove contact lenses before the treatment</li>\n                    <li>Avoid strongly caffeinated drinks for 24 hours beforehand (this reduces eye twitching)</li>\n                    <li>Allow enough time after the treatment for the adhesive to dry completely</li>\n                </ul>\n                \n                <p>We look forward to seeing you!</p>\n                "
       }
     ],
     "tags": [
@@ -1107,7 +1107,7 @@
       "Lashes",
       "Beauty",
       "Extensions",
-      "styling"
+      "Styling"
     ]
   },
   {
@@ -1146,8 +1146,8 @@
             "options": [
               "Yes, regularly",
               "Yes, occasionally",
-              "Once upon a time",
-              "No, for the first time"
+              "Once, in the past",
+              "No, this is my first time"
             ]
           },
           {
@@ -1156,7 +1156,7 @@
             "label": "When was the last time you wore artificial nails?",
             "required": false,
             "options": [
-              "I'm currently wearing it",
+              "I'm wearing them now",
               "In the last 4 weeks",
               "In the last 3 months",
               "More than 3 months ago",
@@ -1169,7 +1169,7 @@
             "label": "Preferred nail length",
             "required": true,
             "options": [
-              "Short (of course)",
+              "Short (natural)",
               "Medium",
               "Long",
               "Extra long"
@@ -1183,8 +1183,8 @@
             "options": [
               "Square",
               "Oval",
-              "Around",
-              "almond",
+              "Round",
+              "Almond",
               "Stiletto",
               "Ballerina/Coffin",
               "Unsure, please advise"
@@ -1209,7 +1209,7 @@
               "Torn nails",
               "Nail detachment",
               "Nail bed inflammation",
-              "Discolored nails",
+              "Discoloured nails",
               "No nail problems"
             ]
           },
@@ -1233,7 +1233,7 @@
               "UV gel",
               "Nail polish/gel polish",
               "Nail polish remover/acetone",
-              "latex",
+              "Latex",
               "Disinfectant",
               "Other",
               "No known allergies"
@@ -1254,27 +1254,27 @@
             "options": [
               "Yes",
               "No",
-              "I don't want to show off"
+              "Prefer not to say"
             ]
           }
         ]
       },
       {
         "id": "p3",
-        "title": "Enlightenment nail design",
+        "title": "Nail design information",
         "type": "document",
         "fields": [],
-        "content": "\n                <h2>Aufklärung zur Nagelmodellage</h2>\n                \n                <p>Sehr geehrte Kundin, sehr geehrter Kunde,</p>\n                \n                <p>Sie haben sich für eine Nagelmodellage entschieden. Mit diesem Dokument möchten wir Sie über den Behandlungsablauf, mögliche Risiken und die Nachsorge informieren.</p>\n                \n                <h3>Behandlungsablauf</h3>\n                <p>Die Nagelmodellage umfasst folgende Schritte:</p>\n                <ol>\n                    <li>Vorbereitung der Naturnägel (Kürzen, Feilen, Entfernen der Nagelhaut)</li>\n                    <li>Mattieren der Nageloberfläche</li>\n                    <li>Anbringen von Tips (bei Verlängerung) oder Schablonen</li>\n                    <li>Auftragen des Modelingmaterials (Gel, Acrylic, etc.)</li>\n                    <li>Aushärten unter UV- oder LED-Licht (bei Gel)</li>\n                    <li>Formen und Feilen der Nails</li>\n                    <li>Versiegeln und Auftragen von Farblack/Design</li>\n                </ol>\n                \n                <h3>Mögliche Risks and side effects</h3>\n                <ul>\n                    <li><strong>Allergische Reactionen:</strong> Die verwendeten Materialien können in seltenen Fällen Allergien auslösen.</li>\n                    <li><strong>Nagelbettreizungen:</strong> Bei unsachgemäßer Anwendung oder Entfernung können Reizungen auftreten.</li>\n                    <li><strong>Schwächung der Naturnägel:</strong> Besonders bei unsachgemäßer Entfernung oder häufigem Wechsel können die Naturnägel dünner und empfindlicher werden.</li>\n                    <li><strong>Nagelinfektionen:</strong> Bei schlechter Hygiene oder Beschädigung der Nails kann es zu Infektionen kommen.</li>\n                </ul>\n                \n                <h3>Nachsorge und Pflegehinweise</h3>\n                <ul>\n                    <li>Tragen Sie bei Hausarbeiten mit Wasser oder Chemikalien Handschuhe.</li>\n                    <li>Verwenden Sie regelmäßig Nagelöl, um Naturnagel und Nagelhaut zu pflegen.</li>\n                    <li>Verzichten Sie darauf, die Nails als Werkzeug zu benutzen oder übermäßigem Druck auszusetzen.</li>\n                    <li>Bei Beschädigungen searchn Sie bitte zeitnah das Studio auf, um Reparaturen durchführen zu lassen.</li>\n                    <li>Für ein gleichbleibendes Erscheinungsbild empfehlen wir ein Auffüllen alle 3-4 Wochen.</li>\n                    <li>Bei Anzeichen von Infektionen oder allergischen Reactionen searchn Sie bitte umgehend einen Arzt auf.</li>\n                </ul>\n                \n                <h3>Entfernung</h3>\n                <p>Die Entfernung künstlicher Nails sollte stets fachgerecht erfolgen. Ein Abbrechen oder Abziehen kann zu Schäden am Naturnagel führen. Wenden Sie sich für die Entfernung am besten wieder an uns.</p>\n                "
+        "content": "\n                <h2>Nail enhancement information</h2>\n                \n                <p>Dear client,</p>\n                \n                <p>You have chosen to have nail enhancements. This document explains the treatment process, possible risks and aftercare.</p>\n                \n                <h3>Treatment process</h3>\n                <p>The nail enhancement treatment involves the following steps:</p>\n                <ol>\n                    <li>Preparing the natural nails (shortening, filing, removing cuticles)</li>\n                    <li>Buffing the nail surface</li>\n                    <li>Applying tips (for extensions) or nail forms</li>\n                    <li>Applying the enhancement material (gel, acrylic, etc.)</li>\n                    <li>Curing under UV or LED light (for gel)</li>\n                    <li>Shaping and filing the nails</li>\n                    <li>Sealing and applying colour/design</li>\n                </ol>\n                \n                <h3>Possible risks and side effects</h3>\n                <ul>\n                    <li><strong>Allergic reactions:</strong> In rare cases, the materials used can cause allergies.</li>\n                    <li><strong>Nail bed irritation:</strong> Irritation can occur if the products are applied or removed incorrectly.</li>\n                    <li><strong>Weakening of the natural nails:</strong> The natural nails can become thinner and more sensitive, especially after incorrect removal or frequent changes.</li>\n                    <li><strong>Nail infections:</strong> Poor hygiene or damage to the nails can lead to infections.</li>\n                </ul>\n                \n                <h3>Aftercare and care instructions</h3>\n                <ul>\n                    <li>Wear gloves when doing housework involving water or chemicals.</li>\n                    <li>Use cuticle oil regularly to care for your natural nails and cuticles.</li>\n                    <li>Do not use your nails as tools or expose them to excessive pressure.</li>\n                    <li>If a nail is damaged, please visit the salon promptly to have it repaired.</li>\n                    <li>To keep your nails looking their best, we recommend an infill every 3–4 weeks.</li>\n                    <li>If you notice signs of infection or an allergic reaction, please see a doctor straight away.</li>\n                </ul>\n                \n                <h3>Removal</h3>\n                <p>Artificial nails should always be removed professionally. Snapping or peeling them off can damage the natural nail. Ideally, come back to us for removal.</p>\n                "
       },
       {
         "id": "p4",
-        "title": "consent",
+        "title": "Consent",
         "type": "form",
         "fields": [
           {
             "id": "f11",
             "type": "checkbox",
-            "label": "I have read and understood the information on nail modeling.",
+            "label": "I have read and understood the information on nail enhancements.",
             "required": true,
             "options": [
               "Yes"
@@ -1292,7 +1292,7 @@
           {
             "id": "f13",
             "type": "checkbox",
-            "label": "I confirm that I do not have any of the stated contraindications that would speak against treatment.",
+            "label": "I confirm that I do not have any of the stated contraindications that would rule out treatment.",
             "required": true,
             "options": [
               "Yes"
@@ -1310,7 +1310,7 @@
           {
             "id": "f15",
             "type": "checkbox",
-            "label": "I am informed that the artificial nails should be removed professionally.",
+            "label": "I understand that artificial nails should be removed professionally.",
             "required": true,
             "options": [
               "Yes"
@@ -1332,14 +1332,14 @@
         "title": "Confirmation",
         "type": "confirmation",
         "fields": [],
-        "content": "\n                <h2>Vielen Dank für Ihre Angaben!</h2>\n                \n                <p>Ihre Informationen und consent zur Nagelmodellage wurden erfasst.</p>\n                \n                <h3>Hinweise für Ihren Termin:</h3>\n                <ul>\n                    <li>Bitte entfernen Sie vorhandenen Nagellack vor dem Termin</li>\n                    <li>Kommen Sie mit sauberen, gut gepflegten Nailsn</li>\n                    <li>Bringen Sie gerne Bilder oder Templates mit, falls Sie ein bestimmtes Design wünschen</li>\n                    <li>Rechnen Sie mit einer Behandlungsduration von ca. 1,5 bis 2 Stunden</li>\n                </ul>\n                \n                <p>Wir freuen uns auf Ihren Besuch!</p>\n                "
+        "content": "\n                <h2>Thank you for your information!</h2>\n                \n                <p>Your details and your consent to the nail enhancement treatment have been recorded.</p>\n                \n                <h3>Information for your appointment:</h3>\n                <ul>\n                    <li>Please remove any nail polish before your appointment</li>\n                    <li>Come with clean, well-groomed nails</li>\n                    <li>Feel free to bring pictures or examples if you would like a particular design</li>\n                    <li>Allow approx. 1.5 to 2 hours for the treatment</li>\n                </ul>\n                \n                <p>We look forward to seeing you!</p>\n                "
       }
     ],
     "tags": [
       "Nail design",
       "Nails",
-      "Modeling",
-      "manicure",
+      "Nail enhancements",
+      "Manicure",
       "Gel nails"
     ]
   },
@@ -1362,14 +1362,14 @@
             "required": true,
             "options": [
               "Upper lip",
-              "chin",
-              "cheeks",
+              "Chin",
+              "Cheeks",
               "Armpits",
-              "poor",
-              "Breast",
-              "Belly",
+              "Arms",
+              "Chest",
+              "Abdomen",
               "Back",
-              "bikini line",
+              "Bikini line",
               "Legs",
               "Other"
             ]
@@ -1408,21 +1408,21 @@
           {
             "id": "f5",
             "type": "radio",
-            "label": "What type of skin do you have according to Fitzpatrick?",
+            "label": "What is your Fitzpatrick skin type?",
             "required": true,
             "options": [
               "Type I: Very light, always burns, never tans",
               "Type II: Light, burns easily, tans minimally",
               "Type III: Medium skin tone, sometimes sunburns, tans well",
-              "Type IV: Olive-colored, rarely sunburns, tans quickly and well",
+              "Type IV: Olive, rarely sunburns, tans quickly and well",
               "Type V: Brown, very rarely sunburns, tans very well",
-              "Type VI: Dark brown to black, never sunburned"
+              "Type VI: Dark brown to black, never burns"
             ]
           },
           {
             "id": "f6",
             "type": "radio",
-            "label": "What color hair do you have in the areas to be treated?",
+            "label": "What colour is the hair in the areas to be treated?",
             "required": true,
             "options": [
               "Black",
@@ -1432,16 +1432,16 @@
               "Dark blonde",
               "Light blonde",
               "Red",
-              "Grey/White"
+              "Grey/white"
             ]
           },
           {
             "id": "f7",
             "type": "radio",
-            "label": "What hair structure do you have in the areas to be treated?",
+            "label": "What is the hair texture in the areas to be treated?",
             "required": true,
             "options": [
-              "Thick/Coarse",
+              "Thick/coarse",
               "Medium",
               "Fine",
               "Mixed"
@@ -1471,16 +1471,16 @@
             "label": "Do you suffer from any of the following illnesses?",
             "required": true,
             "options": [
-              "diabetes",
+              "Diabetes",
               "Autoimmune diseases",
-              "Skin cancer or other skin cancers in the family",
-              "epilepsy",
+              "Skin cancer (personal or family history)",
+              "Epilepsy",
               "Herpes in the treatment area",
               "Tendency to keloid/excessive scarring",
-              "Vitiligo (white spot disease)",
-              "Psoriasis (psoriasis)",
-              "Eczema/neurodermatitis",
-              "None of the mentioned"
+              "Vitiligo",
+              "Psoriasis",
+              "Eczema/atopic dermatitis",
+              "None of the above"
             ]
           },
           {
@@ -1493,7 +1493,7 @@
               "Isotretinoin/acne medication (current or in the last 6 months)",
               "Cortisone",
               "Blood thinners",
-              "Photosensitizing drugs",
+              "Photosensitising medication",
               "Other",
               "No medication"
             ]
@@ -1508,7 +1508,7 @@
           {
             "id": "f12",
             "type": "radio",
-            "label": "Have you had an intensive sun tan or solarium in the treatment area in the last 4 weeks?",
+            "label": "Has the treatment area been intensively tanned (sun or sunbed) in the last 4 weeks?",
             "required": true,
             "options": [
               "Yes",
@@ -1519,14 +1519,14 @@
       },
       {
         "id": "p4",
-        "title": "Education about laser hair removal",
+        "title": "Laser hair removal information",
         "type": "document",
         "fields": [],
-        "content": "\n                <h2>Aufklärung zur Laser-Hair removal</h2>\n                \n                <p>Sehr geehrte Kundin, sehr geehrter Kunde,</p>\n                \n                <p>Sie haben sich für eine durationhafte Hair removal mit Laser entschieden. Mit diesem Dokument möchten wir Sie über das Proceedings, mögliche Risiken und die Nachsorge informieren.</p>\n                \n                <h3>Proceedings der Laser-Hair removal</h3>\n                <p>Bei der Laser-Hair removal werden Lichtimpulse auf die Haut abgegeben. Das Melanin (Farbstoff) in den hairen absorbiert das Licht, wodurch Wärme entsteht, die die hairfollikel zerstört. Da nur haire in der Wachstumsphase behandelt werden können und sich zu jedem Zeitpunkt nur etwa 20% der haire in dieser Phase befinden, sind mehrere Treatments im Abstand von 4-8 Wochen erforderlich.</p>\n                \n                <h3>Mögliche Risks and side effects</h3>\n                <ul>\n                    <li><strong>Gewöhnliche, vorübergehende Reactionen:</strong> Rötung, leichte Schwellung, Wärmegefühl ähnlich einem Sunburn für 1-3 Tage.</li>\n                    <li><strong>Rarelyere Nebenwirkungen:</strong> Blasenbildung, oberflächliche Verbrennungen, vorübergehende Hyper- oder Hypopigmentierung (Verdunkelung oder Aufhellung der Haut).</li>\n                    <li><strong>Rarelye Komplikationen:</strong> Scarsbildung, durationhafte Pigmentveränderungen, Infektion, activation von Herpes.</li>\n                </ul>\n                \n                <h3>Importante Hinweise vor der Behandlung</h3>\n                <ul>\n                    <li>4 Wochen vor der Behandlung keine Bräunung (weder Sonne noch Solarium) im Treatment area.</li>\n                    <li>Zu behandelnde haire sollten 1-2 mm lang sein (ca. 1-3 Tage vor der Behandlung rasieren).</li>\n                    <li>Vor der Behandlung keine Hair removalsmethoden anwenden, die die Wurzel entfernen (Wachsen, Epilieren, Fadenentfernung) für mindestens 4 Wochen.</li>\n                    <li>Vermeiden Sie die Anwendung von Selbstbräuner oder stark parfümierten Productsn im Treatment area.</li>\n                </ul>\n                \n                <h3>Nachsorge</h3>\n                <ul>\n                    <li>48 Stunden nach der Behandlung keine heißen Bäder, Sauna, intensive bodyliche Aktivität oder Schwimmbadbesearch.</li>\n                    <li>14 Tage nach der Behandlung konsequenter Sonnenschutz (LSF 50+) im behandelten Bereich.</li>\n                    <li>Bei Redness oder Schwellungen kühlen und beruhigende, unparfümierte Products verwenden.</li>\n                    <li>2-3 Wochen nach der Behandlung können die behandelten haire ausfallen, dies ist normal.</li>\n                </ul>\n                \n                <h3>Ergebnisse und Erwartungen</h3>\n                <p>Die Ergebnisse der Laser-Hair removal sind individuell unterschiedlich und hängen von verschiedenen Faktoren ab, wie Hauttyp, haircolor und hormonellem status. Für ein optimales Ergebnis sind in der Regel 6-10 Treatments notwendig. Eine durationhafte Reduktion von 70-90% der haire ist realistisch, eine 100%ige hairfreiheit kann jedoch nicht garantiert werden. Hormonelle Veränderungen können zu neuem hairwuchs führen.</p>\n                "
+        "content": "\n                <h2>Laser hair removal information</h2>\n                \n                <p>Dear client,</p>\n                \n                <p>You have chosen to have permanent hair reduction with a laser. This document explains the procedure, possible risks and aftercare.</p>\n                \n                <h3>How laser hair removal works</h3>\n                <p>During laser hair removal, pulses of light are directed at the skin. The melanin (pigment) in the hair absorbs the light, creating heat that destroys the hair follicles. Only hairs in the growth phase can be treated, and at any given time only around 20% of hairs are in this phase, so several treatments at intervals of 4–8 weeks are needed.</p>\n                \n                <h3>Possible risks and side effects</h3>\n                <ul>\n                    <li><strong>Common, temporary reactions:</strong> Redness, slight swelling and a warm feeling similar to sunburn for 1–3 days.</li>\n                    <li><strong>Less common side effects:</strong> Blistering, superficial burns, temporary hyper- or hypopigmentation (darkening or lightening of the skin).</li>\n                    <li><strong>Rare complications:</strong> Scarring, permanent changes in pigmentation, infection, reactivation of herpes (cold sores).</li>\n                </ul>\n                \n                <h3>Important information before the treatment</h3>\n                <ul>\n                    <li>No tanning (neither sun nor sunbed) in the treatment area for 4 weeks before the treatment.</li>\n                    <li>Hair in the treatment area should be 1–2 mm long (shave approx. 1–3 days before the treatment).</li>\n                    <li>For at least 4 weeks before the treatment, do not use hair removal methods that remove the root (waxing, epilating, threading).</li>\n                    <li>Avoid using self-tanner or heavily fragranced products in the treatment area.</li>\n                </ul>\n                \n                <h3>Aftercare</h3>\n                <ul>\n                    <li>For 48 hours after the treatment: no hot baths, sauna, strenuous physical activity or swimming pools.</li>\n                    <li>For 14 days after the treatment: consistent sun protection (SPF 50+) on the treated area.</li>\n                    <li>If redness or swelling occurs, cool the area and use soothing, fragrance-free products.</li>\n                    <li>Treated hairs may fall out 2–3 weeks after the treatment; this is normal.</li>\n                </ul>\n                \n                <h3>Results and expectations</h3>\n                <p>Results of laser hair removal vary from person to person and depend on factors such as skin type, hair colour and hormonal status. Optimal results usually require 6–10 treatments. A permanent reduction of 70–90% of hair is realistic, but 100% hair-free skin cannot be guaranteed. Hormonal changes can lead to new hair growth.</p>\n                "
       },
       {
         "id": "p5",
-        "title": "consent",
+        "title": "Consent",
         "type": "form",
         "fields": [
           {
@@ -1568,7 +1568,7 @@
           {
             "id": "f17",
             "type": "checkbox",
-            "label": "I understand that multiple treatments are necessary and no guarantee can be given that hair will be completely free.",
+            "label": "I understand that multiple treatments are necessary and that complete hair removal cannot be guaranteed.",
             "required": true,
             "options": [
               "Yes"
@@ -1590,7 +1590,7 @@
         "title": "Confirmation",
         "type": "confirmation",
         "fields": [],
-        "content": "\n                <h2>Vielen Dank für Ihre Angaben!</h2>\n                \n                <p>Ihre Informationen und consent zur Laser-Hair removal wurden erfasst.</p>\n                \n                <h3>Importante Hinweise für Ihren Termin:</h3>\n                <ul>\n                    <li>Erscheinen Sie mit rasiertem Treatment area (1-2 mm hairlänge ist optimal)</li>\n                    <li>Verwenden Sie am Tag der Behandlung keine Lotionen, Cremes oder Make-up im Treatment area</li>\n                    <li>Tragen Sie bequeme Kleidung, die leichten Zugang zum Treatment area ermöglicht</li>\n                    <li>Planen Sie nach der Behandlung keine wichtigen Appointments, falls Redness auftreten</li>\n                </ul>\n                \n                <p>Für optimale Ergebnisse empfehlen wir die Einhaltung des vereinbarten Behandlungsplans.</p>\n                "
+        "content": "\n                <h2>Thank you for your information!</h2>\n                \n                <p>Your details and your consent to the laser hair removal treatment have been recorded.</p>\n                \n                <h3>Important information for your appointment:</h3>\n                <ul>\n                    <li>Arrive with the treatment area shaved (a hair length of 1–2 mm is ideal)</li>\n                    <li>On the day of the treatment, do not apply lotions, creams or make-up to the treatment area</li>\n                    <li>Wear comfortable clothing that allows easy access to the treatment area</li>\n                    <li>Do not plan any important appointments after the treatment in case redness occurs</li>\n                </ul>\n                \n                <p>For optimal results, we recommend sticking to the agreed treatment plan.</p>\n                "
       }
     ],
     "tags": [
@@ -1598,7 +1598,7 @@
       "Hair removal",
       "IPL",
       "Permanent hair removal",
-      "epilation"
+      "Epilation"
     ]
   }
 ]
