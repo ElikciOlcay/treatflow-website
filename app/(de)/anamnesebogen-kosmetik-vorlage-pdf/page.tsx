@@ -450,7 +450,7 @@ export default function AnamnesebogenKosmetikVorlagePdfPage() {
                                 <p className="text-gray-700 leading-relaxed">
                                     <strong>Wir empfehlen dringend</strong>, die Vorlage vor der Verwendung 
                                     von einem Rechtsanwalt oder einer fachkundigen Stelle prüfen und an deine 
-                                    spezifischen Anforderungen anpassen zu lassen. Die Treatflow GmbH übernimmt 
+                                    spezifischen Anforderungen anpassen zu lassen. Treatflow übernimmt 
                                     keine Gewähr und keine Haftung für Schäden, die aus der Verwendung dieser 
                                     Vorlage entstehen.
                                 </p>

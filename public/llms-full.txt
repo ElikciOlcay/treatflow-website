@@ -1,6 +1,6 @@
 # Treatflow – full context (all languages and markets)
 
-> Treatflow is all-in-one software for beauty salons, aesthetic clinics and other treatment-based businesses: appointment calendar, commission-free online booking, client records, digital consultation and consent forms, treatment records with voice dictation, automated reminders, client workflows, retail shop and integrations. Developed by Treatflow GmbH in Austria, data on EU servers in Frankfurt, GDPR-compliant. Two plans (Basic, Booking), 14-day free trial in every market, no credit card, no commission per booking. Some features are only offered in the German-speaking market (Germany, Austria, Switzerland) and Treatflow Pay is not offered in Turkey – see "Feature availability by market".
+> Treatflow is all-in-one software for beauty salons, aesthetic clinics and other treatment-based businesses: appointment calendar, commission-free online booking, client records, digital consultation and consent forms, treatment records with voice dictation, automated reminders, client workflows, retail shop and integrations. Developed by Treatflow in Austria, data on EU servers in Frankfurt, GDPR-compliant. Two plans (Basic, Booking), 14-day free trial in every market, no credit card, no commission per booking. Some features are only offered in the German-speaking market (Germany, Austria, Switzerland) and Treatflow Pay is not offered in Turkey – see "Feature availability by market".
 
 Last updated: 2026-11-05. This file summarises every language version of https://www.treatflow.io. Each language also has its own short llms.txt (see "Per-language files"); always prefer the file and pages of the user's language and market.
 
@@ -17,7 +17,7 @@ Last updated: 2026-11-05. This file summarises every language version of https:/
 
 ## Company
 
-- Legal name: Treatflow GmbH; founded 2023 by Olcay Elikci and Gökce Elikci; headquarters Bischofshofen, Austria
+- Legal entity: Treatflow, sole proprietorship of Olcay Elikci; headquarters Bischofshofen, Austria; software available since 2024
 - Already tried by 500+ salons and clinics; rated 4.6/5 on Google (19 reviews)
 - Email: hello@treatflow.io; Instagram: https://www.instagram.com/treatflow.io/
 - App: https://app.treatflow.io; sign-up: https://app.treatflow.io/auth/register?lang=<de|en|nl|it|pl|es|fr|tr>
@@ -54,7 +54,7 @@ Beauty salons and beauty institutes, aesthetic clinics and aesthetic medicine pr
 
 ## Pricing
 
-- Free trial: 14 days in every market, no credit card, cancel anytime, no setup fees
+- Free trial: 14 days in every market, no credit card, cancel anytime, no setup fee for Basic and Booking
 - EUR markets (de, en, nl, it, pl, es, fr): Basic €39/month or €421/year (€35/month); Booking €59/month or €637/year (€53/month); plus VAT
 - Turkey (tr): Basic ₺1.490/month or ₺16.100/year; Booking ₺1.990/month or ₺21.500/year; excl. KDV (VAT); launch prices for the first 100 businesses
 - Basic: client management, forms with digital signature, treatment records incl. voice dictation, before-and-after photos, team notes and tasks, shop and products, statistics, staff and roles, email support (German site: also NiSV documentation). No appointment calendar.

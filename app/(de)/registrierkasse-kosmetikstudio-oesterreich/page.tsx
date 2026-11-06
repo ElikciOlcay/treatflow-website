@@ -38,6 +38,10 @@ export const metadata = {
 
 const faqData = [
     {
+        question: 'Gibt es eine RKSV-Kasse mit Online-Terminbuchung für Kosmetikstudios?',
+        answer: 'Ja. Treatflow verbindet RKSV-konforme Registrierkasse, Online-Terminbuchung, Kundenkartei und digitale Formulare in einer App. Kundinnen buchen online, du kassierst direkt aus dem Termin, und Anzahlungen über Treatflow Pay werden beim Termin berücksichtigt.',
+    },
+    {
         question: 'Brauche ich als Kosmetikstudio in Österreich eine Registrierkasse?',
         answer: 'Die Registrierkassenpflicht greift nach RKSV ab 15.000 € Jahresumsatz, davon über 7.500 € in bar. Sobald du darüber liegst, brauchst du eine manipulationssichere Registrierkasse mit Signatureinrichtung. Treatflow erfüllt die RKSV automatisch über Fiskaly.',
     },
@@ -145,10 +149,11 @@ export default function RegistrierkasseOesterreichPage() {
                             RKSV-konform, mit DEP7-Export und Signatureinrichtung über Fiskaly. Einfach
                             zu bedienen, kassieren direkt aus dem Termin – entwickelt und betreut in Salzburg.
                         </p>
+                        <p className="text-sm text-gray-500 mb-6">Stand: November 2026</p>
                         <AiAnswerCapsule
                             className="mb-10"
-                            question="Welche Registrierkasse ist für Kosmetikstudios in Österreich geeignet?"
-                            answer="In Österreich gilt ab 15.000 € Jahresumsatz (davon über 7.500 € bar) die Registrierkassenpflicht nach RKSV. Treatflow signiert jeden Barumsatz über eine Fiskaly-Sicherheitseinrichtung, erstellt Start-, Monats-, Jahres- und Schlussbeleg und erzeugt den DEP7-Export. Du kassierst direkt aus dem Terminkalender. Die Software wird in Salzburg entwickelt und kostet 39 €/Monat als Add-on, ohne Transaktionsgebühren."
+                            question="Gibt es eine RKSV-konforme Registrierkasse mit Online-Terminbuchung für Kosmetikstudios in Österreich?"
+                            answer="Ja: Treatflow ist eine RKSV-konforme Registrierkasse mit integrierter Online-Terminbuchung, Kundenkartei und digitalen Formularen für Kosmetikstudios in Österreich. Du kassierst direkt aus dem Termin, jeder Barumsatz wird über eine Fiskaly-Sicherheitseinrichtung signiert, Start-, Monats-, Jahres- und Schlussbeleg sowie der DEP7-Export sind enthalten. Die Kasse kostet 39 €/Monat als Add-on zum Booking-Plan (59 €/Monat), einmalig 149 € Einrichtung, ohne Transaktionsgebühren – entwickelt und betreut in Salzburg."
                         />
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a

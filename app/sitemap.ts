@@ -245,6 +245,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         internationalEntry('/treatflow-vs-treatwell', 'treatflow-vs-treatwell', 0.9, 'de'),
         internationalEntry('/treatflow-vs-fresha', 'treatflow-vs-fresha', 0.9, 'de'),
         {
+            url: `${baseUrl}/shore-alternative`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/treatflow-vs-shore`,
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,

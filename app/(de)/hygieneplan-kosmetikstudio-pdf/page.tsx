@@ -707,7 +707,7 @@ export default function HygieneplanKosmetikstudioPdfPage() {
                                 <p className="text-gray-700 leading-relaxed">
                                     Wir empfehlen, den fertigen Hygieneplan vor der Verwendung durch das
                                     zuständige Gesundheitsamt oder eine fachkundige Stelle prüfen zu lassen.
-                                    Die Treatflow GmbH übernimmt keine Gewähr und keine Haftung für Schäden,
+                                    Treatflow übernimmt keine Gewähr und keine Haftung für Schäden,
                                     die aus der Verwendung dieser Vorlage entstehen.
                                 </p>
                             </div>
