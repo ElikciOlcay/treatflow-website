@@ -168,9 +168,9 @@ export function buildMarketFacts(market: PrefixedMarket) {
     },
     company: {
       name: "Treatflow",
-      legalName: "Treatflow GmbH",
+      legalName: "Treatflow (Einzelunternehmen, Inhaber Olcay Elikci)",
       founders: ["Olcay Elikci", "Gökce Elikci"],
-      foundedYear: 2023,
+      foundedYear: 2024,
       headquarters: { city: "Bischofshofen", country: "Austria", countryCode: "AT" },
       socialProfiles: { instagram: "https://www.instagram.com/treatflow.io/" },
     },

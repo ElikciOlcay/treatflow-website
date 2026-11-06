@@ -80,7 +80,7 @@ export default function QuickFacts({
                 >
                     <meta itemProp="name" content="Treatflow" />
                     <meta itemProp="url" content="https://www.treatflow.io" />
-                    <meta itemProp="foundingDate" content="2023" />
+                    <meta itemProp="foundingDate" content="2024" />
                     <meta itemProp="foundingLocation" content="Bischofshofen, Austria" />
 
                     {content.facts.map((fact) => {

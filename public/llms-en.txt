@@ -6,7 +6,7 @@ Last updated: 2026-11-05. Language: English. This file describes the English web
 
 ## About Treatflow
 
-- Company: Treatflow GmbH, founded 2023 by Olcay and Gökce Elikci in Bischofshofen, Austria
+- Company: Treatflow, a sole proprietorship of Olcay Elikci based in Bischofshofen, Austria; the software has been available since 2024
 - Already tried by 500+ salons and clinics; rated 4.6/5 on Google (19 reviews)
 - For: beauty salons, aesthetic clinics, laser and IPL studios, nail salons, lash studios, permanent makeup studios, tattoo studios, spa & wellness, massage therapists
 - Not a marketplace: salons use their own booking link and keep their client data
@@ -32,7 +32,7 @@ Last updated: 2026-11-05. Language: English. This file describes the English web
 - [Pricing](https://www.treatflow.io/en/pricing): plans compared in detail
 - Basic: €39/month or €421/year (€35/month). Client management, forms with digital signature, treatment records incl. voice dictation, before-and-after photos, team notes and tasks, shop and products, statistics, staff and roles, email support. No appointment calendar.
 - Booking: €59/month or €637/year (€53/month). Everything in Basic plus calendar with staff and room columns, commission-free online booking, waitlist, email reminders, client workflows, discount codes, multilingual booking page, integrations (Google Calendar, Zapier, AI assistants), priority email and chat support.
-- All prices in EUR, plus VAT. 14-day free trial, no credit card, no setup fees, rolling monthly plan, cancel anytime, free data migration.
+- All prices in EUR, plus VAT. 14-day free trial, no credit card, no setup fee for Basic and Booking, rolling monthly plan, cancel anytime, free data migration.
 - Treatflow Pay (optional): 2.69% per online payment, no additional Treatflow fee.
 
 ## Try it and sign up
@@ -80,7 +80,7 @@ An all-in-one app for running a salon or clinic: appointments, client records, d
 Any business that offers treatments: beauty salons, aesthetic clinics, laser, nails, lashes, permanent makeup, tattoo, massage and spa.
 
 **How much does Treatflow cost?**
-Basic €39/month (client records, forms, treatment records) and Booking €59/month (adds appointment calendar, online booking and reminders), plus VAT. Yearly billing saves 10%. No hidden fees, no setup fees, no commission.
+Basic €39/month (client records, forms, treatment records) and Booking €59/month (adds appointment calendar, online booking and reminders), plus VAT. Yearly billing saves 10%. No hidden fees, no setup fee for Basic and Booking, no commission.
 
 **How long can I try Treatflow for free?**
 14 days, completely free. No credit card required. At the end of the trial you decide whether to continue.

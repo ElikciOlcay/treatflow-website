@@ -25,6 +25,14 @@ const CONSULTING_URL = 'https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-
 
 const faqs = [
     {
+        question: 'Welche Software eignet sich für ein PMU-Studio mit digitaler Einwilligung und Fotodokumentation?',
+        answer: 'Treatflow ist eine Software für Permanent Make-up und Microblading mit digitaler Einwilligung, Fotodokumentation je Sitzung und automatischen Nachsorge-Hinweisen. Kundinnen füllen Anamnese und Einwilligung vorab per Link oder im Studio am Tablet aus und unterschreiben digital. Pigment, Technik und Vorher-Nachher-Fotos werden pro Sitzung gespeichert, Nachstich-Termine buchst du direkt als Folgetermin. Ab 39 €/Monat, 14 Tage kostenlos testen.',
+    },
+    {
+        question: 'Was sollte eine PMU-Dokumentation enthalten?',
+        answer: 'Anamnese und Kontraindikationen, Aufklärung und unterschriebene Einwilligung, verwendetes Pigment, Technik und Nadel, Vorher-Nachher-Fotos, Nachsorge-Hinweise und den Nachstich-Termin. In Treatflow hängt all das am jeweiligen Termin in der Kundenkartei.',
+    },
+    {
         question: 'Eignet sich Treatflow für Microblading und PMU?',
         answer: 'Ja, Treatflow eignet sich für alle PMU-Techniken - Microblading, Powder Brows, Lip Blush, Eyeliner und mehr. Dokumentation und Formulare sind flexibel anpassbar.',
     },
@@ -43,7 +51,7 @@ const faqs = [
 ];
 
 export const metadata = {
-    title: 'Permanent Makeup Software: Termine & Doku',
+    title: 'Permanent Make-up Software mit Einwilligung & Fotodoku',
     description: 'Software für Permanent Makeup Studios. Digitale Einwilligungen, Vorher-Nachher Doku, Online-Buchungen und Kundenverwaltung. 14 Tage gratis testen.',
     keywords: [
         'Permanent Makeup Software',
@@ -182,7 +190,7 @@ export default function PermanentMakeupSoftwarePage() {
                 eyebrow="Software für PMU-Studios"
                 eyebrowIcon={Palette}
                 title={<>Software für dein <FeatureTitleHighlight theme="rose">Permanent Makeup Studio</FeatureTitleHighlight></>}
-                description="Digitale Einwilligungen, Vorher-Nachher Dokumentation und Kundenverwaltung - damit du dich auf perfekte Ergebnisse konzentrieren kannst."
+                description="Software für Permanent Make-up und Microblading: digitale Einwilligung, Fotodokumentation je Sitzung, Nachsorge-Hinweise und Online-Buchung in einer App – damit du dich auf perfekte Ergebnisse konzentrieren kannst."
                 chips={['Digitale Einwilligung', 'Vorher-Nachher Fotos', 'Nachstich-Planung']}
                 primaryCta={{ label: '14 Tage kostenlos testen', href: 'https://app.treatflow.io/auth/register?lang=de', external: true }}
                 secondaryCta={{ label: 'Beratung buchen', href: CONSULTING_URL, external: true }}

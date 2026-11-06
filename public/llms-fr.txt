@@ -6,7 +6,7 @@ Dernière mise à jour : 2026-11-05. Langue : français. Ce fichier décrit le s
 
 ## À propos de Treatflow
 
-- Société : Treatflow GmbH, fondée en 2023 par Olcay et Gökce Elikci à Bischofshofen, en Autriche
+- Société : Treatflow, entreprise individuelle d'Olcay Elikci basée à Bischofshofen, en Autriche ; le logiciel existe depuis 2024
 - Déjà testé par plus de 500 instituts et cabinets ; 4,6/5 sur Google (19 avis)
 - Pour : instituts de beauté, médecine esthétique, épilation laser et IPL, ongleries, extensions de cils, maquillage permanent, salons de tatouage, spa et bien-être, massage
 - Pas une place de marché : l'institut utilise son propre lien de réservation et garde ses données clients

@@ -17,7 +17,7 @@ const faqs = [
   {
     question: 'Ist Shore günstiger als Treatflow?',
     answer:
-      'Shore und Treatflow haben ähnliche Preise ab ca. 39 Euro/Monat. Der Unterschied liegt in den Funktionen: Treatflow bietet Dokumentation, Formulare und NiSV-Konformität, Shore fokussiert auf Terminbuchung und Marketing.',
+      'Laut Shore-Preisseite (Stand November 2026) kostet Shore Booking bei jährlicher Zahlung im ersten Jahr 39,90 €/Monat, danach 49,90 €/Monat; die Kasse gibt es in eigenen POS-Tarifen plus 9 €/Monat für die Cloud-TSE. Treatflow kostet dauerhaft 39 €/Monat (Basic) bzw. 59 €/Monat (Booking) zzgl. MwSt., die Kasse ist ein Add-on für 39 €/Monat. Der größere Unterschied liegt in den Funktionen: Treatflow bietet Behandlungsdokumentation, Formulare und NiSV-Dokumentation.',
   },
   {
     question: 'Kann ich von Shore zu Treatflow wechseln?',

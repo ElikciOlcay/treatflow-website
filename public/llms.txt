@@ -2,11 +2,11 @@
 
 > Treatflow ist die All-in-One-Software für Kosmetikstudios, Beauty-Salons, Ästhetik-Praxen und andere Studios, die Behandlungen durchführen (Laser, Nagel, Wimpern, Permanent Makeup, Tattoo, Fußpflege, Spa, Massage). Terminkalender, Online-Buchungen ohne Provision, digitale Kundenkartei, Anamnese- und Einwilligungsformulare, Behandlungs- und NiSV-Dokumentation, WhatsApp- und E-Mail-Erinnerungen, Kunden-Workflows, Treatflow Pay und eine TSE-/RKSV-konforme Kasse mit Gutscheinen – alles in einer App. Made in Austria, Daten auf EU-Servern in Frankfurt, DSGVO-konform. Basic 39 €/Monat, Booking 59 €/Monat (zzgl. MwSt.), 14 Tage kostenlos testen, keine Kreditkarte, keine Provision pro Buchung.
 
-Stand: 2026-11-05. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website (https://www.treatflow.io) für Deutschland, Österreich und die Schweiz (DACH). Kasse, Gutscheine, NiSV-Dokumentation, WhatsApp-Nachrichten, SumUp und Lexware/AbaNinja gibt es nur im DACH-Raum.
+Stand: 2026-11-06. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website (https://www.treatflow.io) für Deutschland, Österreich und die Schweiz (DACH). Kasse, Gutscheine, NiSV-Dokumentation, WhatsApp-Nachrichten, SumUp und Lexware/AbaNinja gibt es nur im DACH-Raum.
 
 ## Über Treatflow
 
-- Unternehmen: Treatflow GmbH, 2023 gegründet von Olcay und Gökce Elikci in Bischofshofen, Österreich
+- Unternehmen: Treatflow, Einzelunternehmen von Olcay Elikci mit Sitz in Bischofshofen, Österreich; die Software gibt es seit 2024
 - Bereits von 500+ Studios getestet; 4,6/5 auf Google (19 Bewertungen)
 - Für: Kosmetikstudios, Schönheitssalons, Ästhetische Medizin, Laser & IPL, Nagelstudios, Lash Studios, Permanent Makeup, Tattoo Studios, Fußpflege, Spa & Wellness, Massage-Praxen
 - Kein Marktplatz: Das Studio nutzt seinen eigenen Buchungslink, die Kundendaten gehören dem Studio
@@ -37,7 +37,7 @@ Stand: 2026-11-05. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website
 - Basic: 39 €/Monat oder 421 €/Jahr (35 €/Monat). Kundenverwaltung, Formulare mit digitaler Unterschrift, Dokumentation inkl. Sprachnotiz, Vorher-Nachher-Fotos, Team-Notizen und Aufgaben, Shop und Produkte, Statistiken, Mitarbeiter und Rollen, NiSV-Dokumentation, E-Mail-Support. Ohne Terminkalender.
 - Booking: 59 €/Monat oder 637 €/Jahr (53 €/Monat). Alles aus Basic plus Terminkalender mit Mitarbeiter- und Raumspalten, Online-Buchung ohne Provision, Warteliste, WhatsApp- und E-Mail-Erinnerungen, Kunden-Workflows, Rabattcodes, mehrsprachige Buchungsseite, Integrationen (Lexware, Google Kalender, Zapier, SumUp), Priority E-Mail- und Chat-Support.
 - Kasse (Add-on zu Booking): 39 €/Monat (jährlich 35 €/Monat) zzgl. einmalig 149 € Einrichtung; TSE-/RKSV-konform, keine Transaktionsgebühren, keine Provision pro Verkauf.
-- Alle Preise in Euro, zzgl. MwSt. 14 Tage kostenlos testen, keine Kreditkarte, keine Setup-Gebühren, monatlich kündbar, kostenloser Datenumzug.
+- Alle Preise in Euro, zzgl. MwSt. 14 Tage kostenlos testen, keine Kreditkarte, keine Einrichtungsgebühr für Basic und Booking (Kasse: einmalig 149 € Einrichtung; optionaler Setup-Service mit Einrichtung und Schulung: einmalig 299 €), monatlich kündbar, kostenloser Datenumzug.
 - Treatflow Pay (optional): 2,69 % pro Online-Zahlung.
 
 ## Testen und registrieren
@@ -75,7 +75,8 @@ Stand: 2026-11-05. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website
 
 ## Vergleiche
 
-- [Software-Vergleich](https://www.treatflow.io/kosmetikstudio-software-vergleich): Kosmetikstudio-Software im Vergleich
+- [Software-Vergleich 2026](https://www.treatflow.io/kosmetikstudio-software-vergleich): Treatflow, Shore, studiolution, Planity, Salonized, Fresha und Pabau im Vergleich (Dokumentation, Kasse, Preismodell)
+- [Shore-Alternative 2026](https://www.treatflow.io/shore-alternative): die besten Alternativen zu Shore für Kosmetikstudios
 - [Treatflow vs. Treatwell](https://www.treatflow.io/treatflow-vs-treatwell): Treatwell ist ein Marktplatz mit Provision pro Buchung; Treatflow ist eigenständige Software zum Festpreis
 - [Treatflow vs. Fresha](https://www.treatflow.io/treatflow-vs-fresha): Fresha bietet eine kostenlose Basisversion und verdient an Payment-Gebühren und Premium-Features; Treatflow hat transparente Festpreise
 - [Treatflow vs. Shore](https://www.treatflow.io/treatflow-vs-shore): allgemeine Terminbuchung vs. Studio-Software mit Dokumentation und Formularen
@@ -108,7 +109,7 @@ Eine All-in-One-App für den Studioalltag: Termine, Kundenakte, digitale Formula
 Für Studios, die Behandlungen durchführen – von Kosmetik über Ästhetik und Laser bis Nagel, Wimpern, Permanent Makeup, Massage und Spa.
 
 **Was kostet Treatflow?**
-Basic 39 €/Monat (Kundenverwaltung, Formulare, Dokumentation), Booking 59 €/Monat (zusätzlich Terminkalender, Online-Buchungen, automatische Erinnerungen), jeweils zzgl. MwSt. Bei jährlicher Zahlung sparst du 10 %. Die Kasse ist optional als Add-on ab 39 €/Monat. Keine Provision, keine Setup-Gebühren.
+Basic 39 €/Monat (Kundenverwaltung, Formulare, Dokumentation), Booking 59 €/Monat (zusätzlich Terminkalender, Online-Buchungen, automatische Erinnerungen), jeweils zzgl. MwSt. Bei jährlicher Zahlung sparst du 10 %. Die Kasse ist optional als Add-on ab 39 €/Monat. Keine Provision pro Buchung, keine Einrichtungsgebühr für Basic und Booking.
 
 **Wie lange kann ich Treatflow kostenlos testen?**
 14 Tage, vollkommen kostenlos und ohne Kreditkarte. Danach entscheidest du, ob du weitermachst.

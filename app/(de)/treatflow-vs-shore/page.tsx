@@ -68,7 +68,7 @@ const faqSchema = {
       name: 'Ist Shore günstiger als Treatflow?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Shore und Treatflow haben ähnliche Preise ab ca. 39€/Monat. Der Unterschied liegt in den Funktionen: Treatflow bietet Dokumentation, Formulare und NiSV-Konformität, Shore fokussiert auf Terminbuchung und Marketing.',
+        text: 'Laut Shore-Preisseite (Stand November 2026) kostet Shore Booking bei jährlicher Zahlung im ersten Jahr 39,90 €/Monat, danach 49,90 €/Monat; die Kasse gibt es in eigenen POS-Tarifen plus 9 €/Monat für die Cloud-TSE. Treatflow kostet dauerhaft 39 €/Monat (Basic) bzw. 59 €/Monat (Booking) zzgl. MwSt., die Kasse ist ein Add-on für 39 €/Monat. Der größere Unterschied liegt in den Funktionen: Treatflow bietet Behandlungsdokumentation, Formulare und NiSV-Dokumentation.',
       },
     },
     {
@@ -100,8 +100,8 @@ const comparisonRows = [
   },
   {
     feature: 'Monatlicher Preis',
-    treatflow: 'Ab 39€/Monat',
-    shore: 'Ab ca. 39€/Monat',
+    treatflow: 'Ab 39 €/Monat, dauerhaft gleicher Preis',
+    shore: 'Booking ab 39,90 €/Monat im 1. Jahr, danach 49,90 € (bei jährlicher Zahlung)',
     treatflowOk: true,
     shoreOk: true,
   },
@@ -158,6 +158,13 @@ const comparisonRows = [
     feature: 'DSGVO / EU-Server',
     treatflow: 'Ja, EU-Server',
     shore: 'Ja, deutsche Server',
+    treatflowOk: true,
+    shoreOk: true,
+  },
+  {
+    feature: 'Kassensystem',
+    treatflow: 'TSE (DE) und RKSV (AT), Add-on 39 €/Monat',
+    shore: 'Eigene POS-Tarife, Cloud-TSE 9 €/Monat zusätzlich',
     treatflowOk: true,
     shoreOk: true,
   },
@@ -240,6 +247,12 @@ export default function TreatflowVsShore() {
               Shore ist eine beliebte Terminbuchungslösung aus Deutschland. Aber ist
               eine generische Software wirklich die beste Wahl für dein
               Kosmetikstudio? Hier siehst du die Unterschiede auf einen Blick.
+            </p>
+            <p className="text-sm text-gray-500 mb-8 -mt-4">
+              Stand: November 2026 · Shore-Preise laut{' '}
+              <a href="https://www.shore.com/en/pricing" target="_blank" rel="noopener noreferrer nofollow" className="underline">
+                shore.com
+              </a>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

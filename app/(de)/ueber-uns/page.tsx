@@ -76,7 +76,7 @@ export default function UeberUnsPage() {
                                 </div>
                                 <div className="text-center">
                                     <div className="text-3xl font-bold text-indigo-600 mb-2">2024</div>
-                                    <div className="text-gray-600">Gegründet</div>
+                                    <div className="text-gray-600">Software seit</div>
                                 </div>
                             </div>
                         </div>
