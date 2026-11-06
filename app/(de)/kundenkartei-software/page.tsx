@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     canonical: "https://www.treatflow.io/kundenkartei-software",
   },
   openGraph: {
+    locale: "de_DE",
     title: "Kundenkartei App für Kosmetik & Nagelstudio",
     description:
       "Die Kundenkartei App für Kosmetikstudios: Kundendaten, Fotos und Formulare in einer App. Kostenlos testen.",

@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blogPosts'
-import { DEMO_FORMS } from '@/lib/demoForms'
+import { DEMO_FORMS, DEMO_LOCALES, demoFormAlternates } from '@/lib/demoForms'
 import { buildHreflangAlternates, seoPageSlugs, type SeoPageKey } from '@/app/i18n/seo'
 import { TR_PATHS } from '@/app/i18n/tr-seo/paths'
 import { trGuides } from '@/app/i18n/tr-seo/guides'
@@ -37,48 +37,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         internationalEntry('/formulare', 'forms', 0.8, 'de'),
         internationalEntry('/funktionen-live-testen', 'try-features', 0.7, 'de'),
         internationalEntry('/formulare-testen', 'try-forms', 0.8),
-        ...DEMO_FORMS.map((form) => ({
-            url: `${baseUrl}/formulare-testen/${form.slug}`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.6,
-            alternates: {
-                languages: {
-                    de: `${baseUrl}/formulare-testen/${form.slug}`,
-                    en: `${baseUrl}/en/try-forms/${form.slug}`,
-                    tr: `${baseUrl}/tr/try-forms/${form.slug}`,
-                    'x-default': `${baseUrl}/formulare-testen/${form.slug}`,
-                },
-            },
-        })),
-        ...DEMO_FORMS.map((form) => ({
-            url: `${baseUrl}/en/try-forms/${form.slug}`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.6,
-            alternates: {
-                languages: {
-                    de: `${baseUrl}/formulare-testen/${form.slug}`,
-                    en: `${baseUrl}/en/try-forms/${form.slug}`,
-                    tr: `${baseUrl}/tr/try-forms/${form.slug}`,
-                    'x-default': `${baseUrl}/formulare-testen/${form.slug}`,
-                },
-            },
-        })),
-        ...DEMO_FORMS.map((form) => ({
-            url: `${baseUrl}/tr/try-forms/${form.slug}`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.6,
-            alternates: {
-                languages: {
-                    de: `${baseUrl}/formulare-testen/${form.slug}`,
-                    en: `${baseUrl}/en/try-forms/${form.slug}`,
-                    tr: `${baseUrl}/tr/try-forms/${form.slug}`,
-                    'x-default': `${baseUrl}/formulare-testen/${form.slug}`,
-                },
-            },
-        })),
+        ...DEMO_FORMS.flatMap((form) => {
+            const { languages } = demoFormAlternates('de', form.slug)
+            return DEMO_LOCALES.map((locale) => languages[locale]).map((url) => ({
+                url,
+                lastModified: new Date(),
+                changeFrequency: 'monthly' as const,
+                priority: 0.6,
+                alternates: { languages },
+            }))
+        }),
         internationalEntry('/behandlungsdokumentation', 'treatment-documentation', 0.8, 'de'),
         internationalEntry('/online-buchungen', 'online-booking', 0.8, 'de'),
         internationalEntry('/treatflow-pay', 'treatflow-pay', 0.8, 'de'),

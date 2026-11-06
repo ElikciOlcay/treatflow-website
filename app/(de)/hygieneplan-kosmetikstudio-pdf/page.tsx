@@ -37,6 +37,7 @@ export const metadata: Metadata = {
         canonical: "https://www.treatflow.io/hygieneplan-kosmetikstudio-pdf",
     },
     openGraph: {
+        locale: "de_DE",
         title: "Hygieneplan Kosmetikstudio PDF: Kostenlose Vorlage",
         description:
             "Hygieneplan als PDF-Vorlage kostenlos herunterladen. Muster für Kosmetikstudios und Nagelstudios. Sofort einsetzbar.",

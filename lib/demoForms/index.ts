@@ -1,5 +1,11 @@
 import templatesDe from './templates.json';
 import templatesEn from './templates-en.json';
+import templatesTr from './templates-tr.json';
+import templatesNl from './templates-nl.json';
+import templatesIt from './templates-it.json';
+import templatesPl from './templates-pl.json';
+import templatesEs from './templates-es.json';
+import templatesFr from './templates-fr.json';
 import type { DemoFormPage, DemoFormTemplate, DemoFormMeta } from './types';
 import { type DemoLocale, getDemoCopy } from './copy';
 
@@ -9,9 +15,8 @@ export {
   getDemoCopy,
   DEMO_FORMS_PATH,
   DEMO_FORMS_FEATURE_PATH,
-  demoFormHreflang,
-  demoFormHreflangEn,
-  demoFormHreflangTr,
+  DEMO_LOCALES,
+  demoFormAlternates,
 } from './copy';
 
 const FEATURED_ORDER = [
@@ -59,7 +64,12 @@ const ACCENTS: Record<string, { accent: string; iconBg: string; iconColor: strin
 const rawByLocale: Record<DemoLocale, DemoFormTemplate[]> = {
   de: templatesDe as DemoFormTemplate[],
   en: templatesEn as DemoFormTemplate[],
-  tr: templatesEn as DemoFormTemplate[],
+  tr: templatesTr as DemoFormTemplate[],
+  nl: templatesNl as DemoFormTemplate[],
+  it: templatesIt as DemoFormTemplate[],
+  pl: templatesPl as DemoFormTemplate[],
+  es: templatesEs as DemoFormTemplate[],
+  fr: templatesFr as DemoFormTemplate[],
 };
 
 function countFields(pages: DemoFormPage[]): number {

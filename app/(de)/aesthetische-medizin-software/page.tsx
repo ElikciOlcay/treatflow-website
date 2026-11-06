@@ -111,6 +111,7 @@ export const metadata = {
         ...buildHreflangAlternates("aesthetic-clinic-software"),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Software für Ästhetikkliniken: Akte, Doku & Einwilligung',
         description: 'Patientenakte, Aufklärungsbögen, Behandlungsverlauf und Termine für ästhetische Praxen. DSGVO, EU-Server.',
         url: 'https://www.treatflow.io/aesthetische-medizin-software',

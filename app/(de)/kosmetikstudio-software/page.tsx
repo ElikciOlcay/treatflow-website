@@ -95,6 +95,7 @@ export const metadata = {
         ...buildHreflangAlternates("beauty-salon-software"),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Kosmetikstudio Software: Termine, Kunden & Doku in einer App',
         description: 'Online-Buchungen, Kundenverwaltung, digitale Formulare und Behandlungsdokumentation - alles in einer modernen Plattform.',
         url: 'https://www.treatflow.io/kosmetikstudio-software',

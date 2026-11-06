@@ -13,6 +13,7 @@ export const metadata = {
   keywords: ['Kosmetikstudio Software Berlin', 'Beauty Software Berlin', 'Kosmetik Berlin Terminbuchung', 'Studio Software Berlin', 'Kosmetikstudio Berlin digital'],
   alternates: { canonical: 'https://www.treatflow.io/kosmetikstudio-software-berlin' },
   openGraph: {
+    locale: 'de_DE',
     title: 'Kosmetikstudio Software Berlin: Online-Buchungen',
     description: 'Software für Kosmetikstudios in Berlin. Online-Terminbuchung, Kundenverwaltung, digitale Formulare. DSGVO-konform.',
     url: 'https://www.treatflow.io/kosmetikstudio-software-berlin',

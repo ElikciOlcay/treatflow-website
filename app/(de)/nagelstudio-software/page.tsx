@@ -54,6 +54,7 @@ export const metadata = {
         ...buildHreflangAlternates("nail-salon-software"),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Nagelstudio Software: Termine & Kundenverwaltung',
         description: 'Online-Buchungen, Kundenverwaltung und automatische Erinnerungen für Nagelstudios.',
         url: 'https://www.treatflow.io/nagelstudio-software',

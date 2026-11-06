@@ -67,6 +67,7 @@ export const metadata = {
         ...buildHreflangAlternates("tattoo-studio-software"),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Tattoo Studio Software: Einwilligungen & Verwaltung',
         description: 'Digitale Einwilligungen, Online-Buchungen und Kundenverwaltung für Tattoo Studios.',
         url: 'https://www.treatflow.io/tattoo-studio-software',

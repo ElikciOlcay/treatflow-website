@@ -33,6 +33,7 @@ export const metadata: Metadata = {
         canonical: "https://www.treatflow.io/anamnesebogen-kosmetik-vorlage-pdf",
     },
     openGraph: {
+        locale: "de_DE",
         title: "Anamnesebogen Kosmetik Vorlage PDF: Kostenlos herunterladen",
         description:
             "Anamnesebogen inkl. Einwilligungserklärung als PDF-Vorlage kostenlos herunterladen. Für Kosmetikstudios und Beauty-Salons.",

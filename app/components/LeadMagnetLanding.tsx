@@ -20,6 +20,7 @@ export function leadMagnetMetadata(magnet: LeadMagnet): Metadata {
             title,
             description: magnet.description,
             url: `https://www.treatflow.io/${magnet.slug}`,
+            locale: 'de_DE',
         },
     };
 }

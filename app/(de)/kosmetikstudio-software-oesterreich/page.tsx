@@ -22,6 +22,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/kosmetikstudio-software-oesterreich',
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Kosmetikstudio Software Österreich – Made in Austria',
         description: 'Die Kosmetikstudio Software aus Österreich: Termine, Kundenkartei, Formulare und RKSV-Kasse. Made in Austria. 14 Tage gratis.',
         url: 'https://www.treatflow.io/kosmetikstudio-software-oesterreich',

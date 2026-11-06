@@ -17,6 +17,7 @@ export const metadata = {
         languages: blogIndexAlternates(),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Kosmetikstudio Blog - Tipps & Trends für Beauty-Profis',
         description: 'Expertentipps für erfolgreiche Kosmetikstudios. Kundenbindung, Business-Strategien und neue Behandlungstrends.',
         url: 'https://www.treatflow.io/blog',

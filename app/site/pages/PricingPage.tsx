@@ -66,7 +66,7 @@ export default function PricingPage({ market }: { market: SiteMarket }) {
       </div>
 
       {/* Pricing Cards */}
-      <PricingSection content={getHomeContent(market).pricing} market={market} />
+      <PricingSection content={getHomeContent(market).pricing} market={market} headingLevel="h1" />
 
       {/* Feature Comparison Table */}
       <section className="py-20 bg-gray-50">

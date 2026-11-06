@@ -11,12 +11,7 @@ import { APP_REGISTER_BY_MARKET, DEMO_BOOKING_URL } from '@/app/i18n/market-acce
 export default function DemoFormsGallery({ locale }: { locale: DemoLocale }) {
   const copy = getDemoCopy(locale);
   const featureHref = DEMO_FORMS_FEATURE_PATH[locale];
-  const registerHref =
-    locale === 'tr'
-      ? APP_REGISTER_BY_MARKET.tr
-      : locale === 'en'
-        ? APP_REGISTER_BY_MARKET.en
-        : APP_REGISTER_BY_MARKET.de;
+  const registerHref = APP_REGISTER_BY_MARKET[locale];
 
   return (
     <>

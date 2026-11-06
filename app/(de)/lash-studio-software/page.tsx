@@ -51,6 +51,7 @@ export const metadata = {
         ...buildHreflangAlternates("lash-studio-software"),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Lash Studio Software: Termine & Kundenverwaltung',
         description: 'Online-Buchungen, Einwilligungen und Kundenverwaltung für Wimpernstudios.',
         url: 'https://www.treatflow.io/lash-studio-software',

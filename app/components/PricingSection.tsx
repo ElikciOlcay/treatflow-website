@@ -14,10 +14,14 @@ import { gatedTexts, type SiteMarket } from "@/app/site/content/shared";
 export default function PricingSection({
   content = homeDe.pricing,
   market = "de",
+  headingLevel = "h2",
 }: {
   content?: PricingContent;
   market?: SiteMarket;
+  /** Auf der Preisseite ist der Block die Hauptüberschrift (h1). */
+  headingLevel?: "h1" | "h2";
 } = {}) {
+  const Heading = headingLevel;
   const [isYearly, setIsYearly] = useState(false);
   const registerUrl = APP_REGISTER_BY_MARKET[market];
   const { basic, booking, addon } = content;
@@ -32,10 +36,10 @@ export default function PricingSection({
             <Star className="h-4 w-4 fill-current" />
             {content.eyebrow}
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+          <Heading className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
             {content.titleBefore}
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">{content.titleHighlight}</span>
-          </h2>
+          </Heading>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {content.subtitle}
           </p>

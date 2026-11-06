@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.treatflow.io/schoenheitssalon-software',
   },
   openGraph: {
+    locale: 'de_DE',
     title: 'Schönheitssalon Software: Termine, Kunden & Dokumentation',
     description:
       'Online-Buchungen, Kundenverwaltung und Dokumentation in einer klaren App für Schönheitssalons.',

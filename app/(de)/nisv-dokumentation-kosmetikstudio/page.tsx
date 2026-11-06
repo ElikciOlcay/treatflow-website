@@ -22,6 +22,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/nisv-dokumentation-kosmetikstudio',
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'NiSV-Dokumentation Kosmetikstudio: rechtssicher',
         description: 'NiSV-konforme Behandlungsdokumentation für Kosmetikstudios. Digitale Dokumentation für Laser, IPL und nichtionisierende Strahlung.',
         url: 'https://www.treatflow.io/nisv-dokumentation-kosmetikstudio',
