@@ -1,5 +1,6 @@
 import templatesDe from './templates.json';
 import templatesEn from './templates-en.json';
+import templatesTr from './templates-tr.json';
 import type { DemoFormPage, DemoFormTemplate, DemoFormMeta } from './types';
 import { type DemoLocale, getDemoCopy } from './copy';
 
@@ -59,7 +60,7 @@ const ACCENTS: Record<string, { accent: string; iconBg: string; iconColor: strin
 const rawByLocale: Record<DemoLocale, DemoFormTemplate[]> = {
   de: templatesDe as DemoFormTemplate[],
   en: templatesEn as DemoFormTemplate[],
-  tr: templatesEn as DemoFormTemplate[],
+  tr: templatesTr as DemoFormTemplate[],
 };
 
 function countFields(pages: DemoFormPage[]): number {

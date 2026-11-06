@@ -1,0 +1,1604 @@
+[
+  {
+    "id": "microneedling-1",
+    "name": "Microneedling ön görüşme ve onam formu",
+    "description": "Cilt analizi, tıbbi geçmiş, kontrendikasyonlar ve profesyonel hasta onamı içeren kapsamlı microneedling uygulama formu.",
+    "category": "Yaşlanma karşıtı",
+    "difficulty": "komplex",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Uygulama talepleri ve cilt analizi",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Microneedling ile hangi cilt sorunlarınızı tedavi ettirmek istiyorsunuz?",
+            "required": true,
+            "options": [
+              "Akne izleri",
+              "İnce çizgiler ve kırışıklıklar",
+              "Genişlemiş gözenekler",
+              "Düzensiz cilt tonu",
+              "Leke / hiperpigmentasyon",
+              "Çatlaklar",
+              "Genel cilt iyileştirme",
+              "İzler (akne dışı)",
+              "Solgun, yorgun cilt",
+              "Diğer"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "textarea",
+            "label": "'Diğer' seçildiyse lütfen belirtiniz:",
+            "required": false,
+            "placeholder": "Cilt sorunlarınızı ayrıntılı olarak açıklayınız"
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "Cilt tipiniz aşağıdakilerden hangisine en çok uyuyor?",
+            "required": true,
+            "options": [
+              "Tip I (çok açık, her zaman yanar, hiç bronzlaşmaz)",
+              "Tip II (açık, çabuk yanar, çok az bronzlaşır)",
+              "Tip III (orta, bazen yanar, iyi bronzlaşır)",
+              "Tip IV (koyu, nadiren yanar, çabuk bronzlaşır)",
+              "Tip V (esmer, çok nadiren yanar)",
+              "Tip VI (çok koyu/siyah, hiç yanmaz)"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Mevcut cilt durumunuzu nasıl tanımlarsınız?",
+            "required": true,
+            "options": [
+              "Normal ve sağlıklı",
+              "Kuru ve pul pul",
+              "Yağlı ve parlak",
+              "Karma cilt (T bölgesi yağlı, yanaklar kuru)",
+              "Hassas ve reaktif",
+              "Sivilce/siyah nokta eğilimli",
+              "Kırışıklıkları olan olgun cilt"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "checkbox",
+            "label": "Şu anda aşağıdaki cilt sorunlarından herhangi biri sizde var mı?",
+            "required": true,
+            "options": [
+              "Aktif akne/sivilce",
+              "Rozasea/kuperoz",
+              "Egzama/dermatit",
+              "Açık yaralar",
+              "Herpes/uçuk",
+              "Güneş yanığı",
+              "Şiddetli kızarıklık",
+              "Hiçbiri"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Daha önce microneedling deneyiminiz oldu mu?",
+            "required": true,
+            "options": [
+              "Evet, profesyonel olarak",
+              "Evet, evde",
+              "Hayır, ilk kez"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "textarea",
+            "label": "Evet ise deneyiminizi anlatınız:",
+            "required": false,
+            "placeholder": "Ne zaman, nerede, sonuçlar, yan etkiler?"
+          },
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Uygulamadan beklentileriniz nelerdir?",
+            "required": true,
+            "options": [
+              "Cilt yapısında belirgin iyileşme",
+              "Birden fazla seansta orta düzeyde iyileşme",
+              "Önleyici yaşlanma karşıtı uygulama",
+              "Hedefe yönelik iz tedavisi",
+              "Emin değilim, lütfen bilgi verin"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Ayrıntılı tıbbi geçmiş",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f9",
+            "type": "radio",
+            "label": "Hamile misiniz veya emziriyor musunuz?",
+            "required": true,
+            "options": [
+              "Evet, hamileyim",
+              "Evet, emziriyorum",
+              "Hayır",
+              "Emin değilim/hamilelik olasılığı var"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "radio",
+            "label": "Son 6 ay içinde isotretinoin (Roaccutane gibi akne ilacı) kullandınız mı?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır",
+              "Bilmiyorum"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Aşağıdaki ilaçlardan herhangi birini kullanıyor musunuz?",
+            "required": true,
+            "options": [
+              "Kan sulandırıcılar (Coumadin, heparin, aspirin vb.)",
+              "Bağışıklık baskılayıcılar",
+              "Kortizon (sistemik)",
+              "Antibiyotikler",
+              "Kemoterapi",
+              "Antikoagülanlar",
+              "Diğer",
+              "İlaç kullanmıyorum"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "textarea",
+            "label": "'Diğer' ilaçlar seçildiyse lütfen kullandığınız tüm ilaçları belirtiniz:",
+            "required": false,
+            "placeholder": "İlaç adı, dozu, kullanım nedeni"
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Aşağıdaki hastalıklardan herhangi birine sahip misiniz?",
+            "required": true,
+            "options": [
+              "Diabetes mellitus (şeker hastalığı)",
+              "Otoimmün hastalıklar (lupus, romatizma vb.)",
+              "Kan pıhtılaşma bozuklukları",
+              "Kalp hastalıkları",
+              "Keloid/aşırı iz oluşumu eğilimi",
+              "Yara iyileşme bozuklukları",
+              "Cilt kanseri veya öncü lezyonlar",
+              "Epilepsi",
+              "Bulaşıcı hastalıklar (HIV, hepatit)",
+              "Hiçbiri"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Yüz/uygulama bölgenizde metal implantlar var mı?",
+            "required": true,
+            "options": [
+              "Diş implantları",
+              "Metal diş dolguları",
+              "Yüz implantları",
+              "Kalıcı makyaj",
+              "Diğer metal implantlar",
+              "İmplant yok"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Alerjiniz veya intoleransınız var mı?",
+            "required": true,
+            "options": [
+              "Lokal anestezikler (lidokain vb.)",
+              "Lateks",
+              "Dezenfektan",
+              "Hyaluronik asit",
+              "C vitamini",
+              "Retinol/A vitamini",
+              "Diğer",
+              "Bilinen alerji yok"
+            ]
+          },
+          {
+            "id": "f16",
+            "type": "textarea",
+            "label": "Alerjiniz varsa lütfen ayrıntılı olarak açıklayınız:",
+            "required": false,
+            "placeholder": "Alerji türü, belirtiler, şiddeti"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Önceki uygulamalar ve cilt bakımı",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Son 6 ay içinde hangi estetik uygulamaları yaptırdınız?",
+            "required": true,
+            "options": [
+              "Kimyasal peeling",
+              "Lazer uygulamaları",
+              "IPL",
+              "Botoks enjeksiyonları",
+              "Hyaluronik asit dolgu",
+              "İp askı",
+              "Radyofrekans",
+              "HIFU",
+              "Başka microneedling uygulamaları",
+              "Estetik uygulama yaptırmadım"
+            ]
+          },
+          {
+            "id": "f18",
+            "type": "textarea",
+            "label": "Evet ise lütfen uygulamalarla ilgili ayrıntı veriniz:",
+            "required": false,
+            "placeholder": "Ne zaman, nerede, hangi bölgeler, memnuniyet, komplikasyonlar"
+          },
+          {
+            "id": "f19",
+            "type": "checkbox",
+            "label": "Düzenli olarak hangi cilt bakım ürünlerini kullanıyorsunuz?",
+            "required": true,
+            "options": [
+              "Retinol/retinoid ürünler",
+              "AHA/BHA asitleri (glikolik asit, salisilik asit)",
+              "C vitamini serumu",
+              "Benzoil peroksit",
+              "Hidrokinon",
+              "Tretinoin krem",
+              "Diğer reçeteli ürünler",
+              "Yalnızca standart cilt bakımı"
+            ]
+          },
+          {
+            "id": "f20",
+            "type": "radio",
+            "label": "Retinol veya asitli ürünleri en son ne zaman kullandınız?",
+            "required": true,
+            "options": [
+              "Son 24 saat içinde",
+              "Son 3 gün içinde",
+              "Son bir hafta içinde",
+              "Bir haftadan daha önce",
+              "Kullanmıyorum"
+            ]
+          },
+          {
+            "id": "f21",
+            "type": "radio",
+            "label": "Son 4 hafta içinde yoğun güneşe maruz kaldınız mı?",
+            "required": true,
+            "options": [
+              "Evet, tatil/solaryum",
+              "Evet, ara sıra",
+              "Hayır, kaçındım",
+              "Bilmiyorum"
+            ]
+          },
+          {
+            "id": "f22",
+            "type": "radio",
+            "label": "Ağrı toleransınız nasıldır?",
+            "required": true,
+            "options": [
+              "Çok düşük",
+              "Düşük",
+              "Normal",
+              "Yüksek",
+              "Çok yüksek"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Microneedling hakkında kapsamlı bilgilendirme",
+        "type": "document",
+        "fields": [],
+        "content": "\n<h2>Microneedling uygulaması hakkında kapsamlı bilgilendirme</h2>\n<p>Sayın Danışanımız,</p>\n<p>Microneedling uygulaması yaptırmaya karar verdiniz. Bu ayrıntılı bilgilendirme belgesiyle sizi uygulama, olası riskler, yan etkiler ve gerekli bakım hakkında kapsamlı şekilde bilgilendirmek istiyoruz.</p>\n<h3>Microneedling nedir?</h3>\n<p>Microneedling, ince iğneler (0,5-2,5 mm) yardımıyla ciltte kontrollü mikro yaralanmalar oluşturulan, minimal invaziv bir kozmetik yöntemdir. Bu mikro yaralanmalar cildin doğal iyileşme süreçlerini uyarır ve kolajen ile elastin üretimini artırır. Bu yöntem kolajen indüksiyon tedavisi (CIT) olarak da adlandırılır.</p>\n<h3>Etki şekli ve mekanizma</h3>\n<p>İnce iğneler cildin en üst tabakasını (epidermis) geçerek dermise ulaşır. Böylece aşağıdaki süreçleri başlatan mikroskobik kanallar oluşur:</p>\n<ul>\n<li><strong>Yara iyileşme reaksiyonu:</strong> Cilt doğal onarım mekanizmalarını harekete geçirir</li>\n<li><strong>Kolajen üretimi:</strong> Cilt yapısını iyileştiren yeni kolajen lifleri oluşur</li>\n<li><strong>Elastin oluşumu:</strong> Cildin esnekliği artar</li>\n<li><strong>Kan dolaşımında iyileşme:</strong> Cildin besin desteği optimize edilir</li>\n<li><strong>Etken madde emilimi:</strong> Bakım ürünleri cilde daha derin nüfuz edebilir</li>\n</ul>\n<h3>Uygulama alanları</h3>\n<ul>\n<li><strong>Akne izleri:</strong> Atrofik (çökük) izlerde iyileşme</li>\n<li><strong>İnce çizgiler ve kırışıklıklar:</strong> Yüzeysel yaşlanma belirtilerinin yumuşatılması</li>\n<li><strong>Genişlemiş gözenekler:</strong> Cilt görünümünün inceltilmesi</li>\n<li><strong>Hiperpigmentasyon:</strong> Lekelerin açılması</li>\n<li><strong>Çatlaklar:</strong> Cilt yapısında iyileşme</li>\n<li><strong>Genel cilt gençleştirme:</strong> Doku ve parlaklıkta iyileşme</li>\n<li><strong>İzler:</strong> Farklı türdeki iz dokuları</li>\n</ul>\n<h3>Ayrıntılı uygulama süreci</h3>\n<ol>\n<li><strong>Hazırlık:</strong> Cildin özenle temizlenmesi ve dezenfeksiyonu</li>\n<li><strong>Uyuşturma:</strong> Anestezik krem uygulanması (30-45 dakika etki süresi)</li>\n<li><strong>Uygulama:</strong> Steril iğnelerle sistematik microneedling</li>\n<li><strong>Etken madde uygulaması:</strong> Serumların uygulanması (hyaluronik asit, C vitamini vb.)</li>\n<li><strong>Yatıştırma:</strong> Serinletici ve yatıştırıcı maske</li>\n<li><strong>Bakım:</strong> Bakım ürünleri ve güneş koruyucu uygulanması</li>\n</ol>\n<h3>Uygulama parametreleri</h3>\n<ul>\n<li><strong>İğne uzunluğu:</strong> Cilt sorununa göre 0,5-2,5 mm</li>\n<li><strong>Uygulama süresi:</strong> Bölgeye göre 30-90 dakika</li>\n<li><strong>Seans sayısı:</strong> En iyi sonuç için 3-6 seans</li>\n<li><strong>Seans aralığı:</strong> Seanslar arasında 4-6 hafta</li>\n</ul>\n<h3>Olası yan etkiler ve riskler</h3>\n<h4>Sık görülen, normal reaksiyonlar (>%50):</h4>\n<ul>\n<li>24-72 saat süren kızarıklık ve şişlik</li>\n<li>Gerginlik hissi ve hafif ağrı</li>\n<li>Uygulama sırasında noktasal kanamalar</li>\n<li>Ciltte artan hassasiyet</li>\n<li>3-5 gün sonra hafif pullanma</li>\n</ul>\n<h4>Ara sıra görülen yan etkiler (%5-20):</h4>\n<ul>\n<li>Daha belirgin şişlikler (özellikle göz çevresinde)</li>\n<li>Küçük morluklar (peteşi)</li>\n<li>İyileşme sırasında kaşıntı</li>\n<li>Geçici hiperpigmentasyon</li>\n<li>Kuruluk ve pullanma</li>\n</ul>\n<h4>Nadir komplikasyonlar (%1-5):</h4>\n<ul>\n<li>Enfeksiyonlar (bakteriyel, viral, mantar kaynaklı)</li>\n<li>Etken maddelere karşı alerjik reaksiyonlar</li>\n<li>Herpes simpleksin aktifleşmesi</li>\n<li>Post-inflamatuvar hiperpigmentasyon</li>\n<li>İz oluşumu (doğru uygulamada çok nadir)</li>\n</ul>\n<h4>Çok nadir riskler (<%1):</h4>\n<ul>\n<li>Kalıcı pigment değişiklikleri</li>\n<li>Granülom oluşumu</li>\n<li>Hastalık etkenlerinin bulaşması (hijyen kurallarına uyulmadığında)</li>\n</ul>\n<h3>Kontrendikasyonlar (uygulama yapılamaz)</h3>\n<ul>\n<li>Hamilelik ve emzirme dönemi</li>\n<li>Uygulama bölgesinde aktif cilt enfeksiyonları</li>\n<li>İltihaplı lezyonlarla seyreden aktif akne</li>\n<li>Açık yaralar veya egzama</li>\n<li>Son 6 ay içinde isotretinoin kullanımı</li>\n<li>Keloid eğilimi veya patolojik iz oluşumu</li>\n<li>Kan pıhtılaşma bozuklukları</li>\n<li>İmmünsüpresyon</li>\n<li>Uygulama bölgesinde cilt kanseri</li>\n</ul>\n<h3>Göreceli kontrendikasyonlar (dikkat edilmesi gereken durumlar)</h3>\n<ul>\n<li>Diabetes mellitus</li>\n<li>Otoimmün hastalıklar</li>\n<li>Kan sulandırıcı kullanımı</li>\n<li>Rozasea veya çok hassas cilt</li>\n<li>Yakın zamanda güneşe maruz kalma veya bronzlaşma</li>\n<li>Son 7 gün içinde retinol/asit kullanımı</li>\n</ul>\n<h3>Önemli davranış kuralları</h3>\n<h4>Uygulamadan önce (1-2 hafta):</h4>\n<ul>\n<li>Retinol veya asit içeren ürünler kullanmayınız</li>\n<li>Güneşten ve solaryumdan kaçınınız</li>\n<li>Uygulama bölgesinde epilasyon/ağda yaptırmayınız</li>\n<li>Uçuk eğiliminiz varsa: koruyucu ilaç kullanımı</li>\n<li>Bol su içiniz ve sağlıklı beslenmeye özen gösteriniz</li>\n</ul>\n<h4>Uygulamadan sonra (1-2 hafta):</h4>\n<ul>\n<li>24-48 saat: Uygulanan bölgede makyaj yapmayınız</li>\n<li>48 saat: Sauna, spor veya yoğun terlemeden kaçınınız</li>\n<li>1 hafta: Retinol veya asit içeren ürün kullanmayınız</li>\n<li>2 hafta: Düzenli güneş koruması (SPF 50+)</li>\n<li>Nazik, parfümsüz bakım ürünleri kullanınız</li>\n<li>Kaşımayınız ve ovuşturmayınız</li>\n<li>Bol su içiniz</li>\n</ul>\n<h3>Sonuçlar ve beklentiler</h3>\n<p>Microneedling sonuçları kademeli olarak ortaya çıkar:</p>\n<ul>\n<li><strong>Hemen:</strong> Artan kan dolaşımı sayesinde hafif ışıltı etkisi</li>\n<li><strong>1-2 hafta:</strong> Cilt yapısında ilk iyileşmeler</li>\n<li><strong>4-6 hafta:</strong> Belirgin yeni kolajen oluşumu</li>\n<li><strong>3-6 ay:</strong> Seans serisi sonrasında en iyi sonuç</li>\n</ul>\n<p>Gerçekçi beklentiler:</p>\n<ul>\n<li>Cilt yapısında %30-70 iyileşme</li>\n<li>İzlerde %25-50 azalma</li>\n<li>Gözeneklerin incelmesi</li>\n<li>Cilt esnekliğinde artış</li>\n<li>Daha eşit bir cilt tonu</li>\n</ul>\n<h3>Maliyet ve uygulama planı</h3>\n<p>Maliyet, uygulama bölgesine ve seans sayısına göre değişir. En iyi sonuç için önerimiz:</p>\n<ul>\n<li>4-6 hafta arayla 3-6 seans</li>\n<li>6-12 ayda bir tazeleme seansı</li>\n<li>Cildin tepkisine göre kişiye özel ayarlama</li>\n</ul>\n<h3>Alternatif uygulama seçenekleri</h3>\n<ul>\n<li>Kimyasal peeling</li>\n<li>Lazer ile cilt yenileme (resurfacing)</li>\n<li>Radyofrekans uygulamaları</li>\n<li>IPL</li>\n<li>Enjeksiyon uygulamaları (dolgu, botoks)</li>\n<li>Cerrahi yöntemler</li>\n<li>Uygulama yapılmaması</li>\n</ul>\n<p><strong>Acil durum iletişimi:</strong> Ciddi yan etkiler veya komplikasyonlar durumunda lütfen derhal bizimle iletişime geçiniz ya da en yakın acil servise başvurunuz.</p>\n"
+      },
+      {
+        "id": "p5",
+        "title": "Ayrıntılı onam",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f23",
+            "type": "checkbox",
+            "label": "Bilgilendirme ve anlama",
+            "required": true,
+            "options": [
+              "Microneedling hakkındaki kapsamlı bilgilendirmeyi eksiksiz okudum ve anladım.",
+              "Bilgilendirme belgesini incelemek için yeterli zamanım oldu.",
+              "Tüm sorularım tatmin edici şekilde yanıtlandı.",
+              "Microneedling'in nasıl etki ettiğini anladım.",
+              "En iyi sonuç için birden fazla seans gerektiğini anladım."
+            ]
+          },
+          {
+            "id": "f24",
+            "type": "checkbox",
+            "label": "Riskler ve yan etkiler",
+            "required": true,
+            "options": [
+              "Tüm olası riskler ve yan etkiler hakkında bilgilendirildim.",
+              "Usulüne uygun uygulamada bile komplikasyonlar oluşabileceğini anladım.",
+              "Kızarıklık ve şişliğin normal olduğunu anladım.",
+              "Yanlış bakım nedeniyle enfeksiyon riskini kabul ediyorum.",
+              "Pigment değişikliklerinin mümkün olduğunu anladım."
+            ]
+          },
+          {
+            "id": "f25",
+            "type": "checkbox",
+            "label": "Tıbbi bilgiler",
+            "required": true,
+            "options": [
+              "Sağlık bilgilerimin tamamının doğru ve eksiksiz olduğunu onaylıyorum.",
+              "Belirtilen kontrendikasyonlardan hiçbiri bende bulunmuyor.",
+              "Sağlık durumumdaki her değişikliği derhal bildireceğim.",
+              "Kullandığım tüm ilaçları ve cilt bakım ürünlerini belirttim."
+            ]
+          },
+          {
+            "id": "f26",
+            "type": "checkbox",
+            "label": "Davranış kuralları",
+            "required": true,
+            "options": [
+              "Uygulama öncesi davranış kurallarına uymayı taahhüt ediyorum.",
+              "Bakım talimatlarına özenle uyacağım.",
+              "Uygulama sonrasında güneşten korunmanın önemini anladım.",
+              "Herhangi bir sorun yaşarsam sizinle derhal iletişime geçeceğim."
+            ]
+          },
+          {
+            "id": "f27",
+            "type": "checkbox",
+            "label": "Beklentiler ve sonuçlar",
+            "required": true,
+            "options": [
+              "Uygulama sonuçlarına ilişkin gerçekçi beklentilerim var.",
+              "Sonucun kişiden kişiye farklılık gösterebileceğinin farkındayım.",
+              "Sonuç için herhangi bir garanti verilemeyeceğini anladım.",
+              "Birden fazla seans gerektiğini kabul ediyorum.",
+              "Sonuçların ortaya çıkmasının zaman aldığını anladım."
+            ]
+          },
+          {
+            "id": "f28",
+            "type": "checkbox",
+            "label": "Dokümantasyon ve kişisel verilerin korunması",
+            "required": true,
+            "options": [
+              "Dokümantasyon amacıyla fotoğraf çekilmesini kabul ediyorum.",
+              "Bu fotoğrafların gizli tutulacağını anladım.",
+              "Kişisel verilerimin KVKK'ya uygun olarak saklanmasını kabul ediyorum."
+            ]
+          },
+          {
+            "id": "f29",
+            "type": "textarea",
+            "label": "Ek sorular veya yorumlar",
+            "required": false,
+            "placeholder": "Sorularınız var mı veya özellikle belirtmek istediğiniz bir konu var mı?"
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Müşteri imzası",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Müşteri imzası",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "title": "Onay ve sonraki adımlar",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Ayrıntılı bilgileriniz için teşekkür ederiz!</h2>\n<p>Microneedling uygulamasına ilişkin bilgileriniz ve onamınız eksiksiz olarak kaydedildi ve gizli tutulacaktır.</p>\n<h3>Randevunuz için önemli bilgiler:</h3>\n<h4>Uygulamadan 1 hafta önce:</h4>\n<ul>\n<li>Retinol veya asit içeren ürünler kullanmayınız</li>\n<li>Güneşten ve solaryumdan kaçınınız</li>\n<li>Uygulama bölgesinde epilasyon/ağda yaptırmayınız</li>\n<li>Uçuk eğiliminiz varsa: koruyucu ilaç kullanımını görüşünüz</li>\n</ul>\n<h4>Uygulama günü:</h4>\n<ul>\n<li>Uygulama bölgesi makyajsız olarak geliniz</li>\n<li>Rahat kıyafetler giyiniz</li>\n<li>Yeterli zaman ayırınız (yaklaşık 60-90 dakika)</li>\n<li>Rahatsızlık veya cilt sorunu durumunda randevunuzu erteleyiniz</li>\n</ul>\n<h4>Uygulamadan sonra:</h4>\n<ul>\n<li>24-48 saat makyaj yapmayınız</li>\n<li>48 saat sauna veya yoğun spordan kaçınınız</li>\n<li>1 hafta retinol veya asit içeren ürün kullanmayınız</li>\n<li>2 hafta düzenli güneş koruması (SPF 50+) kullanınız</li>\n<li>Nazik, parfümsüz bakım ürünleri kullanınız</li>\n</ul>\n<h3>Uygulama planı:</h3>\n<p>En iyi sonuç için 4-6 hafta arayla 3-6 seans öneriyoruz. Bir sonraki randevunuz, ilk uygulamadan sonra cildinizin tepkisine göre planlanacaktır.</p>\n<h3>Acil durum iletişimi:</h3>\n<p>Ciddi yan etkiler veya komplikasyonlar durumunda lütfen derhal bizimle iletişime geçiniz ya da en yakın acil servise başvurunuz.</p>\n<p><strong>Sizi profesyonel ve güvenli bir şekilde ağırlamayı sabırsızlıkla bekliyoruz!</strong></p>\n"
+      }
+    ],
+    "tags": [
+      "Microneedling",
+      "Yaşlanma karşıtı",
+      "İz tedavisi",
+      "Cilt görünümü",
+      "Kolajen",
+      "CIT"
+    ]
+  },
+  {
+    "id": "permanent-makeup-1",
+    "name": "Kalıcı makyaj ön görüşme ve onam formu",
+    "description": "Tıbbi ön değerlendirme ve onam belgesi içeren kalıcı makyaj / microblading formu.",
+    "category": "Güzellik",
+    "difficulty": "mittel",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Uygulama bölgesi ve istekler",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Hangi bölgelere uygulama yapılmalı?",
+            "required": true,
+            "options": [
+              "Kaşlar",
+              "Üst eyeliner",
+              "Alt eyeliner",
+              "Dudak konturu",
+              "Tam dudak renklendirme",
+              "Güzellik beni",
+              "Meme ucu rekonstrüksiyonu",
+              "İz kamuflajı"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Daha önce kalıcı makyaj yaptırdınız mı?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "textarea",
+            "label": "Evet ise ne zaman ve nerede?",
+            "required": false,
+            "placeholder": "Lütfen daha önce ne zaman ve nerede uygulama yaptırdığınızı belirtiniz"
+          },
+          {
+            "id": "f4",
+            "type": "textarea",
+            "label": "Nasıl bir sonuç hayal ediyorsunuz?",
+            "required": true,
+            "placeholder": "İsteklerinizi ve fikirlerinizi anlatınız"
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Tıbbi geçmiş",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Şu anda hamile misiniz veya emziriyor musunuz?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "checkbox",
+            "label": "Aşağıdaki hastalıklardan herhangi birine sahip misiniz?",
+            "required": true,
+            "options": [
+              "Diyabet",
+              "Kalp hastalıkları",
+              "Kan pıhtılaşma bozuklukları",
+              "Otoimmün hastalıklar",
+              "Cilt hastalıkları",
+              "Bulaşıcı hastalıklar (HIV, hepatit)",
+              "Epilepsi",
+              "Hiçbiri"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Kan sulandırıcı ilaç kullanıyor musunuz?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Uygulama bölgesinde uçuk (herpes) sorununuz var mı?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Aşağıdaki maddelerden herhangi birine alerjiniz var mı?",
+            "required": true,
+            "options": [
+              "Lokal anestezikler (uyuşturucu kremler)",
+              "Lateks",
+              "Nikel veya diğer metaller",
+              "Renk pigmentleri",
+              "Hiçbiri"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "textarea",
+            "label": "Diğer önemli hastalıklar veya alerjiler",
+            "required": false,
+            "placeholder": "Lütfen varsa diğer önemli hastalık veya alerjilerinizi belirtiniz"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Kalıcı makyaj hakkında bilgilendirme",
+        "type": "document",
+        "fields": [],
+        "content": "\n<h2>Kalıcı makyaj uygulaması hakkında bilgilendirme</h2>\n<p>Sayın Müşterimiz,</p>\n<p>Kalıcı makyaj uygulaması yaptırmaya karar verdiniz. Bu belgeyle sizi uygulama süreci, olası riskler ve bakım hakkında kapsamlı şekilde bilgilendirmek istiyoruz.</p>\n<h3>Uygulama yöntemi</h3>\n<p>Kalıcı makyajda, insan üzerinde kullanıma uygun özel renk pigmentleri ince iğnelerle cildin üst katmanına (epidermis/dermis) yerleştirilir. Sonucun kalıcılığı; cilt tipi, yaşam alışkanlıkları ve güneşe maruz kalma gibi çeşitli faktörlere bağlı olarak genellikle 1-5 yıldır. En iyi sonuç için çoğunlukla 4-6 hafta sonra bir rötuş seansı gerekir.</p>\n<h3>Uygulama süreci</h3>\n<p>Uygulama aşağıdaki adımları içerir:</p>\n<ol>\n<li>Danışma görüşmesi ve renk seçimi</li>\n<li>İstenen formun önceden çizilmesi</li>\n<li>Uygulama bölgesinin lokal olarak uyuşturulması (isteğe bağlı)</li>\n<li>Renk pigmentlerinin uygulanması</li>\n<li>Son bakım ve bakım sonrası bilgilendirme</li>\n</ol>\n<h3>Olası yan etkiler ve riskler</h3>\n<ul>\n<li><strong>Normal reaksiyonlar:</strong> 1-2 gün süren kızarıklık, hafif şişlik, hafif yanma ve gerginlik hissi.</li>\n<li><strong>Nadir yan etkiler:</strong> Belirgin şişlik, enfeksiyon, renk pigmentlerine veya anestezik maddelere karşı alerjik reaksiyonlar, geçici kabarcık oluşumu.</li>\n<li><strong>Uzun vadeli riskler:</strong> Renk değişiklikleri, düzensiz solma, asimetrik görünüm, iz oluşumu.</li>\n</ul>\n<h3>Bakım</h3>\n<p>En iyi sonuç için doğru bakım belirleyicidir:</p>\n<ul>\n<li>Uygulanan bölgeleri 7-10 gün boyunca güneşten, solaryumdan, saunadan ve klorlu sudan koruyunuz</li>\n<li>Dokunmaktan kaçınınız ve kaşınsa bile kaşımayınız</li>\n<li>En az 2 hafta boyunca peeling, meyve asidi veya retinol uygulamayınız</li>\n<li>Eyeliner uygulamasında kirpik kıvırıcıyı ancak tam iyileşmeden sonra kullanınız</li>\n<li>4-6 hafta sonra önerilen rötuş seansına geliniz</li>\n</ul>\n<h3>Önemli bilgiler</h3>\n<ul>\n<li>Nihai sonuç ancak iyileşme ve gerekirse rötuş seansından sonra görünür</li>\n<li>Renk, uygulamadan hemen sonra belirgin şekilde daha yoğun ve koyu görünür</li>\n<li>Rengin tam olarak nasıl gelişeceği ve kalıcılığı konusunda garanti verilemez</li>\n<li>Sonuçtan memnun kalmadığınızda düzeltme gerekebilir</li>\n</ul>\n"
+      },
+      {
+        "id": "p4",
+        "title": "Onam",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Kalıcı makyaj uygulaması hakkındaki bilgilendirmeyi okudum ve anladım.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Olası riskler ve yan etkiler hakkında bilgilendirildim.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Soru sormak için yeterli fırsatım oldu.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "En iyi sonuç için rötuş seansı gerekebileceğini anladım.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Dokümantasyon amacıyla uygulanan bölgenin fotoğraflarının çekilmesini kabul ediyorum.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Müşteri imzası",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Müşteri imzası",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Onay",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Bilgileriniz için teşekkür ederiz!</h2>\n<p>Kalıcı makyaj uygulamasına ilişkin bilgileriniz ve onamınız kaydedildi.</p>\n<h3>Randevunuzdan önce lütfen dikkat ediniz:</h3>\n<ul>\n<li>Uygulama bölgesi makyajsız olarak geliniz</li>\n<li>Uygulamadan 48 saat önce kan sulandırıcı ilaç kullanmayınız (yalnızca doktorunuza danıştıktan sonra)</li>\n<li>Uygulama günü alkol ve kafeinli içeceklerden kaçınınız</li>\n<li>İstediğiniz görünümü konuşabilmek için varsa makyaj ürünlerinizi yanınızda getiriniz</li>\n</ul>\n<p>Sizi ağırlamayı sabırsızlıkla bekliyoruz!</p>\n"
+      }
+    ],
+    "tags": [
+      "Kalıcı makyaj",
+      "PMU",
+      "Microblading",
+      "Kaşlar",
+      "Eyeliner",
+      "Dudaklar"
+    ]
+  },
+  {
+    "id": "facial-treatment-1",
+    "name": "Cilt bakımı ön görüşme formu",
+    "description": "Cilt tipi analizi ve bakım tercihlerini içeren genel yüz bakımı anamnez formu.",
+    "category": "Yüz bakımı",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Cilt ve bakım alışkanlıkları",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "radio",
+            "label": "Cilt tipinizi nasıl tanımlarsınız?",
+            "required": true,
+            "options": [
+              "Normal",
+              "Kuru",
+              "Yağlı",
+              "Karma cilt",
+              "Hassas",
+              "Bilmiyorum"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "checkbox",
+            "label": "Hangi cilt sorunlarınız var?",
+            "required": true,
+            "options": [
+              "Akne/sivilce",
+              "Kızarıklık/kuperoz",
+              "Lekeler",
+              "İnce çizgiler/kırışıklıklar",
+              "Geniş gözenekler",
+              "Kuruluk/pullanma",
+              "Mat, cansız cilt",
+              "Belirgin bir sorunum yok"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "textarea",
+            "label": "Günlük cilt bakım rutininizi anlatınız",
+            "required": true,
+            "placeholder": "Temizleyici, tonik, serum, nemlendirici, güneş koruyucu vb."
+          },
+          {
+            "id": "f4",
+            "type": "checkbox",
+            "label": "Hangi ürünleri düzenli olarak kullanıyorsunuz?",
+            "required": false,
+            "options": [
+              "Retinol/A vitamini",
+              "AHA/BHA asitleri",
+              "C vitamini",
+              "Hyaluronik asit",
+              "Niasinamid",
+              "Enzim/peeling ürünleri",
+              "Yüz yağları",
+              "Maskeler"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Bakım geçmişi ve tercihler",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Daha önce profesyonel yüz bakımı yaptırdınız mı?",
+            "required": true,
+            "options": [
+              "Evet, düzenli olarak",
+              "Evet, ara sıra",
+              "Evet, ama nadiren",
+              "Hayır, hiç"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "date",
+            "label": "En son ne zaman profesyonel yüz bakımı yaptırdınız?",
+            "required": false
+          },
+          {
+            "id": "f7",
+            "type": "textarea",
+            "label": "Hangi bakımı yaptırdınız ve deneyiminiz nasıldı?",
+            "required": false,
+            "placeholder": "ör. klasik yüz bakımı, mikrodermabrazyon, kimyasal peeling..."
+          },
+          {
+            "id": "f8",
+            "type": "checkbox",
+            "label": "Aşağıdaki bakımlardan hangileriyle ilgileniyorsunuz?",
+            "required": true,
+            "options": [
+              "Derin temizlik",
+              "Yaşlanma karşıtı bakım",
+              "Nem bakımı",
+              "Hassas ciltler için yatıştırıcı bakım",
+              "Akne/sivilce bakımı",
+              "Lekeler için aydınlatıcı bakım",
+              "Lenf drenajı/masaj"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "radio",
+            "label": "Cildiniz uygulamalara karşı ne kadar hassastır?",
+            "required": true,
+            "options": [
+              "Çok hassas",
+              "Biraz hassas",
+              "Normal",
+              "Dayanıklı/hassas değil",
+              "Bilmiyorum"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Sağlıkla ilgili sorular",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f10",
+            "type": "checkbox",
+            "label": "Aşağıdaki cilt sorunlarından herhangi biri sizde var mı?",
+            "required": true,
+            "options": [
+              "Nörodermatit/egzama",
+              "Sedef hastalığı (psoriasis)",
+              "Rozasea",
+              "Uçuk eğilimi",
+              "Mantar hastalıkları",
+              "Dermatolojik tanı yok"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "radio",
+            "label": "Reçeteli cilt bakım ürünleri kullanıyor musunuz?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "textarea",
+            "label": "Evet ise hangileri?",
+            "required": false,
+            "placeholder": "ör. tretinoin, azelaik asit, antibiyotikler..."
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Belirli içeriklere karşı alerjiniz veya intoleransınız var mı?",
+            "required": true,
+            "options": [
+              "Parfüm/koku maddeleri",
+              "Koruyucu maddeler",
+              "Uçucu yağlar",
+              "Kuruyemiş/kuruyemiş yağları",
+              "Diğer",
+              "Bilinen yok"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "textarea",
+            "label": "'Diğer' seçildiyse lütfen belirtiniz:",
+            "required": false,
+            "placeholder": "Lütfen alerji/intoleranslarınızı belirtiniz"
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Bakım hedefleri",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f15",
+            "type": "textarea",
+            "label": "Cildinizle ilgili en önemli istekleriniz nelerdir?",
+            "required": true,
+            "placeholder": "Bakımla neyi elde etmek istediğinizi anlatınız"
+          },
+          {
+            "id": "f16",
+            "type": "radio",
+            "label": "Bakımdan hemen sonra gözle görülür bir iyileşme görmek sizin için ne kadar önemli?",
+            "required": true,
+            "options": [
+              "Çok önemli",
+              "Önemli",
+              "Çok önemli değil, uzun vadeli sonuçları hedefliyorum"
+            ]
+          },
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Aşağıdakileri kabul ediyorum:",
+            "required": true,
+            "options": [
+              "Cilt temizliği/siyah nokta temizliği (kısa süreli kızarıklığa neden olabilir)",
+              "Hafif peeling (hafif karıncalanma hissi yapabilir)",
+              "Yüz masajı",
+              "Maskeler",
+              "Kaş ve kirpik boyama"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Müşteri imzası",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Müşteri imzası",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Onay",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Bilgileriniz için teşekkür ederiz!</h2>\n<p>Verdiğiniz bilgiler sayesinde yüz bakımınızı ihtiyaçlarınıza en uygun şekilde planlayabiliriz.</p>\n<h3>Randevunuz için bilgiler:</h3>\n<ul>\n<li>Lütfen makyajsız geliniz</li>\n<li>Bakımdan 24 saat önce peeling veya güçlü etkili ürünler kullanmayınız</li>\n<li>Cilt durumunuzda bir değişiklik olursa lütfen bize bildiriniz</li>\n<li>Danışmada değerlendirebilmemiz için kullandığınız bakım ürünlerini yanınızda getirebilirsiniz</li>\n</ul>\n<p>Sizi ağırlamayı ve size rahatlatıcı, etkili bir bakım deneyimi sunmayı sabırsızlıkla bekliyoruz!</p>\n"
+      }
+    ],
+    "tags": [
+      "Yüz bakımı",
+      "Cilt bakımı",
+      "Kozmetik",
+      "Cilt analizi",
+      "Temizlik"
+    ]
+  },
+  {
+    "id": "lash-extension-1",
+    "name": "İpek kirpik ön görüşme ve onam formu",
+    "description": "İpek kirpik (kirpik uzatma) uygulamaları için ön görüşme ve onam formu.",
+    "category": "Güzellik",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Uygulama istekleri ve deneyimler",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "radio",
+            "label": "Daha önce ipek kirpik deneyiminiz oldu mu?",
+            "required": true,
+            "options": [
+              "Evet, düzenli olarak",
+              "Evet, ara sıra",
+              "Hayır, ilk kez"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Nasıl bir görünüm istiyorsunuz?",
+            "required": true,
+            "options": [
+              "Doğal",
+              "Sade",
+              "Dramatik/hacimli",
+              "Kedi gözü efekti",
+              "Bebek gözü efekti",
+              "Emin değilim, lütfen bilgi verin"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "checkbox",
+            "label": "Özel istekler",
+            "required": false,
+            "options": [
+              "Özellikle hafif",
+              "Suya dayanıklı",
+              "Renkli kirpikler",
+              "Taş/kristal"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Tercih edilen kirpik kalınlığı",
+            "required": true,
+            "options": [
+              "İnce (0,05-0,07 mm)",
+              "Orta (0,10-0,12 mm)",
+              "Kalın (0,15-0,20 mm)",
+              "Emin değilim, lütfen bilgi verin"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Tercih edilen kirpik tekniği",
+            "required": true,
+            "options": [
+              "Klasik (1:1)",
+              "Volume (2D-4D)",
+              "Mega volume (5D+)",
+              "Hibrit (karışım)",
+              "Emin değilim, lütfen bilgi verin"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Sağlıkla ilgili bilgiler",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Kontakt lens kullanıyor musunuz?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "checkbox",
+            "label": "Aşağıdaki göz hastalıklarından herhangi biri sizde var mı?",
+            "required": true,
+            "options": [
+              "Konjonktivit",
+              "Blefarit (göz kapağı iltihabı)",
+              "Göz kuruluğu",
+              "Arpacık",
+              "Glokom",
+              "Diğer göz hastalıkları",
+              "Göz hastalığım yok"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "textarea",
+            "label": "'Diğer göz hastalıkları' seçildiyse lütfen belirtiniz:",
+            "required": false,
+            "placeholder": "Lütfen göz hastalıklarınızı belirtiniz"
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Aşağıdaki malzemelere alerjiniz var mı?",
+            "required": true,
+            "options": [
+              "Yapıştırıcı/siyanoakrilat",
+              "Lateks",
+              "Bant/flaster",
+              "Akrilik",
+              "Diğer",
+              "Bilinen alerji yok"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "textarea",
+            "label": "'Diğer' seçildiyse lütfen belirtiniz:",
+            "required": false,
+            "placeholder": "Lütfen alerjilerinizi belirtiniz"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "İpek kirpik hakkında bilgilendirme",
+        "type": "document",
+        "fields": [],
+        "content": "\n<h2>İpek kirpik uygulaması hakkında bilgilendirme</h2>\n<p>Sayın Müşterimiz,</p>\n<p>İpek kirpik uygulaması yaptırmaya karar verdiniz. Bu belgeyle sizi uygulama süreci, olası riskler ve gerekli bakım hakkında bilgilendirmek istiyoruz.</p>\n<h3>Uygulama süreci</h3>\n<p>İpek kirpik uygulamasında sentetik kirpikler özel bir yapıştırıcı yardımıyla doğal kirpiklerinize tek tek yapıştırılır. Uygulama, istenen görünüme göre yaklaşık 1,5 ila 2,5 saat sürer. En iyi tutunma için uygulamaya temiz, yağsız ve makyajsız kirpiklerle gelmelisiniz.</p>\n<h3>Olası riskler ve yan etkiler</h3>\n<ul>\n<li><strong>Alerjik reaksiyonlar:</strong> Kullanılan yapıştırıcı nadir durumlarda alerjik reaksiyonlara yol açabilir. Alerjinin ilk belirtilerinde (belirgin kızarıklık, şişlik, kaşıntı) lütfen derhal bizimle iletişime geçiniz.</li>\n<li><strong>Göz tahrişi:</strong> Uygulama sırasında gözlerde hafif tahriş oluşabilir. Bu durum uygulamadan sonra kısa sürede geçmelidir.</li>\n<li><strong>Doğal kirpiklerin zarar görmesi:</strong> Uygulama usulüne uygun yapılmazsa veya bakım yanlış yapılırsa doğal kirpikler zarar görebilir.</li>\n</ul>\n<h3>Bakım önerileri</h3>\n<ul>\n<li>Uygulamadan sonraki 24-48 saat boyunca su, buhar ve yağlı maddelerle temastan kaçınınız.</li>\n<li>Göz çevresinde yağ içeren ürünler kullanmayınız.</li>\n<li>Gözlerinizi ovuşturmayınız ve kirpiklerinize gereğinden fazla dokunmayınız.</li>\n<li>Kirpik kıvırıcı ve suya dayanıklı maskara kullanmayınız.</li>\n<li>Kirpiklerinizi düzenli olarak temiz bir kirpik fırçasıyla tarayınız.</li>\n<li>Kirpiklere baskı uygulamamak için mümkünse sırt üstü uyuyunuz.</li>\n<li>En iyi sonuç için 2-3 haftada bir dolgu (bakım) seansı öneriyoruz.</li>\n</ul>\n<h3>Kalıcılık</h3>\n<p>İpek kirpiklerin kalıcılığı kişiden kişiye değişir ve doğal kirpik döngünüze, cilt yapınıza ve bakımınıza bağlıdır. Ortalama kalıcılık 4-6 haftadır. Düzenli dolgu randevularıyla (2-3 haftada bir) sonuç daha uzun süre korunabilir.</p>\n"
+      },
+      {
+        "id": "p4",
+        "title": "Onam",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "İpek kirpik hakkındaki bilgilendirmeyi okudum ve anladım.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Olası riskler ve yan etkiler hakkında bilgilendirildim.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Belirtilen kontrendikasyonlardan hiçbirinin bende bulunmadığını onaylıyorum.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Önerilen bakım talimatlarına uymayı taahhüt ediyorum.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Dokümantasyon amacıyla uygulama öncesi ve sonrası fotoğraf çekilmesini kabul ediyorum.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Müşteri imzası",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Müşteri imzası",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Onay",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Bilgileriniz için teşekkür ederiz!</h2>\n<p>İpek kirpik uygulamasına ilişkin bilgileriniz ve onamınız kaydedildi.</p>\n<h3>Randevunuz için bilgiler:</h3>\n<ul>\n<li>Lütfen göz makyajı olmadan geliniz</li>\n<li>Uygulamadan önce kontakt lenslerinizi çıkarınız</li>\n<li>24 saat öncesinden itibaren yoğun kafeinli içeceklerden kaçınınız (göz seğirmesini azaltır)</li>\n<li>Yapıştırıcının tamamen kuruyabilmesi için uygulamadan sonra yeterli zaman ayırınız</li>\n</ul>\n<p>Sizi ağırlamayı sabırsızlıkla bekliyoruz!</p>\n"
+      }
+    ],
+    "tags": [
+      "İpek kirpik",
+      "Kirpikler",
+      "Güzellik",
+      "Kirpik uzatma",
+      "Stil"
+    ]
+  },
+  {
+    "id": "nail-design-1",
+    "name": "Tırnak tasarımı ön görüşme formu",
+    "description": "Tırnak bakımı ve tırnak tasarımı hizmetleri için anamnez formu.",
+    "category": "Tırnak",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Uygulama istekleri ve geçmiş",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "İstenen uygulama",
+            "required": true,
+            "options": [
+              "Jel tırnak",
+              "Akrilik tırnak",
+              "Kalıcı oje/jel oje",
+              "Doğal tırnak güçlendirme",
+              "Tips ile tırnak uzatma",
+              "Tırnak onarımı",
+              "Nail art/süsleme",
+              "Fransız manikür"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Daha önce protez tırnak deneyiminiz oldu mu?",
+            "required": true,
+            "options": [
+              "Evet, düzenli olarak",
+              "Evet, ara sıra",
+              "Bir kez",
+              "Hayır, ilk kez"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "En son ne zaman protez tırnak kullandınız?",
+            "required": false,
+            "options": [
+              "Şu anda kullanıyorum",
+              "Son 4 hafta içinde",
+              "Son 3 ay içinde",
+              "3 aydan daha önce",
+              "Hiç"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Tercih edilen tırnak uzunluğu",
+            "required": true,
+            "options": [
+              "Kısa (doğal)",
+              "Orta",
+              "Uzun",
+              "Ekstra uzun"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Tercih edilen tırnak şekli",
+            "required": true,
+            "options": [
+              "Kare",
+              "Oval",
+              "Yuvarlak",
+              "Badem",
+              "Stiletto",
+              "Balerin/Coffin",
+              "Emin değilim, lütfen bilgi verin"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Tıbbi geçmiş",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f6",
+            "type": "checkbox",
+            "label": "Şu anda veya son 6 ay içinde aşağıdaki tırnak sorunlarından herhangi birini yaşadınız mı?",
+            "required": true,
+            "options": [
+              "Tırnak mantarı",
+              "Tırnak sedefi",
+              "Kırılgan tırnaklar",
+              "Yırtık tırnaklar",
+              "Tırnak ayrılması",
+              "Tırnak yatağı iltihabı",
+              "Renk değiştirmiş tırnaklar",
+              "Tırnak sorunum yok"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Diyabet hastası mısınız?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "checkbox",
+            "label": "Aşağıdaki malzemelere alerjiniz var mı?",
+            "required": true,
+            "options": [
+              "Akrilik",
+              "UV jel",
+              "Oje/jel oje",
+              "Aseton/oje çıkarıcı",
+              "Lateks",
+              "Dezenfektan",
+              "Diğer",
+              "Bilinen alerji yok"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "textarea",
+            "label": "'Diğer' seçildiyse lütfen belirtiniz:",
+            "required": false,
+            "placeholder": "Lütfen alerjilerinizi belirtiniz"
+          },
+          {
+            "id": "f10",
+            "type": "radio",
+            "label": "Şu anda hamile misiniz?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır",
+              "Belirtmek istemiyorum"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Tırnak tasarımı hakkında bilgilendirme",
+        "type": "document",
+        "fields": [],
+        "content": "\n<h2>Protez tırnak uygulaması hakkında bilgilendirme</h2>\n<p>Sayın Müşterimiz,</p>\n<p>Protez tırnak uygulaması yaptırmaya karar verdiniz. Bu belgeyle sizi uygulama süreci, olası riskler ve bakım hakkında bilgilendirmek istiyoruz.</p>\n<h3>Uygulama süreci</h3>\n<p>Protez tırnak uygulaması aşağıdaki adımları içerir:</p>\n<ol>\n<li>Doğal tırnakların hazırlanması (kısaltma, törpüleme, tırnak etinin temizlenmesi)</li>\n<li>Tırnak yüzeyinin matlaştırılması</li>\n<li>Tips (uzatmada) veya kalıp yerleştirilmesi</li>\n<li>Uygulama malzemesinin sürülmesi (jel, akrilik vb.)</li>\n<li>UV veya LED ışık altında kurutma (jelde)</li>\n<li>Tırnakların şekillendirilmesi ve törpülenmesi</li>\n<li>Kaplama ve renkli oje/tasarım uygulanması</li>\n</ol>\n<h3>Olası riskler ve yan etkiler</h3>\n<ul>\n<li><strong>Alerjik reaksiyonlar:</strong> Kullanılan malzemeler nadir durumlarda alerjilere yol açabilir.</li>\n<li><strong>Tırnak yatağı tahrişi:</strong> Uygulama veya çıkarma usulüne uygun yapılmazsa tahriş oluşabilir.</li>\n<li><strong>Doğal tırnakların zayıflaması:</strong> Özellikle usulüne aykırı çıkarma veya sık değişim durumunda doğal tırnaklar incelebilir ve hassaslaşabilir.</li>\n<li><strong>Tırnak enfeksiyonları:</strong> Hijyen yetersizliğinde veya tırnaklar hasar gördüğünde enfeksiyonlar oluşabilir.</li>\n</ul>\n<h3>Bakım önerileri</h3>\n<ul>\n<li>Su veya kimyasallarla yapılan ev işlerinde eldiven kullanınız.</li>\n<li>Doğal tırnağı ve tırnak etini beslemek için düzenli olarak tırnak bakım yağı kullanınız.</li>\n<li>Tırnaklarınızı alet olarak kullanmayınız ve aşırı baskıya maruz bırakmayınız.</li>\n<li>Hasar oluşması durumunda onarım için lütfen kısa süre içinde salonumuza başvurunuz.</li>\n<li>Görünümün korunması için 3-4 haftada bir dolgu öneriyoruz.</li>\n<li>Enfeksiyon veya alerjik reaksiyon belirtilerinde lütfen derhal bir doktora başvurunuz.</li>\n</ul>\n<h3>Çıkarma</h3>\n<p>Protez tırnaklar her zaman profesyonel olarak çıkarılmalıdır. Kırarak veya çekerek çıkarmak doğal tırnağa zarar verebilir. Çıkarma işlemi için en iyisi yine bize başvurmanızdır.</p>\n"
+      },
+      {
+        "id": "p4",
+        "title": "Onam",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Protez tırnak uygulaması hakkındaki bilgilendirmeyi okudum ve anladım.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Olası riskler ve yan etkiler hakkında bilgilendirildim.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Uygulamaya engel teşkil eden belirtilmiş kontrendikasyonlardan hiçbirinin bende bulunmadığını onaylıyorum.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Önerilen bakım talimatlarına uymayı taahhüt ediyorum.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Protez tırnakların profesyonel olarak çıkarılması gerektiği konusunda bilgilendirildim.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Müşteri imzası",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Müşteri imzası",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Onay",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Bilgileriniz için teşekkür ederiz!</h2>\n<p>Protez tırnak uygulamasına ilişkin bilgileriniz ve onamınız kaydedildi.</p>\n<h3>Randevunuz için bilgiler:</h3>\n<ul>\n<li>Lütfen randevudan önce mevcut ojenizi çıkarınız</li>\n<li>Temiz ve bakımlı tırnaklarla geliniz</li>\n<li>Belirli bir tasarım istiyorsanız görsel veya örnek getirebilirsiniz</li>\n<li>Uygulama süresi yaklaşık 1,5 ila 2 saattir</li>\n</ul>\n<p>Sizi ağırlamayı sabırsızlıkla bekliyoruz!</p>\n"
+      }
+    ],
+    "tags": [
+      "Tırnak tasarımı",
+      "Tırnaklar",
+      "Protez tırnak",
+      "Manikür",
+      "Jel tırnak"
+    ]
+  },
+  {
+    "id": "laser-hair-removal-1",
+    "name": "Lazer epilasyon ön görüşme ve onam formu",
+    "description": "Lazer epilasyon uygulamaları için tıbbi geçmiş ve onam formu.",
+    "category": "Epilasyon",
+    "difficulty": "mittel",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Uygulama bölgeleri",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Hangi bölgelere uygulama yapılmalı?",
+            "required": true,
+            "options": [
+              "Üst dudak",
+              "Çene",
+              "Yanaklar",
+              "Koltuk altı",
+              "Kollar",
+              "Göğüs",
+              "Karın",
+              "Sırt",
+              "Bikini bölgesi",
+              "Bacaklar",
+              "Diğer"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "textarea",
+            "label": "'Diğer' seçildiyse lütfen belirtiniz:",
+            "required": false,
+            "placeholder": "Lütfen uygulama yapılacak bölgeleri belirtiniz"
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "Daha önce lazer epilasyon yaptırdınız mı?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "textarea",
+            "label": "Evet ise ne zaman ve sonuç nasıldı?",
+            "required": false,
+            "placeholder": "Önceki deneyimlerinizi anlatınız"
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Cilt tipi ve kıl yapısı",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Fitzpatrick sınıflamasına göre cilt tipiniz nedir?",
+            "required": true,
+            "options": [
+              "Tip I: Çok açık, her zaman yanar, hiç bronzlaşmaz",
+              "Tip II: Açık, kolay yanar, çok az bronzlaşır",
+              "Tip III: Orta ten, bazen yanar, iyi bronzlaşır",
+              "Tip IV: Buğday/zeytin ten, nadiren yanar, hızlı ve iyi bronzlaşır",
+              "Tip V: Esmer, çok nadiren yanar, çok iyi bronzlaşır",
+              "Tip VI: Koyu kahverengi ila siyah, hiç yanmaz"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Uygulama yapılacak bölgelerdeki kıllarınız ne renk?",
+            "required": true,
+            "options": [
+              "Siyah",
+              "Koyu kahverengi",
+              "Orta kahverengi",
+              "Açık kahverengi",
+              "Koyu sarı",
+              "Açık sarı",
+              "Kızıl",
+              "Gri/beyaz"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Uygulama yapılacak bölgelerdeki kıl yapınız nasıl?",
+            "required": true,
+            "options": [
+              "Kalın/sert",
+              "Orta",
+              "İnce",
+              "Karışık"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Tıbbi geçmiş",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Hamile misiniz veya emziriyor musunuz?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır",
+              "Emin değilim"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Aşağıdaki hastalıklardan herhangi birine sahip misiniz?",
+            "required": true,
+            "options": [
+              "Diyabet",
+              "Otoimmün hastalıklar",
+              "Sizde veya ailenizde cilt kanseri",
+              "Epilepsi",
+              "Uygulama bölgesinde uçuk (herpes)",
+              "Keloid/aşırı iz oluşumu eğilimi",
+              "Vitiligo (ala hastalığı)",
+              "Sedef hastalığı (psoriasis)",
+              "Egzama/nörodermatit",
+              "Hiçbiri"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "checkbox",
+            "label": "Aşağıdaki ilaçlardan herhangi birini kullanıyor musunuz?",
+            "required": true,
+            "options": [
+              "Antibiyotikler",
+              "Isotretinoin/akne ilacı (şu anda veya son 6 ay içinde)",
+              "Kortizon",
+              "Kan sulandırıcılar",
+              "Işığa duyarlılık yapan ilaçlar",
+              "Diğer",
+              "İlaç kullanmıyorum"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "textarea",
+            "label": "'Diğer' seçildiyse lütfen belirtiniz:",
+            "required": false,
+            "placeholder": "Lütfen kullandığınız ilaçları belirtiniz"
+          },
+          {
+            "id": "f12",
+            "type": "radio",
+            "label": "Son 4 hafta içinde uygulama bölgesinde yoğun güneş veya solaryumla bronzlaştınız mı?",
+            "required": true,
+            "options": [
+              "Evet",
+              "Hayır"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Lazer epilasyon hakkında bilgilendirme",
+        "type": "document",
+        "fields": [],
+        "content": "\n<h2>Lazer epilasyon hakkında bilgilendirme</h2>\n<p>Sayın Müşterimiz,</p>\n<p>Lazer ile kalıcı epilasyon yaptırmaya karar verdiniz. Bu belgeyle sizi yöntem, olası riskler ve bakım hakkında bilgilendirmek istiyoruz.</p>\n<h3>Lazer epilasyon yöntemi</h3>\n<p>Lazer epilasyonda cilde ışık atımları gönderilir. Kıllardaki melanin (pigment) ışığı emer ve oluşan ısı kıl köklerini (folikülleri) tahrip eder. Yalnızca büyüme evresindeki kıllar etkilenebildiğinden ve herhangi bir anda kılların yalnızca yaklaşık %20'si bu evrede bulunduğundan, 4-8 hafta arayla birden fazla seans gereklidir.</p>\n<h3>Olası riskler ve yan etkiler</h3>\n<ul>\n<li><strong>Yaygın, geçici reaksiyonlar:</strong> 1-3 gün süren kızarıklık, hafif şişlik, güneş yanığına benzer sıcaklık hissi.</li>\n<li><strong>Daha az görülen yan etkiler:</strong> Kabarcık oluşumu, yüzeysel yanıklar, geçici hiper- veya hipopigmentasyon (ciltte koyulaşma veya açılma).</li>\n<li><strong>Nadir komplikasyonlar:</strong> İz oluşumu, kalıcı pigment değişiklikleri, enfeksiyon, uçuğun (herpes) aktifleşmesi.</li>\n</ul>\n<h3>Uygulama öncesi önemli bilgiler</h3>\n<ul>\n<li>Uygulamadan 4 hafta önce uygulama bölgesinde bronzlaşmayınız (güneş veya solaryum).</li>\n<li>Uygulanacak kıllar 1-2 mm uzunluğunda olmalıdır (uygulamadan yaklaşık 1-3 gün önce tıraş olunuz).</li>\n<li>Uygulamadan en az 4 hafta önce kılı kökünden alan yöntemler (ağda, epilatör, iple alma) kullanmayınız.</li>\n<li>Uygulama bölgesinde bronzlaştırıcı veya yoğun parfümlü ürünler kullanmaktan kaçınınız.</li>\n</ul>\n<h3>Bakım</h3>\n<ul>\n<li>Uygulamadan sonraki 48 saat boyunca sıcak banyo, sauna, yoğun fiziksel aktivite veya havuzdan kaçınınız.</li>\n<li>Uygulamadan sonraki 14 gün boyunca uygulanan bölgede düzenli güneş koruması (SPF 50+) kullanınız.</li>\n<li>Kızarıklık veya şişlik durumunda soğutunuz ve yatıştırıcı, parfümsüz ürünler kullanınız.</li>\n<li>Uygulamadan 2-3 hafta sonra uygulanan kıllar dökülebilir; bu normaldir.</li>\n</ul>\n<h3>Sonuçlar ve beklentiler</h3>\n<p>Lazer epilasyon sonuçları kişiden kişiye farklılık gösterir ve cilt tipi, kıl rengi ve hormonal durum gibi çeşitli faktörlere bağlıdır. En iyi sonuç için genellikle 6-10 seans gereklidir. Kıllarda %70-90 oranında kalıcı azalma gerçekçidir; ancak %100 kılsızlık garanti edilemez. Hormonal değişiklikler yeni kıl çıkışına neden olabilir.</p>\n"
+      },
+      {
+        "id": "p5",
+        "title": "Onam",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Lazer epilasyon hakkındaki bilgilendirmeyi okudum ve anladım.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Olası riskler ve yan etkiler hakkında bilgilendirildim.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Belirtilen kontrendikasyonlardan hiçbirinin bende bulunmadığını veya bunları uygulayıcımla görüştüğümü onaylıyorum.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f16",
+            "type": "checkbox",
+            "label": "Uygulama öncesi ve sonrası bakım talimatlarına uymayı taahhüt ediyorum.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          },
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Birden fazla seans gerektiğini ve tamamen kılsızlık için garanti verilemeyeceğini anladım.",
+            "required": true,
+            "options": [
+              "Evet"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Müşteri imzası",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Müşteri imzası",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "title": "Onay",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Bilgileriniz için teşekkür ederiz!</h2>\n<p>Lazer epilasyona ilişkin bilgileriniz ve onamınız kaydedildi.</p>\n<h3>Randevunuz için önemli bilgiler:</h3>\n<ul>\n<li>Uygulama bölgesini tıraş etmiş olarak geliniz (1-2 mm kıl uzunluğu idealdir)</li>\n<li>Uygulama günü uygulama bölgesinde losyon, krem veya makyaj kullanmayınız</li>\n<li>Uygulama bölgesine kolay erişim sağlayan rahat kıyafetler giyiniz</li>\n<li>Kızarıklık olabileceğinden uygulamadan sonra önemli bir randevu planlamayınız</li>\n</ul>\n<p>En iyi sonuç için kararlaştırılan uygulama planına uymanızı öneriyoruz.</p>\n"
+      }
+    ],
+    "tags": [
+      "Lazer",
+      "Epilasyon",
+      "IPL",
+      "Kalıcı epilasyon",
+      "Tüy alma"
+    ]
+  }
+]

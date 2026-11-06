@@ -263,47 +263,24 @@ export type DemoCopy = ReturnType<typeof getDemoCopy>;
 
 const BASE_URL = 'https://www.treatflow.io';
 
-export function demoFormHreflang(slug?: string) {
-  const de = slug ? `${BASE_URL}/formulare-testen/${slug}` : `${BASE_URL}/formulare-testen`;
-  const en = slug ? `${BASE_URL}/en/try-forms/${slug}` : `${BASE_URL}/en/try-forms`;
-  const tr = slug ? `${BASE_URL}/tr/try-forms/${slug}` : `${BASE_URL}/tr/try-forms`;
+function demoFormAlternates(locale: DemoLocale, slug?: string) {
+  const url = (l: DemoLocale) => `${BASE_URL}${DEMO_FORMS_PATH[l]}${slug ? `/${slug}` : ''}`;
+  const languages = { de: url('de'), en: url('en'), tr: url('tr') };
   return {
-    canonical: de,
-    languages: {
-      de,
-      en,
-      tr,
-      'x-default': de,
-    },
+    canonical: languages[locale],
+    // x-default = Englisch, wie auf allen anderen Seiten (app/i18n/seo.ts)
+    languages: { ...languages, 'x-default': languages.en },
   };
+}
+
+export function demoFormHreflang(slug?: string) {
+  return demoFormAlternates('de', slug);
 }
 
 export function demoFormHreflangEn(slug?: string) {
-  const de = slug ? `${BASE_URL}/formulare-testen/${slug}` : `${BASE_URL}/formulare-testen`;
-  const en = slug ? `${BASE_URL}/en/try-forms/${slug}` : `${BASE_URL}/en/try-forms`;
-  const tr = slug ? `${BASE_URL}/tr/try-forms/${slug}` : `${BASE_URL}/tr/try-forms`;
-  return {
-    canonical: en,
-    languages: {
-      de,
-      en,
-      tr,
-      'x-default': de,
-    },
-  };
+  return demoFormAlternates('en', slug);
 }
 
 export function demoFormHreflangTr(slug?: string) {
-  const de = slug ? `${BASE_URL}/formulare-testen/${slug}` : `${BASE_URL}/formulare-testen`;
-  const en = slug ? `${BASE_URL}/en/try-forms/${slug}` : `${BASE_URL}/en/try-forms`;
-  const tr = slug ? `${BASE_URL}/tr/try-forms/${slug}` : `${BASE_URL}/tr/try-forms`;
-  return {
-    canonical: tr,
-    languages: {
-      de,
-      en,
-      tr,
-      'x-default': de,
-    },
-  };
+  return demoFormAlternates('tr', slug);
 }

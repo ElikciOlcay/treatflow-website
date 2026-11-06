@@ -22,6 +22,7 @@ export const metadata = {
     canonical: 'https://www.treatflow.io/kosmetikstudio-software-kostenlos',
   },
   openGraph: {
+    locale: 'de_DE',
     title: 'Kosmetikstudio Software kostenlos? Was du wissen musst',
     description:
       'Kostenlose vs. kostenpflichtige Software für Kosmetikstudios im Vergleich. Funktionen, Einschränkungen und Empfehlungen.',

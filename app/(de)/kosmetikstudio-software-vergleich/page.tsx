@@ -19,6 +19,7 @@ export const metadata = {
         ...buildHreflangAlternates('software-comparison'),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Kosmetikstudio Software im Vergleich: Die Checkliste',
         description: 'Online-Buchung, Kundenkartei, Doku/Compliance, Support, Datenschutz – Checkliste für die passende Software.',
         url: 'https://www.treatflow.io/kosmetikstudio-software-vergleich',

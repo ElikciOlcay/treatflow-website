@@ -23,6 +23,7 @@ export const metadata: Metadata = {
         ...buildHreflangAlternates('news'),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Neuigkeiten',
         description: 'Neue Funktionen und Verbesserungen für dein Kosmetikstudio.',
         url: 'https://www.treatflow.io/neuigkeiten',

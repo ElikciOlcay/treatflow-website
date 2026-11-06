@@ -63,6 +63,7 @@ export const metadata = {
         ...buildHreflangAlternates("permanent-makeup-software"),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Permanent Makeup Software: Doku & Verwaltung',
         description: 'Digitale Einwilligungen, Vorher-Nachher Fotos und Online-Buchungen für PMU-Studios.',
         url: 'https://www.treatflow.io/permanent-makeup-software',

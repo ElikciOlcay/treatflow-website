@@ -20,6 +20,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/kosmetikstudio-software-wien',
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Kosmetikstudio Software Wien: Online-Buchungen',
         description: 'Software für Kosmetikstudios in Wien. Made in Austria. 14 Tage gratis testen.',
         url: 'https://www.treatflow.io/kosmetikstudio-software-wien',

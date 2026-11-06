@@ -24,6 +24,7 @@ export const metadata = {
     ...buildHreflangAlternates('treatflow-vs-fresha'),
   },
   openGraph: {
+    locale: 'de_DE',
     title: 'Treatflow vs. Fresha: Der ehrliche Vergleich',
     description:
       'Spezialisierte Kosmetikstudio-Software vs. kostenloses Buchungstool – bereits von 500+ Studios getestet.',

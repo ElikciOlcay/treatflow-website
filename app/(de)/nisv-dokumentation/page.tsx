@@ -24,6 +24,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/nisv-dokumentation',
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'NiSV-Dokumentation: Beratung, Einwilligung & Doku',
         description: 'Unterlagen digital verwalten, Fristen im Blick – ideal für NiSV-relevante Behandlungen im Kosmetikstudio.',
         url: 'https://www.treatflow.io/nisv-dokumentation',

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ogLocaleTags } from '@/app/i18n/config';
 import { notFound } from 'next/navigation';
 import DemoFormPlayer from '@/app/components/demo-forms/DemoFormPlayer';
 import { DEMO_FORMS, demoFormHreflang, getDemoCopy, getDemoForm } from '@/lib/demoForms';
@@ -20,10 +21,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!form) {
     return { title: copy.meta.notFound };
   }
+  const alternates = demoFormHreflang(form.id);
   return {
     title: copy.meta.playerTitle(form.name),
     description: copy.meta.playerDescription(form.description),
-    alternates: demoFormHreflang(form.id),
+    alternates,
+    openGraph: {
+      title: `${copy.meta.playerTitle(form.name)} | Treatflow`,
+      description: copy.meta.playerDescription(form.description),
+      url: alternates.canonical,
+      locale: ogLocaleTags.de,
+    },
     robots: {
       index: true,
       follow: true,

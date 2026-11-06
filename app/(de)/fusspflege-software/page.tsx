@@ -50,6 +50,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/fusspflege-software',
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Fußpflege Software: Kundenkartei, Termine & Doku',
         description: 'Kundenkartei mit Befunden und Fotos, Anamnesebogen, Termine und Erinnerungen für die Fußpflege.',
         url: 'https://www.treatflow.io/fusspflege-software',

@@ -28,6 +28,7 @@ export const metadata = {
     ...buildHreflangAlternates('treatflow-vs-treatwell'),
   },
   openGraph: {
+    locale: 'de_DE',
     title: 'Treatwell Kosten & Alternative: Treatflow vs. Treatwell',
     description:
       'Keine Provisionen, NiSV-konform, persönliche Betreuung – bereits von 500+ Studios getestet statt Treatwell.',

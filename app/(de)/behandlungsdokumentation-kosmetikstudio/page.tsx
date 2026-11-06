@@ -32,6 +32,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/behandlungsdokumentation-kosmetikstudio',
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Behandlungsdokumentation Kosmetikstudio: NiSV-konform',
         description: 'Digitale Behandlungsdokumentation für Kosmetikstudios. Fotos, Notizen, Produkte und Ergebnisse in einer Plattform. NiSV-konform dokumentieren.',
         url: 'https://www.treatflow.io/behandlungsdokumentation-kosmetikstudio',

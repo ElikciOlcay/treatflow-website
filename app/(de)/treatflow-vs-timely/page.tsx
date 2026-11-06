@@ -23,6 +23,7 @@ export const metadata = {
     canonical: 'https://www.treatflow.io/treatflow-vs-timely',
   },
   openGraph: {
+    locale: 'de_DE',
     title: 'Treatflow vs. Timely: Der ehrliche Vergleich',
     description:
       'Spezialisierte Kosmetikstudio-Software vs. internationale Salon-Software – bereits von 500+ Studios getestet.',

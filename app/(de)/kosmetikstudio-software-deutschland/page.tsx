@@ -22,6 +22,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/kosmetikstudio-software-deutschland',
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Kosmetikstudio Software Deutschland – NiSV & TSE',
         description: 'Die moderne Kosmetikstudio Software für Deutschland: Termine, Kundenkartei, NiSV-Doku und TSE-Kasse. DSGVO-konform. 14 Tage gratis testen.',
         url: 'https://www.treatflow.io/kosmetikstudio-software-deutschland',

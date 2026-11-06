@@ -4,6 +4,7 @@ import Footer from '@/app/components/Footer';
 import DemoFormsGallery from '@/app/components/demo-forms/DemoFormsGallery';
 import { getDemoCopy } from '@/lib/demoForms';
 import { buildHreflangAlternates } from '@/app/i18n/seo';
+import { ogLocaleTags } from '@/app/i18n/config';
 
 const copy = getDemoCopy('de');
 
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     title: `${copy.meta.galleryTitle} | Treatflow`,
     description: copy.meta.galleryDescription,
     url: 'https://www.treatflow.io/formulare-testen',
+    locale: ogLocaleTags.de,
   },
 };
 

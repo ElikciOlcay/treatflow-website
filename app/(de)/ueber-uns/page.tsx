@@ -13,6 +13,7 @@ export const metadata = {
         ...buildHreflangAlternates("about"),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Über uns - Treatflow Team Made in Austria',
         description: 'Erfahre mehr über das Treatflow Team. Software-Entwicklung speziell für die Beauty-Branche aus Österreich.',
         url: 'https://www.treatflow.io/ueber-uns',

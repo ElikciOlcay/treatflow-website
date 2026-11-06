@@ -22,6 +22,7 @@ export const metadata = {
     canonical: 'https://www.treatflow.io/treatflow-vs-shore',
   },
   openGraph: {
+    locale: 'de_DE',
     title: 'Treatflow vs. Shore: Der ehrliche Vergleich',
     description:
       'Spezialisierte Kosmetikstudio-Software vs. generische Terminbuchung – bereits von 500+ Studios getestet statt Shore.',

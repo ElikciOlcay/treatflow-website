@@ -14,6 +14,7 @@ export const metadata = {
         ...buildHreflangAlternates("contact"),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Kontakt - Treatflow Support & Beratung',
         description: 'Kontaktiere das Treatflow Team für persönliche Beratung und Support.',
         url: 'https://www.treatflow.io/kontakt',

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ogLocaleTags } from '@/app/i18n/config';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import DemoFormsGallery from '../../components/demo-forms/DemoFormsGallery';
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     title: `${copy.meta.galleryTitle} | Treatflow`,
     description: copy.meta.galleryDescription,
     url: 'https://www.treatflow.io/tr/try-forms',
-    locale: 'tr_TR',
+    locale: ogLocaleTags.tr,
   },
 };
 

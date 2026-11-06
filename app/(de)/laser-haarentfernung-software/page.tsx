@@ -67,6 +67,7 @@ export const metadata = {
         ...buildHreflangAlternates("laser-hair-removal-software"),
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Software für Laser Haarentfernung: NiSV-konform',
         description: 'NiSV-konforme Dokumentation, digitale Einwilligungen und Online-Buchungen für Laser-Studios.',
         url: 'https://www.treatflow.io/laser-haarentfernung-software',

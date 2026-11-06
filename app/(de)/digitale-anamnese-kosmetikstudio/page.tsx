@@ -33,6 +33,7 @@ export const metadata = {
         canonical: 'https://www.treatflow.io/digitale-anamnese-kosmetikstudio',
     },
     openGraph: {
+        locale: 'de_DE',
         title: 'Digitale Anamnese Kosmetikstudio: Formulare papierlos',
         description: 'Digitale Anamnesebögen für dein Kosmetikstudio. Kunden füllen Formulare vorab per Link aus - mit elektronischer Unterschrift. DSGVO-konform.',
         url: 'https://www.treatflow.io/digitale-anamnese-kosmetikstudio',
