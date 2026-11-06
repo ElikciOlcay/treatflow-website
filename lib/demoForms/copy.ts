@@ -1,18 +1,17 @@
-export type DemoLocale = 'de' | 'en' | 'tr';
-
-export const DEMO_FORMS_PATH = {
-  de: '/formulare-testen',
-  en: '/en/try-forms',
-  tr: '/tr/try-forms',
-} as const;
-
-export const DEMO_FORMS_FEATURE_PATH = {
-  de: '/formulare',
-  en: '/en/forms',
-  tr: '/tr/forms',
-} as const;
+export { DEMO_LOCALES, DEMO_FORMS_PATH, DEMO_FORMS_FEATURE_PATH, type DemoLocale } from './paths';
+import { DEMO_LOCALES, DEMO_FORMS_PATH, type DemoLocale } from './paths';
+import { demoCopyEs } from './copy-es';
+import { demoCopyFr } from './copy-fr';
+import { demoCopyIt } from './copy-it';
+import { demoCopyNl } from './copy-nl';
+import { demoCopyPl } from './copy-pl';
 
 export function getDemoCopy(locale: DemoLocale) {
+  if (locale === 'nl') return demoCopyNl;
+  if (locale === 'it') return demoCopyIt;
+  if (locale === 'pl') return demoCopyPl;
+  if (locale === 'es') return demoCopyEs;
+  if (locale === 'fr') return demoCopyFr;
   if (locale === 'tr') {
     return {
       gallery: {
@@ -29,7 +28,7 @@ export function getDemoCopy(locale: DemoLocale) {
         ],
         noticeTitle: 'Yönlendirme için örnek şablonlar',
         noticeText:
-          'Aşağıdaki formlar dijital ön kaydın nasıl işlediğini gösterir – anamnez, onam ve imza. Salonunuzdaki formları Türkçe üreticiyle veya birlikte oluşturursunuz. Örnek soru metinleri İngilizce kalabilir.',
+          'Aşağıdaki formlar dijital ön kaydın nasıl işlediğini gösterir – anamnez, onam ve imza. Salonunuzdaki formları üreticiyle veya birlikte oluşturursunuz.',
         generatorTitle: 'Kendi formunuzu üreticiyle oluşturun',
         generatorText:
           'Bir işlemi kendi cümlelerinizle yazın. Yapay zeka alanları kurar; sonrasında her şeyi düzenlersiniz.',
@@ -263,24 +262,13 @@ export type DemoCopy = ReturnType<typeof getDemoCopy>;
 
 const BASE_URL = 'https://www.treatflow.io';
 
-function demoFormAlternates(locale: DemoLocale, slug?: string) {
+/** Canonical + hreflang für Übersicht (ohne slug) oder einzelnes Formular, alle 8 Sprachen. */
+export function demoFormAlternates(locale: DemoLocale, slug?: string) {
   const url = (l: DemoLocale) => `${BASE_URL}${DEMO_FORMS_PATH[l]}${slug ? `/${slug}` : ''}`;
-  const languages = { de: url('de'), en: url('en'), tr: url('tr') };
+  const languages = Object.fromEntries(DEMO_LOCALES.map((l) => [l, url(l)])) as Record<DemoLocale, string>;
   return {
     canonical: languages[locale],
     // x-default = Englisch, wie auf allen anderen Seiten (app/i18n/seo.ts)
     languages: { ...languages, 'x-default': languages.en },
   };
-}
-
-export function demoFormHreflang(slug?: string) {
-  return demoFormAlternates('de', slug);
-}
-
-export function demoFormHreflangEn(slug?: string) {
-  return demoFormAlternates('en', slug);
-}
-
-export function demoFormHreflangTr(slug?: string) {
-  return demoFormAlternates('tr', slug);
 }

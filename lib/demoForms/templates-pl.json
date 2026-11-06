@@ -1,0 +1,1604 @@
+[
+  {
+    "id": "microneedling-1",
+    "name": "Microneedling – wywiad kosmetyczny i zgoda na zabieg",
+    "description": "Rozbudowany formularz do zabiegów microneedlingu z analizą skóry, wywiadem zdrowotnym, przeciwwskazaniami i profesjonalną zgodą na zabieg.",
+    "category": "Anti-aging",
+    "difficulty": "komplex",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Oczekiwania wobec zabiegu i analiza skóry",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Jakie problemy skórne chciałaby Pani / chciałby Pan leczyć microneedlingiem?",
+            "required": true,
+            "options": [
+              "Blizny potrądzikowe",
+              "Drobne linie i zmarszczki",
+              "Rozszerzone pory",
+              "Nierówny koloryt skóry",
+              "Przebarwienia/hiperpigmentacja",
+              "Rozstępy",
+              "Ogólna poprawa kondycji skóry",
+              "Blizny (inne niż potrądzikowe)",
+              "Szara, zmęczona skóra",
+              "Inne"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "textarea",
+            "label": "Jeśli zaznaczono „Inne”, prosimy o doprecyzowanie:",
+            "required": false,
+            "placeholder": "Opis konkretnych problemów skórnych"
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "Który fototyp skóry najlepiej odpowiada Pani / Pana skórze?",
+            "required": true,
+            "options": [
+              "Typ I (bardzo jasna, zawsze ulega oparzeniom, nigdy się nie opala)",
+              "Typ II (jasna, szybko ulega oparzeniom, opala się minimalnie)",
+              "Typ III (średnia, czasem ulega oparzeniom, dobrze się opala)",
+              "Typ IV (ciemniejsza, rzadko ulega oparzeniom, szybko się opala)",
+              "Typ V (ciemna, bardzo rzadko ulega oparzeniom)",
+              "Typ VI (bardzo ciemna/czarna, nigdy nie ulega oparzeniom)"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Jak opisałaby Pani / opisałby Pan obecny stan swojej skóry?",
+            "required": true,
+            "options": [
+              "Normalna i zdrowa",
+              "Sucha i łuszcząca się",
+              "Tłusta i błyszcząca",
+              "Mieszana (tłusta strefa T, suche policzki)",
+              "Wrażliwa i reaktywna",
+              "Z niedoskonałościami, wypryskami/zaskórnikami",
+              "Dojrzała ze zmarszczkami"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "checkbox",
+            "label": "Które z poniższych problemów skórnych występują obecnie?",
+            "required": true,
+            "options": [
+              "Aktywny trądzik/wypryski",
+              "Trądzik różowaty/cera naczynkowa",
+              "Egzema/zapalenie skóry",
+              "Otwarte rany",
+              "Opryszczka",
+              "Oparzenie słoneczne",
+              "Silne zaczerwienienie",
+              "Żadne z powyższych"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Czy ma Pani / Pan już doświadczenie z microneedlingiem?",
+            "required": true,
+            "options": [
+              "Tak, w salonie/gabinecie",
+              "Tak, w domu",
+              "Nie, to będzie pierwszy raz"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "textarea",
+            "label": "Jeśli tak, prosimy opisać swoje doświadczenia:",
+            "required": false,
+            "placeholder": "Kiedy, gdzie, jakie efekty, skutki uboczne?"
+          },
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Jakie ma Pani / Pan oczekiwania wobec zabiegu?",
+            "required": true,
+            "options": [
+              "Wyraźna poprawa struktury skóry",
+              "Umiarkowana poprawa po kilku sesjach",
+              "Profilaktyka anti-aging",
+              "Ukierunkowana terapia blizn",
+              "Nie wiem, proszę o doradztwo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Szczegółowy wywiad zdrowotny",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f9",
+            "type": "radio",
+            "label": "Czy jest Pani w ciąży lub karmi piersią?",
+            "required": true,
+            "options": [
+              "Tak, w ciąży",
+              "Tak, karmię piersią",
+              "Nie",
+              "Nie wiem/możliwa ciąża"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "radio",
+            "label": "Czy w ciągu ostatnich 6 miesięcy przyjmowano izotretynoinę (lek na trądzik, np. Aknenormin, Izotek)?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie",
+              "Nie wiem"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Czy przyjmuje Pani / Pan któryś z poniższych leków?",
+            "required": true,
+            "options": [
+              "Leki rozrzedzające krew (np. acenokumarol – Acenocumarol, Sintrom; warfaryna – Warfin; heparyna; kwas acetylosalicylowy – Acard, Polocard)",
+              "Leki immunosupresyjne",
+              "Kortykosteroidy (ogólnie, np. tabletki)",
+              "Antybiotyki",
+              "Chemioterapia",
+              "Leki przeciwkrzepliwe (np. NOAC)",
+              "Inne",
+              "Nie przyjmuję leków"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "textarea",
+            "label": "Jeśli zaznaczono „Inne”, prosimy wymienić wszystkie obecnie przyjmowane leki:",
+            "required": false,
+            "placeholder": "Nazwa leku, dawka, powód przyjmowania"
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Czy choruje Pani / Pan na którąś z poniższych chorób?",
+            "required": true,
+            "options": [
+              "Cukrzyca",
+              "Choroby autoimmunologiczne (toczeń, reumatyzm itp.)",
+              "Zaburzenia krzepnięcia krwi",
+              "Choroby serca",
+              "Skłonność do bliznowców/nadmiernego bliznowacenia",
+              "Zaburzenia gojenia się ran",
+              "Nowotwór skóry lub zmiany przednowotworowe",
+              "Padaczka",
+              "Choroby zakaźne (HIV, WZW)",
+              "Żadne z powyższych"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Czy w obrębie twarzy/obszaru zabiegowego znajdują się implanty metalowe?",
+            "required": true,
+            "options": [
+              "Implanty zębowe",
+              "Metalowe wypełnienia zębów",
+              "Implanty twarzy",
+              "Makijaż permanentny",
+              "Inne implanty metalowe",
+              "Brak implantów"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Czy ma Pani / Pan alergie lub nietolerancje?",
+            "required": true,
+            "options": [
+              "Środki znieczulające miejscowo (lidokaina itp.)",
+              "Lateks",
+              "Środki dezynfekujące",
+              "Kwas hialuronowy",
+              "Witamina C",
+              "Retinol/witamina A",
+              "Inne",
+              "Brak znanych alergii"
+            ]
+          },
+          {
+            "id": "f16",
+            "type": "textarea",
+            "label": "W przypadku alergii prosimy o dokładny opis:",
+            "required": false,
+            "placeholder": "Rodzaj alergii, objawy, nasilenie"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Wcześniejsze zabiegi i pielęgnacja",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Jakie zabiegi estetyczne wykonano w ciągu ostatnich 6 miesięcy?",
+            "required": true,
+            "options": [
+              "Peelingi chemiczne",
+              "Zabiegi laserowe",
+              "IPL (intensywne światło pulsacyjne)",
+              "Iniekcje toksyny botulinowej (botoks)",
+              "Wypełniacze z kwasem hialuronowym",
+              "Lifting nićmi",
+              "Radiofrekwencja",
+              "HIFU",
+              "Inne zabiegi microneedlingu",
+              "Brak zabiegów estetycznych"
+            ]
+          },
+          {
+            "id": "f18",
+            "type": "textarea",
+            "label": "Jeśli tak, prosimy o szczegóły dotyczące zabiegów:",
+            "required": false,
+            "placeholder": "Kiedy, gdzie, jakie obszary, zadowolenie, powikłania"
+          },
+          {
+            "id": "f19",
+            "type": "checkbox",
+            "label": "Jakie kosmetyki pielęgnacyjne stosuje Pani / Pan regularnie?",
+            "required": true,
+            "options": [
+              "Produkty z retinolem/retinoidami",
+              "Kwasy AHA/BHA (kwas glikolowy, kwas salicylowy)",
+              "Serum z witaminą C",
+              "Nadtlenek benzoilu",
+              "Hydrochinon",
+              "Krem z tretynoiną",
+              "Inne preparaty na receptę",
+              "Tylko zwykła pielęgnacja"
+            ]
+          },
+          {
+            "id": "f20",
+            "type": "radio",
+            "label": "Kiedy ostatnio stosowano retinol lub kwasy?",
+            "required": true,
+            "options": [
+              "W ciągu ostatnich 24 godzin",
+              "W ciągu ostatnich 3 dni",
+              "W ciągu ostatniego tygodnia",
+              "Ponad tydzień temu",
+              "Nie stosuję"
+            ]
+          },
+          {
+            "id": "f21",
+            "type": "radio",
+            "label": "Czy w ciągu ostatnich 4 tygodni skóra była intensywnie wystawiona na słońce?",
+            "required": true,
+            "options": [
+              "Tak, urlop/solarium",
+              "Tak, sporadycznie",
+              "Nie, unikam słońca",
+              "Nie wiem"
+            ]
+          },
+          {
+            "id": "f22",
+            "type": "radio",
+            "label": "Jak ocenia Pani / Pan swoją tolerancję bólu?",
+            "required": true,
+            "options": [
+              "Bardzo niska",
+              "Niska",
+              "Normalna",
+              "Wysoka",
+              "Bardzo wysoka"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Informacja o zabiegu microneedlingu",
+        "type": "document",
+        "fields": [],
+        "content": "\n                <h2>Microneedling: pełna informacja o zabiegu</h2>\n                \n                <p>Szanowna Klientko, Szanowny Kliencie,</p>\n                \n                <p>Zdecydowała się Pani / zdecydował się Pan na zabieg microneedlingu. Niniejszy dokument informacyjny szczegółowo opisuje zabieg, możliwe ryzyko, skutki uboczne oraz niezbędną pielęgnację po zabiegu.</p>\n                \n                <h3>Czym jest microneedling?</h3>\n                <p>Microneedling to minimalnie inwazyjny zabieg kosmetyczny, podczas którego cienkie igły (0,5–2,5 mm) tworzą w skórze kontrolowane mikrouszkodzenia. Pobudzają one naturalne procesy regeneracji skóry i zwiększają produkcję kolagenu oraz elastyny. Metoda ta znana jest również jako terapia indukcji kolagenu (CIT).</p>\n                \n                <h3>Jak to działa</h3>\n                <p>Cienkie igły przechodzą przez zewnętrzną warstwę skóry (naskórek) i docierają do skóry właściwej. Powstają mikroskopijne kanaliki, które uruchamiają następujące procesy:</p>\n                <ul>\n                    <li><strong>Reakcja gojenia:</strong> Skóra uruchamia naturalne mechanizmy naprawcze</li>\n                    <li><strong>Produkcja kolagenu:</strong> Powstają nowe włókna kolagenowe, które poprawiają strukturę skóry</li>\n                    <li><strong>Tworzenie elastyny:</strong> Wzrasta elastyczność skóry</li>\n                    <li><strong>Lepsze ukrwienie:</strong> Skóra jest lepiej odżywiona</li>\n                    <li><strong>Wnikanie składników aktywnych:</strong> Kosmetyki pielęgnacyjne mogą wnikać głębiej w skórę</li>\n                </ul>\n                \n                <h3>Wskazania</h3>\n                <ul>\n                    <li><strong>Blizny potrądzikowe:</strong> Poprawa wyglądu blizn zanikowych (wklęsłych)</li>\n                    <li><strong>Drobne linie i zmarszczki:</strong> Wygładzenie powierzchownych oznak starzenia</li>\n                    <li><strong>Rozszerzone pory:</strong> Wyraźnie wygładzona cera</li>\n                    <li><strong>Hiperpigmentacja:</strong> Rozjaśnienie przebarwień</li>\n                    <li><strong>Rozstępy:</strong> Poprawa struktury skóry</li>\n                    <li><strong>Ogólne odmłodzenie skóry:</strong> Lepsza struktura i promienny wygląd</li>\n                    <li><strong>Blizny:</strong> Różne rodzaje tkanki bliznowatej</li>\n                </ul>\n                \n                <h3>Przebieg zabiegu krok po kroku</h3>\n                <ol>\n                    <li><strong>Przygotowanie:</strong> Dokładne oczyszczenie i dezynfekcja skóry</li>\n                    <li><strong>Znieczulenie:</strong> Nałożenie kremu znieczulającego (działanie po 30–45 minutach)</li>\n                    <li><strong>Zabieg:</strong> Systematyczny microneedling sterylnymi igłami</li>\n                    <li><strong>Składniki aktywne:</strong> Aplikacja serum (kwas hialuronowy, witamina C itp.)</li>\n                    <li><strong>Ukojenie:</strong> Chłodząca, łagodząca maska</li>\n                    <li><strong>Pielęgnacja pozabiegowa:</strong> Nałożenie kosmetyków pielęgnacyjnych i ochrony przeciwsłonecznej</li>\n                </ol>\n                \n                <h3>Parametry zabiegu</h3>\n                <ul>\n                    <li><strong>Długość igieł:</strong> 0,5–2,5 mm, w zależności od problemu skórnego</li>\n                    <li><strong>Czas zabiegu:</strong> 30–90 minut, w zależności od obszaru</li>\n                    <li><strong>Liczba sesji:</strong> 3–6 zabiegów dla optymalnych efektów</li>\n                    <li><strong>Odstępy:</strong> 4–6 tygodni między sesjami</li>\n                </ul>\n                \n                <h3>Możliwe skutki uboczne i ryzyko</h3>\n                \n                <h4>Częste, normalne reakcje (>50%):</h4>\n                <ul>\n                    <li>Zaczerwienienie i obrzęk przez 24–72 godziny</li>\n                    <li>Uczucie ściągnięcia i lekki ból</li>\n                    <li>Punktowe krwawienia w trakcie zabiegu</li>\n                    <li>Zwiększona wrażliwość skóry</li>\n                    <li>Lekkie łuszczenie się skóry po 3–5 dniach</li>\n                </ul>\n                \n                <h4>Sporadyczne skutki uboczne (5–20%):</h4>\n                <ul>\n                    <li>Silniejszy obrzęk (zwłaszcza w okolicy oczu)</li>\n                    <li>Drobne wybroczyny (petechie)</li>\n                    <li>Swędzenie w trakcie gojenia</li>\n                    <li>Przejściowa hiperpigmentacja</li>\n                    <li>Suchość i łuszczenie się skóry</li>\n                </ul>\n                \n                <h4>Rzadkie powikłania (1–5%):</h4>\n                <ul>\n                    <li>Zakażenia (bakteryjne, wirusowe, grzybicze)</li>\n                    <li>Reakcje alergiczne na składniki aktywne</li>\n                    <li>Nawrót opryszczki (herpes simplex)</li>\n                    <li>Hiperpigmentacja pozapalna</li>\n                    <li>Powstanie blizn (bardzo rzadko przy prawidłowym wykonaniu)</li>\n                </ul>\n                \n                <h4>Bardzo rzadkie ryzyko (<1%):</h4>\n                <ul>\n                    <li>Trwałe zmiany pigmentacji</li>\n                    <li>Powstanie ziarniniaków</li>\n                    <li>Przeniesienie patogenów (w razie nieprzestrzegania zasad higieny)</li>\n                </ul>\n                \n                <h3>Przeciwwskazania (zabieg niemożliwy)</h3>\n                <ul>\n                    <li>Ciąża i karmienie piersią</li>\n                    <li>Aktywne infekcje skóry w obszarze zabiegowym</li>\n                    <li>Aktywny trądzik ze zmianami zapalnymi</li>\n                    <li>Otwarte rany lub egzema</li>\n                    <li>Przyjmowanie izotretynoiny w ciągu ostatnich 6 miesięcy</li>\n                    <li>Skłonność do bliznowców lub nieprawidłowego bliznowacenia</li>\n                    <li>Zaburzenia krzepnięcia krwi</li>\n                    <li>Immunosupresja</li>\n                    <li>Nowotwór skóry w obszarze zabiegowym</li>\n                </ul>\n                \n                <h3>Przeciwwskazania względne (wymagana szczególna ostrożność)</h3>\n                <ul>\n                    <li>Cukrzyca</li>\n                    <li>Choroby autoimmunologiczne</li>\n                    <li>Przyjmowanie leków rozrzedzających krew (np. acenokumarol, warfaryna, NOAC, kwas acetylosalicylowy)</li>\n                    <li>Trądzik różowaty lub bardzo wrażliwa skóra</li>\n                    <li>Niedawna ekspozycja na słońce lub opalanie</li>\n                    <li>Stosowanie retinolu/kwasów w ciągu ostatnich 7 dni</li>\n                </ul>\n                \n                <h3>Ważne zalecenia: co wolno, a czego nie</h3>\n                \n                <h4>Przed zabiegiem (1–2 tygodnie):</h4>\n                <ul>\n                    <li>Nie stosować produktów z retinolem ani kwasami</li>\n                    <li>Unikać słońca i solarium</li>\n                    <li>Nie depilować obszaru zabiegowego</li>\n                    <li>Przy skłonności do opryszczki: profilaktyczne leczenie</li>\n                    <li>Pić dużo płynów i zdrowo się odżywiać</li>\n                </ul>\n                \n                <h4>Po zabiegu (1–2 tygodnie):</h4>\n                <ul>\n                    <li>24–48 godzin: bez makijażu na obszarze zabiegowym</li>\n                    <li>48 godzin: bez sauny, sportu i intensywnego pocenia się</li>\n                    <li>1 tydzień: bez produktów z retinolem i kwasami</li>\n                    <li>2 tygodnie: konsekwentna ochrona przeciwsłoneczna (filtr SPF 50+)</li>\n                    <li>Stosować delikatne kosmetyki bez substancji zapachowych</li>\n                    <li>Nie drapać ani nie pocierać skóry</li>\n                    <li>Pić dużo wody</li>\n                </ul>\n                \n                <h3>Efekty i oczekiwania</h3>\n                <p>Efekty microneedlingu pojawiają się stopniowo:</p>\n                <ul>\n                    <li><strong>Od razu:</strong> Delikatny blask dzięki lepszemu ukrwieniu</li>\n                    <li><strong>1–2 tygodnie:</strong> Pierwsza poprawa struktury skóry</li>\n                    <li><strong>4–6 tygodni:</strong> Wyraźne tworzenie nowego kolagenu</li>\n                    <li><strong>3–6 miesięcy:</strong> Pełny efekt po serii zabiegów</li>\n                </ul>\n                \n                <p>Realistyczne oczekiwania:</p>\n                <ul>\n                    <li>Poprawa struktury skóry o 30–70%</li>\n                    <li>Redukcja blizn o 25–50%</li>\n                    <li>Zmniejszone pory</li>\n                    <li>Większa elastyczność skóry</li>\n                    <li>Bardziej wyrównany koloryt skóry</li>\n                </ul>\n                \n                <h3>Koszty i plan zabiegów</h3>\n                <p>Koszty zależą od obszaru zabiegowego i liczby sesji. Dla optymalnych efektów zalecamy:</p>\n                <ul>\n                    <li>3–6 zabiegów w odstępach 4–6 tygodni</li>\n                    <li>Zabiegi podtrzymujące co 6–12 miesięcy</li>\n                    <li>Indywidualne dostosowanie w zależności od reakcji skóry</li>\n                </ul>\n                \n                <h3>Alternatywne metody</h3>\n                <ul>\n                    <li>Peelingi chemiczne</li>\n                    <li>Laserowe odnawianie skóry</li>\n                    <li>Zabiegi radiofrekwencji</li>\n                    <li>IPL (intensywne światło pulsacyjne)</li>\n                    <li>Zabiegi iniekcyjne (wypełniacze, toksyna botulinowa)</li>\n                    <li>Zabiegi chirurgiczne</li>\n                    <li>Rezygnacja z zabiegu</li>\n                </ul>\n                \n                <p><strong>Kontakt w nagłych przypadkach:</strong> W razie poważnych skutków ubocznych lub powikłań prosimy o natychmiastowy kontakt z salonem lub z najbliższym szpitalnym oddziałem ratunkowym (SOR); w sytuacji zagrożenia życia należy dzwonić pod numer alarmowy 112.</p>\n                "
+      },
+      {
+        "id": "p5",
+        "title": "Szczegółowa zgoda na zabieg",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f23",
+            "type": "checkbox",
+            "label": "Informacja i zrozumienie",
+            "required": true,
+            "options": [
+              "Potwierdzam, że w całości zapoznałam/zapoznałem się ze szczegółową informacją o microneedlingu i ją rozumiem.",
+              "Czas na zapoznanie się z dokumentem informacyjnym był wystarczający.",
+              "Na wszystkie moje pytania otrzymałam/otrzymałem wyczerpujące odpowiedzi.",
+              "Rozumiem, na czym polega działanie microneedlingu.",
+              "Rozumiem, że dla optymalnych efektów konieczna jest seria zabiegów."
+            ]
+          },
+          {
+            "id": "f24",
+            "type": "checkbox",
+            "label": "Ryzyko i skutki uboczne",
+            "required": true,
+            "options": [
+              "Zostałam/zostałem poinformowana/poinformowany o wszystkich możliwych ryzykach i skutkach ubocznych.",
+              "Rozumiem, że powikłania mogą wystąpić nawet przy prawidłowo wykonanym zabiegu.",
+              "Rozumiem, że zaczerwienienie i obrzęk są normalną reakcją.",
+              "Akceptuję ryzyko zakażeń wynikających z niewłaściwej pielęgnacji po zabiegu.",
+              "Rozumiem, że możliwe są zmiany pigmentacji."
+            ]
+          },
+          {
+            "id": "f25",
+            "type": "checkbox",
+            "label": "Informacje zdrowotne",
+            "required": true,
+            "options": [
+              "Potwierdzam, że wszystkie podane przeze mnie informacje o stanie zdrowia są prawdziwe i kompletne.",
+              "Nie występuje u mnie żadne z wymienionych przeciwwskazań.",
+              "Niezwłocznie zgłoszę wszelkie zmiany w stanie zdrowia.",
+              "Podałam/podałem wszystkie obecnie przyjmowane leki i stosowane kosmetyki."
+            ]
+          },
+          {
+            "id": "f26",
+            "type": "checkbox",
+            "label": "Zalecenia przed zabiegiem i po zabiegu",
+            "required": true,
+            "options": [
+              "Zobowiązuję się przestrzegać zaleceń przed zabiegiem.",
+              "Będę starannie przestrzegać zaleceń pielęgnacyjnych po zabiegu.",
+              "Rozumiem, jak ważna jest ochrona przeciwsłoneczna po zabiegu.",
+              "W razie jakichkolwiek problemów niezwłocznie skontaktuję się z salonem."
+            ]
+          },
+          {
+            "id": "f27",
+            "type": "checkbox",
+            "label": "Oczekiwania i efekty",
+            "required": true,
+            "options": [
+              "Mam realistyczne oczekiwania co do efektów zabiegu.",
+              "Mam świadomość, że efekt może być różny u różnych osób.",
+              "Rozumiem, że nie można zagwarantować określonego efektu.",
+              "Akceptuję, że konieczna jest seria zabiegów.",
+              "Rozumiem, że efekty pojawiają się stopniowo."
+            ]
+          },
+          {
+            "id": "f28",
+            "type": "checkbox",
+            "label": "Dokumentacja i ochrona danych (RODO)",
+            "required": true,
+            "options": [
+              "Wyrażam zgodę na wykonanie zdjęć w celach dokumentacyjnych.",
+              "Rozumiem, że zdjęcia te będą traktowane jako poufne.",
+              "Wyrażam zgodę na przechowywanie moich danych zgodnie z RODO."
+            ]
+          },
+          {
+            "id": "f29",
+            "type": "textarea",
+            "label": "Dodatkowe pytania lub uwagi",
+            "required": false,
+            "placeholder": "Czy ma Pani / Pan jakieś pytania lub chciałaby Pani / chciałby Pan coś szczególnie zaznaczyć?"
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Podpis klientki/klienta",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Podpis klientki/klienta",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "title": "Potwierdzenie i kolejne kroki",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Dziękujemy za szczegółowe informacje!</h2>\n                \n                <p>Podane dane oraz zgoda na zabieg microneedlingu zostały w całości zapisane i będą traktowane jako poufne.</p>\n                \n                <h3>Ważne informacje przed wizytą:</h3>\n                \n                <h4>Tydzień przed zabiegiem:</h4>\n                <ul>\n                    <li>Nie stosować produktów z retinolem ani kwasami</li>\n                    <li>Unikać słońca i solarium</li>\n                    <li>Nie depilować obszaru zabiegowego</li>\n                    <li>Przy skłonności do opryszczki: omówić z lekarzem prowadzącym profilaktyczne leczenie</li>\n                </ul>\n                \n                <h4>W dniu zabiegu:</h4>\n                <ul>\n                    <li>Przyjść bez makijażu na obszarze zabiegowym</li>\n                    <li>Założyć wygodne ubranie</li>\n                    <li>Zarezerwować wystarczająco dużo czasu (ok. 60–90 minut)</li>\n                    <li>W razie złego samopoczucia lub problemów skórnych przełożyć wizytę</li>\n                </ul>\n                \n                <h4>Po zabiegu:</h4>\n                <ul>\n                    <li>Bez makijażu przez 24–48 godzin</li>\n                    <li>Bez sauny i intensywnego wysiłku przez 48 godzin</li>\n                    <li>Bez produktów z retinolem i kwasami przez 1 tydzień</li>\n                    <li>Konsekwentna ochrona przeciwsłoneczna (filtr SPF 50+) przez 2 tygodnie</li>\n                    <li>Stosować delikatne kosmetyki bez substancji zapachowych</li>\n                </ul>\n                \n                <h3>Plan zabiegów:</h3>\n                <p>Dla optymalnych efektów zalecamy 3–6 zabiegów w odstępach 4–6 tygodni. Termin kolejnej wizyty zaplanujemy po pierwszym zabiegu, w zależności od reakcji skóry.</p>\n                \n                <h3>Kontakt w nagłych przypadkach:</h3>\n                <p>W razie poważnych skutków ubocznych lub powikłań prosimy o natychmiastowy kontakt z salonem lub z najbliższym szpitalnym oddziałem ratunkowym (SOR); w sytuacji zagrożenia życia należy dzwonić pod numer alarmowy 112.</p>\n                \n                <p><strong>Cieszymy się na profesjonalny i bezpieczny zabieg!</strong></p>\n                "
+      }
+    ],
+    "tags": [
+      "Microneedling",
+      "Anti-aging",
+      "Terapia blizn",
+      "Wygląd skóry",
+      "Kolagen",
+      "CIT"
+    ]
+  },
+  {
+    "id": "permanent-makeup-1",
+    "name": "Makijaż permanentny – wywiad kosmetyczny i zgoda na zabieg",
+    "description": "Formularz do makijażu permanentnego / microbladingu z wywiadem zdrowotnym i dokumentacją zgody na zabieg.",
+    "category": "Uroda",
+    "difficulty": "mittel",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Obszary zabiegowe i preferencje",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Które obszary mają zostać objęte zabiegiem?",
+            "required": true,
+            "options": [
+              "Brwi",
+              "Kreska górna",
+              "Kreska dolna",
+              "Kontur ust",
+              "Pełne cieniowanie ust",
+              "Pieprzyk",
+              "Rekonstrukcja brodawki sutkowej",
+              "Kamuflaż blizn"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Czy wykonywano już u Pani / Pana makijaż permanentny?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "textarea",
+            "label": "Jeśli tak, kiedy i gdzie?",
+            "required": false,
+            "placeholder": "Prosimy podać, kiedy i gdzie wykonano wcześniejsze zabiegi"
+          },
+          {
+            "id": "f4",
+            "type": "textarea",
+            "label": "Jakiego efektu Pani / Pan oczekuje?",
+            "required": true,
+            "placeholder": "Opis oczekiwań i pomysłów"
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Wywiad zdrowotny",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Czy jest Pani obecnie w ciąży lub karmi piersią?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "checkbox",
+            "label": "Czy choruje Pani / Pan na którąś z poniższych chorób?",
+            "required": true,
+            "options": [
+              "Cukrzyca",
+              "Choroby serca",
+              "Zaburzenia krzepnięcia krwi",
+              "Choroby autoimmunologiczne",
+              "Choroby skóry",
+              "Choroby zakaźne (HIV, WZW)",
+              "Padaczka",
+              "Żadne z powyższych"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Czy przyjmuje Pani / Pan leki rozrzedzające krew (np. acenokumarol, warfaryna, NOAC, kwas acetylosalicylowy)?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Czy w obszarze zabiegowym pojawia się opryszczka?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Czy ma Pani / Pan alergię na którąś z poniższych substancji?",
+            "required": true,
+            "options": [
+              "Środki znieczulające miejscowo",
+              "Lateks",
+              "Nikiel lub inne metale",
+              "Pigmenty barwiące",
+              "Żadne z powyższych"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "textarea",
+            "label": "Inne istotne choroby lub alergie",
+            "required": false,
+            "placeholder": "Prosimy podać inne istotne choroby lub alergie"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Informacja o zabiegu makijażu permanentnego",
+        "type": "document",
+        "fields": [],
+        "content": "\n                <h2>Informacja o zabiegu makijażu permanentnego</h2>\n                \n                <p>Szanowna Klientko, Szanowny Kliencie,</p>\n                \n                <p>Zdecydowała się Pani / zdecydował się Pan na zabieg makijażu permanentnego. Niniejszy dokument opisuje przebieg zabiegu, możliwe ryzyko i pielęgnację po zabiegu.</p>\n                \n                <h3>Metoda zabiegu</h3>\n                <p>W makijażu permanentnym specjalne pigmenty, dopuszczone do stosowania u ludzi, wprowadza się cienkimi igłami do górnych warstw skóry (naskórek/skóra właściwa). W zależności od takich czynników jak typ skóry, styl życia i ekspozycja na słońce efekt utrzymuje się zwykle 1–5 lat. Dla najlepszego efektu zazwyczaj potrzebna jest korekta po 4–6 tygodniach.</p>\n                \n                <h3>Przebieg zabiegu</h3>\n                <p>Zabieg obejmuje następujące etapy:</p>\n                <ol>\n                    <li>Konsultacja i dobór koloru</li>\n                    <li>Wstępny rysunek wybranego kształtu</li>\n                    <li>Miejscowe znieczulenie obszaru zabiegowego (opcjonalnie)</li>\n                    <li>Wprowadzenie pigmentów</li>\n                    <li>Pielęgnacja końcowa i zalecenia pozabiegowe</li>\n                </ol>\n                \n                <h3>Możliwe skutki uboczne i ryzyko</h3>\n                <ul>\n                    <li><strong>Normalne reakcje:</strong> Zaczerwienienie, lekki obrzęk, łagodne pieczenie i uczucie ściągnięcia przez 1–2 dni.</li>\n                    <li><strong>Rzadkie skutki uboczne:</strong> Silny obrzęk, zakażenia, reakcje alergiczne na pigmenty lub środki znieczulające, przejściowe pęcherze.</li>\n                    <li><strong>Ryzyko długoterminowe:</strong> Zmiany koloru, nierównomierne blaknięcie, asymetria, powstanie blizn.</li>\n                </ul>\n                \n                <h3>Pielęgnacja po zabiegu</h3>\n                <p>Prawidłowa pielęgnacja jest kluczowa dla najlepszego efektu:</p>\n                <ul>\n                    <li>Przez 7–10 dni chronić obszar zabiegowy przed słońcem, solarium, sauną i wodą chlorowaną</li>\n                    <li>Unikać dotykania obszaru i nie drapać go, nawet jeśli swędzi</li>\n                    <li>Przez co najmniej 2 tygodnie nie stosować peelingów, kwasów AHA (owocowych) ani produktów z retinolem</li>\n                    <li>Po zabiegu kreski używać zalotki dopiero po całkowitym wygojeniu</li>\n                    <li>Przyjść na zalecaną korektę po 4–6 tygodniach</li>\n                </ul>\n                \n                <h3>Ważne informacje</h3>\n                <ul>\n                    <li>Ostateczny efekt jest widoczny dopiero po wygojeniu i ewentualnej korekcie</li>\n                    <li>Bezpośrednio po zabiegu kolor wygląda na znacznie intensywniejszy i ciemniejszy</li>\n                    <li>Nie można zagwarantować dokładnego rozwoju koloru ani jego trwałości</li>\n                    <li>W przypadku niezadowolenia z efektu może być potrzebna korekta</li>\n                </ul>\n                "
+      },
+      {
+        "id": "p4",
+        "title": "Zgoda na zabieg",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Potwierdzam, że zapoznałam/zapoznałem się z informacją o zabiegu makijażu permanentnego i ją rozumiem.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Zostałam/zostałem poinformowana/poinformowany o możliwych ryzykach i skutkach ubocznych.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Miałam/miałem wystarczająco dużo okazji, aby zadać pytania.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Rozumiem, że dla optymalnego efektu może być konieczny zabieg uzupełniający (korekta).",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Wyrażam zgodę na wykonanie zdjęć obszaru zabiegowego w celach dokumentacyjnych.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Podpis klientki/klienta",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Podpis klientki/klienta",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Potwierdzenie",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Dziękujemy za podane informacje!</h2>\n                \n                <p>Podane dane oraz zgoda na zabieg makijażu permanentnego zostały zapisane.</p>\n                \n                <h3>Przed wizytą prosimy pamiętać:</h3>\n                <ul>\n                    <li>Przyjść bez makijażu na obszarze zabiegowym</li>\n                    <li>Na 48 godzin przed zabiegiem nie przyjmować leków rozrzedzających krew (wyłącznie po konsultacji z lekarzem prowadzącym)</li>\n                    <li>W dniu zabiegu unikać alkoholu i napojów z kofeiną</li>\n                    <li>W miarę możliwości zabrać własne kosmetyki do makijażu, aby omówić oczekiwany efekt</li>\n                </ul>\n                \n                <p>Do zobaczenia!</p>\n                "
+      }
+    ],
+    "tags": [
+      "Makijaż permanentny",
+      "PMU",
+      "Microblading",
+      "Brwi",
+      "Kreska",
+      "Usta"
+    ]
+  },
+  {
+    "id": "facial-treatment-1",
+    "name": "Zabieg na twarz – wywiad kosmetyczny",
+    "description": "Ogólny wywiad kosmetyczny przed zabiegiem na twarz z analizą typu skóry i preferencjami zabiegowymi.",
+    "category": "Zabiegi na twarz",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Skóra i nawyki pielęgnacyjne",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "radio",
+            "label": "Jak określiłaby Pani / określiłby Pan swój typ cery?",
+            "required": true,
+            "options": [
+              "Normalna",
+              "Sucha",
+              "Tłusta",
+              "Mieszana",
+              "Wrażliwa",
+              "Nie wiem"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "checkbox",
+            "label": "Jakie ma Pani / Pan problemy skórne?",
+            "required": true,
+            "options": [
+              "Trądzik/niedoskonałości",
+              "Zaczerwienienia/cera naczynkowa",
+              "Przebarwienia",
+              "Drobne linie/zmarszczki",
+              "Rozszerzone pory",
+              "Suchość/łuszczenie",
+              "Szara, matowa cera",
+              "Brak szczególnych problemów"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "textarea",
+            "label": "Prosimy opisać codzienną pielęgnację skóry",
+            "required": true,
+            "placeholder": "Preparat myjący, tonik, serum, krem nawilżający, krem z filtrem SPF itp."
+          },
+          {
+            "id": "f4",
+            "type": "checkbox",
+            "label": "Jakie produkty stosuje Pani / Pan regularnie?",
+            "required": false,
+            "options": [
+              "Retinol/witamina A",
+              "Kwasy AHA/BHA",
+              "Witamina C",
+              "Kwas hialuronowy",
+              "Niacynamid",
+              "Peelingi enzymatyczne/złuszczające",
+              "Olejki do twarzy",
+              "Maseczki"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Historia zabiegów i preferencje",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Czy korzystała Pani / korzystał Pan już z profesjonalnego zabiegu na twarz?",
+            "required": true,
+            "options": [
+              "Tak, regularnie",
+              "Tak, sporadycznie",
+              "Tak, ale rzadko",
+              "Nie, nigdy"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "date",
+            "label": "Kiedy odbył się ostatni profesjonalny zabieg na twarz?",
+            "required": false
+          },
+          {
+            "id": "f7",
+            "type": "textarea",
+            "label": "Jaki to był zabieg i jakie są wrażenia po nim?",
+            "required": false,
+            "placeholder": "np. klasyczny zabieg na twarz, mikrodermabrazja, peeling chemiczny..."
+          },
+          {
+            "id": "f8",
+            "type": "checkbox",
+            "label": "Które z poniższych zabiegów Panią / Pana interesują?",
+            "required": true,
+            "options": [
+              "Oczyszczanie głębokie/manualne",
+              "Zabieg anti-aging",
+              "Zabieg nawilżający",
+              "Zabieg łagodzący dla skóry wrażliwej",
+              "Zabieg na trądzik/niedoskonałości",
+              "Zabieg rozjaśniający przebarwienia",
+              "Drenaż limfatyczny/masaż"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "radio",
+            "label": "Jak wrażliwa jest Pani / Pana skóra na zabiegi?",
+            "required": true,
+            "options": [
+              "Bardzo wrażliwa",
+              "Lekko wrażliwa",
+              "Normalna",
+              "Odporna/niewrażliwa",
+              "Nie wiem"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Pytania dotyczące zdrowia",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f10",
+            "type": "checkbox",
+            "label": "Czy występuje u Pani / Pana któryś z poniższych problemów skórnych?",
+            "required": true,
+            "options": [
+              "Atopowe zapalenie skóry/egzema",
+              "Łuszczyca",
+              "Trądzik różowaty",
+              "Skłonność do opryszczki",
+              "Choroby grzybicze",
+              "Brak rozpoznanych chorób skóry"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "radio",
+            "label": "Czy stosuje Pani / Pan preparaty do skóry na receptę?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "textarea",
+            "label": "Jeśli tak, jakie?",
+            "required": false,
+            "placeholder": "np. tretynoina, kwas azelainowy, antybiotyki..."
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Czy ma Pani / Pan alergie lub nietolerancje na określone składniki?",
+            "required": true,
+            "options": [
+              "Substancje zapachowe",
+              "Konserwanty",
+              "Olejki eteryczne",
+              "Orzechy/oleje z orzechów",
+              "Inne",
+              "Brak znanych"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "textarea",
+            "label": "Jeśli zaznaczono „Inne”, prosimy o doprecyzowanie:",
+            "required": false,
+            "placeholder": "Prosimy podać alergie/nietolerancje"
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Cele zabiegu",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f15",
+            "type": "textarea",
+            "label": "Na czym najbardziej zależy Pani / Panu w pielęgnacji skóry?",
+            "required": true,
+            "placeholder": "Opis efektu, jaki ma przynieść zabieg"
+          },
+          {
+            "id": "f16",
+            "type": "radio",
+            "label": "Jak ważna jest dla Pani / Pana natychmiast widoczna poprawa po zabiegu?",
+            "required": true,
+            "options": [
+              "Bardzo ważna",
+              "Ważna",
+              "Mniej ważna, zależy mi na długotrwałych efektach"
+            ]
+          },
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Wyrażam zgodę na:",
+            "required": true,
+            "options": [
+              "Oczyszczanie manualne/usuwanie zaskórników (może powodować krótkotrwałe zaczerwienienie)",
+              "Delikatne peelingi (mogą powodować lekkie mrowienie)",
+              "Masaż twarzy",
+              "Maseczki",
+              "Henna brwi i rzęs"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Podpis klientki/klienta",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Podpis klientki/klienta",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Potwierdzenie",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Dziękujemy za podane informacje!</h2>\n                \n                <p>Na podstawie podanych informacji dopasujemy zabieg na twarz do indywidualnych potrzeb.</p>\n                \n                <h3>Informacje przed wizytą:</h3>\n                <ul>\n                    <li>Prosimy przyjść bez makijażu</li>\n                    <li>Na 24 godziny przed zabiegiem unikać peelingów i silnie działających kosmetyków</li>\n                    <li>Prosimy poinformować nas o wszelkich zmianach na skórze</li>\n                    <li>Można zabrać obecnie stosowane kosmetyki – uwzględnimy je podczas konsultacji</li>\n                </ul>\n                \n                <p>Cieszymy się na wizytę i relaksujący, skuteczny zabieg!</p>\n                "
+      }
+    ],
+    "tags": [
+      "Zabieg na twarz",
+      "Pielęgnacja skóry",
+      "Kosmetyka",
+      "Analiza skóry",
+      "Oczyszczanie"
+    ]
+  },
+  {
+    "id": "lash-extension-1",
+    "name": "Przedłużanie rzęs – wywiad kosmetyczny i zgoda na zabieg",
+    "description": "Wywiad kosmetyczny i zgoda na zabieg przedłużania rzęs.",
+    "category": "Uroda",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Oczekiwania i wcześniejsze doświadczenia",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "radio",
+            "label": "Czy ma Pani / Pan już doświadczenie z przedłużaniem rzęs?",
+            "required": true,
+            "options": [
+              "Tak, regularnie",
+              "Tak, sporadycznie",
+              "Nie, to będzie pierwszy raz"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Jaki efekt Panią / Pana interesuje?",
+            "required": true,
+            "options": [
+              "Naturalny",
+              "Subtelny",
+              "Wyrazisty/objętościowy",
+              "Efekt kociego oka",
+              "Efekt oczu lalki",
+              "Nie wiem, proszę o doradztwo"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "checkbox",
+            "label": "Specjalne życzenia",
+            "required": false,
+            "options": [
+              "Wyjątkowo lekkie",
+              "Wodoodporne",
+              "Kolorowe rzęsy",
+              "Cyrkonie/kryształki"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Preferowana grubość rzęs",
+            "required": true,
+            "options": [
+              "Cienkie (0,05–0,07 mm)",
+              "Średnie (0,10–0,12 mm)",
+              "Grube (0,15–0,20 mm)",
+              "Nie wiem, proszę o doradztwo"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Preferowana metoda przedłużania",
+            "required": true,
+            "options": [
+              "Klasyczna (1:1)",
+              "Objętościowa (2D–4D)",
+              "Mega Volume (5D+)",
+              "Hybrydowa (mix)",
+              "Nie wiem, proszę o doradztwo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Informacje zdrowotne",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Czy nosi Pani / Pan soczewki kontaktowe?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "checkbox",
+            "label": "Czy występuje u Pani / Pana któraś z poniższych dolegliwości oczu?",
+            "required": true,
+            "options": [
+              "Zapalenie spojówek",
+              "Zapalenie brzegów powiek",
+              "Suche oczy",
+              "Jęczmień",
+              "Jaskra",
+              "Inne dolegliwości oczu",
+              "Brak dolegliwości oczu"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "textarea",
+            "label": "Jeśli zaznaczono „Inne dolegliwości oczu”, prosimy o doprecyzowanie:",
+            "required": false,
+            "placeholder": "Prosimy opisać dolegliwość(-ci) oczu"
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Czy ma Pani / Pan alergię na poniższe materiały?",
+            "required": true,
+            "options": [
+              "Klej/cyjanoakrylan",
+              "Lateks",
+              "Taśma/plaster",
+              "Akryl",
+              "Inne",
+              "Brak znanych alergii"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "textarea",
+            "label": "Jeśli zaznaczono „Inne”, prosimy o doprecyzowanie:",
+            "required": false,
+            "placeholder": "Prosimy podać alergie"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Informacja o zabiegu przedłużania rzęs",
+        "type": "document",
+        "fields": [],
+        "content": "\n                <h2>Informacja o zabiegu przedłużania rzęs</h2>\n                \n                <p>Szanowna Klientko, Szanowny Kliencie,</p>\n                \n                <p>Zdecydowała się Pani / zdecydował się Pan na przedłużanie rzęs. Niniejszy dokument opisuje przebieg zabiegu, możliwe ryzyko i niezbędną pielęgnację.</p>\n                \n                <h3>Przebieg zabiegu</h3>\n                <p>Podczas zabiegu syntetyczne rzęsy przykleja się pojedynczo do naturalnych rzęs specjalnym klejem. W zależności od wybranego efektu zabieg trwa ok. 1,5–2,5 godziny. Dla optymalnej przyczepności prosimy przyjść z czystymi rzęsami, bez makijażu i tłustych kosmetyków.</p>\n                \n                <h3>Możliwe ryzyko i skutki uboczne</h3>\n                <ul>\n                    <li><strong>Reakcje alergiczne:</strong> W rzadkich przypadkach użyty klej może wywołać reakcję alergiczną. Przy pierwszych oznakach alergii (silne zaczerwienienie, obrzęk, swędzenie) prosimy o natychmiastowy kontakt.</li>\n                    <li><strong>Podrażnienie oczu:</strong> W trakcie zabiegu oczy mogą zostać lekko podrażnione. Podrażnienie powinno szybko ustąpić.</li>\n                    <li><strong>Uszkodzenie naturalnych rzęs:</strong> Nieprawidłowa aplikacja lub niewłaściwa pielęgnacja mogą uszkodzić naturalne rzęsy.</li>\n                </ul>\n                \n                <h3>Pielęgnacja i zalecenia po zabiegu</h3>\n                <ul>\n                    <li>Przez 24–48 godzin po zabiegu unikać kontaktu z wodą, parą i substancjami tłustymi.</li>\n                    <li>Nie stosować w okolicy oczu produktów na bazie olejów.</li>\n                    <li>Unikać pocierania oczu i częstego dotykania rzęs.</li>\n                    <li>Nie używać zalotki ani wodoodpornego tuszu do rzęs.</li>\n                    <li>Regularnie rozczesywać rzęsy czystą szczoteczką.</li>\n                    <li>W miarę możliwości spać na plecach, aby nie uciskać rzęs.</li>\n                    <li>Dla najlepszego efektu zalecamy uzupełnianie co 2–3 tygodnie.</li>\n                </ul>\n                \n                <h3>Trwałość</h3>\n                <p>Trwałość przedłużanych rzęs jest różna u różnych osób i zależy od naturalnego cyklu wzrostu rzęs, typu skóry i pielęgnacji. Średnio utrzymują się 4–6 tygodni. Regularne uzupełnianie (co 2–3 tygodnie) pozwala dłużej zachować efekt.</p>\n                "
+      },
+      {
+        "id": "p4",
+        "title": "Zgoda na zabieg",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Potwierdzam, że zapoznałam/zapoznałem się z informacją o przedłużaniu rzęs i ją rozumiem.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Zostałam/zostałem poinformowana/poinformowany o możliwych ryzykach i skutkach ubocznych.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Potwierdzam, że nie występuje u mnie żadne z wymienionych przeciwwskazań.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Zobowiązuję się przestrzegać zaleceń pielęgnacyjnych.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Wyrażam zgodę na wykonanie zdjęć przed zabiegiem i po nim w celach dokumentacyjnych.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Podpis klientki/klienta",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Podpis klientki/klienta",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Potwierdzenie",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Dziękujemy za podane informacje!</h2>\n                \n                <p>Podane dane oraz zgoda na zabieg przedłużania rzęs zostały zapisane.</p>\n                \n                <h3>Informacje przed wizytą:</h3>\n                <ul>\n                    <li>Prosimy przyjść bez makijażu oczu</li>\n                    <li>Przed zabiegiem zdjąć soczewki kontaktowe</li>\n                    <li>Na 24 godziny przed zabiegiem unikać napojów z dużą ilością kofeiny (zmniejsza to drganie powiek)</li>\n                    <li>Zarezerwować po zabiegu wystarczająco dużo czasu, aby klej całkowicie wysechł</li>\n                </ul>\n                \n                <p>Do zobaczenia!</p>\n                "
+      }
+    ],
+    "tags": [
+      "Przedłużanie rzęs",
+      "Rzęsy",
+      "Uroda",
+      "Stylizacja rzęs",
+      "Stylizacja"
+    ]
+  },
+  {
+    "id": "nail-design-1",
+    "name": "Stylizacja paznokci – wywiad kosmetyczny",
+    "description": "Wywiad kosmetyczny przed zabiegami na paznokcie i stylizacją paznokci.",
+    "category": "Paznokcie",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Oczekiwania i historia zabiegów",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Wybrany zabieg",
+            "required": true,
+            "options": [
+              "Paznokcie żelowe",
+              "Paznokcie akrylowe",
+              "Shellac/manicure hybrydowy",
+              "Wzmocnienie naturalnej płytki",
+              "Przedłużanie na tipsach",
+              "Naprawa paznokci",
+              "Zdobienia/nail art",
+              "Francuski manicure"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Czy ma Pani / Pan już doświadczenie ze sztucznymi paznokciami?",
+            "required": true,
+            "options": [
+              "Tak, regularnie",
+              "Tak, sporadycznie",
+              "Raz, w przeszłości",
+              "Nie, to będzie pierwszy raz"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "Kiedy ostatnio nosiła Pani / nosił Pan sztuczne paznokcie?",
+            "required": false,
+            "options": [
+              "Noszę je obecnie",
+              "W ciągu ostatnich 4 tygodni",
+              "W ciągu ostatnich 3 miesięcy",
+              "Ponad 3 miesiące temu",
+              "Nigdy"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Preferowana długość paznokci",
+            "required": true,
+            "options": [
+              "Krótkie (naturalne)",
+              "Średnie",
+              "Długie",
+              "Bardzo długie"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Preferowany kształt paznokci",
+            "required": true,
+            "options": [
+              "Kwadratowe",
+              "Owalne",
+              "Okrągłe",
+              "Migdałowe",
+              "Stiletto",
+              "Ballerina/Coffin",
+              "Nie wiem, proszę o doradztwo"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Wywiad zdrowotny",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f6",
+            "type": "checkbox",
+            "label": "Czy obecnie lub w ciągu ostatnich 6 miesięcy występował któryś z poniższych problemów z paznokciami?",
+            "required": true,
+            "options": [
+              "Grzybica paznokci",
+              "Łuszczyca paznokci",
+              "Łamliwe paznokcie",
+              "Rozdwajające się paznokcie",
+              "Oddzielanie się płytki paznokcia",
+              "Zanokcica/zapalenie wału paznokciowego",
+              "Przebarwione paznokcie",
+              "Brak problemów z paznokciami"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Czy choruje Pani / Pan na cukrzycę?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "checkbox",
+            "label": "Czy ma Pani / Pan alergię na poniższe materiały?",
+            "required": true,
+            "options": [
+              "Akryl",
+              "Żel UV",
+              "Lakier do paznokci/lakier hybrydowy",
+              "Zmywacz do paznokci/aceton",
+              "Lateks",
+              "Środki dezynfekujące",
+              "Inne",
+              "Brak znanych alergii"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "textarea",
+            "label": "Jeśli zaznaczono „Inne”, prosimy o doprecyzowanie:",
+            "required": false,
+            "placeholder": "Prosimy podać alergie"
+          },
+          {
+            "id": "f10",
+            "type": "radio",
+            "label": "Czy jest Pani obecnie w ciąży?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie",
+              "Wolę nie odpowiadać"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Informacja o stylizacji paznokci",
+        "type": "document",
+        "fields": [],
+        "content": "\n                <h2>Informacja o stylizacji paznokci</h2>\n                \n                <p>Szanowna Klientko, Szanowny Kliencie,</p>\n                \n                <p>Zdecydowała się Pani / zdecydował się Pan na stylizację paznokci. Niniejszy dokument opisuje przebieg zabiegu, możliwe ryzyko i pielęgnację.</p>\n                \n                <h3>Przebieg zabiegu</h3>\n                <p>Stylizacja paznokci obejmuje następujące etapy:</p>\n                <ol>\n                    <li>Przygotowanie naturalnej płytki (skrócenie, opiłowanie, usunięcie skórek)</li>\n                    <li>Zmatowienie powierzchni paznokcia</li>\n                    <li>Nałożenie tipsów (przy przedłużaniu) lub szablonów</li>\n                    <li>Nałożenie materiału (żel, akryl itp.)</li>\n                    <li>Utwardzanie w lampie UV lub LED (przy żelu)</li>\n                    <li>Nadanie kształtu i opiłowanie paznokci</li>\n                    <li>Nałożenie warstwy nabłyszczającej oraz koloru/zdobień</li>\n                </ol>\n                \n                <h3>Możliwe ryzyko i skutki uboczne</h3>\n                <ul>\n                    <li><strong>Reakcje alergiczne:</strong> W rzadkich przypadkach użyte materiały mogą wywołać alergię.</li>\n                    <li><strong>Podrażnienie łożyska paznokcia:</strong> Podrażnienie może wystąpić przy nieprawidłowym nakładaniu lub usuwaniu produktów.</li>\n                    <li><strong>Osłabienie naturalnej płytki:</strong> Naturalne paznokcie mogą stać się cieńsze i bardziej wrażliwe, zwłaszcza po nieprawidłowym usuwaniu lub częstych zmianach.</li>\n                    <li><strong>Infekcje paznokci:</strong> Niewystarczająca higiena lub uszkodzenia paznokci mogą prowadzić do infekcji.</li>\n                </ul>\n                \n                <h3>Pielęgnacja i zalecenia po zabiegu</h3>\n                <ul>\n                    <li>Przy pracach domowych z wodą lub chemikaliami nosić rękawiczki.</li>\n                    <li>Regularnie stosować oliwkę do skórek, aby pielęgnować naturalne paznokcie i skórki.</li>\n                    <li>Nie używać paznokci jako narzędzi i nie narażać ich na nadmierny nacisk.</li>\n                    <li>W razie uszkodzenia paznokcia prosimy niezwłocznie przyjść do salonu na naprawę.</li>\n                    <li>Aby paznokcie zawsze wyglądały jak najlepiej, zalecamy uzupełnianie co 3–4 tygodnie.</li>\n                    <li>W razie oznak infekcji lub reakcji alergicznej prosimy niezwłocznie zgłosić się do lekarza.</li>\n                </ul>\n                \n                <h3>Usuwanie</h3>\n                <p>Sztuczne paznokcie należy zawsze usuwać profesjonalnie. Odrywanie lub zdzieranie ich może uszkodzić naturalną płytkę. Najlepiej usunąć je u nas w salonie.</p>\n                "
+      },
+      {
+        "id": "p4",
+        "title": "Zgoda na zabieg",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Potwierdzam, że zapoznałam/zapoznałem się z informacją o stylizacji paznokci i ją rozumiem.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Zostałam/zostałem poinformowana/poinformowany o możliwych ryzykach i skutkach ubocznych.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Potwierdzam, że nie występuje u mnie żadne z wymienionych przeciwwskazań wykluczających zabieg.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Zobowiązuję się przestrzegać zaleceń pielęgnacyjnych.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Rozumiem, że sztuczne paznokcie należy usuwać profesjonalnie.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Podpis klientki/klienta",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Podpis klientki/klienta",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Potwierdzenie",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Dziękujemy za podane informacje!</h2>\n                \n                <p>Podane dane oraz zgoda na zabieg stylizacji paznokci zostały zapisane.</p>\n                \n                <h3>Informacje przed wizytą:</h3>\n                <ul>\n                    <li>Przed wizytą prosimy zmyć lakier z paznokci</li>\n                    <li>Przyjść z czystymi, zadbanymi paznokciami</li>\n                    <li>W przypadku konkretnego wzoru można zabrać zdjęcia lub przykłady</li>\n                    <li>Zarezerwować na zabieg ok. 1,5–2 godziny</li>\n                </ul>\n                \n                <p>Do zobaczenia!</p>\n                "
+      }
+    ],
+    "tags": [
+      "Stylizacja paznokci",
+      "Paznokcie",
+      "Przedłużanie paznokci",
+      "Manicure",
+      "Paznokcie żelowe"
+    ]
+  },
+  {
+    "id": "laser-hair-removal-1",
+    "name": "Depilacja laserowa – wywiad kosmetyczny i zgoda na zabieg",
+    "description": "Wywiad zdrowotny i zgoda na zabieg depilacji laserowej.",
+    "category": "Depilacja",
+    "difficulty": "mittel",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Obszary zabiegowe",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Które obszary mają zostać objęte zabiegiem?",
+            "required": true,
+            "options": [
+              "Wąsik",
+              "Broda",
+              "Policzki",
+              "Pachy",
+              "Ręce",
+              "Klatka piersiowa",
+              "Brzuch",
+              "Plecy",
+              "Bikini",
+              "Nogi",
+              "Inne"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "textarea",
+            "label": "Jeśli zaznaczono „Inne”, prosimy o doprecyzowanie:",
+            "required": false,
+            "placeholder": "Prosimy wskazać obszary do zabiegu"
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "Czy wykonywano już u Pani / Pana depilację laserową?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "textarea",
+            "label": "Jeśli tak, kiedy i z jakim efektem?",
+            "required": false,
+            "placeholder": "Opis dotychczasowych doświadczeń"
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Fototyp skóry i rodzaj owłosienia",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Jaki jest Pani / Pana fototyp skóry wg Fitzpatricka?",
+            "required": true,
+            "options": [
+              "Typ I: bardzo jasna, zawsze ulega oparzeniom, nigdy się nie opala",
+              "Typ II: jasna, łatwo ulega oparzeniom, opala się minimalnie",
+              "Typ III: średni odcień, czasem ulega oparzeniom, dobrze się opala",
+              "Typ IV: oliwkowa, rzadko ulega oparzeniom, opala się szybko i dobrze",
+              "Typ V: brązowa, bardzo rzadko ulega oparzeniom, opala się bardzo dobrze",
+              "Typ VI: ciemnobrązowa do czarnej, nigdy nie ulega oparzeniom"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Jaki kolor mają włosy w obszarach zabiegowych?",
+            "required": true,
+            "options": [
+              "Czarne",
+              "Ciemnobrązowe",
+              "Średniobrązowe",
+              "Jasnobrązowe",
+              "Ciemny blond",
+              "Jasny blond",
+              "Rude",
+              "Siwe/białe"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Jaka jest struktura włosów w obszarach zabiegowych?",
+            "required": true,
+            "options": [
+              "Grube/twarde",
+              "Średnie",
+              "Cienkie",
+              "Mieszane"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Wywiad zdrowotny",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Czy jest Pani w ciąży lub karmi piersią?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie",
+              "Nie wiem"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Czy choruje Pani / Pan na którąś z poniższych chorób?",
+            "required": true,
+            "options": [
+              "Cukrzyca",
+              "Choroby autoimmunologiczne",
+              "Nowotwór skóry (u siebie lub w rodzinie)",
+              "Padaczka",
+              "Opryszczka w obszarze zabiegowym",
+              "Skłonność do bliznowców/nadmiernego bliznowacenia",
+              "Bielactwo",
+              "Łuszczyca",
+              "Egzema/atopowe zapalenie skóry",
+              "Żadne z powyższych"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "checkbox",
+            "label": "Czy przyjmuje Pani / Pan któryś z poniższych leków?",
+            "required": true,
+            "options": [
+              "Antybiotyki",
+              "Izotretynoina/leki na trądzik (obecnie lub w ciągu ostatnich 6 miesięcy)",
+              "Kortykosteroidy",
+              "Leki rozrzedzające krew (np. acenokumarol, warfaryna, NOAC, kwas acetylosalicylowy)",
+              "Leki uwrażliwiające na światło",
+              "Inne",
+              "Nie przyjmuję leków"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "textarea",
+            "label": "Jeśli zaznaczono „Inne”, prosimy o doprecyzowanie:",
+            "required": false,
+            "placeholder": "Prosimy podać przyjmowane leki"
+          },
+          {
+            "id": "f12",
+            "type": "radio",
+            "label": "Czy w ciągu ostatnich 4 tygodni obszar zabiegowy był intensywnie opalany (słońce lub solarium)?",
+            "required": true,
+            "options": [
+              "Tak",
+              "Nie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Informacja o zabiegu depilacji laserowej",
+        "type": "document",
+        "fields": [],
+        "content": "\n                <h2>Informacja o zabiegu depilacji laserowej</h2>\n                \n                <p>Szanowna Klientko, Szanowny Kliencie,</p>\n                \n                <p>Zdecydowała się Pani / zdecydował się Pan na trwałą redukcję owłosienia laserem. Niniejszy dokument opisuje przebieg zabiegu, możliwe ryzyko i pielęgnację po zabiegu.</p>\n                \n                <h3>Jak działa depilacja laserowa</h3>\n                <p>Podczas depilacji laserowej na skórę kierowane są impulsy światła. Melanina (barwnik) we włosie pochłania światło, a powstające ciepło niszczy mieszki włosowe. Zabiegowi poddają się tylko włosy w fazie wzrostu, a w danym momencie jest w niej jedynie ok. 20% włosów, dlatego konieczna jest seria zabiegów w odstępach 4–8 tygodni.</p>\n                \n                <h3>Możliwe ryzyko i skutki uboczne</h3>\n                <ul>\n                    <li><strong>Częste, przejściowe reakcje:</strong> Zaczerwienienie, lekki obrzęk i uczucie ciepła podobne do oparzenia słonecznego przez 1–3 dni.</li>\n                    <li><strong>Rzadsze skutki uboczne:</strong> Pęcherze, powierzchowne oparzenia, przejściowa hiper- lub hipopigmentacja (ściemnienie lub rozjaśnienie skóry).</li>\n                    <li><strong>Rzadkie powikłania:</strong> Blizny, trwałe zmiany pigmentacji, zakażenie, nawrót opryszczki.</li>\n                </ul>\n                \n                <h3>Ważne informacje przed zabiegiem</h3>\n                <ul>\n                    <li>Przez 4 tygodnie przed zabiegiem nie opalać obszaru zabiegowego (ani na słońcu, ani w solarium).</li>\n                    <li>Włosy w obszarze zabiegowym powinny mieć 1–2 mm długości (golenie ok. 1–3 dni przed zabiegiem).</li>\n                    <li>Przez co najmniej 4 tygodnie przed zabiegiem nie stosować metod usuwających włosy z cebulką (wosk, epilator, nitkowanie).</li>\n                    <li>Nie stosować samoopalaczy ani mocno perfumowanych kosmetyków w obszarze zabiegowym.</li>\n                </ul>\n                \n                <h3>Pielęgnacja po zabiegu</h3>\n                <ul>\n                    <li>Przez 48 godzin po zabiegu: bez gorących kąpieli, sauny, intensywnego wysiłku fizycznego i basenu.</li>\n                    <li>Przez 14 dni po zabiegu: konsekwentna ochrona przeciwsłoneczna (filtr SPF 50+) na obszarze zabiegowym.</li>\n                    <li>W razie zaczerwienienia lub obrzęku chłodzić skórę i stosować łagodzące kosmetyki bez substancji zapachowych.</li>\n                    <li>Włosy poddane zabiegowi mogą wypadać 2–3 tygodnie po zabiegu – to normalne.</li>\n                </ul>\n                \n                <h3>Efekty i oczekiwania</h3>\n                <p>Efekty depilacji laserowej są różne u różnych osób i zależą m.in. od fototypu skóry, koloru włosów i gospodarki hormonalnej. Optymalne efekty wymagają zwykle 6–10 zabiegów. Realistyczna jest trwała redukcja owłosienia o 70–90%, ale nie można zagwarantować w 100% gładkiej skóry. Zmiany hormonalne mogą powodować odrastanie nowych włosów.</p>\n                "
+      },
+      {
+        "id": "p5",
+        "title": "Zgoda na zabieg",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Potwierdzam, że zapoznałam/zapoznałem się z informacją o depilacji laserowej i ją rozumiem.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Zostałam/zostałem poinformowana/poinformowany o możliwych ryzykach i skutkach ubocznych.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Potwierdzam, że nie występuje u mnie żadne z wymienionych przeciwwskazań lub że omówiłam/omówiłem je z osobą wykonującą zabieg.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f16",
+            "type": "checkbox",
+            "label": "Zobowiązuję się przestrzegać zaleceń przed zabiegiem i po zabiegu.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          },
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Rozumiem, że konieczna jest seria zabiegów i że nie można zagwarantować całkowitego usunięcia owłosienia.",
+            "required": true,
+            "options": [
+              "Tak"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Podpis klientki/klienta",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Podpis klientki/klienta",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "title": "Potwierdzenie",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Dziękujemy za podane informacje!</h2>\n                \n                <p>Podane dane oraz zgoda na zabieg depilacji laserowej zostały zapisane.</p>\n                \n                <h3>Ważne informacje przed wizytą:</h3>\n                <ul>\n                    <li>Przyjść z ogolonym obszarem zabiegowym (idealna długość włosów to 1–2 mm)</li>\n                    <li>W dniu zabiegu nie nakładać balsamów, kremów ani makijażu na obszar zabiegowy</li>\n                    <li>Założyć wygodne ubranie zapewniające łatwy dostęp do obszaru zabiegowego</li>\n                    <li>Nie planować ważnych spotkań po zabiegu na wypadek zaczerwienienia</li>\n                </ul>\n                \n                <p>Dla optymalnych efektów zalecamy przestrzeganie ustalonego planu zabiegów.</p>\n                "
+      }
+    ],
+    "tags": [
+      "Laser",
+      "Depilacja",
+      "IPL",
+      "Trwała redukcja owłosienia",
+      "Epilacja"
+    ]
+  }
+]

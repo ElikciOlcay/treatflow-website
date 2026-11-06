@@ -97,7 +97,6 @@ type PageSlugMap = Partial<Record<Market, string>>;
 /** Seiten, die es in den Bundle-Sprachen (NL/IT/PL/ES/FR) nicht gibt. */
 const NOT_IN_BUNDLE_LANGS: readonly SeoPageKey[] = [
   "news",
-  "try-forms",
   "early-access",
   "point-of-sale",
   "vouchers",

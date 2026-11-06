@@ -1,0 +1,1604 @@
+[
+  {
+    "id": "microneedling-1",
+    "name": "Microneedling: anamnesi e consenso informato",
+    "description": "Modulo completo per trattamenti di microneedling con analisi della pelle, anamnesi medica, controindicazioni e consenso informato professionale.",
+    "category": "Anti-age",
+    "difficulty": "komplex",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Desideri di trattamento e analisi della pelle",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Quali problemi della pelle vorresti trattare con il microneedling?",
+            "required": true,
+            "options": [
+              "Cicatrici da acne",
+              "Linee sottili e rughe",
+              "Pori dilatati",
+              "Tonalità della pelle non uniforme",
+              "Macchie/iperpigmentazione",
+              "Smagliature",
+              "Miglioramento generale della pelle",
+              "Cicatrici (non da acne)",
+              "Pelle spenta e stanca",
+              "Altro"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "textarea",
+            "label": "Se hai selezionato 'Altro', specifica:",
+            "required": false,
+            "placeholder": "Descrivi le tue esigenze specifiche per la pelle"
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "Quale fototipo si avvicina di più al tuo?",
+            "required": true,
+            "options": [
+              "Tipo I (molto chiaro, si scotta sempre, non si abbronza mai)",
+              "Tipo II (chiaro, si scotta facilmente, si abbronza poco)",
+              "Tipo III (intermedio, a volte si scotta, si abbronza bene)",
+              "Tipo IV (più scuro, si scotta raramente, si abbronza rapidamente)",
+              "Tipo V (scuro, si scotta molto raramente)",
+              "Tipo VI (molto scuro/nero, non si scotta mai)"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Come descriveresti lo stato attuale della tua pelle?",
+            "required": true,
+            "options": [
+              "Normale e sana",
+              "Secca e desquamata",
+              "Grassa e lucida",
+              "Pelle mista (zona T grassa, guance secche)",
+              "Sensibile e reattiva",
+              "Impura, con brufoli/punti neri",
+              "Pelle matura con rughe"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "checkbox",
+            "label": "Quali dei seguenti problemi della pelle hai attualmente?",
+            "required": true,
+            "options": [
+              "Acne attiva/brufoli",
+              "Rosacea/couperose",
+              "Eczemi/dermatite",
+              "Ferite aperte",
+              "Herpes/febbre labiale",
+              "Scottatura solare",
+              "Arrossamenti marcati",
+              "Nessuno dei precedenti"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Hai già esperienza con il microneedling?",
+            "required": true,
+            "options": [
+              "Sì, in un centro professionale",
+              "Sì, a casa",
+              "No, è la prima volta"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "textarea",
+            "label": "Se sì, descrivi la tua esperienza:",
+            "required": false,
+            "placeholder": "Quando, dove, quali risultati, effetti collaterali?"
+          },
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Quali aspettative hai dal trattamento?",
+            "required": true,
+            "options": [
+              "Netto miglioramento della texture della pelle",
+              "Miglioramento moderato in più sedute",
+              "Misura anti-age preventiva",
+              "Trattamento mirato delle cicatrici",
+              "Non lo so, vorrei un consiglio"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Anamnesi medica dettagliata",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f9",
+            "type": "radio",
+            "label": "Sei incinta o stai allattando?",
+            "required": true,
+            "options": [
+              "Sì, incinta",
+              "Sì, allatto",
+              "No",
+              "Non so/possibile gravidanza"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "radio",
+            "label": "Negli ultimi 6 mesi hai assunto isotretinoina (farmaci per l'acne come Roaccutan)?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No",
+              "Non lo so"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Assumi uno dei seguenti farmaci?",
+            "required": true,
+            "options": [
+              "Fluidificanti del sangue (warfarin/Coumadin, eparina, Cardioaspirina, ecc.)",
+              "Immunosoppressori",
+              "Cortisone (sistemico)",
+              "Antibiotici",
+              "Chemioterapia",
+              "Anticoagulanti (es. Sintrom, NAO/DOAC)",
+              "Altro",
+              "Nessun farmaco"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "textarea",
+            "label": "Se assumi altri farmaci, elenca tutti i farmaci attuali:",
+            "required": false,
+            "placeholder": "Nome del farmaco, dosaggio, motivo dell'assunzione"
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Soffri di una delle seguenti patologie?",
+            "required": true,
+            "options": [
+              "Diabete mellito",
+              "Malattie autoimmuni (lupus, artrite reumatoide, ecc.)",
+              "Disturbi della coagulazione",
+              "Malattie cardiache",
+              "Tendenza ai cheloidi/cicatrizzazione eccessiva",
+              "Disturbi della guarigione delle ferite",
+              "Tumori della pelle o lesioni precancerose",
+              "Epilessia",
+              "Malattie infettive (HIV, epatite)",
+              "Nessuno dei precedenti"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Hai impianti metallici nel viso/nella zona da trattare?",
+            "required": true,
+            "options": [
+              "Impianti dentali",
+              "Otturazioni dentali metalliche",
+              "Impianti facciali",
+              "Trucco permanente",
+              "Altri impianti metallici",
+              "Nessun impianto"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Hai allergie o intolleranze?",
+            "required": true,
+            "options": [
+              "Anestetici locali (lidocaina, ecc.)",
+              "Lattice",
+              "Disinfettanti",
+              "Acido ialuronico",
+              "Vitamina C",
+              "Retinolo/vitamina A",
+              "Altro",
+              "Nessuna allergia nota"
+            ]
+          },
+          {
+            "id": "f16",
+            "type": "textarea",
+            "label": "Se hai allergie, descrivile nel dettaglio:",
+            "required": false,
+            "placeholder": "Tipo di allergia, sintomi, gravità"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Trattamenti precedenti e skincare",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Quali trattamenti estetici hai fatto negli ultimi 6 mesi?",
+            "required": true,
+            "options": [
+              "Peeling chimici",
+              "Trattamenti laser",
+              "IPL (luce pulsata intensa)",
+              "Iniezioni di botox",
+              "Filler all'acido ialuronico",
+              "Fili di sospensione (thread lifting)",
+              "Radiofrequenza",
+              "HIFU",
+              "Altri trattamenti di microneedling",
+              "Nessun trattamento estetico"
+            ]
+          },
+          {
+            "id": "f18",
+            "type": "textarea",
+            "label": "Se sì, fornisci dettagli sui trattamenti:",
+            "required": false,
+            "placeholder": "Quando, dove, quali zone, soddisfazione, complicazioni"
+          },
+          {
+            "id": "f19",
+            "type": "checkbox",
+            "label": "Quali prodotti per la cura della pelle usi regolarmente?",
+            "required": true,
+            "options": [
+              "Prodotti con retinolo/retinoidi",
+              "Acidi AHA/BHA (acido glicolico, acido salicilico)",
+              "Siero alla vitamina C",
+              "Perossido di benzoile",
+              "Idrochinone",
+              "Crema alla tretinoina",
+              "Altri prodotti su prescrizione medica",
+              "Solo skincare di base"
+            ]
+          },
+          {
+            "id": "f20",
+            "type": "radio",
+            "label": "Quando hai usato l'ultima volta retinolo o acidi?",
+            "required": true,
+            "options": [
+              "Nelle ultime 24 ore",
+              "Negli ultimi 3 giorni",
+              "Nell'ultima settimana",
+              "Più di una settimana fa",
+              "Non li uso"
+            ]
+          },
+          {
+            "id": "f21",
+            "type": "radio",
+            "label": "Nelle ultime 4 settimane hai avuto un'esposizione intensa al sole?",
+            "required": true,
+            "options": [
+              "Sì, vacanza/lampade solari",
+              "Sì, occasionalmente",
+              "No, l'ho evitata",
+              "Non lo so"
+            ]
+          },
+          {
+            "id": "f22",
+            "type": "radio",
+            "label": "Com'è la tua soglia del dolore?",
+            "required": true,
+            "options": [
+              "Molto bassa",
+              "Bassa",
+              "Normale",
+              "Alta",
+              "Molto alta"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Informativa sul microneedling",
+        "type": "document",
+        "fields": [],
+        "content": "\n                <h2>Informativa completa sul trattamento di microneedling</h2>\n\n                <p>Gentile cliente,</p>\n\n                <p>hai scelto un trattamento di microneedling. Con questo documento informativo dettagliato vogliamo spiegarti in modo completo il trattamento, i possibili rischi, gli effetti collaterali e le cure necessarie dopo la seduta.</p>\n\n                <h3>Che cos'è il microneedling?</h3>\n                <p>Il microneedling è una procedura estetica minimamente invasiva in cui, con l'aiuto di aghi sottili (0,5-2,5 mm), si creano nella pelle microlesioni controllate. Queste stimolano i naturali processi di riparazione della pelle e favoriscono la produzione di collagene ed elastina. La procedura è nota anche come terapia di induzione del collagene (CIT).</p>\n\n                <h3>Come agisce</h3>\n                <p>Gli aghi sottili attraversano lo strato più superficiale della pelle (epidermide) e raggiungono il derma. Si formano così canali microscopici che attivano i seguenti processi:</p>\n                <ul>\n                    <li><strong>Risposta di guarigione:</strong> la pelle attiva i propri meccanismi naturali di riparazione</li>\n                    <li><strong>Produzione di collagene:</strong> si formano nuove fibre di collagene che migliorano la struttura della pelle</li>\n                    <li><strong>Formazione di elastina:</strong> aumenta l'elasticità della pelle</li>\n                    <li><strong>Microcircolazione migliorata:</strong> la pelle riceve un migliore apporto di nutrienti</li>\n                    <li><strong>Penetrazione dei principi attivi:</strong> i prodotti di trattamento possono penetrare più in profondità</li>\n                </ul>\n\n                <h3>Indicazioni</h3>\n                <ul>\n                    <li><strong>Cicatrici da acne:</strong> miglioramento delle cicatrici atrofiche (infossate)</li>\n                    <li><strong>Linee sottili e rughe:</strong> attenuazione dei segni superficiali dell'invecchiamento</li>\n                    <li><strong>Pori dilatati:</strong> affinamento della grana della pelle</li>\n                    <li><strong>Iperpigmentazione:</strong> schiarimento delle macchie</li>\n                    <li><strong>Smagliature:</strong> miglioramento della struttura della pelle</li>\n                    <li><strong>Ringiovanimento generale:</strong> miglioramento di texture e luminosità</li>\n                    <li><strong>Cicatrici:</strong> diversi tipi di tessuto cicatriziale</li>\n                </ul>\n\n                <h3>Svolgimento dettagliato del trattamento</h3>\n                <ol>\n                    <li><strong>Preparazione:</strong> accurata detersione e disinfezione della pelle</li>\n                    <li><strong>Anestesia topica:</strong> applicazione di una crema anestetica (tempo di posa 30-45 minuti)</li>\n                    <li><strong>Trattamento:</strong> microneedling sistematico con aghi sterili</li>\n                    <li><strong>Applicazione dei principi attivi:</strong> applicazione di sieri (acido ialuronico, vitamina C, ecc.)</li>\n                    <li><strong>Azione lenitiva:</strong> maschera rinfrescante e lenitiva</li>\n                    <li><strong>Cura post-trattamento:</strong> applicazione di prodotti specifici e protezione solare</li>\n                </ol>\n\n                <h3>Parametri del trattamento</h3>\n                <ul>\n                    <li><strong>Lunghezza degli aghi:</strong> 0,5-2,5 mm a seconda del problema da trattare</li>\n                    <li><strong>Durata:</strong> 30-90 minuti a seconda della zona</li>\n                    <li><strong>Numero di sedute:</strong> 3-6 trattamenti per risultati ottimali</li>\n                    <li><strong>Intervallo:</strong> 4-6 settimane tra una seduta e l'altra</li>\n                </ul>\n\n                <h3>Possibili effetti collaterali e rischi</h3>\n\n                <h4>Reazioni frequenti e normali (>50%):</h4>\n                <ul>\n                    <li>Arrossamento e gonfiore per 24-72 ore</li>\n                    <li>Sensazione di tensione e lieve dolore</li>\n                    <li>Piccoli sanguinamenti puntiformi durante il trattamento</li>\n                    <li>Maggiore sensibilità della pelle</li>\n                    <li>Leggera desquamazione dopo 3-5 giorni</li>\n                </ul>\n\n                <h4>Effetti collaterali occasionali (5-20%):</h4>\n                <ul>\n                    <li>Gonfiore più marcato (soprattutto intorno agli occhi)</li>\n                    <li>Piccoli lividi (petecchie)</li>\n                    <li>Prurito durante la guarigione</li>\n                    <li>Iperpigmentazione temporanea</li>\n                    <li>Secchezza e desquamazione</li>\n                </ul>\n\n                <h4>Complicazioni rare (1-5%):</h4>\n                <ul>\n                    <li>Infezioni (batteriche, virali, fungine)</li>\n                    <li>Reazioni allergiche ai principi attivi</li>\n                    <li>Riattivazione dell'herpes simplex</li>\n                    <li>Iperpigmentazione post-infiammatoria</li>\n                    <li>Formazione di cicatrici (molto rara se il trattamento è eseguito correttamente)</li>\n                </ul>\n\n                <h4>Rischi molto rari (<1%):</h4>\n                <ul>\n                    <li>Alterazioni permanenti della pigmentazione</li>\n                    <li>Formazione di granulomi</li>\n                    <li>Trasmissione di agenti patogeni (in caso di igiene inadeguata)</li>\n                </ul>\n\n                <h3>Controindicazioni (trattamento non possibile)</h3>\n                <ul>\n                    <li>Gravidanza e allattamento</li>\n                    <li>Infezioni cutanee attive nella zona da trattare</li>\n                    <li>Acne attiva con lesioni infiammatorie</li>\n                    <li>Ferite aperte o eczemi</li>\n                    <li>Assunzione di isotretinoina negli ultimi 6 mesi</li>\n                    <li>Tendenza ai cheloidi o cicatrizzazione patologica</li>\n                    <li>Disturbi della coagulazione</li>\n                    <li>Immunosoppressione</li>\n                    <li>Tumori della pelle nella zona da trattare</li>\n                </ul>\n\n                <h3>Controindicazioni relative (maggiore cautela)</h3>\n                <ul>\n                    <li>Diabete mellito</li>\n                    <li>Malattie autoimmuni</li>\n                    <li>Assunzione di anticoagulanti o antiaggreganti</li>\n                    <li>Rosacea o pelle molto sensibile</li>\n                    <li>Recente esposizione al sole o abbronzatura</li>\n                    <li>Uso di retinolo/acidi negli ultimi 7 giorni</li>\n                </ul>\n\n                <h3>Indicazioni importanti</h3>\n\n                <h4>Prima del trattamento (1-2 settimane):</h4>\n                <ul>\n                    <li>Non usare prodotti con retinolo o acidi</li>\n                    <li>Evita l'esposizione al sole e le lampade solari</li>\n                    <li>Nessuna depilazione nella zona da trattare</li>\n                    <li>Se soffri di herpes ricorrente: profilassi farmacologica concordata con il tuo medico curante</li>\n                    <li>Bevi a sufficienza e segui un'alimentazione sana</li>\n                </ul>\n\n                <h4>Dopo il trattamento (1-2 settimane):</h4>\n                <ul>\n                    <li>24-48 ore: niente trucco sulla zona trattata</li>\n                    <li>48 ore: niente sauna, sport o sudorazione intensa</li>\n                    <li>1 settimana: niente prodotti con retinolo o acidi</li>\n                    <li>2 settimane: protezione solare costante (SPF 50+)</li>\n                    <li>Usa prodotti delicati e senza profumo</li>\n                    <li>Non grattare e non strofinare</li>\n                    <li>Bevi molta acqua</li>\n                </ul>\n\n                <h3>Risultati e aspettative</h3>\n                <p>I risultati del microneedling si sviluppano gradualmente:</p>\n                <ul>\n                    <li><strong>Subito:</strong> leggero effetto glow grazie alla migliore microcircolazione</li>\n                    <li><strong>1-2 settimane:</strong> primo miglioramento della struttura della pelle</li>\n                    <li><strong>4-6 settimane:</strong> evidente formazione di nuovo collagene</li>\n                    <li><strong>3-6 mesi:</strong> risultato massimo al termine del ciclo di trattamenti</li>\n                </ul>\n\n                <p>Aspettative realistiche:</p>\n                <ul>\n                    <li>Miglioramento della struttura della pelle del 30-70%</li>\n                    <li>Riduzione delle cicatrici del 25-50%</li>\n                    <li>Pori più fini</li>\n                    <li>Maggiore elasticità della pelle</li>\n                    <li>Incarnato più uniforme</li>\n                </ul>\n\n                <h3>Costi e piano di trattamento</h3>\n                <p>I costi variano in base alla zona da trattare e al numero di sedute. Per risultati ottimali consigliamo:</p>\n                <ul>\n                    <li>3-6 trattamenti a distanza di 4-6 settimane</li>\n                    <li>Trattamenti di mantenimento ogni 6-12 mesi</li>\n                    <li>Adattamento personalizzato in base alla reazione della pelle</li>\n                </ul>\n\n                <h3>Trattamenti alternativi</h3>\n                <ul>\n                    <li>Peeling chimici</li>\n                    <li>Laser resurfacing</li>\n                    <li>Trattamenti con radiofrequenza</li>\n                    <li>IPL (luce pulsata intensa)</li>\n                    <li>Trattamenti iniettivi (filler, botox)</li>\n                    <li>Procedure chirurgiche</li>\n                    <li>Nessun trattamento</li>\n                </ul>\n\n                <p><strong>In caso di emergenza:</strong> se compaiono effetti collaterali gravi o complicazioni, contattaci subito oppure rivolgiti al pronto soccorso più vicino o chiama il 112.</p>\n                "
+      },
+      {
+        "id": "p5",
+        "title": "Consenso informato dettagliato",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f23",
+            "type": "checkbox",
+            "label": "Informazione e comprensione",
+            "required": true,
+            "options": [
+              "Ho letto integralmente e compreso l'informativa completa sul microneedling.",
+              "Ho avuto tempo sufficiente per leggere il documento informativo.",
+              "Tutte le mie domande hanno ricevuto una risposta soddisfacente.",
+              "Ho compreso come agisce il microneedling.",
+              "Sono consapevole che per risultati ottimali sono necessarie più sedute."
+            ]
+          },
+          {
+            "id": "f24",
+            "type": "checkbox",
+            "label": "Rischi ed effetti collaterali",
+            "required": true,
+            "options": [
+              "Ho ricevuto informazioni su tutti i possibili rischi ed effetti collaterali.",
+              "Comprendo che possono verificarsi complicazioni anche quando il trattamento è eseguito correttamente.",
+              "Sono consapevole che arrossamenti e gonfiori sono normali.",
+              "Accetto il rischio di infezioni in caso di cure post-trattamento non corrette.",
+              "Comprendo che sono possibili alterazioni della pigmentazione."
+            ]
+          },
+          {
+            "id": "f25",
+            "type": "checkbox",
+            "label": "Dati sanitari",
+            "required": true,
+            "options": [
+              "Confermo che tutte le informazioni sul mio stato di salute sono veritiere e complete.",
+              "Non presento nessuna delle controindicazioni indicate.",
+              "Comunicherò immediatamente eventuali cambiamenti del mio stato di salute.",
+              "Ho indicato tutti i farmaci e i prodotti per la cura della pelle che uso attualmente."
+            ]
+          },
+          {
+            "id": "f26",
+            "type": "checkbox",
+            "label": "Indicazioni pre e post-trattamento",
+            "required": true,
+            "options": [
+              "Mi impegno a rispettare le indicazioni prima del trattamento.",
+              "Seguirò scrupolosamente le indicazioni post-trattamento.",
+              "Comprendo l'importanza della protezione solare dopo il trattamento.",
+              "In caso di problemi vi contatterò immediatamente."
+            ]
+          },
+          {
+            "id": "f27",
+            "type": "checkbox",
+            "label": "Aspettative e risultati",
+            "required": true,
+            "options": [
+              "Ho aspettative realistiche sul risultato del trattamento.",
+              "Sono consapevole che il risultato può variare da persona a persona.",
+              "Comprendo che non può essere data alcuna garanzia sul risultato.",
+              "Accetto che siano necessarie più sedute.",
+              "Sono consapevole che i risultati richiedono tempo per manifestarsi."
+            ]
+          },
+          {
+            "id": "f28",
+            "type": "checkbox",
+            "label": "Documentazione e protezione dei dati",
+            "required": true,
+            "options": [
+              "Acconsento alla realizzazione di foto a scopo di documentazione.",
+              "Comprendo che queste foto saranno trattate in modo riservato.",
+              "Acconsento al trattamento e alla conservazione dei miei dati ai sensi del Regolamento UE 2016/679 (GDPR) e del D.Lgs. 196/2003."
+            ]
+          },
+          {
+            "id": "f29",
+            "type": "textarea",
+            "label": "Ulteriori domande o osservazioni",
+            "required": false,
+            "placeholder": "Hai altre domande o vuoi segnalarci qualcosa in particolare?"
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Firma cliente",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Firma cliente",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "title": "Conferma e prossimi passi",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Grazie per le informazioni dettagliate!</h2>\n\n                <p>I tuoi dati e il tuo consenso informato al trattamento di microneedling sono stati registrati integralmente e saranno trattati in modo riservato.</p>\n\n                <h3>Indicazioni importanti per il tuo appuntamento:</h3>\n\n                <h4>1 settimana prima del trattamento:</h4>\n                <ul>\n                    <li>Non usare prodotti con retinolo o acidi</li>\n                    <li>Evita l'esposizione al sole e le lampade solari</li>\n                    <li>Nessuna depilazione nella zona da trattare</li>\n                    <li>Se soffri di herpes ricorrente: parla con il tuo medico curante di una profilassi farmacologica</li>\n                </ul>\n\n                <h4>Il giorno del trattamento:</h4>\n                <ul>\n                    <li>Presentati senza trucco sulla zona da trattare</li>\n                    <li>Indossa abiti comodi</li>\n                    <li>Prevedi tempo sufficiente (circa 60-90 minuti)</li>\n                    <li>Se non ti senti bene o hai problemi alla pelle, sposta l'appuntamento</li>\n                </ul>\n\n                <h4>Dopo il trattamento:</h4>\n                <ul>\n                    <li>Niente trucco per 24-48 ore</li>\n                    <li>Niente sauna o sport intenso per 48 ore</li>\n                    <li>Niente prodotti con retinolo o acidi per 1 settimana</li>\n                    <li>Protezione solare costante (SPF 50+) per 2 settimane</li>\n                    <li>Usa prodotti delicati e senza profumo</li>\n                </ul>\n\n                <h3>Piano di trattamento:</h3>\n                <p>Per risultati ottimali consigliamo 3-6 trattamenti a distanza di 4-6 settimane. Il prossimo appuntamento verrà fissato dopo il primo trattamento, in base alla reazione della tua pelle.</p>\n\n                <h3>In caso di emergenza:</h3>\n                <p>Se compaiono effetti collaterali gravi o complicazioni, contattaci subito oppure rivolgiti al pronto soccorso più vicino o chiama il 112.</p>\n\n                <p><strong>Non vediamo l'ora di prenderci cura di te in modo professionale e sicuro!</strong></p>\n                "
+      }
+    ],
+    "tags": [
+      "Microneedling",
+      "Anti-age",
+      "Trattamento cicatrici",
+      "Aspetto della pelle",
+      "Collagene",
+      "CIT"
+    ]
+  },
+  {
+    "id": "permanent-makeup-1",
+    "name": "Trucco permanente: anamnesi e consenso informato",
+    "description": "Modulo per trucco permanente / microblading con screening medico e documentazione del consenso informato.",
+    "category": "Bellezza",
+    "difficulty": "mittel",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Zone da trattare e preferenze",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Quali zone vuoi trattare?",
+            "required": true,
+            "options": [
+              "Sopracciglia",
+              "Eyeliner superiore",
+              "Eyeliner inferiore",
+              "Contorno labbra",
+              "Labbra a colorazione piena",
+              "Neo di bellezza",
+              "Ricostruzione dell'areola",
+              "Camouflage delle cicatrici"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Hai già fatto in passato un trattamento di trucco permanente?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "textarea",
+            "label": "Se sì, quando e dove?",
+            "required": false,
+            "placeholder": "Indica quando e dove hai già fatto il trattamento"
+          },
+          {
+            "id": "f4",
+            "type": "textarea",
+            "label": "Quale risultato desideri?",
+            "required": true,
+            "placeholder": "Descrivi i tuoi desideri e le tue idee"
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Anamnesi medica",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Sei attualmente incinta o stai allattando?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "checkbox",
+            "label": "Soffri di una delle seguenti patologie?",
+            "required": true,
+            "options": [
+              "Diabete",
+              "Malattie cardiache",
+              "Disturbi della coagulazione",
+              "Malattie autoimmuni",
+              "Malattie della pelle",
+              "Malattie infettive (HIV, epatite)",
+              "Epilessia",
+              "Nessuno dei precedenti"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Assumi farmaci anticoagulanti o antiaggreganti?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Soffri di herpes nella zona da trattare?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Hai allergie a una delle seguenti sostanze?",
+            "required": true,
+            "options": [
+              "Anestetici locali (anestetizzanti)",
+              "Lattice",
+              "Nichel o altri metalli",
+              "Pigmenti colorati",
+              "Nessuno dei precedenti"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "textarea",
+            "label": "Altre patologie o allergie rilevanti",
+            "required": false,
+            "placeholder": "Indica eventuali altre patologie o allergie rilevanti"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Informativa sul trucco permanente",
+        "type": "document",
+        "fields": [],
+        "content": "\n                <h2>Informativa sul trattamento di trucco permanente</h2>\n\n                <p>Gentile cliente,</p>\n\n                <p>hai scelto un trattamento di trucco permanente. Con questo documento vogliamo informarti in modo completo sullo svolgimento del trattamento, sui possibili rischi e sulle cure successive.</p>\n\n                <h3>Il metodo</h3>\n                <p>Nel trucco permanente, pigmenti colorati specifici, idonei all'uso sull'essere umano, vengono introdotti con aghi sottili negli strati superficiali della pelle (epidermide/derma). Il risultato dura di norma 1-5 anni, a seconda di vari fattori come tipo di pelle, stile di vita ed esposizione al sole. Per un risultato ottimale è solitamente necessario un ritocco dopo 4-6 settimane.</p>\n\n                <h3>Svolgimento del trattamento</h3>\n                <p>Il trattamento prevede le seguenti fasi:</p>\n                <ol>\n                    <li>Consulenza e scelta del colore</li>\n                    <li>Disegno preliminare della forma desiderata</li>\n                    <li>Anestesia locale della zona da trattare (facoltativa)</li>\n                    <li>Introduzione dei pigmenti</li>\n                    <li>Trattamento finale e indicazioni per la cura successiva</li>\n                </ol>\n\n                <h3>Possibili effetti collaterali e rischi</h3>\n                <ul>\n                    <li><strong>Reazioni normali:</strong> arrossamenti, lieve gonfiore, leggero bruciore e sensazione di tensione per 1-2 giorni.</li>\n                    <li><strong>Effetti collaterali rari:</strong> gonfiore marcato, infezioni, reazioni allergiche ai pigmenti o agli anestetici, formazione temporanea di vescicole.</li>\n                    <li><strong>Rischi a lungo termine:</strong> alterazioni del colore, sbiadimento irregolare, aspetto asimmetrico, formazione di cicatrici.</li>\n                </ul>\n\n                <h3>Cura successiva</h3>\n                <p>Per un risultato ottimale è fondamentale curare correttamente la zona trattata:</p>\n                <ul>\n                    <li>Proteggi le zone trattate per 7-10 giorni da sole, lampade solari, sauna e acqua clorata</li>\n                    <li>Evita di toccare e non grattare, anche se prude</li>\n                    <li>Niente peeling, acidi della frutta o retinolo per almeno 2 settimane</li>\n                    <li>In caso di eyeliner, usa il piegaciglia solo a guarigione completa</li>\n                    <li>Rispetta l'appuntamento di ritocco consigliato dopo 4-6 settimane</li>\n                </ul>\n\n                <h3>Indicazioni importanti</h3>\n                <ul>\n                    <li>Il risultato definitivo è visibile solo dopo la guarigione e l'eventuale ritocco</li>\n                    <li>Subito dopo il trattamento il colore appare molto più intenso e scuro</li>\n                    <li>Non è possibile garantire l'esatta evoluzione del colore e la sua durata</li>\n                    <li>Se il risultato non ti soddisfa, può essere necessaria una correzione</li>\n                </ul>\n                "
+      },
+      {
+        "id": "p4",
+        "title": "Consenso informato",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Ho letto e compreso le informazioni sul trattamento di trucco permanente.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Ho ricevuto informazioni sui possibili rischi ed effetti collaterali.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Ho avuto modo di fare tutte le domande che desideravo.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Sono consapevole che per un risultato ottimale può essere necessario un ritocco.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Acconsento alla realizzazione di foto della zona trattata a scopo di documentazione.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Firma cliente",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Firma cliente",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Conferma",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Grazie per le tue informazioni!</h2>\n\n                <p>I tuoi dati e il tuo consenso informato al trattamento di trucco permanente sono stati registrati.</p>\n\n                <h3>Prima dell'appuntamento ricorda:</h3>\n                <ul>\n                    <li>Presentati senza trucco sulla zona da trattare</li>\n                    <li>Non assumere farmaci fluidificanti nelle 48 ore precedenti il trattamento (solo dopo averne parlato con il tuo medico curante)</li>\n                    <li>Evita alcol e bevande contenenti caffeina il giorno del trattamento</li>\n                    <li>Se vuoi, porta i tuoi prodotti di make-up per definire insieme il look desiderato</li>\n                </ul>\n\n                <p>Ti aspettiamo!</p>\n                "
+      }
+    ],
+    "tags": [
+      "Trucco permanente",
+      "PMU",
+      "Microblading",
+      "Sopracciglia",
+      "Eyeliner",
+      "Labbra"
+    ]
+  },
+  {
+    "id": "facial-treatment-1",
+    "name": "Anamnesi per trattamenti viso",
+    "description": "Anamnesi generale per trattamenti viso con analisi del tipo di pelle e preferenze di trattamento.",
+    "category": "Trattamenti viso",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Pelle e abitudini di cura",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "radio",
+            "label": "Come descriveresti il tuo tipo di pelle?",
+            "required": true,
+            "options": [
+              "Normale",
+              "Secca",
+              "Grassa",
+              "Mista",
+              "Sensibile",
+              "Non lo so"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "checkbox",
+            "label": "Quali problemi della pelle hai?",
+            "required": true,
+            "options": [
+              "Acne/impurità",
+              "Arrossamenti/couperose",
+              "Macchie della pelle",
+              "Linee sottili/rughe",
+              "Pori evidenti",
+              "Secchezza/desquamazione",
+              "Pelle opaca",
+              "Nessun problema particolare"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "textarea",
+            "label": "Descrivi la tua routine quotidiana di cura della pelle",
+            "required": true,
+            "placeholder": "Detergente, tonico, siero, crema idratante, protezione solare, ecc."
+          },
+          {
+            "id": "f4",
+            "type": "checkbox",
+            "label": "Quali prodotti usi regolarmente?",
+            "required": false,
+            "options": [
+              "Retinolo/vitamina A",
+              "Acidi AHA/BHA",
+              "Vitamina C",
+              "Acido ialuronico",
+              "Niacinamide",
+              "Enzimi/esfolianti",
+              "Oli viso",
+              "Maschere"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Trattamenti precedenti e preferenze",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Hai mai fatto un trattamento viso professionale?",
+            "required": true,
+            "options": [
+              "Sì, regolarmente",
+              "Sì, occasionalmente",
+              "Sì, ma raramente",
+              "No, mai"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "date",
+            "label": "Quando hai fatto l'ultimo trattamento viso professionale?",
+            "required": false
+          },
+          {
+            "id": "f7",
+            "type": "textarea",
+            "label": "Che tipo di trattamento hai ricevuto e com'è stata la tua esperienza?",
+            "required": false,
+            "placeholder": "es. pulizia del viso classica, microdermoabrasione, peeling chimico..."
+          },
+          {
+            "id": "f8",
+            "type": "checkbox",
+            "label": "Quali dei seguenti trattamenti ti interessano?",
+            "required": true,
+            "options": [
+              "Pulizia profonda/estrazione dei comedoni",
+              "Trattamento anti-age",
+              "Trattamento idratante",
+              "Trattamento lenitivo per pelli sensibili",
+              "Trattamento per acne/impurità",
+              "Trattamento schiarente per le macchie",
+              "Linfodrenaggio/massaggio"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "radio",
+            "label": "Quanto è sensibile la tua pelle ai trattamenti?",
+            "required": true,
+            "options": [
+              "Molto sensibile",
+              "Leggermente sensibile",
+              "Normale",
+              "Resistente/poco sensibile",
+              "Non lo so"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Domande sulla salute",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f10",
+            "type": "checkbox",
+            "label": "Hai uno dei seguenti problemi della pelle?",
+            "required": true,
+            "options": [
+              "Dermatite atopica/eczema",
+              "Psoriasi",
+              "Rosacea",
+              "Tendenza all'herpes labiale",
+              "Infezioni fungine",
+              "Nessuna diagnosi dermatologica"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "radio",
+            "label": "Usi prodotti per la pelle su prescrizione medica?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "textarea",
+            "label": "Se sì, quali?",
+            "required": false,
+            "placeholder": "es. tretinoina, acido azelaico, antibiotici..."
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Hai allergie o intolleranze a determinati ingredienti?",
+            "required": true,
+            "options": [
+              "Profumi/fragranze",
+              "Conservanti",
+              "Oli essenziali",
+              "Frutta a guscio/oli di frutta a guscio",
+              "Altro",
+              "Nessuna nota"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "textarea",
+            "label": "Se hai selezionato 'Altro', specifica:",
+            "required": false,
+            "placeholder": "Indica le tue allergie/intolleranze"
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Obiettivi del trattamento",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f15",
+            "type": "textarea",
+            "label": "Quali sono le tue principali esigenze per la pelle?",
+            "required": true,
+            "placeholder": "Descrivi cosa vorresti ottenere con il trattamento"
+          },
+          {
+            "id": "f16",
+            "type": "radio",
+            "label": "Quanto è importante per te vedere un miglioramento visibile subito dopo il trattamento?",
+            "required": true,
+            "options": [
+              "Molto importante",
+              "Importante",
+              "Non così importante, punto su risultati a lungo termine"
+            ]
+          },
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Acconsento a:",
+            "required": true,
+            "options": [
+              "Pulizia/estrazione dei punti neri (può causare arrossamenti temporanei)",
+              "Peeling leggeri (possono causare un lieve formicolio)",
+              "Massaggio viso",
+              "Maschere",
+              "Tintura di sopracciglia e ciglia"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Firma cliente",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Firma cliente",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Conferma",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Grazie per le tue informazioni!</h2>\n\n                <p>In base ai tuoi dati possiamo adattare al meglio il trattamento viso alle tue esigenze.</p>\n\n                <h3>Indicazioni per il tuo appuntamento:</h3>\n                <ul>\n                    <li>Presentati senza trucco</li>\n                    <li>Nelle 24 ore precedenti evita peeling o prodotti molto aggressivi</li>\n                    <li>Informaci se le condizioni della tua pelle cambiano</li>\n                    <li>Se vuoi, porta i prodotti che usi attualmente, così potremo tenerne conto nella consulenza</li>\n                </ul>\n\n                <p>Ti aspettiamo e non vediamo l'ora di offrirti un trattamento rilassante ed efficace!</p>\n                "
+      }
+    ],
+    "tags": [
+      "Trattamento viso",
+      "Skincare",
+      "Cosmetica",
+      "Analisi della pelle",
+      "Detersione"
+    ]
+  },
+  {
+    "id": "lash-extension-1",
+    "name": "Extension ciglia: anamnesi e consenso informato",
+    "description": "Modulo di anamnesi e consenso informato per l'applicazione di extension ciglia.",
+    "category": "Bellezza",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Desideri ed esperienze",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "radio",
+            "label": "Hai già esperienza con le extension ciglia?",
+            "required": true,
+            "options": [
+              "Sì, regolarmente",
+              "Sì, occasionalmente",
+              "No, è la prima volta"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Che look desideri?",
+            "required": true,
+            "options": [
+              "Naturale",
+              "Discreto",
+              "Drammatico/voluminoso",
+              "Effetto cat eye",
+              "Effetto doll eye",
+              "Non lo so, vorrei un consiglio"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "checkbox",
+            "label": "Richieste particolari",
+            "required": false,
+            "options": [
+              "Extra leggere",
+              "Resistenti all'acqua",
+              "Ciglia colorate",
+              "Strass/cristalli"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Spessore delle ciglia preferito",
+            "required": true,
+            "options": [
+              "Sottile (0,05-0,07 mm)",
+              "Medio (0,10-0,12 mm)",
+              "Spesso (0,15-0,20 mm)",
+              "Non lo so, vorrei un consiglio"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Tecnica preferita",
+            "required": true,
+            "options": [
+              "Classica (1:1)",
+              "Volume (2D-4D)",
+              "Mega volume (5D+)",
+              "Ibrida (mix)",
+              "Non lo so, vorrei un consiglio"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Informazioni sulla salute",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Porti lenti a contatto?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "checkbox",
+            "label": "Hai uno dei seguenti disturbi agli occhi?",
+            "required": true,
+            "options": [
+              "Congiuntivite",
+              "Blefarite (infiammazione del bordo palpebrale)",
+              "Occhio secco",
+              "Orzaiolo",
+              "Glaucoma",
+              "Altri disturbi agli occhi",
+              "Nessun disturbo agli occhi"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "textarea",
+            "label": "Se hai selezionato 'Altri disturbi agli occhi', specifica:",
+            "required": false,
+            "placeholder": "Indica i tuoi disturbi agli occhi"
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Hai allergie ai seguenti materiali?",
+            "required": true,
+            "options": [
+              "Colla/cianoacrilato",
+              "Lattice",
+              "Nastro/cerotto",
+              "Acrilico",
+              "Altro",
+              "Nessuna allergia nota"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "textarea",
+            "label": "Se hai selezionato 'Altro', specifica:",
+            "required": false,
+            "placeholder": "Indica le tue allergie"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Informativa sulle extension ciglia",
+        "type": "document",
+        "fields": [],
+        "content": "\n                <h2>Informativa sulle extension ciglia</h2>\n\n                <p>Gentile cliente,</p>\n\n                <p>hai scelto un trattamento di extension ciglia. Con questo documento vogliamo informarti sullo svolgimento del trattamento, sui possibili rischi e sulle cure necessarie dopo l'applicazione.</p>\n\n                <h3>Svolgimento del trattamento</h3>\n                <p>Le extension ciglia sono ciglia sintetiche che vengono applicate una per una sulle tue ciglia naturali con una colla specifica. A seconda del look desiderato, il trattamento dura circa da 1,5 a 2,5 ore. Per una tenuta ottimale presentati con ciglia pulite, senza residui di trucco e di sebo.</p>\n\n                <h3>Possibili rischi ed effetti collaterali</h3>\n                <ul>\n                    <li><strong>Reazioni allergiche:</strong> in rari casi la colla utilizzata può provocare reazioni allergiche. Ai primi segni di allergia (forte arrossamento, gonfiore, prurito) contattaci immediatamente.</li>\n                    <li><strong>Irritazioni oculari:</strong> durante il trattamento gli occhi possono irritarsi leggermente. Il fastidio dovrebbe passare rapidamente dopo il trattamento.</li>\n                    <li><strong>Danni alle ciglia naturali:</strong> un'applicazione scorretta o una cura inadeguata possono danneggiare le ciglia naturali.</li>\n                </ul>\n\n                <h3>Cura successiva e consigli</h3>\n                <ul>\n                    <li>Evita il contatto con acqua, vapore e sostanze oleose per 24-48 ore dopo il trattamento.</li>\n                    <li>Non usare prodotti oleosi nella zona degli occhi.</li>\n                    <li>Non strofinare gli occhi e non toccare troppo le ciglia.</li>\n                    <li>Non usare il piegaciglia né mascara waterproof.</li>\n                    <li>Spazzola regolarmente le ciglia con uno scovolino pulito.</li>\n                    <li>Se possibile dormi sulla schiena, per non esercitare pressione sulle ciglia.</li>\n                    <li>Per un risultato ottimale consigliamo un refill ogni 2-3 settimane.</li>\n                </ul>\n\n                <h3>Durata</h3>\n                <p>La durata delle extension ciglia varia da persona a persona e dipende dal ciclo naturale delle tue ciglia, dalle caratteristiche della tua pelle e dalla cura. In media durano 4-6 settimane. Con refill regolari (ogni 2-3 settimane) il risultato si mantiene più a lungo.</p>\n                "
+      },
+      {
+        "id": "p4",
+        "title": "Consenso informato",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Ho letto e compreso le informazioni sulle extension ciglia.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Ho ricevuto informazioni sui possibili rischi ed effetti collaterali.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Confermo di non presentare nessuna delle controindicazioni indicate.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Mi impegno a seguire le indicazioni di cura consigliate.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Acconsento alla realizzazione di foto prima e dopo il trattamento a scopo di documentazione.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Firma cliente",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Firma cliente",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Conferma",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Grazie per le tue informazioni!</h2>\n\n                <p>I tuoi dati e il tuo consenso informato per le extension ciglia sono stati registrati.</p>\n\n                <h3>Indicazioni per il tuo appuntamento:</h3>\n                <ul>\n                    <li>Presentati senza trucco sugli occhi</li>\n                    <li>Togli le lenti a contatto prima del trattamento</li>\n                    <li>Nelle 24 ore precedenti evita bevande ricche di caffeina (riduce i tremolii delle palpebre)</li>\n                    <li>Dopo il trattamento prevedi tempo sufficiente perché la colla si asciughi completamente</li>\n                </ul>\n\n                <p>Ti aspettiamo!</p>\n                "
+      }
+    ],
+    "tags": [
+      "Extension ciglia",
+      "Ciglia",
+      "Bellezza",
+      "Extension",
+      "Styling"
+    ]
+  },
+  {
+    "id": "nail-design-1",
+    "name": "Anamnesi per nail design",
+    "description": "Modulo di anamnesi per trattamenti unghie e servizi di nail design.",
+    "category": "Unghie",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Desideri e storia precedente",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Trattamento desiderato",
+            "required": true,
+            "options": [
+              "Unghie in gel",
+              "Unghie in acrilico",
+              "Semipermanente/gel polish",
+              "Rinforzo dell'unghia naturale",
+              "Allungamento con tip",
+              "Riparazione unghie",
+              "Nail art/decorazioni",
+              "Manicure french"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Hai già esperienza con le unghie artificiali?",
+            "required": true,
+            "options": [
+              "Sì, regolarmente",
+              "Sì, occasionalmente",
+              "Sì, in passato",
+              "No, è la prima volta"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "Quando hai portato unghie artificiali l'ultima volta?",
+            "required": false,
+            "options": [
+              "Le porto attualmente",
+              "Nelle ultime 4 settimane",
+              "Negli ultimi 3 mesi",
+              "Più di 3 mesi fa",
+              "Mai"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Lunghezza preferita",
+            "required": true,
+            "options": [
+              "Corte (naturali)",
+              "Medie",
+              "Lunghe",
+              "Extra lunghe"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Forma preferita",
+            "required": true,
+            "options": [
+              "Squadrata",
+              "Ovale",
+              "Rotonda",
+              "A mandorla",
+              "Stiletto",
+              "Ballerina/coffin",
+              "Non lo so, vorrei un consiglio"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Anamnesi medica",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f6",
+            "type": "checkbox",
+            "label": "Hai o hai avuto negli ultimi 6 mesi uno dei seguenti problemi alle unghie?",
+            "required": true,
+            "options": [
+              "Onicomicosi (funghi delle unghie)",
+              "Psoriasi ungueale",
+              "Unghie fragili",
+              "Unghie spezzate",
+              "Distacco dell'unghia (onicolisi)",
+              "Infiammazione del letto ungueale",
+              "Unghie scolorite",
+              "Nessun problema alle unghie"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Soffri di diabete?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "checkbox",
+            "label": "Hai allergie ai seguenti materiali?",
+            "required": true,
+            "options": [
+              "Acrilico",
+              "Gel UV",
+              "Smalto/semipermanente",
+              "Solvente per smalto/acetone",
+              "Lattice",
+              "Disinfettanti",
+              "Altro",
+              "Nessuna allergia nota"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "textarea",
+            "label": "Se hai selezionato 'Altro', specifica:",
+            "required": false,
+            "placeholder": "Indica le tue allergie"
+          },
+          {
+            "id": "f10",
+            "type": "radio",
+            "label": "Sei attualmente incinta?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No",
+              "Preferisco non rispondere"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Informativa sul nail design",
+        "type": "document",
+        "fields": [],
+        "content": "\n                <h2>Informativa sulla ricostruzione unghie</h2>\n\n                <p>Gentile cliente,</p>\n\n                <p>hai scelto un trattamento di ricostruzione unghie. Con questo documento vogliamo informarti sullo svolgimento del trattamento, sui possibili rischi e sulle cure successive.</p>\n\n                <h3>Svolgimento del trattamento</h3>\n                <p>La ricostruzione unghie prevede le seguenti fasi:</p>\n                <ol>\n                    <li>Preparazione delle unghie naturali (accorciatura, limatura, rimozione delle cuticole)</li>\n                    <li>Opacizzazione della superficie dell'unghia</li>\n                    <li>Applicazione di tip (per l'allungamento) o cartine</li>\n                    <li>Applicazione del materiale di ricostruzione (gel, acrilico, ecc.)</li>\n                    <li>Polimerizzazione sotto lampada UV o LED (per il gel)</li>\n                    <li>Modellatura e limatura delle unghie</li>\n                    <li>Sigillatura e applicazione di colore/decorazioni</li>\n                </ol>\n\n                <h3>Possibili rischi ed effetti collaterali</h3>\n                <ul>\n                    <li><strong>Reazioni allergiche:</strong> in rari casi i materiali utilizzati possono provocare allergie.</li>\n                    <li><strong>Irritazioni del letto ungueale:</strong> possono verificarsi in caso di applicazione o rimozione scorretta.</li>\n                    <li><strong>Indebolimento delle unghie naturali:</strong> soprattutto in caso di rimozione scorretta o cambi frequenti, le unghie naturali possono diventare più sottili e delicate.</li>\n                    <li><strong>Infezioni delle unghie:</strong> in caso di scarsa igiene o di unghie danneggiate possono insorgere infezioni.</li>\n                </ul>\n\n                <h3>Cura successiva e consigli</h3>\n                <ul>\n                    <li>Indossa i guanti per le faccende domestiche con acqua o prodotti chimici.</li>\n                    <li>Usa regolarmente un olio per unghie per nutrire unghia naturale e cuticole.</li>\n                    <li>Non usare le unghie come attrezzi e non sottoporle a pressioni eccessive.</li>\n                    <li>In caso di danni, torna presto in salone per farle riparare.</li>\n                    <li>Per un aspetto sempre curato consigliamo un refill ogni 3-4 settimane.</li>\n                    <li>Ai primi segni di infezione o reazione allergica rivolgiti subito a un medico.</li>\n                </ul>\n\n                <h3>Rimozione</h3>\n                <p>Le unghie artificiali devono sempre essere rimosse da un professionista. Spezzarle o strapparle può danneggiare l'unghia naturale. Per la rimozione, rivolgiti di nuovo a noi.</p>\n                "
+      },
+      {
+        "id": "p4",
+        "title": "Consenso informato",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Ho letto e compreso le informazioni sulla ricostruzione unghie.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Ho ricevuto informazioni sui possibili rischi ed effetti collaterali.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Confermo di non presentare nessuna delle controindicazioni indicate che escluderebbero il trattamento.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Mi impegno a seguire le indicazioni di cura consigliate.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Sono consapevole che le unghie artificiali devono essere rimosse da un professionista.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Firma cliente",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Firma cliente",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Conferma",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Grazie per le tue informazioni!</h2>\n\n                <p>I tuoi dati e il tuo consenso informato alla ricostruzione unghie sono stati registrati.</p>\n\n                <h3>Indicazioni per il tuo appuntamento:</h3>\n                <ul>\n                    <li>Rimuovi lo smalto prima dell'appuntamento</li>\n                    <li>Presentati con unghie pulite e ben curate</li>\n                    <li>Se desideri un design particolare, porta pure foto o esempi</li>\n                    <li>Calcola una durata del trattamento di circa 1,5-2 ore</li>\n                </ul>\n\n                <p>Ti aspettiamo!</p>\n                "
+      }
+    ],
+    "tags": [
+      "Nail design",
+      "Unghie",
+      "Ricostruzione unghie",
+      "Manicure",
+      "Unghie in gel"
+    ]
+  },
+  {
+    "id": "laser-hair-removal-1",
+    "name": "Epilazione laser: anamnesi e consenso informato",
+    "description": "Modulo di anamnesi e consenso informato per trattamenti di epilazione laser.",
+    "category": "Epilazione",
+    "difficulty": "mittel",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Zone da trattare",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Quali zone vuoi trattare?",
+            "required": true,
+            "options": [
+              "Labbro superiore",
+              "Mento",
+              "Guance",
+              "Ascelle",
+              "Braccia",
+              "Petto",
+              "Addome",
+              "Schiena",
+              "Zona bikini",
+              "Gambe",
+              "Altro"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "textarea",
+            "label": "Se hai selezionato 'Altro', specifica:",
+            "required": false,
+            "placeholder": "Indica le zone da trattare"
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "Hai già fatto trattamenti di epilazione laser?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "textarea",
+            "label": "Se sì, quando e con quale risultato?",
+            "required": false,
+            "placeholder": "Descrivi le tue esperienze precedenti"
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Fototipo e caratteristiche dei peli",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Qual è il tuo fototipo secondo Fitzpatrick?",
+            "required": true,
+            "options": [
+              "Tipo I: molto chiaro, si scotta sempre, non si abbronza mai",
+              "Tipo II: chiaro, si scotta facilmente, si abbronza poco",
+              "Tipo III: carnagione media, a volte si scotta, si abbronza bene",
+              "Tipo IV: olivastro, si scotta raramente, si abbronza rapidamente e bene",
+              "Tipo V: bruno, si scotta molto raramente, si abbronza molto bene",
+              "Tipo VI: da marrone scuro a nero, non si scotta mai"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Di che colore sono i peli nelle zone da trattare?",
+            "required": true,
+            "options": [
+              "Neri",
+              "Castano scuro",
+              "Castano medio",
+              "Castano chiaro",
+              "Biondo scuro",
+              "Biondo chiaro",
+              "Rossi",
+              "Grigi/bianchi"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Che struttura hanno i peli nelle zone da trattare?",
+            "required": true,
+            "options": [
+              "Spessi/grossi",
+              "Medie",
+              "Sottili",
+              "Misti"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Anamnesi medica",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Sei incinta o stai allattando?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No",
+              "Non so"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Soffri di una delle seguenti patologie?",
+            "required": true,
+            "options": [
+              "Diabete",
+              "Malattie autoimmuni",
+              "Tumori della pelle (personali o in famiglia)",
+              "Epilessia",
+              "Herpes nella zona da trattare",
+              "Tendenza ai cheloidi/cicatrizzazione eccessiva",
+              "Vitiligine",
+              "Psoriasi",
+              "Eczema/dermatite atopica",
+              "Nessuno dei precedenti"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "checkbox",
+            "label": "Assumi uno dei seguenti farmaci?",
+            "required": true,
+            "options": [
+              "Antibiotici",
+              "Isotretinoina/farmaci per l'acne (attualmente o negli ultimi 6 mesi)",
+              "Cortisonici",
+              "Fluidificanti del sangue/anticoagulanti",
+              "Farmaci fotosensibilizzanti",
+              "Altro",
+              "Nessun farmaco"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "textarea",
+            "label": "Se hai selezionato 'Altro', specifica:",
+            "required": false,
+            "placeholder": "Indica i farmaci che assumi"
+          },
+          {
+            "id": "f12",
+            "type": "radio",
+            "label": "Nelle ultime 4 settimane la zona da trattare è stata abbronzata intensamente (sole o lampade solari)?",
+            "required": true,
+            "options": [
+              "Sì",
+              "No"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Informativa sull'epilazione laser",
+        "type": "document",
+        "fields": [],
+        "content": "\n                <h2>Informativa sull'epilazione laser</h2>\n\n                <p>Gentile cliente,</p>\n\n                <p>hai scelto un'epilazione definitiva con il laser. Con questo documento vogliamo informarti sulla procedura, sui possibili rischi e sulle cure successive.</p>\n\n                <h3>Come funziona l'epilazione laser</h3>\n                <p>Nell'epilazione laser vengono emessi impulsi di luce sulla pelle. La melanina (il pigmento) contenuta nei peli assorbe la luce e genera calore, che distrugge i follicoli piliferi. Poiché si possono trattare solo i peli in fase di crescita e in ogni momento solo il 20% circa dei peli si trova in questa fase, sono necessarie più sedute a distanza di 4-8 settimane.</p>\n\n                <h3>Possibili rischi ed effetti collaterali</h3>\n                <ul>\n                    <li><strong>Reazioni comuni e temporanee:</strong> arrossamento, lieve gonfiore, sensazione di calore simile a una scottatura solare per 1-3 giorni.</li>\n                    <li><strong>Effetti collaterali meno frequenti:</strong> vesciche, ustioni superficiali, iper- o ipopigmentazione temporanea (scurimento o schiarimento della pelle).</li>\n                    <li><strong>Complicazioni rare:</strong> formazione di cicatrici, alterazioni permanenti della pigmentazione, infezioni, riattivazione dell'herpes.</li>\n                </ul>\n\n                <h3>Indicazioni importanti prima del trattamento</h3>\n                <ul>\n                    <li>Nelle 4 settimane precedenti il trattamento non abbronzare la zona da trattare (né al sole né con lampade solari).</li>\n                    <li>I peli da trattare devono essere lunghi 1-2 mm (radersi circa 1-3 giorni prima del trattamento).</li>\n                    <li>Per almeno 4 settimane prima del trattamento non usare metodi che rimuovono il pelo dalla radice (ceretta, epilatore, filo).</li>\n                    <li>Evita autoabbronzanti o prodotti molto profumati sulla zona da trattare.</li>\n                </ul>\n\n                <h3>Cura successiva</h3>\n                <ul>\n                    <li>Per 48 ore dopo il trattamento: niente bagni caldi, sauna, attività fisica intensa o piscina.</li>\n                    <li>Per 14 giorni dopo il trattamento: protezione solare costante (SPF 50+) sulla zona trattata.</li>\n                    <li>In caso di arrossamenti o gonfiore, applica impacchi freddi e usa prodotti lenitivi senza profumo.</li>\n                    <li>2-3 settimane dopo il trattamento i peli trattati possono cadere: è normale.</li>\n                </ul>\n\n                <h3>Risultati e aspettative</h3>\n                <p>I risultati dell'epilazione laser variano da persona a persona e dipendono da diversi fattori, come fototipo, colore dei peli e stato ormonale. Per un risultato ottimale sono di norma necessarie 6-10 sedute. Una riduzione duratura del 70-90% dei peli è realistica, ma non è possibile garantire l'eliminazione del 100% dei peli. I cambiamenti ormonali possono causare una nuova crescita.</p>\n                "
+      },
+      {
+        "id": "p5",
+        "title": "Consenso informato",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Ho letto e compreso le informazioni sull'epilazione laser.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Ho ricevuto informazioni sui possibili rischi ed effetti collaterali.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Confermo di non presentare nessuna delle controindicazioni indicate o di averne parlato con chi esegue il trattamento.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f16",
+            "type": "checkbox",
+            "label": "Mi impegno a rispettare le indicazioni pre e post-trattamento.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          },
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Sono consapevole che sono necessarie più sedute e che non è possibile garantire l'eliminazione completa dei peli.",
+            "required": true,
+            "options": [
+              "Sì"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Firma cliente",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Firma cliente",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "title": "Conferma",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n                <h2>Grazie per le tue informazioni!</h2>\n\n                <p>I tuoi dati e il tuo consenso informato all'epilazione laser sono stati registrati.</p>\n\n                <h3>Indicazioni importanti per il tuo appuntamento:</h3>\n                <ul>\n                    <li>Presentati con la zona da trattare rasata (la lunghezza ideale dei peli è 1-2 mm)</li>\n                    <li>Il giorno del trattamento non applicare lozioni, creme o trucco sulla zona da trattare</li>\n                    <li>Indossa abiti comodi che permettano di accedere facilmente alla zona da trattare</li>\n                    <li>Dopo il trattamento non fissare impegni importanti, nel caso compaiano arrossamenti</li>\n                </ul>\n\n                <p>Per risultati ottimali ti consigliamo di rispettare il piano di trattamento concordato.</p>\n                "
+      }
+    ],
+    "tags": [
+      "Laser",
+      "Epilazione",
+      "IPL",
+      "Epilazione definitiva",
+      "Epilazione"
+    ]
+  }
+]

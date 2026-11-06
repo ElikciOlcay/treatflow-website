@@ -228,11 +228,11 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
         "Szablony, generator formularzy z AI lub konfiguracja razem z nami",
         "Bezpieczne przechowywanie w karcie klienta",
       ],
-      secondaryCta: { label: "Wypróbuj przykładowe formularze", href: "/en/try-forms" },
+      secondaryCta: { label: "Wypróbuj przykładowe formularze", href: "/pl/wyprobuj-formularze" },
       promo: {
         title: "Przetestuj przykładowe formularze bez rejestracji",
         text: "Poniższe szablony pokazują, jak działa cyfrowa rejestracja klienta. Formularze dla swojego salonu tworzysz w generatorze AI albo przygotowujemy je wspólnie z Tobą.",
-        href: "/en/try-forms",
+        href: "/pl/wyprobuj-formularze",
         cta: "Otwórz przykłady",
       },
       image: {
@@ -275,7 +275,7 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
           "Treatflow wysyła cyfrowe formularze wywiadu i zgody przed wizytą. Odpowiedzi i podpisy trafiają do karty klienta.",
       },
       relatedLinks: [
-        { href: "/en/try-forms", label: "Wypróbuj przykładowe formularze" },
+        { href: "/pl/wyprobuj-formularze", label: "Wypróbuj przykładowe formularze" },
         { href: "/en/client-records", label: "Kartoteka klientów" },
         { href: "/en/treatment-documentation", label: "Dokumentacja zabiegów" },
         { href: "/en/aesthetic-clinic-software", label: "Program dla gabinetu medycyny estetycznej" },

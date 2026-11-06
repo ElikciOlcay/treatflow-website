@@ -1,0 +1,1604 @@
+[
+  {
+    "id": "microneedling-1",
+    "name": "Microneedling: intake & toestemming",
+    "description": "Uitgebreid formulier voor microneedling met huidanalyse, medische voorgeschiedenis, contra-indicaties en professionele toestemming van de klant.",
+    "category": "Anti-aging",
+    "difficulty": "komplex",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Behandelwensen & huidanalyse",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Welke huidproblemen wil je met microneedling laten behandelen?",
+            "required": true,
+            "options": [
+              "Acnelittekens",
+              "Fijne lijntjes en rimpels",
+              "Vergrote poriën",
+              "Ongelijkmatige teint",
+              "Pigmentvlekken/hyperpigmentatie",
+              "Striae",
+              "Algemene verbetering van de huid",
+              "Littekens (geen acne)",
+              "Doffe, vermoeide huid",
+              "Anders"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "textarea",
+            "label": "Als je ‘Anders’ hebt gekozen, licht dit dan toe:",
+            "required": false,
+            "placeholder": "Beschrijf je specifieke huidklachten"
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "Welk huidtype past het best bij jou?",
+            "required": true,
+            "options": [
+              "Type I (zeer licht, verbrandt altijd, wordt nooit bruin)",
+              "Type II (licht, verbrandt snel, wordt nauwelijks bruin)",
+              "Type III (gemiddeld, verbrandt soms, wordt goed bruin)",
+              "Type IV (donkerder, verbrandt zelden, wordt snel bruin)",
+              "Type V (donker, verbrandt zeer zelden)",
+              "Type VI (zeer donker/zwart, verbrandt nooit)"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Hoe zou je je huid op dit moment omschrijven?",
+            "required": true,
+            "options": [
+              "Normaal en gezond",
+              "Droog en schilferig",
+              "Vet en glanzend",
+              "Gecombineerde huid (T-zone vet, wangen droog)",
+              "Gevoelig en snel geïrriteerd",
+              "Onzuiver, met puistjes/mee-eters",
+              "Rijpere huid met rimpels"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "checkbox",
+            "label": "Welke van de volgende huidproblemen heb je op dit moment?",
+            "required": true,
+            "options": [
+              "Actieve acne/puistjes",
+              "Rosacea/couperose",
+              "Eczeem/dermatitis",
+              "Open wondjes",
+              "Herpes/koortslip",
+              "Zonnebrand",
+              "Sterke roodheid",
+              "Geen van deze"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Heb je al ervaring met microneedling?",
+            "required": true,
+            "options": [
+              "Ja, in een salon of kliniek",
+              "Ja, thuis",
+              "Nee, het is de eerste keer"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "textarea",
+            "label": "Zo ja, beschrijf je ervaring:",
+            "required": false,
+            "placeholder": "Wanneer, waar, welk resultaat, bijwerkingen?"
+          },
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Wat verwacht je van de behandeling?",
+            "required": true,
+            "options": [
+              "Duidelijke verbetering van de huidstructuur",
+              "Geleidelijke verbetering over meerdere sessies",
+              "Preventieve anti-agingbehandeling",
+              "Gerichte behandeling van littekens",
+              "Weet ik niet, graag advies"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Uitgebreide medische voorgeschiedenis",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f9",
+            "type": "radio",
+            "label": "Ben je zwanger of geef je borstvoeding?",
+            "required": true,
+            "options": [
+              "Ja, zwanger",
+              "Ja, ik geef borstvoeding",
+              "Nee",
+              "Weet ik niet/mogelijk zwanger"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "radio",
+            "label": "Heb je in de afgelopen 6 maanden isotretinoïne gebruikt (acnemedicijn zoals Roaccutane)?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee",
+              "Weet ik niet"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Gebruik je een van de volgende medicijnen?",
+            "required": true,
+            "options": [
+              "Bloedverdunners (acenocoumarol, fenprocoumon/Marcoumar, DOAC's, heparine, ascal/acetylsalicylzuur e.d.)",
+              "Afweeronderdrukkende medicijnen",
+              "Cortison/prednison (tabletten of injecties)",
+              "Antibiotica",
+              "Chemotherapie",
+              "Antistollingsmiddelen",
+              "Anders",
+              "Geen medicijnen"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "textarea",
+            "label": "Bij ‘Anders’: noem alle medicijnen die je op dit moment gebruikt:",
+            "required": false,
+            "placeholder": "Naam van het medicijn, dosering, reden van gebruik"
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Heb je een van de volgende aandoeningen?",
+            "required": true,
+            "options": [
+              "Diabetes mellitus",
+              "Auto-immuunziekten (lupus, reuma e.d.)",
+              "Bloedstollingsstoornissen",
+              "Hart- en vaatziekten",
+              "Neiging tot keloïd/overmatige littekenvorming",
+              "Wondgenezingsstoornissen",
+              "Huidkanker of voorstadia daarvan",
+              "Epilepsie",
+              "Infectieziekten (hiv, hepatitis)",
+              "Geen van deze"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Heb je metalen implantaten in het gezicht of het behandelgebied?",
+            "required": true,
+            "options": [
+              "Tandimplantaten",
+              "Metalen tandvullingen",
+              "Implantaten in het gezicht",
+              "Permanente make-up",
+              "Andere metalen implantaten",
+              "Geen implantaten"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Heb je allergieën of overgevoeligheden?",
+            "required": true,
+            "options": [
+              "Lokale verdoving (lidocaïne e.d.)",
+              "Latex",
+              "Desinfectiemiddel",
+              "Hyaluronzuur",
+              "Vitamine C",
+              "Retinol/vitamine A",
+              "Anders",
+              "Geen bekende allergieën"
+            ]
+          },
+          {
+            "id": "f16",
+            "type": "textarea",
+            "label": "Als je allergieën hebt, beschrijf ze dan zo precies mogelijk:",
+            "required": false,
+            "placeholder": "Soort allergie, klachten, ernst"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Eerdere behandelingen & huidverzorging",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Welke esthetische behandelingen heb je in de afgelopen 6 maanden gehad?",
+            "required": true,
+            "options": [
+              "Chemische peelings",
+              "Laserbehandelingen",
+              "IPL (intense pulsed light)",
+              "Botox-injecties",
+              "Fillers met hyaluronzuur",
+              "Draadlift",
+              "Radiofrequentie",
+              "HIFU",
+              "Andere microneedlingbehandelingen",
+              "Geen esthetische behandelingen"
+            ]
+          },
+          {
+            "id": "f18",
+            "type": "textarea",
+            "label": "Zo ja, geef meer informatie over deze behandelingen:",
+            "required": false,
+            "placeholder": "Wanneer, waar, welke zones, tevredenheid, complicaties"
+          },
+          {
+            "id": "f19",
+            "type": "checkbox",
+            "label": "Welke huidverzorgingsproducten gebruik je regelmatig?",
+            "required": true,
+            "options": [
+              "Producten met retinol/retinoïden",
+              "AHA/BHA-zuren (glycolzuur, salicylzuur)",
+              "Vitamine C-serum",
+              "Benzoylperoxide",
+              "Hydrochinon",
+              "Tretinoïnecrème",
+              "Andere producten op recept",
+              "Alleen gewone huidverzorging"
+            ]
+          },
+          {
+            "id": "f20",
+            "type": "radio",
+            "label": "Wanneer heb je voor het laatst retinol of zuren gebruikt?",
+            "required": true,
+            "options": [
+              "In de afgelopen 24 uur",
+              "In de afgelopen 3 dagen",
+              "In de afgelopen week",
+              "Meer dan een week geleden",
+              "Ik gebruik dit niet"
+            ]
+          },
+          {
+            "id": "f21",
+            "type": "radio",
+            "label": "Ben je in de afgelopen 4 weken veel in de zon geweest?",
+            "required": true,
+            "options": [
+              "Ja, vakantie/zonnebank",
+              "Ja, af en toe",
+              "Nee, heb ik vermeden",
+              "Weet ik niet"
+            ]
+          },
+          {
+            "id": "f22",
+            "type": "radio",
+            "label": "Hoe goed kun je tegen pijn?",
+            "required": true,
+            "options": [
+              "Zeer slecht",
+              "Slecht",
+              "Gemiddeld",
+              "Goed",
+              "Zeer goed"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Informatie over microneedling",
+        "type": "document",
+        "fields": [],
+        "content": "\n<h2>Microneedling: uitgebreide informatie over de behandeling</h2>\n\n<p>Beste klant,</p>\n\n<p>Je hebt gekozen voor een microneedlingbehandeling. In dit informatiedocument lees je hoe de behandeling verloopt, welke risico's en bijwerkingen mogelijk zijn en welke nazorg nodig is.</p>\n\n<h3>Wat is microneedling?</h3>\n<p>Microneedling is een minimaal invasieve cosmetische behandeling waarbij fijne naaldjes (0,5–2,5 mm) gecontroleerde micro-beschadigingen in de huid maken. Daardoor komt het natuurlijke herstelproces van de huid op gang en wordt de aanmaak van collageen en elastine gestimuleerd. De methode staat ook bekend als collageeninductietherapie (CIT).</p>\n\n<h3>Zo werkt het</h3>\n<p>De fijne naaldjes gaan door de opperhuid (epidermis) heen tot in de lederhuid (dermis). Zo ontstaan microscopisch kleine kanaaltjes die de volgende processen in gang zetten:</p>\n<ul>\n<li><strong>Herstelreactie:</strong> De huid activeert haar natuurlijke herstelmechanismen</li>\n<li><strong>Aanmaak van collageen:</strong> Er vormen zich nieuwe collageenvezels die de huidstructuur verbeteren</li>\n<li><strong>Aanmaak van elastine:</strong> De huid wordt elastischer</li>\n<li><strong>Betere doorbloeding:</strong> De huid krijgt meer voedingsstoffen</li>\n<li><strong>Opname van werkstoffen:</strong> Verzorgingsproducten dringen dieper in de huid door</li>\n</ul>\n\n<h3>Toepassingen</h3>\n<ul>\n<li><strong>Acnelittekens:</strong> Verbetering van ingezonken (atrofische) littekens</li>\n<li><strong>Fijne lijntjes en rimpels:</strong> Gladder maken van oppervlakkige tekenen van huidveroudering</li>\n<li><strong>Vergrote poriën:</strong> Een verfijnder huidbeeld</li>\n<li><strong>Hyperpigmentatie:</strong> Lichter maken van pigmentvlekken</li>\n<li><strong>Striae:</strong> Verbetering van de huidstructuur</li>\n<li><strong>Algemene huidverjonging:</strong> Betere structuur en meer uitstraling</li>\n<li><strong>Littekens:</strong> Verschillende soorten littekenweefsel</li>\n</ul>\n\n<h3>Verloop van de behandeling</h3>\n<ol>\n<li><strong>Voorbereiding:</strong> Grondig reinigen en desinfecteren van de huid</li>\n<li><strong>Verdoving:</strong> Aanbrengen van een verdovende crème (inwerktijd 30–45 minuten)</li>\n<li><strong>Behandeling:</strong> Systematisch microneedlen met steriele naaldjes</li>\n<li><strong>Werkstoffen:</strong> Aanbrengen van serums (hyaluronzuur, vitamine C e.d.)</li>\n<li><strong>Kalmeren:</strong> Verkoelend, kalmerend masker</li>\n<li><strong>Nazorg:</strong> Aanbrengen van verzorging en zonbescherming</li>\n</ol>\n\n<h3>Behandelparameters</h3>\n<ul>\n<li><strong>Naaldlengte:</strong> 0,5–2,5 mm, afhankelijk van de huidklacht</li>\n<li><strong>Behandelduur:</strong> 30–90 minuten, afhankelijk van de zone</li>\n<li><strong>Aantal sessies:</strong> 3–6 behandelingen voor een optimaal resultaat</li>\n<li><strong>Tussenpoos:</strong> 4–6 weken tussen de sessies</li>\n</ul>\n\n<h3>Mogelijke bijwerkingen en risico's</h3>\n\n<h4>Vaak voorkomende, normale reacties (>50%):</h4>\n<ul>\n<li>Roodheid en zwelling gedurende 24–72 uur</li>\n<li>Een strak gevoel en lichte pijn</li>\n<li>Puntvormige bloedinkjes tijdens de behandeling</li>\n<li>Een gevoeligere huid</li>\n<li>Lichte schilfering na 3–5 dagen</li>\n</ul>\n\n<h4>Soms voorkomende bijwerkingen (5–20%):</h4>\n<ul>\n<li>Sterkere zwelling (vooral rond de ogen)</li>\n<li>Kleine bloeduitstortingen (petechiën)</li>\n<li>Jeuk tijdens het herstel</li>\n<li>Tijdelijke hyperpigmentatie</li>\n<li>Droogheid en schilfering</li>\n</ul>\n\n<h4>Zeldzame complicaties (1–5%):</h4>\n<ul>\n<li>Infecties (bacterieel, viraal, schimmel)</li>\n<li>Allergische reacties op werkstoffen</li>\n<li>Opleving van herpes simplex (koortslip)</li>\n<li>Post-inflammatoire hyperpigmentatie</li>\n<li>Littekenvorming (zeer zeldzaam bij een correcte uitvoering)</li>\n</ul>\n\n<h4>Zeer zeldzame risico's (<1%):</h4>\n<ul>\n<li>Blijvende pigmentveranderingen</li>\n<li>Vorming van granulomen</li>\n<li>Overdracht van ziekteverwekkers (als hygiëne-eisen niet worden nageleefd)</li>\n</ul>\n\n<h3>Contra-indicaties (behandeling niet mogelijk)</h3>\n<ul>\n<li>Zwangerschap en borstvoeding</li>\n<li>Actieve huidinfecties in het behandelgebied</li>\n<li>Actieve acne met ontstoken plekken</li>\n<li>Open wondjes of eczeem</li>\n<li>Gebruik van isotretinoïne in de afgelopen 6 maanden</li>\n<li>Neiging tot keloïd of afwijkende littekenvorming</li>\n<li>Bloedstollingsstoornissen</li>\n<li>Verminderde afweer (immunosuppressie)</li>\n<li>Huidkanker in het behandelgebied</li>\n</ul>\n\n<h3>Relatieve contra-indicaties (extra voorzichtigheid nodig)</h3>\n<ul>\n<li>Diabetes mellitus</li>\n<li>Auto-immuunziekten</li>\n<li>Gebruik van bloedverdunners</li>\n<li>Rosacea of een zeer gevoelige huid</li>\n<li>Recente blootstelling aan zon of een gebruinde huid</li>\n<li>Gebruik van retinol/zuren in de afgelopen 7 dagen</li>\n</ul>\n\n<h3>Belangrijke leefregels</h3>\n\n<h4>Vóór de behandeling (1–2 weken):</h4>\n<ul>\n<li>Geen producten met retinol of zuren gebruiken</li>\n<li>Zon en zonnebank vermijden</li>\n<li>Geen ontharing in het behandelgebied</li>\n<li>Snel last van een koortslip? Overleg over preventieve medicatie</li>\n<li>Voldoende drinken en gezond eten</li>\n</ul>\n\n<h4>Na de behandeling (1–2 weken):</h4>\n<ul>\n<li>24–48 uur: geen make-up op het behandelde gebied</li>\n<li>48 uur: geen sauna, sport of flink zweten</li>\n<li>1 week: geen producten met retinol of zuren</li>\n<li>2 weken: consequent zonbescherming gebruiken (SPF 50+)</li>\n<li>Milde, parfumvrije verzorgingsproducten gebruiken</li>\n<li>Niet krabben of wrijven</li>\n<li>Veel water drinken</li>\n</ul>\n\n<h3>Resultaten en verwachtingen</h3>\n<p>Het resultaat van microneedling ontwikkelt zich geleidelijk:</p>\n<ul>\n<li><strong>Direct:</strong> Een frisse gloed door de betere doorbloeding</li>\n<li><strong>Na 1–2 weken:</strong> Eerste verbetering van de huidstructuur</li>\n<li><strong>Na 4–6 weken:</strong> Merkbare aanmaak van nieuw collageen</li>\n<li><strong>Na 3–6 maanden:</strong> Volledig resultaat na een behandelkuur</li>\n</ul>\n\n<p>Realistische verwachtingen:</p>\n<ul>\n<li>30–70% verbetering van de huidstructuur</li>\n<li>25–50% minder zichtbare littekens</li>\n<li>Verfijnde poriën</li>\n<li>Een elastischere huid</li>\n<li>Een egalere teint</li>\n</ul>\n\n<h3>Kosten en behandelplan</h3>\n<p>De kosten hangen af van het behandelgebied en het aantal sessies. Voor een optimaal resultaat adviseren we:</p>\n<ul>\n<li>3–6 behandelingen met tussenpozen van 4–6 weken</li>\n<li>Onderhoudsbehandelingen elke 6–12 maanden</li>\n<li>Persoonlijke aanpassingen op basis van hoe je huid reageert</li>\n</ul>\n\n<h3>Andere behandelmogelijkheden</h3>\n<ul>\n<li>Chemische peelings</li>\n<li>Laserresurfacing</li>\n<li>Radiofrequentiebehandelingen</li>\n<li>IPL (intense pulsed light)</li>\n<li>Injectables (fillers, botox)</li>\n<li>Chirurgische ingrepen</li>\n<li>Geen behandeling</li>\n</ul>\n\n<p><strong>Bij nood:</strong> Krijg je ernstige bijwerkingen of complicaties, neem dan direct contact met ons op of ga naar de dichtstbijzijnde spoedeisende hulp. Bel in een levensbedreigende situatie 112.</p>\n"
+      },
+      {
+        "id": "p5",
+        "title": "Uitgebreide toestemming",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f23",
+            "type": "checkbox",
+            "label": "Informatie en begrip",
+            "required": true,
+            "options": [
+              "Ik heb de uitgebreide informatie over microneedling volledig gelezen en begrepen.",
+              "Ik heb voldoende tijd gehad om het informatiedocument te lezen.",
+              "Al mijn vragen zijn naar tevredenheid beantwoord.",
+              "Ik begrijp hoe microneedling werkt.",
+              "Ik begrijp dat er voor een optimaal resultaat meerdere behandelingen nodig zijn."
+            ]
+          },
+          {
+            "id": "f24",
+            "type": "checkbox",
+            "label": "Risico's en bijwerkingen",
+            "required": true,
+            "options": [
+              "Ik ben geïnformeerd over alle mogelijke risico's en bijwerkingen.",
+              "Ik begrijp dat er ook bij een correcte uitvoering complicaties kunnen optreden.",
+              "Ik begrijp dat roodheid en zwelling normaal zijn.",
+              "Ik accepteer het risico op infecties bij onjuiste nazorg.",
+              "Ik begrijp dat pigmentveranderingen mogelijk zijn."
+            ]
+          },
+          {
+            "id": "f25",
+            "type": "checkbox",
+            "label": "Medische gegevens",
+            "required": true,
+            "options": [
+              "Ik bevestig dat al mijn gezondheidsgegevens juist en volledig zijn.",
+              "Ik heb geen van de genoemde contra-indicaties.",
+              "Ik meld veranderingen in mijn gezondheid direct.",
+              "Ik heb alle medicijnen en huidverzorgingsproducten die ik nu gebruik vermeld."
+            ]
+          },
+          {
+            "id": "f26",
+            "type": "checkbox",
+            "label": "Leefregels vooraf en nazorg",
+            "required": true,
+            "options": [
+              "Ik houd me aan de leefregels vóór de behandeling.",
+              "Ik volg de nazorgadviezen zorgvuldig op.",
+              "Ik begrijp hoe belangrijk zonbescherming na de behandeling is.",
+              "Bij problemen neem ik direct contact met jullie op."
+            ]
+          },
+          {
+            "id": "f27",
+            "type": "checkbox",
+            "label": "Verwachtingen en resultaten",
+            "required": true,
+            "options": [
+              "Ik heb realistische verwachtingen van het resultaat.",
+              "Ik weet dat het resultaat per persoon kan verschillen.",
+              "Ik begrijp dat er geen garantie op het resultaat kan worden gegeven.",
+              "Ik accepteer dat er meerdere behandelingen nodig zijn.",
+              "Ik begrijp dat het resultaat zich pas na verloop van tijd ontwikkelt."
+            ]
+          },
+          {
+            "id": "f28",
+            "type": "checkbox",
+            "label": "Vastlegging en privacy",
+            "required": true,
+            "options": [
+              "Ik ga ermee akkoord dat er foto's worden gemaakt voor het behandeldossier.",
+              "Ik begrijp dat deze foto's vertrouwelijk worden behandeld.",
+              "Ik geef toestemming om mijn gegevens op te slaan volgens de AVG (Algemene verordening gegevensbescherming)."
+            ]
+          },
+          {
+            "id": "f29",
+            "type": "textarea",
+            "label": "Aanvullende vragen of opmerkingen",
+            "required": false,
+            "placeholder": "Heb je nog vragen of wil je iets in het bijzonder laten weten?"
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Handtekening klant",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Handtekening klant",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "title": "Bevestiging en volgende stappen",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Bedankt voor je uitgebreide informatie!</h2>\n\n<p>Je gegevens en je toestemming voor de microneedlingbehandeling zijn volledig vastgelegd en worden vertrouwelijk behandeld.</p>\n\n<h3>Belangrijk voor je afspraak:</h3>\n\n<h4>1 week vóór de behandeling:</h4>\n<ul>\n<li>Geen producten met retinol of zuren gebruiken</li>\n<li>Zon en zonnebank vermijden</li>\n<li>Geen ontharing in het behandelgebied</li>\n<li>Snel last van een koortslip? Bespreek preventieve medicatie</li>\n</ul>\n\n<h4>Op de dag van de behandeling:</h4>\n<ul>\n<li>Kom zonder make-up op het behandelgebied</li>\n<li>Draag makkelijk zittende kleding</li>\n<li>Trek voldoende tijd uit (ca. 60–90 minuten)</li>\n<li>Voel je je niet lekker of heb je huidproblemen? Verzet dan je afspraak</li>\n</ul>\n\n<h4>Na de behandeling:</h4>\n<ul>\n<li>24–48 uur geen make-up</li>\n<li>48 uur geen sauna of intensief sporten</li>\n<li>1 week geen producten met retinol of zuren</li>\n<li>2 weken consequent zonbescherming (SPF 50+)</li>\n<li>Milde, parfumvrije verzorgingsproducten gebruiken</li>\n</ul>\n\n<h3>Behandelplan:</h3>\n<p>Voor een optimaal resultaat adviseren we 3–6 behandelingen met tussenpozen van 4–6 weken. Je volgende afspraak plannen we na de eerste behandeling, afhankelijk van hoe je huid reageert.</p>\n\n<h3>Bij nood:</h3>\n<p>Krijg je ernstige bijwerkingen of complicaties, neem dan direct contact met ons op of ga naar de dichtstbijzijnde spoedeisende hulp. Bel in een levensbedreigende situatie 112.</p>\n\n<p><strong>We kijken ernaar uit je professioneel en veilig te behandelen!</strong></p>\n"
+      }
+    ],
+    "tags": [
+      "Microneedling",
+      "Anti-aging",
+      "Littekenbehandeling",
+      "Huidverbetering",
+      "Collageen",
+      "CIT"
+    ]
+  },
+  {
+    "id": "permanent-makeup-1",
+    "name": "Permanente make-up: intake & toestemming",
+    "description": "Formulier voor permanente make-up/microblading met medische screening en vastlegging van de toestemming.",
+    "category": "Beauty",
+    "difficulty": "mittel",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Behandelzones & wensen",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Welke zones wil je laten behandelen?",
+            "required": true,
+            "options": [
+              "Wenkbrauwen",
+              "Eyeliner boven",
+              "Eyeliner onder",
+              "Lipcontour",
+              "Volledige lipshading",
+              "Schoonheidsvlekje",
+              "Tepelreconstructie",
+              "Camouflage van littekens"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Heb je eerder een PMU-behandeling (permanente make-up) gehad?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "textarea",
+            "label": "Zo ja, wanneer en waar?",
+            "required": false,
+            "placeholder": "Geef aan wanneer en waar je eerder bent behandeld"
+          },
+          {
+            "id": "f4",
+            "type": "textarea",
+            "label": "Welk resultaat wil je bereiken?",
+            "required": true,
+            "placeholder": "Beschrijf je wensen en ideeën"
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Medische voorgeschiedenis",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Ben je op dit moment zwanger of geef je borstvoeding?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "checkbox",
+            "label": "Heb je een van de volgende aandoeningen?",
+            "required": true,
+            "options": [
+              "Diabetes",
+              "Hart- en vaatziekten",
+              "Bloedstollingsstoornissen",
+              "Auto-immuunziekten",
+              "Huidziekten",
+              "Infectieziekten (hiv, hepatitis)",
+              "Epilepsie",
+              "Geen van deze"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Gebruik je bloedverdunners?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Heb je last van een koortslip (herpes) in het behandelgebied?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Ben je allergisch voor een van de volgende stoffen?",
+            "required": true,
+            "options": [
+              "Lokale verdoving",
+              "Latex",
+              "Nikkel of andere metalen",
+              "Kleurpigmenten",
+              "Geen van deze"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "textarea",
+            "label": "Andere relevante aandoeningen of allergieën",
+            "required": false,
+            "placeholder": "Vermeld hier andere relevante aandoeningen of allergieën"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Informatie over permanente make-up",
+        "type": "document",
+        "fields": [],
+        "content": "\n<h2>Informatie over de behandeling met permanente make-up</h2>\n\n<p>Beste klant,</p>\n\n<p>Je hebt gekozen voor een behandeling met permanente make-up. In dit document lees je hoe de behandeling verloopt, welke risico's mogelijk zijn en welke nazorg nodig is.</p>\n\n<h3>De behandelmethode</h3>\n<p>Bij permanente make-up worden met fijne naaldjes speciale kleurpigmenten die geschikt zijn voor gebruik op de huid in de bovenste huidlagen (epidermis/dermis) ingebracht. Afhankelijk van onder meer huidtype, levensstijl en blootstelling aan de zon blijft het resultaat meestal 1–5 jaar zichtbaar. Voor het beste resultaat is na 4–6 weken meestal een nabehandeling nodig.</p>\n\n<h3>Verloop van de behandeling</h3>\n<p>De behandeling bestaat uit de volgende stappen:</p>\n<ol>\n<li>Adviesgesprek en kleurkeuze</li>\n<li>Voortekenen van de gewenste vorm</li>\n<li>Plaatselijke verdoving van het behandelgebied (optioneel)</li>\n<li>Inbrengen van de kleurpigmenten</li>\n<li>Afsluitende verzorging en nazorgadvies</li>\n</ol>\n\n<h3>Mogelijke bijwerkingen en risico's</h3>\n<ul>\n<li><strong>Normale reacties:</strong> Roodheid, lichte zwelling, een licht branderig gevoel en een strak gevoel gedurende 1–2 dagen.</li>\n<li><strong>Zeldzame bijwerkingen:</strong> Sterke zwelling, infecties, allergische reacties op kleurpigmenten of verdovingsmiddelen, tijdelijke blaasjes.</li>\n<li><strong>Risico's op lange termijn:</strong> Kleurveranderingen, ongelijkmatig vervagen, een asymmetrisch resultaat, littekens.</li>\n</ul>\n\n<h3>Nazorg</h3>\n<p>Goede nazorg is essentieel voor het beste resultaat:</p>\n<ul>\n<li>Bescherm de behandelde zones 7–10 dagen tegen zon, zonnebank, sauna en chloorwater</li>\n<li>Raak het gebied zo min mogelijk aan en krab niet, ook niet als het jeukt</li>\n<li>Minstens 2 weken geen peelings, AHA-producten (vruchtenzuren) of retinol</li>\n<li>Gebruik na een eyelinerbehandeling pas een wimperkruller als alles volledig is genezen</li>\n<li>Kom na 4–6 weken voor de aanbevolen nabehandeling</li>\n</ul>\n\n<h3>Goed om te weten</h3>\n<ul>\n<li>Het definitieve resultaat zie je pas na genezing en een eventuele nabehandeling</li>\n<li>Direct na de behandeling lijkt de kleur veel intenser en donkerder</li>\n<li>Er kan geen garantie worden gegeven op de precieze kleurontwikkeling en houdbaarheid</li>\n<li>Ben je niet tevreden met het resultaat, dan kan een correctie nodig zijn</li>\n</ul>\n"
+      },
+      {
+        "id": "p4",
+        "title": "Toestemming",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Ik heb de informatie over de behandeling met permanente make-up gelezen en begrepen.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Ik ben geïnformeerd over mogelijke risico's en bijwerkingen.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Ik heb ruim de gelegenheid gehad om vragen te stellen.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Ik begrijp dat voor een optimaal resultaat een nabehandeling nodig kan zijn.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Ik ga ermee akkoord dat er foto's van het behandelde gebied worden gemaakt voor het behandeldossier.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Handtekening klant",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Handtekening klant",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Bevestiging",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Bedankt voor je gegevens!</h2>\n\n<p>Je gegevens en je toestemming voor de behandeling met permanente make-up zijn vastgelegd.</p>\n\n<h3>Let op vóór je afspraak:</h3>\n<ul>\n<li>Kom zonder make-up op het behandelgebied</li>\n<li>Neem 48 uur vóór de behandeling geen bloedverdunnende medicijnen in (alleen na overleg met je huisarts of behandelend arts)</li>\n<li>Vermijd op de dag van de behandeling alcohol en cafeïnehoudende dranken</li>\n<li>Neem als je wilt je eigen make-upproducten mee, zodat we de gewenste look kunnen bespreken</li>\n</ul>\n\n<p>We kijken ernaar uit je te zien!</p>\n"
+      }
+    ],
+    "tags": [
+      "Permanente make-up",
+      "PMU",
+      "Microblading",
+      "Wenkbrauwen",
+      "Eyeliner",
+      "Lippen"
+    ]
+  },
+  {
+    "id": "facial-treatment-1",
+    "name": "Gezichtsbehandeling: intake",
+    "description": "Algemene intake voor gezichtsbehandelingen met huidanalyse en behandelwensen.",
+    "category": "Gezichtsbehandelingen",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Huid & verzorging",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "radio",
+            "label": "Hoe zou je je huidtype omschrijven?",
+            "required": true,
+            "options": [
+              "Normaal",
+              "Droog",
+              "Vet",
+              "Gecombineerd",
+              "Gevoelig",
+              "Weet ik niet"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "checkbox",
+            "label": "Welke huidproblemen heb je?",
+            "required": true,
+            "options": [
+              "Acne/onzuiverheden",
+              "Roodheid/couperose",
+              "Pigmentvlekken",
+              "Fijne lijntjes/rimpels",
+              "Grove poriën",
+              "Droogheid/schilfering",
+              "Doffe huid",
+              "Geen specifieke problemen"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "textarea",
+            "label": "Beschrijf je dagelijkse huidverzorging",
+            "required": true,
+            "placeholder": "Reiniging, tonic, serum, dagcrème, zonnebrand e.d."
+          },
+          {
+            "id": "f4",
+            "type": "checkbox",
+            "label": "Welke producten gebruik je regelmatig?",
+            "required": false,
+            "options": [
+              "Retinol/vitamine A",
+              "AHA/BHA-zuren",
+              "Vitamine C",
+              "Hyaluronzuur",
+              "Niacinamide",
+              "Enzympeeling/scrub",
+              "Gezichtsolie",
+              "Maskers"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Eerdere behandelingen & wensen",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Heb je al eens een professionele gezichtsbehandeling gehad?",
+            "required": true,
+            "options": [
+              "Ja, regelmatig",
+              "Ja, af en toe",
+              "Ja, maar zelden",
+              "Nee, nog nooit"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "date",
+            "label": "Wanneer was je laatste professionele gezichtsbehandeling?",
+            "required": false
+          },
+          {
+            "id": "f7",
+            "type": "textarea",
+            "label": "Welke behandeling was dat en hoe heb je die ervaren?",
+            "required": false,
+            "placeholder": "bijv. klassieke gezichtsbehandeling, microdermabrasie, chemische peeling..."
+          },
+          {
+            "id": "f8",
+            "type": "checkbox",
+            "label": "In welke behandelingen ben je geïnteresseerd?",
+            "required": true,
+            "options": [
+              "Dieptereiniging/onzuiverheden verwijderen",
+              "Anti-agingbehandeling",
+              "Hydraterende behandeling",
+              "Kalmerende behandeling voor de gevoelige huid",
+              "Behandeling bij acne/onzuiverheden",
+              "Egaliserende behandeling bij pigmentvlekken",
+              "Lymfedrainage/massage"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "radio",
+            "label": "Hoe gevoelig reageert je huid op behandelingen?",
+            "required": true,
+            "options": [
+              "Zeer gevoelig",
+              "Licht gevoelig",
+              "Normaal",
+              "Robuust/niet gevoelig",
+              "Weet ik niet"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Vragen over je gezondheid",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f10",
+            "type": "checkbox",
+            "label": "Heb je een van de volgende huidaandoeningen?",
+            "required": true,
+            "options": [
+              "Constitutioneel eczeem/atopisch eczeem",
+              "Psoriasis",
+              "Rosacea",
+              "Snel last van een koortslip (herpes)",
+              "Schimmelinfecties",
+              "Geen vastgestelde huidaandoeningen"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "radio",
+            "label": "Gebruik je huidproducten op recept?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "textarea",
+            "label": "Zo ja, welke?",
+            "required": false,
+            "placeholder": "bijv. tretinoïne, azelaïnezuur, antibiotica..."
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Ben je allergisch of overgevoelig voor bepaalde ingrediënten?",
+            "required": true,
+            "options": [
+              "Parfum/geurstoffen",
+              "Conserveermiddelen",
+              "Etherische oliën",
+              "Noten/notenoliën",
+              "Anders",
+              "Niets bekend"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "textarea",
+            "label": "Als je ‘Anders’ hebt gekozen, licht dit dan toe:",
+            "required": false,
+            "placeholder": "Vermeld je allergieën/overgevoeligheden"
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Behandeldoelen",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f15",
+            "type": "textarea",
+            "label": "Wat zijn je belangrijkste wensen voor je huid?",
+            "required": true,
+            "placeholder": "Beschrijf wat je met de behandeling wilt bereiken"
+          },
+          {
+            "id": "f16",
+            "type": "radio",
+            "label": "Hoe belangrijk is het voor je om direct na de behandeling verschil te zien?",
+            "required": true,
+            "options": [
+              "Heel belangrijk",
+              "Belangrijk",
+              "Niet zo belangrijk, het gaat mij om het resultaat op lange termijn"
+            ]
+          },
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Ik geef toestemming voor:",
+            "required": true,
+            "options": [
+              "Onzuiverheden/mee-eters verwijderen (kan kort roodheid geven)",
+              "Lichte peelings (kunnen licht tintelen)",
+              "Gezichtsmassage",
+              "Maskers",
+              "Wenkbrauwen en wimpers verven"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Handtekening klant",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Handtekening klant",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Bevestiging",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Bedankt voor je gegevens!</h2>\n\n<p>Op basis van je antwoorden stemmen we je gezichtsbehandeling af op wat jouw huid nodig heeft.</p>\n\n<h3>Goed om te weten voor je afspraak:</h3>\n<ul>\n<li>Kom bij voorkeur zonder make-up</li>\n<li>Gebruik 24 uur vóór de behandeling geen scrubs of sterk werkende producten</li>\n<li>Laat ons weten als er iets aan je huid is veranderd</li>\n<li>Neem gerust je huidige verzorgingsproducten mee, dan nemen we die mee in het advies</li>\n</ul>\n\n<p>We kijken ernaar uit je te zien en je een ontspannende, effectieve behandeling te geven!</p>\n"
+      }
+    ],
+    "tags": [
+      "Gezichtsbehandeling",
+      "Huidverzorging",
+      "Schoonheidsbehandeling",
+      "Huidanalyse",
+      "Reiniging"
+    ]
+  },
+  {
+    "id": "lash-extension-1",
+    "name": "Wimperextensions: intake & toestemming",
+    "description": "Intake- en toestemmingsformulier voor wimperextensions.",
+    "category": "Beauty",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Wensen & ervaring",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "radio",
+            "label": "Heb je al ervaring met wimperextensions?",
+            "required": true,
+            "options": [
+              "Ja, regelmatig",
+              "Ja, af en toe",
+              "Nee, het is de eerste keer"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Welke look wil je?",
+            "required": true,
+            "options": [
+              "Natuurlijk",
+              "Subtiel",
+              "Dramatisch/vol",
+              "Cat-eye-effect",
+              "Doll-eye-effect",
+              "Weet ik niet, graag advies"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "checkbox",
+            "label": "Speciale wensen",
+            "required": false,
+            "options": [
+              "Extra licht",
+              "Waterbestendig",
+              "Gekleurde wimpers",
+              "Strass-steentjes"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Gewenste dikte van de wimpers",
+            "required": true,
+            "options": [
+              "Dun (0,05-0,07 mm)",
+              "Gemiddeld (0,10-0,12 mm)",
+              "Dik (0,15-0,20 mm)",
+              "Weet ik niet, graag advies"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Gewenste techniek",
+            "required": true,
+            "options": [
+              "Classic (1:1)",
+              "Volume (2D-4D)",
+              "Mega volume (5D+)",
+              "Hybrid (mix)",
+              "Weet ik niet, graag advies"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Gezondheid",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Draag je contactlenzen?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "checkbox",
+            "label": "Heb je een van de volgende oogaandoeningen?",
+            "required": true,
+            "options": [
+              "Bindvliesontsteking",
+              "Blefaritis (ooglidontsteking)",
+              "Droge ogen",
+              "Strontje",
+              "Glaucoom",
+              "Andere oogaandoeningen",
+              "Geen oogaandoeningen"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "textarea",
+            "label": "Als je ‘Andere oogaandoeningen’ hebt gekozen, licht dit dan toe:",
+            "required": false,
+            "placeholder": "Vermeld je oogaandoening(en)"
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Ben je allergisch voor de volgende materialen?",
+            "required": true,
+            "options": [
+              "Lijm/cyanoacrylaat",
+              "Latex",
+              "Tape/pleister",
+              "Acryl",
+              "Anders",
+              "Geen bekende allergieën"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "textarea",
+            "label": "Als je ‘Anders’ hebt gekozen, licht dit dan toe:",
+            "required": false,
+            "placeholder": "Vermeld je allergieën"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Informatie over wimperextensions",
+        "type": "document",
+        "fields": [],
+        "content": "\n<h2>Informatie over wimperextensions</h2>\n\n<p>Beste klant,</p>\n\n<p>Je hebt gekozen voor wimperextensions. In dit document lees je hoe de behandeling verloopt, welke risico's mogelijk zijn en welke nazorg nodig is.</p>\n\n<h3>Verloop van de behandeling</h3>\n<p>Bij wimperextensions worden synthetische wimpers één voor één met een speciale lijm op je eigen wimpers gezet. Afhankelijk van de gewenste look duurt de behandeling ongeveer 1,5 tot 2,5 uur. Voor een goede hechting kom je het best met schone wimpers, zonder olie en make-up.</p>\n\n<h3>Mogelijke risico's en bijwerkingen</h3>\n<ul>\n<li><strong>Allergische reacties:</strong> In zeldzame gevallen kan de gebruikte lijm een allergische reactie geven. Neem bij de eerste tekenen van een allergie (sterke roodheid, zwelling, jeuk) direct contact met ons op.</li>\n<li><strong>Geïrriteerde ogen:</strong> Tijdens de behandeling kunnen je ogen licht geïrriteerd raken. Dit trekt daarna meestal snel weg.</li>\n<li><strong>Schade aan de eigen wimpers:</strong> Verkeerd aanbrengen of onjuiste verzorging kan je eigen wimpers beschadigen.</li>\n</ul>\n\n<h3>Nazorg en verzorgingstips</h3>\n<ul>\n<li>Vermijd de eerste 24–48 uur na de behandeling contact met water, stoom en vette producten.</li>\n<li>Gebruik geen producten op oliebasis rond de ogen.</li>\n<li>Wrijf niet in je ogen en kom niet te vaak aan je wimpers.</li>\n<li>Gebruik geen wimperkruller en geen waterproof mascara.</li>\n<li>Borstel je wimpers regelmatig met een schoon wimperborsteltje (spoolie).</li>\n<li>Slaap bij voorkeur op je rug, zodat er geen druk op de wimpers komt.</li>\n<li>Voor het beste resultaat adviseren we om de 2–3 weken een opvulbehandeling.</li>\n</ul>\n\n<h3>Hoe lang ze blijven zitten</h3>\n<p>Hoe lang wimperextensions blijven zitten verschilt per persoon en hangt af van de natuurlijke groeicyclus van je wimpers, je huidtype en de verzorging. Gemiddeld blijven ze 4–6 weken zitten. Met regelmatige opvulafspraken (om de 2–3 weken) houd je het resultaat langer mooi.</p>\n"
+      },
+      {
+        "id": "p4",
+        "title": "Toestemming",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Ik heb de informatie over wimperextensions gelezen en begrepen.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Ik ben geïnformeerd over mogelijke risico's en bijwerkingen.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Ik bevestig dat ik geen van de genoemde contra-indicaties heb.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Ik volg de aanbevolen verzorgingstips op.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Ik ga ermee akkoord dat er vóór en na de behandeling foto's worden gemaakt voor het behandeldossier.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Handtekening klant",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Handtekening klant",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Bevestiging",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Bedankt voor je gegevens!</h2>\n\n<p>Je gegevens en je toestemming voor de behandeling met wimperextensions zijn vastgelegd.</p>\n\n<h3>Goed om te weten voor je afspraak:</h3>\n<ul>\n<li>Kom zonder oogmake-up</li>\n<li>Haal je contactlenzen vóór de behandeling uit</li>\n<li>Drink 24 uur vooraf geen sterk cafeïnehoudende dranken (dan trillen je ogen minder)</li>\n<li>Houd na de behandeling rekening met voldoende tijd, zodat de lijm volledig kan drogen</li>\n</ul>\n\n<p>We kijken ernaar uit je te zien!</p>\n"
+      }
+    ],
+    "tags": [
+      "Wimperextensions",
+      "Lashes",
+      "Beauty",
+      "Extensions",
+      "Styling"
+    ]
+  },
+  {
+    "id": "nail-design-1",
+    "name": "Nagelstyling: intake",
+    "description": "Intakeformulier voor nagelbehandelingen en nagelstyling.",
+    "category": "Nagels",
+    "difficulty": "einfach",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Wensen & ervaring",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Gewenste behandeling",
+            "required": true,
+            "options": [
+              "Gelnagels",
+              "Acrylnagels",
+              "Shellac/gellak",
+              "Versteviging van de eigen nagel",
+              "Nagelverlenging met tips",
+              "Nagelreparatie",
+              "Nail art/versiering",
+              "French manicure"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "radio",
+            "label": "Heb je al ervaring met kunstnagels?",
+            "required": true,
+            "options": [
+              "Ja, regelmatig",
+              "Ja, af en toe",
+              "Eén keer, al even geleden",
+              "Nee, het is de eerste keer"
+            ]
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "Wanneer had je voor het laatst kunstnagels?",
+            "required": false,
+            "options": [
+              "Ik heb ze nu",
+              "In de afgelopen 4 weken",
+              "In de afgelopen 3 maanden",
+              "Meer dan 3 maanden geleden",
+              "Nooit"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "radio",
+            "label": "Gewenste nagellengte",
+            "required": true,
+            "options": [
+              "Kort (natuurlijk)",
+              "Middellang",
+              "Lang",
+              "Extra lang"
+            ]
+          },
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Gewenste nagelvorm",
+            "required": true,
+            "options": [
+              "Vierkant",
+              "Ovaal",
+              "Rond",
+              "Amandel",
+              "Stiletto",
+              "Ballerina/coffin",
+              "Weet ik niet, graag advies"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Medische voorgeschiedenis",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f6",
+            "type": "checkbox",
+            "label": "Heb je (of had je in de afgelopen 6 maanden) een van de volgende nagelproblemen?",
+            "required": true,
+            "options": [
+              "Kalknagels/nagelschimmel",
+              "Nagelpsoriasis",
+              "Brosse nagels",
+              "Gescheurde nagels",
+              "Loslatende nagels",
+              "Ontsteking van het nagelbed",
+              "Verkleurde nagels",
+              "Geen nagelproblemen"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Heb je diabetes?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee"
+            ]
+          },
+          {
+            "id": "f8",
+            "type": "checkbox",
+            "label": "Ben je allergisch voor de volgende materialen?",
+            "required": true,
+            "options": [
+              "Acryl",
+              "UV-gel",
+              "Nagellak/gellak",
+              "Nagellakremover/aceton",
+              "Latex",
+              "Desinfectiemiddel",
+              "Anders",
+              "Geen bekende allergieën"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "textarea",
+            "label": "Als je ‘Anders’ hebt gekozen, licht dit dan toe:",
+            "required": false,
+            "placeholder": "Vermeld je allergieën"
+          },
+          {
+            "id": "f10",
+            "type": "radio",
+            "label": "Ben je op dit moment zwanger?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee",
+              "Zeg ik liever niet"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Informatie over nagelstyling",
+        "type": "document",
+        "fields": [],
+        "content": "\n<h2>Informatie over kunstnagels</h2>\n\n<p>Beste klant,</p>\n\n<p>Je hebt gekozen voor kunstnagels. In dit document lees je hoe de behandeling verloopt, welke risico's mogelijk zijn en welke nazorg nodig is.</p>\n\n<h3>Verloop van de behandeling</h3>\n<p>De behandeling bestaat uit de volgende stappen:</p>\n<ol>\n<li>Voorbereiden van de eigen nagels (inkorten, vijlen, nagelriemen verzorgen)</li>\n<li>Opruwen van het nageloppervlak</li>\n<li>Plaatsen van tips (bij verlenging) of sjablonen</li>\n<li>Aanbrengen van het materiaal (gel, acryl e.d.)</li>\n<li>Uitharden onder een uv- of ledlamp (bij gel)</li>\n<li>Vormgeven en vijlen van de nagels</li>\n<li>Afwerken en aanbrengen van kleur/design</li>\n</ol>\n\n<h3>Mogelijke risico's en bijwerkingen</h3>\n<ul>\n<li><strong>Allergische reacties:</strong> In zeldzame gevallen kunnen de gebruikte materialen een allergie veroorzaken.</li>\n<li><strong>Geïrriteerd nagelbed:</strong> Bij onjuist aanbrengen of verwijderen kan het nagelbed geïrriteerd raken.</li>\n<li><strong>Verzwakking van de eigen nagels:</strong> De eigen nagels kunnen dunner en gevoeliger worden, vooral na onjuist verwijderen of vaak wisselen.</li>\n<li><strong>Nagelinfecties:</strong> Onvoldoende hygiëne of beschadigde nagels kunnen tot infecties leiden.</li>\n</ul>\n\n<h3>Nazorg en verzorgingstips</h3>\n<ul>\n<li>Draag handschoenen bij huishoudelijk werk met water of schoonmaakmiddelen.</li>\n<li>Gebruik regelmatig nagelriemolie om je eigen nagels en nagelriemen te verzorgen.</li>\n<li>Gebruik je nagels niet als gereedschap en zet er geen overmatige druk op.</li>\n<li>Is een nagel beschadigd? Kom dan snel langs in de salon om hem te laten repareren.</li>\n<li>Voor mooie nagels adviseren we om de 3–4 weken een opvulbehandeling.</li>\n<li>Zie je tekenen van een infectie of allergische reactie, ga dan meteen naar je huisarts.</li>\n</ul>\n\n<h3>Verwijderen</h3>\n<p>Kunstnagels moeten altijd professioneel worden verwijderd. Afbreken of eraf trekken kan de eigen nagel beschadigen. Kom voor het verwijderen het liefst bij ons terug.</p>\n"
+      },
+      {
+        "id": "p4",
+        "title": "Toestemming",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f11",
+            "type": "checkbox",
+            "label": "Ik heb de informatie over kunstnagels gelezen en begrepen.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f12",
+            "type": "checkbox",
+            "label": "Ik ben geïnformeerd over mogelijke risico's en bijwerkingen.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Ik bevestig dat ik geen van de genoemde contra-indicaties heb die een behandeling uitsluiten.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Ik volg de aanbevolen verzorgingstips op.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Ik begrijp dat kunstnagels professioneel moeten worden verwijderd.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Handtekening klant",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Handtekening klant",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "title": "Bevestiging",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Bedankt voor je gegevens!</h2>\n\n<p>Je gegevens en je toestemming voor de nagelbehandeling zijn vastgelegd.</p>\n\n<h3>Goed om te weten voor je afspraak:</h3>\n<ul>\n<li>Verwijder vóór je afspraak eventuele nagellak</li>\n<li>Kom met schone, verzorgde nagels</li>\n<li>Heb je een bepaald design in gedachten? Neem gerust foto's of voorbeelden mee</li>\n<li>Trek voor de behandeling ongeveer 1,5 tot 2 uur uit</li>\n</ul>\n\n<p>We kijken ernaar uit je te zien!</p>\n"
+      }
+    ],
+    "tags": [
+      "Nagelstyling",
+      "Nagels",
+      "Kunstnagels",
+      "Manicure",
+      "Gelnagels"
+    ]
+  },
+  {
+    "id": "laser-hair-removal-1",
+    "name": "Laserontharing: intake & toestemming",
+    "description": "Intake- en toestemmingsformulier voor laserontharing.",
+    "category": "Ontharing",
+    "difficulty": "mittel",
+    "pages": [
+      {
+        "id": "p1",
+        "title": "Behandelzones",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f1",
+            "type": "checkbox",
+            "label": "Welke zones wil je laten behandelen?",
+            "required": true,
+            "options": [
+              "Bovenlip",
+              "Kin",
+              "Wangen",
+              "Oksels",
+              "Armen",
+              "Borst",
+              "Buik",
+              "Rug",
+              "Bikinilijn",
+              "Benen",
+              "Anders"
+            ]
+          },
+          {
+            "id": "f2",
+            "type": "textarea",
+            "label": "Als je ‘Anders’ hebt gekozen, licht dit dan toe:",
+            "required": false,
+            "placeholder": "Vermeld de zones die je wilt laten behandelen"
+          },
+          {
+            "id": "f3",
+            "type": "radio",
+            "label": "Ben je al eerder met laser onthaard?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee"
+            ]
+          },
+          {
+            "id": "f4",
+            "type": "textarea",
+            "label": "Zo ja, wanneer en met welk resultaat?",
+            "required": false,
+            "placeholder": "Beschrijf je eerdere ervaringen"
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "Huidtype & haarstructuur",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f5",
+            "type": "radio",
+            "label": "Wat is je huidtype volgens Fitzpatrick?",
+            "required": true,
+            "options": [
+              "Type I: zeer licht, verbrandt altijd, wordt nooit bruin",
+              "Type II: licht, verbrandt snel, wordt nauwelijks bruin",
+              "Type III: gemiddelde huidskleur, verbrandt soms, wordt goed bruin",
+              "Type IV: olijfkleurig, verbrandt zelden, wordt snel en goed bruin",
+              "Type V: bruin, verbrandt zeer zelden, wordt heel goed bruin",
+              "Type VI: donkerbruin tot zwart, verbrandt nooit"
+            ]
+          },
+          {
+            "id": "f6",
+            "type": "radio",
+            "label": "Welke kleur heeft het haar in de te behandelen zones?",
+            "required": true,
+            "options": [
+              "Zwart",
+              "Donkerbruin",
+              "Middelbruin",
+              "Lichtbruin",
+              "Donkerblond",
+              "Lichtblond",
+              "Rood",
+              "Grijs/wit"
+            ]
+          },
+          {
+            "id": "f7",
+            "type": "radio",
+            "label": "Hoe is de haarstructuur in de te behandelen zones?",
+            "required": true,
+            "options": [
+              "Dik/grof",
+              "Gemiddeld",
+              "Fijn",
+              "Gemengd"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "Medische voorgeschiedenis",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f8",
+            "type": "radio",
+            "label": "Ben je zwanger of geef je borstvoeding?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee",
+              "Weet ik niet zeker"
+            ]
+          },
+          {
+            "id": "f9",
+            "type": "checkbox",
+            "label": "Heb je een van de volgende aandoeningen?",
+            "required": true,
+            "options": [
+              "Diabetes",
+              "Auto-immuunziekten",
+              "Huidkanker (zelf of in de familie)",
+              "Epilepsie",
+              "Herpes in het behandelgebied",
+              "Neiging tot keloïd/overmatige littekenvorming",
+              "Vitiligo",
+              "Psoriasis",
+              "Eczeem/atopisch eczeem",
+              "Geen van deze"
+            ]
+          },
+          {
+            "id": "f10",
+            "type": "checkbox",
+            "label": "Gebruik je een van de volgende medicijnen?",
+            "required": true,
+            "options": [
+              "Antibiotica",
+              "Isotretinoïne/acnemedicijnen (nu of in de afgelopen 6 maanden)",
+              "Cortison/prednison",
+              "Bloedverdunners",
+              "Medicijnen die de huid gevoeliger maken voor licht",
+              "Anders",
+              "Geen medicijnen"
+            ]
+          },
+          {
+            "id": "f11",
+            "type": "textarea",
+            "label": "Als je ‘Anders’ hebt gekozen, licht dit dan toe:",
+            "required": false,
+            "placeholder": "Vermeld je medicijnen"
+          },
+          {
+            "id": "f12",
+            "type": "radio",
+            "label": "Is het behandelgebied in de afgelopen 4 weken flink gebruind (zon of zonnebank)?",
+            "required": true,
+            "options": [
+              "Ja",
+              "Nee"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "Informatie over laserontharing",
+        "type": "document",
+        "fields": [],
+        "content": "\n<h2>Informatie over laserontharing</h2>\n\n<p>Beste klant,</p>\n\n<p>Je hebt gekozen voor blijvende haarreductie met een laser. In dit document lees je hoe de behandeling verloopt, welke risico's mogelijk zijn en welke nazorg nodig is.</p>\n\n<h3>Zo werkt laserontharing</h3>\n<p>Bij laserontharing worden lichtpulsen op de huid gericht. Het melanine (pigment) in het haar neemt het licht op. Daarbij ontstaat warmte die de haarzakjes vernietigt. Alleen haren in de groeifase kunnen worden behandeld, en op elk moment zit maar ongeveer 20% van de haren in die fase. Daarom zijn meerdere behandelingen met tussenpozen van 4–8 weken nodig.</p>\n\n<h3>Mogelijke risico's en bijwerkingen</h3>\n<ul>\n<li><strong>Vaak voorkomende, tijdelijke reacties:</strong> Roodheid, lichte zwelling en een warm gevoel, vergelijkbaar met zonnebrand, gedurende 1–3 dagen.</li>\n<li><strong>Minder vaak voorkomende bijwerkingen:</strong> Blaasjes, oppervlakkige brandwonden, tijdelijke hyper- of hypopigmentatie (donkerder of lichter worden van de huid).</li>\n<li><strong>Zeldzame complicaties:</strong> Littekens, blijvende pigmentveranderingen, infecties, opleving van herpes (koortslip).</li>\n</ul>\n\n<h3>Belangrijk vóór de behandeling</h3>\n<ul>\n<li>Het behandelgebied 4 weken vóór de behandeling niet laten bruinen (geen zon en geen zonnebank).</li>\n<li>Het haar in het behandelgebied moet 1–2 mm lang zijn (scheer ca. 1–3 dagen vóór de behandeling).</li>\n<li>Gebruik minstens 4 weken vóór de behandeling geen ontharingsmethoden die het haar met wortel en al verwijderen (waxen, epileren, threading).</li>\n<li>Gebruik geen zelfbruiner of sterk geparfumeerde producten op het behandelgebied.</li>\n</ul>\n\n<h3>Nazorg</h3>\n<ul>\n<li>48 uur na de behandeling: geen heet bad, sauna, zware inspanning of zwembad.</li>\n<li>14 dagen na de behandeling: het behandelde gebied consequent beschermen tegen de zon (SPF 50+).</li>\n<li>Bij roodheid of zwelling: koelen en kalmerende, parfumvrije producten gebruiken.</li>\n<li>Behandelde haren kunnen 2–3 weken na de behandeling uitvallen; dat is normaal.</li>\n</ul>\n\n<h3>Resultaten en verwachtingen</h3>\n<p>Het resultaat van laserontharing verschilt per persoon en hangt af van onder meer huidtype, haarkleur en hormoonhuishouding. Voor een optimaal resultaat zijn meestal 6–10 behandelingen nodig. Een blijvende vermindering van 70–90% van de haren is realistisch, maar een volledig haarvrije huid kan niet worden gegarandeerd. Hormonale veranderingen kunnen nieuwe haargroei veroorzaken.</p>\n"
+      },
+      {
+        "id": "p5",
+        "title": "Toestemming",
+        "type": "form",
+        "fields": [
+          {
+            "id": "f13",
+            "type": "checkbox",
+            "label": "Ik heb de informatie over laserontharing gelezen en begrepen.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f14",
+            "type": "checkbox",
+            "label": "Ik ben geïnformeerd over mogelijke risico's en bijwerkingen.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f15",
+            "type": "checkbox",
+            "label": "Ik bevestig dat ik geen van de genoemde contra-indicaties heb, of dat ik ze met mijn behandelaar heb besproken.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f16",
+            "type": "checkbox",
+            "label": "Ik houd me aan de leefregels vóór en na de behandeling.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          },
+          {
+            "id": "f17",
+            "type": "checkbox",
+            "label": "Ik begrijp dat meerdere behandelingen nodig zijn en dat volledige haarverwijdering niet kan worden gegarandeerd.",
+            "required": true,
+            "options": [
+              "Ja"
+            ]
+          }
+        ],
+        "signature_required": true,
+        "signature_text": "Handtekening klant",
+        "signature_slots": [
+          {
+            "id": "patient",
+            "label": "Handtekening klant",
+            "required": true
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "title": "Bevestiging",
+        "type": "confirmation",
+        "fields": [],
+        "content": "\n<h2>Bedankt voor je gegevens!</h2>\n\n<p>Je gegevens en je toestemming voor de laserontharing zijn vastgelegd.</p>\n\n<h3>Belangrijk voor je afspraak:</h3>\n<ul>\n<li>Kom met een geschoren behandelgebied (een haarlengte van 1–2 mm is ideaal)</li>\n<li>Gebruik op de dag van de behandeling geen lotion, crème of make-up op het behandelgebied</li>\n<li>Draag makkelijk zittende kleding, zodat het behandelgebied goed bereikbaar is</li>\n<li>Plan na de behandeling geen belangrijke afspraken, voor het geval je huid rood wordt</li>\n</ul>\n\n<p>Voor een optimaal resultaat adviseren we je om je aan het afgesproken behandelplan te houden.</p>\n"
+      }
+    ],
+    "tags": [
+      "Laser",
+      "Ontharing",
+      "IPL",
+      "Blijvende ontharing",
+      "Epileren"
+    ]
+  }
+]

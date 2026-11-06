@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blogPosts'
-import { DEMO_FORMS, demoFormHreflang } from '@/lib/demoForms'
+import { DEMO_FORMS, DEMO_LOCALES, demoFormAlternates } from '@/lib/demoForms'
 import { buildHreflangAlternates, seoPageSlugs, type SeoPageKey } from '@/app/i18n/seo'
 import { TR_PATHS } from '@/app/i18n/tr-seo/paths'
 import { trGuides } from '@/app/i18n/tr-seo/guides'
@@ -38,8 +38,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         internationalEntry('/funktionen-live-testen', 'try-features', 0.7, 'de'),
         internationalEntry('/formulare-testen', 'try-forms', 0.8),
         ...DEMO_FORMS.flatMap((form) => {
-            const { languages } = demoFormHreflang(form.slug)
-            return [languages.de, languages.en, languages.tr].map((url) => ({
+            const { languages } = demoFormAlternates('de', form.slug)
+            return DEMO_LOCALES.map((locale) => languages[locale]).map((url) => ({
                 url,
                 lastModified: new Date(),
                 changeFrequency: 'monthly' as const,

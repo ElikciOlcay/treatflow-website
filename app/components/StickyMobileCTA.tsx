@@ -8,15 +8,14 @@ import type { Market } from '@/app/i18n/config';
 import { isPrefixedMarket } from '@/app/i18n/config';
 import { getPrimaryCtaPath, isExternalCta } from '@/app/i18n/market-access';
 import { isCookiebotDialogVisible, onCookiebotVisibilityChange } from '@/lib/cookiebot';
+import { DEMO_FORMS_PATH } from '@/lib/demoForms/paths';
 
 const LANDING_PAGES_WITH_OWN_STICKY_CTA = ['/landing/kosmetikstudio-software'];
 
 function hideStickyCta(pathname: string | null): boolean {
   if (!pathname) return false;
   if (LANDING_PAGES_WITH_OWN_STICKY_CTA.includes(pathname)) return true;
-  if (pathname.startsWith('/formulare-testen/')) return true;
-  if (pathname.startsWith('/en/try-forms/')) return true;
-  if (pathname.startsWith('/tr/try-forms/')) return true;
+  if (Object.values(DEMO_FORMS_PATH).some((path) => pathname.startsWith(`${path}/`))) return true;
   return false;
 }
 

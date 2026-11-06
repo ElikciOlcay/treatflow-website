@@ -40,12 +40,7 @@ function isFieldVisible(field: DemoFormField, answers: Answers): boolean {
 export default function DemoFormPlayer({ form, locale = 'de' }: DemoFormPlayerProps) {
   const copy = getDemoCopy(locale);
   const galleryHref = DEMO_FORMS_PATH[locale];
-  const registerHref =
-    locale === 'tr'
-      ? APP_REGISTER_BY_MARKET.tr
-      : locale === 'en'
-        ? APP_REGISTER_BY_MARKET.en
-        : APP_REGISTER_BY_MARKET.de;
+  const registerHref = APP_REGISTER_BY_MARKET[locale];
   const fillPages = useMemo(() => getFillPages(form), [form]);
   const confirmation = useMemo(() => getConfirmationPage(form), [form]);
   const [pageIndex, setPageIndex] = useState(0);
