@@ -103,6 +103,7 @@ Evet. Treatflow bilgisayarda, tablette ve akıllı telefonda çalışır; kurulu
 - [Hakkımızda](https://www.treatflow.io/tr/about): Treatflow'un ekibi ve hikâyesi
 - [İletişim](https://www.treatflow.io/tr/contact): hello@treatflow.io adresine yazın veya görüşme planlayın
 - [Blog](https://www.treatflow.io/tr/blog): salon sahipleri için yazılar
+  - [Randevu defteri ve Excel mi, randevu takip programı mı?](https://www.treatflow.io/tr/blog/randevu-defteri-mi-randevu-takip-programi-mi): defterden randevu takip programına geçiş rehberi
 - [Rehber](https://www.treatflow.io/tr/rehber): salon yönetimi rehberleri
 - [Kullanım Koşulları](https://www.treatflow.io/tr/terms): hizmet koşulları
 - [Instagram](https://www.instagram.com/treatflow.io/): @treatflow.io
