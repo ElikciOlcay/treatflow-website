@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ArrowRight, CheckCircle, ChevronDown, Gift, Globe, Zap } from "lucide-react";
 import SocialProofBar from "@/app/components/SocialProofBar";
 import { BASE_URL } from "@/app/i18n/config";
-import { DEMO_BOOKING_URL } from "@/app/i18n/market-access";
+import { demoBookingUrl } from "@/app/i18n/market-access";
 import { stripTitleBrand } from "@/app/i18n/seo";
 import { sitePagePath } from "@/app/i18n/site-pages";
 import { getHomeContent } from "@/app/site/content/home";
@@ -70,6 +70,7 @@ export function StudioWebsiteSchemas({ market }: { market: SiteMarket }) {
 
 export default function StudioWebsitePage({ market }: { market: SiteMarket }) {
   const content = getStudioWebsiteContent(market);
+  const demoUrl = demoBookingUrl(market);
   const { hero, demo, why, services, advantage, pricing, process, faq, cta } = content;
 
   return (
@@ -97,15 +98,17 @@ export default function StudioWebsitePage({ market }: { market: SiteMarket }) {
               {hero.sub}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <a
-                href={DEMO_BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-              >
-                {hero.primaryCta}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+              {demoUrl && (
+                <a
+                  href={demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                >
+                  {hero.primaryCta}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              )}
               <a
                 href={content.emailHref}
                 className="bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-xl text-lg font-semibold hover:border-indigo-300 hover:text-indigo-600 transition-all duration-300 flex items-center justify-center"
@@ -337,9 +340,8 @@ export default function StudioWebsitePage({ market }: { market: SiteMarket }) {
                 </div>
               </div>
               <a
-                href={DEMO_BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={demoUrl ?? content.emailHref}
+                {...(demoUrl ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="block w-full bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition-all duration-300 text-center shadow-md hover:shadow-lg"
               >
                 {pricing.cta}
@@ -397,15 +399,17 @@ export default function StudioWebsitePage({ market }: { market: SiteMarket }) {
             {cta.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <a
-              href={DEMO_BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-indigo-600 px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              {cta.primary}
-              <ArrowRight className="ml-3 h-6 w-6" />
-            </a>
+            {demoUrl && (
+              <a
+                href={demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-indigo-600 px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-gray-50 transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                {cta.primary}
+                <ArrowRight className="ml-3 h-6 w-6" />
+              </a>
+            )}
             <a
               href={content.emailHref}
               className="border-2 border-white text-white px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 flex items-center justify-center"

@@ -346,7 +346,7 @@ export const homeNl: HomeContent = {
     ],
     contactTitle: "Nog andere vragen?",
     contactText:
-      "Ons supportteam helpt je graag. Stuur ons een mail of plan meteen een adviesgesprek in.",
+      "Ons supportteam helpt je graag. Stuur ons gerust een mail.",
     demoCta: "Adviesgesprek inplannen",
   },
 

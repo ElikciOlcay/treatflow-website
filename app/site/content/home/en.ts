@@ -337,7 +337,7 @@ export const homeEn: HomeContent = {
     ],
     contactTitle: "Any other questions?",
     contactText:
-      "Our support team is happy to help. Drop us an email or book a call with us.",
+      "Our support team is happy to help. Just drop us an email.",
     demoCta: "Book a call",
   },
 

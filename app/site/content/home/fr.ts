@@ -348,7 +348,7 @@ export const homeFr: HomeContent = {
     ],
     contactTitle: "D'autres questions ?",
     contactText:
-      "Notre équipe support est là pour vous aider. Écrivez-nous un e-mail ou réservez directement un appel conseil.",
+      "Notre équipe support est là pour vous aider. Écrivez-nous simplement un e-mail.",
     demoCta: "Réserver un appel conseil",
   },
 

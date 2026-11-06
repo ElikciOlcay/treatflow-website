@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Play, Star } from "lucide-react";
 import StudioCalendarBackdrop from "./StudioCalendarBackdrop";
-import { APP_REGISTER_BY_MARKET, DEMO_BOOKING_URL } from "@/app/i18n/market-access";
+import { APP_REGISTER_BY_MARKET, demoBookingUrl } from "@/app/i18n/market-access";
 import { resolveHref } from "@/app/i18n/site-pages";
 import { homeDe } from "@/app/site/content/home/de";
 import type { HomeHeroContent } from "@/app/site/content/home/types";
@@ -23,6 +23,7 @@ export default function HomeHero({
   market?: SiteMarket;
 } = {}) {
   const registerUrl = APP_REGISTER_BY_MARKET[market];
+  const demoUrl = demoBookingUrl(market);
   const liveDemoHref = resolveHref(market, content.liveDemo.href);
   const [calendarStep, setCalendarStep] = useState(0);
 
@@ -73,14 +74,16 @@ export default function HomeHero({
               {content.primaryCta}
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-0.5" />
             </a>
-            <a
-              href={DEMO_BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center rounded-xl border border-gray-200 bg-white/80 px-6 py-4 text-base font-semibold sm:px-8 sm:text-lg text-gray-700 backdrop-blur transition-colors hover:border-indigo-300 hover:text-indigo-600"
-            >
-              {content.demoCta}
-            </a>
+            {demoUrl && (
+              <a
+                href={demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center rounded-xl border border-gray-200 bg-white/80 px-6 py-4 text-base font-semibold sm:px-8 sm:text-lg text-gray-700 backdrop-blur transition-colors hover:border-indigo-300 hover:text-indigo-600"
+              >
+                {content.demoCta}
+              </a>
+            )}
           </div>
           <div className="mb-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-gray-600 lg:justify-start">
             {content.checks.map((item) => (

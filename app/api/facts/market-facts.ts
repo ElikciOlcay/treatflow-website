@@ -1,6 +1,6 @@
 import { BASE_URL, prefixedMarkets, siteLanguages, type PrefixedMarket } from "@/app/i18n/config";
 import { featureAvailable, gatedFeatures, filterByFeature, type Feature } from "@/app/i18n/feature-availability";
-import { APP_BASE_URL, APP_REGISTER_BY_MARKET, DEMO_BOOKING_URL } from "@/app/i18n/market-access";
+import { APP_BASE_URL, APP_REGISTER_BY_MARKET } from "@/app/i18n/market-access";
 import { resolveHref, sitePagePath, type SitePageKey } from "@/app/i18n/site-pages";
 import { getAppointmentCalendarContent } from "@/app/site/content/appointment-calendar";
 import { getClientRecordsContent } from "@/app/site/content/client-records";
@@ -211,7 +211,6 @@ export function buildMarketFacts(market: PrefixedMarket) {
     contact: {
       email: "hello@treatflow.io",
       contactPage: abs(sitePagePath(market, "contact")),
-      demoBooking: DEMO_BOOKING_URL,
     },
     metrics: {
       customers: "500+",

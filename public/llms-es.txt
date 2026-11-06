@@ -39,7 +39,6 @@
 
 - [Prueba gratis](https://app.treatflow.io/auth/register?lang=es): 14 días gratis, sin tarjeta de crédito
 - [Prueba las funciones en directo](https://www.treatflow.io/es/probar-funciones): reserva una cita online y documenta un tratamiento dictándolo con IA, sin registro
-- [Reserva una demo](https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f): presentación personal con el equipo de Treatflow
 
 ## Idiomas
 
