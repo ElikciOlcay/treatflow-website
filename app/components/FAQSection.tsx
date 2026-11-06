@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
-import { DEMO_BOOKING_URL } from '@/app/i18n/market-access';
+import { demoBookingUrl } from '@/app/i18n/market-access';
 import { filterByFeature } from '@/app/i18n/feature-availability';
 import RichTextView from '@/app/site/RichTextView';
 import { homeDe } from '@/app/site/content/home/de';
@@ -19,6 +19,7 @@ export default function FAQSection({
 } = {}) {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
     const faqs = filterByFeature(content.items, market);
+    const demoUrl = demoBookingUrl(market);
 
     const toggleFAQ = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -91,14 +92,16 @@ export default function FAQSection({
                             >
                                 hello@treatflow.io
                             </a>
-                            <a
-                                href={DEMO_BOOKING_URL}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-all duration-300"
-                            >
-                                {content.demoCta}
-                            </a>
+                            {demoUrl && (
+                                <a
+                                    href={demoUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition-all duration-300"
+                                >
+                                    {content.demoCta}
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>

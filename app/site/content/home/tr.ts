@@ -348,7 +348,7 @@ export const homeTr: HomeContent = {
     ],
     contactTitle: "Başka bir sorunuz mu var?",
     contactText:
-      "Destek ekibimiz memnuniyetle yardımcı olur. Bize e-posta gönderin veya doğrudan bir danışmanlık görüşmesi ayarlayın.",
+      "Destek ekibimiz memnuniyetle yardımcı olur. Bize e-posta göndermeniz yeterli.",
     demoCta: "Danışmanlık görüşmesi ayarlayın",
   },
 

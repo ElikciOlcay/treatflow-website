@@ -345,7 +345,7 @@ export const homeEs: HomeContent = {
     ],
     contactTitle: "¿Te queda alguna duda?",
     contactText:
-      "Nuestro equipo de soporte estará encantado de ayudarte. Escríbenos un email o reserva directamente una llamada de asesoramiento.",
+      "Nuestro equipo de soporte estará encantado de ayudarte. Escríbenos un email.",
     demoCta: "Reserva una llamada de asesoramiento",
   },
 

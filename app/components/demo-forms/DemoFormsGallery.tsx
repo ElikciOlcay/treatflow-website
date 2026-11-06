@@ -6,10 +6,11 @@ import {
   getDemoCopy,
   type DemoLocale,
 } from '@/lib/demoForms';
-import { APP_REGISTER_BY_MARKET, DEMO_BOOKING_URL } from '@/app/i18n/market-access';
+import { APP_REGISTER_BY_MARKET, demoBookingUrl } from '@/app/i18n/market-access';
 
 export default function DemoFormsGallery({ locale }: { locale: DemoLocale }) {
   const copy = getDemoCopy(locale);
+  const demoUrl = demoBookingUrl(locale);
   const featureHref = DEMO_FORMS_FEATURE_PATH[locale];
   const registerHref = APP_REGISTER_BY_MARKET[locale];
 
@@ -77,15 +78,17 @@ export default function DemoFormsGallery({ locale }: { locale: DemoLocale }) {
             </div>
             <h2 className="text-lg font-bold text-gray-900 mb-2">{copy.gallery.supportTitle}</h2>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">{copy.gallery.supportText}</p>
-            <a
-              href={DEMO_BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-700"
-            >
-              {copy.gallery.supportCta}
-              <ArrowRight className="ml-1 h-4 w-4" />
-            </a>
+            {demoUrl && (
+              <a
+                href={demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-700"
+              >
+                {copy.gallery.supportCta}
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </a>
+            )}
           </div>
         </div>
       </section>

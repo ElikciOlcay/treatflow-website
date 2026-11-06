@@ -1,10 +1,11 @@
 import { ArrowRight, CheckCircle } from "lucide-react";
-import { APP_REGISTER_BY_MARKET, DEMO_BOOKING_URL } from "@/app/i18n/market-access";
+import { APP_REGISTER_BY_MARKET, demoBookingUrl } from "@/app/i18n/market-access";
 import type { HomeCtaContent } from "@/app/site/content/home/types";
 import type { SiteMarket } from "@/app/site/content/shared";
 
 /** Startseite, Abschnitt 7: Abschluss-CTA. */
 export default function HomeFinalCta({ content, market }: { content: HomeCtaContent; market: SiteMarket }) {
+  const demoUrl = demoBookingUrl(market);
   return (
     <section className="py-20 bg-indigo-600" aria-label={content.ariaLabel}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -35,14 +36,16 @@ export default function HomeFinalCta({ content, market }: { content: HomeCtaCont
             {content.primaryCta}
             <ArrowRight className="ml-3 h-5 w-5" />
           </a>
-          <a
-            href={DEMO_BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border-2 border-white text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 flex items-center justify-center w-full sm:w-auto"
-          >
-            {content.demoCta}
-          </a>
+          {demoUrl && (
+            <a
+              href={demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-white text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 flex items-center justify-center w-full sm:w-auto"
+            >
+              {content.demoCta}
+            </a>
+          )}
         </div>
         <p className="text-sm text-indigo-200 mt-6">{content.note}</p>
       </div>

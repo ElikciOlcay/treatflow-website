@@ -39,7 +39,6 @@ Ultimo aggiornamento: 2026-11-05. Lingua: italiano. Questo file descrive il sito
 
 - [Prova gratis](https://app.treatflow.io/auth/register?lang=it): 14 giorni gratis, senza carta di credito
 - [Prova le funzioni dal vivo](https://www.treatflow.io/it/prova-funzioni-dal-vivo): prenota un appuntamento online e documenta un trattamento con la dettatura IA, senza registrazione
-- [Prenota una demo](https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f): presentazione personale con il team Treatflow
 
 ## Lingue
 

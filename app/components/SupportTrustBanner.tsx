@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { ArrowRight, Sparkles, CheckCircle } from 'lucide-react';
-import { APP_REGISTER_BY_MARKET, DEMO_BOOKING_URL } from '@/app/i18n/market-access';
+import { APP_REGISTER_BY_MARKET, demoBookingUrl } from '@/app/i18n/market-access';
 
 type HomeLocale = 'de' | 'en';
 
@@ -31,6 +31,7 @@ const copy = {
 
 export default function SupportTrustBanner({ locale = 'de' }: { locale?: HomeLocale }) {
   const t = copy[locale];
+  const demoUrl = demoBookingUrl(locale);
   return (
     <section className="py-12 bg-white" aria-label={t.aria}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,14 +61,16 @@ export default function SupportTrustBanner({ locale = 'de' }: { locale?: HomeLoc
                   {t.trial}
                   <ArrowRight className="h-4 w-4" />
                 </a>
-                <a
-                  href={DEMO_BOOKING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20"
-                >
-                  {t.demo}
-                </a>
+                {demoUrl && (
+                  <a
+                    href={demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+                  >
+                    {t.demo}
+                  </a>
+                )}
               </div>
             </div>
 

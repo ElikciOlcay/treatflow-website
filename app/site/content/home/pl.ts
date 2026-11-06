@@ -346,7 +346,7 @@ export const homePl: HomeContent = {
     ],
     contactTitle: "Masz inne pytania?",
     contactText:
-      "Nasz zespół wsparcia chętnie pomoże. Napisz do nas e-mail albo od razu umów rozmowę z doradcą.",
+      "Nasz zespół wsparcia chętnie pomoże. Napisz do nas e-mail.",
     demoCta: "Umów rozmowę z doradcą",
   },
 

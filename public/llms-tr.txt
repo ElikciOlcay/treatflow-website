@@ -38,7 +38,6 @@ Son güncelleme: 2026-11-05. Dil: Türkçe. Bu dosya Türkçe web sitesini (http
 - [Ücretsiz deneyin](https://app.treatflow.io/auth/register?lang=tr): 14 gün ücretsiz, kredi kartı gerekmez
 - [Özellikleri canlı deneyin](https://www.treatflow.io/tr/canli-demo): kayıt olmadan tarayıcıda online randevu, yapay zekâ ile sesli işlem notu ve dijital formları deneyin
 - [Örnek formları inceleyin](https://www.treatflow.io/tr/try-forms): örnek anamnez ve onam formlarını açıp doldurun
-- [Demo görüşmesi planlayın](https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f): Treatflow ekibiyle kişisel tanıtım
 
 ## Diller
 

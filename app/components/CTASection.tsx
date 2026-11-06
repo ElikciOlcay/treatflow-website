@@ -1,10 +1,11 @@
-import { APP_REGISTER_BY_MARKET, DEMO_BOOKING_URL } from '@/app/i18n/market-access';
+import { APP_REGISTER_BY_MARKET, demoBookingUrl } from '@/app/i18n/market-access';
 import { getFeatureCommon } from '@/app/site/content/feature-common';
 import type { SiteMarket } from '@/app/site/content/shared';
 
 /** Abschluss-Block mit Test- und Beratungs-Button. Ohne Props = Deutsch. */
 export default function CTASection({ market = 'de' }: { market?: SiteMarket } = {}) {
     const content = getFeatureCommon(market).ctaSection;
+    const demoUrl = demoBookingUrl(market);
     return (
         <section className="py-20 bg-indigo-600">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -23,14 +24,16 @@ export default function CTASection({ market = 'de' }: { market?: SiteMarket } = 
                     >
                         {content.primary}
                     </a>
-                    <a
-                        href={DEMO_BOOKING_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-indigo-600 transition-colors"
-                    >
-                        {content.demo}
-                    </a>
+                    {demoUrl && (
+                        <a
+                            href={demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-indigo-600 transition-colors"
+                        >
+                            {content.demo}
+                        </a>
+                    )}
                 </div>
             </div>
         </section>

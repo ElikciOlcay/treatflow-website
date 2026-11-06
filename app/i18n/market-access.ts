@@ -122,6 +122,11 @@ export const APP_LOGIN_URL = APP_LOGIN_BY_MARKET.de;
 export const DEMO_BOOKING_URL =
   "https://meetings-eu1.hubspot.com/olcay-elikci/treatflow-beratung?uuid=1193ce3c-32b4-42ff-96c6-bb0b6752719f";
 
+/** Persönliche Demo/Beratung gibt es nur auf Deutsch; in anderen Sprachen kein Termin-Link (`null`). */
+export function demoBookingUrl(market: Market | string): string | null {
+  return market === "de" ? DEMO_BOOKING_URL : null;
+}
+
 /** @deprecated use APP_LOGIN_BY_MARKET */
 export const APP_LOGIN_BY_LOCALE = APP_LOGIN_BY_MARKET;
 
