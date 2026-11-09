@@ -1,0 +1,59 @@
+/* Formular-Szene: Antworten tippen, Auswahl markieren, Unterschrift zeichnen.
+   Endzustand steht jeweils in der Klasse selbst – ohne Animation ist alles fertig ausgefüllt. */
+
+.tf-forms-type {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  clip-path: inset(0);
+  animation: tf-forms-type 0.7s steps(14, end) both;
+}
+
+.tf-forms-pick {
+  background-color: #eef2ff;
+  border-color: #a5b4fc;
+  color: #4338ca;
+  animation: tf-forms-pick 0.3s ease-out both;
+}
+
+/* Pfade mit pathLength="1" */
+.tf-forms-sign {
+  stroke-dasharray: 1;
+  animation: tf-forms-sign 1.5s cubic-bezier(0.45, 0, 0.25, 1) both;
+}
+
+@keyframes tf-forms-type {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0);
+  }
+}
+
+@keyframes tf-forms-pick {
+  from {
+    background-color: #fff;
+    border-color: #e5e7eb;
+    color: #6b7280;
+  }
+}
+
+@keyframes tf-forms-sign {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tf-forms-type,
+  .tf-forms-pick,
+  .tf-forms-sign {
+    animation: none !important;
+  }
+}

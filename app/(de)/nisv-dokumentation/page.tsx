@@ -6,6 +6,7 @@ import SocialProofBar from '@/app/components/SocialProofBar';
 import Script from 'next/script';
 import { generateBreadcrumbSchema } from '@/app/components/Breadcrumbs';
 import FeatureHero, { FeatureTitleHighlight } from '@/app/components/FeatureHero';
+import NisvDemo from '@/app/components/feature-demos/NisvDemo';
 import ProductVideoSection from '@/app/components/ProductVideoSection';
 import {
     FeatureUnderstand,
@@ -105,10 +106,7 @@ export default function NisvDokumentationPage() {
                 description="Beratung, Einwilligung und Archiv – weniger Papier, Fristen im Blick."
                 chips={['10 Jahre Archiv', 'Digitale Signatur', 'Fristen im Blick']}
                 secondaryCta={{ label: 'Zu den Formularen', href: '/formulare' }}
-                image={{
-                    src: '/images/lifestyle/nisv-dokumentation-sicherheit.png',
-                    alt: 'NiSV-Dokumentation digital und sicher im Kosmetikstudio',
-                }}
+                visual={<NisvDemo market="de" />}
             />
 
             <ProductVideoSection

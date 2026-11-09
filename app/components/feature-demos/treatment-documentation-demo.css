@@ -1,0 +1,141 @@
+/* Behandlungsdoku-Szene: Felder füllen, Nachher-Foto einblenden, Zone markieren, Diktat → Text, Unterschrift.
+   Endzustand steht jeweils in der Klasse selbst – ohne Animation ist alles fertig. */
+
+/* Feld bekommt kurz den Fokus, während der Wert eingetragen wird */
+.tf-tdoc-focus {
+  animation: tf-tdoc-focus 0.9s ease-out both;
+}
+
+/* Nachher-Foto wird von links nach rechts aufgedeckt */
+.tf-tdoc-wipe {
+  clip-path: inset(0);
+  animation: tf-tdoc-wipe 0.9s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+/* Linien mit pathLength="1": Markierung auf dem Foto, Unterschrift */
+.tf-tdoc-draw {
+  stroke-dasharray: 1;
+  animation: tf-tdoc-draw 0.8s ease-out both;
+}
+
+.tf-tdoc-sign {
+  stroke-dasharray: 1;
+  animation: tf-tdoc-draw 1.4s cubic-bezier(0.45, 0, 0.25, 1) both;
+}
+
+/* Pegel der Sprachaufnahme */
+.tf-tdoc-wave {
+  transform-origin: center;
+  animation: tf-tdoc-wave 0.8s ease-in-out infinite;
+}
+
+/* Wort erscheint im Diktat */
+.tf-tdoc-word {
+  animation: tf-tdoc-word 0.25s ease-out both;
+}
+
+/* Ausblenden zu einem festen Zeitpunkt (über animation-delay) */
+.tf-tdoc-out {
+  opacity: 0;
+  animation: tf-tdoc-out 0.3s ease-in both;
+}
+
+.tf-tdoc-rec {
+  animation: tf-tdoc-rec 1.2s ease-out infinite;
+}
+
+/* KI-Knopf wird „gedrückt“ */
+.tf-tdoc-press {
+  animation: tf-tdoc-press 0.6s ease-out both;
+}
+
+@keyframes tf-tdoc-focus {
+  0% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+    background-color: #f9fafb;
+  }
+  30% {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+    background-color: #eef2ff;
+  }
+}
+
+@keyframes tf-tdoc-wipe {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+
+@keyframes tf-tdoc-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes tf-tdoc-wave {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes tf-tdoc-word {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+}
+
+@keyframes tf-tdoc-out {
+  from {
+    opacity: 1;
+  }
+}
+
+@keyframes tf-tdoc-rec {
+  0% {
+    box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 12px rgba(244, 63, 94, 0);
+  }
+}
+
+@keyframes tf-tdoc-press {
+  0% {
+    transform: none;
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+  }
+  35% {
+    transform: scale(0.94);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.3);
+  }
+  100% {
+    transform: none;
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tf-tdoc-focus,
+  .tf-tdoc-wipe,
+  .tf-tdoc-draw,
+  .tf-tdoc-sign,
+  .tf-tdoc-wave,
+  .tf-tdoc-word,
+  .tf-tdoc-out,
+  .tf-tdoc-rec,
+  .tf-tdoc-press {
+    animation: none !important;
+  }
+  .tf-tdoc-draw,
+  .tf-tdoc-sign {
+    stroke-dashoffset: 0;
+  }
+}

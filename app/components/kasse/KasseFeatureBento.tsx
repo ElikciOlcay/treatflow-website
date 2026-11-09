@@ -23,7 +23,7 @@ import {
     Undo2,
     UserRound,
 } from 'lucide-react';
-import { formatEuro, useCountUp, useInView, usePrefersReducedMotion } from './motion';
+import { formatEuro, useCountUp, useInView, usePrefersReducedMotion } from '@/app/components/motion';
 
 const PAYMENT_METHODS = [
     { label: 'Bar', icon: Banknote },
@@ -155,7 +155,7 @@ export default function KasseFeatureBento() {
                                     <span className="font-medium text-gray-900">Hydrafacial Deluxe</span>
                                     <span className="font-semibold tabular-nums text-indigo-600">89,00 €</span>
                                 </div>
-                                <div className={`flex items-center gap-1.5 rounded-lg px-2.5 py-2 font-medium text-emerald-700 ${inView ? 'tf-pos-pop' : ''}`} style={{ animationDelay: '400ms' }}>
+                                <div className={`flex items-center gap-1.5 rounded-lg px-2.5 py-2 font-medium text-emerald-700 ${inView ? 'tf-ui-pop' : ''}`} style={{ animationDelay: '400ms' }}>
                                     <Check className="h-3.5 w-3.5" />
                                     In Lenas Kundenkartei gespeichert
                                 </div>
@@ -310,7 +310,7 @@ export default function KasseFeatureBento() {
                                     <span key={hour} className="flex h-full flex-1 flex-col items-center gap-1">
                                         <span className="flex w-full flex-1 items-end">
                                             <span
-                                                className={`block w-full rounded-t-md bg-gradient-to-t from-indigo-600 to-sky-400 ${inView ? 'tf-pos-bar' : ''}`}
+                                                className={`block w-full rounded-t-md bg-gradient-to-t from-indigo-600 to-sky-400 ${inView ? 'tf-ui-bar' : ''}`}
                                                 style={{ height: `${value}%`, animationDelay: `${index * 70}ms` }}
                                             />
                                         </span>

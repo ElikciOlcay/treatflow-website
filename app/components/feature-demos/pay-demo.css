@@ -1,0 +1,21 @@
+/* Treatflow-Pay-Szene: Karteneingabe wird „getippt“ */
+.tf-pay-type {
+  display: inline-block;
+  white-space: nowrap;
+  animation: tf-pay-type 0.9s steps(19, end) 0.3s both;
+}
+
+@keyframes tf-pay-type {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tf-pay-type {
+    animation: none !important;
+  }
+}

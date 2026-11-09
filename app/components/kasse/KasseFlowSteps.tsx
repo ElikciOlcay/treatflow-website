@@ -41,7 +41,7 @@ export default function KasseFlowSteps() {
                 <ol className="relative grid gap-10 md:grid-cols-4 md:gap-6">
                     {/* Linie zwischen den Schritten (nur ab Tablet) */}
                     <span className="pointer-events-none absolute left-[12.5%] right-[12.5%] top-7 hidden h-0.5 bg-gray-200 md:block" aria-hidden="true">
-                        <span className="tf-pos-progress block h-full w-full bg-gradient-to-r from-indigo-600 via-indigo-500 to-sky-500" />
+                        <span className="tf-ui-progress block h-full w-full bg-gradient-to-r from-indigo-600 via-indigo-500 to-sky-500" />
                     </span>
 
                     {KASSE_FLOW_STEPS.map(({ icon: Icon, title, text }, index) => (

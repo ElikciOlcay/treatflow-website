@@ -1,0 +1,41 @@
+/* Kunden-Workflow-Szene: Linie füllt sich, ein leuchtender Punkt wandert zum nächsten Schritt */
+.tf-workflow-line {
+  transform-origin: top;
+  animation: tf-workflow-line 0.45s ease-in-out both;
+}
+
+.tf-workflow-dot {
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25), 0 0 12px 3px rgba(56, 189, 248, 0.65);
+  animation: tf-workflow-dot 0.45s ease-in-out both;
+}
+
+@keyframes tf-workflow-line {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes tf-workflow-dot {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -5px) scale(0.6);
+  }
+  25% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 15px) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tf-workflow-line,
+  .tf-workflow-dot {
+    animation: none !important;
+  }
+}

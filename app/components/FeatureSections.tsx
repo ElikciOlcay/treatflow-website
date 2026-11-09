@@ -1,4 +1,5 @@
 import { type LucideIcon, ArrowRight, CheckCircle } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { featureHeroThemes, type FeatureHeroThemeKey } from './FeatureHero';
@@ -42,7 +43,7 @@ export function FeatureSectionHeader({
     );
 }
 
-/** Drei Kernvorteile, groß und ohne Kartenrahmen. */
+/** Drei Kernvorteile als ruhige Karten; sie blenden beim Scrollen ein und heben sich beim Überfahren leicht an. */
 export function FeatureUnderstand({
     theme = 'indigo',
     title,
@@ -63,14 +64,21 @@ export function FeatureUnderstand({
         <section className={`${SECTION} bg-white`}>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <FeatureSectionHeader title={title} description={description} market={market} />
-                <div className={`grid gap-x-10 gap-y-12 ${items.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-3'}`}>
+                <div className={`grid gap-5 lg:gap-6 ${items.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-3'}`}>
                     {items.map((item) => (
-                        <div key={item.title} className="text-center md:text-left">
-                            <div className={`mx-auto md:mx-0 mb-5 flex h-12 w-12 items-center justify-center rounded-xl ${t.pillBg} ${t.accent}`}>
+                        <div
+                            key={item.title}
+                            className="tf-reveal group relative overflow-hidden rounded-3xl border border-gray-200/80 bg-white p-7 text-center transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200 hover:shadow-[0_24px_60px_-36px_rgba(79,70,229,0.55)] md:text-left"
+                        >
+                            <div
+                                className="pointer-events-none absolute -right-12 -top-12 h-36 w-36 rounded-full bg-gradient-to-br from-indigo-200/60 via-sky-100/50 to-transparent opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100"
+                                aria-hidden="true"
+                            />
+                            <div className={`relative mx-auto md:mx-0 mb-5 flex h-12 w-12 items-center justify-center rounded-2xl ${t.pillBg} ${t.accent} transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-110`}>
                                 <item.icon className="h-6 w-6" />
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
-                            <p className="text-gray-600 leading-relaxed">{item.text}</p>
+                            <h3 className="relative text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
+                            <p className="relative text-gray-600 leading-relaxed">{item.text}</p>
                         </div>
                     ))}
                 </div>
@@ -79,7 +87,7 @@ export function FeatureUnderstand({
     );
 }
 
-/** Drei Schritte nebeneinander, verbunden durch eine Linie. */
+/** Schritte nebeneinander; die verbindende Linie wird beim Scrollen gezeichnet. */
 export function FeatureHowItWorks({
     theme = 'indigo',
     title,
@@ -100,10 +108,19 @@ export function FeatureHowItWorks({
         <section className={`${SECTION} bg-gray-50`}>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <FeatureSectionHeader title={title} description={description} market={market} />
-                <ol className="relative grid md:grid-cols-3 gap-x-10 gap-y-10 md:before:absolute md:before:left-[16%] md:before:right-[16%] md:before:top-5 md:before:h-px md:before:bg-gray-200">
+                <ol className={`relative grid gap-x-10 gap-y-10 ${steps.length === 4 ? 'md:grid-cols-4' : 'md:grid-cols-3'}`}>
+                    {/* Linie von der Mitte des ersten bis zur Mitte des letzten Schritts */}
+                    <span
+                        className={`pointer-events-none absolute top-6 hidden h-0.5 rounded-full bg-gray-200 md:block ${
+                            steps.length === 4 ? 'left-[12.5%] right-[12.5%]' : 'left-[16.67%] right-[16.67%]'
+                        }`}
+                        aria-hidden="true"
+                    >
+                        <span className="tf-ui-progress block h-full w-full rounded-full bg-gradient-to-r from-indigo-600 via-indigo-500 to-sky-500" />
+                    </span>
                     {steps.map((step, i) => (
-                        <li key={step.title} className="relative text-center">
-                            <div className={`relative z-10 mx-auto mb-5 flex h-10 w-10 items-center justify-center rounded-full ${t.ctaBg} text-white font-bold ring-8 ring-gray-50`}>
+                        <li key={step.title} className="tf-reveal group relative text-center">
+                            <div className={`relative z-10 mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-2xl ${t.ctaBg} text-lg text-white font-bold shadow-[0_12px_28px_-12px_rgba(79,70,229,0.7)] ring-8 ring-gray-50 transition-transform duration-300 group-hover:scale-110`}>
                                 {i + 1}
                             </div>
                             <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
@@ -116,7 +133,7 @@ export function FeatureHowItWorks({
     );
 }
 
-/** Funktionsliste als ruhiges Raster: Icon und Titel in einer Zeile, Stichpunkte als leise Zeile darunter. */
+/** Funktionsliste als Kartenraster: Icon und Titel in einer Zeile, Stichpunkte als leise Zeile darunter. */
 export function FeatureCards({
     theme = 'indigo',
     title,
@@ -137,11 +154,14 @@ export function FeatureCards({
         <section className={`${SECTION} bg-white`}>
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <FeatureSectionHeader title={title} description={description} market={market} />
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
                     {items.map((item) => (
-                        <article key={item.title}>
+                        <article
+                            key={item.title}
+                            className="tf-reveal group rounded-2xl border border-gray-200/80 bg-white p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-[0_20px_50px_-34px_rgba(79,70,229,0.55)]"
+                        >
                             <div className="flex items-center gap-3 mb-3">
-                                <span className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg ${t.pillBg} ${t.accent}`}>
+                                <span className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl ${t.pillBg} ${t.accent} transition-transform duration-300 group-hover:scale-110`}>
                                     <item.icon className="h-5 w-5" />
                                 </span>
                                 <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
@@ -160,6 +180,51 @@ export function FeatureCards({
                         </article>
                     ))}
                 </div>
+            </div>
+        </section>
+    );
+}
+
+/** Echter App-Screenshot im Fensterrahmen – wenn der Hero eine animierte Szene statt des Bildes zeigt. */
+export function FeatureScreenshot({
+    eyebrow,
+    image,
+    framed = true,
+}: {
+    eyebrow: string;
+    image: { src: string; alt: string; width?: number; height?: number };
+    /** Fensterleiste nur bei App-Screenshots, nicht bei Fotos */
+    framed?: boolean;
+}) {
+    return (
+        <section className="relative overflow-hidden bg-white py-16 sm:py-20">
+            <div
+                className="pointer-events-none absolute inset-x-0 top-1/3 h-2/3 bg-[radial-gradient(48rem_24rem_at_50%_30%,rgba(99,102,241,0.10),transparent_70%)]"
+                aria-hidden="true"
+            />
+            <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+                <p className="mb-6 text-center text-sm font-semibold uppercase tracking-wide text-indigo-600">{eyebrow}</p>
+                <figure className="tf-reveal group overflow-hidden rounded-2xl border border-gray-200/80 bg-white shadow-[0_40px_90px_-45px_rgba(15,23,42,0.55)]">
+                    {framed && (
+                        <div className="flex items-center gap-1.5 border-b border-gray-100 bg-gray-50/80 px-4 py-2.5" aria-hidden="true">
+                            <span className="h-2.5 w-2.5 rounded-full bg-rose-300" />
+                            <span className="h-2.5 w-2.5 rounded-full bg-amber-300" />
+                            <span className="h-2.5 w-2.5 rounded-full bg-emerald-300" />
+                            <span className="ml-3 h-5 flex-1 rounded-md bg-white ring-1 ring-gray-200/80 sm:max-w-xs" />
+                        </div>
+                    )}
+                    <div className="overflow-hidden">
+                        <Image
+                            src={image.src}
+                            alt={image.alt}
+                            width={image.width ?? 1600}
+                            height={image.height ?? 1000}
+                            sizes="(max-width: 1024px) 100vw, 64rem"
+                            className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.015]"
+                        />
+                    </div>
+                    <figcaption className="sr-only">{image.alt}</figcaption>
+                </figure>
             </div>
         </section>
     );
