@@ -2,7 +2,7 @@
 
 > Treatflow ist die All-in-One-Software für Kosmetikstudios, Beauty-Salons, Ästhetik-Praxen und andere Studios, die Behandlungen durchführen (Laser, Nagel, Wimpern, Permanent Makeup, Tattoo, Fußpflege, Spa, Massage). Terminkalender, Online-Buchungen ohne Provision, digitale Kundenkartei, Anamnese- und Einwilligungsformulare, Behandlungs- und NiSV-Dokumentation, WhatsApp- und E-Mail-Erinnerungen, Kunden-Workflows, Treatflow Pay und eine TSE-/RKSV-konforme Kasse mit Gutscheinen – alles in einer App. Made in Austria, Daten auf EU-Servern in Frankfurt, DSGVO-konform. Basic 39 €/Monat, Booking 59 €/Monat (zzgl. MwSt.), 14 Tage kostenlos testen, keine Kreditkarte, keine Provision pro Buchung.
 
-Stand: 2026-11-05. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website (https://www.treatflow.io) für Deutschland, Österreich und die Schweiz (DACH). Kasse, Gutscheine, NiSV-Dokumentation, WhatsApp-Nachrichten, SumUp und Lexware/AbaNinja gibt es nur im DACH-Raum.
+Stand: 2026-11-09. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website (https://www.treatflow.io) für Deutschland, Österreich und die Schweiz (DACH). Kasse, Gutscheine, NiSV-Dokumentation, WhatsApp-Nachrichten, SumUp und Lexware/AbaNinja gibt es nur im DACH-Raum.
 
 ## Über Treatflow
 
@@ -23,7 +23,7 @@ Stand: 2026-11-05. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website
 - [NiSV-Dokumentation](https://www.treatflow.io/nisv-dokumentation): Beratungsprotokolle und Behandlungsdokumentation nach NiSV (Laser, IPL, apparative Kosmetik)
 - [Nachrichten](https://www.treatflow.io/nachrichtenautomatisierung): automatische Terminbestätigungen, Erinnerungen und Follow-ups per WhatsApp und E-Mail
 - [Kunden-Workflows](https://www.treatflow.io/kunden-workflows): mehrstufige Automationen für Nachsorge, Wiederbuchung und Reaktivierung
-- [Kassensystem](https://www.treatflow.io/kassensystem-kosmetikstudio): TSE-konform (KassenSichV, DE) und RKSV-konform (AT), direkt aus dem Termin kassieren, Belege mit Signatur-QR, Tagesabschluss, DSFinV-K-/DEP7-Export
+- [Kassensystem](https://www.treatflow.io/kassensystem-kosmetikstudio): Kasse (in Österreich: Kassa) für Studios in Deutschland und Österreich; TSE-konform (KassenSichV, DE) und RKSV-konform (AT) über fiskaly, ELSTER-Kassenmeldung bzw. FinanzOnline-Registrierung bei der Einrichtung, direkt aus dem Termin kassieren, Bar/Karte über SumUp Solo und Air/Gutschein/Überweisung/Split, Trinkgeld getrennt vom Umsatz, Mitarbeiter-PIN, Belege mit Signatur und QR-Code, X- und Z-Bericht, DSFinV-K-/DEP7-Export; 7 Tage Testmodus in der App
 - [Gutscheine](https://www.treatflow.io/gutscheine-kosmetikstudio): Geschenkgutscheine an der Kasse verkaufen und einlösen, automatischer Restwert, Einzweck- und Mehrzweckgutscheine
 - [Treatflow Pay](https://www.treatflow.io/treatflow-pay): Anzahlung oder vollen Preis direkt bei der Online-Buchung kassieren, pro Leistung einstellbar, 2,69 % pro Transaktion
 - [Shop](https://www.treatflow.io/shop): Produktverkauf und Lagerverwaltung
