@@ -1,7 +1,7 @@
 'use client';
 
 import { Check, Clock, FileText, ShieldCheck, Wallet } from 'lucide-react';
-import { formatEuro, useCountUp, useInView } from './motion';
+import { formatEuro, useCountUp, useInView } from '@/app/components/motion';
 
 const POINTS = [
     { icon: Wallet, text: 'Kasse am Morgen mit Wechselgeld öffnen, Bareinlagen und Barentnahmen jederzeit erfassen' },

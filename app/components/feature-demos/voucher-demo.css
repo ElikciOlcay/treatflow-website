@@ -1,0 +1,21 @@
+/* Gutschein-Szene: Code wird an der Kasse „getippt“ */
+.tf-voucher-type {
+  display: inline-block;
+  white-space: nowrap;
+  animation: tf-voucher-type 0.9s steps(13, end) 0.25s both;
+}
+
+@keyframes tf-voucher-type {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tf-voucher-type {
+    animation: none !important;
+  }
+}

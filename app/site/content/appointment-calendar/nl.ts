@@ -2,33 +2,36 @@ import type { AppointmentCalendarContent } from "./types";
 
 export const appointmentCalendarNl: AppointmentCalendarContent = {
   meta: {
-    title: "Online agenda voor schoonheidssalons: team & ruimtes",
+    title: "Online agenda voor schoonheidssalons: alleen of met een team",
     description:
-      "Online agenda voor schoonheidssalons en klinieken: een kolom per medewerker en ruimte, online afspraken boeken, drag-and-drop en automatische herinneringen per e-mail. Geen commissie, 14 dagen gratis.",
+      "Online agenda voor schoonheidssalons, alleen of met een team: online boeken, drag-and-drop, herinneringen, kolommen voor team & ruimtes. Geen commissie.",
     keywords: [
       "online agenda schoonheidssalon",
       "afsprakenkalender salon",
       "planningssoftware salon",
       "afsprakensoftware schoonheidssalon",
       "afsprakenplanner salon",
+      "online agenda zelfstandige schoonheidsspecialist",
+      "afsprakenplanner zzp schoonheidsspecialist",
       "planning medewerkers en ruimtes",
       "afsprakensoftware esthetische kliniek",
       "agenda drag-and-drop",
     ],
   },
-  dates: { modified: "2026-10-28", published: "2024-06-01" },
+  dates: { modified: "2026-11-09", published: "2024-06-01" },
   schema: {
     id: "terminkalender",
     webPage: {
-      name: "Online agenda voor schoonheidssalons: team & ruimtes",
+      name: "Online agenda voor schoonheidssalons: alleen of met een team",
       description:
-        "Online agenda voor schoonheidssalons met een dagoverzicht per medewerker en ruimte, drag-and-drop, online boeken en automatische herinneringen.",
+        "Online agenda voor schoonheidssalons – voor zelfstandigen en teams – met drag-and-drop, online boeken, automatische herinneringen en kolommen voor medewerkers en ruimtes.",
     },
     software: {
       name: "Treatflow online agenda voor schoonheidssalons",
       description:
-        "Online agenda voor schoonheidssalons met kolommen voor medewerkers en ruimtes, drag-and-drop, online boeken en automatische herinneringen.",
+        "Online agenda voor schoonheidssalons – alleen of met een team – met drag-and-drop, online boeken, automatische herinneringen en kolommen voor medewerkers en ruimtes.",
       featureList: [
+        "Online agenda voor zelfstandigen en teams",
         "Dagoverzicht met een kolom per medewerker of ruimte",
         "Bezetting en vrije plekken in één oogopslag",
         "Geen dubbele boekingen van medewerkers en ruimtes",
@@ -45,16 +48,16 @@ export const appointmentCalendarNl: AppointmentCalendarContent = {
   hero: {
     eyebrow: "Planning & online agenda",
     eyebrowIcon: "calendar",
-    title: { before: "De online agenda voor je salon – voor je team én je ", highlight: "ruimtes" },
+    title: { before: "De online agenda voor je salon – ", highlight: "alleen of met een team" },
     description:
-      "Plan je hele schoonheidssalon in één overzicht: medewerkers, ruimtes en afspraken, inclusief online boeken. Versleep afspraken met drag-and-drop en voorkom dubbele boekingen.",
-    chips: ["Drag-and-drop", "Team & ruimtes", "Minder no-shows"],
+      "Je online agenda met online boeken, herinneringen en drag-and-drop – ideaal als je alleen werkt. Groeit je salon, dan krijgen medewerkers en ruimtes elk een eigen kolom.",
+    chips: ["Alleen of met een team", "Drag-and-drop", "Minder no-shows"],
     secondaryCta: { label: "Online boeken", href: { page: "online-booking" } },
     capsules: [
       {
         question: "Hoe plan je afspraken in een schoonheidssalon het handigst?",
         answer:
-          "Treatflow brengt afspraken, medewerkers en ruimtes samen in één agenda. In het dagoverzicht heeft elke medewerker of ruimte een eigen kolom: je ziet meteen waar nog plek is, voorkomt dubbele boekingen en verwerkt wijzigingen sneller. Online boeken en automatische herinneringen zorgen bovendien voor minder telefoontjes en minder no-shows.",
+          "Treatflow brengt afspraken, online boekingen en herinneringen samen in één agenda – of je nu alleen werkt of met een team. Werk je alleen, dan zie je je hele dag met alle afspraken in één oogopslag. Met een team geeft het dagoverzicht elke medewerker of ruimte een eigen kolom, zodat je meteen ziet waar nog plek is en dubbele boekingen voorkomt. Online boeken en automatische herinneringen zorgen bovendien voor minder telefoontjes en minder no-shows.",
       },
       {
         question: "Welke afsprakensoftware is geschikt voor esthetische klinieken?",
@@ -68,13 +71,13 @@ export const appointmentCalendarNl: AppointmentCalendarContent = {
     },
   },
   understand: {
-    title: "Eén planning voor je hele salon",
-    description: "Alle afspraken, medewerkers en ruimtes in één oogopslag – je ziet meteen wie wanneer vrij is.",
+    title: "Een agenda die meegroeit met je salon",
+    description: "Of je nu alleen werkt of met een team: alle afspraken in één oogopslag – je ziet meteen wanneer er nog plek is.",
     items: [
       {
-        icon: "users",
-        title: "Team, ruimtes en behandelingen",
-        text: "Zet je medewerkers, behandelruimtes en behandelingen erin. De agenda geeft elke medewerker en elke ruimte een eigen kolom.",
+        icon: "calendar-days",
+        title: "Alleen of met een team",
+        text: "Werk je alleen, dan heb je je dag met alle afspraken in beeld. Komen er medewerkers of behandelruimtes bij, dan krijgt elke persoon en elke ruimte een eigen kolom.",
       },
       {
         icon: "move",
@@ -91,17 +94,17 @@ export const appointmentCalendarNl: AppointmentCalendarContent = {
   howItWorks: {
     description: "In drie stappen een planning die loopt.",
     steps: [
-      { title: "Team, behandelingen en ruimtes instellen", text: "Voeg je medewerkers, behandelingen en ruimtes toe, inclusief werktijden. De agenda geeft ze elk een eigen kolom." },
+      { title: "Behandelingen en werktijden invoeren", text: "Zet je behandelingen en werktijden erin. Heb je een team of meerdere ruimtes, voeg die dan ook toe – dan krijgt elke persoon en elke ruimte een eigen kolom." },
       { title: "Afspraken toevoegen", text: "Plan afspraken zelf in of zet online boeken aan – boekingen van klanten verschijnen dan vanzelf in de agenda." },
       { title: "Herinneringen gaan vanzelf", text: "Je klanten krijgen een boekingsbevestiging en een herinnering per e-mail – je hoeft zelf niets te versturen." },
     ],
   },
   cards: {
     title: "Wat je krijgt",
-    description: "Alles voor je salonplanning – team, ruimtes en herinneringen in één agenda.",
+    description: "Alles voor je planning – of je nu alleen werkt of met een team, met online boeken en herinneringen in één agenda.",
     items: [
-      { icon: "users", title: "Team & ruimtes", text: "Eén kolom per medewerker of ruimte. Bezetting en vrije tijden in één oogopslag.", points: ["Kolommenoverzicht", "Vrije plekken zien", "Geen dubbele boekingen"] },
-      { icon: "move", title: "Drag-and-drop", text: "Afspraken verplaatsen, verlengen of omwisselen – zonder gedoe.", points: ["In een paar seconden verplaatst", "Direct zichtbaar in de agenda", "Voor het hele team"] },
+      { icon: "users", title: "Alleen of met een team", text: "Werk je alleen, dan zie je je dag in één oogopslag. Met een team krijgt elke medewerker en elke ruimte een eigen kolom.", points: ["Voor zelfstandigen", "Kolommen voor team & ruimtes", "Geen dubbele boekingen"] },
+      { icon: "move", title: "Drag-and-drop", text: "Afspraken verplaatsen, verlengen of omwisselen – zonder gedoe.", points: ["In een paar seconden verplaatst", "Direct zichtbaar in de agenda", "Niets opnieuw invoeren"] },
       { icon: "layout-grid", title: "Dag, week of maand", text: "Wissel tussen dag, week en maand – precies wat je op dat moment nodig hebt.", points: ["Dag", "Week", "Maand"] },
       { icon: "bell", title: "Automatische herinneringen", text: "Een herinnering per e-mail voor elke afspraak. Minder no-shows, minder nabellen.", points: ["Herinneringen per e-mail", "Tijdstip naar keuze", "Annuleringslink"] },
       { icon: "calendar", title: "Online boeken", text: "Boekingen komen direct in de agenda, met automatische bevestiging. Dubbele boekingen zijn uitgesloten.", points: ["Persoonlijke boekingslink", "Direct in de agenda", "Geen commissie"] },
@@ -111,6 +114,11 @@ export const appointmentCalendarNl: AppointmentCalendarContent = {
   faq: {
     title: "Veelgestelde vragen over de online agenda",
     items: [
+      {
+        question: "Is de online agenda ook geschikt als ik alleen werk?",
+        answer:
+          "Ja. Veel schoonheidsspecialisten werken in hun eentje met Treatflow. Je ziet je dag met alle afspraken, klanten boeken online direct op een vrij moment in je agenda en krijgen automatisch een bevestiging en een herinnering. Kolommen voor medewerkers en ruimtes heb je pas nodig als je salon groeit.",
+      },
       {
         question: "Hoe plan je afspraken in een schoonheidssalon het handigst?",
         answer:
@@ -172,7 +180,7 @@ export const appointmentCalendarNl: AppointmentCalendarContent = {
   },
   cta: {
     title: "Klaar voor een planning zonder stress?",
-    description: "Probeer het 14 dagen gratis – geen creditcard nodig. Agenda, teamplanning en online boeken in één app.",
+    description: "Probeer het 14 dagen gratis – geen creditcard nodig. Agenda, online boeken en herinneringen in één app, alleen of met een team.",
     secondary: { label: "Online boeken", href: { page: "online-booking" } },
   },
 };

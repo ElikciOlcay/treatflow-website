@@ -2,6 +2,11 @@ import type { AppointmentCalendarContent } from "./types";
 
 const faqItems: AppointmentCalendarContent["faq"]["items"] = [
   {
+    question: "Eignet sich der Terminplaner auch, wenn ich allein arbeite?",
+    answer:
+      "Ja. Viele Studios arbeiten mit Treatflow allein. Du siehst deinen Tag mit allen Terminen, Kundinnen buchen online direkt in deine freien Zeiten und bekommen automatisch eine Bestätigung und Erinnerung. Spalten für Mitarbeiter und Räume brauchst du erst, wenn dein Studio wächst.",
+  },
+  {
     question: "Wie organisiere ich Termine im Kosmetikstudio am besten?",
     answer:
       "Mit einer spezialisierten Terminsoftware wie Treatflow organisierst du Termine am effizientesten. Online-Buchungen ermöglichen Kunden 24/7 zu buchen, automatische Erinnerungen per WhatsApp reduzieren No-Shows spürbar, und die übersichtliche Kalenderansicht gibt dir jederzeit den vollen Überblick.",
@@ -55,9 +60,9 @@ const faqItems: AppointmentCalendarContent["faq"]["items"] = [
 
 export const appointmentCalendarDe: AppointmentCalendarContent = {
   meta: {
-    title: "Terminplaner Kosmetikstudio: Software für Team & Räume",
+    title: "Terminplaner Kosmetikstudio: allein oder im Team",
     description:
-      "Terminplaner-Software fürs Kosmetikstudio: Terminkalender mit Spalten für Mitarbeiter und Räume, Online-Buchung, Drag & Drop und WhatsApp-Erinnerungen. Ohne Provision, 14 Tage gratis testen.",
+      "Terminplaner fürs Kosmetikstudio, ob allein oder im Team: Online-Buchung, Drag & Drop, WhatsApp-Erinnerungen, Spalten für Team & Räume. Ohne Provision.",
     keywords: [
       "Terminplaner Kosmetikstudio",
       "Terminplaner Software Kosmetikstudio",
@@ -67,6 +72,8 @@ export const appointmentCalendarDe: AppointmentCalendarContent = {
       "Buchungssystem Kosmetikstudio",
       "Terminplaner für Kosmetikstudio",
       "Terminkalender Kosmetikstudio",
+      "Terminplaner Einzelstudio",
+      "Terminkalender Kosmetikerin selbstständig",
       "Tagesansicht Mitarbeiter",
       "Raumplanung Kosmetikstudio",
       "Mitarbeiter Auslastung planen",
@@ -75,25 +82,26 @@ export const appointmentCalendarDe: AppointmentCalendarContent = {
       "Terminbuchungssoftware Kosmetiker",
     ],
     openGraph: {
-      title: "Terminplaner fürs Kosmetikstudio – Team & Räume",
+      title: "Terminplaner fürs Kosmetikstudio – allein oder im Team",
       description:
-        "Plane Mitarbeiter, Räume und Termine übersichtlich in einer Tagesansicht – mit Drag & Drop, Online-Buchungen und automatischen Erinnerungen.",
+        "Dein Terminkalender mit Online-Buchung, Drag & Drop und automatischen Erinnerungen – fürs Einzelstudio und fürs Team mit Mitarbeiter- und Raumspalten.",
       image: { url: "/images/mockups/kalender-overview.png", alt: "Treatflow Terminkalender Interface" },
     },
   },
-  dates: { modified: "2026-10-28", published: "2024-06-01" },
+  dates: { modified: "2026-11-09", published: "2024-06-01" },
   schema: {
     id: "terminkalender",
     webPage: {
-      name: "Terminplaner Kosmetikstudio: Software für Team & Räume",
+      name: "Terminplaner Kosmetikstudio: allein oder im Team",
       description:
-        "Terminplaner fürs Kosmetikstudio mit Tagesansicht für Mitarbeiter und Räume, Drag & Drop, Online-Buchung und automatischen Erinnerungen.",
+        "Terminplaner fürs Kosmetikstudio – für Einzelstudios und Teams – mit Drag & Drop, Online-Buchung, automatischen Erinnerungen und Spalten für Mitarbeiter und Räume.",
     },
     software: {
       name: "Treatflow Terminplaner für Kosmetikstudios",
       description:
-        "Terminkalender für Kosmetikstudios mit Mitarbeiter- und Raumspalten, Drag & Drop, Online-Buchung und automatischen Erinnerungen.",
+        "Terminkalender für Kosmetikstudios – allein oder im Team – mit Drag & Drop, Online-Buchung, automatischen Erinnerungen sowie Mitarbeiter- und Raumspalten.",
       featureList: [
+        "Terminkalender für Einzelstudios und Teams",
         "Tagesansicht mit Spalten pro Mitarbeiter oder Raum",
         "Auslastung und freie Kapazitäten erkennen",
         "Doppelbelegungen von Team und Räumen vermeiden",
@@ -110,16 +118,16 @@ export const appointmentCalendarDe: AppointmentCalendarContent = {
   hero: {
     eyebrow: "Terminplaner & Terminkalender",
     eyebrowIcon: "calendar",
-    title: { before: "Terminplaner fürs Kosmetikstudio – für Team und ", highlight: "Räume" },
+    title: { before: "Terminplaner fürs Kosmetikstudio – ", highlight: "allein oder im Team" },
     description:
-      "Der Terminplaner für dein Kosmetikstudio: Mitarbeiter, Räume und Termine in einer Ansicht, Online-Buchung inklusive. Per Drag & Drop umplanen und Doppelbelegungen vermeiden.",
-    chips: ["Drag & Drop", "Team & Räume", "Weniger No-Shows"],
+      "Dein Terminkalender mit Online-Buchung, Erinnerungen und Drag & Drop – ideal, wenn du allein arbeitest. Wächst dein Studio, bekommen Mitarbeiterinnen und Räume ihre eigene Spalte.",
+    chips: ["Allein oder im Team", "Drag & Drop", "Weniger No-Shows"],
     secondaryCta: { label: "Online-Buchungen", href: { page: "online-booking" } },
     capsules: [
       {
         question: "Wie organisiere ich Termine im Kosmetikstudio am besten?",
         answer:
-          "Treatflow bündelt Termine, Mitarbeiter und Räume in einem Kalender. Die Tagesansicht zeigt jede Person oder jeden Raum in einer eigenen Spalte. Dadurch erkennst du freie Kapazitäten, vermeidest Doppelbelegungen und koordinierst Änderungen schneller. Online-Buchungen und automatische Erinnerungen reduzieren zusätzlich Telefonaufwand und No-Shows.",
+          "Treatflow bündelt Termine, Online-Buchungen und Erinnerungen in einem Kalender – egal, ob du allein arbeitest oder mit Team. Allein hast du deinen Tag mit allen Terminen auf einen Blick. Mit Team zeigt die Tagesansicht jede Person oder jeden Raum in einer eigenen Spalte, sodass du freie Kapazitäten erkennst und Doppelbelegungen vermeidest. Online-Buchungen und automatische Erinnerungen reduzieren zusätzlich Telefonaufwand und No-Shows.",
       },
       {
         question: "Welche Terminsoftware eignet sich für ästhetische Medizin?",
@@ -134,7 +142,7 @@ export const appointmentCalendarDe: AppointmentCalendarContent = {
   },
   video: {
     title: "Der Terminkalender in einer Minute erklärt",
-    description: "Termin per Klick anlegen, jede Mitarbeiterin in ihrer Spalte, Tag, Woche und Monat im Blick.",
+    description: "Termin per Klick anlegen, Tag, Woche und Monat im Blick – allein oder mit Team.",
     videoSrc: "/videos/funktionen/terminkalender.mp4",
     posterSrc: "/images/video/funktionen/terminkalender-poster.jpg",
     posterAlt: "Video: Der Terminkalender in einer Minute erklärt",
@@ -143,13 +151,13 @@ export const appointmentCalendarDe: AppointmentCalendarContent = {
     unsupported: "Dein Browser kann dieses Video nicht abspielen.",
   },
   understand: {
-    title: "Terminplaner-Software für das ganze Studio",
-    description: "Alle Termine, Mitarbeiter und Räume auf einen Blick – du siehst sofort, wer wann frei ist.",
+    title: "Ein Terminkalender, der mit deinem Studio wächst",
+    description: "Ob du allein arbeitest oder mit Team: Alle Termine auf einen Blick – du siehst sofort, wann noch etwas frei ist.",
     items: [
       {
-        icon: "users",
-        title: "Team, Räume und Leistungen",
-        text: "Lege deine Mitarbeiter, Behandlungsräume und Leistungen an. Im Kalender siehst du dann für jede Person oder jeden Raum eine eigene Spalte.",
+        icon: "calendar-days",
+        title: "Allein oder im Team",
+        text: "Arbeitest du allein, hast du deinen Tag mit allen Terminen im Blick. Kommen Mitarbeiterinnen oder Behandlungsräume dazu, bekommt jede Person und jeder Raum eine eigene Spalte.",
       },
       {
         icon: "move",
@@ -166,17 +174,17 @@ export const appointmentCalendarDe: AppointmentCalendarContent = {
   howItWorks: {
     description: "In drei Schritten zum laufenden Studioplan.",
     steps: [
-      { title: "Team, Leistungen und Räume einrichten", text: "Trage deine Mitarbeiter, Behandlungen und Räume mit Arbeitszeiten ein. Danach zeigt der Kalender für jeden eine eigene Spalte." },
+      { title: "Leistungen und Arbeitszeiten eintragen", text: "Lege deine Behandlungen und Arbeitszeiten an. Hast du ein Team oder mehrere Räume, trägst du sie dazu ein – dann bekommt jede Person und jeder Raum eine eigene Spalte." },
       { title: "Termine eintragen", text: "Trage Termine selbst ein oder aktiviere die Online-Buchung – dann erscheinen Buchungen deiner Kunden automatisch im Kalender." },
       { title: "Erinnerungen laufen automatisch", text: "Deine Kunden bekommen Terminbestätigung und Erinnerung per WhatsApp oder E-Mail – du musst nichts manuell verschicken." },
     ],
   },
   cards: {
     title: "Was du bekommst",
-    description: "Alles für die Terminplanung im Studio – Team, Räume und Erinnerungen in einem Kalender.",
+    description: "Alles für die Terminplanung – vom Einzelstudio bis zum Team, mit Online-Buchung und Erinnerungen in einem Kalender.",
     items: [
-      { icon: "users", title: "Team & Räume", text: "Eine Spalte pro Mitarbeiter oder Raum. Auslastung und freie Zeiten auf einen Blick.", points: ["Spaltenansicht", "Kapazitäten erkennen", "Keine Doppelbelegung"] },
-      { icon: "move", title: "Drag & Drop", text: "Termine verschieben, verlängern oder tauschen – ohne Formulare und ohne Chaos.", points: ["Umplanen in Sekunden", "Live im Kalender", "Fürs ganze Team"] },
+      { icon: "users", title: "Allein oder im Team", text: "Allein siehst du deinen Tag auf einen Blick. Mit Team bekommt jede Mitarbeiterin und jeder Raum eine eigene Spalte.", points: ["Fürs Einzelstudio", "Spalten für Team & Räume", "Keine Doppelbelegung"] },
+      { icon: "move", title: "Drag & Drop", text: "Termine verschieben, verlängern oder tauschen – ohne Formulare und ohne Chaos.", points: ["Umplanen in Sekunden", "Live im Kalender", "Ohne Neu-Anlegen"] },
       { icon: "layout-grid", title: "Tages- bis Monatsansicht", text: "Wechsle zwischen Tag, Woche und Monat – je nachdem, was du gerade brauchst.", points: ["Tagesansicht", "Woche", "Monat"] },
       { icon: "bell", title: "Automatische Erinnerungen", text: "WhatsApp und E-Mail vor dem Termin. Weniger No-Shows, weniger Nachtelefonieren.", points: [{ text: "WhatsApp & E-Mail", feature: "whatsapp" }, "Flexible Zeitpunkte", "Storno-Hinweis"] },
       { icon: "calendar", title: "Online-Buchung", text: "Buchungen landen direkt im Kalender. Keine Doppelbuchung, automatische Bestätigung.", points: ["Persönlicher Link", "Sofort im Kalender", "Ohne Provision"] },
@@ -196,7 +204,7 @@ export const appointmentCalendarDe: AppointmentCalendarContent = {
   },
   cta: {
     title: "Bereit für klare Terminplanung?",
-    description: "14 Tage kostenlos testen – ohne Kreditkarte. Kalender, Teamplanung und Online-Buchung in einer App.",
+    description: "14 Tage kostenlos testen – ohne Kreditkarte. Kalender, Online-Buchung und Erinnerungen in einer App, allein oder im Team.",
     secondary: { label: "Online-Buchungen", href: { page: "online-booking" } },
   },
 };

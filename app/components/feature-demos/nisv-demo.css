@@ -1,0 +1,103 @@
+/* NiSV-Szene: Diktat-Pegel, Werte tippen, Auswahl markieren, Unterschriften zeichnen.
+   Endzustand steht jeweils in der Klasse selbst – ohne Animation ist alles fertig ausgefüllt. */
+
+.tf-nisv-type {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  clip-path: inset(0);
+  animation: tf-nisv-type 0.5s steps(8, end) both;
+}
+
+.tf-nisv-pick {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+  color: #fff;
+  animation: tf-nisv-pick 0.3s ease-out both;
+}
+
+/* Pfade mit pathLength="1" */
+.tf-nisv-sign {
+  stroke-dasharray: 1;
+  animation: tf-nisv-sign 1.1s cubic-bezier(0.45, 0, 0.25, 1) both;
+}
+
+/* Pegel des Diktats: läuft ein paar Mal und bleibt dann stehen */
+.tf-nisv-level {
+  transform-origin: center;
+  animation: tf-nisv-level 0.55s ease-in-out 3 alternate;
+}
+
+.tf-nisv-blink {
+  animation: tf-nisv-blink 1s ease-in-out infinite;
+}
+
+/* Blendet einen Status nach seiner Verzögerung aus (z. B. „Aufnahme läuft“) */
+.tf-nisv-out {
+  animation: tf-nisv-out 0.25s ease-in forwards;
+}
+
+@keyframes tf-nisv-type {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0);
+  }
+}
+
+@keyframes tf-nisv-pick {
+  from {
+    background-color: #fff;
+    border-color: #e5e7eb;
+    color: #6b7280;
+  }
+}
+
+@keyframes tf-nisv-sign {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes tf-nisv-level {
+  from {
+    transform: scaleY(0.3);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes tf-nisv-blink {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes tf-nisv-out {
+  to {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tf-nisv-type,
+  .tf-nisv-pick,
+  .tf-nisv-sign,
+  .tf-nisv-level,
+  .tf-nisv-blink {
+    animation: none !important;
+  }
+
+  .tf-nisv-out {
+    animation: none !important;
+    opacity: 0;
+  }
+}

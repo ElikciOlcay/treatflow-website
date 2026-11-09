@@ -2,32 +2,35 @@ import type { AppointmentCalendarContent } from "./types";
 
 export const appointmentCalendarEs: AppointmentCalendarContent = {
   meta: {
-    title: "Agenda de citas para centros de estética: equipo y cabinas",
+    title: "Agenda de citas para centros de estética: en solitario o en equipo",
     description:
-      "Agenda de citas online para centros de estética y clínicas estéticas: columnas por profesional y cabina, reservas online, citas que se mueven arrastrando y recordatorios automáticos por email. Sin comisiones y 14 días gratis.",
+      "Agenda de citas para centros de estética, en solitario o en equipo: reservas online, arrastrar y soltar, recordatorios y columnas por cabina. Sin comisión.",
     keywords: [
       "agenda de citas centro de estética",
       "agenda online salón de belleza",
       "programa de citas para centro de estética",
+      "agenda de citas esteticista",
+      "agenda de citas para autónomos de estética",
       "software de citas para spa",
       "planificación de cabinas y personal",
       "agenda para clínica estética",
       "gestión de citas centro de estética",
     ],
   },
-  dates: { modified: "2026-10-28", published: "2024-06-01" },
+  dates: { modified: "2026-11-09", published: "2024-06-01" },
   schema: {
     id: "terminkalender",
     webPage: {
-      name: "Agenda de citas para centros de estética: equipo y cabinas",
+      name: "Agenda de citas para centros de estética: en solitario o en equipo",
       description:
-        "Agenda de citas para centros de estética con vista diaria para el equipo y las cabinas, arrastrar y soltar, reservas online y recordatorios automáticos.",
+        "Agenda de citas para centros de estética – para quien trabaja en solitario y para equipos – con arrastrar y soltar, reservas online, recordatorios automáticos y columnas para el equipo y las cabinas.",
     },
     software: {
       name: "Agenda de citas de Treatflow para centros de estética",
       description:
-        "Agenda de citas para centros de estética con columnas para el equipo y las cabinas, arrastrar y soltar, reservas online y recordatorios automáticos.",
+        "Agenda de citas para centros de estética – en solitario o en equipo – con arrastrar y soltar, reservas online, recordatorios automáticos y columnas para el equipo y las cabinas.",
       featureList: [
+        "Agenda de citas para quien trabaja en solitario y para equipos",
         "Vista diaria con una columna por profesional o cabina",
         "Ocupación y huecos libres de un vistazo",
         "Sin reservas duplicadas de personal ni de cabinas",
@@ -44,16 +47,16 @@ export const appointmentCalendarEs: AppointmentCalendarContent = {
   hero: {
     eyebrow: "Planificación y agenda de citas",
     eyebrowIcon: "calendar",
-    title: { before: "La agenda de tu centro, con tu equipo y tus ", highlight: "cabinas" },
+    title: { before: "La agenda de citas de tu centro – ", highlight: "en solitario o en equipo" },
     description:
-      "Equipo, cabinas y citas de tu centro de estética en una sola vista, con reservas online incluidas. Mueve citas arrastrándolas y olvídate de las reservas duplicadas.",
-    chips: ["Arrastrar y soltar", "Equipo y cabinas", "Menos plantones"],
+      "Tu agenda de citas con reservas online, recordatorios y arrastrar y soltar: ideal si trabajas en solitario. Cuando tu centro crece, cada profesional y cada cabina tiene su propia columna.",
+    chips: ["En solitario o en equipo", "Arrastrar y soltar", "Menos plantones"],
     secondaryCta: { label: "Reservas online", href: { page: "online-booking" } },
     capsules: [
       {
         question: "¿Cuál es la mejor forma de organizar las citas en un centro de estética?",
         answer:
-          "Treatflow reúne citas, equipo y cabinas en una sola agenda. La vista diaria muestra a cada profesional o cabina en su propia columna: ves los huecos libres, evitas reservas duplicadas y reorganizas los cambios en un momento. Además, las reservas online y los recordatorios automáticos reducen las llamadas y los plantones.",
+          "Treatflow reúne citas, reservas online y recordatorios en una sola agenda, tanto si trabajas en solitario como en equipo. Si trabajas en solitario, ves todo tu día con todas las citas de un vistazo. Con equipo, la vista diaria muestra a cada profesional o cabina en su propia columna: ves los huecos libres y evitas reservas duplicadas. Además, las reservas online y los recordatorios automáticos reducen las llamadas y los plantones.",
       },
       {
         question: "¿Qué software de citas sirve para clínicas estéticas?",
@@ -67,13 +70,13 @@ export const appointmentCalendarEs: AppointmentCalendarContent = {
     },
   },
   understand: {
-    title: "Software de citas para todo tu centro",
-    description: "Citas, equipo y cabinas de un vistazo: sabes al momento quién está libre y cuándo.",
+    title: "Una agenda que crece con tu centro",
+    description: "Tanto si trabajas en solitario como en equipo: todas las citas de un vistazo y sabes al momento cuándo queda un hueco libre.",
     items: [
       {
-        icon: "users",
-        title: "Equipo, cabinas y servicios",
-        text: "Da de alta a tu equipo, tus cabinas y tus servicios. La agenda muestra una columna para cada profesional o cabina.",
+        icon: "calendar-days",
+        title: "En solitario o en equipo",
+        text: "Si trabajas en solitario, tienes tu día con todas las citas a la vista. Cuando se suman profesionales o cabinas, cada persona y cada cabina tiene su propia columna.",
       },
       {
         icon: "move",
@@ -90,17 +93,17 @@ export const appointmentCalendarEs: AppointmentCalendarContent = {
   howItWorks: {
     description: "La agenda de tu centro, en marcha en tres pasos.",
     steps: [
-      { title: "Configura equipo, servicios y cabinas", text: "Da de alta a tu equipo, tus tratamientos y tus cabinas con sus horarios. La agenda muestra una columna para cada uno." },
+      { title: "Configura servicios y horarios", text: "Da de alta tus tratamientos y tus horarios de trabajo. Si tienes equipo o varias cabinas, añádelos también: cada profesional y cada cabina tendrá su propia columna." },
       { title: "Añade citas", text: "Apunta tú las citas o activa las reservas online: lo que reservan tus clientes entra solo en la agenda." },
       { title: "Los recordatorios salen solos", text: "Tus clientes reciben la confirmación de la reserva y un recordatorio por email, sin que tengas que enviar nada a mano." },
     ],
   },
   cards: {
     title: "Qué incluye",
-    description: "Todo para organizar las citas de tu centro: equipo, cabinas y recordatorios en una sola agenda.",
+    description: "Todo para organizar tus citas, en solitario o en equipo, con reservas online y recordatorios en una sola agenda.",
     items: [
-      { icon: "users", title: "Equipo y cabinas", text: "Una columna por profesional o cabina. Ocupación y huecos libres de un vistazo.", points: ["Vista por columnas", "Huecos libres a la vista", "Sin reservas duplicadas"] },
-      { icon: "move", title: "Arrastrar y soltar", text: "Mueve, alarga o intercambia citas sin rellenar formularios y sin líos.", points: ["Cambios en segundos", "Al instante en la agenda", "Para todo el equipo"] },
+      { icon: "users", title: "En solitario o en equipo", text: "En solitario ves tu día de un vistazo. Con equipo, cada profesional y cada cabina tiene su propia columna.", points: ["Para trabajar en solitario", "Columnas para equipo y cabinas", "Sin reservas duplicadas"] },
+      { icon: "move", title: "Arrastrar y soltar", text: "Mueve, alarga o intercambia citas sin rellenar formularios y sin líos.", points: ["Cambios en segundos", "Al instante en la agenda", "Sin crearlas de nuevo"] },
       { icon: "layout-grid", title: "De la vista diaria a la mensual", text: "Pasa de la vista diaria a la semanal o la mensual según lo que necesites.", points: ["Vista diaria", "Semana", "Mes"] },
       { icon: "bell", title: "Recordatorios automáticos", text: "Recordatorios por email antes de cada cita. Menos plantones y menos llamadas para confirmar.", points: ["Recordatorios por email", "Momento de envío flexible", "Enlace de cancelación"] },
       { icon: "calendar", title: "Reservas online", text: "Las reservas entran directamente en la agenda, sin duplicados y con confirmación automática.", points: ["Tu propio enlace de reservas", "Al instante en la agenda", "Sin comisiones"] },
@@ -110,6 +113,11 @@ export const appointmentCalendarEs: AppointmentCalendarContent = {
   faq: {
     title: "Preguntas frecuentes sobre la agenda de citas para centros de estética",
     items: [
+      {
+        question: "¿La agenda de citas también sirve si trabajo en solitario?",
+        answer:
+          "Sí. Muchos centros usan Treatflow sin equipo. Ves tu día con todas las citas, tus clientes reservan online directamente en tus huecos libres y reciben automáticamente la confirmación y el recordatorio. Las columnas para el equipo y las cabinas solo te harán falta cuando tu centro crezca.",
+      },
       {
         question: "¿Cuál es la mejor forma de organizar las citas en un centro de estética?",
         answer:
@@ -171,7 +179,7 @@ export const appointmentCalendarEs: AppointmentCalendarContent = {
   },
   cta: {
     title: "Organiza tus citas sin estrés",
-    description: "Pruébalo gratis 14 días, sin tarjeta de crédito: agenda, planificación del equipo y reservas online en una sola app.",
+    description: "Pruébalo gratis 14 días, sin tarjeta de crédito: agenda, reservas online y recordatorios en una sola app, en solitario o en equipo.",
     secondary: { label: "Reservas online", href: { page: "online-booking" } },
   },
 };

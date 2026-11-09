@@ -9,7 +9,9 @@ import {
   FeatureFaq,
   FeatureRelated,
   FeaturePageCta,
+  FeatureScreenshot,
 } from "@/app/components/FeatureSections";
+import { featureDemos, screenshotEyebrow } from "@/app/components/feature-demos";
 import { filterByFeature } from "@/app/i18n/feature-availability";
 import { resolveHref, sitePagePath, type SitePageKey } from "@/app/i18n/site-pages";
 import { getFeatureCommon, type FeaturePageContent } from "@/app/site/content/feature-common";
@@ -56,6 +58,8 @@ export default function FeaturePage({
     return href ? [{ href, title: item.title, description: item.description }] : [];
   });
   const icon = (name: keyof typeof siteIcons) => siteIcons[name];
+  // Animierte Szene im Hero; das bisherige Hero-Bild wird dann als Screenshot weiter unten gezeigt
+  const Demo = featureDemos[pageKey];
 
   return (
     <>
@@ -94,7 +98,8 @@ export default function FeaturePage({
         aiCapsules={filterByFeature(hero.capsules, market).map(({ question, answer }) => ({ question, answer }))}
         dateModified={content.dates.modified}
         datePublished={content.dates.published}
-        image={hero.image}
+        image={Demo ? undefined : hero.image}
+        visual={Demo ? <Demo market={market} /> : undefined}
       />
 
       {content.video && (
@@ -131,6 +136,14 @@ export default function FeaturePage({
         description={content.howItWorks.description}
         steps={filterByFeature(content.howItWorks.steps, market)}
       />
+
+      {Demo && (
+        <FeatureScreenshot
+          eyebrow={screenshotEyebrow[market] ?? screenshotEyebrow.en}
+          image={hero.image}
+          framed={!hero.image.src.includes("/lifestyle/")}
+        />
+      )}
 
       <FeatureCards
         theme={theme}

@@ -2,13 +2,15 @@ import type { AppointmentCalendarContent } from "./types";
 
 export const appointmentCalendarTr: AppointmentCalendarContent = {
   meta: {
-    title: "Güzellik Salonu Randevu Programı: Personel ve Oda Planlama",
+    title: "Güzellik Salonu Randevu Programı: Tek Başınıza veya Ekiple",
     description:
-      "Güzellik salonları ve estetik klinikler için randevu programı: personel ve oda bazlı takvim, online randevu, sürükle-bırak ve otomatik e-posta hatırlatmaları. Komisyon yok, 14 gün ücretsiz deneyin.",
+      "Güzellik salonu randevu programı, tek başınıza veya ekiple: online randevu, sürükle-bırak, e-posta hatırlatmaları, personel ve oda sütunları. Komisyonsuz.",
     keywords: [
       "güzellik salonu randevu programı",
       "randevu takvimi güzellik salonu",
       "salon randevu programı",
+      "tek kişilik salon randevu programı",
+      "serbest güzellik uzmanı randevu takvimi",
       "güzellik merkezi randevu sistemi",
       "randevu defteri programı",
       "personel ve oda planlama",
@@ -16,19 +18,20 @@ export const appointmentCalendarTr: AppointmentCalendarContent = {
       "sürükle bırak randevu takvimi",
     ],
   },
-  dates: { modified: "2026-10-28", published: "2024-06-01" },
+  dates: { modified: "2026-11-09", published: "2024-06-01" },
   schema: {
     id: "terminkalender",
     webPage: {
-      name: "Güzellik Salonu Randevu Programı: Personel ve Oda Planlama",
+      name: "Güzellik Salonu Randevu Programı: Tek Başınıza veya Ekiple",
       description:
-        "Güzellik salonları için randevu takvimi: personel ve odalar için günlük görünüm, sürükle-bırak, online randevu ve otomatik hatırlatmalar.",
+        "Tek kişilik salonlar ve ekipler için güzellik salonu randevu takvimi: sürükle-bırak, online randevu, otomatik hatırlatmalar, personel ve oda sütunları.",
     },
     software: {
       name: "Güzellik salonları için Treatflow randevu takvimi",
       description:
-        "Güzellik salonları için personel ve oda bazlı randevu takvimi; sürükle-bırak, online randevu ve otomatik hatırlatmalar.",
+        "Güzellik salonları için randevu takvimi – tek başınıza veya ekiple: sürükle-bırak, online randevu, otomatik hatırlatmalar, personel ve oda sütunları.",
       featureList: [
+        "Tek kişilik salonlar ve ekipler için randevu takvimi",
         "Her personel veya oda için ayrı sütunlu günlük görünüm",
         "Doluluğu ve boş saatleri görme",
         "Personel ve odalarda çakışan randevuları önleme",
@@ -45,16 +48,16 @@ export const appointmentCalendarTr: AppointmentCalendarContent = {
   hero: {
     eyebrow: "Randevu planlama ve takvim",
     eyebrowIcon: "calendar",
-    title: { before: "Salonunuz için randevu takvimi – ekibiniz ve ", highlight: "odalarınızla birlikte" },
+    title: { before: "Salonunuz için randevu takvimi – ", highlight: "tek başınıza veya ekibinizle" },
     description:
-      "Personel, odalar ve randevular tek ekranda – online randevu dahil. Randevuları sürükle-bırak ile taşıyın, çakışmaları baştan önleyin.",
-    chips: ["Sürükle-bırak", "Ekip ve odalar", "Daha az randevuya gelmeme"],
+      "Online randevu, hatırlatmalar ve sürükle-bırak özelliğiyle randevu takviminiz – tek başınıza çalışıyorsanız ideal. Salonunuz büyüdüğünde her çalışan ve her oda kendi sütununu alır.",
+    chips: ["Tek başınıza veya ekiple", "Sürükle-bırak", "Daha az randevuya gelmeme"],
     secondaryCta: { label: "Online randevu", href: { page: "online-booking" } },
     capsules: [
       {
         question: "Güzellik salonunda randevular en iyi nasıl düzenlenir?",
         answer:
-          "Treatflow randevuları, personeli ve odaları tek bir takvimde birleştirir. Günlük görünümde her çalışan veya oda kendi sütununda yer alır; böylece boş saatleri görür, çakışan randevuları önler ve değişiklikleri daha hızlı yönetirsiniz. Online randevu ve otomatik hatırlatmalar da telefon trafiğini ve randevuya gelmeyen müşteri sayısını azaltır.",
+          "Treatflow randevuları, online randevu sistemini ve hatırlatmaları tek bir takvimde toplar – ister tek başınıza ister ekiple çalışın. Tek başınıza çalışıyorsanız gününüzü tüm randevularıyla tek bakışta görürsünüz. Ekiple çalışıyorsanız günlük görünüm her çalışanı veya odayı kendi sütununda gösterir; böylece boş saatleri görür ve çakışan randevuları önlersiniz. Online randevu ve otomatik hatırlatmalar da telefon trafiğini ve randevuya gelmeyen müşteri sayısını azaltır.",
       },
       {
         question: "Estetik klinikler için hangi randevu programı uygundur?",
@@ -68,13 +71,13 @@ export const appointmentCalendarTr: AppointmentCalendarContent = {
     },
   },
   understand: {
-    title: "Bütün salonunuz için tek randevu programı",
-    description: "Tüm randevular, çalışanlar ve odalar tek bakışta – kimin ne zaman müsait olduğunu anında görürsünüz.",
+    title: "Salonunuzla birlikte büyüyen randevu takvimi",
+    description: "İster tek başınıza ister ekiple çalışın: tüm randevular tek bakışta – ne zaman boş saatiniz olduğunu anında görürsünüz.",
     items: [
       {
-        icon: "users",
-        title: "Ekip, odalar ve hizmetler",
-        text: "Çalışanlarınızı, uygulama odalarınızı ve hizmetlerinizi ekleyin. Takvim her çalışan veya oda için ayrı bir sütun gösterir.",
+        icon: "calendar-days",
+        title: "Tek başınıza veya ekiple",
+        text: "Tek başınıza çalışıyorsanız gününüzü tüm randevularıyla birlikte görürsünüz. Çalışanlar veya uygulama odaları eklendiğinde her kişi ve her oda kendi sütununu alır.",
       },
       {
         icon: "move",
@@ -91,17 +94,17 @@ export const appointmentCalendarTr: AppointmentCalendarContent = {
   howItWorks: {
     description: "Üç adımda çalışan bir salon takvimi.",
     steps: [
-      { title: "Ekibi, hizmetleri ve odaları tanımlayın", text: "Çalışanlarınızı, hizmetlerinizi ve odalarınızı çalışma saatleriyle birlikte ekleyin. Takvim her biri için ayrı bir sütun gösterir." },
+      { title: "Hizmetleri ve çalışma saatlerini girin", text: "Hizmetlerinizi ve çalışma saatlerinizi ekleyin. Ekibiniz veya birden fazla odanız varsa onları da ekleyin – her kişi ve her oda kendi sütununu alır." },
       { title: "Randevuları ekleyin", text: "Randevuları kendiniz girin veya online randevuyu açın – müşterilerinizin aldığı randevular otomatik olarak takvimde görünür." },
       { title: "Hatırlatmalar otomatik gider", text: "Müşterileriniz randevu onayını ve hatırlatmayı e-postayla alır – sizin ayrıca bir şey göndermeniz gerekmez." },
     ],
   },
   cards: {
     title: "Neler sunuyoruz",
-    description: "Salon planlaması için ihtiyacınız olan her şey – ekip, odalar ve hatırlatmalar tek takvimde.",
+    description: "Randevu planlaması için ihtiyacınız olan her şey – tek kişilik salondan ekibe kadar, online randevu ve hatırlatmalar tek takvimde.",
     items: [
-      { icon: "users", title: "Ekip ve odalar", text: "Her çalışan veya oda için bir sütun. Dolu ve boş saatler tek bakışta.", points: ["Sütun görünümü", "Boş saatleri görün", "Çakışan randevu yok"] },
-      { icon: "move", title: "Sürükle-bırak", text: "Randevuları taşıyın, uzatın veya değiştirin – form doldurmadan, uğraşmadan.", points: ["Saniyeler içinde taşıma", "Takvimde anında", "Tüm ekip için"] },
+      { icon: "users", title: "Tek başınıza veya ekiple", text: "Tek başınıza çalışırken gününüzü tek bakışta görürsünüz. Ekiple her çalışan ve her oda kendi sütununu alır.", points: ["Tek kişilik salonlar için", "Ekip ve odalar için sütunlar", "Çakışan randevu yok"] },
+      { icon: "move", title: "Sürükle-bırak", text: "Randevuları taşıyın, uzatın veya değiştirin – form doldurmadan, uğraşmadan.", points: ["Saniyeler içinde taşıma", "Takvimde anında", "Yeniden oluşturmaya gerek yok"] },
       { icon: "layout-grid", title: "Günlük, haftalık, aylık", text: "Günlük, haftalık ve aylık görünüm arasında geçiş yapın – o an hangisine ihtiyacınız varsa.", points: ["Günlük görünüm", "Haftalık", "Aylık"] },
       { icon: "bell", title: "Otomatik hatırlatmalar", text: "Her randevudan önce e-posta hatırlatması. Daha az gelmeyen müşteri, daha az telefon.", points: ["E-posta hatırlatmaları", "Esnek zamanlama", "İptal bağlantısı"] },
       { icon: "calendar", title: "Online randevu", text: "Randevular doğrudan takvime düşer. Çakışma yok, onay otomatik.", points: ["Size özel randevu bağlantısı", "Anında takvimde", "Komisyon yok"] },
@@ -111,6 +114,11 @@ export const appointmentCalendarTr: AppointmentCalendarContent = {
   faq: {
     title: "Salon randevu takvimi hakkında sıkça sorulan sorular",
     items: [
+      {
+        question: "Randevu programı tek başıma çalışırken de uygun mu?",
+        answer:
+          "Evet. Birçok güzellik uzmanı Treatflow ile tek başına çalışıyor. Gününüzü tüm randevularıyla görürsünüz; müşterileriniz boş saatlerinize doğrudan online randevu alır, onay ve hatırlatma onlara otomatik olarak gönderilir. Personel ve oda sütunlarına ancak salonunuz büyüdüğünde ihtiyaç duyarsınız.",
+      },
       {
         question: "Güzellik salonunda randevular en iyi nasıl düzenlenir?",
         answer:
@@ -172,7 +180,7 @@ export const appointmentCalendarTr: AppointmentCalendarContent = {
   },
   cta: {
     title: "Stressiz randevu yönetimine hazır mısınız?",
-    description: "14 gün ücretsiz deneyin – kredi kartı gerekmez. Takvim, ekip planlama ve online randevu tek uygulamada.",
+    description: "14 gün ücretsiz deneyin – kredi kartı gerekmez. Takvim, online randevu ve hatırlatmalar tek uygulamada; tek başınıza veya ekiple.",
     secondary: { label: "Online randevu", href: { page: "online-booking" } },
   },
 };

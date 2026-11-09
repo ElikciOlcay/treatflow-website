@@ -1,0 +1,62 @@
+/* Kundenverwaltung-Szene: Cursor im Suchfeld, Treffer hervorheben, Allergie-Hinweis pulsieren.
+   Endzustand steht jeweils in der Klasse selbst – ohne Animation ist alles fertig. */
+
+.tf-records-caret {
+  animation: tf-records-caret 1s steps(1, end) infinite;
+}
+
+/* Nicht passende Zeilen treten zurück */
+.tf-records-dim {
+  opacity: 0.35;
+  animation: tf-records-dim 0.4s ease-out both;
+}
+
+/* Gefundene Kundin */
+.tf-records-hit {
+  background-color: #eef2ff;
+  border-color: #c7d2fe;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+  animation: tf-records-hit 0.45s ease-out both;
+}
+
+.tf-records-alert {
+  animation: tf-records-alert 1.6s ease-out infinite;
+}
+
+@keyframes tf-records-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes tf-records-dim {
+  from {
+    opacity: 1;
+  }
+}
+
+@keyframes tf-records-hit {
+  from {
+    background-color: #fff;
+    border-color: #f3f4f6;
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+  }
+}
+
+@keyframes tf-records-alert {
+  0% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tf-records-caret,
+  .tf-records-dim,
+  .tf-records-hit,
+  .tf-records-alert {
+    animation: none !important;
+  }
+}

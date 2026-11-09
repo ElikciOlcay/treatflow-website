@@ -162,6 +162,11 @@ export default function FeatureHero({
     return (
         <>
             <section className="relative overflow-hidden bg-white pb-20 sm:pb-24">
+                {/* Feines Raster hinter der Szene rechts, zum Rand hin ausgeblendet */}
+                <div
+                    className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.035)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.035)_1px,transparent_1px)] bg-[size:44px_44px] [mask-image:radial-gradient(ellipse_at_70%_30%,black,transparent_70%)]"
+                    aria-hidden="true"
+                />
                 {/* Ruhiger Hintergrund wie auf der Startseite statt kräftiger Verläufe */}
                 <div
                     className="pointer-events-none absolute inset-0 bg-[radial-gradient(56rem_32rem_at_8%_-10%,rgba(99,102,241,0.09),transparent_60%),radial-gradient(44rem_28rem_at_100%_0%,rgba(56,189,248,0.07),transparent_60%)]"

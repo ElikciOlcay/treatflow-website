@@ -2,13 +2,15 @@ import type { AppointmentCalendarContent } from "./types";
 
 export const appointmentCalendarIt: AppointmentCalendarContent = {
   meta: {
-    title: "Agenda appuntamenti per centri estetici: operatori e cabine",
+    title: "Agenda appuntamenti per centri estetici: da soli o in team",
     description:
-      "Agenda appuntamenti online per centri estetici e studi di medicina estetica: colonne per operatori e cabine, prenotazioni online, drag & drop e promemoria automatici via email. Zero commissioni, prova gratuita di 14 giorni.",
+      "Agenda appuntamenti per centri estetici, da soli o in team: prenotazioni online, drag & drop, promemoria, colonne per team e cabine. Zero commissioni.",
     keywords: [
       "agenda appuntamenti centro estetico",
       "software appuntamenti centro estetico",
       "gestionale appuntamenti estetista",
+      "agenda appuntamenti estetista",
+      "agenda appuntamenti estetista in proprio",
       "gestionale appuntamenti spa",
       "agenda prenotazioni centro estetico",
       "pianificazione operatori e cabine",
@@ -16,19 +18,20 @@ export const appointmentCalendarIt: AppointmentCalendarContent = {
       "agenda appuntamenti drag & drop",
     ],
   },
-  dates: { modified: "2026-10-28", published: "2024-06-01" },
+  dates: { modified: "2026-11-09", published: "2024-06-01" },
   schema: {
     id: "terminkalender",
     webPage: {
-      name: "Agenda appuntamenti per centri estetici: operatori e cabine",
+      name: "Agenda appuntamenti per centri estetici: da soli o in team",
       description:
-        "Agenda appuntamenti per centri estetici con vista giornaliera per operatori e cabine, drag & drop, prenotazioni online e promemoria automatici.",
+        "Agenda appuntamenti per centri estetici – per chi lavora in autonomia e per i team – con drag & drop, prenotazioni online, promemoria automatici e colonne per operatori e cabine.",
     },
     software: {
       name: "Agenda appuntamenti Treatflow per centri estetici",
       description:
-        "Agenda appuntamenti per centri estetici con colonne per operatori e cabine, drag & drop, prenotazioni online e promemoria automatici.",
+        "Agenda appuntamenti per centri estetici – da soli o in team – con drag & drop, prenotazioni online, promemoria automatici e colonne per operatori e cabine.",
       featureList: [
+        "Agenda appuntamenti per chi lavora in autonomia e per i team",
         "Vista giornaliera con una colonna per ogni operatore o cabina",
         "Occupazione e orari liberi in un colpo d'occhio",
         "Evita doppie prenotazioni di operatori e cabine",
@@ -45,16 +48,16 @@ export const appointmentCalendarIt: AppointmentCalendarContent = {
   hero: {
     eyebrow: "Agenda e pianificazione",
     eyebrowIcon: "calendar",
-    title: { before: "L'agenda appuntamenti per il tuo centro: team, servizi e ", highlight: "cabine" },
+    title: { before: "L'agenda appuntamenti per il tuo centro – ", highlight: "da soli o in team" },
     description:
-      "Operatori, cabine e appuntamenti del tuo centro estetico in un'unica vista, prenotazioni online incluse. Sposti gli appuntamenti con un trascinamento e dici addio alle doppie prenotazioni.",
-    chips: ["Drag & drop", "Team e cabine", "Meno no-show"],
+      "La tua agenda con prenotazioni online, promemoria e drag & drop: ideale se lavori in autonomia. Quando il centro cresce, ogni operatore e ogni cabina ha la sua colonna.",
+    chips: ["Da soli o in team", "Drag & drop", "Meno no-show"],
     secondaryCta: { label: "Prenotazioni online", href: { page: "online-booking" } },
     capsules: [
       {
         question: "Qual è il modo migliore per organizzare gli appuntamenti in un centro estetico?",
         answer:
-          "Treatflow riunisce appuntamenti, operatori e cabine in un'unica agenda. Nella vista giornaliera ogni persona o cabina ha la sua colonna: vedi subito chi è libero, eviti le doppie prenotazioni e gestisci gli imprevisti più in fretta. In più, prenotazioni online e promemoria automatici riducono telefonate e no-show.",
+          "Treatflow riunisce appuntamenti, prenotazioni online e promemoria in un'unica agenda, che tu lavori in autonomia o con un team. Se lavori in autonomia, vedi tutta la giornata con i tuoi appuntamenti in un colpo d'occhio. Con un team, nella vista giornaliera ogni persona o cabina ha la sua colonna: vedi subito gli orari liberi ed eviti le doppie prenotazioni. In più, prenotazioni online e promemoria automatici riducono telefonate e no-show.",
       },
       {
         question: "Quale agenda appuntamenti è adatta a uno studio di medicina estetica?",
@@ -68,13 +71,13 @@ export const appointmentCalendarIt: AppointmentCalendarContent = {
     },
   },
   understand: {
-    title: "Un'agenda per tutto il tuo centro",
-    description: "Appuntamenti, operatori e cabine in un colpo d'occhio: vedi subito chi è libero e quando.",
+    title: "Un'agenda che cresce con il tuo centro",
+    description: "Che tu lavori in autonomia o con un team: tutti gli appuntamenti in un colpo d'occhio, e vedi subito quando c'è ancora un posto libero.",
     items: [
       {
-        icon: "users",
-        title: "Team, cabine e servizi",
-        text: "Inserisci il tuo team, le cabine e i servizi: l'agenda crea una colonna per ogni persona o cabina.",
+        icon: "calendar-days",
+        title: "Da soli o in team",
+        text: "Se lavori in autonomia, hai sotto controllo la tua giornata con tutti gli appuntamenti. Quando arrivano collaboratori o nuove cabine, ogni persona e ogni cabina ha la sua colonna.",
       },
       {
         icon: "move",
@@ -91,17 +94,17 @@ export const appointmentCalendarIt: AppointmentCalendarContent = {
   howItWorks: {
     description: "Tre passaggi e la tua agenda è operativa.",
     steps: [
-      { title: "Configura team, servizi e cabine", text: "Inserisci operatori, trattamenti e cabine con i relativi orari di lavoro. L'agenda crea una colonna per ciascuno." },
+      { title: "Imposta servizi e orari di lavoro", text: "Inserisci i tuoi trattamenti e gli orari di lavoro. Se lavori con un team o hai più cabine, aggiungili pure: ogni persona e ogni cabina avrà la sua colonna." },
       { title: "Inserisci gli appuntamenti", text: "Inserisci tu gli appuntamenti oppure attiva le prenotazioni online: le prenotazioni dei tuoi clienti compaiono automaticamente in agenda." },
       { title: "I promemoria partono da soli", text: "I tuoi clienti ricevono via email la conferma della prenotazione e un promemoria: niente da inviare a mano." },
     ],
   },
   cards: {
     title: "Cosa ottieni",
-    description: "Tutto ciò che serve per organizzare il centro: team, cabine e promemoria in un'unica agenda.",
+    description: "Tutto ciò che serve per gli appuntamenti, che tu lavori in autonomia o con un team: prenotazioni online e promemoria in un'unica agenda.",
     items: [
-      { icon: "users", title: "Team e cabine", text: "Una colonna per ogni operatore o cabina. Occupazione e orari liberi in un colpo d'occhio.", points: ["Vista a colonne", "Disponibilità sempre visibile", "Nessuna doppia prenotazione"] },
-      { icon: "move", title: "Drag & drop", text: "Sposta, allunga o scambia gli appuntamenti: niente maschere da compilare, niente caos.", points: ["Spostamenti in pochi secondi", "Agenda subito aggiornata", "Per tutto il team"] },
+      { icon: "users", title: "Da soli o in team", text: "In autonomia vedi la tua giornata in un colpo d'occhio. Con un team, ogni operatore e ogni cabina ha la sua colonna.", points: ["Per chi lavora in autonomia", "Colonne per team e cabine", "Nessuna doppia prenotazione"] },
+      { icon: "move", title: "Drag & drop", text: "Sposta, allunga o scambia gli appuntamenti: niente maschere da compilare, niente caos.", points: ["Spostamenti in pochi secondi", "Agenda subito aggiornata", "Niente da ricreare"] },
       { icon: "layout-grid", title: "Dalla vista giornaliera alla mensile", text: "Passa dalla vista giornaliera a quella settimanale o mensile, a seconda di ciò che ti serve.", points: ["Vista giornaliera", "Vista settimanale", "Vista mensile"] },
       { icon: "bell", title: "Promemoria automatici", text: "Promemoria via email prima di ogni appuntamento. Meno no-show, meno telefonate di conferma.", points: ["Promemoria via email", "Orari personalizzabili", "Link per disdire"] },
       { icon: "calendar", title: "Prenotazioni online", text: "Le prenotazioni arrivano direttamente in agenda. Nessuna doppia prenotazione, conferma automatica.", points: ["Link di prenotazione personale", "Subito in agenda", "Nessuna commissione"] },
@@ -111,6 +114,11 @@ export const appointmentCalendarIt: AppointmentCalendarContent = {
   faq: {
     title: "Domande frequenti sull'agenda appuntamenti per centri estetici",
     items: [
+      {
+        question: "L'agenda appuntamenti va bene anche se lavoro in autonomia?",
+        answer:
+          "Sì. Molti centri estetici usano Treatflow senza un team. Vedi la tua giornata con tutti gli appuntamenti, i clienti prenotano online direttamente negli orari liberi e ricevono in automatico conferma e promemoria. Le colonne per operatori e cabine ti servono solo quando il centro cresce.",
+      },
       {
         question: "Qual è il modo migliore per organizzare gli appuntamenti in un centro estetico?",
         answer:
@@ -172,7 +180,7 @@ export const appointmentCalendarIt: AppointmentCalendarContent = {
   },
   cta: {
     title: "Vuoi un'agenda che lavora per te?",
-    description: "Provala gratis per 14 giorni, senza carta di credito. Agenda, pianificazione del team e prenotazioni online in un'unica app.",
+    description: "Provala gratis per 14 giorni, senza carta di credito. Agenda, prenotazioni online e promemoria in un'unica app, da soli o in team.",
     secondary: { label: "Prenotazioni online", href: { page: "online-booking" } },
   },
 };

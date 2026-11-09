@@ -1,0 +1,104 @@
+/* Terminkalender-Szene (AppointmentCalendarDemo) */
+
+/* Neue Online-Buchung fällt in die Spalte und leuchtet nach */
+.tf-cal-demo-drop {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25), 0 12px 28px -12px rgba(79, 70, 229, 0.7);
+  animation:
+    tf-cal-demo-drop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) 0.25s both,
+    tf-cal-demo-glow 2.4s ease-in-out 0.95s infinite;
+}
+
+/* Termin wird per Drag & Drop an eine andere Uhrzeit gezogen; Startversatz kommt über --tf-from-x/--tf-from-y */
+.tf-cal-demo-drag {
+  animation: tf-cal-demo-drag 1.7s cubic-bezier(0.45, 0, 0.2, 1) 0.3s both;
+}
+
+/* Gestrichelter Platzhalter am alten Platz, solange gezogen wird */
+.tf-cal-demo-ghost {
+  opacity: 0;
+  animation: tf-cal-demo-ghost 1.9s ease 0.3s both;
+}
+
+/* Mauszeiger, der den Termin trägt */
+.tf-cal-demo-cursor {
+  opacity: 0;
+  animation: tf-cal-demo-cursor 1.9s ease 0.2s both;
+}
+
+@keyframes tf-cal-demo-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-26px) scale(1.06);
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes tf-cal-demo-glow {
+  50% {
+    box-shadow: 0 0 0 6px rgba(99, 102, 241, 0.12), 0 12px 28px -12px rgba(79, 70, 229, 0.7);
+  }
+}
+
+@keyframes tf-cal-demo-drag {
+  0% {
+    transform: translate(var(--tf-from-x), var(--tf-from-y)) scale(1);
+    box-shadow: 0 0 0 0 rgba(15, 23, 42, 0);
+  }
+  15% {
+    transform: translate(var(--tf-from-x), var(--tf-from-y)) scale(1.06);
+    box-shadow: 0 16px 30px -12px rgba(15, 23, 42, 0.45);
+  }
+  80% {
+    transform: translate(0, 0) scale(1.06);
+    box-shadow: 0 16px 30px -12px rgba(15, 23, 42, 0.45);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    box-shadow: 0 0 0 0 rgba(15, 23, 42, 0);
+  }
+}
+
+@keyframes tf-cal-demo-ghost {
+  0% {
+    opacity: 0;
+  }
+  12%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes tf-cal-demo-cursor {
+  0% {
+    opacity: 0;
+    transform: translate(8px, 8px);
+  }
+  12% {
+    opacity: 1;
+    transform: none;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tf-cal-demo-drop,
+  .tf-cal-demo-drag,
+  .tf-cal-demo-ghost,
+  .tf-cal-demo-cursor {
+    animation: none !important;
+  }
+}

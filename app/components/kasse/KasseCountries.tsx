@@ -107,7 +107,7 @@ export default function KasseCountries() {
                             {/* kleiner Beleg mit Prüfhaken */}
                             <div className="mt-6 flex items-center gap-3 rounded-2xl border border-dashed border-emerald-200 bg-emerald-50/60 px-4 py-3">
                                 <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-emerald-500">
-                                    <svg viewBox="0 0 24 24" className="tf-pos-check h-5 w-5" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" className="tf-ui-check h-5 w-5" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="M5 12.5l4.5 4.5L19 7.5" />
                                     </svg>
                                 </span>

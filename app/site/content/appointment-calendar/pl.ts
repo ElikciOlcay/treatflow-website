@@ -2,33 +2,36 @@ import type { AppointmentCalendarContent } from "./types";
 
 export const appointmentCalendarPl: AppointmentCalendarContent = {
   meta: {
-    title: "Kalendarz wizyt dla salonu kosmetycznego: zespół i gabinety",
+    title: "Kalendarz wizyt dla salonu kosmetycznego: solo lub w zespole",
     description:
-      "Kalendarz wizyt i grafik dla salonów kosmetycznych i gabinetów medycyny estetycznej: kolumny dla pracowników i gabinetów, rezerwacje online, przesuwanie wizyt myszką oraz automatyczne przypomnienia e-mail. Bez prowizji, 14 dni za darmo.",
+      "Kalendarz wizyt dla salonu kosmetycznego, solo lub w zespole: rezerwacje online, przypomnienia e-mail, kolumny dla zespołu i gabinetów. Bez prowizji.",
     keywords: [
       "kalendarz wizyt salon kosmetyczny",
       "program do umawiania wizyt salon",
       "grafik salonu kosmetycznego",
       "terminarz wizyt online",
+      "kalendarz wizyt jednoosobowy salon",
+      "program do umawiania wizyt dla kosmetyczki",
       "kalendarz rezerwacji salon kosmetyczny",
       "planowanie pracowników i gabinetów",
       "program do umawiania wizyt gabinet medycyny estetycznej",
       "kalendarz wizyt przeciągnij i upuść",
     ],
   },
-  dates: { modified: "2026-10-28", published: "2024-06-01" },
+  dates: { modified: "2026-11-09", published: "2024-06-01" },
   schema: {
     id: "terminkalender",
     webPage: {
-      name: "Kalendarz wizyt dla salonu kosmetycznego: zespół i gabinety",
+      name: "Kalendarz wizyt dla salonu kosmetycznego: solo lub w zespole",
       description:
-        "Kalendarz wizyt dla salonów kosmetycznych z widokiem dnia dla pracowników i gabinetów, przeciąganiem i upuszczaniem, rezerwacjami online i automatycznymi przypomnieniami.",
+        "Kalendarz wizyt dla salonów kosmetycznych – dla jednoosobowych salonów i zespołów – z przeciąganiem i upuszczaniem, rezerwacjami online, automatycznymi przypomnieniami i kolumnami dla pracowników i gabinetów.",
     },
     software: {
       name: "Kalendarz wizyt Treatflow dla salonów kosmetycznych",
       description:
-        "Kalendarz wizyt dla salonów kosmetycznych z kolumnami dla pracowników i gabinetów, przeciąganiem i upuszczaniem, rezerwacjami online i automatycznymi przypomnieniami.",
+        "Kalendarz wizyt dla salonów kosmetycznych – solo lub w zespole – z przeciąganiem i upuszczaniem, rezerwacjami online, automatycznymi przypomnieniami oraz kolumnami dla pracowników i gabinetów.",
       featureList: [
+        "Kalendarz wizyt dla jednoosobowych salonów i zespołów",
         "Widok dnia z osobną kolumną dla każdej osoby z zespołu lub gabinetu",
         "Podgląd obłożenia i wolnych terminów",
         "Brak podwójnych rezerwacji pracowników i gabinetów",
@@ -45,16 +48,16 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
   hero: {
     eyebrow: "Planowanie i kalendarz wizyt",
     eyebrowIcon: "calendar",
-    title: { before: "Kalendarz wizyt dla całego zespołu i wszystkich ", highlight: "gabinetów" },
+    title: { before: "Kalendarz wizyt dla salonu kosmetycznego – ", highlight: "solo lub w zespole" },
     description:
-      "Grafik całego salonu w jednym widoku: pracownicy, gabinety i wizyty, a do tego rezerwacje online. Wizyty przesuwasz jednym ruchem, a podwójne rezerwacje po prostu się nie zdarzają.",
-    chips: ["Przeciągnij i upuść", "Zespół i gabinety", "Mniej nieodwołanych wizyt"],
+      "Twój kalendarz wizyt z rezerwacjami online, przypomnieniami i funkcją przeciągnij i upuść – idealny, gdy pracujesz samodzielnie. Gdy salon się rozrasta, każda osoba z zespołu i każdy gabinet dostają własną kolumnę.",
+    chips: ["Solo lub w zespole", "Przeciągnij i upuść", "Mniej nieodwołanych wizyt"],
     secondaryCta: { label: "Rezerwacje online", href: { page: "online-booking" } },
     capsules: [
       {
         question: "Jak najlepiej organizować wizyty w salonie kosmetycznym?",
         answer:
-          "Treatflow łączy wizyty, pracowników i gabinety w jednym kalendarzu. Widok dnia pokazuje każdą osobę lub gabinet w osobnej kolumnie, dzięki czemu od razu widzisz wolne terminy, unikasz podwójnych rezerwacji i szybciej reagujesz na zmiany. Rezerwacje online i automatyczne przypomnienia ograniczają też liczbę telefonów i nieodwołanych wizyt.",
+          "Treatflow łączy wizyty, rezerwacje online i przypomnienia w jednym kalendarzu – niezależnie od tego, czy pracujesz samodzielnie, czy z zespołem. Pracując samodzielnie, widzisz cały dzień ze wszystkimi wizytami na pierwszy rzut oka. W zespole widok dnia pokazuje każdą osobę lub gabinet w osobnej kolumnie, dzięki czemu od razu widzisz wolne terminy i unikasz podwójnych rezerwacji. Rezerwacje online i automatyczne przypomnienia ograniczają też liczbę telefonów i nieodwołanych wizyt.",
       },
       {
         question: "Jaki program do umawiania wizyt sprawdzi się w gabinecie medycyny estetycznej?",
@@ -68,13 +71,13 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
     },
   },
   understand: {
-    title: "Program do planowania wizyt dla całego salonu",
-    description: "Wszystkie wizyty, pracownicy i gabinety w jednym miejscu – od razu widzisz, kto i kiedy jest wolny.",
+    title: "Kalendarz wizyt, który rośnie razem z Twoim salonem",
+    description: "Niezależnie od tego, czy pracujesz samodzielnie, czy z zespołem: wszystkie wizyty w jednym miejscu – od razu widzisz, kiedy jest jeszcze wolny termin.",
     items: [
       {
-        icon: "users",
-        title: "Zespół, gabinety i usługi",
-        text: "Dodaj osoby z zespołu, gabinety zabiegowe i usługi. Kalendarz pokaże wtedy osobną kolumnę dla każdej osoby lub gabinetu.",
+        icon: "calendar-days",
+        title: "Solo lub w zespole",
+        text: "Gdy pracujesz samodzielnie, masz przed oczami cały dzień ze wszystkimi wizytami. Gdy dochodzą nowe osoby lub gabinety zabiegowe, każda osoba i każdy gabinet dostają własną kolumnę.",
       },
       {
         icon: "move",
@@ -91,17 +94,17 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
   howItWorks: {
     description: "Trzy kroki do sprawnie działającego grafiku salonu.",
     steps: [
-      { title: "Skonfiguruj zespół, usługi i gabinety", text: "Dodaj pracowników, zabiegi i gabinety wraz z godzinami pracy. Kalendarz pokaże wtedy osobną kolumnę dla każdego z nich." },
+      { title: "Wpisz usługi i godziny pracy", text: "Dodaj swoje zabiegi i godziny pracy. Jeśli masz zespół lub kilka gabinetów, dodaj je również – wtedy każda osoba i każdy gabinet dostaną własną kolumnę." },
       { title: "Dodawaj wizyty", text: "Wpisuj wizyty samodzielnie lub włącz rezerwacje online – wtedy wizyty umówione przez klientów same pojawią się w kalendarzu." },
       { title: "Przypomnienia wysyłają się same", text: "Klienci dostają e-mailem potwierdzenie rezerwacji i przypomnienie – niczego nie wysyłasz ręcznie." },
     ],
   },
   cards: {
     title: "Co otrzymujesz",
-    description: "Wszystko do planowania wizyt w salonie – zespół, gabinety i przypomnienia w jednym kalendarzu.",
+    description: "Wszystko do planowania wizyt – od jednoosobowego salonu po zespół, z rezerwacjami online i przypomnieniami w jednym kalendarzu.",
     items: [
-      { icon: "users", title: "Zespół i gabinety", text: "Osobna kolumna dla każdej osoby z zespołu lub gabinetu. Obłożenie i wolne terminy na pierwszy rzut oka.", points: ["Widok kolumnowy", "Wolne terminy od razu widoczne", "Bez podwójnych rezerwacji"] },
-      { icon: "move", title: "Przeciągnij i upuść", text: "Przesuwaj, wydłużaj lub zamieniaj wizyty – bez wypełniania formularzy i bez chaosu.", points: ["Zmiana terminu w kilka sekund", "Od razu w kalendarzu", "Dla całego zespołu"] },
+      { icon: "users", title: "Solo lub w zespole", text: "Pracując samodzielnie, widzisz swój dzień na pierwszy rzut oka. W zespole każda osoba i każdy gabinet mają własną kolumnę.", points: ["Dla jednoosobowych salonów", "Kolumny dla zespołu i gabinetów", "Bez podwójnych rezerwacji"] },
+      { icon: "move", title: "Przeciągnij i upuść", text: "Przesuwaj, wydłużaj lub zamieniaj wizyty – bez wypełniania formularzy i bez chaosu.", points: ["Zmiana terminu w kilka sekund", "Od razu w kalendarzu", "Bez tworzenia od nowa"] },
       { icon: "layout-grid", title: "Od widoku dnia po miesiąc", text: "Przełączaj się między dniem, tygodniem i miesiącem – zależnie od tego, czego akurat potrzebujesz.", points: ["Widok dnia", "Tydzień", "Miesiąc"] },
       { icon: "bell", title: "Automatyczne przypomnienia", text: "Przypomnienie e-mail przed każdą wizytą. Mniej nieodwołanych wizyt i mniej obdzwaniania klientów.", points: ["Przypomnienia e-mail", "Elastyczny termin wysyłki", "Link do odwołania wizyty"] },
       { icon: "calendar", title: "Rezerwacje online", text: "Rezerwacje trafiają prosto do kalendarza. Bez podwójnych rezerwacji, z automatycznym potwierdzeniem.", points: ["Własny link do rezerwacji", "Od razu w kalendarzu", "Bez prowizji"] },
@@ -111,6 +114,11 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
   faq: {
     title: "Najczęstsze pytania o kalendarz wizyt dla salonu",
     items: [
+      {
+        question: "Czy kalendarz wizyt sprawdzi się, jeśli pracuję samodzielnie?",
+        answer:
+          "Tak. Z Treatflow pracuje wiele jednoosobowych salonów. Widzisz swój dzień ze wszystkimi wizytami, klienci rezerwują online bezpośrednio w Twoich wolnych terminach i automatycznie dostają potwierdzenie oraz przypomnienie. Kolumny dla pracowników i gabinetów przydadzą Ci się dopiero wtedy, gdy salon się rozrośnie.",
+      },
       {
         question: "Jak najlepiej organizować wizyty w salonie kosmetycznym?",
         answer:
@@ -172,7 +180,7 @@ export const appointmentCalendarPl: AppointmentCalendarContent = {
   },
   cta: {
     title: "Czas na planowanie wizyt bez stresu?",
-    description: "Wypróbuj 14 dni za darmo – bez podawania karty. Kalendarz, grafik zespołu i rezerwacje online w jednej aplikacji.",
+    description: "Wypróbuj 14 dni za darmo – bez podawania karty. Kalendarz, rezerwacje online i przypomnienia w jednej aplikacji – solo lub w zespole.",
     secondary: { label: "Rezerwacje online", href: { page: "online-booking" } },
   },
 };

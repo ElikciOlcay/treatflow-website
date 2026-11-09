@@ -2,32 +2,35 @@ import type { AppointmentCalendarContent } from "./types";
 
 export const appointmentCalendarEn: AppointmentCalendarContent = {
   meta: {
-    title: "Salon Appointment Calendar & Diary for Staff and Rooms",
+    title: "Salon Appointment Calendar: Solo or With a Team",
     description:
-      "Appointment scheduling software for beauty salons and aesthetic clinics: a calendar with columns for staff and rooms, online booking, drag & drop and automatic email reminders. No commission, 14-day free trial.",
+      "Salon appointment calendar, whether you work solo or with a team: online booking, drag & drop, email reminders, columns for staff & rooms. No commission.",
     keywords: [
       "appointment calendar beauty salon",
       "salon scheduling software",
       "salon diary software",
       "beauty salon booking calendar",
+      "appointment calendar for solo beauty therapists",
+      "self-employed beauty therapist diary",
       "staff and room scheduling",
       "aesthetic clinic scheduling software",
       "online appointment book salon",
     ],
   },
-  dates: { modified: "2026-10-28", published: "2024-06-01" },
+  dates: { modified: "2026-11-09", published: "2024-06-01" },
   schema: {
     id: "terminkalender",
     webPage: {
-      name: "Salon Appointment Calendar & Diary for Staff and Rooms",
+      name: "Salon Appointment Calendar: Solo or With a Team",
       description:
-        "Appointment calendar for beauty salons with a day view for staff and rooms, drag & drop, online booking and automatic reminders.",
+        "Appointment calendar for beauty salons – for solo salons and teams – with drag & drop, online booking, automatic reminders and columns for staff and rooms.",
     },
     software: {
       name: "Treatflow appointment calendar for beauty salons",
       description:
-        "Appointment calendar for beauty salons with staff and room columns, drag & drop, online booking and automatic reminders.",
+        "Appointment calendar for beauty salons – solo or with a team – with drag & drop, online booking, automatic reminders and staff and room columns.",
       featureList: [
+        "Appointment calendar for solo salons and teams",
         "Day view with one column per team member or room",
         "See utilisation and free capacity",
         "Avoid double bookings of staff and rooms",
@@ -44,16 +47,16 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
   hero: {
     eyebrow: "Scheduling & appointment calendar",
     eyebrowIcon: "calendar",
-    title: { before: "The salon appointment calendar for your team and ", highlight: "rooms" },
+    title: { before: "The salon appointment calendar – ", highlight: "solo or with a team" },
     description:
-      "The scheduling tool for your beauty salon: staff, rooms and appointments in one view, online booking included. Reschedule with drag & drop and avoid double bookings.",
-    chips: ["Drag & drop", "Team & rooms", "Fewer no-shows"],
+      "Your appointment calendar with online booking, reminders and drag & drop – ideal if you work on your own. As your salon grows, team members and rooms get their own column.",
+    chips: ["Solo or with a team", "Drag & drop", "Fewer no-shows"],
     secondaryCta: { label: "Online booking", href: { page: "online-booking" } },
     capsules: [
       {
         question: "What is the best way to organise appointments in a beauty salon?",
         answer:
-          "Treatflow brings appointments, staff and rooms together in one calendar. The day view shows every person or room in its own column, so you spot free capacity, avoid double bookings and handle changes faster. Online booking and automatic reminders also cut down on phone calls and no-shows.",
+          "Treatflow brings appointments, online bookings and reminders together in one calendar – whether you work on your own or with a team. On your own, you see your whole day with all appointments at a glance. With a team, the day view shows every person or room in its own column, so you spot free capacity and avoid double bookings. Online booking and automatic reminders also cut down on phone calls and no-shows.",
       },
       {
         question: "Which scheduling software works for aesthetic clinics?",
@@ -67,13 +70,13 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
     },
   },
   understand: {
-    title: "Scheduling software for your whole salon",
-    description: "All appointments, staff and rooms at a glance – you instantly see who is free and when.",
+    title: "An appointment calendar that grows with your salon",
+    description: "Whether you work solo or with a team: all appointments at a glance – you instantly see when there is still a free slot.",
     items: [
       {
-        icon: "users",
-        title: "Team, rooms and services",
-        text: "Add your team members, treatment rooms and services. The calendar then shows a separate column for every person or room.",
+        icon: "calendar-days",
+        title: "Solo or with a team",
+        text: "If you work on your own, you have your whole day with all appointments in view. When team members or treatment rooms are added, every person and every room gets its own column.",
       },
       {
         icon: "move",
@@ -90,17 +93,17 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
   howItWorks: {
     description: "Your salon diary up and running in three steps.",
     steps: [
-      { title: "Set up team, services and rooms", text: "Add your staff, treatments and rooms with working hours. The calendar then shows a separate column for each of them." },
+      { title: "Add services and working hours", text: "Enter your treatments and working hours. If you have a team or several rooms, add them too – every person and every room then gets its own column." },
       { title: "Add appointments", text: "Enter appointments yourself or switch on online booking – your clients' bookings then appear in the calendar automatically." },
       { title: "Reminders run automatically", text: "Your clients receive a booking confirmation and a reminder by email – nothing to send manually." },
     ],
   },
   cards: {
     title: "What you get",
-    description: "Everything for salon scheduling – team, rooms and reminders in one calendar.",
+    description: "Everything for scheduling – from solo salons to teams, with online booking and reminders in one calendar.",
     items: [
-      { icon: "users", title: "Team & rooms", text: "One column per team member or room. Utilisation and free slots at a glance.", points: ["Column view", "Spot free capacity", "No double bookings"] },
-      { icon: "move", title: "Drag & drop", text: "Move, extend or swap appointments – no re-entering, no chaos.", points: ["Reschedule in seconds", "Live in the calendar", "For the whole team"] },
+      { icon: "users", title: "Solo or with a team", text: "Working solo, you see your day at a glance. With a team, every team member and every room gets its own column.", points: ["For solo salons", "Columns for team & rooms", "No double bookings"] },
+      { icon: "move", title: "Drag & drop", text: "Move, extend or swap appointments – no re-entering, no chaos.", points: ["Reschedule in seconds", "Live in the calendar", "No need to re-create"] },
       { icon: "layout-grid", title: "Day to month view", text: "Switch between day, week and month – whatever you need right now.", points: ["Day view", "Week", "Month"] },
       { icon: "bell", title: "Automatic reminders", text: "Email reminders before every appointment. Fewer no-shows, fewer follow-up calls.", points: ["Email reminders", "Flexible timing", "Cancellation link"] },
       { icon: "calendar", title: "Online booking", text: "Bookings land straight in the calendar. No double bookings, automatic confirmation.", points: ["Personal booking link", "Instantly in the calendar", "No commission"] },
@@ -110,6 +113,11 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
   faq: {
     title: "Frequently asked questions about the salon appointment calendar",
     items: [
+      {
+        question: "Is the appointment calendar also suitable if I work on my own?",
+        answer:
+          "Yes. Many salon owners work solo with Treatflow. You see your day with all appointments, clients book online straight into your free slots and automatically receive a confirmation and a reminder. You only need columns for staff and rooms once your salon grows.",
+      },
       {
         question: "What is the best way to organise appointments in a beauty salon?",
         answer:
@@ -171,7 +179,7 @@ export const appointmentCalendarEn: AppointmentCalendarContent = {
   },
   cta: {
     title: "Ready for stress-free scheduling?",
-    description: "Try it free for 14 days – no credit card required. Calendar, team planning and online booking in one app.",
+    description: "Try it free for 14 days – no credit card required. Calendar, online booking and reminders in one app, solo or with a team.",
     secondary: { label: "Online booking", href: { page: "online-booking" } },
   },
 };

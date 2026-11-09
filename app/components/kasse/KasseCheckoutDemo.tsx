@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Banknote, Check, CreditCard, Gift, Nfc, Split } from 'lucide-react';
 import ReceiptQr from './ReceiptQr';
-import { formatEuro, useInView, usePrefersReducedMotion } from './motion';
+import { formatEuro, useInView, usePrefersReducedMotion } from '@/app/components/motion';
 
 const STEPS = [
     { label: 'Termin', duration: 2400 },
@@ -127,13 +127,13 @@ export default function KasseCheckoutDemo() {
                                 <span className="block truncate text-xs text-gray-500">Heute 10:00 · Hydrafacial Deluxe</span>
                             </span>
                             {shownStep === 0 ? (
-                                <span className="tf-pos-ring whitespace-nowrap rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white">
+                                <span className="tf-ui-ring whitespace-nowrap rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white">
                                     Kassieren
                                 </span>
                             ) : (
                                 <span
                                     key={`taken-${cycle}`}
-                                    className="tf-pos-pop inline-flex items-center gap-1 whitespace-nowrap rounded-lg bg-emerald-50 px-2.5 py-1.5 text-xs font-semibold text-emerald-700"
+                                    className="tf-ui-pop inline-flex items-center gap-1 whitespace-nowrap rounded-lg bg-emerald-50 px-2.5 py-1.5 text-xs font-semibold text-emerald-700"
                                 >
                                     <Check className="h-3.5 w-3.5" />
                                     Übernommen
@@ -152,7 +152,7 @@ export default function KasseCheckoutDemo() {
                                     ITEMS.map((item, index) => (
                                         <li
                                             key={`${cycle}-${item.name}`}
-                                            className="tf-pos-line-in flex items-center justify-between gap-3 border-b border-gray-50 py-2.5 last:border-0"
+                                            className="tf-ui-line-in flex items-center justify-between gap-3 border-b border-gray-50 py-2.5 last:border-0"
                                             style={{ animationDelay: `${index * 240}ms` }}
                                         >
                                             <span className="min-w-0">
@@ -240,9 +240,9 @@ export default function KasseCheckoutDemo() {
                     <div
                         key={`terminal-${cycle}`}
                         // Auf dem Handy nur während der Zahlung zeigen, damit der Beleg danach frei steht
-                        className={`tf-pos-pop absolute -bottom-6 -left-2 z-10 w-[8.75rem] sm:-left-12 sm:block sm:w-40 ${shownStep === 3 ? 'hidden' : ''}`}
+                        className={`tf-ui-pop absolute -bottom-6 -left-2 z-10 w-[8.75rem] sm:-left-12 sm:block sm:w-40 ${shownStep === 3 ? 'hidden' : ''}`}
                     >
-                        <div className="tf-pos-float">
+                        <div className="tf-ui-float">
                             <div className="rounded-[1.35rem] border border-gray-200 bg-white p-2 shadow-[0_24px_50px_-20px_rgba(15,23,42,0.55)]">
                                 <div className="rounded-2xl bg-gray-900 px-3 pb-3 pt-2 text-white">
                                     <div className="flex items-center justify-between text-[9px] text-gray-400">
@@ -256,15 +256,15 @@ export default function KasseCheckoutDemo() {
                                                 {[0, 1, 2].map((wave) => (
                                                     <span
                                                         key={wave}
-                                                        className="tf-pos-wave absolute inset-0 rounded-full border-2 border-sky-400"
+                                                        className="tf-ui-wave absolute inset-0 rounded-full border-2 border-sky-400"
                                                         style={{ animationDelay: `${wave * 500}ms` }}
                                                     />
                                                 ))}
                                                 <Nfc className="h-6 w-6 text-sky-300" />
                                             </>
                                         ) : (
-                                            <span className="tf-pos-pop flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500">
-                                                <svg viewBox="0 0 24 24" className="tf-pos-check h-6 w-6" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                            <span className="tf-ui-pop flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500">
+                                                <svg viewBox="0 0 24 24" className="tf-ui-check h-6 w-6" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                                                     <path d="M5 12.5l4.5 4.5L19 7.5" />
                                                 </svg>
                                             </span>
@@ -282,7 +282,7 @@ export default function KasseCheckoutDemo() {
                 {/* Signierter Beleg */}
                 {shownStep === 3 && (
                     <div key={`receipt-${cycle}`} className="absolute -right-2 -top-9 z-20 w-[10.5rem] drop-shadow-[0_22px_28px_rgba(15,23,42,0.28)] sm:-right-10 sm:w-48">
-                        <div className="tf-pos-print">
+                        <div className="tf-ui-print">
                             <div className="rounded-t-md bg-white px-3 pb-2 pt-3 text-[10px] leading-relaxed text-gray-600">
                                 <p className="text-center text-xs font-bold text-gray-900">Studio Aurora</p>
                                 <p className="text-center text-[9px] text-gray-400">Beleg 2026-0418 · 10:58</p>
@@ -306,7 +306,7 @@ export default function KasseCheckoutDemo() {
                                     <ReceiptQr className="h-12 w-12 flex-shrink-0" />
                                     <span className="text-[9px] leading-snug">
                                         <span className="flex items-center gap-1 font-semibold text-emerald-600">
-                                            <svg viewBox="0 0 24 24" className="tf-pos-check h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                            <svg viewBox="0 0 24 24" className="tf-ui-check h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                                                 <path d="M5 12.5l4.5 4.5L19 7.5" />
                                             </svg>
                                             TSE-Signatur
@@ -342,7 +342,7 @@ export default function KasseCheckoutDemo() {
                                     <span
                                         key={`${cycle}-${index}-${active}`}
                                         className={`block h-full w-full rounded-full bg-gradient-to-r from-indigo-600 to-sky-500 ${
-                                            active && playing ? 'tf-pos-fill' : ''
+                                            active && playing ? 'tf-ui-fill' : ''
                                         }`}
                                         style={active && playing ? { animationDuration: `${duration}ms` } : undefined}
                                     />

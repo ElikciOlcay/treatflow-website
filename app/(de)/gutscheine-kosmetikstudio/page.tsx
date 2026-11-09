@@ -1,5 +1,5 @@
 import {
-    Gift, ShieldCheck, ScanLine, CalendarClock, Receipt, TrendingUp, Sparkles, Wallet,
+    Gift, ShieldCheck, ScanLine, CalendarClock, Receipt, TrendingUp,
     Globe, CreditCard, Palette, PackageCheck,
 } from 'lucide-react';
 import Navigation from '@/app/components/Navigation';
@@ -8,6 +8,7 @@ import SocialProofBar from '@/app/components/SocialProofBar';
 import Script from 'next/script';
 import { generateBreadcrumbSchema } from '@/app/components/Breadcrumbs';
 import FeatureHero, { FeatureTitleHighlight } from '@/app/components/FeatureHero';
+import VouchersDemo from '@/app/components/feature-demos/VouchersDemo';
 import {
     FeatureUnderstand,
     FeatureHowItWorks,
@@ -165,29 +166,7 @@ export default function GutscheinePage() {
                 }}
                 dateModified={PAGE_DATE_MODIFIED}
                 datePublished={PAGE_DATE_PUBLISHED}
-                visual={
-                    <div className="relative rounded-2xl p-[2px] bg-gradient-to-r from-purple-500 to-pink-600 shadow-xl max-w-md mx-auto lg:mx-0 lg:ml-auto">
-                        <div className="bg-white rounded-[14px] p-6 sm:p-8">
-                            <div className="flex items-center justify-between mb-4">
-                                <div className="flex items-center gap-2">
-                                    <div className="w-10 h-10 rounded-xl bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center">
-                                        <Gift className="h-5 w-5 text-white" />
-                                    </div>
-                                    <span className="font-semibold text-gray-900">Geschenkgutschein</span>
-                                </div>
-                                <Sparkles className="h-5 w-5 text-purple-400" />
-                            </div>
-                            <div className="text-center py-6">
-                                <div className="text-4xl font-bold text-gray-900">50,00 €</div>
-                                <p className="text-sm text-gray-500 mt-1">Restwert nach erster Einlösung: 20,00 €</p>
-                            </div>
-                            <div className="flex items-center justify-between text-xs text-gray-500 border-t border-dashed border-gray-200 pt-3">
-                                <span className="inline-flex items-center"><Wallet className="h-3.5 w-3.5 mr-1" /> Code TF-2026-0042</span>
-                                <span className="inline-flex items-center"><CalendarClock className="h-3.5 w-3.5 mr-1" /> gültig bis 31.12.2027</span>
-                            </div>
-                        </div>
-                    </div>
-                }
+                visual={<VouchersDemo market="de" />}
             />
 
             <FeatureUnderstand
