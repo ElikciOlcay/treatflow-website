@@ -1511,4 +1511,180 @@ export const posts: BlogArticle[] = [
       { pageKey: "client-records", label: "Müşteri takip programı" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // Randevu iptal politikası ve kapora
+  // ---------------------------------------------------------------------------
+  {
+    topic: "cancellation-policy-salon",
+    lang: "tr",
+    slug: "randevu-iptal-politikasi-kapora-guzellik-salonu",
+    title: "Güzellik Salonunda Randevu İptal Politikası: Süreler, Kapora ve Hazır Metin",
+    metaTitle: "Randevu İptal Politikası ve Kapora: Salon Rehberi",
+    description:
+      "Güzellik salonu için randevu iptal politikası nasıl yazılır? Ücretsiz iptal süresi, son dakika iptal ve gelmeyen müşteri ücreti, kapora ve örnek metin.",
+    excerpt:
+      "İptal kuralları ancak müşteri randevu almadan önce görürse ve siz her seferinde aynı şekilde uygularsanız işe yarar. Süreler, tutarlar, kapora, hazır metin ve zor konuşmalar için cümleler.",
+    category: "İşletme",
+    keywords: [
+      "randevu iptal politikası",
+      "güzellik salonu kapora",
+      "randevuya gelmeyen müşteri",
+      "son dakika randevu iptali",
+      "salon iptal kuralları",
+      "kapora iadesi salon",
+      "kalıcı makyaj kapora",
+    ],
+    publishedAt: "2026-11-10",
+    updatedAt: "2026-11-10",
+    readMinutes: 8,
+    answer:
+      "İyi bir randevu iptal politikası, müşterinin randevuyu ne zamana kadar ücretsiz iptal edebileceğini (genellikle 24 veya 48 saat önce), son dakika iptalinde ne olacağını (çoğu salonda hizmet bedelinin yüzde 50'si veya kaporanın düşmesi) ve haber vermeden gelmeyen müşteri için kuralı açıkça söyler. Bu kurallar ancak müşteri bunları randevu almadan önce biliyorsa, yazılı olarak teyit ediliyorsa ve siz herkese aynı şekilde uyguluyorsanız işe yarar.",
+    takeaways: [
+      "Müşteri iptal kurallarını randevudan önce görmeli; sonradan öğrendiği kural tartışma çıkarır.",
+      "Süreyi ve tutarı hizmete göre ayarlayın: 20 dakikalık kaş alma ile 3 saatlik ipek kirpik aynı kuralla yönetilmez.",
+      "Kapora alacaksanız ne zaman iade edileceğini, ne zaman düşeceğini ve hizmet bedelinden düşüleceğini yazın.",
+      "Her son dakika iptalini ve gelmeyen randevuyu müşteri kartına not edin; böylece tüm ekip aynı şekilde davranır.",
+      "Hatırlatmalar, kolay randevu değiştirme ve bekleme listesi, hiçbir iptal ücretinin kurtaramayacağı kadar geliri korur.",
+    ],
+    intro: [
+      "Doksan dakikalık bir cilt bakımından iki saat önce iptal eden müşteri, takviminizde neredeyse hiç dolduramayacağınız bir boşluk bırakır. Uzmanın maaşı ödenir, ürünler belki hazırlanmıştır. Ayda birkaç kez yaşandığında bu kayıp hızla binlerce liraya ulaşır. Yine de birçok salon sahibi, sadık müşterilerini kaybetmekten ya da ayıp olur diye hiçbir kural koymaz.",
+      "Nazik olmakla gelirinizi korumak arasında seçim yapmak zorunda değilsiniz. Açık ve adil bir randevu iptal politikası takviminizi korur ve müşterinin de işini kolaylaştırır, çünkü kuralları baştan bilir. Bu rehberde politikaya neler yazılmalı, hangi süre ve tutarlar makul, kapora nasıl kullanılmalı ve kurallar ilişkiyi bozmadan nasıl uygulanır, adım adım anlatıyoruz. Bu yazı pratik bir rehberdir, hukuki danışmanlık değildir.",
+    ],
+    sections: [
+      {
+        heading: "Güzellik salonu son dakika iptali için ücret alabilir mi?",
+        paragraphs: [
+          "Genel olarak evet. Müşteri belirli bir saate randevu aldığında aranızda bir hizmet anlaşması oluşur ve siz o saati başkasına satamazsınız. Müşteri gelmezse ya da yerini dolduramayacağınız kadar geç iptal ederse, uğradığınız kaybın karşılanmasını istemek meşrudur.",
+          "Burada iki nokta önemlidir. Birincisi, müşteri kuralları randevudan önce bilmelidir; sonradan çıkarılan bir ücret savunulması zor bir taleptir. İkincisi, tutar makul olmalıdır. 6502 sayılı Tüketicinin Korunması Hakkında Kanun, tüketici aleyhine dengesizlik yaratan haksız şartları geçersiz sayar. Gerçek kaybınızla, yani bloke edilen süre ve hazırlanan malzemeyle orantılı bir ücret, yüksek bir sabit cezadan çok daha sağlamdır.",
+        ],
+        callout:
+          "Yüksek kapora almayı veya yüksek iptal ücreti uygulamayı düşünüyorsanız, metninizi bir kez bir avukata ya da meslek odanıza kontrol ettirin.",
+      },
+      {
+        heading: "Kapora almak mı, sonradan ücret istemek mi daha doğru?",
+        paragraphs: [
+          "Türkiye'de özellikle kalıcı makyaj, ipek kirpik, gelin makyajı ve lazer paketlerinde kapora almak çok yaygındır. Bunun bir nedeni var: gelmeyen müşteriden sonradan ücret istemek çoğu zaman sonuçsuz kalır, küçük tutarların peşinden koşmak hem zaman hem de keyif kaybıdır. Randevu alırken ödenen kapora bu sorunu çözer ve düşünmeden alınan randevuları azaltır.",
+          "Türk Borçlar Kanunu'na göre kapora (bağlanma parası), aksi kararlaştırılmadıkça hizmet bedelinden düşülür; kaporayı veren taraf anlaşmaya uymazsa kapora karşı tarafta kalır, alan taraf uymazsa iki katını iade eder. Yine de kuralı mutlaka yazılı ve açık şekilde belirtin. Kapora ayrıca randevu almayı bir adım zorlaştırır; yıllardır gelen müşterileriniz bunu güvensizlik olarak algılayabilir. Makul bir orta yol, kaporayı yalnızca riskin yüksek olduğu durumlarda istemektir:",
+        ],
+        bullets: [
+          "İlk kez uzun veya pahalı bir işlem için randevu alan yeni müşteriler.",
+          "Daha önce birden fazla kez gelmeyen ya da son dakika iptal eden müşteriler.",
+          "Önceden malzeme sipariş ettiğiniz veya hazırladığınız işlemler, örneğin kalıcı makyaj pigmentleri ya da özel kirpik setleri.",
+          "Çok talep gören saatler, örneğin hafta sonları, bayram öncesi ve düğün sezonu.",
+        ],
+      },
+      {
+        heading: "Randevu iptal politikasında neler yazmalı?",
+        paragraphs: [
+          "On saniyede anlaşılan bir kural, bir sayfalık resmi metinden çok daha iyi işler. Şu başlıkları sade bir dille yazın:",
+        ],
+        table: {
+          headers: ["Başlık", "Ne yazılmalı", "Örnek"],
+          rows: [
+            ["Ücretsiz iptal", "Ne kadar önce ücretsiz iptal veya değişiklik yapılabileceği", "Randevudan 24 saat öncesine kadar"],
+            ["Son dakika iptali", "Bu süre içinde ne olacağı", "Hizmet bedelinin %50'si veya kaporanın düşmesi"],
+            ["Haber vermeden gelmeme", "Müşteri gelmez ve haber vermezse ne olacağı", "Kapora iade edilmez"],
+            ["Geç kalma", "İşlemin ne zaman kısalacağı veya iptal edileceği", "15 dakikadan fazla gecikmede işlem kısalabilir"],
+            ["Nasıl iptal edilir", "Hangi kanalın kullanılacağı", "Onay e-postasındaki bağlantı veya telefon"],
+            ["İstisnalar", "Acil durumlara nasıl yaklaştığınız", "Hastalık veya acil durumda birlikte çözüm buluruz"],
+            ["Kapora", "Hizmet bedelinden düşülüp düşülmeyeceği ve ne zaman yanacağı", "Bedelden düşülür, 48 saatten kısa iptalde iade edilmez"],
+          ],
+        },
+        bullets: [
+          "'Ceza' yerine 'randevu kuralları' ya da 'iptal politikası' deyin. Aynı kural bambaşka algılanır.",
+          "Nedenini tek cümleyle açıklayın: o saat sadece müşteri için ayrılmıştır.",
+          "Her yerde aynı metni kullanın: web sitesi, Instagram profili, randevu sayfası, onay, hatırlatma ve salon içi.",
+        ],
+      },
+      {
+        heading: "Hangi hizmette hangi süre ve ücret adil olur?",
+        paragraphs: [
+          "Herkese uyan tek bir rakam yoktur. Doğru kural; hizmetin takvimi ne kadar meşgul ettiğine, fiyatına ve son dakikada yerini doldurma ihtimalinize bağlıdır. Kısa bir kaş alımında boşalan saati çoğu zaman aynı gün doldurabilirsiniz; üç saatlik bir ipek kirpik uygulamasında ise bu neredeyse imkânsızdır. Bu yüzden tek bir kural yerine hizmet grubuna göre farklı süreler belirlemek hem daha adil hem de müşteriye daha kolay anlatılır. Birçok salon kademeli bir model kullanır:",
+        ],
+        table: {
+          headers: ["Hizmet türü", "Ücretsiz iptal", "Son dakika iptali", "Gelmeme"],
+          rows: [
+            ["Kısa, 30 dk altı (kaş, ağda, boyama)", "12–24 saat", "Genellikle ücretsiz veya küçük sabit tutar", "%50"],
+            ["Standart, 45–90 dk (cilt bakımı, manikür, masaj)", "24 saat", "%50", "%100"],
+            ["Uzun veya pahalı (ipek kirpik, kalıcı makyaj, lazer paketi, gelin)", "48 saat", "Kapora yanar", "Kapora yanar"],
+            ["Grup ve organizasyon randevuları", "72 saat veya daha fazla", "Anlaşmaya göre", "Kapora yanar"],
+          ],
+        },
+        callout:
+          "Son dakika iptal edilen saati başka bir müşteriyle doldurabildiyseniz ücretten vazgeçin ya da kaporayı bir sonraki randevuya aktarın. Bu hem adil hem de güven veren bir davranıştır.",
+      },
+      {
+        heading: "Örnek randevu iptal politikası metni",
+        paragraphs: [
+          "Aşağıdaki metni kendi salonunuza göre uyarlayabilirsiniz. Rakamları değiştirin, tonu sıcak ama net tutun:",
+          "**“Randevu saatinizi sadece sizin için ayırıyoruz. Randevunuzu 24 saat öncesine kadar ücretsiz iptal edebilir veya değiştirebilirsiniz. Daha geç iptallerde hizmet bedelinin %50'si, haber vermeden gelinmeyen randevularda tam bedel alınır. İki saatten uzun işlemlerde randevu sırasında kapora alınır; kapora hizmet bedelinden düşülür ve 48 saatten kısa süre kala yapılan iptallerde iade edilmez. 15 dakikadan fazla gecikmelerde işlem süresi kısalabilir. Gerçek bir acil durumda lütfen bizi arayın, birlikte adil bir çözüm bulalım.”**",
+          "Kapora aldığınızda müşteriye tutarı, tarihi ve iade koşulunu yazılı olarak iletin ve ödeme kaydını müşteri kartında saklayın.",
+        ],
+      },
+      {
+        heading: "Müşterinin kuralları gerçekten görmesini nasıl sağlarsınız?",
+        paragraphs: [
+          "Tartışmaların çoğu tutar yüzünden değil, “bilmiyordum” yüzünden çıkar. Politikanızı randevu sürecinin her adımına yerleştirin:",
+        ],
+        steps: [
+          "Web sitenizde fiyatların veya randevunun yanında yayınlayın ve online randevu sayfanızdan bağlantı verin.",
+          "Uzun ve pahalı işlemlerin açıklamasında, daha sıkı kuralların geçerli olduğunu belirtin.",
+          "Randevu onayında tarih, saat ve iptal yöntemiyle birlikte ana cümleyi tekrarlayın.",
+          "Randevudan 24–48 saat önceki e-posta hatırlatmasında, ücretsiz iptal hâlâ mümkünken bir kez daha yazın.",
+          "Telefonla alınan randevularda kuralı tek cümleyle söyleyin ve bunu müşteri kartına not edin.",
+          "Resepsiyonda kısa bir versiyonu asılı tutun; kural hiçbir zaman sürpriz olmasın.",
+        ],
+      },
+      {
+        heading: "Kuralları müşteri kaybetmeden nasıl uygularsınız?",
+        paragraphs: [
+          "Unutmayın: amacınız para cezası toplamak değil, takviminizi korumak ve müşterinin randevusuna sahip çıkmasını sağlamaktır. Kuralı açıkça anlatan, ama gerektiğinde esneyebilen bir salon, hem sadık müşteri kazanır hem de gelirini korur.",
+          "Bir kuralı adil yapan tutarlılıktır. Bir müşteriden ücret alıp diğerinden almazsanız ikisi de fark eder. Öte yandan on yıllık sadık bir müşteriye ilk kez gelmediğinde sert davranmak nadiren doğru bir karardır. Yaklaşımınızı önceden belirleyin; ruh hâlinize ya da o gün resepsiyonda kimin olduğuna bağlı kalmasın.",
+        ],
+        steps: [
+          "Her son dakika iptalini ve gelmeyen randevuyu tarih ve nedeniyle müşteri kartına kaydedin.",
+          "İyi bir müşteride ilk sefer: ücret almayın ama kuralı nazikçe hatırlatın.",
+          "İkinci sefer: kuralı yazıldığı gibi uygulayın, kısa ve kibar bir mesajla.",
+          "Tekrarlayan durumlarda: sonraki randevular için kapora isteyin.",
+          "Ani hastalık veya kaza gibi gerçek acil durumlarda: ücret yerine yeni bir randevu önerin.",
+        ],
+        callout:
+          "İşe yarayan bir cümle: “Bugün sizi bekledik, umarız her şey yolundadır. Randevu kurallarımızda belirttiğimiz gibi son dakika iptallerinde bedelin %50'sini alıyoruz. İsterseniz hemen yeni bir randevu ayarlayalım, perşembe günü yerimiz var.” Sakin, net ve bir sonraki randevuya odaklı.",
+      },
+      {
+        heading: "Salon programı iptalleri azaltmaya nasıl yardımcı olur?",
+        paragraphs: [
+          "En iyi iptal ücreti, hiç almak zorunda kalmadığınız ücrettir. Bir randevu takip programı iptalleri önlemeye ve geriye kalanları kolayca yönetmeye yardımcı olur. Treatflow'da müşterileriniz komisyonsuz, size ait randevu bağlantısından randevu alır; her randevudan önce otomatik e-posta hatırlatması gider ve boşalan saatleri bekleme listesindeki müşterilere önerebilirsiniz. Müşteri kartındaki notlar, kimin daha önce son dakika iptal ettiğini tüm ekibe gösterir; böylece herkes kuralı aynı şekilde uygular. Veriler Frankfurt'taki AB sunucularında saklanır; KVKK kapsamında müşteri kartına yalnızca gerekli bilgileri yazmanız yeterlidir.",
+          "Treatflow'u 14 gün boyunca ücretsiz ve kredi kartı olmadan deneyebilir, son dakika iptallerinin ve gelmeyen randevuların azalıp azalmadığını kendiniz görebilirsiniz.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Güzellik salonu ne kadar kapora alabilir?",
+        a: "Kesin bir yasal oran yoktur; tutar makul olmalı ve hizmetle orantılı olmalıdır. Uygulamada birçok salon uzun ve pahalı işlemlerde hizmet bedelinin %20–50'si arasında kapora alır. Kaporanın bedelden düşüleceğini ve hangi durumda iade edilmeyeceğini önceden yazılı olarak bildirin.",
+      },
+      {
+        q: "Müşteri randevuyu iptal ederse kapora iade edilir mi?",
+        a: "Bu sizin önceden bildirdiğiniz kurallara bağlıdır. Yaygın uygulama, ücretsiz iptal süresi içinde kaporanın iade edilmesi veya yeni randevuya aktarılması, bu süre geçtikten sonra ya da haber vermeden gelinmediğinde ise iade edilmemesidir.",
+      },
+      {
+        q: "24 saat mi, 48 saat mi ücretsiz iptal süresi?",
+        a: "Standart işlemlerin çoğu için 24 saat yeterlidir. İpek kirpik, kalıcı makyaj veya gelin makyajı gibi uzun ve son dakikada doldurulması zor randevularda 48 saat daha uygundur.",
+      },
+      {
+        q: "Müşteri kuralları bilmiyorsa ücret isteyebilir miyim?",
+        a: "Zordur. Müşterinin kuralları randevudan önce gördüğünü gösteremezseniz anlaşmazlıkta zayıf kalırsınız. Kuralları randevu sırasında, onayda ve hatırlatmada mutlaka paylaşın.",
+      },
+      {
+        q: "Hasta olduğu için gelemeyen müşteriden ücret almalı mıyım?",
+        a: "Çoğu salon bu durumda ücret yerine yeni randevu önerir. Gerçek acil durumlarda anlayışlı olmak size az şeye mal olur ve sadık müşterilerinizi korur. Ücreti tekrarlayan veya açıklamasız gelmeme durumları için saklayın.",
+      },
+    ],
+    related: [
+      { pageKey: "online-booking", label: "Komisyonsuz online randevu sistemi" },
+      { pageKey: "messaging", label: "Otomatik e-posta hatırlatmaları" },
+      { pageKey: "appointment-calendar", label: "Randevu takvimi" },
+    ],
+  },
 ];

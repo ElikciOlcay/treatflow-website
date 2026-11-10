@@ -1211,4 +1211,185 @@ export const posts: BlogArticle[] = [
       { pageKey: "features", label: "Todas las funciones" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 8. Política de cancelación centro de estética
+  // ---------------------------------------------------------------------------
+  {
+    topic: "cancellation-policy-salon",
+    lang: "es",
+    slug: "politica-de-cancelacion-centro-de-estetica",
+    title: "Política de cancelación para tu centro de estética: plazos, penalizaciones, señal y plantilla",
+    metaTitle: "Política de cancelación centro de estética: plantilla",
+    description:
+      "Cómo redactar la política de cancelación de tu centro de estética: plazos justos, cobro por cancelación tardía o no presentarse, señal y una plantilla lista.",
+    excerpt:
+      "Una política de cancelación solo protege tu facturación si la clienta la ve antes de reservar y tú la aplicas siempre igual. Plazos, importes, señal, una plantilla y frases para las conversaciones incómodas.",
+    category: "Gestión",
+    keywords: [
+      "política de cancelación centro de estética",
+      "cobrar por no presentarse a una cita",
+      "señal reserva centro de estética",
+      "penalización cancelación cita",
+      "plantilla política de cancelación",
+      "citas no presentadas",
+      "no show centro de estética",
+    ],
+    publishedAt: "2026-11-10",
+    updatedAt: "2026-11-10",
+    readMinutes: 8,
+    answer:
+      "Una buena política de cancelación para un centro de estética fija hasta cuándo se puede cancelar gratis (normalmente 24 o 48 horas antes), un cargo moderado por cancelación tardía (a menudo el 50 % del precio) y un cargo mayor si la clienta no se presenta (hasta el precio completo o la pérdida de la señal). Solo funciona si la clienta la conoce antes de reservar, la recibe por escrito y tú la aplicas con coherencia, dejando margen para las urgencias reales.",
+    takeaways: [
+      "La clienta debe ver y aceptar la política antes de reservar, no descubrirla después.",
+      "Adapta plazo e importe al tratamiento: un diseño de cejas de 20 minutos no es una extensión de pestañas de tres horas.",
+      "El cargo debe compensar tu pérdida real, no castigar; un importe moderado es mucho más defendible.",
+      "Anota cada cancelación tardía y cada ausencia en la ficha de la clienta para que todo el equipo actúe igual.",
+      "Recordatorios, cambios de cita fáciles y lista de espera salvan más ingresos que cualquier penalización.",
+    ],
+    intro: [
+      "Una clienta que cancela dos horas antes de un facial de 90 minutos te deja un hueco que casi nunca vas a poder llenar. A la esteticista le pagas igual y los productos quizá ya estaban preparados. Si pasa tres o cuatro veces al mes, la pérdida llega fácilmente a varios cientos de euros. Aun así, muchas dueñas de centros no cobran nada por miedo a perder clientas fieles o a parecer poco amables.",
+      "No tienes que elegir entre ser cercana y proteger tu facturación. Una política de cancelación clara y justa protege tu agenda y facilita las cosas a la clienta, que conoce las reglas desde el principio. En esta guía verás qué incluir, qué plazos e importes son razonables, cómo encaja la señal y cómo aplicarla sin estropear la relación. Son recomendaciones prácticas, no asesoramiento jurídico.",
+    ],
+    sections: [
+      {
+        heading: "¿Puede un centro de estética cobrar por cancelar o no presentarse?",
+        paragraphs: [
+          "En general, sí. Cuando una clienta reserva una cita concreta, se establece un acuerdo y tú bloqueas un tiempo que no puedes vender a nadie más. Si no se presenta o cancela tan tarde que no puedes recolocar el hueco, pedir una compensación es legítimo.",
+          "Hay dos condiciones clave. Primero, la clienta tiene que conocer las condiciones antes de reservar; un cargo que aparece solo después es muy difícil de defender. Segundo, el importe debe ser proporcionado. La Ley General para la Defensa de los Consumidores y Usuarios considera abusivas las cláusulas que imponen al consumidor una indemnización desproporcionadamente alta. Un cargo ligado a tu pérdida real, es decir, el tiempo bloqueado y el material preparado, es mucho más sólido que una cantidad fija elevada.",
+        ],
+        callout:
+          "Si quieres aplicar cargos altos o quedarte con señales importantes, pide una vez a un abogado o a tu asociación profesional que revise el texto.",
+      },
+      {
+        heading: "¿Qué debe incluir la política de cancelación de un centro de estética?",
+        paragraphs: [
+          "Una norma que se entiende en diez segundos funciona mucho mejor que una página de texto legal. Incluye estos puntos con lenguaje sencillo:",
+        ],
+        table: {
+          headers: ["Elemento", "Qué indicar", "Ejemplo"],
+          rows: [
+            ["Cancelación gratuita", "Con cuánta antelación se puede cancelar o cambiar sin coste", "Hasta 24 horas antes"],
+            ["Cancelación tardía", "Qué se cobra dentro de ese plazo", "50 % del precio del tratamiento"],
+            ["No presentarse", "Qué se cobra si la clienta no viene ni avisa", "100 % del precio"],
+            ["Retrasos", "Cuándo se acorta o se anula el tratamiento", "Con más de 15 minutos de retraso se acorta"],
+            ["Cómo cancelar", "El canal que debe usar", "Desde el enlace del email de confirmación o por teléfono"],
+            ["Excepciones", "Cómo actúas ante urgencias", "En caso de enfermedad o imprevisto buscamos una solución"],
+            ["Señal", "Si la pides, cuándo se descuenta o se pierde", "Se descuenta del precio y se pierde si no vienes"],
+          ],
+        },
+        bullets: [
+          "Habla de 'condiciones de reserva' o 'política de cancelación', no de 'multa'. El tono cambia cómo se percibe la misma regla.",
+          "Explica el porqué en una frase: ese tiempo está reservado solo para ella.",
+          "Usa el mismo texto en todas partes: web, página de reservas, confirmación, recordatorio y recepción.",
+        ],
+      },
+      {
+        heading: "¿Qué plazo y qué cargo son justos según el tratamiento?",
+        paragraphs: [
+          "No hay una cifra válida para todo. Depende de cuánto tiempo bloquea el tratamiento, de su precio y de lo fácil que sea llenar el hueco a última hora. Muchos centros trabajan con un modelo por tramos:",
+        ],
+        table: {
+          headers: ["Tipo de tratamiento", "Cancelación gratuita", "Cancelación tardía", "No presentarse"],
+          rows: [
+            ["Cortos, menos de 30 min (cejas, tinte, depilación rápida)", "12–24 h", "Sin cargo o importe fijo pequeño", "50 %"],
+            ["Estándar, 45–90 min (facial, manicura, masaje)", "24 h", "50 %", "100 %"],
+            ["Largos o caros (pestañas, micropigmentación, bonos láser, novias)", "48 h", "50–100 %", "Pérdida de la señal"],
+            ["Grupos y eventos", "72 h o más", "Según acuerdo", "Pérdida de la señal"],
+          ],
+        },
+        callout:
+          "Si tras una cancelación tardía consigues llenar el hueco, renuncia al cargo o redúcelo. Es justo, genera confianza y, en la práctica, no has sufrido ninguna pérdida.",
+      },
+      {
+        heading: "¿Señal al reservar o cargo después?",
+        paragraphs: [
+          "Un cargo que reclamas después de una ausencia solo vale si consigues cobrarlo. Muchas clientas pagan sin problema, pero otras simplemente no contestan, y perseguir importes pequeños cuesta tiempo y buen ambiente. Una señal al reservar resuelve el problema y frena las reservas impulsivas.",
+          "Indica siempre por escrito qué es esa cantidad: que se descuenta del precio final y que se pierde si la clienta no cancela a tiempo. Ten en cuenta que la señal añade un paso más y algunas clientas de toda la vida pueden sentirla como desconfianza. Un término medio razonable es pedirla solo donde el riesgo es mayor:",
+        ],
+        bullets: [
+          "Clientas nuevas que reservan por primera vez un tratamiento largo o caro.",
+          "Clientas que ya han cancelado tarde o faltado varias veces.",
+          "Tratamientos para los que pides o preparas material con antelación, como pigmentos de micropigmentación o sets de pestañas especiales.",
+          "Franjas muy solicitadas, como el viernes por la tarde o las semanas antes de Navidad.",
+        ],
+      },
+      {
+        heading: "Plantilla de política de cancelación para tu centro",
+        paragraphs: [
+          "Aquí tienes un texto que puedes adaptar. Cambia los números y mantén un tono cercano pero claro:",
+          "**«Reservamos el tiempo de tu cita solo para ti. Puedes cancelar o cambiar tu cita sin coste hasta 24 horas antes. Si cancelas en las 24 horas previas, cobramos el 50 % del precio del tratamiento; si no vienes sin avisar, el precio completo. Si llegas más de 15 minutos tarde, puede que tengamos que acortar el tratamiento. Si te surge una urgencia de verdad, llámanos y buscaremos juntas una solución justa.»**",
+          "Para tratamientos largos añade una línea, por ejemplo: «En citas de dos horas o más, la cancelación gratuita es posible hasta 48 horas antes». Si pides señal, explica que se descuenta del precio y en qué casos se pierde.",
+        ],
+      },
+      {
+        heading: "¿Cómo te aseguras de que las clientas ven la política?",
+        paragraphs: [
+          "La mayoría de los conflictos no son por el importe, sino por el «no lo sabía». Integra la política en cada paso de la reserva:",
+        ],
+        steps: [
+          "Publícala en tu web, junto a precios o reservas, y enlázala desde tu página de reservas online.",
+          "Menciónala en la descripción de los tratamientos largos o caros, donde se aplican reglas más estrictas.",
+          "Repite la frase clave en la confirmación, junto con fecha, hora y forma de cancelar.",
+          "Inclúyela otra vez en el recordatorio por email 24–48 horas antes, cuando todavía se puede cancelar gratis.",
+          "En reservas por teléfono o en el centro, dila en una frase y anota en la ficha de la clienta que lo hiciste.",
+          "Ten una versión corta visible en recepción para que nunca sea una sorpresa.",
+        ],
+      },
+      {
+        heading: "¿Cómo aplicas la política sin perder clientas?",
+        paragraphs: [
+          "Lo que hace justa una política es la coherencia. Si a una clienta le cobras y a la siguiente no, las dos lo notan. Al mismo tiempo, ser estricta con una clienta fiel de hace diez años en su primera ausencia rara vez compensa. Decide tu criterio de antemano para que no dependa del humor ni de quién esté en recepción.",
+        ],
+        steps: [
+          "Registra cada cancelación tardía y cada ausencia en la ficha de la clienta, con fecha y motivo.",
+          "Primera vez con una buena clienta: sin cargo, pero recuérdale con amabilidad la política.",
+          "Segunda vez: aplica el cargo previsto con un mensaje breve y cordial.",
+          "Ausencias repetidas: pide señal para las próximas citas.",
+          "Urgencias reales, como una enfermedad repentina o un accidente: ofrece cambiar la cita en lugar de cobrar.",
+        ],
+        callout:
+          "Una frase que funciona: «Hoy te echamos de menos y esperamos que todo esté bien. Como indican nuestras condiciones de reserva, en las cancelaciones de última hora cobramos el 50 %. ¿Te buscamos ya una nueva cita? El jueves tenemos hueco.» Tranquila, concreta y centrada en la próxima visita.",
+      },
+      {
+        heading: "¿Cómo te ayuda un software para centro de estética con las cancelaciones?",
+        paragraphs: [
+          "La mejor penalización es la que nunca tienes que cobrar. Un software de gestión ayuda a prevenir cancelaciones y a gestionar mejor las que se producen. Con Treatflow tus clientas reservan desde tu propio enlace sin comisiones, antes de cada cita se envía automáticamente un recordatorio por email y los huecos que se liberan puedes ofrecerlos a las clientas de la lista de espera. Las notas en la ficha muestran a todo el equipo quién ha cancelado tarde antes, así la política se aplica igual para todas. Los datos se guardan en servidores de la UE en Fráncfort, conforme al RGPD.",
+          "Puedes probarlo gratis durante 14 días, sin tarjeta de crédito, y comprobar si bajan las cancelaciones tardías y las citas no presentadas.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Cuánto puede cobrar un centro de estética por no presentarse?",
+        a: "Muchos centros cobran el 50 % del precio por cancelaciones dentro del plazo y hasta el 100 % si la clienta no se presenta. En tratamientos cortos suele ser más justo un importe fijo pequeño. El cargo debe reflejar tu pérdida real y no ser desproporcionado.",
+      },
+      {
+        q: "¿Es mejor un plazo de 24 o de 48 horas?",
+        a: "24 horas funciona para la mayoría de tratamientos estándar. Usa 48 horas en citas largas o caras, como extensiones de pestañas completas, micropigmentación o maquillaje de novia, donde es difícil llenar el hueco a última hora.",
+      },
+      {
+        q: "¿Puedo quedarme con la señal si la clienta no viene?",
+        a: "Sí, si antes de reservar quedó claro por escrito que la señal se pierde en caso de no presentarse o cancelar fuera de plazo. Si no lo indicaste, lo más prudente es devolverla o descontarla de una nueva cita.",
+      },
+      {
+        q: "¿Puedo cobrar si la clienta no conocía la política?",
+        a: "Es complicado. Sin prueba de que la clienta vio las condiciones antes de reservar, tu posición es débil. Muestra la política al reservar, en la confirmación y en el recordatorio.",
+      },
+      {
+        q: "¿Puedo anotar en la ficha que una clienta no se presentó?",
+        a: "Sí, una nota breve y objetiva sobre citas no realizadas forma parte de la gestión de reservas. Según el RGPD, guarda solo lo necesario e infórmalo en tu política de privacidad; la AEPD ofrece guías para pequeños negocios.",
+      },
+    ],
+    related: [
+      { pageKey: "online-booking", label: "Reservas online con tu propio enlace" },
+      { pageKey: "messaging", label: "Recordatorios automáticos por email" },
+      { pageKey: "appointment-calendar", label: "Calendario de citas" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Directiva 93/13/CEE sobre las cláusulas abusivas en los contratos celebrados con consumidores",
+        url: "https://eur-lex.europa.eu/eli/dir/1993/13/oj",
+      },
+    ],
+  },
 ];

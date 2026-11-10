@@ -1220,4 +1220,185 @@ export const posts: BlogArticle[] = [
       { pageKey: "features", label: "Alle functies van Treatflow" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 8. Annuleringsbeleid salon
+  // ---------------------------------------------------------------------------
+  {
+    topic: "cancellation-policy-salon",
+    lang: "nl",
+    slug: "annuleringsbeleid-salon-no-show-kosten",
+    title: "Annuleringsbeleid voor je salon: termijnen, no-show kosten en een voorbeeldtekst",
+    metaTitle: "Annuleringsbeleid salon: no-show kosten en voorbeeld",
+    description:
+      "Annuleringsbeleid voor je schoonheidssalon: redelijke termijnen, kosten bij late annulering en no-show, aanbetaling, voorbeeldtekst en tips voor de praktijk.",
+    excerpt:
+      "Een annuleringsbeleid beschermt je omzet alleen als klanten het vóór het boeken zien en jij het consequent toepast. Termijnen, bedragen, een voorbeeldtekst en zinnen voor lastige gesprekken.",
+    category: "Ondernemen",
+    keywords: [
+      "annuleringsbeleid salon",
+      "no-show kosten salon",
+      "annuleringskosten schoonheidssalon",
+      "annuleringsvoorwaarden salon voorbeeld",
+      "aanbetaling salon",
+      "algemene voorwaarden schoonheidssalon",
+      "afspraak niet nagekomen kosten",
+    ],
+    publishedAt: "2026-11-10",
+    updatedAt: "2026-11-10",
+    readMinutes: 8,
+    answer:
+      "Een goed annuleringsbeleid voor je salon noemt een termijn waarbinnen klanten gratis kunnen annuleren (meestal 24 of 48 uur), een redelijk bedrag bij late annulering (vaak 50 % van de behandelprijs) en een hoger bedrag bij een no-show (tot de volledige prijs). Het werkt alleen als de klant de voorwaarden vóór het boeken kent, ze schriftelijk bevestigd krijgt en jij ze consequent toepast, met ruimte voor echte noodgevallen.",
+    takeaways: [
+      "Klanten moeten het beleid zien vóórdat ze boeken, niet pas op de factuur.",
+      "Stem termijn en bedrag af op de behandeling: een wenkbrauwbehandeling van 20 minuten vraagt andere regels dan een wimperset van drie uur.",
+      "No-show kosten moeten je werkelijke schade dekken en geen boete zijn; een redelijk bedrag houdt veel beter stand.",
+      "Noteer elke late annulering en no-show in de klantkaart, zodat je hele team hetzelfde reageert.",
+      "Herinneringen, makkelijk verzetten en een wachtlijst voorkomen meer omzetverlies dan annuleringskosten ooit terugbrengen.",
+    ],
+    intro: [
+      "Een klant die twee uur van tevoren een gezichtsbehandeling van 90 minuten afzegt, laat een gat in je agenda achter dat je bijna nooit meer opvult. Je medewerker betaal je toch, de producten staan misschien al klaar. Een paar keer per maand en het loopt al snel op tot honderden euro's. Toch durven veel salonhouders geen kosten te rekenen, uit angst vaste klanten kwijt te raken.",
+      "Je hoeft niet te kiezen tussen vriendelijk zijn en je omzet beschermen. Een helder, eerlijk annuleringsbeleid maakt het juist duidelijker voor klanten, omdat ze de regels vooraf kennen. In dit artikel lees je wat er in je beleid hoort, welke termijnen en bedragen redelijk zijn, hoe een aanbetaling past en hoe je het naleeft zonder de relatie te beschadigen. Het is praktische informatie, geen juridisch advies.",
+    ],
+    sections: [
+      {
+        heading: "Mag je als salon annuleringskosten of no-show kosten rekenen?",
+        paragraphs: [
+          "Ja, in principe wel. Wie een vaste afspraak maakt, sluit een overeenkomst met jou, en jij houdt tijd vrij die je niet aan een ander kunt verkopen. Komt de klant niet of zegt ze zo laat af dat je de plek niet meer kunt vullen, dan is een vergoeding in de regel gerechtvaardigd.",
+          "Twee voorwaarden zijn daarbij belangrijk. De klant moet je voorwaarden vóór het boeken hebben kunnen lezen; algemene voorwaarden moet je volgens het Burgerlijk Wetboek tijdig ter beschikking stellen. En het bedrag moet redelijk zijn. Een beding dat onredelijk bezwarend is voor de consument kan worden vernietigd. Een vergoeding die past bij je werkelijke verlies, zoals de geblokkeerde tijd en klaargezette materialen, is daarom veel sterker dan een vast hoog boetebedrag.",
+        ],
+        callout:
+          "Ben je aangesloten bij een brancheorganisatie, kijk dan of die standaard algemene voorwaarden voor salons aanbiedt. Wil je hoge bedragen rekenen of grote aanbetalingen inhouden, laat je tekst dan één keer juridisch nakijken.",
+      },
+      {
+        heading: "Wat hoort er in een annuleringsbeleid voor een salon?",
+        paragraphs: [
+          "Een beleid dat klanten in tien seconden snappen, werkt veel beter dan een pagina juridische tekst. Neem deze punten op, in gewone taal:",
+        ],
+        table: {
+          headers: ["Onderdeel", "Wat je vastlegt", "Voorbeeld"],
+          rows: [
+            ["Gratis annuleren", "Hoe lang van tevoren kosteloos annuleren of verzetten kan", "Tot 24 uur voor de afspraak"],
+            ["Late annulering", "Wat er binnen die termijn geldt", "50 % van de behandelprijs"],
+            ["No-show", "Wat er geldt als de klant niet komt en niet afzegt", "100 % van de behandelprijs"],
+            ["Te laat komen", "Wanneer de behandeling korter wordt of vervalt", "Na 15 minuten wordt de behandeling ingekort"],
+            ["Hoe annuleren", "Via welk kanaal", "Via de link in je bevestigingsmail of telefonisch"],
+            ["Uitzonderingen", "Hoe je met noodgevallen omgaat", "Bij ziekte of een noodgeval zoeken we samen een oplossing"],
+            ["Aanbetaling", "Wanneer die wordt verrekend of ingehouden", "Verrekend met de behandeling, ingehouden bij no-show"],
+          ],
+        },
+        bullets: [
+          "Spreek van 'annuleringsvoorwaarden' of 'afspraakregels', niet van een 'boete'. De toon bepaalt hoe dezelfde regel overkomt.",
+          "Leg in één zin uit waarom: de tijd is speciaal voor de klant vrijgehouden.",
+          "Gebruik overal dezelfde tekst: website, boekingspagina, bevestiging, herinnering en salon.",
+        ],
+      },
+      {
+        heading: "Welke termijn en welke kosten zijn redelijk per behandeling?",
+        paragraphs: [
+          "Er is geen vast getal dat altijd klopt. De juiste regel hangt af van hoe lang een behandeling je agenda blokkeert, hoe duur ze is en hoe groot de kans is dat je de plek op korte termijn nog vult. Veel salons werken met een getrapt model:",
+        ],
+        table: {
+          headers: ["Type behandeling", "Gratis annuleren", "Late annulering", "No-show"],
+          rows: [
+            ["Kort, onder 30 min (wenkbrauwen, verven, kort harsen)", "12–24 uur", "Vaak gratis of klein vast bedrag", "50 %"],
+            ["Standaard, 45–90 min (gezichtsbehandeling, manicure, massage)", "24 uur", "50 %", "100 %"],
+            ["Lang of duur (wimperset, PMU, laserkuur, bruidsmake-up)", "48 uur", "50–100 %", "100 % of aanbetaling vervalt"],
+            ["Groeps- of eventboekingen", "72 uur of meer", "In overleg", "Aanbetaling vervalt"],
+          ],
+        },
+        callout:
+          "Kun je de plek na een late annulering alsnog vullen? Laat de kosten dan vallen of verlaag ze. Dat is eerlijk, levert goodwill op en je hebt dan ook geen schade geleden.",
+      },
+      {
+        heading: "Aanbetaling vragen of achteraf kosten in rekening brengen?",
+        paragraphs: [
+          "No-show kosten die je achteraf factureert, zijn alleen zoveel waard als je ze ook echt ontvangt. De meeste klanten betalen zonder discussie, maar sommigen reageren gewoon niet, en achter kleine bedragen aan gaan kost tijd en sfeer. Een aanbetaling bij het boeken lost dat op en filtert impulsboekingen eruit.",
+          "Tegelijk maakt een aanbetaling boeken iets drempeliger, en trouwe vaste klanten kunnen het als wantrouwen ervaren. Een goede middenweg is een aanbetaling alleen te vragen waar het risico het grootst is:",
+        ],
+        bullets: [
+          "Nieuwe klanten die voor het eerst een lange of dure behandeling boeken.",
+          "Klanten die al vaker niet kwamen of laat afzegden.",
+          "Behandelingen waarvoor je vooraf materiaal bestelt of klaarzet, zoals PMU-pigmenten of een speciale wimperset.",
+          "Drukke momenten, zoals vrijdagavond of de weken voor de feestdagen.",
+        ],
+      },
+      {
+        heading: "Hoe ziet een goede voorbeeldtekst voor annuleringsvoorwaarden eruit?",
+        paragraphs: [
+          "Deze tekst kun je aanpassen aan je eigen salon. Vervang de getallen en houd de toon vriendelijk maar duidelijk:",
+          "**“We houden je afspraak speciaal voor jou vrij. Je kunt tot 24 uur van tevoren kosteloos annuleren of verzetten. Bij annulering binnen 24 uur rekenen we 50 % van de behandelprijs; kom je zonder bericht niet, dan rekenen we de volledige prijs. Ben je meer dan 15 minuten te laat, dan moeten we de behandeling mogelijk inkorten. Is er echt een noodgeval? Bel ons, dan zoeken we samen een eerlijke oplossing.”**",
+          "Voor lange behandelingen voeg je één zin toe, bijvoorbeeld: “Voor afspraken van twee uur of langer geldt een gratis annuleringstermijn van 48 uur.” Vraag je een aanbetaling, vermeld dan dat die wordt verrekend met de behandeling en wanneer je hem inhoudt.",
+        ],
+      },
+      {
+        heading: "Hoe zorg je dat klanten je annuleringsbeleid echt zien?",
+        paragraphs: [
+          "De meeste discussies gaan niet over de hoogte van het bedrag, maar over 'dat wist ik niet'. Verwerk je beleid daarom in elke stap van het boeken:",
+        ],
+        steps: [
+          "Zet het op je website bij de prijzen of het boeken, en link er vanaf je online boekingspagina naar.",
+          "Noem het in de omschrijving van lange of dure behandelingen, waar strengere regels gelden.",
+          "Herhaal de kernzin in de bevestiging, samen met datum, tijd en hoe je annuleert.",
+          "Zet het nog één keer in de herinneringsmail 24 tot 48 uur van tevoren, als gratis annuleren nog kan.",
+          "Bij boekingen per telefoon of aan de balie: noem het in één zin en noteer in de klantkaart dat je dat gedaan hebt.",
+          "Hang een korte versie op bij de balie, zodat het nooit als verrassing komt.",
+        ],
+      },
+      {
+        heading: "Hoe pas je het beleid toe zonder klanten kwijt te raken?",
+        paragraphs: [
+          "Consequent zijn maakt een beleid eerlijk. Als de ene klant wel betaalt en de volgende niet, merken beiden dat. Tegelijk is het zelden slim om een vaste klant van tien jaar bij de eerste gemiste afspraak streng aan te spreken. Bepaal je aanpak vooraf, zodat het niet afhangt van humeur of van wie er achter de balie staat.",
+        ],
+        steps: [
+          "Noteer elke late annulering en no-show in de klantkaart, met datum en reden.",
+          "Eerste keer bij een goede klant: laat de kosten vallen, maar wijs vriendelijk op het beleid.",
+          "Tweede keer: reken het bedrag zoals afgesproken, met een kort en vriendelijk bericht.",
+          "Herhaaldelijk: vraag voortaan een aanbetaling of vooruitbetaling.",
+          "Echte noodgevallen, zoals plotselinge ziekte of een ongeluk: bied verzetten aan in plaats van kosten.",
+        ],
+        callout:
+          "Een zin die werkt: “We hebben je vandaag gemist en hopen dat alles goed is. Zoals in onze afspraakregels staat, rekenen we 50 % bij annuleringen op het laatste moment. Zullen we meteen een nieuwe afspraak inplannen? Donderdag hebben we nog plek.” Rustig, feitelijk en gericht op de volgende afspraak.",
+      },
+      {
+        heading: "Hoe helpt salonsoftware bij annuleringen en no-shows?",
+        paragraphs: [
+          "De beste annuleringskosten zijn de kosten die je nooit hoeft te rekenen. Software helpt om annuleringen te voorkomen en de rest makkelijker af te handelen. Met Treatflow boeken klanten via je eigen boekingslink zonder commissie, gaan er automatisch herinneringen per e-mail uit vóór elke afspraak en kun je vrijgekomen plekken aanbieden aan klanten op de wachtlijst. Notities in de klantkaart laten het hele team zien wie eerder laat afzegde, zodat iedereen het beleid op dezelfde manier toepast. Alle gegevens staan op EU-servers in Frankfurt, in lijn met de AVG.",
+          "Je kunt dit 14 dagen gratis proberen, zonder creditcard, en zelf zien of je aantal no-shows en late annuleringen daalt.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Hoeveel no-show kosten mag een schoonheidssalon rekenen?",
+        a: "Veel salons rekenen 50 % van de behandelprijs bij annulering binnen de termijn en tot 100 % bij een no-show. Voor korte behandelingen is een klein vast bedrag vaak eerlijker. Het bedrag moet passen bij je werkelijke verlies en mag geen onredelijk hoge boete zijn.",
+      },
+      {
+        q: "Is 24 of 48 uur annuleringstermijn beter?",
+        a: "24 uur werkt voor de meeste standaardbehandelingen. Kies 48 uur voor lange of dure afspraken, zoals een volledige wimperset, PMU of bruidsmake-up, waarbij je de plek op korte termijn moeilijk opnieuw vult.",
+      },
+      {
+        q: "Mag ik kosten rekenen als de klant mijn voorwaarden niet kende?",
+        a: "Dat is lastig. Zonder bewijs dat de klant je voorwaarden vóór het boeken kon zien, sta je zwak. Toon het beleid bij het boeken, in de bevestiging en in de herinnering, en leg vast dat je het hebt gecommuniceerd.",
+      },
+      {
+        q: "Reken ik kosten als een klant ziek is?",
+        a: "Juridisch hoeft ziekte de afspraak niet altijd op te heffen, maar in de praktijk bieden de meeste salons dan een nieuwe afspraak aan. Coulance bij echte noodgevallen kost weinig en houdt trouwe klanten vast. Bewaar de kosten voor herhaalde of onverklaarde no-shows.",
+      },
+      {
+        q: "Mag ik in de klantkaart noteren dat iemand niet kwam?",
+        a: "Ja, een korte zakelijke notitie over gemiste afspraken hoort bij je afsprakenadministratie. Houd het feitelijk, bewaar het niet langer dan nodig en vermeld in je privacyverklaring dat je afspraakgegevens bijhoudt, zoals de AVG vraagt.",
+      },
+    ],
+    related: [
+      { pageKey: "online-booking", label: "Online boeken via je eigen link" },
+      { pageKey: "messaging", label: "Automatische herinneringen per e-mail" },
+      { pageKey: "appointment-calendar", label: "Afsprakenkalender" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Richtlijn 93/13/EEG betreffende oneerlijke bedingen in consumentenovereenkomsten",
+        url: "https://eur-lex.europa.eu/eli/dir/1993/13/oj",
+      },
+    ],
+  },
 ];

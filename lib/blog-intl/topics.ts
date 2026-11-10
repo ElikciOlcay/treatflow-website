@@ -51,6 +51,11 @@ export const blogTopics: Record<
     pageKeys: ["appointment-calendar", "online-booking", "client-records"],
     markets: ["tr"],
   },
+  "cancellation-policy-salon": {
+    deSlug: "stornogebuehren-kosmetikstudio",
+    image: "/images/blog/no-shows.png",
+    pageKeys: ["online-booking", "messaging", "appointment-calendar"],
+  },
 };
 
 export const blogTopicOrder: BlogTopicId[] = [
@@ -62,4 +67,5 @@ export const blogTopicOrder: BlogTopicId[] = [
   "gdpr-beauty-salon",
   "pricing-beauty-treatments",
   "tr-appointment-book-vs-software",
+  "cancellation-policy-salon",
 ];

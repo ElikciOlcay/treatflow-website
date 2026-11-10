@@ -1169,4 +1169,185 @@ export const posts: BlogArticle[] = [
       { pageKey: "features", label: "All features" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 8. Salon cancellation policy
+  // ---------------------------------------------------------------------------
+  {
+    topic: "cancellation-policy-salon",
+    lang: "en",
+    slug: "salon-cancellation-policy",
+    title: "Salon Cancellation Policy: Notice Periods, Fees and a Template That Clients Accept",
+    metaTitle: "Salon Cancellation Policy: Fees, Notice & Template",
+    description:
+      "How to write a salon cancellation policy: fair notice periods, late cancellation and no-show fees, deposits, example wording and how to enforce it kindly.",
+    excerpt:
+      "A cancellation policy only protects your income if clients see it before they book and you apply it consistently. Notice periods, fee levels, a ready-to-use template and scripts for awkward conversations.",
+    category: "Business",
+    keywords: [
+      "salon cancellation policy",
+      "cancellation policy template salon",
+      "no-show fee salon",
+      "late cancellation fee",
+      "beauty salon cancellation policy",
+      "salon deposit policy",
+      "spa cancellation policy",
+    ],
+    publishedAt: "2026-11-10",
+    updatedAt: "2026-11-10",
+    readMinutes: 8,
+    answer:
+      "A good salon cancellation policy states a free cancellation window (usually 24 or 48 hours), a moderate fee for late cancellations (often 50 % of the treatment price) and a higher fee for no-shows (up to the full price). It is only enforceable and accepted by clients if it is shown before booking, confirmed in writing and applied consistently, with room for genuine emergencies.",
+    takeaways: [
+      "Clients must see and accept the policy before they book, not for the first time on an invoice.",
+      "Scale notice periods and fees to the treatment: a 20-minute brow tint needs different rules from a 3-hour lash set.",
+      "A fee should reflect your real loss, not punish the client; moderate, explainable fees hold up far better.",
+      "Record every late cancellation and no-show on the client record so the whole team responds the same way.",
+      "Reminders, easy rescheduling and a waitlist prevent more lost income than any fee ever recovers.",
+    ],
+    intro: [
+      "A client who cancels two hours before a 90-minute facial leaves you with a slot you will almost never fill, a therapist you are paying anyway and, often, products already prepared. A few of these a month and the loss runs into hundreds. Yet many salon owners hesitate to charge anything, because they worry about losing loyal clients or looking unfriendly.",
+      "The answer is not to choose between kindness and income. A clear, fair cancellation policy protects your diary and actually makes life easier for clients, because they know the rules in advance. This guide shows you what the policy should contain, how to set notice periods and fees, how deposits fit in, and how to enforce it without damaging relationships. It is practical guidance, not legal advice; if you are unsure about consumer rules where you operate, have your terms checked.",
+    ],
+    sections: [
+      {
+        heading: "Can a salon legally charge a cancellation fee?",
+        paragraphs: [
+          "In most countries, yes. When a client books a fixed appointment, they enter an agreement with you, and you reserve time that you cannot sell to anyone else. If they do not turn up, or cancel too late for you to rebook the slot, asking for compensation is generally legitimate.",
+          "Two conditions matter almost everywhere. First, the client must have known the terms before booking: a fee that appears only after the fact is very hard to defend. Second, the fee must be reasonable. Consumer protection rules, such as the unfair terms provisions in the UK's Consumer Rights Act 2015 or the EU directive on unfair contract terms, can make a disproportionate charge unenforceable. A fee that reflects your actual loss, such as the time blocked and materials prepared, is much safer than a flat penalty.",
+        ],
+        callout:
+          "Rules differ by country and sometimes by region. If you plan to charge high fees or keep large deposits, ask a local solicitor or your trade association to review your wording once.",
+      },
+      {
+        heading: "What should a salon cancellation policy include?",
+        paragraphs: [
+          "A policy that clients understand in ten seconds is far more effective than a page of legal text. Cover these points, in plain language:",
+        ],
+        table: {
+          headers: ["Element", "What to state", "Example"],
+          rows: [
+            ["Free cancellation window", "How much notice is needed to cancel or move without charge", "Up to 24 hours before"],
+            ["Late cancellation fee", "What applies inside that window", "50 % of the treatment price"],
+            ["No-show fee", "What applies if the client does not appear or cancel", "100 % of the treatment price"],
+            ["Lateness", "When a late arrival shortens or cancels the treatment", "After 15 minutes the treatment is shortened or rebooked"],
+            ["How to cancel", "The channel clients should use", "Via the link in your confirmation email or by phone"],
+            ["Exceptions", "How you handle emergencies", "Illness or emergencies: we find a fair solution"],
+            ["Deposits", "If you take one, when it is kept or credited", "Credited to the treatment, kept for no-shows"],
+          ],
+        },
+        bullets: [
+          "Use the word 'policy' or 'booking terms', not 'penalty'. Tone shapes how the same rule is received.",
+          "Explain the why in one sentence: the time is reserved only for them.",
+          "Keep the same wording everywhere: website, booking page, confirmation, reminder and studio.",
+        ],
+      },
+      {
+        heading: "Which notice period and fee are fair for each treatment?",
+        paragraphs: [
+          "There is no single correct number. The right rule depends on how long a treatment blocks your diary, how expensive it is and how likely you are to refill a slot at short notice. As a starting point, many studios use a tiered model:",
+        ],
+        table: {
+          headers: ["Treatment type", "Free cancellation", "Late cancellation", "No-show"],
+          rows: [
+            ["Short services under 30 min (brows, tints, quick wax)", "12–24 hours", "Often no fee or a small flat fee", "50 %"],
+            ["Standard treatments 45–90 min (facials, manicures, massage)", "24 hours", "50 %", "100 %"],
+            ["Long or high-value appointments (lash sets, PMU, laser series, bridal)", "48 hours", "50–100 %", "100 % or deposit kept"],
+            ["Group or event bookings", "72 hours or more", "Agreed individually", "Deposit kept"],
+          ],
+        },
+        callout:
+          "If a slot is rebooked after a late cancellation, consider waiving or reducing the fee. It is fairer, it builds goodwill and in many legal systems you may not keep compensation for a loss you did not actually suffer.",
+      },
+      {
+        heading: "Should you take a deposit or charge a fee afterwards?",
+        paragraphs: [
+          "A fee charged after a no-show is only as good as your ability to collect it. Many clients pay without complaint, but some simply ignore the request, and chasing small amounts costs time and goodwill. A deposit taken at booking solves that problem and also filters out clients who book on impulse.",
+          "Deposits do add friction, though, and loyal regulars can find them off-putting. A sensible middle ground is to require deposits only where the risk is highest:",
+        ],
+        bullets: [
+          "New clients booking long or expensive treatments for the first time.",
+          "Clients who have missed or cancelled late more than once.",
+          "Treatments where you prepare or order materials in advance, such as PMU pigments or custom lash sets.",
+          "Peak slots, such as Friday evenings or the weeks before holidays.",
+        ],
+      },
+      {
+        heading: "What does a good cancellation policy template look like?",
+        paragraphs: [
+          "Here is wording you can adapt. Replace the numbers with your own and keep the tone friendly but clear:",
+          "**“We reserve your appointment time just for you. You can cancel or reschedule free of charge up to 24 hours before your appointment. For cancellations within 24 hours we charge 50 % of the treatment price; if you do not attend without letting us know, we charge the full price. If you arrive more than 15 minutes late, we may need to shorten your treatment. In a genuine emergency, please call us and we will find a fair solution together.”**",
+          "For long treatments, add one line such as: “For appointments of two hours or more, the free cancellation window is 48 hours.” If you take deposits, state clearly that the deposit is credited against the treatment and when it is retained.",
+        ],
+      },
+      {
+        heading: "How do you make sure clients actually see and accept the policy?",
+        paragraphs: [
+          "Most disputes do not happen because a client disagrees with the fee, but because they say they never saw it. Build the policy into every step of the booking journey:",
+        ],
+        steps: [
+          "Publish it on your website's booking or prices page and link to it from your online booking page.",
+          "Mention it in the service descriptions of long or expensive treatments, where the stricter rules apply.",
+          "Repeat the key sentence in the booking confirmation, together with date, time and how to cancel.",
+          "Include it once more in the reminder email 24–48 hours before the appointment, while there is still time to cancel for free.",
+          "For phone and walk-in bookings, say it out loud in one sentence and note on the client record that you did.",
+          "Display a short version at reception so it never feels like a surprise.",
+        ],
+      },
+      {
+        heading: "How do you enforce the policy without losing clients?",
+        paragraphs: [
+          "Consistency is what makes a policy fair. If one client is charged and the next is not, both will notice. At the same time, rigid enforcement of the first-ever missed appointment of a ten-year regular rarely makes business sense. Decide your approach in advance so it does not depend on mood or on who is at reception.",
+        ],
+        steps: [
+          "Log every late cancellation and no-show on the client record with the date and reason.",
+          "First incident for a good client: waive the fee, but mention the policy kindly so they know it exists.",
+          "Second incident: apply the fee as stated, with a short, friendly message.",
+          "Repeated incidents: ask for a deposit or pre-payment for future bookings.",
+          "Genuine emergencies, such as sudden illness or an accident: offer to move the appointment instead of charging.",
+        ],
+        callout:
+          "A script that works: “We missed you today and hope everything is okay. As mentioned in our booking terms, we charge 50 % for appointments cancelled at short notice. Would you like to rebook now? We have time on Thursday.” Calm, factual and focused on the next appointment.",
+      },
+      {
+        heading: "How does salon software help with cancellations?",
+        paragraphs: [
+          "The best cancellation fee is the one you never need to charge. Software helps prevent cancellations in the first place and makes the remaining ones easier to manage. With Treatflow, clients book through your own booking link without commission, automated email reminders go out before each appointment, and freed-up slots can be offered to clients on the waitlist. Notes on the client record show the whole team who has cancelled late before, so everyone applies the policy the same way.",
+          "You can try all of this free for 14 days, without a credit card, and see whether your no-show and late cancellation rate goes down before you decide.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "What is a reasonable cancellation fee for a salon?",
+        a: "Many salons charge 50 % of the treatment price for cancellations inside the notice window and up to 100 % for no-shows. For very short services a smaller flat fee is often fairer. The fee should reflect the time and materials you lose, not act as a punishment.",
+      },
+      {
+        q: "Is 24 or 48 hours' notice better?",
+        a: "24 hours works well for most standard treatments. Use 48 hours for long or high-value appointments, such as full lash sets, PMU or bridal bookings, where it is harder to refill the slot at short notice.",
+      },
+      {
+        q: "Can I charge a no-show fee if the client never agreed to my policy?",
+        a: "It is much harder. Without proof that the client saw the terms before booking, your position in a dispute is weak. Show the policy at booking, in the confirmation and in the reminder, and keep a record that it was communicated.",
+      },
+      {
+        q: "Should I charge a client who cancels because they are ill?",
+        a: "Legally, illness does not always cancel the obligation, but in practice most salons offer to reschedule instead. Goodwill in genuine emergencies costs you little and keeps loyal clients. Reserve fees for repeated or unexplained no-shows.",
+      },
+      {
+        q: "What if the slot is rebooked after a late cancellation?",
+        a: "Then you have not lost the income, so waive or reduce the fee. It is fair to the client and in many countries you cannot claim compensation for a loss that did not happen.",
+      },
+    ],
+    related: [
+      { pageKey: "online-booking", label: "Online booking with your own link" },
+      { pageKey: "messaging", label: "Automated email reminders" },
+      { pageKey: "appointment-calendar", label: "Appointment calendar" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Council Directive 93/13/EEC on unfair terms in consumer contracts",
+        url: "https://eur-lex.europa.eu/eli/dir/1993/13/oj",
+      },
+    ],
+  },
 ];
