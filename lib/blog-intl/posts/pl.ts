@@ -1196,4 +1196,180 @@ export const posts: BlogArticle[] = [
       { pageKey: "features", label: "Wszystkie funkcje" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 8. Zasady odwoływania wizyt w salonie
+  // ---------------------------------------------------------------------------
+  {
+    topic: "cancellation-policy-salon",
+    lang: "pl",
+    slug: "odwolywanie-wizyt-zadatek-salon-kosmetyczny",
+    title: "Odwoływanie wizyt w salonie kosmetycznym: terminy, opłaty, zadatek i gotowy zapis do regulaminu",
+    metaTitle: "Odwoływanie wizyt w salonie: zadatek i regulamin",
+    description:
+      "Jak ustalić zasady odwoływania wizyt w salonie kosmetycznym: terminy, opłata za nieodwołaną wizytę, zadatek a zaliczka, przykładowy zapis do regulaminu.",
+    excerpt:
+      "Zasady odwoływania wizyt chronią Twój przychód tylko wtedy, gdy klientka zna je przed rezerwacją, a Ty stosujesz je konsekwentnie. Terminy, kwoty, zadatek i gotowe sformułowania.",
+    category: "Zarządzanie",
+    keywords: [
+      "regulamin salonu kosmetycznego",
+      "zadatek salon kosmetyczny",
+      "odwołanie wizyty salon kosmetyczny",
+      "opłata za nieodwołaną wizytę",
+      "zadatek a zaliczka",
+      "no show salon",
+      "polityka anulowania wizyt",
+    ],
+    publishedAt: "2026-11-10",
+    updatedAt: "2026-11-10",
+    readMinutes: 8,
+    answer:
+      "Dobre zasady odwoływania wizyt w salonie kosmetycznym określają, do kiedy klientka może bezpłatnie odwołać lub przełożyć wizytę (zwykle 24 lub 48 godzin), jaka opłata obowiązuje przy późnym odwołaniu (często 50 % ceny zabiegu) i co dzieje się przy nieobecności bez uprzedzenia (do pełnej ceny lub utrata zadatku). Działają tylko wtedy, gdy klientka zna je przed rezerwacją, dostaje je na piśmie, a Ty stosujesz je konsekwentnie, z miejscem na prawdziwe nagłe sytuacje.",
+    takeaways: [
+      "Klientka musi zobaczyć zasady przed rezerwacją, a nie dowiedzieć się o nich po fakcie.",
+      "Dopasuj termin i opłatę do zabiegu: 20-minutowa henna to co innego niż trzygodzinne przedłużanie rzęs.",
+      "Zadatek i zaliczka to nie to samo: tylko zadatek możesz co do zasady zatrzymać, gdy klientka nie przyjdzie.",
+      "Opłata ma pokrywać realną stratę, a nie karać; umiarkowana kwota jest dużo bezpieczniejsza.",
+      "Przypomnienia, łatwe przekładanie wizyt i lista oczekujących ratują więcej przychodu niż jakakolwiek opłata.",
+    ],
+    intro: [
+      "Klientka, która dwie godziny przed 90-minutowym zabiegiem na twarz pisze, że jednak nie przyjdzie, zostawia w grafiku dziurę, której prawie nigdy nie da się zapełnić. Kosmetyczce płacisz i tak, kosmetyki często są już przygotowane. Kilka takich sytuacji w miesiącu to łatwo kilkaset złotych straty. Mimo to wiele właścicielek salonów nie pobiera żadnych opłat, bo boi się, że straci stałe klientki.",
+      "Nie musisz wybierać między życzliwością a przychodem. Jasny, uczciwy regulamin odwoływania wizyt chroni Twój kalendarz i ułatwia życie klientkom, bo znają zasady z góry. W tym poradniku dowiesz się, co zapisać w regulaminie, jakie terminy i kwoty są rozsądne, kiedy brać zadatek i jak egzekwować zasady bez psucia relacji. To praktyczne wskazówki, nie porada prawna.",
+    ],
+    sections: [
+      {
+        heading: "Czy salon kosmetyczny może pobierać opłatę za nieodwołaną wizytę?",
+        paragraphs: [
+          "Co do zasady tak. Rezerwując konkretny termin, klientka zawiera z Tobą umowę, a Ty blokujesz czas, którego nie sprzedasz nikomu innemu. Jeśli nie przyjdzie albo odwoła wizytę tak późno, że nie da się jej zastąpić, możesz oczekiwać rekompensaty.",
+          "Liczą się dwie rzeczy. Po pierwsze klientka musi znać zasady przed rezerwacją, najlepiej w formie regulaminu, który akceptuje przy zapisie. Opłata ogłoszona dopiero po fakcie jest bardzo trudna do obrony. Po drugie kwota musi być rozsądna. Postanowienia, które rażąco naruszają interesy konsumenta, mogą zostać uznane za niedozwolone (klauzule abuzywne w rozumieniu Kodeksu cywilnego), a UOKiK zwraca na nie uwagę. Opłata odpowiadająca realnej stracie, czyli zablokowanemu czasowi i przygotowanym materiałom, jest dużo bezpieczniejsza niż wysoka kwota ryczałtowa.",
+        ],
+        callout:
+          "Jeśli planujesz wysokie opłaty albo duże zadatki, poproś raz prawnika o przejrzenie regulaminu. To niewielki koszt w porównaniu z jednym sporem.",
+      },
+      {
+        heading: "Zadatek czy zaliczka: co wybrać w salonie kosmetycznym?",
+        paragraphs: [
+          "To najczęstsze nieporozumienie w polskich salonach. **Zadatek** (art. 394 Kodeksu cywilnego) zabezpiecza wykonanie umowy: jeśli klientka nie przyjdzie z własnej winy, salon może go zatrzymać. Jeśli to salon odwoła wizytę z własnej winy, klientka może żądać zwrotu w podwójnej wysokości. **Zaliczka** to tylko przedpłata na poczet ceny i co do zasady podlega zwrotowi, gdy usługa nie zostanie wykonana.",
+          "Jeśli chcesz mieć realne zabezpieczenie, nazwij wpłatę wprost zadatkiem w regulaminie i potwierdzeniu rezerwacji. Napisz też, że przy wizycie zadatek jest zaliczany na poczet ceny zabiegu.",
+        ],
+        table: {
+          headers: ["", "Zadatek", "Zaliczka"],
+          rows: [
+            ["Klientka nie przychodzi bez odwołania", "Salon może zatrzymać", "Co do zasady do zwrotu"],
+            ["Salon odwołuje z własnej winy", "Klientka może żądać podwójnej kwoty", "Zwrot wpłaconej kwoty"],
+            ["Wizyta odbywa się", "Zaliczany na poczet ceny", "Zaliczana na poczet ceny"],
+            ["Kiedy stosować", "Długie, drogie zabiegi, nowe klientki", "Gdy chcesz tylko potwierdzić rezerwację"],
+          ],
+        },
+      },
+      {
+        heading: "Co powinien zawierać regulamin odwoływania wizyt?",
+        paragraphs: [
+          "Zasady, które klientka zrozumie w dziesięć sekund, działają lepiej niż strona prawniczego tekstu. Zapisz prostym językiem:",
+        ],
+        bullets: [
+          "Do kiedy można bezpłatnie odwołać lub przełożyć wizytę, np. do 24 godzin przed.",
+          "Jaka opłata obowiązuje przy późnym odwołaniu, np. 50 % ceny zabiegu.",
+          "Co dzieje się przy nieobecności bez uprzedzenia, np. pełna cena albo utrata zadatku.",
+          "Co przy spóźnieniu, np. po 15 minutach zabieg może zostać skrócony.",
+          "Jak odwołać wizytę: link w e-mailu z potwierdzeniem, telefon, wiadomość.",
+          "Jak traktujesz nagłe sytuacje, np. chorobę czy wypadek.",
+          "Ton: pisz o „zasadach rezerwacji”, a nie o „karach”. Ta sama reguła odbierana jest wtedy zupełnie inaczej.",
+        ],
+      },
+      {
+        heading: "Jaki termin i jaka opłata są uczciwe dla poszczególnych zabiegów?",
+        paragraphs: [
+          "Nie ma jednej liczby dobrej dla wszystkich. Zależy to od tego, jak długo zabieg blokuje grafik, ile kosztuje i czy da się go zastąpić w ostatniej chwili. Wiele salonów stosuje model progowy:",
+        ],
+        table: {
+          headers: ["Rodzaj zabiegu", "Bezpłatne odwołanie", "Późne odwołanie", "Nieobecność"],
+          rows: [
+            ["Krótkie, do 30 min (brwi, henna, szybka depilacja)", "12–24 h", "Zwykle bez opłaty lub mała kwota", "50 %"],
+            ["Standardowe, 45–90 min (twarz, manicure, masaż)", "24 h", "50 %", "100 %"],
+            ["Długie lub drogie (rzęsy, makijaż permanentny, seria laserowa, makijaż ślubny)", "48 h", "50–100 %", "Utrata zadatku"],
+            ["Rezerwacje grupowe i eventy", "72 h lub więcej", "Indywidualnie", "Utrata zadatku"],
+          ],
+        },
+        callout:
+          "Jeśli po późnym odwołaniu uda Ci się zapełnić termin, zrezygnuj z opłaty albo ją obniż. To uczciwe, buduje zaufanie, a realnie nie poniosłaś straty.",
+      },
+      {
+        heading: "Jak może wyglądać zapis w regulaminie salonu?",
+        paragraphs: [
+          "Oto przykładowy tekst do dostosowania. Zmień liczby i zachowaj przyjazny, ale jasny ton:",
+          "**„Czas Twojej wizyty rezerwujemy wyłącznie dla Ciebie. Wizytę możesz bezpłatnie odwołać lub przełożyć najpóźniej 24 godziny przed jej terminem. Przy odwołaniu w ciągu 24 godzin pobieramy 50 % ceny zabiegu, a w przypadku nieobecności bez uprzedzenia pełną cenę. Przy zabiegach powyżej 2 godzin pobieramy zadatek, który zaliczamy na poczet ceny; przepada on, jeśli nie odwołasz wizyty co najmniej 48 godzin wcześniej. Przy spóźnieniu powyżej 15 minut zabieg może zostać skrócony. W nagłych sytuacjach zadzwoń do nas – znajdziemy wspólnie rozwiązanie.”**",
+          "Regulamin udostępnij przed rezerwacją, a w potwierdzeniu wizyty powtórz najważniejsze zdanie.",
+        ],
+      },
+      {
+        heading: "Jak sprawić, żeby klientki naprawdę znały zasady?",
+        paragraphs: [
+          "Większość sporów nie dotyczy wysokości opłaty, tylko tego, że „nikt o tym nie mówił”. Wpleć zasady w każdy etap rezerwacji:",
+        ],
+        steps: [
+          "Opublikuj regulamin na stronie salonu, przy cenniku lub rezerwacjach, i podlinkuj go ze strony rezerwacji online.",
+          "Wspomnij o nim w opisie długich lub drogich zabiegów, gdzie obowiązują ostrzejsze zasady.",
+          "Powtórz kluczowe zdanie w potwierdzeniu rezerwacji, razem z datą, godziną i sposobem odwołania.",
+          "Umieść je jeszcze raz w przypomnieniu e-mail 24–48 godzin przed wizytą, kiedy można jeszcze odwołać bez opłat.",
+          "Przy rezerwacji telefonicznej powiedz to jednym zdaniem i zanotuj w karcie klientki, że to zrobiłaś.",
+          "Wywieś krótką wersję przy recepcji, żeby nigdy nie była zaskoczeniem.",
+        ],
+      },
+      {
+        heading: "Jak egzekwować zasady i nie tracić klientek?",
+        paragraphs: [
+          "To konsekwencja sprawia, że zasady są uczciwe. Jeśli jedna klientka płaci, a kolejna nie, zauważą to obie. Jednocześnie surowe traktowanie stałej klientki przy pierwszej nieobecności od dziesięciu lat rzadko się opłaca. Ustal podejście z góry, żeby nie zależało od nastroju ani od tego, kto stoi na recepcji.",
+        ],
+        steps: [
+          "Zapisuj każde późne odwołanie i nieobecność w karcie klientki, z datą i powodem.",
+          "Pierwszy raz u dobrej klientki: bez opłaty, ale z uprzejmym przypomnieniem zasad.",
+          "Drugi raz: opłata zgodnie z regulaminem, z krótką, życzliwą wiadomością.",
+          "Powtarzające się nieobecności: zadatek przy każdej kolejnej rezerwacji.",
+          "Prawdziwe nagłe sytuacje, jak nagła choroba czy wypadek: zaproponuj nowy termin zamiast opłaty.",
+        ],
+        callout:
+          "Zdanie, które działa: „Brakowało nam Ciebie dzisiaj, mamy nadzieję, że wszystko w porządku. Zgodnie z naszymi zasadami rezerwacji przy odwołaniu w ostatniej chwili pobieramy 50 % ceny. Czy umówimy od razu nowy termin? W czwartek mamy wolne miejsce.” Spokojnie, rzeczowo i z myślą o kolejnej wizycie.",
+      },
+      {
+        heading: "Jak program do salonu kosmetycznego pomaga ograniczyć odwołania?",
+        paragraphs: [
+          "Najlepsza opłata za nieodwołaną wizytę to taka, której nigdy nie musisz pobierać. Program do salonu pomaga zapobiegać odwołaniom i łatwiej obsłużyć te, które się zdarzą. W Treatflow klientki rezerwują przez Twój własny link bez prowizji, przed każdą wizytą automatycznie wychodzi przypomnienie e-mail, a zwolnione terminy możesz zaproponować osobom z listy oczekujących. Notatki w karcie klientki pokazują całemu zespołowi, kto już wcześniej odwoływał w ostatniej chwili, więc wszyscy stosują zasady tak samo. Dane są przechowywane na serwerach w UE (Frankfurt), zgodnie z RODO.",
+          "Możesz to przetestować bezpłatnie przez 14 dni, bez karty kredytowej, i sprawdzić, czy liczba późnych odwołań i nieobecności spada.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Ile może wynosić opłata za nieodwołaną wizytę?",
+        a: "Wiele salonów pobiera 50 % ceny zabiegu przy odwołaniu w ostatniej chwili i do 100 % przy nieobecności. Przy krótkich zabiegach uczciwsza bywa mała, stała kwota. Opłata powinna odpowiadać realnej stracie, a nie być karą.",
+      },
+      {
+        q: "Czy salon może zatrzymać zadatek?",
+        a: "Tak, jeśli wpłata była jasno określona jako zadatek, a klientka nie przyszła z własnej winy. Zaliczka co do zasady podlega zwrotowi. Dlatego w regulaminie i potwierdzeniu wyraźnie nazwij wpłatę zadatkiem.",
+      },
+      {
+        q: "24 czy 48 godzin na bezpłatne odwołanie?",
+        a: "24 godziny sprawdzają się przy większości standardowych zabiegów. 48 godzin warto ustalić przy długich i drogich wizytach, jak pełna aplikacja rzęs, makijaż permanentny czy makijaż ślubny, które trudno zastąpić w ostatniej chwili.",
+      },
+      {
+        q: "Czy mogę pobrać opłatę, jeśli klientka nie znała regulaminu?",
+        a: "To trudne. Bez dowodu, że klientka znała zasady przed rezerwacją, Twoja pozycja w sporze jest słaba. Pokazuj regulamin przy rezerwacji, w potwierdzeniu i w przypomnieniu.",
+      },
+      {
+        q: "Czy mogę zapisywać w karcie klientki nieobecności?",
+        a: "Tak, krótka, rzeczowa notatka o nieodbytych wizytach to część obsługi rezerwacji. Zgodnie z RODO zapisuj tylko to, co potrzebne, i poinformuj o tym w klauzuli informacyjnej salonu.",
+      },
+    ],
+    related: [
+      { pageKey: "online-booking", label: "Rezerwacje online przez własny link" },
+      { pageKey: "messaging", label: "Automatyczne przypomnienia e-mail" },
+      { pageKey: "appointment-calendar", label: "Kalendarz wizyt" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Dyrektywa Rady 93/13/EWG w sprawie nieuczciwych warunków w umowach konsumenckich",
+        url: "https://eur-lex.europa.eu/eli/dir/1993/13/oj",
+      },
+    ],
+  },
 ];

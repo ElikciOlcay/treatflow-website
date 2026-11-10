@@ -1126,4 +1126,180 @@ export const posts: BlogArticle[] = [
       { pageKey: "features", label: "Toutes les fonctionnalités" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 8. Politique d'annulation institut de beauté
+  // ---------------------------------------------------------------------------
+  {
+    topic: "cancellation-policy-salon",
+    lang: "fr",
+    slug: "politique-annulation-institut-de-beaute",
+    title: "Politique d'annulation en institut de beauté : délais, frais, arrhes ou acompte et modèle",
+    metaTitle: "Politique d'annulation institut de beauté : modèle",
+    description:
+      "Rédiger la politique d'annulation de votre institut : délais, frais en cas d'annulation tardive ou de rendez-vous non honoré, arrhes ou acompte, et un modèle.",
+    excerpt:
+      "Une politique d'annulation ne protège votre chiffre d'affaires que si la cliente la voit avant de réserver et que vous l'appliquez toujours de la même façon. Délais, montants, arrhes ou acompte, modèle et formulations.",
+    category: "Gestion",
+    keywords: [
+      "politique d'annulation institut de beauté",
+      "rendez-vous non honoré institut",
+      "frais d'annulation esthéticienne",
+      "arrhes ou acompte institut de beauté",
+      "acompte réservation esthétique",
+      "conditions générales institut de beauté",
+      "no show institut de beauté",
+    ],
+    publishedAt: "2026-11-10",
+    updatedAt: "2026-11-10",
+    readMinutes: 8,
+    answer:
+      "Une bonne politique d'annulation en institut de beauté indique jusqu'à quand la cliente peut annuler gratuitement (souvent 24 ou 48 heures avant), des frais modérés en cas d'annulation tardive (souvent 50 % du prix du soin) et un montant plus élevé en cas de rendez-vous non honoré (jusqu'au prix total ou la perte des arrhes). Elle ne fonctionne que si la cliente la connaît avant de réserver, la reçoit par écrit et que vous l'appliquez avec constance, en laissant de la place aux vraies urgences.",
+    takeaways: [
+      "La cliente doit voir et accepter la politique avant de réserver, pas la découvrir après coup.",
+      "Adaptez délai et montant au soin : un rehaussement de cils de 45 minutes n'est pas une pose complète de trois heures.",
+      "Arrhes et acompte n'ont pas les mêmes effets : précisez toujours par écrit lequel vous demandez.",
+      "Les frais doivent compenser une perte réelle, pas sanctionner ; un montant modéré est bien plus défendable.",
+      "Rappels, report facile et liste d'attente évitent plus de pertes que n'importe quels frais d'annulation.",
+    ],
+    intro: [
+      "Une cliente qui annule deux heures avant un soin du visage de 90 minutes laisse dans votre planning un trou que vous ne comblerez presque jamais. L'esthéticienne est payée quand même, les produits sont parfois déjà préparés. Trois ou quatre fois par mois, et la perte atteint vite plusieurs centaines d'euros. Pourtant, beaucoup de gérantes n'osent rien facturer, de peur de perdre leurs fidèles ou de paraître commerçantes.",
+      "Vous n'avez pas à choisir entre bienveillance et rentabilité. Une politique d'annulation claire et juste protège votre planning et simplifie aussi la vie des clientes, qui connaissent les règles dès le départ. Ce guide vous explique quoi écrire, quels délais et montants sont raisonnables, comment utiliser arrhes ou acompte et comment appliquer la règle sans abîmer la relation. Il s'agit de conseils pratiques, pas d'un avis juridique.",
+    ],
+    sections: [
+      {
+        heading: "Un institut de beauté peut-il facturer un rendez-vous non honoré ?",
+        paragraphs: [
+          "En principe, oui. Lorsqu'une cliente réserve un créneau précis, un contrat se forme et vous bloquez un temps que vous ne pouvez pas vendre à quelqu'un d'autre. Si elle ne vient pas ou annule trop tard pour que vous puissiez réattribuer le créneau, demander une compensation est légitime.",
+          "Deux conditions comptent. D'abord, la cliente doit connaître vos conditions avant de réserver : des frais annoncés après coup sont très difficiles à défendre. Ensuite, le montant doit être proportionné. Le Code de la consommation interdit les clauses abusives, c'est-à-dire celles qui créent un déséquilibre significatif au détriment du consommateur, comme une indemnité manifestement disproportionnée. Des frais liés à votre perte réelle, temps bloqué et produits préparés, tiennent bien mieux qu'une somme forfaitaire élevée.",
+        ],
+        callout:
+          "Si vous souhaitez appliquer des frais élevés ou conserver des sommes importantes, faites relire une fois vos conditions générales par un juriste ou votre organisation professionnelle.",
+      },
+      {
+        heading: "Arrhes ou acompte : que demander en institut ?",
+        paragraphs: [
+          "C'est la question la plus fréquente, et la différence est importante. Selon le Code de la consommation, **sauf stipulation contraire, les sommes versées d'avance sont des arrhes**. Avec des arrhes, la cliente peut renoncer au rendez-vous en les perdant, et si c'est l'institut qui annule, il doit rembourser le double. Un **acompte** engage fermement les deux parties : en principe, la cliente reste redevable du prix et ne peut pas se dégager simplement en abandonnant la somme versée.",
+          "Pour un institut, les arrhes sont souvent la solution la plus simple et la plus lisible pour les clientes. Si vous voulez parler d'acompte, écrivez-le explicitement dans vos conditions et dans la confirmation de réservation.",
+        ],
+        table: {
+          headers: ["", "Arrhes", "Acompte"],
+          rows: [
+            ["La cliente ne vient pas", "Elle perd les arrhes", "Elle reste en principe redevable du prix"],
+            ["L'institut annule", "Il rembourse le double des arrhes", "Il rembourse et peut devoir indemniser"],
+            ["Le rendez-vous a lieu", "Déduites du prix", "Déduit du prix"],
+            ["Par défaut si rien n'est précisé", "Oui", "Non, doit être écrit"],
+          ],
+        },
+      },
+      {
+        heading: "Que doit contenir la politique d'annulation d'un institut de beauté ?",
+        paragraphs: [
+          "Une règle comprise en dix secondes fonctionne beaucoup mieux qu'une page de jargon juridique. Prévoyez, en termes simples :",
+        ],
+        bullets: [
+          "Le délai d'annulation ou de report gratuit, par exemple jusqu'à 24 heures avant.",
+          "Les frais en cas d'annulation tardive, par exemple 50 % du prix du soin.",
+          "Ce qui s'applique en cas de rendez-vous non honoré sans prévenir, par exemple le prix total ou la perte des arrhes.",
+          "La règle en cas de retard, par exemple au-delà de 15 minutes, le soin peut être écourté.",
+          "Comment annuler : lien dans l'e-mail de confirmation, téléphone ou message.",
+          "Comment vous traitez les urgences, comme une maladie ou un accident.",
+          "Le ton : parlez de « conditions de réservation » plutôt que de « pénalités ». La même règle est alors perçue tout autrement.",
+        ],
+      },
+      {
+        heading: "Quel délai et quels frais sont justes selon le soin ?",
+        paragraphs: [
+          "Il n'existe pas de chiffre universel. Tout dépend du temps bloqué dans le planning, du prix du soin et de vos chances de remplir le créneau au dernier moment. Beaucoup d'instituts appliquent un modèle par paliers :",
+        ],
+        table: {
+          headers: ["Type de soin", "Annulation gratuite", "Annulation tardive", "Rendez-vous non honoré"],
+          rows: [
+            ["Courts, moins de 30 min (sourcils, teinture, épilation rapide)", "12–24 h", "Souvent aucun frais ou petit forfait", "50 %"],
+            ["Standards, 45–90 min (soin visage, manucure, massage)", "24 h", "50 %", "100 %"],
+            ["Longs ou coûteux (extensions de cils, maquillage permanent, cure laser, mariée)", "48 h", "50–100 %", "Perte des arrhes"],
+            ["Groupes et événements", "72 h ou plus", "Selon accord", "Perte des arrhes"],
+          ],
+        },
+        callout:
+          "Si le créneau est finalement repris après une annulation tardive, renoncez aux frais ou réduisez-les. C'est juste, cela crée de la confiance et, concrètement, vous n'avez rien perdu.",
+      },
+      {
+        heading: "Modèle de politique d'annulation pour votre institut",
+        paragraphs: [
+          "Voici un texte à adapter. Changez les chiffres et gardez un ton chaleureux mais clair :",
+          "**« Nous réservons le temps de votre rendez-vous rien que pour vous. Vous pouvez annuler ou déplacer votre rendez-vous gratuitement jusqu'à 24 heures avant. En cas d'annulation moins de 24 heures avant, nous facturons 50 % du prix du soin ; en cas d'absence sans prévenir, le prix total. Pour les soins de plus de deux heures, des arrhes sont demandées à la réservation : elles sont déduites du prix et conservées en cas d'annulation moins de 48 heures avant. Au-delà de 15 minutes de retard, le soin pourra être écourté. En cas de véritable urgence, appelez-nous : nous trouverons ensemble une solution. »**",
+          "Reprenez cette phrase dans vos conditions générales et faites-la apparaître avant la réservation.",
+        ],
+      },
+      {
+        heading: "Comment s'assurer que les clientes voient vraiment vos conditions ?",
+        paragraphs: [
+          "La plupart des litiges ne portent pas sur le montant mais sur le « je ne savais pas ». Intégrez votre politique à chaque étape de la réservation :",
+        ],
+        steps: [
+          "Publiez-la sur votre site, près des tarifs ou de la réservation, et faites un lien depuis votre page de réservation en ligne.",
+          "Mentionnez-la dans la description des soins longs ou coûteux, où les règles sont plus strictes.",
+          "Répétez la phrase clé dans la confirmation, avec la date, l'heure et la façon d'annuler.",
+          "Reprenez-la dans le rappel par e-mail 24 à 48 heures avant, quand l'annulation gratuite est encore possible.",
+          "Pour les réservations par téléphone ou à l'accueil, dites-la en une phrase et notez dans la fiche cliente que c'est fait.",
+          "Affichez une version courte à l'accueil pour qu'elle ne soit jamais une surprise.",
+        ],
+      },
+      {
+        heading: "Comment appliquer la règle sans perdre de clientes ?",
+        paragraphs: [
+          "C'est la constance qui rend une règle juste. Si une cliente paie et la suivante non, les deux le remarquent. En même temps, être stricte avec une fidèle de dix ans pour sa toute première absence est rarement une bonne idée. Fixez votre façon de faire à l'avance, pour qu'elle ne dépende ni de l'humeur ni de la personne à l'accueil.",
+        ],
+        steps: [
+          "Notez chaque annulation tardive et chaque absence dans la fiche cliente, avec la date et le motif.",
+          "Première fois pour une bonne cliente : pas de frais, mais un rappel aimable de la règle.",
+          "Deuxième fois : appliquez les frais prévus, avec un message court et cordial.",
+          "Absences répétées : demandez des arrhes pour les prochains rendez-vous.",
+          "Vraies urgences, comme une maladie soudaine ou un accident : proposez un report plutôt que des frais.",
+        ],
+        callout:
+          "Une formulation qui fonctionne : « Vous nous avez manqué aujourd'hui, nous espérons que tout va bien. Comme indiqué dans nos conditions de réservation, nous facturons 50 % pour les annulations de dernière minute. Souhaitez-vous reprendre rendez-vous tout de suite ? Nous avons une place jeudi. » Calme, factuel et tourné vers la prochaine visite.",
+      },
+      {
+        heading: "Comment un logiciel pour institut de beauté aide-t-il à limiter les annulations ?",
+        paragraphs: [
+          "Les meilleurs frais d'annulation sont ceux que vous n'avez jamais à facturer. Un logiciel de gestion aide à prévenir les annulations et à mieux gérer celles qui restent. Avec Treatflow, vos clientes réservent depuis votre propre lien sans commission, un rappel par e-mail part automatiquement avant chaque rendez-vous et les créneaux libérés peuvent être proposés aux clientes en liste d'attente. Les notes dans la fiche cliente montrent à toute l'équipe qui a déjà annulé tardivement, pour que la règle soit appliquée de la même manière par toutes. Les données sont hébergées sur des serveurs dans l'UE à Francfort, conformément au RGPD.",
+          "Vous pouvez l'essayer gratuitement pendant 14 jours, sans carte bancaire, et vérifier si vos annulations tardives et rendez-vous non honorés diminuent.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Combien facturer pour un rendez-vous non honoré en institut ?",
+        a: "Beaucoup d'instituts facturent 50 % du prix pour une annulation tardive et jusqu'à 100 % pour une absence sans prévenir. Pour les soins courts, un petit forfait est souvent plus juste. Le montant doit refléter votre perte réelle et ne pas être disproportionné.",
+      },
+      {
+        q: "Arrhes ou acompte : que choisir ?",
+        a: "Sans précision, les sommes versées d'avance sont des arrhes : la cliente qui annule les perd, l'institut qui annule rembourse le double. L'acompte engage fermement les deux parties. Pour un institut, les arrhes sont souvent plus simples ; dans tous les cas, écrivez clairement lequel vous demandez.",
+      },
+      {
+        q: "Faut-il prévoir 24 ou 48 heures de délai ?",
+        a: "24 heures conviennent à la plupart des soins. Prévoyez 48 heures pour les rendez-vous longs ou coûteux, comme une pose complète de cils, un maquillage permanent ou une mise en beauté de mariée, difficiles à remplacer au dernier moment.",
+      },
+      {
+        q: "Puis-je facturer si la cliente ne connaissait pas mes conditions ?",
+        a: "C'est délicat. Sans preuve que la cliente a vu vos conditions avant de réserver, votre position est faible. Affichez la politique lors de la réservation, dans la confirmation et dans le rappel.",
+      },
+      {
+        q: "Ai-je le droit de noter les absences dans la fiche cliente ?",
+        a: "Oui, une note courte et factuelle sur les rendez-vous non honorés fait partie de la gestion des réservations. Selon le RGPD, ne conservez que l'essentiel et mentionnez-le dans votre politique de confidentialité ; la CNIL propose des guides pour les petites entreprises.",
+      },
+    ],
+    related: [
+      { pageKey: "online-booking", label: "Réservation en ligne avec votre propre lien" },
+      { pageKey: "messaging", label: "Rappels automatiques par e-mail" },
+      { pageKey: "appointment-calendar", label: "Calendrier des rendez-vous" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex : directive 93/13/CEE concernant les clauses abusives dans les contrats conclus avec les consommateurs",
+        url: "https://eur-lex.europa.eu/eli/dir/1993/13/oj",
+      },
+    ],
+  },
 ];

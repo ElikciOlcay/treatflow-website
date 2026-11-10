@@ -101,6 +101,7 @@ Tak. Przy płatności miesięcznej możesz zrezygnować w każdej chwili ze skut
 - [O nas](https://www.treatflow.io/pl/o-nas): zespół i historia Treatflow
 - [Kontakt](https://www.treatflow.io/pl/kontakt): napisz na hello@treatflow.io lub umów rozmowę
 - [Blog](https://www.treatflow.io/pl/blog): artykuły dla właścicieli salonów
+  - [Odwoływanie wizyt w salonie kosmetycznym](https://www.treatflow.io/pl/blog/odwolywanie-wizyt-zadatek-salon-kosmetyczny): terminy, opłaty, zadatek i zapis do regulaminu
 - [Regulamin](https://www.treatflow.io/pl/regulamin): warunki korzystania z usługi
 - [Instagram](https://www.instagram.com/treatflow.io/): @treatflow.io
 

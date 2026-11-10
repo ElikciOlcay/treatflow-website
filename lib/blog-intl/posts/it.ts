@@ -1276,4 +1276,185 @@ export const posts: BlogArticle[] = [
       { pageKey: "features", label: "Tutte le funzioni" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 8. Politica di disdetta centro estetico
+  // ---------------------------------------------------------------------------
+  {
+    topic: "cancellation-policy-salon",
+    lang: "it",
+    slug: "politica-disdetta-appuntamenti-centro-estetico",
+    title: "Disdetta appuntamenti nel centro estetico: regole, penale e un testo pronto da usare",
+    metaTitle: "Disdetta appuntamenti centro estetico: penale e regole",
+    description:
+      "Come scrivere la politica di disdetta del tuo centro estetico: preavviso, penale per disdetta tardiva e mancata presentazione, caparra ed esempio di testo.",
+    excerpt:
+      "Una politica di disdetta protegge il tuo fatturato solo se la cliente la vede prima di prenotare e tu la applichi sempre allo stesso modo. Preavvisi, importi, un testo modello e frasi per le conversazioni difficili.",
+    category: "Gestione",
+    keywords: [
+      "disdetta appuntamento centro estetico",
+      "penale disdetta centro estetico",
+      "politica di cancellazione centro estetico",
+      "caparra centro estetico",
+      "regolamento centro estetico",
+      "mancata presentazione appuntamento",
+      "no show centro estetico",
+    ],
+    publishedAt: "2026-11-10",
+    updatedAt: "2026-11-10",
+    readMinutes: 8,
+    answer:
+      "Una buona politica di disdetta per il centro estetico indica entro quando la cliente può disdire gratis (di solito 24 o 48 ore prima), una penale moderata per la disdetta tardiva (spesso il 50 % del prezzo) e un importo più alto per la mancata presentazione (fino al prezzo pieno). Funziona solo se la cliente la conosce prima di prenotare, la riceve per iscritto e tu la applichi con coerenza, lasciando spazio alle vere emergenze.",
+    takeaways: [
+      "La cliente deve vedere e accettare le regole prima di prenotare, non scoprirle dopo.",
+      "Adatta preavviso e penale al trattamento: una laminazione ciglia di 30 minuti non è un trattamento viso di due ore.",
+      "La penale deve compensare la perdita reale, non punire; un importo moderato è molto più difendibile.",
+      "Annota ogni disdetta tardiva e ogni assenza nella scheda cliente, così tutto lo staff reagisce allo stesso modo.",
+      "Promemoria, spostamenti facili e lista d'attesa salvano più fatturato di qualsiasi penale.",
+    ],
+    intro: [
+      "Una cliente che disdice due ore prima di un trattamento viso da 90 minuti lascia un buco in agenda che quasi mai riesci a riempire. L'estetista la paghi comunque, i prodotti magari sono già pronti. Succede tre o quattro volte al mese e la perdita arriva facilmente a qualche centinaio di euro. Eppure molte titolari non chiedono nulla, per paura di perdere le clienti affezionate o di sembrare poco gentili.",
+      "Non devi scegliere tra cortesia e fatturato. Una politica di disdetta chiara ed equa protegge la tua agenda e rende tutto più semplice anche per la cliente, che conosce le regole in anticipo. In questa guida trovi cosa scrivere, quali preavvisi e importi sono ragionevoli, come usare la caparra e come applicare le regole senza rovinare il rapporto. Sono indicazioni pratiche, non una consulenza legale.",
+    ],
+    sections: [
+      {
+        heading: "Un centro estetico può chiedere una penale per disdetta?",
+        paragraphs: [
+          "In generale sì. Quando la cliente prenota un appuntamento fisso, nasce un accordo e tu blocchi un tempo che non puoi vendere ad altri. Se non si presenta o disdice così tardi che non riesci a riassegnare lo slot, chiedere un indennizzo è legittimo.",
+          "Contano però due cose. La prima: la cliente deve conoscere le condizioni prima della prenotazione; una penale comunicata solo dopo è difficile da sostenere. La seconda: l'importo deve essere proporzionato. Il Codice del Consumo considera vessatorie le clausole che impongono al consumatore una penale manifestamente eccessiva, e il Codice civile permette al giudice di ridurre una penale eccessiva. Un importo legato alla perdita reale, cioè tempo bloccato e materiali preparati, è molto più solido di una cifra fissa alta.",
+        ],
+        callout:
+          "Se vuoi applicare penali alte o trattenere caparre consistenti, fai rivedere una volta il testo da un legale o dalla tua associazione di categoria.",
+      },
+      {
+        heading: "Cosa deve contenere la politica di disdetta di un centro estetico?",
+        paragraphs: [
+          "Una regola che si capisce in dieci secondi funziona molto meglio di una pagina di termini legali. Includi questi punti, in linguaggio semplice:",
+        ],
+        table: {
+          headers: ["Elemento", "Cosa scrivere", "Esempio"],
+          rows: [
+            ["Disdetta gratuita", "Con quanto anticipo si può disdire o spostare senza costi", "Fino a 24 ore prima"],
+            ["Disdetta tardiva", "Cosa si paga entro quel termine", "50 % del prezzo del trattamento"],
+            ["Mancata presentazione", "Cosa si paga se la cliente non viene e non avvisa", "100 % del prezzo"],
+            ["Ritardo", "Quando il trattamento viene accorciato o annullato", "Oltre 15 minuti il trattamento si accorcia"],
+            ["Come disdire", "Il canale da usare", "Dal link nell'email di conferma o per telefono"],
+            ["Eccezioni", "Come gestisci le emergenze", "In caso di malattia o imprevisto troviamo una soluzione"],
+            ["Caparra", "Se la chiedi, quando viene scalata o trattenuta", "Scalata dal prezzo, trattenuta in caso di assenza"],
+          ],
+        },
+        bullets: [
+          "Parla di 'regole di prenotazione' o 'politica di disdetta', non di 'multa'. Il tono cambia completamente la percezione.",
+          "Spiega il perché in una frase: quel tempo è riservato solo a lei.",
+          "Usa lo stesso testo ovunque: sito, pagina di prenotazione, conferma, promemoria e cartello in cabina o alla reception.",
+        ],
+      },
+      {
+        heading: "Quale preavviso e quale penale sono giusti per ogni trattamento?",
+        paragraphs: [
+          "Non esiste un numero valido per tutti. Dipende da quanto il trattamento occupa l'agenda, da quanto costa e da quanto è probabile riempire lo slot all'ultimo momento. Molti centri usano un modello a fasce:",
+        ],
+        table: {
+          headers: ["Tipo di trattamento", "Disdetta gratuita", "Disdetta tardiva", "Mancata presentazione"],
+          rows: [
+            ["Brevi, sotto 30 min (sopracciglia, ceretta veloce)", "12–24 ore", "Spesso nulla o piccola cifra fissa", "50 %"],
+            ["Standard, 45–90 min (viso, manicure, massaggio)", "24 ore", "50 %", "100 %"],
+            ["Lunghi o costosi (extension ciglia, trucco permanente, pacchetti laser, sposa)", "48 ore", "50–100 %", "100 % o caparra trattenuta"],
+            ["Gruppi ed eventi", "72 ore o più", "Da concordare", "Caparra trattenuta"],
+          ],
+        },
+        callout:
+          "Se dopo una disdetta tardiva riesci a riassegnare lo slot, rinuncia alla penale o riducila. È corretto, crea fiducia e, di fatto, non hai subito alcuna perdita.",
+      },
+      {
+        heading: "Meglio chiedere una caparra o la penale dopo?",
+        paragraphs: [
+          "Una penale chiesta dopo l'assenza vale solo se riesci a incassarla. Molte clienti pagano senza problemi, altre semplicemente non rispondono, e rincorrere piccole somme costa tempo e serenità. Una caparra al momento della prenotazione risolve il problema e scoraggia le prenotazioni fatte d'impulso.",
+          "Attenzione alla differenza tra caparra e acconto: la caparra confirmatoria, se la cliente non si presenta, può essere trattenuta; un semplice acconto in genere va restituito o compensato. Scrivi chiaramente quale delle due chiedi. E ricorda che la caparra aggiunge un passaggio: le clienti storiche potrebbero viverla come sfiducia. Un compromesso sensato è chiederla solo dove il rischio è alto:",
+        ],
+        bullets: [
+          "Nuove clienti che prenotano per la prima volta un trattamento lungo o costoso.",
+          "Clienti che hanno già disdetto tardi o saltato più appuntamenti.",
+          "Trattamenti per cui ordini o prepari materiale in anticipo, come pigmenti per trucco permanente o set di ciglia particolari.",
+          "Fasce molto richieste, come il venerdì sera o le settimane prima delle feste.",
+        ],
+      },
+      {
+        heading: "Esempio di testo per la politica di disdetta",
+        paragraphs: [
+          "Ecco un testo che puoi adattare. Cambia i numeri e mantieni un tono gentile ma chiaro:",
+          "**“Il tuo appuntamento è un tempo che riserviamo solo a te. Puoi disdire o spostare gratuitamente fino a 24 ore prima. Per disdette nelle 24 ore precedenti addebitiamo il 50 % del prezzo del trattamento; in caso di mancata presentazione senza avviso, il prezzo intero. Con un ritardo superiore a 15 minuti potremmo dover accorciare il trattamento. Se hai un vero imprevisto, chiamaci: troveremo insieme una soluzione.”**",
+          "Per i trattamenti lunghi aggiungi una riga, ad esempio: “Per appuntamenti di due ore o più, la disdetta gratuita è possibile fino a 48 ore prima.” Se chiedi una caparra, specifica che viene scalata dal prezzo finale e quando viene trattenuta.",
+        ],
+      },
+      {
+        heading: "Come fai in modo che le clienti vedano davvero le regole?",
+        paragraphs: [
+          "La maggior parte delle discussioni non riguarda l'importo, ma il “non lo sapevo”. Inserisci la politica in ogni passaggio della prenotazione:",
+        ],
+        steps: [
+          "Pubblicala sul sito, nella pagina prezzi o prenotazioni, e collegala dalla tua pagina di prenotazione online.",
+          "Citala nella descrizione dei trattamenti lunghi o costosi, dove valgono regole più severe.",
+          "Ripeti la frase chiave nella conferma, insieme a data, ora e modalità di disdetta.",
+          "Inseriscila di nuovo nel promemoria email 24–48 ore prima, quando si può ancora disdire gratis.",
+          "Per prenotazioni al telefono o in sede, dilla a voce in una frase e annota nella scheda cliente di averlo fatto.",
+          "Esponi una versione breve alla reception, così non sarà mai una sorpresa.",
+        ],
+      },
+      {
+        heading: "Come applichi le regole senza perdere clienti?",
+        paragraphs: [
+          "È la coerenza a rendere una regola giusta. Se una cliente paga e quella dopo no, se ne accorgono entrambe. Allo stesso tempo, essere rigide con una cliente fedele da dieci anni alla sua prima assenza raramente conviene. Decidi l'approccio in anticipo, così non dipende dall'umore o da chi è in reception.",
+        ],
+        steps: [
+          "Annota ogni disdetta tardiva e ogni assenza nella scheda cliente, con data e motivo.",
+          "Prima volta per una buona cliente: niente penale, ma ricordale con gentilezza la politica.",
+          "Seconda volta: applica la penale come previsto, con un messaggio breve e cordiale.",
+          "Assenze ripetute: chiedi una caparra per i prossimi appuntamenti.",
+          "Vere emergenze, come malattia improvvisa o incidente: proponi di spostare invece di addebitare.",
+        ],
+        callout:
+          "Una frase che funziona: “Oggi ci sei mancata, speriamo che vada tutto bene. Come indicato nelle nostre regole di prenotazione, per le disdette all'ultimo momento addebitiamo il 50 %. Vuoi fissare subito un nuovo appuntamento? Giovedì abbiamo posto.” Calma, concreta e rivolta al prossimo appuntamento.",
+      },
+      {
+        heading: "Come ti aiuta un gestionale per centro estetico con disdette e assenze?",
+        paragraphs: [
+          "La penale migliore è quella che non devi mai chiedere. Un gestionale aiuta a prevenire le disdette e a gestire meglio quelle che restano. Con Treatflow le clienti prenotano dal tuo link personale senza commissioni, prima di ogni appuntamento parte in automatico un promemoria via email e gli slot che si liberano puoi offrirli alle clienti in lista d'attesa. Le note nella scheda cliente mostrano a tutto lo staff chi ha già disdetto tardi, così la politica viene applicata da tutte allo stesso modo. I dati sono su server UE a Francoforte, in linea con il GDPR e le indicazioni del Garante.",
+          "Puoi provarlo gratis per 14 giorni, senza carta di credito, e verificare se disdette tardive e assenze diminuiscono.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Quanto può chiedere un centro estetico per una disdetta tardiva?",
+        a: "Molti centri chiedono il 50 % del prezzo per le disdette entro il termine e fino al 100 % per la mancata presentazione. Per i trattamenti brevi spesso è più corretta una piccola cifra fissa. L'importo deve rispecchiare la perdita reale e non essere manifestamente eccessivo.",
+      },
+      {
+        q: "Meglio 24 o 48 ore di preavviso?",
+        a: "24 ore vanno bene per la maggior parte dei trattamenti standard. Usa 48 ore per appuntamenti lunghi o costosi, come extension ciglia complete, trucco permanente o trucco sposa, dove è difficile riempire lo slot all'ultimo.",
+      },
+      {
+        q: "Che differenza c'è tra caparra e acconto?",
+        a: "La caparra confirmatoria rafforza l'impegno: se la cliente non si presenta, il centro può trattenerla. L'acconto è un semplice anticipo sul prezzo e di norma va restituito o scalato. Scrivi sempre chiaramente quale dei due chiedi e in quali casi viene trattenuto.",
+      },
+      {
+        q: "Posso addebitare la penale se la cliente non conosceva le regole?",
+        a: "È difficile. Senza prova che la cliente abbia visto le condizioni prima della prenotazione, la tua posizione è debole. Mostra la politica in fase di prenotazione, nella conferma e nel promemoria.",
+      },
+      {
+        q: "Se la cliente è malata devo comunque addebitare?",
+        a: "Dal punto di vista legale non sempre la malattia esclude la penale, ma nella pratica la maggior parte dei centri propone di spostare l'appuntamento. Essere comprensive nelle vere emergenze costa poco e mantiene le clienti fedeli.",
+      },
+    ],
+    related: [
+      { pageKey: "online-booking", label: "Prenotazioni online con il tuo link" },
+      { pageKey: "messaging", label: "Promemoria automatici via email" },
+      { pageKey: "appointment-calendar", label: "Calendario appuntamenti" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Direttiva 93/13/CEE concernente le clausole abusive nei contratti stipulati con i consumatori",
+        url: "https://eur-lex.europa.eu/eli/dir/1993/13/oj",
+      },
+    ],
+  },
 ];
