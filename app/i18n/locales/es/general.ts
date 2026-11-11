@@ -108,7 +108,7 @@ const home: LocaleSiteContent["home"] = {
     trustItems: [
       "Sin tarjeta de crédito",
       "Listo en 2 minutos",
-      "Migración de datos gratuita",
+      "Sin permanencia",
       "Soporte personal",
     ],
     studiosLabel: "Más de 500 centros",
@@ -291,7 +291,7 @@ const pricing: LocaleSiteContent["pricing"] = {
   },
   trialBox: {
     title: "14 días gratis",
-    text: "Sin tarjeta de crédito • Cancela cuando quieras • Migración de datos gratuita",
+    text: "Sin tarjeta de crédito • Cancela cuando quieras",
     points: ["Sin costes de alta", "Cancelación mensual", "Conforme al RGPD"],
   },
   comparison: {

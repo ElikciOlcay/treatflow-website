@@ -33,7 +33,7 @@ Ostatnia aktualizacja: 2026-11-05. Język: polski. Ten plik opisuje polską wers
 - [Cennik](https://www.treatflow.io/pl/cennik): szczegółowe porównanie pakietów
 - Basic: 39 €/miesiąc lub 421 €/rok (35 €/miesiąc). Zarządzanie klientami, formularze z podpisem elektronicznym, dokumentacja i notatki głosowe, zdjęcia przed i po, notatki i zadania zespołu, sklep i produkty, statystyki, pracownicy i role, wsparcie e-mail. Bez kalendarza wizyt.
 - Booking: 59 €/miesiąc lub 637 €/rok (53 €/miesiąc). Wszystko z pakietu Basic oraz kalendarz z kolumnami dla pracowników i gabinetów, rezerwacje online bez prowizji, lista oczekujących, przypomnienia e-mail, automatyzacje dla klientów, kody rabatowe, wielojęzyczna strona rezerwacji, integracje (Kalendarz Google, Zapier, asystenci AI), priorytetowe wsparcie e-mail i czat.
-- Ceny w euro, netto + VAT. 14 dni za darmo, bez podawania karty, bez opłat za wdrożenie, rezygnacja co miesiąc, bezpłatne przeniesienie danych.
+- Ceny w euro, netto + VAT. 14 dni za darmo, bez podawania karty, bez opłat za wdrożenie, rezygnacja co miesiąc.
 - Treatflow Pay (opcjonalnie): 2,69% od płatności online.
 
 ## Wypróbuj i załóż konto
@@ -92,7 +92,7 @@ Tak. Wszystkie dane są szyfrowane i przechowywane na serwerach w UE, we Frankfu
 Tak, dzięki Treatflow Pay. Dla każdej usługi wybierasz: bez płatności, zaliczka lub pełna płatność. Opłata wynosi 2,69% za transakcję.
 
 **Czy mogę zaimportować dotychczasowe dane klientów?**
-Tak, a przeniesienie danych jest bezpłatne. Zespół wsparcia pomoże przenieść dane do cyfrowej kartoteki klientów.
+Tak. Dotychczasowe listy klientów importujesz jako plik CSV do cyfrowej kartoteki, z przypisywaniem pól i wykrywaniem duplikatów.
 
 **Czy mogę zrezygnować w każdej chwili?**
 Tak. Przy płatności miesięcznej możesz zrezygnować w każdej chwili ze skutkiem na koniec okresu rozliczeniowego. Nie ma minimalnego okresu umowy, a wszystkie dane możesz wyeksportować.

@@ -73,7 +73,7 @@ export const vsFreshaTr: EnComparisonContent = {
     },
     {
       q: "Fresha'dan Treatflow'a geçebilir miyim?",
-      a: "Evet. Müşteri verilerinin aktarımında yardımcı oluruz. Treatflow'u kredi kartı gerekmeden 14 gün deneyebilirsiniz.",
+      a: "Evet. Müşteri listelerinizi CSV dosyası olarak içe aktarırsınız. Treatflow'u kredi kartı gerekmeden 14 gün deneyebilirsiniz.",
     },
   ],
   ctaTitle: "Her ziyaretten pay değil, ödediğiniz yazılım mı istiyorsunuz?",

@@ -38,7 +38,7 @@ Stand: 2026-11-09. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website
 - Basic: 39 €/Monat oder 421 €/Jahr (35 €/Monat). Kundenverwaltung, Formulare mit digitaler Unterschrift, Dokumentation inkl. Sprachnotiz, Vorher-Nachher-Fotos, Team-Notizen und Aufgaben, Shop und Produkte, Statistiken, Mitarbeiter und Rollen, NiSV-Dokumentation, E-Mail-Support. Ohne Terminkalender.
 - Booking: 59 €/Monat oder 637 €/Jahr (53 €/Monat). Alles aus Basic plus Terminkalender mit Mitarbeiter- und Raumspalten, Online-Buchung ohne Provision, Warteliste, WhatsApp- und E-Mail-Erinnerungen, Kunden-Workflows, Rabattcodes, mehrsprachige Buchungsseite, Integrationen (Lexware, Google Kalender, Zapier, SumUp, KI-Assistenten), Priority E-Mail- und Chat-Support.
 - Kasse (Add-on zu Booking): 39 €/Monat (jährlich 35 €/Monat) zzgl. einmalig 149 € Einrichtung; TSE-/RKSV-konform, keine Transaktionsgebühren, keine Provision pro Verkauf.
-- Alle Preise in Euro, zzgl. MwSt. 14 Tage kostenlos testen, keine Kreditkarte, keine Setup-Gebühren, monatlich kündbar, kostenloser Datenumzug.
+- Alle Preise in Euro, zzgl. MwSt. 14 Tage kostenlos testen, keine Kreditkarte, keine Setup-Gebühren, monatlich kündbar.
 - Treatflow Pay (optional): 2,69 % pro Online-Zahlung.
 
 ## Testen und registrieren
@@ -121,7 +121,7 @@ Ja. In Deutschland signiert Treatflow jeden Verkauf über eine zertifizierte TSE
 Ja. Alle Daten werden verschlüsselt auf EU-Servern in Frankfurt gespeichert, auch digitale Anamnesen und Behandlungsdokumentation.
 
 **Kann ich meine bestehenden Kundendaten importieren?**
-Ja, wir helfen dir beim kostenlosen Umzug deiner Daten in die digitale Kundenkartei.
+Ja. Bestehende Kundenlisten importierst du als CSV-Datei in die digitale Kundenkartei – mit Feldzuordnung und Duplikat-Erkennung.
 
 **Kann ich jederzeit kündigen?**
 Ja. Bei monatlicher Zahlung jederzeit zum Ende des Abrechnungszeitraums, ohne Mindestlaufzeit. Alle Daten kannst du exportieren.

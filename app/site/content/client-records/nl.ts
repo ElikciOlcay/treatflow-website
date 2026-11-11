@@ -62,7 +62,7 @@ export const clientRecordsNl: ClientRecordsContent = {
       {
         icon: "upload",
         title: "Neem je bestaande gegevens mee",
-        text: "Heb je al een klantenbestand? Importeer het gewoon vanuit Excel of CSV. Ons team helpt je bij de overstap.",
+        text: "Heb je al een klantenbestand? Importeer het gewoon als CSV-bestand, bijvoorbeeld geëxporteerd uit Excel.",
       },
       {
         icon: "database",
@@ -74,7 +74,7 @@ export const clientRecordsNl: ClientRecordsContent = {
   howItWorks: {
     description: "In drie stappen naar digitale klantdossiers.",
     steps: [
-      { title: "Klanten toevoegen of importeren", text: "Maak nieuwe klanten handmatig aan of importeer je bestaande bestand vanuit Excel of CSV. Dubbele klanten worden automatisch herkend." },
+      { title: "Klanten toevoegen of importeren", text: "Maak nieuwe klanten handmatig aan of importeer je bestaande bestand als CSV-bestand. Dubbele klanten worden automatisch herkend." },
       { title: "Het dossier aanvullen", text: "Leg contactgegevens, allergieën, notities en foto's vast in het dossier. Ingevulde formulieren komen er automatisch bij." },
       { title: "Alles klaar bij het volgende bezoek", text: "Open het klantdossier vóór de behandeling – je ziet meteen wat er de vorige keer is gedaan en waar je op moet letten." },
     ],
@@ -84,7 +84,7 @@ export const clientRecordsNl: ClientRecordsContent = {
     description: "Digitale klantdossiers zonder limieten – inclusief import, zoekfunctie en AVG-proof opslag.",
     items: [
       { icon: "database", title: "Onbeperkt aantal klanten", text: "Zoveel klantdossiers als je salon nodig heeft – zonder toeslag per contact.", points: ["Geen klantlimiet", "Blijft snel", "Automatische back-ups"] },
-      { icon: "upload", title: "Gegevens importeren", text: "Zet bestaande klantenbestanden over vanuit Excel of CSV. Hulp bij de overstap inbegrepen.", points: ["Excel & CSV", "Velden koppelen", "Dubbele klanten herkennen"] },
+      { icon: "upload", title: "Gegevens importeren", text: "Zet bestaande klantenbestanden over als CSV-bestand – ook geëxporteerd uit Excel.", points: ["CSV-import", "Velden koppelen", "Dubbele klanten herkennen"] },
       { icon: "shield", title: "AVG-proof", text: "Opslag in de EU, versleuteld, inzage en verwijdering op verzoek.", points: ["EU-servers", "Versleuteld", "Recht op verwijdering"] },
       { icon: "search", title: "Snel zoeken", text: "Vind klanten op naam, telefoonnummer, e-mail of behandeling – in een paar seconden.", points: ["Zoeken in alle tekst", "Filters", "Sorteren"] },
       { icon: "camera", title: "Foto's & historie", text: "Voor- en nafoto's en behandelingen direct in het dossier, niet in losse mappen.", points: ["Foto's in het dossier", "Behandelhistorie", "Notities"] },
@@ -117,7 +117,7 @@ export const clientRecordsNl: ClientRecordsContent = {
       {
         question: "Kan ik mijn bestaande klantgegevens importeren?",
         answer:
-          "Ja. Je importeert klantgegevens gewoon uit Excel- of CSV-bestanden. Ons team helpt je gratis om je gegevens over te zetten vanuit je oude systeem.",
+          "Ja. Je importeert klantgegevens uit CSV-bestanden – lijsten uit Excel of je oude systeem exporteer je gewoon als CSV. Bij het importeren koppel je de velden en dubbele klanten worden herkend.",
       },
       {
         question: "Kan Treatflow automatisch berichten naar mijn klanten sturen?",

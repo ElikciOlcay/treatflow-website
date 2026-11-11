@@ -33,7 +33,7 @@ Laatst bijgewerkt: 2026-11-05. Taal: Nederlands. Dit bestand beschrijft de Neder
 - [Prijzen](https://www.treatflow.io/nl/prijzen): pakketten in detail vergeleken
 - Basic: €39/maand of €421/jaar (€35/maand). Klantenbeheer, formulieren met digitale handtekening, behandelverslagen incl. ingesproken notities, voor- en nafoto's, teamnotities en taken, shop en producten, statistieken, medewerkers en rollen, support via e-mail. Zonder agenda.
 - Booking: €59/maand of €637/jaar (€53/maand). Alles uit Basic plus agenda met een kolom per medewerker en ruimte, online boeken zonder commissie, wachtlijst, herinneringen per e-mail, klantworkflows, kortingscodes, meertalige boekingspagina, integraties (Google Agenda, Zapier, AI-assistenten), prioriteitssupport via e-mail en chat.
-- Alle prijzen in euro, excl. btw. 14 dagen gratis proberen, geen creditcard, geen opstartkosten, maandelijks opzegbaar, gratis overzetten van je gegevens.
+- Alle prijzen in euro, excl. btw. 14 dagen gratis proberen, geen creditcard, geen opstartkosten, maandelijks opzegbaar.
 - Treatflow Pay (optioneel): 2,69% per online betaling.
 
 ## Uitproberen en aanmelden
@@ -92,7 +92,7 @@ Ja. Alle gegevens worden versleuteld opgeslagen op EU-servers in Frankfurt (Duit
 Ja, met Treatflow Pay. Per behandeling kies je geen betaling, een aanbetaling of het volledige bedrag. De kosten zijn 2,69% per transactie.
 
 **Kan ik mijn bestaande klantgegevens importeren?**
-Ja. Ons supportteam zet je bestaande klantgegevens gratis over naar Treatflow.
+Ja. Je importeert bestaande klantenlijsten als CSV-bestand, met velden koppelen en herkenning van dubbele klanten.
 
 **Kan ik op elk moment opzeggen?**
 Ja. Bij maandelijkse betaling kun je altijd opzeggen tegen het einde van de factuurperiode. Er is geen minimale looptijd en je kunt al je gegevens exporteren.

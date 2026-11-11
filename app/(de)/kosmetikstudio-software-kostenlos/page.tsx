@@ -687,7 +687,7 @@ export default function KosmetikstudioSoftwareKostenlos() {
                 {
                   icon: Users,
                   title: 'Persönlicher Support',
-                  desc: '1:1 Betreuung auf Deutsch. Hilfe beim Einrichten, Datenumzug und im Alltag. Kein anonymes Ticket-System.',
+                  desc: '1:1 Betreuung auf Deutsch. Hilfe beim Einrichten und im Alltag. Kein anonymes Ticket-System.',
                   color: 'bg-purple-100 text-purple-600',
                 },
                 {

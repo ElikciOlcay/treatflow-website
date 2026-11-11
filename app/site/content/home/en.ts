@@ -74,7 +74,7 @@ export const homeEn: HomeContent = {
       "Appointments, clients, forms and treatment records in one easy-to-use app. Your team will pick it up straight away.",
     primaryCta: "Start your 14-day free trial",
     demoCta: "Book a demo",
-    checks: ["No credit card", "Set up in 2 minutes", "Free data migration"],
+    checks: ["No credit card", "Set up in 2 minutes", "Cancel anytime"],
     rating: "4.6/5 on Google",
     tested: { before: "Already tried by ", highlight: "500+ salons & clinics", after: "" },
     calendarLocale: "en-GB",
@@ -189,7 +189,7 @@ export const homeEn: HomeContent = {
     ariaLabel: "Personal support from day one",
     badge: "Personal support",
     title: "You won't be left on your own",
-    text: "From setup to moving your client data: our team supports you personally as you get started with Treatflow – so you and your team can work with confidence from day one.",
+    text: "From setup to your first questions: our team supports you personally as you get started with Treatflow – so you and your team can work with confidence from day one.",
     trialCta: "Start your 14-day free trial",
     demoCta: "Book a free demo",
     imageAlt: "Personal support from the Treatflow team",
@@ -256,7 +256,7 @@ export const homeEn: HomeContent = {
     },
     trial: {
       title: "Try free for 14 days",
-      text: "No credit card required • Cancel anytime • Free data migration",
+      text: "No credit card required • Cancel anytime",
       points: ["No setup fees", "Rolling monthly plan", "GDPR-compliant"],
     },
   },
@@ -312,7 +312,7 @@ export const homeEn: HomeContent = {
       {
         question: "Can I import my existing client data?",
         answer: [
-          "Yes – we'll move your data over free of charge. Our support team will help you transfer your existing client data safely into your ",
+          "Yes. You import existing client lists as a CSV file – with field mapping and duplicate detection – straight into your ",
           { text: "digital client records", href: { page: "client-records" } },
           ".",
         ],

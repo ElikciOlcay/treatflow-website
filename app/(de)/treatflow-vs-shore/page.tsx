@@ -76,7 +76,7 @@ const faqSchema = {
       name: 'Kann ich von Shore zu Treatflow wechseln?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja. Unser Team unterstützt dich kostenlos beim Umzug deiner Kundendaten. Du kannst Treatflow 14 Tage kostenlos testen.',
+        text: 'Ja. Kundenlisten importierst du als CSV-Datei. Du kannst Treatflow 14 Tage kostenlos testen.',
       },
     },
     {
@@ -199,7 +199,7 @@ const keyDifferences = [
   {
     icon: Users,
     title: 'Persönliche Betreuung',
-    desc: 'Bei Treatflow bekommst du 1:1 Betreuung und Hilfe beim Einrichten, Datenumzug und im Alltag. Kein anonymes Ticket-System, sondern echte Menschen.',
+    desc: 'Bei Treatflow bekommst du 1:1 Betreuung und Hilfe beim Einrichten und im Alltag. Kein anonymes Ticket-System, sondern echte Menschen.',
     color: 'bg-amber-100 text-amber-600',
   },
 ];

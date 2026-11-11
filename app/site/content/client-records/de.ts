@@ -84,7 +84,7 @@ export const clientRecordsDe: ClientRecordsContent = {
       {
         icon: "upload",
         title: "Bestehende Daten übernehmen",
-        text: "Du hast schon eine Kundenliste? Importiere sie einfach aus Excel oder CSV. Unser Team hilft dir beim Umzug.",
+        text: "Du hast schon eine Kundenliste? Importiere sie einfach als CSV-Datei, zum Beispiel aus Excel exportiert.",
       },
       {
         icon: "database",
@@ -96,7 +96,7 @@ export const clientRecordsDe: ClientRecordsContent = {
   howItWorks: {
     description: "In drei Schritten zur digitalen Kundenkartei.",
     steps: [
-      { title: "Kunden anlegen oder importieren", text: "Lege neue Kunden manuell an oder importiere deine bestehende Liste aus Excel oder CSV. Duplikate werden automatisch erkannt." },
+      { title: "Kunden anlegen oder importieren", text: "Lege neue Kunden manuell an oder importiere deine bestehende Liste als CSV-Datei. Duplikate werden automatisch erkannt." },
       { title: "Profil mit Infos füllen", text: "Kontaktdaten, Allergien, Notizen und Fotos im Profil speichern. Ausgefüllte Formulare landen automatisch dazu." },
       { title: "Beim nächsten Termin alles parat", text: "Öffne vor der Behandlung das Kundenprofil – du siehst sofort, was zuletzt gemacht wurde und worauf du achten musst." },
     ],
@@ -106,7 +106,7 @@ export const clientRecordsDe: ClientRecordsContent = {
     description: "Digitale Kundenkartei ohne Limit – inkl. Import, Suche und DSGVO.",
     items: [
       { icon: "database", title: "Unbegrenzte Kunden", text: "So viele Profile wie dein Studio braucht – ohne Aufpreis pro Kontakt.", points: ["Keine Kundenzahl-Grenze", "Bleibt schnell", "Automatische Backups"] },
-      { icon: "upload", title: "Daten-Import", text: "Bestehende Listen aus Excel oder CSV übernehmen. Hilfe beim Umzug inklusive.", points: ["Excel & CSV", "Feldzuordnung", "Duplikat-Erkennung"] },
+      { icon: "upload", title: "Daten-Import", text: "Bestehende Listen als CSV-Datei übernehmen – auch aus Excel exportiert.", points: ["CSV-Import", "Feldzuordnung", "Duplikat-Erkennung"] },
       { icon: "shield", title: "DSGVO-konform", text: "Speicherung in der EU, Verschlüsselung, Auskunft und Löschung auf Anfrage.", points: ["EU-Server", "Verschlüsselt", "Löschrecht"] },
       { icon: "search", title: "Schnelle Suche", text: "Finde Profile nach Name, Telefon, E-Mail oder Behandlung – in Sekunden.", points: ["Volltextsuche", "Filter", "Sortierung"] },
       { icon: "camera", title: "Fotos & Historie", text: "Vorher-Nachher-Bilder und Behandlungen direkt am Profil, nicht in extra Ordnern.", points: ["Fotos im Profil", "Behandlungshistorie", "Notizen"] },
@@ -139,7 +139,7 @@ export const clientRecordsDe: ClientRecordsContent = {
       {
         question: "Kann ich bestehende Kundendaten importieren?",
         answer:
-          "Ja. Treatflow unterstützt den Import von Kundendaten aus Excel- und CSV-Dateien. Unser Onboarding-Team hilft dir kostenlos beim Datenumzug von deinem bisherigen System.",
+          "Ja. Treatflow importiert Kundendaten aus CSV-Dateien – Listen aus Excel oder deinem bisherigen Programm exportierst du einfach als CSV. Beim Import ordnest du die Felder zu, Duplikate werden erkannt.",
       },
       {
         question: "Kann Treatflow automatische Nachrichten an meine Kunden senden?",

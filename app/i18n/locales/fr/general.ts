@@ -93,7 +93,7 @@ export const general: Omit<LocaleSiteContent, "coreFeatures" | "extraFeatures" |
       trustItems: [
         "Sans carte bancaire",
         "Prêt en 2 minutes",
-        "Migration des données offerte",
+        "Sans engagement",
         "Accompagnement personnalisé",
       ],
       studiosLabel: "Plus de 500 instituts",
@@ -335,7 +335,7 @@ export const general: Omit<LocaleSiteContent, "coreFeatures" | "extraFeatures" |
     },
     trialBox: {
       title: "14 jours d'essai gratuit",
-      text: "Sans carte bancaire • Résiliable à tout moment • Migration des données offerte",
+      text: "Sans carte bancaire • Résiliable à tout moment",
       points: ["Aucuns frais d'installation", "Résiliation mensuelle", "Conforme au RGPD"],
     },
     comparison: {
@@ -712,7 +712,7 @@ export const general: Omit<LocaleSiteContent, "coreFeatures" | "extraFeatures" |
         },
         {
           q: "Puis-je passer de Fresha à Treatflow ?",
-          a: "Oui. Nous vous aidons à migrer vos données clients. Vous pouvez tester Treatflow gratuitement pendant 14 jours, sans carte bancaire.",
+          a: "Oui. Vous importez vos listes clients sous forme de fichier CSV. Vous pouvez tester Treatflow gratuitement pendant 14 jours, sans carte bancaire.",
         },
       ],
       ctaTitle: "Vous préférez payer un logiciel plutôt qu'une part de chaque visite ?",

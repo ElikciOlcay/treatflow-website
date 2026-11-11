@@ -62,7 +62,7 @@ export const clientRecordsFr: ClientRecordsContent = {
       {
         icon: "upload",
         title: "Reprenez vos données existantes",
-        text: "Vous avez déjà une liste de clients ? Importez-la simplement depuis Excel ou un fichier CSV. Notre équipe vous accompagne dans la migration.",
+        text: "Vous avez déjà une liste de clients ? Importez-la simplement sous forme de fichier CSV, par exemple exporté depuis Excel.",
       },
       {
         icon: "database",
@@ -74,7 +74,7 @@ export const clientRecordsFr: ClientRecordsContent = {
   howItWorks: {
     description: "Trois étapes vers des fiches clients numériques.",
     steps: [
-      { title: "Ajouter ou importer vos clients", text: "Créez de nouveaux clients manuellement ou importez votre liste existante depuis Excel ou un fichier CSV. Les doublons sont détectés automatiquement." },
+      { title: "Ajouter ou importer vos clients", text: "Créez de nouveaux clients manuellement ou importez votre liste existante sous forme de fichier CSV. Les doublons sont détectés automatiquement." },
       { title: "Compléter la fiche", text: "Enregistrez coordonnées, allergies, notes et photos dans la fiche. Les formulaires remplis y sont ajoutés automatiquement." },
       { title: "Tout est prêt pour la prochaine visite", text: "Ouvrez la fiche client avant le soin – vous voyez immédiatement ce qui a été fait la dernière fois et à quoi faire attention." },
     ],
@@ -84,7 +84,7 @@ export const clientRecordsFr: ClientRecordsContent = {
     description: "Des fiches clients numériques sans limite – import, recherche et conformité RGPD compris.",
     items: [
       { icon: "database", title: "Clients illimités", text: "Autant de fiches que votre institut en a besoin – sans supplément par contact.", points: ["Aucune limite de clients", "Toujours rapide", "Sauvegardes automatiques"] },
-      { icon: "upload", title: "Import de données", text: "Reprenez vos listes existantes depuis Excel ou un fichier CSV. Accompagnement à la migration inclus.", points: ["Excel et CSV", "Correspondance des champs", "Détection des doublons"] },
+      { icon: "upload", title: "Import de données", text: "Reprenez vos listes existantes sous forme de fichier CSV, y compris exportées depuis Excel.", points: ["Import CSV", "Correspondance des champs", "Détection des doublons"] },
       { icon: "shield", title: "Conforme au RGPD", text: "Stockage dans l'UE, chiffrement, accès et suppression sur demande.", points: ["Serveurs dans l'UE", "Chiffré", "Droit à l'effacement"] },
       { icon: "search", title: "Recherche rapide", text: "Retrouvez une fiche par nom, téléphone, e-mail ou soin – en quelques secondes.", points: ["Recherche plein texte", "Filtres", "Tri"] },
       { icon: "camera", title: "Photos et historique", text: "Photos avant/après et soins directement dans la fiche, et non dans des dossiers séparés.", points: ["Photos dans la fiche", "Historique des soins", "Notes"] },
@@ -117,7 +117,7 @@ export const clientRecordsFr: ClientRecordsContent = {
       {
         question: "Puis-je importer mes données clients existantes ?",
         answer:
-          "Oui. Treatflow permet d'importer des données clients depuis des fichiers Excel et CSV. Notre équipe vous aide gratuitement à transférer vos données depuis votre ancien système.",
+          "Oui. Treatflow importe les données clients depuis des fichiers CSV : exportez simplement vos listes depuis Excel ou votre ancien logiciel au format CSV. Lors de l'import, vous associez les champs et les doublons sont détectés.",
       },
       {
         question: "Treatflow peut-il envoyer des messages automatiques à mes clients ?",

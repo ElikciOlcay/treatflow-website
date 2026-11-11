@@ -82,7 +82,7 @@ export const homeEs: HomeContent = {
       "Citas, clientes, formularios y documentación de tratamientos en una sola app, clara y sencilla. Tu equipo se maneja con ella desde el primer día.",
     primaryCta: "Prueba gratis 14 días",
     demoCta: "Reserva una demo",
-    checks: ["Sin tarjeta de crédito", "En marcha en 2 minutos", "Te pasamos tus datos gratis"],
+    checks: ["Sin tarjeta de crédito", "En marcha en 2 minutos", "Sin permanencia"],
     rating: "4,6/5 en Google",
     tested: { before: "Ya lo han probado ", highlight: "más de 500 centros", after: "" },
     calendarLocale: "es-ES",
@@ -197,7 +197,7 @@ export const homeEs: HomeContent = {
     ariaLabel: "Atención personal desde el primer día",
     badge: "Atención personal",
     title: "Te acompañamos desde el primer día",
-    text: "Desde la configuración hasta el traspaso de los datos de tus clientes: nuestro equipo te acompaña personalmente en tus primeros pasos con Treatflow, para que trabajes con seguridad desde el primer día.",
+    text: "Desde la configuración hasta tus primeras dudas: nuestro equipo te acompaña personalmente en tus primeros pasos con Treatflow, para que trabajes con seguridad desde el primer día.",
     trialCta: "Prueba gratis 14 días",
     demoCta: "Reserva una demo gratuita",
     imageAlt: "Atención personal del equipo de Treatflow",
@@ -264,7 +264,7 @@ export const homeEs: HomeContent = {
     },
     trial: {
       title: "14 días gratis",
-      text: "Sin tarjeta de crédito · Cancela cuando quieras · Migración de datos gratuita",
+      text: "Sin tarjeta de crédito · Cancela cuando quieras",
       points: ["Sin cuota de alta", "Sin permanencia", "Cumple el RGPD"],
     },
   },
@@ -320,7 +320,7 @@ export const homeEs: HomeContent = {
       {
         question: "¿Puedo importar mis datos de clientes actuales?",
         answer: [
-          "Sí, y la migración es gratuita. Nuestro equipo de soporte te ayuda a traspasar tus datos de clientes de forma segura a tus ",
+          "Sí. Importas tus listas de clientes como archivo CSV, con asignación de campos y detección de duplicados, directamente a tus ",
           { text: "fichas de cliente digitales", href: { page: "client-records" } },
           ".",
         ],

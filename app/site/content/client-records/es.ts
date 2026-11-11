@@ -62,7 +62,7 @@ export const clientRecordsEs: ClientRecordsContent = {
       {
         icon: "upload",
         title: "Trae tus datos actuales",
-        text: "¿Ya tienes una lista de clientes? Impórtala sin complicaciones desde Excel o CSV. Nuestro equipo te ayuda con la migración.",
+        text: "¿Ya tienes una lista de clientes? Impórtala sin complicaciones como archivo CSV, por ejemplo exportado desde Excel.",
       },
       {
         icon: "database",
@@ -74,7 +74,7 @@ export const clientRecordsEs: ClientRecordsContent = {
   howItWorks: {
     description: "Tus fichas de cliente digitales en tres pasos.",
     steps: [
-      { title: "Añade o importa clientes", text: "Da de alta clientes a mano o importa tu lista actual desde Excel o CSV. Los duplicados se detectan solos." },
+      { title: "Añade o importa clientes", text: "Da de alta clientes a mano o importa tu lista actual como archivo CSV. Los duplicados se detectan solos." },
       { title: "Completa la ficha", text: "Guarda en la ficha los datos de contacto, alergias, notas y fotos. Los formularios rellenados se añaden automáticamente." },
       { title: "Todo a punto para la próxima visita", text: "Abre la ficha antes del tratamiento: ves al momento qué se hizo la última vez y qué debes tener en cuenta." },
     ],
@@ -84,7 +84,7 @@ export const clientRecordsEs: ClientRecordsContent = {
     description: "Fichas de cliente digitales sin límites, con importación, búsqueda y conformes al RGPD.",
     items: [
       { icon: "database", title: "Clientes ilimitados", text: "Todas las fichas que necesite tu centro, sin recargo por contacto.", points: ["Sin límite de clientes", "Siempre rápido", "Copias de seguridad automáticas"] },
-      { icon: "upload", title: "Importación de datos", text: "Trae tus listas actuales desde Excel o CSV. La ayuda con la migración está incluida.", points: ["Excel y CSV", "Asignación de campos", "Detección de duplicados"] },
+      { icon: "upload", title: "Importación de datos", text: "Trae tus listas actuales como archivo CSV, también exportadas desde Excel.", points: ["Importación CSV", "Asignación de campos", "Detección de duplicados"] },
       { icon: "shield", title: "Conforme al RGPD", text: "Datos alojados en la UE y cifrados, con acceso y supresión a petición del cliente.", points: ["Servidores en la UE", "Cifrado", "Derecho de supresión"] },
       { icon: "search", title: "Búsqueda rápida", text: "Encuentra fichas por nombre, teléfono, email o tratamiento en segundos.", points: ["Búsqueda de texto completo", "Filtros", "Ordenación"] },
       { icon: "camera", title: "Fotos e historial", text: "Fotos de antes y después y tratamientos directamente en la ficha, no en carpetas sueltas.", points: ["Fotos en la ficha", "Historial de tratamientos", "Notas"] },
@@ -117,7 +117,7 @@ export const clientRecordsEs: ClientRecordsContent = {
       {
         question: "¿Puedo importar los datos de mis clientes actuales?",
         answer:
-          "Sí. Treatflow permite importar datos de clientes desde archivos Excel y CSV, y nuestro equipo de puesta en marcha te ayuda gratis a migrar los datos de tu programa anterior.",
+          "Sí. Treatflow importa datos de clientes desde archivos CSV: exporta tus listas de Excel o de tu programa anterior como CSV. Al importar asignas los campos y los duplicados se detectan solos.",
       },
       {
         question: "¿Puede Treatflow enviar mensajes automáticos a mis clientes?",

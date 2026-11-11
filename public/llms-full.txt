@@ -42,7 +42,7 @@ Beauty salons and beauty institutes, aesthetic clinics and aesthetic medicine pr
 - Team: staff and roles, team notes and tasks, statistics
 - Integrations: Google Calendar, Zapier, AI assistants (e.g. Claude, ChatGPT via MCP)
 - Salon website service (custom website built by Treatflow)
-- Free data migration; works in the browser on computer, tablet and smartphone
+- Works in the browser on computer, tablet and smartphone
 
 ## Feature availability by market
 
