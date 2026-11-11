@@ -46,6 +46,17 @@ export const featuresFr: FeaturesOverviewContent = {
         highlights: ["Colonnes collaborateurs et cabines", "Taux d'occupation en un coup d'œil", "Glisser-déposer"],
       },
       {
+        href: { page: "shift-planner" },
+        icon: "calendar-clock",
+        title: "Planning d'équipe",
+        description:
+          "Planifiez créneaux, congés et absences semaine par semaine. La réservation en ligne n'affiche que les horaires où quelqu'un travaille.",
+        color: "text-teal-600",
+        bg: "bg-teal-50",
+        border: "border-teal-200 hover:border-teal-400",
+        highlights: ["Modèles de créneaux", "Congés et maladie", "Réservation selon le planning"],
+      },
+      {
         href: { page: "treatflow-pay" },
         icon: "wallet",
         title: "Treatflow Pay",

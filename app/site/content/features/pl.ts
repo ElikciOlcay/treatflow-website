@@ -47,6 +47,17 @@ export const featuresPl: FeaturesOverviewContent = {
         highlights: ["Kolumny pracowników i gabinetów", "Obłożenie na pierwszy rzut oka", "Przeciągnij i upuść"],
       },
       {
+        href: { page: "shift-planner" },
+        icon: "calendar-clock",
+        title: "Planer grafiku",
+        description:
+          "Planuj zmiany, urlopy i nieobecności na każdy tydzień. Rezerwacja online pokazuje tylko godziny, w których ktoś pracuje.",
+        color: "text-teal-600",
+        bg: "bg-teal-50",
+        border: "border-teal-200 hover:border-teal-400",
+        highlights: ["Szablony zmian", "Urlop i choroba", "Rezerwacje według grafiku"],
+      },
+      {
         href: { page: "treatflow-pay" },
         icon: "wallet",
         title: "Treatflow Pay",

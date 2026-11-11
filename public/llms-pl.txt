@@ -15,6 +15,7 @@ Ostatnia aktualizacja: 2026-11-05. Język: polski. Ten plik opisuje polską wers
 ## Najważniejsze funkcje
 
 - [Kalendarz wizyt](https://www.treatflow.io/pl/kalendarz-wizyt): widok dnia, tygodnia i miesiąca z kolumnami dla pracowników i gabinetów
+- [Planer grafiku](https://www.treatflow.io/pl/grafik-pracy): zmiany, urlopy i nieobecności na każdy tydzień; rezerwacja online pokazuje tylko godziny w zaplanowanych zmianach
 - [Rezerwacje online](https://www.treatflow.io/pl/rezerwacje-online): własny link do rezerwacji 24/7, bez prowizji od rezerwacji
 - [Kartoteka klientów](https://www.treatflow.io/pl/kartoteka-klientow): profile klientów z historią zabiegów, notatkami i zdjęciami
 - [Formularze](https://www.treatflow.io/pl/formularze): karta wywiadu i zgody na zabieg z podpisem elektronicznym, wypełniane online przed wizytą; biblioteka gotowych formularzy i edytor „przeciągnij i upuść”

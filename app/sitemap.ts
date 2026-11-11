@@ -119,6 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         internationalEntry('/tattoo-studio-software', 'tattoo-studio-software', 0.9, 'de'),
         internationalEntry('/nachrichtenautomatisierung', 'messaging', 0.8, 'de'),
         internationalEntry('/kunden-workflows', 'customer-workflows', 0.8, 'de'),
+        internationalEntry('/schichtplaner', 'shift-planner', 0.8, 'de'),
         // Neue Branchen-Seiten
         {
             url: `${baseUrl}/fusspflege-software`,
@@ -268,6 +269,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Internationale Seiten (kuratiert). Blog ist bewusst NICHT enthalten.
     const featureAndIndustryKeys: { key: SeoPageKey; priority: number }[] = [
         { key: 'appointment-calendar', priority: 0.8 },
+        { key: 'shift-planner', priority: 0.8 },
         { key: 'online-booking', priority: 0.9 },
         { key: 'client-records', priority: 0.9 },
         { key: 'forms', priority: 0.8 },

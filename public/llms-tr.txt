@@ -15,6 +15,7 @@ Son güncelleme: 2026-11-05. Dil: Türkçe. Bu dosya Türkçe web sitesini (http
 ## Temel özellikler
 
 - [Randevu takvimi](https://www.treatflow.io/tr/appointment-calendar): personel ve oda sütunlarıyla günlük, haftalık ve aylık görünüm
+- [Vardiya planlayıcı](https://www.treatflow.io/tr/shift-planner): vardiyaları, izinleri ve devamsızlıkları haftalık planlama; online randevu yalnızca planlı vardiyalardaki saatleri gösterir
 - [Online randevu sistemi](https://www.treatflow.io/tr/online-randevu-sistemi): size özel bağlantıyla 7/24 randevu, randevu başına komisyon yok
 - [Müşteri takip programı](https://www.treatflow.io/tr/musteri-takip-programi): müşteri kartı, işlem geçmişi, notlar ve fotoğraflar tek yerde
 - [Onam formları](https://www.treatflow.io/tr/forms): dijital imzalı anamnez ve onam formları, randevudan önce bağlantıyla doldurulur; hazır form şablonları ve sürükle-bırak form editörü

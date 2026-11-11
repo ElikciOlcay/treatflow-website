@@ -14,6 +14,7 @@ export const footerTr: FooterContent = {
           title: "Özellikler",
           links: [
             { href: { page: "appointment-calendar" }, label: "Randevu takvimi" },
+            { href: { page: "shift-planner" }, label: "Vardiya planlayıcı" },
             { href: { page: "online-booking" }, label: "Online randevu" },
             { href: { page: "client-records" }, label: "Müşteri takibi" },
             { href: { page: "forms" }, label: "Onam formları" },

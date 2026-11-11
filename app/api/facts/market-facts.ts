@@ -12,6 +12,7 @@ import { getMessagingContent } from "@/app/site/content/messaging";
 import { getNavigationContent } from "@/app/site/content/navigation";
 import { getOnlineBookingContent } from "@/app/site/content/online-booking";
 import { getShopContent } from "@/app/site/content/shop";
+import { getShiftPlannerContent } from "@/app/site/content/shift-planner";
 import { gatedTexts, richTextToPlain, type SiteMarket } from "@/app/site/content/shared";
 import { getStudioWebsiteContent } from "@/app/site/content/studio-website";
 import { getTreatflowPayContent } from "@/app/site/content/treatflow-pay";
@@ -33,6 +34,7 @@ const abs = (path: string | null) => (path === null ? null : `${BASE_URL}${path 
 /** Meta-Beschreibung der Funktionsseite (Kurzbeschreibung für KI-Antworten). */
 const PAGE_SUMMARY: Partial<Record<SitePageKey, (m: SiteMarket) => string | undefined>> = {
   "appointment-calendar": (m) => getAppointmentCalendarContent(m).meta.description,
+  "shift-planner": (m) => getShiftPlannerContent(m).meta.description,
   "online-booking": (m) => getOnlineBookingContent(m).meta.description,
   "client-records": (m) => getClientRecordsContent(m).meta.description,
   forms: (m) => getFormsContent(m).meta.description,

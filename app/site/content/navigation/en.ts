@@ -12,6 +12,7 @@ export const navigationEn: NavigationContent = {
       title: "Appointments",
       items: [
         { href: { page: "appointment-calendar" }, label: "Appointment calendar", desc: "Daily, weekly and monthly views", icon: "calendar", color: "text-indigo-600 bg-indigo-100" },
+        { href: { page: "shift-planner" }, label: "Shift planner", desc: "Shifts, holidays & absences", icon: "calendar-clock", color: "text-teal-600 bg-teal-100" },
         { href: { page: "online-booking" }, label: "Online booking", desc: "Your own booking link, open 24/7", icon: "link", color: "text-rose-600 bg-rose-100" },
         { href: { page: "messaging" }, label: "Reminders", desc: "Automated email reminders", icon: "bell", color: "text-purple-600 bg-purple-100" },
         { href: { page: "customer-workflows" }, label: "Client workflows", desc: "Multi-step automations", icon: "workflow", color: "text-indigo-600 bg-indigo-100" },

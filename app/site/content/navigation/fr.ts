@@ -12,6 +12,7 @@ export const navigationFr: NavigationContent = {
       title: "Rendez-vous",
       items: [
         { href: { page: "appointment-calendar" }, label: "Agenda et planning", desc: "Vues jour, semaine et mois", icon: "calendar", color: "text-indigo-600 bg-indigo-100" },
+        { href: { page: "shift-planner" }, label: "Planning d'équipe", desc: "Créneaux, congés et absences", icon: "calendar-clock", color: "text-teal-600 bg-teal-100" },
         { href: { page: "online-booking" }, label: "Réservation en ligne", desc: "Votre page de réservation 24h/24", icon: "link", color: "text-rose-600 bg-rose-100" },
         { href: { page: "messaging" }, label: "Rappels", desc: "Rappels automatiques par e-mail", icon: "bell", color: "text-purple-600 bg-purple-100" },
         { href: { page: "customer-workflows" }, label: "Parcours clients", desc: "Automatisations en plusieurs étapes", icon: "workflow", color: "text-indigo-600 bg-indigo-100" },

@@ -18,6 +18,7 @@ export type SeoPageKey =
   | "contact"
   | "early-access"
   | "appointment-calendar"
+  | "shift-planner"
   | "online-booking"
   | "client-records"
   | "consent-forms"
@@ -61,6 +62,7 @@ const DE_SLUGS: Partial<Record<SeoPageKey, string>> = {
   privacy: "datenschutz",
   terms: "agb",
   "appointment-calendar": "terminkalender",
+  "shift-planner": "schichtplaner",
   "online-booking": "online-buchungen",
   "client-records": "kundenverwaltung",
   forms: "formulare",
@@ -140,6 +142,7 @@ export const seoPageSlugs: Record<SeoPageKey, PageSlugMap> = {
   privacy: buildSlugMap("privacy"),
   terms: buildSlugMap("terms"),
   "appointment-calendar": buildSlugMap("appointment-calendar"),
+  "shift-planner": buildSlugMap("shift-planner"),
   "online-booking": buildSlugMap("online-booking"),
   "client-records": buildSlugMap("client-records"),
   forms: buildSlugMap("forms"),

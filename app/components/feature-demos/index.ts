@@ -9,6 +9,7 @@ import AppointmentCalendarDemo from './AppointmentCalendarDemo';
 import OnlineBookingDemo from './OnlineBookingDemo';
 import ClientRecordsDemo from './ClientRecordsDemo';
 import TreatmentDocumentationDemo from './TreatmentDocumentationDemo';
+import ShiftPlannerDemo from './ShiftPlannerDemo';
 
 /**
  * Animierte Hero-Szene je Funktionsseite (alle Sprachen). Seiten ohne Eintrag zeigen weiter das Hero-Bild.
@@ -23,6 +24,7 @@ export const featureDemos: Partial<Record<SitePageKey, ComponentType<FeatureDemo
     'online-booking': OnlineBookingDemo,
     'client-records': ClientRecordsDemo,
     'treatment-documentation': TreatmentDocumentationDemo,
+    'shift-planner': ShiftPlannerDemo,
 };
 
 /** Überschrift über dem Screenshot, wenn der Hero eine Szene zeigt. */

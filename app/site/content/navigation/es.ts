@@ -11,6 +11,7 @@ export const navigationEs: NavigationContent = {
       title: "Citas",
       items: [
         { href: { page: "appointment-calendar" }, label: "Agenda de citas", desc: "Vista por día, semana y mes", icon: "calendar", color: "text-indigo-600 bg-indigo-100" },
+        { href: { page: "shift-planner" }, label: "Planificador de turnos", desc: "Turnos, vacaciones y ausencias", icon: "calendar-clock", color: "text-teal-600 bg-teal-100" },
         { href: { page: "online-booking" }, label: "Reservas online", desc: "Tu enlace de reservas, 24/7", icon: "link", color: "text-rose-600 bg-rose-100" },
         { href: { page: "messaging" }, label: "Recordatorios", desc: "Recordatorios automáticos por email", icon: "bell", color: "text-purple-600 bg-purple-100" },
         { href: { page: "customer-workflows" }, label: "Flujos de clientes", desc: "Seguimientos automáticos paso a paso", icon: "workflow", color: "text-indigo-600 bg-indigo-100" },

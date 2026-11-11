@@ -15,6 +15,7 @@ Last updated: 2026-11-05. Language: English. This file describes the English web
 ## Core features
 
 - [Appointment calendar](https://www.treatflow.io/en/appointment-calendar): daily, weekly and monthly views with columns per staff member and room
+- [Shift planner](https://www.treatflow.io/en/shift-planner): plan shifts, holidays and absences week by week; online booking only shows times within planned shifts
 - [Online booking](https://www.treatflow.io/en/online-booking): your own booking link, open 24/7, no commission per booking
 - [Client records](https://www.treatflow.io/en/client-records): client profiles with treatment history, notes and photos
 - [Forms](https://www.treatflow.io/en/forms): digital consultation and consent forms with digital signature, filled in before the appointment via a link; form marketplace and drag-and-drop form editor

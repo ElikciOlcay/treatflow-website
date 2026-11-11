@@ -15,6 +15,7 @@ export const footerEn: FooterContent = {
           title: "Features",
           links: [
             { href: { page: "appointment-calendar" }, label: "Appointment calendar" },
+            { href: { page: "shift-planner" }, label: "Shift planner" },
             { href: { page: "online-booking" }, label: "Online booking" },
             { href: { page: "treatflow-pay" }, label: "Treatflow Pay", feature: "pay" },
             { href: { page: "client-records" }, label: "Client records" },

@@ -15,6 +15,7 @@ Stand: 2026-11-09. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website
 ## Funktionen
 
 - [Terminkalender](https://www.treatflow.io/terminkalender): Tages-, Wochen- und Monatsansicht mit Spalten pro Mitarbeiter und Raum, Schutz vor Doppelbelegungen
+- [Schichtplaner](https://www.treatflow.io/schichtplaner): Schichten, Urlaub und Abwesenheiten pro Woche planen; die Online-Buchung zeigt nur Zeiten innerhalb geplanter Schichten
 - [Online-Buchungen](https://www.treatflow.io/online-buchungen): persönlicher Buchungslink, 24/7, ohne Provision pro Buchung
 - [Kundenverwaltung](https://www.treatflow.io/kundenverwaltung): Kundenprofile mit Behandlungshistorie, Notizen und Fotos
 - [Kundenkartei Software](https://www.treatflow.io/kundenkartei-software): digitale Kundenkartei statt Papier oder Excel
