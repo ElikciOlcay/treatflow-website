@@ -47,6 +47,17 @@ export const featuresIt: FeaturesOverviewContent = {
         highlights: ["Colonne per operatori e cabine", "Occupazione sotto controllo", "Drag & drop"],
       },
       {
+        href: { page: "shift-planner" },
+        icon: "calendar-clock",
+        title: "Pianificatore turni",
+        description:
+          "Pianifica turni, ferie e assenze settimana per settimana. La prenotazione online mostra solo gli orari in cui qualcuno è in turno.",
+        color: "text-teal-600",
+        bg: "bg-teal-50",
+        border: "border-teal-200 hover:border-teal-400",
+        highlights: ["Modelli di turno", "Ferie e malattia", "Prenotazioni secondo il piano"],
+      },
+      {
         href: { page: "treatflow-pay" },
         icon: "wallet",
         title: "Treatflow Pay",

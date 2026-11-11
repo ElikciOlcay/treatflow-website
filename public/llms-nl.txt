@@ -15,6 +15,7 @@ Laatst bijgewerkt: 2026-11-05. Taal: Nederlands. Dit bestand beschrijft de Neder
 ## Belangrijkste functies
 
 - [Online agenda](https://www.treatflow.io/nl/afsprakenkalender): dag-, week- en maandoverzicht met een kolom per medewerker en ruimte
+- [Roosterplanner](https://www.treatflow.io/nl/roosterplanner): diensten, vakantie en afwezigheid per week plannen; online boeken toont alleen tijden binnen geplande diensten
 - [Online boeken](https://www.treatflow.io/nl/online-boeken): je eigen boekingslink, 24/7 open, geen commissie per boeking
 - [Klantdossiers](https://www.treatflow.io/nl/klantenbeheer): klantgegevens met behandelhistorie, notities en foto's
 - [Formulieren](https://www.treatflow.io/nl/formulieren): digitale intake- en toestemmingsformulieren met digitale handtekening, vooraf ingevuld via een link; formulieren-Marketplace en AI-formuliergenerator

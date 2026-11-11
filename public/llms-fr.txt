@@ -15,6 +15,7 @@ Dernière mise à jour : 2026-11-05. Langue : français. Ce fichier décrit le s
 ## Fonctionnalités principales
 
 - [Agenda et planning](https://www.treatflow.io/fr/calendrier-rendez-vous) : vues jour, semaine et mois avec colonnes par collaborateur et cabine
+- [Planning d'équipe](https://www.treatflow.io/fr/planning-equipe) : créneaux, congés et absences semaine par semaine ; la réservation en ligne n'affiche que les horaires des créneaux planifiés
 - [Réservation en ligne](https://www.treatflow.io/fr/reservation-en-ligne) : votre page de réservation 24h/24, sans commission par rendez-vous
 - [Fiches clients](https://www.treatflow.io/fr/fiches-clients) : profils clients avec historique des soins, notes et photos
 - [Formulaires](https://www.treatflow.io/fr/formulaires) : questionnaires et consentements numériques avec signature électronique, remplis à l'avance via un lien ; bibliothèque de formulaires et générateur par IA

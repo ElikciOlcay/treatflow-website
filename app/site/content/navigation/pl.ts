@@ -12,6 +12,7 @@ export const navigationPl: NavigationContent = {
       title: "Wizyty",
       items: [
         { href: { page: "appointment-calendar" }, label: "Kalendarz wizyt", desc: "Widok dnia, tygodnia i miesiąca", icon: "calendar", color: "text-indigo-600 bg-indigo-100" },
+        { href: { page: "shift-planner" }, label: "Planer grafiku", desc: "Zmiany, urlopy i nieobecności", icon: "calendar-clock", color: "text-teal-600 bg-teal-100" },
         { href: { page: "online-booking" }, label: "Rezerwacje online", desc: "Własny link do rezerwacji 24/7", icon: "link", color: "text-rose-600 bg-rose-100" },
         { href: { page: "messaging" }, label: "Przypomnienia", desc: "Automatyczne przypomnienia e-mail", icon: "bell", color: "text-purple-600 bg-purple-100" },
         { href: { page: "customer-workflows" }, label: "Automatyzacje dla klientów", desc: "Opieka po wizycie na autopilocie", icon: "workflow", color: "text-indigo-600 bg-indigo-100" },

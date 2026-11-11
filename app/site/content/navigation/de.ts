@@ -8,6 +8,7 @@ export const navigationDe: NavigationContent = {
       title: "Termine",
       items: [
         { href: { page: "appointment-calendar" }, label: "Terminkalender", desc: "Tages-, Wochen- und Monatsansicht", icon: "calendar", color: "text-indigo-600 bg-indigo-100" },
+        { href: { page: "shift-planner" }, label: "Schichtplaner", desc: "Schichten, Urlaub & Abwesenheiten", icon: "calendar-clock", color: "text-teal-600 bg-teal-100" },
         { href: { page: "online-booking" }, label: "Online-Buchungen", desc: "Persönlicher Buchungslink 24/7", icon: "link", color: "text-rose-600 bg-rose-100" },
         { href: { page: "messaging" }, label: "Nachrichten", desc: "WhatsApp und E-Mail automatisiert", icon: "bell", color: "text-purple-600 bg-purple-100" },
         { href: { page: "customer-workflows" }, label: "Kunden-Workflows", desc: "Mehrstufige Automationen", icon: "workflow", color: "text-indigo-600 bg-indigo-100" },

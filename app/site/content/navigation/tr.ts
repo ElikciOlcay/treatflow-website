@@ -12,6 +12,7 @@ export const navigationTr: NavigationContent = {
       title: "Randevular",
       items: [
         { href: { page: "appointment-calendar" }, label: "Randevu takvimi", desc: "Günlük, haftalık ve aylık görünüm", icon: "calendar", color: "text-indigo-600 bg-indigo-100" },
+        { href: { page: "shift-planner" }, label: "Vardiya planlayıcı", desc: "Vardiyalar, izinler ve devamsızlıklar", icon: "calendar-clock", color: "text-teal-600 bg-teal-100" },
         { href: { page: "online-booking" }, label: "Online randevu", desc: "Size özel bağlantıyla 7/24 randevu", icon: "link", color: "text-rose-600 bg-rose-100" },
         { href: { page: "messaging" }, label: "Hatırlatmalar", desc: "Otomatik e-posta hatırlatmaları", icon: "bell", color: "text-purple-600 bg-purple-100" },
         { href: { page: "customer-workflows" }, label: "Müşteri otomasyonları", desc: "Çok adımlı otomatik akışlar", icon: "workflow", color: "text-indigo-600 bg-indigo-100" },

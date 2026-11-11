@@ -12,6 +12,7 @@ export const navigationNl: NavigationContent = {
       title: "Afspraken",
       items: [
         { href: { page: "appointment-calendar" }, label: "Online agenda", desc: "Dag-, week- en maandoverzicht", icon: "calendar", color: "text-indigo-600 bg-indigo-100" },
+        { href: { page: "shift-planner" }, label: "Roosterplanner", desc: "Diensten, vakantie & afwezigheid", icon: "calendar-clock", color: "text-teal-600 bg-teal-100" },
         { href: { page: "online-booking" }, label: "Online boeken", desc: "Je eigen boekingslink, 24/7 open", icon: "link", color: "text-rose-600 bg-rose-100" },
         { href: { page: "messaging" }, label: "Herinneringen", desc: "Automatische afspraakherinneringen per e-mail", icon: "bell", color: "text-purple-600 bg-purple-100" },
         { href: { page: "customer-workflows" }, label: "Klantworkflows", desc: "Automatische nazorg en opvolging", icon: "workflow", color: "text-indigo-600 bg-indigo-100" },

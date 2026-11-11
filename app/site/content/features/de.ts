@@ -57,6 +57,17 @@ export const featuresDe: FeaturesOverviewContent = {
         highlights: ["Mitarbeiter- & Raumspalten", "Auslastung im Blick", "Drag & Drop"],
       },
       {
+        href: { page: "shift-planner" },
+        icon: "calendar-clock",
+        title: "Schichtplaner",
+        description:
+          "Plane Schichten, Urlaub und Abwesenheiten pro Woche. Die Online-Buchung zeigt nur Zeiten, in denen jemand eingeplant ist.",
+        color: "text-teal-600",
+        bg: "bg-teal-50",
+        border: "border-teal-200 hover:border-teal-400",
+        highlights: ["Schichtvorlagen", "Urlaub & Krankheit", "Online-Buchung nach Plan"],
+      },
+      {
         href: { page: "point-of-sale" },
         icon: "receipt",
         title: "Kassensystem",

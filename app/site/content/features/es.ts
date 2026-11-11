@@ -47,6 +47,17 @@ export const featuresEs: FeaturesOverviewContent = {
         highlights: ["Columnas por profesional y cabina", "Ocupación de un vistazo", "Arrastrar y soltar"],
       },
       {
+        href: { page: "shift-planner" },
+        icon: "calendar-clock",
+        title: "Planificador de turnos",
+        description:
+          "Planifica turnos, vacaciones y ausencias semana a semana. La reserva online solo muestra horas en las que alguien está de turno.",
+        color: "text-teal-600",
+        bg: "bg-teal-50",
+        border: "border-teal-200 hover:border-teal-400",
+        highlights: ["Plantillas de turno", "Vacaciones y bajas", "Reservas según el cuadrante"],
+      },
+      {
         href: { page: "treatflow-pay" },
         icon: "wallet",
         title: "Treatflow Pay",

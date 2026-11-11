@@ -15,6 +15,7 @@
 ## Funciones principales
 
 - [Agenda de citas](https://www.treatflow.io/es/calendario-citas): vista por día, semana y mes con columnas por profesional y cabina
+- [Planificador de turnos](https://www.treatflow.io/es/cuadrante-turnos): turnos, vacaciones y ausencias semana a semana; la reserva online solo muestra horas dentro de los turnos
 - [Reservas online](https://www.treatflow.io/es/reservas-online): tu enlace de reservas, 24/7, sin comisión por reserva
 - [Fichas de cliente](https://www.treatflow.io/es/fichas-clientes): datos, historial de tratamientos, notas y fotos
 - [Formularios](https://www.treatflow.io/es/formularios): anamnesis y consentimientos digitales con firma digital, rellenados antes de la cita desde un enlace; marketplace de formularios y generador con IA

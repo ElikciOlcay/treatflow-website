@@ -40,6 +40,7 @@ const SITE_PAGES = {
   "try-features": { seo: "try-features" },
   "try-forms": { seo: "try-forms" },
   "appointment-calendar": { seo: "appointment-calendar" },
+  "shift-planner": { seo: "shift-planner" },
   "online-booking": { seo: "online-booking" },
   "client-records": { seo: "client-records" },
   forms: { seo: "forms" },

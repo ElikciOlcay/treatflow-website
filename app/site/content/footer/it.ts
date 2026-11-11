@@ -15,6 +15,7 @@ export const footerIt: FooterContent = {
           title: "Funzioni",
           links: [
             { href: { page: "appointment-calendar" }, label: "Agenda appuntamenti" },
+            { href: { page: "shift-planner" }, label: "Pianificatore turni" },
             { href: { page: "online-booking" }, label: "Prenotazioni online" },
             { href: { page: "treatflow-pay" }, label: "Treatflow Pay", feature: "pay" },
             { href: { page: "client-records" }, label: "Schede clienti" },

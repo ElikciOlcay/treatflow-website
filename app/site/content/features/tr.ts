@@ -49,6 +49,17 @@ export const featuresTr: FeaturesOverviewContent = {
         highlights: ["Personel ve oda sütunları", "Doluluk tek bakışta", "Sürükle-bırak"],
       },
       {
+        href: { page: "shift-planner" },
+        icon: "calendar-clock",
+        title: "Vardiya planlayıcı",
+        description:
+          "Vardiyaları, izinleri ve devamsızlıkları haftalık planlayın. Online randevu yalnızca birinin vardiyada olduğu saatleri gösterir.",
+        color: "text-teal-600",
+        bg: "bg-teal-50",
+        border: "border-teal-200 hover:border-teal-400",
+        highlights: ["Vardiya şablonları", "İzin ve hastalık", "Plana göre randevu"],
+      },
+      {
         href: { page: "online-booking" },
         icon: "link",
         title: "Online randevu",

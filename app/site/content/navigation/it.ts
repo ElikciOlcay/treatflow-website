@@ -11,6 +11,7 @@ export const navigationIt: NavigationContent = {
       title: "Appuntamenti",
       items: [
         { href: { page: "appointment-calendar" }, label: "Agenda appuntamenti", desc: "Vista giornaliera, settimanale e mensile", icon: "calendar", color: "text-indigo-600 bg-indigo-100" },
+        { href: { page: "shift-planner" }, label: "Pianificatore turni", desc: "Turni, ferie e assenze", icon: "calendar-clock", color: "text-teal-600 bg-teal-100" },
         { href: { page: "online-booking" }, label: "Prenotazioni online", desc: "Il tuo link di prenotazione, attivo 24/7", icon: "link", color: "text-rose-600 bg-rose-100" },
         { href: { page: "messaging" }, label: "Promemoria", desc: "Promemoria automatici via email", icon: "bell", color: "text-purple-600 bg-purple-100" },
         { href: { page: "customer-workflows" }, label: "Flussi clienti", desc: "Follow-up automatici in più passaggi", icon: "workflow", color: "text-indigo-600 bg-indigo-100" },

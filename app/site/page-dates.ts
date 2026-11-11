@@ -9,6 +9,7 @@ import { getMessagingContent } from "@/app/site/content/messaging";
 import { getOnlineBookingContent } from "@/app/site/content/online-booking";
 import { getPricingPageContent } from "@/app/site/content/pricing";
 import type { SiteMarket } from "@/app/site/content/shared";
+import { getShiftPlannerContent } from "@/app/site/content/shift-planner";
 import { getTreatflowPayContent } from "@/app/site/content/treatflow-pay";
 import { getTreatmentDocumentationContent } from "@/app/site/content/treatment-documentation";
 
@@ -22,6 +23,7 @@ const PHASE1_UPDATED = "2026-11-05";
 const DATED: Partial<Record<SeoPageKey, (market: SiteMarket) => string | undefined>> = {
   pricing: (m) => getPricingPageContent(m).dates.modified,
   "appointment-calendar": (m) => getAppointmentCalendarContent(m).dates.modified,
+  "shift-planner": (m) => getShiftPlannerContent(m).dates.modified,
   "online-booking": (m) => getOnlineBookingContent(m).dates.modified,
   "client-records": (m) => getClientRecordsContent(m).dates.modified,
   forms: (m) => getFormsContent(m).dates.modified,

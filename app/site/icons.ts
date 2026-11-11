@@ -60,6 +60,8 @@ import {
   ShieldCheck,
   Bot,
   Building2,
+  CalendarClock,
+  Plane,
   type LucideIcon,
 } from "lucide-react";
 
@@ -130,6 +132,8 @@ export const siteIcons = {
   "shield-check": ShieldCheck,
   bot: Bot,
   building: Building2,
+  "calendar-clock": CalendarClock,
+  plane: Plane,
 } satisfies Record<string, LucideIcon>;
 
 export type SiteIconName = keyof typeof siteIcons;

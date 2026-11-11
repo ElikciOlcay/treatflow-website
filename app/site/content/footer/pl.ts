@@ -15,6 +15,7 @@ export const footerPl: FooterContent = {
           title: "Funkcje",
           links: [
             { href: { page: "appointment-calendar" }, label: "Kalendarz wizyt" },
+            { href: { page: "shift-planner" }, label: "Planer grafiku" },
             { href: { page: "online-booking" }, label: "Rezerwacje online" },
             { href: { page: "treatflow-pay" }, label: "Treatflow Pay", feature: "pay" },
             { href: { page: "client-records" }, label: "Kartoteka klientów" },

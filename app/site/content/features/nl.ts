@@ -47,6 +47,17 @@ export const featuresNl: FeaturesOverviewContent = {
         highlights: ["Kolommen per medewerker en ruimte", "Bezetting in één oogopslag", "Drag-and-drop"],
       },
       {
+        href: { page: "shift-planner" },
+        icon: "calendar-clock",
+        title: "Roosterplanner",
+        description:
+          "Plan diensten, vakantie en afwezigheid per week. Online boeken toont alleen tijden waarin iemand is ingeroosterd.",
+        color: "text-teal-600",
+        bg: "bg-teal-50",
+        border: "border-teal-200 hover:border-teal-400",
+        highlights: ["Dienstsjablonen", "Vakantie & ziekte", "Boeken volgens rooster"],
+      },
+      {
         href: { page: "treatflow-pay" },
         icon: "wallet",
         title: "Treatflow Pay",

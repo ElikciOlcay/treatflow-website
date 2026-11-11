@@ -48,6 +48,17 @@ export const featuresEn: FeaturesOverviewContent = {
         highlights: ["Staff & room columns", "Utilisation at a glance", "Drag & drop"],
       },
       {
+        href: { page: "shift-planner" },
+        icon: "calendar-clock",
+        title: "Shift planner",
+        description:
+          "Plan shifts, holidays and absences week by week. Online booking only shows times when someone is on shift.",
+        color: "text-teal-600",
+        bg: "bg-teal-50",
+        border: "border-teal-200 hover:border-teal-400",
+        highlights: ["Shift templates", "Holidays & sick leave", "Booking follows the plan"],
+      },
+      {
         href: { page: "treatflow-pay" },
         icon: "wallet",
         title: "Treatflow Pay",
