@@ -73,7 +73,7 @@ export const pricingDe: PricingPageContent = {
       { label: "Kunden-Workflows", basic: false, booking: true },
       { label: "Rabattcodes", basic: false, booking: true },
       { label: "Mehrsprachige Buchungsseite", basic: false, booking: true },
-      { label: "Integrationen (Lexware, Google Kalender, Zapier)", basic: false, booking: true },
+      { label: "Integrationen (Lexware, Google Kalender, Zapier, KI-Assistenten)", basic: false, booking: true },
       { label: "Priority Support", basic: false, booking: true },
     ],
     cta: "14 Tage kostenlos testen",

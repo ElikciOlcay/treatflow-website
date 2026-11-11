@@ -299,7 +299,7 @@ export const homeDe: HomeContent = {
         "Kunden-Workflows",
         "Rabattcodes",
         "Mehrsprachige Buchungsseite",
-        "Integrationen (Lexware, Google Kalender, Zapier, SumUp)",
+        "Integrationen (Lexware, Google Kalender, Zapier, SumUp, KI-Assistenten)",
         "Priority E-Mail- und Chat-Support",
       ],
       cta: "14 Tage gratis testen",

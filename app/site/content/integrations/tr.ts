@@ -101,7 +101,7 @@ export const integrationsTr: IntegrationsContent = {
       {
         question: "Treatflow'u ChatGPT veya Claude ile kullanabilir miyim?",
         answer:
-          "Evet. Treatflow'u yapay zekâ asistanınıza bağlayıcı olarak ekleyin ve Treatflow hesabınızla oturum açın. Ardından randevular, boş saatler, müşteriler veya ciro hakkında soru sorabilirsiniz. Erişim varsayılan olarak yalnızca okuma yetkisiyledir; izin verirseniz asistan randevu oluşturup taşıyabilir ve her değişiklik kayıt altına alınır. İşlem kayıtları, formlar ve fotoğraflar hiçbir zaman paylaşılmaz.",
+          "Evet. Treatflow'u yapay zekâ asistanınıza bağlayıcı olarak ekleyin ve Treatflow hesabınızla oturum açın. Ardından randevular, boş saatler, müşteriler veya ciro hakkında soru sorabilirsiniz. Erişim varsayılan olarak yalnızca okuma yetkisiyledir; izin verirseniz asistan randevu oluşturup taşıyabilir, müşteri ve ürün ekleyip düzenleyebilir; her değişiklik kayıt altına alınır. İptal ve silme yapamaz; işlem kayıtları, formlar ve fotoğraflar hiçbir zaman paylaşılmaz.",
       },
       {
         question: "Zapier entegrasyonu ne işime yarar?",

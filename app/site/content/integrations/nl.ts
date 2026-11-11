@@ -109,7 +109,7 @@ export const integrationsNl: IntegrationsContent = {
       {
         question: "Kan ik Treatflow gebruiken met ChatGPT of Claude?",
         answer:
-          "Ja. Voeg Treatflow toe als connector in je AI-assistent en log in met je Treatflow-account. Daarna kun je vragen stellen over afspraken, vrije tijden, klanten of omzet. De toegang is standaard alleen-lezen; als je het toestaat, kan de assistent ook afspraken aanmaken en verplaatsen, waarbij elke wijziging wordt vastgelegd. Behandelverslagen, formulieren en foto's worden nooit gedeeld.",
+          "Ja. Voeg Treatflow toe als connector in je AI-assistent en log in met je Treatflow-account. Daarna kun je vragen stellen over afspraken, vrije tijden, klanten of omzet. De toegang is standaard alleen-lezen; als je het toestaat, kan de assistent ook afspraken aanmaken en verplaatsen en klanten en producten aanmaken of wijzigen, waarbij elke wijziging wordt vastgelegd. Annuleren en verwijderen kan niet, en behandelverslagen, formulieren en foto's worden nooit gedeeld.",
       },
       {
         question: "Waarvoor gebruik ik de Zapier-koppeling?",

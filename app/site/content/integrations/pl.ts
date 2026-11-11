@@ -109,7 +109,7 @@ export const integrationsPl: IntegrationsContent = {
       {
         question: "Czy mogę używać Treatflow z ChatGPT lub Claude?",
         answer:
-          "Tak. Dodaj Treatflow jako konektor w swoim asystencie AI i zaloguj się kontem Treatflow. Potem możesz pytać o wizyty, wolne terminy, klientów lub przychody. Dostęp jest domyślnie tylko do odczytu; jeśli na to pozwolisz, asystent może też tworzyć i przenosić wizyty, a każda zmiana jest rejestrowana. Dokumentacja zabiegów, formularze i zdjęcia nigdy nie są udostępniane.",
+          "Tak. Dodaj Treatflow jako konektor w swoim asystencie AI i zaloguj się kontem Treatflow. Potem możesz pytać o wizyty, wolne terminy, klientów lub przychody. Dostęp jest domyślnie tylko do odczytu; jeśli na to pozwolisz, asystent może też tworzyć i przenosić wizyty oraz dodawać i edytować klientów i produkty, a każda zmiana jest rejestrowana. Nie może niczego odwoływać ani usuwać, a dokumentacja zabiegów, formularze i zdjęcia nigdy nie są udostępniane.",
       },
       {
         question: "Do czego przyda mi się integracja z Zapierem?",
