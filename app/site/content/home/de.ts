@@ -111,7 +111,7 @@ export const homeDe: HomeContent = {
       "Termine, Kunden, Formulare, Behandlungsdokumentation und Kasse in einer übersichtlichen App. So findet sich dein Team sofort zurecht.",
     primaryCta: "Jetzt 14 Tage kostenlos testen",
     demoCta: "Demo buchen",
-    checks: ["Ohne Kreditkarte", "In 2 Minuten startklar", "Kostenloser Datenumzug"],
+    checks: ["Ohne Kreditkarte", "In 2 Minuten startklar", "Jederzeit kündbar"],
     rating: "4,6/5 auf Google",
     tested: { before: "Bereits von ", highlight: "500+ Studios", after: " getestet" },
     calendarLocale: "de-DE",
@@ -318,7 +318,7 @@ export const homeDe: HomeContent = {
     },
     trial: {
       title: "14 Tage kostenlos testen",
-      text: "Keine Kreditkarte erforderlich • Jederzeit kündbar • Kostenloser Datenumzug",
+      text: "Keine Kreditkarte erforderlich • Jederzeit kündbar",
       points: ["Keine Setup-Gebühren", "Monatlich kündbar", "DSGVO-konform"],
     },
   },
@@ -374,9 +374,9 @@ export const homeDe: HomeContent = {
       {
         question: "Kann ich meine bestehenden Kundendaten importieren?",
         answer: [
-          "Ja, wir helfen dir beim kostenlosen Umzug deiner Daten. Unser Support-Team unterstützt dich dabei, deine bestehenden Kundendaten sicher in die ",
+          "Ja. Bestehende Kundenlisten importierst du als CSV-Datei – mit Feldzuordnung und Duplikat-Erkennung – direkt in die ",
           { text: "digitale Kundenkartei", href: { page: "client-records" } },
-          " zu übertragen.",
+          ".",
         ],
       },
       {

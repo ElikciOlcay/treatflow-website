@@ -120,7 +120,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     },
     trialBox: {
       title: "14-day free trial",
-      text: "No credit card required • Cancel anytime • Free data migration",
+      text: "No credit card required • Cancel anytime",
       points: ["No setup fees", "Cancel monthly", "GDPR compliant"],
     },
     comparison: {
@@ -254,7 +254,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     },
     trialBox: {
       title: "Prueba gratuita de 14 días",
-      text: "Sin tarjeta de crédito • Cancela cuando quieras • Migración de datos gratis",
+      text: "Sin tarjeta de crédito • Cancela cuando quieras",
       points: ["Sin coste de alta", "Cancelación mensual", "Conforme RGPD"],
     },
     comparison: {
@@ -388,7 +388,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     },
     trialBox: {
       title: "Prova gratuita di 14 giorni",
-      text: "Nessuna carta di credito • Disdici quando vuoi • Migrazione dati gratuita",
+      text: "Nessuna carta di credito • Disdici quando vuoi",
       points: ["Nessun costo di setup", "Disdetta mensile", "Conforme GDPR"],
     },
     comparison: {
@@ -522,7 +522,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     },
     trialBox: {
       title: "Essai gratuit de 14 jours",
-      text: "Sans carte bancaire • Résiliable à tout moment • Migration des données gratuite",
+      text: "Sans carte bancaire • Résiliable à tout moment",
       points: ["Sans frais de setup", "Résiliation mensuelle", "Conforme RGPD"],
     },
     comparison: {
@@ -656,7 +656,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
     },
     trialBox: {
       title: "14 dagen gratis proberen",
-      text: "Geen creditcard nodig • Altijd opzegbaar • Gratis datamigratie",
+      text: "Geen creditcard nodig • Altijd opzegbaar",
       points: ["Geen opstartkosten", "Maandelijks opzegbaar", "GDPR-conform"],
     },
     comparison: {
@@ -936,7 +936,7 @@ const copies: Record<PricingLocale, PricingIntlCopy> = {
         "14 gün tüm özellikler",
         "Kredi kartı gerekmez",
         "Taahhüt yok, istediğiniz zaman iptal",
-        "Ücretsiz veri aktarımı",
+        "Kurulum ücreti yok",
       ],
     },
     comparison: {

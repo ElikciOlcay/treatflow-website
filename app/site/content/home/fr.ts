@@ -84,7 +84,7 @@ export const homeFr: HomeContent = {
       "Rendez-vous, clients, formulaires et suivi des soins réunis dans une seule application, simple et intuitive. Votre équipe la prend en main tout de suite.",
     primaryCta: "Essayer 14 jours gratuitement",
     demoCta: "Réserver une démo",
-    checks: ["Sans carte bancaire", "Prêt en 2 minutes", "Migration des données offerte"],
+    checks: ["Sans carte bancaire", "Prêt en 2 minutes", "Sans engagement"],
     rating: "4,6/5 sur Google",
     tested: { before: "Déjà testé par ", highlight: "plus de 500 instituts", after: "" },
     calendarLocale: "fr-FR",
@@ -199,7 +199,7 @@ export const homeFr: HomeContent = {
     ariaLabel: "Accompagnement personnalisé dès le premier jour",
     badge: "Accompagnement personnalisé",
     title: "Nous vous accompagnons dès le premier jour",
-    text: "De la configuration au transfert de vos données clients : notre équipe vous accompagne personnellement dans vos débuts avec Treatflow – pour que vous et votre équipe travailliez sereinement dès le premier jour.",
+    text: "De la configuration à vos premières questions : notre équipe vous accompagne personnellement dans vos débuts avec Treatflow – pour que vous et votre équipe travailliez sereinement dès le premier jour.",
     trialCta: "Essayer 14 jours gratuitement",
     demoCta: "Réserver une démo gratuite",
     imageAlt: "Accompagnement personnalisé par l'équipe Treatflow",
@@ -267,7 +267,7 @@ export const homeFr: HomeContent = {
     },
     trial: {
       title: "14 jours d'essai gratuit",
-      text: "Sans carte bancaire • Résiliable à tout moment • Migration des données offerte",
+      text: "Sans carte bancaire • Résiliable à tout moment",
       points: ["Pas de frais d'installation", "Sans engagement", "Conforme au RGPD"],
     },
   },
@@ -323,7 +323,7 @@ export const homeFr: HomeContent = {
       {
         question: "Puis-je importer mes données clients existantes ?",
         answer: [
-          "Oui, nous vous aidons gratuitement à migrer vos données. Notre équipe support transfère en toute sécurité vos données clients existantes dans vos ",
+          "Oui. Vous importez vos listes clients existantes sous forme de fichier CSV – avec correspondance des champs et détection des doublons – directement dans vos ",
           { text: "fiches clients numériques", href: { page: "client-records" } },
           ".",
         ],

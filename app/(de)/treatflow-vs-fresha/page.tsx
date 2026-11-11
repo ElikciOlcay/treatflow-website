@@ -73,7 +73,7 @@ const faqSchema = {
       name: 'Kann ich von Fresha zu Treatflow wechseln?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja. Unser Team unterstützt dich kostenlos beim Umzug deiner Kundendaten. Du kannst Treatflow 14 Tage kostenlos testen.',
+        text: 'Ja. Kundenlisten importierst du als CSV-Datei. Du kannst Treatflow 14 Tage kostenlos testen.',
       },
     },
     {
@@ -165,13 +165,6 @@ const comparisonRows = [
     treatflowOk: true,
     competitorOk: false,
   },
-  {
-    feature: 'Kostenloser Datenumzug',
-    treatflow: 'Ja, mit persönlicher Hilfe',
-    competitor: 'Eingeschränkt',
-    treatflowOk: true,
-    competitorOk: false,
-  },
 ];
 
 const keyDifferences = [
@@ -196,7 +189,7 @@ const keyDifferences = [
   {
     icon: Users,
     title: 'Deutscher Support statt Englisch',
-    desc: 'Bei Treatflow bekommst du persönliche 1:1 Betreuung auf Deutsch - beim Einrichten, Datenumzug und im Alltag. Fresha bietet primär englischsprachigen Standard-Support.',
+    desc: 'Bei Treatflow bekommst du persönliche 1:1 Betreuung auf Deutsch - beim Einrichten und im Alltag. Fresha bietet primär englischsprachigen Standard-Support.',
     color: 'bg-amber-100 text-amber-600',
   },
 ];

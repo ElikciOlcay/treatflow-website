@@ -63,7 +63,7 @@ export const clientRecordsTr: ClientRecordsContent = {
       {
         icon: "upload",
         title: "Mevcut verilerinizi aktarın",
-        text: "Elinizde bir müşteri listesi mi var? Excel veya CSV dosyasından kolayca içe aktarın. Ekibimiz geçişte size yardımcı olur.",
+        text: "Elinizde bir müşteri listesi mi var? CSV dosyası olarak kolayca içe aktarın; örneğin Excel'den dışa aktararak.",
       },
       {
         icon: "database",
@@ -75,7 +75,7 @@ export const clientRecordsTr: ClientRecordsContent = {
   howItWorks: {
     description: "Üç adımda dijital müşteri kartları.",
     steps: [
-      { title: "Müşterileri ekleyin veya aktarın", text: "Yeni müşterileri tek tek ekleyin veya mevcut listenizi Excel ya da CSV'den içe aktarın. Mükerrer kayıtlar otomatik olarak tespit edilir." },
+      { title: "Müşterileri ekleyin veya aktarın", text: "Yeni müşterileri tek tek ekleyin veya mevcut listenizi CSV dosyası olarak içe aktarın. Mükerrer kayıtlar otomatik olarak tespit edilir." },
       { title: "Kartı doldurun", text: "İletişim bilgilerini, alerjileri, notları ve fotoğrafları karta kaydedin. Doldurulan formlar karta otomatik eklenir." },
       { title: "Sonraki ziyarette her şey hazır", text: "İşlemden önce müşteri kartını açın – geçen sefer ne yapıldığını ve nelere dikkat etmeniz gerektiğini hemen görürsünüz." },
     ],
@@ -85,7 +85,7 @@ export const clientRecordsTr: ClientRecordsContent = {
     description: "Sınırsız dijital müşteri kartı – veri aktarımı, arama ve KVKK ile GDPR uyumu dahil.",
     items: [
       { icon: "database", title: "Sınırsız müşteri", text: "Salonunuzun ihtiyaç duyduğu kadar kart – kişi başına ek ücret yok.", points: ["Müşteri sınırı yok", "Hızından bir şey kaybetmez", "Otomatik yedekleme"] },
-      { icon: "upload", title: "Veri aktarımı", text: "Mevcut listelerinizi Excel veya CSV'den aktarın. Geçiş desteği dahil.", points: ["Excel ve CSV", "Alan eşleştirme", "Mükerrer kayıt tespiti"] },
+      { icon: "upload", title: "Veri aktarımı", text: "Mevcut listelerinizi CSV dosyası olarak aktarın – Excel'den dışa aktarılanlar dahil.", points: ["CSV içe aktarma", "Alan eşleştirme", "Mükerrer kayıt tespiti"] },
       { icon: "shield", title: "KVKK ve GDPR uyumlu", text: "AB'de saklama, şifreleme, talep üzerine bilgi verme ve silme.", points: ["AB sunucuları", "Şifreli", "Silme hakkı"] },
       { icon: "search", title: "Hızlı arama", text: "Müşteri kartlarını ad, telefon, e-posta veya işleme göre saniyeler içinde bulun.", points: ["Tam metin arama", "Filtreler", "Sıralama"] },
       { icon: "camera", title: "Fotoğraflar ve geçmiş", text: "Öncesi-sonrası fotoğraflar ve işlemler ayrı klasörlerde değil, doğrudan müşteri kartında.", points: ["Kartta fotoğraflar", "İşlem geçmişi", "Notlar"] },
@@ -118,7 +118,7 @@ export const clientRecordsTr: ClientRecordsContent = {
       {
         question: "Mevcut müşteri verilerimi aktarabilir miyim?",
         answer:
-          "Evet. Treatflow, müşteri verilerinin Excel ve CSV dosyalarından içe aktarılmasını destekler. Kurulum ekibimiz, verilerinizi önceki sisteminizden ücretsiz olarak taşımanıza yardımcı olur.",
+          "Evet. Treatflow müşteri verilerini CSV dosyalarından içe aktarır; Excel'deki veya önceki programınızdaki listeleri CSV olarak dışa aktarmanız yeterlidir. İçe aktarırken alanları eşleştirirsiniz, mükerrer kayıtlar tespit edilir.",
       },
       {
         question: "Treatflow müşterilerime otomatik mesaj gönderebilir mi?",

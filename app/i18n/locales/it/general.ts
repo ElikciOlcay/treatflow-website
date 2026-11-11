@@ -93,7 +93,7 @@ const home: LocaleSiteContent["home"] = {
     trustItems: [
       "Nessuna carta di credito",
       "Pronto in 2 minuti",
-      "Migrazione dati gratuita",
+      "Disdici quando vuoi",
       "Supporto personale",
     ],
     studiosLabel: "Oltre 500 centri",
@@ -321,7 +321,7 @@ const pricing: LocaleSiteContent["pricing"] = {
   },
   trialBox: {
     title: "Prova gratuita di 14 giorni",
-    text: "Nessuna carta di credito • Disdici quando vuoi • Migrazione dati gratuita",
+    text: "Nessuna carta di credito • Disdici quando vuoi",
     points: ["Nessun costo di attivazione", "Disdetta mensile", "Conforme al GDPR"],
   },
   comparison: {

@@ -345,7 +345,7 @@ export default function TrMoneyPage({ content }: { content: TrMoneyPageContent }
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">14 gün ücretsiz deneyin</h2>
           <p className="text-indigo-100 mb-8">
-            Kredi kartı gerekmez. Veri aktarımında yardımcı oluruz. Taahhüt yok.
+            Kredi kartı gerekmez. Taahhüt yok.
           </p>
           <TrSeoCta
             href={registerHref}

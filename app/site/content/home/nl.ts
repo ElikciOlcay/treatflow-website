@@ -83,7 +83,7 @@ export const homeNl: HomeContent = {
       "Afspraken, klanten, formulieren en behandelverslagen in één overzichtelijke app. Je team kan er direct mee aan de slag.",
     primaryCta: "Probeer 14 dagen gratis",
     demoCta: "Demo aanvragen",
-    checks: ["Geen creditcard nodig", "In 2 minuten aan de slag", "Gratis overzetten van je gegevens"],
+    checks: ["Geen creditcard nodig", "In 2 minuten aan de slag", "Altijd opzegbaar"],
     rating: "4,6/5 op Google",
     tested: { before: "Al uitgeprobeerd door ", highlight: "500+ salons", after: "" },
     calendarLocale: "nl-NL",
@@ -198,7 +198,7 @@ export const homeNl: HomeContent = {
     ariaLabel: "Persoonlijke begeleiding vanaf dag één",
     badge: "Persoonlijke begeleiding",
     title: "We laten je niet alleen",
-    text: "Van de inrichting tot het overzetten van je klantgegevens: ons team begeleidt je persoonlijk bij je start met Treatflow – zodat jij en je team vanaf dag één met vertrouwen aan de slag gaan.",
+    text: "Van de inrichting tot je eerste vragen: ons team begeleidt je persoonlijk bij je start met Treatflow – zodat jij en je team vanaf dag één met vertrouwen aan de slag gaan.",
     trialCta: "Probeer 14 dagen gratis",
     demoCta: "Gratis demo aanvragen",
     imageAlt: "Persoonlijke begeleiding door het Treatflow-team",
@@ -265,7 +265,7 @@ export const homeNl: HomeContent = {
     },
     trial: {
       title: "14 dagen gratis proberen",
-      text: "Geen creditcard nodig • Altijd opzegbaar • Gratis overzetten van je gegevens",
+      text: "Geen creditcard nodig • Altijd opzegbaar",
       points: ["Geen opstartkosten", "Maandelijks opzegbaar", "AVG-proof"],
     },
   },
@@ -321,7 +321,7 @@ export const homeNl: HomeContent = {
       {
         question: "Kan ik mijn bestaande klantgegevens importeren?",
         answer: [
-          "Ja, we helpen je gratis met de overstap. Ons supportteam zet je bestaande klantgegevens veilig over naar ",
+          "Ja. Je importeert bestaande klantenlijsten als CSV-bestand – met velden koppelen en herkenning van dubbele klanten – direct in de ",
           { text: "digitale klantdossiers", href: { page: "client-records" } },
           " in Treatflow.",
         ],

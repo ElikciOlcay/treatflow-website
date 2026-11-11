@@ -85,7 +85,7 @@ export const homeTr: HomeContent = {
       "Randevular, müşteri kartları, onam formları ve işlem kayıtları tek ve sade bir uygulamada. Ekibiniz ilk günden kolayca kullanır.",
     primaryCta: "14 gün ücretsiz deneyin",
     demoCta: "Demo talep edin",
-    checks: ["Kredi kartı gerekmez", "2 dakikada kurulum", "Ücretsiz veri aktarımı"],
+    checks: ["Kredi kartı gerekmez", "2 dakikada kurulum", "Taahhüt yok"],
     rating: "Google'da 4,6/5",
     tested: { before: "", highlight: "500+ işletme", after: " tarafından denendi" },
     calendarLocale: "tr-TR",
@@ -200,7 +200,7 @@ export const homeTr: HomeContent = {
     ariaLabel: "İlk günden birebir destek",
     badge: "Birebir destek",
     title: "Sizi yalnız bırakmıyoruz",
-    text: "Kurulumdan müşteri verilerinizin aktarımına kadar: Ekibimiz Treatflow'a başlarken size birebir eşlik eder – böylece siz ve ekibiniz ilk günden itibaren güvenle çalışırsınız.",
+    text: "Kurulumdan ilk sorularınıza kadar: Ekibimiz Treatflow'a başlarken size birebir eşlik eder – böylece siz ve ekibiniz ilk günden itibaren güvenle çalışırsınız.",
     trialCta: "14 gün ücretsiz deneyin",
     demoCta: "Ücretsiz demo talep edin",
     imageAlt: "Treatflow ekibinden birebir destek",
@@ -267,7 +267,7 @@ export const homeTr: HomeContent = {
     },
     trial: {
       title: "14 gün ücretsiz deneyin",
-      text: "Kredi kartı gerekmez • İstediğiniz zaman iptal edin • Ücretsiz veri aktarımı",
+      text: "Kredi kartı gerekmez • İstediğiniz zaman iptal edin",
       points: ["Kurulum ücreti yok", "Aylık iptal", "KVKK kapsamında süreçler"],
     },
   },
@@ -323,9 +323,9 @@ export const homeTr: HomeContent = {
       {
         question: "Mevcut müşteri verilerimi aktarabilir miyim?",
         answer: [
-          "Evet, geçişte ücretsiz destek veriyoruz. Destek ekibimiz mevcut müşteri listenizi ",
+          "Evet. Mevcut müşteri listelerinizi CSV dosyası olarak ",
           { text: "dijital müşteri kartlarınıza", href: { page: "client-records" } },
-          " güvenle taşımanıza yardımcı olur.",
+          " aktarırsınız; alan eşleştirme ve mükerrer kayıt tespiti dahil.",
         ],
       },
       {

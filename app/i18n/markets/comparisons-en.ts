@@ -35,7 +35,7 @@ export const vsFreshaEn: EnComparisonContent = {
     },
     {
       q: "Can I switch from Fresha to Treatflow?",
-      a: "Yes. We help migrate client data. You can trial Treatflow for 14 days without a credit card.",
+      a: "Yes. You import client lists as a CSV file. You can trial Treatflow for 14 days without a credit card.",
     },
   ],
   ctaTitle: "Prefer software you pay – not a cut of every visit?",

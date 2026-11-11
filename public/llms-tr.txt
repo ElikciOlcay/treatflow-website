@@ -32,7 +32,7 @@ Son güncelleme: 2026-11-05. Dil: Türkçe. Bu dosya Türkçe web sitesini (http
 - [Fiyatlar](https://www.treatflow.io/tr/fiyatlar): paketlerin ayrıntılı karşılaştırması
 - Basic: aylık ₺1.490 veya yıllık ₺16.100 (₺1.342/ay). Müşteri takibi, dijital imzalı formlar, işlem kayıtları ve sesli not, öncesi-sonrası fotoğraflar, ekip notları ve görevler, mağaza ve ürünler, raporlar, çalışanlar ve roller, e-posta desteği. Randevu takvimi yoktur.
 - Booking: aylık ₺1.990 veya yıllık ₺21.500 (₺1.792/ay). Basic'teki her şey artı personel ve oda sütunlu takvim, komisyonsuz online randevu, bekleme listesi, e-posta hatırlatmaları, müşteri otomasyonları, indirim kodları, çok dilli randevu sayfası, entegrasyonlar (Google Takvim, Zapier, yapay zekâ asistanları), öncelikli e-posta ve sohbet desteği.
-- Fiyatlar Türk lirası (TRY), KDV hariç; ilk 100 işletmeye özel lansman fiyatlarıdır. 14 gün ücretsiz deneme, kredi kartı gerekmez, kurulum ücreti yok, aylık iptal, ücretsiz veri aktarımı.
+- Fiyatlar Türk lirası (TRY), KDV hariç; ilk 100 işletmeye özel lansman fiyatlarıdır. 14 gün ücretsiz deneme, kredi kartı gerekmez, kurulum ücreti yok, aylık iptal.
 
 ## Deneyin ve kaydolun
 
@@ -90,7 +90,7 @@ Basic aylık ₺1.490 (müşteri takibi, formlar, işlem kayıtları), Booking a
 Evet. Treatflow GDPR'a tam uyumludur ve KVKK kapsamındaki yükümlülüklerinizi yerine getirmenize yardımcı olur. Tüm veriler şifrelenir ve Frankfurt'taki AB sunucularında saklanır; dijital anamnez formları ve işlem kayıtları da buna dahildir.
 
 **Mevcut müşteri verilerimi aktarabilir miyim?**
-Evet. Destek ekibimiz mevcut müşteri listenizi ücretsiz olarak dijital müşteri kartlarına taşır.
+Evet. Mevcut müşteri listelerinizi CSV dosyası olarak dijital müşteri kartlarına aktarırsınız; alan eşleştirme ve mükerrer kayıt tespiti dahil.
 
 **İstediğim zaman iptal edebilir miyim?**
 Evet. Aylık ödemede fatura döneminin sonunda geçerli olmak üzere istediğiniz zaman iptal edebilirsiniz. Asgari sözleşme süresi yoktur, tüm verilerinizi dışa aktarabilirsiniz.

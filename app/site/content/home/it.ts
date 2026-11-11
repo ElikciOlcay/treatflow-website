@@ -82,7 +82,7 @@ export const homeIt: HomeContent = {
       "Appuntamenti, clienti, moduli e documentazione dei trattamenti in un'unica app semplice e intuitiva. Il tuo team la usa dal primo giorno.",
     primaryCta: "Inizia la prova gratuita di 14 giorni",
     demoCta: "Prenota una demo",
-    checks: ["Senza carta di credito", "Attivo in 2 minuti", "Trasferimento dati gratuito"],
+    checks: ["Senza carta di credito", "Attivo in 2 minuti", "Disdici quando vuoi"],
     rating: "4,6/5 su Google",
     tested: { before: "Già testato da ", highlight: "oltre 500 centri", after: "" },
     calendarLocale: "it-IT",
@@ -197,7 +197,7 @@ export const homeIt: HomeContent = {
     ariaLabel: "Assistenza personale fin dal primo giorno",
     badge: "Assistenza personale",
     title: "Al tuo fianco fin dal primo giorno",
-    text: "Dalla configurazione al trasferimento dei dati dei tuoi clienti: il nostro team ti accompagna di persona nei primi passi con Treatflow, così tu e il tuo team lavorate con sicurezza fin dal primo giorno.",
+    text: "Dalla configurazione alle prime domande: il nostro team ti accompagna di persona nei primi passi con Treatflow, così tu e il tuo team lavorate con sicurezza fin dal primo giorno.",
     trialCta: "Inizia la prova gratuita di 14 giorni",
     demoCta: "Prenota una demo gratuita",
     imageAlt: "Assistenza personale del team Treatflow",
@@ -264,7 +264,7 @@ export const homeIt: HomeContent = {
     },
     trial: {
       title: "Prova gratuita di 14 giorni",
-      text: "Senza carta di credito • Disdici quando vuoi • Trasferimento dati gratuito",
+      text: "Senza carta di credito • Disdici quando vuoi",
       points: ["Nessun costo di attivazione", "Disdetta mensile", "Conforme al GDPR"],
     },
   },
@@ -320,7 +320,7 @@ export const homeIt: HomeContent = {
       {
         question: "Posso importare i dati dei miei clienti?",
         answer: [
-          "Sì, e il trasferimento è gratuito. Il nostro supporto importa in sicurezza i dati dei tuoi clienti nelle nuove ",
+          "Sì. Importi gli elenchi clienti come file CSV, con abbinamento dei campi e riconoscimento dei doppioni, direttamente nelle nuove ",
           { text: "schede clienti digitali", href: { page: "client-records" } },
           ".",
         ],

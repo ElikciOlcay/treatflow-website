@@ -209,7 +209,7 @@ export const beautyCenterPage: TrMoneyPageContent = {
     {
       question: "Geçiş nasıl işler?",
       answer:
-        "Kayıt olun, 14 gün tüm özellikleri kullanın. Mevcut müşteri verilerinin aktarımında yardımcı oluruz. Kredi kartı gerekmez.",
+        "Kayıt olun, 14 gün tüm özellikleri kullanın. Mevcut müşteri listelerinizi CSV dosyası olarak içe aktarabilirsiniz. Kredi kartı gerekmez.",
     },
     {
       question: "Veriler nerede tutulur?",

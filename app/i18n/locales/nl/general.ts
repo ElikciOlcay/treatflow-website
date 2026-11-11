@@ -114,7 +114,7 @@ const home: LocaleSiteContent["home"] = {
     subtitle:
       "Afspraken, online boeken zonder commissie, klantdossiers, toestemmingsformulieren en behandeldocumentatie – alles in één overzichtelijke app. Gemaakt in Oostenrijk, voor studio's in Nederland, België en daarbuiten.",
     primaryCta: "Gratis proberen",
-    trustItems: ["Geen creditcard", "Binnen 2 minuten klaar", "Gratis datamigratie", "Persoonlijke support"],
+    trustItems: ["Geen creditcard", "Binnen 2 minuten klaar", "Altijd opzegbaar", "Persoonlijke support"],
     studiosLabel: "500+ studio's",
     ratingValue: "4.6/5",
     image: {
@@ -299,7 +299,7 @@ const pricing: LocaleSiteContent["pricing"] = {
   },
   trialBox: {
     title: "14 dagen gratis proberen",
-    text: "Geen creditcard nodig • Altijd opzegbaar • Gratis datamigratie",
+    text: "Geen creditcard nodig • Altijd opzegbaar",
     points: ["Geen opstartkosten", "Maandelijks opzegbaar", "AVG-proof"],
   },
   comparison: {
@@ -619,7 +619,7 @@ const comparisons: LocaleSiteContent["comparisons"] = {
       },
       {
         q: "Kan ik overstappen van Fresha naar Treatflow?",
-        a: "Ja. We helpen je met het overzetten van je klantgegevens. Je probeert Treatflow 14 dagen gratis, zonder creditcard.",
+        a: "Ja. Je importeert je klantenlijsten als CSV-bestand. Je probeert Treatflow 14 dagen gratis, zonder creditcard.",
       },
     ],
     ctaTitle: "Liever software waarvoor je betaalt – in plaats van een deel van elke afspraak?",

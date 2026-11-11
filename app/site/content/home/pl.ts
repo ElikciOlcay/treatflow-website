@@ -83,7 +83,7 @@ export const homePl: HomeContent = {
       "Wizyty, klienci, formularze i dokumentacja zabiegów w jednej przejrzystej aplikacji. Twój zespół od razu się w niej odnajdzie.",
     primaryCta: "Wypróbuj 14 dni za darmo",
     demoCta: "Umów prezentację",
-    checks: ["Bez podawania karty", "Start w 2 minuty", "Bezpłatne przeniesienie danych"],
+    checks: ["Bez podawania karty", "Start w 2 minuty", "Rezygnacja w każdej chwili"],
     rating: "4,6/5 w Google",
     tested: { before: "Przetestowało już ", highlight: "500+ salonów", after: "" },
     calendarLocale: "pl-PL",
@@ -198,7 +198,7 @@ export const homePl: HomeContent = {
     ariaLabel: "Osobiste wsparcie od pierwszego dnia",
     badge: "Osobiste wsparcie",
     title: "Jesteśmy przy Tobie od pierwszego dnia",
-    text: "Od konfiguracji po przeniesienie danych klientów: nasz zespół osobiście wspiera Cię na starcie z Treatflow – tak, aby od pierwszego dnia wszystko działało sprawnie.",
+    text: "Od konfiguracji po pierwsze pytania: nasz zespół osobiście wspiera Cię na starcie z Treatflow – tak, aby od pierwszego dnia wszystko działało sprawnie.",
     trialCta: "Wypróbuj 14 dni za darmo",
     demoCta: "Umów bezpłatną prezentację",
     imageAlt: "Osobiste wsparcie zespołu Treatflow",
@@ -265,7 +265,7 @@ export const homePl: HomeContent = {
     },
     trial: {
       title: "14 dni za darmo",
-      text: "Bez podawania karty • Rezygnacja w każdej chwili • Bezpłatne przeniesienie danych",
+      text: "Bez podawania karty • Rezygnacja w każdej chwili",
       points: ["Bez opłat za wdrożenie", "Rezygnacja co miesiąc", "Zgodność z RODO"],
     },
   },
@@ -321,7 +321,7 @@ export const homePl: HomeContent = {
       {
         question: "Czy mogę zaimportować dotychczasowe dane klientów?",
         answer: [
-          "Tak, a przeniesienie danych jest bezpłatne. Nasz zespół wsparcia pomoże Ci bezpiecznie przenieść dotychczasowe dane klientów do ",
+          "Tak. Dotychczasowe listy klientów importujesz jako plik CSV – z przypisywaniem pól i wykrywaniem duplikatów – prosto do ",
           { text: "cyfrowej kartoteki klientów", href: { page: "client-records" } },
           ".",
         ],

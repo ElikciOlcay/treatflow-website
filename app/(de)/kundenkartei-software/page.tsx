@@ -80,7 +80,7 @@ const faqData = [
   },
   {
     q: "Kann ich bestehende Kundendaten in Treatflow importieren?",
-    a: "Ja. Du kannst bestehende Kundendaten manuell in Treatflow anlegen oder unser Team kontaktieren, das dir beim Import hilft. So geht kein Kundendatensatz verloren und der Wechsel zur digitalen Kundenkartei ist reibungslos.",
+    a: "Ja. Bestehende Kundenlisten importierst du als CSV-Datei – mit Feldzuordnung und Duplikat-Erkennung –, einzelne Kunden legst du auch manuell an. So geht kein Kundendatensatz verloren und der Wechsel zur digitalen Kundenkartei ist reibungslos.",
   },
 ];
 

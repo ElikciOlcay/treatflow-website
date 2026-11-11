@@ -63,7 +63,7 @@ export const clientRecordsIt: ClientRecordsContent = {
       {
         icon: "upload",
         title: "Porta con te i dati esistenti",
-        text: "Hai già un elenco clienti? Importalo da Excel o CSV in pochi clic. Il nostro team ti aiuta nel passaggio.",
+        text: "Hai già un elenco clienti? Importalo in pochi clic come file CSV, ad esempio esportato da Excel.",
       },
       {
         icon: "database",
@@ -75,7 +75,7 @@ export const clientRecordsIt: ClientRecordsContent = {
   howItWorks: {
     description: "Le tue schede clienti digitali in tre passaggi.",
     steps: [
-      { title: "Aggiungi o importa i clienti", text: "Inserisci i nuovi clienti a mano oppure importa il tuo elenco da Excel o CSV. I doppioni vengono riconosciuti automaticamente." },
+      { title: "Aggiungi o importa i clienti", text: "Inserisci i nuovi clienti a mano oppure importa il tuo elenco come file CSV. I doppioni vengono riconosciuti automaticamente." },
       { title: "Completa la scheda", text: "Salva nella scheda contatti, allergie, note e foto. I moduli compilati vengono allegati automaticamente." },
       { title: "Pronti per la visita successiva", text: "Apri la scheda cliente prima del trattamento: vedi subito cosa è stato fatto l'ultima volta e a cosa fare attenzione." },
     ],
@@ -85,7 +85,7 @@ export const clientRecordsIt: ClientRecordsContent = {
     description: "Schede clienti digitali senza limiti, con importazione, ricerca e conformità al GDPR.",
     items: [
       { icon: "database", title: "Clienti illimitati", text: "Tutte le schede che servono al tuo centro, senza sovrapprezzo per contatto.", points: ["Nessun limite di clienti", "Sempre veloce", "Backup automatici"] },
-      { icon: "upload", title: "Importazione dati", text: "Trasferisci gli elenchi esistenti da Excel o CSV. Aiuto nel passaggio incluso.", points: ["Excel e CSV", "Abbinamento dei campi", "Riconoscimento doppioni"] },
+      { icon: "upload", title: "Importazione dati", text: "Trasferisci gli elenchi esistenti come file CSV, anche esportati da Excel.", points: ["Importazione CSV", "Abbinamento dei campi", "Riconoscimento doppioni"] },
       { icon: "shield", title: "Conforme al GDPR", text: "Archiviazione nell'UE, crittografia, accesso e cancellazione su richiesta.", points: ["Server nell'UE", "Crittografato", "Diritto alla cancellazione"] },
       { icon: "search", title: "Ricerca rapida", text: "Trova le schede per nome, telefono, email o trattamento in pochi secondi.", points: ["Ricerca full-text", "Filtri", "Ordinamento"] },
       { icon: "camera", title: "Foto e storico", text: "Foto prima/dopo e trattamenti direttamente nella scheda, non in cartelle separate.", points: ["Foto nella scheda", "Storico dei trattamenti", "Note"] },
@@ -118,7 +118,7 @@ export const clientRecordsIt: ClientRecordsContent = {
       {
         question: "Posso importare i dati dei clienti che ho già?",
         answer:
-          "Sì. Treatflow importa i dati dei clienti da file Excel e CSV. Il nostro team ti aiuta gratuitamente a trasferire i dati dal gestionale che usi oggi.",
+          "Sì. Treatflow importa i dati dei clienti da file CSV: esporta come CSV gli elenchi da Excel o dal gestionale che usi oggi. Durante l'importazione abbini i campi e i doppioni vengono riconosciuti.",
       },
       {
         question: "Treatflow può inviare messaggi automatici ai miei clienti?",

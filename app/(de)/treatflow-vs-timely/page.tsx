@@ -77,7 +77,7 @@ const faqSchema = {
       name: 'Kann ich von Timely zu Treatflow wechseln?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja. Unser Team unterstützt dich kostenlos beim Umzug deiner Kundendaten. Du kannst Treatflow 14 Tage kostenlos testen und in Ruhe vergleichen.',
+        text: 'Ja. Kundenlisten importierst du als CSV-Datei. Du kannst Treatflow 14 Tage kostenlos testen und in Ruhe vergleichen.',
       },
     },
     {

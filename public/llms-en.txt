@@ -33,7 +33,7 @@ Last updated: 2026-11-05. Language: English. This file describes the English web
 - [Pricing](https://www.treatflow.io/en/pricing): plans compared in detail
 - Basic: €39/month or €421/year (€35/month). Client management, forms with digital signature, treatment records incl. voice dictation, before-and-after photos, team notes and tasks, shop and products, statistics, staff and roles, email support. No appointment calendar.
 - Booking: €59/month or €637/year (€53/month). Everything in Basic plus calendar with staff and room columns, commission-free online booking, waitlist, email reminders, client workflows, discount codes, multilingual booking page, integrations (Google Calendar, Zapier, AI assistants), priority email and chat support.
-- All prices in EUR, plus VAT. 14-day free trial, no credit card, no setup fees, rolling monthly plan, cancel anytime, free data migration.
+- All prices in EUR, plus VAT. 14-day free trial, no credit card, no setup fees, rolling monthly plan, cancel anytime.
 - Treatflow Pay (optional): 2.69% per online payment, no additional Treatflow fee.
 
 ## Try it and sign up
@@ -93,7 +93,7 @@ Yes. All data is encrypted and stored on EU servers in Frankfurt, Germany. This 
 Yes, with Treatflow Pay. Per service you choose no payment, a deposit (percentage or fixed amount) or full payment. The fee is 2.69% per transaction, minimum amount €0.50.
 
 **Can I import my existing client data?**
-Yes. The support team moves existing client data into Treatflow free of charge.
+Yes. You import existing client lists as a CSV file, with field mapping and duplicate detection.
 
 **Can I cancel anytime?**
 Yes. On monthly billing you can cancel at any time, effective at the end of the billing period. There is no minimum term and you can export all data.

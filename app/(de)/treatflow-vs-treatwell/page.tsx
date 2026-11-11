@@ -85,7 +85,7 @@ const faqSchema = {
       name: 'Kann ich von Treatwell zu Treatflow wechseln?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja. Wir unterstützen dich kostenlos beim Umzug deiner Kundendaten zu Treatflow. Der Wechsel ist unkompliziert und du kannst Treatflow 14 Tage kostenlos testen, bevor du dich entscheidest.',
+        text: 'Ja. Kundenlisten importierst du als CSV-Datei. Der Wechsel ist unkompliziert und du kannst Treatflow 14 Tage kostenlos testen, bevor du dich entscheidest.',
       },
     },
   ],
@@ -183,13 +183,6 @@ const comparisonRows = [
     treatflowOk: true,
     treatwellOk: true,
   },
-  {
-    feature: 'Kostenloser Datenumzug',
-    treatflow: 'Ja, mit persönlicher Hilfe',
-    treatwell: 'Ja',
-    treatflowOk: true,
-    treatwellOk: true,
-  },
 ];
 
 const keyDifferences = [
@@ -214,7 +207,7 @@ const keyDifferences = [
   {
     icon: Users,
     title: 'Persönliche Betreuung',
-    desc: 'Bei Treatflow bekommst du 1:1 Betreuung und Hilfe beim Einrichten, Datenumzug und im Alltag. Kein anonymes Ticket-System, sondern echte Menschen.',
+    desc: 'Bei Treatflow bekommst du 1:1 Betreuung und Hilfe beim Einrichten und im Alltag. Kein anonymes Ticket-System, sondern echte Menschen.',
     color: 'bg-amber-100 text-amber-600',
   },
 ];

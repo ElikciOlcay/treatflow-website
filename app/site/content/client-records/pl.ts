@@ -63,7 +63,7 @@ export const clientRecordsPl: ClientRecordsContent = {
       {
         icon: "upload",
         title: "Przenieś swoje dotychczasowe dane",
-        text: "Masz już listę klientów? Po prostu zaimportuj ją z Excela lub pliku CSV. Nasz zespół pomoże Ci przenieść dane.",
+        text: "Masz już listę klientów? Po prostu zaimportuj ją jako plik CSV, na przykład wyeksportowany z Excela.",
       },
       {
         icon: "database",
@@ -75,7 +75,7 @@ export const clientRecordsPl: ClientRecordsContent = {
   howItWorks: {
     description: "Trzy kroki do cyfrowej kartoteki klientów.",
     steps: [
-      { title: "Dodaj lub zaimportuj klientów", text: "Twórz nowych klientów ręcznie lub zaimportuj dotychczasową listę z Excela lub pliku CSV. Duplikaty są wykrywane automatycznie." },
+      { title: "Dodaj lub zaimportuj klientów", text: "Twórz nowych klientów ręcznie lub zaimportuj dotychczasową listę jako plik CSV. Duplikaty są wykrywane automatycznie." },
       { title: "Uzupełnij kartę klienta", text: "Zapisuj w karcie dane kontaktowe, alergie, notatki i zdjęcia. Wypełnione formularze dodawane są automatycznie." },
       { title: "Wszystko gotowe na kolejną wizytę", text: "Przed zabiegiem otwórz kartę klienta – od razu widzisz, co zostało zrobione ostatnio i na co zwrócić uwagę." },
     ],
@@ -85,7 +85,7 @@ export const clientRecordsPl: ClientRecordsContent = {
     description: "Cyfrowa kartoteka klientów bez ograniczeń – z importem, wyszukiwarką i zgodnością z RODO.",
     items: [
       { icon: "database", title: "Bez limitu klientów", text: "Tyle kart klientów, ile potrzebuje Twój salon – bez dopłat za każdą kartę.", points: ["Bez limitu klientów", "Zawsze szybko", "Automatyczne kopie zapasowe"] },
-      { icon: "upload", title: "Import danych", text: "Przenieś dotychczasowe listy z Excela lub pliku CSV. Pomoc w przeniesieniu danych w cenie.", points: ["Excel i CSV", "Przypisywanie pól", "Wykrywanie duplikatów"] },
+      { icon: "upload", title: "Import danych", text: "Przenieś dotychczasowe listy jako plik CSV – także wyeksportowane z Excela.", points: ["Import CSV", "Przypisywanie pól", "Wykrywanie duplikatów"] },
       { icon: "shield", title: "Zgodność z RODO", text: "Przechowywanie danych w UE, szyfrowanie, dostęp do danych i ich usunięcie na żądanie.", points: ["Serwery w UE", "Szyfrowanie", "Prawo do usunięcia danych"] },
       { icon: "search", title: "Szybka wyszukiwarka", text: "Znajdź kartę klienta po imieniu i nazwisku, numerze telefonu, adresie e-mail lub zabiegu – w kilka sekund.", points: ["Wyszukiwanie pełnotekstowe", "Filtry", "Sortowanie"] },
       { icon: "camera", title: "Zdjęcia i historia", text: "Zdjęcia przed i po oraz historia zabiegów bezpośrednio w karcie klienta, a nie w osobnych folderach.", points: ["Zdjęcia w karcie", "Historia zabiegów", "Notatki"] },
@@ -118,7 +118,7 @@ export const clientRecordsPl: ClientRecordsContent = {
       {
         question: "Czy mogę zaimportować moje dotychczasowe dane klientów?",
         answer:
-          "Tak. Treatflow obsługuje import danych klientów z plików Excel i CSV. Nasz zespół wdrożeniowy bezpłatnie pomoże Ci przenieść dane z dotychczasowego systemu.",
+          "Tak. Treatflow importuje dane klientów z plików CSV – listy z Excela lub dotychczasowego programu wystarczy wyeksportować jako CSV. Podczas importu przypisujesz pola, a duplikaty są wykrywane.",
       },
       {
         question: "Czy Treatflow może wysyłać automatyczne wiadomości do moich klientów?",

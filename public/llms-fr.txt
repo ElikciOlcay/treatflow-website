@@ -33,7 +33,7 @@ Dernière mise à jour : 2026-11-05. Langue : français. Ce fichier décrit le s
 - [Tarifs](https://www.treatflow.io/fr/tarifs) : comparatif détaillé des formules
 - Basic : 39 €/mois ou 421 €/an (35 €/mois). Fiches clients, formulaires avec signature électronique, suivi des soins et notes vocales, photos avant/après, notes d'équipe et tâches, boutique et produits, statistiques, collaborateurs et rôles, support par e-mail. Sans gestion des rendez-vous.
 - Booking : 59 €/mois ou 637 €/an (53 €/mois). Tout ce qui est inclus dans Basic, plus agenda avec colonnes collaborateurs et cabines, réservation en ligne sans commission, liste d'attente, rappels par e-mail, parcours clients, codes promo, page de réservation multilingue, intégrations (Google Agenda, Zapier, assistants IA), support prioritaire par e-mail et chat.
-- Prix en euros, HT. 14 jours d'essai gratuit, sans carte bancaire, pas de frais d'installation, sans engagement, migration des données offerte.
+- Prix en euros, HT. 14 jours d'essai gratuit, sans carte bancaire, pas de frais d'installation, sans engagement.
 - Treatflow Pay (en option) : 2,69 % par paiement en ligne.
 
 ## Essayer et s'inscrire
@@ -92,7 +92,7 @@ Oui. Toutes les données sont chiffrées et hébergées sur des serveurs europé
 Oui, avec Treatflow Pay. Pour chaque prestation, vous choisissez : aucun paiement, un acompte ou le paiement intégral. Les frais sont de 2,69 % par transaction.
 
 **Puis-je importer mes données clients existantes ?**
-Oui, nous vous aidons gratuitement à migrer vos données dans vos fiches clients numériques.
+Oui. Vous importez vos listes clients sous forme de fichier CSV dans vos fiches clients numériques, avec correspondance des champs et détection des doublons.
 
 **Puis-je résilier à tout moment ?**
 Oui. En paiement mensuel, vous pouvez résilier à tout moment, avec effet à la fin de la période de facturation. Sans engagement, et vous pouvez exporter toutes vos données.

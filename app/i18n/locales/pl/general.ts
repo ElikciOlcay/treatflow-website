@@ -108,7 +108,7 @@ const home: LocaleSiteContent["home"] = {
     trustItems: [
       "Bez karty kredytowej",
       "Gotowe w 2 minuty",
-      "Bezpłatne przeniesienie danych",
+      "Rezygnacja w każdej chwili",
       "Osobiste wsparcie",
     ],
     studiosLabel: "500+ salonów",
@@ -291,7 +291,7 @@ const pricing: LocaleSiteContent["pricing"] = {
   },
   trialBox: {
     title: "14 dni za darmo",
-    text: "Bez karty kredytowej • Rezygnacja w każdej chwili • Bezpłatne przeniesienie danych",
+    text: "Bez karty kredytowej • Rezygnacja w każdej chwili",
     points: ["Bez opłat za wdrożenie", "Rezygnacja co miesiąc", "Zgodność z RODO"],
   },
   comparison: {

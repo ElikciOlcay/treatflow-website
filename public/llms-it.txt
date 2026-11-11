@@ -33,7 +33,7 @@ Ultimo aggiornamento: 2026-11-05. Lingua: italiano. Questo file descrive il sito
 - [Prezzi](https://www.treatflow.io/it/prezzi): confronto dettagliato dei piani
 - Basic: 39 €/mese oppure 421 €/anno (35 €/mese). Gestione clienti, moduli con firma digitale, documentazione con note vocali, foto prima/dopo, note e attività del team, shop e prodotti, statistiche, personale e ruoli, supporto via email. Senza agenda appuntamenti.
 - Booking: 59 €/mese oppure 637 €/anno (53 €/mese). Tutto ciò che include Basic più agenda con colonne per operatori e cabine, prenotazioni online senza commissioni, lista d'attesa, promemoria via email, flussi automatici per i clienti, codici sconto, pagina di prenotazione multilingue, integrazioni (Google Calendar, Zapier, assistenti IA), supporto prioritario via email e chat.
-- Prezzi in euro, IVA esclusa. Prova gratuita di 14 giorni, senza carta di credito, nessun costo di attivazione, disdetta mensile, trasferimento dati gratuito.
+- Prezzi in euro, IVA esclusa. Prova gratuita di 14 giorni, senza carta di credito, nessun costo di attivazione, disdetta mensile.
 - Treatflow Pay (opzionale): 2,69% per pagamento online.
 
 ## Prova e registrazione
@@ -92,7 +92,7 @@ Sì. Tutti i dati sono crittografati e conservati su server nell'UE, a Francofor
 Sì, con Treatflow Pay. Per ogni servizio scegli nessun pagamento, un acconto o il pagamento completo. La commissione è del 2,69% per transazione.
 
 **Posso importare i dati dei miei clienti?**
-Sì, e il trasferimento è gratuito: il nostro supporto importa in sicurezza i dati nelle nuove schede clienti digitali.
+Sì. Importi gli elenchi clienti come file CSV nelle schede clienti digitali, con abbinamento dei campi e riconoscimento dei doppioni.
 
 **Posso disdire quando voglio?**
 Sì. Con il pagamento mensile puoi disdire in qualsiasi momento, con effetto alla fine del periodo di fatturazione. Nessuna durata minima, e puoi esportare tutti i tuoi dati.

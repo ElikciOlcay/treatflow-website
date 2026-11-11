@@ -62,7 +62,7 @@ export const clientRecordsEn: ClientRecordsContent = {
       {
         icon: "upload",
         title: "Bring your existing data",
-        text: "Already have a client list? Simply import it from Excel or CSV. Our team helps you move over.",
+        text: "Already have a client list? Simply import it as a CSV file, for example exported from Excel.",
       },
       {
         icon: "database",
@@ -74,7 +74,7 @@ export const clientRecordsEn: ClientRecordsContent = {
   howItWorks: {
     description: "Three steps to digital client records.",
     steps: [
-      { title: "Add or import clients", text: "Create new clients manually or import your existing list from Excel or CSV. Duplicates are detected automatically." },
+      { title: "Add or import clients", text: "Create new clients manually or import your existing list as a CSV file. Duplicates are detected automatically." },
       { title: "Fill the profile", text: "Store contact details, allergies, notes and photos in the profile. Completed forms are added automatically." },
       { title: "Everything ready at the next visit", text: "Open the client profile before the treatment – you see right away what was done last time and what to look out for." },
     ],
@@ -84,7 +84,7 @@ export const clientRecordsEn: ClientRecordsContent = {
     description: "Digital client records without limits – including import, search and GDPR compliance.",
     items: [
       { icon: "database", title: "Unlimited clients", text: "As many profiles as your salon needs – no surcharge per contact.", points: ["No client limit", "Stays fast", "Automatic backups"] },
-      { icon: "upload", title: "Data import", text: "Bring existing lists over from Excel or CSV. Help with the move included.", points: ["Excel & CSV", "Field mapping", "Duplicate detection"] },
+      { icon: "upload", title: "Data import", text: "Bring existing lists over as a CSV file – including exports from Excel.", points: ["CSV import", "Field mapping", "Duplicate detection"] },
       { icon: "shield", title: "GDPR-compliant", text: "Storage in the EU, encryption, subject access and erasure on request.", points: ["EU servers", "Encrypted", "Right to erasure"] },
       { icon: "search", title: "Fast search", text: "Find profiles by name, phone, email or treatment – in seconds.", points: ["Full-text search", "Filters", "Sorting"] },
       { icon: "camera", title: "Photos & history", text: "Before-and-after photos and treatments right in the profile, not in separate folders.", points: ["Photos in the profile", "Treatment history", "Notes"] },
@@ -117,7 +117,7 @@ export const clientRecordsEn: ClientRecordsContent = {
       {
         question: "Can I import my existing client data?",
         answer:
-          "Yes. Treatflow supports importing client data from Excel and CSV files. Our onboarding team helps you move your data from your previous system free of charge.",
+          "Yes. Treatflow imports client data from CSV files – simply export lists from Excel or your previous software as CSV. You map the fields during import, and duplicates are detected.",
       },
       {
         question: "Can Treatflow send automatic messages to my clients?",
