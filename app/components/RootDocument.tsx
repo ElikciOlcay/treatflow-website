@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import StickyMobileCTA from "./StickyMobileCTA";
 import AiSearchTrafficCapture from "./AiSearchTrafficCapture";
 import AdsAttributionCapture from "./AdsAttributionCapture";
@@ -116,6 +117,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <AdsAttributionCapture />
         <AiSearchTrafficCapture />
         <StickyMobileCTA />
+        {/* Vercel Web Analytics: cookielos, zählt Seitenaufrufe je Pfad und Quelle. */}
+        <Analytics />
       </body>
     </html>
   );
