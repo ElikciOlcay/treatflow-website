@@ -193,6 +193,17 @@ export const homeEs: HomeContent = {
     ctaNote: "Sin tarjeta de crédito. Cancela cuando quieras.",
   },
 
+  support: {
+    ariaLabel: "Atención personal desde el primer día",
+    badge: "Atención personal",
+    title: "Te acompañamos desde el primer día",
+    text: "Desde la configuración hasta el traspaso de los datos de tus clientes: nuestro equipo te acompaña personalmente en tus primeros pasos con Treatflow, para que trabajes con seguridad desde el primer día.",
+    trialCta: "Prueba gratis 14 días",
+    demoCta: "Reserva una demo gratuita",
+    imageAlt: "Atención personal del equipo de Treatflow",
+    chip: "Atención personal. Incluida.",
+  },
+
   pricing: {
     eyebrow: "Precios transparentes",
     titleBefore: "Precios claros,",

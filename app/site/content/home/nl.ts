@@ -194,6 +194,17 @@ export const homeNl: HomeContent = {
     ctaNote: "Geen creditcard nodig. Altijd opzegbaar.",
   },
 
+  support: {
+    ariaLabel: "Persoonlijke begeleiding vanaf dag één",
+    badge: "Persoonlijke begeleiding",
+    title: "We laten je niet alleen",
+    text: "Van de inrichting tot het overzetten van je klantgegevens: ons team begeleidt je persoonlijk bij je start met Treatflow – zodat jij en je team vanaf dag één met vertrouwen aan de slag gaan.",
+    trialCta: "Probeer 14 dagen gratis",
+    demoCta: "Gratis demo aanvragen",
+    imageAlt: "Persoonlijke begeleiding door het Treatflow-team",
+    chip: "Persoonlijk. Inbegrepen.",
+  },
+
   pricing: {
     eyebrow: "Heldere prijzen",
     titleBefore: "Eenvoudige prijzen –",

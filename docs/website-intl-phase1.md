@@ -165,7 +165,7 @@ DE teils WhatsApp/NiSV. Danach können die alten Market-Inhalte und `PricingSect
 - „Referenzen“-Link (`/#testimonials`) zielt auch auf DE ins Leere (kein `id="testimonials"` auf
   der Startseite) – schon vor diesem Branch so; parität beibehalten.
 - Nach dem Umbau ungenutzt (können weg, wenn niemand sie braucht): `ChallengeSelector`,
-  `ComparisonTable`, `BenefitStats`, `SupportTrustBanner`; `HomePageIntl` wird nur noch für Typen
+  `ComparisonTable`, `BenefitStats`; `HomePageIntl` wird nur noch für Typen
   (`app/i18n/locales/types.ts`, `markets/country-homes.ts`, `markets/home-pages.ts`) gebraucht –
   die alten Home-Inhalte dort sind jetzt tot und können mit aufgeräumt werden.
 - TR-Meta-Beschreibung nennt „İlk 100 işletmeye lansman fiyatları“ – prüfen, ob noch aktuell.

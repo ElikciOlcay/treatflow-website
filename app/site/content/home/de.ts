@@ -234,6 +234,17 @@ export const homeDe: HomeContent = {
     unsupported: "Dein Browser kann dieses Video nicht abspielen.",
   },
 
+  support: {
+    ariaLabel: "Persönliche Betreuung und Schulungen",
+    badge: "Persönliche Betreuung",
+    title: "Wir lassen dich nicht allein",
+    text: "Von der Einrichtung bis zur Schulung: Unser Team begleitet dich persönlich beim Start mit Treatflow – damit du und dein Team vom ersten Tag an sicher arbeiten.",
+    trialCta: "14 Tage kostenlos testen",
+    demoCta: "Kostenlose Demo buchen",
+    imageAlt: "Persönliche Betreuung und Schulung durch das Treatflow-Team",
+    chip: "Persönlich. Auf Deutsch. Inklusive.",
+  },
+
   pricing: {
     eyebrow: "Transparente Preise",
     titleBefore: "Einfache Preise -",
