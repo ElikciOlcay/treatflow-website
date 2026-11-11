@@ -137,7 +137,7 @@ export const shiftPlannerDe: ShiftPlannerContent = {
       {
         icon: "calendar-days",
         title: "Woche für Woche planen",
-        text: "Jede Mitarbeiterin bekommt pro Tag eine oder mehrere Schichten, auch geteilte Dienste mit Mittagspause. Die Stunden der Woche siehst du direkt neben dem Namen.",
+        text: "Jede Mitarbeiterin bekommt pro Tag eine oder mehrere Schichten, auch geteilte Dienste mit Mittagspause. Die Wochenstunden stehen gleich in der Spalte „Summe“.",
       },
       {
         icon: "plane",

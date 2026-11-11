@@ -128,7 +128,7 @@ export const shiftPlannerPl: ShiftPlannerContent = {
       {
         icon: "calendar-days",
         title: "Tydzień po tygodniu",
-        text: "Każda osoba dostaje dziennie jedną lub kilka zmian, także dzielonych z przerwą obiadową. Godziny w tygodniu widać tuż obok imienia.",
+        text: "Każda osoba dostaje dziennie jedną lub kilka zmian, także dzielonych z przerwą obiadową. Godziny w tygodniu widać w kolumnie „Suma”.",
       },
       {
         icon: "plane",

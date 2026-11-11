@@ -128,7 +128,7 @@ export const shiftPlannerTr: ShiftPlannerContent = {
       {
         icon: "calendar-days",
         title: "Haftadan haftaya planlayın",
-        text: "Her çalışan günde bir veya birden fazla vardiya alır, öğle aralı bölünmüş vardiyalar dahil. Haftanın toplam saatleri ismin hemen yanında görünür.",
+        text: "Her çalışan günde bir veya birden fazla vardiya alır, öğle aralı bölünmüş vardiyalar dahil. Haftanın toplam saatleri “Toplam” sütununda görünür.",
       },
       {
         icon: "plane",

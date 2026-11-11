@@ -128,7 +128,7 @@ export const shiftPlannerEs: ShiftPlannerContent = {
       {
         icon: "calendar-days",
         title: "Semana a semana",
-        text: "Cada persona tiene uno o varios turnos al día, también turnos partidos con pausa para comer. Las horas de la semana aparecen junto al nombre.",
+        text: "Cada persona tiene uno o varios turnos al día, también turnos partidos con pausa para comer. Las horas de la semana aparecen en la columna «Total».",
       },
       {
         icon: "plane",

@@ -128,7 +128,7 @@ export const shiftPlannerFr: ShiftPlannerContent = {
       {
         icon: "calendar-days",
         title: "Semaine après semaine",
-        text: "Chaque membre de l'équipe a un ou plusieurs créneaux par jour, y compris des journées coupées avec pause de midi. Les heures de la semaine s'affichent à côté du nom.",
+        text: "Chaque membre de l'équipe a un ou plusieurs créneaux par jour, y compris des journées coupées avec pause de midi. Les heures de la semaine s'affichent dans la colonne « Total ».",
       },
       {
         icon: "plane",

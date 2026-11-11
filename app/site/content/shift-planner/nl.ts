@@ -128,7 +128,7 @@ export const shiftPlannerNl: ShiftPlannerContent = {
       {
         icon: "calendar-days",
         title: "Week voor week plannen",
-        text: "Elke medewerker krijgt per dag één of meer diensten, ook gesplitste diensten met middagpauze. De uren van de week zie je direct naast de naam.",
+        text: "Elke medewerker krijgt per dag één of meer diensten, ook gesplitste diensten met middagpauze. De uren van de week staan in de kolom ‘Totaal’.",
       },
       {
         icon: "plane",

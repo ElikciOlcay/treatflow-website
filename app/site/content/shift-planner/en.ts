@@ -129,7 +129,7 @@ export const shiftPlannerEn: ShiftPlannerContent = {
       {
         icon: "calendar-days",
         title: "Plan week by week",
-        text: "Each team member gets one or more shifts per day, including split shifts with a lunch break. The week's hours are shown right next to the name.",
+        text: "Each team member gets one or more shifts per day, including split shifts with a lunch break. The week's hours add up in the “Total” column.",
       },
       {
         icon: "plane",

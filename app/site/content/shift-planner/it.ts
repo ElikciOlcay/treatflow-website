@@ -128,7 +128,7 @@ export const shiftPlannerIt: ShiftPlannerContent = {
       {
         icon: "calendar-days",
         title: "Settimana per settimana",
-        text: "Ogni collaboratrice ha uno o più turni al giorno, anche spezzati con pausa pranzo. Le ore della settimana compaiono accanto al nome.",
+        text: "Ogni collaboratrice ha uno o più turni al giorno, anche spezzati con pausa pranzo. Le ore della settimana compaiono nella colonna “Totale”.",
       },
       {
         icon: "plane",
