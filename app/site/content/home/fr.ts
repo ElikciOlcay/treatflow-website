@@ -303,7 +303,7 @@ export const homeFr: HomeContent = {
         answer: [
           "Basic (39 €/mois) comprend la ",
           { text: "gestion des clients", href: { page: "client-records" } },
-          " en illimité, la bibliothèque de formulaires, le générateur de formulaires par IA et la boutique. Booking (59 €/mois) y ajoute l'",
+          " en illimité, la bibliothèque de formulaires avec éditeur glisser-déposer et la boutique. Booking (59 €/mois) y ajoute l'",
           { text: "agenda de réservation", href: { page: "appointment-calendar" } },
           " professionnel avec votre propre lien de réservation et des ",
           { text: "rappels de rendez-vous", href: { page: "messaging" } },
@@ -348,7 +348,7 @@ export const homeFr: HomeContent = {
         answer: [
           "Dans la bibliothèque, vous trouvez des ",
           { text: "formulaires", href: { page: "forms" } },
-          " professionnels pour tous les soins esthétiques. Utilisez-les tels quels, adaptez-les avec le générateur IA ou personnalisez-les dans l'éditeur glisser-déposer. Les questionnaires numériques sont immédiatement opérationnels.",
+          " professionnels pour tous les soins esthétiques. Utilisez-les tels quels ou personnalisez-les dans l'éditeur glisser-déposer. Les questionnaires numériques sont immédiatement opérationnels.",
         ],
       },
       {

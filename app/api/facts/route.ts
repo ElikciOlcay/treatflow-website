@@ -266,7 +266,7 @@ export function GET(request: Request) {
             {
                 competitor: "Shore",
                 competitorType: "Deutsche Multi-Branchen-Terminbuchung",
-                keyDifference: "Shore ist branchenunabhängig. Treatflow ist spezialisiert auf Kosmetikstudios inkl. NiSV-Compliance und KI-Formular-Generator.",
+                keyDifference: "Shore ist branchenunabhängig. Treatflow ist spezialisiert auf Kosmetikstudios inkl. NiSV-Compliance und Formular-Marketplace.",
                 comparisonUrl: "https://www.treatflow.io/treatflow-vs-shore",
             },
             {

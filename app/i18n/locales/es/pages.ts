@@ -311,11 +311,11 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
       eyebrow: "Formularios de anamnesis y consentimiento",
       title: "Formularios digitales de anamnesis y consentimiento",
       subtitle:
-        "Envía la anamnesis y el consentimiento informado antes de la cita. Parte de plantillas de ejemplo, crea las tuyas con el generador de formularios con IA o deja que te ayudemos a configurarlas.",
+        "Envía la anamnesis y el consentimiento informado antes de la cita. Parte de plantillas de ejemplo, crea las tuyas en el editor de formularios o deja que te ayudemos a configurarlas.",
       bullets: [
         "Tus clientas rellenan los formularios antes de llegar",
         "Firma digital en cualquier dispositivo",
-        "Plantillas de ejemplo, generador con IA o configuración con nuestra ayuda",
+        "Plantillas de ejemplo, editor de formularios o configuración con nuestra ayuda",
         "Guardados de forma segura en la ficha de la clienta",
       ],
       image: {
@@ -326,7 +326,7 @@ export const pages: Pick<LocaleSiteContent, "coreFeatures" | "extraFeatures" | "
         { icon: Send, title: "Envío previo", desc: "Comparte los formularios por enlace antes de la visita: menos esperas en recepción." },
         { icon: Smartphone, title: "Adaptados al móvil", desc: "Tus clientas los completan en su teléfono en pocos minutos." },
         { icon: FileSignature, title: "Firma digital", desc: "Recoge el consentimiento de forma segura y sin imprimir." },
-        { icon: PenLine, title: "Plantillas y generador", desc: "Empieza con plantillas de ejemplo, crea las tuyas con el generador con IA o configúralas con nosotros." },
+        { icon: PenLine, title: "Plantillas y editor", desc: "Empieza con plantillas de ejemplo, crea las tuyas en el editor de arrastrar y soltar o configúralas con nosotros." },
         { icon: ShieldCheck, title: "Almacenamiento seguro", desc: "Los formularios se guardan en la ficha de la clienta, en infraestructura alojada en la UE." },
         { icon: ClipboardCheck, title: "Todo listo para tratar", desc: "Tu equipo ve los formularios completados antes de que empiece la cita." },
       ],

@@ -18,7 +18,7 @@ Stand: 2026-11-09. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website
 - [Online-Buchungen](https://www.treatflow.io/online-buchungen): persönlicher Buchungslink, 24/7, ohne Provision pro Buchung
 - [Kundenverwaltung](https://www.treatflow.io/kundenverwaltung): Kundenprofile mit Behandlungshistorie, Notizen und Fotos
 - [Kundenkartei Software](https://www.treatflow.io/kundenkartei-software): digitale Kundenkartei statt Papier oder Excel
-- [Formulare](https://www.treatflow.io/formulare): digitale Anamnese, Einwilligungen und Aufklärungsbögen mit digitaler Unterschrift, vorab per Link ausfüllbar; Formular-Marketplace und KI-Generator
+- [Formulare](https://www.treatflow.io/formulare): digitale Anamnese, Einwilligungen und Aufklärungsbögen mit digitaler Unterschrift, vorab per Link ausfüllbar; Formular-Marketplace und Drag & Drop Editor
 - [Dokumentation](https://www.treatflow.io/behandlungsdokumentation): Behandlungen mit Parametern, Produkten und Vorher-Nachher-Fotos festhalten, inkl. Sprachnotiz
 - [NiSV-Dokumentation](https://www.treatflow.io/nisv-dokumentation): Beratungsprotokolle und Behandlungsdokumentation nach NiSV (Laser, IPL, apparative Kosmetik)
 - [Nachrichten](https://www.treatflow.io/nachrichtenautomatisierung): automatische Terminbestätigungen, Erinnerungen und Follow-ups per WhatsApp und E-Mail

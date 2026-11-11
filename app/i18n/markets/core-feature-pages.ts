@@ -508,17 +508,17 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       eyebrow: "Consultation and consent forms",
       title: "Digital consultation and consent forms",
       subtitle:
-        "Send intake and consent forms ahead of the appointment. Try sample templates without signing up, then create your own with the form generator – or we help you set them up.",
+        "Send intake and consent forms ahead of the appointment. Try sample templates without signing up, then create your own in the form editor – or we help you set them up.",
       bullets: [
         "Clients complete forms before they arrive",
         "Digital signatures on any device",
-        "Sample templates, AI form generator, or we set forms up with you",
+        "Sample templates, drag-and-drop form editor, or we set forms up with you",
         "Stored securely with the client record",
       ],
       secondaryCta: { label: "Try sample forms", href: "/en/try-forms" },
       promo: {
         title: "Try sample forms without signing up",
-        text: "The templates below show how digital check-in works. You create forms for your studio with the AI generator, or we set them up together with you.",
+        text: "The templates below show how digital check-in works. You create forms for your studio in the form editor, or we set them up together with you.",
         href: "/en/try-forms",
         cta: "Open samples",
       },
@@ -530,7 +530,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
         { icon: Send, title: "Send in advance", desc: "Share forms by link before the visit - less waiting at reception." },
         { icon: Smartphone, title: "Mobile friendly", desc: "Clients complete forms on their phone in minutes." },
         { icon: FileSignature, title: "Digital signatures", desc: "Capture consent securely without printing." },
-        { icon: PenLine, title: "Templates & generator", desc: "Start from sample templates, build your own with the AI generator, or we set forms up with you." },
+        { icon: PenLine, title: "Templates & editor", desc: "Start from sample templates, build your own in the drag-and-drop editor, or we set forms up with you." },
         { icon: ShieldCheck, title: "Secure storage", desc: "Forms stay with the client record on EU-hosted infrastructure." },
         { icon: ClipboardCheck, title: "Ready to treat", desc: "Your team sees completed forms before the appointment starts." },
       ],
@@ -583,7 +583,7 @@ const pages: Record<CoreKey, Record<CoreLang, PageContent>> = {
       secondaryCta: { label: "Örnek formları deneyin", href: "/tr/try-forms" },
       promo: {
         title: "Kayıt olmadan örnek formları deneyin",
-        text: "Aşağıdaki şablonlar dijital ön kaydın nasıl işlediğini gösterir. Salonunuz için yapay zeka ile form üretebilir veya birlikte kurarız.",
+        text: "Aşağıdaki şablonlar dijital ön kaydın nasıl işlediğini gösterir. Salonunuz için formları editörde oluşturabilir veya birlikte kurarız.",
         href: "/tr/try-forms",
         cta: "Örnekleri aç",
       },

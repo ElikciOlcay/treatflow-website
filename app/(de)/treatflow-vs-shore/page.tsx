@@ -121,7 +121,7 @@ const comparisonRows = [
   },
   {
     feature: 'Anamnese-Formulare',
-    treatflow: 'Digital + KI-Generator',
+    treatflow: 'Digital + Vorlagen-Marketplace',
     shore: 'Nicht vorhanden',
     treatflowOk: true,
     shoreOk: false,

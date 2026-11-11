@@ -301,7 +301,7 @@ export const homeNl: HomeContent = {
         answer: [
           "Basic (€39/maand) bevat onbeperkt ",
           { text: "klantenbeheer", href: { page: "client-records" } },
-          ", de formulieren-Marketplace, de AI-formuliergenerator en de shop. Booking (€59/maand) voegt daar de professionele ",
+          ", de formulieren-Marketplace met drag-and-drop-editor en de shop. Booking (€59/maand) voegt daar de professionele ",
           { text: "online agenda", href: { page: "appointment-calendar" } },
           " aan toe, met je eigen boekingslink en automatische ",
           { text: "afspraakherinneringen", href: { page: "messaging" } },
@@ -346,7 +346,7 @@ export const homeNl: HomeContent = {
         answer: [
           "In de Marketplace vind je professionele ",
           { text: "formulieren", href: { page: "forms" } },
-          " voor allerlei beautybehandelingen. Gebruik ze zoals ze zijn, pas ze aan met de AI-generator of stel ze zelf samen met de drag-and-drop-editor. Digitale intakeformulieren zijn zo direct klaar voor gebruik.",
+          " voor allerlei beautybehandelingen. Gebruik ze zoals ze zijn of pas ze aan in de drag-and-drop-editor. Digitale intakeformulieren zijn zo direct klaar voor gebruik.",
         ],
       },
       {

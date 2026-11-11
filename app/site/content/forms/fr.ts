@@ -4,44 +4,44 @@ export const formsFr: FormsContent = {
   meta: {
     title: "Questionnaires de santé et consentements numériques pour instituts",
     description:
-      "Questionnaires de santé, fiches d'information et formulaires de consentement numériques pour instituts de beauté et centres de médecine esthétique : modèles prêts à l'emploi, générateur de formulaires par IA et éditeur glisser-déposer. Vos clients remplissent et signent avant leur rendez-vous.",
+      "Questionnaires de santé, fiches d'information et formulaires de consentement numériques pour instituts de beauté et centres de médecine esthétique : modèles prêts à l'emploi et éditeur glisser-déposer. Vos clients remplissent et signent avant leur rendez-vous.",
     keywords: [
       "questionnaire de santé esthétique",
       "fiche de renseignements client institut",
       "formulaire de consentement esthétique",
       "fiche anamnèse esthétique",
       "formulaires numériques institut",
-      "générateur de formulaires IA",
+      "créer formulaire institut",
       "signature électronique institut de beauté",
     ],
   },
-  dates: { modified: "2026-08-18", published: "2024-06-01" },
+  dates: { modified: "2026-11-11", published: "2024-06-01" },
   schema: {
     id: "formulare",
     webPage: {
       name: "Questionnaires de santé et consentements numériques pour instituts",
       description:
-        "Modèles prêts à l'emploi, générateur par IA et éditeur glisser-déposer pour questionnaires de santé et formulaires de consentement en institut.",
+        "Modèles prêts à l'emploi et éditeur glisser-déposer pour questionnaires de santé et formulaires de consentement en institut.",
     },
   },
   breadcrumb: "Formulaires",
   hero: {
-    eyebrow: "Formulaires et générateur IA",
+    eyebrow: "Formulaires et modèles",
     eyebrowIcon: "file-text",
     title: { before: "Des formulaires pour chaque ", highlight: "soin" },
-    description: "Bibliothèque de modèles, générateur IA et glisser-déposer. Utilisez des modèles ou créez vos propres formulaires en quelques minutes.",
-    chips: ["Générateur IA", "Bibliothèque de modèles", "Glisser-déposer"],
+    description: "Bibliothèque de modèles et éditeur glisser-déposer. Utilisez des modèles ou créez vos propres formulaires en quelques minutes.",
+    chips: ["Bibliothèque de modèles", "Glisser-déposer", "Signature électronique"],
     secondaryCta: { label: "Essayer les exemples", href: { page: "try-forms" } },
     capsules: [
       {
         question: "De quels formulaires un institut de beauté a-t-il besoin ?",
         answer:
-          "Au minimum d'un questionnaire de santé et de formulaires de consentement – et, pour les soins avec appareils comme le laser ou l'IPL, d'une information détaillée sur les risques. Treatflow fournit des modèles prêts à l'emploi et un générateur IA ; vos clients remplissent tout en ligne avant leur rendez-vous et les réponses sont enregistrées dans leur fiche client, conformément au RGPD.",
+          "Au minimum d'un questionnaire de santé et de formulaires de consentement – et, pour les soins avec appareils comme le laser ou l'IPL, d'une information détaillée sur les risques. Treatflow fournit des modèles prêts à l'emploi et un éditeur pour créer vos propres formulaires ; vos clients remplissent tout en ligne avant leur rendez-vous et les réponses sont enregistrées dans leur fiche client, conformément au RGPD.",
       },
     ],
     image: {
       src: "/images/mockups/fr/formulare-marketplace.png",
-      alt: "Bibliothèque de formulaires Treatflow avec modèles et générateur IA",
+      alt: "Bibliothèque de formulaires Treatflow avec modèles",
     },
   },
   understand: {
@@ -55,9 +55,9 @@ export const formsFr: FormsContent = {
         text: "La bibliothèque propose des questionnaires de santé, des fiches d'information et des consentements – y compris pour les soins laser et IPL.",
       },
       {
-        icon: "sparkles",
-        title: "Créer vos formulaires avec l'IA",
-        text: "Décrivez votre soin avec vos propres mots et l'IA crée le formulaire adapté. Vous pouvez ensuite tout modifier.",
+        icon: "layout",
+        title: "Vos formulaires en glisser-déposer",
+        text: "Créez vos propres formulaires dans l'éditeur – avec questions conditionnelles, croquis sur des modèles de visage et de corps, et signature.",
       },
       {
         icon: "send",
@@ -68,24 +68,24 @@ export const formsFr: FormsContent = {
   },
   tryBanner: {
     title: "Essayez des formulaires d'exemple sans inscription",
-    text: "Ces modèles montrent à quoi ressemble un accueil client sans papier. Les formulaires de votre institut, vous les créez avec le générateur IA – ou nous les configurons avec vous.",
+    text: "Ces modèles montrent à quoi ressemble un accueil client sans papier. Les formulaires de votre institut, vous les créez dans l'éditeur – ou nous les configurons avec vous.",
     button: "Ouvrir les exemples",
     href: { page: "try-forms" },
   },
   howItWorks: {
     description: "De la page blanche au formulaire terminé en trois étapes.",
     steps: [
-      { title: "Modèle ou IA", text: "Choisissez un modèle dans la bibliothèque ou décrivez le soin à l'IA – les champs se créent automatiquement." },
+      { title: "Modèle ou formulaire vierge", text: "Importez un modèle de la bibliothèque ou partez d'un formulaire vierge." },
       { title: "Ajuster par glisser-déposer", text: "Déplacez, ajoutez ou supprimez des champs. L'aperçu en direct montre ce que verra votre client." },
       { title: "Partager et archiver", text: "Envoi par lien ou QR code. Signature et horodatage sont enregistrés dans la fiche, conformément au RGPD." },
     ],
   },
   cards: {
     title: "Ce que vous obtenez",
-    description: "Trois façons de créer vos questionnaires et consentements – avec l'envoi et la signature électronique en prime.",
+    description: "Des modèles et votre propre éditeur pour questionnaires et consentements – avec l'envoi et la signature électronique en prime.",
     items: [
       { icon: "file-text", title: "Bibliothèque de formulaires", text: "Des modèles prêts à l'emploi pour les soins esthétiques – rédigés avec soin et utilisables tout de suite.", points: ["Questionnaires de santé", "Consentements", "Prêts à l'emploi"] },
-      { icon: "sparkles", title: "Générateur IA", text: "Décrivez le soin avec vos propres mots – l'IA crée le formulaire avec les champs nécessaires.", points: ["Champs automatiques", "En quelques secondes", "Modifiable ensuite"] },
+      { icon: "layers", title: "Croquis et questions conditionnelles", text: "Marquez des zones sur des modèles de visage ou de corps et n'affichez une question qu'en cas de réponse correspondante.", points: ["Visage et corps", "Affichage conditionnel", "Double signature"] },
       { icon: "layout", title: "Éditeur glisser-déposer", text: "Créez vos propres formulaires ou adaptez des modèles – avec tous les types de champs et un aperçu en direct.", points: ["Tous les types de champs", "Aperçu en direct", "Contrôle total"] },
       { icon: "send", title: "Envoyé à l'avance par lien", text: "Le formulaire part par e-mail avant le rendez-vous. Vous gagnez 10 à 15 minutes à l'accueil.", points: ["Par e-mail", "Sur son propre appareil", "Dans la fiche client"] },
       { icon: "pen-tool", title: "Signature électronique", text: "Le consentement se signe sur la tablette. Horodatage et archivage dans l'UE.", points: ["Sur l'appareil", "Horodatage", "Traçable"] },
@@ -126,7 +126,7 @@ export const formsFr: FormsContent = {
   },
   cta: {
     title: "Passez aux formulaires numériques",
-    description: "Essayez gratuitement pendant 14 jours – bibliothèque de modèles, générateur IA et glisser-déposer, sans carte bancaire.",
+    description: "Essayez gratuitement pendant 14 jours – bibliothèque de modèles, éditeur glisser-déposer et signature électronique, sans carte bancaire.",
     secondary: { label: "Essayer les exemples", href: { page: "try-forms" } },
   },
 };

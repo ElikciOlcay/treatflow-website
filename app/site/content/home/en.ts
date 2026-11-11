@@ -292,7 +292,7 @@ export const homeEn: HomeContent = {
         answer: [
           "Basic (€39/month) includes unlimited ",
           { text: "client management", href: { page: "client-records" } },
-          ", the form marketplace, the AI form generator and the shop. Booking (€59/month) adds the professional ",
+          ", the form marketplace with drag-and-drop editor and the shop. Booking (€59/month) adds the professional ",
           { text: "booking calendar", href: { page: "appointment-calendar" } },
           " with your own booking link and automatic ",
           { text: "appointment reminders", href: { page: "messaging" } },
@@ -337,7 +337,7 @@ export const homeEn: HomeContent = {
         answer: [
           "In the marketplace you'll find professional ",
           { text: "forms", href: { page: "forms" } },
-          " for all beauty treatments. Use them as they are, adapt them with the AI generator or customise them in the drag-and-drop editor. Digital consultation forms are ready to use straight away.",
+          " for all beauty treatments. Use them as they are or customise them in the drag-and-drop editor. Digital consultation forms are ready to use straight away.",
         ],
       },
       {

@@ -4,20 +4,20 @@ export const demoCopyFr = {
     titleBefore: 'Testez nos formulaires – ',
     titleHighlight: 'sans inscription',
     intro:
-      'Ces modèles d\'exemple vous permettent de découvrir le questionnaire de santé, le consentement éclairé et la signature électronique dans Treatflow. Créez vos propres formulaires avec le générateur – ou nous les configurons avec vous.',
+      'Ces modèles d\'exemple vous permettent de découvrir le questionnaire de santé, le consentement éclairé et la signature électronique dans Treatflow. Créez vos propres formulaires dans l\'éditeur – ou nous les configurons avec vous.',
     points: [
       'Uniquement des modèles d\'exemple',
-      'Créez les vôtres avec le générateur',
+      'Créez les vôtres dans l\'éditeur',
       'Nous vous aidons à créer vos formulaires',
       'Rien n\'est enregistré',
     ],
     noticeTitle: 'Modèles d\'exemple pour vous orienter',
     noticeText:
-      'Les formulaires ci-dessous montrent comment fonctionne l\'accueil numérique dans Treatflow – questionnaire de santé, consentement éclairé et signature. Les formulaires de votre institut, vous les créez avec le générateur IA, ou nous les configurons avec vous.',
-    generatorTitle: 'Créez les vôtres avec le générateur de formulaires',
+      'Les formulaires ci-dessous montrent comment fonctionne l\'accueil numérique dans Treatflow – questionnaire de santé, consentement éclairé et signature. Les formulaires de votre institut, vous les créez dans l\'éditeur de formulaires, ou nous les configurons avec vous.',
+    generatorTitle: 'Créez les vôtres dans l\'éditeur de formulaires',
     generatorText:
-      'Décrivez un soin avec vos propres mots. L\'IA crée les champs ; vous pouvez ensuite tout modifier.',
-    generatorCta: 'Comment fonctionne le générateur',
+      'Partez d\'un modèle ou d\'un formulaire vierge et ajoutez les champs par glisser-déposer – avec questions conditionnelles, croquis et signature.',
+    generatorCta: 'Comment fonctionne l\'éditeur',
     supportTitle: 'Nous vous aidons à créer vos formulaires',
     supportText:
       'Besoin de questionnaires de santé, de consentements ou de consignes post-soin pour vos prestations ? Nous les configurons avec vous lors de la prise en main.',
@@ -50,7 +50,7 @@ export const demoCopyFr = {
       'C\'est ainsi que le formulaire rempli apparaît ensuite dans la fiche client – avec signature et horodatage.',
     doneTitle: 'Voilà l\'accueil de vos clients',
     doneText:
-      'Dans Treatflow, vous adaptez les modèles, les envoyez par lien ou QR code, ou créez de nouveaux formulaires avec le générateur. Nous pouvons aussi les configurer avec vous.',
+      'Dans Treatflow, vous adaptez les modèles, les envoyez par lien ou QR code, ou créez de nouveaux formulaires dans l\'éditeur. Nous pouvons aussi les configurer avec vous.',
     trialCta: 'Essai gratuit de 14 jours',
     moreSamples: 'Voir d\'autres exemples',
     signatureSection: 'Signature',
@@ -70,7 +70,7 @@ export const demoCopyFr = {
   meta: {
     galleryTitle: 'Testez des formulaires d\'exemple sans inscription',
     galleryDescription:
-      'Ouvrez les modèles d\'exemple Treatflow et remplissez-les – sans compte. Créez vos propres formulaires avec le générateur, ou nous vous aidons à les configurer.',
+      'Ouvrez les modèles d\'exemple Treatflow et remplissez-les – sans compte. Créez vos propres formulaires dans l\'éditeur, ou nous vous aidons à les configurer.',
     playerTitle: (name: string) => `Tester : ${name}`,
     playerDescription: (description: string) =>
       `${description} Formulaire d'exemple – sans inscription, rien n'est enregistré.`,

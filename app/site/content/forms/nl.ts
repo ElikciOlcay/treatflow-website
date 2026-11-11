@@ -4,44 +4,44 @@ export const formsNl: FormsContent = {
   meta: {
     title: "Digitale intake- en toestemmingsformulieren voor schoonheidssalons",
     description:
-      "Digitale intake- en toestemmingsformulieren voor schoonheidssalons en klinieken: kant-en-klare sjablonen, AI-formuliergenerator en drag-and-drop-editor. Klanten vullen ze vóór hun afspraak in en ondertekenen digitaal.",
+      "Digitale intake- en toestemmingsformulieren voor schoonheidssalons en klinieken: kant-en-klare sjablonen en een drag-and-drop-editor. Klanten vullen ze vóór hun afspraak in en ondertekenen digitaal.",
     keywords: [
       "intakeformulier schoonheidssalon",
       "intakeformulier schoonheidsspecialiste",
       "anamneseformulier",
       "digitaal toestemmingsformulier",
-      "AI formuliergenerator",
+      "formulier maken salon",
       "formulieren schoonheidssalon",
       "digitale handtekening salon",
     ],
   },
-  dates: { modified: "2026-08-18", published: "2024-06-01" },
+  dates: { modified: "2026-11-11", published: "2024-06-01" },
   schema: {
     id: "formulare",
     webPage: {
       name: "Digitale intake- en toestemmingsformulieren voor schoonheidssalons",
       description:
-        "Kant-en-klare sjablonen, AI-formuliergenerator en drag-and-drop-editor voor intake- en toestemmingsformulieren in schoonheidssalons.",
+        "Kant-en-klare sjablonen en een drag-and-drop-editor voor intake- en toestemmingsformulieren in schoonheidssalons.",
     },
   },
   breadcrumb: "Formulieren",
   hero: {
-    eyebrow: "Formulieren & AI-generator",
+    eyebrow: "Formulieren & sjablonen",
     eyebrowIcon: "file-text",
     title: { before: "Formulieren voor elke ", highlight: "behandeling" },
-    description: "Marketplace, AI-generator en drag-and-drop. Gebruik kant-en-klare sjablonen of maak in een paar minuten je eigen formulier.",
-    chips: ["AI-generator", "Marketplace", "Drag-and-drop"],
+    description: "Marketplace-sjablonen en drag-and-drop-editor. Gebruik kant-en-klare sjablonen of maak in een paar minuten je eigen formulier.",
+    chips: ["Marketplace", "Drag-and-drop", "Digitale handtekening"],
     secondaryCta: { label: "Voorbeelden uitproberen", href: { page: "try-forms" } },
     capsules: [
       {
         question: "Welke formulieren heeft een schoonheidssalon nodig?",
         answer:
-          "In elk geval een intakeformulier en een toestemmingsformulier – en bij behandelingen met apparatuur zoals laser of IPL ook uitgebreide uitleg over de risico's. Treatflow heeft kant-en-klare sjablonen plus een AI-generator; klanten vullen alles vooraf digitaal in en de gegevens komen AVG-conform in het klantdossier.",
+          "In elk geval een intakeformulier en een toestemmingsformulier – en bij behandelingen met apparatuur zoals laser of IPL ook uitgebreide uitleg over de risico's. Treatflow heeft kant-en-klare sjablonen plus een formuliereditor voor je eigen formulieren; klanten vullen alles vooraf digitaal in en de gegevens komen AVG-conform in het klantdossier.",
       },
     ],
     image: {
       src: "/images/mockups/nl/formulare-marketplace.png",
-      alt: "Formulieren-Marketplace in Treatflow met sjablonen en AI-generator",
+      alt: "Formulieren-Marketplace in Treatflow met sjablonen",
     },
   },
   understand: {
@@ -55,9 +55,9 @@ export const formsNl: FormsContent = {
         text: "In de Marketplace vind je sjablonen voor intake, uitleg vooraf en toestemming – ook voor laser- en IPL-behandelingen.",
       },
       {
-        icon: "sparkles",
-        title: "Eigen formulieren maken met AI",
-        text: "Beschrijf je behandeling in je eigen woorden en de AI maakt er een passend formulier van. Daarna kun je alles aanpassen.",
+        icon: "layout",
+        title: "Eigen formulieren met drag-and-drop",
+        text: "Bouw je eigen formulieren in de editor – met voorwaardelijke vragen, schetsen op gezichts- en lichaamssjablonen en een handtekening.",
       },
       {
         icon: "send",
@@ -68,24 +68,24 @@ export const formsNl: FormsContent = {
   },
   tryBanner: {
     title: "Voorbeeldformulieren uitproberen, zonder account",
-    text: "Met deze sjablonen zie je hoe de digitale check-in werkt. Formulieren voor je eigen salon maak je met de AI-generator, of we zetten ze samen met je op.",
+    text: "Met deze sjablonen zie je hoe de digitale check-in werkt. Formulieren voor je eigen salon maak je in de formuliereditor, of we zetten ze samen met je op.",
     button: "Voorbeelden openen",
     href: { page: "try-forms" },
   },
   howItWorks: {
     description: "In drie stappen van een leeg blad naar een kant-en-klaar formulier.",
     steps: [
-      { title: "Sjabloon of AI", text: "Kies een sjabloon uit de Marketplace of beschrijf de behandeling aan de AI – de velden worden automatisch aangemaakt." },
+      { title: "Sjabloon of leeg formulier", text: "Importeer een sjabloon uit de Marketplace of begin met een leeg formulier." },
       { title: "Aanpassen met drag-and-drop", text: "Velden verplaatsen, toevoegen of verwijderen. In het live-voorbeeld zie je meteen wat je klant ziet." },
       { title: "Delen en bewaren", text: "Verstuur het via een link of QR-code. Handtekening en tijdstempel worden AVG-conform in het klantdossier opgeslagen." },
     ],
   },
   cards: {
     title: "Wat je krijgt",
-    description: "Drie manieren om tot je intake- en toestemmingsformulier te komen – plus versturen en digitaal ondertekenen.",
+    description: "Sjablonen en je eigen editor voor intake- en toestemmingsformulieren – plus versturen en digitaal ondertekenen.",
     items: [
       { icon: "file-text", title: "Formulieren-Marketplace", text: "Kant-en-klare sjablonen voor beautybehandelingen – professioneel opgesteld en direct te gebruiken.", points: ["Intake & uitleg vooraf", "Toestemmingsformulieren", "Direct klaar voor gebruik"] },
-      { icon: "sparkles", title: "AI-generator", text: "Beschrijf de behandeling in je eigen woorden – de AI maakt het formulier met de juiste velden.", points: ["Velden automatisch", "In een paar seconden", "Daarna aan te passen"] },
+      { icon: "layers", title: "Schetsen & voorwaardelijke vragen", text: "Markeer zones op gezichts- of lichaamssjablonen en toon vragen alleen bij een passend antwoord.", points: ["Gezicht & lichaam", "Voorwaardelijke weergave", "Dubbele handtekening"] },
       { icon: "layout", title: "Drag-and-drop-editor", text: "Maak je eigen formulieren of pas sjablonen aan – met alle veldtypen en een live-voorbeeld.", points: ["Alle veldtypen", "Live-voorbeeld", "Volledige controle"] },
       { icon: "send", title: "Vooraf via link", text: "Het formulier gaat vóór de afspraak per e-mail naar je klant. Dat scheelt 10–15 minuten aan de balie.", points: ["Per e-mail", "Op de eigen telefoon", "In het klantdossier"] },
       { icon: "pen-tool", title: "Digitale handtekening", text: "Toestemming ondertekenen op de tablet. Met tijdstempel, bewaard in de EU.", points: ["Op de tablet", "Tijdstempel", "Altijd na te gaan"] },
@@ -126,7 +126,7 @@ export const formsNl: FormsContent = {
   },
   cta: {
     title: "Klaar voor digitale formulieren?",
-    description: "Probeer het 14 dagen gratis – Marketplace, AI-generator en drag-and-drop, geen creditcard nodig.",
+    description: "Probeer het 14 dagen gratis – Marketplace, drag-and-drop-editor en digitale handtekening, geen creditcard nodig.",
     secondary: { label: "Voorbeelden uitproberen", href: { page: "try-forms" } },
   },
 };

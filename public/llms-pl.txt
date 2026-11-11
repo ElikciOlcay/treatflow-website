@@ -17,7 +17,7 @@ Ostatnia aktualizacja: 2026-11-05. Język: polski. Ten plik opisuje polską wers
 - [Kalendarz wizyt](https://www.treatflow.io/pl/kalendarz-wizyt): widok dnia, tygodnia i miesiąca z kolumnami dla pracowników i gabinetów
 - [Rezerwacje online](https://www.treatflow.io/pl/rezerwacje-online): własny link do rezerwacji 24/7, bez prowizji od rezerwacji
 - [Kartoteka klientów](https://www.treatflow.io/pl/kartoteka-klientow): profile klientów z historią zabiegów, notatkami i zdjęciami
-- [Formularze](https://www.treatflow.io/pl/formularze): karta wywiadu i zgody na zabieg z podpisem elektronicznym, wypełniane online przed wizytą; biblioteka gotowych formularzy i generator formularzy AI
+- [Formularze](https://www.treatflow.io/pl/formularze): karta wywiadu i zgody na zabieg z podpisem elektronicznym, wypełniane online przed wizytą; biblioteka gotowych formularzy i edytor „przeciągnij i upuść”
 - [Dokumentacja zabiegów](https://www.treatflow.io/pl/dokumentacja-zabiegow): notatki, parametry oraz zdjęcia przed i po dla każdego zabiegu, także notatki głosowe
 - [Przypomnienia](https://www.treatflow.io/pl/przypomnienia): automatyczne przypomnienia e-mail, mniej nieodwołanych wizyt
 - [Automatyzacje dla klientów](https://www.treatflow.io/pl/automatyzacje-dla-klientow): opieka pozabiegowa i odzyskiwanie klientów w kilku krokach
