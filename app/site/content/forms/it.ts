@@ -4,45 +4,45 @@ export const formsIt: FormsContent = {
   meta: {
     title: "Scheda anamnestica e consenso informato digitali per centri estetici",
     description:
-      "Schede anamnestiche, informative e moduli di consenso informato digitali per centri estetici e studi di medicina estetica: modelli pronti, generatore di moduli con IA ed editor drag & drop. I clienti compilano e firmano prima dell'appuntamento.",
+      "Schede anamnestiche, informative e moduli di consenso informato digitali per centri estetici e studi di medicina estetica: modelli pronti ed editor drag & drop. I clienti compilano e firmano prima dell'appuntamento.",
     keywords: [
       "scheda anamnestica centro estetico",
       "scheda anamnesi estetista",
       "modulo consenso informato estetica",
       "moduli digitali centro estetico",
-      "generatore moduli IA",
+      "creare moduli centro estetico",
       "modulo consenso informato laser",
       "modelli moduli estetica",
       "firma digitale centro estetico",
     ],
   },
-  dates: { modified: "2026-08-18", published: "2024-06-01" },
+  dates: { modified: "2026-11-11", published: "2024-06-01" },
   schema: {
     id: "formulare",
     webPage: {
       name: "Scheda anamnestica e consenso informato digitali per centri estetici",
       description:
-        "Modelli pronti, generatore con IA ed editor drag & drop per schede anamnestiche e moduli di consenso informato nei centri estetici.",
+        "Modelli pronti ed editor drag & drop per schede anamnestiche e moduli di consenso informato nei centri estetici.",
     },
   },
   breadcrumb: "Moduli",
   hero: {
-    eyebrow: "Moduli e generatore IA",
+    eyebrow: "Moduli e modelli",
     eyebrowIcon: "file-text",
     title: { before: "Moduli per ogni ", highlight: "trattamento" },
-    description: "Marketplace, generatore IA e drag & drop: usa i modelli pronti o crea i tuoi moduli in pochi minuti.",
-    chips: ["Generatore IA", "Marketplace", "Drag & drop"],
+    description: "Marketplace di modelli ed editor drag & drop: usa i modelli pronti o crea i tuoi moduli in pochi minuti.",
+    chips: ["Marketplace", "Drag & drop", "Firma digitale"],
     secondaryCta: { label: "Prova gli esempi", href: { page: "try-forms" } },
     capsules: [
       {
         question: "Di quali moduli ha bisogno un centro estetico?",
         answer:
-          "Come minimo la scheda anamnestica e il modulo di consenso informato; per i trattamenti con apparecchiature come laser o IPL, anche un'informativa dettagliata sui rischi. Treatflow offre modelli pronti e un generatore con IA: i clienti compilano tutto online prima dell'appuntamento e i dati finiscono nella scheda cliente nel rispetto del GDPR.",
+          "Come minimo la scheda anamnestica e il modulo di consenso informato; per i trattamenti con apparecchiature come laser o IPL, anche un'informativa dettagliata sui rischi. Treatflow offre modelli pronti e un editor per creare i tuoi moduli: i clienti compilano tutto online prima dell'appuntamento e i dati finiscono nella scheda cliente nel rispetto del GDPR.",
       },
     ],
     image: {
       src: "/images/mockups/it/formulare-marketplace.png",
-      alt: "Marketplace dei moduli Treatflow con modelli e generatore IA",
+      alt: "Marketplace dei moduli Treatflow con modelli",
     },
   },
   understand: {
@@ -56,9 +56,9 @@ export const formsIt: FormsContent = {
         text: "Nel marketplace trovi modelli di scheda anamnestica, informativa e consenso informato, anche per trattamenti laser e IPL.",
       },
       {
-        icon: "sparkles",
-        title: "Crea i tuoi moduli con l'IA",
-        text: "Descrivi il trattamento con parole tue e l'IA crea il modulo adatto. Poi puoi modificarlo come vuoi.",
+        icon: "layout",
+        title: "Crea i tuoi moduli con il drag & drop",
+        text: "Crea i tuoi moduli nell'editor, con domande condizionali, schizzi su modelli di viso e corpo e firma.",
       },
       {
         icon: "send",
@@ -69,24 +69,24 @@ export const formsIt: FormsContent = {
   },
   tryBanner: {
     title: "Prova i moduli di esempio senza registrarti",
-    text: "Questi modelli mostrano come funziona l'accettazione digitale. I moduli per il tuo centro li crei con il generatore IA, oppure li configuriamo insieme.",
+    text: "Questi modelli mostrano come funziona l'accettazione digitale. I moduli per il tuo centro li crei nell'editor, oppure li configuriamo insieme.",
     button: "Apri gli esempi",
     href: { page: "try-forms" },
   },
   howItWorks: {
     description: "Dal foglio bianco al modulo pronto in tre passaggi.",
     steps: [
-      { title: "Modello o IA", text: "Scegli un modello dal marketplace o descrivi il trattamento all'IA: i campi vengono creati automaticamente." },
+      { title: "Modello o modulo vuoto", text: "Importa un modello dal marketplace o parti da un modulo vuoto." },
       { title: "Personalizza con il drag & drop", text: "Sposta, aggiungi o elimina campi. L'anteprima in tempo reale mostra ciò che vedrà il cliente." },
       { title: "Condividi e archivia", text: "Invia il modulo tramite link o QR code. Firma e marca temporale vengono salvate nella scheda cliente nel rispetto del GDPR." },
     ],
   },
   cards: {
     title: "Cosa ottieni",
-    description: "Tre modi per creare anamnesi e consensi, più invio online e firma digitale.",
+    description: "Modelli e un editor tutto tuo per anamnesi e consensi, più invio online e firma digitale.",
     items: [
       { icon: "file-text", title: "Marketplace dei moduli", text: "Modelli pronti per i trattamenti estetici, redatti in modo professionale e subito utilizzabili.", points: ["Anamnesi e informativa", "Consenso informato", "Pronti all'uso"] },
-      { icon: "sparkles", title: "Generatore IA", text: "Descrivi il trattamento con parole tue: l'IA crea il modulo con i campi necessari.", points: ["Campi automatici", "In pochi secondi", "Modificabile in seguito"] },
+      { icon: "layers", title: "Schizzi e domande condizionali", text: "Segna le zone su modelli di viso o corpo e mostra le domande solo con la risposta giusta.", points: ["Viso e corpo", "Visualizzazione condizionale", "Doppia firma"] },
       { icon: "layout", title: "Editor drag & drop", text: "Crea i tuoi moduli o adatta i modelli, con tutti i tipi di campo e l'anteprima in tempo reale.", points: ["Tutti i tipi di campo", "Anteprima in tempo reale", "Pieno controllo"] },
       { icon: "send", title: "In anticipo via link", text: "Il modulo arriva via email prima dell'appuntamento. Alla reception risparmi 10–15 minuti.", points: ["Via email", "Dal proprio smartphone", "Nella scheda cliente"] },
       { icon: "pen-tool", title: "Firma digitale", text: "Il consenso informato si firma sul tablet, con marca temporale e archiviazione nell'UE.", points: ["Sul dispositivo", "Marca temporale", "Tracciabile"] },
@@ -127,7 +127,7 @@ export const formsIt: FormsContent = {
   },
   cta: {
     title: "Vuoi dire addio ai moduli di carta?",
-    description: "Prova gratis per 14 giorni marketplace, generatore IA ed editor drag & drop, senza carta di credito.",
+    description: "Prova gratis per 14 giorni marketplace, editor drag & drop e firma digitale, senza carta di credito.",
     secondary: { label: "Prova gli esempi", href: { page: "try-forms" } },
   },
 };

@@ -4,20 +4,20 @@ export const demoCopyNl = {
     titleBefore: 'Formulieren uitproberen – ',
     titleHighlight: 'zonder account',
     intro:
-      'Dit zijn voorbeeldsjablonen, zodat je digitale intake, toestemming en handtekening in Treatflow zelf kunt ervaren. Je eigen formulieren maak je met de formuliergenerator – of we helpen je ze op te zetten.',
+      'Dit zijn voorbeeldsjablonen, zodat je digitale intake, toestemming en handtekening in Treatflow zelf kunt ervaren. Je eigen formulieren maak je in de formuliereditor – of we helpen je ze op te zetten.',
     points: [
       'Alleen voorbeeldsjablonen',
-      'Eigen formulieren maken met de generator',
+      'Eigen formulieren maken in de editor',
       'We helpen je nieuwe formulieren op te zetten',
       'Er wordt niets opgeslagen',
     ],
     noticeTitle: 'Voorbeeldsjablonen ter oriëntatie',
     noticeText:
-      'De formulieren hieronder laten zien hoe de digitale check-in in Treatflow werkt – intake, toestemming en handtekening. Formulieren voor je eigen salon maak je met de AI-generator, of we zetten ze samen met je op.',
-    generatorTitle: 'Zelf maken met de formuliergenerator',
+      'De formulieren hieronder laten zien hoe de digitale check-in in Treatflow werkt – intake, toestemming en handtekening. Formulieren voor je eigen salon maak je in de formuliereditor, of we zetten ze samen met je op.',
+    generatorTitle: 'Zelf maken in de formuliereditor',
     generatorText:
-      'Beschrijf een behandeling in je eigen woorden. De AI maakt de velden; daarna kun je alles aanpassen.',
-    generatorCta: 'Zo werkt de generator',
+      'Begin met een sjabloon of een leeg formulier en sleep de velden erin die je nodig hebt – met voorwaardelijke vragen, schetsen en handtekening.',
+    generatorCta: 'Zo werkt de editor',
     supportTitle: 'We helpen je nieuwe formulieren op te zetten',
     supportText:
       'Heb je intake-, toestemmings- of nazorgformulieren nodig voor je behandelingen? Die zetten we samen met je op tijdens de onboarding.',
@@ -50,7 +50,7 @@ export const demoCopyNl = {
       'Zo komt het ingevulde formulier later in het klantdossier te staan – met handtekening en tijdstempel.',
     doneTitle: 'Dat was de check-in van je klant',
     doneText:
-      'In Treatflow pas je sjablonen aan, verstuur je ze via een link of QR-code, of maak je nieuwe formulieren met de generator. We kunnen ze ook samen met je opzetten.',
+      'In Treatflow pas je sjablonen aan, verstuur je ze via een link of QR-code, of maak je nieuwe formulieren in de editor. We kunnen ze ook samen met je opzetten.',
     trialCta: 'Probeer 14 dagen gratis',
     moreSamples: 'Meer voorbeelden openen',
     signatureSection: 'Handtekening',
@@ -70,7 +70,7 @@ export const demoCopyNl = {
   meta: {
     galleryTitle: 'Voorbeeldformulieren uitproberen zonder account',
     galleryDescription:
-      'Open voorbeeldsjablonen van Treatflow en vul ze in – zonder account. Maak je eigen formulieren met de formuliergenerator, of laat ons je helpen nieuwe formulieren op te zetten.',
+      'Open voorbeeldsjablonen van Treatflow en vul ze in – zonder account. Maak je eigen formulieren in de formuliereditor, of laat ons je helpen nieuwe formulieren op te zetten.',
     playerTitle: (name: string) => `${name} uitproberen`,
     playerDescription: (description: string) =>
       `${description} Voorbeeldformulier – zonder account, er wordt niets opgeslagen.`,

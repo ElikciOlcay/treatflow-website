@@ -300,7 +300,7 @@ export const homeEs: HomeContent = {
         answer: [
           "Basic (39 €/mes) incluye ",
           { text: "gestión de clientes", href: { page: "client-records" } },
-          " ilimitada, el marketplace de formularios, el generador de formularios con IA y la tienda. Booking (59 €/mes) añade la ",
+          " ilimitada, el marketplace de formularios con editor de arrastrar y soltar y la tienda. Booking (59 €/mes) añade la ",
           { text: "agenda de citas", href: { page: "appointment-calendar" } },
           " profesional con tu propio enlace de reservas y ",
           { text: "recordatorios de citas", href: { page: "messaging" } },
@@ -345,7 +345,7 @@ export const homeEs: HomeContent = {
         answer: [
           "En el marketplace encontrarás ",
           { text: "formularios", href: { page: "forms" } },
-          " profesionales para todo tipo de tratamientos estéticos. Úsalos tal cual, adáptalos con el generador de IA o personalízalos con el editor de arrastrar y soltar. Las fichas de anamnesis digitales están listas para usar desde el primer día.",
+          " profesionales para todo tipo de tratamientos estéticos. Úsalos tal cual o personalízalos con el editor de arrastrar y soltar. Las fichas de anamnesis digitales están listas para usar desde el primer día.",
         ],
       },
       {

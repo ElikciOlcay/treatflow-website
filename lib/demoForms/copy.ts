@@ -19,20 +19,20 @@ export function getDemoCopy(locale: DemoLocale) {
         titleBefore: 'Formları deneyin – ',
         titleHighlight: 'kayıt gerekmez',
         intro:
-          'Bunlar örnek şablonlardır; dijital anamnez, onam ve imzanın Treatflow\'da nasıl durduğunu gösterir. Kendi formlarınızı üreticiyle oluşturursunuz – veya birlikte kurarız.',
+          'Bunlar örnek şablonlardır; dijital anamnez, onam ve imzanın Treatflow\'da nasıl durduğunu gösterir. Kendi formlarınızı form editöründe oluşturursunuz – veya birlikte kurarız.',
         points: [
           'Yalnızca örnek şablonlar',
-          'Kendi formunuzu üreticiyle oluşturun',
+          'Kendi formunuzu editörde oluşturun',
           'Kurulumda birlikte hazırlarız',
           'Hiçbir şey kaydedilmez',
         ],
         noticeTitle: 'Yönlendirme için örnek şablonlar',
         noticeText:
-          'Aşağıdaki formlar dijital ön kaydın nasıl işlediğini gösterir – anamnez, onam ve imza. Salonunuzdaki formları üreticiyle veya birlikte oluşturursunuz.',
-        generatorTitle: 'Kendi formunuzu üreticiyle oluşturun',
+          'Aşağıdaki formlar dijital ön kaydın nasıl işlediğini gösterir – anamnez, onam ve imza. Salonunuzdaki formları form editöründe veya birlikte oluşturursunuz.',
+        generatorTitle: 'Kendi formunuzu editörde oluşturun',
         generatorText:
-          'Bir işlemi kendi cümlelerinizle yazın. Yapay zeka alanları kurar; sonrasında her şeyi düzenlersiniz.',
-        generatorCta: 'Üretici nasıl çalışır',
+          'Bir şablonla veya boş bir formla başlayın, alanları sürükle-bırakla ekleyin – koşullu sorular, çizimler ve imzayla.',
+        generatorCta: 'Editör nasıl çalışır',
         supportTitle: 'Yeni formları birlikte kurarız',
         supportText:
           'İşlemleriniz için anamnez, onam veya bakım formu mu lazım? Kurulumda birlikte hazırlarız.',
@@ -65,7 +65,7 @@ export function getDemoCopy(locale: DemoLocale) {
           'Tamamlanan form daha sonra müşteri kaydında böyle durur – imza ve zaman damgasıyla.',
         doneTitle: 'Müşteri ön kaydı böyle biter',
         doneText:
-          'Treatflow\'da şablonları uyarlar, link veya QR ile gönderir ya da üreticiyle yeni form oluşturursunuz. Kurulumda da yardımcı oluruz.',
+          'Treatflow\'da şablonları uyarlar, link veya QR ile gönderir ya da editörde yeni form oluşturursunuz. Kurulumda da yardımcı oluruz.',
         trialCta: '14 gün ücretsiz deneyin',
         moreSamples: 'Daha fazla örnek aç',
         signatureSection: 'İmza',
@@ -85,7 +85,7 @@ export function getDemoCopy(locale: DemoLocale) {
       meta: {
         galleryTitle: 'Kayıt olmadan örnek formları deneyin',
         galleryDescription:
-          'Treatflow örnek şablonlarını açın ve doldurun – hesap gerekmez. Kendi formlarınızı üreticiyle oluşturun veya birlikte kuralım.',
+          'Treatflow örnek şablonlarını açın ve doldurun – hesap gerekmez. Kendi formlarınızı editörde oluşturun veya birlikte kuralım.',
         playerTitle: (name: string) => `${name} deneyin`,
         playerDescription: (description: string) =>
           `${description} Örnek form – kayıt yok, hiçbir şey kaydedilmez.`,
@@ -101,20 +101,20 @@ export function getDemoCopy(locale: DemoLocale) {
         titleBefore: 'Try forms – ',
         titleHighlight: 'no sign-up needed',
         intro:
-          'These are sample templates so you can feel digital intake, consent and signature in Treatflow. Build your own forms with the form generator – or we help you set them up.',
+          'These are sample templates so you can feel digital intake, consent and signature in Treatflow. Build your own forms in the form editor – or we help you set them up.',
         points: [
           'Sample templates only',
-          'Create your own with the generator',
+          'Create your own in the editor',
           'We help you set up new forms',
           'Nothing is saved',
         ],
         noticeTitle: 'Sample templates for orientation',
         noticeText:
-          'The forms below show how digital check-in works in Treatflow – intake, consent and signature. You create forms for your studio with the AI generator, or we set them up together with you.',
-        generatorTitle: 'Create your own with the form generator',
+          'The forms below show how digital check-in works in Treatflow – intake, consent and signature. You create forms for your studio in the form editor, or we set them up together with you.',
+        generatorTitle: 'Create your own in the form editor',
         generatorText:
-          'Describe a treatment in your own words. The AI builds the fields; you can edit everything afterwards.',
-        generatorCta: 'How the generator works',
+          'Start from a template or a blank form and drag in the fields you need – with conditional questions, sketches and signatures.',
+        generatorCta: 'How the editor works',
         supportTitle: 'We help you set up new forms',
         supportText:
           'Need intake, consent or aftercare forms for your treatments? We set them up with you during onboarding.',
@@ -147,7 +147,7 @@ export function getDemoCopy(locale: DemoLocale) {
           'This is how the completed form later sits on the client record – with signature and timestamp.',
         doneTitle: 'That was your client check-in',
         doneText:
-          'In Treatflow you adapt templates, send them by link or QR code, or create new forms with the generator. We can also set them up with you.',
+          'In Treatflow you adapt templates, send them by link or QR code, or create new forms in the editor. We can also set them up with you.',
         trialCta: 'Start 14-day free trial',
         moreSamples: 'Open more samples',
         signatureSection: 'Signature',
@@ -167,7 +167,7 @@ export function getDemoCopy(locale: DemoLocale) {
       meta: {
         galleryTitle: 'Try sample forms without signing up',
         galleryDescription:
-          'Open Treatflow sample templates and fill them in – no account. Create your own with the form generator, or we help you set up new forms.',
+          'Open Treatflow sample templates and fill them in – no account. Create your own in the form editor, or we help you set up new forms.',
         playerTitle: (name: string) => `Try ${name}`,
         playerDescription: (description: string) =>
           `${description} Sample form – no sign-up, nothing is saved.`,
@@ -182,20 +182,20 @@ export function getDemoCopy(locale: DemoLocale) {
       titleBefore: 'Formulare testen – ',
       titleHighlight: 'ohne dich anzumelden',
       intro:
-        'Die Formulare hier sind Beispiele. So erlebst du digitale Anamnese, Aufklärung und Unterschrift im Check-in. Eigene Formulare erstellst du mit dem Formular-Generator – oder wir legen sie mit dir an.',
+        'Die Formulare hier sind Beispiele. So erlebst du digitale Anamnese, Aufklärung und Unterschrift im Check-in. Eigene Formulare erstellst du im Formular-Editor – oder wir legen sie mit dir an.',
       points: [
         'Nur Beispiele zum Ausprobieren',
-        'Eigene Formulare mit dem Generator',
+        'Eigene Formulare im Editor',
         'Wir helfen beim Anlegen',
         'Nichts wird gespeichert',
       ],
       noticeTitle: 'Musterformulare zur Orientierung',
       noticeText:
-        'Die folgenden Vorlagen zeigen, wie der digitale Check-in in Treatflow abläuft – Anamnese, Aufklärung und Unterschrift. Formulare für dein Studio erstellst du mit dem KI-Generator, oder wir richten sie gemeinsam mit dir ein.',
-      generatorTitle: 'Eigene Formulare mit dem Generator erstellen',
+        'Die folgenden Vorlagen zeigen, wie der digitale Check-in in Treatflow abläuft – Anamnese, Aufklärung und Unterschrift. Formulare für dein Studio erstellst du im Formular-Editor, oder wir richten sie gemeinsam mit dir ein.',
+      generatorTitle: 'Eigene Formulare im Editor erstellen',
       generatorText:
-        'Beschreibe eine Behandlung in eigenen Worten. Die KI baut die Felder – danach kannst du alles anpassen.',
-      generatorCta: 'So funktioniert der Generator',
+        'Starte mit einer Vorlage oder einem leeren Formular und stelle die Felder per Drag & Drop zusammen – mit bedingten Fragen, Skizzen und Unterschrift.',
+      generatorCta: 'So funktioniert der Editor',
       supportTitle: 'Wir legen Formulare mit dir an',
       supportText:
         'Du brauchst Anamnese, Einwilligung oder Nachsorge für deine Behandlungen? Wir richten die Formulare mit dir ein.',
@@ -228,7 +228,7 @@ export function getDemoCopy(locale: DemoLocale) {
         'Genau so landet das ausgefüllte Formular später in der Kundenkartei – mit Unterschrift und Zeitstempel.',
       doneTitle: 'Das war der Check-in deiner Kundinnen',
       doneText:
-        'In Treatflow passt du Vorlagen an, sendest sie per Link oder QR-Code oder erstellst neue Formulare mit dem Generator. Wir legen sie auch gerne mit dir an.',
+        'In Treatflow passt du Vorlagen an, sendest sie per Link oder QR-Code oder erstellst neue Formulare im Editor. Wir legen sie auch gerne mit dir an.',
       trialCta: '14 Tage kostenlos testen',
       moreSamples: 'Weitere Beispiele öffnen',
       signatureSection: 'Unterschrift',
@@ -249,7 +249,7 @@ export function getDemoCopy(locale: DemoLocale) {
     meta: {
       galleryTitle: 'Beispiel-Formulare ohne Anmeldung testen',
       galleryDescription:
-        'Treatflow-Beispielformulare öffnen und ausfüllen – ohne Account. Eigene Formulare erstellst du mit dem Formular-Generator, oder wir helfen beim Anlegen.',
+        'Treatflow-Beispielformulare öffnen und ausfüllen – ohne Account. Eigene Formulare erstellst du im Formular-Editor, oder wir helfen beim Anlegen.',
       playerTitle: (name: string) => `${name} live testen`,
       playerDescription: (description: string) =>
         `${description} Beispiel-Formular – ohne Anmeldung, nichts wird gespeichert.`,

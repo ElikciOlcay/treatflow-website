@@ -299,7 +299,7 @@ export const homeDe: HomeContent = {
         "Kunden-Workflows",
         "Rabattcodes",
         "Mehrsprachige Buchungsseite",
-        "Integrationen (Lexware, Google Kalender, Zapier, SumUp)",
+        "Integrationen (Lexware, Google Kalender, Zapier, SumUp, KI-Assistenten)",
         "Priority E-Mail- und Chat-Support",
       ],
       cta: "14 Tage gratis testen",
@@ -354,7 +354,7 @@ export const homeDe: HomeContent = {
         answer: [
           "Basic (39 Euro/Monat) enthält unbegrenzte ",
           { text: "Kundenverwaltung", href: { page: "client-records" } },
-          ", Formular-Marketplace, KI-Generator und Shop-Integration. Booking (59 Euro/Monat) hat zusätzlich den professionellen ",
+          ", Formular-Marketplace mit Drag & Drop Editor und Shop-Integration. Booking (59 Euro/Monat) hat zusätzlich den professionellen ",
           { text: "Buchungskalender", href: { page: "appointment-calendar" } },
           " mit Buchungslink und automatische ",
           { text: "Terminerinnerungen", href: { page: "messaging" } },
@@ -399,7 +399,7 @@ export const homeDe: HomeContent = {
         answer: [
           "Im Marketplace findest du professionelle ",
           { text: "Formulare", href: { page: "forms" } },
-          " für alle Beauty-Behandlungen. Du kannst sie direkt verwenden, mit dem KI-Generator anpassen oder mit dem Drag & Drop Editor individualisieren. Auch ",
+          " für alle Beauty-Behandlungen. Du kannst sie direkt verwenden oder mit dem Drag & Drop Editor an dein Studio anpassen. Auch ",
           { text: "digitale Anamnesebögen", href: "/digitale-anamnese-kosmetikstudio" },
           " sind sofort verfügbar.",
         ],

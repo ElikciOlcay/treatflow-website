@@ -4,20 +4,20 @@ export const demoCopyIt = {
     titleBefore: 'Prova i moduli – ',
     titleHighlight: 'senza registrarti',
     intro:
-      'Questi modelli di esempio ti fanno provare in prima persona anamnesi, consenso informato e firma digitali in Treatflow. I tuoi moduli li crei con il generatore di moduli, oppure ti aiutiamo noi a configurarli.',
+      'Questi modelli di esempio ti fanno provare in prima persona anamnesi, consenso informato e firma digitali in Treatflow. I tuoi moduli li crei nell\'editor dei moduli, oppure ti aiutiamo noi a configurarli.',
     points: [
       'Solo modelli di esempio',
-      'Crea i tuoi moduli con il generatore',
+      'Crea i tuoi moduli nell\'editor',
       'Ti aiutiamo a configurare nuovi moduli',
       'Non viene salvato nulla',
     ],
     noticeTitle: 'Modelli di esempio per orientarti',
     noticeText:
-      "I moduli qui sotto mostrano come funziona l'accettazione digitale in Treatflow: anamnesi, consenso informato e firma. I moduli per il tuo centro li crei con il generatore IA, oppure li configuriamo insieme.",
-    generatorTitle: 'Crea i tuoi moduli con il generatore',
+      "I moduli qui sotto mostrano come funziona l'accettazione digitale in Treatflow: anamnesi, consenso informato e firma. I moduli per il tuo centro li crei nell'editor dei moduli, oppure li configuriamo insieme.",
+    generatorTitle: 'Crea i tuoi moduli nell\'editor',
     generatorText:
-      "Descrivi un trattamento con parole tue. L'IA crea i campi e poi puoi modificare tutto come vuoi.",
-    generatorCta: 'Come funziona il generatore',
+      "Parti da un modello o da un modulo vuoto e aggiungi i campi con il drag & drop, con domande condizionali, schizzi e firma.",
+    generatorCta: 'Come funziona l\'editor',
     supportTitle: 'Ti aiutiamo a configurare nuovi moduli',
     supportText:
       "Ti servono moduli di anamnesi, consenso informato o indicazioni post-trattamento per i tuoi trattamenti? Li configuriamo insieme a te durante l'onboarding.",
@@ -50,7 +50,7 @@ export const demoCopyIt = {
       'Ecco come apparirà poi il modulo compilato nella scheda cliente, con firma e data/ora.',
     doneTitle: "Questa era l'accettazione del tuo cliente",
     doneText:
-      'In Treatflow personalizzi i modelli, li invii tramite link o codice QR oppure crei nuovi moduli con il generatore. Possiamo anche configurarli insieme a te.',
+      'In Treatflow personalizzi i modelli, li invii tramite link o codice QR oppure crei nuovi moduli nell\'editor. Possiamo anche configurarli insieme a te.',
     trialCta: 'Prova gratis per 14 giorni',
     moreSamples: 'Apri altri esempi',
     signatureSection: 'Firma',
@@ -70,7 +70,7 @@ export const demoCopyIt = {
   meta: {
     galleryTitle: 'Prova i moduli di esempio senza registrarti',
     galleryDescription:
-      'Apri e compila i modelli di esempio di Treatflow, senza account. Crea i tuoi moduli con il generatore, oppure ti aiutiamo a configurare nuovi moduli.',
+      'Apri e compila i modelli di esempio di Treatflow, senza account. Crea i tuoi moduli nell\'editor, oppure ti aiutiamo a configurare nuovi moduli.',
     playerTitle: (name: string) => `Prova: ${name}`,
     playerDescription: (description: string) =>
       `${description} Modulo di esempio: nessuna registrazione, non viene salvato nulla.`,

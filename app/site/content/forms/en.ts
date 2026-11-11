@@ -4,43 +4,43 @@ export const formsEn: FormsContent = {
   meta: {
     title: "Digital Consultation & Consent Forms for Salons and Clinics",
     description:
-      "Digital consultation, medical history and consent forms for beauty salons and aesthetic clinics: ready-made templates, AI form generator and drag & drop editor. Clients fill in and sign before their appointment.",
+      "Digital consultation, medical history and consent forms for beauty salons and aesthetic clinics: ready-made templates and a drag & drop form editor. Clients fill in and sign before their appointment.",
     keywords: [
       "beauty salon consultation form",
       "client consultation form",
       "digital consent form salon",
       "medical history form aesthetics",
-      "AI form generator",
+      "form builder",
       "consent form templates salon",
     ],
   },
-  dates: { modified: "2026-08-18", published: "2024-06-01" },
+  dates: { modified: "2026-11-11", published: "2024-06-01" },
   schema: {
     id: "formulare",
     webPage: {
       name: "Digital Consultation & Consent Forms for Salons and Clinics",
       description:
-        "Ready-made templates, AI form generator and drag & drop editor for consultation and consent forms in beauty salons and aesthetic clinics.",
+        "Ready-made templates and a drag & drop editor for consultation and consent forms in beauty salons and aesthetic clinics.",
     },
   },
   breadcrumb: "Forms",
   hero: {
-    eyebrow: "Forms & AI generator",
+    eyebrow: "Forms & templates",
     eyebrowIcon: "file-text",
     title: { before: "Forms for every ", highlight: "treatment" },
-    description: "Marketplace, AI generator and drag & drop. Use templates or create your own forms in minutes.",
-    chips: ["AI generator", "Marketplace", "Drag & drop"],
+    description: "Marketplace templates and a drag & drop editor. Use templates or create your own forms in minutes.",
+    chips: ["Marketplace", "Drag & drop", "Digital signature"],
     secondaryCta: { label: "Try sample forms", href: { page: "try-forms" } },
     capsules: [
       {
         question: "Which forms does a beauty salon need?",
         answer:
-          "At a minimum, a consultation form covering medical history and a consent form – plus detailed pre-treatment information for device-based treatments such as laser or IPL. Treatflow provides ready-made templates and an AI generator; clients fill them in digitally before their visit and the data is stored GDPR-compliantly in the client record.",
+          "At a minimum, a consultation form covering medical history and a consent form – plus detailed pre-treatment information for device-based treatments such as laser or IPL. Treatflow provides ready-made templates and a form editor for your own forms; clients fill them in digitally before their visit and the data is stored GDPR-compliantly in the client record.",
       },
     ],
     image: {
       src: "/images/mockups/en/formulare-marketplace.png",
-      alt: "Treatflow forms marketplace with templates and AI generator",
+      alt: "Treatflow forms marketplace with templates",
     },
   },
   understand: {
@@ -54,9 +54,9 @@ export const formsEn: FormsContent = {
         text: "The marketplace has templates for consultations, treatment information and consent – including for laser and IPL treatments.",
       },
       {
-        icon: "sparkles",
-        title: "Create your own forms with AI",
-        text: "Describe your treatment in your own words and the AI builds the right form for you. Afterwards you can adjust everything.",
+        icon: "layout",
+        title: "Build your own forms with drag & drop",
+        text: "Build your own forms in the editor – with conditional questions, sketches on face and body templates, and signatures.",
       },
       {
         icon: "send",
@@ -67,24 +67,24 @@ export const formsEn: FormsContent = {
   },
   tryBanner: {
     title: "Try sample forms – no sign-up needed",
-    text: "These templates show how digital check-in works. Create forms for your own salon with the AI generator – or we'll set them up with you.",
+    text: "These templates show how digital check-in works. Create forms for your own salon in the form editor – or we'll set them up with you.",
     button: "Open sample forms",
     href: { page: "try-forms" },
   },
   howItWorks: {
     description: "From a blank page to a finished form in three steps.",
     steps: [
-      { title: "Template or AI", text: "Pick a marketplace template or describe the treatment to the AI – the fields are created automatically." },
+      { title: "Template or blank form", text: "Import a marketplace template or start with a blank form." },
       { title: "Adjust with drag & drop", text: "Move, add or remove fields. The live preview shows exactly what your client will see." },
       { title: "Share and archive", text: "Send by link or QR code. Signature and timestamp are stored GDPR-compliantly in the client record." },
     ],
   },
   cards: {
     title: "What you get",
-    description: "Three ways to create consultation and consent forms – plus sending and digital signatures.",
+    description: "Templates and your own editor for consultation and consent forms – plus sending and digital signatures.",
     items: [
       { icon: "file-text", title: "Forms marketplace", text: "Ready-made templates for beauty treatments – professionally written and ready to use.", points: ["Consultation & information", "Consent forms", "Ready to use"] },
-      { icon: "sparkles", title: "AI generator", text: "Describe the treatment in your own words – the AI builds the form with the fields you need.", points: ["Fields created automatically", "In seconds", "Editable afterwards"] },
+      { icon: "layers", title: "Sketches & conditional questions", text: "Mark areas on face or body templates and show questions only when a matching answer is given.", points: ["Face & body", "Conditional display", "Double signature"] },
       { icon: "layout", title: "Drag & drop editor", text: "Build your own forms or adapt templates – with every field type and a live preview.", points: ["All field types", "Live preview", "Full control"] },
       { icon: "send", title: "Sent in advance by link", text: "The form goes out by email before the appointment. Saves 10–15 minutes at reception.", points: ["By email", "On their own device", "Saved to the client profile"] },
       { icon: "pen-tool", title: "Digital signature", text: "Clients sign consent on the tablet. Timestamped and archived in the EU.", points: ["On the device", "Timestamp", "Fully traceable"] },
@@ -125,7 +125,7 @@ export const formsEn: FormsContent = {
   },
   cta: {
     title: "Ready for digital forms?",
-    description: "Try it free for 14 days – marketplace, AI generator and drag & drop, no credit card required.",
+    description: "Try it free for 14 days – marketplace, drag & drop editor and digital signatures, no credit card required.",
     secondary: { label: "Try sample forms", href: { page: "try-forms" } },
   },
 };

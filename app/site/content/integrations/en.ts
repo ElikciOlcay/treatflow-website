@@ -109,7 +109,7 @@ export const integrationsEn: IntegrationsContent = {
       {
         question: "Can I use Treatflow with ChatGPT or Claude?",
         answer:
-          "Yes. Add Treatflow as a connector in your AI assistant and sign in with your Treatflow account. You can then ask about appointments, free slots, clients or revenue. Access is read-only by default; if you allow it, the assistant can also create and reschedule appointments, with every change logged. Treatment records, forms and photos are never shared.",
+          "Yes. Add Treatflow as a connector in your AI assistant and sign in with your Treatflow account. You can then ask about appointments, free slots, clients or revenue. Access is read-only by default; if you allow it, the assistant can also create and reschedule appointments and create or update clients and products, with every change logged. It can't cancel or delete anything, and treatment records, forms and photos are never shared.",
       },
       {
         question: "What is the Zapier integration for?",

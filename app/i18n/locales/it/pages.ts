@@ -225,11 +225,11 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
     eyebrow: "Moduli di anamnesi e consenso",
     title: "Anamnesi e consenso informato in digitale",
     subtitle:
-      "Invia i moduli di anamnesi e consenso prima dell'appuntamento. Parti dai modelli, crea i tuoi moduli con il generatore IA – oppure li configuriamo insieme a te.",
+      "Invia i moduli di anamnesi e consenso prima dell'appuntamento. Parti dai modelli, crea i tuoi moduli nell'editor – oppure li configuriamo insieme a te.",
     bullets: [
       "Le clienti compilano i moduli prima di arrivare",
       "Firma digitale su qualsiasi dispositivo",
-      "Modelli, generatore di moduli con IA o configurazione insieme a noi",
+      "Modelli, editor dei moduli o configurazione insieme a noi",
       "Salvati in modo sicuro nella scheda cliente",
     ],
     image: {
@@ -240,7 +240,7 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
       { icon: Send, title: "Invio anticipato", desc: "Condividi i moduli tramite link prima della visita – meno attesa alla reception." },
       { icon: Smartphone, title: "Ottimizzati per smartphone", desc: "Le clienti li compilano dal telefono in pochi minuti." },
       { icon: FileSignature, title: "Firma digitale", desc: "Raccogli il consenso in modo sicuro, senza stampare nulla." },
-      { icon: PenLine, title: "Modelli e generatore", desc: "Parti dai modelli, crea i tuoi moduli con il generatore IA oppure li configuriamo insieme a te." },
+      { icon: PenLine, title: "Modelli ed editor", desc: "Parti dai modelli, crea i tuoi moduli nell'editor drag & drop oppure li configuriamo insieme a te." },
       { icon: ShieldCheck, title: "Archiviazione sicura", desc: "I moduli restano nella scheda cliente, su un'infrastruttura ospitata nell'UE." },
       { icon: ClipboardCheck, title: "Pronta per il trattamento", desc: "Il team vede i moduli compilati prima che l'appuntamento inizi." },
     ],

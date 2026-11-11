@@ -237,11 +237,11 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
     eyebrow: "Intake- en toestemmingsformulieren",
     title: "Digitale intake- en toestemmingsformulieren",
     subtitle:
-      "Verstuur intake- en toestemmingsformulieren vóór de afspraak. Begin met kant-en-klare sjablonen, maak je eigen formulieren met de formuliergenerator – of laat ons ze samen met je inrichten.",
+      "Verstuur intake- en toestemmingsformulieren vóór de afspraak. Begin met kant-en-klare sjablonen, maak je eigen formulieren in de formuliereditor – of laat ons ze samen met je inrichten.",
     bullets: [
       "Klanten vullen formulieren in vóór ze binnenkomen",
       "Digitale handtekening op elk apparaat",
-      "Sjablonen, AI-formuliergenerator of samen met ons ingericht",
+      "Sjablonen, formuliereditor of samen met ons ingericht",
       "Veilig opgeslagen bij het klantdossier",
     ],
     image: {
@@ -252,7 +252,7 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
       { icon: Send, title: "Vooraf versturen", desc: "Deel formulieren via een link vóór het bezoek – minder wachten bij de balie." },
       { icon: Smartphone, title: "Mobielvriendelijk", desc: "Klanten vullen formulieren in een paar minuten in op hun telefoon." },
       { icon: FileSignature, title: "Digitale handtekening", desc: "Leg toestemming veilig vast zonder te printen." },
-      { icon: PenLine, title: "Sjablonen & generator", desc: "Start met sjablonen, bouw je eigen formulieren met de AI-generator, of richt ze samen met ons in." },
+      { icon: PenLine, title: "Sjablonen & editor", desc: "Start met sjablonen, bouw je eigen formulieren in de drag-and-drop-editor, of richt ze samen met ons in." },
       { icon: ShieldCheck, title: "Veilige opslag", desc: "Formulieren blijven bij het klantdossier, gehost in de EU." },
       { icon: ClipboardCheck, title: "Klaar om te behandelen", desc: "Je team ziet ingevulde formulieren al vóór de afspraak begint." },
     ],

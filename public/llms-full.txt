@@ -34,7 +34,7 @@ Beauty salons and beauty institutes, aesthetic clinics and aesthetic medicine pr
 - Shift planner: weekly shifts, templates, holidays and absences per staff member; online booking only offers times within planned shifts
 - Online booking: own booking link, 24/7, no commission per booking; waitlist; discount codes; multilingual booking page
 - Client records: profiles, treatment history, notes, photos; unlimited clients
-- Forms: digital consultation/intake and consent forms with digital signature, sent before the appointment; form marketplace, AI form generator, drag-and-drop editor
+- Forms: digital consultation/intake and consent forms with digital signature, sent before the appointment; form marketplace and drag-and-drop editor (conditional questions, sketches, double signature)
 - Treatment records: parameters, products, before-and-after photos, voice dictation with optional AI refinement
 - Email reminders and confirmations
 - Client workflows: multi-step automations (aftercare, rebooking, win-back)

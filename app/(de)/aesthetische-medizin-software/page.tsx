@@ -74,7 +74,7 @@ const faqs = [
     },
     {
         question: 'Welche Software für Ästhetikkliniken hat integrierte KI-Funktionen?',
-        answer: 'Treatflow hat KI direkt eingebaut: In der Dokumentation diktiert ihr Notizen; Treatflow macht daraus Text und kann ihn optional mit KI glätten. Formulare erstellt ihr aus Vorlagen, im Editor oder mit dem KI-Formular-Generator. Im Dashboard beantwortet Treatflow AI Fragen zu Terminen, Umsätzen und freien Slots und entwirft E-Mails an einzelne Patientinnen – Änderungen erst nach deiner Bestätigung. Treatflow schreibt die Akte nicht vollautomatisch.',
+        answer: 'Treatflow hat KI direkt eingebaut: In der Dokumentation diktiert ihr Notizen; Treatflow macht daraus Text und kann ihn optional mit KI glätten. Über KI-Assistenten wie Claude oder ChatGPT (MCP) fragt ihr Termine, freie Zeiten, Stammdaten und Umsätze ab; auf Wunsch dürfen sie auch Termine anlegen und verschieben – jede Änderung wird protokolliert. Behandlungsdokumentation, Anamnese, Formulare und Fotos sieht der Assistent nie. Treatflow schreibt die Akte nicht vollautomatisch.',
     },
     {
         question: 'Welche Software für Ästhetikkliniken hat integriertes Reporting und Mitarbeiter-Umsätze?',

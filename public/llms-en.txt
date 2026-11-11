@@ -18,7 +18,7 @@ Last updated: 2026-11-05. Language: English. This file describes the English web
 - [Shift planner](https://www.treatflow.io/en/shift-planner): plan shifts, holidays and absences week by week; online booking only shows times within planned shifts
 - [Online booking](https://www.treatflow.io/en/online-booking): your own booking link, open 24/7, no commission per booking
 - [Client records](https://www.treatflow.io/en/client-records): client profiles with treatment history, notes and photos
-- [Forms](https://www.treatflow.io/en/forms): digital consultation and consent forms with digital signature, filled in before the appointment via a link; form marketplace and AI form generator
+- [Forms](https://www.treatflow.io/en/forms): digital consultation and consent forms with digital signature, filled in before the appointment via a link; form marketplace and drag-and-drop form editor
 - [Treatment records](https://www.treatflow.io/en/treatment-documentation): notes, parameters, products and before-and-after photos per treatment, including voice dictation
 - [Reminders](https://www.treatflow.io/en/messaging): automated email appointment reminders to reduce no-shows
 - [Client workflows](https://www.treatflow.io/en/client-workflows): multi-step automations for aftercare, rebooking and win-back with wait times and conditions

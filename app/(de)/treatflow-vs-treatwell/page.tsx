@@ -129,7 +129,7 @@ const comparisonRows = [
   },
   {
     feature: 'Anamnese-Formulare',
-    treatflow: 'Marketplace + KI-Generator',
+    treatflow: 'Marketplace + Drag & Drop Editor',
     treatwell: 'Nicht vorhanden',
     treatflowOk: true,
     treatwellOk: false,

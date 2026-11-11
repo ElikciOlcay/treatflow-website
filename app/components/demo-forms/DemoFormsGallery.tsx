@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, CheckCircle, ClipboardCheck, Lock, Sparkles, Users } from 'lucide-react';
+import { ArrowRight, CheckCircle, ClipboardCheck, LayoutTemplate, Lock, Users } from 'lucide-react';
 import { FormDemoCards } from '../FormDemoSection';
 import {
   DEMO_FORMS_FEATURE_PATH,
@@ -60,7 +60,7 @@ export default function DemoFormsGallery({ locale }: { locale: DemoLocale }) {
         <div className="max-w-7xl mx-auto grid gap-5 md:grid-cols-2">
           <div className="rounded-2xl border border-gray-100 bg-gray-50 p-6">
             <div className="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-4">
-              <Sparkles className="h-5 w-5" />
+              <LayoutTemplate className="h-5 w-5" />
             </div>
             <h2 className="text-lg font-bold text-gray-900 mb-2">{copy.gallery.generatorTitle}</h2>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">{copy.gallery.generatorText}</p>

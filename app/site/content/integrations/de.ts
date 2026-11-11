@@ -4,7 +4,7 @@ export const integrationsDe: IntegrationsContent = {
   meta: {
     title: "Integrationen & Apps für dein Kosmetikstudio",
     description:
-      "Verbinde Treatflow mit Lexware Office, Google Kalender, SumUp, Zapier u. v. m. Buchhaltung, Kartenzahlung, Online-Bezahlung und Automatisierung – alles in einer Plattform.",
+      "Verbinde Treatflow mit Lexware Office, Google Kalender, SumUp, Zapier und KI-Assistenten wie Claude oder ChatGPT – Buchhaltung, Kartenzahlung und Automatisierung in einer Plattform.",
     keywords: [
       "Treatflow Integrationen",
       "Kosmetikstudio Software Schnittstellen",
@@ -17,6 +17,8 @@ export const integrationsDe: IntegrationsContent = {
       "Buchhaltung Kosmetikstudio",
       "Terminkalender Sync",
       "AbaNinja Schweiz",
+      "Kosmetikstudio Software ChatGPT",
+      "Claude MCP Kosmetikstudio",
     ],
     openGraph: {
       title: "Integrationen & Apps",
@@ -30,12 +32,13 @@ export const integrationsDe: IntegrationsContent = {
     eyebrow: "Integrationen",
     eyebrowIcon: "plug",
     title: { before: "Apps verbinden, ", highlight: "Daten", after: " synchron" },
-    description: "Lexware, SumUp, Google Kalender, Zapier und mehr – einmal verbinden, überall aktuell.",
+    description: "Lexware, SumUp, Google Kalender, Zapier, KI-Assistenten und mehr – einmal verbinden, überall aktuell.",
     chips: [
       { text: "Lexware", feature: "accounting" },
       { text: "SumUp Solo", feature: "sumup" },
       "Google Kalender",
       "Zapier",
+      "KI-Assistenten (MCP)",
     ],
     secondaryCta: { label: "Zur Kasse", href: { page: "point-of-sale" } },
     tiles: [
@@ -44,7 +47,7 @@ export const integrationsDe: IntegrationsContent = {
       { name: "Google", category: "Kalender", gradient: "from-emerald-500 to-teal-600", icon: "calendar" },
       { name: "Zapier", category: "Automatisierung", gradient: "from-orange-500 to-amber-600", icon: "zap" },
       { name: "Treatflow Pay", category: "Online-Zahlung", gradient: "from-violet-500 to-purple-600", icon: "wallet", feature: "pay" },
-      { name: "AbaNinja", category: "Schweiz", gradient: "from-red-500 to-rose-600", icon: "building", feature: "accounting" },
+      { name: "Claude & ChatGPT", category: "KI-Assistenten", gradient: "from-fuchsia-500 to-pink-600", icon: "bot" },
     ],
   },
   understand: {
@@ -72,13 +75,13 @@ export const integrationsDe: IntegrationsContent = {
     description: "In drei Schritten verbunden – ohne technisches Vorwissen.",
     steps: [
       { title: "App auswählen", text: "Unter Studio-Einstellungen > Apps die gewünschte Integration wählen." },
-      { title: "Konto verbinden", text: "Einmalig beim Anbieter anmelden – z. B. Lexware, Google, SumUp oder Zapier." },
+      { title: "Konto verbinden", text: "Einmalig beim Anbieter anmelden – z. B. Lexware, Google, SumUp, Zapier, Claude oder ChatGPT." },
       { title: "Automatisch synchron", text: "Termine, Kunden und Workflows laufen ab sofort zusammen." },
     ],
   },
   cards: {
     title: "Diese Apps sind integriert",
-    description: "Von Buchhaltung über Kartenzahlung bis Automatisierung.",
+    description: "Von Buchhaltung über Kartenzahlung bis Automatisierung und KI-Assistenten.",
     items: [
       {
         icon: "receipt",
@@ -121,6 +124,12 @@ export const integrationsDe: IntegrationsContent = {
         points: ["7.000+ Apps", "Webhooks", "Ohne Code"],
       },
       {
+        icon: "bot",
+        title: "KI-Assistenten (MCP)",
+        text: "Verbinde Claude, ChatGPT und andere Assistenten und frag nach Terminen, freien Zeiten, Kunden oder Umsatz.",
+        points: ["Standardmäßig nur lesend", "Medizinische Daten bleiben in Treatflow", "Jederzeit trennbar"],
+      },
+      {
         icon: "building",
         title: "Swiss21 AbaNinja",
         text: "Schweizer Buchhaltung: Kunden sync und QR-Rechnungen aus Treatflow.",
@@ -135,7 +144,7 @@ export const integrationsDe: IntegrationsContent = {
       {
         question: "Welche Apps kann ich mit Treatflow verbinden?",
         answer:
-          "Treatflow lässt sich direkt mit Lexware Office (Buchhaltung DE), Swiss21 AbaNinja (Buchhaltung CH), Google Kalender (Terminsynchronisation), SumUp (Kartenzahlung) und Treatflow Pay (Online-Bezahlung) verbinden. Über Zapier erreichst du zusätzlich mehr als 7.000 weitere Apps wie Google Sheets, Mailchimp oder dein CRM.",
+          "Treatflow lässt sich direkt mit Lexware Office (Buchhaltung DE), Swiss21 AbaNinja (Buchhaltung CH), Google Kalender (Terminsynchronisation), SumUp (Kartenzahlung), Treatflow Pay (Online-Bezahlung) und KI-Assistenten wie Claude oder ChatGPT über das Model Context Protocol (MCP) verbinden. Über Zapier erreichst du zusätzlich mehr als 7.000 weitere Apps wie Google Sheets, Mailchimp oder dein CRM.",
       },
       {
         question: "Wie synchronisiere ich meine Termine mit dem Google Kalender?",
@@ -153,6 +162,11 @@ export const integrationsDe: IntegrationsContent = {
         answer:
           "Ja. Mit der App „Gutscheine“ unter Einstellungen → Apps erscheint auf deiner Buchungsseite der Link „Gutschein kaufen“. Kundinnen wählen Betrag und Variante (PDF per E-Mail, per Post oder Abholung im Studio) und zahlen per Treatflow Pay oder Überweisung. Die App ist nur zusammen mit der Treatflow Kasse verfügbar, weil die Gutscheine dort eingelöst werden.",
         feature: "vouchers",
+      },
+      {
+        question: "Kann ich Treatflow mit ChatGPT oder Claude nutzen?",
+        answer:
+          "Ja. Füge Treatflow in deinem KI-Assistenten als Konnektor hinzu und melde dich mit deinem Treatflow-Konto an. Dann kannst du nach Terminen, freien Zeiten, Kunden oder Umsätzen fragen. Standardmäßig ist der Zugriff nur lesend. Wenn du es erlaubst, darf der Assistent auch Termine anlegen und verschieben, Kunden und Produkte anlegen und ändern sowie Ausgaben für die Kasse erfassen – jede Änderung wird protokolliert. Stornieren und Löschen ist nicht möglich, und Behandlungsdokumentation, Anamnese, Formulare und Fotos werden nie weitergegeben.",
       },
       {
         question: "Wofür brauche ich die Zapier-Integration?",
@@ -182,7 +196,7 @@ export const integrationsDe: IntegrationsContent = {
   },
   cta: {
     title: "Vernetzte Tools für dein Studio",
-    description: "14 Tage kostenlos testen – Lexware, SumUp, Google Kalender und Zapier in Minuten verbinden.",
+    description: "14 Tage kostenlos testen – Lexware, SumUp, Google Kalender, Zapier und deinen KI-Assistenten in Minuten verbinden.",
     secondary: { label: "Alle Funktionen", href: { page: "features" } },
   },
 };

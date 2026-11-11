@@ -18,7 +18,7 @@ Ultimo aggiornamento: 2026-11-05. Lingua: italiano. Questo file descrive il sito
 - [Pianificatore turni](https://www.treatflow.io/it/pianificazione-turni): turni, ferie e assenze settimana per settimana; la prenotazione online mostra solo orari nei turni pianificati
 - [Prenotazioni online](https://www.treatflow.io/it/prenotazioni-online): il tuo link di prenotazione, attivo 24/7, senza commissioni
 - [Schede clienti](https://www.treatflow.io/it/schede-clienti): anagrafica, storico dei trattamenti, note e foto
-- [Moduli](https://www.treatflow.io/it/moduli): scheda anamnestica e consenso informato con firma digitale, compilati online prima dell'appuntamento; marketplace dei moduli e generatore con IA
+- [Moduli](https://www.treatflow.io/it/moduli): scheda anamnestica e consenso informato con firma digitale, compilati online prima dell'appuntamento; marketplace dei moduli ed editor drag & drop
 - [Documentazione dei trattamenti](https://www.treatflow.io/it/documentazione-trattamenti): note, parametri e foto prima/dopo per ogni trattamento, anche con note vocali
 - [Promemoria](https://www.treatflow.io/it/messaggistica): promemoria automatici via email che riducono i no-show
 - [Flussi clienti](https://www.treatflow.io/it/flussi-clienti): post-trattamento e richiamo dei clienti inattivi, automatizzati in più passaggi

@@ -18,7 +18,7 @@ Dernière mise à jour : 2026-11-05. Langue : français. Ce fichier décrit le s
 - [Planning d'équipe](https://www.treatflow.io/fr/planning-equipe) : créneaux, congés et absences semaine par semaine ; la réservation en ligne n'affiche que les horaires des créneaux planifiés
 - [Réservation en ligne](https://www.treatflow.io/fr/reservation-en-ligne) : votre page de réservation 24h/24, sans commission par rendez-vous
 - [Fiches clients](https://www.treatflow.io/fr/fiches-clients) : profils clients avec historique des soins, notes et photos
-- [Formulaires](https://www.treatflow.io/fr/formulaires) : questionnaires et consentements numériques avec signature électronique, remplis à l'avance via un lien ; bibliothèque de formulaires et générateur par IA
+- [Formulaires](https://www.treatflow.io/fr/formulaires) : questionnaires et consentements numériques avec signature électronique, remplis à l'avance via un lien ; bibliothèque de formulaires et éditeur glisser-déposer
 - [Suivi des soins](https://www.treatflow.io/fr/documentation-soins) : notes, paramètres et photos avant/après pour chaque soin, y compris par dictée vocale
 - [Rappels](https://www.treatflow.io/fr/messagerie) : rappels automatiques par e-mail pour limiter les rendez-vous non honorés
 - [Parcours clients](https://www.treatflow.io/fr/parcours-clients) : suivi après soin et relance des clients, automatisés en plusieurs étapes
