@@ -195,6 +195,17 @@ export const homeFr: HomeContent = {
     ctaNote: "Sans carte bancaire. Sans engagement.",
   },
 
+  support: {
+    ariaLabel: "Accompagnement personnalisé dès le premier jour",
+    badge: "Accompagnement personnalisé",
+    title: "Nous vous accompagnons dès le premier jour",
+    text: "De la configuration au transfert de vos données clients : notre équipe vous accompagne personnellement dans vos débuts avec Treatflow – pour que vous et votre équipe travailliez sereinement dès le premier jour.",
+    trialCta: "Essayer 14 jours gratuitement",
+    demoCta: "Réserver une démo gratuite",
+    imageAlt: "Accompagnement personnalisé par l'équipe Treatflow",
+    chip: "Personnalisé. Inclus.",
+  },
+
   pricing: {
     eyebrow: "Des tarifs transparents",
     titleBefore: "Des prix simples –",

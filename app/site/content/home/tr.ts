@@ -196,6 +196,17 @@ export const homeTr: HomeContent = {
     ctaNote: "Kredi kartı gerekmez. İstediğiniz zaman iptal edin.",
   },
 
+  support: {
+    ariaLabel: "İlk günden birebir destek",
+    badge: "Birebir destek",
+    title: "Sizi yalnız bırakmıyoruz",
+    text: "Kurulumdan müşteri verilerinizin aktarımına kadar: Ekibimiz Treatflow'a başlarken size birebir eşlik eder – böylece siz ve ekibiniz ilk günden itibaren güvenle çalışırsınız.",
+    trialCta: "14 gün ücretsiz deneyin",
+    demoCta: "Ücretsiz demo talep edin",
+    imageAlt: "Treatflow ekibinden birebir destek",
+    chip: "Birebir destek. Pakete dahil.",
+  },
+
   pricing: {
     eyebrow: "Şeffaf fiyatlar",
     titleBefore: "Net fiyatlar –",

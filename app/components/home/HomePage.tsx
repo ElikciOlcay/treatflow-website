@@ -5,6 +5,7 @@ import ProductVideoSection from "@/app/components/ProductVideoSection";
 import HomeHero from "./HomeHero";
 import StudioDayTimeline from "./StudioDayTimeline";
 import HomeFeatureGrid from "./HomeFeatureGrid";
+import HomeSupportBanner from "./HomeSupportBanner";
 import HomeFinalCta from "./HomeFinalCta";
 import HomeSeoLinks from "./HomeSeoLinks";
 import type { HomeContent } from "@/app/site/content/home/types";
@@ -32,11 +33,14 @@ export default function HomePage({ content, market }: { content: HomeContent; ma
       {/* 5. Produktfilm – nur wenn es ein Video in dieser Sprache gibt */}
       {content.video && <ProductVideoSection {...content.video} />}
 
-      {/* 6. Preise und FAQ */}
+      {/* 6. Persönliche Betreuung */}
+      <HomeSupportBanner content={content.support} market={market} />
+
+      {/* 7. Preise und FAQ */}
       <PricingSection content={content.pricing} market={market} />
       <FAQSection content={content.faq} market={market} />
 
-      {/* 7. Abschluss */}
+      {/* 8. Abschluss */}
       <HomeFinalCta content={content.cta} market={market} />
 
       {/* SEO: kompakt, nach dem CTA – kein Conversion-Ballast */}

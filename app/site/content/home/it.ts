@@ -193,6 +193,17 @@ export const homeIt: HomeContent = {
     ctaNote: "Senza carta di credito. Disdici quando vuoi.",
   },
 
+  support: {
+    ariaLabel: "Assistenza personale fin dal primo giorno",
+    badge: "Assistenza personale",
+    title: "Al tuo fianco fin dal primo giorno",
+    text: "Dalla configurazione al trasferimento dei dati dei tuoi clienti: il nostro team ti accompagna di persona nei primi passi con Treatflow, così tu e il tuo team lavorate con sicurezza fin dal primo giorno.",
+    trialCta: "Inizia la prova gratuita di 14 giorni",
+    demoCta: "Prenota una demo gratuita",
+    imageAlt: "Assistenza personale del team Treatflow",
+    chip: "Assistenza personale. Inclusa.",
+  },
+
   pricing: {
     eyebrow: "Prezzi trasparenti",
     titleBefore: "Prezzi chiari,",

@@ -85,6 +85,19 @@ export type ProductVideoContent = {
   unsupported: string;
 };
 
+/** Persönliche Betreuung mit Foto. `demoCta` wird nur dort gezeigt, wo es eine Demo gibt (DE). */
+export type HomeSupportContent = {
+  ariaLabel: string;
+  badge: string;
+  title: string;
+  text: string;
+  trialCta: string;
+  demoCta: string;
+  imageAlt: string;
+  /** Kurzer Hinweis unter dem Foto, z. B. „Persönlich. Auf Deutsch. Inklusive.“ */
+  chip: string;
+};
+
 export type PricingPlanContent = {
   name: string;
   /** z. B. "€39" bzw. "₺1.490" */
@@ -176,6 +189,7 @@ export type HomeContent = {
   features: HomeFeaturesContent;
   /** Nur mit Video in dieser Sprache (die deutschen Videos sind deutsch). */
   video?: ProductVideoContent;
+  support: HomeSupportContent;
   pricing: PricingContent;
   faq: FaqContent;
   cta: HomeCtaContent;

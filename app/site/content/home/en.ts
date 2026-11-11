@@ -185,6 +185,17 @@ export const homeEn: HomeContent = {
     ctaNote: "No credit card. Cancel anytime.",
   },
 
+  support: {
+    ariaLabel: "Personal support from day one",
+    badge: "Personal support",
+    title: "You won't be left on your own",
+    text: "From setup to moving your client data: our team supports you personally as you get started with Treatflow – so you and your team can work with confidence from day one.",
+    trialCta: "Start your 14-day free trial",
+    demoCta: "Book a free demo",
+    imageAlt: "Personal support from the Treatflow team",
+    chip: "Personal. Included.",
+  },
+
   pricing: {
     eyebrow: "Clear pricing",
     titleBefore: "Simple pricing –",

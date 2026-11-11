@@ -194,6 +194,17 @@ export const homePl: HomeContent = {
     ctaNote: "Bez podawania karty. Rezygnacja w każdej chwili.",
   },
 
+  support: {
+    ariaLabel: "Osobiste wsparcie od pierwszego dnia",
+    badge: "Osobiste wsparcie",
+    title: "Jesteśmy przy Tobie od pierwszego dnia",
+    text: "Od konfiguracji po przeniesienie danych klientów: nasz zespół osobiście wspiera Cię na starcie z Treatflow – tak, aby od pierwszego dnia wszystko działało sprawnie.",
+    trialCta: "Wypróbuj 14 dni za darmo",
+    demoCta: "Umów bezpłatną prezentację",
+    imageAlt: "Osobiste wsparcie zespołu Treatflow",
+    chip: "Osobiście. W cenie.",
+  },
+
   pricing: {
     eyebrow: "Przejrzyste ceny",
     titleBefore: "Proste ceny –",
