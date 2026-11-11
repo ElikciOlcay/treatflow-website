@@ -17,7 +17,7 @@
 - [Agenda de citas](https://www.treatflow.io/es/calendario-citas): vista por día, semana y mes con columnas por profesional y cabina
 - [Reservas online](https://www.treatflow.io/es/reservas-online): tu enlace de reservas, 24/7, sin comisión por reserva
 - [Fichas de cliente](https://www.treatflow.io/es/fichas-clientes): datos, historial de tratamientos, notas y fotos
-- [Formularios](https://www.treatflow.io/es/formularios): anamnesis y consentimientos digitales con firma digital, rellenados antes de la cita desde un enlace; marketplace de formularios y generador con IA
+- [Formularios](https://www.treatflow.io/es/formularios): anamnesis y consentimientos digitales con firma digital, rellenados antes de la cita desde un enlace; marketplace de formularios y editor de arrastrar y soltar
 - [Documentación de tratamientos](https://www.treatflow.io/es/documentacion-tratamientos): notas, parámetros y fotos de antes y después por tratamiento, también con notas de voz
 - [Recordatorios](https://www.treatflow.io/es/mensajeria): recordatorios automáticos por email que reducen los plantones
 - [Flujos de clientes](https://www.treatflow.io/es/flujos-clientes): seguimientos automáticos paso a paso y recuperación de clientes inactivos

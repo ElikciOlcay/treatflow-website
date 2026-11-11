@@ -303,7 +303,7 @@ export const homeTr: HomeContent = {
         answer: [
           "Basic (aylık ₺1.490) sınırsız ",
           { text: "müşteri takibi", href: { page: "client-records" } },
-          ", hazır form şablonları, yapay zekâ form oluşturucu ve mağazayı içerir. Booking (aylık ₺1.990) bunlara ek olarak size özel randevu bağlantısıyla profesyonel bir ",
+          ", hazır form şablonları, sürükle-bırak form editörü ve mağazayı içerir. Booking (aylık ₺1.990) bunlara ek olarak size özel randevu bağlantısıyla profesyonel bir ",
           { text: "randevu takvimi", href: { page: "appointment-calendar" } },
           " ve otomatik ",
           { text: "randevu hatırlatmaları", href: { page: "messaging" } },
@@ -348,7 +348,7 @@ export const homeTr: HomeContent = {
         answer: [
           "Şablon kütüphanesinde tüm güzellik işlemleri için profesyonel ",
           { text: "formlar", href: { page: "forms" } },
-          " bulursunuz. Bunları olduğu gibi kullanabilir, yapay zekâ oluşturucuyla uyarlayabilir veya sürükle-bırak düzenleyicide kendinize göre değiştirebilirsiniz. Dijital anamnez formları hemen kullanıma hazırdır.",
+          " bulursunuz. Bunları olduğu gibi kullanabilir veya sürükle-bırak düzenleyicide kendinize göre değiştirebilirsiniz. Dijital anamnez formları hemen kullanıma hazırdır.",
         ],
       },
       {

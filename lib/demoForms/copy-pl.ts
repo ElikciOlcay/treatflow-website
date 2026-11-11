@@ -12,20 +12,20 @@ export const demoCopyPl = {
     titleBefore: 'Wypróbuj formularze – ',
     titleHighlight: 'bez rejestracji',
     intro:
-      'To przykładowe szablony, dzięki którym poczujesz, jak w Treatflow działają cyfrowy wywiad kosmetyczny, zgoda na zabieg i podpis. Własne formularze stworzysz w generatorze formularzy – albo pomożemy Ci je przygotować.',
+      'To przykładowe szablony, dzięki którym poczujesz, jak w Treatflow działają cyfrowy wywiad kosmetyczny, zgoda na zabieg i podpis. Własne formularze stworzysz w edytorze formularzy – albo pomożemy Ci je przygotować.',
     points: [
       'Tylko przykładowe szablony',
-      'Własne formularze w generatorze',
+      'Własne formularze w edytorze',
       'Pomagamy przygotować nowe formularze',
       'Nic nie jest zapisywane',
     ],
     noticeTitle: 'Przykładowe szablony dla orientacji',
     noticeText:
-      'Poniższe formularze pokazują, jak w Treatflow działa cyfrowa rejestracja klienta – wywiad kosmetyczny, zgoda na zabieg i podpis. Formularze dla Twojego salonu stworzysz w generatorze AI albo przygotujemy je razem z Tobą.',
-    generatorTitle: 'Twórz własne formularze w generatorze',
+      'Poniższe formularze pokazują, jak w Treatflow działa cyfrowa rejestracja klienta – wywiad kosmetyczny, zgoda na zabieg i podpis. Formularze dla Twojego salonu stworzysz w edytorze formularzy albo przygotujemy je razem z Tobą.',
+    generatorTitle: 'Twórz własne formularze w edytorze',
     generatorText:
-      'Opisz zabieg własnymi słowami. AI utworzy pola, a Ty możesz potem wszystko dowolnie edytować.',
-    generatorCta: 'Jak działa generator',
+      'Zacznij od szablonu lub pustego formularza i przeciągnij potrzebne pola – z pytaniami warunkowymi, szkicami i podpisem.',
+    generatorCta: 'Jak działa edytor',
     supportTitle: 'Pomagamy przygotować nowe formularze',
     supportText:
       'Potrzebujesz karty wywiadu, zgody na zabieg lub zaleceń pozabiegowych do swoich zabiegów? Przygotujemy je razem z Tobą podczas wdrożenia.',
@@ -58,7 +58,7 @@ export const demoCopyPl = {
       'Tak wypełniony formularz trafia później do karty klienta – z podpisem i znacznikiem czasu.',
     doneTitle: 'Tak wygląda rejestracja klienta w Twoim salonie',
     doneText:
-      'W Treatflow dostosujesz szablony, wyślesz je linkiem lub kodem QR albo stworzysz nowe formularze w generatorze. Możemy też przygotować je razem z Tobą.',
+      'W Treatflow dostosujesz szablony, wyślesz je linkiem lub kodem QR albo stworzysz nowe formularze w edytorze. Możemy też przygotować je razem z Tobą.',
     trialCta: 'Wypróbuj 14 dni za darmo',
     moreSamples: 'Otwórz więcej przykładów',
     signatureSection: 'Podpis',
@@ -78,7 +78,7 @@ export const demoCopyPl = {
   meta: {
     galleryTitle: 'Wypróbuj przykładowe formularze bez rejestracji',
     galleryDescription:
-      'Otwórz przykładowe szablony Treatflow i wypełnij je – bez zakładania konta. Własne formularze stworzysz w generatorze albo pomożemy Ci przygotować nowe.',
+      'Otwórz przykładowe szablony Treatflow i wypełnij je – bez zakładania konta. Własne formularze stworzysz w edytorze albo pomożemy Ci przygotować nowe.',
     playerTitle: (name: string) => `Wypróbuj: ${name}`,
     playerDescription: (description: string) =>
       `${description} Przykładowy formularz – bez rejestracji, nic nie jest zapisywane.`,

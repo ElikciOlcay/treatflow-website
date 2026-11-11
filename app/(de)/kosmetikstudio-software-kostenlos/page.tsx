@@ -137,7 +137,7 @@ const comparisonRows = [
   {
     feature: 'Digitale Formulare',
     free: 'Nicht vorhanden',
-    paid: 'Anamnese, Einwilligung, KI-Generator',
+    paid: 'Anamnese, Einwilligung, Vorlagen-Marketplace',
     freeOk: false,
     paidOk: true,
   },

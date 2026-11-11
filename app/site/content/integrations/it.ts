@@ -109,7 +109,7 @@ export const integrationsIt: IntegrationsContent = {
       {
         question: "Posso usare Treatflow con ChatGPT o Claude?",
         answer:
-          "Sì. Aggiungi Treatflow come connettore nel tuo assistente IA e accedi con il tuo account Treatflow. Potrai poi chiedere informazioni su appuntamenti, orari liberi, clienti o incassi. L'accesso è di default in sola lettura; se lo consenti, l'assistente può anche creare e spostare appuntamenti, e ogni modifica viene registrata. Documentazione dei trattamenti, moduli e foto non vengono mai condivisi.",
+          "Sì. Aggiungi Treatflow come connettore nel tuo assistente IA e accedi con il tuo account Treatflow. Potrai poi chiedere informazioni su appuntamenti, orari liberi, clienti o incassi. L'accesso è di default in sola lettura; se lo consenti, l'assistente può anche creare e spostare appuntamenti e creare o modificare clienti e prodotti, e ogni modifica viene registrata. Non può annullare né eliminare nulla, e documentazione dei trattamenti, moduli e foto non vengono mai condivisi.",
       },
       {
         question: "A cosa serve l'integrazione con Zapier?",

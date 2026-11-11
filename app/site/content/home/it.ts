@@ -300,7 +300,7 @@ export const homeIt: HomeContent = {
         answer: [
           "Basic (39 €/mese) include la ",
           { text: "gestione clienti", href: { page: "client-records" } },
-          " senza limiti, il marketplace dei moduli, il generatore di moduli con IA e lo shop. Booking (59 €/mese) aggiunge l'",
+          " senza limiti, il marketplace dei moduli con editor drag & drop e lo shop. Booking (59 €/mese) aggiunge l'",
           { text: "agenda appuntamenti", href: { page: "appointment-calendar" } },
           " professionale con il tuo link di prenotazione e i ",
           { text: "promemoria appuntamenti", href: { page: "messaging" } },
@@ -345,7 +345,7 @@ export const homeIt: HomeContent = {
         answer: [
           "Nel marketplace trovi ",
           { text: "moduli", href: { page: "forms" } },
-          " professionali per tutti i trattamenti estetici. Usali così come sono, adattali con il generatore IA o personalizzali nell'editor drag & drop. Le schede anamnestiche digitali sono pronte all'uso.",
+          " professionali per tutti i trattamenti estetici. Usali così come sono o personalizzali nell'editor drag & drop. Le schede anamnestiche digitali sono pronte all'uso.",
         ],
       },
       {

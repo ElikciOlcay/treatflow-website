@@ -4,20 +4,20 @@ export const demoCopyEs = {
     titleBefore: 'Prueba los formularios – ',
     titleHighlight: 'sin registrarte',
     intro:
-      'Estas son plantillas de ejemplo para que veas cómo funcionan en Treatflow la ficha de cliente, el consentimiento informado y la firma digital. Tus propios formularios los creas con el generador de formularios, o te ayudamos a configurarlos.',
+      'Estas son plantillas de ejemplo para que veas cómo funcionan en Treatflow la ficha de cliente, el consentimiento informado y la firma digital. Tus propios formularios los creas en el editor de formularios, o te ayudamos a configurarlos.',
     points: [
       'Solo plantillas de ejemplo',
-      'Crea los tuyos con el generador',
+      'Crea los tuyos en el editor',
       'Te ayudamos a configurar formularios nuevos',
       'No se guarda nada',
     ],
     noticeTitle: 'Plantillas de ejemplo para orientarte',
     noticeText:
-      'Los siguientes formularios muestran cómo funciona el check-in digital en Treatflow: ficha de cliente, consentimiento informado y firma. Los formularios de tu centro los creas con el generador con IA, o los configuramos contigo.',
-    generatorTitle: 'Crea tus propios formularios con el generador',
+      'Los siguientes formularios muestran cómo funciona el check-in digital en Treatflow: ficha de cliente, consentimiento informado y firma. Los formularios de tu centro los creas en el editor de formularios, o los configuramos contigo.',
+    generatorTitle: 'Crea tus propios formularios en el editor',
     generatorText:
-      'Describe un tratamiento con tus palabras. La IA crea los campos y después puedes ajustarlo todo.',
-    generatorCta: 'Cómo funciona el generador',
+      'Empieza con una plantilla o un formulario en blanco y añade los campos arrastrando y soltando, con preguntas condicionales, bocetos y firma.',
+    generatorCta: 'Cómo funciona el editor',
     supportTitle: 'Te ayudamos a configurar formularios nuevos',
     supportText:
       '¿Necesitas fichas de cliente, consentimientos informados o indicaciones de cuidados posteriores para tus tratamientos? Los configuramos contigo durante la puesta en marcha.',
@@ -50,7 +50,7 @@ export const demoCopyEs = {
       'Así queda después el formulario completado en la ficha del cliente, con firma y fecha y hora.',
     doneTitle: 'Así es el check-in de tus clientes',
     doneText:
-      'En Treatflow adaptas las plantillas, las envías por enlace o código QR, o creas formularios nuevos con el generador. También podemos configurarlos contigo.',
+      'En Treatflow adaptas las plantillas, las envías por enlace o código QR, o creas formularios nuevos en el editor. También podemos configurarlos contigo.',
     trialCta: 'Prueba gratis 14 días',
     moreSamples: 'Ver más ejemplos',
     signatureSection: 'Firma',
@@ -70,7 +70,7 @@ export const demoCopyEs = {
   meta: {
     galleryTitle: 'Prueba formularios de ejemplo sin registrarte',
     galleryDescription:
-      'Abre las plantillas de ejemplo de Treatflow y rellénalas sin crear una cuenta. Crea tus propios formularios con el generador o te ayudamos a configurar formularios nuevos.',
+      'Abre las plantillas de ejemplo de Treatflow y rellénalas sin crear una cuenta. Crea tus propios formularios en el editor o te ayudamos a configurar formularios nuevos.',
     playerTitle: (name: string) => `Prueba: ${name}`,
     playerDescription: (description: string) =>
       `${description} Formulario de ejemplo: sin registro, no se guarda nada.`,

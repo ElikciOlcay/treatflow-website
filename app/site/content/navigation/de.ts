@@ -29,7 +29,7 @@ export const navigationDe: NavigationContent = {
         { href: { page: "treatflow-pay" }, label: "Treatflow Pay", desc: "Anzahlung oder Vollzahlung online", icon: "wallet", color: "text-violet-600 bg-violet-100", feature: "pay" },
         { href: { page: "vouchers" }, label: "Gutscheine", desc: "Verkaufen, einlösen, Restwert", icon: "gift", color: "text-purple-600 bg-purple-100", feature: "vouchers" },
         { href: { page: "shop" }, label: "Shop", desc: "Produktverkauf und Lagerverwaltung", icon: "shopping-bag", color: "text-amber-600 bg-amber-100" },
-        { href: { page: "integrations" }, label: "Integrationen", desc: "Lexware, Google Kalender, Zapier, SumUp u. m.", icon: "plug", color: "text-indigo-600 bg-indigo-100" },
+        { href: { page: "integrations" }, label: "Integrationen", desc: "Lexware, Google Kalender, Zapier, KI-Assistenten u. m.", icon: "plug", color: "text-indigo-600 bg-indigo-100" },
       ],
     },
   ],

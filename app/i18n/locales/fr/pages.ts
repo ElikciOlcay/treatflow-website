@@ -343,11 +343,11 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
     eyebrow: "Questionnaires et consentements",
     title: "Questionnaires et formulaires de consentement numériques",
     subtitle:
-      "Envoyez questionnaires et formulaires de consentement avant le rendez-vous. Créez vos propres formulaires à partir de modèles ou avec le générateur IA – ou laissez-nous les configurer avec vous.",
+      "Envoyez questionnaires et formulaires de consentement avant le rendez-vous. Créez vos propres formulaires à partir de modèles ou dans l'éditeur – ou laissez-nous les configurer avec vous.",
     bullets: [
       "Vos clients remplissent les formulaires avant d'arriver",
       "Signature électronique sur tous les appareils",
-      "Modèles, générateur de formulaires IA ou configuration avec notre aide",
+      "Modèles, éditeur de formulaires ou configuration avec notre aide",
       "Enregistrés en toute sécurité sur la fiche client",
     ],
     image: {
@@ -372,8 +372,8 @@ const coreFeatures: LocaleSiteContent["coreFeatures"] = {
       },
       {
         icon: PenLine,
-        title: "Modèles et générateur",
-        desc: "Partez de modèles, créez les vôtres avec le générateur IA, ou configurez-les avec notre aide.",
+        title: "Modèles et éditeur",
+        desc: "Partez de modèles, créez les vôtres dans l'éditeur glisser-déposer, ou configurez-les avec notre aide.",
       },
       {
         icon: ShieldCheck,

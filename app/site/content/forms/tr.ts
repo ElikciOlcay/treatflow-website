@@ -4,44 +4,44 @@ export const formsTr: FormsContent = {
   meta: {
     title: "Güzellik Salonları için Dijital Anamnez ve Onam Formları",
     description:
-      "Güzellik merkezleri ve estetik klinikler için dijital anamnez, bilgilendirme ve onam formları: hazır şablonlar, yapay zekâ form oluşturucu ve sürükle-bırak editör. Müşterileriniz formu randevudan önce doldurup imzalar.",
+      "Güzellik merkezleri ve estetik klinikler için dijital anamnez, bilgilendirme ve onam formları: hazır şablonlar ve sürükle-bırak form editörü. Müşterileriniz formu randevudan önce doldurup imzalar.",
     keywords: [
       "güzellik salonu anamnez formu",
       "dijital onam formu",
       "müşteri bilgi formu güzellik merkezi",
       "lazer epilasyon onam formu",
-      "yapay zekâ form oluşturucu",
+      "form oluşturma programı",
       "estetik onam formu şablonu",
       "dijital imza formu",
     ],
   },
-  dates: { modified: "2026-08-18", published: "2024-06-01" },
+  dates: { modified: "2026-11-11", published: "2024-06-01" },
   schema: {
     id: "formulare",
     webPage: {
       name: "Güzellik Salonları için Dijital Anamnez ve Onam Formları",
       description:
-        "Güzellik merkezleri için hazır şablonlar, yapay zekâ form oluşturucu ve sürükle-bırak editörle anamnez ve onam formları.",
+        "Güzellik merkezleri için hazır şablonlar ve sürükle-bırak editörle anamnez ve onam formları.",
     },
   },
   breadcrumb: "Formlar",
   hero: {
-    eyebrow: "Formlar ve yapay zekâ oluşturucu",
+    eyebrow: "Formlar ve hazır şablonlar",
     eyebrowIcon: "file-text",
     title: { before: "Her işleme ", highlight: "uygun form" },
-    description: "Şablon kütüphanesi, yapay zekâ oluşturucu ve sürükle-bırak editör. Hazır şablonları kullanın ya da kendi formlarınızı dakikalar içinde oluşturun.",
-    chips: ["Yapay zekâ oluşturucu", "Hazır şablonlar", "Sürükle-bırak"],
+    description: "Şablon kütüphanesi ve sürükle-bırak editör. Hazır şablonları kullanın ya da kendi formlarınızı dakikalar içinde oluşturun.",
+    chips: ["Hazır şablonlar", "Sürükle-bırak", "Dijital imza"],
     secondaryCta: { label: "Örnek formları deneyin", href: { page: "try-forms" } },
     capsules: [
       {
         question: "Bir güzellik salonunda hangi formlara ihtiyaç var?",
         answer:
-          "En azından bir anamnez formu ve bir onam formu; lazer veya IPL gibi cihazlı uygulamalarda ayrıca riskleri anlatan ayrıntılı bir bilgilendirme formu. Treatflow hazır şablonlar ve yapay zekâ oluşturucu sunar; müşteriler formları randevudan önce dijital olarak doldurur, bilgiler müşteri kartına güvenle kaydedilir.",
+          "En azından bir anamnez formu ve bir onam formu; lazer veya IPL gibi cihazlı uygulamalarda ayrıca riskleri anlatan ayrıntılı bir bilgilendirme formu. Treatflow hazır şablonlar ve kendi formlarınız için bir form editörü sunar; müşteriler formları randevudan önce dijital olarak doldurur, bilgiler müşteri kartına güvenle kaydedilir.",
       },
     ],
     image: {
       src: "/images/mockups/tr/formulare-marketplace.png",
-      alt: "Hazır şablonlar ve yapay zekâ oluşturucuyla Treatflow form kütüphanesi",
+      alt: "Hazır şablonlarla Treatflow form kütüphanesi",
     },
   },
   understand: {
@@ -55,9 +55,9 @@ export const formsTr: FormsContent = {
         text: "Şablon kütüphanesinde anamnez, bilgilendirme ve onam formları bulursunuz – lazer ve IPL uygulamaları dahil.",
       },
       {
-        icon: "sparkles",
-        title: "Yapay zekâ ile kendi formunuzu oluşturun",
-        text: "Uygulamanızı kendi cümlelerinizle anlatın, yapay zekâ size uygun formu hazırlasın. Sonra dilediğiniz gibi düzenleyin.",
+        icon: "layout",
+        title: "Kendi formunuzu sürükle-bırakla oluşturun",
+        text: "Kendi formlarınızı editörde hazırlayın – koşullu sorular, yüz ve vücut şablonları üzerinde çizimler ve imza alanıyla.",
       },
       {
         icon: "send",
@@ -68,24 +68,24 @@ export const formsTr: FormsContent = {
   },
   tryBanner: {
     title: "Örnek formları kayıt olmadan deneyin",
-    text: "Bu örnekler, müşterinin formu dijital olarak nasıl doldurduğunu gösterir. Salonunuzun kendi formlarını yapay zekâ oluşturucuyla hazırlayabilir ya da bizimle birlikte kurabilirsiniz.",
+    text: "Bu örnekler, müşterinin formu dijital olarak nasıl doldurduğunu gösterir. Salonunuzun kendi formlarını form editöründe hazırlayabilir ya da bizimle birlikte kurabilirsiniz.",
     button: "Örnekleri açın",
     href: { page: "try-forms" },
   },
   howItWorks: {
     description: "Boş sayfadan hazır forma üç adımda.",
     steps: [
-      { title: "Şablon veya yapay zekâ", text: "Kütüphaneden bir şablon seçin ya da uygulamayı yapay zekâya anlatın – alanlar otomatik oluşur." },
+      { title: "Şablon veya boş form", text: "Kütüphaneden bir şablon içe aktarın ya da boş bir formla başlayın." },
       { title: "Sürükle-bırak ile düzenleyin", text: "Alanları taşıyın, ekleyin veya silin. Canlı önizlemede müşterinin ne göreceğini anında görürsünüz." },
       { title: "Paylaşın ve arşivleyin", text: "Bağlantı veya QR kodla gönderin. İmza ve zaman damgası müşteri kartına güvenle kaydedilir." },
     ],
   },
   cards: {
     title: "Neler sunuyoruz",
-    description: "Anamnez ve onam formu için üç yol – üstelik gönderim ve dijital imza dahil.",
+    description: "Anamnez ve onam formları için şablonlar ve kendi editörünüz – üstelik gönderim ve dijital imza dahil.",
     items: [
       { icon: "file-text", title: "Şablon kütüphanesi", text: "Güzellik uygulamaları için hazır şablonlar – profesyonelce hazırlanmış, hemen kullanılabilir.", points: ["Anamnez ve bilgilendirme", "Onam formları", "Hemen kullanıma hazır"] },
-      { icon: "sparkles", title: "Yapay zekâ oluşturucu", text: "Uygulamayı kendi cümlelerinizle anlatın – yapay zekâ gerekli alanlarıyla formu oluşturur.", points: ["Alanlar otomatik", "Saniyeler içinde", "Sonradan düzenlenebilir"] },
+      { icon: "layers", title: "Çizimler ve koşullu sorular", text: "Yüz veya vücut şablonları üzerinde bölge işaretleyin, soruları yalnızca uygun cevap verildiğinde gösterin.", points: ["Yüz ve vücut", "Koşullu gösterim", "Çift imza"] },
       { icon: "layout", title: "Sürükle-bırak editör", text: "Kendi formlarınızı oluşturun veya şablonları uyarlayın – tüm alan türleri ve canlı önizlemeyle.", points: ["Tüm alan türleri", "Canlı önizleme", "Tam kontrol"] },
       { icon: "send", title: "Randevudan önce bağlantıyla", text: "Form randevudan önce e-postayla gider. Resepsiyonda 10–15 dakika kazandırır.", points: ["E-postayla", "Müşterinin kendi telefonunda", "Müşteri kartında"] },
       { icon: "pen-tool", title: "Dijital imza", text: "Onam formu tablette imzalanır. Zaman damgası ve arşiv AB'de.", points: ["Cihaz üzerinde", "Zaman damgası", "İzlenebilir"] },
@@ -126,7 +126,7 @@ export const formsTr: FormsContent = {
   },
   cta: {
     title: "Dijital formlara hazır mısınız?",
-    description: "14 gün ücretsiz deneyin – hazır şablonlar, yapay zekâ oluşturucu ve sürükle-bırak editör. Kredi kartı gerekmez.",
+    description: "14 gün ücretsiz deneyin – hazır şablonlar, sürükle-bırak editör ve dijital imza. Kredi kartı gerekmez.",
     secondary: { label: "Örnek formları deneyin", href: { page: "try-forms" } },
   },
 };

@@ -18,7 +18,7 @@ Stand: 2026-11-09. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website
 - [Online-Buchungen](https://www.treatflow.io/online-buchungen): persönlicher Buchungslink, 24/7, ohne Provision pro Buchung
 - [Kundenverwaltung](https://www.treatflow.io/kundenverwaltung): Kundenprofile mit Behandlungshistorie, Notizen und Fotos
 - [Kundenkartei Software](https://www.treatflow.io/kundenkartei-software): digitale Kundenkartei statt Papier oder Excel
-- [Formulare](https://www.treatflow.io/formulare): digitale Anamnese, Einwilligungen und Aufklärungsbögen mit digitaler Unterschrift, vorab per Link ausfüllbar; Formular-Marketplace und KI-Generator
+- [Formulare](https://www.treatflow.io/formulare): digitale Anamnese, Einwilligungen und Aufklärungsbögen mit digitaler Unterschrift, vorab per Link ausfüllbar; Formular-Marketplace und Drag & Drop Editor
 - [Dokumentation](https://www.treatflow.io/behandlungsdokumentation): Behandlungen mit Parametern, Produkten und Vorher-Nachher-Fotos festhalten, inkl. Sprachnotiz
 - [NiSV-Dokumentation](https://www.treatflow.io/nisv-dokumentation): Beratungsprotokolle und Behandlungsdokumentation nach NiSV (Laser, IPL, apparative Kosmetik)
 - [Nachrichten](https://www.treatflow.io/nachrichtenautomatisierung): automatische Terminbestätigungen, Erinnerungen und Follow-ups per WhatsApp und E-Mail
@@ -27,7 +27,7 @@ Stand: 2026-11-09. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website
 - [Gutscheine](https://www.treatflow.io/gutscheine-kosmetikstudio): Geschenkgutscheine an der Kasse verkaufen und einlösen, automatischer Restwert, Einzweck- und Mehrzweckgutscheine
 - [Treatflow Pay](https://www.treatflow.io/treatflow-pay): Anzahlung oder vollen Preis direkt bei der Online-Buchung kassieren, pro Leistung einstellbar, 2,69 % pro Transaktion
 - [Shop](https://www.treatflow.io/shop): Produktverkauf und Lagerverwaltung
-- [Integrationen](https://www.treatflow.io/integrationen): Lexware Office, AbaNinja (Schweiz), Google Kalender, SumUp und Zapier
+- [Integrationen](https://www.treatflow.io/integrationen): Lexware Office, AbaNinja (Schweiz), Google Kalender, SumUp, Zapier und KI-Assistenten wie Claude oder ChatGPT (MCP; standardmäßig nur lesend, medizinische Daten nie)
 - [Studio-Website](https://www.treatflow.io/website-fuer-kosmetikstudios): individuelle, mobil optimierte Website für dein Studio, ab 1.000 Euro
 - [Alle Funktionen](https://www.treatflow.io/funktionen): Übersicht aller Funktionen
 
@@ -35,7 +35,7 @@ Stand: 2026-11-09. Sprache: Deutsch. Diese Datei beschreibt die deutsche Website
 
 - [Preise](https://www.treatflow.io/preise): Pläne im Detail vergleichen
 - Basic: 39 €/Monat oder 421 €/Jahr (35 €/Monat). Kundenverwaltung, Formulare mit digitaler Unterschrift, Dokumentation inkl. Sprachnotiz, Vorher-Nachher-Fotos, Team-Notizen und Aufgaben, Shop und Produkte, Statistiken, Mitarbeiter und Rollen, NiSV-Dokumentation, E-Mail-Support. Ohne Terminkalender.
-- Booking: 59 €/Monat oder 637 €/Jahr (53 €/Monat). Alles aus Basic plus Terminkalender mit Mitarbeiter- und Raumspalten, Online-Buchung ohne Provision, Warteliste, WhatsApp- und E-Mail-Erinnerungen, Kunden-Workflows, Rabattcodes, mehrsprachige Buchungsseite, Integrationen (Lexware, Google Kalender, Zapier, SumUp), Priority E-Mail- und Chat-Support.
+- Booking: 59 €/Monat oder 637 €/Jahr (53 €/Monat). Alles aus Basic plus Terminkalender mit Mitarbeiter- und Raumspalten, Online-Buchung ohne Provision, Warteliste, WhatsApp- und E-Mail-Erinnerungen, Kunden-Workflows, Rabattcodes, mehrsprachige Buchungsseite, Integrationen (Lexware, Google Kalender, Zapier, SumUp, KI-Assistenten), Priority E-Mail- und Chat-Support.
 - Kasse (Add-on zu Booking): 39 €/Monat (jährlich 35 €/Monat) zzgl. einmalig 149 € Einrichtung; TSE-/RKSV-konform, keine Transaktionsgebühren, keine Provision pro Verkauf.
 - Alle Preise in Euro, zzgl. MwSt. 14 Tage kostenlos testen, keine Kreditkarte, keine Setup-Gebühren, monatlich kündbar, kostenloser Datenumzug.
 - Treatflow Pay (optional): 2,69 % pro Online-Zahlung.

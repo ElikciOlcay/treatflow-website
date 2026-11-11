@@ -301,7 +301,7 @@ export const homePl: HomeContent = {
         answer: [
           "Basic (39 €/miesiąc) obejmuje nieograniczone ",
           { text: "zarządzanie klientami", href: { page: "client-records" } },
-          ", bibliotekę gotowych formularzy, generator formularzy AI i sklep. Booking (59 €/miesiąc) dodaje profesjonalny ",
+          ", bibliotekę gotowych formularzy z edytorem „przeciągnij i upuść” i sklep. Booking (59 €/miesiąc) dodaje profesjonalny ",
           { text: "kalendarz rezerwacji", href: { page: "appointment-calendar" } },
           " z własnym linkiem do rezerwacji i automatycznymi ",
           { text: "przypomnieniami o wizytach", href: { page: "messaging" } },
@@ -346,7 +346,7 @@ export const homePl: HomeContent = {
         answer: [
           "W bibliotece znajdziesz profesjonalne ",
           { text: "formularze", href: { page: "forms" } },
-          " do wszystkich zabiegów kosmetycznych. Używaj ich bez zmian, dopasuj je generatorem AI albo przerób w edytorze metodą „przeciągnij i upuść”. Gotowe karty wywiadu możesz wysyłać od razu.",
+          " do wszystkich zabiegów kosmetycznych. Używaj ich bez zmian albo dopasuj w edytorze metodą „przeciągnij i upuść”. Gotowe karty wywiadu możesz wysyłać od razu.",
         ],
       },
       {
