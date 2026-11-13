@@ -56,6 +56,11 @@ export const blogTopics: Record<
     image: "/images/blog/no-shows.png",
     pageKeys: ["online-booking", "messaging", "appointment-calendar"],
   },
+  "pl-booking-without-commission": {
+    image: "/images/blog/online-buchung-vorteile.jpg",
+    pageKeys: ["online-booking", "pricing", "appointment-calendar"],
+    markets: ["pl"],
+  },
 };
 
 export const blogTopicOrder: BlogTopicId[] = [
@@ -68,4 +73,5 @@ export const blogTopicOrder: BlogTopicId[] = [
   "pricing-beauty-treatments",
   "tr-appointment-book-vs-software",
   "cancellation-policy-salon",
+  "pl-booking-without-commission",
 ];
