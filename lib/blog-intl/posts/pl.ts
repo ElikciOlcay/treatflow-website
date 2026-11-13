@@ -1372,4 +1372,193 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 9. Rezerwacje online bez prowizji (temat tylko PL)
+  // ---------------------------------------------------------------------------
+  {
+    topic: "pl-booking-without-commission",
+    lang: "pl",
+    slug: "rezerwacje-online-bez-prowizji",
+    title: "Rezerwacje online bez prowizji: ile naprawdę kosztuje prowizja i jak przejść na własny link w salonie",
+    metaTitle: "Rezerwacje online bez prowizji – poradnik dla salonu",
+    description:
+      "Rezerwacje online bez prowizji w salonie kosmetycznym: jak policzyć koszt prowizji, czym różnią się modele opłat i jak krok po kroku przejść na własny link.",
+    excerpt:
+      "Prowizja od rezerwacji wygląda niewinnie, dopóki nie zsumujesz jej za cały rok. Policz, ile Cię kosztuje, i zobacz, jak przenieść stałe klientki na własny link bez utraty wizyt.",
+    category: "Rezerwacje online",
+    keywords: [
+      "rezerwacje online bez prowizji",
+      "program do salonu kosmetycznego",
+      "system rezerwacji bez prowizji",
+      "prowizja od rezerwacji salon",
+      "własny link do rezerwacji",
+      "program do salonu kosmetycznego cena",
+      "aplikacja do rezerwacji wizyt dla salonu",
+    ],
+    publishedAt: "2026-11-13",
+    updatedAt: "2026-11-13",
+    readMinutes: 8,
+    answer:
+      "Rezerwacje online bez prowizji oznaczają, że salon płaci stały abonament za program do salonu kosmetycznego, a za żadną wizytę zarezerwowaną przez internet nie oddaje procentu ani opłaty od klientki. Opłaca się to szczególnie wtedy, gdy większość rezerwacji robią stałe klientki, które i tak przyszłyby do Ciebie. Platformy z prowizją mogą mieć sens jako źródło nowych klientek, ale stałe klientki warto przenieść na własny link.",
+    takeaways: [
+      "Prowizja liczona od wizyty rośnie razem z Twoim sukcesem, abonament zostaje taki sam.",
+      "Policz koszt na własnych liczbach: liczba rezerwacji online, średnia cena wizyty, stawka z cennika platformy.",
+      "Najdroższa jest prowizja od stałych klientek, które znalazły Cię same, np. przez Instagram lub polecenie.",
+      "Przejście na własny link robisz stopniowo: najpierw stałe klientki, potem kanały takie jak Google i Instagram.",
+      "Przy wyborze programu sprawdź eksport danych, przypomnienia, serwery w UE i umowę powierzenia zgodną z RODO.",
+    ],
+    intro: [
+      "Wiele polskich salonów zaczynało rezerwacje online od aplikacji, w której klientki szukają usług w okolicy. Na początku to wygodne: kilka kliknięć i pierwsze wizyty wpadają same. Po roku przychodzi refleksja, że spora część rezerwacji pochodzi od klientek, które znasz po imieniu, a mimo to od ich wizyt nadal płacisz opłatę.",
+      "W tym poradniku pokazujemy, jak policzyć realny koszt prowizji, czym różnią się modele rozliczeń, jak wybrać program do salonu kosmetycznego z rezerwacjami online bez prowizji i jak przenieść klientki na własny link tak, żeby nie stracić ani jednej wizyty. Nie oceniamy konkretnych platform. Ich cenniki się zmieniają, dlatego zawsze porównuj na podstawie aktualnych dokumentów.",
+    ],
+    sections: [
+      {
+        heading: "Czym są rezerwacje online bez prowizji?",
+        paragraphs: [
+          "Masz dwa podstawowe modele. W pierwszym salon płaci za rezerwację: procent od ceny usługi, stałą kwotę od nowej klientki albo opłatę za promowanie w wynikach wyszukiwania. W drugim płacisz stały miesięczny abonament za program, a liczba rezerwacji nie wpływa na rachunek. To właśnie są **rezerwacje online bez prowizji**.",
+          "Ważne rozróżnienie: „bez prowizji” nie znaczy „za darmo”. Płacisz za oprogramowanie, ale koszt jest przewidywalny. Jeśli w grudniu masz dwa razy więcej wizyt niż w lutym, abonament się nie zmienia. Klientka rezerwuje przez Twój link, pod Twoją marką, a jej dane trafiają do Twojej kartoteki, a nie do bazy platformy.",
+        ],
+        table: {
+          headers: ["Model opłat", "Jak się rozlicza", "Dla kogo ma sens"],
+          rows: [
+            ["Prowizja od wizyty", "Procent od ceny każdej rezerwacji przez platformę", "Nowy salon bez stałej bazy klientek"],
+            ["Opłata za nową klientkę", "Jednorazowa kwota lub procent przy pierwszej wizycie", "Gdy platforma faktycznie przyprowadza nowe osoby"],
+            ["Abonament + opcje płatne", "Stała opłata, dodatkowo promowanie lub płatne funkcje", "Gdy zależy Ci na widoczności w aplikacji"],
+            ["Stały abonament bez prowizji", "Jedna kwota miesięcznie, bez opłat od rezerwacji", "Salon ze stałymi klientkami i własnymi kanałami"],
+          ],
+        },
+      },
+      {
+        heading: "Ile naprawdę kosztuje Cię prowizja od rezerwacji?",
+        paragraphs: [
+          "Najlepiej policzyć to na własnych liczbach. Weź z ostatnich trzech miesięcy: liczbę wizyt zarezerwowanych przez platformę, średnią cenę takiej wizyty i stawkę z aktualnego cennika platformy. Dolicz też opłaty za promowanie i płatne dodatki, jeśli z nich korzystasz.",
+          "Wzór jest prosty: **liczba rezerwacji × średnia cena × stawka prowizji + stałe opłaty = miesięczny koszt**. Potem podziel rezerwacje na dwie grupy: nowe klientki, które naprawdę znalazły Cię w aplikacji, i stałe klientki, które wróciły. Ta druga grupa to pieniądze, które możesz odzyskać.",
+          "Porównaj wynik z miesięcznym abonamentem programu do salonu kosmetycznego. Jeśli prowizja od samych stałych klientek jest kilka razy wyższa niż abonament, decyzja jest zwykle prosta. Pamiętaj też o kosztach ukrytych: czasie na odpisywanie na wiadomości w kilku aplikacjach i ręcznym przepisywaniu wizyt między kalendarzami.",
+        ],
+        table: {
+          headers: ["Przykład (liczby umowne)", "Wartość"],
+          rows: [
+            ["Rezerwacje przez platformę miesięcznie", "120"],
+            ["Średnia cena wizyty", "180 zł"],
+            ["Przykładowa stawka prowizji", "10 %"],
+            ["Koszt prowizji miesięcznie", "2 160 zł"],
+            ["Z tego od stałych klientek (np. 70 %)", "1 512 zł"],
+          ],
+        },
+        callout:
+          "To tylko przykład do wstawienia własnych danych, a nie stawka konkretnej platformy. Sprawdź swój cennik i faktury, zanim podejmiesz decyzję.",
+      },
+      {
+        heading: "Kiedy prowizja ma sens, a kiedy przepłacasz?",
+        paragraphs: [
+          "Prowizja jest uczciwa, gdy platforma przyprowadza Ci klientkę, której sama byś nie zdobyła. Zanim cokolwiek zmienisz, zapytaj przez miesiąc każdą nową klientkę, skąd się o Tobie dowiedziała, i zanotuj odpowiedź w jej karcie. To najprostszy sposób, żeby sprawdzić, ile platforma naprawdę Ci daje. Jeśli dopiero otwierasz salon w nowej okolicy, widoczność w aplikacji może być warta swojej ceny. Problem zaczyna się, gdy płacisz także za klientki, które przyszły z polecenia, z Instagrama czy z wizytówki w Google, a platforma była dla nich tylko formularzem rezerwacji.",
+        ],
+        bullets: [
+          "Ponad połowa rezerwacji pochodzi od stałych klientek – przepłacasz.",
+          "Większość nowych klientek trafia do Ciebie z Instagrama, Google lub poleceń – przepłacasz.",
+          "Klientki przychodzą z aplikacji po promocje i nie wracają – zastanów się nad sensem promowania.",
+          "Otwierasz salon i nikt Cię jeszcze nie zna – platforma może być dobrym startem.",
+          "Masz wolne terminy, których nie zapełniasz innymi kanałami – platforma może je uzupełniać.",
+        ],
+      },
+      {
+        heading: "Jak wybrać program do salonu kosmetycznego z rezerwacjami bez prowizji?",
+        paragraphs: [
+          "Sam link do rezerwacji to za mało. Dobry program do salonu kosmetycznego łączy rezerwacje online z kalendarzem, kartoteką klientek i przypomnieniami, żeby nie przepisywać danych między aplikacjami. Przed wyborem sprawdź te punkty:",
+        ],
+        steps: [
+          "Model cenowy: stały abonament, brak prowizji od rezerwacji, brak opłat za wdrożenie, możliwość rezygnacji co miesiąc.",
+          "Kalendarz z kolumnami dla pracowników i gabinetów lub urządzeń, żeby link pokazywał tylko naprawdę wolne terminy.",
+          "Automatyczne potwierdzenia i przypomnienia e-mail przed wizytą.",
+          "Kartoteka klientek z historią zabiegów, notatkami i formularzami, np. wywiadem kosmetycznym online.",
+          "Eksport danych w każdej chwili, także po rezygnacji, oraz import obecnej listy klientek z pliku CSV.",
+          "RODO: serwery w UE, szyfrowanie i umowa powierzenia przetwarzania danych z dostawcą.",
+          "Okres próbny bez podawania karty, żeby przetestować rezerwacje na prawdziwych klientkach.",
+        ],
+        callout:
+          "W Treatflow rezerwacje online, kalendarz, lista oczekujących i przypomnienia e-mail są w planie Booking za 59 € miesięcznie (netto + VAT), bez prowizji od rezerwacji. Plan Basic za 39 € obejmuje kartotekę, formularze i dokumentację, ale bez kalendarza. Możesz testować 14 dni za darmo, bez karty.",
+      },
+      {
+        heading: "Jak przenieść stałe klientki na własny link krok po kroku?",
+        paragraphs: [
+          "Nie musisz z dnia na dzień wyłączać platformy. Najbezpieczniej przejść stopniowo, przez cztery do ośmiu tygodni, i przez ten czas pilnować, żeby wszystkie terminy były w jednym kalendarzu.",
+        ],
+        steps: [
+          "Zaimportuj listę klientek do nowego programu i ustaw usługi, czasy trwania, przerwy oraz grafik pracowników.",
+          "Zrób testową rezerwację z telefonu, jak klientka, i sprawdź potwierdzenie oraz przypomnienie.",
+          "Przy każdej wizycie stałej klientki umów kolejny termin od razu w nowym kalendarzu.",
+          "Wyślij stałym klientkom krótką wiadomość z nowym linkiem i wyjaśnieniem, jak teraz się umawiać.",
+          "Podmień link w bio na Instagramie, w wizytówce Google i na stronie salonu.",
+          "Postaw przy recepcji kartkę z kodem QR prowadzącym do rezerwacji.",
+          "Po kilku tygodniach sprawdź, ile rezerwacji przychodzi przez własny link, i zdecyduj, czy platforma ma zostać tylko dla nowych klientek.",
+        ],
+      },
+      {
+        heading: "Co napisać klientkom, żeby zaczęły rezerwować przez nowy link?",
+        paragraphs: [
+          "Klientki nie interesują Twoje koszty, tylko ich wygoda. Pokaż korzyść: szybka rezerwacja o każdej porze, z przypomnieniem przed wizytą. Krótka, osobista wiadomość działa lepiej niż oficjalny komunikat.",
+          "**„Hej Ania! Od teraz możesz umawiać się do nas bezpośrednio przez nasz link: [link]. Widzisz wszystkie wolne terminy, rezerwujesz w minutę, a dzień przed wizytą przyjdzie Ci przypomnienie e-mail. Do zobaczenia w salonie!”**",
+          "Pamiętaj o RODO: wiadomość organizacyjną do własnej klientki wysyłasz w ramach obsługi wizyt, ale treści marketingowe, np. promocje, wymagają zgody. Jeśli nie masz pewności, czy dany przekaz jest dozwolony, zapytaj prawnika albo sprawdź wytyczne Prezesa UODO.",
+        ],
+      },
+      {
+        heading: "Gdzie umieścić własny link, żeby nowe klientki też go znalazły?",
+        paragraphs: [
+          "Częsta obawa przed odejściem od platformy brzmi: „skąd wezmę nowe klientki?”. W praktyce wiele osób szuka salonu w Google Maps, na Instagramie albo pyta znajomych. Jeśli w każdym z tych miejsc rezerwacja jest jednym kliknięciem, własny link przyprowadza także nowe osoby, a od nich również nie płacisz prowizji.",
+          "Zadbaj przede wszystkim o wizytówkę firmy w Google: aktualne godziny otwarcia, zdjęcia zabiegów, cennik i przycisk do rezerwacji. Proś zadowolone klientki o opinię zaraz po wizycie, bo to one najczęściej decydują, czy ktoś z okolicy wybierze właśnie Twój salon. Na Instagramie link powinien być w bio i w wyróżnionych relacjach, a pod postami z efektami zabiegów warto dopisać krótkie wezwanie do rezerwacji.",
+        ],
+        bullets: [
+          "Wizytówka Google: przycisk rezerwacji, aktualny cennik, nowe zdjęcia co miesiąc.",
+          "Instagram i Facebook: link w bio, przycisk kontaktu, wyróżniona relacja „Rezerwacja”.",
+          "Strona salonu: widoczny przycisk „Umów wizytę” na każdej podstronie.",
+          "Stopka e-maili i automatyczna odpowiedź w komunikatorach: zawsze ten sam link.",
+          "Salon: kod QR na recepcji, przy lustrze i na wizytówkach.",
+          "Polecenia: zachęć stałe klientki, żeby przesyłały link znajomym.",
+        ],
+      },
+      {
+        heading: "Jakich błędów unikać przy przejściu na rezerwacje bez prowizji?",
+        paragraphs: [
+          "Najczęściej problemy nie wynikają z programu, tylko z pośpiechu. Te błędy kosztują wizyty:",
+        ],
+        bullets: [
+          "Dwa kalendarze bez kontroli, przez co pojawiają się podwójne rezerwacje.",
+          "Wyłączenie platformy, zanim klientki poznają nowy link.",
+          "Stary link wciąż widoczny w bio, w Google lub w starych wiadomościach.",
+          "Brak przypomnień w nowym systemie, przez co rośnie liczba nieobecności.",
+          "Zasady odwoływania wizyt niewidoczne przy nowej rezerwacji.",
+          "Brak sprawdzenia, czy możesz wyeksportować dane klientek z dotychczasowej platformy, zanim zrezygnujesz.",
+        ],
+        callout:
+          "Przed rezygnacją z platformy przeczytaj jej regulamin, okres wypowiedzenia i zasady eksportu danych. Zrób to na początku, a nie w ostatnim tygodniu.",
+      },
+    ],
+    faq: [
+      {
+        q: "Czy rezerwacje online bez prowizji są naprawdę darmowe?",
+        a: "Nie, płacisz abonament za program, ale nie płacisz od żadnej rezerwacji. Koszt jest stały i przewidywalny, niezależnie od tego, ile wizyt przyjmiesz w danym miesiącu.",
+      },
+      {
+        q: "Czy mogę korzystać z platformy i własnego linku jednocześnie?",
+        a: "Tak. Wiele salonów zostawia platformę dla nowych klientek, a stałe przenosi na własny link. Ważne, żeby wszystkie wizyty były w jednym kalendarzu i żeby nie dochodziło do podwójnych rezerwacji.",
+      },
+      {
+        q: "Czy stracę klientki, jeśli przestanę korzystać z platformy?",
+        a: "Ryzyko jest niewielkie, jeśli przechodzisz stopniowo: umawiasz kolejne wizyty w nowym kalendarzu, wysyłasz klientkom link i podmieniasz go na Instagramie, w Google i na stronie. Stałe klientki wracają do Ciebie, nie do aplikacji.",
+      },
+      {
+        q: "Ile kosztuje program do salonu kosmetycznego z rezerwacjami online w Treatflow?",
+        a: "Plan Booking kosztuje 59 € miesięcznie (netto + VAT) lub 53 € miesięcznie przy płatności rocznej i obejmuje kalendarz, rezerwacje online bez prowizji oraz przypomnienia e-mail. Możesz go testować 14 dni za darmo, bez podawania karty.",
+      },
+      {
+        q: "Czy klientka musi instalować aplikację, żeby zarezerwować wizytę?",
+        a: "Nie. W Treatflow klientka otwiera Twój link w przeglądarce, wybiera usługę i termin, a potwierdzenie dostaje e-mailem. Strona rezerwacji wyświetla się w języku klientki.",
+      },
+    ],
+    related: [
+      { pageKey: "online-booking", label: "Rezerwacje online bez prowizji" },
+      { pageKey: "pricing", label: "Cennik Treatflow" },
+      { pageKey: "appointment-calendar", label: "Kalendarz wizyt" },
+    ],
+  },
 ];
