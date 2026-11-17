@@ -1401,4 +1401,191 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 9. Google reviews salon
+  // ---------------------------------------------------------------------------
+  {
+    topic: "google-reviews-salon",
+    lang: "nl",
+    slug: "meer-google-reviews-salon",
+    title: "Meer Google reviews voor je salon: wanneer, hoe en wat wel en niet mag",
+    metaTitle: "Meer Google reviews krijgen voor je salon: zo doe je het",
+    description:
+      "Meer Google reviews voor je salon: wanneer en hoe je erom vraagt, je directe reviewlink, wat wel en niet mag, en templates om op negatieve reviews te reageren.",
+    excerpt:
+      "Tevreden klanten laten zelden uit zichzelf een review achter, maar bijna allemaal doen ze het als je het ze makkelijk maakt. Zo vraag je op het juiste moment, blijf je binnen de regels en reageer je professioneel op kritiek.",
+    category: "Marketing & klanten",
+    keywords: [
+      "meer google reviews krijgen",
+      "google reviews salon",
+      "om een review vragen",
+      "google review link",
+      "reageren op negatieve review",
+      "reviews schoonheidssalon",
+      "salonsoftware",
+    ],
+    publishedAt: "2026-11-17",
+    updatedAt: "2026-11-17",
+    readMinutes: 8,
+    answer:
+      "Meer Google reviews krijg je door elke klant op een vast moment te vragen: persoonlijk direct na de behandeling en nog een keer in een korte follow-upmail op dezelfde of de volgende dag, met een directe reviewlink uit je Google-bedrijfsprofiel. Vraag iedereen, niet alleen je fans, beloon reviews nooit met korting of cadeautjes en reageer op elke review, ook de kritische.",
+    takeaways: [
+      "Reviews bepalen mee hoe hoog je salon in Google Maps en de lokale zoekresultaten staat, en of een nieuwe klant durft te boeken.",
+      "Niet alleen de score telt: ook het aantal, hoe recent de reviews zijn, wat erin staat en of jij reageert.",
+      "Hoe korter de weg, hoe meer reviews: een directe reviewlink of QR-code werkt veel beter dan “zoek ons even op Google”.",
+      "Nep-reviews, gekochte reviews en reviews in ruil voor korting zijn verboden; ook selectief alleen blije klanten vragen is riskant.",
+      "Een rustige, zakelijke reactie op een negatieve review overtuigt toekomstige klanten vaak meer dan nog een vijfsterrenreview.",
+    ],
+    intro: [
+      "Voordat iemand voor het eerst een gezichtsbehandeling, wimperset of laserkuur bij je boekt, zoekt ze je op. In Google Maps ziet ze in één oogopslag je sterren, het aantal reviews en de laatste paar teksten. Heb je er twaalf en is de nieuwste van anderhalf jaar geleden, terwijl de salon twee straten verder er honderd heeft met verse reacties, dan weet je waar ze klikt.",
+      "Het goede nieuws: de meeste salons krijgen weinig reviews omdat ze er niet om vragen, niet omdat klanten ontevreden zijn. Met een vaste routine, een paar zinnen die natuurlijk voelen en een directe link groeit je profiel elke week. In deze gids lees je wanneer en hoe je vraagt, wat wel en niet mag, hoe je op kritiek reageert en waar je op let met de AVG. Het is praktische informatie, geen juridisch advies.",
+    ],
+    sections: [
+      {
+        heading: "Waarom zijn Google reviews zo belangrijk voor een salon?",
+        paragraphs: [
+          "Reviews werken op twee manieren. Ten eerste zijn ze een van de signalen die Google gebruikt om te bepalen welke bedrijven het toont als iemand zoekt op “schoonheidssalon in de buurt” of “wimperextensions Utrecht”. Een profiel met veel recente, positieve reviews heeft meer kans op een plek in het lijstje bovenaan Google Maps.",
+          "Ten tweede zijn reviews vertrouwen. Bij een behandeling op je huid, je gezicht of met een laser wil een nieuwe klant zeker weten dat ze in goede handen is. Een eerlijk verhaal van iemand die haar voorging, overtuigt meer dan elke advertentie. Je Google-bedrijfsprofiel is daarmee een van je belangrijkste marketingkanalen, en het kost je geen advertentiebudget.",
+        ],
+      },
+      {
+        heading: "Waar letten Google en nieuwe klanten op bij reviews?",
+        paragraphs: [
+          "Het gaat niet alleen om het gemiddelde aantal sterren. Vijf dingen bepalen samen hoe sterk je profiel overkomt:",
+        ],
+        bullets: [
+          "**Score:** een gemiddelde tussen ongeveer 4,5 en 5 wekt vertrouwen. Een profiel met uitsluitend vijf sterren kan juist ongeloofwaardig lijken.",
+          "**Aantal:** veertig reviews zeggen meer dan vijf, ook als de score iets lager ligt.",
+          "**Actualiteit:** regelmatig nieuwe reviews laten zien dat je salon nu goed werk levert, niet alleen drie jaar geleden.",
+          "**Reviewtekst:** een review die de behandeling noemt (“mijn huid voelt na de peeling veel rustiger”) helpt nieuwe klanten en vertelt Google waar je goed in bent.",
+          "**Reacties van de eigenaar:** wie op reviews reageert, ook op kritische, laat zien dat er een betrokken mens achter de salon zit.",
+        ],
+      },
+      {
+        heading: "Wanneer en hoe vraag je een klant om een review?",
+        paragraphs: [
+          "Timing is alles. De bereidheid is het grootst als de klant net blij de deur uitloopt of thuis in de spiegel kijkt. Werk daarom met twee vaste momenten en maak de weg zo kort mogelijk:",
+        ],
+        steps: [
+          "Haal je directe reviewlink op in je Google-bedrijfsprofiel (via de optie om reviews te vragen of de link te delen). Die link opent meteen het venster om een review te schrijven.",
+          "Maak er een QR-code van, bijvoorbeeld met de tools die Google zelf aanbiedt, en zet die op een klein kaartje bij de balie of op je behandelkamerdeur.",
+          "Vraag het persoonlijk aan het einde van de afspraak, als de klant tevreden is. Kort, zonder druk en met een concrete reden.",
+          "Stuur dezelfde of de volgende dag een korte follow-upmail met de directe reviewlink, zodat de klant het rustig thuis kan doen.",
+          "Vraag één keer per behandeling en hoogstens één herinnering. Blijven aandringen kost goodwill.",
+          "Bij een behandelreeks, zoals laserontharing of een huidtraject: vraag na een zichtbaar resultaat, niet na de eerste sessie.",
+        ],
+        callout:
+          "Vraag om een concrete review, niet om “vijf sterren”. Met “Zou je willen schrijven hoe je de behandeling vond?” krijg je bruikbaardere teksten en blijf je netjes binnen de regels.",
+      },
+      {
+        heading: "Wat mag wel en wat mag niet bij het verzamelen van reviews?",
+        paragraphs: [
+          "Reviews actief vragen is gewoon toegestaan, zolang ze echt en vrijwillig zijn. Sinds de EU-Omnibusrichtlijn (Richtlijn (EU) 2019/2161), in Nederland verwerkt in het Burgerlijk Wetboek, is het uitdrukkelijk verboden om nep-reviews te plaatsen of te laten plaatsen of reviews te verdraaien. De ACM houdt daar toezicht op. Daarnaast heeft Google eigen regels: wie die schendt, riskeert dat reviews worden verwijderd of dat het profiel beperkingen krijgt.",
+        ],
+        table: {
+          headers: ["Mag wel", "Mag niet"],
+          rows: [
+            ["Elke klant vriendelijk om een eerlijke review vragen", "Reviews kopen of nep-reviews laten schrijven"],
+            ["Een directe reviewlink of QR-code delen", "Korting, een gratis behandeling of een cadeautje geven in ruil voor een review"],
+            ["Een automatische follow-upmail na de afspraak sturen", "Alleen tevreden klanten de link geven en anderen bewust overslaan"],
+            ["Op elke review zakelijk en vriendelijk reageren", "Reviews laten schrijven door personeel, familie of vrienden"],
+            ["Reviews melden die echt tegen Googles regels ingaan", "Kritische reviews melden alleen omdat ze je niet bevallen"],
+            ["Mooie reviews delen op je website of Instagram", "Klanten onder druk zetten of een review voor hen schrijven"],
+          ],
+        },
+        bullets: [
+          "Een algemene winactie of klantenkaart mag gewoon, zolang je die niet koppelt aan het schrijven van een (positieve) review.",
+          "Werk je met een eerste screening (“Was je tevreden? Klik hier voor Google, anders mail ons”), dan filter je ontevreden klanten weg. Google noemt dat ontoelaatbaar en het geeft een vertekend beeld. Geef iedereen dezelfde link.",
+        ],
+      },
+      {
+        heading: "Welke zinnen en welke e-mail kun je direct gebruiken?",
+        paragraphs: [
+          "Veel salonhouders vinden het ongemakkelijk om om een review te vragen. Met een paar vaste zinnen wordt het routine. Pas ze aan je eigen woorden aan:",
+        ],
+        bullets: [
+          "Aan de balie: “Fijn dat je tevreden bent! Wij zijn een kleine salon en reviews helpen nieuwe klanten echt om ons te vinden. Zou je er straks een willen schrijven? Op dit kaartje staat een QR-code, dan ben je in één keer op de goede plek.”",
+          "Na een resultaat: “Wat mooi dat je huid zo verbeterd is. Zou je dat in een paar zinnen op Google willen delen? Dat helpt anderen die twijfelen.”",
+          "Als iemand zegt het te vergeten: “Geen probleem, je krijgt morgen een mailtje met de link. Eén klik en je kunt typen.”",
+        ],
+        callout:
+          "E-mailtemplate. Onderwerp: Hoe was je behandeling bij [salonnaam]? — Hoi [voornaam], dank je wel voor je bezoek van [dag]. We hopen dat je blij bent met je [behandeling]. Een paar tips voor de komende dagen: [nazorgtip]. Heb je vragen, antwoord dan gewoon op deze mail. Wil je anderen vertellen hoe je het vond? Met deze link schrijf je direct een review op Google: [reviewlink]. Het kost je een minuut en helpt ons enorm. Liefs, [naam] van [salonnaam]. Liever geen mails meer van ons? [afmeldlink]",
+      },
+      {
+        heading: "Hoe reageer je op een negatieve review en wanneer kun je hem laten verwijderen?",
+        paragraphs: [
+          "Een kritische review voelt persoonlijk, zeker als je er hard voor gewerkt hebt. Toch kan hij je profiel geloofwaardiger maken, mits je goed reageert. Je reactie schrijf je eigenlijk niet voor de klant die klaagt, maar voor de tientallen mensen die hem later lezen.",
+          "Je kunt een review niet zelf verwijderen. Je kunt hem wel bij Google melden als hij in strijd is met Googles regels voor bijdragen. Denk aan reviews met beledigingen, discriminatie of persoonlijke gegevens, reviews die duidelijk over een ander bedrijf gaan, nep-reviews of reviews van een concurrent, en spam. Meld een review via je bedrijfsprofiel en beschrijf zo concreet mogelijk waarom hij de regels schendt.",
+          "Een review die alleen negatief of oneerlijk aanvoelt, wordt meestal niet verwijderd. Daar is een goede reactie je beste antwoord. En hoe meer echte, recente reviews je verzamelt, hoe minder één slechte review opvalt. Bevat een review smaad of andere ernstige onjuistheden, dan kun je juridisch advies inwinnen.",
+        ],
+        steps: [
+          "Wacht een paar uur of een nacht voordat je reageert. Reageer nooit boos of meteen.",
+          "Bedank voor de feedback en erken het gevoel van de klant, zonder meteen schuld te bekennen of te ontkennen.",
+          "Ga kort in op het punt zelf, feitelijk en zonder details uit het klantdossier of de behandeling te noemen.",
+          "Bied aan om het persoonlijk op te lossen en noem een contactmogelijkheid.",
+          "Houd het kort: vier tot zes zinnen. Geen discussie in het openbaar.",
+          "Los je het daarna op, dan kan de klant de review zelf aanpassen. Vraag dat hooguit één keer en vriendelijk.",
+        ],
+        callout:
+          "Reactietemplate: “Hoi [voornaam], dank je wel dat je de tijd neemt om dit te schrijven. Wat vervelend dat je [behandeling] niet aan je verwachtingen voldeed, dat willen we zeker niet. We kijken graag samen wat we voor je kunnen doen. Wil je ons bellen op [telefoonnummer] of mailen naar [e-mailadres]? Dan nemen we rustig de tijd voor je. Groet, [naam], eigenaar van [salonnaam].”",
+      },
+      {
+        heading: "Waar let je op met de AVG als je reviewverzoeken mailt?",
+        paragraphs: [
+          "Een e-mail na de behandeling verwerkt persoonsgegevens, dus de AVG geldt. Bij bestaande klanten past een korte, servicegerichte mail over hun eigen behandeling, met nazorgtips en een feedbackverzoek, meestal goed binnen wat ze van je mogen verwachten. Gebruik je dezelfde mail ook voor aanbiedingen, dan wordt het een commerciële e-mail en gelden de regels uit de Telecommunicatiewet. Toezicht op privacy ligt bij de Autoriteit Persoonsgegevens.",
+        ],
+        bullets: [
+          "Houd de mail servicegericht: nazorg en feedback, geen reclame voor andere behandelingen.",
+          "Zet in elke mail een duidelijke en eenvoudige afmeldmogelijkheid en verwerk afmeldingen direct.",
+          "Vermeld in je privacyverklaring dat je klanten na een afspraak kunt mailen voor nazorg en feedback.",
+          "Gebruik nooit gezondheidsgegevens of behandeldetails in je reactie op een openbare review.",
+          "Stuur reviewverzoeken alleen naar mensen die echt klant bij je waren.",
+        ],
+      },
+      {
+        heading: "Hoe helpt salonsoftware om reviews te automatiseren?",
+        paragraphs: [
+          "Het grootste verschil maakt een vaste routine die niet afhangt van hoe druk het aan de balie is. Met Treatflow kun je na een behandeling automatisch een follow-upmail sturen met nazorgtips en een feedbackverzoek, waarin je je eigen Google-reviewlink zet. Met klantworkflows bouw je meerdere stappen met wachttijden en voorwaarden, bijvoorbeeld een nazorgmail de volgende dag en een stap die stopt zodra de klant opnieuw heeft geboekt. Notities in het klantdossier laten je team zien wat er met een klant besproken is, handig als je op een review wilt reageren of iets wilt rechtzetten.",
+          "Afspraakherinneringen gaan per e-mail, klanten boeken zonder commissie via je eigen boekingslink en je kunt een mobielvriendelijke salonwebsite laten bouwen die gericht is op boekingen. Automatische e-mails, klantworkflows en online boeken zitten in het Booking-pakket van €59 per maand excl. btw. Je kunt alles 14 dagen gratis proberen, zonder creditcard.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Hoe kom ik aan een directe Google review link?",
+        a: "Open je Google-bedrijfsprofiel terwijl je ingelogd bent en kies de optie om reviews te vragen of je profiel te delen. Je krijgt dan een korte link die meteen het reviewvenster opent. Die kun je in je mails, op je website en in een QR-code gebruiken.",
+      },
+      {
+        q: "Mag ik klanten korting geven voor een Google review?",
+        a: "Nee. Een beloning in ruil voor een review gaat in tegen Googles regels en maakt de review misleidend voor andere consumenten. Je kunt wel gewoon iedereen vriendelijk om een eerlijke review vragen, zonder er iets tegenover te zetten.",
+      },
+      {
+        q: "Hoe vaak mag ik een klant om een review vragen?",
+        a: "Vraag het één keer persoonlijk en stuur hooguit één follow-upmail per behandeling. Vaste klanten die al een review schreven hoef je niet opnieuw te vragen; ze kunnen hun bestaande review altijd zelf bijwerken.",
+      },
+      {
+        q: "Moet ik op elke review reageren?",
+        a: "Het is verstandig om op alle reviews te reageren, ook op korte positieve. Een persoonlijk bedankje kost een minuut en laat zien dat je betrokken bent. Op kritische reviews reageer je altijd, rustig en zakelijk.",
+      },
+      {
+        q: "Kan ik een negatieve review van Google laten verwijderen?",
+        a: "Alleen als hij Googles regels schendt, bijvoorbeeld bij beledigingen, spam, nep-reviews of een review over een ander bedrijf. Meld hem dan via je bedrijfsprofiel. Een negatieve maar eerlijke review blijft staan; reageer daar professioneel op.",
+      },
+      {
+        q: "Mogen mijn medewerkers een review voor de salon schrijven?",
+        a: "Nee. Reviews van medewerkers, familie of vrienden zijn niet onafhankelijk en misleiden nieuwe klanten. Google kan ze verwijderen, en het past niet bij de regels tegen nep-reviews.",
+      },
+    ],
+    related: [
+      { pageKey: "messaging", label: "Automatische e-mails na de behandeling" },
+      { pageKey: "online-booking", label: "Online boeken via je eigen link" },
+      { pageKey: "studio-website", label: "Een eigen website voor je salon" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Richtlijn (EU) 2019/2161 (Omnibusrichtlijn)",
+        url: "https://eur-lex.europa.eu/eli/dir/2019/2161/oj",
+      },
+    ],
+  },
 ];

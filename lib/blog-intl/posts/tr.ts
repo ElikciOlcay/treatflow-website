@@ -1687,4 +1687,185 @@ export const posts: BlogArticle[] = [
       { pageKey: "appointment-calendar", label: "Randevu takvimi" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // Google yorumları: daha fazla ve daha iyi yorum toplamak
+  // ---------------------------------------------------------------------------
+  {
+    topic: "google-reviews-salon",
+    lang: "tr",
+    slug: "google-yorum-artirma-guzellik-salonu",
+    title: "Güzellik Salonu için Google Yorum Artırma: Kurallara Uygun, Adım Adım Rehber",
+    metaTitle: "Google Yorum Artırma: Güzellik Salonu Rehberi",
+    description:
+      "Güzellik salonunuz için Google yorumu nasıl alınır? Doğru zaman, yorum linki, hazır e-posta şablonu, yasak yöntemler ve olumsuz yoruma cevap örnekleri.",
+    excerpt:
+      "Memnun müşterilerin çoğu, sadece kimse istemediği için yorum yazmaz. Doğru anda, tek tıklık bir linkle ve kurallara uygun şekilde nasıl yorum isteyeceğinizi, olumsuz yorumlara nasıl cevap vereceğinizi anlatıyoruz.",
+    category: "Pazarlama",
+    keywords: [
+      "google yorum artırma",
+      "google yorum nasıl alınır",
+      "güzellik salonu google yorum",
+      "google işletme yorum linki",
+      "olumsuz yoruma cevap örnekleri",
+      "google yorum isteme mesajı",
+      "güzellik salonu programı",
+    ],
+    publishedAt: "2026-11-17",
+    updatedAt: "2026-11-17",
+    readMinutes: 8,
+    answer:
+      "Güzellik salonunuzun Google yorumlarını artırmanın en etkili yolu, her memnun müşteriye işlemden hemen sonra yüz yüze ve aynı ya da ertesi gün kısa bir e-postayla, Google İşletme Profili'nizin doğrudan yorum linkini vererek sormaktır. Yorum satın almak, indirim veya hediye karşılığında yorum istemek ve sadece memnun müşterileri seçerek sormak Google kurallarına aykırıdır. Olumsuz yorumlara ise sakin, kısa ve çözüm odaklı bir cevap verin.",
+    takeaways: [
+      "Yorumun etkisini sadece puan değil; yorum sayısı, güncellik, yorum metni ve sizin verdiğiniz cevaplar birlikte belirler.",
+      "En iyi an işlemin hemen sonrasıdır: önce yüz yüze sorun, aynı veya ertesi gün linkli bir e-postayla hatırlatın.",
+      "Google İşletme Profili'nizdeki doğrudan yorum linkini kullanın; her ek tıklama yorum kaybettirir.",
+      "Sahte yorum, satın alınan yorum ve karşılığında indirim verilen yorum hem Google kurallarına hem tüketici mevzuatına aykırıdır.",
+      "Yorum isteme e-postası hizmetle ilgili ve sade olsun; içine kampanya veya indirim koyarsanız ticari elektronik ileti kuralları ve İYS devreye girer.",
+    ],
+    intro: [
+      "Yeni bir müşteri salonunuzu aramadan veya randevu almadan önce sizi Google'da arar. Karşısına çıkan yıldız puanı ve son yorumlar, birkaç saniye içinde ilk izlenimi belirler. Üç yıl önce yazılmış dört yorumla görünen bir salon, düzenli yeni yorum alan ve her yoruma cevap veren bir salonun yanında kolayca geride kalır.",
+      "İşin iyi tarafı şu: daha fazla Google yorumu almak şans işi değil, tekrarlanabilir bir süreçtir. İster güzellik salonu, güzellik merkezi veya medikal estetik kliniği, ister lazer epilasyon, tırnak, kirpik ya da kalıcı makyaj stüdyosu işletin; bu rehberde ne zaman ve nasıl soracağınızı, hangi yöntemlerin yasak olduğunu, hazır cümleleri ve olumsuz yorumlara nasıl cevap vereceğinizi bulacaksınız. Bu yazı pratik bir rehberdir, hukuki danışmanlık değildir.",
+    ],
+    sections: [
+      {
+        heading: "Google yorumları bir güzellik salonu için neden bu kadar önemli?",
+        paragraphs: [
+          "Google yorumları iki şekilde çalışır. Birincisi görünürlüktür: Google, yerel aramalarda ve Google Haritalar'da işletmeleri sıralarken yorumları da dikkate alır. “Yakınımdaki lazer epilasyon” veya “Kadıköy kirpik stüdyosu” gibi aramalarda düzenli, güncel ve olumlu yorum alan bir profilin öne çıkma şansı daha yüksektir.",
+          "İkincisi güvendir. Güzellik sektöründe müşteri yüzünü, cildini, kaşlarını size emanet eder. Özellikle lazer, kalıcı makyaj veya medikal estetik gibi işlemlerde, gerçek müşterilerin kendi cümleleriyle yazdığı deneyimler çoğu reklamdan daha ikna edicidir. Google İşletme Profili'niz bu yüzden yan bir kanal değil, ücretsiz ve en çok bakılan vitrinlerinizden biridir.",
+        ],
+      },
+      {
+        heading: "Bir Google yorum profilinde gerçekten ne önemlidir?",
+        paragraphs: [
+          "Sadece yıldız ortalamasına bakmak yanıltıcıdır. Müşteriler ve Google profilinizi birkaç sinyale birlikte bakarak değerlendirir:",
+        ],
+        bullets: [
+          "**Puan:** 4,5 ile 5 arası bir ortalama güven verir. Yüzlerce yorumun hepsi kusursuz beş yıldızsa, bu bazı okuyuculara yapay görünebilir.",
+          "**Yorum sayısı:** Çok sayıda yorum, puanın tesadüf olmadığını gösterir.",
+          "**Güncellik:** Her ay birkaç yeni yorum, aktif ve yaşayan bir salon izlenimi verir. Eski yorumlar zamanla etkisini kaybeder.",
+          "**Yorum metni:** “Çok iyi” yerine “hydrafacial sonrası cildim çok rahatladı, Ayşe Hanım her adımı anlattı” gibi somut yorumlar hem müşteriyi ikna eder hem de hizmetlerinizle ilgili aramalarda işe yarar.",
+          "**İşletme yanıtları:** Olumlu ve olumsuz yorumlara cevap veren bir salon, müşteriyi önemsediğini gösterir.",
+        ],
+      },
+      {
+        heading: "Google yorumu ne zaman ve nasıl istenir?",
+        paragraphs: [
+          "Çoğu salon hiç sormaz. Oysa memnun bir müşteri, nazikçe ve kolay bir yolla istendiğinde genellikle yorum yazmaya hazırdır. İki şey belirleyicidir: doğru an ve mümkün olan en kısa yol.",
+        ],
+        steps: [
+          "İşlemden hemen sonra yüz yüze sorun. Müşteri aynaya baktığı, memnuniyetini dile getirdiği an en doğru andır. Bir cümle yeterlidir, ısrar etmeyin.",
+          "Aynı gün veya ertesi gün kısa bir takip e-postası gönderin. Bakım önerilerinin yanında yorum linkini de verin; müşteri evde, sakin bir anda yazar.",
+          "Google İşletme Profili'nizden doğrudan yorum linkini alın. Profilinizi yönetirken yorum isteme (yorum linkini paylaşma) seçeneği size, yorum penceresini doğrudan açan kısa bir link verir. Müşteriyi haritada sizi aramaya göndermeyin.",
+          "Resepsiyona bir QR kod koyun. Google'ın profil araçlarıyla oluşturabileceğiniz bir QR kodu resepsiyon masasına, bekleme alanına veya randevu kartının arkasına yerleştirin.",
+          "Yorumları düzenli kontrol edin ve cevaplayın. Yeni yorumlara birkaç gün içinde dönmek, sonraki müşterilere de yorum yazmanın karşılıksız kalmadığını gösterir.",
+        ],
+        callout:
+          "Uzun işlemlerde zamanlamayı işleme göre ayarlayın. Lazer epilasyonda ilk seanstan sonra değil, birkaç seans geçip sonuç görülmeye başladığında; kalıcı makyajda ise rötuş sonrası sormak daha anlamlıdır.",
+      },
+      {
+        heading: "Google yorumu toplarken neler serbest, neler yasak?",
+        paragraphs: [
+          "Yorum istemek tamamen serbesttir; yeter ki yorumlar gerçek ve gönüllü olsun. Sahte yorum yazdırmak veya satın almak Google'ın kurallarına aykırıdır ve tüketiciyi yanıltan bir haksız ticari uygulama olarak tüketici mevzuatı açısından da sorun yaratır. Google bu tür yorumları kaldırabilir, profilinize kısıtlama koyabilir veya profilde uyarı gösterebilir. Bu tablo güvenli tarafta kalmanıza yardımcı olur:",
+        ],
+        table: {
+          headers: ["Yöntem", "Durum", "Neden"],
+          rows: [
+            ["Her müşteriye işlemden sonra sözlü olarak sormak", "Serbest", "Gönüllü, gerçek deneyime dayalı"],
+            ["Takip e-postasında doğrudan yorum linki vermek", "Serbest", "Hizmetle ilgili, kolay ve şeffaf"],
+            ["Resepsiyonda QR kod veya kartvizitte link", "Serbest", "Herkese açık, baskı yok"],
+            ["Yorum satın almak veya ajansa sahte yorum yazdırmak", "Yasak", "Google kurallarına ve tüketici mevzuatına aykırı"],
+            ["Yorum karşılığı indirim, hediye ürün veya ücretsiz işlem", "Yasak", "Teşvikli yorumlar Google tarafından yasaklanmıştır"],
+            ["Sadece memnun olduğunu düşündüğünüz müşterilere sormak", "Yasak", "Seçici yorum toplama Google kurallarına aykırıdır"],
+            ["Çalışanların, ailenin veya arkadaşların yorum yazması", "Yasak", "Çıkar çatışması, gerçek müşteri deneyimi değil"],
+            ["Müşterinin yerine yorum yazmak veya metni dikte etmek", "Yasak", "Yorum müşterinin kendi görüşü olmalıdır"],
+          ],
+        },
+        callout:
+          "Seçici yorum toplamaya dikkat: “Memnun kaldıysanız Google'a, kalmadıysanız bize yazın” gibi ayrım yapan akışlar da Google kurallarına göre yasaktır. Herkese aynı linki verin.",
+      },
+      {
+        heading: "Hazır cümleler ve Google yorum isteme e-posta şablonu",
+        paragraphs: [
+          "Ekipteki herkesin aynı, rahat cümleleri kullanması işi kolaylaştırır. Yüz yüze şu cümleler iyi çalışır:",
+        ],
+        bullets: [
+          "“Sonuçtan memnun kaldığınıza çok sevindim. Vaktiniz olursa Google'da kısa bir yorum yazar mısınız? Bizim gibi küçük bir salon için çok değerli.”",
+          "“Size akşam bakım önerilerini e-postayla gönderiyorum, içinde Google yorum linkimiz de var. Bir dakikanızı ayırırsanız çok seviniriz.”",
+          "“Yeni müşterilerimiz bizi genelde Google'dan buluyor. Deneyiminizi orada paylaşırsanız onlara da yol göstermiş olursunuz.”",
+          "E-posta şablonu, konu: “Bugünkü cilt bakımınızdan sonra birkaç öneri”",
+          "“Merhaba Elif Hanım, bugün bizi tercih ettiğiniz için teşekkür ederiz. Önümüzdeki 48 saat yoğun güneşten kaçının ve size önerdiğimiz nemlendiriciyi sabah akşam kullanın. Deneyiminizi paylaşmak isterseniz Google yorumunuz bizim için çok değerli: [yorum linki]. Sorunuz olursa bu e-postaya cevap verebilirsiniz. Sevgiler, [Salon adı]”",
+          "E-postanın sonuna kısa bir not ekleyin: “Bu tür bilgilendirme e-postalarını almak istemiyorsanız bu e-postayı cevaplamanız yeterli.”",
+        ],
+      },
+      {
+        heading: "Olumsuz yorumlara nasıl cevap verilir, kurallara aykırı yorum kaldırılabilir mi?",
+        paragraphs: [
+          "Er ya da geç bir olumsuz yorum gelir. Bu bir felaket değildir; birkaç eleştirel yorumun olduğu ve bunlara olgun cevaplar verilmiş bir profil, sadece beş yıldızlı bir profilden daha inandırıcı olabilir. Önemli olan sizin cevabınızdır, çünkü onu yorum sahibinden çok gelecekteki müşteriler okur.",
+          "Sadece hoşunuza gitmeyen bir yorumu sildiremezsiniz. Ancak Google'ın içerik kurallarını ihlal eden yorumları bildirebilirsiniz. Bunlar örneğin hakaret veya nefret söylemi içeren yorumlar, hiç müşteriniz olmamış birinden geldiği belli olan sahte yorumlar, rakip işletmeden geldiği anlaşılan yorumlar, konuyla ilgisiz içerikler ve kişisel bilgi paylaşan yorumlardır.",
+          "Bildirimi Google İşletme Profili'nizin yorum yönetimi bölümünden veya Google Haritalar'da ilgili yorumun yanındaki menüden yaparsınız. İnceleme zaman alabilir ve sonuç garanti değildir. Bu süre zarfında yoruma kısa ve sakin bir cevap yazmak, okuyanlara durumu anlatmanın en iyi yoludur. Ağır hakaret veya iftira söz konusuysa bir avukata danışın.",
+        ],
+        steps: [
+          "Hemen cevap yazmayın. Önce müşteri kartına ve randevu notlarına bakın, ekipten ne olduğunu dinleyin.",
+          "Birkaç gün içinde, sakin ve kısa bir cevap yazın. Teşekkür edin ve müşterinin hissini ciddiye alın.",
+          "Savunmaya geçmeyin, tartışmayın ve herkese açık alanda işlem detayı, sağlık bilgisi veya kişisel veri paylaşmayın.",
+          "Konuyu özel bir kanala taşıyın: telefon numaranızı veya e-posta adresinizi verin.",
+          "Gerçek bir hata varsa düzeltin ve bunu ekipte konuşun; aynı eleştiri tekrar ediyorsa süreçlerinize bakın.",
+        ],
+        callout:
+          "Cevap şablonu: “Merhaba Selin Hanım, geri bildiriminiz için teşekkür ederiz. Ziyaretinizin beklediğiniz gibi geçmemesine gerçekten üzüldük. Bu konuyu sizinle birebir konuşmak ve bir çözüm bulmak isteriz; bize 0XXX XXX XX XX numarasından veya [e-posta] adresinden ulaşabilirsiniz. Saygılarımızla, [isim], [Salon adı]”",
+      },
+      {
+        heading: "Yorum isteme e-postalarında KVKK ve İYS'ye nasıl dikkat edilir?",
+        paragraphs: [
+          "Mevcut müşterinize, aldığı hizmetle ilgili bir takip e-postası gönderip bakım önerisi ve geri bildirim talebi iletmek genellikle müşteri ilişkisinin doğal bir parçasıdır. Yine de KVKK kapsamında aydınlatma yükümlülüğünüzü yerine getirin: müşteriye e-posta adresini ne için kullandığınızı randevu veya kayıt sırasında açıkça anlatın.",
+          "Sınır şudur: e-postaya kampanya, indirim kodu veya yeni hizmet tanıtımı koyduğunuz anda mesaj ticari elektronik ileti niteliği kazanabilir. Bu durumda müşterinin önceden onayı ve İleti Yönetim Sistemi (İYS) kaydı gibi kurallar devreye girer. En sade çözüm, yorum isteğini hizmetle ilgili takip e-postasında tutmak, reklamı ayrı ve onaylı kanallardan göndermektir.",
+        ],
+        bullets: [
+          "Yorum isteğini kısa, kişisel ve hizmetle ilgili tutun.",
+          "Her e-postada kolay bir vazgeçme yolu sunun ve vazgeçen müşteriye bir daha göndermeyin.",
+          "Aynı müşteriye aynı işlem için birden fazla hatırlatma göndermeyin.",
+          "Müşterinin sağlık bilgilerini veya işlem detaylarını e-postanın konu satırında kullanmayın.",
+        ],
+      },
+      {
+        heading: "Salon programı yorum toplamayı nasıl kolaylaştırır?",
+        paragraphs: [
+          "Yorum toplamanın en büyük düşmanı unutmaktır. Yoğun bir günde resepsiyonda kimse her müşteriye link göndermeyi aklında tutamaz. Bu yüzden takip e-postasını otomatikleştirmek, düzenli ve öngörülebilir bir yorum akışı sağlar.",
+          "Treatflow'da her işlemden sonra müşteriye otomatik bir takip e-postası gönderebilirsiniz: bakım önerileri ve geri bildirim talebiyle birlikte, içine kendi Google yorum linkinizi ekleyerek. Müşteri otomasyonları ile bekleme süreleri ve koşullar içeren çok adımlı e-posta akışları kurarsınız; örneğin müşteri yeniden randevu aldıysa akış durur. Müşteri kartındaki notlar, kime ne zaman yazıldığını ekibe gösterir. Randevu hatırlatmaları e-postayla gider, müşterileriniz komisyonsuz online randevuyu size ait bağlantıdan alır ve isterseniz randevuya odaklı, mobil uyumlu bir salon web sitesi de edinebilirsiniz.",
+          "Otomasyonlar, hatırlatmalar ve online randevu Booking paketinde yer alır: lansman fiyatıyla aylık ₺1.990 (KDV hariç). Basic paket aylık ₺1.490'dır. Treatflow'u 14 gün ücretsiz ve kredi kartı gerekmeden deneyebilirsiniz.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Google işletme yorum linki nasıl alınır?",
+        a: "Google İşletme Profili'nize giriş yapın ve yorum isteme (yorum linkini paylaşma) seçeneğini açın. Google size yorum penceresini doğrudan açan kısa bir link verir. Bu linki takip e-postalarınızda, web sitenizde ve QR kod olarak resepsiyonda kullanabilirsiniz.",
+      },
+      {
+        q: "Yorum karşılığında indirim vermek yasak mı?",
+        a: "Evet. Google, indirim, hediye ürün veya ücretsiz işlem gibi bir karşılık sunularak istenen yorumları yasaklar. Bu tür yorumlar kaldırılabilir ve profiliniz kısıtlanabilir. Yorum gönüllü olmalıdır.",
+      },
+      {
+        q: "Çalışanlarım veya ailem salonuma yorum yazabilir mi?",
+        a: "Hayır. Çalışanların, sahiplerin ve yakınlarının yazdığı yorumlar çıkar çatışması sayılır ve gerçek müşteri deneyimini yansıtmaz. Google bu yorumları kaldırabilir.",
+      },
+      {
+        q: "Olumsuz bir yorumu sildirebilir miyim?",
+        a: "Sadece olumsuz olduğu için hayır. Hakaret, sahte hesap, rakip yorumu veya konu dışı içerik gibi Google kurallarını ihlal eden yorumları bildirebilirsiniz. Diğer durumlarda sakin ve çözüm odaklı bir cevap yazmak en iyi yoldur.",
+      },
+      {
+        q: "Yorum isteme e-postası için müşteriden ayrıca onay almam gerekir mi?",
+        a: "Hizmetle ilgili, reklam içermeyen bir takip e-postası genellikle mevcut müşteri ilişkisinin parçasıdır; yine de KVKK aydınlatmasını yapın ve kolay vazgeçme yolu sunun. E-postada kampanya veya indirim varsa ticari elektronik ileti kuralları ve İYS uygulanır; emin değilseniz bir uzmana danışın.",
+      },
+      {
+        q: "Ayda kaç Google yorumu almalıyım?",
+        a: "Sabit bir hedef yoktur. Önemli olan düzenliliktir: her ay birkaç yeni yorum, yılda bir kez gelen toplu yorumlardan daha güçlü bir sinyal verir. Her müşteriye sormayı alışkanlık hâline getirin.",
+      },
+    ],
+    related: [
+      { pageKey: "messaging", label: "Otomatik e-posta hatırlatmaları" },
+      { pageKey: "online-booking", label: "Komisyonsuz online randevu sistemi" },
+      { pageKey: "studio-website", label: "Güzellik salonu web sitesi" },
+    ],
+  },
 ];

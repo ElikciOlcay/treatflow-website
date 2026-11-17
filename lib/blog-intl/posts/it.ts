@@ -1457,4 +1457,186 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 9. Recensioni Google centro estetico
+  // ---------------------------------------------------------------------------
+  {
+    topic: "google-reviews-salon",
+    lang: "it",
+    slug: "recensioni-google-centro-estetico",
+    title: "Recensioni Google per il centro estetico: come ottenerne di più (e migliori)",
+    metaTitle: "Recensioni Google centro estetico: come ottenerne di più",
+    description:
+      "Come ottenere più recensioni Google per il centro estetico: quando e come chiederle, cosa è vietato, frasi pronte e come rispondere alle recensioni negative.",
+    excerpt:
+      "Le recensioni Google decidono spesso se una nuova cliente prenota da te o dal centro accanto. Ecco come chiederle al momento giusto, nel rispetto delle regole, e come rispondere anche a quelle negative.",
+    category: "Marketing e clienti",
+    keywords: [
+      "recensioni google centro estetico",
+      "come ottenere recensioni su google",
+      "chiedere recensioni ai clienti",
+      "link recensioni google",
+      "rispondere a recensioni negative esempi",
+      "recensioni false",
+      "gestionale centro estetico",
+    ],
+    publishedAt: "2026-11-17",
+    updatedAt: "2026-11-17",
+    readMinutes: 8,
+    answer:
+      "Per ottenere più recensioni Google devi chiederle a tutte le clienti, subito dopo il trattamento e con un link diretto al modulo di recensione del tuo Profilo dell'attività su Google. Ripeti la richiesta con un'email di follow-up lo stesso giorno o il giorno dopo e rispondi a ogni recensione. Recensioni comprate, false o ottenute in cambio di sconti sono vietate e rischiano di costarti l'intero profilo.",
+    takeaways: [
+      "Contano la valutazione media, il numero, la recenza, il testo delle recensioni e le tue risposte.",
+      "Il momento migliore per chiedere è subito dopo il trattamento, di persona, seguito da un'email con il link diretto.",
+      "Chiedi a tutte le clienti, non solo a quelle che sai già soddisfatte, e non offrire nulla in cambio.",
+      "Rispondi alle recensioni negative con calma, in modo breve e senza rivelare dati sul trattamento.",
+      "Un'email di follow-up automatica dopo ogni appuntamento trasforma la richiesta in un'abitudine costante.",
+    ],
+    intro: [
+      "Prima di prenotare una pulizia del viso, un refill ciglia o la prima seduta di epilazione laser, quasi ogni nuova cliente cerca il tuo centro su Google. In pochi secondi vede le stelle, il numero di recensioni e gli ultimi commenti. Se trova tre recensioni di due anni fa, passa al centro successivo nella mappa, anche se il tuo lavoro è migliore.",
+      "La buona notizia: le recensioni non arrivano per caso, ma con un metodo semplice e ripetibile. In questa guida trovi perché contano, quando e come chiederle, cosa è consentito e cosa no, frasi pronte, un modello di email e un modello di risposta alle recensioni negative. Vale per centri estetici, studi di medicina estetica, onicotecniche, lash artist, centri di epilazione laser e trucco permanente. Sono indicazioni pratiche, non una consulenza legale.",
+    ],
+    sections: [
+      {
+        heading: "Perché le recensioni Google sono così importanti per un centro estetico?",
+        paragraphs: [
+          "Le recensioni lavorano su due livelli. Il primo è la visibilità: quando qualcuno cerca “centro estetico vicino a me” o “laminazione ciglia” più il nome della città, Google mostra una mappa con pochi risultati. Google stesso indica che il numero di recensioni e il punteggio possono influire sul posizionamento locale, insieme a pertinenza e distanza.",
+          "Il secondo livello è la fiducia. Nel beauty la cliente ti affida il viso, la pelle, le ciglia o un trattamento laser. Una recensione concreta di un'altra cliente (“mi ha spiegato tutto prima della seduta, nessun rossore il giorno dopo”) convince più di qualsiasi post sponsorizzato. Il tuo Profilo dell'attività su Google è quindi una vetrina gratuita, spesso più vista del tuo sito.",
+        ],
+      },
+      {
+        heading: "Cosa rende forte un profilo con le recensioni?",
+        paragraphs: [
+          "Non conta solo il numero di stelle. Guarda il tuo profilo con gli occhi di una nuova cliente e valuta questi cinque elementi:",
+        ],
+        bullets: [
+          "**Valutazione media:** una media alta ispira fiducia, ma un 5,0 perfetto con poche recensioni può sembrare poco credibile. Qualche voto più basso, gestito bene, rende il profilo più autentico.",
+          "**Numero:** cinquanta recensioni pesano molto più di cinque, anche con una media simile.",
+          "**Recenza:** recensioni arrivate nelle ultime settimane mostrano un centro attivo. Se l'ultima è di un anno fa, la cliente si chiede se sei ancora aperta.",
+          "**Testo:** recensioni che citano il trattamento, l'operatrice o il risultato aiutano chi legge e contengono le parole che le persone cercano.",
+          "**Risposte del titolare:** rispondere a tutte, anche alle critiche, dimostra cura e professionalità.",
+        ],
+      },
+      {
+        heading: "Quando e come chiedere una recensione alle clienti?",
+        paragraphs: [
+          "La maggior parte dei centri semplicemente non chiede. Eppure molte clienti soddisfatte lasciano volentieri una recensione, se qualcuno glielo propone nel momento giusto e il percorso è breve. Ecco una sequenza che funziona:",
+        ],
+        steps: [
+          "Recupera il link diretto alla recensione dal tuo Profilo dell'attività su Google (cerca l'opzione per chiedere recensioni o condividere il modulo). Così la cliente arriva subito alla finestra con le stelle, senza dover cercare il centro.",
+          "Chiedi di persona, subito dopo il trattamento, quando la cliente si guarda allo specchio ed è contenta del risultato. Una frase breve e sincera basta.",
+          "Esponi alla reception un piccolo cartello con un QR code che porta al link della recensione. Lo puoi creare con gli strumenti del Profilo dell'attività o con un normale generatore di QR code.",
+          "Invia un'email di follow-up lo stesso giorno o il giorno dopo, con i consigli post-trattamento e il link alla recensione. A casa, con calma, la cliente ha tempo di scrivere.",
+          "Non insistere: un promemoria al massimo. Se la cliente non risponde, va bene così.",
+        ],
+        callout:
+          "Ogni clic in più ti fa perdere recensioni. Non scrivere “cercaci su Google”: usa sempre il link diretto o il QR code.",
+      },
+      {
+        heading: "Cosa è consentito e cosa è vietato quando chiedi recensioni?",
+        paragraphs: [
+          "Chiedere recensioni è del tutto lecito, purché siano autentiche e spontanee. La Direttiva Omnibus (UE) 2019/2161, recepita in Italia nel Codice del Consumo, considera pratica commerciale scorretta pubblicare recensioni false o commissionarle a terzi; in Italia vigila l'Autorità Garante della Concorrenza e del Mercato (AGCM). Anche le norme di Google vietano i contenuti falsi e gli incentivi, e Google può rimuovere recensioni o limitare il profilo.",
+        ],
+        table: {
+          headers: ["Consentito", "Vietato"],
+          rows: [
+            ["Chiedere a tutte le clienti una recensione sincera", "Comprare recensioni o farle scrivere da agenzie"],
+            ["Inviare un'email di follow-up con il link diretto", "Offrire sconti, omaggi o trattamenti gratuiti in cambio di una recensione"],
+            ["Esporre un QR code alla reception", "Chiedere recensioni solo alle clienti che sai soddisfatte (selezione)"],
+            ["Rispondere a tutte le recensioni con toni professionali", "Far scrivere recensioni allo staff, a parenti o amiche"],
+            ["Segnalare a Google recensioni che violano le sue norme", "Segnalare recensioni negative solo perché non ti piacciono"],
+            ["Condividere sul sito o sui social le recensioni belle", "Scrivere recensioni negative sui centri concorrenti"],
+          ],
+        },
+        callout:
+          "Anche un piccolo omaggio “per ringraziarti della recensione” è un incentivo. Se vuoi premiare la fedeltà, fallo con un programma separato e valido per tutte, indipendentemente dalle recensioni.",
+      },
+      {
+        heading: "Quali frasi usare per chiedere una recensione? (con modello email)",
+        paragraphs: [
+          "Una richiesta concreta produce recensioni più utili. Invece di “lasciaci una recensione”, invita la cliente a raccontare la sua esperienza. Alcune frasi da usare in cabina o alla reception:",
+        ],
+        bullets: [
+          "“Sono contenta che ti piaccia il risultato! Se ti va, ci aiuteresti tantissimo con una recensione su Google: qui c'è il QR code, ci vuole un minuto.”",
+          "“Per un piccolo centro come il nostro le recensioni fanno davvero la differenza. Stasera ti mando il link via email, così lo fai con calma.”",
+          "“Se scrivi due righe su come ti sei trovata con il laser, aiuti molto le persone che sono ancora indecise.”",
+        ],
+        steps: [
+          "Oggetto: “Come ti trovi dopo il trattamento di oggi?”",
+          "Testo: “Ciao [Nome], grazie per essere venuta oggi da noi. Qualche consiglio per i prossimi giorni: [consigli post-trattamento]. Se hai domande, rispondi pure a questa email.”",
+          "Richiesta: “Se ti sei trovata bene, ci farebbe molto piacere una tua recensione su Google. Raccontaci in due righe come ti sei trovata: [link diretto alla recensione]. Se invece qualcosa non è andato come speravi, scrivici: vogliamo saperlo.”",
+          "Chiusura: “A presto, [Nome del centro]” e, in fondo, una riga con la possibilità di non ricevere più email di questo tipo.",
+        ],
+      },
+      {
+        heading: "Come rispondere alle recensioni negative e quando puoi farle rimuovere?",
+        paragraphs: [
+          "Una recensione critica non è una catastrofe. Un profilo con solo cinque stelle può sembrare costruito, e una risposta calma convince chi legge più della recensione stessa. Ricorda che non rispondi solo all'autrice, ma a tutte le future clienti.",
+          "Attenzione alla privacy: non confermare né descrivere trattamenti, dati di salute o dettagli dell'appuntamento, soprattutto in medicina estetica o con il laser. Porta il discorso su un canale privato.",
+          "Modello di risposta: **“Ciao [Nome], grazie per averci scritto e ci dispiace che la tua esperienza non sia stata all'altezza. Prendiamo sul serio ogni osservazione e vorremmo capire meglio cosa è successo. Ti va di contattarci al [telefono/email]? Così troviamo insieme una soluzione. [Nome], titolare di [Nome del centro]”**",
+          "Non puoi far cancellare una recensione solo perché è negativa o ingiusta secondo te. Puoi però segnalarla a Google dal tuo Profilo dell'attività se viola le norme sui contenuti, ad esempio in questi casi:",
+          "Motivi tipici per una segnalazione: insulti, linguaggio offensivo o discriminatorio; recensioni chiaramente riferite a un'altra attività o scritte da chi non è mai stata tua cliente; contenuti falsi, spam o recensioni scritte da concorrenti o ex collaboratori in conflitto di interessi; dati personali di terzi, come il nome completo o il numero di telefono di un'operatrice. Google valuta ogni segnalazione e non garantisce la rimozione. La difesa migliore resta un flusso costante di recensioni vere, che spinge in basso quelle isolate.",
+        ],
+        bullets: [
+          "Rispondi entro pochi giorni, mai a caldo: rileggi il testo dopo un'ora.",
+          "Ringrazia, riconosci il punto, proponi un contatto diretto. Niente giustificazioni lunghe.",
+          "Non accusare la cliente e non entrare in una discussione pubblica.",
+          "Rispondi anche alle recensioni positive, con un grazie breve e personale.",
+        ],
+      },
+      {
+        heading: "Cosa dice il GDPR sulle email per chiedere recensioni?",
+        paragraphs: [
+          "Quando usi l'indirizzo email di una cliente per chiederle una recensione, tratti dati personali, quindi valgono il GDPR e le indicazioni del Garante per la protezione dei dati personali. Un'email legata al servizio appena ricevuto, con consigli post-trattamento e una richiesta di feedback, è diversa da una newsletter promozionale. Mantienila sobria e verifica le regole sulle comunicazioni commerciali via email, soprattutto se aggiungi offerte o promozioni.",
+        ],
+        bullets: [
+          "Informa le clienti, nell'informativa privacy, che dopo l'appuntamento possono ricevere un'email di follow-up.",
+          "Invia la richiesta solo alle clienti che hanno effettivamente ricevuto un trattamento.",
+          "Inserisci in ogni email un modo semplice per non riceverne più e rispetta subito chi lo chiede.",
+          "Non mescolare la richiesta di recensione con promozioni, se per le email promozionali non hai il consenso.",
+          "Usa un gestionale che conserva i dati nell'UE e annota nella scheda cliente chi non vuole essere contattata.",
+        ],
+      },
+      {
+        heading: "Come ti aiuta un gestionale per centro estetico a raccogliere recensioni?",
+        paragraphs: [
+          "Il problema non è sapere che bisogna chiedere, è ricordarsene ogni giorno. Con Treatflow, dopo ogni trattamento può partire in automatico un'email di follow-up con i consigli post-trattamento e una richiesta di feedback, in cui inserisci il link alla tua recensione Google. Con i flussi clienti automatici costruisci sequenze in più passaggi, con tempi di attesa e condizioni, per esempio fermare l'invio se la cliente ha già prenotato di nuovo.",
+          "Le note nella scheda cliente ti ricordano chi ha chiesto di non ricevere email. Le clienti prenotano dal tuo link di prenotazione online senza commissioni, ricevono promemoria via email e, se vuoi, trovano il tuo centro su un sito su misura, ottimizzato per smartphone e prenotazioni. Automazioni, promemoria e prenotazioni online sono inclusi nel piano Booking (59 €/mese IVA esclusa; il piano Basic costa 39 €/mese). Puoi provarlo gratis per 14 giorni, senza carta di credito.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Come ottengo il link diretto per le recensioni Google?",
+        a: "Accedi al tuo Profilo dell'attività su Google e cerca l'opzione per chiedere recensioni o condividere il modulo di recensione. Copia il link e usalo nelle email, sul sito e per creare un QR code da esporre alla reception.",
+      },
+      {
+        q: "Posso offrire uno sconto in cambio di una recensione?",
+        a: "No. Sconti, omaggi o trattamenti gratuiti in cambio di recensioni violano le norme di Google e possono configurare una pratica commerciale scorretta. Chiedi una recensione sincera senza offrire nulla in cambio.",
+      },
+      {
+        q: "Quanto tempo dopo il trattamento devo chiedere la recensione?",
+        a: "Il momento migliore è subito dopo il trattamento, di persona, seguito da un'email lo stesso giorno o il giorno dopo. Per trattamenti con un risultato che si vede più tardi, come alcune sedute laser, puoi aspettare qualche giorno.",
+      },
+      {
+        q: "Le mie collaboratrici possono lasciare una recensione al centro?",
+        a: "No. Recensioni di staff, parenti o amiche sono in conflitto di interessi e vanno contro le norme di Google. Le collaboratrici possono però aiutarti a chiedere recensioni alle clienti.",
+      },
+      {
+        q: "Devo rispondere a tutte le recensioni?",
+        a: "Sì, idealmente. Un grazie breve alle recensioni positive e una risposta calma e professionale a quelle negative mostrano alle future clienti che ti prendi cura di chi viene da te.",
+      },
+    ],
+    related: [
+      { pageKey: "messaging", label: "Email automatiche dopo il trattamento" },
+      { pageKey: "online-booking", label: "Prenotazioni online senza commissioni" },
+      { pageKey: "studio-website", label: "Sito web per il tuo centro" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Direttiva (UE) 2019/2161 (Direttiva Omnibus)",
+        url: "https://eur-lex.europa.eu/eli/dir/2019/2161/oj",
+      },
+    ],
+  },
 ];
