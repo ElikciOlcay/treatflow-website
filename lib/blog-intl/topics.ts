@@ -61,6 +61,11 @@ export const blogTopics: Record<
     pageKeys: ["online-booking", "pricing", "appointment-calendar"],
     markets: ["pl"],
   },
+  "google-reviews-salon": {
+    deSlug: "google-bewertungen-kosmetikstudio",
+    image: "/images/blog/google-business-kosmetik.jpg",
+    pageKeys: ["messaging", "online-booking", "studio-website"],
+  },
 };
 
 export const blogTopicOrder: BlogTopicId[] = [
@@ -74,4 +79,5 @@ export const blogTopicOrder: BlogTopicId[] = [
   "tr-appointment-book-vs-software",
   "cancellation-policy-salon",
   "pl-booking-without-commission",
+  "google-reviews-salon",
 ];

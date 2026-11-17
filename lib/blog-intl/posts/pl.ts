@@ -1561,4 +1561,198 @@ export const posts: BlogArticle[] = [
       { pageKey: "appointment-calendar", label: "Kalendarz wizyt" },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 10. Opinie Google dla salonu
+  // ---------------------------------------------------------------------------
+  {
+    topic: "google-reviews-salon",
+    lang: "pl",
+    slug: "opinie-google-salon-kosmetyczny",
+    title: "Opinie Google dla salonu kosmetycznego: jak zdobyć ich więcej i jak odpowiadać na krytykę",
+    metaTitle: "Opinie Google dla salonu kosmetycznego – jak je zdobyć",
+    description:
+      "Jak zdobyć więcej opinii w Google dla salonu: kiedy i jak prosić klientki, link i kod QR, gotowe wzory wiadomości, odpowiedzi na negatywne opinie i zasady.",
+    excerpt:
+      "Większość zadowolonych klientek chętnie zostawi opinię, jeśli ktoś je o to poprosi we właściwym momencie. Pokazujemy, jak robić to regularnie, zgodnie z prawem i bez nachalności.",
+    category: "Marketing i lojalność",
+    keywords: [
+      "jak zdobyć opinie w google",
+      "opinie google salon kosmetyczny",
+      "jak poprosić klienta o opinię",
+      "odpowiedź na negatywną opinię przykłady",
+      "link do opinii google",
+      "program do salonu kosmetycznego",
+      "opinie w google dla firmy",
+    ],
+    publishedAt: "2026-11-17",
+    updatedAt: "2026-11-17",
+    readMinutes: 8,
+    answer:
+      "Więcej opinii w Google zdobędziesz, gdy poprosisz o nie każdą klientkę, zaraz po zabiegu osobiście, a potem e-mailem tego samego lub następnego dnia, z bezpośrednim linkiem do formularza opinii z Twojego Profilu Firmy w Google. Prośba musi być uczciwa: bez rabatów i prezentów w zamian, bez wybierania tylko zadowolonych klientek i bez fałszywych opinii. Na każdą opinię, także krytyczną, odpowiadaj spokojnie i rzeczowo.",
+    takeaways: [
+      "Opinie wpływają na widoczność w wyszukiwaniu lokalnym i Mapach Google oraz na to, czy nowa klientka w ogóle zadzwoni.",
+      "Liczy się nie tylko średnia ocena, ale też liczba opinii, ich aktualność, treść i Twoje odpowiedzi.",
+      "Najlepszy moment na prośbę to koniec wizyty i e-mail do 24 godzin później, zawsze z bezpośrednim linkiem.",
+      "Kupowanie opinii, nagrody za opinię i proszenie wyłącznie zadowolonych klientek łamią zasady Google, a fałszywe opinie także prawo.",
+      "Negatywna opinia z dobrą odpowiedzią może budować zaufanie bardziej niż kolejna piątka bez komentarza.",
+    ],
+    intro: [
+      "Zanim nowa klientka zarezerwuje hennę pudrową brwi, depilację laserową albo pierwszy zabieg z kwasami, wpisuje w Google „salon kosmetyczny” i nazwę swojej dzielnicy. W kilka sekund porównuje gwiazdki, liczbę opinii i kilka ostatnich komentarzy. Salon z trzema opiniami sprzed dwóch lat przegrywa wtedy z salonem, o którym klientki piszą co tydzień, nawet jeśli robi zabiegi równie dobrze.",
+      "Dobra wiadomość: opinie w Google to nie kwestia szczęścia, tylko prostego, powtarzalnego procesu. W tym poradniku pokazujemy, jak zdobyć opinie w Google uczciwie, kiedy i jak poprosić klientkę o opinię, czego nie wolno robić, jak odpowiadać na krytykę i jak to wszystko zautomatyzować. Dotyczy to salonów kosmetycznych, gabinetów medycyny estetycznej, stylizacji paznokci i rzęs, depilacji laserowej i makijażu permanentnego.",
+    ],
+    sections: [
+      {
+        heading: "Dlaczego opinie w Google są tak ważne dla salonu?",
+        paragraphs: [
+          "Opinie działają na dwóch poziomach. Po pierwsze wpływają na widoczność w wyszukiwaniu lokalnym: Google przy ustalaniu kolejności wyników w Mapach i w lokalnym pakiecie wyników bierze pod uwagę także to, jak aktywny i dobrze oceniany jest Twój profil. Po drugie są społecznym dowodem słuszności. Zabiegi na twarzy czy ciele wymagają zaufania, a klientka, która jeszcze Cię nie zna, szuka potwierdzenia, że inne osoby wyszły od Ciebie zadowolone.",
+          "Twój Profil Firmy w Google jest więc jednym z najważniejszych kanałów marketingowych, a przy tym nie kosztuje nic poza czasem. Warto go traktować jak wizytówkę salonu: aktualne godziny, zdjęcia efektów, cennik, przycisk rezerwacji i regularnie dopływające opinie.",
+        ],
+      },
+      {
+        heading: "Co liczy się w opiniach poza liczbą gwiazdek?",
+        paragraphs: [
+          "Średnia ocena to dopiero początek. Klientki i Google patrzą na profil szerzej. Profil z samymi piątkami i bez żadnej uwagi krytycznej bywa wręcz odbierany jako mało wiarygodny.",
+        ],
+        table: {
+          headers: ["Czynnik", "Na co zwrócić uwagę"],
+          rows: [
+            ["Średnia ocena", "Stabilna, wysoka średnia wygląda wiarygodnie; pojedyncza słabsza ocena jest naturalna"],
+            ["Liczba opinii", "Kilkadziesiąt opinii przekonuje bardziej niż kilka, nawet przy podobnej średniej"],
+            ["Aktualność", "Nowe opinie co tydzień lub co miesiąc pokazują, że salon działa i ma klientki"],
+            ["Treść", "Konkretne opisy zabiegów, atmosfery i efektów pomagają nowym osobom podjąć decyzję"],
+            ["Odpowiedzi właściciela", "Uprzejme odpowiedzi, także na krytykę, pokazują profesjonalizm i zaangażowanie"],
+          ],
+        },
+      },
+      {
+        heading: "Kiedy i jak poprosić klientkę o opinię?",
+        paragraphs: [
+          "Większość salonów po prostu nigdy nie prosi o opinię. Tymczasem zadowolona klientka zwykle chętnie ją zostawi, tylko sama o tym nie pomyśli. Kluczowe są dwie rzeczy: właściwy moment i jak najmniej kliknięć.",
+          "Bezpośredni link do opinii znajdziesz w panelu swojego Profilu Firmy w Google, w opcji prośby o opinie. Ten link otwiera od razu okno wystawiania oceny, więc klientka nie musi szukać Twojego salonu w Mapach. W tym samym miejscu Google zwykle udostępnia też kod QR, który możesz wydrukować.",
+        ],
+        steps: [
+          "Zaraz po zabiegu, gdy klientka ogląda efekt w lustrze, poproś osobiście jednym zdaniem. To moment największego zadowolenia.",
+          "Tego samego lub następnego dnia wyślij e-mail z podziękowaniem, zaleceniami pozabiegowymi i bezpośrednim linkiem do opinii.",
+          "Postaw przy recepcji lub przy lustrze tabliczkę z kodem QR prowadzącym do formularza opinii.",
+          "Dodaj link do opinii w stopce e-maili i na stronie salonu, np. w zakładce kontakt.",
+          "Proś każdą klientkę w ten sam sposób, a nie tylko te, które wyglądają na zachwycone.",
+        ],
+        callout:
+          "Przy zabiegach z efektem odroczonym, np. laserze, mezoterapii czy pierwszej sesji makijażu permanentnego, wyślij prośbę dopiero wtedy, gdy klientka może ocenić rezultat, albo poproś o ocenę samej obsługi i przebiegu wizyty.",
+      },
+      {
+        heading: "Jak poprosić o opinię? Gotowe zwroty i szablon e-maila",
+        paragraphs: [
+          "Prośba ma być krótka, osobista i bez presji. Nie sugeruj, ile gwiazdek klientka powinna dać, i nie proś o konkretne sformułowania. Kilka zwrotów, które możesz powiedzieć przy recepcji:",
+        ],
+        bullets: [
+          "„Bardzo się cieszę, że efekt Ci się podoba. Jeśli masz chwilę, będę wdzięczna za kilka słów w Google, to dla małego salonu ogromna pomoc.”",
+          "„Jutro wyślę Ci e-mail z zaleceniami po zabiegu, a w nim jest też link do opinii. Każda szczera opinia bardzo nam pomaga.”",
+          "„Przy recepcji jest kod QR do naszego profilu w Google. Jeśli zechcesz podzielić się wrażeniami, wystarczy go zeskanować.”",
+          "Szablon e-maila. Temat: „Dziękujemy za wizytę, [imię]!” Treść: „Dzień dobry, [imię], dziękujemy za wczorajszą wizytę na [nazwa zabiegu]. Poniżej znajdziesz najważniejsze zalecenia na najbliższe dni: [zalecenia]. Jeśli masz pytania, po prostu odpisz na tę wiadomość. Będzie nam bardzo miło, jeśli podzielisz się szczerą opinią o wizycie w Google: [link do opinii]. Zajmie to około minuty. Pozdrawiamy serdecznie, [imię i nazwa salonu]. Nie chcesz otrzymywać takich wiadomości po wizycie? Daj nam znać, odpowiadając na tego e-maila.”",
+        ],
+      },
+      {
+        heading: "Co wolno, a czego nie wolno przy zbieraniu opinii?",
+        paragraphs: [
+          "Aktywne proszenie o opinie jest w pełni dozwolone, pod warunkiem że opinie są prawdziwe i dobrowolne. Granice wyznaczają dwa źródła: zasady Google dotyczące treści oraz prawo. Dyrektywa Omnibus (UE) 2019/2161, wdrożona w Polsce w ustawie o przeciwdziałaniu nieuczciwym praktykom rynkowym, zakazuje m.in. zamieszczania fałszywych opinii i zlecania ich innym osobom. Nadzór nad tym sprawuje UOKiK. Za naruszenie zasad Google grozi usunięcie opinii, a nawet ograniczenia dla profilu.",
+          "Jeśli publikujesz opinie klientek na własnej stronie, musisz też rzetelnie informować, czy i w jaki sposób sprawdzasz, że pochodzą od osób, które naprawdę skorzystały z Twoich usług.",
+        ],
+        table: {
+          headers: ["Dozwolone", "Zakazane"],
+          rows: [
+            ["Prośba o opinię do każdej klientki po wizycie", "Kupowanie opinii lub zlecanie ich agencjom"],
+            ["Bezpośredni link i kod QR do formularza opinii", "Rabat, prezent lub darmowy zabieg w zamian za opinię"],
+            ["Przypomnienie w e-mailu po zabiegu", "Proszenie tylko zadowolonych klientek lub wcześniejsze „filtrowanie” niezadowolonych"],
+            ["Uprzejma odpowiedź na każdą opinię", "Opinie od pracowników, właścicielki, rodziny i znajomych"],
+            ["Zgłoszenie opinii łamiącej zasady Google", "Fałszywe negatywne opinie o konkurencji"],
+            ["Udostępnianie prawdziwych opinii na Instagramie", "Usuwanie lub ukrywanie złych opinii na własnej stronie przy pokazywaniu dobrych"],
+          ],
+        },
+        callout:
+          "To praktyczne wskazówki, a nie porada prawna. W razie wątpliwości sprawdź aktualne zasady Google dotyczące treści oraz komunikaty UOKiK albo skonsultuj się z prawnikiem.",
+      },
+      {
+        heading: "Jak odpowiadać na negatywne opinie? Przykłady i szablon",
+        paragraphs: [
+          "Negatywna opinia to nie koniec świata. Czytają ją nie tylko autorka, ale przede wszystkim przyszłe klientki, które sprawdzają, jak reagujesz. Spokojna, rzeczowa odpowiedź często buduje więcej zaufania niż kolejna piątka. Zanim odpiszesz, odczekaj kilka godzin i sprawdź w kartotece, co faktycznie wydarzyło się podczas wizyty.",
+          "W gabinecie medycyny estetycznej i przy zabiegach na skórze uważaj szczególnie na RODO: w publicznej odpowiedzi nie potwierdzaj szczegółów zabiegu, stanu skóry ani nawet tego, że dana osoba jest Twoją klientką lub pacjentką. Szczegóły omawiaj wyłącznie prywatnie.",
+          "Szablon odpowiedzi: **„Dzień dobry, dziękujemy za opinię i przykro nam, że wizyta nie spełniła Pani oczekiwań. Zależy nam, żeby to wyjaśnić. Prosimy o kontakt bezpośrednio z salonem pod adresem [e-mail] lub numerem [telefon], wtedy spokojnie porozmawiamy o sytuacji. Pozdrawiamy, [imię], [nazwa salonu].”**",
+        ],
+        steps: [
+          "Podziękuj za opinię, nawet jeśli jest niesprawiedliwa.",
+          "Przyznaj, że klientka jest niezadowolona, bez tłumaczenia się i bez kłótni.",
+          "Nie ujawniaj żadnych danych o wizycie ani o zdrowiu klientki.",
+          "Zaproponuj rozmowę poza Google: e-mail lub telefon salonu.",
+          "Jeśli coś poszło nie tak, napisz, co zmieniasz, np. dokładniejsze omawianie zaleceń.",
+          "Odpowiadaj też na pozytywne opinie, krótko i za każdym razem trochę inaczej.",
+        ],
+      },
+      {
+        heading: "Kiedy można zgłosić opinię do usunięcia?",
+        paragraphs: [
+          "Google nie usuwa opinii tylko dlatego, że jest krytyczna. Możesz jednak zgłosić opinię z poziomu Profilu Firmy w Google, jeśli narusza zasady dotyczące treści. Zgłoszenie sprawdza Google, a decyzja może potrwać. Do tego czasu i tak odpowiedz rzeczowo, bo odpowiedź widzą wszyscy.",
+        ],
+        bullets: [
+          "Spam i fałszywe opinie, np. seria ocen z kont, które nigdy u Ciebie nie były.",
+          "Treści obraźliwe, wulgarne, nienawistne lub zawierające groźby.",
+          "Konflikt interesów, np. opinia wystawiona przez konkurencję lub byłego pracownika.",
+          "Treści niezwiązane z salonem, np. opinia o innej firmie lub komentarz polityczny.",
+          "Dane osobowe, np. pełne nazwisko pracownicy w obraźliwym kontekście.",
+        ],
+      },
+      {
+        heading: "Jak zautomatyzować prośby o opinię zgodnie z RODO?",
+        paragraphs: [
+          "Najwięcej daje regularność. Jeśli prośba wychodzi automatycznie po każdej wizycie, opinie przybywają co tydzień, a Ty nie musisz o tym pamiętać w natłoku dnia. E-mail do własnej klientki po wizycie, związany z zabiegiem, np. z zaleceniami pozabiegowymi i prośbą o opinię, ma charakter obsługowy. Zadbaj jednak o to, żeby klientka mogła łatwo zrezygnować z takich wiadomości, i nie dokładaj do niego promocji.",
+          "Treści marketingowe, np. rabaty czy nowości w ofercie, to już informacja handlowa. W Polsce na jej wysyłanie drogą elektroniczną potrzebujesz zgody klientki, a zasady w tym zakresie określa Prawo komunikacji elektronicznej. Zgodnie z RODO wysyłaj e-maile tylko z adresów, które klientki podały salonowi, a informacje o przetwarzaniu danych przekaż przy rezerwacji. W razie wątpliwości sięgnij po wytyczne Prezesa UODO.",
+          "W Treatflow możesz ustawić automatyczne e-maile po zabiegu z zaleceniami pozabiegowymi i prośbą o opinię, w których wstawiasz link do swojego profilu w Google. Automatyzacje dla klientów pozwalają zbudować kilka kroków z czasem oczekiwania i warunkami, np. zatrzymać sekwencję, jeśli klientka już umówiła kolejną wizytę. W kartotece klienta zapiszesz notatki z wizyty, które pomogą przy odpowiedzi na ewentualną krytykę. Automatyzacje, przypomnienia e-mail i rezerwacje online bez prowizji są w planie Booking za 59 € miesięcznie (netto + VAT); plan Basic kosztuje 39 €. Możesz testować 14 dni za darmo, bez karty.",
+        ],
+        bullets: [
+          "Dodaj link do opinii w e-mailu wysyłanym dzień po zabiegu.",
+          "Ustaw opóźnienie dla zabiegów z efektem odroczonym.",
+          "Zostaw w każdej wiadomości łatwą możliwość rezygnacji.",
+          "Nie łącz prośby o opinię z ofertą rabatową.",
+          "Raz w miesiącu przejrzyj nowe opinie i odpowiedz na wszystkie.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Jak znaleźć link do opinii Google dla mojego salonu?",
+        a: "Zaloguj się do Profilu Firmy w Google i wybierz opcję prośby o opinie. Google pokaże krótki link, który otwiera od razu okno wystawiania oceny. Ten link możesz wkleić do e-maili, na stronę salonu i do bio na Instagramie.",
+      },
+      {
+        q: "Czy mogę dać klientce rabat za wystawienie opinii?",
+        a: "Nie. Zasady Google zakazują oferowania korzyści w zamian za opinie, a opinia „kupiona” rabatem przestaje być bezstronna. Proś o szczerą opinię bez żadnej nagrody.",
+      },
+      {
+        q: "Czy mogę prosić o opinię tylko zadowolone klientki?",
+        a: "Nie powinnaś. Wybieranie wyłącznie zadowolonych osób lub odsyłanie niezadowolonych do prywatnego formularza zamiast do Google narusza zasady Google. Proś każdą klientkę w ten sam sposób.",
+      },
+      {
+        q: "Czy mogę usunąć negatywną opinię z Google?",
+        a: "Sama nie możesz jej usunąć. Możesz zgłosić ją do Google, jeśli łamie zasady, np. jest spamem, obraźliwa lub pochodzi od konkurencji. Zwykłą krytykę zostaw i odpowiedz na nią rzeczowo.",
+      },
+      {
+        q: "Czy na każdą opinię trzeba odpowiadać?",
+        a: "Nie jest to obowiązek, ale warto. Odpowiedzi pokazują, że salon dba o klientki, a przyszłe klientki widzą, jak reagujesz na problemy. Wystarczy krótka, osobista odpowiedź.",
+      },
+      {
+        q: "Czy Treatflow sam zbiera opinie w Google?",
+        a: "Nie. Treatflow nie jest połączony z Profilem Firmy w Google. Możesz natomiast dodać swój link do opinii w automatycznym e-mailu po zabiegu, który Treatflow wysyła klientce.",
+      },
+    ],
+    related: [
+      { pageKey: "messaging", label: "Automatyzacje dla klientów" },
+      { pageKey: "online-booking", label: "Rezerwacje online bez prowizji" },
+      { pageKey: "studio-website", label: "Strona salonu" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Dyrektywa (UE) 2019/2161 (dyrektywa Omnibus)",
+        url: "https://eur-lex.europa.eu/eli/dir/2019/2161/oj",
+      },
+    ],
+  },
 ];

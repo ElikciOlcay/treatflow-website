@@ -1350,4 +1350,189 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 9. Google reviews for salons
+  // ---------------------------------------------------------------------------
+  {
+    topic: "google-reviews-salon",
+    lang: "en",
+    slug: "get-more-google-reviews-salon",
+    title: "How to Get More Google Reviews for Your Salon: Scripts, Templates and the Rules",
+    metaTitle: "Get More Google Reviews for Your Salon: Scripts & Rules",
+    description:
+      "How salons get more Google reviews: when and how to ask, a review request email template, what is not allowed, and how to respond to negative reviews well.",
+    excerpt:
+      "More Google reviews are not luck but a simple routine: ask at the right moment, make it one click and reply to every review. Scripts, an email template and the rules you must not break.",
+    category: "Marketing",
+    keywords: [
+      "get more google reviews salon",
+      "how to ask for google reviews",
+      "google reviews beauty salon",
+      "respond to negative reviews salon",
+      "review request email template",
+      "salon google business profile reviews",
+    ],
+    publishedAt: "2026-11-17",
+    updatedAt: "2026-11-17",
+    readMinutes: 8,
+    answer:
+      "Salons get more Google reviews by asking every happy client personally at the end of the treatment, then sending a short follow-up email the same or next day with a direct link to the review form of their Google Business Profile. Ask all clients, never offer rewards or write reviews yourself, and reply to every review, including the critical ones, calmly and within a few days.",
+    takeaways: [
+      "Most clients who leave happy will review you if you ask them, but almost none do it unprompted.",
+      "Timing and friction decide everything: ask in person at the end of the visit and follow up with a one-click link.",
+      "Fake reviews, paid reviews, discounts for reviews and asking only happy clients break Google's policies and, in the EU and UK, consumer law.",
+      "Replying to reviews, especially negative ones, shows future clients how you treat people when something goes wrong.",
+      "A follow-up email that goes out automatically after each appointment turns asking for reviews from a good intention into a routine.",
+    ],
+    intro: [
+      "Before a new client books a facial, a lash set or a laser course, she searches for you on Google. Within seconds she sees your star rating, how many reviews you have and what the most recent ones say. A studio with three reviews from two years ago looks quiet, even if the work is excellent. A studio with a steady stream of detailed, recent reviews looks trusted and busy.",
+      "The good news is that collecting reviews is not a matter of luck or of being on social media all day. It is a small, repeatable routine that any salon, aesthetic clinic, nail bar, lash studio, laser clinic or PMU artist can build in a week. This guide covers why reviews matter, when and how to ask, ready-to-use scripts and an email template, what you must never do, and how to handle negative reviews. It is practical guidance, not legal advice.",
+    ],
+    sections: [
+      {
+        heading: "Why do Google reviews matter so much for a salon?",
+        paragraphs: [
+          "Google reviews work on two levels. First, they influence local visibility. Google names prominence as one of the factors for local results, and reviews and ratings are part of how it judges prominence. A well-reviewed, active profile has a better chance of appearing in the map results when someone searches for \"beauty salon near me\" or \"lash extensions\" plus your town.",
+          "Second, reviews are social proof. Beauty and aesthetic treatments are personal: clients trust you with their face, skin and sometimes their budget for months. Honest words from other clients reduce that uncertainty more than any advert. Your Google Business Profile is therefore not a side project but one of your most important marketing channels, and it costs nothing to maintain.",
+        ],
+      },
+      {
+        heading: "What makes a Google review profile convincing?",
+        paragraphs: [
+          "The star average is only part of the picture. Potential clients, and Google, look at several signals together:",
+        ],
+        bullets: [
+          "**Rating:** an average in the high 4s builds trust. A perfect 5.0 with only a handful of reviews can look less credible than 4.8 from many clients.",
+          "**Number of reviews:** more reviews make the average more meaningful and harder to shift with a single bad experience.",
+          "**Recency:** regular new reviews signal an active studio. If the latest review is a year old, clients wonder whether anything has changed.",
+          "**Review text:** detailed reviews that mention a treatment, a therapist or the atmosphere persuade more than a bare five stars, and they naturally contain the words people search for.",
+          "**Owner replies:** responding to reviews, positive and negative, shows that someone cares and is listening.",
+        ],
+      },
+      {
+        heading: "When and how should you ask clients for a review?",
+        paragraphs: [
+          "Most salons simply never ask. Yet satisfied clients are usually happy to help when someone asks them kindly and makes it easy. Timing and friction are what make the difference. Build these steps into your daily routine:",
+        ],
+        steps: [
+          "Get your direct review link: in your Google Business Profile, use the option to ask for reviews and copy the short link that opens the review form directly. Every extra click costs you reviews.",
+          "Ask in person at the end of the treatment, when the client is looking in the mirror and pleased with the result. Keep it light and personal, never pushy.",
+          "Send a follow-up email the same day or the next morning with the direct link, a short thank you and one or two aftercare tips.",
+          "Display a QR code at reception or on your aftercare card that points to the same review link. Google's profile tools can provide one, or any QR generator can turn your link into a code.",
+          "Make it a team habit: agree who asks, at which moment, and use the same short wording so it feels natural rather than rehearsed.",
+        ],
+        callout:
+          "Ask every client, not only those who seem delighted. Choosing who to ask based on how happy they are is review gating, which Google does not allow.",
+      },
+      {
+        heading: "What can you say? Scripts and a review request email template",
+        paragraphs: [
+          "The best request is short, sincere and specific. Here are scripts you can adapt for the treatment room or reception:",
+          "In person: \"I'm really glad you like the result. If you have a minute in the next few days, a short Google review would help us a lot. Small studios like ours really depend on them. I'll send you the link by email so it's easy.\"",
+          "For regulars: \"You've been coming to us for a while now, and it would mean a lot if you shared your experience on Google. Just a sentence or two about what you like is perfect.\"",
+          "And here is a review request email template you can send after the appointment:",
+          "**Subject: Thank you for your visit, [first name]**",
+          "\"Hi [first name], thank you for coming in today for your [treatment]. We hope you're enjoying the result. A quick aftercare tip: [tip]. If you have a moment, we'd be very grateful for a short Google review. It helps other clients find us and helps us keep improving: [review link]. If anything wasn't quite right, just reply to this email and we'll make it right. See you soon, [name] at [salon name].\"",
+        ],
+        bullets: [
+          "Keep it to one request and one link; do not add three platforms at once.",
+          "Personalise it with the client's name and the treatment.",
+          "Offer a direct channel for problems, but send the review link to everyone regardless.",
+          "Do not send repeated reminders; one friendly request is enough.",
+        ],
+      },
+      {
+        heading: "What is allowed and what is forbidden?",
+        paragraphs: [
+          "Asking for reviews is perfectly fine. Manipulating them is not. Google's policies prohibit fake engagement and incentives, and breaches can lead to reviews being removed or restrictions on your profile. Beyond Google, the law has tightened: in the EU, the Unfair Commercial Practices Directive as amended by the Omnibus Directive (EU) 2019/2161 bans submitting or commissioning fake reviews, and in the UK the Digital Markets, Competition and Consumers Act 2024 bans fake reviews too.",
+        ],
+        table: {
+          headers: ["Practice", "Allowed?", "Why"],
+          rows: [
+            ["Asking every client personally after the treatment", "Yes", "Genuine request, no pressure, no selection"],
+            ["Sending one follow-up email with a direct review link", "Yes", "Service-related and easy to ignore"],
+            ["QR code or review link at reception and on aftercare cards", "Yes", "Neutral invitation open to everyone"],
+            ["Buying reviews or using review agencies", "No", "Fake reviews; banned by Google and by EU and UK law"],
+            ["Discounts, free add-ons or prize draws in exchange for reviews", "No", "Incentivised reviews breach Google's policies"],
+            ["Asking only happy clients (review gating)", "No", "Distorts the picture; not allowed by Google"],
+            ["Reviews by staff, family or friends", "No", "Conflict of interest; counts as fake engagement"],
+            ["Writing reviews for clients or posting from their accounts", "No", "The review is not their genuine opinion"],
+          ],
+        },
+        callout:
+          "A simple test: would you be comfortable if a client saw exactly how you got the review? If not, do not do it.",
+      },
+      {
+        heading: "How should you respond to negative reviews, and can you get one removed?",
+        paragraphs: [
+          "Even the best studio gets a critical review now and then. Handled well, it can build more trust than ten five-star ratings, because future clients see how you deal with problems. Remember that you are writing for everyone who reads the reply later, not just for the reviewer.",
+          "You cannot remove a review just because it is negative or unfair in your view. You can, however, report reviews that break Google's policies, such as spam, fake reviews, reviews from people who were never clients, conflicts of interest (for example a competitor), offensive language, harassment or reviews that disclose private information. Use the reporting option in your Business Profile and explain briefly which policy is affected.",
+          "While the report is being reviewed, reply publicly in a calm, factual way, for example that you cannot find a record of the visit and invite the person to get in touch. And keep collecting genuine reviews: a steady flow of real feedback naturally reduces the weight of a single unfair one.",
+        ],
+        steps: [
+          "Wait until you are calm. Never reply on the same evening you read it.",
+          "Check the facts: look up the appointment, the treatment notes and speak to the team member involved.",
+          "Reply within a few days, politely and in your own name.",
+          "Thank the client for the feedback and acknowledge their experience without arguing about details in public.",
+          "Do not reveal personal or health information, not even to correct the record.",
+          "Offer to continue the conversation privately by phone or email, and follow through.",
+        ],
+        callout:
+          "Reply template: \"Hi [name], thank you for taking the time to share this, and I'm sorry your visit didn't meet your expectations. That's not the experience we want anyone to have. I'd really like to understand what happened and find a solution. Please contact me directly at [email or phone]. [Your name], owner of [salon name].\"",
+      },
+      {
+        heading: "What about data protection when you email review requests?",
+        paragraphs: [
+          "Sending a review request to an existing client by email involves personal data, so GDPR or UK GDPR applies. Keep it simple and on the safe side:",
+        ],
+        bullets: [
+          "Send requests only to clients who have actually visited, and keep the message service-related: a thank you, aftercare and one review link, not a promotional newsletter.",
+          "Include an easy way to opt out of further emails and respect it straight away.",
+          "Mention in your privacy notice that you may contact clients after appointments for aftercare and feedback.",
+          "Check the email marketing rules in your country, as some treat feedback requests as marketing and require consent.",
+          "Never mention treatment details or health information in a public review reply.",
+        ],
+      },
+      {
+        heading: "How can salon software help you collect reviews automatically?",
+        paragraphs: [
+          "The hardest part of collecting reviews is consistency: on a busy day, nobody remembers to send the follow-up. Automation solves that. In Treatflow, automated messages can send a follow-up email after each treatment, for example with aftercare tips and a feedback request, so you can include your own Google review link. With client workflows you build multi-step email sequences with wait times and conditions, for instance a thank you the next day and a rebooking reminder later, which stops if the client has already rebooked.",
+          "Your commission-free booking link and a mobile-optimised salon website built for bookings make it easy for the new clients who find you through your reviews to book straight away, and notes on the client record help the team see who has already been asked. Automations, email reminders and online booking are included in the Booking plan at €59 per month (Basic €39, both excl. VAT). You can try it free for 14 days, without a credit card.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "How do I get a direct link to my salon's Google reviews?",
+        a: "Open your Google Business Profile, choose the option to ask for reviews and copy the short link it shows. That link opens the review form directly, so clients can rate you in one or two taps. Use the same link in emails, on aftercare cards and in a QR code.",
+      },
+      {
+        q: "Can I offer a discount in exchange for a Google review?",
+        a: "No. Google's policies prohibit incentives for reviews, including discounts, free products or prize draws, even if you accept negative reviews too. Incentivised reviews can be removed and put your profile at risk. Thank clients with great service instead.",
+      },
+      {
+        q: "When is the best time to ask for a review?",
+        a: "At the end of the treatment, when the client sees the result, followed by an email the same day or next morning with the direct link. For treatments where results develop over time, such as some laser or skin treatments, a follow-up a little later can make sense.",
+      },
+      {
+        q: "Should I reply to every Google review?",
+        a: "Ideally, yes. A short, personal thank you to positive reviews shows appreciation, and a calm, helpful reply to negative ones shows future clients how you handle problems. Keep replies free of personal or health details.",
+      },
+      {
+        q: "Can my staff or family leave reviews for the salon?",
+        a: "No. Reviews from employees, owners, relatives or friends are a conflict of interest under Google's policies and can be removed. In the EU and UK, presenting such reviews as genuine client reviews can also breach consumer protection law.",
+      },
+    ],
+    related: [
+      { pageKey: "messaging", label: "Automated follow-up emails" },
+      { pageKey: "online-booking", label: "Commission-free online booking" },
+      { pageKey: "studio-website", label: "A salon website built for bookings" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Directive (EU) 2019/2161 (Omnibus Directive)",
+        url: "https://eur-lex.europa.eu/eli/dir/2019/2161/oj",
+      },
+    ],
+  },
 ];

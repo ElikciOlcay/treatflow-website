@@ -1392,4 +1392,186 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 9. Reseñas de Google centro de estética
+  // ---------------------------------------------------------------------------
+  {
+    topic: "google-reviews-salon",
+    lang: "es",
+    slug: "resenas-google-centro-de-estetica",
+    title: "Reseñas de Google para tu centro de estética: cómo conseguir más (y mejores) opiniones",
+    metaTitle: "Cómo conseguir reseñas en Google para tu centro de estética",
+    description:
+      "Cómo conseguir reseñas en Google para tu centro de estética: cuándo pedirlas, frases y plantilla de email, qué está prohibido y cómo responder a las negativas.",
+    excerpt:
+      "Las reseñas de Google deciden si una clienta nueva te llama a ti o al centro de al lado. Cuándo y cómo pedirlas, qué está prohibido, plantillas listas para usar y cómo responder a una crítica.",
+    category: "Marketing",
+    keywords: [
+      "cómo conseguir reseñas en google",
+      "reseñas google centro de estética",
+      "pedir reseñas a clientes",
+      "responder reseñas negativas ejemplos",
+      "enlace para reseñas de google",
+      "opiniones google salón de belleza",
+      "software para centro de estética",
+    ],
+    publishedAt: "2026-11-17",
+    updatedAt: "2026-11-17",
+    readMinutes: 8,
+    answer:
+      "Para conseguir más reseñas en Google, pide la opinión a todas tus clientas justo después del tratamiento, cuando están contentas, y envíales ese mismo día o al siguiente un email con el enlace directo para reseñas de tu Perfil de Empresa de Google. Responde a todas las reseñas, también a las negativas, y no compres opiniones ni ofrezcas descuentos o regalos a cambio: está prohibido y Google puede eliminarlas.",
+    takeaways: [
+      "En Google Maps cuentan la valoración media, el número de reseñas, lo recientes que son, el texto y tus respuestas.",
+      "El mejor momento para pedir una reseña es justo al terminar el tratamiento, con un email de seguimiento el mismo día o al siguiente.",
+      "Un enlace directo y un código QR en recepción eliminan casi todo el esfuerzo para la clienta.",
+      "Reseñas compradas, falsas o a cambio de descuentos están prohibidas; pide la opinión a todas, no solo a las satisfechas.",
+      "Una respuesta tranquila y profesional a una reseña negativa convence más a futuras clientas que la propia crítica.",
+    ],
+    intro: [
+      "Piensa en cómo busca hoy una clienta nueva: escribe «centro de estética cerca de mí» o «depilación láser» más el nombre de su barrio, abre Google Maps y compara. En segundos decide entre tres o cuatro centros, y lo que más pesa son las estrellas y lo que cuentan otras clientas. Un centro con decenas de opiniones recientes y detalladas transmite una confianza que ninguna foto de cabina consigue.",
+      "El problema es que las clientas contentas casi nunca escriben por iniciativa propia, mientras que una clienta molesta sí lo hace. Si no pides reseñas de forma activa, tu perfil no refleja la realidad de tu trabajo. En esta guía verás qué valora Google, cuándo y cómo pedir opiniones sin resultar pesada, qué está permitido y qué no, frases y una plantilla de email listas para usar, y cómo responder a una crítica. Son recomendaciones prácticas, no asesoramiento jurídico.",
+    ],
+    sections: [
+      {
+        heading: "¿Por qué son tan importantes las reseñas de Google para un centro de estética?",
+        paragraphs: [
+          "Las reseñas cumplen dos funciones a la vez. Por un lado, influyen en tu visibilidad en la búsqueda local: Google indica que la cantidad de reseñas y su valoración forman parte de la «prominencia» de un negocio, uno de los factores que deciden qué centros aparecen arriba en Google Maps. Por otro lado, generan confianza, y en estética eso es decisivo.",
+          "Un tratamiento de micropigmentación, una sesión de láser o unas extensiones de pestañas se hacen sobre la cara o la piel de la clienta. Antes de reservar quiere saber si el resultado es natural, si la profesional es cuidadosa con la higiene y si el trato es agradable. Las opiniones de otras clientas responden justo a esas preguntas, con palabras que tu publicidad nunca podría usar con la misma credibilidad.",
+        ],
+      },
+      {
+        heading: "¿Qué cuenta en tus reseñas, además de las estrellas?",
+        paragraphs: [
+          "Una media de 4,9 con cinco opiniones de hace dos años convence menos que un 4,7 con muchas reseñas del último mes. Las clientas, y Google, miran el conjunto:",
+        ],
+        table: {
+          headers: ["Factor", "Por qué importa", "Qué puedes hacer"],
+          rows: [
+            ["Valoración media", "Es lo primero que se ve en Google Maps", "Cuida la experiencia completa y pide opinión de forma constante"],
+            ["Número de reseñas", "Muchas opiniones hacen la media más creíble", "Pide reseñas a todas las clientas, no de vez en cuando"],
+            ["Actualidad", "Las reseñas antiguas dicen poco del centro de hoy", "Mantén un ritmo regular en lugar de campañas puntuales"],
+            ["Texto de la reseña", "Menciona tratamientos y detalles que otras buscan", "Pide a la clienta que cuente qué se hizo y cómo se sintió"],
+            ["Tus respuestas", "Muestran que escuchas y cómo resuelves problemas", "Responde a todas, positivas y negativas, en pocos días"],
+          ],
+        },
+        callout:
+          "Si una clienta menciona el tratamiento en su reseña, por ejemplo «laminado de cejas» o «manicura semipermanente», ese texto ayuda a otras personas que buscan exactamente eso a entender qué ofreces.",
+      },
+      {
+        heading: "¿Cuándo y cómo pedir una reseña a tus clientas?",
+        paragraphs: [
+          "El momento ideal es al terminar el tratamiento, cuando la clienta se mira al espejo y está contenta con el resultado. Pedirlo en persona funciona mejor que cualquier cartel, pero la mayoría no va a escribir la reseña en ese momento. Por eso conviene combinar varios pasos:",
+        ],
+        steps: [
+          "Crea tu enlace directo para reseñas desde tu Perfil de Empresa de Google (en el panel del perfil, en la opción para pedir reseñas). Al abrirlo, la clienta llega directamente a la ventana para valorar.",
+          "Pide la opinión en persona al despedirte, con una frase natural y sin presión.",
+          "Envía un email de seguimiento el mismo día o al siguiente, con el enlace directo y, si encaja, consejos de cuidado posterior.",
+          "Coloca un código QR con el enlace en recepción o en la zona de pago. Las herramientas del Perfil de Empresa de Google te permiten obtenerlo, y también puedes generarlo con cualquier generador de QR.",
+          "Añade el enlace a tu web y a la firma de tus emails, donde no molesta pero siempre está a mano.",
+          "No insistas más de una vez. Si la clienta no escribe tras el email, déjalo estar.",
+        ],
+        callout:
+          "En tratamientos con resultado diferido, como la depilación láser o la micropigmentación con retoque, pide la reseña tras una sesión en la que la clienta ya note el resultado o tras el retoque.",
+      },
+      {
+        heading: "¿Qué está permitido y qué está prohibido al pedir reseñas?",
+        paragraphs: [
+          "Pedir opiniones es totalmente legítimo. Lo que no se puede es manipularlas. La Directiva Ómnibus (UE) 2019/2161, incorporada en España a la normativa de protección de consumidores, considera práctica desleal publicar reseñas falsas o encargarlas a terceros. Además, las políticas de Google sobre contenido prohibido no permiten opiniones falsas ni incentivadas, y Google puede eliminarlas o restringir tu perfil.",
+        ],
+        table: {
+          headers: ["Permitido", "Prohibido"],
+          rows: [
+            ["Pedir una reseña a todas tus clientas", "Comprar reseñas o encargarlas a agencias"],
+            ["Enviar el enlace directo por email tras la cita", "Publicar reseñas falsas o escribirlas tú misma"],
+            ["Poner un código QR en recepción", "Ofrecer descuentos, regalos o sorteos a cambio de una reseña"],
+            ["Explicar por qué las reseñas te ayudan", "Pedir reseñas solo a las clientas que sabes que están contentas"],
+            ["Responder a todas las reseñas", "Pedir a empleadas, familiares o amigas que te valoren"],
+            ["Denunciar reseñas que incumplen las políticas", "Presionar a una clienta para que cambie o borre su opinión"],
+          ],
+        },
+        bullets: [
+          "Filtrar primero con una encuesta interna y enviar el enlace de Google solo a quien puntúa alto se considera selectivo y va contra las políticas de Google.",
+          "Tampoco vale «solo esta vez» un pequeño detalle por la reseña: cualquier incentivo cuenta.",
+        ],
+      },
+      {
+        heading: "¿Qué frases y qué email puedes usar para pedir reseñas?",
+        paragraphs: [
+          "Lo más eficaz es sonar como tú. Estas frases sirven de punto de partida para pedirlo en persona:",
+          "«¿Te ha gustado el resultado? Nos ayudaría muchísimo que contaras tu experiencia en Google. Te llega el enlace por email, es un minuto.»",
+          "«Somos un centro pequeño y la mayoría de clientas nuevas nos encuentran por las reseñas. Si te apetece dejarnos una, el código QR está aquí en recepción.»",
+          "Y una plantilla de email de seguimiento que puedes adaptar:",
+          "**Asunto:** «Gracias por tu visita, [nombre]»",
+          "«Hola, [nombre]: gracias por venir hoy a [nombre del centro]. Esperamos que estés encantada con tu [tratamiento]. Para que el resultado dure, te recordamos: [consejo de cuidado posterior]. Si tienes un minuto, nos encantaría conocer tu opinión en Google: [enlace directo para reseñas]. Tu experiencia ayuda a otras personas a encontrarnos y a nosotras a seguir mejorando. Un abrazo, [tu nombre].»",
+        ],
+        bullets: [
+          "Un único enlace y una única petición: no mezcles el email con promociones.",
+          "Personaliza el nombre y el tratamiento; un email genérico se ignora fácilmente.",
+          "Incluye siempre una forma sencilla de darse de baja de los emails.",
+        ],
+      },
+      {
+        heading: "¿Cómo responder a una reseña negativa?",
+        paragraphs: [
+          "Una crítica duele, sobre todo cuando cuidas cada detalle. Pero quien lee tu perfil no busca un centro perfecto, busca un centro que se toma en serio los problemas. Tu respuesta pública la leen todas las futuras clientas, así que escríbela para ellas tanto como para quien se queja.",
+        ],
+        steps: [
+          "Espera unas horas antes de contestar; no respondas en caliente.",
+          "Agradece la opinión y nombra el problema concreto sin justificarte de entrada.",
+          "No reveles datos de salud ni detalles del tratamiento de la clienta: la respuesta es pública.",
+          "Ofrece hablarlo en privado, con un teléfono o email de contacto.",
+          "Si hay un error, reconócelo y explica qué cambias. Si los hechos no son ciertos, corrígelos con calma y sin acusar.",
+        ],
+        callout:
+          "Plantilla de respuesta: «Hola, [nombre]: gracias por contarnos tu experiencia. Sentimos mucho que tu visita no fuera como esperabas; no es el trato que queremos dar. Nos gustaría entender qué pasó y buscar una solución contigo. ¿Puedes escribirnos a [email] o llamarnos al [teléfono]? Un saludo, [tu nombre], [nombre del centro].»",
+      },
+      {
+        heading: "¿Cuándo puedes denunciar una reseña y cómo cuidas el RGPD?",
+        paragraphs: [
+          "Una opinión negativa pero real no se puede eliminar solo porque no te guste. Sí puedes denunciar desde tu Perfil de Empresa de Google las reseñas que incumplen sus políticas: contenido ofensivo o discriminatorio, spam, reseñas de alguien que nunca fue clienta, de la competencia o con conflicto de intereses, o que no tratan sobre tu negocio. Documenta tus motivos y ten paciencia, la revisión puede tardar.",
+          "Al enviar peticiones de reseña por email, recuerda que tratas datos personales. Según el RGPD necesitas una base legal y debes informar de ello en tu política de privacidad. A las clientas existentes puedes enviarles un email relacionado con el servicio que acaban de recibir, siempre con una opción clara y sencilla para darse de baja. Los emails comerciales están regulados además por la LSSI, así que no conviertas la petición de reseña en publicidad. La AEPD ofrece guías prácticas para pequeños negocios.",
+        ],
+      },
+      {
+        heading: "¿Cómo te ayuda un software para centro de estética a conseguir reseñas?",
+        paragraphs: [
+          "El paso que más se olvida en el día a día es el email de seguimiento. Con Treatflow puedes enviarlo de forma automática tras cada tratamiento, con consejos de cuidado posterior y una petición de opinión en la que incluyes tu enlace de reseñas de Google. Con los flujos de clientes montas secuencias de varios emails con tiempos de espera y condiciones, por ejemplo para que la secuencia se detenga si la clienta ya ha vuelto a reservar.",
+          "Además, tus clientas reservan desde tu propio enlace sin comisiones, reciben recordatorios de cita por email y, si lo necesitas, Treatflow te crea una web a medida para tu centro, adaptada al móvil y pensada para las reservas, donde también puedes enlazar tus reseñas. En la ficha de cliente anotas lo que hace falta para que todo el equipo actúe igual. Las automatizaciones, los recordatorios y la reserva online están en el plan Booking (59 €/mes, IVA no incluido); el plan Basic cuesta 39 €/mes. Puedes probarlo 14 días gratis, sin tarjeta de crédito.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Cómo consigo el enlace directo para reseñas de Google?",
+        a: "Entra en tu Perfil de Empresa de Google y busca la opción para pedir reseñas. Ahí puedes copiar el enlace y, en muchos casos, también obtener un código QR para imprimir.",
+      },
+      {
+        q: "¿Puedo ofrecer un descuento a cambio de una reseña?",
+        a: "No. Las políticas de Google prohíben las reseñas incentivadas, y Google puede eliminarlas. Tampoco valen regalos, sorteos ni pequeños detalles vinculados a la reseña.",
+      },
+      {
+        q: "¿Puedo borrar una reseña negativa?",
+        a: "No puedes borrarla tú. Solo puedes denunciarla si incumple las políticas de Google, por ejemplo si es ofensiva, spam o de alguien que nunca fue clienta. Si es una crítica real, responde con calma y ofrece hablarlo en privado.",
+      },
+      {
+        q: "¿Cada cuánto debo pedir reseñas?",
+        a: "De forma continua, a todas las clientas tras su tratamiento, y una sola vez por visita. Un ritmo constante mantiene tus reseñas recientes, algo que las clientas valoran más que una campaña puntual.",
+      },
+      {
+        q: "¿Necesito consentimiento para enviar el email pidiendo una reseña?",
+        a: "Para clientas existentes, un email relacionado con el servicio recibido y con baja sencilla suele ser el enfoque habitual, pero debes informarlo en tu política de privacidad según el RGPD. Si tienes dudas, consulta las guías de la AEPD o a un asesor.",
+      },
+    ],
+    related: [
+      { pageKey: "messaging", label: "Emails automáticos tras el tratamiento" },
+      { pageKey: "online-booking", label: "Reservas online con tu propio enlace" },
+      { pageKey: "studio-website", label: "Web a medida para tu centro" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Directiva (UE) 2019/2161 (Directiva Ómnibus)",
+        url: "https://eur-lex.europa.eu/eli/dir/2019/2161/oj",
+      },
+    ],
+  },
 ];

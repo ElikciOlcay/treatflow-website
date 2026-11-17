@@ -1302,4 +1302,207 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 9. Avis Google institut de beauté
+  // ---------------------------------------------------------------------------
+  {
+    topic: "google-reviews-salon",
+    lang: "fr",
+    slug: "avis-google-institut-de-beaute",
+    title: "Avis Google pour institut de beauté : comment obtenir plus d'avis (et de meilleurs)",
+    metaTitle: "Avis Google institut de beauté : en obtenir plus",
+    description:
+      "Comment avoir plus d'avis Google pour votre institut : quand et comment demander, lien direct, modèle d'e-mail, règles à respecter et réponse aux avis négatifs.",
+    excerpt:
+      "Les avis Google décident souvent si une nouvelle cliente réserve chez vous ou chez l'institut d'à côté. Voici comment les demander au bon moment, ce qui est interdit et comment répondre aux critiques.",
+    category: "Marketing",
+    keywords: [
+      "avis google institut de beauté",
+      "comment avoir plus d'avis google",
+      "demander un avis google client",
+      "lien avis google",
+      "répondre à un avis négatif exemple",
+      "faux avis google interdiction",
+      "logiciel institut de beauté",
+    ],
+    publishedAt: "2026-11-17",
+    updatedAt: "2026-11-17",
+    readMinutes: 8,
+    answer:
+      "Pour obtenir plus d'avis Google, demandez-les systématiquement à toutes vos clientes, juste après le soin en personne puis par un court e-mail de suivi le jour même ou le lendemain, avec un lien direct vers le formulaire d'avis de votre fiche Google. Ne proposez jamais de remise ou de cadeau en échange, n'achetez pas de faux avis et répondez à chaque avis, surtout aux négatifs, de façon calme et professionnelle.",
+    takeaways: [
+      "La note moyenne compte, mais aussi le nombre d'avis, leur fraîcheur, leur contenu et vos réponses.",
+      "Le meilleur moment pour demander un avis, c'est juste après le soin, quand la cliente se regarde dans le miroir.",
+      "Un lien direct vers le formulaire d'avis supprime presque toute friction : imprimez-le en QR code et ajoutez-le à vos e-mails.",
+      "Faux avis, avis achetés, cadeaux en échange d'un avis et sollicitation des seules clientes satisfaites sont interdits.",
+      "Un avis négatif bien traité rassure souvent plus qu'une page remplie de cinq étoiles.",
+    ],
+    intro: [
+      "Quand une femme cherche « épilation laser près de chez moi » ou « extension de cils » sur son téléphone, elle ne visite pas dix sites. Elle regarde la carte Google, compare les étoiles, lit trois ou quatre avis récents et réserve. Votre fiche Google est devenue votre vitrine la plus consultée, souvent avant même votre site ou votre compte Instagram.",
+      "Pourtant, beaucoup d'instituts de beauté, d'ongleries ou de centres de médecine esthétique n'ont qu'une poignée d'avis, parfois vieux de plusieurs années, alors que leurs clientes sont ravies. La raison est presque toujours la même : on ne leur demande pas, ou pas au bon moment. Ce guide vous montre comment mettre en place une routine simple et conforme aux règles, avec des phrases et un modèle d'e-mail prêts à l'emploi. Il s'agit de conseils pratiques, pas d'un avis juridique.",
+    ],
+    sections: [
+      {
+        heading: "Pourquoi les avis Google sont-ils si importants pour un institut de beauté ?",
+        paragraphs: [
+          "D'abord pour la **visibilité locale**. Dans les résultats de recherche locale et sur Google Maps, Google tient compte de la pertinence, de la distance et de la notoriété d'un établissement. Les avis font partie de ce qui forme cette notoriété : un institut avec des avis nombreux, récents et détaillés a plus de chances d'apparaître dans le bloc de résultats sur la carte.",
+          "Ensuite pour la **confiance**. Un soin esthétique touche au visage, au corps, parfois à la santé. Avant de confier ses sourcils à une dermopigmentiste ou sa peau à un laser, une nouvelle cliente veut savoir si d'autres ont été satisfaites, si l'hygiène est irréprochable et si l'accueil est chaleureux. Les avis répondent à ces questions mieux que n'importe quel texte publicitaire, parce qu'ils viennent d'autres clientes.",
+          "Enfin, les avis sont une source d'informations gratuite pour vous : ce que les clientes mettent en avant spontanément, comme la douceur d'une esthéticienne ou la ponctualité, vous dit ce qui fait votre différence.",
+        ],
+      },
+      {
+        heading: "Qu'est-ce qui compte vraiment dans les avis Google ?",
+        paragraphs: [
+          "Une note de 5,0 sur quatre avis impressionne moins qu'une note de 4,8 sur 150 avis. Les futures clientes, comme Google, regardent l'ensemble du tableau :",
+        ],
+        bullets: [
+          "**La note moyenne** : au-dessus de 4,5, vous rassurez ; une note parfaite avec très peu d'avis peut même paraître suspecte.",
+          "**Le nombre d'avis** : il montre que beaucoup de clientes sont passées chez vous et donne du poids à la moyenne.",
+          "**La fraîcheur** : des avis du mois dernier prouvent que l'institut est actif et que la qualité est toujours là.",
+          "**Le contenu** : un avis qui cite le soin (« rehaussement de cils », « soin visage hydratant », « pose gel ») aide les lectrices et donne des indices à Google sur vos prestations.",
+          "**Vos réponses** : un établissement qui remercie et répond aux critiques montre qu'il écoute ses clientes.",
+        ],
+        callout:
+          "Visez la régularité plutôt que les coups d'éclat : quelques nouveaux avis chaque mois valent mieux que trente avis en une semaine, puis plus rien pendant un an.",
+      },
+      {
+        heading: "Quand et comment demander un avis Google à une cliente ?",
+        paragraphs: [
+          "Le bon moment, c'est quand la satisfaction est la plus forte : à la fin du soin, devant le miroir, quand la cliente découvre ses ongles ou ses cils. À ce moment-là, une demande orale paraît naturelle. Mais la plupart des clientes n'écrivent pas l'avis sur-le-champ. Un rappel écrit le jour même ou le lendemain fait souvent toute la différence.",
+          "La clé, c'est de réduire l'effort au minimum. Personne ne veut chercher votre institut dans Google Maps, faire défiler la fiche et trouver le bouton. Il faut un **lien direct** qui ouvre immédiatement le formulaire d'avis.",
+        ],
+        steps: [
+          "Ouvrez votre Profil d'entreprise Google (votre fiche d'établissement) et utilisez la fonction pour demander des avis : Google vous fournit un lien court à partager, et l'interface propose généralement aussi un QR code.",
+          "Testez le lien sur votre propre téléphone, connecté et déconnecté de votre compte Google.",
+          "Imprimez le QR code sur un petit chevalet à l'accueil ou en cabine, avec une phrase comme « Votre avis nous aide beaucoup ».",
+          "Formez toute l'équipe à poser la question à la fin du soin, avec une phrase simple et naturelle.",
+          "Envoyez un court e-mail de suivi le jour même ou le lendemain, avec le lien direct.",
+          "Ajoutez le lien dans votre signature d'e-mail et sur votre site, sur la page de contact ou de réservation.",
+        ],
+      },
+      {
+        heading: "Que dire à la cliente ? Phrases et modèle d'e-mail prêts à l'emploi",
+        paragraphs: [
+          "Évitez la formule récitée. Une phrase sincère et courte suffit, adaptée à votre style :",
+        ],
+        bullets: [
+          "« Je suis contente que le résultat vous plaise ! Si vous avez deux minutes, un avis sur Google nous aiderait énormément. »",
+          "« Nous sommes un petit institut, et ce sont surtout les avis qui nous font connaître. Le QR code est juste ici, à l'accueil. »",
+          "« Vous recevrez demain un petit e-mail avec vos conseils après-soin et le lien pour laisser un avis, si vous le souhaitez. »",
+        ],
+        steps: [
+          "Objet : « Merci pour votre visite, [Prénom] ! »",
+          "« Bonjour [Prénom], merci d'être venue aujourd'hui pour votre [soin] chez [Nom de l'institut]. Pour profiter au mieux du résultat, voici nos conseils pour les prochains jours : [2 ou 3 conseils après-soin]. »",
+          "« Votre expérience nous intéresse vraiment. Si vous avez un instant, vous pouvez la partager sur Google, que vous ayez tout aimé ou que quelque chose puisse être amélioré : [lien direct vers les avis]. »",
+          "« Une question ou une gêne après le soin ? Répondez simplement à cet e-mail, nous vous recontacterons rapidement. À bientôt, [Prénom de l'esthéticienne] »",
+          "En pied de message : vos coordonnées et un lien de désinscription bien visible.",
+        ],
+        callout:
+          "Associer la demande d'avis à des conseils après-soin rend l'e-mail utile pour la cliente, et pas seulement pour vous. Le message paraît moins commercial et il est davantage lu.",
+      },
+      {
+        heading: "Qu'est-ce qui est autorisé et interdit pour obtenir des avis ?",
+        paragraphs: [
+          "Les règles viennent de deux côtés. D'une part, la **directive Omnibus (UE) 2019/2161**, transposée en France dans le Code de la consommation, range parmi les pratiques commerciales trompeuses le fait de publier ou de faire publier de faux avis, ou de déformer des avis de consommateurs. La DGCCRF contrôle ces pratiques et peut sanctionner. Si vous affichez des avis sur votre propre site, vous devez aussi indiquer si et comment vous vérifiez qu'ils proviennent de vraies clientes. D'autre part, le règlement de Google interdit notamment les contenus faux, les conflits d'intérêts et les incitations. Google peut supprimer des avis, voire restreindre une fiche.",
+        ],
+        table: {
+          headers: ["Autorisé", "Interdit"],
+          rows: [
+            ["Demander un avis à toutes vos clientes, oralement ou par e-mail", "Acheter des avis ou passer par une agence qui en « fournit »"],
+            ["Partager un lien direct ou un QR code vers le formulaire d'avis", "Offrir une remise, un soin ou un cadeau en échange d'un avis"],
+            ["Rappeler une fois la demande, sans insister", "Ne solliciter que les clientes satisfaites et éviter les autres"],
+            ["Répondre publiquement à tous les avis, positifs et négatifs", "Faire écrire des avis par vos salariées, votre famille ou vos amis"],
+            ["Signaler à Google un avis qui enfreint ses règles", "Rédiger des avis sur un concurrent ou les faire rédiger"],
+            ["Citer des avis réels sur votre site en précisant leur origine", "Supprimer ou modifier des avis négatifs sur votre site pour embellir la note"],
+          ],
+        },
+        callout:
+          "Un jeu-concours du type « laissez un avis et gagnez un soin » est aussi une incitation. Même bien intentionné, il expose votre fiche à une suppression d'avis par Google.",
+      },
+      {
+        heading: "Comment répondre à un avis négatif ? Exemple de réponse",
+        paragraphs: [
+          "Un avis négatif fait mal, surtout quand on s'est investie. Mais votre réponse ne s'adresse pas seulement à la cliente mécontente : elle est lue par toutes les futures clientes. Elles regardent surtout comment vous réagissez. Attendez quelques heures pour répondre à froid, puis suivez cette structure :",
+        ],
+        steps: [
+          "Remerciez pour le retour, sans ironie.",
+          "Reconnaissez la déception, sans vous justifier longuement ni accuser la cliente.",
+          "Restez discrète : ne citez aucun détail du dossier, du soin ou de la santé de la cliente. En médecine esthétique, ne confirmez même pas publiquement qu'il s'agit d'une patiente.",
+          "Proposez de poursuivre l'échange en privé, par téléphone ou par e-mail.",
+          "Si c'est pertinent, indiquez ce que vous avez changé.",
+        ],
+        bullets: [
+          "Exemple : « Bonjour Julie, merci d'avoir pris le temps de partager votre avis. Nous sommes sincèrement désolées que votre visite n'ait pas été à la hauteur de vos attentes, notamment pour l'attente à votre arrivée. Ce n'est pas l'expérience que nous souhaitons offrir. Nous aimerions en parler avec vous : pouvez-vous nous appeler au [numéro] ou écrire à [e-mail] ? Nous trouverons ensemble une solution. L'équipe de [Nom de l'institut] »",
+          "Pour les avis positifs, une réponse courte et personnalisée suffit : remerciez, citez le soin si la cliente l'a mentionné elle-même et dites que vous serez ravies de la revoir.",
+        ],
+      },
+      {
+        heading: "Peut-on faire supprimer un avis Google injuste ?",
+        paragraphs: [
+          "Vous ne pouvez pas supprimer vous-même un avis, et Google ne retire pas un avis simplement parce qu'il est négatif. En revanche, vous pouvez signaler un avis qui enfreint le règlement de Google : propos injurieux ou discriminatoires, faux avis, avis d'un concurrent, contenu sans rapport avec votre établissement, données personnelles, conflit d'intérêts.",
+        ],
+        steps: [
+          "Depuis votre Profil d'entreprise Google ou Google Maps, ouvrez l'avis et choisissez de le signaler, en indiquant le motif le plus précis possible.",
+          "Faites une capture d'écran de l'avis et notez la date.",
+          "Vérifiez dans vos rendez-vous et vos fiches clientes si la personne est bien venue chez vous.",
+          "Si l'avis reste en ligne, utilisez l'outil de gestion des avis de Google pour suivre votre signalement et, si possible, demander un nouvel examen.",
+          "En attendant, répondez publiquement de façon factuelle et courtoise, par exemple : « Nous ne retrouvons aucune visite à ce nom ; contactez-nous pour que nous puissions comprendre. »",
+        ],
+        callout:
+          "Pour un avis manifestement diffamatoire ou une série d'avis malveillants, rapprochez-vous de votre organisation professionnelle ou d'un avocat.",
+      },
+      {
+        heading: "Comment automatiser les demandes d'avis tout en respectant le RGPD ?",
+        paragraphs: [
+          "Envoyer un e-mail de suivi à vos clientes existantes est courant, mais le RGPD et les règles sur la prospection électronique s'appliquent. Selon la CNIL, vous pouvez écrire par e-mail à vos clientes pour des services analogues à ceux qu'elles ont achetés, à condition qu'elles aient été informées lors de la collecte de leur adresse et qu'elles puissent s'y opposer simplement. Un e-mail de suivi lié au soin reçu, avec conseils après-soin et demande d'avis, s'inscrit dans cette logique.",
+          "La meilleure méthode est celle que vous appliquez à chaque cliente, même les jours de rush. C'est là qu'un logiciel de gestion fait gagner du temps. Avec Treatflow, un e-mail de suivi part automatiquement après le soin, avec vos conseils après-soin et une demande de retour dans laquelle vous ajoutez le lien vers vos avis Google. Les parcours clients automatisés permettent d'enchaîner plusieurs e-mails avec des délais et des conditions, par exemple ne plus relancer une cliente qui a déjà repris rendez-vous.",
+          "Vos clientes réservent sans commission via votre propre lien de réservation, reçoivent leurs rappels par e-mail et, si vous le souhaitez, trouvent un site d'institut sur mesure, adapté au mobile et pensé pour la réservation, où vous pouvez aussi placer votre lien d'avis. Les notes dans la fiche cliente indiquent à toute l'équipe qui ne souhaite pas recevoir d'e-mails. Les automatisations, les rappels et la réservation en ligne font partie de la formule Booking (59 €/mois HT) ; la formule Basic est à 39 €/mois HT. Vous pouvez tester gratuitement pendant 14 jours, sans carte bancaire.",
+        ],
+        bullets: [
+          "Mentionnez les e-mails de suivi dans votre politique de confidentialité et lors de la prise de rendez-vous.",
+          "Ajoutez à chaque e-mail un lien de désinscription simple, et respectez-le immédiatement.",
+          "Envoyez une seule demande par visite, éventuellement un rappel unique, jamais une série de relances.",
+          "N'utilisez pas les adresses de clientes qui se sont opposées aux e-mails, et notez ce refus dans la fiche cliente.",
+          "Ne mentionnez pas d'informations de santé sensibles dans l'objet de l'e-mail.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Comment avoir plus d'avis Google pour mon institut ?",
+        a: "Demandez un avis à chaque cliente à la fin du soin, envoyez un e-mail de suivi le jour même ou le lendemain avec un lien direct vers le formulaire d'avis et affichez un QR code à l'accueil. La régularité compte plus que les grandes campagnes ponctuelles.",
+      },
+      {
+        q: "Où trouver le lien direct vers mes avis Google ?",
+        a: "Dans votre Profil d'entreprise Google, la fonction pour demander des avis vous donne un lien court à copier, et généralement un QR code. Testez-le sur votre téléphone avant de l'imprimer ou de l'ajouter à vos e-mails.",
+      },
+      {
+        q: "Puis-je offrir une remise en échange d'un avis Google ?",
+        a: "Non. Google interdit les incitations, même pour des avis honnêtes, et récompenser uniquement les avis positifs peut aussi être une pratique commerciale trompeuse. Remerciez plutôt vos clientes par un service soigné, sans contrepartie liée à l'avis.",
+      },
+      {
+        q: "Mes salariées peuvent-elles laisser un avis sur l'institut ?",
+        a: "Non. Les avis de salariées, de proches ou de la gérante sont des conflits d'intérêts selon le règlement de Google et peuvent être considérés comme de faux avis au sens du droit de la consommation.",
+      },
+      {
+        q: "Faut-il répondre à tous les avis Google ?",
+        a: "Idéalement, oui. Une réponse courte et personnalisée aux avis positifs montre votre reconnaissance ; une réponse calme aux avis négatifs rassure les futures clientes. Ne mentionnez jamais de détails sur le soin ou la santé d'une cliente.",
+      },
+      {
+        q: "Combien de temps après le soin envoyer la demande d'avis ?",
+        a: "Le jour même ou le lendemain, quand l'expérience est encore fraîche. Pour les soins dont le résultat se voit plus tard, comme le laser ou le maquillage permanent, un message quelques jours après peut être plus pertinent.",
+      },
+    ],
+    related: [
+      { pageKey: "messaging", label: "E-mails automatiques après le soin" },
+      { pageKey: "online-booking", label: "Réservation en ligne sans commission" },
+      { pageKey: "studio-website", label: "Site web pour votre institut" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex : Directive (UE) 2019/2161 (directive Omnibus)",
+        url: "https://eur-lex.europa.eu/eli/dir/2019/2161/oj",
+      },
+    ],
+  },
 ];
