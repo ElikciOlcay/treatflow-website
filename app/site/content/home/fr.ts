@@ -142,7 +142,36 @@ export const homeFr: HomeContent = {
         title: "Vérifiez et démarrez",
         text: "Vous voyez tout avant, choisissez et lancez votre essai de 14 jours."
       }
-    ]
+    ],
+    scan: {
+      loadingTitle: "Nous lisons votre page …",
+      loadingHint: "Cela prend généralement 20 à 60 secondes.",
+      loadingSteps: [
+        "Lecture du site",
+        "Détection des prestations et des prix",
+        "Choix des formulaires adaptés"
+      ],
+      foundTitle: "{count} prestations trouvées",
+      foundNone: "Vos informations sont prêtes",
+      servicesMore: "+ {count} de plus",
+      from: "dès",
+      formsTitle: "Formulaires adaptés",
+      formsHint: "Anamnèse et consentement avec signature, envoyés automatiquement à chaque réservation.",
+      cta: "Tout reprendre – 14 jours gratuits",
+      ctaNote: "Après l'inscription, tout est dans votre compte. Vous vérifiez encore une fois avant.",
+      again: "Essayer une autre page",
+      fallbackCta: "Commencer gratuitement quand même",
+      errors: {
+        invalid_url: "Veuillez saisir un lien valide, p. ex. www.votre-institut.fr",
+        unreachable: "La page est inaccessible. Vérifiez le lien ou réessayez plus tard.",
+        unreadable: "Cette page ne peut pas être lue automatiquement. Après l'inscription, vous ajoutez vos prestations vous-même en quelques minutes.",
+        nothing_found: "Nous n'avons trouvé aucune prestation sur cette page. Saisissez de préférence la page avec vos tarifs.",
+        limit: "Vous avez déjà vérifié plusieurs pages aujourd'hui. Après l'inscription, l'import se fait directement dans l'app.",
+        busy: "Il y a beaucoup de demandes en ce moment. Après l'inscription, l'import se fait directement dans l'app.",
+        not_configured: "L'import n'est pas disponible pour le moment. Réessayez plus tard.",
+        failed: "Cela n'a pas fonctionné. Veuillez réessayer."
+      }
+    },
   },
 
   studioDay: {

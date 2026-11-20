@@ -140,7 +140,36 @@ export const homeIt: HomeContent = {
         title: "Controlla e inizia",
         text: "Vedi tutto prima, scegli cosa tenere e avvii la prova di 14 giorni."
       }
-    ]
+    ],
+    scan: {
+      loadingTitle: "Stiamo leggendo la tua pagina …",
+      loadingHint: "Di solito servono da 20 a 60 secondi.",
+      loadingSteps: [
+        "Lettura del sito",
+        "Riconoscimento di servizi e prezzi",
+        "Scelta dei moduli adatti"
+      ],
+      foundTitle: "{count} servizi trovati",
+      foundNone: "I tuoi dati sono pronti",
+      servicesMore: "+ altri {count}",
+      from: "da",
+      formsTitle: "Moduli adatti",
+      formsHint: "Anamnesi e consenso con firma, inviati automaticamente con ogni prenotazione.",
+      cta: "Importa tutto – 14 giorni gratis",
+      ctaNote: "Dopo la registrazione trovi tutto nel tuo account. Prima lo controlli ancora una volta.",
+      again: "Prova un'altra pagina",
+      fallbackCta: "Inizia gratis comunque",
+      errors: {
+        invalid_url: "Inserisci un link valido, ad es. www.il-tuo-centro.it",
+        unreachable: "Non è stato possibile raggiungere la pagina. Controlla il link o riprova più tardi.",
+        unreadable: "Questa pagina non può essere letta automaticamente. Dopo la registrazione puoi aggiungere i tuoi servizi in pochi minuti.",
+        nothing_found: "Non abbiamo trovato servizi su questa pagina. Meglio inserire la pagina con il listino prezzi.",
+        limit: "Oggi hai già controllato diverse pagine. Dopo la registrazione puoi importare direttamente nell'app.",
+        busy: "In questo momento ci sono molte richieste. Dopo la registrazione puoi importare direttamente nell'app.",
+        not_configured: "L'importazione non è disponibile al momento. Riprova più tardi.",
+        failed: "Purtroppo non ha funzionato. Riprova."
+      }
+    },
   },
 
   studioDay: {

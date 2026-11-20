@@ -140,7 +140,36 @@ export const homeEs: HomeContent = {
         title: "Revisa y empieza",
         text: "Lo ves todo antes, eliges qué conservar y empiezas tu prueba de 14 días."
       }
-    ]
+    ],
+    scan: {
+      loadingTitle: "Estamos leyendo tu página …",
+      loadingHint: "Suele tardar entre 20 y 60 segundos.",
+      loadingSteps: [
+        "Leyendo la web",
+        "Detectando servicios y precios",
+        "Eligiendo formularios adecuados"
+      ],
+      foundTitle: "{count} servicios encontrados",
+      foundNone: "Tus datos están listos",
+      servicesMore: "+ {count} más",
+      from: "desde",
+      formsTitle: "Formularios adecuados",
+      formsHint: "Anamnesis y consentimiento con firma, enviados automáticamente con cada reserva.",
+      cta: "Importarlo todo – 14 días gratis",
+      ctaNote: "Tras registrarte, todo estará en tu cuenta. Antes lo revisas una vez más.",
+      again: "Probar otra página",
+      fallbackCta: "Empezar gratis igualmente",
+      errors: {
+        invalid_url: "Introduce un enlace válido, p. ej. www.tu-centro.es",
+        unreachable: "No hemos podido acceder a la página. Revisa el enlace o inténtalo más tarde.",
+        unreadable: "Esta página no se puede leer automáticamente. Tras registrarte puedes añadir tus servicios en pocos minutos.",
+        nothing_found: "No hemos encontrado servicios en esta página. Mejor introduce la página con tu lista de precios.",
+        limit: "Hoy ya has revisado varias páginas. Tras registrarte puedes importar directamente en la app.",
+        busy: "Ahora mismo hay muchas solicitudes. Tras registrarte puedes importar directamente en la app.",
+        not_configured: "La importación no está disponible ahora. Inténtalo más tarde.",
+        failed: "No ha funcionado. Inténtalo de nuevo."
+      }
+    },
   },
 
   studioDay: {

@@ -141,7 +141,36 @@ export const homePl: HomeContent = {
         title: "Sprawdź i zacznij",
         text: "Widzisz wszystko wcześniej, wybierasz i zaczynasz 14-dniowy okres próbny."
       }
-    ]
+    ],
+    scan: {
+      loadingTitle: "Odczytujemy Twoją stronę …",
+      loadingHint: "Zwykle trwa to od 20 do 60 sekund.",
+      loadingSteps: [
+        "Odczyt strony",
+        "Rozpoznawanie usług i cen",
+        "Wybór pasujących formularzy"
+      ],
+      foundTitle: "Znalezione usługi: {count}",
+      foundNone: "Twoje dane są gotowe",
+      servicesMore: "+ {count} więcej",
+      from: "od",
+      formsTitle: "Pasujące formularze",
+      formsHint: "Wywiad i zgoda z podpisem, wysyłane automatycznie przy każdej rezerwacji.",
+      cta: "Przenieś wszystko – 14 dni za darmo",
+      ctaNote: "Po rejestracji wszystko będzie na Twoim koncie. Najpierw jeszcze raz to sprawdzisz.",
+      again: "Sprawdź inną stronę",
+      fallbackCta: "Mimo to zacznij za darmo",
+      errors: {
+        invalid_url: "Wpisz poprawny link, np. www.twoj-salon.pl",
+        unreachable: "Nie udało się otworzyć strony. Sprawdź link lub spróbuj później.",
+        unreadable: "Tej strony nie da się odczytać automatycznie. Po rejestracji dodasz usługi samodzielnie w kilka minut.",
+        nothing_found: "Na tej stronie nie znaleźliśmy usług. Najlepiej wpisz stronę z cennikiem.",
+        limit: "Sprawdziłeś już dziś kilka stron. Po rejestracji import działa bezpośrednio w aplikacji.",
+        busy: "Obecnie jest bardzo dużo zapytań. Po rejestracji import działa bezpośrednio w aplikacji.",
+        not_configured: "Import jest teraz niedostępny. Spróbuj ponownie później.",
+        failed: "Niestety się nie udało. Spróbuj ponownie."
+      }
+    },
   },
 
   studioDay: {

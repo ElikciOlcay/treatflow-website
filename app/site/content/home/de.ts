@@ -168,7 +168,36 @@ export const homeDe: HomeContent = {
         title: "Prüfen und loslegen",
         text: "Du siehst alles vorab, wählst aus und startest deinen 14-Tage-Test."
       }
-    ]
+    ],
+    scan: {
+      loadingTitle: "Wir lesen deine Seite …",
+      loadingHint: "Das dauert meist 20 bis 60 Sekunden.",
+      loadingSteps: [
+        "Website wird gelesen",
+        "Leistungen und Preise werden erkannt",
+        "Passende Formulare werden ausgewählt"
+      ],
+      foundTitle: "{count} Leistungen gefunden",
+      foundNone: "Deine Angaben sind bereit",
+      servicesMore: "+ {count} weitere",
+      from: "ab",
+      formsTitle: "Passende Formulare",
+      formsHint: "Anamnese und Einwilligung mit Unterschrift, bei jeder Buchung automatisch dabei.",
+      cta: "Alles übernehmen – 14 Tage kostenlos",
+      ctaNote: "Nach der Registrierung ist alles in deinem Konto. Du prüfst vorher noch einmal.",
+      again: "Andere Seite prüfen",
+      fallbackCta: "Trotzdem kostenlos starten",
+      errors: {
+        invalid_url: "Bitte gib einen gültigen Link ein, z. B. www.dein-studio.at",
+        unreachable: "Die Seite war nicht erreichbar. Prüf den Link oder versuch es später noch einmal.",
+        unreadable: "Diese Seite lässt sich nicht automatisch lesen. Nach der Registrierung kannst du deine Leistungen in wenigen Minuten selbst anlegen.",
+        nothing_found: "Auf dieser Seite haben wir keine Leistungen gefunden. Am besten die Seite mit deiner Preisliste eingeben.",
+        limit: "Du hast heute schon mehrere Seiten geprüft. Nach der Registrierung geht der Import direkt in der App.",
+        busy: "Gerade sind sehr viele Anfragen unterwegs. Nach der Registrierung geht der Import direkt in der App.",
+        not_configured: "Der Import ist gerade nicht verfügbar. Bitte versuch es später noch einmal.",
+        failed: "Das hat leider nicht geklappt. Bitte versuch es noch einmal."
+      }
+    },
   },
 
   studioDay: {

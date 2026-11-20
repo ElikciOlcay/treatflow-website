@@ -132,7 +132,36 @@ export const homeEn: HomeContent = {
         title: "Review and start",
         text: "You see everything first, choose what to keep and start your 14-day trial."
       }
-    ]
+    ],
+    scan: {
+      loadingTitle: "Reading your page …",
+      loadingHint: "This usually takes 20 to 60 seconds.",
+      loadingSteps: [
+        "Reading your website",
+        "Detecting services and prices",
+        "Choosing matching forms"
+      ],
+      foundTitle: "{count} services found",
+      foundNone: "Your details are ready",
+      servicesMore: "+ {count} more",
+      from: "from",
+      formsTitle: "Matching forms",
+      formsHint: "Medical history and consent with signature, sent automatically with every booking.",
+      cta: "Import everything – 14 days free",
+      ctaNote: "After signing up, everything is in your account. You review it once more first.",
+      again: "Check another page",
+      fallbackCta: "Start for free anyway",
+      errors: {
+        invalid_url: "Please enter a valid link, e.g. www.your-salon.com",
+        unreachable: "We couldn't reach this page. Check the link or try again later.",
+        unreadable: "This page can't be read automatically. After signing up you can add your services yourself in a few minutes.",
+        nothing_found: "We didn't find any services on this page. Ideally enter the page with your price list.",
+        limit: "You've already checked several pages today. After signing up, you can import directly in the app.",
+        busy: "There are a lot of requests right now. After signing up, you can import directly in the app.",
+        not_configured: "Importing isn't available right now. Please try again later.",
+        failed: "Something went wrong. Please try again."
+      }
+    },
   },
 
   studioDay: {
