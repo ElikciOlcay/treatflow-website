@@ -118,6 +118,31 @@ export const homeIt: HomeContent = {
     note: "Recensioni Google, tradotte dal tedesco.",
   },
 
+  websiteImport: {
+    eyebrow: "Novità: configurazione con l'IA",
+    title: "Il tuo centro configurato in pochi minuti",
+    subtitle: "Inserisci il tuo sito o la tua pagina su Planity, Fresha e simili. Importiamo servizi, prezzi, orari e contatti – così provi subito Treatflow con la tua offerta.",
+    inputLabel: "Sito web o pagina di prenotazione",
+    placeholder: "www.il-tuo-centro.it",
+    button: "Configura gratis",
+    note: "Gratis e senza impegno. Controlli tutto prima che venga importato qualcosa.",
+    invalid: "Inserisci un link valido, ad es. www.il-tuo-centro.it",
+    steps: [
+      {
+        title: "Inserisci il link",
+        text: "Il tuo sito o la pagina di prenotazione – meglio quella con il listino prezzi."
+      },
+      {
+        title: "L'IA legge la tua offerta",
+        text: "Riconosce servizi, prezzi, durata, orari e contatti."
+      },
+      {
+        title: "Controlla e inizia",
+        text: "Vedi tutto prima, scegli cosa tenere e avvii la prova di 14 giorni."
+      }
+    ]
+  },
+
   studioDay: {
     eyebrow: "Un appuntamento, un unico sistema",
     title: "Dalla prenotazione al post-trattamento, tutto in un'unica app.",

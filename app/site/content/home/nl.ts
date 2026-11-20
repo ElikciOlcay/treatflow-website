@@ -119,6 +119,31 @@ export const homeNl: HomeContent = {
     note: "Google-reviews, vertaald uit het Duits.",
   },
 
+  websiteImport: {
+    eyebrow: "Nieuw: inrichten met AI",
+    title: "Je salon in een paar minuten ingericht",
+    subtitle: "Voer je website of je pagina op Planity, Fresha en co. in. Wij nemen behandelingen, prijzen, openingstijden en contactgegevens over – zo test je Treatflow meteen met je eigen aanbod.",
+    inputLabel: "Website of boekingspagina",
+    placeholder: "www.jouw-salon.be",
+    button: "Gratis inrichten",
+    note: "Gratis en vrijblijvend. Je controleert alles voordat er iets wordt overgenomen.",
+    invalid: "Voer een geldige link in, bijv. www.jouw-salon.be",
+    steps: [
+      {
+        title: "Link invoeren",
+        text: "Je eigen website of boekingspagina – het liefst die met je prijslijst."
+      },
+      {
+        title: "AI leest je aanbod",
+        text: "Behandelingen, prijzen, duur, openingstijden en contactgegevens worden herkend."
+      },
+      {
+        title: "Controleren en starten",
+        text: "Je ziet alles vooraf, kiest wat je wilt en start je proefperiode van 14 dagen."
+      }
+    ]
+  },
+
   studioDay: {
     eyebrow: "Eén afspraak, één systeem",
     title: "Van boeking tot nazorg. Alles in één app.",

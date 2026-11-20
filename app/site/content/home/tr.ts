@@ -121,6 +121,31 @@ export const homeTr: HomeContent = {
     note: "Google yorumları Almancadan çevrilmiştir.",
   },
 
+  websiteImport: {
+    eyebrow: "Yeni: Yapay zekâ ile kurulum",
+    title: "Salonunuz birkaç dakikada hazır",
+    subtitle: "Web sitenizi veya Planity, Fresha vb. sayfanızı girin. Hizmetleri, fiyatları, çalışma saatlerini ve iletişim bilgilerini aktaralım – Treatflow'u hemen kendi hizmetlerinizle deneyin.",
+    inputLabel: "Web sitesi veya randevu sayfası",
+    placeholder: "www.salonunuz.com",
+    button: "Ücretsiz kur",
+    note: "Ücretsiz ve bağlayıcı değil. Bir şey aktarılmadan önce her şeyi siz kontrol edersiniz.",
+    invalid: "Lütfen geçerli bir bağlantı girin, örn. www.salonunuz.com",
+    steps: [
+      {
+        title: "Bağlantıyı girin",
+        text: "Kendi web siteniz veya randevu sayfanız – en iyisi fiyat listenizin olduğu sayfa."
+      },
+      {
+        title: "Yapay zekâ hizmetlerinizi okur",
+        text: "Hizmetler, fiyatlar, süreler, çalışma saatleri ve iletişim bilgileri tanınır."
+      },
+      {
+        title: "Kontrol edin ve başlayın",
+        text: "Her şeyi önceden görür, seçer ve 14 günlük denemenizi başlatırsınız."
+      }
+    ]
+  },
+
   studioDay: {
     eyebrow: "Bir randevu, tek sistem",
     title: "Randevudan bakım sonrasına kadar, hepsi tek uygulamada.",

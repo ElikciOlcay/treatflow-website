@@ -120,6 +120,31 @@ export const homeFr: HomeContent = {
     note: "Avis Google, traduits de l'allemand.",
   },
 
+  websiteImport: {
+    eyebrow: "Nouveau : configuration par IA",
+    title: "Votre institut configuré en quelques minutes",
+    subtitle: "Saisissez votre site ou votre page Planity, Fresha, etc. Nous reprenons prestations, prix, horaires et coordonnées – et vous testez Treatflow tout de suite avec votre propre offre.",
+    inputLabel: "Site web ou page de réservation",
+    placeholder: "www.votre-institut.fr",
+    button: "Configurer gratuitement",
+    note: "Gratuit et sans engagement. Vous vérifiez tout avant que quoi que ce soit ne soit repris.",
+    invalid: "Veuillez saisir un lien valide, p. ex. www.votre-institut.fr",
+    steps: [
+      {
+        title: "Saisissez le lien",
+        text: "Votre site ou votre page de réservation – idéalement celle avec vos tarifs."
+      },
+      {
+        title: "L'IA lit votre offre",
+        text: "Prestations, prix, durées, horaires et coordonnées sont détectés."
+      },
+      {
+        title: "Vérifiez et démarrez",
+        text: "Vous voyez tout avant, choisissez et lancez votre essai de 14 jours."
+      }
+    ]
+  },
+
   studioDay: {
     eyebrow: "Un rendez-vous, un seul système",
     title: "De la réservation au suivi. Dans une seule application.",

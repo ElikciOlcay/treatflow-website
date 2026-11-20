@@ -180,11 +180,25 @@ export type HomeSchemaContent = {
 };
 
 /** Alle Inhalte der Startseite in einer Sprache. */
+/** Startseite: Website eingeben, die App richtet Leistungen per KI ein. */
+export type HomeWebsiteImportContent = {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  inputLabel: string;
+  placeholder: string;
+  button: string;
+  note: string;
+  invalid: string;
+  steps: { title: string; text: string }[];
+};
+
 export type HomeContent = {
   meta: HomeMeta;
   schema: HomeSchemaContent;
   hero: HomeHeroContent;
   socialProof: SocialProofContent;
+  websiteImport: HomeWebsiteImportContent;
   studioDay: StudioDayContent;
   features: HomeFeaturesContent;
   /** Nur mit Video in dieser Sprache (die deutschen Videos sind deutsch). */

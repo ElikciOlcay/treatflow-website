@@ -118,6 +118,31 @@ export const homeEs: HomeContent = {
     note: "Reseñas de Google, traducidas del alemán.",
   },
 
+  websiteImport: {
+    eyebrow: "Nuevo: configuración con IA",
+    title: "Tu centro configurado en pocos minutos",
+    subtitle: "Introduce tu web o tu página en Planity, Fresha y similares. Importamos servicios, precios, horarios y datos de contacto, y pruebas Treatflow al momento con tu propia oferta.",
+    inputLabel: "Web o página de reservas",
+    placeholder: "www.tu-centro.es",
+    button: "Configurar gratis",
+    note: "Gratis y sin compromiso. Lo revisas todo antes de importar nada.",
+    invalid: "Introduce un enlace válido, p. ej. www.tu-centro.es",
+    steps: [
+      {
+        title: "Introduce el enlace",
+        text: "Tu web o página de reservas, mejor la que tiene tu lista de precios."
+      },
+      {
+        title: "La IA lee tu oferta",
+        text: "Detecta servicios, precios, duración, horarios y datos de contacto."
+      },
+      {
+        title: "Revisa y empieza",
+        text: "Lo ves todo antes, eliges qué conservar y empiezas tu prueba de 14 días."
+      }
+    ]
+  },
+
   studioDay: {
     eyebrow: "Una cita, un solo sistema",
     title: "De la reserva al seguimiento. En una sola app.",
