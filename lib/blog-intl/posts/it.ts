@@ -1639,4 +1639,191 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // 10. Passare al gestionale (solo IT)
+  // ---------------------------------------------------------------------------
+  {
+    topic: "it-beauty-centre-management-software",
+    lang: "it",
+    slug: "passare-al-gestionale-centro-estetico",
+    title: "Programma gestione centro estetico: come passare dall'agenda cartacea al gestionale in 4 settimane",
+    metaTitle: "Gestionale centro estetico: il passaggio in 4 settimane",
+    description:
+      "Dall'agenda cartacea al programma gestione centro estetico in 4 settimane: import clienti da Excel, listino, team, prenotazioni online ed errori da evitare.",
+    excerpt:
+      "Hai già deciso di digitalizzare il centro? Ecco un piano settimana per settimana per passare al gestionale senza bloccare l'agenda e senza perdere clienti.",
+    category: "Gestione del centro",
+    keywords: [
+      "gestionale centro estetico",
+      "programma gestione centro estetico",
+      "passare al gestionale centro estetico",
+      "agenda elettronica centro estetico",
+      "digitalizzare centro estetico",
+      "importare clienti da excel gestionale",
+    ],
+    publishedAt: "2026-11-20",
+    updatedAt: "2026-11-20",
+    readMinutes: 8,
+    answer:
+      "Per passare a un programma gestione centro estetico senza bloccare l'agenda bastano circa quattro settimane: una per preparare listino, team e dati delle clienti, una per importare e configurare, una di uso in parallelo con l'agenda cartacea e una per attivare prenotazioni online e promemoria. Un gestionale centro estetico funziona solo se il team lo usa dal primo giorno, quindi conta più il metodo che la tecnologia.",
+    takeaways: [
+      "Prepara listino, durate, cabine e turni prima di aprire il software: è metà del lavoro.",
+      "Importa le clienti da Excel o dalla rubrica con un file CSV pulito, senza doppioni.",
+      "Non digitalizzare tutto l'archivio cartaceo: aggiorna la scheda quando la cliente torna.",
+      "Una sola settimana in parallelo, poi l'agenda di carta va in pensione.",
+      "Attiva le prenotazioni online solo quando agenda e turni sono affidabili.",
+    ],
+    intro: [
+      "Hai già capito che l'agenda di carta, il quaderno delle schede e il file Excel con i numeri delle clienti non bastano più. Il dubbio non è più se passare a un gestionale, ma come farlo senza mandare in tilt il centro proprio mentre lavori: telefonate, cabine piene, collaboratrici da formare.",
+      "Questa guida non ti spiega come scegliere il software (per quello trovi una guida dedicata sul nostro blog), ma come introdurlo. Ti proponiamo un piano in quattro settimane, pensato per un centro estetico italiano con una o più cabine, che puoi adattare anche a uno studio di onicotecnica, di extension ciglia o di epilazione laser.",
+    ],
+    sections: [
+      {
+        heading: "Quando è il momento giusto per passare a un gestionale?",
+        paragraphs: [
+          "Non esiste un momento perfetto, ma esistono momenti sbagliati: la settimana prima di Natale, il periodo delle prove trucco sposa o il lancio di un nuovo macchinario. Scegli un mese di lavoro normale, possibilmente non il più pieno dell'anno. Per molti centri vanno bene la fine di gennaio o settembre, ma decidi in base al tuo calendario.",
+          "I segnali che il passaggio non può più aspettare di solito sono pratici e quotidiani. Se ne riconosci più di uno, è il momento di pianificare.",
+        ],
+        table: {
+          headers: ["Segnale", "Cosa succede oggi", "Cosa cambia con il gestionale"],
+          rows: [
+            ["Agenda condivisa su carta", "Solo chi è alla reception sa chi arriva", "Ogni operatrice vede la propria agenda da tablet o smartphone"],
+            ["Doppie prenotazioni", "Cabina o macchinario assegnati due volte", "Agenda con colonne per operatrice e per cabina"],
+            ["Schede in un raccoglitore", "Allergie e note difficili da ritrovare", "Scheda cliente con storico, note e foto"],
+            ["Prenotazioni solo al telefono", "Chiamate perse durante i trattamenti", "Link di prenotazione online attivo 24 ore su 24"],
+            ["Promemoria scritti a mano", "Messaggi mandati la sera, a memoria", "Promemoria automatici via email"],
+          ],
+        },
+      },
+      {
+        heading: "Cosa preparare prima di attivare il programma gestione centro estetico?",
+        paragraphs: [
+          "La **prima settimana** si lavora con carta e penna, non con il software. Il motivo è semplice: se inserisci dati disordinati, il gestionale ti restituirà disordine digitale. Dedica due o tre ore, magari in un pomeriggio più tranquillo, a mettere in fila queste informazioni.",
+        ],
+        bullets: [
+          "**Listino servizi**: nome, durata reale, prezzo e categoria. Indica anche i tempi di posa o di pausa, per esempio per la tinta ciglia o la laminazione.",
+          "**Cabine e macchinari**: quali trattamenti richiedono una cabina specifica o il laser.",
+          "**Team**: chi fa quali trattamenti, chi può vedere le schede e chi può modificare il listino.",
+          "**Orari e turni**: orari di apertura, giorni di chiusura, turni delle collaboratrici e ferie già note.",
+          "**Elenco clienti**: dove sono oggi? Excel, rubrica del telefono, vecchio programma, schede cartacee.",
+          "**Moduli in uso**: scheda anamnestica, consenso informato, informativa privacy.",
+        ],
+        callout:
+          "Consiglio pratico: fai preparare il listino a chi lavora in cabina, non solo alla titolare. Le durate scritte a memoria sono quasi sempre più corte di quelle reali.",
+      },
+      {
+        heading: "Come trasferire le clienti dall'agenda cartacea e da Excel?",
+        paragraphs: [
+          "Il trasferimento dei dati è la parte che spaventa di più, ma con un po' di ordine richiede meno tempo del previsto. L'obiettivo non è copiare tutto, è partire con un'anagrafica pulita e affidabile.",
+        ],
+        steps: [
+          "Raccogli tutti gli elenchi in un unico foglio Excel: nome, cognome, telefono, email, data di nascita se la usi.",
+          "Elimina i doppioni (la stessa cliente scritta \"Giulia R.\" e \"Rossi Giulia\") e le clienti che non vengono da anni, se non hai motivo di conservarne i dati.",
+          "Uniforma i numeri di telefono con il prefisso internazionale (+39) e controlla che le email siano scritte correttamente.",
+          "Salva il foglio come file CSV e importalo nel gestionale. In Treatflow l'importazione CSV abbina le colonne ai campi della scheda e riconosce i doppioni.",
+          "Reinserisci a mano gli appuntamenti futuri, partendo dalle prossime due settimane e poi andando avanti.",
+        ],
+        callout:
+          "Non serve scansionare tutte le schede cartacee in un colpo solo. Quando una cliente torna, riporta nella scheda digitale le informazioni essenziali (allergie, controindicazioni, trattamenti recenti) e falle compilare la nuova anamnesi online.",
+      },
+      {
+        heading: "Come configurare agenda, servizi e team nella seconda settimana?",
+        paragraphs: [
+          "Nella **seconda settimana** inserisci nel gestionale tutto quello che hai preparato. È il momento giusto per attivare la prova gratuita: con i dati pronti, i 14 giorni di prova li usi per lavorare davvero e non per compilare tabelle.",
+          "Segui quest'ordine: prima la struttura (servizi, cabine, persone), poi le regole (turni, permessi), infine la comunicazione con le clienti (moduli e promemoria).",
+        ],
+        table: {
+          headers: ["Cosa configurare", "Dettaglio da non dimenticare"],
+          rows: [
+            ["Servizi e durate", "Tempi di pausa e di pulizia della cabina tra un appuntamento e l'altro"],
+            ["Cabine e macchinari", "Crea le cabine come colonne dell'agenda, così vedi subito se il laser è libero"],
+            ["Collaboratrici e ruoli", "Permessi diversi per titolare, operatrici e reception"],
+            ["Turni e ferie", "Nel pianificatore turni: la prenotazione online mostrerà solo questi orari"],
+            ["Moduli", "Scheda anamnestica e consenso informato da firmare online prima dell'appuntamento"],
+            ["Promemoria", "Attiva i promemoria via email e controlla che le clienti abbiano un indirizzo email in scheda"],
+          ],
+        },
+      },
+      {
+        heading: "Perché lavorare una settimana in parallelo (e come farlo bene)?",
+        paragraphs: [
+          "Nella **terza settimana** usi il gestionale per tutti gli appuntamenti, ma tieni ancora l'agenda di carta come rete di sicurezza. Il rischio è che il parallelo diventi permanente e che ognuno scriva dove preferisce. Per evitarlo, stabilisci poche regole chiare con il team.",
+        ],
+        bullets: [
+          "**Il gestionale comanda**: un appuntamento esiste solo se è nel software. La carta è una copia, non il contrario.",
+          "**Dieci minuti a fine giornata**: controlla insieme a una collaboratrice che domani sia tutto corretto.",
+          "**Un foglio dei problemi**: annota cosa non torna (una durata sbagliata, un permesso mancante) e correggilo subito nella configurazione.",
+          "**Una persona di riferimento**: una collaboratrice che conosce bene il software risponde alle domande delle colleghe.",
+          "**Data di fine fissata**: alla fine della settimana l'agenda di carta va nel cassetto.",
+        ],
+      },
+      {
+        heading: "Come attivare le prenotazioni online e avvisare le clienti?",
+        paragraphs: [
+          "Nella **quarta settimana** apri il tuo link di prenotazione online. Non prima: se turni e durate non sono ancora affidabili, le clienti prenoteranno orari che non puoi garantire. Decidi quali servizi rendere prenotabili online. Molti centri partono con quelli semplici e ricorrenti (ceretta, manicure, refill ciglia) e lasciano su consulenza i trattamenti che richiedono una valutazione, come laser o trucco permanente.",
+          "Poi fai sapere alle clienti che ora possono prenotare da sole. Metti il link nella bio di Instagram, nel Profilo dell'attività su Google e sul sito, e mandalo con un messaggio semplice.",
+        ],
+        callout:
+          "Esempio di messaggio: \"Da oggi puoi prenotare il tuo appuntamento quando vuoi, anche la sera, da questo link. Riceverai un'email di conferma e un promemoria prima dell'appuntamento. Per qualsiasi dubbio puoi sempre chiamarci.\"",
+      },
+      {
+        heading: "Cosa controllare su privacy e GDPR durante il passaggio?",
+        paragraphs: [
+          "Con il gestionale non cambia il fatto che tratti dati personali, e in parte dati sulla salute: allergie, farmaci, gravidanza. Cambia il modo in cui li proteggi. Valgono il GDPR e il Codice privacy, e il Garante per la protezione dei dati personali è l'autorità di riferimento. Per dubbi specifici, per esempio per quanto tempo conservare le vecchie schede cartacee, rivolgiti al tuo consulente privacy o consulta le indicazioni del Garante.",
+        ],
+        bullets: [
+          "Chiedi al fornitore l'accordo sul trattamento dei dati (DPA) e dove si trovano i server. Treatflow conserva i dati crittografati su server UE a Francoforte, con SSL e backup giornalieri.",
+          "Aggiorna l'informativa privacy, indicando che usi un software esterno per agenda e schede.",
+          "Assegna permessi per ruolo: non tutte le collaboratrici devono vedere tutte le schede.",
+          "Conserva le schede cartacee in un armadio chiuso finché devi tenerle, poi distruggile in modo sicuro.",
+          "Basta foto delle clienti sul telefono personale: caricale direttamente nella documentazione del trattamento.",
+        ],
+      },
+      {
+        heading: "Come capire dopo 30 giorni se il gestionale funziona?",
+        paragraphs: [
+          "A un mese dall'inizio fai un piccolo bilancio con il team. Non servono report complessi: bastano poche domande concrete, confrontate con il mese prima del passaggio.",
+          "Se le risposte sono in gran parte positive, il passaggio è riuscito. Se qualcosa non torna, di solito il problema è nella configurazione (durate, turni, permessi) e non nel software in sé. Con Treatflow il piano Booking a 59 € al mese (IVA esclusa) include agenda, prenotazioni online senza commissioni, lista d'attesa e promemoria via email; il piano Basic a 39 € al mese copre schede clienti, moduli e documentazione, senza agenda. Puoi disdire mensilmente ed esportare i tuoi dati in qualsiasi momento.",
+        ],
+        bullets: [
+          "Quante prenotazioni sono arrivate online, e in quali orari?",
+          "Le telefonate per prenotare o spostare sono diminuite?",
+          "Le clienti arrivano con l'anamnesi già compilata?",
+          "Le schede delle clienti tornate nel mese sono complete?",
+          "Il team trova le informazioni più velocemente di prima?",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Quanto tempo serve per passare a un gestionale nel centro estetico?",
+        a: "Per un centro con una o due cabine bastano circa quattro settimane: preparazione, configurazione, una settimana in parallelo con l'agenda di carta e attivazione delle prenotazioni online. Il tempo effettivo davanti al computer è di poche ore a settimana.",
+      },
+      {
+        q: "Posso importare le clienti da Excel?",
+        a: "Sì. Salva il foglio come file CSV e importalo nelle schede clienti. Treatflow abbina le colonne ai campi e riconosce i doppioni. Prima dell'import conviene pulire l'elenco da nomi ripetuti e numeri incompleti.",
+      },
+      {
+        q: "Devo digitalizzare tutte le schede cartacee?",
+        a: "No. Di solito conviene riportare nel gestionale solo le informazioni essenziali quando la cliente torna e farle compilare la nuova anamnesi online. Le schede cartacee vanno conservate in modo sicuro; per i tempi di conservazione chiedi al tuo consulente privacy.",
+      },
+      {
+        q: "E le clienti che preferiscono telefonare?",
+        a: "Continuano a telefonare. Inserisci tu l'appuntamento nell'agenda, e la cliente riceve comunque la conferma e il promemoria via email, se hai il suo indirizzo.",
+      },
+      {
+        q: "Devo installare qualcosa o comprare un computer nuovo?",
+        a: "No. Treatflow funziona nel browser su computer, tablet e smartphone, senza installazioni. Molti centri usano un tablet alla reception e lo smartphone in cabina.",
+      },
+      {
+        q: "Cosa succede ai miei dati se un giorno cambio software?",
+        a: "I dati delle clienti restano tuoi. Con Treatflow puoi esportarli in qualsiasi momento, anche dopo la disdetta. È un punto da verificare con qualsiasi fornitore prima di iniziare.",
+      },
+    ],
+    related: [
+      { pageKey: "beauty-salon-software", label: "Gestionale per centri estetici" },
+      { pageKey: "features", label: "Tutte le funzioni di Treatflow" },
+      { pageKey: "pricing", label: "Prezzi e prova gratuita di 14 giorni" },
+    ],
+  },
 ];

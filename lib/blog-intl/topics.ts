@@ -66,6 +66,11 @@ export const blogTopics: Record<
     image: "/images/blog/google-business-kosmetik.jpg",
     pageKeys: ["messaging", "online-booking", "studio-website"],
   },
+  "it-beauty-centre-management-software": {
+    image: "/images/blog/beste-kosmetikstudio-software-2026.jpg",
+    pageKeys: ["beauty-salon-software", "features", "pricing"],
+    markets: ["it"],
+  },
 };
 
 export const blogTopicOrder: BlogTopicId[] = [
@@ -80,4 +85,5 @@ export const blogTopicOrder: BlogTopicId[] = [
   "cancellation-policy-salon",
   "pl-booking-without-commission",
   "google-reviews-salon",
+  "it-beauty-centre-management-software",
 ];
