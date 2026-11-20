@@ -119,6 +119,31 @@ export const homePl: HomeContent = {
     note: "Opinie z Google, przetłumaczone z niemieckiego.",
   },
 
+  websiteImport: {
+    eyebrow: "Nowość: konfiguracja z AI",
+    title: "Twój salon gotowy w kilka minut",
+    subtitle: "Wpisz adres swojej strony lub profilu na Planity, Fresha itp. Przeniesiemy usługi, ceny, godziny otwarcia i dane kontaktowe – od razu przetestujesz Treatflow z własną ofertą.",
+    inputLabel: "Strona internetowa lub strona rezerwacji",
+    placeholder: "www.twoj-salon.pl",
+    button: "Skonfiguruj za darmo",
+    note: "Bezpłatnie i bez zobowiązań. Wszystko sprawdzasz, zanim cokolwiek zostanie przeniesione.",
+    invalid: "Wpisz poprawny link, np. www.twoj-salon.pl",
+    steps: [
+      {
+        title: "Wpisz link",
+        text: "Twoja strona lub strona rezerwacji – najlepiej ta z cennikiem."
+      },
+      {
+        title: "AI odczytuje ofertę",
+        text: "Rozpoznaje usługi, ceny, czas trwania, godziny otwarcia i dane kontaktowe."
+      },
+      {
+        title: "Sprawdź i zacznij",
+        text: "Widzisz wszystko wcześniej, wybierasz i zaczynasz 14-dniowy okres próbny."
+      }
+    ]
+  },
+
   studioDay: {
     eyebrow: "Jedna wizyta, jeden system",
     title: "Od rezerwacji po opiekę pozabiegową. W jednej aplikacji.",

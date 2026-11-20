@@ -110,6 +110,31 @@ export const homeEn: HomeContent = {
     note: "Google reviews, translated from German.",
   },
 
+  websiteImport: {
+    eyebrow: "New: AI-powered setup",
+    title: "Your salon set up in minutes",
+    subtitle: "Enter your website or your page on Planity, Fresha & co. We'll import your services, prices, opening hours and contact details – so you can try Treatflow with your own menu right away.",
+    inputLabel: "Website or booking page",
+    placeholder: "www.your-salon.com",
+    button: "Set up for free",
+    note: "Free and without obligation. You review everything before anything is imported.",
+    invalid: "Please enter a valid link, e.g. www.your-salon.com",
+    steps: [
+      {
+        title: "Enter your link",
+        text: "Your own website or booking page – ideally the one with your price list."
+      },
+      {
+        title: "AI reads your menu",
+        text: "Services, prices, durations, opening hours and contact details are detected."
+      },
+      {
+        title: "Review and start",
+        text: "You see everything first, choose what to keep and start your 14-day trial."
+      }
+    ]
+  },
+
   studioDay: {
     eyebrow: "One appointment, one system",
     title: "From booking to aftercare. In one app.",

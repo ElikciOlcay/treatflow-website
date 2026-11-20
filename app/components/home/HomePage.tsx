@@ -8,6 +8,7 @@ import HomeFeatureGrid from "./HomeFeatureGrid";
 import HomeSupportBanner from "./HomeSupportBanner";
 import HomeFinalCta from "./HomeFinalCta";
 import HomeSeoLinks from "./HomeSeoLinks";
+import HomeWebsiteImport from "./HomeWebsiteImport";
 import type { HomeContent } from "@/app/site/content/home/types";
 import type { SiteMarket } from "@/app/site/content/shared";
 
@@ -23,6 +24,9 @@ export default function HomePage({ content, market }: { content: HomeContent; ma
 
       {/* 2. Bewertungen */}
       <SocialProofBar content={content.socialProof} />
+
+      {/* 2b. Einrichtung per KI: Website eingeben, Leistungen werden übernommen */}
+      <HomeWebsiteImport content={content.websiteImport} market={market} />
 
       {/* 3. Ein Termin von der Buchung bis zur Nachsorge */}
       <StudioDayTimeline content={content.studioDay} market={market} />

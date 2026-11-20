@@ -146,6 +146,31 @@ export const homeDe: HomeContent = {
     ],
   },
 
+  websiteImport: {
+    eyebrow: "Neu: Einrichtung per KI",
+    title: "Dein Studio in wenigen Minuten eingerichtet",
+    subtitle: "Gib deine Website oder deine Seite bei Planity, Fresha & Co. ein. Wir übernehmen Leistungen, Preise, Öffnungszeiten und Kontaktdaten – und du testest Treatflow gleich mit deinem eigenen Angebot.",
+    inputLabel: "Website oder Buchungsseite",
+    placeholder: "www.dein-studio.at",
+    button: "Kostenlos einrichten",
+    note: "Kostenlos und unverbindlich. Du prüfst alles, bevor etwas übernommen wird.",
+    invalid: "Bitte gib einen gültigen Link ein, z. B. www.dein-studio.at",
+    steps: [
+      {
+        title: "Link eingeben",
+        text: "Eigene Website oder Buchungsseite – am besten die mit deiner Preisliste."
+      },
+      {
+        title: "KI liest dein Angebot",
+        text: "Leistungen, Preise, Dauer, Öffnungszeiten und Kontaktdaten werden erkannt."
+      },
+      {
+        title: "Prüfen und loslegen",
+        text: "Du siehst alles vorab, wählst aus und startest deinen 14-Tage-Test."
+      }
+    ]
+  },
+
   studioDay: {
     eyebrow: "Ein Termin, ein System",
     title: "Von der Buchung bis zur Kasse. In einer App.",
