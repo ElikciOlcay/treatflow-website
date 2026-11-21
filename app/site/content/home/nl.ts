@@ -141,7 +141,36 @@ export const homeNl: HomeContent = {
         title: "Controleren en starten",
         text: "Je ziet alles vooraf, kiest wat je wilt en start je proefperiode van 14 dagen."
       }
-    ]
+    ],
+    scan: {
+      loadingTitle: "We lezen je pagina …",
+      loadingHint: "Dit duurt meestal 20 tot 60 seconden.",
+      loadingSteps: [
+        "Website wordt gelezen",
+        "Behandelingen en prijzen worden herkend",
+        "Passende formulieren worden gekozen"
+      ],
+      foundTitle: "{count} behandelingen gevonden",
+      foundNone: "Je gegevens staan klaar",
+      servicesMore: "+ {count} meer",
+      from: "vanaf",
+      formsTitle: "Passende formulieren",
+      formsHint: "Anamnese en toestemming met handtekening, bij elke boeking automatisch meegestuurd.",
+      cta: "Alles overnemen – 14 dagen gratis",
+      ctaNote: "Na je registratie staat alles in je account. Je controleert het eerst nog een keer.",
+      again: "Andere pagina proberen",
+      fallbackCta: "Toch gratis starten",
+      errors: {
+        invalid_url: "Voer een geldige link in, bijv. www.jouw-salon.be",
+        unreachable: "De pagina was niet bereikbaar. Controleer de link of probeer het later opnieuw.",
+        unreadable: "Deze pagina kan niet automatisch worden gelezen. Na je registratie voeg je je behandelingen in een paar minuten zelf toe.",
+        nothing_found: "We hebben op deze pagina geen behandelingen gevonden. Voer het liefst de pagina met je prijslijst in.",
+        limit: "Je hebt vandaag al meerdere pagina's gecontroleerd. Na je registratie kun je direct in de app importeren.",
+        busy: "Er zijn op dit moment erg veel aanvragen. Na je registratie kun je direct in de app importeren.",
+        not_configured: "Importeren is nu niet beschikbaar. Probeer het later opnieuw.",
+        failed: "Dat is helaas niet gelukt. Probeer het opnieuw."
+      }
+    },
   },
 
   studioDay: {

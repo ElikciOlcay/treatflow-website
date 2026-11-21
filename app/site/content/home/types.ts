@@ -191,6 +191,23 @@ export type HomeWebsiteImportContent = {
   note: string;
   invalid: string;
   steps: { title: string; text: string }[];
+  /** Scan direkt auf der Startseite. Platzhalter: {count}. */
+  scan: {
+    loadingTitle: string;
+    loadingHint: string;
+    loadingSteps: [string, string, string];
+    foundTitle: string;
+    foundNone: string;
+    servicesMore: string;
+    from: string;
+    formsTitle: string;
+    formsHint: string;
+    cta: string;
+    ctaNote: string;
+    again: string;
+    fallbackCta: string;
+    errors: Record<"invalid_url" | "unreachable" | "unreadable" | "nothing_found" | "limit" | "busy" | "not_configured" | "failed", string>;
+  };
 };
 
 export type HomeContent = {

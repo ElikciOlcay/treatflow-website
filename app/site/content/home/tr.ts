@@ -143,7 +143,36 @@ export const homeTr: HomeContent = {
         title: "Kontrol edin ve başlayın",
         text: "Her şeyi önceden görür, seçer ve 14 günlük denemenizi başlatırsınız."
       }
-    ]
+    ],
+    scan: {
+      loadingTitle: "Sayfanız okunuyor …",
+      loadingHint: "Bu genellikle 20 ila 60 saniye sürer.",
+      loadingSteps: [
+        "Web sitesi okunuyor",
+        "Hizmetler ve fiyatlar tanınıyor",
+        "Uygun formlar seçiliyor"
+      ],
+      foundTitle: "{count} hizmet bulundu",
+      foundNone: "Bilgileriniz hazır",
+      servicesMore: "+ {count} tane daha",
+      from: "başlangıç",
+      formsTitle: "Uygun formlar",
+      formsHint: "İmzalı anamnez ve onay formu, her randevuda otomatik olarak gönderilir.",
+      cta: "Hepsini aktar – 14 gün ücretsiz",
+      ctaNote: "Kayıttan sonra her şey hesabınızda olur. Önce bir kez daha kontrol edersiniz.",
+      again: "Başka bir sayfa dene",
+      fallbackCta: "Yine de ücretsiz başla",
+      errors: {
+        invalid_url: "Lütfen geçerli bir bağlantı girin, örn. www.salonunuz.com",
+        unreachable: "Sayfaya ulaşılamadı. Bağlantıyı kontrol edin veya daha sonra tekrar deneyin.",
+        unreadable: "Bu sayfa otomatik olarak okunamıyor. Kayıttan sonra hizmetlerinizi birkaç dakikada kendiniz ekleyebilirsiniz.",
+        nothing_found: "Bu sayfada hizmet bulamadık. En iyisi fiyat listenizin olduğu sayfayı girin.",
+        limit: "Bugün zaten birkaç sayfa denediniz. Kayıttan sonra aktarımı doğrudan uygulamada yapabilirsiniz.",
+        busy: "Şu anda çok fazla istek var. Kayıttan sonra aktarımı doğrudan uygulamada yapabilirsiniz.",
+        not_configured: "Aktarım şu anda kullanılamıyor. Lütfen daha sonra tekrar deneyin.",
+        failed: "Maalesef olmadı. Lütfen tekrar deneyin."
+      }
+    },
   },
 
   studioDay: {
