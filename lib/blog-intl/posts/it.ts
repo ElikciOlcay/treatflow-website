@@ -1995,4 +1995,200 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  {
+    topic: "open-beauty-salon",
+    lang: "it",
+    slug: "aprire-un-centro-estetico",
+    title: "Come aprire un centro estetico: requisiti, costi, locale e piano di apertura",
+    metaTitle: "Aprire un centro estetico: requisiti, costi e piano",
+    description:
+      "Come aprire un centro estetico: qualifica di estetista, SCIA al SUAP, costi di avvio, scelta del locale, listino prezzi, privacy e piano per le prime clienti.",
+    excerpt:
+      "Aprire un centro estetico richiede più di una bella cabina: servono la qualifica, le pratiche giuste in Comune, un budget realistico e un piano per le prime clienti. Questa guida ti accompagna passo dopo passo.",
+    category: "Gestione del centro",
+    keywords: [
+      "aprire un centro estetico",
+      "come aprire un centro estetico",
+      "quanto costa aprire un centro estetico",
+      "requisiti per aprire un centro estetico",
+      "aprire centro estetico SCIA",
+      "aprire un centro estetico da sola",
+      "gestionale centro estetico",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 9,
+    answer:
+      "Per aprire un centro estetico in Italia ti serve la qualifica professionale di estetista prevista dalla Legge 1/1990 (tua o di una responsabile tecnica), una partita IVA con iscrizione al Registro delle Imprese e la SCIA presentata allo SUAP del tuo Comune, oltre a un locale conforme alle regole igienico-sanitarie e urbanistiche locali. Prima di firmare qualsiasi contratto definisci concetto, clientela e budget, e verifica i dettagli con SUAP, ASL e un commercialista, perché le norme regionali e comunali cambiano da zona a zona.",
+    takeaways: [
+      "Senza la qualifica di estetista non si apre: in ogni sede deve operare una persona abilitata secondo la Legge 1/1990.",
+      "La pratica di apertura passa in genere dalla SCIA allo SUAP del Comune; requisiti del locale e documenti variano per Regione e Comune.",
+      "Calcola costi una tantum, costi mensili e una riserva di liquidità per i primi mesi, e verifica quante prestazioni ti servono per coprire le spese fisse.",
+      "Parti con un listino breve e prezzi calcolati su tempo, prodotti e costi fissi, non sui prezzi della concorrenza.",
+      "Imposta agenda, prenotazione online, moduli digitali e promemoria prima dell'inaugurazione, non nel caos della prima settimana.",
+    ],
+    intro: [
+      "Hai la qualifica, qualche anno di esperienza in cabina e un'idea precisa del centro che vorresti: è il momento in cui molte estetiste iniziano a chiedersi come aprire un centro estetico tutto loro. La parte tecnica di solito la conosci bene. Quello che spaventa sono la burocrazia, i costi e la paura di aprire le porte e trovare l'agenda vuota.",
+      "In questa guida trovi le decisioni da prendere per prime, le voci di costo da mettere a budget, i requisiti per aprire un centro estetico in Italia, i controlli da fare sul locale, come costruire il listino, cosa prevede il GDPR per schede e foto e un piano di lancio settimana per settimana. È una guida pratica, non una consulenza legale o fiscale: per i dettagli del tuo Comune e della tua Regione rivolgiti sempre a SUAP, ASL e al tuo commercialista.",
+    ],
+    sections: [
+      {
+        heading: "Cosa devi decidere prima di aprire un centro estetico?",
+        paragraphs: [
+          "Prima di cercare locali o arredi, metti nero su bianco il tuo **concetto**. Ogni scelta successiva, dalla metratura ai macchinari fino al prezzo di un trattamento viso, dipende da qui. Un centro specializzato in extension ciglia ha bisogno di poco spazio e di un'ottima luce; un centro con epilazione laser e trattamenti corpo richiede cabine più grandi, impianti adeguati e investimenti più alti.",
+          "Rispondi con onestà a queste domande prima di parlare con banche, agenzie immobiliari o fornitori:",
+        ],
+        bullets: [
+          "**Clientela**: chi vuoi servire? Professioniste con poco tempo, clienti giovani attente ai trend, una clientela matura interessata a trattamenti viso e corpo?",
+          "**Specializzazione**: estetica di base, viso e skincare, onicotecnica, ciglia e sopracciglia, epilazione laser, trucco permanente o un mix ben definito?",
+          "**Posizionamento di prezzo**: centro di quartiere accessibile o centro premium con trattamenti lunghi e prodotti di fascia alta?",
+          "**Da sola o con un team**: all'inizio lavori in proprio o servono subito collaboratrici? Il personale cambia costi, spazi e organizzazione.",
+          "**Forma del locale**: affitto di una cabina in un centro già avviato, locale tutto tuo o attività a domicilio? Per l'attività presso il domicilio o a domicilio della cliente esistono regole specifiche: chiedi al tuo Comune cosa è ammesso.",
+        ],
+      },
+      {
+        heading: "Quanto costa aprire un centro estetico?",
+        paragraphs: [
+          "Non esiste una cifra unica: quanto costa aprire un centro estetico dipende da città, metratura, stato del locale e attrezzature. Un piccolo studio di onicotecnica in affitto di cabina e un centro con tre cabine e un laser sono due mondi diversi. Per questo è più utile preparare un budget per voci, chiedendo almeno due o tre preventivi per ciascuna.",
+        ],
+        table: {
+          headers: ["Voce di costo", "Tipo", "Cosa considerare"],
+          rows: [
+            ["Locale e deposito cauzionale", "Una tantum + mensile", "Canone, mensilità di deposito, eventuali spese di agenzia e condominio"],
+            ["Lavori e adeguamenti", "Una tantum", "Impianti idraulici ed elettrici, aerazione, bagno, eventuale cambio di destinazione d'uso"],
+            ["Arredi e attrezzature", "Una tantum", "Lettini, carrelli, lampade, sterilizzazione, macchinari; valuta anche il noleggio"],
+            ["Scorte iniziali di prodotti", "Una tantum", "Prodotti professionali per le cabine e un piccolo assortimento per la vendita"],
+            ["Pratiche e consulenze", "Una tantum", "Diritti e marche per le pratiche, tecnico abilitato, commercialista: chiedi i costi in anticipo"],
+            ["Assicurazioni", "Mensile o annuale", "Responsabilità civile professionale e verso terzi, eventuale polizza sul locale"],
+            ["Utenze e pulizie", "Mensile", "Luce, acqua, riscaldamento, lavanderia, materiale monouso"],
+            ["Sito, gestionale e marketing", "Mensile + avvio", "Dominio, foto professionali, software di gestione, primi annunci o volantini"],
+            ["Riserva di liquidità", "Una tantum", "Copertura delle spese fisse per i primi mesi, mentre la clientela cresce"],
+          ],
+        },
+        callout:
+          "Esempio puramente illustrativo, non un dato di mercato: se le tue spese fisse mensili sono 3.000 € e su un trattamento medio ti restano 30 € dopo prodotti e costi variabili, ti servono 100 trattamenti al mese, circa 25 a settimana, solo per andare in pari. Fai questo calcolo con i tuoi numeri prima di firmare l'affitto.",
+      },
+      {
+        heading: "Quali sono i requisiti per aprire un centro estetico in Italia?",
+        paragraphs: [
+          "L'attività di estetista è regolata dalla **Legge 1/1990**: per esercitarla serve la qualifica professionale, che si ottiene con il percorso formativo e l'esame previsti dalla Regione. Se tu non sei abilitata, nel centro deve operare una responsabile tecnica in possesso della qualifica. I dettagli sul percorso e sul riconoscimento dei titoli dipendono dalla Regione, quindi verifica con l'ente di formazione o con l'ufficio regionale competente.",
+          "Dal punto di vista amministrativo, in genere apri la partita IVA, ti iscrivi al Registro delle Imprese tramite la Camera di Commercio e presenti la **SCIA** (Segnalazione Certificata di Inizio Attività) allo **SUAP** del Comune in cui si trova il locale. A seconda della forma dell'impresa possono servire anche l'iscrizione all'albo delle imprese artigiane e le posizioni previdenziali e assicurative: il commercialista ti dice quali valgono nel tuo caso.",
+        ],
+        steps: [
+          "Verifica di avere la qualifica di estetista o individua una responsabile tecnica abilitata.",
+          "Fissa un appuntamento con un commercialista per scegliere la forma giuridica, il regime fiscale e preparare l'apertura della partita IVA.",
+          "Prima di firmare l'affitto, chiedi allo SUAP e all'ufficio tecnico del Comune se il locale è idoneo per un centro estetico e quali documenti servono.",
+          "Informati presso l'ASL sui requisiti igienico-sanitari previsti nella tua zona (locali, servizi, sterilizzazione, smaltimento dei rifiuti).",
+          "Fai preparare e presentare la SCIA allo SUAP, di solito con l'aiuto di un tecnico o del commercialista, e conserva la ricevuta.",
+          "Stipula un'assicurazione di responsabilità civile adeguata ai trattamenti che offri.",
+        ],
+        callout:
+          "Alcuni trattamenti hanno regole in più. Gli apparecchi elettromeccanici per uso estetico, come quelli per l'epilazione, devono rispettare le norme specifiche previste per le estetiste; trucco permanente e tatuaggio sono spesso disciplinati da norme regionali; iniezioni e altri atti medici restano riservati ai medici. Prima di inserirli nel listino chiedi conferma a Regione, ASL e al tuo fornitore.",
+      },
+      {
+        heading: "Come scegliere il locale giusto per il centro estetico?",
+        paragraphs: [
+          "Un locale su una via di passaggio porta visibilità e clienti spontanee, ma costa di più. Un centro “di destinazione”, al primo piano o in una via laterale, può funzionare benissimo se la tua clientela prenota comunque online e arriva grazie al passaparola e a Instagram. Pensa a dove vive e lavora la cliente che vuoi raggiungere, non solo a dove l'affitto è più basso.",
+          "Prima di firmare il contratto, controlla con attenzione questi punti:",
+        ],
+        bullets: [
+          "Destinazione d'uso e idoneità del locale per un centro estetico, verificate con Comune e SUAP.",
+          "Acqua calda e fredda nelle cabine o vicino, bagno per le clienti, aerazione e ricambio d'aria adeguati.",
+          "Metratura sufficiente per cabine separate, zona attesa, reception e magazzino.",
+          "Impianto elettrico adatto ai macchinari che vuoi usare.",
+          "Accessibilità: gradini, ingresso, ascensore, eventuale parcheggio o fermata dei mezzi vicina.",
+          "Insegna e visibilità consentite dal regolamento comunale e dal condominio.",
+          "Durata del contratto, recesso, chi paga i lavori di adeguamento: fai leggere il contratto a un professionista.",
+        ],
+      },
+      {
+        heading: "Come costruire il listino e i prezzi dei trattamenti?",
+        paragraphs: [
+          "All'apertura è forte la tentazione di offrire tutto. Un listino breve funziona meglio: pochi trattamenti che sai fare benissimo, descritti in modo chiaro, con durata e prezzo. È più facile da comunicare, richiede meno prodotti in magazzino e ti permette di capire subito cosa chiedono le clienti.",
+          "Calcola ogni prezzo partendo dai tuoi numeri: **tempo** in cabina, inclusa la preparazione, **costo dei prodotti** e del materiale monouso, quota delle **spese fisse** per ora di lavoro e il margine che vuoi ottenere. Solo dopo confronta il risultato con i prezzi della zona. Prezzi troppo bassi all'inizio sono difficili da alzare e possono riempirti l'agenda senza coprire le spese.",
+          "Pensa anche ai percorsi: pacchetti di sedute per l'epilazione laser o i trattamenti viso danno continuità, ma calcola bene il prezzo del pacchetto e scrivi condizioni chiare su validità e disdette.",
+        ],
+      },
+      {
+        heading: "Privacy e GDPR: cosa serve per schede clienti e consensi?",
+        paragraphs: [
+          "Dal primo giorno tratti dati personali: nome, contatti, storico dei trattamenti e spesso informazioni sulla salute, come allergie, farmaci o patologie della pelle, raccolte nella **scheda anamnestica**. Questi ultimi sono dati particolari secondo il GDPR e richiedono più attenzione. In Italia l'autorità di riferimento è il **Garante per la protezione dei dati personali**.",
+          "Indicazioni generali, non consulenza legale:",
+        ],
+        bullets: [
+          "Prepara un'informativa privacy chiara e consegnala o rendila disponibile prima di raccogliere i dati.",
+          "Raccogli solo le informazioni sulla salute che servono davvero per eseguire il trattamento in sicurezza.",
+          "Usa un consenso informato per i trattamenti con rischi specifici e fallo firmare prima della seduta.",
+          "Per le foto prima/dopo chiedi un consenso separato, distinguendo l'uso nella scheda dall'uso sui social.",
+          "Conserva schede e moduli in modo sicuro: armadio chiuso a chiave per la carta, accessi protetti per il digitale.",
+          "Stabilisci per quanto tempo conservi i dati e cancella ciò che non ti serve più.",
+        ],
+      },
+      {
+        heading: "Quale gestionale per centro estetico impostare prima dell'apertura?",
+        paragraphs: [
+          "Il momento migliore per scegliere un gestionale per centro estetico è prima dell'inaugurazione, quando hai ancora tempo per configurarlo con calma. Se parti con agenda cartacea e messaggi sparsi, dopo qualche mese dovrai comunque passare al digitale, nel momento più pieno.",
+          "Con **Treatflow** puoi preparare tutto in anticipo: inserisci servizi, durate, prezzi e cabine, imposta gli orari e i turni, attiva il tuo link di prenotazione online senza commissioni da condividere su Instagram e Google, prepara scheda anamnestica e consenso informato con firma digitale e attiva i promemoria automatici via email. Se hai già clienti da un'attività precedente, puoi importarle con un file CSV. Agenda, prenotazione online, promemoria e flussi clienti sono nel piano Booking a 59 € al mese; Basic a 39 € al mese include schede clienti, moduli, documentazione dei trattamenti con note vocali e foto prima/dopo, senza agenda (prezzi IVA esclusa). Puoi provarlo gratis per 14 giorni, senza carta di credito.",
+          "Per incassare con carta chiedi alla tua banca o a un fornitore di pagamenti, e per contabilità e adempimenti fiscali affidati al tuo commercialista.",
+        ],
+      },
+      {
+        heading: "Come trovare le prime clienti? Piano di lancio settimana per settimana",
+        paragraphs: [
+          "Le prime clienti non arrivano da sole il giorno dell'inaugurazione: si costruiscono nelle settimane precedenti. Usa questa checklist come traccia e adattala ai tuoi tempi, soprattutto per pratiche e lavori, che spesso durano più del previsto.",
+        ],
+        steps: [
+          "**12 settimane prima**: concetto e budget definiti, colloquio con commercialista, verifica del locale con SUAP e Comune, preventivi per lavori e attrezzature.",
+          "**8 settimane prima**: contratto di affitto firmato, lavori avviati, ordine di arredi e macchinari, apertura del profilo Instagram con i lavori in corso.",
+          "**4 settimane prima**: SCIA e altre pratiche in corso secondo le indicazioni ricevute, assicurazione attiva, gestionale configurato, profilo dell'attività su Google creato e in verifica.",
+          "**1 settimana prima**: prova generale con amiche e parenti, link di prenotazione online attivo, moduli digitali testati, foto del centro pubblicate.",
+          "**Primo mese**: soft opening con orari ridotti, richiesta di recensioni su Google alle clienti soddisfatte, programma “porta un'amica”, analisi dei trattamenti più prenotati.",
+        ],
+        bullets: [
+          "Completa il Profilo dell'attività su Google con orari, foto, servizi e link di prenotazione.",
+          "Su Instagram mostra il dietro le quinte dell'apertura, i trattamenti e il team, con il link di prenotazione in bio.",
+          "Organizza un soft opening o una giornata porte aperte per vicini, amiche e attività della zona.",
+          "Chiedi una recensione alle clienti contente subito dopo il trattamento, con un link diretto.",
+          "Premia il passaparola con un piccolo omaggio per chi porta una nuova cliente.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Posso aprire un centro estetico senza essere estetista?",
+        a: "Puoi essere titolare dell'impresa, ma in genere nel centro deve operare una responsabile tecnica con la qualifica professionale di estetista prevista dalla Legge 1/1990. Verifica i requisiti precisi con lo SUAP del tuo Comune e con la Regione.",
+      },
+      {
+        q: "Quanto costa aprire un centro estetico?",
+        a: "Dipende da città, metratura, lavori e attrezzature, quindi non esiste una cifra valida per tutti. Prepara un budget per voci (locale, lavori, arredi, macchinari, prodotti, pratiche, assicurazione, marketing, gestionale) con più preventivi e aggiungi una riserva per le spese fisse dei primi mesi.",
+      },
+      {
+        q: "Che cos'è la SCIA per il centro estetico?",
+        a: "È la Segnalazione Certificata di Inizio Attività che di solito si presenta allo SUAP del Comune per avviare l'attività di estetista. Documenti allegati e requisiti del locale variano da Comune a Comune: chiedi allo SUAP o fatti seguire da un tecnico o dal commercialista.",
+      },
+      {
+        q: "Posso aprire un centro estetico in casa?",
+        a: "In alcuni casi è possibile, ma il locale deve rispettare i requisiti igienico-sanitari e urbanistici previsti, che variano per Regione e Comune. Prima di investire, chiedi a SUAP e ASL se la tua abitazione può essere idonea.",
+      },
+      {
+        q: "Quando conviene scegliere il gestionale per il centro estetico?",
+        a: "Prima dell'apertura. Così puoi impostare servizi, agenda, link di prenotazione, moduli digitali e promemoria via email con calma e condividere il link di prenotazione già durante il lancio. Treatflow si può provare gratis per 14 giorni, senza carta di credito.",
+      },
+    ],
+    related: [
+      { pageKey: "beauty-salon-software", label: "Gestionale per centri estetici" },
+      { pageKey: "features", label: "Tutte le funzioni di Treatflow" },
+      { pageKey: "pricing", label: "Prezzi e prova gratuita di 14 giorni" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Regolamento (UE) 2016/679 (GDPR)",
+        url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      },
+      {
+        label: "Garante per la protezione dei dati personali",
+        url: "https://www.garanteprivacy.it/",
+      },
+    ],
+  },
 ];

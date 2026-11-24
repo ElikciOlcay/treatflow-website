@@ -19,7 +19,8 @@ export type BlogTopicId =
   | "google-reviews-salon"
   | "it-beauty-centre-management-software"
   | "win-back-clients"
-  | "es-online-agenda-beauty-centre";
+  | "es-online-agenda-beauty-centre"
+  | "open-beauty-salon";
 
 export type BlogSection = {
   /** H2 des Abschnitts. Gern als Frage formuliert (wird von KI-Tools gern zitiert). */

@@ -2031,4 +2031,193 @@ export const posts: BlogArticle[] = [
       { pageKey: "messaging", label: "E-posta ile randevu hatırlatmaları" },
     ],
   },
+  {
+    topic: "open-beauty-salon",
+    lang: "tr",
+    slug: "guzellik-salonu-nasil-acilir",
+    title: "Güzellik Salonu Nasıl Açılır? Maliyetler, Gerekenler ve Açılış Planı",
+    metaTitle: "Güzellik Salonu Nasıl Açılır? Maliyet ve Gerekenler",
+    description:
+      "Güzellik salonu açmak için gerekenler: konsept, açılış maliyeti tablosu, ruhsat ve vergi kaydı, mekân seçimi, fiyatlandırma, KVKK ve adım adım açılış planı.",
+    excerpt:
+      "Güzellik salonu açmak cesaret ister, ama iyi bir plan riski ciddi biçimde azaltır. Konseptten maliyet hesabına, ruhsattan ilk müşterilere kadar açılıştan önce düşünmeniz gerekenleri tek rehberde topladık.",
+    category: "İşletme",
+    keywords: [
+      "güzellik salonu nasıl açılır",
+      "güzellik salonu açmak",
+      "güzellik salonu açmak için gerekenler",
+      "güzellik salonu açma maliyeti",
+      "güzellik merkezi açmak",
+      "güzellik salonu ruhsatı",
+      "güzellik salonu açılış planı",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 9,
+    answer:
+      "Güzellik salonu açmak için önce net bir konsept ve hedef müşteri belirleyin, ardından tek seferlik ve aylık maliyetleri gerçekçi bir bütçede toplayın. Mekânı kiralamadan önce belediyeden işyeri açma ve çalışma ruhsatı koşullarını, vergi dairesi kaydını ve gerekli belgeleri bir mali müşavirle netleştirin. Hizmet menünüzü, fiyatlarınızı, formlarınızı ve online randevu sisteminizi açılıştan önce hazırlarsanız ilk günden düzenli çalışırsınız.",
+    takeaways: [
+      "Konsept her şeyi belirler: hangi işlemleri, kime, hangi fiyat seviyesinde sunacağınızı mekân ve cihaz almadan önce netleştirin.",
+      "Bütçeyi tek seferlik yatırım ve aylık sabit giderler olarak ikiye ayırın ve en az birkaç aylık nakit rezervi ekleyin.",
+      "Ruhsat, vergi kaydı ve belge koşulları işleme ve bölgeye göre değişebilir; kira sözleşmesini imzalamadan önce belediyeye, İl Sağlık Müdürlüğü'ne ve mali müşavirinize danışın.",
+      "Fiyatları rakiplere göre değil; süre, ürün maliyeti ve sabit giderlerinize göre hesaplayın.",
+      "Randevu sistemi, online randevu linki, dijital formlar ve Google İşletme Profili açılış gününden önce hazır olmalı.",
+    ],
+    intro: [
+      "Kendi güzellik salonunuzu açmak, birçok uzmanın yıllarca hayalini kurduğu bir adımdır. Kendi kurallarınız, kendi ekibiniz ve kendi müşterileriniz olur. Ama tutkuyla başlayan pek çok salon, ilk aylarda planlanmamış giderler, yanlış mekân ya da düşük fiyatlar yüzünden zorlanır. İyi haber şu: bu hataların çoğu açılıştan önce önlenebilir.",
+      "Bu rehberde güzellik salonu açmak için gerekenleri adım adım ele alıyoruz: konsept ve hedef müşteri, açılış maliyeti kalemleri, ruhsat ve vergi kaydı, mekân seçimi, hizmet menüsü ve fiyatlar, KVKK ve formlar, yazılım hazırlığı ve açılış takvimi. Yasal konular genel bilgi niteliğindedir ve hukuki ya da mali danışmanlık yerine geçmez; güncel koşulları mutlaka yetkili kurumlardan teyit edin.",
+    ],
+    sections: [
+      {
+        heading: "Güzellik salonu açmadan önce neye karar vermelisiniz?",
+        paragraphs: [
+          "Mekân aramaya başlamadan önce salonunuzun ne olacağını tek cümleyle anlatabilmelisiniz. “Her şeyi yapan salon” kulağa güvenli gelir, ama daha fazla cihaz, daha fazla ürün stoku ve daha fazla eğitim demektir. Odaklanmış bir konsept ise pazarlamayı, ekip seçimini ve fiyatlandırmayı kolaylaştırır.",
+          "Şu soruları yazılı olarak cevaplayın; cevaplar ileride bütçe ve mekân kararlarınızın temelini oluşturur:",
+        ],
+        bullets: [
+          "**Uzmanlık:** cilt bakımı, tırnak, kirpik ve kaş, lazer epilasyon, kalıcı makyaj, masaj ya da medikal estetik mi? Hangi işlem ana gelir kaynağınız olacak?",
+          "**Hedef müşteri:** yakındaki ofis çalışanları mı, mahalle sakinleri mi, belirli bir cilt sorununa çözüm arayanlar mı?",
+          "**Fiyat konumu:** hızlı ve uygun fiyatlı mı, yoksa danışmanlık ağırlıklı premium bir deneyim mi?",
+          "**Tek başına mı, ekiple mi:** ilk aylarda tek başınıza mı çalışacaksınız, yoksa baştan personel mi alacaksınız?",
+          "**Çalışma modeli:** kendi dükkânınız mı, başka bir salonda oda veya koltuk kiralamak mı, yoksa evden veya mobil hizmet mi? Ev ve mobil modelde de ruhsat ve vergi yükümlülüklerini ayrıca sorun.",
+        ],
+        callout:
+          "Oda veya koltuk kiralayarak başlamak, yüksek kira ve tadilat riskine girmeden müşteri kitlenizi test etmenin pratik bir yoludur. Kendi mekânınıza geçmeden önce birkaç ay gerçek rakamlar toplayabilirsiniz.",
+      },
+      {
+        heading: "Güzellik salonu açma maliyeti ne kadar?",
+        paragraphs: [
+          "Tek bir “ortalama maliyet” yoktur. Rakam; şehre, semte, metrekareye, sunduğunuz işlemlere ve cihazların yeni mi ikinci el mi olduğuna göre çok değişir. Bu yüzden genel rakamlar yerine kendi tablonuzu çıkarın ve her kalem için en az iki teklif alın. Maliyetleri **tek seferlik** ve **aylık** olarak ayırmak, hem ne kadar sermaye gerektiğini hem de ayda ne kadar kazanmanız gerektiğini gösterir.",
+          "Finansmanı planlarken yalnızca açılış gününe kadar olan harcamaları değil, salonun kendi giderlerini karşılamaya başlayacağı ana kadar geçen süreyi de hesaba katın. Yeni bir salonun takvimi genellikle bir anda dolmaz; ilk aylarda kira, personel ve diğer sabit giderleri ödemeye devam edersiniz. Kredi veya destek programlarını değerlendiriyorsanız koşulları bankanızla ve mali müşavirinizle konuşun, geri ödemeleri de aylık gider tablonuza ekleyin. Cihazlarda pahalı bir seçimi baştan yapmak yerine, talebi gördükten sonra yatırım yapmak çoğu zaman daha güvenlidir.",
+        ],
+        table: {
+          headers: ["Kalem", "Tür", "Dikkat edilecekler"],
+          rows: [
+            ["Kira, depozito ve emlakçı ücreti", "Tek seferlik + aylık", "Kira artış koşulları, aidat ve sözleşme süresi"],
+            ["Tadilat, tesisat, mobilya", "Tek seferlik", "Su, elektrik, havalandırma ve hijyenik yüzeyler"],
+            ["Cihaz ve ekipman", "Tek seferlik", "Garanti, teknik servis, eğitim ve belgeleri"],
+            ["İlk ürün stoku ve sarf malzemesi", "Tek seferlik + aylık", "Küçük başlayın, tüketime göre artırın"],
+            ["Ruhsat, kayıt ve harçlar", "Tek seferlik", "Tutarları belediyeden ve mali müşavirinizden öğrenin"],
+            ["Sigorta", "Aylık / yıllık", "İşyeri ve mesleki sorumluluk teminatlarını sorun"],
+            ["Mali müşavir", "Aylık", "Muhasebe ve beyannameler için"],
+            ["Personel ve SGK primleri", "Aylık", "Ekip kuruyorsanız en büyük kalemlerden biri"],
+            ["Web sitesi ve salon yazılımı", "Aylık", "Randevu, müşteri kartı ve formlar"],
+            ["Pazarlama ve açılış", "Tek seferlik + aylık", "Tabela, fotoğraf, sosyal medya, açılış etkinliği"],
+            ["Nakit rezervi", "Tek seferlik", "İlk aylardaki sabit giderleri karşılayacak kadar"],
+          ],
+        },
+        callout:
+          "Örnek başabaş hesabı (gerçek veri değil, yalnızca yöntemi göstermek içindir): Aylık sabit giderleriniz ₺80.000, bir işlemden ürün maliyeti düşüldükten sonra kalan ortalama tutar ₺1.000 ise, giderleri karşılamak için ayda yaklaşık 80 işlem yapmanız gerekir. Bunu çalışma günlerine bölerek hedefinizin gerçekçi olup olmadığını görürsünüz.",
+      },
+      {
+        heading: "Güzellik salonu açmak için hangi ruhsat ve belgeler gerekir?",
+        paragraphs: [
+          "Türkiye'de güzellik salonu açmak için genel olarak bulunduğunuz yerin belediyesinden **işyeri açma ve çalışma ruhsatı** almanız ve işletmenizi **vergi dairesine** kaydettirmeniz gerekir. Belediye, mekânın imar durumu, yapı kullanım izni ve yangın güvenliği gibi konularda ek belgeler isteyebilir. Ayrıca işletme türünüze göre esnaf ve sanatkârlar odası veya ticaret odası kaydı söz konusu olabilir; şahıs şirketi mi yoksa limited şirket mi kuracağınıza da mali müşavirinizle birlikte karar verin.",
+          "Mesleki yeterlilik veya ustalık belgesi gibi belgeler, hem ruhsat başvurusunda hem de müşteri güveni açısından önemlidir. Hangi belgelerin istendiği işleme ve bölgeye göre farklılık gösterebilir. Lazer epilasyon, medikal estetik uygulamalar, enjeksiyonlar ve bazı cihazlı işlemler için çok daha sıkı sağlık kuralları, hekim ya da yetkili personel şartı ve ek izinler gündeme gelebilir. Bu konularda kural değişiklikleri de olabildiği için, cihaz satın almadan önce **İl Sağlık Müdürlüğü**'ne danışın.",
+        ],
+        steps: [
+          "Mali müşavirle görüşün: şirket türü, vergi kaydı, fatura ve ödeme altyapısı ile aylık yükümlülükleri netleştirin.",
+          "Kira sözleşmesini imzalamadan önce belediyeye gidin ve mekânın güzellik salonu olarak ruhsat alıp alamayacağını sorun.",
+          "Sunacağınız işlemleri listeleyin ve lazer, medikal estetik gibi işlemler için İl Sağlık Müdürlüğü'nden güncel koşulları öğrenin.",
+          "Sizin ve ekibinizin mesleki belgelerini, sertifikalarını ve cihaz eğitim belgelerini bir dosyada toplayın.",
+          "Personel çalıştıracaksanız SGK işlemlerini ve iş sözleşmelerini mali müşavirinizle planlayın.",
+          "İşyeri ve mesleki sorumluluk sigortası için birkaç sigortacıdan teklif alın.",
+        ],
+        callout:
+          "Ruhsat koşulları, harçlar ve belge listeleri belediyeden belediyeye değişebilir. İnternetteki genel listelere değil, başvuracağınız belediyenin ve İl Sağlık Müdürlüğü'nün güncel bilgisine güvenin.",
+      },
+      {
+        heading: "Güzellik salonu için doğru mekân nasıl seçilir?",
+        paragraphs: [
+          "Mekân seçiminde ilk soru şudur: müşteriler sizi yoldan geçerken mi bulacak, yoksa özellikle size mi gelecek? Yaya trafiği yüksek bir cadde, kaş ve tırnak gibi hızlı işlemler için idealdir ama kirası yüksektir. Uzun ve danışmanlık gerektiren işlemler sunan bir **hedef salon** ise daha sakin bir sokakta, apartman katında ya da iş merkezinde de iyi çalışabilir; yeter ki kolay bulunsun ve müşteri kendini güvende hissetsin.",
+          "Kira sözleşmesini imzalamadan önce mekânı müşteri ve uygulayıcı gözüyle inceleyin:",
+        ],
+        bullets: [
+          "Toplu taşımaya yakınlık, otopark imkânı ve akşam saatlerinde çevre güvenliği.",
+          "Tabela izni ve dışarıdan görünürlük.",
+          "Her işlem odasına yakın su ve lavabo, yeterli elektrik kapasitesi ve iyi havalandırma.",
+          "Gizlilik isteyen işlemler için kapılı ve ses geçirmeyen odalar.",
+          "Bekleme alanı, tuvalet, sterilizasyon ve depo için ayrı alan.",
+          "Engelli ve yaşlı müşteriler için erişim: basamak, asansör, kapı genişliği.",
+          "Kira sözleşmesinde kullanım amacı, artış oranı, tadilat izni ve çıkış koşulları.",
+        ],
+      },
+      {
+        heading: "Hizmet menüsü ve fiyatlar nasıl belirlenir?",
+        paragraphs: [
+          "Yeni salonların en sık yaptığı hatalardan biri, mümkün olan her işlemi menüye koymaktır. Odaklanmış bir menüyle başlayın: en iyi yaptığınız ve hedef müşterinizin en çok istediği işlemler. Her işlem için süreyi, kullanılan ürünleri ve gereken cihazı yazın. Menüyü ilk aylardaki talebe göre genişletebilirsiniz.",
+          "Fiyatı rakibin fiyatından değil kendi maliyetinizden hesaplayın. Basit bir yöntem: işlemin süresini, saat başına düşen sabit gider payınızla çarpın, ürün ve sarf maliyetini ekleyin, ardından hedef kâr marjınızı ve vergileri ekleyin. Hazırlık, temizlik ve danışmanlık süresini unutmayın; 45 dakikalık bir işlem çoğu zaman odayı bir saat meşgul eder.",
+          "**Düşük fiyatla başlamak** cazip görünür ama sonradan fiyat artırmak zordur ve yanlış müşteri kitlesini çeker. Tanıtım yapmak istiyorsanız fiyatı düşürmek yerine sınırlı süreli bir açılış avantajı veya ücretsiz cilt analizi gibi ek değer sunun.",
+        ],
+      },
+      {
+        heading: "KVKK ve müşteri formları için açılıştan önce ne hazırlamalısınız?",
+        paragraphs: [
+          "Güzellik salonu, müşterilerinin ad, telefon ve e-posta gibi kişisel verilerini; anamnez formlarında ise alerji, ilaç kullanımı veya cilt hastalıkları gibi sağlık verilerini işler. Sağlık verileri 6698 sayılı **Kişisel Verilerin Korunması Kanunu (KVKK)** kapsamında özel nitelikli kişisel veridir ve daha sıkı korunmalıdır. Öncesi-sonrası fotoğraflar da dikkatli işlenmesi gereken verilerdir.",
+          "Açılıştan önce şunları hazır edin: müşterilere hangi verileri neden işlediğinizi anlatan bir aydınlatma metni, gerekli durumlarda açık rıza metinleri, işleme özel anamnez ve onam formları ve fotoğrafların sosyal medyada kullanımı için ayrı bir izin. Kâğıt formları kilitli dolapta, dijital kayıtları erişimi sınırlı ve güvenli bir sistemde tutun. VERBİS kaydı gibi yükümlülüklerin sizin için geçerli olup olmadığını KVKK'nın güncel duyurularından veya bir uzmandan öğrenin. Bu bölüm genel bilgidir, hukuki danışmanlık değildir.",
+        ],
+      },
+      {
+        heading: "Açılış gününden önce randevu ve salon yazılımı nasıl kurulur?",
+        paragraphs: [
+          "Açılış haftası yoğun geçer; o sırada randevuları defterde, mesajlarda ve telefonda takip etmeye çalışmak hata riskini artırır. Salon programınızı açılıştan en az iki üç hafta önce kurun, böylece ilk randevular doğrudan düzenli bir sisteme girer.",
+          "Treatflow, güzellik salonları ve işlem odaklı işletmeler için hepsi bir arada bir programdır. Booking paketinde personel ve oda sütunlu randevu takvimi, komisyonsuz online randevu linki, bekleme listesi ve otomatik e-posta hatırlatmaları bulunur. Müşteri kartları, dijital imzalı anamnez ve onam formları, sesli not destekli işlem kayıtları ve öncesi-sonrası fotoğraflar her iki pakette de vardır. İlk 100 işletmeye özel lansman fiyatıyla Basic aylık ₺1.490, Booking aylık ₺1.990'dır (KDV hariç). 14 gün ücretsiz deneyebilirsiniz, kredi kartı gerekmez. Veriler Frankfurt'taki AB sunucularında saklanır.",
+        ],
+        steps: [
+          "Hizmetlerinizi süreleri ve fiyatlarıyla girin; hazırlık ve temizlik süresini de hesaba katın.",
+          "Çalışma saatlerini, personeli ve odaları tanımlayın.",
+          "Online randevu linkinizi Instagram profilinize, Google İşletme Profili'ne ve web sitenize ekleyin.",
+          "Anamnez ve onam formlarınızı dijital olarak hazırlayın; müşteriler randevudan önce doldurabilsin.",
+          "E-posta hatırlatmalarını açın ve bir test randevusuyla tüm süreci kendiniz deneyin.",
+          "Önceki işinizden getirdiğiniz müşteri listesini, izinleri ve KVKK kurallarını göz önünde bulundurarak CSV ile aktarın.",
+        ],
+      },
+      {
+        heading: "Güzellik salonu açılış planı: ilk müşteriler nasıl kazanılır?",
+        paragraphs: [
+          "İyi bir açılış tek bir günden ibaret değildir. Aşağıdaki takvim, işleri zamana yaymanıza ve son haftaya sıkışmamanıza yardımcı olur:",
+        ],
+        bullets: [
+          "**12 hafta önce:** konsept, bütçe ve finansman netleşsin; mali müşavirle görüşün, belediyeden mekân ve ruhsat koşullarını öğrenin.",
+          "**8 hafta önce:** kira sözleşmesi, tadilat planı, cihaz ve ürün siparişleri; sigorta teklifleri.",
+          "**4 hafta önce:** ruhsat ve kayıt işlemlerini takip edin, salon programını kurun, Google İşletme Profili ve Instagram hesabını hazırlayın, fotoğraf çekimi yapın.",
+          "**1 hafta önce:** ekiple prova günü, test randevuları, formların ve hatırlatmaların son kontrolü; arkadaş ve aileyle küçük bir ön açılış (soft opening).",
+          "**Açılıştan sonraki ilk ay:** her müşteriden geri bildirim ve Google yorumu isteyin, tavsiye eden müşterilere küçük bir teşekkür sunun, hangi işlemlerin ve kanalların işe yaradığını ölçün.",
+        ],
+        callout:
+          "İlk müşteriler çoğu zaman yakın çevrenizden ve önceki müşterilerinizden gelir. Memnun kalan her müşteriden bir yorum ve bir tavsiye istemek, ücretli reklamdan önce yapabileceğiniz en etkili pazarlamadır.",
+      },
+    ],
+    faq: [
+      {
+        q: "Güzellik salonu açmak için hangi belgeler gerekir?",
+        a: "Genel olarak belediyeden işyeri açma ve çalışma ruhsatı, vergi dairesi kaydı ve mesleki yeterlilik veya ustalık belgesi gibi belgeler gerekir. Lazer ve medikal estetik gibi işlemler için ek sağlık koşulları olabilir. Kesin listeyi belediyenizden, İl Sağlık Müdürlüğü'nden ve mali müşavirinizden öğrenin.",
+      },
+      {
+        q: "Güzellik salonu açma maliyeti ne kadar?",
+        a: "Tek bir rakam vermek mümkün değil; şehir, semt, metrekare, işlemler ve cihazlar maliyeti belirler. Kira ve depozito, tadilat, cihazlar, ürün stoku, harçlar, sigorta, yazılım, pazarlama ve nakit rezervi için kendi tablonuzu çıkarın ve her kalem için birden fazla teklif alın.",
+      },
+      {
+        q: "Evde güzellik salonu açılabilir mi?",
+        a: "Bazı uzmanlar evden veya mobil olarak çalışır, ancak bu durumda da vergi kaydı ve ruhsat konusu gündeme gelir; konut olarak kullanılan bir mekânda ticari faaliyet için ek koşullar olabilir. Başlamadan önce belediyenize ve mali müşavirinize danışın.",
+      },
+      {
+        q: "Güzellik salonu açmak için diploma şart mı?",
+        a: "Mesleki yeterliliğinizi gösteren belgeler hem ruhsat süreçlerinde hem de müşteri güveninde önemlidir ve bazı işlemler için daha sıkı şartlar olabilir. Hangi belgenin sizin için geçerli olduğunu belediyenizden ve gerektiğinde İl Sağlık Müdürlüğü'nden öğrenin.",
+      },
+      {
+        q: "Yeni açılan salonda randevu programına ne zaman başlamalıyım?",
+        a: "Açılıştan en az iki üç hafta önce. Böylece hizmetlerinizi, formlarınızı ve online randevu linkinizi hazırlayıp test edebilir, ilk randevuları baştan düzenli bir sisteme alabilirsiniz. Treatflow'u 14 gün ücretsiz ve kredi kartı gerekmeden deneyebilirsiniz.",
+      },
+    ],
+    related: [
+      { pageKey: "beauty-salon-software", label: "Güzellik salonu programı" },
+      { pageKey: "pricing", label: "Treatflow fiyatları" },
+      { pageKey: "features", label: "Tüm özellikler" },
+    ],
+    sources: [
+      { label: "Kişisel Verileri Koruma Kurumu (KVKK)", url: "https://www.kvkk.gov.tr" },
+      { label: "Gelir İdaresi Başkanlığı", url: "https://www.gib.gov.tr" },
+    ],
+  },
 ];

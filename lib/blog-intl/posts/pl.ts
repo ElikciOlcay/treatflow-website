@@ -1918,4 +1918,196 @@ export const posts: BlogArticle[] = [
       { pageKey: "messaging", label: "Przypomnienia e-mail o wizytach" },
     ],
   },
+  {
+    topic: "open-beauty-salon",
+    lang: "pl",
+    slug: "jak-otworzyc-salon-kosmetyczny",
+    title: "Jak otworzyć salon kosmetyczny: koszty, formalności, sanepid i plan otwarcia krok po kroku",
+    metaTitle: "Jak otworzyć salon kosmetyczny krok po kroku",
+    description:
+      "Jak otworzyć salon kosmetyczny: koncepcja, koszty otwarcia, CEIDG i ZUS, wymagania sanepidu, lokal, cennik, RODO, program do rezerwacji i plan na start.",
+    excerpt:
+      "Od pomysłu do pierwszej klientki: co zdecydować na początku, ile kosztuje otwarcie salonu kosmetycznego, jakie formalności czekają Cię w CEIDG, ZUS i sanepidzie oraz jak przygotować rezerwacje jeszcze przed otwarciem.",
+    category: "Zarządzanie salonem",
+    keywords: [
+      "jak otworzyć salon kosmetyczny",
+      "otwarcie salonu kosmetycznego krok po kroku",
+      "ile kosztuje otwarcie salonu kosmetycznego",
+      "salon kosmetyczny wymagania sanepid",
+      "własny salon kosmetyczny",
+      "biznesplan salon kosmetyczny",
+      "program do salonu kosmetycznego",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 9,
+    answer:
+      "Aby otworzyć salon kosmetyczny, najpierw określ koncepcję, grupę docelową i budżet, a potem zarejestruj działalność w CEIDG, załatw formalności w ZUS i urzędzie skarbowym oraz przygotuj lokal spełniający wymagania sanitarne, uzgadniając je z lokalnym sanepidem. Przed dniem otwarcia ustal cennik, przygotuj formularze zgodne z RODO, skonfiguruj kalendarz i rezerwacje online, a pierwsze klientki pozyskaj przez profil w Google, Instagram i miękkie otwarcie.",
+    takeaways: [
+      "Zacznij od koncepcji i liczb: specjalizacja, grupa docelowa i pozycja cenowa decydują o lokalu, sprzęcie i budżecie.",
+      "Policz osobno koszty jednorazowe i miesięczne oraz zostaw rezerwę finansową na pierwsze miesiące, zanim kalendarz się zapełni.",
+      "Formalności (CEIDG, ZUS, podatki, sanepid, ubezpieczenie) uzgadniaj z księgową i lokalną stacją sanitarno-epidemiologiczną, zanim podpiszesz umowę najmu i zaczniesz remont.",
+      "Cennik licz z czasu, kosztu produktów i kosztów stałych, a nie wyłącznie z cen konkurencji.",
+      "Kalendarz, link do rezerwacji online, formularze i przypomnienia e-mail przygotuj kilka tygodni przed otwarciem, żeby od pierwszego dnia przyjmować rezerwacje.",
+    ],
+    intro: [
+      "Własny salon kosmetyczny to marzenie wielu kosmetolożek, stylistek paznokci i linergistek. Sama znajomość zabiegów to jednak dopiero połowa sukcesu. Druga połowa to decyzje biznesowe: gdzie otworzyć salon, ile wydać na start, jakie formalności załatwić, jak ustalić ceny i skąd wziąć pierwsze klientki. Błędy na tym etapie, np. zbyt drogi lokal, za szeroka oferta albo ceny poniżej kosztów, potrafią obciążać salon przez lata.",
+      "W tym poradniku przeprowadzimy Cię przez otwarcie salonu kosmetycznego krok po kroku: od koncepcji, przez koszty i formalności w Polsce, wybór lokalu, cennik i RODO, aż po program do rezerwacji i plan na pierwsze tygodnie. To praktyczne wskazówki, a nie porada prawna ani podatkowa. Przepisy i wymagania mogą się zmieniać, dlatego szczegóły zawsze potwierdzaj z księgową i właściwym sanepidem.",
+    ],
+    sections: [
+      {
+        heading: "Co zdecydować na początku: koncepcja, klientki i model działania?",
+        paragraphs: [
+          "Zanim zaczniesz szukać lokalu, odpowiedz sobie na kilka pytań. **Dla kogo jest Twój salon?** Inna będzie oferta dla zapracowanych klientek z biurowca, inna dla osiedla, a jeszcze inna dla osób szukających zabiegów premium. **W czym chcesz się specjalizować?** Kosmetologia twarzy, stylizacja paznokci, rzęsy i brwi, depilacja laserowa, makijaż permanentny czy masaż wymagają innego sprzętu, innego lokalu i innych kwalifikacji.",
+          "Zdecyduj też, jaką pozycję cenową chcesz zająć i czy zaczynasz sama, czy z zespołem. Na koniec wybierz model działania. Każdy ma inne koszty i ryzyko:",
+        ],
+        bullets: [
+          "**Wynajem stanowiska lub gabinetu w istniejącym salonie**: najniższy koszt startu, szybkie otwarcie, ale mniejszy wpływ na wygląd miejsca i godziny pracy.",
+          "**Własny lokal**: pełna kontrola nad marką i ofertą, ale najwyższe koszty i dłuższe przygotowania.",
+          "**Gabinet w domu lub usługi mobilne**: niskie koszty stałe, ale ograniczona oferta zabiegów; także tutaj trzeba spełnić wymagania sanitarne, więc zapytaj sanepid, czy wybrane pomieszczenie się nadaje.",
+        ],
+      },
+      {
+        heading: "Ile kosztuje otwarcie salonu kosmetycznego?",
+        paragraphs: [
+          "Nie ma jednej kwoty, bo koszty zależą od miasta, wielkości lokalu, stanu pomieszczeń i specjalizacji. Gabinet stylizacji paznokci w wynajętym pokoju kosztuje zupełnie inaczej niż salon z urządzeniem do depilacji laserowej. Dlatego zamiast szukać „średniej”, rozpisz własny budżet według kategorii i zbierz kilka ofert do każdej z nich:",
+        ],
+        table: {
+          headers: ["Kategoria", "Rodzaj kosztu", "Na co zwrócić uwagę"],
+          rows: [
+            ["Lokal: kaucja i pierwszy czynsz", "Jednorazowy i miesięczny", "Wysokość kaucji, okres wypowiedzenia, opłaty eksploatacyjne"],
+            ["Remont i adaptacja", "Jednorazowy", "Instalacja wodna, wentylacja, oświetlenie, łatwe do mycia powierzchnie"],
+            ["Meble i wyposażenie", "Jednorazowy", "Fotele i łóżka zabiegowe, recepcja, szafki, poczekalnia"],
+            ["Sprzęt i urządzenia", "Jednorazowy lub leasing", "Sterylizator, lampy, urządzenia zabiegowe, serwis i szkolenia"],
+            ["Pierwszy zapas produktów", "Jednorazowy, potem bieżący", "Kosmetyki profesjonalne, jednorazówki, środki do dezynfekcji"],
+            ["Ubezpieczenie OC i lokalu", "Miesięczny lub roczny", "Zakres OC zawodowego dla Twoich zabiegów"],
+            ["Formalności i księgowa", "Jednorazowy i miesięczny", "Biuro rachunkowe, ewentualne opłaty urzędowe"],
+            ["Strona, program do salonu, telefon", "Miesięczny", "Kalendarz, rezerwacje online, formularze, przypomnienia"],
+            ["Marketing na start", "Jednorazowy i miesięczny", "Szyld, zdjęcia, profil w Google, reklamy, materiały drukowane"],
+            ["Rezerwa finansowa", "Jednorazowa", "Pokrycie kosztów stałych w pierwszych miesiącach"],
+          ],
+        },
+        callout:
+          "Przykład (tylko ilustracja, nie dane rynkowe): jeśli Twoje miesięczne koszty stałe, czyli czynsz, ZUS, księgowa, program, media i ubezpieczenie, wynoszą 6 000 zł, a średni zabieg zostawia Ci po odjęciu produktów 120 zł, potrzebujesz 50 zabiegów miesięcznie, żeby wyjść na zero. Podstaw własne liczby i sprawdź, czy to realne w Twoim kalendarzu.",
+      },
+      {
+        heading: "Jakie formalności trzeba załatwić? CEIDG, ZUS, podatki i sanepid",
+        paragraphs: [
+          "Najczęściej salon zaczyna jako **jednoosobowa działalność gospodarcza** zarejestrowana w CEIDG, np. przez portal biznes.gov.pl. Przy rejestracji wybierasz kody PKD, formę opodatkowania i zgłaszasz się do ZUS. Warto wcześniej porozmawiać z księgową: pomoże dobrać właściwe kody PKD, formę opodatkowania, sprawdzić, czy przysługują Ci ulgi dla nowych firm w ZUS, i wyjaśni, jakie obowiązki dotyczą VAT oraz ewidencjonowania sprzedaży na kasie fiskalnej w Twoim przypadku.",
+          "Lokal salonu kosmetycznego musi spełniać wymagania sanitarno-higieniczne, a sanepid (Państwowa Inspekcja Sanitarna) nadzoruje takie miejsca. Szczegóły, np. czy potrzebna jest opinia lub zatwierdzenie lokalu przed otwarciem, jakie dokumenty złożyć i jakie wymagania dotyczą umywalek, sterylizacji czy odpadów, ustal bezpośrednio w powiatowej stacji sanitarno-epidemiologicznej. Zrób to **przed podpisaniem umowy najmu i rozpoczęciem remontu**, żeby nie przerabiać pomieszczeń dwa razy.",
+        ],
+        steps: [
+          "Umów konsultację z księgową: forma działalności, kody PKD, forma opodatkowania, ZUS, VAT i kasa fiskalna.",
+          "Skontaktuj się z lokalnym sanepidem i zapytaj o wymagania dla lokalu i planowanych zabiegów.",
+          "Zarejestruj działalność w CEIDG i załóż firmowe konto bankowe.",
+          "Sprawdź, czy wybrane zabiegi, np. laser, makijaż permanentny, zabiegi naruszające ciągłość skóry czy zabiegi z zakresu medycyny estetycznej, wymagają dodatkowych kwalifikacji, szkoleń lub uprawnień.",
+          "Wykup ubezpieczenie OC działalności, najlepiej obejmujące wszystkie wykonywane zabiegi, oraz ubezpieczenie lokalu i sprzętu.",
+          "Jeśli zatrudniasz pracowników, ustal z księgową obowiązki pracodawcy, w tym BHP i badania.",
+        ],
+      },
+      {
+        heading: "Jak wybrać lokal na salon kosmetyczny?",
+        paragraphs: [
+          "Najpierw zdecyduj, czy potrzebujesz przypadkowych przechodniów, czy klientki przyjdą do Ciebie celowo. Salon paznokci lub brwi przy ruchliwej ulicy korzysta z widoczności, a gabinet kosmetologii specjalistycznej może działać na piętrze, jeśli klientki łatwo go znajdą i dojadą. Obejrzyj lokal o różnych porach dnia i sprawdź, kto mieszka i pracuje w okolicy.",
+          "Przed podpisaniem umowy przejdź przez krótką listę kontrolną:",
+        ],
+        bullets: [
+          "Dojazd i parking: czy klientka dojedzie komunikacją miejską i zaparkuje bez stresu?",
+          "Widoczność: czy możesz umieścić szyld i czy wejście łatwo znaleźć?",
+          "Woda i kanalizacja: czy da się doprowadzić umywalki do gabinetów i zaplecza?",
+          "Wentylacja i okna: szczególnie ważne przy stylizacji paznokci i pracy z chemią.",
+          "Układ pomieszczeń: osobne gabinety zabiegowe, miejsce na sterylizację, zaplecze, toaleta.",
+          "Dostępność: schody, szerokość drzwi, toaleta dla osób z niepełnosprawnościami.",
+          "Umowa najmu: przeznaczenie lokalu, zgoda na remont i szyld, okres wypowiedzenia, kto płaci za adaptację.",
+        ],
+      },
+      {
+        heading: "Jak ustalić ofertę i cennik zabiegów?",
+        paragraphs: [
+          "Na start lepiej sprawdza się **krótka, dopracowana oferta** niż długa lista zabiegów. Wybierz kilka usług, w których jesteś naprawdę dobra i na które jest popyt w okolicy. Każdy dodatkowy zabieg to sprzęt, produkty, szkolenia i miejsce w magazynie. Ofertę rozbudujesz, gdy poznasz swoje klientki.",
+          "Cenę licz od dołu, a dopiero potem porównuj ją z konkurencją. Policz czas zabiegu razem z przygotowaniem i sprzątaniem, koszt produktów i jednorazówek oraz część kosztów stałych przypadającą na godzinę pracy. Dodaj marżę. Jeśli wynik jest wyraźnie wyższy niż ceny w okolicy, nie obniżaj ceny odruchowo: sprawdź, czy możesz skrócić czas, zmienić produkty albo lepiej pokazać wartość zabiegu. Zbyt niskie ceny na otwarcie trudno potem podnieść, a przyciągają klientki szukające wyłącznie promocji.",
+          "Jeśli chcesz zachęcić do pierwszej wizyty, zamiast obniżać cały cennik zaproponuj na otwarcie coś ograniczonego w czasie: bezpłatną konsultację, mały dodatek do zabiegu albo pakiet startowy dla pierwszych klientek. W cenniku podawaj czas trwania zabiegu i to, co jest w cenie, bo klientki łatwiej akceptują wyższą cenę, gdy rozumieją, za co płacą. Po trzech miesiącach przeanalizuj, które zabiegi są najczęściej rezerwowane i najbardziej opłacalne.",
+        ],
+      },
+      {
+        heading: "Jakie formularze i zasady RODO są potrzebne od pierwszego dnia?",
+        paragraphs: [
+          "Salon przetwarza dane osobowe klientek, a karta wywiadu często zawiera informacje o zdrowiu, np. alergie, przyjmowane leki czy ciążę. To dane szczególnej kategorii w rozumieniu RODO, które wymagają szczególnej ostrożności. Wytyczne publikuje Urząd Ochrony Danych Osobowych (UODO). Przygotuj przed otwarciem:",
+        ],
+        bullets: [
+          "Kartę wywiadu dopasowaną do Twoich zabiegów i zgodę na zabieg z informacją o przeciwwskazaniach i możliwych skutkach.",
+          "Klauzulę informacyjną RODO: kto jest administratorem, w jakim celu i jak długo przechowujesz dane.",
+          "Osobną, dobrowolną zgodę na wiadomości marketingowe, oddzielną od formularza zabiegowego.",
+          "Osobną zgodę na zdjęcia przed i po, z rozróżnieniem dokumentacji i publikacji w mediach społecznościowych.",
+          "Zasady przechowywania: kto ma dostęp do kart klientek i gdzie są zabezpieczone.",
+        ],
+        callout:
+          "To ogólne wskazówki, a nie porada prawna. Wzory dokumentów dla swojego salonu najlepiej skonsultuj z prawnikiem lub specjalistą od ochrony danych.",
+      },
+      {
+        heading: "Jak przygotować program do salonu i rezerwacje przed otwarciem?",
+        paragraphs: [
+          "Najwięcej stresu oszczędzisz, jeśli system działa, zanim przyjdzie pierwsza klientka. Wtedy już podczas zapowiedzi otwarcia możesz zbierać rezerwacje, zamiast odpisywać na dziesiątki wiadomości. Program do salonu kosmetycznego skonfiguruj najpóźniej kilka tygodni przed otwarciem:",
+          "W Treatflow wszystko to masz w jednym miejscu: kalendarz z kolumnami dla pracowników i gabinetów, własny link do rezerwacji online bez prowizji, kartotekę klientów, kartę wywiadu i zgody z podpisem elektronicznym wypełniane online przed wizytą, dokumentację zabiegów ze zdjęciami przed i po oraz automatyczne przypomnienia e-mail. Plan Basic za 39 € miesięcznie obejmuje kartotekę, formularze i dokumentację, bez kalendarza. Kalendarz, rezerwacje online i przypomnienia są w planie Booking za 59 € miesięcznie (oba netto + VAT). Możesz przetestować wszystko 14 dni za darmo, bez podawania karty, jeszcze zanim otworzysz drzwi salonu.",
+        ],
+        steps: [
+          "Wpisz usługi z czasem trwania, przerwami na przygotowanie i cenami.",
+          "Ustaw godziny otwarcia, grafik pracy i gabinety.",
+          "Przygotuj kartę wywiadu i zgody na zabieg w formie cyfrowej.",
+          "Zaimportuj kontakty klientek, które już Cię znają, np. z poprzedniej pracy, jeśli masz na to podstawę prawną.",
+          "Włącz przypomnienia e-mail o wizytach.",
+          "Umieść link do rezerwacji online na Instagramie, w profilu Google i na stronie salonu.",
+        ],
+      },
+      {
+        heading: "Plan otwarcia: co zrobić na 12, 8, 4 i 1 tydzień przed startem?",
+        paragraphs: [
+          "Otwarcie salonu to projekt, który warto rozpisać w czasie. Poniższy harmonogram to przykład, który dopasujesz do swojej sytuacji:",
+          "**12 tygodni przed:** koncepcja, budżet, rozmowa z księgową i sanepidem, wybór lokalu. **8 tygodni przed:** umowa najmu, remont, zamówienie sprzętu, ubezpieczenie, rejestracja w CEIDG. **4 tygodnie przed:** program do salonu, cennik, formularze, profil w Google, zdjęcia, zapowiedź otwarcia w mediach społecznościowych i otwarcie rezerwacji online. **1 tydzień przed:** odbiór lokalu, test sprzętu, próbne wizyty, miękkie otwarcie dla rodziny i znajomych. **Pierwszy miesiąc:** proś zadowolone klientki o opinie w Google, umawiaj kolejne wizyty jeszcze przy recepcji i sprawdzaj, które zabiegi oraz kanały przynoszą rezerwacje.",
+          "Pierwsze klientki najczęściej przyjdą z bliskiego otoczenia i z polecenia. Uzupełnij **Profil Firmy w Google** z adresem, godzinami, zdjęciami i linkiem do rezerwacji, regularnie publikuj efekty pracy na Instagramie, zorganizuj miękkie otwarcie i poproś pierwsze klientki o polecenie Cię znajomym. Każda szczera opinia w Google pomaga kolejnym osobom znaleźć Twój salon.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Ile kosztuje otwarcie salonu kosmetycznego?",
+        a: "To zależy od miasta, lokalu, stanu pomieszczeń i specjalizacji, dlatego nie ma jednej kwoty. Rozpisz koszty jednorazowe (kaucja, remont, meble, sprzęt, zapas produktów, marketing) i miesięczne (czynsz, ZUS, księgowa, ubezpieczenie, program, media), zbierz oferty i zostaw rezerwę na pierwsze miesiące.",
+      },
+      {
+        q: "Czy salon kosmetyczny potrzebuje zgody sanepidu?",
+        a: "Salony kosmetyczne podlegają nadzorowi Państwowej Inspekcji Sanitarnej i muszą spełniać wymagania sanitarno-higieniczne. Jakie dokładnie dokumenty i odbiory są potrzebne przed otwarciem, zapytaj w powiatowej stacji sanitarno-epidemiologicznej, najlepiej jeszcze przed podpisaniem umowy najmu.",
+      },
+      {
+        q: "Jaki kod PKD wybrać dla salonu kosmetycznego?",
+        a: "Kod PKD wybierasz przy rejestracji w CEIDG w zależności od rodzaju usług, a obok kodu głównego możesz dodać kody dodatkowe, np. dla sprzedaży kosmetyków. Ponieważ klasyfikacja PKD bywa aktualizowana, właściwe kody najlepiej potwierdź z księgową.",
+      },
+      {
+        q: "Czy mogę otworzyć salon kosmetyczny w domu?",
+        a: "Gabinet w domu jest możliwy, ale również musi spełniać wymagania sanitarne, a zakres zabiegów bywa ograniczony. Zapytaj sanepid o wymagania dla pomieszczenia i sprawdź z księgową oraz wspólnotą lub zarządcą budynku, czy prowadzenie działalności w mieszkaniu nie napotka przeszkód.",
+      },
+      {
+        q: "Kiedy skonfigurować program do rezerwacji?",
+        a: "Najlepiej kilka tygodni przed otwarciem. Wtedy możesz udostępnić link do rezerwacji online w zapowiedziach otwarcia, przygotować formularze i przetestować przypomnienia e-mail. Treatflow możesz testować 14 dni za darmo, bez podawania karty.",
+      },
+    ],
+    related: [
+      { pageKey: "beauty-salon-software", label: "Program dla salonu kosmetycznego" },
+      { pageKey: "features", label: "Wszystkie funkcje" },
+      { pageKey: "pricing", label: "Cennik" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Rozporządzenie (UE) 2016/679 (RODO)",
+        url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      },
+      {
+        label: "Urząd Ochrony Danych Osobowych (UODO)",
+        url: "https://uodo.gov.pl",
+      },
+      {
+        label: "Biznes.gov.pl: serwis informacyjny dla przedsiębiorców",
+        url: "https://www.biznes.gov.pl",
+      },
+    ],
+  },
 ];

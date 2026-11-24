@@ -107,6 +107,7 @@ Evet. Treatflow bilgisayarda, tablette ve akıllı telefonda çalışır; kurulu
   - [Güzellik salonunda randevu iptal politikası](https://www.treatflow.io/tr/blog/randevu-iptal-politikasi-kapora-guzellik-salonu): süreler, kapora ve hazır metin
   - [Güzellik salonu için Google yorum artırma](https://www.treatflow.io/tr/blog/google-yorum-artirma-guzellik-salonu): ne zaman ve nasıl istenir, kurallar, şablonlar ve olumsuz yorumlara cevap
   - [Güzellik salonunda kaybedilen müşterileri geri kazanma](https://www.treatflow.io/tr/blog/kaybedilen-musterileri-geri-kazanma-guzellik-salonu): segmentler, zamanlama, hazır mesajlar, indirimsiz teklifler ve KVKK
+  - [Güzellik salonu nasıl açılır?](https://www.treatflow.io/tr/blog/guzellik-salonu-nasil-acilir): konsept, açılış maliyeti, ruhsat ve vergi kaydı, mekân, fiyatlar, KVKK ve açılış planı
 - [Rehber](https://www.treatflow.io/tr/rehber): salon yönetimi rehberleri
 - [Kullanım Koşulları](https://www.treatflow.io/tr/terms): hizmet koşulları
 - [Instagram](https://www.instagram.com/treatflow.io/): @treatflow.io
