@@ -1923,4 +1923,196 @@ export const posts: BlogArticle[] = [
       { pageKey: "client-records", label: "Fichas de cliente unidas a cada cita" },
     ],
   },
+  {
+    topic: "open-beauty-salon",
+    lang: "es",
+    slug: "como-abrir-un-centro-de-estetica",
+    title: "Cómo abrir un centro de estética: costes, requisitos, local y plan de lanzamiento",
+    metaTitle: "Cómo abrir un centro de estética: guía paso a paso",
+    description:
+      "Cómo abrir un centro de estética en España: concepto, costes, requisitos (alta, licencia, seguro), local, carta de precios, RGPD y plan de lanzamiento.",
+    excerpt:
+      "Abrir un centro de estética es mucho más que tener buenas manos: concepto, números, trámites, local y las primeras clientas. Esta guía te lleva paso a paso, con una tabla de costes y un calendario hasta el día de la apertura.",
+    category: "Gestión del centro",
+    keywords: [
+      "cómo abrir un centro de estética",
+      "montar un centro de estética",
+      "cuánto cuesta abrir un centro de estética",
+      "requisitos para abrir un centro de estética",
+      "licencia para centro de estética",
+      "plan de negocio centro de estética",
+      "programa de gestión para centro de estética",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 9,
+    answer:
+      "Para abrir un centro de estética define primero tu concepto (especialidad, público y nivel de precios), calcula la inversión inicial y los gastos fijos mensuales y comprueba cuántos tratamientos necesitas para cubrirlos. Después date de alta en Hacienda y en la Seguridad Social, consulta en tu ayuntamiento qué licencia o declaración responsable necesita tu local y, si haces láser, micropigmentación o tatuaje, pregunta a la consejería de sanidad de tu comunidad. Deja preparados la carta de tratamientos, los formularios y la reserva online antes de abrir, para que las primeras clientas puedan reservar desde el primer día.",
+    takeaways: [
+      "Un concepto claro (qué haces, para quién y a qué precio) decide el local, el equipamiento y la inversión.",
+      "Calcula con los gastos fijos mensuales y un colchón de varios meses, no solo con la inversión inicial.",
+      "Los trámites dependen de tu ayuntamiento y de tu comunidad autónoma: pregunta antes de firmar el alquiler y apóyate en un gestor.",
+      "Empieza con una carta de tratamientos corta y precios calculados, no copiados de la competencia.",
+      "Agenda, reserva online, formularios y recordatorios deben funcionar antes del primer día, no después.",
+    ],
+    intro: [
+      "Muchas esteticistas sueñan con su propio centro después de años trabajando para otros. La parte técnica la dominan; lo que asusta es todo lo demás: cuánto dinero hace falta, qué papeles hay que presentar, qué local elegir y cómo llenar la agenda cuando nadie te conoce todavía. La buena noticia es que casi todo se puede planificar con orden.",
+      "En esta guía verás qué decidir primero, qué costes tener en cuenta, qué trámites suelen hacer falta en España, cómo elegir el local, cómo montar una carta de precios rentable, qué exige el RGPD y cómo preparar el software y el lanzamiento. Es una guía práctica y general: los requisitos concretos cambian según el municipio y la comunidad autónoma, así que confírmalos siempre con tu ayuntamiento y con un gestor o asesor. No es asesoramiento legal ni fiscal.",
+    ],
+    sections: [
+      {
+        heading: "¿Qué tienes que decidir antes de montar un centro de estética?",
+        paragraphs: [
+          "Antes de buscar local o comprar aparatología, escribe en una página tu concepto. Cuanto más concreto sea, más fáciles serán todas las decisiones siguientes: el tamaño del local, la inversión, la carta de tratamientos y hasta el tono de tu Instagram.",
+        ],
+        bullets: [
+          "**Especialidad:** estética facial y corporal, uñas, pestañas y cejas, depilación láser, micropigmentación, masajes o una combinación. Un centro especializado se explica mejor que uno que lo hace todo.",
+          "**Clienta ideal:** edad, barrio, poder adquisitivo y qué busca: rapidez, resultados, relajación o asesoramiento experto.",
+          "**Posicionamiento de precio:** económico, medio o premium. Determina la decoración, los productos y cuánto tiempo dedicas a cada clienta.",
+          "**Sola o con equipo:** trabajar sola reduce costes y riesgos; con equipo puedes abrir más horas, pero asumes nóminas, cuotas de Seguridad Social y organización de turnos.",
+          "**Tipo de espacio:** alquilar una cabina o un puesto dentro de otro centro, un local propio, una sala en casa o un servicio a domicilio. Empezar alquilando una cabina es una forma prudente de probar tu clientela antes de firmar un local.",
+        ],
+        callout:
+          "Haz un plan de negocio sencillo aunque no pidas financiación: concepto, clienta ideal, carta y precios, inversión, gastos mensuales y previsión de citas. Si vas a pedir un préstamo, el banco te lo pedirá de todos modos.",
+      },
+      {
+        heading: "¿Cuánto cuesta abrir un centro de estética?",
+        paragraphs: [
+          "No existe una cifra única: un puesto alquilado con una camilla y un local de 120 m² con aparatología láser no tienen nada que ver. En lugar de fiarte de una media, pide presupuestos reales y separa los **costes únicos** de inicio de los **gastos mensuales** que pagarás aunque no tengas ninguna cita.",
+        ],
+        table: {
+          headers: ["Partida", "Tipo", "Qué incluye"],
+          rows: [
+            ["Local", "Único + mensual", "Fianza y garantías, posible traspaso, alquiler mensual, comunidad"],
+            ["Reforma y mobiliario", "Único", "Obra, fontanería, electricidad, ventilación, recepción, cabinas, camillas, iluminación"],
+            ["Aparatología y material", "Único", "Equipos (por ejemplo láser o radiofrecuencia), esterilización, lámparas, carros, menaje"],
+            ["Stock inicial de producto", "Único", "Producto profesional para cabina y, si vendes, producto para la venta"],
+            ["Trámites y asesoría", "Único + mensual", "Licencia o declaración responsable, tasas municipales, proyecto técnico si hace falta, gestor"],
+            ["Seguros", "Mensual o anual", "Responsabilidad civil profesional, seguro del local y del contenido"],
+            ["Suministros y cuota de autónomo", "Mensual", "Luz, agua, internet, teléfono, cuota del RETA"],
+            ["Web y software", "Único + mensual", "Dominio, web, programa de gestión y reservas online"],
+            ["Marketing", "Único + mensual", "Rótulo, fotos, inauguración, anuncios y tarjetas"],
+            ["Colchón de tesorería", "Reserva", "Varios meses de gastos fijos para el arranque"],
+          ],
+        },
+      },
+      {
+        heading: "¿Cuántos tratamientos necesitas para cubrir gastos?",
+        paragraphs: [
+          "El dato más útil antes de abrir es tu punto de equilibrio: cuántos tratamientos tienes que hacer al mes solo para pagar los gastos fijos. La fórmula es sencilla: **gastos fijos mensuales ÷ margen medio por tratamiento = tratamientos necesarios**. El margen es el precio sin IVA menos el coste del producto y el material de ese tratamiento.",
+          "**Ejemplo ilustrativo, no datos de mercado:** si tus gastos fijos (alquiler, cuota de autónomo, seguros, suministros, software, asesoría y un sueldo mínimo para ti) suman 3.000 € al mes y cada tratamiento te deja de media 40 € de margen, necesitas 75 tratamientos al mes, unos 19 por semana, antes de ganar el primer euro. Con este número puedes comprobar si tus horarios, tu precio medio y tu capacidad son realistas. Si no salen las cuentas, ajusta el local, los precios o el concepto antes de firmar nada.",
+        ],
+      },
+      {
+        heading: "¿Qué requisitos necesitas para abrir un centro de estética en España?",
+        paragraphs: [
+          "Los trámites básicos son parecidos en toda España, pero los detalles dependen de tu ayuntamiento y de tu comunidad autónoma. Un gestor o asesor te ahorrará tiempo y errores. Esta es una lista orientativa para preparar la conversación:",
+        ],
+        steps: [
+          "**Elige la forma jurídica:** autónoma (persona física) o sociedad, por ejemplo una sociedad limitada. Habla con tu asesor sobre impuestos, responsabilidad y costes de cada opción.",
+          "**Alta en Hacienda:** declaración censal de inicio de actividad (modelo 036) con el epígrafe de actividad que corresponda; tu asesor te indicará cuál.",
+          "**Alta en la Seguridad Social:** en el Régimen Especial de Trabajadores Autónomos (RETA) si eres autónoma. Si contratas personal, tendrás que inscribirte como empresa y dar de alta a cada trabajadora.",
+          "**Licencia del local:** consulta en tu ayuntamiento si tu actividad necesita licencia de actividad o apertura, una declaración responsable o una comunicación previa, y qué documentación técnica piden. Hazlo **antes** de firmar el contrato de alquiler.",
+          "**Requisitos sanitarios:** algunos tratamientos, como láser, micropigmentación o tatuaje, tienen normas higiénico-sanitarias propias en muchas comunidades autónomas, y los tratamientos médicos como inyectables requieren un médico y un centro sanitario autorizado. Pregunta a la consejería de sanidad de tu comunidad.",
+          "**Formación y titulación:** consulta qué formación se exige para cada técnica en tu comunidad y guarda tus títulos y certificados de los cursos de aparatología.",
+          "**Seguro de responsabilidad civil:** muy recomendable desde el primer tratamiento, y a menudo exigido por el arrendador o la normativa autonómica.",
+          "**Obligaciones de cara a la clienta:** precios visibles, información al consumidor y, según tu comunidad, hojas de reclamaciones y su cartel informativo. Tu ayuntamiento o la oficina de consumo te lo confirman.",
+        ],
+        callout:
+          "Si alguien te da un nombre de permiso o una tasa concreta, confírmalo por escrito con el ayuntamiento o la consejería. Las normas cambian entre municipios y comunidades.",
+      },
+      {
+        heading: "¿Cómo elegir el local para tu centro de estética?",
+        paragraphs: [
+          "Decide primero si quieres un **centro de paso** en una calle comercial, donde la visibilidad atrae clientas nuevas pero el alquiler es más alto, o un **centro de destino**, donde la clienta viene expresamente a por ti y pesan más la reputación, el aparcamiento y las reseñas. Un primer piso o un local en una calle secundaria puede funcionar muy bien si tu marketing es bueno.",
+          "Antes de firmar, revisa el local con esta lista:",
+        ],
+        bullets: [
+          "¿El uso de centro de estética está permitido en ese local según el ayuntamiento?",
+          "Agua caliente en las cabinas o cerca de ellas, desagües y una zona de lavado y esterilización.",
+          "Ventilación suficiente, especialmente para uñas (polvo y vapores) y para la cera.",
+          "Potencia eléctrica y enchufes suficientes para la aparatología prevista.",
+          "Cabinas cerradas con intimidad, aseo para clientas y un pequeño almacén.",
+          "Accesibilidad: entrada sin escalones, puertas anchas y aseo adaptado si la normativa lo exige.",
+          "Aparcamiento o transporte público cercano y una fachada visible.",
+          "Contrato: duración, fianza (en locales, la legal es de dos mensualidades), garantías adicionales, quién paga la reforma, posibilidad de traspaso y meses de carencia mientras haces obra.",
+        ],
+      },
+      {
+        heading: "¿Cómo crear la carta de tratamientos y fijar los precios?",
+        paragraphs: [
+          "Empieza con una carta corta: diez o quince tratamientos que domines y que encajen con tu concepto. Una carta enorme confunde a la clienta, obliga a tener mucho stock y complica la agenda. Siempre puedes ampliar cuando veas qué se reserva de verdad.",
+          "Calcula cada precio de abajo arriba: **minutos de cabina** (incluida la preparación y la limpieza) multiplicados por tu coste por minuto, más el **producto y el material**, más tu **margen**, y después el IVA. Tu coste por minuto sale de dividir los gastos fijos mensuales entre los minutos que de verdad puedes facturar. Mira los precios de la competencia solo como referencia: el error más común al abrir es poner precios bajos para atraer clientas y descubrir meses después que no cubren los gastos. Subir precios más adelante cuesta mucho más que empezar con precios correctos.",
+        ],
+      },
+      {
+        heading: "¿Qué exige el RGPD a un centro de estética nuevo?",
+        paragraphs: [
+          "Desde la primera clienta tratarás datos personales y, en muchos casos, datos de salud: alergias, medicación, embarazo o enfermedades de la piel en la ficha de anamnesis. El RGPD y la Ley Orgánica de Protección de Datos (LOPDGDD) se aplican también a un centro pequeño, y la Agencia Española de Protección de Datos (AEPD) es la autoridad de control. Prepara lo básico antes de abrir:",
+        ],
+        bullets: [
+          "Una ficha de anamnesis y un consentimiento informado para cada tratamiento con riesgo, firmados antes de empezar.",
+          "Información clara sobre protección de datos: quién trata los datos, para qué, cuánto tiempo y cómo ejercer los derechos.",
+          "Consentimiento separado y expreso para usar fotos de antes y después en redes sociales o en tu web.",
+          "Consentimiento o base legal adecuada para enviar comunicaciones comerciales, con opción de baja en cada mensaje.",
+          "Fichas guardadas bajo llave o en un sistema con acceso protegido, nunca en el móvil personal sin control.",
+          "Un registro de actividades de tratamiento y contratos de encargado con los proveedores que traten datos por ti, como tu software.",
+        ],
+        callout: "Esto es orientación general, no asesoramiento legal. Ante dudas concretas, consulta la web de la AEPD o a un especialista en protección de datos.",
+      },
+      {
+        heading: "¿Qué programa de gestión necesitas antes del día de la apertura?",
+        paragraphs: [
+          "El mejor momento para elegir un programa de gestión para tu centro de estética es antes de abrir, cuando aún no tienes prisa ni datos que migrar. Así, el primer día ya tienes tus servicios, tus horarios y un enlace de reserva que puedes compartir en Instagram y en Google.",
+          "Con Treatflow configuras tus tratamientos con duración y precio, la agenda con columnas por profesional y cabina, y tu enlace de reservas online sin comisión por reserva. Las fichas de anamnesis y los consentimientos se rellenan y firman digitalmente desde un enlace antes de la cita, la documentación de tratamientos admite fotos de antes y después y notas de voz, y los recordatorios automáticos por email ayudan a reducir los plantones. Si ya tienes una lista de clientas de tu trabajo anterior y puedes usarla legalmente, puedes importarla como archivo CSV. El plan Basic cuesta 39 € al mes (fichas, formularios y documentación, sin agenda) y el plan Booking, con agenda, reservas online, recordatorios por email y flujos de clientes, 59 € al mes, ambos IVA no incluido. Puedes probarlo 14 días gratis, sin tarjeta de crédito.",
+          "Para cobrar con tarjeta en el centro necesitarás además un datáfono de tu banco o de un proveedor de pagos, y para la contabilidad y los impuestos lo más práctico es contar con tu gestor.",
+        ],
+      },
+      {
+        heading: "¿Cómo planificar el lanzamiento y conseguir las primeras clientas?",
+        paragraphs: [
+          "Una apertura funciona mejor con un calendario. Este es un ejemplo que puedes adaptar:",
+        ],
+        steps: [
+          "**12 semanas antes:** concepto y plan de negocio cerrados, consulta al ayuntamiento y al gestor, búsqueda de local y presupuestos de reforma y aparatología.",
+          "**8 semanas antes:** contrato de alquiler firmado, trámites de licencia presentados, obra en marcha, seguros contratados, perfiles de Instagram y de Google Business Profile creados.",
+          "**4 semanas antes:** carta y precios definitivos, software configurado con servicios, horarios, formularios y enlace de reservas, fotos del local y primeras publicaciones.",
+          "**1 semana antes:** altas en Hacienda y Seguridad Social hechas, stock recibido, prueba completa de una reserva online con su recordatorio por email, y una apertura suave para familia, amigas y conocidas.",
+          "**Primer mes:** pide una reseña en Google a cada clienta contenta, ofrece un pequeño detalle por cada amiga recomendada y reserva la siguiente cita antes de que la clienta se vaya.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Cuánto dinero necesito para abrir un centro de estética?",
+        a: "Depende sobre todo del local, la reforma y la aparatología. Alquilar una cabina en otro centro requiere poca inversión; un local propio con láser, mucha más. Pide presupuestos reales, suma los gastos fijos mensuales y reserva un colchón para varios meses.",
+      },
+      {
+        q: "¿Necesito licencia para abrir un centro de estética?",
+        a: "Normalmente el local necesita una licencia de actividad o apertura, o una declaración responsable o comunicación previa, según el ayuntamiento. Consulta en tu ayuntamiento antes de firmar el alquiler y, para láser, micropigmentación o tatuaje, también en la consejería de sanidad.",
+      },
+      {
+        q: "¿Puedo abrir un centro de estética en casa?",
+        a: "En algunos casos sí, pero depende de la normativa urbanística de tu municipio, de los requisitos sanitarios de tu comunidad y de los estatutos de tu comunidad de vecinos. Pregunta en el ayuntamiento antes de invertir en la sala.",
+      },
+      {
+        q: "¿Me doy de alta como autónoma o creo una sociedad?",
+        a: "La mayoría de centros pequeños empiezan como autónomos por ser más sencillo y barato. Una sociedad puede compensar con más ingresos, socias o más riesgo. Decídelo con un gestor o asesor según tus números.",
+      },
+      {
+        q: "¿Cuándo debo empezar con el programa de gestión?",
+        a: "Unas cuatro semanas antes de abrir. Así tienes tiempo de configurar servicios, horarios y formularios, probar la reserva online y compartir tu enlace antes del primer día.",
+      },
+    ],
+    related: [
+      { pageKey: "beauty-salon-software", label: "Software para centros de estética" },
+      { pageKey: "features", label: "Todas las funciones de Treatflow" },
+      { pageKey: "pricing", label: "Precios de Treatflow" },
+    ],
+    sources: [
+      { label: "Reglamento (UE) 2016/679 (RGPD), EUR-Lex", url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj" },
+      { label: "Ley Orgánica 3/2018 de Protección de Datos (LOPDGDD), BOE", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673" },
+      { label: "Agencia Española de Protección de Datos (AEPD)", url: "https://www.aepd.es" },
+    ],
+  },
 ];

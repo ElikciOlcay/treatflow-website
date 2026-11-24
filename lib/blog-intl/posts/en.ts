@@ -1704,4 +1704,192 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  {
+    topic: "open-beauty-salon",
+    lang: "en",
+    slug: "how-to-open-a-beauty-salon",
+    title: "How to Open a Beauty Salon: Costs, Registration, Premises and a Launch Checklist",
+    metaTitle: "How to Open a Beauty Salon: Costs, Steps and Checklist",
+    description:
+      "How to open a beauty salon: what to decide first, start-up costs, registration and insurance, premises, pricing, GDPR and a launch checklist for opening day.",
+    excerpt:
+      "From concept and start-up costs to registration, premises, prices, client forms and your first bookings: a practical, step-by-step guide to starting a beauty business.",
+    category: "Business",
+    keywords: [
+      "how to open a beauty salon",
+      "beauty salon business plan",
+      "cost to open a beauty salon",
+      "starting a beauty business",
+      "opening a salon checklist",
+      "how to start a beauty salon uk",
+      "beauty salon start up costs",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 9,
+    answer:
+      "To open a beauty salon, start with a clear concept: which treatments, for which clients, at what price level and in what kind of space. Then work out your one-off and monthly costs, register the business with the tax authority, get insurance, check local licensing and hygiene rules with your council, and set up booking, client forms and data protection before opening day. Launch with a focused treatment menu and a plan for your first clients.",
+    takeaways: [
+      "Decide your specialisation, target clients and price level before you look at premises; they shape every other decision.",
+      "Budget one-off costs and monthly fixed costs separately, and keep a cash reserve for the first months.",
+      "Register the business, get liability insurance and ask your council about licences for special treatments before you sign a lease.",
+      "Calculate prices from treatment time, product cost and fixed costs, and start with a short, focused menu.",
+      "Have your booking link, digital consultation forms and reminders working before the first client walks in.",
+    ],
+    intro: [
+      "Opening your own salon is exciting, and it is also the moment many good therapists discover how much of the job has nothing to do with treatments: leases, insurance, prices, forms, marketing and a calendar that has to fill up from week one. The salons that get through the first year comfortably are rarely the ones with the most expensive fit-out. They are the ones that planned their costs honestly, chose a clear focus and were ready for clients on opening day.",
+      "This guide walks you through the decisions in a sensible order: concept, costs, registration and insurance, premises, treatment menu and pricing, data protection, software and the launch itself. It is written for the UK, Ireland and other English-speaking markets, so legal points are kept general. Always check the details with your local council, tax authority and an accountant. It is practical guidance, not legal or financial advice.",
+    ],
+    sections: [
+      {
+        heading: "What should you decide before opening a beauty salon?",
+        paragraphs: [
+          "Before you look at a single property, write down your concept in a few sentences. Which treatments will you offer? Skin and facials, nails, lashes and brows, waxing, massage, laser or IPL, permanent makeup? Who is your ideal client, and what can she afford? A salon that does everything at mid-range prices competes with everyone; a salon known for one thing, done very well, is easier to market and easier to equip.",
+          "These questions form the core of your **beauty salon business plan**. Even if you are not borrowing money, putting the answers on paper forces you to check whether the numbers work.",
+        ],
+        bullets: [
+          "**Specialisation:** which two or three treatment groups will make most of your revenue?",
+          "**Target clients:** age, budget, how often they visit, and where they live or work.",
+          "**Price positioning:** budget, mid-range or premium, and how your salon will look and feel to match.",
+          "**Solo or team:** will you work alone at first, or employ staff or rent chairs to self-employed therapists?",
+          "**Type of space:** renting a room or chair in an existing salon, your own premises, a home salon or a mobile service. Starting small keeps risk low; your own premises give you more control and a visible brand.",
+        ],
+      },
+      {
+        heading: "How much does it cost to open a beauty salon?",
+        paragraphs: [
+          "The **cost to open a beauty salon** varies enormously with location, size and specialisation. A mobile nail technician can start with a few thousand in equipment, while a laser clinic with several treatment rooms needs a far larger budget. Rather than relying on someone else's average, get real quotes for each of these categories:",
+        ],
+        table: {
+          headers: ["Cost category", "One-off or monthly", "What to consider"],
+          rows: [
+            ["Premises", "Deposit (one-off), rent (monthly)", "Rent in advance, service charges, business rates or local property taxes"],
+            ["Renovation and furniture", "One-off", "Plumbing, ventilation, lighting, flooring, reception area, treatment beds"],
+            ["Equipment", "One-off (or leasing)", "Steamers, lamps, nail stations, laser or IPL devices, sterilisation"],
+            ["Initial product stock", "One-off, then ongoing", "Professional products and a small retail range"],
+            ["Insurance", "Monthly or yearly", "Public liability, treatment or professional indemnity, contents, employers' liability if you have staff"],
+            ["Registrations and fees", "One-off and yearly", "Business registration, council licences, data protection fee, accountant"],
+            ["Website and software", "One-off and monthly", "Domain, website, booking and client management software"],
+            ["Marketing", "One-off and monthly", "Signage, photos, opening campaign, social media"],
+            ["Cash reserve", "One-off", "Several months of fixed costs while the client base grows"],
+          ],
+        },
+        callout:
+          "Illustrative break-even example (not market data): if your monthly fixed costs are €3,000 and each treatment leaves you an average of €30 after product costs, you need 100 treatments a month, about 25 a week, before you earn anything for yourself.",
+      },
+      {
+        heading: "What registration, qualifications and insurance do you need?",
+        paragraphs: [
+          "In the UK you need to register as self-employed with **HMRC** (as a sole trader) or set up a limited company through **Companies House**. In Ireland, you register with **Revenue**, and companies register with the Companies Registration Office. Other countries have their own tax and business registers. An accountant can help you choose the right structure and tell you when VAT registration becomes relevant.",
+          "Some local councils in the UK require a **special treatment licence** or registration for treatments such as massage, electrolysis, tattooing, piercing, semi-permanent makeup or laser, and some carry out hygiene inspections. The rules differ from council to council and are changing for some non-surgical cosmetic procedures, so ask your council's licensing or environmental health team before you sign a lease.",
+          "Qualifications matter for your clients and your insurer. Most insurers want to see recognised training certificates for every treatment you offer, and treatments such as laser and IPL, injectables and permanent makeup often come with extra training, licensing or medical requirements. If you employ staff in the UK, employers' liability insurance is generally a legal requirement; public liability and treatment insurance are strongly recommended for every salon.",
+        ],
+      },
+      {
+        heading: "How do you choose the right location and premises?",
+        paragraphs: [
+          "Decide whether you need **footfall** or can be a **destination salon**. Walk-in nail bars and brow bars live from passing trade on a busy street. A skin clinic or PMU studio with booked appointments can sit on a first floor or a quieter road, as long as clients can find it and park nearby. Visit the location at different times of day before deciding.",
+          "Then check the building itself: a hot and cold water supply in or near the treatment rooms, good ventilation (essential for nails and lashes), enough power for your equipment, rooms that offer privacy and are easy to clean, and step-free access where possible. Before signing a lease, have it reviewed and confirm that the planned use is permitted and that you are allowed to make the changes you need.",
+        ],
+        bullets: [
+          "Is there enough parking or public transport nearby?",
+          "Is the salon visible, or can you put up clear signage?",
+          "Do treatment rooms have water, ventilation and space for a couch plus a trolley?",
+          "Is the planned use allowed, or do you need permission from the council or landlord?",
+          "How long is the lease, is there a break clause, and who pays for repairs?",
+        ],
+      },
+      {
+        heading: "How should you set your treatment menu and prices?",
+        paragraphs: [
+          "Start with a **focused menu**. Ten treatments you do brilliantly are easier to explain, stock and sell than forty you rarely book. You can add more once you see what clients actually ask for.",
+          "Price each treatment from your real costs, not from what the salon down the road charges. **Underpricing** is one of the most common mistakes new salon owners make, and raising prices later is harder than starting at the right level.",
+        ],
+        steps: [
+          "Measure the full time of each treatment, including consultation, set-up and cleaning.",
+          "Add up the product and consumable cost per treatment.",
+          "Divide your monthly fixed costs by your realistic bookable hours to get a fixed cost per hour.",
+          "Add the time cost, product cost and your profit margin, then add VAT if you are VAT-registered.",
+          "Compare the result with the local market and adjust your positioning, not just the price.",
+        ],
+      },
+      {
+        heading: "What do you need for data protection and client forms?",
+        paragraphs: [
+          "From the first client, you collect personal data, and often health data: allergies, skin conditions, medication or pregnancy. Under the **GDPR** (in the UK, the **UK GDPR** and the Data Protection Act 2018), health data is special category data and needs extra care. In the UK, most businesses that process personal data also need to pay an annual data protection fee to the ICO unless an exemption applies.",
+          "Prepare your paperwork before opening: a consultation or intake form for each treatment group, consent forms for higher-risk treatments, a privacy notice, and a clear process for storing records securely and deleting them when you no longer need them. Before-and-after photos need explicit permission, and using them on social media needs separate consent. This is general guidance, not legal advice.",
+        ],
+        callout:
+          "Digital forms that clients fill in and sign before their appointment save time at reception and keep health information out of unlocked folders and personal phones.",
+      },
+      {
+        heading: "Which salon software should you set up before opening day?",
+        paragraphs: [
+          "Set up your booking and client management system weeks before you open, not on the morning of your first appointment. Then you can take bookings during your pre-opening marketing and test everything with friends first.",
+          "Treatflow is built for this: you set up services with durations and prices, open your calendar with columns per staff member and room, and share your own commission-free online booking link. Digital consultation and consent forms with digital signature are sent to clients before their visit, and automated email reminders help reduce no-shows. You can import existing contacts from a CSV file. The Booking plan with calendar, online booking, email reminders and client workflows costs €59 per month; Basic, with client records, forms and treatment records but without a calendar, costs €39 per month (both excl. VAT). You can try it free for 14 days, without a credit card.",
+        ],
+        steps: [
+          "Create your treatments with duration, price and description.",
+          "Set opening hours, staff and rooms in the calendar.",
+          "Add your consultation and consent forms.",
+          "Turn on email reminders and test your online booking link.",
+          "Import existing contacts and add the booking link to your website, Instagram and Google Business Profile.",
+        ],
+      },
+      {
+        heading: "What should your launch plan look like?",
+        paragraphs: [
+          "A simple timeline keeps the last weeks under control. Adjust it to your situation; a fit-out or licence can take longer than expected.",
+        ],
+        bullets: [
+          "**12 weeks before:** finalise the concept and budget, register the business, ask the council about licences, start looking at premises.",
+          "**8 weeks before:** sign the lease, book trades for the fit-out, arrange insurance, order equipment.",
+          "**4 weeks before:** set up software, forms and online booking; create your Google Business Profile and Instagram; take photos.",
+          "**1 week before:** test every treatment, run a soft opening for friends and family, and ask them for honest feedback and reviews.",
+          "**First month:** follow up after each visit, ask happy clients for Google reviews, offer a referral incentive, and track which channels bring bookings.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "How much does it cost to open a beauty salon?",
+        a: "It depends on location, size and specialisation. Renting a room in an existing salon or working mobile needs far less capital than fitting out your own premises with specialist equipment. Get quotes for premises, fit-out, equipment, stock, insurance, fees, software and marketing, and keep a reserve for several months of fixed costs.",
+      },
+      {
+        q: "Do I need a licence to open a beauty salon in the UK?",
+        a: "There is no single national salon licence, but some councils require a special treatment licence or registration for treatments such as massage, tattooing, semi-permanent makeup, piercing or laser. Ask your council's licensing or environmental health team before signing a lease.",
+      },
+      {
+        q: "Can I open a beauty salon without qualifications?",
+        a: "Legally it depends on the treatment and where you are, but in practice insurers usually require recognised training for every treatment you offer, and clients expect it. For higher-risk treatments such as laser, injectables or PMU, extra training and requirements usually apply.",
+      },
+      {
+        q: "Is it better to rent a room or open my own salon?",
+        a: "Renting a room or chair is a low-risk way to build a client base without a large investment. Your own premises give you full control over brand, team and opening hours, but come with higher fixed costs and longer commitments.",
+      },
+      {
+        q: "When should I set up booking software?",
+        a: "Ideally four weeks or more before opening, so you can take bookings during pre-opening marketing, test your forms and reminders, and import existing contacts.",
+      },
+    ],
+    related: [
+      { pageKey: "beauty-salon-software", label: "Beauty salon software" },
+      { pageKey: "features", label: "All Treatflow features" },
+      { pageKey: "pricing", label: "Treatflow pricing" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Regulation (EU) 2016/679 (GDPR)",
+        url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      },
+      {
+        label: "GOV.UK: Set up a business",
+        url: "https://www.gov.uk/set-up-business",
+      },
+      {
+        label: "Information Commissioner's Office (ICO)",
+        url: "https://ico.org.uk/",
+      },
+    ],
+  },
 ];

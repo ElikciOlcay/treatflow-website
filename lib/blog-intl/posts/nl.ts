@@ -1757,4 +1757,190 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  {
+    topic: "open-beauty-salon",
+    lang: "nl",
+    slug: "schoonheidssalon-starten",
+    title: "Schoonheidssalon starten: kosten, inschrijving, locatie en lanceerplan",
+    metaTitle: "Schoonheidssalon starten: het complete stappenplan",
+    description:
+      "Een eigen schoonheidssalon starten? Concept kiezen, kosten berekenen, KVK-inschrijving, verzekering, locatie, prijzen, AVG en een lanceerplan stap voor stap.",
+    excerpt:
+      "Een eigen salon beginnen vraagt meer dan vakmanschap. In deze gids lees je welke keuzes je eerst maakt, welke kosten je moet begroten, wat je regelt bij de KVK en gemeente en hoe je je eerste klanten vindt.",
+    category: "Ondernemen",
+    keywords: [
+      "schoonheidssalon starten",
+      "eigen salon beginnen",
+      "schoonheidssalon beginnen kosten",
+      "ondernemingsplan schoonheidssalon",
+      "eigen schoonheidssalon openen",
+      "schoonheidsspecialiste voor jezelf beginnen",
+      "salon aan huis starten",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 9,
+    answer:
+      "Een schoonheidssalon starten doe je in vaste stappen: kies eerst je concept, doelgroep en werkvorm (aan huis, een ruimte huren of een eigen pand), maak een begroting met eenmalige en maandelijkse kosten en schrijf je in bij de KVK. Check daarna bij je gemeente of je pand de juiste bestemming heeft, sluit een beroepsaansprakelijkheidsverzekering af en vraag bij de GGD na of er voor jouw behandelingen extra hygiëne-eisen of vergunningen gelden. Zet tot slot je behandelmenu, prijzen, intakeformulieren en online agenda klaar vóór je eerste werkdag.",
+    takeaways: [
+      "Kies een duidelijk concept en een kleine, gerichte behandelkaart; je kunt later altijd uitbreiden.",
+      "Begroot zowel eenmalige als maandelijkse kosten en houd een buffer aan voor de eerste maanden.",
+      "Inschrijven bij de KVK, het bestemmingsplan checken bij de gemeente en een beroepsaansprakelijkheidsverzekering horen bij de basis; voor PMU, tattoo en piercing gelden aparte hygiëne-eisen.",
+      "Reken je prijzen uit op tijd, productkosten en vaste lasten in plaats van de goedkoopste in de buurt te volgen.",
+      "Regel online boeken, digitale intakeformulieren en herinneringen per e-mail al vóór de opening, zodat je vanaf dag één rustig kunt werken.",
+    ],
+    intro: [
+      "Veel schoonheidsspecialisten dromen ervan: een eigen plek, je eigen behandelingen, je eigen klanten. Maar wie een eigen salon begint, wordt naast specialist ook ondernemer. Je krijgt te maken met huur, inkoop, verzekeringen, de KVK, de gemeente, privacyregels, prijzen en marketing. Dat klinkt als veel, maar met een goede volgorde is het prima te overzien.",
+      "In deze gids lopen we alle stappen door: van concept en begroting tot inschrijving, locatie, behandelmenu, de AVG, software en een concreet lanceerplan. We noemen geen verzonnen gemiddelden of vaste bedragen, want die verschillen sterk per stad en concept. Wel krijg je een overzicht van wat je moet begroten en waar je de actuele regels navraagt. Dit is praktisch advies, geen juridisch of fiscaal advies.",
+    ],
+    sections: [
+      {
+        heading: "Wat moet je eerst beslissen als je een schoonheidssalon wilt starten?",
+        paragraphs: [
+          "Begin niet met het pand of de inrichting, maar met je **concept**. Voor wie werk je, waar ben je goed in en waarom zou een klant voor jou kiezen in plaats van voor de salon om de hoek? Die keuzes bepalen bijna alles wat volgt: de ruimte die je nodig hebt, de apparatuur, je prijzen en je marketing.",
+          "Schrijf je antwoorden op in een kort **ondernemingsplan**. Dat hoeft geen dik rapport te zijn, maar het dwingt je om keuzes te maken en je hebt het nodig als je bij een bank of financier aanklopt. De KVK heeft op haar website hulpmiddelen om een ondernemingsplan op te stellen.",
+        ],
+        bullets: [
+          "**Specialisatie:** huid en gezichtsbehandelingen, nagels, wimpers en wenkbrauwen, laser of IPL, permanente make-up, massage of een combinatie.",
+          "**Doelgroep:** bijvoorbeeld jonge vrouwen met een druk leven, klanten met huidproblemen, mannen, of klanten die luxe en ontspanning zoeken.",
+          "**Prijspositie:** betaalbaar en snel, middensegment of premium met meer tijd en beleving per klant.",
+          "**Solo of met team:** begin je alleen, of wil je meteen medewerkers of zzp’ers inzetten?",
+          "**Werkvorm:** salon aan huis, een behandelkamer of stoel huren in een bestaande salon of kapperszaak, een eigen pand, of mobiel bij klanten thuis.",
+        ],
+        callout:
+          "Twijfel je tussen aan huis en een eigen pand? Een gehuurde behandelkamer is vaak een goede tussenstap: lagere vaste lasten, en je bouwt eerst een klantenbestand op voordat je een langer huurcontract tekent.",
+      },
+      {
+        heading: "Wat kost het om een schoonheidssalon te beginnen?",
+        paragraphs: [
+          "De kosten lopen enorm uiteen. Een salon aan huis met een behandelstoel en een paar apparaten vraagt een heel ander budget dan een pand in het centrum met drie behandelkamers en een laserapparaat. Maak daarom je **eigen begroting** en vraag echte offertes op. Splits de kosten in eenmalige startkosten en maandelijkse vaste lasten:",
+          "Zet daarna een eenvoudige rekensom op om te zien hoeveel behandelingen je nodig hebt om quitte te spelen. **Een rekenvoorbeeld, geen marktcijfer:** stel dat je vaste lasten (huur, verzekeringen, software, energie, je eigen minimale inkomen) samen €3.000 per maand zijn en je na productkosten gemiddeld €40 overhoudt per behandeling. Dan heb je €3.000 ÷ €40 = 75 behandelingen per maand nodig om break-even te draaien, ongeveer 18 per week. Vul je eigen getallen in en kijk of dat realistisch is in je eerste maanden.",
+          "Neem ook een **buffer** op voor de opstartperiode, want een agenda raakt zelden in de eerste maand vol. Vraag een boekhouder om mee te kijken naar je begroting, btw en of regelingen zoals de kleineondernemersregeling (KOR) voor jou interessant zijn.",
+        ],
+        table: {
+          headers: ["Kostenpost", "Eenmalig of maandelijks", "Waar je op let"],
+          rows: [
+            ["Huur en borg", "Borg eenmalig, huur maandelijks", "Servicekosten, indexatie en looptijd van het contract"],
+            ["Verbouwing en inrichting", "Eenmalig", "Water, afvoer, ventilatie, verlichting, behandelstoel of -bank"],
+            ["Apparatuur", "Eenmalig of lease", "Onderhoud, garantie, opleiding bij het apparaat"],
+            ["Startvoorraad producten", "Eenmalig, daarna doorlopend", "Begin klein; koop bij voorkeur bij één of twee merken in"],
+            ["Verzekeringen", "Maandelijks of jaarlijks", "Beroeps- en bedrijfsaansprakelijkheid, inventaris, eventueel arbeidsongeschiktheid"],
+            ["Inschrijving en vergunningen", "Eenmalig, soms jaarlijks", "KVK-inschrijving, eventuele leges bij gemeente of GGD"],
+            ["Website en software", "Maandelijks", "Agenda, online boeken, klantdossiers, formulieren"],
+            ["Marketing", "Eenmalig bij de start, daarna maandelijks", "Logo, foto’s, flyers, openingsactie, social media"],
+            ["Reserve", "Eenmalig opzij gezet", "Genoeg om enkele maanden vaste lasten te dekken"],
+          ],
+        },
+      },
+      {
+        heading: "Wat moet je regelen bij de KVK, gemeente, GGD en verzekeraar?",
+        paragraphs: [
+          "**KVK-inschrijving.** Als ondernemer schrijf je je in bij de Kamer van Koophandel. Je kiest dan ook een rechtsvorm; veel starters beginnen als eenmanszaak. Na de inschrijving krijg je een btw-identificatienummer van de Belastingdienst. Werk je in Vlaanderen, dan schrijf je je in via een erkend ondernemingsloket in de Kruispuntbank van Ondernemingen (KBO); vraag daar ook welke voorwaarden voor jouw activiteit gelden.",
+          "**Gemeente en bestemmingsplan.** Niet in elk pand of elke woning mag je zomaar een salon beginnen. Vraag bij je gemeente na of het pand de juiste bestemming heeft (in nieuwere gemeenten heet dat het omgevingsplan) en of er voorwaarden gelden voor een bedrijf aan huis, zoals een maximaal deel van de woning of regels voor reclame aan de gevel. Doe dit vóór je een huurcontract tekent of gaat verbouwen.",
+          "**Hygiëne en behandelingen met extra eisen.** Voor tatoeëren, permanente make-up en piercen gelden in Nederland aparte hygiëne-eisen en een vergunningsplicht; neem contact op met de GGD in jouw regio voor de actuele eisen en de procedure. Injecties met bijvoorbeeld fillers of botuline zijn voorbehouden aan bevoegde zorgprofessionals, en ook voor sommige laser- en IPL-behandelingen kunnen extra regels gelden. Check vooraf goed wat jij mag doen en met welke opleiding.",
+          "**Opleiding.** Voor de meeste klassieke schoonheidsbehandelingen is in Nederland geen wettelijk verplicht diploma vereist, maar een erkende opleiding en aansluiting bij een brancheorganisatie geven klanten vertrouwen en zijn soms een voorwaarde van je verzekeraar.",
+          "**Verzekeringen.** Een **beroepsaansprakelijkheidsverzekering** is voor een schoonheidssalon sterk aan te raden: een allergische reactie, brandwondje of beschadigde huid kan anders duur uitpakken. Vraag je verzekeraar ook naar bedrijfsaansprakelijkheid, inventaris en, als zelfstandige, een arbeidsongeschiktheidsverzekering.",
+        ],
+        callout:
+          "Twijfel je over een regel of vergunning? Vraag het na bij de juiste instantie: de KVK voor inschrijving, de gemeente voor bestemming en gevelreclame, de GGD voor hygiëne en de Belastingdienst of je boekhouder voor btw.",
+      },
+      {
+        heading: "Hoe kies je de juiste locatie voor je salon?",
+        paragraphs: [
+          "Bedenk eerst of je een **loopsalon** wilt, waar voorbijgangers spontaan binnenlopen, of een **bestemmingssalon**, waar klanten bewust voor jou komen. Voor nagels, wenkbrauwen en snelle behandelingen werkt zichtbaarheid in een winkelstraat goed. Voor gezichtsbehandelingen, laser of PMU kiezen klanten vaker op vertrouwen en reviews, en is een rustige ruimte met goede parkeermogelijkheden net zo waardevol.",
+          "Loop elk pand na met deze checklist voordat je tekent:",
+        ],
+        bullets: [
+          "Is er parkeerruimte of een bushalte in de buurt, en is de ingang goed te vinden?",
+          "Zijn er voldoende wateraansluitingen en afvoer in of bij de behandelkamers?",
+          "Is de ventilatie geschikt, bijvoorbeeld voor nagelstudio’s met dampen en stof?",
+          "Past de indeling: aparte, afsluitbare behandelruimtes voor privacy, een kleine wachtruimte en opslag?",
+          "Is de salon toegankelijk voor klanten die slecht ter been zijn?",
+          "Wat staat er in het huurcontract over looptijd, opzegtermijn, indexatie, verbouwen en onderverhuur?",
+          "Heeft de gemeente bevestigd dat een salon op dit adres is toegestaan?",
+        ],
+      },
+      {
+        heading: "Hoe stel je je behandelmenu en prijzen samen?",
+        paragraphs: [
+          "Een lange behandelkaart lijkt aantrekkelijk, maar betekent meer apparatuur, meer voorraad en meer opleiding. Begin met **een gerichte kaart** van behandelingen waar je echt goed in bent en die bij je doelgroep passen. Voeg een paar logische aanvullingen toe, zoals een wenkbrauwcorrectie bij een gezichtsbehandeling, en breid pas uit als je merkt waar vraag naar is.",
+          "Reken je prijzen uit in plaats van ze te kopiëren van de concurrent. Een praktische formule: (behandeltijd inclusief voorbereiding en opruimen × je uurtarief op basis van vaste lasten en gewenst inkomen) + productkosten = je minimumprijs. Te lage prijzen zijn een van de grootste valkuilen voor starters: je raakt overwerkt, verdient te weinig en een prijsverhoging later voelt voor klanten als een grote stap. Leg je kaart vast met vaste behandelduren, zodat je agenda en online boekingen meteen kloppen.",
+        ],
+      },
+      {
+        heading: "Wat betekent de AVG voor je intakeformulieren en klantdossiers?",
+        paragraphs: [
+          "Als salon verwerk je persoonsgegevens en vaak ook **gezondheidsgegevens**: allergieën, medicijngebruik, huidaandoeningen of zwangerschap. Die vallen onder de AVG als bijzondere persoonsgegevens en verdienen extra zorg. Toezichthouder in Nederland is de Autoriteit Persoonsgegevens.",
+          "Regel vóór de opening een paar basiszaken. Vraag alleen gegevens die je echt nodig hebt voor een veilige behandeling, leg uit waarom je ze vraagt en laat de klant de intake en toestemming ondertekenen. Bewaar dossiers beveiligd en niet in een open map aan de balie of in losse chatberichten. Voor- en nafoto’s gebruik je alleen voor je dossier, tenzij de klant apart en uitdrukkelijk toestemming geeft voor bijvoorbeeld Instagram. Zet daarnaast een privacyverklaring op je website en bepaal hoe lang je dossiers bewaart. Dit is algemene uitleg, geen juridisch advies.",
+        ],
+      },
+      {
+        heading: "Welke software en boekingen regel je vóór de openingsdag?",
+        paragraphs: [
+          "Richt je systemen in voordat de eerste klant komt. Als je pas begint met een agenda als het al druk is, eindig je met dubbele boekingen, papieren formulieren en losse appjes. Doorloop deze stappen een paar weken voor de opening:",
+          "Met Treatflow regel je dit in één systeem: een online agenda met een kolom per medewerker en ruimte, een eigen boekingslink zonder commissie per boeking, klantdossiers, digitale intake- en toestemmingsformulieren met digitale handtekening, behandelverslagen met voor- en nafoto’s en automatische herinneringen per e-mail. Agenda, online boeken en herinneringen zitten in het Booking-pakket van €59 per maand; Basic (€39 per maand, zonder agenda) is bedoeld voor klantdossiers en documentatie. Beide prijzen zijn excl. btw. Je kunt 14 dagen gratis proberen, zonder creditcard, dus je kunt alles rustig klaarzetten voordat je opent. Voor pinbetalingen in de salon en je boekhouding regel je apart een betaalaanbieder en een boekhouder of boekhoudpakket.",
+        ],
+        steps: [
+          "Zet je behandelingen in het systeem met duur, prijs en eventuele voorbereidingstijd.",
+          "Stel je openingstijden, behandelruimtes en (als je een team hebt) medewerkers in.",
+          "Maak je online boekingslink aan en zet die op je website, Instagram-bio en Google-bedrijfsprofiel.",
+          "Maak je intake- en toestemmingsformulieren digitaal, zodat klanten ze vóór de afspraak invullen.",
+          "Zet herinneringen per e-mail aan en leg je annuleringsbeleid vast.",
+          "Importeer bestaande contacten, bijvoorbeeld klanten die je eerder aan huis of in loondienst behandelde, als je dat volgens de AVG mag.",
+          "Doe een proefboeking als klant om te zien of alles klopt.",
+        ],
+      },
+      {
+        heading: "Hoe ziet een lanceerplan voor je nieuwe salon eruit?",
+        paragraphs: [
+          "Je eerste klanten komen meestal uit je eigen netwerk en uit je directe omgeving. Maak daarom vroeg een **Google-bedrijfsprofiel** aan met foto’s, openingstijden en je boekingslink, want veel mensen zoeken op “schoonheidssalon bij mij in de buurt”. Laat op Instagram je werk, je ruimte en jezelf zien, en vraag vrienden en familie om je opening te delen. Een kleine doorverwijsactie, zoals een extraatje voor wie een vriendin meeneemt, werkt vaak beter dan een grote openingskorting die je prijzen meteen onder druk zet. Plan na elke behandeling direct de volgende afspraak in: een vaste klant die elke maand terugkomt, is voor een nieuwe salon goud waard.",
+          "Een opening gaat beter met een planning. Gebruik dit schema als uitgangspunt en schuif het op naar jouw situatie:",
+        ],
+        bullets: [
+          "**12 weken voor de opening:** concept en ondernemingsplan af, begroting rond, financiering geregeld, locatie gekozen en bestemming gecheckt bij de gemeente.",
+          "**8 weken voor de opening:** inschrijven bij de KVK, verzekeringen afsluiten, eventuele GGD-procedure starten, verbouwing en inrichting plannen, apparatuur en startvoorraad bestellen.",
+          "**4 weken voor de opening:** software inrichten, website en Google-bedrijfsprofiel online, Instagram vullen met je werk, openingsdatum aankondigen en de online agenda openzetten.",
+          "**1 week voor de opening:** soft opening voor vrienden en familie om routines te testen, foto’s van de salon maken, laatste formulieren en prijzen controleren.",
+          "**Eerste maand na de opening:** elke tevreden klant om een Google-review vragen, een kleine doorverwijsactie starten, direct een vervolgafspraak inplannen en bijhouden waar nieuwe klanten vandaan komen.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Heb ik een diploma nodig om een schoonheidssalon te beginnen?",
+        a: "Voor de meeste klassieke schoonheidsbehandelingen is in Nederland geen wettelijk verplicht diploma vereist. Een erkende opleiding is wel sterk aan te raden voor je kwaliteit, je verzekering en het vertrouwen van klanten. Voor PMU, tattoo en piercing gelden aparte hygiëne-eisen via de GGD, en injecties zijn voorbehouden aan bevoegde zorgprofessionals.",
+      },
+      {
+        q: "Hoeveel kost het om een schoonheidssalon te starten?",
+        a: "Dat hangt sterk af van je werkvorm en specialisatie. Een salon aan huis of een gehuurde behandelkamer vraagt veel minder dan een eigen pand met verbouwing en dure apparatuur. Maak een begroting met eenmalige kosten, maandelijkse lasten en een buffer, en vraag echte offertes op.",
+      },
+      {
+        q: "Mag ik een schoonheidssalon aan huis beginnen?",
+        a: "Vaak wel, maar het hangt af van het bestemmingsplan of omgevingsplan van je gemeente en eventuele regels van je verhuurder of VvE. Vraag dit na bij je gemeente voordat je investeert.",
+      },
+      {
+        q: "Welke verzekering heb ik nodig voor mijn salon?",
+        a: "Een beroepsaansprakelijkheidsverzekering is sterk aan te raden, omdat je direct aan de huid van klanten werkt. Daarnaast zijn bedrijfsaansprakelijkheid, een inventarisverzekering en voor zelfstandigen een arbeidsongeschiktheidsverzekering het overwegen waard. Laat je adviseren door een verzekeraar die de branche kent.",
+      },
+      {
+        q: "Wanneer moet ik online boeken instellen?",
+        a: "Bij voorkeur een paar weken voor de opening, zodat je de boekingslink kunt delen zodra je de opening aankondigt. Zo vult je agenda zich al voordat de deur opengaat.",
+      },
+    ],
+    related: [
+      { pageKey: "beauty-salon-software", label: "Software voor schoonheidssalons" },
+      { pageKey: "features", label: "Alle functies van Treatflow" },
+      { pageKey: "pricing", label: "Prijzen en pakketten" },
+    ],
+    sources: [
+      {
+        label: "Autoriteit Persoonsgegevens",
+        url: "https://www.autoriteitpersoonsgegevens.nl",
+      },
+      {
+        label: "EUR-Lex: Verordening (EU) 2016/679 (AVG)",
+        url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      },
+    ],
+  },
 ];

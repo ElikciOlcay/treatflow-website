@@ -1675,4 +1675,194 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  {
+    topic: "open-beauty-salon",
+    lang: "fr",
+    slug: "ouvrir-un-institut-de-beaute",
+    title: "Ouvrir un institut de beauté : budget, démarches, local et plan de lancement",
+    metaTitle: "Ouvrir un institut de beauté : le guide complet",
+    description:
+      "Ouvrir un institut de beauté : concept, budget de départ, CAP esthétique, statut et démarches, local, carte des soins, RGPD et plan de lancement pas à pas.",
+    excerpt:
+      "Concept, budget, qualification, statut, local, tarifs, RGPD et logiciel : tout ce qu'il faut préparer avant d'ouvrir votre institut de beauté, avec un calendrier de lancement semaine par semaine.",
+    category: "Gestion d'institut",
+    keywords: [
+      "ouvrir un institut de beauté",
+      "ouvrir un salon d'esthétique",
+      "combien coûte l'ouverture d'un institut de beauté",
+      "business plan institut de beauté",
+      "créer son institut de beauté",
+      "diplôme pour ouvrir un institut de beauté",
+      "logiciel institut de beauté",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 9,
+    answer:
+      "Pour ouvrir un institut de beauté, commencez par un concept précis (clientèle, spécialité, positionnement de prix), chiffrez votre budget de départ et vos charges mensuelles, puis vérifiez la qualification exigée : en France, l'activité d'esthétique suppose en principe un CAP esthétique ou équivalent, ou le contrôle de l'activité par une personne qualifiée. Ensuite viennent le choix du statut, l'immatriculation via le guichet unique, l'assurance responsabilité civile professionnelle, un local conforme aux règles des établissements recevant du public, et une organisation prête (carte des soins, agenda, réservation en ligne, formulaires) avant le jour J.",
+    takeaways: [
+      "Un concept clair (qui, quels soins, à quel prix) guide toutes les autres décisions, du local au logiciel.",
+      "Distinguez les dépenses ponctuelles des charges mensuelles et gardez une réserve de trésorerie pour les premiers mois.",
+      "En France, l'esthétique est une activité réglementée : qualification, immatriculation et assurance sont à vérifier avec la CMA et un expert-comptable.",
+      "Calculez vos prix à partir du temps, du coût des produits et de vos charges fixes, pas seulement à partir des tarifs du concurrent.",
+      "Agenda, réservation en ligne, formulaires et rappels doivent fonctionner avant l'ouverture, pas pendant la première semaine chargée.",
+    ],
+    intro: [
+      "Ouvrir son propre institut de beauté est souvent l'aboutissement de plusieurs années comme esthéticienne salariée : l'envie de choisir ses soins, ses marques, son ambiance et ses horaires. Mais entre l'idée et le premier rendez-vous, il y a beaucoup de décisions : quel concept, quel budget, quel statut, quel local, quels tarifs, et comment remplir l'agenda dès les premières semaines.",
+      "Ce guide vous accompagne étape par étape, pour la France en priorité, avec quelques repères pour la Belgique et la Suisse. Il ne remplace pas l'avis d'un expert-comptable, de la chambre de métiers et de l'artisanat (CMA) ou de votre mairie : les règles évoluent et dépendent de votre situation. Considérez-le comme une liste de contrôle pour poser les bonnes questions aux bons interlocuteurs.",
+    ],
+    sections: [
+      {
+        heading: "Que faut-il décider avant d'ouvrir un institut de beauté ?",
+        paragraphs: [
+          "Avant de visiter des locaux ou de commander une table de soin, définissez votre concept. Il conditionne la surface nécessaire, le matériel, le budget et la communication. Un institut « tout soin » de quartier ne se conçoit pas comme un studio spécialisé en extensions de cils ou un centre d'épilation laser.",
+          "Écrivez noir sur blanc les réponses aux questions suivantes. Elles formeront aussi la base de votre **business plan d'institut de beauté**, que votre banque vous demandera de toute façon.",
+        ],
+        bullets: [
+          "**Clientèle cible** : actives pressées, clientèle haut de gamme, étudiantes, hommes, futures mariées ?",
+          "**Spécialité** : soins du visage, épilation, onglerie, cils et sourcils, maquillage permanent, massages, appareils (laser, radiofréquence…) ?",
+          "**Positionnement de prix** : accessible, milieu de gamme ou premium, avec l'expérience et les produits qui vont avec.",
+          "**Seule ou en équipe** : combien de cabines, et quand recruter la première collaboratrice ?",
+          "**Forme d'exploitation** : location d'une cabine dans un institut ou un salon de coiffure, local en propre, esthétique à domicile ou activité mixte.",
+          "**Concurrence** : quels instituts existent déjà dans la zone, et qu'apporterez-vous de différent ?",
+        ],
+        callout:
+          "Commencer en louant une cabine ou à domicile permet de tester votre clientèle avec peu d'investissement, avant de signer un bail commercial.",
+      },
+      {
+        heading: "Combien coûte l'ouverture d'un institut de beauté ?",
+        paragraphs: [
+          "Il n'existe pas de montant type : le budget varie énormément selon la ville, la surface, l'état du local, la part de matériel neuf ou d'occasion et le nombre de cabines. Plutôt que de vous fier à une moyenne, demandez des devis et classez chaque poste en dépense ponctuelle ou en charge mensuelle.",
+        ],
+        table: {
+          headers: ["Poste", "Type", "Points d'attention"],
+          rows: [
+            ["Dépôt de garantie, droit d'entrée ou pas-de-porte", "Ponctuel", "Lisez le bail et les conditions de cession avant de signer"],
+            ["Loyer et charges du local", "Mensuel", "Vérifiez les charges refacturées et l'indexation du loyer"],
+            ["Travaux, plomberie, électricité, ventilation", "Ponctuel", "Faites chiffrer l'accessibilité et les points d'eau dans chaque cabine"],
+            ["Mobilier et décoration (accueil, cabines)", "Ponctuel", "Le confort et l'image comptent, mais restez dans le budget"],
+            ["Matériel et appareils", "Ponctuel ou leasing", "Comparez achat, occasion et location ; vérifiez la formation incluse"],
+            ["Stock initial de produits (cabine et revente)", "Ponctuel puis mensuel", "Commencez avec une gamme courte"],
+            ["Assurances (RC professionnelle, local)", "Mensuel ou annuel", "Comparez plusieurs devis"],
+            ["Formalités, honoraires d'expert-comptable", "Ponctuel puis mensuel", "Demandez un devis détaillé"],
+            ["Site web, logiciel de gestion et de réservation", "Mensuel", "Préférez un abonnement sans commission par rendez-vous"],
+            ["Communication de lancement", "Ponctuel", "Enseigne, photos, réseaux sociaux, soirée d'ouverture"],
+            ["Réserve de trésorerie", "Ponctuel", "Prévoyez de quoi couvrir plusieurs mois de charges"],
+          ],
+        },
+      },
+      {
+        heading: "Combien de soins faut-il pour être rentable ? Un exemple de calcul",
+        paragraphs: [
+          "Le calcul du point mort est simple et très parlant. Additionnez vos charges fixes mensuelles (loyer, assurances, logiciel, expert-comptable, remboursement de prêt, votre propre rémunération), puis divisez par la marge moyenne d'un soin, c'est-à-dire son prix HT moins le coût des produits utilisés.",
+          "**Exemple purement illustratif, pas une donnée de marché** : avec 4 000 € de charges fixes par mois et une marge moyenne de 40 € par soin, il vous faut 100 soins par mois pour couvrir vos frais, soit environ 25 par semaine. Comparez ce chiffre à votre capacité réelle (heures d'ouverture, nombre de cabines, temps de préparation) : si l'objectif paraît irréaliste, revoyez vos prix, votre local ou votre organisation avant d'ouvrir.",
+        ],
+      },
+      {
+        heading: "Quel diplôme, quel statut et quelles démarches pour ouvrir un institut en France ?",
+        paragraphs: [
+          "En France, l'esthétique est une activité artisanale réglementée. Pour l'exercer, il faut en principe être titulaire d'un **CAP esthétique, cosmétique et parfumerie** ou d'un diplôme ou d'une expérience reconnus comme équivalents, ou que l'activité soit placée sous le contrôle effectif et permanent d'une personne qualifiée. Si vous n'êtes pas vous-même diplômée, renseignez-vous auprès de la CMA sur les conditions exactes avant d'investir.",
+          "Les formalités de création d'entreprise se font en ligne sur le **guichet unique** géré par l'INPI (formalites.entreprises.gouv.fr). Le choix du statut (micro-entreprise, entreprise individuelle, EURL, SASU, SARL, SAS…) a des conséquences sur vos cotisations, votre fiscalité, votre protection sociale et la séparation de votre patrimoine : faites-vous conseiller par un expert-comptable ou la CMA, plutôt que de choisir uniquement au plus simple.",
+          "Certains soins ont des exigences supplémentaires. Le tatouage et le maquillage permanent, par exemple, sont soumis à une déclaration auprès de l'agence régionale de santé et à une formation aux règles d'hygiène. Les règles concernant l'épilation laser et à lumière pulsée et l'usage de certains appareils ont évolué ces dernières années : vérifiez la réglementation en vigueur et les formations exigées avant d'acheter un appareil.",
+        ],
+        steps: [
+          "Vérifiez votre qualification (ou celle de la personne qui contrôlera l'activité) auprès de la CMA.",
+          "Faites valider votre business plan et le choix du statut avec un expert-comptable.",
+          "Ouvrez un compte bancaire professionnel et, si besoin, sollicitez votre prêt ; demandez aussi à votre banque une solution pour accepter les paiements par carte.",
+          "Immatriculez votre entreprise via le guichet unique de l'INPI.",
+          "Souscrivez une assurance responsabilité civile professionnelle et une assurance pour le local et le matériel.",
+          "Renseignez-vous auprès de la mairie sur l'enseigne, les travaux et l'accessibilité du local.",
+        ],
+        callout:
+          "En Belgique et en Suisse, les conditions d'accès à la profession et les démarches sont différentes : adressez-vous au guichet d'entreprises (Belgique) ou à l'administration cantonale et à votre commune (Suisse).",
+      },
+      {
+        heading: "Comment choisir le local de son institut ?",
+        paragraphs: [
+          "Un emplacement de passage, en centre-ville ou dans une galerie commerciale, attire des clientes spontanées mais coûte plus cher. Un institut « de destination », un peu à l'écart, peut fonctionner très bien si vos clientes réservent à l'avance et trouvent facilement à se garer. Dans tous les cas, votre institut est un **établissement recevant du public (ERP)** : les règles d'accessibilité et de sécurité s'appliquent, et la mairie peut vous indiquer les démarches en cas de travaux.",
+        ],
+        bullets: [
+          "Visibilité depuis la rue, possibilité de poser une enseigne et stationnement ou transports à proximité.",
+          "Arrivées d'eau et évacuations pour les cabines, ventilation (indispensable en onglerie), isolation phonique.",
+          "Agencement : accueil, au moins une cabine fermée, espace de stockage, sanitaires, zone pour le linge.",
+          "Accessibilité pour les personnes à mobilité réduite et conformité du local aux règles ERP.",
+          "Bail : destination autorisée (activité d'esthétique), durée, répartition des travaux et des charges, conditions de cession.",
+        ],
+      },
+      {
+        heading: "Comment construire sa carte des soins et fixer ses prix ?",
+        paragraphs: [
+          "Au lancement, une carte courte vaut mieux qu'une longue liste. Choisissez les soins que vous maîtrisez parfaitement et qui correspondent à votre clientèle cible, puis ajoutez des prestations au fil des demandes. Une carte resserrée limite aussi le stock de produits et simplifie la réservation en ligne.",
+          "Pour chaque soin, calculez le prix à partir de trois éléments : le **temps** réellement bloqué (installation et nettoyage compris), le **coût des produits** consommés et une part de vos **charges fixes** par heure de travail. Ajoutez ensuite votre marge. Les jeunes instituts ont tendance à sous-évaluer leurs prix pour attirer du monde : il est bien plus difficile d'augmenter ses tarifs plus tard que de démarrer au juste prix avec une offre de bienvenue limitée dans le temps.",
+        ],
+      },
+      {
+        heading: "Fiches clientes, questionnaires et photos : que dit le RGPD ?",
+        paragraphs: [
+          "Dès la première cliente, vous traitez des données personnelles : coordonnées, historique des soins, et souvent des informations de santé (allergies, grossesse, traitements, contre-indications) recueillies dans un questionnaire. Le **RGPD** s'applique, et la **CNIL** publie des recommandations pratiques pour les petites entreprises. Les données de santé sont des données sensibles : ne collectez que ce qui est utile pour réaliser le soin en sécurité.",
+          "Prévoyez dès l'ouverture un questionnaire de consultation, un consentement avant les soins à risque, une autorisation distincte pour les photos avant/après (surtout si vous voulez les publier) et une politique de confidentialité. Conservez ces documents de manière sécurisée, et non dans un classeur à l'accueil ou sur votre téléphone personnel. Ces indications sont générales et ne constituent pas un avis juridique.",
+        ],
+      },
+      {
+        heading: "Quel logiciel mettre en place avant le jour de l'ouverture ?",
+        paragraphs: [
+          "Un **logiciel d'institut de beauté** est plus facile à installer quand l'agenda est encore vide. Si vous le configurez pendant les semaines précédant l'ouverture, vous pouvez prendre des réservations dès votre communication de lancement et accueillir les premières clientes avec un dossier déjà rempli.",
+          "Avec Treatflow, vous créez vos prestations avec durée et prix, votre agenda avec colonnes par collaboratrice et par cabine, et un lien de réservation en ligne sans commission à placer sur Instagram et votre fiche Google. Les clientes remplissent leur questionnaire et signent leur consentement à l'avance via un lien, reçoivent des rappels par e-mail, et vous documentez chaque soin dans la fiche cliente, y compris par dictée vocale et avec photos avant/après. Si vous reprenez une clientèle existante, vous pouvez importer un fichier CSV. La formule Booking (agenda, réservation en ligne, rappels par e-mail, parcours clients) coûte 59 € par mois, la formule Basic sans agenda 39 € par mois, HT. Vous pouvez tester Treatflow gratuitement pendant 14 jours, sans carte bancaire.",
+        ],
+        bullets: [
+          "Prestations créées avec durée, temps de préparation et prix.",
+          "Horaires d'ouverture, cabines et planning de l'équipe renseignés.",
+          "Lien de réservation testé sur mobile et ajouté à Instagram et Google.",
+          "Questionnaire et consentements numériques prêts à l'envoi.",
+          "Rappels par e-mail activés et politique d'annulation rédigée.",
+          "Contacts existants importés, en respectant le RGPD.",
+        ],
+      },
+      {
+        heading: "Quel plan de lancement pour trouver ses premières clientes ?",
+        paragraphs: [
+          "Les premières clientes viennent rarement par hasard. Planifiez votre lancement comme un projet, avec des étapes datées.",
+        ],
+        steps: [
+          "**12 semaines avant** : bail signé, statut choisi, immatriculation lancée, devis de travaux et commandes de matériel.",
+          "**8 semaines avant** : assurances souscrites, carte des soins et tarifs finalisés, nom et identité visuelle, comptes Instagram et fiche d'établissement Google créés.",
+          "**4 semaines avant** : logiciel configuré, réservation en ligne ouverte pour les premières dates, photos du local, annonce de l'ouverture à votre entourage et dans le quartier.",
+          "**1 semaine avant** : rendez-vous tests avec des proches (soft opening), derniers réglages, stock vérifié, invitations à la soirée d'ouverture.",
+          "**Premier mois** : demandez un avis Google après chaque soin réussi, proposez le prochain rendez-vous avant le départ de la cliente, lancez une offre de parrainage simple et analysez quelles prestations se réservent le mieux.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Peut-on ouvrir un institut de beauté sans diplôme ?",
+        a: "En France, l'activité d'esthétique exige en principe un CAP esthétique ou une qualification reconnue comme équivalente. Sans diplôme, il est en général possible d'ouvrir à condition que l'activité soit placée sous le contrôle effectif et permanent d'une personne qualifiée. Vérifiez votre situation auprès de la chambre de métiers et de l'artisanat.",
+      },
+      {
+        q: "Quel statut choisir pour ouvrir un institut de beauté ?",
+        a: "Cela dépend de votre chiffre d'affaires prévu, de vos investissements, de votre situation personnelle et de vos projets d'embauche. La micro-entreprise est simple pour démarrer petit ; une EURL, une SASU ou une société à plusieurs associés peut être plus adaptée pour un local avec travaux et salariés. Demandez une simulation à un expert-comptable.",
+      },
+      {
+        q: "Combien faut-il de budget pour ouvrir un institut de beauté ?",
+        a: "Il n'y a pas de montant standard : tout dépend de la ville, du local, des travaux et du matériel. Listez chaque poste, demandez des devis, séparez dépenses ponctuelles et charges mensuelles, et prévoyez une réserve de trésorerie pour les premiers mois.",
+      },
+      {
+        q: "Faut-il un business plan pour ouvrir un institut ?",
+        a: "Oui, c'est fortement recommandé, et indispensable si vous demandez un prêt. Il décrit votre concept, votre clientèle, votre carte des soins, vos prix, votre budget de départ et vos prévisions sur au moins les premières années.",
+      },
+      {
+        q: "Quand installer le logiciel de réservation ?",
+        a: "Idéalement quatre à six semaines avant l'ouverture. Vous pouvez ainsi tester vos prestations et votre lien de réservation, préparer vos formulaires et ouvrir les premiers créneaux en même temps que votre annonce de lancement.",
+      },
+    ],
+    related: [
+      { pageKey: "beauty-salon-software", label: "Logiciel pour institut de beauté" },
+      { pageKey: "features", label: "Toutes les fonctionnalités de Treatflow" },
+      { pageKey: "pricing", label: "Tarifs de Treatflow" },
+    ],
+    sources: [
+      { label: "Guichet unique des formalités d'entreprises (INPI)", url: "https://formalites.entreprises.gouv.fr" },
+      { label: "CNIL – Commission nationale de l'informatique et des libertés", url: "https://www.cnil.fr" },
+      { label: "EUR-Lex : Règlement (UE) 2016/679 (RGPD)", url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj" },
+    ],
+  },
 ];
