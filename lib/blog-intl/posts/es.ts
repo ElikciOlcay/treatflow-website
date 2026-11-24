@@ -1741,4 +1741,186 @@ export const posts: BlogArticle[] = [
       { label: "Ley 34/2002, de servicios de la sociedad de la información (LSSI), BOE", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758" },
     ],
   },
+
+  // ─────────────────────────────────────────────────────────────
+  // Mercado ES: agenda online / programa de citas
+  // ─────────────────────────────────────────────────────────────
+  {
+    topic: "es-online-agenda-beauty-centre",
+    lang: "es",
+    slug: "agenda-online-centro-de-estetica",
+    title: "Agenda online para tu centro de estética: cómo pasar del papel a un programa de citas",
+    metaTitle: "Agenda online centro de estética: programa de citas",
+    description:
+      "Cómo pasar de la agenda de papel a una agenda online en tu centro de estética: cabinas, duraciones, turnos, lista de espera y qué pedir a un programa de citas.",
+    excerpt:
+      "La agenda de papel aguanta hasta que tienes dos cabinas, tres profesionales y clientas que cambian la cita por WhatsApp. Así organizas una agenda online que el equipo entiende desde el primer día.",
+    category: "Agenda y citas",
+    keywords: [
+      "agenda online centro de estética",
+      "programa de citas estética",
+      "agenda para centro de estética",
+      "programa de citas para centro de estética",
+      "agenda de citas por cabinas",
+      "agenda digital salón de belleza",
+      "software de citas estética",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 8,
+    answer:
+      "Una agenda online para tu centro de estética es un programa de citas en el que todo el equipo ve, desde el ordenador, la tablet o el móvil, quién atiende a quién, en qué cabina y durante cuánto tiempo. Para que funcione, configura primero servicios con su duración real, profesionales con sus turnos y cabinas como columnas, y después pasa las citas futuras del papel en una fecha fija.",
+    takeaways: [
+      "La agenda de papel falla cuando hay varias cabinas, varios profesionales o cambios de cita frecuentes: no avisa de solapes ni se ve fuera del centro.",
+      "Un buen programa de citas de estética organiza la agenda por profesional y por cabina, con duraciones que incluyen preparación y limpieza.",
+      "El cambio sale bien con un plan corto: configurar, importar clientas, pasar las citas futuras y fijar un día a partir del cual solo vale la agenda online.",
+      "Lista de espera y recordatorios por email ayudan a llenar huecos y a reducir plantones sin trabajo extra en recepción.",
+      "Con la agenda online lista, abrir las reservas online para tus clientas es un paso pequeño.",
+    ],
+    intro: [
+      "Lunes, 9:40. Una clienta llama para cambiar su sesión de láser, otra pregunta por WhatsApp si queda hueco para un relleno de pestañas el sábado y tu compañera ha apuntado a lápiz una higiene facial en la cabina 2… que ya estaba ocupada. La agenda de papel ha funcionado durante años, pero llega un momento en que cuesta más tiempo del que ahorra.",
+      "En esta guía verás qué es exactamente una agenda online para un centro de estética, qué debe tener un programa de citas para que el equipo lo use de verdad y cómo hacer el cambio desde el papel o el Excel sin perder ninguna cita por el camino. No es una guía sobre reservas online para clientas: aquí hablamos de la agenda interna, la que manda en tu día a día.",
+    ],
+    sections: [
+      {
+        heading: "¿Qué es una agenda online para un centro de estética y en qué se diferencia del papel?",
+        paragraphs: [
+          "Una agenda online es tu agenda de siempre, pero guardada en un programa al que accede todo el equipo a la vez y desde cualquier dispositivo. La diferencia no está en apuntar citas, sino en todo lo que pasa alrededor: avisos de solape, historial de la clienta, recordatorios y cambios que se ven al instante.",
+          "Muchos centros pasan antes por una fase intermedia con Excel o con un calendario genérico del móvil. Sirve para empezar, pero no conoce tus cabinas, tus servicios ni tus fichas de cliente. Esta comparación te ayuda a ver dónde estás:",
+        ],
+        table: {
+          headers: ["Criterio", "Agenda de papel", "Excel o calendario genérico", "Programa de citas de estética"],
+          rows: [
+            ["Ver la agenda fuera del centro", "No", "Sí", "Sí, en ordenador, tablet y móvil"],
+            ["Columnas por profesional y cabina", "A mano", "Limitado", "Sí"],
+            ["Cambios visibles para todo el equipo al momento", "No", "Según cómo se comparta", "Sí"],
+            ["Historial y ficha de la clienta", "En otro cuaderno", "En otra hoja", "Unido a la cita"],
+            ["Recordatorios automáticos", "No", "No", "Sí, por email"],
+            ["Reservas online de clientas", "No", "No", "Sí, sobre la misma agenda"],
+          ],
+        },
+      },
+      {
+        heading: "¿Qué debe tener un buen programa de citas de estética?",
+        paragraphs: [
+          "Antes de probar nada, ten clara la lista de lo imprescindible. Un programa de citas para estética no es un calendario cualquiera: tiene que entender que una cita ocupa a una persona, una cabina y a veces un aparato concreto.",
+        ],
+        bullets: [
+          "**Vista por día, semana y mes**, con columnas por profesional y por cabina.",
+          "**Servicios con duración propia**, para no calcular a ojo cada vez cuánto dura un tratamiento.",
+          "**Turnos, vacaciones y ausencias** del equipo, de modo que no se citen horas en las que nadie trabaja.",
+          "**Ficha de cliente unida a la cita**: historial, notas y tratamientos anteriores a un clic.",
+          "**Lista de espera** para avisar cuando se libera un hueco.",
+          "**Recordatorios automáticos por email** antes de cada cita.",
+          "**Reservas online** que escriben directamente en la misma agenda, sin duplicados.",
+          "**Acceso por roles**, para que cada persona vea y cambie solo lo que le corresponde.",
+        ],
+        callout:
+          "En Treatflow, la agenda tiene vista por día, semana y mes con columnas por profesional y cabina, y el planificador de turnos hace que la reserva online solo muestre horas dentro de los turnos de cada persona.",
+      },
+      {
+        heading: "¿Cómo organizar la agenda por cabinas, aparatos y profesionales?",
+        paragraphs: [
+          "Muchos líos de agenda en un centro de estética no vienen de las personas, sino de las cabinas. Dos profesionales libres no sirven de nada si solo hay una cabina con camilla eléctrica o un único equipo de láser. Por eso conviene pensar la agenda en dos dimensiones: quién hace el tratamiento y dónde se hace.",
+          "Una forma práctica de empezar es apuntar en una hoja qué servicio necesita qué cabina o equipo, y usar esa lista al configurar el programa:",
+        ],
+        table: {
+          headers: ["Servicio", "Cabina o recurso", "Profesionales"],
+          rows: [
+            ["Depilación láser", "Cabina con el equipo de láser", "Solo personal formado en el equipo"],
+            ["Higiene facial, peeling", "Cabina de facial", "Esteticistas"],
+            ["Presoterapia o tratamientos corporales", "Cabina corporal", "Esteticistas"],
+            ["Manicura y pedicura", "Mesa o sillón de uñas", "Técnicas de uñas"],
+            ["Extensiones y lifting de pestañas", "Camilla de pestañas", "Técnicas de pestañas"],
+          ],
+        },
+        callout:
+          "Si un aparato se comparte entre cabinas, trátalo en la planificación como un recurso más: así nunca citarás dos sesiones a la vez con el mismo equipo.",
+      },
+      {
+        heading: "¿Cómo calcular la duración real de cada servicio?",
+        paragraphs: [
+          "Las duraciones irreales son una de las causas más habituales de retrasos en cadena. Una higiene facial «de 60 minutos» que en realidad ocupa la cabina 75 minutos hace que a las 13:00 vayas media hora tarde. Antes de pasar a la agenda online, revisa cada servicio con este método:",
+        ],
+        steps: [
+          "Cronometra el tratamiento real durante una semana, desde que la clienta entra en cabina hasta que sale.",
+          "Suma la preparación y la limpieza de la cabina, y en láser o micropigmentación el tiempo de explicación y fotos.",
+          "Separa primeras visitas de visitas de seguimiento: la primera suele necesitar más tiempo para la ficha y la valoración.",
+          "Redondea a bloques fáciles de leer, por ejemplo de 15 minutos.",
+          "Revisa las duraciones al cabo de un mes con el equipo y ajusta las que siguen generando retrasos.",
+        ],
+      },
+      {
+        heading: "¿Cómo pasar de la agenda de papel a la agenda online sin perder citas?",
+        paragraphs: [
+          "El error más común es tener las dos agendas en marcha durante semanas: al final nadie sabe cuál manda. Lo que mejor funciona es un plan corto con una fecha de corte clara.",
+        ],
+        steps: [
+          "Configura servicios, duraciones, profesionales, turnos y cabinas en el programa de citas.",
+          "Importa tus clientas actuales; en Treatflow puedes subir un archivo CSV con asignación de campos y detección de duplicados.",
+          "Elige un día de corte, idealmente uno tranquilo, por ejemplo un lunes por la mañana.",
+          "Pasa todas las citas futuras del papel a la agenda online y revísalas en pareja: una persona lee y otra comprueba.",
+          "Desde el día de corte, cualquier cita nueva o cambio se apunta solo en la agenda online.",
+          "Guarda la agenda de papel unas semanas como consulta, pero sin apuntar nada nuevo en ella.",
+          "Cuando la agenda interna funcione con soltura, abre las reservas online para tus clientas.",
+        ],
+        callout:
+          "Dedica una reunión corta a enseñar la agenda al equipo y deja que cada persona cree y mueva unas cuantas citas de prueba antes del día de corte.",
+      },
+      {
+        heading: "¿Cómo llenar huecos y evitar plantones desde la agenda online?",
+        paragraphs: [
+          "Una agenda bien organizada no solo evita errores: también te ayuda a facturar más con las mismas horas. Estas son las palancas más útiles en un centro de estética:",
+        ],
+        bullets: [
+          "**Recordatorios por email** automáticos antes de cada cita, para que a nadie se le olvide.",
+          "**Lista de espera**: cuando alguien cancela, ofreces el hueco a quien estaba esperando esa franja.",
+          "**Próxima cita antes de salir**: en láser, pestañas o uñas, deja reservada la siguiente sesión al terminar la actual.",
+          "**Bloques de descanso y de formación** marcados en la agenda, para que no se citen por error.",
+          "**Revisión semanal de huecos**: mira qué franjas se quedan vacías y decide si conviene cambiar turnos o abrir esos horarios a reservas online.",
+        ],
+      },
+      {
+        heading: "¿Qué pasa con la protección de datos (RGPD) en una agenda online?",
+        paragraphs: [
+          "Tu agenda contiene datos personales: nombres, teléfonos, emails y, a menudo, pistas sobre la salud de tus clientas. Por eso el RGPD y la LOPDGDD también se aplican a la agenda. En términos generales, conviene elegir un programa con datos alojados en la UE, dar acceso solo a quien lo necesita y no escribir información de salud en el título de la cita, sino en la ficha o en la documentación del tratamiento.",
+          "Treatflow aloja los datos cifrados en servidores de la UE en Fráncfort, con copias de seguridad diarias, y los datos de tus clientas siguen siendo tuyos: puedes exportarlos en cualquier momento. Para dudas concretas sobre tus obligaciones, consulta a la Agencia Española de Protección de Datos (AEPD) o a un asesor especializado.",
+        ],
+      },
+      {
+        heading: "¿Cuánto cuesta una agenda online para un centro de estética?",
+        paragraphs: [
+          "Hay dos modelos habituales: programas con cuota mensual fija y plataformas que cobran comisión por reserva o por clienta nueva. Para un centro con clientela fija, una cuota fija suele ser más fácil de calcular.",
+          "En Treatflow, la agenda de citas con reservas online, lista de espera y recordatorios por email está en el plan **Booking por 59 € al mes** (53 € al mes con pago anual), IVA no incluido y sin comisión por reserva. El plan Basic, por 39 € al mes, incluye fichas de cliente, formularios y documentación, pero no la agenda. Puedes probarlo **14 días gratis, sin tarjeta de crédito**.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Puedo usar la agenda online desde el móvil?",
+        a: "Sí. Un programa de citas en el navegador funciona en ordenador, tablet y móvil sin instalar nada. Así puedes consultar o mover una cita aunque no estés en el centro.",
+      },
+      {
+        q: "¿Cuánto tiempo se tarda en pasar de la agenda de papel a la agenda online?",
+        a: "No hay una cifra fija: depende del número de servicios, profesionales y citas futuras. Con un plan con fecha de corte, el trabajo se concentra en configurar, importar clientas y pasar las citas futuras; a partir de ese día se apunta solo en la agenda online.",
+      },
+      {
+        q: "¿Mis compañeras pueden ver solo su propia agenda?",
+        a: "Con roles y permisos puedes decidir qué ve y qué puede cambiar cada persona del equipo. Es útil también por protección de datos: cada una accede solo a lo que necesita para su trabajo.",
+      },
+      {
+        q: "¿Puedo conectar la agenda online con Google Calendar?",
+        a: "Treatflow tiene integración con Google Calendar, además de Zapier y asistentes de IA. Están incluidas en el plan Booking.",
+      },
+      {
+        q: "¿Qué diferencia hay entre agenda online y reservas online?",
+        a: "La agenda online es tu herramienta interna para organizar citas, cabinas y equipo. Las reservas online son la página donde tus clientas eligen hora por sí mismas. Lo ideal es que ambas trabajen sobre la misma agenda, para que nunca haya citas dobles.",
+      },
+    ],
+    related: [
+      { pageKey: "appointment-calendar", label: "Agenda de citas por profesional y cabina" },
+      { pageKey: "online-booking", label: "Reservas online sin comisiones" },
+      { pageKey: "client-records", label: "Fichas de cliente unidas a cada cita" },
+    ],
+  },
 ];
