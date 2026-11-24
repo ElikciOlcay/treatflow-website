@@ -1755,4 +1755,167 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  {
+    topic: "win-back-clients",
+    lang: "pl",
+    slug: "jak-odzyskac-klientki-salon-kosmetyczny",
+    title: "Jak odzyskać klientki w salonie kosmetycznym: segmenty, terminy i gotowe wiadomości",
+    metaTitle: "Jak odzyskać klientki w salonie kosmetycznym",
+    description:
+      "Jak odzyskać klientki, które przestały przychodzić do salonu: kiedy klientka jest nieaktywna, gotowe wiadomości, oferty bez rabatów i zasady RODO dla e-maili.",
+    excerpt:
+      "W każdej kartotece są klientki, które po prostu się zgubiły. Dzięki jasnym segmentom, osobistej wiadomości we właściwym momencie i prostemu linkowi do rezerwacji wiele z nich wraca, bez dużych rabatów.",
+    category: "Marketing i lojalność",
+    keywords: [
+      "jak odzyskać klientki salon kosmetyczny",
+      "odzyskiwanie klientów salon",
+      "reaktywacja klientów salon kosmetyczny",
+      "nieaktywne klientki",
+      "wiadomość do stałych klientek przykład",
+      "program do salonu kosmetycznego",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 8,
+    answer:
+      "Aby odzyskać klientki, najpierw ustal dla każdego zabiegu, kiedy klientka jest naprawdę nieaktywna, a potem podziel nieaktywne klientki na kilka grup według tego, jak długo ich nie było i ile były warte dla salonu. Każdej grupie wyślij krótką, osobistą wiadomość z bezpośrednim linkiem do rezerwacji, przypomnij się raz i zamiast dużego rabatu zaproponuj wartość dodaną. Wiadomości marketingowe wysyłaj tylko do osób, które wyraziły zgodę, zgodnie z RODO i Prawem komunikacji elektronicznej.",
+    takeaways: [
+      "Nieaktywność zależy od zabiegu: klientka od rzęs, która opuściła dwa uzupełnienia, zniknęła dużo wcześniej niż osoba przychodząca na zabieg raz w roku.",
+      "Dziel klientki według czasu nieobecności i wartości; dawna stała klientka zasługuje na telefon, a nie masowy e-mail.",
+      "Krótkie, osobiste wiadomości z jednym linkiem do rezerwacji działają lepiej niż długie newslettery i wysokie rabaty.",
+      "Dwa lub trzy kontakty na kampanię wystarczą; potem daj klientce spokój.",
+      "Automatyzacje, które zatrzymują się, gdy klientka umówi wizytę, zamieniają odzyskiwanie klientek w stały nawyk salonu.",
+    ],
+    intro: [
+      "Posortuj swoją kartotekę według daty ostatniej wizyty. Większość salonów znajduje dziesiątki, a czasem setki osób, które przychodziły regularnie, a potem po cichu zniknęły. Rzadko z powodu złego doświadczenia. Pojawiło się więcej obowiązków, nawyk się urwał, koleżanka poleciła salon bliżej pracy albo po prostu nikt nie przypomniał o kolejnej wizycie.",
+      "Te klientki znają już Twój salon, ceny i efekty Twojej pracy, więc odzyskanie ich jest zwykle łatwiejsze niż przekonanie obcej osoby do pierwszej rezerwacji. W tym poradniku dowiesz się, jak określić nieaktywność dla swoich zabiegów, jak podzielić klientki na grupy, jak pisać wiadomości, które nie wyglądają jak spam, jakie oferty nie psują cen, jakie zasady RODO obowiązują i jak zautomatyzować cały proces. To praktyczne wskazówki, a nie porada prawna.",
+    ],
+    sections: [
+      {
+        heading: "Kiedy klientka jest nieaktywna?",
+        paragraphs: [
+          "Nie ma jednej liczby dla wszystkich. Klientka jest nieaktywna, gdy wyraźnie wypadła ze swojego rytmu. Przy uzupełnianiu rzęs co dwa, trzy tygodnie osiem tygodni ciszy to sygnał ostrzegawczy. Przy zabiegu na twarz co cztery do sześciu tygodni trzy miesiące to dużo. W depilacji laserowej prawdziwym sygnałem jest seria przerwana w połowie, a przy corocznej konsultacji skóry dwanaście miesięcy to coś zupełnie normalnego.",
+          "Zapisz typowy odstęp między wizytami dla najważniejszych zabiegów i uznaj klientkę za nieaktywną po mniej więcej dwu- lub trzykrotności tego odstępu. Tak powstają grupy, które naprawdę coś mówią:",
+        ],
+        table: {
+          headers: ["Grupa", "Typowa definicja", "Najlepsze podejście"],
+          rows: [
+            ["Spóźniona", "Opuściła jedną lub dwie zwykłe wizyty", "Przyjazne przypomnienie z linkiem do rezerwacji"],
+            ["Uśpiona", "Około 3–6 miesięcy bez wizyty", "Osobista wiadomość i mała wartość dodana"],
+            ["Utracona", "Ponad 12 miesięcy nieobecności", "Krótka wiadomość bez presji, potem odpuść"],
+            ["Dawna VIP", "Przychodziła często lub dużo wydawała, a teraz jej nie ma", "Osobisty telefon od właścicielki lub jej kosmetolożki"],
+            ["Przerwana seria", "Przerwała depilację laserową, peelingi lub makijaż permanentny", "Wyjaśnij, dlaczego warto dokończyć, i zaproponuj wygodny termin"],
+          ],
+        },
+      },
+      {
+        heading: "Dlaczego klientki przestają przychodzić i dlaczego warto je odzyskać?",
+        paragraphs: [
+          "Znając powód, łatwiej wybierzesz właściwą wiadomość. Najczęstsze przyczyny są zwyczajne: przeprowadzka, nowa praca, dziecko, mniejszy budżet, ulubiona kosmetolożka, która odeszła z salonu, albo zwykłe zapomnienie o kolejnej rezerwacji. Czasem było też drobne rozczarowanie, o którym klientka nigdy nie powiedziała.",
+          "Odzyskiwanie klientek się opłaca, bo te osoby już Ci ufają. Nie muszą Cię szukać w Google ani porównywać opinii; masz ich historię zabiegów, preferencje i dane kontaktowe. Dobrze zaplanowana wiadomość może wypełnić wolne okienka w przyszłym tygodniu, a reklama skierowana do nowych klientek zwykle działa wolniej i kosztuje więcej. Nawet jeśli klientka nie wróci, jej odpowiedź często mówi Ci coś ważnego o Twojej usłudze.",
+        ],
+        callout:
+          "Zadaj klientkom, które przestały przychodzić, jedno proste pytanie: „Czy mogłyśmy zrobić coś lepiej?”. Odpowiedzi bywają cenniejsze niż same rezerwacje.",
+      },
+      {
+        heading: "Jak znaleźć nieaktywne klientki w kartotece?",
+        paragraphs: [
+          "Odzyskiwanie działa tylko wtedy, gdy dane są wiarygodne. Jeśli wizyty są rozproszone między zeszytem, telefonem i komunikatorami, nie wiesz, kogo brakuje. Elektroniczna karta klienta z pełną historią wizyt sprawia, że listę przygotujesz w kilka minut.",
+        ],
+        steps: [
+          "Przefiltruj klientki według daty ostatniej wizyty, np. starszej niż 90 dni, i zanotuj, jakie zabiegi zwykle rezerwowały.",
+          "Usuń z listy osoby bez zgody marketingowej, bez poprawnego adresu e-mail oraz te, które mają niezałatwioną reklamację.",
+          "Pozostałe podziel na grupy z tabeli powyżej i osobno oznacz dawne stałe klientki oraz przerwane serie zabiegów.",
+          "Sprawdź notatki w karcie klienta: klientka, która się przeprowadziła lub była niezadowolona, potrzebuje innej wiadomości niż ta, która po prostu zapomniała.",
+          "Zapisz filtr, aby powtarzać tę samą akcję co miesiąc lub co kwartał.",
+        ],
+      },
+      {
+        heading: "Co napisać, żeby klientka wróciła? Gotowe wiadomości na e-mail i telefon",
+        paragraphs: [
+          "Dobra wiadomość jest krótka, ciepła i konkretna. Użyj imienia klientki, wspomnij zabieg, który zwykle rezerwowała, i podaj jeden bezpośredni link do strony rezerwacji. Unikaj wyrzutów („Nie było Cię wieki!”) i dbaj o to, żeby wiadomość nie brzmiała automatycznie, nawet jeśli wysyła się sama.",
+          "**E-mail do klientek spóźnionych lub uśpionych**",
+          "Temat: „[Imię], czas na kolejny [zabieg]?” Treść: „Cześć [imię], minęło już trochę czasu od Twojego ostatniego [zabiegu] u nas i chciałyśmy zapytać, co u Ciebie. Jeśli masz ochotę wrócić, tutaj znajdziesz wszystkie wolne terminy: [link do rezerwacji]. A jeśli ostatnio coś nie było tak, jak trzeba, po prostu odpisz na tę wiadomość. Naprawdę chcemy to wiedzieć. Pozdrawiamy, [imię] z [nazwa salonu]”",
+          "**Przypomnienie po około tygodniu, jeśli nie ma odpowiedzi**",
+          "„Cześć [imię], krótka wiadomość: w [dni] mamy jeszcze kilka wolnych terminów na Twój [zabieg]. Zarezerwujesz tutaj w minutę: [link do rezerwacji]. Jeśli teraz Ci nie pasuje, nie ma problemu.”",
+          "**Rozmowa telefoniczna z dawną stałą klientką**",
+          "„Dzień dobry, [imię], mówi [imię] z [nazwa salonu]. Dawno się nie widziałyśmy i chciałam po prostu zapytać, jak się masz. Czy wszystko w porządku i czy możemy coś dla Ciebie zrobić?” Najpierw słuchaj; wolny termin zaproponuj tylko wtedy, gdy rozmowa naturalnie do tego prowadzi.",
+        ],
+      },
+      {
+        heading: "Jakie oferty działają bez obniżania cen?",
+        paragraphs: [
+          "Rabat 30 % kusi, ale uczy klientki czekania na kolejną promocję i przyciąga osoby, które znikają, gdy tylko promocja się kończy. Wartość dodana chroni Twoje ceny i nadal daje powód, by umówić się teraz:",
+        ],
+        bullets: [
+          "Bezpłatna analiza skóry lub krótka konsultacja przed zabiegiem, żeby zaktualizować plan pielęgnacji.",
+          "Małe ulepszenie: dłuższy masaż, dodatkowa maska lub drobny dodatek do zabiegu.",
+          "Próbka lub podróżna wersja kosmetyku do pielęgnacji pozabiegowej z Twojej oferty.",
+          "Pierwszeństwo przy popularnych terminach, np. wieczorem lub w sobotę, przez ograniczony czas.",
+          "Przy przerwanych seriach: jasne wyjaśnienie, co daje dokończenie zabiegów, i wygodny termin.",
+          "Jeśli dajesz rabat, niech będzie mały, osobisty, jednorazowy i ograniczony w czasie, np. jako kod rabatowy do rezerwacji online.",
+        ],
+      },
+      {
+        heading: "Kiedy i jak często kontaktować się z nieaktywnymi klientkami?",
+        paragraphs: [
+          "Moment jest równie ważny jak treść. Do spóźnionych klientek odezwij się wkrótce po tym, jak wypadły z rytmu, gdy nawyk jest jeszcze świeży. Przy uśpionych i utraconych klientkach dobrze sprawdza się stała akcja raz w miesiącu lub raz na kwartał. Unikaj najbardziej zajętych tygodni; odzyskiwanie klientek najlepiej wypełnia spokojniejsze okresy.",
+          "Kampania powinna być krótka: jedna wiadomość, jedno przypomnienie po około tygodniu i telefon do dawnych stałych klientek. Potem przestań. Ciągłe przypomnienia są natarczywe i zwiększają liczbę wypisów. Następnie zmierz efekty, żeby kolejna akcja była lepsza:",
+        ],
+        bullets: [
+          "Do ilu klientek z każdej grupy się odezwałaś?",
+          "Ile z nich umówiło się w ciągu 30 dni i na jakie zabiegi?",
+          "Ile odpowiedziało, wypisało się lub podało powód nieobecności?",
+          "Który temat wiadomości, oferta lub kanał zadziałał najlepiej?",
+        ],
+      },
+      {
+        heading: "Co RODO i Prawo komunikacji elektronicznej oznaczają dla takich wiadomości?",
+        paragraphs: [
+          "Wiadomość, która zachęca do powrotu i wizyty, to zazwyczaj marketing bezpośredni. Obowiązuje wtedy RODO, a przy e-mailach i SMS-ach także Prawo komunikacji elektronicznej. W Polsce na wysyłanie informacji handlowych drogą elektroniczną co do zasady potrzebujesz wcześniejszej, dobrowolnej zgody klientki, którą można w każdej chwili wycofać. Dlatego zgodę marketingową warto zbierać osobno, np. w formularzu przy pierwszej wizycie. Wytyczne dotyczące danych osobowych publikuje Urząd Ochrony Danych Osobowych (UODO).",
+        ],
+        bullets: [
+          "Wysyłaj wiadomości marketingowe tylko klientkom, które wyraziły zgodę, i przechowuj potwierdzenie tej zgody.",
+          "W każdym e-mailu podaj czytelny link do wypisania się oraz dane kontaktowe salonu.",
+          "Wycofanie zgody uwzględnij od razu i nie wysyłaj już tej osobie promocji.",
+          "W klauzuli informacyjnej opisz, w jakim celu kontaktujesz się z klientkami.",
+          "Nie wspominaj w wiadomościach marketingowych o danych zdrowotnych ani szczegółach zabiegów.",
+        ],
+      },
+      {
+        heading: "Jak program do salonu kosmetycznego automatyzuje odzyskiwanie klientek?",
+        paragraphs: [
+          "Największym problemem nie jest treść wiadomości, tylko systematyczność. W zajętym tygodniu nikt nie pamięta, żeby ją wysłać. Dzięki automatyzacjom dla klientów w Treatflow budujesz kilkuetapową sekwencję e-maili, która startuje, gdy klientka dłużej nie przychodzi, np. po 60–90 dniach, czeka, sprawdza, czy umówiła nową wizytę, i dopiero wtedy wysyła przypomnienie. Jeśli klientka się umówi, sekwencja się zatrzymuje, więc nikt nie dostaje przypomnienia po rezerwacji.",
+          "Karta klienta pokazuje pełną historię zabiegów, notatki i datę ostatniej wizyty, dzięki czemu rozmowy z dawnymi stałymi klientkami są naprawdę osobiste. Twój link do rezerwacji online bez prowizji prowadzi klientkę prosto do wolnych terminów, a przypomnienia e-mail pomagają, by powracająca klientka rzeczywiście przyszła. Automatyzacje, przypomnienia, kody rabatowe i rezerwacje online są w planie Booking za 59 € miesięcznie (Basic 39 €, oba netto + VAT). Możesz testować Treatflow 14 dni za darmo, bez podawania karty.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Po jakim czasie odezwać się do klientki, która przestała przychodzić?",
+        a: "To zależy od zabiegu. Dobra zasada to dwu- lub trzykrotność zwykłego odstępu: ok. sześć do ośmiu tygodni przy uzupełnianiu rzęs, ok. trzy miesiące przy regularnych zabiegach na twarz. Wiele salonów wysyła ogólną wiadomość po 60–90 dniach bez wizyty.",
+      },
+      {
+        q: "Czy dawać rabat, żeby odzyskać klientki?",
+        a: "Nie na początek. Wartość dodana, np. bezpłatna konsultacja, ulepszenie zabiegu lub próbka kosmetyku, lepiej chroni Twoje ceny. Jeśli dajesz rabat, niech będzie mały, osobisty, jednorazowy i ograniczony w czasie.",
+      },
+      {
+        q: "Ile razy mogę kontaktować się z nieaktywną klientką?",
+        a: "Dwa lub trzy razy w ramach jednej kampanii: e-mail, przypomnienie po około tygodniu i osobisty telefon do dawnych stałych klientek. Jeśli nie ma reakcji, odczekaj kilka miesięcy przed kolejną próbą.",
+      },
+      {
+        q: "Czy potrzebuję zgody na takie e-maile?",
+        a: "Tak, w Polsce na informacje handlowe wysyłane e-mailem lub SMS-em co do zasady potrzebujesz wcześniejszej zgody klientki. Przypomnienie o już umówionej wizycie to część usługi, ale zachęta do powrotu jest marketingiem. Zbieraj zgodę osobno i umożliwiaj łatwe wypisanie się.",
+      },
+      {
+        q: "Co zrobić, jeśli klientka mówi, że odeszła, bo była niezadowolona?",
+        a: "Podziękuj za szczerość, przeproś za jej doświadczenie i zapytaj, co mogłoby to naprawić. Zapisz uwagi w karcie klienta i omów je z zespołem. Nawet jeśli nie wróci, jej odpowiedź pomoże Ci zatrzymać inne klientki.",
+      },
+    ],
+    related: [
+      { pageKey: "customer-workflows", label: "Automatyzacje do odzyskiwania klientek" },
+      { pageKey: "client-records", label: "Kartoteka klientów z pełną historią" },
+      { pageKey: "messaging", label: "Przypomnienia e-mail o wizytach" },
+    ],
+  },
 ];

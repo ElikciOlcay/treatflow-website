@@ -1535,4 +1535,173 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  {
+    topic: "win-back-clients",
+    lang: "en",
+    slug: "win-back-salon-clients",
+    title: "How to Win Back Lapsed Salon Clients: Segments, Timing and Message Templates",
+    metaTitle: "How to Win Back Lapsed Salon Clients (With Templates)",
+    description:
+      "Win back lapsed salon clients: who counts as inactive, when to reach out, email and phone templates, offers without discounting and the GDPR rules to follow.",
+    excerpt:
+      "Every client list holds people who simply drifted away. With clear segments, a personal message at the right moment and an easy booking link, many of them come back, without heavy discounts.",
+    category: "Client retention",
+    keywords: [
+      "win back salon clients",
+      "lapsed clients salon",
+      "client reactivation email salon",
+      "win back email template beauty salon",
+      "how to get old clients back salon",
+      "inactive clients beauty business",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 8,
+    answer:
+      "To win back lapsed salon clients, first define “inactive” by each treatment's normal rhythm, then sort lapsed clients into a few segments by how long they have been away and how valuable they were. Send each segment a short, personal message with a direct booking link, follow up once, and offer added value rather than deep discounts. Only contact clients you are allowed to email under GDPR and stop as soon as someone rebooks or opts out.",
+    takeaways: [
+      "“Inactive” depends on the treatment: a lash client who skips two infills is lapsed long before a once-a-year skin client.",
+      "Segment by time away and past value; a former regular deserves a phone call, not a mass email.",
+      "Short, personal messages with one clear booking link beat long newsletters and big discounts.",
+      "Two or three contact attempts per campaign are enough; after that, give people space.",
+      "Automated workflows that stop when the client rebooks turn win-back from a one-off campaign into a routine.",
+    ],
+    intro: [
+      "Open your client list and filter by last visit. Most salons find dozens, sometimes hundreds, of people who came regularly and then quietly disappeared. Rarely is it because of a bad experience. Life got busy, a habit broke, a friend recommended someone closer to work, or nobody simply reminded them.",
+      "These clients already know your salon, your prices and your work, so bringing them back is usually easier than convincing a stranger to book for the first time. This guide shows how to define inactivity for your treatments, segment lapsed clients, write messages that do not sound like spam, choose offers that do not damage your prices, respect data protection rules and automate the whole process. It is practical guidance, not legal advice.",
+    ],
+    sections: [
+      {
+        heading: "When does a client count as inactive?",
+        paragraphs: [
+          "There is no universal number. A client is inactive when she has clearly missed her usual rhythm. For lash infills every two to three weeks, eight weeks of silence is a warning sign. For a facial every four to six weeks, three months is significant. For laser hair removal, a course that stops halfway is the real signal, while for a yearly skin check twelve months is completely normal.",
+          "Start by writing down the typical interval for your main treatments, then define inactive as roughly two to three times that interval. This gives you segments that actually mean something:",
+        ],
+        table: {
+          headers: ["Segment", "Typical definition", "Best approach"],
+          rows: [
+            ["Overdue", "Missed one or two usual appointments", "Friendly reminder with booking link"],
+            ["Lapsed", "Around 3–6 months without a visit", "Personal message, small added-value incentive"],
+            ["Lost", "More than 12 months away", "Short, no-pressure check-in, then let go"],
+            ["Former VIP", "Used to visit often or spend a lot, now gone", "Personal phone call from the owner or their usual therapist"],
+            ["Unfinished course", "Stopped a laser, peel or PMU series midway", "Explain why finishing matters and offer a convenient slot"],
+          ],
+        },
+      },
+      {
+        heading: "Why do clients stop coming, and why is it worth winning them back?",
+        paragraphs: [
+          "Understanding the reason helps you choose the right message. The most common reasons are ordinary: a move, a new job, a baby, a tighter budget, a favourite therapist who left, or simply forgetting to rebook after the last visit. Sometimes there was a small disappointment that the client never mentioned.",
+          "Win-back is worth the effort because these people already trust you. They do not need to discover you on Google or compare reviews; you have their history, their preferences and their contact details. A well-timed message can fill quiet slots next week, whereas advertising for new clients usually takes longer and costs more. And even when a client does not return, her reply often tells you something useful about your service.",
+        ],
+        callout:
+          "Ask lapsed clients a simple question: “Is there anything we could have done better?” The answers are often more valuable than the bookings.",
+      },
+      {
+        heading: "How do you find lapsed clients in your client records?",
+        paragraphs: [
+          "Win-back only works if your client data is reliable. If appointments are scattered across a paper diary, a phone and messages, you will not know who is missing. A digital client record with the full visit history makes the list a matter of minutes.",
+        ],
+        steps: [
+          "Filter your clients by last appointment date, for example older than 90 days, and note the treatments they usually booked.",
+          "Remove anyone who has asked not to be contacted, has no valid email or has an open complaint you have not resolved.",
+          "Sort the rest into the segments above and flag former regulars and unfinished courses separately.",
+          "Check notes on the client record: a client who moved away or was unhappy needs a different message from one who simply forgot.",
+          "Save the filter or segment so you can repeat the same run every month or quarter.",
+        ],
+      },
+      {
+        heading: "What should a win-back message say? Templates for email and phone",
+        paragraphs: [
+          "Good win-back messages are short, warm and specific. Use the client's name, mention the treatment she used to book and give one direct link to your booking page. Avoid guilt (“We haven't seen you in ages!”) and avoid sounding automated even when the message is.",
+          "**Email for overdue or lapsed clients**",
+          "Subject: “[First name], time for your next [treatment]?” Text: “Hi [first name], it's been a while since your last [treatment] with us and we wanted to check in. If you'd like to come back, you can see all free appointments here: [booking link]. And if anything wasn't quite right last time, just reply to this email. We'd genuinely like to know. Warm wishes, [name] at [salon name]”",
+          "**Follow-up about a week later, if there is no reaction**",
+          "“Hi [first name], just a quick note: we still have a few free slots on [days] for your [treatment]. Book here in one minute: [booking link]. If now isn't the right time, no problem at all.”",
+          "**Phone script for former VIPs**",
+          "“Hi [first name], it's [name] from [salon name]. We noticed we haven't seen you for a while and I just wanted to ask how you are. Is everything okay, and is there anything we can do for you?” Listen first; mention a free appointment only if the conversation invites it.",
+        ],
+      },
+      {
+        heading: "Which incentives work without devaluing your prices?",
+        paragraphs: [
+          "A big percentage discount is tempting, but it teaches clients to wait for the next promotion and attracts people who leave again as soon as it ends. Added value protects your prices and still gives a reason to book now:",
+        ],
+        bullets: [
+          "A free skin analysis or consultation before the treatment to update her plan.",
+          "A small upgrade: a longer massage, an extra mask or a treatment add-on.",
+          "A product sample or travel-size aftercare product from your retail range.",
+          "Priority access to popular evening or Saturday slots for a limited time.",
+          "For unfinished courses: a clear explanation of what finishing achieves, plus a convenient appointment.",
+          "If you do use a discount, make it small, personal, single-use and time-limited, for example as a discount code for online booking.",
+        ],
+      },
+      {
+        heading: "When and how often should you contact lapsed clients?",
+        paragraphs: [
+          "Timing matters as much as the words. Reach overdue clients soon after they miss their usual rhythm, while the habit is still fresh. For lapsed and lost clients, a regular monthly or quarterly run works well. Avoid your busiest weeks; win-back is most useful for filling quiet periods.",
+          "Keep the campaign short: one message, one follow-up about a week later, and for former regulars a phone call. After that, stop. Repeated reminders feel pushy and increase unsubscribes. Then measure what happened so the next run is better:",
+        ],
+        bullets: [
+          "How many clients in each segment were contacted?",
+          "How many booked within 30 days, and which treatments?",
+          "How many replied, unsubscribed or gave a reason for leaving?",
+          "Which subject line, offer or channel worked best?",
+        ],
+      },
+      {
+        heading: "What does GDPR mean for win-back emails?",
+        paragraphs: [
+          "A win-back email is usually direct marketing, so the GDPR (in the UK, UK GDPR and PECR) and the national rules on electronic marketing apply. In many EU countries and in the UK you may email existing clients about similar services you offer if you collected the email address during a sale or booking, told them they could object, and include an easy opt-out in every message. This “soft opt-in” is not available everywhere in the same form, so check the rules in your country, and when in doubt, ask for consent.",
+        ],
+        bullets: [
+          "Only email clients who have not objected or unsubscribed, and honour opt-outs immediately.",
+          "Include a clear unsubscribe link and your salon's contact details in every email.",
+          "Mention in your privacy notice that you may contact clients about similar treatments.",
+          "Never mention health information or sensitive treatment details in marketing emails.",
+          "Delete or anonymise clients you have no reason to keep, in line with your retention policy.",
+        ],
+      },
+      {
+        heading: "How can salon software automate win-back?",
+        paragraphs: [
+          "The biggest problem with win-back is not the message but consistency. On a busy week, nobody remembers to send it. In Treatflow, client workflows let you build a multi-step email sequence that starts when a client has not visited for a while, for example after 60 to 90 days, waits, checks whether she has rebooked and only then sends a follow-up. If she books, the sequence stops, so nobody gets a reminder after already booking.",
+          "Client records show the full treatment history, notes and last visit, so you can personalise phone calls to former regulars. Your commission-free online booking link takes clients straight to free slots, and email appointment reminders help make sure the returning client actually shows up. Workflows, reminders, discount codes and online booking are part of the Booking plan at €59 per month (Basic €39, both excl. VAT). You can try Treatflow free for 14 days, without a credit card.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "After how long should I contact a lapsed salon client?",
+        a: "It depends on the treatment. A good rule of thumb is two to three times the usual interval: about six to eight weeks for lash infills, around three months for regular facials. Many salons send a general win-back message after 60 to 90 days without a visit.",
+      },
+      {
+        q: "Should I offer a discount to win back clients?",
+        a: "Not as a first step. Added value such as a free consultation, an upgrade or a product sample protects your prices better. If you use a discount, keep it small, personal, single-use and time-limited.",
+      },
+      {
+        q: "How many times should I contact a lapsed client?",
+        a: "Two or three times per campaign is enough: one email, one follow-up about a week later and, for former regulars, a personal call. If there is no reaction, wait several months before the next attempt.",
+      },
+      {
+        q: "Do I need consent to send win-back emails?",
+        a: "It depends on your country. In many places you may email existing clients about similar services without separate consent, provided you offered an opt-out when collecting the address and include one in every email. In some countries prior consent is required. Check local rules and never email clients who have opted out.",
+      },
+      {
+        q: "What if a client tells me she left because she was unhappy?",
+        a: "Thank her for being honest, apologise for her experience and ask what would make it right. Note the feedback on her client record and share it with the team. Even if she does not return, her answer helps you keep other clients.",
+      },
+    ],
+    related: [
+      { pageKey: "customer-workflows", label: "Automated win-back workflows" },
+      { pageKey: "client-records", label: "Client records with full visit history" },
+      { pageKey: "messaging", label: "Email appointment reminders" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Directive 2002/58/EC (ePrivacy Directive)",
+        url: "https://eur-lex.europa.eu/eli/dir/2002/58/oj",
+      },
+    ],
+  },
 ];

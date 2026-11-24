@@ -17,7 +17,8 @@ export type BlogTopicId =
   | "cancellation-policy-salon"
   | "pl-booking-without-commission"
   | "google-reviews-salon"
-  | "it-beauty-centre-management-software";
+  | "it-beauty-centre-management-software"
+  | "win-back-clients";
 
 export type BlogSection = {
   /** H2 des Abschnitts. Gern als Frage formuliert (wird von KI-Tools gern zitiert). */

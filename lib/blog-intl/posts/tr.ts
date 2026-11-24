@@ -1868,4 +1868,167 @@ export const posts: BlogArticle[] = [
       { pageKey: "studio-website", label: "Güzellik salonu web sitesi" },
     ],
   },
+  {
+    topic: "win-back-clients",
+    lang: "tr",
+    slug: "kaybedilen-musterileri-geri-kazanma-guzellik-salonu",
+    title: "Güzellik Salonunda Kaybedilen Müşterileri Geri Kazanma: Segmentler, Zamanlama ve Hazır Mesajlar",
+    metaTitle: "Güzellik Salonu: Kaybedilen Müşterileri Geri Kazanma",
+    description:
+      "Güzellik salonunda gelmeyen müşterileri geri kazanma: kim pasif sayılır, ne zaman yazılır, hazır e-posta ve telefon metinleri, indirimsiz teklifler ve KVKK.",
+    excerpt:
+      "Her müşteri listesinde bir süredir uğramayan insanlar vardır. Doğru segmentler, doğru zamanda kişisel bir mesaj ve kolay bir randevu linkiyle çoğu, büyük indirimler olmadan geri döner.",
+    category: "Müşteri sadakati",
+    keywords: [
+      "müşteri geri kazanma",
+      "kaybedilen müşterileri geri kazanma",
+      "güzellik salonu müşteri geri kazanım",
+      "pasif müşteri kampanyası",
+      "güzellik salonu müşteri mesajı örnekleri",
+      "güzellik salonu müşteri takibi",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 8,
+    answer:
+      "Kaybedilen müşterileri geri kazanmak için önce her işlemin normal sıklığına göre “pasif” müşteriyi tanımlayın, ardından müşterileri ne kadar süredir gelmediklerine ve geçmişteki değerlerine göre birkaç gruba ayırın. Her gruba doğrudan randevu linki içeren kısa ve kişisel bir mesaj gönderin, bir kez hatırlatın ve yüksek indirim yerine ek değer sunun. Ticari ileti göndermeden önce KVKK ve 6563 sayılı Kanun kapsamındaki onay kurallarına uyun.",
+    takeaways: [
+      "“Pasif” müşteri işleme göre değişir: iki dolumu kaçıran kirpik müşterisi, yılda bir gelen cilt bakımı müşterisinden çok daha önce kaybolmuş sayılır.",
+      "Müşterileri gelmedikleri süreye ve geçmiş harcamalarına göre ayırın; eski bir sadık müşteri toplu e-posta değil, telefon hak eder.",
+      "Tek bir randevu linki olan kısa ve kişisel mesajlar, uzun bültenlerden ve büyük indirimlerden daha iyi çalışır.",
+      "Kampanya başına iki üç temas yeterlidir; sonrasında müşteriye alan tanıyın.",
+      "Müşteri yeniden randevu aldığında duran otomasyonlar, geri kazanımı tek seferlik bir kampanyadan düzenli bir rutine dönüştürür.",
+    ],
+    intro: [
+      "Müşteri listenizi son ziyaret tarihine göre sıralayın. Çoğu salon, düzenli gelip sonra sessizce kaybolan onlarca, hatta yüzlerce müşteri bulur. Bunun nedeni nadiren kötü bir deneyimdir. Hayat yoğunlaşmıştır, alışkanlık bozulmuştur, bir arkadaş işe daha yakın bir salon önermiştir ya da kimse hatırlatmamıştır.",
+      "Bu müşteriler salonunuzu, fiyatlarınızı ve işinizi zaten tanıyor; bu yüzden onları geri kazanmak, hiç tanımayan birini ilk randevuya ikna etmekten genellikle daha kolaydır. Bu rehberde işlemlerinize göre pasif müşteriyi nasıl tanımlayacağınızı, müşterileri nasıl gruplayacağınızı, spam gibi durmayan mesajları, fiyatlarınızı zedelemeyen teklifleri, KVKK ve ticari ileti kurallarını ve tüm süreci nasıl otomatikleştireceğinizi bulacaksınız. Bu yazı pratik bir rehberdir, hukuki danışmanlık değildir.",
+    ],
+    sections: [
+      {
+        heading: "Bir müşteri ne zaman pasif sayılır?",
+        paragraphs: [
+          "Herkes için geçerli tek bir süre yoktur. Müşteri, alıştığı randevu aralığını açıkça kaçırdığında pasif sayılır. İki üç haftada bir kirpik dolumu yaptıran biri için sekiz haftalık sessizlik bir uyarıdır. Dört altı haftada bir cilt bakımına gelen biri için üç ay önemlidir. Lazer epilasyonda asıl sinyal yarıda bırakılan seanslardır; yıllık bir cilt kontrolünde ise on iki ay tamamen normaldir.",
+          "Önce ana işlemleriniz için tipik aralığı yazın, sonra pasifliği bu aralığın yaklaşık iki üç katı olarak tanımlayın. Böylece gerçekten anlamlı gruplar elde edersiniz:",
+        ],
+        table: {
+          headers: ["Grup", "Tipik tanım", "En iyi yaklaşım"],
+          rows: [
+            ["Gecikmiş", "Bir iki olağan randevuyu kaçırmış", "Randevu linkli samimi bir hatırlatma"],
+            ["Uzaklaşmış", "Yaklaşık 3–6 aydır gelmiyor", "Kişisel mesaj ve küçük bir ek değer"],
+            ["Kaybedilmiş", "12 aydan uzun süredir gelmiyor", "Baskısız kısa bir hal hatır sorma"],
+            ["Eski VIP", "Eskiden sık gelen ya da çok harcayan, artık yok", "Salon sahibinden veya uzmanından kişisel telefon"],
+            ["Yarım kalan paket", "Lazer, peeling veya kalıcı makyaj seansını yarıda bırakmış", "Tamamlamanın önemini anlatın, uygun bir saat önerin"],
+          ],
+        },
+      },
+      {
+        heading: "Müşteriler neden gelmeyi bırakır ve onları geri kazanmak neden değerlidir?",
+        paragraphs: [
+          "Nedeni anlamak doğru mesajı seçmenizi sağlar. En sık nedenler sıradandır: taşınma, yeni iş, bebek, daralan bütçe, sevdiği uzmanın salondan ayrılması ya da son ziyaretten sonra yeni randevu almayı unutmak. Bazen de müşterinin hiç dile getirmediği küçük bir hayal kırıklığı vardır.",
+          "Geri kazanım çabaya değer, çünkü bu kişiler size zaten güveniyor. Sizi Google'da keşfetmelerine ya da yorumları karşılaştırmalarına gerek yok; geçmişleri, tercihleri ve iletişim bilgileri sizde. Doğru zamanda gönderilen bir mesaj gelecek haftanın boş saatlerini doldurabilir; yeni müşteri reklamları ise genellikle daha uzun sürer ve daha pahalıya gelir. Müşteri geri dönmese bile verdiği cevap çoğu zaman hizmetiniz hakkında değerli bir şey söyler.",
+        ],
+        callout:
+          "Uzun süredir gelmeyen müşterilere basit bir soru sorun: “Daha iyi yapabileceğimiz bir şey var mıydı?” Cevaplar çoğu zaman randevulardan bile değerlidir.",
+      },
+      {
+        heading: "Müşteri takibinde pasif müşterileri nasıl bulursunuz?",
+        paragraphs: [
+          "Geri kazanım ancak müşteri verileriniz güvenilirse işe yarar. Randevular bir deftere, telefona ve mesajlara dağılmışsa kimin eksik olduğunu bilemezsiniz. Tüm ziyaret geçmişini tutan dijital bir müşteri kartı, listeyi birkaç dakikalık bir iş hâline getirir.",
+        ],
+        steps: [
+          "Müşterileri son randevu tarihine göre filtreleyin, örneğin 90 günden eski olanlar, ve genellikle hangi işlemleri aldıklarını not edin.",
+          "İletişim istemediğini söyleyenleri, geçerli e-postası olmayanları ve çözülmemiş şikâyeti olanları listeden çıkarın.",
+          "Kalanları yukarıdaki gruplara ayırın; eski sadık müşterileri ve yarım kalan paketleri ayrıca işaretleyin.",
+          "Müşteri kartındaki notlara bakın: taşınan veya memnun kalmayan bir müşteriye, sadece unutan birinden farklı bir mesaj gerekir.",
+          "Filtreyi kaydedin, böylece aynı çalışmayı her ay veya her çeyrekte tekrarlayabilirsiniz.",
+        ],
+      },
+      {
+        heading: "Geri kazanım mesajında ne yazmalı? E-posta ve telefon için hazır metinler",
+        paragraphs: [
+          "İyi bir geri kazanım mesajı kısa, sıcak ve somuttur. Müşterinin adını kullanın, eskiden aldığı işlemi anın ve randevu sayfanıza giden tek bir link verin. Suçlayıcı cümlelerden (“Sizi aylardır görmedik!”) kaçının; mesaj otomatik gitse bile otomatik gibi durmasın.",
+          "**Gecikmiş veya uzaklaşmış müşteriler için e-posta**",
+          "Konu: “[Ad] Hanım, sıradaki [işlem] için zaman geldi mi?” Metin: “Merhaba [Ad] Hanım, son [işlem] randevunuzun üzerinden biraz zaman geçti, nasıl olduğunuzu sormak istedik. Tekrar gelmek isterseniz tüm boş saatleri buradan görebilirsiniz: [randevu linki]. Geçen sefer bir şey eksik kaldıysa bu e-postayı yanıtlamanız yeterli, gerçekten bilmek isteriz. Sevgiler, [salon adı]'ndan [isim]”",
+          "**Cevap gelmezse yaklaşık bir hafta sonra hatırlatma**",
+          "“Merhaba [Ad] Hanım, kısa bir not: [günler] için [işlem] randevusuna hâlâ birkaç boş saatimiz var. Bir dakikada buradan alabilirsiniz: [randevu linki]. Şu an uygun değilse hiç sorun değil.”",
+          "**Eski VIP müşteriler için telefon metni**",
+          "“Merhaba [Ad] Hanım, ben [salon adı]'ndan [isim]. Bir süredir göremedik, nasılsınız diye sormak istedim. Her şey yolunda mı, sizin için yapabileceğimiz bir şey var mı?” Önce dinleyin; boş bir randevudan ancak sohbet uygunsa bahsedin.",
+        ],
+      },
+      {
+        heading: "Fiyatlarınızı düşürmeden hangi teklifler işe yarar?",
+        paragraphs: [
+          "Yüksek yüzdeli bir indirim cazip görünür, ama müşteriyi bir sonraki kampanyayı beklemeye alıştırır ve kampanya biter bitmez yine giden kişileri çeker. Ek değer fiyatınızı korur ve yine de şimdi randevu almak için bir sebep verir:",
+        ],
+        bullets: [
+          "İşlemden önce ücretsiz cilt analizi veya kısa danışmanlık ile bakım planını güncellemek.",
+          "Küçük bir yükseltme: daha uzun masaj, ekstra maske veya işleme küçük bir ek.",
+          "Satış ürünlerinizden bir numune ya da seyahat boyu bakım ürünü.",
+          "Sınırlı bir süre için akşam veya cumartesi gibi popüler saatlerde öncelik.",
+          "Yarım kalan paketler için: seansları tamamlamanın ne sağladığını net anlatmak ve uygun bir saat önermek.",
+          "İndirim kullanacaksanız küçük, kişiye özel, tek kullanımlık ve süreli tutun; örneğin online randevuda geçerli bir indirim kodu olarak.",
+        ],
+      },
+      {
+        heading: "Pasif müşterilere ne zaman ve kaç kez ulaşmalısınız?",
+        paragraphs: [
+          "Zamanlama, kelimeler kadar önemlidir. Gecikmiş müşterilere, alışkanlık henüz tazeyken, olağan aralığı kaçırdıktan kısa süre sonra ulaşın. Uzaklaşmış ve kaybedilmiş müşteriler için aylık ya da üç ayda bir düzenli bir çalışma iyi sonuç verir. En yoğun haftalarınızdan kaçının; geri kazanım en çok sakin dönemleri doldurmak için işe yarar.",
+          "Kampanyayı kısa tutun: bir mesaj, yaklaşık bir hafta sonra bir hatırlatma ve eski sadık müşteriler için bir telefon. Sonra durun. Sürekli tekrar eden mesajlar rahatsız eder ve abonelikten çıkanları artırır. Ardından bir sonraki çalışmayı iyileştirmek için sonucu ölçün:",
+        ],
+        bullets: [
+          "Her gruptan kaç müşteriye ulaşıldı?",
+          "Kaçı 30 gün içinde randevu aldı ve hangi işlemler için?",
+          "Kaçı cevap verdi, iletiden çıktı ya da gitme nedenini söyledi?",
+          "Hangi konu satırı, teklif veya kanal en iyi sonucu verdi?",
+        ],
+      },
+      {
+        heading: "KVKK ve ticari ileti kuralları geri kazanım mesajları için ne anlama gelir?",
+        paragraphs: [
+          "Geri kazanım e-postası genellikle ticari elektronik iletidir. Müşteri verilerini işlerken 6698 sayılı Kişisel Verilerin Korunması Kanunu'na (KVKK), ticari ileti gönderirken ise 6563 sayılı Elektronik Ticaretin Düzenlenmesi Hakkında Kanun'a ve ilgili yönetmeliğe uymanız gerekir. Genel kural olarak tanıtım amaçlı e-posta veya SMS için müşterinin önceden onayı gerekir ve ticari ileti gönderen işletmelerin İleti Yönetim Sistemi'ni (İYS) dikkate alması beklenir. Ayrıntılar için güncel mevzuatı ve gerekirse bir uzmanı kontrol edin.",
+        ],
+        bullets: [
+          "Tanıtım mesajlarını yalnızca ticari ileti onayı veren müşterilere gönderin ve onayı kaydedin.",
+          "Her iletide kolay bir ret (abonelikten çıkma) imkânı ve salonunuzun iletişim bilgilerini verin.",
+          "Ret talebini hemen uygulayın ve o müşteriye tekrar tanıtım iletisi göndermeyin.",
+          "Aydınlatma metninizde müşterilerle hangi amaçla iletişime geçtiğinizi açıkça belirtin.",
+          "Tanıtım e-postalarında sağlık bilgisi veya hassas işlem detayları paylaşmayın.",
+        ],
+      },
+      {
+        heading: "Güzellik salonu programı geri kazanımı nasıl otomatikleştirir?",
+        paragraphs: [
+          "Geri kazanımdaki en büyük sorun mesaj değil, süreklilik. Yoğun bir haftada kimse göndermeyi hatırlamaz. Treatflow'daki müşteri otomasyonlarıyla, bir müşteri bir süredir gelmediğinde, örneğin 60–90 gün sonra başlayan, bekleyen, müşterinin yeniden randevu alıp almadığını kontrol eden ve ancak almadıysa hatırlatma gönderen çok adımlı bir e-posta akışı kurabilirsiniz. Müşteri randevu alırsa akış durur; böylece kimse randevu aldıktan sonra hatırlatma almaz.",
+          "Müşteri kartı tüm işlem geçmişini, notları ve son ziyareti gösterir; eski sadık müşterilere yapacağınız aramaları kişiselleştirebilirsiniz. Komisyonsuz online randevu linkiniz müşteriyi doğrudan boş saatlere götürür, e-posta hatırlatmaları da geri dönen müşterinin randevusuna gerçekten gelmesine yardımcı olur. Otomasyonlar, hatırlatmalar, indirim kodları ve online randevu Booking paketindedir: ilk 100 işletmeye özel lansman fiyatıyla aylık ₺1.990 (KDV hariç). Basic paket aylık ₺1.490'dır. Treatflow'u 14 gün ücretsiz ve kredi kartı gerekmeden deneyebilirsiniz.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Gelmeyen bir müşteriye ne kadar süre sonra yazmalıyım?",
+        a: "İşleme bağlıdır. Pratik bir kural, olağan aralığın iki üç katıdır: kirpik dolumunda yaklaşık altı sekiz hafta, düzenli cilt bakımında yaklaşık üç ay. Birçok salon 60–90 gün ziyaret olmadığında genel bir geri kazanım mesajı gönderir.",
+      },
+      {
+        q: "Müşteriyi geri kazanmak için indirim vermeli miyim?",
+        a: "İlk adım olarak hayır. Ücretsiz danışmanlık, küçük bir yükseltme veya ürün numunesi gibi ek değerler fiyatınızı daha iyi korur. İndirim kullanacaksanız küçük, kişiye özel, tek kullanımlık ve süreli olsun.",
+      },
+      {
+        q: "Pasif bir müşteriye kaç kez ulaşmalıyım?",
+        a: "Kampanya başına iki üç temas yeterlidir: bir e-posta, yaklaşık bir hafta sonra bir hatırlatma ve eski sadık müşteriler için kişisel bir telefon. Cevap gelmezse bir sonraki denemeden önce birkaç ay bekleyin.",
+      },
+      {
+        q: "Geri kazanım e-postası için müşterinin onayı gerekir mi?",
+        a: "Türkiye'de tanıtım amaçlı ticari elektronik iletiler için genel kural olarak önceden onay gerekir. Onayı kaydedin, her iletide ret imkânı sunun ve ret bildiren müşterilere tekrar tanıtım iletisi göndermeyin. Güncel kurallar için mevzuatı kontrol edin.",
+      },
+      {
+        q: "Müşteri memnun kalmadığı için gelmediğini söylerse ne yapmalıyım?",
+        a: "Dürüstlüğü için teşekkür edin, yaşadığı deneyim için özür dileyin ve durumu nasıl düzeltebileceğinizi sorun. Geri bildirimi müşteri kartına not edin ve ekibinizle paylaşın. Geri dönmese bile cevabı, diğer müşterilerinizi tutmanıza yardımcı olur.",
+      },
+    ],
+    related: [
+      { pageKey: "customer-workflows", label: "Otomatik müşteri geri kazanım akışları" },
+      { pageKey: "client-records", label: "Ziyaret geçmişiyle müşteri takip programı" },
+      { pageKey: "messaging", label: "E-posta ile randevu hatırlatmaları" },
+    ],
+  },
 ];

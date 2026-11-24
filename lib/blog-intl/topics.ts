@@ -71,6 +71,12 @@ export const blogTopics: Record<
     pageKeys: ["beauty-salon-software", "features", "pricing"],
     markets: ["it"],
   },
+  "win-back-clients": {
+    deSlug: "kunden-reaktivieren-kosmetikstudio",
+    image: "/images/blog/kunden-reaktivieren-kosmetikstudio.jpg",
+    // Gutscheine gibt es nur in DACH; statt "vouchers" die Kunden-Workflows (Reaktivierung).
+    pageKeys: ["messaging", "client-records", "customer-workflows"],
+  },
 };
 
 export const blogTopicOrder: BlogTopicId[] = [
@@ -86,4 +92,5 @@ export const blogTopicOrder: BlogTopicId[] = [
   "pl-booking-without-commission",
   "google-reviews-salon",
   "it-beauty-centre-management-software",
+  "win-back-clients",
 ];

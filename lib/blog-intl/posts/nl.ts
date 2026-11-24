@@ -1588,4 +1588,173 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  {
+    topic: "win-back-clients",
+    lang: "nl",
+    slug: "klanten-terugwinnen-schoonheidssalon",
+    title: "Klanten terugwinnen in je schoonheidssalon: segmenten, timing en voorbeeldteksten",
+    metaTitle: "Klanten terugwinnen in je salon: zo doe je dat",
+    description:
+      "Inactieve klanten terugwinnen in je salon: wanneer iemand inactief is, wanneer je contact opneemt, voorbeeldmails, aanbiedingen zonder korting en de AVG-regels.",
+    excerpt:
+      "In elk klantenbestand zitten mensen die gewoon uit beeld zijn geraakt. Met duidelijke segmenten, een persoonlijk bericht op het juiste moment en een makkelijke boekingslink komen veel van hen terug, zonder grote kortingen.",
+    category: "Marketing & klanten",
+    keywords: [
+      "klanten terugwinnen salon",
+      "inactieve klanten reactiveren",
+      "oude klanten terughalen schoonheidssalon",
+      "klanten reactiveren mail voorbeeld",
+      "klantenbinding schoonheidssalon",
+      "win-back campagne salon",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 8,
+    answer:
+      "Klanten terugwinnen begint met bepalen wanneer iemand per behandeling echt inactief is. Daarna deel je die klanten in een paar groepen in, op basis van hoe lang ze weg zijn en wat ze vroeger boekten. Elke groep krijgt een kort, persoonlijk bericht met een directe boekingslink, één herinnering en een extraatje in plaats van een flinke korting. Mail alleen klanten die je volgens de AVG en de Telecommunicatiewet mag benaderen en stop zodra iemand boekt of zich afmeldt.",
+    takeaways: [
+      "Wanneer iemand inactief is, hangt af van de behandeling: een wimperklant die twee keer opvullen overslaat, is eerder weg dan een klant die één keer per jaar komt.",
+      "Deel in op tijd weg en omzet: een vroegere vaste klant verdient een telefoontje, geen massamail.",
+      "Korte, persoonlijke berichten met één duidelijke boekingslink werken beter dan lange nieuwsbrieven en hoge kortingen.",
+      "Twee of drie contactmomenten per campagne zijn genoeg; daarna geef je mensen ruimte.",
+      "Automatische workflows die stoppen zodra de klant opnieuw boekt, maken van terugwinnen een vaste routine.",
+    ],
+    intro: [
+      "Sorteer je klantenbestand eens op laatste bezoek. De meeste salons vinden tientallen, soms honderden mensen die regelmatig kwamen en daarna stilletjes verdwenen. Meestal niet door een slechte ervaring. Het werd druk, een gewoonte verwaterde, een vriendin raadde een salon dichter bij het werk aan, of niemand herinnerde ze er simpelweg aan.",
+      "Deze klanten kennen je salon, je prijzen en je werk al. Ze terughalen is daarom meestal makkelijker dan een onbekende overtuigen om voor het eerst te boeken. In deze gids lees je hoe je inactiviteit per behandeling bepaalt, klanten indeelt, berichten schrijft die niet als spam voelen, aanbiedingen kiest die je prijzen niet beschadigen, de privacyregels respecteert en het hele proces automatiseert. Dit is praktisch advies, geen juridisch advies.",
+    ],
+    sections: [
+      {
+        heading: "Wanneer is een klant inactief?",
+        paragraphs: [
+          "Er is geen vaste termijn die voor iedereen geldt. Een klant is inactief als ze haar gebruikelijke ritme duidelijk heeft gemist. Bij wimpers opvullen om de twee à drie weken is acht weken stilte een signaal. Bij een gezichtsbehandeling om de vier tot zes weken is drie maanden veel. Bij laserontharing is een kuur die halverwege stopt het echte signaal, terwijl twaalf maanden bij een jaarlijkse huidcontrole heel normaal is.",
+          "Schrijf eerst het gebruikelijke interval van je belangrijkste behandelingen op en noem een klant inactief bij ongeveer twee tot drie keer dat interval. Zo krijg je groepen die echt iets zeggen:",
+        ],
+        table: {
+          headers: ["Groep", "Typische definitie", "Beste aanpak"],
+          rows: [
+            ["Te laat", "Eén of twee gebruikelijke afspraken gemist", "Vriendelijke herinnering met boekingslink"],
+            ["Weggezakt", "Ongeveer 3–6 maanden niet geweest", "Persoonlijk bericht met een klein extraatje"],
+            ["Verloren", "Langer dan 12 maanden weg", "Kort, vrijblijvend berichtje en daarna loslaten"],
+            ["Vroegere vaste klant", "Kwam vaak of besteedde veel, nu weg", "Persoonlijk telefoontje van jou of haar vaste specialist"],
+            ["Onafgemaakte kuur", "Gestopt halverwege laser, peeling of PMU", "Uitleggen waarom afmaken loont en een handig tijdstip aanbieden"],
+          ],
+        },
+      },
+      {
+        heading: "Waarom haken klanten af, en waarom loont het om ze terug te winnen?",
+        paragraphs: [
+          "Als je de reden kent, kies je makkelijker het juiste bericht. De meest voorkomende redenen zijn alledaags: verhuizing, nieuwe baan, een baby, een krapper budget, een favoriete specialist die vertrok of gewoon vergeten om na de laatste behandeling opnieuw te boeken. Soms speelde er een kleine teleurstelling die de klant nooit heeft uitgesproken.",
+          "Terugwinnen is de moeite waard, omdat deze mensen je al vertrouwen. Ze hoeven je niet via Google te vinden of reviews te vergelijken; jij hebt hun historie, voorkeuren en contactgegevens. Een goed getimed bericht kan lege plekken in je agenda van volgende week vullen, terwijl adverteren voor nieuwe klanten meestal langer duurt en meer kost. En ook als een klant niet terugkomt, vertelt haar antwoord je vaak iets nuttigs over je service.",
+        ],
+        callout:
+          "Stel weggebleven klanten één simpele vraag: “Is er iets wat we beter hadden kunnen doen?” De antwoorden zijn vaak waardevoller dan de boekingen.",
+      },
+      {
+        heading: "Hoe vind je inactieve klanten in je klantenbeheer?",
+        paragraphs: [
+          "Terugwinnen werkt alleen als je klantgegevens kloppen. Als afspraken verspreid staan over een papieren agenda, je telefoon en losse berichten, weet je niet wie er ontbreekt. Een digitaal klantdossier met de volledige bezoekhistorie maakt de lijst een kwestie van minuten.",
+        ],
+        steps: [
+          "Filter je klanten op datum van de laatste afspraak, bijvoorbeeld ouder dan 90 dagen, en noteer welke behandelingen ze meestal boekten.",
+          "Haal iedereen eruit die heeft gevraagd om geen berichten, geen geldig e-mailadres heeft of een openstaande klacht heeft.",
+          "Deel de rest in de groepen hierboven in en markeer vroegere vaste klanten en onafgemaakte kuren apart.",
+          "Bekijk de notities in het klantdossier: een klant die verhuisd of ontevreden is, heeft een ander bericht nodig dan iemand die het gewoon vergat.",
+          "Sla het filter op, zodat je dezelfde ronde elke maand of elk kwartaal kunt herhalen.",
+        ],
+      },
+      {
+        heading: "Wat zet je in een terugwinbericht? Voorbeeldteksten voor mail en telefoon",
+        paragraphs: [
+          "Een goed terugwinbericht is kort, warm en concreet. Gebruik de naam van de klant, noem de behandeling die ze vroeger boekte en geef één directe link naar je boekingspagina. Vermijd verwijtende zinnen (“We hebben je al eeuwen niet gezien!”) en zorg dat het niet automatisch klinkt, ook als het automatisch verstuurd wordt.",
+          "**Mail voor klanten die te laat of weggezakt zijn**",
+          "Onderwerp: “[Voornaam], tijd voor je volgende [behandeling]?” Tekst: “Hoi [voornaam], je laatste [behandeling] bij ons is alweer even geleden en we wilden graag horen hoe het met je gaat. Wil je weer langskomen? Hier zie je alle vrije tijden: [boekingslink]. En als er de vorige keer iets niet helemaal goed was, beantwoord dan gewoon deze mail. Dat horen we echt graag. Hartelijke groet, [naam] van [salonnaam]”",
+          "**Herinnering na ongeveer een week, als er geen reactie is**",
+          "“Hoi [voornaam], even een kort berichtje: op [dagen] hebben we nog een paar plekjes vrij voor je [behandeling]. Boeken kan hier in één minuut: [boekingslink]. Komt het nu niet uit? Helemaal prima.”",
+          "**Belscript voor vroegere vaste klanten**",
+          "“Hoi [voornaam], met [naam] van [salonnaam]. We zagen dat je al een tijdje niet bent geweest en ik wilde even vragen hoe het met je gaat. Is alles goed, en kunnen we iets voor je doen?” Luister eerst; noem een vrije afspraak pas als het gesprek daar ruimte voor geeft.",
+        ],
+      },
+      {
+        heading: "Welke aanbiedingen werken zonder je prijzen te verlagen?",
+        paragraphs: [
+          "Een hoog kortingspercentage is verleidelijk, maar je leert klanten zo om op de volgende actie te wachten en je trekt mensen aan die weer verdwijnen zodra de actie stopt. Een extraatje beschermt je prijzen en geeft toch een reden om nu te boeken:",
+        ],
+        bullets: [
+          "Een gratis huidanalyse of kort adviesgesprek voor de behandeling om haar plan bij te werken.",
+          "Een kleine upgrade: een langere massage, een extra masker of een kleine toevoeging aan de behandeling.",
+          "Een productsample of een reisformaat van je nazorgproducten.",
+          "Voorrang op populaire tijden zoals de avond of zaterdag, voor een beperkte periode.",
+          "Bij onafgemaakte kuren: duidelijk uitleggen wat afmaken oplevert en een handig tijdstip aanbieden.",
+          "Gebruik je toch korting, houd die dan klein, persoonlijk, eenmalig en tijdelijk, bijvoorbeeld als kortingscode voor online boeken.",
+        ],
+      },
+      {
+        heading: "Wanneer en hoe vaak neem je contact op met inactieve klanten?",
+        paragraphs: [
+          "Timing is net zo belangrijk als de woorden. Benader klanten die te laat zijn kort nadat ze hun ritme hebben gemist, als de gewoonte nog vers is. Voor weggezakte en verloren klanten werkt een vaste ronde per maand of kwartaal goed. Vermijd je drukste weken; terugwinnen is vooral handig om rustige periodes te vullen.",
+          "Houd de campagne kort: één bericht, één herinnering na ongeveer een week en voor vroegere vaste klanten een telefoontje. Daarna stop je. Steeds weer herinneren voelt opdringerig en zorgt voor meer afmeldingen. Meet daarna wat het opleverde, zodat de volgende ronde beter wordt:",
+        ],
+        bullets: [
+          "Hoeveel klanten per groep heb je benaderd?",
+          "Hoeveel boekten binnen 30 dagen, en welke behandelingen?",
+          "Hoeveel reageerden, meldden zich af of noemden een reden om weg te blijven?",
+          "Welke onderwerpregel, welk aanbod of welk kanaal werkte het best?",
+        ],
+      },
+      {
+        heading: "Wat betekenen de AVG en de Telecommunicatiewet voor terugwinmails?",
+        paragraphs: [
+          "Een terugwinmail is meestal direct marketing. Dan gelden de AVG en de regels voor elektronische reclame in de Telecommunicatiewet. In Nederland mag je bestaande klanten in de regel mailen over vergelijkbare behandelingen als je het e-mailadres hebt gekregen bij een afspraak of aankoop, de klant toen de kans gaf om bezwaar te maken en in elke mail een makkelijke afmeldmogelijkheid opneemt. Twijfel je, vraag dan toestemming. De Autoriteit Persoonsgegevens en de ACM geven op hun websites meer uitleg.",
+        ],
+        bullets: [
+          "Mail alleen klanten die geen bezwaar hebben gemaakt of zich hebben afgemeld, en verwerk afmeldingen direct.",
+          "Zet in elke mail een duidelijke afmeldlink en de contactgegevens van je salon.",
+          "Vermeld in je privacyverklaring dat je klanten kunt benaderen over vergelijkbare behandelingen.",
+          "Noem nooit gezondheidsgegevens of gevoelige behandeldetails in marketingmails.",
+          "Verwijder of anonimiseer klanten die je niet meer hoeft te bewaren, volgens je bewaartermijnen.",
+        ],
+      },
+      {
+        heading: "Hoe automatiseer je klanten terugwinnen met salonsoftware?",
+        paragraphs: [
+          "Het grootste probleem bij terugwinnen is niet de tekst, maar het volhouden. In een drukke week denkt niemand eraan. Met klantworkflows in Treatflow bouw je een e-mailreeks in meerdere stappen die start als een klant een tijd niet is geweest, bijvoorbeeld na 60 tot 90 dagen, daarna wacht, controleert of ze opnieuw heeft geboekt en pas dan een herinnering stuurt. Boekt ze, dan stopt de reeks, zodat niemand nog een herinnering krijgt nadat ze al geboekt heeft.",
+          "Het klantdossier toont de volledige behandelhistorie, notities en het laatste bezoek, zodat je telefoontjes naar vroegere vaste klanten persoonlijk kunt maken. Je boekingslink zonder commissie brengt klanten direct naar vrije tijden en herinneringen per e-mail helpen om de terugkerende klant ook echt te laten komen. Workflows, herinneringen, kortingscodes en online boeken zitten in het Booking-pakket van €59 per maand (Basic €39, beide excl. btw). Je kunt Treatflow 14 dagen gratis proberen, zonder creditcard.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Na hoeveel tijd neem ik contact op met een weggebleven klant?",
+        a: "Dat hangt af van de behandeling. Een handige vuistregel is twee tot drie keer het gebruikelijke interval: ongeveer zes tot acht weken bij wimpers opvullen, rond drie maanden bij een vaste gezichtsbehandeling. Veel salons sturen na 60 tot 90 dagen zonder bezoek een algemeen terugwinbericht.",
+      },
+      {
+        q: "Moet ik korting geven om klanten terug te winnen?",
+        a: "Niet als eerste stap. Een extraatje zoals een gratis adviesgesprek, een upgrade of een productsample beschermt je prijzen beter. Gebruik je korting, houd die dan klein, persoonlijk, eenmalig en tijdelijk.",
+      },
+      {
+        q: "Hoe vaak benader ik een inactieve klant?",
+        a: "Twee of drie keer per campagne is genoeg: één mail, één herinnering na ongeveer een week en voor vroegere vaste klanten een persoonlijk telefoontje. Komt er geen reactie, wacht dan een paar maanden tot de volgende poging.",
+      },
+      {
+        q: "Heb ik toestemming nodig voor terugwinmails?",
+        a: "Bij bestaande klanten mag je in Nederland in de regel mailen over vergelijkbare behandelingen zonder aparte toestemming, als je bij het verzamelen van het adres een afmeldmogelijkheid gaf en die in elke mail opneemt. Voor nieuwe contacten of andere producten heb je toestemming nodig. Mail nooit klanten die zich hebben afgemeld.",
+      },
+      {
+        q: "Wat als een klant zegt dat ze ontevreden was?",
+        a: "Bedank haar voor haar eerlijkheid, bied excuses aan voor haar ervaring en vraag wat het goed zou maken. Noteer de feedback in haar klantdossier en bespreek die met je team. Ook als ze niet terugkomt, helpt haar antwoord je om andere klanten te houden.",
+      },
+    ],
+    related: [
+      { pageKey: "customer-workflows", label: "Klantworkflows om klanten terug te halen" },
+      { pageKey: "client-records", label: "Klantenbeheer met volledige historie" },
+      { pageKey: "messaging", label: "Afspraakherinneringen per e-mail" },
+    ],
+    sources: [
+      {
+        label: "EUR-Lex: Richtlijn 2002/58/EG (e-privacyrichtlijn)",
+        url: "https://eur-lex.europa.eu/eli/dir/2002/58/oj",
+      },
+    ],
+  },
 ];

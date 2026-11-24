@@ -1574,4 +1574,171 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  {
+    topic: "win-back-clients",
+    lang: "es",
+    slug: "recuperar-clientes-centro-de-estetica",
+    title: "Cómo recuperar clientas perdidas en tu centro de estética: segmentos, momentos y mensajes",
+    metaTitle: "Cómo recuperar clientas en tu centro de estética",
+    description:
+      "Cómo recuperar clientas que ya no vienen a tu centro de estética: cuándo está inactiva, plantillas de email y llamada, ofertas sin descuentos y reglas RGPD.",
+    excerpt:
+      "En toda base de datos hay clientas que simplemente dejaron de venir. Con segmentos claros, un mensaje personal en el momento adecuado y un enlace de reserva sencillo, muchas vuelven, sin grandes descuentos.",
+    category: "Marketing y fidelización",
+    keywords: [
+      "recuperar clientes centro de estética",
+      "recuperar clientas perdidas",
+      "reactivar clientes inactivos",
+      "mensaje para recuperar clientes",
+      "fidelizar clientes centro de estética",
+      "software para centro de estética",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 8,
+    answer:
+      "Para recuperar clientas perdidas, define primero cuándo una clienta está realmente inactiva según el ritmo habitual de cada tratamiento y después divídelas en pocos grupos según cuánto tiempo llevan sin venir y cuánto valían para tu centro. Envía a cada grupo un mensaje corto y personal con un enlace directo a la reserva, haz un solo recordatorio y ofrece valor añadido en lugar de grandes descuentos. Escribe solo a quien puedas contactar según el RGPD y la LSSI, y para en cuanto reserve o se dé de baja.",
+    takeaways: [
+      "“Inactiva” depende del tratamiento: una clienta de extensiones de pestañas que se salta dos rellenos se ha ido mucho antes que quien viene una vez al año.",
+      "Segmenta por tiempo de ausencia y valor: una antigua clienta habitual merece una llamada, no un email masivo.",
+      "Mensajes cortos y personales con un único enlace de reserva funcionan mejor que newsletters largas y descuentos altos.",
+      "Dos o tres contactos por campaña son suficientes; después, deja espacio.",
+      "Los flujos automáticos que se detienen cuando la clienta reserva convierten la recuperación en una rutina.",
+    ],
+    intro: [
+      "Ordena tus fichas de cliente por fecha de última visita. Casi todos los centros de estética encuentran decenas, a veces cientos, de personas que venían con regularidad y luego desaparecieron sin decir nada. Pocas veces por una mala experiencia: la vida se complicó, se rompió la costumbre, una amiga recomendó un centro más cerca del trabajo o, simplemente, nadie se lo recordó.",
+      "Estas clientas ya conocen tu centro, tus precios y tu trabajo, así que recuperarlas suele ser más fácil que convencer a una desconocida de reservar por primera vez. En esta guía verás cómo definir la inactividad según tus tratamientos, cómo segmentar, cómo escribir mensajes que no parezcan spam, qué ofertas no devalúan tus precios, qué dicen el RGPD y la LSSI y cómo automatizar todo el proceso. Es una guía práctica, no asesoramiento legal.",
+    ],
+    sections: [
+      {
+        heading: "¿Cuándo se considera inactiva a una clienta?",
+        paragraphs: [
+          "No hay una cifra válida para todos. Una clienta está inactiva cuando se ha salido claramente de su ritmo habitual. Con rellenos de pestañas cada dos o tres semanas, ocho semanas de silencio son una señal de alarma. Con un facial cada cuatro a seis semanas, tres meses es mucho. En la depilación láser, la verdadera señal es un bono de sesiones abandonado a la mitad, mientras que en una revisión anual de la piel doce meses son lo normal.",
+          "Apunta el intervalo típico de tus tratamientos principales y considera inactiva a una clienta a partir de unas dos o tres veces ese intervalo. Así obtienes grupos que realmente significan algo:",
+        ],
+        table: {
+          headers: ["Grupo", "Definición típica", "Mejor enfoque"],
+          rows: [
+            ["Con retraso", "Se ha saltado una o dos citas habituales", "Recordatorio amable con enlace de reserva"],
+            ["Dormida", "Unos 3–6 meses sin venir", "Mensaje personal con un pequeño valor añadido"],
+            ["Perdida", "Más de 12 meses sin venir", "Mensaje corto y sin presión, y después dejarla ir"],
+            ["Antigua VIP", "Venía mucho o gastaba mucho y ya no viene", "Llamada personal de la dueña o de su esteticista"],
+            ["Bono a medias", "Dejó a medias láser, peelings o micropigmentación", "Explicar por qué conviene terminar y proponer un horario cómodo"],
+          ],
+        },
+      },
+      {
+        heading: "¿Por qué dejan de venir las clientas y por qué merece la pena recuperarlas?",
+        paragraphs: [
+          "Entender el motivo te ayuda a elegir el mensaje correcto. Las razones más comunes son cotidianas: una mudanza, un trabajo nuevo, un bebé, un presupuesto más ajustado, la esteticista favorita que se fue del centro o simplemente olvidar reservar después de la última cita. A veces hubo una pequeña decepción que la clienta nunca comentó.",
+          "Recuperar clientas merece la pena porque ya confían en ti. No tienen que descubrirte en Google ni comparar reseñas: tienes su historial, sus preferencias y sus datos de contacto. Un mensaje bien enviado puede llenar huecos de la agenda de la semana que viene, mientras que la publicidad para captar clientas nuevas suele tardar más y costar más. Y aunque la clienta no vuelva, su respuesta muchas veces te dice algo útil sobre tu servicio.",
+        ],
+        callout:
+          "Haz a las clientas que ya no vienen una pregunta sencilla: “¿Hay algo que podríamos haber hecho mejor?”. Las respuestas a menudo valen más que las reservas.",
+      },
+      {
+        heading: "¿Cómo encuentras a las clientas inactivas en tus fichas de cliente?",
+        paragraphs: [
+          "La recuperación solo funciona si tus datos son fiables. Si las citas están repartidas entre una agenda de papel, el móvil y mensajes sueltos, no sabrás quién falta. Una ficha de cliente digital con todo el historial de visitas convierte la lista en cuestión de minutos.",
+        ],
+        steps: [
+          "Filtra a tus clientas por fecha de la última cita, por ejemplo hace más de 90 días, y apunta qué tratamientos reservaban normalmente.",
+          "Quita a quien haya pedido no recibir mensajes, a quien no tenga un email válido y a quien tenga una queja sin resolver.",
+          "Divide al resto en los grupos de la tabla y marca aparte a las antiguas clientas habituales y los bonos a medias.",
+          "Revisa las notas de la ficha: una clienta que se mudó o quedó descontenta necesita otro mensaje que una que simplemente se olvidó.",
+          "Guarda el filtro para repetir la misma acción cada mes o cada trimestre.",
+        ],
+      },
+      {
+        heading: "¿Qué escribir para que una clienta vuelva? Plantillas de email y llamada",
+        paragraphs: [
+          "Un buen mensaje de recuperación es corto, cercano y concreto. Usa el nombre de la clienta, menciona el tratamiento que solía reservar y pon un solo enlace directo a tu página de reservas. Evita los reproches (“¡Hace siglos que no te vemos!”) y procura que no suene automático, aunque lo sea.",
+          "**Email para clientas con retraso o dormidas**",
+          "Asunto: “[Nombre], ¿te apetece tu próximo [tratamiento]?” Texto: “Hola, [nombre]: ha pasado un tiempo desde tu último [tratamiento] con nosotras y queríamos saber qué tal estás. Si te apetece volver, aquí tienes todos los huecos libres: [enlace de reserva]. Y si la última vez algo no fue como esperabas, responde a este email sin problema: de verdad queremos saberlo. Un abrazo, [nombre] de [nombre del centro]”",
+          "**Recordatorio a la semana, si no hay respuesta**",
+          "“Hola, [nombre]: solo un mensaje rápido. El [días] todavía tenemos algunos huecos para tu [tratamiento]. Reserva aquí en un minuto: [enlace de reserva]. Si ahora no es buen momento, no pasa nada.”",
+          "**Guion de llamada para antiguas clientas VIP**",
+          "“Hola, [nombre], soy [nombre] de [nombre del centro]. Hace tiempo que no te vemos y solo quería preguntarte qué tal estás. ¿Va todo bien? ¿Podemos hacer algo por ti?” Primero escucha; menciona un hueco libre solo si la conversación lo permite.",
+        ],
+      },
+      {
+        heading: "¿Qué ofertas funcionan sin devaluar tus precios?",
+        paragraphs: [
+          "Un descuento del 30 % es tentador, pero acostumbra a las clientas a esperar la próxima promoción y atrae a personas que desaparecen en cuanto termina. El valor añadido protege tus precios y aun así da un motivo para reservar ahora:",
+        ],
+        bullets: [
+          "Un diagnóstico de piel o una breve consulta gratis antes del tratamiento para actualizar su plan.",
+          "Una pequeña mejora: masaje más largo, mascarilla extra o un complemento del tratamiento.",
+          "Una muestra o un formato de viaje de tus productos para el cuidado posterior.",
+          "Prioridad durante un tiempo limitado en los horarios más buscados, como tardes o sábados.",
+          "Para bonos a medias: explicar con claridad qué se consigue terminándolos y proponer un horario cómodo.",
+          "Si usas un descuento, que sea pequeño, personal, de un solo uso y con fecha límite, por ejemplo como código de descuento para la reserva online.",
+        ],
+      },
+      {
+        heading: "¿Cuándo y cuántas veces contactar con las clientas inactivas?",
+        paragraphs: [
+          "El momento importa tanto como las palabras. Escribe a las clientas con retraso poco después de que se salten su ritmo, cuando la costumbre aún está fresca. Para las dormidas y las perdidas funciona bien una acción fija cada mes o cada trimestre. Evita tus semanas de más trabajo: recuperar clientas sirve sobre todo para llenar las épocas tranquilas.",
+          "Mantén la campaña corta: un mensaje, un recordatorio a la semana y, para las antiguas clientas habituales, una llamada. Después, para. Insistir resulta pesado y aumenta las bajas. Luego mide los resultados para mejorar la siguiente acción:",
+        ],
+        bullets: [
+          "¿A cuántas clientas de cada grupo has contactado?",
+          "¿Cuántas han reservado en 30 días y para qué tratamientos?",
+          "¿Cuántas han respondido, se han dado de baja o te han dicho por qué dejaron de venir?",
+          "¿Qué asunto, oferta o canal ha funcionado mejor?",
+        ],
+      },
+      {
+        heading: "¿Qué dicen el RGPD y la LSSI sobre los emails para recuperar clientas?",
+        paragraphs: [
+          "Un email para recuperar clientas suele ser una comunicación comercial, así que se aplican el RGPD, la LOPDGDD y la LSSI. En España, según la LSSI, necesitas el consentimiento previo, salvo que ya exista una relación con la clienta, obtuvieras su email de forma lícita y le ofrezcas productos o servicios similares a los que contrató. En todos los casos debes ofrecer una forma fácil y gratuita de darse de baja en cada mensaje. La Agencia Española de Protección de Datos (AEPD) publica guías útiles para pequeños negocios.",
+        ],
+        bullets: [
+          "Escribe solo a clientas que no se hayan opuesto ni dado de baja, y aplica cada baja al momento.",
+          "Incluye en cada email un enlace de baja claro y los datos de contacto de tu centro.",
+          "Indica en tu política de privacidad que puedes contactar con tus clientas sobre tratamientos similares.",
+          "No menciones nunca datos de salud ni detalles sensibles del tratamiento en emails comerciales.",
+          "Borra o anonimiza a las clientas que ya no tengas motivo para conservar, según tus plazos de conservación.",
+        ],
+      },
+      {
+        heading: "¿Cómo automatiza la recuperación de clientas un software para centro de estética?",
+        paragraphs: [
+          "El mayor problema de recuperar clientas no es el texto, sino la constancia. En una semana con mucho trabajo, nadie se acuerda de enviarlo. Con los flujos de clientes de Treatflow creas una secuencia de emails en varios pasos que empieza cuando una clienta lleva tiempo sin venir, por ejemplo entre 60 y 90 días, espera, comprueba si ha vuelto a reservar y solo si no lo ha hecho envía un recordatorio. Si reserva, la secuencia se detiene, así nadie recibe un recordatorio después de haber reservado.",
+          "La ficha de cliente muestra todo el historial de tratamientos, las notas y la última visita, para que tus llamadas a antiguas clientas habituales sean realmente personales. Tu enlace de reservas online sin comisiones lleva a la clienta directamente a los huecos libres y los recordatorios por email ayudan a que la clienta que vuelve acuda de verdad. Flujos automáticos, recordatorios, códigos de descuento y reservas online están incluidos en el plan Booking por 59 € al mes (Basic 39 €, ambos IVA no incluido). Puedes probar Treatflow 14 días gratis, sin tarjeta de crédito.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "¿Cuánto tiempo espero para escribir a una clienta que ya no viene?",
+        a: "Depende del tratamiento. Una regla práctica es dos o tres veces el intervalo habitual: unas seis a ocho semanas en rellenos de pestañas y unos tres meses en faciales periódicos. Muchos centros envían un mensaje general tras 60 a 90 días sin visita.",
+      },
+      {
+        q: "¿Tengo que hacer descuentos para recuperar clientas?",
+        a: "No como primer paso. Un valor añadido como una consulta gratis, una mejora o una muestra de producto protege mejor tus precios. Si das un descuento, que sea pequeño, personal, de un solo uso y con fecha límite.",
+      },
+      {
+        q: "¿Cuántas veces puedo contactar con una clienta inactiva?",
+        a: "Dos o tres veces por campaña son suficientes: un email, un recordatorio a la semana y, para antiguas clientas habituales, una llamada personal. Si no hay respuesta, espera unos meses antes de volver a intentarlo.",
+      },
+      {
+        q: "¿Necesito consentimiento para enviar estos emails?",
+        a: "Según la LSSI, sí, salvo que ya sea clienta tuya y le ofrezcas servicios similares a los que contrató, con opción de baja al recoger su email y en cada mensaje. Para contactos nuevos u otros productos necesitas consentimiento previo. Nunca escribas a quien se haya dado de baja.",
+      },
+      {
+        q: "¿Qué hago si una clienta me dice que se fue porque estaba descontenta?",
+        a: "Agradécele la sinceridad, discúlpate por su experiencia y pregúntale qué podría arreglarlo. Anota el comentario en su ficha y compártelo con el equipo. Aunque no vuelva, su respuesta te ayuda a no perder a otras clientas.",
+      },
+    ],
+    related: [
+      { pageKey: "customer-workflows", label: "Flujos automáticos para recuperar clientas" },
+      { pageKey: "client-records", label: "Fichas de cliente con historial completo" },
+      { pageKey: "messaging", label: "Recordatorios de citas por email" },
+    ],
+    sources: [
+      { label: "Agencia Española de Protección de Datos (AEPD)", url: "https://www.aepd.es" },
+      { label: "Ley 34/2002, de servicios de la sociedad de la información (LSSI), BOE", url: "https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758" },
+    ],
+  },
 ];
