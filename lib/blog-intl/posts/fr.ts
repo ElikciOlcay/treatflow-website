@@ -1505,4 +1505,174 @@ export const posts: BlogArticle[] = [
       },
     ],
   },
+  {
+    topic: "win-back-clients",
+    lang: "fr",
+    slug: "relancer-clientes-inactives-institut-de-beaute",
+    title: "Relancer les clientes inactives de votre institut de beauté : segments, timing et modèles de messages",
+    metaTitle: "Relancer les clientes inactives de votre institut",
+    description:
+      "Relancer les clientes inactives de votre institut : quand une cliente est perdue, quand la recontacter, modèles d'e-mail et d'appel, offres sans remise et RGPD.",
+    excerpt:
+      "Chaque fichier clients contient des personnes qui se sont simplement éloignées. Avec des segments clairs, un message personnel au bon moment et un lien de réservation simple, beaucoup reviennent, sans grosses remises.",
+    category: "Fidélisation",
+    keywords: [
+      "relancer clientes inactives institut de beauté",
+      "récupérer clientes perdues",
+      "relance client institut de beauté",
+      "e-mail de relance client modèle",
+      "fidéliser clientes institut de beauté",
+      "logiciel institut de beauté",
+    ],
+    publishedAt: "2026-11-24",
+    updatedAt: "2026-11-24",
+    readMinutes: 8,
+    answer:
+      "Pour relancer les clientes inactives, définissez d'abord quand une cliente est vraiment inactive selon le rythme habituel de chaque soin, puis répartissez-les en quelques groupes selon leur durée d'absence et leur valeur passée. Envoyez à chaque groupe un message court et personnel avec un lien direct vers la réservation, relancez une seule fois et proposez une valeur ajoutée plutôt qu'une forte remise. N'écrivez qu'aux clientes que vous pouvez contacter selon le RGPD et le Code des postes et des communications électroniques, et arrêtez dès qu'elles réservent ou se désinscrivent.",
+    takeaways: [
+      "« Inactive » dépend du soin : une cliente extensions de cils qui saute deux remplissages est partie bien avant une cliente qui vient une fois par an.",
+      "Segmentez selon la durée d'absence et la valeur : une ancienne habituée mérite un appel, pas un e-mail groupé.",
+      "Des messages courts et personnels avec un seul lien de réservation fonctionnent mieux que de longues newsletters et des remises élevées.",
+      "Deux ou trois prises de contact par campagne suffisent ; ensuite, laissez respirer.",
+      "Des parcours automatisés qui s'arrêtent dès que la cliente réserve transforment la relance en routine.",
+    ],
+    intro: [
+      "Triez votre fichier clients par date de dernière visite. La plupart des instituts y trouvent des dizaines, parfois des centaines de personnes qui venaient régulièrement puis ont disparu sans un mot. Rarement à cause d'une mauvaise expérience : un quotidien plus chargé, une habitude qui se perd, une amie qui recommande un institut plus proche du bureau, ou tout simplement personne pour leur rappeler.",
+      "Ces clientes connaissent déjà votre institut, vos tarifs et votre travail : les faire revenir est généralement plus simple que de convaincre une inconnue de réserver pour la première fois. Ce guide vous explique comment définir l'inactivité selon vos soins, segmenter vos clientes, écrire des messages qui ne ressemblent pas à du spam, choisir des offres qui ne cassent pas vos prix, respecter le RGPD et automatiser l'ensemble. Il s'agit de conseils pratiques, pas d'un avis juridique.",
+    ],
+    sections: [
+      {
+        heading: "À partir de quand une cliente est-elle inactive ?",
+        paragraphs: [
+          "Il n'existe pas de durée universelle. Une cliente est inactive lorsqu'elle a clairement décroché de son rythme habituel. Pour un remplissage de cils toutes les deux à trois semaines, huit semaines sans nouvelles sont un signal d'alerte. Pour un soin du visage toutes les quatre à six semaines, trois mois, c'est beaucoup. En épilation laser, le vrai signal est une série de séances arrêtée en cours de route, alors que douze mois sont tout à fait normaux pour un bilan de peau annuel.",
+          "Notez l'intervalle habituel de vos principaux soins, puis considérez une cliente comme inactive au bout d'environ deux à trois fois cet intervalle. Vous obtenez ainsi des groupes qui ont du sens :",
+        ],
+        table: {
+          headers: ["Groupe", "Définition type", "Meilleure approche"],
+          rows: [
+            ["En retard", "A manqué un ou deux rendez-vous habituels", "Rappel aimable avec lien de réservation"],
+            ["Endormie", "Environ 3 à 6 mois sans visite", "Message personnel avec une petite attention"],
+            ["Perdue", "Plus de 12 mois d'absence", "Message court, sans pression, puis lâcher prise"],
+            ["Ancienne VIP", "Venait souvent ou dépensait beaucoup, plus de nouvelles", "Appel personnel de la gérante ou de son esthéticienne"],
+            ["Cure interrompue", "A arrêté en cours de laser, de peelings ou de maquillage permanent", "Expliquer l'intérêt de terminer et proposer un créneau pratique"],
+          ],
+        },
+      },
+      {
+        heading: "Pourquoi les clientes ne reviennent-elles plus, et pourquoi les relancer ?",
+        paragraphs: [
+          "Connaître la raison aide à choisir le bon message. Les causes les plus fréquentes sont ordinaires : un déménagement, un nouveau travail, un bébé, un budget plus serré, l'esthéticienne préférée qui a quitté l'institut, ou simplement l'oubli de reprendre rendez-vous après le dernier soin. Parfois, il y a eu une petite déception que la cliente n'a jamais exprimée.",
+          "Relancer vaut la peine, car ces personnes vous font déjà confiance. Elles n'ont pas besoin de vous découvrir sur Google ni de comparer les avis : vous avez leur historique, leurs préférences et leurs coordonnées. Un message bien placé peut remplir les créneaux libres de la semaine prochaine, alors que la publicité pour attirer de nouvelles clientes prend généralement plus de temps et coûte plus cher. Et même si la cliente ne revient pas, sa réponse vous apprend souvent quelque chose d'utile sur votre service.",
+        ],
+        callout:
+          "Posez aux clientes qui ne viennent plus une question simple : « Y a-t-il quelque chose que nous aurions pu faire mieux ? » Les réponses valent souvent plus que les réservations.",
+      },
+      {
+        heading: "Comment repérer les clientes inactives dans vos fiches clients ?",
+        paragraphs: [
+          "La relance ne fonctionne que si vos données sont fiables. Si les rendez-vous sont éparpillés entre un agenda papier, le téléphone et des messages, vous ne saurez pas qui manque. Une fiche cliente numérique avec tout l'historique des visites vous donne la liste en quelques minutes.",
+        ],
+        steps: [
+          "Filtrez vos clientes par date du dernier rendez-vous, par exemple plus de 90 jours, et notez les soins qu'elles réservaient habituellement.",
+          "Retirez celles qui ont demandé à ne plus être contactées, celles sans e-mail valide et celles qui ont une réclamation non réglée.",
+          "Répartissez les autres dans les groupes du tableau et marquez à part les anciennes habituées et les cures interrompues.",
+          "Relisez les notes de la fiche : une cliente qui a déménagé ou était mécontente a besoin d'un autre message qu'une cliente qui a simplement oublié.",
+          "Enregistrez le filtre pour refaire la même relance chaque mois ou chaque trimestre.",
+        ],
+      },
+      {
+        heading: "Que dire pour faire revenir une cliente ? Modèles d'e-mail et d'appel",
+        paragraphs: [
+          "Un bon message de relance est court, chaleureux et concret. Utilisez le prénom de la cliente, mentionnez le soin qu'elle réservait et mettez un seul lien direct vers votre page de réservation. Évitez les reproches (« Cela fait une éternité ! ») et veillez à ce que le message ne sonne pas automatique, même s'il l'est.",
+          "**E-mail pour les clientes en retard ou endormies**",
+          "Objet : « [Prénom], envie de votre prochain [soin] ? » Texte : « Bonjour [prénom], votre dernier [soin] chez nous remonte à quelque temps et nous voulions prendre de vos nouvelles. Si vous avez envie de revenir, tous nos créneaux libres sont ici : [lien de réservation]. Et si quelque chose ne vous a pas convenu la dernière fois, répondez simplement à cet e-mail : nous tenons vraiment à le savoir. À bientôt, [prénom] de [nom de l'institut] »",
+          "**Relance environ une semaine plus tard, sans réponse**",
+          "« Bonjour [prénom], juste un petit mot : il nous reste quelques créneaux [jours] pour votre [soin]. Réservez ici en une minute : [lien de réservation]. Si ce n'est pas le bon moment, aucun souci. »",
+          "**Script d'appel pour les anciennes VIP**",
+          "« Bonjour [prénom], c'est [prénom] de [nom de l'institut]. Nous ne vous avons pas vue depuis un moment et je voulais simplement prendre de vos nouvelles. Tout va bien ? Pouvons-nous faire quelque chose pour vous ? » Écoutez d'abord ; ne proposez un créneau que si la conversation s'y prête.",
+        ],
+      },
+      {
+        heading: "Quelles offres fonctionnent sans casser vos prix ?",
+        paragraphs: [
+          "Une remise de 30 % est tentante, mais elle habitue les clientes à attendre la prochaine promotion et attire des personnes qui repartent dès qu'elle se termine. Une valeur ajoutée protège vos tarifs tout en donnant une raison de réserver maintenant :",
+        ],
+        bullets: [
+          "Un diagnostic de peau ou un court conseil offert avant le soin, pour mettre à jour son programme.",
+          "Un petit surclassement : massage plus long, masque supplémentaire ou option ajoutée au soin.",
+          "Un échantillon ou un format voyage de vos produits de soin à domicile.",
+          "Une priorité, pendant une durée limitée, sur les créneaux les plus demandés comme le soir ou le samedi.",
+          "Pour les cures interrompues : expliquer clairement ce que l'on gagne à les terminer et proposer un créneau pratique.",
+          "Si vous faites une remise, gardez-la petite, personnelle, à usage unique et limitée dans le temps, par exemple sous forme de code promo pour la réservation en ligne.",
+        ],
+      },
+      {
+        heading: "Quand et combien de fois recontacter les clientes inactives ?",
+        paragraphs: [
+          "Le moment compte autant que les mots. Contactez les clientes en retard peu après qu'elles ont décroché de leur rythme, quand l'habitude est encore fraîche. Pour les clientes endormies et perdues, une relance fixe chaque mois ou chaque trimestre fonctionne bien. Évitez vos semaines les plus chargées : la relance sert surtout à remplir les périodes creuses.",
+          "Gardez la campagne courte : un message, une relance environ une semaine plus tard et, pour les anciennes habituées, un appel. Ensuite, arrêtez. Des rappels à répétition paraissent insistants et font grimper les désinscriptions. Mesurez ensuite les résultats pour améliorer la prochaine relance :",
+        ],
+        bullets: [
+          "Combien de clientes de chaque groupe avez-vous contactées ?",
+          "Combien ont réservé dans les 30 jours, et pour quels soins ?",
+          "Combien ont répondu, se sont désinscrites ou ont expliqué pourquoi elles ne venaient plus ?",
+          "Quel objet, quelle offre ou quel canal a le mieux fonctionné ?",
+        ],
+      },
+      {
+        heading: "Que disent le RGPD et la CNIL sur les e-mails de relance ?",
+        paragraphs: [
+          "Un e-mail de relance relève généralement de la prospection commerciale : le RGPD s'applique, ainsi que l'article L34-5 du Code des postes et des communications électroniques. En France, vous pouvez en principe écrire à vos clientes existantes pour des soins analogues à ceux qu'elles ont déjà réservés sans consentement séparé, si leur adresse a été collectée lors d'une prestation, qu'elles ont été informées et ont pu s'y opposer, et que chaque message permet de se désinscrire facilement. Dans les autres cas, il faut un consentement préalable. La CNIL publie des fiches pratiques sur la prospection.",
+        ],
+        bullets: [
+          "N'écrivez qu'aux clientes qui ne se sont pas opposées ou désinscrites, et appliquez chaque désinscription immédiatement.",
+          "Ajoutez dans chaque e-mail un lien de désinscription visible et les coordonnées de votre institut.",
+          "Indiquez dans votre politique de confidentialité que vous pouvez contacter vos clientes au sujet de soins analogues.",
+          "Ne mentionnez jamais de données de santé ni de détails sensibles des soins dans un e-mail commercial.",
+          "Supprimez ou anonymisez les fiches que vous n'avez plus de raison de conserver, selon vos durées de conservation.",
+        ],
+      },
+      {
+        heading: "Comment un logiciel d'institut de beauté automatise-t-il les relances ?",
+        paragraphs: [
+          "Le plus difficile n'est pas le texte, mais la régularité. Pendant une semaine chargée, personne ne pense à envoyer la relance. Avec les parcours clients de Treatflow, vous créez une séquence d'e-mails en plusieurs étapes qui démarre quand une cliente n'est pas venue depuis un moment, par exemple 60 à 90 jours, attend, vérifie si elle a repris rendez-vous et n'envoie une relance que si ce n'est pas le cas. Si elle réserve, la séquence s'arrête : personne ne reçoit de rappel après avoir déjà réservé.",
+          "La fiche cliente affiche tout l'historique des soins, les notes et la dernière visite, pour personnaliser vos appels aux anciennes habituées. Votre lien de réservation en ligne sans commission mène la cliente directement aux créneaux libres, et les rappels par e-mail aident à ce que la cliente qui revient vienne vraiment. Parcours clients, rappels, codes promo et réservation en ligne sont inclus dans la formule Booking à 59 € par mois (Basic 39 €, HT). Vous pouvez essayer Treatflow gratuitement pendant 14 jours, sans carte bancaire.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Au bout de combien de temps relancer une cliente qui ne vient plus ?",
+        a: "Cela dépend du soin. Une règle pratique : deux à trois fois l'intervalle habituel, soit environ six à huit semaines pour un remplissage de cils et environ trois mois pour un soin du visage régulier. Beaucoup d'instituts envoient une relance générale après 60 à 90 jours sans visite.",
+      },
+      {
+        q: "Faut-il faire une remise pour faire revenir les clientes ?",
+        a: "Pas en premier. Une valeur ajoutée comme un conseil offert, un surclassement ou un échantillon protège mieux vos prix. Si vous faites une remise, gardez-la petite, personnelle, à usage unique et limitée dans le temps.",
+      },
+      {
+        q: "Combien de fois peut-on relancer une cliente inactive ?",
+        a: "Deux à trois fois par campagne suffisent : un e-mail, une relance environ une semaine plus tard et, pour les anciennes habituées, un appel personnel. Sans réponse, attendez quelques mois avant de réessayer.",
+      },
+      {
+        q: "Faut-il un consentement pour envoyer des e-mails de relance ?",
+        a: "Pour une cliente existante et des soins analogues, le consentement séparé n'est en principe pas nécessaire en France, à condition qu'elle ait été informée, ait pu s'opposer et puisse se désinscrire dans chaque e-mail. Pour de nouveaux contacts ou d'autres produits, il faut un consentement préalable.",
+      },
+      {
+        q: "Que faire si une cliente explique qu'elle est partie parce qu'elle était mécontente ?",
+        a: "Remerciez-la pour sa franchise, excusez-vous pour son expérience et demandez-lui ce qui pourrait arranger les choses. Notez le retour dans sa fiche et partagez-le avec l'équipe. Même si elle ne revient pas, sa réponse vous aide à garder d'autres clientes.",
+      },
+    ],
+    related: [
+      { pageKey: "customer-workflows", label: "Parcours clients automatisés pour les relances" },
+      { pageKey: "client-records", label: "Fiches clients avec historique complet" },
+      { pageKey: "messaging", label: "Rappels de rendez-vous par e-mail" },
+    ],
+    sources: [
+      { label: "CNIL – Commission nationale de l'informatique et des libertés", url: "https://www.cnil.fr" },
+      {
+        label: "EUR-Lex : Directive 2002/58/CE (directive vie privée et communications électroniques)",
+        url: "https://eur-lex.europa.eu/eli/dir/2002/58/oj",
+      },
+    ],
+  },
 ];
