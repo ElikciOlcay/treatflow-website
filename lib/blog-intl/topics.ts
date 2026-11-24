@@ -77,6 +77,11 @@ export const blogTopics: Record<
     // Gutscheine gibt es nur in DACH; statt "vouchers" die Kunden-Workflows (Reaktivierung).
     pageKeys: ["messaging", "client-records", "customer-workflows"],
   },
+  "es-online-agenda-beauty-centre": {
+    image: "/images/blog/terminkalender.png",
+    pageKeys: ["appointment-calendar", "online-booking", "client-records"],
+    markets: ["es"],
+  },
 };
 
 export const blogTopicOrder: BlogTopicId[] = [
@@ -93,4 +98,5 @@ export const blogTopicOrder: BlogTopicId[] = [
   "google-reviews-salon",
   "it-beauty-centre-management-software",
   "win-back-clients",
+  "es-online-agenda-beauty-centre",
 ];
