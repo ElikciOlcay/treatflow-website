@@ -87,6 +87,11 @@ export const blogTopics: Record<
     image: "/images/blog/kosmetikstudio-eroeffnen.jpg",
     pageKeys: ["beauty-salon-software", "pricing", "features"],
   },
+  "fr-client-record-beauty-institute": {
+    image: "/images/lifestyle/dokumentation-waehrend-behandlung.png",
+    pageKeys: ["client-records", "forms", "treatment-documentation"],
+    markets: ["fr"],
+  },
 };
 
 export const blogTopicOrder: BlogTopicId[] = [
@@ -105,4 +110,5 @@ export const blogTopicOrder: BlogTopicId[] = [
   "win-back-clients",
   "es-online-agenda-beauty-centre",
   "open-beauty-salon",
+  "fr-client-record-beauty-institute",
 ];

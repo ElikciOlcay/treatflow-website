@@ -20,7 +20,8 @@ export type BlogTopicId =
   | "it-beauty-centre-management-software"
   | "win-back-clients"
   | "es-online-agenda-beauty-centre"
-  | "open-beauty-salon";
+  | "open-beauty-salon"
+  | "fr-client-record-beauty-institute";
 
 export type BlogSection = {
   /** H2 des Abschnitts. Gern als Frage formuliert (wird von KI-Tools gern zitiert). */

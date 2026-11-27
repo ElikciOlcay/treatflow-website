@@ -106,6 +106,7 @@ Oui. En paiement mensuel, vous pouvez résilier à tout moment, avec effet à la
   - [Avis Google pour votre institut de beauté](https://www.treatflow.io/fr/blog/avis-google-institut-de-beaute) : quand et comment les demander, ce qui est interdit, modèles et réponses aux avis négatifs
   - [Relancer les clientes inactives de votre institut](https://www.treatflow.io/fr/blog/relancer-clientes-inactives-institut-de-beaute) : segments, timing, modèles d'e-mail et d'appel, offres sans remise et RGPD
   - [Ouvrir un institut de beauté](https://www.treatflow.io/fr/blog/ouvrir-un-institut-de-beaute) : concept, budget de départ, CAP esthétique et démarches, local, carte des soins, RGPD et plan de lancement
+  - [Fiche cliente et fiche technique esthétique](https://www.treatflow.io/fr/blog/fiche-cliente-fiche-technique-institut-de-beaute) : quoi noter pour chaque soin (visage, épilation, cils, ongles, laser), routine de deux minutes, passage du papier au numérique et RGPD
 - [Conditions d'utilisation](https://www.treatflow.io/fr/conditions) : conditions du service
 - [Instagram](https://www.instagram.com/treatflow.io/) : @treatflow.io
 

@@ -1865,4 +1865,182 @@ export const posts: BlogArticle[] = [
       { label: "EUR-Lex : Règlement (UE) 2016/679 (RGPD)", url: "https://eur-lex.europa.eu/eli/reg/2016/679/oj" },
     ],
   },
+  {
+    topic: "fr-client-record-beauty-institute",
+    lang: "fr",
+    slug: "fiche-cliente-fiche-technique-institut-de-beaute",
+    title: "Fiche cliente en institut de beauté : modèles de fiche technique esthétique par soin",
+    metaTitle: "Fiche cliente institut de beauté et fiche technique",
+    description:
+      "Fiche cliente institut de beauté et fiche technique esthétique : quoi noter pour chaque soin (visage, cire, cils, ongles, laser) et comment la tenir à jour.",
+    excerpt:
+      "Soin visage, épilation, cils, ongles, laser : les rubriques de fiche technique esthétique à remplir après chaque soin, et une routine de deux minutes pour que la fiche cliente reste vraiment utile.",
+    category: "Documentation & formulaires",
+    keywords: [
+      "fiche cliente institut de beauté",
+      "fiche technique esthétique",
+      "fiche technique soin visage",
+      "modèle fiche cliente esthéticienne",
+      "fichier client institut de beauté",
+      "fiche cliente numérique",
+      "fiche technique extension de cils",
+    ],
+    publishedAt: "2026-11-27",
+    updatedAt: "2026-11-27",
+    readMinutes: 8,
+    answer:
+      "Une fiche cliente d'institut de beauté réunit les coordonnées et préférences de la cliente, tandis que la fiche technique esthétique note, à chaque soin, ce qui a été fait : produits, réglages, réactions de la peau et conseils donnés. Pour qu'elle serve vraiment, utilisez un modèle court par famille de soins et remplissez-le juste après la prestation, en deux minutes, plutôt qu'en fin de journée.",
+    takeaways: [
+      "Fiche cliente = qui est la cliente ; fiche technique = ce que vous avez fait à chaque soin.",
+      "Un modèle par famille de soins (visage, épilation, cils, ongles, laser) évite les rubriques vides.",
+      "Notez juste après le soin : produits, réglages, réaction, conseil et prochain rendez-vous conseillé.",
+      "Une fiche bien tenue sert à la sécurité, à la continuité entre collègues et à la vente-conseil.",
+      "Le passage du fichier papier au numérique peut se faire progressivement, cliente par cliente.",
+    ],
+    intro: [
+      "Dans beaucoup d'instituts, la fiche cliente existe… mais sur un bristol rangé dans une boîte, rempli au premier rendez-vous puis rarement complété. Le jour où une autre esthéticienne reçoit la cliente, ou où celle-ci revient six mois plus tard, personne ne sait plus quel masque avait été utilisé ni quelle courbure de cils elle avait aimée.",
+      "Ce guide se concentre sur la partie la plus souvent négligée : la fiche technique esthétique, c'est-à-dire la trace de chaque soin. Pour le questionnaire de santé et le consentement éclairé, consultez notre article dédié à la fiche cliente digitale et au questionnaire de santé ; ici, nous parlons de ce qu'il faut noter en cabine, soin par soin, et de la façon de le faire sans y passer vos soirées.",
+    ],
+    sections: [
+      {
+        heading: "Fiche cliente, fiche technique, questionnaire : quelle différence ?",
+        paragraphs: [
+          "Les trois documents sont liés, mais ils ne répondent pas à la même question. Les confondre conduit souvent à des fiches surchargées au départ, puis abandonnées.",
+        ],
+        table: {
+          headers: ["Document", "Question à laquelle il répond", "Quand le remplir"],
+          rows: [
+            ["Fiche cliente", "Qui est la cliente ? Coordonnées, préférences, historique des visites", "À la création, puis au fil de l'eau"],
+            ["Questionnaire de santé / consentement", "Le soin est-il adapté et la cliente est-elle informée ?", "Avant le premier soin technique, puis à chaque changement"],
+            ["Fiche technique esthétique", "Qu'avez-vous fait exactement, avec quoi, et avec quel résultat ?", "À chaque soin, juste après la prestation"],
+          ],
+        },
+        callout:
+          "Dans un logiciel, ces trois éléments sont réunis au même endroit : la fiche cliente devient le dossier, et chaque fiche technique s'ajoute à son historique.",
+      },
+      {
+        heading: "Que noter sur la fiche cliente d'un institut de beauté ?",
+        paragraphs: [
+          "La fiche cliente doit rester légère. Son rôle est de vous permettre d'accueillir la cliente comme une habituée, même si c'est une collègue qui la reçoit.",
+        ],
+        bullets: [
+          "**Identité et contact** : nom, prénom, téléphone, e-mail, date de naissance si la cliente l'accepte.",
+          "**Préférences de contact** : e-mail pour les rappels, accord ou non pour recevoir des actualités.",
+          "**Préférences de confort** : pression du massage, musique, température de la cabine, sensibilité au froid.",
+          "**Type de peau et diagnostic de base** : à compléter lors du premier soin visage.",
+          "**Points d'attention** : allergie déclarée, mention du questionnaire de santé à jour ou non.",
+          "**Habitudes** : fréquence des visites, prestations favorites, praticienne préférée.",
+        ],
+      },
+      {
+        heading: "Fiche technique esthétique : quelles rubriques pour chaque soin ?",
+        paragraphs: [
+          "Une fiche technique utile tient en quelques rubriques, mais ces rubriques changent selon le soin. Plutôt qu'un formulaire unique de deux pages, préparez un modèle court par famille de soins. Voici une base à adapter à vos protocoles et à vos marques.",
+        ],
+        table: {
+          headers: ["Famille de soins", "À noter à chaque séance"],
+          rows: [
+            ["Soin du visage", "Diagnostic du jour, protocole, produits et masques utilisés, durée de pose, réaction de la peau, conseils et produits recommandés"],
+            ["Épilation à la cire", "Zones, type de cire, sensibilité, rougeurs, intervalle conseillé avant la prochaine épilation"],
+            ["Épilation laser / lumière pulsée", "Zone, phototype, appareil, paramètres utilisés, réaction, date de la séance suivante"],
+            ["Extensions et rehaussement de cils", "Technique, courbure, épaisseur, longueurs, colle ou produit, temps de pose, tenue au remplissage"],
+            ["Ongles (semi-permanent, gel, capsules)", "Technique, références des couleurs, forme et longueur, état de l'ongle naturel, casse éventuelle"],
+            ["Maquillage permanent", "Zone, référence et numéro de lot du pigment, aiguille, retouche prévue"],
+            ["Massage et spa", "Type de massage, huile utilisée, zones à éviter, pression souhaitée, ressenti de la cliente"],
+          ],
+        },
+        callout:
+          "Gardez une rubrique libre « observations » sur chaque modèle : c'est souvent là que se trouve l'information la plus précieuse pour la séance suivante.",
+      },
+      {
+        heading: "Comment remplir une fiche technique en deux minutes après le soin ?",
+        paragraphs: [
+          "La fiche technique se remplit mal en fin de journée : les détails sont oubliés et les fiches s'accumulent. La bonne habitude est de bloquer deux minutes entre la fin du soin et l'accueil de la cliente suivante. Prévoyez-les dans la durée de vos prestations dans l'agenda.",
+        ],
+        steps: [
+          "Ouvrez la fiche de la cliente dès la fin du soin, pendant qu'elle se rhabille.",
+          "Choisissez le modèle de fiche technique correspondant au soin réalisé.",
+          "Renseignez les produits, les réglages et les éventuelles réactions.",
+          "Ajoutez une photo avant/après si elle est utile et si la cliente est d'accord.",
+          "Notez le conseil donné et le délai recommandé avant le prochain rendez-vous.",
+          "Validez : la fiche est datée et rattachée à l'historique de la cliente.",
+        ],
+      },
+      {
+        heading: "Pourquoi une fiche technique bien tenue fait-elle gagner de l'argent ?",
+        paragraphs: [
+          "La fiche technique n'est pas qu'une précaution. C'est aussi un outil commercial discret. Quand vous savez que le dernier soin hydratant a donné de bons résultats, que la cliente a apprécié tel sérum ou qu'elle revient en général toutes les trois semaines pour son remplissage, vous pouvez proposer le bon rendez-vous au bon moment, sans pression.",
+        ],
+        bullets: [
+          "**Continuité** : une collègue reprend la cliente sans tout lui redemander.",
+          "**Conseil personnalisé** : vous recommandez les produits déjà testés et appréciés.",
+          "**Fidélisation** : la cliente sent que vous vous souvenez d'elle, visite après visite.",
+          "**Résultats mesurables** : les photos et notes successives montrent l'évolution d'une cure.",
+          "**Sérénité en cas de réclamation** : vous savez précisément ce qui a été fait et quand.",
+        ],
+      },
+      {
+        heading: "Comment passer du fichier client papier à une fiche cliente numérique ?",
+        paragraphs: [
+          "Inutile de tout ressaisir en une semaine. La plupart des instituts procèdent cliente par cliente, au moment où elles reviennent. Si vous avez déjà une liste clients dans un tableur ou un ancien logiciel, importez-la d'abord pour disposer des coordonnées, puis complétez le reste au fil des rendez-vous.",
+        ],
+        steps: [
+          "Exportez votre liste clients existante (tableur ou ancien outil) au format CSV.",
+          "Importez-la dans votre nouveau logiciel en vérifiant la correspondance des champs et les doublons.",
+          "Créez vos modèles de fiche technique, un par famille de soins.",
+          "À chaque visite, recopiez seulement les informations encore utiles de l'ancienne fiche papier.",
+          "Conservez les anciennes fiches papier dans un endroit fermé, puis détruisez-les à la fin de leur durée de conservation.",
+        ],
+        callout:
+          "Dans Treatflow, vous importez vos listes clients en CSV avec détection des doublons, et chaque soin peut être documenté avec notes, paramètres et photos avant/après, y compris par dictée vocale.",
+      },
+      {
+        heading: "Fiche cliente et RGPD : quelles précautions prendre ?",
+        paragraphs: [
+          "Une fiche cliente contient des données personnelles, et parfois des données de santé (allergie, réaction de la peau, traitement en cours). Le RGPD vous demande de ne collecter que ce qui est utile au soin, d'informer la cliente de l'usage de ses données, de limiter l'accès aux personnes qui en ont besoin et de fixer une durée de conservation raisonnable.",
+          "En pratique : pas de fiches qui traînent à l'accueil, un accès par identifiant personnel pour chaque collaboratrice, et des notes factuelles et respectueuses, car la cliente peut demander à consulter ce qui est écrit sur elle. Pour les cas particuliers, notamment en médecine esthétique, renseignez-vous auprès de la CNIL ou de votre conseil.",
+        ],
+      },
+      {
+        heading: "Quelles erreurs éviter dans une fiche technique esthétique ?",
+        paragraphs: [
+          "Les mêmes erreurs reviennent souvent, qu'il s'agisse de fiches papier ou numériques.",
+        ],
+        bullets: [
+          "Des abréviations que vous seule comprenez : une collègue doit pouvoir lire la fiche.",
+          "Des notes vagues comme « RAS » ou « bien passé » sans détail sur les produits ou réglages.",
+          "Des remarques subjectives sur la cliente, sans rapport avec le soin.",
+          "Un modèle trop long que personne ne remplit jusqu'au bout.",
+          "Des photos stockées sur un téléphone personnel au lieu de la fiche de la cliente.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Quelle est la différence entre fiche cliente et fiche technique ?",
+        a: "La fiche cliente décrit la cliente (coordonnées, préférences, historique). La fiche technique décrit chaque soin réalisé : produits, réglages, réactions et conseils. Les fiches techniques s'ajoutent à l'historique de la fiche cliente.",
+      },
+      {
+        q: "Existe-t-il un modèle de fiche cliente pour esthéticienne ?",
+        a: "Il n'y a pas de modèle officiel. Partez des rubriques de cet article et adaptez-les à vos soins et à vos marques. Dans un logiciel comme Treatflow, vous pouvez partir de modèles de formulaires prêts à l'emploi et les personnaliser.",
+      },
+      {
+        q: "Faut-il remplir une fiche technique pour une simple épilation ?",
+        a: "Oui, de façon très courte : zones, type de cire et réaction de la peau. Ces quelques mots évitent une irritation la fois suivante et aident une collègue à reprendre la cliente.",
+      },
+      {
+        q: "Peut-on prendre des photos avant/après pour la fiche technique ?",
+        a: "Oui, avec l'accord de la cliente, et en les rangeant dans sa fiche plutôt que sur un téléphone personnel. Pour publier une photo sur les réseaux sociaux, il faut une autorisation distincte.",
+      },
+      {
+        q: "Combien de temps conserver une fiche cliente ?",
+        a: "Le RGPD n'impose pas de durée unique : elle doit être justifiée par votre activité. Fixez une règle claire, par exemple après une période d'inactivité, et appliquez-la. En cas de doute, consultez les recommandations de la CNIL.",
+      },
+    ],
+    related: [
+      { pageKey: "client-records", label: "Fiches clientes numériques" },
+      { pageKey: "treatment-documentation", label: "Suivi et documentation des soins" },
+      { pageKey: "forms", label: "Questionnaires et consentements numériques" },
+    ],
+  },
 ];
